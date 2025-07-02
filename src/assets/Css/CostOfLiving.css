@@ -792,7 +792,7 @@
     .card {
       background: #fff;
       border-radius: 12px;
-      padding: 16px;
+      padding: 20px;
       background-color: #fff;
           border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 22px 10px 0 rgba(0, 0, 0, 0.05);
@@ -806,6 +806,7 @@
 .nightlifesecIn{margin: 0 0 80px;
     border-bottom: solid 1px #e7e7e7;
     padding-bottom: 80px;}
+    .nightlifesecIn:last-child{border-bottom: none;}
     .nightlife h1
  {
         font-family: "NewAmsterdam";
@@ -849,7 +850,20 @@
      .card a{background: url(/images/loc-icon.svg) no-repeat 0 0;     padding: 0 0 0 22px;
     color: #000;  font-weight: 600;}
  
+     .investchennaisec table thead{ background-color: #a44294;
+    color: #fff;}
+     .investchennaisec table thead th{ background-color: #a44294;
+    color: #fff;     font-size: 20px;    border-right: solid 1px #ccc;}
+     .investchennaisec table td{border-right: solid 1px #ccc;}
 
+   .investchennaisec .card {  padding: 25px;}
+.investchennaisec blockquote{color: #a44294;}
+.investchennaisec .bottomListIcon {
+    width: 100%;
+}
+
+ .investchennaisec .card .clcboxIImg img{  width: 80px; margin-bottom: 30px;
+    }
 /* new pages style end */
 
 

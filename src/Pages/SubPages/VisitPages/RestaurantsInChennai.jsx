@@ -1,12 +1,15 @@
-import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
+import { useState, useRef, useEffect } from "react";
 import "../../../assets/Css/CostOfLiving.css";
-import Becameavolunteer from "../../../Components/BecameAVolunteer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import Search from "../../../Components/Search";
+import { Link } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
+import Becameavolunteer from "../../../Components/BecameAVolunteer";
+// import { label } from "framer-motion/client";
 
 export default function Restaurants() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -57,21 +60,22 @@ export default function Restaurants() {
         {
           name: "Murugan Idli Shop",
           description: "Famous for soft idlis and podi dosas",
-          subDescription: "",
+          subDescription:
+            "",
           website: "https://muruganidlishop.com/",
           locations: [
-            // {
-            //   label: "T. Nagar",
-            //   link: "https://maps.app.goo.gl/kAf4oADve7sTTq5J7",
-            // },
-            // {
-            //   label: "T. Nagar",
-            //   link: "https://maps.app.goo.gl/ytFBt2v4yia6t8W68",
-            // },
-            // {
-            //   label: "T. Nagar",
-            //   link: "https://maps.app.goo.gl/rfuvfcS1PjwtaDNx9",
-            // },
+            {
+              label: "T. Nagar",
+              link: "https://maps.app.goo.gl/kAf4oADve7sTTq5J7",
+            },
+            {
+              label: "T. Nagar",
+              link: "https://maps.app.goo.gl/ytFBt2v4yia6t8W68",
+            },
+            {
+              label: "T. Nagar",
+              link: "https://maps.app.goo.gl/rfuvfcS1PjwtaDNx9",
+            },
             {
               label: "Velachery",
               link: "https://maps.app.goo.gl/ZcNSxB2Gq5t7rUfH9",
@@ -123,7 +127,8 @@ export default function Restaurants() {
         {
           name: "Sangeetha Veg Restaurant",
           description: "A family favorite across multiple locations",
-          subDescription: "",
+          subDescription:
+            "",
           website: "https://www.sangeethaveg.com/",
           locations: [
             {
@@ -186,49 +191,24 @@ export default function Restaurants() {
               label: "Guindy",
               link: "https://maps.app.goo.gl/tLDiENXoHsorAf1n7",
             },
-            {
-              label: "Anna Nagar",
-              link: "https://maps.app.goo.gl/PevsqiXgXagwAuxf6",
-            },
-            {
-              label: "Thirumazhisai",
-              link: "https://maps.app.goo.gl/NBNVnGsYJf3HqtRR9",
-            },
-            {
-              label: "Kattupakkam",
-              link: "https://maps.app.goo.gl/poWyUf64f4kvkjwh8",
-            },
           ],
         },
 
         {
           name: "Rayar’s Mess",
           description: "Hole-in-the-wall tiffin spot",
-          subDescription: "",
-          locations: [
-            {
-              label: "Mylapore",
-              link: "https://maps.app.goo.gl/E4UbeoFDMSWYTyQj8",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Mylapore", link: "#" }],
         },
         {
           name: "ID (Sathyam Cinemas & Phoenix Mall)",
           description: "Contemporary take on classic tiffin",
-          subDescription: "",
+          subDescription:
+            "",
           locations: [
-            {
-              label: "Royapettah",
-              link: "https://maps.app.goo.gl/H87AGauj5oT5rtpF9",
-            },
-            {
-              label: "Vadapalani",
-              link: "https://maps.app.goo.gl/2kUsHrXR9R35k3KU7",
-            },
-            {
-              label: "Kilpauk ",
-              link: "https://maps.app.goo.gl/tdoWidZqKV67FUzJA",
-            },
+            { label: "Royapettah", link: "#" },
+            { label: "Velachery", link: "#" },
           ],
         },
       ],
@@ -240,120 +220,28 @@ export default function Restaurants() {
         {
           name: "Annalakshmi",
           description: "Upscale vegetarian buffet",
-          subDescription: "",
-          locations: [
-            {
-              label: "Chetpet",
-              link: "https://maps.app.goo.gl/3GsgzTe4EC5PSuUC7",
-            },
-            {
-              label: "West Mambalam",
-              link: "https://maps.app.goo.gl/kmgf5aq8WoxM4bZK6",
-            },
-            {
-              label: "Chetpet",
-              link: "https://maps.app.goo.gl/H9Cxjj4s3pfQMHzu7",
-            },
-            {
-              label: "Nungambakkam",
-              link: "https://maps.app.goo.gl/4WMFrtTwnqfgcjsF9",
-            },
-            {
-              label: "West Mambalam",
-              link: "https://maps.app.goo.gl/hPmcAC3dMSTZkxcu9",
-            },
-            {
-              label: "Thousand Lights",
-              link: "https://maps.app.goo.gl/sv6LoH5F5PJPP6ny6",
-            },
-            {
-              label: "Teynampet",
-              link: "https://maps.app.goo.gl/SeKh9whnSYTUjzSM6",
-            },
-            {
-              label: "Chetpet",
-              link: "https://maps.app.goo.gl/9THW5BcrBYd2iVP38",
-            },
-            {
-              label: "Maduravoyal",
-              link: "https://maps.app.goo.gl/BimPn9GJ3Xj2dxvw7",
-            },
-            {
-              label: "Park Town",
-              link: "https://maps.app.goo.gl/XHQR1HYFbSMKMkaJ6",
-            },
-            {
-              label: "Nanganallur",
-              link: "https://maps.app.goo.gl/u3fx1TbJNehHouDF7",
-            },
-            {
-              label: "Adyar",
-              link: "https://maps.app.goo.gl/jB29gZmSHT4qRX5i8",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Egmore", link: "#" }],
         },
         {
           name: "Copper Chimney",
           description: "Classic North Indian fare",
           subDescription: "",
-          locations: [
-            {
-              label: "Gopalapuram",
-              link: "https://maps.app.goo.gl/5Acuf6X7t8DL6f4V9",
-            },
-            {
-              label: "Velachery",
-              link: "https://maps.app.goo.gl/ZvSt9TVDRvGa3J5C7",
-            },
-            {
-              label: "Nungambakkam",
-              link: "https://maps.app.goo.gl/9xWupaQWi6cYQsMd8",
-            },
-            {
-              label: "Kotturpuram",
-              link: "https://maps.app.goo.gl/dW6bShkXJxj1Hn7d9",
-            },
-            {
-              label: "Meenambakkam",
-              link: "https://maps.app.goo.gl/35x2ovcByXR8MK2k8",
-            },
-          ],
+          locations: [{ label: "Nungambakkam", link: "#" }],
         },
         {
           name: "Sigree Global Grill",
           description: "Popular for buffets and group dining",
-          subDescription: "",
-          locations: [
-            {
-              label: "Anna Nagar",
-              link: "https://maps.app.goo.gl/hLifSRKyLYBn7hf29",
-            },
-            {
-              label: "Teynampet",
-              link: "https://maps.app.goo.gl/eghKUSpRJnoDKKSr9",
-            },
-            {
-              label: "Nungambakkam",
-              link: "https://maps.app.goo.gl/7B6HYsEZ8RJ3YLBeA",
-            },
-            {
-              label: "Thoraipakkam",
-              link: "https://maps.app.goo.gl/Q9ePgqW8Z3idoRFx7",
-            },
-            {
-              label: "Iyyappanthangal",
-              link: "https://maps.app.goo.gl/mFParTngVj2z3YNx6",
-            },
-            {
-              label: "Sholinganallur",
-              link: "https://maps.app.goo.gl/XEsMHrBSMvXPZhr98",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Thoraipakkam", link: "#" }],
         },
         {
           name: "Pind",
           description: "Punjabi comfort food",
-          subDescription: "",
+          subDescription:
+            "",
           locations: [
             { label: "Velachery", link: "#" },
             { label: "Nungambakkam", link: "#" },
@@ -362,21 +250,12 @@ export default function Restaurants() {
         {
           name: "Bombay Brasserie",
           description: "Indian fusion in a chic setting",
-          subDescription: "",
-          locations: [
-            {
-              label: "Nungambakkam",
-              link: "https://maps.app.goo.gl/Hprz1DZyT8mckU6d7",
-            },
-            {
-              label: "Adyar",
-              link: "https://maps.app.goo.gl/e2bXFuw9MXa9rx6s6",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Alwarpet", link: "#" }],
         },
       ],
     },
-
     {
       id: 3,
       title: "Global & Continental Cuisine",
@@ -384,69 +263,38 @@ export default function Restaurants() {
         {
           name: "The Flying Elephant (Park Hyatt)",
           description: "Multi-level, multi-cuisine luxury dining",
-          subDescription: "",
-          locations: [
-            {
-              label: "Little Mount",
-              link: "https://maps.app.goo.gl/wNfRs3sa8PwGxDVc6",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Guindy", link: "#" }],
         },
         {
           name: "Azzuri Bay",
           description: "Mediterranean and Pan-Asian with a rooftop view",
           subDescription: "",
-          locations: [
-            {
-              label: "Adyar",
-              link: "https://maps.app.goo.gl/q8sgwJgNkvk3q2ZB7",
-            },
-          ],
+          locations: [{ label: "Adyar", link: "#" }],
         },
         {
           name: "Wild Garden Café at Amethyst",
           description: "European café ambience with global bites",
           subDescription: "",
-          locations: [
-            {
-              label: "Royapettah",
-              link: "https://maps.app.goo.gl/gQKniPMnu8F6nzvEA",
-            },
-          ],
+          locations: [{ label: "Royapettah", link: "#" }],
         },
         {
           name: "Ciclo Café",
           description: "Cycling-themed bistro",
-          subDescription: "",
-          locations: [
-            {
-              label: "Kotturpuram",
-              link: "https://maps.app.goo.gl/4bMpwNNLLnQPsV7k6",
-            },
-            {
-              label: "Annanagar East",
-              link: "https://maps.app.goo.gl/WUtw3ztNoNndD72GA",
-            },
-            {
-              label: "Uthandi",
-              link: "https://maps.app.goo.gl/iBcKDHBHG5W9poAp9",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Kotturpuram", link: "#" }],
         },
         {
           name: "Lloyd’s Tea House",
           description: "English-style café",
-          subDescription: "",
-          locations: [
-            {
-              label: "Gopalapuram",
-              link: "https://maps.app.goo.gl/F1m6rEJ95b2nq3mdA",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Alwarpet", link: "#" }],
         },
       ],
     },
-
     {
       id: 4,
       title: "Asian Cuisine",
@@ -454,65 +302,38 @@ export default function Restaurants() {
         {
           name: "Soy Soi",
           description: "Southeast Asian street-style dishes",
-          subDescription: "",
-          locations: [
-            {
-              label: "Royapettah",
-              link: "https://maps.app.goo.gl/FtBBNvQxvkG6vDAv8",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Kotturpuram", link: "#" }],
         },
         {
           name: "Benjarong",
           description: "Elegant Thai dining",
-          subDescription: "",
-          locations: [
-            {
-              label: "Alwarpet",
-              link: "https://maps.app.goo.gl/DmpvYVkTnWpMjd2T7",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Teynampet", link: "#" }],
         },
         {
           name: "Teppan",
           description: "Japanese grill and sushi bar",
-          subDescription: "",
-          locations: [
-            {
-              label: "Alwarpet",
-              link: "https://maps.app.goo.gl/1Zkfc8PKvzk38bRXA",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "T Nagar", link: "#" }],
         },
         {
           name: "Va Pho",
           description: "Youthful pan-Asian diner",
           subDescription: "",
-          locations: [
-            {
-              label: "Anna Nagar",
-              link: "https://maps.app.goo.gl/vaUtK5Zr62FPS9C87",
-            },
-          ],
+          locations: [{ label: "Gopalapuram", link: "#" }],
         },
         {
           name: "Mandarin Chinese Restaurant",
           description: "Classic Chinese comfort food",
           subDescription: "",
-          locations: [
-            {
-              label: "Gopalapuram",
-              link: "https://maps.app.goo.gl/EfwGbvTNXaG1JYCt9",
-            },
-            {
-              label: "Nandanam",
-              link: "https://maps.app.goo.gl/XWr1FJRRf6ZxLis38",
-            },
-          ],
+          locations: [{ label: "Nungambakkam", link: "#" }],
         },
       ],
     },
-
     {
       id: 5,
       title: "Cafés & Casual Bites",
@@ -520,73 +341,38 @@ export default function Restaurants() {
         {
           name: "Chamiers Café",
           description: "Boutique café with breakfast and retail space",
-          subDescription: "",
-          locations: [
-            {
-              label: "R.A. Puram",
-              link: "https://maps.app.goo.gl/WLe2hsN3uUji1sXB8",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "R.A. Puram", link: "#" }],
         },
         {
           name: "Writer’s Café",
           description: "Cozy space for books, coffee, and conversations",
-          subDescription: "",
-          locations: [
-            {
-              label: "Gopalapuram",
-              link: "https://maps.app.goo.gl/hWAQBfsNcM6Boyep7",
-            },
-            {
-              label: "Tharamani",
-              link: "https://maps.app.goo.gl/boE9m7Jjpa7EtReF9",
-            },
-            {
-              label: "Adyar",
-              link: "https://maps.app.goo.gl/2DgNBvcb7vs9jjh36",
-            },
-            {
-              label: "Anna Nagar",
-              link: "https://maps.app.goo.gl/FemqQRRvEQH9X1fP8",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Gopalapuram", link: "#" }],
         },
         {
           name: "The Brew Room",
           description: "Artisanal coffee and brunch in a garden setting",
           subDescription: "",
-          locations: [
-            {
-              label: "Mylapore",
-              link: "https://maps.app.goo.gl/3wQ2wRM2Rs9u9Tni6",
-            },
-          ],
+          locations: [{ label: "College Road", link: "#" }],
         },
         {
           name: "Ashvita Bistro",
           description: "Hidden gem with a homey feel",
           subDescription: "",
-          locations: [
-            {
-              label: "R.A. Puram",
-              link: "https://maps.app.goo.gl/PGStCCngBZhgRbDr9",
-            },
-          ],
+          locations: [{ label: "Alwarpet", link: "#" }],
         },
         {
           name: "Gusto Café",
           description: "Vegan and health-forward options",
-          subDescription: "",
-          locations: [
-            {
-              label: "Besant Nagar",
-              link: "#",
-            },
-          ],
+          subDescription:
+            "",
+          locations: [{ label: "Besant Nagar", link: "#" }],
         },
       ],
     },
-
     {
       id: 6,
       title: "Beachside & Rooftop Dining",
@@ -595,60 +381,31 @@ export default function Restaurants() {
           name: "Upper Deck (Vivanta Fisherman’s Cove)",
           description: "Coastal fine dining by the sea",
           subDescription: "",
-          locations: [
-            {
-              label: "Covelong",
-              link: "https://maps.app.goo.gl/rCUBBFp27nLfMgmq8",
-            },
-          ],
+          locations: [{ label: "Covelong", link: "#" }],
         },
         {
           name: "Bay View (Taj Fisherman’s Cove)",
           description: "Romantic oceanfront seafood experience",
           subDescription: "",
-          locations: [
-            {
-              label: "Covelong",
-              link: "https://maps.app.goo.gl/1i4VYDVD8eVfNWcq5",
-            },
-          ],
+          locations: [{ label: "Covelong", link: "#" }],
         },
         {
           name: "KooX – Rooftop Asian Grill",
           description: "Luxe rooftop dining at Novotel",
           subDescription: "",
-          locations: [
-            {
-              label: "Nandanam",
-              link: "https://maps.app.goo.gl/5tcTDKHj6jT3D7qG7",
-            },
-          ],
+          locations: [{ label: "OMR", link: "#" }],
         },
         {
           name: "Skyloft (Feathers Hotel)",
           description: "Panoramic views with curated menus",
           subDescription: "",
-          locations: [
-            {
-              label: "Manapakkam",
-              link: "https://g.co/kgs/VYfqoKe",
-            },
-          ],
+          locations: [{ label: "Manapakkam", link: "#" }],
         },
         {
           name: "BOATS (Besant Nagar)",
           description: "Chill beachside bistro and bar",
           subDescription: "",
-          locations: [
-            {
-              label: "Besant Nagar",
-              link: "https://g.co/kgs/weswdVA",
-            },
-            {
-              label: "Velachery",
-              link: "https://maps.app.goo.gl/RV4U36tph86NLkaN9",
-            },
-          ],
+          locations: [{ label: "Besant Nagar", link: "#" }],
         },
       ],
     },
@@ -799,10 +556,7 @@ export default function Restaurants() {
               }`}
               ref={bgTextRef}
             >
-              <p>
-                Restaurants &nbsp; in Chennai &nbsp; Restaurants &nbsp; in
-                Chennai
-              </p>
+              <p>Restaurants &nbsp; in Chennai &nbsp; Restaurants &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
               <h3> A City of Flavour — One Plate at a Time</h3>
@@ -819,7 +573,7 @@ export default function Restaurants() {
             </div>
           </div>
         </div>
-        {/* 
+
         <div className="container max-w-7xl mx-auto px-4 py-8">
           {detailsections.map((section) => {
             return (
@@ -877,50 +631,6 @@ export default function Restaurants() {
               </div>
             );
           })}
-        </div> */}
-
-        <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
-          <h1 className="text-3xl font-bold mb-10 text-center">
-            Notable Restaurants in Chennai (By Category)
-          </h1>
-
-          {detailsections.map((section, sectionIdx) => (
-            <div key={sectionIdx} className="nightlifesecIn mb-10">
-              <h2 className="text-2xl font-semibold mb-6">{section.title}</h2>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {section.points.map((point, idx) => (
-                  <div
-                    key={idx}
-                    className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
-                  >
-                    <h3 className="text-xl font-semibold mb-2">{point.name}</h3>
-                    <p className="text-gray-700 mb-2">{point.description}</p>
-
-                    {point.subDescription && (
-                      <p className="text-gray-500 text-sm mb-3">
-                        {point.subDescription}
-                      </p>
-                    )}
-
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {point.locations.map((loc, locIdx) => (
-                        <a
-                          key={locIdx}
-                          href={loc.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-600 hover:underline text-sm bg-blue-50 px-2 py-1 rounded locicon"
-                        >
-                          {loc.label}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
         </div>
 
         {/*--------------- Explore More Chennai----------------- */}

@@ -95,6 +95,7 @@ import Luxuryhotels from "./Pages/SubPages/VisitPages/Luxuryhotels";
 import RestaurantsInChennai from "./Pages/SubPages/VisitPages/RestaurantsInChennai";
 import NightLifeInChennai from "./Pages/SubPages/VisitPages/ChennaiNightLife";
 import SportsInChennai from "./Pages/SubPages/VisitPages/SportInChennai";
+import EventsInChennai from "./Pages/SubPages/VisitPages/EventsInChennai"
 
 import PopupModal from "./Components/ModalPopup";
 import BudgetStays from "./Pages/SubPages/VisitPages/BudgetStays";
@@ -729,6 +730,9 @@ function App() {
 {/* new pages Start*/}
           <Route path="/ChennaiNightLife" element={<NightLifeInChennai />} />
           <Route path="/SportChennai" element={<SportsInChennai />} />
+
+                    <Route path="/EventsInchennai" element={<EventsInChennai />} />
+
 
           <Route path="/luxuryhotels" element={<Luxuryhotels />} />
           <Route  path="/restaurantsinchennai"  element={<RestaurantsInChennai />} />

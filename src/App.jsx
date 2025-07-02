@@ -161,6 +161,10 @@ import DimSumandNoodles from "./Pages/SubPages/VisitPages/DimSumandNoodles";
 import AuthenticChineseMains from "./Pages/SubPages/VisitPages/AuthenticChineseMains";
 import BreakfastTiffinStaples from "./Pages/SubPages/VisitPages/BreakfastTiffinStaples";
 import TraditionalSouthIndianMealsThali from "./Pages/SubPages/VisitPages/TraditionalSouthIndianMealsThali";
+import ChennaiNetworks from "./Pages/SubPages/VisitPages/ChennaiNetwork";
+import ChennaiEntertainment from "./Pages/SubPages/VisitPages/ChennaiEntertainment";
+import ChennaiSports from "./Pages/SubPages/VisitPages/ChennaiSports";
+import ChennaiHealthcare from "./Pages/SubPages/VisitPages/ChennaiHealthcare";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -729,6 +733,15 @@ function App() {
 
 {/* new pages Start*/}
           <Route path="/ChennaiNightLife" element={<NightLifeInChennai />} />
+
+          {/* Dhinesh Work */}
+          
+          <Route path="/chennainetworks" element={<ChennaiNetworks />} />
+          <Route path="/chennaihealthcare" element={<ChennaiHealthcare />} />
+          <Route path="/chennaientertainment" element={<ChennaiEntertainment />} />
+          <Route path="/chennaisports" element={<ChennaiSports />} />
+
+          {/* Dhinesh Work */}
           <Route path="/SportChennai" element={<SportsInChennai />} />
 
                     <Route path="/EventsInchennai" element={<EventsInChennai />} />

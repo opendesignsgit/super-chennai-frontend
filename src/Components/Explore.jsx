@@ -60,7 +60,7 @@ export default function Explore() {
       place: "in chennai",
       image:
         "./images/HomePage-Images/low-section-man-holding-soccer-ball-beach.png",
-      link: "/chennaisports",
+      link: "/thingstodo",
     },
     {
       title: "Events",
@@ -73,7 +73,7 @@ export default function Explore() {
       title: "Health Care",
       place: "in chennai",
       image: "./images/HomePage-Images/health-care.png",
-      link: "/chennaihealthcare",
+      link: "/healthcare",
     },
     {
       title: "Shopping",
@@ -85,14 +85,14 @@ export default function Explore() {
       title: "Entertainment",
       place: "in chennai",
       image: "./images/HomePage-Images/boy-with-vr-glasses-cinema.png",
-      link: "/chennaientertainment",
+      link: "/visit",
     },
     {
       title: "Networks",
       place: "in chennai",
       image:
         "./images/HomePage-Images/strength-people-hands-success-meeting.png",
-      link: "/chennainetworks",
+      link: "/networking",
     },
   ];
 

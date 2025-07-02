@@ -95,7 +95,6 @@ import Luxuryhotels from "./Pages/SubPages/VisitPages/Luxuryhotels";
 import RestaurantsInChennai from "./Pages/SubPages/VisitPages/RestaurantsInChennai";
 import NightLifeInChennai from "./Pages/SubPages/VisitPages/ChennaiNightLife";
 import SportsInChennai from "./Pages/SubPages/VisitPages/SportInChennai";
-import EventsInChennai from "./Pages/SubPages/VisitPages/EventsInChennai"
 
 import PopupModal from "./Components/ModalPopup";
 import BudgetStays from "./Pages/SubPages/VisitPages/BudgetStays";
@@ -161,10 +160,17 @@ import DimSumandNoodles from "./Pages/SubPages/VisitPages/DimSumandNoodles";
 import AuthenticChineseMains from "./Pages/SubPages/VisitPages/AuthenticChineseMains";
 import BreakfastTiffinStaples from "./Pages/SubPages/VisitPages/BreakfastTiffinStaples";
 import TraditionalSouthIndianMealsThali from "./Pages/SubPages/VisitPages/TraditionalSouthIndianMealsThali";
-import ChennaiNetworks from "./Pages/SubPages/VisitPages/ChennaiNetwork";
-import ChennaiEntertainment from "./Pages/SubPages/VisitPages/ChennaiEntertainment";
-import ChennaiSports from "./Pages/SubPages/VisitPages/ChennaiSports";
-import ChennaiHealthcare from "./Pages/SubPages/VisitPages/ChennaiHealthcare";
+ import TasteofThailandinChennai from "./Pages/SubPages/VisitPages/Taste-of-Thailand-in-Chennai";
+import ItalianCuisineinChennai from "./Pages/SubPages/VisitPages/Italian-Cuisine-in-Chennai";
+import SouthIndianRestaurantsinChennai from "./Pages/SubPages/VisitPages/South-Indian-Restaurants-in-Chennai";
+import NorthIndianRestaurantsinChennai from "./Pages/SubPages/VisitPages/North-Indian-Restaurants-in-Chennai";
+  import ChineseCuisineinChennai from "./Pages/SubPages/VisitPages/Chinese-Cuisine-in-Chennai";
+import SriLankanCuisineinChennai from "./Pages/SubPages/VisitPages/Sri-Lankan-Cuisine-in-Chennai";
+import ContinentalCuisineinChennai from "./Pages/SubPages/VisitPages/Continental-Cuisine-in-Chennai";
+import MalaysianFlavorsinChennai from "./Pages/SubPages/VisitPages/Malaysian-Flavors-in-Chennai";
+import ItChennai from "./Pages/SubPages/InvestPages/It-Chennai";
+import FintechChennai from "./Pages/SubPages/InvestPages/Fintech-in-Chennai";
+ 
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -733,19 +739,7 @@ function App() {
 
 {/* new pages Start*/}
           <Route path="/ChennaiNightLife" element={<NightLifeInChennai />} />
-
-          {/* Dhinesh Work */}
-          
-          <Route path="/chennainetworks" element={<ChennaiNetworks />} />
-          <Route path="/chennaihealthcare" element={<ChennaiHealthcare />} />
-          <Route path="/chennaientertainment" element={<ChennaiEntertainment />} />
-          <Route path="/chennaisports" element={<ChennaiSports />} />
-
-          {/* Dhinesh Work */}
           <Route path="/SportChennai" element={<SportsInChennai />} />
-
-                    <Route path="/EventsInchennai" element={<EventsInChennai />} />
-
 
           <Route path="/luxuryhotels" element={<Luxuryhotels />} />
           <Route  path="/restaurantsinchennai"  element={<RestaurantsInChennai />} />
@@ -753,6 +747,20 @@ function App() {
           <Route path="/budgetStays" element={<BudgetStays />} />
           <Route path="/servicedapartments" element={<Servicedapartments />} />
           <Route path="/resortsandvillas" element={<Resortsandvillas />} />
+           <Route path="/taste-of-Thailand-in-Chennai" element={<TasteofThailandinChennai />} />  
+           <Route path="/italian-Cuisine-in-Chennai" element={<ItalianCuisineinChennai />} />  
+           <Route path="/south-Indian-Restaurants-in-Chennai" element={<SouthIndianRestaurantsinChennai />} /> 
+           <Route path="/Chinese-Cuisine-in-Chennai" element={<ChineseCuisineinChennai  />} />   
+           <Route path="/North-Indian-Restaurants-in-Chennai" element={<NorthIndianRestaurantsinChennai />} />   
+            <Route path="/Sri-Lankan-Cuisine-in-Chennai" element={<SriLankanCuisineinChennai />} /> 
+            <Route path="/Continental-Cuisine-in-Chennai" element={<ContinentalCuisineinChennai />} /> 
+             <Route path="/Malaysian-Flavors-in-Chennai" element={<MalaysianFlavorsinChennai />} /> 
+
+           {/* investsup pages */}
+             <Route path="/It-Chennai" element={<ItChennai />} />    
+             <Route path="/Fintech-in-Chennai" element={<FintechChennai />} /> 
+           {/* invest sup pages end */}
+          
 
           {/* new pages End */}
         </Routes>

@@ -712,7 +712,6 @@
 
 /* New Style */
 
-
 /*######### Restaurantsin chennai ############## */
 
 .detailapiSecRes {
@@ -746,114 +745,332 @@
   font-size: 15px;
   line-height: 37px;
   background: #fff;
-  color:rgb(127 57 126);
+  color: rgb(127 57 126);
 }
 .boldPointName {
-  font-weight: 700; 
+  font-weight: 700;
   font-size: 25px;
   color: #000;
 }
 .viewLocationLabel {
-  font-size: 13px;     
-  font-weight: 600;  
-  color: #000000;  
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
-.SubDesc{
+.SubDesc {
   text-transform: capitalize;
- line-height:30px;
-
+  line-height: 30px;
 }
 .FlatListRest {
-  font-size: 18px! important;      
-  font-weight: 700;        
-  color: #000!important; 
-  display: flex;           
-  align-items: center;     
-  text-decoration: none;  
+  font-size: 18px !important;
+  font-weight: 700;
+  color: #000 !important;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .FlatListRest:hover {
   text-decoration: underline;
-  color: #7a267a; 
+  color: #7a267a;
 }
-
 
 /* new pages style start */
- 
-    .list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 16px;
-      background-color: #fff;
-          border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 22px 10px 0 rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s, box-shadow 0.3s;
-          margin: 0 10px 20px;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    }
-.nightlifesecIn{margin: 0 0 80px;
-    border-bottom: solid 1px #e7e7e7;
-    padding-bottom: 80px;}
-    .nightlife h1
- {
-        font-family: "NewAmsterdam";
-    font-size: 4vw;
-    line-height: 1;
-    margin-bottom: 10px;
-    color: #995098;
-        font-weight: 500;
-}
-    .nightlife h2
- {     font-family: "NewAmsterdam";
-    font-size: 3vw;
-    line-height: 1;
-    margin-bottom: 10px;
-    color: #333;
-    text-align: center;
-    font-weight: 500;
-    margin: 0 0 30px;
 
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
 }
-    .card h3 {
-     font-family: "29LT Bukra SmBd";
-    color: #a44294;
-    font-size: clamp(17px, 1.2vw + 0.5rem, 24px);
-    line-height: clamp(19px, 1.5vw + 0.5rem, 29px);
-    text-align: left;
-    width: 100%;
- 
-    }
-    .card p {
-     font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    color: #1d1d1d;
-    margin-top: 8px;
-    font-weight: 400;
-    font-size: clamp(14px, 2vw, 16px);
-    font-size: clamp(14px, 1.1vw, 16px);
-    line-height: clamp(1.4, 1.5vw, 1.5);
-    }
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+    0 22px 10px 0 rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0 10px 20px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.nightlifesecIn {
+  margin: 0 0 80px;
+  border-bottom: solid 1px #e7e7e7;
+  padding-bottom: 80px;
+}
+.nightlife h1 {
+  font-family: "NewAmsterdam";
+  font-size: 4vw;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #995098;
+  font-weight: 500;
+}
+.nightlife h2 {
+  font-family: "NewAmsterdam";
+  font-size: 3vw;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+.card h3 {
+  font-family: "29LT Bukra SmBd";
+  color: #a44294;
+  font-size: clamp(17px, 1.2vw + 0.5rem, 24px);
+  line-height: clamp(19px, 1.5vw + 0.5rem, 29px);
+  text-align: left;
+  width: 100%;
+}
+.card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #1d1d1d;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 16px);
+  font-size: clamp(14px, 1.1vw, 16px);
+  line-height: clamp(1.4, 1.5vw, 1.5);
+}
 
-     .card a{background: url(/images/loc-icon.svg) no-repeat 0 0;     padding: 0 0 0 22px;
-    color: #000;  font-weight: 600;}
- 
+.card a {
+  background: url(/images/loc-icon.svg) no-repeat 0 0;
+  padding: 0 0 0 22px;
+  color: #000;
+  font-weight: 600;
+}
 
 /* new pages style end */
 
+/* TimeLine */
+.z5-timeline-wrapper {
+  background-color: #f5f5f5;
+  /* font-family: 'Poppins', sans-serif; */
+  padding: 60px 0;
+}
 
+.z5-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.z5-box {
+  position: relative;
+  width: 50%;
+  padding: 1rem 3rem;
+  opacity: 0;
+  animation: z5-animateBox 0.3s linear forwards;
+}
+
+@keyframes z5-animateBox {
+  0% {
+    opacity: 0.8;
+    transform: translateY(500px) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.z5-box:nth-child(2) {
+  animation-delay: 0s;
+}
+.z5-box:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.z5-box:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.z5-box:nth-child(5) {
+  animation-delay: 0.9s;
+}
+.z5-box:nth-child(6) {
+  animation-delay: 1s;
+}
+.z5-box:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+.z5-box-left {
+  left: 0;
+}
+.z5-box-right {
+  left: 50%;
+}
+
+.z5-box i {
+  position: absolute;
+  background: linear-gradient(-311deg, #995098, #995098, #995098);
+  top: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 50%;
+  right: -25px;
+  z-index: 10;
+}
+
+.z5-box-right i {
+  left: -25px;
+}
+
+.z5-box .z5-html,
+.z5-box .z5-css,
+.z5-box .z5-javascript,
+.z5-box .z5-react,
+.z5-box .z5-angular,
+.z5-box .z5-vue {
+  color: #995098;
+  border: 4px solid #995098;
+}
+
+.z5-info {
+  position: relative;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  background: #002124;
+  background: #995098;
+  color: #fafafa;
+  box-shadow: 0 5px 9px #f5f5f5;
+  border-bottom: 2px solid #fff;
+}
+
+.z5-info h2 {
+  font-family: "29LT Bukra SmBd";
+  color: #fff;
+  font-size: clamp(17px, 1.2vw + 0.5rem, 24px);
+  line-height: clamp(19px, 1.5vw + 0.5rem, 29px);
+  text-align: left;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.z5-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.z5-info a {
+  text-decoration: none;
+  color: #0098a9;
+  font-size: 1rem;
+  font-weight: 500;
+  display: none;
+}
+
+.z5-info::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 14px solid #995098;
+  right: -14px;
+  z-index: 10;
+}
+
+.z5-box-right .z5-info::after {
+  border-left: 0;
+  border-right: 14px solid #995098;
+  left: -14px;
+}
+
+.z5-vertical-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 6px;
+  height: 100%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  background: linear-gradient(45deg, #995098, #995098 186%);
+  animation: z5-animateLine 3s linear forwards;
+}
+
+@keyframes z5-animateLine {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .z5-container {
+    margin: 40px auto;
+  }
+
+  .z5-vertical-line {
+    left: 60px;
+  }
+
+  .z5-box {
+    width: 100%;
+    padding-left: 109px;
+  }
+
+  .z5-box-left,
+  .z5-box-right {
+    left: 0;
+  }
+
+  .z5-box i {
+    left: 35px;
+  }
+
+  .z5-info::after {
+    left: -16px;
+  }
+
+  .z5-box-left .z5-info::after {
+    border-left: 0;
+    border-right: 14px solid #002124;
+    left: -14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .z5-vertical-line {
+    left: 40px;
+  }
+
+  .z5-box {
+    padding-left: 85px;
+  }
+
+  .z5-box i {
+    left: 15px;
+  }
+}
+
+.z5-footer {
+  color: #fafafa;
+  font-size: 19px;
+  text-align: center;
+  margin-top: 40px;
+  background: #051919;
+  padding: 10px;
+}
+
+/* TimeLine */
 
 /* ------------Resposive----------  */
 

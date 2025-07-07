@@ -26,7 +26,7 @@ export default function ChennaiInvestments() {
       description:
         "The term 'IT corridor' refers to OMR. Someone may rent your land in order to establish a business there, which will bring in money for you",
       image: "/images/Invest-Images/SubPages/emerging/omr.jpg",
-      link: "/investrealestatechennai#InvestId",
+      link: "/chennairealestate#InvestId",
     },
     {
       title: "Maraimalai Nagar",
@@ -34,7 +34,7 @@ export default function ChennaiInvestments() {
       description:
         "The demand for homes in this region has increased since the municipality was expanding.",
       image: "/images/Invest-Images/SubPages/emerging/maraimalai-nagar.jpg",
-      link: "/investrealestatechennai#InvestId",
+      link: "/chennairealestate#InvestId",
     },
     {
       title: "Adyar",
@@ -42,7 +42,7 @@ export default function ChennaiInvestments() {
       description:
         "You made the right choice if you chose to purchase a home here, as the properties are asking high rents from renters who want a high-end lifestyle.",
       image: "/images/Invest-Images/SubPages/establishment/Adyar.jpg",
-      link: "/investrealestatechennai#InvestId",
+      link: "/chennairealestate#InvestId",
     },
 
     {

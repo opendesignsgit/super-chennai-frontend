@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 
-export default function RoboticsandAutomation() {
+export default function roboticsandautomation() {
   const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
   const bgTextRef = useRef(null);

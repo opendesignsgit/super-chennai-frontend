@@ -76,7 +76,7 @@ export default function Invest() {
       description:
         "Due to rising property values and the need for rental space in cities, real estate investments in Chennai could provide attractive returns. Both residential and commercial prospects were abundant.",
       image: "./images/Invest-Images/Icons/realesate-icon.svg",
-      link: "/investrealestatechennai",
+      link: "/chennairealestate",
     },
     {
       title: "Franchise",

@@ -214,7 +214,7 @@ export default function MenuBar({ setMenuBar }) {
         {
           title: "Realestate",
           desc: "Chennai Property Potential",
-          link: "/investrealestatechennai",
+          link: "/chennairealestate",
         },
         {
           title: "Franchise",

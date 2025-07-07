@@ -128,7 +128,7 @@ const Footer = () => {
   ];
 
   const USEFULLINKS = [
-    { title: "Realestate", link: "/investrealestatechennai" },
+    { title: "Realestate", link: "/chennairealestate" },
     { title: "Franchise", link: "/investfranchisechennai" },
     { title: "Startups", link: "/investstartupschennai" },
     { title: "Renewable Energy", link: "/investrenewableenergychennai" },

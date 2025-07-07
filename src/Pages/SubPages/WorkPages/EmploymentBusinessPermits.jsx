@@ -23,7 +23,7 @@ export default function EmploymentBusinessPermits() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const imageSections = [ 
+  const imageSections = [
     {
       sectionTitle: "Types of Permits Available",
       sectionDesc:

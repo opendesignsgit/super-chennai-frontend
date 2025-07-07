@@ -164,7 +164,7 @@ export default function InvestExhibitionsChennai() {
     {
       src: "/images/Invest-Images/SubPages/real-estate-slide.jpg",
       title: "Real Estate",
-      link: "/investrealestatechennai",
+      link: "/chennairealestate",
     },
     {
       src: "/images/Invest-Images/SubPages/franchise-slide.jpg",

@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../assets/Css/EventsCalendar.css";
-import { useRef, useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { link } from "framer-motion/client";
+
+import { cards } from "../../src/Pages/EventData";
 
 export default function CardCarousel111() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -13,93 +14,6 @@ export default function CardCarousel111() {
 
   const lastScrollY = useRef(0);
   const bgTextRef = useRef(null);
-
-  const cards = [
-    {
-      EventsCalendarTitle: "Startup Networking Global Startup Clubs",
-      EventsCalendarContent:
-        "Join global startup clubs and expand your network.",
-      EventsCalendarMonth: "April",
-      EventsCalendarTime: "10:30 AM",
-      EventsCalendarCategory: "Networking",
-      image: "/images/HomePage-Images/Events/Events1.jpg",
-      link: "/eventstechinnovaters",
-    },
-    {
-      EventsCalendarTitle: "Tech Innovators Meetup",
-      EventsCalendarContent: "Meet the brightest minds in tech innovation.",
-      EventsCalendarMonth: "May",
-      EventsCalendarTime: "2:00 PM",
-      EventsCalendarCategory: "Technology",
-      image: "/images/HomePage-Images/Events/Events2.jpg",
-      link: "/eventstechstartups",
-    },
-    {
-      EventsCalendarTitle: "Entrepreneur Workshop",
-      EventsCalendarContent: "Learn business skills from top entrepreneurs.",
-      EventsCalendarMonth: "June",
-      EventsCalendarTime: "11:00 AM",
-      EventsCalendarCategory: "Business",
-      image: "/images/HomePage-Images/Events/Events3.jpg",
-      link: "/eventschennaibusinessnetwork",
-    },
-    {
-      EventsCalendarTitle: "Startup Networking Global Startup Clubs",
-      EventsCalendarContent:
-        "Join global startup clubs and expand your network.",
-      EventsCalendarMonth: "April",
-      EventsCalendarTime: "10:30 AM",
-      EventsCalendarCategory: "Networking",
-      image: "/images/HomePage-Images/Events/Events1.jpg",
-      link: "/eventstechinnovaters",
-    },
-    {
-      EventsCalendarTitle: "Tech Innovators Meetup",
-      EventsCalendarContent: "Meet the brightest minds in tech innovation.",
-      EventsCalendarMonth: "May",
-      EventsCalendarTime: "2:00 PM",
-      EventsCalendarCategory: "Technology",
-      image: "/images/HomePage-Images/Events/Events2.jpg",
-      link: "/eventstechstartups",
-    },
-    {
-      EventsCalendarTitle: "Entrepreneur Workshop",
-      EventsCalendarContent: "Learn business skills from top entrepreneurs.",
-      EventsCalendarMonth: "June",
-      EventsCalendarTime: "11:00 AM",
-      EventsCalendarCategory: "Business",
-      image: "/images/HomePage-Images/Events/Events3.jpg",
-      link: "/eventschennaibusinessnetwork",
-    },
-    {
-      EventsCalendarTitle: "Startup Networking Global Startup Clubs",
-      EventsCalendarContent:
-        "Join global startup clubs and expand your network.",
-      EventsCalendarMonth: "April",
-      EventsCalendarTime: "10:30 AM",
-      EventsCalendarCategory: "Networking",
-      image: "/images/HomePage-Images/Events/Events1.jpg",
-      link: "/eventstechinnovaters",
-    },
-    {
-      EventsCalendarTitle: "Tech Innovators Meetup",
-      EventsCalendarContent: "Meet the brightest minds in tech innovation.",
-      EventsCalendarMonth: "May",
-      EventsCalendarTime: "2:00 PM",
-      EventsCalendarCategory: "Technology",
-      image: "/images/HomePage-Images/Events/Events2.jpg",
-      link: "/eventstechstartups",
-    },
-    {
-      EventsCalendarTitle: "Entrepreneur Workshop",
-      EventsCalendarContent: "Learn business skills from top entrepreneurs.",
-      EventsCalendarMonth: "June",
-      EventsCalendarTime: "11:00 AM",
-      EventsCalendarCategory: "Business",
-      image: "/images/HomePage-Images/Events/Events3.jpg",
-      link: "/eventschennaibusinessnetwork",
-    },
-  ];
 
   const slide = (direction) => {
     const cardWidth = 300;

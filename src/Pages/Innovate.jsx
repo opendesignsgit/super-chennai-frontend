@@ -1,11 +1,10 @@
-import { useState, useRef, useEffect } from "react";
-import "../assets/Css/Innovate.css";
-import Search from "../Components/Search";
-import Slider from "react-slick";
-import InnovateSlider from "../Components/InnovateSldier";
-import InstagramReelsMarquee from "../Components/SocialChennai";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
+import "../assets/Css/Innovate.css";
+import InnovateSlider from "../Components/InnovateSldier";
+import Search from "../Components/Search";
+import InstagramReelsMarquee from "../Components/SocialChennai";
 
 export default function Innovate() {
   useEffect(() => {

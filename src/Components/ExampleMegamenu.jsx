@@ -186,7 +186,7 @@ const menuItems = [
       {
         title: "Real Estate",
         desc: "Invest smart in property",
-        link: "/investrealestatechennai",
+        link: "/chennairealestate",
       },
       {
         title: "Franchise",
@@ -242,62 +242,62 @@ const menuItems = [
       {
         title: "IT & Software",
         desc: "Build digital-first futures",
-        link: "/itandsoftwaredevelopment",
+        link: "/It-and-Software-Companies",
       },
       {
         title: "AI",
         desc: "Automate smarter with intelligence",
-        link: "/artificialintelligenceandmachinelearning",
+        link: "/AI-in-Chennai",
       },
       {
         title: "EV Mobility",
         desc: "Drive green with tech",
-        link: "/ElectricVehicles",
+        link: "/EV-Mobility-in-Chennai",
       },
       {
         title: "Smart Cities",
         desc: "Connect life and tech",
-        link: "/smartcityinitiatives",
+        link: "/Smart-City",
       },
       {
         title: "Health Tech",
         desc: "Empower care digitally",
-        link: "/healthcaretechinnovation",
+        link: "/Health-Tech-in-Chennai",
       },
       {
         title: "Robotics",
         desc: "Optimize with smart machines",
-        link: "/roboticsandautomation",
+        link: "/Robotics-in-Chennai",
       },
       {
         title: "Blockchain",
         desc: "Safe and smart money tech",
-        link: "/blockchainandfintech",
+        link: "/Blockchain-in-Chennai",
       },
       {
         title: "Auto Tech",
         desc: "Mobility meets innovation",
-        link: "/automotivetechandrandd",
+        link: "/AutoTech-in-Chennai",
       },
       {
         title: "Edu Tech ",
         desc: "Expand smarter learning",
-        link: "/educationtech",
+        link: "/EduTech-in-Chennai",
       },
       {
         title: "3D Printing",
         desc: "Create with precision tech",
-        link: "/threedprintingandadditivemanufacturing",
+        link: "/ThreeD-Printing-in-Chennai",
       },
       {
         title: "AR/VR",
         desc: "Experience new realities",
-        link: "/augmentedreality",
+        link: "/AR-VR-chennai",
       },
       {
         title: "Agri Tech",
         desc: "Modernize farms smartly",
-        link: "/agriculturetech",
+        link: "/AgriTech-in-Chennai",
       },
     ],
   },

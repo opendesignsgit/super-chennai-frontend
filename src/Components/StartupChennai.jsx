@@ -43,16 +43,7 @@ export default function StartupChennai() {
         <div className="container max-w-7xl mx-auto px-4">
           <div className="startupChennaiMainContainer">
             <h3>STARTUP CHENNAI</h3>
-            <p>
-              {/* Learn about the technology and networks that drive this vibrant
-              ecosystem. Discover the fascinating journey that Chennai's
-              up-and-coming startups are taking as they influence the future.
-              Here, creativity and investment meet. IT SECTOR - The IT Hub of
-              South India, Expanding Quickly. */}
-              {/* From cloud solutions to AI breakthroughs, Chennai’s IT sector is
-              rewriting the rules. Join the journey of a city that’s turning
-              bold ideas into global impact. */}
-              
+            <p>           
               From cloud solutions to AI breakthroughs, Chennai’s IT sector is
               transforming rapidly. As a hub of innovation and talent, the city
               empowers bold ideas to scale globally. With thriving startups,
@@ -65,7 +56,7 @@ export default function StartupChennai() {
             <div className="startupChennaiImageSection">
               <div className="firstStarupSection">
                 <img
-                  onClick={() => navigate("/investstartupschennai")}
+                  onClick={() => navigate("/It-Chennai")}
                   src="./images/HomePage-Images/StartupChennaiImage1.png"
                   alt=""
                 />
@@ -80,7 +71,7 @@ export default function StartupChennai() {
                 <div className="rightSideSectionSTarup">
                   <div className="StartUpChennaiTextLayer">
                     <img
-                      onClick={() => navigate("/investstartupschennai")}
+                      onClick={() => navigate("/Fintech-in-Chennai")}
                       src="./images/HomePage-Images/StartupChennaiImage2.png"
                       alt=""
                     />
@@ -90,7 +81,7 @@ export default function StartupChennai() {
                   </div>
                   <div className="StartUpChennaiTextLayer">
                     <img
-                      onClick={() => navigate("/investstartupschennai")}
+                      onClick={() => navigate("/DeepTech-AI-Startups-in-Chennai")}
                       src="./images/HomePage-Images/StartupChennaiImage3.png"
                       alt=""
                     />
@@ -102,7 +93,7 @@ export default function StartupChennai() {
                 <div className="rightSideSectionSTarup">
                   <div className="StarupForBorder StartUpChennaiTextLayer">
                     <img
-                      onClick={() => navigate("/investstartupschennai")}
+                      onClick={() => navigate("/Automotive")}
                       src="./images/HomePage-Images/StartupChennaiImage4.png"
                       alt=""
                     />
@@ -112,7 +103,7 @@ export default function StartupChennai() {
                   </div>
                   <div className="StarupForBorder StartUpChennaiTextLayer">
                     <img
-                      onClick={() => navigate("/investstartupschennai")}
+                      onClick={() => navigate("/EduTech")}
                       src="./images/HomePage-Images/edTechHome.png"
                       alt=""
                     />

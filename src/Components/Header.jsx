@@ -9,7 +9,6 @@ const MegaMenu = () => {
   const [clickedMenu, setClickedMenu] = useState(null);
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
   const [menuBar, setMenuBar] = useState(false);
 
   const menuItems = [

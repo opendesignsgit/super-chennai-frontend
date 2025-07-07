@@ -1,13 +1,15 @@
-import { useState, useRef, useEffect } from "react";
-import "../../../assets/Css/CostOfLiving.css";
 
-import Search from "../../../Components/Search";
+
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import InstagramReelsMarquee from "../../../Components/SocialChennai";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "../../../assets/Css/CostOfLiving.css";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
+import Search from "../../../Components/Search";
+import InstagramReelsMarquee from "../../../Components/SocialChennai";
+import ExpandableList from "../../../Components/cardScroller/ExpandableList";
 
 export default function Shopping() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -24,100 +26,422 @@ export default function Shopping() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const imageSections = [
+  // const ShoppingData = [
+  //   {
+  //     category: "Textiles & Traditional Wear",
+  //     places: [
+  //       {
+  //         name: "T. Nagar (Pondy Bazaar & Ranganathan Street)",
+  //         desc: "Sarees, salwars, and festive ethnic wear from famous stores like Nalli, Pothys, RMKV, and Chennai Silks",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Mylapore",
+  //         desc: "Classical dance costumes, temple jewelry, and artisanal weaves",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Panagal Park Area",
+  //         desc: " Rich silk sarees and Kanchipuram collections for weddings and special occasions",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+
+  //     ],
+  //   },
+  //   {
+  //     category: "Malls & International Brands",
+  //     places: [
+  //       {
+  //         name: "Express Avenue (Royapettah)",
+  //         desc: "Flagship stores, cinema, and food court in a centrally located mall",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Phoenix Marketcity (Velachery)",
+  //         desc: "Luxury shopping, fashion chains, cafes, and live events",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "VR Chennai (Anna Nagar)",
+  //         desc: "Premium retail, designer brands, and rooftop restaurants",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Chennai Citi Centre (Mylapore)",
+  //         desc: "Popular with families and weekend shoppers",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     category: "Jewelry & Gold",
+  //     places: [
+  //       {
+  //         name: "T. Nagar & Usman Road",
+  //         desc: "High-end stores like GRT, Lalitha, Prince, and Jos Alukkas",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Parrys Corner",
+  //         desc: "Wholesale jewelry and gems",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Khader Nawaz Khan Road",
+  //         desc: "Designer boutique jewelers and contemporary labels",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     category: "Street Shopping & Local Finds",
+  //     places: [
+  //       {
+  //         name: "Pondy Bazaar",
+  //         desc: " Footwear, bags, trendy clothing, accessories — fun and affordable",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Ritchie Street (Mount Road)",
+  //         desc: "The go-to destination for electronics and gadget deals",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Moore Market",
+  //         desc: "Books, vintage finds, antiques, and curios",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     category: "Handicrafts & Home Decor",
+  //     places: [
+  //       {
+  //         name: "Poompuhar & Co-optex (Across city)",
+  //         desc: "Government emporiums for crafts, handlooms, and home textiles",
+  //         locations: [
+  //           { name: "-", link: "#" },
+  //         ],
+  //       },
+  //       {
+  //         name: "Kalpa Druma (Mylapore)",
+  //         desc: " Artisan furniture and ethical crafts",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Amethyst (Royapettah)",
+  //         desc: "High-end home goods, apparel, and organic lifestyle products in a heritage setting",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //     ],
+  //   },
+  //      {
+  //     category: "Shopping for All Needs",
+  //     places: [
+  //       {
+  //         name: "Everyday Essentials",
+  //         desc: "Reliance, More, Nilgiris, and local kirana shops",
+  //         locations: [
+  //           { name: "-", link: "#" },
+  //         ],
+  //       },
+  //       {
+  //         name: "Books & Stationery",
+  //         desc: "Higginbothams, Odyssey, Crossword, and local independent sellers",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Sports & Outdoors",
+  //         desc: "Decathlon, Proline, and stores across malls and online hubs",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //     ],
+  //   },
+  //      {
+  //     category: "Pro Tips",
+  //     places: [
+  //       {
+  //         name: "Best Time to Shop",
+  //         desc: "Mornings (for street markets), weekdays (to avoid mall crowds), festival seasons (for deals)",
+  //         locations: [
+  //           { name: "-", link: "#" },
+  //         ],
+  //       },
+  //       {
+  //         name: "Payment Modes",
+  //         desc: "Digital payments widely accepted; carry cash for street vendors",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //       {
+  //         name: "Language Tip",
+  //         desc: "Basic Tamil or polite English is enough to shop anywhere",
+  //         locations: [{ name: "-", link: "#" }],
+  //       },
+  //     ],
+  //   },
+  // ];
+
+  const ShoppingData = [
     {
-      sectionTitle: "Tradition",
-      sectionDesc: "Discover enduring artistic talent and cultural legacy.",
-      image: "images/Visit-Images/SubPages/tradition.jpg",
-      tenantInfoSections: [
+      category: "Textiles & Traditional Wear",
+      places: [
         {
-          points: [
+          name: "T. Nagar (Pondy Bazaar & Ranganathan Street)",
+          desc: "Sarees, salwars, and festive ethnic wear from famous stores like Nalli, Pothys, RMKV, and Chennai Silks",
+          locations: [
+     
             {
-              title: "Explore Artisan Hubs",
-              para: [
-                "Take in the region's great artistic talents by exploring lively marketplaces and special areas filled with handcrafted items.",
-              ],
-              imgs: "images/Visit-Images/SubPages/Icons/Explore-Artisan-Hubs.svg",
-              link: "/visit-shopping-tradition-exploreartist",
+              name: " T. Nagar",
+              link: "https://maps.app.goo.gl/aE9JUdr7YuVbA58g7",
+            },
+        
+          ],
+        },
+        {
+          name: "Mylapore",
+          desc: "Classical dance costumes, temple jewelry, and artisanal weaves",
+          locations: [
+            {
+              name: " Mylapore",
+              link: "https://maps.app.goo.gl/NfKNjvnkn2ujXWFRA",
+            },
+            {
+              name: "Mylapore",
+              link: "https://maps.app.goo.gl/FUNfZumBzK5jLUCG7",
             },
           ],
         },
         {
-          points: [
+          name: "Panagal Park Area",
+          desc: "Rich silk sarees and Kanchipuram collections for weddings and special occasions",
+          locations: [
             {
-              title: "Locate Classic Textiles",
-              para: [
-                "Enter a world of gorgeous textiles and traditional attire, each of which tells a tale of skill and tradition.",
-              ],
-              imgs: "images/Visit-Images/SubPages/Icons/Locate-Classic-Textiles.svg",
-              link: "/visit-shopping-tradition-locate-classic",
+              name: " Panagal Park",
+              link: "https://maps.app.goo.gl/ixFTXvdP88e6iJ2N6",
+            },
+            {
+              name: " Panagal Park",
+              link: "https://maps.app.goo.gl/x8NfmaUk4qimhqt58",
             },
           ],
         },
       ],
     },
     {
-      sectionTitle: "The Modern Marketplace",
-      sectionDesc: "Savor the newest styles and international products.",
-      image: "images/Visit-Images/SubPages/modern-marketplace.jpg",
-      tenantInfoSections: [
+      category: "Malls & International Brands",
+      places: [
         {
-          points: [
+          name: "Express Avenue (Royapettah)",
+          desc: "Flagship stores, cinema, and food court in a centrally located mall",
+          locations: [
             {
-              title: "Explore Retail Sanctuaries",
-              para: [
-                " Explore contemporary retail centers and malls that include a variety of national and international brands.",
-              ],
-              imgs: "images/Visit-Images/SubPages/Icons/Explore-Retail-Sanctuaries.svg",
-              link: "/visit-shopping-the-modern-marketplace-explore",
+              name: " Royapettah",
+              link: "https://maps.app.goo.gl/66VJHN8WhryMyYV98",
             },
           ],
         },
         {
-          points: [
+          name: "Phoenix Marketcity (Velachery)",
+          desc: "Luxury shopping, fashion chains, cafes, and live events",
+          locations: [
             {
-              title: "Welcoming Lifestyle Travel Destinations",
-              para: [
-                " Discover carefully chosen areas that provide a whole experience by combining food, entertainment, and shopping.",
-              ],
-              imgs: "images/Visit-Images/SubPages/Icons/Welcoming-Lifestyle-Travel-Destinations.svg",
-              link: "/visit-shopping-the-modernplace-welcoming-lifestyle",
+              name: " Velachery",
+              link: "https://maps.app.goo.gl/Tdi8CxmeuD1jjTRq8",
+            },
+          ],
+        },
+        {
+          name: "VR Chennai (Anna Nagar)",
+          desc: "Premium retail, designer brands, and rooftop restaurants",
+          locations: [
+            {
+              name: "Anna Nagar",
+              link: "https://maps.app.goo.gl/3hMQTAhd4qwPSGLq6",
+            },
+          ],
+        },
+        {
+          name: "Chennai Citi Centre (Mylapore)",
+          desc: "Popular with families and weekend shoppers",
+          locations: [
+            {
+              name: " Mylapore",
+              link: "https://maps.app.goo.gl/vCkbRcwhzGDgdejS9",
             },
           ],
         },
       ],
     },
     {
-      sectionTitle: "Local Finds & Hidden Gems",
-      sectionDesc: "Take detours to uncover unusual findings.",
-      image: "images/Visit-Images/SubPages/local-finds.jpg",
-      tenantInfoSections: [
+      category: "Jewelry & Gold",
+      places: [
         {
-          points: [
+          name: "T. Nagar & Usman Road",
+          desc: "High-end stores like GRT, Lalitha, Prince, and Jos Alukkas",
+          locations: [
+         
             {
-              title: "Discover Local Treasures",
-              para: [
-                " Look for smaller stores and local markets that sell distinctive, frequently homemade goods with a distinctively local flair.",
-              ],
-              imgs: "images/Visit-Images/SubPages/Icons/Discover-Local-Treasures.svg",
-              link: "/visit-shopping-local-finds-discover-local-treasures",
+              name: "T. Nagar",
+              link: "https://maps.app.goo.gl/yRja9T8WkSNG3UgV6",
             },
           ],
         },
         {
-          points: [
+          name: "Parrys Corner",
+          desc: "Wholesale jewelry and gems",
+          locations: [
             {
-              title: "Savor Edible Souvenirs",
-              para: [
-                " Learn about local specialties and cuisines that provide a flavor of Chennai that you could bring home.",
-              ],
-              imgs: "images/Visit-Images/SubPages/Icons/Savor-Edible-Souvenirs.svg",
-              link: "/visit-shopping-local-finds-savoredible-souvenirs",
+              name: " Parrys Corner",
+              link: "https://maps.app.goo.gl/2XL9q3iNHFGf14CZ9",
+            },
+          ],
+        },
+        {
+          name: "Khader Nawaz Khan Road",
+          desc: "Designer boutique jewelers and contemporary labels",
+          locations: [
+            {
+              name: " Royapettah",
+              link: "https://maps.app.goo.gl/f3xTMwYpBAtbCAkU7",
             },
           ],
         },
       ],
     },
+    {
+      category: "Street Shopping & Local Finds",
+      places: [
+        {
+          name: "Pondy Bazaar",
+          desc: "Footwear, bags, trendy clothing, accessories — fun and affordable",
+          locations: [
+            {
+              name: " Pondy Bazaar",
+              link: "https://maps.app.goo.gl/ScTSm6JoGbjW3MnY6",
+            },
+          ],
+        },
+        {
+          name: "Ritchie Street (Mount Road)",
+          desc: "The go-to destination for electronics and gadget deals",
+          locations: [
+            {
+              name: " Mount Road",
+              link: "https://maps.app.goo.gl/NV1jtexekBtnsJSu7",
+            },
+          ],
+        },
+        {
+          name: "Moore Market",
+          desc: "Books, vintage finds, antiques, and curios",
+          locations: [
+            {
+              name: "Moore Market",
+              link: "https://maps.app.goo.gl/DTJqf8KrVjUVFYoa9",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "Handicrafts & Home Decor",
+      places: [
+        {
+          name: "Poompuhar & Co-optex (Across city)",
+          desc: "Government emporiums for crafts, handlooms, and home textiles",
+          locations: [
+            {
+              name: "Anna Salai",
+              link: "https://maps.app.goo.gl/tQbnYLCNwoaNUnY78",
+            },
+          ],
+        },
+        {
+          name: "Kalpa Druma (Mylapore)",
+          desc: "Artisan furniture and ethical crafts",
+          locations: [
+            {
+              name: " Mylapore",
+              link: "https://maps.app.goo.gl/ph7wBcqbWnRL6uBX8",
+            },
+          ],
+        },
+        {
+          name: "Amethyst (Royapettah)",
+          desc: "High-end home goods, apparel, and organic lifestyle products in a heritage setting",
+          locations: [
+            {
+              name: " Royapettah",
+              link: "https://maps.app.goo.gl/T4nAQRqr2F62RRw86",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "Shopping for All Needs",
+      places: [
+        {
+          name: "Everyday Essentials",
+          desc: "Reliance, More, Nilgiris, and local kirana shops",
+          locations: [
+            {
+              name: " T. Nagar",
+              link: "https://maps.app.goo.gl/1DJag5SDoYE2Pvs87",
+            },
+        
+          ],
+        },
+        {
+          name: "Books & Stationery",
+          desc: "Higginbothams, Odyssey, Crossword, and local independent sellers",
+          locations: [
+            {
+              name: " Anna Salai",
+              link: "https://maps.app.goo.gl/scx5EQCVPR9D4bSF6",
+            },
+            {
+              name: " Forum Nexus Vijaya Mall",
+              link: "https://maps.app.goo.gl/d96dwcugDq1vkuCWA",
+            },
+          ],
+        },
+        {
+          name: "Sports & Outdoors",
+          desc: "Decathlon, Proline, and stores across malls and online hubs",
+          locations: [
+            {
+              name: " Pondy Bazaar",
+              link: "https://maps.app.goo.gl/TB8yHTzYoZz3oZfUA",
+            },
+            {
+              name: " Express Avenue",
+              link: "https://maps.app.goo.gl/eLtcLct33ZahCXcf7",
+            },
+          ],
+        },
+      ],
+    },
+    // {
+    //   category: "Pro Tips",
+    //   places: [
+    //     {
+    //       name: "Best Time to Shop",
+    //       desc: "Mornings (for street markets), weekdays (to avoid mall crowds), festival seasons (for deals)",
+    //       locations: [{ name: "-", link: "#" }],
+    //     },
+    //     {
+    //       name: "Payment Modes",
+    //       desc: "Digital payments widely accepted; carry cash for street vendors",
+    //       locations: [{ name: "-", link: "#" }],
+    //     },
+    //     {
+    //       name: "Language Tip",
+    //       desc: "Basic Tamil or polite English is enough to shop anywhere",
+    //       locations: [{ name: "-", link: "#" }],
+    //     },
+    //   ],
+    // },
   ];
 
   const images = [
@@ -134,12 +458,12 @@ export default function Shopping() {
     {
       src: "images/Visit-Images/SubPages/places-to-visit-slide.jpg",
       title: "Places to Visit",
-      link: "/placestovisit",
+      link: "/places-to-visit",
     },
     {
       src: "images/Visit-Images/SubPages/things-to-do-slide.jpg",
       title: "Things to Do",
-      link: "/thingstodo",
+      link: "/things-to-do",
     },
     {
       src: "images/Visit-Images/SubPages/itinerary-slide.jpg",
@@ -149,7 +473,7 @@ export default function Shopping() {
     {
       src: "images/Visit-Images/SubPages/hidden-gems-slide.jpg",
       title: "Hidden Gems",
-      link: "/hiddengems",
+      link: "/hidden-gems",
     },
     {
       src: "images/Visit-Images/SubPages/shopping-slide.jpg",
@@ -159,7 +483,7 @@ export default function Shopping() {
     {
       src: "images/Visit-Images/SubPages/travel-tips-slide.jpg",
       title: "Travel Tips",
-      link: "/traveltips",
+      link: "/travel-tips",
     },
     {
       src: "images/Visit-Images/SubPages/wellness-slide.jpg",
@@ -178,7 +502,7 @@ export default function Shopping() {
     },
   ];
 
-  // Custom Arrow Components
+  // ########## Custom Arrow Components ###############
   const PrevArrow = ({ onClick }) => (
     <div onClick={onClick} className="ExplorePageLeftButton"></div>
   );
@@ -236,12 +560,16 @@ export default function Shopping() {
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
-          <img src="images/Visit-Images/SubPages/shopping-banner.jpg" alt="" />
+          <img
+            src="images/Visit-Images/SubPages/Luxury-Hotels-banner.jpg"
+            alt=""
+          />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
-              <h3>Shopping </h3>
+              <h3>Shopping</h3>
               <div className="breadCrum">
-                <Link to="/visit"> Visit </Link> - <a href="">Shopping </a>
+                <Link to="/."> Home </Link> -{" "}
+                <a href="">Chennai Shopping</a>
               </div>
             </div>
           </div>
@@ -261,89 +589,68 @@ export default function Shopping() {
               }`}
               ref={bgTextRef}
             >
-              <p>Visit &nbsp; in Chennai &nbsp; Visit &nbsp; in Chennai</p>
+              <p>
+                Shopping &nbsp; in Chennai &nbsp; Shopping &nbsp; in Chennai
+              </p>
             </div>
             <div className="workIntro">
-              <h3>Shopping</h3>
+              <h3>Where Tradition Meets Trend on Every Street</h3>
               <p>
-                Take a sensory tour of Chennai's bustling retail region, where
-                modern and traditional styles coexist to provide a wide range of
-                treasures. The city welcomes you to locate one-of-a-kind
-                treasures and satiate your cravings, from vibrant marketplaces
-                resonating with regional craftsmanship to modern retreats
-                exhibiting international trends.
+                Chennai offers a retail experience as diverse as the city itself
+                — a place where age-old textile shops stand proudly beside sleek
+                malls, and local street markets buzz just minutes away from
+                luxury boutiques. Whether you're searching for handwoven silks,
+                electronics, gold jewelry, designer fashion, or homegrown
+                brands, Chennai’s shopping scene is an adventure in discovery,
+                craftsmanship, and convenience.
+              </p>
+              <p>
+                From vibrant bazaars to curated lifestyle stores, the city
+                caters to every style, budget, and purpose — all while keeping
+                its cultural flair intact.
               </p>
             </div>
           </div>
         </div>
 
-        {/*----------------- Multiple Benefit Sections ----------------*/}
-        <div className="foodlistsec">
-          {imageSections.map((section, index) => {
-            const tenantCount = section.tenantInfoSections?.length ?? 0;
-            const parentClass =
-              tenantCount % 2 === 0 ? "even-count" : "odd-count";
+        <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
+          <h1 className="text-3xl font-bold mb-10 text-center">
+            Where to Shop in Chennai — By Category
+          </h1>
 
-            return (
-              <section
-                key={index}
-                className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
-                  ${
-                    index % 2 === 0
-                      ? "bg-white whitebgsec"
-                      : "bg-[#f7f7f7] colorbgsec"
-                  } 
-                  ${
-                    index % 3 === 0
-                      ? "pattern-a"
-                      : index % 3 === 1
-                      ? "pattern-b"
-                      : "pattern-c"
-                  }`}
-              >
-                <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
-                </div>
-                <div className="imgText flex items-center">
-                  <div className="imgcolTitle bg-[#682865] relative">
-                    <h2 className="flex flex-col text-white">
-                      <small>{section.sectionTitle}</small>
-                    </h2>
-                    <p>{section.sectionDesc}</p>
+          {ShoppingData.map((section, sectionIdx) => (
+            <div key={sectionIdx} className="nightlifesecIn">
+              <h2 className="text-2xl font-semibold mb-6">
+                {section.category}
+              </h2>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+       
+
+                  {section.places.map((place, idx) => (
+                  <div
+                    key={idx}
+                    className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                  >
+                    <h3 className="text-xl font-semibold mb-2">{place.name}</h3>
+                    <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                    {place.locations?.length > 0 && (
+                      <ExpandableList
+                        items={place.locations.map((loc) => ({
+                          label: loc.name,
+                          link: loc.link,
+                        }))}
+                        maxVisible={2}
+                      />
+                    )}
                   </div>
-                </div>
-
-                <div
-                  className={`space-y-4 p-4 mt-[50px] foodListIcon w-full flex flex-wrap ${parentClass}`}
-                >
-                  {section.tenantInfoSections.map((tenant, i) => (
-                    <div key={i}>
-                      {tenant.points.map((item, j) => (
-                        <div key={j} className="clcboxItemss flex mb-4">
-                          <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
-                          </div>
-                          <div className="clcboxICont">
-                            <h3>{item.title}</h3>
-                            <p>{item.para}</p>
-                            <div className="exploreMorebuttonVisitChennai">
-                              <a
-                                href={item.link || "#"}
-                                className="text-blue-600 hover:underline text-sm font-medium"
-                              >
-                                Explore More
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </section>
-            );
-          })}
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
+
         {/*--------------- Explore More Chennai----------------- */}
 
         <div className="exploreSldierBg">
@@ -402,6 +709,7 @@ export default function Shopping() {
             </div>
           </div>
         </div>
+
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

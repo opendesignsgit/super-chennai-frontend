@@ -1,17 +1,15 @@
-import { useState, useEffect, useRef } from "react";
-import Slider from "react-slick";
-import "../assets/Css/VisitPage.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "../assets/Css/VisitPage.css";
+import Becameavolunteer from "../Components/BecameAVolunteer";
 import Search from "../Components/Search";
 import InstagramReelsMarquee from "../Components/SocialChennai";
-import Becameavolunteer from "../Components/BecameAVolunteer";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import HeaderWithMegaMenu from "../Components/ExampleMegamenu";
 import VisitChennaiMarquee from "../Components/VisitChennaiMarquee";
-import { line, link } from "framer-motion/client";
-import { Link } from "react-router-dom";
 
 export default function Visit() {
   const [scrollDir, setScrollDir] = useState("left");

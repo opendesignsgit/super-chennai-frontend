@@ -142,7 +142,7 @@ export default function MexicanCuisineinChennai() {
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
-          <img src="images/Visit-Images/SubPages/italian-cuisine-banner.jpg" alt="" />
+          <img src="images/Visit-Images/SubPages/mexican-cuisine-banner.jpg" alt="" />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
               <h3>Mexican Cuisine in Chennai</h3>

@@ -1,137 +1,141 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation, useParams, useNavigate, Link } from "react-router-dom";
+import { cards } from "../../EventData";
+
 export default function EventsDetails() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { id } = useParams();
+
+  const [event, setEvent] = useState(null);
+
+  useEffect(() => {
+    const stateEvent = location.state?.card;
+    console.log(stateEvent);
+
+    if (stateEvent) {
+      setEvent(stateEvent);
+    } else {
+      const found = cards.find((e) => e.id === Number(id));
+      if (found) {
+        setEvent(found);
+      } else {
+        navigate("/eventsmain", { replace: true });
+      }
+    }
+  }, [id, location.state, navigate]);
+
+  if (!event) {
+    return null; // or loader
+  }
+
   return (
     <>
+      {/* Banner Section */}
       <section className="accaodomationBannerSection">
         <div>
-          <img src="./images/AccodomationBannerr.jpg" alt="" />
+          <img src="/images/AccodomationBannerr.jpg" alt="Banner" />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
             <h3>Events</h3>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="/eventsmain">Events</Link>{" "}
+              <Link to="/">Home</Link> - <Link to="/eventsmain">Events</Link>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Event Content Section */}
       <section className="EventsBanSec SecPadblock12">
-        <div className="container max-w-7xl mx-auto ">
-          <div className="EventContBox flex">
+        <div className="container max-w-7xl mx-auto">
+          <div className="EventContBox flex flex-wrap">
+            {/* Left Side */}
             <div className="EventLeft">
-              <h2>D.I In The House - D . Imman Live In Concert</h2>
+              <h2>{event.EventsCalendarTitle}</h2>
+
               <div className="EventBanImg">
-                <img src="./images/events/d-imman-live-in-concert.jpg" alt="" />
+                <img src={event.image} alt={event.EventsCalendarTitle} />
               </div>
+
               <div className="ebanimgbtn flex justify-between items-center mb-[5vh]">
-                <div className="ebbmgiL flex">
-                  <h5>Concerts</h5>
-                  <h5>Music Shows</h5>
+                <div className="ebbmgiL flex gap-2">
+                  <h5>{event.EventsCalendarCategory}</h5>
                 </div>
-                {/* <div className="ebbmgiR flex items-center">
-                  <h5>573 are interested</h5>
-                  <button>I'm Interested</button>
-                </div> */}
               </div>
+
               <div className="EventContBox mb-[5vh]">
                 <h3>About The Event</h3>
-                <p>
-                  Get ready for an unforgettable night of music and magic! On
-                  June 14th, D. Imman, one of Tamil cinema's most celebrated
-                  music composers, will be performing live in Chennai. The
-                  concert is being organized by Noise and Grains, a name
-                  synonymous with exceptional production and flawless execution,
-                  known for bringing some of the most spectacular events in the
-                  city to life.
-                </p>
-                <p>
-                  This event promises to be a feast for the senses, featuring a
-                  blend of D. Imman’s hit tracks, from his soulful melodies to
-                  the energetic beats that have captured the hearts of fans.
-                  With Noise and Grains at the helm of production, the event
-                  promises to deliver a top-tier experience, renowned for its
-                  expertise in crafting flawless, memorable events.
-                </p>
-                <p>
-                  Whether you’ve followed D. Imman’s music for years or are
-                  discovering it for the first time, this concert is sure to be
-                  a night to remember. So, save the date, because Chennai is
-                  going to be one for the books!
-                </p>
+                <p>{event.aboutFull}</p>
               </div>
-              <div className="EventContBox">
+
+              {/* Artist Info */}
+              {/* <div className="EventContBox">
                 <h3>Artists</h3>
                 <div className="ArtistsImg">
-                  <img src="./images/events/Artistimg/d-imman-img.jpg" alt="" />
+                  <img
+                    src={event.artistImage || event.image}
+                    alt={event.artistName}
+                  />
                 </div>
                 <h4 className="flex flex-col">
-                  <strong>D. Imman</strong>
-                  <small>Singer</small>
+                  <strong>{event.artistName || "Unknown Artist"}</strong>
+                  <small>{event.role || "Performer"}</small>
                 </h4>
-              </div>
+              </div> */}
             </div>
+
+            {/* Right Side */}
             <div className="EventRight">
-              <div class="evderibox">
-                <div class="evderListbox">
-                  <div class="evderViewbox">
-                    <a class="evderlinks flex items-center">
-                      <div className="iconsssec flex items-center">
-                        <img src="./images/events/calendar.png" alt="" />
-                      </div>
-                      <p>Sat 14 Jun 2025</p>
-                    </a>
-                    <a class="evderlinks flex items-center">
-                      <div className="iconsssec flex items-center">
-                        <img src="./images/events/time.png" alt="" />
-                      </div>
-                      <p>6:00 PM</p>
-                    </a>
-                    <a class="evderlinks flex items-center">
-                      <div className="iconsssec flex  items-center">
-                        <img src="./images/events/duration.png" alt="" />
-                      </div>
-                      <p>3 Hours</p>
-                    </a>
-                    <a class="evderlinks flex items-center">
-                      <div className="iconsssec flex  items-center">
-                        <img src="./images/events/age_limit.png" alt="" />
-                      </div>
-                      <p>Age Limit - 5yrs +</p>
-                    </a>
-                    <a class="evderlinks flex items-center">
-                      <div className="iconsssec flex items-center">
-                        <img src="./images/events/language.png" alt="" />
-                      </div>
-                      <p>Tamil</p>
-                    </a>
-                    <a class="evderlinks flex items-center">
-                      <div className="iconsssec flex items-center">
-                        <img src="./images/events/genre.png" alt="" />
-                      </div>
-                      <p>Regional</p>
-                    </a>
-                    <a class="evderlinks flex items-center">
-                      <div className="iconsssec flex items-center">
-                        <img src="./images/events/location.png" alt="" />
-                      </div>
-                      <p>YMCA Nandanam: Chennai</p>
-                    </a>
+              <div className="evderibox">
+                <div className="evderListbox">
+                  <div className="evderViewbox">
+                    <InfoRow
+                      icon="/images/events/calendar.png"
+                      label={event.EventsCalendarMonth}
+                    />
+                    <InfoRow
+                      icon="/images/events/time.png"
+                      label={event.EventsCalendarTime}
+                    />
+                    <InfoRow
+                      icon="/images/events/duration.png"
+                      label={event.hours || ""}
+                    />
+                    <InfoRow
+                      icon="/images/events/age_limit.png"
+                      label={event.ageLimit || ""}
+                    />
+                    <InfoRow
+                      icon="/images/events/language.png"
+                      label={event.language || ""}
+                    />
+                    <InfoRow
+                      icon="/images/events/genre.png"
+                      label={event.rleigion || ""}
+                    />
+                    <InfoRow
+                      icon="/images/events/location.png"
+                      label={event.location || ""}
+                    />
                   </div>
                 </div>
-                {/* <div class="evdPricbox flex justify-between">
-                  <div class="EpriLeft">
-                    <h4>₹499 onwards</h4>
-                    <h6>Filling Fast</h6>
-                  </div>
-                  <div class="ebokbtn">
-                    <button class="evbookbtnd">Book Now</button>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
         </div>
       </section>
     </>
+  );
+}
+
+function InfoRow({ icon, label }) {
+  return (
+    <div className="evderlinks flex items-center mb-2">
+      <div className="iconsssec flex items-center w-6 h-6 mr-2">
+        <img src={icon} alt="icon" className="w-full h-full object-contain" />
+      </div>
+      <p>{label}</p>
+    </div>
   );
 }

@@ -150,7 +150,7 @@ const [scrollDir, setScrollDir] = useState("left");
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 const images = [
-    { src: "/images/Invest-Images/SubPages/real-estate-slide.jpg", title: "Real Estate", link: "/investrealestatechennai" },
+    { src: "/images/Invest-Images/SubPages/real-estate-slide.jpg", title: "Real Estate", link: "/chennairealestate" },
     { src: "/images/Invest-Images/SubPages/franchise-slide.jpg", title: "Franchise", link: "/investfranchisechennai" },
     { src: "/images/Invest-Images/SubPages/startups-slide.jpg", title: "Startups", link: "/investstartupschennai" },
     { src: "/images/Invest-Images/SubPages/renewable-energy-slide.jpg", title: "Renewable Energy", link: "/investrenewableenergychennai" },

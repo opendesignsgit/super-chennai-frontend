@@ -1364,7 +1364,7 @@ const dummyData = [
     slug: "emerging-residential-hubs",
     name: "Invest",
     imageUrl: "/images/invest/emerging-hubs.jpg",
-    pageUrl: "/investrealestatechennai",
+    pageUrl: "/chennairealestate",
   },
   {
     id: 502,
@@ -1374,7 +1374,7 @@ const dummyData = [
     slug: "omr",
     name: "Invest",
     imageUrl: "/images/invest/omr.jpg",
-    pageUrl: "/investrealestatechennai",
+    pageUrl: "/chennairealestate",
   },
   {
     id: 503,
@@ -1384,7 +1384,7 @@ const dummyData = [
     slug: "perumbakkam",
     name: "Invest",
     imageUrl: "/images/invest/perumbakkam.jpg",
-    pageUrl: "/investrealestatechennai",
+    pageUrl: "/chennairealestate",
   },
   {
     id: 504,
@@ -1394,7 +1394,7 @@ const dummyData = [
     slug: "pallikaranai",
     name: "Invest",
     imageUrl: "/images/invest/pallikaranai.jpg",
-    pageUrl: "/investrealestatechennai",
+    pageUrl: "/chennairealestate",
   },
   {
     id: 505,
@@ -1404,7 +1404,7 @@ const dummyData = [
     slug: "maraimalai-nagar",
     name: "Invest",
     imageUrl: "/images/invest/maraimalai-nagar.jpg",
-    pageUrl: "/investrealestatechennai",
+    pageUrl: "/chennairealestate",
   },
   {
     id: 506,
@@ -1414,7 +1414,7 @@ const dummyData = [
     slug: "oragadam",
     name: "Invest",
     imageUrl: "/images/invest/oragadam.jpg",
-    pageUrl: "/investrealestatechennai",
+    pageUrl: "/chennairealestate",
   },
 
   //   Invest in Franchise in Chennai###################################################################33

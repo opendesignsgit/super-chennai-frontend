@@ -1,0 +1,53 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_661_2574)">
+<mask id="mask0_661_2574" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="5" width="140" height="140">
+<path d="M145 5H5V145H145V5Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_661_2574)">
+<mask id="mask1_661_2574" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="5" width="140" height="140">
+<path d="M5 5.00002H145V145H5V5.00002Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_661_2574)">
+<path d="M48.75 37.8125V11.5625H101.25V59.6875" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+</g>
+<path d="M66.25 107.812H48.75V50.9375" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M48.75 24.6875H101.25" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M48.75 94.6875H59.6875" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M64.0625 85.9375H68.4375" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M72.8125 85.9375H77.1875" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M81.5625 85.9375H85.9375" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<mask id="mask2_661_2574" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="5" width="140" height="140">
+<path d="M5 5.00002H145V145H5V5.00002Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_661_2574)">
+<path d="M66.25 57.5H75V48.75C75 43.9175 71.0825 40 66.25 40H57.5V48.75C57.5 53.5825 61.4175 57.5 66.25 57.5Z" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M66.25 48.75L75 57.5" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M75 57.5C75 52.6675 78.9175 48.75 83.75 48.75H92.5V57.5C92.5 62.3325 88.5825 66.25 83.75 66.25H75" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M83.75 57.5L75 66.25" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M75 33.4375V77.1875" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M75 94.6875V112.188" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M83.75 94.6875V112.188" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M101.25 112.188V77.1875H92.5V112.188" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M101.25 94.6875L110 103.438V129.688H101.25V138.438H75V129.688H66.25V94.6875H92.5" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M50.9375 46.5625L44.375 40H20.3125" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M99.0625 64.0625L105.625 70.625H129.687" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M13.75 46.5625H7.1875V40H13.75V46.5625Z" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M22.5 59.6875H31.25" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M5 59.6875H18.125" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M13.75 53.125H31.25" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M5 53.125H9.375" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M136.25 77.1875H142.812V70.625H136.25V77.1875Z" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M136.25 77.1875H142.812V70.625H136.25V77.1875Z" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M131.875 83.75H145" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M118.75 83.75H127.5" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M140.625 90.3125H145" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+<path d="M118.75 90.3125H136.25" stroke="#663366" stroke-width="4.10156" stroke-miterlimit="10"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_661_2574">
+<rect width="140" height="140" fill="white" transform="translate(5 5)"/>
+</clipPath>
+</defs>
+</svg>

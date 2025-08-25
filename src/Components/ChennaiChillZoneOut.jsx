@@ -1,0 +1,147 @@
+import { useRef, useState, useEffect, useMemo } from "react";
+import { motion } from "framer-motion";
+import "../assets/Css/ChennaiChillZone.css";
+import { link } from "framer-motion/client";
+import { Link, useNavigate } from "react-router-dom";
+
+const cards = [
+  {
+    title: "Artists' Villages",
+    description:
+      "Explore distinctive neighborhoods where gifted artists reside and display their most recent creations.",
+    image: "/images/HomePage-Images/Chillout/artists-villages.jpg",
+    link: "/visit-placetovisit-artists-villages",
+  },
+  {
+    title: "Botanical Gardens",
+    description:
+      "In exquisitely designed urban oasis, discover peace amid a variety of plants and luxuriant foliage.",
+    image: "/images/HomePage-Images/Chillout/botanical.jpg",
+    link: "/visit/place-to-visit/botanical-gardens-in-chennai",
+  },
+  {
+    title: "Cultural",
+    description:
+      "Take in the mesmerizing performances of traditional art, which preserve India's rich cultural heritage.",
+    image: "/images/HomePage-Images/Chillout/cultural.jpg",
+    link: "/visit-placetovisit-cultural-foundations",
+  },
+  {
+    title: "Modern Malls",
+    description:
+      "Enjoy a variety of culinary options, entertainment, and retail therapy at the city's modern centers.",
+    image: "/images/HomePage-Images/Chillout/modern-malls.jpg",
+    link: "/visit/place-to-visit/malls-in-chennai",
+  },
+  {
+    title: "Urban Beaches",
+    description:
+      "Take in the vibrant ambiance, stroll along the lengthy beach, and see the busy local life.",
+    image: "/images/HomePage-Images/Chillout/urban-beaches.jpg",
+    link: "/visit-placetovisit-urban-beaches",
+  },
+];
+
+export default function CardCarousel() {
+  const navigate = useNavigate();
+  const carouselRef = useRef();
+  const [x, setX] = useState(0);
+
+  const [cardWidth, setCardWidth] = useState(
+    window.innerWidth < 768 ? window.innerWidth : 320
+  );
+
+  const maxX = -(cards.length - 1) * cardWidth;
+
+  const slide = (direction) => {
+    if (direction === "left") {
+      setX((prev) => Math.min(prev + cardWidth, 0));
+    } else if (direction === "right") {
+      setX((prev) => Math.max(prev - cardWidth, maxX));
+    }
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobile = window.innerWidth < 768;
+      const newWidth = isMobile ? window.innerWidth : 320;
+      setCardWidth(newWidth);
+      setX(0);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <div className="chillZoneMainContainer">
+      <div className="carousel-section-container">
+        <div className="chillZonecarousel-static-content">
+          <h2>
+            Chennai<sup>,</sup>s
+          </h2>
+          <h3>ChillOUt Zone</h3>
+          <p>
+            Get away from the hustle and bustle of the city in peaceful areas.
+            Find serene parks, and peaceful nooks that are ideal for resting and
+            reviving your mind.
+          </p>
+          <div className="chillZonecarousel-buttons DesktopButtons">
+            <button
+              className="chilloutZoneButtonsleft"
+              onClick={() => slide("left")}
+            ></button>
+            <button
+              className="chilloutZoneButtonsRight"
+              onClick={() => slide("right")}
+            ></button>
+          </div>
+        </div>
+
+        <div className="chillZonecarousel-container">
+          <motion.div
+            ref={carouselRef}
+            className="carousel-track"
+            drag="x"
+            dragConstraints={{ left: maxX, right: 0 }}
+            animate={{ x }}
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          >
+            {cards.map((card, idx) => (
+              <a href={card.link}>
+                <motion.div
+                  // onClick={() => navigate("/visit/places-to-visit-in-chennai")}
+                  // onClick={() => navigate(card.link)}
+                  className="chillZoneImageCard cursor-pointer"
+                  key={idx}
+                  style={{ width: `${cardWidth}px` }}
+                >
+                  <img
+                    className="chillZoneImage"
+                    src={card.image}
+                    alt={card.title}
+                  />
+                  <div className="chillzoneContentSection">
+                    <h3>{card.title}</h3>
+                    <p>{card.description}</p>
+                  </div>
+                </motion.div>
+              </a>
+            ))}
+          </motion.div>
+
+          <div className="chillZonecarousel-buttons">
+            <button
+              className="chilloutZoneButtonsleft"
+              onClick={() => slide("left")}
+            ></button>
+            <button
+              className="chilloutZoneButtonsRight"
+              onClick={() => slide("right")}
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

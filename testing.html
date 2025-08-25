@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Dashboard Challenge</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      height: 100vh;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #222;
+      color: white;
+      padding: 20px;
+      font-size: 22px;
+      z-index: 100;
+    }
+
+    .layout {
+      display: flex;
+      height: 100vh; /* ❌ bug: header overlaps content */
+    }
+
+    .sidebar {
+      width: 220px;
+      background: #444;
+      color: white;
+      overflow-y: auto;
+    }
+
+    .content {
+      flex: 1;
+      background: #f4f4f4;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .right-panel {
+      width: 300px;
+      background: #eee;
+      border-left: 1px solid #ccc;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>🔥 Complex Dashboard</header>
+  <div class="layout">
+    <div class="sidebar">
+      <h3>Sidebar Menu</h3>
+      <p>Item 1</p>
+      <p>Item 2</p>
+      <p>Item 3</p>
+      <p>Item 4</p>
+      <p>Item 5</p>
+      <p>Item 6</p>
+      <p>Item 7</p>
+      <p>Item 8</p>
+      <p>Item 9</p>
+      <p>Item 10</p>
+      <p>Item 11</p>
+      <p>Item 12</p>
+      <p>Item 13</p>
+      <p>Item 14</p>
+      <p>Item 15</p>
+    </div>
+    <div class="content">
+      <h1>Main Content</h1>
+      <p>Lots of content...</p>
+      <p>Scroll here should NOT affect sidebar or right panel</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Repeat repeat repeat repeat...</p>
+      <p>Repeat repeat repeat repeat...</p>
+      <p>Repeat repeat repeat repeat...</p>
+      <p>Repeat repeat repeat repeat...</p>
+      <p>Repeat repeat repeat repeat...</p>
+      <p>Repeat repeat repeat repeat...</p>
+      <p>Repeat repeat repeat repeat...</p>
+    </div>
+    <div class="right-panel">
+      <h3>Chat / Notifications</h3>
+      <p>Message 1</p>
+      <p>Message 2</p>
+      <p>Message 3</p>
+      <p>Message 4</p>
+      <p>Message 5</p>
+      <p>Message 6</p>
+      <p>Message 7</p>
+      <p>Message 8</p>
+      <p>Message 9</p>
+      <p>Message 10</p>
+      <p>Message 11</p>
+      <p>Message 12</p>
+    </div>
+  </div>
+</body>
+</html>

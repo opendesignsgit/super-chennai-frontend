@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+      .image-container img {
+        display: block;
+        width: 400px;
+        height: auto;
+      }
+      .image-container::after {
+        content: "";
+        position: absolute;
+        inset: 0; 
+        background: rgb(68 8 103 / 84%);
+      }
+    </style>
+    <title>Banner</title>
+  </head>
+  <body>
+    <div class="image-container">
+      <img style="width: 100%" src="./public/images/Future-Growth.jpg" alt="" />
+    </div>
+
+    <div style="width: 100%">
+      <img
+        style="width: 100%"
+        src="./public/images/Future-Growth-Overlay.jpg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

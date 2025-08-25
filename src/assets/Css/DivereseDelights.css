@@ -1,0 +1,627 @@
+.DiverseDelightsText {
+  color: #2b3889;
+  font-family: "NewAmsterdam";
+  font-size: 130px;
+  line-height: clamp(48px, 8.5vw, 150px);
+}
+
+.DiverseDelightsSectionContainer {
+  background-image: url("/public/images/Food-Bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 80px;
+  overflow: hidden;
+  position: relative;
+}
+
+.DiverseDelightsTextDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.DiverseDelightsTextDiv img {
+  height: 150px;
+}
+.FoodSectionDesignContainer {
+  background-image: url("/public/images/FoodImageSectionBg.png");
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 900px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  z-index: 1;
+}
+
+.foodSectionThird,
+.foodSectionFirst {
+  width: 40%;
+}
+
+.paragarphTextDiverseFood {
+  display: flex;
+  justify-content: center;
+}
+
+.paragarphTextDiverseFood p {
+  font-family: "29LT Bukra Regular";
+  width: 57%;
+  text-align: center;
+  color: #000000;
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: clamp(22px, 4vw, 26px);
+}
+
+.foodSectionSecond {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("/public/images/FoodImageSectionBg.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.foodSectionFirst .foodSectionConatiner {
+  width: 400px;
+}
+.foodSectionThird .foodSectionConatiner {
+  width: 400px;
+}
+
+.foodSectionSecond .dishImage {
+  width: 70%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.dishImage.fade-out {
+  opacity: 0;
+}
+
+.foodSectionConatiner {
+  margin-top: 30px;
+  cursor: pointer;
+}
+.foodSectionConatiner h4 {
+  font-family: "NewAmsterdam";
+  color: #a1a1a1;
+  font-size: 60px;
+  line-height: 60px;
+  transition: color 1s ease;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  -o-transition: color 1s ease;
+}
+
+.activeDiverseSection h4 {
+  color: #2b3889 !important;
+}
+
+.activeDiverseSection p {
+  color: #000000 !important;
+}
+
+.foodSectionConatiner p {
+  font-family: "29LT Bukra Regular";
+  font-size: 14px;
+  color: #7e7e7e;
+  width: 100%;
+  line-height: 19px;
+  width: 65%;
+}
+
+.foodSectionFirst .foodSectionConatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.foodSectionFirst .foodSectionConatiner:first-child {
+  text-align: end;
+  margin-right: 0;
+  position: absolute;
+  top: 0px;
+  left: 12%;
+}
+.foodSectionFirst .foodSectionConatiner:nth-child(2) {
+  text-align: end;
+  margin-right: 0;
+  position: absolute;
+  top: 14%;
+  left: 0%;
+}
+.foodSectionFirst .foodSectionConatiner:nth-child(3) {
+  text-align: end;
+  margin-right: 0;
+  position: absolute;
+  top: 30%;
+  left: -5%;
+}
+.foodSectionFirst .foodSectionConatiner:nth-child(4) {
+  text-align: end;
+  margin-right: 0;
+  position: absolute;
+  top: 48%;
+  left: -7%;
+}
+.foodSectionFirst .foodSectionConatiner:nth-child(5) {
+  text-align: end;
+  margin-right: 0;
+  position: absolute;
+  top: 68%;
+  left: -1%;
+}
+
+.foodSectionFirst .foodSectionConatiner:nth-child(6) {
+  text-align: end;
+  margin-right: 0;
+  position: absolute;
+  top: 83%;
+  left: 12%;
+}
+
+/* ////////////// */
+
+.foodSectionThird .foodSectionConatiner:first-child {
+  text-align: left;
+  margin-right: 0;
+  position: absolute;
+  top: 0px;
+  right: 12%;
+}
+.foodSectionThird .foodSectionConatiner:nth-child(2) {
+  text-align: left;
+  margin-right: 0;
+  position: absolute;
+  top: 14%;
+  right: 0%;
+}
+.foodSectionThird .foodSectionConatiner:nth-child(3) {
+  text-align: left;
+  margin-right: 0;
+  position: absolute;
+  top: 30%;
+  right: -5%;
+}
+.foodSectionThird .foodSectionConatiner:nth-child(4) {
+  text-align: left;
+  margin-right: 0;
+  position: absolute;
+  top: 48%;
+  right: -7%;
+}
+.foodSectionThird .foodSectionConatiner:nth-child(5) {
+  text-align: left;
+  margin-right: 0;
+  position: absolute;
+  top: 68%;
+  right: -1%;
+}
+
+.foodSectionThird .foodSectionConatiner:nth-child(6) {
+  text-align: left;
+  margin-right: 0;
+  position: absolute;
+  top: 83%;
+  right: 12%;
+}
+
+.DelightPageText {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  white-space: nowrap;
+  width: 200%;
+  z-index: 0;
+  opacity: 0.025;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation: scrollText 50s linear infinite;
+}
+
+.DelightPageText p {
+  /* font-family: "29LT Bukra SmBd";
+  font-size: clamp(80px, 10vw, 280px);
+  line-height: clamp(100px, 12vw, 150px);
+  text-transform: uppercase; */
+  font-family: "29LT Bukra SmBd";
+  font-size: clamp(80px, 14vw, 280px);
+  line-height: clamp(100px, 14vw, 230px);
+  text-transform: uppercase;
+}
+.DelightPageTextscroll-left {
+  animation-name: scrollLeftVolunteer;
+}
+
+.DelightPageTextscroll-right {
+  animation-name: scrollRightVolunteer;
+}
+
+@keyframes scrollLeftVolunteer {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRightVolunteer {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.OverviewDiverseDelights {
+  background: #2b3889;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-family: poppins;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+@media (max-width: 1600px) and (min-width: 1250px) {
+  .FoodSectionDesignContainer {
+    height: 786px;
+  }
+  .foodSectionConatiner h4 {
+    font-size: 48px;
+    line-height: 51px;
+  }
+
+  .foodSectionConatiner p {
+    font-size: 12px;
+    line-height: 14px;
+    width: 63%;
+  }
+  .foodSectionFirst .foodSectionConatiner:first-child {
+    left: 2%;
+    top: 9%;
+  }
+  .foodSectionThird .foodSectionConatiner:first-child {
+    right: 2%;
+    top: 9%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(2) {
+    left: -9%;
+    top: 22%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(2) {
+    right: -9%;
+    top: 22%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(3) {
+    left: -14%;
+    top: 37%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(3) {
+    right: -14%;
+    top: 37%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(4) {
+    left: -14%;
+    top: 52%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(4) {
+    right: -14%;
+    top: 52%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(5) {
+    left: -9%;
+    top: 67%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(5) {
+    right: -9%;
+    top: 67%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(6) {
+    left: 6%;
+    top: 79%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(6) {
+    right: 6%;
+    top: 79%;
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 1000px) {
+  .foodSectionConatiner h4 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .foodSectionConatiner p {
+    font-size: 11px;
+    line-height: 16px;
+    width: 58%;
+  }
+
+  .FoodSectionDesignContainer {
+    height: 550px;
+    margin: 70px 0;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:first-child {
+    left: 1%;
+    top: -12%;
+  }
+  .foodSectionThird .foodSectionConatiner:first-child {
+    right: 1%;
+    top: -12%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(2) {
+    left: -11%;
+    top: 7%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(2) {
+    right: -11%;
+    top: 7%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(3) {
+    left: -14%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(3) {
+    right: -14%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(4) {
+    left: -14%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(4) {
+    right: -14%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(5) {
+    left: -11%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(5) {
+    right: -11%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(6) {
+    left: 1%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(6) {
+    right: 1%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 100px) {
+  /* .foodSectionFirst .foodSectionConatiner:first-child {
+    top: 35px;
+  }
+
+  .foodSectionThird .foodSectionConatiner:first-child {
+    top: 35px;
+  } */
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+  .foodSectionConatiner p {
+    font-size: 13px;
+    line-height: 17px;
+    width: 52%;
+    margin-top: 6px;
+  }
+
+  .foodSectionConatiner h4 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .foodSectionFirst .foodSectionConatiner:first-child {
+    left: -1%;
+  }
+  .foodSectionThird .foodSectionConatiner:first-child {
+    right: -1%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(2) {
+    left: -9%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(2) {
+    right: -9%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(3) {
+    left: -16%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(3) {
+    right: -16%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(4) {
+    left: -16%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(4) {
+    right: -16%;
+  }
+
+  .foodSectionFirst .foodSectionConatiner:nth-child(5) {
+    left: -1%;
+  }
+
+  .foodSectionThird .foodSectionConatiner:nth-child(5) {
+    right: -1%;
+  }
+}
+
+@media (max-width: 900px) {
+  .DelightPageText {
+    top: 3%;
+  }
+  .paragarphTextDiverseFood {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  .DiverseDelightsText {
+    font-size: 14vw;
+  }
+
+  .accordionItem {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+    overflow: hidden;
+  }
+
+  .accordionTitle {
+  }
+
+  .accordionTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+  }
+
+  .accordionIcon {
+    font-size: 33px;
+    color: #7e7e7e;
+    transition: transform 0.3s ease;
+    font-weight: 600;
+  }
+
+  .accordionContent {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .accordionContent.open {
+    /* max-height is set inline in React based on state */
+  }
+
+  .accordionInnerContent {
+    padding: 16px;
+    background-color: white;
+    padding-top: 0;
+  }
+
+  .accordionInnerContent img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .accordionTitle h4 {
+    font-family: "NewAmsterdam";
+    font-size: 36px;
+    color: #7e7e7e;
+    line-height: 40px;
+    font-weight: 500;
+  }
+
+  .DiverseDelightsTextDiv img {
+    height: 48px;
+  }
+  .paragarphTextDiverseFood p {
+    width: 90%;
+    text-align: center;
+    font-family: "29LT Bukra Regular";
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: clamp(22px, 2vw, 26px);
+    color: #000;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .accordionContainer {
+    margin-top: 20px;
+  }
+
+  .accordionInnerContent p {
+    font-family: "29LT Bukra Regular";
+    font-size: 13px;
+    color: #7e7e7e;
+    color: #3d3a3a;
+    width: 100%;
+    line-height: 20px;
+  }
+
+  /* .activeAccordion .accordionInnerContent p {
+    color: #2b3889;
+  } */
+
+  .activeAccordion .accordionTitle h4 {
+    color: #2b3889;
+  }
+
+  .activeAccordion .accordionIcon {
+    color: #2b3889;
+  }
+  .DiverseDelightsSectionContainer {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+}
+@media (max-width: 900px) and (min-width: 500px) {
+  .accordionContainer {
+    margin-top: 100px;
+  }
+  .accordionInnerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordionInnerContent img {
+    width: 298px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 700px) {
+  .accordionItem {
+    width: 600px;
+  }
+
+  .accordionContainer {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

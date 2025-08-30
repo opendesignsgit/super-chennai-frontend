@@ -158,19 +158,27 @@ export default function Live() {
             <div className="LiveMainContent">
               {/* <h3>Living in Chennai: <br /> A Connected, Cosmopolitan Experience</h3> */}
 
-              <h1>Living in Chennai: </h1>
-              <h3>A Connected, Cosmopolitan Experience</h3>
+              <h1>Living in Chennai </h1>
+              {/* <h3>A Connected, Cosmopolitan Experience</h3> */}
 
               <p className="paraoneLiveSection">
                 Living in Chennai, India, means experiencing the perfect blend
                 of deep-rooted tradition and dynamic urban growth. Known for its
-                warm hospitality, Chennai city life offers something for
-                everyone, whether you're drawn to its thriving IT hubs, rich
-                culture, or coastal charm. From vibrant neighbourhoods and
-                diverse food scenes to excellent healthcare, education, and
-                affordable housing, the city supports a well-rounded lifestyle.
-                Whether you're relocating, investing, or simply curious, explore
-                what makes living in Chennai both unique and rewarding.
+                warm hospitality,{" "}
+                <h2
+                  className="paraoneLiveSection"
+                  style={{ all: "unset", fontWeight: "bold" }}
+                >
+                  {" "}
+                  Chennai City Life
+                </h2>{" "}
+                offers something for everyone, whether you're drawn to its
+                thriving IT hubs, rich culture, or coastal charm. From vibrant
+                neighbourhoods and diverse food scenes to excellent healthcare,
+                education, and affordable housing, the city supports a
+                well-rounded lifestyle. Whether you're relocating, investing, or
+                simply curious, explore what makes living in Chennai both unique
+                and rewarding.
               </p>
               <p className="paraZeroLiveSection">Why Chennai Works for You</p>
               <p className="paraoneLiveSection">
@@ -181,17 +189,30 @@ export default function Live() {
                 affordable.
               </p>
               <p className="paraoneLiveSection">
-                Thanks to its growing economy, <strong>jobs in Chennai</strong>{" "}
+                Thanks to its growing economy,{" "}
+                <h3
+                  className="paraoneLiveSection"
+                  style={{ all: "unset", fontWeight: "bold" }}
+                >
+                  {" "}
+                  jobs in Chennai
+                </h3>{" "}
                 span across IT, automobile, fintech, healthcare, education, and
                 creative sectors, offering opportunities for professionals,
                 entrepreneurs, and freelancers alike.
               </p>
               <p className="paraoneLiveSection">
                 For families relocating or settling down,
-                <strong> schools and colleges in Chennai </strong> include
-                top-rated CBSE, ICSE, IGCSE, and IB institutions, along with
-                renowned universities and professional colleges. Whatever your
-                background or plans, Chennai offers the right mix of work,
+                <h4
+                  className="paraoneLiveSection"
+                  style={{ all: "unset", fontWeight: "bold" }}
+                >
+                  {" "}
+                  Educational Institutions in Chennai
+                </h4>{" "}
+                include top-rated CBSE, ICSE, IGCSE, and IB institutions, along
+                with renowned universities and professional colleges. Whatever
+                your background or plans, Chennai offers the right mix of work,
                 learning, and living.
               </p>
             </div>

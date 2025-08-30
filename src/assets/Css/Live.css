@@ -69,11 +69,21 @@
   line-height: 54px;
 }
 
-
-.residencyPage .LiveMainContent h3 {
-   text-align: center;
+.LiveMainContent h1 {
+  /* font-family: NewAmsterdam;
+  font-size: 100px;
+  color: #995098;
+  line-height: 94px; */
+  /* font-family: NewAmsterdam; */
+  font-family: NewAmsterdam;
+  font-size: 62px;
+  color: #995098;
+  line-height: 54px;
 }
 
+.residencyPage .LiveMainContent h3 {
+  text-align: center;
+}
 
 .LiveMainContent .paraZeroLiveSection {
   font-family: "29LT Bukra Medium";
@@ -190,6 +200,14 @@
   text-align: center;
 }
 
+.chennaiLifeEssentialHeading h2 {
+  font-family: "NewAmsterdam";
+  font-size: 100px;
+  color: #995098;
+  line-height: 94px;
+  text-align: center;
+}
+
 .chennaiLifeEssentialHeading p {
   font-family: "29LT Bukra Medium";
   font-size: 16px;
@@ -272,8 +290,15 @@
     font-size: 52px;
     line-height: 45px;
   }
-
+  .LiveMainContent h1 {
+    font-size: 52px;
+    line-height: 45px;
+  }
   .chennaiLifeEssentialHeading h3 {
+    font-size: 80px;
+  }
+
+  .chennaiLifeEssentialHeading h2 {
     font-size: 80px;
   }
 
@@ -293,10 +318,18 @@
     font-size: 45px;
     line-height: 40px;
   }
+  .LiveMainContent h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 900px) {
   .LiveMainContent h3 {
+    font-size: clamp(36px, 14vw, 100px);
+    line-height: clamp(44px, 9vw, 94px);
+  }
+  .LiveMainContent h1 {
     font-size: clamp(36px, 14vw, 100px);
     line-height: clamp(44px, 9vw, 94px);
   }
@@ -354,6 +387,10 @@
     font-size: clamp(40px, 14vw, 100px);
     line-height: clamp(50px, 9vw, 94px);
   }
+  .chennaiLifeEssentialHeading h2 {
+    font-size: clamp(40px, 14vw, 100px);
+    line-height: clamp(50px, 9vw, 94px);
+  }
 
   .chennaiLifeEssentialHeading p {
     font-size: clamp(15px, 1.5vw, 16px);
@@ -389,10 +426,18 @@
     font-size: 46px;
     line-height: 40px;
   }
+  .LiveMainContent h1 {
+    font-size: 46px;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 600px) and (min-width: 480px) {
   .LiveMainContent h3 {
+    font-size: 46px;
+    line-height: 40px;
+  }
+  .LiveMainContent h1 {
     font-size: 46px;
     line-height: 40px;
   }

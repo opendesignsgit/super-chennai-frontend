@@ -116,7 +116,7 @@ export default function Live() {
           name="description"
           content="Explore Chennai transportation, find top jobs in Chennai, and discover leading schools and colleges in Chennai for a balanced and fulfilling city life."
         />
-            <link rel="canonical" href="/live-in-chennai" />
+        <link rel="canonical" href="/live-in-chennai" />
       </Helmet>
 
       <div
@@ -156,7 +156,10 @@ export default function Live() {
           </div>
           <div className="LiveRow">
             <div className="LiveMainContent">
-              <h3>Living in Chennai: <br /> A Connected, Cosmopolitan Experience</h3>
+              {/* <h3>Living in Chennai: <br /> A Connected, Cosmopolitan Experience</h3> */}
+
+              <h1>Living in Chennai: </h1>
+              <h3>A Connected, Cosmopolitan Experience</h3>
 
               <p className="paraoneLiveSection">
                 Living in Chennai, India, means experiencing the perfect blend
@@ -207,7 +210,8 @@ export default function Live() {
       >
         <div className="container max-w-7xl mx-auto px-4">
           <div className="chennaiLifeEssentialHeading">
-            <h3>Chennai Life Essential</h3>
+            {/* <h3>Chennai Life Essential</h3> */}
+            <h2>Chennai Life Essential</h2>
             <p>
               Regardless of whether you have chosen Chennai to stay or move from
               one area to another area, Super Chennai will be the best guide to

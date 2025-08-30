@@ -56,7 +56,7 @@ export default function CarRallyForm() {
             <h3> Car Treasure Hunt</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/eventsmain"> (Car Treasure Hunt)</Link>
+              <Link to="/events"> (Car Treasure Hunt)</Link>
             </div>
           </div>
         </div>

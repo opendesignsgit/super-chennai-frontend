@@ -21,7 +21,7 @@ export default function EventsDetails() {
       if (found) {
         setEvent(found);
       } else {
-        navigate("/eventsmain", { replace: true });
+        navigate("/events", { replace: true });
       }
     }
   }, [id, location.state, navigate]);
@@ -50,7 +50,7 @@ export default function EventsDetails() {
           <div className="accodoamationBannerText">
             <h3>Events</h3>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="/eventsmain">Events</Link>
+              <Link to="/">Home</Link> - <Link to="/events">Events</Link>
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import LiveSlider from "./LiveSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function FutureGrowthDevelopment() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -559,14 +560,16 @@ export default function FutureGrowthDevelopment() {
 
   return (
     <>
-
-          <Helmet>
+      <Helmet>
         <title>Infrastructure Development in Chennai Driving City Growth</title>
         <meta
           name="description"
           content="Learn how infrastructure development in Chennai enhances everyday life with better roads, metro links, and modern amenities, explained in detail by Super Chennai."
         />
-        <link rel="canonical" href="/live/infrastructure-development-in-chennai" />
+        <link
+          rel="canonical"
+          href="/live/infrastructure-development-in-chennai"
+        />
       </Helmet>
       <div className="FutureGrowthDevelopmentpAGE">
         {/*----------------- Banner ----------------*/}

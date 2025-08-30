@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function Conferences() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -236,7 +237,7 @@ export default function Conferences() {
 
   return (
     <>
-          <Helmet>
+      <Helmet>
         <title>Conference in Chennai | National Conference in Chennai</title>
         <meta
           name="description"

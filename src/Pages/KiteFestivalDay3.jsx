@@ -19,7 +19,7 @@ export default function KiteFestivalDay3() {
             <h3>4th Tamil Nadu International Kite Festival</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/eventsmain"> (Car Treasure Hunt)</Link>
+              <Link to="/events"> (Car Treasure Hunt)</Link>
             </div>
           </div>
         </div>

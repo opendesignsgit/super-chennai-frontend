@@ -1,3 +1,34 @@
+// import { useState, useEffect } from "react";
+// import axios from "axios";
+
+// export const cards1 = () => {
+//   const [cards1, setCards1] = useState([]);
+//   const [loading, setLoading] = useState(true);
+    
+
+//   useEffect(() => {
+//     const fetchCards = async () => {
+//       try {
+//         const response = await axios.get(
+//           "https://demo.superchennai.com/api/events"
+//         );
+//         setCards(response.data.docs);
+//       } catch (error) {
+//         console.error("Error fetching events:", error);
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
+  
+
+//     fetchCards();
+//   }, []);
+
+//   console.log(cards1);
+
+//   return { cards1, loading };
+// };
+
 export const cards = [
   {
     id: 1,
@@ -173,7 +204,8 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
     id: 6,
     metaTitleEvent: "Chennai Events/Gaming Thiruvizha in Chennai/Super Chennai",
     conicallinkEvent: "/eventsdetails/6",
-    metaDescriptionEvent: "Chennai Events – Don’t miss Gaming Thiruvizha, Chennai’s vibrant gaming and pop‑culture festival with cosplay, anime, esports & more, August 30–31.",
+    metaDescriptionEvent:
+      "Chennai Events – Don’t miss Gaming Thiruvizha, Chennai’s vibrant gaming and pop‑culture festival with cosplay, anime, esports & more, August 30–31.",
     EventsCalendarTitle: "Gaming Thiruvizha",
     EventsCalendarContent:
       "Gaming Thiruvizha is India’s flagship pop culture...",
@@ -203,7 +235,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
     EventsCalendarTime: "1:00 PM",
     EventsCalendarCategory: "Arts and Crafts, Workshops",
     image: "/images/HomePage-Images/Events/Newevents/70.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Dices And Drama: Chennai",
     language: "Bengali, English, Hindi, Kannada, Malayalam",
     hours: "1 Hour",
@@ -302,9 +334,11 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 12,
-    metaTitleEvent: "Workshops in Chennai/Clay Miniature Workshop/Super Chennai",
-     conicallinkEvent: "/eventsdetails/12",
-    metaDescriptionEvent: "Looking for creative Workshops in Chennai? Join the Clay Miniature Magnet Workshop in Kilpauk on Aug 30 and handcraft your own fridge magnet! Book now.",
+    metaTitleEvent:
+      "Workshops in Chennai/Clay Miniature Workshop/Super Chennai",
+    conicallinkEvent: "/eventsdetails/12",
+    metaDescriptionEvent:
+      "Looking for creative Workshops in Chennai? Join the Clay Miniature Magnet Workshop in Kilpauk on Aug 30 and handcraft your own fridge magnet! Book now.",
     siteLink:
       "https://in.bookmyshow.com/events/clay-miniature-magnet/ET00411633",
     EventsCalendarTitle: "Clay miniature magnet",
@@ -487,9 +521,11 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 22,
-    metaTitleEvent: "Liam Payne Show / One Direction Tribute / Events in Chennai",
+    metaTitleEvent:
+      "Liam Payne Show / One Direction Tribute / Events in Chennai",
     conicallinkEvent: "/eventsdetails/22",
-    metaDescriptionEvent: "Calling all Directioners for the One-Direction-Tribute in Chennai on Aug 30 at 2:30 PM—Liam Payne vibes, music, and more. Tickets ₹450. Book now!",
+    metaDescriptionEvent:
+      "Calling all Directioners for the One-Direction-Tribute in Chennai on Aug 30 at 2:30 PM—Liam Payne vibes, music, and more. Tickets ₹450. Book now!",
     siteLink:
       "https://in.bookmyshow.com/events/one-direction-tribute-directioners-rave/ET00452486",
     EventsCalendarTitle: "ONE DIRECTION TRIBUTE -ECHOES OF PAYNO",
@@ -561,7 +597,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "",
     EventsCalendarCategory: "Workshops",
     image: "/images/HomePage-Images/Events/Newevents/129.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Reema's Swad Cooking Classes: Chennai",
     language: "English",
     hours: "3 Hours",
@@ -580,7 +616,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/128.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Multiple Venues",
     language: "English, Hindi",
     hours: "",
@@ -598,7 +634,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "Not Specified",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/127.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Multiple Venues",
     language: "English, Hindi",
     hours: "1 hour 30 minutes",
@@ -616,7 +652,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "Not Specified",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/126.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Multiple Venues",
     language: "English, Hindi",
     hours: "Not Specified",
@@ -634,7 +670,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/125.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "The Integral Space: Mumbai",
     language: "English, Hindi",
     hours: "",
@@ -652,7 +688,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "4:00 PM",
     EventsCalendarCategory: "Kids",
     image: "/images/HomePage-Images/Events/Newevents/124.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Online",
     language: "English, Hindi",
     hours: "1 Hour",
@@ -670,7 +706,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "",
     EventsCalendarCategory: "Workshops",
     image: "/images/HomePage-Images/Events/Newevents/123.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Magic Beans - Kemps Corner, Mumbai",
     language: "English",
     hours: "45 Minutes",
@@ -688,7 +724,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "",
     EventsCalendarCategory: "Kids",
     image: "/images/HomePage-Images/Events/Newevents/122.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Multiple Venues",
     language: "English, Hindi",
     hours: "1 Hour",
@@ -729,7 +765,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/120.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "House of Games, Kilpauk, Chennai",
     language: "English, Tamil",
     hours: "1 hour 30 minutes",
@@ -747,7 +783,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Music Shows",
     image: "/images/HomePage-Images/Events/Newevents/119.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Arena - The Art Experience, Chennai",
     language: "Tamil, English",
     hours: "1 hour 30 minutes",
@@ -794,7 +830,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "6:30 PM",
     EventsCalendarCategory: "Music Shows",
     image: "/images/HomePage-Images/Events/Newevents/117.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Raja Annamalai Mandram, Chennai",
     language: "Tamil",
     hours: "3 Hours",
@@ -844,7 +880,8 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     id: 40,
     metaTitleEvent: "Events in Chennai / Epic Date Pass / Super Chennai",
     conicallinkEvent: "/eventsdetails/40",
-    metaDescriptionEvent: "Looking for exciting events in Chennai? Don’t miss the Epic Date Pass on 30 Aug at 3 PM—an immersive experience for fun seekers. Entry ₹2999.Book Now.",
+    metaDescriptionEvent:
+      "Looking for exciting events in Chennai? Don’t miss the Epic Date Pass on 30 Aug at 3 PM—an immersive experience for fun seekers. Entry ₹2999.Book Now.",
     siteLink: "https://in.bookmyshow.com/events/epic-date-pass/ET00429104",
     EventsCalendarTitle: "Epic Date Pass",
     EventsCalendarContent:
@@ -853,7 +890,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/114.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Dices And Drama, Chennai",
     language: "English",
     hours: "5 Hours",
@@ -871,7 +908,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "10:00 AM",
     EventsCalendarCategory: "Workshops",
     image: "/images/HomePage-Images/Events/Newevents/113.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "IDAM - The Art & Cultural Space, Chennai",
     language: "English",
     hours: "3 Hours",
@@ -882,9 +919,11 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
   {
     id: 42,
-    metaTitleEvent: "Comedy Sabha / Tanglish Comedy / Standup Comedy in Chennai",
+    metaTitleEvent:
+      "Comedy Sabha / Tanglish Comedy / Standup Comedy in Chennai",
     conicallinkEvent: "/eventsdetails/42",
-    metaDescriptionEvent: "Comedy Sabha by Tanglish Comedy brings Tamil‑English Tanglish standup to Chennai. Laughs, sketches, and high energy—don’t miss this mini‑show!",
+    metaDescriptionEvent:
+      "Comedy Sabha by Tanglish Comedy brings Tamil‑English Tanglish standup to Chennai. Laughs, sketches, and high energy—don’t miss this mini‑show!",
     siteLink:
       "https://in.bookmyshow.com/events/comedy-sabha-presented-by-tanglishcomedy/ET00342723",
     EventsCalendarTitle: "Comedy Sabha by @tanglishcomedy",
@@ -894,7 +933,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "7:30 PM",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/112.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Superstar Pizza, Besant Nagar, Chennai",
     language: "Tamil, English",
     hours: "1 hour 15 minutes",
@@ -911,7 +950,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "8:30 PM",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/111.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Trinity Studio, Kodambakkam",
     language: "English, Tamil",
     hours: "1 hour 30 minutes",
@@ -929,7 +968,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/110.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Hibiscus Cafe, Chennai",
     language: "English, Tamil",
     hours: "2 Hours",
@@ -947,7 +986,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/109.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "House of Games, Kilpauk, Chennai",
     language: "English, Tamil",
     hours: "1 hour 30 minutes",
@@ -964,7 +1003,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "6:30 PM",
     EventsCalendarCategory: "Music Shows",
     image: "/images/HomePage-Images/Events/Newevents/108.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Vani Mahal, Chennai",
     language: "Tamil",
     hours: "2 hours 30 minutes",
@@ -981,7 +1020,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "8:30 PM",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/107.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "The Board Room, Anna Nagar, Chennai",
     language: "Tamil, English",
     hours: "1 hour 30 minutes",
@@ -998,7 +1037,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "8:30 PM",
     EventsCalendarCategory: "Music Shows",
     image: "/images/HomePage-Images/Events/Newevents/106.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Hard Rock Cafe, Nungabakkam, Chennai",
     language: "Tamil, Hindi, Malayalam",
     hours: "2 Hours",
@@ -1009,9 +1048,11 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
   {
     id: 49,
-    metaTitleEvent: "Workshops in Chennai, Rage Therapy, Japanese Art of Kintsugi",
+    metaTitleEvent:
+      "Workshops in Chennai, Rage Therapy, Japanese Art of Kintsugi",
     conicallinkEvent: "/eventsdetails/49",
-    metaDescriptionEvent: "Looking for unique Workshops in Chennai? Join Rage Therapy—smash ceramics and repair them using Kintsugi, Japan’s art of golden mending.",
+    metaDescriptionEvent:
+      "Looking for unique Workshops in Chennai? Join Rage Therapy—smash ceramics and repair them using Kintsugi, Japan’s art of golden mending.",
     siteLink: "https://in.bookmyshow.com/events/rage-therapy/ET00456435",
     EventsCalendarTitle: "Rage Therapy",
     EventsCalendarContent:
@@ -1020,7 +1061,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "1:00 PM",
     EventsCalendarCategory: "Health and Fitness",
     image: "/images/HomePage-Images/Events/Newevents/105.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Dices And Drama, Chennai",
     language: "Bengali, English, Hindi, Kannada, Malayalam...",
     hours: "1 Hour",
@@ -1039,7 +1080,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/104.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Dices And Drama, Chennai",
     language: "English, Hindi",
     hours: "4 Hours",
@@ -1059,7 +1100,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "3:30 PM",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/103.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Nosh And Natter, Pune",
     language: "Bengali, English, Hindi, Kannada, Malayalam...",
     hours: "1 hour 30 minutes",
@@ -1070,9 +1111,11 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
   {
     id: 52,
-    metaTitleEvent: "Events in Chennai, workshops in Chennai, Tote Bag Painting",
+    metaTitleEvent:
+      "Events in Chennai, workshops in Chennai, Tote Bag Painting",
     conicallinkEvent: "/eventsdetails/52",
-    metaDescriptionEvent: "Discover creative Workshops in Chennai! Join the Tote Bag Painting Workshop on Aug 30 at 1:00 PM in Kilpauk. Just ₹899. Reserve your spot now!",
+    metaDescriptionEvent:
+      "Discover creative Workshops in Chennai! Join the Tote Bag Painting Workshop on Aug 30 at 1:00 PM in Kilpauk. Just ₹899. Reserve your spot now!",
     siteLink:
       "https://in.bookmyshow.com/events/tote-bag-painting-party/ET00370989",
     EventsCalendarTitle: "Tote Bag Painting",
@@ -1082,7 +1125,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/102.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Dices And Drama, Chennai",
     language: "English, Hindi, Bengali",
     hours: "1 hour 30 minutes",
@@ -1093,9 +1136,11 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
   {
     id: 53,
-    metaTitleEvent: "Chennai Events/Cuff and Paint event in Chennai/Super Chennai",
+    metaTitleEvent:
+      "Chennai Events/Cuff and Paint event in Chennai/Super Chennai",
     conicallinkEvent: "/eventsdetails/53",
-      metaDescriptionEvent: "Chennai Events – Experience Cuff & Paint, a whimsical couples’ art workshop in Chennai where creativity and fun go hand‑in‑hand at Wiggle Room.",
+    metaDescriptionEvent:
+      "Chennai Events – Experience Cuff & Paint, a whimsical couples’ art workshop in Chennai where creativity and fun go hand‑in‑hand at Wiggle Room.",
     EventsCalendarTitle: "Cuff And Paint",
     siteLink: "https://in.bookmyshow.com/events/cuff-and-paint/ET00457713",
     EventsCalendarContent: "Get ready for the quirkiest art date ever!...",
@@ -1103,7 +1148,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/101.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Wiggle Room, Chennai",
     language: "English, Tamil",
     hours: "1 hour 15 minutes",
@@ -1120,7 +1165,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "6:30 PM",
     EventsCalendarCategory: "Music Shows",
     image: "/images/HomePage-Images/Events/Newevents/100.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Raja Annamalai Mandram, Chennai",
     language: "Tamil",
     hours: "3 Hours",
@@ -1138,7 +1183,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "11:00 AM",
     EventsCalendarCategory: "Food and Drinks",
     image: "/images/HomePage-Images/Events/Newevents/99.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Reema's Swad Cooking Classes, Chennai",
     language: "English",
     hours: "3 Hours",
@@ -1149,9 +1194,11 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
   {
     id: 56,
-    metaTitleEvent: "Workshops in Chennai/Pottery Workshop/Art & Craft Workshops",
+    metaTitleEvent:
+      "Workshops in Chennai/Pottery Workshop/Art & Craft Workshops",
     conicallinkEvent: "/eventsdetails/56",
-    metaDescriptionEvent: "Join unique Art & Craft Workshops in Chennai! Try the blindfolded Pottery Workshop at Dices & Drama, Aug 12–Sep 21, 2:15 PM. ₹899 per person. Book now!",
+    metaDescriptionEvent:
+      "Join unique Art & Craft Workshops in Chennai! Try the blindfolded Pottery Workshop at Dices & Drama, Aug 12–Sep 21, 2:15 PM. ₹899 per person. Book now!",
     siteLink: "https://in.bookmyshow.com/events/blindfolded-pottery/ET00451209",
     EventsCalendarTitle: "Blindfolded Pottery",
     EventsCalendarContent:
@@ -1160,7 +1207,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/98.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Dices And Drama, Chennai",
     language: "English, Hindi",
     hours: "8 hours 19 minutes",
@@ -1177,7 +1224,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "3:00 PM",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/97.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Hibiscus Cafe, Chennai",
     language: "English",
     hours: "2 Hours",
@@ -1195,7 +1242,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "11:00 AM",
     EventsCalendarCategory: "Kids' Workshop",
     image: "/images/HomePage-Images/Events/Newevents/96.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Online (Your Place and Your Time)",
     language: "English",
     hours: "1 hour 15 minutes",
@@ -1213,7 +1260,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Skill Workshop",
     image: "/images/HomePage-Images/Events/Newevents/95.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Happy Skills Events, Ghatkopar",
     language: "English, Hindi, Marathi",
     hours: "2 Hours",
@@ -1231,7 +1278,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "3:00 PM",
     EventsCalendarCategory: "Art Workshop",
     image: "/images/HomePage-Images/Events/Newevents/94.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Queens and Beans, Hyderabad",
     language: "English",
     hours: "1 hour 30 minutes",
@@ -1250,7 +1297,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Art & Mindfulness",
     image: "/images/HomePage-Images/Events/Newevents/93.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Dices And Drama, Chennai",
     language: "English, Hindi",
     hours: "2 hours",
@@ -1269,7 +1316,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "Time not specified",
     EventsCalendarCategory: "Arts and Crafts",
     image: "/images/HomePage-Images/Events/Newevents/92.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "House of Games, Kilpauk, Chennai",
     language: "English, Tamil",
     hours: "1 hour",
@@ -1288,7 +1335,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "4:00 PM",
     EventsCalendarCategory: "Improv Comedy",
     image: "/images/HomePage-Images/Events/Newevents/91.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Punch - Unpaid Therapist, Chennai",
     language: "Tamil",
     hours: "1 hour 30 minutes",
@@ -1308,7 +1355,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTime: "5:00 PM",
     EventsCalendarCategory: "Dance, Workshops",
     image: "/images/HomePage-Images/Events/Newevents/90.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Sara’s Dance And Fitness Company, Chennai",
     language: "English",
     hours: "1 hour 30 minutes",
@@ -1328,7 +1375,7 @@ Social Dancing is a fantastic way to connect and explore via styles like Salsa /
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Arts and Crafts, Workshops",
     image: "/images/HomePage-Images/Events/Newevents/89.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "La Grace: Bengaluru",
     language: "Bengali, English, Hindi, Kannada, Malayalam",
     hours: "1 Hour",
@@ -1347,7 +1394,7 @@ Join us for a lively and creative event where we turn ordinary bottles into extr
     EventsCalendarTime: "5:00 PM",
     EventsCalendarCategory: "Arts and Crafts, Home Decor, Workshops",
     image: "/images/HomePage-Images/Events/Newevents/88.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "House of Games, Kilpauk, Chennai",
     language: "English, Tamil",
     hours: "2 Hours",
@@ -1366,7 +1413,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarTime: "",
     EventsCalendarCategory: "Comedy, Stand up Comedy",
     image: "/images/HomePage-Images/Events/Newevents/87.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Medai - The Stage, Alwarpet, Chennai",
     language: "English, Hindi",
     hours: "1 hour 30 minutes",
@@ -1385,9 +1432,11 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
 
   {
     id: 68,
-    metaTitleEvent: "Events in Chennai, Workshops in Chennai, Neon Painting Party",
+    metaTitleEvent:
+      "Events in Chennai, Workshops in Chennai, Neon Painting Party",
     conicallinkEvent: "/eventsdetails/68",
-    metaDescriptionEvent: "Chennai Events: Neon Painting Party offers a glowing art experience using fluorescent paints. No experience needed—bring creativity and join the fun!",
+    metaDescriptionEvent:
+      "Chennai Events: Neon Painting Party offers a glowing art experience using fluorescent paints. No experience needed—bring creativity and join the fun!",
     siteLink: "https://in.bookmyshow.com/events/neon-painting-party/ET00457231",
     EventsCalendarTitle: "Neon Painting  Party",
     EventsCalendarContent:
@@ -1415,7 +1464,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarTime: "1 hour 30 minutes",
     EventsCalendarCategory: "Arts and Crafts, Home Decor, Workshops",
     image: "/images/HomePage-Images/Events/Newevents/84.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "House of Games, Kilpauk: Chennai",
     language: "English, Tamil",
     hours: "1 hour 30 minutes",
@@ -1460,7 +1509,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Arts and Crafts, Workshops",
     image: "/images/HomePage-Images/Events/Newevents/85.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Dices And Drama: Chennai",
     language: "Bengali, English, Hindi, Kannada, Malayalam",
     hours: "5 Hours",
@@ -1479,7 +1528,8 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     id: 71,
     metaTitleEvent: "Events in Chennai/ Hukum World Tour/Anirudh Concert",
     conicallinkEvent: "/eventsdetails/71",
-    metaDescriptionEvent: "Experience the electrifying Anirudh Concert in Chennai as the Hukum World Tour concludes with a grand finale—don’t miss this iconic event in Chennai!",
+    metaDescriptionEvent:
+      "Experience the electrifying Anirudh Concert in Chennai as the Hukum World Tour concludes with a grand finale—don’t miss this iconic event in Chennai!",
     siteLink:
       "http://district.in/events/hukum-world-tour-chennai-august-2025-buy-tickets",
     EventsCalendarTitle: "Hukum World Tour Grand Finale",
@@ -1489,7 +1539,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Music, Concert",
     image: "/images/HomePage-Images/Events/Newevents/46.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Marg Swarnabhoomi, Kuvathur, ECR, Chennai",
     language: "Tamil, English",
     hours: "Open-ended",
@@ -1553,7 +1603,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarCategory: "Comedy Shows",
     image:
       "/images/HomePage-Images/Events/Newevents/kal-ki-chinta-nahi-karta-ft-ravi-gupta.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Shanmukhananda Hall: Chennai",
     language: "Hindi",
     hours: "1 hour 30 minutes",
@@ -1632,7 +1682,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Arts and Crafts, Painting, Workshops",
     image: "/images/HomePage-Images/Events/Newevents/69.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Queens and Beans: Hyderabad",
     language: "English, Hindi",
     hours: "1 hour 30 minutes",
@@ -1654,7 +1704,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarTime: "3:00 PM",
     EventsCalendarCategory: "Business",
     image: "/images/HomePage-Images/Events/Newevents/59.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Trinity Studio: Kodambakkam",
     language: "",
     hours: "1 Hour",
@@ -1676,7 +1726,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarCategory: "Comedy Shows",
     image:
       "/images/HomePage-Images/Events/Newevents/vikramjit-singh-talking-touring.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "The J Spot, Juhu: Chennai",
     language: "Hindi, English",
     hours: "1 hour 20 minutes",
@@ -1691,7 +1741,8 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     id: 79,
     metaTitleEvent: "Standup Comedy Shows in Chennai / Gurleen Pannu",
     conicallinkEvent: "/eventsdetails/79",
-    metaDescriptionEvent: "Enjoy sharp humour and real-life rants at Young Adult by Gurleen Pannu—live in Alwarpet, Chennai on Sep 12. One of the best stand-up comedy Shows in Chennai!",
+    metaDescriptionEvent:
+      "Enjoy sharp humour and real-life rants at Young Adult by Gurleen Pannu—live in Alwarpet, Chennai on Sep 12. One of the best stand-up comedy Shows in Chennai!",
     siteLink:
       "https://in.bookmyshow.com/events/pannu-yaar-stand-up-comedy-show-ft-gurleen-pannu/ET00333386",
     EventsCalendarTitle: "Young Adult! ft.Gurleen Pannu",
@@ -1702,7 +1753,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarCategory: "Stand up Comedy",
     image:
       "/images/HomePage-Images/Events/Newevents/Young Adult! ft.Gurleen Pannu.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Medai - The Stage, Alwarpet: Chennai",
     language: "Hindi, English",
     hours: "1 Hour 15 mins",
@@ -1721,7 +1772,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarTime: "",
     EventsCalendarCategory: "Games",
     image: "/images/trendingChennai/surfing-inner.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Mahabalipuram, Chennai",
     language: "Surfing Championship",
     hours: "",
@@ -1735,7 +1786,8 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     id: 81,
     metaTitleEvent: "Standup Comedy in Chennai/Standup Comedy Shows in Chennai",
     conicallinkEvent: "/eventsdetails/81",
-    metaDescriptionEvent: "Laugh out loud at Manjeet Sarkar’s ‘Unpaid Therapist’! A must-see Standup Comedy Show in Chennai on Aug 30 at Alwarpet. Book your seat now!",
+    metaDescriptionEvent:
+      "Laugh out loud at Manjeet Sarkar’s ‘Unpaid Therapist’! A must-see Standup Comedy Show in Chennai on Aug 30 at Alwarpet. Book your seat now!",
     siteLink:
       "https://in.bookmyshow.com/events/two-funny-a-double-bill-stand-up-comedy-show/ET00338236",
     EventsCalendarTitle: "MANJEET KI BAAT- A COMEDY SHOW",
@@ -1746,7 +1798,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarCategory: "Stand up Comedy",
     image:
       "/images/HomePage-Images/Events/Newevents/MANJEET KI BAAT- A COMEDY SHOw.jpg",
-    link: "/eventsmain",
+    link: "/events",
     location: "Punch - Unpaid Therapist: Chennai",
     language: "English, Hindi",
     hours: "1 Hour 30 mins",

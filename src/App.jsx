@@ -22,7 +22,8 @@ import MenuBar from "./Components/MenuBar";
 import Technologynewchennai from "./Components/TechnologyNew";
 import EducationNew from "./Components/EducationNew";
 import VideoPreloader from "./Components/VideoPreloader";
-import Culturereligiousattractions from "./Pages/SubPages/LivePages/culturereligiousattractions";
+// import Culturereligiousattractions from "./Pages/SubPages/LivePages/culturereligiousattractions";
+import Culturereligiousattractions from "./Pages/SubPages/LivePages/Culturereligiousattractions";
 import EducationInstitutions from "./Pages/SubPages/LivePages/EducationInstitutions";
 import EmploymentinChennai from "./Pages/SubPages/LivePages/EmploymentinChennai";
 import FutureGrowthDevelopment from "./Pages/SubPages/LivePages/FutureGrowthDevelopment";
@@ -236,7 +237,8 @@ import SouthChennai from "./Pages/SubPages/Utilities/SouthChennai";
 import WestChennai from "./Pages/SubPages/Utilities/WestChennai";
 import WomenSafty from "./Pages/SubPages/LivePages/WomenSafty";
 
-import Faq from "./Pages/faq";
+// import Faq from "./Pages/faq";
+import Faq from "./Pages/Faq";
 import Contact from "./Pages/contact";
 import About from "./Pages/About";
 
@@ -282,12 +284,12 @@ function App() {
 
   const [animate, setAnimate] = useState(false);
   const menuItems = [
-    { label: "About Us", href: "/about" },
+    { label: "About Us", href: "/about-us" },
     { label: "Blog", href: "/blog" },
     { label: "Career", href: "/career" },
     { label: "Events", href: "/visit/events-in-chennai" },
     { label: "Social Chennai", href: "/social-chennai" },
-    { label: "FAQ", href: "/faq" },
+    { label: "FAQ", href: "/faqs" },
     { label: "Contact Us", href: "/contact" },
     { label: "Sustainability", href: "/sustainability" },
   ];
@@ -626,7 +628,7 @@ function App() {
 
           <Route path="/visit-chennai" element={<Visit />} />
           <Route path="/work-in-chennai" element={<Work />} />
-          <Route path="/eventsmain" element={<EventsHome />} />
+          <Route path="/events" element={<EventsHome />} />
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />
           <Route path="/namma-stories" element={<NammaStories />} />
@@ -634,7 +636,10 @@ function App() {
             path="/superchennai-contest"
             element={<SuperChennaiEvents />}
           />
-          <Route path="/icon-of-the-month-in-chennai" element={<Iconsofthemonth />} />
+          <Route
+            path="/icon-of-the-month-in-chennai"
+            element={<Iconsofthemonth />}
+          />
           <Route path="/car-treasure-hunt" element={<CarRally />} />
           <Route path="/carrallyform-hidedpage" element={<CarRallyForm />} />
           <Route path="/carrallyformcheckout" element={<TicketCheckout />} />
@@ -1176,9 +1181,9 @@ function App() {
 
           {/* Food sup pages */}
 
-          <Route path="/Faq" element={<Faq />} />
+          <Route path="/faqs" element={<Faq />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/about-us" element={<About />} />
           <Route path="/icon-july-month" element={<Iconofthemonth />} />
           <Route path="/icon-august-month" element={<IconofthemonthAugust />} />
 

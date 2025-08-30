@@ -177,7 +177,7 @@ const Footer = () => {
   const USEFULLINKS2 = [
     { title: "Overview", link: "/volunteer-in-chennai" },
     { title: "Digital", link: "/volunteer-in-chennai" },
-    { title: "Events", link: "/eventsmain" },
+    { title: "Events", link: "/events" },
     { title: "Content Creators", link: "/volunteer-in-chennai" },
     { title: "Design &  Art", link: "/volunteer-in-chennai" },
     { title: "Influencers", link: "/volunteer-in-chennai" },
@@ -192,14 +192,14 @@ const Footer = () => {
   ];
 
   const USEFULLINKS3 = [
-    { title: "About us", link: "/about" },
+    { title: "About us", link: "/about-us" },
     // { title: "Blog", link: "/volunteer-in-chennai" },
     // { title: "Career", link: "/volunteer-in-chennai" },
-    { title: "Events", link: "/eventsmain" },
+    { title: "Events", link: "/events" },
     // { title: "Social Chennai", link: "/volunteer-in-chennai" },
     {
       title: "FAQ",
-      link: "/faq",
+      link: "/faqs",
     },
         {
       title: "MEDIA COVERAGE",

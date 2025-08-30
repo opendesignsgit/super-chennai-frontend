@@ -9,10 +9,10 @@ export default function MenuBar({ setMenuBar }) {
     setOpenIndex(openIndex === index ? null : index);
   };
   const menuItems = [
-    { label: "About Us", href: "/about" },
+    { label: "About Us", href: "/about-us" },
 
     // { label: "Career", href: "/career" },
-    { label: "Events", href: "/eventsmain" },
+    { label: "Events", href: "/events" },
     { label: "Superchennai Contests", href: "/superchennai-contest" },
     // { label: "Social Chennai", href: "/social-chennai" },
     {
@@ -22,7 +22,7 @@ export default function MenuBar({ setMenuBar }) {
           Faq<small>s</small>{" "}
         </>
       ),
-      href: "/faq",
+      href: "/faqs",
     },
     { label: <> Icon of the Month </>, href: "/icon-of-the-month-in-chennai" },
     { label: "MEDIA  COVERAGE ", href: "/media-coverage" },

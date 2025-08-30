@@ -16,7 +16,7 @@ export default function TrendingDetails() {
       if (found) {
         setEvent(found);
       } else {
-        navigate("/eventsmain", { replace: true });
+        navigate("/events", { replace: true });
       }
     }
   }, [id, location.state, navigate]);
@@ -35,7 +35,7 @@ export default function TrendingDetails() {
             <h3>Trending Chennai</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/eventsmain">Trending Chennai</Link>
+              <Link to="/events">Trending Chennai</Link>
             </div>
           </div>
         </div>

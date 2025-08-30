@@ -10,7 +10,7 @@ export default function EventsChennaiBusinessNetwork() {
           <div className="accodoamationBannerText">
             <h3>Events</h3>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="/eventsmain">Events</Link>{" "}
+              <Link to="/">Home</Link> - <Link to="/events">Events</Link>{" "}
             </div>
           </div>
         </div>

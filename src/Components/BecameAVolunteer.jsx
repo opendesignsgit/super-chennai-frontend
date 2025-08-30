@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../assets/Css/BecameAVolunteer.css";
+// import "../assets/Css/BecameAVolunteer.css";
+import "../assets/Css/Becameavolunteer.css";
 import { Link } from "react-router-dom";
 
 export default function Becameavolunteer() {

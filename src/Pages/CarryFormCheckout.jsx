@@ -113,7 +113,7 @@ export default function TicketCheckout() {
                 Home
               </Link>
               -
-              <Link style={{ color: "#fff" }} to="/eventsmain">
+              <Link style={{ color: "#fff" }} to="/events">
                 (Car Treasure Hunt)
               </Link>
             </div>

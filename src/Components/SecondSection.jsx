@@ -145,7 +145,7 @@ const SecondSection = () => {
             </div>
           </div>
           <div className="volunteerSectionContent">
-            <a href="/about" class="exploreMoreLink">
+            <a href="/about-us" class="exploreMoreLink">
               Explore More
             </a>
           </div>

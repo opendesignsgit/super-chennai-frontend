@@ -3,6 +3,8 @@ import "../assets/Css/Eventstyle.css";
 import Search from "../Components/Search";
 import { cards } from "./EventData";
 import { useState } from "react";
+import axios from "axios";
+import { useEffect } from "react";
 // import { cards } from "./EventsTesting";
 
 export default function EventsHome() {
@@ -12,6 +14,9 @@ export default function EventsHome() {
   const [newsLetter, setLetter] = useState("");
   const [newsYoutube, setNewsYoutube] = useState("");
   const [selectedCard, setSelectedCard] = useState(null);
+
+  // const [cards, setCards] = useState([]);
+
   // Date Filter
 
   const today = new Date();
@@ -48,9 +53,9 @@ export default function EventsHome() {
     return eventEndDate < today;
   });
 
-  console.log("All Data:", cards);
-  console.log("Filtered Date:", upcomingEvents);
-  console.log("Old Date", oldEvents);
+  // console.log("All Data:", cards);
+  // console.log("Filtered Date:", upcomingEvents);
+  // console.log("Old Date", oldEvents);
 
   return (
     <>

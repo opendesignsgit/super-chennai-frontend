@@ -67,7 +67,7 @@ export default function Explore() {
       place: "in Chennai",
       image:
         "/images/HomePage-Images/guitarist-playing-electrical-guitar-rock-concert.png",
-      link: "/eventsmain",
+      link: "/events",
     },
     {
       title: "Health Care",

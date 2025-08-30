@@ -1,33 +1,28 @@
-// import { useState, useEffect } from "react";
-// import axios from "axios";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-// export const cards1 = () => {
-//   const [cards1, setCards1] = useState([]);
-//   const [loading, setLoading] = useState(true);
-    
+export const cards1 = () => {
+  const [cards1, setCards1] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-//   useEffect(() => {
-//     const fetchCards = async () => {
-//       try {
-//         const response = await axios.get(
-//           "https://demo.superchennai.com/api/events"
-//         );
-//         setCards(response.data.docs);
-//       } catch (error) {
-//         console.error("Error fetching events:", error);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-  
+  useEffect(() => {
+    const fetchCards = async () => {
+      try {
+        const response = await axios.get(
+          "https://demo.superchennai.com/api/events"
+        );
+        setCards1(response.data.docs);
+      } catch (error) {
+        console.error("Error fetching events:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-//     fetchCards();
-//   }, []);
-
-//   console.log(cards1);
-
-//   return { cards1, loading };
-// };
+    fetchCards();
+  }, []);
+  return { cards1, loading };
+};
 
 export const cards = [
   {

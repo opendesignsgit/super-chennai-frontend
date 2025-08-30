@@ -4,9 +4,11 @@ import "../assets/Css/EventsCalendar.css";
 import { useNavigate, Link } from "react-router-dom"; // ✅ Link import here
 
 import { cards } from "../../src/Pages/EventData";
+// import { cards1 } from "../../src/Pages/EventData";
 
 export default function CardCarousel111() {
   const [scrollDir, setScrollDir] = useState("left");
+  // const cards = cards1().cards1;
   const carouselRef = useRef();
   const [x, setX] = useState(0);
 
@@ -55,8 +57,6 @@ export default function CardCarousel111() {
 
   // console.log("All Data:", cards);
   // console.log("upcomingEvents", upcomingEvents);
-
-  
 
   useEffect(() => {
     const handleScroll = () => {

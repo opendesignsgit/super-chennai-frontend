@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../assets/Css/Eventstyle.css";
 import Search from "../Components/Search";
-import { cards } from "./EventData";
+import { cards, cards1 } from "./EventData";
 import { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
@@ -15,7 +15,8 @@ export default function EventsHome() {
   const [newsYoutube, setNewsYoutube] = useState("");
   const [selectedCard, setSelectedCard] = useState(null);
 
-  // const [cards, setCards] = useState([]);
+
+  const dynamiccards = cards1().cards1
 
   // Date Filter
 

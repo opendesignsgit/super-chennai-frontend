@@ -165,10 +165,7 @@ export default function Live() {
                 Living in Chennai, India, means experiencing the perfect blend
                 of deep-rooted tradition and dynamic urban growth. Known for its
                 warm hospitality,{" "}
-                <h2
-                  className="paraoneLiveSection"
-                  style={{ all: "unset", fontWeight: "bold" }}
-                >
+                <h2 className="paraoneLiveSection seoText">
                   {" "}
                   Chennai City Life
                 </h2>{" "}
@@ -190,23 +187,14 @@ export default function Live() {
               </p>
               <p className="paraoneLiveSection">
                 Thanks to its growing economy,{" "}
-                <h3
-                  className="paraoneLiveSection"
-                  style={{ all: "unset", fontWeight: "bold" }}
-                >
-                  {" "}
-                  jobs in Chennai
-                </h3>{" "}
+                <h3 className="paraoneLiveSection seoText"> jobs in Chennai</h3>{" "}
                 span across IT, automobile, fintech, healthcare, education, and
                 creative sectors, offering opportunities for professionals,
                 entrepreneurs, and freelancers alike.
               </p>
               <p className="paraoneLiveSection">
                 For families relocating or settling down,
-                <h4
-                  className="paraoneLiveSection"
-                  style={{ all: "unset", fontWeight: "bold" }}
-                >
+                <h4 className="paraoneLiveSection seoText">
                   {" "}
                   Educational Institutions in Chennai
                 </h4>{" "}

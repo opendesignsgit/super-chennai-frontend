@@ -10,10 +10,10 @@ export default function MenuBar({ setMenuBar }) {
   };
   const menuItems = [
     { label: "About Us", href: "/about" },
-    // { label: "Blog", href: "/blog" },
+
     // { label: "Career", href: "/career" },
     { label: "Events", href: "/eventsmain" },
-    { label: "Car Treasure Hunt", href: "/car-treasure-hunt" },
+    { label: "Superchennai Contests", href: "/superchennai-contest" },
     // { label: "Social Chennai", href: "/social-chennai" },
     {
       label: (
@@ -24,8 +24,9 @@ export default function MenuBar({ setMenuBar }) {
       ),
       href: "/faq",
     },
-    { label: <> Icon of the Month </>, href: "/iconofthemonth" },
+    { label: <> Icon of the Month </>, href: "/icon-of-the-month-in-chennai" },
     { label: "MEDIA  COVERAGE ", href: "/media-coverage" },
+    { label: "Blog", href: "/blog" },
     { label: "Contact Us", href: "/contact" },
 
     // { label: "Sustainability", href: "/sustainability" },
@@ -350,43 +351,43 @@ export default function MenuBar({ setMenuBar }) {
     },
     {
       label: "Volunteer",
-      labellink: "/volunteer",
+      labellink: "/volunteer-in-chennai",
 
       content: [
         {
           title: "Overview",
           desc: "Affordable Chennai Lifestyle",
-          link: "/volunteer",
+          link: "/volunteer-in-chennai",
         },
         {
           title: "Digital",
           desc: "Connect Chennai Volunteers",
-          link: "/volunteer",
+          link: "/volunteer-in-chennai",
         },
         {
           title: "Events",
           desc: "Volunteers Power Gatherings",
-          link: "/volunteer",
+          link: "/volunteer-in-chennai",
         },
         {
           title: "Content Creators",
           desc: "Sharing Volunteer Stories",
-          link: "/volunteer",
+          link: "/volunteer-in-chennai",
         },
         {
           title: "Design &  Art",
           desc: "Visualizing Volunteer Impact",
-          link: "/volunteer",
+          link: "/volunteer-in-chennai",
         },
         {
           title: "Influencers",
           desc: "Amplifying Volunteer Voices",
-          link: "/volunteer",
+          link: "/volunteer-in-chennai",
         },
         {
           title: "Mentors",
           desc: "Guiding Future Volunteers",
-          link: "/volunteer",
+          link: "/volunteer-in-chennai",
         },
       ],
     },

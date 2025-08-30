@@ -34,11 +34,8 @@ export default function EventsDetails() {
     <>
       <Helmet>
         <title>{event.metaTitleEvent}</title>
-        <meta
-          name="description"
-          content={event.metaDescriptionEvent}
-        />
-        <link rel="canonical" href="/live-in-chennai" />
+        <meta name="description" content={event.metaDescriptionEvent} />
+        <link rel="canonical" href={event.conicallinkEvent} />
       </Helmet>
       {/* Banner Section */}
       <section className="accaodomationBannerSection">

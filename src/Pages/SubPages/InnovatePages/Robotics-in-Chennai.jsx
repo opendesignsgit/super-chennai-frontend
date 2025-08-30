@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function RoboticsinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -455,8 +456,6 @@ export default function RoboticsinChennai() {
     },
   ];
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -474,6 +473,14 @@ export default function RoboticsinChennai() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Robotics in Chennai : Evolving into Robots Innovation</title>
+        <meta
+          name="description"
+          content="Robotics in Chennai blends industrial automation, AI-driven solutions, and startups, driving India’s growth in robotics and cutting-edge technology."
+        />
+        <link rel="canonical" href="/innovate/robotics-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -529,17 +536,21 @@ export default function RoboticsinChennai() {
           {imageSections.map((section, index) => (
             <section
               className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
-                 ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
                  ${
-                index % 3 === 0
-                ? "pattern-a"
-                : index % 3 === 1
-                 ? "pattern-b"
-                   : "pattern-c"
-                  }`}
+                   index % 2 === 0
+                     ? "bg-white whitebgsec"
+                     : "bg-[#f7f7f7] colorbgsec"
+                 } 
+                 ${
+                   index % 3 === 0
+                     ? "pattern-a"
+                     : index % 3 === 1
+                     ? "pattern-b"
+                     : "pattern-c"
+                 }`}
               key={index}
             >
-               <div className="space-y-6 bg-white p-4  rounded bottomListIcon w-full">
+              <div className="space-y-6 bg-white p-4  rounded bottomListIcon w-full">
                 {section.fintechEvolution.map((tenant, i) => (
                   <div key={i}>
                     {tenant.points.map((item, j) => (
@@ -889,9 +900,8 @@ export default function RoboticsinChennai() {
         </div>
 
         {/*--------------- Explore More Chennai----------------- */}
-        <InnovatePagesSlider/>
+        <InnovatePagesSlider />
 
-   
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

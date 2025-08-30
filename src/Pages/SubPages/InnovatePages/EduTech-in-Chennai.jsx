@@ -9,6 +9,7 @@ import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import { desc } from "framer-motion/client";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function EduTechinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -555,6 +556,14 @@ export default function EduTechinChennai() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Edu Tech Chennai : AI-led Skill Platforms</title>
+        <meta
+          name="description"
+          content="Discover how EduTech Chennai is empowering learners with AI-led platforms, interactive apps, and digital-first innovations for a brighter future."
+        />
+        <link rel="canonical" href="/innovate/edutech-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">

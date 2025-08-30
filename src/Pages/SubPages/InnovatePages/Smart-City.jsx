@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function SmartCity() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -189,8 +190,6 @@ export default function SmartCity() {
     },
   ];
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -208,6 +207,14 @@ export default function SmartCity() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Smart City Chennai : Digital Innovation for Urban Systems</title>
+        <meta
+          name="description"
+          content="Experience Smart City Chennai, where digital innovation, smart mobility, and green initiatives are building a modern, sustainable city for the future."
+        />
+        <link rel="canonical" href="/innovate/smart-city-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -278,10 +285,9 @@ export default function SmartCity() {
               key={index}
             >
               <div className="space-y-6 bg-white p-4  rounded bottomListIcon w-full">
-               
-                 <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
-                {" What Defines Smart Chennai?"}
-              </h2>
+                <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+                  {" What Defines Smart Chennai?"}
+                </h2>
                 {section.fintechEvolution.map((tenant, i) => (
                   <div key={i}>
                     {tenant.points.map((item, j) => (
@@ -309,7 +315,7 @@ export default function SmartCity() {
               </div>
             </section>
           ))}
-{/* 
+          {/* 
           <div className="mx-auto p-6 text-gray-800 cards listdatacontent">
             <h2 className="text-2xl font-bold text-center mb-6">
               Chennai’s Tech Puzzle: The Key Pieces
@@ -420,10 +426,8 @@ export default function SmartCity() {
 
         {/*--------------- Explore More Chennai----------------- */}
 
+        <InnovatePagesSlider />
 
-        <InnovatePagesSlider/>
-
-   
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

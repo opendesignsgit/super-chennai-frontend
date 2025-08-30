@@ -13,7 +13,7 @@ export default function Becameavolunteer() {
       subtitle: "Create for a Cause. Share for a City. Volunteer Digitally.",
       description:
         "You already create — now do it with purpose. Whether you're posting, designing, or sharing, your digital voice can help Chennai go further. Be part of the change — from anywhere.",
-      link: "/volunteer",
+      link: "/volunteer-in-chennai",
     },
     {
       image: "/images/Volunteer-Images/BacameAvolunterImage1.png",
@@ -22,7 +22,7 @@ export default function Becameavolunteer() {
         "Chennai Needs Your Creativity! Help us paint and design public spaces.",
       description:
         "Volunteer to bring colorful designs, murals, and artistic flair to the city. Help make Chennai a canvas of creativity",
-      link: "/volunteer",
+      link: "/volunteer-in-chennai",
     },
 
     {
@@ -31,7 +31,7 @@ export default function Becameavolunteer() {
       subtitle: "Amplify Chennai’s Voice—Inspire Action Through Your Network!",
       description:
         "Make effective use of your platform! Encourage civic involvement within your network and spread the word about Chennai's events and concerns.",
-      link: "/volunteer",
+      link: "/volunteer-in-chennai",
     },
     {
       image: "/images/Volunteer-Images/BacameAvolunterImage4.png",
@@ -40,7 +40,7 @@ export default function Becameavolunteer() {
         "Empower Chennai’s Future—Share Your Skills and Inspire Growth!",
       description:
         "Lead and empower the people of Chennai! By sharing your expertise, you can assist Super Chennai in developing both personally and professionally.",
-      link: "/volunteer",
+      link: "/volunteer-in-chennai",
     },
   ];
 

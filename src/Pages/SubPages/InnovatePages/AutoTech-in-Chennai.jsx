@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function AutoTechinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -342,8 +343,6 @@ export default function AutoTechinChennai() {
     },
   ];
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -361,6 +360,14 @@ export default function AutoTechinChennai() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Auto Tech Chennai : Growing Automobile Industries</title>
+        <meta
+          name="description"
+          content="Explore Auto Tech Chennai, where global manufacturers and innovators are redefining the auto industry with EVs, automation, and digital transformation."
+        />
+        <link rel="canonical" href="/innovate/autotech-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -724,9 +731,8 @@ export default function AutoTechinChennai() {
 
         {/*--------------- Explore More Chennai----------------- */}
 
-        <InnovatePagesSlider/>
+        <InnovatePagesSlider />
 
-   
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

@@ -54,7 +54,9 @@ export default function CardCarousel111() {
   });
 
   // console.log("All Data:", cards);
-  // console.log("Filtered Date:", upcomingEvents);
+  // console.log("upcomingEvents", upcomingEvents);
+
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -99,7 +101,7 @@ export default function CardCarousel111() {
           <div className="CalendarEventsFirst">
             <img
               className="eventsCalenderIamge"
-              src="/images/HomePage-Images/Events/Newevents/46.jpg"
+              src="/images/HomePage-Images/Events/Newevents/170.jpg"
               alt=""
             />
             <div className="MainCalendarSectionEvent">
@@ -109,29 +111,30 @@ export default function CardCarousel111() {
 
               <div className="secondSectionEventsCalendar">
                 <div className="EventsCalendarDateandTime">
-                  <p className="dateEvents">23</p>
-                  <p className="dayEvents">Friday</p>
+                  <p className="dateEvents">30</p>
+                  <p className="dayEvents">Saturday</p>
                 </div>
 
                 <div>
-                  <p className="eventsNAME">Hukum World Tour,</p>
-                  <p className="eventspLACE">Chennai</p>
+                  <p className="eventsNAME">Chennai Bus Treasure </p>
+                  <p className="eventspLACE">Hunt | Chennai</p>
                 </div>
               </div>
 
               <div className="thirdSectionCalendarContent">
                 <p>
-                  After 3 long years, Anirudh Ravichander returns to his
-                  hometown for a thunderous comeback like never before!
+                  Get ready, Chennai! 🎉 The MTC Bus Treasure Hunt is back this
+                  Madras Month, bringing you an exciting adventure across the
+                  city.
                 </p>
               </div>
 
               <div className="eventsCalendarLinks">
                 {/* <a href="#">Concerts</a> */}
-                <a href="#">Music Shows</a>
+                <a>Treasure Hunt</a>
               </div>
 
-              <Link to="/eventsdetails/-10">
+              <a href="/eventsdetails/93">
                 <p
                   // onClick={() => {
                   //   navigate("/eventstechinnovaters");
@@ -141,7 +144,7 @@ export default function CardCarousel111() {
                 >
                   Find Out More
                 </p>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -166,57 +169,14 @@ export default function CardCarousel111() {
               animate={{ x }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
-              {/* {cards.map((card, index) => (
-                <motion.div
-                  key={index}
-                  className="EventsCalendarCardSection min-w-[300px] h-[400px] bg-white"
-                  // onClick={() => navigate(card.link)}
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <div className="relative w-full h-[250px]">
-                    <Link to={`/eventsdetails/${index}`} state={{ card }}>
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      className="w-full h-full object-cover rounded-t-md"
-                    />
-                    </Link>
-                    <div className="absolute top-3 right-3 CalenderCategoryOverlay">
-                      {card.EventsCalendarCategory}
-                    </div>
-                  </div>
-                  <div className="EventsCalendarMonthtime">
-                    <div className="EventsCalendarMonthStyle">
-                      {card.EventsCalendarMonth}
-                    </div>
-                    <div className="EventsCalendarMonthStyle">|</div>
-                    <div className="EventsCalendarMonthStyle">
-                      {card.EventsCalendarTime}
-                    </div>
-                  </div>
-                  <h3 className="EventsCalendarTitlecss">
-                    {card.EventsCalendarTitle}
-                  </h3>
-                  <h4 className="EventsCalendarContentcss">
-                    {card.EventsCalendarContent}
-                  </h4>
-                </motion.div>
-              ))} */}
-
-              {upcomingEvents.map((card) => (
+              {/* {upcomingEvents.map((card) => (
                 <motion.div
                   key={card.id}
                   className="EventsCalendarCardSection min-w-[300px] h-[400px] bg-white"
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="relative w-full h-[250px]">
-                    {/* <Link to={`/eventsdetails/${card.id}`} state={{ card }}>
-                      <img
-                        src={card.image}
-                        alt={card.title}
-                        className="w-full h-full object-cover rounded-t-md"
-                      />
-                    </Link> */}
+                  
                     <a href={`/eventsdetails/${card.id}`}>
                       <img
                         src={card.image}
@@ -244,7 +204,46 @@ export default function CardCarousel111() {
                     {card.EventsCalendarContent}
                   </h4>
                 </motion.div>
-              ))}
+              ))} */}
+              {[...upcomingEvents]
+                .sort((a, b) => b.id - a.id) // sort by latest id
+                .map((card) => (
+                  <motion.div
+                    key={card.id}
+                    className="EventsCalendarCardSection min-w-[300px] h-[400px] bg-white"
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <div className="relative w-full h-[250px]">
+                      <a href={`/eventsdetails/${card.id}`}>
+                        <img
+                          src={card.image}
+                          alt={card.title}
+                          className="w-full h-full object-cover rounded-t-md"
+                        />
+                      </a>
+                      <div className="absolute top-3 right-3 CalenderCategoryOverlay">
+                        {card.EventsCalendarCategory}
+                      </div>
+                    </div>
+
+                    <div className="EventsCalendarMonthtime">
+                      <div className="EventsCalendarMonthStyle">
+                        {card.EventsCalendarMonth}
+                      </div>
+                      <div className="EventsCalendarMonthStyle">|</div>
+                      <div className="EventsCalendarMonthStyle">
+                        {card.EventsCalendarTime}
+                      </div>
+                    </div>
+
+                    <h3 className="EventsCalendarTitlecss">
+                      {card.EventsCalendarTitle}
+                    </h3>
+                    <h4 className="EventsCalendarContentcss">
+                      {card.EventsCalendarContent}
+                    </h4>
+                  </motion.div>
+                ))}
             </motion.div>
           </div>
 

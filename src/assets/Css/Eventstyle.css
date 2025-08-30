@@ -697,14 +697,98 @@ textarea {
 
 /* NammaStoreies Video- newUpdate */
 
+/* Events New Section  */
+
+.superchennaiEventsSection {
+  width: 40%;
+  padding: 13px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.superchennaiEventsMainContainer {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+}
+
+.superchennaiEventsSection p {
+  font-family: "29LT Bukra SmBd";
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  color: #995098;
+  line-height: 1.1;
+}
+
+.superchennaiEventsSection img {
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.superchennaiEventsSection img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Events New Section  */
+
+@media (max-width: 1550px) and (min-width: 1300px) and (max-height: 750px) {
+  .pointcastSticky img {
+    width: 60px;
+  }
+
+  .stickyIconsContainer {
+    top: 20%;
+    right: 24px;
+  }
+
+  .pointcastSticky {
+    bottom: 90px;
+  }
+
+  .carRallylink {
+    bottom: 249px !important;
+  }
+
+  .nammaStorieslink {
+    bottom: 165px;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .iconofthemonthbanner .eventsCalenderIamge {
+    object-position: right;
+  }
+  .superchennaiEventsMainContainer {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .superchennaiEventsSection p {
+    font-size: 20px;
+  }
+
+  .superchennaiEventsSection {
+    width: 100%;
+  }
   .popupStyleMainContainer button {
     color: #fff;
     right: 22px;
   }
   .popupStyleMainContainer {
     padding: 15px;
- 
   }
   .nammaStorieslabel1 img {
     border-radius: 50px;

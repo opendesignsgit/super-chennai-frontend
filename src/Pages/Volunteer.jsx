@@ -8,6 +8,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet-async";
 
 export default function Volunteer() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -195,6 +196,14 @@ export default function Volunteer() {
 
   return (
     <>
+      <Helmet>
+        <title>Volunteer in Chennai : Connection with Communities</title>
+        <meta
+          name="description"
+          content="Join hands to volunteer in Chennai! Contribute to communities, aid social causes, and experience the joy of giving back to your city."
+        />
+        <link rel="canonical" href="/volunteer-in-chennai" />
+      </Helmet>
       <div
         className="VolunteerBgSection notHome"
         data-aos="fade-up"
@@ -353,7 +362,10 @@ export default function Volunteer() {
                 draggable
                 pauseOnHover
               />
-              <form className="volunteerFormsubmit um-form-section" onSubmit={handleSubmit}>
+              <form
+                className="volunteerFormsubmit um-form-section"
+                onSubmit={handleSubmit}
+              >
                 <h2>VOLUNTEER FOR SUPER CHENNAI</h2>
                 <input
                   type="text"

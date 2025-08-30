@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
+import { Helmet } from "react-helmet-async";
 
 export default function InvestEventsChennai() {
   const investmentCategories = [
@@ -255,17 +256,29 @@ export default function InvestEventsChennai() {
 
   return (
     <>
+      <Helmet>
+        <title>Chennai Events : Find The Concerts, Sports </title>
+        <meta
+          name="description"
+          content="Discover how news in Chennai is shaping the digital era, with outlets and creators building apps, websites, and platforms backed by investors."
+        />
+        <link rel="canonical" href="/invest/chennai-events" />
+      </Helmet>
       {/*----------------Accodimation-Banner----------- */}
 
       <div className="accaodomationBannerSection">
         <div>
-          <img src="/images/Invest-Images/SubPages/invest-events-banner.jpg" alt="" />
+          <img
+            src="/images/Invest-Images/SubPages/invest-events-banner.jpg"
+            alt=""
+          />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
             <h3>Events</h3>
             <div className="breadCrum">
-              <Link to="/invest-in-chennai"> Invest </Link> - <a href="">Events</a>{" "}
+              <Link to="/invest-in-chennai"> Invest </Link> -{" "}
+              <a href="">Events</a>{" "}
             </div>
           </div>
         </div>

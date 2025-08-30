@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function BlockchaininChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -153,7 +154,6 @@ export default function BlockchaininChennai() {
     },
   ];
 
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -171,6 +171,14 @@ export default function BlockchaininChennai() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Blockchain Course in Chennai : Blockchain Policy for All</title>
+        <meta
+          name="description"
+          content="With startups and institutions leading change, Blockchain Chennai is pioneering digital trust, smart systems, and real-world blockchain applications."
+        />
+        <link rel="canonical" href="/innovate/blockchain-course-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -223,12 +231,10 @@ export default function BlockchaininChennai() {
                 degrees, Chennai is proving that the blockchain revolution isn’t
                 hype — it’s happening.
               </p>
-
-             
             </div>
 
             <div className="workIntro">
-              <h3 >Real-World Use, Not Just Whitepapers</h3>
+              <h3>Real-World Use, Not Just Whitepapers</h3>
 
               <p>
                 Unlike many cities chasing crypto headlines, Chennai is focused
@@ -283,7 +289,10 @@ export default function BlockchaininChennai() {
           ))}
 
           <div className="overflow-x-auto my-6">
-            <h2 className="text-2xl font-bold"> Startups & Blockchain Players</h2>
+            <h2 className="text-2xl font-bold">
+              {" "}
+              Startups & Blockchain Players
+            </h2>
             <p className="mb-4 text-gray-600 text-center mb-10">
               These companies have made Chennai their technology fortress:
             </p>
@@ -376,9 +385,8 @@ export default function BlockchaininChennai() {
 
         {/*--------------- Explore More Chennai----------------- */}
 
-        <InnovatePagesSlider/>  
+        <InnovatePagesSlider />
 
-    
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

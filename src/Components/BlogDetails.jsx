@@ -5,6 +5,7 @@ import "../assets/Css/BlogList.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Helmet } from "react-helmet-async";
 
 const parseLexical = (content) => {
   if (!content?.root?.children) return null;
@@ -282,6 +283,8 @@ const BlogDetail = () => {
             id: found.id,
             title: found.title,
             content: found.content,
+            metadescription: found.meta.description,
+            metatitle: found.meta.title,
             heroImage:
               found.heroImage?.sizes?.xlarge?.url ||
               found.heroImage?.url ||
@@ -339,88 +342,105 @@ const BlogDetail = () => {
   if (!blog) return <div className="blog-detail-error">Blog not found.</div>;
 
   return (
-    <div className="BlogDetailPageId">
-      <div className="accaodomationBannerSection">
-        {blog.heroImage && (
-          <>
-            <div className="bLogDetailBanner">
-              <img src={`${API_BASE_URL}${blog.heroImage}`} alt={blog.title} />
-              {/* <img src={`${blog.heroImage}`} alt={blog.title} /> */}
-            </div>
-            <div className="accodoamationBannerContainer">
-              <div className="accodoamationBannerText">
-                <h3>{blog.title}</h3>
-                <div className="breadCrum">
-                  <a href="#">
-                    <Link to="/blog">BLOGS</Link>
-                  </a>{" "}
-                  - <a href="#">{blog.title}</a>
+    <>
+      <Helmet>
+        <title>{blog.metatitle}</title>
+        <meta name="description" content={blog.metadescription} />
+        <link rel="canonical" href="/live-in-chennai" />
+      </Helmet>
+
+      <div className="BlogDetailPageId">
+        <div className="accaodomationBannerSection">
+          {blog.heroImage && (
+            <>
+              <div className="bLogDetailBanner">
+                <img
+                  src={`${API_BASE_URL}${blog.heroImage}`}
+                  alt={blog.title}
+                />
+
+                {/* <img src={`${blog.heroImage}`} alt={blog.title} /> */}
+              </div>
+
+              <div className="accodoamationBannerContainer">
+                <div className="accodoamationBannerText">
+                  <h3>{blog.title}</h3>
+                  <div className="breadCrum">
+                    <a href="#">
+                      <Link to="/blog">BLOG</Link>
+                    </a>{" "}
+                    - <a href="#">{blog.title}</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </>
-        )}
-      </div>
-
-      <div className="blog-detail-container">
-        <div className="blog-content">{parseLexical(blog.content)}</div>
-        <div className="back-link">
-          <Link to="/blog">← Back to Blog List</Link>
+            </>
+          )}
         </div>
-        {/* Related Blogs Carousel */}
-        {relatedBlogs.length > 0 && (
-          <div style={{ marginTop: "4rem" }}>
-            <h2 style={{ marginBottom: "1rem" }}>Related Blogs</h2>
-            <Slider {...sliderSettings}>
-              {relatedBlogs.map((item, index) => (
-                <div key={index} className="ExplorePageSliderImage">
-                  <Link
-                    to={`/blogdetail/${item.id}`}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <div
-                      style={{
-                        position: "relative",
-                        borderRadius: "8px",
-                        overflow: "hidden",
-                      }}
-                    >
-                      <img
-                        src={`${API_BASE_URL}${blog.heroImage}`}
-                        alt={item.title}
-                        style={{
-                          width: "100%",
-                          height: "auto",
-                          display: "block",
-                        }}
-                      />
+        {/* <div className="blog-category">
+          <span>{blog.blogCategory || "nodattaaaaaaaaaaaaaaa"}</span>
+        </div> */}
+        <div className="blog-detail-container  container max-w-7xl mx-auto">
+          <div className="blog-content">{parseLexical(blog.content)}</div>
+          <div className="back-link">
+            <Link to="/blog">← Back to Blog List</Link>
+          </div>
 
-                      {/* Gradient Overlay */}
+          {/* {console.log("blog",blog.description)} */}
+          {/* Related Blogs Carousel */}
+          {relatedBlogs.length > 0 && (
+            <div style={{ marginTop: "4rem" }}>
+              <h2 style={{ marginBottom: "1rem" }}>Related Blogs</h2>
+              <Slider {...sliderSettings}>
+                {relatedBlogs.map((item, index) => (
+                  <div key={index} className="ExplorePageSliderImage">
+                    <Link
+                      to={`/blogdetail/${item.id}`}
+                      style={{ textDecoration: "none" }}
+                    >
                       <div
                         style={{
-                          position: "absolute",
-                          bottom: 0,
-                          left: 0,
-                          right: 0,
-                          height: "120px",
-                          background:
-                            "linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent)",
+                          position: "relative",
+                          borderRadius: "8px",
+                          overflow: "hidden",
                         }}
-                      ></div>
+                      >
+                        <img
+                          src={`${API_BASE_URL}${blog.heroImage}`}
+                          alt={item.title}
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            display: "block",
+                          }}
+                        />
 
-                      {/* Blog Title */}
-                      <div className="titleTextExploreChennai">
-                        {item.title}
+                        {/* Gradient Overlay */}
+                        <div
+                          style={{
+                            position: "absolute",
+                            bottom: 0,
+                            left: 0,
+                            right: 0,
+                            height: "120px",
+                            background:
+                              "linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent)",
+                          }}
+                        ></div>
+
+                        {/* Blog Title */}
+                        <div className="titleTextExploreChennai">
+                          {item.title}
+                        </div>
                       </div>
-                    </div>
-                  </Link>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        )}
+                    </Link>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

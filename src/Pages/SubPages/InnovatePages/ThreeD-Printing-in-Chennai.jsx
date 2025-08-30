@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function ThreeDPrintinginChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -378,8 +379,6 @@ export default function ThreeDPrintinginChennai() {
     },
   ];
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -397,6 +396,14 @@ export default function ThreeDPrintinginChennai() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>3d Printing in Chennai | 3d Printing Services Chennai</title>
+        <meta
+          name="description"
+          content="Unlock innovation with 3D printing in Chennai — delivering rapid prototypes, custom parts, and futuristic solutions for industries and creators alike."
+        />
+        <link rel="canonical" href="/innovate/3d-printing-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -419,7 +426,10 @@ export default function ThreeDPrintinginChennai() {
         </div>
 
         {/*----------------- Intro Section ----------------*/}
-        <div className="visitIntroParaSection detailIntro" style={{paddingBottom:"0px"}}>
+        <div
+          className="visitIntroParaSection detailIntro"
+          style={{ paddingBottom: "0px" }}
+        >
           <div className="container max-w-7xl mx-auto px-4">
             <div
               className={`CostOflivingBackground ${
@@ -465,7 +475,11 @@ export default function ThreeDPrintinginChennai() {
                 {section.fintechEvolution.map((tenant, i) => (
                   <div key={i}>
                     {tenant.points.map((item, j) => (
-                      <div key={j} className="clcboxItemss flex mb-4" style={{paddingBottom:"0px"}}>
+                      <div
+                        key={j}
+                        className="clcboxItemss flex mb-4"
+                        style={{ paddingBottom: "0px" }}
+                      >
                         <div className="clcboxIImg">
                           <img src={item.imgs} alt={item.title} />
                         </div>
@@ -577,7 +591,11 @@ export default function ThreeDPrintinginChennai() {
                 {section.fintechEvolution.map((tenant, i) => (
                   <div key={i}>
                     {tenant.points.map((item, j) => (
-                      <div key={j} className="clcboxItemss flex mb-4" style={{paddingBottom:"0px"}}>
+                      <div
+                        key={j}
+                        className="clcboxItemss flex mb-4"
+                        style={{ paddingBottom: "0px" }}
+                      >
                         <div className="clcboxIImg">
                           <img src={item.imgs} alt={item.title} />
                         </div>
@@ -614,7 +632,9 @@ export default function ThreeDPrintinginChennai() {
                             </ul>
                           )}
                           {item.note2 && (
-                            <p className="text-gray-700 font-bold mb-1">{item.note2}</p>
+                            <p className="text-gray-700 font-bold mb-1">
+                              {item.note2}
+                            </p>
                           )}
                           {item.para2 && !item.subsections && (
                             <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
@@ -668,14 +688,18 @@ export default function ThreeDPrintinginChennai() {
 
           {imageSections2.map((section, index) => (
             <section
-               className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
-                ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+              className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
                 ${
-               index % 3 === 0
-                ? "pattern-a"
-               : index % 3 === 1
-               ? "pattern-b"
-               : "pattern-c"
+                  index % 2 === 0
+                    ? "bg-white whitebgsec"
+                    : "bg-[#f7f7f7] colorbgsec"
+                } 
+                ${
+                  index % 3 === 0
+                    ? "pattern-a"
+                    : index % 3 === 1
+                    ? "pattern-b"
+                    : "pattern-c"
                 }`}
               key={index}
             >
@@ -684,7 +708,11 @@ export default function ThreeDPrintinginChennai() {
                 {section.fintechEvolution.map((tenant, i) => (
                   <div key={i}>
                     {tenant.points.map((item, j) => (
-                      <div key={j} className="clcboxItemss flex mb-4"   style={{paddingTop:"0px"}}>
+                      <div
+                        key={j}
+                        className="clcboxItemss flex mb-4"
+                        style={{ paddingTop: "0px" }}
+                      >
                         <div className="clcboxIImg">
                           <img src={item.imgs} alt={item.title} />
                         </div>
@@ -744,7 +772,11 @@ export default function ThreeDPrintinginChennai() {
                 {section.fintechEvolution.map((tenant, i) => (
                   <div key={i}>
                     {tenant.points.map((item, j) => (
-                      <div key={j} className="clcboxItemss flex mb-4" style={{paddingBottom:"0px"}}>
+                      <div
+                        key={j}
+                        className="clcboxItemss flex mb-4"
+                        style={{ paddingBottom: "0px" }}
+                      >
                         <div className="clcboxIImg">
                           <img src={item.imgs} alt={item.title} />
                         </div>
@@ -786,9 +818,8 @@ export default function ThreeDPrintinginChennai() {
 
         {/*--------------- Explore More Chennai----------------- */}
 
-        <InnovatePagesSlider/>
+        <InnovatePagesSlider />
 
-    
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

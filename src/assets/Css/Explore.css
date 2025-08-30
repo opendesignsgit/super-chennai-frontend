@@ -120,12 +120,15 @@
 }
 
 .nammaStorieslink {
-  bottom: 226px;
+  /* bottom: 226px; */
+  /* top: 50%; */
+  bottom: 205px;
   /* top: 50%; */
 }
 
 .carRallylink {
-  top: 60%;
+  /* top: 60%; */
+  bottom: 308px;
 }
 
 @media (max-width: 1600px) and (min-width: 1300px) {

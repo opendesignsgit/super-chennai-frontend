@@ -1,0 +1,1919 @@
+export const cards = [
+  {
+    id: 1,
+    EventsCalendarTitle: "The Cry Club",
+    EventsCalendarContent:
+      "The Cry Club – Let it out, together. Show up with your...",
+    EventsCalendarMonth: "15 Aug – 16 Aug, 2025",
+    EventsCalendarTime: "6:19 PM",
+    EventsCalendarCategory: "Business, Dating, Meetups",
+    image: "/images/HomePage-Images/Events/Newevents/154.jpg",
+    link: "",
+    location: "EatSure Food Court - Law College Road: Pune",
+    language: "English",
+    hours: "1 Hour",
+    ageLimit: "18yrs +",
+    price: "₹399 onwards",
+    aboutFull:
+      "The Cry Club – Let it out, together. Show up with your baggage, heartbreaks, or the weight of a long week, and step into a space with no judgment and no pressure to fix anything—just soft lighting, safe vibes, and warm strangers who understand. Rant, cry, or hug it out while we provide tissues, tea, and emotional support music, so you can leave feeling lighter—because sometimes, a good cry is the vibe.",
+  },
+
+  {
+    id: 2,
+    EventsCalendarTitle: "4th Tamil Nadu International Kite Festival | Day 3",
+    EventsCalendarContent:
+      "Welcome to the 4th Tamil Nadu International Kite Festival!...",
+    EventsCalendarMonth: "Saturday, 16 August 2025",
+    EventsCalendarTime: "03:00 PM",
+    EventsCalendarCategory: "Festival",
+    image: "/images/HomePage-Images/Events/Newevents/day3-kite.jpg",
+    link: "/kite-festival-day-3",
+    location: "Thiruvidanthai Beach, ECR, Mahabalipuram",
+    siteLink:
+      "https://www.district.in/events/4th-tamil-nadu-international-kite-festival-day-3-buy-tickets?disableSSR=true",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+   
+Get ready for four days of color, creativity, and family fun at Thiruvidanthai Beach! Kite enthusiasts from around the world—including France, Thailand, Switzerland, Singapore, Malaysia, Vietnam, and India—come together for a spectacular celebration of sky art Day 4 Highlights:
+The festival’s grand finale on Day 4 promises an unforgettable experience at Thiruvidanthai Beach, ECR, Mahabalipuram, starting from 3 PM onwards. Enjoy dazzling international giant kite displays, thrilling acrobatic performances, mesmerizing LED kite shows, sparkling fireworks, a lively kids’ carnival, and a variety of shopping, food stalls, and cultural activities—making it a perfect family-friendly celebration of creativity and fun. 
+Special Attractions:
+
+Over 250 kites from eight countries painting the sky
+
+Vibrant themed kites promoting “SAVE MARINE LIFE”
+
+Huge colorful teddy bears and realistic dinosaurs for photo fun
+    
+    `,
+  },
+  {
+    id: 3,
+    EventsCalendarTitle: "4th Tamil Nadu International Kite Festival | Day 4",
+    EventsCalendarContent:
+      "Welcome to the 4th Tamil Nadu International Kite Festival!...",
+    EventsCalendarMonth: "Sunday, 17 August 2025",
+    EventsCalendarTime: "03:00 PM",
+    EventsCalendarCategory: "Festival",
+    siteLink:
+      "https://www.district.in/events/4th-tamil-nadu-international-kite-festival-day-4-buy-tickets?disableSSR=true",
+    image: "/images/HomePage-Images/Events/Newevents/day4-kite.jpg",
+    link: "/kite-festival-day-3",
+    location: "Thiruvidanthai Beach, ECR, Mahabalipuram",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    
+    Welcome to the 4th Tamil Nadu International Kite Festival! Experience four days of color, creativity, and family fun at Thiruvidanthai Beach. Kite enthusiasts from around the world—including France, Thailand, Switzerland, Singapore, Malaysia, Vietnam, and India—come together for a spectacular celebration of sky art. Organised by Global Media Box in association with the Department of Tourism, Tamil Nadu, this year’s festival promises to be bigger and better than ever.
+    What to Expect:
+Visitors can enjoy a thrilling lineup of events, featuring dazzling international giant kite displays, breathtaking acrobatic kite performances, and mesmerizing LED kite shows that light up the sky. The festival also includes a sparkling fireworks display, a lively kids’ carnival, and a variety of shopping, food stalls, and cultural activities, making it a fun-filled experience for the entire family. Special Attractions:
+Over 250 kites from eight countries will paint the skies, alongside vibrant themed kites promoting “SAVE MARINE LIFE”. Don’t miss the huge colorful teddy bears and realistic dinosaurs, perfect for photo opportunities and adding extra fun for visitors of all ages.`,
+  },
+  {
+    id: 4,
+
+    EventsCalendarTitle: "GALLABOX presents Patriotic Run",
+    EventsCalendarContent:
+      "Get ready to run for a cause that ignites your passion...",
+    EventsCalendarMonth: "17 Aug 2025",
+    EventsCalendarTime: "5:00 AM",
+    EventsCalendarCategory: "Sports, Fitness",
+    image: "/images/HomePage-Images/Events/Newevents/gallabox-marathon.jpg",
+    link: "",
+    location: "VGP Universal Kingdom, Chennai",
+    language: "",
+    hours: "",
+    siteLink: "",
+    ageLimit: "",
+    price: "₹299 onwards",
+    aboutFull: `
+<strong>GALLABOX presents Patriotic Run </strong> 
+<p>Get ready to run for a cause that ignites your passion and love for the nation! 🇮🇳 Join us for the GALLABOX presenting Patriotic Run, a unique event that combines fitness, fun, and patriotism.</p>
+
+<ul>
+<li><strong>Event Details</strong></li>
+<li><strong>Distances:</strong></li>
+<li>5km: (Perfect for a warm-up and a fun run!)</li>
+<li>10km: (Challenge yourself and push your limits!)</li>
+</ul> 
+
+</br>
+
+<h3>What's Included</h3>
+<ul>
+  <li><strong>Time chip:</strong> Accurate timing to track your progress ⏱️</li>
+  <li><strong>T-shirt:</strong> A stylish and comfortable tee to commemorate your participation 👕</li>
+  <li><strong>Bib:</strong> Your official race number, proudly displayed 📝</li>
+  <li><strong>Certificate:</strong> A personalized certificate to mark your achievement 🏆</li>
+  <li><strong>Hydration:</strong> Refreshing drinks to keep you going throughout the run 💧</li>
+  <li><strong>Food pack:</strong> Delicious treats to refuel and recharge 🍔🥤</li>
+  <li><strong>Medal:</strong> A shiny medal to proudly display your accomplishment 🏅</li>
+</ul>
+</br>
+
+<h3>Winner's Perks</h3>
+<ul>
+  <li><strong>Medal:</strong> A special medal for the top performers 🏅</li>
+  <li><strong>Trophy:</strong> A prestigious trophy for the champions 🏆</li>
+  <li><strong>Gift vouchers:</strong> Exciting prizes to treat yourself 🎁</li>
+</ul>
+</br>
+
+<h3>Why Join?</h3>
+<ul>
+  <li>Celebrate your love for the nation</li>
+  <li>Challenge yourself and push your limits</li>
+  <li>Enjoy a fun and energetic atmosphere</li>
+  <li>Take home amazing goodies and memories</li>
+</ul>
+</br>
+<strong>Don't miss this opportunity to be a part of something special! Register now and show your love for the nation! </strong>
+`,
+  },
+  {
+    id: 5,
+
+    EventsCalendarTitle: "CINEMATIC MAGIC RETURNS TO CHENNAI TONIGHT!",
+    EventsCalendarContent: "Get ready, Chennai! Moonlight Cinema is back....",
+    EventsCalendarMonth: "16 Aug 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Movie",
+    image: "/images/HomePage-Images/Events/Newevents/CINEMATIC MAGIC.jpg",
+    link: "",
+    location: "",
+    language: "Absolutely FREE",
+    hours: "",
+    ageLimit:
+      "Bring along friends and family for a night filled with laughter, thrills, and unforgettable memories!",
+    price: "₹299 onwards",
+    aboutFull: `
+      <p>Get ready, Chennai! Moonlight Cinema is back with its signature vibe, bringing the magic of movies under the open sky. Experience the joy of watching your favorite films with the cool sea breeze and the sounds of waves at Marina Beach.</p>
+      <p>
+
+      Whether it’s a casual outing, a fun date, or a family movie night, this is your chance to relax, unwind, and enjoy cinema like never before. Don’t miss this magical evening under the stars!
+      </p>
+
+      <p> <strong>Tip: </strong> Arrive early to grab the best spots and soak in the beach vibes before the show begins.</p>
+
+      <ul>
+  <li><strong>Date:</strong> Saturday, August 16th</li>
+  <li><strong>Show starts:</strong> 5:00 PM</li>
+  <li><strong>Entry:</strong> Absolutely FREE</li>
+  <li><strong>Bring along:</strong> Friends and family for a night filled with laughter, thrills, and unforgettable memories!</li>
+</ul>
+
+      
+      `,
+  },
+  {
+    id: 6,
+    metaTitleEvent: "Gaming Dhinesh Title",
+    metaDescriptionEvent: "Gaming Dhinesh Description",
+    EventsCalendarTitle: "Gaming Thiruvizha",
+    EventsCalendarContent:
+      "Gaming Thiruvizha is India’s flagship pop culture...",
+    EventsCalendarMonth: "30 Aug – 31 Aug, 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Games",
+    image: "/images/HomePage-Images/Events/Newevents/game-thiruvizha.jpeg",
+    link: "",
+    location: "Chennai Trade Centre, Hall No. 3 (Old Building), Nandambakkam",
+    language: "",
+    hours: "",
+    siteLink: "https://kynhood.com/event/689079e3f0401c4f2ef04413",
+    ageLimit: "",
+    price: "",
+    aboutFull: `
+  
+      Gaming Thiruvizha is India’s flagship pop culture and esports festival — a one-of-a-kind celebration uniting gamers, cosplayers, anime fans, creators, and digital youth. Rooted in local tradition yet driven by global aspirations, it offers an immersive cultural experience that goes far beyond gaming tournaments.With your ticket, you can compete in BGMI, Valorant, EAFC, Street Fighter, and Chess, explore free play zones with GTA V, CS2, DOTA, and Among Us, and witness the U16 National Chess Championship. The festival also features a Cosplay Showdown leading to the Tokyo Game Show, anime and art zones, traditional South Indian games, photo booths, local street food, carnival snacks, exclusive merchandise, and exciting giveaways — making it the ultimate weekend of gaming and entertainment.`,
+  },
+  {
+    id: 7,
+
+    siteLink: "https://in.bookmyshow.com/events/resin-beach-art/ET00400406",
+    EventsCalendarTitle: "Resin Art Workshop",
+    EventsCalendarContent:
+      "Unleash your creativity with the glossy magic of resin...",
+    EventsCalendarMonth: "9–30 Aug, 2025",
+    EventsCalendarTime: "1:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/70.jpg",
+    link: "/eventsmain",
+    location: "Dices And Drama: Chennai",
+    language: "Bengali, English, Hindi, Kannada, Malayalam",
+    hours: "1 Hour",
+    ageLimit: "All age groups",
+    price: "₹999",
+    aboutFull: `
+    Unleash your creativity with the glossy magic of resin.,
+    In this hands-on workshop, you'll learn how to craft stunning coasters, trays, or abstract art using vibrant pigments, glitter, and textures.,
+    Whether you're an artist or a curious beginner, walk away with your own masterpiece — shiny, unique, and made by you.,
+    All materials provided. No experience needed. Just bring your imagination!,
+    Limited seats. Book now & pour your heart into art!,
+  `,
+  },
+  {
+    id: 8,
+    EventsCalendarTitle: "Pichwai Painting Workshop",
+    EventsCalendarContent:
+      "Pichwai Painting Workshop: A Cultural Art Experience...",
+    EventsCalendarMonth: "12, Aug 2025",
+    EventsCalendarTime: "1:00 PM",
+    EventsCalendarCategory: "Food and Drinks, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/146.jpg",
+    link: "",
+    location: "Third Wave Coffee - Inorbit Mall: Hyderabad",
+    language: "Bengali, English, Hindi, Telugu",
+    hours: "2 Hours",
+    ageLimit: "All age groups",
+    price: "₹799 onwards",
+    aboutFull:
+      "Pichwai Painting Workshop: A Cultural Art Experience – Join us for a captivating workshop where you’ll explore the traditional art of Pichwai painting, creating intricate designs and vibrant colors inspired by the rich heritage of Rajasthan. No prior experience is necessary as our expert instructors will guide you through essential techniques like brushwork, color blending, and incorporating symbolic elements. Enjoy creative freedom to experiment with colors, patterns, and motifs inspired by Lord Krishna’s life, resulting in unique artworks that are both visually appealing and culturally significant. Immerse yourself in a relaxing, stress-free atmosphere, with all materials including paints, brushes, and canvas provided, and leave with a delightful and unforgettable experience.",
+  },
+  {
+    id: 9,
+    EventsCalendarTitle: "Kid's Texture Workshop",
+    EventsCalendarContent:
+      "Here's our beginner-friendly art workshop. What to Expect:....",
+    EventsCalendarMonth: "17 Aug 2025",
+    EventsCalendarTime: "2 Hours 30 minutes",
+    EventsCalendarCategory: "Entertainment, Hobby Classes, Kids",
+    image: "/images/HomePage-Images/Events/Newevents/145.jpg",
+    link: "",
+    location: "House of Games, Kilpauk: Chennai",
+    language: "English, Tamil",
+    hours: "2 Hours 30 minutes",
+    ageLimit: "10yrs +",
+    price: "₹1699",
+    aboutFull:
+      "Here’s our beginner-friendly art workshop where our instructor will guide you step-by-step, helping you comfortably navigate the creative process at your own pace. We provide all materials and offer flexible durations so you can work quickly or take your time. Enjoy a relaxed, creative space whether you’re coming solo, as a couple, with friends, or family, and get 50% of your venue payment back as food credit to enjoy delicious refreshments while you create. With 1:1, 2:1, or 3:1 formats, you’ll receive personalized attention in a focused, interactive environment. Leave the workshop not just with new skills, but with your own handmade masterpiece. Prior registration needed; for queries contact the café.",
+  },
+  {
+    id: 10,
+    siteLink: "https://reg.myraceindia.com/MRTS1/foodathon",
+    EventsCalendarTitle: "Foodathon 4.0 ",
+    EventsCalendarContent:
+      "When music meets food, it turns into more than just an event...",
+    EventsCalendarMonth: "28 Sep, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Food Festival",
+    image: "/images/HomePage-Images/Events/Newevents/168.jpg",
+    link: "",
+    location: "Chennai, Tamil Nadu",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    price: "₹899 onwards",
+    aboutFull: `
+      <p>Foodathon 4.0 is India’s first awareness run dedicated to tackling food loss and food waste, organized by No Food Waste Chennai Region. Participants can choose from 2K, 5K, and 10K categories, making it suitable for runners of all levels. By joining this unique run, you’re not only promoting a healthier lifestyle but also contributing to a vital cause—reducing food waste in our communities.</p>
+      
+      <p>All registrants will receive a Dry Fit T-shirt, a finisher medal, an e-certificate, and access to refreshments, hydration points, and medical support throughout the event.</p>
+
+      <p> <strong> Registration Fees – Foodathon 4.0 </strong></p>
+
+
+      <p>2KM Non-Timed Run: ₹499 + processing fee</p>
+      <p>5KM Timed Run: ₹699 + processing fee</p>
+      <p>10KM Timed Run: ₹799 + processing fee</p>
+      `,
+  },
+  {
+    id: 11,
+    EventsCalendarTitle: "Chai Pe Charcha",
+    EventsCalendarContent:
+      "Sit around a table, in a cozy little space and enjoy...",
+    EventsCalendarMonth: "1 Aug – 10 Aug, 2025",
+    EventsCalendarTime: "6:20 PM",
+    EventsCalendarCategory: "Dating, Meetups",
+    image: "/images/HomePage-Images/Events/Newevents/143.jpg",
+    link: "",
+    location: "Third Wave Coffee - Inorbit Mall: Hyderabad",
+    language: "English, Hindi",
+    hours: "1 Hour",
+    ageLimit: "16yrs +",
+    price: "₹199 onwards",
+    aboutFull:
+      "Sit around a table, in a cozy little space and enjoy a cup of Chai while connecting with people through heart to hearts and other touching conversations. It's a cozy little meet up for people who just want to get to know others and have good conversations. If you want to make new friends over Chai, come join us.",
+  },
+  {
+    id: 12,
+    siteLink:
+      "https://in.bookmyshow.com/events/clay-miniature-magnet/ET00411633",
+    EventsCalendarTitle: "Clay miniature magnet",
+    EventsCalendarContent:
+      "Clay Miniature Magnet Workshop Create Tiny Treasures with Magnetic.....",
+    EventsCalendarMonth: "12 Aug – 21 Sep, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/142.jpg",
+    link: "",
+    location: "Dices And Drama: Chennai",
+    language: "English, Hindi, Marathi, Bengali, Kannad...",
+    hours: "2 Hours",
+    ageLimit: "All age groups",
+    price: "₹899",
+    aboutFull:
+      "Clay Miniature Magnet Workshop Create Tiny Treasures with Magnetic Appeal Join us for a hands-on clay miniature magnet workshop where you`ll learn the techniques to craft exquisite miniature sculptures that can be transformed into functional magnets. Under the guidance of our skilled instructor, you`ll explore the intricacies of working with clay on a small scale and adding magnetic elements. What you`ll learn:  Clay basics: Properties of clay, tools, and techniques. Miniature sculpting: Creating detailed features and forms. Texture and detail: Adding depth and realism to your creations. Magnetic integration: Incorporating magnets into your miniatures. Finishing touches: Applying protective coats and adding decorative elements. What you`ll need: Clay (provided by the workshop) Sculpting tools Magnets (provided by the workshop) Apron Workshop highlights: Personalized creations: Design unique miniature magnets. Step-by-step instruction: Learn from a skilled artist. Relaxing atmosphere: Enjoy a creative and enjoyable experience. Take-home masterpieces: Leave with your beautifully crafted miniature magnets. Register today and embark on a journey of miniature artistry with magnetic appeal!",
+  },
+  {
+    id: 13,
+    EventsCalendarTitle: "Resin keychain Workshop",
+    EventsCalendarContent:
+      "Here’s our beginner-friendly art workshop. Hands-On Guidance...",
+    EventsCalendarMonth: "17 Aug 2025",
+    EventsCalendarTime: "4:45 PM",
+    EventsCalendarCategory: "Arts and Crafts, Business, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/141.jpg",
+    link: "",
+    location: "House of Games, Kilpauk: Chennai",
+    language: "English, Tamil",
+    hours: "1 Hour",
+    ageLimit: "21yrs +",
+    price: "₹1599",
+    aboutFull:
+      "Here’s our beginner-friendly art workshop. Hands-On Guidance: Our instructor will guide you step-by-step, helping you comfortably navigate the entire creative process at your own pace. All Materials Provided: We’ve got you covered with all the tools and materials. Flexible Duration: Some participants finish quickly, while others love to slow down and enjoy the process — both are welcome! Create at your own rhythm. Interactive Learning: This is not just a demo! Ask anything about resin — from safety to curing tips. We encourage questions throughout to help you gain real understanding and confidence. Relaxed, Creative Space: Whether youre coming solo, as a couple, with friends, or family, this session offers a calming, expressive escape from routine. Refreshments Provided: Get 50% of your venue payment back as food credit. Enjoy delicious refreshments while you create — its a treat for both your mind and taste buds! 1:1, 2:1, or 3:1 Format: We offer personalized attention with small group formats for a more focused and interactive experience. Take Your Art Home: Leave the workshop not just with new skills, but with your own handmade masterpiece! Prior registration needed. For queries contact cafe",
+  },
+  {
+    id: 14,
+    EventsCalendarTitle: "ISAI SANGAMAM 2025",
+    EventsCalendarContent:
+      "Get ready for an electrifying evening of music, emotion...",
+    EventsCalendarMonth: "15 Aug 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Concerts, Music Festivals",
+    image: "/images/HomePage-Images/Events/Newevents/140.jpg",
+    link: "",
+    location: "Medai - The Stage, Alwarpet: Chennai",
+    language: "",
+    hours: "1 hour 30 minutes",
+    ageLimit: "All age groups",
+    price: "₹299 onwards",
+    aboutFull:
+      "Get ready for an electrifying evening of music, emotion, and pure talent at Isai Thiruvizha 2K25 – Live in Concert, powered by EventVibe and Musica Cura. Experience soulful live performances by stars from Zee Tamil SaReGaMaPa and Super Singer, alongside the sensational Musica Cura Band. Featured artists include Sanjana, Abinesh, Sujesh, Thanumitha, Sabari, Balaji, Manoj, Praveen, Vishwa, and Suhasini, with live band members Jai on cajon, Sanjay on guitar, and Joyson on keys. Join us for a night of unforgettable melodies. Book your tickets now!",
+  },
+  {
+    id: 15,
+    EventsCalendarTitle: "Theatre Workshop for Kids",
+    EventsCalendarContent:
+      "Theatre is a powerful space for children to truly be themselves....",
+    EventsCalendarMonth: "17 Aug 2025",
+    EventsCalendarTime: "10:00 AM",
+    EventsCalendarCategory: "Masterclass, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/139.jpg",
+    link: "",
+    location: "IDAM - The Art & Cultural Space: Chennai",
+    language: "English",
+    hours: "3 Hours",
+    ageLimit: "5yrs +",
+    price: "₹1499",
+    aboutFull:
+      "Theatre is a powerful space for children to truly be themselves, helping them overcome fear, build patience, learn respect and responsibility, improve communication, and much more. Through exploring their emotional range with facial expressions like smiles, anger, and disgust, discovering the power of non-verbal communication through gestures and movement, learning to use their voices from natural sounds to spoken words, and building engaging stories through oral storytelling, children develop confidence and creativity. This workshop offers improved communication skills, stage presence, increased self-confidence through group interaction, exposure to the joy and energy of drama, creative expression through writing and performance, and simple techniques to build and tell compelling stories. Scheduled for 17th August, from 10 am to 1 pm at IDAM, Kodambakkam, it is designed for children aged 5 to 13 years and limited to 15 participants. Join us for a week of discovery, creativity, and fun where children grow through drama and storytelling!",
+  },
+  {
+    id: 16,
+    EventsCalendarTitle: "Resin Beach Art",
+    EventsCalendarContent:
+      "Dive into the captivating world of resin art with our hands-on......",
+    EventsCalendarMonth: "12 Aug 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/138.jpg",
+    link: "",
+    location: "Dices And Drama: Chennai",
+    language: "Bengali, English, Hindi, Kannada, Malaya...",
+    hours: "1 Hour",
+    ageLimit: "All age groups",
+    price: "₹1299 onwards",
+    aboutFull:
+      "Dive into the captivating world of resin art with our hands-on Resin Beach Art workshop! Perfect for both beginners and experienced artists, this event is designed to unlock your creative potential through the vibrant and versatile medium of resin.Under the guidance of experienced instructors, you’ll learn the fundamentals of working with resin, including safety tips, mixing techniques, color blending, and molding. Our focus will be on creating stunning beach-themed art pieces, capturing the essence of the ocean with waves, sand, and sea-inspired colors.By the end of the session, you’ll have crafted your own mesmerizing piece of resin beach art to take home, whether it’s a beautiful seascape, a beach-themed tray, or an abstract ocean-inspired masterpiece. Join us for an afternoon of creativity, relaxation, and fun, and discover the endless possibilities that resin beach art offers!",
+  },
+  {
+    id: 17,
+    EventsCalendarTitle: "Art Date",
+    EventsCalendarContent:
+      "Looking for a creative way to connect with someone new?....",
+    EventsCalendarMonth: "12 Aug 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/137.jpg",
+    link: "",
+    location: "Dices And Drama: Chennai",
+    language: "Bengali, English, Hindi, Kannada, Malaya...",
+    hours: "2 Hours",
+    ageLimit: "All age groups",
+    price: "₹1599",
+    aboutFull:
+      "Looking for a creative way to connect with someone new? Join us for the “Small World Art Date,” where art meets serendipity! Participants will be paired up with their partner to embark on an exciting, collaborative art activity. Whether you’re a seasoned artist or just looking to have some fun, this event is designed to spark creativity and forge connections. Expect laughter, inspiration, and perhaps a masterpiece or two! Come with an open mind and leave with a new friend—or maybe something more.",
+  },
+  {
+    id: 18,
+    EventsCalendarTitle: "SUNBURN WEEKEND - OTTELLO GOA",
+    EventsCalendarContent:
+      "This Monsoon gonna be different in Goa. An unforgettable experience over....",
+    EventsCalendarMonth: "14 - 16 Aug 2025",
+    EventsCalendarTime: "9:00 PM",
+    EventsCalendarCategory: "Concerts, Music Shows, Afro, Disco, EDM",
+    image: "/images/HomePage-Images/Events/Newevents/136.jpg",
+    link: "",
+    location: "Ottello: Goa",
+    language: "English",
+    hours: "12 Hours",
+    ageLimit: "",
+    price: "₹1800 onwards",
+    aboutFull:
+      "This Monsoon gonna be different in Goa. An unforgettable experience over the private Lake with this mesmerising lineup. We gonna take care of your party animal all night along. Expect some elite techno heads and su real vibes.",
+  },
+  {
+    id: 19,
+    EventsCalendarTitle: "Pizza Playdate",
+    EventsCalendarContent:
+      "Join us for a delightful Pizza Playdate at Hibiscus! Perfect....",
+    EventsCalendarMonth: "17 Aug 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Food and Drinks, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/135.jpg",
+    link: "",
+    location: "Hibiscus Cafe: Chennai",
+    language: "English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "",
+    price: "₹799",
+    aboutFull:
+      "Join us for a delightful Pizza Playdate at Hibiscus! Perfect for ages 5 and up, this hands-on workshop promises fun for all. Allow your little ones to experience the delight of crafting tasty and nutritious pizzas alongside our skilled chefs. They will discover a variety of dough and sauce recipes, as well as learn techniques for preparing and cooking toppings. Don’t miss this cheesy adventure! Our chefs will provide expert guidance throughout the entire process, from rolling out the dough to baking their ideal pizza!",
+  },
+  {
+    id: 20,
+    EventsCalendarTitle: "Cake Baking and Frosting Workshop",
+    EventsCalendarContent:
+      "Our workshop offers comprehensive learning for aspiring bakers,....",
+    EventsCalendarMonth: "13 Aug 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Education, Food and Drinks, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/134.jpg",
+    link: "",
+    location: "Reema's Swad Cooking Classes: Chennai",
+    language: "English",
+    hours: "10 Hours",
+    ageLimit: "16yrs +",
+    price: "₹4000",
+    aboutFull:
+      "Our workshop offers comprehensive learning for aspiring bakers, covering baking basics such as understanding baking science, accurate ingredient measurement, and mastering oven preheating and temperature settings. You’ll learn how to use an OTG effectively, including selecting trays, molds, and liners, and managing temperature and timing. Master techniques for baking moist and fluffy cupcakes and cakes in a variety of flavors like vanilla, pineapple, strawberry, butterscotch, chocolate, tutti frutti, orange, and litchi. Learn frosting techniques including rosettes, swirls, and color/flavor customization for different themes. Explore signature cakes and pastries such as pineapple pastry, black forest pastry, chocolate truffle with ganache, photo cakes, Barbie doll cakes, choco lava cakes, red velvet cake, and blueberry cake. Discover decorating techniques like elegant feather and drip designs, edible flowers, sprinkles, and creative accents, while mastering the use of piping bags, spatulas, and scrapers. By the end of the workshop, you’ll have the skills and confidence to bake and decorate cakes for any occasion. The class highlights include practical, hands-on sessions, personal attention to each student, printed recipe notes, exclusive offline classes for girls and ladies, all materials provided, and an online option also available.",
+  },
+  {
+    id: 21,
+    EventsCalendarTitle: "Hand Built Pottery",
+    EventsCalendarContent:
+      "Step into the world of tactile creativity at Clay Play...",
+    EventsCalendarMonth: "12 Aug 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/133.jpg",
+    link: "",
+    location: "Dices And Drama: Chennai",
+    language: "Bengali, English, Hindi, Kannada, Malaya...",
+    hours: "1 Hour",
+    ageLimit: "All age groups",
+    price: "₹899 onwards",
+    aboutFull:
+      "Step into the world of tactile creativity at Clay Play Day, an immersive event designed for you to explore the joys of pottery without boundaries. Perfect for beginners and enthusiasts alike, this event invites you to dive into hand-built clay modeling in a free-form, unguided environment. Get your hands dirty and let your creativity flow as you shape clay using only your hands, knives, and brushes—without structured guidance. All supplies, including high-quality clay and sculpting tools, are provided; just bring your imagination and willingness to explore. Whether you want to unwind, try a new hobby, or spend a day doing something different, Clay Play Day offers a meditative escape into the art of hand-building with clay. Please note, this is not a wheel pottery workshop.",
+  },
+  {
+    id: 22,
+    siteLink:
+      "https://in.bookmyshow.com/events/one-direction-tribute-directioners-rave/ET00452486",
+    EventsCalendarTitle: "ONE DIRECTION TRIBUTE -ECHOES OF PAYNO",
+    EventsCalendarContent:
+      "It’s Liam Day, babe—our guardian angel is turning a year older!...✨",
+    EventsCalendarMonth: "30 Aug 2025",
+    EventsCalendarTime: "2:30 PM",
+    EventsCalendarCategory: "Club Gigs, Music Shows, Pop",
+    image: "/images/HomePage-Images/Events/Newevents/132.jpg",
+    link: "",
+    location: "Venue To Be Announced: Chennai",
+    language: "English",
+    hours: "5 Hours",
+    ageLimit: "All age groups",
+    price: "₹450",
+    aboutFull:
+      "It’s Liam Day, babe—our guardian angel is turning a year older! This August 30, we’re celebrating Daddy Direction—the calm in our chaos, the one who kept the doors locked and our hearts full. Get ready for 4 hours of dancing, soft boy tears, and screaming every Liam line like it’s 2013 again—from Little Things to Strip That Down, we’re giving him the love he’s always given us. Venue to be announced, starting at 2:30 PM (be on time—Liam’s watching). Tickets are ₹450 with no cover charge. It’s giving Tumblr moodboards, “Hi angel” texts, plaid shirts, and that one Liam smile that saved your life. You coming or what?",
+  },
+  {
+    id: 23,
+    EventsCalendarTitle: "Midweek Masala - Weekday comedy show",
+    EventsCalendarContent:
+      "Waiting for the weekend for some good comedy? Well,...",
+    EventsCalendarMonth: "13 Aug 2025",
+    EventsCalendarTime: "8:30 PM",
+    EventsCalendarCategory: "Stand up Comedy, Comedy Shows, Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/131.jpg",
+    link: "",
+    location: "Trinity Studio: Kodambakkam",
+    language: "English, Tamil",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16yrs +",
+    price: "₹200 onwards",
+    aboutFull:
+      "Waiting for the weekend for some good comedy? Well, you don't have to! We present you weekday comedy show where best comics of Chennai do their new & working material.",
+  },
+  {
+    id: 24,
+    siteLink:
+      "https://www.instagram.com/thehindu_madeofchennai/reel/DNcjjafgVvo/?hl=en",
+    EventsCalendarTitle: "The Hindu – Made of Chennai",
+    EventsCalendarContent:
+      "When music meets food, it turns into more than just an event...",
+    EventsCalendarMonth: "13 – 14 Nov, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Music, Concerts",
+    image: "/images/HomePage-Images/Events/Newevents/169.jpg",
+    link: "",
+    location: "YMCA, Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    price: "₹899 onwards",
+    aboutFull: `
+      <p>When music meets food, it turns into more than just an event — it becomes a true celebration of Chennai! With soulful tunes, mouthwatering flavours, and the city’s vibrant spirit, this festival brings Chennai alive like never before.</p>
+      
+      <p>Organised By</p>
+      <p>The Hindu – Made of Chennai</p>
+      <p>Entry & Registration
+Entry is free for all, but prior registration is mandatory. Registrations open on 8 September — secure your spot early and don’t miss this grand Chennai celebration!</p>
+      `,
+  },
+  {
+    id: 25,
+    EventsCalendarTitle: "Reema Swad Cooking Classes",
+    EventsCalendarContent:
+      "Reema V Jain is an avid and passionate chef who....",
+    EventsCalendarMonth: "16 Aug, 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/129.jpg",
+    link: "/eventsmain",
+    location: "Reema's Swad Cooking Classes: Chennai",
+    language: "English",
+    hours: "3 Hours",
+    ageLimit: "16yrs +",
+    price: "Price Not Specified",
+    aboutFull:
+      "Reema V Jain is an avid and passionate chef who has been teaching cooking and baking to women. She has had students from more than 12 countries and 70+ cities and has conducted over 550 workshops. She has also been featured in leading newspapers and conducts online workshops for more than 30 types of courses.",
+  },
+
+  {
+    id: 26,
+    EventsCalendarTitle: "Chalta Hai Comedy",
+    EventsCalendarContent:
+      "Stories from his childhood home to his first MNC job after...",
+    EventsCalendarMonth: "15 Aug, 2025 ",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/HomePage-Images/Events/Newevents/128.jpg",
+    link: "/eventsmain",
+    location: "Multiple Venues",
+    language: "English, Hindi",
+    hours: "",
+    ageLimit: "",
+    price: "Price Not Specified",
+    aboutFull:
+      "Stories from his childhood home to his first MNC job after graduation, this show gets more personal, more awkward and even more hilarious. Is show ko dekhne k baad aap samjah jayengey ki embarrassing aur tragic situations mei fasna Aakash ka daily ka kaam hai. So get ready to LOL and fall off your chairs because you are signing up for something totally worth it. “Ye about the show ka paragraph likhna apne ek ghante ka show banana se bhi zada tough lagta hai” : Aakash",
+  },
+  {
+    id: 27,
+    EventsCalendarTitle: "Daily Ka Kaam Hai By Aakash Gupta",
+    EventsCalendarContent:
+      "From stories about his childhood home to his first MNC job...",
+    EventsCalendarMonth: "17 Aug, 2025 ",
+    EventsCalendarTime: "Not Specified",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/HomePage-Images/Events/Newevents/127.jpg",
+    link: "/eventsmain",
+    location: "Multiple Venues",
+    language: "English, Hindi",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16yrs +",
+    price: "Price Not Specified",
+    aboutFull:
+      "From stories about his childhood home to his first MNC job after graduation, this show gets increasingly personal, awkward, and hilarious. After watching it, you’ll realize that getting caught in embarrassing and tragic situations is just a part of Aakash’s everyday life. So get ready to laugh out loud and maybe even fall off your chair, because you’re signing up for an experience that’s totally worth it. As Aakash says, “Writing this show’s description feels even tougher than creating my one-hour performance.”",
+  },
+  {
+    id: 28,
+    EventsCalendarTitle: "Oriole Entertainment Live",
+    EventsCalendarContent:
+      "Oriole Entertainment is the pioneer of Tier 2 and Tier 3...",
+    EventsCalendarMonth: "12 Aug, 2025",
+    EventsCalendarTime: "Not Specified",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/HomePage-Images/Events/Newevents/126.jpg",
+    link: "/eventsmain",
+    location: "Multiple Venues",
+    language: "English, Hindi",
+    hours: "Not Specified",
+    ageLimit: "Not Specified",
+    price: "Price Not Specified",
+    aboutFull:
+      "Oriole Entertainment is the pioneer of Tier 2 and Tier 3 city comedy shows. They have been dedicated to making people laugh since 2017 and plan to do it for the rest of their lives. They are most popularly known as the house of Anubhav Singh Bassi and Harsh Gujral. Their shows have made people chuckle in cities like Agra, Gurugram, Lucknow, Kanpur, Dehradun and many more. Oriole Entertainment Pvt Ltd was founded by Ankur Bhargava.",
+  },
+  {
+    id: 29,
+    EventsCalendarTitle: "Comedy Ladder",
+    EventsCalendarContent:
+      "Comedy Ladder is the mothership of everything comedy. Founded in...",
+    EventsCalendarMonth: "15 Aug, 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/HomePage-Images/Events/Newevents/125.jpg",
+    link: "/eventsmain",
+    location: "The Integral Space: Mumbai",
+    language: "English, Hindi",
+    hours: "",
+    ageLimit: "",
+    price: "Price Not Specified",
+    aboutFull:
+      "Comedy Ladder is the mothership of everything comedy. Founded in 2016 and now in its 7th year, Comedy Ladder has built a strong reputation with shows across India in venues such as NCPA Mumbai, Integral Space Mumbai, Jeff Goldberg Studio Mumbai, Happy High Delhi, and many more. It is not just a launchpad but also a stage for comics to perform their one-hour solo shows. Comedy Ladder collaborates with some of the biggest names in the industry including Aditi Mittal, Jeeya Sethi, Shreeja Chaturvedi, Sumaira Shaikh, Niv Prakasam, Sumukhi Suresh, Prashasti Singh, Kajol Srinivasan, Sonali Thakker, Pavitra Shetty, Gurleen Pannu, Sherya Priyam Roy, Biswa Kalyan Rath, Siddharth Dudeja, Kunal Kamra, Chirag Punjwani, Ashish Dash, Anand Reghu, Shridhar V, Navin Noronha, and many more. With over 2000 shows, Comedy Ladder is a household name in the comedy industry.",
+  },
+  {
+    id: 30,
+    EventsCalendarTitle: "Summer Camp for Kids",
+    EventsCalendarContent:
+      "Hamleys play breathes in a whole new life to the traditional....",
+    EventsCalendarMonth: "11 Aug, 2025",
+    EventsCalendarTime: "4:00 PM",
+    EventsCalendarCategory: "Kids",
+    image: "/images/HomePage-Images/Events/Newevents/124.jpg",
+    link: "/eventsmain",
+    location: "Online",
+    language: "English, Hindi",
+    hours: "1 Hour",
+    ageLimit: "3-10 yrs",
+    price: "₹3000",
+    aboutFull:
+      "Hamleys play breathes in a whole new life to the traditional idea of play & infuses the liveliness of outdoors and the never-ending elusiveness of the fantasies of a child’s mind. Welcome to the world of Mr & Mrs. Hopper who will take you through their private garden that is filled with adventure. The garden includes the Musical Wall, Ball Pool, Slides, Scarf shooters, Sand Play, Rock climbing, Water Play & many more fun-filled activities. It also has a dedicated space for Storytelling & DIY activities. ",
+  },
+  {
+    id: 31,
+    EventsCalendarTitle: "Magic Beans Online Kids Workshops",
+    EventsCalendarContent:
+      "Magic Beans is an activity centre, daycare & toy library....",
+    EventsCalendarMonth: "12 Aug, 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/123.jpg",
+    link: "/eventsmain",
+    location: "Magic Beans - Kemps Corner, Mumbai",
+    language: "English",
+    hours: "45 Minutes",
+    ageLimit: "",
+    price: "Price Not Specified",
+    aboutFull:
+      "Magic Beans is an activity centre, daycare & toy library, based in Mumbai, catering specifically to the development of 1 year to 6 year olds.",
+  },
+  {
+    id: 32,
+    EventsCalendarTitle: "Hamleys Play & Hamleys Playzone",
+    EventsCalendarContent:
+      "Breathing in a whole new life to the traditional idea of play,...",
+    EventsCalendarMonth: "11 Aug, 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Kids",
+    image: "/images/HomePage-Images/Events/Newevents/122.jpg",
+    link: "/eventsmain",
+    location: "Multiple Venues",
+    language: "English, Hindi",
+    hours: "1 Hour",
+    ageLimit: "Kids",
+    price: "Price Not Specified",
+    aboutFull:
+      "Breathing in a whole new life to the traditional idea of play, Hamleys play Area infuses the liveliness of the outdoor and the never-ending elusiveness of the fantasies of a child’s mind. ",
+  },
+  {
+    id: 33,
+    siteLink:
+      "https://www.district.in/events/sid-sriram-live-in-concert-chennai-november-2025-buy-tickets",
+    EventsCalendarTitle: "Sid Sriram Live in Concert | Chennai",
+    EventsCalendarContent:
+      "Some voices don’t just sing, they heal — and Sid Sriram’s voice is...",
+    EventsCalendarMonth: "29 Nov, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Music, Concerts",
+    image: "/images/HomePage-Images/Events/Newevents/171.jpg",
+    link: "",
+    location: "YMCA, Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    price: "₹899 onwards",
+    aboutFull: `
+      <p>Some voices don’t just sing, they heal — and Sid Sriram’s voice is one of them. His concerts are more than just stage performances; they are soulful journeys where every song feels personal, yet connects to thousands at once. With his unique ability to blend classical depth, contemporary energy, and heartfelt emotions, Sid creates a musical atmosphere that feels raw, pure, and magical. The way his voice flows between languages and genres makes each moment unforgettable, touching both the heart and soul.</p>
+      
+      <p>From gentle melodies that bring goosebumps to powerful live jams that electrify the crowd, every note from Sid Sriram is an experience on its own. His music is not just heard, it is felt — in the silence between beats, in the harmony of emotions, and in the collective energy of the audience singing along. Step into this unforgettable night and witness how sound transforms into emotion, rhythm turns into memory, and a concert becomes a celebration of music itself. ✨</p>
+      `,
+  },
+  {
+    id: 34,
+    EventsCalendarTitle: "Dreamcatcher Workshop",
+    EventsCalendarContent:
+      "Here’s our beginner-friendly art workshop where our instructor...",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/120.jpg",
+    link: "/eventsmain",
+    location: "House of Games, Kilpauk, Chennai",
+    language: "English, Tamil",
+    hours: "1 hour 30 minutes",
+    ageLimit: "All age groups",
+    price: "₹1599",
+    aboutFull:
+      "Here’s our beginner-friendly art workshop where our instructor will guide you step-by-step, helping you comfortably navigate the entire creative process at your own pace. All materials and tools are provided so you can focus on your art. The workshop offers flexible duration—some participants finish quickly, while others take their time; all are welcome to create at their own rhythm. Whether you come solo, as a couple, with friends, or family, enjoy a relaxed and creative space that offers a calming, expressive escape from routine. Refreshments are provided with 50% of your venue payment returned as food credit, making it a treat for both your mind and taste buds. Personalized attention is available in small group formats of 1:1, 2:1, or 3:1 for a focused and interactive experience. Leave the workshop not just with new skills but with your own handmade masterpiece. Prior registration is needed; for queries, please contact the café.",
+  },
+  {
+    id: 35,
+    EventsCalendarTitle: "Paal Payasam Live",
+    EventsCalendarContent:
+      "Join us for a delightful evening with 'Paal Payasam Live....",
+    EventsCalendarMonth: "15 Aug, 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Music Shows",
+    image: "/images/HomePage-Images/Events/Newevents/119.jpg",
+    link: "/eventsmain",
+    location: "Arena - The Art Experience, Chennai",
+    language: "Tamil, English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "All age groups",
+    price: "₹399 onwards",
+    aboutFull:
+      "Join us for a delightful evening with 'Paal Payasam Live' - a band of young musicians from Chennai. Hosted by Arena - The Art Experience, ECR's brand new cultural hub, this event features a menu of live music paired with a side of theatrical flair. We'll be serving up tributes to the legendary musicians of Tamil cinema alongside our own original compositions, all spiced with drama and garnished with comedy. What are you waiting for? Grab your tickets now!",
+  },
+  {
+    id: 36,
+    siteLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdklrpjtrzRgr_LhmH_zXf4tfu70NJZ18nuUd9vObd03KvT1w/viewform",
+    EventsCalendarTitle: "Chennai Bus Treasure Hunt",
+    EventsCalendarContent:
+      "Ever wondered what beauty lies just beneath the surface?....",
+    EventsCalendarMonth: "30 Aug, 2025",
+    EventsCalendarTime: "10:00 AM",
+    EventsCalendarCategory: "Treasure Hunt",
+    image: "/images/HomePage-Images/Events/Newevents/170.jpg",
+    link: "",
+    location: " MTC Headquarters, Pallavan Salai, Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    price: "₹899 onwards",
+    aboutFull: `
+      <p>Get ready, Chennai! 🎉 The MTC Bus Treasure Hunt is back this Madras Month, bringing you an exciting adventure across the city. Starting from the iconic MTC Headquarters (Pallavan House), participants will embark on a fun-filled treasure hunt packed with clues, challenges, and surprises along the way.</p>
+      
+      <p>It’s not just about the thrill of the chase — there are amazing cash prizes waiting for the winners. Whether you’re in it for the fun, the challenge, or the reward, this event promises to be one-of-a-kind. Bring your team spirit, quick thinking, and love for Chennai as you join this unique celebration.</p>
+      
+      <p><strong>🏆 Cash Prizes Await:</strong></p>
+      <p><strong>🥇 1st Prize – ₹10,000</strong></p>
+      <p><strong>🥈 2nd Prize – ₹6,000</strong></p>
+      <p><strong>🥉 3rd Prize – ₹4,000</strong></p>
+      <p>👉 To register, simply scan the QR code and secure your spot in the hunt!</p>
+    `,
+  },
+  {
+    id: 37,
+    EventsCalendarTitle: "MSV - Ninaithale Inikkum",
+    EventsCalendarContent:
+      "Naveen Fine Arts proudly presents 'Ninaithale Inikkum,' a grand musical...",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Music Shows",
+    image: "/images/HomePage-Images/Events/Newevents/117.jpg",
+    link: "/eventsmain",
+    location: "Raja Annamalai Mandram, Chennai",
+    language: "Tamil",
+    hours: "3 Hours",
+    ageLimit: "All age groups",
+    price: "₹300 onwards",
+    aboutFull:
+      "Naveen Fine Arts proudly presents 'Ninaithale Inikkum,' a grand musical tribute to the legendary M.S. Viswanathan. Get ready for a mesmerizing evening of timeless melodies as the playback singer Malathi Lakshman takes the stage to recreate the magic of MSV's unforgettable tunes. This event promises to be a soul-stirring musical experience that will transport you back to the golden era of Tamil music, accompanied by the Ram in Paadum Vaanampaadi Orchestra.",
+  },
+  {
+    id: 38,
+    siteLink: "https://in.bookmyshow.com/events/sgraffito-pottery/ET00449867",
+    EventsCalendarTitle: "Scratch Pottery",
+    EventsCalendarContent:
+      "Ever wondered what beauty lies just beneath the surface?....",
+    EventsCalendarMonth: "12 Aug – 19 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/147.jpg",
+    link: "",
+    location: "Small World: S.T. Bed, Koramangala",
+    language: "English, Hindi",
+    hours: "2 Hours",
+    ageLimit: "All age groups",
+    price: "₹899 onwards",
+    aboutFull:
+      "Ever wondered what beauty lies just beneath the surface? Join us for a hands-on Sgraffito Workshop, where you’ll carve through layers of color to reveal stunning contrasts and patterns. This ancient art form, used in pottery, murals, and design, teaches us that sometimes uncovering depth takes just a little scratch. You’ll learn how to layer pigments or slips, master techniques to etch your own designs, and explore the philosophy of “subtracting to reveal.” Whether you’re a seasoned creator or a curious beginner, this workshop is all about mindfulness, expression, and uncovering hidden beauty.",
+  },
+  {
+    id: 39,
+    EventsCalendarTitle: "Crochet Workshop",
+    EventsCalendarContent:
+      "Happy Crocheting! ❤️ Here’s our beginner-friendly....",
+    EventsCalendarMonth: "17 Aug 2025",
+    EventsCalendarTime: "4:30 PM",
+    EventsCalendarCategory: "Arts and Crafts, Home Decor, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/148.jpg",
+    link: "",
+    location: "House of Games, Kilpauk: Chennai",
+    language: "English, Tamil",
+    hours: "2 Hours",
+    ageLimit: "12yrs +",
+    price: "₹1999",
+    aboutFull:
+      "Happy Crocheting! ❤️ Here’s our beginner-friendly art workshop where our instructor will guide you step-by-step, helping you comfortably navigate the creative process at your own pace. All materials are provided, and you can work at a flexible pace — finish quickly or take your time. Enjoy a relaxed, creative space whether you come solo, as a couple, with friends, or family, and get 50% of your venue payment back as food credit to enjoy delicious refreshments while you create. With 1:1, 2:1, or 3:1 formats, you’ll receive personalized attention in a small group setting, and leave with new skills and your own handmade masterpiece. Prior registration needed; for queries contact the café.",
+  },
+  {
+    id: 40,
+    siteLink: "https://in.bookmyshow.com/events/epic-date-pass/ET00429104",
+    EventsCalendarTitle: "Epic Date Pass",
+    EventsCalendarContent:
+      "Discover the magic of connection with our all-date event...",
+    EventsCalendarMonth: "16 Aug – 31 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/114.jpg",
+    link: "/eventsmain",
+    location: "Dices And Drama, Chennai",
+    language: "English",
+    hours: "5 Hours",
+    ageLimit: "All age groups",
+    price: "₹2999",
+    aboutFull:
+      "Discover the magic of connection with our all-date event pass! Join us for a day packed with laughter, inspiration, and camaraderie at Small World, where a tapestry of unique events and experiences weave together stories and create lasting bonds. Get access to all our in-house date events like baking, canvas painting, candle making, pottery, and more, engaging in activities that spark your creativity and challenge your comfort zone. The Epic Date Pass includes a parade of interactive and heartwarming artistic, musical, and social events, offering endless moments of joy as you connect with fellow explorers. Let’s create a mosaic of memories, spark meaningful connections, and share stories that we’ll laugh about for years to come. Limited spots available for this intimate gathering—where every moment celebrates togetherness.",
+  },
+  {
+    id: 41,
+    EventsCalendarTitle: "Theatre Workshop for Kids",
+    EventsCalendarContent:
+      "Theatre is a powerful space for children to truly...",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "10:00 AM",
+    EventsCalendarCategory: "Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/113.jpg",
+    link: "/eventsmain",
+    location: "IDAM - The Art & Cultural Space, Chennai",
+    language: "English",
+    hours: "3 Hours",
+    ageLimit: "5yrs +",
+    price: "₹1499",
+    aboutFull:
+      "Theatre is a powerful space for children to truly be themselves. It helps them overcome fear, build patience, learn respect and responsibility, improve communication, and much more. Whether telling a story, speaking to an audience, or becoming a character, theatre opens up a world of possibilities. Children will explore their emotional range through facial expressions, discover the power of non-verbal communication through gestures and movement, learn to use their voices confidently, and build engaging stories through oral storytelling. Workshop benefits include improved communication and stage presence, increased self-confidence through group interaction, exposure to the joy and energy of drama, creative expression through writing and performance, and simple techniques for storytelling. The workshop will be held at IDAM, Kodambakkam, on 17th August from 10 am to 1 pm, for children aged 5 to 13 years, limited to 15 participants. Join us for a day of discovery, creativity, and fun where children grow through drama and storytelling!",
+  },
+  {
+    id: 42,
+    siteLink:
+      "https://in.bookmyshow.com/events/comedy-sabha-presented-by-tanglishcomedy/ET00342723",
+    EventsCalendarTitle: "Comedy Sabha by @tanglishcomedy",
+    EventsCalendarContent:
+      "Standup comedy you've watched on YouTube, reels, TV,....",
+    EventsCalendarMonth: "13 Aug – 29 Oct, 2025",
+    EventsCalendarTime: "7:30 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/HomePage-Images/Events/Newevents/112.jpg",
+    link: "/eventsmain",
+    location: "Superstar Pizza, Besant Nagar, Chennai",
+    language: "Tamil, English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "8yrs +",
+    price: "₹150",
+    aboutFull:
+      "Standup comedy you've watched on YouTube, reels, TV, and even OTT apps — but have you experienced it live, in front of an energetic audience, laughing and clapping along? If you want to see that, come to the mini-show Comedy Sabha! Comedy Sabha is a 75-minute comedy mini-show featuring a mix of standup and sketch comedy in Tamil, English, and Tanglish. The show includes new, experienced, and professional comedians performing one after another, hosted by a lively MC who keeps the energy high throughout. It’s an electrifying atmosphere where all your mid-week work-life stress melts away. For just 150 rupees, enjoy a pakka paisa vasool experience on a Wednesday! Book now!",
+  },
+  {
+    id: 43,
+    EventsCalendarTitle: "Midweek Masala - Weekday comedy show",
+    EventsCalendarContent: "Waiting for the weekend for some good comedy?....",
+    EventsCalendarMonth: "13 Aug, 2025",
+    EventsCalendarTime: "8:30 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/HomePage-Images/Events/Newevents/111.jpg",
+    link: "/eventsmain",
+    location: "Trinity Studio, Kodambakkam",
+    language: "English, Tamil",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16yrs +",
+    price: "₹200 onwards",
+    aboutFull:
+      "Waiting for the weekend for some good comedy? Well, you don’t have to! We present you weekday comedy show where best comics of Chennai do their new & working material. (Limited car parking at the venue please prefer bike or public transport)",
+  },
+  {
+    id: 44,
+    EventsCalendarTitle: "Candle Making Workshop",
+    EventsCalendarContent:
+      "A creative workshop to learn how to make beautiful, handcrafted candles using various techniques and styles.",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/110.jpg",
+    link: "/eventsmain",
+    location: "Hibiscus Cafe, Chennai",
+    language: "English, Tamil",
+    hours: "2 Hours",
+    ageLimit: "12yrs +",
+    price: "₹1199",
+    aboutFull:
+      "Learn how to make beautiful handmade candles at our candle making workshop! You'll have the opportunity to create several candles, experimenting with different techniques and styles. Our expert instructor will provide tips and tricks to ensure your candles burn evenly and smell amazing. By the end of the session, you'll take home your handcrafted creations and the skills to continue making candles on your own!",
+  },
+  {
+    id: 45,
+    EventsCalendarTitle: "Macrame Workshop",
+    EventsCalendarContent:
+      "Here’s our beginner-friendly art workshop designed...",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/109.jpg",
+    link: "/eventsmain",
+    location: "House of Games, Kilpauk, Chennai",
+    language: "English, Tamil",
+    hours: "1 hour 30 minutes",
+    ageLimit: "10yrs +",
+    price: "₹1599",
+    aboutFull:
+      "Here’s our beginner-friendly art workshop designed to offer hands-on guidance with an instructor who will walk you step-by-step through the creative process at your own pace. All materials and tools are provided so you can focus fully on your art. The duration is flexible—whether you finish quickly or prefer to take your time, you can create at your own rhythm. This relaxed, creative space welcomes solo attendees, couples, friends, or families, providing a calming and expressive escape from routine. Refreshments are included, with 50% of your venue payment returned as food credit, making it a treat for both mind and taste buds. Personalized attention is offered in small group formats of one-on-one, two-on-one, or three-on-one to enhance interaction and focus. You’ll leave the workshop not only with new skills but also with your own handmade masterpiece. Prior registration is needed; for queries, please contact the café.",
+  },
+  {
+    id: 46,
+    EventsCalendarTitle: "MUSICAL QUEENS - Celebrating 7 Golden Voices",
+    EventsCalendarContent: "ABBAS Cultural presents 'MUSICAL QUEENS....",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Music Shows",
+    image: "/images/HomePage-Images/Events/Newevents/108.jpg",
+    link: "/eventsmain",
+    location: "Vani Mahal, Chennai",
+    language: "Tamil",
+    hours: "2 hours 30 minutes",
+    ageLimit: "5yrs +",
+    price: "₹300 onwards",
+    aboutFull:
+      "ABBAS Cultural presents 'MUSICAL QUEENS - CELEBRATING 7 GOLDEN VOICES OF TAMIL CINEMA.' Join for a soul-stirring musical celebration honoring the legendary female playback singers P. Susheela, L.R. Eswari, S. Janaki, Vani Jayaram, Jency, Swarnalatha & K.S. Chitra, whose voices have become eternal treasures in our hearts. The event is a tribute to their timeless songs and contributions to Tamil cinema music.",
+  },
+  {
+    id: 47,
+    EventsCalendarTitle: "Vikkals Comedy Cafe",
+    EventsCalendarContent: "Open mic nights are where OG standup comics.....",
+    EventsCalendarMonth: "14 Aug, 2025",
+    EventsCalendarTime: "8:30 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/HomePage-Images/Events/Newevents/107.jpg",
+    link: "/eventsmain",
+    location: "The Board Room, Anna Nagar, Chennai",
+    language: "Tamil, English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16yrs +",
+    price: "₹200 onwards",
+    aboutFull:
+      "Open mic nights are where OG standup comics and amateur open mic-ers come together to try out their new jokes. It’s a stage where you can spill your emotions with humor. Rs. 100 from the ticket price can be reimbursed on food and beverages as sides for the mains—entertainment included. Tickets are for audience only; performers must register separately.",
+  },
+  {
+    id: 48,
+    EventsCalendarTitle: "Unplugged Melody Ft. Aadithya and Ramya",
+    EventsCalendarContent: "Get ready for an enchanting evening of soulful...",
+    EventsCalendarMonth: "14 Aug – 28 Aug, 2025",
+    EventsCalendarTime: "8:30 PM",
+    EventsCalendarCategory: "Music Shows",
+    image: "/images/HomePage-Images/Events/Newevents/106.jpg",
+    link: "/eventsmain",
+    location: "Hard Rock Cafe, Nungabakkam, Chennai",
+    language: "Tamil, Hindi, Malayalam",
+    hours: "2 Hours",
+    ageLimit: "21yrs +",
+    price: "₹0",
+    aboutFull:
+      "Get ready for an enchanting evening of soulful melodies and acoustic brilliance at Unplugged Melody Night, featuring the powerful vocal duo Aadithya SM and Ramya RamC, accompanied by the supremely talented guitarist Srinivas. Aadithya SM, a passionate vocalist since childhood, rose to fame through the reality show Rajaparvai and has performed alongside top playback singers like Yuvan Shankar Raja and Karthik. He is a regular at prestigious audio launches and live concerts, including events like Ponniyin Selvan and performances with artists such as Vijay Antony. Ramya RamC is a seasoned playback singer, dubbing artist, and international performer who has lent her voice to music by award-winning composers like Jake's Bejoy, GV Prakash, and Sam CS. Her recent work features in the Malayalam blockbuster Officer On Duty, starring Kunchacko Boban and Priyamani. Srinivas, with over a decade of experience, is an acclaimed session guitarist known for his performances on Sa Re Ga Ma Pa and training under the legendary Ilayaraja's personal guitarist, Sada Master. Let the music take over as these artists bring you a night of intimate, unplugged magic—only at Hard Rock Cafe Chennai.",
+  },
+  {
+    id: 49,
+    siteLink: "https://in.bookmyshow.com/events/rage-therapy/ET00456435",
+    EventsCalendarTitle: "Rage Therapy",
+    EventsCalendarContent:
+      "Rage Therapy – Break. Heal. Repeat. Ever felt like smashing...",
+    EventsCalendarMonth: "12 Aug – 14 Sep, 2025",
+    EventsCalendarTime: "1:00 PM",
+    EventsCalendarCategory: "Health and Fitness",
+    image: "/images/HomePage-Images/Events/Newevents/105.jpg",
+    link: "/eventsmain",
+    location: "Dices And Drama, Chennai",
+    language: "Bengali, English, Hindi, Kannada, Malayalam...",
+    hours: "1 Hour",
+    ageLimit: "All age groups",
+    price: "₹999",
+    aboutFull:
+      "Rage Therapy – Break. Heal. Repeat. Ever felt like smashing something to let it all out? At Rage Therapy, we hand you ceramic pots and a safe space to release every ounce of pent-up frustration—by breaking them! But that’s not all—after the rage comes the repair. Using the Japanese art of Kintsugi, you`ll piece your broken items back together, turning cracks into golden lines of healing. Come for the catharsis. Stay for the transformation. No judgment. Just joy in destruction—and beauty in mending.",
+  },
+  {
+    id: 50,
+    siteLink: "https://in.bookmyshow.com/events/clay-play-day/ET00399728",
+    EventsCalendarTitle: "Mini Clay Planters",
+    EventsCalendarContent:
+      "A hands-on workshop to design and sculpt your own unique miniature clay planters from scratch.",
+    EventsCalendarMonth: "16 Aug – 31 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/104.jpg",
+    link: "/eventsmain",
+    location: "Dices And Drama, Chennai",
+    language: "English, Hindi",
+    hours: "4 Hours",
+    ageLimit: "All age groups",
+    price: "₹1299 onwards",
+    aboutFull:
+      "Join us for a hands-on workshop where you`ll design and sculpt your very own miniature clay planters from scratch. Learn the basics of clay modeling, shaping, and texturing while crafting cute, functional art pieces perfect for succulents, desk décor, or gifting.",
+  },
+  {
+    id: 51,
+    siteLink:
+      "https://in.bookmyshow.com/events/mandala-art-meditation/ET00376767",
+    EventsCalendarTitle: "Dot Mandala Art",
+    EventsCalendarContent:
+      "An immersive and therapeutic mandala art workshop focused on self-discovery, where participants can design intricate mandalas and find inner peace.",
+    EventsCalendarMonth: "12 Aug – 31 Aug, 2025",
+    EventsCalendarTime: "3:30 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/103.jpg",
+    link: "/eventsmain",
+    location: "Nosh And Natter, Pune",
+    language: "Bengali, English, Hindi, Kannada, Malayalam...",
+    hours: "1 hour 30 minutes",
+    ageLimit: "18yrs +",
+    price: "₹399 onwards",
+    aboutFull:
+      "Embark on a journey of self-discovery with this unique Mandala Art workshop. Focusing on the therapeutic art of creating mandalas, the session allows you to immerse yourself in a calm and creative space. Through the process of designing intricate mandalas, you can embrace a mindful and artistic experience, find serenity, and express yourself creatively. This workshop nurtures creativity and inner peace, leaving you feeling refreshed and inspired.",
+  },
+  {
+    id: 52,
+    siteLink:
+      "https://in.bookmyshow.com/events/tote-bag-painting-party/ET00370989",
+    EventsCalendarTitle: "Tote Bag Painting",
+    EventsCalendarContent:
+      "Unleash your creativity at our Tote Bag Painting Workshop...",
+    EventsCalendarMonth: "12 Aug – 14 Sep, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/102.jpg",
+    link: "/eventsmain",
+    location: "Dices And Drama, Chennai",
+    language: "English, Hindi, Bengali",
+    hours: "1 hour 30 minutes",
+    ageLimit: "All age groups",
+    price: "₹899 onwards",
+    aboutFull:
+      "Unleash your creativity at our Tote Bag Painting Workshop at Small World! This engaging workshop is perfect for expressing yourself by designing a unique, eco-friendly tote bag. Whether you’re an experienced artist or a beginner, enjoy creative exploration with colors, patterns, and painting techniques guided by our expert instructor. All materials, including blank tote bags, fabric paints, brushes, and stencils, are provided so you can focus on your art. Leave with your own beautifully painted tote bag to use or gift. The workshop offers a relaxing, inspiring environment to unwind and connect with fellow creatives. Reserve your spot today and bring your artistic vision to life!",
+  },
+  {
+    id: 53,
+    EventsCalendarTitle: "Cuff And Paint",
+    siteLink: "https://in.bookmyshow.com/events/cuff-and-paint/ET00457713",
+    EventsCalendarContent: "Get ready for the quirkiest art date ever!...",
+    EventsCalendarMonth: "11 Aug – 27 Aug, 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/101.jpg",
+    link: "/eventsmain",
+    location: "Wiggle Room, Chennai",
+    language: "English, Tamil",
+    hours: "1 hour 15 minutes",
+    ageLimit: "18yrs +",
+    price: "₹1600",
+    aboutFull:
+      "Get ready for the quirkiest art date ever! In Cuff & Paint, you and your partner will be handcuffed together and guided through a fun, messy, and unforgettable art session. Please note—one ticket is for a couple. Why cuffed? Because great art (and great memories) are made with a little chaos and a lot of teamwork! Whether it’s your best friend, partner, or a curious stranger, you’ll share laughs, spills, and strokes as you co-create a one-of-a-kind canvas. No experience needed. Just show up, cuff up, and paint your story!",
+  },
+  {
+    id: 54,
+    EventsCalendarTitle: "Oorellam Un Pattu - Angingu",
+    EventsCalendarContent: "Oorellam Un Pattu – Angingu is a 100% manual...",
+    EventsCalendarMonth: "15 Aug, 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Music Shows",
+    image: "/images/HomePage-Images/Events/Newevents/100.jpg",
+    link: "/eventsmain",
+    location: "Raja Annamalai Mandram, Chennai",
+    language: "Tamil",
+    hours: "3 Hours",
+    ageLimit: "All age groups",
+    price: "₹380 onwards",
+    aboutFull:
+      "Oorellam Un Pattu – Angingu is a 100% manual orchestra designed for an enjoyable experience with your family and friends.",
+  },
+  {
+    id: 55,
+    EventsCalendarTitle: "Waffle Making Workshop",
+    EventsCalendarContent:
+      "A direct offline class where you can learn to make delicious vegetarian and eggless waffles.",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Food and Drinks",
+    image: "/images/HomePage-Images/Events/Newevents/99.jpg",
+    link: "/eventsmain",
+    location: "Reema's Swad Cooking Classes, Chennai",
+    language: "English",
+    hours: "3 Hours",
+    ageLimit: "16yrs +",
+    price: "₹2000",
+    aboutFull:
+      "Reema’s Swad Cooking Classes offers a vegetarian and eggless Waffle Making Class covering a variety of delicious recipes including Honey Waffle, Oreo Waffle, Chocolate Overloaded/Nutella, Blueberry/Strawberry Cream Cheese, Coffee Mousse, Ice Cream Waffle, and a special Bubblegum recipe.",
+  },
+  {
+    id: 56,
+    siteLink: "https://in.bookmyshow.com/events/blindfolded-pottery/ET00451209",
+    EventsCalendarTitle: "Blindfolded Pottery",
+    EventsCalendarContent:
+      "Let your hands do the seeing. Get ready for the most...",
+    EventsCalendarMonth: "12 Aug – 21 Sep, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/98.jpg",
+    link: "/eventsmain",
+    location: "Dices And Drama, Chennai",
+    language: "English, Hindi",
+    hours: "8 hours 19 minutes",
+    ageLimit: "All age groups",
+    price: "₹899",
+    aboutFull:
+      "Let your hands do the seeing. Get ready for the most unexpectedly sensual and meditative art experience. In this unique pottery workshop, you’ll be blindfolded—allowing touch, texture, and intuition to guide your creation. No peeking, no perfectionism, just pure connection with clay. Whether you’re solo or coming with a friend, prepare to get your hands dirty, let go of control, and create something beautifully imperfect. No prior experience needed. Just bring your curiosity.",
+  },
+  {
+    id: 57,
+    EventsCalendarTitle: "Sip & Paint Event",
+    EventsCalendarContent: "Join us for a creative twist on your typical....",
+    EventsCalendarMonth: "16 Aug, 2025",
+    EventsCalendarTime: "3:00 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/97.jpg",
+    link: "/eventsmain",
+    location: "Hibiscus Cafe, Chennai",
+    language: "English",
+    hours: "2 Hours",
+    ageLimit: "All age groups",
+    price: "₹999",
+    aboutFull:
+      "Join us for a creative twist on your typical paint night! Design your own custom tote bag while sipping on your favorite drinks. No experience needed—just good vibes, great company, and a canvas you can carry. We provide everything you need, including blank tote bags, paints, brushes, inspiration sheets, and a bit of guidance if you want it. Just bring your imagination (and maybe a friend or two). Beverages are included because great art deserves great sips. Let’s make something cute, bold, or totally out-there—your bag, your style, your rules! Grab your besties and let’s get artsy to turn plain totes into masterpieces!",
+  },
+  {
+    id: 58,
+    EventsCalendarTitle: "Star Quest (Astronomy Workshop for Young Minds)",
+    EventsCalendarContent:
+      "Turn curiosity into discovery! Children naturally look....",
+    EventsCalendarMonth: "17 Aug – 14 Aug, 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Kids' Workshop",
+    image: "/images/HomePage-Images/Events/Newevents/96.jpg",
+    link: "/eventsmain",
+    location: "Online (Your Place and Your Time)",
+    language: "English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "",
+    price: "₹189",
+    aboutFull:
+      "Turn curiosity into discovery! Children naturally look up at the night sky and wonder what’s out there. This Astronomy for Kids Workshop (ages 5–16) transforms that curiosity into knowledge, imagination, and inspiration. In this fun, interactive session, kids will learn about planets, stars, and a wide range of celestial objects and phenomena in an easy-to-understand way. They will participate in space-themed activities and quizzes that make science exciting and memorable. Astronomy is more than looking at stars—it builds scientific thinking and observation skills, fosters a sense of wonder and creativity, and boosts confidence to explore and question the world around them. We keep seats limited to ensure every child gets personal attention and hands-on fun. E-certificates of participation will be emailed within 7 days for kids to proudly showcase. The joining link will be shared a day before the session to ensure smooth access. By the end of the workshop, your child won’t just know facts about space—they’ll feel inspired to explore, question, and dream bigger than ever before. It’s not just a Sunday evening spent—it’s a lifelong spark for learning and discovery!",
+  },
+  {
+    id: 59,
+    EventsCalendarTitle: "Solve the Rubik's Cube, Sharpen 6 Vital Skills",
+    EventsCalendarContent:
+      "Learn to solve the Rubik's Cube with a focus on enhancing problem-solving and memory skills.",
+    EventsCalendarMonth: "10 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Skill Workshop",
+    image: "/images/HomePage-Images/Events/Newevents/95.jpg",
+    link: "/eventsmain",
+    location: "Happy Skills Events, Ghatkopar",
+    language: "English, Hindi, Marathi",
+    hours: "2 Hours",
+    ageLimit: "8yrs +",
+    price: "₹500",
+    aboutFull:
+      "In this workshop, you will learn a 6-step method to solve the 3 x 3 x 3 Rubik's Cube in about 2 hours through a live 120-minute slow and steady streaming demonstration led by the course creator. This step-by-step MOOC solution is designed for learners aged 8 to 80 and aims to sharpen six vital skills: critical thinking, analytical thinking, reasoning and problem-solving, systems analysis and design, technology design and programming, and judgment and decision-making. The experience is engaging and easy-paced, offering a clear and enjoyable path to mastering this mind-boggling puzzle with over 43 quintillion ways to scramble. After the live session, a limited-period special offer will allow you discounted access to all demonstrated lessons so you can learn at your own pace anytime, anywhere. This 5-star rated workshop combines expert guidance with practical skills development, providing a rewarding sense of accomplishment both personally and professionally.",
+  },
+  {
+    id: 60,
+    EventsCalendarTitle: "Knife Painting Workshop",
+    EventsCalendarContent:
+      "An immersive art experience where participants explore texture...",
+    EventsCalendarMonth: "12 Aug – 11 Aug, 2025",
+    EventsCalendarTime: "3:00 PM",
+    EventsCalendarCategory: "Art Workshop",
+    image: "/images/HomePage-Images/Events/Newevents/94.jpg",
+    link: "/eventsmain",
+    location: "Queens and Beans, Hyderabad",
+    language: "English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "All age groups",
+    price: "₹799 onwards",
+    aboutFull:
+      "Dive headfirst into a captivating artistic escapade at our Knife Painting Workshop, where the canvas becomes your playground and each stroke tells a unique story, bringing texture to life. Immerse yourself in the intricate art of palette knife techniques with guidance from seasoned instructors who will reveal the secrets of creating mesmerizing textures, layering, and depth. Unleash your inner color maestro by experimenting with a vibrant spectrum of hues, discovering the magical interplay of colors as your masterpiece evolves. Whether you are a novice or experienced artist, receive personalized guidance tailored to your skill level to enhance your technique. Experience the therapeutic essence of knife painting as you let stress melt away, enjoying not just the creation of a beautiful piece but the joyful journey itself. Engage in interactive and playful sessions with fellow art lovers, sharing experiments, exchanging ideas, and soaking in the collective creative energy of our vibrant community.",
+  },
+
+  {
+    id: 61,
+    EventsCalendarTitle: "Japanese Kintsugi Workshop",
+    EventsCalendarContent:
+      "Discover the ancient art of Kintsugi—mending broken ceramics with...",
+    EventsCalendarMonth: "12 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Art & Mindfulness",
+    image: "/images/HomePage-Images/Events/Newevents/93.jpg",
+    link: "/eventsmain",
+    location: "Dices And Drama, Chennai",
+    language: "English, Hindi",
+    hours: "2 hours",
+    ageLimit: "All age groups",
+    price: "₹999",
+    aboutFull:
+      "Step into the ancient Japanese philosophy of Kintsugi, where broken ceramics are mended with gold, turning flaws into beauty. This workshop is more than just an art form—it’s a practice in resilience, healing, and self-acceptance. Embrace imperfection, create something unique, and reflect on the stories that make us whole. You will learn Kintsugi basics, discovering the art and meaning behind this 400-year-old practice. During the workshop, you will repair a broken pottery piece using golden joinery techniques and engage in mindful creation to reflect and connect while crafting your own symbolic piece.",
+  },
+
+  {
+    id: 62,
+    EventsCalendarTitle: "Mandala Workshop",
+    EventsCalendarContent:
+      "A beginner-friendly art workshop exploring the spiritual...",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "Time not specified",
+    EventsCalendarCategory: "Arts and Crafts",
+    image: "/images/HomePage-Images/Events/Newevents/92.jpg",
+    link: "/eventsmain",
+    location: "House of Games, Kilpauk, Chennai",
+    language: "English, Tamil",
+    hours: "1 hour",
+    ageLimit: "All age groups",
+    price: "₹999",
+    aboutFull:
+      "A mandala is a geometric representation of the universe, often used as a tool for meditation and spiritual exploration. Our beginner-friendly Mandala art workshop offers a welcoming and supportive environment where you will receive hands-on guidance from our instructor, who will walk you through each step of the creative process at your own pace. All materials and tools are provided, so you can focus entirely on your artwork without any hassle. The workshop duration is flexible — whether you finish quickly or prefer to take your time, you are encouraged to create at a rhythm that feels comfortable to you. This relaxed and creative space is perfect whether you attend solo, with a partner, friends, or family, offering a calming and expressive break from your routine. Additionally, you will enjoy refreshments with 50% of your venue payment returned as food credit, making it a treat for both your mind and taste buds. To ensure personalized attention, sessions are offered in small group formats of one-on-one, two-on-one, or three-on-one, fostering an interactive experience. By the end of the workshop, you will not only gain new artistic skills but also leave with your own handmade masterpiece. Prior registration is required; for any queries, please contact the café.",
+  },
+
+  {
+    id: 63,
+    EventsCalendarTitle: "Kaathuvaakula Rendu Comedians ft. Mervyn & Jagan",
+    EventsCalendarContent:
+      "A Tamil improv comedy show with Jagan Krishnan and Mervyn Rozz...",
+    EventsCalendarMonth: "16 Aug, 2025",
+    EventsCalendarTime: "4:00 PM",
+    EventsCalendarCategory: "Improv Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/91.jpg",
+    link: "/eventsmain",
+    location: "Punch - Unpaid Therapist, Chennai",
+    language: "Tamil",
+    hours: "1 hour 30 minutes",
+    ageLimit: "5yrs+",
+    price: "₹699",
+    aboutFull: `
+‘Kaathuvaakula Rendu Comedians’ is a Tamil Improv comedy show featuring stand-up comedians Jagan Krishnan and Mervyn Rozz. This one-of-a-kind performance is completely unscripted and fully improvised, with the comedians creating humor on the spot based on suggestions from the live audience. Expect spontaneous wit, unexpected twists, and plenty of laughs in this clean, family-friendly show. Perfect for a fun outing with friends or loved ones, this show guarantees a lively atmosphere and memorable moments.
+  `,
+  },
+
+  {
+    id: 64,
+    EventsCalendarTitle: "Salsa, Bachata, Urbankiz Dance Workshop",
+    EventsCalendarContent:
+      "Learn, practice, and connect through social dance styles...",
+    EventsCalendarMonth: "17 Aug – 2 Aug, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Dance, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/90.jpg",
+    link: "/eventsmain",
+    location: "Sara’s Dance And Fitness Company, Chennai",
+    language: "English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "21yrs+",
+    price: "₹499 onwards",
+    aboutFull: `
+Social Dancing is a fantastic way to connect and explore via styles like Salsa / Bachata / Urban Kiz. *** About Event: ~ Basic / Improver level Workshop to learn ~ Social dancing to practice what you have learned ~ Socialize to connect with existing social dance folks *** About Artist: Praveen - one of the most sought-after Urbankiz Artists in Asia, Praveen has traveled across 20+ countries including the US, Europe, Japan, Singapore, and Dubai, and has shared his knowledge and passion for social dancing across the globe. He is also the founder of Dance academies like Salsa Chennai, Salsa Coimbatore, Salsa Kerala, Urbankiz Universe ( Bangalore & Hyderabad ) *** Audience : ~ Open for all ages ~ Beginner Friendly Environment ~ Classes will be in English ~ Any comfortable costume/shoes/socks/heels ~ We try our level best to get a 1:1 ratio, sometimes it may vary. Chennai - Edina Building - Activity Hall, Hiranandani, Siruseri For Other cities, pls reach out to the exact location Looking forward to seeing you on the dance floor. 
+  `,
+  },
+
+  {
+    id: 65,
+    EventsCalendarTitle: "Bottle Painting ",
+    EventsCalendarContent:
+      "Join us for a lively and creative event where we turn ordinary bottles into extraordinary works of art!",
+    EventsCalendarMonth: "11-20 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/89.jpg",
+    link: "/eventsmain",
+    location: "La Grace: Bengaluru",
+    language: "Bengali, English, Hindi, Kannada, Malayalam",
+    hours: "1 Hour",
+    ageLimit: "16yrs+",
+    price: "₹899 onwards",
+    aboutFull: `
+Join us for a lively and creative event where we turn ordinary bottles into extraordinary works of art! Participants are encouraged to bring their old bottles — whether they’re from beer, water, or any other source — and engage in a hands-on bottle paint workshop. Our instructor will guide you step-by-step, ensuring you feel comfortable and confident throughout the creative process. All materials are provided, so you can focus on enjoying the experience. The relaxed, interactive space is perfect whether you come solo, with friends, or as a couple. At the end of the session, you’ll take home your own decorated bottle — a unique, personal creation to cherish.
+  `,
+  },
+
+  {
+    id: 66,
+    EventsCalendarTitle: "Sculpture Painting Workshop – Sunflower",
+    EventsCalendarContent: "Sunflowers you don’t just see… but feel....",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Home Decor, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/88.jpg",
+    link: "/eventsmain",
+    location: "House of Games, Kilpauk, Chennai",
+    language: "English, Tamil",
+    hours: "2 Hours",
+    ageLimit: "12yrs+",
+    price: "₹2999",
+    aboutFull: `
+Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginner-friendly art workshop designed to awaken your creativity in a relaxed, expressive space. Whether you're coming solo, with a partner, friends, or family, you'll be guided step-by-step by our instructor, ensuring a comfortable pace for every participant. All tools and materials are provided, so you can simply show up and create. The session offers flexible timing — some finish quickly, others take their time — and both are welcome to enjoy the process at their own rhythm. You’ll also receive 50% of your venue payment back as food credit, making it a treat for both your mind and taste buds. With personalized formats available (1:1, 2:1, or 3:1), you’ll get focused attention in a small group setting. And best of all, you’ll leave with your own handmade masterpiece and a sense of accomplishment. Prior registration is required. For queries, contact the café.
+  `,
+  },
+
+  {
+    id: 67,
+    EventsCalendarTitle: "Halki Halki Fati? By Vikas Kush Sharma",
+    EventsCalendarContent: "The comedic maestro, the crowd whisperer,..",
+    EventsCalendarMonth: "17 Aug – 2 Nov, 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Comedy, Stand up Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/87.jpg",
+    link: "/eventsmain",
+    location: "Medai - The Stage, Alwarpet, Chennai",
+    language: "English, Hindi",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16yrs+",
+    price: "₹799 onwards",
+    aboutFull: `
+    The comedic maestro, the crowd whisperer, the one and only Vikas Kush Sharma! 
+    This guy’s crowd work and the most viral modern shayar of Instagram is so brilliant, 
+    it’s like he’s got a PhD in decoding laughter! He’s the master of turning awkward situations 
+    into uproarious punchlines, especially when it comes to relationships. 
+    If you’re ever in need of a good laugh about love gone wrong or dating disasters, 
+    Vikas has got your back! Get ready to chuckle, snort, and maybe even spit out your drink 
+    with this comedic genius in action!
+  `,
+  },
+
+  {
+    id: 68,
+    siteLink: "https://in.bookmyshow.com/events/neon-painting-party/ET00457231",
+    EventsCalendarTitle: "Neon Painting  Party",
+    EventsCalendarContent:
+      "Step into a world where creativity meets fun Our....",
+    EventsCalendarMonth: "13 Aug – 27 Aug, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/150.jpg",
+    link: "",
+    location: "Wiggle Room: Chennai",
+    language: "English,Tamil",
+    hours: "1 Hour",
+    ageLimit: "Age Limit - 5yrs +",
+    price: "₹899",
+    aboutFull:
+      "Step into a world where creativity meets fun Our Neon Painting Workshop is a one of a kind art experience where you create glowing masterpieces using fluorescent paints. Whether you are a seasoned artist or just looking to try something fun and vibrant, this workshop is all about expression, fun, and unforgettable memories.",
+  },
+
+  {
+    id: 69,
+    EventsCalendarTitle: "Clay Coaster Workshop",
+    EventsCalendarContent:
+      "Beginner-friendly air dry clay workshop with hands-on...",
+    EventsCalendarMonth: "17 Aug, 2025",
+    EventsCalendarTime: "1 hour 30 minutes",
+    EventsCalendarCategory: "Arts and Crafts, Home Decor, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/84.jpg",
+    link: "/eventsmain",
+    location: "House of Games, Kilpauk: Chennai",
+    language: "English, Tamil",
+    hours: "1 hour 30 minutes",
+    ageLimit: "12yrs +",
+    price: "₹1699",
+    aboutFull: `
+  Here's our beginner-friendly air dry clay workshop.
+
+  What to Expect:
+
+  Hands-On Guidance:
+  Our instructor will guide you step-by-step, helping you comfortably navigate the entire creative process at your own pace.
+
+  All Materials Provided:
+  We’ve got you covered with all the tools and materials.
+
+  Flexible Duration:
+  Some participants finish quickly, while others love to slow down and enjoy the process — both are welcome! Create at your own rhythm.
+
+  Relaxed, Creative Space:
+  Whether you're coming solo, as a couple, with friends, or family, this session offers a calming, expressive escape from routine.
+
+  Refreshments Provided:
+  Get 50% of your venue payment back as food credit. Enjoy delicious refreshments while you create — it's a treat for both your mind and taste buds!
+
+  1:1, 2:1, or 3:1 Format:
+  We offer personalized attention with small group formats for a more focused and interactive experience.
+
+  Take Your Art Home:
+  Leave the workshop not just with new skills, but with your own handmade masterpiece!
+
+  Prior registration needed. For queries contact cafe.
+  `,
+  },
+
+  {
+    id: 70,
+    EventsCalendarTitle: "Epic Day Pass",
+    EventsCalendarContent:
+      "Discover the Magic of Connection with a day packed with..",
+    EventsCalendarMonth: "16–31 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/85.jpg",
+    link: "/eventsmain",
+    location: "Dices And Drama: Chennai",
+    language: "Bengali, English, Hindi, Kannada, Malayalam",
+    hours: "5 Hours",
+    ageLimit: "All age groups",
+    price: "₹2999",
+    aboutFull: `
+  Discover the Magic of Connection by getting access to our all day event pass.
+  Join us for the day packed with laughter, inspiration, and camaraderie. At the heart of Small World, we’re curating a tapestry of unique events and experiences that will weave together stories and create bonds that last a lifetime.
+  Get access to all our in-house events and engage in activities that tickle your fancy and challenge your comfort zone.
+  Epic Day Pass includes a parade of interactive and heartwarming artistic, musical and social events and endless moments of joy as you connect with fellow explorers.
+  Let’s create a mosaic of memories, spark meaningful connections, and share stories that we’ll laugh about for years to come. Limited spots available for this intimate gathering — where every moment is a celebration of togetherness.
+  `,
+  },
+
+  {
+    id: 71,
+    siteLink:
+      "http://district.in/events/hukum-world-tour-chennai-august-2025-buy-tickets",
+    EventsCalendarTitle: "Hukum World Tour Grand Finale",
+    EventsCalendarContent:
+      "Anirudh Ravichander returns to Chennai for a thunderous musical spectacle!",
+    EventsCalendarMonth: "23 Aug, 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Music, Concert",
+    image: "/images/HomePage-Images/Events/Newevents/46.jpg",
+    link: "/eventsmain",
+    location: "Marg Swarnabhoomi, Kuvathur, ECR, Chennai",
+    language: "Tamil, English",
+    hours: "Open-ended",
+    ageLimit: "All age groups",
+    price: "₹1700 onwards",
+    aboutFull: `
+    After 3 long years, Anirudh Ravichander returns to his hometown for a thunderous comeback like never before!,
+    The Hukum World Tour arrives in Chennai with all guns blazing — a grand spectacle where music, emotion, and mass energy collide.,
+    From viral chartbusters to electrifying live sets, Anirudh is set to light up the stage with an unforgettable performance.,
+    This isn't just a concert — it's a celebration of the Rockstar's roots, his music, and the city that made him.,
+    Expect massive crowd moments, jaw-dropping visuals, and surprise guest artists that will take the energy to the next level.,
+    Chennai, get ready to feel the tremors — Arangam Adhirattume!,
+  `,
+  },
+
+  {
+    id: 72,
+    EventsCalendarTitle: "ARR UnPlugged",
+    EventsCalendarContent:
+      "Aug 16th a super treat awaits you at medai alwarpet...",
+    EventsCalendarMonth: "16 Aug 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Concerts, Music Festivals, Music Shows",
+    image: "/images/HomePage-Images/Events/Newevents/152.jpg",
+    link: "",
+    location: "Medai - The Stage, Alwarpet: Chennai",
+    language: "Tamil, Hindi",
+    hours: "2 hours 30 minutes",
+    ageLimit: "All age groups",
+    price: "₹299 onwards",
+    aboutFull:
+      "Aug 16th a super treat awaits you at medai alwarpet ARR unplugged celebrating the genius with songs from his movies in Tamil and Hindi unplugged with battalion of young and vibrant singers don't miss the show at 7 pm",
+  },
+
+  {
+    id: 73,
+    EventsCalendarTitle: "Couples' Art Workshop",
+    EventsCalendarContent:
+      "Join us for a Date Night Painting Party, a fun-filled....",
+    EventsCalendarMonth: "12 Aug – 31 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/151.jpg",
+    link: "",
+    location: "Dices And Drama: Chennai",
+    language: "English, Hindi, Kannada, Malayalam, Beng...",
+    hours: "2 Hours",
+    ageLimit: "All age groups",
+    price: "₹1599",
+    aboutFull:
+      "Join us for a Date Night Painting Party, a fun-filled evening of art, laughter, and romance where you and your special someone can dive into a vibrant world of colors and create something beautiful together. No prior painting skills are needed—just an open mind and a desire to enjoy the process. In a cozy, laid-back atmosphere with soft music setting the mood, our professional artist will guide you step-by-step to create your own masterpieces on canvas, whether individually or as a shared piece. It’s all about bonding over brush strokes, sparking creativity, and making unforgettable memories. This is not just another date night—it’s a Date Night Painting Party, where you’ll discover, create, and love, leaving with not only beautiful paintings but beautiful memories too.",
+  },
+
+  {
+    id: 74,
+    EventsCalendarTitle: "Kal ki Chinta Nahi Karta ft. Ravi Gupta",
+    EventsCalendarContent:
+      "Forget your Kal ki Chinta and Join us in this super funny Show by Ravi Gupta.",
+    EventsCalendarMonth: "5 Jul – 12 Aug, 2025",
+    EventsCalendarTime: "07:00 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image:
+      "/images/HomePage-Images/Events/Newevents/kal-ki-chinta-nahi-karta-ft-ravi-gupta.jpg",
+    link: "/eventsmain",
+    location: "Shanmukhananda Hall: Chennai",
+    language: "Hindi",
+    hours: "1 hour 30 minutes",
+    ageLimit: "6 years +",
+    rleigion: "",
+    aboutFull: `Forget your Kal ki Chinta and Join us in this super funny Show by Ravi Gupta. Kal Ki Chinta Nahi Karta is new stand up special by Ravi Gupta.`,
+  },
+
+  {
+    id: 75,
+    EventsCalendarTitle: "GALLABOX presents Patriotic Run",
+    EventsCalendarContent:
+      "Get ready to run for a cause that ignites your passion...",
+    EventsCalendarMonth: "17 Aug 2025",
+    EventsCalendarTime: "5:00 AM",
+    EventsCalendarCategory: "Sports, Fitness",
+    image: "/images/HomePage-Images/Events/Newevents/gallabox-marathon.jpg",
+    link: "",
+    location: "VGP Universal Kingdom, Chennai",
+    language: "",
+    hours: "",
+    siteLink: "",
+    ageLimit: "",
+    price: "₹299 onwards",
+    aboutFull: `
+<strong>GALLABOX presents Patriotic Run </strong> 
+<p>Get ready to run for a cause that ignites your passion and love for the nation! 🇮🇳 Join us for the GALLABOX presenting Patriotic Run, a unique event that combines fitness, fun, and patriotism.</p>
+
+<ul>
+<li><strong>Event Details</strong></li>
+<li><strong>Distances:</strong></li>
+<li>5km: (Perfect for a warm-up and a fun run!)</li>
+<li>10km: (Challenge yourself and push your limits!)</li>
+</ul> 
+
+</br>
+
+<h3>What's Included</h3>
+<ul>
+  <li><strong>Time chip:</strong> Accurate timing to track your progress ⏱️</li>
+  <li><strong>T-shirt:</strong> A stylish and comfortable tee to commemorate your participation 👕</li>
+  <li><strong>Bib:</strong> Your official race number, proudly displayed 📝</li>
+  <li><strong>Certificate:</strong> A personalized certificate to mark your achievement 🏆</li>
+  <li><strong>Hydration:</strong> Refreshing drinks to keep you going throughout the run 💧</li>
+  <li><strong>Food pack:</strong> Delicious treats to refuel and recharge 🍔🥤</li>
+  <li><strong>Medal:</strong> A shiny medal to proudly display your accomplishment 🏅</li>
+</ul>
+</br>
+
+<h3>Winner's Perks</h3>
+<ul>
+  <li><strong>Medal:</strong> A special medal for the top performers 🏅</li>
+  <li><strong>Trophy:</strong> A prestigious trophy for the champions 🏆</li>
+  <li><strong>Gift vouchers:</strong> Exciting prizes to treat yourself 🎁</li>
+</ul>
+</br>
+
+<h3>Why Join?</h3>
+<ul>
+  <li>Celebrate your love for the nation</li>
+  <li>Challenge yourself and push your limits</li>
+  <li>Enjoy a fun and energetic atmosphere</li>
+  <li>Take home amazing goodies and memories</li>
+</ul>
+</br>
+<strong>Don't miss this opportunity to be a part of something special! Register now and show your love for the nation! </strong>
+`,
+  },
+
+  {
+    id: 76,
+    EventsCalendarTitle: "Canvas Painting",
+    EventsCalendarContent:
+      "Calling all art enthusiasts! Immerse yourself in...",
+    EventsCalendarMonth: "9 Aug – 1 Sep, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Painting, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/69.jpg",
+    link: "/eventsmain",
+    location: "Queens and Beans: Hyderabad",
+    language: "English, Hindi",
+    hours: "1 hour 30 minutes",
+    ageLimit: "All age groups",
+    price: "₹899 onwards",
+    aboutFull: `
+    Calling all art enthusiasts! Immerse yourself in a vibrant canvas painting workshop that will ignite your creativity and bring your artistic vision to life.,
+    No prior experience needed! Whether you're a beginner eager to dip your brush into the world of painting or a seasoned artist looking to refine your skills, this workshop is designed for artists of all levels.,
+    Take home your unique creation and cherish the memories.,
+  `,
+  },
+
+  {
+    id: 77,
+    siteLink: "https://in.bookmyshow.com/events/coffee-cuddles/ET00375016",
+    EventsCalendarTitle: "Coffee Conversations",
+    EventsCalendarContent: "Gather in a snug corner of warmth and comfort,...",
+    EventsCalendarMonth: "9 Aug – 7 Sep, 2025",
+    EventsCalendarTime: "3:00 PM",
+    EventsCalendarCategory: "Business",
+    image: "/images/HomePage-Images/Events/Newevents/59.jpg",
+    link: "/eventsmain",
+    location: "Trinity Studio: Kodambakkam",
+    language: "",
+    hours: "1 Hour",
+    ageLimit: "All age groups",
+    rleigion: "Bengali, English, Hindi, Kannada, Malayalam",
+    aboutFull: `
+      Gather in a snug corner of warmth and comfort, cradling mugs of aromatic coffee that promise to soothe the soul. 'Coffee Conversations' is an intimate get-together for those seeking to forge new friendships and indulge in rich, engaging conversations.
+
+      Nestle into plush cushions and let the velvety whispers of steam rising from your cup invite open-hearted dialogues. If the idea of bonding over the comforting embrace of coffee entices you, come be part of 'Coffee Conversations', where every sip weaves a stronger connection.
+    `,
+  },
+
+  {
+    id: 78,
+    EventsCalendarTitle: "Vikramjit Singh - Talking & Touring",
+    EventsCalendarContent: "Vikramjit Singh is none of these things and more.",
+    EventsCalendarMonth: "12 Jul – 16 Aug, 2025",
+    EventsCalendarTime: "08:00 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image:
+      "/images/HomePage-Images/Events/Newevents/vikramjit-singh-talking-touring.jpg",
+    link: "/eventsmain",
+    location: "The J Spot, Juhu: Chennai",
+    language: "Hindi, English",
+    hours: "1 hour 20 minutes",
+    ageLimit: "16years +",
+    rleigion: "Comedy",
+    aboutFull: `Ideal husband, doting father, youth icon.
+      Vikramjit Singh is none of these things and more. It hasn’t been easy, but anything is possible with a bad economy, complicated relationships and a missing jawline. He credits his family for who he has become, 
+      but not in the way you think. Bring whoever you call “family” and laugh through it all, feeling slightly better about your own life.`,
+  },
+
+  {
+    id: 79,
+    siteLink:
+      "https://in.bookmyshow.com/events/pannu-yaar-stand-up-comedy-show-ft-gurleen-pannu/ET00333386",
+    EventsCalendarTitle: "Young Adult! ft.Gurleen Pannu",
+    EventsCalendarContent:
+      "_Young Adult!_ is about a person who is in their 20s,",
+    EventsCalendarMonth: "15 – 21 Aug, 2025",
+    EventsCalendarTime: "08:00 PM",
+    EventsCalendarCategory: "Stand up Comedy",
+    image:
+      "/images/HomePage-Images/Events/Newevents/Young Adult! ft.Gurleen Pannu.jpg",
+    link: "/eventsmain",
+    location: "Medai - The Stage, Alwarpet: Chennai",
+    language: "Hindi, English",
+    hours: "1 Hour 15 mins",
+    ageLimit: "Age Limit - 16yrs +",
+    rleigion: "",
+    aboutFull: `
+    _Young Adult!_ is about a person who is in their 20s, juggling life and someone who has just stepped into adulthood. In her new show, Gurleen Pannu has relateable observations, stories from her own experiences and a lot of laughs—you don’t want to miss this one!
+    `,
+  },
+  {
+    id: 80,
+    EventsCalendarTitle: "Surfing",
+    EventsCalendarContent:
+      "From August 3 to 12, get ready to witness top surfers from... ",
+    EventsCalendarMonth: "3–12 Aug, 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Games",
+    image: "/images/trendingChennai/surfing-inner.jpg",
+    link: "/eventsmain",
+    location: "Mahabalipuram, Chennai",
+    language: "Surfing Championship",
+    hours: "",
+    ageLimit: "Under 18 (and everyone who loves the sea!)",
+    rleigion: "",
+    aboutFull: `
+   From August 3 to 12, get ready to witness top surfers from over 20 Asian countries compete in one of the most exciting beach sports events of the year! Catch the thrill as athletes take on the waves in Shortboard categories – Open Men, Open Women, U18 Boys, and U18 Girls – all happening at the beautiful, heritage-rich coast of Mahabalipuram. What’s at stake? Not just championship titles — but direct entry into the 2026 Asian Games in Japan and a golden chance to qualify for the SurfCity El Salvador ALAS Global Finals in November 2025! “Hosting this championship reflects Tamil Nadu’s goal to shine on the global sports map and give our athletes worldwide exposure,” says Thiru Udhayanidhi Stalin, Deputy Chief Minister & Minister for Youth Welfare and Sports Development. This wave-riding extravaganza is powered by: Sports Development Authority of Tamil Nadu @sportstn_ , Government of Tamil Nadu
+    `,
+  },
+  {
+    id: 81,
+    siteLink:
+      "https://in.bookmyshow.com/events/two-funny-a-double-bill-stand-up-comedy-show/ET00338236",
+    EventsCalendarTitle: "MANJEET KI BAAT- A COMEDY SHOW",
+    EventsCalendarContent:
+      "Yes, you may have seen him somewhere on the internet.",
+    EventsCalendarMonth: "9 Aug – 20 Sep, 2025",
+    EventsCalendarTime: "06:00 PM",
+    EventsCalendarCategory: "Stand up Comedy",
+    image:
+      "/images/HomePage-Images/Events/Newevents/MANJEET KI BAAT- A COMEDY SHOw.jpg",
+    link: "/eventsmain",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "English, Hindi",
+    hours: "1 Hour 30 mins",
+    ageLimit: "Age Limit - 18yrs +",
+    rleigion: "Comedy",
+    aboutFull: `
+     Yes, you may have seen him somewhere on the internet. If you haven’t—then you probably have a nice, peaceful life. 
+     Manjeet Sarkar is back and bringing a new show where he works out fresh material based on his experiences and observations. The set covers topics like politics, fake news, media narratives, and everyday life in India.
+     This is a trial show, which means the material is still being developed. Some parts are polished, others are being tested live.
+    It’s a casual and intimate setup —perfect for those who enjoy stand-up that talks about the world around us without pretending everything’s fine. Come watch, react, judge, or just sit back. It’s all part of the process.
+    `,
+  },
+];
+
+export const panesContent = [
+  {
+    id: 1,
+    name: "Coolie",
+    para: "14th August 2025",
+    TrendingCalendarMonth: "14th August 2025",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "About the movie",
+    image: "/images/trendingChennai/Coolie-Trending-Detail.jpg",
+    Homeimage: "/images/trendingChennai/coolie-Trending.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "2D, (Tamil,Kannada,Telugu)",
+    ageRestriction: "",
+    language: "",
+    genre: "2h 49m - Action, Thriller - A",
+    venue: "French Village, ECR",
+    trendingDetails: `
+  Coolie is a multilingual movie starring Rajinikanth in the lead role. It is directed by Lokesh Kanagaraj.
+    `,
+  },
+
+  {
+    id: 2,
+    name: "LABUBU DOLL",
+    para: "ABOUT LABUBU",
+    TrendingCalendarMonth: "selling for nearly $170,000 at auction.",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "Toy",
+    image: "/images/trendingChennai/Labubu-Doll-Detail.jpg",
+    Homeimage: "/images/trendingChennai/Labubu-Doll.jpg",
+    link: "/tamil-nadu-international-kite-festival",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "",
+    trendingDetails: `
+   Labubu, created by Hong Kong-born artist Kasing Lung and produced by Pop Mart, is a one-of-a-kind collectible character that has captured hearts worldwide. Known for its big eyes, jagged teeth, wild tuft of hair, and mischievous charm, Labubu is part of “The Monsters” series — a whimsical collection of fantasy-inspired creatures.
+   Celebrity Endorsement: Labubu became a global trend after Blackpink’s Lisa was spotted carrying one in April 2024. Since then, celebrities like Kim Kardashian and Rihanna have joined the fan list, making it a must-have accessory for pop culture lovers.
+   Collector’s Craze: Many editions are released in blind boxes, adding mystery and rarity to every purchase. Limited editions can sell out in minutes and resell for many times their retail value, with one life-size Labubu selling for nearly $170,000 at auction.
+
+   Global Popularity: From Asia to the West, Labubu has become a symbol of quirky fashion, artistic expression, and collector prestige. Fans host trading events, share unboxings online, and proudly showcase their finds
+
+    `,
+  },
+
+  {
+    id: 3,
+    name: "Cake on a Cone ",
+    para: "Everyday",
+    TrendingCalendarMonth: "Available Daily",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "Foodie Find / Trending Dessert",
+    image: "/images/trendingChennai/inner-page-trending-chennai-2.jpg",
+    Homeimage: "/images/trendingChennai/Home-page-trending-chennai-2.jpg",
+    link: "/speed-counselling-study-abroad",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "Pastry Mania, Halls Rd, Kilpauk, Chennai",
+    trendingDetails: `
+    Mini cakes just got cooler! 🎂🍦
+ Experience Chennai’s viral Cake on a Cone – where crunchy cones are filled with soft cake, creamy layers, and rich sauces inside. Perfect for surprise gifts, celebrations, or a mid-week sweet craving.
+ Only at Pastry Mania, Kilpauk.
+ Don’t miss this trending dessert!
+    `,
+  },
+
+  {
+    id: 4,
+    name: "Jiggly Capybara Panna Cotta",
+    para: "Everyday",
+    TrendingCalendarMonth: "Available Daily",
+    TrendingCalendarTime: "12.00 PM - 10. 30 PM",
+    TrendingCalendarCategory: "Foods",
+    image: "/images/trendingChennai/inner-page-trending-chennai-3.jpg",
+    Homeimage: "/images/trendingChennai/Home-page-trending-chennai-3.jpg",
+    link: "/speed-counselling-study-abroad",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "Only at Lafayette, Nungambakkam,  Chennai",
+    trendingDetails: `
+   Say hello to the cutest dessert in town – the Jiggly Capybara Panna Cotta! 🐹💛
+ Imported straight from Korea’s viral food trends, this eggless, halal-certified dessert is wobbly, jiggly, and adorable.
+ Soft, sweet, and silky – this dessert is made for Instagram and made to melt hearts! Whether you're on a dessert date or gifting something adorable, this wobbly treat is just perfect. Please note, it's only available for dine-in – no takeaways. So, reserve your table now on Swiggy or Zomato!
+    `,
+  },
+
+  // {
+  //   id: 5,
+  //   name: "Speed Counselling for Everything Study Abroad",
+  //   para: "Every Sat | 10:00 AM (IST)",
+  //   TrendingCalendarMonth: "Every Sat",
+  //   TrendingCalendarTime: "10:00 AM",
+  //   TrendingCalendarCategory: "Education",
+  //   image:
+  //     "/images/trendingChennai/speed-counselling-for-everything-study-abroad-(chennai).jpg",
+  //   Homeimage:
+  //     "/images/trendingChennai/front/speed-counselling-for-everything-study-abroad-(chennai).jpg",
+  //   link: "/speed-counselling-study-abroad",
+  //   duration: "15 minutes",
+  //   ageRestriction: "All Ages",
+  //   language: "English",
+  //   genre: "Counselling",
+  //   venue: "Alwarpet, Chennai",
+  //   trendingDetails: `Let’s clear all your study-abroad questions face-to-face! Together, we’ll plan your study-abroad future. Join us for a speed counselling session at our Edvoy office in Chennai. You get 15 minutes, one-on-one, with our expert for your preferred country—UK, Canada, Germany, wherever. No long waits, no repeated calls, no back-and-forth messages, and no application push. Just straight-up, personalised guidance, fast and extremely effective. You’ll get expert advice on everything you need to know about studying abroad, from university offers and scholarships to education loans and visa. We’ve already helped over 100K students reach their study-abroad goals. With 750+ global university partnerships in 25+ countries and access to 750,000+ courses, we offer a wide variety of options to match your aspirations.`,
+  // },
+
+  // {
+  //   id: 6,
+  //   name: "Basketball Pickup Games at OTO COACH",
+  //   para: "Every Saturday | 7:00 PM",
+  //   TrendingCalendarMonth: "Every Sat",
+  //   TrendingCalendarTime: "07:00 PM",
+  //   TrendingCalendarCategory: "Basketball",
+  //   image:
+  //     "/images/trendingChennai/basketball-pickup-games-at-oto-coach-(age-16+)-1.jpg",
+  //   Homeimage:
+  //     "/images/trendingChennai/front/basketball-pickup-games-at-oto-coach-(age-16+).jpg",
+
+  //   link: "/basketball-pickup-games-oto-coach",
+  //   duration: "N/A",
+  //   ageRestriction: "16+",
+  //   language: "English",
+  //   genre: "Sports",
+  //   venue: "OTO COACH, Crescent School, Thousand Lights, Nungambakkam, Chennai",
+  //   trendingDetails: `Ready to ball? Join the Basketball Pickup Games at OTO COACH, Chennai’s leading multi-sport academy, every Saturday at 7 PM. Whether you’re looking to stay active, improve your skills, or just enjoy a friendly match, these non-competitive games are perfect for players aged 16 and above. No teams, no pressure—just pure basketball fun in a safe, energetic environment. Bring your A-game, meet new people, and enjoy the sport you love with like-minded players! Entry Fee: ₹250 per session.`,
+  // },
+
+  {
+    id: 7,
+    name: "Fake Sangeet 2.0",
+    para: "18th July Onwards | 8PM Onwards",
+    TrendingCalendarMonth: "18th July 2025",
+    TrendingCalendarTime: "08:00 PM",
+    TrendingCalendarCategory: "Sangeet Show",
+    image: "/images/trendingChennai/fake-sangeet-inner.jpg",
+    Homeimage: "/images/trendingChennai/front/fake-sangeet.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "All Ages",
+    language: "English",
+    genre: "Entertainment",
+    venue: "The Slate & Secret Story, Nungambakkam",
+    trendingDetails: `We’re back, bigger, bolder & badder than ever 💥
+     This isn’t your average night out—it’s a SANGEET SHOWDOWN without the wedding drama!
+     Featuring: DJ • Dhol • Photobooth • Glitters • Decor • Live Singer
+     Offline tickets launching soon!  Tickets: Live on ClubInn`,
+  },
+  {
+    id: 8,
+    name: "Fake Sangeet 2.0",
+    para: "18th July Onwards | 8PM Onwards",
+    TrendingCalendarMonth: "18th July 2025",
+    TrendingCalendarTime: "08:00 PM",
+    TrendingCalendarCategory: "Sangeet Show",
+    image: "/images/trendingChennai/fake-sangeet-inner.jpg",
+    Homeimage: "/images/trendingChennai/front/fake-sangeet.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "All Ages",
+    language: "English",
+    genre: "Entertainment",
+    venue: "The Slate & Secret Story, Nungambakkam",
+    trendingDetails: `We’re back, bigger, bolder & badder than ever 💥
+     This isn’t your average night out—it’s a SANGEET SHOWDOWN without the wedding drama!
+     Featuring: DJ • Dhol • Photobooth • Glitters • Decor • Live Singer
+     Offline tickets launching soon!  Tickets: Live on ClubInn`,
+  },
+  {
+    id: 9,
+    name: "Fake Sangeet 2.0",
+    para: "18th July Onwards | 8PM Onwards",
+    TrendingCalendarMonth: "18th July 2025",
+    TrendingCalendarTime: "08:00 PM",
+    TrendingCalendarCategory: "Sangeet Show",
+    image: "/images/trendingChennai/fake-sangeet-inner.jpg",
+    Homeimage: "/images/trendingChennai/front/fake-sangeet.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "All Ages",
+    language: "English",
+    genre: "Entertainment",
+    venue: "The Slate & Secret Story, Nungambakkam",
+    trendingDetails: `We’re back, bigger, bolder & badder than ever 💥
+     This isn’t your average night out—it’s a SANGEET SHOWDOWN without the wedding drama!
+     Featuring: DJ • Dhol • Photobooth • Glitters • Decor • Live Singer
+     Offline tickets launching soon!  Tickets: Live on ClubInn`,
+  },
+];

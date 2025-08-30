@@ -10,6 +10,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import SliderWorkPage from "./SliderWorkPage";
+import { Helmet } from "react-helmet-async";
 
 export default function SalariesBenefits() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -159,6 +160,16 @@ export default function SalariesBenefits() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Salary in Chennai: Job Trends, Pay Scale and Career Growth
+        </title>
+        <meta
+          name="description"
+          content="Salary in Chennai varies across IT, manufacturing & services, with competitive pay scales and growing opportunities attracting professionals from all over India."
+        />
+        <link rel="canonical" href="/work/chennai-job-salary" />
+      </Helmet>
       <div>
         {/*----------------Accodimation-Banner----------- */}
 
@@ -293,7 +304,7 @@ export default function SalariesBenefits() {
 
         {/*--------------- Hotels-Chennai----------------- */}
 
-          <SliderWorkPage />
+        <SliderWorkPage />
 
         {/*--------------- Explore More Chennai----------------- */}
 

@@ -3926,7 +3926,7 @@ const dummyData = [
     slug: "volunteer-chennai",
     name: "Volunteer",
     imageUrl: "/images/volunteer/volunteer-main.jpg",
-    pageUrl: "/volunteer",
+    pageUrl: "/volunteer-in-chennai",
   },
   {
     id: 3002,
@@ -3936,7 +3936,7 @@ const dummyData = [
     slug: "become-volunteer",
     name: "Volunteer",
     imageUrl: "/images/volunteer/become.jpg",
-    pageUrl: "/volunteer",
+    pageUrl: "/volunteer-in-chennai",
   },
   {
     id: 3003,
@@ -3946,7 +3946,7 @@ const dummyData = [
     slug: "digital-volunteering",
     name: "Volunteer",
     imageUrl: "/images/volunteer/digital.jpg",
-    pageUrl: "/volunteer",
+    pageUrl: "/volunteer-in-chennai",
   },
   {
     id: 3004,
@@ -3956,7 +3956,7 @@ const dummyData = [
     slug: "volunteer-events-chennai",
     name: "Volunteer",
     imageUrl: "/images/volunteer/events.jpg",
-    pageUrl: "/volunteer",
+    pageUrl: "/volunteer-in-chennai",
   },
   {
     id: 3005,
@@ -3966,7 +3966,7 @@ const dummyData = [
     slug: "content-creator-chennai",
     name: "Volunteer",
     imageUrl: "/images/volunteer/content.jpg",
-    pageUrl: "/volunteer",
+    pageUrl: "/volunteer-in-chennai",
   },
   {
     id: 3006,
@@ -3976,7 +3976,7 @@ const dummyData = [
     slug: "design-art-chennai",
     name: "Volunteer",
     imageUrl: "/images/volunteer/art.jpg",
-    pageUrl: "/volunteer",
+    pageUrl: "/volunteer-in-chennai",
   },
   {
     id: 3007,
@@ -3986,7 +3986,7 @@ const dummyData = [
     slug: "mentors-chennai",
     name: "Volunteer",
     imageUrl: "/images/volunteer/mentor.jpg",
-    pageUrl: "/volunteer",
+    pageUrl: "/volunteer-in-chennai",
   },
 
   //   HOMEPAGE #####################################################################################

@@ -12,14 +12,14 @@ const slides = [
   //   title: "First slide label",
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
-  // {
-  //   type: "image",
-  //   link: "/car-treasure-hunt",
-  //   image: "/images/HomePage-Images/Carrallybanner-d.jpg",
-  //   image1: "/images/HomePage-Images/Carrallybanner-m.jpg",
-  //   title: "First slide label",
-  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  // },
+  {
+    type: "image",
+    link: "/icon-august-month",
+    image: "/images/HomePage-Images/icon-of-the-month-banner.jpg",
+    image1: "/images/HomePage-Images/icon-of-the-month-mobile-banner.jpg",
+    title: "First slide label",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
   {
     image: "/images/HomePage-Images/banner-0.jpg",
     link: "#",

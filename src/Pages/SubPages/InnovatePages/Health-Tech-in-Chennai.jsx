@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function HealthTechinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -382,7 +383,6 @@ export default function HealthTechinChennai() {
     },
   ];
 
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -400,6 +400,16 @@ export default function HealthTechinChennai() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>
+          Health Tech in Chennai : Hub for Digital Health Transformation
+        </title>
+        <meta
+          name="description"
+          content="Explore Health Tech Chennai, where world-class hospitals and startups collaborate to deliver advanced medical solutions and digital healthcare innovation."
+        />
+        <link rel="canonical" href="/innovate/health-tech-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -525,8 +535,7 @@ export default function HealthTechinChennai() {
               </tbody>
             </table>
           </div>
-                <h2 className="text-2xl font-bold"> Academic & Research Support </h2>
-
+          <h2 className="text-2xl font-bold"> Academic & Research Support </h2>
 
           {imageSections1.map((section, index) => (
             <section
@@ -590,8 +599,7 @@ export default function HealthTechinChennai() {
               {" "}
               Hospitals Driving Tech Adoption
             </h2>
-            <p className="mb-4 text-gray-600 text-center mb-10">
-            </p>
+            <p className="mb-4 text-gray-600 text-center mb-10"></p>
             <table className="min-w-full border border-gray-200 divide-y divide-gray-200 text-left mb-10">
               <thead className="bg-gray-100">
                 <tr>
@@ -837,9 +845,8 @@ export default function HealthTechinChennai() {
 
         {/*--------------- Explore More Chennai----------------- */}
 
-        <InnovatePagesSlider/>
+        <InnovatePagesSlider />
 
-    
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

@@ -145,6 +145,10 @@
   .pointcastSticky {
     bottom: 121px;
   }
+
+  .carRallylink {
+    bottom: 280px;
+  }
 }
 @media (max-width: 500px) {
   .mobileBanneerHeroSlider {

@@ -175,28 +175,28 @@ const Footer = () => {
     { title: "Agri Tech", link: "/innovate/agri-tech-companies-in-chennai" },
   ];
   const USEFULLINKS2 = [
-    { title: "Overview", link: "/volunteer" },
-    { title: "Digital", link: "/volunteer" },
+    { title: "Overview", link: "/volunteer-in-chennai" },
+    { title: "Digital", link: "/volunteer-in-chennai" },
     { title: "Events", link: "/eventsmain" },
-    { title: "Content Creators", link: "/volunteer" },
-    { title: "Design &  Art", link: "/volunteer" },
-    { title: "Influencers", link: "/volunteer" },
+    { title: "Content Creators", link: "/volunteer-in-chennai" },
+    { title: "Design &  Art", link: "/volunteer-in-chennai" },
+    { title: "Influencers", link: "/volunteer-in-chennai" },
     {
       title: "Mentors",
-      link: "/volunteer",
+      link: "/volunteer-in-chennai",
     },
     // {
     //   title: "Pride of Chennai",
-    //   link: "/volunteer",
+    //   link: "/volunteer-in-chennai",
     // },
   ];
 
   const USEFULLINKS3 = [
     { title: "About us", link: "/about" },
-    // { title: "Blog", link: "/volunteer" },
-    // { title: "Career", link: "/volunteer" },
+    // { title: "Blog", link: "/volunteer-in-chennai" },
+    // { title: "Career", link: "/volunteer-in-chennai" },
     { title: "Events", link: "/eventsmain" },
-    // { title: "Social Chennai", link: "/volunteer" },
+    // { title: "Social Chennai", link: "/volunteer-in-chennai" },
     {
       title: "FAQ",
       link: "/faq",
@@ -211,7 +211,7 @@ const Footer = () => {
     },
     // {
     //   title: "Sustainability",
-    //   link: "/volunteer",
+    //   link: "/volunteer-in-chennai",
     // },
   ];
   const [isOpen, setIsOpen] = useState(false);

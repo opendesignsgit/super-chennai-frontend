@@ -9,13 +9,12 @@ import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import { Link } from "react-router-dom";
 import SliderWorkPage from "./SliderWorkPage";
+import { Helmet } from "react-helmet-async";
 
 export default function WorkLifeBalance() {
   const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
   const bgTextRef = useRef(null);
-
- 
 
   const benefitSections = [
     {
@@ -98,8 +97,7 @@ export default function WorkLifeBalance() {
     },
   ];
 
-  
-const images = [
+  const images = [
     {
       src: "/images/Work-Images/SubPages/employment-slide.jpg",
       title: "Business Permits",
@@ -194,9 +192,18 @@ const images = [
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   return (
     <>
+      <Helmet>
+        <title>
+          Working in Chennai: Career Opportunities, Lifestyle and Growth
+        </title>
+        <meta
+          name="description"
+          content="From tech hubs to traditional industries, working in Chennai provides jobs, growth, and cultural experiences, making it a dynamic destination for career seekers."
+        />
+        <link rel="canonical" href="/work/working-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -205,7 +212,8 @@ const images = [
             <div className="accodoamationBannerText">
               <h3>Work-Life Balance </h3>
               <div className="breadCrum">
-                 <Link to="/work-in-chennai"> Work </Link> - <a href="">Work-Life Balance</a>
+                <Link to="/work-in-chennai"> Work </Link> -{" "}
+                <a href="">Work-Life Balance</a>
               </div>
             </div>
           </div>
@@ -225,7 +233,7 @@ const images = [
               }`}
               ref={bgTextRef}
             >
-           <p>Work &nbsp; in Chennai &nbsp; Work &nbsp; in Chennai</p>
+              <p>Work &nbsp; in Chennai &nbsp; Work &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
               <h3>Work-Life Balance</h3>
@@ -244,7 +252,7 @@ const images = [
 
         {/*----------------- Multiple Benefit Sections ----------------*/}
         {benefitSections.map((section, index) => (
-           <section
+          <section
             className={`clcSecscrl flex flex-wrap justify-center transition-colors duration-300 
     ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#7d377d] colorbgsec"} 
     ${
@@ -295,7 +303,7 @@ const images = [
           </section>
         ))}
 
-          <SliderWorkPage />
+        <SliderWorkPage />
 
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">

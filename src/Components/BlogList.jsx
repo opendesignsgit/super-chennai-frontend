@@ -87,15 +87,15 @@ const BlogList = () => {
         <div className="accaodomationBannerSection">
           <div>
             <img
-              src="/images/Live-Images/SubPages/cost-of-living-banner.jpg"
+              src="/images/banner-blog.jpg"
               alt="Cost of Living Banner"
             />
           </div>
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
-              <h3>Blogs</h3>
+              <h3>Blog</h3>
               <div className="breadCrum">
-                <a href="/">Home</a> - <a href="#">Blogs</a>
+                <a href="/">Home</a> - <a href="#">Blog</a>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ const BlogList = () => {
               <p>Work &nbsp; in Chennai &nbsp; Work &nbsp; in Chennai</p>
             </div>
             <div class="workIntro">
-              <h3>Blogs</h3>
+              <h3>Blog</h3>
               <p>
                 Chennai’s startup ecosystem is booming, backed by skilled
                 talent, strong industry knowledge, and rising investor interest,
@@ -155,7 +155,10 @@ const BlogList = () => {
                         alt={blog.title}
                         className="blog-image"
                       />
+
+                      
                     )}
+                    {/* {console.log(blog.content.root.children[8].fields.media.)} */}
                     <h3 className="blog-title">{blog.title}</h3>
                   </a>
                   <div className="blog-content">

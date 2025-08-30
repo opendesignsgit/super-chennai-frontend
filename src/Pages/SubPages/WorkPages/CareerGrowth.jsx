@@ -8,13 +8,12 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import SliderWorkPage from "./SliderWorkPage";
+import { Helmet } from "react-helmet-async";
 
 export default function CareerGrowth() {
   const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
   const bgTextRef = useRef(null);
-
- 
 
   const benefitSections = [
     {
@@ -100,85 +99,6 @@ export default function CareerGrowth() {
     },
   ];
 
-  const images = [
-    {
-      src: "/images/Work-Images/SubPages/employment-slide.jpg",
-      title: "Business Permits",
-      link: "/work/business-registration-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/unicorns-slide.jpg",
-      title: "Unicorns",
-      link: "/work/unicorn-startups",
-    },
-    {
-      src: "/images/Work-Images/SubPages/co-workingspaces-slide.jpg",
-      title: "Co-working spaces",
-      link: "/work/coworking-space-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/PG-slide.jpg",
-      title: "Paying Guest",
-      link: "/work/pg-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Salaries-Benefits-slide.jpg",
-      title: "Salaries & Benefits",
-      link: "/work/chennai-job-salary",
-    },
-    {
-      src: "/images/Work-Images/SubPages/career-growth-slide.jpg",
-      title: "Career Growth",
-      link: "/work/job-opportunities-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Networking-slide.jpg",
-      title: "Networking",
-      link: "/networking",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Worklife-balance-slide.jpg",
-      title: "Work-Life balance",
-      link: "/work/working-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -197,6 +117,16 @@ export default function CareerGrowth() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Job Opportunity in Chennai: Careers Across Industries & Sectors
+        </title>
+        <meta
+          name="description"
+          content="Job opportunity in Chennai spans IT, manufacturing, and services, offering diverse career paths, competitive salaries, and growth for freshers & professionals alike."
+        />
+        <link rel="canonical" href="/work/job-opportunities-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -205,7 +135,8 @@ export default function CareerGrowth() {
             <div className="accodoamationBannerText">
               <h3>Career Growth </h3>
               <div className="breadCrum">
-                <Link to="/work-in-chennai"> Work </Link> - <a href="">Career Growth</a>
+                <Link to="/work-in-chennai"> Work </Link> -{" "}
+                <a href="">Career Growth</a>
               </div>
             </div>
           </div>
@@ -225,7 +156,7 @@ export default function CareerGrowth() {
               }`}
               ref={bgTextRef}
             >
-               <p>Work &nbsp; in Chennai &nbsp; Work &nbsp; in Chennai</p>
+              <p>Work &nbsp; in Chennai &nbsp; Work &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
               <h3>Career Growth</h3>

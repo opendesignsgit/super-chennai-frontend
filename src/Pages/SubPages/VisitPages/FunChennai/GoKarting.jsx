@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../../Components/SocialChennai";
 import Becameavolunteer from "../../../../Components/BecameAVolunteer";
 import VisitSlider from "../VisitSlider";
+import { Helmet } from "react-helmet-async";
 //################## DUMMY CONTENTS ###################################
 
 const imageSectionsTwo = [
@@ -55,46 +56,6 @@ const imageSectionsTwo = [
         ],
       },
 
-      // {
-      //   points: [
-      //     {
-      //       title: "What to Know Before You Go:",
-      //       para: [
-      //         "Wear closed shoes (no sandals/slippers)",
-      //         "Minimum age/height restrictions apply at most tracks",
-      //         "Early evenings or weekdays offer shorter wait times",
-      //         "Ideal for groups, dates, and weekend getaways",
-      //       ],
-      //       // imgs: "/images/Visit-Images/SubPages/gaming-arcade/ecr-speedway.jpg",
-      //     },
-      //   ],
-      // },
-      // {
-      //   points: [
-      //     {
-      //       title: "ECR Speedway – East Coast Road (Injambakkam)",
-      //       para: [
-      //         <>
-      //           <strong>Type:</strong> Outdoor Track
-      //         </>,
-      //         <>
-      //           {" "}
-      //           <strong>What to Expect:</strong>Professional-style circuit with
-      //           challenging turns and straights
-      //         </>,
-      //         <>
-      //           <strong> Karts:</strong> Variety of engines for beginners to
-      //           pros
-      //         </>,
-      //         <>
-      //           <strong> Why Visit:</strong>Most popular and established track
-      //           in Chennai; scenic location, open till late evening
-      //         </>,
-      //       ],
-      //       imgs: "/images/Visit-Images/SubPages/gaming-arcade/ecr-speedway.jpg",
-      //     },
-      //   ],
-      // },
       {
         points: [
           {
@@ -121,51 +82,6 @@ const imageSectionsTwo = [
           },
         ],
       },
-      // {
-      //   points: [
-      //     {
-      //       title: "Apex Racing Academy – Off OMR, near Padur",
-      //       para: [
-      //         <>
-      //           <strong>Type:</strong> Professional Karting & Training Facility
-      //         </>,
-      //         <>
-      //           {" "}
-      //           <strong>What to Expect: </strong> Racing classes, time-trial
-      //           challenges, performance karts
-      //         </>,
-      //         <>
-      //           <strong> Why Visit:</strong> Ideal for aspiring racers and those
-      //           interested in motorsports seriously
-      //         </>,
-      //       ],
-      //       // imgs: "/images/Visit-Images/SubPages/gaming-arcade/kart-attack.jpg",
-      //     },
-      //   ],
-      // },
-
-      // {
-      //   points: [
-      //     {
-      //       title: "ECR Go-Karting & Sports Complex – Akkarai",
-      //       para: [
-      //         <>
-      //           <strong>Type:</strong> Mixed-activity arena with karting,
-      //           paintball, and trampoline
-      //         </>,
-      //         <>
-      //           {" "}
-      //           <strong>Track:: </strong> Simple layout for casual racing
-      //         </>,
-      //         <>
-      //           <strong> Why Visit: </strong>Perfect for groups looking for more
-      //           than just go-karting
-      //         </>,
-      //       ],
-      //       imgs: "/images/Visit-Images/SubPages/beaches/elliot's-beach.jpg",
-      //     },
-      //   ],
-      // },
     ],
   },
 ];
@@ -198,64 +114,6 @@ const imageSections1 = [
   },
 ];
 
-const images = [
-  {
-    src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
-    title: "Accommodation",
-    link: "/visit/hotel-accommodation-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/food-slide.jpg",
-    title: "Restaurants",
-    link: "/visit/restaurants-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-    title: "Places to Visit",
-    link: "/visit/places-to-visit-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
-    title: "Things to Do",
-    link: "/things-to-do",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
-    title: "Itinerary",
-    link: "/visit/chennai-itinerary",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
-    title: "Hidden Gems",
-    link: "/hidden-gems",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
-    title: "Shopping",
-    link: "/visit/shopping-areas-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
-    title: "Travel Tips",
-    link: "/travel-tips",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
-    title: "Wellness ",
-    link: "/visit/wellness-centres-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/events-slide.jpg",
-    title: "Events ",
-    link: "/visit/events-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
-    title: "Conferences ",
-    link: "/visit/conferences-in-chennai",
-  },
-];
-
 export default function GoKarting() {
   /*#################### STATE VARIABLES ##################### */
 
@@ -264,14 +122,6 @@ export default function GoKarting() {
   const bgTextRef = useRef(null);
 
   /*#################### HELPERS  ##################### */
-
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageRightButton"></div>
-  );
 
   /*#################### USEEFFECT HOOCKS  ##################### */
 
@@ -285,78 +135,73 @@ export default function GoKarting() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const settings = {
-    dots: false,
-    autoplay: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      { breakpoint: 1100, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
-    ],
-  };
   {
     /*########################### RENDER   ######################### */
   }
 
   return (
-    <div className="FunchennaiDetailPage">
-      {/*#################### Banner ########################## */}
-      <div className="accaodomationBannerSection">
-        <img
-          src="/images/Visit-Images/SubPages/thingsDoChild/go-karting.jpg"
-          alt=""
-        />{" "}
-        <div className="accodoamationBannerContainer">
-          <div className="accodoamationBannerText">
-            <h3>GO - KARTING</h3>
-            <div className="breadCrum">
-              <Link to="/invest-in-chennai">Home</Link> - <span>GO - KARTING</span>
+    <>
+      <Helmet>
+        <title>Go Karting in Chennai : Thrill & Fun for Everyone</title>
+        <meta
+          name="description"
+          content="Looking for go karting in Chennai? Race, compete, and enjoy high-energy fun on well-designed tracks for all skill levels in the city."
+        />
+        <link rel="canonical" href="visit/things-to-do/go-karting-in-chennai" />
+      </Helmet>
+
+      <div className="FunchennaiDetailPage">
+        {/*#################### Banner ########################## */}
+        <div className="accaodomationBannerSection">
+          <img
+            src="/images/Visit-Images/SubPages/thingsDoChild/go-karting.jpg"
+            alt=""
+          />{" "}
+          <div className="accodoamationBannerContainer">
+            <div className="accodoamationBannerText">
+              <h3>GO - KARTING</h3>
+              <div className="breadCrum">
+                <Link to="/invest-in-chennai">Home</Link> -{" "}
+                <span>GO - KARTING</span>
+              </div>
+            </div>
+          </div>
+          <div className="notHomePageSearch">
+            <Search />
+          </div>
+        </div>
+
+        {/*#################### Intro ###########################*/}
+        <div className="visitIntroParaSection detailIntro">
+          <div className="container max-w-7xl mx-auto px-4">
+            <div
+              className={`CostOflivingBackground ${
+                scrollDir === "right"
+                  ? "scroll-rightCostofLiving"
+                  : "scroll-leftCostofLiving"
+              }`}
+              ref={bgTextRef}
+            >
+              <p>Where Tracks Turn into Thrills</p>
+            </div>
+            <div className="workIntro">
+              <h3>Where Tracks Turn into Thrills</h3>
+              <p>
+                Chennai’s top go-karting spots are built for fun, focus, and
+                friendly competition. Whether you're a beginner or chasing your
+                best lap time, these tracks deliver high-energy excitement in a
+                safe, well-designed environment.
+              </p>
             </div>
           </div>
         </div>
-        <div className="notHomePageSearch">
-          <Search />
-        </div>
-      </div>
 
-      {/*#################### Intro ###########################*/}
-      <div className="visitIntroParaSection detailIntro">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div
-            className={`CostOflivingBackground ${
-              scrollDir === "right"
-                ? "scroll-rightCostofLiving"
-                : "scroll-leftCostofLiving"
-            }`}
-            ref={bgTextRef}
-          >
-            <p>Where Tracks Turn into Thrills</p>
-          </div>
-          <div className="workIntro">
-            <h3>Where Tracks Turn into Thrills</h3>
-            <p>
-              Chennai’s top go-karting spots are built for fun, focus, and
-              friendly competition. Whether you're a beginner or chasing your
-              best lap time, these tracks deliver high-energy excitement in a
-              safe, well-designed environment.
-            </p>
-          </div>
-        </div>
-      </div>
+        {/*#################### MAIN CONTENT  ####################*/}
 
-      {/*#################### MAIN CONTENT  ####################*/}
-
-      <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec funchennai">
-        {imageSectionsTwo.map((section, index) => (
-          <section
-            className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+        <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec funchennai">
+          {imageSectionsTwo.map((section, index) => (
+            <section
+              className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
               ${
                 index % 2 === 0
                   ? "bg-white whitebgsec"
@@ -369,42 +214,44 @@ export default function GoKarting() {
                      ? "pattern-b"
                      : "pattern-c"
                  }`}
-            key={index}
-          >
-            <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
-              <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
-                {"Top Go-Karting Tracks in Chennai "}
-              </h2>
-              {section.tenantInfoSections.map((tenant, i) => (
-                <div key={i}>
-                  <h4 className="text-lg font-semibold mb-4">{tenant.title}</h4>
-                  {tenant.points.map((item, j) => (
-                    <div key={j} className="clcboxItemss flex mb-4">
-                      <div className="clcboxIImg">
-                        <img src={item.imgs} alt={item.title} />
+              key={index}
+            >
+              <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
+                <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+                  {"Top Go-Karting Tracks in Chennai "}
+                </h2>
+                {section.tenantInfoSections.map((tenant, i) => (
+                  <div key={i}>
+                    <h4 className="text-lg font-semibold mb-4">
+                      {tenant.title}
+                    </h4>
+                    {tenant.points.map((item, j) => (
+                      <div key={j} className="clcboxItemss flex mb-4">
+                        <div className="clcboxIImg">
+                          <img src={item.imgs} alt={item.title} />
+                        </div>
+                        <div className="clcboxICont">
+                          <h3>{item.title}</h3>
+                          <h5>{item.desc}</h5>
+                          <ul className="list-disc list-inside text-gray-600 space-y-1">
+                            {item.para.map((point, i) => (
+                              <li key={i}>{point}</li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
-                      <div className="clcboxICont">
-                        <h3>{item.title}</h3>
-                        <h5>{item.desc}</h5>
-                        <ul className="list-disc list-inside text-gray-600 space-y-1">
-                          {item.para.map((point, i) => (
-                            <li key={i}>{point}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </section>
-        ))}
-      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
 
-      <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
-        {imageSections1.map((section, index) => (
-          <section
-            className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+        <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
+          {imageSections1.map((section, index) => (
+            <section
+              className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
               ${
                 index % 2 === 0
                   ? "bg-white whitebgsec"
@@ -417,47 +264,50 @@ export default function GoKarting() {
                      ? "pattern-b"
                      : "pattern-c"
                  }`}
-            key={index}
-          >
-            <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
-              <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
-                {" "}
-              </h2>
-              {section.tenantInfoSections.map((tenant, i) => (
-                <div key={i}>
-                  <h4 className="text-lg font-semibold mb-4">{tenant.title}</h4>
-                  {tenant.points.map((item, j) => (
-                    <div key={j} className="clcboxItemss flex mb-4">
-                      <div className="clcboxIImg">
-                        <img src={item.imgs} alt={item.title} />
+              key={index}
+            >
+              <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
+                <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+                  {" "}
+                </h2>
+                {section.tenantInfoSections.map((tenant, i) => (
+                  <div key={i}>
+                    <h4 className="text-lg font-semibold mb-4">
+                      {tenant.title}
+                    </h4>
+                    {tenant.points.map((item, j) => (
+                      <div key={j} className="clcboxItemss flex mb-4">
+                        <div className="clcboxIImg">
+                          <img src={item.imgs} alt={item.title} />
+                        </div>
+                        <div className="clcboxICont">
+                          <h3>{item.title}</h3>
+                          <h5>{item.desc}</h5>
+                          <ul className="list-disc list-inside text-gray-600 space-y-1">
+                            {item.para.map((point, i) => (
+                              <li key={i}>{point}</li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
-                      <div className="clcboxICont">
-                        <h3>{item.title}</h3>
-                        <h5>{item.desc}</h5>
-                        <ul className="list-disc list-inside text-gray-600 space-y-1">
-                          {item.para.map((point, i) => (
-                            <li key={i}>{point}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </section>
-        ))}
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+
+        {/* ########## EXPLORE MORE CHENNAI SLIDER ############### */}
+
+        <VisitSlider />
+
+        {/*################## SOCIAL MARQUE SECTION################ */}
+        <div className="AccomodationInstaReel">
+          <InstagramReelsMarquee />
+        </div>
+        <Becameavolunteer />
       </div>
-
-      {/* ########## EXPLORE MORE CHENNAI SLIDER ############### */}
-
-      <VisitSlider />
-
-      {/*################## SOCIAL MARQUE SECTION################ */}
-      <div className="AccomodationInstaReel">
-        <InstagramReelsMarquee />
-      </div>
-      <Becameavolunteer />
-    </div>
+    </>
   );
 }

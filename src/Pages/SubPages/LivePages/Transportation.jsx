@@ -361,41 +361,7 @@ export default function Transportation() {
     },
   ];
 
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
 
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {

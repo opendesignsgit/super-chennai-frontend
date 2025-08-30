@@ -171,8 +171,9 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 6,
-    metaTitleEvent: "Gaming Dhinesh Title",
-    metaDescriptionEvent: "Gaming Dhinesh Description",
+    metaTitleEvent: "Chennai Events/Gaming Thiruvizha in Chennai/Super Chennai",
+    conicallinkEvent: "/eventsdetails/6",
+    metaDescriptionEvent: "Chennai Events – Don’t miss Gaming Thiruvizha, Chennai’s vibrant gaming and pop‑culture festival with cosplay, anime, esports & more, August 30–31.",
     EventsCalendarTitle: "Gaming Thiruvizha",
     EventsCalendarContent:
       "Gaming Thiruvizha is India’s flagship pop culture...",
@@ -254,20 +255,32 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 10,
-    EventsCalendarTitle: "Coffee Conversations",
-    EventsCalendarContent: "Gather in a snug corner of warmth and comfort...",
-    EventsCalendarMonth: "15 Aug 2025",
-    EventsCalendarTime: "6:19 PM",
-    EventsCalendarCategory: "Business, Dating, Meetups",
-    image: "/images/HomePage-Images/Events/Newevents/144.jpg",
+    siteLink: "https://reg.myraceindia.com/MRTS1/foodathon",
+    EventsCalendarTitle: "Foodathon 4.0 ",
+    EventsCalendarContent:
+      "When music meets food, it turns into more than just an event...",
+    EventsCalendarMonth: "28 Sep, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Food Festival",
+    image: "/images/HomePage-Images/Events/Newevents/168.jpg",
     link: "",
-    location: "Third Wave Coffee - Inorbit Mall: Hyderabad",
-    language: "Bengali, English, Hindi, Kannada, Malaya...",
-    hours: "1 Hour",
-    ageLimit: "All age groups",
-    price: "₹399 onwards",
-    aboutFull:
-      "Gather in a snug corner of warmth and comfort, cradling mugs of aromatic coffee that promise to soothe the soul. 'Coffee Conversations' is an intimate get-together for those seeking to forge new friendships and indulge in rich, engaging conversations.Nestle into plush cushions and let the velvety whispers of steam rising from your cup invite open-hearted dialogues. If the idea of bonding over the comforting embrace of coffee entices you, come be part of `Coffee Conversations`, where every sip weaves a stronger connection.",
+    location: "Chennai, Tamil Nadu",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    price: "₹899 onwards",
+    aboutFull: `
+      <p>Foodathon 4.0 is India’s first awareness run dedicated to tackling food loss and food waste, organized by No Food Waste Chennai Region. Participants can choose from 2K, 5K, and 10K categories, making it suitable for runners of all levels. By joining this unique run, you’re not only promoting a healthier lifestyle but also contributing to a vital cause—reducing food waste in our communities.</p>
+      
+      <p>All registrants will receive a Dry Fit T-shirt, a finisher medal, an e-certificate, and access to refreshments, hydration points, and medical support throughout the event.</p>
+
+      <p> <strong> Registration Fees – Foodathon 4.0 </strong></p>
+
+
+      <p>2KM Non-Timed Run: ₹499 + processing fee</p>
+      <p>5KM Timed Run: ₹699 + processing fee</p>
+      <p>10KM Timed Run: ₹799 + processing fee</p>
+      `,
   },
   {
     id: 11,
@@ -289,6 +302,9 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 12,
+    metaTitleEvent: "Workshops in Chennai/Clay Miniature Workshop/Super Chennai",
+     conicallinkEvent: "/eventsdetails/12",
+    metaDescriptionEvent: "Looking for creative Workshops in Chennai? Join the Clay Miniature Magnet Workshop in Kilpauk on Aug 30 and handcraft your own fridge magnet! Book now.",
     siteLink:
       "https://in.bookmyshow.com/events/clay-miniature-magnet/ET00411633",
     EventsCalendarTitle: "Clay miniature magnet",
@@ -471,6 +487,9 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 22,
+    metaTitleEvent: "Liam Payne Show / One Direction Tribute / Events in Chennai",
+    conicallinkEvent: "/eventsdetails/22",
+    metaDescriptionEvent: "Calling all Directioners for the One-Direction-Tribute in Chennai on Aug 30 at 2:30 PM—Liam Payne vibes, music, and more. Tickets ₹450. Book now!",
     siteLink:
       "https://in.bookmyshow.com/events/one-direction-tribute-directioners-rave/ET00452486",
     EventsCalendarTitle: "ONE DIRECTION TRIBUTE -ECHOES OF PAYNO",
@@ -509,21 +528,29 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 24,
-    siteLink: "https://in.bookmyshow.com/events/resin-beach-art/ET00400406",
-    EventsCalendarTitle: "Resin Art Workshop",
-    EventsCalendarContent: "Unleash your creativity with the glossy magic...",
-    EventsCalendarMonth: "12 Aug 2025",
-    EventsCalendarTime: "1:00 PM",
-    EventsCalendarCategory: "Arts and Crafts, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/130.jpg",
+    siteLink:
+      "https://www.instagram.com/thehindu_madeofchennai/reel/DNcjjafgVvo/?hl=en",
+    EventsCalendarTitle: "The Hindu – Made of Chennai",
+    EventsCalendarContent:
+      "When music meets food, it turns into more than just an event...",
+    EventsCalendarMonth: "13 – 14 Nov, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Music, Concerts",
+    image: "/images/HomePage-Images/Events/Newevents/169.jpg",
     link: "",
-    location: "Dices And Drama: Chennai",
-    language: "Bengali, English, Hindi, Kannada, Malaya...",
-    hours: "1 Hour",
-    ageLimit: "All age groups",
-    price: "₹1299",
-    aboutFull:
-      "Unleash your creativity with the glossy magic of resin! In this hands-on workshop, you’ll learn how to craft stunning coasters, trays, or abstract art using vibrant pigments, glitter, and textures. Whether you’re an artist or a curious beginner, you’ll walk away with your own shiny, unique masterpiece made by you.",
+    location: "YMCA, Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    price: "₹899 onwards",
+    aboutFull: `
+      <p>When music meets food, it turns into more than just an event — it becomes a true celebration of Chennai! With soulful tunes, mouthwatering flavours, and the city’s vibrant spirit, this festival brings Chennai alive like never before.</p>
+      
+      <p>Organised By</p>
+      <p>The Hindu – Made of Chennai</p>
+      <p>Entry & Registration
+Entry is free for all, but prior registration is mandatory. Registrations open on 8 September — secure your spot early and don’t miss this grand Chennai celebration!</p>
+      `,
   },
   {
     id: 25,
@@ -673,22 +700,25 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   {
     id: 33,
     siteLink:
-      "https://in.bookmyshow.com/events/clay-modelling-workshop/ET00383554",
-    EventsCalendarTitle: "Clay Modelling workshop",
+      "https://www.district.in/events/sid-sriram-live-in-concert-chennai-november-2025-buy-tickets",
+    EventsCalendarTitle: "Sid Sriram Live in Concert | Chennai",
     EventsCalendarContent:
-      "Step into the world of artistic expression with our Clay...",
-    EventsCalendarMonth: "12 Aug – 30 Aug, 2025",
-    EventsCalendarTime: "2:00 PM",
-    EventsCalendarCategory: "Arts and Crafts",
-    image: "/images/HomePage-Images/Events/Newevents/121.jpg",
-    link: "/eventsmain",
-    location: "Dices And Drama, Chennai",
-    language: "Bengali, English, Hindi, Kannada, Malayalam...",
-    hours: "1 Hour",
-    ageLimit: "All age groups",
+      "Some voices don’t just sing, they heal — and Sid Sriram’s voice is...",
+    EventsCalendarMonth: "29 Nov, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Music, Concerts",
+    image: "/images/HomePage-Images/Events/Newevents/171.jpg",
+    link: "",
+    location: "YMCA, Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
     price: "₹899 onwards",
-    aboutFull:
-      "Step into the world of artistic expression with our Clay Modeling Workshop, a hands-on experience designed to unleash your creativity and provide a therapeutic escape through the art of clay modeling. Suitable for beginners and seasoned artists alike, this workshop offers a perfect opportunity to delve into the tactile and rewarding process of shaping clay into beautiful forms. Our experienced instructors provide professional guidance, personalized attention, and tips to enhance your sculpting skills. All materials are provided, including high-quality clay, sculpting tools, and various molds to help bring your vision to life, whether traditional pottery or modern sculptures. Enjoy creative freedom with thematic guidance while exploring your imagination to create anything from intricate figurines to abstract art. Beyond art, clay modeling is a relaxing and therapeutic process that helps relieve stress and promotes mindfulness as you focus on the tactile material in your hands.",
+    aboutFull: `
+      <p>Some voices don’t just sing, they heal — and Sid Sriram’s voice is one of them. His concerts are more than just stage performances; they are soulful journeys where every song feels personal, yet connects to thousands at once. With his unique ability to blend classical depth, contemporary energy, and heartfelt emotions, Sid creates a musical atmosphere that feels raw, pure, and magical. The way his voice flows between languages and genres makes each moment unforgettable, touching both the heart and soul.</p>
+      
+      <p>From gentle melodies that bring goosebumps to powerful live jams that electrify the crowd, every note from Sid Sriram is an experience on its own. His music is not just heard, it is felt — in the silence between beats, in the harmony of emotions, and in the collective energy of the audience singing along. Step into this unforgettable night and witness how sound transforms into emotion, rhythm turns into memory, and a concert becomes a celebration of music itself. ✨</p>
+      `,
   },
   {
     id: 34,
@@ -729,22 +759,31 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   {
     id: 36,
     siteLink:
-      "https://in.bookmyshow.com/events/clay-miniature-workshop/ET00411338",
-    EventsCalendarTitle: "Clay miniature workshop",
+      "https://docs.google.com/forms/d/e/1FAIpQLSdklrpjtrzRgr_LhmH_zXf4tfu70NJZ18nuUd9vObd03KvT1w/viewform",
+    EventsCalendarTitle: "Chennai Bus Treasure Hunt",
     EventsCalendarContent:
-      "Create tiny wonders with your hands in our hands-on clay miniature....",
-    EventsCalendarMonth: "15 Aug – 31 Aug, 2025",
-    EventsCalendarTime: "2:33 PM",
-    EventsCalendarCategory: "Arts and Crafts",
-    image: "/images/HomePage-Images/Events/Newevents/118.jpg",
-    link: "/eventsmain",
-    location: "Dices And Drama, Chennai",
-    language: "English",
-    hours: "2 Hours",
-    ageLimit: "All age groups",
-    price: "₹899",
-    aboutFull:
-      "Create tiny wonders with your hands in our hands-on clay miniature workshop. Learn techniques to craft exquisite miniature sculptures under the guidance of our skilled instructor as you explore the intricacies of working with clay on a small scale.",
+      "Ever wondered what beauty lies just beneath the surface?....",
+    EventsCalendarMonth: "30 Aug, 2025",
+    EventsCalendarTime: "10:00 AM",
+    EventsCalendarCategory: "Treasure Hunt",
+    image: "/images/HomePage-Images/Events/Newevents/170.jpg",
+    link: "",
+    location: " MTC Headquarters, Pallavan Salai, Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    price: "₹899 onwards",
+    aboutFull: `
+      <p>Get ready, Chennai! 🎉 The MTC Bus Treasure Hunt is back this Madras Month, bringing you an exciting adventure across the city. Starting from the iconic MTC Headquarters (Pallavan House), participants will embark on a fun-filled treasure hunt packed with clues, challenges, and surprises along the way.</p>
+      
+      <p>It’s not just about the thrill of the chase — there are amazing cash prizes waiting for the winners. Whether you’re in it for the fun, the challenge, or the reward, this event promises to be one-of-a-kind. Bring your team spirit, quick thinking, and love for Chennai as you join this unique celebration.</p>
+      
+      <p><strong>🏆 Cash Prizes Await:</strong></p>
+      <p><strong>🥇 1st Prize – ₹10,000</strong></p>
+      <p><strong>🥈 2nd Prize – ₹6,000</strong></p>
+      <p><strong>🥉 3rd Prize – ₹4,000</strong></p>
+      <p>👉 To register, simply scan the QR code and secure your spot in the hunt!</p>
+    `,
   },
   {
     id: 37,
@@ -766,45 +805,46 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 38,
-
-    siteLink: "https://in.bookmyshow.com/events/acrylic-painting/ET00392281",
-    EventsCalendarTitle: "Acrylic Affair",
-    EventsCalendarContent: "Ready to ditch the ordinary and dip your brush...",
-    EventsCalendarMonth: "12 Aug – 31 Aug, 2025",
-    EventsCalendarTime: "3:00 PM",
-    EventsCalendarCategory: "Arts and Crafts",
-    image: "/images/HomePage-Images/Events/Newevents/115.jpg",
-    link: "/eventsmain",
-    location: "Dices And Drama, Chennai",
-    language: "English",
-    hours: "1 hour 30 minutes",
+    siteLink: "https://in.bookmyshow.com/events/sgraffito-pottery/ET00449867",
+    EventsCalendarTitle: "Scratch Pottery",
+    EventsCalendarContent:
+      "Ever wondered what beauty lies just beneath the surface?....",
+    EventsCalendarMonth: "12 Aug – 19 Aug, 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/147.jpg",
+    link: "",
+    location: "Small World: S.T. Bed, Koramangala",
+    language: "English, Hindi",
+    hours: "2 Hours",
     ageLimit: "All age groups",
     price: "₹899 onwards",
     aboutFull:
-      "Ready to ditch the ordinary and dip your brush into something bold? Join us for Acrylic Affair – a vibrant painting workshop where everyone’s an artist, even if your last masterpiece was in 3rd grade. Enjoy zero rules and maximum creativity—whether you’re into sunsets or splatter art, your canvas equals your vibe. Our pro artists will guide you with tips and tricks, not grades. All materials are provided, so just show up ready for messy fun. Meet your creative crew, make art and friends, and maybe even plan your weekend. Bonus: BYOB-friendly vibes if the venue allows. No pressure, just paint—and take home your own frame-worthy creation. Limited seats, infinite colors. Book now and let your inner Picasso run wild!",
+      "Ever wondered what beauty lies just beneath the surface? Join us for a hands-on Sgraffito Workshop, where you’ll carve through layers of color to reveal stunning contrasts and patterns. This ancient art form, used in pottery, murals, and design, teaches us that sometimes uncovering depth takes just a little scratch. You’ll learn how to layer pigments or slips, master techniques to etch your own designs, and explore the philosophy of “subtracting to reveal.” Whether you’re a seasoned creator or a curious beginner, this workshop is all about mindfulness, expression, and uncovering hidden beauty.",
   },
   {
     id: 39,
-    siteLink:
-      "https://in.bookmyshow.com/events/diy-fridge-magnet-workshop/ET00409013",
-    EventsCalendarTitle: "DIY Fridge Magnet Workshop",
+    EventsCalendarTitle: "Crochet Workshop",
     EventsCalendarContent:
-      "Create something magnetic! Join us for a fun and...",
-    EventsCalendarMonth: "12 Aug – 21 Aug, 2025",
-    EventsCalendarTime: "2:00 PM",
-    EventsCalendarCategory: "Arts and Crafts",
-    image: "/images/HomePage-Images/Events/Newevents/116.jpg",
-    link: "/eventsmain",
-    location: "Third Wave Coffee - Inorbit Mall, Hyderabad",
-    language: "",
+      "Happy Crocheting! ❤️ Here’s our beginner-friendly....",
+    EventsCalendarMonth: "17 Aug 2025",
+    EventsCalendarTime: "4:30 PM",
+    EventsCalendarCategory: "Arts and Crafts, Home Decor, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/148.jpg",
+    link: "",
+    location: "House of Games, Kilpauk: Chennai",
+    language: "English, Tamil",
     hours: "2 Hours",
-    ageLimit: "",
-    price: "₹799 onwards",
+    ageLimit: "12yrs +",
+    price: "₹1999",
     aboutFull:
-      "Create something magnetic! Join us for a fun and hands-on DIY fridge magnet workshop perfect for seasoned crafters and beginners alike. You’ll be guided step-by-step to create unique fridge magnets using a variety of materials and techniques including painting, decoupaging, and embellishments, allowing you to customize your magnets to your own style. Learn basic crafting techniques, how to use different materials and tools, and how to design personalized pieces. All necessary materials and expert guidance are provided, and you’ll take home your finished fridge magnet. Don’t miss this chance to have fun, learn new skills, and create a one-of-a-kind piece of art!",
+      "Happy Crocheting! ❤️ Here’s our beginner-friendly art workshop where our instructor will guide you step-by-step, helping you comfortably navigate the creative process at your own pace. All materials are provided, and you can work at a flexible pace — finish quickly or take your time. Enjoy a relaxed, creative space whether you come solo, as a couple, with friends, or family, and get 50% of your venue payment back as food credit to enjoy delicious refreshments while you create. With 1:1, 2:1, or 3:1 formats, you’ll receive personalized attention in a small group setting, and leave with new skills and your own handmade masterpiece. Prior registration needed; for queries contact the café.",
   },
   {
     id: 40,
+    metaTitleEvent: "Events in Chennai / Epic Date Pass / Super Chennai",
+    conicallinkEvent: "/eventsdetails/40",
+    metaDescriptionEvent: "Looking for exciting events in Chennai? Don’t miss the Epic Date Pass on 30 Aug at 3 PM—an immersive experience for fun seekers. Entry ₹2999.Book Now.",
     siteLink: "https://in.bookmyshow.com/events/epic-date-pass/ET00429104",
     EventsCalendarTitle: "Epic Date Pass",
     EventsCalendarContent:
@@ -842,6 +882,9 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 42,
+    metaTitleEvent: "Comedy Sabha / Tanglish Comedy / Standup Comedy in Chennai",
+    conicallinkEvent: "/eventsdetails/42",
+    metaDescriptionEvent: "Comedy Sabha by Tanglish Comedy brings Tamil‑English Tanglish standup to Chennai. Laughs, sketches, and high energy—don’t miss this mini‑show!",
     siteLink:
       "https://in.bookmyshow.com/events/comedy-sabha-presented-by-tanglishcomedy/ET00342723",
     EventsCalendarTitle: "Comedy Sabha by @tanglishcomedy",
@@ -966,6 +1009,9 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 49,
+    metaTitleEvent: "Workshops in Chennai, Rage Therapy, Japanese Art of Kintsugi",
+    conicallinkEvent: "/eventsdetails/49",
+    metaDescriptionEvent: "Looking for unique Workshops in Chennai? Join Rage Therapy—smash ceramics and repair them using Kintsugi, Japan’s art of golden mending.",
     siteLink: "https://in.bookmyshow.com/events/rage-therapy/ET00456435",
     EventsCalendarTitle: "Rage Therapy",
     EventsCalendarContent:
@@ -1024,6 +1070,9 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 52,
+    metaTitleEvent: "Events in Chennai, workshops in Chennai, Tote Bag Painting",
+    conicallinkEvent: "/eventsdetails/52",
+    metaDescriptionEvent: "Discover creative Workshops in Chennai! Join the Tote Bag Painting Workshop on Aug 30 at 1:00 PM in Kilpauk. Just ₹899. Reserve your spot now!",
     siteLink:
       "https://in.bookmyshow.com/events/tote-bag-painting-party/ET00370989",
     EventsCalendarTitle: "Tote Bag Painting",
@@ -1044,6 +1093,9 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 53,
+    metaTitleEvent: "Chennai Events/Cuff and Paint event in Chennai/Super Chennai",
+    conicallinkEvent: "/eventsdetails/53",
+      metaDescriptionEvent: "Chennai Events – Experience Cuff & Paint, a whimsical couples’ art workshop in Chennai where creativity and fun go hand‑in‑hand at Wiggle Room.",
     EventsCalendarTitle: "Cuff And Paint",
     siteLink: "https://in.bookmyshow.com/events/cuff-and-paint/ET00457713",
     EventsCalendarContent: "Get ready for the quirkiest art date ever!...",
@@ -1097,6 +1149,9 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 56,
+    metaTitleEvent: "Workshops in Chennai/Pottery Workshop/Art & Craft Workshops",
+    conicallinkEvent: "/eventsdetails/56",
+    metaDescriptionEvent: "Join unique Art & Craft Workshops in Chennai! Try the blindfolded Pottery Workshop at Dices & Drama, Aug 12–Sep 21, 2:15 PM. ₹899 per person. Book now!",
     siteLink: "https://in.bookmyshow.com/events/blindfolded-pottery/ET00451209",
     EventsCalendarTitle: "Blindfolded Pottery",
     EventsCalendarContent:
@@ -1330,43 +1385,25 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
 
   {
     id: 68,
-    siteLink: "https://in.bookmyshow.com/events/gemini-circus/ET00437980",
-    EventsCalendarTitle: "Gemini Circus",
+    metaTitleEvent: "Events in Chennai, Workshops in Chennai, Neon Painting Party",
+    conicallinkEvent: "/eventsdetails/68",
+    metaDescriptionEvent: "Chennai Events: Neon Painting Party offers a glowing art experience using fluorescent paints. No experience needed—bring creativity and join the fun!",
+    siteLink: "https://in.bookmyshow.com/events/neon-painting-party/ET00457231",
+    EventsCalendarTitle: "Neon Painting  Party",
     EventsCalendarContent:
-      "Embark on a journey of nostalgia and modern marvels...",
-    EventsCalendarMonth: "11 Aug – 15 Sep, 2025",
-    EventsCalendarTime: "2 Hours",
-    EventsCalendarCategory: "Circus, Kids",
-    image: "/images/HomePage-Images/Events/Newevents/86.jpg",
-    link: "/eventsmain",
-    location: "Ashramam Ground: Kollam",
-    language: "English, Kannada, Tamil, Hindi",
-    hours: "",
-    ageLimit: "All age groups",
-    price: "₹350",
-    aboutFull: `
-  Embark on a journey of nostalgia and modern marvels as Gemini Circus sets the stage for an unforgettable experience!
-
-  Circus Nostalgia Reimagined:
-  Remember the days of Mera Naam Joker? Now, relive that magic with Gemini Circus in town! Get ready for a nostalgic walk down memory lane infused with a modern touch.
-
-  Sensational Acts Await:
-  Prepare to be spellbound by top international acrobats, gymnasts, and artists showcasing their breathtaking talents. From the cutting-edge Laser Man's mesmerizing light show to the graceful Aerial Hair Hanging, every act promises to leave you in awe.
-
-  Modern Marvels:
-  Experience the funky and fun Human Slinky, witness magical Wardrobe Changes that will leave you guessing, and hold your breath for the fearless Wheel of Death. Gemini Circus brings you a spectacle of modern marvels that will keep you on the edge of your seat.
-
-  Gemini Circus Excellence:
-  Step into the world of Gemini Circus, where skill, courage, and wonder collide to create an unparalleled show. And the best part? It's all without animals, focusing solely on the incredible talents of the performers.
-
-  Unleash the Magic:
-  Leave your worries at the door and immerse yourself in an evening of pure entertainment. Whether you're young or young at heart, Gemini Circus promises a show like never before. Get ready to be amazed, delighted, and captivated by the magic under the big top!
-
-  Don't Miss Out:
-  The ultimate circus experience awaits you. Grab your tickets now and join us for an evening filled with wonder, excitement, and memories to last a lifetime. Gemini Circus — where the past meets the future in a dazzling display of talent and entertainment!
-
-  Gemini Circus: Where Memories Meet Modern Marvels!
-  `,
+      "Step into a world where creativity meets fun Our....",
+    EventsCalendarMonth: "13 Aug – 27 Aug, 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Arts and Crafts, Workshops",
+    image: "/images/HomePage-Images/Events/Newevents/150.jpg",
+    link: "",
+    location: "Wiggle Room: Chennai",
+    language: "English,Tamil",
+    hours: "1 Hour",
+    ageLimit: "Age Limit - 5yrs +",
+    price: "₹899",
+    aboutFull:
+      "Step into a world where creativity meets fun Our Neon Painting Workshop is a one of a kind art experience where you create glowing masterpieces using fluorescent paints. Whether you are a seasoned artist or just looking to try something fun and vibrant, this workshop is all about expression, fun, and unforgettable memories.",
   },
 
   {
@@ -1440,6 +1477,9 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
 
   {
     id: 71,
+    metaTitleEvent: "Events in Chennai/ Hukum World Tour/Anirudh Concert",
+    conicallinkEvent: "/eventsdetails/71",
+    metaDescriptionEvent: "Experience the electrifying Anirudh Concert in Chennai as the Hukum World Tour concludes with a grand finale—don’t miss this iconic event in Chennai!",
     siteLink:
       "http://district.in/events/hukum-world-tour-chennai-august-2025-buy-tickets",
     EventsCalendarTitle: "Hukum World Tour Grand Finale",
@@ -1467,88 +1507,59 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
 
   {
     id: 72,
-    siteLink: "https://in.bookmyshow.com/events/clay-phone-charms/ET00439913",
-    EventsCalendarTitle: "Clay Labubu Doll",
+    EventsCalendarTitle: "ARR UnPlugged",
     EventsCalendarContent:
-      "From imagination to creation — sculpt your own viral Labubu doll!",
-    EventsCalendarMonth: "9-31 Aug, 2025",
-    EventsCalendarTime: "2:00 PM",
-    EventsCalendarCategory: "Arts and Crafts, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/61.jpg",
-    link: "/eventsmain",
-    location: "Epitome: Pune",
-    language: "English, Hindi, Bengali, Kannada, Malayalam",
-    hours: "1 Hour",
+      "Aug 16th a super treat awaits you at medai alwarpet...",
+    EventsCalendarMonth: "16 Aug 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Concerts, Music Festivals, Music Shows",
+    image: "/images/HomePage-Images/Events/Newevents/152.jpg",
+    link: "",
+    location: "Medai - The Stage, Alwarpet: Chennai",
+    language: "Tamil, Hindi",
+    hours: "2 hours 30 minutes",
     ageLimit: "All age groups",
-    price: "₹899 onwards",
-    aboutFull: `
-    Step into the world of viral cuteness! In this hands-on workshop, you'll learn to sculpt your very own Labubu doll using polymer clay.,
-    No prior experience needed — just bring your creativity, and we'll help you bring this mischievous character to life.,
-    All materials provided.,
-    Take home your handmade Labubu.,
-    Perfect for content and collectors!,
-    Limited slots. Book now and bring your imagination to life!,
-  `,
+    price: "₹299 onwards",
+    aboutFull:
+      "Aug 16th a super treat awaits you at medai alwarpet ARR unplugged celebrating the genius with songs from his movies in Tamil and Hindi unplugged with battalion of young and vibrant singers don't miss the show at 7 pm",
   },
 
   {
     id: 73,
-
-    siteLink:
-      "https://in.bookmyshow.com/events/clay-trinket-tray-workshop/ET00416123",
-    EventsCalendarTitle: "Clay Trinket Tray Workshop",
-    EventsCalendarContent: "Clay Trinket Tray Making Workshop...",
-    EventsCalendarMonth: "9–20 Aug, 2025",
+    EventsCalendarTitle: "Couples' Art Workshop",
+    EventsCalendarContent:
+      "Join us for a Date Night Painting Party, a fun-filled....",
+    EventsCalendarMonth: "12 Aug – 31 Aug, 2025",
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Arts and Crafts, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/66.jpg",
-    link: "/eventsmain",
-    location: "Queens and Beans: Hyderabad",
-    language: "",
+    image: "/images/HomePage-Images/Events/Newevents/151.jpg",
+    link: "",
+    location: "Dices And Drama: Chennai",
+    language: "English, Hindi, Kannada, Malayalam, Beng...",
     hours: "2 Hours",
     ageLimit: "All age groups",
-    price: "₹799 onwards",
-    aboutFull: `
-    Clay Trinket Tray Making Workshop.,
-    Discover the Joy of Creating.,
-    Join us for a hands-on workshop where you'll learn the art of crafting beautiful clay trinket trays.,
-    Under the guidance of our experienced instructors, you'll explore various techniques to shape, mold, and decorate your own unique piece.,
-    What you'll learn:,
-    * Basic clay techniques: Roll, pinch, and slab to create different shapes.,
-    * Decorative techniques: Add texture, patterns, and embellishments to your tray.,
-    * Learn the process of finishing.,
-    What to expect:,
-    * Creative freedom: Experiment with different clay colors, textures, and designs.,
-    * Unique results: Create a one-of-a-kind trinket tray that reflects your personal style.,
-    * Relaxing atmosphere: Enjoy a fun and stress-free environment as you create.,
-    All materials are provided, including clay, tools, and glazes.,
-    Join us for a delightful and unforgettable experience!,
-  `,
+    price: "₹1599",
+    aboutFull:
+      "Join us for a Date Night Painting Party, a fun-filled evening of art, laughter, and romance where you and your special someone can dive into a vibrant world of colors and create something beautiful together. No prior painting skills are needed—just an open mind and a desire to enjoy the process. In a cozy, laid-back atmosphere with soft music setting the mood, our professional artist will guide you step-by-step to create your own masterpieces on canvas, whether individually or as a shared piece. It’s all about bonding over brush strokes, sparking creativity, and making unforgettable memories. This is not just another date night—it’s a Date Night Painting Party, where you’ll discover, create, and love, leaving with not only beautiful paintings but beautiful memories too.",
   },
 
   {
     id: 74,
-    EventsCalendarTitle: "Resin Beach Art",
+    EventsCalendarTitle: "Kal ki Chinta Nahi Karta ft. Ravi Gupta",
     EventsCalendarContent:
-      "Dive into the captivating world of resin art with our..",
-    EventsCalendarMonth: "9–31 Aug, 2025",
-    EventsCalendarTime: "2:00 PM",
-    EventsCalendarCategory: "Arts and Crafts, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/63.jpg",
+      "Forget your Kal ki Chinta and Join us in this super funny Show by Ravi Gupta.",
+    EventsCalendarMonth: "5 Jul – 12 Aug, 2025",
+    EventsCalendarTime: "07:00 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image:
+      "/images/HomePage-Images/Events/Newevents/kal-ki-chinta-nahi-karta-ft-ravi-gupta.jpg",
     link: "/eventsmain",
-    location: "Dices And Drama: Chennai",
-    language: "Bengali, English, Hindi, Kannada, Malayalam",
-    hours: "1 Hour",
-    ageLimit: "All age groups",
-    price: "₹1299 onwards",
-    aboutFull: `
-    Dive into the captivating world of resin art with our hands-on Resin Beach Art workshop!,
-    Perfect for both beginners and experienced artists, this event is designed to unlock your creative potential through the vibrant and versatile medium of resin.,
-    Under the guidance of experienced instructors, you'll learn the fundamentals of working with resin, including safety tips, mixing techniques, color blending, and molding.,
-    Our focus will be on creating stunning beach-themed art pieces, capturing the essence of the ocean with waves, sand, and sea-inspired colors.,
-    By the end of the session, you'll have crafted your own mesmerizing piece of resin beach art to take home — whether it's a beautiful seascape, a beach-themed tray, or an abstract ocean-inspired masterpiece.,
-    Join us for an afternoon of creativity, relaxation, and fun, and discover the endless possibilities that resin beach art offers!,
-  `,
+    location: "Shanmukhananda Hall: Chennai",
+    language: "Hindi",
+    hours: "1 hour 30 minutes",
+    ageLimit: "6 years +",
+    rleigion: "",
+    aboutFull: `Forget your Kal ki Chinta and Join us in this super funny Show by Ravi Gupta. Kal Ki Chinta Nahi Karta is new stand up special by Ravi Gupta.`,
   },
 
   {
@@ -1658,31 +1669,29 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
 
   {
     id: 78,
-
-    siteLink: "https://in.bookmyshow.com/events/jumbo-circus/ET00450043",
-    EventsCalendarTitle: "JUMBO CIRCUS",
-    EventsCalendarContent: "Gather in a snug corner of warmth and comfort,...",
-    EventsCalendarMonth: "8–20 Aug, 2025",
-    EventsCalendarTime: "7:00 PM",
-    EventsCalendarCategory: "Circus",
-    image: "/images/HomePage-Images/Events/Newevents/68.jpg",
+    EventsCalendarTitle: "Vikramjit Singh - Talking & Touring",
+    EventsCalendarContent: "Vikramjit Singh is none of these things and more.",
+    EventsCalendarMonth: "12 Jul – 16 Aug, 2025",
+    EventsCalendarTime: "08:00 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image:
+      "/images/HomePage-Images/Events/Newevents/vikramjit-singh-talking-touring.jpg",
     link: "/eventsmain",
-    location: "Anaathai Madam Ground: Nagercoil",
-    language: "",
-    hours: "2 Hours",
-    ageLimit: "Age Limit - 3yrs +",
-    rleigion: "English, Kannada, Tamil, Hindi",
-    aboutFull: `
- 
-    Embark on a journey of nostalgia and modern marvels as Jumbo Circus sets the stage for an unforgettable experience!
-
-    Now, relive that magic with Jumbo Circus in town! Get ready for a nostalgic walk down memory lane infused with a modern touch. The ultimate circus experience awaits you. Grab your tickets now and join us for an evening filled with wonder, excitement, and memories to last a lifetime. Jumbo Circus, where the past meets the future in a dazzling display of talent and entertainment!
-
-    `,
+    location: "The J Spot, Juhu: Chennai",
+    language: "Hindi, English",
+    hours: "1 hour 20 minutes",
+    ageLimit: "16years +",
+    rleigion: "Comedy",
+    aboutFull: `Ideal husband, doting father, youth icon.
+      Vikramjit Singh is none of these things and more. It hasn’t been easy, but anything is possible with a bad economy, complicated relationships and a missing jawline. He credits his family for who he has become, 
+      but not in the way you think. Bring whoever you call “family” and laugh through it all, feeling slightly better about your own life.`,
   },
 
   {
     id: 79,
+    metaTitleEvent: "Standup Comedy Shows in Chennai / Gurleen Pannu",
+    conicallinkEvent: "/eventsdetails/79",
+    metaDescriptionEvent: "Enjoy sharp humour and real-life rants at Young Adult by Gurleen Pannu—live in Alwarpet, Chennai on Sep 12. One of the best stand-up comedy Shows in Chennai!",
     siteLink:
       "https://in.bookmyshow.com/events/pannu-yaar-stand-up-comedy-show-ft-gurleen-pannu/ET00333386",
     EventsCalendarTitle: "Young Adult! ft.Gurleen Pannu",
@@ -1724,6 +1733,9 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 81,
+    metaTitleEvent: "Standup Comedy in Chennai/Standup Comedy Shows in Chennai",
+    conicallinkEvent: "/eventsdetails/81",
+    metaDescriptionEvent: "Laugh out loud at Manjeet Sarkar’s ‘Unpaid Therapist’! A must-see Standup Comedy Show in Chennai on Aug 30 at Alwarpet. Book your seat now!",
     siteLink:
       "https://in.bookmyshow.com/events/two-funny-a-double-bill-stand-up-comedy-show/ET00338236",
     EventsCalendarTitle: "MANJEET KI BAAT- A COMEDY SHOW",
@@ -1746,297 +1758,6 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
      This is a trial show, which means the material is still being developed. Some parts are polished, others are being tested live.
     It’s a casual and intimate setup —perfect for those who enjoy stand-up that talks about the world around us without pretending everything’s fine. Come watch, react, judge, or just sit back. It’s all part of the process.
     `,
-  },
-
-  {
-    id: 82,
-    siteLink:
-      "https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072",
-    EventsCalendarTitle: "Master Peace - Standup Comedy Show By Madhur Virli",
-    EventsCalendarContent:
-      "Master Peace – A Stand-Up Comedy Show by Madhur Virli.",
-    EventsCalendarMonth: "4 Jul – 5 Oct, 2025",
-    EventsCalendarTime: "07:00 PM",
-    EventsCalendarCategory: "Comedy Shows",
-    image:
-      "/images/HomePage-Images/Events/Newevents/master-peace-trial-solo-by-madhur-virli.jpg",
-    link: "/eventsmain",
-    location: "Bal Gandharva Rang Mandir: Chennai",
-    language: "Hindi, English",
-    hours: "1 hour 30 minutes",
-    ageLimit: "18 years +",
-    rleigion: "Comedy",
-    aboutFull: `Master Peace – A Stand-Up Comedy Show by Madhur Virli What happens when sharp wit meets everyday chaos? You get Master Peace! 
-        Madhur Virli is bringing a brand-new set filled with fresh jokes, hilarious observations, and stories that will leave you in splits.
-        This is comedy in its rawest, most unpredictable form—where the jokes are fresh, the laughter is real, and you get to be part of the madness. Don’t miss out on this laugh riot!
-        Book your tickets now and be the first to witness the making of something special!`,
-  },
-
-  {
-    id: 83,
-
-    siteLink:
-      "https://in.bookmyshow.com/events/nishant-suri-live-a-standup-solo-show/ET00335818",
-    EventsCalendarTitle: "Nishant Suri Live - Stand Up Comedy Solo",
-    EventsCalendarContent:
-      "Catch the very funny Nishant Suri with his solo show. Hurry up and come watch him live!",
-    EventsCalendarMonth: "9–20 Aug, 2025",
-    EventsCalendarTime: "08:00 PM",
-    EventsCalendarCategory: "Comedy Shows",
-    image: "/images/HomePage-Images/Events/Newevents/3.jpg",
-    link: "/eventsmain",
-    location: "Backspace - Todi Mills: Mumbai",
-    language: "Hindi, English",
-    hours: "1 Hour 15 mins",
-    ageLimit: "Age Limit - 16yrs +",
-    rleigion: "Comedy Shows",
-    aboutFull: `
-   Catch the very funny Nishant Suri with his solo show. Hurry up and come watch him live!
-    `,
-  },
-
-  {
-    id: 84,
-    siteLink: "https://in.bookmyshow.com/events/sapan-verma-live/ET00412681",
-    EventsCalendarTitle: "Lower Back Pain By Sapan Verma - Stand Up Comedy",
-    EventsCalendarContent:
-      "Sapan turned 35, became a father and also got high in Amsterdam.",
-    EventsCalendarMonth: "2 Aug – 1 Nov, 2025",
-    EventsCalendarTime: "08:00 PM",
-    EventsCalendarCategory: "Comedy Shows",
-    image:
-      "/images/HomePage-Images/Events/Newevents/lower-back-pain-by-sapan-verma-a-stand-up-solo.jpg",
-    link: "/eventsmain",
-    location: "The Habitat: Chennai",
-    language: "English, Hindi",
-    hours: "2 hours",
-    ageLimit: "16years +",
-    rleigion: "Comedy",
-    aboutFull: `Sapan turned 35, became a father and also got high in Amsterdam - all within a year, but not particularly in that order. 
-      He is cruising through life with mental burnout, a needless sense of superiority over Gen-Z and of course, chronic lower back pain.
-      Come, watch him have a meltdown on stage, and feel better about your own life.
-      Audiences have called this show "hilarious", "so fresh and likeable" and "where are we going for dinner now" according to Sapan who has been hearing these people from behind the curtains as they leave after the show.
-      Get your tickets for a hilarious new hour of standup comedy before they sell out as he becomes insanely famous and inaccessible - a mild threat hes been using since 2011.`,
-  },
-
-  {
-    id: 85,
-    EventsCalendarTitle: "Vikramjit Singh - Talking & Touring",
-    EventsCalendarContent: "Vikramjit Singh is none of these things and more.",
-    EventsCalendarMonth: "12 Jul – 16 Aug, 2025",
-    EventsCalendarTime: "08:00 PM",
-    EventsCalendarCategory: "Comedy Shows",
-    image:
-      "/images/HomePage-Images/Events/Newevents/vikramjit-singh-talking-touring.jpg",
-    link: "/eventsmain",
-    location: "The J Spot, Juhu: Chennai",
-    language: "Hindi, English",
-    hours: "1 hour 20 minutes",
-    ageLimit: "16years +",
-    rleigion: "Comedy",
-    aboutFull: `Ideal husband, doting father, youth icon.
-      Vikramjit Singh is none of these things and more. It hasn’t been easy, but anything is possible with a bad economy, complicated relationships and a missing jawline. He credits his family for who he has become, 
-      but not in the way you think. Bring whoever you call “family” and laugh through it all, feeling slightly better about your own life.`,
-  },
-
-  {
-    id: 86,
-    EventsCalendarTitle: "Kal ki Chinta Nahi Karta ft. Ravi Gupta",
-    EventsCalendarContent:
-      "Forget your Kal ki Chinta and Join us in this super funny Show by Ravi Gupta.",
-    EventsCalendarMonth: "5 Jul – 12 Aug, 2025",
-    EventsCalendarTime: "07:00 PM",
-    EventsCalendarCategory: "Comedy Shows",
-    image:
-      "/images/HomePage-Images/Events/Newevents/kal-ki-chinta-nahi-karta-ft-ravi-gupta.jpg",
-    link: "/eventsmain",
-    location: "Shanmukhananda Hall: Chennai",
-    language: "Hindi",
-    hours: "1 hour 30 minutes",
-    ageLimit: "6 years +",
-    rleigion: "",
-    aboutFull: `Forget your Kal ki Chinta and Join us in this super funny Show by Ravi Gupta. Kal Ki Chinta Nahi Karta is new stand up special by Ravi Gupta.`,
-  },
-
-  {
-    id: 87,
-    EventsCalendarTitle: "Couples' Art Workshop",
-    EventsCalendarContent:
-      "Join us for a Date Night Painting Party, a fun-filled....",
-    EventsCalendarMonth: "12 Aug – 31 Aug, 2025",
-    EventsCalendarTime: "2:00 PM",
-    EventsCalendarCategory: "Arts and Crafts, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/151.jpg",
-    link: "",
-    location: "Dices And Drama: Chennai",
-    language: "English, Hindi, Kannada, Malayalam, Beng...",
-    hours: "2 Hours",
-    ageLimit: "All age groups",
-    price: "₹1599",
-    aboutFull:
-      "Join us for a Date Night Painting Party, a fun-filled evening of art, laughter, and romance where you and your special someone can dive into a vibrant world of colors and create something beautiful together. No prior painting skills are needed—just an open mind and a desire to enjoy the process. In a cozy, laid-back atmosphere with soft music setting the mood, our professional artist will guide you step-by-step to create your own masterpieces on canvas, whether individually or as a shared piece. It’s all about bonding over brush strokes, sparking creativity, and making unforgettable memories. This is not just another date night—it’s a Date Night Painting Party, where you’ll discover, create, and love, leaving with not only beautiful paintings but beautiful memories too.",
-  },
-
-  {
-    id: 88,
-    EventsCalendarTitle: "ARR UnPlugged",
-    EventsCalendarContent:
-      "Aug 16th a super treat awaits you at medai alwarpet...",
-    EventsCalendarMonth: "16 Aug 2025",
-    EventsCalendarTime: "7:00 PM",
-    EventsCalendarCategory: "Concerts, Music Festivals, Music Shows",
-    image: "/images/HomePage-Images/Events/Newevents/152.jpg",
-    link: "",
-    location: "Medai - The Stage, Alwarpet: Chennai",
-    language: "Tamil, Hindi",
-    hours: "2 hours 30 minutes",
-    ageLimit: "All age groups",
-    price: "₹299 onwards",
-    aboutFull:
-      "Aug 16th a super treat awaits you at medai alwarpet ARR unplugged celebrating the genius with songs from his movies in Tamil and Hindi unplugged with battalion of young and vibrant singers don't miss the show at 7 pm",
-  },
-
-  {
-    id: 89,
-
-    siteLink: "https://in.bookmyshow.com/events/neon-painting-party/ET00457231",
-    EventsCalendarTitle: "Neon Painting  Party",
-    EventsCalendarContent:
-      "Step into a world where creativity meets fun Our....",
-    EventsCalendarMonth: "13 Aug – 27 Aug, 2025",
-    EventsCalendarTime: "5:00 PM",
-    EventsCalendarCategory: "Arts and Crafts, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/150.jpg",
-    link: "",
-    location: "Wiggle Room: Chennai",
-    language: "English,Tamil",
-    hours: "1 Hour",
-    ageLimit: "Age Limit - 5yrs +",
-    price: "₹899",
-    aboutFull:
-      "Step into a world where creativity meets fun Our Neon Painting Workshop is a one of a kind art experience where you create glowing masterpieces using fluorescent paints. Whether you are a seasoned artist or just looking to try something fun and vibrant, this workshop is all about expression, fun, and unforgettable memories.",
-  },
-
-  {
-    id: 90,
-
-    EventsCalendarTitle: "Crochet Workshop",
-    EventsCalendarContent:
-      "Happy Crocheting! ❤️ Here’s our beginner-friendly....",
-    EventsCalendarMonth: "17 Aug 2025",
-    EventsCalendarTime: "4:30 PM",
-    EventsCalendarCategory: "Arts and Crafts, Home Decor, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/148.jpg",
-    link: "",
-    location: "House of Games, Kilpauk: Chennai",
-    language: "English, Tamil",
-    hours: "2 Hours",
-    ageLimit: "12yrs +",
-    price: "₹1999",
-    aboutFull:
-      "Happy Crocheting! ❤️ Here’s our beginner-friendly art workshop where our instructor will guide you step-by-step, helping you comfortably navigate the creative process at your own pace. All materials are provided, and you can work at a flexible pace — finish quickly or take your time. Enjoy a relaxed, creative space whether you come solo, as a couple, with friends, or family, and get 50% of your venue payment back as food credit to enjoy delicious refreshments while you create. With 1:1, 2:1, or 3:1 formats, you’ll receive personalized attention in a small group setting, and leave with new skills and your own handmade masterpiece. Prior registration needed; for queries contact the café.",
-  },
-
-  {
-    id: 91,
-    siteLink: "https://in.bookmyshow.com/events/single-s-meetup/ET00394655",
-    EventsCalendarTitle: "Single's Meetup",
-    EventsCalendarContent:
-      "Welcome to the Singles Meetup, a unique gathering designed...",
-    EventsCalendarMonth: "15 Aug – 20 Aug, 2025",
-    EventsCalendarTime: "6:17 PM",
-    EventsCalendarCategory: "Dating, Self Improvement, Meetups",
-    image: "/images/HomePage-Images/Events/Newevents/149.jpg",
-    link: "",
-    location: "Lil Gamby Pizza Shop & Bar, Lower Parel: Mumbai",
-    language: "Bengali, English, Hindi, Kannada, Malaya...",
-    hours: "1 Hour",
-    ageLimit: "18yrs +",
-    price: "₹99 onwards",
-    aboutFull:
-      "Welcome to the Singles Meetup, a unique gathering designed for singles eager to connect, share, and celebrate the solo journey. In the hustle of everyday life, it’s rare to find a space to openly discuss the experiences, challenges, and triumphs of being single. This isn’t your typical singles event with the pressure of finding “the one,” but an evening dedicated to the art of living single—sharing stories, laughing about dating disasters, and exploring the personal growth and freedom that come with this phase of life.",
-  },
-
-  {
-    id: 92,
-    siteLink: "https://in.bookmyshow.com/events/sgraffito-pottery/ET00449867",
-    EventsCalendarTitle: "Scratch Pottery",
-    EventsCalendarContent:
-      "Ever wondered what beauty lies just beneath the surface?....",
-    EventsCalendarMonth: "12 Aug – 19 Aug, 2025",
-    EventsCalendarTime: "2:00 PM",
-    EventsCalendarCategory: "Arts and Crafts, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/147.jpg",
-    link: "",
-    location: "Small World: S.T. Bed, Koramangala",
-    language: "English, Hindi",
-    hours: "2 Hours",
-    ageLimit: "All age groups",
-    price: "₹899 onwards",
-    aboutFull:
-      "Ever wondered what beauty lies just beneath the surface? Join us for a hands-on Sgraffito Workshop, where you’ll carve through layers of color to reveal stunning contrasts and patterns. This ancient art form, used in pottery, murals, and design, teaches us that sometimes uncovering depth takes just a little scratch. You’ll learn how to layer pigments or slips, master techniques to etch your own designs, and explore the philosophy of “subtracting to reveal.” Whether you’re a seasoned creator or a curious beginner, this workshop is all about mindfulness, expression, and uncovering hidden beauty.",
-  },
-
-  {
-    id: 93,
-    siteLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdklrpjtrzRgr_LhmH_zXf4tfu70NJZ18nuUd9vObd03KvT1w/viewform",
-    EventsCalendarTitle: "Chennai Bus Treasure Hunt",
-    EventsCalendarContent:
-      "Ever wondered what beauty lies just beneath the surface?....",
-    EventsCalendarMonth: "30 Aug, 2025",
-    EventsCalendarTime: "10:00 AM",
-    EventsCalendarCategory: "Arts and Crafts, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/147.jpg",
-    link: "",
-    location: " MTC Headquarters, Pallavan Salai, Chennai",
-    language: "",
-    hours: "",
-    ageLimit: "",
-    price: "₹899 onwards",
-    aboutFull: `
-      <p>Get ready, Chennai! 🎉 The MTC Bus Treasure Hunt is back this Madras Month, bringing you an exciting adventure across the city. Starting from the iconic MTC Headquarters (Pallavan House), participants will embark on a fun-filled treasure hunt packed with clues, challenges, and surprises along the way.</p>
-      
-      <p>It’s not just about the thrill of the chase — there are amazing cash prizes waiting for the winners. Whether you’re in it for the fun, the challenge, or the reward, this event promises to be one-of-a-kind. Bring your team spirit, quick thinking, and love for Chennai as you join this unique celebration.</p>
-      
-      <p><strong>🏆 Cash Prizes Await:</strong></p>
-      <p><strong>🥇 1st Prize – ₹10,000</strong></p>
-      <p><strong>🥈 2nd Prize – ₹6,000</strong></p>
-      <p><strong>🥉 3rd Prize – ₹4,000</strong></p>
-      <p>👉 To register, simply scan the QR code and secure your spot in the hunt!</p>
-
-      
-
-      `,
-  },
-
-  {
-    id: 94,
-    siteLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdklrpjtrzRgr_LhmH_zXf4tfu70NJZ18nuUd9vObd03KvT1w/viewform",
-    EventsCalendarTitle: "Sid Sriram Live in Concert | Chennai",
-    EventsCalendarContent:
-      "Some voices don’t just sing, they heal — and Sid Sriram’s voice is...",
-    EventsCalendarMonth: "29 Nov, 2025",
-    EventsCalendarTime: "5:00 PM",
-    EventsCalendarCategory: "Music, Concerts",
-    image: "/images/HomePage-Images/Events/Newevents/147.jpg",
-    link: "",
-    location: "YMCA, Chennai",
-    language: "",
-    hours: "",
-    ageLimit: "",
-    price: "₹899 onwards",
-    aboutFull: `
-      <p>Some voices don’t just sing, they heal — and Sid Sriram’s voice is one of them. His concerts are more than just stage performances; they are soulful journeys where every song feels personal, yet connects to thousands at once. With his unique ability to blend classical depth, contemporary energy, and heartfelt emotions, Sid creates a musical atmosphere that feels raw, pure, and magical. The way his voice flows between languages and genres makes each moment unforgettable, touching both the heart and soul.</p>
-      
-      <p>From gentle melodies that bring goosebumps to powerful live jams that electrify the crowd, every note from Sid Sriram is an experience on its own. His music is not just heard, it is felt — in the silence between beats, in the harmony of emotions, and in the collective energy of the audience singing along. Step into this unforgettable night and witness how sound transforms into emotion, rhythm turns into memory, and a concert becomes a celebration of music itself. ✨</p>
-      
-
-
-      
-
-      `,
   },
 ];
 

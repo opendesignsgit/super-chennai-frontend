@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function PlacetoVisitCulturalFoundations() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -186,6 +187,17 @@ export default function PlacetoVisitCulturalFoundations() {
 
   return (
     <>
+      <Helmet>
+        <title>Cultural Places in Chennai : Visit the Heritage & Art</title>
+        <meta
+          name="description"
+          content="Immerse yourself in the vibrant world of cultural places in Chennai, where classical art, music, and traditions bring history to life."
+        />
+        <link
+          rel="canonical"
+          href="/visit/place-to-visit/cultural-places-in-chennai"
+        />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">

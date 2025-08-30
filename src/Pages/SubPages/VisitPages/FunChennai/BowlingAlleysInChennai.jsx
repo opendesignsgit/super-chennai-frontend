@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../../Components/SocialChennai";
 import Becameavolunteer from "../../../../Components/BecameAVolunteer";
 import VisitSlider from "../VisitSlider";
+import { Helmet } from "react-helmet-async";
 // ################## DUMMY CONTENTS ###################################
 
 const imageSections = [
@@ -115,64 +116,6 @@ const imageSections1 = [
   },
 ];
 
-const images = [
-  {
-    src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
-    title: "Accommodation",
-    link: "/visit/hotel-accommodation-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/food-slide.jpg",
-    title: "Restaurants",
-    link: "/visit/restaurants-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-    title: "Places to Visit",
-    link: "/visit/places-to-visit-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
-    title: "Things to Do",
-    link: "/things-to-do",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
-    title: "Itinerary",
-    link: "/visit/chennai-itinerary",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
-    title: "Hidden Gems",
-    link: "/hidden-gems",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
-    title: "Shopping",
-    link: "/visit/shopping-areas-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
-    title: "Travel Tips",
-    link: "/travel-tips",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
-    title: "Wellness ",
-    link: "/visit/wellness-centres-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/events-slide.jpg",
-    title: "Events ",
-    link: "/visit/events-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
-    title: "Conferences ",
-    link: "/visit/conferences-in-chennai",
-  },
-];
-
 export default function BowlingAlleysInChennai() {
   {
     /*#################### STATE VARIABLES ##################### */
@@ -184,14 +127,6 @@ export default function BowlingAlleysInChennai() {
   {
     /*#################### HELPERS  ##################### */
   }
-
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageRightButton"></div>
-  );
 
   {
     /*#################### USEEFFECT HOOCKS  ##################### */
@@ -207,142 +142,77 @@ export default function BowlingAlleysInChennai() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const settings = {
-    dots: false,
-    autoplay: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      { breakpoint: 1100, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
-    ],
-  };
   {
     /*########################### RENDER   ######################### */
   }
 
   return (
-    <div className="FunchennaiDetailPage">
-      {/*#################### Banner ########################## */}
-      <div className="accaodomationBannerSection">
-        <img
-          src="/images/Visit-Images/SubPages/thingsDoChild/bowling-alleys.jpg"
-          alt=""
-        />{" "}
-        <div className="accodoamationBannerContainer">
-          <div className="accodoamationBannerText">
-            <h3> Bowling Alleys in Chennai</h3>
-            <div className="breadCrum">
-              <Link to="/invest-in-chennai">Home</Link> -{" "}
-              <span> Bowling Alleys in Chennai</span>
+    <>
+      <Helmet>
+        <title>Bowling Alleys in Chennai | Fun, Games & Food</title>
+        <meta
+          name="description"
+          content="Strike, snack & play! Bowling alleys in Chennai bring together vibrant lanes, arcade thrills & chill zones for friends, families & weekend fun."
+        />
+        <link
+          rel="canonical"
+          href="/visit/things-to-do/bowling-alleys-in-chennai"
+        />
+      </Helmet>
+
+      <div className="FunchennaiDetailPage">
+        {/*#################### Banner ########################## */}
+        <div className="accaodomationBannerSection">
+          <img
+            src="/images/Visit-Images/SubPages/thingsDoChild/bowling-alleys.jpg"
+            alt=""
+          />{" "}
+          <div className="accodoamationBannerContainer">
+            <div className="accodoamationBannerText">
+              <h3> Bowling Alleys in Chennai</h3>
+              <div className="breadCrum">
+                <Link to="/invest-in-chennai">Home</Link> -{" "}
+                <span> Bowling Alleys in Chennai</span>
+              </div>
+            </div>
+          </div>
+          <div className="notHomePageSearch">
+            <Search />
+          </div>
+        </div>
+
+        {/*#################### Intro ###########################*/}
+        <div className="visitIntroParaSection detailIntro">
+          <div className="container max-w-7xl mx-auto px-4">
+            <div
+              className={`CostOflivingBackground ${
+                scrollDir === "right"
+                  ? "scroll-rightCostofLiving"
+                  : "scroll-leftCostofLiving"
+              }`}
+              ref={bgTextRef}
+            >
+              <p>Popular Bowling Alleys in Chennai</p>
+            </div>
+            <div className="workIntro">
+              <h3>Where Fun Rolls in Style</h3>
+              <p>
+                Chennai’s bowling alleys aren’t just for strikes and spares —
+                they’re buzzing hubs of leisure and laughter. From
+                glow-in-the-dark lanes and upbeat music to snack bars and arcade
+                corners, these spaces bring people together for friendly
+                competition and casual fun. Whether you're planning a weekend
+                hangout, a team outing, or just need a midweek break, Chennai’s
+                bowling alleys roll out the perfect vibe for all ages.
+              </p>
             </div>
           </div>
         </div>
-        <div className="notHomePageSearch">
-          <Search />
-        </div>
-      </div>
 
-      {/*#################### Intro ###########################*/}
-      <div className="visitIntroParaSection detailIntro">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div
-            className={`CostOflivingBackground ${
-              scrollDir === "right"
-                ? "scroll-rightCostofLiving"
-                : "scroll-leftCostofLiving"
-            }`}
-            ref={bgTextRef}
-          >
-            <p>Popular Bowling Alleys in Chennai</p>
-          </div>
-          <div className="workIntro">
-            <h3>Where Fun Rolls in Style</h3>
-            <p>
-              Chennai’s bowling alleys aren’t just for strikes and spares —
-              they’re buzzing hubs of leisure and laughter. From
-              glow-in-the-dark lanes and upbeat music to snack bars and arcade
-              corners, these spaces bring people together for friendly
-              competition and casual fun. Whether you're planning a weekend
-              hangout, a team outing, or just need a midweek break, Chennai’s
-              bowling alleys roll out the perfect vibe for all ages.
-            </p>
-          </div>
-        </div>
-      </div>
+        {/*#################### MAIN CONTENT  ####################*/}
 
-      {/*#################### MAIN CONTENT  ####################*/}
-
-      <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec funchennai">
-        {imageSections.map((section, index) => (
-          <section
-            className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
-              ${
-                index % 2 === 0
-                  ? "bg-white whitebgsec"
-                  : "bg-[#f7f7f7] colorbgsec"
-              } 
-                 ${
-                   index % 3 === 0
-                     ? "pattern-a"
-                     : index % 3 === 1
-                     ? "pattern-b"
-                     : "pattern-c"
-                 }`}
-            key={index}
-          >
-            <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
-              <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
-                {" "}
-              </h2>
-              {section.tenantInfoSections.map((tenant, i) => (
-                <div key={i}>
-                  <h4 className="text-lg font-semibold mb-4">{tenant.title}</h4>
-                  {tenant.points.map((item, j) => (
-                    <div key={j} className="clcboxItemss flex mb-4">
-                      <div className="clcboxIImg">
-                        <img src={item.imgs} alt={item.title} />
-                      </div>
-                      <div className="clcboxICont">
-                        <h3>{item.title}</h3>
-                        <h5>{item.desc}</h5>
-                        <ul className="list-disc list-inside text-gray-600 space-y-1">
-                          {item.para.map((point, i) => {
-                            if (
-                              typeof point === "string" &&
-                              point.includes(":")
-                            ) {
-                              const [prefix, ...rest] = point.split(":");
-                              return (
-                                <li key={i}>
-                                  <strong>{prefix}:</strong>{" "}
-                                  {rest.join(":").trim()}
-                                </li>
-                              );
-                            }
-                            return <li key={i}>{point}</li>;
-                          })}
-                        </ul>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </section>
-        ))}
-      </div>
-      {/*#################### TABLE CONTENT  ####################*/}
-
-      <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
-        <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
-          {imageSections1.map((section, index) => (
+        <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec funchennai">
+          {imageSections.map((section, index) => (
             <section
               className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
               ${
@@ -377,9 +247,21 @@ export default function BowlingAlleysInChennai() {
                           <h3>{item.title}</h3>
                           <h5>{item.desc}</h5>
                           <ul className="list-disc list-inside text-gray-600 space-y-1">
-                            {item.para.map((point, i) => (
-                              <li key={i}>{point}</li>
-                            ))}
+                            {item.para.map((point, i) => {
+                              if (
+                                typeof point === "string" &&
+                                point.includes(":")
+                              ) {
+                                const [prefix, ...rest] = point.split(":");
+                                return (
+                                  <li key={i}>
+                                    <strong>{prefix}:</strong>{" "}
+                                    {rest.join(":").trim()}
+                                  </li>
+                                );
+                              }
+                              return <li key={i}>{point}</li>;
+                            })}
                           </ul>
                         </div>
                       </div>
@@ -390,17 +272,70 @@ export default function BowlingAlleysInChennai() {
             </section>
           ))}
         </div>
+        {/*#################### TABLE CONTENT  ####################*/}
+
+        <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
+          <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
+            {imageSections1.map((section, index) => (
+              <section
+                className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+              ${
+                index % 2 === 0
+                  ? "bg-white whitebgsec"
+                  : "bg-[#f7f7f7] colorbgsec"
+              } 
+                 ${
+                   index % 3 === 0
+                     ? "pattern-a"
+                     : index % 3 === 1
+                     ? "pattern-b"
+                     : "pattern-c"
+                 }`}
+                key={index}
+              >
+                <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
+                  <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+                    {" "}
+                  </h2>
+                  {section.tenantInfoSections.map((tenant, i) => (
+                    <div key={i}>
+                      <h4 className="text-lg font-semibold mb-4">
+                        {tenant.title}
+                      </h4>
+                      {tenant.points.map((item, j) => (
+                        <div key={j} className="clcboxItemss flex mb-4">
+                          <div className="clcboxIImg">
+                            <img src={item.imgs} alt={item.title} />
+                          </div>
+                          <div className="clcboxICont">
+                            <h3>{item.title}</h3>
+                            <h5>{item.desc}</h5>
+                            <ul className="list-disc list-inside text-gray-600 space-y-1">
+                              {item.para.map((point, i) => (
+                                <li key={i}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        </div>
+
+        {/* ########## EXPLORE MORE CHENNAI SLIDER ############### */}
+
+        <VisitSlider />
+
+        {/*################## SOCIAL MARQUE SECTION################ */}
+        <div className="AccomodationInstaReel">
+          <InstagramReelsMarquee />
+        </div>
+        <Becameavolunteer />
       </div>
-
-      {/* ########## EXPLORE MORE CHENNAI SLIDER ############### */}
-
-      <VisitSlider />
-
-      {/*################## SOCIAL MARQUE SECTION################ */}
-      <div className="AccomodationInstaReel">
-        <InstagramReelsMarquee />
-      </div>
-      <Becameavolunteer />
-    </div>
+    </>
   );
 }

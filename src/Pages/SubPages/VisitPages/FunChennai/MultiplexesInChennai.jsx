@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../../Components/SocialChennai";
 import Becameavolunteer from "../../../../Components/BecameAVolunteer";
 import VisitSlider from "../VisitSlider";
+import { Helmet } from "react-helmet-async";
 // ################## DUMMY CONTENTS ###################################
 
 const imageSections1 = [
@@ -41,63 +42,6 @@ const imageSections1 = [
   },
 ];
 
-const images = [
-  {
-    src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
-    title: "Accomodation",
-    link: "/visit/hotel-accommodation-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/food-slide.jpg",
-    title: "Food",
-    link: "/visit/restaurants-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-    title: "Places to Visit",
-    link: "/visit/places-to-visit-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
-    title: "Things to Do",
-    link: "/things-to-do",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
-    title: "Itinerary",
-    link: "/visit/chennai-itinerary",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
-    title: "Hidden Gems",
-    link: "/hidden-gems",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
-    title: "Shopping",
-    link: "/visit/shopping-areas-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
-    title: "Travel Tips",
-    link: "/travel-tips",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
-    title: "Wellness ",
-    link: "/visit/wellness-centres-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/events-slide.jpg",
-    title: "Events ",
-    link: "/visit/events-in-chennai",
-  },
-  {
-    src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
-    title: "Conferences ",
-    link: "/visit/conferences-in-chennai",
-  },
-];
 const imageSections = [
   {
     tenantInfoSections: [
@@ -258,14 +202,6 @@ export default function MultiplexesInChennai() {
     /*#################### HELPERS  ##################### */
   }
 
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageRightButton"></div>
-  );
-
   {
     /*#################### USEEFFECT HOOCKS  ##################### */
   }
@@ -280,77 +216,74 @@ export default function MultiplexesInChennai() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const settings = {
-    dots: false,
-    autoplay: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      { breakpoint: 1100, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
-    ],
-  };
   {
     /*########################### RENDER   ######################### */
   }
 
   return (
-    <div className="FunchennaiDetailPage">
-      {/*#################### Banner ########################## */}
-      <div className="accaodomationBannerSection">
-        <img
-          src="/images/Visit-Images/SubPages/thingsDoChild/multiplexes.jpg"
-          alt=""
+    <>
+      <Helmet>
+        <title>Multiplexes In Chennai : Luxury Screens & Cinematic Fun</title>
+        <meta
+          name="description"
+          content="Experience world-class cinema at multiplexes in Chennai with comfort, cutting-edge tech, and stunning visuals for movie lovers of all ages."
         />
-        <div className="accodoamationBannerContainer">
-          <div className="accodoamationBannerText">
-            <h3>MULTIPLEXES IN CHENNAI </h3>
-            <div className="breadCrum">
-              <Link to="/invest-in-chennai">Home</Link> -{" "}
-              <span>MULTIPLEXES IN CHENNAI </span>
+        <link
+          rel="canonical"
+          href="/visit/things-to-do/multiplexes-in-chennai"
+        />
+      </Helmet>
+
+      <div className="FunchennaiDetailPage">
+        {/*#################### Banner ########################## */}
+        <div className="accaodomationBannerSection">
+          <img
+            src="/images/Visit-Images/SubPages/thingsDoChild/multiplexes.jpg"
+            alt=""
+          />
+          <div className="accodoamationBannerContainer">
+            <div className="accodoamationBannerText">
+              <h3>MULTIPLEXES IN CHENNAI </h3>
+              <div className="breadCrum">
+                <Link to="/invest-in-chennai">Home</Link> -{" "}
+                <span>MULTIPLEXES IN CHENNAI </span>
+              </div>
+            </div>
+          </div>
+          <div className="notHomePageSearch">
+            <Search />
+          </div>
+        </div>
+
+        {/*#################### Intro ###########################*/}
+        <div className="visitIntroParaSection detailIntro">
+          <div className="container max-w-7xl mx-auto px-4">
+            <div
+              className={`CostOflivingBackground ${
+                scrollDir === "right"
+                  ? "scroll-rightCostofLiving"
+                  : "scroll-leftCostofLiving"
+              }`}
+              ref={bgTextRef}
+            >
+              <p>MULTIPLEXES IN CHENNAI </p>
+            </div>
+            <div className="workIntro">
+              <h3>Where Stories Come to Life</h3>
+              <p>
+                Step into Chennai’s modern multiplexes — a blend of comfort,
+                advanced tech, and immersive visuals. From the latest
+                blockbusters to indie treasures, these cinema halls offer a
+                seamless movie experience wrapped in style and convenience.
+              </p>
             </div>
           </div>
         </div>
-        <div className="notHomePageSearch">
-          <Search />
-        </div>
-      </div>
 
-      {/*#################### Intro ###########################*/}
-      <div className="visitIntroParaSection detailIntro">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div
-            className={`CostOflivingBackground ${
-              scrollDir === "right"
-                ? "scroll-rightCostofLiving"
-                : "scroll-leftCostofLiving"
-            }`}
-            ref={bgTextRef}
-          >
-            <p>MULTIPLEXES IN CHENNAI </p>
-          </div>
-          <div className="workIntro">
-            <h3>Where Stories Come to Life</h3>
-            <p>
-              Step into Chennai’s modern multiplexes — a blend of comfort,
-              advanced tech, and immersive visuals. From the latest blockbusters
-              to indie treasures, these cinema halls offer a seamless movie
-              experience wrapped in style and convenience.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec funchennai">
-        {imageSections.map((section, index) => (
-          <section
-            className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+        <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec funchennai">
+          {imageSections.map((section, index) => (
+            <section
+              className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
               ${
                 index % 2 === 0
                   ? "bg-white whitebgsec"
@@ -363,55 +296,57 @@ export default function MultiplexesInChennai() {
                      ? "pattern-b"
                      : "pattern-c"
                  }`}
-            key={index}
-          >
-            <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
-              <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
-                {" "}
-              </h2>
-              {section.tenantInfoSections.map((tenant, i) => (
-                <div key={i}>
-                  <h4 className="text-lg font-semibold mb-4">{tenant.title}</h4>
-                  {tenant.points.map((item, j) => (
-                    <div key={j} className="clcboxItemss flex mb-4">
-                      <div className="clcboxIImg">
-                        <img src={item.imgs} alt={item.title} />
+              key={index}
+            >
+              <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
+                <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+                  {" "}
+                </h2>
+                {section.tenantInfoSections.map((tenant, i) => (
+                  <div key={i}>
+                    <h4 className="text-lg font-semibold mb-4">
+                      {tenant.title}
+                    </h4>
+                    {tenant.points.map((item, j) => (
+                      <div key={j} className="clcboxItemss flex mb-4">
+                        <div className="clcboxIImg">
+                          <img src={item.imgs} alt={item.title} />
+                        </div>
+                        <div className="clcboxICont">
+                          <h3>{item.title}</h3>
+                          <h5>{item.desc}</h5>
+                          <ul className="list-disc list-inside text-gray-600 space-y-1">
+                            {item.para.map((point, i) => (
+                              <li key={i}>{point}</li>
+                            ))}
+                          </ul>
+                          {item.location && (
+                            <div className="mt-2 exploreMorebuttonVisitChennai">
+                              <a
+                                className="text-blue-600 hover:underline text-sm font-medium"
+                                href={item.location}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-discover="true"
+                              >
+                                View on Map
+                              </a>
+                            </div>
+                          )}
+                        </div>
                       </div>
-                      <div className="clcboxICont">
-                        <h3>{item.title}</h3>
-                        <h5>{item.desc}</h5>
-                        <ul className="list-disc list-inside text-gray-600 space-y-1">
-                          {item.para.map((point, i) => (
-                            <li key={i}>{point}</li>
-                          ))}
-                        </ul>
-                        {item.location && (
-                          <div className="mt-2 exploreMorebuttonVisitChennai">
-                            <a
-                              className="text-blue-600 hover:underline text-sm font-medium"
-                              href={item.location}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              data-discover="true"
-                            >
-                              View on Map
-                            </a>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </section>
-        ))}
-      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
 
-      <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec ">
-        {imageSectionstwo.map((section, index) => (
-          <section
-            className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+        <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec ">
+          {imageSectionstwo.map((section, index) => (
+            <section
+              className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
               ${
                 index % 2 === 0
                   ? "bg-white whitebgsec"
@@ -424,46 +359,49 @@ export default function MultiplexesInChennai() {
                      ? "pattern-b"
                      : "pattern-c"
                  }`}
-            key={index}
-          >
-            <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
-              <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
-                {" "}
-              </h2>
-              {section.tenantInfoSections.map((tenant, i) => (
-                <div key={i}>
-                  <h4 className="text-lg font-semibold mb-4">{tenant.title}</h4>
-                  {tenant.points.map((item, j) => (
-                    <div key={j} className="clcboxItemss flex mb-4">
-                      <div className="clcboxIImg">
-                        <img src={item.imgs} alt={item.title} />
+              key={index}
+            >
+              <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
+                <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+                  {" "}
+                </h2>
+                {section.tenantInfoSections.map((tenant, i) => (
+                  <div key={i}>
+                    <h4 className="text-lg font-semibold mb-4">
+                      {tenant.title}
+                    </h4>
+                    {tenant.points.map((item, j) => (
+                      <div key={j} className="clcboxItemss flex mb-4">
+                        <div className="clcboxIImg">
+                          <img src={item.imgs} alt={item.title} />
+                        </div>
+                        <div className="clcboxICont">
+                          <h3>{item.title}</h3>
+                          <h5>{item.desc}</h5>
+                          <ul className="list-disc list-inside text-gray-600 space-y-1">
+                            {item.para.map((point, i) => (
+                              <li key={i}>{point}</li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
-                      <div className="clcboxICont">
-                        <h3>{item.title}</h3>
-                        <h5>{item.desc}</h5>
-                        <ul className="list-disc list-inside text-gray-600 space-y-1">
-                          {item.para.map((point, i) => (
-                            <li key={i}>{point}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </section>
-        ))}
-      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
 
-      {/* ########## EXPLORE MORE CHENNAI SLIDER ############### */}
-      <VisitSlider />
+        {/* ########## EXPLORE MORE CHENNAI SLIDER ############### */}
+        <VisitSlider />
 
-      {/*################## SOCIAL MARQUE SECTION################ */}
-      <div className="AccomodationInstaReel">
-        <InstagramReelsMarquee />
+        {/*################## SOCIAL MARQUE SECTION################ */}
+        <div className="AccomodationInstaReel">
+          <InstagramReelsMarquee />
+        </div>
+        <Becameavolunteer />
       </div>
-      <Becameavolunteer />
-    </div>
+    </>
   );
 }

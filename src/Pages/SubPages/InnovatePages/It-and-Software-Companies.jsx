@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function ItandSoftwareCompanies() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -76,7 +77,6 @@ export default function ItandSoftwareCompanies() {
                 <>
                   <strong>A rising star in AI, FinTech, Cybersecurity, </strong>
                 </>,
-                
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Once known for its hardware exports and call centers, Chennai has now transformed into.svg",
             },
@@ -183,7 +183,6 @@ export default function ItandSoftwareCompanies() {
       sectionTitle:
         "Chennai’s Auto Startup Scene: Building the Future of Mobility",
 
-
       fintechEvolution: [
         {
           points: [
@@ -217,7 +216,7 @@ export default function ItandSoftwareCompanies() {
               imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
             },
             {
-              title:"Future Ready Chennai ",
+              title: "Future Ready Chennai ",
               note: "Chennai is not just riding the tech wave — it's building it. With AI labs, 5G test beds, and a growing startup culture, it’s becoming a launchpad for India’s digital next.",
               para: ["If Bengaluru is the present, Chennai is the future."],
               imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
@@ -227,8 +226,6 @@ export default function ItandSoftwareCompanies() {
       ],
     },
   ];
-
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -247,6 +244,14 @@ export default function ItandSoftwareCompanies() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>IT Companies in Chennai | IT Firms in Chennai</title>
+        <meta
+          name="description"
+          content="Blending tradition with innovation, IT companies in Chennai are powering industries with robust IT solutions and cutting-edge digital expertise."
+        />
+        <link rel="canonical" href="/innovate/it-companies-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -429,13 +434,17 @@ export default function ItandSoftwareCompanies() {
           {imageSections1.map((section, index) => (
             <section
               className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
-            ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+            ${
+              index % 2 === 0
+                ? "bg-white whitebgsec"
+                : "bg-[#f7f7f7] colorbgsec"
+            } 
            ${
-           index % 3 === 0
-          ? "pattern-a"
-          : index % 3 === 1
-          ? "pattern-b"
-          : "pattern-c"
+             index % 3 === 0
+               ? "pattern-a"
+               : index % 3 === 1
+               ? "pattern-b"
+               : "pattern-c"
            }`}
               key={index}
             >
@@ -485,7 +494,7 @@ export default function ItandSoftwareCompanies() {
         </div>
 
         {/*--------------- Explore More Chennai----------------- */}
-        <InnovatePagesSlider/>
+        <InnovatePagesSlider />
 
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">

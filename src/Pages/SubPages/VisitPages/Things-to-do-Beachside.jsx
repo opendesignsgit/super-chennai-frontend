@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function ThingstodoBeachSideFun() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -186,6 +187,14 @@ export default function ThingstodoBeachSideFun() {
 
   return (
     <>
+      <Helmet>
+        <title>Beaches in Chennai : Explore Activities, Fun & Leisure</title>
+        <meta
+          name="description"
+          content="Explore beaches in Chennai for a perfect mix of leisure and adventure. Enjoy scenic walks, local food, sunrise views, and vibrant coastal vibes."
+        />
+        <link rel="canonical" href="/visit/things-to-do/chennai-beaches" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">

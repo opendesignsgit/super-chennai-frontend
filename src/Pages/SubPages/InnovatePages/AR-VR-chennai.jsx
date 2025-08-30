@@ -9,6 +9,7 @@ import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import { desc } from "framer-motion/client";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function ARVRchennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -577,10 +578,7 @@ export default function ARVRchennai() {
       then: "Industry 4.0, Immersive enterprise XR",
       now: "Fortune 500 clients, digital transformation consultancy",
     },
-    
   ];
-
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -599,6 +597,14 @@ export default function ARVRchennai() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>AR VR Companies in Chennai | AR/VR Firms in Chennai</title>
+        <meta
+          name="description"
+          content="Leading AR VR companies in Chennai deliver advanced virtual reality and augmented solutions powering industries, startups, and global enterprises alike."
+        />
+        <link rel="canonical" href="/innovate/ar-vr-companies-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -640,7 +646,7 @@ export default function ARVRchennai() {
               <p>
                 Chennai’s AR/VR ecosystem is rapidly growing, driven by
                 industrial innovation, immersive education, and cutting-edge
-                enterprise solutions. 
+                enterprise solutions.
               </p>
             </div>
           </div>
@@ -883,8 +889,7 @@ export default function ARVRchennai() {
         </div>
 
         {/*--------------- Explore More Chennai----------------- */}
-        <InnovatePagesSlider/>
-
+        <InnovatePagesSlider />
 
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">

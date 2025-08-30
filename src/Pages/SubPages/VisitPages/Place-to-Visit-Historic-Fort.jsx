@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function PlacetoVisitHistoricFort() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -31,38 +32,10 @@ export default function PlacetoVisitHistoricFort() {
       title: "Fort St. George (George Town)",
       image:
         "/images/Visit-Images/SubPages/Place-to-visit/Historic Fort/fort-st-george.jpg",
-      // link1: "https://thegrandsweets.com/",
+
       link2: "https://maps.app.goo.gl/C2dGxC5HJmMyR6w86",
       rating: 4.3,
     },
-    // {
-    //   id: 2,
-    //   title: "Sadras Dutch Fort (Kalpakkam)",
-    //   image:
-    //     "/images/Visit-Images/SubPages/Place-to-visit/Historic Fort/sadras-dutch-fort.jpg",
-    //   link1: "https://www.asichennai.gov.in/monuments.html",
-    //   link2: "https://maps.app.goo.gl/NPq3jQNY1AoCS1Q38",
-    //   rating: 4.0,
-    // },
-    // {
-    //   id: 3,
-    //   title: "Alamparai Fort (Kadapakkam)",
-    //   image:
-    //     "/images/Visit-Images/SubPages/Place-to-visit/Historic Fort/alamparai-fort.jpg",
-    //   link1:
-    //     "https://www.tamilnadutourism.tn.gov.in/tamil/destinations/alamparai-fort",
-    //   link2: "https://maps.app.goo.gl/Rrqh3ZLuA7vw4bWa9",
-    //   rating: 4.1,
-    // },
-    // {
-    //   id: 4,
-    //   title: "Fort Geldria (Pulicat)",
-    //   image:
-    //     "/images/Visit-Images/SubPages/Place-to-visit/Historic Fort/fort-geldria.jpg",
-    //   // link1: "#",
-    //   link2: "https://maps.app.goo.gl/M1sNKGMP3PjzRfGT7",
-    //   rating: 3.9,
-    // },
   ];
 
   const detailsections1 = [
@@ -105,101 +78,6 @@ export default function PlacetoVisitHistoricFort() {
     },
   ];
 
-  const images = [
-    {
-      src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
-      title: "Accommodation",
-      link: "/visit/hotel-accommodation-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/food-slide.jpg",
-      title: "Restaurants",
-      link: "/visit/restaurants-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-      title: "Places to Visit",
-      link: "/visit/places-to-visit-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
-      title: "Things to Do",
-      link: "/visit/things-to-do-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
-      title: "Itinerary",
-      link: "/visit/chennai-itinerary",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
-      title: "Hidden Gems",
-      link: "/visit/hidden-places-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
-      title: "Shopping",
-      link: "/visit/shopping-areas-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
-      title: "Travel Tips",
-      link: "/visit/travels-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
-      title: "Wellness ",
-      link: "/visit/wellness-centres-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/events-slide.jpg",
-      title: "Events ",
-      link: "/visit/events-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
-      title: "Conferences ",
-      link: "/visit/conferences-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
-
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -218,6 +96,11 @@ export default function PlacetoVisitHistoricFort() {
 
   return (
     <>
+      <Helmet>
+        <title>Chennai Fort: Discover the City’s Historic Citadel</title>
+        <meta name="description" content="Step into Chennai Fort and witness the city’s rich past, with exhibits and ancient walls narrating tales of bygone eras." />
+        <link rel="canonical" href="/visit/place-to-visit/chennai-fort" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">

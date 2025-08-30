@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function PlacetoVisitArtistsVillages() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -64,101 +65,6 @@ export default function PlacetoVisitArtistsVillages() {
     },
   ];
 
-  const images = [
-    {
-      src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
-      title: "Accommodation",
-      link: "/visit/hotel-accommodation-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/food-slide.jpg",
-      title: "Restaurants",
-      link: "/visit/restaurants-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-      title: "Places to Visit",
-      link: "/visit/places-to-visit-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
-      title: "Things to Do",
-      link: "/visit/things-to-do-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
-      title: "Itinerary",
-      link: "/visit/chennai-itinerary",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
-      title: "Hidden Gems",
-      link: "/visit/hidden-places-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
-      title: "Shopping",
-      link: "/visit/shopping-areas-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
-      title: "Travel Tips",
-      link: "/visit/travels-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
-      title: "Wellness ",
-      link: "/visit/wellness-centres-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/events-slide.jpg",
-      title: "Events ",
-      link: "/visit/events-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
-      title: "Conferences ",
-      link: "/visit/conferences-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
-
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -177,6 +83,17 @@ export default function PlacetoVisitArtistsVillages() {
 
   return (
     <>
+      <Helmet>
+        <title>Artist Village Chennai : Showcasing Local Artists’ Work</title>
+        <meta
+          name="description"
+          content="Wander through distinctive neighborhoods where artists live and present their latest works. A perfect journey for art lovers."
+        />
+        <link
+          rel="canonical"
+          href="/visit/place-to-visit/artist-village-chennai"
+        />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">

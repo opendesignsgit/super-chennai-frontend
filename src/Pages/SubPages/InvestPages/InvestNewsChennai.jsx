@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
+import { Helmet } from "react-helmet-async";
 
 export default function InvestNewsChennai() {
   const investmentCategories = [
@@ -240,6 +241,11 @@ export default function InvestNewsChennai() {
 
   return (
     <>
+      <Helmet>
+        <title>News in Chennai : Print Media,TV News & Digital News </title>
+        <meta name="description" content="Discover how news in Chennai is shaping the digital era, with outlets and creators building apps, websites, and platforms backed by investors." />
+        <link rel="canonical" href="/invest/news-in-chennai" />
+      </Helmet>
       {/*----------------Accodimation-Banner----------- */}
 
       <div className="accaodomationBannerSection">

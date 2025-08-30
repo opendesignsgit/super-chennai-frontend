@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function AIinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -277,12 +278,11 @@ export default function AIinChennai() {
         "Tags: RetailTech, Predictive Analytics, ML",
       ],
     },
-
   ];
 
-// CHENNAIBASED COMPANY ################
+  // CHENNAIBASED COMPANY ################
   const chennaiBasedCompany = [
-        {
+    {
       title: "Tvasta Manufacturing Solutions",
       points: [
         "Sector: Construction Tech / Robotics",
@@ -492,8 +492,6 @@ export default function AIinChennai() {
     },
   ];
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -511,6 +509,14 @@ export default function AIinChennai() {
   }, []);
   return (
     <>
+        <Helmet>
+        <title>AI Companies in Chennai | AI Solutions Chennai</title>
+        <meta
+          name="description"
+          content="With strong talent and a growing ecosystem, AI companies in Chennai are crafting world-class AI solutions, turning the city into a dynamic AI hub for the future."
+        />
+        <link rel="canonical" href="/innovate/ai-companies-in-chennai" />
+      </Helmet>
       <div className="AIchennai">
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -845,14 +851,11 @@ export default function AIinChennai() {
             ))}
           </div>
 
-
-
           {/* CHENNAI BASED COMPANY @ */}
 
-
-           <div className="mx-auto p-6 text-gray-800 cards listdatacontent">
+          <div className="mx-auto p-6 text-gray-800 cards listdatacontent">
             <h2 className="text-2xl font-bold text-center mb-6">
-           More Chennai-Based AI Companies {" "}
+              More Chennai-Based AI Companies{" "}
             </h2>
             {chennaiBasedCompany.map((section, index) => (
               <div key={index} className="card rounded-2xl p-4 mb-4 shadow">
@@ -938,9 +941,8 @@ export default function AIinChennai() {
 
         {/*--------------- Explore More Chennai----------------- */}
 
-        <InnovatePagesSlider/>
+        <InnovatePagesSlider />
 
-     
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

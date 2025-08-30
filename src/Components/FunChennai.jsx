@@ -72,20 +72,20 @@ export default function Funchennai() {
       title: "Bowling Alleys",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/bowling.jpg",
-      link: "/BowlingAlleysInChennai",
+      link: "/visit/things-to-do/bowling-alleys-in-chennai",
     },
 
     {
       title: "Gaming Arcades",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/gaming.jpg",
-      link: "/GamingArcadesInChennai",
+      link: "/visit/things-to-do/arcade-games-in-chennai",
     },
     {
       title: "Go-Karting",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/go-karting.jpg",
-      link: "/GoKarting",
+      link: "/visit/things-to-do/go-karting-in-chennai",
     },
     {
       title: "Horror Houses",
@@ -97,7 +97,7 @@ export default function Funchennai() {
       title: "Multiplexes",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/multiplexs.jpg",
-      link: "/MultiplexesInChennai",
+      link: "/visit/things-to-do/multiplexes-in-chennai",
     },
     {
       title: "Nature Walk",
@@ -109,7 +109,7 @@ export default function Funchennai() {
       title: "Trampoline Parks",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/trampoline.jpg",
-      link: "/TrampolineInChennai",
+      link: "/visit/things-to-do/trampoline-parks-in-chennai",
     },
 
     {

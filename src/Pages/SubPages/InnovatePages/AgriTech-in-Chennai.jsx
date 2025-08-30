@@ -10,6 +10,7 @@ import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import { desc } from "framer-motion/client";
 import InnovateSlider from "../../../Components/InnovateSldier";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function AgriTechinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -478,8 +479,6 @@ export default function AgriTechinChennai() {
     },
   ];
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -497,6 +496,16 @@ export default function AgriTechinChennai() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>
+          Agri Tech Companies in Chennai : Agriculture Meets Modern Technology
+        </title>
+        <meta
+          name="description"
+          content="Agri tech companies in Chennai blend technology with agriculture, offering supply chain tools, precision farming, and AI-driven solutions for rural growth."
+        />
+        <link rel="canonical" href="/innovate/agri-tech-companies-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -871,9 +880,8 @@ export default function AgriTechinChennai() {
           </div>
         </div> */}
 
-        <InnovatePagesSlider/>
+        <InnovatePagesSlider />
 
-        
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

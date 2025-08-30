@@ -355,44 +355,44 @@ const menuItems = [
   },
   {
     label: "Volunteer",
-    labellink: "/volunteer",
+    labellink: "/volunteer-in-chennai",
 
     content: [
       {
         title: "Digital",
         // desc: "Connect and collaborate online",
         desc: "In Chennai",
-        link: "/volunteer",
+        link: "/volunteer-in-chennai",
       },
       {
         title: "Events",
         // desc: "Help run volunteer meets",
         desc: "In Chennai",
-        link: "/volunteer",
+        link: "/volunteer-in-chennai",
       },
       {
         title: "Content Creators",
         // desc: "Share inspiring volunteer stories",
         desc: "In Chennai",
-        link: "/volunteer",
+        link: "/volunteer-in-chennai",
       },
       {
         title: "Design &  Art",
         // desc: "Showcase causes through creativity",
         desc: "In Chennai",
-        link: "/volunteer",
+        link: "/volunteer-in-chennai",
       },
       {
         title: "Influencers",
         // desc: "Promote action through your voice",
         desc: "In Chennai",
-        link: "/volunteer",
+        link: "/volunteer-in-chennai",
       },
       {
         title: "Mentors",
         // desc: "Guide new volunteer minds",
         desc: "In Chennai",
-        link: "/volunteer",
+        link: "/volunteer-in-chennai",
       },
     ],
   },

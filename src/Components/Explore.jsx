@@ -107,7 +107,7 @@ export default function Explore() {
           className="chennaiInvestmentsHeading"
           style={{ textAlign: "center" }}
         >
-          Super Chennai{" "}
+          Explore Chennai{" "}
         </h1>
         <h5
           className="chennaiInvestmentsHeadingSub"

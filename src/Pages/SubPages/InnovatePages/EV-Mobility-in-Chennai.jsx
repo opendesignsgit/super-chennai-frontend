@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function EVMobilityinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -261,8 +262,6 @@ export default function EVMobilityinChennai() {
     },
   ];
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -280,6 +279,14 @@ export default function EVMobilityinChennai() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>EV Vehicles in Chennai : Innovate the EV Bikes & Cars</title>
+        <meta
+          name="description"
+          content="From e-mobility startups to advanced charging networks, EV vehicles in Chennai are powering clean transport, shaping it as India’s electric capital of the South."
+        />
+        <link rel="canonical" href="/innovate/ev-vehicles-in-chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -595,9 +602,8 @@ export default function EVMobilityinChennai() {
 
         {/*--------------- Explore More Chennai----------------- */}
 
-        <InnovatePagesSlider/>
+        <InnovatePagesSlider />
 
-     
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

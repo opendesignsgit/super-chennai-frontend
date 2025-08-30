@@ -10,7 +10,7 @@ const cards = [
     description:
       "Explore distinctive neighborhoods where gifted artists reside and display their most recent creations.",
     image: "/images/HomePage-Images/Chillout/artists-villages.jpg",
-    link: "/visit-placetovisit-artists-villages",
+    link: "/visit/place-to-visit/artist-village-chennai",
   },
   {
     title: "Botanical Gardens",
@@ -24,7 +24,7 @@ const cards = [
     description:
       "Take in the mesmerizing performances of traditional art, which preserve India's rich cultural heritage.",
     image: "/images/HomePage-Images/Chillout/cultural.jpg",
-    link: "/visit-placetovisit-cultural-foundations",
+    link: "/visit/place-to-visit/cultural-places-in-chennai",
   },
   {
     title: "Modern Malls",

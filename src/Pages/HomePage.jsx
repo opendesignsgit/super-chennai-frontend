@@ -11,7 +11,7 @@ import Explore from "../Components/Explore";
 import Funchennai from "../Components/FunChennai";
 // import MegaMenu from "../Components/Header";
 import HeroSlider from "../Components/HeroSlider";
-import Search from "../Components/Search";
+// import Search from "../Components/Search";
 import InstagramReelsMarquee from "../Components/SocialChennai";
 import StartupChennai from "../Components/StartupChennai";
 import TechEdu from "../Components/TechEdu";

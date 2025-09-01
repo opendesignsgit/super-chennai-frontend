@@ -1,7 +1,7 @@
 import "../assets/Css/MenuBar.css";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 export default function MenuBar({ setMenuBar }) {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -392,6 +392,10 @@ export default function MenuBar({ setMenuBar }) {
       ],
     },
   ];
+
+  const currentPath = window.location.pathname;
+
+
   return (
     <>
       <div className="menuBarFullContainer">
@@ -497,11 +501,10 @@ export default function MenuBar({ setMenuBar }) {
           </div>
 
           <div className="w-full max-w-md mx-auto containerMenuBar">
-            <ul className="w-full max-w-md mx-auto menuBarLinksContent">
+            <ul className="w-full max-w-md mx-auto menuBarLinksContent ">
               {menuItems.map((item, index) => (
-                <li key={index}>
-                  <a href={item.href}>{item.label}</a>
-                  {/* <Link to={item.href}>{item.label}</Link> */}
+                <li key={index}  className={`menu-item ${currentPath === item.href ? 'activemenubarlink' : ''}`}>
+                  <a  href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>

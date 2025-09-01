@@ -127,6 +127,13 @@
   height: 50px;
 }
 
+.activemenubarlink {
+  font-family: "Poppinsbold" !important;
+  color: #844078 !important;
+
+  font-weight: 100;
+}
+
 @media (max-width: 1600px) {
   .menuBarLinksContent li {
     font-size: 29px;

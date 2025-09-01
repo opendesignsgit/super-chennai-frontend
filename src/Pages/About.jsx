@@ -5,6 +5,7 @@ import Search from "../Components/Search";
 import InstagramReelsMarquee from "../Components/SocialChennai";
 import Becameavolunteer from "../Components/BecameAVolunteer";
 import { Link, useNavigate } from "react-router-dom";
+// import AOS from "aos";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";

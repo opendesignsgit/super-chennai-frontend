@@ -261,6 +261,7 @@
     height: 100vh;
     position: fixed;
     overflow: scroll;
+    padding-bottom: 50px;
   }
 
   .menuBarLinksContent li {

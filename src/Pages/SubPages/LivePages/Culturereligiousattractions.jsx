@@ -1334,7 +1334,8 @@ export default function Culturereligiousattractions() {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileSticky, setIsMobileSticky] = useState(false);
   const [selectedTab, setSelectedTab] = useState("");
-  const sectionRefs = useRef({});
+
+  const [selectedTabForScroll, setSelectedTabForScroll] = useState("");
 
   const tabNames = [
     "Central Chennai",
@@ -1354,18 +1355,11 @@ export default function Culturereligiousattractions() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  tabNames.forEach((tab) => {
-    if (!sectionRefs.current[tab]) {
-      sectionRefs.current[tab] = React.createRef();
-    }
-  });
-  const handleTabClick = (name) => {
-    setActiveSection(name);
-    const section = sectionRefs.current[name];
-    if (section && section.current) {
-      section.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
+
+
+
+
+
 
   const handleStickyScroll = () => {
     const section = document.getElementById("fourthSection");
@@ -1379,42 +1373,59 @@ export default function Culturereligiousattractions() {
     window.addEventListener("scroll", handleStickyScroll);
     return () => window.removeEventListener("scroll", handleStickyScroll);
   }, []);
+  // Load from localStorage on mount
+  useEffect(() => {
+    const savedTab = localStorage.getItem("selectedTabForScroll");
+    if (savedTab && tabNames.includes(savedTab)) {
+      setSelectedTabForScroll(savedTab);
+    } else {
+      setSelectedTabForScroll(tabNames[0]); // default to first tab
+    }
+  }, []);
+  // Refs for each section
+  const sectionRefs = useRef({});
+  tabNames.forEach((name) => {
+    if (!sectionRefs.current[name]) {
+      sectionRefs.current[name] = React.createRef();
+    }
+  });
 
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
+  const handleTabClick = (name) => {
+    setActiveSection(name);
 
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
+    const section = sectionRefs.current[name];
+    if (section && section.current) {
+      section.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 
-  const settings = {
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
+    // ✅ Save the selected city/tab to localStorage
+    localStorage.setItem("citydata", name);
+    window.location.reload(); // 🔄 Force reload
+
+    // Encode the section name for URL and reload to that section
+    // const anchor = `#${encodeURIComponent(name)}`;
+    const anchor = `#placeofworhsipId`;
+    window.location.href = window.location.pathname + anchor;
   };
+
+  // ✅ Load saved tab from localStorage on mount
+  useEffect(() => {
+    const savedTab = localStorage.getItem("citydata");
+    const defaultTab = tabNames[0];
+    const tabToLoad = tabNames.includes(savedTab) ? savedTab : defaultTab;
+
+    setActiveSection(tabToLoad);
+
+    setTimeout(() => {
+      const section = sectionRefs.current[tabToLoad];
+      if (section?.current) {
+        section.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 200); // small delay to wait for DOM to mount
+  }, []);
+
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -1484,6 +1495,8 @@ export default function Culturereligiousattractions() {
           </div>
         </div>
 
+
+
         {/*----------------- Intro Section ----------------*/}
         <div className="visitIntroParaSection detailIntro">
           <div className="container max-w-7xl mx-auto px-4">
@@ -1513,9 +1526,8 @@ export default function Culturereligiousattractions() {
               </p>
             </div>
           </div>
+          <div id="placeofworhsipId" > </div>
         </div>
-
-
 
         <section id="fourthSection" className="relative">
           <div
@@ -1534,7 +1546,7 @@ export default function Culturereligiousattractions() {
                       ? "!bg-[#a44294] text-white !font-medium"
                       : "bg-gray-200 text-gray-800 !font-medium"
                       }`}
-                    // onClick={() => setActiveSection(name)}
+
                     onClick={() => handleTabClick(name)}
                   >
                     {name}
@@ -1969,6 +1981,8 @@ export default function Culturereligiousattractions() {
 
 
         </section>
+
+
 
 
 

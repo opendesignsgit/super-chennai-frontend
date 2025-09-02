@@ -1713,6 +1713,10 @@
 }
 
 @media (max-width: 880px) {
+
+  .CulturePage .foodlistsec{
+    margin-top: 0;
+  }
   .wrapSectionFuture {
     padding: 18px;
     margin: 28px auto;

@@ -45,61 +45,6 @@ export const cards = [
   },
 
   {
-    id: 2,
-    EventsCalendarTitle: "4th Tamil Nadu International Kite Festival | Day 3",
-    EventsCalendarContent:
-      "Welcome to the 4th Tamil Nadu International Kite Festival!...",
-    EventsCalendarMonth: "Saturday, 16 August 2025",
-    EventsCalendarTime: "03:00 PM",
-    EventsCalendarCategory: "Festival",
-    image: "/images/HomePage-Images/Events/Newevents/day3-kite.jpg",
-    link: "/kite-festival-day-3",
-    location: "Thiruvidanthai Beach, ECR, Mahabalipuram",
-    siteLink:
-      "https://www.district.in/events/4th-tamil-nadu-international-kite-festival-day-3-buy-tickets?disableSSR=true",
-    language: "",
-    hours: "",
-    ageLimit: "",
-    rleigion: "",
-    aboutFull: `
-   
-Get ready for four days of color, creativity, and family fun at Thiruvidanthai Beach! Kite enthusiasts from around the world—including France, Thailand, Switzerland, Singapore, Malaysia, Vietnam, and India—come together for a spectacular celebration of sky art Day 4 Highlights:
-The festival’s grand finale on Day 4 promises an unforgettable experience at Thiruvidanthai Beach, ECR, Mahabalipuram, starting from 3 PM onwards. Enjoy dazzling international giant kite displays, thrilling acrobatic performances, mesmerizing LED kite shows, sparkling fireworks, a lively kids’ carnival, and a variety of shopping, food stalls, and cultural activities—making it a perfect family-friendly celebration of creativity and fun. 
-Special Attractions:
-
-Over 250 kites from eight countries painting the sky
-
-Vibrant themed kites promoting “SAVE MARINE LIFE”
-
-Huge colorful teddy bears and realistic dinosaurs for photo fun
-    
-    `,
-  },
-  {
-    id: 3,
-    EventsCalendarTitle: "4th Tamil Nadu International Kite Festival | Day 4",
-    EventsCalendarContent:
-      "Welcome to the 4th Tamil Nadu International Kite Festival!...",
-    EventsCalendarMonth: "Sunday, 17 August 2025",
-    EventsCalendarTime: "03:00 PM",
-    EventsCalendarCategory: "Festival",
-    siteLink:
-      "https://www.district.in/events/4th-tamil-nadu-international-kite-festival-day-4-buy-tickets?disableSSR=true",
-    image: "/images/HomePage-Images/Events/Newevents/day4-kite.jpg",
-    link: "/kite-festival-day-3",
-    location: "Thiruvidanthai Beach, ECR, Mahabalipuram",
-    language: "",
-    hours: "",
-    ageLimit: "",
-    rleigion: "",
-    aboutFull: `
-    
-    Welcome to the 4th Tamil Nadu International Kite Festival! Experience four days of color, creativity, and family fun at Thiruvidanthai Beach. Kite enthusiasts from around the world—including France, Thailand, Switzerland, Singapore, Malaysia, Vietnam, and India—come together for a spectacular celebration of sky art. Organised by Global Media Box in association with the Department of Tourism, Tamil Nadu, this year’s festival promises to be bigger and better than ever.
-    What to Expect:
-Visitors can enjoy a thrilling lineup of events, featuring dazzling international giant kite displays, breathtaking acrobatic kite performances, and mesmerizing LED kite shows that light up the sky. The festival also includes a sparkling fireworks display, a lively kids’ carnival, and a variety of shopping, food stalls, and cultural activities, making it a fun-filled experience for the entire family. Special Attractions:
-Over 250 kites from eight countries will paint the skies, alongside vibrant themed kites promoting “SAVE MARINE LIFE”. Don’t miss the huge colorful teddy bears and realistic dinosaurs, perfect for photo opportunities and adding extra fun for visitors of all ages.`,
-  },
-  {
     id: 4,
 
     EventsCalendarTitle: "GALLABOX presents Patriotic Run",
@@ -1264,62 +1209,11 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     aboutFull:
       "In this workshop, you will learn a 6-step method to solve the 3 x 3 x 3 Rubik's Cube in about 2 hours through a live 120-minute slow and steady streaming demonstration led by the course creator. This step-by-step MOOC solution is designed for learners aged 8 to 80 and aims to sharpen six vital skills: critical thinking, analytical thinking, reasoning and problem-solving, systems analysis and design, technology design and programming, and judgment and decision-making. The experience is engaging and easy-paced, offering a clear and enjoyable path to mastering this mind-boggling puzzle with over 43 quintillion ways to scramble. After the live session, a limited-period special offer will allow you discounted access to all demonstrated lessons so you can learn at your own pace anytime, anywhere. This 5-star rated workshop combines expert guidance with practical skills development, providing a rewarding sense of accomplishment both personally and professionally.",
   },
-  {
-    id: 60,
-    EventsCalendarTitle: "Knife Painting Workshop",
-    EventsCalendarContent:
-      "An immersive art experience where participants explore texture...",
-    EventsCalendarMonth: "12 Aug – 11 Aug, 2025",
-    EventsCalendarTime: "3:00 PM",
-    EventsCalendarCategory: "Art Workshop",
-    image: "/images/HomePage-Images/Events/Newevents/94.jpg",
-    link: "/events",
-    location: "Queens and Beans, Hyderabad",
-    language: "English",
-    hours: "1 hour 30 minutes",
-    ageLimit: "All age groups",
-    price: "₹799 onwards",
-    aboutFull:
-      "Dive headfirst into a captivating artistic escapade at our Knife Painting Workshop, where the canvas becomes your playground and each stroke tells a unique story, bringing texture to life. Immerse yourself in the intricate art of palette knife techniques with guidance from seasoned instructors who will reveal the secrets of creating mesmerizing textures, layering, and depth. Unleash your inner color maestro by experimenting with a vibrant spectrum of hues, discovering the magical interplay of colors as your masterpiece evolves. Whether you are a novice or experienced artist, receive personalized guidance tailored to your skill level to enhance your technique. Experience the therapeutic essence of knife painting as you let stress melt away, enjoying not just the creation of a beautiful piece but the joyful journey itself. Engage in interactive and playful sessions with fellow art lovers, sharing experiments, exchanging ideas, and soaking in the collective creative energy of our vibrant community.",
-  },
 
-  {
-    id: 61,
-    EventsCalendarTitle: "Japanese Kintsugi Workshop",
-    EventsCalendarContent:
-      "Discover the ancient art of Kintsugi—mending broken ceramics with...",
-    EventsCalendarMonth: "12 Aug, 2025",
-    EventsCalendarTime: "2:00 PM",
-    EventsCalendarCategory: "Art & Mindfulness",
-    image: "/images/HomePage-Images/Events/Newevents/93.jpg",
-    link: "/events",
-    location: "Dices And Drama, Chennai",
-    language: "English, Hindi",
-    hours: "2 hours",
-    ageLimit: "All age groups",
-    price: "₹999",
-    aboutFull:
-      "Step into the ancient Japanese philosophy of Kintsugi, where broken ceramics are mended with gold, turning flaws into beauty. This workshop is more than just an art form—it’s a practice in resilience, healing, and self-acceptance. Embrace imperfection, create something unique, and reflect on the stories that make us whole. You will learn Kintsugi basics, discovering the art and meaning behind this 400-year-old practice. During the workshop, you will repair a broken pottery piece using golden joinery techniques and engage in mindful creation to reflect and connect while crafting your own symbolic piece.",
-  },
 
-  {
-    id: 62,
-    EventsCalendarTitle: "Mandala Workshop",
-    EventsCalendarContent:
-      "A beginner-friendly art workshop exploring the spiritual...",
-    EventsCalendarMonth: "17 Aug, 2025",
-    EventsCalendarTime: "Time not specified",
-    EventsCalendarCategory: "Arts and Crafts",
-    image: "/images/HomePage-Images/Events/Newevents/92.jpg",
-    link: "/events",
-    location: "House of Games, Kilpauk, Chennai",
-    language: "English, Tamil",
-    hours: "1 hour",
-    ageLimit: "All age groups",
-    price: "₹999",
-    aboutFull:
-      "A mandala is a geometric representation of the universe, often used as a tool for meditation and spiritual exploration. Our beginner-friendly Mandala art workshop offers a welcoming and supportive environment where you will receive hands-on guidance from our instructor, who will walk you through each step of the creative process at your own pace. All materials and tools are provided, so you can focus entirely on your artwork without any hassle. The workshop duration is flexible — whether you finish quickly or prefer to take your time, you are encouraged to create at a rhythm that feels comfortable to you. This relaxed and creative space is perfect whether you attend solo, with a partner, friends, or family, offering a calming and expressive break from your routine. Additionally, you will enjoy refreshments with 50% of your venue payment returned as food credit, making it a treat for both your mind and taste buds. To ensure personalized attention, sessions are offered in small group formats of one-on-one, two-on-one, or three-on-one, fostering an interactive experience. By the end of the workshop, you will not only gain new artistic skills but also leave with your own handmade masterpiece. Prior registration is required; for any queries, please contact the café.",
-  },
+
+
+
 
   {
     id: 63,
@@ -1381,24 +1275,7 @@ Join us for a lively and creative event where we turn ordinary bottles into extr
   `,
   },
 
-  {
-    id: 66,
-    EventsCalendarTitle: "Sculpture Painting Workshop – Sunflower",
-    EventsCalendarContent: "Sunflowers you don’t just see… but feel....",
-    EventsCalendarMonth: "17 Aug, 2025",
-    EventsCalendarTime: "5:00 PM",
-    EventsCalendarCategory: "Arts and Crafts, Home Decor, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/88.jpg",
-    link: "/events",
-    location: "House of Games, Kilpauk, Chennai",
-    language: "English, Tamil",
-    hours: "2 Hours",
-    ageLimit: "12yrs+",
-    price: "₹2999",
-    aboutFull: `
-Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginner-friendly art workshop designed to awaken your creativity in a relaxed, expressive space. Whether you're coming solo, with a partner, friends, or family, you'll be guided step-by-step by our instructor, ensuring a comfortable pace for every participant. All tools and materials are provided, so you can simply show up and create. The session offers flexible timing — some finish quickly, others take their time — and both are welcome to enjoy the process at their own rhythm. You’ll also receive 50% of your venue payment back as food credit, making it a treat for both your mind and taste buds. With personalized formats available (1:1, 2:1, or 3:1), you’ll get focused attention in a small group setting. And best of all, you’ll leave with your own handmade masterpiece and a sense of accomplishment. Prior registration is required. For queries, contact the café.
-  `,
-  },
+
 
   {
     id: 67,
@@ -1450,50 +1327,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Step into a world where creativity meets fun Our Neon Painting Workshop is a one of a kind art experience where you create glowing masterpieces using fluorescent paints. Whether you are a seasoned artist or just looking to try something fun and vibrant, this workshop is all about expression, fun, and unforgettable memories.",
   },
 
-  {
-    id: 69,
-    EventsCalendarTitle: "Clay Coaster Workshop",
-    EventsCalendarContent:
-      "Beginner-friendly air dry clay workshop with hands-on...",
-    EventsCalendarMonth: "17 Aug, 2025",
-    EventsCalendarTime: "1 hour 30 minutes",
-    EventsCalendarCategory: "Arts and Crafts, Home Decor, Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/84.jpg",
-    link: "/events",
-    location: "House of Games, Kilpauk: Chennai",
-    language: "English, Tamil",
-    hours: "1 hour 30 minutes",
-    ageLimit: "12yrs +",
-    price: "₹1699",
-    aboutFull: `
-  Here's our beginner-friendly air dry clay workshop.
 
-  What to Expect:
-
-  Hands-On Guidance:
-  Our instructor will guide you step-by-step, helping you comfortably navigate the entire creative process at your own pace.
-
-  All Materials Provided:
-  We’ve got you covered with all the tools and materials.
-
-  Flexible Duration:
-  Some participants finish quickly, while others love to slow down and enjoy the process — both are welcome! Create at your own rhythm.
-
-  Relaxed, Creative Space:
-  Whether you're coming solo, as a couple, with friends, or family, this session offers a calming, expressive escape from routine.
-
-  Refreshments Provided:
-  Get 50% of your venue payment back as food credit. Enjoy delicious refreshments while you create — it's a treat for both your mind and taste buds!
-
-  1:1, 2:1, or 3:1 Format:
-  We offer personalized attention with small group formats for a more focused and interactive experience.
-
-  Take Your Art Home:
-  Leave the workshop not just with new skills, but with your own handmade masterpiece!
-
-  Prior registration needed. For queries contact cafe.
-  `,
-  },
 
   {
     id: 70,
@@ -1712,25 +1546,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     `,
   },
 
-  {
-    id: 78,
-    EventsCalendarTitle: "Vikramjit Singh - Talking & Touring",
-    EventsCalendarContent: "Vikramjit Singh is none of these things and more.",
-    EventsCalendarMonth: "12 Jul – 16 Aug, 2025",
-    EventsCalendarTime: "08:00 PM",
-    EventsCalendarCategory: "Comedy Shows",
-    image:
-      "/images/HomePage-Images/Events/Newevents/vikramjit-singh-talking-touring.jpg",
-    link: "/events",
-    location: "The J Spot, Juhu: Chennai",
-    language: "Hindi, English",
-    hours: "1 hour 20 minutes",
-    ageLimit: "16years +",
-    rleigion: "Comedy",
-    aboutFull: `Ideal husband, doting father, youth icon.
-      Vikramjit Singh is none of these things and more. It hasn’t been easy, but anything is possible with a bad economy, complicated relationships and a missing jawline. He credits his family for who he has become, 
-      but not in the way you think. Bring whoever you call “family” and laugh through it all, feeling slightly better about your own life.`,
-  },
+
 
   {
     id: 79,

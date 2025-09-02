@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../../../assets/Css/CostOfLiving.css";
 import Search from "../../../Components/Search";
 import { Link } from "react-router-dom";
@@ -1333,6 +1333,8 @@ export default function Culturereligiousattractions() {
   const [activeSection, setActiveSection] = useState("Central Chennai");
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileSticky, setIsMobileSticky] = useState(false);
+  const [selectedTab, setSelectedTab] = useState("");
+  const sectionRefs = useRef({});
 
   const tabNames = [
     "Central Chennai",
@@ -1351,6 +1353,19 @@ export default function Culturereligiousattractions() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  tabNames.forEach((tab) => {
+    if (!sectionRefs.current[tab]) {
+      sectionRefs.current[tab] = React.createRef();
+    }
+  });
+  const handleTabClick = (name) => {
+    setActiveSection(name);
+    const section = sectionRefs.current[name];
+    if (section && section.current) {
+      section.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   const handleStickyScroll = () => {
     const section = document.getElementById("fourthSection");
@@ -1473,11 +1488,10 @@ export default function Culturereligiousattractions() {
         <div className="visitIntroParaSection detailIntro">
           <div className="container max-w-7xl mx-auto px-4">
             <div
-              className={`CostOflivingBackground ${
-                scrollDir === "right"
-                  ? "scroll-rightCostofLiving"
-                  : "scroll-leftCostofLiving"
-              }`}
+              className={`CostOflivingBackground ${scrollDir === "right"
+                ? "scroll-rightCostofLiving"
+                : "scroll-leftCostofLiving"
+                }`}
               ref={bgTextRef}
             >
               <p>
@@ -1501,56 +1515,37 @@ export default function Culturereligiousattractions() {
           </div>
         </div>
 
-        {/* <div className="container max-w-7xl mx-auto px-4 pb-[25px] chennaiInvestmentsButtons">
-          <div className="flex flex-wrap gap-4 justify-center mb-6">
-            {tabNames.map((name) => (
-              <button
-                key={name}
-                className={`tabButton px-4 py-2 rounded font-semibold transition ${
-                  activeSection === name
-                    ? "!bg-[#a44294] text-white !font-medium"
-                    : "bg-gray-200 text-gray-800 !font-medium"
-                }`}
-                onClick={() => setActiveSection(name)}
-              >
-                {name}
-              </button>
-            ))}
-          </div>
-        </div> */}
+
 
         <section id="fourthSection" className="relative">
           <div
-            className={`stickyPositionContainer w-full transition-transform transition-shadow duration-300 ease-in-out ${
-              isSticky
-                ? "fixed top-0 left-0 z-50 bg-white shadow-md py-3"
-                : "relative"
-            }`}
-            // className={`stickyPositionContainer w-full fixed top-0 left-0 z-50 bg-white shadow-md py-3 transition-all duration-300 ease-in-out ${
-            //   isSticky
-            //     ? "translate-y-0 opacity-100"
-            //     : "-translate-y-full opacity-0 pointer-events-none"
-            // }`}
+            className={`stickyPositionContainer w-full transition-transform transition-shadow duration-300 ease-in-out ${isSticky
+              ? "fixed top-0 left-0 z-50 bg-white shadow-md py-3"
+              : "relative"
+              }`}
+
           >
             <div className="container max-w-7xl mx-auto px-4 pb-[25px] chennaiInvestmentsButtons">
               <div className="flex flex-wrap gap-4 justify-center mb-6">
                 {tabNames.map((name) => (
                   <button
                     key={name}
-                    className={`tabButton px-4 py-2 rounded font-semibold transition ${
-                      activeSection === name
-                        ? "!bg-[#a44294] text-white !font-medium"
-                        : "bg-gray-200 text-gray-800 !font-medium"
-                    }`}
-                    onClick={() => setActiveSection(name)}
+                    className={`tabButton px-4 py-2 rounded font-semibold transition ${activeSection === name
+                      ? "!bg-[#a44294] text-white !font-medium"
+                      : "bg-gray-200 text-gray-800 !font-medium"
+                      }`}
+                    // onClick={() => setActiveSection(name)}
+                    onClick={() => handleTabClick(name)}
                   >
                     {name}
                   </button>
+
                 ))}
               </div>
             </div>
           </div>
-          
+
+
 
           {/* -----------------CentralChennai--------------------  */}
 
@@ -1965,61 +1960,21 @@ export default function Culturereligiousattractions() {
             </>
           )}
 
+
+
           {/* -----------------OutsideChennai--------------------  */}
 
           {/*----------------- Multiple Benefit Sections ----------------*/}
 
-          {/* {imageSections2.map((section, index) => (
-          <section
-            className={`imgcontentCul flex flex-wrap justify-center transition-colors duration-300 
-           ${
-             index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"
-           } 
-           ${
-             index % 3 === 0
-               ? "pattern-a"
-               : index % 3 === 1
-               ? "pattern-b"
-               : "pattern-c"
-           }`}
-            key={index}
-          >
-            <div className="space-y-6 bg-white p-4 rounded bottomListIcon w-full">
-              {Object.values(section).map((subSection, i) => (
-                <div key={i}>
-                  {subSection[0].points.map((item, j) => (
-                    <div key={j} className="clcboxItemss flex mb-4">
-                      <div className="clcboxIImg">
-                        <img src={item.imgs} alt={item.title} />
-                      </div>
-                      <div className="clcboxICont">
-                        <h3 className="text-lg font-semibold mb-2">
-                          {item.title}
-                        </h3>
 
-                        {item.note2 && (
-                          <p className="text-gray-700 mb-1">{item.note2}</p>
-                        )}
-                        {item.para && (
-                          <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
-                            {item.para.map((point, k) => (
-                              <li key={k}>{point}</li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </section>
-        ))} */}
+
         </section>
+
+
 
         {/*--------------- Explore More Chennai----------------- */}
 
-        <LiveSlider/>
+        <LiveSlider />
 
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">

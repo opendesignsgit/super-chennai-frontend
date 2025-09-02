@@ -330,10 +330,10 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   {
     id: 12,
     metaTitleEvent:
-      "Workshops in Chennai/Clay Miniature Workshop/Super Chennai",
+      "Creative Clay Magnet Workshop | Chennai Hands-On Session",
     conicallinkEvent: "/eventsdetails/12",
     metaDescriptionEvent:
-      "Looking for creative Workshops in Chennai? Join the Clay Miniature Magnet Workshop in Kilpauk on Aug 30 and handcraft your own fridge magnet! Book now.",
+      "Craft tiny clay magnets in a fun hands-on workshop! Learn sculpting, texturing, and magnet techniques, and take home your handmade creations. Aug 12–Sep 21.",
     siteLink:
       "https://in.bookmyshow.com/events/clay-miniature-magnet/ET00411633",
     EventsCalendarTitle: "Clay miniature magnet",
@@ -541,6 +541,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 23,
+    
     EventsCalendarTitle: "Midweek Masala - Weekday comedy show",
     EventsCalendarContent:
       "Waiting for the weekend for some good comedy? Well,...",
@@ -559,6 +560,11 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   },
   {
     id: 24,
+        metaTitleEvent:
+      "Super Chennai / Music & Food Festival / Flavours & Festive Vibes",
+    conicallinkEvent: "/eventsdetails/91",
+    metaDescriptionEvent:
+      "Mark your calendar for 8 Sept! This free-entry festival brings soulful music, mouthwatering food, and Chennai’s vibrant spirit together. Register early to join!",
     siteLink:
       "https://www.instagram.com/thehindu_madeofchennai/reel/DNcjjafgVvo/?hl=en",
     EventsCalendarTitle: "The Hindu – Made of Chennai",
@@ -730,6 +736,11 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
   {
     id: 33,
+        metaTitleEvent:
+      "Sid Sriram Live / Soulful Music & Magic On Stage / Super Chennai",
+    conicallinkEvent: "/eventsdetails/91",
+    metaDescriptionEvent:
+      "Witness Sid Sriram’s magic! From soft melodies to electrifying jams, enjoy a soulful night where every note connects hearts and creates lasting memories.",
     siteLink:
       "https://www.district.in/events/sid-sriram-live-in-concert-chennai-november-2025-buy-tickets",
     EventsCalendarTitle: "Sid Sriram Live in Concert | Chennai",
@@ -1808,19 +1819,16 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 82,
-    metaTitleEvent: "",
+    metaTitleEvent: "Vibe Check Comedy Night / Chennai’s Unpredictable Stand-Up Show",
     conicallinkEvent: "/eventsdetails/82",
-    metaDescriptionEvent: "",
-    siteLink:
-      "https://in.bookmyshow.com/events/madras-comedy-show/ET00361816",
+    metaDescriptionEvent: "Don’t miss Vibe Check on 6 Sept—a no-spoiler comedy night packed with surprise comics, bold jokes, and nonstop laughter to make your weekend unforgettable!",
+    siteLink: "https://in.bookmyshow.com/events/madras-comedy-show/ET00361816",
     EventsCalendarTitle: "VIBE CHECK - An Youth Friendly Comedy show",
-    EventsCalendarContent:
-      "Looking for a weekend plan you can truly count on",
+    EventsCalendarContent: "Looking for a weekend plan you can truly count on",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "04:00 PM",
     EventsCalendarCategory: "Stand up Comedy",
-    image:
-      "/images/HomePage-Images/Events/Newevents/VIBE-CHECK.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/VIBE-CHECK.jpg",
     link: "/events",
     location: "Punch - Unpaid Therapist: Chennai",
     language: "Tamil, English",
@@ -1833,19 +1841,16 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 83,
-    metaTitleEvent: "",
+    metaTitleEvent: "Comedy Open Mic Nights / Stand-Up Shows in Chennai This Sept",
     conicallinkEvent: "/eventsdetails/83",
-    metaDescriptionEvent: "",
-    siteLink:
-      "https://in.bookmyshow.com/events/vikkals-comedy-cafe/ET00429673",
+    metaDescriptionEvent: "Experience raw humor and fresh acts at Open Mic Nights, 2–4 Sept. ₹100 ticket credit for food & drinks. Shows weekly at Mylapore & Anna Nagar Board Room.",
+    siteLink: "https://in.bookmyshow.com/events/vikkals-comedy-cafe/ET00429673",
     EventsCalendarTitle: "Vikkals Comedy Cafe - Standup Comedy Open Mic",
-    EventsCalendarContent:
-      "After 10 years in stand-up and six specials",
+    EventsCalendarContent: "After 10 years in stand-up and six specials",
     EventsCalendarMonth: " 2 Sep – 4 Sep 2025",
     EventsCalendarTime: "8:00 PM",
     EventsCalendarCategory: "Comedy Shows",
-    image:
-      "/images/HomePage-Images/Events/Newevents/Vikkals-Comedy.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/Vikkals-Comedy.jpg",
     link: "/events",
     location: "",
     language: "Tamil, English",
@@ -1856,14 +1861,13 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 84,
-    metaTitleEvent: "",
+    metaTitleEvent: "Uncensored Comedy Nights / Raw Weekend Stand-Up in Chennai",
     conicallinkEvent: "/eventsdetails/84",
-    metaDescriptionEvent: "",
+    metaDescriptionEvent: "Laugh out loud this 5–7 Sept! Late Night Comedy is back with no rules, surprise comics, and pure weekend comedy club vibes to light up Chennai’s vibrant nights.",
     siteLink:
       "https://in.bookmyshow.com/events/the-chennai-late-night-comedy/ET00432136",
     EventsCalendarTitle: "The Chennai Late Night Comedy Show",
-    EventsCalendarContent:
-      "Step into the world of Late Night Comedy",
+    EventsCalendarContent: "Step into the world of Late Night Comedy",
     EventsCalendarMonth: "5 Sep – 7 Sep 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Stand up Comedy",
@@ -1886,13 +1890,11 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     siteLink:
       "https://in.bookmyshow.com/events/salt-air-swifts-flair/ET00457727",
     EventsCalendarTitle: "Salt Air: Swift's Flair",
-    EventsCalendarContent:
-      "Step into the world of Late Night Comedy",
+    EventsCalendarContent: "Step into the world of Late Night Comedy",
     EventsCalendarMonth: "",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Music Festivals",
-    image:
-      "/images/HomePage-Images/Events/Newevents/Salt-Air.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/Salt-Air.jpg",
     link: "/events",
     location: "",
     language: "English",
@@ -1907,16 +1909,14 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/86",
     metaDescriptionEvent: "",
-    siteLink:
-      "https://in.bookmyshow.com/events/bad-drawing-party/ET00380239",
+    siteLink: "https://in.bookmyshow.com/events/bad-drawing-party/ET00380239",
     EventsCalendarTitle: "Bad Drawing Party",
     EventsCalendarContent:
       "Step into a world of creativity and fun at our Bad Drawing Party!",
     EventsCalendarMonth: "2 Sep – 5 Oct 2025",
     EventsCalendarTime: "2:30 PM",
     EventsCalendarCategory: "Arts and Crafts",
-    image:
-      "/images/HomePage-Images/Events/Newevents/Bad-Drawing.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/Bad-Drawing.jpg",
     link: "/events",
     location: "Dices And Drama: Chennai",
     language: "Bengali, English, Hindi, Kannada, Malaya",
@@ -1934,13 +1934,11 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     siteLink:
       "https://in.bookmyshow.com/events/hamleys-play-chennai/ET00362045",
     EventsCalendarTitle: "Hamleys Play - Chennai",
-    EventsCalendarContent:
-      "Hamleys Play reimagines the traditional concept",
+    EventsCalendarContent: "Hamleys Play reimagines the traditional concept",
     EventsCalendarMonth: "2 Sep – 30 Sep 2025",
     EventsCalendarTime: "7:00 PM",
     EventsCalendarCategory: "Entertainment",
-    image:
-      "/images/HomePage-Images/Events/Newevents/Hamleys-Play.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/Hamleys-Play.jpg",
     link: "/events",
     location: "Phoenix Marketcity: Chennai",
     language: "English",
@@ -1952,9 +1950,9 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 88,
-    metaTitleEvent: "",
+    metaTitleEvent: "Hand-Pressed Pottery Workshop / Creative Event / Chennai",
     conicallinkEvent: "/eventsdetails/88",
-    metaDescriptionEvent: "",
+    metaDescriptionEvent: "Get hands-on with pottery! Craft keepsakes in this beginner-friendly workshop (1–18 Sep, Chennai). Materials included. Sign up and get creative!",
     siteLink:
       "https://in.bookmyshow.com/events/hand-pressed-pottery/ET00457809",
     EventsCalendarTitle: "Hand pressed Pottery",
@@ -1963,8 +1961,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarMonth: "1 Sep – 18 Sep 2025",
     EventsCalendarTime: "7:30 PM",
     EventsCalendarCategory: "Arts and Crafts",
-    image:
-      "/images/HomePage-Images/Events/Newevents/Hand-pressed.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/Hand-pressed.jpg",
     link: "/events",
     location: "Wiggle Room: Chennai",
     language: "English, Tamil",
@@ -1976,19 +1973,17 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 89,
-    metaTitleEvent: "",
+    metaTitleEvent: "Art Workshop in Chennai / Beginner-Friendly Creative Event",
     conicallinkEvent: "/eventsdetails/89",
-    metaDescriptionEvent: "",
-    siteLink:
-      "https://in.bookmyshow.com/events/mandala-workshop/ET00421105",
+    metaDescriptionEvent: "Sept 6–7: Explore your creativity with a guided art class, small groups, and 50% food credit. All materials included. Register early!",
+    siteLink: "https://in.bookmyshow.com/events/mandala-workshop/ET00421105",
     EventsCalendarTitle: "Kid's Mandala workshop ",
     EventsCalendarContent:
       "Join our beginner-friendly art workshop for a relaxed and creative",
     EventsCalendarMonth: "6 Sep – 7 Sep 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Entertainment",
-    image:
-      "/images/HomePage-Images/Events/Newevents/Kids-Mandala.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/Kids-Mandala.jpg",
     link: "/events",
     location: "House of Games, Kilpauk: Chennai",
     language: "English, Tamil",
@@ -2000,9 +1995,9 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 90,
-    metaTitleEvent: "",
+    metaTitleEvent: "Navin Kumar Comedy Tour / Laughter-Packed Shows / Super Chennai",
     conicallinkEvent: "/eventsdetails/90",
-    metaDescriptionEvent: "",
+    metaDescriptionEvent: "Catch Navin Kumar’s viral comedy live! The Quadrant Life Crisis is a hilarious journey from a global comic you can’t miss. Book tickets now for Sept 6–13!",
     siteLink:
       "https://in.bookmyshow.com/events/quadrant-life-crisis-stand-up-solo-by-navin-kumar/ET00433604",
     EventsCalendarTitle: "Quadrant Life Crisis- Stand Up Solo by Navin Kumar",
@@ -2011,8 +2006,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarMonth: "6 Sep – 13 Sep 2025",
     EventsCalendarTime: "7:00 PM",
     EventsCalendarCategory: "Stand up Comedy",
-    image:
-      "/images/HomePage-Images/Events/Newevents/Quadrant-Life.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/Quadrant-Life.jpg",
     link: "/events",
     location: "Just BLR: Bengaluru",
     language: "English",
@@ -2024,19 +2018,19 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 91,
-    metaTitleEvent: "",
+    metaTitleEvent:
+      "3D Art Workshop / Super Chennai / Beginner-Friendly Art Event",
     conicallinkEvent: "/eventsdetails/91",
-    metaDescriptionEvent: "",
-    siteLink:
-      "https://in.bookmyshow.com/events/macrame-workshop/ET00433154",
+    metaDescriptionEvent:
+      "Join us 6–7 Sept 2025 at House of Games, Kilpauk! A 2.5-hour guided art session with step-by-step learning, all materials, and refreshments included.",
+    siteLink: "https://in.bookmyshow.com/events/macrame-workshop/ET00433154",
     EventsCalendarTitle: "Kid's Texture Workshop",
     EventsCalendarContent:
       "Discover your creative side at our beginner-friendly art workshop",
     EventsCalendarMonth: "6 Sep – 7 Sep 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Entertainment",
-    image:
-      "/images/HomePage-Images/Events/Newevents/Kids-Texture.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/Kids-Texture.jpg",
     link: "/events",
     location: "House of Games, Kilpauk: Chennai",
     language: "English, Tamil",

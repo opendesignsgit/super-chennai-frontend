@@ -14,6 +14,7 @@ import Slider from "react-slick";
 import Utilitiesinchennai1 from "../Components/InvestSideBar";
 import Whychennaitab from "../Components/whychennaitab";
 import EventFunction from "./EventFunction";
+import { Helmet } from "react-helmet-async";
 
 export default function About() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -315,117 +316,127 @@ export default function About() {
   }, []);
   return (
     <>
-      <div className="InvestPageId">
-        <div
-          className="VolunteerBgSection InvestBgSection notHome aboutBan"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <div className="VolunteerMainContainer">
-            <div className="volunteerSectionBanner">
-              <div className="VolunteerBannerImage">
-                <img src="/images/about-banner.jpg" alt="" />
+      <div>
+        <Helmet>
+          <title>helllo</title>
+          <meta
+            name="description"
+            content="Helllo"
+          />
+          <link rel="canonical" href="/about-us" />
+        </Helmet>
+
+        <div className="InvestPageId">
+          <div
+            className="VolunteerBgSection InvestBgSection notHome aboutBan"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div className="VolunteerMainContainer">
+              <div className="volunteerSectionBanner">
+                <div className="VolunteerBannerImage">
+                  <img src="/images/about-banner.jpg" alt="" />
+                </div>
+                <h3 className="voluntterContent">About</h3>
               </div>
-              <h3 className="voluntterContent">About</h3>
+            </div>
+            <div className="notHomePageSearch">
+              <Search />
             </div>
           </div>
-          <div className="notHomePageSearch">
-            <Search />
-          </div>
-        </div>
 
-        <div data-aos="fade-up" data-aos-delay="400">
-          <div className="InvestChennaiContainerFlex aboutIntro">
-            <div className="InvestChennaiContent">
-              <h2>SUPER CITY TO LIVE</h2>
-              <p>
-                Chennai is India’s healthcare capital, SaaS capital, fintech
-                capital, and automobile capital. Home to 7.5 million people,{" "}
-                <br />
-                it is a 386-year-old city alive with heritage and vibing to the
-                march of the future.
-              </p>
-              <p>
-                A city where ideas thrive, businesses grow, and communities
-                flourish. This is not just Chennai. <br />
-                This is Super Chennai.
-              </p>
-            </div>
-            <div
-              className={`InvestTextBackground ${
-                scrollDir === "right"
-                  ? "scroll-rightInvestPage"
-                  : "scroll-leftInvestPage"
-              }`}
-              ref={bgTextRef}
-            >
-              <p>Super &nbsp; Chennai &nbsp; Super &nbsp; Chennai</p>
+          <div data-aos="fade-up" data-aos-delay="400">
+            <div className="InvestChennaiContainerFlex aboutIntro">
+              <div className="InvestChennaiContent">
+                <h2>SUPER CITY TO LIVE</h2>
+                <p>
+                  Chennai is India’s healthcare capital, SaaS capital, fintech
+                  capital, and automobile capital. Home to 7.5 million people,{" "}
+                  <br />
+                  it is a 386-year-old city alive with heritage and vibing to
+                  the march of the future.
+                </p>
+                <p>
+                  A city where ideas thrive, businesses grow, and communities
+                  flourish. This is not just Chennai. <br />
+                  This is Super Chennai.
+                </p>
+              </div>
+              <div
+                className={`InvestTextBackground ${
+                  scrollDir === "right"
+                    ? "scroll-rightInvestPage"
+                    : "scroll-leftInvestPage"
+                }`}
+                ref={bgTextRef}
+              >
+                <p>Super &nbsp; Chennai &nbsp; Super &nbsp; Chennai</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <section className="welcome-super-chennai">
-          <div className="welcomesuperIn">
-            <div className="welcome-images">
-              {welcomeSuperChennaiData.images.map((src, index) => (
-                <img src="/images/about-intro-img.png" alt="About Us" />
-              ))}
-            </div>
-            <div className="welcome-text">
-              <h2>{welcomeSuperChennaiData.heading}</h2>
-              <h4>{welcomeSuperChennaiData.subheading}</h4>
-              <div className="welcome-columns">
-                {welcomeSuperChennaiData.columns.map((column, colIndex) => (
-                  <div className="welcome-column" key={colIndex}>
-                    {column.map((text, textIndex) => (
-                      <p key={textIndex}>{text}</p>
-                    ))}
-                  </div>
+          <section className="welcome-super-chennai">
+            <div className="welcomesuperIn">
+              <div className="welcome-images">
+                {welcomeSuperChennaiData.images.map((src, index) => (
+                  <img src="/images/about-intro-img.png" alt="About Us" />
                 ))}
               </div>
+              <div className="welcome-text">
+                <h2>{welcomeSuperChennaiData.heading}</h2>
+                <h4>{welcomeSuperChennaiData.subheading}</h4>
+                <div className="welcome-columns">
+                  {welcomeSuperChennaiData.columns.map((column, colIndex) => (
+                    <div className="welcome-column" key={colIndex}>
+                      {column.map((text, textIndex) => (
+                        <p key={textIndex}>{text}</p>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div className="flex flex-col container max-w-7xl mx-auto px-4 vissionMission">
+            <div className="vision-mission-container">
+              <div className="vision-mission-card">
+                <img
+                  src="/images/mission-icon.png"
+                  alt="Mission Icon"
+                  className="vision-mission-icon"
+                />
+                <h2 className="vision-mission-title">Vision</h2>
+                <p className="vision-mission-text">
+                  To position Chennai as one of the world's most liveable,
+                  lovable, and future-ready cities - where innovation, culture,
+                  and community thrive together.
+                </p>
+              </div>
+              <div className="vision-mission-card">
+                <img
+                  src="/images/vission-icon.png"
+                  alt="Vision Icon"
+                  className="vision-mission-icon"
+                />
+
+                <h2 className="vision-mission-title">Mission</h2>
+                <p className="vision-mission-text">
+                  To showcase Chennai's identity, connect people to
+                  opportunities, and build a platform that inspires pride,
+                  progress, and participation.
+                </p>
+              </div>
             </div>
           </div>
-        </section>
 
-        <div className="flex flex-col container max-w-7xl mx-auto px-4 vissionMission">
-          <div className="vision-mission-container">
-            <div className="vision-mission-card">
-              <img
-                src="/images/mission-icon.png"
-                alt="Mission Icon"
-                className="vision-mission-icon"
-              />
-              <h2 className="vision-mission-title">Vision</h2>
-              <p className="vision-mission-text">
-                To position Chennai as one of the world's most liveable,
-                lovable, and future-ready cities - where innovation, culture,
-                and community thrive together.
-              </p>
-            </div>
-            <div className="vision-mission-card">
-              <img
-                src="/images/vission-icon.png"
-                alt="Vision Icon"
-                className="vision-mission-icon"
-              />
+          {/* Side tab */}
 
-              <h2 className="vision-mission-title">Mission</h2>
-              <p className="vision-mission-text">
-                To showcase Chennai's identity, connect people to opportunities,
-                and build a platform that inspires pride, progress, and
-                participation.
-              </p>
-            </div>
-          </div>
-        </div>
+          <Whychennaitab />
 
-        {/* Side tab */}
+          {/* Side tab */}
 
-        <Whychennaitab />
-
-        {/* Side tab */}
-
-        {/* <section className="chennai-history-section">
+          {/* <section className="chennai-history-section">
       <div className="flex flex-col container max-w-7xl mx-auto px-4">
         <h2 className="history-title">CHENNAI’S HISTORY</h2>
         <p className="history-intro">
@@ -454,66 +465,68 @@ with connections to ancient Rome and Greece.
       </div>
     </section> */}
 
-        <section className="foundations-section">
-          <div className="container">
-            <div className="image-container">
-              <img src="/images/foundations-img.jpg" alt="foundations " />
+          <section className="foundations-section">
+            <div className="container">
+              <div className="image-container">
+                <img src="/images/foundations-img.jpg" alt="foundations " />
+              </div>
+              <div className="content">
+                <h2>Foundations of Modern Chennai</h2>
+                <p>
+                  The modern foundations of Chennai were laid on August 22,
+                  1639, a date now proudly celebrated as Chennai Day. This
+                  moment marked the formal recognition of the region’s growth
+                  into an organized urban centre with expanding civic and
+                  economic importance.
+                </p>
+                <p>
+                  By 1640, key developments had begun to shape the city's layout
+                  and identity. Chennai steadily grew by integrating nearby
+                  villages, evolving into a connected and planned cityscape.
+                </p>
+                <p className="bold">
+                  In the decades that followed, the city laid the groundwork for
+                  many firsts
+                </p>
+                <ul>
+                  <li>
+                    India’s first municipal corporation was established here in
+                    1688, and the second oldest in the world after London.
+                  </li>
+                  <li>
+                    The country’s first railway terminal was set up at Royapuram
+                    in 1856.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="content">
-              <h2>Foundations of Modern Chennai</h2>
-              <p>
-                The modern foundations of Chennai were laid on August 22, 1639,
-                a date now proudly celebrated as Chennai Day. This moment marked
-                the formal recognition of the region’s growth into an organized
-                urban centre with expanding civic and economic importance.
-              </p>
-              <p>
-                By 1640, key developments had begun to shape the city's layout
-                and identity. Chennai steadily grew by integrating nearby
-                villages, evolving into a connected and planned cityscape.
-              </p>
-              <p className="bold">
-                In the decades that followed, the city laid the groundwork for
-                many firsts
-              </p>
-              <ul>
-                <li>
-                  India’s first municipal corporation was established here in
-                  1688, and the second oldest in the world after London.
-                </li>
-                <li>
-                  The country’s first railway terminal was set up at Royapuram
-                  in 1856.
-                </li>
-              </ul>
+          </section>
+
+          <section className="NumChennaiSec SecPaddBlock" id="NumChennaiSec">
+            <div className="flex flex-col container max-w-7xl mx-auto px-4">
+              <div className="tsSectitles">
+                {chennaiSectionData.map((item, index) => {
+                  const Tag = item.tag;
+                  return (
+                    <Tag key={index}>
+                      {item.text.split("\n").map((line, idx) => (
+                        <span key={idx}>
+                          {line}
+                          <br />
+                        </span>
+                      ))}
+                    </Tag>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section className="NumChennaiSec SecPaddBlock" id="NumChennaiSec">
-          <div className="flex flex-col container max-w-7xl mx-auto px-4">
-            <div className="tsSectitles">
-              {chennaiSectionData.map((item, index) => {
-                const Tag = item.tag;
-                return (
-                  <Tag key={index}>
-                    {item.text.split("\n").map((line, idx) => (
-                      <span key={idx}>
-                        {line}
-                        <br />
-                      </span>
-                    ))}
-                  </Tag>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+          <EventFunction />
 
-        <EventFunction/>
-
-        <InstagramReelsMarquee />
-        <Becameavolunteer />
+          <InstagramReelsMarquee />
+          <Becameavolunteer />
+        </div>
       </div>
     </>
   );

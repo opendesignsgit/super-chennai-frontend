@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "../assets/Css/BlogList.css";
+import { Helmet } from "react-helmet-async";
 
 const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
@@ -82,14 +83,19 @@ const BlogList = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Chennai Guide: Live, Visit, Learn and Invest Now</title>
+        <meta
+          name="description"
+          content="Chennai is emerging as a global startup hub, backed by skilled talent, industry knowledge, and investor confidence, fueling future innovation."
+        />
+        <link rel="canonical" href="/blog" />
+      </Helmet>
       <div className="blogMainRow">
         {/*----------------Accommodation-Banner----------- */}
         <div className="accaodomationBannerSection">
           <div>
-            <img
-              src="/images/banner-blog.jpg"
-              alt="Cost of Living Banner"
-            />
+            <img src="/images/banner-blog.jpg" alt="Cost of Living Banner" />
           </div>
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -155,8 +161,6 @@ const BlogList = () => {
                         alt={blog.title}
                         className="blog-image"
                       />
-
-                      
                     )}
                     {/* {console.log(blog.content.root.children[8].fields.media.)} */}
                     <h3 className="blog-title">{blog.title}</h3>

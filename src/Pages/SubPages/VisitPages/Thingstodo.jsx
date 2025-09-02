@@ -415,12 +415,12 @@ export default function Thingstodo() {
                             <h3>{item.title}</h3>
                             <p>{item.para}</p>
                             <div className="exploreMorebuttonVisitChennai">
-                              <Link
-                                to={item.link || "#"}
+                              <a
+                                href={item.link || "#"}
                                 className="text-blue-600 hover:underline text-sm font-medium"
                               >
                                 Explore More
-                              </Link>
+                              </a>
                             </div>
                           </div>
                         </div>

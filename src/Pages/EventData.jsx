@@ -1806,6 +1806,246 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     It’s a casual and intimate setup —perfect for those who enjoy stand-up that talks about the world around us without pretending everything’s fine. Come watch, react, judge, or just sit back. It’s all part of the process.
     `,
   },
+  {
+    id: 82,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/82",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/madras-comedy-show/ET00361816",
+    EventsCalendarTitle: "VIBE CHECK - An Youth Friendly Comedy show",
+    EventsCalendarContent:
+      "Looking for a weekend plan you can truly count on",
+    EventsCalendarMonth: "6 Sep 2025",
+    EventsCalendarTime: "04:00 PM",
+    EventsCalendarCategory: "Stand up Comedy",
+    image:
+      "/images/HomePage-Images/Events/Newevents/VIBE-CHECK.jpg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "Tamil, English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "Age Limit - 16yrs +",
+    rleigion: "Comedy",
+    aboutFull: `Looking for a weekend plan you can truly count on? Vibe Check is not your typical comedy show—it’s an unpredictable mix of laughter, chaos, and 
+    everything in between! Featuring a rotating lineup of Chennai’s favorite comics, the stage is set with fresh faces, familiar voices, and brand-new material 
+    every time. No artist images, no lineup spoilers—just step in, sit back, and let the surprises unfold. Come vibe with us and walk out with cheeks aching from non-stop laughter!`,
+  },
+  {
+    id: 83,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/83",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/vikkals-comedy-cafe/ET00429673",
+    EventsCalendarTitle: "Vikkals Comedy Cafe - Standup Comedy Open Mic",
+    EventsCalendarContent:
+      "After 10 years in stand-up and six specials",
+    EventsCalendarMonth: " 2 Sep – 4 Sep 2025",
+    EventsCalendarTime: "8:00 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image:
+      "/images/HomePage-Images/Events/Newevents/Vikkals-Comedy.jpg",
+    link: "/events",
+    location: "",
+    language: "Tamil, English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "Age Limit - 16yrs +",
+    rleigion: "The Board Room, Mylapore: Chennai",
+    aboutFull: `Open Mic Nights bring together seasoned stand-up comics and fresh voices testing out their newest jokes—a stage where humor meets raw emotions. Tickets are for audience entry only, and performers must register separately. Enjoy the show with a twist—₹100 from your ticket can be redeemed on food and beverages. Catch us every Tuesday at The Board Room, Mylapore, and every Thursday at The Board Room, Anna Nagar. Don’t forget to check the venue before booking your tickets!`,
+  },
+  {
+    id: 84,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/84",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/the-chennai-late-night-comedy/ET00432136",
+    EventsCalendarTitle: "The Chennai Late Night Comedy Show",
+    EventsCalendarContent:
+      "Step into the world of Late Night Comedy",
+    EventsCalendarMonth: "5 Sep – 7 Sep 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Stand up Comedy",
+    image:
+      "/images/HomePage-Images/Events/Newevents/The-Chennai-Late-Night.jpg",
+    link: "/events",
+    location: "Trinity Studio: Kodambakkam",
+    language: "English, Hindi",
+    hours: "1 hour 15 minutes",
+    ageLimit: "Age Limit - 16yrs +",
+    rleigion: "Comedy",
+    aboutFull: `Step into the world of Late Night Comedy, where nothing is off-limits—no jokes are banned, no speech is censored, and no audience can hold back their laughter. This is your go-to spot for pure comedy club energy on the weekends, because honestly, how long can you sip the same Old Monk and binge the same Netflix shows? Let’s make Chennai’s late-night scene exciting again! The lineup remains a surprise for now, but expect seasoned local comics and, if you’re lucky, a few special 
+    guest performers dropping in to keep the night unpredictable and unforgettable.`,
+  },
+  {
+    id: 85,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/85",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/salt-air-swifts-flair/ET00457727",
+    EventsCalendarTitle: "Salt Air: Swift's Flair",
+    EventsCalendarContent:
+      "Step into the world of Late Night Comedy",
+    EventsCalendarMonth: "",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Music Festivals",
+    image:
+      "/images/HomePage-Images/Events/Newevents/Salt-Air.jpg",
+    link: "/events",
+    location: "",
+    language: "English",
+    hours: "5 Hours",
+    ageLimit: "All age groups",
+    rleigion: "Pop",
+    aboutFull: `Salt Air & Swift’s Flair ✨🌊 — Chennai Swifties, get ready to live out your Wildest Dreams! Join us on August 31 at 2:30 PM at Third Wave Coffee, Bessy Beach for a cozy café singalong like never before. With strong coffee, friendship bracelet trading, and bridges sung louder than the waves, this sober Swiftie party is open to all ages. For just ₹350 + ₹350 cover, experience 4 hours of enchanted energy, golden friendships, and music that makes us feel truly fearless. From the chills of August to the heartbreak of All Too Well, 
+    every song is a memory waiting to be made. 💖 Don’t miss it—save your spot now, because nights like these never go out of style!`,
+  },
+  {
+    id: 86,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/86",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/bad-drawing-party/ET00380239",
+    EventsCalendarTitle: "Bad Drawing Party",
+    EventsCalendarContent:
+      "Step into a world of creativity and fun at our Bad Drawing Party!",
+    EventsCalendarMonth: "2 Sep – 5 Oct 2025",
+    EventsCalendarTime: "2:30 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image:
+      "/images/HomePage-Images/Events/Newevents/Bad-Drawing.jpg",
+    link: "/events",
+    location: "Dices And Drama: Chennai",
+    language: "Bengali, English, Hindi, Kannada, Malaya",
+    hours: "1 Hour",
+    ageLimit: "Age Limit - 18yrs +",
+    rleigion: "",
+    aboutFull: `Step into a world of creativity and fun at our Bad Drawing Party! Whether you’re a skilled artist or just a casual doodler, this event is all about celebrating imperfections, sharing laughs, and connecting through art in a completely judgment-free space. 
+    Come unleash your inner artist, bond with others, and enjoy the beauty of creating without pressure.`,
+  },
+  {
+    id: 87,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/87",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/bad-drawing-party/ET00380239",
+    EventsCalendarTitle: "Hamleys Play - Chennai",
+    EventsCalendarContent:
+      "Hamleys Play reimagines the traditional concept",
+    EventsCalendarMonth: "2 Sep – 30 Sep 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Entertainment",
+    image:
+      "/images/HomePage-Images/Events/Newevents/Hamleys-Play.jpg",
+    link: "/events",
+    location: "Phoenix Marketcity: Chennai",
+    language: "English",
+    hours: "1 Hour",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `Hamleys Play reimagines the traditional concept of play by blending the joy of the outdoors with the boundless imagination of a child’s mind. Step into the magical world of Mr. & Mrs. Hopper as they guide you through their private adventure garden, packed with exciting attractions like the Musical Wall, 
+    Ball Pool, Slides, Scarf Shooters, Sand Play, Rock Climbing, Water Play, and many more fun-filled activities designed to spark curiosity and endless laughter.`,
+  },
+  {
+    id: 88,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/88",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/hand-pressed-pottery/ET00457809",
+    EventsCalendarTitle: "Hand pressed Pottery",
+    EventsCalendarContent:
+      "Join our Hand-Pressed Pottery Trinket Making Workshop",
+    EventsCalendarMonth: "1 Sep – 18 Sep 2025",
+    EventsCalendarTime: "7:30 PM",
+    EventsCalendarCategory: "Arts and Crafts",
+    image:
+      "/images/HomePage-Images/Events/Newevents/Hand-pressed.jpg",
+    link: "/events",
+    location: "Wiggle Room: Chennai",
+    language: "English, Tamil",
+    hours: "1 hour 15 minutes",
+    ageLimit: "Age Limit - 5yrs +",
+    rleigion: "",
+    aboutFull: `Join our Hand-Pressed Pottery Trinket Making Workshop ✨ and create your own little work of art! In this hands-on session, you’ll learn traditional hand-pressed pottery techniques to craft beautiful trinkets—from dainty dishes to quirky keepsakes. All materials are provided, 
+    and your finished piece will be carefully packed for you to take home. Whether you’re making something special for yourself or a heartfelt gift, it’s the perfect chance to get creative, mindful, and a little messy!`,
+  },
+  {
+    id: 89,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/89",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/mandala-workshop/ET00421105",
+    EventsCalendarTitle: "Kid's Mandala workshop ",
+    EventsCalendarContent:
+      "Join our beginner-friendly art workshop for a relaxed and creative",
+    EventsCalendarMonth: "6 Sep – 7 Sep 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Entertainment",
+    image:
+      "/images/HomePage-Images/Events/Newevents/Kids-Mandala.jpg",
+    link: "/events",
+    location: "House of Games, Kilpauk: Chennai",
+    language: "English, Tamil",
+    hours: "1 hour",
+    ageLimit: "All age groups",
+    rleigion: "",
+    aboutFull: `Join our beginner-friendly art workshop for a relaxed and creative escape where you’ll be guided step by step by our instructor at your own pace, with all materials provided and flexible timing to suit your rhythm. Whether you come solo, with friends, family, or as a couple, you’ll enjoy a calming space to express yourself while also receiving personalized attention in small formats (1:1, 2:1, or 3:1). Plus, 50% of your venue payment comes back as food credit, so you can indulge in delicious refreshments as you create. 
+    At the end of the session, take home not just new skills but also your own handmade masterpiece. Prior registration is required—contact the café for details!`,
+  },
+  {
+    id: 90,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/90",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/quadrant-life-crisis-stand-up-solo-by-navin-kumar/ET00433604",
+    EventsCalendarTitle: "Quadrant Life Crisis- Stand Up Solo by Navin Kumar",
+    EventsCalendarContent:
+      "Navin Kumar, one of India’s most viral English comics",
+    EventsCalendarMonth: "6 Sep – 13 Sep 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Stand up Comedy",
+    image:
+      "/images/HomePage-Images/Events/Newevents/Quadrant-Life.jpg",
+    link: "/events",
+    location: "Just BLR: Bengaluru",
+    language: "English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "Age Limit - 18yrs +",
+    rleigion: "Comedy",
+    aboutFull: `Navin Kumar, one of India’s most viral English comics with over 20 million views on YouTube and Instagram, is widely loved for his Quadrant Videos that hilariously capture the randomness of life. Fresh off the Edinburgh Fringe Festival and a sold-out show in London, 
+    he now brings The Quadrant Life Crisis to his homeland, promising a comedy experience for everyone—because honestly, there’s only so much he can say about himself in the third person. So just come and enjoy the show!`,
+  },
+  {
+    id: 91,
+    metaTitleEvent: "",
+    conicallinkEvent: "/eventsdetails/91",
+    metaDescriptionEvent: "",
+    siteLink:
+      "https://in.bookmyshow.com/events/macrame-workshop/ET00433154",
+    EventsCalendarTitle: "Kid's Texture Workshop",
+    EventsCalendarContent:
+      "Discover your creative side at our beginner-friendly art workshop",
+    EventsCalendarMonth: "6 Sep – 7 Sep 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Entertainment",
+    image:
+      "/images/HomePage-Images/Events/Newevents/Kids-Texture.jpg",
+    link: "/events",
+    location: "House of Games, Kilpauk: Chennai",
+    language: "English, Tamil",
+    hours: "2 hours 30 minutes",
+    ageLimit: "Age Limit - 10yrs +",
+    rleigion: "",
+    aboutFull: `Discover your creative side at our beginner-friendly art workshop, where you’ll play with palette knives and texture paste to craft wall-worthy 3D art pieces of your own. With step-by-step guidance from our instructor, 
+    all materials provided, and a relaxed, flexible pace, this session is designed for everyone—whether you’re joining solo, as a couple, with friends, or family. Enjoy a calming, expressive space, personalized attention in small group formats (1:1, 2:1, or 3:1), and delicious refreshments with 50% of your venue fee redeemable as food credit. By the end of the workshop, you’ll take home not just new skills but also your very own handmade masterpiece. Prior registration required—contact the café for details.`,
+  },
 ];
 
 export const panesContent = [

@@ -113,7 +113,7 @@ export default function VisitSlider() {
             <Slider {...settings}>
               {images.map((img, index) => (
                 <div key={index} className="ExplorePageSliderImage">
-                  <Link to={img.link} style={{ textDecoration: "none" }}>
+                  <a href={img.link} style={{ textDecoration: "none" }}>
                     <div
                       style={{
                         position: "relative",
@@ -146,7 +146,7 @@ export default function VisitSlider() {
                       {/* Title Text */}
                       <div className="titleTextExploreChennai">{img.title}</div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               ))}
             </Slider>

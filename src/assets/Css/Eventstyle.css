@@ -2,6 +2,10 @@
   padding-block: 12vh;
 }
 
+.fontforstyle {
+  font-family: "29LT Bukra SmBd";
+}
+
 .Eventitlesec {
   padding-inline: 10vw;
 }
@@ -43,6 +47,13 @@
 }
 .newsLetterImage img {
   object-fit: fill;
+}
+
+.reimaginePage hr {
+  color: #ba71b9;
+  color: #b8b8b8;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .EventsItemImg img:hover {
@@ -743,6 +754,12 @@ textarea {
 }
 
 /* Events New Section  */
+
+.listtypesection {
+  list-style: disc;
+  margin-top: 10px;
+  padding-left: 30px;
+}
 
 @media (max-width: 1550px) and (min-width: 1300px) and (max-height: 750px) {
   .pointcastSticky img {

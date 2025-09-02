@@ -271,6 +271,7 @@ import SuperChennaiEvents from "./Pages/SuperChennaiEvents";
 import Iconofthemonth from "./Pages/Icon-of-the-month-july";
 import IconofthemonthAugust from "./Pages/Icon-of-the-month-august";
 import Iconsofthemonth from "./Pages/iconsofthemonth";
+import ReimagineChennai from "./Pages/ReimagineChennai";
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -632,6 +633,7 @@ function App() {
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />
           <Route path="/namma-stories" element={<NammaStories />} />
+          <Route path="/reimagine-chennai" element={<ReimagineChennai />} />
           <Route
             path="/superchennai-contest"
             element={<SuperChennaiEvents />}

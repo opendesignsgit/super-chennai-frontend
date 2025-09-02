@@ -1932,7 +1932,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/87",
     metaDescriptionEvent: "",
     siteLink:
-      "https://in.bookmyshow.com/events/bad-drawing-party/ET00380239",
+      "https://in.bookmyshow.com/events/hamleys-play-chennai/ET00362045",
     EventsCalendarTitle: "Hamleys Play - Chennai",
     EventsCalendarContent:
       "Hamleys Play reimagines the traditional concept",

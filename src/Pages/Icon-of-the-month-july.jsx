@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Utilitiesinchennai1 from "../Components/InvestSideBar";
 import Whychennaitab from "../Components/whychennaitab";
+import { Helmet } from "react-helmet-async";
 
 export default function Iconofthemonth() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -140,6 +141,14 @@ const expendingData = [
   }, []);
   return (
     <>
+          <Helmet>
+            <title>Naturals Founder CK Kumaravel | Women Empowerment - Super Chennai</title>
+            <meta
+              name="description"
+              content="Honouring CK Kumaravel for transforming grooming in Chennai, Icon of the Month, building 800+ Naturals salons and empowering thousands of women entrepreneurs."
+            />
+            <link rel="canonical" href="/icon-of-the-july-month-in-chennai" />
+          </Helmet>
       <div className="InvestPageId">
         <div
           className="VolunteerBgSection InvestBgSection notHome aboutBan"

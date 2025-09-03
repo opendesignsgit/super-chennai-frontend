@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Utilitiesinchennai1 from "../Components/InvestSideBar";
 import Whychennaitab from "../Components/whychennaitab";
+import { Helmet } from "react-helmet-async";
 
 const infoData = [
   {
@@ -125,7 +126,7 @@ export default function IconofthemonthAugust() {
       title: "Proven success in mergers, acquisitions, and expansion",
       description: "",
     },
-        {
+    {
       title: "Strong contributions to art, culture, and entrepreneurship",
       description: "",
     },
@@ -193,6 +194,16 @@ export default function IconofthemonthAugust() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>
+          Dr.Chandrakumar | Visionary Leader in Healthcare - Super Chennai
+        </title>
+        <meta
+          name="description"
+          content="Honouring Dr. Chandrakumar for 25+ years of leadership in Chennai, Icon of the Month, growing Kauvery Hospitals to 2,500 beds and shaping South India’s healthcare."
+        />
+        <link rel="canonical" href="/icon-of-the-august-month-in-chennai" />
+      </Helmet>
       <div className="InvestPageId augustmonthIconofthemonth">
         <div
           className="VolunteerBgSection InvestBgSection notHome aboutBan"

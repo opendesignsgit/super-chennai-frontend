@@ -14,7 +14,7 @@ const slides = [
   // },
   {
     type: "image",
-    link: "/icon-august-month",
+    link: "/icon-of-the-august-month-in-chennai",
     image: "/images/HomePage-Images/icon-of-the-month-banner.jpg",
     image1: "/images/HomePage-Images/icon-of-the-month-mobile-banner.jpg",
     title: "First slide label",

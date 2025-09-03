@@ -32,7 +32,7 @@ const ImagePopup = ({ onClose, imageUrl }) => {
           // onClick={onClose}
         >
           {/* <Link to="/namma-stories#NammaStoriesVideoId" onClick={onClose}> */}
-          <Link to="/icon-august-month" onClick={onClose}>
+          <Link to="/icon-of-the-august-month-in-chennai" onClick={onClose}>
             <img
               src={imageUrl}
               alt="Popup"

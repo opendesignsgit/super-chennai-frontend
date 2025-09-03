@@ -80,7 +80,7 @@ export default function Iconsofthemonth() {
             <div className="flex superchennaiEventsMainContainer">
               {/* Left */}
 
-              <a className="superchennaiEventsSection" href="/icon-july-month">
+              <a className="superchennaiEventsSection" href="/icon-of-the-july-month-in-chennai">
                 <div
                   className="flex flex-col items-center text-center"
                   style={{ overflow: "hidden" }}
@@ -100,7 +100,7 @@ export default function Iconsofthemonth() {
 
               <a
                 className="superchennaiEventsSection"
-                href="/icon-august-month"
+                href="/icon-of-the-august-month-in-chennai"
               >
                 <div
                   className="flex flex-col items-center text-center "

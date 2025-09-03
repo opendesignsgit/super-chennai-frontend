@@ -1186,8 +1186,8 @@ function App() {
           <Route path="/faqs" element={<Faq />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/about-us" element={<About />} />
-          <Route path="/icon-july-month" element={<Iconofthemonth />} />
-          <Route path="/icon-august-month" element={<IconofthemonthAugust />} />
+          <Route path="/icon-of-the-july-month-in-chennai" element={<Iconofthemonth />} />
+          <Route path="/icon-of-the-august-month-in-chennai" element={<IconofthemonthAugust />} />
 
           {/* Visit-Pages */}
 

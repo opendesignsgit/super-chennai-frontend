@@ -117,40 +117,6 @@ export default function Live() {
           content="Explore Chennai transportation, find top jobs in Chennai, and discover leading schools and colleges in Chennai for a balanced and fulfilling city life."
         />
         <link rel="canonical" href="/live-in-chennai" />
-
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Media Coverage | News & TVC Features – Super Chennai"
-        />
-        <meta
-          property="og:description"
-          content="Explore all the buzz around Super Chennai! From newspaper features and online articles to TV commercials and media mentions — see how the city’s story is being told."
-        />
-        <meta
-          property="og:image"
-          content="https://www.superchennai.com/images/Live-Images/liveBanner.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://www.superchennai.com/live-in-chennai"
-        />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Media Coverage | News & TVC Features – Super Chennai"
-        />
-        <meta
-          name="twitter:description"
-          content="Explore all the buzz around Super Chennai! From newspaper features and online articles to TV commercials and media mentions — see how the city’s story is being told."
-        />
-        <meta
-          name="twitter:image"
-          content="https://yourdomain.com/path-to-media-coverage-thumbnail.jpg"
-        />
       </Helmet>
 
       <div

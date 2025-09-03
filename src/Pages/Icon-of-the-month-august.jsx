@@ -202,7 +202,7 @@ export default function IconofthemonthAugust() {
           name="description"
           content="Honouring Dr. Chandrakumar for 25+ years of leadership in Chennai, Icon of the Month, growing Kauvery Hospitals to 2,500 beds and shaping South India’s healthcare."
         />
-        <link rel="canonical" href="/icon-of-the-august-month-in-chennai" />
+        <link rel="canonical" href="/icon-of-the-august-month" />
       </Helmet>
       <div className="InvestPageId augustmonthIconofthemonth">
         <div

@@ -147,7 +147,7 @@ const expendingData = [
               name="description"
               content="Honouring CK Kumaravel for transforming grooming in Chennai, Icon of the Month, building 800+ Naturals salons and empowering thousands of women entrepreneurs."
             />
-            <link rel="canonical" href="/icon-of-the-july-month-in-chennai" />
+            <link rel="canonical" href="/icon-of-the-july-month" />
           </Helmet>
       <div className="InvestPageId">
         <div

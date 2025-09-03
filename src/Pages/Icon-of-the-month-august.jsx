@@ -13,6 +13,7 @@ import Slider from "react-slick";
 import Utilitiesinchennai1 from "../Components/InvestSideBar";
 import Whychennaitab from "../Components/whychennaitab";
 import { Helmet } from "react-helmet-async";
+import AugustMonthFunction from "./AugustIconFunction";
 
 const infoData = [
   {
@@ -321,7 +322,7 @@ export default function IconofthemonthAugust() {
             </div>
           </div>
         </section>
-
+        <AugustMonthFunction/>
         <InstagramReelsMarquee />
         <Becameavolunteer />
       </div>

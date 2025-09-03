@@ -1187,7 +1187,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/icon-of-the-july-month" element={<Iconofthemonth />} />
-          <Route path="/icon-of-the-august-month" element={<IconofthemonthAugust />} />
+          <Route path="/super-chennai-icon-of-aug-2025" element={<IconofthemonthAugust />} />
 
           {/* Visit-Pages */}
 

@@ -197,11 +197,11 @@ export default function IconofthemonthAugust() {
     <>
       <Helmet>
         <title>
-          Dr.Chandrakumar | Visionary Leader in Healthcare - Super Chennai
+          Super Chennai Icon of August 2025 – Dr. S. Chandrakumar
         </title>
         <meta
           name="description"
-          content="Honouring Dr. Chandrakumar for 25+ years of leadership in Chennai, Icon of the Month, growing Kauvery Hospitals to 2,500 beds and shaping South India’s healthcare."
+          content="Super Chennai honours Dr. Chandrakumar, who co-founded Kauvery Hospitals, for redefining healthcare with compassion, innovation, and visionary leadership."
         />
         <link rel="canonical" href="/super-chennai-icon-of-aug-2025" />
       </Helmet>

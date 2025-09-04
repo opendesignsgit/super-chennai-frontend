@@ -284,7 +284,6 @@
 
 // export default ReimagineForm;
 
-
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -400,9 +399,7 @@ const ReimagineForm = () => {
   return (
     <div className="contactFormStyle">
       <div className="container max-w-6xl mx-auto   rounded-md ">
-        <h2 className="text-2xl text-center mb-6 ">
-       Upload Your AI Artwork
-        </h2>
+        <h2 className="text-2xl text-center mb-6 ">Upload Your AI Artwork</h2>
         <ToastContainer
           position="bottom-center"
           autoClose={3000}
@@ -471,48 +468,56 @@ const ReimagineForm = () => {
               </p>
             </div> */}
 
-          <div className="w-full">
-              <label
-                htmlFor="imageUpload"
-                className="flex flex-col items-center justify-center w-full h-48 border-2 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100 transition"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="w-10 h-10 mb-3 text-gray-800"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M7 16V4m0 0l-4 4m4-4l4 4M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2h-2.586a1 1 0 00-.707.293l-2.414 2.414A1 1 0 0112 22H4a2 2 0 01-2-2V6a2 2 0 012-2h2"
-                  />
-                </svg>
-                <p className="text-sm text-gray-500 font-medium">
-                  Click to Upload Image
-                </p>
-                <input
-                  id="imageUpload"
-                  type="file"
-                  name="image"
-                  accept="image/*"
-                  onChange={handleFileChange} // ✅ fixed
-                  className="hidden"
-                />
-              </label>
+            <div className="w-full">
+              <div className="flex uploadmainContainer">
+                <div className="flex items-center justify-center w-full buttonUploadButton">
+                  <label
+                  style={{padding:"0"}}
+                    htmlFor="imageUpload"
+                    className="flex flex-col items-center justify-center w-full h-48 border-2 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100 transition"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="w-10 h-10 mb-3 text-gray-800"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M7 16V4m0 0l-4 4m4-4l4 4M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2h-2.586a1 1 0 00-.707.293l-2.414 2.414A1 1 0 0112 22H4a2 2 0 01-2-2V6a2 2 0 012-2h2"
+                      />
+                    </svg>
+                    <p className="text-sm text-gray-500 font-medium">
+                      Click to Upload Image
+                    </p>
+                    <input
+                      id="imageUpload"
+                      type="file"
+                      name="image"
+                      accept="image/*"
+                      onChange={handleFileChange} // ✅ fixed
+                      className="hidden"
+                    />
+                  </label>
+                </div>
+              </div>
               {imageFileName ? (
                 <p className="mt-2 text-sm text-gray-700 font-medium truncate">
                   *Selected File: {imageFileName}
                 </p>
               ) : (
-                <p className="mt-2 text-sm text-gray-700 font-medium truncate">
-                  Only JPEG / PNG accepted
+                <p className="mt-2 text-sm text-gray-700 font-medium truncate slectedVideo">
+                  Only JPEG and PNG files are accepted
+
                 </p>
               )}
             </div>
           </div>
+
+        
 
           <div className="mb-4">
             <textarea

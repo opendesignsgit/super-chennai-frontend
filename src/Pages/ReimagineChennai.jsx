@@ -19,11 +19,12 @@ export default function ReimagineChennai() {
   return (
     <>
       <Helmet>
-        <title>Media Coverage | News & TVC Features – Super Chennai</title>
+        <title>Chennai’s Future in AI Art | Join the Super Chennai Challenge</title>
         <meta
           name="description"
-          content="Explore all the buzz around Super Chennai! From newspaper features and online articles to TV commercials and media mentions — see how the city’s story is being told."
+          content="Be part of a cultural movement! Submit AI-generated art to reimagine Chennai’s skyline, culture, and future. Winning works will be featured at The AI ART Show."
         />
+                <link rel="canonical" href="/reimagine-chennai" />
       </Helmet>
 
       <div className="NewsLetterPage reimaginePage">
@@ -31,7 +32,7 @@ export default function ReimagineChennai() {
           <div>
             <img
               className="eventsCalenderIamge"
-              src="/images/namma-stories-banner.jpg"
+              src="/images/banner-ai.jpg"
               alt=""
             />{" "}
           </div>

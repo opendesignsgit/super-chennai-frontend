@@ -4,14 +4,14 @@ import Search from "./Search";
 import { Link } from "react-router-dom";
 
 const slides = [
-  // {
-  //   type: "image",
-  //   link: "/namma-stories#NammaStoriesVideoId",
-  //   image: "/images/HomePage-Images/namma-stories-desktop.jpg",
-  //   image1: "/images/HomePage-Images/namma-stories-mobile.jpg",
-  //   title: "First slide label",
-  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  // },
+  {
+    type: "image",
+    link: "/reimagine-chennai-AI-art-challenge",
+    image: "/images/HomePage-Images/ai-art-challenge-banner.jpg",
+    image1: "/images/HomePage-Images/ai-art-challenge-mobile-banner.jpg",
+    title: "First slide label",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
   {
     type: "image",
     link: "/super-chennai-icon-of-aug-2025",

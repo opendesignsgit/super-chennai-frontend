@@ -519,7 +519,7 @@ function App() {
           <ImagePopup
             onClose={handleClosePopup}
             // imageUrl="/images/Namma-Stories.jpg"
-            imageUrl="/images/HomePage-Images/icon-of-the-month-popup.jpg"
+            imageUrl="/images/HomePage-Images/ai-art-challenge-popup.jpg"
           />
         )}
 

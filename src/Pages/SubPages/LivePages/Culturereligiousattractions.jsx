@@ -1321,6 +1321,9 @@ const OtherChennai = [
   },
 ];
 
+
+
+
 export default function Culturereligiousattractions() {
   const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
@@ -1637,6 +1640,8 @@ export default function Culturereligiousattractions() {
                   );
                 })}
               </div>
+
+              
             </>
           )}
 

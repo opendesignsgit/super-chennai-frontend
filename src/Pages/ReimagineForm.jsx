@@ -510,7 +510,7 @@ const ReimagineForm = () => {
                 </p>
               ) : (
                 <p className="mt-2 text-sm text-gray-700 font-medium truncate slectedVideo">
-                  Only JPEG and PNG files are accepted
+                  *Only JPEG and PNG files are accepted
 
                 </p>
               )}

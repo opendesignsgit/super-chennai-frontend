@@ -164,6 +164,11 @@
   margin: 0;
 }
 
+.BlogDetailPageId .blog-content p {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
 .blog-content a {
   color: #995098;
   margin-top: 9px;

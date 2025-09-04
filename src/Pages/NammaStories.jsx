@@ -86,7 +86,7 @@ export default function NammaStories() {
           </div>
         </div>
 
-        <ContactForm />
+        {/* <ContactForm /> */}
         <NammaStoriesVideo/>
         <section className="EventsListSec SecPadblock12 nammaStoriesNewsLtter">
           <div className="container max-w-7xl mx-auto ">

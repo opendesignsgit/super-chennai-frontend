@@ -14,6 +14,7 @@ export default function MenuBar({ setMenuBar }) {
     // { label: "Career", href: "/career" },
     { label: "Events", href: "/events" },
     { label: "Superchennai Contests", href: "/superchennai-contest" },
+    { label: "AI REIMAGINE", href: "/reimagine-chennai-AI-art-challenge" },
     // { label: "Social Chennai", href: "/social-chennai" },
     {
       label: (
@@ -395,7 +396,6 @@ export default function MenuBar({ setMenuBar }) {
 
   const currentPath = window.location.pathname;
 
-
   return (
     <>
       <div className="menuBarFullContainer">
@@ -503,8 +503,13 @@ export default function MenuBar({ setMenuBar }) {
           <div className="w-full max-w-md mx-auto containerMenuBar">
             <ul className="w-full max-w-md mx-auto menuBarLinksContent ">
               {menuItems.map((item, index) => (
-                <li key={index}  className={`menu-item ${currentPath === item.href ? 'activemenubarlink' : ''}`}>
-                  <a  href={item.href}>{item.label}</a>
+                <li
+                  key={index}
+                  className={`menu-item ${
+                    currentPath === item.href ? "activemenubarlink" : ""
+                  }`}
+                >
+                  <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>

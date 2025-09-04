@@ -720,8 +720,10 @@ textarea {
 
 .superchennaiEventsMainContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 5%;
+  row-gap: 50px;
 }
 
 .superchennaiEventsSection p {

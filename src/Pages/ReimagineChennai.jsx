@@ -24,7 +24,7 @@ export default function ReimagineChennai() {
           name="description"
           content="Be part of a cultural movement! Submit AI-generated art to reimagine Chennai’s skyline, culture, and future. Winning works will be featured at The AI ART Show."
         />
-                <link rel="canonical" href="/reimagine-chennai" />
+                <link rel="canonical" href="/reimagine-chennai-AI-art-challenge" />
       </Helmet>
 
       <div className="NewsLetterPage reimaginePage">

@@ -633,7 +633,7 @@ function App() {
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />
           <Route path="/namma-stories" element={<NammaStories />} />
-          <Route path="/reimagine-chennai" element={<ReimagineChennai />} />
+          <Route path="/reimagine-chennai-AI-art-challenge" element={<ReimagineChennai />} />
           <Route
             path="/superchennai-contest"
             element={<SuperChennaiEvents />}

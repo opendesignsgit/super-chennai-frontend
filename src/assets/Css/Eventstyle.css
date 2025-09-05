@@ -763,6 +763,19 @@ textarea {
   padding-left: 30px;
 }
 
+.imageshowPupFunction {
+  display: flex;
+  justify-content: center;
+}
+.imageshowPupFunction button {
+  background: white;
+  padding: 9px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.imageshowPupFunction button p {
+  font-size: 13px;
+}
 @media (max-width: 1600px) and (min-width: 1300px) {
   .popupSection {
     height: 70vh;

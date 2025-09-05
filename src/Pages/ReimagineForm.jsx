@@ -290,6 +290,8 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../assets/Css/Eventstyle.css";
+import { motion, AnimatePresence } from "framer-motion";
+import { div } from "framer-motion/client";
 
 const ReimagineForm = () => {
   const [formData, setFormData] = useState({
@@ -302,6 +304,8 @@ const ReimagineForm = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [imageFileName, setImageFileName] = useState("");
+  const [imagePreviewUrl, setImagePreviewUrl] = useState(null);
+  const [selectedCard, setSelectedCard] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -317,7 +321,11 @@ const ReimagineForm = () => {
     if (file) {
       setImageFile(file);
       setImageFileName(file.name);
+
+      const imageUrl = URL.createObjectURL(file);
+      setImagePreviewUrl(imageUrl);
       console.log("imageFileName", imageFile);
+      console.log("imagePath", imageUrl);
     }
   };
 
@@ -506,7 +514,7 @@ const ReimagineForm = () => {
                 </div>
               </div>
               {imageFileName ? (
-                <p className="mt-2 text-sm text-gray-700 font-medium truncate">
+                <p className="mt-2 text-sm text-gray-700 font-medium truncate slectedVideo">
                   *Selected File: {imageFileName}
                 </p>
               ) : (
@@ -514,8 +522,37 @@ const ReimagineForm = () => {
                   *Only JPEG and PNG files are accepted
                 </p>
               )}
+
+              {imagePreviewUrl && (
+                <div className="imageshowPupFunction">
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setSelectedCard(true);
+                    }}
+                  ><p>Click to View Image</p>
+                   
+                  </button>
+                </div>
+              )}
             </div>
           </div>
+
+          {/* <div className="flex justify-center mb-[20px]">
+            {imagePreviewUrl && (
+              <img
+                src={imagePreviewUrl}
+                alt="Preview"
+                style={{
+                  maxWidth: "50%",
+                  marginTop: "10px",
+                  height: "50%",
+                  objectFit: "cover",
+                  padding: "0 25px",
+                }}
+              />
+            )}
+          </div> */}
 
           <div className="mb-4">
             <textarea
@@ -555,6 +592,38 @@ const ReimagineForm = () => {
           </div>
         )} */}
       </div>
+
+      <AnimatePresence>
+        {selectedCard && (
+          <motion.div
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className="bg-white p-6 rounded-xl w-auto relative popupSection"
+              initial={{ scale: 0.8, opacity: 0, y: 50 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.8, opacity: 0, y: 50 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            >
+              <button
+                className="absolute top-2 right-2 text-black text-xl font-bold cursor-pointer"
+                onClick={() => setSelectedCard(false)}
+              >
+                ×
+              </button>
+              <img
+                src={imagePreviewUrl}
+                className="w-full mb-4 rounded popupSection paddingSection"
+              />
+              <h2 className="text-2xl font-bold mb-2">{selectedCard.title}</h2>
+              <p className="text-gray-600">{selectedCard.description}</p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

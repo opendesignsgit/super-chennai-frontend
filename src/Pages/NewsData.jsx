@@ -871,6 +871,24 @@ export const NammaStoreiesnewsArticle = [
 ];
 
 export const newsPhotos = [
+    {
+    id: -4,
+    Company: "The Hindu - Downtown",
+    EventsCalendarTitle: "Super Chennai, a citizen-powered urban movement.",
+    EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
+    EventsCalendarMonth: "26 July",
+    EventsCalendarTime: "07:00 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/NewsLetter/chennaiTimes-newThumbnail.jpeg",
+    image1: "/images/NewsLetter/chennaiTimes-new.jpeg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "3 years +",
+    rleigion: "Comedy",
+    aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
+  },
   {
     id: -3,
     Company: "The Hindu - Downtown",

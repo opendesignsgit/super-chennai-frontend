@@ -21,11 +21,17 @@ export default function EducationInstitutions() {
   const [selectedTabForScroll, setSelectedTabForScroll] = useState("");
 
   const tabNames = [
-    "Central Chennai",
-    "South Chennai",
-    "North Chennai",
-    "West Chennai",
-    "Outskirts & Greater Chennai",
+    "IB Schools",
+    "IGCSE Schools",
+    "ICSE Schools",
+    "CBSE Schools",
+    "Matriculation Schools",
+    "State Board Schools",
+    "Top Colleges",
+    "Arts, Science & Commerce Colleges",
+    "Law Colleges",
+    "Business & Management Colleges",
+    "Colleges and Universities",
   ];
 
   const CentralChennaiImage = [
@@ -56,6 +62,173 @@ export default function EducationInstitutions() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Regional-Italian-Delights.svg",
               link: "/regionalItalianDelights",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+  const CentralChennai = [
+    {
+      category: "Temples",
+      places: [
+        {
+          name: "Akshar Arbol International School",
+          desc: "Known for fostering open-mindedness and innovative thinking.",
+          locations: [
+            {
+              name: "T. Nagar",
+              link: "https://maps.app.goo.gl/DFcUVz2FEu5eTSFu9",
+            },
+          ],
+        },
+        {
+          name: "CPS Global School",
+          desc: "Caters to students aged 3-19 and emphasizes curiosity and lifelong learning.",
+          locations: [
+            {
+              name: "Anna Nagar",
+              link: "https://maps.app.goo.gl/Bh4tQxWXAwKgCNLo8",
+            },
+          ],
+        },
+        {
+          name: "Gateway International School (CBSE) - Padur",
+          desc: "The first IB Continuum school in Chennai, offering all three IB programs (PYP, MYP, & DP).",
+          locations: [
+            {
+              name: "Kelambakkam",
+              link: "https://maps.app.goo.gl/bjqc4GGAUB7Czv6PA",
+            },
+          ],
+        },
+        {
+          name: "Hiranandani Upscale School",
+          desc: "Offers a well-rounded education with a focus on academics, community service, and extracurriculars.",
+          locations: [
+            {
+              name: "Padur",
+              link: "https://maps.app.goo.gl/ikSSzvUjDbtddmgs9",
+            },
+          ],
+        },
+        {
+          name: "The Indian Public School - TIPS Globeducate",
+          desc: "Focuses on extraordinary education, exposure, and experience.",
+          locations: [
+            {
+              name: "Perungudi",
+              link: "https://maps.app.goo.gl/i1ygjr26akLW9sxm6",
+            },
+          ],
+        },
+        {
+          name: "M.C.T.M. Chidambaram Chettyar International School",
+          desc: "Chennai's first Indian school to offer the IB Diploma Programme (IBDP).",
+          locations: [
+            {
+              name: "Mylapore",
+              link: "https://maps.app.goo.gl/2YYmEVX9ooWbunJTA",
+            },
+          ],
+        },
+        {
+          name: "Lalaji Memorial Omega International School",
+          desc: "Offers various facilities and has received high rankings for innovation and resources.",
+          locations: [
+            {
+              name: "Kovalur",
+              link: "https://maps.app.goo.gl/ZzE21VBgCRa86cXK8",
+            },
+          ],
+        },
+        {
+          name: "International Village School",
+          desc: "",
+          locations: [
+            {
+              name: "Sholinganallur",
+              link: "https://maps.app.goo.gl/Qh4FmLY9ZhVgjoyb9",
+            },
+          ],
+        },
+        {
+          name: "KC High International School",
+          desc: "",
+          locations: [
+            {
+              name: "Navalur",
+              link: "https://maps.app.goo.gl/XFZrVBvgNeQWLrD7A",
+            },
+          ],
+        },
+        {
+          name: "Ela Green School",
+          desc: "Located near Maraimalai Nagar, and offers the IB program.",
+          locations: [
+            {
+              name: "Maraimalai Nagar",
+              link: "https://maps.app.goo.gl/ZcHbSLPZkykZVvkb7",
+            },
+          ],
+        },
+        {
+          name: "LADY ANDAL SCHOOL",
+          desc: "",
+          locations: [
+            {
+              name: "Chetpet",
+              link: "https://maps.app.goo.gl/dbtEdqagFg5xmWmY8",
+            },
+          ],
+        },
+        {
+          name: "Velammal Global School (Puzhal)",
+          desc: "Known for quality education, professional staff, and amenities.",
+          locations: [
+            {
+              name: "Puzhal",
+              link: "https://maps.app.goo.gl/F4QHbByVMBB9xy8J8",
+            },
+          ],
+        },
+        {
+          name: "Alphabet International School",
+          desc: "Creates a calming learning environment with colorful spaces and a focus on IB values.",
+          locations: [
+            {
+              name: "Palavakkam",
+              link: "https://maps.app.goo.gl/PPd5HYYiHnHxhPjZ8",
+            },
+          ],
+        },
+        {
+          name: "Sharanalaya Montessori School",
+          desc: "",
+          locations: [
+            {
+              name: "Injambakkam",
+              link: "https://maps.app.goo.gl/mSPbpFH2VJc15h7r7",
+            },
+          ],
+        },
+        {
+          name: "The NEST School",
+          desc: "Offers the IB PYP program alongside the CAIE Curriculum.",
+          locations: [
+            {
+              name: "Kodambakkam",
+              link: "https://maps.app.goo.gl/VEWW7Hs42rCSFoU29",
+            },
+          ],
+        },
+        {
+          name: "Anand Singapore International School, Chennai",
+          desc: "Offers the IBDP alongside the Cambridge IGCSE and Singapore curricula.",
+          locations: [
+            {
+              name: "Porur",
+              link: "https://maps.app.goo.gl/CdKHQ8Bm8gJ7q2L69",
             },
           ],
         },
@@ -207,7 +380,7 @@ export default function EducationInstitutions() {
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
             },
-             {
+            {
               title: "Ideal for Families Who Want:",
               note: "",
               para: [
@@ -448,7 +621,7 @@ export default function EducationInstitutions() {
                       {section.fintechEvolution.map((tenant, i) => (
                         <div key={i}>
                           {tenant.points.map((item, j) => (
-                            <div key={j} className="clcboxItemss flex mb-4">
+                            <div key={j} className="clcboxItemss flex mb-4" style={{paddingBottom:"0"}}>
                               <div className="clcboxIImg">
                                 <img src={item.imgs} alt={item.title} />
                               </div>
@@ -478,7 +651,7 @@ export default function EducationInstitutions() {
                     Top IB Schools in Chennai (Sample)
                   </h2>
 
-                  <table className="min-w-full border border-gray-200 divide-y divide-gray-200 text-left mb-10">
+                  <table className="min-w-full border border-gray-200 divide-y divide-gray-200 text-left mb-0">
                     <thead className="bg-gray-100">
                       <tr>
                         <th className="px-4 py-3 text-sm font-semibold text-gray-700">
@@ -530,7 +703,7 @@ export default function EducationInstitutions() {
                     Curriculum Pathways & Subjects
                   </h2>
 
-                  <table className="min-w-full border border-gray-200 divide-y divide-gray-200 text-left mb-10">
+                  <table className="min-w-full border border-gray-200 divide-y divide-gray-200 text-left mb-0">
                     <thead className="bg-gray-100">
                       <tr>
                         <th className="px-4 py-3 text-sm font-semibold text-gray-700">
@@ -587,7 +760,7 @@ export default function EducationInstitutions() {
                       {section.fintechEvolution.map((tenant, i) => (
                         <div key={i}>
                           {tenant.points.map((item, j) => (
-                            <div key={j} className="clcboxItemss flex mb-4">
+                            <div key={j} className="clcboxItemss flex mb-4" style={{paddingBottom:"0"}} >
                               <div className="clcboxIImg">
                                 <img src={item.imgs} alt={item.title} />
                               </div>
@@ -642,6 +815,51 @@ export default function EducationInstitutions() {
                     </div>
                   </section>
                 ))}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {CentralChennai.map((section, sectionIdx) => {
+                  return (
+                    <div key={sectionIdx} className="nightlifesecIn">
+                      <h2 className="text-2xl font-semibold mb-6">
+                        {section.category}
+                      </h2>
+                      <p className="mx-0 my-5 mb-9">
+                        {section.categoryParaGraph}
+                      </p>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <AnimatePresence>
+                          {section.places.map((place, idx) => (
+                            <motion.div
+                              key={idx}
+                              className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                              initial={{ opacity: 0, y: 20 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0, y: -20 }}
+                              transition={{ duration: 0.3 }}
+                              layout
+                            >
+                              <h3 className="text-xl font-semibold mb-2">
+                                {place.name}
+                              </h3>
+                              <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                              {place.locations?.length > 0 && (
+                                <ExpandableList
+                                  items={place.locations.map((loc) => ({
+                                    label: loc.name,
+                                    link: loc.link,
+                                  }))}
+                                  maxVisible={2}
+                                />
+                              )}
+                            </motion.div>
+                          ))}
+                        </AnimatePresence>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </>
           )}

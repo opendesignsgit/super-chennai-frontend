@@ -577,9 +577,10 @@ function App() {
           }`}
           // className="stickyIconsContainer"
         >
-          <a href="/superchennai-contest">
+          <a href="/reimagine-chennai-AI-art-challenge">
             {/* <img src="/images/nammaStoriesIcon.png" alt="" /> */}
-            <img src="/images/super-chennai-contest.png" alt="" />
+            {/* <img src="/images/super-chennai-contest.png" alt="" /> */}
+            <img src="/images/ai-icons.png" alt="" />
             {/* <img src="/images/icon-of-the-month.png" alt="" /> */}
           </a>
         </div>

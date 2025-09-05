@@ -873,8 +873,8 @@ export const NammaStoreiesnewsArticle = [
 export const newsPhotos = [
     {
     id: -4,
-    Company: "The Hindu - Downtown",
-    EventsCalendarTitle: "Super Chennai, a citizen-powered urban movement.",
+    Company: "Chennai Times",
+    EventsCalendarTitle: "Our Goal is to make Chennai one of the World's Top 100 Cities",
     EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
     EventsCalendarMonth: "26 July",
     EventsCalendarTime: "07:00 PM",

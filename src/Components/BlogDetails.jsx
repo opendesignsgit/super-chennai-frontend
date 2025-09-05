@@ -284,6 +284,7 @@ const BlogDetail = () => {
             title: found.title,
             content: found.content,
             metadescription: found.meta.description,
+            authour: found.populatedAuthors[0].name,
             metatitle: found.meta.title,
             heroImage:
               found.heroImage?.sizes?.xlarge?.url ||
@@ -376,10 +377,12 @@ const BlogDetail = () => {
             </>
           )}
         </div>
+        {console.log("authour", blog.authour)}
         {/* <div className="blog-category">
           <span>{blog.blogCategory || "nodattaaaaaaaaaaaaaaa"}</span>
         </div> */}
         <div className="blog-detail-container  container max-w-7xl mx-auto">
+          <h3 className="AuthourNameBlog">Author: <span style={{color:"#1d1d1d"}}>{blog.authour}</span></h3>
           <div className="blog-content">{parseLexical(blog.content)}</div>
           <div className="back-link">
             <Link to="/blog">← Back to Blog List</Link>

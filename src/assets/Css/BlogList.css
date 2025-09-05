@@ -234,6 +234,10 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+.AuthourNameBlog {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 720px) {
   .blog-detail-container {
     padding: 1rem 2rem;

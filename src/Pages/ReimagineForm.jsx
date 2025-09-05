@@ -317,6 +317,7 @@ const ReimagineForm = () => {
     if (file) {
       setImageFile(file);
       setImageFileName(file.name);
+      console.log("imageFileName", imageFile);
     }
   };
 
@@ -472,7 +473,7 @@ const ReimagineForm = () => {
               <div className="flex uploadmainContainer">
                 <div className="flex items-center justify-center w-full buttonUploadButton">
                   <label
-                  style={{padding:"0"}}
+                    style={{ padding: "0" }}
                     htmlFor="imageUpload"
                     className="flex flex-col items-center justify-center w-full h-48 border-2 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100 transition"
                   >
@@ -511,13 +512,10 @@ const ReimagineForm = () => {
               ) : (
                 <p className="mt-2 text-sm text-gray-700 font-medium truncate slectedVideo">
                   *Only JPEG and PNG files are accepted
-
                 </p>
               )}
             </div>
           </div>
-
-        
 
           <div className="mb-4">
             <textarea

@@ -88,7 +88,7 @@ export default function SuperChennaiEvents() {
                     alt="Right Image"
                     className="rounded-xl mb-3"
                   />
-                  <p className="text-lg font-medium">AI ReImagine</p>
+                  <p className="text-lg font-medium">AI REIMAGINE</p>
                 </div>
               </a>
 
@@ -105,7 +105,7 @@ export default function SuperChennaiEvents() {
                     alt="Left Image"
                     className="rounded-xl mb-3"
                   />
-                  <p className="text-lg font-medium">Car Treasure Hunt</p>
+                  <p className="text-lg font-medium">CAR TREASURE HUNT</p>
                 </div>
               </a>
 
@@ -121,7 +121,7 @@ export default function SuperChennaiEvents() {
                     alt="Right Image"
                     className="rounded-xl mb-3"
                   />
-                  <p className="text-lg font-medium">Namma Stories</p>
+                  <p className="text-lg font-medium">NAMMA STORIES</p>
                 </div>
               </a>
             </div>

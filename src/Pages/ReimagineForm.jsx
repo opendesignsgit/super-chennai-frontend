@@ -524,8 +524,9 @@ const ReimagineForm = () => {
               )}
 
               {imagePreviewUrl && (
-                <div className="imageshowPupFunction">
+                <div className="imageshowPupFunction cursor-pointer">
                   <button
+                  className="cursor-pointer"
                     onClick={(e) => {
                       e.preventDefault();
                       setSelectedCard(true);

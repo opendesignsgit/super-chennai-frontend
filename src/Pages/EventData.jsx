@@ -2018,7 +2018,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarCategory: "Stand up Comedy",
     image: "/images/HomePage-Images/Events/Newevents/Quadrant-Life.jpg",
     link: "/events",
-    location: "Just BLR: Bengaluru",
+    location: "Trinity Studio : Kodambakkam",
     language: "English",
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 18yrs +",

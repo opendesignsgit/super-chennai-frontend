@@ -776,6 +776,10 @@ textarea {
 .imageshowPupFunction button p {
   font-size: 13px;
 }
+
+.reimaginePage .accaodomationBannerSection img {
+  object-position: 20% center;
+}
 @media (max-width: 1600px) and (min-width: 1300px) {
   .popupSection {
     height: 70vh;

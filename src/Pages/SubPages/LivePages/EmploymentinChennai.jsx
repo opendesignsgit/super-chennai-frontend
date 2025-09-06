@@ -36,12 +36,14 @@ export default function EmploymentinChennai() {
       title: "Automotive and Engineering Leadership",
       para: 'Chennai, frequently referred to as the "Detroit of Asia," offers substantial job opportunities in the automotive and engineering fields, hosting many manufacturing facilities and support industries.',
       imgs: "/images/Live-Images/SubPages/Automotive-and-Engineering-Leadership.jpg",
+      imgAlt: "automotive engineering",
     },
     {
       id: 2,
       title: " Electronics and Hardware Production",
       para: "The city has developed into a significant center for electronics and hardware production, generating employment in manufacturing, assembly, and associated sectors. ",
       imgs: "/images/Live-Images/SubPages/Electronics-and-Hardware-Production.jpg",
+      imgAlt: "electronics in chennai",
     },
   ];
   const couple = [
@@ -50,12 +52,14 @@ export default function EmploymentinChennai() {
       title: "Information Technology and Software Services",
       para: "Chennai serves as a prominent IT center, accommodating various local and global software firms, resulting in significant job opportunities in software creation, IT assistance, and associated positions.",
       imgs: "/images/Live-Images/SubPages/Information-Technology-and-Software-Services.jpg",
+      imgAlt: "software solution in chennai",
     },
     {
       id: 2,
       title: "Banking, Finance, and Insurance",
       para: "The financial services industry is a major employer in Chennai, with numerous banks, financial entities, and insurance firms well-established in the area.",
       imgs: "/images/Live-Images/SubPages/Banking-Finance-and-Insurance.jpg",
+      imgAlt: "banking finance in chennai",
     },
   ];
   const family = [
@@ -64,12 +68,14 @@ export default function EmploymentinChennai() {
       title: "Healthcare and Medical Tourism",
       para: "Chennai's status as a healthcare hub promotes job opportunities in hospitals, clinics, and associated medical services.",
       imgs: "/images/Live-Images/SubPages/Healthcare-and-Medical-Tourism.jpg",
+      imgAlt: "",
     },
     {
       id: 2,
       title: "Varied and Expanding Industries",
       para: "There are also prospects in areas such as petrochemicals, textiles, entertainment, and logistics, showcasing the city's diverse economy.",
       imgs: "/images/Live-Images/SubPages/Varied-and-Expanding-Industries.jpg",
+      imgAlt: "",
     },
     // {
     //   id: 3,
@@ -115,100 +121,6 @@ export default function EmploymentinChennai() {
     // },
   ];
 
-  const images = [
-    {
-      src: "/images/Live-Images/Cost-of-living.jpg",
-      title: "Cost-of-Living",
-      link: "/live/cost-of-living-in-chennai",
-    },
-    {
-      src: "/images/Live-Images/Residency.jpg",
-      title: "Residency",
-      link: "/live/residential-properties-in-chennai",
-    },
-    {
-      src: "/images/Live-Images/Employment.jpg",
-      title: "Employment",
-      link: "/live/employment-in-chennai",
-    },
-    {
-      src: "/images/Live-Images/chennaiLifeEssential4.png",
-      title: "Transportation",
-      link: "/live/transportation-in-chennai",
-    },
-    {
-      src: "/images/Live-Images/Healthcare-banner.jpg",
-      title: "Healthcare",
-      link: "/live/healthcare-in-chennai",
-    },
-    {
-      src: "/images/Live-Images/Culture-Religious-Attractions.jpg",
-      title: "Culture Religious",
-      link: "/live/worship-in-chennai",
-    },
-    {
-      src: "/images/Live-Images/Recreation.jpg",
-      title: "Recreation",
-      link: "/visit/things-to-do-in-chennai",
-    },
-    {
-      src: "/images/Live-Images/Neighbourhood.jpg",
-      title: "Neighbourhood",
-      link: "/live/places-near-chennai",
-    },
-    {
-      src: "/images/Live-Images/Quality-of-Life.jpg",
-      title: "Quality of Life",
-      link: "/live/quality-of-life-in-chennai",
-    },
-    {
-      src: "/images/Live-Images/Future-Growth-&-Development.jpg",
-      title: "Future Growth & Development",
-      link: "/live/infrastructure-development-in-chennai",
-    },
-    {
-      src: "/images/Live-Images/Educational-Institutions.jpg",
-      title: "Educational Insitiutions",
-      link: "/live/educational-institutions-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -234,7 +146,8 @@ export default function EmploymentinChennai() {
           <div className="accodoamationBannerText">
             <h3>Employment</h3>
             <div className="breadCrum">
-              <Link to="/live-in-chennai"> Live </Link> - <a href="">Employment </a>
+              <Link to="/live-in-chennai"> Live </Link> -{" "}
+              <a href="">Employment </a>
             </div>
           </div>
         </div>
@@ -276,7 +189,7 @@ export default function EmploymentinChennai() {
           <div className="clcscrlinLBox sticky top-0">
             <img
               src="/images/Live-Images/SubPages/Industrial-and-Manufacturing.jpg"
-              alt=""
+              alt="chennai industrial "
             />
             <div className="clcscrLtitle bg-[#7d377c] relative">
               <h2 className="flex flex-col">
@@ -291,12 +204,11 @@ export default function EmploymentinChennai() {
             {single.map((user) => (
               <div key={user.id} className="clcboxItemss flex">
                 <div className="clcboxIImg">
-                  <img src={user.imgs} alt={user.title} />
+                  <img src={user.imgs} alt={user.imgAlt} />
                 </div>
                 <div className="clcboxICont">
                   <h3>{user.title}</h3>
                   <p>{user.para}</p>
-                  
                 </div>
               </div>
             ))}
@@ -308,7 +220,7 @@ export default function EmploymentinChennai() {
           <div className="clcscrlinLBox sticky top-0">
             <img
               src="/images/Live-Images/SubPages/IT-and-Services-Industry.jpg"
-              alt=""
+              alt="it services in chennai"
             />
             <div className="clcscrLtitle bg-[#672866] relative">
               <h2 className="flex flex-col">
@@ -324,12 +236,11 @@ export default function EmploymentinChennai() {
             {couple.map((user) => (
               <div key={user.id} className="clcboxItemss flex">
                 <div className="clcboxIImg">
-                  <img src={user.imgs} alt={user.title} />
+                  <img src={user.imgs} alt={user.imgAlt} />
                 </div>
                 <div className="clcboxICont">
                   <h3>{user.title}</h3>
                   <p>{user.para}</p>
-                  
                 </div>
               </div>
             ))}
@@ -371,9 +282,8 @@ export default function EmploymentinChennai() {
 
       {/*--------------- Explore More Chennai----------------- */}
 
+      <LiveSlider />
 
-    <LiveSlider/>
-     
       {/*----------------- Social & CTA ----------------*/}
       <div className="AccomodationInstaReel">
         <InstagramReelsMarquee />

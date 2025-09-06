@@ -127,7 +127,7 @@ export default function Live() {
         <div className="VolunteerMainContainer">
           <div className="volunteerSectionBanner">
             <div className="VolunteerBannerImage">
-              <img src="/images/Live-Images/liveBanner.jpg" alt="" />
+              <img src="/images/Live-Images/liveBanner.jpg" alt="live in chennai" />
             </div>
             <h3 className="voluntterContent">Live</h3>
           </div>
@@ -206,7 +206,7 @@ export default function Live() {
             </div>
             <img
               src="/images/Live-Images/volunteerBannerImagesContent.png"
-              alt=""
+              alt="volunteer work in chennai"
             />
           </div>
         </div>

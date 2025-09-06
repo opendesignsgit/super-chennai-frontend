@@ -692,7 +692,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
 
               <div className="mobilesvgSize">
                 <Link to="/">
-                  <img src="/images/HomePage-Images/Superchennai.png" alt="" />
+                  <img src="/images/HomePage-Images/Superchennai.png" alt="Super Chennai" />
                 </Link>
               </div>
 

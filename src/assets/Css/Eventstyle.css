@@ -778,7 +778,7 @@ textarea {
 }
 
 .reimaginePage .accaodomationBannerSection img {
-  object-position: 20% center;
+  object-position: 30% center;
 }
 @media (max-width: 1600px) and (min-width: 1300px) {
   .popupSection {
@@ -807,6 +807,19 @@ textarea {
 
   .nammaStorieslink {
     bottom: 165px;
+  }
+}
+
+@media(min-width:801px){
+  .reimagineMobile{
+    display: none;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .reimagineDekstop {
+    display: none;
   }
 }
 

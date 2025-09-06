@@ -8,56 +8,67 @@ export default function LiveSlider() {
       src: "/images/Live-Images/Cost-of-living.jpg",
       title: "Cost-of-Living",
       link: "/live/cost-of-living-in-chennai",
+      alt: "cost of living in chennai",
     },
     {
       src: "/images/Live-Images/Residency.jpg",
       title: "Residency",
       link: "/live/residential-properties-in-chennai",
+      alt: "residency in chennai",
     },
     {
       src: "/images/Live-Images/Employment.jpg",
       title: "Employment",
       link: "/live/employment-in-chennai",
+      alt: "employment in chennai",
     },
     {
       src: "/images/Live-Images/chennaiLifeEssential4.png",
       title: "Transportation",
       link: "/live/transportation-in-chennai",
+      alt: "chennai transportation",
     },
     {
       src: "/images/Live-Images/Healthcare-banner.jpg",
       title: "Healthcare",
       link: "/live/healthcare-in-chennai",
+      alt: "multispeciality hospital chennai",
     },
     {
       src: "/images/Live-Images/Culture-Religious-Attractions.jpg",
       title: "Culture Religious",
       link: "/live/worship-in-chennai",
+      alt: "temples in chennai",
     },
     {
       src: "/images/Live-Images/Recreation.jpg",
       title: "Recreation",
       link: "/visit/things-to-do-in-chennai",
+      alt: "life in chennai",
     },
     {
       src: "/images/Live-Images/Neighbourhood.jpg",
       title: "Neighbourhood",
       link: "/live/places-near-chennai",
+      alt: "places near chennai",
     },
     {
       src: "/images/Live-Images/Quality-of-Life.jpg",
       title: "Quality of Life",
       link: "/live/quality-of-life-in-chennai",
+      alt: "quality living in chennai",
     },
     {
       src: "/images/Live-Images/Future-Growth-&-Development.jpg",
       title: "Future Growth & Development",
       link: "/live/infrastructure-development-in-chennai",
+      alt: "chennai development",
     },
     {
       src: "/images/Live-Images/Educational-Institutions.jpg",
       title: "Educational Insitiutions",
       link: "/live/educational-institutions-in-chennai",
+      alt: "edutech chennai",
     },
   ];
 
@@ -122,7 +133,7 @@ export default function LiveSlider() {
                     >
                       <img
                         src={img.src}
-                        alt={`Slide ${index + 1}`}
+                        alt={img.alt}
                         style={{
                           width: "100%",
                           height: "auto",

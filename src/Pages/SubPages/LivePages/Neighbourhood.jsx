@@ -38,12 +38,14 @@ export default function Neighbourhood() {
       sectionTitle: "Major Urban Areas Nearby",
       sectionDesc: " Discovering significant cities close to Chennai. ",
       image: "/images/Live-Images/SubPages/Major-Urban-Areas-Nearby.jpg",
+      imgAlt: "chennai near tourist places",
       benefits: [
         {
           id: 1,
           title: "Kanchipuram",
           para: "Referred to as the ''City of a Thousand Temples'' and renowned for its silk sarees, Kanchipuram provides a vibrant cultural and historical journey.",
           imgs: "/images/Live-Images/SubPages/Kanchipuram.jpg",
+          imgAlt: "famous temples near chennai",
           link: "/kanchipuram",
         },
         {
@@ -51,6 +53,7 @@ export default function Neighbourhood() {
           title: "Vellore",
           para: "  This ''Fort City'' features historical landmarks, such as the Vellore Fort, and is notable for its educational and healthcare facilities.  ",
           imgs: "/images/Live-Images/SubPages/Vellore.jpg",
+          imgAlt: "fort city",
           link: "/Vellore",
         },
         {
@@ -58,6 +61,7 @@ export default function Neighbourhood() {
           title: "Tirupati",
           para: " A significant religious site in Andhra Pradesh, Tirupati is famous for the Sri Venkateswara Temple and draws pilgrims from all over the nation. ",
           imgs: "/images/Live-Images/SubPages/Tirupati.jpg",
+          imgAlt: "temples near chennai",
           link: "/Tirupati",
         },
         {
@@ -65,6 +69,7 @@ export default function Neighbourhood() {
           title: "Pondicherry",
           para: " This once-French colony preserves a distinctive cultural allure with its colonial buildings, tranquil beaches, and spiritual essence. ",
           imgs: "/images/Live-Images/SubPages/Pondicherry.jpg",
+          imgAlt: "chennai near tourist spots",
           link: "/Pondicherry",
         },
       ],
@@ -73,12 +78,14 @@ export default function Neighbourhood() {
       sectionTitle: "Other Notable Regional Towns",
       sectionDesc: "Exploring key locations around Chennai.",
       image: "/images/Live-Images/SubPages/Other-Notable-Regional-Towns.jpg",
+      imgAlt: "historical places in chennai",
       benefits: [
         {
           id: 1,
           title: "Chengalpattu",
           para: "  An emerging town located south of Chennai, it functions as a rising industrial and educational center in the larger metropolitan area. ",
           imgs: "/images/Live-Images/SubPages/Chengalpattu.jpg",
+          imgAlt: "around chennai tourist places",
           link: "/Chengalpattu",
         },
         {
@@ -86,6 +93,7 @@ export default function Neighbourhood() {
           title: "Sriperumbudur",
           para: "  Recognized for its historical importance and as a key hub for industry and manufacturing, drawing investment and growth.  ",
           imgs: "/images/Live-Images/SubPages/Sriperumbudur.jpg",
+          imgAlt: "best places near chennai",
           link: "/Sriperumbudur",
         },
         {
@@ -93,6 +101,7 @@ export default function Neighbourhood() {
           title: "Yelagiri",
           para: "Tucked away in the Eastern Ghats, Yelagiri Hills is a quiet and refreshing hill station",
           imgs: "/images/Live-Images/SubPages/yelagiri-hills.jpg",
+          imgAlt: "",
           link: "/yelagiri",
         },
         {
@@ -100,6 +109,7 @@ export default function Neighbourhood() {
           title: "Pulicat",
           para: "Pulicat, also known as Pazhaverkadu, is a charming coastal town known for Pulicat Lake—India’s second-largest brackish water lagoon.",
           imgs: "/images/Live-Images/SubPages/pulicat-lake-&-town-(pazhaverkadu).jpg",
+          imgAlt: "",
           link: "/pulicatelake",
         },
         {
@@ -107,6 +117,7 @@ export default function Neighbourhood() {
           title: "Thiruthani",
           para: "Thiruthani is a sacred hill town in Tamil Nadu, renowned for the Thiruthani Murugan Temple, one of the six abodes (ArupadaiVeedu) of Lord Murugan.",
           imgs: "/images/Live-Images/SubPages/vedanthangal-bird-sanctuary-1.jpg",
+          imgAlt: "",
           link: "/thiruthani",
         },
         {
@@ -114,6 +125,7 @@ export default function Neighbourhood() {
           title: "Tiruvannamalai",
           para: "Tiruvannamalai is a spiritually charged town nestled at the base of the Annamalai Hills, famous for the Annamalaiyar Temple, one of the Pancha Bhoota Sthalams representing fire (Agni).",
           imgs: "/images/Live-Images/SubPages/tiruvannamalai-–-the-sacred-flame-of-tamil-nadu.jpg",
+          imgAlt: "",
           link: "/Tiruvannamalai",
         },
 
@@ -122,6 +134,7 @@ export default function Neighbourhood() {
           title: "Chidambaram",
           para: "Chidambaram is an ancient temple town celebrated for the Thillai Nataraja Temple, dedicated to Lord Shiva in his cosmic dancer form – Nataraja.",
           imgs: "/images/Live-Images/SubPages/chidambaram.jpg",
+          imgAlt: "",
           link: "/chidambaram",
         },
 
@@ -130,6 +143,7 @@ export default function Neighbourhood() {
           title: "Kalpakkam",
           para: "Kalpakkam is a serene coastal town located south of Chennai, best known for housing India's premier nuclear research centers like IGCAR and Madras Atomic Power Station (MAPS).",
           imgs: "/images/Live-Images/SubPages/kalpakkam.jpg",
+          imgAlt: "",
           link: "/kalpakkam",
         },
       ],
@@ -249,15 +263,20 @@ export default function Neighbourhood() {
     <>
       <div>
         <Helmet>
-          <title>Your Ultimate Guide to Places Near Chennai - Super Chennai</title>
-          <meta name="description" content="Super Chennai highlights the best places near Chennai, from scenic beaches to historic towns, helping you plan perfect weekend trips and short getaways with ease." />
+          <title>
+            Your Ultimate Guide to Places Near Chennai - Super Chennai
+          </title>
+          <meta
+            name="description"
+            content="Super Chennai highlights the best places near Chennai, from scenic beaches to historic towns, helping you plan perfect weekend trips and short getaways with ease."
+          />
           <link rel="canonical" href="/live/places-near-chennai" />
         </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img
             src="/images/Live-Images/SubPages/Neighbourhood-banner.jpg"
-            alt=""
+            alt="places near chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -316,7 +335,7 @@ export default function Neighbourhood() {
           >
             <div className="clcscrlCol clcscrlLft relative">
               <div className="clcscrlinLBox sticky top-0">
-                <img src={section.image} alt={section.sectionTitle} />
+                <img src={section.image} alt={section.imgAlt} />
                 <div
                   className={`clcscrLtitle relative ${
                     index % 2 === 0 ? "bg-[#7d377c]" : "bg-[#672866]"
@@ -338,7 +357,7 @@ export default function Neighbourhood() {
                     className="clcboxItemss linkIcon  flex hover:shadow-lg transition rounded-xl"
                   >
                     <div className="clcboxIImg">
-                      <img src={item.imgs} alt={item.title} />
+                      <img src={item.imgs} alt={item.imgAlt} />
                     </div>
                     <div className="clcboxICont">
                       <h3>{item.title}</h3>

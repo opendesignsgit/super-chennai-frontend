@@ -26,76 +26,6 @@ export default function Visit() {
   const [fade, setFade] = useState(true);
   const tooltipRef = useRef(null);
 
-  const images = [
-    {
-      src: "/images/Visit-Images/accomodation.jpg",
-      label: "Accommodation",
-      description: "Find comfortable stays for your memorable city visit",
-      link: "/visit/hotel-accommodation-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/food.jpg?text=Image+2",
-      label: "Restaurants",
-      description:
-        "Taste delicious local cuisine during your exploration here.",
-      link: "/visit/restaurants-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/places-to-visit.jpg?text=Image+3",
-      label: "Places to visit",
-      description: "Discover ancient landmarks and vibrant markets here.",
-      link: "/visit/places-to-visit-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/things-to-do.jpg?text=Image+4",
-      label: "Things to do",
-      description:
-        "Explore vibrant culture and exciting activities in the city.",
-      link: "/visit/things-to-do-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/itinerary.jpg?text=Image+5",
-      label: "Itinerary",
-      description: "Plan your cultural trail for enriching local experiences.",
-      link: "/visit/chennai-itinerary",
-    },
-    {
-      src: "/images/Visit-Images/hidden-gems.jpg?text=Image+6",
-      label: "Hidden Gems",
-      description: "Uncover local secrets and unique spots around.",
-      link: "/visit/hidden-places-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/shopping.jpg?text=Image+7",
-      label: "Shopping",
-      description: "Indulge in textiles and traditional crafts locally.",
-      link: "/visit/shopping-areas-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/travel-tips.jpg?text=Image+8",
-      label: "Travel Tips",
-      description: "Navigate the city easily with helpful local advice.",
-      link: "/visit/travels-chennai",
-    },
-    {
-      src: "/images/Visit-Images/wellness.jpg?text=Image+9",
-      label: "Wellness",
-      description: "Rejuvenate with local therapies during your city stay.",
-      link: "/visit/wellness-centres-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/events.jpg?text=Image+10",
-      label: "Events",
-      description: "Experience happening events and festivals locally now.",
-      link: "/visit/events-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/conferences.jpg?text=Image+11",
-      label: "Conferences",
-      description: "Experience happening events and festivals locally now.",
-      link: "/visit/conferences-in-chennai",
-    },
-  ];
   const mainSlider = useRef(null);
   const thumbSlider = useRef(null);
 
@@ -147,57 +77,68 @@ export default function Visit() {
       label: "Accommodation",
       image: "/images/Visit-Images/accomodation.jpg",
       link: "/visit/hotel-accommodation-in-chennai",
+      imgAlt: "hotel accommodation in chennai",
     },
     {
       label: "Restaurants",
       image: "/images/Visit-Images/food.jpg",
       link: "/visit/restaurants-in-chennai",
+      imgAlt: "",
     },
     {
       label: "Places to visit",
       image: "/images/Visit-Images/places-to-visit.jpg",
       link: "/visit/places-to-visit-in-chennai",
+      imgAlt: "",
     },
     {
       label: "Things to do",
       image: "/images/Visit-Images/things-to-do.jpg",
       link: "/visit/things-to-do-in-chennai",
+      imgAlt: "",
     },
     {
       label: "Itinerary",
       image: "/images/Visit-Images/itinerary.jpg?",
       link: "/visit/chennai-itinerary",
+      imgAlt: "",
     },
     {
       label: "Hidden Gems",
       image: "/images/Visit-Images/hidden-gems.jpg",
       link: "/visit/hidden-places-in-chennai",
+      imgAlt: "",
     },
     {
       label: "Shopping",
       image: "/images/Visit-Images/shopping.jpg",
       link: "/visit/shopping-areas-in-chennai",
+      imgAlt: "",
     },
     {
       label: "Travel Tips",
       image: "/images/Visit-Images/travel-tips.jpg",
       link: "/visit/travels-chennai",
+      imgAlt: "",
     },
     {
       label: "Wellness",
       image: "/images/Visit-Images/wellness.jpg",
       link: "/visit/wellness-centres-in-chennai",
+      imgAlt: "",
     },
     {
       label: "Events",
       image: "/images/Visit-Images/events.jpg?text=Image+10",
       link: "/visit/events-in-chennai",
+      imgAlt: "",
     },
 
     {
       label: "Conferences",
       image: "/images/Visit-Images/conferences.jpg",
       link: "/visit/conferences-in-chennai",
+      imgAlt: "",
     },
   ];
 
@@ -218,26 +159,31 @@ export default function Visit() {
       title: "Scenic & Relaxing",
       desc: "Unwind at some of the most popular beaches in Chennai, like Marina, Elliot’s, and Thiruvanmiyur. From sunrise yoga and cycling trails to seaside cafés, these coastal spots offer the perfect blend of calm and charm.",
       icon: "/images/Visit-Images/icons/Scenic-Relaxing.svg",
+      imgAlt: "attractions chennai",
     },
     {
       title: "Buzzing City Life",
       desc: "Experience the vibrant pulse of Chennai through its premium lifestyle destinations. Top malls in Chennai like Phoenix Marketcity, Express Avenue, and VR Chennai house everything from luxury brands to gaming zones and fine dining. Enjoy the latest blockbusters at popular Chennai multiplexes, or unwind with art exhibits and live events that keep the city buzzing.",
       icon: "/images/Visit-Images/icons/Buzzing-City-Life.svg",
+      imgAlt: "chennai sightseeing",
     },
     {
       title: "Where Flavour Meets Culture",
       desc: "The soul of the city is on your plate. Explore iconic Chennai restaurants, aromatic South Indian breakfasts, and contemporary cafes in Chennai that blend local charm with global flair — perfect for casual bites or gourmet evenings.",
       icon: "/images/Visit-Images/icons/Where-Flavour-Meets-Culture.svg",
+      imgAlt: "indo chinese restaurant chennai",
     },
     {
       title: "Weekend Getaways, Chennai Style",
       desc: "Chennai offers stays for every budget — from affordable city hotels and serviced apartments to scenic beach resorts in Chennai along ECR. Enjoy a cozy budget stay in Chennai or unwind in luxury by the sea.",
       icon: "/images/Visit-Images/icons/Weekend-Getaways-Chennai-Style.svg",
+      imgAlt: "chennai weekend places",
     },
     {
       title: "Timeless Chennai – Where Culture Evolves Gracefully",
       desc: "From heritage places in Chennai like Kapaleeshwarar Temple and forts in Chennai to modern hubs like Express Avenue, the city blends tradition with trend. Immerse in Chennai culture, then unwind with fusion cuisine or a show at a Chennai theatre.",
       icon: "/images/Visit-Images/icons/Timeless-Chennai-Where-Culture-Evolves-Gracefully.svg",
+      imgAlt: "best temple in chennai",
     },
   ];
   const infoData1 = [
@@ -245,31 +191,38 @@ export default function Visit() {
       title: "Catch the Waves or Cruise the Track",
       desc: "Try surfing in Kovalam, race go-karts at a karting zone, or plan a heritage day trip to Mahabalipuram’s UNESCO-listed sites.",
       icon: "/images/Visit-Images/icons/Catch-the-Waves-or-Cruise-the-Track.svg",
+      imgAlt: "places to go chennai",
     },
     {
       title: "Shop the Spectrum",
       desc: "From silk sarees at T. Nagar to designer finds on Khader Nawaz Khan Road and quirky picks at local flea markets, Chennai shopping has it all.",
       icon: "/images/Visit-Images/icons/Shop-the-Spectrum.svg",
+      imgAlt: "shopping malls in chennai",
     },
     {
       title: "Unwind with Art & Entertainment",
       desc: "Attend live concerts, stand-up comedy, indie theatre, or cultural festivals that light up Chennai’s nightlife and creative scene.",
       icon: "/images/Visit-Images/icons/Unwind-with-Art-Entertainment.svg",
+      imgAlt: "chennai events",
     },
     {
       title: "Kid-Friendly Adventures",
       desc: "Spend a fun day at Guindy National Park or explore exotic reptiles at the Chennai Snake Park — great weekend picks for families.",
       icon: "/images/Visit-Images/icons/Kid-Friendly-Adventures.svg",
+      imgAlt: "",
     },
   ];
   return (
     <>
       <div>
-          <Helmet>
-              <title>Top Places to Visit & Stay in Chennai</title>
-              <meta name="description" content="Discover the best places to visit in Chennai, top things to do, and comfortable accommodation in Chennai — from beaches and temples to cafes, malls, and events." />
-               <link rel="canonical" href="/visit-chennai" />
-            </Helmet>
+        <Helmet>
+          <title>Top Places to Visit & Stay in Chennai</title>
+          <meta
+            name="description"
+            content="Discover the best places to visit in Chennai, top things to do, and comfortable accommodation in Chennai — from beaches and temples to cafes, malls, and events."
+          />
+          <link rel="canonical" href="/visit-chennai" />
+        </Helmet>
         <div
           className="VolunteerBgSection visitBgSection notHome"
           data-aos="fade-up"
@@ -278,7 +231,10 @@ export default function Visit() {
           <div className="VolunteerMainContainer">
             <div className="volunteerSectionBanner">
               <div className="VolunteerBannerImage">
-                <img src="/images/Visit-Images/visitBanner.jpg" alt="Banner" />
+                <img
+                  src="/images/Visit-Images/visitBanner.jpg"
+                  alt="mahabalipuram beach"
+                />
               </div>
               <h3 className="voluntterContent">Visit</h3>
             </div>
@@ -338,7 +294,11 @@ export default function Visit() {
               <div className="section-right-content">
                 {infoData.map((item, index) => (
                   <div className="info-item-block" key={index}>
-                    <img src={item.icon} alt="icon" className="info-icon" />
+                    <img
+                      src={item.icon}
+                      alt={item.imgAlt}
+                      className="info-icon"
+                    />
                     <div className="info-text-block">
                       <h3>{item.title}</h3>
                       <p>{item.desc}</p>
@@ -363,7 +323,11 @@ export default function Visit() {
               <div className="section-right-content">
                 {infoData1.map((item, index) => (
                   <div className="info-item-block" key={index}>
-                    <img src={item.icon} alt="icon" className="info-icon" />
+                    <img
+                      src={item.icon}
+                      alt={item.imgAlt}
+                      className="info-icon"
+                    />
                     <div className="info-text-block">
                       <h3>{item.title}</h3>
                       <p>{item.desc}</p>
@@ -374,7 +338,7 @@ export default function Visit() {
               <div className="section-left-image">
                 <img
                   src="/images/Visit-Images/standup-show.jpg"
-                  alt="Main Side Visual"
+                  alt="stand up comedy show in chennai"
                 />
               </div>
             </div>
@@ -508,7 +472,7 @@ export default function Visit() {
               <div className="flex-2 flex items-center justify-center hoverRightimg">
                 <img
                   src={previewSrc}
-                  alt="Category preview"
+                  alt=""
                   className="hoverRightimg"
                   style={{ opacity: fade ? 1 : 0, transition: "opacity 0.3s" }}
                 />
@@ -531,7 +495,7 @@ export default function Visit() {
               >
                 <img
                   src={item.image}
-                  alt={item.label}
+                  alt={item.imgAlt}
                   className="w-full h-40 object-cover rounded-t-lg"
                 />
                 <div className="p-4">

@@ -37,12 +37,14 @@ export default function Transportation() {
       sectionDesc:
         "Chennai offers a variety of local and district-specific transportation options. The railway is the most well-known mode of transportation. Check out the many rail transportation options here.",
       image: "/images/Live-Images/SubPages/On-Rail-Metro.jpg",
+      imgAlt: "chennai metro",
       benefits: [
         {
           id: 1,
           title: "Chennai Metro",
           para: "The Chennai Metro is a modern, efficient, and air-conditioned transit system connecting major business hubs, residential areas, and transit points. With smart ticketing and expanding routes, it offers a fast, comfortable, and traffic-free way to navigate the city.",
           imgs: "/images/Live-Images/SubPages/Icons/chennai-metro.svg",
+          imgAlt: "",
         },
         {
           id: 2,
@@ -97,18 +99,21 @@ export default function Transportation() {
       sectionDesc:
         "Chennai offers comprehensive vehicle and bus services to all parts of the city and beyond for a variety of travel needs. Roadways continue to be a significant and developing form of transportation.",
       image: "/images/Live-Images/SubPages/On-Road.jpg",
+      imgAlt: "chennai road way",
       benefits: [
         {
           id: 1,
           title: "MTC Bus Services",
           para: "Chennai’s Metropolitan Transport Corporation (MTC) runs one of India’s largest bus networks. With over 3,000 buses, it ensures affordable and reliable travel across the city—connecting homes, workplaces, transit points, and major landmarks efficiently.",
           imgs: "/images/Live-Images/SubPages/Icons/MTC-Bus-System.svg",
+          imgAlt: "MTC bus",
         },
         {
           id: 2,
           title: "Mini Bus Services",
           para: "Mini buses operate on shorter routes within residential areas and less accessible localities. They provide convenient transport to nearby main roads, metro stations, and local markets—making everyday travel easier, especially in interior and densely populated neighborhoods.",
           imgs: "/images/Live-Images/SubPages/Icons/mini-bus.svg",
+          imgAlt: "chennai mini bus",
         },
       ],
     },
@@ -117,18 +122,21 @@ export default function Transportation() {
       sectionDesc:
         "In Chennai, share autos run along fixed local routes at affordable fares, offering quick access across neighbourhoods. Auto-rickshaws provide flexible, on-demand travel—ideal for navigating residential areas, reaching transit hubs, and moving between key city points with ease.",
       image: "/images/Visit-Images/SubPages/local-rhythm.jpg",
+      imgAlt: "chennai local rhytham",
       benefits: [
         {
           id: 1,
           title: "Car Rentals in Chennai",
           para: "Chennai offers both self-drive and chauffeur-driven car rentals for flexible travel. Ideal for business trips, weekend getaways, or family outings, these services provide comfort, convenience, and independence without depending on public transport or ride-hailing apps.",
           imgs: "/images/Live-Images/SubPages/Icons/car-rental.svg",
+          imgAlt: "car rental in chennai",
         },
         {
           id: 1,
           title: "App-Based Mobility in Chennai",
           para: "Chennai offers app-based travel options through services like Ola, Uber, and Rapido. From air-conditioned cabs to convenient autos and two-wheeler rides, these platforms provide safe, trackable, and cashless commuting across the city at your fingertips.",
           imgs: "/images/Live-Images/SubPages/Icons/App-based-mobility-in-chennai.svg",
+          imgAlt: "mobility in chennai",
         },
       ],
     },
@@ -154,11 +162,13 @@ export default function Transportation() {
       ),
       image:
         "/images/Live-Images/SubPages/Private-Enterprises &-Intelligent-Transportation-1.jpg",
+        imgAlt:"chennai intelligent transportaion",
       benefits: [
         {
           id: 1,
           title: "Eligibility for a Driver’s License in Chennai",
           imgs: "/images/Live-Images/SubPages/Icons/Donts.svg",
+          imgAlt: "",
           points: [
             <>
               Minimum age is 18 years for motor vehicles (LMV – Light Motor
@@ -182,6 +192,7 @@ export default function Transportation() {
           id: 2,
           title: "Do’s – Smart Steps for Getting Licensed in Chennai",
           imgs: "/images/Live-Images/SubPages/Icons/Dos.svg",
+          imgAlt: "",
           points: [
             <>
               <strong>Book your RTO slot online in advance </strong>through the
@@ -210,6 +221,7 @@ export default function Transportation() {
           id: 3,
           title: "Don’ts – Common Mistakes to Avoid",
           imgs: "/images/Live-Images/SubPages/Icons/Donts.svg",
+          imgAlt: "",
           points: [
             <>
               <strong>Don’t rely on middlemen or unofficial agents </strong>
@@ -361,8 +373,6 @@ export default function Transportation() {
     },
   ];
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -383,7 +393,10 @@ export default function Transportation() {
     <>
       <Helmet>
         <title>Transportation in chennai - Super Chennai</title>
-        <meta name="description" content="Learn about transportation in Chennai with Super Chennai – your guide to metro, buses, rail and roads that keep the city moving with ease and accessibility." />
+        <meta
+          name="description"
+          content="Learn about transportation in Chennai with Super Chennai – your guide to metro, buses, rail and roads that keep the city moving with ease and accessibility."
+        />
         <link rel="canonical" href="/live/transportation-in-chennai" />
       </Helmet>
       <div>
@@ -391,7 +404,7 @@ export default function Transportation() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Live-Images/SubPages/Transportation-banner.jpg"
-            alt=""
+            alt="chennai transportaion"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -453,7 +466,7 @@ export default function Transportation() {
           >
             <div className="clcscrlCol clcscrlLft relative">
               <div className="clcscrlinLBox sticky top-0">
-                <img src={section.image} alt={section.sectionTitle} />
+                <img src={section.image} alt={section.imgAlt} />
                 <div className="clcscrLtitle bg-[#682865] relative">
                   <h2 className="flex flex-col text-white">
                     <small>{section.sectionTitle}</small>
@@ -467,7 +480,7 @@ export default function Transportation() {
                 {section.benefits.map((item) => (
                   <div key={item.id} className="clcboxItemss flex">
                     <div className="clcboxIImg">
-                      <img src={item.imgs} alt={item.title} />
+                      <img src={item.imgs} alt={item.imgAlt} />
                     </div>
                     <div className="clcboxICont">
                       <h3>{item.title}</h3>
@@ -504,7 +517,7 @@ export default function Transportation() {
               {/* Normal Image */}
               <img
                 src={imageSrc}
-                alt="Sample"
+                alt="chennai transmit"
                 className="w-64 small h-64 object-cover rounded-2xl cursor-pointer shadow hover:scale-105 transition-transform"
                 onClick={() => setIsOpen(true)}
               />
@@ -533,7 +546,7 @@ export default function Transportation() {
                     >
                       <img
                         src={imageSrc}
-                        alt="Popup"
+                        alt="chennai transmit"
                         className="w-full h-auto rounded-xl mb-4"
                       />
                       {/* New Section Below Image */}
@@ -606,7 +619,7 @@ export default function Transportation() {
           >
             <div className="clcscrlCol clcscrlLft relative">
               <div className="clcscrlinLBox sticky top-0">
-                <img src={section.image} alt={section.sectionTitle} />
+                <img src={section.image} alt={section.imgAlt} />
                 <div className="clcscrLtitle bg-[#682865] relative">
                   <h2 className="flex flex-col text-white">
                     <small>{section.sectionTitle}</small>
@@ -620,7 +633,7 @@ export default function Transportation() {
                 {section.benefits.map((item) => (
                   <div key={item.id} className="clcboxItemss flex">
                     <div className="clcboxIImg">
-                      <img src={item.imgs} alt={item.title} />
+                      <img src={item.imgs} alt={item.imgAlt} />
                     </div>
                     <div className="clcboxICont">
                       <h3>{item.title}</h3>

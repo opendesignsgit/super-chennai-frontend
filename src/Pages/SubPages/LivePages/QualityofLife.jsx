@@ -178,67 +178,10 @@ const benefitSections1 = [
   },
 ];
 
-const images = [
-  {
-    src: "/images/Live-Images/Cost-of-living.jpg",
-    title: "Cost-of-Living",
-    link: "/live/cost-of-living-in-chennai",
-  },
-  {
-    src: "/images/Live-Images/Residency.jpg",
-    title: "Residency",
-    link: "/live/residential-properties-in-chennai",
-  },
-  {
-    src: "/images/Live-Images/Employment.jpg",
-    title: "Employment",
-    link: "/live/employment-in-chennai",
-  },
-  {
-    src: "/images/Live-Images/chennaiLifeEssential4.png",
-    title: "Transportation",
-    link: "/live/transportation-in-chennai",
-  },
-  {
-    src: "/images/Live-Images/Healthcare-banner.jpg",
-    title: "Healthcare",
-    link: "/live/healthcare-in-chennai",
-  },
-  {
-    src: "/images/Live-Images/Culture-Religious-Attractions.jpg",
-    title: "Culture Religious",
-    link: "/live/worship-in-chennai",
-  },
-  {
-    src: "/images/Live-Images/Recreation.jpg",
-    title: "Recreation",
-    link: "/visit/things-to-do-in-chennai",
-  },
-  {
-    src: "/images/Live-Images/Neighbourhood.jpg",
-    title: "Neighbourhood",
-    link: "/live/places-near-chennai",
-  },
-  {
-    src: "/images/Live-Images/Quality-of-Life.jpg",
-    title: "Quality of Life",
-    link: "/live/quality-of-life-in-chennai",
-  },
-  {
-    src: "/images/Live-Images/Future-Growth-&-Development.jpg",
-    title: "Future Growth & Development",
-    link: "/live/infrastructure-development-in-chennai",
-  },
-  {
-    src: "/images/Live-Images/Educational-Institutions.jpg",
-    title: "Educational Insitiutions",
-    link: "/live/educational-institutions-in-chennai",
-  },
-];
-
 const sections = [
   {
     image: "/images/Live-Images/SubPages/Cost-Effective Living.jpg", // or imported image
+    imgAlt: "cost effective living",
     title: "Cost-Effective Living",
     title1: "",
     description:
@@ -248,6 +191,7 @@ const sections = [
   },
   {
     image: "/images/Live-Images/SubPages/World-Class Healthcare.jpg",
+    imgAlt: "healthcare in chennai",
     title: "World-Class Healthcare",
     title1: "Healthcare in Chennai:",
     description:
@@ -257,6 +201,7 @@ const sections = [
   },
   {
     image: "/images/Live-Images/SubPages/Premier Education Ecosystem.jpg",
+    imgAlt: "education ecosystem",
     title: "Premier Education Ecosystem",
     title1: "",
     description:
@@ -266,6 +211,7 @@ const sections = [
   },
   {
     image: "/images/Live-Images/SubPages/Safe & Inclusive Environment.jpg",
+    imgAlt: "chennai environment",
     title: "Safe & Inclusive Environment",
     title1: "Community-first and culturally respectful:",
     description:
@@ -275,6 +221,7 @@ const sections = [
   },
   {
     image: "/images/Live-Images/SubPages/Seamless Urban Mobility.jpg",
+    imgAlt: "urban mobility",
     title: "Seamless Urban Mobility",
     title1: "Move freely, live fully:",
     description:
@@ -284,6 +231,7 @@ const sections = [
   },
   {
     image: "/images/Live-Images/SubPages/Coastal Climate & Clean Air.jpg",
+    imgAlt: "chennai climate clean",
     title: "Coastal Climate & Clean Air",
     title1: "Where sea breeze meets city life:",
     description:
@@ -293,6 +241,7 @@ const sections = [
   },
   {
     image: "/images/Live-Images/SubPages/Cultural Depth & Community Warmth.jpg",
+    imgAlt: "community in chennai",
     title: "Cultural Depth & Community Warmth",
     title1: "Chennai culture:",
     description:
@@ -373,7 +322,10 @@ export default function QualityofLife() {
     <>
       <Helmet>
         <title>Exploring the Quality of Life in Chennai | Super Chennai</title>
-        <meta name="description" content="Understand the quality of life in Chennai with Super Chennai – insights on housing, healthcare, jobs, education, & lifestyle that define the city’s living standards." />
+        <meta
+          name="description"
+          content="Understand the quality of life in Chennai with Super Chennai – insights on housing, healthcare, jobs, education, & lifestyle that define the city’s living standards."
+        />
         <link rel="canonical" href="/quality-of-life-in-chennai" />
       </Helmet>
       <div>
@@ -381,7 +333,7 @@ export default function QualityofLife() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Live-Images/SubPages/Quality-of-Life-banner.jpg"
-            alt=""
+            alt="chennai quality life"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -523,7 +475,7 @@ export default function QualityofLife() {
                 <div className="lg:w-1/2 w-full h-[300px] lg:h-auto">
                   <img
                     src={section.image}
-                    alt={section.title}
+                    alt={section.imgAlt}
                     className="w-full h-full object-cover"
                   />
                 </div>

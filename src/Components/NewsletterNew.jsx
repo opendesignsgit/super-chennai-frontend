@@ -80,7 +80,7 @@ export default function NewsletterForm() {
             <div className="flex flex-col items-center text-center">
               <img
                 src="/images/HomePage-Images/Superchennai.png"
-                alt="Logo"
+                alt="Super Chennai"
                 className="w-18 mb-3"
               />
               <h2 className="text-xl font-bold">Super Chennai's Newsletter</h2>

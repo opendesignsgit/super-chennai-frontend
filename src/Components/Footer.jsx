@@ -764,34 +764,34 @@ const Footer = () => {
                   href="https://www.linkedin.com/company/super-chennai"
                   target="_blank"
                 >
-                  <img src="/images/Indeed.png" alt="" />
+                  <img src="/images/Indeed.png" alt="Linkedin" />
                 </a>
                 <a
                   href="https://www.instagram.com/super_chennai_/"
                   target="_blank"
                 >
-                  <img src="/images/insta.png" alt="" />
+                  <img src="/images/insta.png" alt="Instagram" />
                 </a>
                 <a
                   href="https://www.facebook.com/share/1Hsb1ypGGE/"
                   target="_blank"
                 >
-                  <img src="/images/fb.png" alt="" />
+                  <img src="/images/fb.png" alt="Facebook" />
                 </a>
                 <a
                   href="https://www.youtube.com/@Super_Chennai"
                   target="_blank"
                 >
-                  <img src="/images/youtube.png" alt="" />
+                  <img src="/images/youtube.png" alt="Youtube" />
                 </a>
                 <a href="https://x.com/Super_Chennai_	" target="_blank">
-                  <img src="/images/threads.png" alt="" />
+                  <img src="/images/threads.png" alt="Twitter" />
                 </a>
               </div>
             </div>
           </div>
           <div className="credaiLogo">
-            <img src="/images/credaiLogo.jpg" alt="" />
+            <img src="/images/credaiLogo.jpg" alt="Credai" />
           </div>
           <div className="copyrights">
             <h5>
@@ -801,7 +801,7 @@ const Footer = () => {
             <div className="designBy">
               <h4>Design By</h4>
               <a href="https://www.opendesignsin.com/" target="_blank">
-                <img src="/images/open-dd-logo.webp" alt="" />
+                <img src="/images/open-dd-logo.webp" alt="Open Designs" />
               </a>
             </div>
           </div>

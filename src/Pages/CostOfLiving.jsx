@@ -226,7 +226,7 @@ export default function CostLivinginChennai() {
         <div>
           <img
             src="/images/Live-Images/SubPages/cost-of-living-banner.jpg"
-            alt=""
+            alt="cost of living in chennai"
           />
         </div>
         <div className="accodoamationBannerContainer">

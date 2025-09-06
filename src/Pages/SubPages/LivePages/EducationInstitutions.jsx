@@ -40,6 +40,7 @@ export default function EducationInstitutions() {
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
       image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      imgAlt:"",
       tenantInfoSections: [
         {
           points: [
@@ -49,6 +50,7 @@ export default function EducationInstitutions() {
                 "Experience and indulge in creamy Carbonara and rich Lasagna, alongside iconic Margherita Pizza in Chennai. Find out these classical Italian flavours at,",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Classic-Italian-Flavors.svg",
+                    imgAlt:"",
               link: "/classicItalianFlavors",
             },
           ],
@@ -61,6 +63,7 @@ export default function EducationInstitutions() {
                 "Experience an amazing tastes of regional delights such as fragrant Pesto Genovese and saffron-infused Risotto alla Milanese in chennai at,",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Regional-Italian-Delights.svg",
+                    imgAlt:"",
               link: "/regionalItalianDelights",
             },
           ],
@@ -498,7 +501,7 @@ export default function EducationInstitutions() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Live-Images/Educational-Institutions-Banner.jpg"
-            alt=""
+            alt="education in chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -588,7 +591,7 @@ export default function EducationInstitutions() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
                     >
                       <div className="imgLeft">
-                        <img src={section.image} alt={section.sectionTitle} />
+                        <img src={section.image} alt={section.imgAlt} />
                       </div>
                       <div className="imgText flex items-center">
                         <div className="imgcolTitle bg-[#682865] relative">
@@ -623,7 +626,7 @@ export default function EducationInstitutions() {
                           {tenant.points.map((item, j) => (
                             <div key={j} className="clcboxItemss flex mb-4" style={{paddingBottom:"0"}}>
                               <div className="clcboxIImg">
-                                <img src={item.imgs} alt={item.title} />
+                                <img src={item.imgs} alt={item.imgAlt} />
                               </div>
                               <div className="clcboxICont">
                                 <h3 className="text-lg font-semibold mb-2">
@@ -762,7 +765,7 @@ export default function EducationInstitutions() {
                           {tenant.points.map((item, j) => (
                             <div key={j} className="clcboxItemss flex mb-4" style={{paddingBottom:"0"}} >
                               <div className="clcboxIImg">
-                                <img src={item.imgs} alt={item.title} />
+                                <img src={item.imgs} alt={item.imgAlt} />
                               </div>
                               <div className="clcboxICont">
                                 <h3 className="text-lg font-semibold mb-2">
@@ -885,7 +888,7 @@ export default function EducationInstitutions() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
                     >
                       <div className="imgLeft">
-                        <img src={section.image} alt={section.sectionTitle} />
+                        <img src={section.image} alt={section.imgAlt} />
                       </div>
                       <div className="imgText flex items-center">
                         <div className="imgcolTitle bg-[#682865] relative">
@@ -968,7 +971,7 @@ export default function EducationInstitutions() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
                     >
                       <div className="imgLeft">
-                        <img src={section.image} alt={section.sectionTitle} />
+                        <img src={section.image} alt={section.imgAlt} />
                       </div>
                       <div className="imgText flex items-center">
                         <div className="imgcolTitle bg-[#682865] relative">
@@ -1051,7 +1054,7 @@ export default function EducationInstitutions() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
                     >
                       <div className="imgLeft">
-                        <img src={section.image} alt={section.sectionTitle} />
+                        <img src={section.image} alt={section.imgAlt} />
                       </div>
                       <div className="imgText flex items-center">
                         <div className="imgcolTitle bg-[#682865] relative">
@@ -1134,7 +1137,7 @@ export default function EducationInstitutions() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
                     >
                       <div className="imgLeft">
-                        <img src={section.image} alt={section.sectionTitle} />
+                        <img src={section.image} alt={section.imgAlt} />
                       </div>
                       <div className="imgText flex items-center">
                         <div className="imgcolTitle bg-[#682865] relative">

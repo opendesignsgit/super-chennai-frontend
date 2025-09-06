@@ -15,6 +15,7 @@ export default function Becameavolunteer() {
       description:
         "You already create — now do it with purpose. Whether you're posting, designing, or sharing, your digital voice can help Chennai go further. Be part of the change — from anywhere.",
       link: "/volunteer-in-chennai",
+      altTag:"Chennai Volunteers"
     },
     {
       image: "/images/Volunteer-Images/BacameAvolunterImage1.png",
@@ -79,7 +80,7 @@ export default function Becameavolunteer() {
                 <motion.img
                   key={slides[currentSlide].image}
                   src={slides[currentSlide].image}
-                  alt=""
+                  alt={slides[currentSlide].altTag}
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -100 }}

@@ -31,18 +31,21 @@ export default function Residency() {
       sectionTitle: "Budget-Friendly Living",
       sectionDesc: "",
       image: "/images/Live-Images/SubPages/Budget-Friendly-Living.jpg",
+      imgAlt: "budget apartments in chennai",
       benefits: [
         {
           id: 1,
           title: "Rent:",
           para: "For those looking for flats for rent in Chennai, areas like Tambaram, Medavakkam, and West Mambalam offer a great balance of affordability and connectivity. These neighborhoods are especially popular among students, young professionals, and families just getting started.",
           imgs: "/images/Live-Images/SubPages/Icons/rent.svg",
+          imgAlt: "rent in chennai",
         },
         {
           id: 2,
           title: "Purchase:",
           para: "If you're planning to buy apartments in Chennai, fast-developing locations like Chrompet, Madhavaram, OMR, and Porur provide promising investment potential with solid infrastructure growth, ideal for first-time buyers and long-term investors alike.",
           imgs: "/images/Live-Images/SubPages/Icons/Purchase.svg",
+          imgAlt: "purchase in chennai",
         },
       ],
       tenantInfoSections: [
@@ -68,25 +71,27 @@ export default function Residency() {
         },
       ],
     },
-
   ];
   const benefitSections1 = [
     {
       sectionTitle: " Mid-Range Living",
       sectionDesc: "",
       image: "/images/Live-Images/SubPages/Mid-Range-Living.jpg",
+      imgAlt: "mid range in chennai",
       benefits: [
         {
           id: 1,
           title: "Rent:",
           para: "For those seeking well-connected and comfortable apartments for rent in Chennai, areas like T. Nagar and Mylapore offer just the right mix of city buzz and residential calm. With access to schools, shopping, and transport, these neighborhoods suit both families and professionals.",
           imgs: "/images/Live-Images/SubPages/Icons/Purchase.svg",
+          imgAlt: "purchase in chennai",
         },
         {
           id: 2,
           title: "Purchase:",
           para: "Planning to buy flats in Chennai? Mid-range zones like Velachery and Vadapalani offer homes in gated communities with lifestyle amenities—ideal for those upgrading their space or settling down in a dynamic yet grounded environment.",
           imgs: "/images/Live-Images/SubPages/Icons/Purchase.svg",
+          imgAlt: "purchase in chennai",
         },
       ],
       tenantInfoSections: [
@@ -118,18 +123,21 @@ export default function Residency() {
       sectionTitle: "Premium Living",
       sectionDesc: "",
       image: "/images/Live-Images/SubPages/Premium-Living.jpg",
+      imgAlt: "premium living in chennai",
       benefits: [
         {
           id: 1,
           title: "Rent:",
           para: "From Anna Nagar and Nungambakkam to Adyar, Thiruvanmiyur, and Poes Garden, discover a curated selection of premium apartments for rent in Chennai that blend elegance, comfort, and privacy. Ideal for CXOs, expats, and dignitaries, these upscale residences are located in some of the city's most prestigious and well-connected neighbourhoods.",
           imgs: "/images/Live-Images/SubPages/Icons/Purchase.svg",
+          imgAlt: "purchase in chennai",
         },
         {
           id: 2,
           title: "Purchase:",
           para: "Looking to buy luxury villas in Chennai? Explore elite addresses along OMR, Boat Club Road, and the scenic ECR coastline—where sea-facing homes, gated estates, and architecturally designed villas deliver a lifestyle defined by exclusivity, indulgent amenities, and timeless sophistication.",
           imgs: "/images/Live-Images/SubPages/Icons/Purchase.svg",
+          imgAlt: "purchase in chennai",
         },
       ],
       tenantInfoSections: [
@@ -298,9 +306,7 @@ export default function Residency() {
         <title>
           {/* Super Chennai | Properties to Buy or Rent in Chennai */}
           Residential properties in Chennai - Super Chennai
-
-          
-          </title>
+        </title>
         <meta
           name="description"
           content="Super Chennai provides insights on residential property in Chennai, highlighting market updates, local trends, and factors that guide smart housing choices."
@@ -310,12 +316,16 @@ export default function Residency() {
       <div className="residencyPage">
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
-          <img src="/images/Live-Images/SubPages/Residency-banner.jpg" alt="" />
+          <img
+            src="/images/Live-Images/SubPages/Residency-banner.jpg"
+            alt="residency in chennai"
+          />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
               <h3>Residency </h3>
               <div className="breadCrum">
-                <Link to="/live-in-chennai"> Live </Link> - <a href="">Residency </a>
+                <Link to="/live-in-chennai"> Live </Link> -{" "}
+                <a href="">Residency </a>
               </div>
             </div>
           </div>
@@ -398,7 +408,7 @@ export default function Residency() {
           >
             <div className="clcscrlCol clcscrlLft relative">
               <div className="clcscrlinLBox sticky top-0">
-                <img src={section.image} alt={section.sectionTitle} />
+                <img src={section.image} alt={section.imgAlt} />
                 <div className="clcscrLtitle bg-[#682865] relative">
                   <h2 className="flex flex-col text-white">
                     <small>{section.sectionTitle}</small>
@@ -412,7 +422,7 @@ export default function Residency() {
                 {section.benefits.map((item) => (
                   <div key={item.id} className="clcboxItemss flex">
                     <div className="clcboxIImg">
-                      <img src={item.imgs} alt={item.title} />
+                      <img src={item.imgs} alt={item.imgAlt} />
                     </div>
                     <div className="clcboxICont">
                       <h3>{item.title}</h3>
@@ -441,7 +451,7 @@ export default function Residency() {
           >
             <div className="clcscrlCol clcscrlLft relative">
               <div className="clcscrlinLBox sticky top-0">
-                <img src={section.image} alt={section.sectionTitle} />
+                <img src={section.image} alt={section.imgAlt} />
                 <div className="clcscrLtitle bg-[#682865] relative">
                   <h2 className="flex flex-col text-white">
                     <small>{section.sectionTitle}</small>
@@ -455,7 +465,7 @@ export default function Residency() {
                 {section.benefits.map((item) => (
                   <div key={item.id} className="clcboxItemss flex">
                     <div className="clcboxIImg">
-                      <img src={item.imgs} alt={item.title} />
+                      <img src={item.imgs} alt={item.imgAlt} />
                     </div>
                     <div className="clcboxICont">
                       <h3>{item.title}</h3>
@@ -483,7 +493,7 @@ export default function Residency() {
           >
             <div className="clcscrlCol clcscrlLft relative">
               <div className="clcscrlinLBox sticky top-0">
-                <img src={section.image} alt={section.sectionTitle} />
+                <img src={section.image} alt={section.imgAlt} />
                 <div className="clcscrLtitle bg-[#682865] relative">
                   <h2 className="flex flex-col text-white">
                     <small>{section.sectionTitle}</small>
@@ -497,7 +507,7 @@ export default function Residency() {
                 {section.benefits.map((item) => (
                   <div key={item.id} className="clcboxItemss flex">
                     <div className="clcboxIImg">
-                      <img src={item.imgs} alt={item.title} />
+                      <img src={item.imgs} alt={item.imgAlt} />
                     </div>
                     <div className="clcboxICont">
                       <h3>{item.title}</h3>
@@ -530,7 +540,7 @@ export default function Residency() {
             className="imgcontent flex flex-wrap justify-center transition-colors duration-300"
           >
             <div className="imgLeft">
-              <img src={section.image} alt={section.sectionTitle} />
+              <img src={section.image} alt={section.imgAlt} />
             </div>
             <div className="imgText flex items-center">
               <div className="imgcolTitle bg-[#682865] relative">
@@ -548,7 +558,7 @@ export default function Residency() {
                   {tenant.points.map((item, j) => (
                     <div key={j} className="clcboxItemss flex mb-4">
                       <div className="clcboxIImg">
-                        <img src={item.imgs} alt={item.title} />
+                        <img src={item.imgs} alt={item.imgAlt} />
                       </div>
                       <div className="clcboxICont">
                         <h3>{item.title}</h3>
@@ -568,9 +578,8 @@ export default function Residency() {
 
         {/*--------------- Explore More Chennai----------------- */}
 
-        <LiveSlider/>
+        <LiveSlider />
 
-      
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

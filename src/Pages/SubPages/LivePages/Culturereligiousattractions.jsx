@@ -1482,7 +1482,7 @@ export default function Culturereligiousattractions() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Live-Images/SubPages/Culture-Religious-Attractions-banner.jpg"
-            alt=""
+            alt="chennai culture"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">

@@ -41,24 +41,28 @@ export default function FutureGrowthDevelopment() {
           title: "Compact Urban Design",
           para: " The strategy encourages more compact, mixed-use projects to minimize sprawl, enhance walkability, and maximize infrastructure use throughout the metropolitan region. ",
           imgs: "/images/Live-Images/SubPages/Icons/Compact-Urban-Design.svg",
+          imgAlt: "chennai urban life ",
         },
         {
           id: 2,
           title: "Sustainable City Growth",
           para: " Incorporating green infrastructure, renewable energy, and resource efficiency is key to promoting environmentally sustainable and resilient urban development in Chennai. ",
           imgs: "/images/Live-Images/SubPages/Icons/Sustainable-City-Growth.svg",
+          imgAlt: "sustainable city planning",
         },
         {
           id: 3,
           title: "Infrastructure Improvement ",
           para: "Major investments in metro growth, roadway systems, and utility infrastructure are designed to boost connectivity, alleviate congestion, and improve living standards. ",
           imgs: "/images/Live-Images/SubPages/Icons/Infrastructure-Improvement.svg",
+          imgAlt: "chennai infrastructure development",
         },
         {
           id: 4,
           title: "Participation of Stakeholders",
           para: " The participation of citizens, specialists, and diverse organizations is vital in developing the Third Master Plan and guaranteeing its effective execution. ",
           imgs: "/images/Live-Images/SubPages/Icons/Participation-of-Stakeholders.svg",
+          imgAlt: "stakeholders in chennai",
         },
       ],
     },
@@ -68,18 +72,21 @@ export default function FutureGrowthDevelopment() {
         " Comprehensive metro development initiatives seek to improve Chennai's connectivity, with Phase II currently in progress and additional expansions intended to reach wider regions. ",
       label: "Chennai Metro",
       image: "/images/Live-Images/SubPages/Expansion-of-chennai-metro.jpg",
+      imgAlt: "chennai metro expansion",
       benefits: [
         {
           id: 1,
           title: "Stage II",
           para: "Presently in development, Phase II introduces additional lines and stations, greatly enhancing the metro system throughout different areas of the city. ",
           imgs: "/images/Live-Images/SubPages/Icons/Stage-II.svg",
+          imgAlt: "metro chennai",
         },
         {
           id: 2,
           title: "Prospective Growth ",
           para: "Additional expansions are intended to link more locations, such as the airport and significant suburban areas, enhancing overall urban transportation. ",
           imgs: "/images/Live-Images/SubPages/Icons/Prospective-Growth.svg",
+          imgAlt: "future green cities",
         },
       ],
     },
@@ -89,24 +96,28 @@ export default function FutureGrowthDevelopment() {
         " A new greenfield airport is planned near Parandur to accommodate the increasing air traffic of the Chennai Metropolitan Area as an additional hub. ",
       label: "Greenfield Airstrip",
       image: "/images/Live-Images/SubPages/Greenfield-Airstrip.jpg",
+      imgAlt: "top growing cities in india",
       benefits: [
         {
           id: 1,
           title: "Placement",
           para: "The planned airport will be situated close to Parandur in the Kanchipuram district, around 70 kilometers away from the current airport. ",
           imgs: "/images/Live-Images/SubPages/Icons/Placement.svg",
+          imgAlt: "",
         },
         {
           id: 2,
           title: "Ability",
           para: " The newly designed airport is intended to have a considerable capacity for passenger handling to meet the upcoming air travel requirements in the area. ",
           imgs: "/images/Live-Images/SubPages/Icons/Ability.svg",
+          imgAlt: "chennai ability",
         },
         {
           id: 3,
           title: "Connection",
           para: " Enhanced access to the airport is expected via road and metro rail expansions to facilitate smooth travel for travelers. ",
           imgs: "/images/Live-Images/SubPages/Icons/Connection.svg",
+          imgAlt: "chennai connections",
         },
       ],
     },
@@ -116,24 +127,28 @@ export default function FutureGrowthDevelopment() {
         " Several smart city initiatives are being implemented in Chennai, emphasizing technology-based solutions to enhance urban living and promote sustainability.  ",
       label: "Smart City",
       image: "/images/Live-Images/SubPages/Chennai-Smart-City-Projects.jpg",
+      imgAlt: "chennai smart city",
       benefits: [
         {
           id: 1,
           title: "Intelligent Transportation ",
           para: "Efforts comprise smart traffic control, enhanced public transportation systems, and encouragement of non-motorized transport alternatives. ",
           imgs: "/images/Live-Images/SubPages/Icons/Intelligent-Transportation.svg",
+          imgAlt: "intelligent transportation",
         },
         {
           id: 2,
           title: "Intelligent Water Administration ",
           para: " Initiatives emphasize effective water allocation, sewage management, and conservation via technological advancements and infrastructure improvements. ",
           imgs: "/images/Live-Images/SubPages/Icons/Intelligent-Water-Administration.svg",
+          imgAlt: "intelligent water administration",
         },
         {
           id: 3,
           title: "Intelligent Setting ",
           para: " Initiatives seek to expand green areas, enhance waste disposal methods, and encourage sustainable energy consumption throughout the city. ",
           imgs: "/images/Live-Images/SubPages/Icons/Intelligent-Setting.svg",
+          imgAlt: "chennai intelligent setting",
         },
       ],
     },
@@ -144,24 +159,28 @@ export default function FutureGrowthDevelopment() {
       label: "IT Investment",
       image:
         "/images/Live-Images/SubPages/Chennai-IT-Investment-Area (ITIR).jpg",
+      imgAlt: "chennai it investment",
       benefits: [
         {
           id: 1,
           title: "Region ",
           para: " The suggested ITIR encompasses a vast region to the southwest of Chennai, strategically positioned between the IT corridor and national roads.  ",
           imgs: "/images/Live-Images/SubPages/Icons/Region.svg",
+          imgAlt: "region in chennai",
         },
         {
           id: 2,
           title: "Framework ",
           para: "The strategy encompasses major funding for road, rail, and air connections, along with utilities and social infrastructure in the area.  ",
           imgs: "/images/Live-Images/SubPages/Icons/Framework.svg",
+          imgAlt: "framworks in chennai",
         },
         {
           id: 3,
           title: "Connection",
           para: " Improved connectivity is a primary emphasis, connecting the ITIR with Chennai, major roadways, and possibly a new airport to support commerce and travel.  ",
           imgs: "/images/Live-Images/SubPages/Icons/Connection-1.svg",
+          imgAlt: "connection chennai",
         },
       ],
     },
@@ -230,6 +249,7 @@ export default function FutureGrowthDevelopment() {
       titleText: "Education & Talent — Foundations for Chennai 2030",
       firstSectionimage:
         "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop&crop=faces",
+      imgAlt: "",
       firstSectionContent:
         "The future of Chennai development relies on a skilled, globally competitive workforce. Education reforms and skilling programs are central to both Chennai 2030 and Chennai 2040 ambitions.",
       firstSectionPara: [
@@ -576,7 +596,7 @@ export default function FutureGrowthDevelopment() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Live-Images/SubPages/Future-Growth-&-Development-banner.jpg"
-            alt=""
+            alt="top growing cities in india"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -640,7 +660,7 @@ export default function FutureGrowthDevelopment() {
           >
             <div className="clcscrlCol clcscrlLft relative">
               <div className="clcscrlinLBox sticky top-0">
-                <img src={section.image} alt={section.sectionTitle} />
+                <img src={section.image} alt={section.imgAlt} />
                 <div className="clcscrLtitle bg-[#682865] relative">
                   <h2 className="flex flex-col text-white">
                     <small>{section.sectionTitle}</small>
@@ -654,7 +674,7 @@ export default function FutureGrowthDevelopment() {
                 {section.benefits.map((item) => (
                   <div key={item.id} className="clcboxItemss flex">
                     <div className="clcboxIImg">
-                      <img src={item.imgs} alt={item.title} />
+                      <img src={item.imgs} alt={item.imgAlt} />
                     </div>
                     <div className="clcboxICont">
                       <h3>{item.title}</h3>
@@ -663,7 +683,7 @@ export default function FutureGrowthDevelopment() {
                         <a href="#">
                           <img
                             src="/images/Live-Images/SubPages/LinkArrowRightIcon.svg"
-                            alt=""
+                            alt="Right Arrow"
                           />
                         </a>
                       </p>

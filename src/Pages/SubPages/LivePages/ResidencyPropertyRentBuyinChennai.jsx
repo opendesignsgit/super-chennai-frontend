@@ -295,7 +295,7 @@ export default function ResidencyPropertyRentBuyinChennai() {
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
-          <img src="/images/Live-Images/SubPages/Residency-banner.jpg" alt="" />
+          <img src="/images/Live-Images/SubPages/Residency-banner.jpg" alt="residency in chennai" />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
               <h3>Residency </h3>

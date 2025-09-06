@@ -33,10 +33,15 @@ export default function ReimagineChennai() {
         <section className="accaodomationBannerSection">
           <div>
             <img
-              className="eventsCalenderIamge"
+              className="eventsCalenderIamge reimagineDekstop"
               src="/images/banner-ai.jpg"
               alt=""
-            />{" "}
+            />
+            <img
+              className="eventsCalenderIamge reimagineMobile"
+              src="/images/banner-ai-1.jpg"
+              alt=""
+            />
           </div>
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -94,7 +99,16 @@ export default function ReimagineChennai() {
                     <li>Open to Chennai enthusiasts across India</li>
                     <li>Submit up to 3 pieces that blend soul with artistry</li>
                     <li>Deadline: September 30th</li>
-                    <li>Send entries to: <a style={{color:"#0000EE"}} href="mailto:hello@superchennai.com"> hello@superchennai.com</a></li>
+                    <li>
+                      Send entries to:{" "}
+                      <a
+                        style={{ color: "#0000EE" }}
+                        href="mailto:hello@superchennai.com"
+                      >
+                        {" "}
+                        hello@superchennai.com
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </p>
@@ -123,7 +137,6 @@ export default function ReimagineChennai() {
                   is waiting for your brushstrokes.
                 </p>
               </p>
-          
             </div>
           </div>
         </div>

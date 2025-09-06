@@ -536,35 +536,35 @@ function App() {
             target="_blank"
             href="https://www.linkedin.com/company/super-chennai"
           >
-            <img src="/images/Indeed.png" alt="" />
+            <img src="/images/Indeed.png" alt="Linkedin" />
           </a>
           <a
             className="instargam-sc"
             target="_blank"
             href="https://www.instagram.com/super_chennai_/"
           >
-            <img src="/images/insta.png" alt="" />
+            <img src="/images/insta.png" alt="Instagram" />
           </a>
           <a
             className="facebook-sc"
             target="_blank"
             href="https://www.facebook.com/share/1Hsb1ypGGE/"
           >
-            <img src="/images/fb.png" alt="" />
+            <img src="/images/fb.png" alt="Facebook" />
           </a>
           <a
             className="youtube-sc"
             target="_blank"
             href="https://www.youtube.com/@Super_Chennai"
           >
-            <img src="/images/youtube.png" alt="" />
+            <img src="/images/youtube.png" alt="Youtube" />
           </a>
           <a
             className="threads-sc"
             target="_blank"
             href="https://x.com/Super_Chennai_	"
           >
-            <img src="/images/threads.png" alt="" />
+            <img src="/images/threads.png" alt="Twitter" />
           </a>
         </div>
         {/* Sticky Icons */}
@@ -606,7 +606,7 @@ function App() {
           // className="stickyIconsContainer"
         >
           <a target="_blank" href="https://pointcast.com/demo/SuperChennai">
-            <img src="/images/pointcast-icon.svg" alt="" />
+            <img src="/images/pointcast-icon.svg" alt="explore chennai" />
           </a>
         </div>
         {/* pointcostSticky start */}

@@ -30,9 +30,11 @@ export default function Living() {
   const imageSections = [
     {
       sectionTitle: "Living",
+      sectionImageAlt: "living in chennai",
       sectionDesc:
         "Chennai offers a broad range of living options—from spacious family homes to semi/fully furnished apartments and compact studio apartments in Chennai. Whether you're moving solo, as a couple, or with a family, you'll find housing that suits your needs, lifestyle, and budget.",
       image: "/images/Visit-Images/SubPages/living.jpg",
+      imageAlt: "food in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -43,6 +45,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Singles.svg",
               link: "/classicItalianFlavors",
+              altTitle: "",
             },
           ],
         },
@@ -55,6 +58,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Couples.svg",
               link: "/regionalItalianDelights",
+              altTitle: "couples in chennai",
             },
           ],
         },
@@ -67,6 +71,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Families.svg",
               link: "/regionalItalianDelights",
+              altTitle: "chennai city life",
             },
           ],
         },
@@ -90,6 +95,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Singles.svg",
               link: "/classicItalianFlavors",
+              altTitle: "",
             },
           ],
         },
@@ -102,6 +108,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Couples.svg",
               link: "/regionalItalianDelights",
+              altTitle: "couples in chennai",
             },
           ],
         },
@@ -114,6 +121,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Families.svg",
               link: "/regionalItalianDelights",
+              altTitle: "chennai city life",
             },
           ],
         },
@@ -136,6 +144,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Singles.svg",
               link: "/classicItalianFlavors",
+              altTitle: "",
             },
           ],
         },
@@ -148,6 +157,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Couples.svg",
               link: "/regionalItalianDelights",
+              altTitle: "couples in chennai",
             },
           ],
         },
@@ -160,6 +170,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Families.svg",
               link: "/regionalItalianDelights",
+              altTitle: "chennai city life",
             },
           ],
         },
@@ -183,6 +194,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Singles.svg",
               link: "/classicItalianFlavors",
+              altTitle: "chennai utilities",
             },
           ],
         },
@@ -195,6 +207,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Couples.svg",
               link: "/regionalItalianDelights",
+              altTitle: "couples in chennai",
             },
           ],
         },
@@ -207,6 +220,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Families.svg",
               link: "/regionalItalianDelights",
+              altTitle: "chennai city life",
             },
           ],
         },
@@ -220,6 +234,7 @@ export default function Living() {
       sectionDesc:
         "Chennai’s shopping scene reflects its diversity — from global brands in high-end malls to traditional silk saris in T. Nagar and fast fashion in Pondy Bazaar.",
       image: "/images/Visit-Images/SubPages/clothing-&-fashion.jpg",
+      imageAlt: "clothing in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -230,6 +245,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Singles.svg",
               link: "/classicItalianFlavors",
+              altTitle: "",
             },
           ],
         },
@@ -242,6 +258,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Couples.svg",
               link: "/regionalItalianDelights",
+              altTitle: "couples in chennai",
             },
           ],
         },
@@ -254,6 +271,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Families.svg",
               link: "/regionalItalianDelights",
+              altTitle: "chennai city life",
             },
           ],
         },
@@ -267,6 +285,7 @@ export default function Living() {
       sectionDesc:
         "Chennai is a paradise for food lovers — rich in heritage, bold in flavor, and open to global influences. Every budget and preference finds a place at the table with options ranging from local eateries to global dining experiences.",
       image: "/images/Visit-Images/SubPages/food-&-dining.jpg",
+      imageAlt: "food in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -277,6 +296,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Singles.svg",
               link: "/classicItalianFlavors",
+              altTitle: "",
             },
           ],
         },
@@ -289,6 +309,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Couples.svg",
               link: "/regionalItalianDelights",
+              altTitle: "couples in chennai",
             },
           ],
         },
@@ -301,6 +322,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Families.svg",
               link: "/regionalItalianDelights",
+              altTitle: "chennai city life",
             },
           ],
         },
@@ -314,6 +336,7 @@ export default function Living() {
       sectionDesc:
         "Chennai beautifully blends cultural richness with modern-day leisure. From laid-back evenings by the beaches in Chennai to family fun at popular amusement parks in Chennai, the city promises something enjoyable for everyone.",
       image: "/images/Visit-Images/SubPages/entertainment-&-recreation.jpg",
+      imageAlt: "chennai entertainment",
       tenantInfoSections: [
         {
           points: [
@@ -324,6 +347,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Singles.svg",
               link: "/classicItalianFlavors",
+              altTitle: "",
             },
           ],
         },
@@ -336,6 +360,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Couples.svg",
               link: "/regionalItalianDelights",
+              altTitle: "couples in chennai",
             },
           ],
         },
@@ -348,6 +373,7 @@ export default function Living() {
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/For-Families.svg",
               link: "/regionalItalianDelights",
+              altTitle: "chennai city life",
             },
           ],
         },
@@ -793,14 +819,15 @@ export default function Living() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Live-Images/SubPages/cost-of-living-banner.jpg"
-            alt=""
+            alt="cost of living in chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
               <h3>Cost of Living </h3>
               <div className="breadCrum">
-                <Link to="/live-in-chennai"> Home </Link> - <Link to="/live-in-chennai"> Live </Link>{" "}
-                - <a href="">Cost of Living </a>
+                <Link to="/live-in-chennai"> Home </Link> -{" "}
+                <Link to="/live-in-chennai"> Live </Link> -{" "}
+                <a href="">Cost of Living </a>
               </div>
             </div>
           </div>
@@ -889,7 +916,7 @@ export default function Living() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.imageAlt} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -949,7 +976,7 @@ export default function Living() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.altTitle} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>
@@ -979,7 +1006,7 @@ export default function Living() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.altTitle} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -1039,7 +1066,7 @@ export default function Living() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.altTitle} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>
@@ -1069,7 +1096,7 @@ export default function Living() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.altTitle} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -1129,7 +1156,7 @@ export default function Living() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.altTitle} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>
@@ -1159,7 +1186,7 @@ export default function Living() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.altTitle} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -1219,7 +1246,7 @@ export default function Living() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.altTitle} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>
@@ -1249,7 +1276,7 @@ export default function Living() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.imageAlt} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -1309,7 +1336,7 @@ export default function Living() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.altTitle} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>
@@ -1339,7 +1366,7 @@ export default function Living() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.altTitle} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -1399,7 +1426,7 @@ export default function Living() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.altTitle} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>
@@ -1429,7 +1456,7 @@ export default function Living() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.imageAlt} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -1489,7 +1516,7 @@ export default function Living() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.altTitle} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>
@@ -1561,7 +1588,7 @@ export default function Living() {
               </div>
             </div>
           </div> */}
-          <LiveSlider/>
+          <LiveSlider />
         </div>
 
         {/*--------------- Explore More Chennai----------------- */}

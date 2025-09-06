@@ -36,6 +36,7 @@ export default function Volunteer() {
       image: "/images/Volunteer-Images/BacameAvolunterImage0.png",
       linkText: "Enquire Now",
       linkUrl: "/digital",
+      altTag: "Chennai Volunteers",
     },
     {
       title: "EVENTS",
@@ -303,7 +304,7 @@ export default function Volunteer() {
               <div className="DigitalSectionFLex" key={index}>
                 {index % 2 === 0 ? (
                   <>
-                    <img src={section.image} alt={section.title} />
+                    <img src={section.image} alt={section.altTag} />
                     <div className="BecamaAVolunterContentsSection">
                       <h3>{section.title}</h3>
                       <p>{section.description}</p>
@@ -325,7 +326,7 @@ export default function Volunteer() {
                         </a>
                       </div>
                     </div>
-                    <img src={section.image} alt={section.title} />
+                    <img src={section.image} alt={section.altTag} />
                   </>
                 )}
               </div>

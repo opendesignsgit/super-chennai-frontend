@@ -6,56 +6,67 @@ export default function VisitSlider() {
   const images = [
     {
       src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
+      imgAlt: "accomodations in chennai",
       title: "Accommodation",
       link: "/visit/hotel-accommodation-in-chennai",
     },
     {
       src: "/images/Visit-Images/SubPages/restaurants-slide.jpg",
+      imgAlt: "restaurants in chennai",
       title: "Restaurants",
       link: "/visit/restaurants-in-chennai",
     },
     {
       src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
+      imgAlt: "places to visit in chennai",
       title: "Places to Visit",
       link: "/visit/places-to-visit-in-chennai",
     },
     {
       src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
+      imgAlt: "things to do in chennai",
       title: "Things to Do",
       link: "/visit/things-to-do-in-chennai",
     },
     {
       src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
+      imgAlt: "chennai itinerary",
       title: "Itinerary",
       link: "/visit/chennai-itinerary",
     },
     {
       src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
+      imgAlt: "hidden gems in chennai",
       title: "Hidden Gems",
       link: "/visit/hidden-places-in-chennai",
     },
     {
       src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
+      imgAlt: "shopping in chennai",
       title: "Shopping",
       link: "/visit/shopping-areas-in-chennai",
     },
     {
       src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
+      imgAlt: "chennai travel tips",
       title: "Travel Tips",
       link: "/visit/travels-chennai",
     },
     {
       src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
+      imgAlt: "wellness centers in chennai",
       title: "Wellness ",
       link: "/visit/wellness-centres-in-chennai",
     },
     {
       src: "/images/Visit-Images/SubPages/events-slide.jpg",
+      imgAlt: "events in chennai",
       title: "Events ",
       link: "/visit/events-in-chennai",
     },
     {
       src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
+      imgAlt: "conference in chennai",
       title: "Conferences ",
       link: "/visit/conferences-in-chennai",
     },
@@ -123,7 +134,7 @@ export default function VisitSlider() {
                     >
                       <img
                         src={img.src}
-                        alt={`Slide ${index + 1}`}
+                        alt={img.imgAlt}
                         style={{
                           width: "100%",
                           height: "auto",

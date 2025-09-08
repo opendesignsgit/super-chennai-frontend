@@ -31,6 +31,7 @@ export default function Placestovisit() {
       sectionDesc:
         " Experience the vibrant energy of Chennai, a city that is always changing.",
       image: "/images/Visit-Images/SubPages/modern-vibrancy.jpg",
+      imgAlt: "concert in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -40,6 +41,7 @@ export default function Placestovisit() {
                 "Take in the vibrant ambiance, stroll along the lengthy beach, and see the busy local life.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Urban-Beaches.svg",
+              imgAlt: "beach in chennai",
               link: "/visit-placetovisit-urban-beaches",
             },
           ],
@@ -52,6 +54,7 @@ export default function Placestovisit() {
                 "Enjoy a variety of culinary options, entertainment, and retail therapy at the city's modern centers.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Modern-Malls.svg",
+              imgAlt: "malls in chennai",
               link: "/visit/place-to-visit/malls-in-chennai",
             },
           ],
@@ -64,6 +67,7 @@ export default function Placestovisit() {
                 "In exquisitely designed urban oasis, discover peace amid a variety of plants and luxuriant foliage.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Botanical-Gardens-Poongas.svg",
+              imgAlt: "botanical garden in chennai",
               link: "/visit/place-to-visit/botanical-gardens-in-chennai",
             },
           ],
@@ -75,6 +79,7 @@ export default function Placestovisit() {
       sectionDesc:
         "Visit Chennai's creative heart, where innovation flourishes in many forms.",
       image: "/images/Visit-Images/SubPages/canvas-of-culture.jpg",
+      imgAlt: "chennai traditional",
       tenantInfoSections: [
         {
           points: [
@@ -84,6 +89,7 @@ export default function Placestovisit() {
                 " Take in the mesmerizing performances of traditional art, which preserve India's rich cultural heritage.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Cultural-Foundations.svg",
+              imgAlt: "chennai cultural",
               link: "/visit/place-to-visit/cultural-places-in-chennai",
             },
           ],
@@ -96,6 +102,7 @@ export default function Placestovisit() {
                 "Explore distinctive neighborhoods where gifted artists reside and display their most recent creations.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Artists-Villages.svg",
+              imgAlt: "artists in chennai",
               link: "/visit/place-to-visit/artist-village-chennai",
             },
           ],
@@ -107,6 +114,7 @@ export default function Placestovisit() {
       sectionDesc:
         "Experience the rich history of the city by traveling back in time. ",
       image: "/images/Visit-Images/SubPages/heritage-echoes.jpg",
+      imgAlt: "heritage in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -116,6 +124,7 @@ export default function Placestovisit() {
                 " Discover the ancient citadel, a silent witness to bygone eras, which now frequently houses a museum demonstrating its noteworthy history.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Historic-Fort.svg",
+              imgAlt: "forts in chennai",
               link: "/visit/place-to-visit/chennai-fort",
             },
           ],
@@ -128,6 +137,7 @@ export default function Placestovisit() {
                 "Take in the elaborate Dravidian architecture and colorful rituals of important religious sites. ",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Ancient-Temples.svg",
+              imgAlt: "ancient temples in chennai",
               link: "/visit/place-to-visit/ancient-temples-in-chennai",
             },
           ],
@@ -140,6 +150,7 @@ export default function Placestovisit() {
                 "Discover the region's varied heritage through art, archaeology, and natural history. ",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/state-museum.svg",
+              imgAlt: "chennai museum",
               link: "/visit/place-to-visit/museums-in-chennai",
             },
           ],
@@ -147,101 +158,6 @@ export default function Placestovisit() {
       ],
     },
   ];
-
-  const images = [
-    {
-      src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
-      title: "Accommodation",
-      link: "/visit/hotel-accommodation-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/restaurants-slide.jpg",
-      title: "Restaurants",
-      link: "/visit/restaurants-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-      title: "Places to Visit",
-      link: "/visit/places-to-visit-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
-      title: "Things to Do",
-      link: "/visit/things-to-do-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
-      title: "Itinerary",
-      link: "/visit/chennai-itinerary",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
-      title: "Hidden Gems",
-      link: "/visit/hidden-places-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
-      title: "Shopping",
-      link: "/visit/shopping-areas-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
-      title: "Travel Tips",
-      link: "/visit/travels-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
-      title: "Wellness ",
-      link: "/visit/wellness-centres-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/events-slide.jpg",
-      title: "Events ",
-      link: "/visit/events-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
-      title: "Conferences ",
-      link: "/visit/conferences-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
-
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -274,7 +190,7 @@ export default function Placestovisit() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Visit-Images/SubPages/places-to-visit-banner.jpg"
-            alt=""
+            alt="places to visit in chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -341,7 +257,7 @@ export default function Placestovisit() {
                   }`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.imgAlt} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -360,7 +276,7 @@ export default function Placestovisit() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.imgAlt} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>

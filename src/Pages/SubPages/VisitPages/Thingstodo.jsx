@@ -32,6 +32,7 @@ export default function Thingstodo() {
       sectionDesc:
         "Experience the exhilaration of amusement park rides, water parks, horror houses, trampolines, and ziplines that splash into fun across the city.",
       image: "/images/Visit-Images/SubPages/adventure-thrills-first.jpg",
+      imgAlt: "chennai adventures",
       tenantInfoSections: [
         {
           points: [
@@ -41,6 +42,7 @@ export default function Thingstodo() {
                 "Discover Chennai’s exciting hotspots for climbing, trekking, paintball, and more. Dive into action-packed escapes right in the city.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Adventure-places.svg",
+              imgAlt: "adventure activities chennai",
               link: "/visit/things-to-do/adventure-places-in-chennai",
             },
           ],
@@ -54,6 +56,7 @@ export default function Thingstodo() {
                 "Glide across scenic views on Chennai’s top zipline spots. Perfect for adrenaline junkies chasing a bird’s-eye thrill.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Ziplines.svg",
+              imgAlt: "zip line in chennai",
               link: "/visit/things-to-do/zipline-in-chennai",
             },
           ],
@@ -66,6 +69,7 @@ export default function Thingstodo() {
                 "The human will be made up like a ghost to create a fear in the visitors, which thrills you.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Horror-Houses.svg",
+              imgAlt: "horror house in chennai",
               link: "/visit/things-to-do/horror-house-in-chennai",
             },
           ],
@@ -77,6 +81,7 @@ export default function Thingstodo() {
       sectionDesc:
         "Play shooting games at a variety of Chennai locations and visit a number of interactive gaming establishments.",
       image: "/images/Visit-Images/SubPages/interactive-entertainment.jpg",
+      imgAlt: "entertainment in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -86,6 +91,7 @@ export default function Thingstodo() {
                 "They are interconnected trampolines for open jumping and other such games and aerial activities.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Trampoline-Parks.svg",
+              imgAlt: "trampoline parks chennai",
               link: "/visit/things-to-do/trampoline-parks-in-chennai",
             },
           ],
@@ -98,6 +104,7 @@ export default function Thingstodo() {
                 "It is an entertainment venue featuring video games, prize redemption counters, and even more.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Gaming-Arcades.svg",
+              imgAlt: "arcade in chennai",
               link: "/visit/things-to-do/arcade-games-in-chennai",
             },
           ],
@@ -110,6 +117,7 @@ export default function Thingstodo() {
                 "Here the players bowl balls to knock down pins with automated scoring. ",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Bowling-Alleys.svg",
+              imgAlt: "bowling alleyes chennai",
               link: "/visit/things-to-do/bowling-alleys-in-chennai",
             },
           ],
@@ -121,6 +129,7 @@ export default function Thingstodo() {
       sectionDesc:
         " Relax in family entertainment centers, take in bowling alleys, gaming arcades, or the newest blockbuster at multiplexes or 3D theaters.",
       image: "/images/Visit-Images/SubPages/leisure-recreation.jpg",
+      imgAlt: "leisure recreation",
       tenantInfoSections: [
         {
           points: [
@@ -130,6 +139,7 @@ export default function Thingstodo() {
                 "These are the venues that offer a greater number of recreational activities for all age groups.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Family-Entertainment-Centers.svg",
+              imgAlt: "family entertainment places in chennai",
               link: "/visit/things-to-do/chennai-family-entertainment-centers",
             },
           ],
@@ -142,6 +152,7 @@ export default function Thingstodo() {
                 "A family can choose from a variety of screens at this family-friendly entertainment center, all in one place.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Multiplexes.svg",
+              imgAlt: "chennai multiplexes",
               link: "/visit/things-to-do/multiplexes-in-chennai",
             },
           ],
@@ -154,6 +165,7 @@ export default function Thingstodo() {
         "Sports-loving people can discover leisure and, more importantly, fuel their enthusiasm in Chennai's plethora of sports and leisure activities.",
       image:
         "/images/Visit-Images/SubPages/sports-and-recreational-activities.jpg",
+      imgAlt: "adventure sports in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -163,6 +175,7 @@ export default function Thingstodo() {
                 "Enjoy some beachside fun by playing beach volleyball at Marina or Eliot's. You can also attempt water sports or just take a stroll along the shore.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Beachside-Fun.svg",
+              imgAlt: "chennai beaches",
               link: "/visit/place-to-visit/beaches-in-chennai",
             },
           ],
@@ -175,6 +188,7 @@ export default function Thingstodo() {
                 "You can engage in your favorite outdoor games on grass in a variety of locations across the city without any problems. ",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Turf-Sports.svg",
+              imgAlt: "turf sports chennai",
               link: "/visit/things-to-do/turf-courts-in-chennai",
             },
           ],
@@ -187,6 +201,7 @@ export default function Thingstodo() {
                 "It is nothing but a leisurely walk with green spaces such as parks and trails in the surrounding flora and fauna landscape.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Nature-Walk.svg",
+              imgAlt: "walk in chennai",
               link: "/NatureWalk",
             },
           ],
@@ -199,6 +214,7 @@ export default function Thingstodo() {
                 "Here the participants drive a small, open-wheeled car for fun or racing.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Go-Karting.svg",
+              imgAlt: "go karting chennai",
               link: "/visit/things-to-do/go-karting-in-chennai",
             },
           ],
@@ -206,101 +222,6 @@ export default function Thingstodo() {
       ],
     },
   ];
-
-  const images = [
-    {
-      src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
-      title: "Accommodation",
-      link: "/visit/hotel-accommodation-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/restaurants-slide.jpg",
-      title: "Restaurants",
-      link: "/visit/restaurants-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-      title: "Places to Visit",
-      link: "/visit/places-to-visit-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
-      title: "Things to Do",
-      link: "/visit/things-to-do-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
-      title: "Itinerary",
-      link: "/visit/chennai-itinerary",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
-      title: "Hidden Gems",
-      link: "/visit/hidden-places-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
-      title: "Shopping",
-      link: "/visit/shopping-areas-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
-      title: "Travel Tips",
-      link: "/visit/travels-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
-      title: "Wellness ",
-      link: "/visit/wellness-centres-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/events-slide.jpg",
-      title: "Events ",
-      link: "/visit/events-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
-      title: "Conferences ",
-      link: "/visit/conferences-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
-
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -333,7 +254,7 @@ export default function Thingstodo() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Visit-Images/SubPages/things-to-do-banner.jpg"
-            alt=""
+            alt="things to do chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -390,7 +311,7 @@ export default function Thingstodo() {
     ${index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"}`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.imgAlt} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -409,7 +330,7 @@ export default function Thingstodo() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.imgAlt} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>

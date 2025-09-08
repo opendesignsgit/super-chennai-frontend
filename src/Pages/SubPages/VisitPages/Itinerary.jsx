@@ -31,6 +31,7 @@ export default function Itinerary() {
       sectionTitle: "1-Day Itinerary – The Essentials of Chennai",
       image:
         "/images/Visit-Images/SubPages/1-day-itinerary-the-essentials-of-chennai.jpg",
+      imgAlt: "chennai 1 day itinerary",
       tenantInfoSections: [
         {
           points: [
@@ -50,6 +51,7 @@ export default function Itinerary() {
                 <p key="3">Enjoy a traditional South Indian breakfast.</p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Morning.svg",
+              imgAlt: "time pass in chennai",
             },
           ],
         },
@@ -66,6 +68,7 @@ export default function Itinerary() {
                 <p key="2">Lunch</p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Afternoon.svg",
+              imgAlt: "afternoon",
             },
           ],
         },
@@ -89,6 +92,7 @@ export default function Itinerary() {
                 </p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Evening.svg",
+              imgAlt: "evening",
             },
           ],
         },
@@ -98,6 +102,7 @@ export default function Itinerary() {
       sectionTitle: "2-Day Itinerary – Culture & Coast",
       image:
         "/images/Visit-Images/SubPages/2-day-itinerary-culture-&-coast.jpg",
+      imgAlt: "chennai 2 days tour itinerary",
       tenantInfoSections: [
         {
           points: [
@@ -107,6 +112,7 @@ export default function Itinerary() {
                 "Follow the 1-day itinerary above and end with a sunset at Broken Bridge Viewpoint (optional).",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/day1.svg",
+              imgAlt: "one day trip in chennai",
             },
           ],
         },
@@ -129,6 +135,7 @@ export default function Itinerary() {
                 </p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/day2.svg",
+              imgAlt: "2 day trip from chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -141,6 +148,7 @@ export default function Itinerary() {
       // image: "/images/Visit-Images/SubPages/historical-tapestry.jpg",
       image:
         "/images/Visit-Images/SubPages/3-day-itinerary-heritage,-arts-shopping.jpg",
+      imgAlt: "",
       tenantInfoSections: [
         {
           points: [
@@ -148,6 +156,7 @@ export default function Itinerary() {
               title: "Day 1: Classic Chennai",
               para: ["As per 1-day itinerary."],
               imgs: "/images/Visit-Images/SubPages/Icons/day1.svg",
+              imgAlt: "one day trip in chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -160,6 +169,8 @@ export default function Itinerary() {
                 "As per Day 2 of 2-day itinerary (Mahabalipuram + DakshinaChitra).",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/day2.svg",
+              imgAlt: "2 day trip from chennai",
+
               // link: "/urban-beaches",
             },
           ],
@@ -189,6 +200,7 @@ export default function Itinerary() {
                 </p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/day3.svg",
+              imgAlt: "3 days tour from chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -201,6 +213,7 @@ export default function Itinerary() {
       // image: "/images/Visit-Images/SubPages/historical-tapestry.jpg",
       image:
         "/images/Visit-Images/SubPages/1-week-itinerary-deep-dive-into-chennai-&-beyond.jpg",
+      imgAlt: "weekend trip in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -208,6 +221,7 @@ export default function Itinerary() {
               title: "Day 1–3",
               para: ["Follow the 3-day itinerary."],
               imgs: "/images/Visit-Images/SubPages/Icons/day3.svg",
+              imgAlt: "3 days tour from chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -227,6 +241,7 @@ export default function Itinerary() {
                 </p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/day4.svg",
+              imgAlt: "4 days trip from chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -245,6 +260,7 @@ export default function Itinerary() {
                 </p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/day5.svg",
+              imgAlt: "5 days trip from chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -268,6 +284,7 @@ export default function Itinerary() {
                 </p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/day6.svg",
+              imgAlt: "chennai weekend plan",
               // link: "/urban-beaches",
             },
           ],
@@ -291,6 +308,7 @@ export default function Itinerary() {
                 </p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/day7.svg",
+              imgAlt: "weekend getaways from chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -298,101 +316,6 @@ export default function Itinerary() {
       ],
     },
   ];
-
-  const images = [
-    {
-      src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
-      title: "Accommodation",
-      link: "/visit/hotel-accommodation-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/restaurants-slide.jpg",
-      title: "Restaurants",
-      link: "/visit/restaurants-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-      title: "Places to Visit",
-      link: "/visit/places-to-visit-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
-      title: "Things to Do",
-      link: "/visit/things-to-do-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
-      title: "Itinerary",
-      link: "/visit/chennai-itinerary",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
-      title: "Hidden Gems",
-      link: "/visit/hidden-places-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
-      title: "Shopping",
-      link: "/visit/shopping-areas-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
-      title: "Travel Tips",
-      link: "/visit/travels-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
-      title: "Wellness ",
-      link: "/visit/wellness-centres-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/events-slide.jpg",
-      title: "Events ",
-      link: "/visit/events-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
-      title: "Conferences ",
-      link: "/visit/conferences-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
-
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -491,7 +414,7 @@ export default function Itinerary() {
                   }`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.imgAlt} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -510,7 +433,7 @@ export default function Itinerary() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.imgAlt} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>

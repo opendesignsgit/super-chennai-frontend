@@ -21,6 +21,7 @@ export default function Accomodation() {
       description:
         "Chennai blends cultural heritage with contemporary luxury, offering iconic hotels and serene resorts. From business stays to family getaways, experience warm hospitality and timeless charm across the city’s finest accommodations.",
       image: "/images/Visit-Images/AccommodationImage1.jpg",
+      imgAlt: "",
       linkText: "Explore More",
       linkUrl: "/visit/accomadation/luxury-hotels-in-chennai",
     },
@@ -29,6 +30,7 @@ export default function Accomodation() {
       description:
         "Chennai offers Value Stays  that blend comfort, convenience, and value. Ideal for business or leisure, these stays promise warm hospitality, modern amenities, and easy access to the city’s key locations.",
       image: "/images/Visit-Images/AccommodationImage2.jpg",
+      imgAlt: "luxury hotels in chennai",
       linkText: "Explore More",
       linkUrl: "/visit/accomadation/affordable-hotels-in-chennai",
     },
@@ -37,6 +39,7 @@ export default function Accomodation() {
       description:
         "Your stay in Chennai can be affordable without compromising on comfort. Discover our curated list of budget-friendly hotels that offer great value, central locations, and a reliable, hassle-free experience.",
       image: "/images/Visit-Images/AccommodationImage3.jpg",
+      imgAlt: "5 star hotels in chennai",
       linkText: "Explore More",
       linkUrl: "/visit/accomadation/budget-stay-in-chennai",
     },
@@ -45,6 +48,7 @@ export default function Accomodation() {
       description:
         "Chennai’s serviced apartments offer kitchens, laundry, workspaces, and more — ideal for families and long-stay guests, combining home comforts with hotel-style services and amenities.",
       image: "/images/Visit-Images/AccommodationImage4.jpg",
+      imgAlt: "hotels in chennai india",
       linkText: "Explore More",
       linkUrl: "/visit/accomadation/serviced-apartments-in-chennai",
     },
@@ -53,6 +57,7 @@ export default function Accomodation() {
       description:
         "Chennai’s resorts and villas offer the perfect blend of privacy, comfort, and scenic charm — ideal for travellers seeking beachfront serenity, family time, or a luxurious escape just beyond the city.",
       image: "/images/Visit-Images/AccommodationImage5.jpg",
+      imgAlt: "beach resorts in chennai",
       linkText: "Explore More",
       linkUrl: "/visit/accomadation/resorts-in-chennai",
     },
@@ -192,7 +197,10 @@ export default function Accomodation() {
 
         <div className="accaodomationBannerSection">
           <div>
-            <img src="/images/AccodomationBannerr.jpg" alt="" />
+            <img
+              src="/images/AccodomationBannerr.jpg"
+              alt="chennai accomadation"
+            />
           </div>
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -229,7 +237,7 @@ export default function Accomodation() {
               <div className="AccodoSectionFLex" key={index}>
                 {index % 2 === 0 ? (
                   <>
-                    <img src={section.image} alt={section.title} />
+                    <img src={section.image} alt={section.imgAlt} />
                     <div className="AccodContentsSection">
                       <h3>{section.title}</h3>
                       <p>{section.description}</p>
@@ -247,7 +255,7 @@ export default function Accomodation() {
                         <Link to={section.linkUrl}>{section.linkText}</Link>
                       </div>
                     </div>
-                    <img src={section.image} alt={section.title} />
+                    <img src={section.image} alt={section.imgAlt} />
                   </>
                 )}
               </div>

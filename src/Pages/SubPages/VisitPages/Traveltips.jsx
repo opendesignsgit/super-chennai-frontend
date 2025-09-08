@@ -30,6 +30,7 @@ export default function Traveltips() {
       sectionTitle: "Before You Arrive",
       // sectionDesc:  "Your experience will be enhanced if you comprehend the city's rhythm.",
       image: "/images/Visit-Images/SubPages/before-you-arrive.jpg",
+      imgAlt: "money transfer in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -39,6 +40,7 @@ export default function Traveltips() {
                 "Verify your visa eligibility; many nationalities (e.g., US, UK, EU, etc.) can apply online or receive visa on arrival—always check current rules.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Visa&EntryRequirements.svg",
+              imgAlt: "visa process in chennai",
             },
           ],
         },
@@ -50,6 +52,7 @@ export default function Traveltips() {
                 "India uses the Indian Rupee (INR); keep some local cash handy and use prepaid cards or international credit cards for convenience.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Currency.svg",
+              imgAlt: "currency in chennai",
             },
           ],
         },
@@ -61,6 +64,7 @@ export default function Traveltips() {
                 "Chennai has a warm tropical climate—pack light cotton clothes, sunscreen, eyewear, and a light rain jacket during monsoon.",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Climate & What to Pack.svg",
+              imgAlt: "cool places in chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -71,6 +75,7 @@ export default function Traveltips() {
       sectionTitle: "On Arrival & in the City",
       // sectionDesc: "Enhancing your exploration beyond the obvious will unlock a richer experience.",
       image: "/images/Visit-Images/SubPages/on-arrival-&-in-the-city.jpg",
+      imgAlt: "stores in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -80,6 +85,7 @@ export default function Traveltips() {
                 "Buy a local SIM (e.g., Jio, Airtel) at the airport or nearby shops. Free Wi-Fi is available in malls, hotels, and cafes. ",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Connectivity.svg",
+              imgAlt: "chennai malls",
               // link: "/urban-beaches",
             },
           ],
@@ -92,6 +98,7 @@ export default function Traveltips() {
                 "Dress modestly in religious places; avoid public displays of affection—Tamil Nadu values cultural respect",
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Enjoying-Local-Flavors.svg",
+              imgAlt: "bakery in chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -115,6 +122,7 @@ export default function Traveltips() {
                 </ul>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Enjoying-Local-Flavors.svg",
+              imgAlt: "bakery in chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -126,6 +134,7 @@ export default function Traveltips() {
       sectionTitle: "Where to Shop ",
       // sectionDesc: "Enhancing your exploration beyond the obvious will unlock a richer experience.",
       image: "/images/Visit-Images/SubPages/where-to-shop.jpg",
+      imgAlt: "t nagar shopping",
       tenantInfoSections: [
         {
           points: [
@@ -140,6 +149,7 @@ export default function Traveltips() {
                 </ul>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Connectivity.svg",
+              imgAlt: "chennai malls",
               // link: "/urban-beaches",
             },
           ],
@@ -150,6 +160,7 @@ export default function Traveltips() {
       sectionTitle: "Safety & Health",
       // sectionDesc: "Enhancing your exploration beyond the obvious will unlock a richer experience.",
       image: "/images/Visit-Images/SubPages/safety-&-health.jpg",
+      imgAlt: "chennai traffic",
       tenantInfoSections: [
         {
           points: [
@@ -174,6 +185,7 @@ export default function Traveltips() {
                 </p>,
               ],
               imgs: "/images/Visit-Images/SubPages/Icons/Enjoying-Local-Flavors.svg",
+              imgAlt: "bakery in chennai",
               // link: "/urban-beaches",
             },
           ],
@@ -181,101 +193,6 @@ export default function Traveltips() {
       ],
     },
   ];
-
-  const images = [
-    {
-      src: "/images/Visit-Images/SubPages/accomodation-slide.jpg",
-      title: "Accommodation",
-      link: "/visit/hotel-accommodation-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/restaurants-slide.jpg",
-      title: "Restaurants",
-      link: "/visit/restaurants-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/places-to-visit-slide.jpg",
-      title: "Places to Visit",
-      link: "/visit/places-to-visit-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/things-to-do-slide.jpg",
-      title: "Things to Do",
-      link: "/visit/things-to-do-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/itinerary-slide.jpg",
-      title: "Itinerary",
-      link: "/visit/chennai-itinerary",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/hidden-gems-slide.jpg",
-      title: "Hidden Gems",
-      link: "/visit/hidden-places-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/shopping-slide.jpg",
-      title: "Shopping",
-      link: "/visit/shopping-areas-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/travel-tips-slide.jpg",
-      title: "Travel Tips",
-      link: "/visit/travels-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/wellness-slide.jpg",
-      title: "Wellness ",
-      link: "/visit/wellness-centres-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/events-slide.jpg",
-      title: "Events ",
-      link: "/visit/events-in-chennai",
-    },
-    {
-      src: "/images/Visit-Images/SubPages/conferences-slide.jpg",
-      title: "Conferences ",
-      link: "/visit/conferences-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
-
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -371,7 +288,7 @@ export default function Traveltips() {
                   }`}
               >
                 <div className="imgLeft">
-                  <img src={section.image} alt={section.sectionTitle} />
+                  <img src={section.image} alt={section.imgAlt} />
                 </div>
                 <div className="imgText flex items-center">
                   <div className="imgcolTitle bg-[#682865] relative">
@@ -390,7 +307,7 @@ export default function Traveltips() {
                       {tenant.points.map((item, j) => (
                         <div key={j} className="clcboxItemss flex mb-4">
                           <div className="clcboxIImg">
-                            <img src={item.imgs} alt={item.title} />
+                            <img src={item.imgs} alt={item.imgAlt} />
                           </div>
                           <div className="clcboxICont">
                             <h3>{item.title}</h3>

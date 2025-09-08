@@ -140,7 +140,7 @@ export default function Accomodation() {
 
         <div className="accaodomationBannerSection">
           <div>
-            <img src="/images/AccodomationBannerr.jpg" alt="" />
+            <img src="/images/AccodomationBannerr.jpg" alt="chennai accomadation" />
           </div>
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">

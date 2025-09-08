@@ -13,6 +13,8 @@ export default function Work() {
   const [previewSrc, setPreviewSrc] = useState(
     "/images/Work-Images/employment.jpg"
   );
+  const [previewAlt, setPreviewAlt] = useState("jobs in chennai");
+
   const [hoverIndex, setHoverIndex] = useState(null);
   const [fade, setFade] = useState(true);
   const tooltipRef = useRef(null);
@@ -21,37 +23,49 @@ export default function Work() {
     {
       label: "Business Permits ",
       image: "/images/Work-Images/employment.jpg",
+      imgAlt: "jobs in chennai",
       link: "/work/business-registration-in-chennai",
     },
     {
       label: "Unicorns",
       image: "/images/Work-Images/unicorns.jpg",
+      imgAlt: "it jobs in chennai",
       link: "/work/unicorn-startups",
     },
     {
       label: "Co-working spaces",
       image: "/images/Work-Images/co-workingspaces.jpg",
+      imgAlt: "coworking space in chennai",
       link: "/work/coworking-space-in-chennai",
     },
-    { label: "Paying Guest", image: "/images/Work-Images/PG.jpg", link: "/work/pg-in-chennai" },
+    {
+      label: "Paying Guest",
+      image: "/images/Work-Images/PG.jpg",
+      imgAlt: "pg in chennai",
+      link: "/work/pg-in-chennai",
+    },
     {
       label: "Salaries & Benefits",
       image: "/images/Work-Images/Salaries-and-Benefits.jpg",
+      imgAlt: "chennai job salary",
       link: "/work/chennai-job-salary",
     },
     {
       label: "Career Growth",
       image: "/images/Work-Images/career growth.jpg",
+      imgAlt: "job opportunities chennai",
       link: "/work/job-opportunities-in-chennai",
     },
     {
       label: "Networking",
       image: "/images/Work-Images/Networking.jpg",
+      imgAlt: "networking companies in chennai",
       link: "/networking",
     },
     {
       label: "Work life balance",
       image: "/images/Work-Images/Worklife-balance.jpg",
+      imgAlt: "working in chennai",
       link: "/work/working-in-chennai",
     },
   ];
@@ -77,7 +91,7 @@ export default function Work() {
     setFade(false);
     const timeout = setTimeout(() => setFade(true), 100);
     return () => clearTimeout(timeout);
-  }, [previewSrc]);
+  }, [previewSrc,previewAlt]);
 
   return (
     <>
@@ -98,7 +112,10 @@ export default function Work() {
         <div className="VolunteerMainContainer">
           <div className="volunteerSectionBanner">
             <div className="VolunteerBannerImage">
-              <img src="/images/Work-Images/workBanner.jpg" alt="Work banner" />
+              <img
+                src="/images/Work-Images/workBanner.jpg"
+                alt="chennai jobs"
+              />
             </div>
             <h3 className="voluntterContent">Work</h3>
           </div>
@@ -163,6 +180,7 @@ export default function Work() {
                     key={index}
                     onMouseEnter={() => {
                       setPreviewSrc(item.image);
+                      setPreviewAlt(item.imgAlt)
                       setHoverIndex(index);
                       if (tooltipRef.current) {
                         tooltipRef.current.style.display = "block";
@@ -210,7 +228,7 @@ export default function Work() {
             <div className="flex-2 flex items-center justify-center hoverRightimg">
               <img
                 src={previewSrc}
-                alt="Category preview"
+                alt={previewAlt}
                 className="hoverRightimg"
                 style={{ opacity: fade ? 1 : 0, transition: "opacity 0.3s" }}
               />

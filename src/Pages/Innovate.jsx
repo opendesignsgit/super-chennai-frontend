@@ -64,7 +64,7 @@ export default function Innovate() {
             <div className="VolunteerBannerImage">
               <img
                 src="/images/Innovate-Images/InnovateHeroBanner.jpg"
-                alt=""
+                alt="innovation in chennai"
               />
             </div>
             <h3 className="voluntterContent">Innovate</h3>
@@ -96,7 +96,7 @@ export default function Innovate() {
         <div className="section-left-image">
           <img
             src="/images/Innovate-Images/Smart-City-thum-big.jpg"
-            alt="Main Side Visual"
+            alt="smart city chennai"
           />
         </div>
 

@@ -23,6 +23,7 @@ export default function Invest() {
       description:
         "Empowering communities through technology and digital literacy programs. Invests help bridge the digital divide by offering training and access to tools.",
       image: "/images/Invest-Images/BacameAvolunterImage0.png",
+      imgAlt: "",
       linkText: "Enquire Now",
       linkUrl: "/digital",
     },
@@ -31,6 +32,7 @@ export default function Invest() {
       description:
         "Promoting education for all through tutoring, mentorship, and resources. Be a part of shaping young minds and building brighter futures.",
       image: "/images/Invest-Images/BacameAvolunterImage1.png",
+      imgAlt: "",
       linkText: "Enquire Now",
       linkUrl: "/education",
     },
@@ -39,6 +41,7 @@ export default function Invest() {
       description:
         "Supporting health and wellness with awareness campaigns and aid drives. Join us in making essential healthcare accessible to those in need.",
       image: "/images/Invest-Images/BacameAvolunterImage2.png",
+      imgAlt: "",
       linkText: "Enquire Now",
       linkUrl: "/health",
     },
@@ -47,6 +50,7 @@ export default function Invest() {
       description:
         "Investing toward a cleaner, greener planet through sustainable initiatives. Your actions can help preserve nature for future generations.",
       image: "/images/Invest-Images/BacameAvolunterImage3.png",
+      imgAlt: "",
       linkText: "Enquire Now",
       linkUrl: "/environment",
     },
@@ -55,6 +59,7 @@ export default function Invest() {
       description:
         "Advocating for women's rights and helping them build sustainable futures. Support equality and uplift communities by enabling women.",
       image: "/images/Invest-Images/BacameAvolunterImage4.png",
+      imgAlt: "",
       linkText: "Enquire Now",
       linkUrl: "/women",
     },
@@ -63,6 +68,7 @@ export default function Invest() {
       description:
         "Creating programs that inspire and guide the youth to be future leaders. Help nurture talents and open doors for young individuals.",
       image: "/images/Invest-Images/BacameAvolunterImage1.png",
+      imgAlt: "",
       linkText: "Enquire Now",
       linkUrl: "/youth",
     },
@@ -71,6 +77,7 @@ export default function Invest() {
       description:
         "Providing timely aid and rehabilitation to those affected by natural disasters. Be a lifeline when it matters most with your support.",
       image: "/images/Invest-Images/BacameAvolunterImage0.png",
+      imgAlt: "",
       linkText: "Enquire Now",
       linkUrl: "/relief",
     },
@@ -83,6 +90,7 @@ export default function Invest() {
       description:
         "Due to rising property values and the need for rental space in cities, real estate investments in Chennai could provide attractive returns. Both residential and commercial prospects were abundant.",
       image: "/images/Invest-Images/Icons/realesate-icon.svg",
+      imgAlt: "",
       link: "/invest/chennai-real-estate",
     },
     {
@@ -91,6 +99,7 @@ export default function Invest() {
       description:
         "Profit from established brands and local market knowledge through franchising. Investing in a franchise in Chennai would provide you with a quicker path to becoming an entrepreneur in this city's economy.",
       image: "/images/Invest-Images/Icons/franchise-icon.svg",
+      imgAlt: "",
       link: "/invest/franchise-business-in-chennai",
     },
     {
@@ -99,6 +108,7 @@ export default function Invest() {
       description:
         "Unlike service-based startups, making a product-based investment requires an initial payment. In any case, you can quickly locate your target audience in this city and increase your return on investment.",
       image: "/images/Invest-Images/Icons/startups-icon.svg",
+      imgAlt: "",
       link: "/invest/startup-companies-in-chennai",
     },
     {
@@ -107,6 +117,7 @@ export default function Invest() {
       description:
         "Existing investment opportunities in government-initiated and driven wind and solar projects. It can help create a more environmentally friendly future while taking advantage of a growing market.",
       image: "/images/Invest-Images/Icons/renewable-icon.svg",
+      imgAlt: "",
       link: "/invest/solar-companies-in-chennai",
     },
     {
@@ -115,6 +126,7 @@ export default function Invest() {
       description:
         "Chennai retirement provides a thriving cultural scene and good healthcare. Investing in this area promises a pleasant living in a friendly community and meets the rising need for senior-friendly accommodation.",
       image: "/images/Invest-Images/Icons/retire-icon.svg",
+      imgAlt: "",
       link: "/invest/retirement-in-chennai",
     },
     {
@@ -123,6 +135,7 @@ export default function Invest() {
       description:
         "Through laws, infrastructure development, and taxation, the TN government encourages investment in Chennai. Focusing on industries like manufacturing and renewable energy will increase economic growth and create jobs.",
       image: "/images/Invest-Images/Icons/government-icon.svg",
+      imgAlt: "",
       link: "/invest/government-projects-in-chennai",
     },
     {
@@ -131,6 +144,7 @@ export default function Invest() {
       description:
         "Navigating legal systems, such as company registration and environmental permits, is part of investing in Chennai. To make these requirements easier, government organizations provide online portals and instruction.",
       image: "/images/Invest-Images/Icons/formalities-icon.svg",
+      imgAlt: "",
       link: "/invest/law-firms-in-chennai",
     },
     {
@@ -139,6 +153,7 @@ export default function Invest() {
       description:
         "Chennai's increasing investment in industries like data centers and electric cars has been highlighted in recent headlines. Stay up-to-date on business news to learn about the most recent advancements and prospects.",
       image: "/images/Invest-Images/Icons/news-icon.svg",
+      imgAlt: "",
       link: "/invest/news-in-chennai",
     },
     {
@@ -147,6 +162,7 @@ export default function Invest() {
       description:
         "A number of corporate conferences, industry-specific seminars, and investment summits are held in Chennai. These gatherings offer chances for networking, information about new industries, and stages for exhibiting investment possibilities.",
       image: "/images/Invest-Images/Icons/events-icon.svg",
+      imgAlt: "",
       link: "/invest/chennai-events",
     },
     {
@@ -155,6 +171,7 @@ export default function Invest() {
       description:
         "Investors have the opportunity to evaluate industry trends and uncover potential enterprises by attending these events, which feature goods, innovations, and possible collaborations.",
       image: "/images/Invest-Images/Icons/exhibition-icon.svg",
+      imgAlt: "",
       link: "/invest/exhibitions-in-chennai",
     },
   ];
@@ -166,6 +183,7 @@ export default function Invest() {
       description:
         "If you have expertise in any service or product, you can start your own business in an area where your target market is present and you can begin making money from the service you offer.",
       image: "/images/Invest-Images/SubPages/startup.jpg",
+      imgAlt: "startup chennai",
       link: "/investstartupschennai#InvestId",
     },
     {
@@ -175,6 +193,7 @@ export default function Invest() {
         "To increase their brand recognition, several brands open franchise across Chennai. In Chennai, several businesses are seeking investors to build franchises and offer training to operate them.",
       image:
         "/images/Invest-Images/SubPages/Food-and-Beverage/coffee-shops.jpg",
+      imgAlt: "",
       link: "/investfranchisechennai#InvestId",
     },
     {
@@ -183,6 +202,7 @@ export default function Invest() {
       description:
         "Chennai offers a wealth of Renewable Energy investment prospects. Investigate wind energy along the shore. Study up on waste-to-energy. ",
       image: "/images/Invest-Images/SubPages/solar/rooftop.jpg",
+      imgAlt: "solar companies in chennai",
       link: "/investrenewableenergychennai#InvestId",
     },
     {
@@ -191,6 +211,7 @@ export default function Invest() {
       description:
         "Since Chennai is a big metropolis, real estate values have skyrocketed.",
       image: "/images/Invest-Images/SubPages/real.jpg",
+      imgAlt: "realestate chennai",
       link: "/chennairealestate#InvestId",
     },
 
@@ -200,6 +221,7 @@ export default function Invest() {
       description:
         "Every older individual plans to spend their retirement in a contented and tranquil setting. For older folks, Chennai will be the ideal destination for relaxation and exploration.",
       image: "/images/Visit-Images/SubPages/Retirement-img.jpg",
+      imgAlt: "retirement community in chennai",
       link: "/investretirementchennai#InvestId",
     },
   ];
@@ -208,6 +230,7 @@ export default function Invest() {
       sectionTitle: "Chennai’s Most Liveable Rental Spaces",
       sectionDesc: "",
       image: "/images/Live-Images/SubPages/Rental-Properties-in-Chennai.jpg",
+      imgAlt: "",
       benefits: [
         {
           id: 1,
@@ -215,24 +238,28 @@ export default function Invest() {
           para: "Chennai offers several well-connected neighbourhoods where rent remains affordable without compromising on access to schools, transit, and daily conveniences. These localities are ideal for professionals, students, and families seeking value and comfort.",
           para: "Chennai offers several well-connected neighbourhoods where rent remains affordable without compromising on access to schools, transit, and daily conveniences. These localities are ideal for professionals, students, and families seeking value and comfort.",
           imgs: "/images/Invest-Images/Icons/High-Potential-Growth-Economy.svg",
+          imgAlt: "",
         },
         {
           id: 2,
           title: "Mid-Tier Residential Zones",
           para: "Chennai’s mid-range rental areas strike the perfect balance between affordability and lifestyle—offering solid connectivity, quality housing, and access to daily conveniences. Neighbourhoods like T. Nagar, Vadapalani, Porur, and Velachery are among the city’s most preferred choices for comfortable urban living.",
           imgs: "/images/Live-Images/SubPages/Icons/Mid-Range-Areas.svg",
+          imgAlt: "",
         },
         {
           id: 3,
           title: "Prestigious Neighbourhoods",
           para: "Chennai’s most exclusive residential pockets offer more than just prime addresses—they embody sophistication, world-class infrastructure, and refined living. Areas like Boat Club, Poes Garden, ECR, Nungambakkam, and RA Puram represent the city’s finest lifestyle experiences, seamlessly blending heritage, privacy, and modern luxury.",
           imgs: "/images/Live-Images/SubPages/Icons/Prestigious-neighborhood.svg",
+          imgAlt: "",
         },
       ],
       tenantInfoSections: [
         {
           iconImage:
             "/images/Invest-Images/Icons/High-Potential-Growth-Economy.svg",
+          imgAlt: "",
           title: "High-Potential Growth Economy",
           points: [
             <>
@@ -253,6 +280,7 @@ export default function Invest() {
         },
         {
           iconImage: "/images/Invest-Images/Icons/Strategic-Location.svg",
+          imgAlt: "",
           title: "Strategic Location",
           points: [
             <>
@@ -277,6 +305,7 @@ export default function Invest() {
         {
           iconImage:
             "/images/Invest-Images/Icons/Emerging-Global-Finance-Destination.svg",
+          imgAlt: "",
           title: "Emerging Global Finance Destination",
           points: [
             <>
@@ -303,6 +332,7 @@ export default function Invest() {
         {
           iconImage:
             "/images/Invest-Images/Icons/Business-Friendly-Environment.svg",
+          imgAlt: "",
           title: "Business-Friendly Environment",
           points: [
             <>
@@ -326,6 +356,7 @@ export default function Invest() {
         {
           iconImage:
             "/images/Invest-Images/Icons/Future-Driven-Development-Path.svg",
+          imgAlt: "",
           title: "Future-Driven Development Path",
           points: [
             <>
@@ -348,6 +379,7 @@ export default function Invest() {
         {
           iconImage:
             "/images/Invest-Images/Icons/Innovative-Business-Landscape.svg",
+          imgAlt: "",
           title: "Innovative Business Landscape",
           points: [
             <>
@@ -365,6 +397,7 @@ export default function Invest() {
         },
         {
           iconImage: "/images/Invest-Images/Icons/Talent-Ready-Workforce.svg",
+          imgAlt: "",
           title: "Talent-Ready Workforce",
           points: [
             <>
@@ -386,6 +419,7 @@ export default function Invest() {
         },
         {
           iconImage: "/images/Invest-Images/Icons/Cosmopolitan-Lifestyle.svg",
+          imgAlt: "",
           title: "Cosmopolitan Lifestyle",
           points: [
             <>
@@ -403,6 +437,7 @@ export default function Invest() {
         {
           iconImage:
             "/images/Invest-Images/Icons/Top-Performing-Investment-Zones.svg",
+          imgAlt: "",
           title: "Top Performing Investment Zones",
           points: [
             <>
@@ -438,6 +473,7 @@ export default function Invest() {
       sectionDesc:
         "Chennai stands as a dynamic hub blending tradition with modern growth, making it one of India's most investment-friendly cities.",
       image: "/images/Invest-Images/Why-Invest-in-Chennai.jpg",
+      imgAlt: "",
       tenantInfoSections: [],
     },
   ];
@@ -523,7 +559,10 @@ export default function Invest() {
             <div className="VolunteerMainContainer">
               <div className="volunteerSectionBanner">
                 <div className="VolunteerBannerImage">
-                  <img src="/images/Invest-Images/investBanner.jpg" alt="" />
+                  <img
+                    src="/images/Invest-Images/investBanner.jpg"
+                    alt="investment in chennai"
+                  />
                 </div>
                 <h3 className="voluntterContent">Invest</h3>
               </div>
@@ -656,7 +695,7 @@ export default function Invest() {
                     <img
                       className="tenanticonImage"
                       src={tenant.iconImage}
-                      alt=""
+                      alt={tenant.imgAlt}
                     />
                   </div>
                 </div>
@@ -689,7 +728,7 @@ export default function Invest() {
                         <img
                           className="buildingImage"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                         />
                       </>
                     ) : (
@@ -697,7 +736,7 @@ export default function Invest() {
                         <img
                           className="buildingImage1"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                         />
                         <div className="builidngContent1">
                           <h3>{item.title}</h3>

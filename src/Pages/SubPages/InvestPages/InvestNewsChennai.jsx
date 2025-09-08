@@ -250,7 +250,7 @@ export default function InvestNewsChennai() {
 
       <div className="accaodomationBannerSection">
         <div>
-          <img src="/images/Invest-Images/SubPages/news-banner.jpg" alt="" />
+          <img src="/images/Invest-Images/SubPages/news-banner.jpg" alt="investment opportunities in chennai" />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">

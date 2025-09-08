@@ -2082,8 +2082,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Join us 6–7 Sept 2025 at House of Games, Kilpauk! A 2.5-hour guided art session with step-by-step learning, all materials, and refreshments included.",
     siteLink: "https://kynhood.com/event/689ad724999af733d07d6125",
     EventsCalendarTitle: "Prom Chennai",
-    EventsCalendarContent:
-      "Thus spoke, the greatest night ever foretold",
+    EventsCalendarContent: "Thus spoke, the greatest night ever foretold",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Meetups, Night Life",
@@ -2096,7 +2095,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Thus spoke, the greatest night ever foretold” — we bring you PROM. The night we once only dreamt of, imagined through high school rom-coms, filled with slow dances, glittering lights, and the thrill of walking in with a date, is finally here. This September, EN/D is making that fantasy a reality, bringing Chennai a grand, euphoric celebration bigger and bolder than you ever imagined. Picture this: 100 couples, your song playing at just the right moment, a dance floor designed for pure magic, and a setting drenched in gold, purple, and black opulence fit for the gods themselves. Everything you thought was out of reach is now within your grasp—it’s real, it’s happening, and it’s waiting for you on September 6th. Bring a girl, a boy, anyone—just bring your date, because this is PROM. Note: Venue cover charges (F&B) apply and are to be settled separately at the venue.`,
   },
-    {
+  {
     id: 94,
     metaTitleEvent:
       "3D Art Workshop / Super Chennai / Beginner-Friendly Art Event",
@@ -2105,8 +2104,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Join us 6–7 Sept 2025 at House of Games, Kilpauk! A 2.5-hour guided art session with step-by-step learning, all materials, and refreshments included.",
     siteLink: "https://kynhood.com/event/68b592142835c512514be8ab",
     EventsCalendarTitle: "Big Saturday Night",
-    EventsCalendarContent:
-      "Thus spoke, the greatest night ever foretold",
+    EventsCalendarContent: "Thus spoke, the greatest night ever foretold",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Meetups, Night Life",
@@ -2121,11 +2119,9 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 95,
-    metaTitleEvent:
-      "",
+    metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/95",
-    metaDescriptionEvent:
-    "",
+    metaDescriptionEvent: "",
     siteLink: "https://kynhood.com/event/68a2fc2432e22ed6652d8ee8",
     EventsCalendarTitle: "Floor Yoga Workshop",
     EventsCalendarContent:
@@ -2142,17 +2138,14 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Begin your morning with renewal and balance at the Floor Yoga Workshop happening on 6th September, 6:00–7:00 AM, at Dream Yoga Studio, Thalambur. Open to all levels, this session will guide you through grounding postures and mindful movements designed to build strength, flexibility, and balance while deepening your connection to the mat. Floor yoga helps release tension, improve core stability, and enhance body awareness, leaving you both energized and centered. Led by an experienced instructor, the workshop offers a supportive space to refine your practice, calm your mind, and start the day with positivity and focus. Reserve your spot now and embrace a morning of movement, mindfulness, and fresh energy! For enquiries: 63851 11315.`,
   },
-    {
+  {
     id: 96,
-    metaTitleEvent:
-      "",
+    metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/96",
-    metaDescriptionEvent:
-      "",
+    metaDescriptionEvent: "",
     siteLink: "https://kynhood.com/event/68a2f92f0480e36e566f5749",
     EventsCalendarTitle: "Aerial Yoga - One Day Workshop",
-    EventsCalendarContent:
-      "Experience the freedom of movement and lightness",
+    EventsCalendarContent: "Experience the freedom of movement and lightness",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Workshop",
@@ -2165,36 +2158,32 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Experience the freedom of movement and lightness at the Aerial Yoga Session at Dream Yoga Studio, Thalambur, on 6th September from 6:00–7:00 PM. This unique practice blends traditional yoga, Pilates, and dance with the support of a hammock, allowing you to stretch deeper, improve flexibility, and build strength while feeling weightless and free. Guided by expert instructors, you’ll safely explore inversions and poses that strengthen your core, release spinal tension, and boost circulation. Suitable for both beginners and experienced practitioners, Aerial Yoga offers a refreshing way to reconnect with your body, calm your mind, and uplift your spirit. Come breathe, flow, and discover yoga like never before—limited spots available, so reserve your place in the sky today! 🌿`,
   },
-    {
-    id: 97,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/97",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://kynhood.com/event/68a2fde532e22ed6652d8ef9",
-    EventsCalendarTitle: "Zumba Workshop",
-    EventsCalendarContent:
-      "Discover the joy of weightlessness and flow at the Aerial Yoga Session",
-    EventsCalendarMonth: "6 Sep 2025",
-    EventsCalendarTime: "7:00 PM",
-    EventsCalendarCategory: "Workshop",
-    image: "/images/HomePage-Images/Events/Newevents/208.jpg",
-    link: "/events",
-    location: "Dream Yoga Studio, Thalambur ",
-    language: "",
-    hours: "",
-    ageLimit: "",
-    rleigion: "",
-    aboutFull: `Discover the joy of weightlessness and flow at the Aerial Yoga Session happening on 6th September, 6:00–7:00 PM at Dream Yoga Studio, Thalambur. Blending traditional yoga postures with elements of Pilates and dance, this practice uses a supportive hammock to help you stretch deeper, enhance flexibility, and build strength while feeling light and free. With guidance from experienced instructors, you’ll explore safe and effective inversions and poses that strengthen the core, ease spinal tension, and improve circulation. Suitable for both beginners and seasoned practitioners, Aerial Yoga is a refreshing way to reconnect with your body, calm your mind, and uplift your spirit. Come breathe, move, and experience yoga like never before—limited spots available, so secure your place today! 🌿`,
-  },
+  // {
+  //   id: 97,
+  //   metaTitleEvent: "",
+  //   conicallinkEvent: "/eventsdetails/97",
+  //   metaDescriptionEvent: "",
+  //   siteLink: "https://kynhood.com/event/68a2fde532e22ed6652d8ef9",
+  //   EventsCalendarTitle: "Zumba Workshop",
+  //   EventsCalendarContent:
+  //     "Discover the joy of weightlessness and flow at the Aerial Yoga Session",
+  //   EventsCalendarMonth: "6 Sep 2025",
+  //   EventsCalendarTime: "7:00 PM",
+  //   EventsCalendarCategory: "Workshop",
+  //   image: "/images/HomePage-Images/Events/Newevents/208.jpg",
+  //   link: "/events",
+  //   location: "Dream Yoga Studio, Thalambur ",
+  //   language: "",
+  //   hours: "",
+  //   ageLimit: "",
+  //   rleigion: "",
+  //   aboutFull: `Discover the joy of weightlessness and flow at the Aerial Yoga Session happening on 6th September, 6:00–7:00 PM at Dream Yoga Studio, Thalambur. Blending traditional yoga postures with elements of Pilates and dance, this practice uses a supportive hammock to help you stretch deeper, enhance flexibility, and build strength while feeling light and free. With guidance from experienced instructors, you’ll explore safe and effective inversions and poses that strengthen the core, ease spinal tension, and improve circulation. Suitable for both beginners and seasoned practitioners, Aerial Yoga is a refreshing way to reconnect with your body, calm your mind, and uplift your spirit. Come breathe, move, and experience yoga like never before—limited spots available, so secure your place today! 🌿`,
+  // },
   {
     id: 98,
-    metaTitleEvent:
-      "",
+    metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/98",
-    metaDescriptionEvent:
-      "",
+    metaDescriptionEvent: "",
     siteLink: "https://kynhood.com/event/68b572a468d895f15d971a94",
     EventsCalendarTitle: "Sashiko Stitches",
     EventsCalendarContent:
@@ -2211,7 +2200,6 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Step into the ancient and mindful world of Japanese embroidery with the Sashiko Stitches Workshop! Designed for beginners, this hands-on session will be held on September 7th, 2025, at Hermoso Studio, Nungambakkam, from 10:30 AM to 6:30 PM. Guided through the traditional running-stitch technique, you’ll learn the core patterns and rhythms of Sashiko while crafting your own durable, one-of-a-kind design on a chic tote bag. With all materials provided, it’s the perfect chance to relax, spark your creativity, and immerse yourself in a timeless art form. Hosted at the SWE Space, a community dedicated to creation and expression, the workshop promises a rewarding day of learning, making, and connection. Don’t miss this fulfilling artistic journey—secure your spot today! For enquiries (WhatsApp): 6385804591.`,
   },
-    
 ];
 
 export const panesContent = [

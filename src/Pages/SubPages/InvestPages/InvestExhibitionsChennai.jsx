@@ -39,6 +39,7 @@ export default function InvestExhibitionsChennai() {
         "Make investments in significant shows that address the consumer goods, technology, and manufacturing sectors.",
       image:
         "/images/Invest-Images/SubPages/Established-Trade/trade-center.jpg",
+      imgAlt: "chennai trade center",
     },
     {
       title: "Agricultural and Food Expos (At Different Venues)",
@@ -47,6 +48,7 @@ export default function InvestExhibitionsChennai() {
         "Provide financial assistance to several farmers so they may market their food items to a larger audience.",
       image:
         "/images/Invest-Images/SubPages/Established-Trade/agricultural.jpg",
+      imgAlt: "agri tech companies in chennai",
     },
     {
       title: "Auto Component Exhibits ",
@@ -55,6 +57,7 @@ export default function InvestExhibitionsChennai() {
         "The development of the automobile sector depends on your sponsorship of exhibitions.",
       image:
         "/images/Invest-Images/SubPages/Established-Trade/auto-component.jpg",
+      imgAlt: "franchise expo chennai",
     },
     {
       title: "Building and Construction (At Different Locations)",
@@ -62,6 +65,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "Make connections between real estate owners and infrastructure development.",
       image: "/images/Invest-Images/SubPages/Established-Trade/building.jpg",
+      imgAlt: "business and franchise expo chennai",
     },
 
     {
@@ -70,6 +74,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "Invest to increase Tamil Nadu's textile brand's business in Chennai City.",
       image: "/images/Invest-Images/SubPages/invest/textiles.jpg",
+      imgAlt: "",
     },
     {
       title: "Engineering and Manufacturing (Different Industrial Fields)",
@@ -77,6 +82,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "By holding these expos, you can help these industries cover the various industrial regions.",
       image: "/images/Invest-Images/SubPages/invest/engineering.jpg",
+      imgAlt: "",
     },
     {
       title: "Medical Equipment and Healthcare (In Different Locations)",
@@ -84,6 +90,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "Link the medical technology developments with the healthcare sector.",
       image: "/images/Invest-Images/SubPages/invest/medical.jpg",
+      imgAlt: "",
     },
     {
       title: "Education and Training Fairs",
@@ -91,6 +98,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "Attract the vast number of students who are in need of educational services to the megaexpo of training fairs.",
       image: "/images/Invest-Images/SubPages/invest/education.jpg",
+      imgAlt: "",
     },
 
     {
@@ -99,6 +107,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "People who work in real estate or construct their own homes would find this expo helpful.",
       image: "/images/Invest-Images/SubPages/Consumer/furniture.jpg",
+      imgAlt: "",
     },
     {
       title: "Fashion and Lifestyle (At Different Hotels and Locations)",
@@ -106,6 +115,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "Invest in this market to reach the retail- and fashion-conscious customer base.",
       image: "/images/Invest-Images/SubPages/Consumer/fashion.jpg",
+      imgAlt: "",
     },
     {
       title: "Food and Beverage Expos (Different Locations)",
@@ -113,6 +123,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "Teach people to produce or sell your food products and beverages to capitalize on the city's thriving culinary culture.",
       image: "/images/Invest-Images/SubPages/Consumer/food.jpg",
+      imgAlt: "",
     },
     {
       title: "Arts and Crafts (At Different Locations) ",
@@ -120,6 +131,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "Help out local artists and make connections with art lovers.",
       image: "/images/Invest-Images/SubPages/Consumer/arts.jpg",
+      imgAlt: "",
     },
     {
       title: "Travel and Tourism Expos (At Different Locations)",
@@ -127,6 +139,7 @@ export default function InvestExhibitionsChennai() {
       description:
         "To happen networking with the expanding travel and hospitality industry, investing in this sector is mandatory.",
       image: "/images/Invest-Images/SubPages/Consumer/travel.jpg",
+      imgAlt: "",
     },
   ];
 
@@ -269,7 +282,7 @@ export default function InvestExhibitionsChennai() {
         <div>
           <img
             src="/images/Invest-Images/SubPages/exhibitions-banner.jpg"
-            alt=""
+            alt="finance in chennai"
           />
         </div>
         <div className="accodoamationBannerContainer">
@@ -363,7 +376,7 @@ export default function InvestExhibitionsChennai() {
                         <img
                           className="buildingImage"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                         />
                       </>
                     ) : (
@@ -371,7 +384,7 @@ export default function InvestExhibitionsChennai() {
                         <img
                           className="buildingImage1"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                           style={{ cursor: "default" }}
                         />
                         <div
@@ -458,7 +471,7 @@ export default function InvestExhibitionsChennai() {
                                 <img
                                   className="buildingImage w-full md:w-1/2"
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                               </>
                             ) : (
@@ -466,7 +479,7 @@ export default function InvestExhibitionsChennai() {
                                 <img
                                   className="buildingImage1 w-full md:w-1/2"
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                                 <div className="builidngContent1">
                                   <h3 className="text-xl font-semibold">

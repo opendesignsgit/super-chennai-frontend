@@ -292,7 +292,7 @@ export default function EVMobilityinChennai() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/Electric-Vehicles-banner.jpg"
-            alt=""
+            alt="ev cars in chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">

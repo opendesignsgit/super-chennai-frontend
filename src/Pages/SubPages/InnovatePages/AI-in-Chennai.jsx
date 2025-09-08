@@ -43,6 +43,7 @@ export default function AIinChennai() {
                 "Rising number of AI-first startups in healthcare, SaaS, fintech, and industrial automation",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why Chennai.svg",
+              imgAlt: "",
             },
           ],
         },
@@ -113,6 +114,7 @@ export default function AIinChennai() {
                 "Works on cancer genomics, smart cities, language models, and self-driving systems",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/IIT Madras.svg",
+              imgAlt: "",
             },
             {
               title: "Anna University",
@@ -121,6 +123,7 @@ export default function AIinChennai() {
                 "Offers M.Tech and Ph.D. programs in AI/ML",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Anna University.svg",
+              imgAlt: "Anna University",
             },
             {
               title: "Apollo Hospitals AI Lab (Chennai HQ)",
@@ -129,6 +132,7 @@ export default function AIinChennai() {
                 "Collaborating with IBM Watson and Microsoft Healthcare teams",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Apollo Hospitals AI Lab (Chennai HQ).svg",
+              imgAlt: "apollo hospitals chennai",
             },
           ],
         },
@@ -206,6 +210,7 @@ export default function AIinChennai() {
               note2:
                 "Chennai isn’t just using AI. It’s building responsible, useful, and deeply local intelligence — the kind that matters.",
               imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s AI Momentum.svg",
+              imgAlt: "",
             },
           ],
         },
@@ -378,6 +383,7 @@ export default function AIinChennai() {
                 "AI in Chennai isn’t scattered. It’s clustered, smart, and quietly powerful.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Where AI Lives, Learns & Leads.svg",
+              imgAlt: "",
             },
             {
               title: "Top 6 AI Activity Zones",
@@ -385,6 +391,7 @@ export default function AIinChennai() {
                 "You can visualize this as a color-gradient heat map (from cool to hot) based on AI density — ideally layered over Google Maps or Mapbox. Here's the content breakdown:",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Top 6 AI Activity Zones.svg",
+              imgAlt: "",
             },
             {
               title: "Tidel Park & OMR Tech Corridor",
@@ -402,6 +409,7 @@ export default function AIinChennai() {
                 "Freshworks, SmartBots, Ganit.ai, Vuram, Draup",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Tidel Park & OMR Tech Corridor.svg",
+              imgAlt: "tidel park chennai",
             },
             {
               title: "IIT Madras Zone – Adyar / Taramani",
@@ -419,6 +427,7 @@ export default function AIinChennai() {
                 "RBCDSAI, Fabheads Automation, Tvasta, Detect, GYAN.ai",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/IIT Madras Zone–Adyar-Taramani.svg",
+              imgAlt: "IIT madras",
             },
             {
               title: "Guindy – Anna University Belt",
@@ -436,6 +445,7 @@ export default function AIinChennai() {
                 "Anna University AI Lab, Ishitva, Qube Cinema, Lucid Imaging",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Guindy – Anna University Belt.svg",
+              imgAlt: "",
             },
             {
               title: "Nungambakkam – Kilpauk Zone",
@@ -453,6 +463,7 @@ export default function AIinChennai() {
                 "Lucid Imaging, private hospital AI pilots",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Nungambakkam–Kilpauk Zone.svg",
+              imgAlt: "",
             },
             {
               title: "Ambattur – Industrial Belt",
@@ -469,6 +480,7 @@ export default function AIinChennai() {
                 "AI + IoT integration, MSME pilots, affordable automation",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Ambattur–Industrial Belt.svg",
+              imgAlt: "",
             },
             {
               title: "Tambaram – MedTech & EdTech Nucleus",
@@ -485,6 +497,7 @@ export default function AIinChennai() {
                 "Miko, SRM AI Lab, VIT Healthcare Research",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Tambaram – MedTech & EdTech Nucleus.svg",
+              imgAlt: "",
             },
           ],
         },
@@ -509,7 +522,7 @@ export default function AIinChennai() {
   }, []);
   return (
     <>
-        <Helmet>
+      <Helmet>
         <title>AI Companies in Chennai | AI Solutions Chennai</title>
         <meta
           name="description"
@@ -590,7 +603,7 @@ export default function AIinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.imgAlt} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -664,7 +677,7 @@ export default function AIinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.imgAlt} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -789,7 +802,7 @@ export default function AIinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.imgAlt} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -901,7 +914,7 @@ export default function AIinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.imgAlt} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

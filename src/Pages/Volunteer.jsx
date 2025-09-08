@@ -34,15 +34,16 @@ export default function Volunteer() {
       description:
         " Utilize your technological expertise to assist Super Chennai. Help with data analysis, site design, or social media to create a virtual influence throughout the city.",
       image: "/images/Volunteer-Images/BacameAvolunterImage0.png",
+      imgAlt: "",
       linkText: "Enquire Now",
       linkUrl: "/digital",
-      altTag: "Chennai Volunteers",
     },
     {
       title: "EVENTS",
       description:
         "Join Chennai's dynamic scene! Assist in planning and directing charity drives, festivals, and local events to foster community bonds and create enduring memories.",
       image: "/images/Volunteer-Images/BacameAvolunterImage1.png",
+      imgAlt: "",
       linkText: "Enquire Now",
       linkUrl: "/education",
     },
@@ -51,6 +52,7 @@ export default function Volunteer() {
       description:
         "Show off your storytelling skills! Provide captivating textual and graphic material for Super Chennai to enhance the message and influence on the community.",
       image: "/images/Volunteer-Images/BacameAvolunterImage2.png",
+      imgAlt: "madan gowri chennai",
       linkText: "Enquire Now",
       linkUrl: "/health",
     },
@@ -59,6 +61,7 @@ export default function Volunteer() {
       description:
         "Chennai Needs Your Creativity!Help us paint and design public spaces. Volunteer to bring colorful designs, murals, and artistic flair to the city. Help make Chennai a canvas of creativity.",
       image: "/images/Volunteer-Images/design-artBanner.png",
+      imgAlt: "design art in chennai",
       linkText: "Enquire Now",
       linkUrl: "/environment",
     },
@@ -67,6 +70,7 @@ export default function Volunteer() {
       description:
         " Show off your creative abilities! Create assets, adorn locations, or oversee art activities for Chennai projects that enhance the visual environment of the city.",
       image: "/images/Volunteer-Images/BacameAvolunterImage3.png",
+      imgAlt: "irfans view chennai",
       linkText: "Enquire Now",
       linkUrl: "/environment",
     },
@@ -75,6 +79,7 @@ export default function Volunteer() {
       description:
         "Make effective use of your platform! Encourage civic involvement within your network and spread the word about Chennai's events and concerns.",
       image: "/images/Volunteer-Images/BacameAvolunterImage4.png",
+      imgAlt: "raju venkatraman chennai",
       linkText: "Enquire Now",
       linkUrl: "/women",
     },
@@ -213,7 +218,10 @@ export default function Volunteer() {
         <div className="VolunteerMainContainer">
           <div className="volunteerSectionBanner">
             <div className="VolunteerBannerImage">
-              <img src="/images/Volunteer-Images/volunteerBanner.png" alt="" />
+              <img
+                src="/images/Volunteer-Images/volunteerBanner.png"
+                alt="chennai volunteer"
+              />
             </div>
             <h3 className="voluntterContent">Volunteer</h3>
           </div>
@@ -253,7 +261,7 @@ export default function Volunteer() {
           <div className="volunteerRow">
             <img
               src="/images/Volunteer-Images/volunteerBannerImagesContent.png"
-              alt=""
+              alt="volunteer work in chennai"
             />
             <div className="volunteeerMainContent">
               <h3>Volunteer</h3>
@@ -304,7 +312,7 @@ export default function Volunteer() {
               <div className="DigitalSectionFLex" key={index}>
                 {index % 2 === 0 ? (
                   <>
-                    <img src={section.image} alt={section.altTag} />
+                    <img src={section.image} alt={section.imgAlt} />
                     <div className="BecamaAVolunterContentsSection">
                       <h3>{section.title}</h3>
                       <p>{section.description}</p>
@@ -326,7 +334,7 @@ export default function Volunteer() {
                         </a>
                       </div>
                     </div>
-                    <img src={section.image} alt={section.altTag} />
+                    <img src={section.image} alt={section.imgAlt} />
                   </>
                 )}
               </div>

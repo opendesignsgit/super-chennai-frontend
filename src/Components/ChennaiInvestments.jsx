@@ -421,6 +421,7 @@ export default function ChennaiInvestments() {
       description:
         "If you have expertise in any service or product, you can start your own business in an area where your target market is present and you can begin making money from the service you offer.",
       image: "/images/Invest-Images/SubPages/startup.jpg",
+      imgAlt: "startup chennai",
       link: "/investstartupschennai#InvestId",
     },
     {
@@ -430,6 +431,7 @@ export default function ChennaiInvestments() {
         "To increase their brand recognition, several brands open franchise across Chennai. In Chennai, several businesses are seeking investors to build franchises and offer training to operate them.",
       image:
         "/images/Invest-Images/SubPages/Food-and-Beverage/coffee-shops.jpg",
+      imgAlt: "coffee shop",
       link: "/investfranchisechennai#InvestId",
     },
     {
@@ -438,6 +440,7 @@ export default function ChennaiInvestments() {
       description:
         "Chennai offers a wealth of Renewable Energy investment prospects. Investigate wind energy along the shore. Study up on waste-to-energy.",
       image: "/images/Invest-Images/SubPages/solar/rooftop.jpg",
+      imgAlt: "solar companies in chennai",
       link: "/investrenewableenergychennai#InvestId",
     },
     {
@@ -446,6 +449,7 @@ export default function ChennaiInvestments() {
       description:
         "Since Chennai is a big metropolis, real estate values have skyrocketed.",
       image: "/images/Invest-Images/SubPages/real.jpg",
+      imgAlt: "realestate chennai",
       link: "/chennairealestate#InvestId",
     },
 
@@ -455,6 +459,7 @@ export default function ChennaiInvestments() {
       description:
         "Every older individual plans to spend their retirement in a contented and tranquil setting. For older folks, Chennai will be the ideal destination for relaxation and exploration.",
       image: "/images/Visit-Images/SubPages/Retirement-img.jpg",
+      imgAlt: "retirement community in chennai",
       link: "/investretirementchennai#InvestId",
     },
 
@@ -464,6 +469,7 @@ export default function ChennaiInvestments() {
       description:
         "The Tamilnadu government is now making investments in social welfare and industries. It is making money off of initiatives like industrial corridors and metro extension.",
       image: "/images/Invest-Images/SubPages/mepz.jpg",
+      imgAlt: "",
       link: "/investgovernmentinitiativeschennai#InvestId",
     },
 
@@ -473,6 +479,7 @@ export default function ChennaiInvestments() {
       description:
         "Investing money into investments is more than just investing. Spending time learning new things is also an investment.",
       image: "/images/Invest-Images/SubPages/invest/roc.jpg",
+      imgAlt: "",
       link: "/investformalitiesregulationschennai#InvestId",
     },
 
@@ -482,6 +489,7 @@ export default function ChennaiInvestments() {
       description:
         "Is it possible to invest in news? You certainly can. For the purpose of growing and reaching a larger audience, many news outlets require investors.",
       image: "/images/Invest-Images/SubPages/business-news-channels.jpg",
+      imgAlt: "",
       link: "/investnewschennai#InvestId",
     },
 
@@ -491,6 +499,7 @@ export default function ChennaiInvestments() {
       description:
         "There are a lot of events in Chennai that are looking for investors to make them look fantastic and draw large crowds.",
       image: "/images/Invest-Images/SubPages/invest-events.jpg",
+      imgAlt: "",
       link: "/investeventschennai#InvestId",
     },
 
@@ -501,6 +510,7 @@ export default function ChennaiInvestments() {
         "Since Chennai is a big metropolis, real estate values have skyrocketed.",
       image:
         "/images/Invest-Images/SubPages/Established-Trade/agricultural.jpg",
+      imgAlt: "agri tech companies in chennai",
       link: "/investexhibitionschennai#InvestId",
     },
   ];
@@ -626,11 +636,11 @@ export default function ChennaiInvestments() {
                           Read more
                         </Link>
                       </div>
-                      <img className="buildingImage" src={item.image} alt="" />
+                      <img className="buildingImage" src={item.image} alt={item.imgAlt} />
                     </>
                   ) : (
                     <>
-                      <img className="buildingImage1" src={item.image} alt="" />
+                      <img className="buildingImage1" src={item.image} alt={item.imgAlt} />
                       <div className="builidngContent1">
                         <h3>{item.title}</h3>
                         <h5>{item.description}</h5>

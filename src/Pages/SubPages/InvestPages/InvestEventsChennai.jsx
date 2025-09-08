@@ -38,6 +38,7 @@ export default function InvestEventsChennai() {
       description:
         "You can spend money on traditional decorations, attendee costumes, food, and other events.",
       image: "/images/Invest-Images/SubPages/Vibrant/margazhi.jpg",
+      imgAlt: "",
     },
     {
       title: "Pongal Celebrations",
@@ -45,6 +46,7 @@ export default function InvestEventsChennai() {
       description:
         "Indulge in these communal gatherings to provide city dwellers with cultural experiences.",
       image: "/images/Invest-Images/SubPages/Vibrant/pongal.jpg",
+      imgAlt: "pongal celebration",
     },
     {
       title: "Chennai Book Fair ",
@@ -52,6 +54,7 @@ export default function InvestEventsChennai() {
       description:
         "Invest in these book fairs to draw publishers and book enthusiasts and get the rewards.",
       image: "/images/Invest-Images/SubPages/Vibrant/chennai-book.jpg",
+      imgAlt: "",
     },
     {
       title: "Invest in the Natyanjali Dance Festival",
@@ -59,6 +62,7 @@ export default function InvestEventsChennai() {
       description:
         "Promote traditional classical dance in a noteworthy temple environment.",
       image: "/images/Invest-Images/SubPages/Vibrant/film-festivals.jpg",
+      imgAlt: "",
     },
     {
       title: "Invest in Film Festivals",
@@ -66,6 +70,7 @@ export default function InvestEventsChennai() {
       description:
         "Invest in film festivals that take place at several places to attract large and popular audiences.",
       image: "/images/Invest-Images/SubPages/Vibrant/film-festivals.jpg",
+      imgAlt: "",
     },
 
     {
@@ -74,6 +79,7 @@ export default function InvestEventsChennai() {
       description:
         "This 3-day event will happen frequently, once every 2 years, which attracts participants globally and showcases cutting-edge technologies.",
       image: "/images/Invest-Images/SubPages/Trade/trade-center.jpg",
+      imgAlt: "chennai trade center",
     },
     {
       title: "The Madras Trade Centre ",
@@ -81,6 +87,7 @@ export default function InvestEventsChennai() {
       description:
         " It is a gateway for companies looking to conduct business internationally and is now looking for active investors.",
       image: "/images/Invest-Images/SubPages/Trade/madras-trade-center.jpg",
+      imgAlt: "chennai trade center",
     },
     {
       title: "Agricultural Expos",
@@ -88,6 +95,7 @@ export default function InvestEventsChennai() {
       description:
         "Chennai is hosting a number of agricultural events to assist farmers, and investing here is the best course of action.",
       image: "/images/Invest-Images/SubPages/Trade/agricultural.jpg",
+      imgAlt: "",
     },
     {
       title: "Auto Expos ",
@@ -95,6 +103,7 @@ export default function InvestEventsChennai() {
       description:
         "These events are held in Chennai to boost the substantial worth of the city's automotive sector, and you are welcome to invest there if you so choose.",
       image: "/images/Invest-Images/SubPages/Trade/auto.jpg",
+      imgAlt: "",
     },
     {
       title: "Textile and Clothing Fairs (At Different Venues)",
@@ -102,6 +111,7 @@ export default function InvestEventsChennai() {
       description:
         "Draw in dress and clothing enthusiasts by investing in this industry and reaping the rewards.",
       image: "/images/Invest-Images/SubPages/Trade/textile.jpg",
+      imgAlt: "",
     },
     {
       title: "Music Concerts and Live Performances",
@@ -109,6 +119,7 @@ export default function InvestEventsChennai() {
       description:
         "Singers often perform live in Chennai. Additionally, this event looks for an investor to launch the show in style.",
       image: "/images/Invest-Images/SubPages/Growing/music.jpg",
+      imgAlt: "",
     },
     {
       title: "Food Festivals and Culinary Events",
@@ -116,6 +127,7 @@ export default function InvestEventsChennai() {
       description:
         "A lot of people prefer food expos. Over there, you could see that a lot of people were congested. If you like, you can invest here.",
       image: "/images/Invest-Images/SubPages/Growing/food.jpg",
+      imgAlt: "",
     },
     {
       title: "Athletic Events and Marathons",
@@ -123,6 +135,7 @@ export default function InvestEventsChennai() {
       description:
         "Young people who are interested in sports frequently decide to take part in marathons and other such activities. Invest here to earn from your returns.",
       image: "/images/Invest-Images/SubPages/Growing/athletic.jpg",
+      imgAlt: "",
     },
     {
       title: "Pop Culture Events and Comic Conventions",
@@ -130,6 +143,7 @@ export default function InvestEventsChennai() {
       description:
         "This is a developing and passionate sector where a lot of young people are drawn to other cultures, and you can invest in these kinds of events.",
       image: "/images/Invest-Images/SubPages/Growing/pop.jpg",
+      imgAlt: "",
     },
   ];
 
@@ -270,7 +284,7 @@ export default function InvestEventsChennai() {
         <div>
           <img
             src="/images/Invest-Images/SubPages/invest-events-banner.jpg"
-            alt=""
+            alt="investment in chennai"
           />
         </div>
         <div className="accodoamationBannerContainer">
@@ -355,7 +369,7 @@ export default function InvestEventsChennai() {
                           style={{ cursor: "default" }}
                           className="buildingImage"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                         />
                       </>
                     ) : (
@@ -364,7 +378,7 @@ export default function InvestEventsChennai() {
                           style={{ cursor: "default" }}
                           className="buildingImage1"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                         />
                         <div
                           className="builidngContent1"
@@ -450,7 +464,7 @@ export default function InvestEventsChennai() {
                                 <img
                                   className="buildingImage w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                               </>
                             ) : (
@@ -458,7 +472,7 @@ export default function InvestEventsChennai() {
                                 <img
                                   className="buildingImage1 w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                                 <div className="builidngContent1">
                                   <h3 className="text-xl font-semibold">

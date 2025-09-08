@@ -38,6 +38,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Chennai would gain from better public transit and higher property values along metro lines, which will also bring in money for you as an investor.",
       image: "/images/Invest-Images/SubPages/Infrastructure/metro.jpg",
+      imgAlt: "chennai metro",
     },
     {
       title: "New Flyovers and Roads",
@@ -45,6 +46,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Support initiatives to improve commuting times and lessen traffic congestion by building new flyovers and roads.",
       image: "/images/Invest-Images/SubPages/Infrastructure/new-flyovers.jpg",
+      imgAlt: "",
     },
     {
       title: "Drainage and Flood Management",
@@ -52,6 +54,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Enhance the city's resilience and lower the dangers of floods by wastewater management.",
       image: "/images/Invest-Images/SubPages/Infrastructure/drainage.jpg",
+      imgAlt: "",
     },
     {
       title: "Multimodal Transportation Hubs",
@@ -59,6 +62,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Take part in hubs that combine different transportation options, such as Guindy.",
       image: "/images/Invest-Images/SubPages/Infrastructure/multimodal.jpg",
+      imgAlt: "chennai bus terminal",
     },
     {
       title: "Adyar River Restoration",
@@ -66,6 +70,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "By improving the city's green areas and attractiveness, you can encourage environmental projects.",
       image: "/images/Invest-Images/SubPages/Infrastructure/adyar-river.jpg",
+      imgAlt: "adyar river",
     },
 
     {
@@ -74,6 +79,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Invest in Chennai's development as a major worldwide center for financial services.",
       image: "/images/Invest-Images/SubPages/Industrial/fintech.jpg",
+      imgAlt: "",
     },
     {
       title: "Aerospace",
@@ -81,6 +87,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Select the Aerospace and Defense Park (Sriperumbudur) and encourage the growth of the aerospace industry.",
       image: "/images/Invest-Images/SubPages/Industrial/aerospace.jpg",
+      imgAlt: "",
     },
     {
       title: "Tamil Nadu Defence Industrial Corridor",
@@ -88,6 +95,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "You could get your return on investment by investing in research, even in defense management.",
       image: "/images/Invest-Images/SubPages/Industrial/tamilnadu-defence.jpg",
+      imgAlt: "",
     },
     {
       title: "Micro, Small, and Medium-sized Companies (MSMEs)",
@@ -95,6 +103,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Invest in and support small businesses so they may expand and reap future benefits.",
       image: "/images/Invest-Images/SubPages/Industrial/micro.jpg",
+      imgAlt: "",
     },
 
     {
@@ -103,6 +112,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "To meet the rising demand for reasonably priced living spaces, they will be built in Chennai's suburbs.",
       image: "/images/Invest-Images/SubPages/Social/affordable.jpg",
+      imgAlt: "",
     },
     {
       title: "Healthcare Infrastructure",
@@ -110,6 +120,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Fund projects that promote public health and well-being by enhancements.",
       image: "/images/Invest-Images/SubPages/Social/healthcare.jpg",
+      imgAlt: "",
     },
     {
       title: "Education and Skill Development",
@@ -117,6 +128,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "It helps children in government schools learn; thus, investing here will be the greatest option.",
       image: "/images/Invest-Images/SubPages/Social/education.jpg",
+      imgAlt: "",
     },
     {
       title: "Waste Management",
@@ -124,6 +136,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Projects pertaining to environmental sustainability are carried out in specific areas where you can get involved and take part in initiatives aimed at creating a cleaner, greener city.",
       image: "/images/Invest-Images/SubPages/Social/waste.jpg",
+      imgAlt: "",
     },
   ];
 
@@ -252,14 +265,20 @@ export default function InvestGovernmentInitiativesChennai() {
     <>
       <Helmet>
         <title>Government Projects in Chennai - Super Chennai</title>
-        <meta name="description" content="With progressive government projects in Chennai, the city is evolving into a business-friendly, sustainable, and globally competitive investment destination." />
+        <meta
+          name="description"
+          content="With progressive government projects in Chennai, the city is evolving into a business-friendly, sustainable, and globally competitive investment destination."
+        />
         <link rel="canonical" href="/invest/government-projects-in-chennai" />
       </Helmet>
       {/*----------------Accodimation-Banner----------- */}
 
       <div className="accaodomationBannerSection">
         <div>
-          <img src="/images/Invest-Images/SubPages/mepz-banner.jpg" alt="" />
+          <img
+            src="/images/Invest-Images/SubPages/mepz-banner.jpg"
+            alt="investment in chennai"
+          />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
@@ -350,7 +369,7 @@ export default function InvestGovernmentInitiativesChennai() {
                         <img
                           className="buildingImage"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                         />
                       </>
                     ) : (
@@ -358,7 +377,7 @@ export default function InvestGovernmentInitiativesChennai() {
                         <img
                           className="buildingImage1"
                           src={item.image}
-                          alt=""
+                         alt={item.imgAlt}
                           style={{ cursor: "default" }}
                         />
                         <div
@@ -445,7 +464,7 @@ export default function InvestGovernmentInitiativesChennai() {
                                 <img
                                   className="buildingImage w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                               </>
                             ) : (
@@ -453,7 +472,7 @@ export default function InvestGovernmentInitiativesChennai() {
                                 <img
                                   className="buildingImage1 w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                                 <div className="builidngContent1">
                                   <h3 className="text-xl font-semibold">

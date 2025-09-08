@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 const slides = [
   {
     src: "/images/Innovate-Images/IT-Software-thum-big.jpg",
+    imgAlt: "it companies in chennai",
     title: "IT & Software Development ",
     content:
       "Using state-of-the-art products and services to drive global digital transformation.",
@@ -15,18 +16,21 @@ const slides = [
   },
   {
     src: "/images/Innovate-Images/Artificial-Intelligence-thum-big.jpg",
+    imgAlt: "AI companies in Chennai",
     title: "Artificial Intelligence & Machine Learning ",
     content: "Join us in exploring exciting opportunities and breakthroughs.",
     link: "/innovate/ai-companies-in-chennai",
   },
   {
     src: "/images/Innovate-Images/Electric-Vehicles-thum-big.jpg",
+    imgAlt: "ev vehicles in chennai",
     title: "Electric Vehicles (EVs) & Clean Technology ",
     content: "Discover how we’re revolutionizing industries across the globe.",
     link: "/innovate/ev-vehicles-in-chennai",
   },
   {
     src: "/images/Innovate-Images/Smart-City-thum-big.jpg",
+    imgAlt: "smart city chennai",
     title: "Smart City Initiatives ",
     content:
       "Learn more about the latest trends and innovations in technology.",
@@ -34,12 +38,14 @@ const slides = [
   },
   {
     src: "/images/Innovate-Images/Healthcare-Tech-thum-big.jpg",
+    imgAlt: "chennai healthcare services",
     title: "Healthcare Tech Innovations ",
     content: "Join us in exploring exciting opportunities and breakthroughs.",
     link: "/innovate/health-tech-in-chennai",
   },
   {
     src: "/images/Innovate-Images/Robotics-Automation-thum-big.jpg",
+    imgAlt: "robotics in chennai",
     title: "Robotics and Automation ",
     content: "Discover how we’re revolutionizing industries across the globe.",
     link: "/innovate/robotics-in-chennai",
@@ -47,12 +53,14 @@ const slides = [
 
   {
     src: "/images/Innovate-Images/Blockchain-Fintech-thum-big.jpg",
+    imgAlt: "blockchain course in chennai",
     title: "Blockchain and Fintech",
     content: "Discover how we’re revolutionizing industries across the globe.",
     link: "/innovate/blockchain-course-in-chennai",
   },
   {
     src: "/images/Innovate-Images/Automotive-Tech-thum-big.jpg",
+    imgAlt: "auto tech chennai",
     title: "Automotive Tech and R&D ",
     content:
       "Learn more about the latest trends and innovations in technology.",
@@ -60,18 +68,21 @@ const slides = [
   },
   {
     src: "/images/Innovate-Images/Education-Tech-thum-big.jpg",
+    imgAlt: "edutech chennai",
     title: "Education Tech",
     content: "Join us in exploring exciting opportunities and breakthroughs.",
     link: "/innovate/edutech-chennai",
   },
   {
     src: "/images/Innovate-Images/3D-Printing-Additive-Manufacturing-thum-big.jpg",
+    imgAlt: "3d printing chennai",
     title: "3D Printing and Additive Manufacturing",
     content: "Discover how we’re revolutionizing industries across the globe.",
     link: "/innovate/3d-printing-in-chennai",
   },
   {
     src: "/images/Innovate-Images/Augmented-Reality-Virtual-Reality-thum-thum-big.jpg",
+    imgAlt: "ar vr companies in chennai",
     title: "Augmented Reality (AR)",
     content:
       "Learn more about the latest trends and innovations in technology.",
@@ -79,6 +90,7 @@ const slides = [
   },
   {
     src: "/images/Innovate-Images/Agriculture-Tech-thum-big.jpg",
+    imgAlt: "agri tech companies in chennai",
     title: "Agriculture Tech",
     content: "Join us in exploring exciting opportunities and breakthroughs.",
     link: "/innovate/agri-tech-companies-in-chennai",
@@ -156,7 +168,7 @@ const InnovateSlider = () => {
                   <div className="InnovateSliderslick-item" key={index}>
                     <Link to={slide.link}>
                       <div className="image-wrapper">
-                        <img src={slide.src} alt={`Slide ${index + 1}`} />
+                        <img src={slide.src} alt={slide.imgAlt} />
                         <div className="text-overlay innovateSlideTxt">
                           <h2>{slide.title}</h2>
                           <p>{slide.content}</p>

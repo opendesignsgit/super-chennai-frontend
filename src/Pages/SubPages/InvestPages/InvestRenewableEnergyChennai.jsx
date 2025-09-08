@@ -38,6 +38,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "Take advantage of these government programs and save power costs for property owners by installing them where they are required.",
       image: "/images/Invest-Images/SubPages/solar/rooftop.jpg",
+      imgAlt: "",
     },
     {
       title: "Ground-mounted Solar Farms",
@@ -45,6 +46,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "Create a revenue stream and provide clean energy to the grid for huge utility-scale projects.",
       image: "/images/Invest-Images/SubPages/solar/ground.jpg",
+      imgAlt: "",
     },
     {
       title: "Solar Power for Industrial Units",
@@ -52,6 +54,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "Ambattur, Guindy, and Sriperumbudur are among the industrial estates that require solar electricity the most. You are able to supply manufacturers with sustainable and reasonably priced power solutions.",
       image: "/images/Invest-Images/SubPages/solar/industrial.jpg",
+      imgAlt: "solar companies in chennai",
     },
     {
       title: "Solar-Powered Water Pumps",
@@ -59,6 +62,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "To promote sustainable irrigation and lessen dependency on conventional power sources, you can target and install solar electricity in Chennai's agricultural areas.",
       image: "/images/Invest-Images/SubPages/solar/water-pumps.jpg",
+      imgAlt: "",
     },
     {
       title: "Hospitals and Educational Institutions",
@@ -66,6 +70,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "Support green projects in vital service sectors, including blood banks, medical clinics, labs, hospitals, and educational institutions.",
       image: "/images/Invest-Images/SubPages/solar/hospitals.jpg",
+      imgAlt: "chennai hospitals",
     },
 
     {
@@ -74,6 +79,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "These are places where wind speeds are feasible, maybe along the coast or in mountainous terrain. Invest in this firm and learn how to use wind to create power.",
       image: "/images/Invest-Images/SubPages/wind/wind-farms.jpg",
+      imgAlt: "",
     },
     {
       title: "Wind-solar Hybrid Projects",
@@ -81,6 +87,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "By combining solar and wind energy, these projects optimize energy production and grid stability.",
       image: "/images/Invest-Images/SubPages/wind/wind-solar.jpg",
+      imgAlt: "",
     },
     {
       title: "Small Wind Turbines",
@@ -88,6 +95,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "You could provide localized Renewable Energy solutions with these wind turbines, which are best suited for individual usage in coastal or elevated locations.",
       image: "/images/Invest-Images/SubPages/wind/small-wind-turbines.jpg",
+      imgAlt: "",
     },
     {
       title: "Wind Turbine Installation and Maintenance",
@@ -95,6 +103,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "Installing and maintaining wind turbines is appropriate for industrial locations where you can support the infrastructure for wind energy.",
       image: "/images/Invest-Images/SubPages/wind/installation-maintenance.jpg",
+      imgAlt: "",
     },
     {
       title: "Research and Development",
@@ -102,6 +111,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "To support industry improvements, if you are currently operating a wind energy installation, you can invest in research and development in academic and industrial areas.",
       image: "/images/Invest-Images/SubPages/wind/research-and-development.jpg",
+      imgAlt: "",
     },
 
     {
@@ -110,6 +120,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "You could install it for landowners or turn agricultural waste into electricity if you own agricultural property.",
       image: "/images/Invest-Images/SubPages/renewable/biomass-energy.jpg",
+      imgAlt: "",
     },
     {
       title: "Waste-to-Energy Plants",
@@ -117,6 +128,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "Municipal solid waste may be converted into energy for use in a variety of ways. It is intended for use in industrial areas.",
       image: "/images/Invest-Images/SubPages/renewable/waste-to-energy.jpg",
+      imgAlt: "",
     },
     {
       title: "Energy Storage Solutions",
@@ -124,6 +136,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "They facilitate the effective use of renewable energy sources and system stability. Putting money into this might benefit multiple organizations in different parts of Chennai.",
       image: "/images/Invest-Images/SubPages/renewable/energy-storage.jpg",
+      imgAlt: "",
     },
   ];
 
@@ -250,8 +263,7 @@ export default function InvestRenewableEnergyChennai() {
 
   return (
     <>
-
-          <Helmet>
+      <Helmet>
         <title>Solar Companies in Chennai | Chennai Wind Energy</title>
         <meta
           name="description"
@@ -265,7 +277,7 @@ export default function InvestRenewableEnergyChennai() {
         <div>
           <img
             src="/images/Invest-Images/SubPages/renewable-energy-banner.jpg"
-            alt=""
+            alt="investment companies in chennai"
           />
         </div>
         <div className="accodoamationBannerContainer">
@@ -340,24 +352,32 @@ export default function InvestRenewableEnergyChennai() {
                   <div className="bulidingSection" key={index}>
                     {index % 2 === 0 ? (
                       <>
-                        <div className="builidngContent"  style={{cursor:"default"}}>
+                        <div
+                          className="builidngContent"
+                          style={{ cursor: "default" }}
+                        >
                           <h3>{item.title}</h3>
                           <h5>{item.description}</h5>
                         </div>
                         <img
                           className="buildingImage"
                           src={item.image}
-                          alt=""
-                         style={{cursor:"default"}} />
+                          alt={item.imgAlt}
+                          style={{ cursor: "default" }}
+                        />
                       </>
                     ) : (
                       <>
                         <img
                           className="buildingImage1"
                           src={item.image}
-                          alt=""
-                         style={{cursor:"default"}}/>
-                        <div className="builidngContent1"  style={{cursor:"default"}}>
+                          alt={item.imgAlt}
+                          style={{ cursor: "default" }}
+                        />
+                        <div
+                          className="builidngContent1"
+                          style={{ cursor: "default" }}
+                        >
                           <h3>{item.title}</h3>
                           <h5>{item.description}</h5>
                         </div>
@@ -438,7 +458,7 @@ export default function InvestRenewableEnergyChennai() {
                                 <img
                                   className="buildingImage w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                               </>
                             ) : (
@@ -446,7 +466,7 @@ export default function InvestRenewableEnergyChennai() {
                                 <img
                                   className="buildingImage1 w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                                 <div className="builidngContent1">
                                   <h3 className="text-xl font-semibold">

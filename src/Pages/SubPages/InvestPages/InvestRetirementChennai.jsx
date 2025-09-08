@@ -399,7 +399,7 @@ export default function InvestRetirementChennai() {
         <div>
           <img
             src="/images/Invest-Images/SubPages/retirement-banner.jpg"
-            alt=""
+            alt="finance in chennai"
           />
         </div>
         <div className="accodoamationBannerContainer">

@@ -32,6 +32,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         "This is the company registration registrar that offers forms and rules where you may make a substantial income while also helping others.",
       image: "/images/Invest-Images/SubPages/invest/roc.jpg",
+      imgAlt: "",
     },
     {
       title: "Guidance Tamilnadu-Nungambakkam",
@@ -39,6 +40,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         "This agency provides export promotion and industrial guidance for Tamil Nadu, including assistance with registration and company startup.",
       image: "/images/Invest-Images/SubPages/invest/guidance.jpg",
+      imgAlt: "guidance tamilnadu",
     },
     {
       title: "SIDCO-Guindy",
@@ -46,6 +48,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         "It helps small and medium-sized enterprises. You could earn money by assisting certain small startup entrepreneurs with the procedures.",
       image: "/images/Invest-Images/SubPages/invest/sidco.jpg",
+      imgAlt: "sidco chennai",
     },
     {
       title: "Mca.gov.in",
@@ -53,6 +56,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         "It is the Ministry of Corporate Affairs' official website. By completing and registering, you can make money while also helping someone.",
       image: "/images/Invest-Images/SubPages/invest/sidco-1.jpg",
+      imgAlt: "",
     },
     {
       title: "Commercial Taxes Department",
@@ -60,6 +64,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         "This is in charge of state-level taxes such as the goods and services tax (GST) and offers information on registration and filing.",
       image: "/images/Invest-Images/SubPages/understanding/commerical-tax.jpg",
+      imgAlt: "",
     },
     {
       title: "Income Tax Department",
@@ -67,6 +72,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         "With offices for assessments and tax-related inquiries, you can serve as a guide for someone in need of income tax assistance.",
       image: "/images/Invest-Images/SubPages/understanding/income-tax.jpg",
+      imgAlt: "",
     },
     {
       title: "Qualified Tax Advisors",
@@ -74,6 +80,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         " If you have taxes, many may ask you for advice on proper filing and compliance.",
       image: "/images/Invest-Images/SubPages/understanding/roc.jpg",
+      imgAlt: "",
     },
     {
       title: "Tax Portals Online",
@@ -81,6 +88,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         "Work and complete their tasks on official websites for online tax payments, filing, and information access.",
       image: "/images/Invest-Images/SubPages/understanding/tax-portals.jpg",
+      imgAlt: "",
     },
   ];
 
@@ -207,8 +215,7 @@ export default function InvestFormalitiesRegulationsChennai() {
 
   return (
     <>
-
-          <Helmet>
+      <Helmet>
         <title>Law Firms in Chennai | Income Tax in Chennai</title>
         <meta
           name="description"
@@ -222,7 +229,7 @@ export default function InvestFormalitiesRegulationsChennai() {
         <div>
           <img
             src="/images/Invest-Images/SubPages/formalities-regulations-banner.jpg"
-            alt=""
+            alt="private finance in chennai"
           />
         </div>
         <div className="accodoamationBannerContainer">
@@ -311,7 +318,7 @@ export default function InvestFormalitiesRegulationsChennai() {
                         <img
                           className="buildingImage"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                         />
                       </>
                     ) : (
@@ -319,7 +326,7 @@ export default function InvestFormalitiesRegulationsChennai() {
                         <img
                           className="buildingImage1"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                           style={{ cursor: "default" }}
                         />
                         <div
@@ -406,7 +413,7 @@ export default function InvestFormalitiesRegulationsChennai() {
                                 <img
                                   className="buildingImage w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                               </>
                             ) : (
@@ -414,7 +421,7 @@ export default function InvestFormalitiesRegulationsChennai() {
                                 <img
                                   className="buildingImage1 w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                                 <div className="builidngContent1">
                                   <h3 className="text-xl font-semibold">

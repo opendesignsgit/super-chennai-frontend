@@ -23,6 +23,7 @@ export default function PG() {
       description:
         "Many PGs offer suitable accommodations for males, ranging from modest to well-equipped, close to sites of employment and education.",
       image: "/images/Work-Images/SubPages/For-Men.jpg",
+      imgAlt: "mens pg in chennai",
       linkText: "Explore More",
       linkUrl: "/digital",
     },
@@ -31,6 +32,7 @@ export default function PG() {
       description:
         "In terms of women, PGs in Chennai often provide a clean and safe living space, frequently with solely female residents.",
       image: "/images/Work-Images/SubPages/For-women.jpg",
+      imgAlt: "ladies pg in anna nagar",
       linkText: "Explore More",
       linkUrl: "/education",
     },
@@ -39,6 +41,7 @@ export default function PG() {
       description:
         "Some provide every convenience, like air conditioning, fully furnished rooms, television, an entertainment space, laundry facilities, etc. Some could just have access to facilities. Make an informed decision based on your requirements. ",
       image: "/images/Work-Images/SubPages/Amenities.jpg",
+      imgAlt: "pg in omr chennai",
       linkText: "Explore More",
       linkUrl: "/health",
     },
@@ -47,6 +50,7 @@ export default function PG() {
       description:
         "Based on your privacy needs, choose your room type and number of sharing people. Chennai offers a single, double and even multi occupancy rooms.",
       image: "/images/Work-Images/SubPages/Occupancy.jpg",
+      imgAlt: "best pg in velachery",
       linkText: "Explore More",
       linkUrl: "/environment",
     },
@@ -55,6 +59,7 @@ export default function PG() {
       description:
         "Select the type of room and number of people sharing it based on your privacy needs. Chennai has accommodations for one, two, or even more people. ",
       image: "/images/Work-Images/SubPages/Food.jpg",
+      imgAlt: "chennai restaurants",
       linkText: "Explore More",
       linkUrl: "/women",
     },
@@ -63,6 +68,7 @@ export default function PG() {
       description:
         "Location, amenities, and room occupancy all affect price and rental rates. Verify that the rent is within your means and learn about any extra fees associated with utilizing the facilities. ",
       image: "/images/Work-Images/SubPages/Rent.jpg",
+      imgAlt: "mens pg in vadapalani",
       linkText: "Explore More",
       linkUrl: "/youth",
     },
@@ -71,6 +77,7 @@ export default function PG() {
       description:
         " According to the PG owner, each PG has unique rules. Learn the ins and outs policies and timetables to guarantee a comfy and unquestionable stay.  ",
       image: "/images/Work-Images/SubPages/Rules-and-Regulations.jpg",
+      imgAlt: "pg hostel in ambattur",
       linkText: "Explore More",
       linkUrl: "/relief",
     },
@@ -79,105 +86,11 @@ export default function PG() {
       description:
         "A PG with CCTV surveillance, a physically fit security guard, and a helpful warden should always come first. Make sure you are there to protect yourself even if it is present. ",
       image: "/images/Work-Images/SubPages/Safety-and-Security.jpg",
+      imgAlt: "pg hostel in pallavaram",
       linkText: "Explore More",
       linkUrl: "/relief",
     },
-    // {
-    //   title: "Reviews/Ratings",
-    //   description:
-    //     "To learn about the past experiences of the locals and to visit the location, look for internet reviews and ratings of local businesses for that PG.",
-    //   image: "/images/Work-Images/SubPages/Ratings.jpg",
-    //   linkText: "Explore More",
-    //   linkUrl: "/relief",
-    // },
-    // {
-    //   title: "Contact Information",
-    //   description:
-    //     "Verify the person in charge's involvement. Additionally, confirm that they have given you the correct location and phone number to get in touch with them!",
-    //   image: "/images/Work-Images/SubPages/Contact-Information.jpg",
-    //   linkText: "Explore More",
-    //   linkUrl: "/relief",
-    // },
   ];
-
-  const images = [
-    {
-      src: "/images/Work-Images/SubPages/employment-slide.jpg",
-      title: "Business Permits",
-      link: "/work/business-registration-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/unicorns-slide.jpg",
-      title: "Unicorns",
-      link: "/work/unicorn-startups",
-    },
-    {
-      src: "/images/Work-Images/SubPages/co-workingspaces-slide.jpg",
-      title: "Co-working spaces",
-      link: "/work/coworking-space-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/PG-slide.jpg",
-      title: "Paying Guest",
-      link: "/work/pg-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Salaries-Benefits-slide.jpg",
-      title: "Salaries & Benefits",
-      link: "/work/chennai-job-salary",
-    },
-    {
-      src: "/images/Work-Images/SubPages/career-growth-slide.jpg",
-      title: "Career Growth",
-      link: "/work/job-opportunities-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Networking-slide.jpg",
-      title: "Networking",
-      link: "/networking",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Worklife-balance-slide.jpg",
-      title: "Work-Life balance",
-      link: "/work/working-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -212,7 +125,10 @@ export default function PG() {
 
         <div className="accaodomationBannerSection">
           <div>
-            <img src="/images/Work-Images/SubPages/PG.jpg" alt="" />
+            <img
+              src="/images/Work-Images/SubPages/PG.jpg"
+              alt="pg in chennai"
+            />
           </div>
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -262,7 +178,7 @@ export default function PG() {
               <div className="AccodoSectionFLex" key={index}>
                 {index % 2 === 0 ? (
                   <>
-                    <img src={section.image} alt={section.title} />
+                    <img src={section.image} alt={section.imgAlt} />
                     <div className="AccodContentsSection">
                       <h3>{section.title}</h3>
                       <p>{section.description}</p>
@@ -280,7 +196,7 @@ export default function PG() {
                         <a href={section.linkUrl}>{section.linkText}</a>
                       </div> */}
                     </div>
-                    <img src={section.image} alt={section.title} />
+                    <img src={section.image} alt={section.imgAlt} />
                   </>
                 )}
               </div>

@@ -14,41 +14,49 @@ export default function SliderWorkPage() {
       src: "/images/Work-Images/SubPages/employment-slide.jpg",
       title: "Business Permits",
       link: "/work/business-registration-in-chennai",
+      imgAlt: "career jobs in chennai",
     },
     {
       src: "/images/Work-Images/SubPages/unicorns-slide.jpg",
       title: "Unicorns",
       link: "/work/unicorn-startups",
+      imgAlt: "jobs in chennai",
     },
     {
       src: "/images/Work-Images/SubPages/co-workingspaces-slide.jpg",
       title: "Co-working spaces",
       link: "/work/coworking-space-in-chennai",
+      imgAlt: "cowork space in chennai",
     },
     {
       src: "/images/Work-Images/SubPages/PG-slide.jpg",
       title: "Paying Guest",
       link: "/work/pg-in-chennai",
+      imgAlt: "pg in guindy",
     },
     {
       src: "/images/Work-Images/SubPages/Salaries-Benefits-slide.jpg",
       title: "Salaries & Benefits",
       link: "/work/chennai-job-salary",
+      imgAlt: "",
     },
     {
       src: "/images/Work-Images/SubPages/career-growth-slide.jpg",
       title: "Career Growth",
       link: "/work/job-opportunities-in-chennai",
+      imgAlt: "",
     },
     {
       src: "/images/Work-Images/SubPages/Networking-slide.jpg",
       title: "Networking",
       link: "/networking",
+      imgAlt: "",
     },
     {
       src: "/images/Work-Images/SubPages/Worklife-balance-slide.jpg",
       title: "Work-Life balance",
       link: "/work/working-in-chennai",
+      imgAlt: "",
     },
   ];
 
@@ -131,7 +139,7 @@ export default function SliderWorkPage() {
                     >
                       <img
                         src={img.src}
-                        alt={`Slide ${index + 1}`}
+                        alt={img.imgAlt}
                         style={{
                           width: "100%",
                           height: "auto",

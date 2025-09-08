@@ -19,7 +19,8 @@ export default function EmploymentBusinessPermits() {
       sectionTitle: "Special Economic Zones (SEZs)",
       sectionDesc:
         "Special Economic Zones (SEZs)—export-oriented zones with fiscal benefits like duty exemptions, GST zero-rating, and simplified approvals.",
-      image: "/images/business permits/special-economic.jpg", 
+      image: "/images/business permits/special-economic.jpg",
+      imgAlt: "company registration in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -39,6 +40,7 @@ export default function EmploymentBusinessPermits() {
                 "Note: SEZs offer single-window clearance for faster setup.",
               ],
               imgs: "/images/Work-Images/SubPages/Icons/key-location.svg",
+              imgAlt: "",
             },
           ],
         },
@@ -49,6 +51,7 @@ export default function EmploymentBusinessPermits() {
       sectionDesc:
         "Domestic Tariff Areas (DTAs)—zones where businesses serve the Indian domestic market and operate under standard regulations.",
       image: "/images/business permits/domestic-tariff.jpg",
+      imgAlt: "business registration in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -69,6 +72,7 @@ export default function EmploymentBusinessPermits() {
                 "Special Notes: Operates under regular state & municipal laws. Most suitable for local-market businesses.",
               ],
               imgs: "/images/Work-Images/SubPages/Icons/key-location.svg",
+              imgAlt: "",
             },
           ],
         },
@@ -80,6 +84,7 @@ export default function EmploymentBusinessPermits() {
       sectionDesc:
         "SIPCOT develops industrial parks and infrastructure where both SEZs and Domestic Tariff Area (DTA) businesses can be located.",
       image: "/images/business permits/sipcot.jpg",
+      imgAlt: "private limited company registration in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -101,6 +106,7 @@ export default function EmploymentBusinessPermits() {
                 "Special Notes: SIPCOT assists in infrastructure but licensing is via state departments.",
               ],
               imgs: "/images/Work-Images/SubPages/Icons/key-features.svg",
+              imgAlt: "",
             },
           ],
         },
@@ -112,6 +118,7 @@ export default function EmploymentBusinessPermits() {
       sectionDesc:
         "SIDCO is a part of Tamil Nadu’s MSME ecosystem, offering affordable space and support for small businesses.",
       image: "/images/business permits/sidco.jpg",
+      imgAlt: "food license in chennai",
       tenantInfoSections: [
         {
           points: [
@@ -133,91 +140,13 @@ export default function EmploymentBusinessPermits() {
                 "Special Notes: SIPCOT assists in infrastructure but licensing is via state departments.",
               ],
               imgs: "/images/Work-Images/SubPages/Icons/key-features.svg",
+              imgAlt: "",
             },
           ],
         },
       ],
     },
   ];
-
-  const images = [
-    {
-      src: "/images/Work-Images/SubPages/employment-slide.jpg",
-      title: "Business Permits",
-      link: "/work/business-registration-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/unicorns-slide.jpg",
-      title: "Unicorns",
-      link: "/work/unicorn-startups",
-    },
-    {
-      src: "/images/Work-Images/SubPages/co-workingspaces-slide.jpg",
-      title: "Co-working spaces",
-      link: "/work/coworking-space-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/PG-slide.jpg",
-      title: "Paying Guest",
-      link: "/work/pg-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Salaries-Benefits-slide.jpg",
-      title: "Salaries & Benefits",
-      link: "/work/chennai-job-salary",
-    },
-    {
-      src: "/images/Work-Images/SubPages/career-growth-slide.jpg",
-      title: "Career Growth",
-      link: "/work/job-opportunities-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Networking-slide.jpg",
-      title: "Networking",
-      link: "/networking",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Worklife-balance-slide.jpg",
-      title: "Work-Life balance",
-      link: "/work/working-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -237,7 +166,7 @@ export default function EmploymentBusinessPermits() {
 
   return (
     <>
-          <Helmet>
+      <Helmet>
         <title>Business in chennai | Business Permits - Super Chennai</title>
         <meta
           name="description"
@@ -248,7 +177,10 @@ export default function EmploymentBusinessPermits() {
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
-          <img src="/images/Work-Images/SubPages/employment.jpg" alt="" />
+          <img
+            src="/images/Work-Images/SubPages/employment.jpg"
+            alt="job openings in chennai"
+          />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
               <h3> Business Permits </h3>
@@ -309,7 +241,7 @@ export default function EmploymentBusinessPermits() {
             key={index}
           >
             <div className="imgLeft">
-              <img src={section.image} alt={section.sectionTitle} />
+              <img src={section.image} alt={section.imgAlt} />
             </div>
             <div className="imgText flex items-center">
               <div className="imgcolTitle bg-[#682865] relative">
@@ -327,7 +259,7 @@ export default function EmploymentBusinessPermits() {
                   {tenant.points.map((item, j) => (
                     <div key={j} className="clcboxItemss flex mb-4">
                       <div className="clcboxIImg">
-                        <img src={item.imgs} alt={item.title} />
+                        <img src={item.imgs} alt={item.imgAlt} />
                       </div>
                       <div className="clcboxICont">
                         <h3>{item.title}</h3>
@@ -375,7 +307,6 @@ export default function EmploymentBusinessPermits() {
   );
 }
 
-
 // import { useState, useRef, useEffect } from "react";
 // import "../../../assets/Css/CostOfLiving.css";
 // import Search from "../../../Components/Search";
@@ -390,8 +321,6 @@ export default function EmploymentBusinessPermits() {
 //   const [scrollDir, setScrollDir] = useState("left");
 //   const lastScrollY = useRef(0);
 //   const bgTextRef = useRef(null);
-
- 
 
 //   const imageSections = [
 //     {
@@ -834,8 +763,8 @@ export default function EmploymentBusinessPermits() {
 
 //         {imageSections.map((section, index) => (
 //           <section
-//             className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
-//     ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+//             className={`imgcontent flex flex-wrap justify-center transition-colors duration-300
+//     ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"}
 //     ${
 //       index % 3 === 0
 //         ? "pattern-a"

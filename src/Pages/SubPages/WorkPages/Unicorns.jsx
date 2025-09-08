@@ -37,84 +37,7 @@ export default function Unicorns() {
     },
   ];
 
-  const images = [
-    {
-      src: "/images/Work-Images/SubPages/employment-slide.jpg",
-      title: "Business Permits",
-      link: "/work/business-registration-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/unicorns-slide.jpg",
-      title: "Unicorns",
-      link: "/work/unicorn-startups",
-    },
-    {
-      src: "/images/Work-Images/SubPages/co-workingspaces-slide.jpg",
-      title: "Co-working spaces",
-      link: "/work/coworking-space-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/PG-slide.jpg",
-      title: "Paying Guest",
-      link: "/work/pg-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Salaries-Benefits-slide.jpg",
-      title: "Salaries & Benefits",
-      link: "/work/chennai-job-salary",
-    },
-    {
-      src: "/images/Work-Images/SubPages/career-growth-slide.jpg",
-      title: "Career Growth",
-      link: "/work/job-opportunities-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Networking-slide.jpg",
-      title: "Networking",
-      link: "/networking",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Worklife-balance-slide.jpg",
-      title: "Work-Life balance",
-      link: "/work/working-in-chennai",
-    },
-  ];
 
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -147,7 +70,7 @@ export default function Unicorns() {
 
         <div className="accaodomationBannerSection">
           <div>
-            <img src="/images/Work-Images/SubPages/unicorns.jpg" alt="" />
+            <img src="/images/Work-Images/SubPages/unicorns.jpg" alt="wfh jobs in chennai" />
           </div>
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -195,7 +118,7 @@ export default function Unicorns() {
             <div className="clcscrlinLBox sticky top-0">
               <img
                 src="/images/Work-Images/SubPages/Possible-Unicorns.jpg"
-                alt=""
+                alt="remote jobs in chennai"
               />
               <div className="clcscrLtitle bg-[#7d377c] relative">
                 <h2 className="flex flex-col">

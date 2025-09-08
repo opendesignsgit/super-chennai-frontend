@@ -24,6 +24,7 @@ export default function CoworkingSpaces() {
       description:
         "Co-working spaces, where IT workers may work in startups, are found among the various IT tech enterprises.",
       image: "/images/Work-Images/SubPages/omr.jpg",
+      imgAlt: "co working space in chennai omr",
       linkText: "Explore More",
       linkUrl: "/digital",
     },
@@ -32,6 +33,7 @@ export default function CoworkingSpaces() {
       description:
         "Select a co-working space that is convenient for transportation so that you may draw in a diverse clientele of firms and professionals.",
       image: "/images/Work-Images/SubPages/guindy.jpg",
+      imgAlt: "coworking space in guindy",
       linkText: "Explore More",
       linkUrl: "/education",
     },
@@ -40,6 +42,7 @@ export default function CoworkingSpaces() {
       description:
         "The co-working facility has a prominent address attributed to its prime position, which also draws in business. Choose this location if you're looking for one with good connections.",
       image: "/images/Work-Images/SubPages/nungambakkam.jpg",
+      imgAlt: "office space in nungambakkam",
       linkText: "Explore More",
       linkUrl: "/health",
     },
@@ -48,6 +51,7 @@ export default function CoworkingSpaces() {
       description:
         "Additionally, Teynampet offers professionals a decent business area for accessibility and facilities, making it a central location.",
       image: "/images/Work-Images/SubPages/teynampet.jpg",
+      imgAlt: "coworking space in chennai",
       linkText: "Explore More",
       linkUrl: "/environment",
     },
@@ -56,6 +60,7 @@ export default function CoworkingSpaces() {
       description:
         " It is a well-known neighborhood with a well designed layout that provides coworking space for both professionals and corporations.",
       image: "/images/Work-Images/SubPages/anna-nagar.jpg",
+      imgAlt: "co working space in anna nagar",
       linkText: "Explore More",
       linkUrl: "/women",
     },
@@ -64,6 +69,7 @@ export default function CoworkingSpaces() {
       description:
         "Choose this if you're searching for a co-working space in a linked setting that is both residential and business. ",
       image: "/images/Work-Images/SubPages/adyar.jpg",
+      imgAlt: "office space for rent in adyar",
       linkText: "Explore More",
       linkUrl: "/youth",
     },
@@ -72,6 +78,7 @@ export default function CoworkingSpaces() {
       description:
         "It offers co-working space located in a commercially significant area and has connections to corporate areas and transit hubs. ",
       image: "/images/Work-Images/SubPages/thousand-lights.jpg",
+      imgAlt: "office space for rent in tambaram",
       linkText: "Explore More",
       linkUrl: "/relief",
     },
@@ -80,6 +87,7 @@ export default function CoworkingSpaces() {
       description:
         "Modern and stylish co-working spaces are available, together with the necessary infrastructure for startups and IT enterprises.",
       image: "/images/Work-Images/SubPages/perungudi.jpg",
+      imgAlt: "office space for rent in pallavaram",
       linkText: "Explore More",
       linkUrl: "/relief",
     },
@@ -88,6 +96,7 @@ export default function CoworkingSpaces() {
       description:
         "In addition to these hubs, co-working spaces are located in places like Alwarpet, Velachery, and Ambattur, which serve particular local populations and company requirements. ",
       image: "/images/Work-Images/SubPages/other-areas.jpg",
+      imgAlt: "office space in kodambakkam",
       linkText: "Explore More",
       linkUrl: "/relief",
     },
@@ -96,61 +105,11 @@ export default function CoworkingSpaces() {
       description:
         "Take into account the space's industry, surroundings, facilities, rent, and location. Find out whether that's where your target audience is.",
       image: "/images/Work-Images/SubPages/key-consideration.jpg",
+      imgAlt: "office space for rent in t nagar chennai",
       linkText: "Explore More",
       linkUrl: "/relief",
     },
   ];
-  const images = [
-    {
-      src: "/images/Work-Images/SubPages/employment-slide.jpg",
-      title: "Business Permits",
-      link: "/work/business-registration-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/unicorns-slide.jpg",
-      title: "Unicorns",
-      link: "/work/unicorn-startups",
-    },
-    {
-      src: "/images/Work-Images/SubPages/co-workingspaces-slide.jpg",
-      title: "Co-working spaces",
-      link: "/work/coworking-space-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/PG-slide.jpg",
-      title: "Paying Guest",
-      link: "/work/pg-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Salaries-Benefits-slide.jpg",
-      title: "Salaries & Benefits",
-      link: "/work/chennai-job-salary",
-    },
-    {
-      src: "/images/Work-Images/SubPages/career-growth-slide.jpg",
-      title: "Career Growth",
-      link: "/work/job-opportunities-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Networking-slide.jpg",
-      title: "Networking",
-      link: "/networking",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Worklife-balance-slide.jpg",
-      title: "Work-Life balance",
-      link: "/work/working-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -184,7 +143,10 @@ export default function CoworkingSpaces() {
 
       <div className="accaodomationBannerSection">
         <div>
-          <img src="/images/Work-Images/SubPages/co-workingspaces.jpg" alt="" />
+          <img
+            src="/images/Work-Images/SubPages/co-workingspaces.jpg"
+            alt="office rent in chennai"
+          />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
@@ -236,7 +198,7 @@ export default function CoworkingSpaces() {
             <div className="AccodoSectionFLex" key={index}>
               {index % 2 === 0 ? (
                 <>
-                  <img src={section.image} alt={section.title} />
+                  <img src={section.image} alt={section.imgAlt} />
                   <div className="AccodContentsSection">
                     <h3>{section.title}</h3>
                     <p>{section.description}</p>
@@ -254,7 +216,7 @@ export default function CoworkingSpaces() {
                       <a href={section.linkUrl}>{section.linkText}</a>
                     </div> */}
                   </div>
-                  <img src={section.image} alt={section.title} />
+                  <img src={section.image} alt={section.imgAlt} />
                 </>
               )}
             </div>

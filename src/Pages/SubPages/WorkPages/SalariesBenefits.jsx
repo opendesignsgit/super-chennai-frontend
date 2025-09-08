@@ -23,6 +23,7 @@ export default function SalariesBenefits() {
       description:
         "Workers in Chennai's IT industries receive better compensation than those in manufacturing. Accurate expectations will result from researching certain industries.",
       image: "/images/Work-Images/SubPages/Salary-Ranges-by-Industry.jpg",
+      imgAlt: "cognizant chennai salary",
       linkText: "Explore More",
       linkUrl: "/digital",
     },
@@ -31,6 +32,7 @@ export default function SalariesBenefits() {
       description:
         " Freshers will start off with a modest wage of between 8,000 and 10,000, which will be raised gradually depending on their performance and advancement.",
       image: "/images/Work-Images/SubPages/Experience-Level.jpg",
+      imgAlt: "web designer salary in chennai",
       linkText: "Explore More",
       linkUrl: "/education",
     },
@@ -42,105 +44,30 @@ export default function SalariesBenefits() {
       title: "Healthcare",
       para: "Some businesses consider the health of their employees and provide health insurance coverage to ensure that they have access to medical treatment. ",
       imgs: "/images/Work-Images/SubPages/Icons/Healthcare.svg",
+      imgAlt: "",
     },
     {
       id: 2,
       title: "Retirement Plans",
       para: " In Chennai, provident funds (PF) are a popular retirement perk; however, some companies also provide pension plans or other gratuities. ",
       imgs: "/images/Work-Images/SubPages/Icons/Retirement-Plans.svg",
+      imgAlt: "",
     },
     {
       id: 3,
       title: "Paid Time Off",
       para: " Some employers offer paid sick leave as an addition to the job package in an effort to increase employee confidence and productivity. ",
       imgs: "/images/Work-Images/SubPages/Icons/Paid-Time-Off.svg",
+      imgAlt: "",
     },
     {
       id: 4,
       title: "Other Perks",
       para: "Free taxis, lunch vouchers, bonuses, and complimentary movie tickets for professional growth are extra perks in Chennai.",
       imgs: "/images/Work-Images/SubPages/Icons/Other-Perks.svg",
+      imgAlt: "",
     },
   ];
-
-  const images = [
-    {
-      src: "/images/Work-Images/SubPages/employment-slide.jpg",
-      title: "Business Permits",
-      link: "/work/business-registration-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/unicorns-slide.jpg",
-      title: "Unicorns",
-      link: "/work/unicorn-startups",
-    },
-    {
-      src: "/images/Work-Images/SubPages/co-workingspaces-slide.jpg",
-      title: "Co-working spaces",
-      link: "/work/coworking-space-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/PG-slide.jpg",
-      title: "Paying Guest",
-      link: "/work/pg-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Salaries-Benefits-slide.jpg",
-      title: "Salaries & Benefits",
-      link: "/work/chennai-job-salary",
-    },
-    {
-      src: "/images/Work-Images/SubPages/career-growth-slide.jpg",
-      title: "Career Growth",
-      link: "/work/job-opportunities-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Networking-slide.jpg",
-      title: "Networking",
-      link: "/networking",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Worklife-balance-slide.jpg",
-      title: "Work-Life balance",
-      link: "/work/working-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -177,7 +104,7 @@ export default function SalariesBenefits() {
           <div>
             <img
               src="/images/Work-Images/SubPages/Salaries-&-Benefits.jpg"
-              alt=""
+              alt="chennai job salary"
             />
           </div>
           <div className="accodoamationBannerContainer">
@@ -230,7 +157,7 @@ export default function SalariesBenefits() {
               <div className="AccodoSectionFLex" key={index}>
                 {index % 2 === 0 ? (
                   <>
-                    <img src={section.image} alt={section.title} />
+                    <img src={section.image} alt={section.imgAlt} />
                     <div className="AccodContentsSection">
                       <h3>{section.title}</h3>
                       <p>{section.description}</p>
@@ -248,7 +175,7 @@ export default function SalariesBenefits() {
                         <a href={section.linkUrl}>{section.linkText}</a>
                       </div> */}
                     </div>
-                    <img src={section.image} alt={section.title} />
+                    <img src={section.image} alt={section.imgAlt} />
                   </>
                 )}
               </div>
@@ -261,7 +188,7 @@ export default function SalariesBenefits() {
             <div className="clcscrlinLBox sticky top-0">
               <img
                 src="/images/Work-Images/SubPages/Employee-Benefits.jpg"
-                alt=""
+                alt="high paying it companies in chennai"
               />
               <div className="clcscrLtitle bg-[#7d377c] relative">
                 <h2 className="flex flex-col">
@@ -282,7 +209,7 @@ export default function SalariesBenefits() {
               {users.map((user) => (
                 <div key={user.id} className="clcboxItemss flex">
                   <div className="clcboxIImg">
-                    <img src={user.imgs} alt={user.title} />
+                    <img src={user.imgs} alt={user.imgAlt} />
                   </div>
                   <div className="clcboxICont">
                     <h3>{user.title}</h3>

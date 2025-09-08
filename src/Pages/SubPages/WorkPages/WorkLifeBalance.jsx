@@ -24,18 +24,21 @@ export default function WorkLifeBalance() {
         "Scheduling quality time, using family-friendly facilities, going on family outings, unwinding, and—above all—establishing boundaries between your personal and professional lives are all ways to reconcile work and family.",
       label: "Family Man",
       image: "/images/Work-Images/SubPages/Family-Man.jpg",
+      imgAlt: "best work life balance companies in chennai",
       benefits: [
         {
           id: 1,
           title: "Set priorities and make a schedule",
           para: "arrange your family time and activities and make memories to make sure you have time for them even when you have obligations.",
           imgs: "/images/Work-Images/SubPages/Icons/set-priorities.svg",
+          imgAlt: "",
         },
         {
           id: 2,
           title: "Set Clear limits",
           para: "To safeguard Chennai residents' personal lives, clearly define and convey the limits between work and family time.",
           imgs: "/images/Work-Images/SubPages/Icons/Set-Clear-limits.svg",
+          imgAlt: "",
         },
       ],
     },
@@ -46,24 +49,28 @@ export default function WorkLifeBalance() {
         "Work-life balance is improved for bachelors in Chennai by engaging in personal interests, going to the gym, and spending time with friends whenever feasible.",
       label: "Bachelor",
       image: "/images/Work-Images/SubPages/Bachelor.jpg",
+      imgAlt: "work from home chennai",
       benefits: [
         {
           id: 1,
           title: "Hobbies and Interests",
           para: "Engaging in hobbies and personal interests outside of work brings relaxation and enjoyment for bachelors in Chennai.",
           imgs: "/images/Work-Images/SubPages/Icons/Hobbies-and-Interests.svg",
+          imgAlt: "",
         },
         {
           id: 2,
           title: "Social Network",
           para: "For bachelors in Chennai, forming deep bonds with friends and peers provides fun and social support.",
           imgs: "/images/Work-Images/SubPages/Icons/Social-Network.svg",
+          imgAlt: "",
         },
         {
           id: 2,
           title: "Flexible Work Options",
           para: "Bachelors can enjoy more control over their personal time if flexible work arrangements are available in Chennai.",
           imgs: "/images/Work-Images/SubPages/Icons/Flexible-Work-Options.svg",
+          imgAlt: "",
         },
       ],
     },
@@ -74,107 +81,32 @@ export default function WorkLifeBalance() {
         "For single women in Chennai, work-life balance entails putting self-care first, creating a community of support, and establishing clear professional boundaries to protect personal time.",
       label: "Spinster",
       image: "/images/Work-Images/SubPages/Spinster.jpg",
+      imgAlt: "chennai home based data entry jobs",
       benefits: [
         {
           id: 1,
           title: "Self-Care",
           para: "Giving self-care tasks like hair and skin care, i.e., grooming themselves, a top priority, among many other things.",
           imgs: "/images/Work-Images/SubPages/Icons/Self-Care.svg",
+          imgAlt: "",
         },
         {
           id: 2,
           title: "Supportive Community",
           para: " Establishing a positive social circle is crucial to achieving emotional well-being.",
           imgs: "/images/Work-Images/SubPages/Icons/Supportive-Community.svg",
+          imgAlt: "",
         },
         {
           id: 3,
           title: "Personal Time",
           para: " To safeguard their personal time, single people must set clear boundaries regardless of the nature of their employment.",
           imgs: "/images/Work-Images/SubPages/Icons/personal-time.svg",
+          imgAlt: "",
         },
       ],
     },
   ];
-
-  const images = [
-    {
-      src: "/images/Work-Images/SubPages/employment-slide.jpg",
-      title: "Business Permits",
-      link: "/work/business-registration-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/unicorns-slide.jpg",
-      title: "Unicorns",
-      link: "/work/unicorn-startups",
-    },
-    {
-      src: "/images/Work-Images/SubPages/co-workingspaces-slide.jpg",
-      title: "Co-working spaces",
-      link: "/work/coworking-space-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/PG-slide.jpg",
-      title: "Paying Guest",
-      link: "/work/pg-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Salaries-Benefits-slide.jpg",
-      title: "Salaries & Benefits",
-      link: "/work/chennai-job-salary",
-    },
-    {
-      src: "/images/Work-Images/SubPages/career-growth-slide.jpg",
-      title: "Career Growth",
-      link: "/work/job-opportunities-in-chennai",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Networking-slide.jpg",
-      title: "Networking",
-      link: "/networking",
-    },
-    {
-      src: "/images/Work-Images/SubPages/Worklife-balance-slide.jpg",
-      title: "Work-Life balance",
-      link: "/work/working-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -207,7 +139,10 @@ export default function WorkLifeBalance() {
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
-          <img src="/images/Work-Images/SubPages/Worklife-balance.jpg" alt="" />
+          <img
+            src="/images/Work-Images/SubPages/Worklife-balance.jpg"
+            alt="working in chennai"
+          />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
               <h3>Work-Life Balance </h3>
@@ -266,7 +201,7 @@ export default function WorkLifeBalance() {
           >
             <div className="clcscrlCol clcscrlLft relative">
               <div className="clcscrlinLBox sticky top-0">
-                <img src={section.image} alt={section.sectionTitle} />
+                <img src={section.image} alt={section.imgAlt} />
                 <div className="clcscrLtitle bg-[#682865] relative">
                   <h2 className="flex flex-col text-white">
                     <small>{section.sectionTitleLine1}</small>
@@ -282,7 +217,7 @@ export default function WorkLifeBalance() {
                 {section.benefits.map((item) => (
                   <div key={item.id} className="clcboxItemss flex">
                     <div className="clcboxIImg">
-                      <img src={item.imgs} alt={item.title} />
+                      <img src={item.imgs} alt={item.imgAlt} />
                     </div>
                     <div className="clcboxICont">
                       <h3>{item.title}</h3>

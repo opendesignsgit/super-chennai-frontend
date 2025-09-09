@@ -208,6 +208,30 @@ const detailsections = [
           },
         ],
       },
+      {
+        name: "22 Constanzaa",
+        description:
+          "A Mediterranean cafe with a lively vibe, serving healthy dishes inspired by flavors from over 22 countries.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/ok9A3sQiUdjASJt29",
+          },
+        ],
+      },
+      {
+        name: "The Tuscan Table",
+        description:
+          "An artisanal boulangerie and cafe offering authentic French flavors with a contemporary twist.",
+        subDescription: "",
+        locations: [
+          {
+            label: "RA Puram",
+            link: "https://maps.app.goo.gl/wVDngAoj4gLMeBaV9",
+          },
+        ],
+      },
     ],
   },
   {
@@ -403,6 +427,82 @@ const detailsections = [
           {
             label: "Alwarpet",
             link: "https://maps.app.goo.gl/AYnZPXWQJZn6bbVA9",
+          },
+        ],
+      },
+      {
+        name: "DOU",
+        description:
+          "A place where elegant decor and efficient service come together, offering refreshing drinks and a relaxing, inviting ambiance.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/siwCa3TyKWrFnz1z5",
+          },
+          {
+            label: "Nungambakkam ",
+            link: "https://maps.app.goo.gl/rwUv1BqQ3fDNHSgy5",
+          },
+        ],
+      },
+      {
+        name: "Eko - Lyee Cafe",
+        description:
+          "A mindful bistro offering nourishing, plant-forward dishes crafted from wholesome ingredients to rejuvenate both body and spirit. ",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/k8L6WrzeRuMTwvNR7",
+          },
+        ],
+      },
+      {
+        name: "Go Native",
+        description:
+          "A sustainable lifestyle brand blending mindful living with modern style, offering farm-to-table dining experiences and eco-conscious products for a greener, healthier lifestyle",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/HSrzNeTj8MgLz9Di9",
+          },
+        ],
+      },
+      {
+        name: "Go Native",
+        description:
+          "A sustainable lifestyle brand blending mindful living with modern style, offering farm-to-table dining experiences and eco-conscious products for a greener, healthier lifestyle",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/HSrzNeTj8MgLz9Di9",
+          },
+        ],
+      },
+      {
+        name: "Kup Budan House",
+        description:
+          "A modern culinary space combining fresh flavors with hand-crafted coffee in a stylish ambiance.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/GXMUfCMAK8ZP6JHBA",
+          },
+        ],
+      },
+      {
+        name: "Les Amis",
+        description:
+          "Exceptional dining and desserts await—enjoy dark chocolate coffee, strawberry galette, waffles, cheesecake, and creamy gelato in a perfect atmosphere.",
+        subDescription: "",
+        locations: [
+          {
+            label: "RA Puram",
+            link: "https://maps.app.goo.gl/T8FGLgjZzvHfWRcQ8",
           },
         ],
       },

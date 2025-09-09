@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import InvestSlider from "./InvestSlider";
 
 export default function InvestFranchiseChennai() {
   const investmentCategories = [
@@ -39,6 +40,7 @@ export default function InvestFranchiseChennai() {
         "Since investing in the food industry is scorching, you could discover a franchise and begin operating it effectively.",
       image:
         "/images/Invest-Images/SubPages/Food-and-Beverage/quick-service.jpg",
+      imgAlt: "food beverages",
     },
     {
       title: "Coffee shops and cafes",
@@ -47,6 +49,7 @@ export default function InvestFranchiseChennai() {
         "By offering a range of coffees, you could lure coffee lovers and market your franchise to them.",
       image:
         "/images/Invest-Images/SubPages/Food-and-Beverage/coffee-shops.jpg",
+      imgAlt: "coffee shop",
     },
     {
       title: "Ice cream and dessert shops",
@@ -54,6 +57,7 @@ export default function InvestFranchiseChennai() {
       description:
         "Chennai City's clientele for ice cream and sweets is varied.",
       image: "/images/Invest-Images/SubPages/Food-and-Beverage/ice-cream.jpg",
+      imgAlt: "ice cream shop",
     },
     {
       title: "Food outlets",
@@ -62,6 +66,7 @@ export default function InvestFranchiseChennai() {
         "For a higher return on investment, open your business in areas where a lot of people congregate, including malls and high streets.",
       image:
         "/images/Invest-Images/SubPages/Food-and-Beverage/food-outlets.jpg",
+      imgAlt: "restaurants chennai",
     },
 
     {
@@ -70,6 +75,7 @@ export default function InvestFranchiseChennai() {
       description:
         "In Chennai, many people get dependent on stylish clothing to keep themselves presentable. This will be the ideal investment choice.",
       image: "/images/Invest-Images/SubPages/Retail-and-service/fashion.jpg",
+      imgAlt: "",
     },
 
     {
@@ -79,6 +85,7 @@ export default function InvestFranchiseChennai() {
         "A lot of tutoring centers franchise their brand to charge tuition to all schoolchildren in order to give them a quality education and to build their reputation.",
       image:
         "/images/Invest-Images/SubPages/Retail-and-service/residential.jpg",
+      imgAlt: "",
     },
     {
       title: "Health and wellness centers",
@@ -86,6 +93,7 @@ export default function InvestFranchiseChennai() {
       description:
         "If you want to work with a franchise and offer fitness and well-being to people in Chennai, pick health and wellness centers in residential and commercial locations.",
       image: "/images/Invest-Images/SubPages/Retail-and-service/health.jpg",
+      imgAlt: "",
     },
     {
       title: "Beauty and personal care services",
@@ -93,6 +101,7 @@ export default function InvestFranchiseChennai() {
       description:
         "Meet the need for grooming and self-care in these locations.",
       image: "/images/Invest-Images/SubPages/Retail-and-service/beauty.jpg",
+      imgAlt: "",
     },
 
     {
@@ -101,6 +110,7 @@ export default function InvestFranchiseChennai() {
       description:
         "There are a lot of pet owners in the Chennai area. You can run a profitable franchise if you open one in a residential location.",
       image: "/images/Invest-Images/SubPages/niche/residential-pet.jpg",
+      imgAlt: "",
     },
     {
       title: "Older Care Services",
@@ -108,6 +118,7 @@ export default function InvestFranchiseChennai() {
       description:
         "You could be able to launch a franchise in residential regions by catering to the increasing demands of older persons.",
       image: "/images/Invest-Images/SubPages/niche/older-care.jpg",
+      imgAlt: "",
     },
     {
       title: "Sustainable and ECO-Friendly Companies",
@@ -115,6 +126,7 @@ export default function InvestFranchiseChennai() {
       description:
         "Leverage franchising to capitalize on growing environmental consciousness.",
       image: "/images/Invest-Images/SubPages/niche/sustainable.jpg",
+      imgAlt: "",
     },
     {
       title: "Repair and Maintenance Services",
@@ -122,6 +134,7 @@ export default function InvestFranchiseChennai() {
       description:
         "Offer necessary solutions for home and organization maintenance.",
       image: "/images/Invest-Images/SubPages/niche/repair.jpg",
+      imgAlt: "",
     },
   ];
 
@@ -156,96 +169,6 @@ export default function InvestFranchiseChennai() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const images = [
-    {
-      src: "/images/Invest-Images/SubPages/real-estate-slide.jpg",
-      title: "Real Estate",
-      link: "/invest/chennai-real-estate",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/franchise-slide.jpg",
-      title: "Franchise",
-      link: "/invest/franchise-business-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/startups-slide.jpg",
-      title: "Startups",
-      link: "/invest/startup-companies-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/renewable-energy-slide.jpg",
-      title: "Renewable Energy",
-      link: "/invest/solar-companies-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/retirement-slide.jpg",
-      title: "Retirement",
-      link: "/invest/retirement-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/government-initiatives-slide.jpg",
-      title: "Government Initiatives",
-      link: "/invest/government-projects-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/formalities-regulations-slide.jpg",
-      title: "Formalities and Regulations",
-      link: "/invest/law-firms-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/news-slide.jpg",
-      title: "News",
-      link: "/invest/news-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/events-slide.jpg",
-      title: "Invest in Events",
-      link: "/invest/chennai-events",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/exhibitions-slide.jpg",
-      title: "Exhibitions",
-      link: "/invest/exhibitions-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
-
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   return (
     <>
       <Helmet>
@@ -262,7 +185,7 @@ export default function InvestFranchiseChennai() {
         <div>
           <img
             src="/images/Invest-Images/SubPages/franchise-banner.jpg"
-            alt=""
+            alt="chennai invest"
           />
         </div>
         <div className="accodoamationBannerContainer">
@@ -350,7 +273,7 @@ export default function InvestFranchiseChennai() {
                         <img
                           className="buildingImage"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                         />
                       </>
                     ) : (
@@ -358,7 +281,7 @@ export default function InvestFranchiseChennai() {
                         <img
                           className="buildingImage1"
                           src={item.image}
-                          alt=""
+                         alt={item.imgAlt}
                           style={{ cursor: "default" }}
                         />
                         <div
@@ -445,7 +368,7 @@ export default function InvestFranchiseChennai() {
                                 <img
                                   className="buildingImage w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                               </>
                             ) : (
@@ -453,7 +376,7 @@ export default function InvestFranchiseChennai() {
                                 <img
                                   className="buildingImage1 w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                                 <div className="builidngContent1">
                                   <h3 className="text-xl font-semibold">
@@ -477,62 +400,8 @@ export default function InvestFranchiseChennai() {
         </div>
         {/*--------------- Explore More Chennai----------------- */}
 
-        <div className="exploreSldierBg">
-          <div className="container max-w-7xl mx-auto px-4">
-            <div className="exploreMoreSectionContent">
-              <h4>PROPERTY PROSPECTS IN CHENNAI</h4>
-              <p>
-                Chennai's real estate market offers consistent demand and
-                income. By its developed infrastructure, this city market offers
-                substantial profits from both business and residential areas.
-              </p>
-            </div>
-            <div className="exploreSldierSection">
-              <Slider {...settings}>
-                {images.map((img, index) => (
-                  <div key={index} className="ExplorePageSliderImage">
-                    <a href={img.link} style={{ textDecoration: "none" }}>
-                      <div
-                        style={{
-                          position: "relative",
-                          borderRadius: "8px",
-                          overflow: "hidden",
-                        }}
-                      >
-                        <img
-                          src={img.src}
-                          alt={`Slide ${index + 1}`}
-                          style={{
-                            width: "100%",
-                            height: "auto",
-                            display: "block",
-                          }}
-                        />
-                        {/* Gradient Background */}
-                        <div
-                          style={{
-                            position: "absolute",
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
-                            height: "160px",
-                            background:
-                              "linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent)",
-                          }}
-                        ></div>
+        <InvestSlider />
 
-                        {/* Title Text */}
-                        <div className="titleTextExploreChennai">
-                          {img.title}
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </div>
-        </div>
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

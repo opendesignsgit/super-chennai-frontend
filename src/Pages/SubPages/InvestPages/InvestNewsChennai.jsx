@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import { Helmet } from "react-helmet-async";
+import InvestSlider from "./InvestSlider";
 
 export default function InvestNewsChennai() {
   const investmentCategories = [
@@ -149,108 +150,24 @@ export default function InvestNewsChennai() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const images = [
-    {
-      src: "/images/Invest-Images/SubPages/real-estate-slide.jpg",
-      title: "Real Estate",
-      link: "/invest/chennai-real-estate",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/franchise-slide.jpg",
-      title: "Franchise",
-      link: "/invest/franchise-business-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/startups-slide.jpg",
-      title: "Startups",
-      link: "/invest/startup-companies-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/renewable-energy-slide.jpg",
-      title: "Renewable Energy",
-      link: "/invest/solar-companies-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/retirement-slide.jpg",
-      title: "Retirement",
-      link: "/invest/retirement-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/government-initiatives-slide.jpg",
-      title: "Government Initiatives",
-      link: "/invest/government-projects-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/formalities-regulations-slide.jpg",
-      title: "Formalities and Regulations",
-      link: "/invest/law-firms-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/news-slide.jpg",
-      title: "News",
-      link: "/invest/news-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/events-slide.jpg",
-      title: "Invest in Events",
-      link: "/invest/chennai-events",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/exhibitions-slide.jpg",
-      title: "Exhibitions",
-      link: "/invest/exhibitions-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
-
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   return (
     <>
       <Helmet>
         <title>News in Chennai : Print Media,TV News & Digital News </title>
-        <meta name="description" content="Discover how news in Chennai is shaping the digital era, with outlets and creators building apps, websites, and platforms backed by investors." />
+        <meta
+          name="description"
+          content="Discover how news in Chennai is shaping the digital era, with outlets and creators building apps, websites, and platforms backed by investors."
+        />
         <link rel="canonical" href="/invest/news-in-chennai" />
       </Helmet>
       {/*----------------Accodimation-Banner----------- */}
 
       <div className="accaodomationBannerSection">
         <div>
-          <img src="/images/Invest-Images/SubPages/news-banner.jpg" alt="investment opportunities in chennai" />
+          <img
+            src="/images/Invest-Images/SubPages/news-banner.jpg"
+            alt="investment opportunities in chennai"
+          />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
@@ -464,63 +381,8 @@ export default function InvestNewsChennai() {
           </div>
         </div>
         {/*--------------- Explore More Chennai----------------- */}
+        <InvestSlider />
 
-        <div className="exploreSldierBg">
-          <div className="container max-w-7xl mx-auto px-4">
-            <div className="exploreMoreSectionContent">
-              <h4>PROPERTY PROSPECTS IN CHENNAI</h4>
-              <p>
-                Chennai's real estate market offers consistent demand and
-                income. By its developed infrastructure, this city market offers
-                substantial profits from both business and residential areas.
-              </p>
-            </div>
-            <div className="exploreSldierSection">
-              <Slider {...settings}>
-                {images.map((img, index) => (
-                  <div key={index} className="ExplorePageSliderImage">
-                    <a href={img.link} style={{ textDecoration: "none" }}>
-                      <div
-                        style={{
-                          position: "relative",
-                          borderRadius: "8px",
-                          overflow: "hidden",
-                        }}
-                      >
-                        <img
-                          src={img.src}
-                          alt={`Slide ${index + 1}`}
-                          style={{
-                            width: "100%",
-                            height: "auto",
-                            display: "block",
-                          }}
-                        />
-                        {/* Gradient Background */}
-                        <div
-                          style={{
-                            position: "absolute",
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
-                            height: "160px",
-                            background:
-                              "linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent)",
-                          }}
-                        ></div>
-
-                        {/* Title Text */}
-                        <div className="titleTextExploreChennai">
-                          {img.title}
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </div>
-        </div>
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

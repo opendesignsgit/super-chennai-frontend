@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import InvestSlider from "./InvestSlider";
 
 export default function InvestStartupsChennai() {
   const investmentCategories = [
@@ -32,6 +33,7 @@ export default function InvestStartupsChennai() {
       description:
         "Software development is a one-time expenditure. However, it can provide you with lifetime income.",
       image: "/images/Invest-Images/SubPages/Emerging-tech/saas.jpg",
+      imgAlt: "",
       link: "/IT-ITeS-SaaS",
     },
     {
@@ -40,6 +42,7 @@ export default function InvestStartupsChennai() {
       description:
         "Establishing a financial business and charging interest will increase revenue.",
       image: "/images/Invest-Images/SubPages/Emerging-tech/fintech.jpg",
+      imgAlt: "fintech chennai",
       link: "/Fintech-in-Chennai",
     },
     {
@@ -48,6 +51,7 @@ export default function InvestStartupsChennai() {
       description:
         "As the healthcare sector expands, opening a business in a medically linked area, like a medical store or blood research facility, will be a wise choice.",
       image: "/images/Invest-Images/SubPages/Emerging-tech/health.jpg",
+      imgAlt: "multispeciality hospital chennai",
       link: "/live/healthcare-in-chennai",
     },
 
@@ -57,6 +61,7 @@ export default function InvestStartupsChennai() {
       description:
         "Aspirants in their desired niches are drawn to academies that deal with both IT and non-IT, TNPSC coaching centers, and tuition centers.",
       image: "/images/Invest-Images/SubPages/Emerging-tech/edtech.jpg",
+      imgAlt: "edutech chennai",
       link: "/EduTech",
     },
 
@@ -66,6 +71,7 @@ export default function InvestStartupsChennai() {
       description:
         "Chennai government provides strong support policies in this sector for startups. This metropolis also provides skilled professionals, and strong infrastructure",
       image: "/images/Invest-Images/SubPages/Emerging-tech/Depp-Tech-AI.jpg",
+      imgAlt: "innovation in chennai",
       link: "/DeepTech-AI-Startups-in-Chennai",
     },
     {
@@ -74,6 +80,7 @@ export default function InvestStartupsChennai() {
       description:
         "Find and fund e-commerce sites that have already amassed a sizable and devoted clientele.",
       image: "/images/Invest-Images/SubPages/Growth-Stage/direct.jpg",
+      imgAlt: "",
     },
     {
       title: "Logistics and Supply Chain Tech",
@@ -81,6 +88,7 @@ export default function InvestStartupsChennai() {
       description:
         "You can also make investments in logistics and supply chain technology in Chennai, a major metropolis where a lot of people import and export goods.",
       image: "/images/Invest-Images/SubPages/Growth-Stage/logistics.jpg",
+      imgAlt: "",
     },
     {
       title: "Consumer internet platforms",
@@ -88,6 +96,7 @@ export default function InvestStartupsChennai() {
       description:
         "finding and supporting consumer online platforms that have already drawn a sizable user base and shown engagement.",
       image: "/images/Invest-Images/SubPages/Growth-Stage/consumer.jpg",
+      imgAlt: "",
     },
     {
       title: "Automotive",
@@ -95,6 +104,7 @@ export default function InvestStartupsChennai() {
       description:
         "Chennai offers prime automotive investment opportunities, driven by its robust ecosystem, skilled workforce, and government support.",
       image: "/images/Invest-Images/SubPages/Growth-Stage/Automotive-img.jpg",
+      imgAlt: "",
       link: "/Automotive",
     },
   ];
@@ -131,101 +141,14 @@ export default function InvestStartupsChennai() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const images = [
-    {
-      src: "/images/Invest-Images/SubPages/real-estate-slide.jpg",
-      title: "Real Estate",
-      link: "/invest/chennai-real-estate",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/franchise-slide.jpg",
-      title: "Franchise",
-      link: "/invest/franchise-business-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/startups-slide.jpg",
-      title: "Startups",
-      link: "/invest/startup-companies-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/renewable-energy-slide.jpg",
-      title: "Renewable Energy",
-      link: "/invest/solar-companies-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/retirement-slide.jpg",
-      title: "Retirement",
-      link: "/invest/retirement-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/government-initiatives-slide.jpg",
-      title: "Government Initiatives",
-      link: "/invest/government-projects-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/formalities-regulations-slide.jpg",
-      title: "Formalities and Regulations",
-      link: "/invest/law-firms-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/news-slide.jpg",
-      title: "News",
-      link: "/invest/news-in-chennai",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/events-slide.jpg",
-      title: "Invest in Events",
-      link: "/invest/chennai-events",
-    },
-    {
-      src: "/images/Invest-Images/SubPages/exhibitions-slide.jpg",
-      title: "Exhibitions",
-      link: "/invest/exhibitions-in-chennai",
-    },
-  ];
-
-  // Custom Arrow Components
-  const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="ExplorePageLeftButton"></div>
-  );
-
-  const NextArrow = ({ onClick }) => (
-    <div className="ExplorePageRightButton" onClick={onClick}></div>
-  );
-
-  const settings = {
-    dots: false,
-    autoplay: false,
-    autoplaySpeed: 1500,
-
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   return (
     <>
       <Helmet>
         <title>Startup Companies in Chennai - Super Chennai</title>
-        <meta name="description" content="Startup companies in Chennai bring together talent, innovation, and investment, making the city a hub for entrepreneurs and business growth." />
+        <meta
+          name="description"
+          content="Startup companies in Chennai bring together talent, innovation, and investment, making the city a hub for entrepreneurs and business growth."
+        />
         <link rel="canonical" href="/invest/startup-companies-in-chennai" />
       </Helmet>
       {/*----------------Accodimation-Banner----------- */}
@@ -234,7 +157,7 @@ export default function InvestStartupsChennai() {
         <div>
           <img
             src="/images/Invest-Images/SubPages/startups-banner.jpg"
-            alt=""
+            alt="best investment in chennai"
           />
         </div>
         <div className="accodoamationBannerContainer">
@@ -327,7 +250,7 @@ export default function InvestStartupsChennai() {
                         <img
                           className="buildingImage"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                           style={{ cursor: "default" }}
                         />
                       </>
@@ -336,7 +259,7 @@ export default function InvestStartupsChennai() {
                         <img
                           className="buildingImage1"
                           src={item.image}
-                          alt=""
+                          alt={item.imgAlt}
                           style={{ cursor: "default" }}
                         />
                         <div
@@ -427,7 +350,7 @@ export default function InvestStartupsChennai() {
                                 <img
                                   className="buildingImage w-full md:w-1/2"
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                               </>
                             ) : (
@@ -435,7 +358,7 @@ export default function InvestStartupsChennai() {
                                 <img
                                   className="buildingImage1 w-full md:w-1/2"
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.imgAlt}
                                 />
                                 <div className="builidngContent1">
                                   <h3 className="text-xl font-semibold">
@@ -459,62 +382,8 @@ export default function InvestStartupsChennai() {
         </div>
         {/*--------------- Explore More Chennai----------------- */}
 
-        <div className="exploreSldierBg">
-          <div className="container max-w-7xl mx-auto px-4">
-            <div className="exploreMoreSectionContent">
-              <h4>PROPERTY PROSPECTS IN CHENNAI</h4>
-              <p>
-                Chennai's real estate market offers consistent demand and
-                income. By its developed infrastructure, this city market offers
-                substantial profits from both business and residential areas.
-              </p>
-            </div>
-            <div className="exploreSldierSection">
-              <Slider {...settings}>
-                {images.map((img, index) => (
-                  <div key={index} className="ExplorePageSliderImage">
-                    <a href={img.link} style={{ textDecoration: "none" }}>
-                      <div
-                        style={{
-                          position: "relative",
-                          borderRadius: "8px",
-                          overflow: "hidden",
-                        }}
-                      >
-                        <img
-                          src={img.src}
-                          alt={`Slide ${index + 1}`}
-                          style={{
-                            width: "100%",
-                            height: "auto",
-                            display: "block",
-                          }}
-                        />
-                        {/* Gradient Background */}
-                        <div
-                          style={{
-                            position: "absolute",
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
-                            height: "160px",
-                            background:
-                              "linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent)",
-                          }}
-                        ></div>
+        <InvestSlider />
 
-                        {/* Title Text */}
-                        <div className="titleTextExploreChennai">
-                          {img.title}
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </div>
-        </div>
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

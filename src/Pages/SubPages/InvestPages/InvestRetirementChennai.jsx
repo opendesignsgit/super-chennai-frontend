@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import InvestSlider from "./InvestSlider";
 
 export default function InvestRetirementChennai() {
   const imageSections = [
@@ -649,62 +650,8 @@ export default function InvestRetirementChennai() {
       <div>
         {/*--------------- Explore More Chennai----------------- */}
 
-        <div className="exploreSldierBg">
-          <div className="container max-w-7xl mx-auto px-4">
-            <div className="exploreMoreSectionContent">
-              <h4>PROPERTY PROSPECTS IN CHENNAI</h4>
-              <p>
-                Chennai's real estate market offers consistent demand and
-                income. By its developed infrastructure, this city market offers
-                substantial profits from both business and residential areas.
-              </p>
-            </div>
-            <div className="exploreSldierSection">
-              <Slider {...settings}>
-                {images.map((img, index) => (
-                  <div key={index} className="ExplorePageSliderImage">
-                    <a href={img.link} style={{ textDecoration: "none" }}>
-                      <div
-                        style={{
-                          position: "relative",
-                          borderRadius: "8px",
-                          overflow: "hidden",
-                        }}
-                      >
-                        <img
-                          src={img.src}
-                          alt={`Slide ${index + 1}`}
-                          style={{
-                            width: "100%",
-                            height: "auto",
-                            display: "block",
-                          }}
-                        />
-                        {/* Gradient Background */}
-                        <div
-                          style={{
-                            position: "absolute",
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
-                            height: "160px",
-                            background:
-                              "linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent)",
-                          }}
-                        ></div>
+        <InvestSlider/>
 
-                        {/* Title Text */}
-                        <div className="titleTextExploreChennai">
-                          {img.title}
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </div>
-        </div>
         {/*----------------- Social & CTA ----------------*/}
         <div className="AccomodationInstaReel">
           <InstagramReelsMarquee />

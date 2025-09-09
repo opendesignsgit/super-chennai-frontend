@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import InvestSlider from "./InvestSlider";
 
 export default function ChennaiRealEstate() {
   const chennaiStartupPowerhouseData = [
@@ -524,7 +525,7 @@ export default function ChennaiRealEstate() {
       </Helmet>
       {/* Banner */}
       <div className="accaodomationBannerSection">
-        <img src="/images/Invest-Images/SubPages/real-banner.jpg" alt="" />
+        <img src="/images/Invest-Images/SubPages/real-banner.jpg" alt="real estate in chennai" />
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
             <h3>Real Estate</h3>
@@ -814,37 +815,8 @@ export default function ChennaiRealEstate() {
       </div>
 
       {/* Explore More Chennai Slider */}
-      <div className="exploreSldierBg">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="exploreMoreSectionContent">
-            <h4>PROPERTY PROSPECTS IN CHENNAI</h4>
-            <p>
-              Chennai's real estate market offers consistent demand and income.
-              By its developed infrastructure, this city market offers
-              substantial profits from both business and residential areas.
-            </p>
-          </div>
-          <div className="exploreSldierSection">
-            <Slider {...settings}>
-              {images.map((img, idx) => (
-                <div key={idx} className="ExplorePageSliderImage">
-                  <a href={img.link} style={{ textDecoration: "none" }}>
-                    <div className="relative rounded overflow-hidden">
-                      <img
-                        src={img.src}
-                        alt={img.title}
-                        className="w-full h-auto block"
-                      />
-                      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black/70 to-transparent"></div>
-                      <div className="titleTextExploreChennai">{img.title}</div>
-                    </div>
-                  </a>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-      </div>
+
+      <InvestSlider/>
 
       {/* Social Marquee + CTA */}
       <div className="AccomodationInstaReel">

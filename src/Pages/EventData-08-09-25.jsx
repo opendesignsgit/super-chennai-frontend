@@ -2082,8 +2082,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Join us 6–7 Sept 2025 at House of Games, Kilpauk! A 2.5-hour guided art session with step-by-step learning, all materials, and refreshments included.",
     siteLink: "https://kynhood.com/event/689ad724999af733d07d6125",
     EventsCalendarTitle: "Prom Chennai",
-    EventsCalendarContent:
-      "Thus spoke, the greatest night ever foretold",
+    EventsCalendarContent: "Thus spoke, the greatest night ever foretold",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Meetups, Night Life",
@@ -2096,7 +2095,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Thus spoke, the greatest night ever foretold” — we bring you PROM. The night we once only dreamt of, imagined through high school rom-coms, filled with slow dances, glittering lights, and the thrill of walking in with a date, is finally here. This September, EN/D is making that fantasy a reality, bringing Chennai a grand, euphoric celebration bigger and bolder than you ever imagined. Picture this: 100 couples, your song playing at just the right moment, a dance floor designed for pure magic, and a setting drenched in gold, purple, and black opulence fit for the gods themselves. Everything you thought was out of reach is now within your grasp—it’s real, it’s happening, and it’s waiting for you on September 6th. Bring a girl, a boy, anyone—just bring your date, because this is PROM. Note: Venue cover charges (F&B) apply and are to be settled separately at the venue.`,
   },
-    {
+  {
     id: 94,
     metaTitleEvent:
       "3D Art Workshop / Super Chennai / Beginner-Friendly Art Event",
@@ -2105,8 +2104,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Join us 6–7 Sept 2025 at House of Games, Kilpauk! A 2.5-hour guided art session with step-by-step learning, all materials, and refreshments included.",
     siteLink: "https://kynhood.com/event/68b592142835c512514be8ab",
     EventsCalendarTitle: "Big Saturday Night",
-    EventsCalendarContent:
-      "Thus spoke, the greatest night ever foretold",
+    EventsCalendarContent: "Thus spoke, the greatest night ever foretold",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Meetups, Night Life",
@@ -2121,11 +2119,9 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 95,
-    metaTitleEvent:
-      "",
+    metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/95",
-    metaDescriptionEvent:
-    "",
+    metaDescriptionEvent: "",
     siteLink: "https://kynhood.com/event/68a2fc2432e22ed6652d8ee8",
     EventsCalendarTitle: "Floor Yoga Workshop",
     EventsCalendarContent:
@@ -2142,17 +2138,14 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Begin your morning with renewal and balance at the Floor Yoga Workshop happening on 6th September, 6:00–7:00 AM, at Dream Yoga Studio, Thalambur. Open to all levels, this session will guide you through grounding postures and mindful movements designed to build strength, flexibility, and balance while deepening your connection to the mat. Floor yoga helps release tension, improve core stability, and enhance body awareness, leaving you both energized and centered. Led by an experienced instructor, the workshop offers a supportive space to refine your practice, calm your mind, and start the day with positivity and focus. Reserve your spot now and embrace a morning of movement, mindfulness, and fresh energy! For enquiries: 63851 11315.`,
   },
-    {
+  {
     id: 96,
-    metaTitleEvent:
-      "",
+    metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/96",
-    metaDescriptionEvent:
-      "",
+    metaDescriptionEvent: "",
     siteLink: "https://kynhood.com/event/68a2f92f0480e36e566f5749",
     EventsCalendarTitle: "Aerial Yoga - One Day Workshop",
-    EventsCalendarContent:
-      "Experience the freedom of movement and lightness",
+    EventsCalendarContent: "Experience the freedom of movement and lightness",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Workshop",
@@ -2165,36 +2158,32 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Experience the freedom of movement and lightness at the Aerial Yoga Session at Dream Yoga Studio, Thalambur, on 6th September from 6:00–7:00 PM. This unique practice blends traditional yoga, Pilates, and dance with the support of a hammock, allowing you to stretch deeper, improve flexibility, and build strength while feeling weightless and free. Guided by expert instructors, you’ll safely explore inversions and poses that strengthen your core, release spinal tension, and boost circulation. Suitable for both beginners and experienced practitioners, Aerial Yoga offers a refreshing way to reconnect with your body, calm your mind, and uplift your spirit. Come breathe, flow, and discover yoga like never before—limited spots available, so reserve your place in the sky today! 🌿`,
   },
-    {
-    id: 97,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/97",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://kynhood.com/event/68a2fde532e22ed6652d8ef9",
-    EventsCalendarTitle: "Zumba Workshop",
-    EventsCalendarContent:
-      "Discover the joy of weightlessness and flow at the Aerial Yoga Session",
-    EventsCalendarMonth: "6 Sep 2025",
-    EventsCalendarTime: "7:00 PM",
-    EventsCalendarCategory: "Workshop",
-    image: "/images/HomePage-Images/Events/Newevents/208.jpg",
-    link: "/events",
-    location: "Dream Yoga Studio, Thalambur ",
-    language: "",
-    hours: "",
-    ageLimit: "",
-    rleigion: "",
-    aboutFull: `Discover the joy of weightlessness and flow at the Aerial Yoga Session happening on 6th September, 6:00–7:00 PM at Dream Yoga Studio, Thalambur. Blending traditional yoga postures with elements of Pilates and dance, this practice uses a supportive hammock to help you stretch deeper, enhance flexibility, and build strength while feeling light and free. With guidance from experienced instructors, you’ll explore safe and effective inversions and poses that strengthen the core, ease spinal tension, and improve circulation. Suitable for both beginners and seasoned practitioners, Aerial Yoga is a refreshing way to reconnect with your body, calm your mind, and uplift your spirit. Come breathe, move, and experience yoga like never before—limited spots available, so secure your place today! 🌿`,
-  },
+  // {
+  //   id: 97,
+  //   metaTitleEvent: "",
+  //   conicallinkEvent: "/eventsdetails/97",
+  //   metaDescriptionEvent: "",
+  //   siteLink: "https://kynhood.com/event/68a2fde532e22ed6652d8ef9",
+  //   EventsCalendarTitle: "Zumba Workshop",
+  //   EventsCalendarContent:
+  //     "Discover the joy of weightlessness and flow at the Aerial Yoga Session",
+  //   EventsCalendarMonth: "6 Sep 2025",
+  //   EventsCalendarTime: "7:00 PM",
+  //   EventsCalendarCategory: "Workshop",
+  //   image: "/images/HomePage-Images/Events/Newevents/208.jpg",
+  //   link: "/events",
+  //   location: "Dream Yoga Studio, Thalambur ",
+  //   language: "",
+  //   hours: "",
+  //   ageLimit: "",
+  //   rleigion: "",
+  //   aboutFull: `Discover the joy of weightlessness and flow at the Aerial Yoga Session happening on 6th September, 6:00–7:00 PM at Dream Yoga Studio, Thalambur. Blending traditional yoga postures with elements of Pilates and dance, this practice uses a supportive hammock to help you stretch deeper, enhance flexibility, and build strength while feeling light and free. With guidance from experienced instructors, you’ll explore safe and effective inversions and poses that strengthen the core, ease spinal tension, and improve circulation. Suitable for both beginners and seasoned practitioners, Aerial Yoga is a refreshing way to reconnect with your body, calm your mind, and uplift your spirit. Come breathe, move, and experience yoga like never before—limited spots available, so secure your place today! 🌿`,
+  // },
   {
     id: 98,
-    metaTitleEvent:
-      "",
+    metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/98",
-    metaDescriptionEvent:
-      "",
+    metaDescriptionEvent: "",
     siteLink: "https://kynhood.com/event/68b572a468d895f15d971a94",
     EventsCalendarTitle: "Sashiko Stitches",
     EventsCalendarContent:
@@ -2210,403 +2199,6 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     ageLimit: "",
     rleigion: "",
     aboutFull: `Step into the ancient and mindful world of Japanese embroidery with the Sashiko Stitches Workshop! Designed for beginners, this hands-on session will be held on September 7th, 2025, at Hermoso Studio, Nungambakkam, from 10:30 AM to 6:30 PM. Guided through the traditional running-stitch technique, you’ll learn the core patterns and rhythms of Sashiko while crafting your own durable, one-of-a-kind design on a chic tote bag. With all materials provided, it’s the perfect chance to relax, spark your creativity, and immerse yourself in a timeless art form. Hosted at the SWE Space, a community dedicated to creation and expression, the workshop promises a rewarding day of learning, making, and connection. Don’t miss this fulfilling artistic journey—secure your spot today! For enquiries (WhatsApp): 6385804591.`,
-  },
-   {
-    id: 99,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/99",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/vikkals-comedy-cafe/ET00429673",
-    EventsCalendarTitle: "Vikkals Comedy Cafe - Standup Comedy Open Mic",
-    EventsCalendarContent:
-      "Want to experience a laughter roller coaster",
-    EventsCalendarMonth: "9 Sep – 11 Sep 2025",
-    EventsCalendarTime: "8:00 PM",
-    EventsCalendarCategory: "Open Mic Comedy",
-    image: "/images/HomePage-Images/Events/Newevents/e219.jpg",
-    link: "/events",
-    location: "The Board Room, Mylapore: Chennai",
-    language: "Tamil, English",
-    hours: "1 hour 30 minutes",
-    ageLimit: "Age Limit - 16yrs +",
-    rleigion: "Comedy",
-    aboutFull: `Want to experience a laughter roller coaster? Here we have the most promising comedian Vikram Arul Vidyapathi also known as Vikkals Vikram brings you a fun-filled Standup Comedy Open Mic Night now in Chennai. So this is the perfect place to explore an unfiltered comedy with purest form. Starting from everyday struggles to quirky observations he knows how to change anything to humor— make sure you will laugh from your heart for the whole night.`,
-  },
-   {
-    id: 100,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/100",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/tamil-retro-nite-ft-mj-shriram/ET00459616",
-    EventsCalendarTitle: "Tamil Retro Nite Ft. MJ Shriram",
-    EventsCalendarContent:
-      "!Let ‘s go back to nostalgia! We have MJ Shriram",
-    EventsCalendarMonth: "12 Sep 2025",
-    EventsCalendarTime: "9:00 PM",
-    EventsCalendarCategory: "Music Shows",
-    image: "/images/HomePage-Images/Events/Newevents/e216.jpg",
-    link: "/events",
-    location: "Hard Rock Cafe, Nungabakkam: Chennai",
-    language: "Tamil",
-    hours: "2 hours",
-    ageLimit: "Age Limit - 21yrs +",
-    rleigion: "Regional, Retro",
-    aboutFull:`!Let ‘s go back to nostalgia! We have MJ Shriram to take us back into the magic of MSV  and Ilaiyaraaja along with more legends with his soulful singing. More than a concert it's an emotion of going back to the memory lane, where songs remain of our story or a moment we have cherished. Come sing along and enjoy your nostalgic nite with your loved ones.`
-  },
-   {
-    id: 101,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/101",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/ini-filter-theva-illai/ET00461117",
-    EventsCalendarTitle: "Ini Filter Theva Illai",
-    EventsCalendarContent:
-      "Are you ready for unfiltered laughter, stories for comedy!",
-    EventsCalendarMonth: "12 Sep 2025",
-    EventsCalendarTime: "6:00 PM",
-    EventsCalendarCategory: "Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/e223.jpg",
-    link: "/events",
-    location: "LIVF Fertility And Womens Healthcare: Chennai",
-    language: "Tamil, English",
-    hours: "1 hour 30 minutes",
-    ageLimit: "Age Limit - 16yrs +",
-    rleigion: "",
-    aboutFull: `Are you ready for unfiltered laughter, stories for comedy! Here we came up with a unique stand up comedy show from real life. Ini Filter Theva Illai is an engaging tamil stand-up comedy show where nothing  is sugarcoate—just pure humor. If you love comedy then this is the best option to have a happy evening with friends and families. We think this is the show you don’t want to miss out.`,
-  },
-  {
-    id: 102,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/102",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/jungle-rave-2025-chennai-s-first-ever-sober-rave/ET00460614",
-    EventsCalendarTitle: "Jungle Rave 2025 (Chennai's First Ever Sober Rave)",
-    EventsCalendarContent:
-      "Jump into a sparkling night like no other!",
-    EventsCalendarMonth: "13 Sep 2025",
-    EventsCalendarTime: "7:00 PM",
-    EventsCalendarCategory: "Music Festivals",
-    image: "/images/HomePage-Images/Events/Newevents/e211.jpg",
-    link: "/events",
-    location: "Noci Adante: Chennai",
-    language: "English, Hindi, Tamil",
-    hours: "5 hours",
-    ageLimit: "Age Limit - 12yrs +",
-    rleigion: "Afro, Bollywood, EDM, Hip Hop, House",
-    aboutFull:`Jump into a sparkling night like no other!. Jungle Rave 2025 pops Chennai’s first ever sober rave , where sound, magic and dance take the spotlight— no substances required. Love yourself in the beats of top-DJs, lose yourself in stunned jungle themed lights and connect with the community of celebrating life together. It's not just a party— it's a revolution in nightlife. Just imagine being in a place full of music, magic, engaging activities and enjoyment where you can be truly yourself.`
-  },
-  
-  {
-    id: 103,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/103",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/news-reading-workshop-by-news-reader-ranjith/ET00459235",
-    EventsCalendarTitle: "NEWS READING WORKSHOP BY NEWS READER RANJITH",
-    EventsCalendarContent:
-      "This workshop is well designed for aspiring news readers",
-    EventsCalendarMonth: "13 Sep 2025",
-    EventsCalendarTime: "4:00 PM",
-    EventsCalendarCategory: "Acting",
-    image: "/images/HomePage-Images/Events/Newevents/e221.jpg",
-    link: "/events",
-    location: "Aarokiya Annam: Chennai",
-    language: "Tamil",
-    hours: "2 hours",
-    ageLimit: "",
-    rleigion: "",
-    aboutFull: `This workshop is well designed for aspiring news readers, passionate about the art of communication and media enthusiasts. We have news reader Ranjinth to share his journey and knowledge and techniques on pronunciation, voice modulation and presentation style that make an impactful news reader. If you dream of becoming a news reader or want to develop your communication skill this workshop will empower you with practical tools and inspiration.`,
-  },
-  {
-    id: 104,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/104",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/koolly/ET00459627",
-    EventsCalendarTitle: "KOOLLY",
-    EventsCalendarContent:
-      "Be  ready, Chennai!  Lokesh Ambigapathy, the much-loved Vijay TV",
-    EventsCalendarMonth: "13 Sep 2025",
-    EventsCalendarTime: "5:30 PM",
-    EventsCalendarCategory: "Stand up Comedy",
-    image: "/images/HomePage-Images/Events/Newevents/e215.jpg",
-    link: "/events",
-    location: "Trinity Studio: Kodambakkam",
-    language: "Tamil",
-    hours: "1 hour 30 minutes",
-    ageLimit: "Age Limit - 8yrs +",
-    rleigion: "Comedy",
-    aboutFull: `Be  ready, Chennai!  Lokesh Ambigapathy, the much-loved Vijay TV comedy artist, is here with his rib-tickling Koolly Tanglish Stand-Up Show.  A perfect blend of tamil and english humor we have Lokesh Ambigapathy most beloved Vijay TV comedy artist with  his non stop laughter of Koolly Tanglish Stand-Up comedy show. Whether it's a chennai vibe or day to day life or quirky talks on culture, Lokesh knows how to keep us laughing non-stop. Don't miss this chance of unlimited laughter,fun and entertainment with the most promising stand up comedian.`,
-  },
-  {
-    id: 105,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/105",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/guna-sai-live-a-tamil-standup-comedy-show/ET00361726",
-    EventsCalendarTitle: "SMOOTH ADI - A TAMIL STANDUP SHOW",
-    EventsCalendarContent:
-      "Chennai’s Smooth Adi is here to engage you with lots of humor",
-    EventsCalendarMonth: "13 Sep 2025",
-    EventsCalendarTime: "6:00 PM",
-    EventsCalendarCategory: "Stand up Comedy",
-    image: "/images/HomePage-Images/Events/Newevents/e226.jpg",
-    link: "/events",
-    location: "Punch - Unpaid Therapist: Chennai",
-    language: "Tamil",
-    hours: "1 hour 30 minutes",
-    ageLimit: "Age Limit - 16yrs +",
-    rleigion: "Comedy",
-    aboutFull: `Chennai’s Smooth Adi is here to engage you with lots of humor and story relatable to our day to day life. Guna Sai is known for his effortless comedies and style adding on this ADI makes you laugh straight from the heart of tamil culture on stage. Smooth Adi comedy promises a night full of endless laughter and positive vibes.`,
-  },
-  {
-    id: 106,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/106",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/kids-chess-upskilling-workshop-ages-5-to-15/ET00456806",
-    EventsCalendarTitle: "Kids Chess Upskilling Session : Ages 5-15",
-    EventsCalendarContent:
-      "Activating your little one's mind is way easier if you visit here",
-    EventsCalendarMonth: "13 Sep 2025",
-    EventsCalendarTime: "7:00 PM",
-    EventsCalendarCategory: "Education",
-    image: "/images/HomePage-Images/Events/Newevents/e222.jpg",
-    link: "/events",
-    location: "Your Place and Your Time: India",
-    language: "English",
-    hours: "1 hour 30 minutes",
-    ageLimit: "",
-    rleigion: "",
-    aboutFull: `Activating your little one's mind is way easier if you visit here. Here’s a chance for your kids to sharpen their cognitive skills, develop confidence and also by having fun. Chennai came with another awakening session for kids inducing games —  The Kids Chess Upskilling Session for 5-15 years children.  Bring your little one and let them boost their confidence in their way by playing also by learning.`,
-  },
-  {
-    id: 107,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/107",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/space-cadet-by-varun-thakur/ET00339165",
-    EventsCalendarTitle: "Space Cadet by Varun Thakur",
-    EventsCalendarContent:
-      "Are you ready for a humor filler evening!",
-    EventsCalendarMonth: "13 Sep – 14 Sep 2025",
-    EventsCalendarTime: "4:00 PM",
-    EventsCalendarCategory: "Stand up Comedy",
-    image: "/images/HomePage-Images/Events/Newevents/e220.jpg",
-    link: "/events",
-    location: "Medai - The Stage, Alwarpet: Chennai",
-    language: "English, Hindi",
-    hours: "1 Hour",
-    ageLimit: "Age Limit - 18yrs +",
-    rleigion: "Comedy",
-    aboutFull: `Are you ready for a humor filler evening! We have the Space Cadet, a brand new solo show presented by all our favorite comedian Varun Thakur known for his  energetic storytelling and on-spot impressions. Experience a rollercoaster ride of jokes about everything in our life and also some serious talk. Don’t miss out this laughter ride grab your seat with us.`,
-  },
- 
-   {
-    id: 108,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/108",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/musicom-finale-karoake-music-show-and-competition/ET00456083",
-    EventsCalendarTitle: "Musicom Finale- Karoake Music Show and Competition",
-    EventsCalendarContent:
-      "Have a passion for music but not sure where to start",
-    EventsCalendarMonth: "14 Sep 2025",
-    EventsCalendarTime: "4:00 PM",
-    EventsCalendarCategory: "Music Festivals",
-    image: "/images/HomePage-Images/Events/Newevents/e217.jpg",
-    link: "/events",
-    location: "Kavikko Convention Centre: Chennai",
-    language: "Tamil",
-    hours: "5 hours",
-    ageLimit: "Age Limit - 16yrs +",
-    rleigion: "Regional",
-    aboutFull: `Have a passion for music but not sure where to start?! This is for you. We came up with a karaoke music show and competition —Musicom Finale to step up all the music lovers who are passionate about music. From soulful melodies to blasting hits this finale is just gonna be a rocking night with unforgettable performances and entertainment. Grab the mic to show your voice to the world. Without music there is no life, come experience the art of sounds and voices.`,
-  },
-   {
-    id: 109,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/109",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/comedy-combo/ET00364786",
-    EventsCalendarTitle: "SECRETS - A Tamil Standup show ",
-    EventsCalendarContent:
-      "Step into a laughter packed evening with SECRETS",
-    EventsCalendarMonth: "14 Sep 2025",
-    EventsCalendarTime: "6:00 PM",
-    EventsCalendarCategory: "Stand up Comedy",
-    image: "/images/HomePage-Images/Events/Newevents/e210.jpg",
-    link: "/events",
-    location: "Punch - Unpaid Therapist: Chennai",
-    language: "Tamil",
-    hours: "1 hour 30 minutes",
-    ageLimit: "Age Limit - 18yrs +",
-    rleigion: "Comedy",
-    aboutFull:`Step into a laughter packed evening with SECRETS — a tamil stand comedy show that drives you into hilarious, relatable and so many surprise moments of daily life. From friendship tales and family drama to little quirks of chennai living, nothing is small or big in front of spilling the secrets on stage. With witty punchlines and relatable stories and plenty of Laughing-Out-Loud  moments with amazing comics of Chennai Prabu, Sai Anand, Vanshita, Sandeep and Divyanand you all gonna have a non-stop laughing evening. `
-  },
-  {
-    id: 110,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/110",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836",
-    EventsCalendarTitle: "Ghar - An Open Mic For Words By Tape A Tale",
-    EventsCalendarContent:
-      "GHAR is where stories find a home.",
-    EventsCalendarMonth: "14 Sep – 21 Sep 2025",
-    EventsCalendarTime: "12:00 PM",
-    EventsCalendarCategory: "Performances",
-    image: "/images/HomePage-Images/Events/Newevents/e218.jpg",
-    link: "/events",
-    location: "Trinity Studio: Kodambakkam",
-    language: "English, Hindi, Hinglish",
-    hours: "1 hour 30 minutes",
-    ageLimit: "All age groups",
-    rleigion: "",
-    aboutFull:`GHAR is where stories find a home.  An open mic by Tape A Tale, GHAR offers storytellers, poets, writers, and spoken word artists to express their feelings and create a community bond to communicate by giving and receiving feedback. Whether it's a tale from your heart or thoughts you have been waiting to voiceout— this is the safest space to be listened to and celebrated. Join us in Chennai for an heart warming evening of poetry, storytelling and bond to take all the way with you.`
-  },
-    
-    {
-    id: 111,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/111",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/lit-mic-chennai-open-mic-edition-36/ET00460366",
-    EventsCalendarTitle: "LIT-MIC - Chennai Open Mic - Edition 36",
-    EventsCalendarContent:
-      "An electrifying evening of celebrating poetry",
-    EventsCalendarMonth: "14 Sep 2025",
-    EventsCalendarTime: "4:00 PM",
-    EventsCalendarCategory: "Music",
-    image: "/images/HomePage-Images/Events/Newevents/e213.jpg",
-    link: "/events",
-    location: "IDAM - The Art & Cultural Space: Chennai",
-    language: "English, Hindi, Tamil",
-    hours: "3 hours",
-    ageLimit: "All age groups",
-    rleigion: "",
-    aboutFull: `An electrifying evening of celebrating poetry, stories, music and of course comedy! — Lit-Mic Chennai returns with its 36th edition of promising laughter, rhythm, emotions and creative energy. This is the stage where performers come together to expose their voices and connect with the audience to create unforgettable moments. Come join us for an evening filled with expression, art and bonding with Chennai.`,
-  },
-    
-    {
-    id: 112,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/112",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/blacksheep-kida-viruthu-concert/ET00457696",
-    EventsCalendarTitle: "BLACKSHEEP KIDA VIRUNTHU CONCERT",
-    EventsCalendarContent:
-      "Music is an art of embracing our feeling beyond just words",
-    EventsCalendarMonth: "14 Sep 2025",
-    EventsCalendarTime: "11:00 AM",
-    EventsCalendarCategory: "Music Shows",
-    image: "/images/HomePage-Images/Events/Newevents/e212.jpg",
-    link: "/events",
-    location: "Vales University, Pallavaram: Chennai",
-    language: "Tamil",
-    hours: "6 hours",
-    ageLimit: "Age Limit - 5yrs +",
-    rleigion: "Folk, Regional",
-    aboutFull: `Music is an art of embracing our feeling beyond just words, it's a tool to reach people easily through a beautiful blend of mixed sounds, words and voices. Here we have our  Black Sheep Kida Virunthu Concert that brings Black sheep stars and your favorite sensational musicians to present powerpack performances together. Get ready chennai! For a grand musical entertainment feast.`,
-  },
-    
-    {
-    id: 113,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/113",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/pichwai-painting-workshop/ET00416246",
-    EventsCalendarTitle: "Pichwai Painting Workshop",
-    EventsCalendarContent:
-      "Everything is an art but a tool to voiceout with words is painting",
-    EventsCalendarMonth: "13 Sep – 5 Oct 2025",
-    EventsCalendarTime: "2:00 PM",
-    EventsCalendarCategory: "Workshops",
-    image: "/images/HomePage-Images/Events/Newevents/e225.jpg",
-    link: "/events",
-    location: "Dices And Drama: Chennai",
-    language: "Bengali, English, Hindi, Telugu",
-    hours: "2 hours",
-    ageLimit: "",
-    rleigion: "",
-    aboutFull: `Everything is an art but a tool to voiceout with words is painting — we conduct a hands-on workshop for beginners to expertise in painting. Here you will experience the meditative joy of traditional painting and also to speak with words to the world full of noises. Come join in Pichwai Painting Workshop to celebrate the culture and enhance your talent.`,
-  },
-   
-    {
-    id: 114,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/114",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/superblitz-chess-arena/ET00455819",
-    EventsCalendarTitle: "Chess Mastery Session For Kids : Ages 5-15",
-    EventsCalendarContent:
-      "Give your child the chance of strategic thinking and confidence",
-    EventsCalendarMonth: "14 Sep 2025",
-    EventsCalendarTime: "11:00 AM",
-    EventsCalendarCategory: "Education",
-    image: "/images/HomePage-Images/Events/Newevents/e214.jpg",
-    link: "/events",
-    location: "Your Place and Your Time: India",
-    language: "English",
-    hours: "1 hour 30 minutes",
-    ageLimit: "All age groups",
-    rleigion: "",
-    aboutFull: `Give your child the chance of strategic thinking and confidence through the game of kings! The chess mastery session is a specially made program for children from 5 to 15 years, designed to make them explore, enjoy and expertise in chess.  Whether your child is just a beginner or already knows the  basics, this program is going to help them build sharpen memory, focus and develop problem-solving skills while playing.`
-  },
-  {
-    id: 115,
-    metaTitleEvent:
-      "",
-    conicallinkEvent: "/eventsdetails/115",
-    metaDescriptionEvent:
-      "",
-    siteLink: "https://in.bookmyshow.com/events/playdate-party-unwind-rediscover-playfulness/ET00355445",
-    EventsCalendarTitle: "Playdate with Parents ",
-    EventsCalendarContent:
-      "In today's busy world we forget how our parents gave their best",
-    EventsCalendarMonth: "10 Sep – 4 Oct 2025",
-    EventsCalendarTime: "2:00 PM",
-    EventsCalendarCategory: "Arts and Crafts",
-    image: "/images/HomePage-Images/Events/Newevents/e224.jpg",
-    link: "/events",
-    location: "Dices And Drama: Chennai",
-    language: "English",
-    hours: "3 hours",
-    ageLimit: "Age Limit - 18yrs +",
-    rleigion: "",
-    aboutFull: `In today's busy world we forget how our parents gave their best to keep us engaged and active, but we often miss spending some quality time with them. Play date with parents is a fun-filled event designed to bring back the bond between kids and parents From interactive sessions to creative games, every moment is made to strengthen the parent-child bond thicker.`,
   },
 ];
 

@@ -34,46 +34,67 @@ export default function EducationInstitutions() {
     "Colleges and Universities",
   ];
 
-  const CentralChennaiImage = [
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrollDir(currentScrollY > lastScrollY.current ? "left" : "right");
+      lastScrollY.current = currentScrollY;
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY.current) {
+        setScrollDir("left");
+      } else {
+        setScrollDir("right");
+      }
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleStickyScroll = () => {
+    const section = document.getElementById("fourthSection");
+    if (section) {
+      const top = section.getBoundingClientRect().top;
+      setIsSticky(top <= 0);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleStickyScroll);
+    return () => window.removeEventListener("scroll", handleStickyScroll);
+  }, []);
+  // Load from localStorage on mount
+  useEffect(() => {
+    const savedTab = localStorage.getItem("selectedTabForScroll");
+    if (savedTab && tabNames.includes(savedTab)) {
+      setSelectedTabForScroll(savedTab);
+    } else {
+      setSelectedTabForScroll(tabNames[0]); // default to first tab
+    }
+  }, []);
+
+  // Start
+  const IbSchoolIntro = [
     {
-      sectionTitle: "Central Chennai",
+      sectionTitle: "IB Schools in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
       image: "/images/Live-Images/SubPages/Central Chennai.jpg",
-      imgAlt:"",
-      tenantInfoSections: [
-        {
-          points: [
-            {
-              title: "Classic Italian Flavors",
-              para: [
-                "Experience and indulge in creamy Carbonara and rich Lasagna, alongside iconic Margherita Pizza in Chennai. Find out these classical Italian flavours at,",
-              ],
-              imgs: "/images/Visit-Images/SubPages/Icons/Classic-Italian-Flavors.svg",
-                    imgAlt:"",
-              link: "/classicItalianFlavors",
-            },
-          ],
-        },
-        {
-          points: [
-            {
-              title: "Regional Italian Delights",
-              para: [
-                "Experience an amazing tastes of regional delights such as fragrant Pesto Genovese and saffron-infused Risotto alla Milanese in chennai at,",
-              ],
-              imgs: "/images/Visit-Images/SubPages/Icons/Regional-Italian-Delights.svg",
-                    imgAlt:"",
-              link: "/regionalItalianDelights",
-            },
-          ],
-        },
-      ],
+      imgAlt: "",
     },
   ];
-  const CentralChennai = [
+  const IbSchoolsList = [
     {
-      category: "Temples",
+      category: "Full list of IB schools in Chennai",
       places: [
         {
           name: "Akshar Arbol International School",
@@ -238,57 +259,7 @@ export default function EducationInstitutions() {
       ],
     },
   ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setScrollDir(currentScrollY > lastScrollY.current ? "left" : "right");
-      lastScrollY.current = currentScrollY;
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY.current) {
-        setScrollDir("left");
-      } else {
-        setScrollDir("right");
-      }
-      lastScrollY.current = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const handleStickyScroll = () => {
-    const section = document.getElementById("fourthSection");
-    if (section) {
-      const top = section.getBoundingClientRect().top;
-      setIsSticky(top <= 0);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleStickyScroll);
-    return () => window.removeEventListener("scroll", handleStickyScroll);
-  }, []);
-  // Load from localStorage on mount
-  useEffect(() => {
-    const savedTab = localStorage.getItem("selectedTabForScroll");
-    if (savedTab && tabNames.includes(savedTab)) {
-      setSelectedTabForScroll(savedTab);
-    } else {
-      setSelectedTabForScroll(tabNames[0]); // default to first tab
-    }
-  }, []);
-
-  // Start
-  const techGiants = [
+  const IbTopSchools = [
     {
       SchoolName: "International Village School (IVS)",
       ProgrammesOffered: "PYP, MYP, DP",
@@ -326,7 +297,7 @@ export default function EducationInstitutions() {
     },
   ];
 
-  const imageSections1 = [
+  const IbschoolsContents = [
     {
       sectionTitle:
         "Chennai’s Auto Startup Scene: Building the Future of Mobility",
@@ -483,6 +454,8 @@ export default function EducationInstitutions() {
         "2-year pre-university program with subjects across 6 groups, Theory of Knowledge (TOK), Extended Essay (EE), and CAS (Creativity-Activity-Service)",
     },
   ];
+
+
   return (
     <>
       <Helmet>
@@ -577,7 +550,7 @@ export default function EducationInstitutions() {
           {activeSection === "Central Chennai" && (
             <>
               <div className="foodlistsec">
-                {CentralChennaiImage.map((section, index) => {
+                {IbSchoolIntro.map((section, index) => {
                   const tenantCount = section.tenantInfoSections?.length ?? 0;
                   const parentClass =
                     tenantCount % 2 === 0 ? "even-count" : "odd-count";
@@ -624,7 +597,11 @@ export default function EducationInstitutions() {
                       {section.fintechEvolution.map((tenant, i) => (
                         <div key={i}>
                           {tenant.points.map((item, j) => (
-                            <div key={j} className="clcboxItemss flex mb-4" style={{paddingBottom:"0"}}>
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
                               <div className="clcboxIImg">
                                 <img src={item.imgs} alt={item.imgAlt} />
                               </div>
@@ -675,7 +652,7 @@ export default function EducationInstitutions() {
                       </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200">
-                      {techGiants.map((giant, index) => (
+                      {IbTopSchools.map((giant, index) => (
                         <tr
                           key={index}
                           className="hover:bg-gray-50 transition-colors duration-200"
@@ -741,7 +718,7 @@ export default function EducationInstitutions() {
                   </table>
                 </div>
 
-                {imageSections1.map((section, index) => (
+                {IbschoolsContents.map((section, index) => (
                   <section
                     className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
             ${
@@ -763,7 +740,11 @@ export default function EducationInstitutions() {
                       {section.fintechEvolution.map((tenant, i) => (
                         <div key={i}>
                           {tenant.points.map((item, j) => (
-                            <div key={j} className="clcboxItemss flex mb-4" style={{paddingBottom:"0"}} >
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
                               <div className="clcboxIImg">
                                 <img src={item.imgs} alt={item.imgAlt} />
                               </div>
@@ -820,7 +801,7 @@ export default function EducationInstitutions() {
                 ))}
               </div>
               <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
-                {CentralChennai.map((section, sectionIdx) => {
+                {IbSchoolsList.map((section, sectionIdx) => {
                   return (
                     <div key={sectionIdx} className="nightlifesecIn">
                       <h2 className="text-2xl font-semibold mb-6">

@@ -871,10 +871,11 @@ export const NammaStoreiesnewsArticle = [
 ];
 
 export const newsPhotos = [
-    {
+  {
     id: -4,
     Company: "Chennai Times",
-    EventsCalendarTitle: "Our Goal is to make Chennai one of the World's Top 100 Cities",
+    EventsCalendarTitle:
+      "Our Goal is to make Chennai one of the World's Top 100 Cities",
     EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
     EventsCalendarMonth: "26 July",
     EventsCalendarTime: "07:00 PM",
@@ -2277,8 +2278,26 @@ export const nammaStoriesNewsEPaper = [
 ];
 
 export const youtubeChannel = [
+    {
+    id: -7,
+    Company: "Published On: September 9, 2025 ",
+    EventsCalendarTitle: "Vikatan TV",
+    EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
+    EventsCalendarMonth: "26 July",
+    EventsCalendarTime: "07:00 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/Youtube-Videos/vikatan-superchennai.png",
+    image1: "/images/NewsLetter/Fourth-Detail.jpeg",
+    link: "https://www.youtube.com/watch?v=HghYypEjGCY",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "3 years +",
+    rleigion: "Comedy",
+    aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
+  },
   {
-    id: -1,
+    id: -6,
     Company: "Published On: July 18, 2025 ",
     EventsCalendarTitle: "Captain News",
     EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
@@ -2296,7 +2315,7 @@ export const youtubeChannel = [
     aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
   },
   {
-    id: -1,
+    id: -5,
     Company: "Published On: July 18, 2025 ",
     EventsCalendarTitle: "VR News chennai",
     EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
@@ -2314,7 +2333,7 @@ export const youtubeChannel = [
     aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
   },
   {
-    id: -1,
+    id: -4,
     Company: "Published On: July 17, 2025 ",
     EventsCalendarTitle: "Tamil Live News",
     EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
@@ -2332,7 +2351,7 @@ export const youtubeChannel = [
     aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
   },
   {
-    id: -1,
+    id: -3,
     Company: "Published On: July 17, 2025 ",
     EventsCalendarTitle: "Valgan TV",
     EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
@@ -2350,7 +2369,7 @@ export const youtubeChannel = [
     aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
   },
   {
-    id: -1,
+    id: -2,
     Company: "Published On: July 17, 2025 ",
     EventsCalendarTitle: "Global News 24/7 TV",
     EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",

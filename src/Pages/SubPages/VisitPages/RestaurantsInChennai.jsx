@@ -470,18 +470,7 @@ const detailsections = [
           },
         ],
       },
-      {
-        name: "Go Native",
-        description:
-          "A sustainable lifestyle brand blending mindful living with modern style, offering farm-to-table dining experiences and eco-conscious products for a greener, healthier lifestyle",
-        subDescription: "",
-        locations: [
-          {
-            label: "Alwarpet",
-            link: "https://maps.app.goo.gl/HSrzNeTj8MgLz9Di9",
-          },
-        ],
-      },
+
       {
         name: "Kup Budan House",
         description:

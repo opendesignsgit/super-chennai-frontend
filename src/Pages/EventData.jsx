@@ -2364,29 +2364,29 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "Comedy",
     aboutFull: `Chennai’s Smooth Adi is here to engage you with lots of humor and story relatable to our day to day life. Guna Sai is known for his effortless comedies and style adding on this ADI makes you laugh straight from the heart of tamil culture on stage. Smooth Adi comedy promises a night full of endless laughter and positive vibes.`,
   },
-  {
-    id: 106,
-    metaTitleEvent: "Kids Chess Upskilling Session | Ages 5–15 - Super Chennai",
-    conicallinkEvent: "/eventsdetails/106",
-    metaDescriptionEvent:
-      "Boost your child’s skills with the Kids Chess Upskilling Session in Chennai. For ages 5–15, build confidence, sharpen minds & learn chess while having fun.",
-    siteLink:
-      "https://in.bookmyshow.com/events/kids-chess-upskilling-workshop-ages-5-to-15/ET00456806",
-    EventsCalendarTitle: "Kids Chess Upskilling Session : Ages 5-15",
-    EventsCalendarContent:
-      "Activating your little one's mind is way easier if you visit here",
-    EventsCalendarMonth: "13 Sep 2025",
-    EventsCalendarTime: "7:00 PM",
-    EventsCalendarCategory: "Education",
-    image: "/images/HomePage-Images/Events/Newevents/e222.jpg",
-    link: "/events",
-    location: "Your Place and Your Time: India",
-    language: "English",
-    hours: "1 hour 30 minutes",
-    ageLimit: "",
-    rleigion: "",
-    aboutFull: `Activating your little one's mind is way easier if you visit here. Here’s a chance for your kids to sharpen their cognitive skills, develop confidence and also by having fun. Chennai came with another awakening session for kids inducing games —  The Kids Chess Upskilling Session for 5-15 years children.  Bring your little one and let them boost their confidence in their way by playing also by learning.`,
-  },
+  // {
+  //   id: 106,
+  //   metaTitleEvent: "Kids Chess Upskilling Session | Ages 5–15 - Super Chennai",
+  //   conicallinkEvent: "/eventsdetails/106",
+  //   metaDescriptionEvent:
+  //     "Boost your child’s skills with the Kids Chess Upskilling Session in Chennai. For ages 5–15, build confidence, sharpen minds & learn chess while having fun.",
+  //   siteLink:
+  //     "https://in.bookmyshow.com/events/kids-chess-upskilling-workshop-ages-5-to-15/ET00456806",
+  //   EventsCalendarTitle: "Kids Chess Upskilling Session : Ages 5-15",
+  //   EventsCalendarContent:
+  //     "Activating your little one's mind is way easier if you visit here",
+  //   EventsCalendarMonth: "13 Sep 2025",
+  //   EventsCalendarTime: "7:00 PM",
+  //   EventsCalendarCategory: "Education",
+  //   image: "/images/HomePage-Images/Events/Newevents/e222.jpg",
+  //   link: "/events",
+  //   location: "Your Place and Your Time: India",
+  //   language: "English",
+  //   hours: "1 hour 30 minutes",
+  //   ageLimit: "",
+  //   rleigion: "",
+  //   aboutFull: `Activating your little one's mind is way easier if you visit here. Here’s a chance for your kids to sharpen their cognitive skills, develop confidence and also by having fun. Chennai came with another awakening session for kids inducing games —  The Kids Chess Upskilling Session for 5-15 years children.  Bring your little one and let them boost their confidence in their way by playing also by learning.`,
+  // },
   {
     id: 107,
     metaTitleEvent:
@@ -2542,7 +2542,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     EventsCalendarTitle: "Pichwai Painting Workshop",
     EventsCalendarContent:
       "Everything is an art but a tool to voiceout with words is painting",
-    EventsCalendarMonth: "13 Sep – 5 Oct 2025",
+    EventsCalendarMonth: "21 Sep 2025",
     EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Workshops",
     image: "/images/HomePage-Images/Events/Newevents/e225.jpg",
@@ -2682,7 +2682,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "https://in.bookmyshow.com/events/perfect-role-model-by-sonali-thakker/ET00428237",
     EventsCalendarTitle: "Perfect Role Model by Sonali Thakker",
     EventsCalendarContent: "Chennai, get ready for a laughter-packed evening",
-    EventsCalendarMonth: "13 Sep – 28 Sep 2025",
+    EventsCalendarMonth: "21 Sep 2025",
     EventsCalendarTime: "8:00 PM",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/237.jpg",
@@ -2705,7 +2705,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "https://in.bookmyshow.com/events/adults-only-stand-up-comedy/ET00354828",
     EventsCalendarTitle: "Adults Only - English Stand Up",
     EventsCalendarContent: "Chennai, it’s time to leave the kids at home",
-    EventsCalendarMonth: "21 Sep – 28 Sep 2025",
+    EventsCalendarMonth: "21 Sep 2025",
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/236.jpg",
@@ -2873,8 +2873,8 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     EventsCalendarTitle: "Salsa, Bachata, Urbankiz Dance Workshop",
     EventsCalendarContent:
       "It’s the time to move your bodies to the rhythm of sounds and beats!",
-    EventsCalendarMonth: "20 Sep – 21 Sep 2025",
-    EventsCalendarTime: "6:00 PM",
+    EventsCalendarMonth: "21 Sep 2025",
+    EventsCalendarTime: "2:00 PM",
     EventsCalendarCategory: "Workshops",
     image: "/images/HomePage-Images/Events/Newevents/243.jpg",
     link: "/events",
@@ -2971,8 +2971,8 @@ Rest your body for a weekend and relax your mind with us.
     EventsCalendarTitle: "7 plus One - Rising Stars on Tour",
     EventsCalendarContent:
       "Chennai’s largest funniest and music filled stand-up comedy",
-    EventsCalendarMonth: "19 Sep – 21 Sep 2025",
-    EventsCalendarTime: "7:00 PM",
+    EventsCalendarMonth: "21 Sep 2025",
+    EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/242.jpg",
     link: "/events",
@@ -3086,12 +3086,12 @@ Rest your body for a weekend and relax your mind with us.
     EventsCalendarTitle: "THAT DIRTY SHOW ",
     EventsCalendarContent:
       "Get ready for a wildly unfiltered night of laughter!",
-    EventsCalendarMonth: "27 Sep – 2 Nov 2025",
-    EventsCalendarTime: "6:30 PM",
+    EventsCalendarMonth: "2 Nov 2025",
+    EventsCalendarTime: "4:00 PM",
     EventsCalendarCategory: "Comedy",
     image: "/images/HomePage-Images/Events/Newevents/241.jpg",
     link: "/events",
-    location: "Rotary Texcity Hall: Coimbatore",
+    location: "Alwarpet, Chennai",
     language: "Tamil",
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 18yrs +",
@@ -3133,8 +3133,8 @@ Rest your body for a weekend and relax your mind with us.
       "https://in.bookmyshow.com/events/abishek-wants-to-enjoy-life-a-comedy-special/ET00458295",
     EventsCalendarTitle: "ABISHEK WANTS TO ENJOY LIFE - A COMEDY SPECIAL",
     EventsCalendarContent: "Abishek presents his brand-new special",
-    EventsCalendarMonth: "13 Sep – 26 Oct 2025",
-    EventsCalendarTime: "6:30 PM",
+    EventsCalendarMonth: "25 Sep 2025",
+    EventsCalendarTime: "3:00 PM",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/260.jpg",
     link: "/events",
@@ -3143,7 +3143,11 @@ Rest your body for a weekend and relax your mind with us.
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 16yrs +",
     rleigion: "",
-    aboutFull: `Abishek presents his brand-new special — Abishek Wants to Enjoy Life! In a world full of negativity and stress, people have forgotten how to truly enjoy life. Abishek is here to bring laughter, positivity, and hilarious stories from his own experiences. With music, movement, and plenty of jokes, this special promises a unique and unforgettable experience for everyone. Grab your tickets now for a night of uplifting humor — his special is going to be a one-of-a-kind experience for the audience.`,
+    aboutFull: `Max Fashion India is dropping its first-ever rap beast — Max Urban UN-MUTE. Three cities. Three homegrown rap kings — Baby Jean (Kochi), Kayden Sharma (Hyderabad), and Paal Dabba (Chennai) — coming together for a one-of-a-kind south tour like never before.
+    This is where hip-hop meets raw energy, neon vibes, and the Gen Z beat that refuses to stay quiet. Expect fiery bars, unfiltered flow, and a crowd that’s ready to scream the loudest “How New Is Your New?”
+    If you breathe street culture, live for live music, and want to witness the South’s rap scene explode, this is the ticket you don’t sleep on.
+    
+    `,
   },
   {
     id: 139,
@@ -3157,8 +3161,8 @@ Rest your body for a weekend and relax your mind with us.
     EventsCalendarTitle: "Getting There by Rohan Joshi",
     EventsCalendarContent:
       "Rohan Joshi, the renowned stay-at-home expert, faced a classic",
-    EventsCalendarMonth: "20 Sep – 23 Nov 2025",
-    EventsCalendarTime: "",
+    EventsCalendarMonth: "27 Sep 2025",
+    EventsCalendarTime: " 7:00 PM ",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/256.jpg",
     link: "/events",
@@ -3171,6 +3175,9 @@ Rest your body for a weekend and relax your mind with us.
   },
   {
     id: 140,
+    RegisterLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/viewform",
+
     metaTitleEvent:
       "Clean Chennai Beaches | Coastal Cleanup Drive - Super Chennai",
     conicallinkEvent: "/eventsdetails/140",
@@ -3182,7 +3189,7 @@ Rest your body for a weekend and relax your mind with us.
     EventsCalendarContent:
       "On the streets, Chennai stands with pride as part of the planet’s",
     EventsCalendarMonth: "20 Sep 2025",
-    EventsCalendarTime: "",
+    EventsCalendarTime: "6:00 AM - 9:00 AM",
     EventsCalendarCategory: "Coastal CleanUp",
     image: "/images/HomePage-Images/Events/Newevents/261.jpg",
     link: "/events",

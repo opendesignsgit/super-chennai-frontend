@@ -98,7 +98,7 @@ export default function EventsDetails() {
 
             {/* Right Side */}
             <div className="EventRight">
-              <div className="evderibox pb-[30px]" >
+              <div className="evderibox pb-[30px]">
                 <div className="evderListbox">
                   {/* <div className="evderViewbox">
                     <InfoRow
@@ -177,7 +177,10 @@ export default function EventsDetails() {
                 </div>
 
                 {event.siteLink && (
-                  <div className="flex justify-center pb-[0px]">
+                  <div
+                    className="flex justify-center pb-[0px]"
+                    style={{ display: event.RegisterLink ? "none" : "block" }}
+                  >
                     <a href={event.siteLink || "#"}>
                       <button
                         className="cursor-pointer"
@@ -189,7 +192,7 @@ export default function EventsDetails() {
                           borderRadius: "5px",
                           fontFamily: "Poppins",
                           fontWeight: 500,
-                          width:"120px"
+                          width: "120px",
                         }}
                       >
                         Book Now
@@ -210,7 +213,7 @@ export default function EventsDetails() {
                           borderRadius: "5px",
                           fontFamily: "Poppins",
                           fontWeight: 500,
-                           width:"120px"
+                          width: "120px",
                         }}
                       >
                         Register

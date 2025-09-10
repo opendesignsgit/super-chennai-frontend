@@ -2072,7 +2072,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Bengaluru",
               link: "https://maps.app.goo.gl/M13uhKzA8K9epN6R9",
             },
           ],
@@ -2082,7 +2082,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "Sri Vidhya Vihar Campus, K.K.S Pannai, MC Rd, Pudhu, Govindapuram, Ambur, Dt 635802",
+              name: "Ambur",
               link: "https://maps.app.goo.gl/pQBcAhWgMLw3UwQp7",
             },
           ],
@@ -2092,7 +2092,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Bengaluru",
               link: "https://maps.app.goo.gl/8m6DBoxg2Yo2S7hMA",
             },
           ],
@@ -2102,7 +2102,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Challegatta",
               link: "https://maps.app.goo.gl/X79x9XLDcFNWmtAH6",
             },
           ],
@@ -2112,7 +2112,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Ottiambakkam",
               link: "https://maps.app.goo.gl/295CAiy6LSPbNKWNA",
             },
           ],
@@ -2122,7 +2122,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: " Mangadu",
               link: "https://maps.app.goo.gl/4jXFFnRw4wMd6nGJ9",
             },
           ],
@@ -2132,7 +2132,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Tambaram",
               link: "https://maps.app.goo.gl/L41J61Q7nbCwbxvM9",
             },
           ],
@@ -2142,7 +2142,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Kolathur",
               link: "https://maps.app.goo.gl/pdGHckeYNqKH2rkf8",
             },
           ],
@@ -2152,7 +2152,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Vanagaram",
               link: "https://maps.app.goo.gl/F1VKLaCdfwy1wF987",
             },
           ],
@@ -2162,7 +2162,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Velachery",
               link: "https://maps.app.goo.gl/oj1cwhVyDTcUb4529",
             },
           ],
@@ -2172,7 +2172,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Kattupakkam",
               link: "https://maps.app.goo.gl/15JMXmjuwJqThawY8",
             },
           ],
@@ -2182,7 +2182,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Kundrathur",
               link: "https://maps.app.goo.gl/EmUnxP81fdCQPM1J6",
             },
           ],
@@ -2192,7 +2192,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Kovur",
               link: "https://maps.app.goo.gl/sEM7WxfNeRLqBS7d7",
             },
           ],
@@ -2202,7 +2202,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Ekkatuthangal",
               link: "https://maps.app.goo.gl/pQm2JRNDVakixUod8",
             },
           ],
@@ -2212,7 +2212,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Thirumazhisai",
               link: "https://maps.app.goo.gl/v9HLWQtjboy8dzeF7",
             },
           ],
@@ -2222,7 +2222,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Aminjikarai",
               link: "https://maps.app.goo.gl/CnQziTMRjex4RAJ38",
             },
           ],
@@ -2232,7 +2232,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Medavakkam",
               link: "https://maps.app.goo.gl/cgBhNvzbSofJ4Esr8",
             },
           ],
@@ -2242,7 +2242,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Siruseri",
               link: "https://maps.app.goo.gl/KVUzM9baTdat9YUMA",
             },
           ],
@@ -2252,7 +2252,7 @@ export default function EducationInstitutions() {
           desc: "",
           locations: [
             {
-              name: "dummy",
+              name: "Avadi",
               link: "https://maps.app.goo.gl/pyuPRunXrMGjKs4u5",
             },
           ],

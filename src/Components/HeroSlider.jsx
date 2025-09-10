@@ -8,7 +8,7 @@ const slides = [
     type: "image",
     link: "",
     image: "/images/HomePage-Images/Super-chennai-Banner.jpg",
-    image1: "/images/HomePage-Images/Super-Chennai-Mobile-Banner.png",
+    image1: "/images/HomePage-Images/Super-chennai-Banner-mobile.jpg",
     title: "First slide label",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },

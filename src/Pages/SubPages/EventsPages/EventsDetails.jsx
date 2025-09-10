@@ -179,7 +179,7 @@ export default function EventsDetails() {
                 {event.siteLink && (
                   <div
                     className="flex justify-center pb-[0px]"
-                    style={{ display: event.RegisterLink ? "none" : "block" }}
+                    style={{ display: event.RegisterLink ? "none" : "flex" }}
                   >
                     <a href={event.siteLink || "#"}>
                       <button

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const slides = [
     {
     type: "image",
-    link: "",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/viewform",
     image: "/images/HomePage-Images/Super-chennai-Banner.jpg",
     image1: "/images/HomePage-Images/Super-chennai-Banner-mobile.jpg",
     title: "First slide label",

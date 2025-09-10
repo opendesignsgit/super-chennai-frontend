@@ -2082,7 +2082,8 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Join us 6–7 Sept 2025 at House of Games, Kilpauk! A 2.5-hour guided art session with step-by-step learning, all materials, and refreshments included.",
     siteLink: "https://kynhood.com/event/689ad724999af733d07d6125",
     EventsCalendarTitle: "Prom Chennai",
-    EventsCalendarContent: "Thus spoke, the greatest night ever foretold",
+    EventsCalendarContent:
+      "Thus spoke, the greatest night ever foretold",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Meetups, Night Life",
@@ -2095,7 +2096,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Thus spoke, the greatest night ever foretold” — we bring you PROM. The night we once only dreamt of, imagined through high school rom-coms, filled with slow dances, glittering lights, and the thrill of walking in with a date, is finally here. This September, EN/D is making that fantasy a reality, bringing Chennai a grand, euphoric celebration bigger and bolder than you ever imagined. Picture this: 100 couples, your song playing at just the right moment, a dance floor designed for pure magic, and a setting drenched in gold, purple, and black opulence fit for the gods themselves. Everything you thought was out of reach is now within your grasp—it’s real, it’s happening, and it’s waiting for you on September 6th. Bring a girl, a boy, anyone—just bring your date, because this is PROM. Note: Venue cover charges (F&B) apply and are to be settled separately at the venue.`,
   },
-  {
+    {
     id: 94,
     metaTitleEvent:
       "3D Art Workshop / Super Chennai / Beginner-Friendly Art Event",
@@ -2104,7 +2105,8 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Join us 6–7 Sept 2025 at House of Games, Kilpauk! A 2.5-hour guided art session with step-by-step learning, all materials, and refreshments included.",
     siteLink: "https://kynhood.com/event/68b592142835c512514be8ab",
     EventsCalendarTitle: "Big Saturday Night",
-    EventsCalendarContent: "Thus spoke, the greatest night ever foretold",
+    EventsCalendarContent:
+      "Thus spoke, the greatest night ever foretold",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Meetups, Night Life",
@@ -2119,9 +2121,11 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 95,
-    metaTitleEvent: "",
+    metaTitleEvent:
+      "",
     conicallinkEvent: "/eventsdetails/95",
-    metaDescriptionEvent: "",
+    metaDescriptionEvent:
+    "",
     siteLink: "https://kynhood.com/event/68a2fc2432e22ed6652d8ee8",
     EventsCalendarTitle: "Floor Yoga Workshop",
     EventsCalendarContent:
@@ -2138,14 +2142,17 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Begin your morning with renewal and balance at the Floor Yoga Workshop happening on 6th September, 6:00–7:00 AM, at Dream Yoga Studio, Thalambur. Open to all levels, this session will guide you through grounding postures and mindful movements designed to build strength, flexibility, and balance while deepening your connection to the mat. Floor yoga helps release tension, improve core stability, and enhance body awareness, leaving you both energized and centered. Led by an experienced instructor, the workshop offers a supportive space to refine your practice, calm your mind, and start the day with positivity and focus. Reserve your spot now and embrace a morning of movement, mindfulness, and fresh energy! For enquiries: 63851 11315.`,
   },
-  {
+    {
     id: 96,
-    metaTitleEvent: "",
+    metaTitleEvent:
+      "",
     conicallinkEvent: "/eventsdetails/96",
-    metaDescriptionEvent: "",
+    metaDescriptionEvent:
+      "",
     siteLink: "https://kynhood.com/event/68a2f92f0480e36e566f5749",
     EventsCalendarTitle: "Aerial Yoga - One Day Workshop",
-    EventsCalendarContent: "Experience the freedom of movement and lightness",
+    EventsCalendarContent:
+      "Experience the freedom of movement and lightness",
     EventsCalendarMonth: "6 Sep 2025",
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Workshop",
@@ -2158,11 +2165,13 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Experience the freedom of movement and lightness at the Aerial Yoga Session at Dream Yoga Studio, Thalambur, on 6th September from 6:00–7:00 PM. This unique practice blends traditional yoga, Pilates, and dance with the support of a hammock, allowing you to stretch deeper, improve flexibility, and build strength while feeling weightless and free. Guided by expert instructors, you’ll safely explore inversions and poses that strengthen your core, release spinal tension, and boost circulation. Suitable for both beginners and experienced practitioners, Aerial Yoga offers a refreshing way to reconnect with your body, calm your mind, and uplift your spirit. Come breathe, flow, and discover yoga like never before—limited spots available, so reserve your place in the sky today! 🌿`,
   },
-  {
+    {
     id: 97,
-    metaTitleEvent: "",
+    metaTitleEvent:
+      "",
     conicallinkEvent: "/eventsdetails/97",
-    metaDescriptionEvent: "",
+    metaDescriptionEvent:
+      "",
     siteLink: "https://kynhood.com/event/68a2fde532e22ed6652d8ef9",
     EventsCalendarTitle: "Zumba Workshop",
     EventsCalendarContent:
@@ -2181,9 +2190,11 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 98,
-    metaTitleEvent: "",
+    metaTitleEvent:
+      "",
     conicallinkEvent: "/eventsdetails/98",
-    metaDescriptionEvent: "",
+    metaDescriptionEvent:
+      "",
     siteLink: "https://kynhood.com/event/68b572a468d895f15d971a94",
     EventsCalendarTitle: "Sashiko Stitches",
     EventsCalendarContent:
@@ -2200,7 +2211,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Step into the ancient and mindful world of Japanese embroidery with the Sashiko Stitches Workshop! Designed for beginners, this hands-on session will be held on September 7th, 2025, at Hermoso Studio, Nungambakkam, from 10:30 AM to 6:30 PM. Guided through the traditional running-stitch technique, you’ll learn the core patterns and rhythms of Sashiko while crafting your own durable, one-of-a-kind design on a chic tote bag. With all materials provided, it’s the perfect chance to relax, spark your creativity, and immerse yourself in a timeless art form. Hosted at the SWE Space, a community dedicated to creation and expression, the workshop promises a rewarding day of learning, making, and connection. Don’t miss this fulfilling artistic journey—secure your spot today! For enquiries (WhatsApp): 6385804591.`,
   },
-  {
+   {
     id: 99,
     metaTitleEvent:
       "Tamil Stand-Up Comedy Show | Vikkals Vikram - Super Chennai",
@@ -2209,7 +2220,8 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Laugh out loud at this Tamil Stand-Up Comedy Show with Vikkals Vikram in Chennai. Enjoy unfiltered humor, witty stories, and nonstop fun for a memorable night.",
     siteLink: "https://in.bookmyshow.com/events/vikkals-comedy-cafe/ET00429673",
     EventsCalendarTitle: "Vikkals Comedy Cafe - Standup Comedy Open Mic",
-    EventsCalendarContent: "Want to experience a laughter roller coaster",
+    EventsCalendarContent:
+      "Want to experience a laughter roller coaster",
     EventsCalendarMonth: "9 Sep – 11 Sep 2025",
     EventsCalendarTime: "8:00 PM",
     EventsCalendarCategory: "Open Mic Comedy",
@@ -2222,17 +2234,17 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "Comedy",
     aboutFull: `Want to experience a laughter roller coaster? Here we have the most promising comedian Vikram Arul Vidyapathi also known as Vikkals Vikram brings you a fun-filled Standup Comedy Open Mic Night now in Chennai. So this is the perfect place to explore an unfiltered comedy with purest form. Starting from everyday struggles to quirky observations he knows how to change anything to humor— make sure you will laugh from your heart for the whole night.`,
   },
-  {
+   {
     id: 100,
     metaTitleEvent:
       "MJ Shriram Concert | Ilaiyaraaja & MSV Tribute - Super Chennai",
     conicallinkEvent: "/eventsdetails/100",
     metaDescriptionEvent:
       "Enjoy MJ Shriram live in Chennai with a soulful tribute to Ilaiyaraaja, MSV & Tamil music legends. Relive nostalgic melodies and timeless classics with loved ones.",
-    siteLink:
-      "https://in.bookmyshow.com/events/tamil-retro-nite-ft-mj-shriram/ET00459616",
+    siteLink: "https://in.bookmyshow.com/events/tamil-retro-nite-ft-mj-shriram/ET00459616",
     EventsCalendarTitle: "Tamil Retro Nite Ft. MJ Shriram",
-    EventsCalendarContent: "!Let ‘s go back to nostalgia! We have MJ Shriram",
+    EventsCalendarContent:
+      "!Let ‘s go back to nostalgia! We have MJ Shriram",
     EventsCalendarMonth: "12 Sep 2025",
     EventsCalendarTime: "9:00 PM",
     EventsCalendarCategory: "Music Shows",
@@ -2243,17 +2255,16 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     hours: "2 hours",
     ageLimit: "Age Limit - 21yrs +",
     rleigion: "Regional, Retro",
-    aboutFull: `!Let ‘s go back to nostalgia! We have MJ Shriram to take us back into the magic of MSV  and Ilaiyaraaja along with more legends with his soulful singing. More than a concert it's an emotion of going back to the memory lane, where songs remain of our story or a moment we have cherished. Come sing along and enjoy your nostalgic nite with your loved ones.`,
+    aboutFull:`!Let ‘s go back to nostalgia! We have MJ Shriram to take us back into the magic of MSV  and Ilaiyaraaja along with more legends with his soulful singing. More than a concert it's an emotion of going back to the memory lane, where songs remain of our story or a moment we have cherished. Come sing along and enjoy your nostalgic nite with your loved ones.`
   },
-  {
+   {
     id: 101,
     metaTitleEvent:
       "Ini Filter Theva Illai | Glowing Skin & Self-Care - Super Chennai",
     conicallinkEvent: "/eventsdetails/101",
     metaDescriptionEvent:
       "Discover the secrets to glowing skin at Ini Filter Theva Illai. Learn self-care tips for women, wellness insights, and how to nurture your radiance from within.",
-    siteLink:
-      "https://in.bookmyshow.com/events/ini-filter-theva-illai/ET00461117",
+    siteLink: "https://in.bookmyshow.com/events/ini-filter-theva-illai/ET00461117",
     EventsCalendarTitle: "Ini Filter Theva Illai",
     EventsCalendarContent:
       "Are you ready for unfiltered laughter, stories for comedy!",
@@ -2276,10 +2287,10 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/102",
     metaDescriptionEvent:
       " Jungle Rave 2025, Chennai’s first ever sober rave, features top DJs, jungle-themed lights, dance, music, and a vibrant community celebrating life and nightlife.",
-    siteLink:
-      "https://in.bookmyshow.com/events/jungle-rave-2025-chennai-s-first-ever-sober-rave/ET00460614",
+    siteLink: "https://in.bookmyshow.com/events/jungle-rave-2025-chennai-s-first-ever-sober-rave/ET00460614",
     EventsCalendarTitle: "Jungle Rave 2025 (Chennai's First Ever Sober Rave)",
-    EventsCalendarContent: "Jump into a sparkling night like no other!",
+    EventsCalendarContent:
+      "Jump into a sparkling night like no other!",
     EventsCalendarMonth: "13 Sep 2025",
     EventsCalendarTime: "7:00 PM",
     EventsCalendarCategory: "Music Festivals",
@@ -2290,9 +2301,9 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     hours: "5 hours",
     ageLimit: "Age Limit - 12yrs +",
     rleigion: "Afro, Bollywood, EDM, Hip Hop, House",
-    aboutFull: `Jump into a sparkling night like no other!. Jungle Rave 2025 pops Chennai’s first ever sober rave , where sound, magic and dance take the spotlight— no substances required. Love yourself in the beats of top-DJs, lose yourself in stunned jungle themed lights and connect with the community of celebrating life together. It's not just a party— it's a revolution in nightlife. Just imagine being in a place full of music, magic, engaging activities and enjoyment where you can be truly yourself.`,
+    aboutFull:`Jump into a sparkling night like no other!. Jungle Rave 2025 pops Chennai’s first ever sober rave , where sound, magic and dance take the spotlight— no substances required. Love yourself in the beats of top-DJs, lose yourself in stunned jungle themed lights and connect with the community of celebrating life together. It's not just a party— it's a revolution in nightlife. Just imagine being in a place full of music, magic, engaging activities and enjoyment where you can be truly yourself.`
   },
-
+  
   {
     id: 103,
     metaTitleEvent:
@@ -2300,8 +2311,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/103",
     metaDescriptionEvent:
       " News reading workshop with Ranjith in Chennai. Learn pronunciation, voice modulation, presentation skills, and techniques to become a confident news reader.",
-    siteLink:
-      "https://in.bookmyshow.com/events/news-reading-workshop-by-news-reader-ranjith/ET00459235",
+    siteLink: "https://in.bookmyshow.com/events/news-reading-workshop-by-news-reader-ranjith/ET00459235",
     EventsCalendarTitle: "NEWS READING WORKSHOP BY NEWS READER RANJITH",
     EventsCalendarContent:
       "This workshop is well designed for aspiring news readers",
@@ -2347,8 +2357,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/105",
     metaDescriptionEvent:
       "Catch SMOOTH ADI in Chennai for a Tamil stand-up comedy show with witty humor, cultural sketches, relatable stories, and nonstop laughter for a fun night.",
-    siteLink:
-      "https://in.bookmyshow.com/events/guna-sai-live-a-tamil-standup-comedy-show/ET00361726",
+    siteLink: "https://in.bookmyshow.com/events/guna-sai-live-a-tamil-standup-comedy-show/ET00361726",
     EventsCalendarTitle: "SMOOTH ADI - A TAMIL STANDUP SHOW",
     EventsCalendarContent:
       "Chennai’s Smooth Adi is here to engage you with lots of humor",
@@ -2366,12 +2375,12 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 106,
-    metaTitleEvent: "Kids Chess Upskilling Session | Ages 5–15 - Super Chennai",
+    metaTitleEvent:
+      "Kids Chess Upskilling Session | Ages 5–15 - Super Chennai",
     conicallinkEvent: "/eventsdetails/106",
     metaDescriptionEvent:
       "Boost your child’s skills with the Kids Chess Upskilling Session in Chennai. For ages 5–15, build confidence, sharpen minds & learn chess while having fun.",
-    siteLink:
-      "https://in.bookmyshow.com/events/kids-chess-upskilling-workshop-ages-5-to-15/ET00456806",
+    siteLink: "https://in.bookmyshow.com/events/kids-chess-upskilling-workshop-ages-5-to-15/ET00456806",
     EventsCalendarTitle: "Kids Chess Upskilling Session : Ages 5-15",
     EventsCalendarContent:
       "Activating your little one's mind is way easier if you visit here",
@@ -2394,10 +2403,10 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/107",
     metaDescriptionEvent:
       "Catch Varun Thakur Stand-Up Comedy in Chennai with Space Cadet. Enjoy witty jokes, energetic performances, quirky observations, and nonstop laughter.",
-    siteLink:
-      "https://in.bookmyshow.com/events/space-cadet-by-varun-thakur/ET00339165",
+    siteLink: "https://in.bookmyshow.com/events/space-cadet-by-varun-thakur/ET00339165",
     EventsCalendarTitle: "Space Cadet by Varun Thakur",
-    EventsCalendarContent: "Are you ready for a humor filler evening!",
+    EventsCalendarContent:
+      "Are you ready for a humor filler evening!",
     EventsCalendarMonth: "13 Sep – 14 Sep 2025",
     EventsCalendarTime: "4:00 PM",
     EventsCalendarCategory: "Stand up Comedy",
@@ -2410,16 +2419,15 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "Comedy",
     aboutFull: `Are you ready for a humor filler evening! We have the Space Cadet, a brand new solo show presented by all our favorite comedian Varun Thakur known for his  energetic storytelling and on-spot impressions. Experience a rollercoaster ride of jokes about everything in our life and also some serious talk. Don’t miss out this laughter ride grab your seat with us.`,
   },
-
-  {
+ 
+   {
     id: 108,
     metaTitleEvent:
       "Musicom Finale | Karaoke & Singing Competition - Super Chennai",
     conicallinkEvent: "/eventsdetails/108",
     metaDescriptionEvent:
       "Showcase your talent at Musicom Finale, Chennai’s ultimate karaoke and singing competition. Enjoy soulful melodies, blasting hits, and unforgettable performances.",
-    siteLink:
-      "https://in.bookmyshow.com/events/musicom-finale-karoake-music-show-and-competition/ET00456083",
+    siteLink: "https://in.bookmyshow.com/events/musicom-finale-karoake-music-show-and-competition/ET00456083",
     EventsCalendarTitle: "Musicom Finale- Karoake Music Show and Competition",
     EventsCalendarContent:
       "Have a passion for music but not sure where to start",
@@ -2435,7 +2443,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "Regional",
     aboutFull: `Have a passion for music but not sure where to start?! This is for you. We came up with a karaoke music show and competition —Musicom Finale to step up all the music lovers who are passionate about music. From soulful melodies to blasting hits this finale is just gonna be a rocking night with unforgettable performances and entertainment. Grab the mic to show your voice to the world. Without music there is no life, come experience the art of sounds and voices.`,
   },
-  {
+   {
     id: 109,
     metaTitleEvent:
       "SECRETS | Tamil Stand-Up Comedy Show in Chennai - Super Chennai",
@@ -2444,7 +2452,8 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Laugh out loud at SECRETS, a Tamil stand-up comedy show in Chennai. Friendship tales, family quirks, and daily life secrets create an evening full of fun!",
     siteLink: "https://in.bookmyshow.com/events/comedy-combo/ET00364786",
     EventsCalendarTitle: "SECRETS - A Tamil Standup show ",
-    EventsCalendarContent: "Step into a laughter packed evening with SECRETS",
+    EventsCalendarContent:
+      "Step into a laughter packed evening with SECRETS",
     EventsCalendarMonth: "14 Sep 2025",
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Stand up Comedy",
@@ -2455,7 +2464,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 18yrs +",
     rleigion: "Comedy",
-    aboutFull: `Step into a laughter packed evening with SECRETS — a tamil stand comedy show that drives you into hilarious, relatable and so many surprise moments of daily life. From friendship tales and family drama to little quirks of chennai living, nothing is small or big in front of spilling the secrets on stage. With witty punchlines and relatable stories and plenty of Laughing-Out-Loud  moments with amazing comics of Chennai Prabu, Sai Anand, Vanshita, Sandeep and Divyanand you all gonna have a non-stop laughing evening. `,
+    aboutFull:`Step into a laughter packed evening with SECRETS — a tamil stand comedy show that drives you into hilarious, relatable and so many surprise moments of daily life. From friendship tales and family drama to little quirks of chennai living, nothing is small or big in front of spilling the secrets on stage. With witty punchlines and relatable stories and plenty of Laughing-Out-Loud  moments with amazing comics of Chennai Prabu, Sai Anand, Vanshita, Sandeep and Divyanand you all gonna have a non-stop laughing evening. `
   },
   {
     id: 110,
@@ -2464,10 +2473,10 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/110",
     metaDescriptionEvent:
       " Celebrate creativity at Tape A Tale GHAR Open Mic in Chennai. A warm evening of storytellers, poetry, and spoken word artists sharing heartfelt tales and emotions.",
-    siteLink:
-      "https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836",
+    siteLink: "https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836",
     EventsCalendarTitle: "Ghar - An Open Mic For Words By Tape A Tale",
-    EventsCalendarContent: "GHAR is where stories find a home.",
+    EventsCalendarContent:
+      "GHAR is where stories find a home.",
     EventsCalendarMonth: "14 Sep – 21 Sep 2025",
     EventsCalendarTime: "12:00 PM",
     EventsCalendarCategory: "Performances",
@@ -2478,20 +2487,20 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     hours: "1 hour 30 minutes",
     ageLimit: "All age groups",
     rleigion: "",
-    aboutFull: `GHAR is where stories find a home.  An open mic by Tape A Tale, GHAR offers storytellers, poets, writers, and spoken word artists to express their feelings and create a community bond to communicate by giving and receiving feedback. Whether it's a tale from your heart or thoughts you have been waiting to voiceout— this is the safest space to be listened to and celebrated. Join us in Chennai for an heart warming evening of poetry, storytelling and bond to take all the way with you.`,
+    aboutFull:`GHAR is where stories find a home.  An open mic by Tape A Tale, GHAR offers storytellers, poets, writers, and spoken word artists to express their feelings and create a community bond to communicate by giving and receiving feedback. Whether it's a tale from your heart or thoughts you have been waiting to voiceout— this is the safest space to be listened to and celebrated. Join us in Chennai for an heart warming evening of poetry, storytelling and bond to take all the way with you.`
   },
-
-  {
+    
+    {
     id: 111,
     metaTitleEvent:
       "Open Mic Chennai | Lit-Mic Stand-Up Comedy Show - Super Chennai",
     conicallinkEvent: "/eventsdetails/111",
     metaDescriptionEvent:
       "Celebrate poetry, music & laughter at Lit-Mic open mic in Chennai. The 36th edition brings storytellers, artists & stand up comedy open mic Chennai all in one night.",
-    siteLink:
-      "https://in.bookmyshow.com/events/lit-mic-chennai-open-mic-edition-36/ET00460366",
+    siteLink: "https://in.bookmyshow.com/events/lit-mic-chennai-open-mic-edition-36/ET00460366",
     EventsCalendarTitle: "LIT-MIC - Chennai Open Mic - Edition 36",
-    EventsCalendarContent: "An electrifying evening of celebrating poetry",
+    EventsCalendarContent:
+      "An electrifying evening of celebrating poetry",
     EventsCalendarMonth: "14 Sep 2025",
     EventsCalendarTime: "4:00 PM",
     EventsCalendarCategory: "Music",
@@ -2504,16 +2513,15 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `An electrifying evening of celebrating poetry, stories, music and of course comedy! — Lit-Mic Chennai returns with its 36th edition of promising laughter, rhythm, emotions and creative energy. This is the stage where performers come together to expose their voices and connect with the audience to create unforgettable moments. Come join us for an evening filled with expression, art and bonding with Chennai.`,
   },
-
-  {
+    
+    {
     id: 112,
     metaTitleEvent:
       "Black Sheep Kida Virunthu | Music & Arts Chennai - Super Chennai",
     conicallinkEvent: "/eventsdetails/112",
     metaDescriptionEvent:
       "Black Sheep Kida Virunthu in Chennai brings sensational musicians for a music & arts festival with power-packed performances, vibrant energy, and nonstop fun.",
-    siteLink:
-      "https://in.bookmyshow.com/events/blacksheep-kida-viruthu-concert/ET00457696",
+    siteLink: "https://in.bookmyshow.com/events/blacksheep-kida-viruthu-concert/ET00457696",
     EventsCalendarTitle: "BLACKSHEEP KIDA VIRUNTHU CONCERT",
     EventsCalendarContent:
       "Music is an art of embracing our feeling beyond just words",
@@ -2529,16 +2537,15 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "Folk, Regional",
     aboutFull: `Music is an art of embracing our feeling beyond just words, it's a tool to reach people easily through a beautiful blend of mixed sounds, words and voices. Here we have our  Black Sheep Kida Virunthu Concert that brings Black sheep stars and your favorite sensational musicians to present powerpack performances together. Get ready chennai! For a grand musical entertainment feast.`,
   },
-
-  {
+    
+    {
     id: 113,
     metaTitleEvent:
       "Pichwai Art for Beginners | Painting Workshop - Super Chennai",
     conicallinkEvent: "/eventsdetails/113",
     metaDescriptionEvent:
       "Pichwai Art for Beginners painting workshop in Chennai. Learn traditional techniques, relax creatively, and bring cultural stories to life on canvas.",
-    siteLink:
-      "https://in.bookmyshow.com/events/pichwai-painting-workshop/ET00416246",
+    siteLink: "https://in.bookmyshow.com/events/pichwai-painting-workshop/ET00416246",
     EventsCalendarTitle: "Pichwai Painting Workshop",
     EventsCalendarContent:
       "Everything is an art but a tool to voiceout with words is painting",
@@ -2554,16 +2561,15 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Everything is an art but a tool to voiceout with words is painting — we conduct a hands-on workshop for beginners to expertise in painting. Here you will experience the meditative joy of traditional painting and also to speak with words to the world full of noises. Come join in Pichwai Painting Workshop to celebrate the culture and enhance your talent.`,
   },
-
-  {
+   
+    {
     id: 114,
     metaTitleEvent:
       "Chess Mastery Session for Kids | Ages 5–15 - Super Chennai",
     conicallinkEvent: "/eventsdetails/114",
     metaDescriptionEvent:
       "Chess Mastery Session for Kids in Chennai! Specially designed for ages 5–15 to develop focus, sharpen memory, and learn strategy with fun and confidence.",
-    siteLink:
-      "https://in.bookmyshow.com/events/superblitz-chess-arena/ET00455819",
+    siteLink: "https://in.bookmyshow.com/events/superblitz-chess-arena/ET00455819",
     EventsCalendarTitle: "Chess Mastery Session For Kids : Ages 5-15",
     EventsCalendarContent:
       "Give your child the chance of strategic thinking and confidence",
@@ -2577,7 +2583,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     hours: "1 hour 30 minutes",
     ageLimit: "All age groups",
     rleigion: "",
-    aboutFull: `Give your child the chance of strategic thinking and confidence through the game of kings! The chess mastery session is a specially made program for children from 5 to 15 years, designed to make them explore, enjoy and expertise in chess.  Whether your child is just a beginner or already knows the  basics, this program is going to help them build sharpen memory, focus and develop problem-solving skills while playing.`,
+    aboutFull: `Give your child the chance of strategic thinking and confidence through the game of kings! The chess mastery session is a specially made program for children from 5 to 15 years, designed to make them explore, enjoy and expertise in chess.  Whether your child is just a beginner or already knows the  basics, this program is going to help them build sharpen memory, focus and develop problem-solving skills while playing.`
   },
   {
     id: 115,
@@ -2586,8 +2592,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/115",
     metaDescriptionEvent:
       "Reconnect at Playdate with Parents! A special event with fun family bonding games, creative sessions & interactive activities for parents and kids in Chennai.",
-    siteLink:
-      "https://in.bookmyshow.com/events/playdate-party-unwind-rediscover-playfulness/ET00355445",
+    siteLink: "https://in.bookmyshow.com/events/playdate-party-unwind-rediscover-playfulness/ET00355445",
     EventsCalendarTitle: "Playdate with Parents ",
     EventsCalendarContent:
       "In today's busy world we forget how our parents gave their best",
@@ -2610,10 +2615,10 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/116",
     metaDescriptionEvent:
       "Capricio Live in Chennai! A Telugu music night with soulful tunes, rock beats, and unforgettable energy. A must-attend musical event.",
-    siteLink:
-      "https://in.bookmyshow.com/events/telugu-night-ft-capricio/ET00459991",
+    siteLink: "https://in.bookmyshow.com/events/telugu-night-ft-capricio/ET00459991",
     EventsCalendarTitle: "Telugu Night ft. Capricio",
-    EventsCalendarContent: "Chennai, get ready to groove! The most sensational",
+    EventsCalendarContent:
+      "Chennai, get ready to groove! The most sensational",
     EventsCalendarMonth: "20 Sep 2025",
     EventsCalendarTime: "9:00 PM",
     EventsCalendarCategory: "Music Shows",
@@ -2628,14 +2633,15 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
   {
     id: 117,
-    metaTitleEvent: " Vibe Panrom | Tamil Standup Comedy Show - Super Chennai",
+    metaTitleEvent:
+      " Vibe Panrom | Tamil Standup Comedy Show - Super Chennai",
     conicallinkEvent: "/eventsdetails/117",
     metaDescriptionEvent:
       "Chennai, get ready! Vibe Panrom Tamil Standup Comedy brings hilarious takes on life, family, and culture for an evening full of entertainment.",
-    siteLink:
-      "https://in.bookmyshow.com/events/jokes-for-reels-a-tamil-standup-comedy-show/ET00391838",
+    siteLink: "https://in.bookmyshow.com/events/jokes-for-reels-a-tamil-standup-comedy-show/ET00391838",
     EventsCalendarTitle: "VIBE PANROM - A TAMIL STANDUP COMEDY SHOW",
-    EventsCalendarContent: "!Are you ready to laugh and vibe!",
+    EventsCalendarContent:
+      "!Are you ready to laugh and vibe!",
     EventsCalendarMonth: "21 Sep 2025",
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Comedy Shows",
@@ -2658,7 +2664,8 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Isai Sangamam Chennai brings classical & contemporary music together for a soulful cultural evening filled with harmony, rhythm, and magical melodies.",
     siteLink: "https://in.bookmyshow.com/events/isai-sangamam/ET00460947",
     EventsCalendarTitle: "ISAI SANGAMAM",
-    EventsCalendarContent: "A perfect blend of classical and contemporary",
+    EventsCalendarContent:
+      "A perfect blend of classical and contemporary",
     EventsCalendarMonth: "21 Sep 2025",
     EventsCalendarTime: "6:05 PM",
     EventsCalendarCategory: "Music Shows",
@@ -2678,10 +2685,10 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/119",
     metaDescriptionEvent:
       "Sonali Thakker Live in Chennai brings a solo stand-up comedy night packed with witty insights, nonstop laughter, and hilarious stories from everyday life.",
-    siteLink:
-      "https://in.bookmyshow.com/events/perfect-role-model-by-sonali-thakker/ET00428237",
+    siteLink: "https://in.bookmyshow.com/events/perfect-role-model-by-sonali-thakker/ET00428237",
     EventsCalendarTitle: "Perfect Role Model by Sonali Thakker",
-    EventsCalendarContent: "Chennai, get ready for a laughter-packed evening",
+    EventsCalendarContent:
+      "Chennai, get ready for a laughter-packed evening",
     EventsCalendarMonth: "13 Sep – 28 Sep 2025",
     EventsCalendarTime: "8:00 PM",
     EventsCalendarCategory: "Comedy Shows",
@@ -2701,10 +2708,10 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/120",
     metaDescriptionEvent:
       "Adults Only – English Stand-Up in Chennai brings bold, unfiltered comedy with edgy humor, sharp punchlines, and nonstop laughs for an adults-only night.",
-    siteLink:
-      "https://in.bookmyshow.com/events/adults-only-stand-up-comedy/ET00354828",
+    siteLink: "https://in.bookmyshow.com/events/adults-only-stand-up-comedy/ET00354828",
     EventsCalendarTitle: "Adults Only - English Stand Up",
-    EventsCalendarContent: "Chennai, it’s time to leave the kids at home",
+    EventsCalendarContent:
+      "Chennai, it’s time to leave the kids at home",
     EventsCalendarMonth: "21 Sep – 28 Sep 2025",
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Comedy Shows",
@@ -2724,10 +2731,10 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/121",
     metaDescriptionEvent:
       "Experience live Christian music in Chennai with Christian Keerthanaigal Music Show, featuring talented singers, soulful hymns, and heartfelt praise.",
-    siteLink:
-      "https://in.bookmyshow.com/events/christian-keerthanaigal-music-show/ET00456869",
+    siteLink: "https://in.bookmyshow.com/events/christian-keerthanaigal-music-show/ET00456869",
     EventsCalendarTitle: "Christian Keerthanaigal Music Show",
-    EventsCalendarContent: "Songs are one of the important and beautiful tool",
+    EventsCalendarContent:
+      "Songs are one of the important and beautiful tool",
     EventsCalendarMonth: "20 Sep 2025",
     EventsCalendarTime: "5:00 PM",
     EventsCalendarCategory: "Comedy Shows",
@@ -2737,8 +2744,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     language: "English",
     hours: "2 hours 30 minutes",
     ageLimit: "All age groups",
-    rleigion:
-      "carnatic, Classical, Contemporary, Devotional, Indian Classical, Orchestra",
+    rleigion: "carnatic, Classical, Contemporary, Devotional, Indian Classical, Orchestra",
     aboutFull: `Songs are one of the important and beautiful tool we use to praise and thank God— here we have a Christian Keerthanaigal Music Show in Chennai. This special musical gathering brings faith, music and soulful worship together with gifted singers and musicians.
     We walk around all over the world but won’t find time to thank God, this is the perfect time to Thank him with classic hymns to contemporary worship. Let's join together and sing his praise`,
   },
@@ -2751,7 +2757,8 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Cookie Master Class in Chennai offers a hands-on baking workshop for beginners and enthusiasts to master classic and gourmet cookies, from mixing to presenting.",
     siteLink: "https://in.bookmyshow.com/events/cookie-master-class/ET00445416",
     EventsCalendarTitle: "Cookie Master Class",
-    EventsCalendarContent: "Baking is an art and if you want to burst",
+    EventsCalendarContent:
+      "Baking is an art and if you want to burst",
     EventsCalendarMonth: "21 Sep 2025",
     EventsCalendarTime: "11:30 AM",
     EventsCalendarCategory: "Workshops",
@@ -2763,16 +2770,16 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     ageLimit: "",
     rleigion: "",
     aboutFull: `Baking is an art and if you want to burst all your work and personal stress this workshop is for you ! Cookie Master Class in Chennai is a hands-on baking session for beginners and people with basic knowledge of baking to expertise. Here you learn from classic flavours to creative gourmet varieties along with techniques of mixing, shaping, baking and of course presenting. You will learn the secret behind perfect taste and blend behind baking. 
-    Don’t miss this opportunity baking is an art and this workshop will make you artist`,
+    Don’t miss this opportunity baking is an art and this workshop will make you artist`
   },
   {
     id: 123,
-    metaTitleEvent: "North Indian | Punjabi Cuisine Workshop - Super Chennai",
+    metaTitleEvent:
+      "North Indian | Punjabi Cuisine Workshop - Super Chennai",
     conicallinkEvent: "/eventsdetails/123",
     metaDescriptionEvent:
       "Learn the art of North Indian & Punjabi cuisine at this hands-on workshop. Master creamy curries, tandoori delights, and secrets from top restaurants in Chennai.",
-    siteLink:
-      "https://in.bookmyshow.com/events/north-indian-punjabi-cuisine-workshop-jan-22/ET00320314",
+    siteLink: "https://in.bookmyshow.com/events/north-indian-punjabi-cuisine-workshop-jan-22/ET00320314",
     EventsCalendarTitle: "North Indian & Punjabi Cuisine Workshop",
     EventsCalendarContent:
       "Turn your normal cooking into NORTH INDIAN special!",
@@ -2786,7 +2793,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     hours: "4 hour",
     ageLimit: "Age Limit - 16yrs +",
     rleigion: "",
-    aboutFull: `Turn your normal cooking into NORTH INDIAN special! This workshop helps you to develop the art of making authentic dishes from North Indian and Punjabi cuisine. From creamy buttery curries to smoky tandoori specials you will be an expert with their guidance also the secret behind restaurant style curries. Don’t miss the chance to impress your loved ones with your cooking skills and add on secrets from the expert chefs from here.`,
+    aboutFull: `Turn your normal cooking into NORTH INDIAN special! This workshop helps you to develop the art of making authentic dishes from North Indian and Punjabi cuisine. From creamy buttery curries to smoky tandoori specials you will be an expert with their guidance also the secret behind restaurant style curries. Don’t miss the chance to impress your loved ones with your cooking skills and add on secrets from the expert chefs from here.`
   },
   {
     id: 124,
@@ -2795,10 +2802,10 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/124",
     metaDescriptionEvent:
       "Chirag Panjwani brings his hilarious stand-up comedy to Chennai! Enjoy a night full of laughter, witty stories, and fun at one of the top Chennai events.",
-    siteLink:
-      "https://in.bookmyshow.com/events/chirag-panjwani-live/ET00420747",
+    siteLink: "https://in.bookmyshow.com/events/chirag-panjwani-live/ET00420747",
     EventsCalendarTitle: "Chirag Panjwani Live",
-    EventsCalendarContent: "Want to experience a non-stop laughter evening?",
+    EventsCalendarContent:
+      "Want to experience a non-stop laughter evening?",
     EventsCalendarMonth: "11 Sep – 4 Oct 2025",
     EventsCalendarTime: "8:00 PM",
     EventsCalendarCategory: "Comedy Shows",
@@ -2810,7 +2817,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     ageLimit: "Age Limit - 18yrs +",
     rleigion: "Comedy",
     aboutFull: `Want to experience a non-stop laughter evening?! Here we have Chirag Panjwani Live stand-up comedy show, all set to give a performance of unique blend of hilarious anecdotes and sharp observation with his storytelling style that will  leave no crumbs.
-    Chirag’s comedy show covers almost everything we see in day-to-day life and changes it into an unfiltered purest humor just to make you laugh throughout the evening. The whole week you have work and all stuff forget to laugh enough this is the perfect show to burst into laughter throughout the evening.`,
+    Chirag’s comedy show covers almost everything we see in day-to-day life and changes it into an unfiltered purest humor just to make you laugh throughout the evening. The whole week you have work and all stuff forget to laugh enough this is the perfect show to burst into laughter throughout the evening.`
   },
   {
     id: 125,
@@ -2819,8 +2826,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     conicallinkEvent: "/eventsdetails/125",
     metaDescriptionEvent:
       "Discover Shimin Chakai in Chennai, a public Japanese Tea Ceremony. Witness Chanoyu, learn from tea masters, and experience the elegance of Japanese culture.",
-    siteLink:
-      "https://in.bookmyshow.com/events/shimin-chakai-public-japanese-tea-ceremony/ET00407899",
+    siteLink: "https://in.bookmyshow.com/events/shimin-chakai-public-japanese-tea-ceremony/ET00407899",
     EventsCalendarTitle: "SHIMIN CHAKAI - Public Japanese Tea Ceremony",
     EventsCalendarContent:
       "Experience the authentic elegance of Japanese culture with—Shimin Chakai",
@@ -2836,7 +2842,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     rleigion: "",
     aboutFull: `Experience the authentic elegance of Japanese culture with—Shimin Chakai  Public Japanese Tea Ceremony in Chennai. This invites you all to witness and participate in their old tradition of Chanoyu (the way to make tea) with every movement of gesture and flavors.
 You will be guided by trained tea masters, the ceremony showcases the beauty of Japanese tradition and elegance. Bring your friends and loved ones— learn a new tradition, culture and experience the old-centuries chanoyu.
-`,
+`
   },
   {
     id: 126,
@@ -2845,10 +2851,10 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     conicallinkEvent: "/eventsdetails/126",
     metaDescriptionEvent:
       "Get ready for Circus Thupakki in Chennai! A hilarious stand-up comedy show with top comedians delivering edgy jokes and non-stop laughter all night.",
-    siteLink:
-      "https://in.bookmyshow.com/events/pazhaka-vazhakam-a-tamil-standup-comedy-show/ET00394995",
+    siteLink: "https://in.bookmyshow.com/events/pazhaka-vazhakam-a-tamil-standup-comedy-show/ET00394995",
     EventsCalendarTitle: "CIRCUS THUPAKKI - An Edgy standup comedy show ",
-    EventsCalendarContent: "Chennai, get ready for a hilarious comedy blast!",
+    EventsCalendarContent:
+      "Chennai, get ready for a hilarious comedy blast!",
     EventsCalendarMonth: "20 Sep 2025",
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Comedy Shows",
@@ -2859,7 +2865,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 18yrs +",
     rleigion: "Comedy",
-    aboutFull: `Chennai, get ready for a hilarious comedy blast! Circus Thupakki came up with a unique stand-up comedy show – it’s a rollercoaster of sharp punchlines and fearless humor that hits straight at the funny bone. Experience a life-time settlement of laughter for the whole evening with the most funniest comedians in Chennai. Your hot seat is ready, grab it and enjoy your show.`,
+    aboutFull: `Chennai, get ready for a hilarious comedy blast! Circus Thupakki came up with a unique stand-up comedy show – it’s a rollercoaster of sharp punchlines and fearless humor that hits straight at the funny bone. Experience a life-time settlement of laughter for the whole evening with the most funniest comedians in Chennai. Your hot seat is ready, grab it and enjoy your show.`
   },
   {
     id: 127,
@@ -2868,8 +2874,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     conicallinkEvent: "/eventsdetails/127",
     metaDescriptionEvent:
       "Learn Salsa, Bachata & Urbankiz in Chennai! Beginner or pro, our expert instructors guide you to perfect your moves and enjoy the rhythm of social dance.",
-    siteLink:
-      "https://in.bookmyshow.com/events/dance-workshop-by-praveen-bachata-urbankiz-salsa/ET00378549",
+    siteLink: "https://in.bookmyshow.com/events/dance-workshop-by-praveen-bachata-urbankiz-salsa/ET00378549",
     EventsCalendarTitle: "Salsa, Bachata, Urbankiz Dance Workshop",
     EventsCalendarContent:
       "It’s the time to move your bodies to the rhythm of sounds and beats!",
@@ -2883,7 +2888,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 21yrs +",
     rleigion: "Fusion",
-    aboutFull: `It’s the time to move your bodies to the rhythm of sounds and beats! Here we have Salsa, Bachata & Urbankiz Dance Workshop to drive you into the world of dance. Either  you are a complete beginner or a dance enthusiast, this workshop is going to change you into an expert in social dance form. You will be led by experienced instructors to highlight your style and enhance your steps. Come become an expert with our experts.`,
+    aboutFull: `It’s the time to move your bodies to the rhythm of sounds and beats! Here we have Salsa, Bachata & Urbankiz Dance Workshop to drive you into the world of dance. Either  you are a complete beginner or a dance enthusiast, this workshop is going to change you into an expert in social dance form. You will be led by experienced instructors to highlight your style and enhance your steps. Come become an expert with our experts.`
   },
   {
     id: 128,
@@ -2892,8 +2897,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     conicallinkEvent: "/eventsdetails/128",
     metaDescriptionEvent:
       "Attend the Business Expo Chennai 2025 and enhance your business growth. Learn from experts, connect with entrepreneurs, and explore new opportunities.",
-    siteLink:
-      "https://in.bookmyshow.com/events/business-opportunity-expo-2025/ET00459416",
+    siteLink: "https://in.bookmyshow.com/events/business-opportunity-expo-2025/ET00459416",
     EventsCalendarTitle: "Business Opportunity Expo 2025",
     EventsCalendarContent:
       "In today’s world business has become the most upgrading profession!",
@@ -2908,7 +2912,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     ageLimit: "",
     rleigion: "",
     aboutFull: `In today’s world business has become the most upgrading profession! If you want to be one of them, this is the best opportunity to develop your business knowledge and become an entrepreneur. Either you are looking forward to starting your own venture or to scale-up your existing business, this expo brings all together the best solution for brands and business minds. 
-    Enhance your brain for business to shine in the world.`,
+    Enhance your brain for business to shine in the world.`
   },
   {
     id: 129,
@@ -2917,8 +2921,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     conicallinkEvent: "/eventsdetails/129",
     metaDescriptionEvent:
       "Chennai’s Jazz Weekender Edition brings classical jazz and contemporary blends. A perfect evening of music, soulful voices, and unforgettable performances.",
-    siteLink:
-      "https://in.bookmyshow.com/events/jazz-weekender-edition/ET00461104",
+    siteLink: "https://in.bookmyshow.com/events/jazz-weekender-edition/ET00461104",
     EventsCalendarTitle: "Jazz Weekender Edition",
     EventsCalendarContent:
       "This evening you're gonna have a wonderful experience in Jazz",
@@ -2932,16 +2935,16 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     hours: "10 hours",
     ageLimit: "Age Limit - 21yrs +",
     rleigion: "Jazz",
-    aboutFull: `This evening you're gonna have a wonderful experience in Jazz —with Jazz Weekender Edition. This celebration of Jazz blends musicians and soulful voices and mixed od sounds to give an unforgettable weekend. From classical standard to contemporary blends this show is just gonna take your heart and fill with music for lifetime. If you are a Jazz lover and yes this is your wanted show come join and sing together.`,
+    aboutFull: `This evening you're gonna have a wonderful experience in Jazz —with Jazz Weekender Edition. This celebration of Jazz blends musicians and soulful voices and mixed od sounds to give an unforgettable weekend. From classical standard to contemporary blends this show is just gonna take your heart and fill with music for lifetime. If you are a Jazz lover and yes this is your wanted show come join and sing together.`
   },
   {
     id: 130,
-    metaTitleEvent: "Restorative Yoga | Sound Healing Workshop - Super Chennai",
+    metaTitleEvent:
+      "Restorative Yoga | Sound Healing Workshop - Super Chennai",
     conicallinkEvent: "/eventsdetails/130",
     metaDescriptionEvent:
       "Ease stress and rejuvenate your body and mind with Restorative Yoga & Sound Healing. A weekend workshop in Chennai for ultimate relaxation and peace.",
-    siteLink:
-      "https://in.bookmyshow.com/events/restorative-yoga-with-sound-healing/ET00459768",
+    siteLink: "https://in.bookmyshow.com/events/restorative-yoga-with-sound-healing/ET00459768",
     EventsCalendarTitle: "Restorative Yoga with Sound Healing",
     EventsCalendarContent:
       "Week full of work and stress but we have your weekend!",
@@ -2957,7 +2960,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     rleigion: "",
     aboutFull: `Week full of work and stress but we have your weekend! Restorative Yoga with Sound Healing is up with their method to relax your body, mind and heart with yoga. This session combines the gentle practice of yoga with therapeutic vibrations of sound bowls and healing instruments. 
 Rest your body for a weekend and relax your mind with us.
-`,
+`
   },
   {
     id: 131,
@@ -2966,8 +2969,7 @@ Rest your body for a weekend and relax your mind with us.
     conicallinkEvent: "/eventsdetails/131",
     metaDescriptionEvent:
       "Chennai’s biggest comedy night! 7 Plus One Tour with Karthick Kumar and rising stars brings soulful music, witty humor, and non-stop laughter you can’t miss.",
-    siteLink:
-      "https://in.bookmyshow.com/events/7-plus-one-rising-stars-on-tour/ET00448403",
+    siteLink: "https://in.bookmyshow.com/events/7-plus-one-rising-stars-on-tour/ET00448403",
     EventsCalendarTitle: "7 plus One - Rising Stars on Tour",
     EventsCalendarContent:
       "Chennai’s largest funniest and music filled stand-up comedy",
@@ -2979,19 +2981,18 @@ Rest your body for a weekend and relax your mind with us.
     location: "Medai The Stage: Coimbatore",
     language: "English, Tamil",
     hours: "1 hour 30 minutes",
-    ageLimit: "Age Limit - 16yrs +",
+     ageLimit: "Age Limit - 16yrs +",
     rleigion: "Comedy",
-    aboutFull: `Chennai’s largest funniest and music filled stand-up comedy show presented by the best comedian material Karthick Kumar and with more comedians. It's a tour to take you in the world of hilarious jokes and actual talks, with high-energy new voices and unique styles. Come experience a perfect blend of soulful music, beats and witty humor with captivating stage presence. This is the absolute show we don’t want you to miss.`,
+    aboutFull: `Chennai’s largest funniest and music filled stand-up comedy show presented by the best comedian material Karthick Kumar and with more comedians. It's a tour to take you in the world of hilarious jokes and actual talks, with high-energy new voices and unique styles. Come experience a perfect blend of soulful music, beats and witty humor with captivating stage presence. This is the absolute show we don’t want you to miss.`
   },
-  {
+   {
     id: 132,
     metaTitleEvent:
       "Wraps & Rolls Recipes | Cooking Classes Chennai - Super Chennai",
     conicallinkEvent: "/eventsdetails/132",
     metaDescriptionEvent:
       "Love wraps & rolls? This Chennai cooking class, part of exciting Chennai events, teaches you to make them perfectly with tips, tricks, and tasty recipes to share.",
-    siteLink:
-      "https://in.bookmyshow.com/events/wraps-rolls-workshop-jan-22/ET00320317",
+    siteLink: "https://in.bookmyshow.com/events/wraps-rolls-workshop-jan-22/ET00320317",
     EventsCalendarTitle: "Wraps & Rolls Making Workshop",
     EventsCalendarContent:
       "Who doesn't love wraps and rolls— we all know to eat",
@@ -3005,9 +3006,9 @@ Rest your body for a weekend and relax your mind with us.
     hours: "2 hours",
     ageLimit: "Age Limit - 16yrs +",
     rleigion: "",
-    aboutFull: `Who doesn't love wraps and rolls— we all know to eat but to make them you have to come to this workshop. A fun, hands-on cooking experience and also to know the secrets behind the street style wraps and roll this workshop will help you to satisfy your level of love towards wraps. From classics to adding flavours for your taste here we have experienced guides to make you expert. Bring your friends and have a food making date also by adding love to wraps and rolls making workshop.`,
+    aboutFull: `Who doesn't love wraps and rolls— we all know to eat but to make them you have to come to this workshop. A fun, hands-on cooking experience and also to know the secrets behind the street style wraps and roll this workshop will help you to satisfy your level of love towards wraps. From classics to adding flavours for your taste here we have experienced guides to make you expert. Bring your friends and have a food making date also by adding love to wraps and rolls making workshop.`
   },
-  {
+   {
     id: 133,
     metaTitleEvent:
       "Bombay Chaat Items Workshop | Street Food Recipes - Super Chennai",
@@ -3028,17 +3029,16 @@ Rest your body for a weekend and relax your mind with us.
     hours: "4 hours",
     ageLimit: "Age Limit - 16yrs +",
     rleigion: "",
-    aboutFull: `Bombay is known for chaat items— here you have a chance to know the secrets behind it by attending this workshop. A hand-on culinary experience where you’ll learn to make iconic chaat items with authentic touch in it. The bursting blend of spice, tangy sauce and bold flavors in one taste. Here after you don't have to go to Mumbai just to have your favorite chaat items, you can have it in your home made with your preference.`,
+    aboutFull: `Bombay is known for chaat items— here you have a chance to know the secrets behind it by attending this workshop. A hand-on culinary experience where you’ll learn to make iconic chaat items with authentic touch in it. The bursting blend of spice, tangy sauce and bold flavors in one taste. Here after you don't have to go to Mumbai just to have your favorite chaat items, you can have it in your home made with your preference.`
   },
-  {
+   {
     id: 134,
     metaTitleEvent:
       "Prasida's Workshop | Traditional Weaving Skills - Super Chennai",
     conicallinkEvent: "/eventsdetails/134",
     metaDescriptionEvent:
       "Relax and get creative at Prasida's Weaving Workshop in Chennai. Learn traditional weaving techniques, explore patterns, textures, and hands-on designs.",
-    siteLink:
-      "https://in.bookmyshow.com/events/prasida-s-weaving-workshop/ET00450732",
+    siteLink: "https://in.bookmyshow.com/events/prasida-s-weaving-workshop/ET00450732",
     EventsCalendarTitle: "Prasida's Weaving Workshop",
     EventsCalendarContent:
       "We heard that weaving is so relaxing and therapeutic",
@@ -3052,18 +3052,19 @@ Rest your body for a weekend and relax your mind with us.
     hours: "5 hours",
     ageLimit: "Age Limit - 10yrs +",
     rleigion: "",
-    aboutFull: `We heard that weaving is so relaxing and therapeutic — so here we came up with a workshop to make it easier for beginners and develop your knowledge for weaving more. You will be guided by skilled instructors and learn various methods and techniques in weaving patterns, textures and designs. This hand-on session offers you a unique opportunity to explore the traditional weaving techniques while creating your own ideas.`,
+    aboutFull: `We heard that weaving is so relaxing and therapeutic — so here we came up with a workshop to make it easier for beginners and develop your knowledge for weaving more. You will be guided by skilled instructors and learn various methods and techniques in weaving patterns, textures and designs. This hand-on session offers you a unique opportunity to explore the traditional weaving techniques while creating your own ideas.`
   },
-  {
+   {
     id: 135,
-    metaTitleEvent: "Paratha Workshop | Cooking Class Chennai - Super Chennai",
+    metaTitleEvent:
+      "Paratha Workshop | Cooking Class Chennai - Super Chennai",
     conicallinkEvent: "/eventsdetails/135",
     metaDescriptionEvent:
       "Learn the art of making flaky, crispy, and flavorful parathas at this hands-on cooking class in Chennai. Perfect for friends and family to cook, laugh, and enjoy!",
-    siteLink:
-      "https://in.bookmyshow.com/events/paratha-special-workshop-mar-2022/ET00323345",
+    siteLink: "https://in.bookmyshow.com/events/paratha-special-workshop-mar-2022/ET00323345",
     EventsCalendarTitle: "Paratha Special Workshop",
-    EventsCalendarContent: "Love for flaky, crispy and flavourful parathas",
+    EventsCalendarContent:
+      "Love for flaky, crispy and flavourful parathas",
     EventsCalendarMonth: "16 Sep 2025",
     EventsCalendarTime: "11:00 AM",
     EventsCalendarCategory: "Workshops",
@@ -3074,14 +3075,15 @@ Rest your body for a weekend and relax your mind with us.
     hours: "4 hours",
     ageLimit: "Age Limit - 10yrs +",
     rleigion: "",
-    aboutFull: `Love for flaky, crispy and flavourful parathas? Here is your chance to experience the art of making them — this workshop has hands-on culinary sessions to help you learn more detailed cooking of parathas and have fun with your friends. Bring your friends and families to cook, laugh and learn the authentic flavours of parathas with us.`,
+    aboutFull: `Love for flaky, crispy and flavourful parathas? Here is your chance to experience the art of making them — this workshop has hands-on culinary sessions to help you learn more detailed cooking of parathas and have fun with your friends. Bring your friends and families to cook, laugh and learn the authentic flavours of parathas with us.`
   },
-  {
+   {
     id: 136,
-    metaTitleEvent: "That Dirty Show | Adult Comedy Stand Up - Super Chennai",
+    metaTitleEvent:
+      "",
     conicallinkEvent: "/eventsdetails/136",
     metaDescriptionEvent:
-      "Bold, raw, and outrageously funny — That Dirty Show in Chennai delivers adult comedy, daring punchlines, and unfiltered humor for a night of nonstop laughter.",
+      "",
     siteLink: "https://in.bookmyshow.com/events/that-dirty-show/ET00460729",
     EventsCalendarTitle: "THAT DIRTY SHOW ",
     EventsCalendarContent:
@@ -3096,17 +3098,16 @@ Rest your body for a weekend and relax your mind with us.
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 18yrs +",
     rleigion: "Comedy",
-    aboutFull: `Get ready for a wildly unfiltered night of laughter! That Dirty Show is a brand-new standup special filled with outrageous stories, daring punchlines, and comedy for the fearless. After touring South India with multiple hit specials, we return with our boldest and most hilarious set yet. If you can handle it, this is the comedy experience you can’t afford to miss `,
+    aboutFull: `Get ready for a wildly unfiltered night of laughter! That Dirty Show is a brand-new standup special filled with outrageous stories, daring punchlines, and comedy for the fearless. After touring South India with multiple hit specials, we return with our boldest and most hilarious set yet. If you can handle it, this is the comedy experience you can’t afford to miss `
   },
-  {
+   {
     id: 137,
     metaTitleEvent:
-      "Chennai Live Concert | Max Urban UN-MUTE Rap Tour - Super Chennai",
+      "",
     conicallinkEvent: "/eventsdetails/137",
     metaDescriptionEvent:
-      "Chennai’s biggest live concert is here! Max Urban UN-MUTE Rap Tour unites rap kings for a hip hop night packed with fiery beats, powerful bars & raw energy.",
-    siteLink:
-      "https://in.bookmyshow.com/events/max-urbn-unmute-ft-paal-dabba-live-in-concert/ET00457532",
+      "",
+    siteLink: "https://in.bookmyshow.com/events/max-urbn-unmute-ft-paal-dabba-live-in-concert/ET00457532",
     EventsCalendarTitle: "MAX URBN UNMUTE FT. PAAL DABBA LIVE IN CONCERT",
     EventsCalendarContent:
       "Max Fashion India presents its first-ever rap extravaganza",
@@ -3120,19 +3121,19 @@ Rest your body for a weekend and relax your mind with us.
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 18yrs +",
     rleigion: "Comedy",
-    aboutFull: `Max Fashion India presents its first-ever rap extravaganza — Max Urban UN-MUTE. Three cities. Three homegrown rap kings — Baby Jean (Kochi), Kayden Sharma (Hyderabad), and Paal Dabba (Chennai) — unite for a South India tour like never before. Where hip-hop collides with raw energy, neon vibes, and the unstoppable Gen Z beat. Expect fiery bars, unfiltered flows, and a crowd roaring the loudest 'How New Is Your New?' If you live for street culture, live music, and South India’s rap scene, this is one ticket you cannot miss`,
+    aboutFull: `Max Fashion India presents its first-ever rap extravaganza — Max Urban UN-MUTE. Three cities. Three homegrown rap kings — Baby Jean (Kochi), Kayden Sharma (Hyderabad), and Paal Dabba (Chennai) — unite for a South India tour like never before. Where hip-hop collides with raw energy, neon vibes, and the unstoppable Gen Z beat. Expect fiery bars, unfiltered flows, and a crowd roaring the loudest 'How New Is Your New?' If you live for street culture, live music, and South India’s rap scene, this is one ticket you cannot miss`
   },
-  {
+   {
     id: 138,
     metaTitleEvent:
-      "Abishek Wants to Enjoy Life | Laughter & Comedy - Super Chennai",
+      "",
     conicallinkEvent: "/eventsdetails/138",
     metaDescriptionEvent:
-      "Abishek returns with Wants to Enjoy Life—a comedy special of jokes, music & stories. Don’t miss this laughter-filled stand-up comedy night in Chennai!",
-    siteLink:
-      "https://in.bookmyshow.com/events/abishek-wants-to-enjoy-life-a-comedy-special/ET00458295",
+      "",
+    siteLink: "https://in.bookmyshow.com/events/abishek-wants-to-enjoy-life-a-comedy-special/ET00458295",
     EventsCalendarTitle: "ABISHEK WANTS TO ENJOY LIFE - A COMEDY SPECIAL",
-    EventsCalendarContent: "Abishek presents his brand-new special",
+    EventsCalendarContent:
+      "Abishek presents his brand-new special",
     EventsCalendarMonth: "13 Sep – 26 Oct 2025",
     EventsCalendarTime: "6:30 PM",
     EventsCalendarCategory: "Comedy Shows",
@@ -3143,17 +3144,16 @@ Rest your body for a weekend and relax your mind with us.
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 16yrs +",
     rleigion: "",
-    aboutFull: `Abishek presents his brand-new special — Abishek Wants to Enjoy Life! In a world full of negativity and stress, people have forgotten how to truly enjoy life. Abishek is here to bring laughter, positivity, and hilarious stories from his own experiences. With music, movement, and plenty of jokes, this special promises a unique and unforgettable experience for everyone. Grab your tickets now for a night of uplifting humor — his special is going to be a one-of-a-kind experience for the audience.`,
+    aboutFull: `Abishek presents his brand-new special — Abishek Wants to Enjoy Life! In a world full of negativity and stress, people have forgotten how to truly enjoy life. Abishek is here to bring laughter, positivity, and hilarious stories from his own experiences. With music, movement, and plenty of jokes, this special promises a unique and unforgettable experience for everyone. Grab your tickets now for a night of uplifting humor — his special is going to be a one-of-a-kind experience for the audience.`
   },
-  {
+   {
     id: 139,
     metaTitleEvent:
-      "Rohan Joshi Comedy Special | Live Stand Up Show - Super Chennai",
+      "",
     conicallinkEvent: "/eventsdetails/139",
     metaDescriptionEvent:
-      "Rohan Joshi Stand Up Comedy Special comes to Chennai! Join the fun, laughter, and relatable stories in this ultimate live comedy night.",
-    siteLink:
-      "https://in.bookmyshow.com/events/getting-there-by-rohan-joshi/ET00458896",
+      "",
+    siteLink: "https://in.bookmyshow.com/events/getting-there-by-rohan-joshi/ET00458896",
     EventsCalendarTitle: "Getting There by Rohan Joshi",
     EventsCalendarContent:
       "Rohan Joshi, the renowned stay-at-home expert, faced a classic",
@@ -3167,17 +3167,16 @@ Rest your body for a weekend and relax your mind with us.
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 18yrs +",
     rleigion: "Comedy",
-    aboutFull: `Rohan Joshi, the renowned stay-at-home expert, faced a classic New Year existential crisis. Like many, he decided it’s time to write more and hit the road. Unfortunately for the audience, they get to witness this mid-life crisis live. Join Rohan as he navigates the joys and absurdities of middle age. Laugh along as he shares hilarious stories and observations from his life, and watch his gradual transformation into the ultimate Indian uncle`,
+    aboutFull: `Rohan Joshi, the renowned stay-at-home expert, faced a classic New Year existential crisis. Like many, he decided it’s time to write more and hit the road. Unfortunately for the audience, they get to witness this mid-life crisis live. Join Rohan as he navigates the joys and absurdities of middle age. Laugh along as he shares hilarious stories and observations from his life, and watch his gradual transformation into the ultimate Indian uncle`
   },
-  {
+   {
     id: 140,
     metaTitleEvent:
-      "Clean Chennai Beaches | Coastal Cleanup Drive - Super Chennai",
+      "",
     conicallinkEvent: "/eventsdetails/140",
     metaDescriptionEvent:
-      "Be part of Chennai’s coastal cleanup! Protect oceans, revive beaches, remove waste, and help create a cleaner, greener, healthier city for all.",
-    siteLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/formResponse",
+      "",
+    siteLink: "https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/formResponse",
     EventsCalendarTitle: "The Planet's Largest Coastal Cleanup",
     EventsCalendarContent:
       "On the streets, Chennai stands with pride as part of the planet’s",
@@ -3191,31 +3190,8 @@ Rest your body for a weekend and relax your mind with us.
     hours: "",
     ageLimit: "",
     rleigion: "",
-    aboutFull: `On the streets, Chennai stands with pride as part of the planet’s largest coastal cleanup movement. This is not just about removing waste—it’s about protecting our oceans, reviving our shores, and shaping a healthier tomorrow. Let’s work side by side to make our beaches shining, sustainable, and filled with happiness, tunes, and laughter. Every hand that joins adds strength, and every step you take creates ripples of change that inspire thousands more. From 14,000 participants in 2023 to 24,000 in 2024, the movement is only getting bigger. In 2025, let’s cross 30,000 changemakers and make Chennai’s coastline shine brighter than ever before.`,
-  },
-  // {
-  //   id: 141,
-  //   RegisterLink:"https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/formResponse",
-  //   metaTitleEvent: "Testing",
-  //   conicallinkEvent: "/eventsdetails/141",
-  //   metaDescriptionEvent:
-  //     "Be part of Chennai’s coastal cleanup! Protect oceans, revive beaches, remove waste, and help create a cleaner, greener, healthier city for all.",
-  //   siteLink:
-  //     "https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/formResponse",
-  //   EventsCalendarTitle: "Testing",
-  //   EventsCalendarContent: "Testing",
-  //   EventsCalendarMonth: "20 Sep 2025",
-  //   EventsCalendarTime: "",
-  //   EventsCalendarCategory: "Coastal CleanUp",
-  //   image: "/images/HomePage-Images/Events/Newevents/261.jpg",
-  //   link: "/events",
-  //   location: "Chennai",
-  //   language: "",
-  //   hours: "",
-  //   ageLimit: "",
-  //   rleigion: "",
-  //   aboutFull: `On the streets, Chennai stands with pride as part of the planet’s largest coastal cleanup movement. This is not just about removing waste—it’s about protecting our oceans, reviving our shores, and shaping a healthier tomorrow. Let’s work side by side to make our beaches shining, sustainable, and filled with happiness, tunes, and laughter. Every hand that joins adds strength, and every step you take creates ripples of change that inspire thousands more. From 14,000 participants in 2023 to 24,000 in 2024, the movement is only getting bigger. In 2025, let’s cross 30,000 changemakers and make Chennai’s coastline shine brighter than ever before.`,
-  // },
+    aboutFull: `On the streets, Chennai stands with pride as part of the planet’s largest coastal cleanup movement. This is not just about removing waste—it’s about protecting our oceans, reviving our shores, and shaping a healthier tomorrow. Let’s work side by side to make our beaches shining, sustainable, and filled with happiness, tunes, and laughter. Every hand that joins adds strength, and every step you take creates ripples of change that inspire thousands more. From 14,000 participants in 2023 to 24,000 in 2024, the movement is only getting bigger. In 2025, let’s cross 30,000 changemakers and make Chennai’s coastline shine brighter than ever before.`
+   },
 ];
 
 export const panesContent = [

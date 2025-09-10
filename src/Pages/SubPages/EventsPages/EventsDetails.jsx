@@ -98,7 +98,7 @@ export default function EventsDetails() {
 
             {/* Right Side */}
             <div className="EventRight">
-              <div className="evderibox">
+              <div className="evderibox pb-[30px]" >
                 <div className="evderListbox">
                   {/* <div className="evderViewbox">
                     <InfoRow
@@ -177,7 +177,7 @@ export default function EventsDetails() {
                 </div>
 
                 {event.siteLink && (
-                  <div className="flex justify-center pb-[30px]">
+                  <div className="flex justify-center pb-[0px]">
                     <a href={event.siteLink || "#"}>
                       <button
                         className="cursor-pointer"
@@ -189,9 +189,31 @@ export default function EventsDetails() {
                           borderRadius: "5px",
                           fontFamily: "Poppins",
                           fontWeight: 500,
+                          width:"120px"
                         }}
                       >
                         Book Now
+                      </button>
+                    </a>
+                  </div>
+                )}
+                {event.RegisterLink && (
+                  <div className="flex justify-center pb-[30px]">
+                    <a href={event.RegisterLink || "#"}>
+                      <button
+                        className="cursor-pointer"
+                        style={{
+                          background: "#a44294",
+                          marginTop: "15px",
+                          color: "white",
+                          padding: "5px 14px",
+                          borderRadius: "5px",
+                          fontFamily: "Poppins",
+                          fontWeight: 500,
+                           width:"120px"
+                        }}
+                      >
+                        Register
                       </button>
                     </a>
                   </div>

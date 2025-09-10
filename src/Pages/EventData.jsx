@@ -3193,7 +3193,7 @@ Rest your body for a weekend and relax your mind with us.
     EventsCalendarCategory: "Coastal CleanUp",
     image: "/images/HomePage-Images/Events/Newevents/261.jpg",
     link: "/events",
-    location: "Chennai",
+    location: "Kasimedu & Kovalam, Chennai",
     language: "",
     hours: "",
     ageLimit: "",

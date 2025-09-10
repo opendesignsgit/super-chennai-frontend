@@ -4,6 +4,14 @@ import Search from "./Search";
 import { Link } from "react-router-dom";
 
 const slides = [
+    {
+    type: "image",
+    link: "",
+    image: "/images/HomePage-Images/Super-chennai-Banner.jpg",
+    image1: "/images/HomePage-Images/Super-Chennai-Mobile-Banner.png",
+    title: "First slide label",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
   {
     type: "image",
     link: "/reimagine-chennai-AI-art-challenge",

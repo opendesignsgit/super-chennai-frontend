@@ -2267,7 +2267,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 16yrs +",
     rleigion: "",
-    aboutFull: `Are you ready for unfiltered laughter, stories for comedy! Here we came up with a unique stand up comedy show from real life. Ini Filter Theva Illai is an engaging tamil stand-up comedy show where nothing  is sugarcoate—just pure humor. If you love comedy then this is the best option to have a happy evening with friends and families. We think this is the show you don’t want to miss out.`,
+    aboutFull: `Ini filter ah theva ila. Your natural glow comes from discovering the connection between hormones, lifestyle, and wellness. Join our Women's Wellness Evening to learn the science behind glowing skin and inner health, and get insights on how to nurture your radiance from within.`,
   },
   {
     id: 102,

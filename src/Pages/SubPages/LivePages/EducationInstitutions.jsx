@@ -1891,369 +1891,138 @@ export default function EducationInstitutions() {
       ],
     },
   ];
-  const StateSchoolsList = [
+
+  // StateBoard-Schools
+
+  // topCollege
+
+  const topCollegeSchoolIntro = [
     {
-      category: "Full list of IGCSE  schools in Chennai",
-      places: [
+      sectionTitle: "Top Colleges in Chennai",
+      sectionDesc:
+        "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
+      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      imgAlt: "",
+    },
+  ];
+
+  const topCollegeschoolsContents = [
+    {
+      sectionTitle:
+        "Chennai’s Auto Startup Scene: Building the Future of Mobility",
+
+      fintechEvolution: [
         {
-          name: "Casagrand International School",
-          desc: "",
-          locations: [
+          points: [],
+        },
+      ],
+    },
+  ];
+
+  const topCollegeimageSections = [
+    {
+      sectionTitle:
+        "Chennai’s Auto Startup Scene: Building the Future of Mobility",
+      sectionDesc:
+        "Once known for its hardware exports and call centers, Chennai has now become:",
+
+      fintechEvolution: [
+        {
+          points: [
             {
-              name: "Thiruvanmiyur",
-              link: "https://maps.app.goo.gl/cGvNGW5kr2FMekVU8",
-            },
-            {
-              name: "Perumbakkam",
-              link: "https://maps.app.goo.gl/ms21ZPVj26mTit3b6",
+              title: "Overview",
+              para: [
+                <>
+                  Chennai stands tall as one of India’s premier destinations for
+                  higher education, boasting a mix of world-class engineering
+                  colleges, top-tier medical institutions, business schools,
+                  liberal arts universities, and niche creative colleges. The
+                  city’s colleges not only attract students from across India
+                  but also from Asia, Africa, and the Middle East—thanks to its
+                  academic legacy, urban infrastructure, and strong research
+                  ecosystem.
+                </>,
+                <>
+                  From the globally renowned IIT Madras to the historic Loyola
+                  College, Chennai nurtures both academic excellence and social
+                  equity, empowering future scientists, artists, engineers,
+                  entrepreneurs, and civic leaders.
+                </>,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
             },
           ],
         },
         {
-          name: "DAV Girls Senior Secondary School",
-          desc: "",
-          locations: [
-            {
-              name: "Gopalapuram",
-              link: "https://maps.app.goo.gl/UwcjdfhYt9nZh9yF7",
-            },
-            {
-              name: "Thenmathur",
-              link: "https://maps.app.goo.gl/UhyRkr3h5j5RL3fSA",
-            },
-          ],
+          points: [],
         },
+      ],
+    },
+  ];
+
+  const topCollegechoolsContents2 = [
+    {
+      sectionTitle:
+        "Chennai’s Auto Startup Scene: Building the Future of Mobility",
+
+      fintechEvolution: [
         {
-          name: "Maharishi Vidya Mandir CBSE School (Tiruvannamalai)",
-          desc: "",
-          locations: [
+          points: [
             {
-              name: "dummy",
-              link: "https://maps.app.goo.gl/UhyRkr3h5j5RL3fSA",
+              title: "Engineering & Technology",
+              para: [
+                <>
+                  <p>
+                    Chennai is home to over 150 engineering colleges, including
+                    some of India’s best-known institutions.
+                  </p>
+                </>,
+                ,
+                <>
+                  <ul>
+                    <strong>Top Institutions :</strong>
+
+                    <li>
+                      IIT Madras – India’s #1 engineering institute (NIRF
+                      Ranking 2024)
+                    </li>
+                    <li>
+                      Anna University – A top-ranked public tech university
+                    </li>
+                    <li>
+                      SSN College of Engineering, Hindustan Institute of
+                      Technology, Sathyabama Institute
+                    </li>
+                  </ul>
+                </>,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
             },
-          ],
-        },
-        {
-          name: "Orchids The International School",
-          desc: "",
-          locations: [
             {
-              name: "Kolapakkam",
-              link: "https://maps.app.goo.gl/nih7x6KjjCwZ8DDt9",
-            },
-            {
-              name: "Pulianthope",
-              link: "https://maps.app.goo.gl/mWR61qR9kchVZeMh7",
-            },
-          ],
-        },
-        {
-          name: "Mount Litera Zee School Omr Chennai",
-          desc: "",
-          locations: [
-            {
-              name: "Navalur",
-              link: "https://maps.app.goo.gl/mxgUj3AxEdRxD9AdA",
-            },
-          ],
-        },
-        {
-          name: "Shikshaa Public School CBSE",
-          desc: "",
-          locations: [
-            {
-              name: "Chromepet",
-              link: "https://maps.app.goo.gl/xhj1ZzcFcm3yAoQp7",
-            },
-          ],
-        },
-        {
-          name: "Olive Public School",
-          desc: "",
-          locations: [
-            {
-              name: "Chitlapakkam",
-              link: "https://maps.app.goo.gl/B99U38Qh5ososKy6A",
-            },
-          ],
-        },
-        {
-          name: "Loyola International Residential School",
-          desc: "",
-          locations: [
-            {
-              name: "Palanchur",
-              link: "https://maps.app.goo.gl/Mn2y9ur9fWxeUJMP8",
-            },
-          ],
-        },
-        {
-          name: "Aachi Global School",
-          desc: "",
-          locations: [
-            {
-              name: "dummy",
-              link: "https://maps.app.goo.gl/Mn2y9ur9fWxeUJMP8",
-            },
-          ],
-        },
-        {
-          name: "Green Valley Central School",
-          desc: "",
-          locations: [
-            {
-              name: "Mogappair West",
-              link: "https://maps.app.goo.gl/pqSHryqEHCtS8VEg6",
-            },
-          ],
-        },
-        {
-          name: "Padmashree School (CBSE)",
-          desc: "",
-          locations: [
-            {
-              name: "Kolathur",
-              link: "https://maps.app.goo.gl/6iNgcxVjuTQWn2mU8",
-            },
-          ],
-        },
-        {
-          name: "Jain Public School",
-          desc: "",
-          locations: [
-            {
-              name: "Thirumudivakkam",
-              link: "https://maps.app.goo.gl/TCKJkT5g6ipzq7di6",
-            },
-          ],
-        },
-        {
-          name: "Sr Mavericks International School",
-          desc: "",
-          locations: [
-            {
-              name: "Poonamallee",
-              link: "https://maps.app.goo.gl/pp3dGj3H5Qa9Ao299",
-            },
-          ],
-        },
-        {
-          name: "Arul Jothy Public School",
-          desc: "",
-          locations: [
-            {
-              name: "Pallavaram",
-              link: "https://maps.app.goo.gl/EPR5wKuQytsLUmCw8",
-            },
-          ],
-        },
-        {
-          name: "The Shri Ram Universal School",
-          desc: "",
-          locations: [
-            {
-              name: "Perambur",
-              link: "https://maps.app.goo.gl/niXjkpSXbiVvH6Tr8",
-            },
-          ],
-        },
-        {
-          name: "Anjo Viddyalaya CBSE",
-          desc: "",
-          locations: [
-            {
-              name: "Tiruvottiyur",
-              link: "https://maps.app.goo.gl/a4CxVArz8VzwgTXb7",
-            },
-          ],
-        },
-        {
-          name: "Smrti Academy",
-          desc: "",
-          locations: [
-            {
-              name: "Bengaluru",
-              link: "https://maps.app.goo.gl/M13uhKzA8K9epN6R9",
-            },
-          ],
-        },
-        {
-          name: "INTERNATIONAL DELHI PUBLIC SCHOOL",
-          desc: "",
-          locations: [
-            {
-              name: "Ambur",
-              link: "https://maps.app.goo.gl/pQBcAhWgMLw3UwQp7",
-            },
-          ],
-        },
-        {
-          name: "MVM SCHOOL - CBSE - DUDDANAHALLI",
-          desc: "",
-          locations: [
-            {
-              name: "Bengaluru",
-              link: "https://maps.app.goo.gl/8m6DBoxg2Yo2S7hMA",
-            },
-          ],
-        },
-        {
-          name: "Marigold International School",
-          desc: "",
-          locations: [
-            {
-              name: "Challegatta",
-              link: "https://maps.app.goo.gl/X79x9XLDcFNWmtAH6",
-            },
-          ],
-        },
-        {
-          name: "Amethyst International School",
-          desc: "",
-          locations: [
-            {
-              name: "Ottiambakkam",
-              link: "https://maps.app.goo.gl/295CAiy6LSPbNKWNA",
-            },
-          ],
-        },
-        {
-          name: "RISHS International School",
-          desc: "",
-          locations: [
-            {
-              name: " Mangadu",
-              link: "https://maps.app.goo.gl/4jXFFnRw4wMd6nGJ9",
-            },
-          ],
-        },
-        {
-          name: "Fiitjee Global School",
-          desc: "",
-          locations: [
-            {
-              name: "Tambaram",
-              link: "https://maps.app.goo.gl/L41J61Q7nbCwbxvM9",
-            },
-          ],
-        },
-        {
-          name: "The Temple School Of Enlightenment",
-          desc: "",
-          locations: [
-            {
-              name: "Kolathur",
-              link: "https://maps.app.goo.gl/pdGHckeYNqKH2rkf8",
-            },
-          ],
-        },
-        {
-          name: "SV High School",
-          desc: "",
-          locations: [
-            {
-              name: "Vanagaram",
-              link: "https://maps.app.goo.gl/F1VKLaCdfwy1wF987",
-            },
-          ],
-        },
-        {
-          name: "AGR Global School",
-          desc: "",
-          locations: [
-            {
-              name: "Velachery",
-              link: "https://maps.app.goo.gl/oj1cwhVyDTcUb4529",
-            },
-          ],
-        },
-        {
-          name: "Aadhithya International Public Schools",
-          desc: "",
-          locations: [
-            {
-              name: "Kattupakkam",
-              link: "https://maps.app.goo.gl/15JMXmjuwJqThawY8",
-            },
-          ],
-        },
-        {
-          name: "Vagisha Vidhyalaya",
-          desc: "",
-          locations: [
-            {
-              name: "Kundrathur",
-              link: "https://maps.app.goo.gl/EmUnxP81fdCQPM1J6",
-            },
-          ],
-        },
-        {
-          name: "Sri Krish International School (Kovur)",
-          desc: "",
-          locations: [
-            {
-              name: "Kovur",
-              link: "https://maps.app.goo.gl/sEM7WxfNeRLqBS7d7",
-            },
-          ],
-        },
-        {
-          name: "Billabong High International School",
-          desc: "",
-          locations: [
-            {
-              name: "Ekkatuthangal",
-              link: "https://maps.app.goo.gl/pQm2JRNDVakixUod8",
-            },
-          ],
-        },
-        {
-          name: "Chennai Public School",
-          desc: "",
-          locations: [
-            {
-              name: "Thirumazhisai",
-              link: "https://maps.app.goo.gl/v9HLWQtjboy8dzeF7",
-            },
-          ],
-        },
-        {
-          name: "Maharishi Vidya Mandir School (Alagiri Nagar)",
-          desc: "",
-          locations: [
-            {
-              name: "Aminjikarai",
-              link: "https://maps.app.goo.gl/CnQziTMRjex4RAJ38",
-            },
-          ],
-        },
-        {
-          name: "Sujay Public School",
-          desc: "",
-          locations: [
-            {
-              name: "Medavakkam",
-              link: "https://maps.app.goo.gl/cgBhNvzbSofJ4Esr8",
-            },
-          ],
-        },
-        {
-          name: "PSBB Siruseri Branch",
-          desc: "",
-          locations: [
-            {
-              name: "Siruseri",
-              link: "https://maps.app.goo.gl/KVUzM9baTdat9YUMA",
-            },
-          ],
-        },
-        {
-          name: "Great Harvest Vidyalaya",
-          desc: "",
-          locations: [
-            {
-              name: "Avadi",
-              link: "https://maps.app.goo.gl/pyuPRunXrMGjKs4u5",
+              title: "Medical & Health Sciences",
+              para: [
+                <>
+                  <p>
+                    Known for pioneering medical education and research, Chennai
+                    has several top medical colleges and allied health
+                    institutions.
+                  </p>
+                </>,
+                ,
+                <>
+                  <ul>
+                    <strong>Top Institutions :</strong>
+
+                    <li>Madras Medical College</li>
+                    <li>Stanley Medical College</li>
+                    <li>
+                      Sri Ramachandra Institute of Higher Education & Research
+                    </li>
+                    <li>Saveetha Medical College, Meenakshi Medical College</li>
+                  </ul>
+                </>,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
             },
           ],
         },
@@ -2261,7 +2030,433 @@ export default function EducationInstitutions() {
     },
   ];
 
-  // StateBoard-Schools
+  // topCollege
+
+  // Arts, Science & Commerce
+
+  const artsScienceIntro = [
+    {
+      sectionTitle: "Arts, Science & Commerce Colleges in Chennai",
+      sectionDesc:
+        "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
+      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      imgAlt: "",
+    },
+  ];
+
+  const artsScienceContents = [
+    {
+      sectionTitle:
+        "Chennai’s Auto Startup Scene: Building the Future of Mobility",
+
+      fintechEvolution: [
+        {
+          points: [],
+        },
+      ],
+    },
+  ];
+
+  const artsScienceimageSections = [
+    {
+      sectionTitle:
+        "Chennai’s Auto Startup Scene: Building the Future of Mobility",
+      sectionDesc:
+        "Once known for its hardware exports and call centers, Chennai has now become:",
+
+      fintechEvolution: [
+        {
+          points: [
+            {
+              title: "Overview",
+              para: [
+                <>
+                  Chennai is celebrated for its exceptional network of arts,
+                  science, and commerce colleges. These institutions combine
+                  academic rigor with cultural depth and societal values,
+                  shaping generations of thinkers, citizens, and professionals.
+                  From historic landmarks like Loyola College to progressive,
+                  autonomous institutions, Chennai continues to be at the
+                  forefront of arts and liberal education in India.
+                </>,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+            },
+          ],
+        },
+        {
+          points: [],
+        },
+      ],
+    },
+  ];
+
+  const artsScienceContents2 = [
+    {
+      sectionTitle:
+        "Chennai’s Auto Startup Scene: Building the Future of Mobility",
+
+      fintechEvolution: [
+        {
+          points: [
+            {
+              title: "Government Support & Expansion",
+              para: [
+                <>
+                  <p>
+                    For the 2025–26 academic year, the Tamil Nadu government
+                    approved a 20% seat increase in government arts and science
+                    colleges, responding to the rising demand in commerce and
+                    arts courses. Over 179 government colleges currently operate
+                    in the state. The Times of IndiaChennaitop10+4Stanza
+                    Living+4The Times of India+4
+                  </p>
+                </>,
+                ,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+            },
+            {
+              title: "Admission Demand Highlights",
+              para: [
+                <>
+                  <strong>
+                    Presidency College saw 40,167 applications for 2,380 seats.
+                  </strong>
+                </>,
+                ,
+                <>
+                  <strong>
+                    Queen Mary’s College received 23,018 applications for 2,038
+                    seats.
+                  </strong>
+                </>,
+                <>
+                  <p>
+                    BSc (Computer Science), BA (Tamil/English), BCom, and BBA
+                    remain the most sought-after disciplines.
+                    <a href="https://www.studyclap.com/arts-colleges-in-chennai/?utm_source=chatgpt.com">
+                      collegesintamilnadu.com+10studyclap.com+10Stanza
+                      Living+10The Times of IndiaIndCareer+1
+                    </a>
+                  </p>
+                </>,
+                ,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+            },
+            {
+              title: "Autonomy & Curriculum Innovation",
+              para: [
+                <>
+                  <p>
+                    Chennai hosts several{" "}
+                    <strong>autonomous arts and science colleges </strong> —
+                    such as MCC, Loyola, Stella Maris, Presidency, and
+                    Ethiraj—that create their own syllabi and adaptive learning
+                    models.
+                  </p>
+                </>,
+
+                ,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+            },
+          ],
+        },
+        {
+          points: [
+            {
+              title: "Why Choose Arts, Science & Commerce in Chennai?",
+              para: [
+                <>
+                  <strong>Academic Legacy Meets Modern Curriculum : </strong>
+                  Institutions like Loyola and MCC blend centuries of academic
+                  reputation with progressive pedagogy.
+                </>,
+                <>
+                  <strong>Affordability & Accessibility : </strong>
+                  Government colleges offer high-quality education at accessible
+                  pricing, while autonomous colleges maintain moderate fee
+                  structures with scholarship options.
+                </>,
+                <>
+                  <strong>High Engagement & Placement Network : </strong>
+                  Strong student demand reflects institutional confidence; many
+                  colleges actively support internships, placement drives, and
+                  international exchanges.
+                </>,
+                <>
+                  <strong>Holistic Education & Social Awareness : </strong>
+                  Students benefit from programs in liberal arts, social
+                  sciences, community engagement, and environmental awareness
+                  that align with Future Chennai’s emphasis on inclusive
+                  learning.
+                </>,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+
+  // Arts, Science & Commerce
+
+  // lawCollege
+
+  const lawCollegeIntro = [
+    {
+      sectionTitle: "Law Colleges in Chennai",
+      sectionDesc:
+        "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
+      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      imgAlt: "",
+    },
+  ];
+
+  const lawCollegeContents = [
+    {
+      sectionTitle:
+        "Chennai’s Auto Startup Scene: Building the Future of Mobility",
+
+      fintechEvolution: [
+        {
+          points: [],
+        },
+      ],
+    },
+  ];
+
+  const lawCollegeSections = [
+    {
+      sectionTitle:
+        "Chennai’s Auto Startup Scene: Building the Future of Mobility",
+      sectionDesc:
+        "Once known for its hardware exports and call centers, Chennai has now become:",
+
+      fintechEvolution: [
+        {
+          points: [
+            {
+              title: "Overview",
+              para: [
+                <>
+                  Chennai is a leading academic center for legal education,
+                  offering a rich array of institutions—from prestigious
+                  government-run universities to high-performing private and
+                  deemed colleges. These law schools provide a comprehensive
+                  legal education rooted in ethical scholarship and practical
+                  learning.
+                </>,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+            },
+          ],
+        },
+        {
+          points: [],
+        },
+      ],
+    },
+  ];
+
+  const lawCollegeContents2 = [
+    {
+      sectionTitle:
+        "Chennai’s Auto Startup Scene: Building the Future of Mobility",
+
+      fintechEvolution: [
+        {
+          points: [
+            {
+              title: "Government Support & Expansion",
+              para: [
+                <>
+                  <p>
+                    For the 2025–26 academic year, the Tamil Nadu government
+                    approved a 20% seat increase in government arts and science
+                    colleges, responding to the rising demand in commerce and
+                    arts courses. Over 179 government colleges currently operate
+                    in the state. The Times of IndiaChennaitop10+4Stanza
+                    Living+4The Times of India+4
+                  </p>
+                </>,
+                ,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+            },
+            {
+              title: "Admission Demand Highlights",
+              para: [
+                <>
+                  <strong>
+                    Presidency College saw 40,167 applications for 2,380 seats.
+                  </strong>
+                </>,
+                ,
+                <>
+                  <strong>
+                    Queen Mary’s College received 23,018 applications for 2,038
+                    seats.
+                  </strong>
+                </>,
+                <>
+                  <p>
+                    BSc (Computer Science), BA (Tamil/English), BCom, and BBA
+                    remain the most sought-after disciplines.
+                    <a href="https://www.studyclap.com/arts-colleges-in-chennai/?utm_source=chatgpt.com">
+                      collegesintamilnadu.com+10studyclap.com+10Stanza
+                      Living+10The Times of IndiaIndCareer+1
+                    </a>
+                  </p>
+                </>,
+                ,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+            },
+            {
+              title: "Autonomy & Curriculum Innovation",
+              para: [
+                <>
+                  <p>
+                    Chennai hosts several{" "}
+                    <strong>autonomous arts and science colleges </strong> —
+                    such as MCC, Loyola, Stella Maris, Presidency, and
+                    Ethiraj—that create their own syllabi and adaptive learning
+                    models.
+                  </p>
+                </>,
+
+                ,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+            },
+          ],
+        },
+        {
+          points: [
+            {
+              title: "Why Choose Arts, Science & Commerce in Chennai?",
+              para: [
+                <>
+                  <strong>Academic Legacy Meets Modern Curriculum : </strong>
+                  Institutions like Loyola and MCC blend centuries of academic
+                  reputation with progressive pedagogy.
+                </>,
+                <>
+                  <strong>Affordability & Accessibility : </strong>
+                  Government colleges offer high-quality education at accessible
+                  pricing, while autonomous colleges maintain moderate fee
+                  structures with scholarship options.
+                </>,
+                <>
+                  <strong>High Engagement & Placement Network : </strong>
+                  Strong student demand reflects institutional confidence; many
+                  colleges actively support internships, placement drives, and
+                  international exchanges.
+                </>,
+                <>
+                  <strong>Holistic Education & Social Awareness : </strong>
+                  Students benefit from programs in liberal arts, social
+                  sciences, community engagement, and environmental awareness
+                  that align with Future Chennai’s emphasis on inclusive
+                  learning.
+                </>,
+              ],
+              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+
+  const lawCollegeSchools = [
+    // {
+    //   SchoolName: "Saveetha School of Law",
+    //   ProgrammesOffered: "BA LLB, BBA LLB, B.Com LLB",
+    //   Location: null,
+    //   ApproxFees: "₹17.5 lakh",
+    //   ExtraInfo:
+    //     "High CD Score: 1532/2000; strong infrastructure Zollege+7Primebook+7LawShun+7Higher Education in India+5Collegedunia+5Collegedunia+5",
+    // },
+    {
+      SchoolName: "Saveetha School of Law",
+      ProgrammesOffered: "BA LLB, BBA LLB, B.Com LLB",
+      Location: null,
+      ApproxFees: "₹17.5 lakh",
+      ExtraInfo:
+        "High CD Score: 1532/2000; strong infrastructure Zollege+7Primebook+7LawShun+7Higher Education in India+5Collegedunia+5Collegedunia+5",
+    },
+    {
+      SchoolName:
+        "Vels Institute of Science, Technology & Advanced Studies (VISTAS)",
+      ProgrammesOffered: "BA LLB, BBA LLB, B.Com LLB",
+      Location: null,
+      ApproxFees: "₹9.5 – ₹10.9 lakh",
+      ExtraInfo: "Median Placement: ₹6 LPA; good scholarships",
+    },
+    {
+      SchoolName: "Vel Tech University (Law)",
+      ProgrammesOffered: "BA LLB, BBA LLB",
+      Location: null,
+      ApproxFees: "₹7.55 lakh",
+      ExtraInfo: "Ranked among top law institutes",
+    },
+    {
+      SchoolName: "VIT Law School (VIT Chennai)",
+      ProgrammesOffered: "BA LLB, BBA LLB",
+      Location: null,
+      ApproxFees: "₹10.02 lakh",
+      ExtraInfo: "Known for global pedagogy",
+    },
+    {
+      SchoolName: "SRM Institute of Science & Technology (Law)",
+      ProgrammesOffered: "BA LLB, BBA LLB, B.Com LLB, LLB",
+      Location: null,
+      ApproxFees: "₹10 lakh",
+      ExtraInfo: "Highest ROI: 71% avg; placements ~₹7.13 LPA",
+    },
+    {
+      SchoolName: "Sathyabama Institute of Science & Technology (Law)",
+      ProgrammesOffered: "BA LLB, BBA LLB, B.Com LLB, LLB",
+      Location: null,
+      ApproxFees: "₹7.95 lakh",
+      ExtraInfo: "Affordable legal education; ISR ~₹4.83 LPA",
+    },
+    {
+      SchoolName: "Tamil Nadu Dr. Ambedkar Law University (TNDALU)",
+      ProgrammesOffered: "LLB, Integrated Law (BA/BBA/B.Com LLB)",
+      Location: null,
+      ApproxFees: "₹4.38 lakh (Integrated)",
+      ExtraInfo: "State public law university",
+    },
+    {
+      SchoolName: "University of Madras (Law)",
+      ProgrammesOffered: "LLB, LLM",
+      Location: null,
+      ApproxFees: "₹9,770 (LLB)",
+      ExtraInfo: "Historic institution, strong legal legacy",
+    },
+    {
+      SchoolName: "Chettinad Academy of Research & Education",
+      ProgrammesOffered: "BA LLB, BBA LLB, B.Com LLB",
+      Location: null,
+      ApproxFees: "₹30 lakh (Integrated)",
+      ExtraInfo: "Premium law education offering",
+    },
+    {
+      SchoolName: "Bharath Institute of Law (BIHER)",
+      ProgrammesOffered: "BBA LLB Integrated",
+      Location: null,
+      ApproxFees: "₹10.6 lakh",
+      ExtraInfo: "Well-regarded law programmes",
+    },
+  ];
+
+  // lawCollege
 
   return (
     <>
@@ -6295,53 +6490,2027 @@ export default function EducationInstitutions() {
           )}
 
           {/* -----------------OutsideChennai--------------------  */}
-          <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
-            {StateSchoolsList.map((section, sectionIdx) => {
-              return (
-                <div key={sectionIdx} className="nightlifesecIn">
-                  <h2 className="text-2xl font-semibold mb-6">
-                    {section.category}
-                  </h2>
-                  <p className="mx-0 my-5 mb-9">{section.categoryParaGraph}</p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <AnimatePresence>
-                      {section.places.map((place, idx) => (
-                        <motion.div
-                          key={idx}
-                          className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -20 }}
-                          transition={{ duration: 0.3 }}
-                          layout
-                        >
-                          <h3 className="text-xl font-semibold mb-2">
-                            {place.name}
-                          </h3>
-                          <p className="text-gray-700 mb-2">{place.desc}</p>
-
-                          {place.locations?.length > 0 && (
-                            <ExpandableList
-                              items={place.locations.map((loc) => ({
-                                label: loc.name,
-                                link: loc.link,
-                              }))}
-                              maxVisible={2}
-                            />
-                          )}
-                        </motion.div>
-                      ))}
-                    </AnimatePresence>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
 
           {/*----------------- Multiple Benefit Sections ----------------*/}
         </section>
         {/* State Schools */}
+
+        {/* Top Colleges */}
+        <section id="fourthSection" className="relative">
+          <div
+            className={`stickyPositionContainer w-full transition-transform transition-shadow duration-300 ease-in-out ${
+              isSticky
+                ? "fixed top-0 left-0 z-50 bg-white shadow-md py-3"
+                : "relative"
+            }`}
+          >
+            <div className="container max-w-7xl mx-auto px-4 pb-[25px] chennaiInvestmentsButtons">
+              <div className="flex flex-wrap gap-4 justify-center mb-6">
+                {tabNames.map((name) => (
+                  <button
+                    key={name}
+                    className={`tabButton px-4 py-2 rounded font-semibold transition ${
+                      activeSection === name
+                        ? "!bg-[#a44294] text-white !font-medium"
+                        : "bg-gray-200 text-gray-800 !font-medium"
+                    }`}
+                    onClick={() => handleTabClick(name)}
+                  >
+                    {name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* -----------------CentralChennai--------------------  */}
+
+          {activeSection === "Central Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {topCollegeSchoolIntro.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
+
+              <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
+                {topCollegeimageSections.map((section, index) => (
+                  <section
+                    className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index % 3 === 0
+          ? "pattern-a"
+          : index % 3 === 1
+          ? "pattern-b"
+          : "pattern-c"
+      }`}
+                    key={index}
+                  >
+                    <div className="space-y-6 bg-white p-4  rounded bottomListIcon w-full">
+                      {section.fintechEvolution.map((tenant, i) => (
+                        <div key={i}>
+                          {tenant.points.map((item, j) => (
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
+                              <div className="clcboxIImg">
+                                <img src={item.imgs} alt={item.imgAlt} />
+                              </div>
+                              <div className="clcboxICont">
+                                <h3 className="text-lg font-semibold mb-2">
+                                  {item.title}
+                                </h3>
+                                {item.note && (
+                                  <p className="">{item.note}</p> // ✅ note displayed clearly
+                                )}
+                                <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                  {item.para.map((point, k) => (
+                                    <li key={k}>{point}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+
+                {topCollegeschoolsContents.map((section, index) => (
+                  <section
+                    className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+              ${
+                index % 2 === 0
+                  ? "bg-white whitebgsec"
+                  : "bg-[#f7f7f7] colorbgsec"
+              } 
+            ${
+              index % 3 === 0
+                ? "pattern-a"
+                : index % 3 === 1
+                ? "pattern-b"
+                : "pattern-c"
+            }`}
+                    key={index}
+                  >
+                    <div className="space-y-6 bg-white p-4 rounded bottomListIcon w-full">
+                      <p>{section.sectionDesc}</p>
+                      {section.fintechEvolution.map((tenant, i) => (
+                        <div key={i}>
+                          {tenant.points.map((item, j) => (
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
+                              <div className="clcboxIImg">
+                                <img src={item.imgs} alt={item.imgAlt} />
+                              </div>
+                              <div className="clcboxICont">
+                                <h3 className="text-lg font-semibold mb-2">
+                                  {item.title}
+                                </h3>
+
+                                {item.note && (
+                                  <p className="text-gray-700 mb-1">
+                                    {item.note}
+                                  </p>
+                                )}
+                                {item.para && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.note2 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note2}
+                                  </p>
+                                )}
+                                {item.para2 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para2.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                                {item.note3 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note3}
+                                  </p>
+                                )}
+
+                                {item.para3 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para3.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.para4 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para4.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+
+                <div className="overflow-x-auto my-6">
+                  <h2 className="text-2xl font-bold">
+                    Categories of Colleges in Chennai
+                  </h2>
+                </div>
+
+                {topCollegechoolsContents2.map((section, index) => (
+                  <section
+                    className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+              ${
+                index % 2 === 0
+                  ? "bg-white whitebgsec"
+                  : "bg-[#f7f7f7] colorbgsec"
+              } 
+            ${
+              index % 3 === 0
+                ? "pattern-a"
+                : index % 3 === 1
+                ? "pattern-b"
+                : "pattern-c"
+            }`}
+                    key={index}
+                  >
+                    <div className="space-y-6 bg-white p-4 rounded bottomListIcon w-full">
+                      <p>{section.sectionDesc}</p>
+                      {section.fintechEvolution.map((tenant, i) => (
+                        <div key={i}>
+                          {tenant.points.map((item, j) => (
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
+                              <div className="clcboxIImg">
+                                <img src={item.imgs} alt={item.imgAlt} />
+                              </div>
+                              <div className="clcboxICont">
+                                <h3 className="text-lg font-semibold mb-2">
+                                  {item.title}
+                                </h3>
+
+                                {item.note && (
+                                  <p className="text-gray-700 mb-1">
+                                    {item.note}
+                                  </p>
+                                )}
+                                {/* {item.para && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )} */}
+                                {item.para && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.note2 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note2}
+                                  </p>
+                                )}
+                                {item.para2 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para2.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                                {item.note3 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note3}
+                                  </p>
+                                )}
+
+                                {item.para3 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para3.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.para4 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para4.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------CentralChennai--------------------  */}
+
+          {/* -----------------SouthChennai--------------------  */}
+
+          {activeSection === "South Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {SouthChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {SouthChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------SouthChennai--------------------  */}
+
+          {/* -----------------NorthChennai--------------------  */}
+
+          {activeSection === "North Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {NorthChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {NorthChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------NorthChennai--------------------  */}
+
+          {/* -----------------WestChennai--------------------  */}
+
+          {activeSection === "West Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {WestChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {WestChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------WestChennai--------------------  */}
+
+          {/* -----------------OutsideChennai--------------------  */}
+
+          {activeSection === "Outskirts & Greater Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {OtherChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {OtherChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------OutsideChennai--------------------  */}
+
+          {/*----------------- Multiple Benefit Sections ----------------*/}
+        </section>
+        {/* Top Colleges */}
+
+        {/* Arts, Science & Commerce*/}
+        <section id="fourthSection" className="relative">
+          <div
+            className={`stickyPositionContainer w-full transition-transform transition-shadow duration-300 ease-in-out ${
+              isSticky
+                ? "fixed top-0 left-0 z-50 bg-white shadow-md py-3"
+                : "relative"
+            }`}
+          >
+            <div className="container max-w-7xl mx-auto px-4 pb-[25px] chennaiInvestmentsButtons">
+              <div className="flex flex-wrap gap-4 justify-center mb-6">
+                {tabNames.map((name) => (
+                  <button
+                    key={name}
+                    className={`tabButton px-4 py-2 rounded font-semibold transition ${
+                      activeSection === name
+                        ? "!bg-[#a44294] text-white !font-medium"
+                        : "bg-gray-200 text-gray-800 !font-medium"
+                    }`}
+                    onClick={() => handleTabClick(name)}
+                  >
+                    {name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* -----------------CentralChennai--------------------  */}
+
+          {activeSection === "Central Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {artsScienceIntro.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
+
+              <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
+                {artsScienceimageSections.map((section, index) => (
+                  <section
+                    className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index % 3 === 0
+          ? "pattern-a"
+          : index % 3 === 1
+          ? "pattern-b"
+          : "pattern-c"
+      }`}
+                    key={index}
+                  >
+                    <div className="space-y-6 bg-white p-4  rounded bottomListIcon w-full">
+                      {section.fintechEvolution.map((tenant, i) => (
+                        <div key={i}>
+                          {tenant.points.map((item, j) => (
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
+                              <div className="clcboxIImg">
+                                <img src={item.imgs} alt={item.imgAlt} />
+                              </div>
+                              <div className="clcboxICont">
+                                <h3 className="text-lg font-semibold mb-2">
+                                  {item.title}
+                                </h3>
+                                {item.note && (
+                                  <p className="">{item.note}</p> // ✅ note displayed clearly
+                                )}
+                                <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                  {item.para.map((point, k) => (
+                                    <li key={k}>{point}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+
+                {artsScienceContents.map((section, index) => (
+                  <section
+                    className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+              ${
+                index % 2 === 0
+                  ? "bg-white whitebgsec"
+                  : "bg-[#f7f7f7] colorbgsec"
+              } 
+            ${
+              index % 3 === 0
+                ? "pattern-a"
+                : index % 3 === 1
+                ? "pattern-b"
+                : "pattern-c"
+            }`}
+                    key={index}
+                  >
+                    <div className="space-y-6 bg-white p-4 rounded bottomListIcon w-full">
+                      <p>{section.sectionDesc}</p>
+                      {section.fintechEvolution.map((tenant, i) => (
+                        <div key={i}>
+                          {tenant.points.map((item, j) => (
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
+                              <div className="clcboxIImg">
+                                <img src={item.imgs} alt={item.imgAlt} />
+                              </div>
+                              <div className="clcboxICont">
+                                <h3 className="text-lg font-semibold mb-2">
+                                  {item.title}
+                                </h3>
+
+                                {item.note && (
+                                  <p className="text-gray-700 mb-1">
+                                    {item.note}
+                                  </p>
+                                )}
+                                {item.para && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.note2 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note2}
+                                  </p>
+                                )}
+                                {item.para2 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para2.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                                {item.note3 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note3}
+                                  </p>
+                                )}
+
+                                {item.para3 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para3.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.para4 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para4.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+
+                <div className="overflow-x-auto my-6">
+                  <h2 className="text-2xl font-bold">
+                    Top Institutions in Chennai
+                  </h2>
+
+                  <p>
+                    Here are some of the most prestigious and sought-after
+                    colleges where arts, science, and commerce flourish:
+                  </p>
+                </div>
+
+                {artsScienceContents2.map((section, index) => (
+                  <section
+                    className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+              ${
+                index % 2 === 0
+                  ? "bg-white whitebgsec"
+                  : "bg-[#f7f7f7] colorbgsec"
+              } 
+            ${
+              index % 3 === 0
+                ? "pattern-a"
+                : index % 3 === 1
+                ? "pattern-b"
+                : "pattern-c"
+            }`}
+                    key={index}
+                  >
+                    <div className="space-y-6 bg-white p-4 rounded bottomListIcon w-full">
+                      <p>{section.sectionDesc}</p>
+                      {section.fintechEvolution.map((tenant, i) => (
+                        <div key={i}>
+                          {tenant.points.map((item, j) => (
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
+                              <div className="clcboxIImg">
+                                <img src={item.imgs} alt={item.imgAlt} />
+                              </div>
+                              <div className="clcboxICont">
+                                <h3 className="text-lg font-semibold mb-2">
+                                  {item.title}
+                                </h3>
+
+                                {item.note && (
+                                  <p className="text-gray-700 mb-1">
+                                    {item.note}
+                                  </p>
+                                )}
+                                {/* {item.para && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )} */}
+                                {item.para && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.note2 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note2}
+                                  </p>
+                                )}
+                                {item.para2 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para2.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                                {item.note3 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note3}
+                                  </p>
+                                )}
+
+                                {item.para3 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para3.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.para4 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para4.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------CentralChennai--------------------  */}
+
+          {/* -----------------SouthChennai--------------------  */}
+
+          {activeSection === "South Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {SouthChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {SouthChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------SouthChennai--------------------  */}
+
+          {/* -----------------NorthChennai--------------------  */}
+
+          {activeSection === "North Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {NorthChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {NorthChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------NorthChennai--------------------  */}
+
+          {/* -----------------WestChennai--------------------  */}
+
+          {activeSection === "West Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {WestChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {WestChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------WestChennai--------------------  */}
+
+          {/* -----------------OutsideChennai--------------------  */}
+
+          {activeSection === "Outskirts & Greater Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {OtherChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {OtherChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------OutsideChennai--------------------  */}
+
+          {/*----------------- Multiple Benefit Sections ----------------*/}
+        </section>
+        {/* Arts, Science & Commerce*/}
+
+        {/* Law-Colleges*/}
+        <section id="fourthSection" className="relative">
+          <div
+            className={`stickyPositionContainer w-full transition-transform transition-shadow duration-300 ease-in-out ${
+              isSticky
+                ? "fixed top-0 left-0 z-50 bg-white shadow-md py-3"
+                : "relative"
+            }`}
+          >
+            <div className="container max-w-7xl mx-auto px-4 pb-[25px] chennaiInvestmentsButtons">
+              <div className="flex flex-wrap gap-4 justify-center mb-6">
+                {tabNames.map((name) => (
+                  <button
+                    key={name}
+                    className={`tabButton px-4 py-2 rounded font-semibold transition ${
+                      activeSection === name
+                        ? "!bg-[#a44294] text-white !font-medium"
+                        : "bg-gray-200 text-gray-800 !font-medium"
+                    }`}
+                    onClick={() => handleTabClick(name)}
+                  >
+                    {name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* -----------------CentralChennai--------------------  */}
+
+          {activeSection === "Central Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {lawCollegeIntro.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+              </div>
+
+              <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
+                {lawCollegeSections.map((section, index) => (
+                  <section
+                    className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index % 3 === 0
+          ? "pattern-a"
+          : index % 3 === 1
+          ? "pattern-b"
+          : "pattern-c"
+      }`}
+                    key={index}
+                  >
+                    <div className="space-y-6 bg-white p-4  rounded bottomListIcon w-full">
+                      {section.fintechEvolution.map((tenant, i) => (
+                        <div key={i}>
+                          {tenant.points.map((item, j) => (
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
+                              <div className="clcboxIImg">
+                                <img src={item.imgs} alt={item.imgAlt} />
+                              </div>
+                              <div className="clcboxICont">
+                                <h3 className="text-lg font-semibold mb-2">
+                                  {item.title}
+                                </h3>
+                                {item.note && (
+                                  <p className="">{item.note}</p> // ✅ note displayed clearly
+                                )}
+                                <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                  {item.para.map((point, k) => (
+                                    <li key={k}>{point}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+
+                {lawCollegeContents.map((section, index) => (
+                  <section
+                    className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+              ${
+                index % 2 === 0
+                  ? "bg-white whitebgsec"
+                  : "bg-[#f7f7f7] colorbgsec"
+              } 
+            ${
+              index % 3 === 0
+                ? "pattern-a"
+                : index % 3 === 1
+                ? "pattern-b"
+                : "pattern-c"
+            }`}
+                    key={index}
+                  >
+                    <div className="space-y-6 bg-white p-4 rounded bottomListIcon w-full">
+                      <p>{section.sectionDesc}</p>
+                      {section.fintechEvolution.map((tenant, i) => (
+                        <div key={i}>
+                          {tenant.points.map((item, j) => (
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
+                              <div className="clcboxIImg">
+                                <img src={item.imgs} alt={item.imgAlt} />
+                              </div>
+                              <div className="clcboxICont">
+                                <h3 className="text-lg font-semibold mb-2">
+                                  {item.title}
+                                </h3>
+
+                                {item.note && (
+                                  <p className="text-gray-700 mb-1">
+                                    {item.note}
+                                  </p>
+                                )}
+                                {item.para && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.note2 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note2}
+                                  </p>
+                                )}
+                                {item.para2 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para2.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                                {item.note3 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note3}
+                                  </p>
+                                )}
+
+                                {item.para3 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para3.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.para4 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para4.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+
+                <div className="overflow-x-auto my-6">
+                  <h2 className="text-2xl font-bold">
+                    Top Institutions in Chennai
+                  </h2>
+
+                  <p>
+                    Here are some of the most prestigious and sought-after
+                    colleges where arts, science, and commerce flourish:
+                  </p>
+                </div>
+
+                {lawCollegeContents2.map((section, index) => (
+                  <section
+                    className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+              ${
+                index % 2 === 0
+                  ? "bg-white whitebgsec"
+                  : "bg-[#f7f7f7] colorbgsec"
+              } 
+            ${
+              index % 3 === 0
+                ? "pattern-a"
+                : index % 3 === 1
+                ? "pattern-b"
+                : "pattern-c"
+            }`}
+                    key={index}
+                  >
+                    <div className="space-y-6 bg-white p-4 rounded bottomListIcon w-full">
+                      <p>{section.sectionDesc}</p>
+                      {section.fintechEvolution.map((tenant, i) => (
+                        <div key={i}>
+                          {tenant.points.map((item, j) => (
+                            <div
+                              key={j}
+                              className="clcboxItemss flex mb-4"
+                              style={{ paddingBottom: "0" }}
+                            >
+                              <div className="clcboxIImg">
+                                <img src={item.imgs} alt={item.imgAlt} />
+                              </div>
+                              <div className="clcboxICont">
+                                <h3 className="text-lg font-semibold mb-2">
+                                  {item.title}
+                                </h3>
+
+                                {item.note && (
+                                  <p className="text-gray-700 mb-1">
+                                    {item.note}
+                                  </p>
+                                )}
+                                {/* {item.para && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )} */}
+                                {item.para && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.note2 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note2}
+                                  </p>
+                                )}
+                                {item.para2 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para2.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                                {item.note3 && (
+                                  <p className="text-gray-700  mb-1">
+                                    {item.note3}
+                                  </p>
+                                )}
+
+                                {item.para3 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para3.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+
+                                {item.para4 && (
+                                  <ul className="list-disc list-inside text-gray-600 space-y-1 mb-2">
+                                    {item.para4.map((point, k) => (
+                                      <li key={k}>{point}</li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------CentralChennai--------------------  */}
+
+          {/* -----------------SouthChennai--------------------  */}
+
+          {activeSection === "South Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {SouthChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {SouthChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------SouthChennai--------------------  */}
+
+          {/* -----------------NorthChennai--------------------  */}
+
+          {activeSection === "North Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {NorthChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {NorthChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------NorthChennai--------------------  */}
+
+          {/* -----------------WestChennai--------------------  */}
+
+          {activeSection === "West Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {WestChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {WestChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------WestChennai--------------------  */}
+
+          {/* -----------------OutsideChennai--------------------  */}
+
+          {activeSection === "Outskirts & Greater Chennai" && (
+            <>
+              <div className="foodlistsec">
+                {OtherChennaiImage.map((section, index) => {
+                  const tenantCount = section.tenantInfoSections?.length ?? 0;
+                  const parentClass =
+                    tenantCount % 2 === 0 ? "even-count" : "odd-count";
+
+                  return (
+                    <section
+                      key={index}
+                      style={{ paddingBottom: "50px" }}
+                      className={`imgcontent flex flex-wrap justify-center transition-colors duration-300 
+      ${index % 2 === 0 ? "bg-white whitebgsec" : "bg-[#f7f7f7] colorbgsec"} 
+      ${
+        index === 0 ? "pattern-a" : index % 2 === 0 ? "pattern-b" : "pattern-c"
+      }`}
+                    >
+                      <div className="imgLeft">
+                        <img src={section.image} alt={section.imgAlt} />
+                      </div>
+                      <div className="imgText flex items-center">
+                        <div className="imgcolTitle bg-[#682865] relative">
+                          <h2 className="flex flex-col text-white">
+                            <small>{section.sectionTitle}</small>
+                          </h2>
+                          {/* <p>{section.sectionDesc}</p> */}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                })}
+
+                {/*--------------- Explore More Chennai----------------- */}
+              </div>
+              <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+                {OtherChennai.map((section, sectionIdx) => (
+                  <div key={sectionIdx} className="nightlifesecIn">
+                    <h2 className="text-2xl font-semibold mb-6">
+                      {section.category}
+                    </h2>
+                    <p className="mx-0 my-5 mb-9">
+                      {section.categoryParaGraph}
+                    </p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <AnimatePresence>
+                        {section.places.map((place, idx) => (
+                          <motion.div
+                            key={idx}
+                            className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.3 }}
+                            layout
+                          >
+                            <h3 className="text-xl font-semibold mb-2">
+                              {place.name}
+                            </h3>
+                            <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                            {place.locations?.length > 0 && (
+                              <ExpandableList
+                                items={place.locations.map((loc) => ({
+                                  label: loc.name,
+                                  link: loc.link,
+                                }))}
+                                maxVisible={2}
+                              />
+                            )}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* -----------------OutsideChennai--------------------  */}
+
+          {/*----------------- Multiple Benefit Sections ----------------*/}
+
+          <div className="container max-w-7xl mx-auto px-4  nightlife investchennaisec">
+            <div className="overflow-x-auto my-6">
+              <h2 className="text-2xl font-bold">
+                Top Law Colleges in Chennai
+              </h2>
+
+              <table className="min-w-full border border-gray-200 divide-y divide-gray-200 text-left mb-0">
+                <thead className="bg-gray-100">
+                  <tr>
+                    <th className="px-4 py-3 text-sm font-semibold text-gray-700">
+                      College Name
+                    </th>
+                    <th className="px-4 py-3 text-sm font-semibold text-gray-700">
+                      Course Offerings
+                    </th>
+                    <th className="px-4 py-3 text-sm font-semibold text-gray-700">
+                      Approx. Total Fees (5-Year Integrated Law)
+                    </th>
+                    <th className="px-4 py-3 text-sm font-semibold text-gray-700">
+                      Highlights & Rankings
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  {lawCollegeSchools.map((giant, index) => (
+                    <tr
+                      key={index}
+                      className="hover:bg-gray-50 transition-colors duration-200"
+                    >
+                      <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
+                        {giant.SchoolName}
+                      </td>
+                      <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
+                        {giant.ProgrammesOffered}
+                      </td>
+                      <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
+                        {giant.ApproxFees}
+                      </td>
+                      <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
+                        {giant.ExtraInfo}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        {/* Law-Colleges*/}
 
         <LiveSlider />
 

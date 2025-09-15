@@ -3516,7 +3516,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarTitle: "Eras Tour Tribute: Shake It Off September",
     EventsCalendarContent: "A Taylor Swift fan night for all eras 💜",
     EventsCalendarMonth: "27 Sep 2025",
-    EventsCalendarTime: "2:30 PM",
+    EventsCalendarTime: "2:31 PM",
     EventsCalendarCategory: "Music & Fan Events",
     image: "/images/HomePage-Images/Events/Newevents/268.jpg",
     link: "/events",
@@ -3906,7 +3906,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     language: "",
     hours: "8 Hours",
     ageLimit: "",
-    rleigion: "Hindu",
+    rleigion: "Hindi, Gujrati",
     aboutFull: `
     <p>Dandiya and Garba are traditional folk dances from Gujarat, India, celebrated with energy and joy during Navratri.</p>
     <p>Garba is a graceful circular dance around a lamp or image of Goddess Durga, symbolizing life and creation, and is both a spiritual offering and festive gathering.</p>

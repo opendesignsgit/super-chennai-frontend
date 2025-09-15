@@ -3898,7 +3898,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarContent:
       "Traditional Garba and Dandiya folk dances celebrating Navratri with music and dance.",
     EventsCalendarMonth: "20 Sep 2025",
-    EventsCalendarTime: "20 Sep 2025 - 9PM , 21 Sep 2025 - 5PM",
+    EventsCalendarTime: "20 Sep - 9PM , 21 Sep - 5PM",
     EventsCalendarCategory: "Cultural Festival",
     image: "/images/HomePage-Images/Events/Newevents/279.jpg",
     link: "/events",

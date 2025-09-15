@@ -3839,10 +3839,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Namma Chennai - Juniorthon 3rd Edition | Kids Sports Fiesta - Super Chennai",
+      "Kids Sports Day & Fun Run 2025 | Juniorthon – Super Chennai",
     conicallinkEvent: "/eventsdetails/157",
     metaDescriptionEvent:
-      "Join the ultimate kids sports fiesta at Namma Chennai Juniorthon 3rd Edition with fun races, prizes, and excitement for young athletes.",
+      "Namma Chennai Juniorthon 2025 is a fun-filled kids sports day with running races, medals, trophies, and prizes. Encourage your child to play, run, and shine!",
     siteLink:
       "https://www.district.in/events/namma-chennai-juniorthon-3rd-edition-sep21-2025-buy-tickets",
     EventsCalendarTitle: "Namma Chennai - Juniorthon 3rd Edition",
@@ -3888,10 +3888,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Dandiya Navjalsa 2025 | Traditional Garba & Dandiya Festival - Super Chennai",
+      "Dandiya Navjalsa 2025 | Garba & Dandiya Event – Super Chennai",
     conicallinkEvent: "/eventsdetails/158",
     metaDescriptionEvent:
-      "Celebrate Navratri with Dandiya and Garba dances at Dandiya Navjalsa 2025 in Chennai, a joyful event full of tradition and fun for all ages.",
+      "Celebrate Navratri at Dandiya Navjalsa 2025! Enjoy Garba and Dandiya Raas, traditional music, dance, and fun for the whole family in a lively festival.",
     siteLink:
       "https://www.district.in/events/dandiya-navjalsa-2025-sep20-2025-buy-tickets",
     EventsCalendarTitle: "Dandiya Navjalsa 2025",

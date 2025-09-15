@@ -51,6 +51,20 @@ export default function EducationInstitutions() {
     "Colleges and Universities",
   ];
 
+  // Create refs for each section
+  const refs = {
+    "IB Schools": useRef(null),
+    "IGCSE Schools": useRef(null),
+    "ICSE Schools": useRef(null),
+    "CBSE Schools": useRef(null),
+    "Matriculation Schools": useRef(null),
+    "State Board Schools": useRef(null),
+  };
+
+  const handleTabClick = (name) => {
+    refs[name]?.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -197,12 +211,12 @@ export default function EducationInstitutions() {
                   {tabNames.map((name) => (
                     <button
                       key={name}
+                      onClick={() => handleTabClick(name)}
                       className={`tabButton px-4 py-2 rounded font-semibold transition ${
                         activeSection === name
                           ? "!bg-[#a44294] text-white !font-medium"
                           : "bg-gray-200 text-gray-800 !font-medium"
                       }`}
-                      onClick={() => handleTabClick(name)}
                     >
                       {name}
                     </button>
@@ -211,7 +225,11 @@ export default function EducationInstitutions() {
               </div>
             </div>
 
-            <IBSchool />
+            <div ref={refs["IB Schools"]}>
+              <IBSchool />
+            </div>
+
+
 
             <IGCSESchool />
 
@@ -244,7 +262,6 @@ export default function EducationInstitutions() {
                           ? "!bg-[#a44294] text-white !font-medium"
                           : "bg-gray-200 text-gray-800 !font-medium"
                       }`}
-                      onClick={() => handleTabClick(name)}
                     >
                       {name}
                     </button>

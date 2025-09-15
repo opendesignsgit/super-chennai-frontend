@@ -1795,7 +1795,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Laugh out loud at Manjeet Sarkar’s ‘Unpaid Therapist’! A must-see Standup Comedy Show in Chennai on Aug 30 at Alwarpet. Book your seat now!",
     siteLink:
       "https://in.bookmyshow.com/events/two-funny-a-double-bill-stand-up-comedy-show/ET00338236",
-    EventsCalendarTitle: "MANJEET KI BAAT- A COMEDY SHOW",
+    EventsCalendarTitle: "Manjeet Ki Baat – A Comedy Show",
     EventsCalendarContent:
       "Yes, you may have seen him somewhere on the internet.",
     EventsCalendarMonth: "9 Aug – 20 Sep, 2025",
@@ -2634,7 +2634,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
       "Chennai, get ready! Vibe Panrom Tamil Standup Comedy brings hilarious takes on life, family, and culture for an evening full of entertainment.",
     siteLink:
       "https://in.bookmyshow.com/events/jokes-for-reels-a-tamil-standup-comedy-show/ET00391838",
-    EventsCalendarTitle: "VIBE PANROM - A TAMIL STANDUP COMEDY SHOW",
+    EventsCalendarTitle: "Vibe Panrom – A Tamil Standup Comedy Show",
     EventsCalendarContent: "!Are you ready to laugh and vibe!",
     EventsCalendarMonth: "21 Sep 2025",
     EventsCalendarTime: "6:00 PM",
@@ -2657,7 +2657,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     metaDescriptionEvent:
       "Isai Sangamam Chennai brings classical & contemporary music together for a soulful cultural evening filled with harmony, rhythm, and magical melodies.",
     siteLink: "https://in.bookmyshow.com/events/isai-sangamam/ET00460947",
-    EventsCalendarTitle: "ISAI SANGAMAM",
+    EventsCalendarTitle: "Isai Sangamam",
     EventsCalendarContent: "A perfect blend of classical and contemporary",
     EventsCalendarMonth: "21 Sep 2025",
     EventsCalendarTime: "6:05 PM",
@@ -3083,7 +3083,7 @@ Rest your body for a weekend and relax your mind with us.
     metaDescriptionEvent:
       "Bold, raw, and outrageously funny — That Dirty Show in Chennai delivers adult comedy, daring punchlines, and unfiltered humor for a night of nonstop laughter.",
     siteLink: "https://in.bookmyshow.com/events/that-dirty-show/ET00460729",
-    EventsCalendarTitle: "THAT DIRTY SHOW ",
+    EventsCalendarTitle: "That Dirty Show",
     EventsCalendarContent:
       "Get ready for a wildly unfiltered night of laughter!",
     EventsCalendarMonth: "2 Nov 2025",
@@ -3107,7 +3107,7 @@ Rest your body for a weekend and relax your mind with us.
       "Chennai’s biggest live concert is here! Max Urban UN-MUTE Rap Tour unites rap kings for a hip hop night packed with fiery beats, powerful bars & raw energy.",
     siteLink:
       "https://in.bookmyshow.com/events/max-urbn-unmute-ft-paal-dabba-live-in-concert/ET00457532",
-    EventsCalendarTitle: "MAX URBN UNMUTE FT. PAAL DABBA LIVE IN CONCERT",
+    EventsCalendarTitle: "Max Urbn Unmute ft. Paal Dabba Live in Concert",
     EventsCalendarContent:
       "Max Fashion India presents its first-ever rap extravaganza",
     EventsCalendarMonth: "26 Sep 2025",
@@ -3131,7 +3131,7 @@ Rest your body for a weekend and relax your mind with us.
       "Abishek returns with Wants to Enjoy Life—a comedy special of jokes, music & stories. Don’t miss this laughter-filled stand-up comedy night in Chennai!",
     siteLink:
       "https://in.bookmyshow.com/events/abishek-wants-to-enjoy-life-a-comedy-special/ET00458295",
-    EventsCalendarTitle: "ABISHEK WANTS TO ENJOY LIFE - A COMEDY SPECIAL",
+    EventsCalendarTitle: "Abishek Wants to Enjoy Life – A Comedy Special",
     EventsCalendarContent: "Abishek presents his brand-new special",
     EventsCalendarMonth: "25 Sep 2025",
     EventsCalendarTime: "3:00 PM",
@@ -3215,7 +3215,7 @@ Rest your body for a weekend and relax your mind with us.
     EventsCalendarContent: "Paradox – A magic & mind show",
     EventsCalendarMonth: "27 Sep 2025",
     EventsCalendarTime: "6:17 PM",
-    EventsCalendarCategory: "Coastal CleanUp",
+    EventsCalendarCategory: "Magic-Show",
     image: "/images/HomePage-Images/Events/Newevents/265.jpg",
     link: "/events",
     location: "Trinity Studio: Kodambakkam ",
@@ -3899,7 +3899,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
       "Traditional Garba and Dandiya folk dances celebrating Navratri with music and dance.",
     EventsCalendarMonth: "20 Sep 2025",
     EventsCalendarTime: "20 Sep - 9PM , 21 Sep - 5PM",
-    EventsCalendarCategory: "Cultural Festival",
+    EventsCalendarCategory: "Festival",
     image: "/images/HomePage-Images/Events/Newevents/279.jpg",
     link: "/events",
     location: "Dharmaprakash Kalyana Mandapam, Chennai",

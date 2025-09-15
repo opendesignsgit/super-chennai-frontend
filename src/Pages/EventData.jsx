@@ -3247,10 +3247,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Arey Kahan – Stand-up Comedy Special by Sundeep Sharma - Super Chennai",
+      "Sundeep Sharma / Arey Kahan Stand Up Comedy Show – Super Chennai",
     conicallinkEvent: "/eventsdetails/142",
     metaDescriptionEvent:
-      "Sundeep Sharma’s ‘Arey Kahan’ comedy special brings hilarious stories about life, fitness, dogs, Delhi fights, and India’s class divide — all in his signature Bareilly style.",
+      "Sundeep Sharma’s Arey Kahan is a stand up comedy show with witty tales from fat to fit, single life, mimicry, and Bareilly charm. A must-see live event.",
     siteLink: "https://in.bookmyshow.com/events/sundeep-sharma-live/ET00379144",
     EventsCalendarTitle: "Arey Kahan – Stand-up Comedy Special",
     EventsCalendarContent: "Sundeep Sharma Live in Chennai",
@@ -3278,10 +3278,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Bottle Painting Activity | Sip & Paint at Hibiscus Café - Super Chennai",
+      "Hibiscus Café / Bottle Painting Workshop Fun - Super Chennai",
     conicallinkEvent: "/eventsdetails/143",
     metaDescriptionEvent:
-      "Relax, sip, and get creative at Hibiscus Café! Join this bottle painting activity — perfect for friends, dates, or solo fun. All materials provided.",
+      "Join Hibiscus Café for a fun bottle painting workshop in Chennai. Unleash creativity, turn empty bottles into colorful art, and enjoy a relaxing, vibrant session.",
     siteLink:
       "https://in.bookmyshow.com/events/bottle-painting-activity/ET00454378",
     EventsCalendarTitle: "Bottle Painting Activity",
@@ -3318,10 +3318,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Bread, Pizza & Doughnuts Workshop | Learn to Bake - Super Chennai",
+      "Baking Workshop / Bread & Pizza Classes for Women / Super Chennai",
     conicallinkEvent: "/eventsdetails/144",
     metaDescriptionEvent:
-      "Join this hands-on baking workshop in Chennai! Learn to make breads, pizzas, and doughnuts with easy recipes and personal guidance. Perfect for beginners and baking lovers.",
+      "Baking workshop for women in Chennai. Learn to make bread, pizza, doughnuts, and sweet treats with hands-on practice, easy recipes, and expert guidance.",
     siteLink:
       "https://in.bookmyshow.com/events/bread-pizza-doughnuts-apr-22/ET00325866",
     EventsCalendarTitle: "Bread, Pizza & Doughnuts",
@@ -3354,10 +3354,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Dysfunctional by Mohd Suhel | Stand-up Comedy Show - Super Chennai",
+      "Mohd Suhel Live / Office Humor & Comedy Show – Super Chennai",
     conicallinkEvent: "/eventsdetails/145",
     metaDescriptionEvent:
-      "From ISRO interviews to quitting at 21, Mohd Suhel’s stand-up show ‘Dysfunctional’ hilariously breaks down the chaos of modern work life. A must-watch comedy in Chennai!",
+      "Catch Mohd Suhel Live in Chennai for a hilarious corporate comedy show. Relive office struggles, funny workplace stories, and side-splitting misadventures.",
     siteLink: "https://in.bookmyshow.com/events/mohd-suhel-live/ET00408882",
     EventsCalendarTitle: "Dysfunctional by Mohd Suhel",
     EventsCalendarContent:
@@ -3389,10 +3389,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "South Indian Cuisine Workshop | Traditional Cooking Class - Super Chennai",
+      "South Indian Cooking Class / Hands-On Workshop – Super Chennai",
     conicallinkEvent: "/eventsdetails/146",
     metaDescriptionEvent:
-      "Master the flavors of South India! Join this hands-on vegetarian cooking workshop and learn classic dishes like sambar, rasam, poriyal, and more. Perfect for all skill levels.",
+      "Learn South Indian vegetarian cooking in Chennai. Join this hands-on class to make sambar, rasam, poriyal, kulambu, kootu, and traditional desserts with ease.",
     siteLink:
       "https://in.bookmyshow.com/events/south-indian-cuisine-workshop-nov-21/ET00317177",
     EventsCalendarTitle: "South Indian Cuisine Workshop",
@@ -3430,10 +3430,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Young Artists Championship 2025 | Drawing Competition for Kids - Super Chennai",
+      "Young Artists Championship 2025 / Kids Art – Super Chennai",
     conicallinkEvent: "/eventsdetails/147",
     metaDescriptionEvent:
-      "Join the Young Artists Championship 2025 – a creative drawing competition for kids from Pre-KG to 12th Std. Unleash imagination, learn, and win!",
+      "Kids from Pre-KG to 12th Std can participate in the Young Artists Championship 2025. Show your talent in art, drawing, painting, and themed competitions.",
     siteLink: "https://in.bookmyshow.com/events/drawing-competition/ET00461829",
     EventsCalendarTitle: "Drawing Competition",
     EventsCalendarContent:
@@ -3471,10 +3471,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Bangtan Beats: BTS Tribute | ARMY Night Out - Super Chennai",
+      "BTS ARMY Fan Event / Tribute Night & Music / Super Chennai",
     conicallinkEvent: "/eventsdetails/148",
     metaDescriptionEvent:
-      "Celebrate BTS with a tribute night full of music, dance, and ARMY vibes! Join the party, sing along to your favorite BTS hits, and enjoy the NamKook birthday bash in Chennai.",
+      "Celebrate BTS with fellow ARMY fans at Third Wave Coffee. Enjoy live music, iconic hits, and NamKook’s birthday party in a night full of fun and energy.",
     siteLink:
       "http://in.bookmyshow.com/events/bangtan-beats-bts-tribute/ET00460265",
     EventsCalendarTitle: "Bangtan Beats: BTS Tribute",
@@ -3507,10 +3507,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Eras Tour Tribute: Shake It Off September | Swiftie Night - Super Chennai",
+      "Shake It Off September / Taylor Swift Fan Event / Super Chennai",
     conicallinkEvent: "/eventsdetails/149",
     metaDescriptionEvent:
-      "Sing, dance, and relive every Taylor Swift era at Shake It Off September — a Swiftie celebration like no other in Chennai. Dress up, vibe, and make it a night to remember!",
+      "Shake It Off September is a Taylor Swift fan event. Sing, dance, and celebrate every era with fellow Swifties, create memories, and enjoy an unforgettable night.",
     siteLink:
       "https://in.bookmyshow.com/events/eras-tour-tribute-shake-it-off-september/ET00460184",
     EventsCalendarTitle: "Eras Tour Tribute: Shake It Off September",
@@ -3546,10 +3546,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Tribute Show: The Rajini Experience Magnum Opus | Rajinikanth Homage - Super Chennai",
+      "Rajinikanth Live Tribute | Thalaivar Celebration – Super Chennai",
     conicallinkEvent: "/eventsdetails/150",
     metaDescriptionEvent:
-      "Celebrate Superstar Rajinikanth with a spectacular tribute show featuring iconic hits, electrifying performances, and nostalgia at Kreate by Kraft, Chennai.",
+      "Rajinikanth Live Tribute and Thalaivar Celebration brings iconic songs, unforgettable performances, and nostalgia-filled moments for all superstar fans.",
     siteLink:
       "https://in.bookmyshow.com/events/tribute-show-the-rajini-experience-magnum-opus/ET00462119",
     EventsCalendarTitle: "Tribute Show: The Rajini Experience Magnum Opus",
@@ -3588,10 +3588,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Vismaya '25 | Magic & Philanthropy Evening with Suhani Shah - Super Chennai",
+      "Vismaya '25 Live / Magic & Mentalist Show – Super Chennai",
     conicallinkEvent: "/eventsdetails/151",
     metaDescriptionEvent:
-      "Join Suhani Shah’s mesmerizing mentalism show while supporting community projects with Rotary Club Chennai Kilpauk. An evening of magic, giving back, and inspiration.",
+      "Experience Vismaya '25 Live with Suhani Shah – an evening of magic, mind-reading, and unforgettable mentalist acts blending entertainment with inspiration.",
     siteLink: "https://in.bookmyshow.com/events/vismaya-25/ET00458264",
     EventsCalendarTitle: "Vismaya '25",
     EventsCalendarContent:
@@ -3624,10 +3624,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Sound uduu | Political Satire Stand-Up by YG Madhuvanthii - Super Chennai",
+      "Sound Uduu / Political Satire & Stand Up Comedy / Super Chennai",
     conicallinkEvent: "/eventsdetails/152",
     metaDescriptionEvent:
-      "YG Madhuvanthii debuts with a political satire stand-up show and special improv tribute to Shri CHO, blending humor and sharp social commentary.",
+      "Enjoy Sound Uduu, a political satire and stand up comedy show featuring YG Madhuvanthii’s debut act along with a special improv tribute to legend Shri CHO.",
     siteLink: "http://in.bookmyshow.com/events/sound-uduu/ET00460767",
     EventsCalendarTitle: "Sound uduu",
     EventsCalendarContent:
@@ -3660,10 +3660,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Cake Baking & Frosting Workshop | Hands-on Baking Classes - Super Chennai",
+      "Learn Cake Decorating | Baking Workshop – Super Chennai",
     conicallinkEvent: "/eventsdetails/153",
     metaDescriptionEvent:
-      "Join a comprehensive baking workshop to master basics, OTG usage, cupcake & cake baking, and frosting techniques. Suitable for aspiring bakers aged 16+.",
+      "Bake like a pro! Join one of the best events in Chennai — our workshop covers baking basics, OTG use, cakes, cupcakes & frosting for stunning sweet creations.",
     siteLink:
       "https://in.bookmyshow.com/events/cake-baking-frosting-jul-22-weekend/ET00332437",
     EventsCalendarTitle: "Cake Baking & Frosting Workshop",
@@ -3714,10 +3714,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Rock on Harris 3.0 Live Concert | Harris Jayaraj in Chennai - Super Chennai",
+      "Harris Jayaraj Live Concert | Rock On Harris 3.0 – Super Chennai",
     conicallinkEvent: "/eventsdetails/154",
     metaDescriptionEvent:
-      "Experience Harris Jayaraj’s iconic live concert, Rock On Harris 3.0, with unforgettable music, spectacular visuals, and top vocalists in Chennai.",
+      "Get ready for Harris Jayaraj Live! Rock On Harris 3.0 brings unforgettable music, powerful performances, and an electrifying celebration of Tamil hits.",
     siteLink:
       "https://www.district.in/events/rock-on-harris-3-0-chennai-october-2025-buy-tickets",
     EventsCalendarTitle: "Rock on Harris 3.0 Live in concert",
@@ -3766,10 +3766,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     RegisterLink: "",
 
     metaTitleEvent:
-      "Minichestra Beyond Borders | Japan Anime Classic Concert in Chennai - Super Chennai",
+      "Minichestra Beyond Borders | Anime Concert – Super Chennai",
     conicallinkEvent: "/eventsdetails/155",
     metaDescriptionEvent:
-      "Experience Minichestra Beyond Borders, a unique concert blending Japanese anime classics with traditional music, live in Chennai.",
+      "Minichestra Beyond Borders presents a Japan anime concert with live orchestral performances. Sing along to anime classics and enjoy a magical cultural evening.",
     siteLink:
       "https://www.district.in/events/minichestra-beyond-borders-japan-anime-classic-concert-in-chennai--sep21-2025-buy-tickets",
     EventsCalendarTitle: "Minichestra Beyond Borders",
@@ -3799,10 +3799,10 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     id: 156,
     RegisterLink: "",
 
-    metaTitleEvent: "Kalaki - A Theatre Play Live Performance - Super Chennai",
+    metaTitleEvent: "Kalaki | Live Acting & Theatre Performance – Super Chennai",
     conicallinkEvent: "/eventsdetails/156",
     metaDescriptionEvent:
-      "Experience Kalakki, a heartfelt and fun theatrical play with genuine emotions and unforgettable stories, live in Chennai.",
+      "Watch Kalakki, a live acting and theatre performance. Enjoy comedy, drama, and engaging stories that create unforgettable memories for everyone in the audience.",
     siteLink:
       "https://www.district.in/events/kalakki-stage-play-live-performance-sep20-2025-buy-tickets",
     EventsCalendarTitle: "Kalaki - A Theatre Play",

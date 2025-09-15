@@ -3143,10 +3143,9 @@ Rest your body for a weekend and relax your mind with us.
     hours: "1 hour 30 minutes",
     ageLimit: "Age Limit - 16yrs +",
     rleigion: "",
-    aboutFull: `Max Fashion India is dropping its first-ever rap beast — Max Urban UN-MUTE. Three cities. Three homegrown rap kings — Baby Jean (Kochi), Kayden Sharma (Hyderabad), and Paal Dabba (Chennai) — coming together for a one-of-a-kind south tour like never before.
-    This is where hip-hop meets raw energy, neon vibes, and the Gen Z beat that refuses to stay quiet. Expect fiery bars, unfiltered flow, and a crowd that’s ready to scream the loudest “How New Is Your New?”
-    If you breathe street culture, live for live music, and want to witness the South’s rap scene explode, this is the ticket you don’t sleep on.
-    
+    aboutFull: `
+
+    Abishek presents his brand-new special — Abishek Wants to Enjoy Life! In a world full of negativity and stress, people have forgotten how to truly enjoy life. Abishek is here to bring laughter, positivity, and hilarious stories from his own experiences. With music, movement, and plenty of jokes, this special promises a unique and unforgettable experience for everyone. Grab your tickets now for a night of uplifting humor — his special is going to be a one-of-a-kind experience for the audience.
     `,
   },
   {
@@ -3200,29 +3199,721 @@ Rest your body for a weekend and relax your mind with us.
     rleigion: "",
     aboutFull: `On the streets, Chennai stands with pride as part of the planet’s largest coastal cleanup movement. This is not just about removing waste—it’s about protecting our oceans, reviving our shores, and shaping a healthier tomorrow. Let’s work side by side to make our beaches shining, sustainable, and filled with happiness, tunes, and laughter. Every hand that joins adds strength, and every step you take creates ripples of change that inspire thousands more. From 14,000 participants in 2023 to 24,000 in 2024, the movement is only getting bigger. In 2025, let’s cross 30,000 changemakers and make Chennai’s coastline shine brighter than ever before.`,
   },
-  // {
-  //   id: 141,
-  //   RegisterLink:"https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/formResponse",
-  //   metaTitleEvent: "Testing",
-  //   conicallinkEvent: "/eventsdetails/141",
-  //   metaDescriptionEvent:
-  //     "Be part of Chennai’s coastal cleanup! Protect oceans, revive beaches, remove waste, and help create a cleaner, greener, healthier city for all.",
-  //   siteLink:
-  //     "https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/formResponse",
-  //   EventsCalendarTitle: "Testing",
-  //   EventsCalendarContent: "Testing",
-  //   EventsCalendarMonth: "20 Sep 2025",
-  //   EventsCalendarTime: "",
-  //   EventsCalendarCategory: "Coastal CleanUp",
-  //   image: "/images/HomePage-Images/Events/Newevents/261.jpg",
-  //   link: "/events",
-  //   location: "Chennai",
-  //   language: "",
-  //   hours: "",
-  //   ageLimit: "",
-  //   rleigion: "",
-  //   aboutFull: `On the streets, Chennai stands with pride as part of the planet’s largest coastal cleanup movement. This is not just about removing waste—it’s about protecting our oceans, reviving our shores, and shaping a healthier tomorrow. Let’s work side by side to make our beaches shining, sustainable, and filled with happiness, tunes, and laughter. Every hand that joins adds strength, and every step you take creates ripples of change that inspire thousands more. From 14,000 participants in 2023 to 24,000 in 2024, the movement is only getting bigger. In 2025, let’s cross 30,000 changemakers and make Chennai’s coastline shine brighter than ever before.`,
-  // },
+
+  {
+    id: 141,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Kalai Live | Paradox – Magic & Illusion Show - Super Chennai",
+    conicallinkEvent: "/eventsdetails/141",
+    metaDescriptionEvent:
+      "Kalai Live Paradox brings a magic show filled with illusions, comedy, and surprises. A standout event in Chennai that leaves audiences amazed and entertained.",
+    siteLink:
+      "https://in.bookmyshow.com/events/paradox-by-magician-kalai/ET00439561",
+    EventsCalendarTitle: "Paradox By Magician Kalai ",
+    EventsCalendarContent: "Paradox – A magic & mind show",
+    EventsCalendarMonth: "27 Sep 2025",
+    EventsCalendarTime: "6:17 PM",
+    EventsCalendarCategory: "Coastal CleanUp",
+    image: "/images/HomePage-Images/Events/Newevents/265.jpg",
+    link: "/events",
+    location: "Trinity Studio: Kodambakkam ",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Think you’ve seen it all in magic? Paradox will prove you wrong. It’s not the usual trick act — it’s a fast-paced, funny, and interactive mix of illusion, humor, stories, and thought-provoking twists that make you question what’s real.
+    </p>
+        <p>
+    What if tomorrow could be revealed today? Kalai takes you on a rollercoaster through shifting realities, keeping you entertained and astonished. Stay alert — you might even land on stage, caught in the middle of impossible moments unfolding right before your eyes.
+    </p>
+            <p>
+    This isn’t just entertainment — it’s an unforgettable ride you’ll carry with you long after the final bow. You’ll laugh, gasp, and leave wondering if reality is as steady as it seems.
+    </p>
+            <div>
+Who is Kalai?
+    </div>
+                <p>
+Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 countries. He has performed for stars like Dhoni, Dulquer Salmaan, Keerthy Suresh, Nayanthara, and Grandmaster Anand, to name a few. From 2014–2022, he was a headline act on the world’s largest cruise line in the USA. Now, he returns home with Paradox — a show that blends astonishment, laughter, and wonder.
+    </p>
+    `,
+  },
+
+  {
+    id: 142,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Arey Kahan – Stand-up Comedy Special by Sundeep Sharma - Super Chennai",
+    conicallinkEvent: "/eventsdetails/142",
+    metaDescriptionEvent:
+      "Sundeep Sharma’s ‘Arey Kahan’ comedy special brings hilarious stories about life, fitness, dogs, Delhi fights, and India’s class divide — all in his signature Bareilly style.",
+    siteLink: "https://in.bookmyshow.com/events/sundeep-sharma-live/ET00379144",
+    EventsCalendarTitle: "Arey Kahan – Stand-up Comedy Special",
+    EventsCalendarContent: "Sundeep Sharma Live in Chennai",
+    EventsCalendarMonth: "27 Sep 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Stand-up Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/269.jpg",
+    link: "/events",
+    location: "Medai - The Stage, Alwarpet: Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Sundeep Sharma brings his all-new comedy special <strong>Arey Kahan</strong>, where he hilariously shares his journey from fat to fit, his struggles with house helps, and the ups and downs of single life with his two dogs, Alpha and Beta.
+    </p>
+    <p>
+    From tales of Delhi street fights to spot-on mimicry, Sundeep delivers laughter with a unique Bareilly boy charm. Get ready for his witty take on life, relationships, and India’s social and class divide — all told with a true Uttar Pradesh flavor.
+    </p>
+  `,
+  },
+  {
+    id: 143,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Bottle Painting Activity | Sip & Paint at Hibiscus Café - Super Chennai",
+    conicallinkEvent: "/eventsdetails/143",
+    metaDescriptionEvent:
+      "Relax, sip, and get creative at Hibiscus Café! Join this bottle painting activity — perfect for friends, dates, or solo fun. All materials provided.",
+    siteLink:
+      "https://in.bookmyshow.com/events/bottle-painting-activity/ET00454378",
+    EventsCalendarTitle: "Bottle Painting Activity",
+    EventsCalendarContent: "Sip, paint, and create at Hibiscus Café!",
+    EventsCalendarMonth: "27 Sep 2025",
+    EventsCalendarTime: "4:00 PM",
+    EventsCalendarCategory: "Art & DIY",
+    image: "/images/HomePage-Images/Events/Newevents/270.jpg",
+    link: "/events",
+    location: "Hibiscus Cafe: Chennai",
+    language: "",
+    hours: "2 Hours",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Join us for a relaxing and creative experience at the charming <strong>Hibiscus Café</strong>! Unwind with a brush in one hand and your favorite drink in the other as you turn empty bottles into colorful works of art.
+    </p>
+    <p>
+    Whether you’re a beginner or a seasoned artist, this session is all about fun, expression, and good vibes.
+    </p>
+    <div><strong>What’s Included:</strong></div>
+    <ul>
+      <li>All painting supplies and recycled glass bottles</li>
+      <li>Your beautifully painted bottle to take home!</li>
+    </ul>
+    <p>
+    Perfect for friends, date night, or solo unwinding — come sip, paint, and let your creativity bloom at Hibiscus Café.
+    </p>
+  `,
+  },
+  {
+    id: 144,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Bread, Pizza & Doughnuts Workshop | Learn to Bake - Super Chennai",
+    conicallinkEvent: "/eventsdetails/144",
+    metaDescriptionEvent:
+      "Join this hands-on baking workshop in Chennai! Learn to make breads, pizzas, and doughnuts with easy recipes and personal guidance. Perfect for beginners and baking lovers.",
+    siteLink:
+      "https://in.bookmyshow.com/events/bread-pizza-doughnuts-apr-22/ET00325866",
+    EventsCalendarTitle: "Bread, Pizza & Doughnuts",
+    EventsCalendarContent:
+      "Baking workshop – breads, pizzas, and sweet treats!",
+    EventsCalendarMonth: "27 Sep 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Cooking & Baking",
+    image: "/images/HomePage-Images/Events/Newevents/280.jpg",
+    link: "/events",
+    location: "Reema's Swad Cooking Classes: Chennai",
+    language: "English",
+    hours: "4 Hours",
+    ageLimit: "16yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Discover the art of baking with hands-on lessons in bread and pizza making. From soft sandwich bread, pav buns, and focaccia to pizza bases, sauces, bubble pizzas, and cheesy delights, you’ll learn recipes that are both fun and practical for everyday cooking.
+    </p>
+    <p>
+    The workshop also covers crowd favorites like garlic bread, crown bread, Nutella bread, and a variety of doughnuts — cinnamon, chocolate, sugar, and the indulgent bombolini. Each recipe is crafted to be simple, flavorful, and enjoyable for bakers of all levels.
+    </p>
+    <p>
+    With personal guidance, printed notes, and all materials provided, you’ll have everything you need to master these bakes. Classes are offered offline (exclusively for women and girls) as well as online, ensuring a convenient and interactive experience for everyone.
+    </p>
+  `,
+  },
+  {
+    id: 145,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Dysfunctional by Mohd Suhel | Stand-up Comedy Show - Super Chennai",
+    conicallinkEvent: "/eventsdetails/145",
+    metaDescriptionEvent:
+      "From ISRO interviews to quitting at 21, Mohd Suhel’s stand-up show ‘Dysfunctional’ hilariously breaks down the chaos of modern work life. A must-watch comedy in Chennai!",
+    siteLink: "https://in.bookmyshow.com/events/mohd-suhel-live/ET00408882",
+    EventsCalendarTitle: "Dysfunctional by Mohd Suhel",
+    EventsCalendarContent:
+      "Corporate chaos and comedy collide — live with Mohd Suhel!",
+    EventsCalendarMonth: "28 Sep 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Stand-up Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/264.jpg",
+    link: "/events",
+    location: "Trinity Studio: Kodambakkam",
+    language: "",
+    hours: "1hr 30 Minutes",
+    ageLimit: "18yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    From fresher to fired (or even retired), this show is the ultimate survival guide to the job market — told by someone who’s never really been in corporate life.
+    </p>
+    <p>
+    Join <strong>Mohd Suhel</strong> as he shares his laugh-out-loud corporate misadventures, the chaos of landing at ISRO, and his “retirement” from the corporate grind at just 21.
+    </p>
+    <p>
+    If you’ve ever worked, wanted to quit, or simply enjoy laughing at workplace struggles, this show is for you. Don’t miss it — grab your tickets now!
+    </p>
+  `,
+  },
+  {
+    id: 146,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "South Indian Cuisine Workshop | Traditional Cooking Class - Super Chennai",
+    conicallinkEvent: "/eventsdetails/146",
+    metaDescriptionEvent:
+      "Master the flavors of South India! Join this hands-on vegetarian cooking workshop and learn classic dishes like sambar, rasam, poriyal, and more. Perfect for all skill levels.",
+    siteLink:
+      "https://in.bookmyshow.com/events/south-indian-cuisine-workshop-nov-21/ET00317177",
+    EventsCalendarTitle: "South Indian Cuisine Workshop",
+    EventsCalendarContent:
+      "Learn to cook authentic South Indian vegetarian meals!",
+    EventsCalendarMonth: "28 Sep 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Cooking & Baking",
+    image: "/images/HomePage-Images/Events/Newevents/263.jpg",
+    link: "/events",
+    location: "Reema's Swad Cooking Classes: Chennai",
+    language: "English",
+    hours: "4 Hrs",
+    ageLimit: "16yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Learn to cook delicious South Indian vegetarian dishes in this hands-on class!
+    </p>
+    <div><strong>Menu includes:</strong></div>
+    <ul>
+      <li>Rice, Sambar, Tomato Rasam</li>
+      <li>Kara Kulambu, Coconut Kulambu</li>
+      <li>Beans/Carrot Poriyal, Cabbage Poriyal, Potato Fry, Ladies Finger Poriyal</li>
+      <li>Chow Chow Kootu, Pumpkin Kootu</li>
+      <li>Payasam & Rava Kesari</li>
+    </ul>
+    <p>
+    Perfect for beginners and food lovers who want to master traditional South Indian flavors.
+    </p>
+  `,
+  },
+  {
+    id: 147,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Young Artists Championship 2025 | Drawing Competition for Kids - Super Chennai",
+    conicallinkEvent: "/eventsdetails/147",
+    metaDescriptionEvent:
+      "Join the Young Artists Championship 2025 – a creative drawing competition for kids from Pre-KG to 12th Std. Unleash imagination, learn, and win!",
+    siteLink: "https://in.bookmyshow.com/events/drawing-competition/ET00461829",
+    EventsCalendarTitle: "Drawing Competition",
+    EventsCalendarContent:
+      "Young Artists Championship 2025 – A celebration of creativity!",
+    EventsCalendarMonth: "28 Sep 2025",
+    EventsCalendarTime: "10:00 AM",
+    EventsCalendarCategory: "Kids & Family",
+    image: "/images/HomePage-Images/Events/Newevents/266.jpg",
+    link: "/events",
+    location: "Hxtron School Of Digital Technologies: Chennai",
+    language: "English, Tamil",
+    hours: "1 Hour",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Get ready for an exciting celebration of young talent at the <strong>Young Artists Championship 2025</strong>! This creative platform invites kids from Pre-KG to 12th Std to express their imagination through art and themes that inspire learning, fun, and awareness.
+    </p>
+    <p><strong>Unleash your creativity and showcase your talent in categories like:</strong></p>
+    <ul>
+      <li>Pre-KG – UKG → Coloring Fun</li>
+      <li>Class 1–2 → My Dream House</li>
+      <li>Class 3–4 → Save Nature</li>
+      <li>Class 5–6 → Festivals of India</li>
+      <li>Class 7–8 → My India, My Pride</li>
+      <li>Class 9–10 → Digital India / Future World</li>
+      <li>Class 11–12 → Global Warming & Solutions</li>
+    </ul>
+    <p>👉 Limited seats, register now!</p>
+  `,
+  },
+
+  {
+    id: 148,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Bangtan Beats: BTS Tribute | ARMY Night Out - Super Chennai",
+    conicallinkEvent: "/eventsdetails/148",
+    metaDescriptionEvent:
+      "Celebrate BTS with a tribute night full of music, dance, and ARMY vibes! Join the party, sing along to your favorite BTS hits, and enjoy the NamKook birthday bash in Chennai.",
+    siteLink:
+      "http://in.bookmyshow.com/events/bangtan-beats-bts-tribute/ET00460265",
+    EventsCalendarTitle: "Bangtan Beats: BTS Tribute",
+    EventsCalendarContent: "A BTS-themed celebration for the ARMY in Chennai!",
+    EventsCalendarMonth: "28 Sep 2025",
+    EventsCalendarTime: "2:30 PM",
+    EventsCalendarCategory: "Music & Fan Events",
+    image: "/images/HomePage-Images/Events/Newevents/267.jpg",
+    link: "/events",
+    location: "Third Wave Coffee, Chennai",
+    language: "English, Korean",
+    hours: "5 Hours",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    <strong>ARMY</strong>, it’s time to light up <strong>Third Wave Coffee</strong> like our own mini concert! From <em>No More Dream</em> to <em>Yet to Come</em>, the night is packed with music, energy, and the spirit of BTS. 💜🔥
+    </p>
+    <p>
+    Shout along to <em>Fire</em>, sway to <em>Spring Day</em>, vibe with <em>Dynamite</em>, and go wild with <em>Mic Drop</em>. Relive iconic BTS eras through songs, stages, and ARMY-powered celebrations — plus join the <strong>NamKook birthday bash</strong> with love and excitement in true ARMY style. 🎂💫
+    </p>
+    <p>
+    Come dressed in BTS-inspired looks — merch, concert fits, or bias-style outfits — and create memories you’ll treasure forever. Bring your ARMY crew and let’s make this a night to remember. 💜✨
+    </p>
+  `,
+  },
+
+  {
+    id: 149,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Eras Tour Tribute: Shake It Off September | Swiftie Night - Super Chennai",
+    conicallinkEvent: "/eventsdetails/149",
+    metaDescriptionEvent:
+      "Sing, dance, and relive every Taylor Swift era at Shake It Off September — a Swiftie celebration like no other in Chennai. Dress up, vibe, and make it a night to remember!",
+    siteLink:
+      "https://in.bookmyshow.com/events/eras-tour-tribute-shake-it-off-september/ET00460184",
+    EventsCalendarTitle: "Eras Tour Tribute: Shake It Off September",
+    EventsCalendarContent: "A Taylor Swift fan night for all eras 💜",
+    EventsCalendarMonth: "27 Sep 2025",
+    EventsCalendarTime: "2:30 PM",
+    EventsCalendarCategory: "Music & Fan Events",
+    image: "/images/HomePage-Images/Events/Newevents/268.jpg",
+    link: "/events",
+    location: "Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    <strong>Shake It Off September – A Swiftie Night!</strong> ✨🎶
+    </p>
+    <p>
+    Swifties, are you ready to sing, scream, and dance through every Taylor era? From debut to <em>The Tortured Poets Department</em>, this night is all about love, heartbreak, joy, and the magic of Taylor’s music. 💜
+    </p>
+    <p>
+    Get set to belt out <em>Love Story</em>, cry through <em>Enchanted</em>, scream <em>All Too Well (10 Min)</em>, and lose yourself in <em>Shake It Off</em> — all in one unforgettable celebration. Relive Taylor’s journey, era by era, surrounded by fans who feel it just as deeply as you do. 🎤💫
+    </p>
+    <p>
+    Dress in your favorite era outfit, strike a pose, and capture every iconic moment with your Swiftie squad. No age limit — from fearless teens to folklore adults to TTPD souls, this night is for everyone who carries Taylor in their heart. 💜✨
+    </p>
+  `,
+  },
+
+  {
+    id: 150,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Tribute Show: The Rajini Experience Magnum Opus | Rajinikanth Homage - Super Chennai",
+    conicallinkEvent: "/eventsdetails/150",
+    metaDescriptionEvent:
+      "Celebrate Superstar Rajinikanth with a spectacular tribute show featuring iconic hits, electrifying performances, and nostalgia at Kreate by Kraft, Chennai.",
+    siteLink:
+      "https://in.bookmyshow.com/events/tribute-show-the-rajini-experience-magnum-opus/ET00462119",
+    EventsCalendarTitle: "Tribute Show: The Rajini Experience Magnum Opus",
+    EventsCalendarContent: "A spectacular homage to the legend Rajinikanth.",
+    EventsCalendarMonth: "28 Sep 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Music & Tribute",
+    image: "/images/HomePage-Images/Events/Newevents/272.jpg",
+    link: "/events",
+    location: "Kreate by Kraft, Chennai",
+    language: "",
+    hours: "2 hours",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    A spectacular Thalaivar homage – celebrate the legend Rajinikanth for only ₹300, with ₹200 redeemable at the venue for food and drinks!
+    </p>
+    <p>
+    Prepare to witness the unstoppable energy of Superstar Rajinikanth like never before. This thrilling journey spans his iconic career – from the punch-filled <em>Baasha</em>, to the stylish aura of <em>Kabali</em>, and the charisma of <em>Sivaji</em>.
+    </p>
+    <p>
+    Every rhythm, every tune, every instant embodies the charisma, style, and larger-than-life presence that only Thalaivar exudes. Experience live, electrifying renditions of his legendary songs and background scores.
+    </p>
+    <p>
+    Relish the ultimate nostalgia of his timeless hits – a whirlwind of applause, cheers, and unforgettable goosebump moments.
+    </p>
+    <p>
+    This is more than music – it’s Thalaivar in his full grandeur, a celebration where style becomes music, and mass transforms into magic.
+    </p>
+  `,
+  },
+
+  {
+    id: 151,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Vismaya '25 | Magic & Philanthropy Evening with Suhani Shah - Super Chennai",
+    conicallinkEvent: "/eventsdetails/151",
+    metaDescriptionEvent:
+      "Join Suhani Shah’s mesmerizing mentalism show while supporting community projects with Rotary Club Chennai Kilpauk. An evening of magic, giving back, and inspiration.",
+    siteLink: "https://in.bookmyshow.com/events/vismaya-25/ET00458264",
+    EventsCalendarTitle: "Vismaya '25",
+    EventsCalendarContent:
+      "A magical and philanthropic evening with mentalist Suhani Shah.",
+    EventsCalendarMonth: "27 Sep 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Magic & Social Cause",
+    image: "/images/HomePage-Images/Events/Newevents/271.jpg",
+    link: "/events",
+    location: "Sir Mutha Venkatasubba Rao Concert Hall: Chennai",
+    language: "English, Hindi",
+    hours: "2 hours",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Experience a remarkable evening of inspiration and entertainment with the celebrated mentalist Suhani Shah, whose mesmerizing acts have enchanted audiences nationwide. By attending, you’ll be contributing to impactful community projects, as your participation supports local healthcare, education, and social welfare programs run by the Rotary Club of Chennai Kilpauk.
+    </p>
+    <p>
+    This is your chance to network with change-makers, enjoy top-notch entertainment, and create a meaningful impact in Chennai. Your presence shows a dedication to social responsibility and helps improve the lives of those in need in our city.
+    </p>
+    <p>
+    Don’t miss this unforgettable experience, blending magic, giving back, and the spirit of philanthropy.
+    </p>
+  `,
+  },
+
+  {
+    id: 152,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Sound uduu | Political Satire Stand-Up by YG Madhuvanthii - Super Chennai",
+    conicallinkEvent: "/eventsdetails/152",
+    metaDescriptionEvent:
+      "YG Madhuvanthii debuts with a political satire stand-up show and special improv tribute to Shri CHO, blending humor and sharp social commentary.",
+    siteLink: "http://in.bookmyshow.com/events/sound-uduu/ET00460767",
+    EventsCalendarTitle: "Sound uduu",
+    EventsCalendarContent:
+      "Political satire and improv comedy by YG Madhuvanthii.",
+    EventsCalendarMonth: "26 Sep 2025",
+    EventsCalendarTime: "7:30 PM",
+    EventsCalendarCategory: "Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/274.jpg",
+    link: "/events",
+    location: "Medai - The Stage, Alwarpet: Chennai",
+    language: "English, Tamil",
+    hours: "1 hour 30 Minutes",
+    ageLimit: "16yrs +",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Sound Uduu
+    </p>
+    <p>
+    YG Madhuvanthii steps onto the stand-up stage for the first time, taking the audience on a fresh journey of political satire through humor.
+    </p>
+    <p>
+    As a special bonus, enjoy the Satire Stand-Up Improv – “MISSING – Sukumari Mattuma??” dedicated to the legendary satire maestro, Shri CHO.
+    </p>
+  `,
+  },
+
+  {
+    id: 153,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Cake Baking & Frosting Workshop | Hands-on Baking Classes - Super Chennai",
+    conicallinkEvent: "/eventsdetails/153",
+    metaDescriptionEvent:
+      "Join a comprehensive baking workshop to master basics, OTG usage, cupcake & cake baking, and frosting techniques. Suitable for aspiring bakers aged 16+.",
+    siteLink:
+      "https://in.bookmyshow.com/events/cake-baking-frosting-jul-22-weekend/ET00332437",
+    EventsCalendarTitle: "Cake Baking & Frosting Workshop",
+    EventsCalendarContent:
+      "Hands-on baking class covering basics, OTG use, and cake decoration.",
+    EventsCalendarMonth: "24 Sep 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Cooking Workshop",
+    image: "/images/HomePage-Images/Events/Newevents/273.jpg",
+    link: "/events",
+    location: "Reema's swad cooking classes: Chennai",
+    language: "",
+    hours: "10 Hours",
+    ageLimit: "16yrs +",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Our workshop is designed to give aspiring bakers complete hands-on learning. Here’s what you’ll master:
+    </p>
+    <h4>Baking Basics</h4>
+    <ul>
+      <li>Understand the science of baking for consistent results.</li>
+      <li>Measure ingredients accurately for perfect bakes every time.</li>
+      <li>Learn the role of baking powder, baking soda, and other essential ingredients.</li>
+      <li>Master preheating, oven placement, and temperature settings.</li>
+    </ul>
+    <h4>Using an OTG</h4>
+    <ul>
+      <li>Learn the fundamentals of operating an OTG.</li>
+      <li>Master preheating techniques for optimal results.</li>
+      <li>Understand how to select baking trays, molds, and liners.</li>
+      <li>Learn the correct temperature and time settings for different recipes.</li>
+    </ul>
+    <h4>Cupcake and Cake Baking</h4>
+    <ul>
+      <li>Perfect techniques to bake moist and fluffy cakes and cupcakes.</li>
+      <li>Explore a variety of classic and exotic flavors, including: Vanilla, Pineapple, Strawberry, Butterscotch, Chocolate, Tutti Frutti, Orange, Litchi.</li>
+      <li>Learn frosting and finishing techniques to create beautiful presentations.</li>
+    </ul>
+    <p>
+    By the end of the workshop, you will have the skills and confidence to bake and decorate cakes for any occasion.
+    </p>
+  `,
+  },
+
+  {
+    id: 154,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Rock on Harris 3.0 Live Concert | Harris Jayaraj in Chennai - Super Chennai",
+    conicallinkEvent: "/eventsdetails/154",
+    metaDescriptionEvent:
+      "Experience Harris Jayaraj’s iconic live concert, Rock On Harris 3.0, with unforgettable music, spectacular visuals, and top vocalists in Chennai.",
+    siteLink:
+      "https://www.district.in/events/rock-on-harris-3-0-chennai-october-2025-buy-tickets",
+    EventsCalendarTitle: "Rock on Harris 3.0 Live in concert",
+    EventsCalendarContent:
+      "Harris Jayaraj returns to Chennai with a spectacular live concert featuring hit songs, top vocalists, and stunning stage production.",
+    EventsCalendarMonth: "4 Oct 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Music Concert",
+    image: "/images/HomePage-Images/Events/Newevents/278.jpg",
+    link: "/events",
+    location: "YMCA Ground, Nandanam, Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Chennai, are you ready for an unforgettable night? The wait ends here — Harris Jayaraj, the genius behind some of Tamil cinema’s most iconic tunes, returns with Rock On Harris 3.0, his most spectacular live concert yet!
+    </p>
+    <p>
+    After a year-long hiatus, Harris is back in his hometown with a brand-new setlist, unique arrangements, and your favorite singers performing hit after hit that shaped a generation. From soulful ballads to high-voltage anthems, this is not just a concert — it’s a celebration of music, memories, and pure magic.
+    </p>
+    <p>
+    Produced by Noise and Grains, the creative force behind India’s most epic live shows, Rock On Harris 3.0 promises a once-in-a-lifetime experience with stunning stagecraft and visuals.
+    </p>
+    <p>
+    Expect:
+    </p>
+    <ul>
+      <li>A lineup of top-tier vocalists</li>
+      <li>Spectacular lights and stage production</li>
+      <li>Thousands of fans coming together for one night to remember</li>
+      <li>The legendary presence of Harris Jayaraj, live, loud, and unforgettable</li>
+    </ul>
+    <p>
+    This isn’t just music. It’s a movement. A memory. A musical revolution.
+    </p>
+    <p>
+    Rock On Harris 3.0 – Be there live, or hear about it later.
+    </p>
+  `,
+  },
+
+  {
+    id: 155,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Minichestra Beyond Borders | Japan Anime Classic Concert in Chennai - Super Chennai",
+    conicallinkEvent: "/eventsdetails/155",
+    metaDescriptionEvent:
+      "Experience Minichestra Beyond Borders, a unique concert blending Japanese anime classics with traditional music, live in Chennai.",
+    siteLink:
+      "https://www.district.in/events/minichestra-beyond-borders-japan-anime-classic-concert-in-chennai--sep21-2025-buy-tickets",
+    EventsCalendarTitle: "Minichestra Beyond Borders",
+    EventsCalendarContent:
+      "Minichestra Beyond Borders – Japan ANIME Classic Concert in Chennai brings a fusion of anime classics and traditional Japanese music.",
+    EventsCalendarMonth: "21 Sep 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Music Concert",
+    image: "/images/HomePage-Images/Events/Newevents/276.jpg",
+    link: "/events",
+    location: "Sir Mutha Venkatasubba Rao Concert Hall, Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Minichestra Beyond Borders – Japan ANIME Classic Concert in Chennai is here! The renowned Japanese orchestra Minichestra brings a special evening of music to Chennai, blending anime classics with traditional Japanese compositions for a truly unique experience.
+    </p>
+    <p>
+    Celebrate the beauty of Tamil Nadu and the charm of Japan through this lively performance, sing along to your favorite tunes, and create memories that unite our two cultures. Don’t miss this unforgettable musical journey!
+    </p>
+  `,
+  },
+
+  {
+    id: 156,
+    RegisterLink: "",
+
+    metaTitleEvent: "Kalaki - A Theatre Play Live Performance - Super Chennai",
+    conicallinkEvent: "/eventsdetails/156",
+    metaDescriptionEvent:
+      "Experience Kalakki, a heartfelt and fun theatrical play with genuine emotions and unforgettable stories, live in Chennai.",
+    siteLink:
+      "https://www.district.in/events/kalakki-stage-play-live-performance-sep20-2025-buy-tickets",
+    EventsCalendarTitle: "Kalaki - A Theatre Play",
+    EventsCalendarContent:
+      "Kalaki is a theatrical experience full of fun, heartfelt moments, mischief, and laughter.",
+    EventsCalendarMonth: "20 Sep 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Theatre",
+    image: "/images/HomePage-Images/Events/Newevents/277.jpg",
+    link: "/events",
+    location: "IDAM - Kodambakkam",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+      Laugh out loud, feel every emotion, and watch stories unfold right in front of you!
+    </p>
+    <p>
+      Kalaki is a theatrical experience full of fun, heartfelt moments, mischief, and laughter that will stay with you long after the curtain falls.
+    </p>
+    <p>
+      Remember the thrill of watching actors perform live, just like the good old days in town theaters? We’re bringing that magic back with genuine emotions, unexpected twists, and endless fun.
+    </p>
+    <p>
+      Bring your friends and family, create unforgettable memories, and take home stories you’ll cherish for years.
+    </p>
+  `,
+  },
+
+  {
+    id: 157,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Namma Chennai - Juniorthon 3rd Edition | Kids Sports Fiesta - Super Chennai",
+    conicallinkEvent: "/eventsdetails/157",
+    metaDescriptionEvent:
+      "Join the ultimate kids sports fiesta at Namma Chennai Juniorthon 3rd Edition with fun races, prizes, and excitement for young athletes.",
+    siteLink:
+      "https://www.district.in/events/namma-chennai-juniorthon-3rd-edition-sep21-2025-buy-tickets",
+    EventsCalendarTitle: "Namma Chennai - Juniorthon 3rd Edition",
+    EventsCalendarContent:
+      "Fun & Fitness Sports Day 2025 for kids of all ages with races, prizes, and more.",
+    EventsCalendarMonth: "21 Sep 2025",
+    EventsCalendarTime: "8:00 AM",
+    EventsCalendarCategory: "Kids Sports",
+    image: "/images/HomePage-Images/Events/Newevents/275.jpg",
+    link: "/events",
+    location: "Nehru Park Sports Development Authority of Tamil Nadu, Chennai",
+    language: "",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>Get Ready for the Ultimate Kids Sports Fiesta!</p>
+    <p>Bring out the champion in your child at our Fun & Fitness Sports Day 2025 — a day packed with energy, excitement, and fun! From first-time racers to 400-meter participants, there’s something for every young athlete.</p>
+    <p><strong>Race Categories:</strong></p>
+    <ul>
+      <li>Pre-KG – 30 Meters</li>
+      <li>LKG & UKG – 30 & 50 Meters</li>
+      <li>1st Std – 75 Meters</li>
+      <li>2nd Std – 100 Meters</li>
+      <li>3rd & 4th Std – 200 Meters</li>
+      <li>5th & 6th Std – 400 Meters</li>
+    </ul>
+    <p><strong>All Participants Receive:</strong></p>
+    <ul>
+      <li>T-Shirt</li>
+      <li>Medal</li>
+      <li>Certificate</li>
+      <li>Refreshments</li>
+    </ul>
+    <p><strong>Exciting Prizes for Winners:</strong></p>
+    <p>The top 3 in each category will win trophies and Decathlon gift vouchers.</p>
+    <p>Don’t miss this opportunity to cheer, celebrate, and encourage your child. Let them run, play, and shine on the track!</p>
+  `,
+  },
+
+  {
+    id: 158,
+    RegisterLink: "",
+
+    metaTitleEvent:
+      "Dandiya Navjalsa 2025 | Traditional Garba & Dandiya Festival - Super Chennai",
+    conicallinkEvent: "/eventsdetails/158",
+    metaDescriptionEvent:
+      "Celebrate Navratri with Dandiya and Garba dances at Dandiya Navjalsa 2025 in Chennai, a joyful event full of tradition and fun for all ages.",
+    siteLink:
+      "https://www.district.in/events/dandiya-navjalsa-2025-sep20-2025-buy-tickets",
+    EventsCalendarTitle: "Dandiya Navjalsa 2025",
+    EventsCalendarContent:
+      "Traditional Garba and Dandiya folk dances celebrating Navratri with music and dance.",
+    EventsCalendarMonth: "20 Sep 2025",
+    EventsCalendarTime: "20 Sep 2025 - 9PM , 21 Sep 2025 - 5PM",
+    EventsCalendarCategory: "Cultural Festival",
+    image: "/images/HomePage-Images/Events/Newevents/279.jpg",
+    link: "/events",
+    location: "Dharmaprakash Kalyana Mandapam, Chennai",
+    language: "",
+    hours: "8 Hours",
+    ageLimit: "",
+    rleigion: "Hindu",
+    aboutFull: `
+    <p>Dandiya and Garba are traditional folk dances from Gujarat, India, celebrated with energy and joy during Navratri.</p>
+    <p>Garba is a graceful circular dance around a lamp or image of Goddess Durga, symbolizing life and creation, and is both a spiritual offering and festive gathering.</p>
+    <p>Dandiya, or Dandiya Raas, is a lively stick dance representing the mock battle between Goddess Durga and demon Mahishasura.</p>
+    <p>Tickets are required for children aged 6 and above. The event will be conducted in Hindi and Gujarati and is open to all ages, making it a fun and memorable family experience.</p>
+  `,
+  },
 ];
 
 export const panesContent = [

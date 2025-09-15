@@ -42,6 +42,12 @@
   font-weight: bold !important;
 }
 
+.anchortag{
+  text-decoration: 1px underline;
+  color: #0000EE;
+  text-underline-offset: 2px;
+}
+
 @media (max-width: 700px) {
   .nammaStorieslink {
     bottom: 200px !important;

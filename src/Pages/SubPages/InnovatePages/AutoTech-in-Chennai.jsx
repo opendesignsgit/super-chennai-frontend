@@ -44,6 +44,8 @@ export default function AutoTechinChennai() {
                 "Strong talent base in Mechatronics, AI, IoT, and robotics",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why Chennai Leads in AutoTech.svg",
+
+              altText: "automobile in chennai",
             },
           ],
         },
@@ -198,6 +200,7 @@ export default function AutoTechinChennai() {
               note2:
                 "From making cars to making them smart — Chennai is the garage of India’s automotive future.",
               imgs: "/images/Innovate-Images/SubPages/Icons/The Future-What's Next for Chennai AutoTech.svg",
+              altText: "",
             },
           ],
         },
@@ -231,6 +234,7 @@ export default function AutoTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Business-Permits.svg",
+              altText: "",
             },
             {
               title: "1996–2005: Global Players Enter the Scene",
@@ -248,6 +252,7 @@ export default function AutoTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/1996–2005-Global Players Enter the Scene.svg",
+              altText: "global manufacturing",
             },
             {
               title: "2006–2012: Start of Smart Manufacturing & Auto Software",
@@ -265,6 +270,7 @@ export default function AutoTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2006–2012-Start of Smart Manufacturing & Auto Software.svg",
+              altText: "manufacturing chennai",
             },
             {
               title: "2013–2018: Automation, AI & Telematics Expand",
@@ -282,6 +288,7 @@ export default function AutoTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2013–2018-Automation, AI & Telematics Expand.svg",
+              altText: "telematics chennai",
             },
             {
               title: "2019–2021: Electric Vehicle & Battery Boom Begins",
@@ -299,6 +306,7 @@ export default function AutoTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2019–2021-Electric Vehicle & Battery Boom Begins.svg",
+              altText: "electric vehicles",
             },
             {
               title: "2022–2024: Chennai Emerges as AutoTech R&D Capital",
@@ -317,6 +325,7 @@ export default function AutoTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2022–2024-Chennai Emerges as AutoTech R&D Capital.svg",
+              altText: "automobile chennai",
             },
             {
               title:
@@ -336,6 +345,7 @@ export default function AutoTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2025 & Beyond-Chennai Leads India’s AutoTech Renaissance.svg",
+              altText: "saas chennai",
             },
           ],
         },
@@ -373,7 +383,7 @@ export default function AutoTechinChennai() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/Automotive-Tech-banner.jpg"
-            alt=""
+            alt="auto tech chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -438,7 +448,7 @@ export default function AutoTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -631,7 +641,7 @@ export default function AutoTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -691,7 +701,7 @@ export default function AutoTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

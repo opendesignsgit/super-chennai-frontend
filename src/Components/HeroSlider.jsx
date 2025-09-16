@@ -17,7 +17,7 @@ const slides = [
     link: "/reimagine-chennai-AI-art-challenge",
     image: "/images/HomePage-Images/ai-art-challenge-banner.jpg",
     image1: "/images/HomePage-Images/ai-art-challenge-mobile-banner.jpg",
-    title: "First slide label",
+    title: "AI art challenge",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
   {
@@ -25,21 +25,21 @@ const slides = [
     link: "/super-chennai-icon-of-aug-2025",
     image: "/images/HomePage-Images/icon-of-the-month-banner.jpg",
     image1: "/images/HomePage-Images/icon-of-the-month-mobile-banner.jpg",
-    title: "First slide label",
+    title: "Icon of the month in chennai",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
   {
     image: "/images/HomePage-Images/banner-0.jpg",
     link: "#",
     image1: "/images/HomePage-Images/mobile-banner-1.jpg",
-    title: "First slide label",
+    title: "chennai's surfing",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
   {
     image: "/images/HomePage-Images/banner-1.jpg",
     link: "#",
     image1: "/images/HomePage-Images/mobile-banner-2.jpg",
-    title: "First slide label",
+    title: "restaurants in chennai",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
 
@@ -47,14 +47,14 @@ const slides = [
     image: "/images/HomePage-Images/banner-2.jpg",
     link: "#",
     image1: "/images/HomePage-Images/mobile-banner-3.jpg",
-    title: "Second slide label",
+    title: "Chennai Beach",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     image: "/images/HomePage-Images/banner-3.jpg",
     link: "#",
     image1: "/images/HomePage-Images/mobile-banner-4.jpg",
-    title: "Second slide label",
+    title: "innovation in chennai",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
@@ -62,7 +62,7 @@ const slides = [
     link: "#",
     image: "/images/HomePage-Images/banner-4.jpg",
     image1: "/images/HomePage-Images/mobile-banner-5.jpg",
-    title: "First slide label",
+    title: "multi cuisine restaurant chennai",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
   {
@@ -70,7 +70,7 @@ const slides = [
     link: "#",
     image: "/images/HomePage-Images/banner-5.jpg",
     image1: "/images/HomePage-Images/mobile-banner-5.jpg",
-    title: "First slide label",
+    title: "Chennai Work",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
 ];

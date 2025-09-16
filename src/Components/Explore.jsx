@@ -47,6 +47,7 @@ export default function Explore() {
       place: "in Chennai",
       image: "/images/HomePage-Images/interior-restaurant.png",
       link: "/visit/restaurants-in-chennai",
+      altText: "Chennai restaurants",
     },
     {
       title: "Nightlife",
@@ -54,6 +55,7 @@ export default function Explore() {
       image:
         "/images/HomePage-Images/crowd-people-concert-with-their-hands-air.png",
       link: "/ChennaiNightLife",
+      altText: "Concert in chennai",
     },
     {
       title: "Sports",
@@ -61,6 +63,7 @@ export default function Explore() {
       image:
         "/images/HomePage-Images/low-section-man-holding-soccer-ball-beach.png",
       link: "/chennaisports",
+      altText: "Things to do in chennai",
     },
     {
       title: "Events",
@@ -68,24 +71,28 @@ export default function Explore() {
       image:
         "/images/HomePage-Images/guitarist-playing-electrical-guitar-rock-concert.png",
       link: "/events",
+      altText: "music concert in chennai",
     },
     {
       title: "Health Care",
       place: "in Chennai",
       image: "/images/HomePage-Images/health-care.png",
       link: "/live/healthcare-in-chennai",
+      altText: "chennai health care",
     },
     {
       title: "Shopping",
       place: "in Chennai",
       image: "/images/HomePage-Images/front-view-cyber-monday-composition.png",
       link: "/visit/shopping-areas-in-chennai",
+      altText: "shopping malls in chennai city",
     },
     {
       title: "Entertainment",
       place: "in Chennai",
       image: "/images/HomePage-Images/boy-with-vr-glasses-cinema.png",
       link: "/chennaientertainment",
+      altText: "ar vr companies in chennai",
     },
     {
       title: "Networks",
@@ -93,6 +100,7 @@ export default function Explore() {
       image:
         "/images/HomePage-Images/strength-people-hands-success-meeting.png",
       link: "/work/chennai-networks",
+      altText: "hangout spots in chennai",
     },
   ];
 
@@ -137,7 +145,7 @@ export default function Explore() {
                 // </Link>
                 <a href={card.link}>
                   <div className="exploreSectionFlex p-4" key={index}>
-                    <img src={card.image} alt={card.title} />
+                    <img src={card.image} alt={card.altText} />
                     <div>
                       <h3>
                         {card.title} <br />
@@ -170,7 +178,7 @@ export default function Explore() {
                 // </Link>
                 <a href={card.link}>
                   <div className="exploreSectionFlex p-4" key={index}>
-                    <img src={card.image} alt={card.title} />
+                    <img src={card.image} alt={card.altText} />
                     <div>
                       <h3>
                         {card.title} <br />

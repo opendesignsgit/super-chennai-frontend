@@ -61,6 +61,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why Chennai Is Crucial to India’s AgriTech Ecosystem.svg",
+              altText: "agri tech companies in chennai",
             },
           ],
         },
@@ -296,6 +297,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2008 – Early Experiments Begin.svg",
+              altText: "experiments chennai",
             },
             {
               title: "2011 – Mobile Advisory Pilots",
@@ -310,6 +312,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2011 – Mobile Advisory Pilots.svg",
+              altText: "mobile chennai",
             },
             {
               title: "2013 – Rise of Agri-Focused IoT Prototypes",
@@ -321,6 +324,7 @@ export default function AgriTechinChennai() {
                 <>Agri automation discussed at Tech Sparks Chennai events.</>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2013 – Rise of Agri-Focused IoT Prototypes.svg",
+              altText: "iot chennai",
             },
             {
               title: "2015 – First Gen of Agri Startups Launched",
@@ -332,6 +336,7 @@ export default function AgriTechinChennai() {
                 <>Hydroponics concepts showcased at local tech expos.</>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2015 – First Gen of Agri Startups Launched.svg",
+              altText: "agriculture startup",
             },
             {
               title: "2016 – Supply Chain Innovation Starts",
@@ -346,6 +351,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2016 – Supply Chain Innovation Starts.svg",
+              altText: "supply chain innovation",
             },
             {
               title: "2017 – IIT Madras Boosts AgriTech R&D",
@@ -360,6 +366,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2017 – IIT Madras Boosts AgriTech R&D.svg",
+              altText: "agri tech companies in chennai",
             },
             {
               title: "2019 – AI in Agriculture Gains Momentum",
@@ -374,6 +381,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2019 – AI in Agriculture Gains Momentum.svg",
+              altText: "chennai agri tech",
             },
             {
               title: "2020 – COVID Pushes Digital Agriculture",
@@ -388,6 +396,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2020 – COVID Pushes Digital Agriculture.svg",
+              altText: "digital agriculture",
             },
             {
               title: "2021 – Tamil Nadu Smart Agri Mission Launched",
@@ -402,6 +411,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2021 – Tamil Nadu Smart Agri Mission Launched.svg",
+              altText: "smart agri mission",
             },
             {
               title: "2022 – Rise of Farm FinTech",
@@ -416,6 +426,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2022 – Rise of Farm FinTech.svg",
+              altText: "fintech companies chennai",
             },
             {
               title: "2023 – Urban Farming and Hydroponics Scale Up",
@@ -430,6 +441,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2023 – Urban Farming and Hydroponics Scale Up.svg",
+              altText: "urban farming chennai",
             },
             {
               title: "2024 – Precision Farming Reaches Ground Level",
@@ -444,6 +456,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2024 – Precision Farming Reaches Ground Level.svg",
+              altText: "farming chennai",
             },
             {
               title: "2025 – Chennai Declared AgriTech R&D Powerhouse",
@@ -462,6 +475,7 @@ export default function AgriTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2025 – Chennai Declared AgriTech R&D Powerhouse.svg",
+              altText: "chennai agriculture",
             },
             {
               title: "Future Ahead (Post-2025 Vision):",
@@ -472,6 +486,7 @@ export default function AgriTechinChennai() {
                 <>Farm-to-fork blockchain traceability </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Future Ahead (Post-2025 Vision).svg",
+              altText: "ai future",
             },
           ],
         },
@@ -511,7 +526,7 @@ export default function AgriTechinChennai() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/Education-Tech-banner.jpg"
-            alt=""
+            alt="edutech chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -575,7 +590,7 @@ export default function AgriTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -782,7 +797,7 @@ export default function AgriTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

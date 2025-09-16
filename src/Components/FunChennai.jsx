@@ -60,6 +60,7 @@ export default function Funchennai() {
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/adventure.jpg",
       link: "/visit/things-to-do/adventure-places-in-chennai",
+      altText: "adventure places in chennai",
     },
 
     {
@@ -67,12 +68,14 @@ export default function Funchennai() {
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/beachside.jpg",
       link: "/visit/place-to-visit/beaches-in-chennai",
+      altText: "beaches in chennai",
     },
     {
       title: "Bowling Alleys",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/bowling.jpg",
       link: "/visit/things-to-do/bowling-alleys-in-chennai",
+      altText: "bowling in chennai",
     },
 
     {
@@ -80,36 +83,42 @@ export default function Funchennai() {
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/gaming.jpg",
       link: "/visit/things-to-do/arcade-games-in-chennai",
+      altText: "theme parks in chennai",
     },
     {
       title: "Go-Karting",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/go-karting.jpg",
       link: "/visit/things-to-do/go-karting-in-chennai",
+      altText: "go kart in chennai",
     },
     {
       title: "Horror Houses",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/horror.jpg",
       link: "/visit/things-to-do/horror-house-in-chennai",
+      altText: "horror places in chennai",
     },
     {
       title: "Multiplexes",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/multiplexs.jpg",
       link: "/visit/things-to-do/multiplexes-in-chennai",
+      altText: "multiplexs in chennai",
     },
     {
       title: "Nature Walk",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/nature-walk.jpg",
       link: "/NatureWalk",
+      altText: "parks in chennai",
     },
     {
       title: "Trampoline Parks",
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/trampoline.jpg",
       link: "/visit/things-to-do/trampoline-parks-in-chennai",
+      altText: "trampoline games in chennai",
     },
 
     {
@@ -117,6 +126,7 @@ export default function Funchennai() {
       place: "in chennai",
       image: "/images/HomePage-Images/Funchennai/ziplines.jpg",
       link: "/visit/things-to-do/zipline-in-chennai",
+      altText: "zipline in chennai",
     },
   ];
   const images = [
@@ -199,7 +209,7 @@ export default function Funchennai() {
                       window.location.href = card.link; // Navigate after the click logic
                     }}
                   >
-                    <img src={card.image} alt={card.title} draggable={false} />
+                    <img src={card.image} alt={card.altText} draggable={false} />
                     <p className="titleFunChennai">{card.title}</p>
                   </a>
                 </div>
@@ -208,7 +218,7 @@ export default function Funchennai() {
           </div>
 
           <div className="parachuteSection">
-            <img src="/images/HomePage-Images/parachute.png" alt="" />
+            <img src="/images/HomePage-Images/parachute.png" alt="parachute" />
           </div>
         </div>
       </div>

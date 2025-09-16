@@ -94,11 +94,11 @@ const SecondSection = () => {
                   {/* <img
                     className="heartWelcomesvg"
                     src="/images/icons/welcometochennaihomepage.svg"
-                    alt=""
+                    alt="Superchennai"
                   /> */}
                   <motion.img
                     src="/images/icons/welcometochennaihomepage.svg"
-                    alt="heart"
+                    alt="Superchennai"
                     className="heartWelcomesvg"
                     animate={{ scale: [1, 1.2, 1] }} // heartbeat effect
                     transition={{
@@ -125,11 +125,11 @@ const SecondSection = () => {
                   {/* <img
                     className="heartWelcomesvg"
                     src="/images/icons/welcometochennaihomepage.svg"
-                    alt=""
+                    alt="Superchennai"
                   /> */}
                   <motion.img
                     src="/images/icons/welcometochennaihomepage.svg"
-                    alt="heart"
+                    alt="Superchennai"
                     className="heartWelcomesvg"
                     animate={{ scale: [1, 1.2, 1] }} // heartbeat effect
                     transition={{

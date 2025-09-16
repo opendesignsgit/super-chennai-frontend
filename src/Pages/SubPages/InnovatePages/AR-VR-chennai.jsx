@@ -43,60 +43,25 @@ export default function ARVRchennai() {
                   India’s VR market was estimated at USD 1.41 billion in 2024
                   and is expected to skyrocket to USD 29.4 billion by 2034—a
                   CAGR of ~35.5%{" "}
-                  {/* <a
-                    href="https://www.cmrindia.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline"
-                  >
-                    {" "}
-                    6wresearch.com, cmrindia.com, yaksha.io,
-                    expertmarketresearch.com.{" "}
-                  </a> */}
                 </>,
                 <>
                   Another analyst reports a 2024 VR figure of USD 524.7 million
                   with growth to USD 3.51 billion by 2033 (CAGR 23.4%){" "}
-                  {/* <a
-                    href="https://www.imarcgroup.com/india-virtual-reality-market?utm_source=chatgpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline"
-                  >
-                    {" "}
-                    imarcgroup.com.
-                  </a> */}
                 </>,
                 <>
                   The combined India AR/VR market (2025‑2029) is projected to
                   grow robustly, bolstered by government initiatives and
                   industry adoption{" "}
-                  {/* <a
-                    href="https://www.6wresearch.com/industry-report/india-augmented-and-virtual-reality-market?utm_source=chatgpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline underline"
-                  >
-                    {" "}
-                    beststartup.in+126wresearch.com+12researchandmarkets.com+12.{" "}
-                  </a> */}
                 </>,
                 <>
                   Globally, AR/VR reached USD 27.6 billion in 2021, expected to
                   hit USD 856.2 billion by 2031 (CAGR 41.1%); in India, from
                   USD 1.69 billion in 2021 to USD 9.28 billion by 2028 (CAGR
                   28%){" "}
-                  {/* <a
-                    href="https://cmrindia.com/indian-ar-vr-segment-is-achieving-tremendous-growth-heres-how/?utm_source=chatgpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline"
-                  >
-                    cmrindia.com.
-                  </a> */}
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/India-wide-AR-VR-market-overview.svg",
+              altText: "ar vr market",
             },
             {
               title: "Chennai-Specific AR/VR Trends & Examples",
@@ -107,48 +72,22 @@ export default function ARVRchennai() {
                   In July 2022, Meynikara Solutions (Chennai) launched Tamil
                   Nadu’s first VR labs, Meta Kalvi, across five public schools—a
                   landmark steps toward immersive education in the region{" "}
-                  {/* <a
-                    href="https://www.expertmarketresearch.com/reports/india-virtual-reality-market?utm_source=chatgpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline"
-                  >
-                    {" "}
-                    expertmarketresearch.com.{" "}
-                  </a> */}
                 </>,
                 <>
                   Multiple manufacturing-focused AR/VR firms in Chennai
                   (XR Labs, Yaksha, VisionLab) are integrating immersive
                   solutions for industrial training, safety, predictive
                   maintenance, and efficiency enhancement{" "}
-                  {/* <a
-                    href="http://imarcgroup.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline"
-                  >
-                    {" "}
-                    imarcgroup.com.
-                  </a> */}
                 </>,
                 <>
                   Head-Mounted Displays (HMDs) dominate industrial use
                   cases—accounting for ~60% of AR/VR device revenues in
                   manufacturing (2022), with handheld AR devices growing fastest
                   at a 29% CAGR to 2030{" "}
-                  {/* <a
-                    href="https://www.grandviewresearch.com/industry-analysis/augmented-reality-virtual-reality-manufacturing-market-report"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline"
-                  >
-                    {" "}
-                    rezovr.com+4grandviewresearch.com+4researchandmarkets.com+4.{" "}
-                  </a> */}
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/chennai-specific-AR-VR-trends-examples.svg",
+              altText: "ar vr trends",
             },
             {
               title: "Why Chennai Leads in AR/VR Adoption",
@@ -159,48 +98,22 @@ export default function ARVRchennai() {
                   In July 2022, Meynikara Solutions (Chennai) launched Tamil
                   Nadu’s first VR labs, Meta Kalvi, across five public schools—a
                   landmark steps toward immersive education in the region{" "}
-                  {/* <a
-                    href="https://www.expertmarketresearch.com/reports/india-virtual-reality-market?utm_source=chatgpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline"
-                  >
-                    {" "}
-                    expertmarketresearch.com.{" "}
-                  </a> */}
                 </>,
                 <>
                   Multiple manufacturing-focused AR/VR firms in Chennai
                   (XR Labs, Yaksha, VisionLab) are integrating immersive
                   solutions for industrial training, safety, predictive
                   maintenance, and efficiency enhancement{" "}
-                  {/* <a
-                    href="http://imarcgroup.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline"
-                  >
-                    {" "}
-                    imarcgroup.com.
-                  </a> */}
                 </>,
                 <>
                   Head-Mounted Displays (HMDs) dominate industrial use
                   cases—accounting for ~60% of AR/VR device revenues in
                   manufacturing (2022), with handheld AR devices growing fastest
                   at a 29% CAGR to 2030{" "}
-                  {/* <a
-                    href="https://www.grandviewresearch.com/industry-analysis/augmented-reality-virtual-reality-manufacturing-market-report"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-voilet-500 underline"
-                  >
-                    {" "}
-                    rezovr.com+4grandviewresearch.com+4researchandmarkets.com+4.{" "}
-                  </a> */}
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why-chennai-lead-in-AR-VR-adoption.svg",
+              altText: "ar vr adoption",
             },
           ],
         },
@@ -270,17 +183,10 @@ export default function ARVRchennai() {
                   immersive AR/VR/XR tech to global enterprises, serving major
                   Fortune 500 clients. Their solutions enhance industrial
                   operations, bridging real and virtual realms.{" "}
-                  {/* <a
-                    href="https://www.goodfirms.co/augmented-virtual-reality/chennai?utm_source=chatgpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-voilet-500 underline"
-                  >
-                    granoopixr.com+5goodfirms.co+5themanifest.com+5
-                  </a>{" "} */}
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/XR-Labs.svg",
+              altText: "",
             },
             {
               title: "AATRAL",
@@ -289,18 +195,10 @@ export default function ARVRchennai() {
                   Combining XR and AI, AATRAL crafts enterprise-grade AR/VR apps
                   that boost training, decision-making, and productivity. Ideal
                   for businesses seeking immersive interactive solutions.
-                  {/* <a
-                    href="https://www.goodfirms.co/augmented-virtual-reality/chennai?utm_source=chatgpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-voilet-500 underline"
-                  >
-                    {" "}
-                    goodfirms.co
-                  </a> */}
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/AATRAL.svg",
+              altText: "",
             },
             {
               title: "Yaksha Visual Technologies",
@@ -309,18 +207,10 @@ export default function ARVRchennai() {
                   Since 2015, Yaksha has specialized in AR/VR/MR for sectors
                   like automotive, manufacturing & AEC. Their 3D industrial
                   animations provide visually impactful narratives.{" "}
-                  {/* <a
-                    href="https://www.goodfirms.co/augmented-virtual-reality/chennai?utm_source=chatgpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-voilet-500 underline"
-                  >
-                    {" "}
-                    granoopixr.com+10goodfirms.co+10myingage.com+10
-                  </a> */}
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Yaksha-Visual-Technologies.svg",
+              altText: "",
             },
             {
               title: "VisionLab AI Technologies",
@@ -329,17 +219,10 @@ export default function ARVRchennai() {
                   A boutique studio (2–9 people) excelling in AR/VR for
                   industrial and business integrations. Their focus on immersive
                   tech aids clients in experiencing products interactively.{" "}
-                  {/* <a
-                    href="https://www.goodfirms.co/augmented-virtual-reality/chennai?utm_source=chatgpt.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-voilet-500 underline"
-                  >
-                    pulseofindia.asia+2goodfirms.co+2way2smile.com+2
-                  </a> */}
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/VisionLab-AI-Technologies.svg",
+              altText: "",
             },
           ],
         },
@@ -375,6 +258,7 @@ export default function ARVRchennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/MirrAR.svg",
+              altText: "",
             },
             {
               title: "Skcript",
@@ -386,6 +270,7 @@ export default function ARVRchennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Skcript.svg",
+              altText: "",
             },
             {
               title: "Seehash",
@@ -396,6 +281,7 @@ export default function ARVRchennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Seehash.svg",
+              altText: "",
             },
             {
               title: "Crion Technologies",
@@ -414,6 +300,7 @@ export default function ARVRchennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Crion-Technologies.svg",
+              altText: "",
             },
             {
               title: "FocuzAR",
@@ -434,6 +321,7 @@ export default function ARVRchennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/FocuzAR.svg",
+              altText: "",
             },
 
             {
@@ -454,6 +342,7 @@ export default function ARVRchennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Swevens.svg",
+              altText: "",
             },
 
             {
@@ -466,6 +355,7 @@ export default function ARVRchennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Neur-industry.svg",
+              altText: "",
             },
             {
               title: "Granoopixr",
@@ -485,6 +375,7 @@ export default function ARVRchennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Granoopixr.svg",
+              altText: "",
             },
             {
               title: "myingage",
@@ -504,6 +395,7 @@ export default function ARVRchennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/myingage.svg",
+              altText: "",
             },
           ],
         },
@@ -610,7 +502,7 @@ export default function ARVRchennai() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/Augmented-Reality-Virtual-Reality-thum-banner.jpg"
-            alt=""
+            alt="ar vr companies in chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -672,7 +564,7 @@ export default function ARVRchennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -742,7 +634,7 @@ export default function ARVRchennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -800,7 +692,7 @@ export default function ARVRchennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

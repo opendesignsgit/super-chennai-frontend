@@ -57,6 +57,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why Chennai Is an EduTech Powerhouse.svg",
+              altText: "",
             },
           ],
         },
@@ -250,6 +251,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2005 – The Seeds of Change.svg",
+              altText: "seeds of change",
             },
             {
               title: "2008 – Rise of Digital Coaching",
@@ -264,6 +266,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2008 – Rise of Digital Coaching.svg",
+              altText: "digital coaching",
             },
             {
               title: "2011 – HeyMath! Expands Internationally",
@@ -275,6 +278,7 @@ export default function EduTechinChennai() {
                 <>One of the first local EduTech startups to go global.</>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2011 – HeyMath! Expands Internationally.svg",
+              altText: "seeds of change",
             },
             {
               title: "2013 – Flintobox Founded",
@@ -289,6 +293,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2013 – Flintobox Founded.svg",
+              altText: "flintobox chennai",
             },
             {
               title: "2015 – EdTech Goes Mobile",
@@ -303,6 +308,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2015 – EdTech Goes Mobile.svg",
+              altText: "ed tech company in chennai",
             },
             {
               title: "2016 – Skill-Lync Begins Engineering Upskilling",
@@ -314,6 +320,7 @@ export default function EduTechinChennai() {
                 <>Focus on bridging the academia-industry skill gap.</>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2016 – Skill-Lync Begins Engineering Upskilling.svg",
+              altText: "skill lync chennai",
             },
             {
               title: "2017 – IIT Madras Launches GUVI",
@@ -328,6 +335,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2017 – IIT Madras Launches GUVI.svg",
+              altText: "guvi iit madras",
             },
             {
               title: "2019 – EdTech and AI Converge",
@@ -342,6 +350,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2019 – EdTech and AI Converge.svg",
+              altText: "education coverage",
             },
             {
               title: "2020 – COVID-19: Catalyst for EdTech Boom",
@@ -357,6 +366,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2020 – COVID-19-Catalyst for EdTech Boom.svg",
+              altText: "chennai education",
             },
             {
               title: "2021 – Smart Classroom Push by Tamil Nadu Govt",
@@ -371,6 +381,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2021 – Smart Classroom Push by Tamil Nadu Govt.svg",
+              altText: "smart class room",
             },
             {
               title: "2022 – AI + Gamification Take Off",
@@ -385,6 +396,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2022 – AI + Gamification Take Off.svg",
+              altText: "gmail notification",
             },
             {
               title: "2023 – Corporate Skilling Expands",
@@ -399,6 +411,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2023 – Corporate Skilling Expands.svg",
+              altText: "corporate training chennai",
             },
             {
               title: "2024 – STEM & Robotics Enter Schools",
@@ -413,6 +426,7 @@ export default function EduTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2024 – STEM & Robotics Enter Schools.svg",
+              altText: "robotics courses in chennai",
             },
             {
               title: "2025 – Chennai Declared a “Digital Learning Hub”",
@@ -434,6 +448,7 @@ export default function EduTechinChennai() {
                 <> Mobile-first education reach</>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2025 – Chennai Declared a “Digital Learning Hub”.svg",
+              altText: "digital learning",
             },
             {
               title: "What Next?",
@@ -444,6 +459,7 @@ export default function EduTechinChennai() {
                 <> Real-time skill mapping platforms for colleges & hiring</>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/What Next.svg",
+              altText: "",
             },
           ],
         },
@@ -569,7 +585,7 @@ export default function EduTechinChennai() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/Education-Tech-banner.jpg"
-            alt=""
+            alt="edutech chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -633,7 +649,7 @@ export default function EduTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -830,7 +846,7 @@ export default function EduTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

@@ -43,6 +43,7 @@ export default function ThreeDPrintinginChennai() {
                 "Active student and maker communities working on open-source printers and designs",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why Chennai.svg",
+              altText: "",
             },
           ],
         },
@@ -174,10 +175,12 @@ export default function ThreeDPrintinginChennai() {
                 },
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Academic & Research Ecosystem.svg",
+              altText: "research ecosystem",
             },
             {
               title: "Where It’s Being Used",
               imgs: "/images/Innovate-Images/SubPages/Icons/Business-Permits.svg",
+              altText: "",
               subsections: [
                 {
                   subTitle: "Healthcare",
@@ -248,6 +251,7 @@ export default function ThreeDPrintinginChennai() {
               note2:
                 "Chennai isn’t just printing parts. It’s printing the future — one layer at a time.",
               imgs: "/images/Innovate-Images/SubPages/Icons/What’s Next.svg",
+              altText: "",
             },
           ],
         },
@@ -272,6 +276,7 @@ export default function ThreeDPrintinginChennai() {
                 "Makerspaces like Fablab Chennai begin offering hands-on access to basic FDM 3D printers.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2010 – First Ripples.svg",
+              altText: "industrial manufacturing",
             },
             {
               title: "2013 – Institutional Adoption",
@@ -281,6 +286,7 @@ export default function ThreeDPrintinginChennai() {
                 "Focus on rapid prototyping and educational tools.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2013 – Institutional Adoption.svg",
+              altText: "adoption institute",
             },
             {
               title: "2015 – Startup Wave Begins",
@@ -290,6 +296,7 @@ export default function ThreeDPrintinginChennai() {
                 "Colleges like SRM & VIT introduce 3D printing into their mechanical design labs.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2015 – Startup Wave Begins.svg",
+              altText: "startup chennai",
             },
             {
               title: "2017 – Industrial Use Cases Take Off",
@@ -298,6 +305,7 @@ export default function ThreeDPrintinginChennai() {
                 "Think3D opens a regional service center for batch manufacturing of industrial parts.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2017 – Industrial Use Cases Take Off.svg",
+              altText: "industrial manufacturing",
             },
             {
               title: "2019 – Aerospace & Composites Frontier",
@@ -307,6 +315,7 @@ export default function ThreeDPrintinginChennai() {
                 "DRDO collaborates with Chennai-based labs for metal 3D printing.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2019 – Aerospace & Composites Frontier.svg",
+              altText: "aerospace chennai",
             },
             {
               title: "2020 – COVID Accelerates Innovation",
@@ -316,6 +325,7 @@ export default function ThreeDPrintinginChennai() {
                 "Local innovators create low-cost 3D printed oxygen masks.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2020 – COVID Accelerates Innovation.svg",
+              altText: "accelerate innovation",
             },
             {
               title: "2021 – Bioprinting & Research Scaling",
@@ -325,6 +335,7 @@ export default function ThreeDPrintinginChennai() {
                 "VEL Tech and Anna University launch certification programs in Additive Manufacturing.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2021 – Bioprinting & Research Scaling.svg",
+              altText: "bio printing chennai",
             },
             {
               title: "2022 – Education and Accessibility Boom",
@@ -334,6 +345,7 @@ export default function ThreeDPrintinginChennai() {
                 "Student teams from Chennai colleges begin competing in national 3D printing hackathons.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2022 – Education and Accessibility Boom.svg",
+              altText: "chennai education",
             },
             {
               title: "2023 – Architecture & Housing Innovation",
@@ -342,6 +354,7 @@ export default function ThreeDPrintinginChennai() {
                 "Real estate and urban infrastructure players explore modular design using concrete printing.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2023 – Architecture & Housing Innovation.svg",
+              altText: "housing innovation",
             },
 
             {
@@ -357,6 +370,7 @@ export default function ThreeDPrintinginChennai() {
                 "Public-private partnerships emerge to bring 3D printing to MSMEs and vocational training",
 
               imgs: "/images/Innovate-Images/SubPages/Icons/2024 – Toward a 3D Manufacturing Ecosystem.svg",
+              altText: "",
             },
 
             {
@@ -372,6 +386,7 @@ export default function ThreeDPrintinginChennai() {
                 "From DIY kits to carbon-fiber drones and bio-printed tissues, Chennai’s 3D printing journey is proof that the future isn’t manufactured — it’s layered.",
 
               imgs: "/images/Innovate-Images/SubPages/Icons/2025 – Super Chennai Era.svg",
+              altText: "innovation chennai",
             },
           ],
         },
@@ -409,7 +424,7 @@ export default function ThreeDPrintinginChennai() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/3D-Printing-Additive-Manufacturing-banner.jpg"
-            alt=""
+            alt="3d printing chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -481,7 +496,7 @@ export default function ThreeDPrintinginChennai() {
                         style={{ paddingBottom: "0px" }}
                       >
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         {/* <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -597,7 +612,7 @@ export default function ThreeDPrintinginChennai() {
                         style={{ paddingBottom: "0px" }}
                       >
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -714,7 +729,7 @@ export default function ThreeDPrintinginChennai() {
                         style={{ paddingTop: "0px" }}
                       >
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -778,7 +793,7 @@ export default function ThreeDPrintinginChennai() {
                         style={{ paddingBottom: "0px" }}
                       >
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

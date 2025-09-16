@@ -580,7 +580,7 @@ function App() {
           <a href="/reimagine-chennai-AI-art-challenge">
             {/* <img src="/images/nammaStoriesIcon.png" alt="" /> */}
             {/* <img src="/images/super-chennai-contest.png" alt="" /> */}
-            <img src="/images/ai-icons.png" alt="" />
+            <img src="/images/ai-icons.png" alt="artificial intelligence challenge" />
             {/* <img src="/images/icon-of-the-month.png" alt="" /> */}
           </a>
         </div>
@@ -594,7 +594,7 @@ function App() {
           }`}
         >
           <a href="/icon-of-the-month-in-chennai">
-            <img src="/images/icon-of-the-month.png" alt="" />
+            <img src="/images/icon-of-the-month.png" alt="Star of the month" />
           </a>
         </div>
         {/* pointcostSticky start */}

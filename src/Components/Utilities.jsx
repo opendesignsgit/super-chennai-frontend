@@ -13,7 +13,7 @@ export default function Utilitiesinchennai() {
       title: "North",
       content: (
         <div className="utilitiesContentmaps">
-          <img src="/images/HomePage-Images/North Chennai.png" alt="" />
+          <img src="/images/HomePage-Images/North Chennai.png" alt="north chennai" />
           {/* <Link to="/NorthChennai">
             <button>View More</button>
           </Link> */}
@@ -29,7 +29,7 @@ export default function Utilitiesinchennai() {
       title: "West",
       content: (
         <div className="utilitiesContentmaps">
-          <img src="/images/HomePage-Images/West Chennai.png" alt="" />
+          <img src="/images/HomePage-Images/West Chennai.png" alt="west chennai" />
           {/* <Link to="/WestChennai">
             <button>View More</button>
           </Link> */}
@@ -44,7 +44,7 @@ export default function Utilitiesinchennai() {
       title: "South",
       content: (
         <div className="utilitiesContentmaps">
-          <img src="/images/HomePage-Images/South Chennai.png" alt="" />
+          <img src="/images/HomePage-Images/South Chennai.png" alt="South Chennai." />
           {/* <Link to="/SouthChennai">
             <button>View More</button>
           </Link> */}

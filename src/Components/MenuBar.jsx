@@ -14,7 +14,7 @@ export default function MenuBar({ setMenuBar }) {
     // { label: "Career", href: "/career" },
     { label: "Events", href: "/events" },
     { label: "Superchennai Contests", href: "/superchennai-contest" },
-    { label: "AI REIMAGINE", href: "/reimagine-chennai-AI-art-challenge" },
+    // { label: "AI REIMAGINE", href: "/reimagine-chennai-AI-art-challenge" },
     // { label: "Social Chennai", href: "/social-chennai" },
     {
       label: (

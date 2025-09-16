@@ -28,7 +28,8 @@ export default function EducationInstitutions() {
   const lastScrollY = useRef(0);
   const [isSticky, setIsSticky] = useState(false);
   const bgTextRef = useRef(null);
-  const [activeSection, setActiveSection] = useState("Central Chennai");
+  const [activeSection, setActiveSection] = useState("IB Schools");
+  const [activeSection1, setActiveSection1] = useState("Top Colleges");
   const [selectedTabForScroll, setSelectedTabForScroll] = useState("");
 
   const [tab, setTab] = useState("active");
@@ -59,9 +60,17 @@ export default function EducationInstitutions() {
     "CBSE Schools": useRef(null),
     "Matriculation Schools": useRef(null),
     "State Board Schools": useRef(null),
+    "Top Colleges": useRef(null),
+    "Arts, Science & Commerce Colleges": useRef(null),
+    "Law Colleges": useRef(null),
+    "Business & Management Colleges": useRef(null),
+    "Colleges and Universities": useRef(null),
   };
 
   const handleTabClick = (name) => {
+    refs[name]?.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleTabClick1 = (name) => {
     refs[name]?.current?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -175,111 +184,151 @@ export default function EducationInstitutions() {
 
         {/*----------------- Multiple Benefit Sections ----------------*/}
 
-        <div className="flex justify-center mb-8 chennaiInvestmentsButtons">
-          <button
-            className={`newsLetterButton ${tab === "active" ? "active" : ""}`}
-            onClick={() => {
-              setTab("active");
-              setTab1("");
-            }}
-          >
-            Schools
-          </button>
+        <div className="educationalPageStyle">
+          <div className="flex justify-center mb-8 chennaiInvestmentsButtons">
+            <button
+              className={`newsLetterButton ${tab === "active" ? "active" : ""}`}
+              onClick={() => {
+                setTab("active");
+                setTab1("");
+              }}
+            >
+              Schools
+            </button>
 
-          <button
-            className={`newsLetterButton ${tab1 === "active" ? "active" : ""}`}
-            onClick={() => {
-              setTab1("active");
-              setTab("");
-            }}
-          >
-            Colleges
-          </button>
+            <button
+              className={`newsLetterButton ${
+                tab1 === "active" ? "active" : ""
+              }`}
+              onClick={() => {
+                setTab1("active");
+                setTab("");
+              }}
+            >
+              Colleges
+            </button>
+          </div>
+
+          {tab && (
+            <>
+              <div
+                className={`stickyPositionContainer w-full transition-transform transition-shadow duration-300 ease-in-out ${
+                  isSticky
+                    ? "fixed top-0 left-0 z-50 bg-white shadow-md py-3"
+                    : "relative"
+                }`}
+              >
+                <div className="container max-w-7xl mx-auto px-4 pb-[25px]">
+                  <div className="flex flex-wrap gap-4 justify-center mb-6">
+                    {tabNames.map((name) => (
+                      <button
+                        key={name}
+                        onClick={() => (
+                          handleTabClick(name), setActiveSection(name)
+                        )}
+                        className={`cursor-pointer tabButton px-4 py-2 rounded font-semibold transition ${
+                          activeSection === name
+                            ? "!bg-[#a44294] text-white !font-medium"
+                            : "bg-gray-200 text-gray-800 !font-medium"
+                        }`}
+                      >
+                        {name}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div ref={refs["IB Schools"]} className="scroll-target">
+                <IBSchool />
+              </div>
+
+              <div ref={refs["IGCSE Schools"]} className="scroll-target">
+                <IGCSESchool />
+              </div>
+
+              <div ref={refs["ICSE Schools"]} className="scroll-target">
+                <ICSESchool />
+              </div>
+
+              <div ref={refs["CBSE Schools"]} className="scroll-target">
+                <CBSESchool />
+              </div>
+
+              <div
+                ref={refs["Matriculation Schools"]}
+                className="scroll-target"
+              >
+                <MatricSchool />
+              </div>
+
+              <div ref={refs["State Board Schools"]} className="scroll-target">
+                <StateBoardSchool />
+              </div>
+            </>
+          )}
+
+          {tab1 && (
+            <>
+              <div
+                className={`stickyPositionContainer w-full transition-transform transition-shadow duration-300 ease-in-out ${
+                  isSticky
+                    ? "fixed top-0 left-0 z-50 bg-white shadow-md py-3"
+                    : "relative"
+                }`}
+              >
+                <div className="container max-w-7xl mx-auto px-4 pb-[25px] ">
+                  <div className="flex flex-wrap gap-4 justify-center mb-6">
+                    {tabNames1.map((name) => (
+                      <button
+                        key={name}
+                        onClick={() => (
+                          handleTabClick1(name), setActiveSection1(name)
+                        )}
+                        className={`cursor-pointer tabButton px-4 py-2 rounded font-semibold transition ${
+                          activeSection1 === name
+                            ? "!bg-[#a44294] text-white !font-medium"
+                            : "bg-gray-200 text-gray-800 !font-medium"
+                        }`}
+                      >
+                        {name}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div ref={refs["Top Colleges"]} className="scroll-target">
+                <TopColleges />
+              </div>
+
+              <div
+                ref={refs["Arts, Science & Commerce Colleges"]}
+                className="scroll-target"
+              >
+                <ArtsScienceColleges />
+              </div>
+
+              <div ref={refs["Law Colleges"]} className="scroll-target">
+                <LawColleges />
+              </div>
+
+              <div
+                ref={refs["Business & Management Colleges"]}
+                className="scroll-target"
+              >
+                <BusinessManagementColleges />
+              </div>
+
+              <div
+                ref={refs["Colleges and Universities"]}
+                className="scroll-target"
+              >
+                <CollegeUniversities />
+              </div>
+            </>
+          )}
         </div>
-
-        {tab && (
-          <>
-            <div
-              className={`stickyPositionContainer w-full transition-transform transition-shadow duration-300 ease-in-out ${
-                isSticky
-                  ? "fixed top-0 left-0 z-50 bg-white shadow-md py-3"
-                  : "relative"
-              }`}
-            >
-              <div className="container max-w-7xl mx-auto px-4 pb-[25px]">
-                <div className="flex flex-wrap gap-4 justify-center mb-6">
-                  {tabNames.map((name) => (
-                    <button
-                      key={name}
-                      onClick={() => handleTabClick(name)}
-                      className={`tabButton px-4 py-2 rounded font-semibold transition ${
-                        activeSection === name
-                          ? "!bg-[#a44294] text-white !font-medium"
-                          : "bg-gray-200 text-gray-800 !font-medium"
-                      }`}
-                    >
-                      {name}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <div ref={refs["IB Schools"]}>
-              <IBSchool />
-            </div>
-
-
-
-            <IGCSESchool />
-
-            <ICSESchool />
-
-            <CBSESchool />
-
-            <MatricSchool />
-
-            <StateBoardSchool />
-          </>
-        )}
-
-        {tab1 && (
-          <>
-            <div
-              className={`stickyPositionContainer w-full transition-transform transition-shadow duration-300 ease-in-out ${
-                isSticky
-                  ? "fixed top-0 left-0 z-50 bg-white shadow-md py-3"
-                  : "relative"
-              }`}
-            >
-              <div className="container max-w-7xl mx-auto px-4 pb-[25px] ">
-                <div className="flex flex-wrap gap-4 justify-center mb-6">
-                  {tabNames1.map((name) => (
-                    <button
-                      key={name}
-                      className={`tabButton px-4 py-2 rounded font-semibold transition ${
-                        activeSection === name
-                          ? "!bg-[#a44294] text-white !font-medium"
-                          : "bg-gray-200 text-gray-800 !font-medium"
-                      }`}
-                    >
-                      {name}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <TopColleges />
-
-            <ArtsScienceColleges />
-
-            <LawColleges />
-
-            <BusinessManagementColleges />
-
-            <CollegeUniversities />
-          </>
-        )}
 
         <LiveSlider />
 

@@ -560,7 +560,7 @@ export default function IGCSESchool() {
 
               <div className="overflow-x-auto my-6">
                 <h2 className="text-2xl font-bold">
-                  Top IB Schools in Chennai (Sample)
+                  Top IGCSE Schools in Chennai (Sample)
                 </h2>
 
                 <table className="min-w-full border border-gray-200 divide-y divide-gray-200 text-left mb-0">
@@ -569,9 +569,9 @@ export default function IGCSESchool() {
                       <th className="px-4 py-3 text-sm font-semibold text-gray-700">
                         School Name
                       </th>
-                      <th className="px-4 py-3 text-sm font-semibold text-gray-700">
+                      {/* <th className="px-4 py-3 text-sm font-semibold text-gray-700">
                         Programmes Offered
-                      </th>
+                      </th> */}
                       <th className="px-4 py-3 text-sm font-semibold text-gray-700">
                         Location
                       </th>
@@ -592,9 +592,9 @@ export default function IGCSESchool() {
                         <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
                           {giant.SchoolName}
                         </td>
-                        <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
+                        {/* <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
                           {giant.ProgrammesOffered}
-                        </td>
+                        </td> */}
                         <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
                           {giant.Location}
                         </td>

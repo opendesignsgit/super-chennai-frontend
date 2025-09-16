@@ -345,9 +345,9 @@ export default function MatricSchool() {
                     <th className="px-4 py-3 text-sm font-semibold text-gray-700">
                       School Name
                     </th>
-                    <th className="px-4 py-3 text-sm font-semibold text-gray-700">
+                    {/* <th className="px-4 py-3 text-sm font-semibold text-gray-700">
                       Programmes Offered
-                    </th>
+                    </th> */}
                     <th className="px-4 py-3 text-sm font-semibold text-gray-700">
                       Location
                     </th>
@@ -368,9 +368,9 @@ export default function MatricSchool() {
                       <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
                         {giant.SchoolName}
                       </td>
-                      <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
+                      {/* <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
                         {giant.ProgrammesOffered}
-                      </td>
+                      </td> */}
                       <td className="px-4 py-3 text-gray-800 text-sm md:text-base">
                         {giant.Location}
                       </td>

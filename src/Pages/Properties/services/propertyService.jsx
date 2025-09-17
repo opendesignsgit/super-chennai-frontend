@@ -1,11 +1,11 @@
 import axios from "axios";
 import { mapSortToApi } from "../utils/sortHelpers";
 
-
-    const API_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:3000/api"
-    : "https://demo.superchennai.com/api";
+const API_URL =
+  // window.location.hostname === "localhost"
+  //   ? "http://localhost:3000/api"
+  // :
+  "https://demo.superchennai.com/api";
 
 export const fetchProperties = async (filters = {}, sortBy = "") => {
   const params = {};

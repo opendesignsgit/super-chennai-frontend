@@ -273,6 +273,9 @@ import IconofthemonthAugust from "./Pages/Icon-of-the-month-august";
 import Iconsofthemonth from "./Pages/iconsofthemonth";
 import ReimagineChennai from "./Pages/ReimagineChennai";
 
+import PropertiesPage from "./Pages/Properties/PropertiesPage";
+import PropertyDetailPage from "./Pages/Properties/PropertyDetailPage";
+
 function App() {
   // const [loading, setLoading] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
@@ -580,7 +583,10 @@ function App() {
           <a href="/reimagine-chennai-AI-art-challenge">
             {/* <img src="/images/nammaStoriesIcon.png" alt="" /> */}
             {/* <img src="/images/super-chennai-contest.png" alt="" /> */}
-            <img src="/images/ai-icons.png" alt="artificial intelligence challenge" />
+            <img
+              src="/images/ai-icons.png"
+              alt="artificial intelligence challenge"
+            />
             {/* <img src="/images/icon-of-the-month.png" alt="" /> */}
           </a>
         </div>
@@ -634,7 +640,10 @@ function App() {
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />
           <Route path="/namma-stories" element={<NammaStories />} />
-          <Route path="/reimagine-chennai-AI-art-challenge" element={<ReimagineChennai />} />
+          <Route
+            path="/reimagine-chennai-AI-art-challenge"
+            element={<ReimagineChennai />}
+          />
           <Route
             path="/superchennai-contest"
             element={<SuperChennaiEvents />}
@@ -1188,7 +1197,10 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/icon-of-the-july-month" element={<Iconofthemonth />} />
-          <Route path="/super-chennai-icon-of-aug-2025" element={<IconofthemonthAugust />} />
+          <Route
+            path="/super-chennai-icon-of-aug-2025"
+            element={<IconofthemonthAugust />}
+          />
 
           {/* Visit-Pages */}
 
@@ -1377,6 +1389,9 @@ function App() {
           {/* Anthony Anna Works */}
 
           {/* new pages End */}
+
+          <Route path="/properties" element={<PropertiesPage />} />
+          <Route path="/properties/:slug" element={<PropertyDetailPage />} />
         </Routes>
 
         {/*################################# NEWS LETTER ######################################## */}

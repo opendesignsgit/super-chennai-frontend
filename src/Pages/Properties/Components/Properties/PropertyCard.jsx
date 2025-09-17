@@ -1,10 +1,9 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../Styles/PropertyCard.css";
 
-const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:3000";
+const API_BASE_URL = "https://demo.superchennai.com/";
+// import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 const getImageUrl = (img) => {
   if (!img?.url) return "/placeholder.jpg";
@@ -13,7 +12,6 @@ const getImageUrl = (img) => {
 };
 
 const PropertyCard = ({ property }) => {
-
   const heroImage = getImageUrl(property?.heroImage);
   const title = property?.title || "Property";
   const bhk = property?.bhk?.label || property?.bhk || "-";
@@ -21,7 +19,6 @@ const PropertyCard = ({ property }) => {
   const price = property?.price
     ? property.price.toLocaleString()
     : "On Request";
-
 
   return (
     <div className="property-card">
@@ -38,7 +35,10 @@ const PropertyCard = ({ property }) => {
         <p>
           <strong>₹{price}</strong>
         </p>
-        <Link to={`/properties/${property.slug || property.id}`} className="btn">
+        <Link
+          to={`/properties/${property.slug || property.id}`}
+          className="btn"
+        >
           More Details
         </Link>
       </div>

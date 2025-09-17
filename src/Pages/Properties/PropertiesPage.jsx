@@ -8,13 +8,13 @@ import "./Styles/PropertiesPage.css";
 import { toggleArrayValue } from "./utils/filterHelpers";
 
 const PropertiesPage = () => {
-const [filters, setFilters] = useState({
-  minBudget: 0,
-  maxBudget: 10000000,
-  locations: [],
-  bhk: [],
-  propertyTypes: [],
-});
+  const [filters, setFilters] = useState({
+    minBudget: 0,
+    maxBudget: 10000000,
+    locations: [],
+    bhk: [],
+    propertyTypes: [],
+  });
 
   const [sortBy, setSortBy] = useState("");
   const { properties, loading } = useProperties(filters, sortBy);
@@ -26,7 +26,7 @@ const [filters, setFilters] = useState({
     }));
   };
 
-const handleBudgetChange = ([min, max]) => {
+  const handleBudgetChange = ([min, max]) => {
     setFilters((prev) => ({
       ...prev,
       minBudget: min,
@@ -58,20 +58,23 @@ const handleBudgetChange = ([min, max]) => {
           </div>
         </div>
       </div>
-
-      <div className="properties-page">
-        <FiltersSidebar
-          filters={filters}
-          onCheckboxChange={handleCheckboxChange}
-          onBudgetChange={handleBudgetChange}
-        />
-        <main className="properties-main">
-          <div className="properties-header">
-            <h2>{properties.length} Result(s) Found</h2>
-            <SortBy value={sortBy} onChange={setSortBy} />
+      <div className="properties-page container-box">
+        <div className="properties-layout">
+          <div className="properties-page">
+            <FiltersSidebar
+              filters={filters}
+              onCheckboxChange={handleCheckboxChange}
+              onBudgetChange={handleBudgetChange}
+            />
+            <main className="properties-main">
+              <div className="properties-header">
+                <h2>{properties.length} Result(s) Found</h2>
+                <SortBy value={sortBy} onChange={setSortBy} />
+              </div>
+              <PropertiesList properties={properties} loading={loading} />
+            </main>
           </div>
-          <PropertiesList properties={properties} loading={loading} />
-        </main>
+        </div>
       </div>
     </>
   );

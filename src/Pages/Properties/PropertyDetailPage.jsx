@@ -1,36 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import { Helmet } from "react-helmet-async";
+import { useProperty } from "./hooks/useProperties";
+import { PropertyContent } from "./Components/Properties/ritchText";
 
-const API_URL = "https://demo.superchennai.com/api/properties";
+import "./Styles/PropertyDetailPage.css";
 
 const PropertyDetailPage = () => {
-  const { slug } = useParams();
-  const [property, setProperty] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const { id, slug } = useParams();
+  const { property, loading } = useProperty({ id, slug });
 
-  useEffect(() => {
-    fetchProperty();
-  }, [slug]);
+  const API_BASE_URL =
+    import.meta.env.VITE_API_URL || "https://demo.superchennai.com/";
 
-  const fetchProperty = async () => {
-    setLoading(true);
-    try {
-      const { data } = await axios.get(`${API_URL}`, {
-        params: { slug },
-      });
+  if (loading) return <div className="loader">Loading property details...</div>;
+  if (!property) return <p className="not-found">❌ Property not found</p>;
 
-      setProperty(data?.docs?.[0] || null);
-    } catch (err) {
-      console.error("Error fetching property:", err.message);
-    } finally {
-      setLoading(false);
-    }
+  const getImageUrl = (img) => {
+    if (!img?.url) return "/placeholder.jpg";
+    if (img.url.startsWith("http")) return img.url;
+    return `${API_BASE_URL}${img.url}`;
   };
-
-  if (loading) return <p>Loading...</p>;
-  if (!property) return <p>Property not found</p>;
 
   return (
     <>
@@ -38,54 +28,59 @@ const PropertyDetailPage = () => {
         <title>{property.title} | Chennai Properties</title>
         <meta
           name="description"
-          content={`Explore details of ${property.title}, located in ${property.location}.`}
+          content={`Explore details of ${property.title}, located in ${
+            property.location?.label || ""
+          }.`}
         />
-        <link rel="canonical" href={`/properties/${slug}`} />
+        <link
+          rel="canonical"
+          href={`/properties/${property.slug || property.id}`}
+        />
       </Helmet>
 
-      <div style={{ padding: "20px" }}>
-        <h1>{property.title}</h1>
-        <img
-          src={property.images[0].image.thumbnailURL || "/placeholder.jpg"}
-          alt={property.title}
-          style={{
-            width: "100%",
-            maxWidth: "800px",
-            height: "auto",
-            borderRadius: "8px",
-          }}
-        />
+      <div className="property-detail">
+        {/* Hero Image */}
+        <div className="property-hero">
+          <img src={getImageUrl(property.heroImage)} alt={property.title} />
+          <div className="overlay">
+            <h1>{property.title}</h1>
+            <p className="location">{property.location?.label}</p>
+          </div>
+        </div>
 
-        {console.log("Property",property)}
-        {/* <p>
-          <strong>BHK:</strong> {property.bhk?.label || property.bhk}
-        </p> */}
-        <p>
-          <strong>BHK:</strong>{" "}
-          {property.bhk?.label
-            ? property.bhk.label
-            : typeof property.bhk === "string"
-            ? property.bhk
-            : "N/A"}
-        </p>
+        {/* Property Info */}
+        <div className="property-info container">
+          <div className="info-grid">
+            <div className="info-item">
+              <h4>BHK</h4>
+              <p>{property.bhk?.label}</p>
+            </div>
+            <div className="info-item">
+              <h4>Area</h4>
+              <p>{property.area} sq ft</p>
+            </div>
+            <div className="info-item">
+              <h4>Price</h4>
+              <p className="price">
+                ₹
+                {property.price
+                  ? property.price.toLocaleString()
+                  : "On Request"}
+              </p>
+            </div>
+            <div className="info-item">
+              <h4>Location</h4>
+              <p>{property.location?.label}</p>
+            </div>
+          </div>
 
-        <p>
-          <strong>Area:</strong> {property.area} sq ft
-        </p>
-        <p>
-          <strong>Price:</strong> ₹
-          {property.price ? property.price.toLocaleString() : "On Request"}
-        </p>
-        {/* <p>
-          <strong>Location:</strong> {property.location}
-        </p> */}
-        <p>
-          <strong>Location:</strong>{" "}
-          {typeof property.location === "string"
-            ? property.location
-            : property.location?.label || "N/A"}
-        </p>
-        <p>{property.description || "No description available."}</p>
+          {/* Description */}
+
+          <div className="description">
+            <h2>About this property</h2>
+            <PropertyContent content={property.content} />
+          </div>
+        </div>
       </div>
     </>
   );

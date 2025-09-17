@@ -39,6 +39,7 @@ export default function InvestNewsChennai() {
       description:
         "Take advantage of the large local following that Tamil news sources enjoy in different locales.",
       image: "/images/Invest-Images/SubPages/Established/regional-language.jpg",
+      altText: "language in chennai",
     },
     {
       title: "Specialized Publications",
@@ -47,6 +48,7 @@ export default function InvestNewsChennai() {
         "To boost sales and return on investment, invest in and collaborate with businesses that provide magazines with relevant content.",
       image:
         "/images/Invest-Images/SubPages/Established/specialized-publications.jpg",
+      altText: "publications in chennai",
     },
     {
       title: "Print Media's Digital Transformation",
@@ -54,6 +56,7 @@ export default function InvestNewsChennai() {
       description:
         "Many young people and businesses are searching for investors to establish their digital news applications and websites.",
       image: "/images/Invest-Images/SubPages/Established/print_medias.jpg",
+      altText: "print media",
     },
     {
       title: "Solutions for Print Media Marketing and Advertising",
@@ -61,6 +64,7 @@ export default function InvestNewsChennai() {
       description:
         "In order to market their print media and reach their target audience, some media seek investors.",
       image: "/images/Invest-Images/SubPages/Established/solutions.jpg",
+      altText: "",
     },
 
     {
@@ -69,6 +73,7 @@ export default function InvestNewsChennai() {
       description:
         "You can invest in Tamil news outlets that serve sizable audiences because there are a lot of Tamil speakers in this area.",
       image: "/images/Invest-Images/SubPages/Expanding/tamil-news.jpg",
+      altText: "",
     },
     {
       title: "Business News Channels",
@@ -77,6 +82,7 @@ export default function InvestNewsChennai() {
         "These provide financial reports to businesspeople. If your company is in the business-to-business (B2B) sector, investing here will grow it.",
       image:
         "/images/Invest-Images/SubPages/Expanding/business-news-channels.jpg",
+      altText: "",
     },
     {
       title: "News Channel Streaming",
@@ -85,6 +91,7 @@ export default function InvestNewsChennai() {
         "For a future return on investment, invest in internet or mobile news apps that are already built or in the process of being produced.",
       image:
         "/images/Invest-Images/SubPages/Expanding/news-channel-streaming.jpg",
+      altText: "",
     },
     {
       title: "Content Creation for News Channels",
@@ -92,6 +99,7 @@ export default function InvestNewsChennai() {
       description:
         "Invest in news channel production and content creation to support top-notch news programming.",
       image: "/images/Invest-Images/SubPages/Expanding/income-tax.jpg",
+      altText: "",
     },
 
     {
@@ -101,6 +109,7 @@ export default function InvestNewsChennai() {
         "You can also help by funding independent journalism that is available around the city.",
       image:
         "/images/Invest-Images/SubPages/Burgeoning/business-news-channels.jpg",
+      altText: "",
     },
     {
       title: "Video News Content",
@@ -109,6 +118,7 @@ export default function InvestNewsChennai() {
         "Some individuals will use the growing popularity of videos to post news, and they need your help.",
       image:
         "/images/Invest-Images/SubPages/Burgeoning/business-news-channels-1.jpg",
+      altText: "",
     },
     {
       title: "Data Journalism",
@@ -116,6 +126,7 @@ export default function InvestNewsChennai() {
       description:
         "Invest in data journalism and investigative reporting projects to help suppliers of meaningful and in-depth news content.",
       image: "/images/Invest-Images/SubPages/Burgeoning/data-journalism.jpg",
+      altText: "",
     },
   ];
 
@@ -255,7 +266,7 @@ export default function InvestNewsChennai() {
                         <img
                           className="buildingImage"
                           src={item.image}
-                          alt=""
+                          alt={item.altText}
                         />
                       </>
                     ) : (
@@ -263,7 +274,7 @@ export default function InvestNewsChennai() {
                         <img
                           className="buildingImage1"
                           src={item.image}
-                          alt=""
+                          alt={item.altText}
                           style={{ cursor: "default" }}
                         />
                         <div
@@ -350,7 +361,7 @@ export default function InvestNewsChennai() {
                                 <img
                                   className="buildingImage w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.altText}
                                 />
                               </>
                             ) : (
@@ -358,7 +369,7 @@ export default function InvestNewsChennai() {
                                 <img
                                   className="buildingImage1 w-full md:w-1/2 "
                                   src={item.image}
-                                  alt={item.title}
+                                  alt={item.altText}
                                 />
                                 <div className="builidngContent1">
                                   <h3 className="text-xl font-semibold">

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const slides = [
   {
     src: "/images/Innovate-Images/IT-Software-thum-big.jpg",
-    imgAlt: "it companies in chennai",
+    imgAlt: "it software chennai",
     title: "IT & Software Development ",
     content:
       "Using state-of-the-art products and services to drive global digital transformation.",

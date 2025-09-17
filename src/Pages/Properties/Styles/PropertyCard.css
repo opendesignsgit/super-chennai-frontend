@@ -1,0 +1,64 @@
+
+/*########## LIST KU DA CSS DA MODIFY PANNU  ##### */
+
+.properties-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.loading {
+  font-size: 16px;
+  color: #666;
+}
+
+.no-results {
+  font-size: 16px;
+  color: #999;
+  font-style: italic;
+}
+
+
+/*########## CARD CSS DA MODIFY PANNU  ##### */
+
+.property-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  gap: 12px;
+  align-items: center;
+}
+
+.property-card img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.property-card h3 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.property-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.property-card .details {
+  flex: 1;
+}
+
+.property-card .btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: red;
+  color: white;
+  text-decoration: none;
+}
+
+
+

@@ -67,6 +67,7 @@ export default function EVMobilityinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why Chennai Is an EV Mobility Hotspot.svg",
+              altText: "ev mobility chennai",
             },
           ],
         },
@@ -255,6 +256,7 @@ export default function EVMobilityinChennai() {
               note2:
                 "In Chennai, EV isn’t a buzzword. It’s becoming the backbone of how the city moves.",
               imgs: "/images/Innovate-Images/SubPages/Icons/Future of EV in Chennai (2025–2030).svg",
+              altText: "ev in chennai",
             },
           ],
         },
@@ -355,7 +357,7 @@ export default function EVMobilityinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -562,7 +564,7 @@ export default function EVMobilityinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

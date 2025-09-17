@@ -677,7 +677,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                 <Link to="/events">
                   <img
                     src="/images/HomePage-Images/Icons/mobile-Header-Events.svg"
-                    alt=""
+                    alt="chennai events "
                   />
                 </Link>
               </div>
@@ -685,7 +685,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                 <Link to="mailto:hello@superchennai.com">
                   <img
                     src="/images/HomePage-Images/Icons/mobile-Header-Email.svg"
-                    alt=""
+                    alt="email "
                   />
                 </Link>
               </div>
@@ -700,14 +700,14 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                 <img
                   onClick={() => setMenuBar1(true)}
                   src="/images/HomePage-Images/Icons/mobile-Header-Search.svg"
-                  alt=""
+                  alt="search in chennai"
                 />
               </div>
               <div className="mobilesvgSize">
                 <img
                   onClick={() => setMenuBar(true)}
                   src="/images/HomePage-Images/Icons/mobile-Header-Hamburger.svg"
-                  alt=""
+                  alt="chennai humburger"
                 />
               </div>
             </div>

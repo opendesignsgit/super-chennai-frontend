@@ -70,6 +70,7 @@ export default function SmartCity() {
                 "Integrated Public Transport info across metro, buses, autos, cabs — all in one app",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Digitally Responsive Urban Systems.svg",
+              altText: "urban system chennai",
             },
           ],
         },
@@ -84,6 +85,7 @@ export default function SmartCity() {
                 "Electric buses and e-cycle docks across pilot zones",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Tech for Sustainability.svg",
+              altText: "sustainability chennai",
             },
           ],
         },
@@ -98,6 +100,7 @@ export default function SmartCity() {
                 "QR-code-based smart bus stops and city info boards",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Services That Come to You.svg",
+              altText: "services in chennai",
             },
           ],
         },
@@ -112,6 +115,7 @@ export default function SmartCity() {
                 "Geo-tagged feedback from citizens — your voice, mapped and heard",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Data-Driven Governance.svg",
+              altText: "data driven governance",
             },
           ],
         },
@@ -161,6 +165,7 @@ export default function SmartCity() {
                 "500+ e-waste bins and IoT waste tracking systems in pilot use.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/By the Numbers.svg",
+              altText: "",
             },
             {
               title: "Chennai 2030: What’s Coming Next",
@@ -171,6 +176,7 @@ export default function SmartCity() {
                 "5G-enabled civic applications across traffic, policing, health, and urban planning.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Chennai 2030- What’s Coming Next.svg",
+              altText: "chennai next",
             },
             {
               title: "Life + Tech = Super Chennai",
@@ -183,6 +189,7 @@ export default function SmartCity() {
               ],
               note2: "The future isn’t coming — it’s already in Chennai.",
               imgs: "/images/Innovate-Images/SubPages/Icons/Life+Tech=Super-Chennai.svg",
+              altText: "information technology in chennai",
             },
           ],
         },
@@ -220,7 +227,7 @@ export default function SmartCity() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/Smart-City-banner.jpg"
-            alt=""
+            alt="smart city chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -293,7 +300,7 @@ export default function SmartCity() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -386,7 +393,7 @@ export default function SmartCity() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

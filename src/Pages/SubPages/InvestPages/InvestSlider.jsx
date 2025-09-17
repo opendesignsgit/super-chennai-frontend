@@ -57,9 +57,9 @@ const images = [
   },
   {
     src: "/images/Invest-Images/SubPages/exhibitions-slide.jpg",
-    title: "Exhibitions",
+    title: "Chennai exhibition",
     link: "/invest/exhibitions-in-chennai",
-    imgAlt: "",
+    imgAlt: "chennai exhibition",
   },
 ];
 

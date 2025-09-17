@@ -45,47 +45,57 @@ export default function InstagramReelsMarquee() {
   //     link: "https://www.instagram.com/reel/REEL_ID_5/",
   //   },
   // ];
-  
-    const reels = [
+
+  const reels = [
     {
       thumbnail: "/images/HomePage-Images/reelimage1.png",
       link: "https://www.instagram.com/reel/DHgFrfdyIBk/?igsh=MXJyc3lxeXk1cDZubg%3D%3D",
+      altText: "sports in chennai",
     },
     {
       thumbnail: "/images/HomePage-Images/reelimage2.png",
       link: "https://www.instagram.com/reel/DHX5aFqyd2V/?igsh=MTVuZ3o2NnVtazBzMQ%3D%3D",
+      altText: "beaches in chennai",
     },
     {
       thumbnail: "/images/HomePage-Images/reelimage3.png",
       link: "https://www.instagram.com/reel/DKZYm-ry1W3/?igsh=MWdqYnZ1aDhtNGU2bQ%3D%3D",
+      altText: "media in chennai",
     },
     {
       thumbnail: "/images/HomePage-Images/reelimage4.png",
       link: "https://www.instagram.com/reel/DH-erb8SvM1/?igsh=MXFjOXg5MXpzbm05bg%3D%3D",
+      altText: "chennai social media",
     },
     {
       thumbnail: "/images/HomePage-Images/reelimage5.png",
       link: "https://www.instagram.com/reel/DH8js6wS-S1/?igsh=MWFjM3ZvNTRqMWtmYg%3D%3D",
+      altText: "social media in chennai",
     },
     {
       thumbnail: "/images/HomePage-Images/reelimage1.png",
       link: "https://www.instagram.com/reel/DHgFrfdyIBk/?igsh=MXJyc3lxeXk1cDZubg%3D%3D",
+      altText: "sports in chennai",
     },
     {
       thumbnail: "/images/HomePage-Images/reelimage2.png",
       link: "https://www.instagram.com/reel/DHX5aFqyd2V/?igsh=MTVuZ3o2NnVtazBzMQ%3D%3D",
+      altText: "beaches in chennai",
     },
     {
       thumbnail: "/images/HomePage-Images/reelimage3.png",
       link: "https://www.instagram.com/reel/DKZYm-ry1W3/?igsh=MWdqYnZ1aDhtNGU2bQ%3D%3D",
+      altText: "media in chennai",
     },
     {
       thumbnail: "/images/HomePage-Images/reelimage4.png",
       link: "https://www.instagram.com/reel/DH-erb8SvM1/?igsh=MXFjOXg5MXpzbm05bg%3D%3D",
+      altText: "chennai social media",
     },
     {
       thumbnail: "/images/HomePage-Images/reelimage5.png",
       link: "https://www.instagram.com/reel/DH8js6wS-S1/?igsh=MWFjM3ZvNTRqMWtmYg%3D%3D",
+      altText: "social media in chennai",
     },
   ];
   const [scrollDir, setScrollDir] = useState("left");
@@ -151,7 +161,7 @@ export default function InstagramReelsMarquee() {
                 >
                   <img
                     src={reel.thumbnail}
-                    alt="Instagram Reel"
+                    alt={reel.altText}
                     className="w-[265px] h-[auto] object-cover mobileSocialWidjet"
                   />
                 </a>

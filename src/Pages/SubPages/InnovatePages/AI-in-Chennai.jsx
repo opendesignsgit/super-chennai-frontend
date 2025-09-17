@@ -210,7 +210,7 @@ export default function AIinChennai() {
               note2:
                 "Chennai isn’t just using AI. It’s building responsible, useful, and deeply local intelligence — the kind that matters.",
               imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s AI Momentum.svg",
-              imgAlt: "",
+              imgAlt: "ai momentum",
             },
           ],
         },
@@ -383,7 +383,7 @@ export default function AIinChennai() {
                 "AI in Chennai isn’t scattered. It’s clustered, smart, and quietly powerful.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Where AI Lives, Learns & Leads.svg",
-              imgAlt: "",
+              imgAlt: "ai learning",
             },
             {
               title: "Top 6 AI Activity Zones",
@@ -391,7 +391,7 @@ export default function AIinChennai() {
                 "You can visualize this as a color-gradient heat map (from cool to hot) based on AI density — ideally layered over Google Maps or Mapbox. Here's the content breakdown:",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Top 6 AI Activity Zones.svg",
-              imgAlt: "",
+              imgAlt: "ai activities",
             },
             {
               title: "Tidel Park & OMR Tech Corridor",
@@ -445,7 +445,7 @@ export default function AIinChennai() {
                 "Anna University AI Lab, Ishitva, Qube Cinema, Lucid Imaging",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Guindy – Anna University Belt.svg",
-              imgAlt: "",
+              imgAlt: "anna university chennai",
             },
             {
               title: "Nungambakkam – Kilpauk Zone",
@@ -463,7 +463,7 @@ export default function AIinChennai() {
                 "Lucid Imaging, private hospital AI pilots",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Nungambakkam–Kilpauk Zone.svg",
-              imgAlt: "",
+              imgAlt: "nungambakkam",
             },
             {
               title: "Ambattur – Industrial Belt",
@@ -480,7 +480,7 @@ export default function AIinChennai() {
                 "AI + IoT integration, MSME pilots, affordable automation",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Ambattur–Industrial Belt.svg",
-              imgAlt: "",
+              imgAlt: "Ambattur industrial estate",
             },
             {
               title: "Tambaram – MedTech & EdTech Nucleus",
@@ -497,7 +497,7 @@ export default function AIinChennai() {
                 "Miko, SRM AI Lab, VIT Healthcare Research",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Tambaram – MedTech & EdTech Nucleus.svg",
-              imgAlt: "",
+              imgAlt: "medtech chennai",
             },
           ],
         },

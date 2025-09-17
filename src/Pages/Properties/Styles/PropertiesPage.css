@@ -1,0 +1,13 @@
+.properties-page {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.properties-main {
+  flex: 1;
+}
+
+.properties-main h2 {
+  margin-bottom: 16px;
+}

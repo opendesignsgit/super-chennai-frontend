@@ -33,7 +33,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         "This is the company registration registrar that offers forms and rules where you may make a substantial income while also helping others.",
       image: "/images/Invest-Images/SubPages/invest/roc.jpg",
-      imgAlt: "",
+      imgAlt: "registrar of companies chennai",
     },
     {
       title: "Guidance Tamilnadu-Nungambakkam",
@@ -57,7 +57,7 @@ export default function InvestFormalitiesRegulationsChennai() {
       description:
         "It is the Ministry of Corporate Affairs' official website. By completing and registering, you can make money while also helping someone.",
       image: "/images/Invest-Images/SubPages/invest/sidco-1.jpg",
-      imgAlt: "",
+      imgAlt: "chennai sidco",
     },
     {
       title: "Commercial Taxes Department",

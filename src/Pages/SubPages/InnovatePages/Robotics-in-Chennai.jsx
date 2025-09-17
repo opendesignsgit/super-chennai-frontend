@@ -59,6 +59,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why Chennai is Becoming a Robotics Powerhouse.svg",
+              altText: "robotics work",
             },
           ],
         },
@@ -219,6 +220,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Noteworthy Projects & Milestones.svg",
+              altText: "projects chennai",
             },
           ],
         },
@@ -247,6 +249,7 @@ export default function RoboticsinChennai() {
               note2:
                 "In Chennai, robots don’t just exist in labs — they clean, weld, transport, scan, and heal.",
               imgs: "/images/Innovate-Images/SubPages/Icons/The Future of Robotics in Chennai.svg",
+              altText: "robotics in chennai",
             },
           ],
         },
@@ -278,6 +281,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2004 – Foundation Laid.svg",
+              altText: "laid foundations",
             },
             {
               title: "2008 – Student-Led Innovation",
@@ -292,6 +296,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2008 – Student-Led Innovation.svg",
+              altText: "student led innovation",
             },
             {
               title: "2011 – Planys Technologies Founded",
@@ -306,6 +311,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2011 – Planys Technologies Founded.svg",
+              altText: "planys technologies",
             },
             {
               title: "2013 – Industry Begins Automation",
@@ -320,6 +326,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2013 – Industry Begins Automation.svg",
+              altText: "",
             },
             {
               title: "2015 – Rise of EdTech Robotics",
@@ -334,6 +341,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2015 – Rise of EdTech Robotics.svg",
+              altText: "ed tech company in chennai",
             },
             {
               title: "2017 – Healthcare Robotics Arrive",
@@ -348,6 +356,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2017 – Healthcare Robotics Arrive.svg",
+              altText: "healthcare robotics",
             },
             {
               title: "2018 – Genrobotics Collaborates with City",
@@ -362,6 +371,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2018 – Genrobotics Collaborates with City.svg",
+              altText: "",
             },
             {
               title: "2019 – Robotics + AI Merge",
@@ -373,6 +383,7 @@ export default function RoboticsinChennai() {
                 <>Chennai becomes a hub for AI-integrated robotic systems.</>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2019 – Robotics + AI Merge.svg",
+              altText: "robotics AI merge",
             },
             {
               title: "2020 – COVID Drives Telepresence Robotics",
@@ -384,6 +395,7 @@ export default function RoboticsinChennai() {
                 <>Surge in med-tech robotics R&D.</>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2020 – COVID Drives Telepresence Robotics.svg",
+              altText: "telepresence robotics",
             },
             {
               title: "2021 – Tamil Nadu Robotics League Launched",
@@ -398,6 +410,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2021 – Tamil Nadu Robotics League Launched.svg",
+              altText: "robotics league",
             },
             {
               title: "2022 – Government & DRDO Expand Military Robotics",
@@ -411,6 +424,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2022 – Government & DRDO Expand Military Robotics.svg",
+              altText: "military robotics ",
             },
             {
               title: "2023 – Warehouse + Industrial Robotics Boom",
@@ -422,6 +436,7 @@ export default function RoboticsinChennai() {
                 <>Demand rises in logistics, FMCG, and pharma sectors.</>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2023 – Warehouse + Industrial Robotics Boom.svg",
+              altText: "industrial robotics",
             },
             {
               title: "2024 – Swarm Robotics & Drone Tech Surge",
@@ -435,6 +450,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2024 – Swarm Robotics & Drone Tech Surge.svg",
+              altText: "",
             },
             {
               title: "2025 – Chennai Declared 'Robotics Cluster Zone'",
@@ -449,6 +465,7 @@ export default function RoboticsinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2025 – Chennai Declared 'Robotics Cluster Zone.svg",
+              altText: "",
             },
           ],
         },
@@ -486,7 +503,7 @@ export default function RoboticsinChennai() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/Electric-Vehicles-banner.jpg"
-            alt="ev cars in chennai"
+            alt="robotics in chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -556,7 +573,7 @@ export default function RoboticsinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -711,7 +728,7 @@ export default function RoboticsinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -801,7 +818,7 @@ export default function RoboticsinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -861,7 +878,7 @@ export default function RoboticsinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

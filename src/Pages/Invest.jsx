@@ -193,7 +193,7 @@ export default function Invest() {
         "To increase their brand recognition, several brands open franchise across Chennai. In Chennai, several businesses are seeking investors to build franchises and offer training to operate them.",
       image:
         "/images/Invest-Images/SubPages/Food-and-Beverage/coffee-shops.jpg",
-      imgAlt: "",
+      imgAlt: "coffee shop",
       link: "/investfranchisechennai#InvestId",
     },
     {

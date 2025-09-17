@@ -39,7 +39,7 @@ export default function InvestEventsChennai() {
       description:
         "You can spend money on traditional decorations, attendee costumes, food, and other events.",
       image: "/images/Invest-Images/SubPages/Vibrant/margazhi.jpg",
-      imgAlt: "",
+      imgAlt: "karnatic classical music",
     },
     {
       title: "Pongal Celebrations",
@@ -55,7 +55,7 @@ export default function InvestEventsChennai() {
       description:
         "Invest in these book fairs to draw publishers and book enthusiasts and get the rewards.",
       image: "/images/Invest-Images/SubPages/Vibrant/chennai-book.jpg",
-      imgAlt: "",
+      imgAlt: "chennai books",
     },
     {
       title: "Invest in the Natyanjali Dance Festival",
@@ -63,7 +63,7 @@ export default function InvestEventsChennai() {
       description:
         "Promote traditional classical dance in a noteworthy temple environment.",
       image: "/images/Invest-Images/SubPages/Vibrant/film-festivals.jpg",
-      imgAlt: "",
+      imgAlt: "film festival chennai",
     },
     {
       title: "Invest in Film Festivals",
@@ -71,7 +71,7 @@ export default function InvestEventsChennai() {
       description:
         "Invest in film festivals that take place at several places to attract large and popular audiences.",
       image: "/images/Invest-Images/SubPages/Vibrant/film-festivals.jpg",
-      imgAlt: "",
+      imgAlt: "film festival chennai",
     },
 
     {

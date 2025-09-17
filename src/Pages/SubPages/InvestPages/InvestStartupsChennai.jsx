@@ -33,7 +33,7 @@ export default function InvestStartupsChennai() {
       description:
         "Software development is a one-time expenditure. However, it can provide you with lifetime income.",
       image: "/images/Invest-Images/SubPages/Emerging-tech/saas.jpg",
-      imgAlt: "",
+      imgAlt: "saas companies in chennai",
       link: "/IT-ITeS-SaaS",
     },
     {

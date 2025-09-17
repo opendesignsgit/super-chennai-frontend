@@ -43,6 +43,7 @@ export default function BlockchaininChennai() {
                 "Tamil Nadu Blockchain Policy (2020) laid a roadmap for integrating blockchain across governance, finance, health, and identity.",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Government-&-Public-Services.svg",
+              alText: "public services in chennai",
             },
           ],
         },
@@ -66,6 +67,7 @@ export default function BlockchaininChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Who’s-Building-the-Future-in-Chennai.svg",
+              alText: "future development in chennai",
             },
           ],
         },
@@ -116,6 +118,7 @@ export default function BlockchaininChennai() {
                 "Support from TN Government in pushing real use-cases in public systems",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why-Chennai-Is-Becoming-a-Web3-Hub.svg",
+              alText: "Web3 hub",
             },
             {
               title: "Blockchain Conversations in Chennai",
@@ -134,6 +137,7 @@ export default function BlockchaininChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Blockchain Conversations in Chennai.svg",
+              alText: "blockchain communication",
             },
             {
               title: "What’s Next?",
@@ -147,6 +151,7 @@ export default function BlockchaininChennai() {
               note2:
                 "Not every city will build the blockchain layer of India. Chennai just might.",
               imgs: "/images/Innovate-Images/SubPages/Icons/What’s Next.svg",
+              alText: "new blockchains",
             },
           ],
         },
@@ -184,7 +189,7 @@ export default function BlockchaininChennai() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/Blockchain-Fintech-banner.jpg"
-            alt=""
+            alt="blockchain course in chennai"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -265,7 +270,7 @@ export default function BlockchaininChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.alText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -345,7 +350,7 @@ export default function BlockchaininChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.alText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

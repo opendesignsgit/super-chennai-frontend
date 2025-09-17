@@ -43,6 +43,7 @@ export default function HealthTechinChennai() {
                 "Manufacturing cluster for medical devices, implants, 3D-printed prosthetics in and around Ambattur, Sriperumbudur",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Why Chennai Leads in Health Tech.svg",
+              altText: "health tech in chennai",
             },
           ],
         },
@@ -113,6 +114,7 @@ export default function HealthTechinChennai() {
                 "Partners with Apollo, Kauvery, and Sankara Nethralaya",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/IIT Madras – Dept. of Biomedical Engineering.svg",
+              altText: "iit madras",
             },
             {
               title: "Anna University BioMed Lab",
@@ -120,6 +122,7 @@ export default function HealthTechinChennai() {
                 "AI for patient vitals, health monitoring apps, and smart diagnostics",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/Anna University BioMed Lab.svg",
+              altText: "anna university lab",
             },
             {
               title: "SRM Innovation Incubation Centre (Kattankulathur)",
@@ -127,6 +130,7 @@ export default function HealthTechinChennai() {
                 "Hosts health-tech startups working on low-cost devices & patient apps",
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/SRM Innovation Incubation Centre (Kattankulathur).svg",
+              altText: "srm innovation and incubation centre",
             },
           ],
         },
@@ -242,6 +246,7 @@ export default function HealthTechinChennai() {
               note2:
                 "Chennai is redefining healthcare not just for the city, but for the entire country — one algorithm, device, and diagnostic at a time.",
               imgs: "/images/Innovate-Images/SubPages/Icons/The Future What’s Next.svg",
+              altText: "chennai future",
             },
           ],
         },
@@ -274,6 +279,7 @@ export default function HealthTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/1983–1995 The Healthcare Backbone Is Built.svg",
+              altText: "healthcare chennai",
             },
             {
               title: "1996–2005: Digital Health Seeds Are Planted",
@@ -290,6 +296,7 @@ export default function HealthTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/1996–2005 Digital Health Seeds Are Planted.svg",
+              altText: "digital health chennai",
             },
             {
               title: "2006–2012: Rise of Health SaaS & Medical Devices",
@@ -307,6 +314,7 @@ export default function HealthTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2006–2012 Rise of Health SaaS & Medical Devices.svg",
+              altText: "chennai saas companies",
             },
             {
               title: "2013–2018: AI, Cloud & Mobile Health Take Off",
@@ -324,6 +332,7 @@ export default function HealthTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2013–2018 AI, Cloud & Mobile Health Take Off.svg",
+              altText: "top saas companies in chennai",
             },
             {
               title: "2019–2021: Pandemic Push & Innovation Boom",
@@ -341,6 +350,7 @@ export default function HealthTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2019–2021 Pandemic Push & Innovation Boom.svg",
+              altText: "health innovation",
             },
             {
               title: "2022–2024: Smart Hospitals & Deep AI",
@@ -359,6 +369,7 @@ export default function HealthTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2022–2024 Smart Hospitals & Deep AI.svg",
+              altText: "smart hospital",
             },
             {
               title: "2025 & Beyond: GenAI + BioAI + Public Health Tech",
@@ -376,6 +387,7 @@ export default function HealthTechinChennai() {
                 </>,
               ],
               imgs: "/images/Innovate-Images/SubPages/Icons/2025 & Beyond GenAI + BioAI + Public Health Tech.svg",
+              altText: "bio artificial intelligence",
             },
           ],
         },
@@ -415,7 +427,7 @@ export default function HealthTechinChennai() {
         <div className="accaodomationBannerSection">
           <img
             src="/images/Innovate-Images/SubPages/Healthcare-Tech-banner.jpg"
-            alt=""
+            alt="chennai healthcare services"
           />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
@@ -479,7 +491,7 @@ export default function HealthTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -557,7 +569,7 @@ export default function HealthTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -745,7 +757,7 @@ export default function HealthTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">
@@ -805,7 +817,7 @@ export default function HealthTechinChennai() {
                     {tenant.points.map((item, j) => (
                       <div key={j} className="clcboxItemss flex mb-4">
                         <div className="clcboxIImg">
-                          <img src={item.imgs} alt={item.title} />
+                          <img src={item.imgs} alt={item.altText} />
                         </div>
                         <div className="clcboxICont">
                           <h3 className="text-lg font-semibold mb-2">

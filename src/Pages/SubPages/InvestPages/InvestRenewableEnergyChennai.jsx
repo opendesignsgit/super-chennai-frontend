@@ -39,7 +39,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "Take advantage of these government programs and save power costs for property owners by installing them where they are required.",
       image: "/images/Invest-Images/SubPages/solar/rooftop.jpg",
-      imgAlt: "",
+      imgAlt: "solar companies in chennai",
     },
     {
       title: "Ground-mounted Solar Farms",
@@ -47,7 +47,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "Create a revenue stream and provide clean energy to the grid for huge utility-scale projects.",
       image: "/images/Invest-Images/SubPages/solar/ground.jpg",
-      imgAlt: "",
+      imgAlt: "ground mounted solar",
     },
     {
       title: "Solar Power for Industrial Units",
@@ -63,7 +63,7 @@ export default function InvestRenewableEnergyChennai() {
       description:
         "To promote sustainable irrigation and lessen dependency on conventional power sources, you can target and install solar electricity in Chennai's agricultural areas.",
       image: "/images/Invest-Images/SubPages/solar/water-pumps.jpg",
-      imgAlt: "",
+      imgAlt: "solar water pump",
     },
     {
       title: "Hospitals and Educational Institutions",

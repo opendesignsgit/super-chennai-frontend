@@ -47,7 +47,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Support initiatives to improve commuting times and lessen traffic congestion by building new flyovers and roads.",
       image: "/images/Invest-Images/SubPages/Infrastructure/new-flyovers.jpg",
-      imgAlt: "",
+      imgAlt: "flyover in chennai",
     },
     {
       title: "Drainage and Flood Management",
@@ -55,7 +55,7 @@ export default function InvestGovernmentInitiativesChennai() {
       description:
         "Enhance the city's resilience and lower the dangers of floods by wastewater management.",
       image: "/images/Invest-Images/SubPages/Infrastructure/drainage.jpg",
-      imgAlt: "",
+      imgAlt: "chennai drainage",
     },
     {
       title: "Multimodal Transportation Hubs",

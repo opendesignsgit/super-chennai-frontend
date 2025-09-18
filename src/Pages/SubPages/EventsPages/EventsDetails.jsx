@@ -11,37 +11,37 @@ export default function EventsDetails() {
 
   const [event, setEvent] = useState(null);
 
-  useEffect(() => {
-    const stateEvent = location.state?.card;
-    console.log(stateEvent);
-
-    if (stateEvent) {
-      setEvent(stateEvent);
-    } else {
-      const found = cards.find((e) => e.id === Number(id));
-      if (found) {
-        setEvent(found);
-      } else {
-        navigate("/events", { replace: true });
-      }
-    }
-  }, [id, location.state, navigate]);
-
   // useEffect(() => {
   //   const stateEvent = location.state?.card;
-  //   console.log("Event from state:", stateEvent);
+  //   console.log(stateEvent);
 
   //   if (stateEvent) {
   //     setEvent(stateEvent);
   //   } else {
-  //     const found = cards.find((e) => e.url === url);
+  //     const found = cards.find((e) => e.id === Number(id));
   //     if (found) {
   //       setEvent(found);
   //     } else {
   //       navigate("/events", { replace: true });
   //     }
   //   }
-  // }, [url, location.state, navigate]);
+  // }, [id, location.state, navigate]);
+
+  useEffect(() => {
+    const stateEvent = location.state?.card;
+    console.log("Event from state:", stateEvent);
+
+    if (stateEvent) {
+      setEvent(stateEvent);
+    } else {
+      const found = cards.find((e) => e.url === url);
+      if (found) {
+        setEvent(found);
+      } else {
+        navigate("/events", { replace: true });
+      }
+    }
+  }, [url, location.state, navigate]);
 
   if (!event) {
     return null; // or loader

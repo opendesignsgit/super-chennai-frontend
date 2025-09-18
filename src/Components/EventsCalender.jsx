@@ -106,26 +106,25 @@ export default function CardCarousel111() {
             />
             <div className="MainCalendarSectionEvent">
               <h4>
-                <span>August - 2025 </span>
+                <span>September - 2025 </span>
               </h4>
 
               <div className="secondSectionEventsCalendar">
                 <div className="EventsCalendarDateandTime">
-                  <p className="dateEvents">30</p>
+                  <p className="dateEvents">21</p>
                   <p className="dayEvents">Saturday</p>
                 </div>
 
                 <div>
-                  <p className="eventsNAME">Chennai Bus Treasure </p>
-                  <p className="eventspLACE">Hunt | Chennai</p>
+                  <p className="eventsNAME">Namma Chennai</p>
+                  <p className="eventspLACE">Juniorthon 3rd Edition</p>
                 </div>
               </div>
 
               <div className="thirdSectionCalendarContent">
                 <p>
-                  Get ready, Chennai! 🎉 The MTC Bus Treasure Hunt is back this
-                  Madras Month, bringing you an exciting adventure across the
-                  city.
+                  Fun & Fitness Sports Day 2025 for kids of all ages with races,
+                  prizes, and more.
                 </p>
               </div>
 
@@ -134,7 +133,7 @@ export default function CardCarousel111() {
                 <a>Treasure Hunt</a>
               </div>
 
-              <a href="/eventsdetails/93">
+              <a href="/events-in-chennai/chennai-marathon-namma-juniorthon-3-edition-kids-run">
                 <p
                   // onClick={() => {
                   //   navigate("/eventstechinnovaters");
@@ -177,7 +176,7 @@ export default function CardCarousel111() {
                 >
                   <div className="relative w-full h-[250px]">
                   
-                    <a href={`/eventsdetails/${card.id}`}>
+                    <a href={`/events-in-chennai/${card.id}`}>
                       <img
                         src={card.image}
                         alt={card.title}
@@ -214,7 +213,7 @@ export default function CardCarousel111() {
                     whileHover={{ scale: 1.05 }}
                   >
                     <div className="relative w-full h-[250px]">
-                      <a href={`/eventsdetails/${card.id}`}>
+                      <a href={`/events-in-chennai/${card.id}`}>
                         <img
                           src={card.image}
                           alt={card.title}

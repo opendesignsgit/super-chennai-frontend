@@ -26,7 +26,7 @@ export const cards1 = () => {
 
 export const cards = [
   {
-    url: "one",
+    url: "the-cry-club",
     id: 1,
     EventsCalendarTitle: "The Cry Club",
     EventsCalendarContent:
@@ -46,7 +46,7 @@ export const cards = [
   },
 
   {
-    url: "two",
+    url: "4th-tamil-nadu-international-kite-festival-day-3",
     id: 2,
     EventsCalendarTitle: "4th Tamil Nadu International Kite Festival | Day 3",
     EventsCalendarContent:
@@ -78,7 +78,7 @@ Huge colorful teddy bears and realistic dinosaurs for photo fun
     `,
   },
   {
-     url: "three",
+    url: "4th-tamil-nadu-international-kite-festival-day-4",
     id: 3,
     EventsCalendarTitle: "4th Tamil Nadu International Kite Festival | Day 4",
     EventsCalendarContent:
@@ -103,6 +103,7 @@ Visitors can enjoy a thrilling lineup of events, featuring dazzling internationa
 Over 250 kites from eight countries will paint the skies, alongside vibrant themed kites promoting “SAVE MARINE LIFE”. Don’t miss the huge colorful teddy bears and realistic dinosaurs, perfect for photo opportunities and adding extra fun for visitors of all ages.`,
   },
   {
+    url: "gallabox-presents-patriotic-run",
     id: 4,
 
     EventsCalendarTitle: "GALLABOX presents Patriotic Run",
@@ -164,6 +165,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
 `,
   },
   {
+    url: "cinematic-magic-returns-to-chennai-tonight",
     id: 5,
 
     EventsCalendarTitle: "CINEMATIC MAGIC RETURNS TO CHENNAI TONIGHT!",
@@ -199,6 +201,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       `,
   },
   {
+    url: "gaming-thiruvizha",
     id: 6,
     metaTitleEvent: "Chennai Events/Gaming Thiruvizha in Chennai/Super Chennai",
     conicallinkEvent: "/eventsdetails/6",
@@ -223,6 +226,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       Gaming Thiruvizha is India’s flagship pop culture and esports festival — a one-of-a-kind celebration uniting gamers, cosplayers, anime fans, creators, and digital youth. Rooted in local tradition yet driven by global aspirations, it offers an immersive cultural experience that goes far beyond gaming tournaments.With your ticket, you can compete in BGMI, Valorant, EAFC, Street Fighter, and Chess, explore free play zones with GTA V, CS2, DOTA, and Among Us, and witness the U16 National Chess Championship. The festival also features a Cosplay Showdown leading to the Tokyo Game Show, anime and art zones, traditional South Indian games, photo booths, local street food, carnival snacks, exclusive merchandise, and exciting giveaways — making it the ultimate weekend of gaming and entertainment.`,
   },
   {
+    url: "resin-art-workshop",
     id: 7,
 
     siteLink: "https://in.bookmyshow.com/events/resin-beach-art/ET00400406",
@@ -248,6 +252,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
   `,
   },
   {
+    url: "pichwai-painting-workshop",
     id: 8,
     EventsCalendarTitle: "Pichwai Painting Workshop",
     EventsCalendarContent:
@@ -266,6 +271,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Pichwai Painting Workshop: A Cultural Art Experience – Join us for a captivating workshop where you’ll explore the traditional art of Pichwai painting, creating intricate designs and vibrant colors inspired by the rich heritage of Rajasthan. No prior experience is necessary as our expert instructors will guide you through essential techniques like brushwork, color blending, and incorporating symbolic elements. Enjoy creative freedom to experiment with colors, patterns, and motifs inspired by Lord Krishna’s life, resulting in unique artworks that are both visually appealing and culturally significant. Immerse yourself in a relaxing, stress-free atmosphere, with all materials including paints, brushes, and canvas provided, and leave with a delightful and unforgettable experience.",
   },
   {
+    url: "kids-texture-workshop",
     id: 9,
     EventsCalendarTitle: "Kid's Texture Workshop",
     EventsCalendarContent:
@@ -284,6 +290,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Here’s our beginner-friendly art workshop where our instructor will guide you step-by-step, helping you comfortably navigate the creative process at your own pace. We provide all materials and offer flexible durations so you can work quickly or take your time. Enjoy a relaxed, creative space whether you’re coming solo, as a couple, with friends, or family, and get 50% of your venue payment back as food credit to enjoy delicious refreshments while you create. With 1:1, 2:1, or 3:1 formats, you’ll receive personalized attention in a focused, interactive environment. Leave the workshop not just with new skills, but with your own handmade masterpiece. Prior registration needed; for queries contact the café.",
   },
   {
+    url: "foodathon-4-0",
     id: 10,
     siteLink: "https://reg.myraceindia.com/MRTS1/foodathon",
     EventsCalendarTitle: "Foodathon 4.0 ",
@@ -313,6 +320,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       `,
   },
   {
+    url: "chai-pe-charcha",
     id: 11,
     EventsCalendarTitle: "Chai Pe Charcha",
     EventsCalendarContent:
@@ -331,6 +339,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Sit around a table, in a cozy little space and enjoy a cup of Chai while connecting with people through heart to hearts and other touching conversations. It's a cozy little meet up for people who just want to get to know others and have good conversations. If you want to make new friends over Chai, come join us.",
   },
   {
+    url: "clay-miniature-magnet",
     id: 12,
     metaTitleEvent: "Creative Clay Magnet Workshop | Chennai Hands-On Session",
     conicallinkEvent: "/eventsdetails/12",
@@ -355,6 +364,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Clay Miniature Magnet Workshop Create Tiny Treasures with Magnetic Appeal Join us for a hands-on clay miniature magnet workshop where you`ll learn the techniques to craft exquisite miniature sculptures that can be transformed into functional magnets. Under the guidance of our skilled instructor, you`ll explore the intricacies of working with clay on a small scale and adding magnetic elements. What you`ll learn:  Clay basics: Properties of clay, tools, and techniques. Miniature sculpting: Creating detailed features and forms. Texture and detail: Adding depth and realism to your creations. Magnetic integration: Incorporating magnets into your miniatures. Finishing touches: Applying protective coats and adding decorative elements. What you`ll need: Clay (provided by the workshop) Sculpting tools Magnets (provided by the workshop) Apron Workshop highlights: Personalized creations: Design unique miniature magnets. Step-by-step instruction: Learn from a skilled artist. Relaxing atmosphere: Enjoy a creative and enjoyable experience. Take-home masterpieces: Leave with your beautifully crafted miniature magnets. Register today and embark on a journey of miniature artistry with magnetic appeal!",
   },
   {
+    url: "resin-keychain-workshop",
     id: 13,
     EventsCalendarTitle: "Resin keychain Workshop",
     EventsCalendarContent:
@@ -373,6 +383,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Here’s our beginner-friendly art workshop. Hands-On Guidance: Our instructor will guide you step-by-step, helping you comfortably navigate the entire creative process at your own pace. All Materials Provided: We’ve got you covered with all the tools and materials. Flexible Duration: Some participants finish quickly, while others love to slow down and enjoy the process — both are welcome! Create at your own rhythm. Interactive Learning: This is not just a demo! Ask anything about resin — from safety to curing tips. We encourage questions throughout to help you gain real understanding and confidence. Relaxed, Creative Space: Whether youre coming solo, as a couple, with friends, or family, this session offers a calming, expressive escape from routine. Refreshments Provided: Get 50% of your venue payment back as food credit. Enjoy delicious refreshments while you create — its a treat for both your mind and taste buds! 1:1, 2:1, or 3:1 Format: We offer personalized attention with small group formats for a more focused and interactive experience. Take Your Art Home: Leave the workshop not just with new skills, but with your own handmade masterpiece! Prior registration needed. For queries contact cafe",
   },
   {
+    url: "isai-sangamam-2025",
     id: 14,
     EventsCalendarTitle: "ISAI SANGAMAM 2025",
     EventsCalendarContent:
@@ -391,6 +402,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Get ready for an electrifying evening of music, emotion, and pure talent at Isai Thiruvizha 2K25 – Live in Concert, powered by EventVibe and Musica Cura. Experience soulful live performances by stars from Zee Tamil SaReGaMaPa and Super Singer, alongside the sensational Musica Cura Band. Featured artists include Sanjana, Abinesh, Sujesh, Thanumitha, Sabari, Balaji, Manoj, Praveen, Vishwa, and Suhasini, with live band members Jai on cajon, Sanjay on guitar, and Joyson on keys. Join us for a night of unforgettable melodies. Book your tickets now!",
   },
   {
+    url: "theatre-workshop-for-kids",
     id: 15,
     EventsCalendarTitle: "Theatre Workshop for Kids",
     EventsCalendarContent:
@@ -409,6 +421,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Theatre is a powerful space for children to truly be themselves, helping them overcome fear, build patience, learn respect and responsibility, improve communication, and much more. Through exploring their emotional range with facial expressions like smiles, anger, and disgust, discovering the power of non-verbal communication through gestures and movement, learning to use their voices from natural sounds to spoken words, and building engaging stories through oral storytelling, children develop confidence and creativity. This workshop offers improved communication skills, stage presence, increased self-confidence through group interaction, exposure to the joy and energy of drama, creative expression through writing and performance, and simple techniques to build and tell compelling stories. Scheduled for 17th August, from 10 am to 1 pm at IDAM, Kodambakkam, it is designed for children aged 5 to 13 years and limited to 15 participants. Join us for a week of discovery, creativity, and fun where children grow through drama and storytelling!",
   },
   {
+    url: "resin-beach-art",
     id: 16,
     EventsCalendarTitle: "Resin Beach Art",
     EventsCalendarContent:
@@ -427,6 +440,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Dive into the captivating world of resin art with our hands-on Resin Beach Art workshop! Perfect for both beginners and experienced artists, this event is designed to unlock your creative potential through the vibrant and versatile medium of resin.Under the guidance of experienced instructors, you’ll learn the fundamentals of working with resin, including safety tips, mixing techniques, color blending, and molding. Our focus will be on creating stunning beach-themed art pieces, capturing the essence of the ocean with waves, sand, and sea-inspired colors.By the end of the session, you’ll have crafted your own mesmerizing piece of resin beach art to take home, whether it’s a beautiful seascape, a beach-themed tray, or an abstract ocean-inspired masterpiece. Join us for an afternoon of creativity, relaxation, and fun, and discover the endless possibilities that resin beach art offers!",
   },
   {
+    url: "art-date",
     id: 17,
     EventsCalendarTitle: "Art Date",
     EventsCalendarContent:
@@ -445,6 +459,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Looking for a creative way to connect with someone new? Join us for the “Small World Art Date,” where art meets serendipity! Participants will be paired up with their partner to embark on an exciting, collaborative art activity. Whether you’re a seasoned artist or just looking to have some fun, this event is designed to spark creativity and forge connections. Expect laughter, inspiration, and perhaps a masterpiece or two! Come with an open mind and leave with a new friend—or maybe something more.",
   },
   {
+    url: "sunburn-weekend-ottello-goa",
     id: 18,
     EventsCalendarTitle: "SUNBURN WEEKEND - OTTELLO GOA",
     EventsCalendarContent:
@@ -463,6 +478,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "This Monsoon gonna be different in Goa. An unforgettable experience over the private Lake with this mesmerising lineup. We gonna take care of your party animal all night along. Expect some elite techno heads and su real vibes.",
   },
   {
+    url: "pizza-playdate",
     id: 19,
     EventsCalendarTitle: "Pizza Playdate",
     EventsCalendarContent:
@@ -481,6 +497,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Join us for a delightful Pizza Playdate at Hibiscus! Perfect for ages 5 and up, this hands-on workshop promises fun for all. Allow your little ones to experience the delight of crafting tasty and nutritious pizzas alongside our skilled chefs. They will discover a variety of dough and sauce recipes, as well as learn techniques for preparing and cooking toppings. Don’t miss this cheesy adventure! Our chefs will provide expert guidance throughout the entire process, from rolling out the dough to baking their ideal pizza!",
   },
   {
+    url: "cake-baking-and-frosting-workshop",
     id: 20,
     EventsCalendarTitle: "Cake Baking and Frosting Workshop",
     EventsCalendarContent:
@@ -499,6 +516,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Our workshop offers comprehensive learning for aspiring bakers, covering baking basics such as understanding baking science, accurate ingredient measurement, and mastering oven preheating and temperature settings. You’ll learn how to use an OTG effectively, including selecting trays, molds, and liners, and managing temperature and timing. Master techniques for baking moist and fluffy cupcakes and cakes in a variety of flavors like vanilla, pineapple, strawberry, butterscotch, chocolate, tutti frutti, orange, and litchi. Learn frosting techniques including rosettes, swirls, and color/flavor customization for different themes. Explore signature cakes and pastries such as pineapple pastry, black forest pastry, chocolate truffle with ganache, photo cakes, Barbie doll cakes, choco lava cakes, red velvet cake, and blueberry cake. Discover decorating techniques like elegant feather and drip designs, edible flowers, sprinkles, and creative accents, while mastering the use of piping bags, spatulas, and scrapers. By the end of the workshop, you’ll have the skills and confidence to bake and decorate cakes for any occasion. The class highlights include practical, hands-on sessions, personal attention to each student, printed recipe notes, exclusive offline classes for girls and ladies, all materials provided, and an online option also available.",
   },
   {
+    url: "hand-built-pottery",
     id: 21,
     EventsCalendarTitle: "Hand Built Pottery",
     EventsCalendarContent:
@@ -517,6 +535,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Step into the world of tactile creativity at Clay Play Day, an immersive event designed for you to explore the joys of pottery without boundaries. Perfect for beginners and enthusiasts alike, this event invites you to dive into hand-built clay modeling in a free-form, unguided environment. Get your hands dirty and let your creativity flow as you shape clay using only your hands, knives, and brushes—without structured guidance. All supplies, including high-quality clay and sculpting tools, are provided; just bring your imagination and willingness to explore. Whether you want to unwind, try a new hobby, or spend a day doing something different, Clay Play Day offers a meditative escape into the art of hand-building with clay. Please note, this is not a wheel pottery workshop.",
   },
   {
+    url: "one-direction-tribute-echoes-of-payno",
     id: 22,
     metaTitleEvent:
       "Liam Payne Show / One Direction Tribute / Events in Chennai",
@@ -542,6 +561,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "It’s Liam Day, babe—our guardian angel is turning a year older! This August 30, we’re celebrating Daddy Direction—the calm in our chaos, the one who kept the doors locked and our hearts full. Get ready for 4 hours of dancing, soft boy tears, and screaming every Liam line like it’s 2013 again—from Little Things to Strip That Down, we’re giving him the love he’s always given us. Venue to be announced, starting at 2:30 PM (be on time—Liam’s watching). Tickets are ₹450 with no cover charge. It’s giving Tumblr moodboards, “Hi angel” texts, plaid shirts, and that one Liam smile that saved your life. You coming or what?",
   },
   {
+    url: "midweek-masala-weekday-comedy-show",
     id: 23,
 
     EventsCalendarTitle: "Midweek Masala - Weekday comedy show",
@@ -561,6 +581,7 @@ Over 250 kites from eight countries will paint the skies, alongside vibrant them
       "Waiting for the weekend for some good comedy? Well, you don't have to! We present you weekday comedy show where best comics of Chennai do their new & working material.",
   },
   {
+    url: "the-hindu-made-of-chennai",
     id: 24,
     metaTitleEvent:
       "Super Chennai / Music & Food Festival / Flavours & Festive Vibes",
@@ -592,6 +613,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       `,
   },
   {
+    url: "reema-swad-cooking-classes",
     id: 25,
     EventsCalendarTitle: "Reema Swad Cooking Classes",
     EventsCalendarContent:
@@ -611,6 +633,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
 
   {
+    url: "chalta-hai-comedy",
     id: 26,
     EventsCalendarTitle: "Chalta Hai Comedy",
     EventsCalendarContent:
@@ -629,6 +652,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Stories from his childhood home to his first MNC job after graduation, this show gets more personal, more awkward and even more hilarious. Is show ko dekhne k baad aap samjah jayengey ki embarrassing aur tragic situations mei fasna Aakash ka daily ka kaam hai. So get ready to LOL and fall off your chairs because you are signing up for something totally worth it. “Ye about the show ka paragraph likhna apne ek ghante ka show banana se bhi zada tough lagta hai” : Aakash",
   },
   {
+    url: "daily-ka-kaam-hai-by-aakash-gupta",
     id: 27,
     EventsCalendarTitle: "Daily Ka Kaam Hai By Aakash Gupta",
     EventsCalendarContent:
@@ -647,6 +671,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "From stories about his childhood home to his first MNC job after graduation, this show gets increasingly personal, awkward, and hilarious. After watching it, you’ll realize that getting caught in embarrassing and tragic situations is just a part of Aakash’s everyday life. So get ready to laugh out loud and maybe even fall off your chair, because you’re signing up for an experience that’s totally worth it. As Aakash says, “Writing this show’s description feels even tougher than creating my one-hour performance.”",
   },
   {
+    url: "oriole-entertainment-live",
     id: 28,
     EventsCalendarTitle: "Oriole Entertainment Live",
     EventsCalendarContent:
@@ -665,6 +690,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Oriole Entertainment is the pioneer of Tier 2 and Tier 3 city comedy shows. They have been dedicated to making people laugh since 2017 and plan to do it for the rest of their lives. They are most popularly known as the house of Anubhav Singh Bassi and Harsh Gujral. Their shows have made people chuckle in cities like Agra, Gurugram, Lucknow, Kanpur, Dehradun and many more. Oriole Entertainment Pvt Ltd was founded by Ankur Bhargava.",
   },
   {
+    url: "comedy-ladder",
     id: 29,
     EventsCalendarTitle: "Comedy Ladder",
     EventsCalendarContent:
@@ -683,6 +709,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Comedy Ladder is the mothership of everything comedy. Founded in 2016 and now in its 7th year, Comedy Ladder has built a strong reputation with shows across India in venues such as NCPA Mumbai, Integral Space Mumbai, Jeff Goldberg Studio Mumbai, Happy High Delhi, and many more. It is not just a launchpad but also a stage for comics to perform their one-hour solo shows. Comedy Ladder collaborates with some of the biggest names in the industry including Aditi Mittal, Jeeya Sethi, Shreeja Chaturvedi, Sumaira Shaikh, Niv Prakasam, Sumukhi Suresh, Prashasti Singh, Kajol Srinivasan, Sonali Thakker, Pavitra Shetty, Gurleen Pannu, Sherya Priyam Roy, Biswa Kalyan Rath, Siddharth Dudeja, Kunal Kamra, Chirag Punjwani, Ashish Dash, Anand Reghu, Shridhar V, Navin Noronha, and many more. With over 2000 shows, Comedy Ladder is a household name in the comedy industry.",
   },
   {
+    url: "summer-camp-for-kids",
     id: 30,
     EventsCalendarTitle: "Summer Camp for Kids",
     EventsCalendarContent:
@@ -701,6 +728,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Hamleys play breathes in a whole new life to the traditional idea of play & infuses the liveliness of outdoors and the never-ending elusiveness of the fantasies of a child’s mind. Welcome to the world of Mr & Mrs. Hopper who will take you through their private garden that is filled with adventure. The garden includes the Musical Wall, Ball Pool, Slides, Scarf shooters, Sand Play, Rock climbing, Water Play & many more fun-filled activities. It also has a dedicated space for Storytelling & DIY activities. ",
   },
   {
+    url: "magic-beans-online-kids-workshops",
     id: 31,
     EventsCalendarTitle: "Magic Beans Online Kids Workshops",
     EventsCalendarContent:
@@ -719,6 +747,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Magic Beans is an activity centre, daycare & toy library, based in Mumbai, catering specifically to the development of 1 year to 6 year olds.",
   },
   {
+    url: "hamleys-play-and-playzone",
     id: 32,
     EventsCalendarTitle: "Hamleys Play & Hamleys Playzone",
     EventsCalendarContent:
@@ -737,6 +766,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Breathing in a whole new life to the traditional idea of play, Hamleys play Area infuses the liveliness of the outdoor and the never-ending elusiveness of the fantasies of a child’s mind. ",
   },
   {
+    url: "sid-sriram-live-in-concert-chennai",
     id: 33,
     metaTitleEvent:
       "Sid Sriram Live / Soulful Music & Magic On Stage / Super Chennai",
@@ -765,6 +795,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       `,
   },
   {
+    url: "dreamcatcher-workshop",
     id: 34,
     EventsCalendarTitle: "Dreamcatcher Workshop",
     EventsCalendarContent:
@@ -783,6 +814,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Here’s our beginner-friendly art workshop where our instructor will guide you step-by-step, helping you comfortably navigate the entire creative process at your own pace. All materials and tools are provided so you can focus on your art. The workshop offers flexible duration—some participants finish quickly, while others take their time; all are welcome to create at their own rhythm. Whether you come solo, as a couple, with friends, or family, enjoy a relaxed and creative space that offers a calming, expressive escape from routine. Refreshments are provided with 50% of your venue payment returned as food credit, making it a treat for both your mind and taste buds. Personalized attention is available in small group formats of 1:1, 2:1, or 3:1 for a focused and interactive experience. Leave the workshop not just with new skills but with your own handmade masterpiece. Prior registration is needed; for queries, please contact the café.",
   },
   {
+    url: "paal-payasam-live",
     id: 35,
     EventsCalendarTitle: "Paal Payasam Live",
     EventsCalendarContent:
@@ -801,6 +833,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Join us for a delightful evening with 'Paal Payasam Live' - a band of young musicians from Chennai. Hosted by Arena - The Art Experience, ECR's brand new cultural hub, this event features a menu of live music paired with a side of theatrical flair. We'll be serving up tributes to the legendary musicians of Tamil cinema alongside our own original compositions, all spiced with drama and garnished with comedy. What are you waiting for? Grab your tickets now!",
   },
   {
+    url: "chennai-bus-treasure-hunt",
     id: 36,
     siteLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSdklrpjtrzRgr_LhmH_zXf4tfu70NJZ18nuUd9vObd03KvT1w/viewform",
@@ -830,6 +863,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     `,
   },
   {
+    url: "msv-ninaithale-inikkum",
     id: 37,
     EventsCalendarTitle: "MSV - Ninaithale Inikkum",
     EventsCalendarContent:
@@ -848,6 +882,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Naveen Fine Arts proudly presents 'Ninaithale Inikkum,' a grand musical tribute to the legendary M.S. Viswanathan. Get ready for a mesmerizing evening of timeless melodies as the playback singer Malathi Lakshman takes the stage to recreate the magic of MSV's unforgettable tunes. This event promises to be a soul-stirring musical experience that will transport you back to the golden era of Tamil music, accompanied by the Ram in Paadum Vaanampaadi Orchestra.",
   },
   {
+    url: "scratch-pottery",
     id: 38,
     siteLink: "https://in.bookmyshow.com/events/sgraffito-pottery/ET00449867",
     EventsCalendarTitle: "Scratch Pottery",
@@ -867,6 +902,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Ever wondered what beauty lies just beneath the surface? Join us for a hands-on Sgraffito Workshop, where you’ll carve through layers of color to reveal stunning contrasts and patterns. This ancient art form, used in pottery, murals, and design, teaches us that sometimes uncovering depth takes just a little scratch. You’ll learn how to layer pigments or slips, master techniques to etch your own designs, and explore the philosophy of “subtracting to reveal.” Whether you’re a seasoned creator or a curious beginner, this workshop is all about mindfulness, expression, and uncovering hidden beauty.",
   },
   {
+    url: "crochet-workshop",
     id: 39,
     EventsCalendarTitle: "Crochet Workshop",
     EventsCalendarContent:
@@ -885,6 +921,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Happy Crocheting! ❤️ Here’s our beginner-friendly art workshop where our instructor will guide you step-by-step, helping you comfortably navigate the creative process at your own pace. All materials are provided, and you can work at a flexible pace — finish quickly or take your time. Enjoy a relaxed, creative space whether you come solo, as a couple, with friends, or family, and get 50% of your venue payment back as food credit to enjoy delicious refreshments while you create. With 1:1, 2:1, or 3:1 formats, you’ll receive personalized attention in a small group setting, and leave with new skills and your own handmade masterpiece. Prior registration needed; for queries contact the café.",
   },
   {
+    url: "epic-date-pass",
     id: 40,
     metaTitleEvent: "Events in Chennai / Epic Date Pass / Super Chennai",
     conicallinkEvent: "/eventsdetails/40",
@@ -908,6 +945,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Discover the magic of connection with our all-date event pass! Join us for a day packed with laughter, inspiration, and camaraderie at Small World, where a tapestry of unique events and experiences weave together stories and create lasting bonds. Get access to all our in-house date events like baking, canvas painting, candle making, pottery, and more, engaging in activities that spark your creativity and challenge your comfort zone. The Epic Date Pass includes a parade of interactive and heartwarming artistic, musical, and social events, offering endless moments of joy as you connect with fellow explorers. Let’s create a mosaic of memories, spark meaningful connections, and share stories that we’ll laugh about for years to come. Limited spots available for this intimate gathering—where every moment celebrates togetherness.",
   },
   {
+    url: "theatre-workshop-for-kids",
     id: 41,
     EventsCalendarTitle: "Theatre Workshop for Kids",
     EventsCalendarContent:
@@ -926,6 +964,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Theatre is a powerful space for children to truly be themselves. It helps them overcome fear, build patience, learn respect and responsibility, improve communication, and much more. Whether telling a story, speaking to an audience, or becoming a character, theatre opens up a world of possibilities. Children will explore their emotional range through facial expressions, discover the power of non-verbal communication through gestures and movement, learn to use their voices confidently, and build engaging stories through oral storytelling. Workshop benefits include improved communication and stage presence, increased self-confidence through group interaction, exposure to the joy and energy of drama, creative expression through writing and performance, and simple techniques for storytelling. The workshop will be held at IDAM, Kodambakkam, on 17th August from 10 am to 1 pm, for children aged 5 to 13 years, limited to 15 participants. Join us for a day of discovery, creativity, and fun where children grow through drama and storytelling!",
   },
   {
+    url: "comedy-sabha-by-tanglishcomedy",
     id: 42,
     metaTitleEvent:
       "Comedy Sabha / Tanglish Comedy / Standup Comedy in Chennai",
@@ -951,6 +990,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Standup comedy you've watched on YouTube, reels, TV, and even OTT apps — but have you experienced it live, in front of an energetic audience, laughing and clapping along? If you want to see that, come to the mini-show Comedy Sabha! Comedy Sabha is a 75-minute comedy mini-show featuring a mix of standup and sketch comedy in Tamil, English, and Tanglish. The show includes new, experienced, and professional comedians performing one after another, hosted by a lively MC who keeps the energy high throughout. It’s an electrifying atmosphere where all your mid-week work-life stress melts away. For just 150 rupees, enjoy a pakka paisa vasool experience on a Wednesday! Book now!",
   },
   {
+    url: "midweek-masala-weekday-comedy-show",
     id: 43,
     EventsCalendarTitle: "Midweek Masala - Weekday comedy show",
     EventsCalendarContent: "Waiting for the weekend for some good comedy?....",
@@ -968,6 +1008,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Waiting for the weekend for some good comedy? Well, you don’t have to! We present you weekday comedy show where best comics of Chennai do their new & working material. (Limited car parking at the venue please prefer bike or public transport)",
   },
   {
+    url: "candle-making-workshop",
     id: 44,
     EventsCalendarTitle: "Candle Making Workshop",
     EventsCalendarContent:
@@ -986,6 +1027,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Learn how to make beautiful handmade candles at our candle making workshop! You'll have the opportunity to create several candles, experimenting with different techniques and styles. Our expert instructor will provide tips and tricks to ensure your candles burn evenly and smell amazing. By the end of the session, you'll take home your handcrafted creations and the skills to continue making candles on your own!",
   },
   {
+    url: "macrame-workshop",
     id: 45,
     EventsCalendarTitle: "Macrame Workshop",
     EventsCalendarContent:
@@ -1004,6 +1046,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Here’s our beginner-friendly art workshop designed to offer hands-on guidance with an instructor who will walk you step-by-step through the creative process at your own pace. All materials and tools are provided so you can focus fully on your art. The duration is flexible—whether you finish quickly or prefer to take your time, you can create at your own rhythm. This relaxed, creative space welcomes solo attendees, couples, friends, or families, providing a calming and expressive escape from routine. Refreshments are included, with 50% of your venue payment returned as food credit, making it a treat for both mind and taste buds. Personalized attention is offered in small group formats of one-on-one, two-on-one, or three-on-one to enhance interaction and focus. You’ll leave the workshop not only with new skills but also with your own handmade masterpiece. Prior registration is needed; for queries, please contact the café.",
   },
   {
+    url: "musical-queens-celebrating-7-golden-voices",
     id: 46,
     EventsCalendarTitle: "MUSICAL QUEENS - Celebrating 7 Golden Voices",
     EventsCalendarContent: "ABBAS Cultural presents 'MUSICAL QUEENS....",
@@ -1021,6 +1064,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "ABBAS Cultural presents 'MUSICAL QUEENS - CELEBRATING 7 GOLDEN VOICES OF TAMIL CINEMA.' Join for a soul-stirring musical celebration honoring the legendary female playback singers P. Susheela, L.R. Eswari, S. Janaki, Vani Jayaram, Jency, Swarnalatha & K.S. Chitra, whose voices have become eternal treasures in our hearts. The event is a tribute to their timeless songs and contributions to Tamil cinema music.",
   },
   {
+    url: "vikkals-comedy-cafe",
     id: 47,
     EventsCalendarTitle: "Vikkals Comedy Cafe",
     EventsCalendarContent: "Open mic nights are where OG standup comics.....",
@@ -1038,6 +1082,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Open mic nights are where OG standup comics and amateur open mic-ers come together to try out their new jokes. It’s a stage where you can spill your emotions with humor. Rs. 100 from the ticket price can be reimbursed on food and beverages as sides for the mains—entertainment included. Tickets are for audience only; performers must register separately.",
   },
   {
+    url: "unplugged-melody-ft-aadithya-and-ramya",
     id: 48,
     EventsCalendarTitle: "Unplugged Melody Ft. Aadithya and Ramya",
     EventsCalendarContent: "Get ready for an enchanting evening of soulful...",
@@ -1055,6 +1100,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Get ready for an enchanting evening of soulful melodies and acoustic brilliance at Unplugged Melody Night, featuring the powerful vocal duo Aadithya SM and Ramya RamC, accompanied by the supremely talented guitarist Srinivas. Aadithya SM, a passionate vocalist since childhood, rose to fame through the reality show Rajaparvai and has performed alongside top playback singers like Yuvan Shankar Raja and Karthik. He is a regular at prestigious audio launches and live concerts, including events like Ponniyin Selvan and performances with artists such as Vijay Antony. Ramya RamC is a seasoned playback singer, dubbing artist, and international performer who has lent her voice to music by award-winning composers like Jake's Bejoy, GV Prakash, and Sam CS. Her recent work features in the Malayalam blockbuster Officer On Duty, starring Kunchacko Boban and Priyamani. Srinivas, with over a decade of experience, is an acclaimed session guitarist known for his performances on Sa Re Ga Ma Pa and training under the legendary Ilayaraja's personal guitarist, Sada Master. Let the music take over as these artists bring you a night of intimate, unplugged magic—only at Hard Rock Cafe Chennai.",
   },
   {
+    url: "rage-therapy",
     id: 49,
     metaTitleEvent:
       "Workshops in Chennai, Rage Therapy, Japanese Art of Kintsugi",
@@ -1079,6 +1125,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Rage Therapy – Break. Heal. Repeat. Ever felt like smashing something to let it all out? At Rage Therapy, we hand you ceramic pots and a safe space to release every ounce of pent-up frustration—by breaking them! But that’s not all—after the rage comes the repair. Using the Japanese art of Kintsugi, you`ll piece your broken items back together, turning cracks into golden lines of healing. Come for the catharsis. Stay for the transformation. No judgment. Just joy in destruction—and beauty in mending.",
   },
   {
+    url: "mini-clay-planters",
     id: 50,
     siteLink: "https://in.bookmyshow.com/events/clay-play-day/ET00399728",
     EventsCalendarTitle: "Mini Clay Planters",
@@ -1098,6 +1145,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Join us for a hands-on workshop where you`ll design and sculpt your very own miniature clay planters from scratch. Learn the basics of clay modeling, shaping, and texturing while crafting cute, functional art pieces perfect for succulents, desk décor, or gifting.",
   },
   {
+    url: "dot-mandala-art",
     id: 51,
     siteLink:
       "https://in.bookmyshow.com/events/mandala-art-meditation/ET00376767",
@@ -1118,6 +1166,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Embark on a journey of self-discovery with this unique Mandala Art workshop. Focusing on the therapeutic art of creating mandalas, the session allows you to immerse yourself in a calm and creative space. Through the process of designing intricate mandalas, you can embrace a mindful and artistic experience, find serenity, and express yourself creatively. This workshop nurtures creativity and inner peace, leaving you feeling refreshed and inspired.",
   },
   {
+    url: "tote-bag-painting",
     id: 52,
     metaTitleEvent:
       "Events in Chennai, workshops in Chennai, Tote Bag Painting",
@@ -1143,6 +1192,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Unleash your creativity at our Tote Bag Painting Workshop at Small World! This engaging workshop is perfect for expressing yourself by designing a unique, eco-friendly tote bag. Whether you’re an experienced artist or a beginner, enjoy creative exploration with colors, patterns, and painting techniques guided by our expert instructor. All materials, including blank tote bags, fabric paints, brushes, and stencils, are provided so you can focus on your art. Leave with your own beautifully painted tote bag to use or gift. The workshop offers a relaxing, inspiring environment to unwind and connect with fellow creatives. Reserve your spot today and bring your artistic vision to life!",
   },
   {
+    url: "cuff-and-paint",
     id: 53,
     metaTitleEvent:
       "Chennai Events/Cuff and Paint event in Chennai/Super Chennai",
@@ -1166,6 +1216,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Get ready for the quirkiest art date ever! In Cuff & Paint, you and your partner will be handcuffed together and guided through a fun, messy, and unforgettable art session. Please note—one ticket is for a couple. Why cuffed? Because great art (and great memories) are made with a little chaos and a lot of teamwork! Whether it’s your best friend, partner, or a curious stranger, you’ll share laughs, spills, and strokes as you co-create a one-of-a-kind canvas. No experience needed. Just show up, cuff up, and paint your story!",
   },
   {
+    url: "oorellam-un-pattu-angingu",
     id: 54,
     EventsCalendarTitle: "Oorellam Un Pattu - Angingu",
     EventsCalendarContent: "Oorellam Un Pattu – Angingu is a 100% manual...",
@@ -1183,6 +1234,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Oorellam Un Pattu – Angingu is a 100% manual orchestra designed for an enjoyable experience with your family and friends.",
   },
   {
+    url: "waffle-making-workshop",
     id: 55,
     EventsCalendarTitle: "Waffle Making Workshop",
     EventsCalendarContent:
@@ -1201,6 +1253,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Reema’s Swad Cooking Classes offers a vegetarian and eggless Waffle Making Class covering a variety of delicious recipes including Honey Waffle, Oreo Waffle, Chocolate Overloaded/Nutella, Blueberry/Strawberry Cream Cheese, Coffee Mousse, Ice Cream Waffle, and a special Bubblegum recipe.",
   },
   {
+    url: "blindfolded-pottery",
     id: 56,
     metaTitleEvent:
       "Workshops in Chennai/Pottery Workshop/Art & Craft Workshops",
@@ -1225,6 +1278,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Let your hands do the seeing. Get ready for the most unexpectedly sensual and meditative art experience. In this unique pottery workshop, you’ll be blindfolded—allowing touch, texture, and intuition to guide your creation. No peeking, no perfectionism, just pure connection with clay. Whether you’re solo or coming with a friend, prepare to get your hands dirty, let go of control, and create something beautifully imperfect. No prior experience needed. Just bring your curiosity.",
   },
   {
+    url: "sip-and-paint-event",
     id: 57,
     EventsCalendarTitle: "Sip & Paint Event",
     EventsCalendarContent: "Join us for a creative twist on your typical....",
@@ -1242,6 +1296,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Join us for a creative twist on your typical paint night! Design your own custom tote bag while sipping on your favorite drinks. No experience needed—just good vibes, great company, and a canvas you can carry. We provide everything you need, including blank tote bags, paints, brushes, inspiration sheets, and a bit of guidance if you want it. Just bring your imagination (and maybe a friend or two). Beverages are included because great art deserves great sips. Let’s make something cute, bold, or totally out-there—your bag, your style, your rules! Grab your besties and let’s get artsy to turn plain totes into masterpieces!",
   },
   {
+    url: "star-quest-astronomy-workshop-for-young-minds",
     id: 58,
     EventsCalendarTitle: "Star Quest (Astronomy Workshop for Young Minds)",
     EventsCalendarContent:
@@ -1260,6 +1315,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Turn curiosity into discovery! Children naturally look up at the night sky and wonder what’s out there. This Astronomy for Kids Workshop (ages 5–16) transforms that curiosity into knowledge, imagination, and inspiration. In this fun, interactive session, kids will learn about planets, stars, and a wide range of celestial objects and phenomena in an easy-to-understand way. They will participate in space-themed activities and quizzes that make science exciting and memorable. Astronomy is more than looking at stars—it builds scientific thinking and observation skills, fosters a sense of wonder and creativity, and boosts confidence to explore and question the world around them. We keep seats limited to ensure every child gets personal attention and hands-on fun. E-certificates of participation will be emailed within 7 days for kids to proudly showcase. The joining link will be shared a day before the session to ensure smooth access. By the end of the workshop, your child won’t just know facts about space—they’ll feel inspired to explore, question, and dream bigger than ever before. It’s not just a Sunday evening spent—it’s a lifelong spark for learning and discovery!",
   },
   {
+    url: "solve-the-rubiks-cube-sharpen-6-vital-skills",
     id: 59,
     EventsCalendarTitle: "Solve the Rubik's Cube, Sharpen 6 Vital Skills",
     EventsCalendarContent:
@@ -1278,6 +1334,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "In this workshop, you will learn a 6-step method to solve the 3 x 3 x 3 Rubik's Cube in about 2 hours through a live 120-minute slow and steady streaming demonstration led by the course creator. This step-by-step MOOC solution is designed for learners aged 8 to 80 and aims to sharpen six vital skills: critical thinking, analytical thinking, reasoning and problem-solving, systems analysis and design, technology design and programming, and judgment and decision-making. The experience is engaging and easy-paced, offering a clear and enjoyable path to mastering this mind-boggling puzzle with over 43 quintillion ways to scramble. After the live session, a limited-period special offer will allow you discounted access to all demonstrated lessons so you can learn at your own pace anytime, anywhere. This 5-star rated workshop combines expert guidance with practical skills development, providing a rewarding sense of accomplishment both personally and professionally.",
   },
   {
+    url: "knife-painting-workshop",
     id: 60,
     EventsCalendarTitle: "Knife Painting Workshop",
     EventsCalendarContent:
@@ -1297,6 +1354,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
 
   {
+    url: "japanese-kintsugi-workshop",
     id: 61,
     EventsCalendarTitle: "Japanese Kintsugi Workshop",
     EventsCalendarContent:
@@ -1316,6 +1374,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
 
   {
+    url: "mandala-workshop",
     id: 62,
     EventsCalendarTitle: "Mandala Workshop",
     EventsCalendarContent:
@@ -1335,6 +1394,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
 
   {
+    url: "kaathuvaakula-rendu-comedians-ft-mervyn-and-jagan",
     id: 63,
     EventsCalendarTitle: "Kaathuvaakula Rendu Comedians ft. Mervyn & Jagan",
     EventsCalendarContent:
@@ -1355,6 +1415,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
   },
 
   {
+    url: "salsa-bachata-urbankiz-dance-workshop",
     id: 64,
     EventsCalendarTitle: "Salsa, Bachata, Urbankiz Dance Workshop",
     EventsCalendarContent:
@@ -1375,6 +1436,7 @@ Social Dancing is a fantastic way to connect and explore via styles like Salsa /
   },
 
   {
+    url: "bottle-painting ",
     id: 65,
     EventsCalendarTitle: "Bottle Painting ",
     EventsCalendarContent:
@@ -1395,6 +1457,7 @@ Join us for a lively and creative event where we turn ordinary bottles into extr
   },
 
   {
+    url: "sculpture-painting-workshop-sunflower",
     id: 66,
     EventsCalendarTitle: "Sculpture Painting Workshop – Sunflower",
     EventsCalendarContent: "Sunflowers you don’t just see… but feel....",
@@ -1414,6 +1477,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "halki-halki-fati-by-vikas-kush-sharma",
     id: 67,
     EventsCalendarTitle: "Halki Halki Fati? By Vikas Kush Sharma",
     EventsCalendarContent: "The comedic maestro, the crowd whisperer,..",
@@ -1439,6 +1503,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "neon-painting-party",
     id: 68,
     metaTitleEvent:
       "Events in Chennai, Workshops in Chennai, Neon Painting Party",
@@ -1464,6 +1529,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "clay-coaster-workshop",
     id: 69,
     EventsCalendarTitle: "Clay Coaster Workshop",
     EventsCalendarContent:
@@ -1509,6 +1575,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "epic-day-pass",
     id: 70,
     EventsCalendarTitle: "Epic Day Pass",
     EventsCalendarContent:
@@ -1533,6 +1600,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "hukum-world-tour-grand-finale",
     id: 71,
     metaTitleEvent: "Events in Chennai/ Hukum World Tour/Anirudh Concert",
     conicallinkEvent: "/eventsdetails/71",
@@ -1564,6 +1632,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "arr-unplugged",
     id: 72,
     EventsCalendarTitle: "ARR UnPlugged",
     EventsCalendarContent:
@@ -1583,6 +1652,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "couples-art-workshop",
     id: 73,
     EventsCalendarTitle: "Couples' Art Workshop",
     EventsCalendarContent:
@@ -1602,6 +1672,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "kal-ki-chinta-nahi-karta-ft-ravi-gupta",
     id: 74,
     EventsCalendarTitle: "Kal ki Chinta Nahi Karta ft. Ravi Gupta",
     EventsCalendarContent:
@@ -1621,6 +1692,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "gallabox-presents-patriotic-run",
     id: 75,
     EventsCalendarTitle: "GALLABOX presents Patriotic Run",
     EventsCalendarContent:
@@ -1682,6 +1754,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "canvas-painting",
     id: 76,
     EventsCalendarTitle: "Canvas Painting",
     EventsCalendarContent:
@@ -1704,6 +1777,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "coffee-conversations",
     id: 77,
     siteLink: "https://in.bookmyshow.com/events/coffee-cuddles/ET00375016",
     EventsCalendarTitle: "Coffee Conversations",
@@ -1726,6 +1800,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "vikramjit-singh-talking-and-touring",
     id: 78,
     EventsCalendarTitle: "Vikramjit Singh - Talking & Touring",
     EventsCalendarContent: "Vikramjit Singh is none of these things and more.",
@@ -1746,6 +1821,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "young-adult-ft-gurleen-pannu",
     id: 79,
     metaTitleEvent: "Standup Comedy Shows in Chennai / Gurleen Pannu",
     conicallinkEvent: "/eventsdetails/79",
@@ -1772,6 +1848,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     `,
   },
   {
+    url: "surfing",
     id: 80,
     EventsCalendarTitle: "Surfing",
     EventsCalendarContent:
@@ -1791,6 +1868,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     `,
   },
   {
+    url: "manjeet-ki-baat-a-comedy-show",
     id: 81,
     metaTitleEvent: "Standup Comedy in Chennai/Standup Comedy Shows in Chennai",
     conicallinkEvent: "/eventsdetails/81",
@@ -1820,6 +1898,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     `,
   },
   {
+    url: "vibe-check-an-youth-friendly-comedy-show",
     id: 82,
     metaTitleEvent:
       "Vibe Check Comedy Night / Chennai’s Unpredictable Stand-Up Show",
@@ -1844,6 +1923,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     every time. No artist images, no lineup spoilers—just step in, sit back, and let the surprises unfold. Come vibe with us and walk out with cheeks aching from non-stop laughter!`,
   },
   {
+    url: "vikkals-comedy-cafe-standup-comedy-open-mic",
     id: 83,
     metaTitleEvent:
       "Comedy Open Mic Nights / Stand-Up Shows in Chennai This Sept",
@@ -1866,6 +1946,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Open Mic Nights bring together seasoned stand-up comics and fresh voices testing out their newest jokes—a stage where humor meets raw emotions. Tickets are for audience entry only, and performers must register separately. Enjoy the show with a twist—₹100 from your ticket can be redeemed on food and beverages. Catch us every Tuesday at The Board Room, Mylapore, and every Thursday at The Board Room, Anna Nagar. Don’t forget to check the venue before booking your tickets!`,
   },
   {
+    url: "the-chennai-late-night-comedy-show",
     id: 84,
     metaTitleEvent:
       "Uncensored Comedy Nights / Raw Weekend Stand-Up in Chennai",
@@ -1891,6 +1972,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     guest performers dropping in to keep the night unpredictable and unforgettable.`,
   },
   {
+    url: "salt-air-swifts-flair",
     id: 85,
     metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/85",
@@ -1913,6 +1995,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     every song is a memory waiting to be made. 💖 Don’t miss it—save your spot now, because nights like these never go out of style!`,
   },
   {
+    url: "bad-drawing-party",
     id: 86,
     metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/86",
@@ -1935,6 +2018,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     Come unleash your inner artist, bond with others, and enjoy the beauty of creating without pressure.`,
   },
   {
+    url: "hamleys-play-chennai",
     id: 87,
     metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/87",
@@ -1957,6 +2041,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     Ball Pool, Slides, Scarf Shooters, Sand Play, Rock Climbing, Water Play, and many more fun-filled activities designed to spark curiosity and endless laughter.`,
   },
   {
+    url: "hand-pressed-pottery",
     id: 88,
     metaTitleEvent: "Hand-Pressed Pottery Workshop / Creative Event / Chennai",
     conicallinkEvent: "/eventsdetails/88",
@@ -1981,6 +2066,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     and your finished piece will be carefully packed for you to take home. Whether you’re making something special for yourself or a heartfelt gift, it’s the perfect chance to get creative, mindful, and a little messy!`,
   },
   {
+    url: "kids-mandala-workshop",
     id: 89,
     metaTitleEvent:
       "Art Workshop in Chennai / Beginner-Friendly Creative Event",
@@ -2005,6 +2091,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     At the end of the session, take home not just new skills but also your own handmade masterpiece. Prior registration is required—contact the café for details!`,
   },
   {
+    url: "quadrant-life-crisis-stand-up-solo-by-navin-kumar",
     id: 90,
     metaTitleEvent:
       "Navin Kumar Comedy Tour / Laughter-Packed Shows / Super Chennai",
@@ -2030,6 +2117,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     he now brings The Quadrant Life Crisis to his homeland, promising a comedy experience for everyone—because honestly, there’s only so much he can say about himself in the third person. So just come and enjoy the show!`,
   },
   {
+    url: "kids-texture-workshop",
     id: 91,
     metaTitleEvent:
       "3D Art Workshop / Super Chennai / Beginner-Friendly Art Event",
@@ -2054,6 +2142,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     all materials provided, and a relaxed, flexible pace, this session is designed for everyone—whether you’re joining solo, as a couple, with friends, or family. Enjoy a calming, expressive space, personalized attention in small group formats (1:1, 2:1, or 3:1), and delicious refreshments with 50% of your venue fee redeemable as food credit. By the end of the workshop, you’ll take home not just new skills but also your very own handmade masterpiece. Prior registration required—contact the café for details.`,
   },
   {
+    url: "midnight-tribe-festival",
     id: 92,
     metaTitleEvent:
       "3D Art Workshop / Super Chennai / Beginner-Friendly Art Event",
@@ -2077,6 +2166,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `✨ Plan a quick escape to Puducherry! ✨ Whether you’re a music enthusiast, beach lover, thrill-seeker, foodie, or simply in need of a refreshing break, the Midnight Tribe Festival is the place to be on 5th & 6th September at Sandunes Paradise Beach Resort. Why go? Well, the real question is—why miss it! Over two exciting days, enjoy live music, electrifying performances, food stalls, water sports, and an incredible showcase of local talent and artists. As the sun sets behind Paradise Beach, the vibe only gets better, transforming into a vibrant night of music, fun, and unforgettable memories. The festival kicks off daily at 4 PM with Sundowner sessions, followed by live DJ and band performances from 8 PM onward, all while you indulge in a mouthwatering spread of the freshest seafood straight from the coast.`,
   },
   {
+    url: "prom-chennai",
     id: 93,
     metaTitleEvent:
       "3D Art Workshop / Super Chennai / Beginner-Friendly Art Event",
@@ -2099,6 +2189,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Thus spoke, the greatest night ever foretold” — we bring you PROM. The night we once only dreamt of, imagined through high school rom-coms, filled with slow dances, glittering lights, and the thrill of walking in with a date, is finally here. This September, EN/D is making that fantasy a reality, bringing Chennai a grand, euphoric celebration bigger and bolder than you ever imagined. Picture this: 100 couples, your song playing at just the right moment, a dance floor designed for pure magic, and a setting drenched in gold, purple, and black opulence fit for the gods themselves. Everything you thought was out of reach is now within your grasp—it’s real, it’s happening, and it’s waiting for you on September 6th. Bring a girl, a boy, anyone—just bring your date, because this is PROM. Note: Venue cover charges (F&B) apply and are to be settled separately at the venue.`,
   },
   {
+    url: "big-saturday-night",
     id: 94,
     metaTitleEvent:
       "3D Art Workshop / Super Chennai / Beginner-Friendly Art Event",
@@ -2121,6 +2212,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Thus spoke, the greatest night ever foretold” — we bring you PROM. The night we once only dreamt of, imagined through high school rom-coms, filled with slow dances, glittering lights, and the thrill of walking in with a date, is finally here. This September, EN/D is making that fantasy a reality, bringing Chennai a grand, euphoric celebration bigger and bolder than you ever imagined. Picture this: 100 couples, your song playing at just the right moment, a dance floor designed for pure magic, and a setting drenched in gold, purple, and black opulence fit for the gods themselves. Everything you thought was out of reach is now within your grasp—it’s real, it’s happening, and it’s waiting for you on September 6th. Bring a girl, a boy, anyone—just bring your date, because this is PROM. Note: Venue cover charges (F&B) apply and are to be settled separately at the venue.`,
   },
   {
+    url: "floor-yoga-workshop",
     id: 95,
     metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/95",
@@ -2142,6 +2234,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Begin your morning with renewal and balance at the Floor Yoga Workshop happening on 6th September, 6:00–7:00 AM, at Dream Yoga Studio, Thalambur. Open to all levels, this session will guide you through grounding postures and mindful movements designed to build strength, flexibility, and balance while deepening your connection to the mat. Floor yoga helps release tension, improve core stability, and enhance body awareness, leaving you both energized and centered. Led by an experienced instructor, the workshop offers a supportive space to refine your practice, calm your mind, and start the day with positivity and focus. Reserve your spot now and embrace a morning of movement, mindfulness, and fresh energy! For enquiries: 63851 11315.`,
   },
   {
+    url: "aerial-yoga-one-day-workshop",
     id: 96,
     metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/96",
@@ -2162,6 +2255,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Experience the freedom of movement and lightness at the Aerial Yoga Session at Dream Yoga Studio, Thalambur, on 6th September from 6:00–7:00 PM. This unique practice blends traditional yoga, Pilates, and dance with the support of a hammock, allowing you to stretch deeper, improve flexibility, and build strength while feeling weightless and free. Guided by expert instructors, you’ll safely explore inversions and poses that strengthen your core, release spinal tension, and boost circulation. Suitable for both beginners and experienced practitioners, Aerial Yoga offers a refreshing way to reconnect with your body, calm your mind, and uplift your spirit. Come breathe, flow, and discover yoga like never before—limited spots available, so reserve your place in the sky today! 🌿`,
   },
   {
+    url: "zumba-workshop",
     id: 97,
     metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/97",
@@ -2183,6 +2277,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Discover the joy of weightlessness and flow at the Aerial Yoga Session happening on 6th September, 6:00–7:00 PM at Dream Yoga Studio, Thalambur. Blending traditional yoga postures with elements of Pilates and dance, this practice uses a supportive hammock to help you stretch deeper, enhance flexibility, and build strength while feeling light and free. With guidance from experienced instructors, you’ll explore safe and effective inversions and poses that strengthen the core, ease spinal tension, and improve circulation. Suitable for both beginners and seasoned practitioners, Aerial Yoga is a refreshing way to reconnect with your body, calm your mind, and uplift your spirit. Come breathe, move, and experience yoga like never before—limited spots available, so secure your place today! 🌿`,
   },
   {
+    url: "sashiko-stitches",
     id: 98,
     metaTitleEvent: "",
     conicallinkEvent: "/eventsdetails/98",
@@ -2204,6 +2299,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Step into the ancient and mindful world of Japanese embroidery with the Sashiko Stitches Workshop! Designed for beginners, this hands-on session will be held on September 7th, 2025, at Hermoso Studio, Nungambakkam, from 10:30 AM to 6:30 PM. Guided through the traditional running-stitch technique, you’ll learn the core patterns and rhythms of Sashiko while crafting your own durable, one-of-a-kind design on a chic tote bag. With all materials provided, it’s the perfect chance to relax, spark your creativity, and immerse yourself in a timeless art form. Hosted at the SWE Space, a community dedicated to creation and expression, the workshop promises a rewarding day of learning, making, and connection. Don’t miss this fulfilling artistic journey—secure your spot today! For enquiries (WhatsApp): 6385804591.`,
   },
   {
+    url: "vikkals-comedy-cafe-standup-comedy-open-mic",
     id: 99,
     metaTitleEvent:
       "Tamil Stand-Up Comedy Show | Vikkals Vikram - Super Chennai",
@@ -2226,6 +2322,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Want to experience a laughter roller coaster? Here we have the most promising comedian Vikram Arul Vidyapathi also known as Vikkals Vikram brings you a fun-filled Standup Comedy Open Mic Night now in Chennai. So this is the perfect place to explore an unfiltered comedy with purest form. Starting from everyday struggles to quirky observations he knows how to change anything to humor— make sure you will laugh from your heart for the whole night.`,
   },
   {
+    url: "tamil-retro-nite-ft-mj-shriram",
     id: 100,
     metaTitleEvent:
       "MJ Shriram Concert | Ilaiyaraaja & MSV Tribute - Super Chennai",
@@ -2249,6 +2346,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `!Let ‘s go back to nostalgia! We have MJ Shriram to take us back into the magic of MSV  and Ilaiyaraaja along with more legends with his soulful singing. More than a concert it's an emotion of going back to the memory lane, where songs remain of our story or a moment we have cherished. Come sing along and enjoy your nostalgic nite with your loved ones.`,
   },
   {
+    url: "ini-filter-theva-illai",
     id: 101,
     metaTitleEvent:
       "Ini Filter Theva Illai | Glowing Skin & Self-Care - Super Chennai",
@@ -2273,6 +2371,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Ini filter ah theva ila. Your natural glow comes from discovering the connection between hormones, lifestyle, and wellness. Join our Women's Wellness Evening to learn the science behind glowing skin and inner health, and get insights on how to nurture your radiance from within.`,
   },
   {
+    url: "jungle-rave-2025-chennais-first-ever-sober-rave",
     id: 102,
     metaTitleEvent:
       "Jungle Rave 2025 | Chennai First Ever Sober Rave - Super Chennai",
@@ -2297,6 +2396,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "news-reading-workshop-by-news-reader-ranjith",
     id: 103,
     metaTitleEvent:
       "Master News Reading | Workshop with Ranjith - Super Chennai",
@@ -2321,6 +2421,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `This workshop is well designed for aspiring news readers, passionate about the art of communication and media enthusiasts. We have news reader Ranjinth to share his journey and knowledge and techniques on pronunciation, voice modulation and presentation style that make an impactful news reader. If you dream of becoming a news reader or want to develop your communication skill this workshop will empower you with practical tools and inspiration.`,
   },
   {
+    url: "koolly",
     id: 104,
     metaTitleEvent:
       "Lokesh Ambigapathy | Koolly Tanglish Comdey Show - Super Chennai",
@@ -2344,6 +2445,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Be  ready, Chennai!  Lokesh Ambigapathy, the much-loved Vijay TV comedy artist, is here with his rib-tickling Koolly Tanglish Stand-Up Show.  A perfect blend of tamil and english humor we have Lokesh Ambigapathy most beloved Vijay TV comedy artist with  his non stop laughter of Koolly Tanglish Stand-Up comedy show. Whether it's a chennai vibe or day to day life or quirky talks on culture, Lokesh knows how to keep us laughing non-stop. Don't miss this chance of unlimited laughter,fun and entertainment with the most promising stand up comedian.`,
   },
   {
+    url: "smooth-adi-a-tamil-standup-show",
     id: 105,
     metaTitleEvent:
       "SMOOTH ADI | Tamil Stand-Up Comedy Show Chennai - Super Chennai",
@@ -2391,6 +2493,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   //   aboutFull: `Activating your little one's mind is way easier if you visit here. Here’s a chance for your kids to sharpen their cognitive skills, develop confidence and also by having fun. Chennai came with another awakening session for kids inducing games —  The Kids Chess Upskilling Session for 5-15 years children.  Bring your little one and let them boost their confidence in their way by playing also by learning.`,
   // },
   {
+    url: "space-cadet-by-varun-thakur",
     id: 107,
     metaTitleEvent:
       "Space Cadet | Varun Thakur Stand-Up Comedy - Super Chennai",
@@ -2415,6 +2518,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "musicom-finale-karoake-music-show-and-competition",
     id: 108,
     metaTitleEvent:
       "Musicom Finale | Karaoke & Singing Competition - Super Chennai",
@@ -2439,6 +2543,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Have a passion for music but not sure where to start?! This is for you. We came up with a karaoke music show and competition —Musicom Finale to step up all the music lovers who are passionate about music. From soulful melodies to blasting hits this finale is just gonna be a rocking night with unforgettable performances and entertainment. Grab the mic to show your voice to the world. Without music there is no life, come experience the art of sounds and voices.`,
   },
   {
+    url: "secrets-a-tamil-standup-show",
     id: 109,
     metaTitleEvent:
       "SECRETS | Tamil Stand-Up Comedy Show in Chennai - Super Chennai",
@@ -2461,6 +2566,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Step into a laughter packed evening with SECRETS — a tamil stand comedy show that drives you into hilarious, relatable and so many surprise moments of daily life. From friendship tales and family drama to little quirks of chennai living, nothing is small or big in front of spilling the secrets on stage. With witty punchlines and relatable stories and plenty of Laughing-Out-Loud  moments with amazing comics of Chennai Prabu, Sai Anand, Vanshita, Sandeep and Divyanand you all gonna have a non-stop laughing evening. `,
   },
   {
+    url: "ghar-an-open-mic-for-words-by-tape-a-tale",
     id: 110,
     metaTitleEvent:
       "Tape A Tale GHAR Open Mic | Storytellers & poetry- Super Chennai",
@@ -2485,6 +2591,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "lit-mic-chennai-open-mic-edition-36",
     id: 111,
     metaTitleEvent:
       "Open Mic Chennai | Lit-Mic Stand-Up Comedy Show - Super Chennai",
@@ -2509,6 +2616,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "blacksheep-kida-virunthu-concert",
     id: 112,
     metaTitleEvent:
       "Black Sheep Kida Virunthu | Music & Arts Chennai - Super Chennai",
@@ -2534,6 +2642,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "pichwai-painting-workshop",
     id: 113,
     metaTitleEvent:
       "Pichwai Art for Beginners | Painting Workshop - Super Chennai",
@@ -2559,6 +2668,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
   },
 
   {
+    url: "chess-mastery-session-for-kids-ages-5-15",
     id: 114,
     metaTitleEvent:
       "Chess Mastery Session for Kids | Ages 5–15 - Super Chennai",
@@ -2583,6 +2693,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Give your child the chance of strategic thinking and confidence through the game of kings! The chess mastery session is a specially made program for children from 5 to 15 years, designed to make them explore, enjoy and expertise in chess.  Whether your child is just a beginner or already knows the  basics, this program is going to help them build sharpen memory, focus and develop problem-solving skills while playing.`,
   },
   {
+    url: "playdate-with-parents",
     id: 115,
     metaTitleEvent:
       "Playdate with Parents | Family Games & Activities - Super Chennai",
@@ -2607,6 +2718,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `In today's busy world we forget how our parents gave their best to keep us engaged and active, but we often miss spending some quality time with them. Play date with parents is a fun-filled event designed to bring back the bond between kids and parents From interactive sessions to creative games, every moment is made to strengthen the parent-child bond thicker.`,
   },
   {
+    url: "telugu-night-ft-capricio",
     id: 116,
     metaTitleEvent:
       "Capricio Live in Chennai | Telugu Musical Event - Super Chennai",
@@ -2630,6 +2742,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Chennai, get ready to groove! The most sensational band Capricio came up with its powerpack Telugu musical celebration Night of the city. This band is known for their individuality and combination of telugu melodies to modern rock beats. They have captured hearts across India with their blasting performances. So this is the night we all want to come grab your seat with us`,
   },
   {
+    url: "vibe-panrom-a-tamil-standup-comedy-show",
     id: 117,
     metaTitleEvent: " Vibe Panrom | Tamil Standup Comedy Show - Super Chennai",
     conicallinkEvent: "/eventsdetails/117",
@@ -2653,6 +2766,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     Don’t miss this wonderful opportunity of having an endless laugh throughout the night`,
   },
   {
+    url: "isai-sangamam",
     id: 118,
     metaTitleEvent:
       "Isai Sangamam | Cultural Music Event Chennai - Super Chennai",
@@ -2675,6 +2789,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `A perfect blend of classical and contemporary with trending tunes to create a harmony that resonates with every generation— Isai Sangamam came up with a grand musical celebration specially for Chennai. With their mesmerizing performances and a magical atmosphere you will have a wonderful night filled with sounds and melodies of chennai.`,
   },
   {
+    url: "perfect-role-model-by-sonali-thakker",
     id: 119,
     metaTitleEvent:
       "Stand-Up Comedy Chennai | Sonali Thakker Live - Super Chennai",
@@ -2698,6 +2813,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Chennai, get ready for a laughter-packed evening with one of India’s most loved comics – This is a solo stand-up comedy show where you will have an endless laugh for the whole evening, she will take you on a roller-coaster ride of day-to-day chaos, family and relationship dramas. This show is all about her unique perspective on being a “perfect role model” in today’s society and the most humorous realities that come together.`,
   },
   {
+    url: "adults-only-english-stand-up",
     id: 120,
     metaTitleEvent:
       "Adults Only – English Stand-Up | Comedy Night - Super Chennai",
@@ -2721,6 +2837,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Chennai, it’s time to leave the kids at home and laugh! Adults Only is an unfiltered, bold, hilarious English stand-up comedy show. The comedians are bold enough to push boundaries away with their sharp punchlines and edgy humor. You will drive into the relationships and family drama everything we don’t talk about in front of our family. This is the chance to let our adult-talk without hesitation in a hilarious way. Grab the seat with your friends.`,
   },
   {
+    url: "christian-keerthanaigal-music-show",
     id: 121,
     metaTitleEvent:
       "Christian Keerthanaigal Music Show | Chennai Live - Super Chennai",
@@ -2746,6 +2863,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     We walk around all over the world but won’t find time to thank God, this is the perfect time to Thank him with classic hymns to contemporary worship. Let's join together and sing his praise`,
   },
   {
+    url: "cookie-master-class",
     id: 122,
     metaTitleEvent:
       "Cookie Master Class | Baking Workshop Chennai - Super Chennai",
@@ -2769,6 +2887,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     Don’t miss this opportunity baking is an art and this workshop will make you artist`,
   },
   {
+    url: "north-indian-and-punjabi-cuisine-workshop",
     id: 123,
     metaTitleEvent: "North Indian | Punjabi Cuisine Workshop - Super Chennai",
     conicallinkEvent: "/eventsdetails/123",
@@ -2792,6 +2911,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     aboutFull: `Turn your normal cooking into NORTH INDIAN special! This workshop helps you to develop the art of making authentic dishes from North Indian and Punjabi cuisine. From creamy buttery curries to smoky tandoori specials you will be an expert with their guidance also the secret behind restaurant style curries. Don’t miss the chance to impress your loved ones with your cooking skills and add on secrets from the expert chefs from here.`,
   },
   {
+    url: "chirag-panjwani-live",
     id: 124,
     metaTitleEvent:
       "Laugh with Chirag Panjwani | Live Stand-Up - Super Chennai",
@@ -2816,6 +2936,7 @@ Sunflowers you don’t just see… but feel. That’s sculpting. Join our beginn
     Chirag’s comedy show covers almost everything we see in day-to-day life and changes it into an unfiltered purest humor just to make you laugh throughout the evening. The whole week you have work and all stuff forget to laugh enough this is the perfect show to burst into laughter throughout the evening.`,
   },
   {
+    url: "shimin-chakai-public-japanese-tea-ceremony",
     id: 125,
     metaTitleEvent:
       "Shimin Chakai | Japanese Tea Ceremony & Culture - Super Chennai",
@@ -2842,6 +2963,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
 `,
   },
   {
+    url: "circus-thupakki-an-edgy-standup-comedy-show",
     id: 126,
     metaTitleEvent:
       "Circus Thupakki | Standup Comedians Chennai - Super Chennai",
@@ -2865,6 +2987,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     aboutFull: `Chennai, get ready for a hilarious comedy blast! Circus Thupakki came up with a unique stand-up comedy show – it’s a rollercoaster of sharp punchlines and fearless humor that hits straight at the funny bone. Experience a life-time settlement of laughter for the whole evening with the most funniest comedians in Chennai. Your hot seat is ready, grab it and enjoy your show.`,
   },
   {
+    url: "salsa-bachata-urbankiz-dance-workshop",
     id: 127,
     metaTitleEvent:
       "Salsa & Bachata | Urbankiz Dance Classes Chennai - Super Chennai",
@@ -2889,6 +3012,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     aboutFull: `It’s the time to move your bodies to the rhythm of sounds and beats! Here we have Salsa, Bachata & Urbankiz Dance Workshop to drive you into the world of dance. Either  you are a complete beginner or a dance enthusiast, this workshop is going to change you into an expert in social dance form. You will be led by experienced instructors to highlight your style and enhance your steps. Come become an expert with our experts.`,
   },
   {
+    url: "business-opportunity-expo-2025",
     id: 128,
     metaTitleEvent:
       "Business Growth Workshop | Business Expo Chennai - Super Chennai",
@@ -2914,6 +3038,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     Enhance your brain for business to shine in the world.`,
   },
   {
+    url: "jazz-weekender-edition",
     id: 129,
     metaTitleEvent:
       "Jazz Weekender Edition | Classical Jazz Music - Super Chennai",
@@ -2938,6 +3063,7 @@ You will be guided by trained tea masters, the ceremony showcases the beauty of 
     aboutFull: `This evening you're gonna have a wonderful experience in Jazz —with Jazz Weekender Edition. This celebration of Jazz blends musicians and soulful voices and mixed od sounds to give an unforgettable weekend. From classical standard to contemporary blends this show is just gonna take your heart and fill with music for lifetime. If you are a Jazz lover and yes this is your wanted show come join and sing together.`,
   },
   {
+    url: "restorative-yoga-with-sound-healing",
     id: 130,
     metaTitleEvent: "Restorative Yoga | Sound Healing Workshop - Super Chennai",
     conicallinkEvent: "/eventsdetails/130",
@@ -2963,6 +3089,7 @@ Rest your body for a weekend and relax your mind with us.
 `,
   },
   {
+    url: "7-plus-one-rising-stars-on-tour",
     id: 131,
     metaTitleEvent:
       "Best Stand Up Show Chennai | 7 Plus One Tour - Super Chennai",
@@ -2987,6 +3114,7 @@ Rest your body for a weekend and relax your mind with us.
     aboutFull: `Chennai’s largest funniest and music filled stand-up comedy show presented by the best comedian material Karthick Kumar and with more comedians. It's a tour to take you in the world of hilarious jokes and actual talks, with high-energy new voices and unique styles. Come experience a perfect blend of soulful music, beats and witty humor with captivating stage presence. This is the absolute show we don’t want you to miss.`,
   },
   {
+    url: "wraps-and-rolls-making-workshop",
     id: 132,
     metaTitleEvent:
       "Wraps & Rolls Recipes | Cooking Classes Chennai - Super Chennai",
@@ -3011,6 +3139,7 @@ Rest your body for a weekend and relax your mind with us.
     aboutFull: `Who doesn't love wraps and rolls— we all know to eat but to make them you have to come to this workshop. A fun, hands-on cooking experience and also to know the secrets behind the street style wraps and roll this workshop will help you to satisfy your level of love towards wraps. From classics to adding flavours for your taste here we have experienced guides to make you expert. Bring your friends and have a food making date also by adding love to wraps and rolls making workshop.`,
   },
   {
+    url: "bombay-chaat-items-workshop",
     id: 133,
     metaTitleEvent:
       "Bombay Chaat Items Workshop | Street Food Recipes - Super Chennai",
@@ -3034,6 +3163,7 @@ Rest your body for a weekend and relax your mind with us.
     aboutFull: `Bombay is known for chaat items— here you have a chance to know the secrets behind it by attending this workshop. A hand-on culinary experience where you’ll learn to make iconic chaat items with authentic touch in it. The bursting blend of spice, tangy sauce and bold flavors in one taste. Here after you don't have to go to Mumbai just to have your favorite chaat items, you can have it in your home made with your preference.`,
   },
   {
+    url: "prasidas-weaving-workshop",
     id: 134,
     metaTitleEvent:
       "Prasida's Workshop | Traditional Weaving Skills - Super Chennai",
@@ -3058,6 +3188,7 @@ Rest your body for a weekend and relax your mind with us.
     aboutFull: `We heard that weaving is so relaxing and therapeutic — so here we came up with a workshop to make it easier for beginners and develop your knowledge for weaving more. You will be guided by skilled instructors and learn various methods and techniques in weaving patterns, textures and designs. This hand-on session offers you a unique opportunity to explore the traditional weaving techniques while creating your own ideas.`,
   },
   {
+    url: "paratha-special-workshop",
     id: 135,
     metaTitleEvent: "Paratha Workshop | Cooking Class Chennai - Super Chennai",
     conicallinkEvent: "/eventsdetails/135",
@@ -3080,6 +3211,7 @@ Rest your body for a weekend and relax your mind with us.
     aboutFull: `Love for flaky, crispy and flavourful parathas? Here is your chance to experience the art of making them — this workshop has hands-on culinary sessions to help you learn more detailed cooking of parathas and have fun with your friends. Bring your friends and families to cook, laugh and learn the authentic flavours of parathas with us.`,
   },
   {
+    url: "that-dirty-show",
     id: 136,
     metaTitleEvent: "That Dirty Show | Adult Comedy Stand Up - Super Chennai",
     conicallinkEvent: "/eventsdetails/136",
@@ -3102,6 +3234,7 @@ Rest your body for a weekend and relax your mind with us.
     aboutFull: `Get ready for a wildly unfiltered night of laughter! That Dirty Show is a brand-new standup special filled with outrageous stories, daring punchlines, and comedy for the fearless. After touring South India with multiple hit specials, we return with our boldest and most hilarious set yet. If you can handle it, this is the comedy experience you can’t afford to miss `,
   },
   {
+    url: "max-urbn-unmute-ft-paal-dabba-live-in-concert",
     id: 137,
     metaTitleEvent:
       "Chennai Live Concert | Max Urban UN-MUTE Rap Tour - Super Chennai",
@@ -3126,6 +3259,7 @@ Rest your body for a weekend and relax your mind with us.
     aboutFull: `Max Fashion India presents its first-ever rap extravaganza — Max Urban UN-MUTE. Three cities. Three homegrown rap kings — Baby Jean (Kochi), Kayden Sharma (Hyderabad), and Paal Dabba (Chennai) — unite for a South India tour like never before. Where hip-hop collides with raw energy, neon vibes, and the unstoppable Gen Z beat. Expect fiery bars, unfiltered flows, and a crowd roaring the loudest 'How New Is Your New?' If you live for street culture, live music, and South India’s rap scene, this is one ticket you cannot miss`,
   },
   {
+    url: "abishek-wants-to-enjoy-life-a-comedy-special",
     id: 138,
     metaTitleEvent:
       "Abishek Wants to Enjoy Life | Laughter & Comedy - Super Chennai",
@@ -3152,6 +3286,7 @@ Rest your body for a weekend and relax your mind with us.
     `,
   },
   {
+    url: "getting-there-by-rohan-joshi",
     id: 139,
     metaTitleEvent:
       "Rohan Joshi Comedy Special | Live Stand Up Show - Super Chennai",
@@ -3176,6 +3311,7 @@ Rest your body for a weekend and relax your mind with us.
     aboutFull: `Rohan Joshi, the renowned stay-at-home expert, faced a classic New Year existential crisis. Like many, he decided it’s time to write more and hit the road. Unfortunately for the audience, they get to witness this mid-life crisis live. Join Rohan as he navigates the joys and absurdities of middle age. Laugh along as he shares hilarious stories and observations from his life, and watch his gradual transformation into the ultimate Indian uncle`,
   },
   {
+    url: "the-planets-largest-coastal-cleanup",
     id: 140,
     RegisterLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/viewform",
@@ -3204,6 +3340,7 @@ Rest your body for a weekend and relax your mind with us.
   },
 
   {
+    url: "magic-show-in-chennai-magician-kalai-paradox-i-saw-tomorrow",
     id: 141,
     RegisterLink: "",
 
@@ -3246,6 +3383,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "standup-comedy-show-in-chennai-7-plus-one-rising-stars-on-tour-karthik-kumar-punch-unpaid-therapist",
     id: 142,
     RegisterLink: "",
 
@@ -3277,11 +3415,11 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   `,
   },
   {
+    url: "art-and-craft-workshops-in-chennai-glass-bottle-painting-home-decor",
     id: 143,
     RegisterLink: "",
 
-    metaTitleEvent:
-      "Art & Craft Workshops in Chennai | Glass Bottle Painting",
+    metaTitleEvent: "Art & Craft Workshops in Chennai | Glass Bottle Painting",
     conicallinkEvent: "/eventsdetails/143",
     metaDescriptionEvent:
       "Art, sip & paint! Glass bottle painting at Hibiscus Cafe on 27 Sep, 4 PM. Relax, unwind & create your own home decor with this art & craft workshop in Chennai.",
@@ -3317,11 +3455,11 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   `,
   },
   {
+    url: "bread-pizza-doughnut-workshop-in-chennai-reemas-swad-cooking-classes-chennai",
     id: 144,
     RegisterLink: "",
 
-    metaTitleEvent:
-      "Baking Workshop in Chennai / Reema’s Swad Cooking Classes",
+    metaTitleEvent: "Baking Workshop in Chennai / Reema’s Swad Cooking Classes",
     conicallinkEvent: "/eventsdetails/144",
     metaDescriptionEvent:
       "Reema’s Swad Cooking Classes Chennai brings you a hands-on workshop in Chennai to master bread, pizza & doughnuts. Book now!",
@@ -3353,6 +3491,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   `,
   },
   {
+    url: "standup-comedy-show-in-chennai-mohd-suhel-dysfunctional",
     id: 145,
     RegisterLink: "",
 
@@ -3388,6 +3527,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   `,
   },
   {
+    url: "south-indian-cooking-class-reemas-swad-cooking-classes-chennai",
     id: 146,
     RegisterLink: "",
 
@@ -3429,6 +3569,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   `,
   },
   {
+    url: "drawing-competition-in-chennai",
     id: 147,
     RegisterLink: "",
 
@@ -3470,6 +3611,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "music-shows-chennai-bts-fans",
     id: 148,
     RegisterLink: "",
 
@@ -3506,6 +3648,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "taylor-swift-tribute-chennai-music-events",
     id: 149,
     RegisterLink: "",
 
@@ -3545,11 +3688,11 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "rajini-experience-magnum-opus-music-events-in-chennai",
     id: 150,
     RegisterLink: "",
 
-    metaTitleEvent:
-      "Music Events in Chennai / RAJINI EXPERIENCE MAGNUM OPUS",
+    metaTitleEvent: "Music Events in Chennai / RAJINI EXPERIENCE MAGNUM OPUS",
     conicallinkEvent: "/eventsdetails/150",
     metaDescriptionEvent:
       "RAJINI EXPERIENCE MAGNUM OPUS – a spectacular tribute show and part of top Music Events in Chennai, honoring Rajini’s legacy with power-packed performances.",
@@ -3587,6 +3730,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "vismaya-25-rotary-club-of-chennai",
     id: 151,
     RegisterLink: "",
 
@@ -3622,6 +3766,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "stand-up-comedy-show-in-chennai-sound-uduu-yg-madhuvanthi",
     id: 152,
     RegisterLink: "",
 
@@ -3658,6 +3803,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "baking-workshop-in-chennai-learn-cake-frosting-skills",
     id: 153,
     RegisterLink: "",
 
@@ -3711,11 +3857,11 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "live-concert-chennai-rock-on-harris-3.0",
     id: 154,
     RegisterLink: "",
 
-    metaTitleEvent:
-      "Live Concert Chennai / Rock On Harris 3.0 / Super Chennai",
+    metaTitleEvent: "Live Concert Chennai / Rock On Harris 3.0 / Super Chennai",
     conicallinkEvent: "/eventsdetails/154",
     metaDescriptionEvent:
       "Rock On Harris 3.0 brings a spectacular Harris live concert to the city, making it one of the most awaited live concert Chennai music shows of the year.",
@@ -3763,6 +3909,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "concerts-in-chennai-hapan-anime-minichestra-beyond-borders",
     id: 155,
     RegisterLink: "",
 
@@ -3797,11 +3944,11 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "kalakki-comedy-show-in-chennai",
     id: 156,
     RegisterLink: "",
 
-    metaTitleEvent:
-      "KALAKKI / Comedy show in chennai / Live Stage Play",
+    metaTitleEvent: "KALAKKI / Comedy show in chennai / Live Stage Play",
     conicallinkEvent: "/eventsdetails/156",
     metaDescriptionEvent:
       "Laugh, feel, and enjoy KALAKKI – the comedy show in Chennai that brings live stage play magic with witty humour, drama, and raw theatre performance.",
@@ -3837,6 +3984,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "chennai-marathon-namma-juniorthon-3-edition-kids-run",
     id: 157,
     RegisterLink: "",
 
@@ -3886,6 +4034,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
+    url: "navratri-garba-dandiya-navjalsa-2025",
     id: 158,
     RegisterLink: "",
 

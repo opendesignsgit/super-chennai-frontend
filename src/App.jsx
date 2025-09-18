@@ -1247,8 +1247,8 @@ function App() {
 
           {/* Events-Pages */}
 
-          <Route path="/eventsdetails/:id" element={<EventsDetails />} />
-          {/* <Route path="/eventsdetails/:url" element={<EventsDetails />} /> */}
+          {/* <Route path="/eventsdetails/:id" element={<EventsDetails />} /> */}
+          <Route path="/events-in-chennai/:url" element={<EventsDetails />} />
 
           <Route path="/TrendingDetails/:id" element={<TrendingDetails />} />
 

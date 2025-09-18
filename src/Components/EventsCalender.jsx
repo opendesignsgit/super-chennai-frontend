@@ -101,7 +101,7 @@ export default function CardCarousel111() {
           <div className="CalendarEventsFirst">
             <img
               className="eventsCalenderIamge"
-              src="/images/HomePage-Images/Events/Newevents/170.jpg"
+              src="/images/HomePage-Images/Events/Newevents/275.jpg"
               alt=""
             />
             <div className="MainCalendarSectionEvent">
@@ -213,7 +213,7 @@ export default function CardCarousel111() {
                     whileHover={{ scale: 1.05 }}
                   >
                     <div className="relative w-full h-[250px]">
-                      <a href={`/events-in-chennai/${card.id}`}>
+                      <a href={`/events-in-chennai/${card.url}`}>
                         <img
                           src={card.image}
                           alt={card.title}

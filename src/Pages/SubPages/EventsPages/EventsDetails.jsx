@@ -7,6 +7,7 @@ export default function EventsDetails() {
   const location = useLocation();
   const navigate = useNavigate();
   const { id } = useParams();
+  const { url } = useParams();
 
   const [event, setEvent] = useState(null);
 
@@ -25,6 +26,22 @@ export default function EventsDetails() {
       }
     }
   }, [id, location.state, navigate]);
+
+  // useEffect(() => {
+  //   const stateEvent = location.state?.card;
+  //   console.log("Event from state:", stateEvent);
+
+  //   if (stateEvent) {
+  //     setEvent(stateEvent);
+  //   } else {
+  //     const found = cards.find((e) => e.url === url);
+  //     if (found) {
+  //       setEvent(found);
+  //     } else {
+  //       navigate("/events", { replace: true });
+  //     }
+  //   }
+  // }, [url, location.state, navigate]);
 
   if (!event) {
     return null; // or loader

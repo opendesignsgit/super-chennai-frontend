@@ -162,6 +162,10 @@ const detailsections = [
             label: "Nungambakkam",
             link: "https://maps.app.goo.gl/RU84uCdRnGAnoSrm6",
           },
+          {
+            label: "Besant Nagar",
+            link: "https://maps.app.goo.gl/mvo69vSXuVFRj2wS6",
+          },
         ],
       },
       {
@@ -229,6 +233,30 @@ const detailsections = [
           {
             label: "RA Puram",
             link: "https://maps.app.goo.gl/wVDngAoj4gLMeBaV9",
+          },
+        ],
+      },
+      {
+        name: "Lazy Leopard",
+        description:
+          "A hidden gem in Gopalapuram, Lazy Leopard serves pizzas with authentic Neapolitan roots. The crusts are light yet flavorful, and their toppings bring a perfect balance of freshness and indulgence.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Gopalapuram",
+            link: "https://maps.app.goo.gl/FZp4caeX6LpyCBFC7 ",
+          },
+        ],
+      },
+      {
+        name: "Lina's Brickoven",
+        description:
+          "If you’re craving a proper New York slice, Lina’s Brickoven is the go-to spot. Their pizzas are generously cheesy, with thin crispy bases and inventive toppings like potato that keep people coming back.",
+        subDescription: "",
+        locations: [
+          {
+            label: "T. Nagar",
+            link: "https://maps.app.goo.gl/AyaWMQ2ks7ZemhsS7",
           },
         ],
       },

@@ -584,6 +584,66 @@
   width: 38%;
 }
 
+.septemberMonthStyle .awards-section {
+  /* padding-top: 50px; */
+}
+
+.septemberMonthStyle .naturals-section {
+  background-color: #fff;
+  /* border: 1px solid #7e3b85; */
+  /* border-right: 2px solid #7e3b85; */
+  border-radius: 0;
+  position: relative;
+}
+
+.septemberMonthStyle .naturals-section:first-child:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: -webkit-fill-available;
+  background-color: #6e2e6d;
+  left: 99%;
+}
+
+.septemberMonthStyle .naturals-container {
+  background-color: #fff;
+}
+
+.septemberMonthStyle .naturals-section h2 {
+  color: #7e3b85;
+}
+
+.septemberMonthStyle .naturals-section p {
+  color: #7e3b85;
+  color: #000;
+}
+.septemberMonthStyle .naturals-section p strong {
+  color: #7e3b85;
+  color: #000;
+}
+
+.septemberMonthStyle .naturals-section ul li::before {
+  border-left: 6px solid #000;
+}
+
+.septemberMonthStyle .section-container {
+  padding: 0;
+}
+
+.septemberMonthStyle .newupdatewhychennai {
+  background: #7e3b85;
+  color: #fff;
+}
+
+.septemberMonthStyle .workIntro {
+  padding-top: 46px;
+  padding-bottom: 50px;
+}
+
+.septemberMonthStyle .naturals-logo {
+  filter: invert(1);
+}
+
 @media (max-width: 1600px) {
   .naturals-section h2 {
     font-size: 37px;
@@ -714,6 +774,12 @@
   .awards-item {
     font-size: 17px;
     padding: 0 0 20px 20px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .awards-section.septemeberIconoftheMonth .awards-list {
+    max-width: 50%;
   }
 }
 

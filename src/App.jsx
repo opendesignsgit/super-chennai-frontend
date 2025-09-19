@@ -275,6 +275,7 @@ import ReimagineChennai from "./Pages/ReimagineChennai";
 
 import PropertiesPage from "./Pages/Properties/PropertiesPage";
 import PropertyDetailPage from "./Pages/Properties/PropertyDetailPage";
+import IconofthemonthSeptember from "./Pages/Icon-of-the-month-september";
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -1200,6 +1201,10 @@ function App() {
           <Route
             path="/super-chennai-icon-of-aug-2025"
             element={<IconofthemonthAugust />}
+          />
+            <Route
+            path="/super-chennai-icon-of-september-2025"
+            element={<IconofthemonthSeptember />}
           />
 
           {/* Visit-Pages */}

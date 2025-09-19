@@ -6,7 +6,9 @@ export default function Iconsofthemonth() {
   return (
     <>
       <Helmet>
-        <title>Icon of the Month in Chennai : Honoring Excellence in Chennai</title>
+        <title>
+          Icon of the Month in Chennai : Honoring Excellence in Chennai
+        </title>
         <meta
           name="description"
           content="Super Chennai honors achievers through the Icon of the month in chennai, showcasing leaders who inspire with dedication, courage, and transformative impact."
@@ -27,7 +29,8 @@ export default function Iconsofthemonth() {
             <div className="accodoamationBannerText">
               <h3>ICON OF THE MONTH</h3>
               <div className="breadCrum">
-                <Link to="/">Home</Link> - <a href="">ICON OF THE MONTH </a>{" "}
+                <Link to="/">Home</Link> -{" "}
+                <a href="">ICON OF THE MONTH </a>{" "}
               </div>
             </div>
           </div>
@@ -78,25 +81,24 @@ export default function Iconsofthemonth() {
             </div> */}
 
             <div className="flex superchennaiEventsMainContainer">
-              {/* Left */}
-
-              <a className="superchennaiEventsSection" href="/icon-of-the-july-month">
+              <a
+                className="superchennaiEventsSection"
+                href="/super-chennai-icon-of-september-2025"
+              >
                 <div
                   className="flex flex-col items-center text-center"
                   style={{ overflow: "hidden" }}
                 >
                   <img
-                    src="/images/events/kumaravelimage.jpg"
+                    src="/images/image-sep-inner.jpg"
                     alt="Left Image"
                     className="rounded-xl mb-3"
                   />
                   <p className="text-lg font-medium">
-                    Icon of the Month - July 2025
+                    Icon of the Month - Sep 2025
                   </p>
                 </div>
               </a>
-
-              {/* Right */}
 
               <a
                 className="superchennaiEventsSection"
@@ -113,6 +115,25 @@ export default function Iconsofthemonth() {
                   />
                   <p className="text-lg font-medium">
                     Icon of the Month - Aug 2025{" "}
+                  </p>
+                </div>
+              </a>
+
+              <a
+                className="superchennaiEventsSection"
+                href="/icon-of-the-july-month"
+              >
+                <div
+                  className="flex flex-col items-center text-center"
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/events/kumaravelimage.jpg"
+                    alt="Left Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">
+                    Icon of the Month - July 2025
                   </p>
                 </div>
               </a>

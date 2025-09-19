@@ -21,7 +21,7 @@ export default function IconofthemonthSeptember() {
   const data = [
     {
       title: <>AWARDS & HONOURS</>,
-      image: "/images/naturals-logo.png",
+      image: "/images/awards-sep.png",
       content: [
         <>
           Anand’s journey is marked by national pride and international
@@ -64,7 +64,7 @@ export default function IconofthemonthSeptember() {
       KEY HIGHLIGHTS & ACHIEVEMENTS
         </>
       ),
-      image: "/images/Champion-icon.png",
+      image: "/images/keyhighlights-sep.png",
       content: [
         <>
           {/* <strong>Kumaravel’s bold goal</strong> */}
@@ -225,7 +225,7 @@ export default function IconofthemonthSeptember() {
             <div className="VolunteerMainContainer">
               <div className="volunteerSectionBanner">
                 <div className="VolunteerBannerImage">
-                  <img src="/images/Iconofthemonth-banner.jpg" alt="" />
+                  <img src="/images/icon-of-the-months-sep-image.jpg" alt="" />
                 </div>
                 {/* <h3 className="voluntterContent">Icon of the month</h3> */}
               </div>
@@ -293,7 +293,7 @@ export default function IconofthemonthSeptember() {
                 <div className="section-left-image">
                   <img
                     // src="/images/Visit-Images/marina-beach.jpg"
-                    src="/images/kaveri-hospital.jpg"
+                    src="/images/image-sep.jpg"
                     alt="Main Side Visual"
                   />
                 </div>

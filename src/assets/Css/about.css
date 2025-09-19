@@ -640,9 +640,9 @@
   padding-bottom: 50px;
 }
 
-.septemberMonthStyle .naturals-logo {
+/* .septemberMonthStyle .naturals-logo {
   filter: invert(1);
-}
+} */
 
 @media (max-width: 1600px) {
   .naturals-section h2 {

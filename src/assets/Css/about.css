@@ -904,6 +904,23 @@
   .naturals-logo {
     width: 200px;
   }
+
+  .septemberMonthStyle .naturals-logo {
+    width: 60px;
+    margin-bottom: 25px;
+  }
+
+  .septemberMonthStyle .naturals-section:last-child {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .septemberMonthStyle .naturals-section {
+    /* padding: 60px 50px 60px 8%; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .awards-section {
     padding: 80px 30px 50px;
   }

@@ -63,6 +63,12 @@
   border-bottom-right-radius: 150px;
 }
 
+.VolunteerBannerImage video {
+  width: 85%;
+  object-fit: cover;
+  border-bottom-right-radius: 150px;
+}
+
 .nav-item button {
   color: #fff;
 }
@@ -357,6 +363,10 @@
 .VolunteerBannerImage img {
   width: 75%; 
 }
+
+.VolunteerBannerImage video {
+  width: 75%; 
+}
  .voluntterContent {
      top: -13%;}
 }
@@ -476,6 +486,13 @@
   }
 
   .VolunteerBannerImage img {
+    width: 90%;
+    width: 95%;
+    object-fit: cover;
+    border-bottom-right-radius: 50px;
+  }
+
+    .VolunteerBannerImage video {
     width: 90%;
     width: 95%;
     object-fit: cover;

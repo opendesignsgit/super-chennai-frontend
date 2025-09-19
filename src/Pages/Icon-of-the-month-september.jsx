@@ -59,16 +59,10 @@ export default function IconofthemonthSeptember() {
       ],
     },
     {
-      title: (
-        <>
-      KEY HIGHLIGHTS & ACHIEVEMENTS
-        </>
-      ),
+      title: <>KEY HIGHLIGHTS & ACHIEVEMENTS</>,
       image: "/images/keyhighlights-sep.png",
       content: [
-        <>
-          {/* <strong>Kumaravel’s bold goal</strong> */}
-        </>,
+        <>{/* <strong>Kumaravel’s bold goal</strong> */}</>,
         "1988 – First Indian to become a Grandmaster",
         "Crowned World Chess Champion on five occasions – 2000, 2007, 2008, 2010, and 2012.",
         "Represented India at 11 Chess Olympiads",
@@ -208,13 +202,14 @@ export default function IconofthemonthSeptember() {
       <div className="septemberMonthStyle">
         <Helmet>
           <title>
-            Naturals Founder CK Kumaravel | Women Empowerment - Super Chennai
+            Super Chennai Icon of September 2025 – Viswanathan Anand, Chess
+            Legend
           </title>
           <meta
             name="description"
-            content="Honouring CK Kumaravel for transforming grooming in Chennai, Icon of the Month, building 800+ Naturals salons and empowering thousands of women entrepreneurs."
+            content="Super Chennai honours Viswanathan Anand, India’s first Grandmaster and five-time World Chess Champion, for inspiring generations in Indian chess."
           />
-          <link rel="canonical" href="/icon-of-the-july-month" />
+          <link rel="canonical" href="/super-chennai-icon-of-september-2025" />
         </Helmet>
         <div className="InvestPageId">
           <div
@@ -225,7 +220,17 @@ export default function IconofthemonthSeptember() {
             <div className="VolunteerMainContainer">
               <div className="volunteerSectionBanner">
                 <div className="VolunteerBannerImage">
-                  <img src="/images/icon-of-the-months-sep-image.jpg" alt="" />
+                  {/* <img src="/images/icon-of-the-months-sep-image.jpg" alt="" /> */}
+                  {/* <video autoplay src="/images/vishwanathan-video.mp4"></video> */}
+                  <video
+                    src="/images/vishwanathan-video.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    // controls
+                  >
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
                 {/* <h3 className="voluntterContent">Icon of the month</h3> */}
               </div>

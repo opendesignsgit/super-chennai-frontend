@@ -4065,148 +4065,148 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     <p>Tickets are required for children aged 6 and above. The event will be conducted in Hindi and Gujarati and is open to all ages, making it a fun and memorable family experience.</p>
   `,
   },
-  // {
-  //   url: "henrique-camacho-live-chennai-2025",
-  //   id: 159,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/159",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/rajasekhar-mamidanna-live/ET00372739",
-  //   EventsCalendarTitle: "Henrique Camacho – Live in Chennai",
-  //   EventsCalendarContent:
-  //     "Attention Chennai! On October 12th, Sunday, 5 PM onwards, the renowned DJ Henrique",
-  //   EventsCalendarMonth: "12 Oct 2025",
-  //   EventsCalendarTime: "5:00 PM",
-  //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/280.jpg",
-  //   link: "/events",
-  //   location: "Jekyll & Hyde, Porur, Chennai",
-  //   language: "",
-  //   hours: "6 Hours",
-  //   ageLimit: "21 Yrs+",
-  //   rleigion: "English",
-  //   aboutFull: `
-  //   <p>Attention Chennai! On October 12th, Sunday, 5 PM onwards, the renowned DJ Henrique Camacho is set to electrify the crowd at Jekyll & Hyde, Porur.</p>
-  //   <p>Get ready for a night filled with psychedelic sounds, pulsating beats, and electrifying energy as Camacho delivers an unforgettable performance.</p>
-  //   <p>Experience the perfect mix of music, lights, and atmosphere that will keep you on your feet till the very end.</p>
-  //   <p>This extraordinary music journey awaits you—secure your spot now and feel the pulse live.</p>
-  // `,
-  // },
-  // {
-  //   url: "rajashekar-mamidanna-live-2025",
-  //   id: 160,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/160",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/rajasekhar-mamidanna-live/ET00372739",
-  //   EventsCalendarTitle: "Rajashekar Mamidanna Live",
-  //   EventsCalendarContent:
-  //     "Get ready to laugh out loud! The Grin Club is excited to bring Rajasekhar Mamidanna’s latest",
-  //   EventsCalendarMonth: "04 Oct 2025",
-  //   EventsCalendarTime: "4:30 PM",
-  //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/281.jpg",
-  //   link: "/events",
-  //   location: "Music Academy Mini Hall, Chennai",
-  //   language: "",
-  //   hours: "1 Hour",
-  //   ageLimit: "16 Yrs+",
-  //   rleigion: "English",
-  //   aboutFull: `
-  //   <p>Get ready to laugh out loud! The Grin Club is excited to bring Rajasekhar Mamidanna’s latest comedy special to your city, live on stage.</p>
-  //   <p>Known for his sharp wit and clean humor, Rajasekhar has won hearts across the country with his unique storytelling style.</p>
-  //   <p>In this show, he dives into the amusing side of everyday life, delivering jokes and stories in a way only he can.</p>
-  //   <p>With more than 50 million views on YouTube and countless entertaining anecdotes, Rajasekhar promises an evening of laughter, fun, and perhaps a few thoughtful insights.</p>
-  //   <p>For any questions about the show, reach out to The Grin Club via their social media channels.</p>
-  // `,
-  // },
-  // {
-  //   url: "happily-unmarried-2025",
-  //   id: 161,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/161",
-  //   siteLink: "https://in.bookmyshow.com/events/happily-unmarried/ET00440813",
-  //   EventsCalendarTitle: "Happily Unmarried",
-  //   EventsCalendarContent:
-  //     "Soda once quipped, “If you never get married, you’ll never have to worry about getting divorced.” His",
-  //   EventsCalendarMonth: "12 Oct 2025",
-  //   EventsCalendarTime: "8:00 PM",
-  //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/282.jpg",
-  //   link: "/events",
-  //   location: "Punch - Unpaid therapist, Chennai",
-  //   language: "",
-  //   hours: "1 Hours 30 Minutes",
-  //   ageLimit: "",
-  //   rleigion: "English",
-  //   aboutFull: `
-  //   <p>Soda once quipped, “If you never get married, you’ll never have to worry about getting divorced.” His show, Happily Unmarried, is a rags-to-riches tale cleverly wrapped in an hour of jokes about relationships. It also moonlights as a fundraiser for future wedding expenses.</p>
-  //   <p>Disclaimer: No married lives were harmed in the making of this show.</p>
-  // `,
-  // },
-  // {
-  //   url: "state-level-competition-oct-2025",
-  //   id: 162,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/162",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/state-level-drawing-competition-oct-2025/ET00462140",
-  //   EventsCalendarTitle: "State Level Competition - Oct 2025",
-  //   EventsCalendarContent:
-  //     "Kalam Event Management is thrilled to announce the State Level Drawing Competition – October 2025, scheduled",
-  //   EventsCalendarMonth: "12 Oct 2025",
-  //   EventsCalendarTime: "10:00 AM",
-  //   EventsCalendarCategory: "Competition",
-  //   image: "/images/HomePage-Images/Events/Newevents/283.jpg",
-  //   link: "/events",
-  //   location: "ABS Global Smart School, Chennai",
-  //   language: "Tamil, English",
-  //   hours: "4 Hours",
-  //   ageLimit: "3 years & above",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Kalam Event Management is thrilled to announce the State Level Drawing Competition – October 2025, scheduled for 12th October 2025 at ABS Global Smart School, Avadi, proudly supported by BookNGo.live.</p>
-  //   <p><strong>Grades & Themes:</strong></p>
-  //   <ul>
-  //     <li>Pre-KG: Balloons (Printed Chart)</li>
-  //     <li>LKG: Diya (Printed Chart)</li>
-  //     <li>UKG: Rocket (Printed Chart)</li>
-  //     <li>1st & 2nd STD: "Fruits Basket"</li>
-  //     <li>3rd & 4th STD: "Trees"</li>
-  //     <li>5th & 6th STD: "My New Robot"</li>
-  //     <li>7th & 8th STD: "Rocket"</li>
-  //     <li>9th to 12th STD: "Indian AirForce"</li>
-  //     <li>Open Category: Dr. A.P.J Abdul Kalam</li>
-  //   </ul>
-  //   <p>Printed charts can be downloaded from the event gallery on BookNGo.live.</p>
-  //   <p><strong>Schedule:</strong></p>
-  //   <ul>
-  //     <li>Pre-KG to UKG: 10:00 – 11:00 AM</li>
-  //     <li>1st to 4th STD: 11:00 AM – 12:00 PM (A4 Chart Paper)</li>
-  //     <li>5th to 12th STD: 11:00 AM – 12:00 PM (Half Chart Paper)</li>
-  //     <li>Open Category: 12:00 – 01:00 PM (Half Chart Paper)</li>
-  //   </ul>
-  //   <p>Registration opens 30 minutes before the event start time.</p>
-  //   <p><strong>Important Guidelines:</strong></p>
-  //   <ul>
-  //     <li>Winners will be awarded a Trophy.</li>
-  //     <li>Every participant will receive a Medal and Certificate of Participation.</li>
-  //     <li>Each drawing session lasts 60 minutes; results will be declared 90 minutes after the category ends.</li>
-  //     <li>Participants should bring their own drawing materials (pad, art kit, etc.).</li>
-  //     <li>Templates and brush pens are not allowed.</li>
-  //     <li>School ID card is mandatory for registration.</li>
-  //     <li>On-the-spot Registration: ₹300</li>
-  //   </ul>
-  // `,
-  // },
+  {
+    url: "henrique-camacho-live-chennai-2025",
+    id: 159,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/159",
+    siteLink:
+      "https://in.bookmyshow.com/events/henrique-camacho-live-in-chennai/ET00461817",
+    EventsCalendarTitle: "Henrique Camacho – Live in Chennai",
+    EventsCalendarContent:
+      "Attention Chennai! On October 12th, Sunday, 5 PM onwards, the renowned DJ Henrique",
+    EventsCalendarMonth: "12 Oct 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Music",
+    image: "/images/HomePage-Images/Events/Newevents/281.jpg",
+    link: "/events",
+    location: "Jekyll & Hyde, Porur, Chennai",
+    language: "",
+    hours: "6 Hours",
+    ageLimit: "21 Yrs+",
+    rleigion: "English",
+    aboutFull: `
+    <p>Attention Chennai! On October 12th, Sunday, 5 PM onwards, the renowned DJ Henrique Camacho is set to electrify the crowd at Jekyll & Hyde, Porur.</p>
+    <p>Get ready for a night filled with psychedelic sounds, pulsating beats, and electrifying energy as Camacho delivers an unforgettable performance.</p>
+    <p>Experience the perfect mix of music, lights, and atmosphere that will keep you on your feet till the very end.</p>
+    <p>This extraordinary music journey awaits you—secure your spot now and feel the pulse live.</p>
+  `,
+  },
+  {
+    url: "rajashekar-mamidanna-live-2025",
+    id: 160,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/160",
+    siteLink:
+      "https://in.bookmyshow.com/events/rajasekhar-mamidanna-live/ET00372739",
+    EventsCalendarTitle: "Rajashekar Mamidanna Live",
+    EventsCalendarContent:
+      "Get ready to laugh out loud! The Grin Club is excited to bring Rajasekhar Mamidanna’s latest",
+    EventsCalendarMonth: "04 Oct 2025",
+    EventsCalendarTime: "4:30 PM",
+    EventsCalendarCategory: "Comedy Show",
+    image: "/images/HomePage-Images/Events/Newevents/283.jpg",
+    link: "/events",
+    location: "Music Academy Mini Hall, Chennai",
+    language: "",
+    hours: "1 Hour",
+    ageLimit: "16 Yrs+",
+    rleigion: "English",
+    aboutFull: `
+    <p>Get ready to laugh out loud! The Grin Club is excited to bring Rajasekhar Mamidanna’s latest comedy special to your city, live on stage.</p>
+    <p>Known for his sharp wit and clean humor, Rajasekhar has won hearts across the country with his unique storytelling style.</p>
+    <p>In this show, he dives into the amusing side of everyday life, delivering jokes and stories in a way only he can.</p>
+    <p>With more than 50 million views on YouTube and countless entertaining anecdotes, Rajasekhar promises an evening of laughter, fun, and perhaps a few thoughtful insights.</p>
+    <p>For any questions about the show, reach out to The Grin Club via their social media channels.</p>
+  `,
+  },
+  {
+    url: "happily-unmarried-2025",
+    id: 161,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/161",
+    siteLink: "https://in.bookmyshow.com/events/happily-unmarried/ET00440813",
+    EventsCalendarTitle: "Happily Unmarried",
+    EventsCalendarContent:
+      "Soda once quipped, “If you never get married, you’ll never have to worry about getting divorced.” His",
+    EventsCalendarMonth: "12 Oct 2025",
+    EventsCalendarTime: "8:00 PM",
+    EventsCalendarCategory: "Comedy Show",
+    image: "/images/HomePage-Images/Events/Newevents/282.jpg",
+    link: "/events",
+    location: "Punch - Unpaid therapist, Chennai",
+    language: "",
+    hours: "1 Hours 30 Minutes",
+    ageLimit: "",
+    rleigion: "English",
+    aboutFull: `
+    <p>Soda once quipped, “If you never get married, you’ll never have to worry about getting divorced.” His show, Happily Unmarried, is a rags-to-riches tale cleverly wrapped in an hour of jokes about relationships. It also moonlights as a fundraiser for future wedding expenses.</p>
+    <p>Disclaimer: No married lives were harmed in the making of this show.</p>
+  `,
+  },
+  {
+    url: "state-level-competition-oct-2025",
+    id: 162,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/162",
+    siteLink:
+      "https://in.bookmyshow.com/events/state-level-drawing-competition-oct-2025/ET00462140",
+    EventsCalendarTitle: "State Level Competition - Oct 2025",
+    EventsCalendarContent:
+      "Kalam Event Management is thrilled to announce the State Level Drawing Competition – October 2025, scheduled",
+    EventsCalendarMonth: "12 Oct 2025",
+    EventsCalendarTime: "10:00 AM",
+    EventsCalendarCategory: "Competition",
+    image: "/images/HomePage-Images/Events/Newevents/284.jpg",
+    link: "/events",
+    location: "ABS Global Smart School, Chennai",
+    language: "Tamil, English",
+    hours: "4 Hours",
+    ageLimit: "3 years & above",
+    rleigion: "",
+    aboutFull: `
+    <p>Kalam Event Management is thrilled to announce the State Level Drawing Competition – October 2025, scheduled for 12th October 2025 at ABS Global Smart School, Avadi, proudly supported by BookNGo.live.</p>
+    <p><strong>Grades & Themes:</strong></p>
+    <ul>
+      <li>Pre-KG: Balloons (Printed Chart)</li>
+      <li>LKG: Diya (Printed Chart)</li>
+      <li>UKG: Rocket (Printed Chart)</li>
+      <li>1st & 2nd STD: "Fruits Basket"</li>
+      <li>3rd & 4th STD: "Trees"</li>
+      <li>5th & 6th STD: "My New Robot"</li>
+      <li>7th & 8th STD: "Rocket"</li>
+      <li>9th to 12th STD: "Indian AirForce"</li>
+      <li>Open Category: Dr. A.P.J Abdul Kalam</li>
+    </ul>
+    <p>Printed charts can be downloaded from the event gallery on BookNGo.live.</p>
+    <p><strong>Schedule:</strong></p>
+    <ul>
+      <li>Pre-KG to UKG: 10:00 – 11:00 AM</li>
+      <li>1st to 4th STD: 11:00 AM – 12:00 PM (A4 Chart Paper)</li>
+      <li>5th to 12th STD: 11:00 AM – 12:00 PM (Half Chart Paper)</li>
+      <li>Open Category: 12:00 – 01:00 PM (Half Chart Paper)</li>
+    </ul>
+    <p>Registration opens 30 minutes before the event start time.</p>
+    <p><strong>Important Guidelines:</strong></p>
+    <ul>
+      <li>Winners will be awarded a Trophy.</li>
+      <li>Every participant will receive a Medal and Certificate of Participation.</li>
+      <li>Each drawing session lasts 60 minutes; results will be declared 90 minutes after the category ends.</li>
+      <li>Participants should bring their own drawing materials (pad, art kit, etc.).</li>
+      <li>Templates and brush pens are not allowed.</li>
+      <li>School ID card is mandatory for registration.</li>
+      <li>On-the-spot Registration: ₹300</li>
+    </ul>
+  `,
+  },
 
   // {
   //   url: "marwadi-dreams-standup-comedy-mayank-parakh-2025",
@@ -4223,7 +4223,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "11 Oct 2025",
   //   EventsCalendarTime: "8:00 PM",
   //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/284.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/285.jpg",
   //   link: "/events",
   //   location: "Trinity Studio, Kodambakkam, Chennai",
   //   language: "Hindi, English",
@@ -4253,7 +4253,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "12 Oct 2025",
   //   EventsCalendarTime: "6:00 PM",
   //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/285.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/286.jpg",
   //   link: "/events",
   //   location: "Punch - Unpaid Therapist, Chennai",
   //   language: "Tamil, English",
@@ -4282,7 +4282,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "05 Oct 2025",
   //   EventsCalendarTime: "6:00 PM",
   //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/286.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/287.jpg",
   //   link: "/events",
   //   location: "Medai-The Stage, Alwarpet, Chennai",
   //   language: "Tamil",
@@ -4312,7 +4312,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "04 Oct 2025",
   //   EventsCalendarTime: "6:00 PM",
   //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/287.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/288.jpg",
   //   link: "/events",
   //   location: "Punch - Unpaid Therapist, Chennai",
   //   language: "Tamil, English",
@@ -4341,7 +4341,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "11 Oct 2025",
   //   EventsCalendarTime: "8:30 AM",
   //   EventsCalendarCategory: "Sports",
-  //   image: "/images/HomePage-Images/Events/Newevents/288.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/289.jpg",
   //   link: "/events",
   //   location: "TSP 2 Battalion Parade Ground, Avadi, Chennai",
   //   language: "English, Tamil",
@@ -4372,7 +4372,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "12 Oct 2025",
   //   EventsCalendarTime: "6:00 PM",
   //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/289.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/290.jpg",
   //   link: "/events",
   //   location: "Chennai",
   //   language: "Tamil",
@@ -4402,7 +4402,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "11 Oct 2025",
   //   EventsCalendarTime: "6:30 PM",
   //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/290.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/291.jpg",
   //   link: "/events",
   //   location: "The Music Academy Mini Hall, Chennai",
   //   language: "English",
@@ -4430,7 +4430,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "4 Oct 2025",
   //   EventsCalendarTime: "6:00 PM",
   //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/rajini50.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/292.jpg",
   //   link: "/events",
   //   location: "Kamarajar Arangam, Chennai",
   //   language: "Tamil",
@@ -4459,7 +4459,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "2 Oct 2025",
   //   EventsCalendarTime: "6:30 PM",
   //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/melodymasters2.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/293.jpg",
   //   link: "/events",
   //   location: "Vani Mahal, Chennai",
   //   language: "Tamil",
@@ -4487,7 +4487,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "11 Oct 2025",
   //   EventsCalendarTime: "6:30 PM",
   //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/qfrlive.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/294.jpg",
   //   link: "/events",
   //   location: "Kamarajar Arangam, Chennai",
   //   language: "Tamil",
@@ -4519,7 +4519,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "11 Oct 2025",
   //   EventsCalendarTime: "6:30 PM",
   //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/haanpehlibaar.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/295.jpg",
   //   link: "/events",
   //   location: "The Spastics Society of Tamilnadu, Chennai",
   //   language: "Hindi",
@@ -4553,7 +4553,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "14 Oct 2025",
   //   EventsCalendarTime: "7:15 PM",
   //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/matrimania.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/296.jpg",
   //   link: "/events",
   //   location: "The Music Academy Mini Hall, Chennai",
   //   language: "English",
@@ -4580,7 +4580,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "2 Oct 2025",
   //   EventsCalendarTime: "5:00 PM",
   //   EventsCalendarCategory: "Workshop",
-  //   image: "/images/HomePage-Images/Events/Newevents/prasidaweaving.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/297.jpg",
   //   link: "/events",
   //   location: "DeepBlueStories, Chennai",
   //   language: "English, Tamil, Malayalam",
@@ -4610,7 +4610,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "5 Oct 2025",
   //   EventsCalendarTime: "6:00 PM",
   //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/roasted.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/298.jpg",
   //   link: "/events",
   //   location: "Punch - Unpaid Therapist, Chennai",
   //   language: "Tamil",
@@ -4637,7 +4637,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "11 Oct 2025",
   //   EventsCalendarTime: "6:00 PM",
   //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/flashback.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/299.jpg",
   //   link: "/events",
   //   location: "Punch - Unpaid Therapist, Chennai",
   //   language: "Tamil",
@@ -4666,7 +4666,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "5 Oct 2025",
   //   EventsCalendarTime: "6:00 AM",
   //   EventsCalendarCategory: "Sports",
-  //   image: "/images/HomePage-Images/Events/Newevents/kidathon2025.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/300.jpg",
   //   link: "/events",
   //   location: "SDAT - Nehru Park, Chennai",
   //   language: "English, Tamil",
@@ -4708,7 +4708,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "18 Oct 2025",
   //   EventsCalendarTime: "6:00 PM",
   //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/roobarooh.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/301.jpg",
   //   link: "/events",
   //   location: "The Music Academy Mini Hall, Chennai",
   //   language: "Hindi, Urdu, Tamil, Malayalam, Punjabi",
@@ -4739,7 +4739,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "26 Oct 2025",
   //   EventsCalendarTime: "4:00 PM",
   //   EventsCalendarCategory: "Comedy, Musical",
-  //   image: "/images/HomePage-Images/Events/Newevents/imaginesan.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/302.jpg",
   //   link: "/events",
   //   location: "Medai - The Stage, Alwarpet, Chennai",
   //   language: "English, Tamil",
@@ -4768,7 +4768,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "4 Oct 2025",
   //   EventsCalendarTime: "7:00 PM",
   //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/panindians.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/303.jpg",
   //   link: "/events",
   //   location: "Trinity Studio, Kodambakkam",
   //   language: "English",
@@ -4797,7 +4797,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "4 Oct 2025",
   //   EventsCalendarTime: "6:00 PM",
   //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/kennysebastian.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/304.jpg",
   //   link: "/events",
   //   location: "Medai - The Stage, Alwarpet, Chennai",
   //   language: "English",
@@ -4825,7 +4825,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "5 Oct 2025",
   //   EventsCalendarTime: "3:30 PM",
   //   EventsCalendarCategory: "Wellness",
-  //   image: "/images/HomePage-Images/Events/Newevents/aquasoundbath.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/305.jpg",
   //   link: "/events",
   //   location: "Blues By Tiki Taka, Chennai",
   //   language: "English",
@@ -4855,7 +4855,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "25 Oct 2025",
   //   EventsCalendarTime: "10:00 AM",
   //   EventsCalendarCategory: "Workshop",
-  //   image: "/images/HomePage-Images/Events/Newevents/robocraft.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/306.jpg",
   //   link: "/events",
   //   location: "ICare Robotics, Chennai",
   //   language: "English, Tamil, Hindi",
@@ -4893,7 +4893,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarTime: "7:00 PM",
   //   EventsCalendarCategory: "Music Concert",
   //   image:
-  //     "/images/HomePage-Images/Events/Newevents/tour-de-india-staccato.jpg",
+  //     "/images/HomePage-Images/Events/Newevents/307.jpg",
   //   link: "/events",
   //   location: "Music Academy, Chennai",
   //   language: "Multilingual",
@@ -4930,7 +4930,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "1 Oct 2025",
   //   EventsCalendarTime: "10:00 PM",
   //   EventsCalendarCategory: "Music Festival",
-  //   image: "/images/HomePage-Images/Events/Newevents/concert-ratri-20.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/308.jpg",
   //   link: "/events",
   //   location: "Phoenix Marketcity, Chennai",
   //   language: "Multilingual",
@@ -4977,7 +4977,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarTime: "5:00 AM",
   //   EventsCalendarCategory: "Sports",
   //   image:
-  //     "/images/HomePage-Images/Events/Newevents/indian-navy-day-run-2025.jpg",
+  //     "/images/HomePage-Images/Events/Newevents/309.jpg",
   //   link: "/events",
   //   location: "Olcott Memorial Higher Secondary School, Chennai",
   //   language: "English, Tamil",
@@ -5020,7 +5020,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   //   EventsCalendarMonth: "12 Oct 2025",
   //   EventsCalendarTime: "10:00 AM",
   //   EventsCalendarCategory: "Charity / Community",
-  //   image: "/images/HomePage-Images/Events/Newevents/moi-virundhu.jpg",
+  //   image: "/images/HomePage-Images/Events/Newevents/310.jpg",
   //   link: "/events",
   //   location: "YMCA Royapettah, Chennai",
   //   language: "Multilingual",

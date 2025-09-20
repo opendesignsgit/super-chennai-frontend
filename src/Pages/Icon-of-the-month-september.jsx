@@ -209,7 +209,7 @@ export default function IconofthemonthSeptember() {
             name="description"
             content="Super Chennai honours Viswanathan Anand, India’s first Grandmaster and five-time World Chess Champion, for inspiring generations in Indian chess."
           />
-          <link rel="canonical" href="/super-chennai-icon-of-september-2025" />
+          <link rel="canonical" href="/super-chennai-icon-of-sep-2025" />
         </Helmet>
         <div className="InvestPageId">
           <div

@@ -83,7 +83,7 @@ export default function Iconsofthemonth() {
             <div className="flex superchennaiEventsMainContainer">
               <a
                 className="superchennaiEventsSection"
-                href="/super-chennai-icon-of-september-2025"
+                href="/super-chennai-icon-of-sep-2025"
               >
                 <div
                   className="flex flex-col items-center text-center"

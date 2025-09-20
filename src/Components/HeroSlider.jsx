@@ -22,7 +22,7 @@ const slides = [
   },
   {
     type: "image",
-    link: "/super-chennai-icon-of-aug-2025",
+    link: "/super-chennai-icon-of-sep-2025",
     image: "/images/HomePage-Images/icon-of-the-month-banner.jpg",
     image1: "/images/HomePage-Images/icon-of-the-month-mobile-banner.jpg",
     title: "Icon of the month in chennai",

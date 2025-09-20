@@ -636,13 +636,18 @@
 }
 
 .septemberMonthStyle .workIntro {
-  padding-top: 46px;
-  padding-bottom: 50px;
+  padding-top: 66px;
+  padding-bottom: 60px;
 }
 
 /* .septemberMonthStyle .naturals-logo {
   filter: invert(1);
 } */
+
+.septemberMonthStyle .naturals-logo {
+  width: 80px;
+  margin-bottom: 25px;
+}
 
 @media (max-width: 1600px) {
   .naturals-section h2 {

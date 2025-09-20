@@ -224,16 +224,20 @@ export default function IconofthemonthSeptember() {
             <div className="VolunteerMainContainer">
               <div className="volunteerSectionBanner">
                 <div className="VolunteerBannerImage">
-                  {/* <img src="/images/icon-of-the-months-sep-image.jpg" alt="" /> */}
-                  {/* <video autoplay src="/images/vishwanathan-video.mp4"></video> */}
-                  <video
+                  {/* <video
                     src="/images/vishwanathan-video.mp4"
-                    // autoPlay
-                    // muted
+                 
                     controls
                     playsInline
                     loop
                   >
+                    Your browser does not support the video tag.
+                  </video> */}
+                  <video controls playsInline loop>
+                    <source
+                      src="/images/vishwanathan-video.mp4"
+                      type="video/mp4"
+                    />
                     Your browser does not support the video tag.
                   </video>
                 </div>

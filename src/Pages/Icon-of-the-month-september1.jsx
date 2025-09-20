@@ -224,20 +224,31 @@ export default function IconofthemonthSeptember1() {
             <div className="VolunteerMainContainer">
               <div className="volunteerSectionBanner">
                 <div className="VolunteerBannerImage">
-                  {/* <img src="/images/icon-of-the-months-sep-image.jpg" alt="" /> */}
-                  {/* <video autoplay src="/images/vishwanathan-video.mp4"></video> */}
-                  <video
+                  {/* <video
                     src="/images/vishwanathan-video.mp4"
                     autoPlay
                     muted
-                    // controls
                     loop
                   >
+                    Your browser does not support the video tag.
+                  </video> */}
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    // style={{ width: "100%" }}
+                  >
+                    <source
+                      src="/images/vishwanathan-video.mp4"
+                      type="video/mp4"
+                    />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <h3 className="voluntterContent">
-                  Superchennai's Icon Of The Month
+                  Superchennai's Icon Of The Months
                 </h3>
               </div>
             </div>

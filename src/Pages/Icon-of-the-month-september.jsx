@@ -224,10 +224,10 @@ export default function IconofthemonthSeptember() {
                   {/* <video autoplay src="/images/vishwanathan-video.mp4"></video> */}
                   <video
                     src="/images/vishwanathan-video.mp4"
-                    autoPlay
-                    muted
+                    // autoPlay
+                    // muted
+                    controls
                     loop
-                    // controls
                   >
                     Your browser does not support the video tag.
                   </video>

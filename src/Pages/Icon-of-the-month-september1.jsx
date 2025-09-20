@@ -20,7 +20,11 @@ export default function IconofthemonthSeptember1() {
 
   const data = [
     {
-      title: <>AWARDS & HONOURS</>,
+      title: (
+        <>
+          Awards & <br /> Honours
+        </>
+      ),
       image: "/images/awards-sep.png",
       content: [
         <>
@@ -59,7 +63,7 @@ export default function IconofthemonthSeptember1() {
       ],
     },
     {
-      title: <>KEY HIGHLIGHTS & ACHIEVEMENTS</>,
+      title: <>Key Highlights & Achievements</>,
       image: "/images/keyhighlights-sep.png",
       content: [
         <>{/* <strong>Kumaravel’s bold goal</strong> */}</>,
@@ -84,11 +88,11 @@ export default function IconofthemonthSeptember1() {
       desc: "As an author of Mind Master, he shared his life lessons on resilience, focus, and decision-making. His contribution extends beyond the board – he mentors, inspires, and puts India firmly on the world chess map.",
       icon: "/images/icons/Points-svg.svg",
     },
-    // {
-    //   title: "",
-    //   desc: "Dr. Chandrakumar is also deeply engaged in entrepreneurship and leadership circles. He is an active member of the Entrepreneur’s Organization (EO), Chennai Chapter, and currently serves his second consecutive term as Chairman of the Taskforce on Wellbeing & Healthcare for CII Southern Region (2024–26), after leading the CII Tamil Nadu State Council earlier.",
-    //   icon: "/images/icons/Points-svg.svg",
-    // },
+    {
+      title: "",
+      desc: "Beyond the chessboard, Viswanathan Anand is known for his curiosity and love for learning. He enjoys exploring new ideas, reading, and engaging with different cultures. His calm and thoughtful approach to challenges reflects a mindset that values strategy, patience, and continuous growth in all aspects of life. He often shares insights from his experiences with young players, encouraging them to think critically and creatively. Anand’s interactions reveal a person who is approachable, humble, and always eager to exchange ideas. Even off the board, his presence inspires reflection, discipline, and a passion for learning.",
+      icon: "/images/icons/Points-svg.svg",
+    },
   ];
 
   const awardsData = [
@@ -224,15 +228,17 @@ export default function IconofthemonthSeptember1() {
                   {/* <video autoplay src="/images/vishwanathan-video.mp4"></video> */}
                   <video
                     src="/images/vishwanathan-video.mp4"
-                    // autoPlay
-                    // muted
-                    controls
+                    autoPlay
+                    muted
+                    // controls
                     loop
                   >
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                {/* <h3 className="voluntterContent">Icon of the month</h3> */}
+                <h3 className="voluntterContent">
+                  Superchennai's Icon Of The Month
+                </h3>
               </div>
             </div>
             <div className="notHomePageSearch">

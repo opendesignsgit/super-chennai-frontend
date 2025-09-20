@@ -231,6 +231,7 @@ export default function IconofthemonthSeptember() {
                     // autoPlay
                     // muted
                     controls
+                    playsInline
                     loop
                   >
                     Your browser does not support the video tag.

@@ -4069,8 +4069,8 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     url: "henrique-camacho-live-chennai-2025",
     id: 159,
     RegisterLink: "",
-    metaTitleEvent: "",
-    metaDescriptionEvent: "",
+    metaTitleEvent: " DJ Nights in Chennai / Henrique Camacho live / Music Events ",
+    metaDescriptionEvent: "DJ Nights in Chennai get bigger with Henrique Camacho live! A music event packed with EDM, trance, and electrifying beats for an unforgettable night.",
     conicallinkEvent: "/eventsdetails/159",
     siteLink:
       "https://in.bookmyshow.com/events/henrique-camacho-live-in-chennai/ET00461817",
@@ -4208,837 +4208,834 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   `,
   },
 
-  // {
-  //   url: "marwadi-dreams-standup-comedy-mayank-parakh-2025",
-  //   id: 163,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/163",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/marwadi-dreams-standup-comedy-by-mayank-parakh/ET00418076",
-  //   EventsCalendarTitle: "Marwadi Dreams Standup Comedy by Mayank Parakh Live!",
-  //   EventsCalendarContent:
-  //     "Join us for an exciting new show featuring Mayank Parakh, a Marwadi boy from a business family who dared",
-  //   EventsCalendarMonth: "11 Oct 2025",
-  //   EventsCalendarTime: "8:00 PM",
-  //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/285.jpg",
-  //   link: "/events",
-  //   location: "Trinity Studio, Kodambakkam, Chennai",
-  //   language: "Hindi, English",
-  //   hours: "1 Hour 15 Minutes",
-  //   ageLimit: "16 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Join us for an exciting new show featuring Mayank Parakh, a Marwadi boy from a business family who dared to dream beyond the conventional path. From a stable career at L&T Hyd Metro Rail to pursuing his passion, Mayank took the leap into the world of films and stand-up comedy. Experience fresh, unheard stories of his journey, full of twists, turns, and laughter, as he shares how he made his dreams a reality.</p>
-  //   <p><strong>About Mayank Parakh:</strong><br>Mayank is a versatile actor and stand-up comedian from Chhattisgarh who has entertained audiences across India. He has performed with reputed companies and conglomerates like ICICI, Deloitte, Navneet, Tata Steel, Salesforce, Aditya Birla, Yes Bank, Ecom Express, and Taj Group of Hotels, among others.</p>
-  //   <p><strong>Filmography & Highlights:</strong><br>Telugu films: WILDDOG (with Nagarjuna), GAAMI (as a mad scientist & main antagonist), YASHODA (with Samantha Ruth Prabhu)<br>Hindi films: SRIKANTH (with Rajkummar Rao)<br>Web series: Laakhon Mein Ek (Amazon Prime – as hostel warden Bala), Goodachari, Modern Love Hyderabad, Parampara S2, Puli Meka, Dayaa, Bhagvant Kesari, Gangs of Godavari<br>Upcoming projects: 3 Telugu films and 1 Hindi film</p>
-  //   <p>Come witness the journey of a dreamer who turned challenges into laughter and screens into stages.</p>
-  // `,
-  // },
+  {
+    url: "marwadi-dreams-standup-comedy-mayank-parakh-2025",
+    id: 163,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/163",
+    siteLink:
+      "https://in.bookmyshow.com/events/marwadi-dreams-standup-comedy-by-mayank-parakh/ET00418076",
+    EventsCalendarTitle: "Marwadi Dreams Standup Comedy by Mayank Parakh Live!",
+    EventsCalendarContent:
+      "Join us for an exciting new show featuring Mayank Parakh, a Marwadi boy from a business family who dared",
+    EventsCalendarMonth: "11 Oct 2025",
+    EventsCalendarTime: "8:00 PM",
+    EventsCalendarCategory: "Comedy Show",
+    image: "/images/HomePage-Images/Events/Newevents/285.jpg",
+    link: "/events",
+    location: "Trinity Studio, Kodambakkam, Chennai",
+    language: "Hindi, English",
+    hours: "1 Hour 15 Minutes",
+    ageLimit: "16 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Join us for an exciting new show featuring Mayank Parakh, a Marwadi boy from a business family who dared to dream beyond the conventional path. From a stable career at L&T Hyd Metro Rail to pursuing his passion, Mayank took the leap into the world of films and stand-up comedy. Experience fresh, unheard stories of his journey, full of twists, turns, and laughter, as he shares how he made his dreams a reality.</p>
+    <p><strong>About Mayank Parakh:</strong><br>Mayank is a versatile actor and stand-up comedian from Chhattisgarh who has entertained audiences across India. He has performed with reputed companies and conglomerates like ICICI, Deloitte, Navneet, Tata Steel, Salesforce, Aditya Birla, Yes Bank, Ecom Express, and Taj Group of Hotels, among others.</p>
+    <p><strong>Filmography & Highlights:</strong><br>Telugu films: WILDDOG (with Nagarjuna), GAAMI (as a mad scientist & main antagonist), YASHODA (with Samantha Ruth Prabhu)<br>Hindi films: SRIKANTH (with Rajkummar Rao)<br>Web series: Laakhon Mein Ek (Amazon Prime – as hostel warden Bala), Goodachari, Modern Love Hyderabad, Parampara S2, Puli Meka, Dayaa, Bhagvant Kesari, Gangs of Godavari<br>Upcoming projects: 3 Telugu films and 1 Hindi film</p>
+    <p>Come witness the journey of a dreamer who turned challenges into laughter and screens into stages.</p>
+  `,
+  },
 
-  // {
-  //   url: "thats-what-she-said-standup-show-2025",
-  //   id: 164,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/164",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/madras-comedy-show-a-tamil-standup-show/ET00351171",
-  //   EventsCalendarTitle: "Thats What She Said - A Standup Show",
-  //   EventsCalendarContent:
-  //     "“THAT’S WHAT SHE SAID” is a stand-up comedy showcase featuring some of Chennai’s funniest and sharpest",
-  //   EventsCalendarMonth: "12 Oct 2025",
-  //   EventsCalendarTime: "6:00 PM",
-  //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/286.jpg",
-  //   link: "/events",
-  //   location: "Punch - Unpaid Therapist, Chennai",
-  //   language: "Tamil, English",
-  //   hours: "1 Hour 30 Minutes",
-  //   ageLimit: "18 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>“THAT’S WHAT SHE SAID” is a stand-up comedy showcase featuring some of Chennai’s funniest and sharpest talents. Join Shruthi, Neha, Praveshika, and Vanshitha as they bring new, original humor straight to the stage.</p>
-  //   <p>Prepare yourself for a laughter-packed ride — they’re ready to crack you up, serve unlimited sass, and leave you wanting more!</p>
-  //   <p>🎟️ Seats are limited. Sass is unlimited. Book your tickets now!</p>
-  // `,
-  // },
+  {
+    url: "thats-what-she-said-standup-show-2025",
+    id: 164,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/164",
+    siteLink:
+      "https://in.bookmyshow.com/events/madras-comedy-show-a-tamil-standup-show/ET00351171",
+    EventsCalendarTitle: "Thats What She Said - A Standup Show",
+    EventsCalendarContent:
+      "“THAT’S WHAT SHE SAID” is a stand-up comedy showcase featuring some of Chennai’s funniest and sharpest",
+    EventsCalendarMonth: "12 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Comedy Show",
+    image: "/images/HomePage-Images/Events/Newevents/286.jpg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist, Chennai",
+    language: "Tamil, English",
+    hours: "1 Hour 30 Minutes",
+    ageLimit: "18 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>“THAT’S WHAT SHE SAID” is a stand-up comedy showcase featuring some of Chennai’s funniest and sharpest talents. Join Shruthi, Neha, Praveshika, and Vanshitha as they bring new, original humor straight to the stage.</p>
+    <p>Prepare yourself for a laughter-packed ride — they’re ready to crack you up, serve unlimited sass, and leave you wanting more!</p>
+    <p>🎟️ Seats are limited. Sass is unlimited. Book your tickets now!</p>
+  `,
+  },
 
-  // {
-  //   url: "mervyn-rozz-on-arrival-2025",
-  //   id: 165,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/165",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/mervyn-rozz-on-arrival/ET00455543",
-  //   EventsCalendarTitle: "Mervyn Rozz On Arrival",
-  //   EventsCalendarContent:
-  //     "After the phenomenal success of his first solo special Moving On, Mervyn Rozz is back with his brand-new",
-  //   EventsCalendarMonth: "05 Oct 2025",
-  //   EventsCalendarTime: "6:00 PM",
-  //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/287.jpg",
-  //   link: "/events",
-  //   location: "Medai-The Stage, Alwarpet, Chennai",
-  //   language: "Tamil",
-  //   hours: "1 Hour 30 Minutes",
-  //   ageLimit: "5 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>After the phenomenal success of his first solo special Moving On, Mervyn Rozz is back with his brand-new comedy special: Mervyn Rozz – On Arrival.</p>
-  //   <p>This time, he takes you through the hilarious, awkward, and unexpected moments from his 2024 tour across Australia, England, and Europe — from performing solo on the road to funny encounters with locals and audiences alike.</p>
-  //   <p>On Arrival is packed with heart, laughter, and relatable stories — making it the perfect night out for friends and family.</p>
-  //   <p>Join Mervyn for a show full of laughs, stories, and moments that resonate with everyone, wherever they’ve traveled.</p>
-  // `,
-  // },
+  {
+    url: "mervyn-rozz-on-arrival-2025",
+    id: 165,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/165",
+    siteLink:
+      "https://in.bookmyshow.com/events/mervyn-rozz-on-arrival/ET00455543",
+    EventsCalendarTitle: "Mervyn Rozz On Arrival",
+    EventsCalendarContent:
+      "After the phenomenal success of his first solo special Moving On, Mervyn Rozz is back with his brand-new",
+    EventsCalendarMonth: "05 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Comedy Show",
+    image: "/images/HomePage-Images/Events/Newevents/287.jpg",
+    link: "/events",
+    location: "Medai-The Stage, Alwarpet, Chennai",
+    language: "Tamil",
+    hours: "1 Hour 30 Minutes",
+    ageLimit: "5 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>After the phenomenal success of his first solo special Moving On, Mervyn Rozz is back with his brand-new comedy special: Mervyn Rozz – On Arrival.</p>
+    <p>This time, he takes you through the hilarious, awkward, and unexpected moments from his 2024 tour across Australia, England, and Europe — from performing solo on the road to funny encounters with locals and audiences alike.</p>
+    <p>On Arrival is packed with heart, laughter, and relatable stories — making it the perfect night out for friends and family.</p>
+    <p>Join Mervyn for a show full of laughs, stories, and moments that resonate with everyone, wherever they’ve traveled.</p>
+  `,
+  },
 
-  // {
-  //   url: "definitely-not-standup-comedy-special-2025",
-  //   id: 166,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/166",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/patch-work-a-tanglish-standup-comedy-show/ET00377761",
-  //   EventsCalendarTitle: "Definitely Not - A Standup Comedy Special",
-  //   EventsCalendarContent:
-  //     "Sai Anand, a Chennai-based stand-up comedian, writer, and actor from the trending YouTube channel “Vikkals”,",
-  //   EventsCalendarMonth: "04 Oct 2025",
-  //   EventsCalendarTime: "6:00 PM",
-  //   EventsCalendarCategory: "Comedy Show",
-  //   image: "/images/HomePage-Images/Events/Newevents/288.jpg",
-  //   link: "/events",
-  //   location: "Punch - Unpaid Therapist, Chennai",
-  //   language: "Tamil, English",
-  //   hours: "1 Hour 30 Minutes",
-  //   ageLimit: "16 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Sai Anand, a Chennai-based stand-up comedian, writer, and actor from the trending YouTube channel “Vikkals”, brings you his one-hour special “Definitely Not.”</p>
-  //   <p>In this performance, Sai hilariously reflects on his life and the people around him — those who make him respond with a firm “Definitely Not” to any conversation lasting more than four words. He observes, interprets, and turns everyday situations into comedy, using laughter as his go-to coping strategy.</p>
-  //   <p>An introvert at heart, yet a stand-up comic on stage, Sai Anand is your quirky, relatable neighborhood performer with a touch of therapy on the side. Why does he seem like he needs therapy? Catch him live and find out!</p>
-  // `,
-  // },
+  {
+    url: "definitely-not-standup-comedy-special-2025",
+    id: 166,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/166",
+    siteLink:
+      "https://in.bookmyshow.com/events/patch-work-a-tanglish-standup-comedy-show/ET00377761",
+    EventsCalendarTitle: "Definitely Not - A Standup Comedy Special",
+    EventsCalendarContent:
+      "Sai Anand, a Chennai-based stand-up comedian, writer, and actor from the trending YouTube channel “Vikkals”,",
+    EventsCalendarMonth: "04 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Comedy Show",
+    image: "/images/HomePage-Images/Events/Newevents/288.jpg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist, Chennai",
+    language: "Tamil, English",
+    hours: "1 Hour 30 Minutes",
+    ageLimit: "16 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Sai Anand, a Chennai-based stand-up comedian, writer, and actor from the trending YouTube channel “Vikkals”, brings you his one-hour special “Definitely Not.”</p>
+    <p>In this performance, Sai hilariously reflects on his life and the people around him — those who make him respond with a firm “Definitely Not” to any conversation lasting more than four words. He observes, interprets, and turns everyday situations into comedy, using laughter as his go-to coping strategy.</p>
+    <p>An introvert at heart, yet a stand-up comic on stage, Sai Anand is your quirky, relatable neighborhood performer with a touch of therapy on the side. Why does he seem like he needs therapy? Catch him live and find out!</p>
+  `,
+  },
 
-  // {
-  //   url: "state-level-kids-jr-athletic-championship-2025",
-  //   id: 167,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/167",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/state-level-kids-jr-athletic-championship-2025/ET00459932",
-  //   EventsCalendarTitle: "State Level Kids & Jr Athletic Championship - 2025",
-  //   EventsCalendarContent:
-  //     "Celebrate Dr. APJ Abdul Kalam’s Birthday at the State Level Kids & Junior Athletic Championship 2025!",
-  //   EventsCalendarMonth: "11 Oct 2025",
-  //   EventsCalendarTime: "8:30 AM",
-  //   EventsCalendarCategory: "Sports",
-  //   image: "/images/HomePage-Images/Events/Newevents/289.jpg",
-  //   link: "/events",
-  //   location: "TSP 2 Battalion Parade Ground, Avadi, Chennai",
-  //   language: "English, Tamil",
-  //   hours: "7 Hours",
-  //   ageLimit: "3 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Celebrate Dr. APJ Abdul Kalam’s Birthday at the State Level Kids & Junior Athletic Championship 2025!</p>
-  //   <p>Awards & Recognition: All winners will receive a Certificate, Medal, Trophy, and a Plant. Special awards include the Best School Award, Best Physical Education Teacher Award, and Individual Champion Trophies. An Overall Championship will be awarded to winners and runners-up. Each ticket allows participation in up to 3 events.</p>
-  //   <p>Events by Grade include races and throws from LKG to Open Category with specific events for each group.</p>
-  //   <p>Relay races are for 7th to 12th STD with teams of 4 members.</p>
-  //   <p>Students must carry their ID cards. All participants will receive a Certificate, Medal, and Energy Drink.</p>
-  // `,
-  // },
+  {
+    url: "state-level-kids-jr-athletic-championship-2025",
+    id: 167,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/167",
+    siteLink:
+      "https://in.bookmyshow.com/events/state-level-kids-jr-athletic-championship-2025/ET00459932",
+    EventsCalendarTitle: "State Level Kids & Jr Athletic Championship - 2025",
+    EventsCalendarContent:
+      "Celebrate Dr. APJ Abdul Kalam’s Birthday at the State Level Kids & Junior Athletic Championship 2025!",
+    EventsCalendarMonth: "11 Oct 2025",
+    EventsCalendarTime: "8:30 AM",
+    EventsCalendarCategory: "Sports",
+    image: "/images/HomePage-Images/Events/Newevents/289.jpg",
+    link: "/events",
+    location: "TSP 2 Battalion Parade Ground, Avadi, Chennai",
+    language: "English, Tamil",
+    hours: "7 Hours",
+    ageLimit: "3 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Celebrate Dr. APJ Abdul Kalam’s Birthday at the State Level Kids & Junior Athletic Championship 2025!</p>
+    <p>Awards & Recognition: All winners will receive a Certificate, Medal, Trophy, and a Plant. Special awards include the Best School Award, Best Physical Education Teacher Award, and Individual Champion Trophies. An Overall Championship will be awarded to winners and runners-up. Each ticket allows participation in up to 3 events.</p>
+    <p>Events by Grade include races and throws from LKG to Open Category with specific events for each group.</p>
+    <p>Relay races are for 7th to 12th STD with teams of 4 members.</p>
+    <p>Students must carry their ID cards. All participants will receive a Certificate, Medal, and Energy Drink.</p>
+  `,
+  },
 
-  // {
-  //   url: "bharadwaj-in-autograph-live-in-concert-2025",
-  //   id: 168,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/168",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/bharadwaj-in-autograph-live-in-concert/ET00459300",
-  //   EventsCalendarTitle: "Bharadwaj In Autograph Live In Concert",
-  //   EventsCalendarContent:
-  //     "Get ready, Chennai, for the first-ever grand live performance by Bharadwaj! A celebrated composer",
-  //   EventsCalendarMonth: "12 Oct 2025",
-  //   EventsCalendarTime: "6:00 PM",
-  //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/290.jpg",
-  //   link: "/events",
-  //   location: "Chennai",
-  //   language: "Tamil",
-  //   hours: "3 Hours 30 Minutes",
-  //   ageLimit: "All Age Groups",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Get ready, Chennai, for the first-ever grand live performance by Bharadwaj! A celebrated composer in the Indian music industry, Bharadwaj has scored music for over 100 feature films and is the proud recipient of the KALAIMAMANI AWARD conferred by the Tamil Nadu State Government.</p>
-  //   <p>Many of his compositions have become chartbusters, including hits like “Unnai Parthapinbu” (Kaadal Mannan), “Satham Illatha Thanimai Kaeten” (Amarkalam), “Thala pola varuma” (Attakasam), and more.</p>
-  //   <p>His composition “Ovvavaru Pookalume” from the Tamil film Autograph won the National Award for Best Singer and Best Lyricist in 2004. Bharadwaj has also musically composed and performed all 1330 Thirukkural couplets, a unique feat in Indian music.</p>
-  //   <p>Experience a magical, mesmerizing live concert featuring Bharadwaj alongside Sathish of Saregamapa fame and his band, with stunning visuals, high-quality sound, and a spectacular stage setup.</p>
-  // `,
-  // },
+  {
+    url: "bharadwaj-in-autograph-live-in-concert-2025",
+    id: 168,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/168",
+    siteLink:
+      "https://in.bookmyshow.com/events/bharadwaj-in-autograph-live-in-concert/ET00459300",
+    EventsCalendarTitle: "Bharadwaj In Autograph Live In Concert",
+    EventsCalendarContent:
+      "Get ready, Chennai, for the first-ever grand live performance by Bharadwaj! A celebrated composer",
+    EventsCalendarMonth: "12 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Music",
+    image: "/images/HomePage-Images/Events/Newevents/290.jpg",
+    link: "/events",
+    location: "Chennai",
+    language: "Tamil",
+    hours: "3 Hours 30 Minutes",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>Get ready, Chennai, for the first-ever grand live performance by Bharadwaj! A celebrated composer in the Indian music industry, Bharadwaj has scored music for over 100 feature films and is the proud recipient of the KALAIMAMANI AWARD conferred by the Tamil Nadu State Government.</p>
+    <p>Many of his compositions have become chartbusters, including hits like “Unnai Parthapinbu” (Kaadal Mannan), “Satham Illatha Thanimai Kaeten” (Amarkalam), “Thala pola varuma” (Attakasam), and more.</p>
+    <p>His composition “Ovvavaru Pookalume” from the Tamil film Autograph won the National Award for Best Singer and Best Lyricist in 2004. Bharadwaj has also musically composed and performed all 1330 Thirukkural couplets, a unique feat in Indian music.</p>
+    <p>Experience a magical, mesmerizing live concert featuring Bharadwaj alongside Sathish of Saregamapa fame and his band, with stunning visuals, high-quality sound, and a spectacular stage setup.</p>
+  `,
+  },
 
-  // {
-  //   url: "shamik-chakrabarti-live-2025",
-  //   id: 169,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/169",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/shamik-chakrabarti-live/ET00454812",
-  //   EventsCalendarTitle: "Shamik Chakrabarti Live",
-  //   EventsCalendarContent:
-  //     "Fresh from his performances at the Edinburgh Fringe Festival and Soho Theatre,",
-  //   EventsCalendarMonth: "11 Oct 2025",
-  //   EventsCalendarTime: "6:30 PM",
-  //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/291.jpg",
-  //   link: "/events",
-  //   location: "The Music Academy Mini Hall, Chennai",
-  //   language: "English",
-  //   hours: "1 Hour 30 Minutes",
-  //   ageLimit: "16 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Fresh from his performances at the Edinburgh Fringe Festival and Soho Theatre, London, Shamik brings his acclaimed show “Despite Appearances” on a major tour across India — his biggest one yet!</p>
-  //   <p>If you’ve enjoyed his jokes on YouTube or Instagram but haven’t seen him live, now’s your chance — this ONE LAST TIME tour features completely new material you won’t find online.</p>
-  //   <p>And if you’ve already seen the show, come back to experience the updates and surprises! Shamik’s dry, razor-sharp humor is guaranteed to leave you laughing until you cry. Don’t miss this live dose of hilarity!</p>
-  // `,
-  // },
-  // {
-  //   url: "mirchi-retro-raagas-rajini-50",
-  //   id: 170,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/170",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/mirchi-retro-raagas-rajini-50/ET00462789",
-  //   EventsCalendarTitle: "Mirchi Retro Raagas: Rajini 50",
-  //   EventsCalendarContent:
-  //     "Mirchi and Dr. Shreevarma’s Wellness present a grand celebration",
-  //   EventsCalendarMonth: "4 Oct 2025",
-  //   EventsCalendarTime: "6:00 PM",
-  //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/292.jpg",
-  //   link: "/events",
-  //   location: "Kamarajar Arangam, Chennai",
-  //   language: "Tamil",
-  //   hours: "3 Hours",
-  //   ageLimit: "All Age Groups",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Mirchi and Dr. Shreevarma’s Wellness present a grand celebration of 50 legendary years of Superstar Rajinikanth!</p>
-  //   <p>Join us for an unforgettable evening filled with music, memories, and magic.</p>
-  //   <p>Experience a spectacular musical journey spanning five decades of Rajini hits, complete with electrifying live performances, nostalgic visuals, and the collective energy of fans.</p>
-  //   <p>Don’t miss this once-in-a-lifetime tribute to the charisma, legacy, and timeless appeal of Thalaivar.</p>
-  // `,
-  // },
+  {
+    url: "shamik-chakrabarti-live-2025",
+    id: 169,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/169",
+    siteLink:
+      "https://in.bookmyshow.com/events/shamik-chakrabarti-live/ET00454812",
+    EventsCalendarTitle: "Shamik Chakrabarti Live",
+    EventsCalendarContent:
+      "Fresh from his performances at the Edinburgh Fringe Festival and Soho Theatre,",
+    EventsCalendarMonth: "11 Oct 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/291.jpg",
+    link: "/events",
+    location: "The Music Academy Mini Hall, Chennai",
+    language: "English",
+    hours: "1 Hour 30 Minutes",
+    ageLimit: "16 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Fresh from his performances at the Edinburgh Fringe Festival and Soho Theatre, London, Shamik brings his acclaimed show “Despite Appearances” on a major tour across India — his biggest one yet!</p>
+    <p>If you’ve enjoyed his jokes on YouTube or Instagram but haven’t seen him live, now’s your chance — this ONE LAST TIME tour features completely new material you won’t find online.</p>
+    <p>And if you’ve already seen the show, come back to experience the updates and surprises! Shamik’s dry, razor-sharp humor is guaranteed to leave you laughing until you cry. Don’t miss this live dose of hilarity!</p>
+  `,
+  },
+  {
+    url: "mirchi-retro-raagas-rajini-50",
+    id: 170,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/170",
+    siteLink:
+      "https://in.bookmyshow.com/events/mirchi-retro-raagas-rajini-50/ET00462789",
+    EventsCalendarTitle: "Mirchi Retro Raagas: Rajini 50",
+    EventsCalendarContent:
+      "Mirchi and Dr. Shreevarma’s Wellness present a grand celebration",
+    EventsCalendarMonth: "4 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Music",
+    image: "/images/HomePage-Images/Events/Newevents/292.jpg",
+    link: "/events",
+    location: "Kamarajar Arangam, Chennai",
+    language: "Tamil",
+    hours: "3 Hours",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>Mirchi and Dr. Shreevarma’s Wellness present a grand celebration of 50 legendary years of Superstar Rajinikanth!</p>
+    <p>Join us for an unforgettable evening filled with music, memories, and magic.</p>
+    <p>Experience a spectacular musical journey spanning five decades of Rajini hits, complete with electrifying live performances, nostalgic visuals, and the collective energy of fans.</p>
+    <p>Don’t miss this once-in-a-lifetime tribute to the charisma, legacy, and timeless appeal of Thalaivar.</p>
+  `,
+  },
 
-  // {
-  //   url: "melody-masters-2",
-  //   id: 171,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/171",
-  //   siteLink: "https://in.bookmyshow.com/events/melody-masters-2/ET00462928",
-  //   EventsCalendarTitle: "Melody Masters 2",
-  //   EventsCalendarContent:
-  //     "Gopal Sapthaswaram’s Melody Masters is a captivating live musical experience celebrating",
-  //   EventsCalendarMonth: "2 Oct 2025",
-  //   EventsCalendarTime: "6:30 PM",
-  //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/293.jpg",
-  //   link: "/events",
-  //   location: "Vani Mahal, Chennai",
-  //   language: "Tamil",
-  //   hours: "3 Hours",
-  //   ageLimit: "5 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Gopal Sapthaswaram’s “Melody Masters” is a captivating live musical experience celebrating the timeless compositions of Tamil cinema. Featuring 11 acclaimed singers, the show pays homage to the evergreen masterpieces of legendary composers like M.S. Viswanathan, T.K. Ramamoorthy, Ilaiyaraaja, and A.R. Rahman.</p>
-  //   <p>Audiences will be taken on a nostalgic journey through iconic Tamil songs, performed with soul-stirring renditions that have become an inseparable part of the cultural heritage. “Melody Masters” promises an unforgettable evening of music, memories, and tribute, transporting you into a world of melodies that linger long after the performance ends.</p>
-  // `,
-  // },
+  {
+    url: "melody-masters-2",
+    id: 171,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/171",
+    siteLink: "https://in.bookmyshow.com/events/melody-masters-2/ET00462928",
+    EventsCalendarTitle: "Melody Masters 2",
+    EventsCalendarContent:
+      "Gopal Sapthaswaram’s Melody Masters is a captivating live musical experience celebrating",
+    EventsCalendarMonth: "2 Oct 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Music",
+    image: "/images/HomePage-Images/Events/Newevents/293.jpg",
+    link: "/events",
+    location: "Vani Mahal, Chennai",
+    language: "Tamil",
+    hours: "3 Hours",
+    ageLimit: "5 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Gopal Sapthaswaram’s “Melody Masters” is a captivating live musical experience celebrating the timeless compositions of Tamil cinema. Featuring 11 acclaimed singers, the show pays homage to the evergreen masterpieces of legendary composers like M.S. Viswanathan, T.K. Ramamoorthy, Ilaiyaraaja, and A.R. Rahman.</p>
+    <p>Audiences will be taken on a nostalgic journey through iconic Tamil songs, performed with soul-stirring renditions that have become an inseparable part of the cultural heritage. “Melody Masters” promises an unforgettable evening of music, memories, and tribute, transporting you into a world of melodies that linger long after the performance ends.</p>
+  `,
+  },
 
-  // {
-  //   url: "qfr-live-ninaithale-inikkum-a-fund-raiser-show",
-  //   id: 172,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/172",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/qfr-live-ninaithale-inikkum-a-fund-raiser-show/ET00462874",
-  //   EventsCalendarTitle: "QFR Live Ninaithale Inikkum - A Fund Raiser Show",
-  //   EventsCalendarContent:
-  //     "Quarantine From Reality – Live Music Shows is a special live extension of Subhasree Thanikachalam’s",
-  //   EventsCalendarMonth: "11 Oct 2025",
-  //   EventsCalendarTime: "6:30 PM",
-  //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/294.jpg",
-  //   link: "/events",
-  //   location: "Kamarajar Arangam, Chennai",
-  //   language: "Tamil",
-  //   hours: "3 Hours",
-  //   ageLimit: "All Age Groups",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Quarantine From Reality – Live Music Shows is a special live extension of Subhasree Thanikachalam’s celebrated YouTube platform, QFR. These performances began during the COVID-19 lockdown as a way to uplift spirits and reconnect listeners to the healing and comforting power of music in a time of global uncertainty.</p>
-  //   <p>Unlike typical commercial programs, QFR live concerts emphasize genuine artistry, simplicity, and emotive storytelling, often featuring unplugged performances by both established and emerging Tamil musicians.</p>
-  //   <p>Presented in a cozy, intimate concert style, the shows explore a diverse range of musical genres—from classical and folk to independent and contemporary compositions. The relaxed setting allows performers to share the stories behind their musical pieces and engage listeners intimately, creating a heartfelt connection.</p>
-  //   <p>The show’s minimalist production and heartfelt curation set it apart in an era flooded with virtual content.</p>
-  //   <p>These live sessions not only entertained but also fostered a sense of community and cultural reflection during isolation. They highlighted that music is not just for performance, but also a source of comfort, connection, and conversation.</p>
-  //   <p>Through QFR Live Music Shows, Subhasree Thanikachalam brought soulful melodies into homes, turning art into a source of solace and togetherness.</p>
-  // `,
-  // },
+  {
+    url: "qfr-live-ninaithale-inikkum-a-fund-raiser-show",
+    id: 172,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/172",
+    siteLink:
+      "https://in.bookmyshow.com/events/qfr-live-ninaithale-inikkum-a-fund-raiser-show/ET00462874",
+    EventsCalendarTitle: "QFR Live Ninaithale Inikkum - A Fund Raiser Show",
+    EventsCalendarContent:
+      "Quarantine From Reality – Live Music Shows is a special live extension of Subhasree Thanikachalam’s",
+    EventsCalendarMonth: "11 Oct 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Music",
+    image: "/images/HomePage-Images/Events/Newevents/294.jpg",
+    link: "/events",
+    location: "Kamarajar Arangam, Chennai",
+    language: "Tamil",
+    hours: "3 Hours",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>Quarantine From Reality – Live Music Shows is a special live extension of Subhasree Thanikachalam’s celebrated YouTube platform, QFR. These performances began during the COVID-19 lockdown as a way to uplift spirits and reconnect listeners to the healing and comforting power of music in a time of global uncertainty.</p>
+    <p>Unlike typical commercial programs, QFR live concerts emphasize genuine artistry, simplicity, and emotive storytelling, often featuring unplugged performances by both established and emerging Tamil musicians.</p>
+    <p>Presented in a cozy, intimate concert style, the shows explore a diverse range of musical genres—from classical and folk to independent and contemporary compositions. The relaxed setting allows performers to share the stories behind their musical pieces and engage listeners intimately, creating a heartfelt connection.</p>
+    <p>The show’s minimalist production and heartfelt curation set it apart in an era flooded with virtual content.</p>
+    <p>These live sessions not only entertained but also fostered a sense of community and cultural reflection during isolation. They highlighted that music is not just for performance, but also a source of comfort, connection, and conversation.</p>
+    <p>Through QFR Live Music Shows, Subhasree Thanikachalam brought soulful melodies into homes, turning art into a source of solace and togetherness.</p>
+  `,
+  },
 
-  // {
-  //   url: "haan-pehli-baar-a-kishore-da-tribute",
-  //   id: 173,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/173",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/haan-pehli-baar-a-kishore-da-tribute/ET00458565",
-  //   EventsCalendarTitle: "Haan Pehli Baar - A Kishore Da Tribute",
-  //   EventsCalendarContent:
-  //     "Experience Kishore Kumar in a way you’ve never seen before! This is not your usual tribute concert — we’re uncovering",
-  //   EventsCalendarMonth: "11 Oct 2025",
-  //   EventsCalendarTime: "6:30 PM",
-  //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/295.jpg",
-  //   link: "/events",
-  //   location: "The Spastics Society of Tamilnadu, Chennai",
-  //   language: "Hindi",
-  //   hours: "2 Hours 15 Minutes",
-  //   ageLimit: "All Age Groups",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Experience Kishore Kumar in a way you’ve never seen before! This is not your usual tribute concert — we’re uncovering the hidden gems of the legendary playback singer’s vast and remarkable repertoire.</p>
-  //   <h3>What Makes This Unique</h3>
-  //   <p>While the world celebrates his chart-topping hits, this show delves into Kishore Da’s lesser-known masterpieces that reveal the depth of his musical brilliance. Enjoy romantic ballads reinterpreted through soulful female voices, classic duets with modern arrangements, and rare tracks finally taking center stage.</p>
-  //   <h3>Artists & Performers</h3>
-  //   <p>A stellar lineup of acclaimed singers will bring their unique artistry to Kishore Kumar’s timeless catalog, making each performance a fresh and heartfelt experience.</p>
-  //   <h3>Why Attend</h3>
-  //   <p>This tribute honors both the eternal legacy of Kishore Da and the ever-evolving essence of his music. Relive old melodies, create new memories, and witness a celebration where timeless voices meet contemporary interpretations.</p>
-  //   <p>Book your tickets now for an evening that promises to inspire, move, and celebrate the immortal voice of Kishore Kumar.</p>
-  // `,
-  // },
+  {
+    url: "haan-pehli-baar-a-kishore-da-tribute",
+    id: 173,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/173",
+    siteLink:
+      "https://in.bookmyshow.com/events/haan-pehli-baar-a-kishore-da-tribute/ET00458565",
+    EventsCalendarTitle: "Haan Pehli Baar - A Kishore Da Tribute",
+    EventsCalendarContent:
+      "Experience Kishore Kumar in a way you’ve never seen before! This is not your usual tribute concert — we’re uncovering",
+    EventsCalendarMonth: "11 Oct 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Music",
+    image: "/images/HomePage-Images/Events/Newevents/295.jpg",
+    link: "/events",
+    location: "The Spastics Society of Tamilnadu, Chennai",
+    language: "Hindi",
+    hours: "2 Hours 15 Minutes",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>Experience Kishore Kumar in a way you’ve never seen before! This is not your usual tribute concert — we’re uncovering the hidden gems of the legendary playback singer’s vast and remarkable repertoire.</p>
+    <h3>What Makes This Unique</h3>
+    <p>While the world celebrates his chart-topping hits, this show delves into Kishore Da’s lesser-known masterpieces that reveal the depth of his musical brilliance. Enjoy romantic ballads reinterpreted through soulful female voices, classic duets with modern arrangements, and rare tracks finally taking center stage.</p>
+    <h3>Artists & Performers</h3>
+    <p>A stellar lineup of acclaimed singers will bring their unique artistry to Kishore Kumar’s timeless catalog, making each performance a fresh and heartfelt experience.</p>
+    <h3>Why Attend</h3>
+    <p>This tribute honors both the eternal legacy of Kishore Da and the ever-evolving essence of his music. Relive old melodies, create new memories, and witness a celebration where timeless voices meet contemporary interpretations.</p>
+    <p>Book your tickets now for an evening that promises to inspire, move, and celebrate the immortal voice of Kishore Kumar.</p>
+  `,
+  },
 
-  // {
-  //   url: "matrimania-by-saikiran",
-  //   id: 174,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/174",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/matrimania-by-saikiran/ET00431488",
-  //   EventsCalendarTitle: "Matrimania By Saikiran",
-  //   EventsCalendarContent:
-  //     "In a society obsessed with getting everyone hitched, Matrimania is a show",
-  //   EventsCalendarMonth: "14 Oct 2025",
-  //   EventsCalendarTime: "7:15 PM",
-  //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/296.jpg",
-  //   link: "/events",
-  //   location: "The Music Academy Mini Hall, Chennai",
-  //   language: "English",
-  //   hours: "1 Hour 40 Minutes",
-  //   ageLimit: "18 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>In a society obsessed with getting everyone hitched, Matrimania is a show for single people, reflecting single life, and created by someone navigating singledom who knows all too well the relentless push to settle down.</p>
-  //   <p>If you’re constantly dodging relatives eager to see you married, come watch the show your mom wishes you’d skip and your dad hopes you never see.</p>
-  // `,
-  // },
-  // {
-  //   url: "prasida-s-weaving-workshop",
-  //   id: 175,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/175",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/prasida-s-weaving-workshop/ET00456641",
-  //   EventsCalendarTitle: "Prasida's Weaving Workshop",
-  //   EventsCalendarContent:
-  //     "This Gandhi Jayanthi, immerse yourself in the art of weaving with a special",
-  //   EventsCalendarMonth: "2 Oct 2025",
-  //   EventsCalendarTime: "5:00 PM",
-  //   EventsCalendarCategory: "Workshop",
-  //   image: "/images/HomePage-Images/Events/Newevents/297.jpg",
-  //   link: "/events",
-  //   location: "DeepBlueStories, Chennai",
-  //   language: "English, Tamil, Malayalam",
-  //   hours: "2 Hours",
-  //   ageLimit: "8 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>This Gandhi Jayanthi, immerse yourself in the art of weaving with a special 2-hour workshop at Prasida’s studio in Cholamandal Artists’ Village.</p>
-  //   <p>Weaving was at the heart of Gandhi’s vision of self-reliance and sustainability, and this workshop offers a chance to celebrate that spirit through a slow, mindful craft.</p>
-  //   <p>Whether you’re a complete beginner or already experienced, this is a perfect way to connect with tradition, spend a meaningful day, and create something with your own hands.</p>
-  //   <p>Special Gandhi Jayanthi pricing available. Seats are limited!</p>
-  //   <p>Workshop Includes: 2-hour guided session, all materials provided, light refreshments, a woven piece to take home, and a warm, shared space to celebrate handloom.</p>
-  //   <p>Open for kids and adults. Whether it’s your first time at the loom or a return to the craft, come and enjoy a meaningful, hands-on experience with us!</p>
-  // `,
-  // },
-  // {
-  //   url: "roasted",
-  //   id: 176,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/176",
-  //   siteLink: "https://in.bookmyshow.com/events/roasted/ET00462922",
-  //   EventsCalendarTitle: "Roasted",
-  //   EventsCalendarContent:
-  //     "Get ready for a comedy show with one clear mission: roasting! No one is off-limits",
-  //   EventsCalendarMonth: "5 Oct 2025",
-  //   EventsCalendarTime: "6:00 PM",
-  //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/298.jpg",
-  //   link: "/events",
-  //   location: "Punch - Unpaid Therapist, Chennai",
-  //   language: "Tamil",
-  //   hours: "1 Hour 30 Minutes",
-  //   ageLimit: "18 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Get ready for a comedy show with one clear mission: roasting! No one is off-limits — it could be your favorite celebrity, a well-known politician, or even you.</p>
-  //   <p>Vijay brings his razor-sharp wit and unique comedic style to the stage, mixing different forms of humor to deliver a hilarious roasting experience like no other.</p>
-  // `,
-  // },
-  // {
-  //   url: "flash-back-a-tamil-standup-show",
-  //   id: 177,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/177",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/weird-tired-a-tanglish-standup-show/ET00455219",
-  //   EventsCalendarTitle: "Flash Back - A Tamil Standup Show",
-  //   EventsCalendarContent:
-  //     "Flash Back – a Tamil Standup Comedy Special by Comicstaan fame Yogi",
-  //   EventsCalendarMonth: "11 Oct 2025",
-  //   EventsCalendarTime: "6:00 PM",
-  //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/299.jpg",
-  //   link: "/events",
-  //   location: "Punch - Unpaid Therapist, Chennai",
-  //   language: "Tamil",
-  //   hours: "1 Hour 30 Minutes",
-  //   ageLimit: "18 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Flash Back – a Tamil Standup Comedy Special by Comicstaan fame Yogi.</p>
-  //   <p>Get ready for non-stop laughter as Yogi takes you on a hilarious journey through stories, memories, and witty observations in his latest Tamil standup show, Flash Back.</p>
-  //   <p>Known for his sharp humor and engaging storytelling, Yogi delivers some of his best comedic material, combining funny anecdotes with spontaneous audience interactions. Every performance is unique, unpredictable, and filled with moments that stick with you long after the show ends.</p>
-  //   <p>Come for the jokes, stay for the laughter — because in Flash Back, every memory comes with a perfect punchline!</p>
-  // `,
-  // },
-  // {
-  //   url: "green-kidathon-stadium-run-oct-2025",
-  //   id: 178,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/178",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/green-kidathon-stadium-run-oct-2025/ET00459666",
-  //   EventsCalendarTitle: "Green Kidathon Stadium Run Oct - 2025",
-  //   EventsCalendarContent:
-  //     "Kalam Event Management proudly presents the Green Kidathon Stadium Run – October 2025",
-  //   EventsCalendarMonth: "5 Oct 2025",
-  //   EventsCalendarTime: "6:00 AM",
-  //   EventsCalendarCategory: "Sports",
-  //   image: "/images/HomePage-Images/Events/Newevents/300.jpg",
-  //   link: "/events",
-  //   location: "SDAT - Nehru Park, Chennai",
-  //   language: "English, Tamil",
-  //   hours: "2 Hours 30 Minutes",
-  //   ageLimit: "3 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Kalam Event Management proudly presents the Green Kidathon Stadium Run – October 2025 at SDAT Nehru Park, Chetpet, Chennai. Our sports partner is Decathlon, and the event is sponsored by BookNGo.live.</p>
-  //   <p><strong>BIB Collection:</strong> Participants can collect their BIBs at Decathlon, Pondy Bazaar on 4th October 2025 between 12:00 PM and 7:00 PM.</p>
-  //   <p><strong>Race Categories & Timings:</strong></p>
-  //   <ul>
-  //     <li>LKG/UKG (75 Mtrs): 7:15 AM</li>
-  //     <li>1st & 2nd STD (100 Mtrs): 7:15 AM</li>
-  //     <li>3rd & 4th STD (100 Mtrs): 7:00 AM</li>
-  //     <li>5th & 6th STD (400 Mtrs): 6:45 AM</li>
-  //     <li>7th & 8th STD (800 Mtrs): 6:45 AM</li>
-  //     <li>9th & 10th STD (1 KM): 6:00 AM</li>
-  //     <li>Open Category (2 KM): 6:15 AM</li>
-  //     <li>Open Walkathon (2 KM): 8:00 AM</li>
-  //   </ul>
-  //   <p><strong>Prizes & Awards:</strong> The top 5 winners in each category will receive trophies, and all participants will enjoy certificates, medals, T-shirts, water bottles, BIBs, and refreshments.</p>
-  //   <p>Participants are requested to report 30 minutes before their race for registration. Carry your school ID and proof of booking for a smooth entry.</p>
-  //   <p>Thanks to all our supporting partners for making this event possible.</p>
-  // `,
-  // },
+  {
+    url: "matrimania-by-saikiran",
+    id: 174,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/174",
+    siteLink:
+      "https://in.bookmyshow.com/events/matrimania-by-saikiran/ET00431488",
+    EventsCalendarTitle: "Matrimania By Saikiran",
+    EventsCalendarContent:
+      "In a society obsessed with getting everyone hitched, Matrimania is a show",
+    EventsCalendarMonth: "14 Oct 2025",
+    EventsCalendarTime: "7:15 PM",
+    EventsCalendarCategory: "Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/296.jpg",
+    link: "/events",
+    location: "The Music Academy Mini Hall, Chennai",
+    language: "English",
+    hours: "1 Hour 40 Minutes",
+    ageLimit: "18 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>In a society obsessed with getting everyone hitched, Matrimania is a show for single people, reflecting single life, and created by someone navigating singledom who knows all too well the relentless push to settle down.</p>
+    <p>If you’re constantly dodging relatives eager to see you married, come watch the show your mom wishes you’d skip and your dad hopes you never see.</p>
+  `,
+  },
+  {
+    url: "prasida-s-weaving-workshop",
+    id: 175,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/175",
+    siteLink:
+      "https://in.bookmyshow.com/events/prasida-s-weaving-workshop/ET00456641",
+    EventsCalendarTitle: "Prasida's Weaving Workshop",
+    EventsCalendarContent:
+      "This Gandhi Jayanthi, immerse yourself in the art of weaving with a special",
+    EventsCalendarMonth: "2 Oct 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Workshop",
+    image: "/images/HomePage-Images/Events/Newevents/297.jpg",
+    link: "/events",
+    location: "DeepBlueStories, Chennai",
+    language: "English, Tamil, Malayalam",
+    hours: "2 Hours",
+    ageLimit: "8 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>This Gandhi Jayanthi, immerse yourself in the art of weaving with a special 2-hour workshop at Prasida’s studio in Cholamandal Artists’ Village.</p>
+    <p>Weaving was at the heart of Gandhi’s vision of self-reliance and sustainability, and this workshop offers a chance to celebrate that spirit through a slow, mindful craft.</p>
+    <p>Whether you’re a complete beginner or already experienced, this is a perfect way to connect with tradition, spend a meaningful day, and create something with your own hands.</p>
+    <p>Special Gandhi Jayanthi pricing available. Seats are limited!</p>
+    <p>Workshop Includes: 2-hour guided session, all materials provided, light refreshments, a woven piece to take home, and a warm, shared space to celebrate handloom.</p>
+    <p>Open for kids and adults. Whether it’s your first time at the loom or a return to the craft, come and enjoy a meaningful, hands-on experience with us!</p>
+  `,
+  },
+  {
+    url: "roasted",
+    id: 176,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/176",
+    siteLink: "https://in.bookmyshow.com/events/roasted/ET00462922",
+    EventsCalendarTitle: "Roasted",
+    EventsCalendarContent:
+      "Get ready for a comedy show with one clear mission: roasting! No one is off-limits",
+    EventsCalendarMonth: "5 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/298.jpg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist, Chennai",
+    language: "Tamil",
+    hours: "1 Hour 30 Minutes",
+    ageLimit: "18 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Get ready for a comedy show with one clear mission: roasting! No one is off-limits — it could be your favorite celebrity, a well-known politician, or even you.</p>
+    <p>Vijay brings his razor-sharp wit and unique comedic style to the stage, mixing different forms of humor to deliver a hilarious roasting experience like no other.</p>
+  `,
+  },
+  {
+    url: "flash-back-a-tamil-standup-show",
+    id: 177,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/177",
+    siteLink:
+      "https://in.bookmyshow.com/events/weird-tired-a-tanglish-standup-show/ET00455219",
+    EventsCalendarTitle: "Flash Back - A Tamil Standup Show",
+    EventsCalendarContent:
+      "Flash Back – a Tamil Standup Comedy Special by Comicstaan fame Yogi",
+    EventsCalendarMonth: "11 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/299.jpg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist, Chennai",
+    language: "Tamil",
+    hours: "1 Hour 30 Minutes",
+    ageLimit: "18 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Flash Back – a Tamil Standup Comedy Special by Comicstaan fame Yogi.</p>
+    <p>Get ready for non-stop laughter as Yogi takes you on a hilarious journey through stories, memories, and witty observations in his latest Tamil standup show, Flash Back.</p>
+    <p>Known for his sharp humor and engaging storytelling, Yogi delivers some of his best comedic material, combining funny anecdotes with spontaneous audience interactions. Every performance is unique, unpredictable, and filled with moments that stick with you long after the show ends.</p>
+    <p>Come for the jokes, stay for the laughter — because in Flash Back, every memory comes with a perfect punchline!</p>
+  `,
+  },
+  {
+    url: "green-kidathon-stadium-run-oct-2025",
+    id: 178,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/178",
+    siteLink:
+      "https://in.bookmyshow.com/events/green-kidathon-stadium-run-oct-2025/ET00459666",
+    EventsCalendarTitle: "Green Kidathon Stadium Run Oct - 2025",
+    EventsCalendarContent:
+      "Kalam Event Management proudly presents the Green Kidathon Stadium Run – October 2025",
+    EventsCalendarMonth: "5 Oct 2025",
+    EventsCalendarTime: "6:00 AM",
+    EventsCalendarCategory: "Sports",
+    image: "/images/HomePage-Images/Events/Newevents/300.jpg",
+    link: "/events",
+    location: "SDAT - Nehru Park, Chennai",
+    language: "English, Tamil",
+    hours: "2 Hours 30 Minutes",
+    ageLimit: "3 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Kalam Event Management proudly presents the Green Kidathon Stadium Run – October 2025 at SDAT Nehru Park, Chetpet, Chennai. Our sports partner is Decathlon, and the event is sponsored by BookNGo.live.</p>
+    <p><strong>BIB Collection:</strong> Participants can collect their BIBs at Decathlon, Pondy Bazaar on 4th October 2025 between 12:00 PM and 7:00 PM.</p>
+    <p><strong>Race Categories & Timings:</strong></p>
+    <ul>
+      <li>LKG/UKG (75 Mtrs): 7:15 AM</li>
+      <li>1st & 2nd STD (100 Mtrs): 7:15 AM</li>
+      <li>3rd & 4th STD (100 Mtrs): 7:00 AM</li>
+      <li>5th & 6th STD (400 Mtrs): 6:45 AM</li>
+      <li>7th & 8th STD (800 Mtrs): 6:45 AM</li>
+      <li>9th & 10th STD (1 KM): 6:00 AM</li>
+      <li>Open Category (2 KM): 6:15 AM</li>
+      <li>Open Walkathon (2 KM): 8:00 AM</li>
+    </ul>
+    <p><strong>Prizes & Awards:</strong> The top 5 winners in each category will receive trophies, and all participants will enjoy certificates, medals, T-shirts, water bottles, BIBs, and refreshments.</p>
+    <p>Participants are requested to report 30 minutes before their race for registration. Carry your school ID and proof of booking for a smooth entry.</p>
+    <p>Thanks to all our supporting partners for making this event possible.</p>
+  `,
+  },
 
-  // {
-  //   url: "roobarooh-by-vandana-srinivasan",
-  //   id: 179,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/179",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/roobarooh-by-vandana-srinivasan/ET00461873",
-  //   EventsCalendarTitle: "Roobarooh by Vandana Srinivasan",
-  //   EventsCalendarContent:
-  //     "Rooba रूह: Face to Face with the Soul of Music By Vandana Srinivasan ",
-  //   EventsCalendarMonth: "18 Oct 2025",
-  //   EventsCalendarTime: "6:00 PM",
-  //   EventsCalendarCategory: "Music",
-  //   image: "/images/HomePage-Images/Events/Newevents/301.jpg",
-  //   link: "/events",
-  //   location: "The Music Academy Mini Hall, Chennai",
-  //   language: "Hindi, Urdu, Tamil, Malayalam, Punjabi",
-  //   hours: "2 Hours",
-  //   ageLimit: "All Age Groups",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Rooba रूह: Face to Face with the Soul of Music by Vandana Srinivasan & The Madras Mehfil Collective.</p>
-  //   <p>Experience an evening where music, poetry, and stories come together with Rooba रूह—the debut multi-city tour by Vandana Srinivasan & The Madras Mehfil Collective.</p>
-  //   <p>Inspired by the timeless tradition of mehfil gatherings, this concert goes beyond performance—it is an invitation to connect. Through songs, verses, and intimate storytelling, every note becomes a dialogue, every story a bridge, and every mehfil a celebration of shared spirit.</p>
-  //   <p>The repertoire flows seamlessly across genres—Ghazals, Sufi, Classical, Semi-classical, Retro, Devotional, and Qawwali—woven into an emotional journey meant to be felt, not just heard.</p>
-  //   <p>As the season of Diwali brightens homes and hearts, Rooba रूह invites you to embrace the joy of music, the warmth of togetherness, and the promise of new beginnings.</p>
-  //   <p>✨ Join us for an unforgettable evening where the boundaries between artist and audience, performance and reflection, dissolve into the soul of music.</p>
-  // `,
-  // },
-  // {
-  //   url: "imaginesan-a-live-standup-show-by-nesan-dravid",
-  //   id: 180,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/180",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/imaginesan-a-live-standup-show-by-nesan-david/ET00452751",
-  //   EventsCalendarTitle: "ImagiNesan - A Live Standup Show By Nesan Dravid",
-  //   EventsCalendarContent:
-  //     "Riding on the triumph of his debut special, Nesan David returns with a brand-new act",
-  //   EventsCalendarMonth: "26 Oct 2025",
-  //   EventsCalendarTime: "4:00 PM",
-  //   EventsCalendarCategory: "Comedy, Musical",
-  //   image: "/images/HomePage-Images/Events/Newevents/302.jpg",
-  //   link: "/events",
-  //   location: "Medai - The Stage, Alwarpet, Chennai",
-  //   language: "English, Tamil",
-  //   hours: "2 Hours",
-  //   ageLimit: "16 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Riding on the triumph of his debut special, Nesan David returns with a brand-new act that’s equal parts laughter, rhythm, and raw emotion.</p>
-  //   <p>This musical stand-up journey fuses humor, melody, and heartfelt storytelling, as Nesan walks the audience through his tales of first love, the whirlwind of young romance, and the sting of heartbreak. Each moment unfolds with wit and honesty, transforming personal memories into universal laughter.</p>
-  //   <p>More than just jokes, ImagiNesan is an experience—an evening where comedy meets music, and pain finds healing through punchlines.</p>
-  //   <p>✨ A celebration of love, loss, and laughter—told through the soul of comedy.</p>
-  // `,
-  // },
-  // {
-  //   url: "pan-indians-an-english-standup-comedy-show",
-  //   id: 181,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/181",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/pan-indians-an-english-standup-comedy-show/ET00453196",
-  //   EventsCalendarTitle: "Pan Indians - An English Standup Comedy Show",
-  //   EventsCalendarContent:
-  //     "A Malayali guy from Kuwait, a Tamilian from Hyderabad, and a Rajasthani from Chennai",
-  //   EventsCalendarMonth: "4 Oct 2025",
-  //   EventsCalendarTime: "7:00 PM",
-  //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/303.jpg",
-  //   link: "/events",
-  //   location: "Trinity Studio, Kodambakkam",
-  //   language: "English",
-  //   hours: "1 Hour 45 Minutes",
-  //   ageLimit: "16 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>A Malayali guy from Kuwait, a Tamilian from Hyderabad, and a Rajasthani from Chennai. Three cultures, three languages, and just one mic.</p>
-  //   <p>This English stand-up comedy show brings together three comics who unload their hilarious takes on everything—from work struggles to love troubles—leaving you convinced that they seriously need to sort out their lives.</p>
-  //   <p><em>Note:</em> Limited car parking available at the venue. We recommend taking a cab or using public transport.</p>
-  // `,
-  // },
+  {
+    url: "roobarooh-by-vandana-srinivasan",
+    id: 179,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/179",
+    siteLink:
+      "https://in.bookmyshow.com/events/roobarooh-by-vandana-srinivasan/ET00461873",
+    EventsCalendarTitle: "Roobarooh by Vandana Srinivasan",
+    EventsCalendarContent:
+      "Rooba रूह: Face to Face with the Soul of Music By Vandana Srinivasan ",
+    EventsCalendarMonth: "18 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Music",
+    image: "/images/HomePage-Images/Events/Newevents/301.jpg",
+    link: "/events",
+    location: "The Music Academy Mini Hall, Chennai",
+    language: "Hindi, Urdu, Tamil, Malayalam, Punjabi",
+    hours: "2 Hours",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>Rooba रूह: Face to Face with the Soul of Music by Vandana Srinivasan & The Madras Mehfil Collective.</p>
+    <p>Experience an evening where music, poetry, and stories come together with Rooba रूह—the debut multi-city tour by Vandana Srinivasan & The Madras Mehfil Collective.</p>
+    <p>Inspired by the timeless tradition of mehfil gatherings, this concert goes beyond performance—it is an invitation to connect. Through songs, verses, and intimate storytelling, every note becomes a dialogue, every story a bridge, and every mehfil a celebration of shared spirit.</p>
+    <p>The repertoire flows seamlessly across genres—Ghazals, Sufi, Classical, Semi-classical, Retro, Devotional, and Qawwali—woven into an emotional journey meant to be felt, not just heard.</p>
+    <p>As the season of Diwali brightens homes and hearts, Rooba रूह invites you to embrace the joy of music, the warmth of togetherness, and the promise of new beginnings.</p>
+    <p>✨ Join us for an unforgettable evening where the boundaries between artist and audience, performance and reflection, dissolve into the soul of music.</p>
+  `,
+  },
+  {
+    url: "imaginesan-a-live-standup-show-by-nesan-dravid",
+    id: 180,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/180",
+    siteLink:
+      "https://in.bookmyshow.com/events/imaginesan-a-live-standup-show-by-nesan-david/ET00452751",
+    EventsCalendarTitle: "ImagiNesan - A Live Standup Show By Nesan Dravid",
+    EventsCalendarContent:
+      "Riding on the triumph of his debut special, Nesan David returns with a brand-new act",
+    EventsCalendarMonth: "26 Oct 2025",
+    EventsCalendarTime: "4:00 PM",
+    EventsCalendarCategory: "Comedy, Musical",
+    image: "/images/HomePage-Images/Events/Newevents/302.jpg",
+    link: "/events",
+    location: "Medai - The Stage, Alwarpet, Chennai",
+    language: "English, Tamil",
+    hours: "2 Hours",
+    ageLimit: "16 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Riding on the triumph of his debut special, Nesan David returns with a brand-new act that’s equal parts laughter, rhythm, and raw emotion.</p>
+    <p>This musical stand-up journey fuses humor, melody, and heartfelt storytelling, as Nesan walks the audience through his tales of first love, the whirlwind of young romance, and the sting of heartbreak. Each moment unfolds with wit and honesty, transforming personal memories into universal laughter.</p>
+    <p>More than just jokes, ImagiNesan is an experience—an evening where comedy meets music, and pain finds healing through punchlines.</p>
+    <p>✨ A celebration of love, loss, and laughter—told through the soul of comedy.</p>
+  `,
+  },
+  {
+    url: "pan-indians-an-english-standup-comedy-show",
+    id: 181,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/181",
+    siteLink:
+      "https://in.bookmyshow.com/events/pan-indians-an-english-standup-comedy-show/ET00453196",
+    EventsCalendarTitle: "Pan Indians - An English Standup Comedy Show",
+    EventsCalendarContent:
+      "A Malayali guy from Kuwait, a Tamilian from Hyderabad, and a Rajasthani from Chennai",
+    EventsCalendarMonth: "4 Oct 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/303.jpg",
+    link: "/events",
+    location: "Trinity Studio, Kodambakkam",
+    language: "English",
+    hours: "1 Hour 45 Minutes",
+    ageLimit: "16 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>A Malayali guy from Kuwait, a Tamilian from Hyderabad, and a Rajasthani from Chennai. Three cultures, three languages, and just one mic.</p>
+    <p>This English stand-up comedy show brings together three comics who unload their hilarious takes on everything—from work struggles to love troubles—leaving you convinced that they seriously need to sort out their lives.</p>
+    <p><em>Note:</em> Limited car parking available at the venue. We recommend taking a cab or using public transport.</p>
+  `,
+  },
 
-  // {
-  //   url: "kenny-sebastian-live",
-  //   id: 182,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/182",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/kenny-sebastian-live/ET00457720",
-  //   EventsCalendarTitle: "Kenny Sebastian Live",
-  //   EventsCalendarContent:
-  //     "Kenny Sebastian returns with a brand-new trial show",
-  //   EventsCalendarMonth: "4 Oct 2025",
-  //   EventsCalendarTime: "6:00 PM",
-  //   EventsCalendarCategory: "Comedy",
-  //   image: "/images/HomePage-Images/Events/Newevents/304.jpg",
-  //   link: "/events",
-  //   location: "Medai - The Stage, Alwarpet, Chennai",
-  //   language: "English",
-  //   hours: "1 Hour",
-  //   ageLimit: "16 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Kenny Sebastian returns with a brand-new trial show — a playful blend of sharp observations, fresh takes on fatherhood, and his signature touch of music.</p>
-  //   <p>It’s an evening full of humor that’s still evolving, making every moment unique and unrepeatable.</p>
-  //   <p>Be there for the laughter, soak in the vibe, and witness Kenny in his most raw and spontaneous form!</p>
-  // `,
-  // },
-  // {
-  //   url: "aqua-sound-bath-immersion",
-  //   id: 183,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/183",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/aqua-sound-bath-immersion/ET00458490",
-  //   EventsCalendarTitle: "Aqua Sound Bath Immersion",
-  //   EventsCalendarContent:
-  //     "Aqua Sound Bath Immersion – A Floating Voyage of Renewal",
-  //   EventsCalendarMonth: "5 Oct 2025",
-  //   EventsCalendarTime: "3:30 PM",
-  //   EventsCalendarCategory: "Wellness",
-  //   image: "/images/HomePage-Images/Events/Newevents/305.jpg",
-  //   link: "/events",
-  //   location: "Blues By Tiki Taka, Chennai",
-  //   language: "English",
-  //   hours: "1 Hour",
-  //   ageLimit: "8 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Aqua Sound Bath Immersion – A Floating Voyage of Renewal</p>
-  //   <p>Step into a one-of-a-kind experience where the serenity of water blends with the transformative resonance of gongs and singing bowls.</p>
-  //   <p>As you float effortlessly, waves of sound move through you — quieting the mind, releasing stored emotions, and realigning your inner energy. The water acts as a natural amplifier, carrying every vibration deeper into your being, encouraging profound rest, emotional release, and a reset for the nervous system.</p>
-  //   <p>Surrender. Drift. Heal.</p>
-  // `,
-  // },
+  {
+    url: "kenny-sebastian-live",
+    id: 182,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/182",
+    siteLink:
+      "https://in.bookmyshow.com/events/kenny-sebastian-live/ET00457720",
+    EventsCalendarTitle: "Kenny Sebastian Live",
+    EventsCalendarContent:
+      "Kenny Sebastian returns with a brand-new trial show",
+    EventsCalendarMonth: "4 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/304.jpg",
+    link: "/events",
+    location: "Medai - The Stage, Alwarpet, Chennai",
+    language: "English",
+    hours: "1 Hour",
+    ageLimit: "16 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Kenny Sebastian returns with a brand-new trial show — a playful blend of sharp observations, fresh takes on fatherhood, and his signature touch of music.</p>
+    <p>It’s an evening full of humor that’s still evolving, making every moment unique and unrepeatable.</p>
+    <p>Be there for the laughter, soak in the vibe, and witness Kenny in his most raw and spontaneous form!</p>
+  `,
+  },
+  {
+    url: "aqua-sound-bath-immersion",
+    id: 183,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/183",
+    siteLink:
+      "https://in.bookmyshow.com/events/aqua-sound-bath-immersion/ET00458490",
+    EventsCalendarTitle: "Aqua Sound Bath Immersion",
+    EventsCalendarContent:
+      "Aqua Sound Bath Immersion – A Floating Voyage of Renewal",
+    EventsCalendarMonth: "5 Oct 2025",
+    EventsCalendarTime: "3:30 PM",
+    EventsCalendarCategory: "Wellness",
+    image: "/images/HomePage-Images/Events/Newevents/305.jpg",
+    link: "/events",
+    location: "Blues By Tiki Taka, Chennai",
+    language: "English",
+    hours: "1 Hour",
+    ageLimit: "8 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Aqua Sound Bath Immersion – A Floating Voyage of Renewal</p>
+    <p>Step into a one-of-a-kind experience where the serenity of water blends with the transformative resonance of gongs and singing bowls.</p>
+    <p>As you float effortlessly, waves of sound move through you — quieting the mind, releasing stored emotions, and realigning your inner energy. The water acts as a natural amplifier, carrying every vibration deeper into your being, encouraging profound rest, emotional release, and a reset for the nervous system.</p>
+    <p>Surrender. Drift. Heal.</p>
+  `,
+  },
 
-  // {
-  //   url: "ai-humanoid-building-workshop-first-time-in-india",
-  //   id: 184,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/184",
-  //   siteLink:
-  //     "https://in.bookmyshow.com/events/ai-humanoid-building-workshop-first-time-in-india/ET00411850",
-  //   EventsCalendarTitle: "RoboCraft - AI Humanoid Building Workshop",
-  //   EventsCalendarContent:
-  //     "Join the iCare Robotics 1-Day ",
-  //   EventsCalendarMonth: "25 Oct 2025",
-  //   EventsCalendarTime: "10:00 AM",
-  //   EventsCalendarCategory: "Workshop",
-  //   image: "/images/HomePage-Images/Events/Newevents/306.jpg",
-  //   link: "/events",
-  //   location: "ICare Robotics, Chennai",
-  //   language: "English, Tamil, Hindi",
-  //   hours: "8 Hours",
-  //   ageLimit: "12 Yrs+",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Join the iCare Robotics 1-Day Humanoid Workshop!</p>
-  //   <p>Step into the future with our 6-foot humanoid robots — live, interactive, and ready to amaze you!</p>
-  //   <p>For just INR 4,999, dive into an 8-hour immersive learning experience that opens the doors to the fascinating world of humanoid robotics. Perfect for students and enthusiasts of programming, AI, and digital sciences, this hands-on workshop will guide you through:</p>
-  //   <ul>
-  //     <li><strong>Robot Design & Assembly:</strong> Discover how humanoid robots are built, step by step.</li>
-  //     <li><strong>Programming Essentials:</strong> Learn to code and control robots using Python & Java.</li>
-  //     <li><strong>AI in Action:</strong> Explore cutting-edge applications like emotion detection, NLP, computer vision, and sign language recognition with live demos.</li>
-  //     <li><strong>Team Projects:</strong> Work with peers to create your own interactive robotic innovations.</li>
-  //   </ul>
-  //   <p>This workshop is your chance to develop future-ready skills, collaborate with like-minded learners, and witness how AI and robotics are reshaping tomorrow.</p>
-  //   <p><strong>⚡ Seats are limited — book today and be part of the future!</strong></p>
-  // `,
-  // },
+  {
+    url: "ai-humanoid-building-workshop-first-time-in-india",
+    id: 184,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/184",
+    siteLink:
+      "https://in.bookmyshow.com/events/ai-humanoid-building-workshop-first-time-in-india/ET00411850",
+    EventsCalendarTitle: "RoboCraft - AI Humanoid Building Workshop",
+    EventsCalendarContent: "Join the iCare Robotics 1-Day ",
+    EventsCalendarMonth: "25 Oct 2025",
+    EventsCalendarTime: "10:00 AM",
+    EventsCalendarCategory: "Workshop",
+    image: "/images/HomePage-Images/Events/Newevents/306.jpg",
+    link: "/events",
+    location: "ICare Robotics, Chennai",
+    language: "English, Tamil, Hindi",
+    hours: "8 Hours",
+    ageLimit: "12 Yrs+",
+    rleigion: "",
+    aboutFull: `
+    <p>Join the iCare Robotics 1-Day Humanoid Workshop!</p>
+    <p>Step into the future with our 6-foot humanoid robots — live, interactive, and ready to amaze you!</p>
+    <p>For just INR 4,999, dive into an 8-hour immersive learning experience that opens the doors to the fascinating world of humanoid robotics. Perfect for students and enthusiasts of programming, AI, and digital sciences, this hands-on workshop will guide you through:</p>
+    <ul>
+      <li><strong>Robot Design & Assembly:</strong> Discover how humanoid robots are built, step by step.</li>
+      <li><strong>Programming Essentials:</strong> Learn to code and control robots using Python & Java.</li>
+      <li><strong>AI in Action:</strong> Explore cutting-edge applications like emotion detection, NLP, computer vision, and sign language recognition with live demos.</li>
+      <li><strong>Team Projects:</strong> Work with peers to create your own interactive robotic innovations.</li>
+    </ul>
+    <p>This workshop is your chance to develop future-ready skills, collaborate with like-minded learners, and witness how AI and robotics are reshaping tomorrow.</p>
+    <p><strong>⚡ Seats are limited — book today and be part of the future!</strong></p>
+  `,
+  },
 
-  // {
-  //   url: "tour-de-india-staccato-live-in-concert",
-  //   id: 185,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/185",
-  //   siteLink:
-  //     "https://www.district.in/events/tour-de-india-staccato-live-in-concert-chennai-2025-buy-tickets",
-  //   EventsCalendarTitle: "Tour De'India - Staccato Live in Concert",
-  //   EventsCalendarContent:
-  //     "Staccato, the celebrated band that proudly represented India at the London Olympics 2012",
-  //   EventsCalendarMonth: "11 Oct 2025",
-  //   EventsCalendarTime: "7:00 PM",
-  //   EventsCalendarCategory: "Music Concert",
-  //   image:
-  //     "/images/HomePage-Images/Events/Newevents/307.jpg",
-  //   link: "/events",
-  //   location: "Music Academy, Chennai",
-  //   language: "Multilingual",
-  //   hours: "3 Hours",
-  //   ageLimit: "All Age Groups",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Staccato, the celebrated band that proudly represented India at the London Olympics 2012, returns with a grand multilingual concert experience.</p>
-  //   <p>Known for their captivating live shows, the band brings together over 20 talented musicians on stage to deliver a night full of energy, nostalgia, and musical brilliance.</p>
-  //   <p>This concert is a musical celebration that bridges generations, featuring legendary film tracks and contemporary hits alongside Staccato’s own original numbers.</p>
-  //   <ul>
-  //     <li>Memorable renditions of film songs across different languages</li>
-  //     <li>A vibrant mix of golden oldies and upbeat new favorites</li>
-  //     <li>Stunning stage visuals and lighting design</li>
-  //     <li>Engaging audience interactions</li>
-  //     <li>Special surprise guest acts</li>
-  //   </ul>
-  //   <p>Perfect for music fans, families, and groups of friends, this concert offers something special for everyone — from sentimental tunes to high-energy dance tracks.</p>
-  //   <p>Come ready to sing, dance, and relive your favorite memories as Staccato takes you on an unforgettable journey of melody, rhythm, and celebration.</p>
-  // `,
-  // },
-  // {
-  //   url: "concert-ratri-20",
-  //   id: 186,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/186",
-  //   siteLink:
-  //     "https://www.district.in/events/concert-ratri-20-oct1-2025-buy-tickets",
-  //   EventsCalendarTitle: "Concert Ratri 2.0",
-  //   EventsCalendarContent:
-  //     "Concert Ratri 2.0 – Turning Navratri Nights into a Festival of Beats!",
-  //   EventsCalendarMonth: "1 Oct 2025",
-  //   EventsCalendarTime: "10:00 PM",
-  //   EventsCalendarCategory: "Music Festival",
-  //   image: "/images/HomePage-Images/Events/Newevents/308.jpg",
-  //   link: "/events",
-  //   location: "Phoenix Marketcity, Chennai",
-  //   language: "Multilingual",
-  //   hours: "17 Hours",
-  //   ageLimit: "All Age Groups",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Concert Ratri 2.0 – Turning Navratri Nights into a Festival of Beats!</p>
-  //   <p>Chennai, get set for a night that fuses tradition with high-energy party vibes!</p>
-  //   <ul>
-  //     <li>A spectacular live act by a celebrity artist</li>
-  //     <li>Non-stop hits from the city’s hottest DJs</li>
-  //     <li>An electrifying Garba experience blending culture with modern rhythm</li>
-  //   </ul>
-  //   <p>This is where EDM meets Garba — dance to global beats and desi grooves all night long.</p>
-  //   <p>Enjoy delicious food at the vibrant food court and celebrate in a fully air-conditioned venue.</p>
-  //   <p>Designed for the young, the wild, and the free-spirited, Concert Ratri 2.0 is your ultimate Navratri destination.</p>
-  //   <p>Don’t wait to hear the stories — come create them. Experience Navratri like never before!</p>
-  // `,
-  //   eventSchedule: [
-  //     {
-  //       date: "Wed 1 Oct 2025",
-  //       time: "10:00 PM",
-  //     },
-  //     {
-  //       date: "Thu 2 Oct 2025",
-  //       time: "3:00 PM",
-  //     },
-  //   ],
-  // },
-  // {
-  //   url: "indian-navy-day-run-2025",
-  //   id: 187,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/187",
-  //   siteLink:
-  //     "https://www.district.in/events/indian-navy-day-run-2025-dec6-2025-buy-tickets",
-  //   EventsCalendarTitle: "Indian Navy Day Run 2025",
-  //   EventsCalendarContent:
-  //     "Join us to honor the brave hearts of the Indian Navy and celebrate Indian Navy",
-  //   EventsCalendarMonth: "7 Oct 2025",
-  //   EventsCalendarTime: "5:00 AM",
-  //   EventsCalendarCategory: "Sports",
-  //   image:
-  //     "/images/HomePage-Images/Events/Newevents/309.jpg",
-  //   link: "/events",
-  //   location: "Olcott Memorial Higher Secondary School, Chennai",
-  //   language: "English, Tamil",
-  //   hours: "",
-  //   ageLimit: "All Age Groups",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p>Join us to honor the brave hearts of the Indian Navy and celebrate Indian Navy Day with a run symbolizing patriotism, unity, and gratitude.</p>
-  //   <h3>Run Categories:</h3>
-  //   <ul>
-  //     <li>3K Fun Run – For all ages, a joyful run celebrating togetherness.</li>
-  //     <li>5K Timed Run – Challenge yourself and earn your glory.</li>
-  //     <li>10K Timed Run – For the bold, passionate, and unstoppable runners.</li>
-  //   </ul>
-  //   <p>Every step is a tribute to the sea warriors who protect our nation tirelessly. Let’s come together to salute their courage, discipline, and sacrifice.</p>
-  //   <h3>Participant Benefits:</h3>
-  //   <ul>
-  //     <li>T-Shirt</li>
-  //     <li>Medal</li>
-  //     <li>E-Certificate</li>
-  //     <li>Timing Bib (for 5K & 10K)</li>
-  //     <li>Refreshments & Snacks</li>
-  //     <li>Top Winners (1st, 2nd & 3rd) in all categories will receive Trophies and Gift Vouchers.</li>
-  //   </ul>
-  //   <p>Join the Run. Celebrate the Nation. Honor the Navy. Run with pride and honor.</p>
-  // `,
-  // },
-  // {
-  //   url: "moi-virundhu",
-  //   id: 188,
-  //   RegisterLink: "",
-  //   metaTitleEvent: "",
-  //   metaDescriptionEvent: "",
-  //   conicallinkEvent: "/eventsdetails/188",
-  //   siteLink:
-  //     "https://www.district.in/events/moi-virndhu-oct12-2025-buy-tickets",
-  //   EventsCalendarTitle: "Moi Virundhu",
-  //   EventsCalendarContent:
-  //     "Moi Virundhuis a signature initiative by the Help on Hunger Foundation that brings",
-  //   EventsCalendarMonth: "12 Oct 2025",
-  //   EventsCalendarTime: "10:00 AM",
-  //   EventsCalendarCategory: "Charity / Community",
-  //   image: "/images/HomePage-Images/Events/Newevents/310.jpg",
-  //   link: "/events",
-  //   location: "YMCA Royapettah, Chennai",
-  //   language: "Multilingual",
-  //   hours: "2 Hours",
-  //   ageLimit: "All Age Groups",
-  //   rleigion: "",
-  //   aboutFull: `
-  //   <p><strong>Moi Virundhu</strong> is a signature initiative by the Help on Hunger Foundation that brings people together to eat for a cause. Now in its third year, the event coincides with <strong>World Food Day</strong>, marking six years of the Foundation’s impactful work in fighting hunger.</p>
-  //   <p><em>Every plate served is a plate shared</em> — participants’ contributions directly support:</p>
-  //   <ul>
-  //     <li>Daily meals for the homeless</li>
-  //     <li>Grocery kits for leprosy-affected families</li>
-  //     <li>Nutritious snacks for underprivileged children</li>
-  //   </ul>
-  //   <p>Moi Virundhu is more than a meal; it’s a celebration of <strong>community, compassion, and solidarity</strong>.</p>
-  //   <p>This year, we invite you to join this shared table of hope. Together, let’s strengthen the mission of <strong>Zero Hunger</strong> and create a world where no one goes to bed hungry.</p>
-  // `,
-  // },
+  {
+    url: "tour-de-india-staccato-live-in-concert",
+    id: 185,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/185",
+    siteLink:
+      "https://www.district.in/events/tour-de-india-staccato-live-in-concert-chennai-2025-buy-tickets",
+    EventsCalendarTitle: "Tour De'India - Staccato Live in Concert",
+    EventsCalendarContent:
+      "Staccato, the celebrated band that proudly represented India at the London Olympics 2012",
+    EventsCalendarMonth: "11 Oct 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Music Concert",
+    image: "/images/HomePage-Images/Events/Newevents/307.jpg",
+    link: "/events",
+    location: "Music Academy, Chennai",
+    language: "Multilingual",
+    hours: "3 Hours",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>Staccato, the celebrated band that proudly represented India at the London Olympics 2012, returns with a grand multilingual concert experience.</p>
+    <p>Known for their captivating live shows, the band brings together over 20 talented musicians on stage to deliver a night full of energy, nostalgia, and musical brilliance.</p>
+    <p>This concert is a musical celebration that bridges generations, featuring legendary film tracks and contemporary hits alongside Staccato’s own original numbers.</p>
+    <ul>
+      <li>Memorable renditions of film songs across different languages</li>
+      <li>A vibrant mix of golden oldies and upbeat new favorites</li>
+      <li>Stunning stage visuals and lighting design</li>
+      <li>Engaging audience interactions</li>
+      <li>Special surprise guest acts</li>
+    </ul>
+    <p>Perfect for music fans, families, and groups of friends, this concert offers something special for everyone — from sentimental tunes to high-energy dance tracks.</p>
+    <p>Come ready to sing, dance, and relive your favorite memories as Staccato takes you on an unforgettable journey of melody, rhythm, and celebration.</p>
+  `,
+  },
+  {
+    url: "concert-ratri-20",
+    id: 186,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/186",
+    siteLink:
+      "https://www.district.in/events/concert-ratri-20-oct1-2025-buy-tickets",
+    EventsCalendarTitle: "Concert Ratri 2.0",
+    EventsCalendarContent:
+      "Concert Ratri 2.0 – Turning Navratri Nights into a Festival of Beats!",
+    EventsCalendarMonth: "1 Oct 2025",
+    EventsCalendarTime: "10:00 PM",
+    EventsCalendarCategory: "Music Festival",
+    image: "/images/HomePage-Images/Events/Newevents/308.jpg",
+    link: "/events",
+    location: "Phoenix Marketcity, Chennai",
+    language: "Multilingual",
+    hours: "17 Hours",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>Concert Ratri 2.0 – Turning Navratri Nights into a Festival of Beats!</p>
+    <p>Chennai, get set for a night that fuses tradition with high-energy party vibes!</p>
+    <ul>
+      <li>A spectacular live act by a celebrity artist</li>
+      <li>Non-stop hits from the city’s hottest DJs</li>
+      <li>An electrifying Garba experience blending culture with modern rhythm</li>
+    </ul>
+    <p>This is where EDM meets Garba — dance to global beats and desi grooves all night long.</p>
+    <p>Enjoy delicious food at the vibrant food court and celebrate in a fully air-conditioned venue.</p>
+    <p>Designed for the young, the wild, and the free-spirited, Concert Ratri 2.0 is your ultimate Navratri destination.</p>
+    <p>Don’t wait to hear the stories — come create them. Experience Navratri like never before!</p>
+  `,
+    eventSchedule: [
+      {
+        date: "Wed 1 Oct 2025",
+        time: "10:00 PM",
+      },
+      {
+        date: "Thu 2 Oct 2025",
+        time: "3:00 PM",
+      },
+    ],
+  },
+  {
+    url: "indian-navy-day-run-2025",
+    id: 187,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/187",
+    siteLink:
+      "https://www.district.in/events/indian-navy-day-run-2025-dec6-2025-buy-tickets",
+    EventsCalendarTitle: "Indian Navy Day Run 2025",
+    EventsCalendarContent:
+      "Join us to honor the brave hearts of the Indian Navy and celebrate Indian Navy",
+    EventsCalendarMonth: "7 Oct 2025",
+    EventsCalendarTime: "5:00 AM",
+    EventsCalendarCategory: "Sports",
+    image: "/images/HomePage-Images/Events/Newevents/309.jpg",
+    link: "/events",
+    location: "Olcott Memorial Higher Secondary School, Chennai",
+    language: "English, Tamil",
+    hours: "",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p>Join us to honor the brave hearts of the Indian Navy and celebrate Indian Navy Day with a run symbolizing patriotism, unity, and gratitude.</p>
+    <h3>Run Categories:</h3>
+    <ul>
+      <li>3K Fun Run – For all ages, a joyful run celebrating togetherness.</li>
+      <li>5K Timed Run – Challenge yourself and earn your glory.</li>
+      <li>10K Timed Run – For the bold, passionate, and unstoppable runners.</li>
+    </ul>
+    <p>Every step is a tribute to the sea warriors who protect our nation tirelessly. Let’s come together to salute their courage, discipline, and sacrifice.</p>
+    <h3>Participant Benefits:</h3>
+    <ul>
+      <li>T-Shirt</li>
+      <li>Medal</li>
+      <li>E-Certificate</li>
+      <li>Timing Bib (for 5K & 10K)</li>
+      <li>Refreshments & Snacks</li>
+      <li>Top Winners (1st, 2nd & 3rd) in all categories will receive Trophies and Gift Vouchers.</li>
+    </ul>
+    <p>Join the Run. Celebrate the Nation. Honor the Navy. Run with pride and honor.</p>
+  `,
+  },
+  {
+    url: "moi-virundhu",
+    id: 188,
+    RegisterLink: "",
+    metaTitleEvent: "",
+    metaDescriptionEvent: "",
+    conicallinkEvent: "/eventsdetails/188",
+    siteLink:
+      "https://www.district.in/events/moi-virndhu-oct12-2025-buy-tickets",
+    EventsCalendarTitle: "Moi Virundhu",
+    EventsCalendarContent:
+      "Moi Virundhuis a signature initiative by the Help on Hunger Foundation that brings",
+    EventsCalendarMonth: "12 Oct 2025",
+    EventsCalendarTime: "10:00 AM",
+    EventsCalendarCategory: "Charity / Community",
+    image: "/images/HomePage-Images/Events/Newevents/310.jpg",
+    link: "/events",
+    location: "YMCA Royapettah, Chennai",
+    language: "Multilingual",
+    hours: "2 Hours",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
+    <p><strong>Moi Virundhu</strong> is a signature initiative by the Help on Hunger Foundation that brings people together to eat for a cause. Now in its third year, the event coincides with <strong>World Food Day</strong>, marking six years of the Foundation’s impactful work in fighting hunger.</p>
+    <p><em>Every plate served is a plate shared</em> — participants’ contributions directly support:</p>
+    <ul>
+      <li>Daily meals for the homeless</li>
+      <li>Grocery kits for leprosy-affected families</li>
+      <li>Nutritious snacks for underprivileged children</li>
+    </ul>
+    <p>Moi Virundhu is more than a meal; it’s a celebration of <strong>community, compassion, and solidarity</strong>.</p>
+    <p>This year, we invite you to join this shared table of hope. Together, let’s strengthen the mission of <strong>Zero Hunger</strong> and create a world where no one goes to bed hungry.</p>
+  `,
+  },
 ];
 
 export const panesContent = [

@@ -601,7 +601,7 @@ function App() {
             footerReached ? "footerreached" : ""
           }`}
         >
-          <a href="/icon-of-the-month-in-chennai">
+          <a href="/super-chennai-icon-of-sep-2025">
             <img src="/images/icon-of-the-month.png" alt="Star of the month" />
           </a>
         </div>

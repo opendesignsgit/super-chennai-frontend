@@ -233,7 +233,12 @@ export default function IconofthemonthSeptember() {
                   >
                     Your browser does not support the video tag.
                   </video> */}
-                  <video controls playsInline loop poster="/images/image-sep-inner.jpg" >
+                  <video
+                    controls
+                    playsInline
+                    loop
+                    poster="/images/video-thumbnail.png"
+                  >
                     <source
                       src="/images/vishwanathan-video.mp4"
                       type="video/mp4"

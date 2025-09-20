@@ -233,16 +233,16 @@ export default function IconofthemonthSeptember() {
                   >
                     Your browser does not support the video tag.
                   </video> */}
-                  {/* <video controls playsInline loop>
+                  <video controls playsInline loop >
                     <source
                       src="/images/vishwanathan-video.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
-                  </video> */}
+                  </video>
                 </div>
                 <h3 className="voluntterContent">
-                  Superchennai's Icon Of The Month
+                  Superchennai's Icon Of The Months
                 </h3>
               </div>
             </div>

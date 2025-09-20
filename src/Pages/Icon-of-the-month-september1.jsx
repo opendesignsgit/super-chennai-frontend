@@ -248,7 +248,7 @@ export default function IconofthemonthSeptember1() {
                   </video>
                 </div>
                 <h3 className="voluntterContent">
-                  Superchennai's Icon Of The Months
+                  Superchennai's Icon Of The Month
                 </h3>
               </div>
             </div>

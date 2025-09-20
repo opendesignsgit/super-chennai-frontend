@@ -649,6 +649,12 @@
   margin-bottom: 25px;
 }
 
+/* .septemberMonthStyle .voluntterContent {
+        font-size: 85px;
+        letter-spacing: 1px;
+        line-height: 1;
+    } */
+
 @media (max-width: 1600px) {
   .naturals-section h2 {
     font-size: 37px;

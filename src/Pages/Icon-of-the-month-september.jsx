@@ -20,7 +20,11 @@ export default function IconofthemonthSeptember() {
 
   const data = [
     {
-      title: <>AWARDS & HONOURS</>,
+      title: (
+        <>
+          Awards & <br /> Honours
+        </>
+      ),
       image: "/images/awards-sep.png",
       content: [
         <>
@@ -59,7 +63,7 @@ export default function IconofthemonthSeptember() {
       ],
     },
     {
-      title: <>KEY HIGHLIGHTS & ACHIEVEMENTS</>,
+      title: <>Key Highlights & Achievements</>,
       image: "/images/keyhighlights-sep.png",
       content: [
         <>{/* <strong>Kumaravel’s bold goal</strong> */}</>,
@@ -232,7 +236,9 @@ export default function IconofthemonthSeptember() {
                     Your browser does not support the video tag.
                   </video>
                 </div>
-                {/* <h3 className="voluntterContent">Icon of the month</h3> */}
+                <h3 className="voluntterContent">
+                  Superchennai's Icon Of The Month
+                </h3>
               </div>
             </div>
             <div className="notHomePageSearch">

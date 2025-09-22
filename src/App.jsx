@@ -277,6 +277,7 @@ import PropertiesPage from "./Pages/Properties/PropertiesPage";
 import PropertyDetailPage from "./Pages/Properties/PropertyDetailPage";
 import IconofthemonthSeptember from "./Pages/Icon-of-the-month-september";
 import IconofthemonthSeptember1 from "./Pages/Icon-of-the-month-september1";
+import PropertyMainPage from "./Pages/Properties-Design/Property-Main";
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -1207,7 +1208,7 @@ function App() {
             path="/super-chennai-icon-of-sep-2025"
             element={<IconofthemonthSeptember />}
           />
-             <Route
+          <Route
             path="/super-chennai-icon-of-sep-2025-1"
             element={<IconofthemonthSeptember1 />}
           />
@@ -1404,6 +1405,12 @@ function App() {
 
           <Route path="/properties" element={<PropertiesPage />} />
           <Route path="/properties/:slug" element={<PropertyDetailPage />} />
+
+          {/* Property-Pages */}
+
+          <Route path="/dpropertypage" element={<PropertyMainPage />} />
+
+          {/* Property-Pages */}
         </Routes>
 
         {/*################################# NEWS LETTER ######################################## */}

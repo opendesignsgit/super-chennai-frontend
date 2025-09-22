@@ -964,7 +964,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
       "Theatre is a powerful space for children to truly be themselves. It helps them overcome fear, build patience, learn respect and responsibility, improve communication, and much more. Whether telling a story, speaking to an audience, or becoming a character, theatre opens up a world of possibilities. Children will explore their emotional range through facial expressions, discover the power of non-verbal communication through gestures and movement, learn to use their voices confidently, and build engaging stories through oral storytelling. Workshop benefits include improved communication and stage presence, increased self-confidence through group interaction, exposure to the joy and energy of drama, creative expression through writing and performance, and simple techniques for storytelling. The workshop will be held at IDAM, Kodambakkam, on 17th August from 10 am to 1 pm, for children aged 5 to 13 years, limited to 15 participants. Join us for a day of discovery, creativity, and fun where children grow through drama and storytelling!",
   },
   {
-    url: "comedy-sabha-by-tanglishcomedy",
+    url: "comedy-sabha-by-tanglish-comedy-Standup-Comedy-in-Chennai",
     id: 42,
     metaTitleEvent:
       "Comedy Sabha / Tanglish Comedy / Standup Comedy in Chennai",

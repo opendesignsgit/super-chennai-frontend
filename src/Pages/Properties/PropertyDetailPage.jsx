@@ -20,7 +20,6 @@ const PropertyDetailPage = () => {
   if (loading) return <div className="loader">Loading property details...</div>;
   if (!property) return <p className="not-found">❌ Property not found</p>;
 
-  
   const getImageUrl = (imgObj) => {
     if (!imgObj) return "/placeholder.jpg";
     const url = imgObj.url || imgObj.image?.url;
@@ -28,7 +27,6 @@ const PropertyDetailPage = () => {
     if (url.startsWith("http")) return url;
     return `${API_BASE_URL}${url}`;
   };
-  
 
   return (
     <>
@@ -290,7 +288,11 @@ const PropertyDetailPage = () => {
               <h2>Green Features</h2>
               <ul>
                 {property.greenFeatures.map((feature, index) => (
-                  <li key={index}>{feature}</li>
+                  <li key={feature.id || index}>
+                    {feature.label ||
+                      feature.feature ||
+                      JSON.stringify(feature)}
+                  </li>
                 ))}
               </ul>
             </div>

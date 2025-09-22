@@ -5,8 +5,11 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 
-const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:3000/";
+// const API_BASE_URL =
+//   import.meta.env.VITE_API_URL || "http://localhost:3000/";
+
+
+  const API_BASE_URL ="https://demo.superchennai.com/";
 
 const getImageUrl = (img) => {
   if (!img?.url) return "/placeholder.jpg";

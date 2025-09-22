@@ -4571,7 +4571,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarTitle: "Matrimania By Saikiran",
     EventsCalendarContent:
       "In a society obsessed with getting everyone hitched, Matrimania is a show",
-    EventsCalendarMonth: "14 Oct 2025",
+    EventsCalendarMonth: "4 Oct 2025",
     EventsCalendarTime: "7:15 PM",
     EventsCalendarCategory: "Comedy",
     image: "/images/HomePage-Images/Events/Newevents/296.jpg",

@@ -209,10 +209,11 @@ export default function EventsDetails() {
                           borderRadius: "5px",
                           fontFamily: "Poppins",
                           fontWeight: 500,
-                          width: "120px",
+                          width: "max-content",
                         }}
                       >
-                        Book Now
+                        {/* {event.clickHere ? "Book Now1" : "Book Now"} */}
+                        {event && (event.clickHere ? "Click to View " : "Book Now")}
                       </button>
                     </a>
                   </div>

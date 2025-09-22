@@ -32,7 +32,7 @@
 }
 
 .filter-checkbox input[type="checkbox"] {
-  accent-color: #007bff; /* modern browser support */
+  accent-color: #6e0a89; /* modern browser support */
   width: 16px;
   height: 16px;
 }

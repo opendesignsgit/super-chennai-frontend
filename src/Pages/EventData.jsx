@@ -4829,7 +4829,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarMonth: "4 Oct 2025",
     EventsCalendarTime: "6:00 PM",
     EventsCalendarCategory: "Comedy",
-    image: "/images/HomePage-Images/Events/Newevents/304.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/303.jpg",
     link: "/events",
     location: "Medai - The Stage, Alwarpet, Chennai",
     language: "English",
@@ -4858,7 +4858,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarMonth: "5 Oct 2025",
     EventsCalendarTime: "3:30 PM",
     EventsCalendarCategory: "Wellness",
-    image: "/images/HomePage-Images/Events/Newevents/305.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/304.jpg",
     link: "/events",
     location: "Blues By Tiki Taka, Chennai",
     language: "English",
@@ -4888,7 +4888,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarMonth: "25 Oct 2025",
     EventsCalendarTime: "10:00 AM",
     EventsCalendarCategory: "Workshop",
-    image: "/images/HomePage-Images/Events/Newevents/306.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/305.jpg",
     link: "/events",
     location: "ICare Robotics, Chennai",
     language: "English, Tamil, Hindi",
@@ -4926,7 +4926,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarMonth: "11 Oct 2025",
     EventsCalendarTime: "7:00 PM",
     EventsCalendarCategory: "Music Concert",
-    image: "/images/HomePage-Images/Events/Newevents/307.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/306.jpg",
     link: "/events",
     location: "Music Academy, Chennai",
     language: "Multilingual",
@@ -4965,7 +4965,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarMonth: "1 Oct 2025",
     EventsCalendarTime: "10:00 PM",
     EventsCalendarCategory: "Music Festival",
-    image: "/images/HomePage-Images/Events/Newevents/308.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/307.jpg",
     link: "/events",
     location: "Phoenix Marketcity, Chennai",
     language: "Multilingual",
@@ -5153,26 +5153,30 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
-  "url": "agricultural-festival-traditional-farming-tamil-nadu-2025",
-  "id": 191,
-  "RegisterLink": "",
-  "metaTitleEvent": "Agricultural Festival / Traditional Farming / Tamil Nadu 2025",
-  "metaDescriptionEvent": "Celebrate Agricultural Festival 2025 in Tamil Nadu with traditional farming, native crops, organic practices, cultural heritage, and rural lifestyle.",
-  "conicallinkEvent": "/eventsdetails/191",
-  "siteLink": "https://www.instagram.com/tnhorticulture/p/DO3H3SpiUra/",
-  "EventsCalendarTitle": "Velaan Agricultural Festival 2025",
-  "EventsCalendarContent": "The Velaan Agricultural Festival 2025 is a grand celebration of farming and agrarian heritage",
-  "EventsCalendarMonth": "27-28 Sept 2025",
-  "EventsCalendarTime": "Full Day",
-  "EventsCalendarCategory": "Expo / Agriculture",
-  "image": "/images/HomePage-Images/Events/Newevents/312.jpg",
-  "link": "/events",
-  "location": "Chennai Trade Centre, Nandambakkam, Chennai",
-  "language": "Multilingual",
-  "hours": "Full Day",
-  "ageLimit": "All Age Groups",
-  "rleigion": "",
-  "aboutFull": `
+    clickHere: "hello everyOne",
+    url: "agricultural-festival-traditional-farming-tamil-nadu-2025",
+    id: 191,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Agricultural Festival / Traditional Farming / Tamil Nadu 2025",
+    metaDescriptionEvent:
+      "Celebrate Agricultural Festival 2025 in Tamil Nadu with traditional farming, native crops, organic practices, cultural heritage, and rural lifestyle.",
+    conicallinkEvent: "/eventsdetails/191",
+    siteLink: "https://www.instagram.com/tnhorticulture/p/DO3H3SpiUra/",
+    EventsCalendarTitle: "Velaan Agricultural Festival 2025",
+    EventsCalendarContent:
+      "The Velaan Agricultural Festival 2025 is a grand celebration of farming and agrarian heritage",
+    EventsCalendarMonth: "27-28 Sept 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Expo / Agriculture",
+    image: "/images/HomePage-Images/Events/Newevents/312.jpg",
+    link: "/events",
+    location: "Chennai Trade Centre, Nandambakkam, Chennai",
+    language: "Multilingual",
+    hours: "",
+    ageLimit: "All Age Groups",
+    rleigion: "",
+    aboutFull: `
     <p>The Velaan Agricultural Festival 2025 is a grand celebration of farming and agrarian heritage, designed to highlight both traditional practices and modern innovations in agriculture. This festival unites farmers, agricultural experts, and industry stakeholders to share knowledge, experiences, and advancements. Visitors will have the opportunity to explore a wide range of agricultural products, tools, and techniques, gaining valuable insights into contemporary and time-honored farming methods.</p>
 
     <p><strong>Highlights:</strong></p>
@@ -5185,14 +5189,9 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
 
       </br>
 
-    <p><strong>Event Details:</strong></br>
-  
-    Dates: 27th & 28th September 2025<br>
-    Venue: Chennai Trade Centre, Nandambakkam, Chennai<br>
-    Organized by: Velan Agricultural Research & Development Association, Chennai – 600032</p>
-  `
-}
-
+   
+  `,
+  },
 ];
 
 export const panesContent = [

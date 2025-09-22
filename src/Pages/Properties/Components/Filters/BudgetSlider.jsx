@@ -1,5 +1,6 @@
 import React from "react";
 import { Range, getTrackBackground } from "react-range";
+import "../../Styles/BudgetSlider.css";
 
 const BudgetSlider = ({ min, max, values, onChange }) => {
   const STEP = 100000;
@@ -7,7 +8,7 @@ const BudgetSlider = ({ min, max, values, onChange }) => {
   const MAX = max;
 
   return (
-    <div style={{ margin: "16px 0" }}>
+    <div className="budget-slider">
       <Range
         values={values}
         step={STEP}
@@ -17,41 +18,32 @@ const BudgetSlider = ({ min, max, values, onChange }) => {
         renderTrack={({ props, children }) => (
           <div
             {...props}
+            className="budget-slider-track"
             style={{
-              ...props.style,
-              height: "6px",
-              width: "100%",
               background: getTrackBackground({
                 values,
-                colors: ["#ccc", "#0d6efd", "#ccc"],
+                colors: ["#e0e0e0", "#a44294", "#e0e0e0"],
                 min: MIN,
                 max: MAX,
               }),
-              borderRadius: "4px",
             }}
           >
             {children}
           </div>
         )}
-        renderThumb={({ props }) => (
+        renderThumb={({ props, index, value }) => (
           <div
             {...props}
-            style={{
-              ...props.style,
-              height: "20px",
-              width: "20px",
-              borderRadius: "50%",
-              backgroundColor: "#0d6efd",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+            className="budget-slider-thumb"
+            data-value={`₹${value.toLocaleString()}`}
           />
         )}
       />
-      <p>
-        ₹{values[0].toLocaleString()} – ₹{values[1].toLocaleString()}
-      </p>
+
+      {/* <p className="budget-slider-values">
+        <span>₹{values[0].toLocaleString()}</span> –{" "}
+        <span>₹{values[1].toLocaleString()}</span>
+      </p> */}
     </div>
   );
 };

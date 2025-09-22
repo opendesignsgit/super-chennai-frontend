@@ -5174,7 +5174,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     location: "Chennai Trade Centre, Nandambakkam, Chennai",
     language: "",
     hours: "",
-    ageLimit: "All Age Groups",
+    ageLimit: "",
     rleigion: "",
     aboutFull: `
     <p>The Velaan Agricultural Festival 2025 is a grand celebration of farming and agrarian heritage, designed to highlight both traditional practices and modern innovations in agriculture. This festival unites farmers, agricultural experts, and industry stakeholders to share knowledge, experiences, and advancements. Visitors will have the opportunity to explore a wide range of agricultural products, tools, and techniques, gaining valuable insights into contemporary and time-honored farming methods.</p>

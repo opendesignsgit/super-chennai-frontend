@@ -5172,7 +5172,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     image: "/images/HomePage-Images/Events/Newevents/312.jpg",
     link: "/events",
     location: "Chennai Trade Centre, Nandambakkam, Chennai",
-    language: "Multilingual",
+    language: "",
     hours: "",
     ageLimit: "All Age Groups",
     rleigion: "",

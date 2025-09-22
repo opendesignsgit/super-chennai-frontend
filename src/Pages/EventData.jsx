@@ -4799,7 +4799,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarMonth: "4 Oct 2025",
     EventsCalendarTime: "7:00 PM",
     EventsCalendarCategory: "Comedy",
-    image: "/images/HomePage-Images/Events/Newevents/303.jpg",
+    image: "/images/HomePage-Images/Events/Newevents/311.jpg",
     link: "/events",
     location: "Trinity Studio, Kodambakkam",
     language: "English",

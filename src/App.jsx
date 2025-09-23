@@ -278,6 +278,7 @@ import PropertyDetailPage from "./Pages/Properties/PropertyDetailPage";
 import IconofthemonthSeptember from "./Pages/Icon-of-the-month-september";
 import IconofthemonthSeptember1 from "./Pages/Icon-of-the-month-september1";
 import PropertyMainPage from "./Pages/Properties-Design/Property-Main";
+import PrideofChennai from "./Pages/PrideofChennai";
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -1411,6 +1412,12 @@ function App() {
           <Route path="/dpropertypage" element={<PropertyMainPage />} />
 
           {/* Property-Pages */}
+
+          {/* Pride-of-Chennai */}
+
+          <Route path="/pride-of-chennai" element={<PrideofChennai />} />
+
+          {/* Pride-of-Chennai */}
         </Routes>
 
         {/*################################# NEWS LETTER ######################################## */}

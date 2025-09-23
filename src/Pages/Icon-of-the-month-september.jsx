@@ -39,11 +39,11 @@ export default function IconofthemonthSeptember() {
               achievement
             </li>
             <li>
-              <strong>Padma Shri (1987)</strong> – India’s fourth-highest
+              <strong>Padma Shri (1988)</strong> – India’s fourth-highest
               civilian award
             </li>
             <li>
-              <strong>Padma Bhushan (2000)</strong> – India’s third-highest
+              <strong>Padma Bhushan (2001)</strong> – India’s third-highest
               civilian award
             </li>
             <li>
@@ -100,10 +100,10 @@ export default function IconofthemonthSeptember() {
       title: "Arjuna Award (1985) – For outstanding sporting achievement",
     },
     {
-      title: "Padma Shri (1987) – India’s fourth-highest civilian award",
+      title: "Padma Shri (1988) – India’s fourth-highest civilian award",
     },
     {
-      title: "Padma Bhushan (2000) – India’s third-highest civilian award",
+      title: "Padma Bhushan (2001) – India’s third-highest civilian award",
     },
     {
       title:

@@ -976,7 +976,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTitle: "Comedy Sabha by @tanglishcomedy",
     EventsCalendarContent:
       "Standup comedy you've watched on YouTube, reels, TV,....",
-    EventsCalendarMonth: "13 Aug – 29 Oct, 2025",
+    EventsCalendarMonth: "24 Sep – 29 Oct, 2025",
     EventsCalendarTime: "7:30 PM",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/112.jpg",

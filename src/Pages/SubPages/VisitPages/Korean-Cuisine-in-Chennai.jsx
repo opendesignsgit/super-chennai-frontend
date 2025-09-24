@@ -59,6 +59,46 @@ export default function KoreanCuisineinChennai() {
             },
           ],
         },
+        {
+          name: "Ambrosia",
+          desc: "Annyeong Haseyo! Ambrosia is back with a refreshed look, serving the best of Korean & Japanese delicacies in a cozy, beautifully designed space.",
+          locations: [
+            {
+              name: "Teynampet",
+              link: "https://maps.app.goo.gl/xqh9EzJZoKCc2ENt6",
+            },
+          ],
+        },
+        {
+          name: "Another Kitchen",
+          desc: "It brings you a fine dining experience with global flavors, crafted from fresh ingredients for a truly memorable meal.",
+          locations: [
+            {
+              name: "Adyar",
+              link: "https://maps.app.goo.gl/TNgitjovztMJiniU7",
+            },
+          ],
+        },
+        {
+          name: "Café Dokebi",
+          desc: "Café Dokebi is a quaint little spot perfect for enjoying authentic Korean flavors with a warm vibe.",
+          locations: [
+            {
+              name: "Adyar Club Gate Road",
+              link: "https://maps.app.goo.gl/dcXteLEQpufQFzdG6",
+            },
+          ],
+        },
+        {
+          name: "Korean Culture Café",
+          desc: "Korean Culture Café in Anna Nagar offers an immersive experience with comforting Korean food and a touch of Seoul’s vibrant culture.",
+          locations: [
+            {
+              name: "Anna Nagar",
+              link: "https://maps.app.goo.gl/HYQZ38SFAdro2pci6",
+            },
+          ],
+        },
       ],
     },
   ];
@@ -195,8 +235,8 @@ export default function KoreanCuisineinChennai() {
         </div>
 
         {/*----------------- Intro Section ----------------*/}
-        <div className="visitIntroParaSection detailIntro">
-          <div className="container max-w-7xl mx-auto px-4">
+        <div className="visitIntroParaSection detailIntro !mb-0">
+          <div className="container max-w-7xl mx-auto px-4 !mb-0">
             <div
               className={`CostOflivingBackground ${
                 scrollDir === "right"
@@ -226,7 +266,7 @@ export default function KoreanCuisineinChennai() {
           </div>
         </div>
 
-        <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
+        <div className="container max-w-7xl mx-auto px-4 py-8 nightlife !mt-0">
           {/* <h1 className="text-3xl font-bold mb-10 text-center">
             Top Continental Restaurants in Chennai
           </h1> */}

@@ -1557,6 +1557,7 @@
   margin-top: 0px;
   padding-bottom: 0;
   align-items: center;
+  justify-content: center;
 }
 
 .stickyPositionContainer.fixed .container .mb-6 {
@@ -1747,70 +1748,121 @@
 }
 
 .prideofchennaicards {
-  width: 30%;
+  /* width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; */
+
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .prideofchennaicards img {
-  border-radius: 50%;
-  width: 70%;
+  border-radius: 0;
+  width: 100%;
 }
 
 .prideofchennaicards h3 {
-  /* font-family: NewAmsterdam;
-  font-family: "Poppins";
-  color: #995098;
-  color: #000;
-  font-size: 30px;
-  line-height: 1.1;
-  letter-spacing: 1px;
-  margin-top: 15px; */
-
   font-family: NewAmsterdam;
   font-family: "Poppins";
   color: #995098;
-  color: #000;
-  font-size: 22px;
+  font-size: 19px;
   line-height: 1.1;
   letter-spacing: 0px;
   margin-top: 15px;
+  border-radius: 5px;
+  width: 100%;
+  letter-spacing: 0px;
+  font-weight: 600;
 }
 .pride-cards-image {
   display: flex;
+  justify-content: flex-start;
   justify-content: center;
 }
 
 .prideofchennaicards h5 {
-  /* font-family: "poppins";
-  color: #000;
-  color: #a44294;
+  font-family: "29LT Bukra SmBd";
+  /* color: #000; */
+  /* color: #a44294; */
   letter-spacing: -0.5px;
-  margin-top: 5px;
-  font-size: 16px;
-  line-height: 1;
-  line-height: 1.1; */
-
-  font-family: "poppins";
-  color: #000;
-  color: #a44294;
-  letter-spacing: -0.5px;
-  margin-top: 9px;
-  font-size: 20px;
+  margin-top: 11px;
+  font-size: 17px;
   line-height: 1;
   line-height: 1.1;
+  letter-spacing: 0.2px;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 
 .prideofchennaicards p {
   font-family: "Poppins";
   line-height: 1.3;
-  margin-top: 10px;
+  margin-top: 7px;
+  color: #626262;
+  font-weight: 400;
+  position: relative;
+}
+
+.achievementsFonts {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.prideofchennaicards p::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -12px;
 }
 
 .prideofchennaicards a {
-  margin-top: 10px;
+  margin-top: 22px;
+  color: #eb5858;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.TablePopupView {
+  height: 100%;
+  /* padding: 20px 30px; */
+  overflow-y: scroll;
+}
+
+.TablePopupView .border-collapse {
+  height: 100%;
+}
+
+.popupTableCloseButton {
+  right: 20px;
+  top: 10px;
+  font-size: 30px;
+}
+
+.prideofchennaipage .prideofchenaipopoupsection .popupSection {
+  height: auto;
+}
+
+.prideofchennaipage .prideofchenaipopoupsection ul li::marker {
+  color: #a44294;
+}
+
+body.popup-open {
+  overflow: hidden !important;
+}
+
+.prideofchennaipage .stickyPositionContainer.fixed {
+  top: 91px;
+  transition: auto;
+  transition: all 0.3s ease;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 @media (max-width: 880px) {

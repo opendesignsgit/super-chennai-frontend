@@ -13,6 +13,7 @@ import Slider from "react-slick";
 import Utilitiesinchennai1 from "../Components/InvestSideBar";
 import Whychennaitab from "../Components/whychennaitab";
 import { Helmet } from "react-helmet-async";
+import IconofthemonthgallerySlider from "./IconoftheMonthGallerySlider";
 
 export default function IconofthemonthSeptember() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -392,6 +393,8 @@ export default function IconofthemonthSeptember() {
               </div>
             </div>
           </section>
+
+          <IconofthemonthgallerySlider/>
 
           {/* <div data-aos="fade-up" data-aos-delay="400">
             <div className="InvestChennaiContainerFlex aboutIntro !pb-0 !pt-10">

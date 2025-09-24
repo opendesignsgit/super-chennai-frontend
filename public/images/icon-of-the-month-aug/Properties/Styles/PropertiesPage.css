@@ -1,0 +1,36 @@
+.properties-page {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.properties-main {
+  flex: 1;
+}
+
+.properties-main h2 {
+  margin-bottom: 16px;
+}
+
+.properties-header {
+  display: flex;
+  justify-content: space-between; /* push left & right */
+  align-items: center;            /* vertical alignment */
+  margin-bottom: 20px;
+}
+
+.properties-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Container box */
+.container-box {
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 20px;
+  background: #fff; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}

@@ -1,7 +1,12 @@
+import { useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import PrideofChennaiData from "./PrideofChennaiData";
 
 export default function PrideofChennai() {
+  const bgTextRef = useRef(null);
+  const [scrollDir, setScrollDir] = useState("left");
+  const lastScrollY = useRef(0);
   return (
     <>
       <>
@@ -43,63 +48,34 @@ export default function PrideofChennai() {
               <Search />
             </div> */}
           </section>
-        </div>
 
-        <section className="pridepfchennaisection">
-          <div className=" container max-w-7xl mx-auto px-4">
-            <div className="prideofchennairow">
-              <div className="prideofchennaicards">
-                <div className="pride-cards-image">
-                  <img src="/images/pride-of-chennai/ashwin-pride.jpg" alt="" />
-                </div>
-                <h3>Ravichandran Ashwin</h3>
-                <h5>Cricketer</h5>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus, debitis.
-                </p>
-                <a href="">Know More</a>
+          <div className="visitIntroParaSection detailIntro !mt-0">
+            <div className="container max-w-7xl mx-auto px-4 !mb-0">
+              <div
+                className={`CostOflivingBackground ${
+                  scrollDir === "right"
+                    ? "scroll-rightCostofLiving"
+                    : "scroll-leftCostofLiving"
+                }`}
+                ref={bgTextRef}
+              >
+                <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
               </div>
-              <div className="prideofchennaicards">
-                <div className="pride-cards-image">
-                  <img src="/images/pride-of-chennai/ashwin-pride.jpg" alt="" />
-                </div>
-                <h3>Ravichandran Ashwin</h3>
-                <h5>Cricketer</h5>
+              <div className="workIntro !pb-0">
+                <h3>Your Educational Journey Starts Here</h3>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus, debitis.
+                  Chennai has a wide range of educational possibilities, from
+                  kindergarten to high school and colleges, from undergraduate
+                  to doctoral degrees in fields like medicine, engineering,
+                  business, photography, and the arts and sciences, and more,
+                  from public to private schools and institutions.
                 </p>
-                <a href="">Know More</a>
-              </div>
-              <div className="prideofchennaicards">
-                <div className="pride-cards-image">
-                  <img src="/images/pride-of-chennai/ashwin-pride.jpg" alt="" />
-                </div>
-                <h3>Ravichandran Ashwin</h3>
-                <h5>Cricketer</h5>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus, debitis.
-                </p>
-                <a href="">Know More</a>
-              </div>
-              <div className="prideofchennaicards">
-                <div className="pride-cards-image">
-                  <img src="/images/pride-of-chennai/ashwin-pride.jpg" alt="" />
-                </div>
-                <h3>Ravichandran Ashwin</h3>
-                <h5>Cricketer</h5>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus, debitis.
-                </p>
-
-                <a href="">Know More</a>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+
+        <PrideofChennaiData />
       </>
     </>
   );

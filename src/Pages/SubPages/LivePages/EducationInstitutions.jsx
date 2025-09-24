@@ -157,8 +157,8 @@ export default function EducationInstitutions() {
         </div>
 
         {/*----------------- Intro Section ----------------*/}
-        {/* <div className="visitIntroParaSection detailIntro">
-          <div className="container max-w-7xl mx-auto px-4">
+        <div className="visitIntroParaSection detailIntro !mt-0">
+          <div className="container max-w-7xl mx-auto px-4 !mb-0">
             <div
               className={`CostOflivingBackground ${
                 scrollDir === "right"
@@ -169,7 +169,7 @@ export default function EducationInstitutions() {
             >
               <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
             </div>
-            <div className="workIntro">
+            <div className="workIntro !pb-0">
               <h3>Your Educational Journey Starts Here</h3>
               <p>
                 Chennai has a wide range of educational possibilities, from
@@ -180,9 +180,9 @@ export default function EducationInstitutions() {
               </p>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className="educationalPageStyle">
+        <div className="educationalPageStyle">
           <div className="flex justify-center mb-8 chennaiInvestmentsButtons">
             <button
               className={`newsLetterButton ${tab === "active" ? "active" : ""}`}
@@ -326,9 +326,9 @@ export default function EducationInstitutions() {
               </div>
             </>
           )}
-        </div> */}
+        </div>
 
-        <div class="visitIntroParaSection detailIntro">
+        {/* <div class="visitIntroParaSection detailIntro">
           <div class="container max-w-7xl mx-auto px-4">
             <div class="CostOflivingBackground scroll-rightCostofLiving">
               <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
@@ -668,7 +668,7 @@ export default function EducationInstitutions() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <LiveSlider />
 

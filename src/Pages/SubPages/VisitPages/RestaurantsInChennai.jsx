@@ -523,6 +523,18 @@ const detailsections = [
           },
         ],
       },
+      {
+        name: "Eventide Coffee",
+        description:
+          "Eventide Coffee is Chennai’s newest minimalist café, serving curated brews in a calm and cozy space.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Injambakkam",
+            link: "https://maps.app.goo.gl/wm3k2LZyEQxZBJXY7",
+          },
+        ],
+      },
     ],
   },
   {
@@ -1020,7 +1032,7 @@ export default function Restaurants() {
 
         {/*----------------- Intro Section ----------------*/}
         <div className="visitIntroParaSection detailIntro">
-          <div className="container max-w-7xl mx-auto px-4">
+          <div className="container max-w-7xl mx-auto px-4 !mb-0">
             <div
               className={`CostOflivingBackground ${
                 scrollDir === "right"

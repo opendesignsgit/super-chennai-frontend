@@ -51,7 +51,7 @@ export default function NewsLetter() {
             <Search />
           </div>
         </section>
-        <section className="EventsListSec SecPadblock12">
+        <section className="EventsListSec SecPadblock12" style={{background:"#fff"}}>
           <div className="container max-w-7xl mx-auto ">
             <div class="Eventitlesec mb-[50px] text-center">
               <h2 className="text-[#a44294]">MEDIA COVERAGE </h2>
@@ -239,7 +239,7 @@ export default function NewsLetter() {
                             <h2 className="titlePublished">{card.Company}</h2>
                             <h3 className="EveItemtitles">
                               <Link
-                                style={{ fontWeight: "500" }}
+                                style={{ fontWeight: "600" , color:"#434343" }}
                                 // to={card.link}
                                 onClick={() => setSelectedCard(card)}
                                 state={{ card }}

@@ -3688,7 +3688,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
-    url: "rajini-experience-magnum-opus-music-events-in-chennai",
+    url: "rajini-experience-magnum-opus-music-events",
     id: 150,
     RegisterLink: "",
 
@@ -4430,7 +4430,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   `,
   },
   {
-    url: "mirchi-retro-raagas-retro-music-conert-in-chennai",
+    url: "mirchi-retro-raagas-music-conert-in-chennai",
     id: 170,
     RegisterLink: "",
     metaTitleEvent: "Mirchi Retro Raagas / Retro Music Concert in Chennai",
@@ -4461,7 +4461,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
-    url: "music-event-in-chennai-melody-masters-2-live-concert",
+    url: "music-melody-masters-2-live-concert",
     id: 171,
     RegisterLink: "",
     metaTitleEvent: "Music Event in Chennai / Melody Masters 2 Live Concert",

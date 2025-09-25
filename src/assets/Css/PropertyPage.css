@@ -8,15 +8,17 @@
   border-radius: 8px;
   margin-bottom: 10px;
 }
-
+.mainConiatinerPropertyList {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .sidebar-stylescss {
   display: flex;
-  column-gap: 5%;
+  column-gap: 3%;
 }
 
 .siderbar-card {
-  width: 70%;
-  /* border: 1px solid red; */
+  width: 73%;
 }
 
 .applied-filters {
@@ -79,6 +81,7 @@
 .listing-filters {
   margin-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 .selected-individual-listing {
@@ -185,4 +188,161 @@
   border-radius: 20px;
   margin-right: 8px;
   margin-bottom: 8px;
+}
+
+.aboutPlotsSize {
+  display: flex;
+
+  margin-top: 15px;
+}
+.aboutPlotsSize div {
+  border-right: 1px solid #7b7b7b;
+  padding: 0 15px;
+}
+.aboutPlotsSize div:first-child {
+  padding-left: 0;
+}
+.aboutPlotsSize div:last-child {
+  border: none;
+}
+
+.aboutPlotsSize div span:first-child {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #a44294;
+  margin-bottom: 4px;
+  white-space: initial;
+}
+
+.mainPropertiesCards {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mainPropertiesCards .propertyImage {
+  width: 40%;
+  width: 36%;
+  border-radius: 10px;
+}
+
+.propertyDetails {
+  width: 64%;
+  padding: 20px;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* padding: 15px 20px; */
+}
+
+.propertyDetails h4 {
+  /* font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: #010c1f;
+  display: block; */
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: normal;
+  color: #a44294;
+  display: block;
+}
+
+.propertyDetails h5 {
+  color: #010c1f;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  margin-right: 4px;
+  margin-top: 6px;
+}
+
+.aboutPlotsSize span:last-child {
+  line-height: 15px;
+  font-size: 14px;
+  margin-top: 1px;
+  font-weight: 500;
+}
+
+.PropertiesCardsSection {
+  margin-top: 20px;
+}
+
+.propertContent {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  margin-top: 15px;
+}
+
+.propertyViewDetails {
+  color: #a44294;
+  margin-top: 0px;
+  font-weight: 600;
+}
+
+.uploadedDetailsproperty {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.propertyViewButton {
+  display: flex;
+  column-gap: 10px;
+}
+
+.propertyViewButton button:first-child {
+  padding: 8px 20px;
+  border: 1px solid #a44294;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #a44294;
+  background-color: #fff;
+  cursor: pointer;
+}
+.propertyViewButton button:nth-child(2) {
+  padding: 8px 20px;
+  border: 1px solid #a44294;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #a44294;
+  cursor: pointer;
+}
+
+.ownerproperty {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  color: #42526e;
+}
+
+.monthsGaoProperty {
+  color: #42526e;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.propertyAroWwCLick {
+  width: 30px;
+  height: 17px;
+  margin-top: 5px;
 }

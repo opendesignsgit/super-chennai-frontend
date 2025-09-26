@@ -46,7 +46,7 @@ export default function PrideofChennaiData() {
     {
       label: "Entertainment",
       value: "entertainment",
-      subcategories: ["Films", "Music", "Dance","Motorsport and Racing",],
+      subcategories: ["Films", "Music", "Dance"],
     },
     {
       label: "Culture & Religion",

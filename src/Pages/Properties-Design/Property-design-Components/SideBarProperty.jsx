@@ -68,10 +68,10 @@ export default function SidebarProperty({ filters, toggleFilter, options }) {
                     className={`selected-individual-listing cursor-pointer ${isActive ? "activeStateFilter" : ""}`}
                     onClick={() => {
                       toggleFilter(key, value);
-                      sidebarRef.current?.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                      });
+                      // sidebarRef.current?.scrollIntoView({
+                      //   behavior: "smooth",
+                      //   block: "start",
+                      // });
                     }}
                   >
                     <img src="/images/icons/add-filter.svg" alt="add" />
@@ -145,10 +145,10 @@ export default function SidebarProperty({ filters, toggleFilter, options }) {
                     className={`checkboxfilterselected cursor-pointer`}
                     onClick={() => {
                       toggleFilter(key, value);
-                      sidebarRef.current?.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                      });
+                      // sidebarRef.current?.scrollIntoView({
+                      //   behavior: "smooth",
+                      //   block: "start",
+                      // });
                     }}
                   >
                     <input
@@ -182,7 +182,11 @@ export default function SidebarProperty({ filters, toggleFilter, options }) {
   };
 
   return (
-    <section className="siderbar-properties" ref={sidebarRef}>
+    <section
+      className="siderbar-properties"
+
+      // ref={sidebarRef}
+    >
       {Object.values(filters).some((arr) => arr.length > 0) && (
         <>
           <div className="applied-filters">

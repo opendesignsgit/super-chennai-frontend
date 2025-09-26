@@ -1,213 +1,238 @@
-export default function SidebarProperty() {
+import { useState, useRef } from "react";
+import "../../../assets/Css/PropertyPage.css";
+
+export default function SidebarProperty({ filters, toggleFilter, options }) {
+  const {
+    bhkOptions,
+    typeOptions,
+    availableForOptions,
+    locationOptions,
+    amenitiesOptions,
+  } = options;
+
+  // Keep showMore state for all filter groups at top level
+  const [showMore, setShowMore] = useState({
+    type: false,
+    location: false,
+    bhk: false,
+    availableFor: false,
+    amenities: false,
+  });
+
+  const handleToggleShowMore = (key) => {
+    setShowMore((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const sidebarRef = useRef(null);
+
+  const renderButtonFilterGroup = (title, key, values) => {
+    const [expanded, setExpanded] = useState(true); // toggle show/hide filter options
+    const visibleCount = 4;
+    const displayedValues = showMore[key]
+      ? values
+      : values.slice(0, visibleCount);
+
+    return (
+      <div className="listing-filters mb-4" key={key}>
+        <div className="listing-individual-filter flex justify-between">
+          <span className="heading-filters">{title}</span>
+          <div className="flex items-center gap-4 plusmorefilters">
+            {filters[key] && filters[key].length > 0 && (
+              <span
+                className="clear-filter cursor-pointer"
+                onClick={() => toggleFilter(key, null)}
+              >
+                Clear
+              </span>
+            )}
+            <img
+              className="cursor-pointer"
+              src="/images/icons/down-arrow-filter.svg"
+              alt=""
+              onClick={() => setExpanded(!expanded)}
+              style={{
+                transform: expanded ? "rotate(180deg)" : "rotate(0deg)",
+              }}
+            />
+          </div>
+        </div>
+
+        {expanded && (
+          <>
+            <div className="individual-listing-filters">
+              {displayedValues.map((value) => {
+                const isActive = (filters[key] || []).includes(value);
+                return (
+                  <div
+                    key={value}
+                    className={`selected-individual-listing cursor-pointer ${isActive ? "activeStateFilter" : ""}`}
+                    onClick={() => {
+                      toggleFilter(key, value);
+                      sidebarRef.current?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      });
+                    }}
+                  >
+                    <img src="/images/icons/add-filter.svg" alt="add" />
+                    <span>{value}</span>
+                  </div>
+                );
+              })}
+            </div>
+
+            {values.length > visibleCount && (
+              <div
+                className="plusmorefilters cursor-pointer"
+                onClick={() => handleToggleShowMore(key)}
+              >
+                <span>
+                  {showMore[key]
+                    ? "Show Less"
+                    : `+${values.length - visibleCount} more`}
+                </span>
+              </div>
+            )}
+          </>
+        )}
+      </div>
+    );
+  };
+
+  const renderCheckboxFilterGroup = (title, key, values) => {
+    const [expanded, setExpanded] = useState(true); // toggle show/hide filter options
+    const visibleCount = 4;
+    const displayedValues = showMore[key]
+      ? values
+      : values.slice(0, visibleCount);
+
+    return (
+      <div className="listing-filters mb-4" key={key}>
+        <div
+          // onClick={() => setExpanded(!expanded)}
+          className="listing-individual-filter flex justify-between cursor-pointer"
+        >
+          <span className="heading-filters">{title}</span>
+          <div className="flex items-center gap-4 plusmorefilters">
+            {filters[key] && filters[key].length > 0 && (
+              <span
+                className="clear-filter cursor-pointer"
+                onClick={() => toggleFilter(key, null)}
+              >
+                Clear
+              </span>
+            )}
+            <img
+              className="cursor-pointer"
+              onClick={() => setExpanded(!expanded)}
+              style={{
+                transform: expanded ? "rotate(180deg)" : "rotate(0deg)",
+              }}
+              src="/images/icons/down-arrow-filter.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        {expanded && (
+          <>
+            <div className="inputToggleFilters">
+              {displayedValues.map((value) => {
+                const isActive = (filters[key] || []).includes(value);
+                return (
+                  <div
+                    key={value}
+                    className={`checkboxfilterselected cursor-pointer`}
+                    onClick={() => {
+                      toggleFilter(key, value);
+                      sidebarRef.current?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      });
+                    }}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={isActive}
+                      readOnly
+                      style={{ accentColor: "#a44294" }}
+                    />
+                    {value}
+                  </div>
+                );
+              })}
+            </div>
+
+            {values.length > visibleCount && (
+              <div
+                className="plusmorefilters cursor-pointer"
+                onClick={() => handleToggleShowMore(key)}
+              >
+                <span>
+                  {showMore[key]
+                    ? "Show Less"
+                    : `+${values.length - visibleCount} more`}
+                </span>
+              </div>
+            )}
+          </>
+        )}
+      </div>
+    );
+  };
+
   return (
-    <>
-      <section className="siderbar-properties">
-        <div className="applied-filters">
-          <div className="selcetedapplied">Applied Filters</div>
-          <div className="plusmorefilters">
-            <span>Clear All </span>
-          </div>
-        </div>
+    <section className="siderbar-properties" ref={sidebarRef}>
+      {Object.values(filters).some((arr) => arr.length > 0) && (
+        <>
+          <div className="applied-filters">
+            <div className="selcetedapplied">Applied Filters</div>
 
-        <div className="selected-filters">
-          <div className="selected-individual-filter">
-            <span>Flat / Appartments</span>
-            <img src="/images/icons/close-filter-page.svg" alt="" />
-          </div>
-
-          <div className="selected-individual-filter">
-            <span>Family</span>
-            <img src="/images/icons/close-filter-page.svg" alt="" />
-          </div>
-          <div className="selected-individual-filter">
-            <span>2BHK</span>
-            <img src="/images/icons/close-filter-page.svg" alt="" />
-          </div>
-        </div>
-
-        <div className="listing-filters">
-          <div className="listing-individual-filter">
-            <span className="heading-filters">No. of Bedrooms</span>
-
-            <div className="flex items-center gap-2 plusmorefilters">
-              <span> Clear</span>
-
-              <img src="/images/icons/down-arrow-filter.svg" alt="" />
+            <div className="plusmorefilters">
+              <span
+                className="cursor-pointer"
+                onClick={() => {
+                  // Clear all filters
+                  Object.keys(filters).forEach((key) =>
+                    toggleFilter(key, null)
+                  );
+                }}
+              >
+                Clear All
+              </span>
             </div>
           </div>
 
-          <div className="individual-listing-filters ">
-            <div className="selected-individual-listing activeStateFilter">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>1 RK/1 BHK</span>
-            </div>
-            <div className="selected-individual-listing activeStateFilter">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>2 BHK</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>3 BHK</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>4 BHK</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>5 BHK</span>
-            </div>
+          <div className="selected-filters">
+            {Object.entries(filters).map(([key, values]) =>
+              values.map((value) => (
+                <div
+                  key={`${key}-${value}`}
+                  className="selected-individual-filter"
+                >
+                  <span>{value}</span>
+                  <img
+                    src="/images/icons/close-filter-page.svg"
+                    alt="remove"
+                    className="cursor-pointer"
+                    onClick={() => toggleFilter(key, value)} // Remove this filter
+                  />
+                </div>
+              ))
+            )}
           </div>
+        </>
+      )}
 
-          <div className="plusmorefilters">
-            <span> +5 more</span>
-          </div>
-        </div>
-
-        <div className="listing-filters">
-          <div className="listing-individual-filter">
-            <span className="heading-filters">Type of Property</span>
-
-            <div className="flex items-center gap-2 plusmorefilters">
-              <span> Clear</span>
-
-              <img src="/images/icons/down-arrow-filter.svg" alt="" />
-            </div>
-          </div>
-
-          <div className="individual-listing-filters">
-            <div className="selected-individual-listing activeStateFilter">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Residential Apartment</span>
-            </div>
-            <div className="selected-individual-listing activeStateFilter">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Independent House/Villa</span>
-            </div>
-            <div className="selected-individual-listing activeStateFilter">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Independent/Builder Floor</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Farm House</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Serviced Apartments</span>
-            </div>
-          </div>
-
-          <div className="plusmorefilters">
-            <span> +5 more</span>
-          </div>
-        </div>
-
-        <div className="listing-filters">
-          <div className="listing-individual-filter">
-            <span className="heading-filters">Available for</span>
-
-            <div className="flex items-center gap-2 plusmorefilters">
-              <span> Clear</span>
-
-              <img src="/images/icons/down-arrow-filter.svg" alt="" />
-            </div>
-          </div>
-
-          <div className="individual-listing-filters">
-            <div className="selected-individual-listing activeStateFilter">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Family</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Single Women</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Single Men</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Tenants with Company</span>
-            </div>
-          </div>
-
-          <div className="plusmorefilters">
-            <span> +5 more</span>
-          </div>
-        </div>
-
-        <div className="listing-filters">
-          <div className="listing-individual-filter">
-            <span className="heading-filters">Localities</span>
-
-            <div className="flex items-center gap-2 plusmorefilters">
-              <span> Clear</span>
-              <img src="/images/icons/down-arrow-filter.svg" alt="" />
-            </div>
-          </div>
-
-          <div className="inputToggleFilters">
-            <div className="checkboxfilterselected">
-              <input style={{ accentColor: "#a44294" }} type="checkbox" />{" "}
-              Pallavarm
-            </div>
-            <div className="checkboxfilterselected">
-              <input style={{ accentColor: "#a44294" }} type="checkbox" /> OMR
-            </div>
-            <div className="checkboxfilterselected">
-              <input style={{ accentColor: "#a44294" }} type="checkbox" /> ECR
-            </div>
-            <div className="checkboxfilterselected">
-              <input style={{ accentColor: "#a44294" }} type="checkbox" /> Padur
-            </div>
-          </div>
-
-          <div className="plusmorefilters">
-            <span> +5 more</span>
-          </div>
-        </div>
-
-        <div className="listing-filters">
-          <div className="listing-individual-filter">
-            <span className="heading-filters">Amenities</span>
-
-            <div className="flex items-center gap-2 plusmorefilters">
-              <span> Clear</span>
-
-              <img src="/images/icons/down-arrow-filter.svg" alt="" />
-            </div>
-          </div>
-
-          <div className="individual-listing-filters">
-            <div className="selected-individual-listing activeStateFilter">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Parking</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Lift</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Park</span>
-            </div>
-            <div className="selected-individual-listing">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Power Backups</span>
-            </div>
-            <div className="selected-individual-listing activeStateFilter">
-              <img src="/images/icons/add-filter.svg" alt="" />
-              <span>Gym</span>
-            </div>
-          </div>
-
-          <div className="plusmorefilters">
-            <span> +5 more</span>
-          </div>
-        </div>
-      </section>
-    </>
+      {renderButtonFilterGroup("Type of Property", "type", typeOptions)}
+      {renderCheckboxFilterGroup("Localities", "location", locationOptions)}
+      {renderButtonFilterGroup("No. of Bedrooms", "bhk", bhkOptions)}
+      {renderButtonFilterGroup(
+        "Available For",
+        "availableFor",
+        availableForOptions
+      )}
+      {renderButtonFilterGroup("Amenities", "amenities", amenitiesOptions)}
+    </section>
   );
 }

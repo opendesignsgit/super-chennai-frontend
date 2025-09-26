@@ -7,6 +7,14 @@
   border: 1px solid #ced4dd;
   border-radius: 8px;
   margin-bottom: 10px;
+
+  position: sticky; /* Makes it stick */
+  top: 20px; /* Distance from top of viewport */
+  align-self: flex-start; /* Prevents stretching in flex layout */
+}
+
+.PropertiesCardsContainer {
+  margin-top: 20px;
 }
 .mainConiatinerPropertyList {
   padding-top: 50px;
@@ -82,6 +90,10 @@
   margin-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #d8d8d8;
+}
+
+.listing-filters:last-child {
+  border: none;
 }
 
 .selected-individual-listing {

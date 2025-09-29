@@ -6913,7 +6913,7 @@ export const prideofchennaidata = [
     category: "Religion",
   },
   {
-    image: "/images/pride-of-chennai/sri-sabhapati-swami-religion-spiritual-leader.jpg",
+    image: "/images/pride-of-chennai/Paruthiyur-K.Santhanaraman.jpg",
     name: "Paruthiyur K. Santhanaraman (Religion / Cultural Writer)",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",

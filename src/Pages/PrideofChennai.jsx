@@ -25,15 +25,15 @@ export default function PrideofChennai() {
           <section className="accaodomationBannerSection">
             <div>
               <img
-                className="eventsCalenderIamge reimagineDekstop"
-                src="/images/banner-ai.jpg"
+                // className="eventsCalenderIamge reimagineDekstop"
+                src="/images/pride-of-chennai/pride-chennai-banner.jpg"
                 alt=""
               />
-              <img
+              {/* <img
                 className="eventsCalenderIamge reimagineMobile"
                 src="/images/banner-ai-1.jpg"
                 alt=""
-              />
+              /> */}
             </div>
             <div className="accodoamationBannerContainer">
               <div className="accodoamationBannerText">

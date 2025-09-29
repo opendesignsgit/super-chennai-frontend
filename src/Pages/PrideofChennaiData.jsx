@@ -5,6 +5,7 @@ import { prideofchennaidata } from "../Pages/EventData";
 export default function PrideofChennaiData() {
   const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
+  const mySectionRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
   const bgTextRef = useRef(null);
   const [activeSection, setActiveSection] = useState("IB Schools");
@@ -46,12 +47,12 @@ export default function PrideofChennaiData() {
     {
       label: "Entertainment",
       value: "entertainment",
-      subcategories: ["Films", "Music", "Dance","Motorsport and Racing",],
+      subcategories: ["Films", "Music", "Dance", "Motorsport and Racing"],
     },
     {
       label: "Culture & Religion",
       value: "culture_religion",
-      subcategories: ["Religion", "Culture", "Social", "Tech", "Culture"],
+      subcategories: ["Religion", "Culture"],
     },
     {
       label: "Social / Tech / Chef",
@@ -139,6 +140,8 @@ export default function PrideofChennaiData() {
     }
   };
 
+  // console.log("prideofchennaidata", prideofchennaidata[0].about);
+
   useEffect(() => {
     window.addEventListener("scroll", handleStickyScroll);
     return () => window.removeEventListener("scroll", handleStickyScroll);
@@ -149,6 +152,10 @@ export default function PrideofChennaiData() {
     return () => window.removeEventListener("scroll", handleStickyScroll);
   }, []);
   // Load from localStorage on mount
+
+  const scrollToSection = () => {
+    mySectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <div className="educationalPageStyle prideofchennaipage">
@@ -170,6 +177,9 @@ export default function PrideofChennaiData() {
                 onClick={() => {
                   setActiveTab(category.value);
                   setActiveSubTab("");
+                  // scrollToSection;
+                  // mySectionRef.current.scrollTop = 0;
+                  window.scrollTo({ top: 500, behavior: "smooth" });
                 }}
               >
                 {category.label}
@@ -178,7 +188,7 @@ export default function PrideofChennaiData() {
           </div>
 
           {activeCategory.subcategories && (
-            <div className="flex justify-center gap-4 mb-6">
+            <div className="flex justify-center gap-4 mb-6 secondButtonFlexpRIDE">
               {activeCategory.subcategories.map((sub, index) => (
                 <button
                   key={index}
@@ -187,7 +197,10 @@ export default function PrideofChennaiData() {
                       ? "!bg-[#a44294] text-white !font-medium"
                       : "bg-gray-200 text-gray-800 !font-medium"
                   }`}
-                  onClick={() => setActiveSubTab(sub)}
+                  onClick={() => {
+                    setActiveSubTab(sub);
+                    window.scrollTo({ top: 500, behavior: "smooth" });
+                  }}
                 >
                   {sub}
                   {console.log(sub)}
@@ -197,7 +210,11 @@ export default function PrideofChennaiData() {
           )}
         </div>
 
-        <section id="fourthSection" className="pridepfchennaisection">
+        <section
+          id="fourthSection"
+          className="pridepfchennaisection"
+          ref={mySectionRef}
+        >
           <div className="container max-w-7xl mx-auto px-4">
             <div
               className="prideofchennairow"
@@ -271,7 +288,18 @@ export default function PrideofChennaiData() {
                     </h2>
 
                     {/* Bullet List */}
-                    <ul className="list-disc pl-5 space-y-3 text-gray-800 text-base leading-relaxed">
+                    {/* <ul className="list-disc pl-5 space-y-3 text-gray-800 text-base leading-relaxed pride-of-chennai-row">
+                      {selectedCard.popupContent.map((point, index) => (
+                        <li key={index}>{point}</li>
+                      ))}
+                    </ul> */}
+                    <ul
+                      className={`list-disc pl-5 space-y-3 text-gray-800 text-base leading-relaxed  ${
+                        selectedCard.popupContent.length > 4
+                          ? "pride-of-chennai-row"
+                          : ""
+                      }`}
+                    >
                       {selectedCard.popupContent.map((point, index) => (
                         <li key={index}>{point}</li>
                       ))}

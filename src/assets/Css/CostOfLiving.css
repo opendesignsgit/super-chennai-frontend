@@ -1737,6 +1737,8 @@
 }
 
 .pridepfchennaisection {
+  padding-bottom: 60px;
+  padding-top: 40px;
 }
 
 .prideofchennairow {
@@ -1843,10 +1845,12 @@
   right: 20px;
   top: 10px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .prideofchennaipage .prideofchenaipopoupsection .popupSection {
   height: auto;
+  /* overflow-y: scroll; */
 }
 
 .prideofchennaipage .prideofchenaipopoupsection ul li::marker {
@@ -1865,7 +1869,77 @@ body.popup-open {
   padding-bottom: 5px;
 }
 
+.pride-of-chennai-row {
+  height: 600px;
+  height: 50vh;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
 @media (max-width: 880px) {
+  .prideofchennaipage .stickyPositionContainer.fixed {
+    top: 64px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+  .stickyPositionContainer.fixed .secondButtonFlexpRIDE {
+    margin-bottom: 15px;
+  }
+
+  .prideofchennaicards {
+    width: 100%;
+  }
+
+  .secondButtonFlexpRIDE {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+    padding-left: 42px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  .secondButtonFlexpRIDE button {
+    width: max-content;
+    flex-shrink: 0;
+    white-space: nowrap;
+    width: max-content;
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  .pridepfchennaisection {
+    padding-bottom: 60px;
+    padding-top: 13px;
+  }
+
+  .prideofchennaipage .chennaiInvestmentsButtons button {
+    width: max-content !important;
+    flex-shrink: 0;
+    white-space: nowrap;
+    width: max-content !important;
+    flex-shrink: 0;
+    font-size: 14px !important;
+    padding: 8px 20px !important;
+    height: 39px !important;
+  }
+
+  .prideofchennaipage .chennaiInvestmentsButtons {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .prideofchennaipage .prideofchenaipopoupsection .popupSection {
+    width: 90%;
+  }
+
   .educationalPageStyle .container .mb-6 {
     display: flex;
     overflow-x: scroll;

@@ -52,7 +52,9 @@ export default function PrideofChennaiData() {
     {
       label: "Culture & Religion",
       value: "culture_religion",
-      subcategories: ["Religion", "Culture"],
+      subcategories: ["Religion",
+        //  "Culture"
+        ],
     },
     {
       label: "Social / Tech / Chef",

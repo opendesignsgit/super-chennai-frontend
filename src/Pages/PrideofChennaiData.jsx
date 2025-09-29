@@ -64,11 +64,11 @@ export default function PrideofChennaiData() {
       value: "science_research",
       subcategories: ["Science", "Research"],
     },
-    {
-      label: "Beauty & Fitness",
-      value: "beauty_fitness",
-      subcategories: [" Makeup Artists"],
-    },
+    // {
+    //   label: "Beauty & Fitness",
+    //   value: "beauty_fitness",
+    //   subcategories: [" Makeup Artists"],
+    // },
   ];
 
   const [popupIsOpen, setPopupIsOpen] = useState(false);
@@ -175,11 +175,12 @@ export default function PrideofChennaiData() {
                   activeTab === category.value ? "active" : ""
                 }`}
                 onClick={() => {
+                   window.scrollTo({ top: 500, behavior: "smooth" });
                   setActiveTab(category.value);
                   setActiveSubTab("");
                   // scrollToSection;
                   // mySectionRef.current.scrollTop = 0;
-                  window.scrollTo({ top: 500, behavior: "smooth" });
+                 
                 }}
               >
                 {category.label}

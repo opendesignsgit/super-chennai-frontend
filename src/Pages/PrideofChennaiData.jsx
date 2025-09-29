@@ -298,7 +298,7 @@ export default function PrideofChennaiData() {
                     </ul> */}
                     <ul
                       className={`list-disc pl-5 space-y-3 text-gray-800 text-base leading-relaxed  ${
-                        selectedCard.popupContent.length > 4
+                        selectedCard.popupContent.length > 6
                           ? "pride-of-chennai-row"
                           : ""
                       }`}

@@ -1,12 +1,11 @@
 .budget-slider {
-  margin: 24px 0;
-  width: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  user-select: none;
+  margin: 2px 0;
+  width:90%;
+
 }
 
 .budget-slider-track {
-  height: 8px;
+  height: 5px;
   border-radius: 8px;
   background: #e0e0e0;
   position: relative;
@@ -15,8 +14,8 @@
 }
 
 .budget-slider-thumb {
-  height: 28px;
-  width: 28px;
+  height: 14px;
+  width: 14px;
   border-radius: 50%;
   background: linear-gradient(135deg, #a44294, #7a2a6d);
   box-shadow:

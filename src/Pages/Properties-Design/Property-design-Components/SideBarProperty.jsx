@@ -26,7 +26,7 @@ export default function SidebarProperty({ filters, toggleFilter, options }) {
   const sidebarRef = useRef(null);
 
   const renderButtonFilterGroup = (title, key, values) => {
-    const [expanded, setExpanded] = useState(true); // toggle show/hide filter options
+    const [expanded, setExpanded] = useState(true); 
     const visibleCount = 4;
     const displayedValues = showMore[key]
       ? values
@@ -108,10 +108,7 @@ export default function SidebarProperty({ filters, toggleFilter, options }) {
 
     return (
       <div className="listing-filters mb-4" key={key}>
-        <div
-          // onClick={() => setExpanded(!expanded)}
-          className="listing-individual-filter flex justify-between cursor-pointer"
-        >
+        <div className="listing-individual-filter flex justify-between cursor-pointer">      
           <span className="heading-filters">{title}</span>
           <div className="flex items-center gap-4 plusmorefilters">
             {filters[key] && filters[key].length > 0 && (
@@ -144,11 +141,7 @@ export default function SidebarProperty({ filters, toggleFilter, options }) {
                     key={value}
                     className={`checkboxfilterselected cursor-pointer`}
                     onClick={() => {
-                      toggleFilter(key, value);
-                      // sidebarRef.current?.scrollIntoView({
-                      //   behavior: "smooth",
-                      //   block: "start",
-                      // });
+                      toggleFilter(key, value);              
                     }}
                   >
                     <input

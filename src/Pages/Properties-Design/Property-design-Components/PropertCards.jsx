@@ -5,20 +5,20 @@ export default function PropertiesCards({ properties, filters = {} }) {
         <span>{properties.length} results shown for the selected filters</span>
       </div>
 
-      {/* <div className="locationsaboutarea">
+      <div className="locationsaboutarea">
         <div>
           Get to know about the <span>Pallavaram Locality</span>
         </div>
-      </div> */}
+      </div>
 
       <div className="filteredrightsidecards">
-        {/* <div className="filteredsectionmain">
+        <div className="filteredsectionmain">
           <div>Owner</div>
           <div>Verified</div>
           <div>Furnished</div>
           <div>With Photos</div>
           <div>With Videos</div>
-        </div> */}
+        </div>
       </div>
       <div className="PropertiesCardsContainer">
         {properties.map((property) => (

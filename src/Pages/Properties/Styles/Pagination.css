@@ -4,7 +4,6 @@
   margin: 24px 0;
   flex-wrap: wrap;
   gap: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   user-select: none;
 }
 
@@ -16,7 +15,7 @@
   border-radius: 8px;
   font-size: 15px;
   font-weight: 600;
-  color: #0d6efd;
+  color: #a44294;
   box-shadow: 0 2px 6px rgba(13, 110, 253, 0.15);
   transition: 
     background-color 0.3s ease, 

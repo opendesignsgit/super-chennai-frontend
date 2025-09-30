@@ -1,12 +1,47 @@
 import React, { useState } from "react";
-import FilterSection from "./FilterSection";
-import BudgetSlider from "./BudgetSlider";
 import { useFiltersData } from "../../hooks/useFilters";
+import BudgetSlider from "./BudgetSlider";
 import "../../Styles/FiltersSidebar.css";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
-const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
+const FilterSection = ({ title, children, defaultExpanded = true }) => {
+  const [expanded, setExpanded] = useState(defaultExpanded);
+
+  return (
+    <div className="filter-section">
+      <div
+        className="filter-section-header cursor-pointer"
+        onClick={() => setExpanded(!expanded)}
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <h4>{title}</h4>
+        <img
+          className="cursor-pointer"
+          src="/images/icons/down-arrow-filter.svg"
+          alt="Toggle"
+          style={{
+            transform: expanded ? "rotate(180deg)" : "rotate(0deg)",
+            transition: "transform 0.3s",
+          }}
+        />
+      </div>
+
+      {expanded && <div className="filter-section-content">{children}</div>}
+    </div>
+  );
+};
+
+const FiltersSidebar = ({
+  filters,
+  onCheckboxChange,
+  onBudgetChange,
+  onClearAll,
+}) => {
   const {
     locations,
     propertyTypes,
@@ -17,9 +52,17 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
   } = useFiltersData();
 
   const [showMore, setShowMore] = useState(false);
+  const [showMorePropertyTypes, setShowMorePropertyTypes] = useState(false);
 
- if (loading) {
-    // Skeleton loader
+  const visiblePropertyTypes = showMorePropertyTypes
+    ? propertyTypes
+    : propertyTypes.slice(0, 3);
+
+  const togglePropertyType = (val) => {
+    onCheckboxChange("propertyTypes", val);
+  };
+
+  if (loading) {
     return (
       <aside className="filters-sidebar">
         <Skeleton width={120} height={24} style={{ marginBottom: 16 }} />
@@ -47,10 +90,111 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
       </aside>
     );
   }
-  
+
+  const selectedFilter = () => {
+    const badges = [];
+    filters.locations.forEach((val) => {
+      const loc = locations.find((l) => l.value === val);
+      if (loc) badges.push({ label: loc.label, type: "locations", value: val });
+    });
+    filters.bhk.forEach((val) => {
+      const bhk = bhkOptions.find((b) => b.value === val);
+      if (bhk) badges.push({ label: bhk.label, type: "bhk", value: val });
+    });
+
+    filters.propertyTypes.forEach((val) => {
+      const type = propertyTypes.find((t) => t.value === val);
+      if (type)
+        badges.push({ label: type.label, type: "propertyTypes", value: val });
+    });
+
+    filters.purpose.forEach((val) => {
+      const p = purposes.find((p) => p.value === val);
+      if (p) badges.push({ label: p.label, type: "purpose", value: val });
+    });
+
+    filters.furnishing.forEach((val) => {
+      const f = furnishings.find((f) => f.value === val);
+      if (f) badges.push({ label: f.label, type: "furnishing", value: val });
+    });
+
+    if (filters.jacuzzi) badges.push({ label: "Jacuzzi", type: "jacuzzi" });
+    if (filters.swimmingPool)
+      badges.push({ label: "Swimming Pool", type: "swimmingPool" });
+    if (filters.gatedCommunity)
+      badges.push({ label: "Gated Community", type: "gatedCommunity" });
+    if (filters.petsAllowed)
+      badges.push({ label: "Pets Allowed", type: "petsAllowed" });
+
+    filters.facing.forEach((val) =>
+      badges.push({
+        label: val.charAt(0).toUpperCase() + val.slice(1),
+        type: "facing",
+        value: val,
+      })
+    );
+
+    filters.possessionStatus.forEach((val) =>
+      badges.push({
+        label: val.replace("_", " "),
+        type: "possessionStatus",
+        value: val,
+      })
+    );
+
+    return badges;
+  };
+
   return (
     <aside className="filters-sidebar">
       <h3 className="filters-title">Filters</h3>
+
+      {selectedFilter().length > 0 && (
+        <div className="selected-filters-bar">
+          {selectedFilter().map((badge, idx) => (
+            <span
+              key={idx}
+              className="selected-badge"
+              onClick={() =>
+                onCheckboxChange(
+                  badge.type,
+                  badge.value !== undefined ? badge.value : false
+                )
+              }
+            >
+              {badge.label} ×
+            </span>
+          ))}
+          <button className="clear-all-btn" onClick={onClearAll}>
+            Clear All
+          </button>
+        </div>
+      )}
+
+      <div className="property-types-badges">
+        {visiblePropertyTypes.map((type) => {
+          const isSelected = filters.propertyTypes.includes(type.value);
+          return (
+            <span
+              key={type.value}
+              className={`badge ${isSelected ? "selected" : ""}`}
+              onClick={() => togglePropertyType(type.value)}
+            >
+              {type.label}
+            </span>
+          );
+        })}
+
+        {/* +N more */}
+        {propertyTypes.length > 3 && !showMorePropertyTypes && (
+          <span
+            className="more-badge"
+            onClick={() => setShowMorePropertyTypes(true)}
+          >
+            +{propertyTypes.length - 3} more
+          </span>
+        )}
+      </div>
 
       {/* Locations */}
       <FilterSection title="Locations">
@@ -94,32 +238,18 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
         </div>
       </FilterSection>
 
-      {/* Property Types */}
-      <FilterSection title="Property Types">
-        <div className="filters-list">
-          {propertyTypes.map((type) => (
-            <label key={type.id} className="filter-checkbox">
-              <input
-                type="checkbox"
-                checked={filters.propertyTypes.includes(type.value)}
-                onChange={() => onCheckboxChange("propertyTypes", type.value)}
-              />
-              <span>{type.label}</span>
-            </label>
-          ))}
-        </div>
-      </FilterSection>
-
       {/* More Filters Toggle */}
-      <button
-        className={`more-filters-btn ${showMore ? "active" : ""}`}
-        onClick={() => setShowMore((prev) => !prev)}
-      >
-        {showMore ? "Hide Filters" : "More Filters"}
-      </button>
 
-      {/* ADVANCE FILTER  */}
-      {/* Extra Filters */}
+      <div className="propertyViewButton ">
+        <button
+          className={`propertyViewButton ${showMore ? "active" : ""}`}
+          onClick={() => setShowMore((prev) => !prev)}
+        >
+          {showMore ? "Hide Filters" : "More Filters"}
+        </button>
+      </div>
+
+      {/* Advanced Filters */}
       {showMore && (
         <div className="more-filters">
           <FilterSection title="Purpose">
@@ -137,7 +267,6 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
             </div>
           </FilterSection>
 
-          {/* Furnishing */}
           <FilterSection title="Furnishing">
             <div className="filters-list">
               {furnishings.map((f) => (
@@ -153,7 +282,6 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
             </div>
           </FilterSection>
 
-          {/* Possession Status */}
           <FilterSection title="Possession Status">
             {["Ready", "Under Construction"].map((status) => {
               const val = status.toLowerCase().replace(" ", "_");
@@ -170,7 +298,6 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
             })}
           </FilterSection>
 
-          {/* Jacuzzi */}
           <FilterSection title="Jacuzzi">
             <label className="filter-checkbox">
               <input
@@ -182,7 +309,6 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
             </label>
           </FilterSection>
 
-          {/* Parking */}
           <FilterSection title="Parking">
             {["1 Car", "2 Car", "Bike"].map((p) => {
               const val = p.toLowerCase().replace(" ", "_");
@@ -199,7 +325,6 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
             })}
           </FilterSection>
 
-          {/* Swimming Pool */}
           <FilterSection title="Swimming Pool">
             <label className="filter-checkbox">
               <input
@@ -213,7 +338,6 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
             </label>
           </FilterSection>
 
-          {/* Gated Community */}
           <FilterSection title="Gated Community">
             <label className="filter-checkbox">
               <input
@@ -227,7 +351,6 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
             </label>
           </FilterSection>
 
-          {/* Pets Allowed */}
           <FilterSection title="Pets Allowed">
             <label className="filter-checkbox">
               <input
@@ -241,7 +364,6 @@ const FiltersSidebar = ({ filters, onCheckboxChange, onBudgetChange }) => {
             </label>
           </FilterSection>
 
-          {/* Facing */}
           <FilterSection title="Facing">
             {["North", "East", "West", "South"].map((dir) => {
               const val = dir.toLowerCase();

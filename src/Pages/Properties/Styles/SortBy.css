@@ -5,13 +5,12 @@
 }
 
 .sort-by label {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .sort-by select {
-  padding: 4px 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  padding: 3px 8px;
+  border-radius: 10px;
+  border: 1px solid #a44294;
   background: #fff;
-  cursor: pointer;
 }

@@ -1,12 +1,8 @@
-import { useState, useEffect } from "react";
-import { Helmet } from "react-helmet-async";
+import { useEffect, useState } from "react";
 import "../../assets/Css/PropertyPage.css";
-import Becameavolunteer from "../../Components/BecameAVolunteer";
-import InstagramReelsMarquee from "../../Components/SocialChennai";
-import SidebarProperty from "./Property-design-Components/SideBarProperty";
-import { propertiesData, options } from "./PropertyData";
-import { getUniqueValues } from "./Property-design-Components/getUniqueValues";
 import PropertiesCards from "./Property-design-Components/PropertCards";
+import SidebarProperty from "./Property-design-Components/SideBarProperty";
+import { propertiesData } from "./PropertyData";
 
 export default function PropertyMainPage() {
   // Helper to get unique values for filter options
@@ -84,16 +80,13 @@ export default function PropertyMainPage() {
       <div className="bg-[#f4f5f7]">
         <div className="container max-w-7xl mx-auto px-4 !mt-0 !mb-0  mainConiatinerPropertyList">
           <div className="sidebar-stylescss">
-            {/* Side-Bar */}
             <SidebarProperty
               filters={filters}
               toggleFilter={toggleFilter}
               options={options}
             />
 
-            {/* Side-Bar */}
-
-            {/* Right Cards */}
+      
 
             <section className="siderbar-card">
               <div className="PropertiesCards">
@@ -101,9 +94,6 @@ export default function PropertyMainPage() {
               </div>
             </section>
 
-            {/* Right Cards */}
-
-            {/* Filter Section */}
           </div>
         </div>
       </div>

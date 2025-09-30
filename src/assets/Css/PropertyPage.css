@@ -158,15 +158,22 @@
   align-items: center;
   margin-top: 2px;
 }
-
 .sidebarrightCards {
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #000;
-  display: block;
+  display: flex;            
+  justify-content: space-between;
+  align-items: center;       
   text-align: left;
-  vertical-align: middle;
+  margin-bottom: 16px;       
+}
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .locationsaboutarea {
@@ -286,6 +293,10 @@
 .PropertiesCardsSection {
   margin-top: 20px;
 }
+.text-capitalize {
+  text-transform: capitalize;
+}
+
 
 .propertContent {
   font-weight: 500;
@@ -295,6 +306,24 @@
   align-items: center;
   color: #000;
   margin-top: 15px;
+   display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.uploadedDetailsproperty {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.property-batch {
+  background-color: #f3f3f3;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .propertyViewDetails {

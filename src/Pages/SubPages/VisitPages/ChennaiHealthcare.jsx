@@ -1976,6 +1976,24 @@ export default function ChennaiHealthcare() {
     },
   ];
 
+  const Healthcareandwellness = [
+    {
+      category: "Healthcare & Wellness Resources",
+      places: [
+        {
+          name: "Tweak & Eat ",
+          desc: "Tweak & Eat empowers you to make mindful food decisions, providing practical guidance and personalized suggestions that help you adopt healthier eating habits. By promoting overall wellness and encouraging positive lifestyle changes, it supports you in achieving long-term health goals—one meal at a timce.",
+          locations: [
+            {
+              name: "Click Here",
+              link: "https://tweakandeat.com/ind-index.html",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+
   const DiagnosticLabApps = [
     {
       category: "Top Diagnostic Labs in Chennai",
@@ -2390,8 +2408,13 @@ export default function ChennaiHealthcare() {
   return (
     <>
       <Helmet>
-        <title>Healthcare in Chennai | Super Chennai: Facilities & Services</title>
-        <meta name="description" content="Super Chennai offers insights into healthcare in Chennai, covering hospitals, & medical services to help you understand the city’s trusted healthcare system." />
+        <title>
+          Healthcare in Chennai | Super Chennai: Facilities & Services
+        </title>
+        <meta
+          name="description"
+          content="Super Chennai offers insights into healthcare in Chennai, covering hospitals, & medical services to help you understand the city’s trusted healthcare system."
+        />
         <link rel="canonical" href="/live/healthcare-in-chennai" />
       </Helmet>
       <div className="chennaiHealthCarePage">
@@ -3456,6 +3479,88 @@ export default function ChennaiHealthcare() {
           })}
         </div>
 
+        <div className="container max-w-7xl mx-auto px-4 py-4 pb-[50px] nightlife">
+          {Healthcareandwellness.slice(0, 5).map((section, sectionIdx) => {
+            const [showAll, setShowAll] = useState(false);
+            const sectionRef = useRef(null); // ref to this section
+
+            const visiblePlaces = showAll
+              ? section.places
+              : section.places.slice(0, 6);
+
+            const handleToggle = () => {
+              // If collapsing, scroll to top of section
+              if (showAll && sectionRef.current) {
+                sectionRef.current.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+
+              setShowAll((prev) => !prev);
+            };
+
+            return (
+              <div
+                key={sectionIdx}
+                ref={sectionRef}
+                className="nightlifesecIn mainNewHealthcareSection"
+              >
+                <h2 className="text-2xl font-semibold mb-6">
+                  {section.category}
+                </h2>
+                <p className="mx-0 my-5 mb-9">{section.categoryParaGraph}</p>
+
+                <div
+                  // style={{ display: "flex", placeItems: "center" }}
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 newGridHealthcare"
+                >
+                  <AnimatePresence>
+                    {visiblePlaces.map((place, idx) => (
+                      <motion.div
+                        key={idx}
+                        className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.3 }}
+                        layout
+                      >
+                        <h3 className="text-xl font-semibold mb-2">
+                          {place.name}
+                        </h3>
+                        <p className="text-gray-700 mb-2">{place.desc}</p>
+
+                        {place.locations?.length > 0 && (
+                          <ExpandableList
+                            items={place.locations.map((loc) => ({
+                              label: loc.name,
+                              link: loc.link,
+                            }))}
+                            maxVisible={2}
+                          />
+                        )}
+                      </motion.div>
+                    ))}
+                  </AnimatePresence>
+                </div>
+
+                {/* Show More / Show Less Button */}
+                {section.places.length > 6 && (
+                  <div className="mt-6 text-center">
+                    <button
+                      onClick={handleToggle}
+                      className="px-4 py-2 bg-[#995098] text-white border border-transparent rounded transition duration-300 hover:bg-white hover:text-[#995098] hover:border-[#995098] cursor-pointer font-poppins"
+                    >
+                      {showAll ? "Show Less" : "Show More"}
+                    </button>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
         <div className="SplitSectionHealthcare  container max-w-7xl mx-auto px-4 py-4 pb-[50px]">
           {imageSections.map((section, index) => (
             <section
@@ -3465,8 +3570,8 @@ export default function ChennaiHealthcare() {
         index % 3 === 0
           ? "pattern-a"
           : index % 3 === 1
-          ? "pattern-b"
-          : "pattern-c"
+            ? "pattern-b"
+            : "pattern-c"
       }`}
               key={index}
             >

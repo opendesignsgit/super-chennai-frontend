@@ -410,6 +410,22 @@
   color: #fff;
   font-size: 18px;
 }
+.mainNewHealthcareSection .card a {
+  background-image: none;
+  color: rgb(164, 66, 148);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.newGridHealthcare{
+  
+}
 
 .imgcolTitle h2 {
   font-family: "29LT Bukra SmBd";

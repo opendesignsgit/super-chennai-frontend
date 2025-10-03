@@ -338,16 +338,37 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .propertyViewButton {
-  display: flex;
-  column-gap: 10px;
+  display: flex;           
+  justify-content: center; 
+  margin: 10px 0;         
+}
+
+.custom-width-btn {
+  width: 250px;           
+  max-width: 100%;         
+  padding: 10px 20px;     
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.propertyViewButtonMore button:first-child {
+  padding: 8px 20px;
+  border: 1px solid #a44294;
+  border-radius:50px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #a44294;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .propertyViewButton button:first-child {
   padding: 8px 20px;
   border: 1px solid #a44294;
-  border-radius: 7px;
+  border-radius:10px;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;

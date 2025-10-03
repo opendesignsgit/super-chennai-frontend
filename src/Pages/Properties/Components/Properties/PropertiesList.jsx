@@ -71,8 +71,6 @@ const PropertiesList = ({
         <SortBy value={sortBy} onChange={onSortChange} />
       </div>
 
-     
-
       {filters.locations.length > 0 && (
         <div className="locationsaboutarea">
           <div>
@@ -80,10 +78,12 @@ const PropertiesList = ({
               Get to know about the{" "}
               <span>
                 {filters.locations
-                  .map(
-                    (val) =>
-                      locations.find((l) => l.value === val)?.label || val
-                  )
+                  .map((val) => {
+                    const loc = locations.find(
+                      (l) => l.id == val || l.value == val
+                    );
+                    return loc ? loc.label : "Unknown";
+                  })
                   .join(", ")}{" "}
                 Locality
               </span>
@@ -94,12 +94,11 @@ const PropertiesList = ({
 
       <div className="filteredrightsidecards">
         <div className="filteredsectionmain">
-       
-           {selectedFilters.map((f, idx) => (
-              <div key={idx} className="filter-chip">
-                {f}
-              </div>
-            ))}
+          {selectedFilters.map((f, idx) => (
+            <div key={idx} className="filter-chip">
+              {f}
+            </div>
+          ))}
         </div>
       </div>
 

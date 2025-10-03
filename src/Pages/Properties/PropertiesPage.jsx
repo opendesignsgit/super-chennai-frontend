@@ -5,25 +5,11 @@ import Pagination from "./Components/Properties/Pagination";
 import PropertiesList from "./Components/Properties/PropertiesList";
 import { useProperties } from "./hooks/useProperties";
 import { toggleArrayValue } from "./utils/filterHelpers";
+import { defaultFilters } from "./utils/filterDefault";
+
 
 const PropertiesPage = () => {
-  const [filters, setFilters] = useState({
-    locations: [],
-    propertyTypes: [],
-    bhk: [],
-    purpose: [],
-    furnishing: [],
-    possessionStatus: [],
-    parking: [],
-    facing: [],
-    minBudget: 0,
-    maxBudget: 10000000,
-    jacuzzi: false,
-    swimmingPool: false,
-    gatedCommunity: false,
-    petsAllowed: false,
-    ownership: [],
-  });
+  const [filters, setFilters] = useState(defaultFilters);
 
   const [sortBy, setSortBy] = useState("");
   const { properties, loading } = useProperties(filters, sortBy);
@@ -38,11 +24,27 @@ const PropertiesPage = () => {
 
   const totalPages = Math.ceil(properties.length / ITEMS_PER_PAGE);
 
-  const handleCheckboxChange = (name, value) => {
-    setFilters((prev) => ({
-      ...prev,
-      [name]: toggleArrayValue(prev[name], value),
-    }));
+  const handleCheckboxChange = (name, value, nestedKey = null) => {
+    setFilters((prev) => {
+      if (nestedKey) {
+        // for nested object filters (e.g., bathroomFeatures)
+        return {
+          ...prev,
+          [name]: {
+            ...prev[name],
+            [nestedKey]: value,
+          },
+        };
+      } else if (typeof prev[name] === "boolean") {
+        return { ...prev, [name]: value };
+      } else if (Array.isArray(prev[name])) {
+        return { ...prev, [name]: toggleArrayValue(prev[name], value) };
+      } else {
+        // fallback in case it’s an object you didn’t expect
+        return { ...prev, [name]: value };
+      }
+    });
+
     setCurrentPage(1);
   };
 
@@ -56,22 +58,8 @@ const PropertiesPage = () => {
   };
 
   const onClearAll = () => {
-    setFilters({
-      locations: [],
-      propertyTypes: [],
-      bhk: [],
-      purpose: [],
-      furnishing: [],
-      possessionStatus: [],
-      facing: [],
-      parking: [],
-      minBudget: 0,
-      maxBudget: 10000000,
-      jacuzzi: false,
-      swimmingPool: false,
-      gatedCommunity: false,
-      petsAllowed: false,
-    });
+    console.log("Clearing all filters");
+    setFilters(defaultFilters);
   };
 
   return (
@@ -106,6 +94,7 @@ const PropertiesPage = () => {
               filters={filters}
               onCheckboxChange={handleCheckboxChange}
               onBudgetChange={handleBudgetChange}
+              onClearAll={onClearAll}
             />
 
             <section className="siderbar-card">
@@ -115,8 +104,7 @@ const PropertiesPage = () => {
                   loading={loading}
                   sortBy={sortBy}
                   onSortChange={setSortBy}
-                  onClearAll={onClearAll}
-                   filters={filters}
+                  filters={filters}
                 />
                 <div className="pagination-wrapper">
                   <Pagination

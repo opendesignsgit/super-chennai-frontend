@@ -62,13 +62,15 @@ export default function PrideofChennai() {
                 <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
               </div>
               <div className="workIntro !pb-0">
-                <h3>Your Educational Journey Starts Here</h3>
+                <h3>Tradition Meets Innovation Daily</h3>
                 <p>
-                  Chennai has a wide range of educational possibilities, from
-                  kindergarten to high school and colleges, from undergraduate
-                  to doctoral degrees in fields like medicine, engineering,
-                  business, photography, and the arts and sciences, and more,
-                  from public to private schools and institutions.
+                  Celebrating the city’s rich culture and inspiring
+                  achievements, Chennai stands as a beacon of tradition and
+                  innovation. From its historic landmarks to its modern
+                  contributions in art, music, and education, the city continues
+                  to inspire pride among its residents and admirers alike.
+                  Chennai’s spirit, talent, and resilience make its pride truly
+                  unmatched.
                 </p>
               </div>
             </div>

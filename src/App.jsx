@@ -279,6 +279,7 @@ import IconofthemonthSeptember from "./Pages/Icon-of-the-month-september";
 import IconofthemonthSeptember1 from "./Pages/Icon-of-the-month-september1";
 import PropertyMainPage from "./Pages/Properties-Design/Property-Main";
 import PrideofChennai from "./Pages/PrideofChennai";
+import ChennaiApp from "./Pages/Chennai-app";
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -1416,6 +1417,8 @@ function App() {
           {/* Pride-of-Chennai */}
 
           <Route path="/pride-of-chennai" element={<PrideofChennai />} />
+
+          <Route path="/chennai-app" element={<ChennaiApp />} />
 
           {/* Pride-of-Chennai */}
         </Routes>

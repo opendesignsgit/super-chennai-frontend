@@ -157,7 +157,7 @@ export default function EducationInstitutions() {
         </div>
 
         {/*----------------- Intro Section ----------------*/}
-        <div className="visitIntroParaSection detailIntro !mt-0">
+        {/* <div className="visitIntroParaSection detailIntro !mt-0">
           <div className="container max-w-7xl mx-auto px-4 !mb-0">
             <div
               className={`CostOflivingBackground ${
@@ -326,9 +326,9 @@ export default function EducationInstitutions() {
               </div>
             </>
           )}
-        </div>
+        </div> */}
 
-        {/* <div class="visitIntroParaSection detailIntro">
+        <div class="visitIntroParaSection detailIntro">
           <div class="container max-w-7xl mx-auto px-4">
             <div class="CostOflivingBackground scroll-rightCostofLiving">
               <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
@@ -668,7 +668,7 @@ export default function EducationInstitutions() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         <LiveSlider />
 

@@ -976,7 +976,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTitle: "Comedy Sabha by @tanglishcomedy",
     EventsCalendarContent:
       "Standup comedy you've watched on YouTube, reels, TV,....",
-    EventsCalendarMonth: "24 Sep – 29 Oct, 2025",
+    EventsCalendarMonth: "8 Oct – 29 Oct, 2025",
     EventsCalendarTime: "7:30 PM",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/HomePage-Images/Events/Newevents/112.jpg",
@@ -1111,7 +1111,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     EventsCalendarTitle: "Rage Therapy",
     EventsCalendarContent:
       "Rage Therapy – Break. Heal. Repeat. Ever felt like smashing...",
-    EventsCalendarMonth: "12 Aug – 14 Sep, 2025",
+    EventsCalendarMonth: "4 Oct, 2025",
     EventsCalendarTime: "1:00 PM",
     EventsCalendarCategory: "Health and Fitness",
     image: "/images/HomePage-Images/Events/Newevents/105.jpg",
@@ -5166,7 +5166,8 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarTitle: "Velaan Agricultural Festival 2025",
     EventsCalendarContent:
       "The Velaan Agricultural Festival 2025 is a grand celebration of farming and agrarian heritage",
-    EventsCalendarMonth: "27-28 Sept 2025",
+    EventsCalendarMonth: " 27 Sep – 28 Sep 2025",
+
     EventsCalendarTime: "",
     EventsCalendarCategory: "Expo / Agriculture",
     image: "/images/HomePage-Images/Events/Newevents/312.jpg",
@@ -6705,15 +6706,24 @@ export const prideofchennaidata = [
     popupContent: [
       <>Successful film career with multiple highest-grossing Tamil films.</>,
 
-<>Numerous awards and honors, including Kalaimaamani, Vijay Awards, SIIMA, and honorary doctorate.</>,
+      <>
+        Numerous awards and honors, including Kalaimaamani, Vijay Awards, SIIMA,
+        and honorary doctorate.
+      </>,
 
-<>Major box-office milestones, like pioneering the 50 Crore and 100 Crore Clubs.</>,
+      <>
+        Major box-office milestones, like pioneering the 50 Crore and 100 Crore
+        Clubs.
+      </>,
 
-<>International recognition for films like Mersal.</>,
+      <>International recognition for films like Mersal.</>,
 
-<>Massive fan following and influence, with festival-like celebrations of his birthday and releases.</>,
+      <>
+        Massive fan following and influence, with festival-like celebrations of
+        his birthday and releases.
+      </>,
 
-<>Entry into politics, founding his own party.</>,
+      <>Entry into politics, founding his own party.</>,
     ],
 
     category: "Films",
@@ -6728,9 +6738,17 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-     <>His major achievements include a National Film Award for Pithamagan, eight Filmfare Awards South, four Tamil Nadu State Film Awards, and the Kalaimamani Award.</>,
+      <>
+        His major achievements include a National Film Award for Pithamagan,
+        eight Filmfare Awards South, four Tamil Nadu State Film Awards, and the
+        Kalaimamani Award.
+      </>,
 
-<>He is known for hit films like Sethu, Anniyan, Saamy, Deiva Thirumagal, I, and the Ponniyin Selvan series, and he was also featured on the Forbes India Celebrity 100 list in 2016 and 2018</>,
+      <>
+        He is known for hit films like Sethu, Anniyan, Saamy, Deiva Thirumagal,
+        I, and the Ponniyin Selvan series, and he was also featured on the
+        Forbes India Celebrity 100 list in 2016 and 2018
+      </>,
     ],
 
     category: "Films",
@@ -6745,12 +6763,24 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-   
-      <>Suriya Sivakumar is a celebrated Tamil film actor, producer, and philanthropist, known for his versatile roles and significant contributions to cinema. </>,
+      <>
+        Suriya Sivakumar is a celebrated Tamil film actor, producer, and
+        philanthropist, known for his versatile roles and significant
+        contributions to cinema.{" "}
+      </>,
 
-<>His notable achievements include winning two National Film Awards, being a consistent member of the Forbes India Celebrity 100 list, and establishing the Agaram Foundation to support education for underprivileged children. </>,
+      <>
+        His notable achievements include winning two National Film Awards, being
+        a consistent member of the Forbes India Celebrity 100 list, and
+        establishing the Agaram Foundation to support education for
+        underprivileged children.{" "}
+      </>,
 
-<>He gained recognition with films like Nandha (2001), Kaakha Kaakha (2003), Ghajini (2005), Vaaranam Aayiram (2008), Soorarai Pottru (2020), and Jai Bhim (2021)</>,
+      <>
+        He gained recognition with films like Nandha (2001), Kaakha Kaakha
+        (2003), Ghajini (2005), Vaaranam Aayiram (2008), Soorarai Pottru (2020),
+        and Jai Bhim (2021)
+      </>,
     ],
 
     category: "Films",
@@ -6765,15 +6795,27 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-       <>Composed music primarily for Tamil films, as well as a few Telugu, Kannada, and Hindi films.</>,
+      <>
+        Composed music primarily for Tamil films, as well as a few Telugu,
+        Kannada, and Hindi films.
+      </>,
 
-<>Known for versatility and innovative use of Western music elements in film scores.</>,
+      <>
+        Known for versatility and innovative use of Western music elements in
+        film scores.
+      </>,
 
-<>Credited with introducing hip hop to Tamil film music and starting the “era of remixes” in Tamil Nadu, including EDM and jazz mixes.</>,
+      <>
+        Credited with introducing hip hop to Tamil film music and starting the
+        “era of remixes” in Tamil Nadu, including EDM and jazz mixes.
+      </>,
 
-<>Frequently called the “BGM King” of Tamil cinema.</>,
+      <>Frequently called the “BGM King” of Tamil cinema.</>,
 
-<>Won two Filmfare Awards South, five Mirchi Music Awards South, three Vijay Awards, and two Tamil Nadu State Film Awards.</>,
+      <>
+        Won two Filmfare Awards South, five Mirchi Music Awards South, three
+        Vijay Awards, and two Tamil Nadu State Film Awards.
+      </>,
     ],
 
     category: "Music",
@@ -6788,17 +6830,33 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-      <>Gained popularity with Star Vijay’s Lollu Sabha for comedic spoofs of Tamil films.</>,
+      <>
+        Gained popularity with Star Vijay’s Lollu Sabha for comedic spoofs of
+        Tamil films.
+      </>,
 
-<>Made his film debut in Manmadhan (2004) and delivered acclaimed performances in Sachien (2005) and Polladhavan (2007).</>,
+      <>
+        Made his film debut in Manmadhan (2004) and delivered acclaimed
+        performances in Sachien (2005) and Polladhavan (2007).
+      </>,
 
-<>Transitioned successfully to lead roles in films like Arai En 305-il Kadavul (2008) and Dhillukku Dhuddu (2016).</>,
+      <>
+        Transitioned successfully to lead roles in films like Arai En 305-il
+        Kadavul (2008) and Dhillukku Dhuddu (2016).
+      </>,
 
-<>Made a successful comeback to comedy with DD Next Level (2025), blending humor with new genres.</>,
+      <>
+        Made a successful comeback to comedy with DD Next Level (2025), blending
+        humor with new genres.
+      </>,
 
-<>Earned the title of “Comedy Superstar” in the Tamil film industry.</>,
+      <>Earned the title of “Comedy Superstar” in the Tamil film industry.</>,
 
-<>Received the Kalaimamani Award (2018), multiple Vijay Awards, Filmfare Awards South, SIIMA Awards, Ananda Vikatan Cinema Awards, and Edison Awards for his exceptional comedic performances.</>,
+      <>
+        Received the Kalaimamani Award (2018), multiple Vijay Awards, Filmfare
+        Awards South, SIIMA Awards, Ananda Vikatan Cinema Awards, and Edison
+        Awards for his exceptional comedic performances.
+      </>,
     ],
 
     category: "Music",
@@ -6813,9 +6871,18 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-      <>Anirudh Ravichander s a prominent Indian music composer, singer, and producer known for his work in Tamil and Telugu cinema. </>,
+      <>
+        Anirudh Ravichander s a prominent Indian music composer, singer, and
+        producer known for his work in Tamil and Telugu cinema.{" "}
+      </>,
 
-<>He gained global fame with the viral song "Why This Kolaveri Di" from his debut film 3. His achievements include numerous accolades, such as multiple Filmfare, SIIMA, and Edison Awards, and his music has been featured in many hit films like Kaththi, Petta, and Master, with viral hits like "Selfie Pulla" and "Kaathalae Kaathalae".</>,
+      <>
+        He gained global fame with the viral song "Why This Kolaveri Di" from
+        his debut film 3. His achievements include numerous accolades, such as
+        multiple Filmfare, SIIMA, and Edison Awards, and his music has been
+        featured in many hit films like Kaththi, Petta, and Master, with viral
+        hits like "Selfie Pulla" and "Kaathalae Kaathalae".
+      </>,
     ],
 
     category: "Music",
@@ -6832,9 +6899,15 @@ export const prideofchennaidata = [
     popupContent: [
       <>Renowned Indian playback singer and actor.</>,
 
-<>His achievements include singing over 1,000 film songs in multiple languages, earning accolades such as three Kerala State Film </>,
+      <>
+        His achievements include singing over 1,000 film songs in multiple
+        languages, earning accolades such as three Kerala State Film{" "}
+      </>,
 
-<>Awards, five Filmfare Awards, and four SIIMA Awards. He also made a mark in acting with roles in films like Maari (2015) and Padaiveeran (2018).</>,
+      <>
+        Awards, five Filmfare Awards, and four SIIMA Awards. He also made a mark
+        in acting with roles in films like Maari (2015) and Padaiveeran (2018).
+      </>,
     ],
 
     category: "Music",
@@ -6844,22 +6917,32 @@ export const prideofchennaidata = [
     name: "Chitra Visweswaran (Dancer)",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
-    natureofWork: "Eminent Bharatanatyam exponent and guru; choreographer and cultural ambassador",
+    natureofWork:
+      "Eminent Bharatanatyam exponent and guru; choreographer and cultural ambassador",
     about:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-       <>Began learning dance at the age of three, showing early dedication.</>,
+      <>Began learning dance at the age of three, showing early dedication.</>,
 
-<>Trained extensively in Bharatanatyam, ballet, Manipuri, and Kathak.</>,
+      <>Trained extensively in Bharatanatyam, ballet, Manipuri, and Kathak.</>,
 
-<>Completed her arangetram within ten months under T.A. Rajalakshmi.</>,
+      <>Completed her arangetram within ten months under T.A. Rajalakshmi.</>,
 
-<>Continued advanced training for nearly a decade with her guru T.A. Rajalakshmi.</>,
+      <>
+        Continued advanced training for nearly a decade with her guru T.A.
+        Rajalakshmi.
+      </>,
 
-<>Recognized as a leading Bharatanatyam dancer with performances nationally and internationally.</>,
+      <>
+        Recognized as a leading Bharatanatyam dancer with performances
+        nationally and internationally.
+      </>,
 
-<>Received several prestigious awards for her contributions to classical dance, including the Padma Bhushan and Sangeet Natak Akademi Award.</>, 
+      <>
+        Received several prestigious awards for her contributions to classical
+        dance, including the Padma Bhushan and Sangeet Natak Akademi Award.
+      </>,
     ],
 
     category: "Dance",
@@ -6869,26 +6952,43 @@ export const prideofchennaidata = [
     name: "Padma Subrahmanyam (Dancer)",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
-    natureofWork: "Famous Bharatanatyam dancer and researcher; known for contributions to classical dance and Natya Shastra",
+    natureofWork:
+      "Famous Bharatanatyam dancer and researcher; known for contributions to classical dance and Natya Shastra",
     about:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-      <>Renowned Bharatanatyam dancer, choreographer, teacher, and research scholar.</>,
+      <>
+        Renowned Bharatanatyam dancer, choreographer, teacher, and research
+        scholar.
+      </>,
 
-<>Founded the Bharata Nrithyam dance form, contributing a unique style to classical dance.</>,
+      <>
+        Founded the Bharata Nrithyam dance form, contributing a unique style to
+        classical dance.
+      </>,
 
-<>Performed internationally, gaining recognition through films and documentaries.</>,
+      <>
+        Performed internationally, gaining recognition through films and
+        documentaries.
+      </>,
 
-<>Made significant contributions to research and preservation of classical Indian dance.</>,
+      <>
+        Made significant contributions to research and preservation of classical
+        Indian dance.
+      </>,
 
-<>Received prestigious awards, including the Padma Bhushan and Sangeet Natak Akademi Award, for her exceptional work in dance.</>,
+      <>
+        Received prestigious awards, including the Padma Bhushan and Sangeet
+        Natak Akademi Award, for her exceptional work in dance.
+      </>,
     ],
 
     category: "Dance",
   },
   {
-    image: "/images/pride-of-chennai/sri-sabhapati-swami-religion-spiritual-leader.jpg",
+    image:
+      "/images/pride-of-chennai/sri-sabhapati-swami-religion-spiritual-leader.jpg",
     name: "Sri Sabhapati Swami (Religion / Spiritual Leader)",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
@@ -6897,17 +6997,32 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-    <>Renowned 19th-century yogi and spiritual teacher.</>,
+      <>Renowned 19th-century yogi and spiritual teacher.</>,
 
-<>Authored several influential texts on Raja Yoga and meditation, including Siddhanta Darsanam.</>,
+      <>
+        Authored several influential texts on Raja Yoga and meditation,
+        including Siddhanta Darsanam.
+      </>,
 
-<>Presented deep insights into yogic philosophy, higher consciousness, and unity of all beings.</>,
+      <>
+        Presented deep insights into yogic philosophy, higher consciousness, and
+        unity of all beings.
+      </>,
 
-<>Emphasized practices like inner realization, breath control, and the path to liberation.</>,
+      <>
+        Emphasized practices like inner realization, breath control, and the
+        path to liberation.
+      </>,
 
-<>Inspired both Indian and Western seekers, spreading yogic wisdom beyond India.</>,
+      <>
+        Inspired both Indian and Western seekers, spreading yogic wisdom beyond
+        India.
+      </>,
 
-<>Recognized posthumously in spiritual literature for his contributions to yoga and meditation teachings.</>,
+      <>
+        Recognized posthumously in spiritual literature for his contributions to
+        yoga and meditation teachings.
+      </>,
     ],
 
     category: "Religion",
@@ -6922,17 +7037,32 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-      <>Respected religious and cultural writer specializing in Hindu spiritual literature.</>,
+      <>
+        Respected religious and cultural writer specializing in Hindu spiritual
+        literature.
+      </>,
 
-<>Authored numerous books and commentaries on the Ramayana, Mahabharata, Bhagavad Gita, and Puranas.</>,
+      <>
+        Authored numerous books and commentaries on the Ramayana, Mahabharata,
+        Bhagavad Gita, and Puranas.
+      </>,
 
-<>Made complex scriptures accessible to the common reader through clear explanations.</>,
+      <>
+        Made complex scriptures accessible to the common reader through clear
+        explanations.
+      </>,
 
-<>Spread moral and spiritual values via lectures, articles, and storytelling.</>,
+      <>
+        Spread moral and spiritual values via lectures, articles, and
+        storytelling.
+      </>,
 
-<>Recognized as a leading voice in Tamil religious writing.</>,
+      <>Recognized as a leading voice in Tamil religious writing.</>,
 
-<>Works continue to inspire devotion, cultural pride, and a deeper understanding of India’s spiritual heritage.</>,
+      <>
+        Works continue to inspire devotion, cultural pride, and a deeper
+        understanding of India’s spiritual heritage.
+      </>,
     ],
 
     category: "Religion",
@@ -6942,18 +7072,34 @@ export const prideofchennaidata = [
     name: "Subra Suresh (Scientist / Engineer)",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
-    natureofWork: "President of Carnegie Mellon University; Former MIT Dean and NSF Director",
+    natureofWork:
+      "President of Carnegie Mellon University; Former MIT Dean and NSF Director",
     about:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-      <>Subra Suresh is a distinguished scientist, engineer, and academic leader, recognized for his contributions in materials science, bioengineering, and higher education. </>,
+      <>
+        Subra Suresh is a distinguished scientist, engineer, and academic
+        leader, recognized for his contributions in materials science,
+        bioengineering, and higher education.{" "}
+      </>,
 
-<>He has served as Dean of MIT’s School of Engineering and Director of the National Science Foundation. Suresh’s research spans biomechanics, nanotechnology, and materials science, influencing global scientific communities. </>,
+      <>
+        He has served as Dean of MIT’s School of Engineering and Director of the
+        National Science Foundation. Suresh’s research spans biomechanics,
+        nanotechnology, and materials science, influencing global scientific
+        communities.{" "}
+      </>,
 
-<>He is actively involved in mentoring, research, and international collaborations. </>,
+      <>
+        He is actively involved in mentoring, research, and international
+        collaborations.{" "}
+      </>,
 
-<>His work continues to advance science and education in Chennai and worldwide.</>,
+      <>
+        His work continues to advance science and education in Chennai and
+        worldwide.
+      </>,
     ],
 
     category: "Science",
@@ -6968,20 +7114,35 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-      <>Kannan Soundararajan is a renowned mathematician specializing in number theory and analytic mathematics.</>,
+      <>
+        Kannan Soundararajan is a renowned mathematician specializing in number
+        theory and analytic mathematics.
+      </>,
 
+      <>
+        He has contributed significantly to the understanding of prime numbers,
+        L-functions, and mathematical conjectures. Soundararajan has held
+        faculty positions at Stanford University and other leading
+        institutions.{" "}
+      </>,
 
- <>He has contributed significantly to the understanding of prime numbers, L-functions, and mathematical conjectures. Soundararajan has held faculty positions at Stanford University and other leading institutions. </>,
+      <>
+        He actively collaborates with researchers globally and mentors young
+        mathematicians.
+      </>,
 
-<>He actively collaborates with researchers globally and mentors young mathematicians.</>,
-
- <>His work has strengthened Chennai’s presence in the global mathematical community. Soundararajan continues to inspire aspiring mathematicians in India.</>,
+      <>
+        His work has strengthened Chennai’s presence in the global mathematical
+        community. Soundararajan continues to inspire aspiring mathematicians in
+        India.
+      </>,
     ],
 
     category: "Science",
   },
   {
-    image: "/images/pride-of-chennai/kirthi-jayakumar-social-impact-leader-entrepreneur.jpg",
+    image:
+      "/images/pride-of-chennai/kirthi-jayakumar-social-impact-leader-entrepreneur.jpg",
     name: "Kirthi Jayakumar (Social Impact Leader / Entrepreneur)",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
@@ -6990,13 +7151,29 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-     <>Kirthi Jayakumar is a prominent social entrepreneur, activist, and founder of The Red Elephant Foundation, focusing on gender equality, women’s rights, and social justice. </>,
+      <>
+        Kirthi Jayakumar is a prominent social entrepreneur, activist, and
+        founder of The Red Elephant Foundation, focusing on gender equality,
+        women’s rights, and social justice.{" "}
+      </>,
 
-<>She has worked extensively in Chennai and globally to promote peacebuilding, conflict resolution, and youth empowerment. Kirthi is a TEDx speaker, author, and policy advocate, recognized for innovative initiatives addressing social issues. </>,
+      <>
+        She has worked extensively in Chennai and globally to promote
+        peacebuilding, conflict resolution, and youth empowerment. Kirthi is a
+        TEDx speaker, author, and policy advocate, recognized for innovative
+        initiatives addressing social issues.{" "}
+      </>,
 
-<>Her programs emphasize education, awareness, and community participation to create meaningful change. </>,
+      <>
+        Her programs emphasize education, awareness, and community participation
+        to create meaningful change.{" "}
+      </>,
 
-<>She actively mentors young leaders and collaborates with governments, NGOs, and civil society. Kirthi’s work has made Chennai a hub for social innovation and inclusive development.</>,
+      <>
+        She actively mentors young leaders and collaborates with governments,
+        NGOs, and civil society. Kirthi’s work has made Chennai a hub for social
+        innovation and inclusive development.
+      </>,
     ],
 
     category: "Social",
@@ -7013,13 +7190,28 @@ export const prideofchennaidata = [
     popupContent: [
       <>Ashok Elluswamy is an Indian-origin robotics and software engineer.</>,
 
-<>He earned his Bachelor’s degree in Electronics and Communication from the College of Engineering, Guindy (Chennai), and went on to complete a Master’s in Robotics Systems Development at Carnegie Mellon University. </>,
+      <>
+        He earned his Bachelor’s degree in Electronics and Communication from
+        the College of Engineering, Guindy (Chennai), and went on to complete a
+        Master’s in Robotics Systems Development at Carnegie Mellon
+        University.{" "}
+      </>,
 
-<>In 2014, he joined Tesla as the first engineer on its Autopilot team and has been instrumental in developing the company’s self-driving technology.</>,
+      <>
+        In 2014, he joined Tesla as the first engineer on its Autopilot team and
+        has been instrumental in developing the company’s self-driving
+        technology.
+      </>,
 
-<>Since 2019, he has headed Tesla’s AI and Autopilot team, with Elon Musk recognizing him as pivotal to the company’s AI success. </>,
+      <>
+        Since 2019, he has headed Tesla’s AI and Autopilot team, with Elon Musk
+        recognizing him as pivotal to the company’s AI success.{" "}
+      </>,
 
-<>Elluswamy’s journey from Chennai to Silicon Valley makes him a global tech leader and a true pride of Chennai.</>,
+      <>
+        Elluswamy’s journey from Chennai to Silicon Valley makes him a global
+        tech leader and a true pride of Chennai.
+      </>,
     ],
 
     category: "Tech",
@@ -7029,16 +7221,25 @@ export const prideofchennaidata = [
     name: "Chef Damodharan (Chef)",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
-    natureofWork: "Celebrity chef, TV host, Guinness record holder, Padma Shri awardee",
+    natureofWork:
+      "Celebrity chef, TV host, Guinness record holder, Padma Shri awardee",
     about:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
-      <>Chef Damu (Dr. Damodharan Kothandaraman) is a popular Indian celebrity chef, TV host, and judge on Tamil shows like Cooku with Comali. </>,
+      <>
+        Chef Damu (Dr. Damodharan Kothandaraman) is a popular Indian celebrity
+        chef, TV host, and judge on Tamil shows like Cooku with Comali.{" "}
+      </>,
 
-<>He holds a Guinness World Record for the longest solo cooking marathon (2010) and became the first Indian chef to earn a Ph.D. in Hotel Management (2004). In 2025, he was honored with the Padma Shri for his contributions to culinary arts.</>,
+      <>
+        He holds a Guinness World Record for the longest solo cooking marathon
+        (2010) and became the first Indian chef to earn a Ph.D. in Hotel
+        Management (2004). In 2025, he was honored with the Padma Shri for his
+        contributions to culinary arts.
+      </>,
     ],
 
     category: "Chef",
   },
-]
+];

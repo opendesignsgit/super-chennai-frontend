@@ -283,6 +283,7 @@ const BlogDetail = () => {
             id: found.id,
             title: found.title,
             content: found.content,
+            createdAt: found.createdAt,
             metadescription: found.meta.description,
             authour: found.populatedAuthors[0].name,
             metatitle: found.meta.title,
@@ -377,12 +378,34 @@ const BlogDetail = () => {
             </>
           )}
         </div>
-        {console.log("authour", blog.authour)}
+        {console.log("authour", blog.createdAt)}
         {/* <div className="blog-category">
           <span>{blog.blogCategory || "nodattaaaaaaaaaaaaaaa"}</span>
         </div> */}
         <div className="blog-detail-container  container max-w-7xl mx-auto">
-          <h3 className="AuthourNameBlog">Author: <span style={{color:"#1d1d1d"}}>{blog.authour}</span></h3>
+          <h3 className="AuthourNameBlog">
+            Author :{" "}
+            <span style={{ color: "#1d1d1d" }}>
+              {blog.authour} {""}{" "}
+              <span
+                style={{
+                  fontSize: "13px",
+                  color: "#a44294",
+                  marginLeft: "4px",
+                }}
+              >
+                {" "}
+                (
+                {new Date(blog.createdAt).toLocaleDateString("en-GB", {
+                  day: "2-digit",
+                  month: "short",
+                  year: "numeric",
+                  timeZone: "Asia/Kolkata",
+                })}
+                )
+              </span>
+            </span>
+          </h3>
           <div className="blog-content">{parseLexical(blog.content)}</div>
           <div className="back-link">
             <Link to="/blog">← Back to Blog List</Link>

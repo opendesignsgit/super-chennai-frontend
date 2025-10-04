@@ -146,7 +146,44 @@ export default function EventsHome() {
           </div>
 
           <div className="EventsListboxs flex flex-wrap">
-            {oldEvents.map((card, index) => (
+            {/* {oldEvents.map((card, index) => (
+              <div
+                key={index}
+                className="EventsItems bg-white"
+                whileHover={{ scale: 1.05 }}
+              >
+                <div className="relative w-full EventsItemImg">
+                  <a href={`/events-in-chennai/${card.url}`} state={{ card }}>
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="w-full object-cover"
+                    />
+                  </a>
+
+                  <div className="absolute top-3 right-3 evntechnolg">
+                    {card.EventsCalendarCategory}
+                  </div>
+                </div>
+                <div className="EventsIteCont flex flex-col items-start">
+                  <div className="datimeContbox">
+                    <div className="dtDaymonth">{card.EventsCalendarMonth}</div>
+                    <div className="dtLines">|</div>
+                    <div className="dtTimess">{card.EventsCalendarTime}</div>
+                  </div>
+                  <h3 className="EveItemtitles">
+                    <a href={`/events-in-chennai/${card.url}`} state={{ card }}>
+                      {card.EventsCalendarTitle}
+                    </a>
+                  </h3>
+                  <h4 className="EveItemDescrip">
+                    {card.EventsCalendarContent}
+                  </h4>
+                </div>
+              </div>
+            ))} */}
+
+              {oldEvents.sort((a, b) => b.id - a.id).map((card, index) => (
               <div
                 key={index}
                 className="EventsItems bg-white"

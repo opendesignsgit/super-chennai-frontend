@@ -209,10 +209,11 @@ const Footer = () => {
       title: "Contact Us",
       link: "/contact",
     },
-    // {
-    //   title: "Sustainability",
-    //   link: "/volunteer-in-chennai",
-    // },
+        {
+      title: "Pride of Chennai",
+      link: "/pride-of-chennai",
+    },
+
   ];
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);

@@ -82,12 +82,18 @@ const PropertyDetailPage = () => {
           {/* Property Info */}
           <div className="property-info container">
             <div className="basic-infoProperty">
-              <img className="proeprtyPageImage" src="https://www.superchennai.com/images/HomePage-Images/Events/Newevents/313.jpg" />
+              <img
+                className="proeprtyPageImage"
+                src="https://www.superchennai.com/images/HomePage-Images/Events/Newevents/313.jpg"
+              />
 
               <div className="info-grid">
                 <div className="info-item">
-                  <h4>BHK :</h4>
-                  <p>{property.bhk?.label || "N/A"}</p>
+                  <h4>BHK : {""}</h4>
+                  <p>
+                    {""}
+                    {property.bhk?.label || "N/A"}
+                  </p>
                 </div>
                 <div className="info-item">
                   <h4>Area :</h4>
@@ -136,23 +142,32 @@ const PropertyDetailPage = () => {
               </div>
             </div>
 
+            {/* Description */}
+            <div className="description">
+              <h2>About this property</h2>
+              <PropertyContent content={property.content} />
+            </div>
+
             {/* Society / Project Details */}
+
             {property.society && (
               <div className="society-details">
                 <h2>Society / Project Details</h2>
-                <p>
-                  <strong>Name:</strong> {property.society.name}
-                </p>
-                <p>
-                  <strong>Builder:</strong> {property.society.builder}
-                </p>
-                <p>
-                  <strong>Total Units:</strong> {property.society.totalUnits}
-                </p>
-                <p>
-                  <strong>Possession Status:</strong>{" "}
-                  {property.society.possessionStatus}
-                </p>
+                <div className="society-infoDiv">
+                  <p>
+                    <strong>Name :</strong> {property.society.name}
+                  </p>
+                  <p>
+                    <strong>Builder :</strong> {property.society.builder}
+                  </p>
+                  <p>
+                    <strong>Total Units :</strong> {property.society.totalUnits}
+                  </p>
+                  <p>
+                    <strong>Possession Status :</strong>{" "}
+                    {property.society.possessionStatus}
+                  </p>
+                </div>
               </div>
             )}
 
@@ -172,14 +187,24 @@ const PropertyDetailPage = () => {
             {property.bathroomFeatures && (
               <div className="bathroom-features">
                 <h2>Bathroom Features</h2>
-                <p>Bathtubs: {property.bathroomFeatures.bathtubs || 0}</p>
-                <p>
-                  Jacuzzi: {property.bathroomFeatures.jacuzzi ? "Yes" : "No"}
-                </p>
-                <p>
-                  Heated Flooring:{" "}
-                  {property.bathroomFeatures.heatedFlooring ? "Yes" : "No"}
-                </p>
+
+                <div className="society-infoDiv">
+                  <p>
+                    {" "}
+                    <strong>Bathtubs : </strong>{" "}
+                    {property.bathroomFeatures.bathtubs || 0}
+                  </p>
+                  <p>
+                    <strong>Jacuzzi :</strong>
+
+                    {property.bathroomFeatures.jacuzzi ? "Yes" : "No"}
+                  </p>
+                  <p>
+                    <strong>Heated Flooring : </strong>
+
+                    {property.bathroomFeatures.heatedFlooring ? "Yes" : "No"}
+                  </p>
+                </div>
               </div>
             )}
 
@@ -187,14 +212,16 @@ const PropertyDetailPage = () => {
             {property.buildingAmenities && (
               <div className="building-amenities">
                 <h2>Building Amenities</h2>
-                {Object.entries(property.buildingAmenities).map(
-                  ([key, value]) => (
-                    <p key={key}>
-                      <strong>{key.replace(/([A-Z])/g, " $1")}:</strong>{" "}
-                      {value ? "Yes" : "No"}
-                    </p>
-                  )
-                )}
+                <div className="society-infoDiv">
+                  {Object.entries(property.buildingAmenities).map(
+                    ([key, value]) => (
+                      <p key={key}>
+                        <strong>{key.replace(/([A-Z])/g, " $1")} :</strong>{" "}
+                        {value ? "Yes" : "No"}
+                      </p>
+                    )
+                  )}
+                </div>
               </div>
             )}
 
@@ -202,16 +229,19 @@ const PropertyDetailPage = () => {
             {property.appliances && (
               <div className="appliances">
                 <h2>Appliances</h2>
-                {Object.entries(property.appliances).map(([key, value]) => (
-                  <p key={key}>
-                    <strong>{key.replace(/([A-Z])/g, " $1")}:</strong>{" "}
-                    {typeof value === "boolean"
-                      ? value
-                        ? "Yes"
-                        : "No"
-                      : value}
-                  </p>
-                ))}
+
+                <div className="society-infoDiv">
+                  {Object.entries(property.appliances).map(([key, value]) => (
+                    <p key={key}>
+                      <strong>{key.replace(/([A-Z])/g, " $1")} :</strong>{" "}
+                      {typeof value === "boolean"
+                        ? value
+                          ? "Yes"
+                          : "No"
+                        : value}
+                    </p>
+                  ))}
+                </div>
               </div>
             )}
 
@@ -219,31 +249,31 @@ const PropertyDetailPage = () => {
             {property.rentDetails && (
               <div className="rent-details">
                 <h2>Rent Details</h2>
-                <p>
-                  Monthly Rent: ₹
-                  {property.rentDetails.monthlyRent?.toLocaleString() || "N/A"}
-                </p>
-                <p>
-                  Security Deposit: ₹
-                  {property.rentDetails.securityDeposit?.toLocaleString() ||
-                    "N/A"}
-                </p>
-                <p>
-                  Maintenance Included:{" "}
-                  {property.rentDetails.maintenanceIncluded ? "Yes" : "No"}
-                </p>
-                <p>
-                  Preferred Tenants:{" "}
-                  {property.rentDetails.preferredTenants?.join(", ") || "N/A"}
-                </p>
+
+                <div className="society-infoDiv">
+                  <p>
+                    <strong> Monthly Rent : </strong>₹
+                    {property.rentDetails.monthlyRent?.toLocaleString() ||
+                      "N/A"}
+                  </p>
+                  <p>
+                    <strong>Security Deposit : </strong>₹
+                    {property.rentDetails.securityDeposit?.toLocaleString() ||
+                      "N/A"}
+                  </p>
+                  <p>
+                    <strong> Maintenance Included : </strong>
+
+                    {property.rentDetails.maintenanceIncluded ? "Yes" : "No"}
+                  </p>
+                  <p>
+                    <strong>Preferred Tenants : </strong>
+
+                    {property.rentDetails.preferredTenants?.join(", ") || "N/A"}
+                  </p>
+                </div>
               </div>
             )}
-
-            {/* Description */}
-            <div className="description">
-              <h2>About this property</h2>
-              <PropertyContent content={property.content} />
-            </div>
 
             {/* Nearby Places */}
             {property.nearby?.length > 0 && (
@@ -263,12 +293,21 @@ const PropertyDetailPage = () => {
             {property.semiRooms && (
               <div className="semi-rooms">
                 <h2>Semi Rooms</h2>
-                <p>Study Room: {property.semiRooms.studyRoom ? "Yes" : "No"}</p>
-                <p>
-                  Servant Room: {property.semiRooms.servantRoom ? "Yes" : "No"}
-                </p>
-                <p>Pooja Room: {property.semiRooms.poojaRoom ? "Yes" : "No"}</p>
-                <p>Store Room: {property.semiRooms.storeRoom ? "Yes" : "No"}</p>
+                <div className="society-infoDiv">
+                  <p>
+                    Study Room: {property.semiRooms.studyRoom ? "Yes" : "No"}
+                  </p>
+                  <p>
+                    Servant Room:{" "}
+                    {property.semiRooms.servantRoom ? "Yes" : "No"}
+                  </p>
+                  <p>
+                    Pooja Room: {property.semiRooms.poojaRoom ? "Yes" : "No"}
+                  </p>
+                  <p>
+                    Store Room: {property.semiRooms.storeRoom ? "Yes" : "No"}
+                  </p>
+                </div>
               </div>
             )}
 
@@ -276,47 +315,59 @@ const PropertyDetailPage = () => {
             {property.parkingOutdoor && (
               <div className="parking-details">
                 <h2>Parking Details</h2>
-                <p>
-                  Covered Parking: {property.parkingOutdoor.coveredParking || 0}
-                </p>
-                <p>Open Parking: {property.parkingOutdoor.openParking || 0}</p>
-                <p>
-                  Visitor Parking:{" "}
-                  {property.parkingOutdoor.visitorParking ? "Yes" : "No"}
-                </p>
-                <p>
-                  EV Charging:{" "}
-                  {property.parkingOutdoor.evCharging ? "Yes" : "No"}
-                </p>
+
+                <div className="society-infoDiv">
+                  <p>
+                    Covered Parking:{" "}
+                    {property.parkingOutdoor.coveredParking || 0}
+                  </p>
+                  <p>
+                    Open Parking: {property.parkingOutdoor.openParking || 0}
+                  </p>
+                  <p>
+                    Visitor Parking:{" "}
+                    {property.parkingOutdoor.visitorParking ? "Yes" : "No"}
+                  </p>
+                  <p>
+                    EV Charging:{" "}
+                    {property.parkingOutdoor.evCharging ? "Yes" : "No"}
+                  </p>
+                </div>
               </div>
             )}
 
             {/* Plot / Dimensions */}
             <div className="plot-details">
               <h2>Plot / Building Details</h2>
-              <p>Plot Area: {property.plotArea || "N/A"} sq ft</p>
-              <p>Length: {property.dimensions?.length || "N/A"} ft</p>
-              <p>Width: {property.dimensions?.width || "N/A"} ft</p>
-              <p>Road Width: {property.roadWidth || "N/A"} ft</p>
-              <p>Corner Plot: {property.cornerPlot ? "Yes" : "No"}</p>
+
+              <div className="society-infoDiv">
+                <p>Plot Area: {property.plotArea || "N/A"} sq ft</p>
+                <p>Length: {property.dimensions?.length || "N/A"} ft</p>
+                <p>Width: {property.dimensions?.width || "N/A"} ft</p>
+                <p>Road Width: {property.roadWidth || "N/A"} ft</p>
+                <p>Corner Plot: {property.cornerPlot ? "Yes" : "No"}</p>
+              </div>
             </div>
 
             {/* Interiors */}
             {property.interiors && (
               <div className="interiors">
                 <h2>Interiors</h2>
-                <p>Wardrobes: {property.interiors.wardrobes || 0}</p>
-                <p>Curtains: {property.interiors.curtains ? "Yes" : "No"}</p>
-                <p>
-                  Modular Kitchen:{" "}
-                  {property.interiors.modularKitchen ? "Yes" : "No"}
-                </p>
-                <p>Chimney: {property.interiors.chimney ? "Yes" : "No"}</p>
-                <p>
-                  False Ceiling:{" "}
-                  {property.interiors.falseCeiling ? "Yes" : "No"}
-                </p>
-                <p>Lighting: {property.interiors.lighting || "N/A"}</p>
+
+                <div className="society-infoDiv">
+                  <p>Wardrobes: {property.interiors.wardrobes || 0}</p>
+                  <p>Curtains: {property.interiors.curtains ? "Yes" : "No"}</p>
+                  <p>
+                    Modular Kitchen:{" "}
+                    {property.interiors.modularKitchen ? "Yes" : "No"}
+                  </p>
+                  <p>Chimney: {property.interiors.chimney ? "Yes" : "No"}</p>
+                  <p>
+                    False Ceiling:{" "}
+                    {property.interiors.falseCeiling ? "Yes" : "No"}
+                  </p>
+                  <p>Lighting: {property.interiors.lighting || "N/A"}</p>
+                </div>
               </div>
             )}
 
@@ -338,15 +389,18 @@ const PropertyDetailPage = () => {
             {/* Financial Info */}
             <div className="financial-details">
               <h2>Financial Details</h2>
-              <p>
-                Maintenance Charges: ₹
-                {property.maintenanceCharges?.toLocaleString() || "N/A"}
-              </p>
-              <p>
-                Booking Amount: ₹
-                {property.bookingAmount?.toLocaleString() || "N/A"}
-              </p>
-              <p>Negotiable: {property.negotiable ? "Yes" : "No"}</p>
+
+              <div className="society-infoDiv">
+                <p>
+                  Maintenance Charges: ₹
+                  {property.maintenanceCharges?.toLocaleString() || "N/A"}
+                </p>
+                <p>
+                  Booking Amount: ₹
+                  {property.bookingAmount?.toLocaleString() || "N/A"}
+                </p>
+                <p>Negotiable: {property.negotiable ? "Yes" : "No"}</p>
+              </div>
             </div>
 
             {/* FAQ */}

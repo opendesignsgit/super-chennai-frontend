@@ -71,7 +71,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  width: 50%;
+  width: 55%;
+  height: max-content;
 }
 
 .info-item {
@@ -122,13 +123,12 @@
 }
 
 .property-info h2 {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1.2rem;
-  border-bottom: 3px solid var(--primary-color-light);
-  padding-bottom: 0.4rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  font-family: "29LT Bukra SmBd";
+  color: #7f397e;
+  letter-spacing: 0;
+  font-size: clamp(18px, 1.8vw, 32px);
+  line-height: 1;
+  line-height: 1.1;
 }
 
 /* Lists */
@@ -263,34 +263,71 @@
 
 .basic-infoProperty {
   display: flex;
+  align-items: center;
+  margin-top: 40px;
+  column-gap: 22px;
 }
 
 .property-info .info-item {
   padding: 10px;
   display: flex;
   height: 35px;
+  border-right: 1px solid #a7a7a7;
+}
+
+.property-info .info-item:last-child {
+  border-right: none;
 }
 
 .property-info .info-item h4 {
-
   display: flex;
   margin-bottom: 0;
   line-height: 10px;
   font-size: 16px;
   font-family: "poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
+  color: #7f397e;
 }
 
 .property-info .info-item p {
-
   display: flex;
   margin-bottom: 0;
   line-height: 10px;
   font-size: 16px;
   font-family: "poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  margin-left: 5px;
 }
 
 .proeprtyPageImage {
-  width: 50%;
+  width: 40%;
+}
+
+.society-infoDiv {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  row-gap: 10px;
+}
+
+.society-infoDiv p {
+  font-family: "29LT Bukra Medium";
+  background: var(--card-bg);
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.7rem;
+  box-shadow:    inset 2px 2px 5px rgba(255 255 255 / 0.7),    2px 2px 5px rgba(0 0 0 / 0.1);
+  font-weight: 500;
+  color: var(--text-color);
+  user-select: text;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.society-infoDiv strong {
+  font-weight: 500;
+  color: #7f397e;
 }

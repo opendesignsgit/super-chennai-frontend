@@ -1,3 +1,4 @@
+// import { Bath, Bed, Building2, Car, Download, Phone } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 import { PropertyContent } from "./Components/Properties/ritchText";
@@ -15,10 +16,10 @@ import {
   Bath,
   Car,
   Phone,
+  // Amenity,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import "./Styles/PropertyDetailPage.css";
-import Amenity from "./utils/Amenity";
 
 const PropertyDetailPage = () => {
   const { id, slug } = useParams();
@@ -264,17 +265,17 @@ const PropertyDetailPage = () => {
             <div className="flex flex-col sm:flex-row flex-wrap justify-between flex-1">
               <div>
                 <h3 className="font-semibold text-gray-800 text-lg">
-                  {property.society.name}
+                  Malo Armonique
                 </h3>
                 <p className="text-gray-500 text-sm">
-                  by{property.society.builder}
+                  by MGP Builders and Developers Private Limited
                 </p>
               </div>
 
               <div className="mt-3 sm:mt-0">
                 <p className="text-gray-500 text-sm">Price</p>
                 <p className="font-semibold text-gray-800 text-lg">
-                  {property.society.totalUnits} Onwards
+                  ₹2.50 Cr Onwards
                 </p>
               </div>
             </div>
@@ -340,7 +341,7 @@ const PropertyDetailPage = () => {
           </h2>
 
           {/* Amenity Icons */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
+          {/* <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
             <Amenity
               icon={<BatteryCharging size={18} />}
               label="Power Back Up"
@@ -350,7 +351,7 @@ const PropertyDetailPage = () => {
             <Amenity icon={<Trees size={18} />} label="Park" />
             <Amenity icon={<Car size={18} />} label="Reserved Parking" />
             <Amenity icon={<Shield size={18} />} label="Security" />
-          </div>
+          </div> */}
 
           {/* Links */}
           <div className="flex flex-wrap items-center justify-between mt-5 text-sm">
@@ -365,179 +366,295 @@ const PropertyDetailPage = () => {
             </a>
           </div>
         </div>
-
-        <div className="border border-gray-200 rounded-xl p-5">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">
-            About this Property
-          </h2>
-          <div className="text-gray-500 text-sm">
-            <PropertyContent content={property.content} />
-          </div>
-        </div>
       </div>
 
-      <div className="container max-w-7xl mx-auto px-4 py-10">
-        <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100 property-detail">
-          {[
-            property.amenities?.length > 0 && {
-              title: "Amenities",
-              content: (
-                <ul className="flex flex-wrap gap-3">
+      <div className="container max-w-7xl mx-auto px-4">
+        <div className="property-detail">
+          {/* Hero Image */}
+          <div className="property-hero">
+            <img src={getImageUrl(property.heroImage)} alt={property.title} />
+            <div className="overlay">
+              <h1>{property.title}</h1>
+              <p className="location">{property.location?.label}</p>
+            </div>
+          </div>
+
+          {/* Property Info */}
+          <div className="property-info container">
+            <div className="basic-infoProperty">
+              <img
+                className="proeprtyPageImage"
+                src="https://www.superchennai.com/images/HomePage-Images/Events/Newevents/313.jpg"
+              />
+
+              <div className="info-grid">
+                <div className="info-item">
+                  <h4>BHK : {""}</h4>
+                  <p>
+                    {""}
+                    {property.bhk?.label || "N/A"}
+                  </p>
+                </div>
+                <div className="info-item">
+                  <h4>Area :</h4>
+                  <p>{property.area ? `${property.area} sq ft` : "N/A"}</p>
+                </div>
+                <div className="info-item">
+                  <h4>Price :</h4>
+                  <p className="price">
+                    {property.price
+                      ? `₹${property.price.toLocaleString()}`
+                      : "On Request"}
+                  </p>
+                </div>
+                <div className="info-item">
+                  <h4>Location :</h4>
+                  <p>{property.location?.label || "N/A"}</p>
+                </div>
+                <div className="info-item">
+                  <h4>Property Type :</h4>
+                  <p>{property.propertyType?.value || "N/A"}</p>
+                </div>
+                <div className="info-item">
+                  <h4>Transaction Type :</h4>
+                  <p>{property.transactionType?.value || "N/A"}</p>
+                </div>
+                <div className="info-item">
+                  <h4>Furnishing :</h4>
+                  <p>{property.furnishing?.value || "N/A"}</p>
+                </div>
+                <div className="info-item">
+                  <h4>Floor :</h4>
+                  <p>{property.floor || "N/A"}</p>
+                </div>
+                <div className="info-item">
+                  <h4>Facing Direction :</h4>
+                  <p>{property.facingDirection || "N/A"}</p>
+                </div>
+                <div className="info-item">
+                  <h4>Parking :</h4>
+                  <p>{property.parking || "N/A"}</p>
+                </div>
+                <div className="info-item">
+                  <h4>Power Backup :</h4>
+                  <p>{property.powerBackup ? "Yes" : "No"}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Description */}
+            <div className="description">
+              <h2>About this property</h2>
+              <PropertyContent content={property.content} />
+            </div>
+
+            {/* Society / Project Details */}
+
+            {property.society && (
+              <div className="society-details">
+                <h2>Society / Project Details</h2>
+                <div className="society-infoDiv">
+                  <p>
+                    <strong>Name :</strong> {property.society.name}
+                  </p>
+                  <p>
+                    <strong>Builder :</strong> {property.society.builder}
+                  </p>
+                  <p>
+                    <strong>Total Units :</strong> {property.society.totalUnits}
+                  </p>
+                  <p>
+                    <strong>Possession Status :</strong>{" "}
+                    {property.society.possessionStatus}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Amenities */}
+            {property.amenities?.length > 0 && (
+              <div className="amenities">
+                <h2>Amenities</h2>
+                <ul>
                   {property.amenities.map((a) => (
-                    <li
-                      key={a.id}
-                      className="px-4 py-2 bg-[#f9ebf7] text-[#a34493] rounded-full text-sm font-medium"
-                    >
-                      {a.label}
-                    </li>
+                    <li key={a.id}>{a.label}</li>
                   ))}
                 </ul>
-              ),
-            },
-            property.bathroomFeatures && {
-              title: "Bathroom Features",
-              content: (
-                <>
+              </div>
+            )}
+
+            {/* Bathroom Features */}
+            {property.bathroomFeatures && (
+              <div className="bathroom-features">
+                <h2>Bathroom Features</h2>
+
+                <div className="society-infoDiv">
                   <p>
-                    <strong>Bathtubs:</strong>{" "}
+                    {" "}
+                    <strong>Bathtubs : </strong>{" "}
                     {property.bathroomFeatures.bathtubs || 0}
                   </p>
                   <p>
-                    <strong>Jacuzzi:</strong>{" "}
+                    <strong>Jacuzzi :</strong>
+
                     {property.bathroomFeatures.jacuzzi ? "Yes" : "No"}
                   </p>
                   <p>
-                    <strong>Heated Flooring:</strong>{" "}
+                    <strong>Heated Flooring : </strong>
+
                     {property.bathroomFeatures.heatedFlooring ? "Yes" : "No"}
                   </p>
-                </>
-              ),
-            },
-            property.buildingAmenities && {
-              title: "Building Amenities",
-              content: Object.entries(property.buildingAmenities).map(
-                ([key, value]) => (
-                  <p key={key}>
-                    <strong>{key.replace(/([A-Z])/g, " $1")}:</strong>{" "}
-                    {value ? "Yes" : "No"}
-                  </p>
-                )
-              ),
-            },
-            property.appliances && {
-              title: "Appliances",
-              content: Object.entries(property.appliances).map(
-                ([key, value]) => (
-                  <p key={key}>
-                    <strong>{key.replace(/([A-Z])/g, " $1")}:</strong>{" "}
-                    {typeof value === "boolean"
-                      ? value
-                        ? "Yes"
-                        : "No"
-                      : value}
-                  </p>
-                )
-              ),
-            },
-            property.rentDetails && {
-              title: "Rent Details",
-              content: (
-                <>
+                </div>
+              </div>
+            )}
+
+            {/* Building Amenities */}
+            {property.buildingAmenities && (
+              <div className="building-amenities">
+                <h2>Building Amenities</h2>
+                <div className="society-infoDiv">
+                  {Object.entries(property.buildingAmenities).map(
+                    ([key, value]) => (
+                      <p key={key}>
+                        <strong>{key.replace(/([A-Z])/g, " $1")} :</strong>{" "}
+                        {value ? "Yes" : "No"}
+                      </p>
+                    )
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Appliances */}
+            {property.appliances && (
+              <div className="appliances">
+                <h2>Appliances</h2>
+
+                <div className="society-infoDiv">
+                  {Object.entries(property.appliances).map(([key, value]) => (
+                    <p key={key}>
+                      <strong>{key.replace(/([A-Z])/g, " $1")} :</strong>{" "}
+                      {typeof value === "boolean"
+                        ? value
+                          ? "Yes"
+                          : "No"
+                        : value}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Rent Details */}
+            {property.rentDetails && (
+              <div className="rent-details">
+                <h2>Rent Details</h2>
+
+                <div className="society-infoDiv">
                   <p>
-                    <strong>Monthly Rent:</strong> ₹
+                    <strong> Monthly Rent : </strong>₹
                     {property.rentDetails.monthlyRent?.toLocaleString() ||
                       "N/A"}
                   </p>
                   <p>
-                    <strong>Security Deposit:</strong> ₹
+                    <strong>Security Deposit : </strong>₹
                     {property.rentDetails.securityDeposit?.toLocaleString() ||
                       "N/A"}
                   </p>
                   <p>
-                    <strong>Maintenance Included:</strong>{" "}
+                    <strong> Maintenance Included : </strong>
+
                     {property.rentDetails.maintenanceIncluded ? "Yes" : "No"}
                   </p>
                   <p>
-                    <strong>Preferred Tenants:</strong>{" "}
+                    <strong>Preferred Tenants : </strong>
+
                     {property.rentDetails.preferredTenants?.join(", ") || "N/A"}
                   </p>
-                </>
-              ),
-            },
-            property.nearby?.length > 0 && {
-              title: "Nearby Places",
-              content: (
-                <ul className="list-disc ml-5 space-y-1">
+                </div>
+              </div>
+            )}
+
+            {/* Nearby Places */}
+            {property.nearby?.length > 0 && (
+              <div className="nearby-places">
+                <h2>Nearby Places</h2>
+                <ul>
                   {property.nearby.map((place) => (
                     <li key={place.id}>
                       {place.place} - {place.distance}
                     </li>
                   ))}
                 </ul>
-              ),
-            },
-            property.semiRooms && {
-              title: "Semi Rooms",
-              content: (
-                <>
+              </div>
+            )}
+
+            {/* Semi Rooms */}
+            {property.semiRooms && (
+              <div className="semi-rooms">
+                <h2>Semi Rooms</h2>
+                <div className="society-infoDiv">
                   <p>
-                    <strong>Study Room:</strong>{" "}
-                    {property.semiRooms.studyRoom ? "Yes" : "No"}
+                    Study Room: {property.semiRooms.studyRoom ? "Yes" : "No"}
                   </p>
                   <p>
-                    <strong>Servant Room:</strong>{" "}
+                    Servant Room:{" "}
                     {property.semiRooms.servantRoom ? "Yes" : "No"}
                   </p>
                   <p>
-                    <strong>Pooja Room:</strong>{" "}
-                    {property.semiRooms.poojaRoom ? "Yes" : "No"}
+                    Pooja Room: {property.semiRooms.poojaRoom ? "Yes" : "No"}
                   </p>
                   <p>
-                    <strong>Store Room:</strong>{" "}
-                    {property.semiRooms.storeRoom ? "Yes" : "No"}
+                    Store Room: {property.semiRooms.storeRoom ? "Yes" : "No"}
                   </p>
-                </>
-              ),
-            },
-            property.parkingOutdoor && {
-              title: "Parking Details",
-              content: (
-                <>
+                </div>
+              </div>
+            )}
+
+            {/* Parking Details */}
+            {property.parkingOutdoor && (
+              <div className="parking-details">
+                <h2>Parking Details</h2>
+
+                <div className="society-infoDiv">
                   <p>
-                    <strong>Covered Parking:</strong>{" "}
+                    Covered Parking:{" "}
                     {property.parkingOutdoor.coveredParking || 0}
                   </p>
                   <p>
-                    <strong>Open Parking:</strong>{" "}
-                    {property.parkingOutdoor.openParking || 0}
+                    Open Parking: {property.parkingOutdoor.openParking || 0}
                   </p>
                   <p>
-                    <strong>Visitor Parking:</strong>{" "}
+                    Visitor Parking:{" "}
                     {property.parkingOutdoor.visitorParking ? "Yes" : "No"}
                   </p>
                   <p>
-                    <strong>EV Charging:</strong>{" "}
+                    EV Charging:{" "}
                     {property.parkingOutdoor.evCharging ? "Yes" : "No"}
                   </p>
-                </>
-              ),
-            },
-            {
-              title: "Plot / Building Details",
-              content: (
-                <>
-                  <p>Plot Area: {property.plotArea || "N/A"} sq ft</p>
-                  <p>Length: {property.dimensions?.length || "N/A"} ft</p>
-                  <p>Width: {property.dimensions?.width || "N/A"} ft</p>
-                  <p>Road Width: {property.roadWidth || "N/A"} ft</p>
-                  <p>Corner Plot: {property.cornerPlot ? "Yes" : "No"}</p>
-                </>
-              ),
-            },
-            property.interiors && {
-              title: "Interiors",
-              content: (
-                <>
+                </div>
+              </div>
+            )}
+
+            {/* Plot / Dimensions */}
+            <div className="plot-details">
+              <h2>Plot / Building Details</h2>
+
+              <div className="society-infoDiv">
+                <p>Plot Area: {property.plotArea || "N/A"} sq ft</p>
+                <p>Length: {property.dimensions?.length || "N/A"} ft</p>
+                <p>Width: {property.dimensions?.width || "N/A"} ft</p>
+                <p>Road Width: {property.roadWidth || "N/A"} ft</p>
+                <p>Corner Plot: {property.cornerPlot ? "Yes" : "No"}</p>
+              </div>
+            </div>
+
+            {/* Interiors */}
+            {property.interiors && (
+              <div className="interiors">
+                <h2>Interiors</h2>
+
+                <div className="society-infoDiv">
                   <p>Wardrobes: {property.interiors.wardrobes || 0}</p>
                   <p>Curtains: {property.interiors.curtains ? "Yes" : "No"}</p>
                   <p>
@@ -550,80 +667,75 @@ const PropertyDetailPage = () => {
                     {property.interiors.falseCeiling ? "Yes" : "No"}
                   </p>
                   <p>Lighting: {property.interiors.lighting || "N/A"}</p>
-                </>
-              ),
-            },
-            property.greenFeatures?.length > 0 && {
-              title: "Green Features",
-              content: (
-                <ul className="list-disc ml-5 space-y-1">
-                  {property.greenFeatures.map((feature, i) => (
-                    <li key={i}>{feature.label || feature.feature}</li>
+                </div>
+              </div>
+            )}
+
+            {property.greenFeatures?.length > 0 && (
+              <div className="green-features">
+                <h2>Green Features</h2>
+                <ul>
+                  {property.greenFeatures.map((feature, index) => (
+                    <li key={feature.id || index}>
+                      {feature.label ||
+                        feature.feature ||
+                        JSON.stringify(feature)}
+                    </li>
                   ))}
                 </ul>
-              ),
-            },
-            {
-              title: "Financial Details",
-              content: (
-                <>
-                  <p>
-                    Maintenance Charges: ₹
-                    {property.maintenanceCharges?.toLocaleString() || "N/A"}
-                  </p>
-                  <p>
-                    Booking Amount: ₹
-                    {property.bookingAmount?.toLocaleString() || "N/A"}
-                  </p>
-                  <p>Negotiable: {property.negotiable ? "Yes" : "No"}</p>
-                </>
-              ),
-            },
-            property.faq?.length > 0 && {
-              title: "FAQs",
-              content: property.faq.map((f) => (
-                <div
-                  key={f.id}
-                  className="border-l-4 border-[#a34493] pl-3 space-y-1"
-                >
-                  <p>
-                    <strong>Q:</strong> {f.question}
-                  </p>
-                  <p>
-                    <strong>A:</strong> {f.answer}
-                  </p>
-                </div>
-              )),
-            },
-            property.mapView && {
-              title: "Location Map",
-              content: (
+              </div>
+            )}
+
+            {/* Financial Info */}
+            <div className="financial-details">
+              <h2>Financial Details</h2>
+
+              <div className="society-infoDiv">
+                <p>
+                  Maintenance Charges: ₹
+                  {property.maintenanceCharges?.toLocaleString() || "N/A"}
+                </p>
+                <p>
+                  Booking Amount: ₹
+                  {property.bookingAmount?.toLocaleString() || "N/A"}
+                </p>
+                <p>Negotiable: {property.negotiable ? "Yes" : "No"}</p>
+              </div>
+            </div>
+
+            {/* FAQ */}
+            {property.faq?.length > 0 && (
+              <div className="faq-section">
+                <h2>FAQs</h2>
+                {property.faq.map((f) => (
+                  <div key={f.id} className="faq-item">
+                    <p>
+                      <strong>Q:</strong> {f.question}
+                    </p>
+                    <p>
+                      <strong>A:</strong> {f.answer}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Map */}
+            {property.mapView && (
+              <div className="map-view">
+                <h2>Location Map</h2>
                 <iframe
                   src={property.mapView.mapEmbed}
                   width="100%"
                   height="400"
                   title="Property Map"
-                  className="rounded-lg border border-gray-200"
-                  allowFullScreen
+                  style={{ border: 0 }}
+                  allowFullScreen=""
                   loading="lazy"
                 ></iframe>
-              ),
-            },
-          ]
-            .filter(Boolean)
-            .map((section, i) => (
-              <section
-                key={i}
-                className="p-8 border-b border-gray-100 last:border-0"
-              >
-                <h2 className="text-2xl font-semibold text-[#a34493] mb-4">
-                  {section.title}
-                </h2>
-                <div className="grid sm:grid-cols-2 gap-4 text-gray-700 leading-relaxed">
-                  {section.content}
-                </div>
-              </section>
-            ))}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>

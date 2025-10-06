@@ -188,22 +188,7 @@ const FiltersTopbar = ({
         </FilterSection>
         {/* )} */}
 
-        {/* Possession Status */}
-        <FilterSection title="Possession Status">
-          {["Ready", "Under Construction"].map((status) => {
-            const val = status.toLowerCase().replace(" ", "_");
-            return (
-              <label key={val} className="filter-checkbox mr-2">
-                <input
-                  type="checkbox"
-                  checked={filters.possessionStatus.includes(val)}
-                  onChange={() => onCheckboxChange("possessionStatus", val)}
-                />
-                <span>{formatLabel(status)}</span>
-              </label>
-            );
-          })}
-        </FilterSection>
+
         <div className="filter-checkbox mr-2">
           <span
             className="badge cursor-pointer"
@@ -251,6 +236,22 @@ const FiltersTopbar = ({
       {/* Advanced Filters */}
       {showMore && activeFilterKeys.length > 0 && (
         <div className="advanced-filters flex flex-wrap gap-4 mt-4">
+                  {/* Possession Status */}
+        <FilterSection title="Possession Status">
+          {["Ready", "Under Construction"].map((status) => {
+            const val = status.toLowerCase().replace(" ", "_");
+            return (
+              <label key={val} className="filter-checkbox mr-2">
+                <input
+                  type="checkbox"
+                  checked={filters.possessionStatus.includes(val)}
+                  onChange={() => onCheckboxChange("possessionStatus", val)}
+                />
+                <span>{formatLabel(status)}</span>
+              </label>
+            );
+          })}
+        </FilterSection>
           {/* Furnishing */}
           {activeFilterKeys.includes("furnishing") && (
             <FilterSection title="Furnishing">

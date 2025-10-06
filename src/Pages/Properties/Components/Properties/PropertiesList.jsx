@@ -1,8 +1,8 @@
-import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import PropertyCard from "./PropertyCard";
+import PropertyCardSkeleton from "../../Components/loader/Skeleton";
 import SortBy from "../../Components/Properties/SortBy";
 import { useFiltersData } from "../../hooks/useFilters";
+import PropertyCard from "./PropertyCard";
 
 const PropertiesList = ({
   properties,
@@ -13,41 +13,61 @@ const PropertiesList = ({
 }) => {
   const { locations, furnishings } = useFiltersData();
 
+
+
   if (loading) {
     return (
       <div className="PropertiesCard">
-        <div className="mainPropertiesCards">
-          <Skeleton height={180} />
-          <div className="propertyDetails">
-            <h4>
-              <Skeleton width={120} />
-            </h4>
-            <h5>
-              <Skeleton width={180} />
-            </h5>
-            <Skeleton width={200} height={20} />
-            <div className="aboutPlotsSize">
-              <Skeleton width={100} />
-              <Skeleton width={80} />
-            </div>
-            <Skeleton count={2} />
-            <div className="uploadedDetailsproperty">
-              <Skeleton width={80} />
-              <Skeleton width={100} />
-            </div>
-          </div>
-        </div>
+        {[...Array(3)].map((_, i) => (
+          <PropertyCardSkeleton key={i} />
+        ))}
       </div>
     );
   }
 
-  if (!loading && properties.length === 0) {
-    return (
-      <>
-        <p className="no-results">No properties found matching filters</p>
-      </>
-    );
-  }
+
+if (!loading && properties.length === 0) {
+  return (
+    <div className="flex flex-col items-center justify-center py-16 px-4 bg-gray-50 rounded-lg shadow-sm">
+      {/* Icon */}
+      <div className="mb-4">
+        <svg
+          className="w-16 h-16 text-purple-400"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={1.5}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9 13h6m-3-3v6m-7 5h14a2 2 0 002-2V6a2 
+               2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 
+               0 002 2z"
+          />
+        </svg>
+      </div>
+
+      {/* Message */}
+      <h2 className="text-xl font-semibold text-gray-700">
+        No properties found
+      </h2>
+      <p className="mt-2 text-gray-500 text-center max-w-md">
+        We couldn’t find any properties that match your filters. 
+        Try adjusting your filters or explore nearby locations.
+      </p>
+
+      {/* Button */}
+      <button
+        onClick={() => window.location.reload()}
+        className="mt-6 px-6 py-2 rounded-lg bg-purple-600 text-white font-medium hover:bg-purple-700 transition"
+      >
+        Reset Filters
+      </button>
+    </div>
+  );
+}
+
   const selectedFilters = [];
   filters.locations.forEach((val) => {
     const loc = locations.find((l) => l.value === val);

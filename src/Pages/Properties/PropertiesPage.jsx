@@ -6,7 +6,7 @@ import PropertiesList from "./Components/Properties/PropertiesList";
 import { useProperties } from "./hooks/useProperties";
 import { toggleArrayValue } from "./utils/filterHelpers";
 import { defaultFilters } from "./utils/filterDefault";
-
+import FiltersTopbar from "./Components/Filters/FiltersTopbar";
 
 const PropertiesPage = () => {
   const [filters, setFilters] = useState(defaultFilters);
@@ -23,6 +23,7 @@ const PropertiesPage = () => {
   }, [properties, currentPage]);
 
   const totalPages = Math.ceil(properties.length / ITEMS_PER_PAGE);
+  const [useTopFilter, setUseTopFilter] = useState(false);
 
   const handleCheckboxChange = (name, value, nestedKey = null) => {
     setFilters((prev) => {
@@ -87,17 +88,38 @@ const PropertiesPage = () => {
         </div>
       </div>
 
-      <div className="bg-[#f4f5f7]">
-        <div className="container max-w-7xl mx-auto px-4 !mt-0 !mb-0  mainConiatinerPropertyList">
-          <div className="sidebar-stylescss">
-            <FiltersSidebar
-              filters={filters}
-              onCheckboxChange={handleCheckboxChange}
-              onBudgetChange={handleBudgetChange}
-              onClearAll={onClearAll}
-            />
+     <div className="bg-[#f4f5f7]">
+        <div className="container max-w-7xl mx-auto px-4 mainConiatinerPropertyList">
+         
+          {/* Filters + Properties */}
+          <div
+            className={`${
+              useTopFilter ? "flex flex-col gap-6" : "flex flex-row gap-6"
+            }`}
+          >
+            {/* Filters */}
+            {!useTopFilter ? (
+              <div className="w-[280px] shrink-0">
+                <FiltersSidebar
+                  filters={filters}
+                  onCheckboxChange={handleCheckboxChange}
+                  onBudgetChange={handleBudgetChange}
+                  onClearAll={onClearAll}
+                  setUseTopFilter={setUseTopFilter} 
+                />
+              </div>
+            ) : (
+              <FiltersTopbar
+                filters={filters}
+                onCheckboxChange={handleCheckboxChange}
+                onBudgetChange={handleBudgetChange}
+                onClearAll={onClearAll}
+                 setUseTopFilter={setUseTopFilter} 
+              />
+            )}
 
-            <section className="siderbar-card">
+            {/* Properties List */}
+            <section className="flex-1">
               <div className="PropertiesCards">
                 <PropertiesList
                   properties={paginatedProperties}
@@ -106,7 +128,7 @@ const PropertiesPage = () => {
                   onSortChange={setSortBy}
                   filters={filters}
                 />
-                <div className="pagination-wrapper">
+                <div className="pagination-wrapper mt-6">
                   <Pagination
                     currentPage={currentPage}
                     totalPages={totalPages}
@@ -123,3 +145,4 @@ const PropertiesPage = () => {
 };
 
 export default PropertiesPage;
+

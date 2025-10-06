@@ -4,8 +4,9 @@ import BudgetSlider from "./BudgetSlider";
 import "../../Styles/FiltersSidebar.css";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import { formatLabel } from "../../utils/formatLabel";
 
-const propertyTypeFiltersMap = {
+export const propertyTypeFiltersMap = {
   plot: ["plotDimensions", "ageOfProperty", "facing", "ownership"],
   apartment: [
     "bhk",
@@ -90,11 +91,7 @@ const propertyTypeFiltersMap = {
   ],
 };
 
-const FilterSection = ({
-  title,
-  children,
-  defaultExpanded = true,
-}) => {
+const FilterSection = ({ title, children, defaultExpanded = true }) => {
   const [expanded, setExpanded] = useState(defaultExpanded);
 
   return (
@@ -134,12 +131,12 @@ const getActiveFilterKeys = (selectedPropertyTypes) => {
   return [...new Set(keys)];
 };
 
-
 const FiltersSidebar = ({
   filters,
   onCheckboxChange,
   onBudgetChange,
   onClearAll,
+  setUseTopFilter,
 }) => {
   const {
     locations,
@@ -149,7 +146,7 @@ const FiltersSidebar = ({
     furnishings,
     loading,
   } = useFiltersData();
-const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
+  const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
 
   const [showMore, setShowMore] = useState(false);
   const [showMorePropertyTypes, setShowMorePropertyTypes] = useState(false);
@@ -323,7 +320,18 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
 
   return (
     <aside className="filters-sidebar">
-      <h3 className="filters-title">Filters</h3>
+      <div className="filters-header flex items-center justify-between mb-4">
+        <h3 className="filters-title">Filters</h3>
+        {setUseTopFilter && (
+          <button
+            className="flex items-center gap-1 text-purple-600 hover:text-purple-800"
+            onClick={() => setUseTopFilter((prev) => !prev)}
+          >
+            <span>Switch Top</span>
+           
+          </button>
+        )}
+      </div>
 
       {selectedFilter().length > 0 && (
         <div className="selected-filters-bar">
@@ -338,7 +346,8 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                 )
               }
             >
-              {badge.label} ×
+              {formatLabel(badge.label)}
+              <span className="close-btn">×</span>
             </span>
           ))}
           <button className="clear-all-btn" onClick={onClearAll}>
@@ -359,7 +368,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                 className={`badge ${isSelected ? "selected" : ""}`}
                 onClick={() => togglePropertyType(type.value)}
               >
-                {type.label}
+                {formatLabel(type.label || type.value)}
               </span>
             );
           })}
@@ -388,7 +397,8 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                 checked={filters.locations.includes(loc.id)}
                 onChange={() => onCheckboxChange("locations", loc.id)}
               />
-              <span>{loc.label}</span>
+
+              <span>{formatLabel(loc.label)}</span>
             </label>
           )}
         />
@@ -452,7 +462,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                   checked={filters.bhk.includes(bhk.value)}
                   onChange={() => onCheckboxChange("bhk", bhk.value)}
                 />
-                <span>{bhk.label}</span>
+                <span>{formatLabel(bhk.label)}</span>
               </label>
             )}
           />
@@ -463,6 +473,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
 
       <FilterSection title="Age of Property">
         {[
+          { label: "New Years", value: "new years" },
           { label: "0-5 Years", value: "0-5" },
           { label: "5-10 Years", value: "5-10" },
           { label: "10-20 Years", value: "10plus" },
@@ -474,21 +485,10 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
               checked={filters.ageOfProperty === age.value}
               onChange={() => onCheckboxChange("ageOfProperty", age.value)}
             />
-            <span>{age.label}</span>
+            <span>{formatLabel(age.label)}</span>
           </label>
         ))}
       </FilterSection>
-
-      {/* More Filters Toggle */}
-
-      <div className="propertyViewButtonMore">
-        <button
-          className={`propertyViewButtonMore custom-width-btn ${showMore ? "active" : ""}`}
-          onClick={() => setShowMore((prev) => !prev)}
-        >
-          {showMore ? "Hide Advanced Filter" : "Advanced Filter"}
-        </button>
-      </div>
 
       {/* Advanced Filters */}
       {showMore && (
@@ -502,7 +502,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                     checked={filters.purpose.includes(p.value)}
                     onChange={() => onCheckboxChange("purpose", p.value)}
                   />
-                  <span>{p.label}</span>
+                  <span>{formatLabel(p.label)}</span>
                 </label>
               ))}
             </div>
@@ -518,7 +518,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                       checked={filters.furnishing.includes(f.value)}
                       onChange={() => onCheckboxChange("furnishing", f.value)}
                     />
-                    <span>{f.label}</span>
+                    <span>{formatLabel(f.label)}</span>
                   </label>
                 ))}
               </div>
@@ -535,7 +535,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                     checked={filters.possessionStatus.includes(val)}
                     onChange={() => onCheckboxChange("possessionStatus", val)}
                   />
-                  <span>{status}</span>
+                  <span>{formatLabel(status)}</span>
                 </label>
               );
             })}
@@ -555,7 +555,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                       checked={filters.parking.includes(p.value)}
                       onChange={() => onCheckboxChange("parking", p.value)}
                     />
-                    <span>{p.label}</span>
+                    <span>{formatLabel(p.label)}</span>
                   </label>
                 );
               })}
@@ -583,7 +583,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                       checked={filters.amenities.includes(key)}
                       onChange={() => onCheckboxChange("amenities", key)}
                     />
-                    <span>{amenity}</span>
+                    <span>{formatLabel(amenity)}</span>
                   </label>
                 );
               })}
@@ -607,7 +607,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                       checked={filters.interiors.includes(key)}
                       onChange={() => onCheckboxChange("interiors", key)}
                     />
-                    <span>{item}</span>
+                    <span>{formatLabel(item)}</span>
                   </label>
                 );
               })}
@@ -636,7 +636,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                       checked={filters.appliances.includes(key)}
                       onChange={() => onCheckboxChange("appliances", key)}
                     />
-                    <span>{appliance}</span>
+                    <span>{formatLabel(appliance)}</span>
                   </label>
                 );
               })}
@@ -661,7 +661,7 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                       })
                     }
                   />
-                  <span>{feature.label}</span>
+                  <span>{formatLabel(feature.label)}</span>
                 </label>
               ))}
             </FilterSection>
@@ -677,13 +677,24 @@ const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
                     checked={filters.facing.includes(val)}
                     onChange={() => onCheckboxChange("facing", val)}
                   />
-                  <span>{dir}</span>
+                  <span>{formatLabel(dir)}</span>
                 </label>
               );
             })}
           </FilterSection>
         </div>
       )}
+
+      {/* More Filters Toggle */}
+
+      <div className="propertyViewButtonMore">
+        <button
+          className={`propertyViewButtonMore custom-width-btn ${showMore ? "active" : ""}`}
+          onClick={() => setShowMore((prev) => !prev)}
+        >
+          {showMore ? "Hide Advanced Filter" : "Advanced Filter"}
+        </button>
+      </div>
     </aside>
   );
 };

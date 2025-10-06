@@ -4,20 +4,51 @@
   border: 1px solid #eee;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 
-  
-  position: sticky; /* Makes it stick */
-  top: 10px; /* Distance from top of viewport */
-  align-self: flex-start; /* Prevents stretching in flex layout */
+
+  position: sticky;
+  /* Makes it stick */
+  top: 10px;
+  /* Distance from top of viewport */
+  align-self: flex-start;
+  /* Prevents stretching in flex layout */
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .filters-title {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 16px;
-  border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 8px;
+  color: #333;
+  border-bottom: none;
+  /* remove inner border */
+  margin: 0;
+}
+
+.filters-header button {
+  font-size: 13px;
+  font-weight: 500;
+  color: #a44294;
+  background: #f9f2fb;
+  border: 1px solid #e7c7f1;
+  padding: 4px 10px;
+  transition: all 0.2s ease;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+
+}
+
+.filters-header button:hover {
+  background: #a44294;
+  color: #fff;
 }
 
 .filters-list {
@@ -26,6 +57,8 @@
   gap: 8px;
   margin-top: 8px;
 }
+
+
 
 .filter-checkbox {
   display: flex;
@@ -36,7 +69,7 @@
 }
 
 .filter-checkbox input[type="checkbox"] {
-  accent-color: #a44294; 
+  accent-color: #a44294;
   width: 16px;
   height: 16px;
 }
@@ -145,6 +178,7 @@
   cursor: pointer;
   user-select: none;
   transition: all 0.2s ease;
+  font-weight: 600;
 }
 
 .badge:hover {
@@ -165,30 +199,36 @@
   cursor: pointer;
   font-size: 13px;
 }
+
 .plot-dimensions-inputs {
   display: flex;
-  justify-content: space-between; /* space out Length and Width */
-  gap: 1rem; /* gap between the two inputs */
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .plot-dimensions-inputs label {
-  flex: 1; /* equal width for both */
+  flex: 1;
   display: flex;
-  flex-direction: column; /* Label text on top, input below */
+  flex-direction: column;
   font-weight: 500;
 }
 
 .plot-dimensions-inputs input {
-  width: 100%;               /* make input fill its label */
-  padding: 5px 10px;         /* nice spacing inside */
-  border: 1px solid #ccc;    /* light gray border */
-  border-radius: 6px;        /* smooth rounded corners */
+  width: 100%;
+  /* make input fill its label */
+  padding: 5px 10px;
+  /* nice spacing inside */
+  border: 1px solid #ccc;
+  /* light gray border */
+  border-radius: 6px;
+  /* smooth rounded corners */
   outline: none;
   transition: border-color 0.2s ease;
 }
 
 .plot-dimensions-inputs input:focus {
-  border-color: #8e0d83;     /* blue border on focus */
+  border-color: #8e0d83;
+  /* blue border on focus */
 }
 
 
@@ -224,4 +264,9 @@
   cursor: pointer;
   margin-left: 6px;
   text-decoration: underline;
+}
+
+
+.selected-badge .close-btn {
+  margin-left: 18px;
 }

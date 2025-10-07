@@ -370,6 +370,8 @@
   border: 1px solid #a44294;
   border-radius:10px;
   font-weight: 600;
+    border-radius:50px;
+
   font-size: 15px;
   line-height: 18px;
   color: #a44294;
@@ -379,7 +381,7 @@
 .propertyViewButton button:nth-child(2) {
   padding: 8px 20px;
   border: 1px solid #a44294;
-  border-radius: 7px;
+  border-radius:50px;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;

@@ -1,8 +1,8 @@
 
 import "react-loading-skeleton/dist/skeleton.css";
 import { Link } from "react-router-dom";
+import { API_BASE_URL } from "../../config";
 
-const API_BASE_URL = "https://demo.superchennai.com/";
 
 const getImageUrl = (img) => {
   if (!img?.url) return "/placeholder.jpg";
@@ -121,11 +121,21 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
               </span>
             </div>
 
-            <div className="propertyViewButton mt-2">
+            <div className="propertyViewButton mt-2 flex space-x-2">
               <Link to={propertyLink}>
-                <button type="button">View</button>
+                <button
+                  type="button"
+                  className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                >
+                  View
+                </button>
               </Link>
-              <button type="button">Contact</button>
+              <button
+                type="button"
+                className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
+              >
+                Contact
+              </button>
             </div>
           </div>
         </div>

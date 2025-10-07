@@ -331,4 +331,10 @@
   font-weight: 500;
   color: #7f397e;
 }
+.map-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0.5rem;
+  border: none;
+}
 

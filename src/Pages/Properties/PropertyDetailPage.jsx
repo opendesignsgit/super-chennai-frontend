@@ -8,6 +8,7 @@ import PropertyDetailSkeleton from "./Components/loader/PropertyDetailSkeleton";
 import { useProperty } from "./hooks/useProperties";
 import { formatLabel } from "./utils/formatLabel";
 import ContactForm from "./Components/forms/ContactForm";
+import { formatPrice } from "./utils/formatPrice";
 
 import {
   ArrowLeftIcon,
@@ -26,7 +27,66 @@ import {
   Phone,
   Shield,
   Trees,
+  Tv,
+  Wind,
+  Microwave,
+  WashingMachine,
+  UtensilsCrossed,
+  ShowerHead,
+  Battery,
+  Sun,
+  HelpCircle,
+  Package,
+  Banknote,
+  Wallet,
+  Wrench,
+  Users,
+  BookOpen,
+  User,
+  Sparkles,
+  Boxes,
+  MapPin,
+  Zap,
+  Lightbulb,
+  DoorOpen, HandCoins , CreditCard, Handshake
 } from "lucide-react";
+
+
+const interiorIcons = {
+  doorType: DoorOpen,
+  wardrobes: Package,         
+  curtains: Sun,
+  modularKitchen: Sun, 
+  chimney: Zap, 
+  falseCeiling: Lightbulb,
+  lighting: Lightbulb,
+};
+
+const applianceIcons = {
+  acUnits: Wind,
+  fridgeCount: Package,
+  microwaveCount: Microwave,
+  waterPurifier: Droplet,
+  washingMachine: WashingMachine,
+  dishwasher: UtensilsCrossed,
+  tvCount: Tv,
+  geyserCount: ShowerHead,
+  powerBackup: Battery,
+  solar: Sun,
+};
+
+const amenityIcons = {
+  elevator: <ArrowUp size={18} />,
+  security: <Shield size={18} />,
+  intercom: <Phone size={18} />,
+  fireSafety: <Flame size={18} />,
+  clubhouse: <Building size={18} />,
+  swimmingPool: <Droplet size={18} />,
+  gym: <Dumbbell size={18} />,
+  playArea: <Trees size={18} />,
+  garden: <Trees size={18} />,
+};
+
 import { useEffect } from "react";
 import "./Styles/PropertyDetailPage.css";
 import { API_BASE_URL } from "./config";
@@ -36,20 +96,8 @@ const PropertyDetailPage = () => {
   const { property, loading } = useProperty({ id, slug });
   console.log("property", property);
 
-  //   ICON MAPPING FOR AMENTIES ###############
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
-  const amenityIcons = {
-    elevator: <ArrowUp size={18} />,
-    security: <Shield size={18} />,
-    intercom: <Phone size={18} />,
-    fireSafety: <Flame size={18} />,
-    clubhouse: <Building size={18} />,
-    swimmingPool: <Droplet size={18} />,
-    gym: <Dumbbell size={18} />,
-    playArea: <Trees size={18} />,
-    garden: <Trees size={18} />,
-  };
   useEffect(() => {
     setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 100);
   }, []);
@@ -77,7 +125,7 @@ const PropertyDetailPage = () => {
 
   //######## DATA NULL HANDLING DA #####################
 
-  // Basic property info
+  // Basic property info SILA FILEDS IF NEED NA USE PANAIKALAM
 
   const location = property?.location?.label || "N/A";
   const status =
@@ -91,9 +139,11 @@ const PropertyDetailPage = () => {
   const ageOfProperty = property?.ageOfProperty || "-";
   const transactionType = property?.transactionType || "N/A";
   const agentReraId = property?.agentReraId || "-";
+
   const price = property?.price
-    ? `₹${property.price.toLocaleString()}`
+    ? `₹${formatPrice(property.price)}`
     : "Price on Request";
+
   const pricePerSqft = property?.pricePerSqft
     ? `₹${property.pricePerSqft.toLocaleString()}/sqft`
     : "N/A";
@@ -308,14 +358,14 @@ const PropertyDetailPage = () => {
         {/* IMAGE MODAL */}
         {isModalOpen && (
           <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm transition-opacity duration-300 p-4">
+            <button
+              className="absolute top-3 right-3 text-white text-3xl font-bold hover:text-gray-300 transition-colors"
+              onClick={() => setIsModalOpen(false)}
+            >
+              &times;
+            </button>
             <div className="relative w-full max-w-4xl max-h-[90vh] bg-gray-900 rounded-xl shadow-2xl overflow-hidden flex flex-col">
               {/* Close button */}
-              <button
-                className="absolute top-3 right-3 text-white text-3xl font-bold hover:text-gray-300 transition-colors"
-                onClick={() => setIsModalOpen(false)}
-              >
-                &times;
-              </button>
 
               {/* Main Image */}
               <img
@@ -467,13 +517,13 @@ const PropertyDetailPage = () => {
                 entity={{
                   id: property.id,
                   slug: property.slug,
-                  type: propertyType?.value || "N/A",
+                  type: property.propertyType?.value || "N/A",
                   purpose: property.purpose || "N/A",
                   title: property.title || "N/A",
                   societyName: property?.society?.name || "N/A",
                   builderName: property?.society?.builder || "N/A",
                   contactInfo: property?.contactInfo || {},
-                  contactEmail:property?.society?.contactEmail || "N/A",
+                  contactEmail: property?.contactInfo?.email || "N/A",
                   publishedAt: property?.publishedAt || null,
                 }}
               />
@@ -518,7 +568,7 @@ const PropertyDetailPage = () => {
               <div className="mt-3 sm:mt-0">
                 <p className="text-gray-500 text-sm">Price</p>
                 <p className="font-semibold text-gray-800 text-lg">
-                  {property.society.totalUnits} Onwards
+                  {price} Onwards
                 </p>
               </div>
             </div>
@@ -576,7 +626,6 @@ const PropertyDetailPage = () => {
             </button>
           </div>
         </div>
-
         <div className="border border-gray-200 rounded-xl p-5">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             About this Property
@@ -629,7 +678,7 @@ const PropertyDetailPage = () => {
         {property.amenities?.length > 0 && (
           <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Amenities
+              Gentral Amenities
             </h2>
 
             <ul className="flex flex-wrap gap-3">
@@ -685,23 +734,25 @@ const PropertyDetailPage = () => {
             </h2>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
-              {Object.entries(property.appliances).map(([key, value]) => (
-                <div
-                  key={key}
-                  className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
-                >
-                  {/* You can optionally add an icon based on key */}
-                  <Building size={18} className="text-gray-400" />
-                  <span className="capitalize">
-                    {key.replace(/([A-Z])/g, " $1")}:{" "}
-                    {typeof value === "boolean"
-                      ? value
-                        ? "Yes"
-                        : "No"
-                      : value}
-                  </span>
-                </div>
-              ))}
+              {Object.entries(property.appliances).map(([key, value]) => {
+                const Icon = applianceIcons[key] || HelpCircle;
+                return (
+                  <div
+                    key={key}
+                    className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
+                  >
+                    <Icon size={18} className="text-gray-500" />
+                    <span className="capitalize">
+                      {key.replace(/([A-Z])/g, " $1")}:{" "}
+                      {typeof value === "boolean"
+                        ? value
+                          ? "Yes"
+                          : "No"
+                        : value}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
@@ -715,7 +766,7 @@ const PropertyDetailPage = () => {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <Banknote size={18} className="text-gray-400" />
                 <span>
                   <strong>Monthly Rent:</strong>{" "}
                   {property.rentDetails.monthlyRent?.toLocaleString() || "N/A"}
@@ -723,7 +774,7 @@ const PropertyDetailPage = () => {
               </div>
 
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <Wallet size={18} className="text-gray-400" />
                 <span>
                   <strong>Security Deposit:</strong>{" "}
                   {property.rentDetails.securityDeposit?.toLocaleString() ||
@@ -732,7 +783,7 @@ const PropertyDetailPage = () => {
               </div>
 
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <Wrench size={18} className="text-gray-400" />
                 <span>
                   <strong>Maintenance Included:</strong>{" "}
                   {property.rentDetails.maintenanceIncluded ? "Yes" : "No"}
@@ -740,7 +791,7 @@ const PropertyDetailPage = () => {
               </div>
 
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <Users size={18} className="text-gray-400" />
                 <span>
                   <strong>Preferred Tenants:</strong>{" "}
                   {property.rentDetails.preferredTenants?.join(", ") || "N/A"}
@@ -764,7 +815,7 @@ const PropertyDetailPage = () => {
                   key={place.id}
                   className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
                 >
-                  <Building size={18} className="text-gray-400" />
+                  <MapPin size={18} className="text-gray-400" />
                   <span>
                     <strong>{place.place}</strong> - {place.distance}
                   </span>
@@ -782,28 +833,28 @@ const PropertyDetailPage = () => {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <BookOpen size={18} className="text-gray-400" />
                 <span>
                   <strong>Study Room:</strong>{" "}
                   {property.semiRooms.studyRoom ? "Yes" : "No"}
                 </span>
               </div>
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <User size={18} className="text-gray-400" />
                 <span>
                   <strong>Servant Room:</strong>{" "}
                   {property.semiRooms.servantRoom ? "Yes" : "No"}
                 </span>
               </div>
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <Sparkles size={18} className="text-gray-400" />
                 <span>
                   <strong>Pooja Room:</strong>{" "}
                   {property.semiRooms.poojaRoom ? "Yes" : "No"}
                 </span>
               </div>
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <Boxes size={18} className="text-gray-400" />
                 <span>
                   <strong>Store Room:</strong>{" "}
                   {property.semiRooms.storeRoom ? "Yes" : "No"}
@@ -894,52 +945,45 @@ const PropertyDetailPage = () => {
         )}
 
         {/* INTERIOR  */}
-
-        {property.interiors && (
+        {property.interiors && Object.keys(property.interiors).length > 0 && (
           <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Interiors
+              Interiors / Furnishings
             </h2>
+
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Wardrobes:</strong>{" "}
-                  {property.interiors.wardrobes || 0}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Curtains:</strong>{" "}
-                  {property.interiors.curtains ? "Yes" : "No"}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Modular Kitchen:</strong>{" "}
-                  {property.interiors.modularKitchen ? "Yes" : "No"}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Chimney:</strong>{" "}
-                  {property.interiors.chimney ? "Yes" : "No"}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>False Ceiling:</strong>{" "}
-                  {property.interiors.falseCeiling ? "Yes" : "No"}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Lighting:</strong>{" "}
-                  {property.interiors.lighting || "N/A"}
-                </span>
-              </div>
+              {Object.entries(property.interiors).map(([key, value]) => {
+                const Icon = interiorIcons[key] || HelpCircle;
+
+                // Format display value
+                let displayValue = "";
+                if (typeof value === "boolean")
+                  displayValue = value ? "Yes" : "No";
+                else if (value === null || value === undefined)
+                  displayValue = "N/A";
+                else displayValue = value;
+
+                // Optional: prettier label from key
+                const label = key
+                  .replace(/([A-Z])/g, " $1")
+                  .replace(/^./, (str) => str.toUpperCase());
+
+                return (
+                  <div
+                    key={key}
+                    className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
+                  >
+                    <Icon size={18} className="text-gray-500" />
+                    <span>
+                      <strong>{label}:</strong> {displayValue}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
+
         {/* GREEN FETARES  */}
 
         {property.greenFeatures?.length > 0 && (
@@ -966,7 +1010,7 @@ const PropertyDetailPage = () => {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <CreditCard size={18} className="text-gray-400" />
                 <span>
                   Maintenance Charges: ₹
                   {property.maintenanceCharges?.toLocaleString() || "N/A"}
@@ -974,7 +1018,7 @@ const PropertyDetailPage = () => {
               </div>
 
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <HandCoins size={18} className="text-gray-400" />
                 <span>
                   Booking Amount: ₹
                   {property.bookingAmount?.toLocaleString() || "N/A"}
@@ -982,61 +1026,65 @@ const PropertyDetailPage = () => {
               </div>
 
               <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Building size={18} className="text-gray-400" />
+                <Handshake size={18} className="text-gray-400" />
                 <span>Negotiable: {property.negotiable ? "Yes" : "No"}</span>
               </div>
             </div>
           </div>
         )}
 
-        <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">FAQs</h2>
+        {/* FAQ  */}
 
-          <div className="divide-y divide-gray-200">
-            {faq.map((f, index) => {
-              const isOpen = openIndex === index;
-              return (
-                <div key={f.id} className="py-3">
-                  <button
-                    onClick={() => setOpenIndex(isOpen ? null : index)}
-                    className="w-full flex justify-between items-center text-left focus:outline-none"
-                  >
-                    <span className="font-medium text-gray-800">
-                      Q: {f.question}
-                    </span>
-                    {isOpen ? (
-                      <ChevronUp className="w-5 h-5 text-gray-500" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-gray-500" />
-                    )}
-                  </button>
+        {faq && faq.length > 0 && (
+          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">FAQs</h2>
 
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        key="content"
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="overflow-hidden"
-                      >
-                        <div className="mt-2 text-gray-600 text-sm leading-relaxed bg-gray-50 rounded-xl p-3">
-                          <p>
-                            <span className="font-medium text-gray-700">
-                              A:
-                            </span>{" "}
-                            {f.answer}
-                          </p>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              );
-            })}
+            <div className="divide-y divide-gray-200">
+              {faq.map((f, index) => {
+                const isOpen = openIndex === index;
+                return (
+                  <div key={f.id} className="py-3">
+                    <button
+                      onClick={() => setOpenIndex(isOpen ? null : index)}
+                      className="w-full flex justify-between items-center text-left focus:outline-none"
+                    >
+                      <span className="font-medium text-gray-800">
+                        {f.question}
+                      </span>
+                      {isOpen ? (
+                        <ChevronUp className="w-5 h-5 text-gray-500" />
+                      ) : (
+                        <ChevronDown className="w-5 h-5 text-gray-500" />
+                      )}
+                    </button>
+
+                    <AnimatePresence initial={false}>
+                      {isOpen && (
+                        <motion.div
+                          key="content"
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3, ease: "easeInOut" }}
+                          className="overflow-hidden"
+                        >
+                          <div
+                            className="mt-2 text-white text-sm leading-relaxed rounded-xl p-3"
+                            style={{
+                              backgroundColor: "rgba(163, 68, 147, 0.9)",
+                            }} 
+                          >
+                            <p>{f.answer}</p>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* MAP VIEW  */}
         {property.mapView && property.mapView.mapEmbed && (

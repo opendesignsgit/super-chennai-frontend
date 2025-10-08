@@ -37,7 +37,6 @@ export default function ContactForm({
         buildercontactEmail: entity?.contactEmail || "N/A",
         publishedAt: entity?.publishedAt || null,
       };
-
       const res = await fetch(apiEndpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

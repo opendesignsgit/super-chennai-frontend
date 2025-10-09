@@ -48,16 +48,18 @@ import {
   MapPin,
   Zap,
   Lightbulb,
-  DoorOpen, HandCoins , CreditCard, Handshake
+  DoorOpen,
+  HandCoins,
+  CreditCard,
+  Handshake,
 } from "lucide-react";
-
 
 const interiorIcons = {
   doorType: DoorOpen,
-  wardrobes: Package,         
+  wardrobes: Package,
   curtains: Sun,
-  modularKitchen: Sun, 
-  chimney: Zap, 
+  modularKitchen: Sun,
+  chimney: Zap,
   falseCeiling: Lightbulb,
   lighting: Lightbulb,
 };
@@ -695,111 +697,127 @@ const PropertyDetailPage = () => {
         )}
 
         {/* BATH ROOMS FETREE  */}
-        {property.bathroomFeatures && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Bathroom Features
-            </h2>
+        {property.bathroomFeatures &&
+          Object.values(property.bathroomFeatures).some(
+            (value) => value !== null && value !== false && value !== 0
+          ) && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Bathroom Features
+              </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Bath size={18} />
-                <span>Bathtubs: {property.bathroomFeatures.bathtubs || 0}</span>
-              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Bath size={18} />
+                  <span>
+                    Bathtubs: {property.bathroomFeatures.bathtubs || 0}
+                  </span>
+                </div>
 
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Flame size={18} />
-                <span>
-                  Jacuzzi: {property.bathroomFeatures.jacuzzi ? "Yes" : "No"}
-                </span>
-              </div>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Flame size={18} />
+                  <span>
+                    Jacuzzi: {property.bathroomFeatures.jacuzzi ? "Yes" : "No"}
+                  </span>
+                </div>
 
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Droplet size={18} />
-                <span>
-                  Heated Flooring:{" "}
-                  {property.bathroomFeatures.heatedFlooring ? "Yes" : "No"}
-                </span>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Droplet size={18} />
+                  <span>
+                    Heated Flooring:{" "}
+                    {property.bathroomFeatures.heatedFlooring ? "Yes" : "No"}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
 
         {/* APPLINCES £££ */}
 
-        {property.appliances && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Appliances
-            </h2>
+        {property.appliances &&
+          Object.values(property.appliances).some(
+            (value) => value !== null && value !== false && value !== 0
+          ) && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Appliances
+              </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
-              {Object.entries(property.appliances).map(([key, value]) => {
-                const Icon = applianceIcons[key] || HelpCircle;
-                return (
-                  <div
-                    key={key}
-                    className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
-                  >
-                    <Icon size={18} className="text-gray-500" />
-                    <span className="capitalize">
-                      {key.replace(/([A-Z])/g, " $1")}:{" "}
-                      {typeof value === "boolean"
-                        ? value
-                          ? "Yes"
-                          : "No"
-                        : value}
-                    </span>
-                  </div>
-                );
-              })}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
+                {Object.entries(property.appliances).map(([key, value]) => {
+                  const Icon = applianceIcons[key] || HelpCircle;
+                  return (
+                    <div
+                      key={key}
+                      className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
+                    >
+                      <Icon size={18} className="text-gray-500" />
+                      <span className="capitalize">
+                        {key.replace(/([A-Z])/g, " $1")}:{" "}
+                        {typeof value === "boolean"
+                          ? value
+                            ? "Yes"
+                            : "No"
+                          : value}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
         {/* RENTAL DETAILS £££ */}
-        {property.rentDetails && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Rent Details
-            </h2>
+        {property.rentDetails &&
+          Object.values(property.rentDetails).some(
+            (value) =>
+              value !== null &&
+              value !== false &&
+              value !== 0 &&
+              !(Array.isArray(value) && value.length === 0)
+          ) && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Rent Details
+              </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Banknote size={18} className="text-gray-400" />
-                <span>
-                  <strong>Monthly Rent:</strong>{" "}
-                  {property.rentDetails.monthlyRent?.toLocaleString() || "N/A"}
-                </span>
-              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Banknote size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Monthly Rent:</strong>{" "}
+                    {property.rentDetails.monthlyRent?.toLocaleString() ||
+                      "N/A"}
+                  </span>
+                </div>
 
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Wallet size={18} className="text-gray-400" />
-                <span>
-                  <strong>Security Deposit:</strong>{" "}
-                  {property.rentDetails.securityDeposit?.toLocaleString() ||
-                    "N/A"}
-                </span>
-              </div>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Wallet size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Security Deposit:</strong>{" "}
+                    {property.rentDetails.securityDeposit?.toLocaleString() ||
+                      "N/A"}
+                  </span>
+                </div>
 
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Wrench size={18} className="text-gray-400" />
-                <span>
-                  <strong>Maintenance Included:</strong>{" "}
-                  {property.rentDetails.maintenanceIncluded ? "Yes" : "No"}
-                </span>
-              </div>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Wrench size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Maintenance Included:</strong>{" "}
+                    {property.rentDetails.maintenanceIncluded ? "Yes" : "No"}
+                  </span>
+                </div>
 
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Users size={18} className="text-gray-400" />
-                <span>
-                  <strong>Preferred Tenants:</strong>{" "}
-                  {property.rentDetails.preferredTenants?.join(", ") || "N/A"}
-                </span>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Users size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Preferred Tenants:</strong>{" "}
+                    {property.rentDetails.preferredTenants?.join(", ") || "N/A"}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
 
         {/* NEAR BY  */}
 
@@ -826,83 +844,89 @@ const PropertyDetailPage = () => {
         )}
 
         {/* SEMI ROOMS  */}
-        {property.semiRooms && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Semi Rooms
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <BookOpen size={18} className="text-gray-400" />
-                <span>
-                  <strong>Study Room:</strong>{" "}
-                  {property.semiRooms.studyRoom ? "Yes" : "No"}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <User size={18} className="text-gray-400" />
-                <span>
-                  <strong>Servant Room:</strong>{" "}
-                  {property.semiRooms.servantRoom ? "Yes" : "No"}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Sparkles size={18} className="text-gray-400" />
-                <span>
-                  <strong>Pooja Room:</strong>{" "}
-                  {property.semiRooms.poojaRoom ? "Yes" : "No"}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Boxes size={18} className="text-gray-400" />
-                <span>
-                  <strong>Store Room:</strong>{" "}
-                  {property.semiRooms.storeRoom ? "Yes" : "No"}
-                </span>
+        {property.semiRooms &&
+          Object.values(property.semiRooms).some(
+            (value) => value !== null && value !== false
+          ) && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Semi Rooms
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <BookOpen size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Study Room:</strong>{" "}
+                    {property.semiRooms.studyRoom ? "Yes" : "No"}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <User size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Servant Room:</strong>{" "}
+                    {property.semiRooms.servantRoom ? "Yes" : "No"}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Sparkles size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Pooja Room:</strong>{" "}
+                    {property.semiRooms.poojaRoom ? "Yes" : "No"}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Boxes size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Store Room:</strong>{" "}
+                    {property.semiRooms.storeRoom ? "Yes" : "No"}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
 
         {/* PARKINK  */}
 
-        {property.parkingOutdoor && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Parking Details
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Car size={18} className="text-gray-400" />
-                <span>
-                  <strong>Covered Parking:</strong>{" "}
-                  {property.parkingOutdoor.coveredParking || 0}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Car size={18} className="text-gray-400" />
-                <span>
-                  <strong>Open Parking:</strong>{" "}
-                  {property.parkingOutdoor.openParking || 0}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Car size={18} className="text-gray-400" />
-                <span>
-                  <strong>Visitor Parking:</strong>{" "}
-                  {property.parkingOutdoor.visitorParking ? "Yes" : "No"}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <Car size={18} className="text-gray-400" />
-                <span>
-                  <strong>EV Charging:</strong>{" "}
-                  {property.parkingOutdoor.evCharging ? "Yes" : "No"}
-                </span>
+        {property.parkingOutdoor &&
+          Object.values(property.parkingOutdoor).some(
+            (value) => value !== null && value !== false && value !== 0
+          ) && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Parking Details
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Car size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Covered Parking:</strong>{" "}
+                    {property.parkingOutdoor.coveredParking || 0}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Car size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Open Parking:</strong>{" "}
+                    {property.parkingOutdoor.openParking || 0}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Car size={18} className="text-gray-400" />
+                  <span>
+                    <strong>Visitor Parking:</strong>{" "}
+                    {property.parkingOutdoor.visitorParking ? "Yes" : "No"}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                  <Car size={18} className="text-gray-400" />
+                  <span>
+                    <strong>EV Charging:</strong>{" "}
+                    {property.parkingOutdoor.evCharging ? "Yes" : "No"}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
 
         {/* PLOT AREA  */}
 
@@ -945,44 +969,47 @@ const PropertyDetailPage = () => {
         )}
 
         {/* INTERIOR  */}
-        {property.interiors && Object.keys(property.interiors).length > 0 && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Interiors / Furnishings
-            </h2>
+        {property.interiors &&
+          Object.values(property.interiors).some(
+            (value) => value !== null && value !== false && value !== ""
+          ) && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Interiors / Furnishings
+              </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-              {Object.entries(property.interiors).map(([key, value]) => {
-                const Icon = interiorIcons[key] || HelpCircle;
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                {Object.entries(property.interiors).map(([key, value]) => {
+                  const Icon = interiorIcons[key] || HelpCircle;
 
-                // Format display value
-                let displayValue = "";
-                if (typeof value === "boolean")
-                  displayValue = value ? "Yes" : "No";
-                else if (value === null || value === undefined)
-                  displayValue = "N/A";
-                else displayValue = value;
+                  // Format display value
+                  let displayValue = "";
+                  if (typeof value === "boolean")
+                    displayValue = value ? "Yes" : "No";
+                  else if (value === null || value === undefined)
+                    displayValue = "N/A";
+                  else displayValue = value;
 
-                // Optional: prettier label from key
-                const label = key
-                  .replace(/([A-Z])/g, " $1")
-                  .replace(/^./, (str) => str.toUpperCase());
+                  // Optional: prettier label from key
+                  const label = key
+                    .replace(/([A-Z])/g, " $1")
+                    .replace(/^./, (str) => str.toUpperCase());
 
-                return (
-                  <div
-                    key={key}
-                    className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
-                  >
-                    <Icon size={18} className="text-gray-500" />
-                    <span>
-                      <strong>{label}:</strong> {displayValue}
-                    </span>
-                  </div>
-                );
-              })}
+                  return (
+                    <div
+                      key={key}
+                      className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
+                    >
+                      <Icon size={18} className="text-gray-500" />
+                      <span>
+                        <strong>{label}:</strong> {displayValue}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
         {/* GREEN FETARES  */}
 
@@ -1072,7 +1099,7 @@ const PropertyDetailPage = () => {
                             className="mt-2 text-white text-sm leading-relaxed rounded-xl p-3"
                             style={{
                               backgroundColor: "rgba(163, 68, 147, 0.9)",
-                            }} 
+                            }}
                           >
                             <p>{f.answer}</p>
                           </div>

@@ -1,23 +1,12 @@
-export const chennaiAppData = [
+export const chennaiAppDataTravel = [
   {
-    id: -5,
+    id: 0,
     Company: "Chennai One (CUMTA)",
-    EventsCalendarTitle:
+    AppDescription:
       "All-in-one app for Chennai buses, metro, and train ticketing.",
-    EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
-    EventsCalendarMonth: "26 July",
-    EventsCalendarTime: "07:00 PM",
-    EventsCalendarCategory: "Comedy Shows",
-    image: "/images/chennai-app-images/chennai-one-app.jpg",
-    image1: "/images/NewsLetter/Times of india.jpeg",
+    appImage: "/images/chennai-app-images/chennai-one-app.jpg",
     link: "/events",
-    location: "Punch - Unpaid Therapist: Chennai",
-    language: "English",
-    hours: "1 hour 15 minutes",
-    ageLimit: "3 years +",
-    rleigion: "Comedy",
-    aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
-    popupContent: [
+    FeaturesContent: [
       <>Unified QR ticketing</>,
       <>Journey planner with shortest routes</>,
       <>Real-time metro & bus tracking</>,
@@ -25,42 +14,156 @@ export const chennaiAppData = [
       <>Single app for bus, metro, train, taxi</>,
       <>Multilingual interface</>,
     ],
-  },
-
-  {
-    id: -6,
-    Company: "The Hindu",
-    EventsCalendarTitle: "Pragg has been amazing this year....",
-    EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
-    EventsCalendarMonth: "26 July",
-    EventsCalendarTime: "07:00 PM",
-    EventsCalendarCategory: "Comedy Shows",
-    image: "/images/NewsLetter/The hindu.jpeg",
-    image1: "/images/NewsLetter/The hindu.jpeg",
-    link: "/events",
-    location: "Punch - Unpaid Therapist: Chennai",
-    language: "English",
-    hours: "1 hour 15 minutes",
-    ageLimit: "3 years +",
-    rleigion: "Comedy",
-    aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
-  },
-  {
-    id: -6,
-    Company: "The Hindu",
-    EventsCalendarTitle: "Pragg has been amazing this year....",
-    EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
-    EventsCalendarMonth: "26 July",
-    EventsCalendarTime: "07:00 PM",
-    EventsCalendarCategory: "Comedy Shows",
-    image: "/images/NewsLetter/The hindu.jpeg",
-    image1: "/images/NewsLetter/The hindu.jpeg",
-    link: "/events",
-    location: "Punch - Unpaid Therapist: Chennai",
-    language: "English",
-    hours: "1 hour 15 minutes",
-    ageLimit: "3 years +",
-    rleigion: "Comedy",
-    aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
+    serviceContent: [
+      <>Metro ticket booking</>,
+      <>MTC bus ticketing & passes</>,
+      <>Suburban train access</>,
+      <>Auto & taxi integration</>,
+      <>Trip history & receipts</>,
+      <>Complaint/feedback submission</>,
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=in.mobility.cumta",
+    IOSLink: "https://apps.apple.com/in/app/chennai-one/id1639603170",
+    WebsiteLink: "",
   },
 ];
+
+export const chennaiAppDataFood = [
+  {
+    id: 0,
+    Company: "Swiggy",
+    AppDescription: "Food, grocery, cakes, desserts delivery across Chennai.",
+    appImage: "/images/chennai-app-images/swiggy.jpg",
+    link: "/events",
+    FeaturesContent: [
+      <>Real-time order tracking</>,
+      <>Multiple payment options (UPI, card, wallet, cash)</>,
+      <>Restaurant ratings & reviews</>,
+      <>Scheduled delivery</>,
+      <>Offers, discounts, cashback</>,
+      <>Swiggy Genie for pickup/drop</>,
+      <>Personalized recommendations</>,
+      <>Order history & repeat ordering</>,
+    ],
+    serviceContent: [
+      <>Restaurant food delivery</>,
+      <>Grocery & essentials</>,
+      <>Cakes & desserts</>,
+      <>Parcel pickup/drop</>,
+      <>Medicine delivery</>,
+      <>Party & bulk orders</>,
+      <>Catering services</>,
+      <>Contactless delivery</>,
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=in.mobility.cumta",
+    IOSLink: "https://apps.apple.com/in/app/chennai-one/id1639603170",
+    WebsiteLink: "https://www.swiggy.com/",
+  },
+];
+
+export const chennaiAppDataGrocery = [
+  {
+    id: 0,
+    Company: "Blinkit",
+    AppDescription: "Ultra-fast groceries & daily essentials",
+    appImage: "/images/chennai-app-images/blinkit.jpg",
+    link: "/events",
+    FeaturesContent: [
+      <>Real-time order tracking</>,
+      <>Multiple payment options (UPI, card, wallet, cash)</>,
+      <>Restaurant ratings & reviews</>,
+      <>Scheduled delivery</>,
+      <>Offers, discounts, cashback</>,
+      <>Swiggy Genie for pickup/drop</>,
+      <>Personalized recommendations</>,
+      <>Order history & repeat ordering</>,
+    ],
+    serviceContent: [
+      <>Restaurant food delivery</>,
+      <>Grocery & essentials</>,
+      <>Cakes & desserts</>,
+      <>Parcel pickup/drop</>,
+      <>Medicine delivery</>,
+      <>Party & bulk orders</>,
+      <>Catering services</>,
+      <>Contactless delivery</>,
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=in.mobility.cumta",
+    IOSLink: "https://apps.apple.com/in/app/chennai-one/id1639603170",
+    WebsiteLink: "https://www.swiggy.com/",
+  },
+];
+
+export const chennaiAppDataParcelDelivery = [
+  {
+    id: 0,
+    Company: "Dunzo",
+    AppDescription:
+      "Pickup and delivery service for parcels, groceries, and food.",
+    appImage: "/images/chennai-app-images/dunzo.jpg",
+    link: "/events",
+    FeaturesContent: [
+      <>Real-time order tracking</>,
+      <>Multiple payment options (UPI, card, wallet, cash)</>,
+      <>Restaurant ratings & reviews</>,
+      <>Scheduled delivery</>,
+      <>Offers, discounts, cashback</>,
+      <>Swiggy Genie for pickup/drop</>,
+      <>Personalized recommendations</>,
+      <>Order history & repeat ordering</>,
+    ],
+    serviceContent: [
+      <>Restaurant food delivery</>,
+      <>Grocery & essentials</>,
+      <>Cakes & desserts</>,
+      <>Parcel pickup/drop</>,
+      <>Medicine delivery</>,
+      <>Party & bulk orders</>,
+      <>Catering services</>,
+      <>Contactless delivery</>,
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=in.mobility.cumta",
+    IOSLink: "https://apps.apple.com/in/app/chennai-one/id1639603170",
+    WebsiteLink: "https://www.swiggy.com/",
+  },
+];
+
+
+export const chennaiAppDataPorter = [
+  {
+    id: 0,
+    Company: "Porter",
+    AppDescription:
+      "On-demand movers and delivery service for furniture and heavy items.",
+    appImage: "/images/chennai-app-images/porter.jpg",
+    link: "/events",
+    FeaturesContent: [
+      <>Real-time order tracking</>,
+      <>Multiple payment options (UPI, card, wallet, cash)</>,
+      <>Restaurant ratings & reviews</>,
+      <>Scheduled delivery</>,
+      <>Offers, discounts, cashback</>,
+      <>Swiggy Genie for pickup/drop</>,
+      <>Personalized recommendations</>,
+      <>Order history & repeat ordering</>,
+    ],
+    serviceContent: [
+      <>Restaurant food delivery</>,
+      <>Grocery & essentials</>,
+      <>Cakes & desserts</>,
+      <>Parcel pickup/drop</>,
+      <>Medicine delivery</>,
+      <>Party & bulk orders</>,
+      <>Catering services</>,
+      <>Contactless delivery</>,
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=in.mobility.cumta",
+    IOSLink: "https://apps.apple.com/in/app/chennai-one/id1639603170",
+    WebsiteLink: "https://www.swiggy.com/",
+  },
+]; 

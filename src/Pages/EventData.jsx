@@ -4066,7 +4066,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   `,
   },
   {
-    url: "dj-nights-in-chennai-henrique-camacho-live-music-events",
+    url: "dj-nights-in-chennai-henrique-camacho-live-music",
     id: 159,
     RegisterLink: "",
     metaTitleEvent:
@@ -4245,7 +4245,8 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
-    url: "stand-up-comedy-show-in-chennai-thats-what-she-said",
+    url: "thats-what-she-said-stand-up-comedy-show-in-chennai",
+  
     id: 164,
     RegisterLink: "",
     metaTitleEvent: "Stand Up Comedy Show in Chennai / THATS WHAT SHE SAID",
@@ -7243,7 +7244,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Films",
+    category: "Writer",
   },
   {
     image: "/images/pride-of-chennai/sundar-pichai-business-tech.jpg",
@@ -7656,7 +7657,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Music",
+    category: "Music1",
   },
   {
     image: "/images/pride-of-chennai/santhanam-actor-comedian.jpg",
@@ -7697,7 +7698,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Music",
+    category: "Music1",
   },
   {
     image: "/images/pride-of-chennai/anirudh-ravichander-composer-musician.jpg",
@@ -7723,7 +7724,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Music",
+    category: "Music1",
   },
   {
     image: "/images/pride-of-chennai/vijay-yesudas-playback-singer.jpg",
@@ -7748,7 +7749,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Music",
+    category: "Music1",
   },
   {
     image: "/images/pride-of-chennai/chitra-visweswaran-dancer.jpg",

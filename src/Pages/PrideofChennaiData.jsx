@@ -42,35 +42,33 @@ export default function PrideofChennaiData() {
         "Squash",
         "Football",
         "Bodybuilding",
+        "Motorsport and Racing"
       ],
     },
     {
       label: "Entertainment",
       value: "entertainment",
-      subcategories: ["Films", "Music", "Dance", "Motorsport and Racing"],
-    },
-    {
-      label: "Culture & Religion",
-      value: "culture_religion",
-      subcategories: ["Religion",
-        //  "Culture"
-        ],
-    },
-    {
-      label: "Social / Tech / Chef",
-      value: "social_tech_chef",
-      subcategories: ["Social", "Tech", "Chef"],
-    },
-    {
-      label: "Science and Research",
-      value: "science_research",
-      subcategories: ["Science", "Research"],
+      subcategories: ["Writer", "Music", "Dance"],
     },
     // {
-    //   label: "Beauty & Fitness",
-    //   value: "beauty_fitness",
-    //   subcategories: [" Makeup Artists"],
+    //   label: "Culture & Religion",
+    //   value: "culture_religion",
+    //   subcategories: [
+    //     "Religion",
+      
+    //   ],
     // },
+    {
+      label: "Tech",
+      value: "social_tech_chef",
+      subcategories: [ "Tech"],
+    },
+    // {
+    //   label: "Science and Research",
+    //   value: "science_research",
+    //   subcategories: ["Science", "Research"],
+    // },
+
   ];
 
   const [popupIsOpen, setPopupIsOpen] = useState(false);
@@ -81,35 +79,6 @@ export default function PrideofChennaiData() {
   );
 
   const activeCategory = categories.find((cat) => cat.value === activeTab);
-
-  // const prideofchennaidata = [
-  //   {
-  //     image: "/images/pride-of-chennai/ashwin-pride.jpg",
-  //     name: "Mahesh Bhupathi - (Grand Slam Tennis Player)",
-  //     profession: "Chennai, Tamil Nadu.",
-  //     bornPlace: "Chennai, Tamil Nadu",
-  //     natureofWork: "Right-arm off-spin bowler, Right-hand lower-order batsman",
-  //     about:
-  //       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
-  //     knowmoreLink: "",
-  //     popupContent: [
-  //       <>
-  //         Ravichandran Ashwin's achievements include being the fastest Indian to
-  //         500 Test wickets, the only Indian to score a century and take five
-  //         wickets in the same Test on four occasions, holding the record for the
-  //         most Test wickets taken by an Indian bowler in India (383), and being
-  //         a key all-rounder with over 3,000 Test runs and over 750 international
-  //         wickets combined.
-  //       </>,
-  //       <>
-  //         He is also recognized for his unique bowling style, including the
-  //         "carrom ball," and his success across various formats of the game.
-  //       </>,
-  //     ],
-
-  //     category: "Cricketers",
-  //   },
-  // ];
 
   const handleCategoryClick = (category) => {
     setActiveTab(category.value);
@@ -125,14 +94,6 @@ export default function PrideofChennaiData() {
       setActiveSubTab("");
     }
   }, [activeTab]);
-
-  // useEffect(() => {
-  //   if (popupIsOpen) {
-  //     document.body.classList.add("popup-open");
-  //   } else {
-  //     document.body.classList.remove("popup-open");
-  //   }
-  // }, [popupIsOpen]);
 
   const handleStickyScroll = () => {
     const section = document.getElementById("fourthSection");
@@ -177,12 +138,11 @@ export default function PrideofChennaiData() {
                   activeTab === category.value ? "active" : ""
                 }`}
                 onClick={() => {
-                   window.scrollTo({ top: 500, behavior: "smooth" });
+                  window.scrollTo({ top: 500, behavior: "smooth" });
                   setActiveTab(category.value);
                   setActiveSubTab("");
                   // scrollToSection;
                   // mySectionRef.current.scrollTop = 0;
-                 
                 }}
               >
                 {category.label}

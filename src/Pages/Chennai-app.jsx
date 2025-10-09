@@ -1,3 +1,168 @@
+import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import PrideofChennaiData from "./PrideofChennaiData";
+import { AnimatePresence, motion } from "framer-motion";
+import { newsPhotos } from "./NewsData";
+
 export default function ChennaiApp() {
-  return <div>Chennai App Page</div>;
+  const [activeTab, setActiveTab] = useState("profile");
+  const mySectionRef = useRef(null);
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  const [activeSubTab, setActiveSubTab] = useState([]);
+
+  const tabs = [
+    { id: "profile", label: "Profile" },
+    { id: "settings", label: "Settings" },
+    { id: "users", label: "Users" },
+  ];
+  return (
+    <div>
+      <section className="accaodomationBannerSection">
+        <div>
+          <img src="/images/pride-of-chennai/pride-chennai-banner.jpg" alt="" />
+        </div>
+        <div className="accodoamationBannerContainer">
+          <div className="accodoamationBannerText">
+            <h3>Pride of Chennai</h3>
+            <div className="breadCrum">
+              <Link to="/">Home</Link> - <a href="">Pride of Chennai</a>{" "}
+            </div>
+          </div>
+        </div>
+        {/* <div className="notHomePageSearch">
+              <Search />
+            </div> */}
+      </section>
+
+      <div className="container max-w-7xl mx-auto">
+        <div className="flex items-start justify-center p-10">
+          <div className="w-full  bg-white shadow-lg flex">
+            {/* LEFT: Tabs */}
+            <div className="w-1/7 border-r border-gray-200">
+              <ul className="flex flex-col">
+                {tabs.map((tab) => (
+                  <li key={tab.id}>
+                    <button
+                      onClick={() => setActiveTab(tab.id)}
+                      className={`w-full text-left cursor-pointer px-6 py-2 font-medium transition-all ${
+                        activeTab === tab.id
+                          ? "bg-[#995098] text-white"
+                          : "hover:bg-gray-100 text-gray-700"
+                      }`}
+                    >
+                      {tab.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* RIGHT: Tab Content */}
+            <div className="w-6/7 p-4 chennaiAppTabContent">
+              {activeTab === "profile" && (
+                <>
+                  <div className="EventsListboxs flex flex-wrap">
+                    {newsPhotos.map((card, index) => (
+                      <div
+                        key={index}
+                        className="EventsItems bg-white cursor-pointer newsLetterImage"
+                        onClick={() => setSelectedCard(card)}
+                        style={{
+                          transition: "transform 0.3s",
+                        }}
+                      >
+                        <div
+                          className="relative w-full EventsItemImg"
+                          style={{
+                            boxShadow:
+                              "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+                          }}
+                        >
+                          <img
+                            src={card.image}
+                            alt={card.title}
+                            className="w-full object-cover"
+                          />
+                        </div>
+                        <div className="EventsIteCont flex flex-col items-start">
+                          <h2 className="titlePublished">{card.Company}</h2>
+                          <h3 className="EveItemtitles">
+                            <Link
+                              style={{ fontWeight: "600", color: "#434343" }}
+                              // to={card.link}
+                              onClick={() => setSelectedCard(card)}
+                              state={{ card }}
+                            >
+                              {`${card.EventsCalendarTitle.slice(0, 60)}...`}
+                            </Link>
+                            <div
+                              className="readMoreMainDiv"
+                              onClick={() => setSelectedCard(card)}
+                            >
+                              <Link
+                                onClick={() => setSelectedCard(card)}
+                                // to={card.link}
+                                className="ReadmoreNewArticles"
+                              >
+                                Click to View
+                              </Link>
+                            </div>
+                          </h3>
+                        </div>
+                        <div className="EventsIteCont flex flex-col items-start">
+                          <h3 className="text-lg font-semibold">
+                            {card.title}
+                          </h3>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+
+              {activeTab === "settings" && <>{/* <PrideofChennaiData /> */}</>}
+
+              {activeTab === "users" && <>{/* <PrideofChennaiData /> */}</>}
+            </div>
+          </div>
+        </div>
+
+        <AnimatePresence>
+          {selectedCard && (
+            <motion.div
+              className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <motion.div
+                className="bg-white p-6 rounded-xl w-auto relative popupSection"
+                initial={{ scale: 0.8, opacity: 0, y: 50 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                exit={{ scale: 0.8, opacity: 0, y: 50 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
+                <button
+                  className="absolute top-2 right-2 text-black text-xl font-bold cursor-pointer"
+                  onClick={() => setSelectedCard(null)}
+                >
+                  ×
+                </button>
+                <img
+                  src={selectedCard.image1}
+                  alt={selectedCard.title}
+                  className="w-full mb-4 rounded popupSection paddingSection"
+                />
+                <h2 className="text-2xl font-bold mb-2">
+                  {selectedCard.title}
+                </h2>
+                <p className="text-gray-600">{selectedCard.description}</p>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </div>
+  );
 }

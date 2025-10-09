@@ -4066,7 +4066,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   `,
   },
   {
-    url: "dj-nights-in-chennai-henrique-camacho-live-music-events",
+    url: "dj-nights-in-chennai-henrique-camacho-live-music",
     id: 159,
     RegisterLink: "",
     metaTitleEvent:
@@ -4245,7 +4245,8 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
   },
 
   {
-    url: "stand-up-comedy-show-in-chennai-thats-what-she-said",
+    url: "thats-what-she-said-stand-up-comedy-show-in-chennai",
+  
     id: 164,
     RegisterLink: "",
     metaTitleEvent: "Stand Up Comedy Show in Chennai / THATS WHAT SHE SAID",

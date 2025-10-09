@@ -9,7 +9,7 @@ export default function TopColleges() {
       sectionTitle: "Top Colleges in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/College/Image/top-colleges-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -57,7 +57,7 @@ export default function TopColleges() {
                   entrepreneurs, and civic leaders.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/College/icon/Overview.svg",
             },
           ],
         },
@@ -104,7 +104,7 @@ export default function TopColleges() {
                   </ul>
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Overview.svg",
             },
             {
               title: "Medical & Health Sciences",
@@ -130,7 +130,7 @@ export default function TopColleges() {
                   </ul>
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Overview.svg",
             },
           ],
         },

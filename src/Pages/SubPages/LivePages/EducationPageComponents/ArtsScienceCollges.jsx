@@ -9,7 +9,7 @@ export default function ArtsScienceColleges() {
       sectionTitle: "Arts, Science & Commerce Colleges in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/College/Image/arts-science-commerce-colleges-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -50,7 +50,7 @@ export default function ArtsScienceColleges() {
                   forefront of arts and liberal education in India.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/College/icon/Overview.svg",
             },
           ],
         },
@@ -84,7 +84,7 @@ export default function ArtsScienceColleges() {
                 </>,
                 ,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Government Support & Expansion.svg",
             },
             {
               title: "Admission Demand Highlights",
@@ -113,7 +113,7 @@ export default function ArtsScienceColleges() {
                 </>,
                 ,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Admission Demand Highlights.svg",
             },
             {
               title: "Autonomy & Curriculum Innovation",
@@ -130,7 +130,7 @@ export default function ArtsScienceColleges() {
 
                 ,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Autonomy & Curriculum Innovation.svg",
             },
           ],
         },
@@ -164,7 +164,7 @@ export default function ArtsScienceColleges() {
                   learning.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Why Choose Arts, Science & Commerce in Chennai_.svg",
             },
           ],
         },

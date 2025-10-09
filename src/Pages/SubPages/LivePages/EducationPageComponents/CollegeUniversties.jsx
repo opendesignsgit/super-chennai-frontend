@@ -9,7 +9,7 @@ export default function CollegeUniversities() {
       sectionTitle: "Colleges and Universities in Chennai",
       sectionDesc:
         "has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/College/Image/colleges-universities-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -50,7 +50,7 @@ export default function CollegeUniversities() {
                   economy.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/College/icon/Overview.svg",
             },
           ],
         },
@@ -89,7 +89,7 @@ export default function CollegeUniversities() {
                   </li>
                 </ul>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/University of Madras.svg",
             },
             {
               title: "2. Anna University",
@@ -105,7 +105,7 @@ export default function CollegeUniversities() {
                   <li>Known for: Engineering, technology, and architecture</li>
                 </ul>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Anna University Innovation Centre.svg",
             },
             {
               title: "3. Tamil Nadu Dr. MGR Medical University",
@@ -123,7 +123,7 @@ export default function CollegeUniversities() {
                   </li>
                 </ul>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Tamil Nadu Dr. MGR Medical University.svg",
             },
           ],
         },
@@ -155,7 +155,7 @@ export default function CollegeUniversities() {
                   </li>
                 </ul>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/IIT-Madras Research Park.svg",
             },
             {
               title: "2. SRM Institute of Science and Technology",
@@ -173,7 +173,7 @@ export default function CollegeUniversities() {
                   </li>
                 </ul>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/SRM Institute of Science and Technology.svg",
             },
             {
               title: "3. Sathyabama Institute of Science and Technology",
@@ -190,7 +190,7 @@ export default function CollegeUniversities() {
                   </li>
                 </ul>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Sathyabama Institute of Science and Technology.svg",
             },
             {
               title:
@@ -209,7 +209,7 @@ export default function CollegeUniversities() {
                   </li>
                 </ul>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Vellore Institute of Technology (VIT) - Chennai Campus.svg",
             },
 
             {
@@ -245,7 +245,7 @@ export default function CollegeUniversities() {
                   Promotes AYUSH and Indian systems of medicine
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Professional & Allied Institutions.svg",
             },
           ],
         },
@@ -279,7 +279,7 @@ export default function CollegeUniversities() {
                   </a>
                 </p>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Dual Degrees & Expanded Pathways.svg",
             },
             {
               title: "VETRI Schools: Bridging Learning & Aspirations",
@@ -299,7 +299,7 @@ export default function CollegeUniversities() {
                   </a>
                 </p>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/VETRI Schools_ Bridging Learning & Aspirations.svg",
             },
             {
               title: "Smart Campus Revamps",
@@ -318,7 +318,7 @@ export default function CollegeUniversities() {
                   </a>
                 </p>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Smart Campus Revamps.svg",
             },
             {
               title: "STEM Innovation for Schools",
@@ -337,7 +337,7 @@ export default function CollegeUniversities() {
                   </a>
                 </p>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/STEM Innovation for Schools.svg",
             },
             {
               title: "High-Level Dialogue on Higher Education",
@@ -355,7 +355,7 @@ export default function CollegeUniversities() {
                   </a>
                 </p>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/High-Level Dialogue on Higher Education.svg",
             },
             {
               title: "AI at School: Microsoft & TEALS Program",
@@ -367,7 +367,7 @@ export default function CollegeUniversities() {
                   training—marking a leap toward smart classroom futures.
                 </p>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Al at School_ Microsoft & TEALS Program.svg",
             },
             {
               title: "Vocational & Skill Development",
@@ -383,7 +383,7 @@ export default function CollegeUniversities() {
                   </li>
                 </ul>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Vocational & Skill Development.svg",
             },
             {
               title: "Special Education",
@@ -396,7 +396,7 @@ export default function CollegeUniversities() {
                   </li>
                 </ul>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Special Education.svg",
             },
           ],
         },

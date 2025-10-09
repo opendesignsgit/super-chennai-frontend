@@ -8,7 +8,7 @@ export default function IBSchool() {
       sectionTitle: "IB Schools in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/School/image/ib-schools-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -235,7 +235,7 @@ export default function IBSchool() {
                 "Group 5: Math AA / AI",
                 "Group 6: Visual Arts, Film, Theatre",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/School/Icons/subjects-offered-include.svg",
             },
             {
               title: "Fees & Admission Process",
@@ -258,7 +258,7 @@ export default function IBSchool() {
                   </span>
                 </div>
               ),
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/fees-&-admission-process.svg",
             },
             {
               title: "Chennai’s Edge in IB Education",
@@ -272,7 +272,7 @@ export default function IBSchool() {
               para3: [
                 "University Counseling: Dedicated career guidance cells help with admissions abroad—including SAT, UCAS, and Common App prep.",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/chennai's-edge-in-ib-education.svg",
             },
             {
               title: "Ideal for Families Who Want:",
@@ -286,7 +286,7 @@ export default function IBSchool() {
               para3: [
                 "An international career trajectory or early overseas relocation",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/ideal-for-families-who-want.svg",
             },
           ],
         },
@@ -321,7 +321,7 @@ export default function IBSchool() {
                   various age groups.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/overview.svg",
             },
           ],
         },
@@ -347,7 +347,7 @@ export default function IBSchool() {
                   supports holistic growth—intellectual, emotional, ethical.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/why-choose-an-ib-school-in-chennai_.svg",
             },
           ],
         },

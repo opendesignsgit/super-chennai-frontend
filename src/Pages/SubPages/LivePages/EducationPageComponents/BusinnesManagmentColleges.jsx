@@ -9,7 +9,7 @@ export default function BusinessManagementColleges() {
       sectionTitle: "Business & Management Colleges in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/College/Image/business-management-colleges-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -50,7 +50,7 @@ export default function BusinessManagementColleges() {
                   Option+4echoVME Digital+4CollegeDekho
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/College/icon/Overview.svg",
             },
           ],
         },
@@ -94,7 +94,7 @@ export default function BusinessManagementColleges() {
                   </ul>
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Key Admissions & ROI Highlights.svg",
             },
             {
               title: "Why B‑Schools in Chennai Stand Out",
@@ -131,7 +131,7 @@ export default function BusinessManagementColleges() {
                   vision.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Why B-Schools in Chennai Stand Out.svg",
             },
             {
               title: "Creative Arts, Design & Media",
@@ -154,7 +154,7 @@ export default function BusinessManagementColleges() {
                   </ul>
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Creative Arts, Design & Media.svg",
             },
             {
               title: "Emerging & Multidisciplinary Universities",
@@ -174,7 +174,7 @@ export default function BusinessManagementColleges() {
                   </ul>
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Emerging & Multidisciplinary Universities.svg",
             },
           ],
         },

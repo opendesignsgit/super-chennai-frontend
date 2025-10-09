@@ -7243,7 +7243,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Films",
+    category: "Writer",
   },
   {
     image: "/images/pride-of-chennai/sundar-pichai-business-tech.jpg",

@@ -7657,7 +7657,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Music",
+    category: "Music1",
   },
   {
     image: "/images/pride-of-chennai/santhanam-actor-comedian.jpg",
@@ -7698,7 +7698,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Music",
+    category: "Music1",
   },
   {
     image: "/images/pride-of-chennai/anirudh-ravichander-composer-musician.jpg",
@@ -7724,7 +7724,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Music",
+    category: "Music1",
   },
   {
     image: "/images/pride-of-chennai/vijay-yesudas-playback-singer.jpg",
@@ -7749,7 +7749,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Music",
+    category: "Music1",
   },
   {
     image: "/images/pride-of-chennai/chitra-visweswaran-dancer.jpg",

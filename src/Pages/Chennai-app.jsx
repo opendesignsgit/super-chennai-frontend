@@ -2,19 +2,24 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import PrideofChennaiData from "./PrideofChennaiData";
 import { AnimatePresence, motion } from "framer-motion";
-import { newsPhotos } from "./NewsData";
+import { chennaiAppData } from "./Chennai-app-Data";
 
 export default function ChennaiApp() {
-  const [activeTab, setActiveTab] = useState("profile");
+  const [activeTab, setActiveTab] = useState("Metro / Transit / Travel");
   const mySectionRef = useRef(null);
   const [selectedCard, setSelectedCard] = useState(null);
 
   const [activeSubTab, setActiveSubTab] = useState([]);
 
   const tabs = [
-    { id: "profile", label: "Profile" },
-    { id: "settings", label: "Settings" },
-    { id: "users", label: "Users" },
+    { id: "Metro / Transit / Travel", label: "Metro / Transit / Travel" },
+    {
+      id: "Food Delivery & Cake Delivery",
+      label: "Food Delivery & Cake Delivery",
+    },
+    { id: "Grocerry ", label: "Grocerry" },
+    { id: "Parcel / Courier ", label: "Parcel / Courier" },
+    { id: "Porter / Heavy Items", label: "Porter / Heavy Items" },
   ];
   return (
     <div>
@@ -35,11 +40,11 @@ export default function ChennaiApp() {
             </div> */}
       </section>
 
-      <div className="container max-w-7xl mx-auto">
+      <div className="container max-w-7xl mx-auto chennaiappscontainer">
         <div className="flex items-start justify-center p-10">
-          <div className="w-full  bg-white shadow-lg flex">
+          <div className="w-full  bg-white flex">
             {/* LEFT: Tabs */}
-            <div className="w-1/7 border-r border-gray-200">
+            <div className="w-1/7 border-r border-gray-200 sideBarChennaiApp">
               <ul className="flex flex-col">
                 {tabs.map((tab) => (
                   <li key={tab.id}>
@@ -60,10 +65,10 @@ export default function ChennaiApp() {
 
             {/* RIGHT: Tab Content */}
             <div className="w-6/7 p-4 chennaiAppTabContent">
-              {activeTab === "profile" && (
+              {activeTab === "Metro / Transit / Travel" && (
                 <>
                   <div className="EventsListboxs flex flex-wrap">
-                    {newsPhotos.map((card, index) => (
+                    {chennaiAppData.map((card, index) => (
                       <div
                         key={index}
                         className="EventsItems bg-white cursor-pointer newsLetterImage"
@@ -121,14 +126,16 @@ export default function ChennaiApp() {
                 </>
               )}
 
-              {activeTab === "settings" && <>{/* <PrideofChennaiData /> */}</>}
+              {activeTab === "Food Delivery & Cake Delivery " && (
+                <>{/* <PrideofChennaiData /> */}</>
+              )}
 
-              {activeTab === "users" && <>{/* <PrideofChennaiData /> */}</>}
+              {activeTab === "Grocerry " && <>{/* <PrideofChennaiData /> */}</>}
             </div>
           </div>
         </div>
 
-        <AnimatePresence>
+        {/* <AnimatePresence>
           {selectedCard && (
             <motion.div
               className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
@@ -158,6 +165,89 @@ export default function ChennaiApp() {
                   {selectedCard.title}
                 </h2>
                 <p className="text-gray-600">{selectedCard.description}</p>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence> */}
+        <AnimatePresence>
+          {selectedCard && (
+            <motion.div
+              className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 prideofchenaipopoupsection"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <motion.div
+                className="bg-white p-6 rounded-xl w-auto relative popupSection"
+                initial={{ scale: 0.8, opacity: 0, y: 50 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                exit={{ scale: 0.8, opacity: 0, y: 50 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
+                <div className="relative max-w-xl mx-auto bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex">
+                  {/* Blue Curved Strip */}
+                  <div className="w-2 rounded-l-xl bg-[#a44294]"></div>
+
+                  {/* Content */}
+                  <div className="relative w-full p-6 relativeSectionchennaiApp">
+                    {/* Close Button */}
+                    <button
+                      onClick={() => setSelectedCard(null)}
+                      className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-lg font-semibold popupTableCloseButton"
+                    >
+                      ×
+                    </button>
+
+                    <div
+                    //  className="flex gap-2"
+                    >
+                      <div className="chennaiAppPopupContents1">
+                        <h2 className="achievementsFonts font-semibold text-[#a44294] mb-4 ">
+                          Features
+                        </h2>
+                        <ul
+                          className={`list-disc pl-5 space-y-3 text-gray-800 text-base leading-relaxed  ${
+                            selectedCard.popupContent.length > 6
+                              ? "pride-of-chennai-row"
+                              : ""
+                          }`}
+                        >
+                          {selectedCard.popupContent.map((point, index) => (
+                            <li key={index}>{point}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="chennaiAppPopupContents1">
+                        <h2 className="achievementsFonts font-semibold text-[#a44294] mb-4 ">
+                          Services
+                        </h2>
+                        <ul
+                          className={`list-disc pl-5 space-y-3 text-gray-800 text-base leading-relaxed  ${
+                            selectedCard.popupContent.length > 6
+                              ? "pride-of-chennai-row"
+                              : ""
+                          }`}
+                        >
+                          {selectedCard.popupContent.map((point, index) => (
+                            <li key={index}>{point}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="chennaiAppPopupContents1">
+                        <h2 className="achievementsFonts font-semibold text-[#a44294] mb-4 ">
+                          Download Link
+                        </h2>
+
+                        <button class="cursor-pointer tabButton px-4 py-1 rounded font-semibold transition !bg-[#a44294] text-white !font-medium">
+                          For Andriod
+                        </button>
+                          <button style={{marginLeft:"10px"}} class="cursor-pointer tabButton px-4 py-1 rounded font-semibold transition !bg-[#a44294] text-white !font-medium">
+                          For IOS
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             </motion.div>
           )}

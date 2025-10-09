@@ -423,8 +423,7 @@
   text-decoration: underline;
 }
 
-.newGridHealthcare{
-  
+.newGridHealthcare {
 }
 
 .imgcolTitle h2 {
@@ -1891,6 +1890,68 @@ body.popup-open {
   height: 50vh;
   max-height: 50vh;
   overflow-y: scroll;
+}
+
+.sideBarChennaiApp {
+  width: 22%;
+  padding: 15px;
+  padding-bottom: 0;
+  background-color: #fff;
+  border: 1px solid #ced4dd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 120px;
+  align-self: flex-start;
+  height: max-content;
+}
+
+.sideBarChennaiApp ul li {
+  margin-bottom: 10px;
+}
+
+.chennaiAppTabContent {
+  padding-top: 0;
+}
+
+.chennaiAppTabContent .EventsIteCont {
+  padding-top: 5px;
+}
+
+.chennaiAppTabContent .readMoreMainDiv {
+  margin-top: 5px;
+}
+
+.chennaiAppTabContent .EventsItems {
+  margin-top: 0;
+}
+
+.chennaiAppTabContent .newsLetterImage img {
+  object-fit: scale-down;
+}
+
+.chennaiAppTabContent .titlePublished {
+  font-size: 12px;
+  padding: 5px 8px 3px 7px;
+}
+
+.chennaiappscontainer .popupSection {
+  height: auto !important;
+  width: 510px;
+  /* overflow-y: scroll;
+    height: 450px !important; */
+}
+
+.relativeSectionchennaiApp {
+  overflow-y: scroll;
+  height: 450px;
+}
+.chennaiAppPopupContents1 {
+  padding: 10px;
+}
+
+.chennaiappscontainer .EventsIteCont h3{
+  width: 100%;
 }
 
 @media (max-width: 880px) {

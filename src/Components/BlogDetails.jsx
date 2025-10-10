@@ -413,7 +413,7 @@ const BlogDetail = () => {
 
           {/* {console.log("blog",blog.description)} */}
           {/* Related Blogs Carousel */}
-          {/* {relatedBlogs.length > 0 && (
+          {relatedBlogs.length > 0 && (
             <div style={{ marginTop: "4rem" }}>
               <h2 style={{ marginBottom: "1rem" }}>Related Blogs</h2>
               <Slider {...sliderSettings}>
@@ -440,6 +440,7 @@ const BlogDetail = () => {
                           }}
                         />
 
+                        {/* Gradient Overlay */}
                         <div
                           style={{
                             position: "absolute",
@@ -452,6 +453,7 @@ const BlogDetail = () => {
                           }}
                         ></div>
 
+                        {/* Blog Title */}
                         <div className="titleTextExploreChennai">
                           {item.title}
                         </div>
@@ -461,7 +463,7 @@ const BlogDetail = () => {
                 ))}
               </Slider>
             </div>
-          )} */}
+          )}
         </div>
       </div>
     </>

@@ -9,7 +9,7 @@ export default function StateBoardSchool() {
       sectionTitle: "State Board Schools in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/School/image/igcse-schools-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -86,7 +86,7 @@ export default function StateBoardSchool() {
                   </strong>
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/overview.svg",
             },
           ],
         },
@@ -117,7 +117,7 @@ export default function StateBoardSchool() {
                   offered at high school level.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/why-choose-a-state-board-school-in-chennai_.svg",
             },
           ],
         },
@@ -139,7 +139,7 @@ export default function StateBoardSchool() {
                 "Over 1,500 schools in Chennai zone upgraded with projectors, digital boards, and audio-visual aids.",
                 "Content aligned with Samacheer Kalvi (Uniform System of School Education).",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/School/Icons/smart-classroom-&-ict-labs.svg",
             },
             {
               title: "Bridge Programs & NEP-Ready Modules",
@@ -152,7 +152,7 @@ export default function StateBoardSchool() {
               ],
 
               note3: <div></div>,
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/bridge-programs-&-nep-ready-modules.svg",
             },
             {
               title: "Civic & Environmental Literacy",
@@ -162,7 +162,7 @@ export default function StateBoardSchool() {
                 "Collaboration with Greater Chennai Corporation for health & wellness education.",
               ],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/civic-&-environmental-literaсу.svg",
             },
             {
               title: "Inclusive & Gender-Responsive Environment",
@@ -172,7 +172,7 @@ export default function StateBoardSchool() {
               ],
               para2: [],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/inclusive-&-gender-responsive-environment.svg",
             },
             {
               title: "Midday Meal Scheme + Nutrition",
@@ -182,7 +182,7 @@ export default function StateBoardSchool() {
               ],
               para2: [],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/midday-meal-scheme-+-nutrition.svg",
             },
             {
               title: "Curriculum & Structure",
@@ -207,7 +207,7 @@ export default function StateBoardSchool() {
                   </strong>
                 </div>
               ),
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/curriculum-&-structure.svg",
             },
             {
               title: "Stage & Focus Area",
@@ -221,7 +221,7 @@ export default function StateBoardSchool() {
               ],
 
               note3: <div></div>,
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/stage-&-focus-area.svg",
             },
           ],
         },

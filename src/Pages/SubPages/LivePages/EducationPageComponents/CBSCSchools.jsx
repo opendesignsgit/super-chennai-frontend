@@ -9,7 +9,7 @@ export default function CBSESchool() {
       sectionTitle: "CBSE Schools in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/School/image/cbse-schools-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -77,7 +77,7 @@ export default function CBSESchool() {
                 "Languages: English (core), Tamil/Hindi/Sanskrit/French options",
                 "Assessments: Formative & Summative (under NEP’s holistic report card)",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/School/Icons/curriculum-&-structure.svg",
             },
             {
               title: "Admission & Fee Insights",
@@ -102,7 +102,7 @@ export default function CBSESchool() {
                   </strong>
                 </div>
               ),
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/admission-&-fee-insights.svg",
             },
             {
               title: "Special Features in Chennai CBSE Schools",
@@ -119,7 +119,7 @@ export default function CBSESchool() {
               para4: [
                 "Smart Classrooms & Sports: Integrated sports coaching (chess, cricket, athletics) and multimedia classrooms.",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/special-features-in-chennai-cbse-schools.svg",
             },
           ],
         },
@@ -164,7 +164,7 @@ export default function CBSESchool() {
                   —especially in a metro like Chennai.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/overview.svg",
             },
           ],
         },
@@ -194,7 +194,7 @@ export default function CBSESchool() {
                   skills under the new National Education Policy (NEP 2020).
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/why-choose-a-cbse-school-in-chennai_.svg",
             },
           ],
         },

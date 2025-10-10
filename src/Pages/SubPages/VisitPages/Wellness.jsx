@@ -423,10 +423,12 @@ export default function Wellness() {
               <p>Visit &nbsp; in Chennai &nbsp; Visit &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3>Wellness </h3>
+              {/* <h3>Wellness </h3> */}
+              <h1>wellness clinic in chennai </h1>
               <p>
                 {" "}
-                Balance your body. Refresh your mind. Reconnect with your soul.{" "}
+                Balance your body. Refresh your mind. Reconnect with your
+                soul.{" "}
               </p>
               <p>
                 Chennai is not only a vibrant coastal metropolis but also a

@@ -262,7 +262,8 @@ export default function Visit() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Visit Chennai – Beaches, Biryani & Big City Vibes </h3>
+              {/* <h3>Visit Chennai – Beaches, Biryani & Big City Vibes </h3> */}
+              <h1>Visit in Chennai</h1>
               <p>
                 <strong>
                   Whether you're flying in for a weekend getaway, a work trip,

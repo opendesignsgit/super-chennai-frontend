@@ -348,7 +348,8 @@ export default function Residency() {
               <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3>Living in Chennai - Residential Properties in Chennai</h3>
+              {/* <h3>Residential Properties in Chennai</h3> */}
+              <h1>Residential Properties in Chennai</h1>
               <p>
                 Chennai is a city that welcomes all, with a wide spectrum of
                 housing options tailored to suit diverse lifestyles and budgets.
@@ -375,11 +376,19 @@ export default function Residency() {
                 Whether you're a working professional, a growing family, or
                 someone seeking a serene retirement, the city offers a lifestyle
                 that suits every need. With a wide array of housing options —
-                from gated community apartments in Chennai that offer security
-                and community living, to premium flats in Chennai equipped with
-                modern amenities, and even luxury villas in Chennai designed for
-                spacious, high-end comfort — there's a perfect home for every
-                aspiration.
+                from{" "}
+                <h3 className="seoPurposeClass">
+                  {" "}
+                  gated community apartments in Chennai
+                </h3>{" "}
+                that offer security and community living, to{" "}
+                <h2 className="seoPurposeClass">
+                  premium flats in Chennai
+                </h2>{" "}
+                equipped with modern amenities, and even{" "}
+                <h4 className="seoPurposeClass"> luxury villas in Chennai</h4>{" "}
+                designed for spacious, high-end comfort — there's a perfect home
+                for every aspiration.
               </p>
               <p>
                 Add to that excellent educational institutions, world-class
@@ -401,8 +410,8 @@ export default function Residency() {
       index % 3 === 0
         ? "pattern-a"
         : index % 3 === 1
-        ? "pattern-b"
-        : "pattern-c"
+          ? "pattern-b"
+          : "pattern-c"
     }`}
             key={index}
           >
@@ -444,8 +453,8 @@ export default function Residency() {
       index % 3 === 0
         ? "pattern-a"
         : index % 3 === 1
-        ? "pattern-b"
-        : "pattern-c"
+          ? "pattern-b"
+          : "pattern-c"
     }`}
             key={index}
           >
@@ -486,8 +495,8 @@ export default function Residency() {
       index % 3 === 0
         ? "pattern-a"
         : index % 3 === 1
-        ? "pattern-b"
-        : "pattern-c"
+          ? "pattern-b"
+          : "pattern-c"
     }`}
             key={index}
           >

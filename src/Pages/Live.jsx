@@ -225,7 +225,7 @@ export default function Live() {
               Regardless of whether you have chosen Chennai to stay or move from
               one area to another area, Super Chennai will be the best guide to
               explore the essentials. So that you could easily live a lively and
-              energetic life in Chennai.
+              energetic <h6 className="seoPurposeClass" >life in Chennai.</h6> 
             </p>
           </div>
 

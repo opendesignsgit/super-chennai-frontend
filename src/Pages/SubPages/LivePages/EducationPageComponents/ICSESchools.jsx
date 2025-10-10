@@ -8,7 +8,7 @@ export default function ICSESchool() {
       sectionTitle: "ICSE Schools in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/School/image/icse-schools-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -75,7 +75,7 @@ export default function ICSESchool() {
                 "Electives: Art, Drama, Music, Yoga, Physical Education",
                 "Language Options: English (mandatory), second language from Tamil, Hindi, French, Sanskrit (varies by school)",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/School/Icons/curriculum-features.svg",
             },
             {
               title: "Fee Structure",
@@ -96,7 +96,7 @@ export default function ICSESchool() {
                   </strong>
                 </div>
               ),
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/fee-structure.svg",
             },
             {
               title: "Who Should Consider IGCSE in Chennai?",
@@ -113,7 +113,7 @@ export default function ICSESchool() {
               para4: [
                 "Parents Preferring Skill-Based Education: With emphasis on real-world thinking and project work",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/who-should-consider-igcse-in-chennai_-1.svg",
             },
           ],
         },
@@ -136,7 +136,7 @@ export default function ICSESchool() {
                 "Schools like The School – KFI and Sishya integrate art, music, drama, and philosophy into the mainstream curriculum.",
                 "Interdisciplinary projects encourage storytelling, debate, and critical reasoning.",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/School/Icons/strong-community-&-values-education.svg",
             },
             {
               title: "English Proficiency & Global Communication",
@@ -149,7 +149,7 @@ export default function ICSESchool() {
               ],
 
               note3: <div></div>,
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/english-proficiency-&-global-communication.svg",
             },
             {
               title: "Well-Rounded Science & Lab Focus",
@@ -161,7 +161,7 @@ export default function ICSESchool() {
                 "Hands-on experience in physics, chemistry, and biology labs is a hallmark of ICSE pedagogy.",
               ],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/well-rounded-science-&-lab-focus.svg",
             },
             {
               title: "Second Language Diversity",
@@ -173,7 +173,7 @@ export default function ICSESchool() {
                 "This supports both local cultural integration and global readiness.",
               ],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/second-language-diversity.svg",
             },
             {
               title: "Project-Based Learning & Internal Assessments",
@@ -185,7 +185,7 @@ export default function ICSESchool() {
                 "Students often engage in independent research projects, presentations, and community reports.",
               ],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/project-based-learning-&-internal-assessments.svg",
             },
             {
               title: "Liberal Thinking and Civic Learning",
@@ -197,7 +197,7 @@ export default function ICSESchool() {
                 "Many are affiliated with NGOs or local civic projects (e.g., beach cleanups, heritage walks, tree plantation drives).",
               ],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/liberal-thinking-and-civic-learning.svg",
             },
             {
               title: "ISC Stream Continuity (Class 11 & 12)",
@@ -216,7 +216,7 @@ export default function ICSESchool() {
                 </ul>,
               ],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/isc-stream-continuity-(class-11&-12).svg",
             },
           ],
         },
@@ -254,7 +254,7 @@ export default function ICSESchool() {
                   opportunity.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/overview.svg",
             },
           ],
         },
@@ -282,7 +282,7 @@ export default function ICSESchool() {
                   Offers Hindi, Tamil, Sanskrit, and French in most schools.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/why-choose-icse-in-chennai_.svg",
             },
           ],
         },

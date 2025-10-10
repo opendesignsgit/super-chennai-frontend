@@ -4246,7 +4246,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
 
   {
     url: "thats-what-she-said-stand-up-comedy-show-in-chennai",
-  
+
     id: 164,
     RegisterLink: "",
     metaTitleEvent: "Stand Up Comedy Show in Chennai / THATS WHAT SHE SAID",
@@ -5477,7 +5477,8 @@ Stall bookings are now open — don’t miss your chance to join!
     EventsCalendarCategory: "Hands-on Gardening Workshop",
     image: "/images/HomePage-Images/Events/Newevents/325.jpg",
     link: "/events",
-    location: "Deep Blue Stories, Muktha, No. 27, Cholamandal Artists Village, Injambakkam, ECR, Chennai",
+    location:
+      "Deep Blue Stories, Muktha, No. 27, Cholamandal Artists Village, Injambakkam, ECR, Chennai",
     language: "",
     hours: "3 hours",
     ageLimit: "5+ years",
@@ -5578,7 +5579,8 @@ Experience a Parisian-inspired night of creativity in Chennai Venue: Alliance Fr
     EventsCalendarCategory: "Navratri Celebration Camp",
     image: "/images/HomePage-Images/Events/Newevents/317.jpg",
     link: "/events",
-    location: "Deep Blue Stories, Muktha, No. 27, Cholamandal Artists Village, Injambakkam, ECR, Chennai",
+    location:
+      "Deep Blue Stories, Muktha, No. 27, Cholamandal Artists Village, Injambakkam, ECR, Chennai",
     language: "",
     hours: "",
     ageLimit: "5+ years",
@@ -5610,11 +5612,12 @@ Small group with limited spaces, ensuring personal attention
     `,
   },
 
-   {
+  {
     url: "singles-mixer-womens-concert-social-evening",
     id: 201,
     RegisterLink: "",
-    metaTitleEvent: "Singles Mixer / Musical Evening for Women / Social Gathering",
+    metaTitleEvent:
+      "Singles Mixer / Musical Evening for Women / Social Gathering",
     metaDescriptionEvent:
       "Celebrate a lively evening with a singles mixer, musical evening for women, and a social gathering filled with music, fun, and meaningful connections.",
     conicallinkEvent: "/eventsdetails/201",
@@ -5650,7 +5653,7 @@ Enjoy a fun, social evening in a relaxed, safe setting
 Personalized experience: Hosts will contact attendees for personality questionnaires to curate the event better. 
     `,
   },
-   {
+  {
     url: "chengai-mini-marathon-2025",
     id: 202,
     RegisterLink: "",
@@ -5717,7 +5720,8 @@ Ideal for all age groups, from kids to adults
       "Tamil Nadu Yoga Championship 2025 brings together rising stars and young achievers for a spirited contest of flexibility, focus, and endurance.",
     conicallinkEvent: "/eventsdetails/203",
     siteLink: "https://tickets.kynhood.com/event/68ad826cf33b64ec4246e9a8",
-    EventsCalendarTitle: "Tamilnadu Open State Level Inter School Yoga Championship- 2025",
+    EventsCalendarTitle:
+      "Tamilnadu Open State Level Inter School Yoga Championship- 2025",
     EventsCalendarContent:
       "Arranged by ABS Group of Schools to display yoga proficiency, strength, and versatility",
     EventsCalendarMonth: "12 Oct 2025",
@@ -5725,7 +5729,8 @@ Ideal for all age groups, from kids to adults
     EventsCalendarCategory: "Yoga",
     image: "/images/HomePage-Images/Events/Newevents/329.jpg",
     link: "/events",
-    location: "ABS Global Smart School, Avadi Venue: ABS Global Smart School, Avadi",
+    location:
+      "ABS Global Smart School, Avadi Venue: ABS Global Smart School, Avadi",
     language: "",
     hours: "",
     ageLimit: "25–40 years",
@@ -5776,7 +5781,7 @@ Compete with talented students from across Tamil Nadu
 Earn recognition, awards, and a chance to become Champion of Champions
     `,
   },
-   {
+  {
     url: "sports-aquatic-championship",
     id: 204,
     RegisterLink: "",
@@ -5822,11 +5827,12 @@ Compete with swimmers from various age groups and skill levels
 Celebrate your achievements with medals, certificates, and trophies 
     `,
   },
-   {
+  {
     url: "diwali-workshop-festival-of-lights-celebration",
     id: 205,
     RegisterLink: "",
-    metaTitleEvent: "Diwali Workshop / Festival of Lights Celebration / Super Chennai",
+    metaTitleEvent:
+      "Diwali Workshop / Festival of Lights Celebration / Super Chennai",
     metaDescriptionEvent:
       "Celebrate the Festival of Lights with a Diwali workshop full of crafts, diya painting, rangoli, and fun activities for kids to enjoy the festive spirit.",
     conicallinkEvent: "/eventsdetails/205",
@@ -5839,7 +5845,8 @@ Celebrate your achievements with medals, certificates, and trophies
     EventsCalendarCategory: "Workshop",
     image: "/images/HomePage-Images/Events/Newevents/338.jpg",
     link: "/events",
-    location: "Deep Blue Stories, Muktha, No. 27, Cholamandal Artists Village, Injambakkam, ECR, Chennai",
+    location:
+      "Deep Blue Stories, Muktha, No. 27, Cholamandal Artists Village, Injambakkam, ECR, Chennai",
     language: "",
     hours: "",
     ageLimit: "5+ years",
@@ -5870,12 +5877,14 @@ Limited seats — ensure your child’s spot before it’s filled!
     url: "the-art-affair-clay-mirror-art-craft",
     id: 206,
     RegisterLink: "",
-    metaTitleEvent: "The Art Affair Clay Workshop / Mirror Art & Craft / Super Chennai",
+    metaTitleEvent:
+      "The Art Affair Clay Workshop / Mirror Art & Craft / Super Chennai",
     metaDescriptionEvent:
       "The Art Affair Clay Workshop invites craft lovers to shape clay into elegant mirror art & craft pieces. Join hands-on learning, creativity, and a take-home keepsake.",
     conicallinkEvent: "/eventsdetails/206",
     siteLink: "https://tickets.kynhood.com/event/68cd2a84fb750f65b4819022",
-    EventsCalendarTitle: "Clay Mirror Art/ Dot Mandala Workshop - By Sanat Crafts n Canvas",
+    EventsCalendarTitle:
+      "Clay Mirror Art/ Dot Mandala Workshop - By Sanat Crafts n Canvas",
     EventsCalendarContent:
       "Discover the traditional charm of clay mirror artistry at The Art Affair Clay Workshop.",
     EventsCalendarMonth: "12 Oct 2025",
@@ -5904,11 +5913,12 @@ All materials, tools, paints, clay & mirrors supplied at the venue
 No prior skills required – just bring creativity and excitement
     `,
   },
-   {
+  {
     url: "handwriting-competition-students-contest-2025",
     id: 207,
     RegisterLink: "",
-    metaTitleEvent: "Handwriting Competition / Students Contest 2025 / Super Chennai",
+    metaTitleEvent:
+      "Handwriting Competition / Students Contest 2025 / Super Chennai",
     metaDescriptionEvent:
       "Join the Handwriting Competition Students Contest 2025, a platform for students to exhibit artistic penmanship and writing talent.",
     conicallinkEvent: "/eventsdetails/207",
@@ -5954,7 +5964,7 @@ All Participants: Medal + Participation Certificate + Gift Voucher
 
     `,
   },
-   {
+  {
     url: "3d-miniature-art-craft-workshop",
     id: 208,
     RegisterLink: "",
@@ -5963,7 +5973,8 @@ All Participants: Medal + Participation Certificate + Gift Voucher
       "Discover the joy of crafting mini wonders at the 3D miniature art & craft workshop—perfect for hobbyists and creative minds alike.",
     conicallinkEvent: "/eventsdetails/208",
     siteLink: "https://tickets.kynhood.com/event/68c7e7b77d5b8041e4a7a9d3",
-    EventsCalendarTitle: "3D Miniature & Quill Art Workshop - by Aesthete Artistry",
+    EventsCalendarTitle:
+      "3D Miniature & Quill Art Workshop - by Aesthete Artistry",
     EventsCalendarContent:
       "Art & Craft Workshop: A creative experience blending tradition and fun",
     EventsCalendarMonth: "12 Oct 2025",
@@ -5989,7 +6000,7 @@ Special Benefits: Early registrations enjoy exclusive discounts
 Relax & Enjoy: An engaging session to create, connect, and have fun
     `,
   },
-   {
+  {
     url: "tapestry-weaving-workshop-craft-creation",
     id: 209,
     RegisterLink: "",
@@ -7058,30 +7069,30 @@ export const prideofchennaidata = [
 
     category: "Bodybuilding",
   },
-  {
-    image: "/images/pride-of-chennai/bharat-raj-body-builder.jpg",
-    name: "Bharat Raj (Body Builder)",
-    profession: "Chennai, Tamil Nadu.",
-    bornPlace: "Chennai, Tamil Nadu",
-    natureofWork: " Bodybuilder; Contemporary fitness athlete",
-    about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
-    knowmoreLink: "",
-    popupContent: [
-      <>
-        Chennai’s popular bodybuilder and social media influencer, originally a
-        basketball player, turned to bodybuilding after injuries and now runs
-        The Body Studio.{" "}
-      </>,
+  // {
+  //   image: "/images/pride-of-chennai/bharat-raj-body-builder.jpg",
+  //   name: "Bharat Raj (Body Builder)",
+  //   profession: "Chennai, Tamil Nadu.",
+  //   bornPlace: "Chennai, Tamil Nadu",
+  //   natureofWork: " Bodybuilder; Contemporary fitness athlete",
+  //   about:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+  //   knowmoreLink: "",
+  //   popupContent: [
+  //     <>
+  //       Chennai’s popular bodybuilder and social media influencer, originally a
+  //       basketball player, turned to bodybuilding after injuries and now runs
+  //       The Body Studio.{" "}
+  //     </>,
 
-      <>
-        With 81,000 Instagram followers, he is recognized among Chennai’s top 25
-        most desirable men.
-      </>,
-    ],
+  //     <>
+  //       With 81,000 Instagram followers, he is recognized among Chennai’s top 25
+  //       most desirable men.
+  //     </>,
+  //   ],
 
-    category: "Bodybuilding",
-  },
+  //   category: "Bodybuilding",
+  // },
   {
     image: "/images/pride-of-chennai/aditya-patel-racing-driver.jpg",
     name: "Aditya Patel (Racing Driver)",
@@ -7092,14 +7103,44 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
+      <>Won the JK Tyre Junior National Karting Championship in 2001.</>,
+
       <>
-        Asmitha Neelamegam began her career as a child actor but later shifted
-        to makeup, founding her academy in Saligramam, Chennai in 2018.
+        Made international racing debut in Formula BMW Pacific Championship
+        (2008) with a podium finish.
       </>,
 
       <>
-        Since then, over 12,000 students have trained under her in self-grooming
-        and makeup artistry.
+        Competed in Volkswagen Scirocco R-Cup, securing 2 wins and 2 podiums.
+      </>,
+
+      <>Won the SP4T category at the 24 Hours of Nürburgring in 2012.</>,
+
+      <>Raced in ADAC GT Masters series in Germany with Team MS Racing.</>,
+
+      <>
+        Podium finishes in the International GT Open Series, finishing 6th in
+        GT3 Pro-Am category (2014).
+      </>,
+
+      <>
+        Competed in Audi R8 LMS Cup in Asia, winning the final race of the 2015
+        season.
+      </>,
+
+      <>
+        Achieved multiple podiums in Blancpain GT Series Asia (2017), narrowly
+        missing the championship by 1 point.
+      </>,
+
+      <>
+        Co-founded the Indian Racing League (2019) to promote motorsport in
+        India.
+      </>,
+
+      <>
+        Instrumental in launching Formula Regional Indian Championship and F4
+        Indian Championship (2022) for Indian drivers.
       </>,
     ],
 
@@ -7131,53 +7172,53 @@ export const prideofchennaidata = [
 
     category: "Motorsport and Racing",
   },
-  {
-    image: "/images/pride-of-chennai/rajini-krishnan-motorsport.jpg",
-    name: "Rajini Krishnan (Motorsport)",
-    profession: "Chennai, Tamil Nadu.",
-    bornPlace: "Chennai, Tamil Nadu",
-    natureofWork: "Professional Motorcycle Racer",
-    about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
-    knowmoreLink: "",
-    popupContent: [
-      <>
-        He became national road racing champion in 2003 and went on to win eight
-        more National titles till 2011 and, after 10 years he won the 2021
-        National title again on 05/02/2022, as the championship was delayed due
-        to COVID-19.
-      </>,
-    ],
+  // {
+  //   image: "/images/pride-of-chennai/rajini-krishnan-motorsport.jpg",
+  //   name: "Rajini Krishnan (Motorsport)",
+  //   profession: "Chennai, Tamil Nadu.",
+  //   bornPlace: "Chennai, Tamil Nadu",
+  //   natureofWork: "Professional Motorcycle Racer",
+  //   about:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+  //   knowmoreLink: "",
+  //   popupContent: [
+  //     <>
+  //       He became national road racing champion in 2003 and went on to win eight
+  //       more National titles till 2011 and, after 10 years he won the 2021
+  //       National title again on 05/02/2022, as the championship was delayed due
+  //       to COVID-19.
+  //     </>,
+  //   ],
 
-    category: "Motorsport and Racing",
-  },
-  {
-    image: "/images/pride-of-chennai/mahaveer-raghunathan-racing-driver.jpg",
-    name: "Mahaveer Raghunathan (Racing Driver)",
-    profession: "Chennai, Tamil Nadu.",
-    bornPlace: "Chennai, Tamil Nadu",
-    natureofWork: "Professional Racing Driver, Formula Series",
-    about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
-    knowmoreLink: "",
-    popupContent: [
-      <>
-        Raghunathan started his racing career in karting in 2012, where he
-        remained active until 2013.
-      </>,
+  //   category: "Motorsport and Racing",
+  // },
+  // {
+  //   image: "/images/pride-of-chennai/mahaveer-raghunathan-racing-driver.jpg",
+  //   name: "Mahaveer Raghunathan (Racing Driver)",
+  //   profession: "Chennai, Tamil Nadu.",
+  //   bornPlace: "Chennai, Tamil Nadu",
+  //   natureofWork: "Professional Racing Driver, Formula Series",
+  //   about:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+  //   knowmoreLink: "",
+  //   popupContent: [
+  //     <>
+  //       Raghunathan started his racing career in karting in 2012, where he
+  //       remained active until 2013.
+  //     </>,
 
-      <>
-        He also made his formula racing debut in 2012 in four races of the JK
-        Racing Asia Series for the Meco Racing team.
-      </>,
+  //     <>
+  //       He also made his formula racing debut in 2012 in four races of the JK
+  //       Racing Asia Series for the Meco Racing team.
+  //     </>,
 
-      <>
-        In 2013, he competed in the MRF Challenge Formula 1600, finishing sixth.
-      </>,
-    ],
+  //     <>
+  //       In 2013, he competed in the MRF Challenge Formula 1600, finishing sixth.
+  //     </>,
+  //   ],
 
-    category: "Motorsport and Racing",
-  },
+  //   category: "Motorsport and Racing",
+  // },
   {
     image: "/images/pride-of-chennai/alisha-abdullah-motorsport-racing.jpg",
     name: "Alisha Abdullah (Motorsport / Racing)",
@@ -7213,34 +7254,69 @@ export const prideofchennaidata = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
     knowmoreLink: "",
     popupContent: [
+      // <>
+      //   R.K. Narayan won the Sahitya Akademi Award in 1960 for his novel The
+      //   Guide.
+      // </>,
+
+      // <>
+      //   He received the Filmfare Award for Best Story when The Guide was adapted
+      //   into a film.
+      // </>,
+
+      // <>
+      //   In 1964, he was honoured with the Padma Bhushan during the Republic Day
+      //   awards.
+      // </>,
+
+      // <>
+      //   Throughout his career, he won numerous literary awards recognizing his
+      //   contributions to Indian literature.
+      // </>,
+
+      // <>
+      //   He became one of India’s most celebrated English-language authors,
+      //   inspiring generations of readers and writers.
+      // </>,
+
+      // <>
+      //   His works have been widely translated and adapted, bringing Indian
+      //   storytelling to a global audience.
+      // </>,
+
       <>
-        R.K. Narayan won the Sahitya Akademi Award in 1960 for his novel The
-        Guide.
+        Pioneer of Indian English Literature – Among the first writers to
+        popularize Indian themes in English.
       </>,
 
       <>
-        He received the Filmfare Award for Best Story when The Guide was adapted
-        into a film.
+        Created “Malgudi” – A fictional town that became iconic in Indian
+        literature.
       </>,
 
       <>
-        In 1964, he was honoured with the Padma Bhushan during the Republic Day
+        Author of “Swami and Friends” (1935) – His debut novel, praised
+        worldwide.
+      </>,
+
+      <>
+        Padma Bhushan (1964) & Padma Vibhushan (2001) – India’s high civilian
         awards.
       </>,
 
       <>
-        Throughout his career, he won numerous literary awards recognizing his
-        contributions to Indian literature.
+        Sahitya Akademi Award (1961) – For his novel The Guide, which was later
+        adapted into a famous Hindi film.
       </>,
 
       <>
-        He became one of India’s most celebrated English-language authors,
-        inspiring generations of readers and writers.
+        Elected Member of Rajya Sabha (1989–1995) – Contributed to education and
+        literature discussions.
       </>,
 
       <>
-        His works have been widely translated and adapted, bringing Indian
-        storytelling to a global audience.
+        International Recognition – Admired by authors like Graham Greene, and
+        nominated for the Nobel Prize in Literature multiple times.
       </>,
     ],
 
@@ -8082,4 +8158,512 @@ export const prideofchennaidata = [
 
     category: "Chef",
   },
-];  
+
+  {
+    image: "/images/pride-of-chennai/ilayaraja.jpg",
+    name: "Ilaiyaraaja",
+    profession: "Chennai, Tamil Nadu.",
+    bornPlace: "Chennai, Tamil Nadu",
+    natureofWork: "Music Composer / Singer",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>Composed music for 1,000+ films across multiple Indian languages</>,
+
+      <>Created 7,000+ songs in his career</>,
+
+      <>
+        First Asian to compose a full symphony with Royal Philharmonic
+        Orchestra, London (1993)
+      </>,
+
+      <>
+        Won 5 National Film Awards for Best Music Direction & Background Score
+      </>,
+
+      <>Honoured with Padma Bhushan (2010) and Padma Vibhushan (2018)</>,
+
+      <>
+        Famous for blending Western classical with Indian folk & Carnatic music
+      </>,
+
+      <>Known worldwide as “Isaignani” (Musical Genius) & Maestro</>,
+    ],
+
+    category: "Music",
+  },
+
+  {
+    image: "/images/pride-of-chennai/aravind-srinivas.jpg",
+    name: "Aravind Srinivas",
+    profession: "Chennai, Tamil Nadu.",
+    bornPlace: "Chennai, Tamil Nadu",
+    natureofWork:
+      "Co-founder and CEO of Perplexity AI, a next-generation conversational search platform",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Ranked as India’s youngest billionaire in the Hurun India Rich List 2025
+        with an estimated fortune of ₹21,190 crore
+      </>,
+
+      <>
+        Founded Perplexity AI in 2022, an AI-driven search engine that delivers
+        context-rich, human-like answers
+      </>,
+
+      <>
+        Completed Electrical Engineering at IIT Madras and later pursued a PhD
+        in Computer Science at UC Berkeley
+      </>,
+
+      <>
+        Gained professional experience with leading global AI and technology
+        organizations before launching Perplexity
+      </>,
+
+      <>
+        Under his leadership, Perplexity AI grew rapidly, becoming a strong
+        competitor in the global search and AI industry
+      </>,
+
+      <>
+        Honoured as one of the most promising young leaders in the field of
+        technology and innovation
+      </>,
+    ],
+
+    category: "Tech",
+  },
+
+  {
+    image: "/images/pride-of-chennai/muthulakshmi-reddy.jpg",
+    name: "Muthu Lakshmi Reddy",
+    profession: "Pudukottai, Tamil Nadu.",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: "Social Reformer, Doctor, Politician",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        First woman legislator in India – Elected to the Madras Legislative
+        Council in 1927.
+      </>,
+
+      <>
+        Founder of Adyar Cancer Institute (1954) along with Dr. Krishnamurthi.
+      </>,
+
+      <>
+        Actively worked to abolish the Devadasi system and fought against child
+        marriage.
+      </>,
+
+      <>Promoted women’s education, health, and empowerment in Tamil Nadu.</>,
+
+      <>
+        Received the Padma Bhushan (1956) for social work and contribution to
+        medicine.
+      </>,
+
+      <>
+        Advocated for women’s rights and gender equality through social reforms
+        and legislation.
+      </>,
+
+      <>
+        Mentored several women leaders and healthcare professionals in India.
+      </>,
+    ],
+
+    category: "Social Researcher",
+  },
+  {
+    image: "/images/pride-of-chennai/v-shantha.jpg",
+    name: "V. Santha",
+    profession: "Chennai, Tamil Nadu.",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: "Oncologist, Chairperson of Cancer Institute (WIA), Chennai",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Pioneered cancer care in India by transforming the Cancer Institute
+        (WIA), Chennai, from a 12-bed facility in 1955 into a world-class cancer
+        center.
+      </>,
+
+      <>
+        Established the Tamil Nadu Cancer Registry Project, covering 80 million
+        people, making it the largest registry globally.
+      </>,
+
+      <>
+        Served on international health committees, including the WHO Advisory
+        Committee on Cancer and the IARC Scientific Council.
+      </>,
+
+      <>
+        Honored with major awards: Padma Vibhushan (2016), Padma Bhushan (2006),
+        Padma Shri (1986), and the Ramon Magsaysay Award (2005).
+      </>,
+
+      <>
+        Advocated for affordable cancer treatment, ensuring 60% of patients at
+        the Cancer Institute received free or subsidized care.
+      </>,
+
+      <>
+        Mentored future leaders in oncology, contributing to the development of
+        specialists and scientists in cancer research and treatment.
+      </>,
+
+      <>
+        Dedicated her life to service, living within the Cancer Institute and
+        exemplifying lifelong commitment to cancer care.
+      </>,
+    ],
+
+    category: "Medicine / Oncology",
+  },
+
+  {
+    image: "/images/pride-of-chennai/ms-subbulakshmi.jpg",
+    name: "Ms. Subu Lakshmi",
+    profession: "Madurai, Tamil Nadu.",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: "Carnatic Singer, Musician",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>First musician in India to receive the Bharat Ratna (1998).</>,
+
+      <>
+        First Indian musician to perform at the United Nations General Assembly
+        (1966).
+      </>,
+
+      <>
+        Awarded Padma Bhushan (1954) and Padma Vibhushan (1975) for her
+        contributions to music.
+      </>,
+
+      <>
+        Won the Ramon Magsaysay Award (1974) for public service through music.
+      </>,
+
+      <>
+        Known as the “Nightingale of India” for her soulful Carnatic
+        performances.
+      </>,
+
+      <>
+        Performed globally, promoting Indian classical music internationally.
+      </>,
+
+      <>
+        Recorded numerous devotional albums, popularizing compositions of
+        Tyagaraja, Muthuswami Dikshitar, and Papanasam Sivan.
+      </>,
+    ],
+
+    category: "Singer",
+  },
+
+  {
+    image: "/images/pride-of-chennai/narain-karthikeyan.jpg",
+    name: "Narain Karthikeyan",
+    profession: "Coimbatore, Tamil Nadu.",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: " Professional Racing Driver (Formula One, Motorsport)",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        India’s first Formula One driver (2005) with Jordan Formula One Team.
+      </>,
+
+      <>Competed in 19 Formula One races during his career.</>,
+
+      <>
+        Won Formula Asia and British Formula Ford Championships in his early
+        career.
+      </>,
+
+      <>Represented India in the A1 Grand Prix World Cup of Motorsport.</>,
+
+      <>Raced for HRT Formula One Team in 2011 and 2012.</>,
+
+      <>First Indian to race in NASCAR Camping World Truck Series.</>,
+
+      <>Competed in Superleague Formula and Formula Nippon series.</>,
+
+      <>Awarded the Padma Shri in 2010 for his contribution to motorsport.</>,
+
+      <>Inspired future Indian racers like Jehan Daruvala and Arjun Maini.</>,
+
+      <>Actively promotes and mentors motorsport talent in India.</>,
+    ],
+
+    category: "Motorsport and Racing",
+  },
+
+  {
+    image: "/images/pride-of-chennai/viswanathan-anand.jpg",
+    name: "V.Anand",
+    profession: "Mayiladuthurai, Tamil Nadu.",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork:
+      "Chess Grandmaster, Former World Chess Champion, and India’s first chess superstar.",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        First Indian Grandmaster: Achieved the title in 1988 at the age of 18.
+      </>,
+
+      <>
+        World Chess Champion: Won the FIDE World Chess Championship in 2000, and
+        the undisputed title in 2007, 2008, 2010, and 2012.
+      </>,
+
+      <>
+        Rapid Chess Specialist: Known as the "Lightning Kid" for his prowess in
+        rapid and blitz formats.
+      </>,
+
+      <>Highest FIDE Rating: Reached a peak rating of 2817 in March 2011.</>,
+
+      <>Olympic Medalist: Contributed to India's success in Chess Olympiads.</>,
+
+      <>
+        FIDE Deputy President: Elected as the Deputy President of FIDE in 2022.
+      </>,
+
+      <>
+        Mentor: Actively involved in nurturing young chess talent through
+        initiatives like the WestBridge Anand Chess Academy.
+      </>,
+
+      <>
+        Awards: Recipient of the Padma Bhushan (2008) and Padma Shri (2000) for
+        his contributions to chess.
+      </>,
+    ],
+
+    category: "Chess",
+  },
+
+  {
+    image: "/images/pride-of-chennai/ajithkumar-photo.jpg",
+    name: "Ajith Kumar ",
+    profession: "Hyderabad, Telangana",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: "Actor, Motorsport Enthusiast",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Popularly known as “Thala”, one of the leading actors in Tamil cinema.
+      </>,
+
+      <>
+        Has acted in over 60 films across Tamil and other South Indian
+        languages.
+      </>,
+
+      <>
+        Won several awards including Tamil Nadu State Film Awards and Vijay
+        Awards.
+      </>,
+
+      <>
+        Known for his versatility in roles ranging from action, romance, drama,
+        and thriller genres.
+      </>,
+
+      <>
+        Successfully balanced a career in Indian motorsport, competing in events
+        like Formula 2 Championship, Formula Maruti, and MRF Racing Series.
+      </>,
+
+      <>
+        Received accolades for humanitarian work and supporting social causes.
+      </>,
+
+      <>Maintains a massive fan following across Tamil Nadu and worldwide.</>,
+
+      <>
+        Recognized for his disciplined lifestyle and fitness regimen, often
+        inspiring fans and colleagues.
+      </>,
+    ],
+
+    category: "Motorsport and Racing",
+  },
+
+  {
+    image: "/images/pride-of-chennai/shobana-photo.jpg",
+    name: "Shobana",
+    profession: "Thiruvananthapuram, Kerala",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: "Actress, Classical Dancer (Bharatanatyam)",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Renowned actress in Malayalam and Tamil cinema, known for her versatile
+        performances.
+      </>,
+
+      <>
+        Winner of two National Film Awards for Best Actress for her roles in
+        Manichitrathazhu (1993) and Mitran (1994).
+      </>,
+
+      <>
+        Trained Bharatanatyam dancer with international recognition and
+        performed worldwide.
+      </>,
+
+      <>
+        Received the Padma Shri (2006) for her contributions to arts and cinema.
+      </>,
+
+      <>
+        Founder of Kalarpana School of Arts, promoting classical dance
+        education.
+      </>,
+
+      <>
+        Known for blending classical dance with contemporary storytelling on
+        stage.
+      </>,
+
+      <>
+        Served as a mentor and jury member in several dance competitions and
+        film awards.
+      </>,
+    ],
+
+    category: "Dance",
+  },
+
+  {
+    image: "/images/pride-of-chennai/sudha-ragunathan-photo.jpg",
+    name: "Sudha Ragunadhan",
+    profession: "Chennai, Tamil Nadu",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: "Carnatic Vocalist, Composer",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Awarded Padma Bhushan (2015) and Padma Shri (2004) for her exceptional
+        contributions to Carnatic music.
+      </>,
+
+      <>
+        Honored with Sangeetha Kalanidhi (2013), the highest title from the
+        Madras Music Academy.
+      </>,
+
+      <>
+        Received multiple prestigious titles including Kalaimamani (1993),
+        Sangeetha Choodamani (1997), and Sangeetha Kalasarathy (2000).
+      </>,
+
+      <>
+        Conferred with Mutthamizh Perarignar (2017) and Living Legend Award
+        (2017) for promoting Tamil music and classical arts.
+      </>,
+
+      <>
+        Released over 200 albums, including devotional, fusion music, and
+        playback singing in Tamil cinema.
+      </>,
+
+      <>
+        Performed internationally at venues like the United Nations, Théâtre de
+        la Ville, Paris, and Alice Tully Hall, New York.
+      </>,
+
+      <>
+        Founded the Sudhaarnava Academy (2017) to train students in Carnatic
+        music worldwide.
+      </>,
+
+      <>
+        Established the Samudhaaya Foundation (1999) to support healthcare and
+        underprivileged communities.
+      </>,
+
+      <>
+        Trained under Dr. M. L. Vasanthakumari and continues to mentor numerous
+        students in classical music.
+      </>,
+    ],
+
+    category: "Singer",
+  },
+
+  {
+    image: "/images/pride-of-chennai/aruna-sairam.jpg",
+    name: "Aruna Sairam",
+    profession: "Chennai, Tamil Nadu",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: "Carnatic Vocalist, Composer",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Awarded Padma Shri (2009) for exceptional contribution to Carnatic
+        music.
+      </>,
+
+      <>Honored with Sangeetha Kalanidhi (2006) by the Madras Music Academy.</>,
+
+      <>First Carnatic musician to perform at BBC Proms (2011), London.</>,
+
+      <>
+        Performed internationally at venues like Royal Albert Hall, Théâtre de
+        la Ville (Paris), and Alice Tully Hall (New York).
+      </>,
+
+      <>
+        Founder of Sudhaarnava Academy (2017) to teach Carnatic music worldwide.
+      </>,
+
+      <>
+        Launched the Samudhaaya Foundation (1999) to support healthcare for
+        underprivileged communities.
+      </>,
+
+      <>Renowned for playback singing in Tamil cinema and devotional albums.</>,
+
+      <>
+        Explored fusion music collaborations, blending Carnatic with global
+        music styles.
+      </>,
+
+      <>
+        Mentored numerous students in the traditional gurukula style, carrying
+        forward the Carnatic music legacy.
+      </>,
+    ],
+
+    category: "Singer",
+  },
+];

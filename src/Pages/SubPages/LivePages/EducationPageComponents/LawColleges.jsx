@@ -9,7 +9,7 @@ export default function LawColleges() {
       sectionTitle: "Law Colleges in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/College/Image/law-colleges-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -49,7 +49,7 @@ export default function LawColleges() {
                   learning.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/College/icon/Overview.svg",
             },
           ],
         },
@@ -86,7 +86,7 @@ export default function LawColleges() {
 
                 ,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Admissions & Entrance Exams.svg",
             },
             {
               title: "Placements & Return on Investment (ROI)",
@@ -122,7 +122,7 @@ export default function LawColleges() {
                   Law+2Collegedunia+2.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Placements & Return on Investment (ROI).svg",
             },
             {
               title: "Why Study Law in Chennai?",
@@ -153,7 +153,7 @@ export default function LawColleges() {
                   practice-oriented education.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/College/icon/Why Study Law in Chennai_.svg",
             },
           ],
         },

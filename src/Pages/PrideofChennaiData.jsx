@@ -41,14 +41,15 @@ export default function PrideofChennaiData() {
         "Table Tennis",
         "Squash",
         "Football",
+          "Motorsport and Racing",
         "Bodybuilding",
-        "Motorsport and Racing"
+      
       ],
     },
     {
       label: "Entertainment",
       value: "entertainment",
-      subcategories: ["Writer", "Music", "Dance"],
+      subcategories: ["Singer","Music", "Dance", "Writer"],
     },
     // {
     //   label: "Culture & Religion",
@@ -59,15 +60,15 @@ export default function PrideofChennaiData() {
     //   ],
     // },
     {
-      label: "Tech",
+      label: "Tech / Social Researcher",
       value: "social_tech_chef",
-      subcategories: [ "Tech"],
+      subcategories: [ "Tech", "Social Researcher"],
     },
-    // {
-    //   label: "Science and Research",
-    //   value: "science_research",
-    //   subcategories: ["Science", "Research"],
-    // },
+    {
+      label: "Medicine / Oncology",
+      value: "science_research",
+      subcategories: ["Medicine / Oncology"],
+    },
 
   ];
 

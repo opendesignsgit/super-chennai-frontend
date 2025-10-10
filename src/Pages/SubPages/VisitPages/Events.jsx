@@ -274,7 +274,8 @@ export default function Events() {
               <p>Visit &nbsp; in Chennai &nbsp; Visit &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3>Events</h3>
+              {/* <h3>Events</h3> */}
+              <h1>Chennai Events</h1>
               <p>
                 The city of Chennai thrives with a lively schedule of
                 activities, providing a range of experiences that appeal to all

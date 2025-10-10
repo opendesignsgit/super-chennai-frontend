@@ -220,7 +220,10 @@ export default function Placestovisit() {
               <p>Visit &nbsp; in Chennai &nbsp; Visit &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3> Places to Visit</h3>
+              {/* <h3> Places to Visit</h3> */}
+              <h1>Chennai Spots to Visit</h1>
+
+              
               <p>
                 Discover a city where contemporary landmarks stand tall, lively
                 art fountains flow through its veins, and old religious sites

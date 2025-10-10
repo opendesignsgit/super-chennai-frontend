@@ -10,7 +10,7 @@ export default function IGCSESchool() {
       sectionTitle: "IGCSE Schools in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/School/image/igcse-schools-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -355,7 +355,7 @@ export default function IGCSESchool() {
                 "Languages: Most schools offer French, Hindi, and Tamil as second/third language options",
                 "Technology Integration: Smart classrooms, online submissions, and blended learning models are widely adopted",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/School/Icons/curriculum-features.svg",
             },
             {
               title: "Admission & Fee Insights",
@@ -381,7 +381,7 @@ export default function IGCSESchool() {
                   </strong>
                 </div>
               ),
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/admission-&-fee-insights.svg",
             },
             {
               title: "Who Should Consider IGCSE in Chennai?",
@@ -398,7 +398,7 @@ export default function IGCSESchool() {
               para4: [
                 "Parents Preferring Skill-Based Education: With emphasis on real-world thinking and project work",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/who-should-consider-igcse-in-chennai_-1.svg",
             },
           ],
         },
@@ -433,7 +433,7 @@ export default function IGCSESchool() {
                   community values unique to the city.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/overview.svg",
             },
           ],
         },
@@ -463,7 +463,7 @@ export default function IGCSESchool() {
                   internal assessments and project work.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/why-choose-icse-in-chennai_.svg",
             },
           ],
         },

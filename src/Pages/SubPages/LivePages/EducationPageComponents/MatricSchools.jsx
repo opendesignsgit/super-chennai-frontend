@@ -8,7 +8,7 @@ export default function MatricSchool() {
       sectionTitle: "Matriculation Schools in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/Live-Images/SubPages/Central Chennai.jpg",
+      image: "/images/education/School/image/matriculation-schools-chennai.jpg",
       imgAlt: "",
     },
   ];
@@ -76,7 +76,7 @@ export default function MatricSchool() {
                 "Middle: Science, Social Science, Computer Applications",
                 "Higher: Physics, Chemistry, Biology, Commerce, Accountancy, Computer Science",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/School/Icons/curriculum-&-structure.svg",
             },
             {
               title: "Fee Structure",
@@ -97,7 +97,7 @@ export default function MatricSchool() {
                   </strong>
                 </div>
               ),
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/fee-structure.svg",
             },
           ],
         },
@@ -139,7 +139,7 @@ export default function MatricSchool() {
                   academies with digital upgrades.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/overview.svg",
             },
           ],
         },
@@ -168,7 +168,7 @@ export default function MatricSchool() {
                   Emphasis on discipline, civic sense, and traditional values.
                 </>,
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/Key Highlights.svg",
+              imgs: "/images/education/School/Icons/why-choose-a-cbse-school-in-chennai_.svg",
             },
           ],
         },
@@ -189,7 +189,7 @@ export default function MatricSchool() {
               para: [
                 "Morning assemblies, value-based stories, civic clubs, and leadership programs.",
               ],
-              imgs: "/images/Innovate-Images/SubPages/Icons/The Stats Behind the Scene.svg",
+              imgs: "/images/education/School/Icons/strong-community-&-values-education.svg",
             },
             {
               title: "Discipline-Oriented Learning",
@@ -201,7 +201,7 @@ export default function MatricSchool() {
               ],
 
               note3: <div></div>,
-              imgs: "/images/Innovate-Images/SubPages/Icons/Chennai’s Tech Map (Suggested Interactive Feature).svg",
+              imgs: "/images/education/School/Icons/discipline-oriented-learning.svg",
             },
             {
               title: "Cultural Celebrations & Language Fairs",
@@ -210,7 +210,7 @@ export default function MatricSchool() {
                 "Annual days often feature Tamil literature, folk music, and inter-school competitions.",
               ],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/cultural-celebrations-&-language-fairs.svg",
             },
             {
               title: "State Exam Preparation (SSLC/HSC)",
@@ -220,7 +220,7 @@ export default function MatricSchool() {
               ],
               para2: [],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/state-exam-preparation-(sslc-hsc).svg",
             },
             {
               title: "Affordable Private Schooling with Personal Touch",
@@ -230,7 +230,7 @@ export default function MatricSchool() {
               ],
               para2: [],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/affordable-private-schooling-with-personal-touch.svg",
             },
             {
               title: "Vocational Electives in HSC Streams",
@@ -240,7 +240,7 @@ export default function MatricSchool() {
               ],
               para2: [],
 
-              imgs: "/images/Innovate-Images/SubPages/Icons/Future Ready Chennai.svg",
+              imgs: "/images/education/School/Icons/vocational-electives-in-hsc-streams.svg",
             },
           ],
         },

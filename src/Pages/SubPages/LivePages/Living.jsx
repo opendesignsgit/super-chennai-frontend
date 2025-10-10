@@ -851,7 +851,8 @@ export default function Living() {
             </div>
             <div className="workIntro">
               {/* <h3>Living in Chennai – From Budget-Friendly to Luxury</h3> */}
-              <h3>Cost of Living in Chennai</h3>
+              {/* <h3>Cost of Living in Chennai</h3> */}
+              <h1>Cost of Living in Chennai</h1>
 
               {/* <p>
                 Chennai offers a well-balanced and competitive cost of living,
@@ -878,16 +879,21 @@ export default function Living() {
                 <strong>Affordable Living, Elevated Lifestyle</strong>{" "}
               </p>
               <p>
-                The Chennai cost of living is both affordable and flexible,
-                attracting professionals, students, and families from across
-                India. From essential expenses to premium comforts, Chennai
-                living expenses remain competitive without sacrificing quality.
+                The <h5 className="seoPurposeClass">Chennai cost of living</h5>{" "}
+                is both affordable and flexible, attracting professionals,
+                students, and families from across India. From essential
+                expenses to premium comforts,
+                <h2 className="seoPurposeClass"> Chennai living expenses </h2>remain competitive without
+                sacrificing quality.
               </p>
               <p>
                 You’ll find a wide range of housing, from budget-friendly
-                rentals to premium flats for sale in Chennai and houses for rent
-                in Chennai. Whether you're relocating or investing, Chennai
-                living cost makes the city an attractive option
+                rentals to premium{" "}
+                <h3 className="seoPurposeClass">flats for sale in Chennai </h3>{" "}
+                and{" "}
+                <h4 className="seoPurposeClass">houses for rent in Chennai.</h4>{" "}
+                Whether you're relocating or investing, Chennai living cost
+                makes the city an attractive option
               </p>
               <p>
                 Compared to other major metros, Chennai offers affordable costs

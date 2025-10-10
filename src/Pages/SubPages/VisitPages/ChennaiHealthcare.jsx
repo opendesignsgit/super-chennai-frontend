@@ -2454,16 +2454,22 @@ export default function ChennaiHealthcare() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Healthcare in Chennai: The Medical Hub of India</h3>
+              {/* <h3>Healthcare in Chennai: The Medical Hub of India</h3> */}
+              <h1>Healthcare in Chennai</h1>
+
               <p>
-                Chennai is proudly recognized as the Healthcare Capital of
-                India, renowned for its advanced medical systems, skilled
-                healthcare professionals, and affordability. From cutting-edge
-                surgeries to holistic treatments, the city offers a full
-                spectrum of medical services, drawing patients from across the
-                country and around the world. In fact, medical tourism in
-                Chennai has seen exponential growth over the past decade, making
-                it a top choice for global healthcare seekers.
+                Chennai is proudly recognized as the{" "}
+                <h2 className="seoPurposeClass">
+                  Healthcare Capital of India,
+                </h2>{" "}
+                renowned for its advanced medical systems, skilled healthcare
+                professionals, and affordability. From cutting-edge surgeries to
+                holistic treatments, the city offers a full spectrum of medical
+                services, drawing patients from across the country and around
+                the world. In fact,{" "}
+                <h3 className="seoPurposeClass"> medical tourism in Chennai</h3>{" "}
+                has seen exponential growth over the past decade, making it a
+                top choice for global healthcare seekers.
               </p>
             </div>
           </div>

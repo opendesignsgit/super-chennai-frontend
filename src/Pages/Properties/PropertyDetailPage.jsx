@@ -73,7 +73,7 @@ const interiorIcons = {
 };
 const applianceIcons = {
   acUnits: Wind,
-  fridgeCount: <Package size={18} />,
+  fridgeCount: Microwave,
   microwaveCount: Microwave,
   waterPurifier: Droplet,
   washingMachine: WashingMachine,
@@ -170,6 +170,7 @@ const PropertyDetailPage = () => {
   );
 
   //########### MODAL   #################
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   useEffect(() => {
@@ -197,17 +198,14 @@ const PropertyDetailPage = () => {
     return `${API_BASE_URL}${url}`;
   };
 
-  //######## DATA NULL HANDLING DA #####################
   // Basic property info SILA FILEDS IF NEED NA USE PANAIKALAM
   const location = property?.location?.label || "N/A";
   const status =
     property?.society?.possessionStatus === "under"
       ? "Under Construction"
       : "Ready to Move";
-  const builderName = property?.society?.name || "N/A";
   const title = property?.title || "Untitled Property";
   const purpose = property?.purpose || "sale";
-  const ownership = property?.ownership || "N/A";
   const ageOfProperty = property?.ageOfProperty || "-";
   const transactionType = property?.transactionType || "N/A";
   const agentReraId = property?.agentReraId || "-";
@@ -220,30 +218,15 @@ const PropertyDetailPage = () => {
     ? `₹${property.pricePerSqft.toLocaleString()}/sqft`
     : "N/A";
   const MaxArea = property?.area
-    ? `${property.area.maxSqft} sqft`
+    ? `${property.area.maxSqft || "N/A"} sqft`
     : "Area not available";
   const MiniArea = property?.area
-    ? `${property.area.minSqft} sqft`
+    ? `${property.area.minSqft || "N/A"} sqft`
     : "Area not available";
 
-  const bedrooms = property?.bedrooms ?? "-";
   const bhk = property?.bhk?.label || "-";
-  const balconies = property?.balconies ?? "-";
   const bathrooms = property?.washrooms ?? "-";
   const furnishing = property?.furnishing || "Not specified";
-  const floor = property?.floor ?? "-";
-  const facingDirection = property?.facingDirection || "-";
-  const parking = property?.parking || "-";
-  const waterSupply = property?.waterSupply || "-";
-  const roadWidth = property?.roadWidth ?? "-";
-  const cornerPlot = property?.cornerPlot ?? false;
-  const plotArea = property?.plotArea ?? "-";
-  const dimensions = property?.dimensions || { length: "-", width: "-" };
-  const negotiable = property?.negotiable ?? false;
-  const listedBy = property?.listedBy || "-";
-  const bookingAmount = property?.bookingAmount ?? "-";
-  const maintenanceCharges = property?.maintenanceCharges ?? "-";
-
   // Society / Builder info
   const societyName = property?.society?.name || "N/A";
   const builder = property?.society?.builder || "N/A";
@@ -258,10 +241,6 @@ const PropertyDetailPage = () => {
   const state = property?.location?.state || "-";
   const city = property?.location?.city || "-";
   const locality = property?.location?.locality || "-";
-  const latitude = property?.mapView?.latitude ?? "-";
-  const longitude = property?.mapView?.longitude ?? "-";
-  const mapEmbed = property?.mapView?.mapEmbed || null;
-
   // Images
   const heroImage = getImageUrl(property?.heroImage);
   const images = property?.images || [];
@@ -270,57 +249,23 @@ const PropertyDetailPage = () => {
     ...images.map((img) => getImageUrl(img?.image)),
   ];
 
-  // Amenities
-  const amenities = property?.amenities || [];
-  const buildingAmenities = property?.buildingAmenities || {};
-  const greenFeatures = property?.greenFeatures || [];
-
-  // Interiors
-  const interiors = property?.interiors || {};
-  const appliances = property?.appliances || {};
-  const bathroomFeatures = property?.bathroomFeatures || {};
-  const semiRooms = property?.semiRooms || {};
-
   // Rent Details
   const rentDetails = property?.rentDetails || {};
   const monthlyRent = rentDetails?.monthlyRent ?? "-";
   const securityDeposit = rentDetails?.securityDeposit ?? "-";
   const maintenanceIncluded = rentDetails?.maintenanceIncluded ?? "-";
   const preferredTenants = rentDetails?.preferredTenants || [];
-
-  // Contact Info
-  const contactName = property?.contactInfo?.name || "-";
-  const contactPhone = property?.contactInfo?.phone || "-";
-  const contactEmail = property?.contactInfo?.email || "-";
-
-  // Floor Plans, Nearby, FAQ
-  const floorPlans = property?.floorPlans || [];
-  const nearby = property?.nearby || [];
   const faq = property?.faq || [];
-
   // Meta / SEO
   const metaTitle = property?.meta?.title || "";
   const metaDescription = property?.meta?.description || "";
   const metaImage = getImageUrl(property?.meta?.image);
-
   // Flags / Booleans
   const featured = property?.featured ?? false;
   const urgentSale = property?.urgentSale ?? false;
-  const security = property?.security ?? false;
-  const liftAvailable = property?.liftAvailable ?? false;
-
-  // Dates
-  const publishedAt = property?.publishedAt || null;
-  const createdAt = property?.createdAt || null;
-  const updatedAt = property?.updatedAt || null;
-  const slugLock = property?.slugLock ?? false;
   const availabilityStatus = property?.availabilityStatus ?? null;
 
-  // Related / Optional Arrays
-  const relatedPosts = property?.relatedPosts || [];
-  const categories = property?.categories || [];
-  const authors = property?.authors || [];
-  const populatedAuthors = property?.populatedAuthors || [];
+  // Floor pLn
 
   return (
     <>
@@ -826,38 +771,38 @@ const PropertyDetailPage = () => {
 
         {/* APPLINCES £££ */}
 
-        {property.appliances &&
+        {/* {property.appliances &&
           Object.values(property.appliances).some(
             (value) => value !== null && value !== false && value !== 0
-          ) && (
-            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                Appliances
-              </h2>
+          ) && ( */}
+        <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">
+            Appliances
+          </h2>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
-                {Object.entries(property.appliances).map(([key, value]) => {
-                  const Icon = applianceIcons[key] || HelpCircle;
-                  return (
-                    <div
-                      key={key}
-                      className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
-                    >
-                      <Icon size={18} className="text-gray-500" />
-                      <span className="capitalize">
-                        {key.replace(/([A-Z])/g, " $1")}:{" "}
-                        {typeof value === "boolean"
-                          ? value
-                            ? "Yes"
-                            : "No"
-                          : value}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
+            {Object.entries(property.appliances).map(([key, value]) => {
+              const Icon = applianceIcons[key] || HelpCircle;
+              return (
+                <div
+                  key={key}
+                  className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
+                >
+                  <Icon size={18} className="text-gray-500" />
+                  <span className="capitalize">
+                    {key.replace(/([A-Z])/g, " $1")}:{" "}
+                    {typeof value === "boolean"
+                      ? value
+                        ? "Yes"
+                        : "No"
+                      : value}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        {/* )} */}
 
         {/* RENTAL DETAILS £££ */}
         {property.rentDetails &&
@@ -1231,15 +1176,18 @@ const PropertyDetailPage = () => {
 
         {/* FAQ  */}
 
+     
         {faq && faq.length > 0 && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 relative z-10">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">FAQs</h2>
-
-            <div className="divide-y divide-gray-200">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {faq.map((f, index) => {
                 const isOpen = openIndex === index;
                 return (
-                  <div key={f.id} className="py-3">
+                  <div
+                    key={f.id || index}
+                    className="border border-gray-100 rounded-lg p-3 shadow-sm hover:shadow-md transition-all duration-300"
+                  >
                     <button
                       onClick={() => setOpenIndex(isOpen ? null : index)}
                       className="w-full flex justify-between items-center text-left focus:outline-none"
@@ -1278,6 +1226,70 @@ const PropertyDetailPage = () => {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        )}
+
+        {/* FLOOR PLAN  */}
+        {property.floorPlans &&
+          property.floorPlans.length > 0 &&
+          property.floorPlans.some((plan) => plan?.file?.url) && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 relative z-10">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Floor Plans
+              </h2>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 ">
+                {property.floorPlans.map((plan, index) => {
+                  const imageUrl = getImageUrl(plan.file);
+                  if (!imageUrl) return null;
+
+                  return (
+                    <div
+                      key={plan.id || index}
+                      className="flex flex-col items-center rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer "
+                      onClick={() => setSelectedImage(imageUrl)}
+                    >
+                      <img
+                        src={imageUrl}
+                        alt={property.title}
+                        className="w-full h-48 object-cover"
+                      />
+                      <div className="p-3 w-full text-center bg-gray-50">
+                        <p className="text-sm font-medium text-gray-700">
+                          {plan.caption ||
+                            plan?.file?.alt ||
+                            `Floor Plan ${index + 1}`}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+        {/* Modal for full image view */}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm transition-opacity duration-300 p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div
+              className="relative max-w-5xl w-full p-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={selectedImage}
+                alt="Full view"
+                className="w-full max-h-[80vh] object-contain rounded-lg"
+              />
+              <button
+                className="absolute top-2 right-2 bg-gray-800 text-white px-3 py-1 rounded-full hover:bg-gray-700"
+                onClick={() => setSelectedImage(null)}
+              >
+                ✕
+              </button>
             </div>
           </div>
         )}

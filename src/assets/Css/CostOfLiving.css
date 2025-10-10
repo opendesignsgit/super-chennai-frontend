@@ -87,6 +87,14 @@
   color: #995098;
 }
 
+.visitIntroParaSection.detailIntro .workIntro h1 {
+  font-family: "NewAmsterdam";
+  font-size: 4vw;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #995098;
+}
+
 .visitIntroParaSection.unicorns {
   padding-bottom: 280px;
 }
@@ -984,6 +992,16 @@
 }
 
 .card h3 {
+  font-family: "29LT Bukra SmBd";
+  color: #a44294;
+  font-size: clamp(17px, 1.2vw + 0.5rem, 24px);
+  line-height: clamp(19px, 1.5vw + 0.5rem, 29px);
+  text-align: left;
+  width: 100%;
+  font-weight: 500;
+}
+
+.card h2 {
   font-family: "29LT Bukra SmBd";
   color: #a44294;
   font-size: clamp(17px, 1.2vw + 0.5rem, 24px);
@@ -1950,8 +1968,17 @@ body.popup-open {
   padding: 10px;
 }
 
-.chennaiappscontainer .EventsIteCont h3{
+.chennaiappscontainer .EventsIteCont h3 {
   width: 100%;
+}
+
+.seoPurposeClass {
+  display: inline !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  color: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 @media (max-width: 880px) {
@@ -2594,6 +2621,12 @@ body.popup-open {
 
   /* After Banner Section */
   .visitIntroParaSection.detailIntro .workIntro h3 {
+    font-size: clamp(30px, 4vw, 80px);
+    font-size: clamp(37px, 4vw, 80px);
+    line-height: 35px;
+  }
+
+  .visitIntroParaSection.detailIntro .workIntro h1 {
     font-size: clamp(30px, 4vw, 80px);
     font-size: clamp(37px, 4vw, 80px);
     line-height: 35px;

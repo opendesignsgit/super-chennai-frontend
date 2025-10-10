@@ -613,7 +613,10 @@ export default function Shopping() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Where Tradition Meets Trend on Every Street</h3>
+              {/* <h3>Where Tradition Meets Trend on Every Street</h3> */}
+              <h1>Chennai Shopping</h1>
+
+              
               <p>
                 Chennai offers a retail experience as diverse as the city itself
                 — a place where age-old textile shops stand proudly beside sleek

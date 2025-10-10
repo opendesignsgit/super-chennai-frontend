@@ -307,7 +307,8 @@ export default function Neighbourhood() {
               <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3>Places to Visit Near Chennai </h3>
+              {/* <h3>Places to Visit Near Chennai </h3> */}
+              <h1>Places to Visit Near Chennai </h1>
               <p>
                 Chennai, an important urban center, has multiple notable cities
                 situated nearby, each presenting distinct features and adding to

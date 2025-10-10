@@ -280,7 +280,8 @@ export default function Conferences() {
               <p>Visit &nbsp; in Chennai &nbsp; Visit &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3>Conferences</h3>
+              {/* <h3>Conferences</h3> */}
+              <h1>Chennai Conferences</h1>
               <p>
                 Chennai is a significant hub for a wide range of conferences,
                 promoting knowledge sharing and career development across

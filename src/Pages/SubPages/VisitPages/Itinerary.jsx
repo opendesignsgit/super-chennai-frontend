@@ -378,7 +378,10 @@ export default function Itinerary() {
               <p>Visit &nbsp; in Chennai &nbsp; Visit &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3> Explore the City at Your Pace</h3>
+              {/* <h3> Explore the City at Your Pace</h3> */}
+              <h1>Experience Chennai</h1>
+
+              
               <p>
                 Whether you're stopping by for a day or settling in for a full
                 week, Chennai offers something for every kind of traveller —

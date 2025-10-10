@@ -162,7 +162,7 @@ export default function Transportation() {
       ),
       image:
         "/images/Live-Images/SubPages/Private-Enterprises &-Intelligent-Transportation-1.jpg",
-        imgAlt:"chennai intelligent transportaion",
+      imgAlt: "chennai intelligent transportaion",
       benefits: [
         {
           id: 1,
@@ -239,7 +239,8 @@ export default function Transportation() {
             </>,
             <>
               <strong>
-                Don’t assume an automatic pass if you're with a driving school{" "}
+                Don’t assume an automatic pass if you're with a driving
+                school{" "}
               </strong>{" "}
               RTO officers still assess each candidate individually.
             </>,
@@ -409,6 +410,7 @@ export default function Transportation() {
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
               <h3>Transportation </h3>
+
               <div className="breadCrum">
                 <Link to="/live-in-chennai"> Live </Link> -{" "}
                 <a href="">Transportation </a>
@@ -434,12 +436,13 @@ export default function Transportation() {
               <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3>Transportation</h3>
+              {/* <h3>Transportation</h3> */}
+              <h1>Chennai Transportation</h1>
               <p>
                 Public transportation in Chennai is managed by various
                 government bodies, offering an extensive network that connects
-                all parts of the city. Key modes include the Chennai Metro Rail,
-                Local trains, suburban trains, MTC buses, and Mini bus services.
+                all parts of the city. Key modes include the <h3 className="seoPurposeClass">Chennai Metro Rail,</h3> 
+                Local trains, suburban trains, <h5 className="seoPurposeClass"> MTC buses,</h5> and Mini bus services.
                 The metro is a fast-growing, modern option for daily commuters,
                 while the bus system covers a wide range of routes at affordable
                 fares. Suburban trains link the city to outer zones and
@@ -459,8 +462,8 @@ export default function Transportation() {
       index % 3 === 0
         ? "pattern-a"
         : index % 3 === 1
-        ? "pattern-b"
-        : "pattern-c"
+          ? "pattern-b"
+          : "pattern-c"
     }`}
             key={index}
           >
@@ -612,8 +615,8 @@ export default function Transportation() {
       index % 3 === 0
         ? "pattern-a"
         : index % 3 === 1
-        ? "pattern-b"
-        : "pattern-c"
+          ? "pattern-b"
+          : "pattern-c"
     }`}
             key={index}
           >

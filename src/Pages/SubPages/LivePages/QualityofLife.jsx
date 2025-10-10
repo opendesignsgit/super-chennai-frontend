@@ -363,7 +363,10 @@ export default function QualityofLife() {
               <p>Quality of &nbsp; Life &nbsp; Live &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3>Quality of Life </h3>
+              {/* <h3>Quality of Life </h3> */}
+              <h1> Quality of Life in Chennai</h1>
+
+             
               <p>
                 A city where heritage meets progress, Chennai offers a high
                 quality of life shaped by affordability, safety, and cultural

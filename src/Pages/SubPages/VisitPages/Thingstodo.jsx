@@ -284,7 +284,8 @@ export default function Thingstodo() {
               <p>Visit &nbsp; in Chennai &nbsp; Visit &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3> Things to Do</h3>
+              {/* <h3> Things to Do</h3> */}
+              <h1>Things to do in Chennai</h1>
               <p>
                 Discover your inner adventurer in Chennai, a city full of
                 chances to stimulate your senses and make lifelong experiences.

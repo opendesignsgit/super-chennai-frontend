@@ -252,7 +252,10 @@ export default function Traveltips() {
               <p>Visit &nbsp; in Chennai &nbsp; Visit &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3>Travel Tips</h3>
+              {/* <h3>Travel Tips</h3> */}
+              <h1>Travel in Chennai</h1>
+
+              
               <p>
                 A colorful kaleidoscope of experiences awaits you when you set
                 out on an adventure in Chennai. A few guiding ideas might

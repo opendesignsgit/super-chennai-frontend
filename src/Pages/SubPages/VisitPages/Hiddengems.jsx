@@ -314,7 +314,10 @@ export default function Hiddengems() {
               <p>Visit &nbsp; in Chennai &nbsp; Visit &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3> Hidden Gems</h3>
+              {/* <h3> Hidden Gems</h3> */}
+              <h1>Hidden Spots in Chennai</h1>
+
+              
               <p>
                 There is a network of hidden gems beyond the busy streets and
                 famous sites, just waiting for the inquisitive mind to find

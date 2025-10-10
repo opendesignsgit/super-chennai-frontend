@@ -1515,7 +1515,8 @@ export default function Culturereligiousattractions() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Places of Worship in Chennai</h3>
+              {/* <h3>Places of Worship in Chennai</h3> */}
+              <h1>Places of Worship in Chennai</h1>
               <p>
                 Chennai is a city where faith finds expression in diverse and
                 magnificent forms. From ancient Hindu temples to colonial-era

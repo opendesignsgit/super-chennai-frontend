@@ -8329,7 +8329,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Social Researcher",
+    category: "Medicine / Oncology",
   },
 
   {

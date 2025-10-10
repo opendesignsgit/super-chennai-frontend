@@ -71,9 +71,14 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
               {property.pricePerSqft && (
                 <span>{property.pricePerSqft.toLocaleString()} ₹/sqft</span>
               )}
-              <span>
-                {bhk} • {area} sqft
-              </span>
+              <span>{bhk}</span>
+              {(area?.maxSqft || area?.minSqft) && (
+                <span>
+                  {area.maxSqft ? area.maxSqft : ""}
+                  {area.maxSqft && area.minSqft ? " • " : ""}
+                  {area.minSqft ? area.minSqft : ""} sqft
+                </span>
+              )}
             </div>
 
             <div className="flex flex-col items-start">

@@ -49,7 +49,7 @@ export default function PrideofChennaiData() {
     {
       label: "Entertainment",
       value: "entertainment",
-      subcategories: ["Singer","Music", "Dance", "Writer"],
+      subcategories: ["Singers","Music", "Dance", "Writer"],
     },
     // {
     //   label: "Culture & Religion",
@@ -60,9 +60,9 @@ export default function PrideofChennaiData() {
     //   ],
     // },
     {
-      label: "Tech / Social Researcher",
+      label: "Tech",
       value: "social_tech_chef",
-      subcategories: [ "Tech", "Social Researcher"],
+      subcategories: [ "Tech"],
     },
     {
       label: "Medicine / Oncology",
@@ -203,7 +203,7 @@ export default function PrideofChennaiData() {
                       <img src={pride.image} alt={pride.name} />
                     </div>
                     <h3>{pride.name}</h3>
-                    <h5>{pride.profession}</h5>
+                    {/* <h5>{pride.profession}</h5> */}
                     <p>{pride.natureofWork}</p>
                     <a
                       className="cursor-pointer"

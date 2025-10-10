@@ -523,13 +523,13 @@ function App() {
 
         <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
 
-        {showPopup && (
+        {/* {showPopup && (
           <ImagePopup
             onClose={handleClosePopup}
-            // imageUrl="/images/Namma-Stories.jpg"
+         
             imageUrl="/images/HomePage-Images/ai-art-challenge-popup.jpg"
           />
-        )}
+        )} */}
 
         {/* Sticky Icons */}
         <div
@@ -630,6 +630,7 @@ function App() {
 
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blogdetail/:id" element={<BlogDetails />} />
+          {/* <Route path="/blogdetail/:slug" element={<BlogDetails />} /> */}
           <Route
             path="/volunteer-in-chennai"
             element={<Volunteer popupFunction={popupFunction} />}

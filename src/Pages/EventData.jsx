@@ -6241,8 +6241,142 @@ export const panesContent = [
 
 export const prideofchennaidata = [
   {
+    image: "/images/pride-of-chennai/viswanathan-anand.jpg",
+    name: "V.Anand",
+    profession: "Mayiladuthurai, Tamil Nadu.",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork:
+      "Chess Grandmaster, Former World Chess Champion, and India’s first chess superstar.",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        First Indian Grandmaster: Achieved the title in 1988 at the age of 18.
+      </>,
+
+      <>
+        World Chess Champion: Won the FIDE World Chess Championship in 2000, and
+        the undisputed title in 2007, 2008, 2010, and 2012.
+      </>,
+
+      <>
+        Rapid Chess Specialist: Known as the "Lightning Kid" for his prowess in
+        rapid and blitz formats.
+      </>,
+
+      <>Highest FIDE Rating: Reached a peak rating of 2817 in March 2011.</>,
+
+      <>Olympic Medalist: Contributed to India's success in Chess Olympiads.</>,
+
+      <>
+        FIDE Deputy President: Elected as the Deputy President of FIDE in 2022.
+      </>,
+
+      <>
+        Mentor: Actively involved in nurturing young chess talent through
+        initiatives like the WestBridge Anand Chess Academy.
+      </>,
+
+      <>
+        Awards: Recipient of the Padma Bhushan (2008) and Padma Shri (2000) for
+        his contributions to chess.
+      </>,
+    ],
+
+    category: "Chess",
+  },
+
+  {
+    image: "/images/pride-of-chennai/ajithkumar-photo.jpg",
+    name: "Ajith Kumar ",
+    profession: "Hyderabad, Telangana",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: "Actor, Motorsport Enthusiast",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Popularly known as “Thala”, one of the leading actors in Tamil cinema.
+      </>,
+
+      <>
+        Has acted in over 60 films across Tamil and other South Indian
+        languages.
+      </>,
+
+      <>
+        Won several awards including Tamil Nadu State Film Awards and Vijay
+        Awards.
+      </>,
+
+      <>
+        Known for his versatility in roles ranging from action, romance, drama,
+        and thriller genres.
+      </>,
+
+      <>
+        Successfully balanced a career in Indian motorsport, competing in events
+        like Formula 2 Championship, Formula Maruti, and MRF Racing Series.
+      </>,
+
+      <>
+        Received accolades for humanitarian work and supporting social causes.
+      </>,
+
+      <>Maintains a massive fan following across Tamil Nadu and worldwide.</>,
+
+      <>
+        Recognized for his disciplined lifestyle and fitness regimen, often
+        inspiring fans and colleagues.
+      </>,
+    ],
+
+    category: "Motorsport and Racing",
+  },
+
+  {
+    image: "/images/pride-of-chennai/narain-karthikeyan.jpg",
+    name: "Narain Karthikeyan",
+    profession: "Coimbatore, Tamil Nadu.",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: " Professional Racing Driver (Formula One, Motorsport)",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        India’s first Formula One driver (2005) with Jordan Formula One Team.
+      </>,
+
+      <>Competed in 19 Formula One races during his career.</>,
+
+      <>
+        Won Formula Asia and British Formula Ford Championships in his early
+        career.
+      </>,
+
+      <>Represented India in the A1 Grand Prix World Cup of Motorsport.</>,
+
+      <>Raced for HRT Formula One Team in 2011 and 2012.</>,
+
+      <>First Indian to race in NASCAR Camping World Truck Series.</>,
+
+      <>Competed in Superleague Formula and Formula Nippon series.</>,
+
+      <>Awarded the Padma Shri in 2010 for his contribution to motorsport.</>,
+
+      <>Inspired future Indian racers like Jehan Daruvala and Arjun Maini.</>,
+
+      <>Actively promotes and mentors motorsport talent in India.</>,
+    ],
+
+    category: "Motorsport and Racing",
+  },
+  {
     image: "/images/pride-of-chennai/ravichandran-ashwin-cricket.jpg",
-    name: "Mahesh Bhupathi - (Grand Slam Tennis Player)",
+    name: "Ravichandran Ashwin (Cricket)",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Right-arm off-spin bowler, Right-hand lower-order batsman",
@@ -6266,6 +6400,7 @@ export const prideofchennaidata = [
 
     category: "Cricketers",
   },
+
   {
     image: "/images/pride-of-chennai/dinesh-karthik-cricket.jpg",
     name: "Dinesh Karthik (Cricket)",
@@ -8280,7 +8415,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Social Researcher",
+    category: "Medicine / Oncology",
   },
   {
     image: "/images/pride-of-chennai/v-shantha.jpg",
@@ -8373,142 +8508,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Singer",
-  },
-
-  {
-    image: "/images/pride-of-chennai/narain-karthikeyan.jpg",
-    name: "Narain Karthikeyan",
-    profession: "Coimbatore, Tamil Nadu.",
-    bornPlace: "Pudukottai, Tamil Nadu",
-    natureofWork: " Professional Racing Driver (Formula One, Motorsport)",
-    about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
-    knowmoreLink: "",
-    popupContent: [
-      <>
-        India’s first Formula One driver (2005) with Jordan Formula One Team.
-      </>,
-
-      <>Competed in 19 Formula One races during his career.</>,
-
-      <>
-        Won Formula Asia and British Formula Ford Championships in his early
-        career.
-      </>,
-
-      <>Represented India in the A1 Grand Prix World Cup of Motorsport.</>,
-
-      <>Raced for HRT Formula One Team in 2011 and 2012.</>,
-
-      <>First Indian to race in NASCAR Camping World Truck Series.</>,
-
-      <>Competed in Superleague Formula and Formula Nippon series.</>,
-
-      <>Awarded the Padma Shri in 2010 for his contribution to motorsport.</>,
-
-      <>Inspired future Indian racers like Jehan Daruvala and Arjun Maini.</>,
-
-      <>Actively promotes and mentors motorsport talent in India.</>,
-    ],
-
-    category: "Motorsport and Racing",
-  },
-
-  {
-    image: "/images/pride-of-chennai/viswanathan-anand.jpg",
-    name: "V.Anand",
-    profession: "Mayiladuthurai, Tamil Nadu.",
-    bornPlace: "Pudukottai, Tamil Nadu",
-    natureofWork:
-      "Chess Grandmaster, Former World Chess Champion, and India’s first chess superstar.",
-    about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
-    knowmoreLink: "",
-    popupContent: [
-      <>
-        First Indian Grandmaster: Achieved the title in 1988 at the age of 18.
-      </>,
-
-      <>
-        World Chess Champion: Won the FIDE World Chess Championship in 2000, and
-        the undisputed title in 2007, 2008, 2010, and 2012.
-      </>,
-
-      <>
-        Rapid Chess Specialist: Known as the "Lightning Kid" for his prowess in
-        rapid and blitz formats.
-      </>,
-
-      <>Highest FIDE Rating: Reached a peak rating of 2817 in March 2011.</>,
-
-      <>Olympic Medalist: Contributed to India's success in Chess Olympiads.</>,
-
-      <>
-        FIDE Deputy President: Elected as the Deputy President of FIDE in 2022.
-      </>,
-
-      <>
-        Mentor: Actively involved in nurturing young chess talent through
-        initiatives like the WestBridge Anand Chess Academy.
-      </>,
-
-      <>
-        Awards: Recipient of the Padma Bhushan (2008) and Padma Shri (2000) for
-        his contributions to chess.
-      </>,
-    ],
-
-    category: "Chess",
-  },
-
-  {
-    image: "/images/pride-of-chennai/ajithkumar-photo.jpg",
-    name: "Ajith Kumar ",
-    profession: "Hyderabad, Telangana",
-    bornPlace: "Pudukottai, Tamil Nadu",
-    natureofWork: "Actor, Motorsport Enthusiast",
-    about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
-    knowmoreLink: "",
-    popupContent: [
-      <>
-        Popularly known as “Thala”, one of the leading actors in Tamil cinema.
-      </>,
-
-      <>
-        Has acted in over 60 films across Tamil and other South Indian
-        languages.
-      </>,
-
-      <>
-        Won several awards including Tamil Nadu State Film Awards and Vijay
-        Awards.
-      </>,
-
-      <>
-        Known for his versatility in roles ranging from action, romance, drama,
-        and thriller genres.
-      </>,
-
-      <>
-        Successfully balanced a career in Indian motorsport, competing in events
-        like Formula 2 Championship, Formula Maruti, and MRF Racing Series.
-      </>,
-
-      <>
-        Received accolades for humanitarian work and supporting social causes.
-      </>,
-
-      <>Maintains a massive fan following across Tamil Nadu and worldwide.</>,
-
-      <>
-        Recognized for his disciplined lifestyle and fitness regimen, often
-        inspiring fans and colleagues.
-      </>,
-    ],
-
-    category: "Motorsport and Racing",
+    category: "Singers",
   },
 
   {
@@ -8615,7 +8615,7 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Singer",
+    category: "Singers",
   },
 
   {
@@ -8664,6 +8664,61 @@ export const prideofchennaidata = [
       </>,
     ],
 
-    category: "Singer",
+    category: "Singers",
+  },
+  {
+    image: "/images/pride-of-chennai/Santha-Dhananjayan.jpg",
+    name: "Santha Dhananjayan",
+    profession: "Chennai, Tamil Nadu",
+    bornPlace: "Pudukottai, Tamil Nadu",
+    natureofWork: "Bharatanatyam Dancer, Choreographer, Guru",
+    about:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Awarded the Padma Bhushan (2009) by the Government of India for her
+        contribution to Bharatanatyam.
+      </>,
+
+      <>
+        Honored with the Sangeet Natak Akademi Award, the highest recognition
+        for performing artists in India.
+      </>,
+
+      <>Received the Kalaimamani Award from the Government of Tamil Nadu.</>,
+
+      <>
+        Conferred the prestigious Nritya Choodamani title by Krishna Gana Sabha,
+        Chennai.
+      </>,
+
+      <>
+        Co-founded Bharata Kalanjali (1968) in Chennai, a leading academy for
+        Bharatanatyam and dance-theatre training.
+      </>,
+
+      <>
+        Performed globally, presenting Bharatanatyam at prestigious venues
+        across the US, UK, Europe, and Southeast Asia.
+      </>,
+
+      <>
+        Known for innovative choreographies that blended tradition with
+        contemporary social and cultural themes.
+      </>,
+
+      <>
+        Trained and mentored numerous students who went on to become acclaimed
+        dancers worldwide.
+      </>,
+
+      <>
+        Honored with an Honorary Doctorate for her lifelong service in
+        preserving and promoting Bharatanatyam.
+      </>,
+    ],
+
+    category: "Dance",
   },
 ];

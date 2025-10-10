@@ -142,7 +142,7 @@ export default function ReimagineChennai() {
         </div>
 
         {/* <ContactForm /> */}
-        <ReimagineForm />
+        {/* <ReimagineForm /> */}
       </div>
     </>
   );

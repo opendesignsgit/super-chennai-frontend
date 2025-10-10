@@ -1,8 +1,6 @@
-
 import "react-loading-skeleton/dist/skeleton.css";
 import { Link } from "react-router-dom";
 import { API_BASE_URL } from "../../config";
-
 
 const getImageUrl = (img) => {
   if (!img?.url) return "/placeholder.jpg";
@@ -96,19 +94,22 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
           <p className="propertContent line-clamp-2">{description}</p>
 
           {/* View Details */}
-          <div className="cursor-pointer flex items-center mt-2">
-            <Link
-              to={`/properties/${property.slug || property.id}`}
-              className="propertyViewDetails"
+
+          {property.society?.externalUrl && (
+            <a
+              href={property.society.externalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="propertyViewDetails flex items-center gap-1"
             >
-              View Details
-            </Link>
-            <img
-              className="propertyAroWwCLick"
-              src="/images/icons/right-side-arrow-superchennai.svg"
-              alt="arrow"
-            />
-          </div>
+              Official Project Link
+              <img
+                className="propertyAroWwCLick"
+                src="/images/icons/right-side-arrow-superchennai.svg"
+                alt="arrow"
+              />
+            </a>
+          )}
 
           {/* Additional Info */}
           <div className="uploadedDetailsproperty mt-2">

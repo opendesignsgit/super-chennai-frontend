@@ -9,6 +9,13 @@ import { useProperty } from "./hooks/useProperties";
 import { formatLabel } from "./utils/formatLabel";
 import ContactForm from "./Components/forms/ContactForm";
 import { formatPrice } from "./utils/formatPrice";
+import {
+  Provider as TooltipProvider,
+  Root as TooltipRoot,
+  Trigger as TooltipTrigger,
+  Content as TooltipContent,
+  Arrow as TooltipArrow,
+} from "@radix-ui/react-tooltip";
 
 import {
   ArrowLeftIcon,
@@ -52,6 +59,7 @@ import {
   HandCoins,
   CreditCard,
   Handshake,
+  Droplets,
 } from "lucide-react";
 
 const interiorIcons = {
@@ -63,10 +71,9 @@ const interiorIcons = {
   falseCeiling: Lightbulb,
   lighting: Lightbulb,
 };
-
 const applianceIcons = {
   acUnits: Wind,
-  fridgeCount: Package,
+  fridgeCount: <Package size={18} />,
   microwaveCount: Microwave,
   waterPurifier: Droplet,
   washingMachine: WashingMachine,
@@ -76,17 +83,72 @@ const applianceIcons = {
   powerBackup: Battery,
   solar: Sun,
 };
-
 const amenityIcons = {
   elevator: <ArrowUp size={18} />,
   security: <Shield size={18} />,
   intercom: <Phone size={18} />,
   fireSafety: <Flame size={18} />,
-  clubhouse: <Building size={18} />,
-  swimmingPool: <Droplet size={18} />,
+  clubhouse: <Building2 size={18} />,
+  swimmingPool: <Droplets size={18} />,
   gym: <Dumbbell size={18} />,
   playArea: <Trees size={18} />,
   garden: <Trees size={18} />,
+
+  yogaArea: <ArrowUp size={18} />,
+  clubHouse: <ArrowUp size={18} />,
+  miniTheatre: <ArrowUp size={18} />,
+  indoorGames: <ArrowUp size={18} />,
+  herbGarden: <ArrowUp size={18} />,
+  multipurposeHall: <ArrowUp size={18} />,
+  liftLobby: <ArrowUp size={18} />,
+  amphitheatre: <ArrowUp size={18} />,
+  creche: <ArrowUp size={18} />,
+  lobby: <ArrowUp size={18} />,
+  reflexology: <ArrowUp size={18} />,
+  seatingPlaza: <ArrowUp size={18} />,
+  dropOff: <ArrowUp size={18} />,
+  retreatTerrace: <ArrowUp size={18} />,
+  mandate: <ArrowUp size={18} />,
+  tranquilDeck: <ArrowUp size={18} />,
+  aiFresco: <ArrowUp size={18} />,
+  theLounge: <ArrowUp size={18} />,
+  fairviewDeck: <ArrowUp size={18} />,
+  wellnessPatio: <ArrowUp size={18} />,
+  aerobicsZumba: <ArrowUp size={18} />,
+  basementParking: <ArrowUp size={18} />,
+  evChargingPoint: <ArrowUp size={18} />,
+  kidsPlayArea: <ArrowUp size={18} />,
+  pergolaSeating: <ArrowUp size={18} />,
+  tennisCourt: <ArrowUp size={18} />,
+  chessBoard: <ArrowUp size={18} />,
+  cricketPracticePitch: <ArrowUp size={18} />,
+  futsalCourt: <ArrowUp size={18} />,
+  halfBasketballCourt: <ArrowUp size={18} />,
+  hopscotch: <ArrowUp size={18} />,
+  moundsPlayArea: <ArrowUp size={18} />,
+  snakesAndLadder: <ArrowUp size={18} />,
+  coWorking: <ArrowUp size={18} />,
+  partyHall: <ArrowUp size={18} />,
+  skatingRink: <ArrowUp size={18} />,
+  miniGolf: <ArrowUp size={18} />,
+  basketballCourt: <ArrowUp size={18} />,
+  soccerField: <ArrowUp size={18} />,
+  bocceCourt: <ArrowUp size={18} />,
+  cyclingTrack: <ArrowUp size={18} />,
+  rockClimbingWall: <ArrowUp size={18} />,
+  zipLine: <ArrowUp size={18} />,
+  trampolinePark: <ArrowUp size={18} />,
+  petPark: <ArrowUp size={18} />,
+  amphitheaterStage: <ArrowUp size={18} />,
+  communityGarden: <ArrowUp size={18} />,
+  readingLounge: <ArrowUp size={18} />,
+  multipurposePlayArea: <ArrowUp size={18} />,
+  basketballHalfCourt: <ArrowUp size={18} />,
+  boardGamesRoom: <ArrowUp size={18} />,
+  meditationDeck: <ArrowUp size={18} />,
+  outdoorFitnessZone: <ArrowUp size={18} />,
+  hammockLounge: <ArrowUp size={18} />,
+  firePit: <ArrowUp size={18} />,
 };
 
 import { useEffect } from "react";
@@ -97,9 +159,19 @@ const PropertyDetailPage = () => {
   const { id, slug } = useParams();
   const { property, loading } = useProperty({ id, slug });
   console.log("property", property);
+  const [openSpec, setOpenSpec] = useState(false);
+  const [openLocationFeatre, setOpenLocationFeatre] = useState(false);
+  //########### SPECIFICATIONS  #################
+
+  const specifications = property?.specifications || "N/A";
+  if (!specifications) return null;
+  const specEntries = Object.entries(specifications).filter(
+    ([_, value]) => value !== null && value !== ""
+  );
+
+  //########### MODAL   #################
 
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-
   useEffect(() => {
     setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 100);
   }, []);
@@ -126,9 +198,7 @@ const PropertyDetailPage = () => {
   };
 
   //######## DATA NULL HANDLING DA #####################
-
   // Basic property info SILA FILEDS IF NEED NA USE PANAIKALAM
-
   const location = property?.location?.label || "N/A";
   const status =
     property?.society?.possessionStatus === "under"
@@ -149,7 +219,13 @@ const PropertyDetailPage = () => {
   const pricePerSqft = property?.pricePerSqft
     ? `₹${property.pricePerSqft.toLocaleString()}/sqft`
     : "N/A";
-  const area = property?.area ? `${property.area} sqft` : "Area not available";
+  const MaxArea = property?.area
+    ? `${property.area.maxSqft} sqft`
+    : "Area not available";
+  const MiniArea = property?.area
+    ? `${property.area.minSqft} sqft`
+    : "Area not available";
+
   const bedrooms = property?.bedrooms ?? "-";
   const bhk = property?.bhk?.label || "-";
   const balconies = property?.balconies ?? "-";
@@ -447,9 +523,18 @@ const PropertyDetailPage = () => {
         {/* Property Info */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
           <div>
-            <p className="text-xs text-gray-500">Super Built-Up Area</p>
-            <p className="font-semibold text-gray-800">{area}</p>
-            <p className="text-xs text-gray-400">{pricePerSqft}</p>
+            <p className="text-xs text-gray-500">Maximum Built-Up Area</p>
+            <p className="font-semibold text-gray-800">{MaxArea}</p>
+          </div>
+
+          <div>
+            <p className="text-xs text-gray-500">Minimum Built-Up Area</p>
+            <p className="font-semibold text-gray-800">{MiniArea}</p>
+          </div>
+
+          <div>
+            <p className="text-xs text-gray-500">Price Per Unit</p>
+            <p className="font-semibold text-gray-800">{pricePerSqft}</p>
           </div>
           <div>
             <p className="text-xs text-gray-500">Transaction Type</p>
@@ -539,12 +624,17 @@ const PropertyDetailPage = () => {
             <h2 className="text-xl font-semibold text-gray-800">
               About Project
             </h2>
-            <a
-              href="#"
-              className="text-red-600 hover:underline flex items-center text-sm font-medium"
-            >
-              Explore Project <ArrowRight size={16} className="ml-1" />
-            </a>
+            {property.society?.externalUrl && (
+              <a
+                href={property.society.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-600 hover:underline flex items-center text-sm font-medium"
+              >
+                Explore Project
+                <ArrowRight size={16} className="ml-1" />
+              </a>
+            )}
           </div>
 
           <div className="flex flex-wrap gap-6 items-center">
@@ -628,14 +718,16 @@ const PropertyDetailPage = () => {
             </button>
           </div>
         </div>
-        <div className="border border-gray-200 rounded-xl p-5">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">
-            About this Property
-          </h2>
-          <div className="text-gray-500 text-sm">
-            <PropertyContent content={property.content} />
+        {property.content && (
+          <div className="border border-gray-200 rounded-xl p-5">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              About this Property
+            </h2>
+            <div className="text-gray-500 text-sm">
+              <PropertyContent content={property.content} />
+            </div>
           </div>
-        </div>
+        )}
 
         {/* AMENTIES */}
         {trueAmenities.length > 0 && (
@@ -969,62 +1061,139 @@ const PropertyDetailPage = () => {
         )}
 
         {/* INTERIOR  */}
+
         {property.interiors &&
           Object.values(property.interiors).some(
             (value) => value !== null && value !== false && value !== ""
           ) && (
-            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                Interiors / Furnishings
-              </h2>
+            <TooltipProvider>
+              {property.interiors &&
+                Object.values(property.interiors).some(
+                  (value) => value !== null && value !== false && value !== ""
+                ) && (
+                  <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+                    <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                      Interiors / Furnishings
+                    </h2>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-                {Object.entries(property.interiors).map(([key, value]) => {
-                  const Icon = interiorIcons[key] || HelpCircle;
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                      {Object.entries(property.interiors)
+                        .filter(([key]) => key !== "doorTypeDescription")
+                        .map(([key, value]) => {
+                          const Icon = interiorIcons[key] || HelpCircle;
 
-                  // Format display value
-                  let displayValue = "";
-                  if (typeof value === "boolean")
-                    displayValue = value ? "Yes" : "No";
-                  else if (value === null || value === undefined)
-                    displayValue = "N/A";
-                  else displayValue = value;
+                          // Format display value
+                          let displayValue = "";
+                          if (typeof value === "boolean")
+                            displayValue = value ? "Yes" : "No";
+                          else if (value === null || value === undefined)
+                            displayValue = "N/A";
+                          else displayValue = value;
 
-                  // Optional: prettier label from key
-                  const label = key
-                    .replace(/([A-Z])/g, " $1")
-                    .replace(/^./, (str) => str.toUpperCase());
+                          const label = key
+                            .replace(/([A-Z])/g, " $1")
+                            .replace(/^./, (str) => str.toUpperCase());
 
-                  return (
-                    <div
-                      key={key}
-                      className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
-                    >
-                      <Icon size={18} className="text-gray-500" />
-                      <span>
-                        <strong>{label}:</strong> {displayValue}
-                      </span>
+                          // Tooltip only for doorType
+                          if (
+                            key === "doorType" &&
+                            property.interiors.doorTypeDescription
+                          ) {
+                            return (
+                              <TooltipRoot key={key}>
+                                <TooltipTrigger asChild>
+                                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition cursor-pointer">
+                                    <Icon size={18} className="text-gray-500" />
+                                    <span>
+                                      <strong>{label}:</strong> {displayValue}
+                                    </span>
+                                  </div>
+                                </TooltipTrigger>
+                                <TooltipContent
+                                  side="top"
+                                  className="bg-gray-800 text-white text-xs px-2 py-1 rounded shadow"
+                                >
+                                  {property.interiors.doorTypeDescription}
+                                  <TooltipArrow className="fill-gray-800" />
+                                </TooltipContent>
+                              </TooltipRoot>
+                            );
+                          }
+
+                          // Default render for other fields
+                          return (
+                            <div
+                              key={key}
+                              className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
+                            >
+                              <Icon size={18} className="text-gray-500" />
+                              <span>
+                                <strong>{label}:</strong> {displayValue}
+                              </span>
+                            </div>
+                          );
+                        })}
                     </div>
-                  );
-                })}
-              </div>
-            </div>
+                  </div>
+                )}
+            </TooltipProvider>
           )}
+
+        {/*### SPCIFICATIONS #### */}
+        {Object.values(specifications).some((value) => value) && (
+          <div className="border border-gray-200 rounded-xl p-5 mb-6">
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => setOpenSpec(!openSpec)}
+            >
+              <h2 className="text-xl font-semibold text-gray-800">
+                Specifications
+              </h2>
+              {openSpec ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+            </div>
+
+            {openSpec && (
+              <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                {specEntries.map(([key, value]) => (
+                  <div key={key} className="flex flex-col">
+                    <span className="font-medium capitalize">
+                      {key.replace(/([A-Z])/g, " $1")}
+                    </span>
+                    <span className="text-gray-600">{value}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
 
         {/* GREEN FETARES  */}
 
-        {property.greenFeatures?.length > 0 && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Green Features
-            </h2>
-            <ul className="list-disc ml-5 space-y-1 text-gray-600 text-sm">
-              {property.greenFeatures.map((feature, i) => (
-                <li key={i}>{feature.label || feature.feature}</li>
-              ))}
-            </ul>
-          </div>
-        )}
+        {property.greenFeatures?.length > 0 &&
+          property.greenFeatures[0]?.feature && (
+            <div className="border border-gray-200 rounded-xl p-5 mb-6">
+              <div
+                className="flex justify-between items-center cursor-pointer"
+                onClick={() => setOpenLocationFeatre(!openLocationFeatre)}
+              >
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                  Locations Features
+                </h2>
+                {openLocationFeatre ? (
+                  <ChevronUp size={20} />
+                ) : (
+                  <ChevronDown size={20} />
+                )}
+              </div>
+              {openLocationFeatre && (
+                <ul className="list-disc ml-5 space-y-1 text-gray-600 text-sm">
+                  {property.greenFeatures.map((feature, i) => (
+                    <li key={i}>{feature.label || feature.feature}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          )}
 
         {/* FINANCILA  */}
         {(property.maintenanceCharges ||

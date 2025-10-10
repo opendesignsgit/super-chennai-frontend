@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { API_BASE_URL, LOCAL_API_BASE_URL } from "../../config";
+import { API_BASE_URL } from "../../config";
 
 export default function ContactForm({
   entity = {},
   contactField = "Properties ContactInfo",
-  apiEndpoint = `${LOCAL_API_BASE_URL}/api/contactMessages`,
+  apiEndpoint = `${API_BASE_URL}/api/contactMessages`,
   title = "Contact",
 }) {
   const [formData, setFormData] = useState({

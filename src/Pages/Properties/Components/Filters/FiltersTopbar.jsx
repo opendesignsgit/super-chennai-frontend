@@ -142,15 +142,15 @@ const FiltersTopbar = ({
           />
         </FilterSection>
 
-        {/* Budget */}
-        <FilterSection title="Budget">
+        {/* Budget temp hide */}
+        {/* <FilterSection title="Budget">
           <BudgetSlider
             min={0}
             max={10000000}
             values={[filters.minBudget, filters.maxBudget]}
             onChange={(vals) => onBudgetChange(vals)}
           />
-        </FilterSection>
+        </FilterSection> */}
 
         {/* Bedrooms / BHK */}
         {/* {activeFilterKeys.includes("bhk") && ( */}
@@ -190,7 +190,7 @@ const FiltersTopbar = ({
 
 
         <div className="filter-checkbox mr-2">
-          <span
+          {/* <span
             className="badge cursor-pointer"
             onClick={() => setShowMore((prev) => !prev)}
             style={{
@@ -212,7 +212,7 @@ const FiltersTopbar = ({
                 transition: "transform 0.3s",
               }}
             />
-          </span>
+          </span> */}
           {/* Side Bar */}
           <span
             className="badge cursor-pointer text-purple-600"

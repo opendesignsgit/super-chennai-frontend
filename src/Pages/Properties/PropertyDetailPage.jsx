@@ -17,6 +17,7 @@ import {
   Arrow as TooltipArrow,
 } from "@radix-ui/react-tooltip";
 
+
 import {
   ArrowLeftIcon,
   ArrowRight,
@@ -191,9 +192,9 @@ const PropertyDetailPage = () => {
   if (!property) return <p className="not-found">❌ Property not found</p>;
 
   const getImageUrl = (imgObj) => {
-    if (!imgObj) return "/placeholder.jpg";
+    if (!imgObj) return "../../../public/propertyDefault.png";
     const url = imgObj.url || imgObj.image?.url;
-    if (!url) return "/placeholder.jpg";
+    if (!url) return "../../../public/propertyDefault.png";
     if (url.startsWith("http")) return url;
     return `${API_BASE_URL}${url}`;
   };
@@ -201,41 +202,32 @@ const PropertyDetailPage = () => {
   // Basic property info SILA FILEDS IF NEED NA USE PANAIKALAM
   const location = property?.location?.label || "N/A";
   const status =
-    property?.society?.possessionStatus === "under"
-      ? "Under Construction"
-      : "Ready to Move";
+    property?.society?.possessionStatus || null;
   const title = property?.title || "Untitled Property";
   const purpose = property?.purpose || "sale";
   const ageOfProperty = property?.ageOfProperty || "-";
-  const transactionType = property?.transactionType || "N/A";
+  const transactionType = property?.transactionType || null;
   const agentReraId = property?.agentReraId || "-";
 
   const price = property?.price
     ? `₹${formatPrice(property.price)}`
     : "Price on Request";
 
-  const pricePerSqft = property?.pricePerSqft
-    ? `₹${property.pricePerSqft.toLocaleString()}/sqft`
-    : "N/A";
-  const MaxArea = property?.area
-    ? `${property.area.maxSqft || "N/A"} sqft`
-    : "Area not available";
-  const MiniArea = property?.area
-    ? `${property.area.minSqft || "N/A"} sqft`
-    : "Area not available";
+  const pricePerSqft = property?.pricePerSqft || null;
+  
+  const MaxArea = property?.area.maxSqft || null;
+  const MiniArea = property?.area.minSqft || null;
 
-  const bhk = property?.bhk?.label || "-";
-  const bathrooms = property?.washrooms ?? "-";
-  const furnishing = property?.furnishing || "Not specified";
+
+  const bhk = property?.bhk?.label || null;
+  const bathrooms = property?.washrooms ?? null;
+  const furnishing = property?.furnishing || null;
   // Society / Builder info
-  const societyName = property?.society?.name || "N/A";
-  const builder = property?.society?.builder || "N/A";
-  const totalUnits = property?.society?.totalUnits ?? "-";
-  const possessionStatus =
-    property?.society?.possessionStatus === "under"
-      ? "Under Construction"
-      : "Ready to Move";
-
+  const societyName = property?.society?.name || null;
+  const builder = property?.society?.builder || null;
+  const totalUnits = property?.society?.totalUnits ?? null;
+  const possessionStatus = property?.society?.possessionStatus || null;
+    
   // Location info
   const locationLabel = property?.location?.label || "N/A";
   const state = property?.location?.state || "-";
@@ -309,7 +301,9 @@ const PropertyDetailPage = () => {
         {/* Header */}
         <div className="flex items-center justify-between mb-3">
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800">{price}</h2>
+            <h2 className="text-2xl font-semibold text-[#a34493]">
+              {property.title}
+            </h2>
           </div>
 
           <div className="flex gap-2">
@@ -331,9 +325,10 @@ const PropertyDetailPage = () => {
             )}
           </div>
         </div>
+
         <p className="text-gray-700 text-sm mb-4">
-          {bhk} For Sale in{" "}
-          <span className="font-semibold text-gray-900">{title}</span>,{" "}
+          {bhk} For {property.purpose} in
+          <span className="font-semibold text-gray-900"> {title}</span>,
           {location}
         </p>
 
@@ -439,68 +434,103 @@ const PropertyDetailPage = () => {
         )}
 
         {/* Summary Badges */}
-        <div className="flex flex-wrap gap-3 bg-gray-50 rounded-lg p-2 mb-4">
-          {property?.bedrooms != null && (
-            <div className="flex items-center gap-1 text-gray-700 text-sm">
-              <Bed size={16} /> {property.bedrooms} Beds
-            </div>
-          )}
+        {(property?.bedrooms != null ||
+          bathrooms != null ||
+          property?.parking != null ||
+          furnishing) && (
+          <div className="flex flex-wrap gap-3 bg-gray-50 rounded-lg p-2 mb-4">
+            {property?.bedrooms != null && (
+              <div className="flex items-center gap-1 text-gray-700 text-sm">
+                <Bed size={16} /> {property.bedrooms} Beds
+              </div>
+            )}
 
-          {bathrooms != null && (
-            <div className="flex items-center gap-1 text-gray-700 text-sm">
-              <Bath size={16} /> {bathrooms} Baths
-            </div>
-          )}
+            {bathrooms != null && (
+              <div className="flex items-center gap-1 text-gray-700 text-sm">
+                <Bath size={16} /> {bathrooms} Baths
+              </div>
+            )}
 
-          {property?.parking != null ? (
-            <div className="flex items-center gap-1 text-gray-700 text-sm">
-              <Car size={16} /> {property.parking}
-            </div>
-          ) : null}
+            {property?.parking != null ? (
+              <div className="flex items-center gap-1 text-gray-700 text-sm">
+                <Car size={16} /> {property.parking}
+              </div>
+            ) : null}
 
-          {furnishing ? (
-            <div className="flex items-center gap-1 text-gray-700 text-sm">
-              <Building2 size={16} /> {furnishing}
-            </div>
-          ) : null}
-        </div>
+            {furnishing ? (
+              <div className="flex items-center gap-1 text-gray-700 text-sm">
+                <Building2 size={16} /> {formatLabel(furnishing)}
+
+              </div>
+            ) : null}
+          </div>
+        )}
 
         {/* Property Info */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
-          <div>
-            <p className="text-xs text-gray-500">Maximum Built-Up Area</p>
-            <p className="font-semibold text-gray-800">{MaxArea}</p>
-          </div>
+        {(MiniArea ||
+          MaxArea ||
+          price ||
+          pricePerSqft ||
+          transactionType ||
+          status ||
+          furnishing) && (
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4 mt-10">
+            {MiniArea && (
+              <div>
+                <p className="text-xs text-gray-500">Minimum Area</p>
+                <p className="font-semibold text-gray-800">{MiniArea}</p>
+              </div>
+            )}
 
-          <div>
-            <p className="text-xs text-gray-500">Minimum Built-Up Area</p>
-            <p className="font-semibold text-gray-800">{MiniArea}</p>
-          </div>
+            {MaxArea && (
+              <div>
+                <p className="text-xs text-gray-500">Maximum Area</p>
+                <p className="font-semibold text-gray-800">{MaxArea}</p>
+              </div>
+            )}
 
-          <div>
-            <p className="text-xs text-gray-500">Price Per Unit</p>
-            <p className="font-semibold text-gray-800">{pricePerSqft}</p>
+            {price && (
+              <div>
+                <p className="text-xs text-gray-500">Price</p>
+                <p className="font-semibold text-gray-800">{price}</p>
+              </div>
+            )}
+
+            {pricePerSqft && (
+              <div>
+                <p className="text-xs text-gray-500">Price Per Unit</p>
+                <p className="font-semibold text-gray-800">{pricePerSqft}</p>
+              </div>
+            )}
+
+            {transactionType && (
+              <div>
+                <p className="text-xs text-gray-500">Transaction Type</p>
+                <p className="font-semibold text-gray-800 capitalize">
+                  {formatLabel(transactionType)}
+                </p>
+              </div>
+            )}
+
+            {status && (
+              <div>
+                <p className="text-xs text-gray-500">Status</p>
+                <p className="font-semibold text-gray-800">
+                  {formatLabel(status)}
+                </p>
+              </div>
+            )}
+
+            {/* {furnishing && (
+              <div>
+                <p className="text-xs text-gray-500">Furnished Status</p>
+                <p className="font-semibold text-gray-800">
+                  {formatLabel(furnishing)}
+                </p>
+              </div>
+            )} */}
           </div>
-          <div>
-            <p className="text-xs text-gray-500">Transaction Type</p>
-            <p className="font-semibold text-gray-800 capitalize">
-              {formatLabel(transactionType)}
-            </p>
-          </div>
-          <div>
-            <p className="text-xs text-gray-500">Status</p>
-            <p className="font-semibold text-gray-800">
-              {" "}
-              {formatLabel(status)}
-            </p>
-          </div>
-          <div>
-            <p className="text-xs text-gray-500">Furnished Status</p>
-            <p className="font-semibold text-gray-800">
-              {formatLabel(furnishing)}
-            </p>
-          </div>
-        </div>
+        )}
 
         {/* Action Buttons */}
         <div className="flex items-center justify-start gap-4 pt-3 border-t border-gray-200">
@@ -544,7 +574,6 @@ const PropertyDetailPage = () => {
               </button>
 
               {/* Contact Form */}
-
               <ContactForm
                 entity={{
                   id: property.id,
@@ -594,12 +623,17 @@ const PropertyDetailPage = () => {
             {/* Details */}
             <div className="flex flex-col sm:flex-row flex-wrap justify-between flex-1">
               <div>
-                <h3 className="font-semibold text-gray-800 text-lg">
-                  {property.society.name}
-                </h3>
-                <p className="text-gray-500 text-sm">
-                  by{property.society.builder}
-                </p>
+                {property.society?.name && (
+                  <h3 className="font-semibold text-gray-800 text-lg">
+                    {property.society.name}
+                  </h3>
+                )}
+
+                {property.society?.builder && (
+                  <p className="text-gray-500 text-sm">
+                    by {property.society.builder}
+                  </p>
+                )}
               </div>
 
               <div className="mt-3 sm:mt-0">
@@ -613,24 +647,30 @@ const PropertyDetailPage = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-5 text-sm">
-            <div>
-              <p className="text-gray-500">Price per sqft</p>
-              <p className="font-semibold text-gray-800">₹ {pricePerSqft}</p>
-            </div>
-            <div>
-              <p className="text-gray-500">Configuration</p>
-              <p className="font-semibold text-gray-800"> {bhk} </p>
-            </div>
-            <div>
-              <p className="text-gray-500">Unit</p>
-              <p className="font-semibold text-gray-800">8 Units</p>
-            </div>
+            {pricePerSqft && (
+              <div>
+                <p className="text-gray-500">Price per sqft</p>
+                <p className="font-semibold text-gray-800">₹ {pricePerSqft}</p>
+              </div>
+            )}
+            {bhk && (
+              <div>
+                <p className="text-gray-500">Configuration</p>
+                <p className="font-semibold text-gray-800"> {bhk} </p>
+              </div>
+            )}
+            {property.society?.totalUnits && (
+              <div>
+                <p className="text-gray-500">Unit</p>
+                <p className="font-semibold text-gray-800">{totalUnits}</p>
+              </div>
+            )}
           </div>
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-3 mt-5">
             {/* Primary Button (Filled) */}
-            <button
+            {/* <button
               className="text-white px-5 py-2 rounded-full font-medium transition-all flex items-center gap-2"
               style={{
                 backgroundColor: "#a34493",
@@ -643,10 +683,10 @@ const PropertyDetailPage = () => {
               }}
             >
               <Download size={16} /> Download Brochure
-            </button>
+            </button> */}
 
             {/* Secondary Button (Outline) */}
-            <button
+            {/* <button
               className="px-5 py-2 rounded-full font-medium transition-all border flex items-center gap-2"
               style={{
                 borderColor: "#a34493",
@@ -660,7 +700,7 @@ const PropertyDetailPage = () => {
               }}
             >
               Compare Projects
-            </button>
+            </button> */}
           </div>
         </div>
         {property.content && (
@@ -771,38 +811,38 @@ const PropertyDetailPage = () => {
 
         {/* APPLINCES £££ */}
 
-        {/* {property.appliances &&
+        {property.appliances &&
           Object.values(property.appliances).some(
             (value) => value !== null && value !== false && value !== 0
-          ) && ( */}
-        <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">
-            Appliances
-          </h2>
+          ) && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Appliances
+              </h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
-            {Object.entries(property.appliances).map(([key, value]) => {
-              const Icon = applianceIcons[key] || HelpCircle;
-              return (
-                <div
-                  key={key}
-                  className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
-                >
-                  <Icon size={18} className="text-gray-500" />
-                  <span className="capitalize">
-                    {key.replace(/([A-Z])/g, " $1")}:{" "}
-                    {typeof value === "boolean"
-                      ? value
-                        ? "Yes"
-                        : "No"
-                      : value}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        {/* )} */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
+                {Object.entries(property.appliances).map(([key, value]) => {
+                  const Icon = applianceIcons[key] || HelpCircle;
+                  return (
+                    <div
+                      key={key}
+                      className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition"
+                    >
+                      <Icon size={18} className="text-gray-500" />
+                      <span className="capitalize">
+                        {key.replace(/([A-Z])/g, " $1")}:{" "}
+                        {typeof value === "boolean"
+                          ? value
+                            ? "Yes"
+                            : "No"
+                          : value}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
         {/* RENTAL DETAILS £££ */}
         {property.rentDetails &&
@@ -965,45 +1005,58 @@ const PropertyDetailPage = () => {
             </div>
           )}
 
-        {/* PLOT AREA  */}
+        {/* PLOT AREA */}
+        {property &&
+          (() => {
+            const hasPlotData =
+              property.plotArea ||
+              property.dimensions?.length ||
+              property.dimensions?.width ||
+              property.roadWidth ||
+              property.cornerPlot;
 
-        {property.plotArea && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Plot / Building Details
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Plot Area:</strong> {property.plotArea || "N/A"} sq ft
-                </span>
+            if (!hasPlotData) return null;
+
+            return (
+              <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
+                <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                  Plot / Building Details
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                    <span>
+                      <strong>Plot Area:</strong> {property.plotArea || "N/A"}{" "}
+                      sq ft
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                    <span>
+                      <strong>Length:</strong>{" "}
+                      {property.dimensions?.length || "N/A"} ft
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                    <span>
+                      <strong>Width:</strong>{" "}
+                      {property.dimensions?.width || "N/A"} ft
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                    <span>
+                      <strong>Road Width:</strong> {property.roadWidth || "N/A"}{" "}
+                      ft
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                    <span>
+                      <strong>Corner Plot:</strong>{" "}
+                      {property.cornerPlot ? "Yes" : "No"}
+                    </span>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Length:</strong>{" "}
-                  {property.dimensions?.length || "N/A"} ft
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Width:</strong> {property.dimensions?.width || "N/A"}{" "}
-                  ft
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Road Width:</strong> {property.roadWidth || "N/A"} ft
-                </span>
-              </div>
-              <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                <span>
-                  <strong>Corner Plot:</strong>{" "}
-                  {property.cornerPlot ? "Yes" : "No"}
-                </span>
-              </div>
-            </div>
-          </div>
-        )}
+            );
+          })()}
 
         {/* INTERIOR  */}
 
@@ -1176,7 +1229,6 @@ const PropertyDetailPage = () => {
 
         {/* FAQ  */}
 
-     
         {faq && faq.length > 0 && (
           <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 relative z-10">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">FAQs</h2>

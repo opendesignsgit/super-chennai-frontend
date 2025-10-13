@@ -404,15 +404,15 @@ const FiltersSidebar = ({
         />
       </FilterSection>
 
-      {/* Budget */}
-      <FilterSection title="Budget">
+      {/* Budget  Temp Hide */}
+      {/* <FilterSection title="Budget">
         <BudgetSlider
           min={0}
           max={10000000}
           values={[filters.minBudget, filters.maxBudget]}
           onChange={(vals) => onBudgetChange(vals)}
         />
-      </FilterSection>
+      </FilterSection> */}
 
       {/* DIMENTION  */}
 
@@ -469,9 +469,9 @@ const FiltersSidebar = ({
         </FilterSection>
       )}
 
-      {/* AGE OF PROPERTY  */}
+      {/* AGE OF PROPERTY temp hide  */}
 
-      <FilterSection title="Age of Property">
+      {/* <FilterSection title="Age of Property">
         {[
           { label: "New Years", value: "new years" },
           { label: "0-5 Years", value: "0-5" },
@@ -488,7 +488,7 @@ const FiltersSidebar = ({
             <span>{formatLabel(age.label)}</span>
           </label>
         ))}
-      </FilterSection>
+      </FilterSection> */}
 
       {/* Advanced Filters */}
       {showMore && (
@@ -685,16 +685,16 @@ const FiltersSidebar = ({
         </div>
       )}
 
-      {/* More Filters Toggle */}
+      {/* More Filters Toggle Temp Hide */}
 
-      <div className="propertyViewButtonMore">
+      {/* <div className="propertyViewButtonMore">
         <button
           className={`propertyViewButtonMore custom-width-btn ${showMore ? "active" : ""}`}
           onClick={() => setShowMore((prev) => !prev)}
         >
           {showMore ? "Hide Advanced Filter" : "Advanced Filter"}
         </button>
-      </div>
+      </div> */}
     </aside>
   );
 };

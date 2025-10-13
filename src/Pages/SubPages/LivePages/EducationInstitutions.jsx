@@ -157,7 +157,7 @@ export default function EducationInstitutions() {
         </div>
 
         {/*----------------- Intro Section ----------------*/}
-        {/* <div className="visitIntroParaSection detailIntro !mt-0">
+        <div className="visitIntroParaSection detailIntro !mt-0">
           <div className="container max-w-7xl mx-auto px-4 !mb-0">
             <div
               className={`CostOflivingBackground ${
@@ -222,7 +222,8 @@ export default function EducationInstitutions() {
                       <button
                         key={name}
                         onClick={() => (
-                          handleTabClick(name), setActiveSection(name)
+                          handleTabClick(name),
+                          setActiveSection(name)
                         )}
                         className={`cursor-pointer tabButton px-4 py-2 rounded font-semibold transition ${
                           activeSection === name
@@ -281,7 +282,8 @@ export default function EducationInstitutions() {
                       <button
                         key={name}
                         onClick={() => (
-                          handleTabClick1(name), setActiveSection1(name)
+                          handleTabClick1(name),
+                          setActiveSection1(name)
                         )}
                         className={`cursor-pointer tabButton px-4 py-2 rounded font-semibold transition ${
                           activeSection1 === name
@@ -326,9 +328,9 @@ export default function EducationInstitutions() {
               </div>
             </>
           )}
-        </div> */}
+        </div>
 
-        <div class="visitIntroParaSection detailIntro">
+        {/* <div class="visitIntroParaSection detailIntro">
           <div class="container max-w-7xl mx-auto px-4">
             <div class="CostOflivingBackground scroll-rightCostofLiving">
               <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
@@ -668,7 +670,7 @@ export default function EducationInstitutions() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <LiveSlider />
 

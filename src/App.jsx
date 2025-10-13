@@ -629,8 +629,8 @@ function App() {
           <Route path="/results" element={<SearchResults />} />
 
           <Route path="/blog" element={<BlogList />} />
-          <Route path="/blogdetail/:id" element={<BlogDetails />} />
-          {/* <Route path="/blogdetail/:slug" element={<BlogDetails />} /> */}
+          {/* <Route path="/blogdetail/:id" element={<BlogDetails />} /> */}
+          <Route path="/blog/:slug" element={<BlogDetails />} />
           <Route
             path="/volunteer-in-chennai"
             element={<Volunteer popupFunction={popupFunction} />}

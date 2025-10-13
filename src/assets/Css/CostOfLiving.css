@@ -1945,7 +1945,7 @@ body.popup-open {
 }
 
 .chennaiAppTabContent .newsLetterImage img {
-  object-fit: scale-down;
+  /* object-fit: scale-down; */
 }
 
 .chennaiAppTabContent .titlePublished {
@@ -2096,6 +2096,42 @@ body.popup-open {
   }
   .section-titleFuture h1 {
     font-size: 22px;
+  }
+
+  .chennai-app-flex-container {
+    flex-direction: column;
+  }
+
+  .sideBarChennaiApp {
+    width: 100%;
+    top: 65px;
+    padding: 10px;
+    padding-bottom: 0;
+    z-index: 1000;
+  }
+
+  .sideBarChennaiApp ul {
+    display: flex !important;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+
+  .sideBarChennaiApp ul li {
+    flex-shrink: 0;
+  }
+
+  .sideBarChennaiApp ul li button {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .chennaiappscontainer .p-10 {
+    padding: 20px 10px 20px;
+  }
+
+  .chennaiAppTabContent {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 

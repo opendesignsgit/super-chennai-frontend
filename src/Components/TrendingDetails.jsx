@@ -28,7 +28,10 @@ export default function TrendingDetails() {
       {/* Banner Section */}
       <section className="accaodomationBannerSection">
         <div>
-          <img src="/images/trendingChennai/trending-chennai.jpg" alt="Banner" />
+          <img
+            src="/images/trendingChennai/trending-chennai.jpg"
+            alt="Banner"
+          />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
@@ -63,7 +66,6 @@ export default function TrendingDetails() {
             <div className="EventRight">
               <div className="evderibox">
                 <div className="evderListbox">
-                 
                   <div className="evderViewbox">
                     {event.TrendingCalendarMonth && (
                       <InfoRow
@@ -109,6 +111,29 @@ export default function TrendingDetails() {
                     )}
                   </div>
                 </div>
+
+                {event.TrendingLink && (
+                  <div className="flex justify-center pb-[30px]">
+                    <a href={event.TrendingLink || "#"}>
+                      <button
+                        className="cursor-pointer"
+                        style={{
+                          background: "#a44294",
+                          marginTop: "15px",
+                          color: "white",
+                          padding: "5px 14px",
+                          borderRadius: "5px",
+                          fontFamily: "Poppins",
+                          fontWeight: 500,
+                          width: "auto",
+                          marginTop:"0"
+                        }}
+                      >
+                        Click to View
+                      </button>
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ export default function StateBoardSchool() {
       sectionTitle: "State Board Schools in Chennai",
       sectionDesc:
         "Chennai has a wide range of eateries where you may enjoy the greatest Italian cuisine, both classical and regional. ",
-      image: "/images/education/School/image/igcse-schools-chennai.jpg",
+      image: "/images/education/School/image/state board school.jpg",
       imgAlt: "",
     },
   ];

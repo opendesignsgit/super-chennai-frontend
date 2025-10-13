@@ -13,6 +13,7 @@ import {
 export default function ChennaiApp() {
   const [activeTab, setActiveTab] = useState("Metro / Transit / Travel");
   const mySectionRef = useRef(null);
+  const topRef = useRef(null);
   const [selectedCard, setSelectedCard] = useState(null);
 
   const [activeSubTab, setActiveSubTab] = useState([]);
@@ -31,13 +32,13 @@ export default function ChennaiApp() {
     <div>
       <section className="accaodomationBannerSection">
         <div>
-          <img src="/images/pride-of-chennai/pride-chennai-banner.jpg" alt="" />
+          <img src="/images/app-banner-image.jpg" alt="" />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Pride of Chennai</h3>
+            <h3>Live Chennai Smart</h3>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <a href="">Pride of Chennai</a>{" "}
+              <Link to="/">Home</Link> - <a href="">Live Chennai Smart</a>{" "}
             </div>
           </div>
         </div>
@@ -46,20 +47,39 @@ export default function ChennaiApp() {
             </div> */}
       </section>
 
+      <div className="visitIntroParaSection detailIntro">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="workIntro">
+            {/* <h3>Residential Properties in Chennai</h3> */}
+            <h1>Essential Chennai Apps</h1>
+            <p>
+              From food delivery and grocery shopping to ride-hailing, bill
+              payments, and daily essentials, explore must-have Chennai apps
+              designed to save time, simplify tasks, and keep your day running
+              effortlessly—making life in the city smarter, faster, and more
+              convenient.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="container max-w-7xl mx-auto chennaiappscontainer">
         <div className="flex items-start justify-center p-10">
-          <div className="w-full  bg-white flex">
+          <div className="w-full  bg-white flex chennai-app-flex-container">
             {/* LEFT: Tabs */}
             <div className="w-1/7 border-r border-gray-200 sideBarChennaiApp">
               <ul className="flex flex-col">
                 {tabs.map((tab) => (
                   <li key={tab.id}>
                     <button
-                      onClick={() => setActiveTab(tab.id)}
+                      onClick={() => {
+                        setActiveTab(tab.id);
+                        topRef.current?.scrollIntoView({ behavior: "smooth" });
+                      }}
                       className={`w-full text-left cursor-pointer px-6 py-2 font-medium transition-all ${
                         activeTab === tab.id
-                          ? "bg-[#995098] text-white"
-                          : "hover:bg-[#995098] text-gray-700 hover:text-[#fff]"
+                          ? "bg-[#995098] text-white rounded-[5px]"
+                          : "hover:bg-[#995098] text-gray-700 hover:text-[#fff] rounded-[5px]"
                       }`}
                     >
                       {tab.label}
@@ -70,7 +90,12 @@ export default function ChennaiApp() {
             </div>
 
             {/* RIGHT: Tab Content */}
-            <div className="w-6/7 p-4 chennaiAppTabContent">
+
+            <div
+              className="w-6/7 p-4 chennaiAppTabContent"
+              ref={topRef}
+              style={{ scrollMarginTop: "200px" }}
+            >
               {activeTab === "Metro / Transit / Travel" && (
                 <>
                   <div className="EventsListboxs flex flex-wrap">
@@ -400,15 +425,16 @@ export default function ChennaiApp() {
                   {/* Blue Curved Strip */}
                   <div className="w-2 rounded-l-xl bg-[#a44294]"></div>
 
+                  <button
+                    onClick={() => setSelectedCard(null)}
+                    className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-lg font-semibold popupTableCloseButton z-10"
+                  >
+                    ×
+                  </button>
+
                   {/* Content */}
                   <div className="relative w-full p-6 relativeSectionchennaiApp">
                     {/* Close Button */}
-                    <button
-                      onClick={() => setSelectedCard(null)}
-                      className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-lg font-semibold popupTableCloseButton"
-                    >
-                      ×
-                    </button>
 
                     <div
                     //  className="flex gap-2"
@@ -452,7 +478,7 @@ export default function ChennaiApp() {
                         {selectedCard.WebsiteLink !== "" && (
                           <a
                             target="_blank"
-                            href={selectedCard.IOSLink}
+                            href={selectedCard.WebsiteLink}
                             style={{ marginLeft: "10px" }}
                             class="cursor-pointer tabButton px-4 py-1.5 rounded font-semibold transition !bg-[#a44294] text-white !font-medium"
                           >

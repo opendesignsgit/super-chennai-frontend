@@ -169,6 +169,10 @@
   margin-left: 20px;
 }
 
+.BlogDetailPageId .blog-content p span {
+  font-weight: 800;
+}
+
 .blog-content a {
   color: #995098;
   margin-top: 9px;

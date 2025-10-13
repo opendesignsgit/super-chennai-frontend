@@ -36,9 +36,9 @@ export default function ChennaiApp() {
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Pride of Chennai</h3>
+            <h3>Live Chennai Smart</h3>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <a href="">Pride of Chennai</a>{" "}
+              <Link to="/">Home</Link> - <a href="">Live Chennai Smart</a>{" "}
             </div>
           </div>
         </div>
@@ -46,6 +46,22 @@ export default function ChennaiApp() {
               <Search />
             </div> */}
       </section>
+
+      <div className="visitIntroParaSection detailIntro">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="workIntro">
+            {/* <h3>Residential Properties in Chennai</h3> */}
+            <h1>Essential Chennai Apps</h1>
+            <p>
+              From food delivery and grocery shopping to ride-hailing, bill
+              payments, and daily essentials, explore must-have Chennai apps
+              designed to save time, simplify tasks, and keep your day running
+              effortlessly—making life in the city smarter, faster, and more
+              convenient.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <div className="container max-w-7xl mx-auto chennaiappscontainer">
         <div className="flex items-start justify-center p-10">
@@ -62,8 +78,8 @@ export default function ChennaiApp() {
                       }}
                       className={`w-full text-left cursor-pointer px-6 py-2 font-medium transition-all ${
                         activeTab === tab.id
-                          ? "bg-[#995098] text-white"
-                          : "hover:bg-[#995098] text-gray-700 hover:text-[#fff]"
+                          ? "bg-[#995098] text-white rounded-[5px]"
+                          : "hover:bg-[#995098] text-gray-700 hover:text-[#fff] rounded-[5px]"
                       }`}
                     >
                       {tab.label}
@@ -75,7 +91,11 @@ export default function ChennaiApp() {
 
             {/* RIGHT: Tab Content */}
 
-            <div className="w-6/7 p-4 chennaiAppTabContent" ref={topRef} style={{scrollMarginTop:"200px"}}>
+            <div
+              className="w-6/7 p-4 chennaiAppTabContent"
+              ref={topRef}
+              style={{ scrollMarginTop: "200px" }}
+            >
               {activeTab === "Metro / Transit / Travel" && (
                 <>
                   <div className="EventsListboxs flex flex-wrap">

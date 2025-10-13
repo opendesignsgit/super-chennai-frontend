@@ -6043,28 +6043,174 @@ All supplies & tools provided
 No prior knowledge needed—just bring your enthusiasm
 🎟 Note: Seats are limited—secure your spot early! `,
   },
+
+  {
+    clickHere: "hello everyOne",
+    url: "chennai-esports-global-championship-(CEGC)-2025",
+    id: 192,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Agricultural Festival / Traditional Farming / Tamil Nadu 2025",
+    metaDescriptionEvent:
+      "Celebrate Agricultural Festival 2025 in Tamil Nadu with traditional farming, native crops, organic practices, cultural heritage, and rural lifestyle.",
+    conicallinkEvent: "/eventsdetails/191",
+    siteLink: "https://www.instagram.com/tnhorticulture/p/DO3H3SpiUra/",
+    EventsCalendarTitle: "Chennai Esports Global Championship (CEGC) 2025",
+    EventsCalendarContent:
+      "Chennai is set to host India’s largest esports event this November — the Chennai Esports..",
+    EventsCalendarMonth: "07 Nov – 09 Nov, 2025",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Game",
+    image: "/images/HomePage-Images/Events/Newevents/368.jpg",
+    link: "/events",
+    location: "Jawaharlal Nehru Indoor Stadium, Chennai",
+    language: "Sports Development Authority of Tamil Nadu (SDAT) & Skyesports",
+    hours: "",
+    ageLimit: "",
+    rleigion: "",
+    aboutFull: `
+    <p>
+    Chennai is set to host India’s largest esports event this November — the Chennai Esports Global Championship (CEGC). This grand international tournament will feature top-level competitions in Counter-Strike 2 (CS2) and Battlegrounds Mobile India (BGMI), bringing together global gamers and esports enthusiasts under one roof.
+    </p>
+    <ul>
+      <li>CS2 Tournament: November 7–9, 2025 with a $50,000 prize pool</li>
+      <li>BGMI Tournament: November 14–16, 2025 with a ₹50 lakh prize</li>
+    
+    </ul>
+      </br>
+  `,
+  },
 ];
 
 export const panesContent = [
   {
-    id: 1,
-    name: "Coolie",
-    para: "14th August 2025",
-    TrendingCalendarMonth: "14th August 2025",
+    id: 0,
+    name: "JIGGLY CAT PUDDING – Viral Cute Dessert in Chennai!",
+    para: "Every Day",
+    TrendingCalendarMonth: "Every Day",
     TrendingCalendarTime: "",
-    TrendingCalendarCategory: "About the movie",
-    image: "/images/trendingChennai/Coolie-Trending-Detail.jpg",
-    Homeimage: "/images/trendingChennai/coolie-Trending.jpg",
+    TrendingCalendarCategory: "Desserts",
+    image: "/images/trendingChennai/365.jpg",
+    Homeimage: "/images/trendingChennai/002.jpg",
     link: "/fake-sangeet-2.0",
-    duration: "2D, (Tamil,Kannada,Telugu)",
+    duration: "",
     ageRestriction: "",
     language: "",
-    genre: "2h 49m - Action, Thriller - A",
-    venue: "French Village, ECR",
+    genre: "",
+    venue: "@barrocco22.adyar (Adyar branch)",
     trendingDetails: `
-  Coolie is a multilingual movie starring Rajinikanth in the lead role. It is directed by Lokesh Kanagaraj.
+  Meet Chennai’s cutest pudding! The Jiggly Cat Pudding wiggles and jiggles when you shake it, making it a fun treat for both kids and adults. With a mild coconut flavor, it’s as delicious as it is adorable — almost too cute to eat!
     `,
+    TrendingLink: "https://www.instagram.com/reel/C3heSbhrhMt/?hl=en ",
   },
+
+  {
+    id: -1,
+    name: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+    para: "Every Day",
+    TrendingCalendarMonth: "Every Day",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "Desserts",
+    image: "/images/trendingChennai/367.jpg",
+    Homeimage: "/images/trendingChennai/004.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "@barrocco22.adyar (Adyar branch)",
+    trendingDetails: `
+  Ever wondered what water in dessert form would taste like? That’s exactly the concept behind the Raindrop Pudding. This minimalist dessert focuses on experience over taste, offering a near flavorless, almost magical texture that’s perfect for adventurous foodies.
+  Event / Experience Details:
+
+Ideal for those who love trying unique and innovative desserts.
+Makes for a fun, conversation-starting treat on your dessert tour in Chennai.
+Exclusively available at @barrocco22.adyar (Adyar branch)
+☎️ Call to check availability: +91 98849 52226
+✅ 100% Veg & Halal
+    `,
+    TrendingLink: "https://www.instagram.com/reel/C3heSbhrhMt/?hl=en ",
+  },
+
+  {
+    id: -2,
+    name: "Dark Chocolate Napping Teddy Dessert – Viral Dessert in Chennai!",
+    para: "Every Day",
+    TrendingCalendarMonth: "Every Day",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "Desserts",
+    image: "/images/trendingChennai/364.jpg",
+    Homeimage: "/images/trendingChennai/001.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "",
+    trendingDetails: `
+  The Dark Chocolate Napping Teddy (also called Sleeping Teddy Dessert) is a viral treat straight from London, now delighting Chennai’s dessert scene! This adorable chocolate teddy is crafted with precision, hiding a silky mango mousse layered with biscoff crumbs inside. Every bite combines rich chocolate, creamy mango, and a crunchy biscuit layer, creating a symphony of textures and flavors.
+
+More than just a dessert, it’s a mini experience — whimsical, fun, and irresistibly cute. Its lifelike teddy shape and delicate craftsmanship make it Instagram-perfect, ideal for sharing on social media or gifting to someone special. Whether you’re a dessert lover, a chocolate enthusiast, or simply in search of something unique, this treat brings together playfulness and indulgence in every bite.
+
+✨ Highlights:
+
+Cute teddy design that’s almost too adorable to eat
+Smooth mango mousse balanced with crunchy biscoff crumbs
+Rich dark chocolate shell for a decadent finish
+Perfect for gifting, special occasions, or personal indulgence
+Combines visual appeal with delightful textures and flavors
+    `,
+    TrendingLink: "https://www.instagram.com/p/DOscSLtksy4/",
+  },
+
+  {
+    id: -3,
+    name: "Eventide Coffee – Minimalist Café in Chennai",
+    para: "Every Day",
+    TrendingCalendarMonth: "Every Day",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "Desserts",
+    image: "/images/trendingChennai/366.jpg",
+    Homeimage: "/images/trendingChennai/003.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "Injambakkam, Chennai ",
+    trendingDetails: `
+          Eventide Coffee is Chennai’s newest minimalist café, designed for those who love calm, cozy spaces paired with curated coffee experiences. Whether you’re a coffee aficionado or just looking for a peaceful spot to unwind, this café offers carefully selected brews, from rich espresso shots to smooth filter coffees, all served with attention to detail.
+
+The interior reflects a modern, minimalist aesthetic, creating the perfect backdrop for catching up with friends, working remotely, or simply enjoying a quiet moment with a cup of coffee. Each drink is crafted to highlight the unique flavors of the beans, making it a treat for both the eyes and the palate.
+
+✨ Highlights:
+
+Curated coffee selections and specialty brews
+Minimalist, cozy, and Instagrammable interior
+Perfect for relaxing, working, or casual meetups
+Focus on quality, flavor, and presentation
+    `,
+    TrendingLink: "https://www.instagram.com/p/DOscSLtksy4/",
+  },
+  // {
+  //   id: 1,
+  //   name: "Coolie",
+  //   para: "14th August 2025",
+  //   TrendingCalendarMonth: "14th August 2025",
+  //   TrendingCalendarTime: "",
+  //   TrendingCalendarCategory: "About the movie",
+  //   image: "/images/trendingChennai/Coolie-Trending-Detail.jpg",
+  //   Homeimage: "/images/trendingChennai/coolie-Trending.jpg",
+  //   link: "/fake-sangeet-2.0",
+  //   duration: "2D, (Tamil,Kannada,Telugu)",
+  //   ageRestriction: "",
+  //   language: "",
+  //   genre: "2h 49m - Action, Thriller - A",
+  //   venue: "French Village, ECR",
+  //   trendingDetails: `
+  // Coolie is a multilingual movie starring Rajinikanth in the lead role. It is directed by Lokesh Kanagaraj.
+  //   `,
+  // },
 
   {
     id: 2,

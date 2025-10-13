@@ -169,7 +169,7 @@
   margin-left: 20px;
 }
 
-.BlogDetailPageId .blog-content p span {
+.BlogDetailPageId .blog-content p span:first-child {
   font-weight: 800;
 }
 

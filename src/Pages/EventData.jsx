@@ -5092,7 +5092,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarTitle: "AMG Experience Chennai",
     EventsCalendarContent:
       "The AMG Experience is Mercedes-AMG’s signature high-performance driving program",
-    EventsCalendarMonth: "11–12 Oct, 2025",
+    EventsCalendarMonth: "11 – 12 Oct, 2025",
     EventsCalendarTime: "7:30 AM",
     EventsCalendarCategory: "Auto / Motorsports",
     image: "/images/HomePage-Images/Events/Newevents/308.jpg",
@@ -5124,7 +5124,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarTitle: "The October Theater Feast In Chennai",
     EventsCalendarContent:
       "From 24th to 26th October 2025, the Sir Mutha Venkatasubba Rao Concert Hall,",
-    EventsCalendarMonth: "24-26 Oct 2025",
+    EventsCalendarMonth: "24 – 26 Oct 2025",
     EventsCalendarTime: "2hrs 30 Minutes",
     EventsCalendarCategory: "Theatre / Cultural",
     image: "/images/HomePage-Images/Events/Newevents/313.jpg",
@@ -5167,7 +5167,7 @@ Kalai is one of India’s leading illusionists, with over 3,000 shows across 28 
     EventsCalendarTitle: "Velaan Agricultural Festival 2025",
     EventsCalendarContent:
       "The Velaan Agricultural Festival 2025 is a grand celebration of farming and agrarian heritage",
-    EventsCalendarMonth: "27-28 Sept 2025",
+    EventsCalendarMonth: "27 – 28 Sept 2025",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Expo / Agriculture",
     image: "/images/HomePage-Images/Events/Newevents/312.jpg",
@@ -5427,7 +5427,7 @@ Experience a unique, interactive book launch like no other
     EventsCalendarTitle: "Kalaivilasam",
     EventsCalendarContent:
       "Two-day vibrant pop-up celebrating creativity, talent, and local makers",
-    EventsCalendarMonth: "11-13 Nov 2025",
+    EventsCalendarMonth: "11 – 13 Nov 2025",
     EventsCalendarTime: "10:00 AM",
     EventsCalendarCategory: "Pop-up Market",
     image: "/images/HomePage-Images/Events/Newevents/324.jpg",
@@ -5574,7 +5574,7 @@ Experience a Parisian-inspired night of creativity in Chennai Venue: Alliance Fr
     EventsCalendarTitle: "Navratri Celebration Camp",
     EventsCalendarContent:
       "La Nuit Blanche (“The White Night”) is an all-night arts festival originating in Paris in 2002",
-    EventsCalendarMonth: "1-3 Oct 2025",
+    EventsCalendarMonth: "1 – 3 Oct 2025",
     EventsCalendarTime: "10:00 AM – 1:00 PM",
     EventsCalendarCategory: "Navratri Celebration Camp",
     image: "/images/HomePage-Images/Events/Newevents/317.jpg",
@@ -5840,7 +5840,7 @@ Celebrate your achievements with medals, certificates, and trophies
     EventsCalendarTitle: "Diwali Workshop For Kids",
     EventsCalendarContent:
       "A 2-day Diwali Workshop / Festival of Lights Celebration filled with fun, creativity, and festive vibes",
-    EventsCalendarMonth: "18-19 Oct 2025",
+    EventsCalendarMonth: "18 – 19 Oct 2025",
     EventsCalendarTime: "10:00 AM – 1:00 PM",
     EventsCalendarCategory: "Workshop",
     image: "/images/HomePage-Images/Events/Newevents/338.jpg",

@@ -6058,8 +6058,8 @@ No prior knowledge needed—just bring your enthusiasm
     EventsCalendarTitle: "Chennai Esports Global Championship (CEGC) 2025",
     EventsCalendarContent:
       "Chennai is set to host India’s largest esports event this November — the Chennai Esports..",
-    EventsCalendarMonth: "07 Nov – 09 Nov, 2025",
-    EventsCalendarTime: "",
+    EventsCalendarMonth: "14 Nov – 16 Nov, 2025",
+    EventsCalendarTime: "7pm - 9pm",
     EventsCalendarCategory: "Game",
     image: "/images/HomePage-Images/Events/Newevents/368.jpg",
     link: "/events",
@@ -6190,7 +6190,7 @@ Minimalist, cozy, and Instagrammable interior
 Perfect for relaxing, working, or casual meetups
 Focus on quality, flavor, and presentation
     `,
-    TrendingLink: "https://www.instagram.com/p/DOscSLtksy4/",
+    TrendingLink: "https://maps.app.goo.gl/WJhhy5LzkiW94FNw8 ",
   },
   // {
   //   id: 1,

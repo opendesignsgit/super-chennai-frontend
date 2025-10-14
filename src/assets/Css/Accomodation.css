@@ -27,8 +27,17 @@
 .accodoamationBannerText h3 {
   color: #000;
 }
+.accodoamationBannerText h1 {
+  color: #000;
+}
 
 .accodoamationBannerText h3 {
+  font-family: "NewAmsterdam";
+  font-size: 100px;
+  line-height: clamp(44px, 6vw, 77px);
+  color: #fff;
+}
+.accodoamationBannerText h1 {
   font-family: "NewAmsterdam";
   font-size: 100px;
   line-height: clamp(44px, 6vw, 77px);
@@ -346,6 +355,10 @@
     font-size: 76px;
     line-height: 77px;
   }
+    .accodoamationBannerText h1 {
+    font-size: 76px;
+    line-height: 77px;
+  }
 }
 
 @media (max-width: 1600px) and (min-width: 1300px) {
@@ -353,7 +366,10 @@
     font-size: 70px;
     line-height: 77px;
   }
-
+  .accodoamationBannerText h1 {
+    font-size: 70px;
+    line-height: 77px;
+  }
   .AccodContentsSection1 h3 {
     font-size: 60px;
     line-height: 62px;
@@ -373,6 +389,11 @@
     font-size: 60px;
     line-height: 67px;
   }
+    .accodoamationBannerText h1 {
+    font-size: 60px;
+    line-height: 67px;
+  }
+
 
   .accodoamationBannerText .breadCrum {
     margin-top: 0px;
@@ -394,6 +415,10 @@
 
 @media (max-width: 1100px) and (min-width: 1024px) {
   .accodoamationBannerText h3 {
+    font-size: 60px;
+    line-height: 67px;
+  }
+    .accodoamationBannerText h1 {
     font-size: 60px;
     line-height: 67px;
   }
@@ -528,6 +553,11 @@
     font-size: 44px;
     line-height: 47px;
   }
+    .accodoamationBannerText h1 {
+    font-size: 44px;
+    line-height: 47px;
+  }
+
 
   .accodoamationBannerText .breadCrum {
     margin-top: 0px;
@@ -570,7 +600,11 @@
     font-size: 37px;
     line-height: clamp(40px, 6vw, 77px);
   }
-
+  .accodoamationBannerText h1 {
+    font-size: 30px;
+    font-size: 37px;
+    line-height: clamp(40px, 6vw, 77px);
+  }
   .AccodContentsSection {
     width: 90%;
   }

@@ -6387,6 +6387,7 @@ Focus on quality, flavor, and presentation
 
 export const prideofchennaidata = [
   {
+    id: 1,
     image: "/images/pride-of-chennai/viswanathan-anand.jpg",
     name: "V.Anand",
     profession: "Mayiladuthurai, Tamil Nadu.",
@@ -6434,6 +6435,7 @@ export const prideofchennaidata = [
   },
 
   {
+    id: 2,
     image: "/images/pride-of-chennai/ajithkumar-photo.jpg",
     name: "Ajith Kumar ",
     profession: "Hyderabad, Telangana",
@@ -6483,6 +6485,7 @@ export const prideofchennaidata = [
   },
 
   {
+    id: 3,
     image: "/images/pride-of-chennai/narain-karthikeyan.jpg",
     name: "Narain Karthikeyan",
     profession: "Coimbatore, Tamil Nadu.",
@@ -6521,8 +6524,9 @@ export const prideofchennaidata = [
     category: "Motorsport and Racing",
   },
   {
+    id: 4,
     image: "/images/pride-of-chennai/ravichandran-ashwin-cricket.jpg",
-    name: "Ravichandran Ashwin (Cricket)",
+    name: "Ravichandran Ashwin",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Right-arm off-spin bowler, Right-hand lower-order batsman",
@@ -6548,8 +6552,9 @@ export const prideofchennaidata = [
   },
 
   {
+    id: 5,
     image: "/images/pride-of-chennai/dinesh-karthik-cricket.jpg",
-    name: "Dinesh Karthik (Cricket)",
+    name: "Dinesh Karthik",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Wicketkeeper-batsman, Right-hand middle-order batsman",
@@ -6575,8 +6580,9 @@ export const prideofchennaidata = [
     category: "Cricketers",
   },
   {
+    id: 6,
     image: "/images/pride-of-chennai/murali-vijay-cricket.jpg",
-    name: "Murali Vijay (Cricket)",
+    name: "Murali Vijay",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Opening batsman, Right-hand opener",
@@ -6604,8 +6610,9 @@ export const prideofchennaidata = [
     category: "Cricketers",
   },
   {
+    id: 7,
     image: "/images/pride-of-chennai/v-badrinath-cricket.jpg",
-    name: "V. Badrinath (Cricket)",
+    name: "V. Badrinath",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Right-hand middle-order batsman",
@@ -6635,8 +6642,9 @@ export const prideofchennaidata = [
     category: "Cricketers",
   },
   {
+    id: 8,
     image: "/images/pride-of-chennai/kris-srikkanth-cricket.jpg",
-    name: "Kris Srikkanth (Cricket)",
+    name: "Kris Srikkanth",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Right-hand opening batsman",
@@ -6666,8 +6674,9 @@ export const prideofchennaidata = [
     category: "Cricketers",
   },
   {
+    id: 9,
     image: "/images/pride-of-chennai/lakshmipathy-balaji-cricket.jpg",
-    name: "Lakshmipathy Balaji (Cricket)",
+    name: "Lakshmipathy Balaji",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Right-arm fast-medium bowler",
@@ -6692,8 +6701,9 @@ export const prideofchennaidata = [
     category: "Cricketers",
   },
   {
+    id: 10,
     image: "/images/pride-of-chennai/sadagoppan-ramesh-cricket.jpg",
-    name: "Sadagoppan Ramesh (Cricket)",
+    name: "Sadagoppan Ramesh",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Left-hand opening batsman",
@@ -6717,8 +6727,9 @@ export const prideofchennaidata = [
     category: "Cricketers",
   },
   {
+    id: 11,
     image: "/images/pride-of-chennai/s-venkataraghavan-cricket.jpg",
-    name: "S. Venkataraghavan (Cricket)",
+    name: "S. Venkataraghavan",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Right-arm off-spin bowler & Test umpire",
@@ -6741,8 +6752,9 @@ export const prideofchennaidata = [
     category: "Cricketers",
   },
   {
+    id: 12,
     image: "/images/pride-of-chennai/w-v-raman-cricket.jpg",
-    name: "W. V. Raman (Cricket)",
+    name: "W. V. Raman",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Right-hand middle-order batsman",
@@ -6765,8 +6777,9 @@ export const prideofchennaidata = [
     category: "Cricketers",
   },
   {
+    id: 13,
     image: "/images/pride-of-chennai/washington-sundar-cricket.jpg",
-    name: "Washington Sundar (Cricket)",
+    name: "Washington Sundar",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -6828,8 +6841,9 @@ export const prideofchennaidata = [
     category: "Cricketers",
   },
   {
+    id: 14,
     image: "/images/pride-of-chennai/gukesh-dommaraju-chess.jpg",
-    name: "Gukesh Dommaraju (Chess)",
+    name: "Gukesh Dommaraju",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -6865,8 +6879,9 @@ export const prideofchennaidata = [
     category: "Chess",
   },
   {
+    id: 15,
     image: "/images/pride-of-chennai/r-praggnanandhaa-chess.jpg",
-    name: "R. Praggnanandhaa (Chess)",
+    name: "R. Praggnanandhaa",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Chess Grandmaster (one of the youngest in history)",
@@ -6894,8 +6909,9 @@ export const prideofchennaidata = [
     category: "Chess",
   },
   {
+    id: 16,
     image: "/images/pride-of-chennai/vaishali-ramesh-babu-chess.jpg",
-    name: "Vaishali Ramesh Babu (Chess)",
+    name: "Vaishali Ramesh Babu",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Chess Woman Grandmaster (WGM) & International Master (IM)",
@@ -6930,8 +6946,9 @@ export const prideofchennaidata = [
     category: "Chess",
   },
   {
+    id: 17,
     image: "/images/pride-of-chennai/vijay-amritraj-tennis.jpg",
-    name: "Vijay Amritraj (Tennis)",
+    name: "Vijay Amritraj",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Former professional tennis player & sports commentator",
@@ -6974,7 +6991,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/anand-amritraj-tennis.jpg",
-    name: "Anand Amritraj (Tennis)",
+    name: "Anand Amritraj",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Former professional tennis player & Davis Cup player",
@@ -7001,7 +7018,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/ramesh-krishnan-tennis.jpg",
-    name: "Ramesh Krishnan (Tennis)",
+    name: "Ramesh Krishnan",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -7045,7 +7062,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/ramkumar-ramanathan-tennis.jpg",
-    name: "Ramkumar Ramanathan (Tennis)",
+    name: "Ramkumar Ramanathan",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -7089,7 +7106,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/ashok-amritraj-tennis.jpg",
-    name: "Ashok Amritraj (Tennis)",
+    name: "Ashok Amritraj",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -7132,7 +7149,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/sharath-kamal-table-tennis.jpg",
-    name: "Sharath Kamal (Table Tennis)",
+    name: "Sharath Kamal",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Professional Table Tennis Player, Right-hand attacker",
@@ -7175,7 +7192,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/dipika-pallikal-squash.jpg",
-    name: "Dipika Pallikal (Squash)",
+    name: "Dipika Pallikal",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Professional Squash Player, Right-hand attacker",
@@ -7217,7 +7234,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/joshna-chinappa-squash.jpg",
-    name: "Joshna Chinappa (Squash)",
+    name: "Joshna Chinappa",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Professional Squash Player, Right-hand attacker",
@@ -7261,7 +7278,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/syed-suhail-pasha-football.jpg",
-    name: "Syed Suhail Pasha (Football)",
+    name: "Syed Suhail Pasha",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Forward",
@@ -7303,7 +7320,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/rajendran-mani-body-builder.jpg",
-    name: "Rajendran Mani (Body Builder)",
+    name: "Rajendran Mani",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Bodybuilder; 14× Mr. India, 3× Mr. Asia, 2× Mr. World",
@@ -7352,7 +7369,7 @@ export const prideofchennaidata = [
   },
   // {
   //   image: "/images/pride-of-chennai/bharat-raj-body-builder.jpg",
-  //   name: "Bharat Raj (Body Builder)",
+  //   name: "Bharat Raj",
   //   profession: "Chennai, Tamil Nadu.",
   //   bornPlace: "Chennai, Tamil Nadu",
   //   natureofWork: " Bodybuilder; Contemporary fitness athlete",
@@ -7376,7 +7393,7 @@ export const prideofchennaidata = [
   // },
   {
     image: "/images/pride-of-chennai/aditya-patel-racing-driver.jpg",
-    name: "Aditya Patel (Racing Driver)",
+    name: "Aditya Patel",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Professional Racing Driver, Formula & GT Cars",
@@ -7429,7 +7446,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/karun-chandhok-f1-driver-commentator.jpg",
-    name: "Karun Chandhok (F1 Driver & Commentator)",
+    name: "Karun Chandhok",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Formula 1 Driver & Racing Commentator",
@@ -7475,7 +7492,7 @@ export const prideofchennaidata = [
   // },
   // {
   //   image: "/images/pride-of-chennai/mahaveer-raghunathan-racing-driver.jpg",
-  //   name: "Mahaveer Raghunathan (Racing Driver)",
+  //   name: "Mahaveer Raghunathan",
   //   profession: "Chennai, Tamil Nadu.",
   //   bornPlace: "Chennai, Tamil Nadu",
   //   natureofWork: "Professional Racing Driver, Formula Series",
@@ -7502,7 +7519,7 @@ export const prideofchennaidata = [
   // },
   {
     image: "/images/pride-of-chennai/alisha-abdullah-motorsport-racing.jpg",
-    name: "Alisha Abdullah (Motorsport / Racing)",
+    name: "Alisha Abdullah",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Alisha Abdullah (Motorsport / Racing)",
@@ -7527,7 +7544,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/r-k-narayan-writer.jpg",
-    name: "R. K. Narayan (Writer)",
+    name: "R. K. Narayan",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Renowned Indian Novelist & Short Story Writer",
@@ -7605,7 +7622,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/sundar-pichai-business-tech.jpg",
-    name: "Sundar Pichai (Business / Tech)",
+    name: "Sundar Pichai",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "CEO of Google & Alphabet",
@@ -7643,7 +7660,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/indra-nooyi-business.jpg",
-    name: "Indra Nooyi (Business)",
+    name: "Indra Nooyi",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Former Chairperson & CEO of PepsiCo",
@@ -7686,7 +7703,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/v-l-ethiraj-education.jpg",
-    name: "V. L. Ethiraj (Education)",
+    name: "V. L. Ethiraj",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Founder, Ethiraj College for Women",
@@ -7728,7 +7745,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/rajalakshmi-parthasarathy-education.jpg",
-    name: "Rajalakshmi Parthasarathy (Education)",
+    name: "Rajalakshmi Parthasarathy",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Founder, Padma Seshadri Bala Bhavan",
@@ -7748,7 +7765,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/bala-v-balachandran-education.jpg",
-    name: "Bala V. Balachandran (Education)",
+    name: "Bala V. Balachandran",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -7772,7 +7789,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/jeppiaar-education.jpg",
-    name: "Jeppiaar (Education)",
+    name: "Jeppiaar",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -7811,7 +7828,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/subra-suresh-scientist-engineer.jpg",
-    name: "Subra Suresh (Education / Science)",
+    name: "Subra Suresh",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -7835,7 +7852,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/dhanush-actor-singer-producer.jpg",
-    name: "Dhanush (Actor / Singer / Producer)",
+    name: "Dhanush",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Actor, Singer, Producer",
@@ -7864,7 +7881,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/a-r-rahman.jpg",
-    name: "A. R. Rahman (Composer / Musician)",
+    name: "A. R. Rahman",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Composer, Music Producer",
@@ -7892,7 +7909,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/actor-vijay.jpg",
-    name: "Vijay (Actor)",
+    name: "Vijay",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Leading Tamil Actor",
@@ -7926,7 +7943,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/vikram-actor.jpg",
-    name: "Vikram (Actor)",
+    name: "Vikram",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Leading Tamil Actor",
@@ -7951,7 +7968,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/suriya-sivakumar-actor.jpg",
-    name: "Suriya Sivakumar (Actor)",
+    name: "Suriya Sivakumar",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Leading Tamil Actor",
@@ -7983,7 +8000,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/yuvan-shankar-raja-composer-musician.jpg",
-    name: "Yuvan Shankar Raja (Composer / Musician)",
+    name: "Yuvan Shankar Raja",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Music Composer",
@@ -8018,7 +8035,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/santhanam-actor-comedian.jpg",
-    name: "Santhanam (Actor / Comedian)",
+    name: "Santhanam",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Actor / Comedian",
@@ -8059,7 +8076,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/anirudh-ravichander-composer-musician.jpg",
-    name: "Anirudh Ravichander (Composer / Musician)",
+    name: "Anirudh Ravichander",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Composer, Musician",
@@ -8085,7 +8102,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/vijay-yesudas-playback-singer.jpg",
-    name: "Vijay Yesudas (Playback Singer)",
+    name: "Vijay Yesudas",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Playback Singer",
@@ -8110,7 +8127,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/chitra-visweswaran-dancer.jpg",
-    name: "Chitra Visweswaran (Dancer)",
+    name: "Chitra Visweswaran",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -8145,7 +8162,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/padma-subrahmanyam-dancer.jpg",
-    name: "Padma Subrahmanyam (Dancer)",
+    name: "Padma Subrahmanyam",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -8185,7 +8202,7 @@ export const prideofchennaidata = [
   {
     image:
       "/images/pride-of-chennai/sri-sabhapati-swami-religion-spiritual-leader.jpg",
-    name: "Sri Sabhapati Swami (Religion / Spiritual Leader)",
+    name: "Sri Sabhapati Swami",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "19th-century Yogi & Author",
@@ -8226,7 +8243,7 @@ export const prideofchennaidata = [
   {
     image:
       "/images/pride-of-chennai/sri-sabhapati-swami-religion-spiritual-leader.jpg",
-    name: "Paruthiyur K. Santhanaraman (Religion / Cultural Writer)",
+    name: "Paruthiyur K. Santhanaraman",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Religious Writer",
@@ -8266,7 +8283,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/subra-suresh-scientist-engineer.jpg",
-    name: "Subra Suresh (Scientist / Engineer)",
+    name: "Subra Suresh",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:
@@ -8303,7 +8320,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/kannan-soundararajan-mathematician.jpg",
-    name: "Kannan Soundararajan (Mathematician)",
+    name: "Kannan Soundararajan",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Mathematician, Professor",
@@ -8340,7 +8357,7 @@ export const prideofchennaidata = [
   {
     image:
       "/images/pride-of-chennai/kirthi-jayakumar-social-impact-leader-entrepreneur.jpg",
-    name: "Kirthi Jayakumar (Social Impact Leader / Entrepreneur)",
+    name: "Kirthi Jayakumar",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "Social Entrepreneur, Activist",
@@ -8377,7 +8394,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/ashok-elluswamy-engineer.jpg",
-    name: "Ashok Elluswamy (Engineer)",
+    name: "Ashok Elluswamy",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork: "AI & Autopilot Engineer, Tesla",
@@ -8415,7 +8432,7 @@ export const prideofchennaidata = [
   },
   {
     image: "/images/pride-of-chennai/chef-damodharan-chef.jpg",
-    name: "Chef Damodharan (Chef)",
+    name: "Chef Damodharan",
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Chennai, Tamil Nadu",
     natureofWork:

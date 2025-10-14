@@ -41,35 +41,33 @@ export default function PrideofChennaiData() {
         "Table Tennis",
         "Squash",
         "Football",
-          "Motorsport and Racing",
+        "Motorsport and Racing",
         "Bodybuilding",
-      
       ],
     },
     {
       label: "Entertainment",
       value: "entertainment",
-      subcategories: ["Singers","Music", "Dance", "Writer"],
+      subcategories: ["Singers", "Music", "Dance", "Writer"],
     },
     // {
     //   label: "Culture & Religion",
     //   value: "culture_religion",
     //   subcategories: [
     //     "Religion",
-      
+
     //   ],
     // },
     {
       label: "Tech",
       value: "social_tech_chef",
-      subcategories: [ "Tech"],
+      subcategories: ["Tech"],
     },
     {
       label: "Medicine / Oncology",
       value: "science_research",
       subcategories: ["Medicine / Oncology"],
     },
-
   ];
 
   const [popupIsOpen, setPopupIsOpen] = useState(false);
@@ -167,7 +165,7 @@ export default function PrideofChennaiData() {
                   }}
                 >
                   {sub}
-                  {console.log(sub)}
+                  {/* {console.log(sub)} */}
                 </button>
               ))}
             </div>
@@ -186,13 +184,13 @@ export default function PrideofChennaiData() {
             >
               {prideofchennaidata
                 .filter(
-                  (pride) =>
+                  (pride, index) =>
                     activeSubTab === "" || pride.category === activeSubTab
                 )
                 .map((pride) => (
                   <div
                     className="prideofchennaicards cursor-pointer"
-                    key={pride.name}
+                    key={pride.index}
                     // onClick={() => setSelectedCard(pride)}
                     onClick={() => {
                       setSelectedCard(pride);

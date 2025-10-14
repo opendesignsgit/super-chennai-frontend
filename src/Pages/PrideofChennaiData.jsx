@@ -64,7 +64,7 @@ export default function PrideofChennaiData() {
       subcategories: ["Tech"],
     },
     {
-      label: "Medicine / Oncology",
+      label: "Oncology",
       value: "science_research",
       subcategories: ["Medicine / Oncology"],
     },

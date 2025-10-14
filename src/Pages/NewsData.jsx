@@ -948,6 +948,25 @@ export const NammaStoreiesnewsArticle = [
 ];
 
 export const newsPhotos = [
+    {
+    id: -11,
+    Company: "Times of India",
+    EventsCalendarTitle:
+      "Gukesh is still learning to carry the weight of world crown",
+    EventsCalendarContent: "Sharul Channa – Sareeously Not Sorry.",
+    EventsCalendarMonth: "26 July",
+    EventsCalendarTime: "07:00 PM",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/NewsLetter/Times of india.jpeg",
+    image1: "/images/NewsLetter/Times of india.jpeg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "3 years +",
+    rleigion: "Comedy",
+    aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
+  },
   {
     id: -5,
     Company: "Times of India",

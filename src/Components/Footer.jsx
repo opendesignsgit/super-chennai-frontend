@@ -98,8 +98,14 @@ const Footer = () => {
     { title: "Things to Do", link: "/visit/things-to-do-in-chennai" },
     { title: "Neighbourhood", link: "/live/places-near-chennai" },
     { title: "Quality of Life", link: "/live/quality-of-life-in-chennai" },
-    { title: "Future Forward", link: "/live/infrastructure-development-in-chennai" },
-    { title: "Learning Link", link: "/live/educational-institutions-in-chennai" },
+    {
+      title: "Future Forward",
+      link: "/live/infrastructure-development-in-chennai",
+    },
+    {
+      title: "Learning Link",
+      link: "/live/educational-institutions-in-chennai",
+    },
   ];
 
   const BUSINESSCHENNAI = [
@@ -122,7 +128,10 @@ const Footer = () => {
 
   const NETWORKCHENNAI = [
     { title: "Overview", link: "/work-in-chennai" },
-    { title: "Business Permits", link: "/work/business-registration-in-chennai" },
+    {
+      title: "Business Permits",
+      link: "/work/business-registration-in-chennai",
+    },
     { title: "Unicorns", link: "/work/unicorn-startups" },
     { title: "Co-working spaces", link: "/work/coworking-space-in-chennai" },
     { title: "Paying Guest", link: "/work/pg-in-chennai" },
@@ -140,7 +149,7 @@ const Footer = () => {
     { title: "Green Power", link: "/invest/solar-companies-in-chennai" },
     { title: "Chill Nest", link: "/invest/retirement-in-chennai" },
     { title: "Policy Boost", link: "/invest/government-projects-in-chennai" },
-    
+
     {
       title: "Legal Flow",
       link: "/invest/law-firms-in-chennai",
@@ -201,7 +210,7 @@ const Footer = () => {
       title: "FAQ",
       link: "/faqs",
     },
-        {
+    {
       title: "MEDIA COVERAGE",
       link: "/media-coverage",
     },
@@ -209,11 +218,10 @@ const Footer = () => {
       title: "Contact Us",
       link: "/contact",
     },
-        {
-      title: "Pride of Chennai",
-      link: "/pride-of-chennai",
-    },
-
+    // {
+    //   title: "Pride of Chennai",
+    //   link: "/pride-of-chennai",
+    // },
   ];
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);
@@ -478,11 +486,14 @@ const Footer = () => {
           </div> */}
 
           <div className="SectionLeft1">
-            <h3 className="FooterHeading" onClick={() => {
+            <h3
+              className="FooterHeading"
+              onClick={() => {
                 if (window.innerWidth < 1000) {
                   setIsOpen6(!isOpen6);
                 }
-              }}>
+              }}
+            >
               Live
               <span className="symbol">{isOpen6 ? "−" : "+"}</span>
             </h3>
@@ -509,15 +520,15 @@ const Footer = () => {
           </div>
 
           <div className="SectionLeft1">
-            <h3 className="FooterHeading"
-            //  onClick={() => setIsOpen7(!isOpen7)}
-             onClick={() => {
+            <h3
+              className="FooterHeading"
+              //  onClick={() => setIsOpen7(!isOpen7)}
+              onClick={() => {
                 if (window.innerWidth < 1000) {
                   setIsOpen7(!isOpen7);
                 }
               }}
-             
-             >
+            >
               Visit
               <span className="symbol">{isOpen7 ? "−" : "+"}</span>
             </h3>
@@ -544,15 +555,15 @@ const Footer = () => {
           </div>
 
           <div className="SectionLeft1">
-            <h3 className="FooterHeading"
-            //  onClick={() => setIsOpen8(!isOpen8)}
-             onClick={() => {
+            <h3
+              className="FooterHeading"
+              //  onClick={() => setIsOpen8(!isOpen8)}
+              onClick={() => {
                 if (window.innerWidth < 1000) {
                   setIsOpen8(!isOpen8);
                 }
               }}
-
-             >
+            >
               Work
               <span className="symbol">{isOpen8 ? "−" : "+"}</span>
             </h3>
@@ -579,15 +590,15 @@ const Footer = () => {
           </div>
 
           <div className="SectionLeft1">
-            <h3 className="FooterHeading"
-            //  onClick={() => setIsOpen9(!isOpen9)}
-             onClick={() => {
+            <h3
+              className="FooterHeading"
+              //  onClick={() => setIsOpen9(!isOpen9)}
+              onClick={() => {
                 if (window.innerWidth < 1000) {
                   setIsOpen9(!isOpen9);
                 }
               }}
-
-             >
+            >
               Invest
               <span className="symbol">{isOpen9 ? "−" : "+"}</span>
             </h3>
@@ -617,15 +628,15 @@ const Footer = () => {
       <div className="SectionConatinerSecond max-w-7xl mx-auto px-4">
         <div className="containerSection">
           <div className="SectionLeft1">
-            <h3 className="FooterHeading"
-            //  onClick={() => setIsOpen5(!isOpen5)}
-             onClick={() => {
+            <h3
+              className="FooterHeading"
+              //  onClick={() => setIsOpen5(!isOpen5)}
+              onClick={() => {
                 if (window.innerWidth < 1000) {
                   setIsOpen5(!isOpen5);
                 }
               }}
-
-             >
+            >
               Innovate
               <span className="symbol">{isOpen5 ? "−" : "+"}</span>
             </h3>
@@ -676,14 +687,14 @@ const Footer = () => {
             </AnimatePresence>
           </div> */}
           <div className="SectionLeft1">
-            <h3 className="FooterHeading" 
-            // onClick={() => setIsOpen3(!isOpen3)}
-            onClick={() => {
+            <h3
+              className="FooterHeading"
+              // onClick={() => setIsOpen3(!isOpen3)}
+              onClick={() => {
                 if (window.innerWidth < 1000) {
                   setIsOpen4(!isOpen4);
                 }
               }}
-            
             >
               Volunteer
               <span className="symbol">{isOpen4 ? "−" : "+"}</span>
@@ -711,15 +722,15 @@ const Footer = () => {
           </div>
 
           <div className="SectionLeft1">
-            <h3 className="FooterHeading"
-            //  onClick={() => setIsOpen3(!isOpen3)}
-             onClick={() => {
+            <h3
+              className="FooterHeading"
+              //  onClick={() => setIsOpen3(!isOpen3)}
+              onClick={() => {
                 if (window.innerWidth < 1000) {
                   setIsOpen3(!isOpen3);
                 }
               }}
-
-             >
+            >
               Quick Links
               <span className="symbol">{isOpen3 ? "−" : "+"}</span>
             </h3>

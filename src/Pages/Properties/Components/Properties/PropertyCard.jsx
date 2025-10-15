@@ -7,7 +7,7 @@ import ContactForm from "../forms/ContactForm";
 import { formatLabel } from "../../utils/formatLabel";
 
 const getImageUrl = (img) => {
-  if (!img?.url) return "/placeholder.jpg";
+  if (!img?.url) return "../../../public/propertyDefault.png";
   if (img.url.startsWith("http")) return img.url;
   return `${API_BASE_URL}${img.url}`;
 };
@@ -163,7 +163,6 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
                 </span>
               )}
             </div>
-           
 
             <div className="propertyViewButton mt-2 flex space-x-2">
               <Link

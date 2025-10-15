@@ -17,6 +17,7 @@ import {
   Arrow as TooltipArrow,
 } from "@radix-ui/react-tooltip";
 
+import AutoShrinkText from "../../Components/Text/AutoShrinkText";
 
 import {
   ArrowLeftIcon,
@@ -177,6 +178,8 @@ const PropertyDetailPage = () => {
   useEffect(() => {
     setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 100);
   }, []);
+  const [openFeatures, setOpenFeatures] = useState(false);
+
   const [openIndex, setOpenIndex] = useState(null);
   const [showAll, setShowAll] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -201,8 +204,7 @@ const PropertyDetailPage = () => {
 
   // Basic property info SILA FILEDS IF NEED NA USE PANAIKALAM
   const location = property?.location?.label || "N/A";
-  const status =
-    property?.society?.possessionStatus || null;
+  const status = property?.society?.possessionStatus || null;
   const title = property?.title || "Untitled Property";
   const purpose = property?.purpose || "sale";
   const ageOfProperty = property?.ageOfProperty || "-";
@@ -214,10 +216,8 @@ const PropertyDetailPage = () => {
     : "Price on Request";
 
   const pricePerSqft = property?.pricePerSqft || null;
-  
   const MaxArea = property?.area.maxSqft || null;
   const MiniArea = property?.area.minSqft || null;
-
 
   const bhk = property?.bhk?.label || null;
   const bathrooms = property?.washrooms ?? null;
@@ -227,7 +227,7 @@ const PropertyDetailPage = () => {
   const builder = property?.society?.builder || null;
   const totalUnits = property?.society?.totalUnits ?? null;
   const possessionStatus = property?.society?.possessionStatus || null;
-    
+
   // Location info
   const locationLabel = property?.location?.label || "N/A";
   const state = property?.location?.state || "-";
@@ -289,7 +289,15 @@ const PropertyDetailPage = () => {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3> {property.title}</h3>
+            <AutoShrinkText
+              text={property.title}
+              baseSize={60}
+              minSize={40}
+              maxChars={40}
+              className="accodoamationBannerText"
+              width="80%"
+              maxLines={2}
+            />
             <div className="breadCrum">
               <a href="/">Home</a> - <a href="#">Properties</a>
             </div>
@@ -460,7 +468,6 @@ const PropertyDetailPage = () => {
             {furnishing ? (
               <div className="flex items-center gap-1 text-gray-700 text-sm">
                 <Building2 size={16} /> {formatLabel(furnishing)}
-
               </div>
             ) : null}
           </div>
@@ -473,8 +480,10 @@ const PropertyDetailPage = () => {
           pricePerSqft ||
           transactionType ||
           status ||
-          furnishing) && (
+          furnishing ||
+          property.squareFeetRange) && (
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4 mt-10">
+            {/* Old Area */}
             {MiniArea && (
               <div>
                 <p className="text-xs text-gray-500">Minimum Area</p>
@@ -486,6 +495,39 @@ const PropertyDetailPage = () => {
               <div>
                 <p className="text-xs text-gray-500">Maximum Area</p>
                 <p className="font-semibold text-gray-800">{MaxArea}</p>
+              </div>
+            )}
+
+            {/* New Square Feet Range */}
+            {property.squareFeetRange?.minSqft && (
+              <div>
+                <p className="text-xs text-gray-500">
+                
+                  Square Feet Minimum Area
+                </p>
+                <p className="font-semibold text-gray-800">
+                  {property.squareFeetRange.minSqft}
+                </p>
+              </div>
+            )}
+
+            {property.squareFeetRange?.maxSqft && (
+              <div>
+                <p className="text-xs text-gray-500">            
+                  Square Feet Maximum Area
+                </p>
+                <p className="font-semibold text-gray-800">
+                  {property.squareFeetRange.maxSqft}
+                </p>
+              </div>
+            )}
+
+            {property.squareFeetRange?.acres && (
+              <div>
+                <p className="text-xs text-gray-500">Acres</p>
+                <p className="font-semibold text-gray-800">
+                  {property.squareFeetRange.acres}
+                </p>
               </div>
             )}
 
@@ -520,15 +562,6 @@ const PropertyDetailPage = () => {
                 </p>
               </div>
             )}
-
-            {/* {furnishing && (
-              <div>
-                <p className="text-xs text-gray-500">Furnished Status</p>
-                <p className="font-semibold text-gray-800">
-                  {formatLabel(furnishing)}
-                </p>
-              </div>
-            )} */}
           </div>
         )}
 
@@ -1137,8 +1170,8 @@ const PropertyDetailPage = () => {
             </TooltipProvider>
           )}
 
-        {/*### SPCIFICATIONS #### */}
-        {Object.values(specifications).some((value) => value) && (
+        {/*### SPECIFICATIONS #### */}
+        {property?.specifications?.length > 0 && (
           <div className="border border-gray-200 rounded-xl p-5 mb-6">
             <div
               className="flex justify-between items-center cursor-pointer"
@@ -1152,14 +1185,45 @@ const PropertyDetailPage = () => {
 
             {openSpec && (
               <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                {specEntries.map(([key, value]) => (
-                  <div key={key} className="flex flex-col">
-                    <span className="font-medium capitalize">
-                      {key.replace(/([A-Z])/g, " $1")}
-                    </span>
-                    <span className="text-gray-600">{value}</span>
-                  </div>
-                ))}
+                {property.specifications
+                  .filter((spec) => spec.value) // skip empty values
+                  .map((spec) => (
+                    <div key={spec.id} className="flex flex-col">
+                      <span className="font-medium capitalize">
+                        {spec.label}
+                      </span>
+                      <span className="text-gray-600">{spec.value}</span>
+                    </div>
+                  ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/*### FEATURES #### */}
+        {property?.features?.length > 0 && (
+          <div className="border border-gray-200 rounded-xl p-5 mb-6">
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => setOpenFeatures(!openFeatures)}
+            >
+              <h2 className="text-xl font-semibold text-gray-800">Features</h2>
+              {openFeatures ? (
+                <ChevronUp size={20} />
+              ) : (
+                <ChevronDown size={20} />
+              )}
+            </div>
+
+            {openFeatures && (
+              <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                {property.features
+                  .filter((f) => f.feature) // skip empty features
+                  .map((f) => (
+                    <div key={f.id} className="flex flex-col">
+                      <span className="text-gray-600">{f.feature}</span>
+                    </div>
+                  ))}
               </div>
             )}
           </div>
@@ -1321,6 +1385,45 @@ const PropertyDetailPage = () => {
             </div>
           )}
 
+        {/* ROUTE MAP */}
+        {property.routeMap &&
+          property.routeMap.length > 0 &&
+          property.routeMap.some((map) => map?.file?.url) && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 relative z-10 mt-6">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">
+                Route Map
+              </h2>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                {property.routeMap.map((map, index) => {
+                  const imageUrl = getImageUrl(map.file);
+                  if (!imageUrl) return null;
+
+                  return (
+                    <div
+                      key={map.id || index}
+                      className="flex flex-col items-center rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                      onClick={() => setSelectedImage(imageUrl)}
+                    >
+                      <img
+                        src={imageUrl}
+                        alt={map.caption || property.title}
+                        className="w-full h-48 object-cover"
+                      />
+                      <div className="p-3 w-full text-center bg-gray-50">
+                        <p className="text-sm font-medium text-gray-700">
+                          {map.caption ||
+                            map?.file?.alt ||
+                            `Route Map ${index + 1}`}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
         {/* Modal for full image view */}
         {selectedImage && (
           <div
@@ -1342,6 +1445,26 @@ const PropertyDetailPage = () => {
               >
                 ✕
               </button>
+            </div>
+          </div>
+        )}
+        {/* WALKTHROUGH VIDEO */}
+        {property.walkthroughVideo && (
+          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mb-6">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              Walkthrough Video
+            </h2>
+
+            <div className="video-container w-full h-[400px] flex justify-center">
+              <iframe
+                width="100%"
+                height="100%"
+                src={property.walkthroughVideo.replace("watch?v=", "embed/")}
+                title="Walkthrough Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         )}

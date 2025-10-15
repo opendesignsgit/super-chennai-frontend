@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
 import axios from "axios";
-import "../assets/Css/BlogList.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { Link, useParams } from "react-router-dom";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import { API_BASE_URL } from "../../src/Pages/Properties/config";
+import "../assets/Css/BlogList.css";
 import AutoShrinkText from "../Components/Text/AutoShrinkText";
 
 const parseLexical = (content) => {
@@ -29,7 +28,7 @@ const parseLexical = (content) => {
                     href={url}
                     target={child.fields?.newTab ? "_blank" : "_self"}
                     rel="noopener noreferrer"
-                    style={{ color: "#007BFF", textDecoration: "underline" }}
+                    style={{ color: "#1b599bff", textDecoration: "underline" }}
                   >
                     {linkText}
                   </a>
@@ -63,7 +62,7 @@ const parseLexical = (content) => {
       case "block":
         const media = node.fields?.media;
         if (media && media.url) {
-          const imgUrl = `https://demo.superchennai.com${media.url}`;
+          const imgUrl = `${API_BASE_URL}/${media.url}`;
           return (
             <figure key={idx} style={{ margin: "1.5rem 0" }}>
               <img
@@ -96,14 +95,14 @@ const parseLexical = (content) => {
 const BlogDetail = () => {
   const { slug } = useParams();
   const [blog, setBlog] = useState(null);
-  console.log("ahsdhjsgdfhsgdfhjd", blog);
   const [loading, setLoading] = useState(true);
   const [relatedBlogs, setRelatedBlogs] = useState([]);
 
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await axios.get(`${API_BASE_URL}/api/posts`);
+        const res = await axios.get(`${API_BASE_URL}/api/posts?limit=0`);
+
         const data = res.data?.docs?.length ? res.data : "";
         console.log("blog data", data);
 
@@ -117,6 +116,8 @@ const BlogDetail = () => {
             title: found.title,
             content: found.content,
             createdAt: found.createdAt,
+            updatedAt: found.updatedAt,
+            publishedAt: found.publishedAt,
             metadescription: found.meta?.description,
             author: found.populatedAuthors?.[0]?.name,
             metatitle: found.meta?.title,
@@ -191,8 +192,6 @@ const BlogDetail = () => {
                   src={`${API_BASE_URL}${blog.heroImage}`}
                   alt={blog.title}
                 />
-
-                {/* <img src={`${blog.heroImage}`} alt={blog.title} /> */}
               </div>
 
               <div className="accodoamationBannerContainer">
@@ -216,13 +215,10 @@ const BlogDetail = () => {
             </>
           )}
         </div>
-        {console.log("authour", blog.createdAt)}
-        {/* <div className="blog-category">
-          <span>{blog.blogCategory || "nodattaaaaaaaaaaaaaaa"}</span>
-        </div> */}
+
         <div className="blog-detail-container  container max-w-7xl mx-auto">
           <h3 className="AuthourNameBlog">
-            Author :{" "}
+            Author : Super Chennai Team
             <span style={{ color: "#1d1d1d" }}>
               {blog.authour} {""}{" "}
               <span
@@ -232,9 +228,8 @@ const BlogDetail = () => {
                   marginLeft: "4px",
                 }}
               >
-                {" "}
                 (
-                {new Date(blog.createdAt).toLocaleDateString("en-GB", {
+                {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
                   day: "2-digit",
                   month: "short",
                   year: "numeric",
@@ -248,9 +243,6 @@ const BlogDetail = () => {
           <div className="back-link">
             <Link to="/blog">← Back to Blog List</Link>
           </div>
-
-          {/* {console.log("blog",blog.description)} */}
-          {/* Related Blogs Carousel */}
         </div>
       </div>
     </>

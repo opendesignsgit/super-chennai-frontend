@@ -10,12 +10,12 @@ export const fetchProperties = async (filters = {}, sortBy = "") => {
   const params = {};
 
   // Budget
-  if (filters.minBudget != null) {
-    params["where[price][greater_than_equal]"] = filters.minBudget;
-  }
-  if (filters.maxBudget != null) {
-    params["where[price][less_than_equal]"] = filters.maxBudget;
-  }
+  // if (filters.minBudget != null) {
+  //   params["where[price][greater_than_equal]"] = filters.minBudget;
+  // }
+  // if (filters.maxBudget != null) {
+  //   params["where[price][less_than_equal]"] = filters.maxBudget;
+  // }
 
   // Locations (relationship)
   if (filters.locations?.length) {

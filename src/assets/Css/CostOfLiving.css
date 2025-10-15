@@ -1981,6 +1981,28 @@ body.popup-open {
   padding: 0 !important;
 }
 
+.paragraphstyleBlogUl {
+  font-weight: 700 !important;
+  color: #a44294 !important;
+  margin-left: 15px;
+  position: relative;
+  padding-left: 12px; /* space for bullet */
+}
+
+.paragraphstyleBlogUl::before {
+  content: "•";
+  color: #a44294;
+  position: absolute;
+  left: -3px;
+  top: -4px;
+}
+
+.BlogDetailPageId .blog-content figure {
+  display: flex;
+  justify-content: center;
+}
+
+
 @media (max-width: 880px) {
   .prideofchennaipage .stickyPositionContainer.fixed {
     top: 64px;

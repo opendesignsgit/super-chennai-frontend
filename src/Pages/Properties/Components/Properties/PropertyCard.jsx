@@ -163,8 +163,18 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
                 </span>
               )}
             </div>
+           
+
             <div className="propertyViewButton mt-2 flex space-x-2">
-              <Link to={propertyLink}>
+              <Link
+                to={
+                  property.officialView
+                    ? property.society?.externalUrl || propertyLink
+                    : propertyLink
+                }
+                target={property.officialView ? "_blank" : "_self"}
+                rel={property.officialView ? "noopener noreferrer" : undefined}
+              >
                 <button
                   type="button"
                   className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
@@ -172,6 +182,7 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
                   View
                 </button>
               </Link>
+
               <button
                 type="button"
                 className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"

@@ -146,6 +146,16 @@ const BlogDetail = () => {
     fetchBlog();
   }, [slug]);
 
+  useEffect(() => {
+    const spans = document.querySelectorAll("p span");
+    spans.forEach((span) => {
+      const cleanText = span.textContent.replace(/\u00A0/g, " ").trim();
+      if (cleanText.endsWith(":")) {
+        span.classList.add("paragraphstyleBlogUl");
+      }
+    });
+  }, [blog]);
+
   const sliderSettings = {
     dots: true,
     arrows: true,

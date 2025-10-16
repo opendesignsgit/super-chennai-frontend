@@ -335,9 +335,12 @@ const PropertyDetailPage = () => {
         </div>
 
         <p className="text-gray-700 text-sm mb-4">
-          {bhk} For {property.purpose} in
+          {Array.isArray(property.bhk) && property.bhk.length > 0
+            ? property.bhk.map((b) => b.label || b.value).join(", ")
+            : ""}{" "}
+          for <span className="capitalize">{property.purpose}</span> in
           <span className="font-semibold text-gray-900"> {title}</span>,
-          {location}
+          <span className="text-gray-800"> {location}</span>
         </p>
 
         {/* Images Section */}
@@ -502,7 +505,6 @@ const PropertyDetailPage = () => {
             {property.squareFeetRange?.minSqft && (
               <div>
                 <p className="text-xs text-gray-500">
-                
                   Square Feet Minimum Area
                 </p>
                 <p className="font-semibold text-gray-800">
@@ -513,7 +515,7 @@ const PropertyDetailPage = () => {
 
             {property.squareFeetRange?.maxSqft && (
               <div>
-                <p className="text-xs text-gray-500">            
+                <p className="text-xs text-gray-500">
                   Square Feet Maximum Area
                 </p>
                 <p className="font-semibold text-gray-800">
@@ -646,7 +648,6 @@ const PropertyDetailPage = () => {
 
           <div className="flex flex-wrap gap-6 items-center">
             {/* Image */}
-
             <img
               src={getImageUrl(property.heroImage)}
               alt={property.title}
@@ -686,16 +687,31 @@ const PropertyDetailPage = () => {
                 <p className="font-semibold text-gray-800">₹ {pricePerSqft}</p>
               </div>
             )}
-            {bhk && (
+
+            {Array.isArray(property.bhk) && property.bhk.length > 0 && (
               <div>
                 <p className="text-gray-500">Configuration</p>
-                <p className="font-semibold text-gray-800"> {bhk} </p>
+                <p className="font-semibold text-gray-800">
+                  {property.bhk
+                    .map((item) => item.label || item.value)
+                    .join(", ")}
+                </p>
               </div>
             )}
-            {property.society?.totalUnits && (
+
+            {property.floor && (
               <div>
-                <p className="text-gray-500">Unit</p>
-                <p className="font-semibold text-gray-800">{totalUnits}</p>
+                <p className="text-gray-500"> Total Floor</p>
+                <p className="font-semibold text-gray-800">{property.floor}</p>
+              </div>
+            )}
+
+            {property.totalUnits && (
+              <div>
+                <p className="text-gray-500">Total Units</p>
+                <p className="font-semibold text-gray-800">
+                  {property.totalUnits}
+                </p>
               </div>
             )}
           </div>

@@ -24,10 +24,14 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
     : "Price on Request";
   const type = property.propertyType?.value || property.type || "";
   const status = property.society?.possessionStatus || property.status || null;
-  const description =
-    property.content?.root?.children[0]?.children[0]?.text ||
-    property.description ||
-    "";
+
+  
+ const description =
+  property?.content?.root?.children?.[0]?.children?.[0]?.text ||
+  property?.description ||
+  "";
+
+
   const propertyLink = `/properties/${property.slug || property.id}`;
   const transactionType = property.transactionType || null;
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -171,7 +175,7 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
                     ? property.society?.externalUrl || propertyLink
                     : propertyLink
                 }
-                target={property.officialView ? "_blank" : "_self"}
+                target={property.officialView }
                 rel={property.officialView ? "noopener noreferrer" : undefined}
               >
                 <button

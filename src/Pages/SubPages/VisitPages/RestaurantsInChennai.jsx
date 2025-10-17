@@ -325,6 +325,48 @@ const detailsections = [
           },
         ],
       },
+
+       {
+        name: " Moutan by Tawan Maami",
+        description: "A bubble tea café offering boba drinks and light Asian snacks like mochi and onigiri in a vibrant setting.",
+        subDescription: "",
+        locations: [
+          {
+            label: "T. NAGAR ",
+            link: "https://maps.app.goo.gl/f7StGwp4fRfq6EbZA",
+          },
+         
+        ],
+      },
+       {
+        name: " Nibble Nest Café",
+        description: "A cozy café serving wholesome comfort food with a healthy twist, perfect for relaxing and casual dining ",
+        subDescription: "",
+        locations: [
+          {
+            label: "Saidapet ",
+            link: "https://maps.app.goo.gl/czC1ebEwQ5We6gXp6 ",
+          },
+         
+        ],
+      },
+
+       {
+        name: " Brews and beyond",
+        description: "Brews & Beyond is a specialty café serving handcrafted coffees, fast food, and indulgent desserts. It blends cozy vibes with a vibrant café culture for every coffee lover. ",
+        subDescription: "",
+        locations: [
+          {
+            label: "Besant Nagar  ",
+            link: "https://maps.app.goo.gl/mYA7UjzD9bniW9D58 ",
+          },
+            {
+            label: "Nungambakkam ",
+            link: "https://maps.app.goo.gl/MgNV5QgT4BkJEPsd6 ",
+          },
+         
+        ],
+      },
     ],
   },
   {
@@ -809,6 +851,36 @@ const detailsections = [
           },
         ],
       },
+
+
+       {
+        name: "Asaivam - house of delicacies",
+        description: "It offers a wide mix of South Indian, biryani, and Chinese dishes with dine-in, delivery, and takeaway options.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Ekkaduthangal ",
+            link: "https://maps.app.goo.gl/xFjpKZwo3y5GdBRn8",
+          },
+        
+        ],
+      },
+
+        {
+        name: "Parambriyum ",
+        description: " Parambriyum is known for authentic South Indian and multi-cuisine dishes crafted with traditional recipes. It blends rich flavors with elegant ambience to offer a memorable dining experience.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Anna Nagar East ",
+            link: " https://maps.app.goo.gl/FtV5rRwZ9LPy711j6",
+          },
+        
+        ],
+      },
+
+
+
     ],
   },
   {
@@ -966,6 +1038,30 @@ const detailsections = [
           },
         ],
       },
+
+
+       {
+        name: "Delhi Highway",
+        description:
+          "A vegetarian dining spot celebrated for authentic North Indian flavors and creative fusion dishes. It offers rich cuisine in an ambiance that blends rustic charm with refined elegance.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Besant Nagar",
+            link: "https://maps.app.goo.gl/MaJhMo14rjo2JBAT8",
+          },
+           {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/jVjKQ9LBqyRxDagf9 ",
+          },
+           {
+            label: "Sholinganallur",
+            link: "https://maps.app.goo.gl/dSbCq1wEwzd57gmXA",
+          },
+        ],
+      },
+
+
     ],
   },
 ];

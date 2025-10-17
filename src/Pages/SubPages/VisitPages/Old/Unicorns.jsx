@@ -135,7 +135,7 @@ export default function Unicorns() {
             </div>
 
             <div className="workIntro">
-              <h3>Unicorns </h3>
+              <h1>Unicorns in Chennai </h1>
               <p>
                 The startup scene in Chennai is steadily creating unicorns. The
                 foundation for upcoming international corporations in Chennai is

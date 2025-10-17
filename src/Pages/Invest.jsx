@@ -581,7 +581,7 @@ export default function Invest() {
                 className="InvestChennaiContent"
                 style={{ paddingBottom: "20px" }}
               >
-                <h3>Welcome to Invest in Chennai</h3>
+                <h1>Investment in Chennai</h1>
                 <h6>
                   Your Gateway to Growth in South India’s Economic Capital
                 </h6>

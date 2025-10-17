@@ -160,7 +160,7 @@ export default function PG() {
             </div>
 
             <div className="workIntro">
-              <h3>A City That Welcomes You In</h3>
+              <h1>PG Hostels in Chennai</h1>
               <p>
                 Chennai is a top choice for students and professionals across
                 India. From college life to career goals, the city offers PGs

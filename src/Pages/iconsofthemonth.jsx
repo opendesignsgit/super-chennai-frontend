@@ -41,7 +41,7 @@ export default function Iconsofthemonth() {
         >
           <div className="container max-w-7xl mx-auto px-4">
             <div className="workIntro">
-              <h3>Celebrating Excellence, Inspiring Chennai</h3>
+              <h1>Icon of The Month</h1>
               <p>
                 Every month, Super Chennai shines the spotlight on individuals
                 who redefine success, leadership, and inspiration in their

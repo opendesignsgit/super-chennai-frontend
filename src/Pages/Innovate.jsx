@@ -79,7 +79,8 @@ export default function Innovate() {
       <div data-aos="fade-up" data-aos-delay="600">
         <div className="InnovateChennaiContainerFlex container max-w-7xl mx-auto px-4">
           <div className="InnovateChennaiContent">
-            <h3>Chennai Innovation and Technology: Shaping Tomorrow, Today</h3>
+                                    <h1>innovate chennai</h1>
+
 
             <p>
               Chennai is fast emerging as a dynamic innovation hub — where

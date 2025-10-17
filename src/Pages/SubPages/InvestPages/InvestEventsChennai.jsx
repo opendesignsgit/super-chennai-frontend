@@ -230,7 +230,7 @@ export default function InvestEventsChennai() {
             </p>
           </div>
           <div className="workIntro">
-            <h3>Invest in Events in chennai</h3>
+            <h1>Invest in Events in chennai</h1>
             <p>
               There are a lot of events in Chennai that are looking for
               investors to make them look fantastic and draw large crowds. Super

@@ -211,7 +211,7 @@ export default function InvestNewsChennai() {
             </p>
           </div>
           <div className="workIntro">
-            <h3>Invest in News in Chennai</h3>
+            <h1>News in Chennai</h1>
             <p>
               Is it possible to invest in news? You certainly can. For the
               purpose of growing and reaching a larger audience, many news

@@ -505,7 +505,7 @@ export default function ChennaiNetworks() {
               <p>Network &nbsp; in Chennai &nbsp; Network &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3> A City Where People, Ideas, and Opportunities Connect</h3>
+              <h1>Chennai Networks</h1>
               <p>
                 Chennai offers a thriving ecosystem for networking — driven by
                 its expanding startup scene, robust professional communities,

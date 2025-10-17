@@ -289,7 +289,7 @@ export default function ItandSoftwareCompanies() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>From Marina to Mainframes — Chennai’s Digital Journey</h3>
+              <h1>IT Software Companies in Chennai</h1>
               <p>
                 Chennai isn’t just a city of culture and beaches — it’s India’s
                 Silicon Coast. From legacy IT parks to buzzing SaaS startups,

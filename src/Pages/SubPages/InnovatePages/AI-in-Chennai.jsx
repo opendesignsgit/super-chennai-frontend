@@ -567,7 +567,7 @@ export default function AIinChennai() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Where Code Thinks, Learns, and Predicts</h3>
+              <h1>Artificial Intelligence in Chennai</h1>
               <p>
                 Chennai has quietly transformed into one of India's most
                 promising AI innovation hubs — with deep talent, strong academic

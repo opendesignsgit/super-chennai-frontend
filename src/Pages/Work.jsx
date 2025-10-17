@@ -133,7 +133,7 @@ export default function Work() {
       >
         <div className="workIntroParaSection container max-w-7xl mx-auto px-4">
           <div className="workIntro">
-            <h3>Work in Chennai: Opportunity Meets Innovation</h3>
+            <h1>Chennai Work</h1>
             <p>
               Chennai is more than just a thriving metropolis — it’s a hub of
               job opportunities in Chennai for professionals, entrepreneurs, and

@@ -109,7 +109,7 @@ export default function SalariesBenefits() {
           </div>
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
-              <h3>Salaries & Benefits </h3>
+              <h1>Chennai Job Salary</h1>
               <div className="breadCrum">
                 <Link to="/work-in-chennai"> Work </Link> -{" "}
                 <a href="">Salaries Benefits </a>{" "}

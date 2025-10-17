@@ -16,7 +16,6 @@ import {
   Content as TooltipContent,
   Arrow as TooltipArrow,
 } from "@radix-ui/react-tooltip";
-
 import AutoShrinkText from "../../Components/Text/AutoShrinkText";
 
 import {
@@ -64,41 +63,79 @@ import {
   Droplets,
 } from "lucide-react";
 
-const interiorIcons = {
-  doorType: DoorOpen,
-  wardrobes: Package,
-  curtains: Sun,
-  modularKitchen: Sun,
-  chimney: Zap,
-  falseCeiling: Lightbulb,
-  lighting: Lightbulb,
-};
-const applianceIcons = {
-  acUnits: Wind,
-  fridgeCount: Microwave,
-  microwaveCount: Microwave,
-  waterPurifier: Droplet,
-  washingMachine: WashingMachine,
-  dishwasher: UtensilsCrossed,
-  tvCount: Tv,
-  geyserCount: ShowerHead,
-  powerBackup: Battery,
-  solar: Sun,
-};
+
+// import { Security_24_7 } from "../../../public/images/HomePage-Images/Icons/properties/24-7 Security.svg";
+// import { ReactComponent as BasketBall }  from "../../../public/images/HomePage-Images/Icons/properties/BasketBall.svg";
+// import { Billiards } from "../../../public/images/HomePage-Images/Icons/properties/Billiards.svg";
+// import { BlackTopRoads } from "../../../public/images/HomePage-Images/Icons/properties/Black top roads.svg";
+// import { CarChargePoint } from "../../../public/images/HomePage-Images/Icons/properties/Car Charge point.svg";
+// import { Carrom } from "../../../public/images/HomePage-Images/Icons/properties/Carrom.svg";
+// import { Chess } from "../../../public/images/HomePage-Images/Icons/properties/Chess.svg";
+// import { ChildrensPlayArea } from "../../../public/images/HomePage-Images/Icons/properties/Children's Play Area.svg";
+// import { ClubHouse } from "../../../public/images/HomePage-Images/Icons/properties/Club House.svg";
+// import { CommunicationAssociationRoom } from "../../../public/images/HomePage-Images/Icons/properties/Communication Association Room.svg";
+// import { CricketNetPractice } from "../../../public/images/HomePage-Images/Icons/properties/Cricket Net Practice.svg";
+// import { FeaturedWall } from "../../../public/images/HomePage-Images/Icons/properties/Featured wall.svg";
+// import { GamingZone } from "../../../public/images/HomePage-Images/Icons/properties/Gaming Zone.svg";
+// import { GoodGroundWater } from "../../../public/images/HomePage-Images/Icons/properties/Good Ground water.svg";
+// import { Gym } from "../../../public/images/HomePage-Images/Icons/properties/Gym.svg";
+// import { Hopscotch } from "../../../public/images/HomePage-Images/Icons/properties/Hopscotch.svg";
+// import { Jacuzzi } from "../../../public/images/HomePage-Images/Icons/properties/Jacuzzi.svg";
+// import { JoggingTrack } from "../../../public/images/HomePage-Images/Icons/properties/Jogging Track.svg";
+// import { KidsPool } from "../../../public/images/HomePage-Images/Icons/properties/Kid's Pool.svg";
+// import { MeditationHall } from "../../../public/images/HomePage-Images/Icons/properties/Meditation Hall.svg";
+// import { MultiPurposeCourt } from "../../../public/images/HomePage-Images/Icons/properties/Multi Purpose Court.svg";
+// import { MultiPurposeHall } from "../../../public/images/HomePage-Images/Icons/properties/Multi Purpose Hall.svg";
+// import { PartyHall } from "../../../public/images/HomePage-Images/Icons/properties/Party Hall.svg";
+// import { PartyLawnWithBarbeque } from "../../../public/images/HomePage-Images/Icons/properties/Party Lawn With Barbeque.svg";
+// import { PartyLawn } from "../../../public/images/HomePage-Images/Icons/properties/Party lawn.svg";
+// import { ReflexologyPathway } from "../../../public/images/HomePage-Images/Icons/properties/Reflexology pathway.svg";
+// import { RoofTopLounge } from "../../../public/images/HomePage-Images/Icons/properties/Roof Top Lounge.svg";
+// import { SeniorCitizenCorner } from "../../../public/images/HomePage-Images/Icons/properties/Senior Citizen Corner.svg";
+// import { SkatingTrack } from "../../../public/images/HomePage-Images/Icons/properties/Skating track.svg";
+// import { SolarStreetLights } from "../../../public/images/HomePage-Images/Icons/properties/Solar Street lights.svg";
+// import { StormWaterDrains } from "../../../public/images/HomePage-Images/Icons/properties/Storm water drains.svg";
+// import { SwimmingPool } from "../../../public/images/HomePage-Images/Icons/properties/Swimming Pool.svg";
+// import { TableTennis } from "../../../public/images/HomePage-Images/Icons/properties/Table Tennis.svg";
+// import { Trampoline } from "../../../public/images/HomePage-Images/Icons/properties/Trampoline.svg";
+// import { Yoga } from "../../../public/images/HomePage-Images/Icons/properties/Yoga.svg";
+
+import BasketBall from "/public/images/HomePage-Images/Icons/properties/BasketBall.svg";
+
+
 const amenityIcons = {
-  elevator: <ArrowUp size={18} />,
+  elevator: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/BasketBall.svg"
+      alt="Basketball"
+      className="w-5 h-5"
+    />
+  ),
   security: <Shield size={18} />,
   intercom: <Phone size={18} />,
   fireSafety: <Flame size={18} />,
-  clubhouse: <Building2 size={18} />,
   swimmingPool: <Droplets size={18} />,
   gym: <Dumbbell size={18} />,
   playArea: <Trees size={18} />,
   garden: <Trees size={18} />,
 
-  yogaArea: <ArrowUp size={18} />,
-  clubHouse: <ArrowUp size={18} />,
-  miniTheatre: <ArrowUp size={18} />,
+  yogaArea: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Yoga.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  clubHouse: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/ClubHouse.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  miniTheatre:BasketBall,
   indoorGames: <ArrowUp size={18} />,
   herbGarden: <ArrowUp size={18} />,
   multipurposeHall: <ArrowUp size={18} />,
@@ -152,6 +189,33 @@ const amenityIcons = {
   hammockLounge: <ArrowUp size={18} />,
   firePit: <ArrowUp size={18} />,
 };
+
+
+
+
+
+const interiorIcons = {
+  doorType: DoorOpen,
+  wardrobes: Package,
+  curtains: Sun,
+  modularKitchen: Sun,
+  chimney: Zap,
+  falseCeiling: Lightbulb,
+  lighting: Lightbulb,
+};
+const applianceIcons = {
+  acUnits: Wind,
+  fridgeCount: Microwave,
+  microwaveCount: Microwave,
+  waterPurifier: Droplet,
+  washingMachine: WashingMachine,
+  dishwasher: UtensilsCrossed,
+  tvCount: Tv,
+  geyserCount: ShowerHead,
+  powerBackup: Battery,
+  solar: Sun,
+};
+
 
 import { useEffect } from "react";
 import "./Styles/PropertyDetailPage.css";

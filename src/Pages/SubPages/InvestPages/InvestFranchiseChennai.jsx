@@ -220,7 +220,7 @@ export default function InvestFranchiseChennai() {
             </p>
           </div>
           <div className="workIntro">
-            <h3>Invest in Franchise in chennai</h3>
+            <h1>Franchise in Chennai</h1>
             <p>
               To increase their brand recognition, several brands open franchise
               across Chennai. In Chennai, several businesses are seeking

@@ -318,7 +318,7 @@ export default function InvestExhibitionsChennai() {
             </p>
           </div>
           <div className="workIntro">
-            <h3>Exhibitions in Chennai for Invest</h3>
+            <h1>Exhibitions in chennai</h1>
             <p>
               Step into a world of ideas, innovation, and inspiration. From art
               and craft expos to industrial trade fairs, Chennai’s exhibition

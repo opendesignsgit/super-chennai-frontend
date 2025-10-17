@@ -192,7 +192,7 @@ export default function InvestStartupsChennai() {
             </p>
           </div>
           <div className="workIntro">
-            <h3>Invest in Startups in Chennai</h3>
+            <h1>Startups in Chennai</h1>
             <p>
               If you have expertise in any service or product, you can start
               your own business in an area where your target market is present

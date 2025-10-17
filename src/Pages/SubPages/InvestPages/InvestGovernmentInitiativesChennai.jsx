@@ -223,7 +223,7 @@ export default function InvestGovernmentInitiativesChennai() {
             </p>
           </div>
           <div className="workIntro">
-            <h3>Invest in Government Initiatives in Chennai</h3>
+            <h1>Government Projects in Chennai</h1>
             <p>
               Creating a Future-Ready City for Investors, Innovators &
               Industries Chennai stands as a strategic destination for

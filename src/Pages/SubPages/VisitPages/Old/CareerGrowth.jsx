@@ -146,7 +146,7 @@ export default function CareerGrowth() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Career Growth</h3>
+              <h1>Career Jobs in Chennai</h1>
               <p>
               Chennai offers a wide range of employment options in core, non-core, and IT industries.
                Strategic career planning, adoption of innovative technology, and ongoing upskilling 

@@ -175,7 +175,7 @@ export default function InvestFormalitiesRegulationsChennai() {
             </p>
           </div>
           <div className="workIntro">
-            <h3>Invest in Formalities and Regulations in chennai</h3>
+            <h1>Investment Procedures in Chennai</h1>
             <p>
               Investing money into investments is more than just investing.
               Spending time learning new things is also an investment. In this

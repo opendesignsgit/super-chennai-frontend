@@ -554,7 +554,7 @@ export default function ChennaiRealEstate() {
             <p>Why Chennai</p>
           </div>
           <div className="workIntro">
-            <h3>Chennai Real Estate: Stable, Growing, and Future-Ready</h3>
+            <h1>Real Estate in Chennai</h1>
             <p>
               Chennai is one of India’s most underrated real estate powerhouses.
               While Mumbai and Bengaluru steal the headlines, Chennai offers
@@ -586,7 +586,7 @@ export default function ChennaiRealEstate() {
           >
             <div className="space-y-6 bg-white p-4  rounded bottomListIcon w-full">
               <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
-                {" "}
+            
                 Why Chennai? Key Investment Reasons
               </h2>
               {section.tenantInfoSections.map((tenant, i) => (

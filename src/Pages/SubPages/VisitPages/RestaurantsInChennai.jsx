@@ -332,24 +332,13 @@ const detailsections = [
         subDescription: "",
         locations: [
           {
-            label: "T. NAGAR ",
+            label: "T.nagar ",
             link: "https://maps.app.goo.gl/f7StGwp4fRfq6EbZA",
           },
          
         ],
       },
-       {
-        name: " Nibble Nest Café",
-        description: "A cozy café serving wholesome comfort food with a healthy twist, perfect for relaxing and casual dining ",
-        subDescription: "",
-        locations: [
-          {
-            label: "Saidapet ",
-            link: "https://maps.app.goo.gl/czC1ebEwQ5We6gXp6 ",
-          },
-         
-        ],
-      },
+      
 
        {
         name: " Brews and beyond",
@@ -575,6 +564,18 @@ const detailsections = [
             label: "Injambakkam",
             link: "https://maps.app.goo.gl/wm3k2LZyEQxZBJXY7",
           },
+        ],
+      },
+       {
+        name: " Nibble Nest Café",
+        description: "A cozy café serving wholesome comfort food with a healthy twist, perfect for relaxing and casual dining ",
+        subDescription: "",
+        locations: [
+          {
+            label: "Saidapet ",
+            link: "https://maps.app.goo.gl/czC1ebEwQ5We6gXp6 ",
+          },
+         
         ],
       },
     ],
@@ -1143,7 +1144,7 @@ export default function Restaurants() {
               </p>
             </div>
             <div className="workIntro">
-              <h3> A City of Flavour — One Plate at a Time</h3>
+              <h1>Chennai Restaurants</h1>
               <p>
                 Chennai’s restaurant scene is a rich tapestry of tradition and
                 innovation — offering everything from age-old South Indian

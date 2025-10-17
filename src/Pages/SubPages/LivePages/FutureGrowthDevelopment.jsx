@@ -629,10 +629,7 @@ export default function FutureGrowthDevelopment() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>
-                {/* Future Growth & Development */}
-                Future Chennai: Vision for 2030 and 2040
-              </h3>
+              <h1>Chennai Growth </h1>
               <p>
                 As part of Tamil Nadu's long-term development strategy, Future
                 Chennai is envisioned as a dynamic, globally relevant

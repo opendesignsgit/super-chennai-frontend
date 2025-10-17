@@ -135,7 +135,7 @@ const amenityIcons = {
     />
   ),
 
-  miniTheatre:BasketBall,
+  miniTheatre:<ArrowUp size={18} />,
   indoorGames: <ArrowUp size={18} />,
   herbGarden: <ArrowUp size={18} />,
   multipurposeHall: <ArrowUp size={18} />,

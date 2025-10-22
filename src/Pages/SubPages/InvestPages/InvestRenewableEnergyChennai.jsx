@@ -224,6 +224,8 @@ export default function InvestRenewableEnergyChennai() {
           </div>
           <div className="workIntro">
             <h1>Renewable Energy in Chennai</h1>
+            <h1 className="hidden"> Solar Panel Installation in Chennai</h1>
+            <h1 className="hidden"> Wind Energy in Chennai</h1>
             <p>
               Chennai offers a wealth of Renewable Energy investment prospects.
               Investigate wind energy along the shore. Study up on

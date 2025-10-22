@@ -221,7 +221,7 @@ export default function BlockchaininChennai() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Building Trust in a Trustless World</h3>
+              <h1>Blockchain Technology Chennai</h1>
               <p>
                 Once known for code outsourcing and call centers, Chennai is now
                 stepping into something far more radical — the world of

@@ -259,9 +259,9 @@ export default function SmartCity() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Super Chennai: The Rise of India’s Intelligent City</h3>
+              {/* <h3>Super Chennai: The Rise of India’s Intelligent City</h3> */}
 
-              <h3>Where Tradition Meets Tomorrow</h3>
+              <h1>Smart City Chennai</h1>
               <p>
                 Chennai is no longer just a city you live in — it’s a city that
                 responds, adapts, and thinks.

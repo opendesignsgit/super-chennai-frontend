@@ -459,7 +459,7 @@ export default function HealthTechinChennai() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Where Medicine Meets Machines</h3>
+              <h1>Health Tech in Chennai</h1>
               <p>
                 Chennai is not just the healthcare capital of South India — it's
                 also a rising leader in health tech innovation. With a blend of

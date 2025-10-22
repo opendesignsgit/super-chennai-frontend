@@ -15,6 +15,12 @@
   line-height: 79px;
   color: #a44294;
 }
+.Eventitlesec h1 {
+  font-family: "NewAmsterdam";
+  font-size: 5vw;
+  line-height: 79px;
+  color: #a44294;
+}
 .EventsItems {
   /* width: calc(25% - 16px);
   margin: 10px 8px; */

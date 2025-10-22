@@ -61,9 +61,8 @@ export default function ReimagineChennai() {
         >
           <div className="container max-w-7xl mx-auto px-4">
             <div className="workIntro">
-              {/* <h3>CALLING ALL CHENNAI LOVERS!</h3>
-              <h3>Introducing Reimagine Chennai</h3> */}
-              <h3>An AI Art Challenge That's About to Get Real.</h3>
+             
+              <h1>ai art challenge</h1>
 
               <p>
                 Marina Beach with floating food stalls in 2050. Carnatic

@@ -265,6 +265,8 @@ export default function Volunteer() {
             />
             <div className="volunteeerMainContent">
               <h3>Volunteer</h3>
+              <h3 className="hidden">Volunteer in Chennai</h3>
+
               <p className="paraZeroVolunteerSection">
                 Become an essential component of Chennai's lively culture!
                 Contribute your time and expertise to a variety of causes,

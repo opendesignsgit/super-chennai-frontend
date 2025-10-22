@@ -9,6 +9,7 @@ import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import InnovatePagesSlider from "./InnovatePageSlider";
 import { Helmet } from "react-helmet-async";
+import { Heading1 } from "lucide-react";
 
 export default function AutoTechinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -415,9 +416,9 @@ export default function AutoTechinChennai() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>
-                From Steel to Software: Chennai Drives India’s Auto Innovation
-              </h3>
+              <h1>
+             Auto Tech Chennai
+              </h1>
               <p>
                 Chennai is not just an auto manufacturing hub — it’s now a
                 rising AutoTech capital. With global OEMs, smart factories, EV

@@ -326,7 +326,7 @@ export default function EVMobilityinChennai() {
               </p>
             </div>
             <div className="workIntro">
-              <h1>Driving India’s Clean Transport Revolution</h1>
+              <h1>electric vehicles in chennai</h1>
               <p>
                 Chennai is not just catching up with electric mobility — it's
                 quietly leading it. From manufacturing EVs and batteries to

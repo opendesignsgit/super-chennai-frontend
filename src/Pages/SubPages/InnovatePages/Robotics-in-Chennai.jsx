@@ -535,10 +535,7 @@ export default function RoboticsinChennai() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>
-                From Labs to Assembly Lines, Chennai is Building Intelligent
-                Machines
-              </h3>
+              <h1>Robotics in Chennai</h1>
               <p>
                 Robotics in Chennai is no longer science fiction. From smart
                 factories and warehouse automation to med-tech and drone
@@ -562,8 +559,8 @@ export default function RoboticsinChennai() {
                    index % 3 === 0
                      ? "pattern-a"
                      : index % 3 === 1
-                     ? "pattern-b"
-                     : "pattern-c"
+                       ? "pattern-b"
+                       : "pattern-c"
                  }`}
               key={index}
             >
@@ -716,8 +713,8 @@ export default function RoboticsinChennai() {
         index % 3 === 0
           ? "pattern-a"
           : index % 3 === 1
-          ? "pattern-b"
-          : "pattern-c"
+            ? "pattern-b"
+            : "pattern-c"
       }`}
               key={index}
             >
@@ -806,8 +803,8 @@ export default function RoboticsinChennai() {
         index % 3 === 0
           ? "pattern-a"
           : index % 3 === 1
-          ? "pattern-b"
-          : "pattern-c"
+            ? "pattern-b"
+            : "pattern-c"
       }`}
               key={index}
             >
@@ -863,8 +860,8 @@ export default function RoboticsinChennai() {
         index % 3 === 0
           ? "pattern-a"
           : index % 3 === 1
-          ? "pattern-b"
-          : "pattern-c"
+            ? "pattern-b"
+            : "pattern-c"
       }`}
               key={index}
             >

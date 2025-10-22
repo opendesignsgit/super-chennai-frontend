@@ -38,7 +38,7 @@ export default function SuperChennaiEvents() {
         >
           <div className="container max-w-7xl mx-auto px-4">
             <div className="workIntro">
-              <h3>Celebrate the Spirit of Our City!</h3>
+              <h1>Celebrate the Spirit of Our City!</h1>
               <p>
                 Chennai isn’t just a city; it’s an emotion, a rhythm, and a
                 timeless blend of tradition and modernity. The SuperChennai

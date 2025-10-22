@@ -18,7 +18,7 @@ export default function Contact() {
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Contact Us</h3>
+            <h1>Contact Us</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> - <Link to="/contact">Contact Us</Link>
             </div>

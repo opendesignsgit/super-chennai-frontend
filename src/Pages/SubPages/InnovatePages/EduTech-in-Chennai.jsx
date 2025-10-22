@@ -617,7 +617,7 @@ export default function EduTechinChennai() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Where Learning Meets Technology, Innovation, and Scale</h3>
+              <h1>AR VR Chennai</h1>
               <p>
                 Chennai is not just a city of schools and colleges anymore —
                 it's a hotbed of education innovation. From K-12 learning apps

@@ -459,7 +459,7 @@ export default function ThreeDPrintinginChennai() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Where Prototypes Meet Possibilities</h3>
+              <h1>3d Printing Chennai</h1>
               <p>
                 Chennai is not just known for its manufacturing — it’s known for
                 its re-making. Welcome to the city’s growing 3D printing

@@ -348,7 +348,7 @@ export default function About() {
           <div data-aos="fade-up" data-aos-delay="400">
             <div className="InvestChennaiContainerFlex aboutIntro">
               <div className="InvestChennaiContent">
-                <h2>SUPER CITY TO LIVE</h2>
+                <h1>About Chennai City</h1>
                 <p>
                   Chennai is India’s healthcare capital, SaaS capital, fintech
                   capital, and automobile capital. Home to 7.5 million people,{" "}

@@ -17,6 +17,7 @@ import {
   Arrow as TooltipArrow,
 } from "@radix-ui/react-tooltip";
 import AutoShrinkText from "../../Components/Text/AutoShrinkText";
+import PropertyVideos from "./Components/Properties/PropertyVideos";
 
 import {
   ArrowLeftIcon,
@@ -191,9 +192,6 @@ const amenityIcons = {
 };
 
 
-
-
-
 const interiorIcons = {
   doorType: DoorOpen,
   wardrobes: Package,
@@ -203,6 +201,7 @@ const interiorIcons = {
   falseCeiling: Lightbulb,
   lighting: Lightbulb,
 };
+
 const applianceIcons = {
   acUnits: Wind,
   fridgeCount: Microwave,
@@ -254,10 +253,8 @@ const PropertyDetailPage = () => {
     : [];
 
   const visibleAmenities = showAll ? trueAmenities : trueAmenities.slice(0, 6);
-
   if (loading) return <PropertyDetailSkeleton />;
-  if (!property) return <p className="not-found">❌ Property not found</p>;
-
+  if (!property) return <h1 className="not-found">❌ Property not found</h1>;
   const getImageUrl = (imgObj) => {
     if (!imgObj) return "../../../public/propertyDefault.png";
     const url = imgObj.url || imgObj.image?.url;
@@ -274,30 +271,14 @@ const PropertyDetailPage = () => {
   const ageOfProperty = property?.ageOfProperty || "-";
   const transactionType = property?.transactionType || null;
   const agentReraId = property?.agentReraId || "-";
-
   const price = property?.price
     ? `₹${formatPrice(property.price)}`
     : "Price on Request";
-
   const pricePerSqft = property?.pricePerSqft || null;
   const MaxArea = property?.area.maxSqft || null;
   const MiniArea = property?.area.minSqft || null;
-
-  const bhk = property?.bhk?.label || null;
   const bathrooms = property?.washrooms ?? null;
   const furnishing = property?.furnishing || null;
-  // Society / Builder info
-  const societyName = property?.society?.name || null;
-  const builder = property?.society?.builder || null;
-  const totalUnits = property?.society?.totalUnits ?? null;
-  const possessionStatus = property?.society?.possessionStatus || null;
-
-  // Location info
-  const locationLabel = property?.location?.label || "N/A";
-  const state = property?.location?.state || "-";
-  const city = property?.location?.city || "-";
-  const locality = property?.location?.locality || "-";
-  // Images
   const heroImage = getImageUrl(property?.heroImage);
   const images = property?.images || [];
   const allImages = [
@@ -321,7 +302,6 @@ const PropertyDetailPage = () => {
   const urgentSale = property?.urgentSale ?? false;
   const availabilityStatus = property?.availabilityStatus ?? null;
 
-  // Floor pLn
 
   return (
     <>
@@ -1119,53 +1099,69 @@ const PropertyDetailPage = () => {
           )}
 
         {/* PLOT AREA */}
+
+        {/* PLOT / BUILDING DETAILS */}
         {property &&
           (() => {
-            const hasPlotData =
-              property.plotArea ||
-              property.dimensions?.length ||
-              property.dimensions?.width ||
-              property.roadWidth ||
-              property.cornerPlot;
+            const { plotArea, dimensions, roadWidth, cornerPlot } =
+              property || {};
 
-            if (!hasPlotData) return null;
+            // check if at least one field has value
+            const hasAnyData =
+              plotArea ||
+              dimensions?.length ||
+              dimensions?.width ||
+              roadWidth ||
+              cornerPlot;
+
+            if (!hasAnyData) return null; 
 
             return (
               <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">
                 <h2 className="text-xl font-semibold text-gray-800 mb-4">
                   Plot / Building Details
                 </h2>
+
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
-                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                    <span>
-                      <strong>Plot Area:</strong> {property.plotArea || "N/A"}{" "}
-                      sq ft
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                    <span>
-                      <strong>Length:</strong>{" "}
-                      {property.dimensions?.length || "N/A"} ft
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                    <span>
-                      <strong>Width:</strong>{" "}
-                      {property.dimensions?.width || "N/A"} ft
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                    <span>
-                      <strong>Road Width:</strong> {property.roadWidth || "N/A"}{" "}
-                      ft
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
-                    <span>
-                      <strong>Corner Plot:</strong>{" "}
-                      {property.cornerPlot ? "Yes" : "No"}
-                    </span>
-                  </div>
+                  {plotArea && (
+                    <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                      <span>
+                        <strong>Plot Area:</strong> {plotArea} sq ft
+                      </span>
+                    </div>
+                  )}
+
+                  {dimensions?.length && (
+                    <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                      <span>
+                        <strong>Length:</strong> {dimensions.length} ft
+                      </span>
+                    </div>
+                  )}
+
+                  {dimensions?.width && (
+                    <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                      <span>
+                        <strong>Width:</strong> {dimensions.width} ft
+                      </span>
+                    </div>
+                  )}
+
+                  {roadWidth && (
+                    <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                      <span>
+                        <strong>Road Width:</strong> {roadWidth} ft
+                      </span>
+                    </div>
+                  )}
+
+                  {cornerPlot === true && (
+                    <div className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition">
+                      <span>
+                        <strong>Corner Plot:</strong> Yes
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
             );
@@ -1528,27 +1524,11 @@ const PropertyDetailPage = () => {
             </div>
           </div>
         )}
-        {/* WALKTHROUGH VIDEO */}
-        {property.walkthroughVideo && (
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mb-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Walkthrough Video
-            </h2>
 
-            <div className="video-container w-full h-[400px] flex justify-center">
-              <iframe
-                width="100%"
-                height="100%"
-                src={property.walkthroughVideo.replace("watch?v=", "embed/")}
-                title="Walkthrough Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        )}
-
+        <div className="container mx-auto px-4 py-6">
+          {/* other property sections here */}
+          <PropertyVideos property={property} />
+        </div>
         {/* MAP VIEW  */}
         {property.mapView && property.mapView.mapEmbed && (
           <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">

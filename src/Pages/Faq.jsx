@@ -4,6 +4,7 @@ import "../assets/Css/Eventstyle.css";
 import "../assets/Css/faq.css";
 import Search from "../Components/Search";
 import { Helmet } from "react-helmet-async";
+import { Heading1 } from "lucide-react";
 
 export default function Faq() {
   const [activeIndex, setActiveIndex] = useState(0); // First one open by default
@@ -293,9 +294,9 @@ export default function Faq() {
       <section className="EventsListSec SecPadblock12">
         <div className="container max-w-7xl mx-auto">
           <div className="Eventitlesec mb-[50px] text-center">
-            <h2 className="text-[#a44294]">
+            <h1 className="text-[#a44294]">
               FAQ<small>s</small>
-            </h2>
+            </h1>
             <p>
               Learn everything about Super Chennai and how it's shaping the
               city's future.

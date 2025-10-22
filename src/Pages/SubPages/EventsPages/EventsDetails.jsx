@@ -234,7 +234,7 @@ export default function EventsDetails() {
                           width: "120px",
                         }}
                       >
-                        Register
+                        Book Now
                       </button>
                     </a>
                   </div>

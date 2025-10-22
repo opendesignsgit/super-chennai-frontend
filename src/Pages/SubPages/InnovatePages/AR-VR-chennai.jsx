@@ -534,7 +534,7 @@ export default function ARVRchennai() {
               </p>
             </div>
             <div className="workIntro">
-              <h3>Where Learning Meets Technology, Innovation, and Scale</h3>
+              <h3>AR VR Chennai</h3>
               <p>
                 Chennai’s AR/VR ecosystem is rapidly growing, driven by
                 industrial innovation, immersive education, and cutting-edge

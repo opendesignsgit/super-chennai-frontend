@@ -90,7 +90,7 @@ export default function CardCarousel111() {
           <p>Calendar &nbsp; Calendar &nbsp; Calendar &nbsp; Calendar</p>
         </div>
         <div className="container max-w-7xl mx-auto px-4 EventsCalendarTitleMain">
-          <h2>Events Calendar</h2>
+          <h1>Events Calendar</h1>
           <p>
             Conferences by day, concerts by night — Chennai’s event calendar
             blends innovation, culture, and entertainment effortlessly.

@@ -238,52 +238,54 @@ export default function IconofthemonthOct() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-const listRef = useRef(null);
+  const listRef = useRef(null);
 
-useEffect(() => {
-  const list = listRef.current;
-  if (!list) return;
+  useEffect(() => {
+    const list = listRef.current;
+    if (!list) return;
 
-  let scrollAmount = 0;
-  const speed = 0.9; // pixels per frame
-  let animationFrameId;
-  let isPaused = false; // <-- new flag
+    let scrollAmount = 0;
+    const speed = 0.9; // pixels per frame
+    let animationFrameId;
+    let isPaused = false; // <-- new flag
 
-  const scrollList = () => {
-    if (!isPaused && list.scrollHeight > list.clientHeight) {
-      scrollAmount += speed;
-      if (scrollAmount >= list.scrollHeight) scrollAmount = 0;
-      list.scrollTop = scrollAmount;
-    }
+    const scrollList = () => {
+      if (!isPaused && list.scrollHeight > list.clientHeight) {
+        scrollAmount += speed;
+        if (scrollAmount >= list.scrollHeight) scrollAmount = 0;
+        list.scrollTop = scrollAmount;
+      }
+      animationFrameId = requestAnimationFrame(scrollList);
+    };
+
+    const handleMouseEnter = () => {
+      isPaused = true;
+    };
+
+    const handleMouseLeave = () => {
+      isPaused = false;
+    };
+
+    // Add event listeners
+    list.addEventListener("mouseenter", handleMouseEnter);
+    list.addEventListener("mouseleave", handleMouseLeave);
+
     animationFrameId = requestAnimationFrame(scrollList);
-  };
 
-  const handleMouseEnter = () => {
-    isPaused = true;
-  };
-
-  const handleMouseLeave = () => {
-    isPaused = false;
-  };
-
-  // Add event listeners
-  list.addEventListener("mouseenter", handleMouseEnter);
-  list.addEventListener("mouseleave", handleMouseLeave);
-
-  animationFrameId = requestAnimationFrame(scrollList);
-
-  return () => {
-    cancelAnimationFrame(animationFrameId);
-    list.removeEventListener("mouseenter", handleMouseEnter);
-    list.removeEventListener("mouseleave", handleMouseLeave);
-  };
-}, [awardsData]);
-
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      list.removeEventListener("mouseenter", handleMouseEnter);
+      list.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [awardsData]);
 
   return (
     <>
       <Helmet>
-        <title>Chinmayi Sripada’s Soulful Voice of India - Icon of the Month  | Chinmayi Sripada - Super Chennai</title>
+        <title>
+          Chinmayi Sripada’s Soulful Voice of India - Icon of the Month |
+          Chinmayi Sripada - Super Chennai
+        </title>
         <meta
           name="description"
           content="Chinmayi Sripada’s journey showcases true excellence award winning singer, mentor, entrepreneur, and advocate for social justice and women’s rights."
@@ -312,8 +314,8 @@ useEffect(() => {
           <div className="InvestChennaiContainerFlex aboutIntro">
             <div className="InvestChennaiContent text-center">
               <h2>
-                Icon of the Month – Chinmayi Sripada
-                <br /> <small>“Where Soul Meets Melody</small>
+                {/* Icon of the Month – Chinmayi Sripada */}
+                <br /> <small>Where Soul Meets Melody</small>
               </h2>
               <p>
                 <strong>Chinmayi Sripada</strong> is a celebrated Indian{" "}
@@ -347,10 +349,7 @@ useEffect(() => {
           data-aos-delay="400"
         >
           <div className="workIntro">
-            <h3 className="newupdatewhychennai">
-              The Melody Maverick
-
-            </h3>
+            <h3 className="newupdatewhychennai">The Melody Maverick</h3>
             <div className="section-container container max-w-7xl mx-auto px-4">
               <div className="section-left-image">
                 <img
@@ -401,7 +400,7 @@ useEffect(() => {
             ></img>
             <div
               ref={listRef}
-              className="awards-list max-h-100 overflow-y-auto" 
+              className="awards-list max-h-100 overflow-y-auto"
             >
               {awardsData.map((award, index) => (
                 <div key={index} className="awards-item">
@@ -415,8 +414,8 @@ useEffect(() => {
         <section className="awards-section expandingBrand">
           <div className="awards-container">
             <h2 className="section-title">
-              We Are <br />
-              <span>Celebrating</span>
+              Why We <br />
+              <span> Celebrate Her</span>
             </h2>
 
             <div className="awards-list">

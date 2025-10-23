@@ -19,13 +19,13 @@ export default function ChennaiApp() {
   const [activeSubTab, setActiveSubTab] = useState([]);
 
   const tabs = [
-    { id: "Metro / Transit / Travel", label: "Metro / Transit / Travel" },
+    { id: "Metro / Transit / Travel", label: " Travel" },
     {
       id: "Food Delivery & Cake Delivery",
-      label: "Food Delivery & Cake Delivery",
+      label: "Food Delivery",
     },
-    { id: "Grocerry", label: "Grocerry" },
-    { id: "Parcel / Courier", label: "Parcel / Courier" },
+    { id: "Grocerry", label: "Grocery" },
+    // { id: "Parcel / Courier", label: "Parcel / Courier" },
     { id: "Porter / Heavy Items", label: "Porter / Heavy Items" },
   ];
   return (

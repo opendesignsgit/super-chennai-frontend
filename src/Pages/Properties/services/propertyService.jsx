@@ -7,7 +7,8 @@ const API_URL = `${API_BASE_URL}/api`
 
 
 export const fetchProperties = async (filters = {}, sortBy = "") => {
-  const params = {};
+  
+  const params = { limit: 0 };
 
   // Budget
   // if (filters.minBudget != null) {
@@ -241,18 +242,27 @@ export const fetchPropertyBySlug = async (slug) => {
 };
 
 export const fetchLocations = async () => {
-  const { data } = await axios.get(`${API_URL}/locations`);
+  // const { data } = await axios.get(`${API_URL}/locations`);
+  const { data } = await axios.get(`${API_URL}/locations`, {
+    params: { limit: 0 }, 
+  });
   return data.docs || [];
 };
 
 // FILTER DATA FETEC
 export const fetchPropertyTypes = async () => {
-  const { data } = await axios.get(`${API_URL}/propertyTypes`);
+  // const { data } = await axios.get(`${API_URL}/propertyTypes`);
+   const { data } = await axios.get(`${API_URL}/propertyTypes`, {
+    params: { limit: 0 },
+  });
   return data.docs || [];
 };
 
 // Fetch BHK Options (make sure you have a collection or enum for this in Payload)
 export const fetchBhkOptions = async () => {
-  const { data } = await axios.get(`${API_URL}/bhkTypes`);
+  // const { data } = await axios.get(`${API_URL}/bhkTypes`);
+  const { data } = await axios.get(`${API_URL}/bhkTypes`, {
+    params: { limit: 0 },
+  });
   return data.docs || [];
 };

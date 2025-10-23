@@ -493,4 +493,34 @@ export const chennaiAppDataPorter = [
       "https://apps.apple.com/in/app/blackbuck/id6499570896",
     WebsiteLink: "https://www.blackbuck.com/",
   },
+
+   {
+    id: 14,
+    appImage: "/images/chennai-app-images/dunzo-images-app.jpg",
+    Company: "Dunzo",
+    AppDescription:
+      "Pickup and delivery service for parcels, groceries, and food.",
+    link: "/events",
+    FeaturesContent: [
+      "Quick delivery",
+      "GPS tracking",
+      "Multiple categories",
+      "In-app payments",
+      "Live tracking",
+      "Easy pickup scheduling",
+      "Order history",
+    ],
+    serviceContent: [
+      "Parcel pickup & delivery",
+      "Grocery delivery",
+      "Medicine delivery",
+      "Food delivery",
+      "Personal errands",
+      "Contactless delivery",
+      "Express delivery",
+    ],
+    AndriodLink: "https://play.google.com/store/apps/details?id=com.dunzo.user",
+    IOSLink: "",
+    WebsiteLink: "https://www.dunzo.com",
+  },
 ];

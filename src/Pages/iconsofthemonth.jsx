@@ -137,6 +137,27 @@ export default function Iconsofthemonth() {
                   </p>
                 </div>
               </a>
+
+              {/*############## CHINNAMAYI ######## */}
+              <a
+                className="superchennaiEventsSection"
+                href="/icon-of-the-Oct-month"
+              >
+
+                <div
+                  className="flex flex-col items-center text-center"
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/events/image-inner.jpg"
+                    alt="Left Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">
+                    Icon of the Month - Oct 2025
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </section>

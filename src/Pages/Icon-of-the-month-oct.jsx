@@ -170,8 +170,10 @@ export default function IconofthemonthOct() {
     },
     {
       description: [
-        "From soul-stirring playback singing to entrepreneurship, activism, and social service,",
-        "she continues to inspire countless people, proving that dedication, talent,",
+        "From soul-stirring playback singing to entrepreneurship,",
+        " activism, and social service,",
+        "she continues to inspire countless people,",
+       " proving that dedication, talent,",
         "and integrity can create a lasting legacy.",
       ],
     },
@@ -245,14 +247,18 @@ export default function IconofthemonthOct() {
     if (!list) return;
 
     let scrollAmount = 0;
-    const speed = 0.9; // pixels per frame
+    const speed = 0.9; 
     let animationFrameId;
-    let isPaused = false; // <-- new flag
+    let isPaused = false;
 
     const scrollList = () => {
       if (!isPaused && list.scrollHeight > list.clientHeight) {
         scrollAmount += speed;
-        if (scrollAmount >= list.scrollHeight) scrollAmount = 0;
+
+        // Reset when reaching the bottom
+        if (scrollAmount >= list.scrollHeight - list.clientHeight)
+          scrollAmount = 0;
+
         list.scrollTop = scrollAmount;
       }
       animationFrameId = requestAnimationFrame(scrollList);
@@ -266,7 +272,6 @@ export default function IconofthemonthOct() {
       isPaused = false;
     };
 
-    // Add event listeners
     list.addEventListener("mouseenter", handleMouseEnter);
     list.addEventListener("mouseleave", handleMouseLeave);
 
@@ -301,7 +306,7 @@ export default function IconofthemonthOct() {
           <div className="VolunteerMainContainer">
             <div className="volunteerSectionBanner">
               <div className="VolunteerBannerImage">
-                <img src="/images/events/banner.jpg" alt="" />
+                <img src="/images/events/Mrs.Chinmayi-sripada.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -400,7 +405,10 @@ export default function IconofthemonthOct() {
             ></img>
             <div
               ref={listRef}
-              className="awards-list max-h-100 overflow-y-auto"
+              className="awards-list max-h-140 overflow-y-auto"
+              style={{
+                scrollbarWidth: "thin",
+              }}
             >
               {awardsData.map((award, index) => (
                 <div key={index} className="awards-item">
@@ -437,7 +445,6 @@ export default function IconofthemonthOct() {
           </div>
         </section>
 
-        {/* <IconoftheMonthJuly /> */}
         <InstagramReelsMarquee />
         <Becameavolunteer />
       </div>

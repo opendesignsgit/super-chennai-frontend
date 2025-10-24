@@ -1,3 +1,4 @@
+//££££££££ TRAVELE ££££££££££££
 export const chennaiAppDataTravel = [
   {
     id: 0,
@@ -197,7 +198,277 @@ export const chennaiAppDataTravel = [
     IOSLink: "",
     WebsiteLink: "",
   },
+  {
+    id: 5,
+    appImage: "/images/chennai-app-images/Make my Trip.jpg",
+    Company: "MakeMyTrip",
+    AppDescription:
+      "MakeMyTrip – Comprehensive travel-booking app for flights, hotels, and buses.",
+    link: "/events",
+    FeaturesContent: [
+      "Flight booking",
+      "Hotel booking",
+      "Bus booking",
+      "Holiday packages",
+      "Deals & offers",
+    ],
+    serviceContent: [
+      "Travel planning",
+      "Itinerary management",
+      "Online payments",
+      "Customer support",
+      "Booking cancellation",
+    ],
+    AndriodLink: "https://play.google.com/store/apps/details?id=com.makemytrip",
+    IOSLink: "https://apps.apple.com/in/app/makemytrip/id530488359",
+    WebsiteLink: "https://www.makemytrip.com/",
+  },
+
+  {
+    id: 6,
+    appImage: "/images/chennai-app-images/Gobibibo.jpg",
+    Company: "Goibibo",
+    AppDescription:
+      "Goibibo – Travel-booking platform for flights, hotels, trains, and buses.",
+    link: "/events",
+    FeaturesContent: [
+      "Flights",
+      "Hotels",
+      "Trains",
+      "Buses",
+      "Holiday packages",
+    ],
+    serviceContent: [
+      "Travel booking",
+      "Payment gateway",
+      "Customer support",
+      "Offers & discounts",
+      "Booking modifications",
+    ],
+    AndriodLink: "https://play.google.com/store/apps/details?id=com.goibibo",
+    IOSLink:
+      "https://apps.apple.com/in/app/goibibo-flight-hotel-booking/id631927169",
+    WebsiteLink: "https://www.goibibo.com/",
+  },
+  {
+    id: 7,
+    appImage: "/images/chennai-app-images/Skyscanner.jpg",
+    Company: "Skyscanner",
+    AppDescription:
+      "Skyscanner – Compare flights, hotels, and rental cars worldwide effortlessly.",
+    link: "/events",
+    FeaturesContent: [
+      "Flight search",
+      "Hotel search",
+      "Car rentals",
+      "Price comparison",
+      "Price alerts",
+    ],
+    serviceContent: [
+      "Travel comparison",
+      "Booking assistance",
+      "Alerts for deals",
+      "Multi-currency support",
+      "Travel recommendations",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=net.skyscanner.android.main",
+    IOSLink: "https://apps.apple.com/in/app/skyscanner/id415458524",
+    WebsiteLink: "https://www.skyscanner.com/",
+  },
+
+  {
+    id: 8,
+    appImage: "/images/chennai-app-images/Tripadvisor.jpg",
+    Company: "Tripadvisor",
+    AppDescription:
+      "Tripadvisor – Reviews and bookings for hotels, restaurants, and attractions.",
+    link: "/events",
+    FeaturesContent: [
+      "Reviews",
+      "Ratings",
+      "Photos",
+      "Travel guides",
+      "Booking links",
+    ],
+    serviceContent: [
+      "Travel planning",
+      "Recommendations",
+      "Hotel booking",
+      "Restaurant suggestions",
+      "Activity bookings",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.tripadvisor.tripadvisor",
+    IOSLink: "https://apps.apple.com/in/app/tripadvisor/id284876795",
+    WebsiteLink: "https://www.tripadvisor.in/",
+  },
+
+  {
+    id: 9,
+    appImage: "/images/chennai-app-images/booking.com.jpg",
+    Company: "Booking.com",
+    AppDescription:
+      "Booking.com – Book accommodations, apartments and hotels worldwide with ease.",
+    link: "/events",
+    FeaturesContent: [
+      "Hotel booking",
+      "Apartments",
+      "Vacation rentals",
+      "Reviews",
+      "Instant confirmation",
+    ],
+    serviceContent: [
+      "Accommodation booking",
+      "Customer support",
+      "Payment options",
+      "Deals & discounts",
+      "Cancellation assistance",
+    ],
+    AndriodLink: "https://play.google.com/store/apps/details?id=com.booking",
+    IOSLink: "https://apps.apple.com/in/app/booking-com-hotels/id367003839",
+    WebsiteLink: "https://www.booking.com/",
+  },
+
+  {
+    id: 10,
+    appImage: "/images/chennai-app-images/Cleartrip.jpg",
+    Company: "Cleartrip",
+    AppDescription:
+      "Cleartrip – Travel-booking app for flights, hotels and trains with offers.",
+    link: "/events",
+    FeaturesContent: [
+      "Flights",
+      "Hotels",
+      "Trains",
+      "Holiday packages",
+      "Offers & discounts",
+    ],
+    serviceContent: [
+      "Travel booking",
+      "Online payments",
+      "Itinerary management",
+      "Customer support",
+      "Booking modification",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.cleartrip.android",
+    IOSLink: "https://apps.apple.com/in/app/cleartrip/id401465326",
+    WebsiteLink: "https://www.cleartrip.com/",
+  },
+
+  {
+    id: 11,
+    appImage: "/images/chennai-app-images/Oyo.jpg",
+    Company: "Oyo",
+    AppDescription:
+      "Oyo – Budget hotel booking app with instant room check-in convenience.",
+    link: "/events",
+    FeaturesContent: [
+      "Hotel search",
+      "Room selection",
+      "Instant booking",
+      "Discounts",
+      "Loyalty programs",
+    ],
+    serviceContent: [
+      "Budget accommodation",
+      "Online check-in",
+      "Payment gateway",
+      "Customer support",
+      "Booking cancellation",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.oyo.consumer",
+    IOSLink: "https://apps.apple.com/in/app/oyo/id938022134",
+    WebsiteLink: "https://www.oyorooms.com/",
+  },
+
+  {
+    id: 12,
+    appImage:
+      "/images/chennai-app-images/Moovit – Public transport navigation worldwide.jpg",
+    Company: "Moovit",
+    AppDescription:
+      "Moovit – Global public-transport navigation app with real-time route updates.",
+    link: "/events",
+    FeaturesContent: [
+      "Bus search",
+      "Seat selection",
+      "Real-time schedule",
+      "Ticket booking",
+      "Offers",
+    ],
+    serviceContent: [
+      "Online ticketing",
+      "Booking modification",
+      "Customer support",
+      "Payment options",
+      "Cancellation/refund",
+    ],
+    AndriodLink: "https://play.google.com/store/apps/details?id=com.tranzmate",
+    IOSLink: "https://apps.apple.com/in/app/moovit/id498477945",
+    WebsiteLink: "https://moovitapp.com/",
+  },
+
+  {
+    id: 13,
+    appImage:
+      "/images/chennai-app-images/Redbus– Bus ticket booking in India.jpg",
+    Company: "RedBus",
+    AppDescription:
+      "RedBus – Global public-transport navigation app with real-time route updates.",
+    link: "/events",
+    FeaturesContent: [
+      "Bus search",
+      "Seat selection",
+      "Real-time schedule",
+      "Ticket booking",
+      "Offers",
+    ],
+    serviceContent: [
+      "Online ticketing",
+      "Booking modification",
+      "Customer support",
+      "Payment options",
+      "Cancellation/refund",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=in.redbus.android",
+    IOSLink:
+      "https://apps.apple.com/us/app/redbus-book-bus-tickets/id416019115",
+    WebsiteLink: "https://www.redbus.in/",
+  },
+  {
+    id: 16,
+    appImage: "/images/chennai-app-images/Namma Yatri.jpg",
+    Company: "Namma Yatri",
+    AppDescription:
+      "Namma Yatri – Local cab and auto-booking app with transparent fares.",
+    link: "/events",
+    FeaturesContent: [
+      "Cab & auto booking",
+      "Fare transparency",
+      "Driver tracking",
+      "Multiple payment options",
+      "Ride history",
+    ],
+    serviceContent: [
+      "Ride-hailing",
+      "Customer support",
+      "Route optimization",
+      "Online payments",
+      "Ride cancellation",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=in.juspay.nammayatripartner",
+    IOSLink:
+      "https://apps.apple.com/us/app/namma-yatri-ride-booking-app/id1637429831",
+    WebsiteLink: "https://nammayatri.in/",
+  },
 ];
+
+//££££££££ FOOD ££££££££££££££££
 
 export const chennaiAppDataFood = [
   {
@@ -298,7 +569,141 @@ export const chennaiAppDataFood = [
     IOSLink: "https://apps.apple.com/in/app/eatsure/id1508250033",
     WebsiteLink: "https://www.eatsure.in",
   },
+
+  {
+    id: 15,
+    appImage: "/images/chennai-app-images/Domino’s Pizza App.jpg",
+    Company: "Domino’s Pizza App",
+    AppDescription:
+      "Domino’s Pizza App – Order customizable pizzas and track delivery in real-time.",
+    link: "/events",
+    FeaturesContent: [
+      "Pizza customization",
+      "Menu browsing",
+      "Order tracking",
+      "Deals & discounts",
+      "Loyalty points",
+    ],
+    serviceContent: [
+      "Food delivery",
+      "Pickup",
+      "Online payment",
+      "Customer support",
+      "Order modification",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.dominospizza",
+    IOSLink: "https://apps.apple.com/us/app/dominos-pizza-usa/id436491861",
+    WebsiteLink: "https://www.dominos.com/",
+  },
+
+  {
+    id: 16,
+    appImage: "/images/chennai-app-images/KFC.jpg",
+    Company: "KFC App",
+    AppDescription:
+      "KFC App – Order fried chicken and sides via mobile, track delivery.",
+    link: "/events",
+    FeaturesContent: [
+      "Menu browsing",
+      "Online ordering",
+      "Deals & coupons",
+      "Track delivery",
+      "Loyalty points",
+    ],
+    serviceContent: [
+      "Food delivery",
+      "Pickup",
+      "Customer support",
+      "Online payments",
+      "Refunds",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.kfc.us.mobile",
+    IOSLink: "https://apps.apple.com/us/app/kfc-us-ordering-app/id1538999662",
+    WebsiteLink: "https://www.kfc.com/",
+  },
+
+  {
+    id: 17,
+    appImage: "/images/chennai-app-images/Zepto Cafe.jpg",
+    Company: "Zepto Cafe",
+    AppDescription:
+      "Zepto Cafe – Quick café-style snack and beverage delivery at your doorstep.",
+    link: "/events",
+    FeaturesContent: [
+      "Snacks menu",
+      "Beverage menu",
+      "Fast delivery",
+      "Offers",
+      "Favorites",
+    ],
+    serviceContent: [
+      "Quick food delivery",
+      "Online payment",
+      "Customer support",
+      "Scheduled delivery",
+      "Order tracking",
+    ],
+    AndriodLink: "https://play.google.com/store/apps/details?id=com.zepto.cafe",
+    IOSLink: "",
+    WebsiteLink: "https://www.zepto.co.in/",
+  },
+  {
+    id: 18,
+    appImage: "/images/chennai-app-images/McDonald's.jpg",
+    Company: "McDonald’s",
+    AppDescription:
+      "McDonald’s – Fast-food ordering app with delivery and pickup options.",
+    link: "/events",
+    FeaturesContent: [
+      "Menu browsing",
+      "Customization",
+      "Online ordering",
+      "Offers & rewards",
+      "Store locator",
+    ],
+    serviceContent: [
+      "Fast food delivery",
+      "Pickup",
+      "Loyalty program",
+      "Customer support",
+      "Refunds",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.mcdonalds.app",
+    IOSLink: "https://apps.apple.com/us/app/mcdonalds/id922103212",
+    WebsiteLink: "https://www.mcdonalds.com/",
+  },
+
+  {
+    id: 20,
+    appImage: "/images/chennai-app-images/Licious.jpg",
+    Company: "Licious",
+    AppDescription:
+      "Licious – Fresh meat and seafood delivery platform offering convenient ordering.",
+    link: "/events",
+    FeaturesContent: [
+      "Fresh meat & seafood",
+      "Ready-to-cook options",
+      "Recipes",
+      "Quick delivery",
+      "Quality assurance",
+    ],
+    serviceContent: [
+      "Home delivery",
+      "Payment options",
+      "Customer support",
+      "Subscription packs",
+      "Refunds",
+    ],
+    AndriodLink: "https://play.google.com/store/apps/details?id=com.licious",
+    IOSLink:
+      "https://apps.apple.com/in/app/licious-fresh-meat-seafood/id1288758233",
+    WebsiteLink: "https://www.licious.in/",
+  },
 ];
+//££££££££ GROCERY ££££££££££££££
 
 export const chennaiAppDataGrocery = [
   {
@@ -393,7 +798,65 @@ export const chennaiAppDataGrocery = [
     IOSLink: "",
     WebsiteLink: "https://www.amazon.in/fmcg",
   },
+
+  {
+    id: 11,
+    appImage: "/images/chennai-app-images/Insta mart.jpg",
+    Company: "Instamart",
+    AppDescription:
+      "Instamart – Instant grocery delivery platform offering essentials within minutes.",
+    link: "/events",
+    FeaturesContent: [
+      "Product browsing",
+      "Real-time inventory",
+      "Fast delivery",
+      "Offers",
+      "Order tracking",
+    ],
+    serviceContent: [
+      "Grocery delivery",
+      "Scheduled orders",
+      "Online payment",
+      "Customer support",
+      "Refunds",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=in.swiggy.android.instamart",
+    IOSLink:
+      "https://apps.apple.com/us/app/instamart-10-mins-grocery-app/id6738619733",
+    WebsiteLink: "https://www.swiggy.com/instamart",
+  },
+
+  {
+    id: 12,
+    appImage: "/images/chennai-app-images/Zepto Rider.jpg",
+    Company: "Zepto Rider",
+    AppDescription:
+      "Zepto Rider – Delivery-partner app enabling fast express deliveries for Zepto.",
+    link: "/events",
+    FeaturesContent: [
+      "Order management",
+      "Delivery tracking",
+      "Earnings dashboard",
+      "Notifications",
+      "Route optimization",
+    ],
+    serviceContent: [
+      "Delivery partner support",
+      "Payment tracking",
+      "Customer support",
+      "Shift management",
+      "Performance analytics",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.zepto.rider",
+    IOSLink:
+      "https://apps.apple.com/in/app/zepto-delivery-partner/id1579171075",
+    WebsiteLink: "https://rider.zepto.co.in/",
+  },
 ];
+
+//££££££££ DELEVERY ££££££££££££££
 
 export const chennaiAppDataParcelDelivery = [
   {
@@ -426,6 +889,7 @@ export const chennaiAppDataParcelDelivery = [
     WebsiteLink: "https://www.dunzo.com",
   },
 ];
+//££££££££ PARCEL ££££££££££££££££
 
 export const chennaiAppDataPorter = [
   {
@@ -489,12 +953,11 @@ export const chennaiAppDataPorter = [
     ],
     AndriodLink:
       "https://play.google.com/store/apps/details?id=com.blackbuck.sme.demand&hl=en_IN",
-    IOSLink:
-      "https://apps.apple.com/in/app/blackbuck/id6499570896",
+    IOSLink: "https://apps.apple.com/in/app/blackbuck/id6499570896",
     WebsiteLink: "https://www.blackbuck.com/",
   },
 
-   {
+  {
     id: 14,
     appImage: "/images/chennai-app-images/dunzo-images-app.jpg",
     Company: "Dunzo",
@@ -522,5 +985,89 @@ export const chennaiAppDataPorter = [
     AndriodLink: "https://play.google.com/store/apps/details?id=com.dunzo.user",
     IOSLink: "",
     WebsiteLink: "https://www.dunzo.com",
+  },
+];
+//££££££££ OTHERS  £££££££££££££££
+
+export const OthersApps = [
+  {
+    id: 13,
+    appImage: "/images/chennai-app-images/Bookmyshow.jpg",
+    Company: "Book My Show",
+    AppDescription:
+      "Book My Show – Book movie, event and show tickets easily online.",
+    link: "/events",
+    FeaturesContent: [
+      "Movie & event booking",
+      "Seat selection",
+      "Schedule info",
+      "Offers",
+      "Reviews",
+    ],
+    serviceContent: [
+      "Online ticket booking",
+      "Customer support",
+      "Refunds",
+      "Event notifications",
+      "Booking modifications",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.bt.bms&hl=en",
+    IOSLink:
+      "https://apps.apple.com/in/app/bookmyshow-movies-events/id405894842",
+    WebsiteLink: "https://in.bookmyshow.com/",
+  },
+
+  {
+    id: 14,
+    appImage: "/images/chennai-app-images/kyn app.jpg",
+    Company: "KYN",
+    AppDescription:
+      "KYN – Mentorship and learning platform connecting professionals and students.",
+    link: "/events",
+    FeaturesContent: [
+      "Mentorship",
+      "Knowledge sharing",
+      "Networking",
+      "Learning resources",
+      "Events & webinars",
+    ],
+    serviceContent: [
+      "Professional networking",
+      "Learning",
+      "Mentorship programs",
+      "Community engagement",
+      "Online support",
+    ],
+    AndriodLink: "https://play.google.com/store/apps/details?id=com.kyn.app",
+    IOSLink: "https://apps.apple.com/in/app/kyn/id1511134760",
+    WebsiteLink: "https://www.kyn.tech/",
+  },
+  {
+    id: 15,
+    appImage: "/images/chennai-app-images/District App.jpg",
+    Company: "District App",
+    AppDescription:
+      "District App – Local-services and community-engagement app for civic updates.",
+    link: "/events",
+    FeaturesContent: [
+      "Local news",
+      "Government services",
+      "Community updates",
+      "Notifications",
+      "Feedback system",
+    ],
+    serviceContent: [
+      "Civic engagement",
+      "Local services",
+      "Information dissemination",
+      "Online support",
+      "Community initiatives",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.application.zomato.district&hl=en_IN",
+    IOSLink:
+      "https://apps.apple.com/in/app/district-movies-events-dining/id6670536058",
+    WebsiteLink: "https://www.districtapp.in/",
   },
 ];

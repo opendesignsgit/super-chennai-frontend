@@ -8,6 +8,7 @@ import {
   chennaiAppDataGrocery,
   chennaiAppDataParcelDelivery,
   chennaiAppDataPorter,
+  OthersApps
 } from "./Chennai-app-Data";
 
 export default function ChennaiApp() {
@@ -25,8 +26,8 @@ export default function ChennaiApp() {
       label: "Food Delivery",
     },
     { id: "Grocerry", label: "Grocery" },
-    // { id: "Parcel / Courier", label: "Parcel / Courier" },
-    { id: "Porter / Heavy Items", label: "Porter / Heavy Items" },
+    { id: "Porter / Heavy Items", label: "Parcel " },
+    { id: "others", label: "Other Apps " },
   ];
   return (
     <div>
@@ -36,28 +37,25 @@ export default function ChennaiApp() {
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Live Chennai Smart</h3>
+            <h3>Smart Apps Every Chennaite Uses</h3>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <a href="">Live Chennai Smart</a>{" "}
+              <Link to="/">Home</Link> -{" "}
+              <a href="">Smart Apps Every Chennaite Uses</a>{" "}
             </div>
           </div>
         </div>
-        {/* <div className="notHomePageSearch">
-              <Search />
-            </div> */}
       </section>
 
       <div className="visitIntroParaSection detailIntro">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="workIntro">
-            {/* <h3>Residential Properties in Chennai</h3> */}
             <h1>Essential Chennai Apps</h1>
             <p>
-              From food delivery and grocery shopping to ride-hailing, bill
-              payments, and daily essentials, explore must-have Chennai apps
-              designed to save time, simplify tasks, and keep your day running
-              effortlessly—making life in the city smarter, faster, and more
-              convenient.
+              Discover the must-have apps used in Chennai — from food delivery
+              and grocery shopping to ride-hailing, bill payments, and daily
+              essentials — designed to save time, simplify tasks, and keep your
+              day running smoothly, making city life faster, smarter, and more
+              convenient
             </p>
           </div>
         </div>
@@ -402,6 +400,67 @@ export default function ChennaiApp() {
                   </div>
                 </>
               )}
+
+              {activeTab === "others" && (
+                <>
+                  <div className="EventsListboxs flex flex-wrap">
+                    {OthersApps.map((card, index) => (
+                      <div
+                        key={index}
+                        className="EventsItems bg-white cursor-pointer newsLetterImage"
+                        onClick={() => setSelectedCard(card)}
+                        style={{
+                          transition: "transform 0.3s",
+                        }}
+                      >
+                        <div
+                          className="relative w-full EventsItemImg"
+                          style={{
+                            boxShadow:
+                              "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+                          }}
+                        >
+                          <img
+                            src={card.appImage}
+                            alt={card.title}
+                            className="w-full object-cover"
+                          />
+                        </div>
+                        <div className="EventsIteCont flex flex-col items-start">
+                          <h2 className="titlePublished">{card.Company}</h2>
+                          <h3 className="EveItemtitles">
+                            <Link
+                              style={{ fontWeight: "600", color: "#434343" }}
+                              // to={card.link}
+                              onClick={() => setSelectedCard(card)}
+                              state={{ card }}
+                            >
+                              {`${card.AppDescription}`}
+                            </Link>
+                            <div
+                              className="readMoreMainDiv"
+                              onClick={() => setSelectedCard(card)}
+                            >
+                              <Link
+                                onClick={() => setSelectedCard(card)}
+                                // to={card.link}
+                                className="ReadmoreNewArticles"
+                              >
+                                Click to View
+                              </Link>
+                            </div>
+                          </h3>
+                        </div>
+                        <div className="EventsIteCont flex flex-col items-start">
+                          <h3 className="text-lg font-semibold">
+                            {card.title}
+                          </h3>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -421,7 +480,7 @@ export default function ChennaiApp() {
                 exit={{ scale: 0.8, opacity: 0, y: 50 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
               >
-                <div className="relative max-w-xl mx-auto bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex">
+                <div className="relative w-full h-full flex flex-col">
                   {/* Blue Curved Strip */}
                   <div className="w-2 rounded-l-xl bg-[#a44294]"></div>
 
@@ -434,8 +493,6 @@ export default function ChennaiApp() {
 
                   {/* Content */}
                   <div className="relative w-full p-6 relativeSectionchennaiApp">
-                    {/* Close Button */}
-
                     <div
                     //  className="flex gap-2"
                     >
@@ -467,42 +524,51 @@ export default function ChennaiApp() {
                           ))}
                         </ul>
                       </div>
-                      <div className="chennaiAppPopupContents1">
-                        <h2
-                          style={{ marginBottom: "15px" }}
-                          className="achievementsFonts font-semibold text-[#a44294] mb-4 "
-                        >
-                          Download Link
-                        </h2>
-
-                        {selectedCard.WebsiteLink !== "" && (
-                          <a
-                            target="_blank"
-                            href={selectedCard.WebsiteLink}
-                            style={{ marginLeft: "10px" }}
-                            class="cursor-pointer tabButton px-4 py-1.5 rounded font-semibold transition !bg-[#a44294] text-white !font-medium"
-                          >
-                            Web
-                          </a>
-                        )}
-
+                    </div>
+                  </div>
+                  <div className="border-t border-gray-200 p-4 flex flex-wrap gap-3 bg-white sticky bottom-0">
+                    <div className="chennaiAppPopupContents1">
+                      <h2
+                        style={{ marginBottom: "15px" }}
+                        className="achievementsFonts font-semibold text-[#a44294] mb-4 "
+                      >
+                        Download Link
+                      </h2>
+                      {selectedCard?.WebsiteLink ? (
                         <a
                           target="_blank"
+                          rel="noopener noreferrer"
+                          href={selectedCard.WebsiteLink}
                           style={{ marginLeft: "10px" }}
-                          href={selectedCard.AndriodLink}
-                          class="cursor-pointer tabButton px-4 py-1.5 rounded font-semibold transition !bg-[#a44294] text-white !font-medium"
+                          className="cursor-pointer tabButton px-4 py-1.5 rounded font-semibold transition !bg-[#a44294] text-white !font-medium"
                         >
-                          For Andriod
+                          Web
                         </a>
+                      ) : null}
+
+                      {selectedCard?.AndriodLink ? (
                         <a
                           target="_blank"
+                          rel="noopener noreferrer"
+                          href={selectedCard.AndriodLink}
+                          style={{ marginLeft: "10px" }}
+                          className="cursor-pointer tabButton px-4 py-1.5 rounded font-semibold transition !bg-[#a44294] text-white !font-medium"
+                        >
+                          For Android
+                        </a>
+                      ) : null}
+
+                      {selectedCard?.IOSLink ? (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
                           href={selectedCard.IOSLink}
                           style={{ marginLeft: "10px" }}
-                          class="cursor-pointer tabButton px-4 py-1.5 rounded font-semibold transition !bg-[#a44294] text-white !font-medium"
+                          className="cursor-pointer tabButton px-4 py-1.5 rounded font-semibold transition !bg-[#a44294] text-white !font-medium"
                         >
-                          For IOS
+                          For iOS
                         </a>
-                      </div>
+                      ) : null}
                     </div>
                   </div>
                 </div>

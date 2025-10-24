@@ -7,12 +7,11 @@ const AutoShrinkText = ({
   maxChars = 40,
   className = '',
   maxLines = 2,
-  width = '100%', // 👈 optional width prop
+  width = '100%', 
   align = 'center', 
 }) => {
   const length = text?.length || 0;
 
-  // soft shrink only for very long titles
   const ratio = length > maxChars ? maxChars / length : 1;
   const fontSize = Math.max(minSize, baseSize * ratio * 1.1);
 
@@ -20,16 +19,12 @@ const AutoShrinkText = ({
     <h1
       className={className}
       style={{
-        width, // 👈 ensure width is applied
+        width, 
         fontSize: `${fontSize}px`,
         lineHeight: '0.9',
-        // wordBreak: 'break-word',
-        // overflowWrap: 'break-word',
-        // whiteSpace: 'normal',
-        // display: 'block',
-        // textOverflow: 'ellipsis',
-         margin: '0 auto', // 👈 centers the block itself
-        textAlign: align, // 👈 centers the text
+         margin: '0 auto', 
+        textAlign: align, 
+        whiteSpace: length < maxChars / 1.5 ? 'nowrap' : 'normal',
       }}
       title={text}
     >

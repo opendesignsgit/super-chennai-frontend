@@ -827,33 +827,7 @@ export const chennaiAppDataGrocery = [
     WebsiteLink: "https://www.swiggy.com/instamart",
   },
 
-  {
-    id: 12,
-    appImage: "/images/chennai-app-images/Zepto Rider.jpg",
-    Company: "Zepto Rider",
-    AppDescription:
-      "Zepto Rider – Delivery-partner app enabling fast express deliveries for Zepto.",
-    link: "/events",
-    FeaturesContent: [
-      "Order management",
-      "Delivery tracking",
-      "Earnings dashboard",
-      "Notifications",
-      "Route optimization",
-    ],
-    serviceContent: [
-      "Delivery partner support",
-      "Payment tracking",
-      "Customer support",
-      "Shift management",
-      "Performance analytics",
-    ],
-    AndriodLink:
-      "https://play.google.com/store/apps/details?id=com.zepto.rider",
-    IOSLink:
-      "https://apps.apple.com/in/app/zepto-delivery-partner/id1579171075",
-    WebsiteLink: "https://rider.zepto.co.in/",
-  },
+ 
 ];
 
 //££££££££ DELEVERY ££££££££££££££
@@ -985,6 +959,34 @@ export const chennaiAppDataPorter = [
     AndriodLink: "https://play.google.com/store/apps/details?id=com.dunzo.user",
     IOSLink: "",
     WebsiteLink: "https://www.dunzo.com",
+  },
+
+   {
+    id: 15,
+    appImage: "/images/chennai-app-images/Zepto Rider.jpg",
+    Company: "Zepto Rider",
+    AppDescription:
+      "Zepto Rider – Delivery-partner app enabling fast express deliveries for Zepto.",
+    link: "/events",
+    FeaturesContent: [
+      "Order management",
+      "Delivery tracking",
+      "Earnings dashboard",
+      "Notifications",
+      "Route optimization",
+    ],
+    serviceContent: [
+      "Delivery partner support",
+      "Payment tracking",
+      "Customer support",
+      "Shift management",
+      "Performance analytics",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.zepto.rider",
+    IOSLink:
+      "https://apps.apple.com/in/app/zepto-delivery-partner/id1579171075",
+    WebsiteLink: "https://rider.zepto.co.in/",
   },
 ];
 //££££££££ OTHERS  £££££££££££££££

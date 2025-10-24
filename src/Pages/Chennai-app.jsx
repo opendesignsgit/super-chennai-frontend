@@ -20,14 +20,14 @@ export default function ChennaiApp() {
   const [activeSubTab, setActiveSubTab] = useState([]);
 
   const tabs = [
-    { id: "Metro / Transit / Travel", label: " Travel" },
+    { id: "Metro / Transit / Travel", label: " Travel and Accommodation" },
     {
       id: "Food Delivery & Cake Delivery",
       label: "Food Delivery",
     },
-    { id: "Grocerry", label: "Grocery" },
+    { id: "Grocerry", label: "Grocery and Medicine" },
     { id: "Porter / Heavy Items", label: "Parcel " },
-    { id: "others", label: "Other Apps " },
+    { id: "others", label: "Entertainment" },
   ];
   return (
     <div>
@@ -49,7 +49,7 @@ export default function ChennaiApp() {
       <div className="visitIntroParaSection detailIntro">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="workIntro">
-            <h1>Essential Chennai Apps</h1>
+            <h1>Essential Apps in Chennai</h1>
             <p>
               Discover the must-have apps used in Chennai — from food delivery
               and grocery shopping to ride-hailing, bill payments, and daily

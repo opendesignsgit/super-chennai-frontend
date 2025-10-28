@@ -244,7 +244,7 @@ export default function TrampolineInChennai() {
               <p>Trampoline Parks in Chennai </p>
             </div>
             <div className="workIntro">
-              <h3>Bounce, Flip, and Fly Your Way Into Fun</h3>
+              <h1>Flyout Trampoline Park</h1>
               <p>
                 Whether you're looking for a weekend energy burn, a birthday
                 party venue, or just some indoor excitement, Chennai’s

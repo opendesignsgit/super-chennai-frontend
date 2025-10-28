@@ -1431,7 +1431,7 @@ Entry is free for all, but prior registration is mandatory. Registrations open o
     ageLimit: "21yrs+",
     price: "₹499 onwards",
     aboutFull: `
-Social Dancing is a fantastic way to connect and explore via styles like Salsa / Bachata / Urban Kiz. *** About Event: ~ Basic / Improver level Workshop to learn ~ Social dancing to practice what you have learned ~ Socialize to connect with existing social dance folks *** About Artist: Praveen - one of the most sought-after Urbankiz Artists in Asia, Praveen has traveled across 20+ countries including the US, Europe, Japan, Singapore, and Dubai, and has shared his knowledge and passion for social dancing across the globe. He is also the founder of Dance academies like Salsa Chennai, Salsa Coimbatore, Salsa Kerala, Urbankiz Universe ( Bangalore & Hyderabad ) *** Audience : ~ Open for all ages ~ Beginner Friendly Environment ~ Classes will be in English ~ Any comfortable costume/shoes/socks/heels ~ We try our level best to get a 1:1 ratio, sometimes it may vary. Chennai - Edina Building - Activity Hall, Hiranandani, Siruseri For Other cities, pls reach out to the exact location Looking forward to seeing you on the dance floor. 
+Social Dancing is a fantastic way to connect and explore via styles like Salsa / Bachata / Urban Kiz. * About Event: ~ Basic / Improver level Workshop to learn ~ Social dancing to practice what you have learned ~ Socialize to connect with existing social dance folks * About Artist: Praveen - one of the most sought-after Urbankiz Artists in Asia, Praveen has traveled across 20+ countries including the US, Europe, Japan, Singapore, and Dubai, and has shared his knowledge and passion for social dancing across the globe. He is also the founder of Dance academies like Salsa Chennai, Salsa Coimbatore, Salsa Kerala, Urbankiz Universe ( Bangalore & Hyderabad ) * Audience : ~ Open for all ages ~ Beginner Friendly Environment ~ Classes will be in English ~ Any comfortable costume/shoes/socks/heels ~ We try our level best to get a 1:1 ratio, sometimes it may vary. Chennai - Edina Building - Activity Hall, Hiranandani, Siruseri For Other cities, pls reach out to the exact location Looking forward to seeing you on the dance floor. 
   `,
   },
 
@@ -6044,187 +6044,188 @@ No prior knowledge needed—just bring your enthusiasm
 🎟 Note: Seats are limited—secure your spot early! `,
   },
 
-//   {
-//   url: "3d-printing-workshop-business-skills-customized-gifts",
-//   id: 210,
-//   RegisterLink: "",
-//   metaTitleEvent: "3D Printing Workshop / Business Skills / Customized Gifts",
-//   metaDescriptionEvent:
-//     "Explore 3D printing like never before! This workshop teaches business skills and the art of crafting customized gifts for today’s creative market.",
-//   conicallinkEvent: "/eventsdetails/210",
-//   siteLink: "https://in.bookmyshow.com/events/3d-printing-business-workshop/ET00426919",
-//   EventsCalendarTitle: "3D Printing Workshop – Business Skills & Customized Gifts",
-//   EventsCalendarContent:
-//     "Explore 3D printing like never before! Learn business skills and the art of crafting customized gifts.",
-//   EventsCalendarMonth: "19 Oct 2025",
-//   EventsCalendarTime: "11:00 AM",
-//   EventsCalendarCategory: "Business Workshop",
-//   image: "/images/HomePage-Images/Events/Newevents/3dprinting.jpg",
-//   link: "/events",
-//   location: "DYNAMIC SS ENTERPRISES, Chennai",
-//   language: "Tamil, English",
-//   hours: "2 Hours",
-//   ageLimit: "All ages",
-//   rleigion: "",
-//   aboutFull: `
-//   🔹 About the Event:
-//   Are you ready to explore the boundless possibilities of 3D printing? Join our hands-on 3D printing workshop to gain practical skills and unlock profitable 3D printing business opportunities.
+  //   {
+  //   url: "3d-printing-workshop-business-skills-customized-gifts",
+  //   id: 210,
+  //   RegisterLink: "",
+  //   metaTitleEvent: "3D Printing Workshop / Business Skills / Customized Gifts",
+  //   metaDescriptionEvent:
+  //     "Explore 3D printing like never before! This workshop teaches business skills and the art of crafting customized gifts for today’s creative market.",
+  //   conicallinkEvent: "/eventsdetails/210",
+  //   siteLink: "https://in.bookmyshow.com/events/3d-printing-business-workshop/ET00426919",
+  //   EventsCalendarTitle: "3D Printing Workshop – Business Skills & Customized Gifts",
+  //   EventsCalendarContent:
+  //     "Explore 3D printing like never before! Learn business skills and the art of crafting customized gifts.",
+  //   EventsCalendarMonth: "19 Oct 2025",
+  //   EventsCalendarTime: "11:00 AM",
+  //   EventsCalendarCategory: "Business Workshop",
+  //   image: "/images/HomePage-Images/Events/Newevents/3dprinting.jpg",
+  //   link: "/events",
+  //   location: "DYNAMIC SS ENTERPRISES, Chennai",
+  //   language: "Tamil, English",
+  //   hours: "2 Hours",
+  //   ageLimit: "All ages",
+  //   rleigion: "",
+  //   aboutFull: `
+  //   🔹 About the Event:
+  //   Are you ready to explore the boundless possibilities of 3D printing? Join our hands-on 3D printing workshop to gain practical skills and unlock profitable 3D printing business opportunities.
 
-//   💡 Why Choose 3D Printing?
-//   - Diverse Applications: 3D printing is transforming industries such as medical, automotive, aerospace, electronics, jewelry, toys, customized gifts, and consumer products.
-//   - Low Startup Cost: Launch your 3D printing business with minimal investment using readily available materials and technology.
-//   - Home-Based Opportunities: Start a home-based 3D printing business and tap into this fast-growing market.
+  //   💡 Why Choose 3D Printing?
+  //   - Diverse Applications: 3D printing is transforming industries such as medical, automotive, aerospace, electronics, jewelry, toys, customized gifts, and consumer products.
+  //   - Low Startup Cost: Launch your 3D printing business with minimal investment using readily available materials and technology.
+  //   - Home-Based Opportunities: Start a home-based 3D printing business and tap into this fast-growing market.
 
-//   👩‍🏫 Who Can Attend?
-//   - Professionals looking to upskill in 3D printing for career growth
-//   - 3D artists, hobbyists, architects, and students interested in launching a business
-//   - Anyone eager to learn 3D printing and explore entrepreneurial opportunities
+  //   👩‍🏫 Who Can Attend?
+  //   - Professionals looking to upskill in 3D printing for career growth
+  //   - 3D artists, hobbyists, architects, and students interested in launching a business
+  //   - Anyone eager to learn 3D printing and explore entrepreneurial opportunities
 
-//   🎯 Key Takeaways:
-//   - Hands-on experience in 3D printing techniques
-//   - Understanding materials, design, and production for 3D products
-//   - Insights on how to start and scale a profitable 3D printing business
+  //   🎯 Key Takeaways:
+  //   - Hands-on experience in 3D printing techniques
+  //   - Understanding materials, design, and production for 3D products
+  //   - Insights on how to start and scale a profitable 3D printing business
 
-//   📅 Event Details:
-//   Date: Sun, 19 Oct 2025  
-//   Time: 11:00 AM  
-//   Duration: 2 Hours  
-//   Languages: Tamil, English  
-//   Venue: DYNAMIC SS ENTERPRISES, Chennai
+  //   📅 Event Details:
+  //   Date: Sun, 19 Oct 2025
+  //   Time: 11:00 AM
+  //   Duration: 2 Hours
+  //   Languages: Tamil, English
+  //   Venue: DYNAMIC SS ENTERPRISES, Chennai
 
-//   🎟 Note: Limited seats available—book early to secure your spot!
-//   `
-// },
-// {
-//   url: "waffle-workshop-learn-baking-sweet-creations",
-//   id: 211,
-//   RegisterLink: "",
-//   metaTitleEvent: "Waffle Workshop / Learn Baking / Sweet Creations",
-//   metaDescriptionEvent:
-//     "Join the Waffle Workshop to explore the joy of baking and creating sweet creations. Learn recipes, techniques, and toppings to make golden, delicious waffles at home.",
-//   conicallinkEvent: "/eventsdetails/211",
-//   siteLink: "https://in.bookmyshow.com/events/waffle-making-workshop-feb-22/ET00322043",
-//   EventsCalendarTitle: "Waffle Workshop – Learn Baking & Sweet Creations",
-//   EventsCalendarContent:
-//     "Join the Waffle Workshop and learn to make delicious eggless waffles with a variety of flavors and toppings.",
-//   EventsCalendarMonth: "29 Oct 2025",
-//   EventsCalendarTime: "11:00 AM",
-//   EventsCalendarCategory: "Cooking Workshop",
-//   image: "/images/HomePage-Images/Events/Newevents/waffleworkshop.jpg",
-//   link: "/events",
-//   location: "Reema's Swad Cooking Classes, Chennai",
-//   language: "English",
-//   hours: "3 Hours",
-//   ageLimit: "16+ years",
-//   rleigion: "",
-//   aboutFull: `
-//   🍽️ About the Event:
-//   Join Reema's Swad Cooking Classes for a fun and interactive vegetarian & eggless waffle-making workshop! 
-//   Learn how to make delicious waffles with a variety of flavors and toppings that are perfect for every sweet tooth.
+  //   🎟 Note: Limited seats available—book early to secure your spot!
+  //   `
+  // },
+  // {
+  //   url: "waffle-workshop-learn-baking-sweet-creations",
+  //   id: 211,
+  //   RegisterLink: "",
+  //   metaTitleEvent: "Waffle Workshop / Learn Baking / Sweet Creations",
+  //   metaDescriptionEvent:
+  //     "Join the Waffle Workshop to explore the joy of baking and creating sweet creations. Learn recipes, techniques, and toppings to make golden, delicious waffles at home.",
+  //   conicallinkEvent: "/eventsdetails/211",
+  //   siteLink: "https://in.bookmyshow.com/events/waffle-making-workshop-feb-22/ET00322043",
+  //   EventsCalendarTitle: "Waffle Workshop – Learn Baking & Sweet Creations",
+  //   EventsCalendarContent:
+  //     "Join the Waffle Workshop and learn to make delicious eggless waffles with a variety of flavors and toppings.",
+  //   EventsCalendarMonth: "29 Oct 2025",
+  //   EventsCalendarTime: "11:00 AM",
+  //   EventsCalendarCategory: "Cooking Workshop",
+  //   image: "/images/HomePage-Images/Events/Newevents/waffleworkshop.jpg",
+  //   link: "/events",
+  //   location: "Reema's Swad Cooking Classes, Chennai",
+  //   language: "English",
+  //   hours: "3 Hours",
+  //   ageLimit: "16+ years",
+  //   rleigion: "",
+  //   aboutFull: `
+  //   🍽️ About the Event:
+  //   Join Reema's Swad Cooking Classes for a fun and interactive vegetarian & eggless waffle-making workshop!
+  //   Learn how to make delicious waffles with a variety of flavors and toppings that are perfect for every sweet tooth.
 
-//   👩‍🍳 What You Will Learn:
-//   - Classic Honey Waffles  
-//   - Oreo Waffles  
-//   - Chocolate Overloaded / Nutella Waffles  
-//   - Blueberry & Strawberry Cream Cheese Waffles  
-//   - Coffee Mousse Waffles  
-//   - Ice Cream Waffles  
-//   - Bubblegum Waffles – Special extra recipe  
+  //   👩‍🍳 What You Will Learn:
+  //   - Classic Honey Waffles
+  //   - Oreo Waffles
+  //   - Chocolate Overloaded / Nutella Waffles
+  //   - Blueberry & Strawberry Cream Cheese Waffles
+  //   - Coffee Mousse Waffles
+  //   - Ice Cream Waffles
+  //   - Bubblegum Waffles – Special extra recipe
 
-//   🍯 Workshop Highlights:
-//   Discover the secrets to creating perfect eggless waffles that are crispy on the outside, fluffy inside, and visually irresistible!  
-//   All ingredients and tools are provided—just bring your enthusiasm for baking.
+  //   🍯 Workshop Highlights:
+  //   Discover the secrets to creating perfect eggless waffles that are crispy on the outside, fluffy inside, and visually irresistible!
+  //   All ingredients and tools are provided—just bring your enthusiasm for baking.
 
-//   📅 Event Details:
-//   Date: Wed, 29 Oct 2025  
-//   Time: 11:00 AM  
-//   Duration: 3 Hours  
-//   Language: English  
-//   Venue: Reema's Swad Cooking Classes, Chennai  
-//   Age Limit: 16+ years  
+  //   📅 Event Details:
+  //   Date: Wed, 29 Oct 2025
+  //   Time: 11:00 AM
+  //   Duration: 3 Hours
+  //   Language: English
+  //   Venue: Reema's Swad Cooking Classes, Chennai
+  //   Age Limit: 16+ years
 
-//   🎟 Note: Limited seats available—register early to reserve your spot!
-//   `
-// },
+  //   🎟 Note: Limited seats available—register early to reserve your spot!
+  //   `
+  // },
 
-// {
-//   url: "sit-down-ashish-standup-comedy-show",
-//   id: 212,
-//   RegisterLink: "",
-//   metaTitleEvent: "Sit Down Ashish ft. Ashish Vidyarthi | Standup Comedy Show",
-//   metaDescriptionEvent:
-//     "Sit Down Ashish is not just standup comedy—it’s a heartfelt blend of life lessons, witty anecdotes, and laughter with Ashish Vidyarthi on stage, making every moment relatable and inspiring.",
-//   conicallinkEvent: "/eventsdetails/212",
-//   siteLink: "https://in.bookmyshow.com/events/sit-down-ashish-ft-ashish-vidyarthi/ET00464671",
-//   EventsCalendarTitle: "Standup Comedy Night with Ashish Vidyarthi",
-//   EventsCalendarContent:
-//     "Join Ashish Vidyarthi’s hilarious stand-up comedy show — a mix of laughter, life stories, and heartwarming humor.",
-//   EventsCalendarMonth: "26 Oct 2025",
-//   EventsCalendarTime: "8:00 PM",
-//   EventsCalendarCategory: "Comedy Show",
-//   image: "/images/HomePage-Images/Events/Newevents/sitdownashish.jpg",
-//   link: "/events",
-//   location: "Trinity Studio, Kodambakkam, Chennai",
-//   language: "Hindi",
-//   hours: "1 hour 30 minutes",
-//   ageLimit: "3+ years",
-//   rleigion: "",
-//   aboutFull: `
-//   🎭 About the Event:
-//   Get ready for an evening of laughter with **Ashish Vidyarthi’s Stand-Up Comedy Special – “Sit Down Ashish!”**  
+  // {
+  //   url: "sit-down-ashish-standup-comedy-show",
+  //   id: 212,
+  //   RegisterLink: "",
+  //   metaTitleEvent: "Sit Down Ashish ft. Ashish Vidyarthi | Standup Comedy Show",
+  //   metaDescriptionEvent:
+  //     "Sit Down Ashish is not just standup comedy—it’s a heartfelt blend of life lessons, witty anecdotes, and laughter with Ashish Vidyarthi on stage, making every moment relatable and inspiring.",
+  //   conicallinkEvent: "/eventsdetails/212",
+  //   siteLink: "https://in.bookmyshow.com/events/sit-down-ashish-ft-ashish-vidyarthi/ET00464671",
+  //   EventsCalendarTitle: "Standup Comedy Night with Ashish Vidyarthi",
+  //   EventsCalendarContent:
+  //     "Join Ashish Vidyarthi’s hilarious stand-up comedy show — a mix of laughter, life stories, and heartwarming humor.",
+  //   EventsCalendarMonth: "26 Oct 2025",
+  //   EventsCalendarTime: "8:00 PM",
+  //   EventsCalendarCategory: "Comedy Show",
+  //   image: "/images/HomePage-Images/Events/Newevents/sitdownashish.jpg",
+  //   link: "/events",
+  //   location: "Trinity Studio, Kodambakkam, Chennai",
+  //   language: "Hindi",
+  //   hours: "1 hour 30 minutes",
+  //   ageLimit: "3+ years",
+  //   rleigion: "",
+  //   aboutFull: `
+  //   🎭 About the Event:
+  //   Get ready for an evening of laughter with Ashish Vidyarthi’s Stand-Up Comedy Special – “Sit Down Ashish!”
 
-//   Join him as he shares a funny and candid take on his life — from his early days in Delhi to his journey through the “city of dreams,” Mumbai.  
-//   Over 30 years, Ashish has acted in 300+ films across 11 languages, and now, he brings those experiences to the stage in a hilarious, heartwarming performance.
+  //   Join him as he shares a funny and candid take on his life — from his early days in Delhi to his journey through the “city of dreams,” Mumbai.
+  //   Over 30 years, Ashish has acted in 300+ films across 11 languages, and now, he brings those experiences to the stage in a hilarious, heartwarming performance.
 
-//   🤩 What to Expect:
-//   - Witty anecdotes from his acting career  
-//   - Relatable stories about life, success, and struggles  
-//   - Jokes about his quirks — from his weight to his gait!  
-//   - An evening of pure laughter for all ages  
+  //   🤩 What to Expect:
+  //   - Witty anecdotes from his acting career
+  //   - Relatable stories about life, success, and struggles
+  //   - Jokes about his quirks — from his weight to his gait!
+  //   - An evening of pure laughter for all ages
 
-//   💬 Highlight:
-//   In a world where we take life too seriously, Ashish shows us how to embrace the funny side of everything — even our imperfections.  
-//   When people say, “Sit Down Ashish,” he turns it into a reason to laugh harder!
+  //   💬 Highlight:
+  //   In a world where we take life too seriously, Ashish shows us how to embrace the funny side of everything — even our imperfections.
+  //   When people say, “Sit Down Ashish,” he turns it into a reason to laugh harder!
 
-//   📅 Event Details:
-//   Date: Sun, 26 Oct 2025  
-//   Time: 8:00 PM  
-//   Duration: 1 hour 30 minutes  
-//   Age Limit: 3+ years  
-//   Language: Hindi  
-//   Category: Comedy  
-//   Venue: Trinity Studio, Kodambakkam, Chennai  
+  //   📅 Event Details:
+  //   Date: Sun, 26 Oct 2025
+  //   Time: 8:00 PM
+  //   Duration: 1 hour 30 minutes
+  //   Age Limit: 3+ years
+  //   Language: Hindi
+  //   Category: Comedy
+  //   Venue: Trinity Studio, Kodambakkam, Chennai
 
-//   🔑 Keywords:
-//   Ashish Vidyarthi comedy show, Stand-up comedy in Chennai, Celebrity comedy show, Comedy special India, Funny anecdotes, Family-friendly comedy show  
+  //   🔑 Keywords:
+  //   Ashish Vidyarthi comedy show, Stand-up comedy in Chennai, Celebrity comedy show, Comedy special India, Funny anecdotes, Family-friendly comedy show
 
-//   🎟 Note: Seats are limited — bring your friends and family for an unforgettable laughter-filled evening!
-//   `
-// },
+  //   🎟 Note: Seats are limited — bring your friends and family for an unforgettable laughter-filled evening!
+  //   `
+  // },
 
-{
-  url: "halloween-night-music-show-club-gigs",
-  id: 213,
-  RegisterLink: "",
-  metaTitleEvent: "Halloween Night / Music Show / Blues Conscience Club Gig",
-  metaDescriptionEvent:
-    "Get ready for Halloween Night with Blues Conscience—an electrifying music show and club gig filled with high-energy tunes, spooky vibes, and non-stop fun.",
-  conicallinkEvent: "/eventsdetails/213",
-  siteLink: "https://in.bookmyshow.com/events/halloween-night-ft-blues-conscience/ET00464591",
-  EventsCalendarTitle: "Halloween Night Music Show with Blues Conscience",
-  EventsCalendarContent:
-    "Join Blues Conscience this Halloween for an unforgettable night of blues, rock, and soulful melodies at Hard Rock Cafe.",
-  EventsCalendarMonth: "31 Oct 2025",
-  EventsCalendarTime: "8:30 PM",
-  EventsCalendarCategory: "Music Show",
-  image: "/images/HomePage-Images/Events/Newevents/436.jpg",
-  link: "/events",
-  location: "Hard Rock Cafe, Nungambakkam, Chennai",
-  language: "English",
-  hours: "2 Hours",
-  ageLimit: "21+ years",
-  rleigion: "",
-  aboutFull: `
+  {
+    url: "halloween-night-music-show-club-gigs",
+    id: 213,
+    RegisterLink: "",
+    metaTitleEvent: "Halloween Night / Music Show / Blues Conscience Club Gig",
+    metaDescriptionEvent:
+      "Get ready for Halloween Night with Blues Conscience—an electrifying music show and club gig filled with high-energy tunes, spooky vibes, and non-stop fun.",
+    conicallinkEvent: "/eventsdetails/213",
+    siteLink:
+      "https://in.bookmyshow.com/events/halloween-night-ft-blues-conscience/ET00464591",
+    EventsCalendarTitle: "Halloween Night Music Show with Blues Conscience",
+    EventsCalendarContent:
+      "Join Blues Conscience this Halloween for an unforgettable night of blues, rock, and soulful melodies at Hard Rock Cafe.",
+    EventsCalendarMonth: "31 Oct 2025",
+    EventsCalendarTime: "8:30 PM",
+    EventsCalendarCategory: "Music Show",
+    image: "/images/HomePage-Images/Events/Newevents/436.jpg",
+    link: "/events",
+    location: "Hard Rock Cafe, Nungambakkam, Chennai",
+    language: "English",
+    hours: "2 Hours",
+    ageLimit: "21+ years",
+    rleigion: "",
+    aboutFull: `
   This Halloween, immerse yourself in the soulful sounds of Blues Conscience on a musical journey like no other. With 16+ years of performing together, the band captures the essence of the blues while effortlessly weaving in elements of rock, pop, and country.
 
 Honoring legends such as Buddy Guy, BB King, Eric Clapton, and Stevie Ray Vaughan, their performance moves seamlessly from heartfelt covers to powerful original compositions, telling stories of love, passion, and the raw emotions of life.
@@ -6232,35 +6233,36 @@ Honoring legends such as Buddy Guy, BB King, Eric Clapton, and Stevie Ray Vaugha
 Dressed to impress in sharp suits and stylish hats, their stage presence commands attention, complemented by electrifying solos, tight rhythms, and melodies that touch the soul.
 
 Come and experience a night of timeless music, captivating storytelling, and high-energy performance as Blues Conscience makes this Halloween a truly memorable celebration of music and spirit. 
-  `
-},
+  `,
+  },
 
-
-{
-  url: "abishek-wants-to-enjoy-life-a-comedy-special",
-  id: 214,
-  RegisterLink: "",
-  metaTitleEvent: "Abishek Wants to Enjoy Life / Comedy Special / Stand-Up Show",
-  metaDescriptionEvent:
-    "Join Abishek for his hilarious comedy special — 'Abishek Wants to Enjoy Life' — a fun-filled take on life, love, and everything in between, packed with wit and laughter.",
-  conicallinkEvent: "/eventsdetails/214",
-  siteLink: "https://www.superchennai.com/events-in-chennai/abishek-wants-to-enjoy-life-a-comedy-special",
-  EventsCalendarTitle: "Abishek Wants to Enjoy Life – A Comedy Special",
-  EventsCalendarContent:
-    "Laugh out loud with Abishek in his new comedy special that explores the lighter side of life, relationships, and everyday chaos.",
-  EventsCalendarMonth: "25 Oct 2025",
-  EventsCalendarTime: "3:00 PM",
-  EventsCalendarCategory: "Comedy Show",
-  image: "/images/HomePage-Images/Events/Newevents/260.jpg",
-  link: "/events",
-  location: "The Music Academy, Chennai",
-  language: "English, Tamil",
-  hours: "1 hour 30 minutes",
-  ageLimit: "16+ years",
-  rleigion: "",
-  aboutFull: `
+  {
+    url: "abishek-wants-to-enjoy-life-a-comedy-special",
+    id: 214,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Abishek Wants to Enjoy Life / Comedy Special / Stand-Up Show",
+    metaDescriptionEvent:
+      "Join Abishek for his hilarious comedy special — 'Abishek Wants to Enjoy Life' — a fun-filled take on life, love, and everything in between, packed with wit and laughter.",
+    conicallinkEvent: "/eventsdetails/214",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/abishek-wants-to-enjoy-life-a-comedy-special",
+    EventsCalendarTitle: "Abishek Wants to Enjoy Life – A Comedy Special",
+    EventsCalendarContent:
+      "Laugh out loud with Abishek in his new comedy special that explores the lighter side of life, relationships, and everyday chaos.",
+    EventsCalendarMonth: "25 Oct 2025",
+    EventsCalendarTime: "3:00 PM",
+    EventsCalendarCategory: "Comedy Show",
+    image: "/images/HomePage-Images/Events/Newevents/260.jpg",
+    link: "/events",
+    location: "The Music Academy, Chennai",
+    language: "English, Tamil",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16+ years",
+    rleigion: "",
+    aboutFull: `
   😂 About the Event:
-  Get ready for a laughter riot with **Abishek’s stand-up special — "Abishek Wants to Enjoy Life"**.  
+  Get ready for a laughter riot with Abishek’s stand-up special — "Abishek Wants to Enjoy Life".  
   A show that dives deep into the hilarious struggles of adulting, relationships, and the constant pursuit of happiness.
 
   🎤 What to Expect:
@@ -6288,33 +6290,34 @@ Come and experience a night of timeless music, captivating storytelling, and hig
   - Perfect weekend afternoon entertainment  
 
   🎟 Note: Limited seats available — book now and enjoy a laugh-filled Saturday with Abishek!
-  `
-},
+  `,
+  },
 
-
-{
-  url: "vijay-prakash-live-music-concert-chennai",
-  id: 215,
-  RegisterLink: "",
-  metaTitleEvent: "Vijay Prakash Music Concert / Live in Chennai / Super Chennai",
-  metaDescriptionEvent:
-    "Chennai welcomes the Vijay Prakash Music Concert 2025—enjoy live performances, soulful renditions, and an electrifying musical journey.",
-  conicallinkEvent: "/eventsdetails/215",
-  siteLink: "https://www.district.in/events/vijay-prakash-live-in-chennai-nov22-2025-buy-tickets",
-  EventsCalendarTitle: "Vijay Prakash Live in Chennai – Vijayotsavam 2025–26",
-  EventsCalendarContent:
-    "Experience the magic of Vijay Prakash live in Chennai – a night of iconic Tamil melodies and unforgettable music.",
-  EventsCalendarMonth: "22 Nov 2025",
-  EventsCalendarTime: "6:00 PM",
-  EventsCalendarCategory: "Music Concert",
-  image: "/images/HomePage-Images/Events/Newevents/387.jpg",
-  link: "/events",
-  location: "Express Avenue Mall, Chennai",
-  language: "Tamil",
-  hours: "—",
-  ageLimit: "All ages",
-  rleigion: "",
-  aboutFull: `
+  {
+    url: "vijay-prakash-live-music-concert-chennai",
+    id: 215,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Vijay Prakash Music Concert / Live in Chennai / Super Chennai",
+    metaDescriptionEvent:
+      "Chennai welcomes the Vijay Prakash Music Concert 2025—enjoy live performances, soulful renditions, and an electrifying musical journey.",
+    conicallinkEvent: "/eventsdetails/215",
+    siteLink:
+      "https://www.district.in/events/vijay-prakash-live-in-chennai-nov22-2025-buy-tickets",
+    EventsCalendarTitle: "Vijay Prakash Live in Chennai – Vijayotsavam 2025–26",
+    EventsCalendarContent:
+      "Experience the magic of Vijay Prakash live in Chennai – a night of iconic Tamil melodies and unforgettable music.",
+    EventsCalendarMonth: "22 Nov 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Music Concert",
+    image: "/images/HomePage-Images/Events/Newevents/387.jpg",
+    link: "/events",
+    location: "Express Avenue Mall, Chennai",
+    language: "Tamil",
+    hours: "—",
+    ageLimit: "All ages",
+    rleigion: "",
+    aboutFull: `
   Get ready for a grand musical extravaganza as Vijayotsavam 2025–26 brings the soulful magic of Vijay Prakash to Chennai.
 
 One of the most celebrated playback singers of our generation, Vijay Prakash is renowned for his mesmerizing voice and electrifying stage presence. With a career spanning decades, he has collaborated with musical legends like A.R. Rahman, Harris Jayaraj, Yuvan Shankar Raja, and Ilaiyaraaja, delivering some of the most memorable tracks in Tamil cinema.
@@ -6325,485 +6328,1150 @@ Presented by Noizz Entertainment, a leader in crafting unforgettable live experi
 
 The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tamil melodies, crowd-favorite anthems, and a powerful live performance by Vijay Prakash. Stay tuned for announcements on other special guest performers joining the legend on stage.
 
-  `
-},
+  `,
+  },
 
-{
-  url: "dhandho-ft-munawar-faruqui-comedy-show",
-  id: 216,
-  RegisterLink: "",
-  metaTitleEvent: "Dhandho ft. Munawar Faruqui / Stand-Up Comedy Show / Live in Chennai",
-  metaDescriptionEvent:
-    "Catch Munawar Faruqui live in Chennai for a night of laughter, sharp wit, and unforgettable stand-up comedy in his show 'Dhandho'.",
-  conicallinkEvent: "/eventsdetails/216",
-  siteLink: "https://in.bookmyshow.com/events/dhando-ft-munawar-faruqui/ET00425264",
-  EventsCalendarTitle: "Dhandho ft. Munawar Faruqui – Live Comedy Show",
-  EventsCalendarContent:
-    "Experience Munawar Faruqui live in Chennai — a night full of humor, wit, and relatable stories.",
-  EventsCalendarMonth: "7 Nov 2025",
-  EventsCalendarTime: "7:00 PM",
-  EventsCalendarCategory: "Comedy Show",
-  image: "/images/HomePage-Images/Events/Newevents/395.jpg",
-  link: "/events",
-  location: "Rasika Ranjani Sabha, Chennai",
-  language: "Hindi",
-  hours: "1 hour 30 minutes",
-  ageLimit: "16+ years",
-  rleigion: "",
-  "aboutFull": "Get ready to experience Munawar Faruqui live in your city! This is your chance to enjoy a night full of laughter, clever jokes, and a performance that promises to keep you entertained from start to finish.\n\nExpect sharp wit, hilarious observations, and engaging storytelling as Munawar delivers comedy like no other. It’s an evening packed with fun, energy, and unforgettable moments you won’t want to miss!"
-},
+  {
+    url: "dhandho-ft-munawar-faruqui-comedy-show",
+    id: 216,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Dhandho ft. Munawar Faruqui / Stand-Up Comedy Show / Live in Chennai",
+    metaDescriptionEvent:
+      "Catch Munawar Faruqui live in Chennai for a night of laughter, sharp wit, and unforgettable stand-up comedy in his show 'Dhandho'.",
+    conicallinkEvent: "/eventsdetails/216",
+    siteLink:
+      "https://in.bookmyshow.com/events/dhando-ft-munawar-faruqui/ET00425264",
+    EventsCalendarTitle: "Dhandho ft. Munawar Faruqui – Live Comedy Show",
+    EventsCalendarContent:
+      "Experience Munawar Faruqui live in Chennai — a night full of humor, wit, and relatable stories.",
+    EventsCalendarMonth: "7 Nov 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Comedy Show",
+    image: "/images/HomePage-Images/Events/Newevents/395.jpg",
+    link: "/events",
+    location: "Rasika Ranjani Sabha, Chennai",
+    language: "Hindi",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16+ years",
+    rleigion: "",
+    aboutFull:
+      "Get ready to experience Munawar Faruqui live in your city! This is your chance to enjoy a night full of laughter, clever jokes, and a performance that promises to keep you entertained from start to finish.\n\nExpect sharp wit, hilarious observations, and engaging storytelling as Munawar delivers comedy like no other. It’s an evening packed with fun, energy, and unforgettable moments you won’t want to miss!",
+  },
 
+  {
+    url: "the-f16s-live-in-chennai",
+    id: 217,
+    RegisterLink: "",
+    metaTitleEvent:
+      "The F16s Live Music Show / Indie Rock Concert / Chennai 2025",
+    metaDescriptionEvent:
+      "Catch The F16s live at Hard Rock Cafe, Chennai — experience indie rock soundscapes, soulful vocals, and unforgettable music performances.",
+    conicallinkEvent: "/eventsdetails/217",
+    siteLink: "https://in.bookmyshow.com/events/the-f16s/ET00465161",
+    EventsCalendarTitle: "The F16s – Live Indie Rock Concert",
+    EventsCalendarContent:
+      "Join The F16s live in Chennai for a night of indie rock, melodic guitar riffs, and soulful vocals by Josh Fernandez.",
+    EventsCalendarMonth: "15 Nov 2025",
+    EventsCalendarTime: "9:00 PM",
+    EventsCalendarCategory: "Live Music / Indie Rock",
+    image: "/images/HomePage-Images/Events/Newevents/392.jpg",
+    link: "/events",
+    location: "Hard Rock Cafe, Nungambakkam, Chennai",
+    language: "English",
+    hours: "2 hours",
+    ageLimit: "21+ years",
+    rleigion: "",
+    aboutFull:
+      "The music of The F16s creates vivid soundscapes, featuring melodic guitar riffs, introspective indie rock songs, and the soulful vocals of Josh Fernandez. Their tracks explore modern life, identity, love, and relationships, connecting deeply with fans of Indian independent music, indie rock bands in India, and original indie music.\n\nRepresenting a fresh wave in Indian indie rock, The F16s blend reflective songwriting with contemporary alternative rock. Their commitment to artistic growth and their ability to evoke emotions through music have earned them a loyal following and critical acclaim. For those exploring top indie bands in Chennai or best independent music artists in India, The F16s are a rising force in the global alternative music scene.",
+  },
 
-{
-  url: "the-f16s-live-in-chennai",
-  id: 217,
-  RegisterLink: "",
-  metaTitleEvent: "The F16s Live Music Show / Indie Rock Concert / Chennai 2025",
-  metaDescriptionEvent:
-    "Catch The F16s live at Hard Rock Cafe, Chennai — experience indie rock soundscapes, soulful vocals, and unforgettable music performances.",
-  conicallinkEvent: "/eventsdetails/217",
-  siteLink: "https://in.bookmyshow.com/events/the-f16s/ET00465161",
-  EventsCalendarTitle: "The F16s – Live Indie Rock Concert",
-  EventsCalendarContent:
-    "Join The F16s live in Chennai for a night of indie rock, melodic guitar riffs, and soulful vocals by Josh Fernandez.",
-  EventsCalendarMonth: "15 Nov 2025",
-  EventsCalendarTime: "9:00 PM",
-  EventsCalendarCategory: "Live Music / Indie Rock",
-  image: "/images/HomePage-Images/Events/Newevents/392.jpg",
-  link: "/events",
-  location: "Hard Rock Cafe, Nungambakkam, Chennai",
-  language: "English",
-  hours: "2 hours",
-  ageLimit: "21+ years",
-  rleigion: "",
-   "aboutFull": "The music of The F16s creates vivid soundscapes, featuring melodic guitar riffs, introspective indie rock songs, and the soulful vocals of Josh Fernandez. Their tracks explore modern life, identity, love, and relationships, connecting deeply with fans of Indian independent music, indie rock bands in India, and original indie music.\n\nRepresenting a fresh wave in Indian indie rock, The F16s blend reflective songwriting with contemporary alternative rock. Their commitment to artistic growth and their ability to evoke emotions through music have earned them a loyal following and critical acclaim. For those exploring top indie bands in Chennai or best independent music artists in India, The F16s are a rising force in the global alternative music scene."
-
-},
-
-{
-  url: "do-you-know-who-i-am-daniel-fernandes",
-  id: 218,
-  RegisterLink: "",
-  metaTitleEvent: "Do You Know Who I Am? / Daniel Fernandes Comedy Show / Chennai 2025",
-  metaDescriptionEvent:
-    "Watch Daniel Fernandes live in Chennai with his comedy special ‘Do You Know Who I Am?’ — a hilarious and heartfelt performance filled with sharp wit and storytelling.",
-  conicallinkEvent: "/eventsdetails/218",
-  siteLink: "https://in.bookmyshow.com/events/do-you-know-who-i-am-by-daniel-fernandes/ET00456561",
-  EventsCalendarTitle: "Do You Know Who I Am? by Daniel Fernandes",
-  EventsCalendarContent:
-    "Catch Daniel Fernandes live in Chennai for his third comedy special — ‘Do You Know Who I Am?’ — a witty, thought-provoking stand-up show full of laughter and insight.",
-  EventsCalendarMonth: "8 Oct 2025",
-  EventsCalendarTime: "6:00 PM",
-  EventsCalendarCategory: "Comedy / Stand-up Show",
-  image: "/images/HomePage-Images/Events/Newevents/389.jpg",
-  link: "/events",
-  location: "Medai – The Stage, Alwarpet, Chennai",
-  language: "English",
-  hours: "1 hour 30 minutes",
-  ageLimit: "16+ years",
-  rleigion: "",
-  aboutFull: `
+  {
+    url: "do-you-know-who-i-am-daniel-fernandes",
+    id: 218,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Do You Know Who I Am? / Daniel Fernandes Comedy Show / Chennai 2025",
+    metaDescriptionEvent:
+      "Watch Daniel Fernandes live in Chennai with his comedy special ‘Do You Know Who I Am?’ — a hilarious and heartfelt performance filled with sharp wit and storytelling.",
+    conicallinkEvent: "/eventsdetails/218",
+    siteLink:
+      "https://in.bookmyshow.com/events/do-you-know-who-i-am-by-daniel-fernandes/ET00456561",
+    EventsCalendarTitle: "Do You Know Who I Am? by Daniel Fernandes",
+    EventsCalendarContent:
+      "Catch Daniel Fernandes live in Chennai for his third comedy special — ‘Do You Know Who I Am?’ — a witty, thought-provoking stand-up show full of laughter and insight.",
+    EventsCalendarMonth: "8 Oct 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Comedy / Stand-up Show",
+    image: "/images/HomePage-Images/Events/Newevents/389.jpg",
+    link: "/events",
+    location: "Medai – The Stage, Alwarpet, Chennai",
+    language: "English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16+ years",
+    rleigion: "",
+    aboutFull: `
   Get ready for an unforgettable evening in Chennai with Daniel Fernandes, one of India’s leading stand-up comedians, as he brings his third comedy special to the city. Do You Know Who I Am? is a unique celebration of life, laughter, and personal stories told in Daniel’s signature style. After a major life event, he transformed his thoughts and hilarious insights into a performance that connects with fans of Indian stand-up comedy, popular comedy shows, and famous Indian comedians.
 
 This comedy show delivers witty storytelling, sharp observations, and side-splitting humor — offering a fresh and entertaining experience. Don’t miss the chance to see Daniel Fernandes in Chennai and enjoy one of the most talked-about comedy events.
 
-  `
-},
+  `,
+  },
 
+  {
+    url: "dhak-dhak-storytelling-special-amandeep-singh",
+    id: 219,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Dhak Dhak – A Storytelling Special / Amandeep Singh / Chennai 2025",
+    metaDescriptionEvent:
+      "Experience Dhak Dhak – A Storytelling Special by Amandeep Singh live in Chennai. A heartfelt evening of stories, poems, and love that celebrate life and emotions.",
+    conicallinkEvent: "/eventsdetails/219",
+    siteLink:
+      "https://in.bookmyshow.com/events/dhak-dhak-a-storytelling-special-chennai/ET00462027",
+    EventsCalendarTitle: "Dhak Dhak – A Storytelling Special",
+    EventsCalendarContent:
+      "Join Amandeep Singh live in Chennai for Dhak Dhak – A Storytelling Special. A heart-touching evening filled with soulful stories, poetry, and emotions of love and self-discovery.",
+    EventsCalendarMonth: "30 Nov 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Storytelling / Spoken Word / Live Show",
+    image: "/images/HomePage-Images/Events/Newevents/445.jpg",
+    link: "/events",
+    location: "Tag Auditorium, Chennai",
+    language: "English, Hindi",
+    hours: "1 hour 35 minutes",
+    ageLimit: "12+ years",
+    rleigion: "",
+    aboutFull:
+      "You know your heart is constantly beating, right? ‘Dhak-Dhak… Dhak-Dhak’—even as you read this, it’s beating for you. Normally, the heart never stops, but when a dream suddenly appears, it can make the rhythm falter. Just like in our rush to get through life, we often forget the small, beautiful moments of love hidden within ourselves.\n\nDhak-Dhak is a wild love story that gives you a reason to cherish yourself—a reason to dive in completely, just for you. Come with your friend, your love, and your heart, and experience the magic of Amandeep Singh, India’s OG storyteller, whose storytelling shows the value of every single breath. After multiple sold-out shows in over 30 cities across India, Australia, and the UK, Amandeep Singh is coming to your city to take you on a memorable evening full of stories, poems, and love.",
+  },
+  {
+    url: "aquatic-championship-2025",
+    id: 220,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Aquatic Championship 2025 / Swimming Competition / Velachery",
+    metaDescriptionEvent:
+      "Join Vincera Sports Aquatic Championship 2025 at SDAT Aquatic Complex, Velachery — a full day of competitive swimming events across multiple categories and age groups.",
+    conicallinkEvent: "/eventsdetails/220",
+    siteLink: "https://tickets.kynhood.com/event/68c0090b1b555f7e0a1f45e6",
+    EventsCalendarTitle: "Vincera Sports Aquatic Championship 2025",
+    EventsCalendarContent:
+      "Dive into an action-packed day of swimming competitions including freestyle, backstroke, breaststroke, butterfly, and medley events.",
+    EventsCalendarMonth: "26 Oct 2025",
+    EventsCalendarTime: "7:30 AM",
+    EventsCalendarCategory: "Sports / Swimming",
+    image: "/images/HomePage-Images/Events/Newevents/411.jpg",
+    link: "/events",
+    location: "SDAT Aquatic Complex, Velachery, Chennai",
+    language: "",
+    hours: "9 Hrs",
+    ageLimit: "5+ years",
+    religion: "",
+    aboutFull:
+      "Vincera Sports Aquatic Championship 2025\n\nDive into an action-packed day filled with speed, technique, and endurance!\n\nChampionship Events:\nFreestyle | Backstroke | Breaststroke | Butterfly | Individual Medley | Freestyle Relay\n\nParticipant Categories:\nBoys & Girls | Age Groups: U7 to Open\n\nAwards & Recognition:\n- Personalized Medals\n- Achievement Certificates\n- Individual Event & Overall Championship Trophies",
+  },
 
+  {
+    url: "halloween-party-chennai-nightlife-2025",
+    id: 221,
+    RegisterLink: "",
+    metaTitleEvent: "Halloween Party 2025: Chennai’s Ultimate Nightlife Event",
+    metaDescriptionEvent:
+      "Don’t miss the Halloween Party in Chennai – enjoy a night of music, costumes, spooky fun, and unforgettable nightlife events on October 31, 2025.",
+    conicallinkEvent: "/eventsdetails/221",
+    siteLink: "https://tickets.kynhood.com/event/68da276af143122f5b3d2732",
+    EventsCalendarTitle: "Halloween Party",
+    EventsCalendarContent:
+      "Get ready for a spine-tingling yet fun-filled Halloween celebration at Muktha, No. 27, Cholamandal Artists Village, Injambakkam!",
+    EventsCalendarMonth: "31 Oct 2025",
+    EventsCalendarTime: "4:00 PM Onwards",
+    EventsCalendarCategory: "Nightlife Events",
+    image: "/images/HomePage-Images/Events/Newevents/413.jpg",
+    link: "/events",
+    location: "Muktha, No. 27, Cholamandal Artists Village, Injambakkam",
+    language: "",
+    hours: "",
+    ageLimit: "5+ years",
+    religion: "",
+    aboutFull:
+      "Get ready for a spine-tingling yet fun-filled Halloween celebration at Muktha, No. 27, Cholamandal Artists Village, Injambakkam! Join us on October 31st and November 1st, from 4 PM to 7 PM for a family-friendly extravaganza packed with festive delights.\n\nEnjoy a classic Trick-or-Treat adventure around the neighbourhood, Halloween-inspired crafts, exciting games and challenges for all ages, and a tasty assortment of spooky treats. This is one of the must-attend Nightlife Events of the season. Dress up in your most imaginative or favourite costume to fully embrace the Halloween spirit.\n\nBring your friends and family for an unforgettable evening of fun, laughter, and eerie excitement. Don’t miss this chance to make memories that are delightfully spooky and magical!",
+  },
+
+  {
+    url: "chennai-cultural-namma-veetu-kalyanam-kalyana-virunthu",
+    id: 222,
+    RegisterLink: "",
+    metaTitleEvent: "Namma Veetu Kalyanam – A Chennai Cultural Wedding Event",
+    metaDescriptionEvent:
+      "Celebrate tradition at Namma Veetu Kalyanam, a Chennai cultural wedding event with live music, rituals, and a grand kalyana virunthu feast.",
+    conicallinkEvent: "/eventsdetails/222",
+    siteLink: "https://tickets.kynhood.com/event/68e8d0f46f52e657e6ba9bea",
+    EventsCalendarTitle: "Namma Veetu Kalyanam",
+    EventsCalendarContent:
+      "Celebrate the spirit of Kalyana Virunthu, Chennai Cultural style, at VGP Universal Kingdom.",
+    EventsCalendarMonth: "26 Oct 2025",
+    EventsCalendarTime: "4:00 PM",
+    EventsCalendarCategory: "Chennai Cultural / Kalyana Virunthu",
+    image: "/images/HomePage-Images/Events/Newevents/414.jpg",
+    link: "/events",
+    location: "VGP Universal Kingdom, Injambakkam",
+    language: "",
+    hours: "3 Hrs",
+    ageLimit: "",
+    religion: "",
+    aboutFull:
+      "At the Kannungala chapter’s fake wedding party, there might not be a bride or groom, but we guarantee the united, full-of-vibes energy when we all come together. Celebrate the spirit of Kalyana Virunthu, Chennai Cultural style!\n\nThis is your house wedding, this is our house wedding! Everyone come join the celebration!",
+  },
+
+  {
+    url: "storytelling-workshop-t-nagar-transformation-vikram-sridhar",
+    id: 223,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Storytelling Workshop: T Nagar Transformation with Vikram Sridhar",
+    metaDescriptionEvent:
+      "Experience the Storytelling Workshop by Vikram Sridhar — a T Nagar transformation walk blending tales of culture, people, and Chennai’s vibrant heritage.",
+    conicallinkEvent: "/eventsdetails/223",
+    siteLink: "https://tickets.kynhood.com/event/68ee834ba1e3f9ac7d5988eb",
+    EventsCalendarTitle: "A Story Walk through T. Nagar",
+    EventsCalendarContent:
+      "Embark on a unique Storytelling Workshop — a Story Walk through T Nagar with Vikram Sridhar.",
+    EventsCalendarMonth: "26 Oct 2025",
+    EventsCalendarTime: "7:00 AM",
+    EventsCalendarCategory: "Storytelling Workshop / T Nagar transformation",
+    image: "/images/HomePage-Images/Events/Newevents/415.jpg",
+    link: "/events",
+    location: "Shri Balaajee Bhavan, T Nagar",
+    language: "",
+    hours: "1 Hr 30 Mins",
+    ageLimit: "Open to all ages",
+    religion: "",
+    aboutFull:
+      "Embark on a unique Storytelling Workshop — a Story Walk through T Nagar with Vikram Sridhar, a gifted storyteller who brings the neighborhood to life. Beginning at Balaajee Bhavan, this early morning experience offers a fresh perspective on the area—through tales drawn from its history, culture, and everyday moments.\n\nDiscover hidden gems, forgotten landmarks, and fascinating anecdotes, as each step uncovers the true spirit of T Nagar. Experience the T Nagar transformation firsthand. Ideal for heritage enthusiasts, curious explorers, and anyone looking to connect deeply with Chennai.\n\nOpen to all ages\nLimited spots available | Registration required\n\nJoin us to stroll, listen, and start your day immersed in stories that stay with you.",
+  },
+
+  {
+    url: "surf-and-slice-coastal-beach-party-ultimate-festival",
+    id: 224,
+    RegisterLink: "",
+    metaTitleEvent: "Join the Surf & Slice Beach Party Festival",
+    metaDescriptionEvent:
+      "Catch Surf & Slice — a coastal beach party with live music, DJs, delicious food, and vibrant seaside vibes for an unforgettable festival experience by the shore.",
+    conicallinkEvent: "/eventsdetails/224",
+    siteLink: "https://tickets.kynhood.com/event/68da2a82f143122f5b3d2783",
+    EventsCalendarTitle: "Surf & Slice",
+    EventsCalendarContent:
+      "Surf, Serve, Sunset: A Coastal Beach Party Evening at Karikatukuppam for an unforgettable experience of waves, games, and pure good vibes.",
+    EventsCalendarMonth: "26 Oct 2025",
+    EventsCalendarTime: "3:00 PM",
+    EventsCalendarCategory: "Coastal Beach Party",
+    image: "/images/HomePage-Images/Events/Newevents/422.jpg",
+    link: "/events",
+    location: "Karikatukuppam Beach, Kovalam",
+    language: "",
+    hours: "4 Hrs",
+    ageLimit: "",
+    religion: "",
+    aboutFull:
+      "Surf, Serve, Sunset: A Coastal Beach Party Evening at Karikatukuppam\n\nLooking for a refreshing way to spend your summer evening? Join us on 26th October at Karikatukuppam Beach for an unforgettable experience of waves, games, and pure good vibes at this tranquil, offbeat paradise.\n\nPerfect for both kids and the young at heart, enjoy the thrill of riding your first wave, challenge friends to a fun beach volleyball match, and indulge in freshly baked unlimited pizzas. As the sun sets, the golden hour comes alive with laughter, music, and memories you’ll want to hold onto forever.\n\nThis isn’t just another beach outing — it’s a mini getaway from the everyday. With limited spots, it’s a cozy gathering where strangers become teammates and friends. Whether you’re here for the surf, the slice, or the sunset, an unforgettable evening awaits.",
+  },
+
+  {
+    url: "chennai-music-festival-live-drumming-rhythm-experience",
+    id: 225,
+    RegisterLink: "",
+    metaTitleEvent:
+      "Chennai Music Festival - Live Drumming Event Rhythm Experience",
+    metaDescriptionEvent:
+      "Feel the pulse of Chennai Music Festival — enjoy live drumming, electrifying percussion, rhythm workshops, and an immersive Rhythm Experience for all music lovers.",
+    conicallinkEvent: "/eventsdetails/225",
+    siteLink: "https://tickets.kynhood.com/event/68e7511d01f615b5a1ae993f",
+    EventsCalendarTitle: "Drums Circle - The Beats of Africa",
+    EventsCalendarContent:
+      "Prepare yourself for an energetic and immersive African Drum Circle Experience at VGP, part of the Chennai Music Festival.",
+    EventsCalendarMonth: "26 Oct 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Chennai Music Festival / Live Drumming Event",
+    image: "/images/HomePage-Images/Events/Newevents/424.jpg",
+    link: "/events",
+    location: "Heritage Beach lawn, VGP Golden Beach Ressort",
+    language: "",
+    hours: "2 Hrs",
+    ageLimit: "",
+    religion: "",
+    aboutFull:
+      "Feel the Beat – African Drum Circle at VGP! Part of the Chennai Music Festival\n\nPrepare yourself for an energetic and immersive evening as the African Drum Circle Experience comes to VGP! This isn’t just a performance — it’s a hands-on celebration of rhythm, unity, and community. Whether you’re an experienced drummer or picking up a drum for the first time, you’ll get to play along, feel the vibrations, and join the circle of music.\n\nWhy Participate?\n\n- Interactive & Fun: Dive into the excitement of live African drumming in a fully engaging session.\n- Mind & Mood Boost: Drumming helps relieve stress, sharpen focus, and elevate your spirits.\n- Everyone Welcome: No experience required — just bring your energy and enthusiasm!\n\nCome as you are, connect with others, and leave inspired, refreshed, and full of rhythm. Join this vibrant journey of music, wellness, and togetherness!",
+  },
+
+  {
+    url: "dance-party-retro-music-dj-shane-chennai",
+    id: 226,
+    RegisterLink: "",
+    metaTitleEvent: "Dance Party & DJ Events at Flashback Saturdays",
+    metaDescriptionEvent:
+      "Dance the night away at Flashback Saturdays with DJ Shane — retro music, high-energy DJ events, and the ultimate dance party experience in Chennai.",
+    conicallinkEvent: "/eventsdetails/226",
+    siteLink: "https://tickets.kynhood.com/event/68e6153101f615b5a1ae8cb0",
+    EventsCalendarTitle: "Flashback Saturdays Ft. DJ Shane",
+    EventsCalendarContent:
+      "Brace yourself for an electrifying Retro Dance Party night at Hard Rock Cafe Chennai with DJ Shane.",
+    EventsCalendarMonth: "25 Oct 2025",
+    EventsCalendarTime: "8:30 PM",
+    EventsCalendarCategory: "Retro Dance Party",
+    image: "/images/HomePage-Images/Events/Newevents/428.jpg",
+    link: "/events",
+    location: "HardRockCafe, Nungambakkam",
+    language: "",
+    hours: "2 Hrs",
+    ageLimit: "21+ years",
+    religion: "",
+    aboutFull:
+      "Flashback Saturdays with DJ Shane\n\nBrace yourself for an electrifying night where every beat hits just right and every track feels brand new! Hard Rock Cafe Chennai presents DJ Shane, delivering a high-energy musical journey filled with iconic hits and non-stop grooves. Experience a Retro Dance Party like no other!\n\nFrom Bollywood mashups to international chart-toppers, DJ Shane will spin a vibrant mix of tracks that’ll keep you on your feet all night. Expect surprise drops, reimagined favorites, and a contagious energy that grows with every beat.",
+  },
+
+  {
+    url: "acting-workshop-fun-theatre-experience-for-kids",
+    id: 227,
+    RegisterLink: "",
+    metaTitleEvent: "Acting Workshop - Fun Theatre Experience for Kids",
+    metaDescriptionEvent:
+      "Step into the world of theatre at this Acting Workshop – an immersive kids’ experience filled with games, acting exercises, and creative learning.",
+    conicallinkEvent: "/eventsdetails/227",
+    siteLink: "https://tickets.kynhood.com/event/68dbefd832d15176f5c9a739",
+    EventsCalendarTitle: "Children Theatre - Workshop",
+    EventsCalendarContent:
+      "A theatre workshop for children focusing on building self-confidence, communication skills, and creative expression through performance.",
+    EventsCalendarMonth: "26 Oct 2025",
+    EventsCalendarTime: "9:00 AM",
+    EventsCalendarCategory: "Acting Workshop",
+    image: "/images/HomePage-Images/Events/Newevents/438.jpg",
+    link: "/events",
+    location: "IDAM - The Art and Cultural Space",
+    language: "",
+    hours: "4 Hrs",
+    ageLimit: "5+ years",
+    religion: "",
+    aboutFull:
+      "Theatre provides a unique platform for children to express themselves freely. It helps them conquer fears, develop patience, foster respect and responsibility, enhance communication skills, and much more. Whether through storytelling, addressing an audience, or embodying a character, theatre opens doors to endless possibilities. This Acting Workshop will guide them through each step of performance.\n\nFacial Expression:\nChildren will explore a wide range of emotions—from happiness and anger to surprise and disgust—and learn how expressions influence others.\n\nBody Movement:\nUsing gestures and movement, they will discover the importance of non-verbal communication in performance and storytelling.\n\nVoice:\nParticipants will practice using their voices effectively, from natural sounds to articulate speech, building confidence and creativity.\n\nStorytelling:\nThrough oral narration, children will develop skills to craft and share engaging stories.\n\nWorkshop Benefits:\n- Enhanced communication and stage presence\n- Boosted self-confidence through collaborative activities\n- Exposure to the excitement and energy of drama\n- Opportunities for creative expression through writing and performance\n- Practical techniques to create and tell compelling stories",
+  },
+
+  // NEW NOV EVENTS##############
+
+  {
+    url: "madras-driven-drift-night-motor-nights",
+    id: 228,
+    RegisterLink:
+      "https://www.district.in/events/madras-driven-og-motorsports-drift-night-and-car-meet-2-presented-by-team-bad-villain-nov8-2025-buy-tickets",
+    metaTitleEvent:
+      "Madras Driven, OG Motorsports, & Team Bad Villain - Drift Night 2",
+    metaDescriptionEvent:
+      "Following the huge success of Drift Night 1, this sequel turns Phoenix Marketcity Chennai into an ultimate motorsport playground with pro drift displays, a premium car showcase, and a live performance by rapper/artist Asal Kolaar.",
+    conicallinkEvent: "/eventsdetails/228",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/madras-driven-drift-night-motor-nights",
+    EventsCalendarTitle: "Madras Motor Nights / Drift Night 2",
+    EventsCalendarContent:
+      "Chennai’s most exciting Drift Night with pro drift displays, a premium car showcase, live music, and adrenaline-pumping activities.",
+    EventsCalendarMonth: "8 Nov 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Motorsport / Car Meet",
+    image: "/images/HomePage-Images/Events/Newevents/403.jpg",
+    link: "/events",
+    location: "L2 & L3, Palladium Parking, Phoenix Marketcity, Chennai",
+    language: "",
+    hours: "3 Hrs",
+    ageLimit: "",
+    religion: "",
+    aboutFull:
+      "Following the huge success of Drift Night 1, this sequel turns Phoenix Marketcity Chennai into an ultimate motorsport playground. For the first time ever, the event features rapper/artist Asal Kolaar live on stage. The evening blends thrilling drift demonstrations with a showcase of premium cars, offering an engaging experience for both car enthusiasts and casual visitors. Expect an evening filled with tyre smoke, roaring engines, and unforgettable moments.\n\nPremium Car Showcase – Over 100 carefully selected sports cars, supercars, and luxury vehicles will be on display. From timeless classics to the latest engineering marvels, this collection celebrates top-tier automotive craftsmanship.\n\nPro Drift Display – Watch skilled drivers perform precision drifting, demonstrating their mastery over speed, control, and technique. This edition features even more cars and professional drifters than before.\n\nDrift Ride Experience – Experience the thrill up close by riding shotgun with professional drivers. Feel the forces, smell the burning rubber, and see why drifting is considered the art of automotive performance.\n\nBurnout Arena – A special zone where raw power meets asphalt. High-performance vehicles put on controlled burnout displays, creating an electrifying spectacle for the audience.\n\nFun & Activities:\n- Live music and DJ performances by Asal Kolaar, DJ Sne, Tamizh Aadhavan, and more\n- Hands-on racing simulators\n- Drift go-karts, pitstop challenges, and interactive games\n- Stalls from top automotive brands\n- Meet professional drivers and social media influencers\n- Food and beverage counters\n- Dedicated zones for photography and content creation",
+  },
+
+  {
+    url: "hey-minaleyyy-live-music-show-chennai-nov9-2025",
+    id: 230,
+    RegisterLink:
+      "https://www.district.in/events/hey-kadhaleyy-hey-minaleyyy-nov9-2025-buy-tickets",
+    metaTitleEvent:
+      "Hey Minaleyyy: Haricharan & Sireesha Bhagavathula Live Music Show",
+    metaDescriptionEvent:
+      "O2 Events presents 'Hey Minaleyyy,' a grand musical evening in Chennai celebrating 20 years of Haricharan’s journey, featuring Sireesha Bhagavathula and the Drums Kumaran Collective.",
+    conicallinkEvent: "/eventsdetails/230",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/hey-minaleyyy-live-music-show-chennai-nov9-2025",
+    EventsCalendarTitle: "Hey Minaleyyy - Haricharan Live Concert",
+    EventsCalendarContent:
+      "A memorable musical evening celebrating 20 years of Haricharan's journey, featuring Sireesha Bhagavathula and the Drums Kumaran Collective, performing iconic romantic hits.",
+    EventsCalendarMonth: "9 Nov 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Live Music Show / Romantic Songs",
+    image: "/images/HomePage-Images/Events/Newevents/406.jpg",
+    link: "/events",
+    location: "Music Academy, Chennai",
+    language: "Tamil",
+    hours: "2.5 Hrs",
+    ageLimit: "",
+    religion: "",
+    aboutFull:
+      "O2 Events proudly presents a memorable musical evening in Chennai, celebrating 20 glorious years of Haricharan’s journey — one of the most beloved voices of South Indian cinema.\n\nThe stage will be illuminated by Haricharan’s soulful performances, complemented by the captivating vocals of Sireesha Bhagavathula, renowned for her mesmerizing film and concert renditions. Adding dynamic energy to the night, the Drums Kumaran Collective will dazzle the audience with their electrifying rhythms and fusion beats.\n\nThis grand celebration promises a harmonious mix of melody, rhythm, and nostalgia, taking the audience on a two-decade-long musical journey. Expect an enchanting evening of iconic hits, collaborative performances, and a heartfelt tribute to Haricharan’s extraordinary artistry.",
+  },
+
+  {
+    url: "kalanjali-2025-vani-mahal-live-music-gigs",
+    id: 231,
+    RegisterLink:
+      "https://www.district.in/events/kalanjali-2025-nov1-2025-buy-tickets",
+    metaTitleEvent:
+      "Kalanjali 2025: Performing Arts Festival with Santoor Maestro Rahul Sharma",
+    metaDescriptionEvent:
+      "Heartfulness International School – Omega Branch presents Kalanjali 2025, their annual festival of performing arts, featuring a special performance by renowned Santoor virtuoso, Shri Rahul Sharma.",
+    conicallinkEvent: "/eventsdetails/231",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/kalanjali-2025-vani-mahal-live-music-gigs",
+    EventsCalendarTitle: "Kalanjali 2025 - Performing Arts Festival",
+    EventsCalendarContent:
+      "Annual festival of performing arts by Heartfulness International School, featuring a special Santoor performance by renowned maestro Shri Rahul Sharma.",
+    EventsCalendarMonth: "1 Nov 2025",
+    EventsCalendarTime: "5:30 PM",
+    EventsCalendarCategory: "Classical / Performing Arts",
+    image: "/images/HomePage-Images/Events/Newevents/407.jpg",
+    link: "/events",
+    location: "Vani Mahal, Chennai",
+    language: "Indian Classical",
+    hours: "2.5 Hrs",
+    ageLimit: "",
+    religion: "",
+    aboutFull:
+      "The students of Heartfulness International School – Omega Branch proudly present Kalanjali 2025, the annual festival of performing arts that honors heritage, creativity, and timeless excellence.\n\nMore than just a showcase, Kalanjali reflects our commitment to holistic education. Led by students, the festival immerses young minds in the performing arts, encourages leadership, and strengthens their connection to India’s rich cultural traditions.\n\nThis year, Kalanjali will shine brighter than ever with a special performance by the renowned Shri Rahul Sharma, Santoor virtuoso and son of the legendary Padma Vibushan Pandit Shivkumar Sharma, promising an unforgettable evening celebrating the essence of Indian arts and culture.",
+  },
+
+  {
+    url: "the-f16s-indie-rock-concert",
+    id: 232,
+    RegisterLink:
+      "https://www.district.in/events/the-f16s-nov15-2025-buy-tickets",
+    metaTitleEvent: "The F16s Live in Chennai - Indie Rock Concert",
+    metaDescriptionEvent:
+      "Catch The F16s, torchbearers of Indian indie rock, live at Hard Rock Cafe Chennai. Experience their striking soundscape, rich guitar melodies, and soulful voice of Josh Fernandez.",
+    conicallinkEvent: "/eventsdetails/232",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/the-f16s-indie-rock-concert",
+    EventsCalendarTitle: "The F16s - Indie Rock Concert",
+    EventsCalendarContent:
+      "An electrifying live music performance by The F16s, a leading band in the Indian independent music scene, known for their indie-rock energy and heartfelt songwriting.",
+    EventsCalendarMonth: "15 Nov 2025",
+    EventsCalendarTime: "9:00 PM",
+    EventsCalendarCategory: "Indie Rock / Live Music",
+    image: "/images/HomePage-Images/Events/Newevents/408.jpg",
+    link: "/events",
+    location: "Hard Rock Cafe Chennai, Chennai",
+    language: "English",
+    hours: "2 Hrs",
+    ageLimit: "",
+    religion: "",
+    aboutFull:
+      "The music of The F16s weaves a striking soundscape, defined by rich guitar melodies, reflective lyricism, and the soulful voice of Josh Fernandez. Their tracks explore themes of modern life, love, and identity, resonating deeply with a generation in search of genuine musical expression.\n\nAs torchbearers of a new wave in Indian independent music, The F16s blend heartfelt songwriting with contemporary indie-rock energy. Their relentless pursuit of artistic evolution and their gift for stirring emotion through music have earned them a loyal following and critical praise. On the global alternative stage, The F16s continue to rise as a powerful presence.",
+  },
+
+  {
+    url: "ashwin-srinivas-english-standup-comedy-chennai-2025",
+    id: 233,
+    RegisterLink:
+      "https://www.district.in/events/ashwin-srinivas-live-english-standup-comedy-show-feb9-2025-buy-tickets",
+    metaTitleEvent: "Ashwin Srinivas Live - English Stand-Up Comedy Show",
+    metaDescriptionEvent:
+      "Get ready for a laughter riot! Ashwin Srinivas is bringing one full hour of English stand-up comedy to Trinity Studio with sharp punchlines and hilarious, relatable stories.",
+    conicallinkEvent: "/eventsdetails/233",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/ashwin-srinivas-english-standup-comedy-chennai-2025",
+    EventsCalendarTitle: "Ashwin Srinivas Live - Stand-Up Comedy",
+    EventsCalendarContent:
+      "An hour-long English stand-up comedy show by Ashwin Srinivas, featuring sharp punchlines, relatable stories, and hilarious takes on everyday life.",
+    EventsCalendarMonth: "8 Nov 2025",
+    EventsCalendarTime: "8:00 PM",
+    EventsCalendarCategory: "Stand-Up Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/464.jpg",
+    link: "/events",
+    location: "Trinity Studio, Kodambakkam, Chennai",
+    language: "English",
+    hours: "1 Hr",
+    ageLimit: "",
+    religion: "",
+    aboutFull:
+      "Ashwin Srinivas is bringing one full hour of jokes and laughter to Trinity Studio – the perfect place to enjoy your favorite acts. Get ready for a laughter riot that will leave you grinning ear to ear.\n\nExpect sharp punchlines, relatable stories, and hilarious takes on everyday life. Whether you’re a comedy lover or just looking for a fun night out, this show guarantees non-stop entertainment. Come down, sit back, and let the good vibes roll!",
+  },
+
+  {
+    url: "nyima-live-music-tour-2025",
+    id: 234,
+    RegisterLink:
+      "https://www.district.in/events/nyima-tour-chennai-nov15-2025-buy-tickets",
+    metaTitleEvent:
+      "Nyima Tour Chennai - Live Indie Music by Indian Female Artists",
+    metaDescriptionEvent:
+      "Femme Music presents the 'Nyima Tour' in Chennai, celebrating the release of their debut compilation 'Nyima Vol. I' with live performances by Anjali Manoharan, Tabitha Kagoo, and Sahana Naresh.",
+    conicallinkEvent: "/eventsdetails/234",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/nyima-live-music-tour-2025",
+    EventsCalendarTitle: "Nyima Tour - Indie Live Music Night",
+    EventsCalendarContent:
+      "A live music night featuring talented Indian female indie artists Anjali Manoharan, Tabitha Kagoo, and Sahana Naresh, presented by Femme Music to celebrate the 'Nyima Vol. I' compilation.",
+    EventsCalendarMonth: "15 Nov 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Indie Music / Live Music",
+    image: "/images/HomePage-Images/Events/Newevents/409.jpg",
+    link: "/events",
+    location: "Vinyl & Brew, Chennai",
+    language: "English",
+    hours: "3 Hrs",
+    ageLimit: "",
+    religion: "",
+    aboutFull:
+      "Femme Music is an independent record label focused on nurturing and promoting Indian female indie artists on both national and international stages. Our vision is to reshape how India’s music scene is perceived by spotlighting English-language, women-led indie music and offering artists a sustainable career path in the industry.\n\nTo celebrate the release of our debut 11-track compilation ‘Nyima Vol. I’ on 28th November, we’re heading out on a 4-city tour featuring the extraordinary talent showcased on the album.\n\nChennai Lineup\n1. Anjali Manoharan – A gifted vocalist and multi-instrumentalist, admired for her improvisational flair, songwriting strength, and compositional ability.\n2. Tabitha Kagoo – A Goa-based singer-songwriter, recognized for her raw yet tender sound and deeply personal songwriting.\n3. Sahana Naresh – Born in Chennai, a multilingual, genre-blending singer-songwriter and trained Hindustani classical vocalist. Her songs touch on themes of shared humanity, social realities, and the courage to live truthfully.",
+  },
+
+  //#########################################################
+  //############### NOVEMEBER NEW EVENTS ####################
+  //#########################################################
+
+  {
+    url: "vijay-prakash-live-concert",
+    id: 235,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/vijay-prakash-live-in-chennai/ET00463505",
+    metaTitleEvent:
+      "Vijay Prakash Live in Chennai – Vijayotsavam 2025 Musical Concert",
+    metaDescriptionEvent:
+      "Experience Vijayotsavam 2025, a grand musical evening with the legendary Vijay Prakash live in Chennai. Enjoy soulful Tamil, Hindi, Telugu, and Kannada hits in a mesmerizing live concert presented by Noizz Entertainment.",
+    conicallinkEvent: "/eventsdetails/235",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/vijay-prakash-live-concert",
+    EventsCalendarTitle: "Vijay Prakash Live in Concert – Vijayotsavam 2025  ",
+    EventsCalendarContent:
+      "Experience an unforgettable evening of music as Vijay Prakash performs his greatest Tamil, Hindi, Telugu, and Kannada hits live at Express Avenue, Chennai. Presented by Noizz Entertainment, this grand concert promises soulful melodies and electrifying performances.",
+    EventsCalendarMonth: "22 Nov 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Musical Evening / Live in Chennai",
+    image: "/images/HomePage-Images/Events/Newevents/387.jpg",
+    link: "/events",
+    location: "Express Avenue, Pattullos, Chennai",
+    language: "Tamil, Hindi, Telugu, Kannada",
+    hours: "4 Hours",
+    ageLimit: "All age groups",
+    religion: "",
+    aboutFull:
+      "Vijayotsavam 2025–26, a grand musical celebration featuring the legendary Vijay Prakash, is set to dazzle Chennai on 22nd November 2025 at Express Avenue Mall. Renowned for his soulful voice and dynamic stage presence, Vijay Prakash has delivered timeless hits across Tamil cinema, collaborating with icons like A.R. Rahman, Harris Jayaraj, Yuvan Shankar Raja, and Ilaiyaraaja.\n\nHis popular tracks such as Hosanna, Kadhal Anukkal, Aathichudi, Pookkal Pookkum, Manamaganin Sathiyam, and Aararo Aariraro have become synonymous with emotion and energy, resonating deeply with audiences.\n\nPresented by Noizz Entertainment, a leader in delivering world-class live events, this concert promises top-notch production, flawless execution, and an unforgettable atmosphere. With a reputation for organizing spectacular shows that attract massive crowds, Noizz ensures fans get nothing but the best.\n\nThe Chennai edition of Vijayotsavam will be an evening filled with iconic Tamil melodies, beloved summer anthems, and a powerful live performance from Vijay Prakash. Stay tuned for announcements about special guest performers who will be joining him on stage.",
+  },
+
+  {
+    url: "faiyaaz-hussain-tamil-comedy-live",
+    id: 236,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/survivor-s-suilt/ET00441260",
+    metaTitleEvent:
+      "Faiyaaz Hussain Live – Survivor’s Guilt Tamil Comedy Show in Chennai",
+    metaDescriptionEvent:
+      "Experience Faiyaaz Hussain’s brand-new Tamil comedy special 'Survivor’s Guilt' live in Chennai. A hilarious, introspective show blending storytelling, wit, and real-life humour for mature audiences.",
+    conicallinkEvent: "/eventsdetails/236",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/faiyaaz-hussain-tamil-comedy-live",
+    EventsCalendarTitle: "Survivor’s Guilt – Tamil Comedy by Faiyaaz Hussain",
+    EventsCalendarContent:
+      "Faiyaaz Hussain returns with his latest Tamil comedy special 'Survivor’s Guilt', a raw, funny, and thought-provoking hour filled with sharp humour, storytelling, and crowd interaction. Live at The Music Academy Mini Hall, Chennai.",
+    EventsCalendarMonth: "15 Nov 2025",
+    EventsCalendarTime: "3:00 PM",
+    EventsCalendarCategory: "Tamil Comedy / Stand-up Show",
+    image: "/images/HomePage-Images/Events/Newevents/388.jpg",
+    link: "/events",
+    location: "The Music Academy Mini Hall, Chennai",
+    language: "Tamil",
+    hours: "1 hour 30 minutes",
+    ageLimit: "18+",
+    religion: "",
+    aboutFull:
+      "Faiyaaz Hussain returns to the stage with his brand-new solo hour Survivor’s Guilt, following the roaring success of his debut tour Faiyaaz Hussain Live. This new set dives deep into real-life experiences, offering a tightly written, introspective narrative layered with sharp wit and spontaneous crowd interactions.\n\nSurvivor’s Guilt is for anyone who has ever laughed through pain, felt out of place in a chaotic world, or questioned the absurdity of adulthood. Raw, honest, and hilariously uncomfortable, this show promises an unforgettable ride through the comic lens of one of the most original voices in stand-up today.",
+  },
+
+  {
+    url: "sutej-singh-irl-live-in-chennai-2025-buy-tickets",
+    id: 238,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/sutej-singh-irl-its-really-live/ET00463876",
+    metaTitleEvent:
+      "Sutej Singh Live in Chennai – IRL Restless | Relentless Music Tour 2025",
+    metaDescriptionEvent:
+      "Witness Sutej Singh live in Chennai as part of his IRL Restless | Relentless India Tour. Enjoy an electrifying night of progressive rock, soaring guitar solos, and unforgettable live energy.",
+    conicallinkEvent: "/eventsdetails/238",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/sutej-singh-concert-live-music-tour",
+    EventsCalendarTitle: "Sutej Singh – IRL Restless | Relentless Tour",
+    EventsCalendarContent:
+      "Experience an epic live performance by Sutej Singh at The Madras Taproom, Chennai, as part of his Restless | Relentless India Tour. Enjoy progressive rock brilliance, soaring guitar solos, and immersive soundscapes at this unforgettable live show.",
+    EventsCalendarMonth: "15 Nov 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Live Music Tour 2025 / Concert",
+    image: "/images/HomePage-Images/Events/Newevents/390.jpg",
+    link: "/events",
+    location: "The Madras Taproom, Chennai",
+    language: "English",
+    hours: "4 Hours",
+    ageLimit: "21+",
+    religion: "",
+    aboutFull:
+      "Sutej Singh is all set to make his highly anticipated Chennai debut as part of his multi-city Restless | Relentless India Tour, live at It’s Really Live — the city’s newest and most exciting live event series. Known for curating high-energy experiences featuring cutting-edge talent across music, comedy, and performance, It’s Really Live brings together great vibes, innovative artistry, and unforgettable nights.\n\nA nominal cover charge of ₹500 per person is payable at the venue and is fully redeemable against food and drinks.\n\nWidely regarded as one of India’s finest progressive rock guitarists, Sutej first shot to fame with his debut album The Emerging, which topped the Apple Music India Rock Charts. His track Land of Gold was featured as a Rolling Stone India Editor’s Choice, while his latest record Restless | Relentless is being hailed as one of the boldest prog rock albums to come out of the country.\n\nDrawing influence from guitar legends like John Petrucci and David Gilmour, Sutej’s music is a fusion of technical brilliance and cinematic emotion — marked by soaring solos, immersive soundscapes, and unmatched live energy.\n\nWhether you're a fan of prog, metal, or just great musicianship, this is the gig you've been waiting for. Chennai, the movement is here. The stage is yours.",
+  },
+
+  {
+    url: "daniel-fernandes-do-you-know-who-i-am-live-in-chennai-2025-buy-tickets",
+    id: 239,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/do-you-know-who-i-am-by-daniel-fernandes/ET00456561",
+    metaTitleEvent:
+      "Daniel Fernandes Live in Chennai – Do You Know Who I Am? English Standup Comedy",
+    metaDescriptionEvent:
+      "Catch Daniel Fernandes live in Chennai with his comedy special 'Do You Know Who I Am?' – a hilarious, insightful, and witty take on life told through sharp humour and storytelling.",
+    conicallinkEvent: "/eventsdetails/239",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/daniel-fernandes-live-english-standup-comedy-show",
+    EventsCalendarTitle: "Daniel Fernandes – Do You Know Who I Am?",
+    EventsCalendarContent:
+      "Join Daniel Fernandes live in Chennai for his English stand-up special 'Do You Know Who I Am?' – an introspective yet hilarious show that blends sharp humour, real-life reflections, and witty storytelling.",
+    EventsCalendarMonth: "8 Nov 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "English Standup Comedy / Live Show",
+    image: "/images/HomePage-Images/Events/Newevents/389.jpg",
+    link: "/events",
+    location: "Medai - The Stage, Alwarpet, Chennai",
+    language: "English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16+",
+    religion: "",
+    aboutFull:
+      "Daniel Fernandes is back on tour with his third comedy special, Do You Know Who I Am?, a unique and personal take on life told in his signature style. Sparked by a major personal event, Daniel found himself navigating a world that suddenly felt unfamiliar. While most would turn to therapy, he chose the stage instead — because that’s how you game the system!\n\nThis show dives into deeper waters, blending introspection with sharp humour, and offers a comedy experience that’s as unexpected as it is entertaining. Get ready for a fun night out that might just be a little different from what you imagined.",
+  },
+
+  {
+    url: "ashwyn-singh-standup-comedy-live",
+    id: 241,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/ashwyn-singh-wrong-singh-to-say-tour-goa/ET00453922",
+    metaTitleEvent: "Wrong Singh to Say Tour – Comedy Night 2025",
+    metaDescriptionEvent:
+      "Laugh your heart out with Ashwyn Singh live on stage in the Wrong Singh to Say standup comedy Special. An evening of sharp humor and relatable comedy awaits.",
+    conicallinkEvent: "/eventsdetails/241",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/ashwyn-singh-standup-comedy-live",
+    EventsCalendarTitle: "Ashwyn Singh: Wrong Singh to Say Tour",
+    EventsCalendarContent:
+      "Ashwyn Singh brings his brand-new comedy hour to Chennai, diving headfirst into the chaos, contradictions, and conversations of our times.",
+    EventsCalendarMonth: "28 Nov 2025",
+    EventsCalendarTime: "8:00 PM",
+    EventsCalendarCategory: "Standup Comedy Special / English",
+    image: "/images/HomePage-Images/Events/Newevents/391.jpg",
+    link: "/events",
+    location: "Medai - The Stage, Alwarpet: Chennai",
+    language: "English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16+",
+    religion: "",
+    aboutFull:
+      "Ashwyn Singh is back with his brand-new comedy hour, 'Wrong Singh to Say' Tour, diving headfirst into the chaos, contradictions, and conversations of our times.\n\nIn a world where saying the wrong thing can sometimes feel like the only honest thing to say, Ashwyn explores what happens when comedians are forced to navigate shifting norms, collective outrage, and the ever-blurring lines of free speech. \n\nWith sharp insight and plenty of laughs, he unpacks what makes us angry, questions the nature of moral outrage, and asks what healthy disagreement really looks like in a democracy. And of course, there’s music—because there’s always music. This is Ashwyn’s take on the world and what it means to be human in 2025: thoughtful, funny, and refreshingly real.",
+  },
+
+  {
+    url: "gaurav-kapoor-live-comedy-show-2025",
+    id: 244,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/gaurav-kapoor-live-bengaluru/ET00331714",
+    metaTitleEvent: "Gaurav Kapoor Live – Comedy Show 2025",
+    metaDescriptionEvent:
+      "Enjoy a hilarious Gaurav Kapoor comedy show live in Chennai. Relatable humor, sharp wit, and non-stop laughs await you at this live stand-up experience.",
+    conicallinkEvent: "/eventsdetails/244",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/gaurav-kapoor-live-comedy-show-2025",
+    EventsCalendarTitle: "Gaurav Kapoor Live Stand-Up",
+    EventsCalendarContent:
+      "Come experience the hilarious and highly relatable comedy of Gaurav Kapoor in his live show, recognized as one of the funniest and most prolific stand-up comedians in the country.",
+    EventsCalendarMonth: "21 Nov 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Gaurav Kapoor Comedy Show / Hindi",
+    image: "/images/HomePage-Images/Events/Newevents/393.jpg",
+    link: "/events",
+    location: "Rasika Ranjani Sabha: Chennai",
+    language: "Hindi",
+    hours: "1 Hour",
+    ageLimit: "18+",
+    religion: "",
+    aboutFull:
+      "Come experience the hilarious and highly relatable comedy of Gaurav Kapoor in his live show. Recognized as one of the funniest and most prolific stand-up comedians in the country, Gaurav has built a massive following through his popular Vlogs, boasting over 1 million subscribers on YouTube and 300K followers on Instagram.\n\nHis Amazon Prime special, rated 8.2 on IMDb, has only added to his growing fame. Known for his energetic live performances and brutally honest storytelling, Gaurav is quickly becoming a household name. Though his journalism degree and days working in retail feel like distant memories, he jokes that he still remembers all the keyboard shortcuts—just in case.",
+  },
+
+  {
+    url: "green-kidathon-2025-kids-marathon",
+    id: 245,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/green-kidathon-stadium-run-oct-2025/ET00459666",
+    metaTitleEvent: "Fun & Fitness at Green Kidathon 2025",
+    metaDescriptionEvent:
+      "Young athletes take center stage at Green Kidathon 2025, a kids marathon celebrating fun, fitness, teamwork, and healthy competition for all participants.",
+    conicallinkEvent: "/eventsdetails/245",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/green-kidathon-2025-kids-marathon",
+    EventsCalendarTitle: "Green Kidathon Stadium Run",
+    EventsCalendarContent:
+      "Kalam Event Management presents the Green Kidathon Stadium Run this November 2025 at Jawaharlal Nehru Stadium, featuring multiple categories and distances for children.",
+    EventsCalendarMonth: "2 Nov 2025",
+    EventsCalendarTime: "5:55 AM",
+    EventsCalendarCategory: "Kids Marathon Challenge / Fitness",
+    image: "/images/HomePage-Images/Events/Newevents/394.jpg",
+    link: "/events",
+    location: "Jawaharlal Nehru Stadium Chennai",
+    language: "English, Tamil",
+    hours: "2 hours 30 minutes",
+    ageLimit: "3+",
+    religion: "",
+    aboutFull:
+      "Kalam Event Management presents the Green Kidathon Stadium Run this November 2025 at Jawaharlal Nehru Stadium Ground B, Chennai, with Decathlon as the sports partner and BookNGo.live as the sponsor. The event date has been rescheduled from 2nd October due to the CM Trophy.\n\nRace Details:\nThe event features multiple categories and distances:\n* 75 meters: LKG/UKG\n* 100 meters: 1st to 4th Standards\n* 400m and 800m: 5th to 8th Standards\n* 1 km: 9th and 10th Standards\n* 2 km: Open category and walkathon\n\nSchedule:\n* Event Start Time: 6:00 AM to 7:15 AM\n* BIB Collection: Decathlon Pondy Bazaar on 1st November from 12:00 PM to 7:00 PM.\n\nAwards & Takeaways:\n* The top five winners in each category will receive trophies.\n* All participants will be awarded certificates, medals, T-shirts, water bottles, BIBs, and refreshments.\n\nImportant Note:\nParticipants are advised to arrive 30 minutes before their event for registration and must carry their school ID and proof of booking.",
+  },
+
+  // {
+  //   url: "travis-scott-circus-maximus-stadium-tour-india-mumbai",
+  //   id: 246,
+  //   RegisterLink:
+  //     "https://in.bookmyshow.com/events/travis-scott-circus-maximus-stadium-tour-india/ET00450624",
+  //   metaTitleEvent: "Travis Scott Live in Mumbai: CIRCUS MAXIMUS India Tour",
+  //   metaDescriptionEvent:
+  //     "Travis Scott, the chart-topping, GRAMMY-nominated cultural powerhouse, is set for his historic debut in India with the CIRCUS MAXIMUS tour at Mahalaxmi Racecourse, Mumbai.",
+  //   conicallinkEvent: "/eventsdetails/246",
+  //   siteLink:
+  //     "https://www.superchennai.com/events-in-chennai/travis-scott-circus-maximus-stadium-tour-india",
+  //   EventsCalendarTitle: "Travis Scott: CIRCUS MAXIMUS Tour India",
+  //   EventsCalendarContent:
+  //     "Visionary artist Travis Scott makes his long-awaited debut in India with a live concert known for its explosive performance, mosh-pit energy, and cutting-edge stage production.",
+  //   EventsCalendarMonth: "TBD 2025",
+  //   EventsCalendarTime: "TBD",
+  //   EventsCalendarCategory: "Live Concert / Hip-Hop / Music Festival",
+  //   image: "/images/HomePage-Images/Events/Newevents/travisscott2025.jpg",
+  //   link: "/events",
+  //   location: "Mahalaxmi Racecourse, Mumbai",
+  //   language: "English",
+  //   hours: "3 hours",
+  //   ageLimit: "18+",
+  //   religion: "",
+  //   aboutFull:
+  //     "Travis Scott — visionary artist, chart-topping hitmaker, and cultural powerhouse — is set to make his long-awaited debut in India with a live concert at Mumbai’s iconic Mahalaxmi Racecourse.\n\nKnown for his explosive performances, mosh-pit energy, and cutting-edge stage production, Travis brings an experience that transcends a typical live show. This will be a landmark moment for Indian hip-hop fans.\n\nThe diamond-certified, GRAMMY-nominated rapper has delivered some of the most influential albums of our time, including 'UTOPIA', the biggest-selling hip-hop release of 2023. With a global reputation for selling out stadiums and redefining live music, this historic performance promises to be one of the most anticipated concerts India has ever seen.",
+  // },
+
+  {
+    url: "munawar-faruqui-live-genz-comedy-show",
+    id: 247,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/dhando-ft-munawar-faruqui/ET00425264",
+    metaTitleEvent: "Gen-Z Laugh Riot with Munawar Faruqui Live",
+    metaDescriptionEvent:
+      "Get ready for Gen-Z energy and roaring laughter with Munawar Faruqui Live – a stand-up comedy show full of truth, humour, and unstoppable entertainment.",
+    conicallinkEvent: "/eventsdetails/247",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/munawar-faruqui-live-genz-comedy-show",
+    EventsCalendarTitle: "DHANDO ft. Munawar Faruqui",
+    EventsCalendarContent:
+      "Get ready for an unforgettable evening as Munawar Faruqui brings his razor-sharp wit and signature storytelling to your city.",
+    EventsCalendarMonth: "7 Nov 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "Stand-Up Comedy Show / Hindi / Gen - Z",
+    image: "/images/HomePage-Images/Events/Newevents/395.jpg",
+    link: "/events",
+    location: "Rasika Ranjani Sabha: Chennai",
+    language: "Hindi",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16+",
+    religion: "",
+    aboutFull:
+      "Get ready for an unforgettable evening as Munawar Faruqui brings his razor-sharp wit and signature storytelling to your city. Known for his clever humour and thought-provoking content, Munawar’s live performance promises laughter, insight, and a whole lot of entertainment. \n\nDon’t miss the chance to catch one of the most exciting voices in comedy live on stage! The show is titled 'DHANDO'.",
+  },
+  {
+    url: "praveen-kumar-8-standup-comedy",
+    id: 248,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/8-by-praveen-kumar/ET00408394",
+    metaTitleEvent: "Praveen Kumar Live – 8 Chapters of Laughter",
+    metaDescriptionEvent:
+      'Stand-up comedy live with Praveen Kumar in "8 Stories" – 8 hilarious chapters filled with humor, life tales, and Rajinikanth-inspired fun.',
+    conicallinkEvent: "/eventsdetails/248",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/praveen-kumar-8-standup-comedy",
+    EventsCalendarTitle: "8 by Praveen Kumar",
+    EventsCalendarContent:
+      "Step into the world of '8' — Praveen Kumar’s eighth stand-up special, inspired by Superstar Rajinikanth’s Baasha, featuring 8 hilarious stories from his own life.",
+    EventsCalendarMonth: "15 Nov 2025",
+    EventsCalendarTime: "4:00 PM",
+    EventsCalendarCategory: "Stand-Up Comedy / Tamil / Live Show",
+    image: "/images/HomePage-Images/Events/Newevents/396.jpg",
+    link: "/events",
+    location: "Medai - The Stage, Alwarpet: Chennai",
+    language: "Tamil",
+    hours: "1 hour 40 minutes",
+    ageLimit: "5+",
+    religion: "",
+    aboutFull:
+      "Step into the world of '8' — Praveen Kumar’s eighth stand-up special, inspired by his all-time favourite, Superstar Rajinikanth. Just as Rajinikanth divided life into eight chapters in *Baasha*, Praveen brings you eight hilarious stories from eight unique stages of his own life, filled with humour, nostalgia, and relatable moments.\n\nOne of India’s top stand-up comedians, Praveen has garnered over 15 million views on YouTube and was also seen as a judge on Amazon Prime Video’s hit comedy series *Comicstaan*. \n\nThis is a clean, family-friendly show open to audiences aged 5 and above—perfect for a fun night out with the whole gang.",
+  },
+
+  {
+    url: "sounds-of-india-vir-das-live-comedy-show",
+    id: 250,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/vir-das-sounds-of-india/ET00462287",
+    metaTitleEvent: "Sounds of India – Live Comedy Show by Vir Das",
+    metaDescriptionEvent:
+      "Vir Das brings 'Sounds of India' to life – a live comedy show that explores India's rich cultural tapestry through humor. Secure your seats now!",
+    conicallinkEvent: "/eventsdetails/250",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/sounds-of-india-vir-das-live-comedy-show",
+    EventsCalendarTitle: "Vir Das: Sounds of India",
+    EventsCalendarContent:
+      "Experience a one-of-a-kind comedy event as International Emmy-winning comedian Vir Das presents a uniquely immersive audio-visual stand-up show.",
+    EventsCalendarMonth: "29 Nov 2025",
+    EventsCalendarTime: "8:00 PM",
+    EventsCalendarCategory: "Comedy Show / English / Live Show",
+    image: "/images/HomePage-Images/Events/Newevents/397.jpg",
+    link: "/events",
+    location: "Sir Mutha Venkatasubba Rao Concert Hall: Chennai",
+    language: "English",
+    hours: "2 hours 30 minutes",
+    ageLimit: "16+",
+    religion: "",
+    aboutFull:
+      "Experience a one-of-a-kind comedy event as International Emmy-winning comedian Vir Das presents a uniquely immersive audio-visual stand-up show titled 'Sounds of India'.\n\nBlending humour with the everyday sounds of India, this special performance takes audiences on a nostalgic journey through the vibrant rhythms and subtle nuances that define life across the country. \n\nWith his signature wit and sharp observations, Vir Das transforms familiar sounds into a celebration of culture, identity, and the shared experiences that connect us all. Get ready to laugh, listen, and reconnect with your roots like never before.",
+  },
+
+  {
+    url: "paradox-kalai-magic-show",
+    id: 251,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/paradox-by-magician-kalai/ET00439561",
+    metaTitleEvent: "Paradox by Kalai – Live Magic Show with Storytelling",
+    metaDescriptionEvent:
+      "Witness Kalai’s Paradox live, a unique fusion of illusion and storytelling that takes you on an emotional and magical journey filled with surprises and enchantment.",
+    conicallinkEvent: "/eventsdetails/251",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/paradox-kalai-magic-show",
+    EventsCalendarTitle: "Paradox by Magician Kalai",
+    EventsCalendarContent:
+      "The Paradox is a thrilling, hilarious, and mind-bending experience that fuses magic, mentalism, comedy, storytelling, and a touch of philosophy by internationally acclaimed illusionist Kalai.",
+    EventsCalendarMonth: "8 Nov 2025",
+    EventsCalendarTime: "6:17 PM",
+    EventsCalendarCategory: "Magic Show / Storytelling Live / Comedy",
+    image: "/images/HomePage-Images/Events/Newevents/398.jpg",
+    link: "/events",
+    location: "Trinity Studio: Kodambakkam",
+    language: "English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "12+",
+    religion: "",
+    aboutFull:
+      "The Paradox is not your average magic show—it’s a thrilling, hilarious, and mind-bending experience that fuses magic, mentalism, comedy, storytelling, and a touch of philosophy. \n\nCreated and performed by internationally acclaimed illusionist Kalai, this one-of-a-kind show challenges your perception of reality while keeping you entertained from start to finish. As Kalai weaves impossible feats with sharp humour and audience interaction, you'll find yourself questioning what’s real and what’s illusion.\n\nWith each twist, *The Paradox* pulls you deeper into a world where the unbelievable becomes real—sometimes just inches from your eyes. Be warned: you might just become part of the act in a moment you never saw coming.\n\nHaving performed over 3,000 shows in 28 countries and amazed celebrities like Dhoni, Dulquer Salmaan, Nayanthara, and Grandmaster Anand, Kalai brings his global magic legacy back to India after an eight-year run as a headline act with Carnival Cruise Lines in the U.S. *The Paradox* is more than a show—it’s an unforgettable journey filled with laughter, awe, and mysteries that linger long after the final curtain.",
+  },
+
+  {
+    url: "pencil-power-drawing-competition-online-winter-edition-2025",
+    id: 253,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/pencil-power-drawing-competition-ppdc-online/ET00435141",
+    metaTitleEvent:
+      "Pencil Power Drawing Competition (PPDC) – Online Winter Edition 2025",
+    metaDescriptionEvent:
+      "Pencil Power Drawing Competition (PPDC) is back online! Showcase your art, win cash prizes, medals, and national recognition from the comfort of your home. Register now!",
+    conicallinkEvent: "/eventsdetails/253",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/pencil-power-drawing-competition-online-winter-edition-2025",
+    EventsCalendarTitle: "Pencil Power Drawing Competition (PPDC) - Online",
+    EventsCalendarContent:
+      "The Pencil Power Drawing Competition (PPDC) – 2025 is back with its online Winter Edition, offering aspiring artists a chance to showcase their talent and win exciting prizes.",
+    EventsCalendarMonth: "20 Nov 2025",
+    EventsCalendarTime: "Online Anytime",
+    EventsCalendarCategory: "Drawing Competition / Online Event / Art",
+    image: "/images/HomePage-Images/Events/Newevents/399.jpg",
+    link: "/events",
+    location: "Online (Across India)",
+    language: "English, Hindi",
+    hours: "Online Submissions",
+    ageLimit: "Open to all ages",
+    religion: "",
+    aboutFull:
+      'The Pencil Power Drawing Competition (PPDC) – 2025 is back with its online Winter Edition, offering aspiring artists a chance to showcase their talent, win medals, earn national recognition, and compete for exciting cash prizes — all from the comfort of home.\n\n Competition Details:\n Open to participants across India.\n  Allows submission of up to three artworks per application, anytime online.\n Last date to register is 20th November 2025.\n\n Process: \nOnce registered and the fee is paid, participants will receive a joining link via email or mobile within 2–3 working days. The competition will be conducted through the official platform shared by the organizers. For more information and to participate, simply search "Pencil Power Drawing Competition" on BookMyShow or Google.',
+  },
+
+  {
+    url: "cinderella-pop-musical-modern-fairy-tale-live-show",
+    id: 255,
+    RegisterLink: "https://in.bookmyshow.com/events/cinderella/ET00465663",
+    metaTitleEvent: "Cinderella a Pop Musical Modern Fairy Tale Live Show",
+    metaDescriptionEvent:
+      "Cinderella a Pop Musical Modern Fairy Tale Live Show featuring vibrant performances, live music, and magical family-friendly entertainment.",
+    conicallinkEvent: "/eventsdetails/255",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/cinderella-pop-musical-modern-fairy-tale-live-show",
+    EventsCalendarTitle: "Cinderella: A Pop Fairy Tale",
+    EventsCalendarContent:
+      "Experience Cinderella: A Pop Fairy Tale, a contemporary reimagining of the beloved classic by the Madras Musical Association (MMA), blending timeless storytelling with modern pop music.",
+    EventsCalendarMonth: "31 Oct 2025",
+    EventsCalendarTime: "7:00 PM",
+    EventsCalendarCategory: "A Pop Musical / Contemporary / Live Show",
+    image: "/images/HomePage-Images/Events/Newevents/401.jpg",
+    link: "/events",
+    location: "Museum Theatre: Chennai",
+    language: "English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "3+",
+    religion: "",
+    aboutFull:
+      "Experience Cinderella: A Pop Fairy Tale, a contemporary reimagining of the beloved classic presented by the Madras Musical Association (MMA). This vibrant musical blends timeless storytelling with modern pop music and dynamic choreography, creating a fresh and engaging experience for audiences of all ages.\n\nDirected by Deepa Nambiar and musically overseen by Augustine Paul, the show features the acclaimed MMA Choir performing alongside a live band, delivering powerful vocals and stunning visuals. \n\nDesigned to captivate families, theatre lovers, and music enthusiasts alike, this production offers an immersive journey that beautifully fuses classic narrative with the energy and flair of today’s musical expression.\n\nEvent Dates: Fri 31 Oct 2025 - Sat 1 Nov 2025",
+  },
+
+  {
+    url: "kavyam-dance-show-with-live-concert-in-chennai",
+    id: 256,
+    RegisterLink: "https://in.bookmyshow.com/events/kavyam/ET00466767",
+    metaTitleEvent: "Kāvyam Dance Show with Live Concert in Chennai",
+    metaDescriptionEvent:
+      "Kāvyam is a unique dance show and live concert in Chennai where movement meets music, stillness meets sound, tradition meets performance.",
+    conicallinkEvent: "/eventsdetails/256",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/kavyam-dance-show-with-live-concert-in-chennai",
+    EventsCalendarTitle: "Kāvyam Performance",
+    EventsCalendarContent:
+      "Timeless compositions by legendary masters find new life through the expressive language of Bharatanatyam in the *Kāvyam* performance, conceived and choreographed by Shijith Nambiar.",
+    EventsCalendarMonth: "1 Nov 2025",
+    EventsCalendarTime: "6:30 PM",
+    EventsCalendarCategory: "Dance Show / Classical / Live Concert Chennai",
+    image: "/images/HomePage-Images/Events/Newevents/439.jpg",
+    link: "/events",
+    location: "Bharatiya Vidya Bhavan, Mylapore: Chennai",
+    language: "Classical",
+    hours: "2 Hours",
+    ageLimit: "5+",
+    religion: "",
+    aboutFull:
+      "Kāvyam is poetry set in motion — a journey that begins within, expanding into silence while painting a spectrum of emotions and experiences. The performance features timeless compositions by legendary masters brought to life through the expressive language of Bharatanatyam.\n\nThe production is conceptualized and choreographed by Shijith Nambiar and performed by Parvathy Menon and ensemble.\n\nIt delves into the harmonious blend of sound and stillness, movement and meaning, tradition and transcendence, offering a unique dance show and live concert experience.",
+  },
+
+  {
+    url: "akshay-srivastava-live-standup-comedy-show-chennai",
+    id: 257,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/akshay-srivastava-live-standup-comedy/ET00430844",
+    metaTitleEvent: "Akshay Srivastava Live Standup Comedy Show in Chennai",
+    metaDescriptionEvent:
+      "Catch Akshay Srivastava live in Chennai with his all-new stand-up comedy show! Expect sharp wit, high-energy humor, and non-stop laughs.",
+    conicallinkEvent: "/eventsdetails/257",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/akshay-srivastava-live-standup-comedy-show-chennai",
+    EventsCalendarTitle: "Akshay Srivastava - Live Standup Comedy",
+    EventsCalendarContent:
+      "After the release of his 64-minute YouTube special 'Quiggy The Delivery App', Akshay Srivastava returns with an all-new stand-up comedy show!",
+    EventsCalendarMonth: "1 Nov 2025",
+    EventsCalendarTime: "8:00 PM",
+    EventsCalendarCategory: "Standup Comedy / Hindi, English",
+    image: "/images/HomePage-Images/Events/Newevents/440.jpg",
+    link: "/events",
+    location: "Trinity Studio: Kodambakkam",
+    language: "Hindi, English",
+    hours: "1 hour 30 minutes",
+    ageLimit: "16+",
+    religion: "",
+    aboutFull:
+      "Akshay Srivastava - Live\n\nAfter the release of his 64-minute YouTube special *Quiggy The Delivery App*, Akshay Srivastava returns with an all-new stand-up comedy show!\n\nWhether you’re feeling low, heartbroken, stressed, or simply love a clever punchline — this show is made for you. Expect sharp wit, high-energy humor, and plenty of laughs (just don’t bring the negativity along!).\n\nCome for the comedy, stay for the madness.\nGrab your tickets now and watch Akshay live on stage!",
+  },
+
+ 
+
+ 
 {
-  url: "dhak-dhak-storytelling-special-amandeep-singh",
-  id: 219,
-  RegisterLink: "",
-  metaTitleEvent: "Dhak Dhak – A Storytelling Special / Amandeep Singh / Chennai 2025",
+  url: "djembe-drums-live-circle-interactive-show",
+  id: 260,
+  RegisterLink:
+    "https://in.bookmyshow.com/events/the-drum-circle-experience-djembe-drums/ET00453218",
+  metaTitleEvent:
+    "The Drum Circle Experience – Djembe Drums: Interactive Show for All Ages",
   metaDescriptionEvent:
-    "Experience Dhak Dhak – A Storytelling Special by Amandeep Singh live in Chennai. A heartfelt evening of stories, poems, and love that celebrate life and emotions.",
-  conicallinkEvent: "/eventsdetails/219",
-  siteLink: "https://in.bookmyshow.com/events/dhak-dhak-a-storytelling-special-chennai/ET00462027",
-  EventsCalendarTitle: "Dhak Dhak – A Storytelling Special",
+    "Feel the pulse of live music with Djembe Drums in an interactive circle experience at Trinity Studio, Chennai. Designed for all ages and skill levels, no prior experience is needed to connect, create, and celebrate through rhythm.",
+  conicallinkEvent: "/eventsdetails/260",
+  siteLink:
+    "https://www.superchennai.com/events-in-chennai/djembe-drums-live-circle-interactive-show",
+  EventsCalendarTitle: "The Drum Circle Experience - Djembe Drums",
   EventsCalendarContent:
-    "Join Amandeep Singh live in Chennai for Dhak Dhak – A Storytelling Special. A heart-touching evening filled with soulful stories, poetry, and emotions of love and self-discovery.",
-  EventsCalendarMonth: "30 Nov 2025",
-  EventsCalendarTime: "6:30 PM",
-  EventsCalendarCategory: "Storytelling / Spoken Word / Live Show",
-  image: "/images/HomePage-Images/Events/Newevents/445.jpg",
+    "Join this high-energy Djembe drumming session to learn the art of African drumming. All ages welcome to connect, create, and celebrate through rhythm. Drums provided.",
+  EventsCalendarMonth: "1 Nov 2025",
+  EventsCalendarTime: "6:00 PM",
+  EventsCalendarCategory: "Instrumental / Fusion / Live Session",
+  image: "/images/HomePage-Images/Events/Newevents/441.jpg",
   link: "/events",
-  location: "Tag Auditorium, Chennai",
-  language: "English, Hindi",
-  hours: "1 hour 35 minutes",
-  ageLimit: "12+ years",
-  rleigion: "",
-    "aboutFull": "You know your heart is constantly beating, right? ‘Dhak-Dhak… Dhak-Dhak’—even as you read this, it’s beating for you. Normally, the heart never stops, but when a dream suddenly appears, it can make the rhythm falter. Just like in our rush to get through life, we often forget the small, beautiful moments of love hidden within ourselves.\n\nDhak-Dhak is a wild love story that gives you a reason to cherish yourself—a reason to dive in completely, just for you. Come with your friend, your love, and your heart, and experience the magic of Amandeep Singh, India’s OG storyteller, whose storytelling shows the value of every single breath. After multiple sold-out shows in over 30 cities across India, Australia, and the UK, Amandeep Singh is coming to your city to take you on a memorable evening full of stories, poems, and love."
-
-},
-{
-  "url": "aquatic-championship-2025",
-  "id": 220,
-  "RegisterLink": "",
-  "metaTitleEvent": "Aquatic Championship 2025 / Swimming Competition / Velachery",
-  "metaDescriptionEvent": "Join Vincera Sports Aquatic Championship 2025 at SDAT Aquatic Complex, Velachery — a full day of competitive swimming events across multiple categories and age groups.",
-  "conicallinkEvent": "/eventsdetails/220",
-  "siteLink": "https://tickets.kynhood.com/event/68c0090b1b555f7e0a1f45e6",
-  "EventsCalendarTitle": "Vincera Sports Aquatic Championship 2025",
-  "EventsCalendarContent": "Dive into an action-packed day of swimming competitions including freestyle, backstroke, breaststroke, butterfly, and medley events.",
-  "EventsCalendarMonth": "26 Oct 2025",
-  "EventsCalendarTime": "7:30 AM",
-  "EventsCalendarCategory": "Sports / Swimming",
-  "image": "/images/HomePage-Images/Events/Newevents/411.jpg",
-  "link": "/events",
-  "location": "SDAT Aquatic Complex, Velachery, Chennai",
-  "language": "",
-  "hours": "9 Hrs",
-  "ageLimit": "5+ years",
-  "religion": "",
-  "aboutFull": "Vincera Sports Aquatic Championship 2025\n\nDive into an action-packed day filled with speed, technique, and endurance!\n\nChampionship Events:\nFreestyle | Backstroke | Breaststroke | Butterfly | Individual Medley | Freestyle Relay\n\nParticipant Categories:\nBoys & Girls | Age Groups: U7 to Open\n\nAwards & Recognition:\n- Personalized Medals\n- Achievement Certificates\n- Individual Event & Overall Championship Trophies"
-},
-
-
-
-
-
-{
-  "url": "halloween-party-chennai-nightlife-2025",
-  "id": 221,
-  "RegisterLink": "",
-  "metaTitleEvent": "Halloween Party 2025: Chennai’s Ultimate Nightlife Event",
-  "metaDescriptionEvent": "Don’t miss the Halloween Party in Chennai – enjoy a night of music, costumes, spooky fun, and unforgettable nightlife events on October 31, 2025.",
-  "conicallinkEvent": "/eventsdetails/221",
-  "siteLink": "https://tickets.kynhood.com/event/68da276af143122f5b3d2732",
-  "EventsCalendarTitle": "Halloween Party",
-  "EventsCalendarContent": "Get ready for a spine-tingling yet fun-filled Halloween celebration at Muktha, No. 27, Cholamandal Artists Village, Injambakkam!",
-  "EventsCalendarMonth": "31 Oct 2025",
-  "EventsCalendarTime": "4:00 PM Onwards",
-  "EventsCalendarCategory": "Nightlife Events",
-  "image": "/images/HomePage-Images/Events/Newevents/413.jpg",
-  "link": "/events",
-  "location": "Muktha, No. 27, Cholamandal Artists Village, Injambakkam",
-  "language": "",
-  "hours": "",
-  "ageLimit": "5+ years",
-  "religion": "",
-  "aboutFull": "Get ready for a spine-tingling yet fun-filled Halloween celebration at Muktha, No. 27, Cholamandal Artists Village, Injambakkam! Join us on October 31st and November 1st, from 4 PM to 7 PM for a family-friendly extravaganza packed with festive delights.\n\nEnjoy a classic Trick-or-Treat adventure around the neighbourhood, Halloween-inspired crafts, exciting games and challenges for all ages, and a tasty assortment of spooky treats. This is one of the must-attend Nightlife Events of the season. Dress up in your most imaginative or favourite costume to fully embrace the Halloween spirit.\n\nBring your friends and family for an unforgettable evening of fun, laughter, and eerie excitement. Don’t miss this chance to make memories that are delightfully spooky and magical!"
-},
-
-
-
-{
-  "url": "chennai-cultural-namma-veetu-kalyanam-kalyana-virunthu",
-  "id": 222,
-  "RegisterLink": "",
-  "metaTitleEvent": "Namma Veetu Kalyanam – A Chennai Cultural Wedding Event",
-  "metaDescriptionEvent": "Celebrate tradition at Namma Veetu Kalyanam, a Chennai cultural wedding event with live music, rituals, and a grand kalyana virunthu feast.",
-  "conicallinkEvent": "/eventsdetails/222",
-  "siteLink": "https://tickets.kynhood.com/event/68e8d0f46f52e657e6ba9bea",
-  "EventsCalendarTitle": "Namma Veetu Kalyanam",
-  "EventsCalendarContent": "Celebrate the spirit of Kalyana Virunthu, Chennai Cultural style, at VGP Universal Kingdom.",
-  "EventsCalendarMonth": "26 Oct 2025",
-  "EventsCalendarTime": "4:00 PM",
-  "EventsCalendarCategory": "Chennai Cultural / Kalyana Virunthu",
-  "image": "/images/HomePage-Images/Events/Newevents/414.jpg",
-  "link": "/events",
-  "location": "VGP Universal Kingdom, Injambakkam",
-  "language": "",
-  "hours": "3 Hrs",
-  "ageLimit": "",
-  "religion": "",
-  "aboutFull": "At the Kannungala chapter’s fake wedding party, there might not be a bride or groom, but we guarantee the united, full-of-vibes energy when we all come together. Celebrate the spirit of Kalyana Virunthu, Chennai Cultural style!\n\nThis is your house wedding, this is our house wedding! Everyone come join the celebration!"
+  location: "Trinity Studio: Kodambakkam",
+  language: "English",
+  hours: "1 Hour",
+  ageLimit: "All age groups",
+  religion: "",
+  aboutFull:
+    "The Drum Circle Experience - Djembe Drums\n\nBy popular demand, we’re returning to your city!\nFeel the rhythm! Feel your pulse! Join us for an exciting Drum Circle experience right in your city. All drums will be available at the venue.\n\nFor the first time, you can fully immerse yourself in the jamming session and the entire experience. Whether you’re an experienced drummer or have never played a drum before, this one-hour session welcomes everyone of all ages who wants to connect, create, and celebrate through rhythm.\n\nCome and learn the art of African drumming in this high-energy djembe session. Let the beats unite us. Let’s drum, dance, and vibe together!\n\nNote: Please remove all accessories (rings or other wearables) from your fingers to avoid injury during the session. Djembe Drums Live Circle Interactive Show is a live music experience where movement meets music, stillness meets sound, tradition meets performance."
 },
 
 {
-  "url": "storytelling-workshop-t-nagar-transformation-vikram-sridhar",
-  "id": 223,
-  "RegisterLink": "",
-  "metaTitleEvent": "Storytelling Workshop: T Nagar Transformation with Vikram Sridhar",
-  "metaDescriptionEvent": "Experience the Storytelling Workshop by Vikram Sridhar — a T Nagar transformation walk blending tales of culture, people, and Chennai’s vibrant heritage.",
-  "conicallinkEvent": "/eventsdetails/223",
-  "siteLink": "https://tickets.kynhood.com/event/68ee834ba1e3f9ac7d5988eb",
-  "EventsCalendarTitle": "A Story Walk through T. Nagar",
-  "EventsCalendarContent": "Embark on a unique Storytelling Workshop — a Story Walk through T Nagar with Vikram Sridhar.",
-  "EventsCalendarMonth": "26 Oct 2025",
-  "EventsCalendarTime": "7:00 AM",
-  "EventsCalendarCategory": "Storytelling Workshop / T Nagar transformation",
-  "image": "/images/HomePage-Images/Events/Newevents/415.jpg",
-  "link": "/events",
-  "location": "Shri Balaajee Bhavan, T Nagar",
-  "language": "",
-  "hours": "1 Hr 30 Mins",
-  "ageLimit": "Open to all ages",
-  "religion": "",
-  "aboutFull": "Embark on a unique Storytelling Workshop — a Story Walk through T Nagar with Vikram Sridhar, a gifted storyteller who brings the neighborhood to life. Beginning at Balaajee Bhavan, this early morning experience offers a fresh perspective on the area—through tales drawn from its history, culture, and everyday moments.\n\nDiscover hidden gems, forgotten landmarks, and fascinating anecdotes, as each step uncovers the true spirit of T Nagar. Experience the T Nagar transformation firsthand. Ideal for heritage enthusiasts, curious explorers, and anyone looking to connect deeply with Chennai.\n\nOpen to all ages\nLimited spots available | Registration required\n\nJoin us to stroll, listen, and start your day immersed in stories that stay with you."
-},
-
-
-{
-  "url": "surf-and-slice-coastal-beach-party-ultimate-festival",
-  "id": 224,
-  "RegisterLink": "",
-  "metaTitleEvent": "Join the Surf & Slice Beach Party Festival",
-  "metaDescriptionEvent": "Catch Surf & Slice — a coastal beach party with live music, DJs, delicious food, and vibrant seaside vibes for an unforgettable festival experience by the shore.",
-  "conicallinkEvent": "/eventsdetails/224",
-  "siteLink": "https://tickets.kynhood.com/event/68da2a82f143122f5b3d2783",
-  "EventsCalendarTitle": "Surf & Slice",
-  "EventsCalendarContent": "Surf, Serve, Sunset: A Coastal Beach Party Evening at Karikatukuppam for an unforgettable experience of waves, games, and pure good vibes.",
-  "EventsCalendarMonth": "26 Oct 2025",
-  "EventsCalendarTime": "3:00 PM",
-  "EventsCalendarCategory": "Coastal Beach Party",
-  "image": "/images/HomePage-Images/Events/Newevents/422.jpg",
-  "link": "/events",
-  "location": "Karikatukuppam Beach, Kovalam",
-  "language": "",
-  "hours": "4 Hrs",
-  "ageLimit": "",
-  "religion": "",
-  "aboutFull": "Surf, Serve, Sunset: A Coastal Beach Party Evening at Karikatukuppam\n\nLooking for a refreshing way to spend your summer evening? Join us on 26th October at Karikatukuppam Beach for an unforgettable experience of waves, games, and pure good vibes at this tranquil, offbeat paradise.\n\nPerfect for both kids and the young at heart, enjoy the thrill of riding your first wave, challenge friends to a fun beach volleyball match, and indulge in freshly baked unlimited pizzas. As the sun sets, the golden hour comes alive with laughter, music, and memories you’ll want to hold onto forever.\n\nThis isn’t just another beach outing — it’s a mini getaway from the everyday. With limited spots, it’s a cozy gathering where strangers become teammates and friends. Whether you’re here for the surf, the slice, or the sunset, an unforgettable evening awaits."
-},
-
-
-{
-  "url": "chennai-music-festival-live-drumming-rhythm-experience",
-  "id": 225,
-  "RegisterLink": "",
-  "metaTitleEvent": "Chennai Music Festival - Live Drumming Event Rhythm Experience",
-  "metaDescriptionEvent": "Feel the pulse of Chennai Music Festival — enjoy live drumming, electrifying percussion, rhythm workshops, and an immersive Rhythm Experience for all music lovers.",
-  "conicallinkEvent": "/eventsdetails/225",
-  "siteLink": "https://tickets.kynhood.com/event/68e7511d01f615b5a1ae993f",
-  "EventsCalendarTitle": "Drums Circle - The Beats of Africa",
-  "EventsCalendarContent": "Prepare yourself for an energetic and immersive African Drum Circle Experience at VGP, part of the Chennai Music Festival.",
-  "EventsCalendarMonth": "26 Oct 2025",
-  "EventsCalendarTime": "6:30 PM",
-  "EventsCalendarCategory": "Chennai Music Festival / Live Drumming Event",
-  "image": "/images/HomePage-Images/Events/Newevents/424.jpg",
-  "link": "/events",
-  "location": "Heritage Beach lawn, VGP Golden Beach Ressort",
-  "language": "",
-  "hours": "2 Hrs",
-  "ageLimit": "",
-  "religion": "",
-  "aboutFull": "Feel the Beat – African Drum Circle at VGP! Part of the Chennai Music Festival\n\nPrepare yourself for an energetic and immersive evening as the African Drum Circle Experience comes to VGP! This isn’t just a performance — it’s a hands-on celebration of rhythm, unity, and community. Whether you’re an experienced drummer or picking up a drum for the first time, you’ll get to play along, feel the vibrations, and join the circle of music.\n\nWhy Participate?\n\n- Interactive & Fun: Dive into the excitement of live African drumming in a fully engaging session.\n- Mind & Mood Boost: Drumming helps relieve stress, sharpen focus, and elevate your spirits.\n- Everyone Welcome: No experience required — just bring your energy and enthusiasm!\n\nCome as you are, connect with others, and leave inspired, refreshed, and full of rhythm. Join this vibrant journey of music, wellness, and togetherness!"
-},
-
-
-{
-  "url": "dance-party-retro-music-dj-shane-chennai",
-  "id": 226,
-  "RegisterLink": "",
-  "metaTitleEvent": "Dance Party & DJ Events at Flashback Saturdays",
-  "metaDescriptionEvent": "Dance the night away at Flashback Saturdays with DJ Shane — retro music, high-energy DJ events, and the ultimate dance party experience in Chennai.",
-  "conicallinkEvent": "/eventsdetails/226",
-  "siteLink": "https://tickets.kynhood.com/event/68e6153101f615b5a1ae8cb0",
-  "EventsCalendarTitle": "Flashback Saturdays Ft. DJ Shane",
-  "EventsCalendarContent": "Brace yourself for an electrifying Retro Dance Party night at Hard Rock Cafe Chennai with DJ Shane.",
-  "EventsCalendarMonth": "25 Oct 2025",
-  "EventsCalendarTime": "8:30 PM",
-  "EventsCalendarCategory": "Retro Dance Party",
-  "image": "/images/HomePage-Images/Events/Newevents/428.jpg",
-  "link": "/events",
-  "location": "HardRockCafe, Nungambakkam",
-  "language": "",
-  "hours": "2 Hrs",
-  "ageLimit": "21+ years",
-  "religion": "",
-  "aboutFull": "Flashback Saturdays with DJ Shane\n\nBrace yourself for an electrifying night where every beat hits just right and every track feels brand new! Hard Rock Cafe Chennai presents DJ Shane, delivering a high-energy musical journey filled with iconic hits and non-stop grooves. Experience a Retro Dance Party like no other!\n\nFrom Bollywood mashups to international chart-toppers, DJ Shane will spin a vibrant mix of tracks that’ll keep you on your feet all night. Expect surprise drops, reimagined favorites, and a contagious energy that grows with every beat."
-},
-
-
-{
-  "url": "acting-workshop-fun-theatre-experience-for-kids",
-  "id": 227,
-  "RegisterLink": "",
-  "metaTitleEvent": "Acting Workshop - Fun Theatre Experience for Kids",
-  "metaDescriptionEvent": "Step into the world of theatre at this Acting Workshop – an immersive kids’ experience filled with games, acting exercises, and creative learning.",
-  "conicallinkEvent": "/eventsdetails/227",
-  "siteLink": "https://tickets.kynhood.com/event/68dbefd832d15176f5c9a739",
-  "EventsCalendarTitle": "Children Theatre - Workshop",
-  "EventsCalendarContent": "A theatre workshop for children focusing on building self-confidence, communication skills, and creative expression through performance.",
-  "EventsCalendarMonth": "26 Oct 2025",
-  "EventsCalendarTime": "9:00 AM",
-  "EventsCalendarCategory": "Acting Workshop",
-  "image": "/images/HomePage-Images/Events/Newevents/438.jpg",
-  "link": "/events",
-  "location": "IDAM - The Art and Cultural Space",
-  "language": "",
-  "hours": "4 Hrs",
-  "ageLimit": "5+ years",
-  "religion": "",
-  "aboutFull": "Theatre provides a unique platform for children to express themselves freely. It helps them conquer fears, develop patience, foster respect and responsibility, enhance communication skills, and much more. Whether through storytelling, addressing an audience, or embodying a character, theatre opens doors to endless possibilities. This Acting Workshop will guide them through each step of performance.\n\nFacial Expression:\nChildren will explore a wide range of emotions—from happiness and anger to surprise and disgust—and learn how expressions influence others.\n\nBody Movement:\nUsing gestures and movement, they will discover the importance of non-verbal communication in performance and storytelling.\n\nVoice:\nParticipants will practice using their voices effectively, from natural sounds to articulate speech, building confidence and creativity.\n\nStorytelling:\nThrough oral narration, children will develop skills to craft and share engaging stories.\n\nWorkshop Benefits:\n- Enhanced communication and stage presence\n- Boosted self-confidence through collaborative activities\n- Exposure to the excitement and energy of drama\n- Opportunities for creative expression through writing and performance\n- Practical techniques to create and tell compelling stories"
-},
-
-// NEW NOV EVENTS##############
-
-{
-  "url": "madras-driven-og-motorsports-drift-night-and-car-meet-2-presented-by-team-bad-villain-nov8-2025-buy-tickets",
-  "id": 228,
-  "RegisterLink": "https://www.district.in/events/madras-driven-og-motorsports-drift-night-and-car-meet-2-presented-by-team-bad-villain-nov8-2025-buy-tickets",
-  "metaTitleEvent": "Madras Driven, OG Motorsports, & Team Bad Villain - Drift Night 2",
-  "metaDescriptionEvent": "Following the huge success of Drift Night 1, this sequel turns Phoenix Marketcity Chennai into an ultimate motorsport playground with pro drift displays, a premium car showcase, and a live performance by rapper/artist Asal Kolaar.",
-  "conicallinkEvent": "/eventsdetails/228",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/madras-driven-drift-night-motor-nights",
-  "EventsCalendarTitle": "Madras Motor Nights / Drift Night 2",
-  "EventsCalendarContent": "Chennai’s most exciting Drift Night with pro drift displays, a premium car showcase, live music, and adrenaline-pumping activities.",
-  "EventsCalendarMonth": "8 Nov 2025",
-  "EventsCalendarTime": "7:00 PM",
-  "EventsCalendarCategory": "Motorsport / Car Meet",
-  "image": "/images/HomePage-Images/Events/Newevents/403.jpg",
-  "link": "/events",
-  "location": "L2 & L3, Palladium Parking, Phoenix Marketcity, Chennai",
-  "language": "",
-  "hours": "3 Hrs",
-  "ageLimit": "",
-  "religion": "",
-  "aboutFull": "Following the huge success of Drift Night 1, this sequel turns Phoenix Marketcity Chennai into an ultimate motorsport playground. For the first time ever, the event features rapper/artist Asal Kolaar live on stage. The evening blends thrilling drift demonstrations with a showcase of premium cars, offering an engaging experience for both car enthusiasts and casual visitors. Expect an evening filled with tyre smoke, roaring engines, and unforgettable moments.\n\n**Premium Car Showcase** – Over 100 carefully selected sports cars, supercars, and luxury vehicles will be on display. From timeless classics to the latest engineering marvels, this collection celebrates top-tier automotive craftsmanship.\n\n**Pro Drift Display** – Watch skilled drivers perform precision drifting, demonstrating their mastery over speed, control, and technique. This edition features even more cars and professional drifters than before.\n\n**Drift Ride Experience** – Experience the thrill up close by riding shotgun with professional drivers. Feel the forces, smell the burning rubber, and see why drifting is considered the art of automotive performance.\n\n**Burnout Arena** – A special zone where raw power meets asphalt. High-performance vehicles put on controlled burnout displays, creating an electrifying spectacle for the audience.\n\n**Fun & Activities:**\n- Live music and DJ performances by Asal Kolaar, DJ Sne, Tamizh Aadhavan, and more\n- Hands-on racing simulators\n- Drift go-karts, pitstop challenges, and interactive games\n- Stalls from top automotive brands\n- Meet professional drivers and social media influencers\n- Food and beverage counters\n- Dedicated zones for photography and content creation"
-},
-
-// {
-//   "url": "darpan-oct16-2025-buy-tickets",
-//   "id": 229,
-//   "RegisterLink": "https://www.district.in/events/darpan-oct16-2025-buy-tickets",
-//   "metaTitleEvent": "Darpan – A Soulful Classical Concert Experience",
-//   "metaDescriptionEvent": "Experience Darpan, an evening of reflection, devotion, and musical storytelling featuring maestros Ojas Adhiya and Momin Khan, blending classical traditions with contemporary expression.",
-//   "conicallinkEvent": "/eventsdetails/229",
-//   "siteLink": "https://www.superchennai.com/events-in-chennai/classical-music-darpan-soulful-concert-chennai-2025",
-//   "EventsCalendarTitle": "Classical Music Darpan - Soulful Concert",
-//   "EventsCalendarContent": "An evening devoted to musical storytelling and devotion, featuring maestros Ojas Adhiya and Momin Khan, blending classical and contemporary expressions.",
-//   "EventsCalendarMonth": "16 Oct 2025",
-//   "EventsCalendarTime": "7:00 PM",
-//   "EventsCalendarCategory": "Classical Music",
-//   "image": "/images/HomePage-Images/Events/Newevents/darpan-concert.jpg",
-//   "link": "/events",
-//   "location": "Museum Theatre, Chennai",
-//   "language": "Indian Classical",
-//   "hours": "2 Hrs",
-//   "ageLimit": "",
-//   "religion": "",
-//   "aboutFull": "Darpan returns with a refreshed vision — an evening devoted to reflection, devotion, and the art of musical storytelling. Curated by the Vinay Verma Collective, this edition features maestros Ojas Adhiya and Momin Khan, blending the depth of classical traditions with contemporary expression.\n\nIn collaboration with Damerla Usha and Saha Records, Darpan 2.0 pays homage to our musical heritage and the gurus who shaped it. Enter a world where sound inspires introspection and timeless tradition meets modern creativity.\n\nGuests are requested to be seated by 6:45 PM, with the performance beginning at 7 PM IST."
-// },
-
-{
-  "url": "hey-kadhaleyy-hey-minaleyyy-nov9-2025-buy-tickets",
-  "id": 230,
-  "RegisterLink": "https://www.district.in/events/hey-kadhaleyy-hey-minaleyyy-nov9-2025-buy-tickets",
-  "metaTitleEvent": "Hey Minaleyyy: Haricharan & Sireesha Bhagavathula Live Music Show",
-  "metaDescriptionEvent": "O2 Events presents 'Hey Minaleyyy,' a grand musical evening in Chennai celebrating 20 years of Haricharan’s journey, featuring Sireesha Bhagavathula and the Drums Kumaran Collective.",
-  "conicallinkEvent": "/eventsdetails/230",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/hey-minaleyyy-live-music-show-chennai-nov9-2025",
-  "EventsCalendarTitle": "Hey Minaleyyy - Haricharan Live Concert",
-  "EventsCalendarContent": "A memorable musical evening celebrating 20 years of **Haricharan's** journey, featuring **Sireesha Bhagavathula** and the **Drums Kumaran Collective**, performing iconic romantic hits.",
-  "EventsCalendarMonth": "9 Nov 2025",
-  "EventsCalendarTime": "6:30 PM",
-  "EventsCalendarCategory": "Live Music Show / Romantic Songs",
-  "image": "/images/HomePage-Images/Events/Newevents/406.jpg",
-  "link": "/events",
-  "location": "Music Academy, Chennai",
-  "language": "Tamil",
-  "hours": "2.5 Hrs",
-  "ageLimit": "",
-  "religion": "",
-  "aboutFull": "O2 Events proudly presents a memorable musical evening in Chennai, celebrating 20 glorious years of **Haricharan’s** journey — one of the most beloved voices of South Indian cinema.\n\nThe stage will be illuminated by Haricharan’s soulful performances, complemented by the captivating vocals of **Sireesha Bhagavathula**, renowned for her mesmerizing film and concert renditions. Adding dynamic energy to the night, the **Drums Kumaran Collective** will dazzle the audience with their electrifying rhythms and fusion beats.\n\nThis grand celebration promises a harmonious mix of melody, rhythm, and nostalgia, taking the audience on a two-decade-long musical journey. Expect an enchanting evening of iconic hits, collaborative performances, and a heartfelt tribute to Haricharan’s extraordinary artistry."
+  url: "gopi-funchurian-tamil-stand-up-comedy-badava-gopi",
+  id: 261,
+  RegisterLink:
+    "https://in.bookmyshow.com/events/gopi-funchurian-by-badava-gopi/ET00389499",
+  metaTitleEvent:
+    "Gopi Funchurian by Badava Gopi | Live Tamil Stand-Up & Mimicry Show",
+  metaDescriptionEvent:
+    "Come watch Badava Gopi live in Chennai! 'Gopi Funchurian' is a Tamil stand-up comedy show featuring spectacular mimicry, hilarious jokes, and impressions that promise a rib-tickling, laughter-filled extravaganza.",
+  conicallinkEvent: "/eventsdetails/261",
+  siteLink:
+    "https://www.superchennai.com/events-in-chennai/gopi-funchurian-tamil-stand-up-comedy-badava-gopi",
+  EventsCalendarTitle: "Gopi Funchurian By Badava Gopi",
+  EventsCalendarContent:
+    "A rib-tickling Tamil stand-up extravaganza featuring Badava Gopi's spectacular mimicry and hilarious, WOW-certified jokes. Don't miss this fun-packed show!",
+  EventsCalendarMonth: "2 Nov 2025",
+  EventsCalendarTime: "3:30 PM",
+  EventsCalendarCategory: "Comedy / Stand-Up / Mimicry",
+  image: "/images/HomePage-Images/Events/Newevents/442.jpg",
+  link: "/events",
+  location: "Medai - The Stage, Alwarpet: Chennai",
+  language: "Tamil",
+  hours: "1 hour 30 minutes",
+  ageLimit: "12yrs +",
+  religion: "",
+  aboutFull:
+    "Gopi Funchurian By Badava Gopi\n\nCome witness Badavagopi’s spectacular mimicry performance LIVE and be mesmerized by the sounds and effects filling the hall. Enjoy hilarious jokes and impressions that were WOW-certified by former President APJ Gopi Funchurian. This rib-tickling extravaganza, packed with fun and entertainment, is a must-see you definitely shouldn’t miss!\n\nBadava Gopi brings Gopi Funchurian live—a Tamil stand-up comedy show packed with satire, mimicry and laughter that keeps you entertained from start to finish."
 },
 
 {
-  "url": "kalanjali-2025-nov1-2025-buy-tickets",
-  "id": 231,
-  "RegisterLink": "https://www.district.in/events/kalanjali-2025-nov1-2025-buy-tickets",
-  "metaTitleEvent": "Kalanjali 2025: Performing Arts Festival with Santoor Maestro Rahul Sharma",
-  "metaDescriptionEvent": "Heartfulness International School – Omega Branch presents Kalanjali 2025, their annual festival of performing arts, featuring a special performance by renowned Santoor virtuoso, Shri Rahul Sharma.",
-  "conicallinkEvent": "/eventsdetails/231",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/kalanjali-2025-vani-mahal-live-music-gigs",
-  "EventsCalendarTitle": "Kalanjali 2025 - Performing Arts Festival",
-  "EventsCalendarContent": "Annual festival of performing arts by Heartfulness International School, featuring a special Santoor performance by renowned maestro Shri Rahul Sharma.",
-  "EventsCalendarMonth": "1 Nov 2025",
-  "EventsCalendarTime": "5:30 PM",
-  "EventsCalendarCategory": "Classical / Performing Arts",
-  "image": "/images/HomePage-Images/Events/Newevents/407.jpg",
+  "url": "aqua-sound-bath-immersion-water-sound-healing",
+  "id": 262,
+  "RegisterLink": "https://in.bookmyshow.com/events/aqua-sound-bath-immersion/ET00466420",
+  "metaTitleEvent": "Aqua Sound Bath Immersion and Water Sound Healing in Chennai",
+  "metaDescriptionEvent": "Dive into a unique floating sound bath experience in Chennai. Aqua Sound Bath Immersion uses the restorative blend of water, singing bowls, and gongs for deep relaxation, emotional release, and a nervous system reset.",
+  "conicallinkEvent": "/eventsdetails/262",
+  "siteLink": "https://www.superchennai.com/events-in-chennai/aqua-sound-bath-immersion-water-sound-healing",
+  "EventsCalendarTitle": "Aqua Sound Bath Immersion – A Floating Path to Wellness",
+  "EventsCalendarContent": "Experience a one-of-a-kind floating sound bath where water and the resonance of singing bowls and gongs combine for profound relaxation and energy rebalancing.",
+  "EventsCalendarMonth": "2 Nov 2025",
+  "EventsCalendarTime": "2:00 PM",
+  "EventsCalendarCategory": "Wellness / Sound Healing / Meditation",
+  "image": "/images/HomePage-Images/Events/Newevents/443.jpg",
   "link": "/events",
-  "location": "Vani Mahal, Chennai",
-  "language": "Indian Classical",
-  "hours": "2.5 Hrs",
-  "ageLimit": "",
-  "religion": "",
-  "aboutFull": "The students of Heartfulness International School – Omega Branch proudly present Kalanjali 2025, the annual festival of performing arts that honors heritage, creativity, and timeless excellence.\n\nMore than just a showcase, Kalanjali reflects our commitment to holistic education. Led by students, the festival immerses young minds in the performing arts, encourages leadership, and strengthens their connection to India’s rich cultural traditions.\n\nThis year, Kalanjali will shine brighter than ever with a special performance by the renowned **Shri Rahul Sharma**, Santoor virtuoso and son of the legendary Padma Vibushan Pandit Shivkumar Sharma, promising an unforgettable evening celebrating the essence of Indian arts and culture."
-},
-
-{
-  "url": "the-f16s-nov15-2025-buy-tickets",
-  "id": 232,
-  "RegisterLink": "https://www.district.in/events/the-f16s-nov15-2025-buy-tickets",
-  "metaTitleEvent": "The F16s Live in Chennai - Indie Rock Concert",
-  "metaDescriptionEvent": "Catch The F16s, torchbearers of Indian indie rock, live at Hard Rock Cafe Chennai. Experience their striking soundscape, rich guitar melodies, and soulful voice of Josh Fernandez.",
-  "conicallinkEvent": "/eventsdetails/232",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/the-f16s-indie-rock-concert",
-  "EventsCalendarTitle": "The F16s - Indie Rock Concert",
-  "EventsCalendarContent": "An electrifying live music performance by The F16s, a leading band in the Indian independent music scene, known for their indie-rock energy and heartfelt songwriting.",
-  "EventsCalendarMonth": "15 Nov 2025",
-  "EventsCalendarTime": "9:00 PM",
-  "EventsCalendarCategory": "Indie Rock / Live Music",
-  "image": "/images/HomePage-Images/Events/Newevents/408.jpg",
-  "link": "/events",
-  "location": "Hard Rock Cafe Chennai, Chennai",
+  "location": "Blues by Tiki Taka: Chennai",
   "language": "English",
-  "hours": "2 Hrs",
-  "ageLimit": "",
+  "hours": "1 Hour",
+  "ageLimit": "8yrs +",
   "religion": "",
-  "aboutFull": "The music of **The F16s** weaves a striking soundscape, defined by rich guitar melodies, reflective lyricism, and the soulful voice of Josh Fernandez. Their tracks explore themes of modern life, love, and identity, resonating deeply with a generation in search of genuine musical expression.\n\nAs torchbearers of a new wave in Indian independent music, The F16s blend heartfelt songwriting with contemporary indie-rock energy. Their relentless pursuit of artistic evolution and their gift for stirring emotion through music have earned them a loyal following and critical praise. On the global alternative stage, The F16s continue to rise as a powerful presence."
+  "aboutFull": "Aqua Sound Bath Immersion – A Floating Path to Wellness\n\nImmerse yourself in a one-of-a-kind floating sound bath, where the restorative qualities of water blend with the calming resonance of singing bowls and gongs.\n\nDrift effortlessly as soothing vibrations flow through your body, quieting the mind, releasing emotional tensions, and rebalancing your energy. The water naturally enhances each sound, allowing vibrations to reach deeper layers, fostering profound relaxation, emotional release, and a reset for your nervous system.\n\nAqua Sound Bath Immersion is a water sound healing experience that harmonizes your energy through floating vibrations, singing bowls, and restorative sound therapy."
+},
+
+
+{
+  "url": "gokul-kumar-live-stand-up-comedy",
+  "id": 263,
+  "RegisterLink": "http://in.bookmyshow.com/events/gokul-kumar-live/ET00447027",
+  "metaTitleEvent": "Gokul Kumar Live – Stand Up Comedy Show in Chennai",
+  "metaDescriptionEvent": "Catch Gokul Kumar Live in Chennai for a laughter-packed stand-up comedy show! Expect witty, fresh, and hilarious observations about everyday life from the star comedian.",
+  "conicallinkEvent": "/eventsdetails/263",
+  "siteLink": "https://www.superchennai.com/events-in-chennai/gokul-kumar-live-stand-up-comedy",
+  "EventsCalendarTitle": "Gokul Kumar - Live Stand Up Comedy",
+  "EventsCalendarContent": "Following his successful standup videos, Gokul Kumar takes his fresh, witty, and laugh-out-loud observations on a nationwide tour. Catch him live!",
+  "EventsCalendarMonth": "15 Nov 2025",
+  "EventsCalendarTime": "6:00 PM",
+  "EventsCalendarCategory": "Comedy / Stand-Up",
+  "image": "/images/HomePage-Images/Events/Newevents/446.jpg",
+  "link": "/events",
+  "location": "Punch - Unpaid Therapist: Chennai",
+  "language": "English",
+  "hours": "1 Hour",
+  "ageLimit": "16yrs +",
+  "religion": "",
+  "aboutFull": "Gokul Kumar - Live\n\nFollowing the success of his standup videos, Gokul Kumar is now taking his comedy on a nationwide tour. His performance is packed with witty, fresh, and laugh-out-loud observations about everyday life. Don’t miss the chance to see him live—he promises that his humor is even more hilarious in person.\n\nEnjoy a laughter-packed evening with Gokul Kumar Live, the ultimate stand up comedy Chennai event. Fresh jokes, sharp humor, and live entertainment await!"
 },
 
 {
-  "url": "ashwin-srinivas-live-english-standup-comedy-show-feb9-2025-buy-tickets",
-  "id": 233,
-  "RegisterLink": "https://www.district.in/events/ashwin-srinivas-live-english-standup-comedy-show-feb9-2025-buy-tickets",
-  "metaTitleEvent": "Ashwin Srinivas Live - English Stand-Up Comedy Show",
-  "metaDescriptionEvent": "Get ready for a laughter riot! Ashwin Srinivas is bringing one full hour of English stand-up comedy to Trinity Studio with sharp punchlines and hilarious, relatable stories.",
-  "conicallinkEvent": "/eventsdetails/233",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/ashwin-srinivas-english-standup-comedy-chennai-2025",
-  "EventsCalendarTitle": "Ashwin Srinivas Live - Stand-Up Comedy",
-  "EventsCalendarContent": "An hour-long English stand-up comedy show by Ashwin Srinivas, featuring sharp punchlines, relatable stories, and hilarious takes on everyday life.",
+  "url": "thanga-magan-50-music-show-celebrating-superstar",
+  "id": 264,
+  "RegisterLink": "https://in.bookmyshow.com/events/thanga-magan-50-celebrating-superstar/ET00466446",
+  "metaTitleEvent": "Thanga Magan 50 – Music Show Celebrating Superstar Rajinikanth in Chennai",
+  "metaDescriptionEvent": "Celebrate Superstar Rajinikanth's 50 years of cinema with 'Thanga Magan 50,' a grand musical tribute featuring iconic songs revived by SPB Charan and Yugendran Vasudevan, with music by Udhaya Ragam U.K. Murali.",
+  "conicallinkEvent": "/eventsdetails/264",
+  "siteLink": "https://www.superchennai.com/events-in-chennai/thanga-magan-50-music-show-celebrating-superstar",
+  "EventsCalendarTitle": "Thanga Magan 50: Celebrating Superstar Rajinikanth",
+  "EventsCalendarContent": "An unforgettable musical tribute to Superstar Rajinikanth's 50 years in cinema, featuring iconic songs revived by SPB Charan and Yugendran Vasudevan, and led by Udhaya Ragam U.K. Murali.",
+  "EventsCalendarMonth": "16 Nov 2025",
+  "EventsCalendarTime": "5:00 PM",
+  "EventsCalendarCategory": "Music Show / Tribute / Film Music",
+  "image": "/images/HomePage-Images/Events/Newevents/447.jpg",
+  "link": "/events",
+  "location": "Kamarajar Arangam: Chennai",
+  "language": "Tamil",
+  "hours": "5 Hours",
+  "ageLimit": "5yrs +",
+  "religion": "",
+  "aboutFull": "Name: Thanga Magan 50: Celebrating Superstar\n\nSUPERSTAR RAJINIKANTH’S 50 YEARS OF CINEMATIC GLORY – Celebrate a journey of unmatched style, charisma, timeless hits, and unstoppable magic!\n\nBe part of an unforgettable musical tribute as SPB Charan and Yugendran Vasudevan revive the iconic songs of Thalaivar, bringing alive the energy, nostalgia, and spirit that have defined generations. Relive the evergreen melodies of SPB and Malaysia Vasudevan, legends who shared a deep bond with Rajinikanth and sang his most celebrated hits.\n\nThe spectacular orchestra is led by Udhaya Ragam U.K. Murali and his extraordinary team, promising an immersive live experience.\n\nGet ready to cheer, whistle, and revel in the magic LIVE ON STAGE!\nONE STAGE. COUNTLESS MEMORIES. PURE RAJINI POWER!\n\nBOOK YOUR TICKETS NOW – DON’T MISS OUT! Thanga Magan 50 brings a live music show in Chennai honoring the Superstar’s legacy with legendary songs, star performers and a grand musical tribute."
+},
+
+
+{
+  "url": "hindi-music-concert-nightingale-sisters",
+  "id": 265,
+  "RegisterLink": "https://in.bookmyshow.com/events/nightingale-sisters/ET00466402",
+  "metaTitleEvent": "Nightingale Sisters – Live Hindi Music Concert in Chennai (Lata & Asha Tribute)",
+  "metaDescriptionEvent": "ABBAS CULTURAL presents 'Nightingale Sisters,' a soulful Hindi music concert in Chennai paying tribute to the legendary voices of Lata Mangeshkar & Asha Bhonsle. Features popular singers and Udhaya Ragam U.K. Murali's grand orchestra.",
+  "conicallinkEvent": "/eventsdetails/265",
+  "siteLink": "https://www.superchennai.com/events-in-chennai/hindi-music-concert-nightingale-sisters",
+  "EventsCalendarTitle": "NIGHTINGALE SISTERS - A Soulful Tribute",
+  "EventsCalendarContent": "A soulful tribute celebrating the legendary voices of Lata Mangeshkar & Asha Bhonsle, featuring popular and talented singers, accompanied by Udhaya Ragam U.K. Murali's grand orchestra.",
+  "EventsCalendarMonth": "9 Nov 2025",
+  "EventsCalendarTime": "6:00 PM",
+  "EventsCalendarCategory": "Music Concert / Bollywood / Tribute",
+  "image": "/images/HomePage-Images/Events/Newevents/448.jpg",
+  "link": "/events",
+  "location": "Vani Mahal: Chennai",
+  "language": "Hindi",
+  "hours": "3 Hours",
+  "ageLimit": "5yrs +",
+  "religion": "",
+  "aboutFull": "Event Name: NIGHTINGALE SISTERS\n\nABBAS CULTURAL PROUDLY PRESENTS NIGHTINGALE SISTERS: A soulful tribute celebrating the legendary voices of LATA MANGESHKAR & ASHA BHONSLE - Two Icons who defined generations of Indian Music. The event will take audiences on a melodious journey through their timeless classics, blending golden era nostalgia with heartfelt performances by Popular and Talented singers SHRUTI BHIDE, SHIFA ANSARI, SAMANVITHA SHARMA, ANUSHA KARTHICK and SMRITI BANERJEE.\n\nThrough songs, stories and stunning renditions, Nightingale Sisters honors their unmatched contribution to Indian Cinema and the emotions they have stirred in millions of hearts!!! The Grand orchestration for the event is by UDHAYA RAGAM U.K.MURALI's band of wonderful musicians.\n\nDON'T MISS THIS EVERGREEN EVENING!! GRAB YOUR TICKETS NOW!!! Nightingale Sisters bring a live Hindi music concert to Chennai, celebrating evergreen hits with a stunning orchestra and powerful vocals."
+},
+{
+  "url": "arvind-sunder-live-best-comedy-show",
+  "id": 265,
+  "RegisterLink": "https://in.bookmyshow.com/events/arvind-sundar/ET00426453",
+  "metaTitleEvent": "Arvind Sunder Live – Best Comedy Show in Chennai | Hindi & English",
+  "metaDescriptionEvent": "Catch Arvind Sunder live in Chennai for his new solo stand-up show, featuring a blend of sharp observations, personal storytelling, and carefully curated, tested jokes in Hindi and English.",
+  "conicallinkEvent": "/eventsdetails/265",
+  "siteLink": "https://www.superchennai.com/events-in-chennai/arvind-sunder-live-best-comedy-show",
+  "EventsCalendarTitle": "Arvind Sunder - Live Stand Up Comedy",
+  "EventsCalendarContent": "Arvind Sunder returns with a solo show blending storytelling and sharp observations, crafted from 8+ years of experience. Guaranteed laughter awaits!",
   "EventsCalendarMonth": "8 Nov 2025",
   "EventsCalendarTime": "8:00 PM",
-  "EventsCalendarCategory": "Stand-Up Comedy",
-  "image": "/images/HomePage-Images/Events/Newevents/464.jpg",
+  "EventsCalendarCategory": "Comedy / Stand-Up",
+  "image": "/images/HomePage-Images/Events/Newevents/449.jpg",
   "link": "/events",
-  "location": "Trinity Studio, Kodambakkam, Chennai",
-  "language": "English",
-  "hours": "1 Hr",
-  "ageLimit": "",
+  "location": "Punch - Unpaid Therapist: Chennai",
+  "language": "Hindi, English",
+  "hours": "1 Hour",
+  "ageLimit": "16yrs +",
   "religion": "",
-  "aboutFull": "Ashwin Srinivas is bringing one full hour of jokes and laughter to Trinity Studio – the perfect place to enjoy your favorite acts. Get ready for a laughter riot that will leave you grinning ear to ear.\n\nExpect sharp punchlines, relatable stories, and hilarious takes on everyday life. Whether you’re a comedy lover or just looking for a fun night out, this show guarantees non-stop entertainment. Come down, sit back, and let the good vibes roll!"
-},
-
-{
-  "url": "nyima-tour-chennai-nov15-2025-buy-tickets",
-  "id": 234,
-  "RegisterLink": "https://www.district.in/events/nyima-tour-chennai-nov15-2025-buy-tickets",
-  "metaTitleEvent": "Nyima Tour Chennai - Live Indie Music by Indian Female Artists",
-  "metaDescriptionEvent": "Femme Music presents the 'Nyima Tour' in Chennai, celebrating the release of their debut compilation 'Nyima Vol. I' with live performances by Anjali Manoharan, Tabitha Kagoo, and Sahana Naresh.",
-  "conicallinkEvent": "/eventsdetails/234",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/nyima-live-music-tour-2025",
-  "EventsCalendarTitle": "Nyima Tour - Indie Live Music Night",
-  "EventsCalendarContent": "A live music night featuring talented Indian female indie artists **Anjali Manoharan**, **Tabitha Kagoo**, and **Sahana Naresh**, presented by Femme Music to celebrate the 'Nyima Vol. I' compilation.",
-  "EventsCalendarMonth": "15 Nov 2025",
-  "EventsCalendarTime": "6:30 PM",
-  "EventsCalendarCategory": "Indie Music / Live Music",
-  "image": "/images/HomePage-Images/Events/Newevents/409.jpg",
-  "link": "/events",
-  "location": "Vinyl & Brew, Chennai",
-  "language": "English",
-  "hours": "3 Hrs",
-  "ageLimit": "",
-  "religion": "",
-  "aboutFull": "Femme Music is an independent record label focused on nurturing and promoting Indian female indie artists on both national and international stages. Our vision is to reshape how India’s music scene is perceived by spotlighting English-language, women-led indie music and offering artists a sustainable career path in the industry.\n\nTo celebrate the release of our debut 11-track compilation ‘Nyima Vol. I’ on 28th November, we’re heading out on a 4-city tour featuring the extraordinary talent showcased on the album.\n\n**Chennai Lineup**\n1. Anjali Manoharan – A gifted vocalist and multi-instrumentalist, admired for her improvisational flair, songwriting strength, and compositional ability.\n2. **Tabitha Kagoo** – A Goa-based singer-songwriter, recognized for her raw yet tender sound and deeply personal songwriting.\n3. Sahana Naresh – Born in Chennai, a multilingual, genre-blending singer-songwriter and trained Hindustani classical vocalist. Her songs touch on themes of shared humanity, social realities, and the courage to live truthfully."
+  "aboutFull": "Arvind Sunder - Live\n\nArvind Sunder returns with his solo performance following his hit “Delhi Vs Bangalore,” which has amassed over 600,000 views on YouTube and more than 5 million on Instagram.\n\nThis show blends storytelling, sharp observations, and personal experiences into a full hour of laughter. Crafted from over 8 years of experience, it promises a truly unique and entertaining experience.\n\nThree Reasons to Attend:\n\n1. Carefully Curated Jokes – Every joke has been tested in three different cities and perfected for maximum laughs.\n\n2. Guaranteed Laughter – Who doesn’t want a hearty dose of fun?\n\n3. A Unique Experience – An hour of comedy you won’t find anywhere else.\n\nArvind Sunder brings the best comedy show experience to Chennai with a power-packed live show full of fun, wit, and laughter. Get your tickets now!"
 },
 
 
 
 
+// PUT HERE NEW WVWNTS 
 
 
 
 
-
-
-
-
+  //##############################################################
+  // ##################   OLD EVENTS  ############################
+  // #############################################################
   {
     clickHere: "hello everyOne",
     url: "chennai-esports-global-championship-(CEGC)-2025",

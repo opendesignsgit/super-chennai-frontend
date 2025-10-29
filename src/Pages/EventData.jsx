@@ -7412,9 +7412,8 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
   "hours": "5 Hours",
   "ageLimit": "5yrs +",
   "religion": "",
-  "aboutFull": "Name: Thanga Magan 50: Celebrating Superstar\n\nSUPERSTAR RAJINIKANTH’S 50 YEARS OF CINEMATIC GLORY – Celebrate a journey of unmatched style, charisma, timeless hits, and unstoppable magic!\n\nBe part of an unforgettable musical tribute as SPB Charan and Yugendran Vasudevan revive the iconic songs of Thalaivar, bringing alive the energy, nostalgia, and spirit that have defined generations. Relive the evergreen melodies of SPB and Malaysia Vasudevan, legends who shared a deep bond with Rajinikanth and sang his most celebrated hits.\n\nThe spectacular orchestra is led by Udhaya Ragam U.K. Murali and his extraordinary team, promising an immersive live experience.\n\nGet ready to cheer, whistle, and revel in the magic LIVE ON STAGE!\nONE STAGE. COUNTLESS MEMORIES. PURE RAJINI POWER!\n\nBOOK YOUR TICKETS NOW – DON’T MISS OUT! Thanga Magan 50 brings a live music show in Chennai honoring the Superstar’s legacy with legendary songs, star performers and a grand musical tribute."
+  "aboutFull": " Thanga Magan 50: Celebrating Superstar\n\nSUPERSTAR RAJINIKANTH’S 50 YEARS OF CINEMATIC GLORY – Celebrate a journey of unmatched style, charisma, timeless hits, and unstoppable magic!\n\nBe part of an unforgettable musical tribute as SPB Charan and Yugendran Vasudevan revive the iconic songs of Thalaivar, bringing alive the energy, nostalgia, and spirit that have defined generations. Relive the evergreen melodies of SPB and Malaysia Vasudevan, legends who shared a deep bond with Rajinikanth and sang his most celebrated hits.\n\nThe spectacular orchestra is led by Udhaya Ragam U.K. Murali and his extraordinary team, promising an immersive live experience.\n\nGet ready to cheer, whistle, and revel in the magic LIVE ON STAGE!\nONE STAGE. COUNTLESS MEMORIES. PURE RAJINI POWER!\n\nBOOK YOUR TICKETS NOW – DON’T MISS OUT! Thanga Magan 50 brings a live music show in Chennai honoring the Superstar’s legacy with legendary songs, star performers and a grand musical tribute."
 },
-
 
 {
   "url": "hindi-music-concert-nightingale-sisters",
@@ -7436,8 +7435,9 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
   "hours": "3 Hours",
   "ageLimit": "5yrs +",
   "religion": "",
-  "aboutFull": "Event Name: NIGHTINGALE SISTERS\n\nABBAS CULTURAL PROUDLY PRESENTS NIGHTINGALE SISTERS: A soulful tribute celebrating the legendary voices of LATA MANGESHKAR & ASHA BHONSLE - Two Icons who defined generations of Indian Music. The event will take audiences on a melodious journey through their timeless classics, blending golden era nostalgia with heartfelt performances by Popular and Talented singers SHRUTI BHIDE, SHIFA ANSARI, SAMANVITHA SHARMA, ANUSHA KARTHICK and SMRITI BANERJEE.\n\nThrough songs, stories and stunning renditions, Nightingale Sisters honors their unmatched contribution to Indian Cinema and the emotions they have stirred in millions of hearts!!! The Grand orchestration for the event is by UDHAYA RAGAM U.K.MURALI's band of wonderful musicians.\n\nDON'T MISS THIS EVERGREEN EVENING!! GRAB YOUR TICKETS NOW!!! Nightingale Sisters bring a live Hindi music concert to Chennai, celebrating evergreen hits with a stunning orchestra and powerful vocals."
+  "aboutFull": "NIGHTINGALE SISTERS\n\nABBAS CULTURAL PROUDLY PRESENTS NIGHTINGALE SISTERS: A soulful tribute celebrating the legendary voices of LATA MANGESHKAR & ASHA BHONSLE - Two Icons who defined generations of Indian Music. The event will take audiences on a melodious journey through their timeless classics, blending golden era nostalgia with heartfelt performances by Popular and Talented singers SHRUTI BHIDE, SHIFA ANSARI, SAMANVITHA SHARMA, ANUSHA KARTHICK and SMRITI BANERJEE.\n\nThrough songs, stories and stunning renditions, Nightingale Sisters honors their unmatched contribution to Indian Cinema and the emotions they have stirred in millions of hearts!!! The Grand orchestration for the event is by UDHAYA RAGAM U.K.MURALI's band of wonderful musicians.\n\nDON'T MISS THIS EVERGREEN EVENING!! GRAB YOUR TICKETS NOW!!! Nightingale Sisters bring a live Hindi music concert to Chennai, celebrating evergreen hits with a stunning orchestra and powerful vocals."
 },
+
 {
   "url": "arvind-sunder-live-best-comedy-show",
   "id": 265,
@@ -7464,7 +7464,7 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
 
 
 
-// PUT HERE NEW WVWNTS 
+// PUT HERE NEW EVENTS 
 
 
 

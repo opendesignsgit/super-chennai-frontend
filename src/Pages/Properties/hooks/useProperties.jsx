@@ -8,6 +8,7 @@ import { fetchPropertyById, fetchPropertyBySlug } from "../services/propertyServ
 
 export const useProperties = (filters, sortBy) => {
   const [properties, setProperties] = useState([]);
+  const [totalResults, setTotalResults] = useState(0);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -15,7 +16,9 @@ export const useProperties = (filters, sortBy) => {
       setLoading(true);
       try {
         const result = await fetchProperties(filters, sortBy);
-        setProperties(result);
+        // setProperties(result);
+        setProperties(result.docs || []);
+        setTotalResults(result.totalDocs || 0); 
       } catch (err) {
         console.error("Failed to fetch properties:", err);
       } finally {
@@ -26,7 +29,7 @@ export const useProperties = (filters, sortBy) => {
     loadProperties();
   }, [filters, sortBy]);
 
-  return { properties, loading };
+  return { properties,totalResults, loading };
 };
 
 

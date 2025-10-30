@@ -27,6 +27,13 @@
   width: calc(30% - 16px);
   margin: 11px 20px;
 }
+
+.EventsItems-superchennai {
+  /* width: calc(25% - 16px);
+  margin: 10px 8px; */
+  width: calc(30% - 0px);
+  margin: 11px 10px;
+}
 .evntechnolg {
   font-family: "29LT Bukra SmBd";
   font-size: 12px;
@@ -169,6 +176,12 @@
 .EventLeft {
   width: 70%;
   padding-right: 2vw;
+}
+.EventLeft h1 {
+  font-family: "NewAmsterdam";
+  font-size: 2.5vw;
+  line-height: 1;
+  color: #a44294;
 }
 .EventLeft h2 {
   font-family: "NewAmsterdam";

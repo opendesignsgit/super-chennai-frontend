@@ -220,7 +220,18 @@ export const fetchProperties = async (filters = {}, sortBy = "") => {
 
   const { data } = await axios.get(`${API_URL}/properties`, { params });
 
-  return data.docs || [];
+  // return data.docs || [];
+  return {
+    docs: data?.docs || [],
+    totalDocs: data?.totalDocs || 0,
+    totalPages: data?.totalPages || 1,
+    page: data?.page || 1,
+    limit: data?.limit || 10,
+    hasNextPage: data?.hasNextPage || false,
+    hasPrevPage: data?.hasPrevPage || false,
+    nextPage: data?.nextPage || null,
+    prevPage: data?.prevPage || null,
+  };
 };
 
 export const fetchPropertyById = async (id) => {

@@ -6336,13 +6336,13 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
     id: 216,
     RegisterLink: "",
     metaTitleEvent:
-      "Dhandho ft. Munawar Faruqui / Stand-Up Comedy Show / Live in Chennai",
+      "Gen - Z / Munawar Faruqui Live / Stand-Up Comedy Show",
     metaDescriptionEvent:
       "Catch Munawar Faruqui live in Chennai for a night of laughter, sharp wit, and unforgettable stand-up comedy in his show 'Dhandho'.",
     conicallinkEvent: "/eventsdetails/216",
     siteLink:
       "https://in.bookmyshow.com/events/dhando-ft-munawar-faruqui/ET00425264",
-    EventsCalendarTitle: "Dhandho ft. Munawar Faruqui – Live Comedy Show",
+    EventsCalendarTitle: "Gen-Z Laugh Riot with Munawar Faruqui Live",
     EventsCalendarContent:
       "Experience Munawar Faruqui live in Chennai — a night full of humor, wit, and relatable stories.",
     EventsCalendarMonth: "7 Nov 2025",
@@ -6386,50 +6386,50 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
       "The music of The F16s creates vivid soundscapes, featuring melodic guitar riffs, introspective indie rock songs, and the soulful vocals of Josh Fernandez. Their tracks explore modern life, identity, love, and relationships, connecting deeply with fans of Indian independent music, indie rock bands in India, and original indie music.\n\nRepresenting a fresh wave in Indian indie rock, The F16s blend reflective songwriting with contemporary alternative rock. Their commitment to artistic growth and their ability to evoke emotions through music have earned them a loyal following and critical acclaim. For those exploring top indie bands in Chennai or best independent music artists in India, The F16s are a rising force in the global alternative music scene.",
   },
 
-  {
-    url: "do-you-know-who-i-am-daniel-fernandes",
-    id: 218,
-    RegisterLink: "",
-    metaTitleEvent:
-      "Do You Know Who I Am? / Daniel Fernandes Comedy Show / Chennai 2025",
-    metaDescriptionEvent:
-      "Watch Daniel Fernandes live in Chennai with his comedy special ‘Do You Know Who I Am?’ — a hilarious and heartfelt performance filled with sharp wit and storytelling.",
-    conicallinkEvent: "/eventsdetails/218",
-    siteLink:
-      "https://in.bookmyshow.com/events/do-you-know-who-i-am-by-daniel-fernandes/ET00456561",
-    EventsCalendarTitle: "Do You Know Who I Am? by Daniel Fernandes",
-    EventsCalendarContent:
-      "Catch Daniel Fernandes live in Chennai for his third comedy special — ‘Do You Know Who I Am?’ — a witty, thought-provoking stand-up show full of laughter and insight.",
-    EventsCalendarMonth: "8 Oct 2025",
-    EventsCalendarTime: "6:00 PM",
-    EventsCalendarCategory: "Comedy / Stand-up Show",
-    image: "/images/HomePage-Images/Events/Newevents/389.jpg",
-    link: "/events",
-    location: "Medai – The Stage, Alwarpet, Chennai",
-    language: "English",
-    hours: "1 hour 30 minutes",
-    ageLimit: "16+ years",
-    rleigion: "",
-    aboutFull: `
-  Get ready for an unforgettable evening in Chennai with Daniel Fernandes, one of India’s leading stand-up comedians, as he brings his third comedy special to the city. Do You Know Who I Am? is a unique celebration of life, laughter, and personal stories told in Daniel’s signature style. After a major life event, he transformed his thoughts and hilarious insights into a performance that connects with fans of Indian stand-up comedy, popular comedy shows, and famous Indian comedians.
+//   {
+//     url: "do-you-know-who-i-am-daniel-fernandes",
+//     id: 218,
+//     RegisterLink: "",
+//     metaTitleEvent:
+//       "Do You Know Who I Am? / Daniel Fernandes Comedy Show / Chennai 2025",
+//     metaDescriptionEvent:
+//       "Watch Daniel Fernandes live in Chennai with his comedy special ‘Do You Know Who I Am?’ — a hilarious and heartfelt performance filled with sharp wit and storytelling.",
+//     conicallinkEvent: "/eventsdetails/218",
+//     siteLink:
+//       "https://in.bookmyshow.com/events/do-you-know-who-i-am-by-daniel-fernandes/ET00456561",
+//     EventsCalendarTitle: "Do You Know Who I Am? by Daniel Fernandes",
+//     EventsCalendarContent:
+//       "Catch Daniel Fernandes live in Chennai for his third comedy special — ‘Do You Know Who I Am?’ — a witty, thought-provoking stand-up show full of laughter and insight.",
+//     EventsCalendarMonth: "8 Oct 2025",
+//     EventsCalendarTime: "6:00 PM",
+//     EventsCalendarCategory: "Comedy / Stand-up Show",
+//     image: "/images/HomePage-Images/Events/Newevents/389.jpg",
+//     link: "/events",
+//     location: "Medai – The Stage, Alwarpet, Chennai",
+//     language: "English",
+//     hours: "1 hour 30 minutes",
+//     ageLimit: "16+ years",
+//     rleigion: "",
+//     aboutFull: `
+//   Get ready for an unforgettable evening in Chennai with Daniel Fernandes, one of India’s leading stand-up comedians, as he brings his third comedy special to the city. Do You Know Who I Am? is a unique celebration of life, laughter, and personal stories told in Daniel’s signature style. After a major life event, he transformed his thoughts and hilarious insights into a performance that connects with fans of Indian stand-up comedy, popular comedy shows, and famous Indian comedians.
 
-This comedy show delivers witty storytelling, sharp observations, and side-splitting humor — offering a fresh and entertaining experience. Don’t miss the chance to see Daniel Fernandes in Chennai and enjoy one of the most talked-about comedy events.
+// This comedy show delivers witty storytelling, sharp observations, and side-splitting humor — offering a fresh and entertaining experience. Don’t miss the chance to see Daniel Fernandes in Chennai and enjoy one of the most talked-about comedy events.
 
-  `,
-  },
+//   `,
+//   },
 
   {
     url: "dhak-dhak-storytelling-special-amandeep-singh",
     id: 219,
     RegisterLink: "",
     metaTitleEvent:
-      "Dhak Dhak – A Storytelling Special / Amandeep Singh / Chennai 2025",
+      "Chennai Entertainment / Dhak Dhak / Storytelling Show ",
     metaDescriptionEvent:
-      "Experience Dhak Dhak – A Storytelling Special by Amandeep Singh live in Chennai. A heartfelt evening of stories, poems, and love that celebrate life and emotions.",
+      "Dhak Dhak brings a soulful storytelling show to Chennai. Enjoy live entertainment filled with poetry, emotions, and unforgettable narratives.",
     conicallinkEvent: "/eventsdetails/219",
     siteLink:
       "https://in.bookmyshow.com/events/dhak-dhak-a-storytelling-special-chennai/ET00462027",
-    EventsCalendarTitle: "Dhak Dhak – A Storytelling Special",
+    EventsCalendarTitle: "Dhak Dhak – A Storytelling Experience in Chennai",
     EventsCalendarContent:
       "Join Amandeep Singh live in Chennai for Dhak Dhak – A Storytelling Special. A heart-touching evening filled with soulful stories, poetry, and emotions of love and self-discovery.",
     EventsCalendarMonth: "30 Nov 2025",
@@ -6840,13 +6840,12 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     RegisterLink:
       "https://in.bookmyshow.com/events/vijay-prakash-live-in-chennai/ET00463505",
     metaTitleEvent:
-      "Vijay Prakash Live in Chennai – Vijayotsavam 2025 Musical Concert",
-    metaDescriptionEvent:
-      "Experience Vijayotsavam 2025, a grand musical evening with the legendary Vijay Prakash live in Chennai. Enjoy soulful Tamil, Hindi, Telugu, and Kannada hits in a mesmerizing live concert presented by Noizz Entertainment.",
+      "Vijay Prakash Concert / Musical Evening / Live in Chennai",
+    metaDescriptionEvent:"Enjoy a Vijay Prakash concert, a musical evening in Chennai, featuring soulful hits, electrifying performances, and an unforgettable live experience",
     conicallinkEvent: "/eventsdetails/235",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/vijay-prakash-live-concert",
-    EventsCalendarTitle: "Vijay Prakash Live in Concert – Vijayotsavam 2025  ",
+    EventsCalendarTitle: "Musical Evening with Vijay Prakash",
     EventsCalendarContent:
       "Experience an unforgettable evening of music as Vijay Prakash performs his greatest Tamil, Hindi, Telugu, and Kannada hits live at Express Avenue, Chennai. Presented by Noizz Entertainment, this grand concert promises soulful melodies and electrifying performances.",
     EventsCalendarMonth: "22 Nov 2025",
@@ -6863,15 +6862,15 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
       "Vijayotsavam 2025–26, a grand musical celebration featuring the legendary Vijay Prakash, is set to dazzle Chennai on 22nd November 2025 at Express Avenue Mall. Renowned for his soulful voice and dynamic stage presence, Vijay Prakash has delivered timeless hits across Tamil cinema, collaborating with icons like A.R. Rahman, Harris Jayaraj, Yuvan Shankar Raja, and Ilaiyaraaja.\n\nHis popular tracks such as Hosanna, Kadhal Anukkal, Aathichudi, Pookkal Pookkum, Manamaganin Sathiyam, and Aararo Aariraro have become synonymous with emotion and energy, resonating deeply with audiences.\n\nPresented by Noizz Entertainment, a leader in delivering world-class live events, this concert promises top-notch production, flawless execution, and an unforgettable atmosphere. With a reputation for organizing spectacular shows that attract massive crowds, Noizz ensures fans get nothing but the best.\n\nThe Chennai edition of Vijayotsavam will be an evening filled with iconic Tamil melodies, beloved summer anthems, and a powerful live performance from Vijay Prakash. Stay tuned for announcements about special guest performers who will be joining him on stage.",
   },
 
+
   {
     url: "faiyaaz-hussain-tamil-comedy-live",
     id: 236,
     RegisterLink:
       "https://in.bookmyshow.com/events/survivor-s-suilt/ET00441260",
     metaTitleEvent:
-      "Faiyaaz Hussain Live – Survivor’s Guilt Tamil Comedy Show in Chennai",
-    metaDescriptionEvent:
-      "Experience Faiyaaz Hussain’s brand-new Tamil comedy special 'Survivor’s Guilt' live in Chennai. A hilarious, introspective show blending storytelling, wit, and real-life humour for mature audiences.",
+      "Tamil Comedy / Survivor’s Guilt / Faiyaaz Hussain Live",
+    metaDescriptionEvent:"Enjoy an evening of Tamil comedy with Faiyaaz Hussain in Survivor’s Guilt, featuring sharp humour, storytelling, and interactive performances.",
     conicallinkEvent: "/eventsdetails/236",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/faiyaaz-hussain-tamil-comedy-live",
@@ -6898,13 +6897,12 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     RegisterLink:
       "https://in.bookmyshow.com/events/sutej-singh-irl-its-really-live/ET00463876",
     metaTitleEvent:
-      "Sutej Singh Live in Chennai – IRL Restless | Relentless Music Tour 2025",
-    metaDescriptionEvent:
-      "Witness Sutej Singh live in Chennai as part of his IRL Restless | Relentless India Tour. Enjoy an electrifying night of progressive rock, soaring guitar solos, and unforgettable live energy.",
+      "Sutej Singh Concert / Live Music Tour 2025 / Super Chennai",
+    metaDescriptionEvent:"Experience the electrifying Sutej Singh concert live on his IRL tour 2025, featuring progressive rock, stunning guitar solos and a night of pure musical brilliance.",
     conicallinkEvent: "/eventsdetails/238",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/sutej-singh-concert-live-music-tour",
-    EventsCalendarTitle: "Sutej Singh – IRL Restless | Relentless Tour",
+    EventsCalendarTitle: "Sutej Singh Concert Live – IRL Music Tour 2025",
     EventsCalendarContent:
       "Experience an epic live performance by Sutej Singh at The Madras Taproom, Chennai, as part of his Restless | Relentless India Tour. Enjoy progressive rock brilliance, soaring guitar solos, and immersive soundscapes at this unforgettable live show.",
     EventsCalendarMonth: "15 Nov 2025",
@@ -6922,18 +6920,17 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
   },
 
   {
-    url: "daniel-fernandes-do-you-know-who-i-am-live-in-chennai-2025-buy-tickets",
+    url: "daniel-fernandes-live-english-standup-comedy-laugh-riot",
     id: 239,
     RegisterLink:
       "https://in.bookmyshow.com/events/do-you-know-who-i-am-by-daniel-fernandes/ET00456561",
     metaTitleEvent:
-      "Daniel Fernandes Live in Chennai – Do You Know Who I Am? English Standup Comedy",
-    metaDescriptionEvent:
-      "Catch Daniel Fernandes live in Chennai with his comedy special 'Do You Know Who I Am?' – a hilarious, insightful, and witty take on life told through sharp humour and storytelling.",
+      "Daniel Fernandes Live / English Standup Comedy / Laugh Riot",
+    metaDescriptionEvent:"Enjoy a hilarious ride with Daniel Fernandes performing English standup comedy live on stage—sharp humor, bold topics, and non-stop laughter guaranteed!",
     conicallinkEvent: "/eventsdetails/239",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/daniel-fernandes-live-english-standup-comedy-show",
-    EventsCalendarTitle: "Daniel Fernandes – Do You Know Who I Am?",
+    EventsCalendarTitle: "Daniel Fernandes Live English Standup Comedy Show",
     EventsCalendarContent:
       "Join Daniel Fernandes live in Chennai for his English stand-up special 'Do You Know Who I Am?' – an introspective yet hilarious show that blends sharp humour, real-life reflections, and witty storytelling.",
     EventsCalendarMonth: "8 Nov 2025",
@@ -6955,13 +6952,13 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     id: 241,
     RegisterLink:
       "https://in.bookmyshow.com/events/ashwyn-singh-wrong-singh-to-say-tour-goa/ET00453922",
-    metaTitleEvent: "Wrong Singh to Say Tour – Comedy Night 2025",
+    metaTitleEvent: "Wrong Singh to Say Tour | Standup Comedy Special | Super chennai",
     metaDescriptionEvent:
       "Laugh your heart out with Ashwyn Singh live on stage in the Wrong Singh to Say standup comedy Special. An evening of sharp humor and relatable comedy awaits.",
     conicallinkEvent: "/eventsdetails/241",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/ashwyn-singh-standup-comedy-live",
-    EventsCalendarTitle: "Ashwyn Singh: Wrong Singh to Say Tour",
+    EventsCalendarTitle: "Wrong Singh to Say Tour – Comedy Night 2025",
     EventsCalendarContent:
       "Ashwyn Singh brings his brand-new comedy hour to Chennai, diving headfirst into the chaos, contradictions, and conversations of our times.",
     EventsCalendarMonth: "28 Nov 2025",
@@ -6983,13 +6980,13 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     id: 244,
     RegisterLink:
       "https://in.bookmyshow.com/events/gaurav-kapoor-live-bengaluru/ET00331714",
-    metaTitleEvent: "Gaurav Kapoor Live – Comedy Show 2025",
+    metaTitleEvent: "Gaurav Kapoor Comedy Show / Live Stand-Up Experience 2025",
     metaDescriptionEvent:
       "Enjoy a hilarious Gaurav Kapoor comedy show live in Chennai. Relatable humor, sharp wit, and non-stop laughs await you at this live stand-up experience.",
     conicallinkEvent: "/eventsdetails/244",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/gaurav-kapoor-live-comedy-show-2025",
-    EventsCalendarTitle: "Gaurav Kapoor Live Stand-Up",
+    EventsCalendarTitle: "Gaurav Kapoor Live – Comedy Show 2025",
     EventsCalendarContent:
       "Come experience the hilarious and highly relatable comedy of Gaurav Kapoor in his live show, recognized as one of the funniest and most prolific stand-up comedians in the country.",
     EventsCalendarMonth: "21 Nov 2025",
@@ -7011,13 +7008,12 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     id: 245,
     RegisterLink:
       "https://in.bookmyshow.com/events/green-kidathon-stadium-run-oct-2025/ET00459666",
-    metaTitleEvent: "Fun & Fitness at Green Kidathon 2025",
-    metaDescriptionEvent:
-      "Young athletes take center stage at Green Kidathon 2025, a kids marathon celebrating fun, fitness, teamwork, and healthy competition for all participants.",
+    metaTitleEvent: "Green Kidathon 2025 / Kids Marathon Challenge / Super Chennai",
+    metaDescriptionEvent:"Young athletes take center stage at Green Kidathon 2025, a kids marathon celebrating fun, fitness, teamwork, and healthy competition for all participants.",
     conicallinkEvent: "/eventsdetails/245",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/green-kidathon-2025-kids-marathon",
-    EventsCalendarTitle: "Green Kidathon Stadium Run",
+    EventsCalendarTitle: "Fun & Fitness at Green Kidathon 2025",
     EventsCalendarContent:
       "Kalam Event Management presents the Green Kidathon Stadium Run this November 2025 at Jawaharlal Nehru Stadium, featuring multiple categories and distances for children.",
     EventsCalendarMonth: "2 Nov 2025",
@@ -7094,13 +7090,13 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     id: 248,
     RegisterLink:
       "https://in.bookmyshow.com/events/8-by-praveen-kumar/ET00408394",
-    metaTitleEvent: "Praveen Kumar Live – 8 Chapters of Laughter",
+    metaTitleEvent: "Stand-Up Comedy / Live Show / 8 Stories by Praveen Kumar ",
     metaDescriptionEvent:
       'Stand-up comedy live with Praveen Kumar in "8 Stories" – 8 hilarious chapters filled with humor, life tales, and Rajinikanth-inspired fun.',
     conicallinkEvent: "/eventsdetails/248",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/praveen-kumar-8-standup-comedy",
-    EventsCalendarTitle: "8 by Praveen Kumar",
+    EventsCalendarTitle: "Praveen Kumar Live – 8 Chapters of Laughter",
     EventsCalendarContent:
       "Step into the world of '8' — Praveen Kumar’s eighth stand-up special, inspired by Superstar Rajinikanth’s Baasha, featuring 8 hilarious stories from his own life.",
     EventsCalendarMonth: "15 Nov 2025",
@@ -7122,13 +7118,13 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     id: 250,
     RegisterLink:
       "https://in.bookmyshow.com/events/vir-das-sounds-of-india/ET00462287",
-    metaTitleEvent: "Sounds of India – Live Comedy Show by Vir Das",
+    metaTitleEvent: "Sounds of India / Vir Das Live / Comedy Show 2025",
     metaDescriptionEvent:
       "Vir Das brings 'Sounds of India' to life – a live comedy show that explores India's rich cultural tapestry through humor. Secure your seats now!",
     conicallinkEvent: "/eventsdetails/250",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/sounds-of-india-vir-das-live-comedy-show",
-    EventsCalendarTitle: "Vir Das: Sounds of India",
+    EventsCalendarTitle: "Sounds of India – Live Comedy Show by Vir Das",
     EventsCalendarContent:
       "Experience a one-of-a-kind comedy event as International Emmy-winning comedian Vir Das presents a uniquely immersive audio-visual stand-up show.",
     EventsCalendarMonth: "29 Nov 2025",
@@ -7150,13 +7146,13 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     id: 251,
     RegisterLink:
       "https://in.bookmyshow.com/events/paradox-by-magician-kalai/ET00439561",
-    metaTitleEvent: "Paradox by Kalai – Live Magic Show with Storytelling",
+    metaTitleEvent: "Paradox by Kalai / Magic Show / Storytelling Live",
     metaDescriptionEvent:
       "Witness Kalai’s Paradox live, a unique fusion of illusion and storytelling that takes you on an emotional and magical journey filled with surprises and enchantment.",
     conicallinkEvent: "/eventsdetails/251",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/paradox-kalai-magic-show",
-    EventsCalendarTitle: "Paradox by Magician Kalai",
+    EventsCalendarTitle: "Paradox by Kalai – Live Magic Show with Storytelling",
     EventsCalendarContent:
       "The Paradox is a thrilling, hilarious, and mind-bending experience that fuses magic, mentalism, comedy, storytelling, and a touch of philosophy by internationally acclaimed illusionist Kalai.",
     EventsCalendarMonth: "8 Nov 2025",
@@ -7206,13 +7202,13 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     url: "cinderella-pop-musical-modern-fairy-tale-live-show",
     id: 255,
     RegisterLink: "https://in.bookmyshow.com/events/cinderella/ET00465663",
-    metaTitleEvent: "Cinderella a Pop Musical Modern Fairy Tale Live Show",
+    metaTitleEvent: "Cinderella / A Pop Musical / Modern Fairy Tale Live Show",
     metaDescriptionEvent:
       "Cinderella a Pop Musical Modern Fairy Tale Live Show featuring vibrant performances, live music, and magical family-friendly entertainment.",
     conicallinkEvent: "/eventsdetails/255",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/cinderella-pop-musical-modern-fairy-tale-live-show",
-    EventsCalendarTitle: "Cinderella: A Pop Fairy Tale",
+    EventsCalendarTitle: "Cinderella a Pop Musical Modern Fairy Tale Live Show",
     EventsCalendarContent:
       "Experience Cinderella: A Pop Fairy Tale, a contemporary reimagining of the beloved classic by the Madras Musical Association (MMA), blending timeless storytelling with modern pop music.",
     EventsCalendarMonth: "31 Oct 2025",
@@ -7261,13 +7257,12 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
     id: 257,
     RegisterLink:
       "https://in.bookmyshow.com/events/akshay-srivastava-live-standup-comedy/ET00430844",
-    metaTitleEvent: "Akshay Srivastava Live Standup Comedy Show in Chennai",
-    metaDescriptionEvent:
-      "Catch Akshay Srivastava live in Chennai with his all-new stand-up comedy show! Expect sharp wit, high-energy humor, and non-stop laughs.",
+    metaTitleEvent: "Akshay Srivastava Live / A Stand-Up Comedy Show / Super Chennai",
+    metaDescriptionEvent:"Akshay Srivastava Live is a stand-up comedy show with witty storytelling, fresh jokes, and relatable humour in Hindi and English, promising a fun laughter-filled evening.",
     conicallinkEvent: "/eventsdetails/257",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/akshay-srivastava-live-standup-comedy-show-chennai",
-    EventsCalendarTitle: "Akshay Srivastava - Live Standup Comedy",
+    EventsCalendarTitle: "akshay-srivastava-live-stand-up-comedy-show",
     EventsCalendarContent:
       "After the release of his 64-minute YouTube special 'Quiggy The Delivery App', Akshay Srivastava returns with an all-new stand-up comedy show!",
     EventsCalendarMonth: "1 Nov 2025",
@@ -7287,34 +7282,33 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
  
 
  
-{
-  url: "djembe-drums-live-circle-interactive-show",
-  id: 260,
-  RegisterLink:
-    "https://in.bookmyshow.com/events/the-drum-circle-experience-djembe-drums/ET00453218",
-  metaTitleEvent:
-    "The Drum Circle Experience – Djembe Drums: Interactive Show for All Ages",
-  metaDescriptionEvent:
-    "Feel the pulse of live music with Djembe Drums in an interactive circle experience at Trinity Studio, Chennai. Designed for all ages and skill levels, no prior experience is needed to connect, create, and celebrate through rhythm.",
-  conicallinkEvent: "/eventsdetails/260",
-  siteLink:
-    "https://www.superchennai.com/events-in-chennai/djembe-drums-live-circle-interactive-show",
-  EventsCalendarTitle: "The Drum Circle Experience - Djembe Drums",
-  EventsCalendarContent:
-    "Join this high-energy Djembe drumming session to learn the art of African drumming. All ages welcome to connect, create, and celebrate through rhythm. Drums provided.",
-  EventsCalendarMonth: "1 Nov 2025",
-  EventsCalendarTime: "6:00 PM",
-  EventsCalendarCategory: "Instrumental / Fusion / Live Session",
-  image: "/images/HomePage-Images/Events/Newevents/441.jpg",
-  link: "/events",
-  location: "Trinity Studio: Kodambakkam",
-  language: "English",
-  hours: "1 Hour",
-  ageLimit: "All age groups",
-  religion: "",
-  aboutFull:
-    "The Drum Circle Experience - Djembe Drums\n\nBy popular demand, we’re returning to your city!\nFeel the rhythm! Feel your pulse! Join us for an exciting Drum Circle experience right in your city. All drums will be available at the venue.\n\nFor the first time, you can fully immerse yourself in the jamming session and the entire experience. Whether you’re an experienced drummer or have never played a drum before, this one-hour session welcomes everyone of all ages who wants to connect, create, and celebrate through rhythm.\n\nCome and learn the art of African drumming in this high-energy djembe session. Let the beats unite us. Let’s drum, dance, and vibe together!\n\nNote: Please remove all accessories (rings or other wearables) from your fingers to avoid injury during the session. Djembe Drums Live Circle Interactive Show is a live music experience where movement meets music, stillness meets sound, tradition meets performance."
-},
+// {
+//   url: "djembe-drums-live-circle-interactive-show",
+//   id: 260,
+//   RegisterLink:
+//     "https://in.bookmyshow.com/events/the-drum-circle-experience-djembe-drums/ET00453218",
+//   metaTitleEvent:
+//     "Djembe Drums | Live Circle Interactive Show | Super Chennai",
+//   metaDescriptionEvent:"Feel the pulse of live music with Djembe Drums in an interactive circle experience designed for all ages and skill levels. No prior experience needed.",
+//   conicallinkEvent: "/eventsdetails/260",
+//   siteLink:
+//     "https://www.superchennai.com/events-in-chennai/djembe-drums-live-circle-interactive-show",
+//   EventsCalendarTitle: "The Drum Circle Experience - Djembe Drums",
+//   EventsCalendarContent:
+//     "Join this high-energy Djembe drumming session to learn the art of African drumming. All ages welcome to connect, create, and celebrate through rhythm. Drums provided.",
+//   EventsCalendarMonth: "1 Nov 2025",
+//   EventsCalendarTime: "6:00 PM",
+//   EventsCalendarCategory: "Instrumental / Fusion / Live Session",
+//   image: "/images/HomePage-Images/Events/Newevents/441.jpg",
+//   link: "/events",
+//   location: "Trinity Studio: Kodambakkam",
+//   language: "English",
+//   hours: "1 Hour",
+//   ageLimit: "All age groups",
+//   religion: "",
+//   aboutFull:
+//     "The Drum Circle Experience - Djembe Drums\n\nBy popular demand, we’re returning to your city!\nFeel the rhythm! Feel your pulse! Join us for an exciting Drum Circle experience right in your city. All drums will be available at the venue.\n\nFor the first time, you can fully immerse yourself in the jamming session and the entire experience. Whether you’re an experienced drummer or have never played a drum before, this one-hour session welcomes everyone of all ages who wants to connect, create, and celebrate through rhythm.\n\nCome and learn the art of African drumming in this high-energy djembe session. Let the beats unite us. Let’s drum, dance, and vibe together!\n\nNote: Please remove all accessories (rings or other wearables) from your fingers to avoid injury during the session. Djembe Drums Live Circle Interactive Show is a live music experience where movement meets music, stillness meets sound, tradition meets performance."
+// },
 
 {
   url: "gopi-funchurian-tamil-stand-up-comedy-badava-gopi",
@@ -7322,13 +7316,12 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
   RegisterLink:
     "https://in.bookmyshow.com/events/gopi-funchurian-by-badava-gopi/ET00389499",
   metaTitleEvent:
-    "Gopi Funchurian by Badava Gopi | Live Tamil Stand-Up & Mimicry Show",
-  metaDescriptionEvent:
-    "Come watch Badava Gopi live in Chennai! 'Gopi Funchurian' is a Tamil stand-up comedy show featuring spectacular mimicry, hilarious jokes, and impressions that promise a rib-tickling, laughter-filled extravaganza.",
+    "Badava Gopi / Tamil Stand-Up Comedy / Mimicry Show",
+  metaDescriptionEvent:"Badava Gopi brings Gopi Funchurian live—a Tamil stand-up comedy show packed with satire, mimicry and laughter that keeps you entertained from start to finish.",
   conicallinkEvent: "/eventsdetails/261",
   siteLink:
     "https://www.superchennai.com/events-in-chennai/gopi-funchurian-tamil-stand-up-comedy-badava-gopi",
-  EventsCalendarTitle: "Gopi Funchurian By Badava Gopi",
+  EventsCalendarTitle: "Gopi Funchurian Tamil Stand-Up Comedy by Badava Gopi",
   EventsCalendarContent:
     "A rib-tickling Tamil stand-up extravaganza featuring Badava Gopi's spectacular mimicry and hilarious, WOW-certified jokes. Don't miss this fun-packed show!",
   EventsCalendarMonth: "2 Nov 2025",
@@ -7349,11 +7342,11 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
   "url": "aqua-sound-bath-immersion-water-sound-healing",
   "id": 262,
   "RegisterLink": "https://in.bookmyshow.com/events/aqua-sound-bath-immersion/ET00466420",
-  "metaTitleEvent": "Aqua Sound Bath Immersion and Water Sound Healing in Chennai",
-  "metaDescriptionEvent": "Dive into a unique floating sound bath experience in Chennai. Aqua Sound Bath Immersion uses the restorative blend of water, singing bowls, and gongs for deep relaxation, emotional release, and a nervous system reset.",
+  "metaTitleEvent": "Aqua Sound Bath Immersion / Water Sound Healing / Super Chennai",
+  "metaDescriptionEvent": "Dive into Aqua Sound Bath Immersion, where water sound healing harmonizes your energy through floating vibrations, singing bowls, and restorative sound therapy.",
   "conicallinkEvent": "/eventsdetails/262",
   "siteLink": "https://www.superchennai.com/events-in-chennai/aqua-sound-bath-immersion-water-sound-healing",
-  "EventsCalendarTitle": "Aqua Sound Bath Immersion – A Floating Path to Wellness",
+  "EventsCalendarTitle": "Aqua Sound Bath Immersion and Water Sound Healing",
   "EventsCalendarContent": "Experience a one-of-a-kind floating sound bath where water and the resonance of singing bowls and gongs combine for profound relaxation and energy rebalancing.",
   "EventsCalendarMonth": "2 Nov 2025",
   "EventsCalendarTime": "2:00 PM",
@@ -7373,11 +7366,11 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
   "url": "gokul-kumar-live-stand-up-comedy",
   "id": 263,
   "RegisterLink": "http://in.bookmyshow.com/events/gokul-kumar-live/ET00447027",
-  "metaTitleEvent": "Gokul Kumar Live – Stand Up Comedy Show in Chennai",
-  "metaDescriptionEvent": "Catch Gokul Kumar Live in Chennai for a laughter-packed stand-up comedy show! Expect witty, fresh, and hilarious observations about everyday life from the star comedian.",
+  "metaTitleEvent": "Gokul Kumar Live / Stand Up Comedy Chennai / Super Chennai",
+  "metaDescriptionEvent": " Enjoy a laughter-packed evening with Gokul Kumar Live, the ultimate stand up comedy Chennai event. Fresh jokes, sharp humor, and live entertainment await!",
   "conicallinkEvent": "/eventsdetails/263",
   "siteLink": "https://www.superchennai.com/events-in-chennai/gokul-kumar-live-stand-up-comedy",
-  "EventsCalendarTitle": "Gokul Kumar - Live Stand Up Comedy",
+  "EventsCalendarTitle": "Gokul Kumar Live – Stand Up Comedy in Chennai",
   "EventsCalendarContent": "Following his successful standup videos, Gokul Kumar takes his fresh, witty, and laugh-out-loud observations on a nationwide tour. Catch him live!",
   "EventsCalendarMonth": "15 Nov 2025",
   "EventsCalendarTime": "6:00 PM",
@@ -7396,11 +7389,11 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
   "url": "thanga-magan-50-music-show-celebrating-superstar",
   "id": 264,
   "RegisterLink": "https://in.bookmyshow.com/events/thanga-magan-50-celebrating-superstar/ET00466446",
-  "metaTitleEvent": "Thanga Magan 50 – Music Show Celebrating Superstar Rajinikanth in Chennai",
-  "metaDescriptionEvent": "Celebrate Superstar Rajinikanth's 50 years of cinema with 'Thanga Magan 50,' a grand musical tribute featuring iconic songs revived by SPB Charan and Yugendran Vasudevan, with music by Udhaya Ragam U.K. Murali.",
+  "metaTitleEvent": "Thanga Magan 50 / Music Show in Chennai / Celebrating Superstar",
+  "metaDescriptionEvent": " Thanga Magan 50 brings a live music show in Chennai honoring the Superstar’s legacy with legendary songs, star performers and a grand musical tribute. ",
   "conicallinkEvent": "/eventsdetails/264",
   "siteLink": "https://www.superchennai.com/events-in-chennai/thanga-magan-50-music-show-celebrating-superstar",
-  "EventsCalendarTitle": "Thanga Magan 50: Celebrating Superstar Rajinikanth",
+  "EventsCalendarTitle": "Thanga Magan 50 – Music Show Celebrating the Superstar",
   "EventsCalendarContent": "An unforgettable musical tribute to Superstar Rajinikanth's 50 years in cinema, featuring iconic songs revived by SPB Charan and Yugendran Vasudevan, and led by Udhaya Ragam U.K. Murali.",
   "EventsCalendarMonth": "16 Nov 2025",
   "EventsCalendarTime": "5:00 PM",
@@ -7419,11 +7412,11 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
   "url": "hindi-music-concert-nightingale-sisters",
   "id": 265,
   "RegisterLink": "https://in.bookmyshow.com/events/nightingale-sisters/ET00466402",
-  "metaTitleEvent": "Nightingale Sisters – Live Hindi Music Concert in Chennai (Lata & Asha Tribute)",
-  "metaDescriptionEvent": "ABBAS CULTURAL presents 'Nightingale Sisters,' a soulful Hindi music concert in Chennai paying tribute to the legendary voices of Lata Mangeshkar & Asha Bhonsle. Features popular singers and Udhaya Ragam U.K. Murali's grand orchestra.",
+  "metaTitleEvent": "Hindi Music Concert / Nightingale Sisters / Super Chennai",
+  "metaDescriptionEvent": "Nightingale Sisters bring a live Hindi music concert to Chennai, celebrating evergreen hits with a stunning orchestra and powerful vocals. Book your seats now!",
   "conicallinkEvent": "/eventsdetails/265",
   "siteLink": "https://www.superchennai.com/events-in-chennai/hindi-music-concert-nightingale-sisters",
-  "EventsCalendarTitle": "NIGHTINGALE SISTERS - A Soulful Tribute",
+  "EventsCalendarTitle": "Nightingale Sisters – Live Hindi Music Concert in Chennai",
   "EventsCalendarContent": "A soulful tribute celebrating the legendary voices of Lata Mangeshkar & Asha Bhonsle, featuring popular and talented singers, accompanied by Udhaya Ragam U.K. Murali's grand orchestra.",
   "EventsCalendarMonth": "9 Nov 2025",
   "EventsCalendarTime": "6:00 PM",
@@ -7442,11 +7435,11 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
   "url": "arvind-sunder-live-best-comedy-show",
   "id": 265,
   "RegisterLink": "https://in.bookmyshow.com/events/arvind-sundar/ET00426453",
-  "metaTitleEvent": "Arvind Sunder Live – Best Comedy Show in Chennai | Hindi & English",
-  "metaDescriptionEvent": "Catch Arvind Sunder live in Chennai for his new solo stand-up show, featuring a blend of sharp observations, personal storytelling, and carefully curated, tested jokes in Hindi and English.",
+  "metaTitleEvent": "Arvind Sunder Live | Best Comedy Show | Super Chennai",
+  "metaDescriptionEvent": "Arvind Sunder brings the best comedy show experience to Chennai with a power-packed live show full of fun, wit, and laughter. Get your tickets now!",
   "conicallinkEvent": "/eventsdetails/265",
   "siteLink": "https://www.superchennai.com/events-in-chennai/arvind-sunder-live-best-comedy-show",
-  "EventsCalendarTitle": "Arvind Sunder - Live Stand Up Comedy",
+  "EventsCalendarTitle": "Arvind Sunder Live – Best Comedy Show in Chennai",
   "EventsCalendarContent": "Arvind Sunder returns with a solo show blending storytelling and sharp observations, crafted from 8+ years of experience. Guaranteed laughter awaits!",
   "EventsCalendarMonth": "8 Nov 2025",
   "EventsCalendarTime": "8:00 PM",
@@ -7464,7 +7457,7 @@ This comedy show delivers witty storytelling, sharp observations, and side-split
 
 
 
-// PUT HERE NEW EVENTS 
+// PUT HERE NEW EVENTS -----------------------------------------------------------
 
 
 

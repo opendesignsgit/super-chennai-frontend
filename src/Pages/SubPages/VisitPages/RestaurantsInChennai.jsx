@@ -260,6 +260,19 @@ const detailsections = [
           },
         ],
       },
+
+      {
+        name: "Za Pizza Café",
+        description:
+          "Za Pizza Café is a vibrant New York–style pizza café offering a mix of pizzas, pastas, and classic sides in a cheerful diner-inspired space. It provides dine-in, takeaway, and delivery options, with halal-certified meats and a separate vegetarian menu.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/CtBDt69QsLWLfu8B6",
+          },
+        ],
+      },
     ],
   },
   {
@@ -602,6 +615,43 @@ const detailsections = [
           {
             label: "Tharamani",
             link: "https://maps.app.goo.gl/Jzeu6zkzA1sv2GUU6",
+          },
+        ],
+      },
+      {
+        name: "Farsi Laban",
+        description:
+          "Farsi Laban, located in Alwarpet, is a popular café chain celebrated for its Middle Eastern and Egyptian desserts like Kunafa, Baklava, and the signature Cheese Bomb — a true sweet escape for dessert lovers.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/tY2BymptoLS2drty7",
+          },
+        ],
+      },
+
+      {
+        name: "Canvas",
+        description:
+          "Canvas by Sketch, located in Alwarpet, Chennai, is a premium restaurant offering an eclectic mix of Italian, Chinese, Asian, and Arabic dishes. Known for its elegant interiors and refined atmosphere, it’s a go-to destination for fine dining, casual gatherings, and memorable celebrations.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/6ztgUkbEjmtmSYZE9",
+          },
+        ],
+      },
+      {
+        name: "Same Same But Different",
+        description:
+          "A trendy Thai restaurant blending authentic flavors with modern creativity, offering dishes inspired by various regions of Thailand in a chic, relaxed setting.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/mMQchEWMjZqXzQsV6",
           },
         ],
       },

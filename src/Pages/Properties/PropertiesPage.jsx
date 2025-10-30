@@ -7,15 +7,18 @@ import { useProperties } from "./hooks/useProperties";
 import { toggleArrayValue } from "./utils/filterHelpers";
 import { defaultFilters } from "./utils/filterDefault";
 import FiltersTopbar from "./Components/Filters/FiltersTopbar";
+import "../../assets/Css/PropertyPage.css";
 
 const PropertiesPage = () => {
+  
   const [filters, setFilters] = useState(defaultFilters);
-
   const [sortBy, setSortBy] = useState("");
   const { properties, loading } = useProperties(filters, sortBy);
+  const totalResults = properties?.length || 0;
 
   const ITEMS_PER_PAGE = 10;
   const [currentPage, setCurrentPage] = useState(1);
+
   const paginatedProperties = useMemo(() => {
     const start = (currentPage - 1) * ITEMS_PER_PAGE;
     const end = start + ITEMS_PER_PAGE;
@@ -24,6 +27,10 @@ const PropertiesPage = () => {
 
   const totalPages = Math.ceil(properties.length / ITEMS_PER_PAGE);
   const [useTopFilter, setUseTopFilter] = useState(false);
+  
+
+
+  
 
   const handleCheckboxChange = (name, value, nestedKey = null) => {
     setFilters((prev) => {
@@ -127,6 +134,7 @@ const PropertiesPage = () => {
                   sortBy={sortBy}
                   onSortChange={setSortBy}
                   filters={filters}
+                   totalResults={totalResults}
                 />
                 <div className="pagination-wrapper mt-6">
                   <Pagination

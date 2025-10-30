@@ -11,22 +11,6 @@ export default function EventsDetails() {
 
   const [event, setEvent] = useState(null);
 
-  // useEffect(() => {
-  //   const stateEvent = location.state?.card;
-  //   console.log(stateEvent);
-
-  //   if (stateEvent) {
-  //     setEvent(stateEvent);
-  //   } else {
-  //     const found = cards.find((e) => e.id === Number(id));
-  //     if (found) {
-  //       setEvent(found);
-  //     } else {
-  //       navigate("/events", { replace: true });
-  //     }
-  //   }
-  // }, [id, location.state, navigate]);
-
   useEffect(() => {
     const stateEvent = location.state?.card;
     console.log("Event from state:", stateEvent);
@@ -79,7 +63,7 @@ export default function EventsDetails() {
           <div className="EventContBox flex flex-wrap">
             {/* Left Side */}
             <div className="EventLeft">
-              <h2>{event.EventsCalendarTitle}</h2>
+              <h1>{event.EventsCalendarTitle}</h1>
 
               <div className="EventBanImg">
                 <img src={event.image} alt={event.EventsCalendarTitle} />

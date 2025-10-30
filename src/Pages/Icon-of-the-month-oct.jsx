@@ -306,7 +306,7 @@
 //           <div className="VolunteerMainContainer">
 //             <div className="volunteerSectionBanner">
 //               <div className="VolunteerBannerImage">
-//                 <img src="/images/events/Mrs.Chinmayi-sripada.jpg" alt="" />
+//                 <img src="/images/events/chinmyi-sripaada.jpg" alt="" />
 //               </div>
 //             </div>
 //           </div>

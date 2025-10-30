@@ -10,10 +10,11 @@ const PropertiesList = ({
   sortBy,
   onSortChange,
   filters,
+  totalResults 
 }) => {
   const { locations, furnishings } = useFiltersData();
 
-
+console.log("list cards ",properties)
 
   if (loading) {
     return (
@@ -87,7 +88,18 @@ if (!loading && properties.length === 0) {
   return (
     <div>
       <div className="sidebarrightCards">
-        <span>{properties.length} results shown for the selected filters</span>
+        <span>
+          Showing {totalResults} results
+          {Object.values(filters).some(
+            (val) =>
+              (Array.isArray(val) && val.length > 0) || 
+              (typeof val === "object" &&
+                val !== null &&
+                Object.values(val).some(Boolean)) || 
+              (typeof val === "string" && val.trim() !== "") || 
+              (typeof val === "boolean" && val === true) 
+          ) && " for the selected filters"}
+        </span>
         <SortBy value={sortBy} onChange={onSortChange} />
       </div>
 

@@ -117,6 +117,7 @@ import Traveltips from "./Pages/SubPages/VisitPages/Traveltips";
 import Wellness from "./Pages/SubPages/VisitPages/Wellness";
 import ScrollToTop from "./Components/ScrollToTop";
 import EventsHome from "./Pages/Events";
+import EventsPage from "./Pages/Events/EventsPage";
 import EventsDetails from "./Pages/SubPages/EventsPages/EventsDetails";
 import TrendingDetails from "./Components/TrendingDetails";
 
@@ -279,8 +280,11 @@ import PropertiesPage from "./Pages/Properties/PropertiesPage";
 import PropertyDetailPage from "./Pages/Properties/PropertyDetailPage";
 import IconofthemonthSeptember from "./Pages/Icon-of-the-month-september";
 import IconofthemonthSeptember1 from "./Pages/Icon-of-the-month-september1";
-import PropertyMainPage from "./Pages/Properties-Design/Property-Main";
 import PrideofChennai from "./Pages/PrideofChennai";
+import Neighbourhoods  from "./Pages/Neighbourhoods/neighbourhoods";
+
+
+
 import ChennaiApp from "./Pages/Chennai-app";
 
 function App() {
@@ -645,6 +649,7 @@ function App() {
           <Route path="/visit-chennai" element={<Visit />} />
           <Route path="/work-in-chennai" element={<Work />} />
           <Route path="/events" element={<EventsHome />} />
+          <Route path="/superchennai-events" element={<EventsPage />} />
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />
           <Route path="/namma-stories" element={<NammaStories />} />
@@ -1400,32 +1405,18 @@ function App() {
           {/* innovate pages end*/}
 
           {/* innovate pages start */}
-          {/* <Route
-            path="/innovate/it-companies-in-chennai"
-            element={<ItandSoftwareCompanies />}
-          />
-          <Route path="/innovate/smart-city-chennai" element={<SmartCity />} /> */}
-
-          {/* innovate pages end*/}
-          {/* Anthony Anna Works */}
-
-          {/* new pages End */}
-
-          <Route path="/properties" element={<PropertiesPage />} />
-          <Route path="/properties/:slug" element={<PropertyDetailPage />} />
 
           {/* Property-Pages */}
-
-          <Route path="/dpropertypage" element={<PropertyMainPage />} />
+          <Route path="/properties" element={<PropertiesPage />} />
+          <Route path="/properties/:slug" element={<PropertyDetailPage />} />
 
           {/* Property-Pages */}
 
           {/* Pride-of-Chennai */}
 
           <Route path="/pride-of-chennai" element={<PrideofChennai />} />
-
+          <Route   path="/superchennai-neighbourhoods" element={<Neighbourhoods />} />
           <Route path="/chennai-app" element={<ChennaiApp />} />
-
           {/* Pride-of-Chennai */}
         </Routes>
 

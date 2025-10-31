@@ -6337,8 +6337,7 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
     RegisterLink: "",
     metaTitleEvent:
       "Gen - Z / Munawar Faruqui Live / Stand-Up Comedy Show",
-    metaDescriptionEvent:
-      "Catch Munawar Faruqui live in Chennai for a night of laughter, sharp wit, and unforgettable stand-up comedy in his show 'Dhandho'.",
+    metaDescriptionEvent:"Get ready for Gen-Z energy and roaring laughter with Munawar Faruqui Live – a stand-up comedy show full of truth, humour, and unstoppable entertainment.",
     conicallinkEvent: "/eventsdetails/216",
     siteLink:
       "https://in.bookmyshow.com/events/dhando-ft-munawar-faruqui/ET00425264",
@@ -7229,13 +7228,13 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
     url: "kavyam-dance-show-with-live-concert-in-chennai",
     id: 256,
     RegisterLink: "https://in.bookmyshow.com/events/kavyam/ET00466767",
-    metaTitleEvent: "Kāvyam Dance Show with Live Concert in Chennai",
+    metaTitleEvent: "Kavyam Live Concert Chennai / Dance Show / Super Chennai",
     metaDescriptionEvent:
       "Kāvyam is a unique dance show and live concert in Chennai where movement meets music, stillness meets sound, tradition meets performance.",
     conicallinkEvent: "/eventsdetails/256",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/kavyam-dance-show-with-live-concert-in-chennai",
-    EventsCalendarTitle: "Kāvyam Performance",
+    EventsCalendarTitle: "Kāvyam Dance Show with Live Concert in Chennai",
     EventsCalendarContent:
       "Timeless compositions by legendary masters find new life through the expressive language of Bharatanatyam in the *Kāvyam* performance, conceived and choreographed by Shijith Nambiar.",
     EventsCalendarMonth: "1 Nov 2025",
@@ -7258,7 +7257,7 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
     RegisterLink:
       "https://in.bookmyshow.com/events/akshay-srivastava-live-standup-comedy/ET00430844",
     metaTitleEvent: "Akshay Srivastava Live / A Stand-Up Comedy Show / Super Chennai",
-    metaDescriptionEvent:"Akshay Srivastava Live is a stand-up comedy show with witty storytelling, fresh jokes, and relatable humour in Hindi and English, promising a fun laughter-filled evening.",
+    metaDescriptionEvent:"Akshay Srivastava Live brings witty storytelling, fresh jokes, and relatable humour in Hindi and English for a laughter-filled stand-up comedy evening.",
     conicallinkEvent: "/eventsdetails/257",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/akshay-srivastava-live-standup-comedy-show-chennai",

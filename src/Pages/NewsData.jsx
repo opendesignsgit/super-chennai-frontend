@@ -948,6 +948,28 @@ export const NammaStoreiesnewsArticle = [
 ];
 
 export const newsPhotos = [
+
+  
+  {
+    id: -15,
+    Company: "October 31",
+    EventsCalendarTitle:
+      "Playback singer Chinmayi recognised as Icon of the Month",
+    EventsCalendarContent: "Playback singer Chinmayi Sripada was honoured with the ‘Icon of the Month’ award by Super Chennai, a not-for-profit initiative. During the event, she reflected on her connection with Chennai, describing it as both nurturing and challenging. Chinmayi emphasized the need to celebrate local achievements in arts, sports, and culture, highlighting under-recognized individuals like folk artists and athletes such as Santhi Soundarajan. She also voiced her wish to end manual scavenging, starting with Chennai. Expressing gratitude to the city’s Gen Z for their support, she appreciated their authenticity and encouragement. Navin Kumar of Super Chennai noted that the initiative aims to showcase Chennaiites who have made a global impact.",
+    EventsCalendarMonth: "26 July",
+    EventsCalendarTime: "07:00 PM",
+    EventsCalendarCategory: "Playback singer Chinmayi Sripada was honoured with the ‘Icon of the Month’ award by Super Chennai, a not-for-profit initiative. During the event, she reflected on her connection with Chennai, describing it as both nurturing and challenging. Chinmayi emphasized the need to celebrate local achievements in arts, sports, and culture, highlighting under-recognized individuals like folk artists and athletes such as Santhi Soundarajan. She also voiced her wish to end manual scavenging, starting with Chennai. Expressing gratitude to the city’s Gen Z for their support, she appreciated their authenticity and encouragement. Navin Kumar of Super Chennai noted that the initiative aims to showcase Chennaiites who have made a global impact.",
+    image: "/images/NewsLetter/Chinmayi-srpaada.jpg",
+    image1: "/images/NewsLetter/Chinmayi-srpaada.jpg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "3 years +",
+    rleigion: "Comedy",
+    aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
+  },
+
   {
     id: -15,
     Company: "August 25",
@@ -3012,6 +3034,24 @@ export const nammaStoriesNewsEPaper = [
 ];
 
 export const youtubeChannel = [
+    {
+    id: -10,
+    Company: "Published On: October 31, 2025 ",
+    EventsCalendarTitle: "Polimer News",
+    EventsCalendarContent: ".",
+    EventsCalendarMonth: "31 Oct",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/Youtube-Videos/sripaada-kannaginagar.jpg",
+    image1: "/images/Youtube-Videos/sripaada-kannaginagar.jpg",
+    link: "https://www.youtube.com/watch?v=mQx4-5mB1dg",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "3 years +",
+    rleigion: "Comedy",
+    aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
+  },
   {
     id: -9,
     Company: "Published On: September 23, 2025 ",

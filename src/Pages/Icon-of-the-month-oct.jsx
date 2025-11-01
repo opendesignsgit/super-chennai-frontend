@@ -22,7 +22,7 @@ export default function IconofthemonthOct() {
 
   const infoData = [
     {
-      desc: "Chinmayi Sripada is a celebrated Indian playback singer whose voice has touched hearts across generations. Born on September 10, 1984, in Mumbai and raised in Chennai, she trained in Carnatic music from a young age. Her breakthrough came with the song Oru Deivam Thantha Poovae from Kannathil Muthamittal (2002), composed by A. R. Rahman, which showcased her soulful and versatile singing.",
+      desc: "Chinmayi Sripaada is a celebrated Indian playback singer whose voice has touched hearts across generations. Born on September 10, 1984, in Mumbai and raised in Chennai, she trained in Carnatic music from a young age. Her breakthrough came with the song Oru Deivam Thantha Poovae from Kannathil Muthamittal (2002), composed by A. R. Rahman, which showcased her soulful and versatile singing.",
     },
     {
       desc: "Over the years, she has sung in Tamil, Telugu, Hindi, Kannada, Malayalam, and Marathi, creating melodies that combine emotion, energy, and storytelling. Beyond playback singing, Chinmayi has provided voiceovers for leading actresses and made television appearances, mentoring emerging talents. Her career reflects both artistic brilliance and a dedication to nurturing the next generation of performers.",
@@ -164,7 +164,7 @@ export default function IconofthemonthOct() {
   const expendingData = [
     {
       description: [
-        "Chinmayi Sripada is celebrated not just for her musical talent",
+        "Chinmayi Sripaada is celebrated not just for her musical talent",
         "but also for her courage, versatility, and positive impact on society.",
       ],
     },
@@ -288,13 +288,13 @@ export default function IconofthemonthOct() {
     <>
       <Helmet>
         <title>
-        Chinmayi Sripada’s Soulful Voice of India - Icon of the Month 
+        Chinmayi Sripaada’s Soulful Voice of India - Icon of the Month 
         </title>
         <meta
           name="description"
-          content=" Chinmayi Sripada’s journey showcases true excellence award winning singer, mentor, entrepreneur, and advocate for social justice and women’s rights."
+          content=" Chinmayi Sripaada’s journey showcases true excellence award winning singer, mentor, entrepreneur, and advocate for social justice and women’s rights."
         />
-        <link rel="canonical" href="/icon-of-the-july-month" />
+        <link rel="canonical" href="/icon-of-the-oct-month-2025" />
       </Helmet>
       <div className="InvestPageId">
         <div
@@ -318,11 +318,11 @@ export default function IconofthemonthOct() {
           <div className="InvestChennaiContainerFlex aboutIntro">
             <div className="InvestChennaiContent text-center">
               <h2>
-                {/* Icon of the Month – Chinmayi Sripada */}
+                {/* Icon of the Month – Chinmayi Sripaada */}
                 <br /> <small>Where Soul Meets Melody</small>
               </h2>
               <p>
-                <strong>Chinmayi Sripada</strong> is a celebrated Indian{" "}
+                <strong>Chinmayi Sripaada</strong> is a celebrated Indian{" "}
                 <strong>playback singer</strong>,<strong>voice artist</strong>,
                 and <strong>entrepreneur</strong> known for her soulful
                 renditions across multiple languages. From{" "}

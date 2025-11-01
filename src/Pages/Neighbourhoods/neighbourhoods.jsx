@@ -28,18 +28,15 @@ export default function Neighbourhoods() {
                 src="/images/pride-of-chennai/pride-chennai-banner.jpg"
                 alt=""
               />
-            
             </div>
             <div className="accodoamationBannerContainer">
               <div className="accodoamationBannerText">
-                <h3>Pride of Chennai</h3>
+                <h3>Neighbourhood</h3>
                 <div className="breadCrum">
-                  <Link to="/">Home</Link> -{" "}
-                  <a href="">Pride of Chennai</a>{" "}
+                  <Link to="/">Home</Link> - <a href="">Neighbourhood</a>{" "}
                 </div>
               </div>
             </div>
-         
           </section>
 
           <div className="visitIntroParaSection detailIntro !mt-0">
@@ -52,18 +49,21 @@ export default function Neighbourhoods() {
                 }`}
                 ref={bgTextRef}
               >
-                <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
+                <p>
+                  Neighbourhood &nbsp; in Chennai &nbsp; Neighbourhood &nbsp; in
+                  Chennai
+                </p>
               </div>
               <div className="workIntro !pb-0">
-                <h3>Tradition Meets Innovation Daily</h3>
+                <h3>Neighbourhood</h3>
                 <p>
-                  Celebrating the city’s rich culture and inspiring
-                  achievements, Chennai stands as a beacon of tradition and
-                  innovation. From its historic landmarks to its modern
-                  contributions in art, music, and education, the city continues
-                  to inspire pride among its residents and admirers alike.
-                  Chennai’s spirit, talent, and resilience make its pride truly
-                  unmatched.
+                  Explore Chennai’s Neighbourhoods — Every Location Tells Its
+                  Own Story.
+                </p>{" "}
+                <p>
+                  Discover the essence of Chennai through its diverse
+                  neighbourhoods — each location blending culture, comfort, and
+                  convenience into vibrant urban living experiences.
                 </p>
               </div>
             </div>

@@ -3,7 +3,9 @@ import { useEvents } from "../Events/Hooks/UseEvents";
 import { API_BASE_URL } from "../../../config";
 import EventsFilterSidebar from "./Components/EventsFilterSidebar";
 import FilterTopbar from "./Components/FilterTopbar";
-import { useEventCategories } from "../Events/Hooks/useEventCategories"; 
+import { useEventCategories } from "../Events/Hooks/useEventCategories";
+import { motion, AnimatePresence } from "framer-motion";
+
 const EventsPage = () => {
   const [filters, setFilters] = useState({ category: "" });
   const [sortBy, setSortBy] = useState("");
@@ -12,40 +14,23 @@ const EventsPage = () => {
   const upcomingEvents = [...events].sort((a, b) => b.id - a.id);
   const { categories } = useEventCategories();
 
+  const categoryTitles =
+    categories?.length > 0
+      ? ["All", ...categories.map((cat) => cat.title.trim())]
+      : null;
 
-const categoryTitles =
-  categories?.length > 0
-    ? ["All", ...categories.map((cat) => cat.title.trim())]
-    : null;
+  console.log("categoryTitles", categoryTitles);
 
-console.log("categoryTitles", categoryTitles);
-
-  
-
-  // const categories = [
-  //   "All",
-  //   "Music",
-  //   "Art",
-  //   "Sports",
-  //   "Technology",
-  //   "Festival",
-  //   "Workshop",
-  //   "Theatre",
-
-  //   "Sports",
-  //   "Technology",
-  //   "Festival",
-  //   "Workshop",
-  //   "Theatre",
-  //   "Sports",
-  //   "Technology",
-  //   "Festival",
-  //   "Workshop",
-  //   "Theatre",
-  // ];
 
   const handleCategoryChange = (category) => {
-    setFilters(category === "All" ? {} : { category });
+    
+      console.log("🟢 handleCategoryChange called with:", category);
+
+    if (category === "All") {
+      setFilters({});
+    } else {
+      setFilters({ category }); 
+    }
   };
 
   return (
@@ -109,71 +94,108 @@ console.log("categoryTitles", categoryTitles);
             {/* Event Cards */}
             <div className="EventsListboxs flex flex-wrap justify-center">
               {!loading && upcomingEvents.length === 0 && (
-                <p className="text-gray-500">No events found.</p>
+                <div className="w-full flex flex-col items-center justify-center py-16 text-center">
+                  <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-[#a44294]/10">
+                    <svg
+                      className="w-8 h-8 text-[#a44294]"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9.75 9.75L14.25 14.25M14.25 9.75L9.75 14.25M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                    No events found
+                  </h3>
+                  <p className="text-gray-500 max-w-md">
+                    Try selecting a different category or adjust your filters to
+                    explore more events happening around Chennai.
+                  </p>
+                </div>
               )}
 
-              {upcomingEvents.map((card, index) => {
-                const eventData = card.event || {};
-                const imageUrl = eventData.image
-                  ? `${API_BASE_URL}${eventData.image.url}`
-                  : "/images/no-image.jpg";
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={filters.category || "all"}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -30 }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                  className="EventsListboxs flex flex-wrap justify-center"
+                >
+                  {upcomingEvents.map((card, index) => {
+                    const eventData = card.event || {};
+                    const imageUrl = eventData.image
+                      ? `${API_BASE_URL}${eventData.image.url}`
+                      : "/images/no-image.jpg";
 
-                const eventDate = eventData.eventDate
-                  ? new Date(eventData.eventDate).toLocaleDateString("en-IN", {
-                      day: "numeric",
-                      month: "short",
-                      year: "numeric",
-                    })
-                  : "TBA";
+                    const eventDate = eventData.eventDate
+                      ? new Date(eventData.eventDate).toLocaleDateString(
+                          "en-IN",
+                          {
+                            day: "numeric",
+                            month: "short",
+                            year: "numeric",
+                          }
+                        )
+                      : "TBA";
 
-                return (
-                  <div
-                    key={index}
-                    className="EventsItems-superchennai bg-white shadow hover:shadow-lg transition-all w-[300px]"
-                  >
-                    <div className="relative w-full h-[200px]">
-                      <a
-                        href={`/events-in-chennai/${card.slug}`}
-                        state={{ card }}
+                    return (
+                      <div
+                        key={index}
+                        className="EventsItems-superchennai bg-white shadow hover:shadow-lg transition-all w-[300px]"
                       >
-                        <img
-                          src={imageUrl}
-                          alt={eventData.title || card.title}
-                          className="w-full h-full object-cover rounded-t-lg"
-                        />
-                      </a>
-                      <div className="absolute top-3 right-3 evntechnolg bg-[#a44294] text-white px-2 py-1 rounded text-xs">
-                        {eventData.category || "General"}
-                      </div>
-                    </div>
+                        <div className="relative w-full h-[200px]">
+                          <a
+                            href={`/events-in-chennai/${card.slug}`}
+                            state={{ card }}
+                          >
+                            <img
+                              src={imageUrl}
+                              alt={eventData.title || card.title}
+                              className="w-full h-full object-cover rounded-t-lg"
+                            />
+                          </a>
+                          <div className="absolute top-3 right-3 evntechnolg bg-[#a44294] text-white px-2 py-1 rounded text-xs">
+                            {eventData.category || "General"}
+                          </div>
+                        </div>
 
-                    <div className="p-4 flex flex-col items-start">
-                      <div className="datimeContbox flex items-center text-sm text-gray-600 mb-2">
-                        <div className="dtDaymonth">{eventDate}</div>
-                        <div className="mx-2 text-gray-400">|</div>
-                        <div className="dtTimess">
-                          {eventData.details?.duration || "N/A"}
+                        <div className="p-4 flex flex-col items-start">
+                          <div className="datimeContbox flex items-center text-sm text-gray-600 mb-2">
+                            <div className="dtDaymonth">{eventDate}</div>
+                            <div className="mx-2 text-gray-400">|</div>
+                            <div className="dtTimess">
+                              {eventData.details?.duration || "N/A"}
+                            </div>
+                          </div>
+
+                          <h3 className="EveItemtitles font-semibold text-lg mb-1">
+                            <a
+                              href={`/events-in-chennai/${card.slug}`}
+                              state={{ card }}
+                              className="hover:text-[#a44294]"
+                            >
+                              {eventData.title || card.title}
+                            </a>
+                          </h3>
+
+                          <h4 className="EveItemDescrip text-gray-600 text-sm">
+                            {eventData.description ||
+                              "Discover an amazing experience in Chennai."}
+                          </h4>
                         </div>
                       </div>
-
-                      <h3 className="EveItemtitles font-semibold text-lg mb-1">
-                        <a
-                          href={`/events-in-chennai/${card.slug}`}
-                          state={{ card }}
-                          className="hover:text-[#a44294]"
-                        >
-                          {eventData.title || card.title}
-                        </a>
-                      </h3>
-
-                      <h4 className="EveItemDescrip text-gray-600 text-sm">
-                        {eventData.description ||
-                          "Discover an amazing experience in Chennai."}
-                      </h4>
-                    </div>
-                  </div>
-                );
-              })}
+                    );
+                  })}
+                </motion.div>
+              </AnimatePresence>
             </div>
           </div>
         </div>

@@ -10,25 +10,29 @@ export const fetchEvents = async (filters = {}, sortBy = "") => {
   try {
     const params = { limit: 0 };
 
+    console.log("🔵 Sending filters to backend:", filters);
+
     // ✅ Filter by location
     if (filters.locations?.length) {
       params["where[event.details.location][in]"] = filters.locations.join(",");
     }
 
-    // ✅ Filter by category (if applicable)
-    if (filters.categories?.length) {
-      params["where[event.category][in]"] = filters.categories.join(",");
-    }
-    
+   if (filters.eventsCategory?.length) {
+     params["where[eventsCategory][in]"] = filters.eventsCategory.join(",");
+   }
+
 
     // ✅ Optional sorting
     if (sortBy) {
       params["sort"] = sortBy;
     }
 
+    console.log("🛰️ Final params sent to API:", params);
+
     const { data } = await axios.get(`${API_URL}/events`, { params });
 
-    // ✅ Return structured pagination + data
+    console.log("✅ API returned:", data?.docs?.length, "events");
+
     return {
       docs: data?.docs || [],
       totalDocs: data?.totalDocs || 0,

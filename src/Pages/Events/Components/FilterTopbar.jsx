@@ -23,6 +23,8 @@ const FilterTopbar = ({
     );
   }
 
+  console.log("categories==========",categories)
+
   return (
     <section className="filterTopbar bg-gray-100 py-4 border-b border-gray-200">
       <div className="container max-w-7xl mx-auto flex flex-wrap justify-center gap-3">

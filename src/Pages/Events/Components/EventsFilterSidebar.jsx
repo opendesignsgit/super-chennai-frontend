@@ -103,7 +103,7 @@ const EventsFilterSidebar = () => {
 
       {/* Browse by Venues Button */}
       <button className="w-full mt-4 border border-pink-600 text-pink-600 py-2 rounded-md hover:bg-pink-50 transition">
-        Browse by Venues
+        Browse Old Events
       </button>
     </aside>
   );

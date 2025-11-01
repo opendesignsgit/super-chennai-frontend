@@ -270,7 +270,7 @@ import ScrollToHashElement from "./Components/ScrollToHashElement";
 import VedanthangalBirdSantuary from "./Pages/SubPages/LivePages/Vedanthangal-bird-santaury";
 import SuperChennaiEvents from "./Pages/SuperChennaiEvents";
 import Iconofthemonth from "./Pages/Icon-of-the-month-july";
-// import IconofthemonthOct from "./Pages/Icon-of-the-month-oct";
+import IconofthemonthOct from "./Pages/Icon-of-the-month-oct";
 
 import IconofthemonthAugust from "./Pages/Icon-of-the-month-august";
 import Iconsofthemonth from "./Pages/iconsofthemonth";
@@ -610,7 +610,7 @@ function App() {
             footerReached ? "footerreached" : ""
           }`}
         >
-          <a href="/super-chennai-icon-of-sep-2025">
+          <a href="/icon-of-the-oct-month-2025">
             <img src="/images/icon-of-the-month.png" alt="Star of the month" />
           </a>
         </div>
@@ -1211,7 +1211,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/icon-of-the-july-month" element={<Iconofthemonth />} />
 
-          {/* <Route path="/icon-of-the-Oct-month" element={<IconofthemonthOct />} /> */}
+          <Route path="/icon-of-the-oct-month-2025" element={<IconofthemonthOct />} />
 
           <Route
             path="/super-chennai-icon-of-aug-2025"

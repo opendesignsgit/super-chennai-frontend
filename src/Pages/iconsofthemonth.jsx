@@ -139,9 +139,9 @@ export default function Iconsofthemonth() {
               </a>
 
               {/*############## CHINNAMAYI ######## */}
-              {/* <a
+              <a
                 className="superchennaiEventsSection"
-                href="/icon-of-the-Oct-month"
+                href="/icon-of-the-oct-month-2025"
               >
 
                 <div
@@ -149,7 +149,7 @@ export default function Iconsofthemonth() {
                   style={{ overflow: "hidden" }}
                 >
                   <img
-                    src="/images/events/image-inner.jpg"
+                    src="/images/events/chinmayi-indian-singer.jpg"
                     alt="Left Image"
                     className="rounded-xl mb-3"
                   />
@@ -157,7 +157,7 @@ export default function Iconsofthemonth() {
                     Icon of the Month - Oct 2025
                   </p>
                 </div>
-              </a> */}
+              </a>
             </div>
           </div>
         </section>

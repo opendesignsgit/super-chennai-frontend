@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { useEvents } from "../Hooks/UseEvents";
+import { LANGUAGE_OPTIONS } from "../constants/languages";
+
 
 const FilterSection = ({ title, children, onClear }) => {
+const { events, totalResults, loading } = useEvents();
+  console.log("totalfilter side data",events)
   const [open, setOpen] = useState(true);
-
   return (
     <div className="bg-white rounded-2xl p-4 mb-3 shadow-sm">
       <div className="flex justify-between items-center mb-3">
@@ -12,11 +16,7 @@ const FilterSection = ({ title, children, onClear }) => {
           className="flex items-center gap-2 font-medium text-gray-700"
         >
           {title}
-          {open ? (
-            <ChevronUp className="w-4 h-4 text-gray-500" />
-          ) : (
-            <ChevronDown className="w-4 h-4 text-gray-500" />
-          )}
+          {open ? <ChevronUp className="w-4 h-4 text-gray-500" /> : <ChevronDown className="w-4 h-4 text-gray-500" />}
         </button>
         <button
           onClick={onClear}
@@ -30,7 +30,33 @@ const FilterSection = ({ title, children, onClear }) => {
   );
 };
 
-const EventsFilterSidebar = () => {
+const EventsFilterSidebar = ({ filters, setFilters }) => {
+  const handleLanguageChange = (lang) => {
+    setFilters((prev) => {
+      const selected = new Set(prev.languages || []);
+      if (selected.has(lang)) selected.delete(lang);
+      else selected.add(lang);
+      return { ...prev, languages: Array.from(selected) };
+    });
+  };
+
+  const handleCategoryChange = (cat) => {
+    setFilters((prev) => {
+      const selected = new Set(prev.categories || []);
+      if (selected.has(cat)) selected.delete(cat);
+      else selected.add(cat);
+      return { ...prev, categories: Array.from(selected) };
+    });
+  };
+
+  const handlePriceChange = (price) => {
+    setFilters((prev) => ({ ...prev, price }));
+  };
+
+  const clearCategory = () => setFilters((prev) => ({ ...prev, categories: [] }));
+  const clearLanguage = () => setFilters((prev) => ({ ...prev, languages: [] }));
+  const clearPrice = () => setFilters((prev) => ({ ...prev, price: "" }));
+
   return (
     <aside className="w-[280px] bg-[#f9fafb] rounded-2xl p-4">
       <h3 className="text-xl font-semibold mb-4 text-gray-800">Filters</h3>
@@ -54,21 +80,38 @@ const EventsFilterSidebar = () => {
         </label>
       </FilterSection>
 
+
       {/* Languages */}
-      <FilterSection title="Languages" onClear={() => {}}>
-        {["Tamil", "English", "Hindi"].map((lang) => (
-          <label key={lang} className="flex items-center gap-2 text-sm text-gray-700">
-            <input type="checkbox" className="accent-pink-600" />
-            {lang}
+      <FilterSection title="Languages" onClear={clearLanguage}>
+        {LANGUAGE_OPTIONS.slice(0, 10).map(({ label, value }) => (
+          <label
+            key={value}
+            className="flex items-center gap-2 text-sm text-gray-700"
+          >
+            <input
+              type="checkbox"
+              checked={filters.languages?.includes(value)}
+              onChange={() => handleLanguageChange(value)}
+              className="accent-pink-600"
+            />
+            {label}
           </label>
         ))}
       </FilterSection>
 
       {/* Categories */}
-      <FilterSection title="Categories" onClear={() => {}}>
+      <FilterSection title="Categories" onClear={clearCategory}>
         {["Music", "Comedy", "Workshop", "Theatre"].map((cat) => (
-          <label key={cat} className="flex items-center gap-2 text-sm text-gray-700">
-            <input type="checkbox" className="accent-pink-600" />
+          <label
+            key={cat}
+            className="flex items-center gap-2 text-sm text-gray-700"
+          >
+            <input
+              type="checkbox"
+              checked={filters.categories?.includes(cat)}
+              onChange={() => handleCategoryChange(cat)}
+              className="accent-pink-600"
+            />
             {cat}
           </label>
         ))}
@@ -87,18 +130,22 @@ const EventsFilterSidebar = () => {
       </FilterSection>
 
       {/* Price */}
-      <FilterSection title="Price" onClear={() => {}}>
-        <div className="flex flex-col gap-2 text-sm text-gray-700">
-          <label className="flex items-center gap-2">
-            <input type="radio" name="price" className="accent-pink-600" /> Free
+      <FilterSection title="Price" onClear={clearPrice}>
+        {["Free", "Under ₹500", "₹500 - ₹1000"].map((range) => (
+          <label
+            key={range}
+            className="flex items-center gap-2 text-sm text-gray-700"
+          >
+            <input
+              type="radio"
+              name="price"
+              checked={filters.price === range}
+              onChange={() => handlePriceChange(range)}
+              className="accent-pink-600"
+            />
+            {range}
           </label>
-          <label className="flex items-center gap-2">
-            <input type="radio" name="price" className="accent-pink-600" /> Under ₹500
-          </label>
-          <label className="flex items-center gap-2">
-            <input type="radio" name="price" className="accent-pink-600" /> ₹500 - ₹1000
-          </label>
-        </div>
+        ))}
       </FilterSection>
 
       {/* Browse by Venues Button */}

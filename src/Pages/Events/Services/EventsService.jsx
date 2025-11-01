@@ -12,17 +12,97 @@ export const fetchEvents = async (filters = {}, sortBy = "") => {
 
     console.log("🔵 Sending filters to backend:", filters);
 
-    // ✅ Filter by location
+    // =========================
+    // 🎯 CATEGORY FILTER
+    // =========================
+    if (filters.categories?.length) {
+      // eventsCategory.slug — if your category slug is saved in `eventsCategory`
+      params["where[eventsCategory.slug][in]"] = filters.categories.join(",");
+    }
+
+    // =========================
+    // 🎯 LANGUAGE FILTER
+    // =========================
+    if (filters.languages?.length) {
+      // Adjust "language" field to your actual schema key
+      params["where[event.details.language][in]"] = filters.languages.join(",");
+    }
+
+    // =========================
+    // 🎯 LOCATION FILTER
+    // =========================
     if (filters.locations?.length) {
       params["where[event.details.location][in]"] = filters.locations.join(",");
     }
 
-   if (filters.eventsCategory?.length) {
-     params["where[eventsCategory][in]"] = filters.eventsCategory.join(",");
-   }
+    // =========================
+    // 🎯 PRICE FILTER
+    // =========================
+    if (filters.price) {
+      switch (filters.price) {
+        case "Free":
+          params["where[event.details.price][equals]"] = 0;
+          break;
+        case "Under ₹500":
+          params["where[event.details.price][lte]"] = 500;
+          break;
+        case "₹500 - ₹1000":
+          params["where[event.details.price][between]"] = "500,1000";
+          break;
+        default:
+          break;
+      }
+    }
 
+    // =========================
+    // 🎯 DATE FILTER
+    // =========================
+    if (filters.date) {
+      const today = new Date();
+      let start = null;
+      let end = null;
 
-    // ✅ Optional sorting
+      if (filters.date === "Today") {
+        start = new Date(today.setHours(0, 0, 0, 0));
+        end = new Date(today.setHours(23, 59, 59, 999));
+      } else if (filters.date === "Tomorrow") {
+        start = new Date();
+        start.setDate(start.getDate() + 1);
+        start.setHours(0, 0, 0, 0);
+        end = new Date(start);
+        end.setHours(23, 59, 59, 999);
+      } else if (filters.date === "This Weekend") {
+        const currentDay = today.getDay();
+        const daysUntilSaturday = 6 - currentDay;
+        start = new Date(today);
+        start.setDate(today.getDate() + daysUntilSaturday);
+        start.setHours(0, 0, 0, 0);
+
+        end = new Date(start);
+        end.setDate(start.getDate() + 1);
+        end.setHours(23, 59, 59, 999);
+      }
+
+      if (start && end) {
+        params["where[event.eventDate][greater_than_equal]"] = start.toISOString();
+        params["where[event.eventDate][less_than_equal]"] = end.toISOString();
+      }
+    }
+
+    // =========================
+    // 🎯 FREE ENTRY / FAMILY FRIENDLY
+    // =========================
+    if (filters.freeEntry) {
+      params["where[event.details.isFree][equals]"] = true;
+    }
+
+    if (filters.familyFriendly) {
+      params["where[event.details.familyFriendly][equals]"] = true;
+    }
+
+    // =========================
+    // 🎯 SORTING
+    // =========================
     if (sortBy) {
       params["sort"] = sortBy;
     }

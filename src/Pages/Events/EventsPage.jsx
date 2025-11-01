@@ -5,7 +5,7 @@ import EventsFilterSidebar from "./Components/EventsFilterSidebar";
 import FilterTopbar from "./Components/FilterTopbar";
 import { useEventCategories } from "../Events/Hooks/useEventCategories";
 import { motion, AnimatePresence } from "framer-motion";
-
+import SidebarModal from "./Components/SidebarModal"
 const EventsPage = () => {
   const [filters, setFilters] = useState({ category: "" });
   const [sortBy, setSortBy] = useState("");
@@ -13,6 +13,7 @@ const EventsPage = () => {
 
   const upcomingEvents = [...events].sort((a, b) => b.id - a.id);
   const { categories } = useEventCategories();
+const [showSidebar, setShowSidebar] = useState(false);
 
   const categoryTitles =
     categories?.length > 0
@@ -71,12 +72,21 @@ const EventsPage = () => {
         />
         <div className="container max-w-7xl mx-auto flex flex-row gap-6 p-2">
           {/* === LEFT SIDEBAR === */}
-          <aside className="w-[280px] shrink-0">
-            <EventsFilterSidebar />
+    
+          <aside className="hidden md:block w-[280px] shrink-0">
+            <EventsFilterSidebar filters={filters} setFilters={setFilters} />
           </aside>
 
           {/* === RIGHT CONTENT === */}
           <div className="flex-1">
+            <div className="flex justify-between items-center mb-3 md:hidden">
+              <button
+                onClick={() => setShowSidebar(true)}
+                className="px-3 py-1.5 bg-[#a44294] text-white rounded-lg text-sm"
+              >
+                Filters
+              </button>
+            </div>
             <div className="sidebarrightCards">
               <span>
                 Showing <strong>{totalResults}</strong>{" "}
@@ -127,7 +137,7 @@ const EventsPage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -30 }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
-                  className="EventsListboxs flex flex-wrap justify-center"
+                  className="EventsListboxs flex flex-wrap justify-center sm:grid-cols-2 md:grid-cols-3"
                 >
                   {upcomingEvents.map((card, index) => {
                     const eventData = card.event || {};
@@ -151,7 +161,7 @@ const EventsPage = () => {
                         key={index}
                         className="EventsItems-superchennai bg-white shadow hover:shadow-lg transition-all w-[300px]"
                       >
-                        <div className="relative w-full h-[200px]">
+                        <div className="relative w-full h-[400px]">
                           <a
                             href={`/events-in-chennai/${card.slug}`}
                             state={{ card }}
@@ -159,7 +169,7 @@ const EventsPage = () => {
                             <img
                               src={imageUrl}
                               alt={eventData.title || card.title}
-                              className="w-full h-full object-cover rounded-t-lg"
+                              className="h-[400px] w-auto object-cover rounded-t-lg"
                             />
                           </a>
                           <div className="absolute top-3 right-3 evntechnolg bg-[#a44294] text-white px-2 py-1 rounded text-xs">
@@ -199,6 +209,13 @@ const EventsPage = () => {
             </div>
           </div>
         </div>
+
+        <SidebarModal
+          open={showSidebar}
+          onClose={() => setShowSidebar(false)}
+          filters={filters}
+          setFilters={setFilters}
+        />
       </section>
     </>
   );

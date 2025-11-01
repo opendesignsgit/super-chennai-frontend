@@ -14,7 +14,7 @@ import Utilitiesinchennai1 from "../Components/InvestSideBar";
 import Whychennaitab from "../Components/whychennaitab";
 import { Helmet } from "react-helmet-async";
 import EventFunction from "./EventFunction";
-import IconoftheMonthJuly from "./IconoftheMonthJulySlider";
+import IconoftheMonthOct from "./IconoftheMonthOctSlider";
 
 export default function IconofthemonthOct() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -443,7 +443,7 @@ export default function IconofthemonthOct() {
             </div>
           </div>
         </section>
-
+        <IconoftheMonthOct/>
         <InstagramReelsMarquee />
         <Becameavolunteer />
       </div>

@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet-async";
-
+import VolunteerGallery from "../Components/cardScroller/VolunteerGallery"
 export default function Volunteer() {
   const [scrollDir, setScrollDir] = useState("left");
   const [isOpen, setIsOpen] = useState(false);
@@ -292,7 +292,8 @@ export default function Volunteer() {
           </div>
         </div>
       </div>
-
+    
+     <VolunteerGallery/>
       <div
         className="VolunterPageBecameVolunteerBg"
         data-aos="fade-up"

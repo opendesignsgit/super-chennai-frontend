@@ -15,7 +15,19 @@ const EventsPage = () => {
   const [sortBy, setSortBy] = useState("");
   const { events, totalResults, loading } = useEvents(filters, sortBy);
 
-  const upcomingEvents = [...events].sort((a, b) => b.id - a.id);
+  // const upcomingEvents = [...events].sort((a, b) => b.id - a.id);
+
+  const upcomingEvents = [...events].sort((a, b) => {
+    const dateA = new Date(
+      a.event?.details?.eventDate || a.event?.eventDate || 0
+    );
+    const dateB = new Date(
+      b.event?.details?.eventDate || b.event?.eventDate || 0
+    );
+
+    return dateA - dateB; // Oldest first (upcoming)
+  });
+
   const { categories } = useEventCategories();
   const [showSidebar, setShowSidebar] = useState(false);
 

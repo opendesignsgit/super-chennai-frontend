@@ -1,18 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-/**
- * Reusable FilterTopbar Component
- * @param {Array|null} categories - List of category names (or null)
- * @param {Object} filters - Current filter state (e.g., { category: "Music" })
- * @param {Function} onCategoryChange - Callback when category changes
- * @param {String} activeColor - Optional (Tailwind color), default: #a44294
- */
 const FilterTopbar = ({
   categories,
   filters = {},
   onCategoryChange,
   activeColor = "#a44294",
+  initialVisible = 8, 
 }) => {
+  const [showAll, setShowAll] = useState(false);
+
   if (!Array.isArray(categories) || categories.length === 0) {
     return (
       <section className="filterTopbar bg-gray-100 py-4 border-b border-gray-200">
@@ -23,34 +19,45 @@ const FilterTopbar = ({
     );
   }
 
-  console.log("categories==========",categories)
+  // Determine which categories to display
+  const visibleCategories = showAll ? categories : categories.slice(0, initialVisible);
 
   return (
     <section className="filterTopbar bg-gray-100 py-4 border-b border-gray-200">
       <div className="container max-w-7xl mx-auto flex flex-wrap justify-center gap-3">
-        {categories.map((category) => {
+        {visibleCategories.map((category) => {
           const isActive =
-            filters.category === category ||
-            (category === "All" && !filters.category);
+            category.id === "All"
+              ? !filters.categories || filters.categories.length === 0
+              : filters.categories?.includes(category.id);
 
           return (
             <button
-              key={category}
-              onClick={() => onCategoryChange(category)}
+              key={category.id}
+              onClick={() => onCategoryChange(category.id)}
               className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200 ${
                 isActive
                   ? "text-white shadow-md"
-                  : "bg-white text-gray-700 hover:bg-gray-50"
+                  : "text-gray-700 hover:bg-gray-50"
               }`}
               style={{
                 backgroundColor: isActive ? activeColor : "white",
                 borderColor: isActive ? activeColor : "#d1d5db",
               }}
             >
-              {category}
+              {category.title}
             </button>
           );
         })}
+
+        {categories.length > initialVisible && (
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-4 py-2 rounded-full text-sm font-medium border border-gray-300 text-gray-700 hover:bg-gray-50"
+          >
+            {showAll ? "Show Less" : "Show More"}
+          </button>
+        )}
       </div>
     </section>
   );

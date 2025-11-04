@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { fetchEvents } from "../Services/EventsService";
+import { fetchEventBySlug} from "../Services/EventsService";
 
 /**
  * ✅ Custom hook to fetch and manage events with filters & sorting
@@ -46,7 +47,35 @@ export const useEvents = (filters = {}, sortBy = "") => {
       isMounted = false;
       controller.abort();
     };
-  }, [JSON.stringify(filters), sortBy]); // ✅ Prevents unnecessary re-renders
+  }, [JSON.stringify(filters), sortBy]); 
 
   return { events, totalResults, loading, error };
+};
+
+/**
+ * ✅ React hook to fetch event data by slug
+ */
+export const useEventBySlug = (slug) => {
+  const [event, setEvent] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (!slug) return;
+
+    const loadEvent = async () => {
+      setLoading(true);
+      try {
+        const data = await fetchEventBySlug(slug);
+        setEvent(data);
+      } catch (err) {
+        console.error("Failed to fetch event:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadEvent();
+  }, [slug]);
+
+  return { event, loading };
 };

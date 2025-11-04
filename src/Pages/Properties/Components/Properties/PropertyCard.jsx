@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "react-loading-skeleton/dist/skeleton.css";
 import { Link } from "react-router-dom";
-import { API_BASE_URL } from "../../config";
+import { API_BASE_URL } from "../../../../../config";
 import { formatPrice } from "../../utils/formatPrice";
 import ContactForm from "../forms/ContactForm";
 import { formatLabel } from "../../utils/formatLabel";
@@ -22,7 +22,12 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
   const price = property?.price
     ? `₹${formatPrice(property.price)}`
     : "Price on Request";
-  const type = property.propertyType?.value || property.type || "";
+
+  const MAX_BADGES = 3;
+  const typeArray = property.propertyType;
+  const type = Array.isArray(typeArray)
+    ? typeArray.map((item) => item.value).join(", ")
+    : typeArray?.value || property.type || "";
   const status = property.society?.possessionStatus || property.status || null;
 
   
@@ -113,7 +118,41 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
               {property.commercialType && (
                 <span>{property.commercialType}</span>
               )}
-              <span>{type}</span>
+              {/* <span>{type}</span> */}
+              <div>
+                <h3>{property.name}</h3>
+                <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                  {Array.isArray(property.propertyType) &&
+                    property.propertyType.slice(0, MAX_BADGES).map((item) => (
+                      <span
+                        key={item.id}
+                        style={{
+                          background: "#e6f0ff",
+                          color: "#003366",
+                          padding: "4px 10px",
+                          borderRadius: "12px",
+                          fontSize: "14px",
+                        }}
+                      >
+                        {item.value}
+                      </span>
+                    ))}
+
+                  {property.propertyType.length > MAX_BADGES && (
+                    <span
+                      style={{
+                        background: "#003366",
+                        color: "#fff",
+                        padding: "4px 10px",
+                        borderRadius: "12px",
+                        fontSize: "14px",
+                      }}
+                    >
+                      +{property.propertyType.length - MAX_BADGES} more
+                    </span>
+                  )}
+                </div>
+              </div>
               <span>{status}</span>
             </div>
           </div>
@@ -175,7 +214,7 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
                     ? property.society?.externalUrl || propertyLink
                     : propertyLink
                 }
-                target={property.officialView }
+                target={property.officialView}
                 rel={property.officialView ? "noopener noreferrer" : undefined}
               >
                 <button

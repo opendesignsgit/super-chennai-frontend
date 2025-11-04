@@ -218,7 +218,7 @@ const applianceIcons = {
 
 import { useEffect } from "react";
 import "./Styles/PropertyDetailPage.css";
-import { API_BASE_URL } from "./config";
+import { API_BASE_URL } from "./../../../config";
 
 const PropertyDetailPage = () => {
   const { id, slug } = useParams();
@@ -758,6 +758,31 @@ const PropertyDetailPage = () => {
                 </p>
               </div>
             )}
+
+            <div className="mt-3">
+              {/* Property Type */}
+              {property.propertyType && (
+                <div>
+                  <p className="text-gray-500 mb-1">Property Type</p>
+                  <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar">
+                    {Array.isArray(property.propertyType) ? (
+                      property.propertyType.map((item) => (
+                        <span
+                          key={item.id}
+                          className="bg-blue-50 text-blue-900 text-sm px-3 py-1 rounded-full whitespace-nowrap"
+                        >
+                          {item.value}
+                        </span>
+                      ))
+                    ) : (
+                      <span className="bg-blue-50 text-blue-900 text-sm px-3 py-1 rounded-full whitespace-nowrap">
+                        {property.propertyType?.value || property.type}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Buttons */}
@@ -1114,7 +1139,7 @@ const PropertyDetailPage = () => {
               roadWidth ||
               cornerPlot;
 
-            if (!hasAnyData) return null; 
+            if (!hasAnyData) return null;
 
             return (
               <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">

@@ -16,9 +16,9 @@ export const fetchEvents = async (filters = {}, sortBy = "") => {
     // 🎯 CATEGORY FILTER
     // =========================
     if (filters.categories?.length) {
-      // eventsCategory.slug — if your category slug is saved in `eventsCategory`
-      params["where[eventsCategory.slug][in]"] = filters.categories.join(",");
+      params["where[event.eventsCategory.id][in]"] = filters.categories.join(",");
     }
+
 
     // =========================
     // 🎯 LANGUAGE FILTER
@@ -26,6 +26,55 @@ export const fetchEvents = async (filters = {}, sortBy = "") => {
     if (filters.languages?.length) {
       // Adjust "language" field to your actual schema key
       params["where[event.details.language][in]"] = filters.languages.join(",");
+    }
+
+    // =========================
+    // 🎯 DATE FILTER (Today, Tomorrow, Weekend, Range)
+    // =========================
+    if (filters.date) {
+      const today = new Date();
+      let start = null;
+      let end = null;
+
+      if (filters.date === "Today") {
+        start = new Date(today.setHours(0, 0, 0, 0));
+        end = new Date(today.setHours(23, 59, 59, 999));
+      } else if (filters.date === "Tomorrow") {
+        start = new Date();
+        start.setDate(start.getDate() + 1);
+        start.setHours(0, 0, 0, 0);
+        end = new Date(start);
+        end.setHours(23, 59, 59, 999);
+      } else if (filters.date === "This Weekend") {
+        const day = today.getDay();
+        const daysUntilSaturday = (6 - day + 7) % 7; // Next Saturday
+        start = new Date(today);
+        start.setDate(today.getDate() + daysUntilSaturday);
+        start.setHours(0, 0, 0, 0);
+
+        end = new Date(start);
+        end.setDate(start.getDate() + 1); // Sunday
+        end.setHours(23, 59, 59, 999);
+      }
+
+      if (start && end) {
+        params["where[event.eventDate][greater_than_equal]"] =
+          start.toISOString();
+        params["where[event.eventDate][less_than_equal]"] = end.toISOString();
+      }
+    }
+
+    // =========================
+    // 🎯 CUSTOM DATE RANGE FILTER
+    // =========================
+    if (filters.startDate && filters.endDate) {
+      const start = new Date(filters.startDate);
+      const end = new Date(filters.endDate);
+      end.setHours(23, 59, 59, 999); // include entire end day
+
+      params["where[event.eventDate][greater_than_equal]"] =
+        start.toISOString();
+      params["where[event.eventDate][less_than_equal]"] = end.toISOString();
     }
 
     // =========================
@@ -84,7 +133,8 @@ export const fetchEvents = async (filters = {}, sortBy = "") => {
       }
 
       if (start && end) {
-        params["where[event.eventDate][greater_than_equal]"] = start.toISOString();
+        params["where[event.eventDate][greater_than_equal]"] =
+          start.toISOString();
         params["where[event.eventDate][less_than_equal]"] = end.toISOString();
       }
     }
@@ -106,6 +156,15 @@ export const fetchEvents = async (filters = {}, sortBy = "") => {
     if (sortBy) {
       params["sort"] = sortBy;
     }
+
+    // =========================
+    // 📅 OLD EVENTS FILTER
+    // =========================
+    if (filters.showOldEvents) {
+      const today = new Date();
+      params["where[event.eventDate][less_than]"] = today.toISOString();
+    }
+
 
     console.log("🛰️ Final params sent to API:", params);
 
@@ -150,23 +209,26 @@ export const fetchEventById = async (id) => {
   }
 };
 
+
 /**
  * ✅ Fetch a single event by slug
  */
 export const fetchEventBySlug = async (slug) => {
   if (!slug) return null;
+
   try {
     const { data } = await axios.get(`${API_URL}/events`, {
       params: { "where[slug][equals]": slug },
     });
 
-    // ✅ Always return the first document
+    // ✅ Return first document if found
     return data?.docs?.[0] || null;
   } catch (error) {
     console.error("❌ Error fetching event by slug:", error);
     return null;
   }
 };
+
 
 /**
  * ✅ Fetch all event locations

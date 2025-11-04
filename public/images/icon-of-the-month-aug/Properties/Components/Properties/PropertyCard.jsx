@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../Styles/PropertyCard.css";
-
-const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "https://demo.superchennai.com/";
+import API_BASE_URL from "../../../../../../config"
+// const API_BASE_URL =
+//   import.meta.env.VITE_API_URL || "https://demo.superchennai.com/";
 
 const getImageUrl = (img) => {
   if (!img?.url) return "/placeholder.jpg";

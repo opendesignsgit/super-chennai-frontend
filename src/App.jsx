@@ -118,6 +118,8 @@ import Wellness from "./Pages/SubPages/VisitPages/Wellness";
 import ScrollToTop from "./Components/ScrollToTop";
 import EventsHome from "./Pages/Events";
 import EventsPage from "./Pages/Events/EventsPage";
+import EventDetailPage from "./Pages/Events/EventsDetails"
+
 import EventsDetails from "./Pages/SubPages/EventsPages/EventsDetails";
 import TrendingDetails from "./Components/TrendingDetails";
 
@@ -260,8 +262,8 @@ import PulicatLake from "./Pages/SubPages/LivePages/PulicatLake";
 import KiteFestivalDay3 from "./Pages/KiteFestivalDay3";
 import KiteFestivalDay4 from "./Pages/KiteFestivalDay4";
 
-import BlogList from "./Components/BlogList";
-import BlogDetails from "./Components/BlogDetails";
+import BlogList from "./../src/Pages/Blogs/BlogList";
+import BlogDetails from "../src/Pages/Blogs/BlogDetails";
 import Kalpakkam from "./Pages/SubPages/LivePages/Kalpakkam";
 import Chidambaram from "./Pages/SubPages/LivePages/Chidambaram";
 import Tiruvannamalai from "./Pages/SubPages/LivePages/Tiruvannamalai";
@@ -650,6 +652,8 @@ function App() {
           <Route path="/work-in-chennai" element={<Work />} />
           <Route path="/events" element={<EventsHome />} />
           <Route path="/superchennai-events" element={<EventsPage />} />
+          <Route path="/superchennai-events-details/:slug" element={<EventDetailPage />} />
+
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />
           <Route path="/namma-stories" element={<NammaStories />} />

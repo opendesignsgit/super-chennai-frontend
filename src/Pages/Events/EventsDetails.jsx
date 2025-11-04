@@ -5,6 +5,7 @@ import { useEventBySlug } from "./Hooks/UseEvents";
 import { API_BASE_URL } from "../../../config";
 import AutoShrinkText from "../../Components/Text/AutoShrinkText"
 import { PropertyContent } from "../../Pages/Properties/Components/Properties/ritchText";
+import { formatEventTime } from "./Utils/formatTime";
 
 export default function EventsDetails() {
   const { slug } = useParams();
@@ -53,6 +54,7 @@ const API_URL = `${API_BASE_URL}`;
     : null;
   const genre = details?.genre || null;
   const duration = details?.duration || null;
+   const eventTime = details?.eventTime || null;
   const isFree = details?.isFree ? "Free Entry" : null;
   const familyFriendly = details?.familyFriendly ? "Family Friendly" : null;
   const categories =
@@ -67,9 +69,7 @@ const API_URL = `${API_BASE_URL}`;
         weekday: "long",
         day: "numeric",
         month: "short",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
+        year: "numeric",   
       })
     : null;
 
@@ -154,7 +154,7 @@ const API_URL = `${API_BASE_URL}`;
 
               {/* About Section */}
               <div className="EventContBox mb-10">
-                <h3 className="text-lg font-semibold mb-2">About The Event</h3>              
+                <h3 className="text-lg font mb-2">About The Event</h3>              
                 <div className="text-gray-500 text-sm">
                   <PropertyContent content={event.content || ""} />
                 </div>
@@ -171,6 +171,14 @@ const API_URL = `${API_BASE_URL}`;
                     label={formattedDate}
                   />
                 )}
+                  {formattedDate && (
+                  <InfoRow
+                    icon="/images/events/time.png"
+                    label={formatEventTime(eventTime)}
+                  />
+                )}
+ 
+
                 {duration && (
                   <InfoRow
                     icon="/images/events/duration.png"
@@ -204,12 +212,12 @@ const API_URL = `${API_BASE_URL}`;
                     label={locationLabel}
                   />
                 )}
-                {address && (
+                {/* {address && (
                   <InfoRow
                     icon="/images/events/location.png"
                     label={`Address: ${address}`}
                   />
-                )}
+                )} */}
               </div>
 
               {/* External Link */}

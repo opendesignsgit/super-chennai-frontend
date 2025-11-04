@@ -7,6 +7,9 @@ import { useEventCategories } from "../Events/Hooks/useEventCategories";
 import { motion, AnimatePresence } from "framer-motion";
 import SidebarModal from "./Components/SidebarModal";
 import TruncatedText from "../GlobalComponents/TruncatedText";
+import EventCardSkeleton from "./Components/Loader/EventCardSkeleton";
+import { formatEventTime } from "./Utils/formatTime";
+
 const EventsPage = () => {
   const [filters, setFilters] = useState({ categories: [] });
   const [sortBy, setSortBy] = useState("");
@@ -140,94 +143,102 @@ const EventsPage = () => {
                     explore more events happening around Chennai.
                   </p>
                 </div>
-              )}          
+              )}
               <motion.div
-               key={filters.category || "all"}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -30 }}
-                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                key={filters.category || "all"}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -30 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 justify-items-center"
               >
-                {upcomingEvents.map((card, index) => {
-                  const eventData = card.event || {};
-                  const imageUrl = eventData.image
-                    ? `${API_BASE_URL}${eventData.image.url}`
-                    : "../../../public/propertyDefault.png";
+                {loading &&
+                  Array.from({ length: 6 }).map((_, index) => (
+                    <EventCardSkeleton key={index} />
+                  ))}
 
-                  const eventDate = eventData.eventDate
-                    ? new Date(eventData.eventDate).toLocaleDateString(
-                        "en-IN",
-                        {
-                          day: "numeric",
-                          month: "short",
-                          year: "numeric",
-                        }
-                      )
-                    : "TBA";
+                {!loading &&
+                  upcomingEvents.map((card, index) => {
+                    const eventData = card.event || {};
+                    const imageUrl = eventData.image
+                      ? `${API_BASE_URL}${eventData.image.url}`
+                      : "../../../public/propertyDefault.png";
 
-                  return (
-                    <div
-                      key={index}
-                      className="bg-white shadow hover:shadow-lg transition-all w-full max-w-[300px] rounded-lg"
-                    >
-                      <div className="relative w-full h-[200px]">
-                        <a
-                          href={`/superchennai-events-details/${card.slug}`}
-                          state={{ card }}
-                        >
-                          <img
-                            src={imageUrl}
-                            alt={eventData.title || card.title}
-                            className="h-full w-full object-cover rounded-t-lg"
-                          />
-                        </a>
-                        {eventData?.eventsCategory?.length > 0 && (
-                          <div className="absolute top-3 right-3 flex flex-wrap gap-2">
-                            {eventData.eventsCategory.map((cat) => (
-                              <span
-                                key={cat.id}
-                                className="bg-gradient-to-r from-[#a44294] to-[#701c67] text-white px-2 py-1 rounded-full text-xs font-medium shadow-md"
-                              >
-                                {cat.title.trim()}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                      </div>
+                    const eventDate = eventData.eventDate
+                      ? new Date(eventData.eventDate).toLocaleDateString(
+                          "en-IN",
+                          {
+                            day: "numeric",
+                            month: "short",
+                            year: "numeric",
+                          }
+                        )
+                      : "TBA";
 
-                      <div className="p-4 flex flex-col items-start">
-                        <div className="datimeContbox flex items-center text-sm text-gray-600 mb-2">
-                          <div className="dtDaymonth">{eventDate}</div>
-                          <div className="mx-2 text-gray-400">|</div>
-                          <div className="dtTimess">
-                            {eventData.details?.duration || "N/A"}
-                          </div>
-                        </div>
-
-                        <h3 className="EveItemtitles font-semibold text-lg mb-1">
+                    return (
+                      <div
+                        key={index}
+                        className="bg-white shadow hover:shadow-lg transition-all w-full max-w-[300px] rounded-lg"
+                      >
+                        <div className="relative w-full h-[200px]">
                           <a
                             href={`/superchennai-events-details/${card.slug}`}
                             state={{ card }}
-                            className="hover:text-[#a44294]"
                           >
-                            {eventData.title || card.title}
+                            <img
+                              src={imageUrl}
+                              alt={eventData.title || card.title}
+                              className="h-full w-full object-cover rounded-t-lg"
+                            />
                           </a>
-                        </h3>
+                          {eventData?.eventsCategory?.length > 0 && (
+                            <div className="absolute top-3 right-3 flex flex-wrap gap-2">
+                              {eventData.eventsCategory.map((cat) => (
+                                <span
+                                  key={cat.id}
+                                  className="bg-gradient-to-r from-[#a44294] to-[#701c67] text-white px-2 py-1 rounded-full text-xs font-medium shadow-md"
+                                >
+                                  {cat.title.trim()}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
 
-                        <h4 className="EveItemDescrip text-gray-600 text-sm">
-                          <TruncatedText
-                            text={
-                              eventData.description ||
-                              "Discover an amazing experience in Chennai."
-                            }
-                            limit={200}
-                          />
-                        </h4>
+                        <div className="p-4 flex flex-col items-start">
+                          <div className="datimeContbox flex items-center text-sm text-gray-600 mb-2">
+                            <div className="dtDaymonth">{eventDate}</div>
+                            <div className="mx-2 text-gray-400">|</div>
+                            {eventData.details?.eventTime && (
+                              <div className="dtTimess">
+                                {formatEventTime(eventData.details.eventTime)}
+                              </div>
+                            )}
+                          </div>
+
+                          <h3 className="EveItemtitles font-semibold text-lg mb-1">
+                            <a
+                              href={`/superchennai-events-details/${card.slug}`}
+                              state={{ card }}
+                              className="hover:text-[#a44294]"
+                            >
+                              {eventData.title || card.title}
+                            </a>
+                          </h3>
+
+                          <h4 className="EveItemDescrip text-gray-600 text-sm">
+                            <TruncatedText
+                              text={
+                                eventData.description ||
+                                "Discover an amazing experience in Chennai."
+                              }
+                              limit={200}
+                            />
+                          </h4>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
               </motion.div>
             </div>
           </div>

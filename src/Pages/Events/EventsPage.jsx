@@ -153,7 +153,7 @@ const EventsPage = () => {
                   const eventData = card.event || {};
                   const imageUrl = eventData.image
                     ? `${API_BASE_URL}${eventData.image.url}`
-                    : "/images/no-image.jpg";
+                    : "../../../public/propertyDefault.png";
 
                   const eventDate = eventData.eventDate
                     ? new Date(eventData.eventDate).toLocaleDateString(
@@ -182,9 +182,18 @@ const EventsPage = () => {
                             className="h-full w-full object-cover rounded-t-lg"
                           />
                         </a>
-                        <div className="absolute top-3 right-3 evntechnolg bg-[#a44294] text-white px-2 py-1 rounded text-xs">
-                          {eventData.category || "General"}
-                        </div>
+                        {eventData?.eventsCategory?.length > 0 && (
+                          <div className="absolute top-3 right-3 flex flex-wrap gap-2">
+                            {eventData.eventsCategory.map((cat) => (
+                              <span
+                                key={cat.id}
+                                className="bg-gradient-to-r from-[#a44294] to-[#701c67] text-white px-2 py-1 rounded-full text-xs font-medium shadow-md"
+                              >
+                                {cat.title.trim()}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                       </div>
 
                       <div className="p-4 flex flex-col items-start">
@@ -198,7 +207,7 @@ const EventsPage = () => {
 
                         <h3 className="EveItemtitles font-semibold text-lg mb-1">
                           <a
-                            href={`/events-in-chennai/${card.slug}`}
+                            href={`/superchennai-events-details/${card.slug}`}
                             state={{ card }}
                             className="hover:text-[#a44294]"
                           >

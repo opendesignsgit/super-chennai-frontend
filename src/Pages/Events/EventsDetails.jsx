@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet-async";
 import { useEventBySlug } from "./Hooks/UseEvents";
 import { API_BASE_URL } from "../../../config";
 import AutoShrinkText from "../../Components/Text/AutoShrinkText"
+import { PropertyContent } from "../../Pages/Properties/Components/Properties/ritchText";
+
 export default function EventsDetails() {
   const { slug } = useParams();
   const { event, loading } = useEventBySlug(slug);
@@ -92,8 +94,7 @@ const API_URL = `${API_BASE_URL}`;
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText z-10">
-
-             <AutoShrinkText
+            <AutoShrinkText
               text={title || "Super Chennai Events"}
               baseSize={60}
               minSize={40}
@@ -107,10 +108,7 @@ const API_URL = `${API_BASE_URL}`;
             </div>
           </div>
         </div>
-       <div className="absolute inset-0 bg-gradient-to-b from-[#6a1b5a]/90 via-[#4a1440]/85 to-[#3a1033]/95"></div>
-
-       
-
+        <div className="absolute inset-0 bg-gradient-to-b from-[#6a1b5a]/90 via-[#4a1440]/85 to-[#3a1033]/95"></div>
       </section>
 
       {/* 🟣 Event Details Section */}
@@ -119,7 +117,7 @@ const API_URL = `${API_BASE_URL}`;
           <div className="EventContBox flex flex-col lg:flex-row gap-8">
             {/* LEFT SIDE */}
             <div className="EventLeft flex-1">
-              <h1 >{title}</h1>
+              <h1>{title}</h1>
 
               {(singerName || artistDesignation) && (
                 <p className="text-pink-700 text-sm mb-2">
@@ -156,11 +154,10 @@ const API_URL = `${API_BASE_URL}`;
 
               {/* About Section */}
               <div className="EventContBox mb-10">
-                <h3 className="text-lg font-semibold mb-2">About The Event</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {description ||
-                    "Stay tuned for more details about this exciting event."}
-                </p>
+                <h3 className="text-lg font-semibold mb-2">About The Event</h3>              
+                <div className="text-gray-500 text-sm">
+                  <PropertyContent content={event.content || ""} />
+                </div>
               </div>
             </div>
 

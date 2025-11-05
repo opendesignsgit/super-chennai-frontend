@@ -23,8 +23,12 @@ const FilterTopbar = ({
   const visibleCategories = showAll ? categories : categories.slice(0, initialVisible);
 
   return (
-    <section className="filterTopbar bg-gray-100 py-4 border-b border-gray-200">
-      <div className="container max-w-7xl mx-auto flex flex-wrap justify-center gap-3">
+       <section className="filterTopbar bg-gray-100 py-3 border-b border-gray-200 sticky top-[100px] z-50">
+      <div
+        className="  container max-w-7xl mx-auto flex gap-3 overflow-x-auto whitespace-nowrap   snap-x snap-mandatory px-2  
+     [scrollbar-width:none]   
+      [&::-webkit-scrollbar]:hidden"
+      >
         {visibleCategories.map((category) => {
           const isActive =
             category.id === "All"

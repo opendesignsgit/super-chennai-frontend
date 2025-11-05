@@ -17,16 +17,19 @@ const EventsPage = () => {
 
   // const upcomingEvents = [...events].sort((a, b) => b.id - a.id);
 
-  const upcomingEvents = [...events].sort((a, b) => {
-    const dateA = new Date(
-      a.event?.details?.eventDate || a.event?.eventDate || 0
-    );
-    const dateB = new Date(
-      b.event?.details?.eventDate || b.event?.eventDate || 0
-    );
+  console.log("eventdata",events)
 
-    return dateA - dateB; // Oldest first (upcoming)
-  });
+const upcomingEvents = [...events].sort((a, b) => {
+  const dateA = new Date(a.event?.eventDate);
+  const dateB = new Date(b.event?.eventDate);
+
+  if (!a.event?.eventDate) return 1;
+  if (!b.event?.eventDate) return -1;
+
+  return dateB - dateA; // latest event first
+});
+
+
 
   const { categories } = useEventCategories();
   const [showSidebar, setShowSidebar] = useState(false);
@@ -106,14 +109,29 @@ const EventsPage = () => {
 
           {/* === RIGHT CONTENT === */}
           <div className="flex-1">
-            <div className="flex justify-between items-center mb-3 md:hidden">
+            <div className="flex justify-between items-center mb-3 md:hidden sticky top-[150px] z-[60] bg-[#f4f5f7] py-2">
               <button
                 onClick={() => setShowSidebar(true)}
-                className="px-3 py-1.5 bg-[#a44294] text-white rounded-lg text-sm"
+                className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-[#a44294] to-[#701c67] shadow-lg active:scale-95 transition"
               >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 4.5h18m-8.25 6H21M3 16.5h12"
+                  />
+                </svg>
                 Filters
               </button>
             </div>
+
             <div className="sidebarrightCards">
               <span>
                 Showing <strong>{totalResults}</strong>{" "}

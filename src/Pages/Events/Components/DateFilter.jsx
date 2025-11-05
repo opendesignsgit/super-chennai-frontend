@@ -41,7 +41,7 @@ const DateFilter = ({ filters, setFilters }) => {
         <h3 className="text-lg font-semibold text-gray-800">Date</h3>
         <button
           onClick={handleClear}
-          className="text-sm text-pink-600 hover:underline"
+          className="text-sm text-pink-600 hover:underline font-bold"
         >
           Clear
         </button>

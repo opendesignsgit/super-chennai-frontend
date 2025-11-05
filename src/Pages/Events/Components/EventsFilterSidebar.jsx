@@ -8,8 +8,6 @@ import { useEventCategories } from "../Hooks/useEventCategories";
 import ExpandableList from '../Components/ExpandableList'
 const FilterSection = ({ title, children, onClear }) => {
   const { events } = useEvents();
-
-  console.log("totalfilter side data", events);
   const [open, setOpen] = useState(true);
   return (
     <div className="bg-white rounded-2xl p-4 mb-3 shadow-sm">
@@ -94,7 +92,7 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
 
       {/* Languages */}
       <FilterSection title="Languages" onClear={clearLanguage}>
-        {LANGUAGE_OPTIONS.slice(0, 10).map(({ label, value }) => (
+        {LANGUAGE_OPTIONS.slice(0, 30).map(({ label, value }) => (
           <label
             key={value}
             className="flex items-center gap-2 text-sm text-gray-700"

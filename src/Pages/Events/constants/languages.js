@@ -16,10 +16,10 @@ export const LANGUAGE_OPTIONS = [
   { label: 'Sanskrit', value: 'sanskrit' },
 
   // 🌍 Major Global Languages
-//   { label: 'English', value: 'english' },
+  { label: 'English', value: 'english' },
 //   { label: 'Spanish', value: 'spanish' },
 //   { label: 'French', value: 'french' },
-//   { label: 'German', value: 'german' },
+  { label: 'German', value: 'german' },
 //   { label: 'Italian', value: 'italian' },
 //   { label: 'Portuguese', value: 'portuguese' },
 //   { label: 'Russian', value: 'russian' },

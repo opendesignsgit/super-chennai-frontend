@@ -1,5 +1,5 @@
 export const formatEventTime = (dateString) => {
-  if (!dateString) return "N/A";
+  if (!dateString) return null;
 
   try {
     return new Date(dateString).toLocaleTimeString("en-IN", {

@@ -18,7 +18,7 @@ import {
 } from "@radix-ui/react-tooltip";
 import AutoShrinkText from "../../Components/Text/AutoShrinkText";
 import PropertyVideos from "./Components/Properties/PropertyVideos";
-
+import defaultImage from "../../../public/propertyDefault.png"
 import {
   ArrowLeftIcon,
   ArrowRight,
@@ -255,10 +255,11 @@ const PropertyDetailPage = () => {
   const visibleAmenities = showAll ? trueAmenities : trueAmenities.slice(0, 6);
   if (loading) return <PropertyDetailSkeleton />;
   if (!property) return <h1 className="not-found">❌ Property not found</h1>;
+
   const getImageUrl = (imgObj) => {
-    if (!imgObj) return "../../../public/propertyDefault.png";
+    if (!imgObj) return defaultImage;
     const url = imgObj.url || imgObj.image?.url;
-    if (!url) return "../../../public/propertyDefault.png";
+    if (!url) return defaultImage;
     if (url.startsWith("http")) return url;
     return `${API_BASE_URL}${url}`;
   };

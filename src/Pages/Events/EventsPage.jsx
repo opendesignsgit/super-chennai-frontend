@@ -262,7 +262,7 @@ const upcomingEvents = [...events].sort((a, b) => {
                                 eventData.description ||
                                 "Discover an amazing experience in Chennai."
                               }
-                              limit={200}
+                              limit={100}
                             />
                           </h4>
                         </div>

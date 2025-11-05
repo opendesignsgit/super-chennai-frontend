@@ -20,10 +20,24 @@ const FilterTopbar = ({
   }
 
   // Determine which categories to display
-  const visibleCategories = showAll ? categories : categories.slice(0, initialVisible);
+  const visibleCategories = showAll
+    ? categories
+    : categories.slice(0, initialVisible);
 
   return (
-       <section className="filterTopbar bg-gray-100 py-3 border-b border-gray-200 sticky top-[100px] z-50">
+    <section
+      className="
+    filterTopbar 
+    bg-gray-100 
+    py-3 
+    border-b 
+    border-gray-200 
+    sticky 
+    top-[100px]      
+    md:top-[118px]    
+    z-50
+  "
+    >
       <div
         className="  container max-w-7xl mx-auto flex gap-3 overflow-x-auto whitespace-nowrap   snap-x snap-mandatory px-2  
      [scrollbar-width:none]   

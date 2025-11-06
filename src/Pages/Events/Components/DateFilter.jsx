@@ -2,19 +2,41 @@
 import React, { useState } from "react";
 
 const DateFilter = ({ filters, setFilters }) => {
-  const [activePreset, setActivePreset] = useState(filters.date || "");
+  // const [activePreset, setActivePreset] = useState(filters.date || "");
+  const [activePreset, setActivePreset] = useState(filters.date || []);
+
   const [showCustomRange, setShowCustomRange] = useState(false);
 
+  // const handlePresetClick = (value) => {
+  //   setActivePreset(value);
+  //   setShowCustomRange(false);
+  //   setFilters((prev) => ({
+  //     ...prev,
+  //     date: value,
+  //     startDate: null,
+  //     endDate: null,
+  //   }));
+  // };
+  
   const handlePresetClick = (value) => {
-    setActivePreset(value);
     setShowCustomRange(false);
-    setFilters((prev) => ({
-      ...prev,
-      date: value,
-      startDate: null,
-      endDate: null,
-    }));
+
+    setActivePreset((prev) => {
+      const updated = prev.includes(value)
+        ? prev.filter((item) => item !== value)
+        : [...prev, value];
+
+      setFilters((prevFilters) => ({
+        ...prevFilters,
+        date: updated,
+        startDate: null,
+        endDate: null,
+      }));
+
+      return updated;
+    });
   };
+
 
   const handleRangeChange = (field, value) => {
     setFilters((prev) => ({
@@ -25,7 +47,8 @@ const DateFilter = ({ filters, setFilters }) => {
   };
 
   const handleClear = () => {
-    setActivePreset("");
+    // setActivePreset("");
+    setActivePreset([]);
     setShowCustomRange(false);
     setFilters((prev) => ({
       ...prev,
@@ -50,11 +73,24 @@ const DateFilter = ({ filters, setFilters }) => {
       {/* Preset Options */}
       <div className="flex flex-wrap gap-2 mb-4">
         {["Today", "Tomorrow", "This Weekend"].map((label) => (
+          // <button
+          //   key={label}
+          //   onClick={() => handlePresetClick(label)}
+          //   className={`px-3 py-1 rounded-full border text-sm transition-all duration-200 ${
+          //     // activePreset === label
+          //     activePreset.includes(label)
+
+          //       ? "bg-pink-600 text-white border-pink-600"
+          //       : "border-pink-600 text-pink-600 hover:bg-pink-50"
+          //   }`}
+          // >
+          //   {label}
+          // </button>
           <button
             key={label}
             onClick={() => handlePresetClick(label)}
             className={`px-3 py-1 rounded-full border text-sm transition-all duration-200 ${
-              activePreset === label
+              activePreset.includes(label)
                 ? "bg-pink-600 text-white border-pink-600"
                 : "border-pink-600 text-pink-600 hover:bg-pink-50"
             }`}

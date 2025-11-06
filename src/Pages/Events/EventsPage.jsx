@@ -9,31 +9,26 @@ import SidebarModal from "./Components/SidebarModal";
 import TruncatedText from "../GlobalComponents/TruncatedText";
 import EventCardSkeleton from "./Components/Loader/EventCardSkeleton";
 import { formatEventTime } from "./Utils/formatTime";
+import EventCalender from "./Components/EventCalender/EventCalender"
+import FormattedEventDates from "./Utils/dateFormatter";
 
 const EventsPage = () => {
   const [filters, setFilters] = useState({ categories: [] });
   const [sortBy, setSortBy] = useState("");
   const { events, totalResults, loading } = useEvents(filters, sortBy);
-
+console.log("events",events)
   // const upcomingEvents = [...events].sort((a, b) => b.id - a.id);
+  const upcomingEvents = [...events].sort((a, b) => {
+    const dateA = new Date(a.event?.eventDate);
+    const dateB = new Date(b.event?.eventDate);
 
-  console.log("eventdata",events)
+    if (!a.event?.eventDate) return 1;
+    if (!b.event?.eventDate) return -1;
 
-const upcomingEvents = [...events].sort((a, b) => {
-  const dateA = new Date(a.event?.eventDate);
-  const dateB = new Date(b.event?.eventDate);
-
-  if (!a.event?.eventDate) return 1;
-  if (!b.event?.eventDate) return -1;
-
-  return dateB - dateA; // latest event first
-});
-
-
-
+    return dateB - dateA; // latest event first
+  });
   const { categories } = useEventCategories();
   const [showSidebar, setShowSidebar] = useState(false);
-
   const categoryOptions = categories?.map((cat) => ({
     id: cat.id,
     title: cat.title,
@@ -194,16 +189,7 @@ const upcomingEvents = [...events].sort((a, b) => {
                       ? `${API_BASE_URL}${eventData.image.url}`
                       : "../../../public/propertyDefault.png";
 
-                    const eventDate = eventData.eventDate
-                      ? new Date(eventData.eventDate).toLocaleDateString(
-                          "en-IN",
-                          {
-                            day: "numeric",
-                            month: "short",
-                            year: "numeric",
-                          }
-                        )
-                      : "TBA";
+               
 
                     return (
                       <div
@@ -218,7 +204,7 @@ const upcomingEvents = [...events].sort((a, b) => {
                             <img
                               src={imageUrl}
                               alt={eventData.title || card.title}
-                              className="h-full w-full object-cover rounded-t-lg"
+                              className="h-full w-full  rounded-t-lg"
                             />
                           </a>
                           {eventData?.eventsCategory?.length > 0 && (
@@ -236,15 +222,44 @@ const upcomingEvents = [...events].sort((a, b) => {
                         </div>
 
                         <div className="p-4 flex flex-col items-start">
-                          <div className="datimeContbox flex items-center text-sm text-gray-600 mb-2">
-                            <div className="dtDaymonth">{eventDate}</div>
+                          {/* <div className="datimeContbox flex items-center text-sm text-gray-600 mb-2">
+                            <div className="dtDaymonth">
+                              <FormattedEventDates
+                                dates={eventData.eventDates}
+                              />
+                            </div>
+
                             <div className="mx-2 text-gray-400">|</div>
                             {eventData.details?.eventTime && (
                               <div className="dtTimess">
                                 {formatEventTime(eventData.details.eventTime)}
                               </div>
                             )}
-                          </div>
+                          </div> */}
+
+                          {(eventData?.eventDates?.length > 0 ||
+                            eventData?.details?.eventTime) && (
+                            <div className="datimeContbox flex items-center text-sm text-gray-600 mb-2">
+                              <div className="dtDaymonth">
+                                {eventData?.eventDates?.length > 0 && (
+                                  <FormattedEventDates
+                                    dates={eventData.eventDates.slice(0, 2)}
+                                  />
+                                )}
+                              </div>
+
+                              {eventData?.eventDates &&
+                                eventData?.details?.eventTime && (
+                                  <div className="mx-2 text-gray-400">|</div>
+                                )}
+
+                              {eventData?.details?.eventTime && (
+                                <div className="dtTimess">
+                                  {formatEventTime(eventData.details.eventTime)}
+                                </div>
+                              )}
+                            </div>
+                          )}
 
                           <h3 className="EveItemtitles font-semibold text-lg mb-1">
                             <a
@@ -281,6 +296,8 @@ const upcomingEvents = [...events].sort((a, b) => {
           setFilters={setFilters}
         />
       </section>
+      <EventCalender events={upcomingEvents} />
+
     </>
   );
 };

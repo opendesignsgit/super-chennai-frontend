@@ -5,7 +5,7 @@ import { API_BASE_URL } from "../../../../../config";
 import { formatPrice } from "../../utils/formatPrice";
 import ContactForm from "../forms/ContactForm";
 import { formatLabel } from "../../utils/formatLabel";
-import defaultImage from "../../../../../public/propertyDefault.png"
+import defaultImage from "../../../../../public/propertyDefault.png";
 
 const getImageUrl = (img) => {
   if (!img?.url) return defaultImage;
@@ -18,7 +18,9 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
 
   const heroImage = getImageUrl(property.heroImage);
   const title = property.title || "Property";
-  const bhk = property.bhk?.label || "";
+  const bhk = Array.isArray(property.bhk)
+    ? property.bhk.map((item) => item.label.trim()).join(", ")
+    : "";
   const area = property.area || "";
   const price = property?.price
     ? `₹${formatPrice(property.price)}`
@@ -29,14 +31,12 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
   const type = Array.isArray(typeArray)
     ? typeArray.map((item) => item.value).join(", ")
     : typeArray?.value || property.type || "";
-  const status = property.society?.possessionStatus || property.status || null;
+  const possessionStatus = property.society?.possessionStatus;
 
-  
- const description =
-  property?.content?.root?.children?.[0]?.children?.[0]?.text ||
-  property?.description ||
-  "";
-
+  const description =
+    property?.content?.root?.children?.[0]?.children?.[0]?.text ||
+    property?.description ||
+    "";
 
   const propertyLink = `/properties/${property.slug || property.id}`;
   const transactionType = property.transactionType || null;
@@ -52,7 +52,6 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
       <div
         className={`mainPropertiesCards ${viewType === "list" ? "flex" : ""} relative`}
       >
-        {/* Badges */}
         {(property.featured ||
           property.urgentSale ||
           property.transactionType) && (
@@ -75,7 +74,6 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
           </div>
         )}
 
-        {/* Hero Image */}
         <img
           src={heroImage}
           alt={title}
@@ -89,7 +87,6 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
               <h5>by {property.society.builder}</h5>
             )}
 
-          {/* Property Specs */}
           <div className="aboutPlotsSize flex flex-wrap gap-4 text-capitalize">
             <div className="flex flex-col items-start">
               <span> {price}</span>
@@ -97,7 +94,6 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
               {property.pricePerSqft && (
                 <span>{property.pricePerSqft.toLocaleString()} ₹/sqft</span>
               )}
-              <span>{bhk}</span>
             </div>
 
             {area &&
@@ -116,52 +112,46 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
               )}
 
             <div className="flex flex-col items-start text-capitalize">
-              {property.commercialType && (
-                <span>{property.commercialType}</span>
+              {/* Commercial Type */}
+
+              {property?.commercialType && (
+                <span>{formatLabel(property.commercialType)}</span>
               )}
-              {/* <span>{type}</span> */}
+
               <div>
-                <h3>{property.name}</h3>
-                <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                <h3>{property?.name}</h3>
+
+                {/* Property Type  */}
+                <div className="flex gap-2 flex-wrap">
                   {Array.isArray(property.propertyType) &&
                     property.propertyType.slice(0, MAX_BADGES).map((item) => (
                       <span
                         key={item.id}
-                        style={{
-                          background: "#e6f0ff",
-                          color: "#003366",
-                          padding: "4px 10px",
-                          borderRadius: "12px",
-                          fontSize: "14px",
-                        }}
+                        className="px-2 py-[2px] text-xs bg-gray-100 border border-gray-300 text-gray-700 rounded-full font-medium whitespace-nowrap"
                       >
-                        {item.value}
+                        {formatLabel(item.value)}
                       </span>
                     ))}
 
-                  {property.propertyType.length > MAX_BADGES && (
-                    <span
-                      style={{
-                        background: "#003366",
-                        color: "#fff",
-                        padding: "4px 10px",
-                        borderRadius: "12px",
-                        fontSize: "14px",
-                      }}
-                    >
-                      +{property.propertyType.length - MAX_BADGES} more
+                  {/* + more indicator */}
+                  {property.propertyType?.length > MAX_BADGES && (
+                    <span className="px-2 py-[2px] text-xs bg-purple-100 text-purple-700 rounded-full font-medium border border-purple-300 whitespace-nowrap">
+                      + {property.propertyType.length - MAX_BADGES} more
                     </span>
                   )}
                 </div>
               </div>
-              <span>{status}</span>
+
+              <div className="flex gap-2 flex-wrap">
+                {bhk && <span className="text-sm text-gray-700">{bhk}</span>}
+              </div>
+              <div className="flex gap-2 flex-wrap">
+                <span>{formatLabel(possessionStatus)}</span>
+              </div>
             </div>
           </div>
 
-          {/* Description */}
           <p className="propertContent line-clamp-2">{description}</p>
-
-          {/* View Details */}
 
           {property.society?.externalUrl && (
             <a
@@ -179,7 +169,6 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
             </a>
           )}
 
-          {/* Additional Info */}
           <div className="uploadedDetailsproperty mt-2">
             <div className="flex flex-col">
               {property.society?.totalUnits && (

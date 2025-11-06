@@ -6,6 +6,7 @@ import { API_BASE_URL } from "../../../config";
 import AutoShrinkText from "../../Components/Text/AutoShrinkText"
 import { PropertyContent } from "../../Pages/Properties/Components/Properties/ritchText";
 import { formatEventTime } from "./Utils/formatTime";
+import FormattedEventDates from "./Utils/dateFormatter";
 
 export default function EventsDetails() {
   const { slug } = useParams();
@@ -30,7 +31,6 @@ const API_URL = `${API_BASE_URL}`;
     );
   }
 
-  // ✅ Handle nested data safely
   const main = event.event || {};
 
   const {
@@ -40,7 +40,7 @@ const API_URL = `${API_BASE_URL}`;
     singerName,
     artistDesignation,
     performerRole,
-    eventDate,
+    eventDates,
     link,
     address,
     details,
@@ -64,15 +64,24 @@ const API_URL = `${API_BASE_URL}`;
     ? `${API_URL}${image.url}`
     : "/images/no-image.jpg";
 
-  const formattedDate = eventDate
-    ? new Date(eventDate).toLocaleString("en-IN", {
-        weekday: "long",
-        day: "numeric",
-        month: "short",
-        year: "numeric",   
-      })
-    : null;
+const formattedDate = Array.isArray(eventDates)
+  ? [...new Set(
+      eventDates
+        .map((d) => d.date)
+        .sort((a, b) => new Date(a) - new Date(b))
+        .map((date) =>
+          new Date(date).toLocaleString("en-IN", {
+            weekday: "long",
+            day: "numeric",
+            month: "short",
+            year: "numeric",
+          })
+        )
+    )].join(" | ")
+  : null;
 
+
+console.log("date 999999999999999 ",formattedDate)
   return (
     <>
       {/* 🧠 Meta SEO */}
@@ -154,7 +163,7 @@ const API_URL = `${API_BASE_URL}`;
 
               {/* About Section */}
               <div className="EventContBox mb-10">
-                <h3 className="text-lg font mb-2">About The Event</h3>              
+                <h3 className="text-lg font mb-2">About The Event</h3>
                 <div className="text-gray-500 text-sm">
                   <PropertyContent content={event.content || ""} />
                 </div>
@@ -171,13 +180,13 @@ const API_URL = `${API_BASE_URL}`;
                     label={formattedDate}
                   />
                 )}
-                  {formattedDate && (
+
+                {eventTime && (
                   <InfoRow
                     icon="/images/events/time.png"
                     label={formatEventTime(eventTime)}
                   />
                 )}
- 
 
                 {duration && (
                   <InfoRow
@@ -224,8 +233,9 @@ const API_URL = `${API_BASE_URL}`;
               {link && (
                 <div className="flex justify-center mt-6">
                   <a href={link}>
-                    <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg font-medium transition">
-                      View More
+                    <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg font-medium transition capitalize">
+                      {" "}
+                      {main.linkbutton?.trim() || "View More"}
                     </button>
                   </a>
                 </div>

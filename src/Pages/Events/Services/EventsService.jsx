@@ -16,9 +16,9 @@ export const fetchEvents = async (filters = {}, sortBy = "") => {
     // 🎯 CATEGORY FILTER
     // =========================
     if (filters.categories?.length) {
-      params["where[event.eventsCategory.id][in]"] = filters.categories.join(",");
+      params["where[event.eventsCategory.id][in]"] =
+        filters.categories.join(",");
     }
-
 
     // =========================
     // 🎯 LANGUAGE FILTER
@@ -29,39 +29,57 @@ export const fetchEvents = async (filters = {}, sortBy = "") => {
     }
 
     // =========================
-    // 🎯 DATE FILTER (Today, Tomorrow, Weekend, Range)
+    // ✅ DATE FILTER FOR MULTI-DATE EVENTS
     // =========================
-    if (filters.date) {
+    if (
+      filters.date &&
+      Array.isArray(filters.date) &&
+      filters.date.length > 0
+    ) {
       const today = new Date();
-      let start = null;
-      let end = null;
+      let ranges = [];
 
-      if (filters.date === "Today") {
-        start = new Date(today.setHours(0, 0, 0, 0));
-        end = new Date(today.setHours(23, 59, 59, 999));
-      } else if (filters.date === "Tomorrow") {
-        start = new Date();
-        start.setDate(start.getDate() + 1);
-        start.setHours(0, 0, 0, 0);
-        end = new Date(start);
-        end.setHours(23, 59, 59, 999);
-      } else if (filters.date === "This Weekend") {
-        const day = today.getDay();
-        const daysUntilSaturday = (6 - day + 7) % 7; // Next Saturday
-        start = new Date(today);
-        start.setDate(today.getDate() + daysUntilSaturday);
-        start.setHours(0, 0, 0, 0);
+      filters.date.forEach((preset) => {
+        let start = new Date();
+        let end = new Date();
 
-        end = new Date(start);
-        end.setDate(start.getDate() + 1); // Sunday
-        end.setHours(23, 59, 59, 999);
-      }
+        if (preset === "Today") {
+          start.setHours(0, 0, 0, 0);
+          end.setHours(23, 59, 59, 999);
+        }
 
-      if (start && end) {
-        params["where[event.eventDate][greater_than_equal]"] =
-          start.toISOString();
-        params["where[event.eventDate][less_than_equal]"] = end.toISOString();
-      }
+        if (preset === "Tomorrow") {
+          start.setDate(start.getDate() + 1);
+          start.setHours(0, 0, 0, 0);
+
+          end = new Date(start);
+          end.setHours(23, 59, 59, 999);
+        }
+
+        if (preset === "This Weekend") {
+          const day = today.getDay();
+          const saturday = new Date(today);
+          saturday.setDate(today.getDate() + ((6 - day + 7) % 7));
+          saturday.setHours(0, 0, 0, 0);
+
+          const sunday = new Date(saturday);
+          sunday.setDate(saturday.getDate() + 1);
+          sunday.setHours(23, 59, 59, 999);
+
+          start = saturday;
+          end = sunday;
+        }
+
+        ranges.push({ start, end });
+      });
+
+      // ✅ Payload CMS OR filter for eventDates array
+      params["where[or]"] = ranges.map((r) => ({
+        "event.eventDates.date": {
+          greater_than_equal: r.start.toISOString(),
+          less_than_equal: r.end.toISOString(),
+        },
+      }));
     }
 
     // =========================
@@ -164,7 +182,6 @@ export const fetchEvents = async (filters = {}, sortBy = "") => {
       const today = new Date();
       params["where[event.eventDate][less_than]"] = today.toISOString();
     }
-
 
     console.log("🛰️ Final params sent to API:", params);
 

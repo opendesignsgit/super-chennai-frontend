@@ -50,13 +50,12 @@ export default function CardCarousel111() {
     }
 
     const eventEndDate = new Date(endDateStr);
-    eventEndDate.setHours(0, 0, 0, 0); // Also reset event time
+    eventEndDate.setHours(0, 0, 0, 0); 
 
     return eventEndDate >= today;
   });
 
-  // console.log("All Data:", cards);
-  // console.log("upcomingEvents", upcomingEvents);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -90,7 +89,7 @@ export default function CardCarousel111() {
           <p>Calendar &nbsp; Calendar &nbsp; Calendar &nbsp; Calendar</p>
         </div>
         <div className="container max-w-7xl mx-auto px-4 EventsCalendarTitleMain">
-          <h1>Events Calendar</h1>
+          <h2>Events Calendar</h2>
           <p>
             Conferences by day, concerts by night — Chennai’s event calendar
             blends innovation, culture, and entertainment effortlessly.

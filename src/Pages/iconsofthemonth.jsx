@@ -158,8 +158,6 @@ export default function Iconsofthemonth() {
                   </p>
                 </div>
               </a>
-
- 
             </div>
           </div>
         </section>

@@ -96,7 +96,7 @@ console.log("date 999999999999999 ",formattedDate)
       <section className="accaodomationBannerSection">
         <div>
           <img
-            className="w-full h-[300px] object-cover"
+            className="w-full h-[400px] object-cover"
             src={imageUrl}
             alt=""
           />{" "}

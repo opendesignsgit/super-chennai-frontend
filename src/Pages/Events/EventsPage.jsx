@@ -80,7 +80,7 @@ console.log("events",events)
       </section>
 
       <section className="EventsListSec SecPadblock12 bg-[#f4f5f7]">
-        <div className="Eventitlesec mb-[50px] text-center">
+        <div className="Eventitlesec mb-[50px] text-center container max-w-7xl mx-auto">
           <h2 className="text-[#a44294]">Events Calendar</h2>
           <p>
             Keeps you in the loop with the latest happenings in Chennai. From

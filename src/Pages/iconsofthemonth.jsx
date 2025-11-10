@@ -84,7 +84,7 @@ export default function Iconsofthemonth() {
 
                            {/*############## CHINNAMAYI ######## */}
               <a
-                className="superchennaiEventsSection"
+                className="superchennaiEventsSection"id="chinmayi-indian-singer-icon-of-the-month"
                 href="/icon-of-the-oct-month-2025"
               >
 
@@ -104,7 +104,7 @@ export default function Iconsofthemonth() {
               </a>
               <a
                 className="superchennaiEventsSection"
-                href="/super-chennai-icon-of-sep-2025"
+                href="/super-chennai-icon-of-sep-2025" id="vishwanathan-anand Icon of the Month Sep 2025"
               >
                 <div
                   className="flex flex-col items-center text-center"
@@ -122,7 +122,7 @@ export default function Iconsofthemonth() {
               </a>
 
               <a
-                className="superchennaiEventsSection"
+                className="superchennaiEventsSection" id="chandrakumarimage Icon of the Month Aug 2025"
                 href="/super-chennai-icon-of-aug-2025"
               >
                 <div
@@ -141,7 +141,7 @@ export default function Iconsofthemonth() {
               </a>
 
               <a
-                className="superchennaiEventsSection"
+                className="superchennaiEventsSection" id="kumaravel icon-of-the-july-month"
                 href="/icon-of-the-july-month"
               >
                 <div

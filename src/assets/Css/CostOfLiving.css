@@ -980,6 +980,15 @@
   font-weight: 500;
 }
 
+.nightlife h3 {
+  font-family: "NewAmsterdam";
+  font-size: 4vw;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #995098;
+  font-weight: 500;
+}
+
 .nightlife h2 {
   font-family: "NewAmsterdam";
   font-size: 3vw;

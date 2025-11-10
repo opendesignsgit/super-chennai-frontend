@@ -1230,9 +1230,9 @@ export default function Restaurants() {
         </div>
 
         <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
-          <h1 className="text-3xl font-bold mb-10 text-center">
+          <h3 className="text-3xl font-bold mb-10 text-center">
             Notable Restaurants in Chennai
-          </h1>
+          </h3>
 
           {detailsections.map((section, sectionIdx) => (
             <div key={sectionIdx} className="nightlifesecIn mb-10">

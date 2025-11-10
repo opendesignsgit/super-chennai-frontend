@@ -296,7 +296,7 @@ console.log("events",events)
           setFilters={setFilters}
         />
       </section>
-      <EventCalender events={upcomingEvents} />
+      {/* <EventCalender events={upcomingEvents} /> */}
 
     </>
   );

@@ -17,16 +17,25 @@ const EventsPage = () => {
   const [sortBy, setSortBy] = useState("");
   const { events, totalResults, loading } = useEvents(filters, sortBy);
 console.log("events",events)
-  // const upcomingEvents = [...events].sort((a, b) => b.id - a.id);
-  const upcomingEvents = [...events].sort((a, b) => {
-    const dateA = new Date(a.event?.eventDate);
-    const dateB = new Date(b.event?.eventDate);
 
-    if (!a.event?.eventDate) return 1;
-    if (!b.event?.eventDate) return -1;
 
-    return dateB - dateA; // latest event first
-  });
+//################# SORTING DATWISE DESENTING #################
+const upcomingEvents = [...events].sort((a, b) => {
+  const dateA = Array.isArray(a.event?.eventDates) && a.event.eventDates.length
+    ? new Date(a.event.eventDates[0].date)
+    : null;
+
+  const dateB = Array.isArray(b.event?.eventDates) && b.event.eventDates.length
+    ? new Date(b.event.eventDates[0].date)
+    : null;
+
+  if (!dateA) return 1;
+  if (!dateB) return -1;
+
+  return dateB - dateA; 
+});
+
+
   const { categories } = useEventCategories();
   const [showSidebar, setShowSidebar] = useState(false);
   const categoryOptions = categories?.map((cat) => ({

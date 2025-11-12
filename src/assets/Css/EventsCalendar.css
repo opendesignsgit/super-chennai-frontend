@@ -103,7 +103,7 @@
 
 .CalendarEventsFirst .eventsCalenderIamge {
   width: 50%;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-top-left-radius: 20px;
 }
 .MainCalendarSectionEvent {

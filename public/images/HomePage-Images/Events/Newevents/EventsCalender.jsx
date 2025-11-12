@@ -131,14 +131,12 @@ export default function CardCarousel111() {
                 <a>Comedy / Stand-Up</a>
               </div>
 
-              <a href="/events">
+              <a href="/events-in-chennai/chennai-marathon-namma-juniorthon-3-edition-kids-run">
                 <p className="FindOutMore">Find Out More</p>
               </a>
             </div>
           </div>
         </div>
-
-
         <div className="overflow-hidden py-17 cardMobileSection">
           <div className="relative">
             <div className="absolute top-0 left-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
@@ -149,6 +147,7 @@ export default function CardCarousel111() {
               ref={carouselRef}
               className="flex gap-10 cursor-grab active:cursor-grabbing cardsMobileSection"
               drag="x"
+              // dragConstraints={{ right: 0, left: -1200 }}
               dragConstraints={{
                 right: 0,
                 left: -(cards.length * (300 + 40) - window.innerWidth + 40),
@@ -156,9 +155,44 @@ export default function CardCarousel111() {
               animate={{ x }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
-             
+              {/* {upcomingEvents.map((card) => (
+                <motion.div
+                  key={card.id}
+                  className="EventsCalendarCardSection min-w-[300px] h-[400px] bg-white"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <div className="relative w-full h-[250px]">
+                  
+                    <a href={`/events-in-chennai/${card.id}`}>
+                      <img
+                        src={card.image}
+                        alt={card.title}
+                        className="w-full h-full object-cover rounded-t-md"
+                      />
+                    </a>
+                    <div className="absolute top-3 right-3 CalenderCategoryOverlay">
+                      {card.EventsCalendarCategory}
+                    </div>
+                  </div>
+                  <div className="EventsCalendarMonthtime">
+                    <div className="EventsCalendarMonthStyle">
+                      {card.EventsCalendarMonth}
+                    </div>
+                    <div className="EventsCalendarMonthStyle">|</div>
+                    <div className="EventsCalendarMonthStyle">
+                      {card.EventsCalendarTime}
+                    </div>
+                  </div>
+                  <h3 className="EventsCalendarTitlecss">
+                    {card.EventsCalendarTitle}
+                  </h3>
+                  <h4 className="EventsCalendarContentcss">
+                    {card.EventsCalendarContent}
+                  </h4>
+                </motion.div>
+              ))} */}
               {[...upcomingEvents]
-                .sort((a, b) => b.id - a.id) 
+                .sort((a, b) => b.id - a.id) // sort by latest id
                 .map((card) => (
                   <motion.div
                     key={card.id}
@@ -191,7 +225,7 @@ export default function CardCarousel111() {
                     <h3 className="EventsCalendarTitlecss">
                       {card.EventsCalendarTitle}
                     </h3>
-                    <h4 className="EventsCalendarContentcss line-clamp-3">
+                    <h4 className="EventsCalendarContentcss">
                       {card.EventsCalendarContent}
                     </h4>
                   </motion.div>
@@ -199,6 +233,7 @@ export default function CardCarousel111() {
             </motion.div>
           </div>
 
+          {/* Buttons BELOW the slider */}
           <div className="EventsCalenderButtons flex justify-center gap-8 mt-8">
             <div
               className="EventsCalenderLeftButton"

@@ -6744,33 +6744,33 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
       "The students of Heartfulness International School – Omega Branch proudly present Kalanjali 2025, the annual festival of performing arts that honors heritage, creativity, and timeless excellence.\n\nMore than just a showcase, Kalanjali reflects our commitment to holistic education. Led by students, the festival immerses young minds in the performing arts, encourages leadership, and strengthens their connection to India’s rich cultural traditions.\n\nThis year, Kalanjali will shine brighter than ever with a special performance by the renowned Shri Rahul Sharma, Santoor virtuoso and son of the legendary Padma Vibushan Pandit Shivkumar Sharma, promising an unforgettable evening celebrating the essence of Indian arts and culture.",
   },
 
-  {
-    url: "the-f16s-indie-rock-concert",
-    id: 232,
-    RegisterLink:
-      "https://www.district.in/events/the-f16s-nov15-2025-buy-tickets",
-    metaTitleEvent: "The F16s Live in Chennai - Indie Rock Concert",
-    metaDescriptionEvent:
-      "Catch The F16s, torchbearers of Indian indie rock, live at Hard Rock Cafe Chennai. Experience their striking soundscape, rich guitar melodies, and soulful voice of Josh Fernandez.",
-    conicallinkEvent: "/eventsdetails/232",
-    siteLink:
-      "https://www.superchennai.com/events-in-chennai/the-f16s-indie-rock-concert",
-    EventsCalendarTitle: "The F16s - Indie Rock Concert",
-    EventsCalendarContent:
-      "An electrifying live music performance by The F16s, a leading band in the Indian independent music scene, known for their indie-rock energy and heartfelt songwriting.",
-    EventsCalendarMonth: "15 Nov 2025",
-    EventsCalendarTime: "9:00 PM",
-    EventsCalendarCategory: "Indie Rock / Live Music",
-    image: "/images/HomePage-Images/Events/Newevents/408.jpg",
-    link: "/events",
-    location: "Hard Rock Cafe Chennai, Chennai",
-    language: "English",
-    hours: "2 Hrs",
-    ageLimit: "",
-    religion: "",
-    aboutFull:
-      "The music of The F16s weaves a striking soundscape, defined by rich guitar melodies, reflective lyricism, and the soulful voice of Josh Fernandez. Their tracks explore themes of modern life, love, and identity, resonating deeply with a generation in search of genuine musical expression.\n\nAs torchbearers of a new wave in Indian independent music, The F16s blend heartfelt songwriting with contemporary indie-rock energy. Their relentless pursuit of artistic evolution and their gift for stirring emotion through music have earned them a loyal following and critical praise. On the global alternative stage, The F16s continue to rise as a powerful presence.",
-  },
+  // {
+  //   url: "the-f16s-indie-rock-concert",
+  //   id: 232,
+  //   RegisterLink:
+  //     "https://www.district.in/events/the-f16s-nov15-2025-buy-tickets",
+  //   metaTitleEvent: "The F16s Live in Chennai - Indie Rock Concert",
+  //   metaDescriptionEvent:
+  //     "Catch The F16s, torchbearers of Indian indie rock, live at Hard Rock Cafe Chennai. Experience their striking soundscape, rich guitar melodies, and soulful voice of Josh Fernandez.",
+  //   conicallinkEvent: "/eventsdetails/232",
+  //   siteLink:
+  //     "https://www.superchennai.com/events-in-chennai/the-f16s-indie-rock-concert",
+  //   EventsCalendarTitle: "The F16s - Indie Rock Concert",
+  //   EventsCalendarContent:
+  //     "An electrifying live music performance by The F16s, a leading band in the Indian independent music scene, known for their indie-rock energy and heartfelt songwriting.",
+  //   EventsCalendarMonth: "15 Nov 2025",
+  //   EventsCalendarTime: "9:00 PM",
+  //   EventsCalendarCategory: "Indie Rock / Live Music",
+  //   image: "/images/HomePage-Images/Events/Newevents/408.jpg",
+  //   link: "/events",
+  //   location: "Hard Rock Cafe Chennai, Chennai",
+  //   language: "English",
+  //   hours: "2 Hrs",
+  //   ageLimit: "",
+  //   religion: "",
+  //   aboutFull:
+  //     "The music of The F16s weaves a striking soundscape, defined by rich guitar melodies, reflective lyricism, and the soulful voice of Josh Fernandez. Their tracks explore themes of modern life, love, and identity, resonating deeply with a generation in search of genuine musical expression.\n\nAs torchbearers of a new wave in Indian independent music, The F16s blend heartfelt songwriting with contemporary indie-rock energy. Their relentless pursuit of artistic evolution and their gift for stirring emotion through music have earned them a loyal following and critical praise. On the global alternative stage, The F16s continue to rise as a powerful presence.",
+  // },
 
   {
     url: "ashwin-srinivas-english-standup-comedy-chennai-2025",
@@ -7452,6 +7452,78 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
   "religion": "",
   "aboutFull": "Arvind Sunder - Live\n\nArvind Sunder returns with his solo performance following his hit “Delhi Vs Bangalore,” which has amassed over 600,000 views on YouTube and more than 5 million on Instagram.\n\nThis show blends storytelling, sharp observations, and personal experiences into a full hour of laughter. Crafted from over 8 years of experience, it promises a truly unique and entertaining experience.\n\nThree Reasons to Attend:\n\n1. Carefully Curated Jokes – Every joke has been tested in three different cities and perfected for maximum laughs.\n\n2. Guaranteed Laughter – Who doesn’t want a hearty dose of fun?\n\n3. A Unique Experience – An hour of comedy you won’t find anywhere else.\n\nArvind Sunder brings the best comedy show experience to Chennai with a power-packed live show full of fun, wit, and laughter. Get your tickets now!"
 },
+
+
+{
+  "url": "flamenco-music-hands-of-time-workshop",
+  "id": 266,
+  "RegisterLink": "https://tickets.kynhood.com/event/690b1cbd01381741f130cd9e",
+  "metaTitleEvent": "Flamenco Music | Hands of Time Workshop | Super Chennai",
+  "metaDescriptionEvent": "Join the Hands of Time Workshop and explore Flamenco music through rhythm, passion, and artistry in a captivating, soulful, and immersive learning experience.",
+  "conicallinkEvent": "/eventsdetails/266",
+  "siteLink": "https://www.superchennai.com/events-in-chennai/flamenco-music-hands-of-time-workshop",
+  "EventsCalendarTitle": "Hands of Time Workshop – Flamenco Music Experience in Chennai",
+  "EventsCalendarContent": "Social Spirit, in collaboration with Musée Musical, presents Hands of Time — an engaging Flamenco rhythm workshop led by Martín Zlotnicki. Dive into Alegría, Bulería, and Tangos through rhythm, clapping, and expression.",
+  "EventsCalendarMonth": "15 Nov 2025",
+  "EventsCalendarTime": "11:00 AM",
+  "EventsCalendarCategory": "Music / Workshop",
+  "image": "/images/HomePage-Images/Events/Newevents/hands-of-time.jpg",
+  "link": "/events",
+  "location": "Musée Musical, Triplicane",
+  "language": "English",
+  "hours": "2 Hours",
+  "ageLimit": "All Ages",
+  "religion": "",
+  "aboutFull": "Hands of Time Workshop – Flamenco Music Experience\n\nSocial Spirit, in collaboration with Musée Musical, proudly presents Hands of Time, an engaging workshop on Flamenco rhythms conducted by Martín Zlotnicki.\n\nStep into the pulse of Flamenco in this interactive rhythm session guided by the talented guitarist Martín Zlotnicki.\n\nDesigned for guitarists, instrumentalists, and anyone captivated by Flamenco’s energy, this workshop explores three iconic styles — Alegría, Bulería, and Tangos.\n\nThrough palmas (hand clapping) and hands-on rhythm practices, participants will uncover the compás (rhythmic framework) of each form, gaining a deeper sense of how to feel, blend, and express these beats through both movement and music.\n\nNo prior experience or age restriction — all you need is enthusiasm, concentration, and your instrument.\n\nJoin the Hands of Time Workshop and explore Flamenco music through rhythm, passion, and artistry in a captivating, soulful, and immersive learning experience."
+},
+
+{
+  "url": "floating-yoga-fitness-on-water-workshop",
+  "id": 267,
+  "RegisterLink": "https://tickets.kynhood.com/event/690c88a408b6eb9349f090b8",
+  "metaTitleEvent": "Floating Yoga | Fitness on Water Workshop | FLAABH FIT | Super Chennai",
+  "metaDescriptionEvent": "Join the floating yoga workshop by FLAABH FIT — experience fitness on water with balance, core strength, and tranquility. A water-wellness event like no other.",
+  "conicallinkEvent": "/eventsdetails/267",
+  "siteLink": "https://www.superchennai.com/events-in-chennai/floating-yoga-fitness-on-water-workshop",
+  "EventsCalendarTitle": "Flaabh Fit – India’s First Floating Fitness Experience",
+  "EventsCalendarContent": "Experience India’s first on-water fitness program blending yoga, pilates, and core training on floating boards. Balance, strength, and mindfulness await!",
+  "EventsCalendarMonth": "16 Nov 2025",
+  "EventsCalendarTime": "7:30 PM",
+  "EventsCalendarCategory": "Fitness / Yoga",
+  "image": "/images/HomePage-Images/Events/Newevents/flaabh-fit.jpg",
+  "link": "/events",
+  "location": "Flaabh Fit Studio, Teynampet",
+  "language": "English",
+  "hours": "1 Hour",
+  "ageLimit": "All Ages",
+  "religion": "",
+  "aboutFull": "Flaabh Fit – India’s First Floating Fitness Experience\n\nDive into a new wave of workouts with Flaabh Fit, India’s first on-water fitness program that blends balance, strength, and mindfulness on floating boards in a tranquil pool setting.\n\nCombining yoga, pilates, and core training, each session helps you:\n Boost balance and posture\n Build strength and flexibility\n Sharpen focus and coordination\n  Relieve stress and refresh your mind\n\nIt’s more than a workout — it’s a mind-body flow on water, perfect for both beginners and fitness lovers.\n\nJoin the floating yoga workshop by FLAABH FIT and experience fitness on water with balance, core strength, and tranquility. A water-wellness event like no other."
+},
+
+{
+  "url": "kendo-training-martial-arts-workshop-start-today",
+  "id": 268,
+  "RegisterLink": "https://tickets.kynhood.com/event/6901e1a7f557630ef1f86490",
+  "metaTitleEvent": "Kendo Training | Martial Arts Workshop | Start Today | Super Chennai",
+  "metaDescriptionEvent": "Start your journey with Kendo Training, a martial arts workshop blending fitness, mindfulness, and traditional sword techniques crafted for modern learners.",
+  "conicallinkEvent": "/eventsdetails/268",
+  "siteLink": "https://www.superchennai.com/events-in-chennai/kendo-training-martial-arts-workshop-start-today",
+  "EventsCalendarTitle": "Start Kendo Today – Martial Arts Workshop in Chennai",
+  "EventsCalendarContent": "Learn the art of Kendo — explore its history, techniques, and discipline in this introductory martial arts workshop for beginners.",
+  "EventsCalendarMonth": "12 Nov 2025",
+  "EventsCalendarTime": "11:00 AM",
+  "EventsCalendarCategory": "Martial Arts / Workshop",
+  "image": "/images/HomePage-Images/Events/Newevents/start-kendo.jpg",
+  "link": "/events",
+  "location": "Thousand Lights, Chennai",
+  "language": "English",
+  "hours": "2 Hours",
+  "ageLimit": "All Ages",
+  "religion": "",
+  "aboutFull": " Sun, 2 Nov  to  Sun, 30 Nov  Start Kendo Today – Martial Arts Workshop\n\nThis session offers an introductory experience to Kendo, where participants will first explore the history and origins of this disciplined Japanese martial art.\n\nThey’ll then learn the fundamentals of handling a Shinai (bamboo sword), the basic striking techniques, and the core rules of the sport.\n\nTo wrap up, participants will engage in a series of standard Kendo drills practiced by players to enhance skill, precision, and discipline.\n\nStart your journey with Kendo Training, a martial arts workshop blending fitness, mindfulness, and traditional sword techniques crafted for modern learners."
+},
+
+
 
 
 

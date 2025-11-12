@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useEventBySlug } from "./Hooks/UseEvents";
 import { API_BASE_URL } from "../../../config";
-import AutoShrinkText from "../../Components/Text/AutoShrinkText"
+import AutoShrinkText from "../../Components/Text/AutoShrinkText";
 import { PropertyContent } from "../../Pages/Properties/Components/Properties/ritchText";
 import { formatEventTime } from "./Utils/formatTime";
 import FormattedEventDates from "./Utils/dateFormatter";
@@ -11,7 +11,7 @@ import FormattedEventDates from "./Utils/dateFormatter";
 export default function EventsDetails() {
   const { slug } = useParams();
   const { event, loading } = useEventBySlug(slug);
-const API_URL = `${API_BASE_URL}`;
+  const API_URL = `${API_BASE_URL}`;
 
   console.log("EventData:", event);
 
@@ -32,6 +32,7 @@ const API_URL = `${API_BASE_URL}`;
   }
 
   const main = event.event || {};
+  const meta = event.meta || {};
 
   const {
     title,
@@ -54,7 +55,7 @@ const API_URL = `${API_BASE_URL}`;
     : null;
   const genre = details?.genre || null;
   const duration = details?.duration || null;
-   const eventTime = details?.eventTime || null;
+  const eventTime = details?.eventTime || null;
   const isFree = details?.isFree ? "Free Entry" : null;
   const familyFriendly = details?.familyFriendly ? "Family Friendly" : null;
   const categories =
@@ -64,31 +65,39 @@ const API_URL = `${API_BASE_URL}`;
     ? `${API_URL}${image.url}`
     : "/images/no-image.jpg";
 
-const formattedDate = Array.isArray(eventDates)
-  ? [...new Set(
-      eventDates
-        .map((d) => d.date)
-        .sort((a, b) => new Date(a) - new Date(b))
-        .map((date) =>
-          new Date(date).toLocaleString("en-IN", {
-            weekday: "long",
-            day: "numeric",
-            month: "short",
-            year: "numeric",
-          })
-        )
-    )].join(" | ")
-  : null;
+  const formattedDate = Array.isArray(eventDates)
+    ? [
+        ...new Set(
+          eventDates
+            .map((d) => d.date)
+            .sort((a, b) => new Date(a) - new Date(b))
+            .map((date) =>
+              new Date(date).toLocaleString("en-IN", {
+                weekday: "long",
+                day: "numeric",
+                month: "short",
+                year: "numeric",
+              })
+            )
+        ),
+      ].join(" | ")
+    : null;
 
+  const metaTitle = meta?.title || title || "Event Details";
+  const metaDescription =
+    meta?.description || description || "Event happening in Chennai";
 
-console.log("date 999999999999999 ",formattedDate)
   return (
     <>
       {/* 🧠 Meta SEO */}
       <Helmet>
-        <title>{title || "Event Details"}</title>
-        <meta name="description" content={description || "Event in Chennai"} />
+        <title>{metaTitle || title || "Event Details"}</title>
+        <meta
+          name="description"
+          content={metaDescription || "Event in Chennai"}
+        />
         <link rel="canonical" href={window.location.href} />
+        {imageUrl && <meta property="og:image" content={imageUrl} />}
       </Helmet>
 
       {/* 🟣 Banner Section */}

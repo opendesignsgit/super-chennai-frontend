@@ -36,12 +36,12 @@
 }
 
 .sort-by select:hover {
-  border-color: #c084fc;
+  border-color: #6d1084;
 }
 
 .sort-by select:focus {
   outline: none;
-  border-color: #a855f7;
+  border-color: #6d1084;
   box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.3);
 }
 

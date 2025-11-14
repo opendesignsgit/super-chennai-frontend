@@ -35,6 +35,7 @@ const FilterSection = ({ title, children, onClear }) => {
   );
 };
 
+
 const EventsFilterSidebar = ({ filters, setFilters }) => {
     const { categories } = useEventCategories();
   const handleLanguageChange = (lang) => {
@@ -56,11 +57,11 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
   };
 
   const handleOldEvents = () => {
-    const today = new Date().toISOString().split("T")[0]; // current date in YYYY-MM-DD
+    const today = new Date().toISOString().split("T")[0];
     setFilters((prev) => ({
       ...prev,
       startDate: "",
-      endDate: today, // filter all events before today
+      endDate: today,
       showOldEvents: true,
     }));
   };
@@ -73,6 +74,7 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
       return { ...prev, locations: Array.from(selected) };
     });
   };
+  
   const { locations, loading } = useLocations();
 
   const clearCategory = () =>
@@ -83,7 +85,13 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
     setFilters((prev) => ({ ...prev, locations: [] }));
 
   return (
-    <aside className="w-[280px] bg-[#f9fafb] rounded-2xl p-4">
+    <aside
+      className="sidebarEvent-scrollbar w-[280px] bg-[#f9fafb] rounded-2xl p-4 overflow-y-auto max-h-[85vh] scrollbar-thin scrollbar-thumb-pink-500 scrollbar-track-gray-200 scrollbar-thumb-rounded-full"
+      style={{
+        scrollbarWidth: "thin",
+        scrollbarColor: "#af1c6683 #f3f4f6",
+      }}
+    >
       <h3 className="text-xl font-semibold mb-4 text-gray-800">Filters</h3>
 
       {/* Date Filter */}

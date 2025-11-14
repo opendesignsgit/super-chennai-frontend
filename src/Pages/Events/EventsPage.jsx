@@ -11,15 +11,20 @@ import EventCardSkeleton from "./Components/Loader/EventCardSkeleton";
 import { formatEventTime } from "./Utils/formatTime";
 import EventCalender from "./Components/EventCalender/EventCalender"
 import FormattedEventDates from "./Utils/dateFormatter";
+import SortBy from "./Components/Sorting"
 
 const EventsPage = () => {
   const [filters, setFilters] = useState({ categories: [] });
-  const [sortBy, setSortBy] = useState("");
+  const [sortBy, setSortBy] = useState("upcoming");
   const { events, totalResults, loading } = useEvents(filters, sortBy);
-console.log("events",events)
+  
+  
+  console.log("events",events)
+
 
 
 //################# SORTING DATWISE DESENTING #################
+
 const upcomingEvents = [...events].sort((a, b) => {
   const dateA = Array.isArray(a.event?.eventDates) && a.event.eventDates.length
     ? new Date(a.event.eventDates[0].date)
@@ -34,6 +39,32 @@ const upcomingEvents = [...events].sort((a, b) => {
 
   return dateB - dateA; 
 });
+
+//################# PAST EVENTS  #################
+
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+const Pastevents = [...events]
+  .filter((event) => {
+    if (
+      !Array.isArray(event.event?.eventDates) ||
+      event.event.eventDates.length === 0
+    ) {
+      return false;
+    }
+
+    // check if ANY date in eventDates is >= today
+    return event.event.eventDates.some((d) => {
+      const eventDate = new Date(d.date);
+      eventDate.setHours(0, 0, 0, 0);
+      return eventDate >= today;
+    });
+  })
+  .sort((a, b) => {
+    const dateA = new Date(a.event.eventDates[0].date);
+    const dateB = new Date(b.event.eventDates[0].date);
+    return dateB - dateA;
+  });
 
 
   const { categories } = useEventCategories();
@@ -64,6 +95,11 @@ const upcomingEvents = [...events].sort((a, b) => {
 
       return { ...prev, categories: newCategories };
     });
+  };
+
+  const onSortChange = (value) => {
+    console.log("Selected Sort:", value);
+    setSortBy(value);
   };
 
   return (
@@ -148,6 +184,7 @@ const upcomingEvents = [...events].sort((a, b) => {
                   "in all categories"
                 )}
               </span>
+              <SortBy value={sortBy} onChange={onSortChange} />
             </div>
 
             {/* Event Cards */}
@@ -197,8 +234,6 @@ const upcomingEvents = [...events].sort((a, b) => {
                     const imageUrl = eventData.image
                       ? `${API_BASE_URL}${eventData.image.url}`
                       : "../../../public/propertyDefault.png";
-
-               
 
                     return (
                       <div
@@ -305,8 +340,7 @@ const upcomingEvents = [...events].sort((a, b) => {
           setFilters={setFilters}
         />
       </section>
-      {/* <EventCalender events={upcomingEvents} /> */}
-
+      <EventCalender events={upcomingEvents} />
     </>
   );
 };

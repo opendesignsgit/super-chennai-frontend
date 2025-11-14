@@ -275,10 +275,37 @@ const detailsections = [
       },
     ],
   },
+  // ASIAN CUSIAN ############################################
   {
     id: 4,
     title: "Asian Cuisine",
     points: [
+      {
+        name: "Zaafrin’s Mandi House",
+        description:
+          "Authentic Arabian flavors brought to life with traditional mandi rice and juicy meats. A must-visit for anyone craving rich, aromatic Middle Eastern cuisine.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Porur",
+            link: "https://maps.app.goo.gl/L196AJoKJN5p5Pq16",
+          },
+        ],
+      },
+
+      {
+        name: "BAMboo Kitchen",
+        description:
+          "A cozy Asian dining spot offering authentic Thai and Chinese flavors with a modern twist. Known for its warm ambiance and aromatic stir-fries.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/xzXA4FAj3jiCkoqh9",
+          },
+        ],
+      },
+
       {
         name: "Soy Soi",
         description: "Southeast Asian street-style dishes",
@@ -370,10 +397,50 @@ const detailsections = [
       },
     ],
   },
+  // CASUAL CAFE ##############################################
   {
     id: 5,
     title: "Cafés & Casual Bites",
     points: [
+      {
+        name: "Coffea",
+        description:
+          "A charming café perfect for coffee lovers and casual meetups. Serves freshly brewed blends, light bites, and cozy vibes all day long.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/RrEXJsNx9ATsiFmw8",
+          },
+        ],
+      },
+
+      {
+        name: "Bunsk Bites",
+        description:
+          "A trendy fast-casual eatery serving loaded buns, sliders, and quick bites. Great for those craving a flavorful snack with a modern twist.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Valasaravakkam",
+            link: "https://maps.app.goo.gl/bZ8pwEgUxvHDbiLu6",
+          },
+        ],
+      },
+
+      {
+        name: "Gourmet Pulp",
+        description:
+          "A modern dining spot known for its creative fusion dishes and refreshing ambiance. Perfect for food lovers who enjoy bold flavors and elegant plating.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/5ADhJoGrnLDK9ssQ6",
+          },
+        ],
+      },
+
       {
         name: "Chamiers Café",
         description: "Boutique café with breakfast and retail space",
@@ -657,10 +724,51 @@ const detailsections = [
       },
     ],
   },
+
+  // BEACHESIDE ###############################################
   {
     id: 6,
     title: "Beachside & Rooftop Dining",
     points: [
+      {
+        name: "11 Reserve",
+        description:
+          "An upscale lounge with a classy vibe, known for its crafted drinks and gourmet menu. A perfect mix of sophistication and comfort.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/XYt9eXHKsNv1Atxj7",
+          },
+        ],
+      },
+
+      {
+        name: "Flamingo",
+        description:
+          "Vibrant, lively, and full of tropical charm, Flamingo serves colorful cocktails and global bites. A great spot for brunches or fun nights out.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Chromepet",
+            link: "https://maps.app.goo.gl/xhejXkE8hDTMni2i6",
+          },
+        ],
+      },
+
+      {
+        name: "After Hours Rooftop",
+        description:
+          "A chic rooftop lounge offering city views, signature cocktails, and soulful music. Ideal for late-night gatherings and relaxed evenings under the stars.",
+        subDescription: "",
+        locations: [
+          {
+            label: "T Nagar",
+            link: "https://maps.app.goo.gl/ngJZq2mGih84kfqV6",
+          },
+        ],
+      },
+
       {
         name: "Upper Deck (Vivanta Fisherman’s Cove)",
         description: "Coastal fine dining by the sea",
@@ -734,6 +842,8 @@ const detailsections = [
       },
     ],
   },
+
+  // SOUTHINDIAN ###############################################
   {
     id: 1,
     title: "South Indian Classics",
@@ -957,10 +1067,37 @@ const detailsections = [
       },
     ],
   },
+  // NOTHINDIAN ################################################
   {
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
+      {
+        name: "Old Cheese Bar",
+        description:
+          "A cozy and rustic bar celebrating all things cheese. From artisanal platters to creamy pasta, it’s a haven for cheese enthusiasts.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/A58Hcr3WHk9Rpxre8",
+          },
+        ],
+      },
+
+      {
+        name: "SpiceKlub Chennai",
+        description:
+          "A creative vegetarian restaurant redefining Indian cuisine with molecular gastronomy. Expect vibrant presentations, bold flavors, and a playful dining experience.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/EMCLv2PohepGCN3J6",
+          },
+        ],
+      },
+
       {
         name: "Annalakshmi",
         description: "Upscale vegetarian buffet",

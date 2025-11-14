@@ -1,70 +1,136 @@
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import "../../../../assets/Css/EventsCalendar.css";
 import { API_BASE_URL } from "../../../../../config";
 import { formatEventTime } from "../../Utils/formatTime";
 import { formatEventDate } from "../../Utils/dateFormatter";
 import TruncatedText from "../../../GlobalComponents/TruncatedText";
+import defaultImage from "../../../../../public/propertyDefault.png"
+import FormattedEventDates from "../../Utils/dateFormatter";
 
 export default function EventCalender({ events = [] }) {
-  const [scrollDir, setScrollDir] = useState("left");
-  const carouselRef = useRef();
   const [x, setX] = useState(0);
+  const carouselRef = useRef();
   const lastScrollY = useRef(0);
+  const [scrollDir, setScrollDir] = useState("left");
+  const today = useMemo(() => {
+    const t = new Date();
+    t.setHours(0, 0, 0, 0);
+    return t;
+  }, []);
 
+
+
+
+  let featuredEvent = events.find((e) => e.isFeatured === true);
+  const now = new Date();
+  const currentMonth = now.getMonth();
+  const currentYear = now.getFullYear();
+
+
+
+
+  const upcomingEvents = useMemo(
+    () =>
+      events
+        .filter(
+          (card) =>
+            card !== featuredEvent &&
+            Array.isArray(card.event?.eventDates) &&
+            card.event.eventDates.length > 0 &&
+            new Date(card.event.eventDates[0].date) >= today
+        )
+        .sort(
+          (a, b) =>
+            new Date(a.event.eventDates[0].date) -
+            new Date(b.event.eventDates[0].date)
+        ),
+    [events, today, featuredEvent]
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  if (!featuredEvent) {
+    const recentAddedThisMonth = [...events]
+      .filter((e) => {
+        if (!e.event?.eventDates?.length) return false;
+        const firstDate = new Date(e.event.eventDates[0].date);
+        return (
+          firstDate.getMonth() === currentMonth &&
+          firstDate.getFullYear() === currentYear
+        );
+      })
+      .sort(
+        (a, b) =>
+          new Date(b.createdAt || b.event?.createdAt) -
+          new Date(a.createdAt || a.event?.createdAt)
+      )[0];
+
+    featuredEvent = recentAddedThisMonth || null;
+  }
+
+  if (!featuredEvent && upcomingEvents.length > 0) {
+    featuredEvent = upcomingEvents[0];
+  }
+
+  const featuredDate = featuredEvent?.event?.eventDates?.[0]?.date
+    ? formatEventDate(featuredEvent.event.eventDates[0].date)
+    : {};
+
+
+
+    
+
+  const featuredImg =
+    featuredEvent?.heroImage?.sizes?.medium?.url ||
+    featuredEvent?.heroImage?.url || defaultImage;
+
+  const category =  featuredEvent?.event?.eventsCategory?.[0]?.title || "";
+   
   const slide = (direction) => {
     const cardWidth = 300;
     const gap = 40;
-    const visibleWidth = window.innerWidth;
-    const totalCardsWidth = events.length * (cardWidth + gap);
-    const maxX = -(totalCardsWidth - visibleWidth + gap);
+    const maxX = -(
+      upcomingEvents.length * (cardWidth + gap) -
+      window.innerWidth +
+      gap
+    );
 
-    setX((prevX) => {
-      if (direction === "left") return Math.min(prevX + (cardWidth + gap), 0);
-      if (direction === "right")
-        return Math.max(prevX - (cardWidth + gap), maxX);
-      return prevX;
-    });
+    setX((prev) =>
+      direction === "left"
+        ? Math.min(prev + (cardWidth + gap), 0)
+        : Math.max(prev - (cardWidth + gap), maxX)
+    );
   };
 
-  /** ✅ Sorted upcoming events */
-  const upcomingEvents = events
-    .filter((card) => card.event?.eventDate)
-    .sort((a, b) => new Date(a.event.eventDate) - new Date(b.event.eventDate));
-
-  /** ✅ Get Featured Event (true only, ignore null) */
-  const eventData = events.find((e) => e.isFeatured === true);
-
-  // ✅ Don’t break UI if not featured event available
-  if (!eventData) {
-    console.warn("⚠ No featured event found");
-  }
-
+  /* 🔄 Scroll Direction Detection */
   useEffect(() => {
     const handleScroll = () => {
       setScrollDir(window.scrollY > lastScrollY.current ? "left" : "right");
       lastScrollY.current = window.scrollY;
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  /** ✅ If no featured event, still show scroll cards section */
-  const featuredDate = eventData?.event?.eventDate
-    ? formatEventDate(eventData.event.eventDate)
-    : {};
 
-  const eventImg =
-    eventData?.heroImage?.sizes?.medium?.url ||
-    eventData?.heroImage?.url ||
-    "/images/default-event.jpg";
 
-  const category = eventData?.event?.eventsCategory?.[0]?.title || "Category";
 
   return (
     <div className="EventsCalendarMainSection">
-      {/* BG text animation */}
+      {/* BG Effect */}
       <div
         className={`EventsCalenderBackground ${
           scrollDir === "right"
@@ -72,26 +138,31 @@ export default function EventCalender({ events = [] }) {
             : "Utilitiesscroll-left"
         }`}
       >
-        <p>Events &nbsp; Events &nbsp; Events &nbsp; Events </p>
-        <p>Calendar &nbsp; Calendar &nbsp; Calendar &nbsp; Calendar</p>
+        <p>Events &nbsp; Events &nbsp; Events &nbsp;</p>
+        <p>Calendar &nbsp; Calendar &nbsp; Calendar &nbsp;</p>
       </div>
 
+      {/* Title */}
       <div className="container max-w-7xl mx-auto px-4 EventsCalendarTitleMain">
         <h2>Events Calendar</h2>
         <p>
-          Conferences by day, concerts by night — Chennai’s event calendar
-          blends innovation, culture, and entertainment effortlessly.
+          Find the finest shows & events happening across Chennai — sorted just
+          for you!
         </p>
       </div>
 
-      {/* ✅ Featured Event Section Only if Available */}
-      {eventData && (
+      {/*  Featured Card */}
+      {featuredEvent && (
         <div className="eventsCalendarMainSectionConatiner container max-w-7xl mx-auto px-4">
           <div className="CalendarEventsFirst">
             <img
               className="eventsCalenderIamge"
-              src={`${API_BASE_URL}${eventImg?.url || eventImg}`}
-              alt={eventData?.title || "Event image"}
+              src={`${API_BASE_URL}${featuredImg}`}
+              alt={featuredEvent?.event?.title}
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = defaultImage;
+              }}
             />
 
             <div className="MainCalendarSectionEvent">
@@ -106,22 +177,27 @@ export default function EventCalender({ events = [] }) {
                   <p className="dateEvents">{featuredDate?.day}</p>
                   <p className="dayEvents">{featuredDate?.weekday}</p>
                 </div>
-
                 <div>
-                  <p className="eventsNAME">{eventData.event.title}</p>
-                  <p className="eventspLACE">{eventData.event.singerName}</p>
+                  <p className="eventsNAME">{featuredEvent.event.title}</p>
+                  <p className="eventspLACE">
+                    {featuredEvent.event.singerName || ""}
+                  </p>
                 </div>
               </div>
 
               <div className="thirdSectionCalendarContent">
-                <p>{eventData.event.description}</p>
+                <TruncatedText
+                  text={featuredEvent.event.description}
+                  limit={180}
+                />
               </div>
 
               <div className="eventsCalendarLinks">
                 <a>{category}</a>
               </div>
 
-              <a href={`/events/${eventData.slug}`}>
+              <a href={`/superchennai-events/`}>
+              {/* ${featuredEvent.slug} */}
                 <p className="FindOutMore">Find Out More</p>
               </a>
             </div>
@@ -129,7 +205,6 @@ export default function EventCalender({ events = [] }) {
         </div>
       )}
 
-      {/* ✅ Mobile scrolling cards */}
       <div className="overflow-hidden py-17 cardMobileSection">
         <div className="relative">
           <div className="absolute top-0 left-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
@@ -141,97 +216,86 @@ export default function EventCalender({ events = [] }) {
             drag="x"
             dragConstraints={{
               right: 0,
-              left: -(
-                upcomingEvents.length * (300 + 40) -
-                window.innerWidth +
-                40
-              ),
+              left: -(upcomingEvents.length * 340 - window.innerWidth),
             }}
             animate={{ x }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
             {upcomingEvents.map((card) => {
-              const data = card.event;
-              const eventDate = data.eventDate
-                ? new Date(data.eventDate).toLocaleDateString("en-IN", {
-                    day: "numeric",
-                    month: "short",
-                    year: "numeric",
-                  })
-                : "TBA";
-
-              const time = data.details?.eventTime
-                ? formatEventTime(data.details.eventTime)
-                : "";
-
-              const imageUrl = data?.image
-                ? `${API_BASE_URL}${data.image.url}`
-                : "/images/placeholder.jpg";
+              const d = card.event.eventDates[0];
+              const formattedDate = formatEventDate(d.date);
+              const formattedTime = d.time ? formatEventTime(d.time) : "";
+              const cardImg =
+                card.heroImage?.sizes?.medium?.url ||
+                card.heroImage?.url ||
+                defaultImage;
+                    const eventData = card.event || {};
 
               return (
                 <motion.div
                   key={card.id}
-                  className="EventsCalendarCardSection min-w-[300px] h-[500px] bg-white rounded-md  hover:shadow-lg "
                   whileHover={{ scale: 1.04 }}
+                  className="EventsCalendarCardSection min-w-[300px] h-[400px] bg-white"
                 >
-                  <div className="relative w-full h-[250px]">
-                    <a
-                      href={`/superchennai-events-details/${card.slug}`}
-                      state={{ card }}
-                    >
-                      <img
-                        src={imageUrl}
-                        alt={data.title}
-                        className="w-full h-full object-cover rounded-t-md"
-                      />
-                    </a>
+                  <a href={`/events/${card.slug}`}>
+                    <img
+                      src={`${API_BASE_URL}${cardImg}`}
+                      alt={card.event.title}
+                      className="w-full h-[250px] object-cover rounded-t-md"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = defaultImage;
+                      }}
+                    />
+                  </a>
 
-                    {data?.eventsCategory?.length > 0 && (
-                      <div className="absolute top-3 right-3 flex flex-wrap gap-2 p-4">
-                        {data.eventsCategory.map((cat) => (
-                          <span
-                            key={cat.id}
-                            className="bg-gradient-to-r from-[#a44294] to-[#701c67] text-white px-2 py-1 rounded-full text-xs font-medium shadow-md"
-                          >
-                            {cat.title}
-                          </span>
-                        ))}
+                  <div className="p-3 flex gap-2">
+                    {(eventData?.eventDates?.length > 0 ||
+                      eventData?.details?.eventTime) && (
+                      <div className="datimeContbox flex items-center text-sm text-gray-600 mb-2">
+                        <div className="dtDaymonth">
+                          {eventData?.eventDates?.length > 0 && (
+                            <FormattedEventDates
+                              dates={eventData.eventDates.slice(0, 2)}
+                            />
+                          )}
+                        </div>
+
+                        {eventData?.eventDates &&
+                          eventData?.details?.eventTime && (
+                            <div className="mx-2 text-gray-400">|</div>
+                          )}
+
+                        {eventData?.details?.eventTime && (
+                          <div className="dtTimess">
+                            {formatEventTime(eventData.details.eventTime)}
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
 
-                  <div className="EventsCalendarMonthtime p-3">
-                    <span className="EventsCalendarMonthStyle">
-                      {eventDate}
-                    </span>
-                    {time && (
-                      <>
-                        <span className="EventsCalendarMonthStyle">|</span>
-                        <span className="EventsCalendarMonthStyle">{time}</span>
-                      </>
-                    )}
-                  </div>
-
-                  <h3 className="EventsCalendarTitlecss">{data.title}</h3>
-                  <h4 className="EventsCalendarContentcss">
-                    <TruncatedText text={data.description || ""} limit={60} />
+                  <h3 className="EventsCalendarTitlecss line-clamp-1">{card.event.title}</h3>
+                  <h4 className="EventsCalendarContentcss line-clamp-4">
+                    {card.event.description}
                   </h4>
                 </motion.div>
               );
             })}
           </motion.div>
-        </div>
 
-        {/* Navigation */}
-        <div className="EventsCalenderButtons flex justify-center gap-8 mt-8">
-          <div
-            className="EventsCalenderLeftButton"
-            onClick={() => slide("left")}
-          ></div>
-          <div
-            className="EventsCalenderRightButton"
-            onClick={() => slide("right")}
-          ></div>
+          {/* Navigation Buttons */}
+
+          <div className="EventsCalenderButtons flex justify-center gap-8 mt-8 mb-10">
+            <button
+              onClick={() => slide("left")}
+              className="EventsCalenderLeftButton"
+            ></button>
+            <button
+              onClick={() => slide("right")}
+              className="EventsCalenderRightButton"
+            ></button>
+          </div>
         </div>
       </div>
     </div>

@@ -35,7 +35,7 @@ const SidebarModal = ({ open, onClose, filters, setFilters }) => {
               transition={{ delay: 0.2, duration: 0.3 }}
               className="flex justify-between items-center mb-4"
             >
-              <h2 className="text-lg font-semibold text-gray-800">Filters</h2>
+              {/* <h2 className="text-lg font-semibold text-gray-800">Filters</h2> */}
               <button
                 onClick={onClose}
                 className="text-gray-500 hover:text-gray-700 transition-colors duration-200"

@@ -210,7 +210,7 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
       </FilterSection>
 
       {/* Browse by Venues Button */}
-      <button
+      {/* <button
         onClick={handleOldEvents}
         className="w-full mt-4 border border-pink-600 text-pink-600 py-2 rounded-md hover:bg-pink-50 transition"
       >
@@ -230,7 +230,7 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
         >
           Show Upcoming Events
         </button>
-      )}
+      )} */}
     </aside>
   );
 };

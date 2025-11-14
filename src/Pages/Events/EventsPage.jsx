@@ -25,20 +25,22 @@ const EventsPage = () => {
 
 //################# SORTING DATWISE DESENTING #################
 
-const upcomingEvents = [...events].sort((a, b) => {
-  const dateA = Array.isArray(a.event?.eventDates) && a.event.eventDates.length
-    ? new Date(a.event.eventDates[0].date)
-    : null;
+const upcomingEvents = [...events]
 
-  const dateB = Array.isArray(b.event?.eventDates) && b.event.eventDates.length
-    ? new Date(b.event.eventDates[0].date)
-    : null;
+// .sort((a, b) => {
+//   const dateA = Array.isArray(a.event?.eventDates) && a.event.eventDates.length
+//     ? new Date(a.event.eventDates[0].date)
+//     : null;
 
-  if (!dateA) return 1;
-  if (!dateB) return -1;
+//   const dateB = Array.isArray(b.event?.eventDates) && b.event.eventDates.length
+//     ? new Date(b.event.eventDates[0].date)
+//     : null;
 
-  return dateB - dateA; 
-});
+//   if (!dateA) return 1;
+//   if (!dateB) return -1;
+
+//   return dateB - dateA; 
+// });
 
 //################# PAST EVENTS  #################
 

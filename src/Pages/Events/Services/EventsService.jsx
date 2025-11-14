@@ -10,7 +10,7 @@ const API_URL = `${API_BASE_URL}/api`;
 
 export const fetchEvents = async (filters = {}, sortBy = "upcoming") => {
   try {
-    const params = { limit: 0};
+    const params = { limit: 0 };
 
     console.log("🔵 Sending filters to backend:", filters);
 
@@ -138,9 +138,14 @@ export const fetchEvents = async (filters = {}, sortBy = "upcoming") => {
     // =========================
     // 🔄 SORTING OPTIONS
     // =========================
-      const apiSort = mapSortToApi(sortBy);
-      if (apiSort) params.sort = apiSort;
-      
+    // Sorting
+    const apiSort = mapSortToApi(sortBy);
+    if (apiSort) params.sort = apiSort;
+    
+    if (sortBy === "upcoming") {
+      const today = new Date().toISOString();
+      params["where[event.eventDates.date][greater_than_equal]"] = today;
+    }
 
     // =========================
     // 📅 OLD EVENTS FILTER

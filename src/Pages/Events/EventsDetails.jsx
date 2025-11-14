@@ -12,6 +12,7 @@ export default function EventsDetails() {
   const { slug } = useParams();
   const { event, loading } = useEventBySlug(slug);
   const API_URL = `${API_BASE_URL}`;
+  const [showDatesModal, setShowDatesModal] = React.useState(false);
 
   console.log("EventData:", event);
 
@@ -86,6 +87,37 @@ export default function EventsDetails() {
   const metaTitle = meta?.title || title || "Event Details";
   const metaDescription =
     meta?.description || description || "Event happening in Chennai";
+
+  function DatesModal({ open, onClose, dates }) {
+    if (!open) return null;
+
+    return (
+      <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-[999]">
+        <div className="bg-white p-5 rounded-lg shadow-lg w-[90%] max-w-md">
+          <h3 className="text-lg font-semibold mb-3">Event Dates</h3>
+          <div className="max-h-[300px] overflow-y-auto space-y-2">
+            {dates.map((d, i) => (
+              <p key={i} className="text-gray-700 text-sm border-b pb-1">
+                {new Date(d.date).toLocaleString("en-IN", {
+                  weekday: "long",
+                  day: "numeric",
+                  month: "short",
+                  year: "numeric",
+                })}
+              </p>
+            ))}
+          </div>
+
+          <button
+            onClick={onClose}
+            className="w-full bg-[#a44294] text-white mt-4 py-2 rounded-lg font-medium hover:bg-[#701c67]"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -183,12 +215,38 @@ export default function EventsDetails() {
             <div className="EventRight w-full lg:w-[320px] bg-white rounded-lg shadow p-5 h-max">
               <h4 className="text-lg font-semibold mb-3">Event Details</h4>
               <div className="space-y-3">
-                {formattedDate && (
-                  <InfoRow
-                    icon="/images/events/calendar.png"
-                    label={formattedDate}
-                  />
+            
+                {Array.isArray(eventDates) && eventDates.length > 0 && (
+                  <>
+                    <InfoRow
+                      icon="/images/events/calendar.png"
+                      label={new Date(eventDates[0].date).toLocaleString(
+                        "en-IN",
+                        {
+                          weekday: "long",
+                          day: "numeric",
+                          month: "short",
+                          year: "numeric",
+                        }
+                      )}
+                    />
+
+                    {eventDates.length > 1 && (
+                      <button
+                        onClick={() => setShowDatesModal(true)}
+                        className="text-sm text-[#a44294] underline ml-8"
+                      >
+                        View More Dates ({eventDates.length - 1} more)
+                      </button>
+                    )}
+                  </>
                 )}
+
+                <DatesModal
+                  open={showDatesModal}
+                  onClose={() => setShowDatesModal(false)}
+                  dates={eventDates}
+                />
 
                 {eventTime && (
                   <InfoRow

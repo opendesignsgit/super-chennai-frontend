@@ -5,14 +5,16 @@
  */
 export const mapSortToApi = (sortBy) => {
   switch (sortBy) {
-    case "newest":
-      return "-createdAt";  // latest first
-    case "oldest":
-      return "createdAt";   // oldest first
     case "upcoming":
-      return "event.eventDates.date"; // sort by earliest event date
+      return "event.eventDates.date"; // ascending = nearest first
+
+    case "newest":
+      return "-createdAt"; // latest added first
+
+    case "oldest":
+      return "createdAt"; // oldest added first
 
     default:
-      return "-createdAt"; // fallback sorting
+      return "";
   }
 };

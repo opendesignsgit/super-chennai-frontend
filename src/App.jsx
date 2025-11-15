@@ -119,6 +119,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import EventsHome from "./Pages/Events";
 import EventsPage from "./Pages/Events/EventsPage";
 import EventDetailPage from "./Pages/Events/EventsDetails"
+import ChennaiQuiz from "./Pages/Events/ChennaiQuiz"
 
 import EventsDetails from "./Pages/SubPages/EventsPages/EventsDetails";
 import TrendingDetails from "./Components/TrendingDetails";
@@ -1277,6 +1278,9 @@ function App() {
 
           {/* <Route path="/eventsdetails/:id" element={<EventsDetails />} /> */}
           <Route path="/events-in-chennai/:url" element={<EventsDetails />} />
+           <Route path="/superchennai-quiz" element={<ChennaiQuiz />} />
+
+          {/* ChennaiQuiz */}
 
           <Route path="/TrendingDetails/:id" element={<TrendingDetails />} />
 

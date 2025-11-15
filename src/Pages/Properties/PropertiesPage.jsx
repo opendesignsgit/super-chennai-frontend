@@ -95,9 +95,8 @@ const PropertiesPage = () => {
         </div>
       </div>
 
-     <div className="bg-[#f4f5f7]">
+      <div className="bg-[#f4f5f7]">
         <div className="container max-w-7xl mx-auto px-4 mainConiatinerPropertyList">
-         
           {/* Filters + Properties */}
           <div
             className={`${
@@ -106,22 +105,23 @@ const PropertiesPage = () => {
           >
             {/* Filters */}
             {!useTopFilter ? (
-              <div className="w-[280px] shrink-0">
+              <div className="w-[280px] shrink-0 hidden md:block">
                 <FiltersSidebar
                   filters={filters}
                   onCheckboxChange={handleCheckboxChange}
                   onBudgetChange={handleBudgetChange}
                   onClearAll={onClearAll}
-                  setUseTopFilter={setUseTopFilter} 
+                  setUseTopFilter={setUseTopFilter}
                 />
               </div>
             ) : (
+              
               <FiltersTopbar
                 filters={filters}
                 onCheckboxChange={handleCheckboxChange}
                 onBudgetChange={handleBudgetChange}
                 onClearAll={onClearAll}
-                 setUseTopFilter={setUseTopFilter} 
+                setUseTopFilter={setUseTopFilter}
               />
             )}
 
@@ -134,7 +134,7 @@ const PropertiesPage = () => {
                   sortBy={sortBy}
                   onSortChange={setSortBy}
                   filters={filters}
-                   totalResults={totalResults}
+                  totalResults={totalResults}
                 />
                 <div className="pagination-wrapper mt-6">
                   <Pagination

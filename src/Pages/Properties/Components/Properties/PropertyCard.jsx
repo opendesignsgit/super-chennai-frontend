@@ -6,7 +6,7 @@ import { formatPrice } from "../../utils/formatPrice";
 import ContactForm from "../forms/ContactForm";
 import { formatLabel } from "../../utils/formatLabel";
 import defaultImage from "../../../../../public/propertyDefault.png";
-
+import "../../Styles/PropertyCard.css"
 const getImageUrl = (img) => {
   if (!img?.url) return defaultImage;
   if (img.url.startsWith("http")) return img.url;

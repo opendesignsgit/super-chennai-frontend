@@ -3,7 +3,9 @@ import PropertyCardSkeleton from "../../Components/loader/Skeleton";
 import SortBy from "../../Components/Properties/SortBy";
 import { useFiltersData } from "../../hooks/useFilters";
 import PropertyCard from "./PropertyCard";
-
+import useIsMobile from "../../hooks/useIsMobile";
+import MobilePropertyCard from "../Properties/MobilePropertyCard";
+import MobilePropertyCardSkeleton from "../../Components/loader/MobilePropertyCardSkeleton"
 const PropertiesList = ({
   properties,
   loading,
@@ -13,11 +15,19 @@ const PropertiesList = ({
   totalResults 
 }) => {
   const { locations, furnishings } = useFiltersData();
+  const isMobile = useIsMobile();
 
 console.log("list cards ",properties)
 
-  if (loading) {
-    return (
+
+ if (loading) {
+    return isMobile ? (
+      <div className="properties-list">
+        {[...Array(4)].map((_, i) => (
+          <MobilePropertyCardSkeleton key={i} />
+        ))}
+      </div>
+    ) : (
       <div className="PropertiesCard">
         {[...Array(3)].map((_, i) => (
           <PropertyCardSkeleton key={i} />
@@ -25,6 +35,7 @@ console.log("list cards ",properties)
       </div>
     );
   }
+
 
 
 if (!loading && properties.length === 0) {
@@ -88,19 +99,64 @@ if (!loading && properties.length === 0) {
   return (
     <div>
       <div className="sidebarrightCards">
-        <span>
+        <span className="text-sm md:text-base text-gray-700 hidden md:inline-flex">
           Showing {totalResults} results
           {Object.values(filters).some(
             (val) =>
-              (Array.isArray(val) && val.length > 0) || 
+              (Array.isArray(val) && val.length > 0) ||
               (typeof val === "object" &&
                 val !== null &&
-                Object.values(val).some(Boolean)) || 
-              (typeof val === "string" && val.trim() !== "") || 
-              (typeof val === "boolean" && val === true) 
+                Object.values(val).some(Boolean)) ||
+              (typeof val === "string" && val.trim() !== "") ||
+              (typeof val === "boolean" && val === true)
           ) && " for the selected filters"}
         </span>
-        <SortBy value={sortBy} onChange={onSortChange} />
+
+        <button
+          className="md:hidden ml-3 p-2 rounded-lg  text-white flex items-center justify-center"
+          onClick={() => setShowSidebar(true)}
+        >
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 11.5C2 7.02166 2 4.78249 3.39124 3.39124C4.78249 2 7.02166 2 11.5 2C15.9783 2 18.2175 2 19.6088 3.39124C21 4.78249 21 7.02166 21 11.5C21 15.9783 21 18.2175 19.6088 19.6088C18.2175 21 15.9783 21 11.5 21C7.02166 21 4.78249 21 3.39124 19.6088C2 18.2175 2 15.9783 2 11.5Z"
+              stroke="#E432BD"
+              stroke-width="1.5"
+            />
+            <path
+              d="M8.5 11.5H14.5001"
+              stroke="#EC1E81"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.5 15H13.5"
+              stroke="#141B34"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7.5 8H15.5"
+              stroke="#1D1E22"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span className="block font-bold  text-gray-700">Filter</span>
+        </button>
+
+        {/* SORT BY */}
+        <div className="ml-2 scale-90 md:scale-100">
+          <SortBy value={sortBy} onChange={onSortChange} />
+        </div>
       </div>
 
       {filters.locations.length > 0 && (
@@ -134,11 +190,24 @@ if (!loading && properties.length === 0) {
         </div>
       </div>
 
-      {properties.map((prop, index) => (
-        <PropertyCard key={prop?.id || index} property={prop} />
-      ))}
+      {isMobile ? (
+        <div className="">
+          {properties.map((prop, index) => (
+            <div className="p-2">
+              <MobilePropertyCard key={index} property={prop} />
+            </div>
+          ))}
+        </div>
+      ) : (
+        properties.map((prop, index) => (
+          <PropertyCard key={index} property={prop} />
+        ))
+      )}
     </div>
   );
 };
+
+
+
 
 export default PropertiesList;

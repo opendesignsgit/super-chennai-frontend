@@ -237,7 +237,7 @@ export default function EventCalender({ events = [] }) {
                   whileHover={{ scale: 1.04 }}
                   className="EventsCalendarCardSection min-w-[300px] h-[400px] bg-white"
                 >
-                  <a href={`/events/${card.slug}`}>
+                  <a href={`/superchennai-events-details/${card.slug}`}>
                     <img
                       src={`${API_BASE_URL}${cardImg}`}
                       alt={card.event.title}

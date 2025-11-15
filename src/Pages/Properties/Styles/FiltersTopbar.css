@@ -215,3 +215,58 @@
     transform: translateY(0);
   }
 }
+
+
+
+
+@media (max-width: 768px) {
+  .filters-topbar {
+    font-size: 11px;
+    gap: 10px;
+  }
+
+  .filters-topbar .filter-section {
+    font-size: 11px;
+  }
+
+  .filters-topbar .filter-section h4 {
+    font-size: 13px;
+  }
+
+  .filters-topbar .filter-checkbox {
+    font-size: 11px;
+  }
+
+  .filters-topbar .badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+}
+
+
+
+
+/* ⭐ Mobile: disable wrap + enable horizontal scroll */
+@media (max-width: 768px) {
+  .filters-topbar {
+    flex-wrap: nowrap;      /* NO WRAP */
+    overflow-x: auto;       /* Enable horizontal scroll */
+    white-space: nowrap;
+    gap: 12px;
+
+    /* Optional smooth scrolling */
+    scroll-behavior: smooth;
+
+    /* Hide scrollbar (iOS + Webkit) */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filters-topbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Make each filter section not shrink */
+  .filters-topbar .filter-section {
+    flex: 0 0 auto;   /* maintain width, prevents shrinking */
+  }
+}

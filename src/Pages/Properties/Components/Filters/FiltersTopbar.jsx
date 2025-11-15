@@ -188,7 +188,6 @@ const FiltersTopbar = ({
         </FilterSection>
         {/* )} */}
 
-
         <div className="filter-checkbox mr-2">
           {/* <span
             className="badge cursor-pointer"
@@ -214,19 +213,34 @@ const FiltersTopbar = ({
             />
           </span> */}
           {/* Side Bar */}
-          <span
-            className="badge cursor-pointer text-purple-600"
+          {/* <span
+            className="badge cursor-pointer text-purple-600 "
             onClick={() => setUseTopFilter(false)}
             style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}
           >
             Side Bar
           </span>
 
-          {/* Clear All */}
+  
           <span
             className="badge cursor-pointer text-red-600"
             onClick={onClearAll}
             style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}
+          >
+            Clear All
+          </span> */}
+          <span
+            className="badge cursor-pointer text-purple-600 hidden md:inline-flex"
+            onClick={() => setUseTopFilter(false)}
+            style={{ gap: "4px" }}
+          >
+            Side Bar
+          </span>
+
+          <span
+            className="badge cursor-pointer text-red-600 hidden md:inline-flex"
+            onClick={onClearAll}
+            style={{ gap: "4px" }}
           >
             Clear All
           </span>
@@ -236,22 +250,22 @@ const FiltersTopbar = ({
       {/* Advanced Filters */}
       {showMore && activeFilterKeys.length > 0 && (
         <div className="advanced-filters flex flex-wrap gap-4 mt-4">
-                  {/* Possession Status */}
-        <FilterSection title="Possession Status">
-          {["Ready", "Under Construction"].map((status) => {
-            const val = status.toLowerCase().replace(" ", "_");
-            return (
-              <label key={val} className="filter-checkbox mr-2">
-                <input
-                  type="checkbox"
-                  checked={filters.possessionStatus.includes(val)}
-                  onChange={() => onCheckboxChange("possessionStatus", val)}
-                />
-                <span>{formatLabel(status)}</span>
-              </label>
-            );
-          })}
-        </FilterSection>
+          {/* Possession Status */}
+          <FilterSection title="Possession Status">
+            {["Ready", "Under Construction"].map((status) => {
+              const val = status.toLowerCase().replace(" ", "_");
+              return (
+                <label key={val} className="filter-checkbox mr-2">
+                  <input
+                    type="checkbox"
+                    checked={filters.possessionStatus.includes(val)}
+                    onChange={() => onCheckboxChange("possessionStatus", val)}
+                  />
+                  <span>{formatLabel(status)}</span>
+                </label>
+              );
+            })}
+          </FilterSection>
           {/* Furnishing */}
           {activeFilterKeys.includes("furnishing") && (
             <FilterSection title="Furnishing">

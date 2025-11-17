@@ -44,68 +44,61 @@ export default function ChennaiQuiz() {
 
               <div className="EventContBox mb-[5vh]">
                 <h3>About The Event</h3>
+
                 <p>
-                  <strong>
-                    Celebrating the Spirit of the City | August 17, 2025{" "}
-                  </strong>
+                  Get ready for the Super Chennai Quiz — a lively, high-energy
+                  quiz experience that breaks away from the usual serious,
+                  brain-only quiz format. This is a quiz for everyone, whether
+                  you’re a casual player, a trivia lover, or someone who just
+                  wants a fun afternoon with a friend.
+                </p>
+
+                <p>
+                  Hosted at the iconic Sir Mutha Venkatasubba Rao Concert Hall,
+                  this quiz covers all categories — from pop culture, music,
+                  films, sports, food, and general knowledge to a sprinkle of
+                  city trivia and surprise rounds. Expect fresh formats,
+                  interactive twists, and fun challenges that keep the whole
+                  room buzzing.
                 </p>
                 <p>
-                  Get ready, Chennai! This Madras Week, we’re hitting the
-                  streets for a one-of-a-kind Car Treasure Hunt that celebrates
-                  the stories, spirit, and soul of our city.
+                  Guiding the experience is Nawabzada Mohammed Asif Ali, Dewan
+                  to the Prince of Arcot, adding heritage, wit, and charm to the
+                  afternoon.
                 </p>
                 <p>
-                  <strong>What is it?</strong>
-                </p>
-                <p>
-                  An exciting, city-wide treasure hunt on wheels. Teams will
-                  drive across Chennai solving clues, completing quirky
-                  challenges, and discovering iconic spots — old, new, and
-                  hidden in plain sight. From local legends to cultural gems,
-                  this is your chance to explore Chennai like never before.
-                </p>
-                <p>
-                  <strong>What to Expect</strong>
+                  <strong>What makes it special?</strong>
                 </p>
                 <p>
                   <ul style={{ paddingLeft: "30px" }}>
                     <li style={{ listStyle: "disc" }}>
-                      A city trail filled with fun clues, pit stops, and local
-                      trivia
+                      Not just for hardcore quizzers — totally beginner-friendly
                     </li>
                     <li style={{ listStyle: "disc" }}>
-                      Tasks at each location — from street food challenges to
-                      photo ops
-                    </li>
-                    <li style={{ listStyle: "disc" }}>
-                      Goodie bags and exciting prizes for top finishers
-                    </li>
-                    <li style={{ listStyle: "disc" }}>
-                      A great way to celebrate Madras Day with family, friends,
-                      or coworkers
+                      A mix of fun rounds, visual games, rapid-fire challenges &
+                      unexpected twists
                     </li>
 
                     <li style={{ listStyle: "disc" }}>
-                      Media coverage and surprise elements along the way
+                      Covers a wide range of topics, so every team gets a chance
+                      to shine
+                    </li>
+                    <li style={{ listStyle: "disc" }}>
+                      A warm, community-driven experience in one of Chennai’s
+                      most beautiful venues
                     </li>
                   </ul>
                 </p>
+
                 <p>
-                  <strong>Who Can Join</strong>
+                  At just ₹199 per team of two, it’s the perfect plan for
+                  friends, couples, siblings — anyone up for something different
+                  this weekend.
                 </p>
+
                 <p>
-                  Anyone with a car and a sense of adventure. Families,
-                  students, working professionals, or curious citizens — this
-                  event is open to all.
-                </p>
-                <p>
-                  <strong>Why Join</strong>
-                </p>
-                <p>
-                  Because Chennai is more than just a city — it’s a living
-                  story. Let’s celebrate its charm, its chaos, its colours —
-                  together. This isn’t just a race. It’s a journey through
-                  Madras. Fun guaranteed. City pride unlocked.
+                  Register now and get ready for a quiz that’s equal parts fun,
+                  competitive, and unforgettable.
                 </p>
               </div>
             </div>
@@ -115,31 +108,38 @@ export default function ChennaiQuiz() {
               <div className="evderibox mt-[70px]">
                 <div className="evderListbox">
                   <div className="evderViewbox">
+                    {/* Event Title */}
+                    <h3 className="text-xl font-semibold text-[#a44294] mb-4">
+                      Super Chennai Quiz
+                    </h3>
+
                     <InfoRow
                       icon="/images/events/calendar.png"
-                      label="Sunday, August 17, 2025"
-                    />
-                    <InfoRow icon="/images/events/time.png" label="8:30 AM" />
-                    <InfoRow
-                      icon="/images/events/time.png"
-                      label="Duration : 2hrs"
+                      label="Date: December 7th"
                     />
 
                     <InfoRow
-                      icon="/images/events/age_limit.png"
-                      label="Up to 4 people per car"
-                    />
-                    <InfoRow
-                      icon="/images/events/language.png"
-                      label="₹1250 per car"
+                      icon="/images/events/time.png"
+                      label="Time: 2:00 PM"
                     />
 
                     <InfoRow
                       icon="/images/events/location.png"
-                      label="Lady Andal School, Chetpet "
+                      label="Venue: Sir Mutha Venkatasubba Rao Concert Hall, Chennai"
+                    />
+
+                    <InfoRow
+                      icon="/images/events/age_limit.png"
+                      label="Hosted by: Nawabzada Mohammed Asif Ali, Dewan to the Prince of Arcot"
+                    />
+
+                    <InfoRow
+                      icon="/images/events/language.png"
+                      label="Teams: 2 members | Fee: ₹199 per team"
                     />
                   </div>
                 </div>
+
                 <div className="flex justify-center pb-[30px]">
                   <Link to="/quizform">
                     <button className="cursor-pointer bg-[#a44294] mt-4 text-white px-4 py-2 rounded-md font-poppins font-medium">

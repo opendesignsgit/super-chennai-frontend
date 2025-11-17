@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
 import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { API_BASE_URL_API } from "../../../../config";
 
 export default function TicketCheckout() {
   const [show, setShow] = useState(false);
@@ -12,6 +11,7 @@ export default function TicketCheckout() {
   const [file, setFile] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
+  
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -37,28 +37,26 @@ export default function TicketCheckout() {
       return;
     }
 
-    // Get stored form data from previous page
     const stored = JSON.parse(localStorage.getItem("carRallyUser") || "{}");
     const { name, name2, email, phone, message } = stored;
 
-    // Validate fields
     if (!name || !name2 || !email || !phone || !message) {
       toast.error("Missing required user details.");
       setIsSubmitting(false);
       return;
     }
 
-    // Build FormData with only correct fields
     const formData = new FormData();
     formData.append("name", name);
     formData.append("name2", name2);
     formData.append("email", email);
     formData.append("phone", phone);
     formData.append("message", message);
-    formData.append("paymentImage", file); 
+    formData.append("quizImage", file); 
+    formData.append("isQuizForm", true); 
+
 
     try {
-      // Debug FormData
       const formObj = {};
       formData.forEach((value, key) => {
         formObj[key] = value;
@@ -66,7 +64,7 @@ export default function TicketCheckout() {
 
       console.log("Form Send Data:", JSON.stringify(formObj, null, 2));
       const res = await axios.post(
-        `${import.meta.env.VITE_API_BASE_URL}/payments1`,
+        `${API_BASE_URL_API}/quiz`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -134,14 +132,14 @@ export default function TicketCheckout() {
 
             <div className="bg-blue-100 p-4 rounded-md text-sm text-gray-800 leading-relaxed">
               <h4 className="font-semibold mb-4">
-                Car Treasure Hunt – Chennai | GPay Payment Instructions
+                Super Chennai Quiz – Event Details | GPay Payment Instructions
               </h4>
 
               <p className="mb-2">
                 <strong>Step 1: Scan to Pay via GPay </strong>
               </p>
               <p className="mb-2">
-                Scan the QR code below using Google Pay to pay ₹1250 per car.
+                Scan the QR code below using Google Pay to pay ₹199 per car.
               </p>
 
               <p className="mb-2">
@@ -162,30 +160,32 @@ export default function TicketCheckout() {
 
           <div className="bg-white rounded-lg shadow p-6">
             <div className="border rounded-md p-4 mb-4">
-              <h3 className="font-semibold">Event Details</h3>
-              <p className="text-sm text-gray-600 mt-1">
-                Ticket Price : ₹1250 per car
-              </p>
+              <div>
+                <h3 className="font-semibold">Event Details</h3>
 
-              <p className="text-sm text-gray-700 mt-3">
-                1 Ticket <br />
-                Team Size : Up to 4 people <br />
-                Start Time : 8:30 AM <br />
-                Duration : 2hrs <br />
-                Starting point : Lady Andal School, Chetpet <br />
-                Finish point : VGP Heritage Resort
-              </p>
+                <p className="text-sm text-gray-600 mt-1">
+                  Teams: 2 members | Fee: ₹199 per team
+                </p>
 
-              <p className="text-sm text-gray-700 mt-2">
-                <strong>Date: Sunday, August 17, 2025</strong>
-              </p>
+                <p className="text-sm text-gray-700 mt-3">
+                  Super Chennai Quiz <br />
+                  Date: December 7th <br />
+                  Time: 2:00 PM <br />
+                  Venue: Sir Mutha Venkatasubba Rao Concert Hall, Chennai <br />
+                  Hosted by: Nawabzada Mohammed Asif Ali, Dewan to the Prince of
+                  Arcot
+                </p>
+
+                <p className="text-sm text-gray-700 mt-2">
+                  <strong>Date: Sunday, December 7, 2025</strong>
+                </p>
+              </div>
+
+              <div className="flex justify-between font-semibold text-base mb-4">
+                <span>Amount to Pay</span>
+                <span>₹199.00</span>
+              </div>
             </div>
-
-            <div className="flex justify-between font-semibold text-base mb-4">
-              <span>Amount to Pay</span>
-              <span>₹1250.00</span>
-            </div>
-
             <button
               onClick={handleShow}
               className="w-full bg-rose-500 text-white text-sm font-semibold py-2 rounded hover:bg-rose-600 transition"

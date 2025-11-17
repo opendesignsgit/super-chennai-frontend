@@ -37,10 +37,10 @@ export default function PrideofChennai() {
             </div>
             <div className="accodoamationBannerContainer">
               <div className="accodoamationBannerText">
-                <h3>Pride of Chennai</h3>
+                <h3>Hall of Fame</h3>
                 <div className="breadCrum">
                   <Link to="/">Home</Link> -{" "}
-                  <a href="">Pride of Chennai</a>{" "}
+                  <a href="">Hall of Fame</a>{" "}
                 </div>
               </div>
             </div>

@@ -161,7 +161,7 @@ const FiltersSidebar = ({
 
   if (loading) {
     return (
-      <aside className="filters-sidebar">
+      <aside className="filters-sidebar cursor-pointer">
         <Skeleton width={120} height={24} style={{ marginBottom: 16 }} />
         <div>
           {Array.from({ length: 5 }).map((_, idx) => (

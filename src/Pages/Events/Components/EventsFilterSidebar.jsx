@@ -86,7 +86,7 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
 
   return (
     <aside
-      className="sidebarEvent-scrollbar w-[280px] bg-[#f9fafb] rounded-2xl p-4 overflow-y-auto max-h-[85vh] scrollbar-thin scrollbar-thumb-pink-500 scrollbar-track-gray-200 scrollbar-thumb-rounded-full"
+      className="sidebarEvent-scrollbar w-[280px] bg-[#f9fafb] rounded-2xl p-4 overflow-y-auto max-h-[85vh] scrollbar-thin scrollbar-thumb-pink-500 scrollbar-track-gray-200 scrollbar-thumb-rounded-full cursor-pointer"
       style={{
         scrollbarWidth: "thin",
         scrollbarColor: "#af1c6683 #f3f4f6",
@@ -109,7 +109,7 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
               type="checkbox"
               checked={filters.languages?.includes(value)}
               onChange={() => handleLanguageChange(value)}
-              className="accent-pink-600"
+              className="accent-pink-600 cursor-pointer"
             />
             {label}
           </label>
@@ -157,7 +157,7 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
                 type="checkbox"
                 checked={filters.categories?.includes(String(cat.id))}
                 onChange={() => handleCategoryChange(String(cat.id))}
-                className="accent-pink-600"
+                className="accent-pink-600 cursor-pointer"
               />
               {cat.title}
             </label>
@@ -180,7 +180,7 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
         <label className="flex items-center gap-2 text-sm text-gray-700">
           <input
             type="checkbox"
-            className="accent-pink-600"
+            className="accent-pink-600 cursor-pointer"
             checked={filters.freeEntry || false}
             onChange={(e) =>
               setFilters((prev) => ({

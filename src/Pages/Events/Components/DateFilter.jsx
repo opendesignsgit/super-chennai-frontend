@@ -59,19 +59,19 @@ const DateFilter = ({ filters, setFilters }) => {
   };
 
   return (
-    <div className="border border-gray-200 rounded-xl p-4 mb-5">
+    <div className="border border-gray-200 rounded-xl p-4 mb-5 ">
       <div className="flex justify-between items-center mb-3">
         <h3 className="text-lg font-semibold text-gray-800">Date</h3>
         <button
           onClick={handleClear}
-          className="text-sm text-pink-600 hover:underline font-bold"
+          className="text-sm text-pink-600 hover:underline font-bold cursor-pointer"
         >
           Clear
         </button>
       </div>
 
       {/* Preset Options */}
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-2 mb-4 cursor-pointer">
         {["Today", "Tomorrow", "This Weekend"].map((label) => (
           // <button
           //   key={label}
@@ -89,7 +89,7 @@ const DateFilter = ({ filters, setFilters }) => {
           <button
             key={label}
             onClick={() => handlePresetClick(label)}
-            className={`px-3 py-1 rounded-full border text-sm transition-all duration-200 ${
+            className={`px-3 py-1 rounded-full border text-sm transition-all duration-200 cursor-pointer ${
               activePreset.includes(label)
                 ? "bg-pink-600 text-white border-pink-600"
                 : "border-pink-600 text-pink-600 hover:bg-pink-50"

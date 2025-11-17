@@ -1,6 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  Link,
+  useLocation,
+} from "react-router-dom";
 import CostLivinginChennai from "../src/Pages/CostOfLiving";
 import HomePage from "../src/Pages/HomePage";
 import Innovate from "../src/Pages/Innovate";
@@ -10,11 +16,13 @@ import Visit from "../src/Pages/VisitPage";
 import Volunteer from "../src/Pages/Volunteer";
 import Work from "../src/Pages/Work";
 import "./App.css";
-import EducationNew from "./Components/EducationNew";
 import HeaderWithMegaMenu from "./Components/ExampleMegamenu";
 import Footer from "./Components/Footer";
 import MenuBar from "./Components/MenuBar";
 import Technologynewchennai from "./Components/TechnologyNew";
+import EducationNew from "./Components/EducationNew";
+import VideoPreloader from "./Components/VideoPreloader";
+// import Culturereligiousattractions from "./Pages/SubPages/LivePages/culturereligiousattractions";
 import Culturereligiousattractions from "./Pages/SubPages/LivePages/Culturereligiousattractions";
 import EducationInstitutions from "./Pages/SubPages/LivePages/EducationInstitutions";
 import EmploymentinChennai from "./Pages/SubPages/LivePages/EmploymentinChennai";
@@ -24,20 +32,22 @@ import Neighbourhood from "./Pages/SubPages/LivePages/Neighbourhood";
 import QualityofLife from "./Pages/SubPages/LivePages/QualityofLife";
 import Recreation from "./Pages/SubPages/LivePages/Recreation";
 import ResidencyPropertyRentBuyinChennai from "./Pages/SubPages/LivePages/ResidencyPropertyRentBuyinChennai";
+import { HelmetProvider, Helmet } from "react-helmet-async";
 
-import Living from "./Pages/SubPages/LivePages/Living";
 import Residency from "./Pages/SubPages/LivePages/Residency";
-import Transportation from "./Pages/SubPages/LivePages/Transportation";
+import Living from "./Pages/SubPages/LivePages/Living";
 import Transportationchennai from "./Pages/SubPages/LivePages/Transportation-chennai";
+import Transportation from "./Pages/SubPages/LivePages/Transportation";
 
 //##################### NEWLY ADEDD  ###################################
 
-import Chengalpattu from "./Pages/SubPages/LivePages/Chengalpattu";
 import Kanchipuram from "./Pages/SubPages/LivePages/Kanchipuram";
-import Pondicherry from "./Pages/SubPages/LivePages/Pondicherry";
-import Sriperumbudur from "./Pages/SubPages/LivePages/Sriperumbudur";
-import Tirupati from "./Pages/SubPages/LivePages/Tirupati";
 import Vellore from "./Pages/SubPages/LivePages/Vellore";
+import Tirupati from "./Pages/SubPages/LivePages/Tirupati";
+import Pondicherry from "./Pages/SubPages/LivePages/Pondicherry";
+import Chengalpattu from "./Pages/SubPages/LivePages/Chengalpattu";
+import Sriperumbudur from "./Pages/SubPages/LivePages/Sriperumbudur";
+
 import CareerGrowth from "./Pages/SubPages/WorkPages/CareerGrowth";
 import CoworkingSpaces from "./Pages/SubPages/WorkPages/CoworkingSpaces";
 import Networking from "./Pages/SubPages/WorkPages/Networking";
@@ -45,24 +55,37 @@ import PG from "./Pages/SubPages/WorkPages/PG";
 import SalariesBenefits from "./Pages/SubPages/WorkPages/SalariesBenefits";
 import Unicorns from "./Pages/SubPages/WorkPages/Unicorns";
 import WorkLifeBalance from "./Pages/SubPages/WorkPages/WorkLifeBalance";
-import AgriTechinChennai from "./Pages/SubPages/InnovatePages/AgriTech-in-Chennai";
+
+// ##################OLD INOVATE IMPORTS ##################################
+// import AgricultureTech from "./Pages/SubPages/InnovatePages/AgricultureTech";
+// import ArtificialIntelligenceandMachineLearning from "./Pages/SubPages/InnovatePages/ArtificialIntelligenceandMachineLearning";
+// import AugmentedReality from "./Pages/SubPages/InnovatePages/AugmentedReality";
+// import AutomotiveTechandRandD from "./Pages/SubPages/InnovatePages/AutomotiveTechandRandD";
+// import RoboticsinChennai from "./Pages/SubPages/InnovatePages/roboticsandautomation";
+// import BlockchainandFintech from "./Pages/SubPages/InnovatePages/BlockchainandFintech";
+// import EducationTech from "./Pages/SubPages/InnovatePages/EducationTech";
+// import Events from "./Pages/SubPages/InnovatePages/Events";
+// import ElectricVehicles from "./Pages/SubPages/InnovatePages/ElectricVehicles";
+// import HealthcareTechInnovation from "./Pages/SubPages/InnovatePages/HealthcareTechInnovation";
+// import ITandSoftwareDevelopment from "./Pages/SubPages/InnovatePages/ITandSoftwareDevelopment";
+// import roboticsandautomation from "./Pages/SubPages/InnovatePages/roboticsandautomation";
+// import SmartCityInitiatives from "./Pages/SubPages/InnovatePages/SmartCityInitiatives";
+// import ThreeDPrintingandAdditiveManufacturing from "./Pages/SubPages/InnovatePages/ThreeDPrintingandAdditiveManufacturing";
+// ################## END OLD INOVATE IMPORTS ##################################
+
 import AIinChennai from "./Pages/SubPages/InnovatePages/AI-in-Chennai";
-import ARVRchennai from "./Pages/SubPages/InnovatePages/AR-VR-chennai";
 import AutoTechinChennai from "./Pages/SubPages/InnovatePages/AutoTech-in-Chennai";
 import BlockchaininChennai from "./Pages/SubPages/InnovatePages/Blockchain-in-Chennai";
-import EduTechinChennai from "./Pages/SubPages/InnovatePages/EduTech-in-Chennai";
-import EVMobilityinChennai from "./Pages/SubPages/InnovatePages/EV-Mobility-in-Chennai";
 import HealthTechinChennai from "./Pages/SubPages/InnovatePages/Health-Tech-in-Chennai";
-import ItandSoftwareCompanies from "./Pages/SubPages/InnovatePages/It-and-Software-Companies";
+import EVMobilityinChennai from "./Pages/SubPages/InnovatePages/EV-Mobility-in-Chennai";
 import RoboticsinChennai from "./Pages/SubPages/InnovatePages/Robotics-in-Chennai";
+import EduTechinChennai from "./Pages/SubPages/InnovatePages/EduTech-in-Chennai";
+import AgriTechinChennai from "./Pages/SubPages/InnovatePages/AgriTech-in-Chennai";
+import ARVRchennai from "./Pages/SubPages/InnovatePages/AR-VR-chennai";
+import ItandSoftwareCompanies from "./Pages/SubPages/InnovatePages/It-and-Software-Companies";
 import SmartCity from "./Pages/SubPages/InnovatePages/Smart-City";
 import ThreeDPrintinginChennai from "./Pages/SubPages/InnovatePages/ThreeD-Printing-in-Chennai";
-import ChennaiQuiz from "./Pages/Activities/ChennaiQuiz/ChennaiQuiz";
-import QuizForm from "./Pages/Activities/ChennaiQuiz/QuizForm";
-import QuizFormCheckout from "./Pages/Activities/ChennaiQuiz/QuizFormCheckout";
-import EventsHome from "./Pages/Events";
-import EventDetailPage from "./Pages/Events/EventsDetails";
-import EventsPage from "./Pages/Events/EventsPage";
+
 import Automotive from "./Pages/SubPages/InvestPages/Automotive";
 import ChennaiAutoMotiveEv from "./Pages/SubPages/InvestPages/ChennaiAutomotiveEv";
 import ChennaiRealEstate from "./Pages/SubPages/InvestPages/ChennaiRealEstate";
@@ -92,13 +115,25 @@ import Shopping from "./Pages/SubPages/VisitPages/Shopping";
 import Thingstodo from "./Pages/SubPages/VisitPages/Thingstodo";
 import Traveltips from "./Pages/SubPages/VisitPages/Traveltips";
 import Wellness from "./Pages/SubPages/VisitPages/Wellness";
-import TrendingDetails from "./Components/TrendingDetails";
+import ScrollToTop from "./Components/ScrollToTop";
+import EventsHome from "./Pages/Events";
+import EventsPage from "./Pages/Events/EventsPage";
+import EventDetailPage from "./Pages/Events/EventsDetails"
+import ChennaiQuiz from "./Pages/Activities/ChennaiQuiz/ChennaiQuiz"
+import QuizForm from "./Pages/Activities/ChennaiQuiz/QuizForm"
+import QuizFormCheckout from "./Pages/Activities/ChennaiQuiz/QuizFormCheckout"
+// import QuizThankyou from "./Pages/Activities/ChennaiQuiz/QuizThankyouu"
+
+
 import EventsDetails from "./Pages/SubPages/EventsPages/EventsDetails";
+import TrendingDetails from "./Components/TrendingDetails";
+
 import NightLifeInChennai from "./Pages/SubPages/VisitPages/ChennaiNightLife";
 import Luxuryhotels from "./Pages/SubPages/VisitPages/Luxuryhotels";
 import RestaurantsInChennai from "./Pages/SubPages/VisitPages/RestaurantsInChennai";
 import SportsInChennai from "./Pages/SubPages/VisitPages/SportInChennai";
 import EmploymentBusinessPermits from "./Pages/SubPages/WorkPages/EmploymentBusinessPermits";
+
 import SearchResults from "./Components/SearchResults";
 import EventsChennaiBusinessNetwork from "./Pages/SubPages/EventsPages/EventsChennaiBusinessNetwork";
 import EventsImman from "./Pages/SubPages/EventsPages/EventsImman";
@@ -156,15 +191,15 @@ import ShoppingTheModernMarketplaceExplore from "./Pages/SubPages/VisitPages/Sho
 // ###############NEW FILES IN FUN CHENNAI########################################
 
 import BeachesInChennai from "./Pages/SubPages/VisitPages/FunChennai/Beaches";
-import BowlingAlleysInChennai from "./Pages/SubPages/VisitPages/FunChennai/BowlingAlleysInChennai";
 import GamingArcadesInChennai from "./Pages/SubPages/VisitPages/FunChennai/GamingArcadesInChennai";
-import GoKarting from "./Pages/SubPages/VisitPages/FunChennai/GoKarting";
 import HorrorHousesInChennai from "./Pages/SubPages/VisitPages/FunChennai/HorrorHousesInChennai";
 import MultiplexesInChennai from "./Pages/SubPages/VisitPages/FunChennai/MultiplexesInChennai";
-import NatureWalk from "./Pages/SubPages/VisitPages/FunChennai/NatureWalk";
 import TrampolineInChennai from "./Pages/SubPages/VisitPages/FunChennai/TrampolineInChennai";
-import TurfCourts from "./Pages/SubPages/VisitPages/FunChennai/TurfCourts";
+import BowlingAlleysInChennai from "./Pages/SubPages/VisitPages/FunChennai/BowlingAlleysInChennai";
+import NatureWalk from "./Pages/SubPages/VisitPages/FunChennai/NatureWalk";
 import Zipline from "./Pages/SubPages/VisitPages/FunChennai/Zipline";
+import TurfCourts from "./Pages/SubPages/VisitPages/FunChennai/TurfCourts";
+import GoKarting from "./Pages/SubPages/VisitPages/FunChennai/GoKarting";
 
 import ShoppingTradition from "./Pages/SubPages/VisitPages/Shopping-Tradition-Explore-Artisan-Hubs";
 import ShoppingTraditionLocate from "./Pages/SubPages/VisitPages/Shopping-Tradition-Locate-Classic-Textiles";
@@ -190,73 +225,82 @@ import ThingstodoZiplines from "./Pages/SubPages/VisitPages/Things-to-do-Zipline
 import TraditionalSouthIndianMealsThali from "./Pages/SubPages/VisitPages/TraditionalSouthIndianMealsThali";
 import VibrantThaiStreetFood from "./Pages/SubPages/VisitPages/VibrantThaiStreetFood";
 import ZestyMexicanTacos from "./Pages/SubPages/VisitPages/ZestyMexicanTacos";
-
-import EductechAndSkill from "./Pages/SubPages/InvestPages/EdutechandSkill";
+// import WhyChennai from "./Pages/SubPages/InvestPages/WhyChennai";
+// import ChennaiRealEstate from "./Pages/SubPages/InvestPages/ChennaiRealEstate";
+// import ChennaiAutoMotiveEv from "./Pages/SubPages/InvestPages/ChennaiAutomotiveEv";
+// import DeepTechAIRI from "./Pages/SubPages/InvestPages/DeeptechAiRandD";
 import FintechandFinancial from "./Pages/SubPages/InvestPages/FintechandFinancial";
 import HealthTechMediTech from "./Pages/SubPages/InvestPages/HealthTechMediTech";
-import ITITeSSaaS from "./Pages/SubPages/InvestPages/IT-ITeS-SaaS";
+import EductechAndSkill from "./Pages/SubPages/InvestPages/EdutechandSkill";
 import LogitechWareHousePorts from "./Pages/SubPages/InvestPages/LogitechWareHousePorts";
+import BurmeseCusine from "./Pages/SubPages/VisitPages/Burmese-Cusine";
+import MexicanCusine from "./Pages/SubPages/VisitPages/MexicanCusine";
 import MediaEntertainment from "./Pages/SubPages/InvestPages/MediaEntertaiment";
 import RenewableEnergyChennai from "./Pages/SubPages/InvestPages/Renewableenergy";
-import WomenSafty from "./Pages/SubPages/LivePages/WomenSafty";
+import ITITeSSaaS from "./Pages/SubPages/InvestPages/IT-ITeS-SaaS";
+import Thankyou from "./Pages/Thankyou";
+import WhatsAppWidget from "./Components/Whatsappwidget";
 import NorthChennai from "./Pages/SubPages/Utilities/NorthChennai";
 import SouthChennai from "./Pages/SubPages/Utilities/SouthChennai";
 import WestChennai from "./Pages/SubPages/Utilities/WestChennai";
-import BurmeseCusine from "./Pages/SubPages/VisitPages/Burmese-Cusine";
-import MexicanCusine from "./Pages/SubPages/VisitPages/MexicanCusine";
-import Thankyou from "./Pages/Thankyou";
+import WomenSafty from "./Pages/SubPages/LivePages/WomenSafty";
 
-import About from "./Pages/About";
-import Contact from "./Pages/contact";
+// import Faq from "./Pages/faq";
 import Faq from "./Pages/Faq";
-import NewsletterForm from "./Components/NewsletterNew";
+import Contact from "./Pages/contact";
+import About from "./Pages/About";
 
-
-
+import NewsLetter from "./Pages/NewsLetter";
+import Surfing from "./Pages/SubPages/VisitPages/FunChennai/Surfing";
+import NammaStories from "./Pages/NammaStories";
+import ImagePopup from "./ImagePopup";
+import EventFunction from "./Pages/EventFunction";
 import CarRally from "./Pages/CarRally";
 import CarRallyForm from "./Pages/CarRallyForm";
 import TicketCheckout from "./Pages/CarryFormCheckout";
+import NewsletterForm from "./Components/NewsletterNew";
 import CarThankyou from "./Pages/CarThankyou";
-
-
-import EventFunction from "./Pages/EventFunction";
-import KiteFestivalDay3 from "./Pages/KiteFestivalDay3";
-import KiteFestivalDay4 from "./Pages/KiteFestivalDay4";
-import NammaStories from "./Pages/NammaStories";
-import NewsLetter from "./Pages/NewsLetter";
-import PulicatLake from "./Pages/SubPages/LivePages/PulicatLake";
-import Yealgiri from "./Pages/SubPages/LivePages/Yelagiri";
-import Surfing from "./Pages/SubPages/VisitPages/FunChennai/Surfing";
 import JapaneseCuisineinChennai from "./Pages/SubPages/VisitPages/Japanese-Cuisine-in-Chennai";
 import KoreanCuisineinChennai from "./Pages/SubPages/VisitPages/Korean-Cuisine-in-Chennai";
+import Yealgiri from "./Pages/SubPages/LivePages/Yelagiri";
+import PulicatLake from "./Pages/SubPages/LivePages/PulicatLake";
+import KiteFestivalDay3 from "./Pages/KiteFestivalDay3";
+import KiteFestivalDay4 from "./Pages/KiteFestivalDay4";
 
-import BlogDetails from "../src/Pages/Blogs/BlogDetails";
 import BlogList from "./../src/Pages/Blogs/BlogList";
-import ScrollToHashElement from "./Components/ScrollToHashElement";
-import Iconofthemonth from "./Pages/Icon-of-the-month-july";
-import IconofthemonthOct from "./Pages/Icon-of-the-month-oct";
-import Chidambaram from "./Pages/SubPages/LivePages/Chidambaram";
+import BlogDetails from "../src/Pages/Blogs/BlogDetails";
 import Kalpakkam from "./Pages/SubPages/LivePages/Kalpakkam";
-import Thiruthani from "./Pages/SubPages/LivePages/Thiruthani";
+import Chidambaram from "./Pages/SubPages/LivePages/Chidambaram";
 import Tiruvannamalai from "./Pages/SubPages/LivePages/Tiruvannamalai";
+import Thiruthani from "./Pages/SubPages/LivePages/Thiruthani";
+import ScrollToHashElement from "./Components/ScrollToHashElement";
 import VedanthangalBirdSantuary from "./Pages/SubPages/LivePages/Vedanthangal-bird-santaury";
 import SuperChennaiEvents from "./Pages/SuperChennaiEvents";
+import Iconofthemonth from "./Pages/Icon-of-the-month-july";
+import IconofthemonthOct from "./Pages/Icon-of-the-month-oct";
 
 import IconofthemonthAugust from "./Pages/Icon-of-the-month-august";
 import Iconsofthemonth from "./Pages/iconsofthemonth";
 import ReimagineChennai from "./Pages/ReimagineChennai";
 
-import IconofthemonthSeptember from "./Pages/Icon-of-the-month-september";
-import IconofthemonthSeptember1 from "./Pages/Icon-of-the-month-september1";
-import Neighbourhoods from "./Pages/Neighbourhoods/neighbourhoods";
-import PrideofChennai from "./Pages/PrideofChennai";
 import PropertiesPage from "./Pages/Properties/PropertiesPage";
 import PropertyDetailPage from "./Pages/Properties/PropertyDetailPage";
+import IconofthemonthSeptember from "./Pages/Icon-of-the-month-september";
+import IconofthemonthSeptember1 from "./Pages/Icon-of-the-month-september1";
+import PrideofChennai from "./Pages/PrideofChennai";
+import Neighbourhoods  from "./Pages/Neighbourhoods/neighbourhoods";
+
+
 
 import ChennaiApp from "./Pages/Chennai-app";
 
 function App() {
+  // const [loading, setLoading] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+  // const location = useLocation();
+  // const navigate = useNavigate();
+
+  // const location = useLocation();
 
   const [showPopup, setShowPopup] = useState(false);
 
@@ -407,7 +451,23 @@ function App() {
 
   const [footerReached, setFooterReached] = useState(false);
   const stickyRef = useRef();
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const footer = document.querySelector("footer");
+  //     const sticky = stickyRef.current;
 
+  //     if (!footer || !sticky) return;
+
+  //     const footerRect = footer.getBoundingClientRect();
+  //     const stickyRect = sticky.getBoundingClientRect();
+
+  //     const isOverlapping = stickyRect.bottom >= footerRect.top;
+  //     setFooterReached(isOverlapping);
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
   useEffect(() => {
     const handleScroll = () => {
       const footer = document.querySelector("footer");
@@ -418,7 +478,8 @@ function App() {
       const footerTop = footer.getBoundingClientRect().top;
       const stickyHeight = sticky.offsetHeight;
 
-      const shouldHideSticky = footerTop < stickyHeight + 300;
+      // Check if sticky would overlap footer when staying at its fixed position
+      const shouldHideSticky = footerTop < stickyHeight + 300; // 100 is the top offset of sticky
 
       setFooterReached(shouldHideSticky);
     };
@@ -427,6 +488,31 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // PRELOADER FUNCTIONALITY WITH IF CAE ######
+  //  useEffect(() => {
+  //     const hasSeen = localStorage.getItem("hasSeenPreloader");
+
+  //     if (!hasSeen && location.pathname === "/") {
+  //       setLoading(true);
+  //     } else {
+  //       setLoading(false);
+  //     }
+  //   }, [location.pathname]);
+
+  //   if (loading) {
+  //     return (
+  //       <VideoPreloader
+  //         onFinish={() => {
+  //           localStorage.setItem("hasSeenPreloader", "true");
+  //           setLoading(false);
+  //         }}
+  //       />
+  //     );
+  //   }
+
+  // useEffect(() => {
+  //   setShowPopup(true);
+  // }, []);
   useEffect(() => {
     const hasShownPopup = sessionStorage.getItem("popup-shown");
 
@@ -434,6 +520,7 @@ function App() {
       setShowPopup(true);
       sessionStorage.setItem("popup-shown", "true");
     }
+    // if("/"){}
   }, []);
 
   const handleClosePopup = () => {
@@ -449,6 +536,15 @@ function App() {
 
         <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
 
+        {/* {showPopup && (
+          <ImagePopup
+            onClose={handleClosePopup}
+         
+            imageUrl="/images/HomePage-Images/ai-art-challenge-popup.jpg"
+          />
+        )} */}
+
+        {/* Sticky Icons */}
         <div
           ref={stickyRef}
           className={`stickyIconsContainer ${
@@ -561,10 +657,7 @@ function App() {
           <Route path="/work-in-chennai" element={<Work />} />
           <Route path="/events" element={<EventsHome />} />
           <Route path="/superchennai-events" element={<EventsPage />} />
-          <Route
-            path="/superchennai-events-details/:slug"
-            element={<EventDetailPage />}
-          />
+          <Route path="/superchennai-events-details/:slug" element={<EventDetailPage />} />
 
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />
@@ -588,6 +681,10 @@ function App() {
           <Route path="/kite-festival-day-4" element={<KiteFestivalDay4 />} />
           <Route path="/technologynew" element={<Technologynewchennai />} />
           <Route path="/educationnew" element={<EducationNew />} />
+
+
+
+
 
           {/*####################### FUNCHENNAI ########################## */}
 
@@ -697,6 +794,7 @@ function App() {
             path="/innovate/ev-vehicles-in-chennai"
             element={<EVMobilityinChennai />}
           />
+          {/* <Route path="/roboticsandautomation" element={<RoboticsinChennai />} /> */}
           <Route
             path="/innovate/edutech-chennai"
             element={<EduTechinChennai />}
@@ -714,6 +812,12 @@ function App() {
             path="/innovate/robotics-in-chennai"
             element={<RoboticsinChennai />}
           />
+
+          {/* innovate pages end*/}
+
+          {/*----Main-Pages---------*/}
+
+          {/* ---------Sub-pages--------- */}
 
           {/* Work-Pages */}
 
@@ -1120,10 +1224,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/icon-of-the-july-month" element={<Iconofthemonth />} />
 
-          <Route
-            path="/icon-of-the-oct-month-2025"
-            element={<IconofthemonthOct />}
-          />
+          <Route path="/icon-of-the-oct-month-2025" element={<IconofthemonthOct />} />
 
           <Route
             path="/super-chennai-icon-of-aug-2025"
@@ -1138,14 +1239,62 @@ function App() {
             element={<IconofthemonthSeptember1 />}
           />
 
+          {/* Visit-Pages */}
+
+          {/* Innovate-Pages */}
+          {/* 
+          <Route path="/agriculturetech" element={<AgricultureTech />} />
+          <Route
+            path="/artificialintelligenceandmachinelearning"
+            element={<ArtificialIntelligenceandMachineLearning />}
+          />
+          <Route path="/augmentedreality" element={<AugmentedReality />} />
+          <Route
+            path="/automotivetechandrandd"
+            element={<AutomotiveTechandRandD />}
+          />
+          <Route
+            path="/blockchainandfintech"
+            element={<BlockchainandFintech />}
+          />
+          <Route path="/educationtech" element={<EducationTech />} />
+          <Route
+            path="/healthcaretechinnovation"
+            element={<HealthcareTechInnovation />}
+          />
+          <Route
+            path="/itandsoftwaredevelopment"
+            element={<ITandSoftwareDevelopment />}
+          />
+          <Route
+            path="/roboticsandautomation"
+            element={<roboticsandautomation />}
+          />
+          <Route
+            path="/smartcityinitiatives"
+            element={<SmartCityInitiatives />}
+          />
+          <Route
+            path="/threedprintingandadditivemanufacturing"
+            element={<ThreeDPrintingandAdditiveManufacturing />}
+          />
+          <Route path="/electricvehicles" element={<ElectricVehicles />} /> */}
+
+          {/* Innovate-Pages */}
+
+          {/* Events-Pages */}
+
+          {/* <Route path="/eventsdetails/:id" element={<EventsDetails />} /> */}
           <Route path="/events-in-chennai/:url" element={<EventsDetails />} />
-          <Route path="/superchennai-quiz" element={<ChennaiQuiz />} />
-          <Route path="/quizform" element={<QuizForm />} />
-          <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
+           <Route path="/superchennai-quiz" element={<ChennaiQuiz />} />                  
+           <Route path="/quizform" element={<QuizForm />} />
+           <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
+           
 
           {/* ChennaiQuiz */}
 
           <Route path="/TrendingDetails/:id" element={<TrendingDetails />} />
+
           <Route path="/eventsimman" element={<EventsImman />} />
           <Route path="/eventsvishal" element={<EventsVishal />} />
           <Route path="/eventsspeed" element={<EventsSpeed />} />
@@ -1272,6 +1421,8 @@ function App() {
           <Route path="/EduTech" element={<EduTech />} />
           <Route path="/surfing" element={<Surfing />} />
 
+          {/* innovate pages end*/}
+
           {/* innovate pages start */}
 
           {/* Property-Pages */}
@@ -1283,11 +1434,9 @@ function App() {
           {/* Pride-of-Chennai */}
 
           <Route path="/pride-of-chennai" element={<PrideofChennai />} />
-          <Route
-            path="/superchennai-neighbourhoods"
-            element={<Neighbourhoods />}
-          />
+          <Route   path="/superchennai-neighbourhoods" element={<Neighbourhoods />} />
           <Route path="/chennai-app" element={<ChennaiApp />} />
+          {/* Pride-of-Chennai */}
         </Routes>
 
         {/*################################# NEWS LETTER ######################################## */}
@@ -1346,8 +1495,12 @@ function App() {
 
       {/* MenuBar */}
 
+      {/* Search For Mobile */}
+
       <AnimatePresence>
         {menuBar1 && (
+          // <div className="Neww">
+          //   <div>
           <div className="mobileSearchSectionsRow">
             <div className="searchInputFormbanner">
               <form className="searchInputForm" onSubmit={handleSearch}>
@@ -1357,7 +1510,11 @@ function App() {
                   onChange={handleInputChange}
                 />
                 <button type="submit" disabled={loading}>
-                  {loading ? <span className="spinner"></span> : "Search"}
+                  {loading ? (
+                    <span className="spinner"></span> // Spinner icon
+                  ) : (
+                    "Search"
+                  )}
                 </button>{" "}
               </form>
               {suggestions.length > 0 && (
@@ -1382,6 +1539,12 @@ function App() {
           </div>
         )}
       </AnimatePresence>
+
+      {/* whatsapp gallbox */}
+      {/* <WhatsAppWidget /> */}
+      {/*whatsapp gallbox end  */}
+
+      {/* Search For Mobile */}
     </>
   );
 }

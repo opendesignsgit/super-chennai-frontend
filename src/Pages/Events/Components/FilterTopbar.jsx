@@ -46,7 +46,7 @@ const FilterTopbar = ({
           md:${showAll ? "flex-wrap overflow-visible" : "overflow-x-auto whitespace-nowrap"}
           snap-x snap-mandatory
           [scrollbar-width:none]
-          [&::-webkit-scrollbar]:hidden
+          [&::-webkit-scrollbar]:hidden 
         `}
       >
         {visibleCategories.map((category) => {
@@ -59,7 +59,7 @@ const FilterTopbar = ({
             <button
               key={category.id}
               onClick={() => onCategoryChange(category.id)}
-              className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200 capitalize ${
+              className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200 capitalize cursor-pointer ${
                 isActive
                   ? "text-white shadow-md"
                   : "text-gray-700 hover:bg-gray-50"

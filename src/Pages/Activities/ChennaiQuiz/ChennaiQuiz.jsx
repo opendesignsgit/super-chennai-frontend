@@ -141,19 +141,8 @@ export default function ChennaiQuiz() {
                   </div>
                 </div>
                 <div className="flex justify-center pb-[30px]">
-                  <Link to="/carrallyform-hidedpage">
-                    <button
-                      className="cursor-pointer"
-                      style={{
-                        background: "#a44294",
-                        marginTop: "15px",
-                        color: "white",
-                        padding: "5px 14px",
-                        borderRadius: "5px",
-                        fontFamily: "Poppins",
-                        fontWeight: 500,
-                      }}
-                    >
+                  <Link to="/quizform">
+                    <button className="cursor-pointer bg-[#a44294] mt-4 text-white px-4 py-2 rounded-md font-poppins font-medium">
                       Book Now
                     </button>
                   </Link>

@@ -559,10 +559,10 @@ function App() {
 
           <Route path="/visit-chennai" element={<Visit />} />
           <Route path="/work-in-chennai" element={<Work />} />
-          <Route path="/events" element={<EventsHome />} />
-          <Route path="/superchennai-events" element={<EventsPage />} />
+          <Route path="/superchennai-events" element={<EventsHome />} />
+          <Route path="/events" element={<EventsPage />} />
           <Route
-            path="/superchennai-events-details/:slug"
+            path="/events-in-chennai/:slug"
             element={<EventDetailPage />}
           />
 
@@ -1138,7 +1138,7 @@ function App() {
             element={<IconofthemonthSeptember1 />}
           />
 
-          <Route path="/events-in-chennai/:url" element={<EventsDetails />} />
+          <Route path="/superchennai-events-details/:url" element={<EventsDetails />} />
           <Route path="/superchennai-quiz" element={<ChennaiQuiz />} />
           <Route path="/quizform" element={<QuizForm />} />
           <Route path="/quiz-checkout" element={<QuizFormCheckout />} />

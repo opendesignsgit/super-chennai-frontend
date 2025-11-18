@@ -21,10 +21,13 @@ import { Helmet } from "react-helmet-async";
 import Utilitiesinchennai from "../Components/Utilities";
 import HomepageCarousel from "../Components/HeroSliderNew";
 import SecondSection from "../Components/SecondSection";
-
+import { useEvents } from "../Pages/Events/Hooks/UseEvents";
+import EventCalender from "../Pages/Events/Components/EventCalender/EventCalender"
 export default function HomePage() {
   const location = useLocation();
-  let aosInitialized = false; // global flag
+   const { events} = useEvents();
+    const upcomingEvents = [...events];
+  let aosInitialized = false; 
   useEffect(() => {
     if (!aosInitialized) {
       AOS.init({
@@ -59,61 +62,62 @@ export default function HomePage() {
       window.removeEventListener("beforeunload", saveScrollPos);
     };
   }, []);
+   
+    return (
+      <>
+        <Helmet>
+          <title>Discover Super Chennai: Culture, Food, Beaches & More</title>
+          <meta
+            name="description"
+            content="Experience Super Chennai, a vibrant city where coastal charm meets thriving IT hubs, top education, nightlife, buzzing markets, and a love for art and sport."
+          />
+          <link rel="canonical" href="/" />
+        </Helmet>
+        <div>
+          <HeroSlider />
+        </div>
 
-  return (
-    <>
-      <Helmet>
-        <title>Discover Super Chennai: Culture, Food, Beaches & More</title>
-        <meta
-          name="description"
-          content="Experience Super Chennai, a vibrant city where coastal charm meets thriving IT hubs, top education, nightlife, buzzing markets, and a love for art and sport."
-        />
-        <link rel="canonical" href="/" />
-      </Helmet>
-      <div>
-        <HeroSlider />
-      </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <SecondSection />
+        </div>
 
-      <div data-aos="fade-up" data-aos-delay="100">
-        <SecondSection />
-      </div>
-
-      <div data-aos="fade-up" data-aos-delay="100">
-        <Explore />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <TrendingChennai1 />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <Funchennai />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <StartupChennai />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <HoverImageSectionHorizontal />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <ChennaiInvestments />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <TechEdu />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <Utilitiesinchennai />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <CardCarousel />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <CardCarousel111 />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="100">
-        <InstagramReelsMarquee />
-      </div>
-      <div data-aos="fade-up" data-aos-delay="50">
-        <Becameavolunteer />
-      </div>
-    </>
-  );
+        <div data-aos="fade-up" data-aos-delay="100">
+          <Explore />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <TrendingChennai1 />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <Funchennai />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <StartupChennai />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <HoverImageSectionHorizontal />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <ChennaiInvestments />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <TechEdu />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <Utilitiesinchennai />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <CardCarousel />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          {/* <CardCarousel111 /> */}
+          <EventCalender events={upcomingEvents} />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <InstagramReelsMarquee />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="50">
+          <Becameavolunteer />
+        </div>
+      </>
+    );
 }

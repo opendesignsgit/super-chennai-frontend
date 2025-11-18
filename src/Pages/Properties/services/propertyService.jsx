@@ -19,8 +19,8 @@ export const fetchProperties = async (filters = {}, sortBy = "") => {
   // }
 
   // Locations (relationship)
-  if (filters.locations?.length) {
-    params["where[location][in]"] = filters.locations.join(",");
+  if (filters.propertylocations?.length) {
+    params["where[propertylocations][in]"] = filters.propertylocations.join(",");
   }
 
   if (filters.bhk?.length) {
@@ -253,8 +253,7 @@ export const fetchPropertyBySlug = async (slug) => {
 };
 
 export const fetchLocations = async () => {
-  // const { data } = await axios.get(`${API_URL}/locations`);
-  const { data } = await axios.get(`${API_URL}/locations`, {
+  const { data } = await axios.get(`${API_URL}/propertylocations`, {
     params: { limit: 0 }, 
   });
   return data.docs || [];
@@ -262,7 +261,6 @@ export const fetchLocations = async () => {
 
 // FILTER DATA FETEC
 export const fetchPropertyTypes = async () => {
-  // const { data } = await axios.get(`${API_URL}/propertyTypes`);
    const { data } = await axios.get(`${API_URL}/propertyTypes`, {
     params: { limit: 0 },
   });

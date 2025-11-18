@@ -9,8 +9,14 @@ import MegaMenu from "../Header";
 import HeroSlider from "../HeroSlider";
 import InstagramReelsMarquee from "../SocialChennai";
 import StartupChennai from "../StartupChennai";
+import { useEvents } from "../../Pages/Events/Hooks/UseEvents";
+import EventCalender from "../../Pages/Events/Components/EventCalender"
 
 export default function HomePage() {
+
+    const { events, totalResults, loading } = useEvents(filters, sortBy);
+    const upcomingEvents = [...events];
+
   return (
     <>
       <MegaMenu />
@@ -19,11 +25,12 @@ export default function HomePage() {
       <Funchennai />
       <StartupChennai />
       {/* <DiverseDelights /> */}
-      <HoverImageSectionHorizontal/>
+      <HoverImageSectionHorizontal />
       <ChennaiInvestments />
       {/* <ChennaiChillZoneout /> */}
-      <CardCarousel/>
+      <CardCarousel />
       <CardCarousel111 />
+      <EventCalender events={upcomingEvents} />
       <InstagramReelsMarquee />
       <Becameavolunteer />
       {/* <Footer />

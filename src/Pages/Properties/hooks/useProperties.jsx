@@ -16,7 +16,6 @@ export const useProperties = (filters, sortBy) => {
       setLoading(true);
       try {
         const result = await fetchProperties(filters, sortBy);
-        // setProperties(result);
         setProperties(result.docs || []);
         setTotalResults(result.totalDocs || 0); 
       } catch (err) {

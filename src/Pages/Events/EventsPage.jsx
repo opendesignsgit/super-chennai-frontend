@@ -244,7 +244,7 @@ const Pastevents = [...events]
                       >
                         <div className="relative w-full h-[200px]">
                           <a
-                            href={`/superchennai-events-details/${card.slug}`}
+                            href={`/events-in-chennai/${card.slug}`}
                             state={{ card }}
                           >
                             <img
@@ -348,3 +348,4 @@ const Pastevents = [...events]
 };
 
 export default EventsPage;
+

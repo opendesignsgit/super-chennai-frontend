@@ -454,7 +454,6 @@ function App() {
           className={`stickyIconsContainer ${
             footerReached ? "footerreached" : ""
           }`}
-          // className="stickyIconsContainer"
         >
           <a
             className="linkedin-sc"
@@ -492,29 +491,21 @@ function App() {
             <img src="/images/threads.png" alt="Twitter" />
           </a>
         </div>
-        {/* Sticky Icons */}
 
-        {/* pointcostSticky start */}
         <div
           ref={stickyRef}
           className={`super-chennai-contest pointcastSticky nammaStorieslink ${
             footerReached ? "footerreached" : ""
           }`}
-          // className="stickyIconsContainer"
         >
           <a href="/reimagine-chennai-AI-art-challenge">
-            {/* <img src="/images/nammaStoriesIcon.png" alt="" /> */}
-            {/* <img src="/images/super-chennai-contest.png" alt="" /> */}
             <img
               src="/images/ai-icons.png"
               alt="artificial intelligence challenge"
             />
-            {/* <img src="/images/icon-of-the-month.png" alt="" /> */}
           </a>
         </div>
-        {/* pointcostSticky start */}
 
-        {/* pointcostSticky start */}
         <div
           ref={stickyRef}
           className={`icon-of-the-month pointcastSticky carRallylink ${
@@ -525,19 +516,15 @@ function App() {
             <img src="/images/icon-of-the-month.png" alt="Star of the month" />
           </a>
         </div>
-        {/* pointcostSticky start */}
 
-        {/* pointcostSticky start */}
         <div
           ref={stickyRef}
           className={`pointcastSticky ${footerReached ? "footerreached" : ""}`}
-          // className="stickyIconsContainer"
         >
           <a target="_blank" href="https://pointcast.com/demo/SuperChennai">
             <img src="/images/pointcast-icon.svg" alt="explore chennai" />
           </a>
         </div>
-        {/* pointcostSticky start */}
 
         <Routes>
           {/*----Main-Pages---------*/}
@@ -1282,7 +1269,7 @@ function App() {
 
           {/* Pride-of-Chennai */}
 
-          <Route path="/pride-of-chennai" element={<PrideofChennai />} />
+          <Route path="/hall-of-fame" element={<PrideofChennai />} />
           <Route
             path="/superchennai-neighbourhoods"
             element={<Neighbourhoods />}

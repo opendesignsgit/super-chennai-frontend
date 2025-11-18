@@ -25,8 +25,9 @@ import { useEvents } from "../Pages/Events/Hooks/UseEvents";
 import EventCalender from "../Pages/Events/Components/EventCalender/EventCalender"
 export default function HomePage() {
   const location = useLocation();
-   const { events} = useEvents();
-    const upcomingEvents = [...events];
+
+  const { events } = useEvents();
+  const upcomingEvents = [...events];
   let aosInitialized = false; 
   useEffect(() => {
     if (!aosInitialized) {

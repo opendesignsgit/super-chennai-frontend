@@ -9,7 +9,6 @@ import SidebarModal from "./Components/SidebarModal";
 import TruncatedText from "../GlobalComponents/TruncatedText";
 import EventCardSkeleton from "./Components/Loader/EventCardSkeleton";
 import { formatEventTime } from "./Utils/formatTime";
-import EventCalender from "./Components/EventCalender/EventCalender"
 import FormattedEventDates from "./Utils/dateFormatter";
 import SortBy from "./Components/Sorting"
 
@@ -19,10 +18,6 @@ const EventsPage = () => {
   const { events, totalResults, loading } = useEvents(filters, sortBy);
   
   
-  console.log("events",events)
-
-
-
 //################# SORTING DATWISE DESENTING #################
 
 const upcomingEvents = [...events]
@@ -44,29 +39,29 @@ const upcomingEvents = [...events]
 
 //################# PAST EVENTS  #################
 
-const today = new Date();
-today.setHours(0, 0, 0, 0);
-const Pastevents = [...events]
-  .filter((event) => {
-    if (
-      !Array.isArray(event.event?.eventDates) ||
-      event.event.eventDates.length === 0
-    ) {
-      return false;
-    }
+// const today = new Date();
+// today.setHours(0, 0, 0, 0);
+// const Pastevents = [...events]
+//   .filter((event) => {
+//     if (
+//       !Array.isArray(event.event?.eventDates) ||
+//       event.event.eventDates.length === 0
+//     ) {
+//       return false;
+//     }
 
-    // check if ANY date in eventDates is >= today
-    return event.event.eventDates.some((d) => {
-      const eventDate = new Date(d.date);
-      eventDate.setHours(0, 0, 0, 0);
-      return eventDate >= today;
-    });
-  })
-  .sort((a, b) => {
-    const dateA = new Date(a.event.eventDates[0].date);
-    const dateB = new Date(b.event.eventDates[0].date);
-    return dateB - dateA;
-  });
+//     // check if ANY date in eventDates is >= today
+//     return event.event.eventDates.some((d) => {
+//       const eventDate = new Date(d.date);
+//       eventDate.setHours(0, 0, 0, 0);
+//       return eventDate >= today;
+//     });
+//   })
+//   .sort((a, b) => {
+//     const dateA = new Date(a.event.eventDates[0].date);
+//     const dateB = new Date(b.event.eventDates[0].date);
+//     return dateB - dateA;
+//   });
 
 
   const { categories } = useEventCategories();
@@ -151,8 +146,8 @@ const Pastevents = [...events]
 
           {/* === RIGHT CONTENT === */}
           <div className="flex-1">
-            <div className="flex justify-between items-center mb-3 md:hidden sticky top-[150px] z-[60] bg-[#f4f5f7] py-2">
-              <button
+            {/* <div className="flex justify-between items-center mb-3 md:hidden sticky top-[150px] z-[60] bg-[#f4f5f7] py-2"> */}
+            {/* <button
                 onClick={() => setShowSidebar(true)}
                 className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-[#a44294] to-[#701c67] shadow-lg active:scale-95 transition"
               >
@@ -171,12 +166,34 @@ const Pastevents = [...events]
                   />
                 </svg>
                 Filters
-              </button>
-            </div>
+              </button> */}
+            {/* </div> */}
 
             <div className="sidebarrightCards">
-              <span>
-                Showing <strong>{totalResults}</strong>{" "}
+              <div className="flex justify-between items-center  md:hidden sticky top-[150px] z-[60] bg-[#f4f5f7] py-2">
+                <button
+                  onClick={() => setShowSidebar(true)}
+                  className="flex items-center gap-2 px-4 py-2 rounded-[10px] text-sm font-semibold text-white bg-gradient-to-r from-[#a44294] to-[#701c67] shadow-lg active:scale-95 transition"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 4.5h18m-8.25 6H21M3 16.5h12"
+                    />
+                  </svg>
+                  Filters
+                </button>
+              </div>
+              <span className="hidden md:inline">
+                {/* Showing <strong>{totalResults}</strong>{" "}
                 {totalResults === 1 ? "event" : "events"}{" "}
                 {filters.category ? (
                   <>
@@ -184,8 +201,9 @@ const Pastevents = [...events]
                   </>
                 ) : (
                   "in all categories"
-                )}
+                )} */}
               </span>
+
               <SortBy value={sortBy} onChange={onSortChange} />
             </div>
 
@@ -342,7 +360,6 @@ const Pastevents = [...events]
           setFilters={setFilters}
         />
       </section>
-      <EventCalender events={upcomingEvents} />
     </>
   );
 };

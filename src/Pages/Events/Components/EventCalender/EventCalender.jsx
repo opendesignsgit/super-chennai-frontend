@@ -51,17 +51,6 @@ export default function EventCalender({ events = [] }) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
   if (!featuredEvent) {
     const recentAddedThisMonth = [...events]
       .filter((e) => {
@@ -286,7 +275,7 @@ export default function EventCalender({ events = [] }) {
 
           {/* Navigation Buttons */}
 
-          <div className="EventsCalenderButtons flex justify-center gap-8 mt-8 mb-10">
+          <div className="EventsCalenderButtons flex justify-center gap-8 mt-8 ">
             <button
               onClick={() => slide("left")}
               className="EventsCalenderLeftButton"

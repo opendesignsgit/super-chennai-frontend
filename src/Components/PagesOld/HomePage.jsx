@@ -10,12 +10,9 @@ import HeroSlider from "../HeroSlider";
 import InstagramReelsMarquee from "../SocialChennai";
 import StartupChennai from "../StartupChennai";
 import { useEvents } from "../../Pages/Events/Hooks/UseEvents";
-import EventCalender from "../../Pages/Events/Components/EventCalender"
 
 export default function HomePage() {
 
-    const { events, totalResults, loading } = useEvents(filters, sortBy);
-    const upcomingEvents = [...events];
 
   return (
     <>
@@ -30,7 +27,7 @@ export default function HomePage() {
       {/* <ChennaiChillZoneout /> */}
       <CardCarousel />
       <CardCarousel111 />
-      <EventCalender events={upcomingEvents} />
+   
       <InstagramReelsMarquee />
       <Becameavolunteer />
       {/* <Footer />

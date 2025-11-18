@@ -26,19 +26,22 @@ const FilterTopbar = ({
       : categories.slice(0, initialVisible);
 
   return (
-    <section
-      className="
-        filterTopbar
-        bg-gray-100
-        py-3
-        border-b
-        border-gray-200
-        sticky
-        top-[100px]
-        md:top-[118px]
-        z-50
-      "
-    >
+   <section
+  className="
+    filterTopbar
+    bg-gray-100
+    py-3
+    border-b
+    border-gray-200
+    sticky
+    top-[100px]
+    md:top-[118px]
+    z-50
+    hidden
+    md:block
+  "
+>
+
       <div
         className={`
           container max-w-7xl mx-auto flex gap-3 px-2

@@ -10,59 +10,57 @@ import TruncatedText from "../GlobalComponents/TruncatedText";
 import EventCardSkeleton from "./Components/Loader/EventCardSkeleton";
 import { formatEventTime } from "./Utils/formatTime";
 import FormattedEventDates from "./Utils/dateFormatter";
-import SortBy from "./Components/Sorting"
+import SortBy from "./Components/Sorting";
 
 const EventsPage = () => {
   const [filters, setFilters] = useState({ categories: [] });
   const [sortBy, setSortBy] = useState("upcoming");
   const { events, totalResults, loading } = useEvents(filters, sortBy);
-  
-  
-//################# SORTING DATWISE DESENTING #################
 
-const upcomingEvents = [...events]
+  //################# SORTING DATWISE DESENTING #################
 
-// .sort((a, b) => {
-//   const dateA = Array.isArray(a.event?.eventDates) && a.event.eventDates.length
-//     ? new Date(a.event.eventDates[0].date)
-//     : null;
+  const upcomingEvents = [...events];
 
-//   const dateB = Array.isArray(b.event?.eventDates) && b.event.eventDates.length
-//     ? new Date(b.event.eventDates[0].date)
-//     : null;
+  // .sort((a, b) => {
+  //   const dateA = Array.isArray(a.event?.eventDates) && a.event.eventDates.length
+  //     ? new Date(a.event.eventDates[0].date)
+  //     : null;
 
-//   if (!dateA) return 1;
-//   if (!dateB) return -1;
+  //   const dateB = Array.isArray(b.event?.eventDates) && b.event.eventDates.length
+  //     ? new Date(b.event.eventDates[0].date)
+  //     : null;
 
-//   return dateB - dateA; 
-// });
+  //   if (!dateA) return 1;
+  //   if (!dateB) return -1;
 
-//################# PAST EVENTS  #################
+  //   return dateB - dateA;
+  // });
 
-// const today = new Date();
-// today.setHours(0, 0, 0, 0);
-// const Pastevents = [...events]
-//   .filter((event) => {
-//     if (
-//       !Array.isArray(event.event?.eventDates) ||
-//       event.event.eventDates.length === 0
-//     ) {
-//       return false;
-//     }
+  //################# PAST EVENTS  #################
 
-//     // check if ANY date in eventDates is >= today
-//     return event.event.eventDates.some((d) => {
-//       const eventDate = new Date(d.date);
-//       eventDate.setHours(0, 0, 0, 0);
-//       return eventDate >= today;
-//     });
-//   })
-//   .sort((a, b) => {
-//     const dateA = new Date(a.event.eventDates[0].date);
-//     const dateB = new Date(b.event.eventDates[0].date);
-//     return dateB - dateA;
-//   });
+  // const today = new Date();
+  // today.setHours(0, 0, 0, 0);
+  // const Pastevents = [...events]
+  //   .filter((event) => {
+  //     if (
+  //       !Array.isArray(event.event?.eventDates) ||
+  //       event.event.eventDates.length === 0
+  //     ) {
+  //       return false;
+  //     }
 
+  //     // check if ANY date in eventDates is >= today
+  //     return event.event.eventDates.some((d) => {
+  //       const eventDate = new Date(d.date);
+  //       eventDate.setHours(0, 0, 0, 0);
+  //       return eventDate >= today;
+  //     });
+  //   })
+  //   .sort((a, b) => {
+  //     const dateA = new Date(a.event.eventDates[0].date);
+  //     const dateB = new Date(b.event.eventDates[0].date);
+  //     return dateB - dateA;
+  //   });
 
   const { categories } = useEventCategories();
   const [showSidebar, setShowSidebar] = useState(false);
@@ -193,7 +191,7 @@ const upcomingEvents = [...events]
                 </button>
               </div>
               <span className="hidden md:inline">
-                {/* Showing <strong>{totalResults}</strong>{" "}
+                Showing <strong>{totalResults}</strong>{" "}
                 {totalResults === 1 ? "event" : "events"}{" "}
                 {filters.category ? (
                   <>
@@ -201,10 +199,11 @@ const upcomingEvents = [...events]
                   </>
                 ) : (
                   "in all categories"
-                )} */}
+                )}
               </span>
 
               <SortBy value={sortBy} onChange={onSortChange} />
+              
             </div>
 
             {/* Event Cards */}
@@ -268,7 +267,7 @@ const upcomingEvents = [...events]
                             <img
                               src={imageUrl}
                               alt={eventData.title || card.title}
-                              className="h-full w-full  rounded-t-lg"
+                              className="h-full w-full object-cover rounded-t-lg"
                             />
                           </a>
                           {eventData?.eventsCategory?.length > 0 && (
@@ -365,4 +364,3 @@ const upcomingEvents = [...events]
 };
 
 export default EventsPage;
-

@@ -141,11 +141,16 @@ export const fetchEvents = async (filters = {}, sortBy = "upcoming") => {
     // Sorting
     const apiSort = mapSortToApi(sortBy);
     if (apiSort) params.sort = apiSort;
-    
+
     if (sortBy === "upcoming") {
       const today = new Date().toISOString();
       params["where[event.eventDates.date][greater_than_equal]"] = today;
     }
+    if (sortBy === "past") {
+      const today = new Date().toISOString();
+      params["where[event.eventDates.date][less_than]"] = today;
+    }
+
 
     // =========================
     // 📅 OLD EVENTS FILTER

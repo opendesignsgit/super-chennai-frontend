@@ -8,6 +8,8 @@ export const mapSortToApi = (sortBy) => {
     case "upcoming":
       return "event.eventDates.date"; // ascending = nearest first
 
+    case "past":
+      return "-event.eventDates.date"; // past events DESC (latest past first)
     case "newest":
       return "-createdAt"; // latest added first
 

@@ -87,6 +87,35 @@
   color: #995098;
 }
 
+.visitIntroParaSection.detailIntro .workIntro1 h1 {
+  font-family: "NewAmsterdam";
+  font-size: 3vw;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #995098;
+}
+.visitIntroParaSection.detailIntro .workIntro1 h1 {
+  font-family: "NewAmsterdam";
+  font-size: 3vw;          /* default for desktop/tablet */
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #995098;
+}
+
+/* Mobile (<= 640px) */
+@media (max-width: 640px) {
+  .visitIntroParaSection.detailIntro .workIntro1 h1 {
+    font-size: 7vw;        /* bigger on mobile */
+  }
+}
+
+/* Extra Small Phones (<= 400px) */
+@media (max-width: 400px) {
+  .visitIntroParaSection.detailIntro .workIntro1 h1 {
+    font-size: 8vw;        /* even bigger for tiny screens */
+  }
+}
+
 .visitIntroParaSection.detailIntro .workIntro h1 {
   font-family: "NewAmsterdam";
   font-size: 4vw;

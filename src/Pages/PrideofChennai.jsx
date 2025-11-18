@@ -39,8 +39,7 @@ export default function PrideofChennai() {
               <div className="accodoamationBannerText">
                 <h3>Hall of Fame</h3>
                 <div className="breadCrum">
-                  <Link to="/">Home</Link> -{" "}
-                  <a href="">Hall of Fame</a>{" "}
+                  <Link to="/">Home</Link> - <a href="">Hall of Fame</a>{" "}
                 </div>
               </div>
             </div>
@@ -61,16 +60,27 @@ export default function PrideofChennai() {
               >
                 <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
               </div>
-              <div className="workIntro !pb-0">
-                <h3>Tradition Meets Innovation Daily</h3>
+              <div className="workIntro1 !pb-0 text-center">
+                <h1>
+                  Chennai Hall of Fame is not just a recognition. <br />It’s
+                  a celebration of every Chennaite who made the city proud.
+                </h1>
                 <p>
-                  Celebrating the city’s rich culture and inspiring
-                  achievements, Chennai stands as a beacon of tradition and
-                  innovation. From its historic landmarks to its modern
-                  contributions in art, music, and education, the city continues
-                  to inspire pride among its residents and admirers alike.
-                  Chennai’s spirit, talent, and resilience make its pride truly
-                  unmatched.
+                  Chennai Hall of Fame celebrates the extraordinary individuals
+                  who were born, raised, or shaped by this vibrant city — and
+                  went on to make the world take notice. From cricketing legends
+                  and musical maestros to pioneering doctors, tech innovators,
+                  dancers, entrepreneurs, and entertainers, this platform
+                  honours the people who carry the spirit of Chennai wherever
+                  they go.
+                      It is a tribute to talent, discipline, culture, and the
+                  unmistakable Chennai grit. A space where stories of
+                  achievement inspire, uplift, and remind us that greatness
+                  often begins right here — in the heart of our city.
+                </p>
+
+                <p>
+              
                 </p>
               </div>
             </div>

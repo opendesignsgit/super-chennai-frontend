@@ -12,12 +12,10 @@ const SortBy = ({ value, onChange }) => {
         onChange={(e) => onChange(e.target.value)}
       >
         <option value="">All</option>
-
         {/* <option value="newest">Newest</option> */}
+        <option value="upcoming">Upcoming Events</option>
         <option value="past">Past Events</option>
         {/* <option value="oldest">Oldest</option> */}
-
-        <option value="upcoming">Upcoming</option>
       </select>
     </div>
   );

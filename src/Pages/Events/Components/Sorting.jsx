@@ -5,6 +5,7 @@ const SortBy = ({ value, onChange }) => {
   return (
     <div className="sort-by">
       <label htmlFor="sort">Sort By:</label>
+      
 
       <select
         id="sort"

@@ -6,7 +6,7 @@ import { formatPrice } from "../../utils/formatPrice";
 import ContactForm from "../forms/ContactForm";
 import { formatLabel } from "../../utils/formatLabel";
 import defaultImage from "../../../../../public/propertyDefault.png";
-import "../../Styles/PropertyCard.css"
+import "../../Styles/PropertyCard.css";
 const getImageUrl = (img) => {
   if (!img?.url) return defaultImage;
   if (img.url.startsWith("http")) return img.url;
@@ -26,7 +26,7 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
     ? `₹${formatPrice(property.price)}`
     : "Price on Request";
 
-  const MAX_BADGES = 3;
+  const MAX_BADGES = 1;
   const typeArray = property.propertyType;
   const type = Array.isArray(typeArray)
     ? typeArray.map((item) => item.value).join(", ")
@@ -90,84 +90,52 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
           <div className="aboutPlotsSize flex flex-wrap gap-4 text-capitalize">
             <div className="flex flex-col items-start">
               <span> {price}</span>
-
               {property.pricePerSqft && (
                 <span>{property.pricePerSqft.toLocaleString()} ₹/sqft</span>
               )}
             </div>
 
-            {area &&
-              Object.values(area).some(
-                (v) => v !== null && v !== undefined && v !== ""
-              ) && (
+            {/* PROPERTY TYPE  */}
+
+            {Array.isArray(property.propertyType) &&
+              property.propertyType.length > 0 && (
                 <div className="flex flex-col items-start text-capitalize">
-                  {(area.maxSqft || area.minSqft) && (
-                    <span>
-                      {area.maxSqft ? area.maxSqft : ""}
-                      {area.maxSqft && area.minSqft ? " • " : ""}
-                      {area.minSqft ? area.minSqft : ""} sqft
-                    </span>
-                  )}
-                </div>
-              )}
+                  {property.propertyType.slice(0, MAX_BADGES).map((item) => (
+                    <span key={item?.id}>{formatLabel(item?.value)}</span>
+                  ))}
 
-            <div className="flex flex-col items-start text-capitalize">
-              {/* Commercial Type */}
-
-              {property?.commercialType && (
-                <span>{formatLabel(property.commercialType)}</span>
-              )}
-
-              <div>
-                <h3>{property?.name}</h3>
-
-                {/* Property Type  */}
-                <div className="flex gap-2 flex-wrap">
-                  {Array.isArray(property.propertyType) &&
-                    property.propertyType.slice(0, MAX_BADGES).map((item) => (
-                      <span
-                        key={item.id}
-                        className="px-2 py-[2px] text-xs bg-gray-100 border border-gray-300 text-gray-700 rounded-full font-medium whitespace-nowrap"
-                      >
-                        {formatLabel(item.value)}
-                      </span>
-                    ))}
-
-                  {/* + more indicator */}
-                  {property.propertyType?.length > MAX_BADGES && (
+                  {property.propertyType.length > MAX_BADGES && (
                     <span className="px-2 py-[2px] text-xs bg-purple-100 text-purple-700 rounded-full font-medium border border-purple-300 whitespace-nowrap">
                       + {property.propertyType.length - MAX_BADGES} more
                     </span>
                   )}
-                </div>
-              </div>
 
-              <div className="flex gap-2 flex-wrap">
-                {bhk && <span className="text-sm text-gray-700">{bhk}</span>}
-              </div>
-              <div className="flex gap-2 flex-wrap">
-                <span>{formatLabel(possessionStatus)}</span>
-              </div>
-            </div>
+                  {/* BHK */}
+
+                  {Array.isArray(property.bhk) &&
+                    property.bhk.some((item) => item?.label?.trim() !== "") && (
+                      <span className="text-sm text-gray-700">
+                        {property.bhk
+                          .filter((item) => item?.label?.trim() !== "")
+                          .map((item) => item.label.trim())
+                          .join(", ")}
+                      </span>
+                    )}
+                </div>
+              )}
+
+            {/* COMERCIAL TYPE */}
+
+            {property?.commercialType &&
+              property.commercialType.trim() !== "" && (
+                <div className="flex flex-col items-start text-capitalize">
+                  <span>{formatLabel(property.commercialType)}</span>
+                  <span>{formatLabel(property.society.possessionStatus)}</span>
+                </div>
+              )}
           </div>
 
           <p className="propertContent line-clamp-2">{description}</p>
-
-          {property.society?.externalUrl && (
-            <a
-              href={property.society.externalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="propertyViewDetails flex items-center gap-1"
-            >
-              Official Project Link
-              <img
-                className="propertyAroWwCLick"
-                src="/images/icons/right-side-arrow-superchennai.svg"
-                alt="arrow"
-              />
-            </a>
-          )}
 
           <div className="uploadedDetailsproperty mt-2">
             <div className="flex flex-col">
@@ -198,6 +166,21 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
             </div>
 
             <div className="propertyViewButton mt-2 flex space-x-2">
+              {property.society?.externalUrl && (
+                <a
+                  href={property.society.externalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="propertyViewDetails flex items-center gap-1"
+                >
+                  Official Project Link
+                  <img
+                    className="propertyAroWwCLick"
+                    src="/images/icons/right-side-arrow-superchennai.svg"
+                    alt="arrow"
+                  />
+                </a>
+              )}
               <Link
                 to={
                   property.officialView
@@ -215,13 +198,13 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
                 </button>
               </Link>
 
-              <button
+              {/* <button
                 type="button"
                 className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
                 onClick={() => setIsContactModalOpen(true)}
               >
                 Contact
-              </button>
+              </button> */}
             </div>
 
             {isContactModalOpen && (

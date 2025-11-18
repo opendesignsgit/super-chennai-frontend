@@ -12,14 +12,14 @@ const slides = [
   //   title: "First slide label",
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
-  {
-    type: "image",
-    link: "/reimagine-chennai-AI-art-challenge",
-    image: "/images/HomePage-Images/ai-art-challenge-banner.jpg",
-    image1: "/images/HomePage-Images/ai-art-challenge-mobile-banner.jpg",
-    title: "AI art challenge",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   type: "image",
+  //   link: "/reimagine-chennai-AI-art-challenge",
+  //   image: "/images/HomePage-Images/ai-art-challenge-banner.jpg",
+  //   image1: "/images/HomePage-Images/ai-art-challenge-mobile-banner.jpg",
+  //   title: "AI art challenge",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
   {
     type: "image",
     link: "/icon-of-the-oct-month-2025",

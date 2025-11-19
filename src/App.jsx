@@ -506,6 +506,17 @@ function App() {
           </a>
         </div>
 
+        {/* <div
+          ref={stickyRef}
+          className={`super-chennai-contest pointcastSticky nammaStorieslink ${
+            footerReached ? "footerreached" : ""
+          }`}
+        >
+          <a href="/super-chennai-quiz">
+            <img src="/images/quiz-icon.png" alt="super chennai quiz" />
+          </a>
+        </div> */}
+
         <div
           ref={stickyRef}
           className={`icon-of-the-month pointcastSticky carRallylink ${
@@ -1125,7 +1136,10 @@ function App() {
             element={<IconofthemonthSeptember1 />}
           />
 
-          <Route path="/superchennai-events-details/:url" element={<EventsDetails />} />
+          <Route
+            path="/superchennai-events-details/:url"
+            element={<EventsDetails />}
+          />
           <Route path="/superchennai-quiz" element={<ChennaiQuiz />} />
           <Route path="/quizform" element={<QuizForm />} />
           <Route path="/quiz-checkout" element={<QuizFormCheckout />} />

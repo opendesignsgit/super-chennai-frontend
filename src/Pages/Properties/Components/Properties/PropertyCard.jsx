@@ -7,6 +7,8 @@ import ContactForm from "../forms/ContactForm";
 import { formatLabel } from "../../utils/formatLabel";
 import defaultImage from "../../../../../public/propertyDefault.png";
 import "../../Styles/PropertyCard.css";
+import { useRef, useEffect } from "react";
+
 const getImageUrl = (img) => {
   if (!img?.url) return defaultImage;
   if (img.url.startsWith("http")) return img.url;
@@ -14,35 +16,116 @@ const getImageUrl = (img) => {
 };
 
 const PropertyCard = ({ property, viewType = "grid" }) => {
+  const MAX_BADGES = 3;
+  const scrollItems = [];
   if (!property) return null;
-
+  const scrollRef = useRef(null);
   const heroImage = getImageUrl(property.heroImage);
   const title = property.title || "Property";
-  const bhk = Array.isArray(property.bhk)
-    ? property.bhk.map((item) => item.label.trim()).join(", ")
-    : "";
   const area = property.area || "";
   const price = property?.price
     ? `₹${formatPrice(property.price)}`
     : "Price on Request";
-
-  const MAX_BADGES = 1;
-  const typeArray = property.propertyType;
-  const type = Array.isArray(typeArray)
-    ? typeArray.map((item) => item.value).join(", ")
-    : typeArray?.value || property.type || "";
-  const possessionStatus = property.society?.possessionStatus;
-
   const description =
     property?.content?.root?.children?.[0]?.children?.[0]?.text ||
     property?.description ||
     "";
-
   const propertyLink = `/properties/${property.slug || property.id}`;
   const transactionType = property.transactionType || null;
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
 
-  return (
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const update = () => {
+      setCanScrollLeft(el.scrollLeft > 0);
+      setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth);
+    };
+
+    update();
+    el.addEventListener("scroll", update);
+    return () => el.removeEventListener("scroll", update);
+  }, []);
+
+  //########   PRICE   ###############
+  if (property.price) {
+    scrollItems.push({
+      type: "price",
+      value: price,
+    });
+  }
+
+  //########## PRICE PER SQFT ##########
+  if (property.pricePerSqft) {
+    scrollItems.push({
+      type: "pricePerSqft",
+      value: `${property.pricePerSqft.toLocaleString()} ₹/sqft`,
+    });
+  }
+
+  // ##########PROPERTY TYPE ############
+  if (
+    Array.isArray(property.propertyType) &&
+    property.propertyType.length > 0
+  ) {
+    const validTypes = property.propertyType
+      .slice(0, MAX_BADGES)
+      .map((item) => item?.value)
+      .filter(Boolean);
+
+    validTypes.forEach((t) =>
+      scrollItems.push({
+        type: "ptype",
+        value: formatLabel(t),
+      })
+    );
+  }
+
+  //#################### BHK #############
+  // if (Array.isArray(property.bhk)) {
+  //   const validBhk = property.bhk
+  //     .map((item) => item?.label?.trim())
+  //     .filter((t) => t !== "");
+
+  //   if (validBhk.length > 0) {
+  //     scrollItems.push({
+  //       type: "bhk",
+  //       value: validBhk.join(", "),
+  //     });
+  //   }
+  // }
+
+  // ########### COMMERCIAL TYPE ##########
+  if (property?.commercialType?.trim()) {
+    scrollItems.push({
+      type: "commercialType",
+      value: formatLabel(property.commercialType),
+    });
+  }
+
+  //########## POSSESSION STATUS ############
+  if (property.society?.possessionStatus) {
+    scrollItems.push({
+      type: "possession",
+      value: formatLabel(property.society.possessionStatus),
+    });
+  }
+
+  //############### AREA #####################
+  if (area && (area.maxSqft || area.minSqft)) {
+    scrollItems.push({
+      type: "area",
+      value: `${area.maxSqft || ""}${area.maxSqft && area.minSqft ? " • " : ""}${
+        area.minSqft || ""
+      } sqft`,
+    });
+  }
+
+return (
+  <div className="hidden md:block">
     <div
       className={`PropertiesCard ${
         viewType === "grid" ? "gridCard" : "listCard"
@@ -87,55 +170,66 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
               <h5>by {property.society.builder}</h5>
             )}
 
-          <div className="aboutPlotsSize flex flex-wrap gap-4 text-capitalize">
-            <div className="flex flex-col items-start">
-              <span> {price}</span>
-              {property.pricePerSqft && (
-                <span>{property.pricePerSqft.toLocaleString()} ₹/sqft</span>
-              )}
+          {scrollItems.length > 1 && canScrollLeft && (
+            <button
+              className="scrollBtn left"
+              onClick={() =>
+                scrollRef.current.scrollBy({ left: -200, behavior: "smooth" })
+              }
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+          )}
+
+          <div className="scrollContainer" ref={scrollRef}>
+            <div className="aboutPlotsSize flex flex-nowrap text-capitalize">
+              {scrollItems.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex flex-col items-start cardpropertyslide"
+                >
+                  <span>{item.value}</span>
+                </div>
+              ))}
             </div>
-
-            {/* PROPERTY TYPE  */}
-
-            {Array.isArray(property.propertyType) &&
-              property.propertyType.length > 0 && (
-                <div className="flex flex-col items-start text-capitalize">
-                  {property.propertyType.slice(0, MAX_BADGES).map((item) => (
-                    <span key={item?.id}>{formatLabel(item?.value)}</span>
-                  ))}
-
-                  {property.propertyType.length > MAX_BADGES && (
-                    <span className="px-2 py-[2px] text-xs bg-purple-100 text-purple-700 rounded-full font-medium border border-purple-300 whitespace-nowrap">
-                      + {property.propertyType.length - MAX_BADGES} more
-                    </span>
-                  )}
-
-                  {/* BHK */}
-
-                  {Array.isArray(property.bhk) &&
-                    property.bhk.some((item) => item?.label?.trim() !== "") && (
-                      <span className="text-sm text-gray-700">
-                        {property.bhk
-                          .filter((item) => item?.label?.trim() !== "")
-                          .map((item) => item.label.trim())
-                          .join(", ")}
-                      </span>
-                    )}
-                </div>
-              )}
-
-            {/* COMERCIAL TYPE */}
-
-            {property?.commercialType &&
-              property.commercialType.trim() !== "" && (
-                <div className="flex flex-col items-start text-capitalize">
-                  <span>{formatLabel(property.commercialType)}</span>
-                  <span>{formatLabel(property.society.possessionStatus)}</span>
-                </div>
-              )}
           </div>
 
-          <p className="propertContent line-clamp-2">{description}</p>
+          {scrollItems.length > 0 && canScrollRight && (
+            <button
+              className="scrollBtn right"
+              onClick={() =>
+                scrollRef.current.scrollBy({ left: 200, behavior: "smooth" })
+              }
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+          )}
+
+          <p className="propertContent line-clamp-5">{description}</p>
 
           <div className="uploadedDetailsproperty mt-2">
             <div className="flex flex-col">
@@ -165,7 +259,7 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
               )}
             </div>
 
-            <div className="propertyViewButton mt-2 flex space-x-2">
+            <div className="propertyViewButton mt-2 flex justify-between items-center w-full">
               {property.society?.externalUrl && (
                 <a
                   href={property.society.externalUrl}
@@ -240,6 +334,7 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

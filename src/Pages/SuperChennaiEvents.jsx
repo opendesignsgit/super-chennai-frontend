@@ -124,6 +124,22 @@ export default function SuperChennaiEvents() {
                   <p className="text-lg font-medium">NAMMA STORIES</p>
                 </div>
               </a>
+
+
+
+                 <a className="superchennaiEventsSection" href="/superchennai-quiz">
+                <div
+                  className="flex flex-col items-center text-center "
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/events/quiz-superchennai-inner.jpg"
+                    alt="Right Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">SuperChennai Quiz</p>
+                </div>
+              </a>
             </div>
           </div>
         </section>

@@ -1,14 +1,14 @@
-import React from 'react';
-
+import React from "react";
+import "./TextStyle.css";
 const AutoShrinkText = ({
   text,
   baseSize = 60,
   minSize = 18,
   maxChars = 40,
-  className = '',
+  className = "",
   maxLines = 2,
-  width = '100%', 
-  align = 'center', 
+  width = "100%",
+  align = "center",
 }) => {
   const length = text?.length || 0;
 
@@ -16,20 +16,29 @@ const AutoShrinkText = ({
   const fontSize = Math.max(minSize, baseSize * ratio * 1.1);
 
   return (
-    <h1
-      className={className}
+    <h3 // prasanth Told from SEO TEAM
+      className={`autoShrinkText ${className}`}
+      // style={{
+      //   width,
+      //   fontSize: `${fontSize}px`,
+      //   lineHeight: '0.9',
+      //    margin: '0 auto',
+      //   textAlign: align,
+      //   whiteSpace: length < maxChars / 1.5 ? 'nowrap' : 'normal',
+      // }}
+
       style={{
-        width, 
-        fontSize: `${fontSize}px`,
-        lineHeight: '0.9',
-         margin: '0 auto', 
-        textAlign: align, 
-        whiteSpace: length < maxChars / 1.5 ? 'nowrap' : 'normal',
+        "--dynamic-font-size": `${fontSize}px`,
+        width,
+        lineHeight: "0.9",
+        margin: "0 auto",
+        textAlign: align,
+        whiteSpace: length < maxChars / 1.5 ? "nowrap" : "normal",
       }}
       title={text}
     >
       {text}
-    </h1>
+    </h3>
   );
 };
 

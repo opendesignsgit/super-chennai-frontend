@@ -703,6 +703,7 @@ export const chennaiAppDataFood = [
     WebsiteLink: "https://www.licious.in/",
   },
 ];
+
 //££££££££ GROCERY ££££££££££££££
 
 export const chennaiAppDataGrocery = [
@@ -863,6 +864,7 @@ export const chennaiAppDataParcelDelivery = [
     WebsiteLink: "https://www.dunzo.com",
   },
 ];
+
 //££££££££ PARCEL ££££££££££££££££
 
 export const chennaiAppDataPorter = [
@@ -988,7 +990,96 @@ export const chennaiAppDataPorter = [
       "https://apps.apple.com/in/app/zepto-delivery-partner/id1579171075",
     WebsiteLink: "https://rider.zepto.co.in/",
   },
+
+
+
+
+    {
+    id: 16,
+    appImage: "/images/chennai-app-images/ola-images-app.jpg",
+    Company: "Ola",
+    AppDescription:
+      "Ride-hailing apps for daily commuting and parcel delivery.",
+    link: "/events",
+    FeaturesContent: [
+      "Multiple ride options",
+      "GPS pickup & drop",
+      "24/7 availability",
+      "Driver ratings",
+      "Safety SOS",
+      "Upfront fare estimate",
+    ],
+    serviceContent: [
+      "Daily city commute",
+      "Outstation trips",
+      "Airport pickup & drop",
+      "Ride-sharing",
+      "Parcel sending (Uber Connect)",
+      "Hourly rental",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.olacabs.customer ",
+    IOSLink: "https://apps.apple.com/in/app/ola-cabs/id539983277 ",
+    WebsiteLink: "https://www.olacabs.com/ ",
+  },
+
+  {
+    id: 17,
+    appImage: "/images/chennai-app-images/uber-images-app.jpg",
+    Company: "Uber",
+    AppDescription:
+      "Ride-hailing apps for daily commuting and parcel delivery.",
+    link: "/events",
+    FeaturesContent: [
+      "Multiple ride options",
+      "GPS pickup & drop",
+      "24/7 availability",
+      "Driver ratings",
+      "Safety SOS",
+      "Upfront fare estimate",
+    ],
+    serviceContent: [
+      "Daily city commute",
+      "Outstation trips",
+      "Airport pickup & drop",
+      "Ride-sharing",
+      "Parcel sending (Uber Connect)",
+      "Hourly rental",
+    ],
+    AndriodLink: "https://play.google.com/store/apps/details?id=com.ubercab",
+    IOSLink: "https://apps.apple.com/us/app/uber-request-a-ride/id368677368",
+    WebsiteLink: "https://www.uber.com/in/en/",
+  },
+
+  {
+    id: 18,
+    appImage: "/images/chennai-app-images/rapido-(bike-taxi)-images-app.jpg",
+    Company: "Rapido (Bike Taxi)",
+    AppDescription: "Fast bike rides and parcel delivery across Chennai city.",
+    link: "/events",
+    FeaturesContent: [
+      "Quick bike rides",
+      "Transparent fares",
+      "Real-time tracking",
+      "SOS & safety",
+      "Captain ratings",
+      "Parcel delivery option",
+    ],
+    serviceContent: [
+      "Daily bike commute",
+      "Last-mile transport",
+      "Office/home pickup rides",
+      "Parcel pick & drop",
+      "Airport bike service",
+      "Cashless payment rides",
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.rapido.passenger",
+    IOSLink: "https://apps.apple.com/in/app/rapido/id1188387247",
+    WebsiteLink: "https://www.rapido.bike",
+  },
 ];
+
 //££££££££ OTHERS  £££££££££££££££
 
 export const OthersApps = [
@@ -1073,3 +1164,216 @@ export const OthersApps = [
     WebsiteLink: "https://www.districtapp.in/",
   },
 ];
+
+
+export const chennaiAppDataHealth = [
+  {
+    id: 1,
+    Company: "Tata 1mg",
+    AppDescription: "Trusted platform for medicines and essentials.",
+    appImage: "/images/chennai-app-images/Tata-1mg.png",
+    link: "/events",
+    FeaturesContent: [
+      <>Fast medicine search</>,
+      <>Easy ordering</>,
+      <>Lab test booking</>,
+      <>Medicine reminders</>,
+      <>Order tracking</>,
+    ],
+    serviceContent: [
+      <>Doctor consult</>,
+      <>Lab tests</>,
+      <>Health packages</>,
+      <>Discounts</>,
+      <>24/7 support</>,
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus",
+    IOSLink:
+      "https://apps.apple.com/in/app/tata-1mg-healthcare-app/id554578419",
+    WebsiteLink: "https://www.1mg.com",
+  },
+  {
+    id: 2,
+    Company: "Netmeds",
+    AppDescription: "Affordable medicine delivery with trusted service.",
+    appImage: "/images/chennai-app-images/netmeds.png",
+    link: "/events",
+    FeaturesContent: [
+      <>Quick ordering</>,
+      <>Upload prescription</>,
+      <>Refill reminders</>,
+      <>Health articles</>,
+      <>Track orders</>,
+    ],
+    serviceContent: [
+      <>Medicines delivery</>,
+      <>Lab tests</>,
+      <>Doctor consult</>,
+      <>Special discounts</>,
+      <>Health packages</>,
+    ],
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.NetmedsMarketplace.Netmeds",
+    IOSLink:
+      "https://apps.apple.com/in/app/netmeds-india-ki-pharmacy/id1011070011",
+    WebsiteLink: "https://www.netmeds.com",
+  },
+  {
+    id: 3,
+    Company: "Apollo 24/7",
+    AppDescription: "Complete healthcare app for everyday needs",
+    appImage: "/images/chennai-app-images/apollo-247.png",
+    link: "/events",
+    FeaturesContent: [
+      <>Order medicines</>,
+      <>Health records</>,
+      <>24/7 doctors</>,
+      <>Diagnostics booking</>,
+      <>Health tips</>,
+    ],
+    serviceContent: [
+      <>Doctor consult</>,
+      <>Diagnostics</>,
+      <>Medicine delivery</>,
+      <>Health plans</>,
+      <>Emergency support</>,
+    ],
+    WebsiteLink: "https://www.apollo247.com",
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.apollo.patientapp",
+    IOSLink:
+      "https://apps.apple.com/in/app/apollo-247-health-medicine/id1496740273",
+  },
+
+  {
+    id: 4,
+    Company: "Truemeds",
+    AppDescription: "Smart savings on medicines every month",
+    appImage: "/images/chennai-app-images/truemeds.png",
+    link: "/events",
+    FeaturesContent: [
+      <>Generic substitutes</>,
+      <>Cost comparison</>,
+      <>Free doctor review</>,
+      <>Simple order</>,
+      <>Delivery tracking</>,
+    ],
+    serviceContent: [
+      <>Affordable meds</>,
+      <>Doctor verification</>,
+      <>Delivery service</>,
+      <>Refill support</>,
+      <>Special discounts</>,
+    ],
+    WebsiteLink: "https://www.truemeds.in",
+    AndriodLink: "https://play.google.com/store/search?q=trumeds&c=apps",
+    IOSLink:
+      "https://apps.apple.com/in/app/truemeds-health-medicine-app/id6742731113",
+  },
+  {
+    id: 5,
+    Company: "MedPlus Mart",
+    AppDescription: "Reliable pharmacy with fast home delivery",
+    appImage: "/images/chennai-app-images/medplus.png",
+    link: "/events",
+    FeaturesContent: [
+      <>Easy browsing</>,
+      <>Store locator</>,
+      <>Secure payments</>,
+      <>Quick delivery</>,
+      <>Refill reminders</>,
+    ],
+    serviceContent: [
+      <>Medicine delivery</>,
+      <>Diagnostics</>,
+      <>Rewards</>,
+      <>OTC products</>,
+      <>Store pickup</>,
+    ],
+    WebsiteLink: "https://www.medplusmart.com",
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.medplus.mobile.android",
+    IOSLink:
+      "https://apps.apple.com/in/app/medplus-mart-online-pharmacy/id1070265254",
+  },
+  {
+    id: 6,
+    Company: "PlatinumRx",
+    AppDescription: "Premium medicine delivery with expert help",
+    appImage: "/images/chennai-app-images/platinumnx.png",
+    link: "/events",
+    FeaturesContent: [
+      <>Quick delivery</>,
+      <>Verified pharmacies</>,
+      <>Secure orders</>,
+      <>Consult access</>,
+      <>Easy reorders</>,
+    ],
+    serviceContent: [
+      <>Medicine delivery</>,
+      <>Doctor consult</>,
+      <>Health support</>,
+      <>Prescription upload</>,
+      <>Refill help</>,
+    ],
+    WebsiteLink: "https://platinumrx.in",
+    AndriodLink: "https://play.google.com/store/apps/details?id=in.platinumrx",
+    IOSLink:
+      "https://apps.apple.com/in/app/platinumrx-medicine-health/id6477701930",
+  },
+
+  {
+    id: 7,
+    Company: "SastaSundar",
+    AppDescription: "Budget-friendly medicine delivery and care",
+    appImage: "/images/chennai-app-images/sastasundar.png",
+    link: "/events",
+    FeaturesContent: [
+      <>Low-cost meds</>,
+      <>Easy order</>,
+      <>Health guides</>,
+      <>Refill alerts</>,
+      <>Order tracking</>,
+    ],
+    serviceContent: [
+      <>Medicine delivery</>,
+      <>Diagnostics</>,
+      <>Doctor consult</>,
+      <>Checkups</>,
+      <>Wellness items</>,
+    ],
+    WebsiteLink: "https://www.sastasundar.com",
+    AndriodLink:
+      "https://play.google.com/store/apps/details?id=com.shtpl.sastasundar",
+    IOSLink:
+      "https://apps.apple.com/in/app/sastasundar-online-pharmacy/id6738185605",
+  },
+  {
+  id: 8,
+  Company: "MediBuddy",
+  AppDescription: "Digital healthcare and insurance support app",
+  appImage: "/images/chennai-app-images/medibuddy.jpg",
+  link: "/events",
+  FeaturesContent: [
+    <>Online consults</>,
+    <>Hospital bookings</>,
+    <>Health records</>,
+    <>Lab scheduling</>,
+    <>Easy navigation</>,
+  ],
+  serviceContent: [
+    <>Consult doctors</>,
+    <>Diagnostics</>,
+    <>Medicine delivery</>,
+    <>Insurance help</>,
+    <>Wellness plans</>,
+  ],
+  WebsiteLink: "https://www.medibuddy.in",
+  AndriodLink:
+    "https://play.google.com/store/apps/details?id=in.medibuddy",
+  IOSLink: "https://apps.apple.com/in/app/medibuddy-dr-labs-meds-abha/id946666981",
+},
+
+];
+

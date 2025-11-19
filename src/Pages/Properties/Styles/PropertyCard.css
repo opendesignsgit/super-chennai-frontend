@@ -1,0 +1,39 @@
+.scrollWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.scrollContainer {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollBtn {
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: #a44294;
+  border-radius: 50%;
+  padding: 2px 2px;
+  cursor: pointer;
+  color:#ffff;
+}
+
+
+
+.scrollBtn.right {
+  right: 15px;
+}
+
+/* .scrollBtn.left {
+  right: 15px;
+} */
+
+.cardpropertyslide {
+    flex-shrink: 0;
+}

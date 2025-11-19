@@ -8,11 +8,8 @@
 
 
   position: sticky;
-  /* Makes it stick */
-  top: 10px;
-  /* Distance from top of viewport */
+  top: 140px;
   align-self: flex-start;
-  /* Prevents stretching in flex layout */
 }
 
 .filters-header {

@@ -48,7 +48,6 @@ const PropertiesPage = () => {
       } else if (Array.isArray(prev[name])) {
         return { ...prev, [name]: toggleArrayValue(prev[name], value) };
       } else {
-        // fallback in case it’s an object you didn’t expect
         return { ...prev, [name]: value };
       }
     });
@@ -98,7 +97,7 @@ const PropertiesPage = () => {
       <div className="bg-[#f4f5f7]">
         <div className="container max-w-7xl mx-auto px-4 mainConiatinerPropertyList">
           {/* Filters + Properties */}
-          <div
+          <div 
             className={`${
               useTopFilter ? "flex flex-col gap-6" : "flex flex-row gap-6"
             }`}

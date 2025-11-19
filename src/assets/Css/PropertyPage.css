@@ -8,9 +8,9 @@
   border-radius: 8px;
   margin-bottom: 10px;
 
-  position: sticky; /* Makes it stick */
-  top: 20px; /* Distance from top of viewport */
-  align-self: flex-start; /* Prevents stretching in flex layout */
+  position: sticky; 
+  top: 20px; 
+  align-self: flex-start; 
 }
 
 .PropertiesCardsContainer {
@@ -63,7 +63,7 @@
 }
 
 .selcetedapplied {
-  font-size: 16px;
+  font-size: 161px;
   line-height: 24px;
   font-weight: 600;
   color: #091e42;
@@ -211,7 +211,6 @@
 
 .aboutPlotsSize {
   display: flex;
-
   margin-top: 15px;
 }
 .aboutPlotsSize div {
@@ -227,7 +226,7 @@
 
 .aboutPlotsSize div span:first-child {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: #a44294;
   margin-bottom: 4px;
@@ -360,7 +359,7 @@
 }
 .propertyViewButton {
   display: flex;           
-  justify-content: center; 
+  /* justify-content: center;  */
   margin: 10px 0;         
 }
 
@@ -475,4 +474,13 @@
   width: 30px;
   height: 17px;
   margin-top: 5px;
+}
+
+
+@media (max-width:400px){
+
+
+.mainConiatinerPropertyList .flex {
+  flex-direction: column;
+}
 }

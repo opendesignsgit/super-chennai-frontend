@@ -265,7 +265,7 @@ const PropertyDetailPage = () => {
   };
 
   // Basic property info SILA FILEDS IF NEED NA USE PANAIKALAM
-  const location = property?.location?.label || "N/A";
+  const location = property?.location?.label || "";
   const status = property?.society?.possessionStatus || null;
   const title = property?.title || "Untitled Property";
   const purpose = property?.purpose || "sale";

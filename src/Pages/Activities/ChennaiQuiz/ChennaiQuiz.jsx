@@ -15,10 +15,10 @@ export default function ChennaiQuiz() {
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>  Superchennai Quiz</h3>
+            <h3> Super chennai Quiz</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/superchennai-quiz"> Superchennai Quiz</Link>
+              <Link to="/superchennai-quiz"> Super chennai Quiz</Link>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function ChennaiQuiz() {
           <div className="EventContBox flex flex-wrap">
             {/* Left Side */}
             <div className="EventLeft">
-              <h2>SuperChennai Quiz</h2>
+              <h2>Super Chennai Quiz</h2>
 
               <div className="EventBanImg">
                 <img src="/images/events/superchennai-quiz-inner-2.jpg" />
@@ -104,11 +104,10 @@ export default function ChennaiQuiz() {
             </div>
 
             {/* Right Side */}
-            <div className="EventRight">
+            {/* <div className="EventRight">
               <div className="evderibox mt-[70px]">
                 <div className="evderListbox">
                   <div className="evderViewbox">
-                    {/* Event Title */}
                     <h3 className="text-xl font-semibold text-[#a44294] mb-4">
                       Super Chennai Quiz
                     </h3>
@@ -147,6 +146,80 @@ export default function ChennaiQuiz() {
                     </button>
                   </Link>
                 </div>
+              </div>
+            </div> */}
+
+            <div className="EventRight w-full lg:w-[320px] bg-white rounded-lg shadow p-5 h-max">
+              <h4 className="text-lg font-semibold mb-3">Super Chennai Quiz</h4>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 border-b border-gray-100 pb-2">
+                  <img
+                    src="/images/events/calendar.png"
+                    alt="calendar"
+                    className="w-5 h-5 object-contain"
+                  />
+                  <p className="text-gray-700 text-sm">
+                    Sunday, December 7, 2025
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-3 border-b border-gray-100 pb-2">
+                  <img
+                    src="/images/events/time.png"
+                    alt="time"
+                    className="w-5 h-5 object-contain"
+                  />
+                  <p className="text-gray-700 text-sm">2:00 PM</p>
+                </div>
+
+                <div className="flex items-center gap-3 border-b border-gray-100 pb-2">
+                  <img
+                    src="/images/events/location.png"
+                    alt="location"
+                    className="w-5 h-5 object-contain"
+                  />
+                  <p className="text-gray-700 text-sm">
+                    Sir Mutha Venkatasubba Rao Concert Hall, Chennai
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-3 border-b border-gray-100 pb-2">
+                  <img
+                    src="/images/events/age_limit.png"
+                    alt="host"
+                    className="w-5 h-5 object-contain"
+                  />
+                  <p className="text-gray-700 text-sm">
+                    Hosted by: Nawabzada Mohammed Asif Ali
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-3 border-b border-gray-100 pb-2">
+                  <img
+                    src="/images/events/language.png"
+                    alt="teams"
+                    className="w-5 h-5 object-contain"
+                  />
+                  <p className="text-gray-700 text-sm">Teams: 2 members</p>
+                </div>
+
+                <div className="flex items-center gap-3 border-b border-gray-100 pb-2">
+                  <img
+                    src="/images/events/genre.png"
+                    alt="fee"
+                    className="w-5 h-5 object-contain"
+                  />
+                  <p className="text-gray-700 text-sm">Fee: ₹199 per team</p>
+                </div>
+              </div>
+
+              <div className="flex justify-center mt-6">
+                <a href="/quizform">
+                  <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg font-medium transition capitalize">
+                    book now
+                  </button>
+                </a>
               </div>
             </div>
           </div>

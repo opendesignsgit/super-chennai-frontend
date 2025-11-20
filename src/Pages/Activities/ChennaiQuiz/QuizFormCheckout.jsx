@@ -40,7 +40,7 @@ export default function TicketCheckout() {
     const stored = JSON.parse(localStorage.getItem("carRallyUser") || "{}");
     const { name, name2, email, phone, message } = stored;
 
-    if (!name || !name2 || !email || !phone || !message) {
+    if (!name || !name2 || !email || !phone) {
       toast.error("Missing required user details.");
       setIsSubmitting(false);
       return;
@@ -77,7 +77,7 @@ export default function TicketCheckout() {
 
         setTimeout(() => handleClose(), 2000);
         setTimeout(() => {
-          navigate("/carthankyou");
+          navigate("/quizthankyou");
         }, 1000);
       } else {
         toast.error("Failed to submit payment.");
@@ -123,9 +123,9 @@ export default function TicketCheckout() {
 
       <ToastContainer position="top-center" autoClose={3000} hideProgressBar />
 
-      <div className="checkoutForm min-h-screen bg-gray-100 p-4 md:p-10 h-screen flex items-center">
+      <div className="checkoutForm min-h-screen bg-gray-100 p-4 md:p-10 h-screen flex items-center cursor-pointer">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white rounded-lg shadow p-6">
+          {/* <div className="bg-white rounded-lg shadow p-6">
             <h3 className="text-sm text-gray-600 mb-4">
               Please follow the instructions below
             </h3>
@@ -156,24 +156,23 @@ export default function TicketCheckout() {
                 Note: Ticket will not be issued without uploading payment proof.
               </h5>
             </div>
-          </div>
+          </div> */}
 
-          <div className="bg-white rounded-lg shadow p-6">
+          {/* <div className="bg-white rounded-lg shadow p-6">
             <div className="border rounded-md p-4 mb-4">
               <div>
                 <h3 className="font-semibold">Event Details</h3>
 
-                <p className="text-sm text-gray-600 mt-1">
-                  Teams: 2 members | Fee: ₹199 per team
-                </p>
+                <strong>Super Chennai Quiz</strong>
 
                 <p className="text-sm text-gray-700 mt-3">
-                  Super Chennai Quiz <br />
+                  Hosted by: Nawabzada Mohammed Asif Ali, Dewan to the Prince of
+                  Arcot
+                  <br />
                   Date: December 7th <br />
                   Time: 2:00 PM <br />
                   Venue: Sir Mutha Venkatasubba Rao Concert Hall, Chennai <br />
-                  Hosted by: Nawabzada Mohammed Asif Ali, Dewan to the Prince of
-                  Arcot
+                  Teams: 2 members | Fee: ₹199 per team <br />
                 </p>
 
                 <p className="text-sm text-gray-700 mt-2">
@@ -188,7 +187,89 @@ export default function TicketCheckout() {
             </div>
             <button
               onClick={handleShow}
-              className="w-full bg-rose-500 text-white text-sm font-semibold py-2 rounded hover:bg-rose-600 transition"
+              className="w-full bg-rose-500 text-white text-sm font-semibold py-2 rounded hover:bg-rose-600 transition cursor-pointer"
+            >
+              Proceed to Pay
+            </button>
+          </div> */}
+
+          <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+            <h3 className="text-sm text-gray-600 mb-4">
+              Please follow the instructions below
+            </h3>
+
+            <div className="bg-blue-50 p-5 rounded-lg text-sm text-gray-800 leading-relaxed border border-blue-200">
+              <h4 className="font-semibold mb-3 text-blue-900">
+                Super Chennai Quiz – Event Details | GPay Payment Instructions
+              </h4>
+
+              <div className="space-y-3">
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Step 1: Scan to Pay via GPay
+                  </p>
+                  <p className="text-gray-700">
+                    Scan the QR code below using Google Pay to pay ₹199 per car.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="font-semibold text-gray-900">
+                    Step 2: Upload Payment Screenshot
+                  </p>
+
+                  <ol className="list-decimal ml-5 mt-1 space-y-1 text-gray-700">
+                    <li>Click ‘Continue’ on this page.</li>
+                    <li>Upload a screenshot of your successful payment.</li>
+                    <li>Once verified, your ticket will be emailed.</li>
+                  </ol>
+                </div>
+
+                <div className="pt-3 border-t border-blue-200">
+                  <p className="font-medium text-red-600">
+                    Note: Ticket will not be issued without uploading payment
+                    proof.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+            <div className="border border-gray-200 rounded-xl p-5 mb-5 bg-gray-50">
+              <div>
+                <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                  Event Details
+                </h3>
+
+                <strong className="block text-xl text-gray-900 mb-2">
+                  Super Chennai Quiz
+                </strong>
+
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <strong>Hosted by:</strong> Nawabzada Mohammed Asif Ali, Dewan
+                  to the Prince of Arcot
+                  <br />
+                  <p className="text-sm text-gray-800 mt-3 font-medium">
+                    <strong>Date:</strong> Sunday, December 7, 2025
+                  </p>
+                  <strong>Time:</strong> 2:00 PM <br />
+                  <strong>Venue:</strong> Sir Mutha Venkatasubba Rao Concert
+                  Hall, Chennai <br />
+                  <strong>Teams:</strong> 2 members | Fee: ₹199 per team <br />
+                </p>
+              </div>
+
+              <div className="flex justify-between text-base font-semibold text-gray-800 mt-4 pt-4 border-t border-gray-300">
+                <span>Amount to Pay</span>
+                <span className="text-rose-600 font-bold">₹199.00</span>
+              </div>
+            </div>
+
+            <button
+              onClick={handleShow}
+              className="w-full bg-rose-600 text-white text-sm font-semibold py-3 rounded-xl 
+    hover:bg-rose-700 active:scale-[0.98] transition-all duration-200 shadow-md"
             >
               Proceed to Pay
             </button>

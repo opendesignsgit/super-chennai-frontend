@@ -217,7 +217,7 @@ import CarRally from "./Pages/CarRally";
 import CarRallyForm from "./Pages/CarRallyForm";
 import TicketCheckout from "./Pages/CarryFormCheckout";
 import CarThankyou from "./Pages/CarThankyou";
-
+import QuizThankyou from "./Pages/Activities/ChennaiQuiz/QuizThankyou";
 
 import EventFunction from "./Pages/EventFunction";
 import KiteFestivalDay3 from "./Pages/KiteFestivalDay3";
@@ -1249,7 +1249,7 @@ function App() {
           />
 
           <Route path="/thankyou" element={<Thankyou />} />
-          <Route path="/carthankyou" element={<CarThankyou />} />
+          <Route path="/quizthankyou" element={<QuizThankyou />} />
 
           {/* MexicanCuisineinChennai */}
 

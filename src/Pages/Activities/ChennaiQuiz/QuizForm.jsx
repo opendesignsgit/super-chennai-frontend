@@ -32,8 +32,8 @@ export default function QuizForm() {
     if (!/^\S+@\S+\.\S+$/.test(email)) return toast.error("Invalid Email");
     if (!/^\d{10}$/.test(mobile))
       return toast.error("Mobile number must be 10 digits");
-    if (message.trim().length < 5)
-      return toast.error("Address is too short");
+    // if (message.trim().length < 5)
+    //   return toast.error("Address is too short");
 
     const formPayload = {
       name,
@@ -60,7 +60,7 @@ export default function QuizForm() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>SuperChennai Quiz</h3>
+            <h3>Super Chennai Quiz</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
               <Link to="/superchennai-quiz">(Quiz)</Link>
@@ -131,7 +131,7 @@ export default function QuizForm() {
               onChange={handleChange}
               className="w-full border border-gray-300 rounded px-4 py-2"
               rows="4"
-              required
+             
             ></textarea>
 
             {/* Button */}

@@ -10078,8 +10078,7 @@ export const prideofchennaidata = [
     profession: "Chennai, Tamil Nadu.",
     bornPlace: "Pudukottai, Tamil Nadu",
     natureofWork: "Oncologist, Chairperson of Cancer Institute (WIA), Chennai",
-    about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.   Voluptatibus, debitis.",
+    about: "",
     knowmoreLink: "",
     popupContent: [
       <>
@@ -10121,6 +10120,142 @@ export const prideofchennaidata = [
 
     category: "Medicine / Oncology",
   },
+
+  //#################### NEW DR ADDED  ######################
+
+  {
+    image: "/images/pride-of-chennai/prathap-c.-reddy.png",
+    name: "Dr. Prathap C. Reddy",
+    profession: "Founder, Apollo Hospitals",
+    bornPlace: "Tiruttani, Tamil Nadu",
+    natureofWork: "Founder & Visionary Leader of Apollo Hospitals",
+    about: "",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Founded Apollo Hospitals, creating one of India’s largest and most
+        trusted healthcare networks.
+      </>,
+      <>
+        Pioneered telemedicine initiatives to bring advanced healthcare to
+        remote and rural regions.
+      </>,
+      <>
+        Introduced the Master Health Check program, promoting preventive
+        healthcare across India.
+      </>,
+      <>
+        Led numerous philanthropic initiatives in child health, cancer care, and
+        rural healthcare.
+      </>,
+      <>
+        Honored with prestigious awards such as Padma Bhushan and Padma
+        Vibhushan for contributions to medicine.
+      </>,
+    ],
+    category: "Medicine / Oncology",
+  },
+
+  {
+    image: "/images/pride-of-chennai/badrinath.png",
+    name: "Dr. S. S. Badrinath",
+    profession: "Founder, Sankara Nethralaya",
+    bornPlace: "Chennai, Tamil Nadu",
+    natureofWork:
+      "Founder & Chairman Emeritus of Sankara Nethralaya.",
+    about: "",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Founded Sankara Nethralaya, establishing a world-class eye hospital
+        offering high-quality care.
+      </>,
+      <>
+        Advocated for affordable and accessible treatment, ensuring free or
+        subsidized care for thousands of patients.
+      </>,
+      <>
+        Developed ophthalmology training programs and fellowships to nurture
+        future specialists.
+      </>,
+      <>
+        Advanced research in ophthalmology, contributing vital knowledge and
+        medical innovation.
+      </>,
+      <>
+        Recipient of Padma Shri and Padma Bhushan for outstanding medical
+        contributions.
+      </>,
+    ],
+    category: "Medicine / Oncology",
+  },
+
+  {
+    image: "/images/pride-of-chennai/Dr.-V.-Mohan.png",
+    name: "Dr. V. Mohan",
+    profession: "Diabetologist & Research Leader",
+    bornPlace: "Chennai, Tamil Nadu",
+    natureofWork:
+      "Leading Diabetologist and Chairman of Mohan’s Diabetes Centre",
+    about: "",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Founded Dr. Mohan’s Diabetes Specialities Centre and the Madras Diabetes
+        Research Foundation.
+      </>,
+      <>
+        Conducted pioneering research in diabetes epidemiology, genomics, and
+        diagnostic criteria.
+      </>,
+      <>
+        Developed Mohan’s criteria for a type of pancreatic diabetes, improving
+        clinical diagnosis.
+      </>,
+      <>
+        Provided free or subsidized treatment for underprivileged diabetic
+        patients.
+      </>,
+      <>
+    Awarded prestigious honors such as Padma Shri and Dr. B.C. Roy National Award for excellence in medicine.
+
+      </>,
+    ],
+    category: "Medicine / Oncology",
+  },
+
+  {
+    image: "/images/pride-of-chennai/Dr.-T.S.-Chandrasekar.png",
+    name: "Dr. T. S. Chandrasekar",
+    profession: "Gastroenterology Expert, Founder of MedIndia Hospitals",
+    bornPlace: "Tamil Nadu, India",
+    natureofWork: "Founder & Chairman, MedIndia Hospitals Gastroenterologist",
+    about: "",
+    knowmoreLink: "",
+    popupContent: [
+      <>
+        Founded MedIndia Hospitals specializing in gastroenterology and advanced
+        GI endoscopy.
+      </>,
+      <>
+        Performed over 23,000 endoscopic procedures, establishing expertise in
+        the field.
+      </>,
+      <>
+        Created teaching tools and training material for medical colleges across
+        India.
+      </>,
+      <>
+       Held national and international leadership roles, contributing to global gastroenterology standards and research
+      </>,
+      <>
+       Recognized with honors such as Padma Shri and Tamil Nadu Best Doctor Award for outstanding medical service.
+      </>,
+    ],
+    category: "Medicine / Oncology",
+  },
+
+  //################### NEW END ############
 
   {
     image: "/images/pride-of-chennai/ms-subbulakshmi.jpg",

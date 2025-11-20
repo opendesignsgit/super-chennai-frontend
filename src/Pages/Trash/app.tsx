@@ -1286,7 +1286,7 @@ function App() {
 
           {/* <Route path="/eventsdetails/:id" element={<EventsDetails />} /> */}
           <Route path="/events-in-chennai/:url" element={<EventsDetails />} />
-           <Route path="/superchennai-quiz" element={<ChennaiQuiz />} />                  
+           <Route path="/fun-quiz-competition-trivia-night" element={<ChennaiQuiz />} />                  
            <Route path="/quizform" element={<QuizForm />} />
            <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
            

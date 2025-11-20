@@ -27,7 +27,8 @@ export default function SuperChennaiEvents() {
             <div className="accodoamationBannerText">
               <h3>Superchennai Contest</h3>
               <div className="breadCrum">
-                <Link to="/">Home</Link> - <a href="">Superchennai Contest</a>{" "}
+                <Link to="/">Home</Link> -{" "}
+                <a href="">Superchennai Contest</a>{" "}
               </div>
             </div>
           </div>
@@ -78,7 +79,28 @@ export default function SuperChennaiEvents() {
             <div className="flex superchennaiEventsMainContainer">
               {/* Left */}
 
-              <a className="superchennaiEventsSection" href="/reimagine-chennai-AI-art-challenge">
+
+                            <a
+                className="superchennaiEventsSection"
+                href="/fun-quiz-competition-trivia-night"
+              >
+                <div
+                  className="flex flex-col items-center text-center "
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/events/quiz-superchennai-inner.jpg"
+                    alt="Right Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">SuperChennai Quiz</p>
+                </div>
+              </a>
+
+              <a
+                className="superchennaiEventsSection"
+                href="/reimagine-chennai-AI-art-challenge"
+              >
                 <div
                   className="flex flex-col items-center text-center "
                   style={{ overflow: "hidden" }}
@@ -126,20 +148,6 @@ export default function SuperChennaiEvents() {
               </a>
 
 
-
-                 <a className="superchennaiEventsSection" href="/superchennai-quiz">
-                <div
-                  className="flex flex-col items-center text-center "
-                  style={{ overflow: "hidden" }}
-                >
-                  <img
-                    src="/images/events/quiz-superchennai-inner.jpg"
-                    alt="Right Image"
-                    className="rounded-xl mb-3"
-                  />
-                  <p className="text-lg font-medium">SuperChennai Quiz</p>
-                </div>
-              </a>
             </div>
           </div>
         </section>

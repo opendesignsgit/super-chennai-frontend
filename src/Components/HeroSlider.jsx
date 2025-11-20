@@ -23,7 +23,7 @@ const slides = [
 
     {
     type: "image",
-    link: "/superchennai-quiz",
+    link: "/fun-quiz-competition-trivia-night",
     image: "/images/HomePage-Images/superchennai-quiz.jpg",
     image1: "/images/HomePage-Images/superchennai-quiz-b (2).jpg",
     title: "Superchennai-Quiz",

@@ -1,24 +1,49 @@
 import { useEffect, useState } from "react";
 import { useLocation, useParams, useNavigate, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function ChennaiQuiz() {
   return (
     <>
       {/* Banner Section */}
+
+      <Helmet>
+        <title>
+          Quiz Competition | The Super Chennai Quiz | Fun Trivia Night
+        </title>
+        <meta
+          name="description"
+          content=" Come to The Super Chennai Quiz — a fun quiz competition packed with trivia, live music, surprises and big prizes. Teams, laughter and nonstop excitement await! "
+        />
+        <link rel="canonical" href="/fun-quiz-competition-trivia-night" />
+      </Helmet>
+      
       <section className="accaodomationBannerSection">
         <div>
+          {/* Desktop Image */}
           <img
-            className="eventsCalenderIamge"
-            src="  /images/events/superchennai-quiz-inner.jpg"
-            alt=""
-          />{" "}
+            className="eventsCalenderIamge hidden sm:block"
+            src="/images/events/superchennai-quiz-inner.jpg"
+            alt="Super Chennai Quiz"
+          />
+
+          {/* Mobile Image */}
+          <img
+            className="eventsCalenderIamge block sm:hidden"
+            src="/images/events/superchennai-quiz-mobile.jpg"
+            alt="Super Chennai Quiz Mobile"
+          />
         </div>
+
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3> Super chennai Quiz</h3>
+            <h3>Super Chennai Quiz</h3>
+
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/superchennai-quiz"> Super chennai Quiz</Link>
+              <Link to="/fun-quiz-competition-trivia-night">
+                Super Chennai Quiz
+              </Link>
             </div>
           </div>
         </div>
@@ -104,50 +129,6 @@ export default function ChennaiQuiz() {
             </div>
 
             {/* Right Side */}
-            {/* <div className="EventRight">
-              <div className="evderibox mt-[70px]">
-                <div className="evderListbox">
-                  <div className="evderViewbox">
-                    <h3 className="text-xl font-semibold text-[#a44294] mb-4">
-                      Super Chennai Quiz
-                    </h3>
-
-                    <InfoRow
-                      icon="/images/events/calendar.png"
-                      label="Date: December 7th"
-                    />
-
-                    <InfoRow
-                      icon="/images/events/time.png"
-                      label="Time: 2:00 PM"
-                    />
-
-                    <InfoRow
-                      icon="/images/events/location.png"
-                      label="Venue: Sir Mutha Venkatasubba Rao Concert Hall, Chennai"
-                    />
-
-                    <InfoRow
-                      icon="/images/events/age_limit.png"
-                      label="Hosted by: Nawabzada Mohammed Asif Ali, Dewan to the Prince of Arcot"
-                    />
-
-                    <InfoRow
-                      icon="/images/events/language.png"
-                      label="Teams: 2 members | Fee: ₹199 per team"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex justify-center pb-[30px]">
-                  <Link to="/quizform">
-                    <button className="cursor-pointer bg-[#a44294] mt-4 text-white px-4 py-2 rounded-md font-poppins font-medium">
-                      Book Now
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div> */}
 
             <div className="EventRight w-full lg:w-[320px] bg-white rounded-lg shadow p-5 h-max">
               <h4 className="text-lg font-semibold mb-3">Super Chennai Quiz</h4>

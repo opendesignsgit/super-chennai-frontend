@@ -498,7 +498,7 @@ function App() {
             footerReached ? "footerreached" : ""
           }`}
         >
-          <a href="/superchennai-quiz">
+          <a href="/fun-quiz-competition-trivia-night">
             <img
               src="/images/quiz-icons.png"
               alt="artificial intelligence challenge"
@@ -1131,7 +1131,7 @@ function App() {
             path="/superchennai-events-details/:url"
             element={<EventsDetails />}
           />
-          <Route path="/superchennai-quiz" element={<ChennaiQuiz />} />
+          <Route path="/fun-quiz-competition-trivia-night" element={<ChennaiQuiz />} />
           <Route path="/quizform" element={<QuizForm />} />
           <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
 

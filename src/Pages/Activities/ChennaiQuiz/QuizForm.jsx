@@ -63,7 +63,7 @@ export default function QuizForm() {
             <h3>Super Chennai Quiz</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/superchennai-quiz">(Quiz)</Link>
+              <Link to="/fun-quiz-competition-trivia-night">(Quiz)</Link>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function QuizForm() {
           <ToastContainer />
 
           <h2 className=" text-center">
-            Register
+            Registration 
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -82,7 +82,7 @@ export default function QuizForm() {
             <input
               type="text"
               name="name"
-              placeholder="Participate 1"
+              placeholder="Participant  1"
               value={formData.name}
               onChange={handleChange}
               className="w-full border border-gray-300 rounded px-4 py-2"
@@ -93,7 +93,7 @@ export default function QuizForm() {
             <input
               type="text"
               name="name2"
-              placeholder="Participate 2"
+              placeholder="Participant  2"
               value={formData.name2}
               onChange={handleChange}
               className="w-full border border-gray-300 rounded px-4 py-2"

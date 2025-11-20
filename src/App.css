@@ -66,20 +66,7 @@
 } */
 
 
-.quizsuperchennai {
-  top: 100px;
-}
 
-.carquizbanner {
-  /* margin-top: 100px; */
-}
-
-
-.carquizbanner img {
-  width: 100%;
-  margin-top: 19%;
-  height: auto !important;
-}
 
 @media (max-width: 700px) {
   .nammaStorieslink {
@@ -90,10 +77,26 @@
     right: 18px;
     top: 38%;
   }
+  .quizsuperchennai {
+  top: 100px;
 }
 
 
+}
 
+
+@media (max-width:640px) {
+.carquizbanner {
+  /* margin-top: 100px; */
+}
+
+
+.carquizbanner img {
+  width: 100%;
+  margin-top: 19%;
+  height: auto !important;
+}
+}
 
 .clcboxItemss .clcboxICont p.linkpara a img {
   display: none;

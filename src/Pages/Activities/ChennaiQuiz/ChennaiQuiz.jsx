@@ -9,16 +9,16 @@ export default function ChennaiQuiz() {
 
       <Helmet>
         <title>
-          Quiz Competition | The Super Chennai Quiz | Fun Trivia Night
+         Test Your Smarts - Take the Ultimate Fun Super Chennai Quiz
         </title>
         <meta
           name="description"
-          content=" Come to The Super Chennai Quiz — a fun quiz competition packed with trivia, live music, surprises and big prizes. Teams, laughter and nonstop excitement await! "
+          content="The Super Chennai Quiz is here on Dec 7, 2025! Test your knowledge across sports, music, food, and Chennai. Exciting prizes await—team up and enjoy an epic evening."
         />
         <link rel="canonical" href="/fun-quiz-competition-trivia-night" />
       </Helmet>
       
-      <section className="accaodomationBannerSection">
+      <section className="accaodomationBannerSection carquizbanner">
         <div>
           {/* Desktop Image */}
           <img
@@ -29,8 +29,8 @@ export default function ChennaiQuiz() {
 
           {/* Mobile Image */}
           <img
-            className="eventsCalenderIamge block sm:hidden"
-            src="/images/events/superchennai-quiz-mobile.jpg"
+            className=" block sm:hidden"
+            src="/images/events/superchennai-quiz-mobile2.jpg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>

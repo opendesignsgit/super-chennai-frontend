@@ -101,7 +101,7 @@ export default function TicketCheckout() {
         <div>
           <img
             className="eventsCalenderIamge"
-            src="/images/events/Carrallybanner.jpg"
+            src="/images/events/superchennai-quiz-inner.jpg"
             alt=""
           />
         </div>
@@ -113,7 +113,7 @@ export default function TicketCheckout() {
                 Home
               </Link>
               <span>-</span>
-              <Link to="/events" className="text-white hover:underline">
+              <Link to="/quiz-checkout" className="text-white hover:underline">
                 CheckOut{" "}
               </Link>
             </div>

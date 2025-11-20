@@ -498,24 +498,15 @@ function App() {
             footerReached ? "footerreached" : ""
           }`}
         >
-          <a href="/reimagine-chennai-AI-art-challenge">
+          <a href="/superchennai-quiz">
             <img
-              src="/images/ai-icons.png"
+              src="/images/quiz-icons.png"
               alt="artificial intelligence challenge"
             />
           </a>
         </div>
 
-        {/* <div
-          ref={stickyRef}
-          className={`super-chennai-contest pointcastSticky nammaStorieslink ${
-            footerReached ? "footerreached" : ""
-          }`}
-        >
-          <a href="/super-chennai-quiz">
-            <img src="/images/quiz-icon.png" alt="super chennai quiz" />
-          </a>
-        </div> */}
+ 
 
         <div
           ref={stickyRef}

@@ -15,10 +15,10 @@ export default function ChennaiQuiz() {
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>  Superchernnai Quiz</h3>
+            <h3>  Superchennai Quiz</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/events"> Superchernnai Quiz</Link>
+              <Link to="/superchennai-quiz"> Superchennai Quiz</Link>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function ChennaiQuiz() {
           <div className="EventContBox flex flex-wrap">
             {/* Left Side */}
             <div className="EventLeft">
-              <h2>Super Chennai Quize</h2>
+              <h2>SuperChennai Quiz</h2>
 
               <div className="EventBanImg">
                 <img src="/images/events/superchennai-quiz-inner-2.jpg" />
@@ -38,7 +38,7 @@ export default function ChennaiQuiz() {
 
               <div className="ebanimgbtn flex justify-between items-center mb-[5vh]">
                 <div className="ebbmgiL flex gap-2">
-                  <h5> Car Treasure Hunt</h5>
+                  <h5> Quiz </h5>
                 </div>
               </div>
 

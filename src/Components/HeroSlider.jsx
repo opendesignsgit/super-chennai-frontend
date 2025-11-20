@@ -25,7 +25,7 @@ const slides = [
     type: "image",
     link: "/superchennai-quiz",
     image: "/images/HomePage-Images/superchennai-quiz.jpg",
-    image1: "/images/HomePage-Images/superchennai-quiz-b.jpg",
+    image1: "/images/HomePage-Images/superchennai-quiz-b (2).jpg",
     title: "Superchennai-Quiz",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },

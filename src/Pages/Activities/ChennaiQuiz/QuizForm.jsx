@@ -53,17 +53,17 @@ export default function QuizForm() {
         <div>
           <img
             className="eventsCalenderIamge"
-            src="/images/events/Carrallybanner.jpg"
+            src="/images/events/superchennai-quiz-inner.jpg"
             alt=""
           />
         </div>
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Chennai Quiz Games</h3>
+            <h3>SuperChennai Quiz</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/events">(Quiz)</Link>
+              <Link to="/superchennai-quiz">(Quiz)</Link>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function QuizForm() {
           <ToastContainer />
 
           <h2 className="text-2xl font-bold mb-6 text-center text-purple-700">
-            Register quiz game
+            Register
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">

@@ -32,8 +32,8 @@ const slides = [
   {
     type: "image",
     link: "/icon-of-the-oct-month-2025",
-    image: "/images/HomePage-Images/icon-of-the-month-banner.jpg",
-    image1: "/images/HomePage-Images/icon-of-the-month-mobile-banner.jpg",
+    image: "/images/HomePage-Images/chinmayi-icon-of-month-desktop.jpg",
+    image1: "/images/HomePage-Images/chinmayi-icon-of-month-mobile.jpg",
     title: "Icon of the month in chennai",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },

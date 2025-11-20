@@ -123,7 +123,7 @@ export default function TicketCheckout() {
 
       <ToastContainer position="top-center" autoClose={3000} hideProgressBar />
 
-      <div className="checkoutForm min-h-screen bg-gray-100 p-4 md:p-10 h-screen flex items-center cursor-pointer">
+      <div className="checkoutForm min-h-screen bg-gray-100 p-4 md:p-10 h-screen flex items-center">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* <div className="bg-white rounded-lg shadow p-6">
             <h3 className="text-sm text-gray-600 mb-4">
@@ -269,7 +269,7 @@ export default function TicketCheckout() {
             <button
               onClick={handleShow}
               className="w-full bg-rose-600 text-white text-sm font-semibold py-3 rounded-xl 
-    hover:bg-rose-700 active:scale-[0.98] transition-all duration-200 shadow-md"
+    hover:bg-rose-700 active:scale-[0.98] transition-all duration-200 shadow-md cursor-pointer"
             >
               Proceed to Pay
             </button>
@@ -353,7 +353,7 @@ export default function TicketCheckout() {
               {!showForm && (
                 <button
                   onClick={handleContinue}
-                  className="w-full bg-[#a44294] hover:bg-[#8a357d] text-white py-2 rounded mt-5"
+                  className="w-full bg-[#a44294] hover:bg-[#8a357d] text-white py-2 rounded mt-5 cursor-pointer"
                 >
                   Continue
                 </button>

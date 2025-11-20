@@ -73,7 +73,7 @@ export default function QuizForm() {
         <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white border um-form-section">
           <ToastContainer />
 
-          <h2 className="text-2xl font-bold mb-6 text-center text-purple-700">
+          <h2 className=" text-center">
             Register
           </h2>
 
@@ -138,7 +138,7 @@ export default function QuizForm() {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full py-2 px-4 rounded text-white font-semibold transition-all ${
+              className={`w-full cursor-pointer py-2 px-4 rounded text-white font-semibold transition-all ${
                 loading
                   ? "!bg-[#995098] cursor-not-allowed"
                   : "!bg-[#995098] hover:bg-purple-700"

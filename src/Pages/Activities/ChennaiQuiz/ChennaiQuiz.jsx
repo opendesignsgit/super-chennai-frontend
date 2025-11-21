@@ -9,7 +9,7 @@ export default function ChennaiQuiz() {
 
       <Helmet>
         <title>
-         Test Your Smarts - Take the Ultimate Fun Super Chennai Quiz
+          Test Your Smarts - Take the Ultimate Fun Super Chennai Quiz
         </title>
         <meta
           name="description"
@@ -17,7 +17,7 @@ export default function ChennaiQuiz() {
         />
         <link rel="canonical" href="/fun-quiz-competition-trivia-night" />
       </Helmet>
-      
+
       <section className="accaodomationBannerSection carquizbanner">
         <div>
           {/* Desktop Image */}
@@ -125,6 +125,18 @@ export default function ChennaiQuiz() {
                   Register now and get ready for a quiz that’s equal parts fun,
                   competitive, and unforgettable.
                 </p>
+
+                {/* Powered By Section */}
+                <div className="mt-10 flex flex-col sm:flex-row items-center sm:justify-start gap-3 border-t border-gray-200 pt-6">
+                  <span className="text-gray-500 text-sm sm:text-base">
+                    Powered by
+                  </span>
+                  <img
+                    src="/images/events/VGN-Logo.jpg"
+                    alt="Company Logo"
+                    className="h-12 sm:h-16 object-contain" // larger logo
+                  />
+                </div>
               </div>
             </div>
 

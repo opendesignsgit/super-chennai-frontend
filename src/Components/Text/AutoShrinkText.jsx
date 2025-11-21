@@ -16,7 +16,7 @@ const AutoShrinkText = ({
   const fontSize = Math.max(minSize, baseSize * ratio * 1.1);
 
   return (
-    <h3 // prasanth Told from SEO TEAM
+    <h1 // prasanth Told from SEO TEAM
       className={`autoShrinkText ${className}`}
       // style={{
       //   width,
@@ -38,7 +38,7 @@ const AutoShrinkText = ({
       title={text}
     >
       {text}
-    </h3>
+    </h1>
   );
 };
 

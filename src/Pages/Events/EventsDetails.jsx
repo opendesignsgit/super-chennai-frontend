@@ -7,7 +7,7 @@ import AutoShrinkText from "../../Components/Text/AutoShrinkText";
 import { PropertyContent } from "../../Pages/Properties/Components/Properties/ritchText";
 import { formatEventTime } from "./Utils/formatTime";
 import FormattedEventDates from "./Utils/dateFormatter";
-
+import EventDetailpageSkeleton from "./Components/Loader/DetailpageSkelton"
 export default function EventsDetails() {
   const { slug } = useParams();
   const { event, loading } = useEventBySlug(slug);
@@ -16,21 +16,31 @@ export default function EventsDetails() {
 
   console.log("EventData:", event);
 
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-[50vh] text-gray-600">
-        Loading event details...
-      </div>
-    );
-  }
+if (loading) {
+  return <EventDetailpageSkeleton />;
+}
 
-  if (!event) {
-    return (
-      <div className="flex justify-center items-center h-[50vh] text-gray-600">
-        Event not found.
-      </div>
-    );
-  }
+
+if (!event) {
+  return (
+    <div className="flex flex-col items-center justify-center py-20 px-4 text-center m-10">
+     
+      <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+        Event Not Found
+      </h2>
+      <p className="text-gray-500 text-sm max-w-md mb-6">
+        The event you are looking for might have been removed, canceled, or the link is incorrect. Please check other events or return to the homepage.
+      </p>
+      <a
+        href="/events"
+        className="px-6 py-2 rounded-full bg-pink-600 text-white font-medium hover:bg-pink-700 transition"
+      >
+        Browse Events
+      </a>
+    </div>
+  );
+}
+
 
   const main = event.event || {};
   const meta = event.meta || {};
@@ -161,13 +171,13 @@ export default function EventsDetails() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#6a1b5a]/90 via-[#4a1440]/85 to-[#3a1033]/95"></div>
       </section>
 
-      {/* 🟣 Event Details Section */}
+      {/*  Event Details Section */}
       <section className="EventsBanSec py-12 bg-gray-50">
         <div className="container max-w-6xl mx-auto px-4 md:px-8">
           <div className="EventContBox flex flex-col lg:flex-row gap-8">
             {/* LEFT SIDE */}
             <div className="EventLeft flex-1">
-              <h1>{title}</h1>
+              <h2>{title}</h2>
 
               {(singerName || artistDesignation) && (
                 <p className="text-pink-700 text-sm mb-2">
@@ -205,7 +215,7 @@ export default function EventsDetails() {
               {/* About Section */}
               <div className="EventContBox mb-10">
                 <h3 className="text-lg font mb-2">About The Event</h3>
-                <div className="text-gray-500 text-sm">
+                <div className="text-gray-700 text-sm">
                   <PropertyContent content={event.content || ""} />
                 </div>
               </div>

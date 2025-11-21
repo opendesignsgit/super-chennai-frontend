@@ -110,7 +110,7 @@ const EventsPage = () => {
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Events</h3>
+            <h3>Chennai Events</h3>
             <div className="breadCrum">
               <a href="/">Home</a> - <a href="/events">Events</a>
             </div>

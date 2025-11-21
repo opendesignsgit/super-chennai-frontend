@@ -97,6 +97,11 @@ import EventsDetails from "./Pages/SubPages/EventsPages/EventsDetails";
 import NightLifeInChennai from "./Pages/SubPages/VisitPages/ChennaiNightLife";
 import Luxuryhotels from "./Pages/SubPages/VisitPages/Luxuryhotels";
 import RestaurantsInChennai from "./Pages/SubPages/VisitPages/RestaurantsInChennai";
+
+
+
+
+
 import SportsInChennai from "./Pages/SubPages/VisitPages/SportInChennai";
 import EmploymentBusinessPermits from "./Pages/SubPages/WorkPages/EmploymentBusinessPermits";
 import SearchResults from "./Components/SearchResults";
@@ -252,8 +257,12 @@ import Neighbourhoods from "./Pages/Neighbourhoods/neighbourhoods";
 import PrideofChennai from "./Pages/PrideofChennai";
 import PropertiesPage from "./Pages/Properties/PropertiesPage";
 import PropertyDetailPage from "./Pages/Properties/PropertyDetailPage";
-
 import ChennaiApp from "./Pages/Chennai-app";
+
+
+// ############# DYNAMIC PAGES ##################
+
+import RestaurantsPage from "./Pages/Visits/Pages/Restaurants/RestaurantsPage"
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -506,8 +515,6 @@ function App() {
           </a>
         </div>
 
- 
-
         <div
           ref={stickyRef}
           className={`icon-of-the-month pointcastSticky carRallylink ${
@@ -529,6 +536,24 @@ function App() {
         </div>
 
         <Routes>
+          {/* ######### DYNAMIC ROUTES ############ */}
+          <Route path="chennai-restaurants" element={<RestaurantsPage/>} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           {/*----Main-Pages---------*/}
 
           <Route path="/" element={<HomePage />} />
@@ -1131,7 +1156,10 @@ function App() {
             path="/superchennai-events-details/:url"
             element={<EventsDetails />}
           />
-          <Route path="/fun-quiz-competition-trivia-night" element={<ChennaiQuiz />} />
+          <Route
+            path="/fun-quiz-competition-trivia-night"
+            element={<ChennaiQuiz />}
+          />
           <Route path="/quizform" element={<QuizForm />} />
           <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
 
@@ -1185,6 +1213,7 @@ function App() {
             path="/visit/restaurants-in-chennai"
             element={<RestaurantsInChennai />}
           />
+
           <Route
             path="/visit/accomadation/affordable-hotels-in-chennai"
             element={<Midrangehotels />}

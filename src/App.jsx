@@ -263,6 +263,7 @@ import ChennaiApp from "./Pages/Chennai-app";
 // ############# DYNAMIC PAGES ##################
 
 import RestaurantsPage from "./Pages/Visits/Pages/Restaurants/RestaurantsPage"
+import TestPage from "./Pages/Visits/Pages/Restaurants//testPage"
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -507,7 +508,7 @@ function App() {
             footerReached ? "footerreached" : ""
           }`}
         >
-          <a href="/fun-quiz-competition-trivia-night">
+          <a href="/super-chennai-contests-quiz">
             <img
               src="/images/quiz-icons.png"
               alt="artificial intelligence challenge"
@@ -536,10 +537,21 @@ function App() {
         </div>
 
         <Routes>
-          {/* ######### DYNAMIC ROUTES ############ */}
-          <Route path="chennai-restaurants" element={<RestaurantsPage/>} />
+
+          {/* ######### DYNAMIC PAGES ROUTES  ############ */}
+
+           <Route path="superchennai-restaurants" element={<RestaurantsPage/>} />
+           <Route path="test" element={<TestPage/>} />
+           <Route path="/chennai-events" element={<EventsPage />} />
+           <Route path="/events-in-chennai/:slug"  element={<EventDetailPage />}/>
+           <Route path="/properties" element={<PropertiesPage />} />
+           <Route path="/properties/:slug" element={<PropertyDetailPage />} />
+           <Route path="/blog" element={<BlogList />} />
+           <Route path="/blog/:slug" element={<BlogDetails />} />
+          
 
 
+           
 
 
 
@@ -559,9 +571,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/results" element={<SearchResults />} />
 
-          <Route path="/blog" element={<BlogList />} />
-          {/* <Route path="/blogdetail/:id" element={<BlogDetails />} /> */}
-          <Route path="/blog/:slug" element={<BlogDetails />} />
+
           <Route
             path="/volunteer-in-chennai"
             element={<Volunteer popupFunction={popupFunction} />}
@@ -574,11 +584,7 @@ function App() {
           <Route path="/visit-chennai" element={<Visit />} />
           <Route path="/work-in-chennai" element={<Work />} />
           <Route path="/superchennai-events" element={<EventsHome />} />
-          <Route path="/events" element={<EventsPage />} />
-          <Route
-            path="/events-in-chennai/:slug"
-            element={<EventDetailPage />}
-          />
+      
 
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />
@@ -1157,7 +1163,7 @@ function App() {
             element={<EventsDetails />}
           />
           <Route
-            path="/fun-quiz-competition-trivia-night"
+            path="/super-chennai-contests-quiz"
             element={<ChennaiQuiz />}
           />
           <Route path="/quizform" element={<QuizForm />} />
@@ -1295,11 +1301,7 @@ function App() {
 
           {/* innovate pages start */}
 
-          {/* Property-Pages */}
-          <Route path="/properties" element={<PropertiesPage />} />
-          <Route path="/properties/:slug" element={<PropertyDetailPage />} />
-
-          {/* Property-Pages */}
+     
 
           {/* Pride-of-Chennai */}
 

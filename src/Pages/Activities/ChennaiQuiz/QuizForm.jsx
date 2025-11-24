@@ -63,7 +63,7 @@ export default function QuizForm() {
             <h3>Super Chennai Quiz</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/fun-quiz-competition-trivia-night">(Quiz)</Link>
+              <Link to="/super-chennai-contests-quiz">(Quiz)</Link>
             </div>
           </div>
         </div>

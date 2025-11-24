@@ -65,45 +65,6 @@ import {
 } from "lucide-react";
 
 
-// import { Security_24_7 } from "../../../public/images/HomePage-Images/Icons/properties/24-7 Security.svg";
-// import { ReactComponent as BasketBall }  from "../../../public/images/HomePage-Images/Icons/properties/BasketBall.svg";
-// import { Billiards } from "../../../public/images/HomePage-Images/Icons/properties/Billiards.svg";
-// import { BlackTopRoads } from "../../../public/images/HomePage-Images/Icons/properties/Black top roads.svg";
-// import { CarChargePoint } from "../../../public/images/HomePage-Images/Icons/properties/Car Charge point.svg";
-// import { Carrom } from "../../../public/images/HomePage-Images/Icons/properties/Carrom.svg";
-// import { Chess } from "../../../public/images/HomePage-Images/Icons/properties/Chess.svg";
-// import { ChildrensPlayArea } from "../../../public/images/HomePage-Images/Icons/properties/Children's Play Area.svg";
-// import { ClubHouse } from "../../../public/images/HomePage-Images/Icons/properties/Club House.svg";
-// import { CommunicationAssociationRoom } from "../../../public/images/HomePage-Images/Icons/properties/Communication Association Room.svg";
-// import { CricketNetPractice } from "../../../public/images/HomePage-Images/Icons/properties/Cricket Net Practice.svg";
-// import { FeaturedWall } from "../../../public/images/HomePage-Images/Icons/properties/Featured wall.svg";
-// import { GamingZone } from "../../../public/images/HomePage-Images/Icons/properties/Gaming Zone.svg";
-// import { GoodGroundWater } from "../../../public/images/HomePage-Images/Icons/properties/Good Ground water.svg";
-// import { Gym } from "../../../public/images/HomePage-Images/Icons/properties/Gym.svg";
-// import { Hopscotch } from "../../../public/images/HomePage-Images/Icons/properties/Hopscotch.svg";
-// import { Jacuzzi } from "../../../public/images/HomePage-Images/Icons/properties/Jacuzzi.svg";
-// import { JoggingTrack } from "../../../public/images/HomePage-Images/Icons/properties/Jogging Track.svg";
-// import { KidsPool } from "../../../public/images/HomePage-Images/Icons/properties/Kid's Pool.svg";
-// import { MeditationHall } from "../../../public/images/HomePage-Images/Icons/properties/Meditation Hall.svg";
-// import { MultiPurposeCourt } from "../../../public/images/HomePage-Images/Icons/properties/Multi Purpose Court.svg";
-// import { MultiPurposeHall } from "../../../public/images/HomePage-Images/Icons/properties/Multi Purpose Hall.svg";
-// import { PartyHall } from "../../../public/images/HomePage-Images/Icons/properties/Party Hall.svg";
-// import { PartyLawnWithBarbeque } from "../../../public/images/HomePage-Images/Icons/properties/Party Lawn With Barbeque.svg";
-// import { PartyLawn } from "../../../public/images/HomePage-Images/Icons/properties/Party lawn.svg";
-// import { ReflexologyPathway } from "../../../public/images/HomePage-Images/Icons/properties/Reflexology pathway.svg";
-// import { RoofTopLounge } from "../../../public/images/HomePage-Images/Icons/properties/Roof Top Lounge.svg";
-// import { SeniorCitizenCorner } from "../../../public/images/HomePage-Images/Icons/properties/Senior Citizen Corner.svg";
-// import { SkatingTrack } from "../../../public/images/HomePage-Images/Icons/properties/Skating track.svg";
-// import { SolarStreetLights } from "../../../public/images/HomePage-Images/Icons/properties/Solar Street lights.svg";
-// import { StormWaterDrains } from "../../../public/images/HomePage-Images/Icons/properties/Storm water drains.svg";
-// import { SwimmingPool } from "../../../public/images/HomePage-Images/Icons/properties/Swimming Pool.svg";
-// import { TableTennis } from "../../../public/images/HomePage-Images/Icons/properties/Table Tennis.svg";
-// import { Trampoline } from "../../../public/images/HomePage-Images/Icons/properties/Trampoline.svg";
-// import { Yoga } from "../../../public/images/HomePage-Images/Icons/properties/Yoga.svg";
-
-import BasketBall from "/public/images/HomePage-Images/Icons/properties/BasketBall.svg";
-
-
 const amenityIcons = {
   elevator: (
     <img
@@ -219,10 +180,16 @@ const applianceIcons = {
 import { useEffect } from "react";
 import "./Styles/PropertyDetailPage.css";
 import { API_BASE_URL } from "./../../../config";
+import NotFound from "../GlobalComponents/NotFound"
+
+
 
 const PropertyDetailPage = () => {
   const { id, slug } = useParams();
   const { property, loading } = useProperty({ id, slug });
+
+  
+
   console.log("property", property);
   const [openSpec, setOpenSpec] = useState(false);
   const [openLocationFeatre, setOpenLocationFeatre] = useState(false);
@@ -247,14 +214,23 @@ const PropertyDetailPage = () => {
   const [showAll, setShowAll] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  if (!property?.buildingAmenities) return null;
+  
   const trueAmenities = property?.buildingAmenities
     ? Object.entries(property.buildingAmenities).filter(([_, value]) => value)
     : [];
 
   const visibleAmenities = showAll ? trueAmenities : trueAmenities.slice(0, 6);
   if (loading) return <PropertyDetailSkeleton />;
-  if (!property) return <h1 className="not-found">❌ Property not found</h1>;
+  if (!property) {
+    return (
+      <NotFound
+        title="Property Not Found"
+        message="The property you are looking for may be sold, unavailable, or the link is incorrect."
+        redirect="/properties"
+        redirectLabel="Browse Properties"
+      />
+    );
+  }
 
   const getImageUrl = (imgObj) => {
     if (!imgObj) return defaultImage;
@@ -302,6 +278,8 @@ const PropertyDetailPage = () => {
   const featured = property?.featured ?? false;
   const urgentSale = property?.urgentSale ?? false;
   const availabilityStatus = property?.availabilityStatus ?? null;
+
+
 
 
   return (

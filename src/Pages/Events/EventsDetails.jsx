@@ -8,6 +8,7 @@ import { PropertyContent } from "../../Pages/Properties/Components/Properties/ri
 import { formatEventTime } from "./Utils/formatTime";
 import FormattedEventDates from "./Utils/dateFormatter";
 import EventDetailpageSkeleton from "./Components/Loader/DetailpageSkelton"
+import NotFound from "../GlobalComponents/NotFound"
 export default function EventsDetails() {
   const { slug } = useParams();
   const { event, loading } = useEventBySlug(slug);
@@ -23,21 +24,12 @@ if (loading) {
 
 if (!event) {
   return (
-    <div className="flex flex-col items-center justify-center py-20 px-4 text-center m-10">
-     
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-        Event Not Found
-      </h2>
-      <p className="text-gray-500 text-sm max-w-md mb-6">
-        The event you are looking for might have been removed, canceled, or the link is incorrect. Please check other events or return to the homepage.
-      </p>
-      <a
-        href="/events"
-        className="px-6 py-2 rounded-full bg-pink-600 text-white font-medium hover:bg-pink-700 transition"
-      >
-        Browse Events
-      </a>
-    </div>
+    <NotFound
+      title="Event Not Found"
+      message="The event you are looking for might have been removed, canceled, or the link is incorrect. Please check other events or return to the homepage."
+      redirect="/events"
+      redirectLabel="Browse Events"
+    />
   );
 }
 

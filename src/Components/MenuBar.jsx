@@ -12,7 +12,7 @@ export default function MenuBar({ setMenuBar }) {
     { label: "About Us", href: "/about-us" },
 
     // { label: "Career", href: "/career" },
-    { label: "Events", href: "/events" },
+    { label: "Events", href: "/chennai-events" },
     { label: "Superchennai Contests", href: "/superchennai-contest" },
     // { label: "Pride of Chennai", href: "/pride-of-chennai" },
     // { label: "AI REIMAGINE", href: "/reimagine-chennai-AI-art-challenge" },

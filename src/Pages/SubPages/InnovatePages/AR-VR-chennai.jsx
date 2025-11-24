@@ -766,7 +766,7 @@ export default function ARVRchennai() {
                     </th>
                   </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200">
                   {thenvsNow.map((item, index) => (
                     <tr key={index} className="hover:bg-gray-50">
                       <td className="py-2 px-4">{item.category}</td>

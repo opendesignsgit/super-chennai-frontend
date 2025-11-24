@@ -1162,31 +1162,31 @@ export default function NammaStoriesVideo() {
     <>
       <div id="NammaStoriesVideoId"></div>
       <div className="NammaStoriesVideoDiv">
-        <div class="container max-w-7xl mx-auto px-4">
-          <div class="Eventitlesec mb-[50px] text-center">
-            <h2 class="text-[#a44294] particularTitle">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="Eventitlesec mb-[50px] text-center">
+            <h2 className="text-[#a44294] particularTitle">
               Namma Stories Video Contest Results
             </h2>
           </div>
-          <div class="nammaStorieswinner">
-            <div class="nammaStoriesvideo-card nammaStorieswinner-card youtubeIConStyle">
+          <div className="nammaStorieswinner">
+            <div className="nammaStoriesvideo-card nammaStorieswinner-card youtubeIConStyle">
               <img
                 src="/images/NammaStories-Videos/thumbnail-youtube-2.jpg"
                 alt="Winner Video"
               />
-              <div class="nammaStorieslabel1">
+              <div className="nammaStorieslabel1">
                 <img src="/images/Winner.jpg" alt="" />
               </div>
             </div>
           </div>
-          <div class="nammaStorierunner-ups">
-            <div class="nammaStoriesvideo-card runner-up-card silver youtubeIConStyle runnerupStyle">
+          <div className="nammaStorierunner-ups">
+            <div className="nammaStoriesvideo-card runner-up-card silver youtubeIConStyle runnerupStyle">
               <img
                 src="/images/NammaStories-Videos/thumbnail-youtube-3.jpg"
                 alt="1st Runner-Up"
               />
             </div>
-            <div class="nammaStoriesvideo-card runner-up-card bronze youtubeIConStyle runnerupStyle1">
+            <div className="nammaStoriesvideo-card runner-up-card bronze youtubeIConStyle runnerupStyle1">
               <img
                 src="/images/NammaStories-Videos/thumbnail-youtube-8.jpg"
                 alt="2nd Runner-Up"

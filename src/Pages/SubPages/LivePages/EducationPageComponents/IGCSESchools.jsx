@@ -583,7 +583,7 @@ export default function IGCSESchool() {
                       </th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-gray-200">
+                  <tbody className="divide-y divide-gray-200">
                     {IGCSETopSchools.map((giant, index) => (
                       <tr
                         key={index}

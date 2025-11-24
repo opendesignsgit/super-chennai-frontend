@@ -401,7 +401,7 @@ export default function ICSESchool() {
                     </th>
                   </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200">
                   {ICSETopSchools.map((giant, index) => (
                     <tr
                       key={index}

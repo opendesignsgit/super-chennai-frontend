@@ -90,7 +90,7 @@ export default function NammaStories() {
         <NammaStoriesVideo/>
         <section className="EventsListSec SecPadblock12 nammaStoriesNewsLtter">
           <div className="container max-w-7xl mx-auto ">
-            <div class="Eventitlesec mb-[50px] text-center">
+            <div className="Eventitlesec mb-[50px] text-center">
               <h2 className="text-[#a44294]">Namma Stories</h2>
               <p>
                 Stay updated with the latest images, videos, and highlights from

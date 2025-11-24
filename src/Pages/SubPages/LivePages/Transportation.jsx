@@ -154,7 +154,7 @@ export default function Transportation() {
             href="https://parivahan.gov.in/parivahan//en"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-voilet-500 underline"
+            className="text-voilet-500 underline"
           >
             Apply for a drivers license{" "}
           </a>

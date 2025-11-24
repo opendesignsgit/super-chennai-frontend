@@ -359,7 +359,7 @@ export default function MatricSchool() {
                     </th>
                   </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200">
                   {MatricTopSchools.map((giant, index) => (
                     <tr
                       key={index}

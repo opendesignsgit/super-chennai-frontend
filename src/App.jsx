@@ -1315,7 +1315,7 @@ function App() {
 
         {/*################################# NEWS LETTER ######################################## */}
 
-        <section class="signup FormIframeSection" id="newsletterId">
+        <section className="signup FormIframeSection" id="newsletterId">
           <div className="socialChennaiContent NewsletterContent">
             <h4>Newsletter</h4>
             <p>

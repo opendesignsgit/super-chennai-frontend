@@ -492,7 +492,7 @@ export default function EVMobilityinChennai() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {FastFacts.map((giant, index) => (
                   <tr
                     key={index}
@@ -526,7 +526,7 @@ export default function EVMobilityinChennai() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {FastStats.map((giant, index) => (
                   <tr
                     key={index}

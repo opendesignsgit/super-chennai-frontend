@@ -530,7 +530,7 @@ export default function HealthTechinChennai() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {SmartChennaiinAction.map((giant, index) => (
                   <tr
                     key={index}
@@ -623,7 +623,7 @@ export default function HealthTechinChennai() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {FastFacts.map((giant, index) => (
                   <tr
                     key={index}
@@ -654,7 +654,7 @@ export default function HealthTechinChennai() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {FastStats.map((giant, index) => (
                   <tr
                     key={index}
@@ -688,7 +688,7 @@ export default function HealthTechinChennai() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {HealthTech.map((giant, index) => (
                   <tr
                     key={index}
@@ -719,7 +719,7 @@ export default function HealthTechinChennai() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {WhereHappening.map((giant, index) => (
                   <tr
                     key={index}
@@ -809,7 +809,7 @@ export default function HealthTechinChennai() {
             >
               <div className="space-y-6 bg-white p-4 rounded bottomListIcon w-full">
                 <h2 className="text-2xl font-bold"> {section.sectionTitle} </h2>
-                <p class="mb-4 text-gray-600 text-center mb-10">
+                <p className="mb-4 text-gray-600 text-center mb-10">
                   {section.sectionDesc}
                 </p>
                 {section.fintechEvolution.map((tenant, i) => (

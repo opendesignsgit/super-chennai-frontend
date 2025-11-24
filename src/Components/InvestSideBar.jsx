@@ -13,7 +13,7 @@ export default function Utilitiesinchennai1() {
       title: "Government Initiatives",
       content: (
         <>
-          <div class="InvestMainDivSection TabInvestSection">
+          <div className="InvestMainDivSection TabInvestSection">
             <img src="/images/Invest-Images/Icons/government-icon.svg"/>
             <h3 className="investH3" style={{ color: "#626262" }}>GOVERNMENT INITIATIVES</h3>
             {/* <h5 style={{ color: "#000" }}>Solar Wind</h5> */}
@@ -23,7 +23,7 @@ export default function Utilitiesinchennai1() {
               environmentally friendly future while taking advantage of a
               growing market.
             </p>
-            <div class="exploreMorebuttonInvestChennai">
+            <div className="exploreMorebuttonInvestChennai">
               <a href="/invest/government-projects-in-chennai" data-discover="true">
                 Explore More
               </a>
@@ -37,7 +37,7 @@ export default function Utilitiesinchennai1() {
       title: "Formulations & Regulations",
       content: (
         <>
-          <div class="InvestMainDivSection TabInvestSection">
+          <div className="InvestMainDivSection TabInvestSection">
              <img src="/images/Invest-Images/Icons/formalities-icon.svg"/>
             <h3 className="investH3" style={{ color: "#626262" }}>FORMALITIES & REGULATIONS</h3>
             {/* <h5 style={{ color: "#000" }}></h5> */}
@@ -47,7 +47,7 @@ export default function Utilitiesinchennai1() {
               these requirements easier, government organizations provide online
               portals and instruction.
             </p>
-            <div class="exploreMorebuttonInvestChennai">
+            <div className="exploreMorebuttonInvestChennai">
               <a href="/invest/law-firms-in-chennai" data-discover="true">
                 Explore More
               </a>
@@ -61,7 +61,7 @@ export default function Utilitiesinchennai1() {
       title: "News",
       content: (
         <>
-          <div class="InvestMainDivSection TabInvestSection">
+          <div className="InvestMainDivSection TabInvestSection">
              <img src="/images/Invest-Images/Icons/news-icon.svg"/>
             <h3  className="investH3" style={{ color: "#626262" }}>NEWS</h3>
             {/* <h5 style={{ color: "#000" }}></h5> */}
@@ -71,7 +71,7 @@ export default function Utilitiesinchennai1() {
               up-to-date on business news to learn about the most recent
               advancements and prospects.
             </p>
-            <div class="exploreMorebuttonInvestChennai">
+            <div className="exploreMorebuttonInvestChennai">
               <a href="/invest/news-in-chennai" data-discover="true">
                 Explore More
               </a>
@@ -86,14 +86,14 @@ export default function Utilitiesinchennai1() {
       title: "Events",
       content: (
         <>
-          <div class="InvestMainDivSection TabInvestSection">
+          <div className="InvestMainDivSection TabInvestSection">
              <img src="/images/Invest-Images/Icons/events-icon.svg"/>
             <h3 className="investH3" style={{ color: "#626262" }}>EVENTS</h3>
             {/* <h5 style={{ color: "#000" }}></h5> */}
             <p style={{ color: "#000" }}>
              A number of corporate conferences, industry-specific seminars, and investment summits are held in Chennai. These gatherings offer chances for networking, information about new industries, and stages for exhibiting investment possibilities.
             </p>
-            <div class="exploreMorebuttonInvestChennai">
+            <div className="exploreMorebuttonInvestChennai">
               <a href="/invest/chennai-events" data-discover="true">
                 Explore More
               </a>
@@ -107,14 +107,14 @@ export default function Utilitiesinchennai1() {
       title: "Exhibitions",
       content: (
         <>
-          <div class="InvestMainDivSection TabInvestSection">
+          <div className="InvestMainDivSection TabInvestSection">
              <img src="/images/Invest-Images/Icons/exhibition-icon.svg"/>
             <h3 className="investH3" style={{ color: "#626262" }}>EXHIBITIONS</h3>
             {/* <h5 style={{ color: "#000" }}>PROPERTY, AUTOMOBILE</h5> */}
             <p style={{ color: "#000" }}>
            Investors have the opportunity to evaluate industry trends and uncover potential enterprises by attending these events, which feature goods, innovations, and possible collaborations.
             </p>
-            <div class="exploreMorebuttonInvestChennai">
+            <div className="exploreMorebuttonInvestChennai">
               <a href="/invest/exhibitions-in-chennai" data-discover="true">
                 Explore More
               </a>

@@ -37,7 +37,21 @@ const FilterSection = ({ title, children, onClear }) => {
 
 
 const EventsFilterSidebar = ({ filters, setFilters }) => {
+  
     const { categories } = useEventCategories();
+
+    const clearAllFilters = () => {
+    setFilters({
+      categories: [],
+      languages: [],
+      locations: [],
+      startDate: "",
+      endDate: "",
+      freeEntry: false,
+      familyFriendly: false,
+      showOldEvents: false,
+    });
+  };
   const handleLanguageChange = (lang) => {
     setFilters((prev) => {
       const selected = new Set(prev.languages || []);
@@ -92,7 +106,16 @@ const EventsFilterSidebar = ({ filters, setFilters }) => {
         scrollbarColor: "#af1c6683 #f3f4f6",
       }}
     >
-      <h3 className="text-xl font-semibold mb-4 text-gray-800">Filters</h3>
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-xl font-semibold text-gray-800">Filters</h3>
+
+        <button
+          onClick={clearAllFilters}
+          className="text-sm font-medium text-pink-600 hover:text-pink-700"
+        >
+          Clear All
+        </button>
+      </div>
 
       {/* Date Filter */}
 

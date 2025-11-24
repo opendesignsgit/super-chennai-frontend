@@ -19,7 +19,7 @@ export const formatLocation = (locations = []) => {
       const label = loc?.label || "Unknown";
       const cleanLink = cleanLocationLink(loc?.link);
 
-      return `<a href="${cleanLink}" class="text-blue-600 underline" target="_blank" rel="noopener noreferrer">${label}</a>`;
+      return `<a href="${cleanLink}" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">${label}</a>`;
     })
     .join(", ");
 };

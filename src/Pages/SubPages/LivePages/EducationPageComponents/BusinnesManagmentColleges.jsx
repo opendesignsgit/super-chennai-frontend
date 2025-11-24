@@ -578,7 +578,7 @@ export default function BusinessManagementColleges() {
                     </th>
                   </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200">
                   {BusinessandManagementSchools.map((giant, index) => (
                     <tr
                       key={index}
@@ -625,7 +625,7 @@ export default function BusinessManagementColleges() {
                     </th>
                   </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200">
                   {BusinessandManagementSchools1.map((giant, index) => (
                     <tr
                       key={index}

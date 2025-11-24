@@ -382,7 +382,7 @@ export default function GamingArcadesInChennai() {
               key={index}
             >
               <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
-                <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+                <h2 className="text-2xl font-semibold text-indigo-700 mb-6 text-center">
                   {"Popular Gaming Arcades in Chennai"}
                 </h2>
                 {section.tenantInfoSections.map((tenant, i) => (
@@ -481,7 +481,7 @@ export default function GamingArcadesInChennai() {
                 key={index}
               >
                 <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
-                  <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+                  <h2 className="text-2xl font-semibold text-indigo-700 mb-6 text-center">
                     {" "}
                   </h2>
                   {section.tenantInfoSections.map((tenant, i) => (

@@ -53,7 +53,7 @@ export default function NewsLetter() {
         </section>
         <section className="EventsListSec SecPadblock12" style={{background:"#fff"}}>
           <div className="container max-w-7xl mx-auto ">
-            <div class="Eventitlesec mb-[50px] text-center">
+            <div className="Eventitlesec mb-[50px] text-center">
               <h1 className="text-[#a44294]">MEDIA COVERAGE </h1>
               <p>
                 Stay updated with the latest images, videos, and highlights from

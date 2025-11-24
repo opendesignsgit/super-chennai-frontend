@@ -68,9 +68,9 @@ const SecondSection = () => {
     <section className="welcometochennaibanner">
       <div className="ChennaiInvestMents welcometosuperchennairow container max-w-7xl mx-auto px-4 ">
         <div className="welcomePagefirst">
-          <h1 class="chennaiInvestmentsHeading">Welcome to Super Chennai</h1>
+          <h1 className="chennaiInvestmentsHeading">Welcome to Super Chennai</h1>
           <h5
-            class="chennaiInvestmentsHeadingSub"
+            className="chennaiInvestmentsHeadingSub"
             style={{ textAlign: "left" }}
           >
             Chennai is India’s healthcare capital, SaaS capital, fintech
@@ -145,7 +145,7 @@ const SecondSection = () => {
             </div>
           </div>
           <div className="volunteerSectionContent">
-            <a href="/about-us" class="exploreMoreLink">
+            <a href="/about-us" className="exploreMoreLink">
               Explore More
             </a>
           </div>

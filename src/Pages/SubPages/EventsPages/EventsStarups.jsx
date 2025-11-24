@@ -62,46 +62,46 @@ export default function EventsStartups() {
           
             </div>
             <div className="EventRight">
-              <div class="evderibox">
-                <div class="evderListbox">
-                  <div class="evderViewbox">
-                    <a class="evderlinks flex items-center">
+              <div className="evderibox">
+                <div className="evderListbox">
+                  <div className="evderViewbox">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/calendar.png" alt="" />
                       </div>
                       <p>May 14 2025</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/time.png" alt="" />
                       </div>
                       <p>2:00 PM</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex  items-center">
                         <img src="/images/events/duration.png" alt="" />
                       </div>
                       <p>3 Hours</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex  items-center">
                         <img src="/images/events/age_limit.png" alt="" />
                       </div>
                       <p>Age Limit - 5yrs +</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/language.png" alt="" />
                       </div>
                       <p>Tamil</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/genre.png" alt="" />
                       </div>
                       <p>Regional</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/location.png" alt="" />
                       </div>

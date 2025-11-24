@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef ,useEffect } from "react";
 import { useEvents } from "../Events/Hooks/UseEvents";
 import { API_BASE_URL } from "../../../config";
 import EventsFilterSidebar from "./Components/EventsFilterSidebar";
@@ -11,6 +11,7 @@ import EventCardSkeleton from "./Components/Loader/EventCardSkeleton";
 import { formatEventTime } from "./Utils/formatTime";
 import FormattedEventDates from "./Utils/dateFormatter";
 import SortBy from "./Components/Sorting";
+import { Helmet } from "react-helmet-async";
 
 const EventsPage = () => {
   const [filters, setFilters] = useState({ categories: [] });
@@ -21,46 +22,6 @@ const EventsPage = () => {
 
   const upcomingEvents = [...events];
 
-  // .sort((a, b) => {
-  //   const dateA = Array.isArray(a.event?.eventDates) && a.event.eventDates.length
-  //     ? new Date(a.event.eventDates[0].date)
-  //     : null;
-
-  //   const dateB = Array.isArray(b.event?.eventDates) && b.event.eventDates.length
-  //     ? new Date(b.event.eventDates[0].date)
-  //     : null;
-
-  //   if (!dateA) return 1;
-  //   if (!dateB) return -1;
-
-  //   return dateB - dateA;
-  // });
-
-  //################# PAST EVENTS  #################
-
-  // const today = new Date();
-  // today.setHours(0, 0, 0, 0);
-  // const Pastevents = [...events]
-  //   .filter((event) => {
-  //     if (
-  //       !Array.isArray(event.event?.eventDates) ||
-  //       event.event.eventDates.length === 0
-  //     ) {
-  //       return false;
-  //     }
-
-  //     // check if ANY date in eventDates is >= today
-  //     return event.event.eventDates.some((d) => {
-  //       const eventDate = new Date(d.date);
-  //       eventDate.setHours(0, 0, 0, 0);
-  //       return eventDate >= today;
-  //     });
-  //   })
-  //   .sort((a, b) => {
-  //     const dateA = new Date(a.event.eventDates[0].date);
-  //     const dateB = new Date(b.event.eventDates[0].date);
-  //     return dateB - dateA;
-  //   });
 
   const { categories } = useEventCategories();
   const [showSidebar, setShowSidebar] = useState(false);
@@ -93,12 +54,39 @@ const EventsPage = () => {
   };
 
   const onSortChange = (value) => {
-    console.log("Selected Sort:", value);
+
     setSortBy(value);
   };
+  
+const topRef = useRef(null);
+const [isAtTop, setIsAtTop] = useState(true);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      setIsAtTop(entries[0].isIntersecting);
+    },
+    { threshold: 0.1 }
+  );
+
+  if (topRef.current) observer.observe(topRef.current);
+
+  return () => observer.disconnect();
+}, []);
+
 
   return (
     <>
+      <Helmet>
+        <title>
+          Chennai Events: Live Shows, Workshops, Exhibition & Concerts
+        </title>
+        <meta
+          name="description"
+          content="Explore the latest Chennai Events including concerts, parties, festivals, workshops and exhibitions. Stay updated on the best things to do and enjoy nonstop entertainment in the city."
+        />
+        <link rel="canonical" href="chennai-events" />
+      </Helmet>
       {/* Banner */}
       <section className="accaodomationBannerSection">
         <div>
@@ -203,11 +191,11 @@ const EventsPage = () => {
               </span>
 
               <SortBy value={sortBy} onChange={onSortChange} />
-              
             </div>
 
             {/* Event Cards */}
             <div className="EventsListboxs flex flex-wrap justify-center">
+              <div ref={topRef}></div>
               {!loading && upcomingEvents.length === 0 && (
                 <div className="w-full flex flex-col items-center justify-center py-16 text-center">
                   <div className="w-16 h-16 mb-4 flex items-center justify-center rounded-full bg-[#a44294]/10">

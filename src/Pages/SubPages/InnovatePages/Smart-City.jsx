@@ -292,7 +292,7 @@ export default function SmartCity() {
               key={index}
             >
               <div className="space-y-6 bg-white p-4  rounded bottomListIcon w-full">
-                <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+                <h2 className="text-2xl font-semibold text-indigo-700 mb-6 text-center">
                   {" What Defines Smart Chennai?"}
                 </h2>
                 {section.fintechEvolution.map((tenant, i) => (
@@ -355,7 +355,7 @@ export default function SmartCity() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {SmartChennaiinAction.map((giant, index) => (
                   <tr
                     key={index}

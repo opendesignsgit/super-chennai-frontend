@@ -485,7 +485,7 @@ export default function IBSchool() {
                       </th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-gray-200">
+                  <tbody className="divide-y divide-gray-200">
                     {IbTopSchools.map((giant, index) => (
                       <tr
                         key={index}
@@ -531,7 +531,7 @@ export default function IBSchool() {
                       </th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-gray-200 mb-20">
+                  <tbody className="divide-y divide-gray-200 mb-20">
                     {IbsaasSuperstars.map((giant, index) => (
                       <tr
                         key={index}

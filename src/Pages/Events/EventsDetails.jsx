@@ -7,8 +7,8 @@ import AutoShrinkText from "../../Components/Text/AutoShrinkText";
 import { PropertyContent } from "../../Pages/Properties/Components/Properties/ritchText";
 import { formatEventTime } from "./Utils/formatTime";
 import FormattedEventDates from "./Utils/dateFormatter";
-import EventDetailpageSkeleton from "./Components/Loader/DetailpageSkelton"
-import NotFound from "../GlobalComponents/NotFound"
+import EventDetailpageSkeleton from "./Components/Loader/DetailpageSkelton";
+import NotFound from "../GlobalComponents/NotFound";
 export default function EventsDetails() {
   const { slug } = useParams();
   const { event, loading } = useEventBySlug(slug);
@@ -17,22 +17,20 @@ export default function EventsDetails() {
 
   console.log("EventData:", event);
 
-if (loading) {
-  return <EventDetailpageSkeleton />;
-}
+  if (loading) {
+    return <EventDetailpageSkeleton />;
+  }
 
-
-if (!event) {
-  return (
-    <NotFound
-      title="Event Not Found"
-      message="The event you are looking for might have been removed, canceled, or the link is incorrect. Please check other events or return to the homepage."
-      redirect="/events"
-      redirectLabel="Browse Events"
-    />
-  );
-}
-
+  if (!event) {
+    return (
+      <NotFound
+        title="Event Not Found"
+        message="The event you are looking for might have been removed, canceled, or the link is incorrect. Please check other events or return to the homepage."
+        redirect="/chennai-events"
+        redirectLabel="Browse Events"
+      />
+    );
+  }
 
   const main = event.event || {};
   const meta = event.meta || {};
@@ -123,7 +121,6 @@ if (!event) {
 
   return (
     <>
-      {/* 🧠 Meta SEO */}
       <Helmet>
         <title>{metaTitle || title || "Event Details"}</title>
         <meta
@@ -133,8 +130,6 @@ if (!event) {
         <link rel="canonical" href={window.location.href} />
         {imageUrl && <meta property="og:image" content={imageUrl} />}
       </Helmet>
-
-      {/* 🟣 Banner Section */}
 
       <section className="accaodomationBannerSection">
         <div>
@@ -163,7 +158,6 @@ if (!event) {
         <div className="absolute inset-0 bg-gradient-to-b from-[#6a1b5a]/90 via-[#4a1440]/85 to-[#3a1033]/95"></div>
       </section>
 
-      {/*  Event Details Section */}
       <section className="EventsBanSec py-12 bg-gray-50">
         <div className="container max-w-6xl mx-auto px-4 md:px-8">
           <div className="EventContBox flex flex-col lg:flex-row gap-8">
@@ -217,7 +211,6 @@ if (!event) {
             <div className="EventRight w-full lg:w-[320px] bg-white rounded-lg shadow p-5 h-max">
               <h4 className="text-lg font-semibold mb-3">Event Details</h4>
               <div className="space-y-3">
-            
                 {Array.isArray(eventDates) && eventDates.length > 0 && (
                   <>
                     <InfoRow

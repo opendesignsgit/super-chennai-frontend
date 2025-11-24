@@ -18,19 +18,7 @@ const getImageUrl = (imgObj) => {
 };
 
 const TestPage = () => {
-  // const [pages, setPages] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const { restaurants, setPages } = useRestaurants();
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`${API_BASE_URL}/api/visitDetails?limit=100`)
-  //     .then((res) => {
-  //       setPages(res.data.docs || []);
-  //       setLoading(false);
-  //     })
-  //     .catch(() => setLoading(false));
-  // }, []);
+  const { restaurants, loading } = useRestaurants();
 
   if (loading)
     return (
@@ -39,7 +27,7 @@ const TestPage = () => {
       </div>
     );
 
-  if (!pages.length)
+  if (!restaurants.length)
     return (
       <div className="flex justify-center items-center h-[50vh] text-gray-500 text-lg">
         No Visit Pages Found
@@ -54,8 +42,7 @@ const TestPage = () => {
           <div className="accodoamationBannerText">
             <h3>Visits</h3>
             <div className="breadCrum">
-              <Link to="/visit-chennai">Visit </Link> -{" "}
-              <a href="">Visits </a>
+              <Link to="/visit-chennai">Visit </Link> - <a href="">Visits </a>
             </div>
           </div>
         </div>
@@ -68,7 +55,7 @@ const TestPage = () => {
         </h1>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {pages.map((item) => {
+          {restaurants.map((item) => {
             const image =
               getImageUrl(item?.heroImage) ||
               getImageUrl(item?.FeaturedImage) ||

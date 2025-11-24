@@ -569,8 +569,8 @@ export default function DeepTechAIStartupsinChennai() {
     }`}
             key={index}
           >
-            <div class="max-w-7xl mx-auto text-center">
-              <h2 class="text-3xl md:text-4xl font-bold">
+            <div className="max-w-7xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-bold">
                 {section.sectionTitle}
               </h2>
             </div>

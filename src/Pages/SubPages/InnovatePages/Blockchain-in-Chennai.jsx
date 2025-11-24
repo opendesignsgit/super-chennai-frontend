@@ -312,7 +312,7 @@ export default function BlockchaininChennai() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {SmartChennaiinAction.map((giant, index) => (
                   <tr
                     key={index}

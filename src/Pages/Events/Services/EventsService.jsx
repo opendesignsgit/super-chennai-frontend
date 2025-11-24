@@ -12,7 +12,6 @@ export const fetchEvents = async (filters = {}, sortBy = "upcoming") => {
   try {
     const params = { limit: 0 };
 
-    console.log("🔵 Sending filters to backend:", filters);
 
     // =========================
     // 🎯 CATEGORY FILTER
@@ -160,9 +159,8 @@ export const fetchEvents = async (filters = {}, sortBy = "upcoming") => {
       const today = new Date();
       params["where[event.eventDates.date][less_than]"] = today.toISOString();
     }
-    console.log("🛰️ Final params sent to API:", params);
+ 
     const { data } = await axios.get(`${API_URL}/events`, { params });
-    console.log(" API returned:", data?.docs?.length, "events");
 
     return {
       docs: data?.docs || [],

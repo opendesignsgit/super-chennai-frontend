@@ -375,7 +375,7 @@ export default function ItandSoftwareCompanies() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {techGiants.map((giant, index) => (
                   <tr
                     key={index}
@@ -409,7 +409,7 @@ export default function ItandSoftwareCompanies() {
                   </th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-gray-200 mb-20">
+              <tbody className="divide-y divide-gray-200 mb-20">
                 {saasSuperstars.map((giant, index) => (
                   <tr
                     key={index}

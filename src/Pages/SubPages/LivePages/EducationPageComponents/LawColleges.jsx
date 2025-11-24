@@ -535,7 +535,7 @@ export default function LawColleges() {
                     </th>
                   </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200">
                   {lawCollegeSchools.map((giant, index) => (
                     <tr
                       key={index}

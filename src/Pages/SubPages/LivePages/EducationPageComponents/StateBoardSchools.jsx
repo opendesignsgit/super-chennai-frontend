@@ -337,7 +337,7 @@ export default function StateBoardSchool() {
                     </th>
                   </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200">
                   {StateTopSchools.map((giant, index) => (
                     <tr
                       key={index}

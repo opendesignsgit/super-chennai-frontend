@@ -81,7 +81,7 @@ export default function EventsHome() {
       </section>
       <section className="EventsListSec SecPadblock12">
         <div className="container max-w-7xl mx-auto ">
-          <div class="Eventitlesec mb-[50px] text-center">
+          <div className="Eventitlesec mb-[50px] text-center">
             <h2 className="text-[#a44294]">Events Calendar</h2>
             <p>
               Keeps you in the loop with the latest happenings in Chennai. From
@@ -136,7 +136,7 @@ export default function EventsHome() {
       </section>
       <section className="EventsListSec SecPadblock12 !pt-0">
         <div className="container max-w-7xl mx-auto ">
-          <div class="Eventitlesec mb-[50px] text-center">
+          <div className="Eventitlesec mb-[50px] text-center">
             <h2 className="text-[#a44294]">Past Events</h2>
             <p>
               Keeps you in the loop with the latest happenings in Chennai. From

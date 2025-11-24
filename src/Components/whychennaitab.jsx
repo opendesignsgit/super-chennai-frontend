@@ -13,7 +13,7 @@ export default function Whychennaitab() {
       title: <><small>SUPER FOR</small> Living</>,
       content: (
         <>
-          <div class="InvestMainDivSection TabInvestSection">
+          <div className="InvestMainDivSection TabInvestSection">
             <img src="/images/super-for-living.jpg"/>
             {/* <h3 className="investH3" style={{ color: "#626262" }}>A City That Feels Like Home</h3> */}
              <ul className="home-city-points">
@@ -59,7 +59,7 @@ modern living.</li>
       title: <><small>SUPER FOR </small> VISITING</>,
        content: (
         <>
-          <div class="InvestMainDivSection TabInvestSection">
+          <div className="InvestMainDivSection TabInvestSection">
             <img src="/images/super-for-visit.jpg"/>
             {/* <h3 className="investH3" style={{ color: "#626262" }}>A City That Feels Like Home</h3> */}
              <ul className="home-city-points">
@@ -99,7 +99,7 @@ flavor.
        title: <><small>SUPER FOR </small> INVESTING</>,
        content: (
         <>
-          <div class="InvestMainDivSection TabInvestSection">
+          <div className="InvestMainDivSection TabInvestSection">
             <img src="/images/super-for-investing.jpg"/>
             {/* <h3 className="investH3" style={{ color: "#626262" }}>A City That Feels Like Home</h3> */}
              <ul className="home-city-points">
@@ -146,7 +146,7 @@ potential.
    title: <><small>SUPER FOR </small> INNOVATING</>,
       content: (
         <>
-          <div class="InvestMainDivSection TabInvestSection">
+          <div className="InvestMainDivSection TabInvestSection">
             <img src="/images/super-for-innovating.jpg"/>
             {/* <h3 className="investH3" style={{ color: "#626262" }}>A City That Feels Like Home</h3> */}
              <ul className="home-city-points">

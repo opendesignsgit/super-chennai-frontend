@@ -357,7 +357,7 @@ export default function Surfing() {
             key={index}
           >
             <div className="space-y-6 bg-white p-4 mt-[10px] rounded bottomListIcon w-full">
-              <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">
+              <h2 className="text-2xl font-semibold text-indigo-700 mb-6 text-center">
                 Where to Catch Waves
               </h2>
               {section.tenantInfoSections.map((tenant, i) => (
@@ -418,7 +418,7 @@ export default function Surfing() {
             key={index}
           >
             <div className="space-y-6 bg-white p-4 mt-[50px] rounded bottomListIcon w-full">
-              <h2 class="text-2xl font-semibold text-indigo-700 mb-6 text-center"></h2>
+              <h2 className="text-2xl font-semibold text-indigo-700 mb-6 text-center"></h2>
               {section.tenantInfoSections.map((tenant, i) => (
                 <div key={i}>
                   <h4 className="text-lg font-semibold mb-4">{tenant.title}</h4>

@@ -60,46 +60,46 @@ export default function EventsStrangersMeet() {
               </div> */}
             </div>
             <div className="EventRight">
-              <div class="evderibox">
-                <div class="evderListbox">
-                  <div class="evderViewbox">
-                    <a class="evderlinks flex items-center">
+              <div className="evderibox">
+                <div className="evderListbox">
+                  <div className="evderViewbox">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/calendar.png" alt="" />
                       </div>
                       <p>Thu 5 Jun 2025 - Sun 29 Jun 2025</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/time.png" alt="" />
                       </div>
                       <p>4:30 PM</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex  items-center">
                         <img src="/images/events/duration.png" alt="" />
                       </div>
                       <p>1 Hours</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex  items-center">
                         <img src="/images/events/age_limit.png" alt="" />
                       </div>
                       <p>Age Limit - 18yrs +</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/language.png" alt="" />
                       </div>
                       <p>English , Hindi</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/genre.png" alt="" />
                       </div>
                       <p>Regional</p>
                     </a>
-                    <a class="evderlinks flex items-center">
+                    <a className="evderlinks flex items-center">
                       <div className="iconsssec flex items-center">
                         <img src="/images/events/location.png" alt="" />
                       </div>

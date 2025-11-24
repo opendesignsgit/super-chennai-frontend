@@ -10,3 +10,9 @@ export const getRestaurants = async () => {
     return [];
   }
 };
+
+export const getRestaurantBySlug = async (slug) => {
+  const response = await fetch(`${API_BASE_URL}/api//visitDetails/${slug}`);
+  const data = await response.json();
+  return data;
+};

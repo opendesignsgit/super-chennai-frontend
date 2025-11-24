@@ -15,7 +15,6 @@ export default function EventsDetails() {
   const API_URL = `${API_BASE_URL}`;
   const [showDatesModal, setShowDatesModal] = React.useState(false);
 
-  console.log("EventData:", event);
 
   if (loading) {
     return <EventDetailpageSkeleton />;

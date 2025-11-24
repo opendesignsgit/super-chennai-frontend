@@ -215,8 +215,8 @@ import About from "./Pages/About";
 import Contact from "./Pages/contact";
 import Faq from "./Pages/Faq";
 import NewsletterForm from "./Components/NewsletterNew";
-
-
+import PrivacyPolicy from "./Pages/PrivacyPolicy"
+import RefundPolicy from "./Pages/RefundPolicy"
 
 import CarRally from "./Pages/CarRally";
 import CarRallyForm from "./Pages/CarRallyForm";
@@ -537,40 +537,27 @@ function App() {
         </div>
 
         <Routes>
-
           {/* ######### DYNAMIC PAGES ROUTES  ############ */}
 
-           <Route path="superchennai-restaurants" element={<RestaurantsPage/>} />
-           <Route path="test" element={<TestPage/>} />
-           <Route path="/chennai-events" element={<EventsPage />} />
-           <Route path="/events-in-chennai/:slug"  element={<EventDetailPage />}/>
-           <Route path="/properties" element={<PropertiesPage />} />
-           <Route path="/properties/:slug" element={<PropertyDetailPage />} />
-           <Route path="/blog" element={<BlogList />} />
-           <Route path="/blog/:slug" element={<BlogDetails />} />
-          
-
-
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <Route
+            path="superchennai-restaurants"
+            element={<RestaurantsPage />}
+          />
+          <Route path="test" element={<TestPage />} />
+          <Route path="/chennai-events" element={<EventsPage />} />
+          <Route
+            path="/events-in-chennai/:slug"
+            element={<EventDetailPage />}
+          />
+          <Route path="/properties" element={<PropertiesPage />} />
+          <Route path="/properties/:slug" element={<PropertyDetailPage />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogDetails />} />
 
           {/*----Main-Pages---------*/}
 
           <Route path="/" element={<HomePage />} />
           <Route path="/results" element={<SearchResults />} />
-
 
           <Route
             path="/volunteer-in-chennai"
@@ -584,7 +571,6 @@ function App() {
           <Route path="/visit-chennai" element={<Visit />} />
           <Route path="/work-in-chennai" element={<Work />} />
           <Route path="/superchennai-events" element={<EventsHome />} />
-      
 
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />
@@ -1138,6 +1124,8 @@ function App() {
           <Route path="/faqs" element={<Faq />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/about-us" element={<About />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/icon-of-the-july-month" element={<Iconofthemonth />} />
 
           <Route
@@ -1300,8 +1288,6 @@ function App() {
           <Route path="/surfing" element={<Surfing />} />
 
           {/* innovate pages start */}
-
-     
 
           {/* Pride-of-Chennai */}
 

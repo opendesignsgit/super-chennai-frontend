@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import { getRestaurants } from "../Services/restaurantsServices/restaurants.service";
+import {
+  getRestaurants,
+  getRestaurantBySlug,
+} from "../Services/restaurantsServices/restaurants.service";
 
 export const useRestaurants = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -11,10 +14,25 @@ export const useRestaurants = () => {
 
   const fetchData = async () => {
     const data = await getRestaurants();
-    console.log("fetchData,",data)
+    console.log("fetchData:", data);
     setRestaurants(data);
     setLoading(false);
   };
 
-  return { restaurants, loading };
+  const fetchBySlug = async (slug) => {
+    try {
+      const data = await getRestaurantBySlug(slug);
+      console.log("fetchBySlug:", data);
+      return data;
+    } catch (error) {
+      console.error("Error fetching restaurant by slug:", error);
+      return null;
+    }
+  };
+
+  return {
+    restaurants,
+    loading,
+    fetchBySlug,
+  };
 };

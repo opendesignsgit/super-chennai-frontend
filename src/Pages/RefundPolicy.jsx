@@ -62,7 +62,7 @@ export default function RefundPolicy() {
             </div>
 
             <div className="workIntro">
-              <h3>Refund & Return Policy – SuperChennai Contest Events</h3>
+              <h3>Refund Policy </h3>
 
               <p>
                 At SuperChennai Contest Events, we aim to provide a smooth and

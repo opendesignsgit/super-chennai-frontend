@@ -314,7 +314,7 @@ useEffect(() => {
 
                           <h3 className="EveItemtitles font-semibold text-lg mb-1">
                             <a
-                              href={`/superchennai-events-details/${card.slug}`}
+                              href={`/events-in-chennai/${card.slug}`}
                               state={{ card }}
                               className="hover:text-[#a44294]"
                             >

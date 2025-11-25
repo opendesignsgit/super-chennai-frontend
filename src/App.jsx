@@ -264,6 +264,12 @@ import ChennaiApp from "./Pages/Chennai-app";
 
 import RestaurantsPage from "./Pages/Visits/Pages/Restaurants/RestaurantsPage"
 import TestPage from "./Pages/Visits/Pages/Restaurants//testPage"
+import SuperchennaiContests from "./Pages/SuperchennaiContest/ContestPage"
+import SuperchennaiContestDetails from "./Pages/SuperchennaiContest/ContestDetailsPage"
+import NotFound from "../src/NotFound"
+
+
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -537,7 +543,7 @@ function App() {
         </div>
 
         <Routes>
-          {/* ######### DYNAMIC PAGES ROUTES  ############ */}
+          {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
 
           <Route
             path="superchennai-restaurants"
@@ -553,6 +559,14 @@ function App() {
           <Route path="/properties/:slug" element={<PropertyDetailPage />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:slug" element={<BlogDetails />} />
+          <Route path="/chennai-contests" element={<SuperchennaiContests />} />
+          <Route path="/chennai-contests/:slug" element={<SuperchennaiContestDetails />} />
+
+        {/* 404 Page */}
+          <Route path="*" element={<NotFound />} />
+
+
+       {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
 
           {/*----Main-Pages---------*/}
 

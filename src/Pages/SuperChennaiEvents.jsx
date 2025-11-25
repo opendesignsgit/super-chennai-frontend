@@ -82,7 +82,7 @@ export default function SuperChennaiEvents() {
 
                             <a
                 className="superchennaiEventsSection"
-                href="/super-chennai-contests-quiz"
+                href="contests/chennai-quiz"
               >
                 <div
                   className="flex flex-col items-center text-center "

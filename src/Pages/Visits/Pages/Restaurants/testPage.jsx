@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import { API_BASE_URL } from "../../../../../config";
 import { useRestaurants } from "../../hooks/useRestaurants";
 
 const FALLBACK_IMAGE = "/images/events/events.jpg";
 
+// 🔥 Universal Image Handler
 const getImageUrl = (imgObj) => {
   if (!imgObj) return FALLBACK_IMAGE;
 
   const url = imgObj?.url || imgObj?.image?.url;
   if (!url) return FALLBACK_IMAGE;
 
+  // IF full URL, return directly
   if (url.startsWith("http")) return url;
 
+  // ELSE attach API_BASE_URL
   return `${API_BASE_URL}${url}`;
 };
 
@@ -36,19 +38,21 @@ const TestPage = () => {
 
   return (
     <>
+      {/* Banner */}
       <div className="accaodomationBannerSection">
         <img src="/images/restaurants-banner.jpg" alt="" />
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
             <h3>Visits</h3>
             <div className="breadCrum">
-              <Link to="/visit-chennai">Visit </Link> - <a href="">Visits </a>
+              <Link to="/visit-chennai">Visit </Link> - <a href=""> Visits </a>
             </div>
           </div>
         </div>
         <div className="notHomePageSearch"></div>
       </div>
 
+      {/* List Section */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <h1 className="text-3xl font-bold mb-10 text-gray-800">
           Explore Visit Pages

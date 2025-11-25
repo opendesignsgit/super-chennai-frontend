@@ -218,10 +218,14 @@ const Footer = () => {
       title: "Contact Us",
       link: "/contact",
     },
-    // {
-    //   title: "Pride of Chennai",
-    //   link: "/pride-of-chennai",
-    // },
+    {
+      title: "Privacy Policy",
+      link: "/privacy-policy",
+    },
+    {
+      title: "Refund Policy",
+      link: "/refund-policy",
+    },
   ];
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);

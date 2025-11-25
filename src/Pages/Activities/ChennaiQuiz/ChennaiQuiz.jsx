@@ -15,7 +15,7 @@ export default function ChennaiQuiz() {
           name="description"
           content="The Super Chennai Quiz is here on Dec 7, 2025! Test your knowledge across sports, music, food, and Chennai. Exciting prizes await—team up and enjoy an epic evening."
         />
-        <link rel="canonical" href="/super-chennai-contests-quiz" />
+        <link rel="canonical" href="contests/chennai-quiz" />
       </Helmet>
 
       <section className="accaodomationBannerSection carquizbanner">
@@ -41,7 +41,7 @@ export default function ChennaiQuiz() {
 
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="/super-chennai-contests-quiz">
+              <Link to="contests/chennai-quiz">
                 Super Chennai Quiz
               </Link>
             </div>

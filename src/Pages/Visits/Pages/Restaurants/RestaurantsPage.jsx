@@ -1,16 +1,20 @@
 import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import RestaurantList from "../../Components/Restaurants/RestaurantList";
-import { useRestaurants } from "../../hooks/useRestaurants";
 import { LexicalRenderer } from "../../../GlobalComponents/LexicalRenderer";
 import NotFound from "../../../GlobalComponents/NotFound";
-const RestaurantsPage = () => {
-  const { restaurants, loading } = useRestaurants();
+import { useRestaurantBySlug } from "../../hooks/useRestaurants";
+
+export default function RestaurantsPage() {
+  const { slug } = useParams();
+  const { restaurant, loading } = useRestaurantBySlug(slug);
+
   const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
   const bgTextRef = useRef(null);
 
+  // Scroll animation
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -22,6 +26,9 @@ const RestaurantsPage = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // -----------------------------
+  // Loading State
+  // -----------------------------
   if (loading)
     return (
       <div className="flex flex-col items-center justify-center py-20 m-10">
@@ -30,33 +37,36 @@ const RestaurantsPage = () => {
       </div>
     );
 
-  if (!restaurants || restaurants.length === 0)
+  // -----------------------------
+  // Not Found
+  // -----------------------------
+  if (!restaurant)
     return (
       <NotFound
         title="Restaurant Not Found"
-        message="The restaurant you are looking for might have been removed, unavailable, or the link is incorrect. Please explore other restaurants or return to the home page."
+        message="The restaurant you are looking for might have been removed, unavailable, or the link is incorrect."
         redirect="/chennai-restaurants"
         redirectLabel="Browse Restaurants"
       />
     );
 
-  const restaurant = restaurants[0];
+  // -----------------------------
+  // Extract Lexical Blocks
+  // -----------------------------
   const blocks =
     restaurant?.content?.root?.children?.filter(
-      (item) =>
-        item.type === "block" && item.fields?.blockType === "restaurants"
+      (item) => item.type === "block" && item.fields?.blockType === "restaurants"
     ) || [];
 
-  // ---------------------
+  // -----------------------------
   // SEO META
-  // ---------------------
-
+  // -----------------------------
   const meta = restaurant?.meta || {};
   const metaTitle = meta?.title || restaurant?.title || "";
   const metaDescription = meta?.description || "";
-  const slug = restaurant?.slug || "";
 
   return (
+
     <>
       <Helmet>
         <title>{metaTitle}</title>
@@ -124,4 +134,68 @@ const RestaurantsPage = () => {
   );
 };
 
-export default RestaurantsPage;
+
+
+// import { useEffect, useRef, useState } from "react";
+// import { Helmet } from "react-helmet-async";
+// import { Link } from "react-router-dom";
+// import RestaurantList from "../../Components/Restaurants/RestaurantList";
+// import { useRestaurants } from "../../hooks/useRestaurants";
+// import { LexicalRenderer } from "../../../GlobalComponents/LexicalRenderer";
+// import NotFound from "../../../GlobalComponents/NotFound";
+
+// const RestaurantsPage = () => {
+//   const { restaurants, loading } = useRestaurants();
+//   const [scrollDir, setScrollDir] = useState("left");
+//   const lastScrollY = useRef(0);
+//   const bgTextRef = useRef(null);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const currentScrollY = window.scrollY;
+//       setScrollDir(currentScrollY > lastScrollY.current ? "left" : "right");
+//       lastScrollY.current = currentScrollY;
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   if (loading)
+//     return (
+//       <div className="flex flex-col items-center justify-center py-20 m-10">
+//         <div className="w-10 h-10 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
+//         <p className="mt-4 text-gray-600 text-sm tracking-wide">Loading ...</p>
+//       </div>
+//     );
+
+//   if (!restaurants || restaurants.length === 0)
+//     return (
+//       <NotFound
+//         title="Restaurant Not Found"
+//         message="The restaurant you are looking for might have been removed, unavailable, or the link is incorrect. Please explore other restaurants or return to the home page."
+//         redirect="/chennai-restaurants"
+//         redirectLabel="Browse Restaurants"
+//       />
+//     );
+
+//   const restaurant = restaurants[0];
+//   const blocks =
+//     restaurant?.content?.root?.children?.filter(
+//       (item) =>
+//         item.type === "block" && item.fields?.blockType === "restaurants"
+//     ) || [];
+
+//   // ---------------------
+//   // SEO META
+//   // ---------------------
+
+//   const meta = restaurant?.meta || {};
+//   const metaTitle = meta?.title || restaurant?.title || "";
+//   const metaDescription = meta?.description || "";
+//   const slug = restaurant?.slug || "";
+
+//   return (
+
+
+

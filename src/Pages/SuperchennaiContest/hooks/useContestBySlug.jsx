@@ -11,6 +11,7 @@ export const useContestBySlug = (slug) => {
 
   const fetchData = async (slug) => {
     const data = await getContestBySlug(slug);
+    console.log("data",data)
     setContest(data);
     setLoading(false);
   };

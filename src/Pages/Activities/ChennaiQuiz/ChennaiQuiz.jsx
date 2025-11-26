@@ -69,11 +69,11 @@ export default function ChennaiQuiz() {
                       if (target)
                         target.scrollIntoView({
                           behavior: "smooth",
-                          block: "start", 
+                          block: "start",
                         });
                     }}
                   >
-                    <h5>Book Now</h5>
+                    <h5> Register Now</h5>
                   </button>
                 </div>
               </div>
@@ -221,7 +221,7 @@ export default function ChennaiQuiz() {
               <div className="flex justify-center mt-6" id="mainBookNow">
                 <a href="/quizform">
                   <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg font-medium transition capitalize cursor-pointer">
-                    book now
+                    Register Now
                   </button>
                 </a>
               </div>

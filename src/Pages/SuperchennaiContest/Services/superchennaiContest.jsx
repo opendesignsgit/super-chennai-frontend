@@ -11,12 +11,31 @@ export const getContests = async () => {
   }
 };
 
+// export const getContestBySlug = async (slug) => {
+//   try {
+//     const res = await axios.get(`${API_BASE_URL}/api/superchennaiContests/${slug}`);
+//     return res.data || null;
+//   } catch (err) {
+//     console.error("Error fetching contest:", err);
+//     return null;
+//   }
+// };
+
 export const getContestBySlug = async (slug) => {
   try {
-    const res = await axios.get(`${API_BASE_URL}/api/superchennaiContests/${slug}`);
-    return res.data || null;
+    const res = await axios.get(
+      `${API_BASE_URL}/api/superchennaiContests`,
+      {
+        params: {
+          'where[slug][equals]': slug
+        }
+      }
+    );
+
+    return res.data?.docs?.[0] || null;
   } catch (err) {
     console.error("Error fetching contest:", err);
     return null;
   }
 };
+

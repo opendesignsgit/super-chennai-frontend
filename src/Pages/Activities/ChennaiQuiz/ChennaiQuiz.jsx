@@ -61,7 +61,7 @@ export default function ChennaiQuiz() {
 
               <div className="ebanimgbtn flex justify-between items-center mb-[5vh]">
                 <div className="ebbmgiL flex gap-2">
-                  <h5 className="hidden md:block">Quiz</h5>
+                  {/* <h5 className="hidden md:block">Quiz</h5> */}
                   <button
                     className="block md:hidden lg:hidden"
                     onClick={() => {

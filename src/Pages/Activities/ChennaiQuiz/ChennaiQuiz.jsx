@@ -153,7 +153,7 @@ export default function ChennaiQuiz() {
 
             {/* Right Side */}
 
-            <div className="EventRight w-full lg:w-[320px] bg-white rounded-lg shadow p-5 h-max">
+            <div className="EventRight w-full lg:w-[320px] bg-white rounded-lg shadow p-5 h-max" id="mainBookNow">
               <h4 className="text-lg font-semibold mb-3">Super Chennai Quiz</h4>
 
               <div className="space-y-3">
@@ -218,7 +218,7 @@ export default function ChennaiQuiz() {
                 </div>
               </div>
 
-              <div className="flex justify-center mt-6" id="mainBookNow">
+              <div className="flex justify-center mt-6" >
                 <a href="/quizform">
                   <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg font-medium transition capitalize cursor-pointer">
                     Register Now

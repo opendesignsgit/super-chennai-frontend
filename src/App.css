@@ -96,6 +96,11 @@
   margin-top: 19%;
   height: auto !important;
 }
+
+
+#mainBookNow {
+  scroll-margin-top: 220px;
+}
 }
 
 .clcboxItemss .clcboxICont p.linkpara a img {

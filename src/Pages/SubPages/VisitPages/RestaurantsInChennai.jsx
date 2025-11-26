@@ -403,6 +403,18 @@ const detailsections = [
     title: "Cafés & Casual Bites",
     points: [
       {
+        name: "Vandough Café",
+        description:
+          "Van Dough Cafe offers coffee, pizzas, and Thai dishes with dine-in and delivery. People enjoy the flavours, but service may sometimes be slow.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/PVzmAoLWorsGo48u7",
+          },
+        ],
+      },
+      {
         name: "Coffea",
         description:
           "A charming café perfect for coffee lovers and casual meetups. Serves freshly brewed blends, light bites, and cozy vibes all day long.",
@@ -849,6 +861,20 @@ const detailsections = [
     title: "South Indian Classics",
     points: [
       {
+        name: "Visesham",
+        description:
+          "Visesham Restaurant offers delicious South Indian meals with homely taste and fresh ingredients.",
+        subDescription:
+          "Known for its simple, comforting dishes and friendly service.",
+        locations: [
+          {
+            label: "Nandanam",
+            link: "https://maps.app.goo.gl/KEam6a7pCYfEEBBv6",
+          },
+        ],
+      },
+
+      {
         name: "Ratna Café",
         description: "Iconic sambar idli",
         subDescription:
@@ -1072,6 +1098,32 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
+      {
+        name: "Hot n Cool",
+        description:
+          "Hot n Cool is known for its vibrant taste, clean atmosphere, and friendly service.",
+        subDescription:
+          "A go-to spot for everyday cravings with fresh and flavorful dishes.",
+        locations: [
+          {
+            label: "Thousand Lights",
+            link: "https://maps.app.goo.gl/JNzYohGv1w195btKA",
+          },
+        ],
+      },
+
+      {
+        name: "Jolly Indian",
+        description: "Authentic Indian flavors with a modern twist",
+        subDescription:
+          "Family-friendly restaurant offering rich curries, fresh breads, spicy starters, and comforting meals made with quality ingredients.",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/PrXBJjREdPLcYkeX9",
+          },
+        ],
+      },
       {
         name: "Old Cheese Bar",
         description:

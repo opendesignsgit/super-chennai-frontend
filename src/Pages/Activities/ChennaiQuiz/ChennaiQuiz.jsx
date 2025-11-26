@@ -41,9 +41,7 @@ export default function ChennaiQuiz() {
 
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="contests/chennai-quiz">
-                Super Chennai Quiz
-              </Link>
+              <Link to="contests/chennai-quiz">Super Chennai Quiz</Link>
             </div>
           </div>
         </div>
@@ -63,7 +61,20 @@ export default function ChennaiQuiz() {
 
               <div className="ebanimgbtn flex justify-between items-center mb-[5vh]">
                 <div className="ebbmgiL flex gap-2">
-                  <h5> Quiz </h5>
+                  <h5 className="hidden md:block">Quiz</h5>
+                  <button
+                    className="block md:hidden lg:hidden"
+                    onClick={() => {
+                      const target = document.getElementById("mainBookNow");
+                      if (target)
+                        target.scrollIntoView({
+                          behavior: "smooth",
+                          block: "start", 
+                        });
+                    }}
+                  >
+                    <h5>Book Now</h5>
+                  </button>
                 </div>
               </div>
 
@@ -138,7 +149,7 @@ export default function ChennaiQuiz() {
                   />
                 </div>
               </div>
-            </div>  
+            </div>
 
             {/* Right Side */}
 
@@ -207,7 +218,7 @@ export default function ChennaiQuiz() {
                 </div>
               </div>
 
-              <div className="flex justify-center mt-6">
+              <div className="flex justify-center mt-6" id="mainBookNow">
                 <a href="/quizform">
                   <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg font-medium transition capitalize cursor-pointer">
                     book now

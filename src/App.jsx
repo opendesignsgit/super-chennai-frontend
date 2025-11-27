@@ -266,7 +266,11 @@ import RestaurantsPage from "./Pages/Visits/Pages/Restaurants/RestaurantsPage"
 import TestPage from "./Pages/Visits/Pages/Restaurants//testPage"
 import SuperchennaiContests from "./Pages/SuperchennaiContest/ContestPage"
 import SuperchennaiContestDetails from "./Pages/SuperchennaiContest/ContestDetailsPage"
+import IconOfMonthList from "./Pages/IconOfTheMonth/IconOfTheMonth" 
+import IconOfMonthDetails from "./Pages/IconOfTheMonth/IconOfMonthDetailPage"
+
 import NotFound from "../src/NotFound"
+
 
 
 
@@ -560,13 +564,15 @@ function App() {
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:slug" element={<BlogDetails />} />
           <Route path="/chennai-contests" element={<SuperchennaiContests />} />
-          <Route path="/chennai-contests/:slug" element={<SuperchennaiContestDetails />} />
+          <Route  path="/chennai-contests/:slug"  element={<SuperchennaiContestDetails />} />
+           
+          <Route path="/chennai-icon-of-the-month-details/:slug" element={<IconOfMonthDetails />} />
+          <Route path="/chennai-icon-of-the-month" element={<IconOfMonthList />} />
 
-        {/* 404 Page */}
+          {/* 404 Page */}
           <Route path="*" element={<NotFound />} />
 
-
-       {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
+          {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
 
           {/*----Main-Pages---------*/}
 
@@ -1164,10 +1170,7 @@ function App() {
             path="/superchennai-events-details/:url"
             element={<EventsDetails />}
           />
-          <Route
-            path="contests/chennai-quiz"
-            element={<ChennaiQuiz />}
-          />
+          <Route path="contests/chennai-quiz" element={<ChennaiQuiz />} />
           <Route path="/quizform" element={<QuizForm />} />
           <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
 

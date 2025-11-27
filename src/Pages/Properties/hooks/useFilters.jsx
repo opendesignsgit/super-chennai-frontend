@@ -6,7 +6,7 @@ import {
 } from "../services/propertyService";
 
 export const useFiltersData = () => {
-  const [locations, setLocations] = useState([]);
+  const [propertylocations, setLocations] = useState([]);
   const [propertyTypes, setPropertyTypes] = useState([]);
   const [bhkOptions, setBhkOptions] = useState([]);
   const [furnishings, setFurnishings] = useState([]);
@@ -29,19 +29,20 @@ export const useFiltersData = () => {
           fetchBhkOptions(),
         ]);
 
-        // ✅ Map API data to uniform structure: { id, label, value }
+ 
         setLocations(
           locRes.map((loc) => ({
             id: loc.id,
-            label: loc.label, // eg: "Sengalpattu"
-            value: loc.value, // eg: "sengal"
+            label: `${loc.city} - ${loc.locality}`, // For UI
+            value: loc.locality.toLowerCase(), // Used for filters
           }))
         );
+
 
         setPropertyTypes(
           propTypeRes.map((type) => ({
             id: type.id,
-            label: type.label || type.value, // fallback to value
+            label: type.label || type.value, 
             value: type.value,
           }))
         );
@@ -120,7 +121,7 @@ export const useFiltersData = () => {
   }, []);
 
   return {
-    locations,
+    propertylocations,
     propertyTypes,
     bhkOptions,
     furnishings,

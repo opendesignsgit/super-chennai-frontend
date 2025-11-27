@@ -5,10 +5,9 @@ import { API_BASE_URL } from "../../../../config"
 
 const API_URL = `${API_BASE_URL}/api`
 
-
 export const fetchProperties = async (filters = {}, sortBy = "") => {
-  
   const params = { limit: 0 };
+
 
   // Budget
   // if (filters.minBudget != null) {
@@ -18,10 +17,20 @@ export const fetchProperties = async (filters = {}, sortBy = "") => {
   //   params["where[price][less_than_equal]"] = filters.maxBudget;
   // }
 
-  // Locations (relationship)
+
+
+
+
+
+
+
   if (filters.propertylocations?.length) {
-    params["where[propertylocations][in]"] = filters.propertylocations.join(",");
-  }
+    // params["where[propertylocations][in]"] = filters.propertylocations.join(",");
+    params["where[propertylocations.id][in]"] = filters.propertylocations.join(",");
+
+  }  
+
+
 
   if (filters.bhk?.length) {
     params["where[bhk.value][in]"] = filters.bhk.join(",");
@@ -267,7 +276,6 @@ export const fetchPropertyTypes = async () => {
   return data.docs || [];
 };
 
-// Fetch BHK Options (make sure you have a collection or enum for this in Payload)
 export const fetchBhkOptions = async () => {
   // const { data } = await axios.get(`${API_URL}/bhkTypes`);
   const { data } = await axios.get(`${API_URL}/bhkTypes`, {

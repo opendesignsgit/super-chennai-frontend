@@ -28,14 +28,9 @@ const PropertiesPage = () => {
   const totalPages = Math.ceil(properties.length / ITEMS_PER_PAGE);
   const [useTopFilter, setUseTopFilter] = useState(false);
   
-
-
-  
-
   const handleCheckboxChange = (name, value, nestedKey = null) => {
     setFilters((prev) => {
       if (nestedKey) {
-        // for nested object filters (e.g., bathroomFeatures)
         return {
           ...prev,
           [name]: {

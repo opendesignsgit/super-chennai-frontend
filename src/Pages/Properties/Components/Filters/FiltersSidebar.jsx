@@ -139,7 +139,7 @@ const FiltersSidebar = ({
   setUseTopFilter,
 }) => {
   const {
-    locations,
+    propertylocations,
     propertyTypes,
     bhkOptions,
     purposes,
@@ -147,7 +147,7 @@ const FiltersSidebar = ({
     loading,
   } = useFiltersData();
   const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
-
+  console.log("filter data",filters)
   const [showMore, setShowMore] = useState(false);
   const [showMorePropertyTypes, setShowMorePropertyTypes] = useState(false);
 
@@ -191,10 +191,17 @@ const FiltersSidebar = ({
   const selectedFilter = () => {
     const badges = [];
 
-    // Locations
-    filters.locations.forEach((val) => {
-      const loc = locations.find((l) => l.value === val);
-      if (loc) badges.push({ label: loc.label, type: "locations", value: val });
+    (filters.propertylocations || []).forEach((val) => {
+      const loc = propertylocations.find(
+        (l) => l.id === val || l.value === val
+      );
+      if (loc) {
+        badges.push({
+          label: loc.label,
+          type: "propertylocations",
+          value: val,
+        });
+      }
     });
 
     // BHK
@@ -297,26 +304,49 @@ const FiltersSidebar = ({
     return badges;
   };
 
-  const ShowMoreList = ({ items, renderItem, initialCount = 5 }) => {
-    const [showMore, setShowMore] = useState(false);
+  // const ShowMoreList = ({ items, renderItem, initialCount = 5 }) => {
+  //   const [showMore, setShowMore] = useState(false);
 
-    const visibleItems = showMore ? items : items.slice(0, initialCount);
+  //   const visibleItems = showMore ? items : items.slice(0, initialCount);
 
-    return (
-      <div className="show-more-list">
-        {visibleItems.map(renderItem)}
+  //   return (
+  //     <div className="show-more-list">
+  //       {visibleItems.map(renderItem)}
 
-        {items.length > initialCount && (
-          <span
-            className="more-badge"
-            onClick={() => setShowMore((prev) => !prev)}
-          >
-            {showMore ? "Show Less" : `+${items.length - initialCount} more`}
-          </span>
-        )}
-      </div>
-    );
-  };
+  //       {items.length > initialCount && (
+  //         <span
+  //           className="more-badge"
+  //           onClick={() => setShowMore((prev) => !prev)}
+  //         >
+  //           {showMore ? "Show Less" : `+${items.length - initialCount} more`}
+  //         </span>
+  //       )}
+  //     </div>
+  //   );
+  // };
+
+
+  const ShowMoreList = ({ items = [], renderItem, initialCount = 5 }) => {
+  const [showMore, setShowMore] = useState(false);
+
+  const safeItems = Array.isArray(items) ? items : [];
+  const visibleItems = showMore ? safeItems : safeItems.slice(0, initialCount);
+
+  return (
+    <div className="show-more-list">
+      {visibleItems.map(renderItem)}
+
+      {safeItems.length > initialCount && (
+        <span
+          className="more-badge"
+          onClick={() => setShowMore((prev) => !prev)}
+        >
+          {showMore ? "Show Less" : `+${safeItems.length - initialCount} more`}
+        </span>
+      )}
+    </div>
+  );
+};
 
   return (
     <aside className="filters-sidebar">
@@ -384,18 +414,18 @@ const FiltersSidebar = ({
         </div>
       </FilterSection>
 
-      {/* Locations */}
+      {/* propertylocations */}
 
-      <FilterSection title="Locations">
+      <FilterSection title="propertylocations">
         <ShowMoreList
-          items={locations}
+          items={propertylocations}
           initialCount={5}
           renderItem={(loc) => (
             <label key={loc.id} className="filter-checkbox">
               <input
                 type="checkbox"
-                checked={filters.locations.includes(loc.id)}
-                onChange={() => onCheckboxChange("locations", loc.id)}
+                checked={filters.propertylocations.includes(loc.id)}
+                onChange={() => onCheckboxChange("propertylocations", loc.id)}
               />
 
               <span>{formatLabel(loc.label)}</span>
@@ -403,6 +433,7 @@ const FiltersSidebar = ({
           )}
         />
       </FilterSection>
+
 
       {/* Budget  Temp Hide */}
       {/* <FilterSection title="Budget">

@@ -1,5 +1,5 @@
 export const defaultFilters = {
-  locations: [],
+  propertylocations: [],  
   propertyTypes: [],
   bhk: [],
   purpose: [],

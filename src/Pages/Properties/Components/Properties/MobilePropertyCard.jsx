@@ -4,6 +4,7 @@ import { formatLabel } from "../../utils/formatLabel";
 import { Link } from "react-router-dom";
 import defaultImage from "../../../../../public/propertyDefault.png";
 import { useState } from "react";
+import "../../Styles/PropertyCard.css";
 
 const getImageUrl = (img) => {
   if (!img?.url) return defaultImage;
@@ -210,12 +211,12 @@ const MobilePropertyCard = ({ property }) => {
               rel="noopener noreferrer"
               className="propertyViewDetails flex items-center gap-1"
             >
-              Official Project Link
-              <img
+             View Project Website
+              {/* <img
                 className="propertyAroWwCLick"
                 src="/images/icons/right-side-arrow-superchennai.svg"
                 alt="arrow"
-              />
+              /> */}
             </a>
           )}
           <Link

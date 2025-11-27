@@ -187,7 +187,7 @@ const BlogDetail = () => {
           <meta name="description" content={blog.metadescription} />
         )}
 
-        <link rel="canonical" href={`https://superchennai.in/blog/${slug}`} />
+        <link rel="canonical" href={window.location.href} />
 
         {/* Optional SEO extras */}
         <meta property="og:title" content={blog.metatitle || blog.title} />

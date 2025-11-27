@@ -20,17 +20,9 @@ export const fetchProperties = async (filters = {}, sortBy = "") => {
 
 
 
-
-
-
-
   if (filters.propertylocations?.length) {
-    // params["where[propertylocations][in]"] = filters.propertylocations.join(",");
-    params["where[propertylocations.id][in]"] = filters.propertylocations.join(",");
-
+    params["where[propertyLocation.id][in]"] = filters.propertylocations.join(",");
   }  
-
-
 
   if (filters.bhk?.length) {
     params["where[bhk.value][in]"] = filters.bhk.join(",");

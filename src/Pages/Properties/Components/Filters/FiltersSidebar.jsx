@@ -147,7 +147,6 @@ const FiltersSidebar = ({
     loading,
   } = useFiltersData();
   const activeFilterKeys = getActiveFilterKeys(filters.propertyTypes);
-  console.log("filter data",filters)
   const [showMore, setShowMore] = useState(false);
   const [showMorePropertyTypes, setShowMorePropertyTypes] = useState(false);
 

@@ -98,6 +98,8 @@ const BlogDetail = () => {
   const [loading, setLoading] = useState(true);
   const [relatedBlogs, setRelatedBlogs] = useState([]);
 
+  console.log("blogdeatil",blog)
+
   useEffect(() => {
     const fetchBlog = async () => {
       try {
@@ -177,10 +179,29 @@ const BlogDetail = () => {
 
   return (
     <>
+    
       <Helmet>
-        <title>{blog.metatitle}</title>
-        <meta name="description" content={blog.metadescription} />
-        <link rel="canonical" href="/live-in-chennai" />
+        <title>{blog.metatitle || blog.title}</title>
+
+        {blog.metadescription && (
+          <meta name="description" content={blog.metadescription} />
+        )}
+
+        <link rel="canonical" href={`https://superchennai.in/blog/${slug}`} />
+
+        {/* Optional SEO extras */}
+        <meta property="og:title" content={blog.metatitle || blog.title} />
+        <meta
+          property="og:description"
+          content={blog.metadescription || blog.title}
+        />
+        {blog.heroImage && (
+          <meta
+            property="og:image"
+            content={`${API_BASE_URL}${blog.heroImage}`}
+          />
+        )}
+        <meta property="og:type" content="article" />
       </Helmet>
 
       <div className="BlogDetailPageId">

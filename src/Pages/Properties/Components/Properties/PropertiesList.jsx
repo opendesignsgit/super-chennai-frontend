@@ -6,6 +6,9 @@
   import useIsMobile from "../../hooks/useIsMobile";
   import MobilePropertyCard from "../Properties/MobilePropertyCard";
   import MobilePropertyCardSkeleton from "../../Components/loader/MobilePropertyCardSkeleton";
+  
+    import useDevice from "../../hooks/useIsMobile";
+
   const PropertiesList = ({
     properties,
     loading,
@@ -16,6 +19,8 @@
   }) => {
     const { propertylocations, furnishings } = useFiltersData();
     const isMobile = useIsMobile();
+const device = useDevice(); // returns "mobile", "tablet", or "desktop"
+
 
 
     if (loading) {
@@ -152,11 +157,13 @@
           </div>
         </div>
 
-        {isMobile ? (
+        {/* {isMobile ? (
           <div className="">
             {properties.map((prop, index) => (
-              <div className="p-2">
-                <MobilePropertyCard key={index} property={prop} />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-2">
+                {properties.map((p) => (
+                  <MobilePropertyCard key={p.id} property={p} />
+                ))}
               </div>
             ))}
           </div>
@@ -164,6 +171,18 @@
           properties.map((prop, index) => (
             <PropertyCard key={index} property={prop} />
           ))
+        )} */}
+
+        {device === "desktop" ? (
+          properties.map((prop, index) => (
+            <PropertyCard key={index} property={prop} />
+          ))
+        ) : (
+          <div className="grid grid-cols-2 gap-3">
+            {properties.map((prop) => (
+              <MobilePropertyCard key={prop.id} property={prop} />
+            ))}
+          </div>
         )}
       </div>
     );

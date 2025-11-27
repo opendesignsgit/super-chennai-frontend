@@ -303,49 +303,26 @@ const FiltersSidebar = ({
     return badges;
   };
 
-  // const ShowMoreList = ({ items, renderItem, initialCount = 5 }) => {
-  //   const [showMore, setShowMore] = useState(false);
+  const ShowMoreList = ({ items, renderItem, initialCount = 5 }) => {
+    const [showMore, setShowMore] = useState(false);
 
-  //   const visibleItems = showMore ? items : items.slice(0, initialCount);
+    const visibleItems = showMore ? items : items.slice(0, initialCount);
 
-  //   return (
-  //     <div className="show-more-list">
-  //       {visibleItems.map(renderItem)}
+    return (
+      <div className="show-more-list">
+        {visibleItems.map(renderItem)}
 
-  //       {items.length > initialCount && (
-  //         <span
-  //           className="more-badge"
-  //           onClick={() => setShowMore((prev) => !prev)}
-  //         >
-  //           {showMore ? "Show Less" : `+${items.length - initialCount} more`}
-  //         </span>
-  //       )}
-  //     </div>
-  //   );
-  // };
-
-
-  const ShowMoreList = ({ items = [], renderItem, initialCount = 5 }) => {
-  const [showMore, setShowMore] = useState(false);
-
-  const safeItems = Array.isArray(items) ? items : [];
-  const visibleItems = showMore ? safeItems : safeItems.slice(0, initialCount);
-
-  return (
-    <div className="show-more-list">
-      {visibleItems.map(renderItem)}
-
-      {safeItems.length > initialCount && (
-        <span
-          className="more-badge"
-          onClick={() => setShowMore((prev) => !prev)}
-        >
-          {showMore ? "Show Less" : `+${safeItems.length - initialCount} more`}
-        </span>
-      )}
-    </div>
-  );
-};
+        {items.length > initialCount && (
+          <span
+            className="more-badge"
+            onClick={() => setShowMore((prev) => !prev)}
+          >
+            {showMore ? "Show Less" : `+${items.length - initialCount} more`}
+          </span>
+        )}
+      </div>
+    );
+  };
 
   return (
     <aside className="filters-sidebar">
@@ -357,7 +334,6 @@ const FiltersSidebar = ({
             onClick={() => setUseTopFilter((prev) => !prev)}
           >
             <span>Switch Top</span>
-           
           </button>
         )}
       </div>
@@ -415,7 +391,7 @@ const FiltersSidebar = ({
 
       {/* propertylocations */}
 
-      <FilterSection title="propertylocations">
+      <FilterSection title="Locations">
         <ShowMoreList
           items={propertylocations}
           initialCount={5}
@@ -432,7 +408,6 @@ const FiltersSidebar = ({
           )}
         />
       </FilterSection>
-
 
       {/* Budget  Temp Hide */}
       {/* <FilterSection title="Budget">

@@ -1,15 +1,41 @@
+// import { useEffect, useState } from "react";
+
+// export default function useIsMobile(breakpoint = 640) {
+//   const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint);
+
+//   useEffect(() => {
+//     const handleResize = () => {
+//       setIsMobile(window.innerWidth < breakpoint);
+//     };
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, [breakpoint]);
+
+//   return isMobile;
+// }
+
+
 import { useEffect, useState } from "react";
 
-export default function useIsMobile(breakpoint = 640) {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint);
+export default function useDevice(breakpoints = { mobile: 640, tablet: 1024 }) {
+const [device, setDevice] = useState("desktop");
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < breakpoint);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [breakpoint]);
+useEffect(() => {
+const checkDevice = () => {
+if (typeof window === "undefined") return;
+const width = window.innerWidth;
+if (width < breakpoints.mobile) setDevice("mobile");
+else if (width < breakpoints.tablet) setDevice("tablet");
+else setDevice("desktop");
+};
 
-  return isMobile;
+
+checkDevice();
+window.addEventListener("resize", checkDevice);
+return () => window.removeEventListener("resize", checkDevice);
+
+
+}, [breakpoints]);
+
+return device; 
 }

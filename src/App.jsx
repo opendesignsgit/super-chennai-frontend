@@ -31,6 +31,7 @@ import Transportation from "./Pages/SubPages/LivePages/Transportation";
 import Transportationchennai from "./Pages/SubPages/LivePages/Transportation-chennai";
 
 //##################### NEWLY ADEDD  ###################################
+import { Navigate } from "react-router-dom";
 
 import Chengalpattu from "./Pages/SubPages/LivePages/Chengalpattu";
 import Kanchipuram from "./Pages/SubPages/LivePages/Kanchipuram";
@@ -569,6 +570,9 @@ function App() {
           <Route path="/chennai-icon-of-the-month-details/:slug" element={<IconOfMonthDetails />} />
           <Route path="/chennai-icon-of-the-month" element={<IconOfMonthList />} />
 
+           
+
+
           {/* 404 Page */}
           <Route path="*" element={<NotFound />} />
 
@@ -603,6 +607,9 @@ function App() {
             path="/superchennai-contest"
             element={<SuperChennaiEvents />}
           />
+
+
+
           <Route
             path="/icon-of-the-month-in-chennai"
             element={<Iconsofthemonth />}
@@ -1171,6 +1178,15 @@ function App() {
             element={<EventsDetails />}
           />
           <Route path="contests/chennai-quiz" element={<ChennaiQuiz />} />
+
+
+        <Route
+  path="/superchennai-quiz"
+  element={<Navigate to="/contests/chennai-quiz" replace />}
+/>
+
+
+
           <Route path="/quizform" element={<QuizForm />} />
           <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
 

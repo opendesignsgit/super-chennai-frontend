@@ -150,7 +150,7 @@ export default function EventsDetails() {
               maxLines={2}
             />
             <div className="breadCrum z-10">
-              <Link to="/">Home</Link> - <Link to="/events">Events</Link>
+              <Link to="/">Home</Link> - <Link to="/chennai-events">Events</Link>
             </div>
           </div>
         </div>

@@ -137,6 +137,7 @@ const FiltersSidebar = ({
   onBudgetChange,
   onClearAll,
   setUseTopFilter,
+  onClose,
 }) => {
   const {
     propertylocations,
@@ -326,7 +327,7 @@ const FiltersSidebar = ({
 
   return (
     <aside className="filters-sidebar">
-      <div className="filters-header flex items-center justify-between mb-4">
+      {/* <div className="filters-header flex items-center justify-between mb-4">
         <h3 className="filters-title">Filters</h3>
         {setUseTopFilter && (
           <button
@@ -336,6 +337,28 @@ const FiltersSidebar = ({
             <span>Switch Top</span>
           </button>
         )}
+      </div> */}
+      <div className="filters-header flex items-center justify-between mb-4">
+        <h3 className="filters-title text-lg font-semibold">Filters</h3>
+
+        <div className="flex items-center gap-3">
+          {setUseTopFilter && (
+            <button
+              className="flex items-center gap-1 text-purple-600 hover:text-purple-800 text-sm"
+              onClick={() => setUseTopFilter((prev) => !prev)}
+            >
+              <span>Switch Top</span>
+            </button>
+          )}
+
+          {/* CLOSE BUTTON */}
+          <button
+            className="text-gray-600 hover:text-gray-800 text-xl font-bold md:hidden"
+            onClick={onClose}
+          >
+            ✕
+          </button>
+        </div>
       </div>
 
       {selectedFilter().length > 0 && (

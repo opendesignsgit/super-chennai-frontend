@@ -18,7 +18,7 @@ import {
 } from "@radix-ui/react-tooltip";
 import AutoShrinkText from "../../Components/Text/AutoShrinkText";
 import PropertyVideos from "./Components/Properties/PropertyVideos";
-import defaultImage from "../../../public/propertyDefault.png"
+import defaultImage from "../../../public/propertyDefault.png";
 import {
   ArrowLeftIcon,
   ArrowRight,
@@ -64,7 +64,6 @@ import {
   Droplets,
 } from "lucide-react";
 
-
 const amenityIcons = {
   elevator: (
     <img
@@ -97,7 +96,7 @@ const amenityIcons = {
     />
   ),
 
-  miniTheatre:<ArrowUp size={18} />,
+  miniTheatre: <ArrowUp size={18} />,
   indoorGames: <ArrowUp size={18} />,
   herbGarden: <ArrowUp size={18} />,
   multipurposeHall: <ArrowUp size={18} />,
@@ -152,7 +151,6 @@ const amenityIcons = {
   firePit: <ArrowUp size={18} />,
 };
 
-
 const interiorIcons = {
   doorType: DoorOpen,
   wardrobes: Package,
@@ -176,19 +174,14 @@ const applianceIcons = {
   solar: Sun,
 };
 
-
 import { useEffect } from "react";
 import "./Styles/PropertyDetailPage.css";
 import { API_BASE_URL } from "./../../../config";
-import NotFound from "../GlobalComponents/NotFound"
-
-
+import NotFound from "../GlobalComponents/NotFound";
 
 const PropertyDetailPage = () => {
   const { id, slug } = useParams();
   const { property, loading } = useProperty({ id, slug });
-
-  
 
   console.log("property", property);
   const [openSpec, setOpenSpec] = useState(false);
@@ -214,7 +207,7 @@ const PropertyDetailPage = () => {
   const [showAll, setShowAll] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+
   const trueAmenities = property?.buildingAmenities
     ? Object.entries(property.buildingAmenities).filter(([_, value]) => value)
     : [];
@@ -279,26 +272,22 @@ const PropertyDetailPage = () => {
   const urgentSale = property?.urgentSale ?? false;
   const availabilityStatus = property?.availabilityStatus ?? null;
 
-
-
-
   return (
     <>
       <Helmet>
-        <title>{property.title} | Chennai Properties</title>
-        <meta
-          name="description"
-          content={`Explore details of ${property.title}, located in ${
-            property.location?.label || ""
-          }.`}
-        />
-        <link
-          rel="canonical"
-          href={`/properties/${property.slug || property.id}`}
-        />
+        <title>{metaTitle} | Chennai Properties</title>
+
+        <meta name="description" content={metaDescription} />
+
+        <link rel="canonical" href={`/properties/${property.slug}`} />
+
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={metaImage} />
+        <meta property="og:url" content={`/properties/${property.slug}`} />
       </Helmet>
 
-      <div className="accaodomationBannerSection relative w-full h-[300px] overflow-hidden">
+      <div className="accaodomationBannerSection relative w-full h-[400px] overflow-hidden">
         <div>
           <img src="/images/banner-blog.jpg" alt="Properties Banner" />
           <img
@@ -592,7 +581,7 @@ const PropertyDetailPage = () => {
 
         {/* Action Buttons */}
         <div className="flex items-center justify-start gap-4 pt-3 border-t border-gray-200">
-          <button
+          {/* <button
             className="text-white font-medium px-4 py-2 rounded-full transition-all flex items-center gap-1"
             style={{ backgroundColor: "#a34493" }}
             onClick={() => setIsContactModalOpen(true)}
@@ -617,7 +606,7 @@ const PropertyDetailPage = () => {
             }
           >
             <Download size={16} /> Download Brochure
-          </button>
+          </button> */}
         </div>
 
         {isContactModalOpen && (

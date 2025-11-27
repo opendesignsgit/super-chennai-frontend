@@ -94,7 +94,7 @@ import Thingstodo from "./Pages/SubPages/VisitPages/Thingstodo";
 import Traveltips from "./Pages/SubPages/VisitPages/Traveltips";
 import Wellness from "./Pages/SubPages/VisitPages/Wellness";
 import TrendingDetails from "./Components/TrendingDetails";
-import EventsDetails from "./Pages/SubPages/EventsPages/EventsDetails";
+import EventsDetails from "./Pages/EventsDetails";
 import NightLifeInChennai from "./Pages/SubPages/VisitPages/ChennaiNightLife";
 import Luxuryhotels from "./Pages/SubPages/VisitPages/Luxuryhotels";
 import RestaurantsInChennai from "./Pages/SubPages/VisitPages/RestaurantsInChennai";
@@ -259,6 +259,8 @@ import PrideofChennai from "./Pages/PrideofChennai";
 import PropertiesPage from "./Pages/Properties/PropertiesPage";
 import PropertyDetailPage from "./Pages/Properties/PropertyDetailPage";
 import ChennaiApp from "./Pages/Chennai-app";
+import EventsDetailsOld from "./Pages/EventsDetails";
+
 
 
 // ############# DYNAMIC PAGES ##################
@@ -580,6 +582,8 @@ function App() {
 
           {/*----Main-Pages---------*/}
 
+
+
           <Route path="/" element={<HomePage />} />
           <Route path="/results" element={<SearchResults />} />
 
@@ -594,7 +598,11 @@ function App() {
 
           <Route path="/visit-chennai" element={<Visit />} />
           <Route path="/work-in-chennai" element={<Work />} />
-          <Route path="/superchennai-events" element={<EventsHome />} />
+
+
+          <Route path="/oldevenslist" element={<EventsHome />} />
+          <Route path="/eventsold/:slug" element={<EventsDetailsOld />} />
+
 
           <Route path="/media-coverage" element={<NewsLetter />} />
           <Route path="/event-function" element={<EventFunction />} />

@@ -79,12 +79,10 @@ const MobilePropertyCard = ({ property }) => {
 
   return (
     <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full border border-gray-200">
-      {/* IMAGE SECTION */}
       <div className="relative">
         <img src={heroImage} alt={title} className="w-full h-56 object-cover" />
 
-        {/* TOP BADGES (added featured / urgentSale / transactionType) */}
-        <div className="absolute top-2 left-2 flex gap-2">
+        <div className="absolute top-2 left-2 flex flex-wrap gap-2 max-w-[90%]">
           {property.featured && (
             <span className="bg-green-600 text-white text-[10px] sm:text-xs px-2 py-1 rounded-md">
               Featured

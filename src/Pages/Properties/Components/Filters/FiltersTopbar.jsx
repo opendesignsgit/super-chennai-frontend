@@ -55,7 +55,7 @@ const FiltersTopbar = ({
   setUseTopFilter,
 }) => {
   const {
-    locations,
+    propertylocations,
     propertyTypes,
     bhkOptions,
     purposes,
@@ -127,14 +127,14 @@ const FiltersTopbar = ({
         {/* Locations */}
         <FilterSection title="Locations">
           <ShowMoreList
-            items={locations}
+            items={propertylocations}
             initialCount={5}
             renderItem={(loc) => (
               <label key={loc.id} className="filter-checkbox mr-2">
                 <input
                   type="checkbox"
-                  checked={filters.locations.includes(loc.id)}
-                  onChange={() => onCheckboxChange("locations", loc.id)}
+                  checked={filters.propertylocations.includes(loc.id)}
+                  onChange={() => onCheckboxChange("propertylocations", loc.id)}
                 />
                 <span>{formatLabel(loc.label)}</span>
               </label>

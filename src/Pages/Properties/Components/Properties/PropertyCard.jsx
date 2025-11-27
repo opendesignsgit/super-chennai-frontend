@@ -160,7 +160,12 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
           <img
             src={heroImage}
             alt={title}
-            className={`propertyImage ${viewType === "list" ? "w-1/3 mr-4" : ""}`}
+            className={`propertyImage 
+          object-cover rounded-md
+           min-w-[200px] max-w-[400px]
+           h-[240px]
+          ${viewType === "list" ? "w-1/3 mr-4" : "w-full"}
+           `}
           />
 
           <div className="propertyDetails">

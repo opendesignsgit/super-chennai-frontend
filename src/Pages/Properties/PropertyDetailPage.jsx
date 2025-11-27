@@ -275,7 +275,7 @@ const PropertyDetailPage = () => {
   return (
     <>
       <Helmet>
-        <title>{metaTitle} | Chennai Properties</title>
+        <title>{metaTitle} </title>
 
         <meta name="description" content={metaDescription} />
 

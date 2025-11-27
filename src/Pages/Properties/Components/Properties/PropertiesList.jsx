@@ -51,7 +51,10 @@ const PropertiesList = ({
         {/* Icon */}
         <div className="mb-4">
           <svg
-            className="w-16 h-16 text-purple-400"
+            className="w-16 h-16 transition"
+            style={{ color: "#a44294" }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#8b327f")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#a44294")}
             fill="none"
             stroke="currentColor"
             strokeWidth={1.5}
@@ -79,7 +82,16 @@ const PropertiesList = ({
         {/* Button */}
         <button
           onClick={() => window.location.reload()}
-          className="mt-6 px-6 py-2 rounded-lg bg-purple-600 text-white font-medium hover:bg-purple-700 transition"
+          className="mt-6 px-6 py-2 rounded-lg text-white font-medium transition"
+          style={{
+            backgroundColor: "#a44294",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.backgroundColor = "#8b327f")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.backgroundColor = "#a44294")
+          }
         >
           Reset Filters
         </button>

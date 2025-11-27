@@ -53,7 +53,7 @@ export default function ChennaiQuiz() {
           <div className="EventContBox flex flex-wrap">
             {/* Left Side */}
             <div className="EventLeft">
-              <h2>Super Chennai Quiz</h2>
+              <h1>Super Chennai Quiz</h1>
 
               <div className="EventBanImg">
                 <img src="/images/events/superchennai-quiz-inner-2.jpg" />

@@ -15,12 +15,10 @@ export default function ChennaiQuiz() {
           name="description"
           content="The Super Chennai Quiz is here on Dec 7, 2025! Test your knowledge across sports, music, food, and Chennai. Exciting prizes await—team up and enjoy an epic evening."
         />
-        {/* <link rel="canonical" href="/contests/chennai-quiz" /> */}
         <link
-  rel="canonical"
-  href={`${typeof window !== "undefined" ? window.location.origin : ""}/contests/chennai-quiz`}
-/>
-
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/contests/chennai-quiz`}
+        />
       </Helmet>
 
       <section className="accaodomationBannerSection carquizbanner">
@@ -45,8 +43,7 @@ export default function ChennaiQuiz() {
             <h3>Super Chennai Quiz</h3>
 
             <div className="breadCrum">
-              <Link to="/">Home</Link> -{" "}
-              <Link to="./">Super Chennai Quiz</Link>
+              <Link to="/">Home</Link> - <Link to="./">Super Chennai Quiz</Link>
             </div>
           </div>
         </div>
@@ -158,7 +155,10 @@ export default function ChennaiQuiz() {
 
             {/* Right Side */}
 
-            <div className="EventRight w-full lg:w-[320px] bg-white rounded-lg shadow p-5 h-max" id="mainBookNow">
+            <div
+              className="EventRight w-full lg:w-[320px] bg-white rounded-lg shadow p-5 h-max"
+              id="mainBookNow"
+            >
               <h4 className="text-lg font-semibold mb-3">Super Chennai Quiz</h4>
 
               <div className="space-y-3">
@@ -223,7 +223,7 @@ export default function ChennaiQuiz() {
                 </div>
               </div>
 
-              <div className="flex justify-center mt-6" >
+              <div className="flex justify-center mt-6">
                 <a href="/quizform">
                   <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg font-medium transition capitalize cursor-pointer">
                     Register Now

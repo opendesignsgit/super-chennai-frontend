@@ -16,12 +16,10 @@
   height: 60%;
   z-index: -1;
   border-bottom: 4px solid #fff;
-  background: linear-gradient(
-    90deg,
-    rgb(30 110 73) 0%,
-    rgb(48 132 134) 50%,
-    rgb(1 55 83) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(30 110 73) 0%,
+      rgb(48 132 134) 50%,
+      rgb(1 55 83) 100%);
   background-size: 200% 100%;
   background-position: 0% 0%;
   /* animation: animateGradient 6s ease infinite alternate; */
@@ -88,6 +86,7 @@
     height: 60vh;
     width: auto;
   }
+
   .heroSliderDots {
     bottom: 26px;
   }
@@ -98,6 +97,7 @@
     height: 60vh;
     width: auto;
   }
+
   .heroSliderDots {
     bottom: 26px;
   }
@@ -108,6 +108,7 @@
     height: 50vh;
     width: auto;
   }
+
   .heroSliderDots {
     bottom: 26px;
   }
@@ -130,6 +131,21 @@
   }
 }
 
+
+@media (max-width:800px) and (min-width:600px) {
+  .mobileBanneerHeroSlider {
+
+    width: 120%;
+    height: 500px;
+
+  }
+
+  .bottom-19 {
+    bottom: calc(var(--spacing) * 10);
+}
+
+}
+
 @media (max-width: 760px) {
   .mobileBanneerHeroSlider {
     height: 80vh !important;
@@ -137,6 +153,8 @@
     /* object-fit: contain !important; */
     margin-top: 60px;
   }
+
+
   .herobannerSection {
     margin-top: 40px;
     /* margin-top: -54px; */
@@ -150,6 +168,7 @@
     bottom: 280px;
   }
 }
+
 @media (max-width: 500px) {
   .mobileBanneerHeroSlider {
     height: 87vh !important;
@@ -157,6 +176,7 @@
     margin-top: 60px;
   }
 }
+
 @media (max-width: 400px) {
   .mobileBanneerHeroSlider {
     height: 80vh !important;

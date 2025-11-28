@@ -1194,6 +1194,13 @@ function App() {
 />
 
 
+  <Route
+  path="/fun-quiz-competition-trivia-night"
+  element={<Navigate to="/contests/chennai-quiz" replace />}
+/>
+
+
+
 
           <Route path="/quizform" element={<QuizForm />} />
           <Route path="/quiz-checkout" element={<QuizFormCheckout />} />

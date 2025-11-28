@@ -122,7 +122,8 @@
 .nammaStorieslink {
   /* bottom: 226px; */
   /* top: 50%; */
-  bottom: 205px;
+  /* bottom: 205px; */
+  bottom: 225px;
   /* top: 50%; */
 }
 
@@ -282,6 +283,6 @@
 
 @media (max-width: 768px) {
   .pointcastSticky img {
-    width: 67px;
+    width: 120px;
   }
 }

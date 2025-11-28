@@ -41,7 +41,7 @@ export default function ChennaiQuiz() {
 
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="contests/chennai-quiz">Super Chennai Quiz</Link>
+              <Link to="./">Super Chennai Quiz</Link>
             </div>
           </div>
         </div>

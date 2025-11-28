@@ -213,6 +213,10 @@ const PropertyDetailPage = () => {
     : [];
 
   const visibleAmenities = showAll ? trueAmenities : trueAmenities.slice(0, 6);
+  
+  
+  
+  
   if (loading) return <PropertyDetailSkeleton />;
   if (!property) {
     return (
@@ -271,6 +275,9 @@ const PropertyDetailPage = () => {
   const featured = property?.featured ?? false;
   const urgentSale = property?.urgentSale ?? false;
   const availabilityStatus = property?.availabilityStatus ?? null;
+
+  const moreAmenities = property?.moreAmenities ?? null
+  const validMoreAmenities = moreAmenities?.filter(item => item?.name);
 
   return (
     <>
@@ -837,6 +844,38 @@ const PropertyDetailPage = () => {
                   : `View all Amenities (${trueAmenities.length})`}
               </button>
             )}
+          </div>
+        )}
+
+        {/* More Amenities */}
+        {validMoreAmenities?.length > 0 && (
+          <div className="mt-8 border border-gray-200 rounded-xl p-5 transition-all duration-300">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">
+              More Amenities
+            </h2>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              {validMoreAmenities.map((item) => (
+                <div
+                  key={item.id}
+                  className="flex items-center gap-2  transition"
+                >
+                  {item.icon?.url ? (
+                    <img
+                      src={`${API_BASE_URL}${item.icon.url}`} 
+                      alt={item.name || "amenity-icon"}
+                      className="w-6 h-6 object-contain"
+                    />
+                  ) : (
+                    <span className="w-6 h-6 bg-gray-300 rounded"></span>
+                  )}
+
+                  <p className="text-gray-700 text-sm font-medium">
+                    {item.name}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         )}
 

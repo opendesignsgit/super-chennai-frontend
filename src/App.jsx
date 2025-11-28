@@ -273,15 +273,16 @@ import IconOfMonthList from "./Pages/IconOfTheMonth/IconOfTheMonth"
 import IconOfMonthDetails from "./Pages/IconOfTheMonth/IconOfMonthDetailPage"
 
 import NotFound from "../src/NotFound"
+import ImagePopup from "./Components/ImagePopup";
 
 
 
 
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
-  const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(true);
 
   const [animate, setAnimate] = useState(false);
   const menuItems = [
@@ -471,6 +472,14 @@ function App() {
         <ScrollToHashElement />
 
         <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
+
+        {showPopup && (
+          <ImagePopup
+            onClose={handleClosePopup}
+            // imageUrl="/images/Namma-Stories.jpg"
+            imageUrl="/images/HomePage-Images/superchennai-pop.jpg"
+          />
+        )}
 
         <div
           ref={stickyRef}

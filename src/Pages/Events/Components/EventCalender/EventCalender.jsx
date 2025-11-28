@@ -185,7 +185,7 @@ export default function EventCalender({ events = [] }) {
                 <a>{category}</a>
               </div>
 
-              <a href={`/events/`}>
+              <a href={`/chennai-events`}>
               {/* ${featuredEvent.slug} */}
                 <p className="FindOutMore">Find Out More</p>
               </a>

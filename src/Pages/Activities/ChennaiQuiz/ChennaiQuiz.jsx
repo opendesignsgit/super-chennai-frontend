@@ -15,7 +15,12 @@ export default function ChennaiQuiz() {
           name="description"
           content="The Super Chennai Quiz is here on Dec 7, 2025! Test your knowledge across sports, music, food, and Chennai. Exciting prizes await—team up and enjoy an epic evening."
         />
-        <link rel="canonical" href="/contests/chennai-quiz" />
+        {/* <link rel="canonical" href="/contests/chennai-quiz" /> */}
+        <link
+  rel="canonical"
+  href={`${typeof window !== "undefined" ? window.location.origin : ""}/contests/chennai-quiz`}
+/>
+
       </Helmet>
 
       <section className="accaodomationBannerSection carquizbanner">

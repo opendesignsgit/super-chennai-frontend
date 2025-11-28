@@ -116,7 +116,7 @@
 }
 .pointcastSticky img {
   width: 120px;
-  width: 90px;
+  width: 100px;
 }
 
 .nammaStorieslink {
@@ -282,6 +282,6 @@
 
 @media (max-width: 768px) {
   .pointcastSticky img {
-    width: 47px;
+    width: 67px;
   }
 }

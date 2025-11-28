@@ -29,14 +29,14 @@ const slides = [
     title: "Superchennai-Quiz",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
-  {
-    type: "image",
-    link: "/icon-of-the-oct-month-2025",
-    image: "/images/HomePage-Images/chinmayi-icon-of-month-desktop.jpg",
-    image1: "/images/HomePage-Images/chinmayi-icon-of-month-mobile.jpg",
-    title: "Icon of the month in chennai",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   type: "image",
+  //   link: "/icon-of-the-oct-month-2025",
+  //   image: "/images/HomePage-Images/chinmayi-icon-of-month-desktop.jpg",
+  //   image1: "/images/HomePage-Images/chinmayi-icon-of-month-mobile.jpg",
+  //   title: "Icon of the month in chennai",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
   {
     image: "/images/HomePage-Images/banner-0.jpg",
     link: "#",

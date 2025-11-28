@@ -96,8 +96,19 @@ const amenityIcons = {
     />
   ),
 
+
+    indoorGames: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Gaming Zone.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  
+
   miniTheatre: <ArrowUp size={18} />,
-  indoorGames: <ArrowUp size={18} />,
+  // indoorGames: <ArrowUp size={18} />,  
   herbGarden: <ArrowUp size={18} />,
   multipurposeHall: <ArrowUp size={18} />,
   liftLobby: <ArrowUp size={18} />,

@@ -523,13 +523,13 @@ function App() {
         >
           <a href="/contests/chennai-quiz">
             <img
-              src="/images/quiz-icons.png"
+              src="/images/super-chennai-quiz.png"
               alt="artificial intelligence challenge"
             />
           </a>
         </div>
 
-        <div
+        {/* <div
           ref={stickyRef}
           className={`icon-of-the-month pointcastSticky carRallylink ${
             footerReached ? "footerreached" : ""
@@ -538,7 +538,7 @@ function App() {
           <a href="/icon-of-the-oct-month-2025">
             <img src="/images/icon-of-the-month.png" alt="Star of the month" />
           </a>
-        </div>
+        </div> */}
 
         <div
           ref={stickyRef}

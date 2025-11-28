@@ -100,7 +100,7 @@ useEffect(() => {
           <div className="accodoamationBannerText">
             <h3>Chennai Events</h3>
             <div className="breadCrum">
-              <a href="/">Home</a> - <a href="/.">Events</a>
+              <a href="/">Home</a> - <a href="">Events</a>
             </div>
           </div>
         </div>

@@ -9,9 +9,9 @@ import ScrollManager from "./Components/ScrollToTop.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HelmetProvider>
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
         <App />
-      {/* </BrowserRouter> */}
+      </BrowserRouter>
     </HelmetProvider>
   </StrictMode>
 );

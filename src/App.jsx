@@ -1,3 +1,4 @@
+
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
@@ -10,6 +11,7 @@ import Visit from "../src/Pages/VisitPage";
 import Volunteer from "../src/Pages/Volunteer";
 import Work from "../src/Pages/Work";
 import "./App.css";
+
 import EducationNew from "./Components/EducationNew";
 import HeaderWithMegaMenu from "./Components/ExampleMegamenu";
 import Footer from "./Components/Footer";
@@ -276,13 +278,15 @@ import NotFound from "../src/NotFound"
 import ImagePopup from "./Components/ImagePopup";
 
 
+import { useLocation } from "react-router-dom";
 
 
 
 function App() {
+
   const [isOpen, setIsOpen] = useState(true);
 
-  const [showPopup, setShowPopup] = useState(true);
+  // const [showPopup, setShowPopup] = useState(true);
 
   const [animate, setAnimate] = useState(false);
   const menuItems = [
@@ -451,35 +455,74 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+  // const [showPopup, setShowPopup] = useState(false);
+
+  // useEffect(() => {
+  //   const hasShownPopup = sessionStorage.getItem("popup-shown");
+
+  //   if (!hasShownPopup) {
+  //     console.log()
+  //     setShowPopup(true);
+  //     sessionStorage.setItem("popup-shown", "true");
+  //   }
+  // }, []);
+
+  // const handleClosePopup = () => {
+  //   setShowPopup(false);
+  // };
+
+
+
+//   useEffect(() => {
+//   const alreadyClosed = localStorage.getItem("popup-closed");
+
+//   if (!alreadyClosed) {
+//     setShowPopup(true);
+//   }
+// }, []);
+
+// const handleClosePopup = () => {
+//   setShowPopup(false);
+//   localStorage.setItem("popup-closed", "true"); // Save permanently
+// };
+
+
+  const location = useLocation(); // ✔ Correct place
+  const [showPopup, setShowPopup] = useState(false);
+
   useEffect(() => {
-    const hasShownPopup = sessionStorage.getItem("popup-shown");
+    const alreadyShown = localStorage.getItem("popupShown");
 
-    if (!hasShownPopup) {
-      setShowPopup(true);
-      sessionStorage.setItem("popup-shown", "true");
+    if (location.pathname === "/") {
+      setShowPopup(true); // home page always show
+    } else if (!alreadyShown) {
+      setShowPopup(true); // show once on other pages
+      localStorage.setItem("popupShown", "true");
     }
-  }, []);
-
-  const handleClosePopup = () => {
-    setShowPopup(false);
-  };
+  }, [location.pathname]);
 
   return (
     <>
-      <Router>
+      {/* <Router> */}
         {/* <ScrollToTop /> */}
 
         <ScrollToHashElement />
 
         <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
 
-        {showPopup && (
+        {/* {showPopup && (
           <ImagePopup
             onClose={handleClosePopup}
             // imageUrl="/images/Namma-Stories.jpg"
             imageUrl="/images/HomePage-Images/superchennai-pop.jpg"
           />
-        )}
+        )} */}
+
+   {showPopup && (
+        <ImagePopup             imageUrl="/images/HomePage-Images/superchennai-pop.jpg"
+ onClose={() => setShowPopup(false)} />
+      )}
 
         <div
           ref={stickyRef}
@@ -1379,7 +1422,7 @@ function App() {
         </section>
 
         <Footer />
-      </Router>
+      {/* </Router> */}
       {/* MenuBar */}
 
       <AnimatePresence>

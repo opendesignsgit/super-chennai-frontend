@@ -1288,57 +1288,61 @@ const PropertyDetailPage = () => {
           maintenanceIncluded !== "-" ||
           preferredTenants?.length > 0) && (
           <div className="mt-8 border border-gray-200 rounded-xl p-5 transition-all duration-300">
-            {/* Age of Property */}
-            {ageOfProperty && (
-              <div className="mb-4">
-                <p className="text-xs text-gray-500">Age of Property</p>
-                <p className="font-semibold text-gray-800">{ageOfProperty}</p>
-              </div>
-            )}
+            <div className="flex flex-wrap gap-6">
+              {/* Age of Property */}
+              {ageOfProperty && (
+                <div className="min-w-[120px]">
+                  <p className="text-xs text-gray-500">Age of Property</p>
+                  <p className="font-semibold text-gray-800">{ageOfProperty}</p>
+                </div>
+              )}
 
-            {/* Agent RERA ID */}
-            {agentReraId && (
-              <div className="mb-4">
-                <p className="text-xs text-gray-500">Agent RERA ID</p>
-                <p className="font-semibold text-gray-800">{agentReraId}</p>
-              </div>
-            )}
+              {/* Agent RERA ID */}
+              {agentReraId && (
+                <div className="min-w-[120px]">
+                  <p className="text-xs text-gray-500">Agent RERA ID</p>
+                  <p className="font-semibold text-gray-800">{agentReraId}</p>
+                </div>
+              )}
 
-            {/* Monthly Rent */}
-            {monthlyRent !== "-" && (
-              <div className="mb-4">
-                <p className="text-xs text-gray-500">Monthly Rent</p>
-                <p className="font-semibold text-gray-800">{monthlyRent}</p>
-              </div>
-            )}
+              {/* Monthly Rent */}
+              {monthlyRent !== "-" && (
+                <div className="min-w-[120px]">
+                  <p className="text-xs text-gray-500">Monthly Rent</p>
+                  <p className="font-semibold text-gray-800">{monthlyRent}</p>
+                </div>
+              )}
 
-            {/* Security Deposit */}
-            {securityDeposit !== "-" && (
-              <div className="mb-4">
-                <p className="text-xs text-gray-500">Security Deposit</p>
-                <p className="font-semibold text-gray-800">{securityDeposit}</p>
-              </div>
-            )}
+              {/* Security Deposit */}
+              {securityDeposit !== "-" && (
+                <div className="min-w-[120px]">
+                  <p className="text-xs text-gray-500">Security Deposit</p>
+                  <p className="font-semibold text-gray-800">
+                    {securityDeposit}
+                  </p>
+                </div>
+              )}
 
-            {/* Maintenance Included */}
-            {maintenanceIncluded !== "-" && (
-              <div className="mb-4">
-                <p className="text-xs text-gray-500">Maintenance Included</p>
-                <p className="font-semibold text-gray-800">
-                  {maintenanceIncluded ? "Yes" : "No"}
-                </p>
-              </div>
-            )}
+              {/* Maintenance Included */}
+              {maintenanceIncluded !== "-" && (
+                <div className="min-w-[120px]">
+                  <p className="text-xs text-gray-500">Maintenance Included</p>
+                  <p className="font-semibold text-gray-800">
+                    {maintenanceIncluded ? "Yes" : "No"}
+                  </p>
+                </div>
+              )}
 
-            {/* Preferred Tenants */}
-            {preferredTenants?.length > 0 && (
-              <div>
-                <p className="text-xs text-gray-500">Preferred Tenants</p>
-                <p className="font-semibold text-gray-800 capitalize">
-                  {preferredTenants.join(", ")}
-                </p>
-              </div>
-            )}
+              {/* Preferred Tenants */}
+              {preferredTenants?.length > 0 && (
+                <div className="min-w-[150px]">
+                  <p className="text-xs text-gray-500">Preferred Tenants</p>
+                  <p className="font-semibold text-gray-800 capitalize">
+                    {preferredTenants.join(", ")}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         )}
 

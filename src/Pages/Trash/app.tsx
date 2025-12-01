@@ -489,30 +489,30 @@ function App() {
   }, []);
 
   // PRELOADER FUNCTIONALITY WITH IF CAE ######
-  //  useEffect(() => {
-  //     const hasSeen = localStorage.getItem("hasSeenPreloader");
+   useEffect(() => {
+      const hasSeen = localStorage.getItem("hasSeenPreloader");
 
-  //     if (!hasSeen && location.pathname === "/") {
-  //       setLoading(true);
-  //     } else {
-  //       setLoading(false);
-  //     }
-  //   }, [location.pathname]);
+      if (!hasSeen && location.pathname === "/") {
+        setLoading(true);
+      } else {
+        setLoading(false);
+      }
+    }, [location.pathname]);
 
-  //   if (loading) {
-  //     return (
-  //       <VideoPreloader
-  //         onFinish={() => {
-  //           localStorage.setItem("hasSeenPreloader", "true");
-  //           setLoading(false);
-  //         }}
-  //       />
-  //     );
-  //   }
+    if (loading) {
+      return (
+        <VideoPreloader
+          onFinish={() => {
+            localStorage.setItem("hasSeenPreloader", "true");
+            setLoading(false);
+          }}
+        />
+      );
+    }
 
-  // useEffect(() => {
-  //   setShowPopup(true);
-  // }, []);
+  useEffect(() => {
+    setShowPopup(true);
+  }, []);
   useEffect(() => {
     const hasShownPopup = sessionStorage.getItem("popup-shown");
 

@@ -72,11 +72,26 @@ const amenityIcons = {
       className="w-5 h-5"
     />
   ),
+
+  swimmingPool: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Swimming Pool.svg"
+      alt="Basketball"
+      className="w-5 h-5"
+    />
+  ),
+
+  gym: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Gym.svg"
+      alt="Basketball"
+      className="w-5 h-5"
+    />
+  ),
+
   security: <Shield size={18} />,
   intercom: <Phone size={18} />,
   fireSafety: <Flame size={18} />,
-  swimmingPool: <Droplets size={18} />,
-  gym: <Dumbbell size={18} />,
   playArea: <Trees size={18} />,
   garden: <Trees size={18} />,
 
@@ -96,8 +111,7 @@ const amenityIcons = {
     />
   ),
 
-
-    indoorGames: (
+  indoorGames: (
     <img
       src="/images/HomePage-Images/Icons/properties/Gaming Zone.svg"
       alt="Yoga"
@@ -105,61 +119,438 @@ const amenityIcons = {
     />
   ),
 
-  
+  miniTheatre: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/mini-teatre.png"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
 
-  miniTheatre: <ArrowUp size={18} />,
-  // indoorGames: <ArrowUp size={18} />,  
-  herbGarden: <ArrowUp size={18} />,
-  multipurposeHall: <ArrowUp size={18} />,
-  liftLobby: <ArrowUp size={18} />,
-  amphitheatre: <ArrowUp size={18} />,
-  creche: <ArrowUp size={18} />,
-  lobby: <ArrowUp size={18} />,
-  reflexology: <ArrowUp size={18} />,
-  seatingPlaza: <ArrowUp size={18} />,
-  dropOff: <ArrowUp size={18} />,
-  retreatTerrace: <ArrowUp size={18} />,
-  mandate: <ArrowUp size={18} />,
-  tranquilDeck: <ArrowUp size={18} />,
-  aiFresco: <ArrowUp size={18} />,
-  theLounge: <ArrowUp size={18} />,
-  fairviewDeck: <ArrowUp size={18} />,
-  wellnessPatio: <ArrowUp size={18} />,
-  aerobicsZumba: <ArrowUp size={18} />,
-  basementParking: <ArrowUp size={18} />,
-  evChargingPoint: <ArrowUp size={18} />,
-  kidsPlayArea: <ArrowUp size={18} />,
-  pergolaSeating: <ArrowUp size={18} />,
-  tennisCourt: <ArrowUp size={18} />,
-  chessBoard: <ArrowUp size={18} />,
-  cricketPracticePitch: <ArrowUp size={18} />,
+  multipurposeHall: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Multi Purpose Hall.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  multipurposeHall: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Multi Purpose Hall.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  liftLobby: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/lift png.png"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  amphitheatre: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/amphitheater icon-new.png"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  creche: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/crèche png icon.png"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  reflexology: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Reflexology pathway.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+  seatingPlaza: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/seatingPlaza.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  dropOff: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/drop off icon.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  dropOff: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/drop off icon.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  retreatTerrace: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/retreat icon png.png"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  // #######################################
+
+  retreatTerrace: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/retreat icon png.png"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  mandate: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/mandate.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  tranquilDeck: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/tranquil deck icon png.png"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  aiFresco: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Al-Fresco.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  theLounge: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Al-Fresco.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  fairviewDeck: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/fairview deck.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  wellnessPatio: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/wellness patio.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  aerobicsZumba: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/aerobics icon.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  basementParking: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/basement  parking.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  evChargingPoint: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Car Charge point.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  kidsPlayArea: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Children's Play Area.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  pergolaSeating: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/pergola lounge.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  tennisCourt: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/teniss court.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  chessBoard: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Chess.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  cricketPracticePitch: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Cricket Net Practice.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  halfBasketballCourt: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/half basket ball court.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  hopscotch: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Hopscotch.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  moundsPlayArea: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/mounds play area.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  snakesAndLadder: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/mounds play area.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  coWorking: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/co-working icon.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  partyHall: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Party Hall.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  skatingRink: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Skating track.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  miniGolf: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/mini golf.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  basketballCourt: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/BasketBall.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+  soccerField: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/soccer court.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+  bocceCourt: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/bocce court.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  bocceCourt: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/bocce court.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  cyclingTrack: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/cycling track.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  zipLine: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/zipline icon.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  trampolinePark: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/zipline icon.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  petPark: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/pet park.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  amphitheaterStage: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/amphitheater icon-new.png"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  communityGarden: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/community graden.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  readingLounge: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/reading lounge.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  readingLounge: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/reading lounge.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  basketballHalfCourt: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/basket ball court icon.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  firePit: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/fire pit.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+  herbGarden: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/gardening png icon.png"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  lobby: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Party Hall.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  meditationDeck: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Meditation Hall.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  multipurposePlayArea: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Multi Purpose Hall.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  boardGamesRoom: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/Gaming Zone.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
+  hammockLounge: (
+    <img
+      src="/images/HomePage-Images/Icons/properties/hemock area.svg"
+      alt="Yoga"
+      className="w-5 h-5"
+    />
+  ),
+
   futsalCourt: <ArrowUp size={18} />,
-  halfBasketballCourt: <ArrowUp size={18} />,
-  hopscotch: <ArrowUp size={18} />,
-  moundsPlayArea: <ArrowUp size={18} />,
-  snakesAndLadder: <ArrowUp size={18} />,
-  coWorking: <ArrowUp size={18} />,
-  partyHall: <ArrowUp size={18} />,
-  skatingRink: <ArrowUp size={18} />,
-  miniGolf: <ArrowUp size={18} />,
-  basketballCourt: <ArrowUp size={18} />,
-  soccerField: <ArrowUp size={18} />,
-  bocceCourt: <ArrowUp size={18} />,
-  cyclingTrack: <ArrowUp size={18} />,
   rockClimbingWall: <ArrowUp size={18} />,
-  zipLine: <ArrowUp size={18} />,
-  trampolinePark: <ArrowUp size={18} />,
-  petPark: <ArrowUp size={18} />,
-  amphitheaterStage: <ArrowUp size={18} />,
-  communityGarden: <ArrowUp size={18} />,
-  readingLounge: <ArrowUp size={18} />,
-  multipurposePlayArea: <ArrowUp size={18} />,
-  basketballHalfCourt: <ArrowUp size={18} />,
-  boardGamesRoom: <ArrowUp size={18} />,
-  meditationDeck: <ArrowUp size={18} />,
-  outdoorFitnessZone: <ArrowUp size={18} />,
-  hammockLounge: <ArrowUp size={18} />,
-  firePit: <ArrowUp size={18} />,
 };
 
 const interiorIcons = {
@@ -224,10 +615,7 @@ const PropertyDetailPage = () => {
     : [];
 
   const visibleAmenities = showAll ? trueAmenities : trueAmenities.slice(0, 6);
-  
-  
-  
-  
+
   if (loading) return <PropertyDetailSkeleton />;
   if (!property) {
     return (
@@ -253,9 +641,9 @@ const PropertyDetailPage = () => {
   const status = property?.society?.possessionStatus || null;
   const title = property?.title || "Untitled Property";
   const purpose = property?.purpose || "sale";
-  const ageOfProperty = property?.ageOfProperty || "-";
+  const ageOfProperty = property?.ageOfProperty || null;
   const transactionType = property?.transactionType || null;
-  const agentReraId = property?.agentReraId || "-";
+  const agentReraId = property?.agentReraId || null;
   const price = property?.price
     ? `₹${formatPrice(property.price)}`
     : "Price on Request";
@@ -287,8 +675,8 @@ const PropertyDetailPage = () => {
   const urgentSale = property?.urgentSale ?? false;
   const availabilityStatus = property?.availabilityStatus ?? null;
 
-  const moreAmenities = property?.moreAmenities ?? null
-  const validMoreAmenities = moreAmenities?.filter(item => item?.name);
+  const moreAmenities = property?.moreAmenities ?? null;
+  const validMoreAmenities = moreAmenities?.filter((item) => item?.name);
 
   return (
     <>
@@ -873,7 +1261,7 @@ const PropertyDetailPage = () => {
                 >
                   {item.icon?.url ? (
                     <img
-                      src={`${API_BASE_URL}${item.icon.url}`} 
+                      src={`${API_BASE_URL}${item.icon.url}`}
                       alt={item.name || "amenity-icon"}
                       className="w-6 h-6 object-contain"
                     />
@@ -889,6 +1277,72 @@ const PropertyDetailPage = () => {
             </div>
           </div>
         )}
+
+        {/* MISSED NEWLY ADDED  */}
+
+        {/* Age / Rent / Agent Section */}
+        {(ageOfProperty ||
+          agentReraId ||
+          monthlyRent !== "-" ||
+          securityDeposit !== "-" ||
+          maintenanceIncluded !== "-" ||
+          preferredTenants?.length > 0) && (
+          <div className="mt-8 border border-gray-200 rounded-xl p-5 transition-all duration-300">
+            {/* Age of Property */}
+            {ageOfProperty && (
+              <div className="mb-4">
+                <p className="text-xs text-gray-500">Age of Property</p>
+                <p className="font-semibold text-gray-800">{ageOfProperty}</p>
+              </div>
+            )}
+
+            {/* Agent RERA ID */}
+            {agentReraId && (
+              <div className="mb-4">
+                <p className="text-xs text-gray-500">Agent RERA ID</p>
+                <p className="font-semibold text-gray-800">{agentReraId}</p>
+              </div>
+            )}
+
+            {/* Monthly Rent */}
+            {monthlyRent !== "-" && (
+              <div className="mb-4">
+                <p className="text-xs text-gray-500">Monthly Rent</p>
+                <p className="font-semibold text-gray-800">{monthlyRent}</p>
+              </div>
+            )}
+
+            {/* Security Deposit */}
+            {securityDeposit !== "-" && (
+              <div className="mb-4">
+                <p className="text-xs text-gray-500">Security Deposit</p>
+                <p className="font-semibold text-gray-800">{securityDeposit}</p>
+              </div>
+            )}
+
+            {/* Maintenance Included */}
+            {maintenanceIncluded !== "-" && (
+              <div className="mb-4">
+                <p className="text-xs text-gray-500">Maintenance Included</p>
+                <p className="font-semibold text-gray-800">
+                  {maintenanceIncluded ? "Yes" : "No"}
+                </p>
+              </div>
+            )}
+
+            {/* Preferred Tenants */}
+            {preferredTenants?.length > 0 && (
+              <div>
+                <p className="text-xs text-gray-500">Preferred Tenants</p>
+                <p className="font-semibold text-gray-800 capitalize">
+                  {preferredTenants.join(", ")}
+                </p>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* MISSED NEWLY ADDED  END  */}
 
         {property.amenities?.length > 0 && (
           <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300">

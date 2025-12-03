@@ -11,6 +11,7 @@ import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import ExpandableList from "../../../Components/cardScroller/ExpandableList";
 import VisitSlider from "./VisitSlider";
 import { Helmet } from "react-helmet-async";
+import TruncatedText from "../../GlobalComponents/TruncatedText";
 
 const detailsections = [
   {
@@ -1455,7 +1456,7 @@ export default function Restaurants() {
               <h3> Restaurants in Chennai</h3>
               <div className="breadCrum">
                 <Link to="/visit-chennai">Visit </Link> -{" "}
-                <a href=""> Restaurants in Chennai </a>
+                <a href=""> Restaurants in Chennai  </a>
               </div>
             </div>
           </div>
@@ -1512,12 +1513,11 @@ export default function Restaurants() {
                     className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
                   >
                     <h3 className="text-xl font-semibold mb-2">{point.name}</h3>
-                    <p className="text-gray-700 mb-2">{point.description}</p>
+                    
+                     <TruncatedText text={point.description} limit={120} />
 
                     {point.subDescription && (
-                      <p className="text-gray-500 text-sm mb-3">
-                        {point.subDescription}
-                      </p>
+                      <TruncatedText text={point.subDescription} limit={120} />
                     )}
 
                     {point.locations?.length > 0 && (

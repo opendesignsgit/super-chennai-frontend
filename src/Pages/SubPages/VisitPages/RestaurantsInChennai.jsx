@@ -403,6 +403,45 @@ const detailsections = [
     title: "Cafés & Casual Bites",
     points: [
       {
+        name: "Duet Cafe",
+        description:
+          "Duet Cafe blends great vibes with great flavours, making it an ideal hangout for conversations, casual dates, or catching up with friends. The café offers trendy dishes, a stylish setup, and a welcoming atmosphere for all.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/xYEZaL4Ny4rsNvrT7",
+          },
+        ],
+      },
+
+      {
+        name: "Genz Hangout",
+        description:
+          "It is a space created to match the tastes of Gen Z, focusing more on vibe, aesthetics, and social experience than traditional dining. These places usually have eye-catching, Instagram-ready interiors, strong digital visibility, easy online ordering, and emphasize values like sustainability and genuineness. They act as modern community spots and are popular for casual meetups, themed events, and pop-ups.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "",
+          },
+        ],
+      },
+
+      {
+        name: "Drip Dessert Lab",
+        description:
+          "Offering burgers, shakes, and continental-style food. Another option is Dripzy Kitchen, known for its flavoured chicken and fries with a South Indian twist.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/DnnzoK3PzGH81nY36",
+          },
+        ],
+      },
+
+      {
         name: "Vandough Café",
         description:
           "Van Dough Cafe offers coffee, pizzas, and Thai dishes with dine-in and delivery. People enjoy the flavours, but service may sometimes be slow.",
@@ -861,6 +900,19 @@ const detailsections = [
     title: "South Indian Classics",
     points: [
       {
+        name: "Daily Innings Kafe",
+        description:
+          "It is the city’s first cricket-themed pure-veg café, where customers are endearingly called “Dinklings”, inspired by their mascot, Captain Dink. The menu offers budget-friendly vegetarian comfort food, featuring items like the Korean Paneer Sandwich, Nashville Paneer Burger, and unique in-house desserts such as Guava with Chilli Ice Cream.",
+        subDescription: "",
+        locations: [
+          {
+            label: "T. Nagar",
+            link: "https://maps.app.goo.gl/6RSUopyWX8919wJH7",
+          },
+        ],
+      },
+
+      {
         name: "Visesham",
         description:
           "Visesham Restaurant offers delicious South Indian meals with homely taste and fresh ingredients.",
@@ -1098,6 +1150,32 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
+      {
+        name: " Luma Lounge",
+        description:
+          "Luma Lounge is a stylish restobar in Nungambakkam, Chennai, celebrated for its modern vibe, signature cocktails, and a diverse menu featuring Indian, Continental, and Asian cuisines. The space includes both indoor and outdoor seating, a full bar, dance floor, live sports screenings, and a designated smoking zone. Situated inside the Chotabhai Centre, it also provides attractive offers along with delivery and takeaway services.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: " https://maps.app.goo.gl/uHKJk3bQshaK9Biy8",
+          },
+        ],
+      },
+       
+      {
+        name: "Agarwal’s Dessi Khanna",
+        description:
+          "North Indian and Rajasthani eatery is appreciated for its authentic taste and use of fresh, high-quality ingredients. The place provides comfortable indoor dining, along with vegetarian and Jain-friendly choices. Guests can also opt for home delivery or takeaway, and the restaurant supports multiple payment options like cash, cards, and digital wallets. Must-try dishes include their Rajasthani Thali, ker sangri, and chilli paneer gravy.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/y82K4WXdjtogPjNT7",
+          },
+        ],
+      },
+
       {
         name: "Hot n Cool",
         description:

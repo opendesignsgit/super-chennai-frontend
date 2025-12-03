@@ -79,7 +79,7 @@ const MobilePropertyCard = ({ property }) => {
   const propertyLink = `/properties/${property.slug || property.id}`;
 
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full border border-gray-200 z-10">
+    <div className="bg-white rounded-2xl shadow-md overflow-hidden w-full border border-gray-200">
       <div className="relative">
         <img src={heroImage} alt={title} className="w-full h-56 object-cover" />
 

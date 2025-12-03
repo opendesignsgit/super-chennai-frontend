@@ -344,7 +344,7 @@ const FiltersSidebar = ({
         <div className="flex items-center gap-3">
           {setUseTopFilter && (
             <button
-              className="flex items-center gap-1 text-purple-600 hover:text-purple-800 text-sm"
+      className="hidden lg:flex items-center gap-1 text-purple-600 hover:text-purple-800 text-sm"
               onClick={() => setUseTopFilter((prev) => !prev)}
             >
               <span>Switch Top</span>

@@ -1,4 +1,43 @@
 /* Property Detail Wrapper */
+
+
+
+
+
+
+/* Ultra-thin horizontal scrollbar */
+.thin-scroll::-webkit-scrollbar {
+  height: 2px; /* VERY THIN */
+}
+
+.thin-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.thin-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.thin-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .property-detail {
   width: 100%;
   color: var(--text-color);

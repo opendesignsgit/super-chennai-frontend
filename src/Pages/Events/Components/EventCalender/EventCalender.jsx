@@ -5,8 +5,9 @@ import { API_BASE_URL } from "../../../../../config";
 import { formatEventTime } from "../../Utils/formatTime";
 import { formatEventDate } from "../../Utils/dateFormatter";
 import TruncatedText from "../../../GlobalComponents/TruncatedText";
-import defaultImage from "../../../../../public/propertyDefault.png"
+import defaultImage from "../../../../../public/propertyDefault.png";
 import FormattedEventDates from "../../Utils/dateFormatter";
+import { Link } from "react-router-dom";
 
 export default function EventCalender({ events = [] }) {
   const [x, setX] = useState(0);
@@ -19,16 +20,10 @@ export default function EventCalender({ events = [] }) {
     return t;
   }, []);
 
-
-
-
   let featuredEvent = events.find((e) => e.isFeatured === true);
   const now = new Date();
   const currentMonth = now.getMonth();
   const currentYear = now.getFullYear();
-
-
-
 
   const upcomingEvents = useMemo(
     () =>
@@ -47,9 +42,6 @@ export default function EventCalender({ events = [] }) {
         ),
     [events, today, featuredEvent]
   );
-
-
-
 
   if (!featuredEvent) {
     const recentAddedThisMonth = [...events]
@@ -78,16 +70,13 @@ export default function EventCalender({ events = [] }) {
     ? formatEventDate(featuredEvent.event.eventDates[0].date)
     : {};
 
-
-
-    
-
   const featuredImg =
     featuredEvent?.heroImage?.sizes?.medium?.url ||
-    featuredEvent?.heroImage?.url || defaultImage;
+    featuredEvent?.heroImage?.url ||
+    defaultImage;
 
-  const category =  featuredEvent?.event?.eventsCategory?.[0]?.title || "";
-   
+  const category = featuredEvent?.event?.eventsCategory?.[0]?.title || "";
+
   const slide = (direction) => {
     const cardWidth = 300;
     const gap = 40;
@@ -113,9 +102,6 @@ export default function EventCalender({ events = [] }) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-
-
 
   return (
     <div className="EventsCalendarMainSection">
@@ -145,13 +131,16 @@ export default function EventCalender({ events = [] }) {
         <div className="eventsCalendarMainSectionConatiner container max-w-7xl mx-auto px-4">
           <div className="CalendarEventsFirst">
             <img
-              className="eventsCalenderIamge"
+              className="eventsCalenderIamge cursor-pointer"
               src={`${API_BASE_URL}${featuredImg}`}
               alt={featuredEvent?.event?.title}
               onError={(e) => {
                 e.target.onerror = null;
                 e.target.src = defaultImage;
               }}
+              onClick={() =>
+                (window.location.href = `/events-in-chennai/${featuredEvent.slug}`)
+              }
             />
 
             <div className="MainCalendarSectionEvent">
@@ -186,7 +175,7 @@ export default function EventCalender({ events = [] }) {
               </div>
 
               <a href={`/chennai-events`}>
-              {/* ${featuredEvent.slug} */}
+                {/* ${featuredEvent.slug} */}
                 <p className="FindOutMore">Find Out More</p>
               </a>
             </div>
@@ -218,7 +207,7 @@ export default function EventCalender({ events = [] }) {
                 card.heroImage?.sizes?.medium?.url ||
                 card.heroImage?.url ||
                 defaultImage;
-                    const eventData = card.event || {};
+              const eventData = card.event || {};
 
               return (
                 <motion.div
@@ -264,7 +253,9 @@ export default function EventCalender({ events = [] }) {
                     )}
                   </div>
 
-                  <h3 className="EventsCalendarTitlecss line-clamp-1">{card.event.title}</h3>
+                  <h3 className="EventsCalendarTitlecss line-clamp-1">
+                    {card.event.title}
+                  </h3>
                   <h4 className="EventsCalendarContentcss line-clamp-4">
                     {card.event.description}
                   </h4>

@@ -167,7 +167,15 @@
   justify-content: space-between;
   align-items: center;       
   text-align: left;
-  margin-bottom: 16px;       
+  margin-bottom: 16px;    
+  width:100%;   
+}
+
+@media (max-width: 480px) {
+  .sidebarrightCards {
+    font-size: 16px;  
+    line-height: 22px;
+  }
 }
 .line-clamp-2 {
   display: -webkit-box;
@@ -477,10 +485,3 @@
 }
 
 
-@media (max-width:400px){
-
-
-.mainConiatinerPropertyList .flex {
-  flex-direction: column;
-}
-}

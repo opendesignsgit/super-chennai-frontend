@@ -198,16 +198,18 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
               </button>
             )}
 
-            <div className="scrollContainer" ref={scrollRef}>
-              <div className="aboutPlotsSize flex flex-nowrap text-capitalize">
-                {scrollItems.map((item, i) => (
-                  <div
-                    key={i}
-                    className="flex flex-col items-start cardpropertyslide"
-                  >
-                    <span>{item.value}</span>
-                  </div>
-                ))}
+            <div className="maincontainerItems">
+              <div className="scrollContainer" ref={scrollRef}>
+                <div className="aboutPlotsSize flex flex-nowrap text-capitalize">
+                  {scrollItems.map((item, i) => (
+                    <div
+                      key={i}
+                      className="flex flex-col items-start cardpropertyslide"
+                    >
+                      <span>{item.value}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 

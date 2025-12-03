@@ -75,6 +75,8 @@ const PropertiesPage = () => {
         <link rel="canonical" href="/properties" />
       </Helmet>
 
+
+   
       <div className="accaodomationBannerSection">
         <div>
           <img src="/images/banner-blog.jpg" alt="Properties Banner" />
@@ -146,6 +148,7 @@ const PropertiesPage = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };

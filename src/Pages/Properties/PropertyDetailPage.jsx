@@ -1244,7 +1244,7 @@ const PropertyDetailPage = () => {
               </button>
             )}
           </div>
-        )}
+        )}  
 
         {/* More Amenities */}
         {validMoreAmenities?.length > 0 && (

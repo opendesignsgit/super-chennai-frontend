@@ -163,7 +163,7 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
             className={`propertyImage 
           object-cover rounded-md
            min-w-[200px] max-w-[400px]
-           h-[240px]
+           h-[260px]
           ${viewType === "list" ? "w-1/3 mr-4" : "w-full"}
            `}
           />
@@ -175,7 +175,7 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
                 <h5>by {property.society.builder}</h5>
               )}
 
-            {scrollItems.length > 1 && canScrollLeft && (
+            {/* {scrollItems.length > 1 && canScrollLeft && (
               <button
                 className="scrollBtn left"
                 onClick={() =>
@@ -234,7 +234,77 @@ const PropertyCard = ({ property, viewType = "grid" }) => {
                   <polyline points="9 18 15 12 9 6" />
                 </svg>
               </button>
-            )}
+            )} */}
+
+            <div className="maincontainerItems scrollWrapper relative">
+              {/* LEFT ARROW */}
+              {scrollItems.length > 1 && canScrollLeft && (
+                <button
+                  className="scrollBtn left"
+                  onClick={() =>
+                    scrollRef.current.scrollBy({
+                      left: -200,
+                      behavior: "smooth",
+                    })
+                  }
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="15 18 9 12 15 6" />
+                  </svg>
+                </button>
+              )}
+
+              {/* SCROLL AREA */}
+              <div className="scrollContainer" ref={scrollRef}>
+                <div className="aboutPlotsSize flex flex-nowrap text-capitalize">
+                  {scrollItems.map((item, i) => (
+                    <div
+                      key={i}
+                      className="flex flex-col items-start cardpropertyslide"
+                    >
+                      <span>{item.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* RIGHT ARROW */}
+              {scrollItems.length > 0 && canScrollRight && (
+                <button
+                  className="scrollBtn right"
+                  onClick={() =>
+                    scrollRef.current.scrollBy({
+                      left: 200,
+                      behavior: "smooth",
+                    })
+                  }
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
+                </button>
+              )}
+            </div>
 
             <p className="propertContent line-clamp-5">{description}</p>
 

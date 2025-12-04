@@ -40,7 +40,7 @@ export default function ChennaiQuiz() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Super Chennai Quiz</h3>
+            <h1>Super Chennai Quiz</h1>
 
             <div className="breadCrum">
               <Link to="/">Home</Link> - <Link to="./">Super Chennai Quiz</Link>
@@ -50,12 +50,13 @@ export default function ChennaiQuiz() {
       </section>
 
       {/* Event Content Section */}
-      <section className="EventsBanSec SecPadblock12">
-        <div className="container max-w-7xl mx-auto">
-          <div className="EventContBox flex flex-wrap">
+        <section className="EventsBanSec py-12 bg-gray-50">
+        <div className="container max-w-6xl mx-auto px-4 md:px-8">
+          <div className="EventContBox flex flex-col lg:flex-row gap-8">
             {/* Left Side */}
-            <div className="EventLeft">
-              <h1>Super Chennai Quiz</h1>
+            <div className="EventLeft flex-1">
+              <h2>Super Chennai Quiz</h2>
+
 
               <div className="EventBanImg">
                 <img src="/images/events/superchennai-quiz-inner-2.jpg" />

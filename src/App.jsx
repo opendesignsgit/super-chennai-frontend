@@ -1240,7 +1240,7 @@ function App() {
           
           <Route path="contests/chennai-quiz" element={<ChennaiQuiz />} />
 
-
+{/* temprory url redirect ############### */}
         <Route
   path="/superchennai-quiz"
   element={<Navigate to="/contests/chennai-quiz" replace />}
@@ -1251,6 +1251,12 @@ function App() {
   path="/fun-quiz-competition-trivia-night"
   element={<Navigate to="/contests/chennai-quiz" replace />}
 />
+
+  <Route
+  path="/super-chennai-contests-quiz"
+  element={<Navigate to="/contests/chennai-quiz" replace />}
+/>
+
 
 
 

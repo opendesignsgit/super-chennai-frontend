@@ -241,8 +241,7 @@ import KoreanCuisineinChennai from "./Pages/SubPages/VisitPages/Korean-Cuisine-i
 import BlogDetails from "../src/Pages/Blogs/BlogDetails";
 import BlogList from "./../src/Pages/Blogs/BlogList";
 import ScrollToHashElement from "./Components/ScrollToHashElement";
-import Iconofthemonth from "./Pages/Icon-of-the-month-july";
-import IconofthemonthOct from "./Pages/Icon-of-the-month-oct";
+
 import Chidambaram from "./Pages/SubPages/LivePages/Chidambaram";
 import Kalpakkam from "./Pages/SubPages/LivePages/Kalpakkam";
 import Thiruthani from "./Pages/SubPages/LivePages/Thiruthani";
@@ -253,9 +252,15 @@ import SuperChennaiEvents from "./Pages/SuperChennaiEvents";
 import IconofthemonthAugust from "./Pages/Icon-of-the-month-august";
 import Iconsofthemonth from "./Pages/iconsofthemonth";
 import ReimagineChennai from "./Pages/ReimagineChennai";
-
 import IconofthemonthSeptember from "./Pages/Icon-of-the-month-september";
 import IconofthemonthSeptember1 from "./Pages/Icon-of-the-month-september1";
+import Iconofthemonth from "./Pages/Icon-of-the-month-july";
+import IconofthemonthOct from "./Pages/Icon-of-the-month-oct";
+import IconofthemonthDec from "./Pages/Icon-of-the-month-dec";
+import IconofthemonthNov from "./Pages/Icon-of-the-month-nov";
+
+
+
 import Neighbourhoods from "./Pages/Neighbourhoods/neighbourhoods";
 import PrideofChennai from "./Pages/PrideofChennai";
 import PropertiesPage from "./Pages/Properties/PropertiesPage";
@@ -567,7 +572,7 @@ function App() {
           </a>
         </div>
 
-        <div
+        <div id="superChennaiContest-quiz-tab"
           ref={stickyRef}
           className={`super-chennai-contest pointcastSticky nammaStorieslink ${
             footerReached ? "footerreached" : ""
@@ -1232,6 +1237,16 @@ function App() {
             path="/super-chennai-icon-of-sep-2025-1"
             element={<IconofthemonthSeptember1 />}
           />
+
+            <Route
+            path="/super-chennai-icon-of-dec-2025"
+            element={<IconofthemonthDec />}
+          />
+          <Route
+            path="/super-chennai-icon-of-nov-2025"
+            element={<IconofthemonthNov />}
+          />
+          
 
           <Route
             path="/superchennai-events-details/:url"

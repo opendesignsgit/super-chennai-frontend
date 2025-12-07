@@ -472,7 +472,7 @@ const expendingData = [
             </div>
           </section>
 
-          <IconofthemonthgallerySlider />
+          {/* <IconofthemonthgallerySlider /> */}
 
         
 

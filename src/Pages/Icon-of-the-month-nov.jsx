@@ -284,7 +284,7 @@ export default function IconofthemonthDec() {
               </div>
             </div>
           </section>
-          <AugustMonthFunction />
+          {/* <AugustMonthFunction /> */}
           <InstagramReelsMarquee />
           <Becameavolunteer />
         </div>

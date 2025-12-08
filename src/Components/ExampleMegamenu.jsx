@@ -4,7 +4,8 @@ import MenuBar from "./MenuBar";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Search from "./Search";
-
+import { useTranslation } from "react-i18next";
+import LanguageDropdown from "../Components/LanguageDropdown/Language"
 const menuItems = [
   {
     label: "Live",
@@ -502,12 +503,22 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
     setImageLoaded(false);
   }, [hoveredImage]);
 
+
+  
+
+
+
+const { t } = useTranslation();
+
+
   return (
     <>
+     
       <div className="mainMegamenuContainers">
         <header
           className={`mainMegamenuContainer ${scrolled ? "scrolled" : ""}`}
         >
+          
           <nav
             // className="Megamenunav"
             className={`Megamenunav ${isHome ? "HomePageStyle" : ""}`}
@@ -530,6 +541,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                 }}
                 className="Megamenulogo"
               ></div>
+ {/* <LanguageDropdown/> */}
 
               <div className="Megamenumenuicon md:hidden">
                 <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -562,12 +574,15 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                         );
                       }}
                     >
-                      <span>{item.label}<p className="navitemsArrowpart"></p></span>
+                      <span>
+                        {item.label}
+                        <p className="navitemsArrowpart"></p>
+                      </span>
                     </li>
                   ))}
                 </ul>
-              </div>
 
+              </div>
               <div
                 style={{ cursor: "pointer" }}
                 className="Megamenulogo1 hidden md:block"
@@ -575,8 +590,9 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
               >
                 MENU
               </div>
-            </div>
+                             
 
+            </div>
             {activeMenu && (
               <div
                 className={`Newmegamenu hidden md:block ${
@@ -692,7 +708,10 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
 
               <div className="mobilesvgSize">
                 <Link to="/">
-                  <img src="/images/HomePage-Images/Superchennai.png" alt="Super Chennai" />
+                  <img
+                    src="/images/HomePage-Images/Superchennai.png"
+                    alt="Super Chennai"
+                  />
                 </Link>
               </div>
 

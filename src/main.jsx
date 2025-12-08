@@ -6,6 +6,8 @@ import { BrowserRouter } from "react-router-dom"; // ✅ Import this!
 import { HelmetProvider } from "react-helmet-async";
 import ScrollManager from "./Components/ScrollToTop.jsx";
 
+import "../src/i18n/index.js"; 
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HelmetProvider>

@@ -21,14 +21,14 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-    {
-    type: "image",
-    link: "contests/chennai-quiz",
-    image: "/images/HomePage-Images/superchennai-quiz.jpg",
-    image1: "/images/HomePage-Images/superchennai-quiz-b (2).jpg",
-    title: "Superchennai-Quiz",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  //   {
+  //   type: "image",
+  //   link: "contests/chennai-quiz",
+  //   image: "/images/HomePage-Images/superchennai-quiz.jpg",
+  //   image1: "/images/HomePage-Images/superchennai-quiz-b (2).jpg",
+  //   title: "Superchennai-Quiz",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
   // {
   //   type: "image",
   //   link: "/icon-of-the-oct-month-2025",

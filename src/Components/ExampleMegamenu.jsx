@@ -6,6 +6,9 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import Search from "./Search";
 import { useTranslation } from "react-i18next";
 import LanguageDropdown from "../Components/LanguageDropdown/Language"
+import LanguageSwitcher from "../Components/LanguageDropdown/LanguageSwitcher"
+
+
 const menuItems = [
   {
     label: "Live",
@@ -541,7 +544,7 @@ const { t } = useTranslation();
                 }}
                 className="Megamenulogo"
               ></div>
- {/* <LanguageDropdown/> */}
+
 
               <div className="Megamenumenuicon md:hidden">
                 <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

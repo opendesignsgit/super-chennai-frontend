@@ -272,15 +272,17 @@ import IconOfMonthDetails from "./Pages/IconOfTheMonth/IconOfMonthDetailPage";
 
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
-
+import LanguageSwitcher from "./Components/LanguageDropdown/LanguageSwitcher"
 import { useLocation } from "react-router-dom";
 
-// import LanguageDropdown from "./Components/LanguageDropdown/Language";
+import Register from "./Pages/Activities/QuizGame/Pages/Register";
+import Login from "./Pages/Activities/QuizGame/Pages/Login";
+import Questions from "./Pages/Activities/QuizGame/Pages/Questions";
+import UsersResultsPage from "./Pages/Activities/QuizGame/Pages/UsersResultsPage"
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
 
-  // const [showPopup, setShowPopup] = useState(true);
 
   const [animate, setAnimate] = useState(false);
   const menuItems = [
@@ -493,23 +495,9 @@ function App() {
   }, [location.pathname]);
 
 
-// useEffect(() => {
-//   const script = document.createElement("script");
-//   script.src = "https://cdn.weglot.com/weglot.min.js";
-//   script.async = true;
-//   script.onload = () => {
-//     if (window.Weglot) {
-//       window.Weglot.initialize({
-//         api_key: "YOUR_API_KEY",
-//         originalLanguage: "en",
-//         destinationLanguages: ["ta", "de", "ar"],
-//       });
-//     }
-//   };
-//   document.body.appendChild(script);
-// }, []);
-
-
+    const [isLoggedIn, setIsLoggedIn] = useState(
+      !!localStorage.getItem("token")
+    );
 
   return (
     <>
@@ -521,8 +509,7 @@ function App() {
       <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
       {/* <LanguageDropdown /> */}
 
-
-   
+      {/* <LanguageSwitcher /> */}
 
       {/* {showPopup && (
         <ImagePopup
@@ -635,6 +622,25 @@ function App() {
           element={<IconOfMonthList />}
         />
 
+        {/* PROTECTED ROUTS  */}
+
+        {/* Public Routes */}
+        <Route path="/register" element={<Register />} />
+        <Route
+          path="/login"
+          element={<Login setIsLoggedIn={setIsLoggedIn} />}
+        />
+
+        {/* Protected Route */}
+        <Route
+          path="/questions"
+          element={
+            isLoggedIn ? <Questions /> : <Login setIsLoggedIn={setIsLoggedIn} />
+          }
+        />
+                <Route path="usersresultsPage-admin-superchennai-all-part" element={<UsersResultsPage />} />
+
+        
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
 

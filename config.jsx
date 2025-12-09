@@ -6,6 +6,6 @@
 
 // export const API_BASE_URL_API = "http://localhost:3000/api"
 export const API_BASE_URL_API = "https://api.superchennai.com/api"
-export const API_BASE_URL = "https://cms.superchennai.com"; 
+export const API_BASE_URL = "https://demo.superchennai.com"; 
 // export const API_BASE_URL = "http://localhost:3000";  
 

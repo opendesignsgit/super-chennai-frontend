@@ -151,12 +151,12 @@ export default function Login({ setIsLoggedIn }) {
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/superchennai-quiz-inner.jpg"
+            src="/images/events/QUIZ-BANNER1.jpg"
             alt="Super Chennai Quiz"
           />
           <img
             className="block sm:hidden"
-            src="/images/events/superchennai-quiz-mobile2.jpg"
+            src="/images/events/QUIZ-BANNER1.jpg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>

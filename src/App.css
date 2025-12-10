@@ -71,6 +71,53 @@
   right: 10%;
 }
 
+/*############## FORM BUTTON ################### */
+.theme-button {
+  width: 100%;
+  background-color: #a44294;
+  color: white;
+  padding: 0.5rem 1rem; 
+  border-radius: 0.5rem; 
+  font-weight: 600; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.checkboxxclass {
+  width: max-content !important;
+  padding-left: 20px !important;
+}
+
+.theme-button:hover {
+  background-color: #922f77; 
+  transform: scale(1.02);
+}
+.themelink-color{
+  color:#a44294
+
+}
+
+/*############## SECONDARY BUTTON ###################*/
+.theme-button-secondary {
+  width: 100%;
+  background-color: transparent;
+  color: #a44294;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: 2px solid #a44294;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.theme-button-secondary:hover {
+  background-color: #a4429420; /* light transparent tint */
+  color: #922f77;
+  transform: scale(1.02);
+}
+
+
 .goog-te-gadget-simple {
   display: inline-flex !important;
   align-items: center !important;

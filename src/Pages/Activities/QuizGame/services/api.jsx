@@ -1,11 +1,28 @@
-import axios from "axios";
+// import axios from "axios";
 // import { API_BASE_URL_API } from "../../../../../config";
 
-const API = axios.create({
-  baseURL: "http://localhost:3000/api",
-});
+// const API = axios.create({
+//   baseURL: "http://localhost:3000/api",
+// });
 
-// const API =  API_BASE_URL_API
+// // const API =  API_BASE_URL_API
+
+// // Attach token automatically
+// API.interceptors.request.use((config) => {
+//   const token = localStorage.getItem("token");
+//   if (token) {
+//     config.headers.Authorization = `Bearer ${token}`;
+//   }
+//   return config;
+// });
+
+// export default API;
+import axios from "axios";
+import { API_BASE_URL_API } from "../../../../../config";
+
+const API = axios.create({
+  baseURL: API_BASE_URL_API, 
+});
 
 // Attach token automatically
 API.interceptors.request.use((config) => {

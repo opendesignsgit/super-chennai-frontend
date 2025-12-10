@@ -279,6 +279,11 @@ import Register from "./Pages/Activities/QuizGame/Pages/Register";
 import Login from "./Pages/Activities/QuizGame/Pages/Login";
 import Questions from "./Pages/Activities/QuizGame/Pages/Questions";
 import UsersResultsPage from "./Pages/Activities/QuizGame/Pages/UsersResultsPage"
+// import ForgotPassword from "./Pages/Activities/QuizGame/Pages/ForgotPassword";
+import ResetPassword from "./Pages/Activities/QuizGame/Pages/ResetPassword";
+import AdminView from "./Pages/Activities/QuizGame/Pages/AdminView"
+import LoginWithOtp from "./Pages/Activities/QuizGame/Pages/LoginWithOtp";
+import VerifyOtp from "./Pages/Activities/QuizGame/Pages/VerifyOtp";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -638,9 +643,13 @@ function App() {
             isLoggedIn ? <Questions /> : <Login setIsLoggedIn={setIsLoggedIn} />
           }
         />
-                <Route path="usersresultsPage-admin-superchennai-all-part" element={<UsersResultsPage />} />
+        <Route path="your-results" element={<UsersResultsPage />} />
+        {/* <Route path="/forgot-password" element={<ForgotPassword />} /> */}
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
+        <Route path="/admin-superchennai" element={<AdminView />} />
+        <Route path="/login-otp" element={<LoginWithOtp />} />
+        <Route path="/verify-otp" element={<VerifyOtp />} />
 
-        
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
 

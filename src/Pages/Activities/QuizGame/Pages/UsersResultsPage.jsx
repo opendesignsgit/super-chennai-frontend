@@ -69,10 +69,10 @@ const UsersResultsPage = () => {
       </section>
 
       <div className="  carryformPageSection">
-        <div className="carryFormPage !max-w-[800px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white border um-form-section">
+        <div className="carryFormPage !max-w-[1000px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white border um-form-section">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-800">
-              User Quiz Results
+            <h2 className="">
+               Your Results
             </h2>
 
             <button

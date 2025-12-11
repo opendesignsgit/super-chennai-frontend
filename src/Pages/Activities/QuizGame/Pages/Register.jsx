@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import API from "../services/api";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 export default function Register() {
   const navigate = useNavigate();
@@ -120,77 +120,162 @@ export default function Register() {
         </div>
       </section>
 
-      <div className="flex items-center carryformPageSection">
-        <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white border um-form-section">
-       
+      <div className="flex items-center carryformPageSection ">
+        <div className="carryFormPage !max-w-[800px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
           <ToastContainer />
-          <h2 className=" text-center">Create Account</h2>
+          <h2 className=" text-center">Registration form</h2>
+
+          {/* <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                name="name"
+                placeholder="Full Name"
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+
+              <input
+                name="email"
+                placeholder="Email Address"
+                type="email"
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+
+              <input
+                name="phone"
+                placeholder="Phone Number"
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+
+              <input
+                name="location"
+                placeholder="Location"
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+
+              <label className="flex items-center gap-3 text-gray-700">
+                <input
+                  type="checkbox"
+                  name="subscribed"
+                  checked={form.subscribed}
+                  onChange={handleChange}
+                  className="w-4 h-4 accent-indigo-600 checkboxxclass"
+                />
+                Subscribe to Newsletter
+              </label>
+
+              <input
+                name="password"
+                placeholder="Password"
+                type="password"
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+          <div className="flex justify-center mt-4">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className={`w-full ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-600 hover:bg-indigo-700"} text-white py-2 rounded-lg font-semibold transition duration-200 theme-button`}
+                >
+                  {loading ? "Registering..." : "Register"}
+                </button>
+              </div>
+            </div>
+          </form> */}
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            <input
-              name="name"
-              placeholder="Full Name"
-              onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-            />
-
-            <input
-              name="email"
-              placeholder="Email Address"
-              type="email"
-              onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-            />
-
-            <input
-              name="phone"
-              placeholder="Phone Number"
-              onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-            />
-
-            <input
-              name="location"
-              placeholder="Location"
-              onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-            />
-
-            <label className="flex items-center gap-3 text-gray-700">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
-                type="checkbox"
-                name="subscribed"
-                checked={form.subscribed}
+                name="name"
+                placeholder="Full Name"
                 onChange={handleChange}
-                className="w-4 h-4 accent-indigo-600 checkboxxclass"
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
               />
-              Subscribe to Newsletter
-            </label>
 
-            <input
-              name="password"
-              placeholder="Password"
-              type="password"
-              onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-            />
+              <input
+                name="email"
+                placeholder="Email Address"
+                type="email"
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
 
-            <button
-              type="submit"
-              disabled={loading}
-              className={`w-full ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-600 hover:bg-indigo-700"} text-white py-2 rounded-lg font-semibold transition duration-200 theme-button`}
-            >
-              {loading ? "Registering..." : "Register"}
-            </button>
+              <input
+                name="phone"
+                placeholder="Phone Number"
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+
+              <input
+                name="location"
+                placeholder="Location"
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+
+              <input
+                name="password"
+                placeholder="Password"
+                type="password"
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+              />
+            </div>
+
+            <div className="col-span-2 flex flex-col items-center mt-2">
+              <p className="text-gray-700 mb-2 text-center">
+                Do you Subscribe to our Newsletter?
+              </p>
+
+              <div className="flex items-center gap-8">
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="subscribed"
+                    value="yes"
+                    checked={form.subscribed === true}
+                    onChange={() => setForm({ ...form, subscribed: true })}
+                    className="w-4 h-4 accent-green-600"
+                  />
+                  Yes
+                </label>
+
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="subscribed"
+                    value="no"
+                    checked={form.subscribed === false}
+                    onChange={() => setForm({ ...form, subscribed: false })}
+                    className="w-4 h-4 accent-green-600"
+                  />
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div className="flex justify-center mt-4">
+              <button
+                type="submit"
+                disabled={loading}
+                className={`w-full ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-600 hover:bg-indigo-700"} text-white py-2 rounded-lg font-semibold transition duration-200 theme-button`}
+              >
+                {loading ? "Registering..." : "Register"}
+              </button>
+            </div>
           </form>
 
           <p className="text-center mt-4 text-gray-700">
-            Already have an account?{" "}
+            Already registered? {" "}
             <button
               onClick={() => navigate("/login")}
-              className="text-indigo-600 font-semibold hover:underline"
+              className="text-indigo-600 font-semibold hover:underline themelink-color"
             >
-              Login
+             sign in here
             </button>
           </p>
         </div>

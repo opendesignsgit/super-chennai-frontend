@@ -96,7 +96,7 @@ export default function Work() {
   return (
     <>
       <Helmet>
-        <title>Work & Grow in Chennai | Jobs, Startups, Networking</title>
+        <title>Work in Chennai | Jobs, Career Growth, Startups, Networking</title>
         <meta
           name="description"
           content="From job opportunities in Chennai to career growth, discover everything about networking in Chennai, unicorns, co-working spaces, and work-life balance."

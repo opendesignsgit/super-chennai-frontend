@@ -174,8 +174,7 @@ export default function Login({ setIsLoggedIn }) {
       {/* ---------- Auth Box ---------- */}
 
       <div className="flex items-center carryformPageSection">
-        <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white border um-form-section">
-        
+        <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
           {/* ---------------- LOGIN ---------------- */}
           {page === "login" && (
             <>
@@ -210,10 +209,11 @@ export default function Login({ setIsLoggedIn }) {
                     Forgot password?
                   </button>
                 </div>
-
-                <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button">
-                  Login
-                </button>
+                <div className="flex justify-center">
+                  <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button-full">
+                    Login
+                  </button>
+                </div>
               </form>
             </>
           )}
@@ -231,10 +231,11 @@ export default function Login({ setIsLoggedIn }) {
                   onChange={handleEmailInput}
                   className="w-full px-3 py-2 border rounded-lg"
                 />
-
-                <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button">
-                  Send Reset Link
-                </button>
+                <div className="flex justify-center mt-4">
+                  <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button">
+                    Send Reset Link
+                  </button>
+                </div>
               </form>
 
               <p
@@ -256,7 +257,7 @@ export default function Login({ setIsLoggedIn }) {
           <button
             type="button"
             onClick={() => navigate("/login-otp")}
-            className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 theme-button-secondary"
+            className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 theme-button-secondary-full"
           >
             Login with OTP
           </button>

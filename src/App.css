@@ -73,11 +73,11 @@
 
 /*############## FORM BUTTON ################### */
 .theme-button {
-  width: 100%;
+  width: 40%;
   background-color: #a44294;
   color: white;
   padding: 0.5rem 1rem; 
-  border-radius: 0.5rem; 
+  border-radius: 10.15rem; 
   font-weight: 600; 
   border: none;
   cursor: pointer;
@@ -111,10 +111,44 @@
   transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
 
+.theme-button-full{
+  width: 100%;
+  background-color: #a44294;
+  color: white;
+  padding: 0.5rem 1rem; 
+  border-radius: 10.15rem; 
+  font-weight: 600; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.theme-button-full:hover{
+  background-color: #922f77; 
+  transform: scale(1.02);
+}
+
+.theme-button-secondary-full {
+  width: 100%;
+  background-color: transparent;
+  color: #a44294;
+  padding: 0.5rem 1rem;
+  border-radius: 10.5rem;
+  font-weight: 600;
+  border: 2px solid #a44294;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+
 .theme-button-secondary:hover {
   background-color: #a4429420; /* light transparent tint */
   color: #922f77;
   transform: scale(1.02);
+}
+@media (max-width: 768px) {
+  .carryformPageSection {
+    padding: 0 !important;
+  }
 }
 
 

@@ -148,29 +148,31 @@ export default function ResetPassword() {
   return (
     <>
       {/* ---------- Banner ---------- */}
+      {/* ---------- Banner ---------- */}
       <section className="accaodomationBannerSection carquizbanner">
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/superchennai-quiz-inner.jpg"
+            src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
           />
           <img
             className="block sm:hidden"
-            src="/images/events/superchennai-quiz-mobile2.jpg"
+            src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Quiz</h1>
+            <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="#">Super Chennai Quiz</Link>
+              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>
       </section>
+
 
       <ToastContainer position="top-center" />
       <div className="flex items-center carryformPageSection">

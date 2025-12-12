@@ -70,33 +70,31 @@ export default function Questions() {
         />
       </Helmet>
 
+       {/* ---------- Banner ---------- */}
       <section className="accaodomationBannerSection carquizbanner">
         <div>
-          {/* Desktop Image */}
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/superchennai-quiz-inner.jpg"
+            src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
           />
-
-          {/* Mobile Image */}
           <img
-            className=" block sm:hidden"
-            src="/images/events/superchennai-quiz-mobile2.jpg"
+            className="block sm:hidden"
+            src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Quiz</h1>
-
+            <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="./">Super Chennai Quiz</Link>
+              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>
       </section>
+
 
       <div className="carryformPageSection ">
         <div className="um-form-section">

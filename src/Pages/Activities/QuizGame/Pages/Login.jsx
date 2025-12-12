@@ -6,6 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { API_BASE_URL_API } from "../../../../../config";
 import PasswordInput from "../Components/PasswordInput";
+import { useRef } from "react";
 
 export default function Login({ setIsLoggedIn }) {
   const navigate = useNavigate();
@@ -134,6 +135,15 @@ export default function Login({ setIsLoggedIn }) {
   // =========================================
   //          UI SECTION
   // =========================================
+
+
+   const carryFormRef = useRef(null);
+
+  const scrollToForm = () => {
+    carryFormRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+
   return (
     <>
       <Helmet>
@@ -151,29 +161,50 @@ export default function Login({ setIsLoggedIn }) {
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/QUIZ-BANNER1.jpg"
+            src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
           />
           <img
             className="block sm:hidden"
-            src="/images/events/QUIZ-BANNER1.jpg"
+            src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Quiz</h1>
+            <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="#">Super Chennai Quiz</Link>
+              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>
       </section>
 
+      {/* ---------- Game Section ---------- */}
+      <section className="w-full flex flex-col items-center text-center  bg-gray-100 py-10">
+        <p className="uppercase themelink-color leading-6 text-sm">
+          Let’s Start the Game
+        </p>
+
+        <h2 className="chennaiInvestmentsHeading leading-tight">TRIVIA 2025</h2>
+        <p className="text-gray-700 mb-6 text-base sm:text-sm leading-relaxed font-bold themelink-color">
+          PLAY, LEARN AND WIN!
+        </p>
+
+       <button
+        onClick={scrollToForm}
+        className="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-semibold mb-6 theme-button-small"
+      >
+        Start Quiz
+      </button>
+
+        <img src="/images/events/triva-2025.png" alt="Trivia 2025" />
+      </section>
+
       {/* ---------- Auth Box ---------- */}
 
-      <div className="flex items-center carryformPageSection">
+      <div ref={carryFormRef} className="flex items-center carryformPageSection">
         <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
           {/* ---------------- LOGIN ---------------- */}
           {page === "login" && (

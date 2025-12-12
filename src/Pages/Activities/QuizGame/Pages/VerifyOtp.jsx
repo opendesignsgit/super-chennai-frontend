@@ -30,39 +30,66 @@ export default function VerifyOtp() {
       localStorage.setItem("token", res.data.token);
 
       setTimeout(() => navigate("/questions"), 1500);
-
     } catch (err) {
       setError(err.response?.data?.message || "Invalid OTP!");
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center mb-4">Verify OTP</h2>
-
-        <form onSubmit={handleVerify} className="space-y-4">
-          <input
-            type="text"
-            placeholder="Enter OTP"
-            value={otp}
-            maxLength={6}
-            onChange={(e) => setOtp(e.target.value)}
-            required
-            className="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-indigo-500"
+    <>
+      {/* ---------- Banner ---------- */}
+         {/* ---------- Banner ---------- */}
+      <section className="accaodomationBannerSection carquizbanner">
+        <div>
+          <img
+            className="eventsCalenderIamge hidden sm:block"
+            src="/images/events/triva-contest.jpg"
+            alt="Super Chennai Quiz"
           />
+          <img
+            className="block sm:hidden"
+            src="/images/events/triva-contest.jpg"
+            alt="Super Chennai Quiz Mobile"
+          />
+        </div>
 
-          <button
-            type="submit"
-            className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
-          >
-            Verify OTP
-          </button>
-        </form>
+        <div className="accodoamationBannerContainer">
+          <div className="accodoamationBannerText">
+            <h1>Super Chennai Triva 2025</h1>
+            <div className="breadCrum">
+              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        {message && <p className="text-green-600 mt-4">{message}</p>}
-        {error && <p className="text-red-600 mt-4">{error}</p>}
+      <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
+        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+          <h2 className="text-2xl font-bold text-center mb-4">Verify OTP</h2>
+
+          <form onSubmit={handleVerify} className="space-y-4">
+            <input
+              type="text"
+              placeholder="Enter OTP"
+              value={otp}
+              maxLength={6}
+              onChange={(e) => setOtp(e.target.value)}
+              required
+              className="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-indigo-500"
+            />
+
+            <button
+              type="submit"
+              className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+            >
+              Verify OTP
+            </button>
+          </form>
+
+          {message && <p className="text-green-600 mt-4">{message}</p>}
+          {error && <p className="text-red-600 mt-4">{error}</p>}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -127,6 +127,24 @@
   transform: scale(1.02);
 }
 
+
+.theme-button-small{
+  /* width: 10%; */
+  background-color: #a44294;
+  color: white;
+  padding: 0.5rem 1rem; 
+  border-radius: 10.15rem; 
+  font-weight: 600; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.theme-button-small:hover{
+  background-color: #922f77; 
+  transform: scale(1.02);
+}
+
+
 .theme-button-secondary-full {
   width: 100%;
   background-color: transparent;

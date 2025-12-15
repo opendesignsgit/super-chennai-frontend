@@ -183,7 +183,7 @@ export default function Login({ setIsLoggedIn }) {
           </p>
 
           <h2 className="chennaiInvestmentsHeading leading-tight">
-            TRIVIA 2025
+            TRIVA 2025
           </h2>
           <p className="text-gray-700 mb-6 text-base sm:text-sm leading-relaxed font-bold themelink-color">
             PLAY, LEARN AND WIN!

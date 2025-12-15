@@ -88,7 +88,7 @@ export default function ChennaiQuiz() {
                   Get ready for the Super Chennai Quiz — a lively, high-energy
                   quiz experience that breaks away from the usual serious,
                   brain-only quiz format. This is a quiz for everyone, whether
-                  you’re a casual player, a trivia lover, or someone who just
+                  you’re a casual player, a triva lover, or someone who just
                   wants a fun afternoon with a friend.
                 </p>
 
@@ -96,7 +96,7 @@ export default function ChennaiQuiz() {
                   Hosted at the iconic Sir Mutha Venkatasubba Rao Concert Hall,
                   this quiz covers all categories — from pop culture, music,
                   films, sports, food, and general knowledge to a sprinkle of
-                  city trivia and surprise rounds. Expect fresh formats,
+                  city triva and surprise rounds. Expect fresh formats,
                   interactive twists, and fun challenges that keep the whole
                   room buzzing.
                 </p>

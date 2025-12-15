@@ -51,6 +51,19 @@ export default function AdminView() {
     }
   };
 
+
+  const groupedData = data.reduce((acc, item) => {
+  const key = item.user_id; // group by user ID
+  if (!acc[key]) acc[key] = { ...item, answers: [] }; // copy user info
+  acc[key].answers.push({
+    question_text: item.question_text,
+    answer: item.answer,
+    is_correct: item.is_correct,
+    created_at: item.created_at,
+  });
+  return acc;
+}, {});
+
   return (
     <>
       {/* ---------- Banner ---------- */}
@@ -118,14 +131,14 @@ export default function AdminView() {
                     <th className="p-3 border">Name</th>
                     <th className="p-3 border">Email</th>
                     <th className="p-3 border">Phone</th>
-                    <th className="p-3 border">Question</th>
+                    {/* <th className="p-3 border">Question</th>
                     <th className="p-3 border">Answer</th>
                     <th className="p-3 border">Date</th>
                     <th className="p-3 border">Time</th>
-                    <th className="p-3 border">Correct?</th>
+                    <th className="p-3 border">Correct?</th> */}
                   </tr>
                 </thead>
-                <tbody>
+                {/* <tbody>
                   {data.map((item, index) => {
                     const { date, time } = formatDateTime(item.created_at);
 
@@ -151,6 +164,51 @@ export default function AdminView() {
                       </tr>
                     );
                   })}
+                </tbody> */}
+                <tbody>
+                  {Object.values(groupedData).map((user, index) => (
+                    <tr key={index} className="hover:bg-gray-50">
+                      <td className="p-3 border">{user.user_id}</td>
+                      <td className="p-3 border">{user.name}</td>
+                      <td className="p-3 border">{user.email}</td>
+                      <td className="p-3 border">{user.phone}</td>
+                      <td className="p-3 border" colSpan={5}>
+                        <table className="w-full border">
+                          <thead>
+                            <tr className="bg-gray-100">
+                              <th className="p-2 border">Question</th>
+                              <th className="p-2 border">Answer</th>
+                              <th className="p-2 border">Date</th>
+                              <th className="p-2 border">Time</th>
+                              <th className="p-2 border">Correct?</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {user.answers.map((ans, idx) => {
+                              const { date, time } = formatDateTime(
+                                ans.created_at
+                              );
+                              return (
+                                <tr key={idx}>
+                                  <td className="p-2 border">
+                                    {ans.question_text}
+                                  </td>
+                                  <td className="p-2 border">{ans.answer}</td>
+                                  <td className="p-2 border">{date}</td>
+                                  <td className="p-2 border">{time}</td>
+                                  <td
+                                    className={`p-2 border font-semibold ${ans.is_correct ? "text-green-700" : "text-red-700"}`}
+                                  >
+                                    {ans.is_correct ? "✔ Correct" : "❌ Wrong"}
+                                  </td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>

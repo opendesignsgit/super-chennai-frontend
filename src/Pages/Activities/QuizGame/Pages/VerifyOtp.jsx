@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function VerifyOtp() {
   const navigate = useNavigate();
@@ -37,19 +38,13 @@ export default function VerifyOtp() {
 
   return (
     <>
-      {/* ---------- Banner ---------- */}
-         {/* ---------- Banner ---------- */}
-      <section className="accaodomationBannerSection carquizbanner">
+    {/* ---------- Banner ---------- */}
+      <section className="accaodomationBannerSection ">
         <div>
           <img
-            className="eventsCalenderIamge hidden sm:block"
+            className="w-full h-[450px] object-cover"
             src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
-          />
-          <img
-            className="block sm:hidden"
-            src="/images/events/triva-contest.jpg"
-            alt="Super Chennai Quiz Mobile"
           />
         </div>
 
@@ -57,7 +52,8 @@ export default function VerifyOtp() {
           <div className="accodoamationBannerText">
             <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>

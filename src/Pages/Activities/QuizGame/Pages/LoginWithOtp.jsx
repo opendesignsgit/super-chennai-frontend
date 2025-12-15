@@ -60,19 +60,13 @@ export default function LoginOtp() {
   return (
     <>
       {/* Banner */}
-        {/* ---------- Banner ---------- */}
-        {/* ---------- Banner ---------- */}
-      <section className="accaodomationBannerSection carquizbanner">
+     {/* ---------- Banner ---------- */}
+      <section className="accaodomationBannerSection ">
         <div>
           <img
-            className="eventsCalenderIamge hidden sm:block"
+            className="w-full h-[450px] object-cover"
             src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
-          />
-          <img
-            className="block sm:hidden"
-            src="/images/events/triva-contest.jpg"
-            alt="Super Chennai Quiz Mobile"
           />
         </div>
 
@@ -80,7 +74,8 @@ export default function LoginOtp() {
           <div className="accodoamationBannerText">
             <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>
@@ -89,7 +84,7 @@ export default function LoginOtp() {
 
       {/* Main Form */}
       <div className="flex items-center carryformPageSection">
-        <div className="carryFormPage !max-w-[500px] mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white border um-form-section">
+        <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
           <h2 className="text-center mb-4">
             {step === "email" ? "Login with OTP" : "Verify OTP"}
           </h2>

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 export default function Register() {
   const navigate = useNavigate();
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -28,16 +29,50 @@ export default function Register() {
   };
 
   //######### Strong client-side validation ###########
+  // const validateForm = () => {
+  //   if (!form.name.trim()) return "Name is required";
+  //   if (!form.email.trim()) return "Email is required";
+  //   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
+  //     return "Invalid email format";
+  //   if (!form.phone.trim()) return "Phone number is required";
+  //   if (!/^\d{10,15}$/.test(form.phone)) return "Phone must be 10-15 digits";
+  //   if (!form.password) return "Password is required";
+  //   if (form.password.length < 6)
+  //     return "Password must be at least 6 characters";
+  //   return null;
+  // };
+
   const validateForm = () => {
+    for (const [key, value] of Object.entries(form)) {
+      if (value === "" || value === null || value === undefined) {
+        return "All fields are required";
+      }
+    }
+
+    // Name
     if (!form.name.trim()) return "Name is required";
+
+    // Email
     if (!form.email.trim()) return "Email is required";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
       return "Invalid email format";
+
+    // Phone
     if (!form.phone.trim()) return "Phone number is required";
     if (!/^\d{10,15}$/.test(form.phone)) return "Phone must be 10-15 digits";
+
+    // Location
+    if (!form.location.trim()) return "Location is required";
+
+    // Subscribed (radio mandatory)
+    if (typeof form.subscribed !== "boolean")
+      return "Please select newsletter subscription option";
+
+    // Password
     if (!form.password) return "Password is required";
     if (form.password.length < 6)
       return "Password must be at least 6 characters";
+
     return null;
   };
 
@@ -92,18 +127,13 @@ export default function Register() {
         />
       </Helmet>
 
-         {/* ---------- Banner ---------- */}
-      <section className="accaodomationBannerSection carquizbanner">
+      {/* ---------- Banner ---------- */}
+      <section className="accaodomationBannerSection ">
         <div>
           <img
-            className="eventsCalenderIamge hidden sm:block"
+            className="w-full h-[450px] object-cover"
             src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
-          />
-          <img
-            className="block sm:hidden"
-            src="/images/events/triva-contest.jpg"
-            alt="Super Chennai Quiz Mobile"
           />
         </div>
 
@@ -111,115 +141,59 @@ export default function Register() {
           <div className="accodoamationBannerText">
             <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>
       </section>
-
 
       <div className="flex items-center carryformPageSection ">
         <div className="carryFormPage !max-w-[800px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
           <ToastContainer />
           <h2 className=" text-center">Registration form</h2>
 
-          {/* <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input
-                name="name"
-                placeholder="Full Name"
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-              />
-
-              <input
-                name="email"
-                placeholder="Email Address"
-                type="email"
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-              />
-
-              <input
-                name="phone"
-                placeholder="Phone Number"
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-              />
-
-              <input
-                name="location"
-                placeholder="Location"
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-              />
-
-              <label className="flex items-center gap-3 text-gray-700">
-                <input
-                  type="checkbox"
-                  name="subscribed"
-                  checked={form.subscribed}
-                  onChange={handleChange}
-                  className="w-4 h-4 accent-indigo-600 checkboxxclass"
-                />
-                Subscribe to Newsletter
-              </label>
-
-              <input
-                name="password"
-                placeholder="Password"
-                type="password"
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-              />
-          <div className="flex justify-center mt-4">
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className={`w-full ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-600 hover:bg-indigo-700"} text-white py-2 rounded-lg font-semibold transition duration-200 theme-button`}
-                >
-                  {loading ? "Registering..." : "Register"}
-                </button>
-              </div>
-            </div>
-          </form> */}
-
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 name="name"
-                placeholder="Full Name"
+                placeholder="Full Name *"
                 onChange={handleChange}
+                required
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
               />
 
               <input
                 name="email"
-                placeholder="Email Address"
+                placeholder="Email Address *"
                 type="email"
                 onChange={handleChange}
+                required
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
               />
 
               <input
                 name="phone"
-                placeholder="Phone Number"
+                placeholder="Phone Number *"
                 onChange={handleChange}
+                required
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
               />
 
               <input
                 name="location"
-                placeholder="Location"
+                placeholder="Location *"
                 onChange={handleChange}
+                required
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
               />
 
               <input
                 name="password"
-                placeholder="Password"
+                placeholder="Password *"
                 type="password"
                 onChange={handleChange}
+                required
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
               />
             </div>
@@ -268,12 +242,12 @@ export default function Register() {
           </form>
 
           <p className="text-center mt-4 text-gray-700">
-            Already registered? {" "}
+            Already registered?{" "}
             <button
               onClick={() => navigate("/login")}
               className="text-indigo-600 font-semibold hover:underline themelink-color"
             >
-             sign in here
+              sign in here
             </button>
           </p>
         </div>

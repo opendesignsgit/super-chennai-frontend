@@ -148,17 +148,12 @@ export default function ResetPassword() {
   return (
     <>
       {/* ---------- Banner ---------- */}
-      <section className="accaodomationBannerSection carquizbanner">
+      <section className="accaodomationBannerSection ">
         <div>
           <img
-            className="eventsCalenderIamge hidden sm:block"
+            className="w-full h-[450px] object-cover"
             src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
-          />
-          <img
-            className="block sm:hidden"
-            src="/images/events/triva-contest.jpg"
-            alt="Super Chennai Quiz Mobile"
           />
         </div>
 
@@ -175,7 +170,7 @@ export default function ResetPassword() {
 
       <ToastContainer position="top-center" />
       <div className="flex items-center carryformPageSection">
-        <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white border um-form-section">
+        <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
           <h2 className=" text-center">Reset Password</h2>
 
           <form onSubmit={handleSubmit} className="space-y-4" noValidate>
@@ -195,7 +190,7 @@ export default function ResetPassword() {
               <button
                 type="submit"
                 disabled={submitting}
-                className={`w-full bg-indigo-600 text-white py-2 rounded-lg theme-button ${
+                className={`w-full bg-indigo-600 text-white py-2 rounded-lg theme-button-full ${
                   submitting
                     ? "opacity-60 cursor-not-allowed"
                     : "hover:bg-indigo-700"

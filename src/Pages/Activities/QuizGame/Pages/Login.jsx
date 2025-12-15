@@ -264,7 +264,7 @@ export default function Login({ setIsLoggedIn }) {
                   className="w-full px-3 py-2 border rounded-lg"
                 />
                 <div className="flex justify-center mt-4">
-                  <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button">
+                  <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button-full">
                     Send Reset Link
                   </button>
                 </div>

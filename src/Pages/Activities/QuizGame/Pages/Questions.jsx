@@ -70,18 +70,13 @@ export default function Questions() {
         />
       </Helmet>
 
-       {/* ---------- Banner ---------- */}
-      <section className="accaodomationBannerSection carquizbanner">
+     {/* ---------- Banner ---------- */}
+      <section className="accaodomationBannerSection ">
         <div>
           <img
-            className="eventsCalenderIamge hidden sm:block"
+            className="w-full h-[450px] object-cover"
             src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
-          />
-          <img
-            className="block sm:hidden"
-            src="/images/events/triva-contest.jpg"
-            alt="Super Chennai Quiz Mobile"
           />
         </div>
 
@@ -89,19 +84,18 @@ export default function Questions() {
           <div className="accodoamationBannerText">
             <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>
       </section>
 
-
       <div className="carryformPageSection ">
-        <div className="um-form-section">
-          <h2 className="text-center ">Answer the Questions</h2>
-        </div>
-
         <div className="max-w-[1100px] mx-auto mt-10  bg-white rounded-lg  ">
+          <div className="um-form-section">
+            <h2 className="text-center ">Answer the Questions</h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-[80%_20%] gap-6">
             {/* ----------------------- LEFT COLUMN (Questions) ----------------------- */}
             <div className="space-y-6 p-2">

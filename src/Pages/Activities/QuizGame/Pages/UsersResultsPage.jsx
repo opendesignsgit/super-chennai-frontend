@@ -41,18 +41,13 @@ const UsersResultsPage = () => {
 
   return (
     <>
-         {/* ---------- Banner ---------- */}
-      <section className="accaodomationBannerSection carquizbanner">
+    {/* ---------- Banner ---------- */}
+      <section className="accaodomationBannerSection ">
         <div>
           <img
-            className="eventsCalenderIamge hidden sm:block"
+            className="w-full h-[450px] object-cover"
             src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
-          />
-          <img
-            className="block sm:hidden"
-            src="/images/events/triva-contest.jpg"
-            alt="Super Chennai Quiz Mobile"
           />
         </div>
 
@@ -60,12 +55,12 @@ const UsersResultsPage = () => {
           <div className="accodoamationBannerText">
             <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>
       </section>
-
 
       <div className="  carryformPageSection">
         <div className="carryFormPage !max-w-[1000px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white border um-form-section">

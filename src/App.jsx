@@ -262,6 +262,7 @@ import ChennaiApp from "./Pages/Chennai-app";
 import EventsDetailsOld from "./Pages/EventsDetails";
 
 // ############# DYNAMIC PAGES ##################
+import { PrivateRoute, PublicRoute } from "./Components/PrivateRoute";
 
 import RestaurantsPage from "./Pages/Visits/Pages/Restaurants/RestaurantsPage";
 import TestPage from "./Pages/Visits/Pages/Restaurants//testPage";
@@ -627,16 +628,13 @@ function App() {
           element={<IconOfMonthList />}
         />
 
-        {/* PROTECTED ROUTS  */}
-
-        {/* Public Routes */}
+        {/* 
         <Route path="/register" element={<Register />} />
         <Route
           path="/login"
           element={<Login setIsLoggedIn={setIsLoggedIn} />}
         />
 
-        {/* Protected Route */}
         <Route
           path="/questions"
           element={
@@ -644,11 +642,78 @@ function App() {
           }
         />
         <Route path="your-results" element={<UsersResultsPage />} />
-        {/* <Route path="/forgot-password" element={<ForgotPassword />} /> */}
         <Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="/admin-superchennai" element={<AdminView />} />
         <Route path="/login-otp" element={<LoginWithOtp />} />
-        <Route path="/verify-otp" element={<VerifyOtp />} />
+        <Route path="/verify-otp" element={<VerifyOtp />} /> */}
+
+        {/* Public Routes */}
+        <Route
+          path="/register"
+          element={
+            <PublicRoute>
+              <Register />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <PublicRoute>
+              <Login setIsLoggedIn={setIsLoggedIn} />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/login-otp"
+          element={
+            <PublicRoute>
+              <LoginWithOtp />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/verify-otp"
+          element={
+            <PublicRoute>
+              <VerifyOtp />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/reset-password/:token"
+          element={
+            <PublicRoute>
+              <ResetPassword />
+            </PublicRoute>
+          }
+        />
+
+        {/* Protected Routes */}
+        <Route
+          path="/questions"
+          element={
+            <PrivateRoute>
+              <Questions />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/your-results"
+          element={
+            <PrivateRoute>
+              <UsersResultsPage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/admin-superchennai"
+          element={
+            <PrivateRoute>
+              <AdminView />
+            </PrivateRoute>
+          }
+        />
 
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />

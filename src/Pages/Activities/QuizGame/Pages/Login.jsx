@@ -136,13 +136,11 @@ export default function Login({ setIsLoggedIn }) {
   //          UI SECTION
   // =========================================
 
-
-   const carryFormRef = useRef(null);
+  const carryFormRef = useRef(null);
 
   const scrollToForm = () => {
     carryFormRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
 
   return (
     <>
@@ -157,17 +155,12 @@ export default function Login({ setIsLoggedIn }) {
       <ToastContainer position="top-center" />
 
       {/* ---------- Banner ---------- */}
-      <section className="accaodomationBannerSection carquizbanner">
+      <section className="accaodomationBannerSection ">
         <div>
           <img
-            className="eventsCalenderIamge hidden sm:block"
+            className="w-full h-[450px] object-cover"
             src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
-          />
-          <img
-            className="block sm:hidden"
-            src="/images/events/triva-contest.jpg"
-            alt="Super Chennai Quiz Mobile"
           />
         </div>
 
@@ -175,44 +168,52 @@ export default function Login({ setIsLoggedIn }) {
           <div className="accodoamationBannerText">
             <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* ---------- Game Section ---------- */}
-      <section className="w-full flex flex-col items-center text-center  bg-gray-100 py-10">
-        <p className="uppercase themelink-color leading-6 text-sm">
-          Let’s Start the Game
-        </p>
+      <section className="w-full flex flex-col items-center text-center   py-10">
+        <div>
+          <p className="uppercase themelink-color leading-6 text-sm">
+            Let’s Start the Game
+          </p>
 
-        <h2 className="chennaiInvestmentsHeading leading-tight">TRIVIA 2025</h2>
-        <p className="text-gray-700 mb-6 text-base sm:text-sm leading-relaxed font-bold themelink-color">
-          PLAY, LEARN AND WIN!
-        </p>
+          <h2 className="chennaiInvestmentsHeading leading-tight">
+            TRIVIA 2025
+          </h2>
+          <p className="text-gray-700 mb-6 text-base sm:text-sm leading-relaxed font-bold themelink-color">
+            PLAY, LEARN AND WIN!
+          </p>
 
-       <button
-        onClick={scrollToForm}
-        className="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-semibold mb-6 theme-button-small"
-      >
-        Start Quiz
-      </button>
-
-        <img src="/images/events/triva-2025.png" alt="Trivia 2025" />
+          <button
+            onClick={scrollToForm}
+            className="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-semibold mb-6 theme-button-small"
+          >
+            Start Quiz
+          </button>
+        </div>
+        <img
+          src="/images/events/superchennai-triva-2025.png"
+          alt="Trivia 2025"
+        />
       </section>
 
       {/* ---------- Auth Box ---------- */}
 
-      <div ref={carryFormRef} className="flex items-center carryformPageSection">
+      <div
+        ref={carryFormRef}
+        className="flex items-center carryformPageSection"
+      >
         <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
           {/* ---------------- LOGIN ---------------- */}
           {page === "login" && (
             <>
               <h2 className="text-center">Welcome Back</h2>
-              <p className="text-center text-xs">
-                Continue with one of the following options
-              </p>
+            
 
               <form onSubmit={handleLogin} className="space-y-4">
                 <input

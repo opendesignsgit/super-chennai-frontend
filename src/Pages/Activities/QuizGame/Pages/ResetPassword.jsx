@@ -148,7 +148,6 @@ export default function ResetPassword() {
   return (
     <>
       {/* ---------- Banner ---------- */}
-      {/* ---------- Banner ---------- */}
       <section className="accaodomationBannerSection carquizbanner">
         <div>
           <img
@@ -167,12 +166,12 @@ export default function ResetPassword() {
           <div className="accodoamationBannerText">
             <h1>Super Chennai Triva 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Super Chennai Triva 2025</Link>
             </div>
           </div>
         </div>
       </section>
-
 
       <ToastContainer position="top-center" />
       <div className="flex items-center carryformPageSection">
@@ -192,18 +191,19 @@ export default function ResetPassword() {
                 />
               </div>
             </div>
-
-            <button
-              type="submit"
-              disabled={submitting}
-              className={`w-full bg-indigo-600 text-white py-2 rounded-lg theme-button ${
-                submitting
-                  ? "opacity-60 cursor-not-allowed"
-                  : "hover:bg-indigo-700"
-              }`}
-            >
-              {submitting ? "Updating..." : "Reset Password"}
-            </button>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                disabled={submitting}
+                className={`w-full bg-indigo-600 text-white py-2 rounded-lg theme-button ${
+                  submitting
+                    ? "opacity-60 cursor-not-allowed"
+                    : "hover:bg-indigo-700"
+                }`}
+              >
+                {submitting ? "Updating..." : "Reset Password"}
+              </button>
+            </div>
           </form>
 
           {message && <p className="mt-4 text-green-600">{message}</p>}

@@ -176,7 +176,7 @@ export default function Login({ setIsLoggedIn }) {
       </section>
 
       {/* ---------- Game Section ---------- */}
-      <section className="w-full flex flex-col items-center text-center   py-10">
+      <section className="w-full flex flex-col  text-center   py-10">
         <div>
           <p className="uppercase themelink-color leading-6 text-sm">
             Let’s Start the Game

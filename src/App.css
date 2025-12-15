@@ -169,7 +169,18 @@
   }
 }
 
-
+@media (min-width: 200px) and (max-width: 500px) {
+  .theme-button {
+    width: 80%;
+    background-color: #a44294;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10.15rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+}
 .goog-te-gadget-simple {
   display: inline-flex !important;
   align-items: center !important;

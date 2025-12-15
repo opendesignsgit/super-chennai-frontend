@@ -8,15 +8,30 @@ export default function Questions() {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);
+  const [answeredQuestions, setAnsweredQuestions] = useState([]);
+  const isAnswered = (qId) => answeredQuestions.includes(qId);
+
 
   useEffect(() => {
     fetchQuestions();
+    fetchAnsweredQuestions();
   }, []);
 
   const fetchQuestions = async () => {
     const res = await API.get("/questions");
     setQuestions(res.data);
+    console.log("data",res.data)
   };
+  const fetchAnsweredQuestions = async () => {
+  try {
+    const res = await API.get("/answers/results"); // or your results API
+    const answeredIds = res.data.results.map(r => r.question_id);
+    setAnsweredQuestions(answeredIds);
+  } catch (err) {
+    console.error("Failed to fetch answered questions", err);
+  }
+};
+
 
   const handleChange = (qId, value) => {
     setAnswers({ ...answers, [qId]: value });
@@ -96,8 +111,9 @@ export default function Questions() {
           <div className="um-form-section">
             <h2 className="text-center ">Answer the Questions</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-[80%_20%] gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-6">
             {/* ----------------------- LEFT COLUMN (Questions) ----------------------- */}
+
             <div className="space-y-6 p-2">
               {questions.map((q) => (
                 <div
@@ -151,7 +167,7 @@ export default function Questions() {
                       key={q.id}
                       className="flex items-center justify-between p-2 bg-white rounded-lg border shadow-sm"
                     >
-                      <span className="text-gray-700 font-medium">Q{q.id}</span>
+                      <span className="text-gray-700 font-medium line-clamp-1">Q{q.question_text}</span>
 
                       {answered ? (
                         <span className="text-green-600 text-xl">✔️</span>

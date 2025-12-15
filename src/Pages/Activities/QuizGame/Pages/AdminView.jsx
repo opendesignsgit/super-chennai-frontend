@@ -42,7 +42,6 @@ export default function AdminView() {
 
       if (res.data && res.data.data) {
         setData(res.data.data);
-        console.log("data",res.data.data)
         sessionStorage.setItem("adminKey", adminKey);
 
         setShowPopup(false);

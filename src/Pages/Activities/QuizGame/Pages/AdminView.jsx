@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { API_BASE_URL_API } from "../../../../../config";
 import {  Link } from "react-router-dom";
+import { formatDateTime } from "../utils/dateTime";
 
 export default function AdminView() {
+ 
   const [adminKey, setAdminKey] = useState("");
   const [showPopup, setShowPopup] = useState(true);
   const [data, setData] = useState([]);
@@ -11,16 +13,28 @@ export default function AdminView() {
 
   const backendURL = `${API_BASE_URL_API}/admin/all-users`;
 
+  // Check admin key only
   useEffect(() => {
     const savedKey = sessionStorage.getItem("adminKey");
-    const savedData = sessionStorage.getItem("adminData");
 
-    if (savedKey && savedData) {
+    if (savedKey) {
       setAdminKey(savedKey);
-      setData(JSON.parse(savedData));
       setShowPopup(false);
+      fetchAdminData(savedKey);
     }
   }, []);
+
+  const fetchAdminData = async (key) => {
+    try {
+      const res = await axios.post(backendURL, { admin_key: key });
+      setData(res.data.data);
+    } catch (err) {
+      console.error("Fetch admin data failed:", err);
+      setErrorMsg("Session expired. Please re-enter admin key.");
+      sessionStorage.removeItem("adminKey");
+      setShowPopup(true);
+    }
+  };
 
   const validateKey = async () => {
     try {
@@ -28,9 +42,8 @@ export default function AdminView() {
 
       if (res.data && res.data.data) {
         setData(res.data.data);
-        console.log("admindata", res.data.data);
+        console.log("data",res.data.data)
         sessionStorage.setItem("adminKey", adminKey);
-        sessionStorage.setItem("adminData", JSON.stringify(res.data.data));
 
         setShowPopup(false);
       }
@@ -108,28 +121,37 @@ export default function AdminView() {
                     <th className="p-3 border">Phone</th>
                     <th className="p-3 border">Question</th>
                     <th className="p-3 border">Answer</th>
+                    <th className="p-3 border">Date</th>
+                    <th className="p-3 border">Time</th>
                     <th className="p-3 border">Correct?</th>
                   </tr>
                 </thead>
-
                 <tbody>
-                  {data.map((item, index) => (
-                    <tr key={index} className="hover:bg-gray-100">
-                      <td className="p-3 border">{item.user_id}</td>
-                      <td className="p-3 border">{item.name}</td>
-                      <td className="p-3 border">{item.email}</td>
-                      <td className="p-3 border">{item.phone}</td>
-                      <td className="p-3 border">{item.question_text}</td>
-                      <td className="p-3 border">{item.answer}</td>
-                      <td
-                        className={`p-3 border font-semibold ${
-                          item.is_correct ? "text-green-700" : "text-red-700"
-                        }`}
-                      >
-                        {item.is_correct ? "✔ Correct" : "❌ Wrong"}
-                      </td>
-                    </tr>
-                  ))}
+                  {data.map((item, index) => {
+                    const { date, time } = formatDateTime(item.created_at);
+
+                    return (
+                      <tr key={index} className="hover:bg-gray-100">
+                        <td className="p-3 border">{item.user_id}</td>
+                        <td className="p-3 border">{item.name}</td>
+                        <td className="p-3 border">{item.email}</td>
+                        <td className="p-3 border">{item.phone}</td>
+                        <td className="p-3 border">{item.question_text}</td>
+                        <td className="p-3 border">{item.answer}</td>
+
+                        <td className="p-3 border">{date}</td>
+                        <td className="p-3 border">{time}</td>
+
+                        <td
+                          className={`p-3 border font-semibold ${
+                            item.is_correct ? "text-green-700" : "text-red-700"
+                          }`}
+                        >
+                          {item.is_correct ? "✔ Correct" : "❌ Wrong"}
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>

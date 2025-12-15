@@ -155,12 +155,20 @@ export default function Login({ setIsLoggedIn }) {
       <ToastContainer position="top-center" />
 
       {/* ---------- Banner ---------- */}
-      <section className="accaodomationBannerSection ">
+      <section className="accaodomationBannerSection carquizbanner">
         <div>
+  
           <img
-            className="w-full h-[450px] object-cover"
+            className="eventsCalenderIamge hidden sm:block"
             src="/images/events/triva-contest.jpg"
             alt="Super Chennai Quiz"
+          />
+
+          {/* Mobile Image */}
+          <img
+            className=" block sm:hidden"
+            src="/images/events/triva-contest-small.jpg"
+            alt="Super Chennai Quiz Mobile"
           />
         </div>
 

@@ -459,15 +459,15 @@ function App() {
 
   // const [showPopup, setShowPopup] = useState(false);
 
-  // useEffect(() => {
-  //   const hasShownPopup = sessionStorage.getItem("popup-shown");
+  useEffect(() => {
+    const hasShownPopup = sessionStorage.getItem("popup-shown");
 
-  //   if (!hasShownPopup) {
-  //     console.log()
-  //     setShowPopup(true);
-  //     sessionStorage.setItem("popup-shown", "true");
-  //   }
-  // }, []);
+    if (!hasShownPopup) {
+      console.log()
+      setShowPopup(true);
+      sessionStorage.setItem("popup-shown", "true");
+    }
+  }, []);
 
   // const handleClosePopup = () => {
   //   setShowPopup(false);
@@ -519,7 +519,7 @@ function App() {
 
       {/* {showPopup && (
         <ImagePopup
-          imageUrl="/images/HomePage-Images/superchennai-pop.jpg"
+          imageUrl="/images/events/triva-popup.jpg"
           onClose={() => setShowPopup(false)}
         />
       )} */}

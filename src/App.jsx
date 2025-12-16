@@ -271,6 +271,8 @@ import SuperchennaiContestDetails from "./Pages/SuperchennaiContest/ContestDetai
 import IconOfMonthList from "./Pages/IconOfTheMonth/IconOfTheMonth";
 import IconOfMonthDetails from "./Pages/IconOfTheMonth/IconOfMonthDetailPage";
 
+import MargazhiMomentsContest from "./Pages/Activities/MargazhiMonth/MargazhiMomentsContest"
+
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
 import LanguageSwitcher from "./Components/LanguageDropdown/LanguageSwitcher"
@@ -714,6 +716,11 @@ function App() {
             </PrivateRoute>
           }
         />
+
+        {/* PUBLICK ROTES  */}
+        
+                <Route path="margazhi-month-contest" element={<MargazhiMomentsContest />} />
+
 
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />

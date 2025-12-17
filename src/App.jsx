@@ -272,6 +272,8 @@ import IconOfMonthList from "./Pages/IconOfTheMonth/IconOfTheMonth";
 import IconOfMonthDetails from "./Pages/IconOfTheMonth/IconOfMonthDetailPage";
 
 import MargazhiMomentsContest from "./Pages/Activities/MargazhiMonth/MargazhiMomentsContest"
+import MargazhiPageCalendar from "./Pages/Activities/MargazhiMonth/MargazhiPage"
+
 
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
@@ -720,7 +722,9 @@ function App() {
         {/* PUBLICK ROTES  */}
         
                 <Route path="margazhi-month-contest" element={<MargazhiMomentsContest />} />
+                                <Route path="margazhi-month-contest-calendar" element={<MargazhiPageCalendar />} />
 
+              
 
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />

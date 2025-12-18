@@ -1,12 +1,15 @@
 /* ===== react-calendar advanced styling ===== */
-
 .react-calendar {
-    width: 100%;
-    max-width: 650px;
-    border: none;
-    font-family: inherit;
-    background: white;
+  width: 100%;
+  max-width: 650px;
+  border: none;
+  font-family: inherit;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 4px 10px rgba(164, 66, 148, 0.12);
 }
+
 
 .react-calendar__navigation {
     margin-bottom: 16px;

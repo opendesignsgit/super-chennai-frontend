@@ -5,6 +5,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./style/calendar.css";
 import "react-toastify/dist/ReactToastify.css";
+import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
 
 export default function MargazhiPageCalendar() {
   /* ================= STATE ================= */
@@ -55,6 +56,72 @@ export default function MargazhiPageCalendar() {
           organizer: "Temple Committee",
         },
         {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        },
+
+
+         {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        }, {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        }, {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        }, {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        }, {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        }, {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        }, {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        }, {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        }, {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
@@ -195,18 +262,37 @@ export default function MargazhiPageCalendar() {
         />
       </Helmet>
 
-      {/* ================= BANNER ================= */}
       <section className="accaodomationBannerSection carquizbanner">
-        <img
-          src="/images/events/maragazhiMonth-banner.jpg"
-          className="w-full"
-          alt="Margazhi Banner"
-        />
+        <div>
+          <img
+            className="eventsCalenderIamge hidden sm:block"
+            src="/images/events/maragazhi-calendar.jpg"
+            alt="Super Chennai Quiz"
+          />
+
+          {/* Mobile Image */}
+          <img
+            className=" block sm:hidden"
+            src="/images/events/maragazhi-calendar-m.jpg"
+            alt="Super Chennai Quiz Mobile"
+          />
+        </div>
+
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Margazhi Moments – Photography Contest 2025</h1>
+            <h1></h1>
+            <AutoShrinkText
+              text="Margazhi Moments – Photography Contest 2025"
+              baseSize={60}
+              minSize={40}
+              maxChars={40}
+              className="accodoamationBannerText"
+              width="80%"
+              maxLines={2}
+            />
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <span>Margazhi Moments – Photography Contest 2025</span>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Margazhi Moments – Photography Contest 2025</Link>
             </div>
           </div>
         </div>
@@ -256,11 +342,32 @@ export default function MargazhiPageCalendar() {
 
       {/* ================= CALENDAR SECTION ================= */}
 
-      <section className="py-16 bg-white">
-        <div className="container max-w-7xl mx-auto px-4">
-          <h2 className="text-center mb-10 text-purple-900 formheadingthemeCalendar">
+      <section className="relative py-16 overflow-hidden">
+        {/* ===== DEVOTIONAL BACKGROUND ===== */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `
+        radial-gradient(circle at 15% 25%, rgba(236, 72, 153, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 20%, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 50% 85%, rgba(234, 179, 8, 0.12) 0%, transparent 50%),
+        linear-gradient(180deg, #fff7ed, #fdf4ff)
+      `,
+          }}
+        />
+
+        {/* Soft sacred overlay */}
+        <div className="absolute inset-0 bg-white/75 backdrop-blur-sm"></div>
+
+        {/* ===== CONTENT ===== */}
+        <div className="relative container max-w-7xl mx-auto px-4">
+          <h2 className="text-center mb-4 text-purple-900 formheadingthemeCalendar">
             Hidden Gems Margazhi Sabhas
           </h2>
+
+          <p className="text-center text-sm text-gray-600 mb-10 italic">
+            Sacred dawns, soulful music & timeless traditions
+          </p>
 
           <div className="flex justify-center">
             <Calendar
@@ -273,37 +380,31 @@ export default function MargazhiPageCalendar() {
               showNeighboringMonth={false}
             />
           </div>
-        </div>
-        {/* ===== Calendar Legend ===== */}
-        <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-          <div className="flex items-center gap-2">
-            <span className="w-4 h-4 rounded-full bg-gradient-to-br from-purple-600 to-purple-800"></span>
-            <span>Event Day</span>
-          </div>
 
-          {/* <div className="flex items-center gap-2">
-            <span className="w-4 h-4 rounded-full bg-purple-200"></span>
-            <span>Today</span>
-          </div> */}
+          {/* ===== Calendar Legend ===== */}
+          <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-700">
+            <div className="flex items-center gap-2">
+              <span className="w-4 h-4 rounded-full bg-gradient-to-br from-purple-600 to-purple-800"></span>
+              <span>Event Day</span>
+            </div>
 
-          <div className="flex items-center gap-2">
-            <span className="w-5 h-5 rounded-full border border-purple-400 flex items-center justify-center text-[10px] font-bold text-purple-700">
-              2
-            </span>
-            <span>Number of Events</span>
-          </div>
+            <div className="flex items-center gap-2">
+              <span className="w-5 h-5 rounded-full border border-purple-500 flex items-center justify-center text-[10px] font-bold text-purple-700">
+                2
+              </span>
+              <span>Number of Events</span>
+            </div>
 
-          <div className="flex items-center gap-2">
-            <span className="italic text-gray-500">
+            <div className="flex items-center gap-2 italic text-gray-600">
               Click a highlighted date to view events
-            </span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ================= ADVANCED MODAL ================= */}
       {openModal && selectedDateEvents.length > 0 && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
+        <div className="fixed inset-0 flex items-center justify-center z-[9999]">
           {/* Overlay */}
           <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"

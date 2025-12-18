@@ -1,10 +1,9 @@
-
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import "./style/calendar.css"; 
+import "./style/calendar.css";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function MargazhiPageCalendar() {
@@ -21,148 +20,147 @@ export default function MargazhiPageCalendar() {
 
   /* ================= DATA ================= */
 
- const hiddenGemEvents = [
-  {
-    date: "2025-12-01",
-    events: [
-      {
-        name: "Early Morning Nadaswaram",
-        category: "Temple Music",
-        time: "5:00 AM – 6:00 AM",
-        place: "Parthasarathy Temple, Triplicane",
-        musicians: "Temple Nadaswaram Vidwans",
-        organizer: "Temple Committee",
-      },
-      {
-        name: "Margazhi Kolam Walk",
-        category: "Community Art",
-        time: "6:00 AM – 7:00 AM",
-        place: "Triplicane Streets",
-        musicians: "—",
-        organizer: "Local Residents",
-      },
-    ],
-  },
+  const hiddenGemEvents = [
+    {
+      date: "2025-12-01",
+      events: [
+        {
+          name: "Early Morning Nadaswaram",
+          category: "Temple Music",
+          time: "5:00 AM – 6:00 AM",
+          place: "Parthasarathy Temple, Triplicane",
+          musicians: "Temple Nadaswaram Vidwans",
+          organizer: "Temple Committee",
+        },
+        {
+          name: "Margazhi Kolam Walk",
+          category: "Community Art",
+          time: "6:00 AM – 7:00 AM",
+          place: "Triplicane Streets",
+          musicians: "—",
+          organizer: "Local Residents",
+        },
+      ],
+    },
 
-  {
-    date: "2025-12-16",
-    events: [
-      {
-        name: "Temple Courtyard Concert",
-        category: "Devotional Music",
-        time: "5:00 AM – 6:30 AM",
-        place: "Kapaleeshwarar Temple, Mylapore",
-        musicians: "Local Oduvars & Artists",
-        organizer: "Temple Committee",
-      },
-      {
-        name: "Suprabhatam Recital",
-        category: "Spiritual Chant",
-        time: "6:45 AM – 7:30 AM",
-        place: "Kapaleeshwarar Temple, Mylapore",
-        musicians: "Temple Artists",
-        organizer: "Temple Committee",
-      },
-    ],
-  },
+    {
+      date: "2025-12-16",
+      events: [
+        {
+          name: "Temple Courtyard Concert",
+          category: "Devotional Music",
+          time: "5:00 AM – 6:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Local Oduvars & Artists",
+          organizer: "Temple Committee",
+        },
+        {
+          name: "Suprabhatam Recital",
+          category: "Spiritual Chant",
+          time: "6:45 AM – 7:30 AM",
+          place: "Kapaleeshwarar Temple, Mylapore",
+          musicians: "Temple Artists",
+          organizer: "Temple Committee",
+        },
+      ],
+    },
 
-  {
-    date: "2025-12-18",
-    events: [
-      {
-        name: "Veena at Sunrise",
-        category: "Instrumental Music",
-        time: "6:15 AM – 7:15 AM",
-        place: "Theosophical Society, Adyar",
-        musicians: "Veena E. Gayathri (Students)",
-        organizer: "Adyar Cultural Circle",
-      },
-    ],
-  },
+    {
+      date: "2025-12-18",
+      events: [
+        {
+          name: "Veena at Sunrise",
+          category: "Instrumental Music",
+          time: "6:15 AM – 7:15 AM",
+          place: "Theosophical Society, Adyar",
+          musicians: "Veena E. Gayathri (Students)",
+          organizer: "Adyar Cultural Circle",
+        },
+      ],
+    },
 
-  {
-    date: "2025-12-20",
-    events: [
-      {
-        name: "Harikatha Kalakshepam",
-        category: "Storytelling",
-        time: "4:30 PM – 6:30 PM",
-        place: "R.K. Math, Mylapore",
-        musicians: "Sri Dushyanth Sridhar",
-        organizer: "Ram Krishna Math",
-      },
-      {
-        name: "Bhajan Sandhya",
-        category: "Devotional Music",
-        time: "6:45 PM – 8:00 PM",
-        place: "R.K. Math, Mylapore",
-        musicians: "Temple Bhajan Group",
-        organizer: "RKM Chennai",
-      },
-    ],
-  },
+    {
+      date: "2025-12-20",
+      events: [
+        {
+          name: "Harikatha Kalakshepam",
+          category: "Storytelling",
+          time: "4:30 PM – 6:30 PM",
+          place: "R.K. Math, Mylapore",
+          musicians: "Sri Dushyanth Sridhar",
+          organizer: "Ram Krishna Math",
+        },
+        {
+          name: "Bhajan Sandhya",
+          category: "Devotional Music",
+          time: "6:45 PM – 8:00 PM",
+          place: "R.K. Math, Mylapore",
+          musicians: "Temple Bhajan Group",
+          organizer: "RKM Chennai",
+        },
+      ],
+    },
 
-  {
-    date: "2025-12-21",
-    events: [
-      {
-        name: "Neighbourhood Kolam & Music",
-        category: "Community Arts",
-        time: "6:00 AM – 8:00 AM",
-        place: "Mylapore Streets",
-        musicians: "Young Local Artists",
-        organizer: "Residents Association",
-      },
-    ],
-  },
+    {
+      date: "2025-12-21",
+      events: [
+        {
+          name: "Neighbourhood Kolam & Music",
+          category: "Community Arts",
+          time: "6:00 AM – 8:00 AM",
+          place: "Mylapore Streets",
+          musicians: "Young Local Artists",
+          organizer: "Residents Association",
+        },
+      ],
+    },
 
-  {
-    date: "2025-12-23",
-    events: [
-      {
-        name: "Lecture Demonstration – Raga Bhava",
-        category: "Lecture Demonstration",
-        time: "4:00 PM – 5:30 PM",
-        place: "Bharatiya Vidya Bhavan, Mylapore",
-        musicians: "Vid. Sikkil Gurucharan",
-        organizer: "BVB Chennai",
-      },
-    ],
-  },
+    {
+      date: "2025-12-23",
+      events: [
+        {
+          name: "Lecture Demonstration – Raga Bhava",
+          category: "Lecture Demonstration",
+          time: "4:00 PM – 5:30 PM",
+          place: "Bharatiya Vidya Bhavan, Mylapore",
+          musicians: "Vid. Sikkil Gurucharan",
+          organizer: "BVB Chennai",
+        },
+      ],
+    },
 
-  {
-    date: "2025-12-25",
-    events: [
-      {
-        name: "Christmas Morning Choir",
-        category: "Choral Music",
-        time: "7:00 AM – 8:00 AM",
-        place: "Santhome Basilica",
-        musicians: "Church Choir",
-        organizer: "Santhome Cathedral",
-      },
-      {
-        name: "Fusion Carnatic Ensemble",
-        category: "Fusion Music",
-        time: "6:30 PM – 8:00 PM",
-        place: "Alliance Française, Nungambakkam",
-        musicians: "Young Fusion Artists",
-        organizer: "Alliance Française",
-      },
-    ],
-  },
-];
+    {
+      date: "2025-12-25",
+      events: [
+        {
+          name: "Christmas Morning Choir",
+          category: "Choral Music",
+          time: "7:00 AM – 8:00 AM",
+          place: "Santhome Basilica",
+          musicians: "Church Choir",
+          organizer: "Santhome Cathedral",
+        },
+        {
+          name: "Fusion Carnatic Ensemble",
+          category: "Fusion Music",
+          time: "6:30 PM – 8:00 PM",
+          place: "Alliance Française, Nungambakkam",
+          musicians: "Young Fusion Artists",
+          organizer: "Alliance Française",
+        },
+      ],
+    },
+  ];
 
   /* ================= CALENDAR HELPERS ================= */
 
- const tileClassName = ({ date }) => {
-  const hasEvent = hiddenGemEvents.find(
-    (item) => new Date(item.date).toDateString() === date.toDateString()
-  );
+  const tileClassName = ({ date }) => {
+    const hasEvent = hiddenGemEvents.find(
+      (item) => new Date(item.date).toDateString() === date.toDateString()
+    );
 
-  return hasEvent ? "event-day" : null;
-};
-
+    return hasEvent ? "event-day" : null;
+  };
 
   const tileContent = ({ date }) => {
     const dayData = hiddenGemEvents.find(
@@ -171,11 +169,7 @@ export default function MargazhiPageCalendar() {
 
     if (!dayData) return null;
 
-    return (
-      <span className="event-badge">
-        {dayData.events.length}
-      </span>
-    );
+    return <span className="event-badge">{dayData.events.length}</span>;
   };
 
   const onDateClick = (date) => {
@@ -210,19 +204,62 @@ export default function MargazhiPageCalendar() {
         />
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Margazhi Calendar 2025</h1>
+            <h1>Margazhi Moments – Photography Contest 2025</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <span>Margazhi Calendar</span>
+              <Link to="/">Home</Link> - <span>Margazhi Moments – Photography Contest 2025</span>
             </div>
           </div>
         </div>
       </section>
 
+      {/* ================= Intro Content ================= */}
+      <div
+        className="visitIntroParaSection detailIntro"
+        style={{ paddingBottom: "0" }}
+      >
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="workIntro">
+            <h1>Margazhi Moments – Photography Contest 2025</h1>
+
+            <p>
+              Margazhi is a special time in Chennai when the city slows down and
+              turns deeply cultural. Early mornings begin with misty air,
+              devotional music, and streets decorated with beautiful kolams.
+              Homes, temples, and sabhas come alive with tradition, devotion,
+              and creativity.
+            </p>
+            <p>
+              This season is best known for its Carnatic music and classical
+              dance festivals, where renowned artists and young talents perform
+              across the city. Sabhas host concerts, lecture demonstrations, and
+              cultural discussions that attract audiences from all over India
+              and the world.
+            </p>
+
+            <p>
+              Temples hold special poojas, bhajans, and processions, creating a
+              calm and spiritual atmosphere. The aroma of traditional foods,
+              festive markets, and the soft rhythm of music fill the streets,
+              making Margazhi a unique experience for both residents and
+              visitors.
+            </p>
+            <p>
+              Margazhi in Chennai is not just a festival—it is a feeling. A
+              season that celebrates art, heritage, devotion, and the quiet
+              beauty of everyday life.
+            </p>
+
+            <hr />
+          </div>
+        </div>
+      </div>
+
       {/* ================= CALENDAR SECTION ================= */}
+
       <section className="py-16 bg-white">
         <div className="container max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-10 text-purple-900">
-            Hidden Gems: Margazhi Sabhas
+          <h2 className="text-center mb-10 text-purple-900 formheadingthemeCalendar">
+            Hidden Gems Margazhi Sabhas
           </h2>
 
           <div className="flex justify-center">
@@ -235,6 +272,31 @@ export default function MargazhiPageCalendar() {
               defaultView="month"
               showNeighboringMonth={false}
             />
+          </div>
+        </div>
+        {/* ===== Calendar Legend ===== */}
+        <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+          <div className="flex items-center gap-2">
+            <span className="w-4 h-4 rounded-full bg-gradient-to-br from-purple-600 to-purple-800"></span>
+            <span>Event Day</span>
+          </div>
+
+          {/* <div className="flex items-center gap-2">
+            <span className="w-4 h-4 rounded-full bg-purple-200"></span>
+            <span>Today</span>
+          </div> */}
+
+          <div className="flex items-center gap-2">
+            <span className="w-5 h-5 rounded-full border border-purple-400 flex items-center justify-center text-[10px] font-bold text-purple-700">
+              2
+            </span>
+            <span>Number of Events</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <span className="italic text-gray-500">
+              Click a highlighted date to view events
+            </span>
           </div>
         </div>
       </section>

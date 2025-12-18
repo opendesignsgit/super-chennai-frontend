@@ -293,6 +293,11 @@
   font-size: clamp(12px, 3vw, 50px);
   line-height: clamp(48px, 6vw, 77px);
 }
+.formheadingthemeCalendar {
+  font-family: "NewAmsterdam";
+  font-size: clamp(12px, 3vw, 50px);
+  line-height: clamp(48px, 6vw, 77px);
+}
 @media (min-width: 300px) and (max-width: 700px) {
   .formheadingtheme {
     font-size: 28px;

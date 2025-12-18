@@ -5,6 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { API_BASE_URL_API } from "../../../../config";
+import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
 
 export default function MargazhiMomentsContest() {
   const countryCodes = [
@@ -246,10 +247,19 @@ export default function MargazhiMomentsContest() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Triva 2025</h1>
+            <h1></h1>
+            <AutoShrinkText
+                text="Margazhi Moments – Photography Contest 2025"
+                baseSize={60}
+                minSize={40}
+                maxChars={40}
+                className="accodoamationBannerText"
+                width="80%"
+                maxLines={2}
+              />
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="">Margazhi Moments – Photography Contest 2025</Link>
             </div>
           </div>
         </div>
@@ -271,67 +281,39 @@ export default function MargazhiMomentsContest() {
               into works of art. The city lights up with cultural brilliance as
               sabhas host inspiring performances rooted in age-old tradition.
             </p>
+            <p>
+              This is the time when Chennai’s true spirit comes forward.
+              Artists, travellers, and culture enthusiasts gather to experience
+              the season’s classical rhythm—its music, its dance, and its deep
+              sense of heritage. Margazhi brings a natural harmony to the
+              city—refreshing breezes, radiant stages, and an atmosphere that
+              welcomes everyone into its festive warmth. Every pathway, every
+              performance, every serene corner reflects the charm of this
+              cherished month.
+            </p>
+            <p>
+              Chennai glows with Christmas carols, festive lights, joyful
+              gatherings, and the excitement of a new year on the horizon.
+              Together, these moments create a season where tradition and
+              festivity sit side by side—capturing the true diversity and spirit
+              of Chennai.
+            </p>
 
-            <p style={{ textAlign: "left", width: "100%" }}>
-              <p>
-                This is the time when Chennai’s true spirit comes forward.
-                Artists, travellers, and culture enthusiasts gather to
-                experience the season’s classical rhythm—its music, its dance,
-                and its deep sense of heritage. Margazhi brings a natural
-                harmony to the city—refreshing breezes, radiant stages, and an
-                atmosphere that welcomes everyone into its festive warmth. Every
-                pathway, every performance, every serene corner reflects the
-                charm of this cherished month.
-              </p>
-
-              <p>
-                Chennai glows with Christmas carols, festive lights, joyful
-                gatherings, and the excitement of a new year on the horizon.
-                Together, these moments create a season where tradition and
-                festivity sit side by side—capturing the true diversity and
-                spirit of Chennai.
-              </p>
-              <p>
-                At Super Chennai, we invite you to show us Margazhi through your
-                eyes. This season holds moments waiting to be celebrated. Share
-                a glimpse, a feeling, a memory—captured through your lens.
-              </p>
+            <p>
+              At Super Chennai, we invite you to show us Margazhi through your
+              eyes. This season holds moments waiting to be celebrated. Share a
+              glimpse, a feeling, a memory—captured through your lens.
             </p>
 
             <hr />
 
-            <p style={{ textAlign: "left", width: "100%" }}>
-              <div style={{ marginTop: "10px" }}>
-                <strong
-                  className="fontforstyle"
-                  style={{ color: "#995098", fontWeight: "bolder" }}
-                >
-                  Who Can Participate
-                </strong>
-                <p>
-                  Pick up your camera or mobile, frame the spirit of Margazhi,
-                  and share your story through photographs. Winning entries will
-                  be featured on our page and receive exciting gift vouchers.
-                </p>
-              </div>
+            <div className="formheadingtheme">Who Can Participate</div>
+
+            <p>
+             Pick up your camera or mobile, frame the spirit of Margazhi, and share your story through photographs. Winning entries will be featured on our page and receive exciting gift vouchers.
             </p>
 
             <hr />
-
-            <p style={{ textAlign: "left", width: "100%" }}>
-              <p>
-                Margazhi draws visitors from across the world to experience
-                Chennai’s rich traditions, classical music, dance, and heritage.
-                This contest is your chance to freeze those fleeting moments in
-                time.
-              </p>
-
-              <p>
-                Pick up your camera, frame the spirit of Margazhi, and share
-                your story through photographs. Let the city speak through your
-                lens.
-              </p>
-            </p>
           </div>
         </div>
       </div>

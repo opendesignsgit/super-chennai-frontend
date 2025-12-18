@@ -233,14 +233,14 @@ export default function MargazhiMomentsContest() {
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/maragazhiMonth-banner.jpg"
+            src="/images/events/banner-margazimoments.jpg"
             alt="Super Chennai Quiz"
           />
 
           {/* Mobile Image */}
           <img
             className=" block sm:hidden"
-            src="/images/events/maragazhiMonth-banner.jpg"
+            src="/images/events/banner-margazimoments-m.jpg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
@@ -248,7 +248,7 @@ export default function MargazhiMomentsContest() {
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
             <h1></h1>
-            <AutoShrinkText
+            {/* <AutoShrinkText
               text="Photography Contest"
               baseSize={60}
               minSize={40}
@@ -256,10 +256,10 @@ export default function MargazhiMomentsContest() {
               className="accodoamationBannerText"
               width="80%"
               maxLines={2}
-            />
-            <div className="breadCrum">
+            /> */}
+            {/* <div className="breadCrum">
               <Link to="/">Home</Link> - <Link to="">Photography Contest</Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

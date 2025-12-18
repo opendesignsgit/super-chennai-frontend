@@ -249,17 +249,16 @@ export default function MargazhiMomentsContest() {
           <div className="accodoamationBannerText">
             <h1></h1>
             <AutoShrinkText
-                text="Margazhi Moments – Photography Contest 2025"
-                baseSize={60}
-                minSize={40}
-                maxChars={40}
-                className="accodoamationBannerText"
-                width="80%"
-                maxLines={2}
-              />
+              text="Photography Contest"
+              baseSize={60}
+              minSize={40}
+              maxChars={40}
+              className="accodoamationBannerText"
+              width="80%"
+              maxLines={2}
+            />
             <div className="breadCrum">
-              <Link to="/">Home</Link> -{" "}
-              <Link to="">Margazhi Moments – Photography Contest 2025</Link>
+              <Link to="/">Home</Link> - <Link to="">Photography Contest</Link>
             </div>
           </div>
         </div>
@@ -272,7 +271,7 @@ export default function MargazhiMomentsContest() {
       >
         <div className="container max-w-7xl mx-auto px-4">
           <div className="workIntro">
-            <h1>Margazhi Moments – Photography Contest 2025</h1>
+            <h1>Moments That Define Margazhi</h1>
 
             <p>
               Margazhi settles over Chennai like a gentle blessing—cool dawns
@@ -285,12 +284,13 @@ export default function MargazhiMomentsContest() {
               This is the time when Chennai’s true spirit comes forward.
               Artists, travellers, and culture enthusiasts gather to experience
               the season’s classical rhythm—its music, its dance, and its deep
-              sense of heritage. Margazhi brings a natural harmony to the
-              city—refreshing breezes, radiant stages, and an atmosphere that
-              welcomes everyone into its festive warmth. Every pathway, every
-              performance, every serene corner reflects the charm of this
-              cherished month.
+              sense of heritage. <br></br>Margazhi brings a natural harmony to
+              the city—refreshing breezes, radiant stages, <br></br>and an
+              atmosphere that welcomes everyone into its festive warmth. Every
+              pathway, every performance, every serene corner reflects the charm
+              of this cherished month.
             </p>
+
             <p>
               Chennai glows with Christmas carols, festive lights, joyful
               gatherings, and the excitement of a new year on the horizon.
@@ -307,10 +307,14 @@ export default function MargazhiMomentsContest() {
 
             <hr />
 
-            <div className="formheadingtheme">Who Can Participate</div>
+            <div className="formheadingtheme mt-5 mb-0 pb-0">
+              Who Can Participate
+            </div>
 
-            <p>
-             Pick up your camera or mobile, frame the spirit of Margazhi, and share your story through photographs. Winning entries will be featured on our page and receive exciting gift vouchers.
+            <p className="mt-1">
+              Pick up your camera or mobile, frame the spirit of Margazhi, and
+              share your story through photographs. Winning entries will be
+              featured on our page and receive exciting gift vouchers.
             </p>
 
             <hr />

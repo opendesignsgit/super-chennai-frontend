@@ -217,11 +217,11 @@ export default function MargazhiMomentsContest() {
       {/* ================= SEO ================= */}
       <Helmet>
         <title>
-          Margazhi Moments – Photography Contest 2025 | Super Chennai
+         Margazhi Month Moments | Photography Contest
         </title>
         <meta
           name="description"
-          content="Capture the spirit of Margazhi in Chennai. Participate in Margazhi Moments Photography Contest 2025 and showcase music, kolams, culture, and heritage."
+          content=" Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
         />
       </Helmet>
 

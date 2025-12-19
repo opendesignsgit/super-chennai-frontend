@@ -12,14 +12,38 @@ export default function MargazhiPageCalendar() {
   const [selectedDateEvents, setSelectedDateEvents] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
+  const [activeTab, setActiveTab] = useState("All");
 
+  // const closeModal = () => {
+  //   setSelectedDateEvents([]);
+  //   setSelectedDate(null);
+  //   setOpenModal(false);
+  // };
   const closeModal = () => {
-    setSelectedDateEvents([]);
-    setSelectedDate(null);
-    setOpenModal(false);
-  };
+  setSelectedDateEvents([]);
+  setSelectedDate(null);
+  setActiveTab("All");
+  setOpenModal(false);
+};
+
+const filteredEvents =
+  activeTab === "All"
+    ? selectedDateEvents
+    : selectedDateEvents.filter(
+        (event) => event.organizer === activeTab
+      );
 
   /* ================= DATA ================= */
+
+  const sabhaTabs = [
+    "All",
+    "The Music Academy",
+    "Krishna Gana Sabha",
+    "Narada Gana Sabha",
+    "Mylapore Fine Arts Club",
+    "Sri Parthasarathy Swami Sabha",
+    "Bharatiya Vidya Bhavan (Mini Hall)",
+  ];
 
   const hiddenGemEvents = [
     {
@@ -339,6 +363,25 @@ export default function MargazhiPageCalendar() {
           </div>
         </div>
       </div>
+
+      {/* ===== SABHA TABS ===== */}
+<div className="mb-6 flex flex-wrap gap-3">
+  {sabhaTabs.map((tab) => (
+    <button
+      key={tab}
+      onClick={() => setActiveTab(tab)}
+      className={`px-4 py-2 rounded-full text-sm font-medium transition
+        ${
+          activeTab === tab
+            ? "bg-purple-700 text-white shadow"
+            : "bg-purple-100 text-purple-700 hover:bg-purple-200"
+        }`}
+    >
+      {tab}
+    </button>
+  ))}
+</div>
+
 
       {/* ================= CALENDAR SECTION ================= */}
 

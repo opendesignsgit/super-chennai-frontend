@@ -12,38 +12,68 @@ export default function MargazhiPageCalendar() {
   const [selectedDateEvents, setSelectedDateEvents] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
-  const [activeTab, setActiveTab] = useState("All");
 
-  // const closeModal = () => {
-  //   setSelectedDateEvents([]);
-  //   setSelectedDate(null);
-  //   setOpenModal(false);
-  // };
   const closeModal = () => {
-  setSelectedDateEvents([]);
-  setSelectedDate(null);
-  setActiveTab("All");
-  setOpenModal(false);
-};
-
-const filteredEvents =
-  activeTab === "All"
-    ? selectedDateEvents
-    : selectedDateEvents.filter(
-        (event) => event.organizer === activeTab
-      );
+    setSelectedDateEvents([]);
+    setSelectedDate(null);
+    setOpenModal(false);
+  };
 
   /* ================= DATA ================= */
 
-  const sabhaTabs = [
-    "All",
-    "The Music Academy",
-    "Krishna Gana Sabha",
-    "Narada Gana Sabha",
-    "Mylapore Fine Arts Club",
-    "Sri Parthasarathy Swami Sabha",
-    "Bharatiya Vidya Bhavan (Mini Hall)",
+  const musicCategories = [
+    {
+      title: "The Music Academy",
+      subtitle: "Iconic Carnatic Concerts",
+      icon: "🎼",
+    },
+    {
+      title: "Krishna Gana Sabha",
+      subtitle: "Traditional Excellence",
+      icon: "🎶",
+    },
+    {
+      title: "Narada Gana Sabha",
+      subtitle: "Heritage Performances",
+      icon: "🪔",
+    },
+    {
+      title: "Mylapore Fine Arts Club",
+      subtitle: "Young & Senior Artists",
+      icon: "🎻",
+    },
+    {
+      title: "Sri Parthasarathy Swami Sabha",
+      subtitle: "Temple-linked Sabhas",
+      icon: "🛕",
+    },
+    {
+      title: "Bharatiya Vidya Bhavan",
+      subtitle: "Lec-Dems & Intimate Concerts",
+      icon: "📖",
+    },
   ];
+
+  const canteenCategories = [
+    {
+      title: "Music Academy Canteen",
+      subtitle: "Legendary Filter Coffee & Pongal",
+      icon: "☕",
+    },
+    {
+      title: "Mylapore Sabha Snacks",
+      subtitle: "Sundal, Vadai & Coffee",
+      icon: "🍘",
+    },
+    {
+      title: "Temple Prasadam Spots",
+      subtitle: "Divine & Simple Meals",
+      icon: "🍚",
+    },
+  ];
+  const [activeTab, setActiveTab] = useState("sabha");
+
+  const data = activeTab === "sabha" ? musicCategories : canteenCategories;
 
   const hiddenGemEvents = [
     {
@@ -88,64 +118,71 @@ const filteredEvents =
           organizer: "Temple Committee",
         },
 
-
-         {
+        {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
           place: "Kapaleeshwarar Temple, Mylapore",
           musicians: "Temple Artists",
           organizer: "Temple Committee",
-        }, {
+        },
+        {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
           place: "Kapaleeshwarar Temple, Mylapore",
           musicians: "Temple Artists",
           organizer: "Temple Committee",
-        }, {
+        },
+        {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
           place: "Kapaleeshwarar Temple, Mylapore",
           musicians: "Temple Artists",
           organizer: "Temple Committee",
-        }, {
+        },
+        {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
           place: "Kapaleeshwarar Temple, Mylapore",
           musicians: "Temple Artists",
           organizer: "Temple Committee",
-        }, {
+        },
+        {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
           place: "Kapaleeshwarar Temple, Mylapore",
           musicians: "Temple Artists",
           organizer: "Temple Committee",
-        }, {
+        },
+        {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
           place: "Kapaleeshwarar Temple, Mylapore",
           musicians: "Temple Artists",
           organizer: "Temple Committee",
-        }, {
+        },
+        {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
           place: "Kapaleeshwarar Temple, Mylapore",
           musicians: "Temple Artists",
           organizer: "Temple Committee",
-        }, {
+        },
+        {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
           place: "Kapaleeshwarar Temple, Mylapore",
           musicians: "Temple Artists",
           organizer: "Temple Committee",
-        }, {
+        },
+        {
           name: "Suprabhatam Recital",
           category: "Spiritual Chant",
           time: "6:45 AM – 7:30 AM",
@@ -364,24 +401,64 @@ const filteredEvents =
         </div>
       </div>
 
-      {/* ===== SABHA TABS ===== */}
-<div className="mb-6 flex flex-wrap gap-3">
-  {sabhaTabs.map((tab) => (
-    <button
-      key={tab}
-      onClick={() => setActiveTab(tab)}
-      className={`px-4 py-2 rounded-full text-sm font-medium transition
-        ${
-          activeTab === tab
-            ? "bg-purple-700 text-white shadow"
-            : "bg-purple-100 text-purple-700 hover:bg-purple-200"
-        }`}
-    >
-      {tab}
-    </button>
-  ))}
-</div>
+      <section className="w-full py-16 bg-gradient-to-b from-[#faf7fb] to-white">
+        <div className="max-w-6xl mx-auto px-4">
+          {/* Title */}
+          <h2 className="text-center text-3xl md:text-4xl font-bold text-[#7b1f6a] mb-10">
+            Margazhi Festival Guide
+          </h2>
 
+          {/* Tabs */}
+          <div className="flex justify-center mb-12">
+            <div className="bg-white shadow-lg rounded-full p-2 flex gap-2">
+              <button
+                onClick={() => setActiveTab("sabha")}
+                className={`px-6 py-2 rounded-full text-sm md:text-base font-semibold transition
+                ${
+                  activeTab === "sabha"
+                    ? "bg-[#a44294] text-white shadow"
+                    : "text-gray-600 hover:bg-gray-100"
+                }`}
+              >
+                Margazhi Sabha
+              </button>
+
+              <button
+                onClick={() => setActiveTab("canteen")}
+                className={`px-6 py-2 rounded-full text-sm md:text-base font-semibold transition
+                ${
+                  activeTab === "canteen"
+                    ? "bg-[#a44294] text-white shadow"
+                    : "text-gray-600 hover:bg-gray-100"
+                }`}
+              >
+                Foods & Canteen
+              </button>
+            </div>
+          </div>
+
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {data.map((item, index) => (
+              <div
+                key={index}
+                className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-4xl">{item.icon}</span>
+                  <span className="w-10 h-1 bg-[#a44294] rounded-full opacity-0 group-hover:opacity-100 transition" />
+                </div>
+
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  {item.title}
+                </h3>
+
+                <p className="text-sm text-gray-600">{item.subtitle}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ================= CALENDAR SECTION ================= */}
 

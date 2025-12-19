@@ -721,7 +721,7 @@ function App() {
 
         {/* PUBLICK ROTES  */}
         
-                <Route path="margazhi-month/photography-contest" element={<MargazhiMomentsContest />} />
+                <Route path="contest/margazhi-month-photography-contest" element={<MargazhiMomentsContest />} />
                                 <Route path="margazhi-month-contest-calendar" element={<MargazhiPageCalendar />} />
 
               

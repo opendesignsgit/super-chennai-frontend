@@ -18,6 +18,16 @@ export default function Thankyou() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "instant", 
+  });
+}, []);
+
+
+
   return (
     <>
       <div style={{ display: "flex", justifyContent: "center" }}>

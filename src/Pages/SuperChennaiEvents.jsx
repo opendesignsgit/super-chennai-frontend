@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
 import "../assets/Css/Eventstyle.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useState, useEffect } from "react";
 
 export default function SuperChennaiEvents() {
+    useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant", 
+    });
+  }, []);
+  
   return (
     <>
       <Helmet>

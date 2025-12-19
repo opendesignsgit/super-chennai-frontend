@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { API_BASE_URL_API } from "../../../../config";
 import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
+import { useNavigate } from "react-router-dom";
 
 export default function MargazhiMomentsContest() {
   const countryCodes = [
@@ -93,6 +94,7 @@ export default function MargazhiMomentsContest() {
     { code: "+1", name: "United States" },
     { code: "+84", name: "Vietnam" },
   ];
+const navigate = useNavigate();
 
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
@@ -202,6 +204,7 @@ export default function MargazhiMomentsContest() {
           consent: false,
         });
         setImages([null, null, null]);
+        navigate("/thank-you");
       }
     } catch (error) {
       console.error(error);

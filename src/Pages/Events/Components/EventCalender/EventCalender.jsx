@@ -139,7 +139,9 @@ export default function EventCalender({ events = [] }) {
                 e.target.src = defaultImage;
               }}
               onClick={() =>
-                (window.location.href = `/events-in-chennai/${featuredEvent.slug}`)
+                // (window.location.href = `/events-in-chennai/${featuredEvent.slug}`)
+                 (window.location.href = `/contest/margazhi-month-photography-contest/`)
+
                 
               }
             />

@@ -37,6 +37,14 @@ const slides = [
   //   title: "Icon of the month in chennai",
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
+  
+   {
+    image: "/images/margazhi-contest-home.jpg",
+    link: "contest/margazhi-month-photography-contest",
+    image1: "/images/margazhi-contest-home-m.jpg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
   {
     image: "/images/HomePage-Images/banner-0.jpg",
     link: "#",

@@ -78,7 +78,22 @@ export default function SuperChennaiEvents() {
 
             <div className="flex superchennaiEventsMainContainer">
               {/* Left */}
-
+              <a
+                className="superchennaiEventsSection"
+                href="contest/margazhi-month-photography-contest"
+              >
+                <div
+                  className="flex flex-col items-center text-center "
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/events/margazhi-photography-c.jpg"
+                    alt="Right Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">Photography Contest</p>
+                </div>
+              </a>
 
                             <a
                 className="superchennaiEventsSection"

@@ -208,6 +208,7 @@ import WestChennai from "./Pages/SubPages/Utilities/WestChennai";
 import BurmeseCusine from "./Pages/SubPages/VisitPages/Burmese-Cusine";
 import MexicanCusine from "./Pages/SubPages/VisitPages/MexicanCusine";
 import Thankyou from "./Pages/Thankyou";
+import ThankyouForContest from "./Pages/Activities/ThanksPage"
 
 import About from "./Pages/About";
 import Contact from "./Pages/contact";
@@ -521,12 +522,13 @@ function App() {
 
       {/* <LanguageSwitcher /> */}
 
-      {/* {showPopup && (
+      {showPopup && (
         <ImagePopup
-          imageUrl="/images/events/triva-popup.jpg"
+          // imageUrl="/images/events/triva-popup.jpg"
+          imageUrl="/images/events/margazhi-contest-home-popup.jpg"
           onClose={() => setShowPopup(false)}
         />
-      )} */}
+      )}
 
       <div
         ref={stickyRef}
@@ -571,20 +573,20 @@ function App() {
         </a>
       </div>
 
-      {/* <div
+      <div
         id="superChennaiContest-quiz-tab"
         ref={stickyRef}
         className={`super-chennai-contest pointcastSticky nammaStorieslink ${
           footerReached ? "footerreached" : ""
         }`}
       >
-        <a href="/contests/chennai-quiz">
+        <a href="/contest/margazhi-month-photography-contest">
           <img
-            src="/images/super-chennai-quiz.png"
+            src="/images/tab-margazhi.png"
             alt="artificial intelligence challenge"
           />
         </a>
-      </div> */}
+      </div>
 
       {/* <div
           ref={stickyRef}
@@ -1438,6 +1440,8 @@ function App() {
 
         <Route path="/thankyou" element={<Thankyou />} />
         <Route path="/quizthankyou" element={<QuizThankyou />} />
+        <Route path="/thank-you" element={<ThankyouForContest />} />
+
 
         {/* MexicanCuisineinChennai */}
 

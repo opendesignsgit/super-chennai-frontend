@@ -30,9 +30,44 @@ export default function Thankyou() {
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      {/* <div style={{ display: "flex", justifyContent: "center" }}>
         <img style={{ width: "auto" }} src={imageSrc} alt="Thank you" />
-      </div>
+      </div> */}
+
+            <section className="accaodomationBannerSection carquizbanner">
+        <div>
+          <img
+            className="eventsCalenderIamge hidden sm:block"
+            src="/images/events/banner-margazimoments.jpg"
+            alt="Super Chennai Quiz"
+          />
+
+          {/* Mobile Image */}
+          <img
+            className=" block sm:hidden"
+            src="/images/events/banner-margazimoments-m.jpg"
+            alt="Super Chennai Quiz Mobile"
+          />
+        </div>
+
+        <div className="accodoamationBannerContainer">
+          <div className="accodoamationBannerText">
+            <h1></h1>
+            {/* <AutoShrinkText
+              text="Photography Contest"
+              baseSize={60}
+              minSize={40}
+              maxChars={40}
+              className="accodoamationBannerText"
+              width="80%"
+              maxLines={2}
+            /> */}
+            {/* <div className="breadCrum">
+              <Link to="/">Home</Link> - <Link to="">Photography Contest</Link>
+            </div> */}
+          </div>
+        </div>
+      </section>
 
       <div
         className="visitIntroParaSection detailIntro"

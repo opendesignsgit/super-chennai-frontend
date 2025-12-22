@@ -1550,3 +1550,125 @@ function App() {
 }
 
 export default App;
+/* =================MOCK BUT PRODUCTION REDY DATA ================= */
+
+  // const musicCategories = [
+  //   {
+  //     title: "The Music Academy",
+  //     subtitle: "Iconic Carnatic Concerts",
+  //     icon: "🎼",
+  //   },
+  //   {
+  //     title: "Krishna Gana Sabha",
+  //     subtitle: "Traditional Excellence",
+  //     icon: "🎶",
+  //   },
+  //   {
+  //     title: "Narada Gana Sabha",
+  //     subtitle: "Heritage Performances",
+  //     icon: "🪔",
+  //   },
+  //   {
+  //     title: "Mylapore Fine Arts Club",
+  //     subtitle: "Young & Senior Artists",
+  //     icon: "🎻",
+  //   },
+  //   {
+  //     title: "Sri Parthasarathy Swami Sabha",
+  //     subtitle: "Temple-linked Sabhas",
+  //     icon: "🛕",
+  //   },
+  //   {
+  //     title: "Bharatiya Vidya Bhavan",
+  //     subtitle: "Lec-Dems & Intimate Concerts",
+  //     icon: "📖",
+  //   },
+  // ];
+
+  // const canteenCategories = [
+  //   {
+  //     title: "Music Academy Canteen",
+  //     subtitle: "Legendary Filter Coffee & Pongal",
+  //     icon: "☕",
+  //   },
+  //   {
+  //     title: "Mylapore Sabha Snacks",
+  //     subtitle: "Sundal, Vadai & Coffee",
+  //     icon: "🍘",
+  //   },
+  //   {
+  //     title: "Temple Prasadam Spots",
+  //     subtitle: "Divine & Simple Meals",
+  //     icon: "🍚",
+  //   },
+  // ];
+
+  // const hiddenGemEvents = [
+  //   {
+  //     date: "2025-12-01",
+  //     events: [
+  //       {
+  //         name: "Inauguration & Conferring of Sangeetha / Nrithya Choodamani",
+  //         category: "Festival Ceremony",
+  //         subCategory: "Krishna Gana Sabha",
+  //         time: "5:00 PM – 6:30 PM",
+  //         place: "Dr Nalli Gana Vihar",
+  //         musicians:
+  //           "KV Prasad, G Narendra, Chitravina Ravikiran, Prof. Sudharani Raghupathy",
+  //         organizer: "Krishna Gana Sabha",
+  //       },
+  //       {
+  //         name: "Bharatanatyam",
+  //         category: "Dance",
+  //         subCategory: "Ticketed Evening Concert",
+  //         time: "7:00 PM",
+  //         place: "Dr Nalli Gana Vihar",
+  //         musicians: "A Lakshmanaswamy",
+  //         organizer: "Krishna Gana Sabha",
+  //       },
+  //     ],
+  //   },
+
+  //   {
+  //     date: "2025-12-13",
+  //     events: [
+  //       {
+  //         name: "Carnatic Vocal Concert",
+  //         category: "Classical Music",
+  //         subCategory: "Morning Concert",
+  //         time: "11:00 AM",
+  //         place: "Dr Nalli Gana Vihar",
+  //         musicians:
+  //           "E R Anirudh (Vocals), Haritha Narayanan (Violin), Burra Sriram (Mridangam)",
+  //         organizer: "Krishna Gana Sabha",
+  //       },
+  //       {
+  //         name: "Violin & Chitravina Duet",
+  //         category: "Classical Music",
+  //         subCategory: "Afternoon Concert",
+  //         time: "1:00 PM",
+  //         place: "Dr Nalli Gana Vihar",
+  //         musicians: "Shreya Devnath (Violin), Vishaal R Sapuram (Chitravina)",
+  //         organizer: "Krishna Gana Sabha",
+  //       },
+  //       {
+  //         name: "Carnatic Vocal Concert",
+  //         category: "Classical Music",
+  //         subCategory: "Ticketed Concert",
+  //         time: "4:00 PM",
+  //         place: "Dr Nalli Gana Vihar",
+  //         musicians: "G Ravikiran (Vocals), B Ananthakrishnan (Violin)",
+  //         organizer: "Krishna Gana Sabha",
+  //       },
+  //       {
+  //         name: "Bharatanatyam",
+  //         category: "Dance",
+  //         subCategory: "Ticketed Evening Concert",
+  //         time: "7:00 PM",
+  //         place: "Dr Nalli Gana Vihar",
+  //         musicians: "Meenakshi Srinivasan",
+  //         organizer: "Krishna Gana Sabha",
+  //       },
+  //     ],
+  //   },
+  // ];

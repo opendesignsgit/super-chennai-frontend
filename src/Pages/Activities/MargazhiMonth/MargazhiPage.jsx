@@ -7,15 +7,18 @@ import "./style/calendar.css";
 import "react-toastify/dist/ReactToastify.css";
 import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
 import { useRef } from "react";
-
+import { useEffect } from "react";
+import { API_BASE_URL } from "../../../../config";
 export default function MargazhiPageCalendar() {
   /* ================= STATE ================= */
   const [selectedDateEvents, setSelectedDateEvents] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedSubCategory, setSelectedSubCategory] = useState(null);
-
   const calendarRef = useRef(null);
+  const [hiddenGemEvents, setHiddenGemEvents] = useState([]);
+  const [musicCategories, setMusicCategories] = useState([]);
+  const [canteenCategories, setCanteenCategories] = useState([]);
 
   const closeModal = () => {
     setSelectedDateEvents([]);
@@ -23,134 +26,101 @@ export default function MargazhiPageCalendar() {
     setOpenModal(false);
   };
 
-  /* ================= DATA ================= */
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/contest`);
 
-  const musicCategories = [
-    {
-      title: "The Music Academy",
-      subtitle: "Iconic Carnatic Concerts",
-      icon: "🎼",
-    },
-    {
-      title: "Krishna Gana Sabha",
-      subtitle: "Traditional Excellence",
-      icon: "🎶",
-    },
-    {
-      title: "Narada Gana Sabha",
-      subtitle: "Heritage Performances",
-      icon: "🪔",
-    },
-    {
-      title: "Mylapore Fine Arts Club",
-      subtitle: "Young & Senior Artists",
-      icon: "🎻",
-    },
-    {
-      title: "Sri Parthasarathy Swami Sabha",
-      subtitle: "Temple-linked Sabhas",
-      icon: "🛕",
-    },
-    {
-      title: "Bharatiya Vidya Bhavan",
-      subtitle: "Lec-Dems & Intimate Concerts",
-      icon: "📖",
-    },
-  ];
+        const data = await response.json();
+        console.log("raw data from api",data)
 
-  const canteenCategories = [
-    {
-      title: "Music Academy Canteen",
-      subtitle: "Legendary Filter Coffee & Pongal",
-      icon: "☕",
-    },
-    {
-      title: "Mylapore Sabha Snacks",
-      subtitle: "Sundal, Vadai & Coffee",
-      icon: "🍘",
-    },
-    {
-      title: "Temple Prasadam Spots",
-      subtitle: "Divine & Simple Meals",
-      icon: "🍚",
-    },
-  ];
+        if (data?.docs?.length > 0) {
+          const sections =
+            data.docs[0]?.content?.root?.children?.[0]?.fields?.sections || [];
+           
+          // Flatten all sections' events
+          const allEvents = sections.flatMap((section) =>
+            section.eventsByDate.map((item) => ({
+              date: item.date,
+              events: item.events.map((event) => ({
+                name: event.name,
+                time: event.time,
+                place: event.place?.title,
+                musicians: event.musicians,
+           
+                organizer: event.organizers?.title || "",
+
+                subCategory: event.subCategory,
+                category: event.category?.title,
+              })),
+            }))
+          );
+          console.log("allEvents",allEvents)
+
+          setHiddenGemEvents(allEvents);
+        }
+      } catch (error) {
+        console.error("Error fetching events:", error);
+      }
+    };
+
+    fetchEvents();
+  }, []);
+
+  useEffect(() => {
+    const fetchOrganizers = async () => {
+      try {
+        const res = await fetch(`${API_BASE_URL}/api/organizers`);
+        const json = await res.json();
+        const organizers = (json?.docs || []).map((item) => ({
+          title: item.title,
+          subtitle: item.subtitle || "Margazhi Sabha",
+          icon: item.icon || "🎼",
+        }));
+
+        setMusicCategories(organizers);
+      } catch (err) {
+        console.error("Organizer fetch failed", err);
+      }
+    };
+
+    fetchOrganizers();
+  }, []);
+
+  useEffect(() => {
+    const fetchCanteenCategories = async () => {
+      try {
+        const res = await fetch(`${API_BASE_URL}/api/sabhaFoods`);
+
+        const json = await res.json();
+
+        const categories = (json?.docs || []).map((item) => ({
+          title: item.title,
+          subtitle: item.subtitle || "",
+          icon: item.icon || "🍘",
+        }));
+
+        setCanteenCategories(categories);
+      } catch (err) {
+        console.error("Failed to fetch canteen categories", err);
+      }
+    };
+
+    fetchCanteenCategories();
+  }, []);
+
   const [activeTab, setActiveTab] = useState("sabha");
 
   const data = activeTab === "sabha" ? musicCategories : canteenCategories;
 
-  const hiddenGemEvents = [
-    {
-      date: "2025-12-01",
-      events: [
-        {
-          name: "Early Morning Nadaswaram",
-          category: "Temple Music",
-          subCategory: "The Music Academy",
-          time: "5:00 AM – 6:00 AM",
-          place: "Parthasarathy Temple, Triplicane",
-          musicians: "Temple Nadaswaram Vidwans",
-          organizer: "Temple Committee",
-        },
-        {
-          name: "Margazhi Kolam Walk",
-          category: "Community Art",
-          subCategory: "Krishna Gana Sabha",
-          time: "6:00 AM – 7:00 AM",
-          place: "Triplicane Streets",
-          musicians: "—",
-          organizer: "Local Residents",
-        },
-      ],
-    },
-
-    {
-      date: "2025-12-16",
-      events: [
-        {
-          name: "Temple Courtyard Concert",
-          category: "Devotional Music",
-          subCategory: "Narada Gana Sabha",
-          time: "5:00 AM – 6:30 AM",
-          place: "Kapaleeshwarar Temple, Mylapore",
-          musicians: "Local Oduvars & Artists",
-          organizer: "Temple Committee",
-        },
-        {
-          name: "Suprabhatam Recital",
-          subCategory: "Mylapore Fine Arts Club",
-          category: "Spiritual Chant",
-          time: "6:45 AM – 7:30 AM",
-          place: "Kapaleeshwarar Temple, Mylapore",
-          musicians: "Temple Artists",
-          organizer: "Temple Committee",
-        },
-      ],
-    },
-
-    {
-      date: "2025-12-18",
-      events: [
-        {
-          name: "Veena at Sunrise",
-          category: "Instrumental Music",
-          subCategory: "Mylapore Fine Arts Club",
-          time: "6:15 AM – 7:15 AM",
-          place: "Theosophical Society, Adyar",
-          musicians: "Veena E. Gayathri (Students)",
-          organizer: "Adyar Cultural Circle",
-        },
-      ],
-    },
-  ];
-
+  // #########  HELPER FUNCTIONS   ############
 
   const tileClassName = ({ date }) => {
     const hasEvent = hiddenGemEvents.find((item) =>
       item.events.some(
         (event) =>
           new Date(item.date).toDateString() === date.toDateString() &&
-          (!selectedSubCategory || event.subCategory === selectedSubCategory)
+          (!selectedSubCategory || event.organizer === selectedSubCategory)
       )
     );
 
@@ -162,15 +132,14 @@ export default function MargazhiPageCalendar() {
       item.events.some(
         (event) =>
           new Date(item.date).toDateString() === date.toDateString() &&
-          (!selectedSubCategory || event.subCategory === selectedSubCategory)
+          (!selectedSubCategory || event.organizer === selectedSubCategory)
       )
     );
 
     if (!dayData) return null;
 
     const filteredEvents = dayData.events.filter(
-      (event) =>
-        !selectedSubCategory || event.subCategory === selectedSubCategory
+      (event) => !selectedSubCategory || event.organizer === selectedSubCategory
     );
 
     return (
@@ -189,7 +158,7 @@ export default function MargazhiPageCalendar() {
 
     const filteredEvents = selectedSubCategory
       ? dayEvents.events.filter(
-          (event) => event.subCategory === selectedSubCategory
+          (event) => event.organizer === selectedSubCategory
         )
       : dayEvents.events;
 
@@ -326,45 +295,12 @@ export default function MargazhiPageCalendar() {
           </div>
 
           {/* Cards */}
-          {/* <div
-              key={index}
-              onClick={() => {
-                setSelectedSubCategory(item.title);
-
-                calendarRef.current?.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start",
-                });
-              }}
-              className="cursor-pointer group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
-            >
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {data.map((item, index) => (
-                  <div
-                    key={index}
-                    className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
-                  >
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="text-4xl">{item.icon}</span>
-                      <span className="w-10 h-1 bg-[#a44294] rounded-full opacity-0 group-hover:opacity-100 transition" />
-                    </div>
-
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                      {item.title}
-                    </h3>
-
-                    <p className="text-sm text-gray-600">{item.subtitle}</p>
-                  </div>
-                ))}
-              </div>
-            </div> */}
-          {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.map((item, index) => (
               <div
                 key={index}
                 onClick={() => {
-                   if (activeTab !== "sabha") return;
+                  if (activeTab !== "sabha") return;
                   setSelectedSubCategory(item.title);
 
                   calendarRef.current?.scrollIntoView({

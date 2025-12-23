@@ -198,30 +198,28 @@ export default function HotshotChennaiContest() {
 
             <p>
               Super Chennai Hotshots, in collaboration with Madras Photo
-              Bloggers, brings together moments from across Chennai as they
-              unfold through the week. From art and culture to food, events,
-              people, places, heritage and innovation, Hotshots captures the
-              many sides of the city through images that reflect real life and
-              real stories.
+              Bloggers, brings you glimpses of Chennai as it unfolds each week.
+              From art and culture to food, events, people, heritage, and
+              innovation, this series captures the city’s real stories and
+              everyday moments that often go unnoticed.
             </p>
             <p>
-              Seen through the lenses of Madras Photo Bloggers, this series
-              shares glimpses of Chennai that often pass us by. Here is one from
-              a recent bird walk at the Pallikaranai Marshland, reminding us
-              that the city holds quiet, beautiful moments alongside its
-              constant movement. <br></br>Look forward to more frames of Chennai
-              that stay with you long after you scroll past.
+              Seen through the lenses of Madras Photo Bloggers, these frames
+              remind us that amidst the city’s constant movement, quiet and
+              beautiful moments exist—like a recent bird walk at the
+              Pallikaranai Marshland. Each image tells a story that stays with
+              you long after you scroll past.
             </p>
 
             <p>
-              Want to contribute to Super Chennai Hotshots and get featured?
-              Please send your Chennai pics of the day to{" "}
-              <a
+              Want to be featured in Super Chennai Hotshots? Why wait? Just fill
+              the form and upload your images—we’ll connect with you easily!
+              {/* <a
                 href="mailto:hotshots@superchennai.com"
                 className="text-purple-700 font-semibold hover:underline"
               >
                 hotshots@superchennai.com
-              </a>
+              </a> */}
             </p>
 
             <hr />
@@ -248,9 +246,7 @@ export default function HotshotChennaiContest() {
               <h2 className=" themelink-color formheadingtheme">
                 SHARE YOUR HOTSHOT
               </h2>
-              <p className="text-gray-600 mb-6">
-                Share Your Chennai Moment
-              </p>
+              <p className="text-gray-600 mb-6">Upload your best Chennai moment and share the story behind your captivating photo.</p>
 
               <form
                 onSubmit={submitHotshotChennaiForm}

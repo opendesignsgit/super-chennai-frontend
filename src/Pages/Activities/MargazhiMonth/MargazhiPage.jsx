@@ -32,12 +32,12 @@ export default function MargazhiPageCalendar() {
         const response = await fetch(`${API_BASE_URL}/api/contest`);
 
         const data = await response.json();
-        console.log("raw data from api",data)
+        console.log("raw data from api", data);
 
         if (data?.docs?.length > 0) {
           const sections =
             data.docs[0]?.content?.root?.children?.[0]?.fields?.sections || [];
-           
+
           // Flatten all sections' events
           const allEvents = sections.flatMap((section) =>
             section.eventsByDate.map((item) => ({
@@ -47,7 +47,7 @@ export default function MargazhiPageCalendar() {
                 time: event.time,
                 place: event.place?.title,
                 musicians: event.musicians,
-           
+
                 organizer: event.organizers?.title || "",
 
                 subCategory: event.subCategory,
@@ -55,7 +55,7 @@ export default function MargazhiPageCalendar() {
               })),
             }))
           );
-          console.log("allEvents",allEvents)
+          console.log("allEvents", allEvents);
 
           setHiddenGemEvents(allEvents);
         }
@@ -115,25 +115,33 @@ export default function MargazhiPageCalendar() {
 
   // #########  HELPER FUNCTIONS   ############
 
+
+  const formatDate = (date) => {
+    if (!date) return null;
+
+    const d = new Date(date);
+
+    if (isNaN(d.getTime())) {
+      console.warn("Invalid date from API:", date);
+      return null;
+    }
+
+    return d.toISOString().split("T")[0];
+  };
   const tileClassName = ({ date }) => {
     const hasEvent = hiddenGemEvents.find((item) =>
       item.events.some(
         (event) =>
-          new Date(item.date).toDateString() === date.toDateString() &&
+          formatDate(item.date) === formatDate(date) &&
           (!selectedSubCategory || event.organizer === selectedSubCategory)
       )
     );
 
     return hasEvent ? "event-day" : null;
   };
-
   const tileContent = ({ date }) => {
-    const dayData = hiddenGemEvents.find((item) =>
-      item.events.some(
-        (event) =>
-          new Date(item.date).toDateString() === date.toDateString() &&
-          (!selectedSubCategory || event.organizer === selectedSubCategory)
-      )
+    const dayData = hiddenGemEvents.find(
+      (item) => formatDate(item.date) === formatDate(date)
     );
 
     if (!dayData) return null;
@@ -148,10 +156,9 @@ export default function MargazhiPageCalendar() {
       )
     );
   };
-
   const onDateClick = (date) => {
     const dayEvents = hiddenGemEvents.find(
-      (item) => new Date(item.date).toDateString() === date.toDateString()
+      (item) => formatDate(item.date) === formatDate(date)
     );
 
     if (!dayEvents) return;

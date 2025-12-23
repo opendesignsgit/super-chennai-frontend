@@ -328,72 +328,75 @@ export default function MargazhiPageCalendar() {
 
       {/* ================= CALENDAR SECTION ================= */}
 
-      <section ref={calendarRef} className="relative py-16 overflow-hidden">
-        {/* ===== DEVOTIONAL BACKGROUND ===== */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `
+      {/* <section ref={calendarRef} className="relative py-16 overflow-hidden"> */}
+      {activeTab === "sabha" && (
+        <section ref={calendarRef} className="relative py-16 overflow-hidden">
+          {/* ===== DEVOTIONAL BACKGROUND ===== */}
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `
           radial-gradient(circle at 15% 25%, rgba(236, 72, 153, 0.12) 0%, transparent 40%),
           radial-gradient(circle at 85% 20%, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
           radial-gradient(circle at 50% 85%, rgba(234, 179, 8, 0.12) 0%, transparent 50%),
           linear-gradient(180deg, #fff7ed, #fdf4ff)
         `,
-          }}
-        />
+            }}
+          />
 
-        {/* Soft sacred overlay */}
-        <div className="absolute inset-0 bg-white/75 backdrop-blur-sm"></div>
+          {/* Soft sacred overlay */}
+          <div className="absolute inset-0 bg-white/75 backdrop-blur-sm"></div>
 
-        {/* ===== CONTENT ===== */}
-        <div className="relative container max-w-7xl mx-auto px-4">
-          <h2 className="text-center mb-4 text-purple-900 formheadingthemeCalendar">
-            Hidden Gems Margazhi Sabhas
-          </h2>
+          {/* ===== CONTENT ===== */}
+          <div className="relative container max-w-7xl mx-auto px-4">
+            <h2 className="text-center mb-4 text-purple-900 formheadingthemeCalendar">
+              Hidden Gems Margazhi Sabhas
+            </h2>
 
-          <p className="text-center text-sm text-gray-600 mb-10 italic">
-            Sacred dawns, soulful music & timeless traditions
-          </p>
-          {selectedSubCategory && (
-            <div className="text-center mb-6">
-              <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-800 font-semibold text-sm">
-                🎵 Your selected: {selectedSubCategory}
-              </span>
+            <p className="text-center text-sm text-gray-600 mb-10 italic">
+              Sacred dawns, soulful music & timeless traditions
+            </p>
+            {selectedSubCategory && (
+              <div className="text-center mb-6">
+                <span className="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-800 font-semibold text-sm">
+                  🎵 Your selected: {selectedSubCategory}
+                </span>
+              </div>
+            )}
+
+            <div className="flex justify-center">
+              <Calendar
+                onClickDay={onDateClick}
+                tileClassName={tileClassName}
+                tileContent={tileContent}
+                minDate={new Date(2025, 11, 1)}
+                maxDate={new Date(2025, 11, 31)}
+                defaultView="month"
+                showNeighboringMonth={false}
+              />
             </div>
-          )}
 
-          <div className="flex justify-center">
-            <Calendar
-              onClickDay={onDateClick}
-              tileClassName={tileClassName}
-              tileContent={tileContent}
-              minDate={new Date(2025, 11, 1)}
-              maxDate={new Date(2025, 11, 31)}
-              defaultView="month"
-              showNeighboringMonth={false}
-            />
+            {/* ===== Calendar Legend ===== */}
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-700">
+              <div className="flex items-center gap-2">
+                <span className="w-4 h-4 rounded-full bg-gradient-to-br from-purple-600 to-purple-800"></span>
+                <span>Event Day</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="w-5 h-5 rounded-full border border-purple-500 flex items-center justify-center text-[10px] font-bold text-purple-700">
+                  2
+                </span>
+                <span>Number of Events</span>
+              </div>
+
+              <div className="flex items-center gap-2 italic text-gray-600">
+                Click a highlighted date to view events
+              </div>
+            </div>
           </div>
-
-          {/* ===== Calendar Legend ===== */}
-          <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-700">
-            <div className="flex items-center gap-2">
-              <span className="w-4 h-4 rounded-full bg-gradient-to-br from-purple-600 to-purple-800"></span>
-              <span>Event Day</span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <span className="w-5 h-5 rounded-full border border-purple-500 flex items-center justify-center text-[10px] font-bold text-purple-700">
-                2
-              </span>
-              <span>Number of Events</span>
-            </div>
-
-            <div className="flex items-center gap-2 italic text-gray-600">
-              Click a highlighted date to view events
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ================= ADVANCED MODAL ================= */}
       {openModal && selectedDateEvents.length > 0 && (

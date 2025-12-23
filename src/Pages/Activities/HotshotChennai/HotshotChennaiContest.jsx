@@ -269,7 +269,7 @@ export default function HotshotChennaiContest() {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Your Name *"
-                      className="border p-3 rounded-lg"
+                      className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-purple-500 outline-none"
                       required
                     />
                   </div>
@@ -284,7 +284,7 @@ export default function HotshotChennaiContest() {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="Email ID *"
-                      className="border p-3 rounded-lg"
+                      className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-purple-500 outline-none"
                       required
                     />
                   </div>

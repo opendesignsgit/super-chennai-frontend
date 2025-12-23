@@ -207,7 +207,7 @@ export default function MargazhiPageCalendar() {
           <div className="accodoamationBannerText">
             <h1></h1>
             <AutoShrinkText
-              text="Margazhi Moments – Photography Contest 2025"
+              text=" Chennai’s Cultural Soul"
               baseSize={60}
               minSize={40}
               maxChars={40}
@@ -217,7 +217,7 @@ export default function MargazhiPageCalendar() {
             />
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Margazhi Moments – Photography Contest 2025</Link>
+              <Link to="">Chennai’s Cultural Soul</Link>
             </div>
           </div>
         </div>
@@ -230,7 +230,7 @@ export default function MargazhiPageCalendar() {
       >
         <div className="container max-w-7xl mx-auto px-4">
           <div className="workIntro">
-            <h1>Margazhi Moments – Photography Contest 2025</h1>
+            <h1>Margazhi – Chennai’s Celebrated Cultural Season</h1>
 
             <p>
               Margazhi is a special time in Chennai when the city slows down and
@@ -266,11 +266,22 @@ export default function MargazhiPageCalendar() {
       </div>
 
       <section className="w-full py-16 bg-gradient-to-b from-[#faf7fb] to-white">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4 ">
           {/* Title */}
-          <h2 className="text-center text-3xl md:text-4xl font-bold text-[#7b1f6a] mb-10">
-            Margazhi Festival Guide
-          </h2>
+          <div className="workIntro">
+            <h2 className=" themelink-color formheadingtheme text-center">
+              Margazhi Festival Guide 
+            </h2>
+
+            <p className="text-center text-sm text-gray-600 mb-10 italic">
+              Note: Click on any{" "}
+              <span className="font-semibold text-purple-700">
+                Margazhi Sabha
+              </span>
+             {" "} to automatically filter and view its events in the calendar
+              below.{" "}
+            </p>
+          </div>
 
           {/* Tabs */}
           <div className="flex justify-center mb-12">

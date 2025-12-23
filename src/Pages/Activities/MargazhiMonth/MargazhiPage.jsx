@@ -369,8 +369,8 @@ export default function MargazhiPageCalendar() {
                 onClickDay={onDateClick}
                 tileClassName={tileClassName}
                 tileContent={tileContent}
-                minDate={new Date(2025, 11, 1)}
-                maxDate={new Date(2025, 11, 31)}
+                // minDate={new Date(2025, 11, 1)}
+                // maxDate={new Date(2025, 11, 31)}
                 defaultView="month"
                 showNeighboringMonth={false}
               />

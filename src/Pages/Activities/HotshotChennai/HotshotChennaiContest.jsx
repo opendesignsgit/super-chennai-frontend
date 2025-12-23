@@ -170,7 +170,7 @@ export default function HotshotChennaiContest() {
         <div className="accodoamationBannerContainer relative z-20">
           <div className="accodoamationBannerText">
             <AutoShrinkText
-              text="Define Chennai Hotshots"
+              text="Hotshots Chennai Moments"
               baseSize={60}
               minSize={40}
               maxChars={40}
@@ -180,7 +180,8 @@ export default function HotshotChennaiContest() {
             />
 
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Define Chennai Hotshots</Link>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Hotshots Chennai Moments</Link>
             </div>
           </div>
         </div>
@@ -193,7 +194,7 @@ export default function HotshotChennaiContest() {
       >
         <div className="container max-w-7xl mx-auto px-4">
           <div className="workIntro">
-            <h1>Moments That Define Chennai Hotshots</h1>
+            <h1>City Tales in Pictures</h1>
 
             <p>
               Super Chennai Hotshots, in collaboration with Madras Photo
@@ -248,7 +249,7 @@ export default function HotshotChennaiContest() {
                 SHARE YOUR HOTSHOT
               </h2>
               <p className="text-gray-600 mb-6">
-                Your lens. Your moment. Chennai’s HotShots.
+                Share Your Chennai Moment
               </p>
 
               <form

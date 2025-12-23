@@ -27,7 +27,10 @@ export default function HotshotChennaiContest() {
     consent: false,
   });
 
-  const [images, setImages] = useState([null, null, null]);
+  const MAX_IMAGES = 5;
+
+  const [images, setImages] = useState(Array(MAX_IMAGES).fill(null));
+
 
   const sanitizeInput = (str) => str.replace(/[<>]/g, "");
   const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -158,13 +161,13 @@ export default function HotshotChennaiContest() {
           {/* Mobile Image */}
           <img
             className="block sm:hidden w-full"
-            src="/images/events/banner-margazimoments-m.jpg"
+            src="/images/events/banner-hotshots.jpg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#a34493]/60 to-[#8b3c82]/90 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#000000]/60 to-[#8b3c82]/90 z-10"></div>
 
         {/* Text Content */}
         <div className="accodoamationBannerContainer relative z-20">
@@ -242,108 +245,143 @@ export default function HotshotChennaiContest() {
             </div>
 
             {/* RIGHT FORM */}
-            <div className="relative p-2 md:p-10 overflow-hidden">
+            <div className="relative p-4 md:p-10 overflow-hidden">
               <h2 className=" themelink-color formheadingtheme">
-                SHARE YOUR HOTSHOT
+                SHARE YOUR HOTSHOTS
               </h2>
-              <p className="text-gray-600 mb-6">Upload your best Chennai moment and share the story behind your captivating photo.</p>
+              <p className="text-gray-600 mb-6">
+                Upload your best Chennai moment and share the story behind your
+                captivating photo.
+              </p>
 
               <form
                 onSubmit={submitHotshotChennaiForm}
                 className="space-y-5 mt-6"
               >
-                <div className="grid grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    placeholder="Your Name *"
-                    className="border p-3 rounded-lg"
-                    required
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    placeholder="Email ID *"
-                    className="border p-3 rounded-lg"
-                    required
-                  />
+                <div className="flex gap-2">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                      Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      value={form.name}
+                      onChange={handleChange}
+                      placeholder="Your Name *"
+                      className="border p-3 rounded-lg"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                      Email ID *
+                    </label>
+
+                    <input
+                      type="email"
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      placeholder="Email ID *"
+                      className="border p-3 rounded-lg"
+                      required
+                    />
+                  </div>
                 </div>
 
-                <div className="flex gap-2">
-                  <select
-                    name="countryCode"
-                    value={form.countryCode}
-                    onChange={handleChange}
-                    className="border p-3 rounded-lg"
-                  >
-                    {countryCodes.map((c) => (
-                      <option key={c.code} value={c.code}>
-                        {c.code}
-                      </option>
-                    ))}
-                  </select>
-
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={form.phone}
-                    onChange={handleChange}
-                    placeholder="Phone Number *"
-                    className="border p-3 rounded-lg flex-1"
-                    required
-                  />
+                <div className="relative w-full">
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Phone Number *
+                  </label>
+                  <div className="flex items-center border rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-purple-500">
+                    <select
+                      name="countryCode"
+                      value={form.countryCode}
+                      onChange={handleChange}
+                      className="bg-gray-100 px-3 py-2 border-r outline-none text-sm"
+                    >
+                      {countryCodes.map((c) => (
+                        <option key={c.code} value={c.code}>
+                          {c.code}
+                        </option>
+                      ))}
+                    </select>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={form.phone}
+                      onChange={handleChange}
+                      placeholder="Phone Number *"
+                      className="flex-1 px-3 py-2 outline-none text-sm"
+                      required
+                    />
+                  </div>
                 </div>
 
                 {/* Upload */}
-                <div className="grid grid-cols-3 gap-4">
-                  {[0, 1, 2].map((i) => (
-                    <label
-                      key={i}
-                      className="border-2 border-dashed rounded-lg h-24 flex items-center justify-center cursor-pointer"
-                    >
-                      {images[i]?.preview ? (
-                        <img
-                          src={images[i].preview}
-                          className="w-full h-full object-cover rounded-lg"
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Upload Images (Up to 5)
+                  </label>
+                  <div className="grid grid-cols-3 gap-4">
+                    {[0, 1, 2, 3, 4 ].map((i) => (
+                      <label
+                        key={i}
+                        className="border-2 border-dashed rounded-lg h-24 flex items-center justify-center cursor-pointer"
+                      >
+                        {images[i]?.preview ? (
+                          <img
+                            src={images[i].preview}
+                            className="w-full h-full object-cover rounded-lg"
+                          />
+                        ) : (
+                          <span className="text-sm text-gray-400">
+                            Image {i + 1}
+                          </span>
+                        )}
+                        <input
+                          type="file"
+                          className="hidden"
+                          accept=".jpg,.jpeg,.png"
+                          onChange={(e) =>
+                            handleImageChange(i, e.target.files[0])
+                          }
                         />
-                      ) : (
-                        <span className="text-sm text-gray-400">
-                          Image {i + 1}
-                        </span>
-                      )}
-                      <input
-                        type="file"
-                        className="hidden"
-                        accept=".jpg,.jpeg,.png"
-                        onChange={(e) =>
-                          handleImageChange(i, e.target.files[0])
-                        }
-                      />
-                    </label>
-                  ))}
+                      </label>
+                    ))}
+                  </div>
+                  <p className="text-xs text-gray-500 mt-2">
+                    PNG / JPG / JPEG • Max 2 MB per image
+                  </p>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Message / Description (Optional)
+                  </label>
+
+                  <textarea
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
+                    placeholder="Message (Optional)"
+                    className="border p-3 rounded-lg w-full"
+                  />
                 </div>
 
-                <textarea
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  placeholder="Message (Optional)"
-                  className="border p-3 rounded-lg w-full"
-                />
-
-                <label className="flex items-start gap-2 text-sm">
+                <div className="flex items-start gap-2">
                   <input
                     type="checkbox"
                     name="consent"
                     checked={form.consent}
                     onChange={handleChange}
                   />
-                  I confirm the images are my original work.
-                </label>
+
+                  <p className="text-sm text-gray-600">
+                    I confirm that the uploaded photographs are my original work
+                    and can be displayed on this website and related platforms.
+                  </p>
+                </div>
 
                 <button
                   type="submit"

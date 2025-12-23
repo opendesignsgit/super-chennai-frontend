@@ -274,7 +274,7 @@ import IconOfMonthDetails from "./Pages/IconOfTheMonth/IconOfMonthDetailPage";
 
 import MargazhiMomentsContest from "./Pages/Activities/MargazhiMonth/MargazhiMomentsContest"
 import MargazhiPageCalendar from "./Pages/Activities/MargazhiMonth/MargazhiPage"
-
+import HotshotChennaiContest from "./Pages/Activities/HotshotChennai/HotshotChennaiContest"
 
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
@@ -750,6 +750,11 @@ function App() {
             <Route
               path="margazhi-month-contest-calendar"
               element={<MargazhiPageCalendar />}
+            />
+            
+                        <Route
+              path="hotshots-in-chennai"
+              element={<HotshotChennaiContest />}
             />
 
             {/* 404 Page */}

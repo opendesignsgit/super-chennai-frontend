@@ -5,9 +5,10 @@
   border: none;
   font-family: inherit;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.95);
+  background-color: transparent;
+  /* background: rgba(255, 255, 255, 0.95);
   box-shadow:
-    0 4px 10px rgba(164, 66, 148, 0.12);
+    0 4px 10px rgba(164, 66, 148, 0.12); */
 }
 
 
@@ -66,6 +67,15 @@
     padding: 2px 6px;
     border-radius: 999px;
 }
+@media (min-width: 200px) and (max-width: 700px) {
+  .event-badge {
+    bottom: 4px;
+    right: 4px;
+    font-size: 8px;
+    padding: 1px 5px;
+    border-radius: 999px;
+  }
+}
 
 .react-calendar__month-view__days {
 
@@ -94,4 +104,22 @@
     font-size: 28px;
     line-height: 34px;
   }
+}
+
+.calendar-main-wrapper {
+  background-color: #f6f0fa; 
+  padding: 40px 20px;
+  max-width: 800px;     
+  width: 100%;
+  margin: 0 auto;
+
+   min-height: 550px;    /* adjust as needed */
+  display: flex;
+  align-items: center;  /* center calendar vertically */
+  justify-content: center;
+}
+
+.calendar-center {
+  display: flex;
+  justify-content: center;
 }

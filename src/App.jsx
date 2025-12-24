@@ -584,7 +584,7 @@ function App() {
           </div>
           {!hideOnMargazhiPage && (
             <div
-              id="superChennaiContest-margazhi-tab"
+              id="margazhi-moments-tab"
               ref={stickyRef}
               className={`super-chennai-contest pointcastSticky nammaStorieslink ${
                 footerReached ? "footerreached" : ""

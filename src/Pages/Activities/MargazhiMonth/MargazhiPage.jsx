@@ -115,7 +115,6 @@ export default function MargazhiPageCalendar() {
 
   // #########  HELPER FUNCTIONS   ############
 
-
   const formatDate = (date) => {
     if (!date) return null;
 
@@ -270,15 +269,15 @@ export default function MargazhiPageCalendar() {
           {/* Title */}
           <div className="workIntro">
             <h2 className=" themelink-color formheadingtheme text-center">
-              Margazhi Festival Guide 
+              Margazhi Festival Guide
             </h2>
 
             <p className="text-center text-sm text-gray-600 mb-10 italic">
               Note: Click on any{" "}
               <span className="font-semibold text-purple-700">
                 Margazhi Sabha
-              </span>
-             {" "} to automatically filter and view its events in the calendar
+              </span>{" "}
+              to automatically filter and view its events in the calendar
               below.{" "}
             </p>
           </div>
@@ -381,17 +380,18 @@ export default function MargazhiPageCalendar() {
                 </span>
               </div>
             )}
-
-            <div className="flex justify-center">
-              <Calendar
-                onClickDay={onDateClick}
-                tileClassName={tileClassName}
-                tileContent={tileContent}
-                // minDate={new Date(2025, 11, 1)}
-                // maxDate={new Date(2025, 11, 31)}
-                defaultView="month"
-                showNeighboringMonth={false}
-              />
+            <div className="calendar-main-wrapper">
+              <div className="calendar-center">
+                <Calendar
+                  onClickDay={onDateClick}
+                  tileClassName={tileClassName}
+                  tileContent={tileContent}
+                  // minDate={new Date(2025, 11, 1)}
+                  // maxDate={new Date(2025, 11, 31)}
+                  defaultView="month"
+                  showNeighboringMonth={false}
+                />
+              </div>
             </div>
 
             {/* ===== Calendar Legend ===== */}
@@ -419,15 +419,12 @@ export default function MargazhiPageCalendar() {
       {/* ================= ADVANCED MODAL ================= */}
       {openModal && selectedDateEvents.length > 0 && (
         <div className="fixed inset-0 flex items-center justify-center z-[9999]">
-          {/* Overlay */}
           <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={closeModal}
           />
 
-          {/* Modal Container */}
-          <div className="relative bg-white w-full max-w-6xl mx-4 rounded-3xl shadow-2xl overflow-hidden">
-            {/* Header */}
+          {/* <div className="relative bg-white w-full max-w-6xl mx-4 rounded-3xl shadow-2xl overflow-hidden">
             <div className="flex items-center justify-between px-6 py-4 border-b bg-gradient-to-r from-purple-700 to-purple-900">
               <h3 className="text-xl md:text-2xl font-bold text-white">
                 Events on{" "}
@@ -447,7 +444,6 @@ export default function MargazhiPageCalendar() {
               </button>
             </div>
 
-            {/* Content */}
             <div className="p-6 max-h-[75vh] overflow-y-auto">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {selectedDateEvents.map((event, index) => (
@@ -455,12 +451,10 @@ export default function MargazhiPageCalendar() {
                     key={index}
                     className="group bg-white border border-purple-100 rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                   >
-                    {/* Title */}
                     <h4 className="text-lg font-bold text-purple-800 mb-3 group-hover:text-purple-900">
                       {event.name}
                     </h4>
 
-                    {/* Info */}
                     <div className="space-y-1 text-sm text-gray-700">
                       <p>
                         <span className="font-semibold text-gray-900">
@@ -494,10 +488,89 @@ export default function MargazhiPageCalendar() {
                       </p>
                     </div>
 
-                    {/* Footer Badge */}
                     <div className="mt-4 flex justify-end">
                       <span className="text-xs font-semibold px-3 py-1 rounded-full bg-purple-100 text-purple-700">
                         Margazhi Event
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div> */}
+          <div className="relative bg-white w-full max-w-6xl mx-4 rounded-2xl shadow-2xl overflow-hidden">
+            {/* Header */}
+            <div className="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-purple-800 via-purple-700 to-purple-900">
+              <h3 className="text-lg md:text-2xl font-semibold text-white tracking-wide">
+                Events on{" "}
+                {selectedDate &&
+                  selectedDate.toLocaleDateString("en-IN", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+              </h3>
+
+              <button
+                onClick={closeModal}
+                className="text-white text-xl w-9 h-9 flex items-center justify-center rounded-full hover:bg-white/20 transition"
+                aria-label="Close"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="p-6 max-h-[70vh] overflow-y-auto bg-gray-50">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {selectedDateEvents.map((event, index) => (
+                  <div
+                    key={index}
+                    className="group bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300 relative"
+                  >
+                    {/* Accent line */}
+                    <span className="absolute left-0 top-5 h-10 w-1 rounded-r bg-purple-600"></span>
+
+                    {/* Title */}
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2 pl-3">
+                      {event.name}
+                    </h4>
+
+                    {/* Meta */}
+                    <div className="text-xs text-purple-700 font-medium mb-3 pl-3">
+                      {event.category}
+                    </div>
+
+                    {/* Info */}
+                    <div className="space-y-1 text-sm text-gray-700 pl-3">
+                      <p>
+                        <span className="font-medium text-gray-900">Time:</span>{" "}
+                        {event.time}
+                      </p>
+                      <p>
+                        <span className="font-medium text-gray-900">
+                          Place:
+                        </span>{" "}
+                        {event.place}
+                      </p>
+                      <p>
+                        <span className="font-medium text-gray-900">
+                          Artists:
+                        </span>{" "}
+                        {event.musicians}
+                      </p>
+                      <p>
+                        <span className="font-medium text-gray-900">
+                          Organizer:
+                        </span>{" "}
+                        {event.organizer}
+                      </p>
+                    </div>
+
+                    {/* Footer */}
+                    <div className="mt-5 flex items-center justify-between pl-3">
+                      <span className="text-xs font-semibold px-3 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-200">
+                        Margazhi Festival
                       </span>
                     </div>
                   </div>

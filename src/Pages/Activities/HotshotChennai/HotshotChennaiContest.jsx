@@ -215,8 +215,8 @@ export default function HotshotChennaiContest() {
             </p>
 
             <p>
-              Want to be featured in Super Chennai Hotshots? Why wait? Just fill
-              the form and upload your images—we’ll connect with you easily!
+              Want to be featured in Super Chennai Hotshots?<br></br> Why wait? Just fill
+              the form and upload your images. <br></br>We’ll connect with you easily!
               {/* <a
                 href="mailto:hotshots@superchennai.com"
                 className="text-purple-700 font-semibold hover:underline"

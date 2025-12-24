@@ -104,7 +104,7 @@ export default function HotshotChennaiContest() {
 
     try {
       const res = await axios.post(
-        `${API_BASE_URL_API}/hotshot-chennai/submit`,
+        `${API_BASE_URL_API}/all/hotshot-chennai/submit`,
         payload
       );
 

@@ -94,11 +94,15 @@ export default function MargazhiPageCalendar() {
         const res = await fetch(`${API_BASE_URL}/api/sabhaFoods`);
 
         const json = await res.json();
+        console.log("food data",json)
 
         const categories = (json?.docs || []).map((item) => ({
           title: item.title,
           subtitle: item.subtitle || "",
           icon: item.icon || "🍘",
+          image: item.image
+            ? `${API_BASE_URL}${item.image?.sizes?.thumbnail?.url || item.image.url}`
+            : null,
         }));
 
         setCanteenCategories(categories);
@@ -361,7 +365,7 @@ export default function MargazhiPageCalendar() {
           </div>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.map((item, index) => (
               <div
                 key={index}
@@ -386,6 +390,43 @@ export default function MargazhiPageCalendar() {
                 </h3>
 
                 <p className="text-sm text-gray-600">{item.subtitle}</p>
+              </div>
+            ))}
+          </div> */}
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {data.map((item, index) => (
+              <div
+                key={index}
+                onClick={() => {
+                  if (activeTab !== "sabha") return;
+                  setSelectedSubCategory(item.title);
+
+                  calendarRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
+                className="cursor-pointer group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex items-center gap-4"
+              >
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-24 h-24 object-cover rounded-xl flex-shrink-0"
+                  />
+                ) : (
+                  <div className="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-xl flex-shrink-0">
+                    <span className="text-4xl">{item.icon}</span>
+                  </div>
+                )}
+
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-600">{item.subtitle}</p>
+                </div>
               </div>
             ))}
           </div>

@@ -55,7 +55,7 @@ export default function MargazhiPageCalendar() {
               })),
             }))
           );
-          console.log("allEvents", allEvents);
+          console.log("contestdata", allEvents);
 
           setHiddenGemEvents(allEvents);
         }
@@ -79,6 +79,7 @@ export default function MargazhiPageCalendar() {
         }));
 
         setMusicCategories(organizers);
+        console.log("orginzer", organizers);
       } catch (err) {
         console.error("Organizer fetch failed", err);
       }
@@ -110,37 +111,29 @@ export default function MargazhiPageCalendar() {
   }, []);
 
   const [activeTab, setActiveTab] = useState("sabha");
-
   const data = activeTab === "sabha" ? musicCategories : canteenCategories;
 
   // #########  HELPER FUNCTIONS   ############
 
-  const formatDate = (date) => {
-    if (!date) return null;
-
-    const d = new Date(date);
-
-    if (isNaN(d.getTime())) {
-      console.warn("Invalid date from API:", date);
-      return null;
-    }
-
-    return d.toISOString().split("T")[0];
-  };
   const tileClassName = ({ date }) => {
     const hasEvent = hiddenGemEvents.find((item) =>
       item.events.some(
         (event) =>
-          formatDate(item.date) === formatDate(date) &&
+          new Date(item.date).toDateString() === date.toDateString() &&
           (!selectedSubCategory || event.organizer === selectedSubCategory)
       )
     );
 
     return hasEvent ? "event-day" : null;
   };
+
   const tileContent = ({ date }) => {
-    const dayData = hiddenGemEvents.find(
-      (item) => formatDate(item.date) === formatDate(date)
+    const dayData = hiddenGemEvents.find((item) =>
+      item.events.some(
+        (event) =>
+          new Date(item.date).toDateString() === date.toDateString() &&
+          (!selectedSubCategory || event.organizer === selectedSubCategory)
+      )
     );
 
     if (!dayData) return null;
@@ -155,25 +148,81 @@ export default function MargazhiPageCalendar() {
       )
     );
   };
+
   const onDateClick = (date) => {
-    const dayEvents = hiddenGemEvents.find(
-      (item) => formatDate(item.date) === formatDate(date)
+    console.log("Clicked date:", date.toDateString());
+
+    // Get all day objects for this date
+    const dayEventsArray = hiddenGemEvents.filter(
+      (item) =>
+        item.date && new Date(item.date).toDateString() === date.toDateString()
     );
 
-    if (!dayEvents) return;
+    if (dayEventsArray.length === 0) return;
 
+    // Combine all events for that date
+    const allEvents = dayEventsArray.flatMap((item) => item.events || []);
+
+    console.log("All events on this date:", allEvents);
+
+    // Filter by selectedSubCategory if any
     const filteredEvents = selectedSubCategory
-      ? dayEvents.events.filter(
-          (event) => event.organizer === selectedSubCategory
+      ? allEvents.filter(
+          (event) =>
+            event.organizer &&
+            event.organizer.trim().toLowerCase() ===
+              selectedSubCategory.trim().toLowerCase()
         )
-      : dayEvents.events;
+      : allEvents;
+
+    console.log(
+      "Filtered events for selectedSubCategory:",
+      selectedSubCategory,
+      filteredEvents
+    );
 
     if (filteredEvents.length > 0) {
       setSelectedDate(date);
       setSelectedDateEvents(filteredEvents);
       setOpenModal(true);
+    } else {
+      console.log("No events found for selectedSubCategory on this date.");
     }
   };
+
+  //########## OLDER VERSION ############
+
+  // const onDateClick = (date) => {
+  //   console.log("Clicked date:", date.toDateString());
+
+  //   const dayEvents = hiddenGemEvents.find(
+  //     (item) => new Date(item.date).toDateString() === date.toDateString()
+  //   );
+  //   console.log("allevnt-ss",hiddenGemEvents)
+
+  //   console.log("Events on this date:", dayEvents);
+  //   if (!dayEvents) return;
+
+  //   const filteredEvents = selectedSubCategory
+  //     ? dayEvents.events.filter(
+  //         (event) => event.organizer === selectedSubCategory
+  //       )
+  //     : dayEvents.events;
+
+  //   console.log(
+  //     "Filtered events for selectedSubCategory:",
+  //     selectedSubCategory,
+  //     filteredEvents
+  //   );
+
+  //   if (filteredEvents.length > 0) {
+  //     setSelectedDate(date);
+  //     setSelectedDateEvents(filteredEvents);
+  //     setOpenModal(true);
+  //   } else {
+  //     console.log("No events found for selectedSubCategory on this date.");
+  //   }
+  // };
 
   return (
     <>
@@ -424,80 +473,6 @@ export default function MargazhiPageCalendar() {
             onClick={closeModal}
           />
 
-          {/* <div className="relative bg-white w-full max-w-6xl mx-4 rounded-3xl shadow-2xl overflow-hidden">
-            <div className="flex items-center justify-between px-6 py-4 border-b bg-gradient-to-r from-purple-700 to-purple-900">
-              <h3 className="text-xl md:text-2xl font-bold text-white">
-                Events on{" "}
-                {selectedDate &&
-                  selectedDate.toLocaleDateString("en-IN", {
-                    day: "numeric",
-                    month: "long",
-                    year: "numeric",
-                  })}
-              </h3>
-
-              <button
-                onClick={closeModal}
-                className="text-white text-2xl hover:scale-110 transition"
-              >
-                ✕
-              </button>
-            </div>
-
-            <div className="p-6 max-h-[75vh] overflow-y-auto">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {selectedDateEvents.map((event, index) => (
-                  <div
-                    key={index}
-                    className="group bg-white border border-purple-100 rounded-2xl p-5 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                  >
-                    <h4 className="text-lg font-bold text-purple-800 mb-3 group-hover:text-purple-900">
-                      {event.name}
-                    </h4>
-
-                    <div className="space-y-1 text-sm text-gray-700">
-                      <p>
-                        <span className="font-semibold text-gray-900">
-                          Category:
-                        </span>{" "}
-                        {event.category}
-                      </p>
-                      <p>
-                        <span className="font-semibold text-gray-900">
-                          Time:
-                        </span>{" "}
-                        {event.time}
-                      </p>
-                      <p>
-                        <span className="font-semibold text-gray-900">
-                          Place:
-                        </span>{" "}
-                        {event.place}
-                      </p>
-                      <p>
-                        <span className="font-semibold text-gray-900">
-                          Artists:
-                        </span>{" "}
-                        {event.musicians}
-                      </p>
-                      <p>
-                        <span className="font-semibold text-gray-900">
-                          Organizer:
-                        </span>{" "}
-                        {event.organizer}
-                      </p>
-                    </div>
-
-                    <div className="mt-4 flex justify-end">
-                      <span className="text-xs font-semibold px-3 py-1 rounded-full bg-purple-100 text-purple-700">
-                        Margazhi Event
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div> */}
           <div className="relative bg-white w-full max-w-6xl mx-4 rounded-2xl shadow-2xl overflow-hidden">
             {/* Header */}
             <div className="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-purple-800 via-purple-700 to-purple-900">

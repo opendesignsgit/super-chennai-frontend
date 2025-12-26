@@ -123,7 +123,12 @@ export default function HotshotChennaiContest() {
         });
 
         setImages([null, null, null]);
-        navigate("/thank-you");
+        navigate("/thank-you", {
+          state: {
+            from: "hotshot-chennai",
+          },
+        });
+
       }
     } catch (err) {
       toast.error(

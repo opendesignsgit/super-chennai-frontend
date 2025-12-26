@@ -1,8 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AutoShrinkText from "../../Components/Text/AutoShrinkText";
+import { useLocation } from "react-router-dom";
 
 export default function Thankyou() {
+
+  const location = useLocation();
+  const from = location.state?.from; 
+
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
   useEffect(() => {
@@ -14,7 +19,7 @@ export default function Thankyou() {
       }
     };
 
-    handleResize(); // Run once on mount
+    handleResize(); 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -31,10 +36,6 @@ export default function Thankyou() {
 
   return (
     <>
-      {/* <div style={{ display: "flex", justifyContent: "center" }}>
-        <img style={{ width: "auto" }} src={imageSrc} alt="Thank you" />
-      </div> */}
-
       <section className="accaodomationBannerSection carquizbanner">
         <div>
           <img
@@ -76,24 +77,51 @@ export default function Thankyou() {
         style={{ paddingBottom: "0" }}
       >
         <div className="container max-w-7xl mx-auto px-4">
-          <div className="workIntro">
-            {/* <h1>Thank You for Your Entry!</h1> */}
+          {from === "hotshot-chennai" && (
+            <div className="workIntro">
+              <h1>Your Moment Is In! </h1>
+              
+              <p>
+               Your HOTSHOTS Moment has been successfully submitted. Now, the exciting part begins!
+              </p>
+              <p>
+                You’ve shared your view of Chennai — its stories, vibes, and hidden gems. Our team can’t wait to explore your capture and discover the story behind your frame.
 
-            <p>
-              Your Margazhi moment has been successfully submitted. We’re
-              excited to see Chennai through your lens and look forward to
-              reviewing your capture.
-            </p>
-            <p>While you’re here, explore other contests by Super Chennai.</p>
+              </p>
+              <p>
+                But why stop here?
 
-            <p>
-              Visit the Super Chennai contest page to discover more creative
-              moments captured across Chennai.
-            </p>
+              </p>
+              <p>
+                Check out the other SuperChennai events too — we’ve hosted countless exciting moments, and there’s plenty more waiting for you to explore!
+              </p>
+            </div>
+          )}
+          {from === "margazhi-sabha" && (
+            <div className="workIntro">
+              {/* <h1>Thank You for Your Entry!</h1> */}
 
-            <hr />
-          </div>
+              <p>
+                Your Margazhi moment has been successfully submitted. We’re
+                excited to see Chennai through your lens and look forward to
+                reviewing your capture.
+              </p>
+              <p>While you’re here, explore other contests by Super Chennai.</p>
+
+              <p>
+                Visit the Super Chennai contest page to discover more creative
+                moments captured across Chennai.
+              </p>
+
+              <hr />
+            </div>
+          )}
+
+          {!from && (
+            <p className="text-center">Thank you for participating in Super Chennai contests.</p>
+          )}
         </div>
+
         {/* ===== Bottom CTA Button ===== */}
         <div className="py-12 bg-gradient-to-b from-white to-[#faf7fb]">
           <div className="flex justify-center">

@@ -204,7 +204,11 @@ const navigate = useNavigate();
           consent: false,
         });
         setImages([null, null, null]);
-        navigate("/thank-you");
+        navigate("/thank-you", {
+          state: {
+            from: "margazhi-sabha",
+          },
+        });
       }
     } catch (error) {
       console.error(error);

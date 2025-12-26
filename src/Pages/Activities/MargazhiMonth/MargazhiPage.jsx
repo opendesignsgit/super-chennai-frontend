@@ -19,7 +19,7 @@ export default function MargazhiPageCalendar() {
   const [hiddenGemEvents, setHiddenGemEvents] = useState([]);
   const [musicCategories, setMusicCategories] = useState([]);
   const [canteenCategories, setCanteenCategories] = useState([]);
-
+const [selectedItem, setSelectedItem] = useState(null);
   const closeModal = () => {
     setSelectedDateEvents([]);
     setSelectedDate(null);
@@ -88,21 +88,89 @@ export default function MargazhiPageCalendar() {
     fetchOrganizers();
   }, []);
 
+  // useEffect(() => {
+  //   const fetchCanteenCategories = async () => {
+  //     try {
+  //       const res = await fetch(`${API_BASE_URL}/api/sabhaFoods`);
+
+  //       const json = await res.json();
+  //       console.log("food data",json)
+
+  //       const categories = (json?.docs || []).map((item) => ({
+  //         title: item.title,
+  //         subtitle: item.subtitle || "",
+  //         icon: item.icon || "🍘",
+  //         image: item.image
+  //           ? `${API_BASE_URL}${item.image?.sizes?.thumbnail?.url || item.image.url}`
+  //           : null,
+  //       }));
+
+  //       setCanteenCategories(categories);
+  //     } catch (err) {
+  //       console.error("Failed to fetch canteen categories", err);
+  //     }
+  //   };
+
+  //   fetchCanteenCategories();
+  // }, []);
+  const getImageUrl = (image) => {
+    if (!image) return null;
+
+    return `${API_BASE_URL}${
+      image.sizes?.square?.url || image.sizes?.thumbnail?.url || image.url
+    }`;
+  };
+ const formatDate = (dateStr) => {
+  if (!dateStr) return "";
+  return new Date(dateStr).toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+};
+
   useEffect(() => {
     const fetchCanteenCategories = async () => {
       try {
         const res = await fetch(`${API_BASE_URL}/api/sabhaFoods`);
-
         const json = await res.json();
-        console.log("food data",json)
 
         const categories = (json?.docs || []).map((item) => ({
+          id: item.id,
+
           title: item.title,
           subtitle: item.subtitle || "",
+
           icon: item.icon || "🍘",
-          image: item.image
-            ? `${API_BASE_URL}${item.image?.sizes?.thumbnail?.url || item.image.url}`
-            : null,
+          image: getImageUrl(item.image),
+
+          type: item.type || null,
+          order: item.order ?? null,
+
+          // ✅ Date range
+          availDate: {
+            from: item.availDate?.from || null,
+            to: item.availDate?.to || null,
+          },
+
+          // ✅ Timing
+          timings: item.timings || "",
+
+          // ✅ Place
+          place: {
+            name: item.place?.name || "",
+            mapUrl: item.place?.mapUrl || "",
+          },
+
+          // ✅ Food / custom text
+          foodDetails: item.foodDetails || "",
+
+          // ✅ Sabha info
+          sabhaName: item.sabhaName || "",
+          organizer: item.organizer || "",
+
+          // ✅ Rich text (raw payload)
+          otherDetails: item.otherDetails || null,
         }));
 
         setCanteenCategories(categories);
@@ -318,7 +386,7 @@ export default function MargazhiPageCalendar() {
       </div>
 
       <section className="w-full py-16 bg-gradient-to-b from-[#faf7fb] to-white">
-        <div className="max-w-6xl mx-auto px-4 ">
+        <div className="max-w-7xl mx-auto px-4 ">
           {/* Title */}
           <div className="workIntro">
             <h2 className=" themelink-color formheadingtheme text-center">
@@ -365,36 +433,8 @@ export default function MargazhiPageCalendar() {
           </div>
 
           {/* Cards */}
+
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {data.map((item, index) => (
-              <div
-                key={index}
-                onClick={() => {
-                  if (activeTab !== "sabha") return;
-                  setSelectedSubCategory(item.title);
-
-                  calendarRef.current?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                  });
-                }}
-                className="cursor-pointer group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-4xl">{item.icon}</span>
-                  <span className="w-10 h-1 bg-[#a44294] rounded-full opacity-0 group-hover:opacity-100 transition" />
-                </div>
-
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                  {item.title}
-                </h3>
-
-                <p className="text-sm text-gray-600">{item.subtitle}</p>
-              </div>
-            ))}
-          </div> */}
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.map((item, index) => (
               <div
                 key={index}
@@ -429,9 +469,202 @@ export default function MargazhiPageCalendar() {
                 </div>
               </div>
             ))}
+          </div> */}
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {data.map((item, index) => (
+              <div
+                key={index}
+                onClick={() => {
+                  if (activeTab !== "sabha") return;
+                  setSelectedSubCategory(item.title);
+                  calendarRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
+                className="cursor-pointer group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex items-center gap-4"
+              >
+                {/* Image / Icon */}
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-24 h-24 object-cover rounded-xl"
+                  />
+                ) : (
+                  <div className="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-xl">
+                    <span className="text-4xl">{item.icon}</span>
+                  </div>
+                )}
+
+                {/* Content */}
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-sm text-gray-600">{item.subtitle}</p>
+
+                  {/* ✅ Canteen-only fields */}
+                  {/* {activeTab === "canteen" && (
+                    <div className="mt-2 space-y-1 text-xs text-gray-500">
+                      {item.timings && <p>TIMING {item.timings}</p>}
+                      <p className="text-xs text-gray-500 mt-1">
+                        AVAI DATE {formatDate(item.availDate.from)} –{" "}
+                        {formatDate(item.availDate.to)}
+                      </p>
+                      {item.foodDetails && (
+                        <p> FOOD DETAIL {item.foodDetails}</p>
+                      )}
+                      {item.sabhaName && <p>SABHA NAME {item.sabhaName}</p>}
+
+                      <div className="flex items-center justify-between mt-1">
+                        {item.place?.name ? (
+                          <a
+                            href={item.place.mapUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-xs text-[#a44294] underline truncate max-w-[70%]"
+                          >
+                            📍 {item.place.name}
+                          </a>
+                        ) : (
+                          <span />
+                        )}
+
+                        {item.otherDetails && (
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedItem(item);
+                            }}
+                            className="inline-flex items-center gap-1 text-[11px] font-medium text-[#a44294] hover:underline whitespace-nowrap"
+                          >
+                            View details →
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  )} */}
+
+                  {activeTab === "canteen" && (
+                    <div className="mt-2 space-y-1 text-xs text-gray-600">
+                      {item.timings && (
+                        <p>
+                          <span className="font-semibold text-gray-700">
+                            Timing:
+                          </span>{" "}
+                          {item.timings}
+                        </p>
+                      )}
+
+                      {(item.availDate?.from || item.availDate?.to) && (
+                        <p>
+                          <span className="font-semibold text-gray-700">
+                            Date:
+                          </span>{" "}
+                          {formatDate(item.availDate.from)} –{" "}
+                          {formatDate(item.availDate.to)}
+                        </p>
+                      )}
+
+                      {item.foodDetails && (
+                        <p>
+                          <span className="font-semibold text-gray-700">
+                            Food Details:
+                          </span>{" "}
+                          {item.foodDetails}
+                        </p>
+                      )}
+
+                      {item.sabhaName && (
+                        <p>
+                          <span className="font-semibold text-gray-700">
+                            Sabha Name:
+                          </span>{" "}
+                          {item.sabhaName}
+                        </p>
+                      )}
+
+                      {/* Place + Details */}
+                      <div className="flex items-center justify-between pt-1">
+                        {item.place?.name ? (
+                          <a
+                            href={item.place.mapUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-xs font-medium text-[#a44294] underline truncate max-w-[70%]"
+                          >
+                            📍 {item.place.name}
+                          </a>
+                        ) : (
+                          <span />
+                        )}
+
+                        {item.otherDetails && (
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedItem(item);
+                            }}
+                            className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#a44294] hover:underline whitespace-nowrap"
+                          >
+                            View details →
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {selectedItem && (
+        <div className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center p-4">
+          <div className="bg-white max-w-lg w-full rounded-2xl p-6 relative shadow-xl">
+            <button
+              onClick={() => setSelectedItem(null)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-black"
+            >
+              ✕
+            </button>
+
+            <h2 className="text-xl font-bold mb-2">{selectedItem.title}</h2>
+
+            {selectedItem.timings && (
+              <p className="text-sm text-gray-600 mb-2">
+                TIMING : {selectedItem.timings}
+              </p>
+            )}
+
+            {selectedItem.place?.name && (
+              <a
+                href={selectedItem.place.mapUrl}
+                target="_blank"
+                className="text-sm text-[#a44294] underline mb-3 block"
+              >
+                📍 {selectedItem.place.name}
+              </a>
+            )}
+
+            <div className="text-sm text-gray-700 space-y-2 max-h-64 overflow-y-auto">
+              <div className="text-sm text-gray-700 space-y-2 max-h-64 overflow-y-auto">
+                {selectedItem.otherDetails?.root?.children?.map((block, i) => (
+                  <p key={i}>
+                    {block.children?.map((child) => child.text).join("")}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ================= CALENDAR SECTION ================= */}
 

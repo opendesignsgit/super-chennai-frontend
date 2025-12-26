@@ -171,7 +171,7 @@ export default function WorkLifeBalance() {
               <p>Work &nbsp; in Chennai &nbsp; Work &nbsp; in Chennai</p>
             </div>
             <div className="workIntro">
-              <h3>Work-Life Balance</h3>
+              <h1>Working in Chennai</h1>
               <p>
                 In Chennai, striking a work-life balance can be challenging.
                 However, you may work on it in peace if you've learned how to

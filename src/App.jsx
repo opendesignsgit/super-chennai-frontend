@@ -586,7 +586,7 @@ function App() {
             <div
               id="margazhi-moments-tab"
               ref={stickyRef}
-              className={`super-chennai-contest pointcastSticky nammaStorieslink ${
+              className={`super-chennai-contest pointcastSticky nammaStorieslink margazhi-photography-contest${
                 footerReached ? "footerreached" : ""
               }`}
             >

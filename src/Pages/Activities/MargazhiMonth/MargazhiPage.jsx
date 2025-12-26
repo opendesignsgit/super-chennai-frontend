@@ -19,7 +19,7 @@ export default function MargazhiPageCalendar() {
   const [hiddenGemEvents, setHiddenGemEvents] = useState([]);
   const [musicCategories, setMusicCategories] = useState([]);
   const [canteenCategories, setCanteenCategories] = useState([]);
-const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null);
   const closeModal = () => {
     setSelectedDateEvents([]);
     setSelectedDate(null);
@@ -120,14 +120,14 @@ const [selectedItem, setSelectedItem] = useState(null);
       image.sizes?.square?.url || image.sizes?.thumbnail?.url || image.url
     }`;
   };
- const formatDate = (dateStr) => {
-  if (!dateStr) return "";
-  return new Date(dateStr).toLocaleDateString("en-IN", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-};
+  const formatDate = (dateStr) => {
+    if (!dateStr) return "";
+    return new Date(dateStr).toLocaleDateString("en-IN", {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+    });
+  };
 
   useEffect(() => {
     const fetchCanteenCategories = async () => {
@@ -434,44 +434,7 @@ const [selectedItem, setSelectedItem] = useState(null);
 
           {/* Cards */}
 
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {data.map((item, index) => (
-              <div
-                key={index}
-                onClick={() => {
-                  if (activeTab !== "sabha") return;
-                  setSelectedSubCategory(item.title);
-
-                  calendarRef.current?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                  });
-                }}
-                className="cursor-pointer group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex items-center gap-4"
-              >
-                {item.image ? (
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-24 h-24 object-cover rounded-xl flex-shrink-0"
-                  />
-                ) : (
-                  <div className="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-xl flex-shrink-0">
-                    <span className="text-4xl">{item.icon}</span>
-                  </div>
-                )}
-
-                <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-1">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-600">{item.subtitle}</p>
-                </div>
-              </div>
-            ))}
-          </div> */}
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
             {data.map((item, index) => (
               <div
                 key={index}
@@ -483,9 +446,8 @@ const [selectedItem, setSelectedItem] = useState(null);
                     block: "start",
                   });
                 }}
-                className="cursor-pointer group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex items-center gap-4"
+                className="cursor-pointer group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex items-center gap-4 overflow-hidden"
               >
-                {/* Image / Icon */}
                 {item.image ? (
                   <img
                     src={item.image}
@@ -498,7 +460,6 @@ const [selectedItem, setSelectedItem] = useState(null);
                   </div>
                 )}
 
-                {/* Content */}
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-gray-800">
                     {item.title}
@@ -506,29 +467,82 @@ const [selectedItem, setSelectedItem] = useState(null);
 
                   <p className="text-sm text-gray-600">{item.subtitle}</p>
 
-                  {/* ✅ Canteen-only fields */}
-                  {/* {activeTab === "canteen" && (
-                    <div className="mt-2 space-y-1 text-xs text-gray-500">
-                      {item.timings && <p>TIMING {item.timings}</p>}
-                      <p className="text-xs text-gray-500 mt-1">
-                        AVAI DATE {formatDate(item.availDate.from)} –{" "}
-                        {formatDate(item.availDate.to)}
-                      </p>
-                      {item.foodDetails && (
-                        <p> FOOD DETAIL {item.foodDetails}</p>
-                      )}
-                      {item.sabhaName && <p>SABHA NAME {item.sabhaName}</p>}
 
-                      <div className="flex items-center justify-between mt-1">
+                  {activeTab === "canteen" && (
+                    <div className="mt-2 space-y-1 text-xs text-gray-600 ">
+                      {item.timings && (
+                        <p>
+                          <span className="font-semibold text-gray-700">
+                            Timing:
+                          </span>{" "}
+                          {item.timings}
+                        </p>
+                      )}
+
+                      {(item.availDate?.from || item.availDate?.to) && (
+                        <p>
+                          <span className="font-semibold text-gray-700">
+                            Date:
+                          </span>{" "}
+                          {formatDate(item.availDate.from)} –{" "}
+                          {formatDate(item.availDate.to)}
+                        </p>
+                      )}
+
+                      {item.foodDetails && (
+                        <p>
+                          <span className="font-semibold text-gray-700">
+                            Food Details:
+                          </span>{" "}
+                          {item.foodDetails}
+                        </p>
+                      )}
+
+                      {item.sabhaName && (
+                        <p>
+                          <span className="font-semibold text-gray-700">
+                            Sabha Name:
+                          </span>{" "}
+                          {item.sabhaName}
+                        </p>
+                      )}
+
+                      <div className="flex items-center justify-between pt-1">
                         {item.place?.name ? (
                           <a
                             href={item.place.mapUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}
-                            className="text-xs text-[#a44294] underline truncate max-w-[70%]"
+                            className="flex items-center gap-1 text-xs underline truncate max-w-[70%] text-[#a44294]"
                           >
-                            📍 {item.place.name}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="w-4 h-4 flex-shrink-0 text-[#a44294]"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M12 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"
+                              />
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M19.5 10.5c0 6-7.5 10.5-7.5 10.5S4.5 16.5 4.5 10.5a7.5 7.5 0 1115 0z"
+                              />
+                            </svg>
+
+                            <span className="font-semibold text-gray-700">
+                              Location:
+                            </span>
+
+                            <span className="font-medium truncate">
+                              {item.place.name}
+                            </span>
                           </a>
                         ) : (
                           <span />
@@ -540,17 +554,59 @@ const [selectedItem, setSelectedItem] = useState(null);
                               e.stopPropagation();
                               setSelectedItem(item);
                             }}
-                            className="inline-flex items-center gap-1 text-[11px] font-medium text-[#a44294] hover:underline whitespace-nowrap"
+                            className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#a44294] hover:underline whitespace-nowrap"
                           >
                             View details →
                           </button>
                         )}
                       </div>
                     </div>
-                  )} */}
+                  )}
+                </div>
+              </div>
+            ))}
+          </div> */}
 
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
+            {data.map((item, index) => (
+              <div
+                key={index}
+                onClick={() => {
+                  if (activeTab !== "sabha") return;
+                  setSelectedSubCategory(item.title);
+                  calendarRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
+                className="w-full cursor-pointer group bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col sm:flex-row items-center gap-4"
+              >
+                {/* Image / Icon */}
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-xl flex-shrink-0"
+                  />
+                ) : (
+                  <div className="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-xl flex-shrink-0">
+                    <span className="text-4xl">{item.icon}</span>
+                  </div>
+                )}
+
+                {/* Content */}
+                <div className="flex-1 flex flex-col overflow-visible">
+                  <h3 className="text-lg font-semibold text-gray-800 break-words">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-sm text-gray-600 break-words">
+                    {item.subtitle}
+                  </p>
+
+                  {/* Canteen-specific fields */}
                   {activeTab === "canteen" && (
-                    <div className="mt-2 space-y-1 text-xs text-gray-600">
+                    <div className="mt-2 space-y-1 text-xs text-gray-600 overflow-auto max-h-60">
                       {item.timings && (
                         <p>
                           <span className="font-semibold text-gray-700">
@@ -589,16 +645,15 @@ const [selectedItem, setSelectedItem] = useState(null);
                       )}
 
                       {/* Place + Details */}
-                      <div className="flex items-center justify-between pt-1">
-                        {item.place?.name ? (
+                      <div className="flex items-center justify-between pt-1 flex-wrap gap-2">
+                        {item.place?.name && (
                           <a
                             href={item.place.mapUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}
-                            className="flex items-center gap-1 text-xs underline truncate max-w-[70%] text-[#a44294]"
+                            className="flex items-center gap-1 text-xs underline text-[#a44294] max-w-full break-words"
                           >
-                            {/* Location SVG */}
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               className="w-4 h-4 flex-shrink-0 text-[#a44294]"
@@ -620,15 +675,11 @@ const [selectedItem, setSelectedItem] = useState(null);
                             </svg>
 
                             <span className="font-semibold text-gray-700">
-                              Location:
                             </span>
-
-                            <span className="font-medium truncate">
+                            <span className="font-medium break-words">
                               {item.place.name}
                             </span>
                           </a>
-                        ) : (
-                          <span />
                         )}
 
                         {item.otherDetails && (

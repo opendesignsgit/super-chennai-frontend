@@ -239,7 +239,9 @@ const BlogDetail = () => {
 
         <div className="blog-detail-container  container max-w-7xl mx-auto">
           <h3 className="AuthourNameBlog">
-            Author : Super Chennai Team
+            {/* Author : Super Chennai Team */}
+
+           Author: {blog.author}
             <span style={{ color: "#1d1d1d" }}>
               {blog.authour} {""}{" "}
               <span

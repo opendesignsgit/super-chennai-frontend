@@ -3,6 +3,7 @@ import axios from "axios";
 import "../../assets/Css/BlogList.css";
 import { Helmet } from "react-helmet-async";
 import { API_BASE_URL } from "../../../config";
+import BlogListSkeleton from "./components/BlogListSkeleton";
 
 const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
@@ -62,13 +63,17 @@ const BlogList = () => {
     setFilteredBlogs(filtered);
   }, [searchTerm, blogs]);
 
+  // if (loading) {
+  //   return (
+  //     <div className="flex justify-center items-center h-40">
+  //       <div className="loader border-t-transparent border-4 border-blue-600 rounded-full w-8 h-8 animate-spin"></div>
+  //     </div>
+  //   );
+  // }
   if (loading) {
-    return (
-      <div className="flex justify-center items-center h-40">
-        <div className="loader border-t-transparent border-4 border-blue-600 rounded-full w-8 h-8 animate-spin"></div>
-      </div>
-    );
-  }
+  return <BlogListSkeleton />;
+}
+
 
   return (
     <>

@@ -1672,3 +1672,456 @@ export default App;
   //     ],
   //   },
   // ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  import axios from "axios";
+// import { useEffect, useState } from "react";
+// import { Helmet } from "react-helmet-async";
+// import { Link, useParams } from "react-router-dom";
+// import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import { API_BASE_URL } from "../../../config";
+// import "../../assets/Css/BlogList.css";
+// import AutoShrinkText from "../../Components/Text/AutoShrinkText";
+// import BlogDetailSkeleton from "./components/BlogDetailSkeleton";
+// import "./style.css"
+// // const parseLexical = (content) => {
+// //   if (!content?.root?.children) return null;
+
+// //   return content.root.children.map((node, idx) => {
+// //     switch (node.type) {
+// //       case "paragraph":
+// //         return (
+// //           <p key={idx} className="mb-4 text-gray-700 leading-7">
+// //             {node.children.map((child, cIdx) => {
+// //               if (child.type === "text")
+// //                 return <span key={cIdx}>{child.text}</span>;
+// //               if (child.type === "link") {
+// //                 const url = child.fields?.url || "#";
+// //                 const linkText = child.children?.[0]?.text || "Link";
+// //                 return (
+// //                   <a
+// //                     key={cIdx}
+// //                     href={url}
+// //                     target={child.fields?.newTab ? "_blank" : "_self"}
+// //                     rel="noopener noreferrer"
+// //                     style={{ color: "#232b91ff", textDecoration: "underline" }}
+// //                   >
+// //                     {linkText}
+// //                   </a>
+// //                 );
+// //               }
+// //               if (child.type === "linebreak") return <br key={cIdx} />;
+// //               return null;
+// //             })}
+// //           </p>
+// //         );
+
+// //       case "heading":
+// //         const Tag = node.tag || "h2";
+// //         return (
+// //           <Tag
+// //             key={idx}
+// //             style={{
+// //               marginTop: "1.5rem",
+// //               marginBottom: "1rem",
+// //               fontWeight: "bold",
+// //             }}
+// //           ></Tag>
+// //         );
+
+// //       case "block":
+// //         const media = node.fields?.media;
+// //         if (media && media.url) {
+// //           const imgUrl = `${API_BASE_URL}/${media.url}`;
+// //           return (
+// //             <figure key={idx} className="my-8">
+// //               <img
+// //                 src={imgUrl}
+// //                 alt={media.alt || "Image"}
+// //                 className="w-full rounded-xl"
+// //               />
+// //               {media.caption && (
+// //                 <figcaption className="mt-2 text-center text-sm text-gray-500">
+// //                   {media.caption}
+// //                 </figcaption>
+// //               )}
+// //             </figure>
+// //           );
+// //         }
+// //         return null;
+
+// //       default:
+// //         return null;
+// //     }
+// //   });
+// // };
+
+// const renderTextChildren = (children) =>
+//   children?.map((child, i) => {
+//     if (child.type === "text") return child.text;
+//     if (child.children) return renderTextChildren(child.children);
+//     return null;
+//   });
+
+
+// const parseLexical = (content) => {
+//   if (!content?.root?.children) return null;
+
+// const headingClasses = {
+//   h1: "mt-12 mb-6",
+//   h2: "mt-10 mb-6",
+//   h3: "mt-8 mb-4",
+//   h4: "mt-8 mb-4",
+//   h5: "mt-6 mb-3",
+//   h6: "mt-6 mb-3 uppercase tracking-wide",
+// };
+
+
+//   const paragraphClass =
+//     "mb-5 text-base text-gray-700 leading-relaxed";
+
+//   const linkClass =
+//     "text-[#232b91ff] underline underline-offset-2 hover:text-[#1a2075]";
+
+//   return content.root.children.map((node, idx) => {
+//     switch (node.type) {
+//       case "paragraph":
+//         return (
+//           <p key={idx} className={paragraphClass}>
+//             {node.children.map((child, cIdx) => {
+//               if (child.type === "text")
+//                 return <span key={cIdx}>{child.text}</span>;
+
+//               if (child.type === "link") {
+//                 const url = child.fields?.url || "#";
+//                 const linkText = child.children?.[0]?.text || "Link";
+//                 return (
+//                   <a
+//                     key={cIdx}
+//                     href={url}
+//                     target={child.fields?.newTab ? "_blank" : "_self"}
+//                     rel="noopener noreferrer"
+//                     className={linkClass}
+//                   >
+//                     {linkText}
+//                   </a>
+//                 );
+//               }
+
+//               if (child.type === "linebreak") return <br key={cIdx} />;
+//               return null;
+//             })}
+//           </p>
+//         );
+
+//       // case "heading": {
+//       //   const Tag = node.tag || "h2";
+//       //   const className = headingClasses[Tag] || headingClasses.h2;
+
+//       //   return (
+//       //     <Tag key={idx} className={className}>
+//       //       {node.children?.map((child, cIdx) =>
+//       //         child.type === "text" ? (
+//       //           <span key={cIdx}>{child.text}</span>
+//       //         ) : null
+//       //       )}
+//       //     </Tag>
+//       //   );
+//       // }
+
+//       case "heading": {
+//         const Tag = node.tag || "h2";
+//         const className = headingClasses[Tag] || headingClasses.h2;
+
+//         return (
+//           <Tag key={idx} className={className}>
+//             {renderTextChildren(node.children)}
+//           </Tag>
+//         );
+//       }
+
+//       case "block": {
+//         const media = node.fields?.media;
+//         if (!media?.url) return null;
+
+//         const imgUrl = `${API_BASE_URL}/${media.url}`;
+
+//         return (
+//           <figure key={idx} className="my-10">
+//             <img
+//               src={imgUrl}
+//               alt={media.alt || "Image"}
+//               className="w-full rounded-xl"
+//             />
+//             {media.caption && (
+//               <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
+//                 {media.caption}
+//               </figcaption>
+//             )}
+//           </figure>
+//         );
+//       }
+
+//       default:
+//         return null;
+//     }
+//   });
+// };
+
+// const BlogDetail = () => {
+//   const { slug } = useParams();
+//   const [blog, setBlog] = useState(null);
+//   const [loading, setLoading] = useState(true);
+//   const [relatedBlogs, setRelatedBlogs] = useState([]);
+
+//   console.log("blogdeatil", blog);
+
+//   useEffect(() => {
+//     const fetchBlog = async () => {
+//       try {
+//         const res = await axios.get(`${API_BASE_URL}/api/posts?limit=0`);
+
+//         const data = res.data?.docs?.length ? res.data : "";
+//         console.log("blog data", data);
+
+//         const found = data.docs.find((blog) => String(blog.slug) === slug);
+
+//         console.log("found", found);
+
+//         if (found) {
+//           // setBlog({
+//           //   id: found.id,
+//           //   title: found.title,
+//           //   content: found.content,
+//           //   createdAt: found.createdAt,
+//           //   updatedAt: found.updatedAt,
+//           //   publishedAt: found.publishedAt,
+//           //   metadescription: found.meta?.description,
+//           //   author: found.populatedAuthors?.[0]?.name,
+//           //   metatitle: found.meta?.title,
+//           //   heroImage:
+//           //     found.heroImage?.sizes?.xlarge?.url ||
+//           //     found.heroImage?.url ||
+//           //     null,
+//           // });
+
+//           setBlog({
+//             id: found.id,
+//             title: found.title,
+//             content: found.content,
+//             createdAt: found.createdAt,
+//             publishedAt: found.publishedAt,
+//             metadescription: found.meta?.description,
+//             metatitle: found.meta?.title,
+
+//             author: found.populatedAuthors?.[0]?.name,
+//             authorImage: found.populatedAuthors?.[0]?.profileImage?.url || null,
+
+//             heroImage:
+//               found.heroImage?.sizes?.xlarge?.url ||
+//               found.heroImage?.url ||
+//               null,
+//           });
+
+//           const related = data.docs
+//             .filter(
+//               (b) =>
+//                 String(b.slug) !== slug && b.blogCategory === found.blogCategory
+//             )
+//             .slice(0, 5);
+//           setRelatedBlogs(related);
+//         } else {
+//           setBlog(null);
+//         }
+//       } catch (err) {
+//         console.error("Error fetching blog:", err);
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
+
+//     fetchBlog();
+//   }, [slug]);
+
+//   useEffect(() => {
+//     const spans = document.querySelectorAll("p span");
+//     spans.forEach((span) => {
+//       const cleanText = span.textContent.replace(/\u00A0/g, " ").trim();
+//       if (cleanText.endsWith(":")) {
+//         span.classList.add("paragraphstyleBlogUl");
+//       }
+//     });
+//   }, [blog]);
+
+//   const sliderSettings = {
+//     dots: true,
+//     arrows: true,
+//     infinite: false,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 4000,
+//     responsive: [
+//       { breakpoint: 1024, settings: { slidesToShow: 2 } },
+//       { breakpoint: 600, settings: { slidesToShow: 1 } },
+//     ],
+//   };
+
+//   if (loading) return <BlogDetailSkeleton />;
+
+// if (!blog)
+//   return (
+//     <>
+//       <div className="relative h-[400px] w-full bg-gray-300 animate-pulse">
+//         {/* overlay */}
+//         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/10" />
+
+//         {/* Center heading + breadcrumb skeleton */}
+//         <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4">
+//           <div className="h-6 w-32 bg-gray-200 rounded" />
+//           <div className="h-10 w-72 bg-gray-100 rounded" />
+//         </div>
+//       </div>
+
+//       <div className="min-h-[60vh] flex items-center justify-center px-4 -mt-24 relative z-10">
+//         <div className="max-w-md text-center bg-white rounded-2xl shadow-md border p-8">
+//           <div className="text-5xl mb-4">📝</div>
+
+//           <h2 className="text-xl font-semibold text-gray-900">
+//             Blog not found
+//           </h2>
+
+//           <p className="mt-2 text-sm text-gray-600">
+//             The blog you are looking for might have been removed or the link is
+//             incorrect.
+//           </p>
+
+//           <a
+//             href="/blog"
+//             className="inline-block mt-6 px-5 py-2 text-sm font-medium text-white bg-[#232b91ff] rounded-lg hover:opacity-90 transition"
+//           >
+//             Back to Blogs
+//           </a>
+//         </div>
+//       </div>
+//     </>
+//   );
+
+
+//   return (
+//     <>
+//       <Helmet>
+//         <title>{blog.metatitle || blog.title}</title>
+
+//         {blog.metadescription && (
+//           <meta name="description" content={blog.metadescription} />
+//         )}
+
+//         <link rel="canonical" href={window.location.href} />
+
+//         <meta property="og:title" content={blog.metatitle || blog.title} />
+//         <meta
+//           property="og:description"
+//           content={blog.metadescription || blog.title}
+//         />
+//         {blog.heroImage && (
+//           <meta
+//             property="og:image"
+//             content={`${API_BASE_URL}${blog.heroImage}`}
+//           />
+//         )}
+//         <meta property="og:type" content="article" />
+//       </Helmet>
+
+//       <div className="BlogDetailPageId">
+//         <div className="accaodomationBannerSection relative w-full h-[500px] overflow-hidden">
+//           {blog.heroImage && (
+//             <>
+//               <div className="bLogDetailBanner">
+//                 <img
+//                   src={`${API_BASE_URL}${blog.heroImage}`}
+//                   alt={blog.title}
+//                 />
+//                             <div className="absolute inset-0 bg-gradient-to-b from-[#a34493]/610 to-[#8b3c82]/90"></div>
+
+//               </div>
+
+//               <div className="accodoamationBannerContainer">
+//                 <div className="accodoamationBannerText ">
+//                   <div className="breadCrum mb-4">
+//                     <a href="#">
+//                       <Link to="/blog">BLOG</Link>
+//                     </a>{" "}
+//                   </div>
+//                   <AutoShrinkText
+//                     text={blog.title}
+//                     baseSize={60}
+//                     minSize={40}
+//                     maxChars={40}
+//                     className="accodoamationBannerText"
+//                     width="80%"
+//                     maxLines={2}
+//                   />
+//                 </div>
+//               </div>
+//             </>
+//           )}
+//         </div>
+
+//         <div className="blog-detail-container  container max-w-7xl mx-auto">
+//           <div className="flex items-center gap-4 mb-8">
+//             {blog.authorImage ? (
+//               <img
+//                 src={`${API_BASE_URL}${blog.authorImage}`}
+//                 alt={blog.author}
+//                 className="w-18 h-18 rounded-full object-cover border"
+//               />
+//             ) : (
+//               <div className="w-18 h-18 rounded-full bg-gray-200 flex items-center justify-center text-sm font-semibold text-gray-600">
+//                 {blog.author?.charAt(0)}
+//               </div>
+//             )}
+
+//             <div className="leading-tight">
+//               <p className="text-sm font-semibold text-gray-800">
+//                 {blog.author || "Admin"}
+//               </p>
+
+//               <p className="text-xs text-gray-500">
+//                 {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
+//                   day: "2-digit",
+//                   month: "short",
+//                   year: "numeric",
+//                   timeZone: "Asia/Kolkata",
+//                 })}
+//               </p>
+//             </div>
+//           </div>
+
+//           <div className="blog-content">{parseLexical(blog.content)}</div>
+//           <div className="back-link">
+//             <Link to="/blog">← Back to Blog List</Link>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default BlogDetail;
+

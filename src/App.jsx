@@ -518,6 +518,8 @@ function App() {
 
       const hideOnMargazhiPage =
         location.pathname === "/contest/margazhi-month-photography-contest";
+              const hideOnBlog =
+        location.pathname === "/contest/blog/:slug";
 
       return (
         <>
@@ -532,7 +534,7 @@ function App() {
           />
 
 
-          {showPopup && !hideOnMargazhiPage && (
+          {showPopup && !hideOnMargazhiPage && !hideOnBlog && (
             <ImagePopup
               // imageUrl="/images/events/triva-popup.jpg"
               imageUrl="/images/events/margazhi-contest-home-popup.jpg"

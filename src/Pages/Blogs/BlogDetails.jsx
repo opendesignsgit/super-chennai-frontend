@@ -1,90 +1,75 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
 import { API_BASE_URL } from "../../../config";
-import "../../assets/Css/BlogList.css";
+import "./style.css";
 import AutoShrinkText from "../../Components/Text/AutoShrinkText";
+import BlogDetailSkeleton from "./components/BlogDetailSkeleton";
+
+/* ---------------------------------------------
+   Lexical Helpers
+--------------------------------------------- */
+
+const renderTextChildren = (children) =>
+  children?.map((child, i) => {
+    if (child.type === "text") return child.text;
+    if (child.children) return renderTextChildren(child.children);
+    return null;
+  });
 
 const parseLexical = (content) => {
   if (!content?.root?.children) return null;
+
+  const headingClasses = {
+    h1: "blog-h1",
+    h2: "blog-h2",
+    h3: "blog-h3",
+    h4: "blog-h4",
+    h5: "blog-h5",
+    h6: "blog-h6",
+  };
 
   return content.root.children.map((node, idx) => {
     switch (node.type) {
       case "paragraph":
         return (
-          <p key={idx}>
-            {node.children.map((child, cIdx) => {
-              if (child.type === "text")
-                return <span key={cIdx}>{child.text}</span>;
-              if (child.type === "link") {
-                const url = child.fields?.url || "#";
-                const linkText = child.children?.[0]?.text || "Link";
-                return (
-                  <a
-                    key={cIdx}
-                    href={url}
-                    target={child.fields?.newTab ? "_blank" : "_self"}
-                    rel="noopener noreferrer"
-                    style={{ color: "#1b599bff", textDecoration: "underline" }}
-                  >
-                    {linkText}
-                  </a>
-                );
-              }
-              if (child.type === "linebreak") return <br key={cIdx} />;
-              return null;
-            })}
+          <p key={idx} className="mb-5 text-base text-gray-700 leading-relaxed">
+            {renderTextChildren(node.children)}
           </p>
         );
 
-      case "heading":
+      case "heading": {
         const Tag = node.tag || "h2";
         return (
-          <Tag
-            key={idx}
-            style={{
-              marginTop: "1.5rem",
-              marginBottom: "1rem",
-              fontWeight: "bold",
-            }}
-          >
-            {node.children.map((child, cIdx) => {
-              if (child.type === "text")
-                return <span key={cIdx}>{child.text}</span>;
-              return null;
-            })}
+          <Tag key={idx} className={headingClasses[Tag] || "blog-h2"}>
+            {renderTextChildren(node.children)}
           </Tag>
         );
+      }
 
-      case "block":
+      case "block": {
         const media = node.fields?.media;
-        if (media && media.url) {
-          const imgUrl = `${API_BASE_URL}/${media.url}`;
-          return (
-            <figure key={idx} style={{ margin: "1.5rem 0" }}>
+        if (!media?.url) return null;
+
+        return (
+          <figure key={idx} className="my-10">
+            <div className="w-full h-[420px] overflow-hidden rounded-xl">
               <img
-                src={imgUrl}
-                alt={media.alt || media.filename || "Image"}
-                style={{ maxWidth: "100%", height: "auto", borderRadius: 8 }}
+                src={`${API_BASE_URL}${media.url}`}
+                alt={media.alt || "Image"}
+                className="w-full h-full object-cover"
               />
-              {media.caption && (
-                <figcaption
-                  style={{
-                    textAlign: "center",
-                    fontSize: "0.9rem",
-                    color: "#555",
-                  }}
-                >
-                  {media.caption}
-                </figcaption>
-              )}
-            </figure>
-          );
-        }
-        return null;
+            </div>
+
+            {media.caption && (
+              <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
+                {media.caption}
+              </figcaption>
+            )}
+          </figure>
+        );
+      }
 
       default:
         return null;
@@ -92,55 +77,46 @@ const parseLexical = (content) => {
   });
 };
 
+/* ---------------------------------------------
+   Component
+--------------------------------------------- */
+
 const BlogDetail = () => {
   const { slug } = useParams();
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [relatedBlogs, setRelatedBlogs] = useState([]);
-
-  console.log("blogdeatil",blog)
+  const contentRef = useRef(null);
 
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         const res = await axios.get(`${API_BASE_URL}/api/posts?limit=0`);
+        const docs = res.data?.docs || [];
 
-        const data = res.data?.docs?.length ? res.data : "";
-        console.log("blog data", data);
+        const found = docs.find((b) => String(b.slug) === slug);
 
-        const found = data.docs.find((blog) => String(blog.slug) === slug);
-
-        console.log("found", found);
-
-        if (found) {
-          setBlog({
-            id: found.id,
-            title: found.title,
-            content: found.content,
-            createdAt: found.createdAt,
-            updatedAt: found.updatedAt,
-            publishedAt: found.publishedAt,
-            metadescription: found.meta?.description,
-            author: found.populatedAuthors?.[0]?.name,
-            metatitle: found.meta?.title,
-            heroImage:
-              found.heroImage?.sizes?.xlarge?.url ||
-              found.heroImage?.url ||
-              null,
-          });
-
-          const related = data.docs
-            .filter(
-              (b) =>
-                String(b.slug) !== slug && b.blogCategory === found.blogCategory
-            )
-            .slice(0, 5);
-          setRelatedBlogs(related);
-        } else {
+        if (!found) {
           setBlog(null);
+          return;
         }
+
+        setBlog({
+          id: found.id,
+          title: found.title,
+          content: found.content,
+          publishedAt: found.publishedAt,
+          metadescription: found.meta?.description,
+          metatitle: found.meta?.title,
+
+          author: found.populatedAuthors?.[0]?.name || "Admin",
+          authorImage: found.populatedAuthors?.[0]?.profileImage?.url || null,
+
+          heroImage:
+            found.heroImage?.sizes?.xlarge?.url || found.heroImage?.url || null,
+        });
       } catch (err) {
-        console.error("Error fetching blog:", err);
+        console.error("Blog fetch error:", err);
+        setBlog(null);
       } finally {
         setLoading(false);
       }
@@ -149,63 +125,81 @@ const BlogDetail = () => {
     fetchBlog();
   }, [slug]);
 
+  /* Paragraph colon styling – scoped safely */
   useEffect(() => {
-    const spans = document.querySelectorAll("p span");
+    if (!contentRef.current) return;
+
+    const spans = contentRef.current.querySelectorAll("p span");
     spans.forEach((span) => {
-      const cleanText = span.textContent.replace(/\u00A0/g, " ").trim();
-      if (cleanText.endsWith(":")) {
+      if (span.textContent.trim().endsWith(":")) {
         span.classList.add("paragraphstyleBlogUl");
       }
     });
   }, [blog]);
 
-  const sliderSettings = {
-    dots: true,
-    arrows: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 600, settings: { slidesToShow: 1 } },
-    ],
-  };
+  /* ---------------------------------------------
+     States
+  --------------------------------------------- */
 
-  if (loading) return <div className="blog-detail-loading">Loading...</div>;
-  if (!blog) return <div className="blog-detail-error">Blog not found.</div>;
+  if (loading) return <BlogDetailSkeleton />;
+
+  if (!blog)
+    return (
+      <>
+        {/* Banner Skeleton */}
+        <div className="relative h-[400px] bg-gray-300 animate-pulse">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/10" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4">
+            <div className="h-6 w-32 bg-gray-200 rounded" />
+            <div className="h-10 w-72 bg-gray-100 rounded" />
+          </div>
+        </div>
+
+        {/* Error Card */}
+        <div className="-mt-24 min-h-[60vh] flex items-center justify-center px-4 relative z-10">
+          <div className="bg-white max-w-md text-center rounded-2xl shadow-md border p-8">
+            <div className="text-5xl mb-4">📝</div>
+            <h2 className="text-xl font-semibold text-gray-900">
+              Blog not found
+            </h2>
+            <p className="mt-2 text-sm text-gray-600">
+              The blog may have been removed or the link is incorrect.
+            </p>
+            <Link
+              to="/blog"
+              className="inline-block mt-6 px-5 py-2 text-sm font-medium text-white bg-[#232b91ff] rounded-lg"
+            >
+              Back to Blogs
+            </Link>
+          </div>
+        </div>
+      </>
+    );
+
+  /* ---------------------------------------------
+     Render
+  --------------------------------------------- */
 
   return (
     <>
-    
       <Helmet>
         <title>{blog.metatitle || blog.title}</title>
-
         {blog.metadescription && (
           <meta name="description" content={blog.metadescription} />
         )}
-
-        <link rel="canonical" href={window.location.href} />
-
-        {/* Optional SEO extras */}
-        <meta property="og:title" content={blog.metatitle || blog.title} />
-        <meta
-          property="og:description"
-          content={blog.metadescription || blog.title}
-        />
+        <meta property="og:title" content={blog.title} />
+        <meta property="og:type" content="article" />
         {blog.heroImage && (
           <meta
             property="og:image"
             content={`${API_BASE_URL}${blog.heroImage}`}
           />
         )}
-        <meta property="og:type" content="article" />
       </Helmet>
 
+      {/* Banner */}
       <div className="BlogDetailPageId">
-        <div className="accaodomationBannerSection">
+        <div className="accaodomationBannerSection relative w-full h-[500px] overflow-hidden">
           {blog.heroImage && (
             <>
               <div className="bLogDetailBanner">
@@ -213,6 +207,7 @@ const BlogDetail = () => {
                   src={`${API_BASE_URL}${blog.heroImage}`}
                   alt={blog.title}
                 />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#a34493]/610 to-[#8b3c82]/90"></div>
               </div>
 
               <div className="accodoamationBannerContainer">
@@ -237,34 +232,44 @@ const BlogDetail = () => {
           )}
         </div>
 
-        <div className="blog-detail-container  container max-w-7xl mx-auto">
-          <h3 className="AuthourNameBlog">
-            {/* Author : Super Chennai Team */}
+        {/* Content */}
+        <div className="container max-w-7xl mx-auto px-4 py-16">
+          {/* Author */}
+          <div className="flex items-center gap-4 mb-10">
+            {blog.authorImage ? (
+              <img
+                src={`${API_BASE_URL}${blog.authorImage}`}
+                alt={blog.author}
+                className="w-16 h-16 rounded-full object-cover border"
+              />
+            ) : (
+              <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center text-lg font-semibold">
+                {blog.author.charAt(0)}
+              </div>
+            )}
 
-           Author: {blog.author}
-            <span style={{ color: "#1d1d1d" }}>
-              {blog.authour} {""}{" "}
-              <span
-                style={{
-                  fontSize: "13px",
-                  color: "#a44294",
-                  marginLeft: "4px",
-                }}
-              >
-                (
+            <div>
+              <p className="font-semibold text-gray-800">{blog.author}</p>
+              <p className="text-xs text-gray-500">
                 {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
                   day: "2-digit",
                   month: "short",
                   year: "numeric",
                   timeZone: "Asia/Kolkata",
                 })}
-                )
-              </span>
-            </span>
-          </h3>
-          <div className="blog-content">{parseLexical(blog.content)}</div>
-          <div className="back-link">
-            <Link to="/blog">← Back to Blog List</Link>
+              </p>
+            </div>
+          </div>
+
+          {/* Blog Content */}
+          <div ref={contentRef} className="blog">
+            {parseLexical(blog.content)}
+          </div>
+
+          <div className="mt-12">
+            <Link to="/blog" className="text-[#232b91ff] font-medium">
+              ← Back to Blog List
+            </Link>
           </div>
         </div>
       </div>

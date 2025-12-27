@@ -47,3 +47,47 @@
   letter-spacing: 0.08em;
   margin: 1rem 0 0.5rem;
 }
+.blog {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* paragraphs */
+.blog p {
+  margin-bottom: 1.25rem;
+}
+
+/* bold */
+.blog strong,
+.blog b {
+  font-weight: 700;
+  color: #000;
+}
+
+/* italic */
+.blog em,
+.blog i {
+  font-style: italic;
+}
+
+/* underline */
+.blog u {
+  text-decoration: underline;
+}
+
+/* links */
+.blog a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.blog a:hover {
+  text-decoration: none;
+}
+
+/* spacing between blocks */
+.blog > * + * {
+  margin-top: 1rem;
+}

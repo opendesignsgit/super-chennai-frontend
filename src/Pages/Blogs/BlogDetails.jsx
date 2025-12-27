@@ -10,11 +10,47 @@ import BlogDetailSkeleton from "./components/BlogDetailSkeleton";
 /* ---------------------------------------------
    Lexical Helpers
 --------------------------------------------- */
-
+const FORMAT = {
+  BOLD: 1,
+  ITALIC: 1 << 3,      
+  UNDERLINE: 1 << 1,
+};
 const renderTextChildren = (children) =>
+
   children?.map((child, i) => {
-    if (child.type === "text") return child.text;
-    if (child.children) return renderTextChildren(child.children);
+    // TEXT NODE
+    if (child.type === "text") {
+      let el = child.text;
+
+      if (child.format & FORMAT.BOLD) {
+        el = <strong key={i}>{el}</strong>;
+      }
+      if (child.format & FORMAT.ITALIC) {
+        el = <em key={i}>{el}</em>;
+      }
+      if (child.format & FORMAT.UNDERLINE) {
+        el = <u key={i}>{el}</u>;
+      }
+
+      return <span key={i}>{el}</span>;
+    }
+    // LINK NODE
+    if (child.type === "link") {
+      const url = child.fields?.url;
+      return (
+        <a key={i} href={url} target="_blank" rel="noopener noreferrer">
+          {renderTextChildren(child.children)}
+        </a>
+      );
+    }
+
+    // LINE BREAK
+    if (child.type === "linebreak") {
+      return <br key={i} />;
+    }
+    if (child.children) {
+      return <span key={i}>{renderTextChildren(child.children)}</span>;
+    }
     return null;
   });
 
@@ -54,7 +90,7 @@ const parseLexical = (content) => {
 
         return (
           <figure key={idx} className="my-10">
-            <div className="w-full h-[420px] overflow-hidden rounded-xl">
+            <div className="w-[1200px] h-[600px] overflow-hidden rounded-xl">
               <img
                 src={`${API_BASE_URL}${media.url}`}
                 alt={media.alt || "Image"}
@@ -86,19 +122,23 @@ const BlogDetail = () => {
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const contentRef = useRef(null);
-
+   const customImagePath = "/images/dr-shabnam.jpg";
+   
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         const res = await axios.get(`${API_BASE_URL}/api/posts?limit=0`);
+     
         const docs = res.data?.docs || [];
 
         const found = docs.find((b) => String(b.slug) === slug);
+        console.log("res11111111",res)
 
         if (!found) {
           setBlog(null);
           return;
         }
+      const author = found.authors?.[0];
 
         setBlog({
           id: found.id,
@@ -109,7 +149,21 @@ const BlogDetail = () => {
           metatitle: found.meta?.title,
 
           author: found.populatedAuthors?.[0]?.name || "Admin",
-          authorImage: found.populatedAuthors?.[0]?.profileImage?.url || null,
+
+          // authorImage: (() => {
+          //   const author = found.populatedAuthors?.[0];
+          //   if (author?.profileImage?.url) return author.profileImage.url;
+          //   if (author?.name === "Dr. Shabnam") return "/images/dr-shabnam.jpg";
+          //   return null;
+          // })(),
+
+          authorImage: (() => {
+            const author = found.populatedAuthors?.[0];
+            if (author?.profileImage?.url) return author.profileImage.url;
+            if (author?.name === "Dr. Shabnam")
+              return "http://localhost:5173/images/dr-shabnam.jpg"; 
+            return null;
+          })(),
 
           heroImage:
             found.heroImage?.sizes?.xlarge?.url || found.heroImage?.url || null,
@@ -207,7 +261,7 @@ const BlogDetail = () => {
                   src={`${API_BASE_URL}${blog.heroImage}`}
                   alt={blog.title}
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#a34493]/610 to-[#8b3c82]/90"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-b from-[#a34493]/610 to-[#8b3c82]/90"></div> */}
               </div>
 
               <div className="accodoamationBannerContainer">
@@ -235,12 +289,12 @@ const BlogDetail = () => {
         {/* Content */}
         <div className="container max-w-7xl mx-auto px-4 py-16">
           {/* Author */}
-          <div className="flex items-center gap-4 mb-10">
+           <div className="flex items-center gap-4 mb-10">
             {blog.authorImage ? (
-              <img
-                src={`${API_BASE_URL}${blog.authorImage}`}
+             <img
+                src={`${blog.authorImage}`}
                 alt={blog.author}
-                className="w-16 h-16 rounded-full object-cover border"
+                className="w-20 h-20 rounded-full object-cover border mb-3"
               />
             ) : (
               <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center text-lg font-semibold">
@@ -250,16 +304,47 @@ const BlogDetail = () => {
 
             <div>
               <p className="font-semibold text-gray-800">{blog.author}</p>
-              <p className="text-xs text-gray-500">
-                {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
-                  day: "2-digit",
-                  month: "short",
-                  year: "numeric",
-                  timeZone: "Asia/Kolkata",
-                })}
-              </p>
+              <p className="text-xs text-gray-500 mt-1">
+              {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
+                day: "2-digit",
+                month: "short",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: true,
+                timeZone: "Asia/Kolkata",
+              })}
+            </p>
             </div>
-          </div>
+          </div> 
+
+          {/* <div className="flex flex-col items-center mb-10 text-center">
+            {blog.authorImage ? (
+              <img
+                src={`${blog.authorImage}`}
+                alt={blog.author}
+                className="w-20 h-20 rounded-full object-cover border mb-3"
+              />
+            ) : (
+              <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-xl font-semibold mb-3">
+                {blog.author.charAt(0)}
+              </div>
+            )}
+
+            <p className="font-semibold text-gray-900">{blog.author}</p>
+
+            <p className="text-xs text-gray-500 mt-1">
+              {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
+                day: "2-digit",
+                month: "short",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: true,
+                timeZone: "Asia/Kolkata",
+              })}
+            </p>
+          </div> */}
 
           {/* Blog Content */}
           <div ref={contentRef} className="blog">

@@ -108,7 +108,7 @@ const parseLexical = (content) => {
 
         return (
           <figure key={idx} className="my-10">
-            <div className="w-[1200px] h-[600px] overflow-hidden rounded-xl">
+      <div className="blog-media-wrapper">
               <img
                 src={`${API_BASE_URL}${media.url}`}
                 alt={media.alt || "Image"}

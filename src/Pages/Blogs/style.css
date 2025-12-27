@@ -47,6 +47,7 @@
   letter-spacing: 0.08em;
   margin: 1rem 0 0.5rem;
 }
+
 .blog {
   font-size: 18px;
   line-height: 1.7;
@@ -90,4 +91,47 @@
 /* spacing between blocks */
 .blog > * + * {
   margin-top: 1rem;
+}
+
+
+/* 🔒 Reset all inline formatting inside headings */
+.blog h1 strong,
+.blog h1 b,
+.blog h1 em,
+.blog h1 u,
+.blog h1 a,
+
+.blog h2 strong,
+.blog h2 b,
+.blog h2 em,
+.blog h2 u,
+.blog h2 a,
+
+.blog h3 strong,
+.blog h3 b,
+.blog h3 em,
+.blog h3 u,
+.blog h3 a,
+
+.blog h4 strong,
+.blog h4 b,
+.blog h4 em,
+.blog h4 u,
+.blog h4 a,
+
+.blog h5 strong,
+.blog h5 b,
+.blog h5 em,
+.blog h5 u,
+.blog h5 a,
+
+.blog h6 strong,
+.blog h6 b,
+.blog h6 em,
+.blog h6 u,
+.blog h6 a {
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
 }

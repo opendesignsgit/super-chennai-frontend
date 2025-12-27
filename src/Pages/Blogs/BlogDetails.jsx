@@ -15,44 +15,62 @@ const FORMAT = {
   ITALIC: 1 << 3,      
   UNDERLINE: 1 << 1,
 };
-const renderTextChildren = (children) =>
+ 
 
-  children?.map((child, i) => {
-    // TEXT NODE
+ const renderTextChildren = (children, allowFormatting = true) => {
+  if (!Array.isArray(children)) return null;
+
+  return children.map((child, i) => {
     if (child.type === "text") {
       let el = child.text;
 
-      if (child.format & FORMAT.BOLD) {
-        el = <strong key={i}>{el}</strong>;
-      }
-      if (child.format & FORMAT.ITALIC) {
-        el = <em key={i}>{el}</em>;
-      }
-      if (child.format & FORMAT.UNDERLINE) {
-        el = <u key={i}>{el}</u>;
+      if (allowFormatting) {
+        if (child.format & FORMAT.BOLD) el = <strong>{el}</strong>;
+        if (child.format & FORMAT.ITALIC) el = <em>{el}</em>;
+        if (child.format & FORMAT.UNDERLINE) el = <u>{el}</u>;
       }
 
       return <span key={i}>{el}</span>;
     }
-    // LINK NODE
+
     if (child.type === "link") {
-      const url = child.fields?.url;
+      if (!allowFormatting) {
+        return (
+          <span key={i}>
+            {renderTextChildren(child.children, false)}
+          </span>
+        );
+      }
+
       return (
-        <a key={i} href={url} target="_blank" rel="noopener noreferrer">
-          {renderTextChildren(child.children)}
+        <a
+          key={i}
+          href={child.fields?.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline"
+        >
+          {renderTextChildren(child.children, true)}
         </a>
       );
     }
 
-    // LINE BREAK
-    if (child.type === "linebreak") {
-      return <br key={i} />;
-    }
+    if (child.type === "linebreak") return <br key={i} />;
+
     if (child.children) {
-      return <span key={i}>{renderTextChildren(child.children)}</span>;
+      return (
+        <span key={i}>
+          {renderTextChildren(child.children, allowFormatting)}
+        </span>
+      );
     }
+
     return null;
   });
+};
+
+
+
 
 const parseLexical = (content) => {
   if (!content?.root?.children) return null;
@@ -161,7 +179,7 @@ const BlogDetail = () => {
             const author = found.populatedAuthors?.[0];
             if (author?.profileImage?.url) return author.profileImage.url;
             if (author?.name === "Dr. Shabnam")
-              return "http://localhost:5173/images/dr-shabnam.jpg"; 
+              return "https://www.superchennai.com/images/dr-shabnam.jpg"; 
             return null;
           })(),
 

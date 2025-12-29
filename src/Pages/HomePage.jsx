@@ -41,6 +41,35 @@ export default function HomePage() {
     }
   }, []);
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Super Chennai",
+    url: "https://www.superchennai.com/",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://www.superchennai.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+    hasPart: [
+      {
+        "@type": "SiteNavigationElement",
+        name: "Chennai Events",
+        url: "https://www.superchennai.com/chennai-events",
+      },
+      {
+        "@type": "SiteNavigationElement",
+        name: "Superchennai Contest",
+        url: "https://www.superchennai.com/superchennai-contest",
+      },
+      {
+        "@type": "SiteNavigationElement",
+        name: "Restaurants in Chennai",
+        url: "https://www.superchennai.com/visit/restaurants-in-chennai",
+      },
+    ],
+  };
+
   useEffect(() => {
     const scrollPos = sessionStorage.getItem("scrollPos");
 
@@ -73,6 +102,10 @@ export default function HomePage() {
           name="description"
           content="Experience Super Chennai, a vibrant city where coastal charm meets thriving IT hubs, top education, nightlife, buzzing markets, and a love for art and sport."
         />
+
+        <script type="application/ld+json">
+          {JSON.stringify(websiteSchema)}
+        </script>
         <link rel="canonical" href="/" />
       </Helmet>
       <div>

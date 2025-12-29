@@ -94,7 +94,7 @@ export default function MargazhiMomentsContest() {
     { code: "+1", name: "United States" },
     { code: "+84", name: "Vietnam" },
   ];
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
@@ -219,16 +219,39 @@ const navigate = useNavigate();
       setLoading(false);
     }
   };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "Margazhi Moments Photography Contest",
+    description:
+      "Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us.",
+    image: "https://www.superchennai.com/images/events/margazhi-left.jpg",
+    startDate: "",
+    eventStatus: "https://schema.org/EventMovedOnline",
+    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+    location: {
+      "@type": "VirtualLocation",
+      url: "https://www.superchennai.com/contest/margazhi-month-photography-contest",
+    },
+  };
   return (
     <>
       {/* ================= SEO ================= */}
       <Helmet>
-        <title>
-         Margazhi Month Moments | Photography Contest
-        </title>
+        <title>Margazhi Month Moments | Photography Contest</title>
         <meta
           name="description"
           content=" Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
+        />
+
+        <script type="application/ld+json">
+          {JSON.stringify(websiteSchema)}
+        </script>
+
+        <link
+          rel="canonical"
+          href="/contest/margazhi-month-photography-contest"
         />
       </Helmet>
 

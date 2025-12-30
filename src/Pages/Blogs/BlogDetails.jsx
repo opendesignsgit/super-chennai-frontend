@@ -254,16 +254,48 @@ const BlogDetail = () => {
 
   return (
     <>
+
+    
       <Helmet>
+        {/* Basic SEO */}
         <title>{blog.metatitle || blog.title}</title>
-        {blog.metadescription && (
-          <meta name="description" content={blog.metadescription} />
-        )}
+
+        <meta name="description" content={blog.metadescription || blog.title} />
+
+        {/* Open Graph (Facebook / WhatsApp / LinkedIn) */}
         <meta property="og:title" content={blog.title} />
+        <meta
+          property="og:description"
+          content={blog.metadescription || blog.title}
+        />
         <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content={`https://www.superchennai.com/blog/${slug}`}
+        />
+       <link rel="canonical" href={window.location.href} />
+
+        {blog.heroImage && (
+          <>
+            <meta
+              property="og:image"
+              content={`${API_BASE_URL}${blog.heroImage}`}
+            />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+          </>
+        )}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={blog.title} />
+        <meta
+          name="twitter:description"
+          content={blog.metadescription || blog.title}
+        />
         {blog.heroImage && (
           <meta
-            property="og:image"
+            name="twitter:image"
             content={`${API_BASE_URL}${blog.heroImage}`}
           />
         )}
@@ -307,9 +339,9 @@ const BlogDetail = () => {
         {/* Content */}
         <div className="container max-w-7xl mx-auto px-4 py-16">
           {/* Author */}
-           <div className="flex items-center gap-4 mb-10">
+          <div className="flex items-center gap-4 mb-10">
             {blog.authorImage ? (
-             <img
+              <img
                 src={`${blog.authorImage}`}
                 alt={blog.author}
                 className="w-20 h-20 rounded-full object-cover border mb-3"
@@ -323,18 +355,18 @@ const BlogDetail = () => {
             <div>
               <p className="font-semibold text-gray-800">{blog.author}</p>
               <p className="text-xs text-gray-500 mt-1">
-              {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
-                day: "2-digit",
-                month: "short",
-                year: "numeric",
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: true,
-                timeZone: "Asia/Kolkata",
-              })}
-            </p>
+                {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
+                  day: "2-digit",
+                  month: "short",
+                  year: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  hour12: true,
+                  timeZone: "Asia/Kolkata",
+                })}
+              </p>
             </div>
-          </div> 
+          </div>
 
           {/* <div className="flex flex-col items-center mb-10 text-center">
             {blog.authorImage ? (

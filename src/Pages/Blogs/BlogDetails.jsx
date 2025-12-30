@@ -165,6 +165,7 @@ const BlogDetail = () => {
           publishedAt: found.publishedAt,
           metadescription: found.meta?.description,
           metatitle: found.meta?.title,
+          metaImage: found.meta?.metaImage,
 
           author: found.populatedAuthors?.[0]?.name || "Admin",
 
@@ -252,15 +253,21 @@ const BlogDetail = () => {
      Render
   --------------------------------------------- */
 
+  const ogImage = blog?.metaImage
+  ? blog.metaImage.startsWith("https")
+    ? blog.metaImage
+    : `${API_BASE_URL}${blog.metaImage}`
+  : null;
+
   return (
     <>
 
     
       <Helmet>
         {/* Basic SEO */}
-        <title>{blog.metatitle || blog.title}</title>
+        <title>{blog.metatitle}</title>
 
-        <meta name="description" content={blog.metadescription || blog.title} />
+        <meta name="description" content={blog.metadescription } />
 
         {/* Open Graph (Facebook / WhatsApp / LinkedIn) */}
         <meta property="og:title" content={blog.title} />
@@ -275,16 +282,29 @@ const BlogDetail = () => {
         />
        <link rel="canonical" href={window.location.href} />
 
-        {blog.heroImage && (
+        {/* {blog.metaImage && (
           <>
             <meta
               property="og:image"
-              content={`${API_BASE_URL}${blog.heroImage}`}
+              content={`${API_BASE_URL}${blog.metaImage}`}
             />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
           </>
-        )}
+          
+        )} */}
+
+         {ogImage && (
+    <>
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={ogImage} />
+    </>
+  )}
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -293,10 +313,10 @@ const BlogDetail = () => {
           name="twitter:description"
           content={blog.metadescription || blog.title}
         />
-        {blog.heroImage && (
+        {blog.metaImage && (
           <meta
             name="twitter:image"
-            content={`${API_BASE_URL}${blog.heroImage}`}
+            content={`${API_BASE_URL}${blog.metaImage}`}
           />
         )}
       </Helmet>

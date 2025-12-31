@@ -725,7 +725,7 @@ function App() {
           element={<MargazhiMomentsContest />}
         />
         <Route
-          path="margazhi-month-contest-calendar"
+          path="margazhi-season-2025-chennai"
           element={<MargazhiPageCalendar />}
         />
 

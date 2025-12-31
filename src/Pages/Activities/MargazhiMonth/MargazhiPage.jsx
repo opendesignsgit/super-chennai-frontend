@@ -300,10 +300,41 @@ export default function MargazhiPageCalendar() {
     <>
       {/* ================= SEO ================= */}
       <Helmet>
-        <title>Margazhi Calendar 2025 | Super Chennai</title>
+        {/* Basic SEO */}
+        <title>Margazhi season 2025 | Margazhi festival - Super Chennai</title>
         <meta
           name="description"
-          content="Explore Hidden Margazhi Sabhas in Chennai with an interactive calendar."
+          content="Margazhi Season 2025 brings the Margazhi festival alive with traditional music, sabha events, cultural gatherings, and must-visit Sabha canteen experiences."
+        />
+        <link
+          rel="canonical"
+          href="https://www.superchennai.com/margazhi-season-2025-chennai"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Margazhi season 2025 | Margazhi festival - Super Chennai"
+        />
+        <meta
+          property="og:description"
+          content="Margazhi Season 2025 brings the Margazhi festival alive with traditional music, sabha events, cultural gatherings, and must-visit Sabha canteen experiences."
+        />
+        <meta
+          property="og:url"
+          content="https://www.superchennai.com/margazhi-season-2025-chennai"
+        />
+        <meta property="og:type" content="article" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Margazhi season 2025 | Margazhi festival - Super Chennai"
+        />
+        <meta
+          name="twitter:description"
+          content="Margazhi Season 2025 brings the Margazhi festival alive with traditional music, sabha events, cultural gatherings, and must-visit Sabha canteen experiences."
         />
       </Helmet>
 
@@ -674,8 +705,7 @@ export default function MargazhiPageCalendar() {
                               />
                             </svg>
 
-                            <span className="font-semibold text-gray-700">
-                            </span>
+                            <span className="font-semibold text-gray-700"></span>
                             <span className="font-medium break-words">
                               {item.place.name}
                             </span>

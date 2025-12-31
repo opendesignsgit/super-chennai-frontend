@@ -10,6 +10,7 @@ import Visit from "../src/Pages/VisitPage";
 import Volunteer from "../src/Pages/Volunteer";
 import Work from "../src/Pages/Work";
 import "./App.css";
+import axios from "axios";
 
 import EducationNew from "./Components/EducationNew";
 import HeaderWithMegaMenu from "./Components/ExampleMegamenu";
@@ -511,16 +512,11 @@ function App() {
 
   return (
     <>
-      {/* <Router> */}
-      {/* <ScrollToTop /> */}
-
       <ScrollToHashElement />
-      {/* <Component {...pageProps} /> */}
       <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
 
       {showPopup && !hideOnMargazhiPage && !hideOnBlog && (
         <ImagePopup
-          // imageUrl="/images/events/triva-popup.jpg"
           imageUrl="/images/events/margazhi-contest-home-popup.jpg"
           onClose={() => setShowPopup(false)}
         />
@@ -630,25 +626,6 @@ function App() {
           path="/chennai-icon-of-the-month"
           element={<IconOfMonthList />}
         />
-
-        {/* 
-        <Route path="/register" element={<Register />} />
-        <Route
-          path="/login"
-          element={<Login setIsLoggedIn={setIsLoggedIn} />}
-        />
-
-        <Route
-          path="/questions"
-          element={
-            isLoggedIn ? <Questions /> : <Login setIsLoggedIn={setIsLoggedIn} />
-          }
-        />
-        <Route path="your-results" element={<UsersResultsPage />} />
-        <Route path="/reset-password/:token" element={<ResetPassword />} />
-        <Route path="/admin-superchennai" element={<AdminView />} />
-        <Route path="/login-otp" element={<LoginWithOtp />} />
-        <Route path="/verify-otp" element={<VerifyOtp />} /> */}
 
         {/* Public Routes */}
         <Route

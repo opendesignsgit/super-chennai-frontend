@@ -253,21 +253,19 @@ const BlogDetail = () => {
      Render
   --------------------------------------------- */
 
-  const ogImage = blog?.metaImage
-  ? blog.metaImage.startsWith("https")
-    ? blog.metaImage
-    : `${API_BASE_URL}${blog.metaImage}`
-  : null;
+ const ogImage = blog.metaImage
+    ? blog.metaImage.startsWith("http")
+      ? blog.metaImage
+      : `${API_BASE_URL}${blog.metaImage}`
+    : null
 
   return (
     <>
-
-    
       <Helmet>
         {/* Basic SEO */}
         <title>{blog.metatitle}</title>
 
-        <meta name="description" content={blog.metadescription } />
+        <meta name="description" content={blog.metadescription} />
 
         {/* Open Graph (Facebook / WhatsApp / LinkedIn) */}
         <meta property="og:title" content={blog.title} />
@@ -280,7 +278,7 @@ const BlogDetail = () => {
           property="og:url"
           content={`https://www.superchennai.com/blog/${slug}`}
         />
-       <link rel="canonical" href={window.location.href} />
+        <link rel="canonical" href={window.location.href} />
 
         {/* {blog.metaImage && (
           <>
@@ -294,17 +292,16 @@ const BlogDetail = () => {
           
         )} */}
 
-         {ogImage && (
-    <>
-      <meta property="og:image" content={ogImage} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+        {ogImage && (
+          <>
+            <meta property="og:image" content={ogImage} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
 
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content={ogImage} />
-    </>
-  )}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:image" content={ogImage} />
+          </>
+        )}
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />

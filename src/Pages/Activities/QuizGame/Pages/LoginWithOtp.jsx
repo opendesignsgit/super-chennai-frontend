@@ -97,10 +97,10 @@ export default function LoginOtp() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Triva 2025</h1>
+            <h1>Super Chennai Trivia 2025</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="">Super Chennai Trivia 2025</Link>
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@ export default function LoginOtp() {
                   setOtp("");
                   setIdentifier("");
                 }}
-                className="w-full mt-2 border border-gray-400 text-gray-700 py-2 rounded-lg hover:bg-gray-100"
+                className="w-full mt-2 border border-gray-400 text-gray-700 py-2 rounded-lg hover:bg-gray-100 cursor-pointer"
               >
                 Change Email/Phone
               </button>

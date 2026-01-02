@@ -195,10 +195,10 @@ export default function Login({ setIsLoggedIn }) {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Triva 2025</h1>
+            <h1>Super Chennai Trivia 2025</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="">Super Chennai Trivia 2025</Link>
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@ export default function Login({ setIsLoggedIn }) {
           </p>
 
           <h2 className="chennaiInvestmentsHeading leading-tight">
-            TRIVA 2025
+            TRIVIA 2025
           </h2>
           <p className="text-gray-700 mb-6 text-base sm:text-sm leading-relaxed font-bold themelink-color">
             PLAY, LEARN AND WIN!
@@ -265,7 +265,7 @@ export default function Login({ setIsLoggedIn }) {
                   <button
                     type="button"
                     onClick={() => setPage("forgot")}
-                    className="text-indigo-600 text-sm hover:underline themelink-color"
+                    className="text-indigo-600 text-sm hover:underline themelink-color cursor-pointer"
                   >
                     Forgot password?
                   </button>

@@ -3,6 +3,7 @@ import API from "../services/api";
 import { Helmet } from "react-helmet-async";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import {  useRef } from "react";
 
 export default function Questions() {
   const [questions, setQuestions] = useState([]);
@@ -10,11 +11,16 @@ export default function Questions() {
   const [result, setResult] = useState(null);
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
   const isAnswered = (qId) => answeredQuestions.includes(qId);
-
+  const topRef = useRef(null);
   useEffect(() => {
     fetchQuestions();
     fetchAnsweredQuestions();
   }, []);
+
+  useEffect(() => {
+  topRef.current?.scrollIntoView({ behavior: "auto", block: "start" });
+}, []);
+
 
   const fetchQuestions = async () => {
     const res = await API.get("/questions");
@@ -35,6 +41,7 @@ export default function Questions() {
   const handleChange = (qId, value) => {
     setAnswers({ ...answers, [qId]: value });
   };
+
   const navigate = useNavigate();
 
   const submitAnswers = async () => {
@@ -61,7 +68,14 @@ export default function Questions() {
       }
       toast.success("🎉 Answers submitted successfully!");
 
-      navigate("/your-results");
+      // navigate("/your-results");
+
+       navigate("/thank-you", {
+          state: {
+            from: "trivia-game",
+          },
+        });
+
     } catch (err) {
       console.error("Submit error:", err);
     }
@@ -69,6 +83,8 @@ export default function Questions() {
 
   return (
     <>
+      <div ref={topRef}></div>
+
       <Helmet>
         <title>
           Test Your Smarts - Take the Ultimate Fun Super Chennai Quiz
@@ -102,10 +118,10 @@ export default function Questions() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Triva 2025</h1>
+            <h1>Super Chennai Trivia 2025</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="">Super Chennai Trivia 2025</Link>
             </div>
           </div>
         </div>

@@ -58,10 +58,10 @@ export default function VerifyOtp() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Triva 2025</h1>
+            <h1>Super Chennai Trivia 2025</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Triva 2025</Link>
+              <Link to="">Super Chennai Trivia 2025</Link>
             </div>
           </div>
         </div>

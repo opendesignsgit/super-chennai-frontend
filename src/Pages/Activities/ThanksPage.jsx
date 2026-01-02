@@ -13,13 +13,16 @@ export default function Thankyou() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 800) {
-        setImageSrc("/images/thank-you-banner-m.jpg");
+        if (from === "trivia-game")
+          setImageSrc("/images/events/trivia-game.jpg");
+        else setImageSrc("/images/events/mobile-banner-thankyou.jpg");
       } else {
-        setImageSrc("/images/thank-you-banner.jpg");
+        if (from === "trivia-game")
+          setImageSrc("/images/events/trivia-game.jpg");
+        else setImageSrc("/images/events/thankyou-banner-1.jpg");
       }
     };
-
-    handleResize(); 
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -38,17 +41,28 @@ export default function Thankyou() {
     <>
       <section className="accaodomationBannerSection carquizbanner">
         <div>
-          <img
+          {/* <img
             className="eventsCalenderIamge hidden sm:block"
             src="/images/events/thankyou-banner-1.jpg"
             alt="Super Chennai Quiz"
           />
 
-          {/* Mobile Image */}
           <img
             className=" block sm:hidden"
             src="/images/events/mobile-banner-thankyou.jpg"
             alt="Super Chennai Quiz Mobile"
+          /> */}
+
+
+          <img
+            className="eventsCalenderIamge hidden sm:block"
+            src={imageSrc}
+            alt="Thank You Banner"
+          />
+          <img
+            className="block sm:hidden"
+            src={imageSrc}
+            alt="Thank You Banner Mobile"
           />
         </div>
 
@@ -80,20 +94,21 @@ export default function Thankyou() {
           {from === "hotshot-chennai" && (
             <div className="workIntro">
               <h1>Your Moment Is In! </h1>
-              
-              <p>
-               Your HOTSHOTS Moment has been successfully submitted. Now, the exciting part begins!
-              </p>
-              <p>
-                You’ve shared your view of Chennai — its stories, vibes, and hidden gems. Our team can’t wait to explore your capture and discover the story behind your frame.
 
+              <p>
+                Your HOTSHOTS Moment has been successfully submitted. Now, the
+                exciting part begins!
               </p>
               <p>
-                But why stop here?
-
+                You’ve shared your view of Chennai — its stories, vibes, and
+                hidden gems. Our team can’t wait to explore your capture and
+                discover the story behind your frame.
               </p>
+              <p>But why stop here?</p>
               <p>
-                Check out the other SuperChennai events too — we’ve hosted countless exciting moments, and there’s plenty more waiting for you to explore!
+                Check out the other SuperChennai events too — we’ve hosted
+                countless exciting moments, and there’s plenty more waiting for
+                you to explore!
               </p>
             </div>
           )}
@@ -117,8 +132,28 @@ export default function Thankyou() {
             </div>
           )}
 
+          {from === "trivia-game" && (
+            <div className="workIntro">
+              <h1>Trivia Completed!</h1>
+              <p>
+                Congratulations! You have successfully completed the Super
+                Chennai Trivia 2025.
+              </p>
+              <p>
+                We hope you enjoyed testing your knowledge about Chennai. Stay
+                tuned for results and more fun events coming your way!
+              </p>
+              <p>
+                Meanwhile, explore other Super Chennai contests and events to
+                keep the excitement going.
+              </p>
+            </div>
+          )}
+
           {!from && (
-            <p className="text-center">Thank you for participating in Super Chennai contests.</p>
+            <p className="text-center">
+              Thank you for participating in Super Chennai contests.
+            </p>
           )}
         </div>
 

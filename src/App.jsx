@@ -272,7 +272,7 @@ import SuperchennaiContests from "./Pages/SuperchennaiContest/ContestPage";
 import SuperchennaiContestDetails from "./Pages/SuperchennaiContest/ContestDetailsPage";
 import IconOfMonthList from "./Pages/IconOfTheMonth/IconOfTheMonth";
 import IconOfMonthDetails from "./Pages/IconOfTheMonth/IconOfMonthDetailPage";
-
+import NeighbourhoodDetail from "./Pages/Neighbourhoods/neighbourhoodsDetailPage"
 import MargazhiMomentsContest from "./Pages/Activities/MargazhiMonth/MargazhiMomentsContest";
 import MargazhiPageCalendar from "./Pages/Activities/MargazhiMonth/MargazhiPage";
 import HotshotChennaiContest from "./Pages/Activities/HotshotChennai/HotshotChennaiContest";
@@ -707,7 +707,8 @@ function App() {
         />
 
         <Route path="hotshots-in-chennai" element={<HotshotChennaiContest />} />
-
+         <Route  path="/neighbourhood"element={<Neighbourhoods />} />
+        <Route  path="/neighbourhood/:slug" element={<NeighbourhoodDetail />}/>
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
 
@@ -1440,10 +1441,8 @@ function App() {
         {/* Pride-of-Chennai */}
 
         <Route path="/hall-of-fame" element={<PrideofChennai />} />
-        <Route
-          path="/superchennai-neighbourhoods"
-          element={<Neighbourhoods />}
-        />
+  
+
         <Route path="/chennai-app" element={<ChennaiApp />} />
       </Routes>
 

@@ -356,16 +356,7 @@ export default function MargazhiPageCalendar() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1></h1>
-            <AutoShrinkText
-              text=" Chennai’s Cultural Soul"
-              baseSize={60}
-              minSize={40}
-              maxChars={40}
-              className="accodoamationBannerText"
-              width="80%"
-              maxLines={2}
-            />
+            <h3>Chennai’s Cultural Soul</h3>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
               <Link to="">Chennai’s Cultural Soul</Link>

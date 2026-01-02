@@ -149,6 +149,8 @@ const Footer = () => {
     { title: "Green Power", link: "/invest/solar-companies-in-chennai" },
     { title: "Chill Nest", link: "/invest/retirement-in-chennai" },
     { title: "Policy Boost", link: "/invest/government-projects-in-chennai" },
+    { title: "Chennai-app", link: "/chennai-app" },
+
 
     {
       title: "Legal Flow",
@@ -226,6 +228,8 @@ const Footer = () => {
       title: "Refund Policy",
       link: "/refund-policy",
     },
+        { title: "Chennai-app", link: "/chennai-app" },
+
   ];
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);
@@ -811,7 +815,7 @@ const Footer = () => {
           </div>
           <div className="copyrights">
             <h5>
-              @ 2025 <span>Super Chennai</span>
+              @ 2026 <span>Super Chennai</span>
             </h5>
             <h5>All Rights Reserved.</h5>
             <div className="designBy">

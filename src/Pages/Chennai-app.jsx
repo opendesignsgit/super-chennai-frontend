@@ -220,7 +220,7 @@ export default function ChennaiApp() {
                   <img
                     src={card.appImage}
                     alt={card.Company}
-                    className="w-full h-48 object-cover"
+                    // className="w-full h-48 object-cover"
                   />
                   <div className="p-4 flex flex-col flex-1">
                     <h2 className="font-semibold text-lg">{card.Company}</h2>

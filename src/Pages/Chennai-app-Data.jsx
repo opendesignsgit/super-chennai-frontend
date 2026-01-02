@@ -1353,7 +1353,7 @@ export const chennaiAppDataHealth = [
   id: 8,
   Company: "MediBuddy",
   AppDescription: "Digital healthcare and insurance support app",
-  appImage: "/images/chennai-app-images/medibuddy.jpg",
+  appImage: "/images/chennai-app-images/medibuddy.png",
   link: "/events",
   FeaturesContent: [
     <>Online consults</>,

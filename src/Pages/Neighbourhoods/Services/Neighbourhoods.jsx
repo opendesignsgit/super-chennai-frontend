@@ -252,12 +252,12 @@ import { API_BASE_URL } from "../../../../config";
 
 /**
  * Fetch Neighbourhoods data from Payload CMS
- * @returns {Promise<Object>} Neighbourhoods JSON data
+ * @returns {Promise<Object>} 
  */
 export const getNeighbourhoodsData = async () => {
   try {
     const response = await axios.get(
-      `${API_BASE_URL}/api/neighbourhoods?limit=0`
+      `${API_BASE_URL}/api/live?limit=0`
     );
     // assuming you only have one entry (you can adapt for multiple)
     const data = response.data?.docs?.[0] || {};
@@ -266,4 +266,17 @@ export const getNeighbourhoodsData = async () => {
     console.error("Error fetching Neighbourhoods data:", error);
     return null;
   }
+};
+
+
+
+
+
+export const getLiveDetailBySlug = async (slug) => {
+  const res = await axios.get(
+    `${API_BASE_URL}/api/live?where[slug][equals]=${slug}`
+  );
+
+  // ⭐ IMPORTANT
+  return res.data?.docs?.[0] || null;
 };

@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState ,useMemo } from "react";
 import API from "../services/api";
 import { Helmet } from "react-helmet-async";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import {  useRef } from "react";
+import { useRef } from "react";
 
 export default function Questions() {
   const [questions, setQuestions] = useState([]);
@@ -12,40 +12,67 @@ export default function Questions() {
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
   const isAnswered = (qId) => answeredQuestions.includes(qId);
   const topRef = useRef(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   useEffect(() => {
     fetchQuestions();
     fetchAnsweredQuestions();
   }, []);
 
   useEffect(() => {
-  topRef.current?.scrollIntoView({ behavior: "auto", block: "start" });
-}, []);
-
+    topRef.current?.scrollIntoView({ behavior: "auto", block: "start" });
+  }, []);
 
   const fetchQuestions = async () => {
     const res = await API.get("/questions");
     setQuestions(res.data);
     console.log("data", res.data);
   };
-  
+
   const fetchAnsweredQuestions = async () => {
     try {
-      const res = await API.get("/answers/results"); // or your results API
+      const res = await API.get("/answers/results");
       const answeredIds = res.data.results.map((r) => r.question_id);
       setAnsweredQuestions(answeredIds);
+      
     } catch (err) {
       console.error("Failed to fetch answered questions", err);
     }
   };
 
-  const handleChange = (qId, value) => {
-    setAnswers({ ...answers, [qId]: value });
-  };
+  // const handleChange = (qId, value) => {
+  //   setAnswers({ ...answers, [qId]: value });
+  // };
+
+  // Map: question_id -> question_text
+const handleChange = (qId, value) => {
+  setAnswers((prev) => {
+    // same option click pannina → uncheck
+    if (prev[qId] === value) {
+      const updated = { ...prev };
+      delete updated[qId];
+      return updated;
+    }
+
+    // new option select
+    return { ...prev, [qId]: value };
+  });
+};
+
+
+
+  const questionMap = useMemo(() => {
+    return questions.reduce((acc, q) => {
+      acc[q.id] = q.question_text;
+      return acc;
+    }, {});
+  }, [questions]);
 
   const navigate = useNavigate();
 
   const submitAnswers = async () => {
     try {
+      setIsSubmitting(true);
       const formattedAnswers = Object.entries(answers).map(([qid, ans]) => ({
         question_id: Number(qid),
         user_answer: ans,
@@ -58,7 +85,13 @@ export default function Questions() {
           const msg = err.response?.data?.message;
 
           if (msg === "You have already answered this question") {
-            toast.error(` You already answered Question ${ans.question_id}`);
+            // toast.error(` You already answered Question ${ans.question_id}`);
+            const qText = questionMap[ans.question_id];
+            toast.error(
+              qText
+                ? `❌ You already answered: "${qText}"`
+                : "❌ You already answered this question"
+            );
             return;
           } else {
             toast.error("Something went wrong!");
@@ -70,14 +103,15 @@ export default function Questions() {
 
       // navigate("/your-results");
 
-       navigate("/thank-you", {
-          state: {
-            from: "trivia-game",
-          },
-        });
-
+      navigate("/thank-you", {
+        state: {
+          from: "trivia-game",
+        },
+      });
     } catch (err) {
       console.error("Submit error:", err);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -151,13 +185,22 @@ export default function Questions() {
                         key={index}
                         className="flex items-center p-3 rounded-xl cursor-pointer hover:bg-indigo-50 transition-colors duration-200"
                       >
-                        <input
+                        {/* <input
                           type="radio"
                           name={`question_${q.id}`}
                           value={opt}
                           onChange={() => handleChange(q.id, opt)}
                           className=" rounded-full focus:ring-pink-400 rounded-full"
+                        /> */}
+                        <input
+                          type="radio"
+                          name={`question_${q.id}`}
+                          value={opt}
+                          checked={answers[q.id] === opt} 
+                          onClick={() => handleChange(q.id, opt)} 
+                          className="focus:ring-pink-400"
                         />
+
                         <span className="ml-3 text-gray-700 text-base">
                           {opt}
                         </span>
@@ -174,6 +217,20 @@ export default function Questions() {
                   Submit Answers
                 </button>
               </div>
+
+              {isSubmitting && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+                  <div className="bg-white rounded-2xl p-8 w-[300px] text-center shadow-2xl animate-fadeIn">
+                    {/* Spinner */}
+                    <div className="w-14 h-14 mx-auto border-4 border-indigo-600 border-t-transparent rounded-full animate-spin"></div>
+
+                    <h3 className="mt-5 text-lg font-semibold text-gray-800">
+                      Submitting your answers
+                    </h3>
+                    <p className="text-sm text-gray-500 mt-1">Please wait...</p>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* ----------------------- RIGHT COLUMN (Status Panel) ----------------------- */}

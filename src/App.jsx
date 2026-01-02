@@ -1443,7 +1443,7 @@ function App() {
         <Route path="/hall-of-fame" element={<PrideofChennai />} />
   
 
-        <Route path="/chennai-app" element={<ChennaiApp />} />
+        <Route path="/chennai-apps-guide" element={<ChennaiApp />} />
       </Routes>
 
       {/*################################# NEWS LETTER ######################################## */}

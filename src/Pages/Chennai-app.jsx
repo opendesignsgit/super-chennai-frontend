@@ -2,6 +2,8 @@
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
+
 import {
   chennaiAppDataTravel,
   chennaiAppDataFood,
@@ -154,9 +156,23 @@ export default function ChennaiApp() {
   return (
     <div>
       {/* Banner Section */}
+
+      <Helmet>
+        <title>Chennai Apps Guide for Everyday Needs | Super Chennai</title>
+        <meta
+          name="description"
+          content=" A simple guide to Chennai apps covering food delivery, grocery shopping, ride-hailing, bill payments, and essential services used across the city."
+        />
+        <link rel="canonical" href="/chennai-apps-guide" />
+      </Helmet>
+
       <section className="accaodomationBannerSection">
         <div>
-          <img src="/images/app-banner-image.jpg" alt="Banner" className="w-full" />
+          <img
+            src="/images/app-banner-image.jpg"
+            alt="Banner"
+            className="w-full"
+          />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
@@ -175,7 +191,10 @@ export default function ChennaiApp() {
           <div className="workIntro">
             <h1>Essential Apps in Chennai</h1>
             <p>
-              Discover the must-have apps used in Chennai — from food delivery and grocery shopping to ride-hailing, bill payments, and daily essentials — designed to save time, simplify tasks, and keep your day running smoothly.
+              Discover the must-have apps used in Chennai — from food delivery
+              and grocery shopping to ride-hailing, bill payments, and daily
+              essentials — designed to save time, simplify tasks, and keep your
+              day running smoothly.
             </p>
           </div>
         </div>
@@ -224,7 +243,9 @@ export default function ChennaiApp() {
                   />
                   <div className="p-4 flex flex-col flex-1">
                     <h2 className="font-semibold text-lg">{card.Company}</h2>
-                    <p className="text-gray-700 mt-2 flex-1">{card.AppDescription}</p>
+                    <p className="text-gray-700 mt-2 flex-1">
+                      {card.AppDescription}
+                    </p>
                     <button
                       className="mt-4 bg-[#a44294] text-white px-4 py-2 rounded font-medium"
                       onClick={() => setSelectedCard(card)}
@@ -264,7 +285,9 @@ export default function ChennaiApp() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h3 className="text-[#a44294] font-semibold text-lg mb-2">Features</h3>
+                  <h3 className="text-[#a44294] font-semibold text-lg mb-2">
+                    Features
+                  </h3>
                   <ul className="list-disc pl-5 space-y-2 text-gray-800">
                     {selectedCard.FeaturesContent?.map((item, i) => (
                       <li key={i}>{item}</li>
@@ -273,7 +296,9 @@ export default function ChennaiApp() {
                 </div>
 
                 <div>
-                  <h3 className="text-[#a44294] font-semibold text-lg mb-2">Services</h3>
+                  <h3 className="text-[#a44294] font-semibold text-lg mb-2">
+                    Services
+                  </h3>
                   <ul className="list-disc pl-5 space-y-2 text-gray-800">
                     {selectedCard.serviceContent?.map((item, i) => (
                       <li key={i}>{item}</li>

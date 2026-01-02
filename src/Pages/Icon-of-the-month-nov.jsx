@@ -101,7 +101,7 @@ const expendingData = [
     description: "",
   },
 ];
-export default function IconofthemonthDec() {
+export default function IconofthemonthNov() {
   const [scrollDir, setScrollDir] = useState("left");
 
   const lastScrollY = useRef(0);
@@ -167,12 +167,14 @@ export default function IconofthemonthDec() {
     <>
       <div className="septemberMonthStyle">
         <Helmet>
-          <title>Super Chennai Icon of August 2025 – Dr. S. Chandrakumar</title>
+          <title>
+            Icon of the Month | Super Chennai - Tamil Nadu Weatherman
+          </title>
           <meta
             name="description"
-            content="Super Chennai honours Dr. Chandrakumar, who co-founded Kauvery Hospitals, for redefining healthcare with compassion, innovation, and visionary leadership."
+            content="Icon of the Month: Pradeep John, Tamil Nadu Weatherman, transforms complex weather data into reliable forecasts, protecting lives & property with trusted insights."
           />
-          <link rel="canonical" href="/super-chennai-icon-of-aug-2025" />
+          <link rel="canonical" href="/super-chennai-icon-of-nov-2025" />
         </Helmet>
         <div className="InvestPageId augustmonthIconofthemonth">
           <div
@@ -197,6 +199,9 @@ export default function IconofthemonthDec() {
             <div className="InvestChennaiContainerFlex aboutIntro container max-w-7xl mx-auto px-4 !py-0">
               <div className="InvestChennaiContent text-center">
                 <h2>Tamil Nadu’s Forecasting Voice</h2>
+                 <h1 class="hidden">Tamil Nadu’s Forecasting Voice</h1>
+
+
                 <p>
                   Pradeep John, famously known as the Tamil Nadu Weatherman,
                   transforms complex weather data into actionable forecasts that
@@ -226,8 +231,6 @@ export default function IconofthemonthDec() {
             <div className="workIntro">
               <h3 className="newupdatewhychennai">About Him</h3>
               <div className="section-container container max-w-7xl mx-auto px-4">
-               
-
                 <div className="section-right-content">
                   {infoData.map((item, index) => (
                     <div className="info-item-block" key={index}>
@@ -238,7 +241,7 @@ export default function IconofthemonthDec() {
                     </div>
                   ))}
                 </div>
-                 <div className="section-left-image">
+                <div className="section-left-image">
                   <img
                     src="/images/pradeep-icon-of-month-nov.jpg"
                     alt="Main Side Visual"

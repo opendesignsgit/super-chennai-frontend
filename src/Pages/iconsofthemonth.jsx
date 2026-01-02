@@ -86,7 +86,7 @@ export default function Iconsofthemonth() {
 
               <a
                 className="superchennaiEventsSection"id="icon-of-the-month-nov"
-                href="/icon-of-the-oct-month-2025"
+                href="/super-chennai-icon-of-nov-2025"
               >
 
                 <div

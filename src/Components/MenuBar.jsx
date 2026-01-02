@@ -30,7 +30,7 @@ export default function MenuBar({ setMenuBar }) {
     { label: "MEDIA  COVERAGE ", href: "/media-coverage" },
     { label: "Blog", href: "/blog" },
     { label: "Contact Us", href: "/contact" },
-    { label: "Chennai-Apps", href: "/chennai-app" },
+    { label: "Chennai-Apps", href: "/chennai-apps-guide" },
 
 
     // { label: "Sustainability", href: "/sustainability" },

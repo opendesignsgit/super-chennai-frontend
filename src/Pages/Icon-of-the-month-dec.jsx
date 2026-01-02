@@ -11,7 +11,7 @@ import Search from "../Components/Search";
 import InstagramReelsMarquee from "../Components/SocialChennai";
 import IconofthemonthgallerySlider from "./IconoftheMonthGallerySlider";
 
-export default function IconofthemonthNov() {
+export default function IconofthemonthDec() {
   const [scrollDir, setScrollDir] = useState("left");
 
  const data = [

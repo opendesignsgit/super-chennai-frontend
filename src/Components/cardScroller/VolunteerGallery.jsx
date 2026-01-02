@@ -102,6 +102,36 @@ export const volunteerGallery = [
     image: "/images/Volunteer-Images/volunteer-gallery19.jpg",
     link: "/events",
   },
+   {
+    id: 19,
+    image: "/images/Volunteer-Images/gal1.jpg",
+    link: "/events",
+  },
+   {
+    id: 19,
+    image: "/images/Volunteer-Images/gal2.jpg",
+    link: "/events",
+  },  
+    {
+    id: 19,
+    image: "/images/Volunteer-Images/gal3.jpg",
+    link: "/events",
+  },
+     {
+    id: 19,
+    image: "/images/Volunteer-Images/gal4.jpg",
+    link: "/events",
+  },
+     {
+    id: 19,
+    image: "/images/Volunteer-Images/gal5.jpg",
+    link: "/events",
+  },
+      {
+    id: 19,
+    image: "/images/Volunteer-Images/gal6.jpg",
+    link: "/events",
+  },
 ];
 
 

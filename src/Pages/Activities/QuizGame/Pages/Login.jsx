@@ -220,7 +220,7 @@ export default function Login({ setIsLoggedIn }) {
 
           <button
             onClick={scrollToForm}
-            className="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-semibold mb-6 theme-button-small"
+            className="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-semibold mb-6 theme-button-small cursor-pointer"
           >
             Start Quiz
           </button>
@@ -293,7 +293,7 @@ export default function Login({ setIsLoggedIn }) {
                   className="w-full px-3 py-2 border rounded-lg"
                 />
                 <div className="flex justify-center mt-4">
-                  <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button-full">
+                  <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button-full cursor-pointer">
                     Send Reset Link
                   </button>
                 </div>
@@ -318,7 +318,7 @@ export default function Login({ setIsLoggedIn }) {
           <button
             type="button"
             onClick={() => navigate("/login-otp")}
-            className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 theme-button-secondary-full"
+            className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 theme-button-secondary-full cursor-pointer"
           >
             Login with OTP
           </button>

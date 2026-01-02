@@ -126,7 +126,7 @@ export default function LoginOtp() {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 theme-button"
+                  className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 theme-button cursor-pointer"
                   disabled={loading}
                 >
                   {loading ? "Sending..." : "Send OTP"}
@@ -149,7 +149,7 @@ export default function LoginOtp() {
               />
               <button
                 type="submit"
-                className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+                className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 cursor-pointer"
                 disabled={loading}
               >
                 {loading ? "Verifying..." : "Verify OTP"}

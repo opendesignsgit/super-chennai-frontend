@@ -205,15 +205,15 @@ export default function ChennaiApp() {
         <div className="flex flex-col md:flex-row bg-white shadow rounded">
           {/* LEFT: Tabs */}
           <div className="w-full md:w-1/5 border-r border-gray-200 p-4">
-            <ul className="flex flex-col space-y-2">
+          <ul className="flex flex-col space-y-2 ">
               {tabs.map((tab) => (
-                <li key={tab.id}>
+                <li key={tab.id} >
                   <button
                     onClick={() => {
                       setActiveTab(tab.id);
                       topRef.current?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className={`w-full text-left px-4 py-2 flex items-center font-medium rounded transition-all ${
+                    className={`w-full text-left px-4 py-2 flex items-center font-medium rounded transition-all cursor-pointer ${
                       activeTab === tab.id
                         ? "bg-[#995098] text-white"
                         : "hover:bg-[#995098] hover:text-white text-gray-700"
@@ -233,7 +233,7 @@ export default function ChennaiApp() {
               {getActiveData().map((card, index) => (
                 <div
                   key={index}
-                  className="bg-white cursor-pointer shadow rounded overflow-hidden flex flex-col"
+                  className="bg-white shadow rounded overflow-hidden flex flex-col"
                   onClick={() => setSelectedCard(card)}
                 >
                   <img
@@ -247,7 +247,7 @@ export default function ChennaiApp() {
                       {card.AppDescription}
                     </p>
                     <button
-                      className="mt-4 bg-[#a44294] text-white px-4 py-2 rounded font-medium"
+                      className="mt-4 bg-[#a44294] text-white px-4 py-2 rounded font-medium cursor-pointer "
                       onClick={() => setSelectedCard(card)}
                     >
                       View Details

@@ -180,7 +180,9 @@ const BlogDetail = () => {
             const author = found.populatedAuthors?.[0];
             if (author?.profileImage?.url) return author.profileImage.url;
             if (author?.name === "Dr. Shabnam")
-              return "https://www.superchennai.com/images/dr-shabnam.jpg"; 
+              return "https://www.superchennai.com/images/dr-shabnam.jpg";
+            if (author?.name === "Karthiknagappan")
+              return "https://www.superchennai.com/images/karthiknagappan.jpeg"; 
             return null;
           })(),
 

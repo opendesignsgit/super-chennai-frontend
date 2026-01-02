@@ -11,7 +11,6 @@ export default function Questions() {
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
   const isAnswered = (qId) => answeredQuestions.includes(qId);
 
-
   useEffect(() => {
     fetchQuestions();
     fetchAnsweredQuestions();
@@ -20,18 +19,18 @@ export default function Questions() {
   const fetchQuestions = async () => {
     const res = await API.get("/questions");
     setQuestions(res.data);
-    console.log("data",res.data)
+    console.log("data", res.data);
   };
+  
   const fetchAnsweredQuestions = async () => {
-  try {
-    const res = await API.get("/answers/results"); // or your results API
-    const answeredIds = res.data.results.map(r => r.question_id);
-    setAnsweredQuestions(answeredIds);
-  } catch (err) {
-    console.error("Failed to fetch answered questions", err);
-  }
-};
-
+    try {
+      const res = await API.get("/answers/results"); // or your results API
+      const answeredIds = res.data.results.map((r) => r.question_id);
+      setAnsweredQuestions(answeredIds);
+    } catch (err) {
+      console.error("Failed to fetch answered questions", err);
+    }
+  };
 
   const handleChange = (qId, value) => {
     setAnswers({ ...answers, [qId]: value });
@@ -62,7 +61,6 @@ export default function Questions() {
       }
       toast.success("🎉 Answers submitted successfully!");
 
-
       navigate("/your-results");
     } catch (err) {
       console.error("Submit error:", err);
@@ -88,7 +86,6 @@ export default function Questions() {
       {/* ---------- Banner ---------- */}
       <section className="accaodomationBannerSection carquizbanner">
         <div>
-  
           <img
             className="eventsCalenderIamge hidden sm:block"
             src="/images/events/triva-contest.jpg"
@@ -175,7 +172,9 @@ export default function Questions() {
                       key={q.id}
                       className="flex items-center justify-between p-2 bg-white rounded-lg border shadow-sm"
                     >
-                      <span className="text-gray-700 font-medium line-clamp-1">Q{q.question_text}</span>
+                      <span className="text-gray-700 font-medium line-clamp-1">
+                        Q{q.question_text}
+                      </span>
 
                       {answered ? (
                         <span className="text-green-600 text-xl">✔️</span>

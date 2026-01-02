@@ -163,7 +163,7 @@ export default function ChennaiApp() {
           name="description"
           content=" A simple guide to Chennai apps covering food delivery, grocery shopping, ride-hailing, bill payments, and essential services used across the city."
         />
-        <link rel="canonical" href="/chennai-apps-guide" />
+        <link rel="canonical" href="/chennai-apps" />
       </Helmet>
 
       <section className="accaodomationBannerSection">

@@ -2157,3 +2157,385 @@ export default App;
   //   }
   //   return null;
   // });
+
+
+
+
+
+
+
+
+
+  // export default function LoginOtp() {
+//   const navigate = useNavigate();
+
+//   const [email, setEmail] = useState("");
+//   const [otp, setOtp] = useState("");
+
+//   const [step, setStep] = useState("email"); // email → otp → done
+
+//   const [message, setMessage] = useState("");
+//   const [error, setError] = useState("");
+
+//   // ---------------- SEND OTP ----------------
+//   const handleSendOtp = async (e) => {
+//     e.preventDefault();
+//     setMessage("");
+//     setError("");
+
+//     try {
+//       const res = await axios.post(`${API_BASE_URL_API}/auth/send-otp`, {
+//         email,
+//       });
+
+//       setMessage(res.data.message);
+
+//       // Move to OTP step
+//       setStep("otp");
+//     } catch (err) {
+//       setError(err.response?.data?.message || "Something went wrong!");
+//     }
+//   };
+
+//   // ---------------- VERIFY OTP ----------------
+//   const handleVerifyOtp = async (e) => {
+//     e.preventDefault();
+//     setMessage("");
+//     setError("");
+
+//     try {
+//       const res = await axios.post(`${API_BASE_URL_API}/auth/verify-otp`, {
+//         email,
+//         otp,
+//       });
+
+//       setMessage("OTP Verified Successfully!");
+
+//       // Save token
+//       localStorage.setItem("token", res.data.token);
+
+//       setTimeout(() => navigate("/questions"), 1200);
+//     } catch (err) {
+//       setError(err.response?.data?.message || "Invalid OTP!");
+//     }
+//   };
+
+//   return (
+//     <>
+//       {/* ---------- Banner ---------- */}
+//       <section className="accaodomationBannerSection carquizbanner">
+//         <div>
+
+//           <img
+//             className="eventsCalenderIamge hidden sm:block"
+//             src="/images/events/triva-contest.jpg"
+//             alt="Super Chennai Quiz"
+//           />
+
+//           {/* Mobile Image */}
+//           <img
+//             className=" block sm:hidden"
+//             src="/images/events/triva-contest-small.jpg"
+//             alt="Super Chennai Quiz Mobile"
+//           />
+//         </div>
+
+//         <div className="accodoamationBannerContainer">
+//           <div className="accodoamationBannerText">
+//             <h1>Super Chennai Triva 2025</h1>
+//             <div className="breadCrum">
+//               <Link to="/">Home</Link> -{" "}
+//               <Link to="">Super Chennai Triva 2025</Link>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Main Form */}
+//       <div className="flex items-center carryformPageSection">
+//         <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
+//           <h2 className="text-center mb-4">
+//             {step === "email" ? "Login with OTP" : "Verify OTP"}
+//           </h2>
+
+//           {/* EMAIL FORM */}
+//           {step === "email" && (
+//             <form onSubmit={handleSendOtp} className="space-y-4">
+//               <input
+//                 type="email"
+//                 placeholder="Enter email"
+//                 value={email}
+//                 onChange={(e) => setEmail(e.target.value)}
+//                 required
+//                 className="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-indigo-500"
+//               />
+//               <div className="flex justify-center">
+//                 <button
+//                   type="submit"
+//                   className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 theme-button"
+//                 >
+//                   Send OTP
+//                 </button>
+//               </div>
+//             </form>
+//           )}
+
+//           {/* OTP FORM */}
+//           {step === "otp" && (
+//             <form onSubmit={handleVerifyOtp} className="space-y-4">
+//               <input
+//                 type="text"
+//                 placeholder="Enter OTP"
+//                 value={otp}
+//                 maxLength={6}
+//                 onChange={(e) => setOtp(e.target.value)}
+//                 required
+//                 className="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-green-500"
+//               />
+
+//               <button
+//                 type="submit"
+//                 className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+//               >
+//                 Verify OTP
+//               </button>
+
+//               {/* Back to email */}
+//               <button
+//                 type="button"
+//                 onClick={() => setStep("email")}
+//                 className="w-full mt-2 border border-gray-400 text-gray-700 py-2 rounded-lg hover:bg-gray-100"
+//               >
+//                 Change Email
+//               </button>
+//             </form>
+//           )}
+
+//           {/* Messages */}
+//           {message && <p className="text-green-600 mt-4">{message}</p>}
+//           {error && <p className="text-red-600 mt-4">{error}</p>}
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+// export default function LoginOtp() {
+//   const navigate = useNavigate();
+
+//   const [email, setEmail] = useState("");
+//   const [phone, setPhone] = useState("");
+//   const [otp, setOtp] = useState("");
+
+//   const [step, setStep] = useState("email"); // email → mobile → otp → done
+
+//   const [message, setMessage] = useState("");
+//   const [error, setError] = useState("");
+
+//   // ---------------- SEND OTP ----------------
+//   const handleSendOtpEmail = async (e) => {
+//     e.preventDefault();
+//     setMessage("");
+//     setError("");
+
+//     try {
+//       const res = await axios.post(`${API_BASE_URL_API}/auth/send-otp`, {
+//         email,
+//       });
+//       setMessage(res.data.message);
+//       setStep("otp"); // move to OTP step
+//     } catch (err) {
+//       setError(err.response?.data?.message || "Something went wrong!");
+//     }
+//   };
+
+//   const handleSendOtpMobile = async (e) => {
+//     e.preventDefault();
+//     setMessage("");
+//     setError("");
+
+//     try {
+//       const res = await axios.post(`${API_BASE_URL_API}/auth/send-otp-mobile`, {
+//         phone,
+//       });
+//       setMessage(res.data.message);
+//       setStep("otp"); // move to OTP step
+//     } catch (err) {
+//       setError(err.response?.data?.message || "Something went wrong!");
+//     }
+//   };
+
+//   // ---------------- VERIFY OTP ----------------
+//   const handleVerifyOtpEmail = async (e) => {
+//     e.preventDefault();
+//     setMessage("");
+//     setError("");
+
+//     try {
+//       const res = await axios.post(`${API_BASE_URL_API}/auth/verify-otp`, {
+//         email,
+//         otp,
+//       });
+//       localStorage.setItem("token", res.data.token);
+//       setMessage("OTP Verified Successfully!");
+//       setTimeout(() => navigate("/questions"), 1200);
+//     } catch (err) {
+//       setError(err.response?.data?.message || "Invalid OTP!");
+//     }
+//   };
+
+//   const handleVerifyOtpMobile = async (e) => {
+//     e.preventDefault();
+//     setMessage("");
+//     setError("");
+
+//     try {
+//       const res = await axios.post(
+//         `${API_BASE_URL_API}/auth/verify-otp-mobile`,
+//         { phone, otp }
+//       );
+//       localStorage.setItem("token", res.data.token);
+//       setMessage("OTP Verified Successfully!");
+//       setTimeout(() => navigate("/questions"), 1200);
+//     } catch (err) {
+//       setError(err.response?.data?.message || "Invalid OTP!");
+//     }
+//   };
+
+//   return (
+//     <>
+//       <section className="accaodomationBannerSection carquizbanner">
+//         <div>
+//           <img
+//             className="eventsCalenderIamge hidden sm:block"
+//             src="/images/events/triva-contest.jpg"
+//             alt="Super Chennai Quiz"
+//           />
+
+//           {/* Mobile Image */}
+//           <img
+//             className=" block sm:hidden"
+//             src="/images/events/triva-contest-small.jpg"
+//             alt="Super Chennai Quiz Mobile"
+//           />
+//         </div>
+
+//         <div className="accodoamationBannerContainer">
+//           <div className="accodoamationBannerText">
+//             <h1>Super Chennai Triva 2025</h1>
+//             <div className="breadCrum">
+//               <Link to="/">Home</Link> -{" "}
+//               <Link to="">Super Chennai Triva 2025</Link>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       <div className="flex items-center carryformPageSection">
+//         <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
+//           <h2 className="text-center mb-4">
+//             {step === "email" || step === "mobile"
+//               ? "Login with OTP"
+//               : "Verify OTP"}
+//           </h2>
+
+//           {/* CHOOSE EMAIL OR MOBILE */}
+//           {step === "email" && (
+//             <form onSubmit={handleSendOtpEmail} className="space-y-4">
+//               <input
+//                 type="email"
+//                 placeholder="Enter email"
+//                 value={email}
+//                 onChange={(e) => setEmail(e.target.value)}
+//                 required
+//                 className="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-indigo-500"
+//               />
+//               <div className="flex justify-center gap-2">
+//                 <button
+//                   type="submit"
+//                   className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 theme-button"
+//                 >
+//                   Send OTP via Email
+//                 </button>
+//                 <button
+//                   type="button"
+//                   onClick={() => setStep("mobile")}
+//                   className="w-full border border-gray-400 text-gray-700 py-2 rounded-lg hover:bg-gray-100"
+//                 >
+//                   Use Mobile
+//                 </button>
+//               </div>
+//             </form>
+//           )}
+
+//           {/* MOBILE FORM */}
+//           {step === "mobile" && (
+//             <form onSubmit={handleSendOtpMobile} className="space-y-4">
+//               <input
+//                 type="text"
+//                 placeholder="Enter mobile number"
+//                 value={phone}
+//                 onChange={(e) => setPhone(e.target.value)}
+//                 required
+//                 className="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-indigo-500"
+//               />
+//               <div className="flex justify-center gap-2">
+//                 <button
+//                   type="submit"
+//                   className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 theme-button"
+//                 >
+//                   Send OTP via Mobile
+//                 </button>
+//                 <button
+//                   type="button"
+//                   onClick={() => setStep("email")}
+//                   className="w-full border border-gray-400 text-gray-700 py-2 rounded-lg hover:bg-gray-100"
+//                 >
+//                   Use Email
+//                 </button>
+//               </div>
+//             </form>
+//           )}
+
+//           {/* OTP FORM */}
+//           {step === "otp" && (
+//             <form
+//               onSubmit={
+//                 step === "email" ? handleVerifyOtpEmail : handleVerifyOtpMobile
+//               }
+//               className="space-y-4"
+//             >
+//               <input
+//                 type="text"
+//                 placeholder="Enter OTP"
+//                 value={otp}
+//                 maxLength={6}
+//                 onChange={(e) => setOtp(e.target.value)}
+//                 required
+//                 className="w-full border px-3 py-2 rounded-lg focus:ring-2 focus:ring-green-500"
+//               />
+//               <button
+//                 type="submit"
+//                 className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+//               >
+//                 Verify OTP
+//               </button>
+//               <button
+//                 type="button"
+//                 onClick={() =>
+//                   step === "email" ? setStep("email") : setStep("mobile")
+//                 }
+//                 className="w-full mt-2 border border-gray-400 text-gray-700 py-2 rounded-lg hover:bg-gray-100"
+//               >
+//                 Change Method
+//               </button>
+//             </form>
+//           )}
+
+//           {message && <p className="text-green-600 mt-4">{message}</p>}
+//           {error && <p className="text-red-600 mt-4">{error}</p>}
+//         </div>
+//       </div>
+//     </>
+//   );
+// }

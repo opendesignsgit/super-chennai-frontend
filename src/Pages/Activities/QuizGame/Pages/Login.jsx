@@ -71,6 +71,24 @@ export default function Login({ setIsLoggedIn }) {
   // =========================================
   //       LOGIN SUBMIT
   // =========================================
+  // const handleLogin = async (e) => {
+  //   e.preventDefault();
+  //   const error = validateLogin();
+  //   if (error) return toast.error(error);
+
+  //   try {
+  //     const res = await axios.post(`${API_BASE_URL_API}/auth/login`, form);
+
+  //     localStorage.setItem("token", res.data.token);
+  //     setIsLoggedIn(true);
+
+  //     toast.success("Login successful!");
+  //     setTimeout(() => navigate("/questions"), 1000);
+  //   } catch (err) {
+  //     toast.error(err.response?.data?.message || "Invalid login");
+  //   }
+  // };
+
   const handleLogin = async (e) => {
     e.preventDefault();
     const error = validateLogin();
@@ -79,10 +97,13 @@ export default function Login({ setIsLoggedIn }) {
     try {
       const res = await axios.post(`${API_BASE_URL_API}/auth/login`, form);
 
+      // Save token + timestamp for 2-day expiry
       localStorage.setItem("token", res.data.token);
-      setIsLoggedIn(true);
+      localStorage.setItem("tokenTime", Date.now());
 
+      setIsLoggedIn(true);
       toast.success("Login successful!");
+
       setTimeout(() => navigate("/questions"), 1000);
     } catch (err) {
       toast.error(err.response?.data?.message || "Invalid login");

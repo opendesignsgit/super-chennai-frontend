@@ -322,7 +322,7 @@ const BlogDetail = () => {
 
       {/* Banner */}
       <div className="BlogDetailPageId">
-        <div className="accaodomationBannerSection relative w-full h-[500px] overflow-hidden">
+        <div className="accaodomationBannerSection relative w-full overflow-hidden">
           {blog.heroImage && (
             <>
               <div className="bLogDetailBanner">
@@ -358,7 +358,7 @@ const BlogDetail = () => {
         {/* Content */}
         <div className="container max-w-7xl mx-auto px-4 py-16">
           {/* Author */}
-          <div className="flex items-center gap-4 mb-10">
+          <div className="flex items-center gap-4 mb-2">
             {blog.authorImage ? (
               <img
                 src={`${blog.authorImage}`}

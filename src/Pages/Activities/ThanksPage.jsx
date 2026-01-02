@@ -14,7 +14,7 @@ export default function Thankyou() {
     const handleResize = () => {
       if (window.innerWidth <= 800) {
         if (from === "trivia-game")
-          setImageSrc("/images/events/trivia-game.jpg");
+          setImageSrc("/images/events/trivia-game-m.jpg");
         else setImageSrc("/images/events/mobile-banner-thankyou.jpg");
       } else {
         if (from === "trivia-game")

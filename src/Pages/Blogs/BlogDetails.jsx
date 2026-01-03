@@ -12,12 +12,11 @@ import BlogDetailSkeleton from "./components/BlogDetailSkeleton";
 --------------------------------------------- */
 const FORMAT = {
   BOLD: 1,
-  ITALIC: 1 << 3,      
+  ITALIC: 1 << 3,
   UNDERLINE: 1 << 1,
 };
- 
 
- const renderTextChildren = (children, allowFormatting = true) => {
+const renderTextChildren = (children, allowFormatting = true) => {
   if (!Array.isArray(children)) return null;
 
   return children.map((child, i) => {
@@ -35,11 +34,7 @@ const FORMAT = {
 
     if (child.type === "link") {
       if (!allowFormatting) {
-        return (
-          <span key={i}>
-            {renderTextChildren(child.children, false)}
-          </span>
-        );
+        return <span key={i}>{renderTextChildren(child.children, false)}</span>;
       }
 
       return (
@@ -68,9 +63,6 @@ const FORMAT = {
     return null;
   });
 };
-
-
-
 
 const parseLexical = (content) => {
   if (!content?.root?.children) return null;
@@ -103,26 +95,249 @@ const parseLexical = (content) => {
       }
 
       case "block": {
-        const media = node.fields?.media;
-        if (!media?.url) return null;
+        // --- MediaBlock ---
+        // if (node.fields?.blockType === "mediaBlock") {
+        //   const media = node.fields?.media;
+        //   const link = node.fields?.link;
 
-        return (
-          <figure key={idx} className="my-10">
-      <div className="blog-media-wrapper">
-              <img
-                src={`${API_BASE_URL}${media.url}`}
-                alt={media.alt || "Image"}
-                className="w-full h-full object-cover"
-              />
+        //   if (!media?.url) return null;
+
+        //   const imageEl = (
+        //     <img
+        //       src={`${API_BASE_URL}${media.url}`}
+        //       alt={media.alt || "Image"}
+        //       className="w-full h-full object-cover"
+        //     />
+        //   );
+
+        //   return (
+        //     <figure key={idx} className="my-10">
+        //       <div className="blog-media-wrapper">
+        //         {link?.url ? (
+        //           <a
+        //             href={link.url}
+        //             target={link.newTab ? "_blank" : "_self"}
+        //             rel="noopener noreferrer"
+        //           >
+        //             {imageEl}
+        //           </a>
+        //         ) : (
+        //           imageEl
+        //         )}
+        //       </div>
+        //       {media.caption && (
+        //         <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
+        //           {media.caption}
+        //         </figcaption>
+        //       )}
+        //     </figure>
+        //   );
+        // }
+
+        if (node.fields?.blockType === "mediaBlock") {
+          const media = node.fields?.media;
+          const link = node.fields?.link;
+          const thumbnail = node.fields?.thumbnail;
+
+          if (!media?.url) return null;
+
+          const mainImage = (
+            <img
+              src={`${API_BASE_URL}${media.url}`}
+              alt={media.alt || "Image"}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          );
+
+          return (
+            <figure key={idx} className="my-10 relative">
+              <div className="blog-media-wrapper relative">
+                {link?.url ? (
+                  <a
+                    href={link.url}
+                    target={link.newTab ? "_blank" : "_self"}
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {mainImage}
+                  </a>
+                ) : (
+                  mainImage
+                )}
+
+                {thumbnail?.url && (
+                  <img
+                    src={`${API_BASE_URL}${thumbnail.url}`}
+                    alt="Thumbnail"
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                      width: "80px", // adjust size as needed
+                      height: "80px",
+                      borderRadius: "50%",
+                      border: "2px solid white",
+                      boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
+                      objectFit: "cover",
+                      zIndex: 10,
+                    }}
+                  />
+                )}
+              </div>
+
+              {media.caption && (
+                <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
+                  {media.caption}
+                </figcaption>
+              )}
+            </figure>
+          );
+        }
+
+        // --- VideoBlock ---
+        const blockType = node.fields?.blockType;
+
+        if (blockType === "videoBlock") {
+          const source = node.fields?.source;
+          const url = node.fields?.url;
+          // const thumbnail = node.fields?.thumbnail;
+          const { media, thumbnail } = node.fields;
+
+          if (!url) return null;
+
+          // YouTube embed
+          if (source === "youtube") {
+            let videoId = "";
+            if (url.includes("youtube.com/watch")) {
+              videoId = url.split("v=")[1].split("&")[0];
+            } else if (url.includes("youtu.be/")) {
+              videoId = url.split("youtu.be/")[1].split("?")[0];
+            }
+            const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+            return (
+              <div key={idx} className="my-10 w-full">
+                <iframe
+                  className="w-full aspect-video rounded-lg border"
+                  src={embedUrl}
+                  title="YouTube Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            );
+          }
+
+          // Instagram — show top-right thumbnail
+          // if (source === "instagram") {
+          //   const thumbUrl = thumbnail?.url || media?.url;
+
+          //   return (
+          //     <div
+          //       key={idx}
+          //       className="my-10 w-full relative border rounded-lg overflow-hidden"
+          //     >
+          //       {/* Main clickable block */}
+          //       <a
+          //         href={url}
+          //         target="_blank"
+          //         rel="noopener noreferrer"
+          //         className="block w-full h-[400px] bg-gray-100 relative"
+          //       >
+          //         {media?.url ? (
+          //           <img
+          //             src={`${API_BASE_URL}${media.url}`}
+          //             alt="Instagram Post"
+          //             className="w-full h-full object-cover"
+          //           />
+          //         ) : (
+          //           <div className="w-full h-full flex items-center justify-center text-center bg-gray-200">
+          //             View on Instagram
+          //           </div>
+          //         )}
+
+          //         {/* Play SVG overlay */}
+          //         <svg
+          //           xmlns="http://www.w3.org/2000/svg"
+          //           className="absolute inset-0 m-auto w-16 h-16 text-white opacity-90"
+          //           fill="currentColor"
+          //           viewBox="0 0 24 24"
+          //         >
+          //           <path d="M8 5v14l11-7z" />
+          //         </svg>
+          //       </a>
+
+          //       {/* Top-right thumbnail overlay */}
+          //       {thumbUrl && (
+          //         <img
+          //           src={`${API_BASE_URL}${thumbUrl}`}
+          //           alt="Thumbnail"
+          //           style={{
+          //             position: "absolute",
+          //             top: "8px",
+          //             right: "8px",
+          //             width: "48px",
+          //             height: "48px",
+          //             borderRadius: "50%",
+          //             border: "2px solid white",
+          //             boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
+          //             objectFit: "cover",
+          //           }}
+          //         />
+          //       )}
+          //     </div>
+          //   );
+          // }
+
+          if (source === "instagram") {
+            const thumbUrl = thumbnail?.url || media?.url;
+
+            return (
+              <div
+                key={idx}
+                className="relative w-full my-10 rounded-lg overflow-hidden border"
+              >
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full h-[400px] relative"
+                >
+                  <img
+                    src={`${API_BASE_URL}${thumbUrl}`}
+                    alt="Instagram Post"
+                    className="w-full h-full object-cover"
+                  />
+
+                  {/* Play button overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="bg-black/40 rounded-full p-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-12 h-12 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            );
+          }
+
+
+          // Other videos fallback
+          return (
+            <div key={idx} className="my-10 w-full">
+              <video className="w-full rounded-lg border" controls src={url} />
             </div>
+          );
+        }
 
-            {media.caption && (
-              <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
-                {media.caption}
-              </figcaption>
-            )}
-          </figure>
-        );
+        return null;
       }
 
       default:
@@ -140,23 +355,23 @@ const BlogDetail = () => {
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const contentRef = useRef(null);
-   const customImagePath = "/images/dr-shabnam.jpg";
-   
+  const customImagePath = "/images/dr-shabnam.jpg";
+
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         const res = await axios.get(`${API_BASE_URL}/api/posts?limit=0`);
-     
+
         const docs = res.data?.docs || [];
 
         const found = docs.find((b) => String(b.slug) === slug);
-        console.log("res11111111",res)
+        console.log("res11111111", res);
 
         if (!found) {
           setBlog(null);
           return;
         }
-      const author = found.authors?.[0];
+        const author = found.authors?.[0];
 
         setBlog({
           id: found.id,
@@ -175,16 +390,14 @@ const BlogDetail = () => {
             if (author?.name === "Dr. Shabnam")
               return "https://www.superchennai.com/images/dr-shabnam.jpg";
             if (author?.name === "Karthik Nagappan")
-              return "https://www.superchennai.com/images/karthiknagappan.jpeg"; 
+              return "https://www.superchennai.com/images/karthiknagappan.jpeg";
             return null;
           })(),
 
           authorInstagram:
-         found.populatedAuthors?.[0]?.name === "Karthik Nagappan"
-      ? "https://www.instagram.com/reel/DSnEkTvj6bL/?igsh=ODc2c3d3NGMwcWl2"
-      : null,
-
-          
+            found.populatedAuthors?.[0]?.name === "Karthik Nagappan"
+              ? ""
+              : null,
 
           heroImage:
             found.heroImage?.sizes?.xlarge?.url || found.heroImage?.url || null,
@@ -255,12 +468,11 @@ const BlogDetail = () => {
      Render
   --------------------------------------------- */
 
- const ogImage = blog.metaImage
+  const ogImage = blog.metaImage
     ? blog.metaImage.startsWith("http")
       ? blog.metaImage
       : `${API_BASE_URL}${blog.metaImage}`
-    : null
-    
+    : null;
 
   return (
     <>
@@ -387,6 +599,7 @@ const BlogDetail = () => {
               </p>
             </div>
           </div> */}
+
           <div className="flex items-center gap-4 mb-2">
             {blog.authorInstagram ? (
               <a

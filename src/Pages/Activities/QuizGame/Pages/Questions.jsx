@@ -13,11 +13,29 @@ export default function Questions() {
   const isAnswered = (qId) => answeredQuestions.includes(qId);
   const topRef = useRef(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorModal, setErrorModal] = useState({
+  visible: false,
+  message: "",
+});
+
+
+  // useEffect(() => {
+  //   fetchQuestions();
+  //   fetchAnsweredQuestions();
+  // }, []);
 
   useEffect(() => {
-    fetchQuestions();
-    fetchAnsweredQuestions();
-  }, []);
+  const token = localStorage.getItem("token");
+  if (!token) {
+    toast.info("You need to login to access the quiz.");
+    navigate("/login");
+    return;
+  }
+
+  fetchQuestions();
+  fetchAnsweredQuestions();
+}, []);
+
 
   useEffect(() => {
     topRef.current?.scrollIntoView({ behavior: "auto", block: "start" });
@@ -40,12 +58,8 @@ export default function Questions() {
     }
   };
 
-  // const handleChange = (qId, value) => {
-  //   setAnswers({ ...answers, [qId]: value });
-  // };
 
-  // Map: question_id -> question_text
-const handleChange = (qId, value) => {
+  const handleChange = (qId, value) => {
   setAnswers((prev) => {
     // same option click pannina → uncheck
     if (prev[qId] === value) {
@@ -84,22 +98,31 @@ const handleChange = (qId, value) => {
         } catch (err) {
           const msg = err.response?.data?.message;
 
+          // if (msg === "You have already answered this question") {
+          //   // toast.error(` You already answered Question ${ans.question_id}`);
+          //   const qText = questionMap[ans.question_id];
+          //   toast.error(
+          //     qText
+          //       ? `❌ You already answered: "${qText}"`
+          //       : "❌ You already answered this question"
+          //   );
+          //   return;
           if (msg === "You have already answered this question") {
-            // toast.error(` You already answered Question ${ans.question_id}`);
-            const qText = questionMap[ans.question_id];
-            toast.error(
-              qText
-                ? `❌ You already answered: "${qText}"`
-                : "❌ You already answered this question"
-            );
-            return;
+      const qText = questionMap[ans.question_id];
+      setErrorModal({
+        visible: true,
+        message: qText
+          ? `❌ You already answered: "${qText}"`
+          : "❌ You already answered this question",
+      });
+      return; 
           } else {
             toast.error("Something went wrong!");
             return;
           }
         }
       }
-      toast.success("🎉 Answers submitted successfully!");
+      toast.success(" Answers submitted successfully!");
 
       // navigate("/your-results");
 
@@ -132,6 +155,21 @@ const handleChange = (qId, value) => {
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/contests/chennai-quiz`}
         />
       </Helmet>
+
+      {errorModal.visible && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+          <div className="bg-white rounded-2xl p-6 w-[350px] text-center shadow-2xl">
+            <h3 className="text-lg font-semibold text-red-600">Sorry</h3>
+            <p className="mt-3 text-gray-700">{errorModal.message}</p>
+            <button
+              className="mt-5 px-4 py-2 bg-red-600 text-white rounded-xl hover:bg-red-700"
+              onClick={() => setErrorModal({ visible: false, message: "" })}
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* ---------- Banner ---------- */}
       <section className="accaodomationBannerSection carquizbanner">
@@ -185,19 +223,13 @@ const handleChange = (qId, value) => {
                         key={index}
                         className="flex items-center p-3 rounded-xl cursor-pointer hover:bg-indigo-50 transition-colors duration-200"
                       >
-                        {/* <input
-                          type="radio"
-                          name={`question_${q.id}`}
-                          value={opt}
-                          onChange={() => handleChange(q.id, opt)}
-                          className=" rounded-full focus:ring-pink-400 rounded-full"
-                        /> */}
+                       
                         <input
                           type="radio"
                           name={`question_${q.id}`}
                           value={opt}
-                          checked={answers[q.id] === opt} 
-                          onClick={() => handleChange(q.id, opt)} 
+                          checked={answers[q.id] === opt}
+                          onClick={() => handleChange(q.id, opt)}
                           className="focus:ring-pink-400"
                         />
 
@@ -246,7 +278,7 @@ const handleChange = (qId, value) => {
                       className="flex items-center justify-between p-2 bg-white rounded-lg border shadow-sm"
                     >
                       <span className="text-gray-700 font-medium line-clamp-1">
-                        Q{q.question_text}
+                        {q.question_text}
                       </span>
 
                       {answered ? (

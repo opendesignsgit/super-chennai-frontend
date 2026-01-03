@@ -169,22 +169,22 @@ const BlogDetail = () => {
 
           author: found.populatedAuthors?.[0]?.name || "Admin",
 
-          // authorImage: (() => {
-          //   const author = found.populatedAuthors?.[0];
-          //   if (author?.profileImage?.url) return author.profileImage.url;
-          //   if (author?.name === "Dr. Shabnam") return "/images/dr-shabnam.jpg";
-          //   return null;
-          // })(),
-
           authorImage: (() => {
             const author = found.populatedAuthors?.[0];
             if (author?.profileImage?.url) return author.profileImage.url;
             if (author?.name === "Dr. Shabnam")
               return "https://www.superchennai.com/images/dr-shabnam.jpg";
-            if (author?.name === "Karthiknagappan")
+            if (author?.name === "Karthik Nagappan")
               return "https://www.superchennai.com/images/karthiknagappan.jpeg"; 
             return null;
           })(),
+
+          authorInstagram:
+         found.populatedAuthors?.[0]?.name === "Karthik Nagappan"
+      ? "https://www.instagram.com/reel/DSnEkTvj6bL/?igsh=ODc2c3d3NGMwcWl2"
+      : null,
+
+          
 
           heroImage:
             found.heroImage?.sizes?.xlarge?.url || found.heroImage?.url || null,
@@ -260,6 +260,7 @@ const BlogDetail = () => {
       ? blog.metaImage
       : `${API_BASE_URL}${blog.metaImage}`
     : null
+    
 
   return (
     <>
@@ -358,7 +359,7 @@ const BlogDetail = () => {
         {/* Content */}
         <div className="container max-w-7xl mx-auto px-4 py-16">
           {/* Author */}
-          <div className="flex items-center gap-4 mb-2">
+          {/* <div className="flex items-center gap-4 mb-2">
             {blog.authorImage ? (
               <img
                 src={`${blog.authorImage}`}
@@ -385,35 +386,63 @@ const BlogDetail = () => {
                 })}
               </p>
             </div>
-          </div>
-
-          {/* <div className="flex flex-col items-center mb-10 text-center">
-            {blog.authorImage ? (
-              <img
-                src={`${blog.authorImage}`}
-                alt={blog.author}
-                className="w-20 h-20 rounded-full object-cover border mb-3"
-              />
-            ) : (
-              <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-xl font-semibold mb-3">
-                {blog.author.charAt(0)}
-              </div>
-            )}
-
-            <p className="font-semibold text-gray-900">{blog.author}</p>
-
-            <p className="text-xs text-gray-500 mt-1">
-              {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
-                day: "2-digit",
-                month: "short",
-                year: "numeric",
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: true,
-                timeZone: "Asia/Kolkata",
-              })}
-            </p>
           </div> */}
+          <div className="flex items-center gap-4 mb-2">
+            {blog.authorInstagram ? (
+              <a
+                href={blog.authorInstagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 cursor-pointer"
+              >
+                <img
+                  src={blog.authorImage}
+                  alt={blog.author}
+                  className="w-20 h-20 rounded-full object-cover border mb-3"
+                />
+
+                <div>
+                  <p className="font-semibold text-gray-800 hover:underline">
+                    {blog.author}
+                  </p>
+                  <p className="text-xs text-gray-500 mt-1">
+                    {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
+                      day: "2-digit",
+                      month: "short",
+                      year: "numeric",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      hour12: true,
+                      timeZone: "Asia/Kolkata",
+                    })}
+                  </p>
+                </div>
+              </a>
+            ) : (
+              <>
+                <img
+                  src={blog.authorImage}
+                  alt={blog.author}
+                  className="w-20 h-20 rounded-full object-cover border mb-3"
+                />
+
+                <div>
+                  <p className="font-semibold text-gray-800">{blog.author}</p>
+                  <p className="text-xs text-gray-500 mt-1">
+                    {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
+                      day: "2-digit",
+                      month: "short",
+                      year: "numeric",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      hour12: true,
+                      timeZone: "Asia/Kolkata",
+                    })}
+                  </p>
+                </div>
+              </>
+            )}
+          </div>
 
           {/* Blog Content */}
           <div ref={contentRef} className="blog">

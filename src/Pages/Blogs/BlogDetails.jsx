@@ -64,6 +64,8 @@ const renderTextChildren = (children, allowFormatting = true) => {
   });
 };
 
+
+
 const parseLexical = (content) => {
   if (!content?.root?.children) return null;
 
@@ -95,44 +97,7 @@ const parseLexical = (content) => {
       }
 
       case "block": {
-        // --- MediaBlock ---
-        // if (node.fields?.blockType === "mediaBlock") {
-        //   const media = node.fields?.media;
-        //   const link = node.fields?.link;
-
-        //   if (!media?.url) return null;
-
-        //   const imageEl = (
-        //     <img
-        //       src={`${API_BASE_URL}${media.url}`}
-        //       alt={media.alt || "Image"}
-        //       className="w-full h-full object-cover"
-        //     />
-        //   );
-
-        //   return (
-        //     <figure key={idx} className="my-10">
-        //       <div className="blog-media-wrapper">
-        //         {link?.url ? (
-        //           <a
-        //             href={link.url}
-        //             target={link.newTab ? "_blank" : "_self"}
-        //             rel="noopener noreferrer"
-        //           >
-        //             {imageEl}
-        //           </a>
-        //         ) : (
-        //           imageEl
-        //         )}
-        //       </div>
-        //       {media.caption && (
-        //         <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
-        //           {media.caption}
-        //         </figcaption>
-        //       )}
-        //     </figure>
-        //   );
-        // }
+  
 
         if (node.fields?.blockType === "mediaBlock") {
           const media = node.fields?.media;
@@ -150,8 +115,10 @@ const parseLexical = (content) => {
           );
 
           return (
+         
             <figure key={idx} className="my-10 relative">
               <div className="blog-media-wrapper relative">
+                {/* Main image with optional link */}
                 {link?.url ? (
                   <a
                     href={link.url}
@@ -165,25 +132,48 @@ const parseLexical = (content) => {
                   mainImage
                 )}
 
-                {thumbnail?.url && (
-                  <img
-                    src={`${API_BASE_URL}${thumbnail.url}`}
-                    alt="Thumbnail"
-                    style={{
-                      position: "absolute",
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                      width: "80px", // adjust size as needed
-                      height: "80px",
-                      borderRadius: "50%",
-                      border: "2px solid white",
-                      boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
-                      objectFit: "cover",
-                      zIndex: 10,
-                    }}
-                  />
-                )}
+                {/* Thumbnail with optional link */}
+                {thumbnail?.url &&
+                  (link?.url ? (
+                    <a
+                      href={link.url}
+                      target={link.newTab ? "_blank" : "_self"}
+                      rel="noopener noreferrer"
+                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                      style={{ zIndex: 10 }}
+                    >
+                      <img
+                        src={`${API_BASE_URL}${thumbnail.url}`}
+                        alt="Thumbnail"
+                        style={{
+                          width: "80px",
+                          height: "80px",
+                          borderRadius: "50%",
+                          border: "2px solid white",
+                          boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={`${API_BASE_URL}${thumbnail.url}`}
+                      alt="Thumbnail"
+                      style={{
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)",
+                        width: "80px",
+                        height: "80px",
+                        borderRadius: "50%",
+                        border: "2px solid white",
+                        boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
+                        objectFit: "cover",
+                        zIndex: 10,
+                      }}
+                    />
+                  ))}
               </div>
 
               {media.caption && (
@@ -230,65 +220,6 @@ const parseLexical = (content) => {
           }
 
           // Instagram — show top-right thumbnail
-          // if (source === "instagram") {
-          //   const thumbUrl = thumbnail?.url || media?.url;
-
-          //   return (
-          //     <div
-          //       key={idx}
-          //       className="my-10 w-full relative border rounded-lg overflow-hidden"
-          //     >
-          //       {/* Main clickable block */}
-          //       <a
-          //         href={url}
-          //         target="_blank"
-          //         rel="noopener noreferrer"
-          //         className="block w-full h-[400px] bg-gray-100 relative"
-          //       >
-          //         {media?.url ? (
-          //           <img
-          //             src={`${API_BASE_URL}${media.url}`}
-          //             alt="Instagram Post"
-          //             className="w-full h-full object-cover"
-          //           />
-          //         ) : (
-          //           <div className="w-full h-full flex items-center justify-center text-center bg-gray-200">
-          //             View on Instagram
-          //           </div>
-          //         )}
-
-          //         {/* Play SVG overlay */}
-          //         <svg
-          //           xmlns="http://www.w3.org/2000/svg"
-          //           className="absolute inset-0 m-auto w-16 h-16 text-white opacity-90"
-          //           fill="currentColor"
-          //           viewBox="0 0 24 24"
-          //         >
-          //           <path d="M8 5v14l11-7z" />
-          //         </svg>
-          //       </a>
-
-          //       {/* Top-right thumbnail overlay */}
-          //       {thumbUrl && (
-          //         <img
-          //           src={`${API_BASE_URL}${thumbUrl}`}
-          //           alt="Thumbnail"
-          //           style={{
-          //             position: "absolute",
-          //             top: "8px",
-          //             right: "8px",
-          //             width: "48px",
-          //             height: "48px",
-          //             borderRadius: "50%",
-          //             border: "2px solid white",
-          //             boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
-          //             objectFit: "cover",
-          //           }}
-          //         />
-          //       )}
-          //     </div>
-          //   );
-          // }
 
           if (source === "instagram") {
             const thumbUrl = thumbnail?.url || media?.url;
@@ -571,7 +502,7 @@ const BlogDetail = () => {
         {/* Content */}
         <div className="container max-w-7xl mx-auto px-4 py-16">
           {/* Author */}
-          {/* <div className="flex items-center gap-4 mb-2">
+          <div className="flex items-center gap-4 mb-2">
             {blog.authorImage ? (
               <img
                 src={`${blog.authorImage}`}
@@ -598,9 +529,9 @@ const BlogDetail = () => {
                 })}
               </p>
             </div>
-          </div> */}
+          </div>
 
-          <div className="flex items-center gap-4 mb-2">
+          {/* <div className="flex items-center gap-4 mb-2">
             {blog.authorInstagram ? (
               <a
                 href={blog.authorInstagram}
@@ -655,7 +586,7 @@ const BlogDetail = () => {
                 </div>
               </>
             )}
-          </div>
+          </div> */}
 
           {/* Blog Content */}
           <div ref={contentRef} className="blog">

@@ -506,16 +506,22 @@ function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("token"));
 
+  const hideOnBlog =
+  location.pathname === "/blog" || location.pathname.startsWith("/blog/");
+
+
   const hideOnMargazhiPage =
     location.pathname === "/contest/margazhi-month-photography-contest";
-  const hideOnBlog = location.pathname === "/contest/blog/:slug";
+  // const hideOnBlog = location.pathname === "/contest/blog/:slug";
 
   return (
     <>
       <ScrollToHashElement />
       <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
 
+      {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && ( */}
       {showPopup && !hideOnMargazhiPage && !hideOnBlog && (
+
         <ImagePopup
           imageUrl="/images/events/margazhi-contest-home-popup.jpg"
           onClose={() => setShowPopup(false)}

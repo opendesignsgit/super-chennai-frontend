@@ -1,4 +1,4 @@
-import { useEffect, useState ,useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import API from "../services/api";
 import { Helmet } from "react-helmet-async";
 import { useNavigate, Link } from "react-router-dom";
@@ -14,28 +14,27 @@ export default function Questions() {
   const topRef = useRef(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorModal, setErrorModal] = useState({
-  visible: false,
-  message: "",
-});
+    visible: false,
+    message: "",
+  });
 
-
-  // useEffect(() => {
-  //   fetchQuestions();
-  //   fetchAnsweredQuestions();
-  // }, []);
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    toast.info("You have been logged out.");
+    navigate("/login");
+  };
 
   useEffect(() => {
-  const token = localStorage.getItem("token");
-  if (!token) {
-    toast.info("You need to login to access the quiz.");
-    navigate("/login");
-    return;
-  }
+    const token = localStorage.getItem("token");
+    if (!token) {
+      toast.info("You need to login to access the quiz.");
+      navigate("/login");
+      return;
+    }
 
-  fetchQuestions();
-  fetchAnsweredQuestions();
-}, []);
-
+    fetchQuestions();
+    fetchAnsweredQuestions();
+  }, []);
 
   useEffect(() => {
     topRef.current?.scrollIntoView({ behavior: "auto", block: "start" });
@@ -52,28 +51,24 @@ export default function Questions() {
       const res = await API.get("/answers/results");
       const answeredIds = res.data.results.map((r) => r.question_id);
       setAnsweredQuestions(answeredIds);
-      
     } catch (err) {
       console.error("Failed to fetch answered questions", err);
     }
   };
 
-
   const handleChange = (qId, value) => {
-  setAnswers((prev) => {
-    // same option click pannina → uncheck
-    if (prev[qId] === value) {
-      const updated = { ...prev };
-      delete updated[qId];
-      return updated;
-    }
+    setAnswers((prev) => {
+      // same option click pannina → uncheck
+      if (prev[qId] === value) {
+        const updated = { ...prev };
+        delete updated[qId];
+        return updated;
+      }
 
-    // new option select
-    return { ...prev, [qId]: value };
-  });
-};
-
-
+      // new option select
+      return { ...prev, [qId]: value };
+    });
+  };
 
   const questionMap = useMemo(() => {
     return questions.reduce((acc, q) => {
@@ -85,6 +80,11 @@ export default function Questions() {
   const navigate = useNavigate();
 
   const submitAnswers = async () => {
+    const unanswered = questions.filter((q) => !answers[q.id]);
+    if (unanswered.length > 0) {
+     toast.error("Hey! Make sure you answer every question before hitting Submit.");
+      return; 
+    }
     try {
       setIsSubmitting(true);
       const formattedAnswers = Object.entries(answers).map(([qid, ans]) => ({
@@ -107,15 +107,16 @@ export default function Questions() {
           //       : "❌ You already answered this question"
           //   );
           //   return;
+
           if (msg === "You have already answered this question") {
-      const qText = questionMap[ans.question_id];
-      setErrorModal({
-        visible: true,
-        message: qText
-          ? `❌ You already answered: "${qText}"`
-          : "❌ You already answered this question",
-      });
-      return; 
+            const qText = questionMap[ans.question_id];
+            setErrorModal({
+              visible: true,
+              message: qText
+                ? ` You already answered: "${qText}"`
+                : " You already answered this question",
+            });
+            return;
           } else {
             toast.error("Something went wrong!");
             return;
@@ -158,11 +159,28 @@ export default function Questions() {
 
       {errorModal.visible && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-          <div className="bg-white rounded-2xl p-6 w-[350px] text-center shadow-2xl">
-            <h3 className="text-lg font-semibold text-red-600">Sorry</h3>
+          <div className="bg-white rounded-2xl p-6 w-[350px] text-center shadow-2xl relative">
+            {/* Circle SVG icon */}
+            <div className="mx-auto mb-4 w-12 h-12 flex items-center justify-center rounded-full bg-[#995098]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm-2.293-9.707a1 1 0 011.414-1.414L10 8.586l1.879-1.879a1 1 0 111.414 1.414L11.414 10l1.879 1.879a1 1 0 01-1.414 1.414L10 11.414l-1.879 1.879a1 1 0 01-1.414-1.414L8.586 10 6.707 8.121z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+
+            <h3 className="text-lg font-semibold text-gray-800">Oops!</h3>
             <p className="mt-3 text-gray-700">{errorModal.message}</p>
+
             <button
-              className="mt-5 px-4 py-2 bg-red-600 text-white rounded-xl hover:bg-red-700"
+              className="mt-5 px-4 py-2 bg-[#995098] text-white rounded-xl hover:bg-[#8a467f] transition"
               onClick={() => setErrorModal({ visible: false, message: "" })}
             >
               OK
@@ -202,7 +220,29 @@ export default function Questions() {
       <div className="carryformPageSection ">
         <div className="max-w-[1100px] mx-auto mt-10  bg-white rounded-lg  ">
           <div className="um-form-section">
-            <h2 className="text-center ">Answer the Questions</h2>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-center ">Answer the Questions</h2>
+              <button
+                onClick={handleLogout}
+                className="flex items-center gap-2 bg-[#995098] hover:bg-[#8a467f] text-white px-3 py-1 rounded-full shadow-md transition-colors"
+                title="Logout"
+              >
+                {/* SVG icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 4a1 1 0 011-1h6a1 1 0 110 2H5v10h5a1 1 0 110 2H4a1 1 0 01-1-1V4zm11.293 4.293a1 1 0 010 1.414L13.414 10l.879.879a1 1 0 01-1.414 1.414l-2.586-2.586a1 1 0 010-1.414l2.586-2.586a1 1 0 011.414 1.414L13.414 9l.879.879z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <span className="font-medium text-white">Logout</span>
+              </button>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-6">
             {/* ----------------------- LEFT COLUMN (Questions) ----------------------- */}
@@ -223,7 +263,6 @@ export default function Questions() {
                         key={index}
                         className="flex items-center p-3 rounded-xl cursor-pointer hover:bg-indigo-50 transition-colors duration-200"
                       >
-                       
                         <input
                           type="radio"
                           name={`question_${q.id}`}

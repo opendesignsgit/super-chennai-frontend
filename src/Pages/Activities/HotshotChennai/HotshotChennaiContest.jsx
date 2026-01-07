@@ -5,8 +5,9 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { API_BASE_URL_API } from "../../../../config";
-import AutoShrinkText from "../../../Components/Text/AutoShrinkText"
+import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
 export default function HotshotChennaiContest() {
+  
   const navigate = useNavigate();
 
   const countryCodes = [
@@ -30,7 +31,6 @@ export default function HotshotChennaiContest() {
   const MAX_IMAGES = 5;
 
   const [images, setImages] = useState(Array(MAX_IMAGES).fill(null));
-
 
   const sanitizeInput = (str) => str.replace(/[<>]/g, "");
   const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -128,7 +128,6 @@ export default function HotshotChennaiContest() {
             from: "hotshot-chennai",
           },
         });
-
       }
     } catch (err) {
       toast.error(
@@ -159,25 +158,25 @@ export default function HotshotChennaiContest() {
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/events/banner-hotshots.jpg"
+            src="/images/events/hotshots-all.jpg"
             alt="Super Chennai Quiz"
           />
 
           {/* Mobile Image */}
           <img
             className="block sm:hidden w-full"
-            src="/images/events/banner-hotshots.jpg"
+            src="/images/events/hotshots-square-banner.jpg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#000000]/60 to-[#8b3c82]/90 z-10"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#000000]/40 to-[#8b3c82]/90 z-10"></div> */}
 
         {/* Text Content */}
         <div className="accodoamationBannerContainer relative z-20">
           <div className="accodoamationBannerText">
-            <AutoShrinkText
+            {/* <AutoShrinkText
               text="Hotshots Chennai Moments"
               baseSize={60}
               minSize={40}
@@ -190,7 +189,7 @@ export default function HotshotChennaiContest() {
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
               <Link to="">Hotshots Chennai Moments</Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -202,35 +201,34 @@ export default function HotshotChennaiContest() {
       >
         <div className="container max-w-7xl mx-auto px-4">
           <div className="workIntro">
-            <h1>City Tales in Pictures</h1>
+            <h1>SuperChennai Hotshots</h1>
 
             <p>
-              Super Chennai Hotshots, in collaboration with Madras Photo
-              Bloggers, brings you glimpses of Chennai as it unfolds each week.
-              From art and culture to food, events, people, heritage, and
-              innovation, this series captures the city’s real stories and
-              everyday moments that often go unnoticed.
+              Super Chennai Hotshots, in collaboration with Madras Photo Super
+              Chennai Hotshots is an open photography call inviting passionate
+              photographers, photo bloggers, and hobbyists across the city to
+              capture Chennai as it lives and evolves every day.
             </p>
             <p>
-              Seen through the lenses of Madras Photo Bloggers, these frames
-              remind us that amidst the city’s constant movement, quiet and
-              beautiful moments exist—like a recent bird walk at the
-              Pallikaranai Marshland. Each image tells a story that stays with
-              you long after you scroll past.
+              From everyday moments and people to changing streets, modern
+              skylines, creative spaces, and new-age city life, Hotshots
+              celebrates a Chennai that balances tradition with progress.
             </p>
 
             <p>
-              Want to be featured in Super Chennai Hotshots?<br></br> Why wait? Just fill
-              the form and upload your images. <br></br>We’ll connect with you easily!
-              {/* <a
-                href="mailto:hotshots@superchennai.com"
-                className="text-purple-700 font-semibold hover:underline"
-              >
-                hotshots@superchennai.com
-              </a> */}
+              Selected photographs will be featured on Super Chennai’s digital
+              platforms in collaboration with the contributor. The best works of
+              the year will be curated into a physical exhibition, showcasing
+              the city through the eyes of its people.
             </p>
+            <p>If you have a lens and a love for Chennai—this is your frame.</p>
 
             <hr />
+
+            <h2 className=" themelink-color formheadingtheme hotshotstext">Hotshots</h2>
+            <div>
+              <p className="everydaytext">Everyday stories. Evolving city.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -330,7 +328,7 @@ export default function HotshotChennaiContest() {
                     Upload Images (Up to 5)
                   </label>
                   <div className="grid grid-cols-3 gap-4">
-                    {[0, 1, 2, 3, 4 ].map((i) => (
+                    {[0, 1, 2, 3, 4].map((i) => (
                       <label
                         key={i}
                         className="border-2 border-dashed rounded-lg h-24 flex items-center justify-center cursor-pointer"

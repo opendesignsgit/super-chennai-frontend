@@ -158,7 +158,7 @@ export default function HotshotChennaiContest() {
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/events/hotshots-all.jpg"
+            src="/images/events/hotshots-banner-1.jpg"
             alt="Super Chennai Quiz"
           />
 

@@ -204,10 +204,9 @@ export default function HotshotChennaiContest() {
             <h1>SuperChennai Hotshots</h1>
 
             <p>
-              Super Chennai Hotshots, in collaboration with Madras Photo Super
-              Chennai Hotshots is an open photography call inviting passionate
-              photographers, photo bloggers, and hobbyists across the city to
-              capture Chennai as it lives and evolves every day.
+              SuperChennai Hotshots is an open photography call inviting
+              passionate photographers, photo bloggers, and hobbyists across the
+              city to capture Chennai as it lives and evolves every day.
             </p>
             <p>
               From everyday moments and people to changing streets, modern
@@ -216,16 +215,20 @@ export default function HotshotChennaiContest() {
             </p>
 
             <p>
-              Selected photographs will be featured on Super Chennai’s digital
+              Selected photographs will be featured on SuperChennai’s digital
               platforms in collaboration with the contributor. The best works of
               the year will be curated into a physical exhibition, showcasing
               the city through the eyes of its people.
             </p>
-            <p>If you have a lens and a love for Chennai—this is your frame.</p>
+            <p>
+              If you have a lens and a love for Chennai—this is your frame .
+            </p>
 
             <hr />
 
-            <h2 className=" themelink-color formheadingtheme hotshotstext">Hotshots</h2>
+            <h2 className=" themelink-color formheadingtheme hotshotstext">
+              Hotshots
+            </h2>
             <div>
               <p className="everydaytext">Everyday stories. Evolving city.</p>
             </div>

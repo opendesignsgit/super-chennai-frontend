@@ -199,23 +199,23 @@ export default function HotshotChennaiContest() {
         className="visitIntroParaSection detailIntro"
         style={{ paddingBottom: "0" }}
       >
-        <div className="container max-w-7xl mx-auto px-4">
+        <div className="container max-w-7xl mx-auto ">
           <div className="workIntro">
-            <h1>SuperChennai Hotshots</h1>
+            <h1>Super Chennai Hotshots</h1>
 
             <p>
-              SuperChennai Hotshots is an open photography call inviting
+              Super Chennai Hotshots is an open photography call inviting
               passionate photographers, photo bloggers, and hobbyists across the
               city to capture Chennai as it lives and evolves every day.
             </p>
             <p>
               From everyday moments and people to changing streets, modern
-              skylines, creative spaces, and new-age city life, Hotshots
+              skylines, creative spaces, and new-age city life,Hotshots
               celebrates a Chennai that balances tradition with progress.
             </p>
 
             <p>
-              Selected photographs will be featured on SuperChennai’s digital
+              Selected photographs will be featured on Super Chennai’s digital
               platforms in collaboration with the contributor. The best works of
               the year will be curated into a physical exhibition, showcasing
               the city through the eyes of its people.

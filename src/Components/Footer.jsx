@@ -149,7 +149,7 @@ const Footer = () => {
     { title: "Green Power", link: "/invest/solar-companies-in-chennai" },
     { title: "Chill Nest", link: "/invest/retirement-in-chennai" },
     { title: "Policy Boost", link: "/invest/government-projects-in-chennai" },
-    { title: "Chennai-app", link: "/chennai-apps" },
+    { title: "Apps Used In Chennai", link: "/chennai-apps" },
 
 
     {

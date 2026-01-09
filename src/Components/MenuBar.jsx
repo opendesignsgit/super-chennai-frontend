@@ -30,7 +30,7 @@ export default function MenuBar({ setMenuBar }) {
     { label: "MEDIA  COVERAGE ", href: "/media-coverage" },
     { label: "Blog", href: "/blog" },
     { label: "Contact Us", href: "/contact" },
-    { label: "Chennai-Apps", href: "/chennai-apps" },
+    { label: "Apps Used In Chennai", href: "/chennai-apps" },
 
 
     // { label: "Sustainability", href: "/sustainability" },

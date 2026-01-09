@@ -315,13 +315,31 @@ const BlogDetail = () => {
 
           author: found.populatedAuthors?.[0]?.name || "Admin",
 
+          // authorImage: (() => {
+          //   const author = found.populatedAuthors?.[0];
+          //   if (author?.profileImage?.url) return author.profileImage.url;
+          //   if (author?.name === "Dr. Shabnam")
+          //     return "https://www.superchennai.com/images/dr-shabnam.jpg";
+          //   if (author?.name === "Karthik Nagappan")
+          //     return "https://www.superchennai.com/images/karthiknagappan.jpeg";
+          //   return null;
+
+          // })(),
+
           authorImage: (() => {
             const author = found.populatedAuthors?.[0];
+
             if (author?.profileImage?.url) return author.profileImage.url;
+
             if (author?.name === "Dr. Shabnam")
               return "https://www.superchennai.com/images/dr-shabnam.jpg";
+
             if (author?.name === "Karthik Nagappan")
               return "https://www.superchennai.com/images/karthiknagappan.jpeg";
+
+            if (author?.name === "Superchennai Team")
+              return "https://www.superchennai.com/images/HomePage-Images/Superchennai.png";
+
             return null;
           })(),
 
@@ -507,7 +525,7 @@ const BlogDetail = () => {
               <img
                 src={`${blog.authorImage}`}
                 alt={blog.author}
-                className="w-20 h-20 rounded-full object-cover border mb-3"
+                className="w-20 h-20 rounded-full object-cover "
               />
             ) : (
               <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center text-lg font-semibold">

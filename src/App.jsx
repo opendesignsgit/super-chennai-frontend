@@ -712,7 +712,7 @@ function App() {
           element={<MargazhiPageCalendar />}
         />
 
-        <Route path="hotshots-in-chennai" element={<HotshotChennaiContest />} />
+        <Route path="contest/hotshots-photography-contest" element={<HotshotChennaiContest />} />
          <Route  path="/neighbourhood"element={<Neighbourhoods />} />
         <Route  path="/neighbourhood/:slug" element={<NeighbourhoodDetail />}/>
         {/* 404 Page */}

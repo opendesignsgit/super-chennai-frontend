@@ -5,10 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Search from "./Search";
 import { useTranslation } from "react-i18next";
-import LanguageDropdown from "../Components/LanguageDropdown/Language"
-import LanguageSwitcher from "../Components/LanguageDropdown/LanguageSwitcher"
-
-
+import LanguageDropdown from "../Components/LanguageDropdown/Language";
+import LanguageSwitcher from "../Components/LanguageDropdown/LanguageSwitcher";
 const menuItems = [
   {
     label: "Live",
@@ -401,7 +399,6 @@ const menuItems = [
     ],
   },
 ];
-
 const sectionImageMap = {
   Live: "/images/HomePage-Images/live-MegaMenu.jpg",
   Visit: "/images/HomePage-Images/Visit-MegaMenu.jpg",
@@ -410,7 +407,6 @@ const sectionImageMap = {
   Innovate: "/images/HomePage-Images/Innovate-MegaMenu.jpg",
   Volunteer: "/images/HomePage-Images/Volunteers-MegaMenu.jpg",
 };
-
 const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -420,17 +416,12 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
   const [hoveredImage, setHoveredImage] = useState(
     "/images/FirstSliderImage.png"
   );
-
   const navigate = useNavigate();
   const location = useLocation();
   const isHome = location.pathname === "/";
-
   const [imageLoaded, setImageLoaded] = useState(false);
-
   const [mobileAccordionOpenIndex, setMobileAccordionOpenIndex] =
     useState(null);
-
-  // Unique handler name to avoid conflicts
   const handleMobileMenuAccordionToggle = (index) => {
     setMobileAccordionOpenIndex(
       mobileAccordionOpenIndex === index ? null : index
@@ -442,7 +433,6 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-  // const [menuBar, setMenuBar] = useState(false);
   const slideInFromLeft = {
     hidden: {
       opacity: 0,
@@ -471,13 +461,11 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
       },
     },
   };
-
   const toggleMobileAccordion = (index) => {
     setMobileAccordionOpenIndex(
       mobileAccordionOpenIndex === index ? null : index
     );
   };
-
   useEffect(() => {
     const hasNewMegaMenu = document.querySelector(".Newmegamenu") !== null;
     setIsActive(hasNewMegaMenu);
@@ -494,34 +482,35 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
   }, []);
   useEffect(() => {
     if (activeMenu) {
-      const timer = setTimeout(() => setMenuVisible(true), 10); // Trigger .show class
+      const timer = setTimeout(() => setMenuVisible(true), 10);
       return () => clearTimeout(timer);
     } else {
-      setMenuVisible(false); // Remove .show class immediately
+      setMenuVisible(false);
     }
   }, [activeMenu]);
 
-  // Reset imageLoaded whenever hoveredImage changes
   useEffect(() => {
     setImageLoaded(false);
   }, [hoveredImage]);
+  const { t } = useTranslation();
 
+  const [user, setUser] = useState(null);
+  const handleLogin = () => {
+    setUser({ name: "Bharathi" });
+    navigate("/login");
+  };
 
-  
-
-
-
-const { t } = useTranslation();
-
+  const handleLogout = () => {
+    setUser(null);
+    navigate("/");
+  };
 
   return (
     <>
-     
       <div className="mainMegamenuContainers">
         <header
           className={`mainMegamenuContainer ${scrolled ? "scrolled" : ""}`}
         >
-          
           <nav
             // className="Megamenunav"
             className={`Megamenunav ${isHome ? "HomePageStyle" : ""}`}
@@ -545,13 +534,11 @@ const { t } = useTranslation();
                 className="Megamenulogo"
               ></div>
 
-
               <div className="Megamenumenuicon md:hidden">
                 <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                   {mobileMenuOpen ? "✖" : "☰"}
                 </button>
               </div>
-
               <div className="MegamenumenuitemsMain">
                 <ul className="Megamenumenudesktop">
                   {menuItems.map((item, i) => (
@@ -584,18 +571,51 @@ const { t } = useTranslation();
                     </li>
                   ))}
                 </ul>
-
               </div>
-              <div
-                style={{ cursor: "pointer" }}
-                className="Megamenulogo1 hidden md:block"
-                onClick={() => setMenuBar(true)}
-              >
-                MENU
-              </div>
-                             
 
+              {/* <div className="MegamenuAuth ">
+                {!user ? (
+                  <>
+                    <button
+                      className="authBtn login"
+                      onClick={() => navigate("/login")}
+                    >
+                      Login
+                    </button>
+                    <button
+                      className="authBtn register"
+                      onClick={() => navigate("/register")}
+                    >
+                      Register
+                    </button>
+                  </>
+                ) : (
+                  <div className="userDropdown">
+                    <span className="userName">Hi, {user.name}</span>
+                    <div className="userMenu">
+                      <Link to="/dashboard">Dashboard</Link>
+                      <Link to="/profile">Profile</Link>
+                      <button onClick={handleLogout}>Logout</button>
+                    </div>
+                  </div>
+                )}
+              </div> */}
+
+              <div>
+                {/* <div class="MegamenuAuth">
+                  <button class="authBtn login">Login</button>
+                  <button class="authBtn register">Register</button>
+                </div> */}
+                <div
+                  style={{ cursor: "pointer" }}
+                  className="Megamenulogo1 hidden md:block"
+                  onClick={() => setMenuBar(true)}
+                >
+                  MENU
+                </div>
+              </div>
             </div>
+
             {activeMenu && (
               <div
                 className={`Newmegamenu hidden md:block ${
@@ -655,7 +675,6 @@ const { t } = useTranslation();
                 </AnimatePresence>
               </div>
             )}
-
             {mobileMenuOpen && (
               <div className="mobile-menu md:hidden">
                 {menuItems.map((item, i) => (
@@ -690,7 +709,6 @@ const { t } = useTranslation();
                 ))}
               </div>
             )}
-
             <div className="Mobileheader">
               <div className="mobilesvgSize">
                 <Link to="/events">
@@ -733,12 +751,6 @@ const { t } = useTranslation();
                 />
               </div>
             </div>
-
-            {/* <div className="SearchMobileBg">
-              <div className="SearchMobileSection">
-                <Search />
-              </div>
-            </div> */}
           </nav>
         </header>
       </div>

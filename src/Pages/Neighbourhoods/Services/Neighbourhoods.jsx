@@ -271,21 +271,6 @@ export const getNeighbourhoodsData = async () => {
 
 
 
-
-// export const getLiveDetailBySlug = async (slug) => {
-//   const res = await axios.get(
-//     `${API_BASE_URL}/api`,
-//     {
-//       params: {
-//         "/neighbourhood?where[slug][equals]": slug,
-//       },
-//     }
-//   );
-
-//   return res.data?.docs?.[0] || null;
-// };
-
-
 export const getLiveDetailBySlug = async (slug) => {
   const res = await axios.get(
     `${API_BASE_URL}/api/neighbourhood`,
@@ -299,4 +284,3 @@ export const getLiveDetailBySlug = async (slug) => {
   return res.data?.docs?.[0] || null;
 };
 
-// GET /api/neighbourhood?where[slug][equals]=this-is-dai-pag

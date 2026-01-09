@@ -30,15 +30,18 @@
 .ExploreChennaiContainer .slick-track {
   padding-top: 1%;
 }
+
 .ExploreChennaiContainer .space-y-4 {
   margin-bottom: 20px;
 }
+
 .exploreSectionContainer {
   display: flex;
   column-gap: 25px;
   flex-wrap: wrap;
   row-gap: 25px;
 }
+
 .exploreSectionFlex {
   display: flex !important;
   align-items: center;
@@ -83,6 +86,7 @@
   color: #818181;
   font-size: 15px;
 }
+
 .exploreSectionFlex h5 {
   font-family: "29LT Bukra SmBd";
   color: #818181;
@@ -100,9 +104,11 @@
   background-size: contain;
   transition: opacity 0.3s ease-in-out;
 }
+
 .exploreSectionFlex:hover .arrowIcons {
   background-image: url("../../../public/images/icons/RightArrow.svg");
 }
+
 .exploreSectionFlex:hover .arrowIcons {
   background-image: url("../../../public/images/icons/RightArrow.svg");
 }
@@ -115,6 +121,7 @@
   right: 10px;
   z-index: 5;
 }
+
 .pointcastSticky img {
   width: 120px;
   width: 100px;
@@ -131,6 +138,15 @@
 .carRallylink {
   /* top: 60%; */
   bottom: 308px;
+}
+
+.hotshotstext {
+     margin-top: 10px !important;
+    line-height: 100% !important;
+}
+
+.everydaytext {
+  margin-top: 0 !important;
 }
 
 @media (max-width: 1600px) and (min-width: 1300px) {
@@ -151,11 +167,13 @@
   .exploreSectionFlex h5 {
     font-size: 13px;
   }
+
   .exploreSectionFlex img:first-child {
     width: 60px;
     height: 60px;
   }
 }
+
 @media (max-width: 1300px) and (min-width: 1024px) {
   .exploreSectionFlex {
     width: 218px !important;
@@ -174,11 +192,13 @@
   .exploreSectionFlex h5 {
     font-size: 13px;
   }
+
   .exploreSectionFlex img:first-child {
     width: 60px;
     height: 60px;
   }
 }
+
 @media (max-width: 1300px) and (min-width: 1250px) {
   .buttonsTredingSections {
     left: 77%;
@@ -189,6 +209,7 @@
   .exploreChennaiContiner {
     width: 787px;
   }
+
   .exploreSectionFlex {
     width: 218px !important;
     padding: 12px 10px;
@@ -206,11 +227,13 @@
   .exploreSectionFlex h5 {
     font-size: 13px;
   }
+
   .exploreSectionFlex img:first-child {
     width: 60px;
     height: 60px;
   }
 }
+
 @media (max-width: 768px) {
   .chennaiInvestmentsHeadingSub {
     font-family: "29LT Bukra Regular";
@@ -224,6 +247,7 @@
   .ExploreInvestContainerdiv {
     margin-top: 40px;
   }
+
   .chennaiInvestmentsHeading {
     font-size: 60px;
     line-height: 50px;
@@ -234,11 +258,13 @@
     margin-bottom: 20px;
     margin-bottom: 7px;
   }
+
   .ExploreChennaiContainer {
     /* padding-top: 45px; */
     padding-top: 40px;
     margin-top: 0;
   }
+
   .ExploreChennaiContainer {
     padding-bottom: 0;
   }
@@ -277,6 +303,7 @@
     width: 60px;
     height: 60px;
   }
+
   .pointcastSticky img {
     width: 80px;
   }
@@ -286,18 +313,29 @@
   .pointcastSticky img {
     width: 120px;
   }
+
+  .hotshotstext {
+    margin-top: 5px !important;
+  }
+
+  .everydaytext {
+    margin-top: 0 !important;
+  }
 }
+
 .formheadingtheme {
   font-family: "NewAmsterdam";
   color: #a44294;
   font-size: clamp(12px, 3vw, 50px);
   line-height: clamp(48px, 6vw, 77px);
 }
+
 .formheadingthemeCalendar {
   font-family: "NewAmsterdam";
   font-size: clamp(12px, 3vw, 50px);
   line-height: clamp(48px, 6vw, 77px);
 }
+
 @media (min-width: 300px) and (max-width: 700px) {
   .formheadingtheme {
     font-size: 28px;

@@ -145,7 +145,7 @@ export default function HotshotChennaiContest() {
         <title>Hotshot Chennai | Photography Contest</title>
         <meta
           name="description"
-          content="Capture the bold, vibrant and raw moments of Chennai. Participate in the Hotshot Chennai Photography Contest."
+          content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
         />
       </Helmet>
 

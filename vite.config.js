@@ -17,9 +17,9 @@ export default defineConfig({
         "/contest/hotshots-photography-contest",
         "/",
         "/contest/margazhi-month-photography-contest",
+        "/volunteer-in-chennai",
       ],
       renderer: new Renderer(),
     }),
   ],
 });
-

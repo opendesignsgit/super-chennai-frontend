@@ -9,17 +9,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react(),
-    Prerenderer({
-      staticDir: path.join(__dirname, "dist"),
-      // ADD EVERY NEW PAGE URL HERE:
-      routes: [
-        // "/contest/hotshots-photography-contest",
-        //"/contest/hotshots-photography-contest",
-        "/",
-         "/contest/margazhi-month-photography-contest",
-        "/volunteer-in-chennai",
-      ],
-      renderer: new Renderer(),
-    }),
+   
   ],
 });

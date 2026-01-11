@@ -148,8 +148,8 @@ export default function HotshotChennaiContest() {
         />
       </Helmet> */}
 
-      <Helmet>
-        <title>Margazhi Month Moments | Photography Contest</title>
+       <Helmet>
+        <title>Dhinesh Margazhi Month Moments | Photography Contest</title>
         <meta
           name="description"
           content="Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."

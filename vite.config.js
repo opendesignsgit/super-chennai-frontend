@@ -14,6 +14,7 @@ export default defineConfig({
       // ADD EVERY NEW PAGE URL HERE:
       routes: [
         "/contest/hotshots-photography-contest",
+        "/contest/hotshots-photography-contest",
         "/",
         "/contest/margazhi-month-photography-contest",
       ],
@@ -21,3 +22,4 @@ export default defineConfig({
     }),
   ],
 });
+

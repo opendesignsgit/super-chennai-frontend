@@ -238,7 +238,7 @@ export default function MargazhiMomentsContest() {
   return (
     <>
       {/* ================= SEO ================= */}
-      <Helmet>
+      {/* <Helmet>
         <title>Margazhi Month Moments | Photography Contest</title>
         <meta
           name="description"
@@ -252,6 +252,30 @@ export default function MargazhiMomentsContest() {
         <link
           rel="canonical"
           href="/contest/margazhi-month-photography-contest"
+        />
+      </Helmet> */}
+
+      <Helmet>
+        <title>Dhinesh Testing Margazhi page Super chennai</title>
+        <meta
+          name="description"
+          content="Dhinesh Testing Margazhi Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
+        />
+        <meta
+          property="og:title"
+          content="Dhinesh Testing Margazhi page Super chennai"
+        />
+        <meta
+          property="og:description"
+          content="Dhinesh Testing Margazhi Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
+        />
+        <meta
+          property="og:image"
+          content="https://superchennai-testing.netlify.app/images/margazhi.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://superchennai-testing.netlify.app/contest/margazhi-month-photography-contest/"
         />
       </Helmet>
 
@@ -532,7 +556,9 @@ export default function MargazhiMomentsContest() {
                 <button
                   type="submit"
                   disabled={loading} // prevent multiple clicks
-                  className={`w-full flex items-center justify-center gap-2 bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold transition theme-button-full ${loading ? "cursor-not-allowed" : ""}`}
+                  className={`w-full flex items-center justify-center gap-2 bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold transition theme-button-full ${
+                    loading ? "cursor-not-allowed" : ""
+                  }`}
                 >
                   {loading && (
                     <svg

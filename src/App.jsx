@@ -272,7 +272,7 @@ import SuperchennaiContests from "./Pages/SuperchennaiContest/ContestPage";
 import SuperchennaiContestDetails from "./Pages/SuperchennaiContest/ContestDetailsPage";
 import IconOfMonthList from "./Pages/IconOfTheMonth/IconOfTheMonth";
 import IconOfMonthDetails from "./Pages/IconOfTheMonth/IconOfMonthDetailPage";
-import NeighbourhoodDetail from "./Pages/Neighbourhoods/neighbourhoodsDetailPage"
+import NeighbourhoodDetail from "./Pages/Neighbourhoods/neighbourhoodsDetailPage";
 import MargazhiMomentsContest from "./Pages/Activities/MargazhiMonth/MargazhiMomentsContest";
 import MargazhiPageCalendar from "./Pages/Activities/MargazhiMonth/MargazhiPage";
 import HotshotChennaiContest from "./Pages/Activities/HotshotChennai/HotshotChennaiContest";
@@ -507,8 +507,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("token"));
 
   const hideOnBlog =
-  location.pathname === "/blog" || location.pathname.startsWith("/blog/");
-
+    location.pathname === "/blog" || location.pathname.startsWith("/blog/");
 
   const hideOnMargazhiPage =
     location.pathname === "/contest/margazhi-month-photography-contest";
@@ -521,7 +520,6 @@ function App() {
 
       {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && ( */}
       {showPopup && !hideOnMargazhiPage && !hideOnBlog && (
-
         <ImagePopup
           imageUrl="/images/events/margazhi-contest-home-popup.jpg"
           onClose={() => setShowPopup(false)}
@@ -704,7 +702,7 @@ function App() {
         {/* PUBLICK ROTES  */}
 
         <Route
-          path="contest/margazhi-month-photography-contest"
+          path="/contest/margazhi-month-photography-contest"
           element={<MargazhiMomentsContest />}
         />
         <Route
@@ -712,9 +710,12 @@ function App() {
           element={<MargazhiPageCalendar />}
         />
 
-        <Route path="contest/hotshots-photography-contest" element={<HotshotChennaiContest />} />
-         <Route  path="/neighbourhood"element={<Neighbourhoods />} />
-        <Route  path="/neighbourhood/:slug" element={<NeighbourhoodDetail />}/>
+        <Route
+          path="/contest/hotshots-photography-contest"
+          element={<HotshotChennaiContest />}
+        />
+        <Route path="/neighbourhood" element={<Neighbourhoods />} />
+        <Route path="/neighbourhood/:slug" element={<NeighbourhoodDetail />} />
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
 
@@ -1447,7 +1448,6 @@ function App() {
         {/* Pride-of-Chennai */}
 
         <Route path="/hall-of-fame" element={<PrideofChennai />} />
-  
 
         <Route path="/chennai-apps" element={<ChennaiApp />} />
       </Routes>

@@ -114,6 +114,30 @@ export default function HomePage() {
         </script>
         <link rel="canonical" href="/" />
       </Helmet>
+
+      <Helmet>
+        <title>Discover Super Chennai: Culture, Food, Beaches & More</title>
+        <meta
+          name="description"
+          content="Experience Super Chennai, a vibrant city where coastal charm meets thriving IT hubs, top education, nightlife, buzzing markets, and a love for art and sport."
+        />
+
+        <link rel="canonical" href="/" />
+        <meta
+          property="og:title"
+          content="Discover Super Chennai: Culture, Food, Beaches & More"
+        />
+        <meta
+          property="og:description"
+          content="Experience Super Chennai, a vibrant city where coastal charm meets thriving IT hubs, top education, nightlife, buzzing markets, and a love for art and sport."
+        />
+        <meta
+          property="og:image"
+          content="https://www.superchennai.com/images/super-chennai-social-img.jpg"
+        />
+        <meta property="og:url" content="https://www.superchennai.com/" />
+      </Helmet>
+
       <div>
         <HeroSlider />
       </div>

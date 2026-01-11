@@ -154,6 +154,8 @@ export default function HotshotChennaiContest() {
           name="description"
           content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
         />
+
+          <link rel="canonical" href="/contest/hotshots-photography-contest" />
         <meta
           property="og:title"
           content="Hotshot Chennai | Photography Contest"

@@ -242,7 +242,7 @@ export default function MargazhiMomentsContest() {
         <title>Margazhi Month Moments | Photography Contest</title>
         <meta
           name="description"
-          content=" Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
+          content="Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
         />
 
         <script type="application/ld+json">
@@ -256,26 +256,26 @@ export default function MargazhiMomentsContest() {
       </Helmet> */}
 
       <Helmet>
-        <title>Dhinesh Testing Margazhi page Super chennai</title>
+        <title>Margazhi Month Moments | Photography Contest</title>
         <meta
           name="description"
-          content="Dhinesh Testing Margazhi Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
+          content="Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
         />
         <meta
           property="og:title"
-          content="Dhinesh Testing Margazhi page Super chennai"
+          content="Margazhi Month Moments | Photography Contest"
         />
         <meta
           property="og:description"
-          content="Dhinesh Testing Margazhi Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
+          content="Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
         />
         <meta
           property="og:image"
-          content="https://www.superchennai.com/images/og-image/homepage-og-image.jpg"
+          content="https://www.superchennai.com/images/og-image/margahazhi-og.jpg"
         />
         <meta
           property="og:url"
-          content="https://superchennai-testing.netlify.app/contest/margazhi-month-photography-contest/"
+          content="https://www.superchennai.com/contest/margazhi-month-photography-contest"
         />
       </Helmet>
 

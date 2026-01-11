@@ -133,7 +133,7 @@ export default function HomePage() {
         />
         <meta
           property="og:image"
-          content="https://www.superchennai.com/images/super-chennai-social-img.jpg"
+          content="https://www.superchennai.com/images/og-image/homepage-og-image.jpg"
         />
         <meta property="og:url" content="https://www.superchennai.com/" />
       </Helmet>

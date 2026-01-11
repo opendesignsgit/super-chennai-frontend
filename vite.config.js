@@ -12,7 +12,7 @@ export default defineConfig({
     Prerenderer({
       staticDir: path.join(__dirname, "dist"),
       // ADD EVERY NEW PAGE URL HERE:
-      routes: ["/contest/hotshots-photography-contest"],
+      routes: ["/contest/hotshots-photography-contest", "/"],
       renderer: new Renderer(),
     }),
   ],

@@ -7,7 +7,6 @@ import axios from "axios";
 import { API_BASE_URL_API } from "../../../../config";
 import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
 export default function HotshotChennaiContest() {
-  
   const navigate = useNavigate();
 
   const countryCodes = [
@@ -141,11 +140,35 @@ export default function HotshotChennaiContest() {
   return (
     <>
       {/* ================= SEO ================= */}
+      {/* <Helmet>
+        <title>Hotshot Chennai | Photography Contest</title>
+        <meta
+          name="description"
+          content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
+        />
+      </Helmet> */}
+
       <Helmet>
         <title>Hotshot Chennai | Photography Contest</title>
         <meta
           name="description"
           content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
+        />
+        <meta
+          property="og:title"
+          content="Hotshot Chennai | Photography Contest"
+        />
+        <meta
+          property="og:description"
+          content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
+        />
+        <meta
+          property="og:image"
+          content="https://www.superchennai.com/images/og-image/hotshot-og-image.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.superchennai.com/contest/hotshots-photography-contest/"
         />
       </Helmet>
 

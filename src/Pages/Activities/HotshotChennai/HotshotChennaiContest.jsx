@@ -149,28 +149,26 @@ export default function HotshotChennaiContest() {
       </Helmet> */}
 
       <Helmet>
-        <title>Hotshot Chennai | Photography Contest</title>
+        <title>Margazhi Month Moments | Photography Contest</title>
         <meta
           name="description"
-          content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
+          content="Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
         />
-
-          <link rel="canonical" href="/contest/hotshots-photography-contest" />
         <meta
           property="og:title"
-          content="Hotshot Chennai | Photography Contest"
+          content="Margazhi Month Moments | Photography Contest"
         />
         <meta
           property="og:description"
-          content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
+          content="Capture the essence of the Margazhi month, from serene mornings to elegant kolams and cultural celebrations. Take part in the Photography Contest and share with us."
         />
         <meta
           property="og:image"
-          content="https://www.superchennai.com/images/og-image/hotshot-og-image.jpg"
+          content="https://www.superchennai.com/images/og-image/margahazhi-og.jpg"
         />
         <meta
           property="og:url"
-          content="https://www.superchennai.com/contest/hotshots-photography-contest/"
+          content="https://www.superchennai.com/contest/margazhi-month-photography-contest"
         />
       </Helmet>
 

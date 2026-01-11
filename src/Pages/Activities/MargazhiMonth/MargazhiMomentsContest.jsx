@@ -271,7 +271,7 @@ export default function MargazhiMomentsContest() {
         />
         <meta
           property="og:image"
-          content="https://superchennai-testing.netlify.app/images/margazhi.jpg"
+          content="https://www.superchennai.com/images/og-image/homepage-og-image.jpg"
         />
         <meta
           property="og:url"

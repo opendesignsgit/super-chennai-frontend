@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet-async";
-import VolunteerGallery from "../Components/cardScroller/VolunteerGallery"
+import VolunteerGallery from "../Components/cardScroller/VolunteerGallery";
 export default function Volunteer() {
   const [scrollDir, setScrollDir] = useState("left");
   const [isOpen, setIsOpen] = useState(false);
@@ -202,13 +202,39 @@ export default function Volunteer() {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Volunteer in Chennai : Connection with Communities</title>
         <meta
           name="description"
           content="Join hands to volunteer in Chennai! Contribute to communities, aid social causes, and experience the joy of giving back to your city."
         />
         <link rel="canonical" href="/volunteer-in-chennai" />
+      </Helmet> */}
+
+      <Helmet>
+        <title>Volunteer in Chennai : Connection with Communities</title>
+        <meta
+          name="description"
+          content="Join hands to volunteer in Chennai! Contribute to communities, aid social causes, and experience the joy of giving back to your city."
+        />
+        <meta
+          property="og:title"
+          content="Volunteer in Chennai : Connection with Communities"
+        />
+
+        <link rel="canonical" href="/volunteer-in-chennai" />
+        <meta
+          property="og:description"
+          content="Join hands to volunteer in Chennai! Contribute to communities, aid social causes, and experience the joy of giving back to your city."
+        />
+        <meta
+          property="og:image"
+          content="https://www.superchennai.com/images/og-image/voluteer-og.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.superchennai.com/contest/margazhi-month-photography-contest"
+        />
       </Helmet>
       <div
         className="VolunteerBgSection notHome"
@@ -292,8 +318,8 @@ export default function Volunteer() {
           </div>
         </div>
       </div>
-    
-     <VolunteerGallery/>
+
+      <VolunteerGallery />
       <div
         className="VolunterPageBecameVolunteerBg"
         data-aos="fade-up"

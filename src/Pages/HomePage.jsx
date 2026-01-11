@@ -125,11 +125,11 @@ export default function HomePage() {
         <link rel="canonical" href="/" />
         <meta
           property="og:title"
-          content="DDiscover Super Chennai: Culture, Food, Beaches & More"
+          content="Discover Super Chennai: Culture, Food, Beaches & More"
         />
         <meta
           property="og:description"
-          content="EExperience Super Chennai, a vibrant city where coastal charm meets thriving IT hubs, top education, nightlife, buzzing markets, and a love for art and sport."
+          content="Experience Super Chennai, a vibrant city where coastal charm meets thriving IT hubs, top education, nightlife, buzzing markets, and a love for art and sport."
         />
         <meta
           property="og:image"

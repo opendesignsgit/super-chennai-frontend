@@ -41,41 +41,75 @@ export default function HomePage() {
     }
   }, []);
 
+  // const websiteSchema = {
+  //   "@context": "https://schema.org",
+  //   "@graph": [
+  //     {
+  //       "@type": "WebSite",
+  //       url: "https://www.superchennai.com/",
+  //       potentialAction: {
+  //         "@type": "SearchAction",
+  //         target: "https://www.superchennai.com/?s={search_term_string}",
+  //         "query-input": "required name=search_term_string",
+  //       },
+  //     },
+  //     {
+  //       "@type": "WebPage",
+  //       url: "https://www.superchennai.com/chennai-events",
+  //       name: "Chennai Events",
+  //     },
+  //     {
+  //       "@type": "WebPage",
+  //       url: "https://www.superchennai.com/superchennai-contest",
+  //       name: "Super Chennai Contest",
+  //     },
+  //     {
+  //       "@type": "WebPage",
+  //       url: "https://www.superchennai.com/visit/restaurants-in-chennai",
+  //       name: "Restaurants in Chennai",
+  //     },
+  //     {
+  //       "@type": "WebPage",
+  //       url: "https://www.superchennai.com/blog/chennai-2025-five-shifts-in-the-citys-food-landscape",
+  //       name: "Chennai 2025 — Five Shifts in the City’s Food Landscape",
+  //     },
+  //   ],
+  // };
+
+
   const websiteSchema = {
     "@context": "https://schema.org",
-    "@graph": [
+    "@type": "WebSite",
+    "url": "https://www.superchennai.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.superchennai.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "mainEntity": [
       {
-        "@type": "WebSite",
-        url: "https://www.superchennai.com/",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: "https://www.superchennai.com/?s={search_term_string}",
-          "query-input": "required name=search_term_string",
-        },
+        "@type": "SiteNavigationElement",
+        "name": "Chennai Events",
+        "url": "https://www.superchennai.com/chennai-events"
       },
       {
-        "@type": "WebPage",
-        url: "https://www.superchennai.com/chennai-events",
-        name: "Chennai Events",
+        "@type": "SiteNavigationElement",
+        "name": "Superchennai Contest",
+        "url": "https://www.superchennai.com/superchennai-contest"
       },
       {
-        "@type": "WebPage",
-        url: "https://www.superchennai.com/superchennai-contest",
-        name: "Super Chennai Contest",
+        "@type": "SiteNavigationElement",
+        "name": "Restaurants in Chennai",
+        "url": "https://www.superchennai.com/visit/restaurants-in-chennai"
       },
       {
-        "@type": "WebPage",
-        url: "https://www.superchennai.com/visit/restaurants-in-chennai",
-        name: "Restaurants in Chennai",
-      },
-      {
-        "@type": "WebPage",
-        url: "https://www.superchennai.com/blog/chennai-2025-five-shifts-in-the-citys-food-landscape",
-        name: "Chennai 2025 — Five Shifts in the City’s Food Landscape",
-      },
-    ],
-  };
-
+        "@type": "SiteNavigationElement",
+        "name": "Beaches in Chennai",
+        "url": "https://www.superchennai.com/visit/place-to-visit/beaches-in-chennai"
+      }
+    ]
+  }
+  
   useEffect(() => {
     const scrollPos = sessionStorage.getItem("scrollPos");
 

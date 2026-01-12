@@ -4,7 +4,8 @@ import "../../assets/Css/BlogList.css";
 import { Helmet } from "react-helmet-async";
 import { API_BASE_URL } from "../../../config";
 import BlogListSkeleton from "./components/BlogListSkeleton";
-
+import LikedIcon from "../../../public/images/icons/non-like.svg";
+import ViewsIcon from "../../../public/images/icons/blog-views.svg";
 const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
   const [filteredBlogs, setFilteredBlogs] = useState([]);
@@ -41,6 +42,8 @@ const BlogList = () => {
             content: item.content,
             heroImage: item.heroImage?.url || null,
             excerpt: plainText,
+            views: item.views ?? 0,
+            likes: item.likes ?? 0,
           };
         });
 
@@ -63,16 +66,10 @@ const BlogList = () => {
     setFilteredBlogs(filtered);
   }, [searchTerm, blogs]);
 
-  // if (loading) {
-  //   return (
-  //     <div className="flex justify-center items-center h-40">
-  //       <div className="loader border-t-transparent border-4 border-blue-600 rounded-full w-8 h-8 animate-spin"></div>
-  //     </div>
-  //   );
-  // }
+
   if (loading) {
-  return <BlogListSkeleton />;
-}
+    return <BlogListSkeleton />;
+  }
 
 
   return (
@@ -161,6 +158,16 @@ const BlogList = () => {
                     <p className="blog-description">
                       {blog.excerpt.slice(0, 80)}....
                     </p>
+                    <div className="blog-stats flex items-center gap-4 text-sm text-gray-600 mt-2">
+                      <div className="flex items-center gap-1 text-gray-600 text-sm">
+                        <img src={ViewsIcon} alt="Views" className="w-4 h-4" />
+                        <span>{blog.views}</span>
+                      </div>
+                      <div className="flex items-center gap-1 text-gray-600 text-sm">
+                        <img src={LikedIcon} alt="Views" className="w-4 h-4" />
+                        <span>{blog.likes}</span>
+                      </div>
+                    </div>
                     <a href={`/blog/${blog.slug}`} className="read-more">
                       Read More →
                     </a>

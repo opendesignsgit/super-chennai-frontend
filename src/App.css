@@ -274,6 +274,14 @@
   color: #ffffff;
 }
 
+.admin-message {
+  max-width: 300px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  color: #374151;
+}
+
+
 
 
 
@@ -562,4 +570,10 @@
   padding: 20px;
   color: #6b7280;
   font-size: 14px;
+}
+.admin-message {
+  max-width: 300px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  color: #374151;
 }

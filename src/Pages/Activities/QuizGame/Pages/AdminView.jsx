@@ -362,14 +362,14 @@ export default function AdminView() {
   };
 
   const fetchMargazhi = async () => {
-  const res = await axios.get(
-    "https://api.superchennai.com/api/margazhi"
-  );
+    const res = await axios.get(
+      "https://api.superchennai.com/api/margazhi"
+    );
 
-  if (res.data?.success) {
-    setMargazhiData(res.data.data);
-  }
-};
+    if (res.data?.success) {
+      setMargazhiData(res.data.data);
+    }
+  };
 
 
   const validateKey = async () => {
@@ -397,7 +397,7 @@ export default function AdminView() {
   const volunteers = posts.filter(p => !p.video || p.video.trim() === "");
   const stories = posts.filter(p => p.video && p.video.trim() !== "");
   const reimagine = posts.filter(p => p.image && String(p.image).trim() !== "");
-
+  console.log("volunteers", volunteers)
   /* ================= UI ================= */
   return (
     <>
@@ -452,7 +452,7 @@ export default function AdminView() {
               ["stories", "Namma Stories"],
               ["reimagine", "Reimagine Chennai"],
               ["hotshot", "Hotshot Chennai"],
-               ["margazhi", "Margazhi Month"], 
+              ["margazhi", "Margazhi Month"],
               ["trivia", "Trivia"],
             ].map(([key, label]) => (
               <button
@@ -471,13 +471,13 @@ export default function AdminView() {
           {/* CONTENT */}
           <div className="p-6">
             {activeTab === "newsletter" && <SimpleTable title="Newsletter" data={newsletter} />}
-            {activeTab === "volunteer" && <SimpleTable title="Volunteers" data={volunteers} />}
-            {activeTab === "stories" && <SimpleTable title="Namma Stories" data={stories} />}
+            {activeTab === "volunteer" && <SimpleTable title="Volunteers" data={volunteers}description />}
+            {activeTab === "stories" && <SimpleTable title="Namma Stories" data={stories} video />}
             {activeTab === "reimagine" && <SimpleTable title="Reimagine Chennai" data={reimagine} />}
-            {activeTab === "margazhi" && (<SimpleTable  title="Margazhi Month Submissions"  data={margazhiData} images />)}
-  
+            {activeTab === "margazhi" && (<SimpleTable title="Margazhi Month Submissions" data={margazhiData} images showMessage />)}
+
             {activeTab === "hotshot" && (
-              <SimpleTable title="Hotshot Chennai" data={hotshotData} images />
+              <SimpleTable title="Hotshot Chennai" data={hotshotData} images showMessage={true} />
             )}
 
             {!showPopup && activeTab === "trivia" && (
@@ -573,7 +573,7 @@ export default function AdminView() {
 
 /* ================= SIMPLE TABLE ================= */
 
-function SimpleTable({ title, data, images }) {
+function SimpleTable({ title, data, images, video, showMessage,  description }) {
   return (
     <div className="admin-table-wrapper">
       <h2 className="admin-table-title">{title}</h2>
@@ -585,9 +585,12 @@ function SimpleTable({ title, data, images }) {
               <th>Name</th>
               <th>Email</th>
               <th>Phone</th>
+              {showMessage && <th>Message</th>}
+               {description && <th>Description</th>}
               <th>Date</th>
               <th>Time</th>
               {images && <th>Images</th>}
+              {video && <th>Video</th>}
             </tr>
           </thead>
 
@@ -600,6 +603,16 @@ function SimpleTable({ title, data, images }) {
                   <td><strong>{d.name}</strong></td>
                   <td>{d.email}</td>
                   <td>{d.mobile || d.phone}</td>
+                  {showMessage && (
+                    <td className="admin-message">
+                      {d.message ? d.message : "—"}
+                    </td>
+                  )}
+                  {description && (
+                    <td className="admin-message">
+                      {d.description || "—"}
+                    </td>
+                  )}
                   <td className="admin-date">{date}</td>
                   <td className="admin-date">{time}</td>
 
@@ -628,6 +641,23 @@ function SimpleTable({ title, data, images }) {
                       </div>
                     </td>
                   )}
+
+                  {video && (
+                    <td className="text-center">
+                      {d.video ? (
+                        <button
+                          onClick={() => window.open(d.video, "_blank")}
+                          className="px-3 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+                        >
+                          ▶ Play
+                        </button>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                  )}
+
+
 
                 </tr>
               );

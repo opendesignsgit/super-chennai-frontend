@@ -6,6 +6,9 @@ import { API_BASE_URL } from "../../../config";
 import "./style.css";
 import AutoShrinkText from "../../Components/Text/AutoShrinkText";
 import BlogDetailSkeleton from "./components/BlogDetailSkeleton";
+import LikedIcon from "../../../public/images/icons/liked.svg";
+import NotLikedIcon from "../../../public/images/icons/non-like.svg";
+import ViewsIcon from "../../../public/images/icons/blog-views.svg";
 
 /* ---------------------------------------------
    Lexical Helpers
@@ -64,8 +67,6 @@ const renderTextChildren = (children, allowFormatting = true) => {
   });
 };
 
-
-
 const parseLexical = (content) => {
   if (!content?.root?.children) return null;
 
@@ -97,7 +98,7 @@ const parseLexical = (content) => {
       }
 
       case "block": {
-  
+
 
         if (node.fields?.blockType === "mediaBlock") {
           const media = node.fields?.media;
@@ -115,7 +116,7 @@ const parseLexical = (content) => {
           );
 
           return (
-         
+
             <figure key={idx} className="my-10 relative">
               <div className="blog-media-wrapper relative">
                 {/* Main image with optional link */}
@@ -286,7 +287,8 @@ const BlogDetail = () => {
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const contentRef = useRef(null);
-  const customImagePath = "/images/dr-shabnam.jpg";
+  const hasViewed = useRef(false);
+
 
   useEffect(() => {
     const fetchBlog = async () => {
@@ -313,18 +315,13 @@ const BlogDetail = () => {
           metatitle: found.meta?.title,
           metaImage: found.meta?.metaImage,
 
+
+          views: found.views ?? 0,
+          likes: found.likes ?? 0,
+
           author: found.populatedAuthors?.[0]?.name || "Admin",
 
-          // authorImage: (() => {
-          //   const author = found.populatedAuthors?.[0];
-          //   if (author?.profileImage?.url) return author.profileImage.url;
-          //   if (author?.name === "Dr. Shabnam")
-          //     return "https://www.superchennai.com/images/dr-shabnam.jpg";
-          //   if (author?.name === "Karthik Nagappan")
-          //     return "https://www.superchennai.com/images/karthiknagappan.jpeg";
-          //   return null;
 
-          // })(),
 
           authorImage: (() => {
             const author = found.populatedAuthors?.[0];
@@ -361,6 +358,68 @@ const BlogDetail = () => {
 
     fetchBlog();
   }, [slug]);
+
+  /* ---------------------------------------------
+    INCREMENT VIEW (RUNS ONLY ONCE)
+ --------------------------------------------- */
+  useEffect(() => {
+    if (!blog?.id || hasViewed.current) return;
+
+    hasViewed.current = true;
+
+    axios
+      .patch(`${API_BASE_URL}/api/posts/${blog.id}`, {
+        views: blog.views + 1,
+      })
+      .catch(() => { });
+
+    setBlog((prev) => ({
+      ...prev,
+      views: prev.views + 1,
+    }));
+  }, [blog?.id]);
+
+  /* ---------------------------------------------
+     LIKE HANDLER
+  --------------------------------------------- */
+
+
+  const handleLike = async () => {
+    if (!blog?.id || hasLiked(blog.id)) return;
+
+    try {
+      await axios.patch(`${API_BASE_URL}/api/posts/${blog.id}`, { likes: blog.likes + 1 });
+      addLikedPost(blog.id);
+      setBlog((prev) => ({ ...prev, likes: prev.likes + 1 }));
+    } catch (err) {
+      console.warn("Like failed", err);
+    }
+  };
+
+  /* ---------------------------------------------
+     LocalStorage helpers for likes
+  --------------------------------------------- */
+  const getLikedPosts = () => {
+    const stored = localStorage.getItem("likedPosts");
+    if (!stored) return [];
+    try {
+      return JSON.parse(stored);
+    } catch {
+      return [];
+    }
+  };
+
+  const hasLiked = (postId) => getLikedPosts().includes(postId);
+
+  const addLikedPost = (postId) => {
+    const liked = getLikedPosts();
+    if (!liked.includes(postId)) {
+      liked.push(postId);
+      localStorage.setItem("likedPosts", JSON.stringify(liked));
+    }
+  };
+
+
 
   /* Paragraph colon styling – scoped safely */
   useEffect(() => {
@@ -532,7 +591,6 @@ const BlogDetail = () => {
                 {blog.author.charAt(0)}
               </div>
             )}
-
             <div>
               <p className="font-semibold text-gray-800">{blog.author}</p>
               <p className="text-xs text-gray-500 mt-1">
@@ -547,65 +605,29 @@ const BlogDetail = () => {
                 })}
               </p>
             </div>
-          </div>
 
-          {/* <div className="flex items-center gap-4 mb-2">
-            {blog.authorInstagram ? (
-              <a
-                href={blog.authorInstagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 cursor-pointer"
+            <div className="ml-auto flex items-center gap-4 text-sm text-gray-600">
+              <div className="flex items-center gap-1 text-gray-600 text-sm">
+                <img src={ViewsIcon} alt="Views" className="w-4 h-4" />
+                <span>{blog.views}</span>
+              </div>
+
+              <button
+                onClick={handleLike}
+                disabled={hasLiked(blog.id)}
+                className={`flex items-center gap-1 transition ${hasLiked(blog.id) ? "cursor-not-allowed" : "hover:scale-105"}`}
               >
                 <img
-                  src={blog.authorImage}
-                  alt={blog.author}
-                  className="w-20 h-20 rounded-full object-cover border mb-3"
+                  src={hasLiked(blog.id) ? LikedIcon : NotLikedIcon}
+                  alt={hasLiked(blog.id) ? "Liked" : "Not liked"}
+                  className="w-5 h-5"
                 />
-
-                <div>
-                  <p className="font-semibold text-gray-800 hover:underline">
-                    {blog.author}
-                  </p>
-                  <p className="text-xs text-gray-500 mt-1">
-                    {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
-                      day: "2-digit",
-                      month: "short",
-                      year: "numeric",
-                      hour: "2-digit",
-                      minute: "2-digit",
-                      hour12: true,
-                      timeZone: "Asia/Kolkata",
-                    })}
-                  </p>
-                </div>
-              </a>
-            ) : (
-              <>
-                <img
-                  src={blog.authorImage}
-                  alt={blog.author}
-                  className="w-20 h-20 rounded-full object-cover border mb-3"
-                />
-
-                <div>
-                  <p className="font-semibold text-gray-800">{blog.author}</p>
-                  <p className="text-xs text-gray-500 mt-1">
-                    {new Date(blog.publishedAt).toLocaleDateString("en-GB", {
-                      day: "2-digit",
-                      month: "short",
-                      year: "numeric",
-                      hour: "2-digit",
-                      minute: "2-digit",
-                      hour12: true,
-                      timeZone: "Asia/Kolkata",
-                    })}
-                  </p>
-                </div>
-              </>
-            )}
-          </div> */}
-
+                <span className={`${hasLiked(blog.id) ? "text-gray-400" : "text-red-600"}`}>
+                  {blog.likes}
+                </span>
+              </button>
+            </div>
+          </div>
           {/* Blog Content */}
           <div ref={contentRef} className="blog">
             {parseLexical(blog.content)}

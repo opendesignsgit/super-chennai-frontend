@@ -324,6 +324,7 @@ export default function AdminView() {
   const [posts, setPosts] = useState([]);
 
   const backendURL = `${API_BASE_URL_API}/admin/all-users`;
+  const [margazhiData, setMargazhiData] = useState([]);
 
   /* ================= AUTH CHECK ================= */
   useEffect(() => {
@@ -339,6 +340,7 @@ export default function AdminView() {
     fetchQuiz(key);
     fetchHotshot();
     fetchPosts();
+    fetchMargazhi();
   };
 
   /* ================= API CALLS ================= */
@@ -358,6 +360,17 @@ export default function AdminView() {
     const res = await axios.get("https://api.superchennai.com/api/posts");
     if (res.data?.success) setPosts(res.data.data);
   };
+
+  const fetchMargazhi = async () => {
+  const res = await axios.get(
+    "https://api.superchennai.com/api/margazhi"
+  );
+
+  if (res.data?.success) {
+    setMargazhiData(res.data.data);
+  }
+};
+
 
   const validateKey = async () => {
     try {
@@ -439,6 +452,7 @@ export default function AdminView() {
               ["stories", "Namma Stories"],
               ["reimagine", "Reimagine Chennai"],
               ["hotshot", "Hotshot Chennai"],
+               ["margazhi", "Margazhi Month"], 
               ["trivia", "Trivia"],
             ].map(([key, label]) => (
               <button
@@ -460,7 +474,8 @@ export default function AdminView() {
             {activeTab === "volunteer" && <SimpleTable title="Volunteers" data={volunteers} />}
             {activeTab === "stories" && <SimpleTable title="Namma Stories" data={stories} />}
             {activeTab === "reimagine" && <SimpleTable title="Reimagine Chennai" data={reimagine} />}
-
+            {activeTab === "margazhi" && (<SimpleTable  title="Margazhi Month Submissions"  data={margazhiData} images />)}
+  
             {activeTab === "hotshot" && (
               <SimpleTable title="Hotshot Chennai" data={hotshotData} images />
             )}

@@ -178,7 +178,7 @@ export default function CoworkingSpaces() {
           </div>
 
           <div className="workIntro">
-            <h1>Co-working Spaces</h1>
+            <h1>Cowork Space in Chennai</h1>
             <p>
               Chennai is becoming a major center for the professional sector.
               Chennai offers you a wide range of possibilities for co-working

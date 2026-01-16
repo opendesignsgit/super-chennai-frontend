@@ -20,7 +20,24 @@ export default defineConfig({
         "/volunteer-in-chennai",
         "/work-in-chennai",
       ],
-      renderer: new Renderer(),
+      // renderer: new Renderer(),
+      renderer: new Renderer({
+        // 1. Root user-kaana settings
+        args: [
+          "--no-sandbox",
+          "--disable-setuid-sandbox",
+          "--disable-dev-shm-usage",
+        ],
+
+        // 2. Timeout-ah increase pannunga (30s to 60s)
+        navigationOptions: {
+          timeout: 60000,
+          waitUntil: "networkidle0", // Network mothama stop aagura varai wait pannum
+        },
+
+        // 3. Render aaga extra time (Optionally)
+        renderAfterTime: 50,
+      }),
     }),
   ],
 });

@@ -54,29 +54,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react(),
-    Prerenderer({
-      staticDir: path.join(__dirname, "dist"),
-      routes: [
-        "/",
-        "/contest/hotshots-photography-contest",
-        "/contest/margazhi-month-photography-contest",
-        "/volunteer-in-chennai",
-        "/work-in-chennai",
-      ],
-      renderer: new Renderer({
-        args: [
-          "--no-sandbox",
-          "--disable-setuid-sandbox",
-          "--disable-dev-shm-usage",
-        ],
-        navigationOptions: {
-          timeout: 60000,
-          // Correct format: String-ah array kulla podanum
-          waitUntil: ["networkidle0"], 
-        },
-        // Render aaga 3 to 5 seconds wait panrathu safe
-        renderAfterTime: 5000,
-      }),
-    }),
+
   ],
 });

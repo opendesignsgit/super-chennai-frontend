@@ -64,20 +64,17 @@ export default defineConfig({
         "/work-in-chennai",
       ],
       renderer: new Renderer({
-        // Linux Server (Root) permissions fix
         args: [
           "--no-sandbox",
           "--disable-setuid-sandbox",
           "--disable-dev-shm-usage",
         ],
-
         navigationOptions: {
           timeout: 60000,
-          // MUST BE AN ARRAY:
+          // Correct format: String-ah array kulla podanum
           waitUntil: ["networkidle0"], 
         },
-
-        // Give it 5 seconds to make sure React components & OG tags are loaded
+        // Render aaga 3 to 5 seconds wait panrathu safe
         renderAfterTime: 5000,
       }),
     }),

@@ -91,17 +91,43 @@ export default function Work() {
     setFade(false);
     const timeout = setTimeout(() => setFade(true), 100);
     return () => clearTimeout(timeout);
-  }, [previewSrc,previewAlt]);
+  }, [previewSrc, previewAlt]);
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Work in Chennai | Jobs, Career Growth, Startups, Networking</title>
         <meta
           name="description"
           content="From job opportunities in Chennai to career growth, discover everything about networking in Chennai, unicorns, co-working spaces, and work-life balance."
         />
         <link rel="canonical" href="/work-in-chennai" />
+      </Helmet> */}
+
+      <Helmet>
+        <title>Volunteer in Chennai : Connection with Communities</title>
+        <meta
+          name="description"
+          content="Join hands to volunteer in Chennai! Contribute to communities, aid social causes, and experience the joy of giving back to your city."
+        />
+        <meta
+          property="og:title"
+          content="Volunteer in Chennai : Connection with Communities"
+        />
+
+        <link rel="canonical" href="/volunteer-in-chennai" />
+        <meta
+          property="og:description"
+          content="Join hands to volunteer in Chennai! Contribute to communities, aid social causes, and experience the joy of giving back to your city."
+        />
+        <meta
+          property="og:image"
+          content="https://www.superchennai.com/images/og-image/voluteer-og.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.superchennai.com/contest/margazhi-month-photography-contest"
+        />
       </Helmet>
       {/* Top Banner */}
       <div
@@ -180,7 +206,7 @@ export default function Work() {
                     key={index}
                     onMouseEnter={() => {
                       setPreviewSrc(item.image);
-                      setPreviewAlt(item.imgAlt)
+                      setPreviewAlt(item.imgAlt);
                       setHoverIndex(index);
                       if (tooltipRef.current) {
                         tooltipRef.current.style.display = "block";

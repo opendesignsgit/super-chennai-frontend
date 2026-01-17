@@ -24,7 +24,7 @@
   justify-content: space-between;
   padding: 30px 32px;
   width: 100%;
-  box-sizing: border-box;  /* Prevents overflow */
+  box-sizing: border-box; /* Prevents overflow */
   position: relative;
 }
 
@@ -41,14 +41,12 @@
   background-size: contain;
 }
 
-
 .notHome .LogoDynamicSection {
   width: 156px;
   height: 115px;
   background-image: url("../../../public/images/super-chennai-logo-final.png");
   background-size: contain;
 }
-
 
 /* Hamburger */
 .hamburger {
@@ -112,7 +110,7 @@
   border-bottom: 10px solid #995098;
 }
 
-.megamenuinnerFirstSection{
+.megamenuinnerFirstSection {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
@@ -121,18 +119,18 @@
   height: max-content;
   padding: 40px 0;
 }
-.submenu-block{
+.submenu-block {
   height: max-content;
   width: 30%;
 }
-.megamenuinnerSecondSection{
+.megamenuinnerSecondSection {
   width: 36%;
 }
 
-.submenu-description{
+.submenu-description {
   width: 75%;
   margin-top: 3px;
-  font-family: '29LT Bukra Regular';
+  font-family: "29LT Bukra Regular";
   font-size: 14px;
   line-height: 22px;
   color: #000000;
@@ -151,10 +149,7 @@
   flex-wrap: wrap;
 }
 
-
-
 .mega-menu-inner a:hover {
-
 }
 
 /* Profile */
@@ -166,7 +161,7 @@
   line-height: 20px;
 }
 
-.profile:hover{
+.profile:hover {
   cursor: pointer;
 }
 
@@ -225,20 +220,19 @@
   border-bottom: 1px solid #7596ca;
 } */
 
-
-
-
 /* Disable Horizontal Scrolling */
 body {
   overflow-x: hidden; /* Prevents any horizontal scroll on the body */
 }
 
-.SubtitleHeadingsStyle{
-  font-family: '29LT Bukra SmBd';
+.SubtitleHeadingsStyle {
+  font-family: "29LT Bukra SmBd";
   color: #a44294;
   font-size: 17px;
   line-height: 20px;
 }
+
+
 
 /* Responsive */
 @media (max-width: 767px) {

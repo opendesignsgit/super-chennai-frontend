@@ -85,7 +85,9 @@
 .Newmegamenu {
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
   pointer-events: none;
 }
 
@@ -370,7 +372,9 @@
   width: 100%;
   z-index: 1000;
   background-color: transparent;
-  transition: transform 0.3s ease, background-color 0.3s ease,
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
     box-shadow 0.3s ease;
   transform: translateY(-20%);
   -webkit-transform: translateY(-20%);
@@ -627,6 +631,90 @@
   border-top: 4.5px solid #000;
 }
 
+/* Header-Login-CSS */
+
+.loginflexmain {
+  display: flex;
+  column-gap: 30%;
+  align-items: center;
+}
+
+.MegamenuAuth {
+  margin-bottom: 0;
+}
+
+.authBtn {
+  display: flex;
+  justify-content: center;
+}
+.mainloginflexmain {
+  margin-right: 2%;
+}
+
+.activeStateMegamenu .Megamenulogo1::after {
+  background-image: url("data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20transform='rotate(90)'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M4%2017H20M4%2012H20M4%207H20'%20stroke='%23000000'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.activeStateMegamenu .Megamenulogo1 {
+  color: #000;
+}
+
+@media (max-width: 1600px) and (min-width: 1400px) {
+  .Megamenumenuitem span {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .scrolled .Megamenutop-bar {
+    padding: 1rem 3rem;
+  }
+
+  .mainloginflexmain {
+    margin-right: 0%;
+    width: 16%;
+  }
+
+  .Megamenulogo1 {
+    top: 2px;
+    width: max-content;
+    height: auto;
+    left: -20px;
+  }
+
+  .loginflexmain {
+    column-gap: 35%;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 1300px) {
+  .Megamenumenuitem span {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .scrolled .Megamenutop-bar {
+    padding: 1rem 3rem;
+  }
+
+  .mainloginflexmain {
+    margin-right: 2%;
+    width: 16%;
+  }
+
+  .Megamenulogo1 {
+    top: 2px;
+    width: max-content;
+    height: auto;
+    left: -20px;
+  }
+
+  .loginflexmain {
+    column-gap: 35%;
+  }
+}
+
+/* Header-Login-CSS */
+
 @media (max-width: 2500px) and (min-width: 2000px) {
   .MegamenumenuitemsMain {
     width: 40%;
@@ -653,15 +741,15 @@
   }
 
   .Megamenulogo1 {
-    font-size: 11px;
+    font-size: 14px;
   }
 
-  .Megamenulogo1 {
+  /* .Megamenulogo1 {
     top: -3px;
     width: 24px;
     height: 24px;
     left: -25px;
-  }
+  } */
 
   .scrolled .Megamenutop-bar {
     padding: 1rem 5rem;
@@ -707,8 +795,8 @@
     padding: 3rem;
   }
   .Megamenulogo {
-    width: 100px;
-    height: 73px;
+    width: 80px;
+    height: 59px;
   }
 
   .Megamenumenuitem {
@@ -869,7 +957,13 @@
   }
 
   .mobilesvgSize:nth-child(4) {
-    visibility: hidden;
+    /* visibility: hidden; */
+  }
+
+  .mobilesvgSize:nth-child(4) img {
+    width: 30px;
+    height: 30px;
+    filter: blur();
   }
 
   .mainMegamenuContainer {
@@ -894,7 +988,7 @@
     position: absolute;
     right: 15.5%;
     width: 1px;
-    width: 0px;
+    /* width: 0px; */
     height: 55px;
     background: #e9e6e6;
     top: 0px;
@@ -911,3 +1005,381 @@
     top: 0px;
   }
 }
+
+/* Header-Login-CSS */
+
+.loginflexmain {
+  display: flex;
+  column-gap: 30%;
+  align-items: center;
+}
+
+.MegamenuAuth {
+  margin-bottom: 0;
+}
+
+.authBtn {
+  display: flex;
+  justify-content: center;
+}
+.mainloginflexmain {
+  margin-right: 2%;
+}
+
+.activeStateMegamenu .Megamenulogo1::after {
+  background-image: url("data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20transform='rotate(90)'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M4%2017H20M4%2012H20M4%207H20'%20stroke='%23000000'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.activeStateMegamenu .Megamenulogo1 {
+  color: #000;
+}
+
+@media (max-width: 1600px) and (min-width: 1400px) {
+  .Megamenumenuitem span {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .scrolled .Megamenutop-bar {
+    padding: 1rem 3rem;
+  }
+
+  .mainloginflexmain {
+    margin-right: 0%;
+    width: 16%;
+  }
+
+  .Megamenulogo1 {
+    top: 2px;
+    width: max-content;
+    height: auto;
+    left: -20px;
+  }
+
+  .loginflexmain {
+    column-gap: 35%;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 1300px) {
+  .Megamenumenuitem span {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .scrolled .Megamenutop-bar {
+    padding: 1rem 3rem;
+  }
+
+  .mainloginflexmain {
+    margin-right: 2%;
+    width: 16%;
+  }
+
+  .Megamenulogo1 {
+    top: 2px;
+    width: max-content;
+    height: auto;
+    left: -20px;
+  }
+
+  .loginflexmain {
+    column-gap: 35%;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .Megamenumenuitem span {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .scrolled .Megamenutop-bar {
+    padding: 1rem 3rem;
+  }
+
+  .mainloginflexmain {
+    margin-right: 3%;
+    width: 16%;
+  }
+
+  .Megamenulogo1 {
+    top: 2px;
+    width: max-content;
+    height: auto;
+    left: -20px;
+  }
+
+  .loginflexmain {
+    column-gap: 35%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1100px) {
+  .Megamenumenuitem span {
+    padding-right: 18px;
+    padding-left: 18px;
+    font-size: 10px;
+  }
+
+  .scrolled .Megamenutop-bar {
+    padding: 1rem 3rem;
+  }
+
+  .mainloginflexmain {
+    margin-right: 3%;
+    width: 16%;
+  }
+
+  .Megamenulogo1 {
+    top: 2px;
+    width: max-content;
+    height: auto;
+    left: -20px;
+  }
+
+  .loginflexmain {
+    column-gap: 38%;
+  }
+
+  .authBtn {
+    padding: 5px 26px;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+  .Megamenumenuitem span {
+    padding-right: 17px;
+    padding-left: 17px;
+    font-size: 9px;
+  }
+
+  .Megamenumenuitem {
+    font-size: 11px;
+    padding: 0;
+  }
+
+  .scrolled .Megamenutop-bar {
+    padding: 1rem 1rem;
+  }
+
+  .mainloginflexmain {
+    margin-right: 3%;
+    width: 16%;
+  }
+
+  .Megamenulogo1 {
+    top: 1px;
+    width: max-content;
+    height: auto;
+    left: -20px;
+  }
+
+  .loginflexmain {
+    column-gap: 40%;
+  }
+
+  .authBtn {
+    padding: 5px 22px;
+    font-size: 11px;
+  }
+
+  .MegamenumenuitemsMain {
+    width: 63%;
+  }
+  .Megamenulogo {
+    width: 80px;
+    height: 59px;
+  }
+
+  .scrolled .Megamenulogo {
+    width: 80px;
+    height: 59px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 900px) {
+  .HomePageStyle .authBtn.login {
+    border: none;
+  }
+  .scrolled .authBtn.login {
+    border: none;
+  }
+
+  .activeStateMegamenu .authBtn.login {
+    border: none;
+  }
+  .Megamenumenuitem span {
+    padding-right: 17px;
+    padding-left: 17px;
+    font-size: 9px;
+  }
+
+  .Megamenumenuitem {
+    font-size: 11px;
+    padding: 0;
+  }
+
+  .scrolled .Megamenutop-bar {
+    padding: 1rem 1rem;
+  }
+
+  .mainloginflexmain {
+    margin-right: 0%;
+    width: 16%;
+  }
+
+  .Megamenulogo1 {
+    top: 1px;
+    width: max-content;
+    height: auto;
+    left: -20px;
+  }
+
+  .loginflexmain {
+    column-gap: 46%;
+  }
+
+  .authBtn.login {
+    background: transparent;
+    color: #a34493;
+    border: none;
+  }
+
+  .authBtn {
+    padding: 0;
+    font-size: 0;
+  }
+
+  .authBtn {
+    background: transparent;
+    border: none;
+  }
+
+  .authBtn:hover {
+    background: transparent;
+    border: none;
+  }
+
+  .authBtn img {
+    width: 30px;
+    height: 30px;
+    /* background-color: transparent; */
+  }
+
+  .MegamenumenuitemsMain {
+    width: 67%;
+  }
+  .Megamenulogo {
+    width: 70px;
+    height: 51px;
+  }
+
+  .scrolled .Megamenulogo {
+    width: 70px;
+    height: 51px;
+  }
+
+  .Megamenumenudesktop {
+    padding-top: 0px;
+  }
+  .authBtn span {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+  .HomePageStyle .authBtn.login {
+    border: none;
+  }
+  .scrolled .authBtn.login {
+    border: none;
+  }
+
+    .activeStateMegamenu .authBtn.login {
+    border: none;
+  }
+  .Megamenumenuitem span {
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 8px;
+  }
+
+  .authBtn.login:hover {
+    background: transparent;
+  }
+
+  .Megamenumenuitem {
+    font-size: 11px;
+    padding: 0;
+  }
+
+  .scrolled .Megamenutop-bar {
+    padding: 1rem 1rem;
+  }
+
+  .mainloginflexmain {
+    margin-right: 0%;
+    width: 16%;
+  }
+
+  .Megamenulogo1 {
+    top: 1px;
+    width: max-content;
+    height: auto;
+    left: -20px;
+  }
+
+  .loginflexmain {
+    column-gap: 46%;
+  }
+
+  .authBtn.login {
+    background: transparent;
+    color: #a34493;
+    border: none;
+  }
+
+  .authBtn {
+    padding: 0;
+    font-size: 0;
+  }
+
+  .authBtn {
+    background: transparent;
+    border: none;
+  }
+
+  .authBtn:hover {
+    background: transparent;
+    border: none;
+  }
+
+  .authBtn img {
+    width: 27px;
+    height: 27px;
+    /* background-color: transparent; */
+  }
+
+  .MegamenumenuitemsMain {
+    width: 67%;
+  }
+  .Megamenulogo {
+    width: 70px;
+    height: 51px;
+  }
+
+  .scrolled .Megamenulogo {
+    width: 70px;
+    height: 51px;
+  }
+
+  .Megamenumenudesktop {
+    padding-top: 0px;
+  }
+  .authBtn span {
+    display: none;
+  }
+}
+
+/* Header-Login-CSS */

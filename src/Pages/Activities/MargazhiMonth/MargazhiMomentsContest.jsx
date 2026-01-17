@@ -187,7 +187,7 @@ export default function MargazhiMomentsContest() {
         payload,
         {
           headers: { "Content-Type": "multipart/form-data" },
-        }
+        },
       );
 
       if (res.status === 200 || res.status === 201) {
@@ -213,7 +213,7 @@ export default function MargazhiMomentsContest() {
     } catch (error) {
       console.error(error);
       toast.error(
-        error?.response?.data?.message || "Something went wrong. Try again."
+        error?.response?.data?.message || "Something went wrong. Try again.",
       );
     } finally {
       setLoading(false);
@@ -238,7 +238,7 @@ export default function MargazhiMomentsContest() {
   return (
     <>
       {/* ================= SEO ================= */}
-      {/* <Helmet>
+      <Helmet>
         <title>Margazhi Month Moments | Photography Contest</title>
         <meta
           name="description"
@@ -253,9 +253,9 @@ export default function MargazhiMomentsContest() {
           rel="canonical"
           href="/contest/margazhi-month-photography-contest"
         />
-      </Helmet> */}
+      </Helmet>
 
-      <Helmet>
+      {/* <Helmet>
         <title>Dhinesh Margazhi Month Moments | Photography Contest</title>
         <meta
           name="description"
@@ -277,7 +277,7 @@ export default function MargazhiMomentsContest() {
           property="og:url"
           content="https://www.superchennai.com/contest/margazhi-month-photography-contest"
         />
-      </Helmet>
+      </Helmet> */}
 
       <ToastContainer position="top-center" />
 

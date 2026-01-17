@@ -104,7 +104,7 @@ export default function HotshotChennaiContest() {
     try {
       const res = await axios.post(
         `${API_BASE_URL_API}/all/hotshot-chennai/submit`,
-        payload
+        payload,
       );
 
       if (res.status === 200 || res.status === 201) {
@@ -130,7 +130,7 @@ export default function HotshotChennaiContest() {
       }
     } catch (err) {
       toast.error(
-        err?.response?.data?.message || "Something went wrong. Try again."
+        err?.response?.data?.message || "Something went wrong. Try again.",
       );
     } finally {
       setLoading(false);
@@ -140,9 +140,8 @@ export default function HotshotChennaiContest() {
   return (
     <>
       {/* ================= SEO ================= */}
-   
 
-       <Helmet>
+      <Helmet>
         <title>Hotshot Chennai | Photography Contest</title>
         <meta
           name="description"

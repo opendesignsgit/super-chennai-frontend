@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function Work() {
   const [previewSrc, setPreviewSrc] = useState(
-    "/images/Work-Images/employment.jpg"
+    "/images/Work-Images/employment.jpg",
   );
   const [previewAlt, setPreviewAlt] = useState("jobs in chennai");
 
@@ -95,16 +95,18 @@ export default function Work() {
 
   return (
     <>
-      {/* <Helmet>
-        <title>Work in Chennai | Jobs, Career Growth, Startups, Networking</title>
+      <Helmet>
+        <title>
+          Work in Chennai | Jobs, Career Growth, Startups, Networking
+        </title>
         <meta
           name="description"
           content="From job opportunities in Chennai to career growth, discover everything about networking in Chennai, unicorns, co-working spaces, and work-life balance."
         />
         <link rel="canonical" href="/work-in-chennai" />
-      </Helmet> */}
+      </Helmet>
 
-      <Helmet>
+      {/* <Helmet>
         <title>Volunteer in Chennai : Connection with Communities</title>
         <meta
           name="description"
@@ -128,7 +130,7 @@ export default function Work() {
           property="og:url"
           content="https://www.superchennai.com/contest/margazhi-month-photography-contest"
         />
-      </Helmet>
+      </Helmet> */}
       {/* Top Banner */}
       <div
         className="WorkBgSection VolunteerBgSection notHome"

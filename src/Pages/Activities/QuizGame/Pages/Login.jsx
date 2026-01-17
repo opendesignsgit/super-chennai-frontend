@@ -11,10 +11,8 @@ import { useRef } from "react";
 export default function Login({ setIsLoggedIn }) {
   const navigate = useNavigate();
   const { token } = useParams();
-
   // page state
   const [page, setPage] = useState("login");
-
   // forms
   const [form, setForm] = useState({ email: "", password: "" });
   const [email, setEmail] = useState("");
@@ -71,24 +69,7 @@ export default function Login({ setIsLoggedIn }) {
   // =========================================
   //       LOGIN SUBMIT
   // =========================================
-  // const handleLogin = async (e) => {
-  //   e.preventDefault();
-  //   const error = validateLogin();
-  //   if (error) return toast.error(error);
-
-  //   try {
-  //     const res = await axios.post(`${API_BASE_URL_API}/auth/login`, form);
-
-  //     localStorage.setItem("token", res.data.token);
-  //     setIsLoggedIn(true);
-
-  //     toast.success("Login successful!");
-  //     setTimeout(() => navigate("/questions"), 1000);
-  //   } catch (err) {
-  //     toast.error(err.response?.data?.message || "Invalid login");
-  //   }
-  // };
-
+  
   const handleLogin = async (e) => {
     e.preventDefault();
     const error = validateLogin();
@@ -97,7 +78,6 @@ export default function Login({ setIsLoggedIn }) {
     try {
       const res = await axios.post(`${API_BASE_URL_API}/auth/login`, form);
 
-      // Save token + timestamp for 2-day expiry
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("tokenTime", Date.now());
 
@@ -245,7 +225,8 @@ export default function Login({ setIsLoggedIn }) {
             
 
               <form onSubmit={handleLogin} className="space-y-4">
-                <input
+
+                {/* <input
                   type="email"
                   name="email"
                   placeholder="Email Address"
@@ -259,9 +240,9 @@ export default function Login({ setIsLoggedIn }) {
                     setForm({ ...form, password: e.target.value })
                   }
                   placeholder="Password"
-                />
+                /> */}
 
-                <div className="text-right">
+                {/* <div className="text-right">
                   <button
                     type="button"
                     onClick={() => setPage("forgot")}
@@ -274,7 +255,7 @@ export default function Login({ setIsLoggedIn }) {
                   <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button-full">
                     Login
                   </button>
-                </div>
+                </div> */}
               </form>
             </>
           )}
@@ -309,11 +290,11 @@ export default function Login({ setIsLoggedIn }) {
           )}
 
           {/* ----------  Added OTP button ---------- */}
-          <div className="flex items-center ">
+          {/* <div className="flex items-center ">
             <div className="flex-grow h-px bg-gray-300"></div>
             <span className="px-3 text-gray-600 font-medium">OR</span>
             <div className="flex-grow h-px bg-gray-300"></div>
-          </div>
+          </div> */}
 
           <button
             type="button"

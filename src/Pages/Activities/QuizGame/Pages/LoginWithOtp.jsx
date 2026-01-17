@@ -44,7 +44,8 @@ export default function LoginOtp() {
       setLoading(false);
     }
   };
-
+  
+  // VERIFY OTP 
   const handleVerifyOtp = async (e) => {
     e.preventDefault();
     setMessage("");

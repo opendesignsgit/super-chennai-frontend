@@ -292,6 +292,9 @@ import AdminView from "./Pages/Activities/QuizGame/Pages/AdminView";
 import LoginWithOtp from "./Pages/Activities/QuizGame/Pages/LoginWithOtp";
 import VerifyOtp from "./Pages/Activities/QuizGame/Pages/VerifyOtp";
 
+import LoginUser from "./Pages/login/login"
+import VerifyOTPPms from "./Pages/login/VerifyOTP"
+
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   const [animate, setAnimate] = useState(false);
@@ -700,6 +703,19 @@ function App() {
         />
 
         {/* PUBLICK ROTES  */}
+
+
+        {/* LoginUser */}
+        
+        <Route
+          path="LoginUser"
+          element={<LoginUser />}
+        />
+
+           <Route
+          path="verify-otp-pms"
+          element={<VerifyOTPPms />}
+        />
 
         <Route
           path="/contest/margazhi-month-photography-contest"

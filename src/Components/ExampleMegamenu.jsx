@@ -7,6 +7,9 @@ import Search from "./Search";
 import { useTranslation } from "react-i18next";
 import LanguageDropdown from "../Components/LanguageDropdown/Language";
 import LanguageSwitcher from "../Components/LanguageDropdown/LanguageSwitcher";
+import LoginIcon from '../../public/images/icons/user.svg'
+import LoginOtpModal from "../Pages/Auth/Login";
+
 const menuItems = [
   {
     label: "Live",
@@ -422,6 +425,8 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [mobileAccordionOpenIndex, setMobileAccordionOpenIndex] =
     useState(null);
+  const [open, setOpen] = useState(false);
+
   const handleMobileMenuAccordionToggle = (index) => {
     setMobileAccordionOpenIndex(
       mobileAccordionOpenIndex === index ? null : index
@@ -520,9 +525,8 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
             }}
           >
             <div
-              className={`Megamenutop-bar ${
-                activeMenu ? "activeStateMegamenu" : ""
-              }`}
+              className={`Megamenutop-bar ${activeMenu ? "activeStateMegamenu" : ""
+                }`}
             >
               <div
                 style={{ cursor: "pointer" }}
@@ -544,11 +548,10 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                   {menuItems.map((item, i) => (
                     <li
                       key={i}
-                      className={`Megamenumenuitem ${
-                        activeMenu?.label === item.label
-                          ? "activeMegamenuSection"
-                          : ""
-                      }`}
+                      className={`Megamenumenuitem ${activeMenu?.label === item.label
+                        ? "activeMegamenuSection"
+                        : ""
+                        }`}
                       onClick={() => {
                         setActiveMenu(item);
                         setMenuVisible(false);
@@ -560,7 +563,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                         setMenuVisible(true);
                         setHoveredImage(
                           sectionImageMap[item.label] ||
-                            "/images/FirstSliderImage.png"
+                          "/images/FirstSliderImage.png"
                         );
                       }}
                     >
@@ -573,41 +576,19 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                 </ul>
               </div>
 
-              {/* <div className="MegamenuAuth ">
-                {!user ? (
-                  <>
-                    <button
-                      className="authBtn login"
-                      onClick={() => navigate("/login")}
-                    >
-                      Login
-                    </button>
-                    <button
-                      className="authBtn register"
-                      onClick={() => navigate("/register")}
-                    >
-                      Register
-                    </button>
-                  </>
-                ) : (
-                  <div className="userDropdown">
-                    <span className="userName">Hi, {user.name}</span>
-                    <div className="userMenu">
-                      <Link to="/dashboard">Dashboard</Link>
-                      <Link to="/profile">Profile</Link>
-                      <button onClick={handleLogout}>Logout</button>
-                    </div>
-                  </div>
-                )}
-              </div> */}
+              <div className="MegamenuAuth show-only-1100">
+                <button className="authBtn login flex items-center gap-2"onClick={() => setOpen(true)}>
+                  
+                  <img src={LoginIcon} alt="login" className="w-4 h-4" />
+                  LOGIN
+                </button>  {/* <button class="authBtn register">REGISTER</button> */}
+              </div>
+
+
 
               <div>
-                {/* <div class="MegamenuAuth">
-                  <button class="authBtn login">Login</button>
-                  <button class="authBtn register">Register</button>
-                </div> */}
+
                 <div
-                  style={{ cursor: "pointer" }}
                   className="Megamenulogo1 hidden md:block"
                   onClick={() => setMenuBar(true)}
                 >
@@ -618,9 +599,8 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
 
             {activeMenu && (
               <div
-                className={`Newmegamenu hidden md:block ${
-                  menuVisible ? "show" : ""
-                }`}
+                className={`Newmegamenu hidden md:block ${menuVisible ? "show" : ""
+                  }`}
               >
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -645,20 +625,20 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                         >
                           <h4 className="mega-block-title">
                             {block.title.length > 15 &&
-                            block.title.includes(" ")
+                              block.title.includes(" ")
                               ? (() => {
-                                  const words = block.title.split(" ");
-                                  const mid = Math.floor(words.length / 2);
-                                  const before = words.slice(0, mid).join(" ");
-                                  const after = words.slice(mid).join(" ");
-                                  return (
-                                    <>
-                                      {before}
-                                      <br />
-                                      {after}
-                                    </>
-                                  );
-                                })()
+                                const words = block.title.split(" ");
+                                const mid = Math.floor(words.length / 2);
+                                const before = words.slice(0, mid).join(" ");
+                                const after = words.slice(mid).join(" ");
+                                return (
+                                  <>
+                                    {before}
+                                    <br />
+                                    {after}
+                                  </>
+                                );
+                              })()
                               : block.title}
                           </h4>
 
@@ -754,6 +734,9 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
           </nav>
         </header>
       </div>
+
+      <LoginOtpModal open={open} onClose={() => setOpen(false)} />
+
     </>
   );
 };

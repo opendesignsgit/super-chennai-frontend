@@ -76,9 +76,9 @@
   width: 40%;
   background-color: #a44294;
   color: white;
-  padding: 0.5rem 1rem; 
-  border-radius: 10.15rem; 
-  font-weight: 600; 
+  padding: 0.5rem 1rem;
+  border-radius: 10.15rem;
+  font-weight: 600;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
@@ -90,12 +90,12 @@
 }
 
 .theme-button:hover {
-  background-color: #922f77; 
+  background-color: #922f77;
   transform: scale(1.02);
 }
-.themelink-color{
-  color:#a44294
 
+.themelink-color {
+  color: #a44294
 }
 
 /*############## SECONDARY BUTTON ###################*/
@@ -111,47 +111,49 @@
   transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
 
-.theme-button-full{
+.theme-button-full {
   width: 100%;
   background-color: #a44294;
   color: white;
-  padding: 0.5rem 1rem; 
-  border-radius: 10.15rem; 
-  font-weight: 600; 
+  padding: 0.5rem 1rem;
+  border-radius: 10.15rem;
+  font-weight: 600;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
-.theme-button-full:hover{
-  background-color: #922f77; 
+
+.theme-button-full:hover {
+  background-color: #922f77;
   transform: scale(1.02);
 }
 
 
-.theme-button-small{
+.theme-button-small {
   /* width: 10%; */
   background-color: #a44294;
   color: white;
-  padding: 0.5rem 1rem; 
-  border-radius: 10.15rem; 
-  font-weight: 600; 
+  padding: 0.5rem 1rem;
+  border-radius: 10.15rem;
+  font-weight: 600;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
-.theme-button-small:hover{
-  background-color: #922f77; 
+
+.theme-button-small:hover {
+  background-color: #922f77;
   transform: scale(1.02);
 }
 
 
-.theme-button-smallNormal{
+.theme-button-smallNormal {
   /* width: 10%; */
   background-color: #a44294;
   color: white;
-  padding: 0.5rem 1rem; 
+  padding: 0.5rem 1rem;
   /* border-radius: 10.15rem;  */
-  font-weight: 600; 
+  font-weight: 600;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
@@ -185,10 +187,12 @@
 
 
 .theme-button-secondary:hover {
-  background-color: #a4429420; /* light transparent tint */
+  background-color: #a4429420;
+  /* light transparent tint */
   color: #922f77;
   transform: scale(1.02);
 }
+
 @media (max-width: 768px) {
   .carryformPageSection {
     padding: 0 !important;
@@ -207,15 +211,18 @@
     cursor: pointer;
   }
 }
+
 .goog-te-gadget-simple {
   display: inline-flex !important;
   align-items: center !important;
   padding: 6px 12px !important;
-  background-color: #d81d97 !important; /* Tailwind blue-700 */
+  background-color: #d81d97 !important;
+  /* Tailwind blue-700 */
   color: #fff !important;
   font-size: 14px !important;
   font-weight: 500 !important;
-  border-radius: 6px !important; /* Tailwind rounded-md */
+  border-radius: 6px !important;
+  /* Tailwind rounded-md */
   cursor: pointer !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
   text-decoration: none !important;
@@ -232,27 +239,33 @@
   text-decoration: none !important;
   display: flex !important;
   align-items: center !important;
-  gap: 4px !important; /* space between text and arrow */
+  gap: 4px !important;
+  /* space between text and arrow */
 }
 
 /* Dropdown arrow */
 .goog-te-gadget-simple a span[aria-hidden="true"] {
-  color: #d1d5db !important; /* Tailwind gray-300 */
+  color: #d1d5db !important;
+  /* Tailwind gray-300 */
   margin-left: 4px !important;
 }
 
 /* Hover effect */
 .goog-te-gadget-simple:hover {
-  background-color: #2563eb !important; /* Tailwind blue-600 */
+  background-color: #2563eb !important;
+  /* Tailwind blue-600 */
 }
 
 .language-item {
   display: inline-flex;
   align-items: center;
-  gap: 6px; /* space between arrow and text */
+  gap: 6px;
+  /* space between arrow and text */
   padding: 6px 12px;
-  background-color: #f3f4f6; /* Tailwind gray-100 */
-  color: #1f2937; /* Tailwind gray-800 */
+  background-color: #f3f4f6;
+  /* Tailwind gray-100 */
+  color: #1f2937;
+  /* Tailwind gray-800 */
   font-weight: 500;
   font-size: 14px;
   border-radius: 6px;
@@ -261,13 +274,15 @@
 }
 
 .language-item:hover {
-  background-color: #2563eb; /* Tailwind blue-600 */
+  background-color: #2563eb;
+  /* Tailwind blue-600 */
   color: #ffffff;
 }
 
 .language-item .indicator {
   font-weight: bold;
-  color: #6b7280; /* Tailwind gray-500 */
+  color: #6b7280;
+  /* Tailwind gray-500 */
 }
 
 .language-item:hover .indicator {
@@ -288,14 +303,6 @@
 
 
 
-
-
-
-
-
-
-
-
 @media (max-width: 700px) {
   .nammaStorieslink {
     bottom: 269px !important;
@@ -305,30 +312,31 @@
     right: 18px;
     top: 38%;
   }
+
   .quizsuperchennai {
-  top: 100px;
-}
+    top: 100px;
+  }
 
 
 }
 
 
 @media (max-width:640px) {
-.carquizbanner {
-  /* margin-top: 100px; */
-}
+  .carquizbanner {
+    /* margin-top: 100px; */
+  }
 
 
-.carquizbanner img {
-  width: 100%;
-  margin-top: 19%;
-  height: auto !important;
-}
+  .carquizbanner img {
+    width: 100%;
+    margin-top: 19%;
+    height: auto !important;
+  }
 
 
-#mainBookNow {
-  scroll-margin-top: 210px;
-}
+  #mainBookNow {
+    scroll-margin-top: 210px;
+  }
 }
 
 .clcboxItemss .clcboxICont p.linkpara a img {
@@ -339,6 +347,7 @@
   position: relative;
   z-index: 9999;
 }
+
 .goog-te-banner-frame {
   display: none !important;
 }
@@ -354,14 +363,15 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
+  margin-bottom: 10px;
 }
 
 /* Common Button */
 .authBtn {
-  padding: 7px 18px;
+  padding: 5px 30px;
   font-size: 14px;
-  border-radius: 22px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.25s ease;
   font-weight: 500;
@@ -571,6 +581,7 @@
   color: #6b7280;
   font-size: 14px;
 }
+
 .admin-message {
   max-width: 300px;
   white-space: pre-wrap;

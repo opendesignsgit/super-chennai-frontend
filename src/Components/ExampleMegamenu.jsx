@@ -579,7 +579,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                 </ul>
               </div>
 
-              <div className="mainloginflexmain">
+              {/* <div className="mainloginflexmain">
                 <div className="loginflexmain">
                   <div className="MegamenuAuth show-only-1100">
                     <button
@@ -589,7 +589,6 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                       <img src={LoginIcon} alt="login" className="w-4 h-4" />
                       <span>LOGIN</span>
                     </button>{" "}
-                    {/* <button class="authBtn register">REGISTER</button> */}
                   </div>
                   <div
                     className="Megamenulogo1 hidden md:block cursor-pointer"
@@ -598,7 +597,19 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                     MENU
                   </div>
                 </div>
+              </div> */}
+
+                     <div>
+
+                <div
+                  className="Megamenulogo1 hidden md:block"
+                  onClick={() => setMenuBar(true)}
+                >
+                  MENU
+                </div>
               </div>
+
+
             </div>
 
             {activeMenu && (

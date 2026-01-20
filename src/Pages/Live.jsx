@@ -111,7 +111,7 @@ export default function Live() {
   return (
     <>
       <Helmet>
-        <title>Living in Chennai: Work, Commute & Learn</title>
+        <title>Living in Chennai: Everyday Chennai Life Essential</title>
         <meta
           name="description"
           content="Explore Chennai transportation, find top jobs in Chennai, and discover leading schools and colleges in Chennai for a balanced and fulfilling city life."

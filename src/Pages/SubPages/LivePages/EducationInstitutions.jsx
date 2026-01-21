@@ -170,7 +170,7 @@ export default function EducationInstitutions() {
               <p>Live &nbsp; in Chennai &nbsp; Live &nbsp; in Chennai</p>
             </div>
             <div className="workIntro !pb-0">
-              <h3>Educational Institutions in Chennai</h3>
+              <h1>Educational Institutions in Chennai </h1>
               <p>
                 Chennai has a wide range of educational possibilities, from
                 kindergarten to high school and colleges, from undergraduate to

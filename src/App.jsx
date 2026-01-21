@@ -521,10 +521,9 @@ function App() {
       <ScrollToHashElement />
       <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
 
-      {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && ( */}
       {showPopup && !hideOnMargazhiPage && !hideOnBlog && (
         <ImagePopup
-          imageUrl="/images/events/margazhi-contest-home-popup.jpg"
+          imageUrl="/images/events/mobile-popup-hotshots.jpg"
           onClose={() => setShowPopup(false)}
         />
       )}
@@ -573,15 +572,15 @@ function App() {
       </div>
       {!hideOnMargazhiPage && (
         <div
-          id="margazhi-moments-tab"
+          id="hotshots-event-tab"
           ref={stickyRef}
           className={`super-chennai-contest pointcastSticky nammaStorieslink margazhi-photography-contest${
             footerReached ? "footerreached" : ""
           }`}
         >
-          <a href="/contest/margazhi-month-photography-contest">
+          <a href="/contest/hotshots-photography-contest">
             <img
-              src="/images/tab-margazhi.png"
+              src="/images/tap-button-hotshots.png"
               alt="artificial intelligence challenge"
             />
           </a>

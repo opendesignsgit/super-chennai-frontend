@@ -196,7 +196,7 @@ export default function Live() {
                 For families relocating or settling down,
                 <h4 className="paraoneLiveSection seoText">
                   {" "}
-                  Educational Institutions in Chennai
+                  Educational Institutions in Chennai  
                 </h4>{" "}
                 include top-rated CBSE, ICSE, IGCSE, and IB institutions, along
                 with renowned universities and professional colleges. Whatever

@@ -7,6 +7,7 @@ import Search from "../../../Components/Search";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import LiveSlider from "./LiveSlider";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export default function EmploymentinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -139,6 +140,14 @@ export default function EmploymentinChennai() {
 
   return (
     <>
+      <Helmet>
+        <title>Employment in Chennai | Industry Based Jobs & Careers</title>
+        <meta
+          name="description"
+          content="Explore Employment in Chennai across IT hubs, automobile manufacturing, electronics parks, startups, and emerging business sectors."
+        />
+        <link rel="canonical" href="/employment-in-chennai" />
+      </Helmet>
       {/*----------------- Banner ----------------*/}
       <div className="accaodomationBannerSection">
         <img src="/images/Live-Images/SubPages/Employment-Banner.jpg" alt="" />
@@ -172,10 +181,8 @@ export default function EmploymentinChennai() {
             </p>
           </div>
           <div className="workIntro">
-            {/* <h3>A Center for Various Job Prospects</h3> */}
             <h1>Employment in Chennai</h1>
 
-            
             <p>
               Chennai's strong economy provides a diverse array of job
               opportunities in multiple sectors, drawing skilled individuals

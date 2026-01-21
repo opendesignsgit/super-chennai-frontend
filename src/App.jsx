@@ -513,7 +513,7 @@ function App() {
     location.pathname === "/blog" || location.pathname.startsWith("/blog/");
 
   const hideOnMargazhiPage =
-    location.pathname === "/contest/margazhi-month-photography-contest";
+    location.pathname === "/contest/hotshots-photography-contest";
   // const hideOnBlog = location.pathname === "/contest/blog/:slug";
 
   return (
@@ -574,7 +574,7 @@ function App() {
         <div
           id="hotshots-event-tab"
           ref={stickyRef}
-          className={`super-chennai-contest pointcastSticky nammaStorieslink margazhi-photography-contest${
+          className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest${
             footerReached ? "footerreached" : ""
           }`}
         >

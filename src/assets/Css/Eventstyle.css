@@ -801,6 +801,23 @@ textarea {
 .reimaginePage .accaodomationBannerSection img {
   object-position: 30% center;
 }
+
+  .popupStyleMainContainer button {
+    color: #fff;
+    background: #a44294;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 40px;
+    top: 17px;
+    right: 17px;
+    padding-bottom: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 @media (max-width: 1600px) and (min-width: 1300px) {
   .popupSection {
     height: 70vh;
@@ -865,7 +882,19 @@ textarea {
   }
   .popupStyleMainContainer button {
     color: #fff;
-    right: 22px;
+    background: #a44294;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 40px;
+    top: 5px;
+    right: 3px;
+    padding-bottom: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   .popupStyleMainContainer {
     padding: 15px;

@@ -10,9 +10,10 @@ const ImagePopup = ({ onClose, imageUrl }) => {
   }, []);
 
   return (
-    // <div className="fixed popupImageBackground inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[9999] transition-opacity duration-300 ease-in-out"id="superchennai-quiz-popup">
-          <div className="fixed popupImageBackground inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[9999] transition-opacity duration-300 ease-in-out hotshots-popup"id="hotshots-popup-click">
-
+    <div
+      className="fixed popupImageBackground inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[9999] transition-opacity duration-300 ease-in-out hotshots-popup"
+      id="hotshots-popup-click"
+    >
       <div
         className={`popupStyleMainContainer bg-white p-4 rounded shadow-lg relative max-w-[90%] max-h-[90%] transform transition-all duration-500 ease-in-out ${
           animateIn ? "opacity-100 scale-100" : "opacity-0 scale-90"
@@ -28,7 +29,7 @@ const ImagePopup = ({ onClose, imageUrl }) => {
           &times;
         </button>
         <div
-          className="flex ImagePopupFlex
+          className="flex ImagePopupFlex p-3
         "
           // to="/namma-stories"
           // onClick={onClose}

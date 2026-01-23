@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../assets/Css/ExampleHeader.css";
 import MenuBar from "./MenuBar";
 import { AnimatePresence, motion } from "framer-motion";
@@ -511,6 +511,29 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
     navigate("/");
   };
 
+  const [accountOpen, setAccountOpen] = useState(false);
+  const accountRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (accountRef.current && !accountRef.current.contains(e.target)) {
+        setAccountOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+
+
+useEffect(() => {
+  const storedUser = localStorage.getItem("user");
+  if (storedUser) {
+    setUser(JSON.parse(storedUser));
+  }
+}, []);
+
+
   return (
     <>
       <div className="mainMegamenuContainers">
@@ -526,8 +549,9 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
             }}
           >
             <div
-              className={`Megamenutop-bar ${activeMenu ? "activeStateMegamenu" : ""
-                }`}
+              className={`Megamenutop-bar ${
+                activeMenu ? "activeStateMegamenu" : ""
+              }`}
             >
               <div
                 style={{ cursor: "pointer" }}
@@ -549,10 +573,11 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                   {menuItems.map((item, i) => (
                     <li
                       key={i}
-                      className={`Megamenumenuitem ${activeMenu?.label === item.label
+                      className={`Megamenumenuitem ${
+                        activeMenu?.label === item.label
                           ? "activeMegamenuSection"
                           : ""
-                        }`}
+                      }`}
                       onClick={() => {
                         setActiveMenu(item);
                         setMenuVisible(false);
@@ -564,7 +589,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                         setMenuVisible(true);
                         setHoveredImage(
                           sectionImageMap[item.label] ||
-                          "/images/FirstSliderImage.png",
+                            "/images/FirstSliderImage.png",
                         );
                       }}
                     >
@@ -587,7 +612,56 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                       <img src={LoginIcon} alt="login" className="w-4 h-4" />
                       <span>LOGIN</span>
                     </button>{" "}
+
                   </div>
+                  <div
+                    className="Megamenulogo1 hidden md:block cursor-pointer"
+                    onClick={() => setMenuBar(true)}
+                  >
+                    MENU
+                  </div>
+                </div>
+              </div> */}
+
+              {/* <div className="mainloginflexmain">
+                <div className="loginflexmain">
+                  <div
+                    className="MegamenuAuth show-only-1100 relative"
+                    ref={accountRef}
+                  >
+                    <button
+                      className="authBtn login flex items-center gap-2"
+                      onClick={() => setAccountOpen(!accountOpen)}
+                    >
+                      <img src={LoginIcon} alt="login" className="w-4 h-4" />
+                      <span>MY ACCOUNT</span>
+                    </button>
+
+                    {accountOpen && (
+                      <div
+                        className="fixed w-56 bg-white rounded-xl shadow-xl border border-gray-200 z-[9999] animate-dropdown"
+                        style={{
+                          top: "110px",
+                          right: "110px",
+                        }}
+                      >
+                        <div className="absolute -top-2 right-6 w-4 h-4 bg-white rotate-45 border-l border-t border-gray-200"></div>
+
+                        <ul className="py-2 text-sm text-gray-700">
+                          <li className="px-4 py-3 hover:bg-gray-50 cursor-pointer flex items-center gap-2">
+                            👤 <span>My Profile</span>
+                          </li>
+                      
+                          <li className="border-t mt-2">
+                            <button className="w-full text-left px-4 py-3 text-red-600 hover:bg-red-50 flex items-center gap-2">
+                              🚪 Logout
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+
                   <div
                     className="Megamenulogo1 hidden md:block cursor-pointer"
                     onClick={() => setMenuBar(true)}
@@ -607,13 +681,32 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                 </div>
               </div>
 
-
+              {/* <div className="MegamenuAuth show-only-1100">
+                {!user ? (
+                  <button
+                    className="authBtn login flex items-center gap-2"
+                    onClick={() => setOpen(true)}
+                  >
+                    <img src={LoginIcon} alt="login" className="w-4 h-4" />
+                    <span>LOGIN</span>
+                  </button>
+                ) : (
+                  <button
+                    className="authBtn login flex items-center gap-2"
+                    onClick={() => setOpenAccount(true)}
+                  >
+                    <img src={LoginIcon} alt="account" className="w-4 h-4" />
+                    <span>MY ACCOUNT</span>
+                  </button>
+                )}
+              </div> */}
             </div>
 
             {activeMenu && (
               <div
-                className={`Newmegamenu hidden md:block ${menuVisible ? "show" : ""
-                  }`}
+                className={`Newmegamenu hidden md:block ${
+                  menuVisible ? "show" : ""
+                }`}
               >
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -638,20 +731,20 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                         >
                           <h4 className="mega-block-title">
                             {block.title.length > 15 &&
-                              block.title.includes(" ")
+                            block.title.includes(" ")
                               ? (() => {
-                                const words = block.title.split(" ");
-                                const mid = Math.floor(words.length / 2);
-                                const before = words.slice(0, mid).join(" ");
-                                const after = words.slice(mid).join(" ");
-                                return (
-                                  <>
-                                    {before}
-                                    <br />
-                                    {after}
-                                  </>
-                                );
-                              })()
+                                  const words = block.title.split(" ");
+                                  const mid = Math.floor(words.length / 2);
+                                  const before = words.slice(0, mid).join(" ");
+                                  const after = words.slice(mid).join(" ");
+                                  return (
+                                    <>
+                                      {before}
+                                      <br />
+                                      {after}
+                                    </>
+                                  );
+                                })()
                               : block.title}
                           </h4>
 
@@ -704,7 +797,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
             )}
             <div className="Mobileheader">
               <div className="mobilesvgSize">
-                <Link to="/events">
+                <Link to="/chennai-events">
                   <img
                     src="/images/HomePage-Images/Icons/mobile-Header-Events.svg"
                     alt="chennai events "

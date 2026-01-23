@@ -523,7 +523,7 @@ function App() {
 
       {showPopup && !hideOnMargazhiPage && !hideOnBlog && (
         <ImagePopup
-          imageUrl="/images/events/mobile-popup-hotshots.jpg"
+          imageUrl="/images/events/mobile-popup-hotshots.jpeg"
           onClose={() => setShowPopup(false)}
         />
       )}

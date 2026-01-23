@@ -33,8 +33,8 @@ const slides = [
   {
     type: "image",
     link: "/contest/hotshots-photography-contest",
-    image: "/images/hotshots-banner-homepage.jpg",
-    image1: "/images/mobile-size-banner-hotshots.jpg",
+    image: "/images/hompage-hotshots.jpeg",
+    image1: "/images/mobile-size-banner-hotshots1.jpeg",
     title: "Icon of the month in chennai",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },

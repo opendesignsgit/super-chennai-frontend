@@ -283,7 +283,9 @@ import LanguageSwitcher from "./Components/LanguageDropdown/LanguageSwitcher";
 import { useLocation } from "react-router-dom";
 
 import Register from "./Pages/Activities/QuizGame/Pages/Register";
+import AuthRegister from "./Pages/Auth/Register"
 import Login from "./Pages/Activities/QuizGame/Pages/Login";
+import AuthLogin from "./Pages/Auth/LoginWithOtp"
 import Questions from "./Pages/Activities/QuizGame/Pages/Questions";
 import UsersResultsPage from "./Pages/Activities/QuizGame/Pages/UsersResultsPage";
 // import ForgotPassword from "./Pages/Activities/QuizGame/Pages/ForgotPassword";
@@ -580,7 +582,7 @@ function App() {
         >
           <a href="/contest/hotshots-photography-contest">
             <img
-              src="/images/tap-button-hotshots.png"
+              src="/images/tap-button-hotshots1.png"
               alt="artificial intelligence challenge"
             />
           </a>
@@ -609,7 +611,6 @@ function App() {
 
       <Routes>
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
-
         <Route path="superchennai-restaurants" element={<RestaurantsPage />} />
         <Route path="test" element={<TestPage />} />
         <Route path="/chennai-events" element={<EventsPage />} />
@@ -623,7 +624,6 @@ function App() {
           path="/chennai-contests/:slug"
           element={<SuperchennaiContestDetails />}
         />
-
         <Route
           path="/chennai-icon-of-the-month-details/:slug"
           element={<IconOfMonthDetails />}
@@ -632,16 +632,16 @@ function App() {
           path="/chennai-icon-of-the-month"
           element={<IconOfMonthList />}
         />
-
         {/* Public Routes */}
-        <Route
+        {/* <Route
           path="/register"
           element={
             <PublicRoute>
               <Register />
             </PublicRoute>
           }
-        />
+        /> */}
+        {/* 
         <Route
           path="/login"
           element={
@@ -649,15 +649,35 @@ function App() {
               <Login setIsLoggedIn={setIsLoggedIn} />
             </PublicRoute>
           }
-        />
-        <Route
+        /> */}
+
+        {/* <Route
           path="/login-otp"
           element={
             <PublicRoute>
               <LoginWithOtp />
             </PublicRoute>
           }
+        /> */}
+
+        <Route
+          path="/login-otp"
+          element={
+            <PublicRoute>
+              <AuthLogin setIsLoggedIn={setIsLoggedIn} />
+            </PublicRoute>
+          }
         />
+
+        <Route
+          path="/auth-register"
+          element={
+            <PublicRoute>
+              <AuthRegister />
+            </PublicRoute>
+          }
+        />
+
         <Route
           path="/verify-otp"
           element={
@@ -674,7 +694,6 @@ function App() {
             </PublicRoute>
           }
         />
-
         {/* Protected Routes */}
         <Route
           path="/questions"
@@ -700,22 +719,10 @@ function App() {
             </PrivateRoute>
           }
         />
-
         {/* PUBLICK ROTES  */}
-
-
         {/* LoginUser */}
-        
-        <Route
-          path="LoginUser"
-          element={<LoginUser />}
-        />
-
-           <Route
-          path="verify-otp-pms"
-          element={<VerifyOTPPms />}
-        />
-
+        <Route path="LoginUser" element={<LoginUser />} />
+        <Route path="verify-otp-pms" element={<VerifyOTPPms />} />
         <Route
           path="/contest/margazhi-month-photography-contest"
           element={<MargazhiMomentsContest />}
@@ -724,7 +731,6 @@ function App() {
           path="margazhi-season-2025-chennai"
           element={<MargazhiPageCalendar />}
         />
-
         <Route
           path="/contest/hotshots-photography-contest"
           element={<HotshotChennaiContest />}
@@ -733,29 +739,21 @@ function App() {
         <Route path="/neighbourhood/:slug" element={<NeighbourhoodDetail />} />
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
-
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
-
         {/*----Main-Pages---------*/}
-
         <Route path="/" element={<HomePage />} />
         <Route path="/results" element={<SearchResults />} />
-
         <Route
           path="/volunteer-in-chennai"
           element={<Volunteer popupFunction={popupFunction} />}
         />
         <Route path="/innovate-chennai" element={<Innovate />} />
         <Route path="/invest-in-chennai" element={<Invest />} />
-
         <Route path="/live-in-chennai" element={<Live />} />
-
         <Route path="/visit-chennai" element={<Visit />} />
         <Route path="/work-in-chennai" element={<Work />} />
-
         <Route path="/oldevenslist" element={<EventsHome />} />
         <Route path="/eventsold/:slug" element={<EventsDetailsOld />} />
-
         <Route path="/media-coverage" element={<NewsLetter />} />
         <Route path="/event-function" element={<EventFunction />} />
         <Route path="/namma-stories" element={<NammaStories />} />
@@ -764,7 +762,6 @@ function App() {
           element={<ReimagineChennai />}
         />
         <Route path="/superchennai-contest" element={<SuperChennaiEvents />} />
-
         <Route
           path="/icon-of-the-month-in-chennai"
           element={<Iconsofthemonth />}
@@ -776,9 +773,7 @@ function App() {
         <Route path="/kite-festival-day-4" element={<KiteFestivalDay4 />} />
         <Route path="/technologynew" element={<Technologynewchennai />} />
         <Route path="/educationnew" element={<EducationNew />} />
-
         {/*####################### FUNCHENNAI ########################## */}
-
         <Route
           path="/visit/place-to-visit/beaches-in-chennai"
           element={<BeachesInChennai />}
@@ -816,9 +811,7 @@ function App() {
           path="/visit/things-to-do/go-karting-in-chennai"
           element={<GoKarting />}
         />
-
         {/* DINESH ADDED  */}
-
         <Route path="/whychennai" element={<WhyChennai />} />
         <Route
           path="/invest/chennai-real-estate"
@@ -826,11 +819,9 @@ function App() {
         />
         <Route path="/deeptechairandd" element={<DeepTechAIRI />} />
         <Route path="/chennaiautomotiveev" element={<ChennaiAutoMotiveEv />} />
-
         <Route path="/burmesechennai" element={<BurmeseCusine />} />
         <Route path="/mexicancusine" element={<MexicanCusine />} />
         <Route path="/fintechandfinancial" element={<FintechandFinancial />} />
-
         <Route path="/healthtechmeditech" element={<HealthTechMediTech />} />
         <Route path="/eductechandskill" element={<EductechAndSkill />} />
         <Route
@@ -840,7 +831,6 @@ function App() {
         <Route path="/mediaentertainment" element={<MediaEntertainment />} />
         <Route path="/renewableenergy" element={<RenewableEnergyChennai />} />
         <Route path="/IT-ITeS-SaaS" element={<ITITeSSaaS />} />
-
         {/* innovate pages start */}
         <Route
           path="/innovate/it-companies-in-chennai"
@@ -859,14 +849,11 @@ function App() {
           path="/innovate/ai-companies-in-chennai"
           element={<AIinChennai />}
         />
-
         <Route
           path="/innovate/autotech-chennai"
           element={<AutoTechinChennai />}
         />
-
         {/* NEWLY ADDED  ANTONY */}
-
         <Route
           path="/innovate/health-tech-in-chennai"
           element={<HealthTechinChennai />}
@@ -891,14 +878,11 @@ function App() {
           path="/innovate/ar-vr-companies-in-chennai"
           element={<ARVRchennai />}
         />
-
         <Route
           path="/innovate/robotics-in-chennai"
           element={<RoboticsinChennai />}
         />
-
         {/* Work-Pages */}
-
         <Route
           path="/work/job-opportunities-in-chennai"
           element={<CareerGrowth />}
@@ -916,11 +900,8 @@ function App() {
           path="/work/business-registration-in-chennai"
           element={<EmploymentBusinessPermits />}
         />
-
         {/* Work-Pages */}
-
         {/* Live-Pages */}
-
         <Route path="/costofliving" element={<CostLivinginChennai />} />
         <Route
           path="/live/employment-in-chennai"
@@ -953,21 +934,17 @@ function App() {
           path="/live/transportation-in-chennai"
           element={<Transportation />}
         />
-
         {/* SHYAM ADDEDD LIVE  */}
-
         {/* live pages */}
         <Route
           path="/live/residential-properties-in-chennai"
           element={<Residency />}
         />
         <Route path="/live/cost-of-living-in-chennai" element={<Living />} />
-
         <Route
           path="/transportation-chennai"
           element={<Transportationchennai />}
         />
-
         <Route path="/kanchipuram" element={<Kanchipuram />} />
         <Route path="/kalpakkam" element={<Kalpakkam />} />
         <Route path="/chidambaram" element={<Chidambaram />} />
@@ -985,11 +962,8 @@ function App() {
         <Route path="/Chengalpattu" element={<Chengalpattu />} />
         <Route path="/Sriperumbudur" element={<Sriperumbudur />} />
         <Route path="/WomenSafty" element={<WomenSafty />} />
-
         {/* Live-Pages */}
-
         {/* Invest-Pages */}
-
         <Route
           path="/invest/chennai-events"
           element={<InvestEventsChennai />}
@@ -1027,11 +1001,8 @@ function App() {
           path="/invest/startup-companies-in-chennai"
           element={<InvestStartupsChennai />}
         />
-
         {/* Invest-Pages */}
-
         {/* Visit-Pages */}
-
         <Route
           path="/visit/hotel-accommodation-in-chennai"
           element={<Accomodation />}
@@ -1055,9 +1026,7 @@ function App() {
         />
         <Route path="/visit/events-in-chennai" element={<Events />} />
         <Route path="/visit/conferences-in-chennai" element={<Conferences />} />
-
         {/* Shopping Pages */}
-
         <Route
           path="/visit-shopping-tradition-exploreartist"
           element={<ShoppingTradition />}
@@ -1082,9 +1051,7 @@ function App() {
           path="/visit-shopping-local-finds-savoredible-souvenirs"
           element={<ShoppingLocalFindsSavorEdibleSouvenirs />}
         />
-
         {/* Shopping Pages */}
-
         {/* Place to Visit */}
         <Route
           path="/visit/place-to-visit/chennai-fort"
@@ -1118,11 +1085,8 @@ function App() {
           path="/visit/place-to-visit/botanical-gardens-in-chennai"
           element={<PlacetoVisitBotanicalGardens />}
         />
-
         {/* Place to Visit */}
-
         {/* Things to do */}
-
         <Route
           path="/visit/things-to-do/adventure-places-in-chennai"
           element={<ThingstodoAdventurePlaces />}
@@ -1172,11 +1136,8 @@ function App() {
           element={<ThingstodoNatureWalk />}
         />
         <Route path="/visit-thingstodo-gokart" element={<ThingstodoGokart />} />
-
         {/* Things to do */}
-
         {/* Food sup pages */}
-
         <Route
           path="/classicItalianFlavors"
           element={<ClassicItalianFlavors />}
@@ -1246,42 +1207,34 @@ function App() {
           path="/coastalandreginalspecialist"
           element={<CoastalandReginalSpecialist />}
         />
-
         <Route path="/dimsumandnoodles" element={<DimSumandNoodles />} />
         <Route
           path="/authenticchinesemains"
           element={<AuthenticChineseMains />}
         />
-
         <Route
           path="/breakfasttiffinstaples"
           element={<BreakfastTiffinStaples />}
         />
-
         <Route
           path="/traditionalsouthindianmealsthali"
           element={<TraditionalSouthIndianMealsThali />}
         />
-
         {/* utlities */}
         <Route path="/NorthChennai" element={<NorthChennai />} />
         <Route path="/SouthChennai" element={<SouthChennai />} />
         <Route path="/WestChennai" element={<WestChennai />} />
-
         {/* Food sup pages */}
-
         <Route path="/faqs" element={<Faq />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/icon-of-the-july-month" element={<Iconofthemonth />} />
-
         <Route
           path="/icon-of-the-oct-month-2025"
           element={<IconofthemonthOct />}
         />
-
         <Route
           path="/super-chennai-icon-of-aug-2025"
           element={<IconofthemonthAugust />}
@@ -1294,7 +1247,6 @@ function App() {
           path="/super-chennai-icon-of-sep-2025-1"
           element={<IconofthemonthSeptember1 />}
         />
-
         <Route
           path="/super-chennai-icon-of-dec-2025"
           element={<IconofthemonthDec />}
@@ -1303,35 +1255,27 @@ function App() {
           path="/super-chennai-icon-of-nov-2025"
           element={<IconofthemonthNov />}
         />
-
         <Route
           path="/superchennai-events-details/:url"
           element={<EventsDetails />}
         />
-
         <Route path="contests/chennai-quiz" element={<ChennaiQuiz />} />
-
         {/* temprory url redirect ############### */}
         <Route
           path="/superchennai-quiz"
           element={<Navigate to="/contests/chennai-quiz" replace />}
         />
-
         <Route
           path="/fun-quiz-competition-trivia-night"
           element={<Navigate to="/contests/chennai-quiz" replace />}
         />
-
         <Route
           path="/super-chennai-contests-quiz"
           element={<Navigate to="/contests/chennai-quiz" replace />}
         />
-
         <Route path="/quizform" element={<QuizForm />} />
         <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
-
         {/* ChennaiQuiz */}
-
         <Route path="/TrendingDetails/:id" element={<TrendingDetails />} />
         <Route path="/eventsimman" element={<EventsImman />} />
         <Route path="/eventsvishal" element={<EventsVishal />} />
@@ -1347,14 +1291,10 @@ function App() {
         />
         <Route path="/eventstechstartups" element={<EventsStartups />} />
         {/* Events-Pages */}
-
         {/* ---------Sub-pages--------- */}
-
         {/* new pages Start*/}
         <Route path="/ChennaiNightLife" element={<NightLifeInChennai />} />
-
         {/* Dhinesh Work */}
-
         <Route path="/work/chennai-networks" element={<ChennaiNetworks />} />
         <Route
           path="/live/healthcare-in-chennai"
@@ -1365,10 +1305,8 @@ function App() {
           element={<ChennaiEntertainment />}
         />
         <Route path="/chennaisports" element={<ChennaiSports />} />
-
         {/* Dhinesh Work */}
         <Route path="/SportChennai" element={<SportsInChennai />} />
-
         <Route
           path="/visit/accomadation/luxury-hotels-in-chennai"
           element={<Luxuryhotels />}
@@ -1377,7 +1315,6 @@ function App() {
           path="/visit/restaurants-in-chennai"
           element={<RestaurantsInChennai />}
         />
-
         <Route
           path="/visit/accomadation/affordable-hotels-in-chennai"
           element={<Midrangehotels />}
@@ -1394,7 +1331,6 @@ function App() {
           path="/visit/accomadation/resorts-in-chennai"
           element={<Resortsandvillas />}
         />
-
         {/* Anthony Anna Works */}
         <Route
           path="/taste-of-Thailand-in-Chennai"
@@ -1440,13 +1376,10 @@ function App() {
           path="/Korean-Cuisine-in-Chennai"
           element={<KoreanCuisineinChennai />}
         />
-
         <Route path="/thankyou" element={<Thankyou />} />
         <Route path="/quizthankyou" element={<QuizThankyou />} />
         <Route path="/thank-you" element={<ThankyouForContest />} />
-
         {/* MexicanCuisineinChennai */}
-
         {/* investsup pages */}
         <Route path="/It-Chennai" element={<ItChennai />} />
         <Route path="/Fintech-in-Chennai" element={<FintechChennai />} />
@@ -1457,13 +1390,9 @@ function App() {
         <Route path="/Automotive" element={<Automotive />} />
         <Route path="/EduTech" element={<EduTech />} />
         <Route path="/surfing" element={<Surfing />} />
-
         {/* innovate pages start */}
-
         {/* Pride-of-Chennai */}
-
         <Route path="/hall-of-fame" element={<PrideofChennai />} />
-
         <Route path="/chennai-apps" element={<ChennaiApp />} />
       </Routes>
 

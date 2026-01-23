@@ -174,14 +174,14 @@ export default function HotshotChennaiContest() {
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/events/hotshots-banner-1.jpg"
+            src="/images/events/inner-banner-Hotshots-1.jpeg"
             alt="Super Chennai Quiz"
           />
 
           {/* Mobile Image */}
           <img
             className="block sm:hidden w-full"
-            src="/images/events/hotshots-square-banner.jpg"
+            src="/images/events/hotshots-square-banner1.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>

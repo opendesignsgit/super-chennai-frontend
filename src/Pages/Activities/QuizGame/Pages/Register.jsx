@@ -28,6 +28,7 @@ export default function Register() {
     setForm({ ...form, [name]: type === "checkbox" ? checked : safeValue });
   };
 
+  
   //######### Strong client-side validation ###########
   // const validateForm = () => {
   //   if (!form.name.trim()) return "Name is required";

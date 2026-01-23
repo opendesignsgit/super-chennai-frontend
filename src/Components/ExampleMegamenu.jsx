@@ -5,11 +5,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Search from "./Search";
 import { useTranslation } from "react-i18next";
-import LanguageDropdown from "../Components/LanguageDropdown/Language";
-import LanguageSwitcher from "../Components/LanguageDropdown/LanguageSwitcher";
+
 import LoginIcon from "../../public/images/icons/user.svg";
 import LoginIcon1 from "../../public/images/icons/user-mobile.svg";
-import LoginOtpModal from "../Pages/Auth/Login";
+// import LoginOtpModal from "../Pages/Auth/Loginsdfsdfsdf";
 
 const menuItems = [
   {
@@ -428,6 +427,8 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
     useState(null);
   const [open, setOpen] = useState(false);
 
+  const [openCanva, setOpenMyAccount] = useState(false);
+
   const handleMobileMenuAccordionToggle = (index) => {
     setMobileAccordionOpenIndex(
       mobileAccordionOpenIndex === index ? null : index,
@@ -439,6 +440,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   const slideInFromLeft = {
     hidden: {
       opacity: 0,
@@ -472,6 +474,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
       mobileAccordionOpenIndex === index ? null : index,
     );
   };
+
   useEffect(() => {
     const hasNewMegaMenu = document.querySelector(".Newmegamenu") !== null;
     setIsActive(hasNewMegaMenu);
@@ -501,15 +504,6 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
   const { t } = useTranslation();
 
   const [user, setUser] = useState(null);
-  const handleLogin = () => {
-    setUser({ name: "Bharathi" });
-    navigate("/login");
-  };
-
-  const handleLogout = () => {
-    setUser(null);
-    navigate("/");
-  };
 
   const [accountOpen, setAccountOpen] = useState(false);
   const accountRef = useRef(null);
@@ -524,14 +518,20 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setIsLoggedIn(!!token);
+  }, []);
 
-useEffect(() => {
-  const storedUser = localStorage.getItem("user");
-  if (storedUser) {
-    setUser(JSON.parse(storedUser));
-  }
-}, []);
+  const handleLogout = () => {
+    localStorage.removeItem("token");     // destroy token
+    localStorage.removeItem("user");      // optional
+    setIsLoggedIn(false);
+    setOpenMyAccount(false);
+    navigate("/login");                   // redirect
+  };
 
 
   return (
@@ -602,77 +602,7 @@ useEffect(() => {
                 </ul>
               </div>
 
-              {/* <div className="mainloginflexmain">
-                <div className="loginflexmain">
-                  <div className="MegamenuAuth show-only-1100">
-                    <button
-                      className="authBtn login flex items-center gap-2"
-                      onClick={() => setOpen(true)}
-                    >
-                      <img src={LoginIcon} alt="login" className="w-4 h-4" />
-                      <span>LOGIN</span>
-                    </button>{" "}
-
-                  </div>
-                  <div
-                    className="Megamenulogo1 hidden md:block cursor-pointer"
-                    onClick={() => setMenuBar(true)}
-                  >
-                    MENU
-                  </div>
-                </div>
-              </div> */}
-
-              {/* <div className="mainloginflexmain">
-                <div className="loginflexmain">
-                  <div
-                    className="MegamenuAuth show-only-1100 relative"
-                    ref={accountRef}
-                  >
-                    <button
-                      className="authBtn login flex items-center gap-2"
-                      onClick={() => setAccountOpen(!accountOpen)}
-                    >
-                      <img src={LoginIcon} alt="login" className="w-4 h-4" />
-                      <span>MY ACCOUNT</span>
-                    </button>
-
-                    {accountOpen && (
-                      <div
-                        className="fixed w-56 bg-white rounded-xl shadow-xl border border-gray-200 z-[9999] animate-dropdown"
-                        style={{
-                          top: "110px",
-                          right: "110px",
-                        }}
-                      >
-                        <div className="absolute -top-2 right-6 w-4 h-4 bg-white rotate-45 border-l border-t border-gray-200"></div>
-
-                        <ul className="py-2 text-sm text-gray-700">
-                          <li className="px-4 py-3 hover:bg-gray-50 cursor-pointer flex items-center gap-2">
-                            👤 <span>My Profile</span>
-                          </li>
-                      
-                          <li className="border-t mt-2">
-                            <button className="w-full text-left px-4 py-3 text-red-600 hover:bg-red-50 flex items-center gap-2">
-                              🚪 Logout
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-
-                  <div
-                    className="Megamenulogo1 hidden md:block cursor-pointer"
-                    onClick={() => setMenuBar(true)}
-                  >
-                    MENU
-                  </div>
-                </div>
-              </div> */}
-
               <div>
-
                 <div
                   className="Megamenulogo1 hidden md:block"
                   onClick={() => setMenuBar(true)}
@@ -681,24 +611,53 @@ useEffect(() => {
                 </div>
               </div>
 
-              {/* <div className="MegamenuAuth show-only-1100">
-                {!user ? (
-                  <button
-                    className="authBtn login flex items-center gap-2"
-                    onClick={() => setOpen(true)}
+              {/* <div className="mainloginflexmain">
+                <div className="loginflexmain">
+                  <div className="MegamenuAuth show-only-1100">
+                    {!isLoggedIn ? (
+                      // <button
+                      //   className="authBtn login flex items-center gap-2"
+                      //   onClick={() => setOpen(true)}
+                      // >
+                      //   <img src={LoginIcon} alt="login" className="w-4 h-4" />
+                      //   <span>LOGIN</span>
+                      // </button>
+                      <Link to="/login-otp">
+                        <button className="authBtn login flex items-center gap-2">
+                          <img
+                            src={LoginIcon}
+                            alt="login"
+                            className="w-4 h-4"
+                          />
+                          <span>LOGIN</span>
+                        </button>
+                      </Link>
+                    ) : (
+                      <button
+                        className="authBtn login flex items-center gap-2"
+                        // onClick={() => navigate("/my-account")}
+                        onClick={() => setOpenMyAccount(true)}
+                      >
+                        <span>MY ACCOUNT</span>
+                      </button>
+                    )}
+
+                    <div
+                      className={`fixed inset-0 bg-black/40 z-40 transition-opacity ${
+                        openCanva
+                          ? "opacity-100 visible"
+                          : "opacity-0 invisible"
+                      }`}
+                      onClick={() => setOpenMyAccount(false)}
+                    />
+                  </div>
+                  <div
+                    className="Megamenulogo1 hidden md:block cursor-pointer"
+                    onClick={() => setMenuBar(true)}
                   >
-                    <img src={LoginIcon} alt="login" className="w-4 h-4" />
-                    <span>LOGIN</span>
-                  </button>
-                ) : (
-                  <button
-                    className="authBtn login flex items-center gap-2"
-                    onClick={() => setOpenAccount(true)}
-                  >
-                    <img src={LoginIcon} alt="account" className="w-4 h-4" />
-                    <span>MY ACCOUNT</span>
-                  </button>
-                )}
+                    MENU
+                  </div>
+                </div>
               </div> */}
             </div>
 
@@ -842,7 +801,86 @@ useEffect(() => {
         </header>
       </div>
 
-      <LoginOtpModal open={open} onClose={() => setOpen(false)} />
+      {/* <LoginOtpModal open={open} onClose={() => setOpen(false)} /> */}
+
+
+       <div
+        onClick={() => setOpenMyAccount(false)}
+        className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition-opacity 
+        ${openCanva ? "opacity-100 visible" : "opacity-0 invisible"}`}
+      />
+
+      {/* Right Drawer */}
+      <div
+        className={`fixed top-0 right-0 h-full w-full sm:w-[380px] z-9999 
+        bg-white/90 backdrop-blur-xl shadow-2xl z-50
+        transform transition-transform duration-300 ease-in-out
+        ${openCanva ? "translate-x-0" : "translate-x-full"}`}
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between px-5 py-4 border-b">
+          <h2 className="text-lg font-semibold tracking-wide">
+            My Account
+          </h2>
+          <button
+            onClick={() => setOpenMyAccount(false)}
+            className="w-8 h-8 flex items-center justify-center rounded-full
+            hover:bg-gray-100 transition"
+          >
+            ✕
+          </button>
+        </div>
+
+        {/* Profile */}
+        <div className="px-5 py-6 border-b flex items-center gap-4">
+          <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-lg font-semibold">
+            U
+          </div>
+          <div>
+            <p className="font-medium">Welcome Back</p>
+            <p className="text-sm text-gray-500">user@email.com</p>
+          </div>
+        </div>
+
+        {/* Menu */}
+        <div className="p-5 space-y-2">
+          <button
+            onClick={() => navigate("/profile")}
+            className="w-full text-left px-4 py-3 rounded-lg
+            hover:bg-gray-100 transition font-medium"
+          >
+            👤 Profile
+          </button>
+
+          <button
+            onClick={() => navigate("/orders")}
+            className="w-full text-left px-4 py-3 rounded-lg
+            hover:bg-gray-100 transition font-medium"
+          >
+            📦 Orders
+          </button>
+
+          <button
+            onClick={() => navigate("/settings")}
+            className="w-full text-left px-4 py-3 rounded-lg
+            hover:bg-gray-100 transition font-medium"
+          >
+            ⚙️ Settings
+          </button>
+        </div>
+
+        {/* Logout */}
+        <div className="absolute bottom-0 left-0 right-0 p-5 border-t">
+          <button
+            onClick={handleLogout}
+            className="w-full py-3 rounded-lg
+            bg-red-500 text-white font-semibold
+            hover:bg-red-600 transition"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
     </>
   );
 };

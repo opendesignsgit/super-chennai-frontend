@@ -2,7 +2,7 @@
 
 
 import axios from "axios";
-import { API_BASE_URL_API } from "../../../../../config";
+import { API_BASE_URL_API } from "../../../../config";
 import { toast } from "react-toastify";
 
 // Create axios instance

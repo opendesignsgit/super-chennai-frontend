@@ -293,6 +293,7 @@ import ResetPassword from "./Pages/Activities/QuizGame/Pages/ResetPassword";
 import AdminView from "./Pages/Activities/QuizGame/Pages/AdminView";
 import LoginWithOtp from "./Pages/Activities/QuizGame/Pages/LoginWithOtp";
 import VerifyOtp from "./Pages/Activities/QuizGame/Pages/VerifyOtp";
+import UserDashboard from "./Pages/Dashboard/UserDashboard"
 
 import LoginUser from "./Pages/login/login"
 import VerifyOTPPms from "./Pages/login/VerifyOTP"
@@ -703,6 +704,16 @@ function App() {
             </PrivateRoute>
           }
         />
+            <Route
+          path="/UserDashboard"
+          element={
+            <PrivateRoute>
+              <UserDashboard />
+            </PrivateRoute>
+          }
+        />
+
+        
         <Route
           path="/your-results"
           element={

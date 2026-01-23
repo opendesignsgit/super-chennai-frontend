@@ -518,7 +518,14 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const checkAuth = () => {
+    return !!localStorage.getItem("token");
+  };
+
+  const [isLoggedIn, setIsLoggedIn] = useState(checkAuth);
+  useEffect(() => {
+    setIsLoggedIn(checkAuth());
+  }, [location.pathname]);
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -526,13 +533,12 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem("token");     // destroy token
-    localStorage.removeItem("user");      // optional
+    localStorage.removeItem("token"); // destroy token
+    localStorage.removeItem("user"); // optional
     setIsLoggedIn(false);
     setOpenMyAccount(false);
-    navigate("/login");                   // redirect
+    navigate("/"); // redirect
   };
-
 
   return (
     <>
@@ -602,16 +608,16 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                 </ul>
               </div>
 
-              <div>
+              {/* <div>
                 <div
                   className="Megamenulogo1 hidden md:block"
                   onClick={() => setMenuBar(true)}
                 >
                   MENU
                 </div>
-              </div>
+              </div> */}
 
-              {/* <div className="mainloginflexmain">
+              <div className="mainloginflexmain">
                 <div className="loginflexmain">
                   <div className="MegamenuAuth show-only-1100">
                     {!isLoggedIn ? (
@@ -658,7 +664,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                     MENU
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
 
             {activeMenu && (
@@ -803,8 +809,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
 
       {/* <LoginOtpModal open={open} onClose={() => setOpen(false)} /> */}
 
-
-       <div
+      <div
         onClick={() => setOpenMyAccount(false)}
         className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition-opacity 
         ${openCanva ? "opacity-100 visible" : "opacity-0 invisible"}`}
@@ -818,10 +823,8 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
         ${openCanva ? "translate-x-0" : "translate-x-full"}`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-5 py-4 border-b">
-          <h2 className="text-lg font-semibold tracking-wide">
-            My Account
-          </h2>
+        <div className="flex items-center justify-between px-5 py-4 -b">
+          <h2 className="text-lg font-semibold tracking-wide">My Account</h2>
           <button
             onClick={() => setOpenMyAccount(false)}
             className="w-8 h-8 flex items-center justify-center rounded-full
@@ -832,7 +835,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
         </div>
 
         {/* Profile */}
-        <div className="px-5 py-6 border-b flex items-center gap-4">
+        <div className="px-5 py-6 -b flex items-center gap-4">
           <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-lg font-semibold">
             U
           </div>
@@ -845,27 +848,26 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
         {/* Menu */}
         <div className="p-5 space-y-2">
           <button
-            onClick={() => navigate("/profile")}
-            className="w-full text-left px-4 py-3 rounded-lg
-            hover:bg-gray-100 transition font-medium"
+            onClick={() => navigate("/UserDashboard")}
+            className="w-full flex items-center gap-3 px-4 py-3 rounded-lg
+             hover:bg-gray-100 transition font-medium"
           >
-            👤 Profile
-          </button>
-
-          <button
-            onClick={() => navigate("/orders")}
-            className="w-full text-left px-4 py-3 rounded-lg
-            hover:bg-gray-100 transition font-medium"
-          >
-            📦 Orders
-          </button>
-
-          <button
-            onClick={() => navigate("/settings")}
-            className="w-full text-left px-4 py-3 rounded-lg
-            hover:bg-gray-100 transition font-medium"
-          >
-            ⚙️ Settings
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-5 h-5 text-gray-700"
+            >
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+            Dashboard
           </button>
         </div>
 
@@ -873,10 +875,24 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
         <div className="absolute bottom-0 left-0 right-0 p-5 border-t">
           <button
             onClick={handleLogout}
-            className="w-full py-3 rounded-lg
+            className="w-full flex items-center justify-center gap-3 py-3 rounded-lg
             bg-red-500 text-white font-semibold
             hover:bg-red-600 transition"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-5 h-5"
+            >
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+              <polyline points="16 17 21 12 16 7" />
+              <line x1="21" y1="12" x2="9" y2="12" />
+            </svg>
             Logout
           </button>
         </div>

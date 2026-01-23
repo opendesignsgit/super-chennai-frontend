@@ -70,7 +70,7 @@ export default function LoginOtp() {
       localStorage.setItem("tokenTime", Date.now());
 
       setMessage("OTP Verified Successfully!");
-      // setTimeout(() => navigate("/questions"), 1200);
+      setTimeout(() => navigate("/"), 1200);
     } catch (err) {
       setError(err.response?.data?.message || "Invalid OTP!");
     } finally {

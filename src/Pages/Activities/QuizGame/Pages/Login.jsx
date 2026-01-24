@@ -127,7 +127,7 @@ export default function Login({ setIsLoggedIn }) {
       });
 
       toast.success(res.data.message);
-      setTimeout(() => navigate("/login"), 1500);
+      setTimeout(() => navigate("/login-otp"), 1500);
     } catch (err) {
       toast.error(err.response?.data?.message || "Something went wrong");
     }

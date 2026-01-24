@@ -725,9 +725,9 @@ function App() {
         <Route
           path="/admin-superchennai"
           element={
-            <PrivateRoute>
+            <PublicRoute>
               <AdminView />
-            </PrivateRoute>
+            </PublicRoute>
           }
         />
         {/* PUBLICK ROTES  */}

@@ -526,7 +526,7 @@ function App() {
 
       {showPopup && !hideOnMargazhiPage && !hideOnBlog && (
         <ImagePopup
-          imageUrl="/images/events/mobile-popup-hotshots.jpeg"
+          imageUrl="/images/events/mouth-your-manifest.jpeg"
           onClose={() => setShowPopup(false)}
         />
       )}

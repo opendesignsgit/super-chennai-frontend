@@ -29,13 +29,13 @@ const ImagePopup = ({ onClose, imageUrl }) => {
           &times;
         </button>
         <div
-          className="flex ImagePopupFlex p-3
+          className="flex ImagePopupFlex
         "
           // to="/namma-stories"
           // onClick={onClose}
         >
           {/* <Link to="/namma-stories#NammaStoriesVideoId" onClick={onClose}> */}
-          <Link to="contest/hotshots-photography-contest" onClick={onClose}>
+          <Link to="https://manifesto.superchennai.com/welcome" onClick={onClose}>
             <img
               src={imageUrl}
               alt="Popup"

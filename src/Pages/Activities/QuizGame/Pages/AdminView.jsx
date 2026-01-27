@@ -311,6 +311,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { API_BASE_URL_API } from "../../../../../config";
 import { formatDateTime } from "../utils/dateTime";
+import * as XLSX from "xlsx";
 
 export default function AdminView() {
   const [adminKey, setAdminKey] = useState("");
@@ -351,7 +352,7 @@ export default function AdminView() {
 
   const fetchHotshot = async () => {
     const res = await axios.get(
-      "https://api.superchennai.com/api/all/hotshot-chennai"
+      "https://api.superchennai.com/api/all/hotshot-chennai",
     );
     if (res.data?.success) setHotshotData(res.data.data);
   };
@@ -362,15 +363,12 @@ export default function AdminView() {
   };
 
   const fetchMargazhi = async () => {
-    const res = await axios.get(
-      "https://api.superchennai.com/api/margazhi"
-    );
+    const res = await axios.get("https://api.superchennai.com/api/margazhi");
 
     if (res.data?.success) {
       setMargazhiData(res.data.data);
     }
   };
-
 
   const validateKey = async () => {
     try {
@@ -393,12 +391,75 @@ export default function AdminView() {
   }, {});
 
   /* ================= POST FILTERS (EXCEL LOGIC) ================= */
-  const newsletter = posts.filter(p => p.newsletter === true);
-  const volunteers = posts.filter(p => !p.video || p.video.trim() === "");
-  const stories = posts.filter(p => p.video && p.video.trim() !== "");
-  const reimagine = posts.filter(p => p.image && String(p.image).trim() !== "");
-  console.log("volunteers", volunteers)
+  const newsletter = posts.filter((p) => p.newsletter === true);
+  const volunteers = posts.filter((p) => !p.video || p.video.trim() === "");
+  const stories = posts.filter((p) => p.video && p.video.trim() !== "");
+  const reimagine = posts.filter(
+    (p) => p.image && String(p.image).trim() !== "",
+  );
+  console.log("volunteers", volunteers);
   /* ================= UI ================= */
+
+  // DOWNLOAD EXCEL
+  const downloadXLS = (data, fileName) => {
+    if (!data || data.length === 0) return;
+
+    const formattedData = data.map((d, i) => ({
+      "S.No": i + 1,
+      Name: d.name || "",
+      Email: d.email || "",
+      Phone: d.mobile || d.phone || "",
+      Message: d.message || "",
+      Description: d.description || "",
+      Video: d.video || "",
+      Date: formatDateTime(d.created_at).date,
+      Time: formatDateTime(d.created_at).time,
+    }));
+
+    const worksheet = XLSX.utils.json_to_sheet(formattedData);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Data");
+
+    XLSX.writeFile(workbook, `${fileName}.xlsx`);
+  };
+
+ const downloadAllHotshotsXLS = () => {
+  if (!hotshotData || hotshotData.length === 0) return;
+
+  // find max images count
+  const maxImages = Math.max(
+    ...hotshotData.map(d => d.images?.length || 0)
+  );
+
+  const formattedData = hotshotData.map((d, i) => {
+    const row = {
+      "S.No": i + 1,
+      Name: d.name || "",
+      Email: d.email || "",
+      Phone: d.mobile || d.phone || "",
+      Message: d.message || "",
+      Date: formatDateTime(d.created_at).date,
+      Time: formatDateTime(d.created_at).time,
+    };
+
+    // image columns
+    for (let j = 0; j < maxImages; j++) {
+      row[`Image ${j + 1}`] = d.images?.[j]
+        ? `https://api.superchennai.com${d.images[j].path}`
+        : "";
+    }
+
+    return row;
+  });
+
+  const worksheet = XLSX.utils.json_to_sheet(formattedData);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Hotshot Chennai");
+
+  XLSX.writeFile(workbook, "Hotshot_Chennai_All_Entries.xlsx");
+};
+
+
   return (
     <>
       {/* Banner */}
@@ -415,8 +476,7 @@ export default function AdminView() {
           <div className="accodoamationBannerText">
             <h1>Super Chennai admin</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai admin</Link>
+              <Link to="/">Home</Link> - <Link to="">Super Chennai admin</Link>
             </div>
           </div>
         </div>
@@ -435,7 +495,10 @@ export default function AdminView() {
               placeholder="Enter Admin Key"
             />
             {errorMsg && <p className="text-red-600">{errorMsg}</p>}
-            <button onClick={validateKey} className="w-full bg-indigo-600 text-white p-3 rounded">
+            <button
+              onClick={validateKey}
+              className="w-full bg-indigo-600 text-white p-3 rounded"
+            >
               Verify
             </button>
           </div>
@@ -458,26 +521,80 @@ export default function AdminView() {
               <button
                 key={key}
                 onClick={() => setActiveTab(key)}
-                className={`px-4 py-2 rounded font-semibold ${activeTab === key
-                  ? "bg-indigo-600 text-white theme-button-smallNormal"
-                  : "bg-gray-200 theme-button-secondaryoutline"
-                  }`}
+                className={`px-4 py-2 rounded font-semibold ${
+                  activeTab === key
+                    ? "bg-indigo-600 text-white theme-button-smallNormal"
+                    : "bg-gray-200 theme-button-secondaryoutline"
+                }`}
               >
                 {label}
               </button>
             ))}
           </div>
 
+          {activeTab === "hotshot" && (
+            <div className="flex justify-end px-6 mb-4">
+              <button
+                onClick={downloadAllHotshotsXLS}
+                className="bg-green-700 text-white px-4 py-2 rounded font-semibold hover:bg-green-800"
+              >
+                ⬇ Download ALL Hotshot Entries
+              </button>
+            </div>
+          )}
+
+          {/* <div className="flex justify-end px-6">
+            <button
+              onClick={() => {
+                if (activeTab === "newsletter")
+                  downloadXLS(newsletter, "Newsletter");
+                if (activeTab === "volunteer")
+                  downloadXLS(volunteers, "Volunteers");
+                if (activeTab === "stories")
+                  downloadXLS(stories, "Namma_Stories");
+                if (activeTab === "reimagine")
+                  downloadXLS(reimagine, "Reimagine_Chennai");
+                if (activeTab === "hotshot")
+                  downloadXLS(hotshotData, "Hotshot_Chennai");
+                if (activeTab === "margazhi")
+                  downloadXLS(margazhiData, "Margazhi");
+              }}
+              className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700"
+            >
+              ⬇ Download XLS
+            </button>
+          </div> */}
+
           {/* CONTENT */}
           <div className="p-6">
-            {activeTab === "newsletter" && <SimpleTable title="Newsletter" data={newsletter} />}
-            {activeTab === "volunteer" && <SimpleTable title="Volunteers" data={volunteers}description />}
-            {activeTab === "stories" && <SimpleTable title="Namma Stories" data={stories} video />}
-            {activeTab === "reimagine" && <SimpleTable title="Reimagine Chennai" data={reimagine} />}
-            {activeTab === "margazhi" && (<SimpleTable title="Margazhi Month Submissions" data={margazhiData} images showMessage />)}
+            {activeTab === "newsletter" && (
+              <SimpleTable title="Newsletter" data={newsletter} />
+            )}
+            {activeTab === "volunteer" && (
+              <SimpleTable title="Volunteers" data={volunteers} description />
+            )}
+            {activeTab === "stories" && (
+              <SimpleTable title="Namma Stories" data={stories} video />
+            )}
+            {activeTab === "reimagine" && (
+              <SimpleTable title="Reimagine Chennai" data={reimagine} />
+            )}
+            {activeTab === "margazhi" && (
+              <SimpleTable
+                title="Margazhi Month Submissions"
+                data={margazhiData}
+                images
+                showMessage
+              />
+            )}
 
             {activeTab === "hotshot" && (
-              <SimpleTable title="Hotshot Chennai" data={hotshotData} images showMessage={true} />
+              <SimpleTable
+                title="Hotshot Chennai"
+                data={hotshotData}
+                images
+                showMessage={true}
+              />
             )}
 
             {!showPopup && activeTab === "trivia" && (
@@ -507,12 +624,8 @@ export default function AdminView() {
                           <td className="p-3 border font-semibold">
                             {user.name}
                           </td>
-                          <td className="p-3 border text-sm">
-                            {user.email}
-                          </td>
-                          <td className="p-3 border text-sm">
-                            {user.phone}
-                          </td>
+                          <td className="p-3 border text-sm">{user.email}</td>
+                          <td className="p-3 border text-sm">{user.phone}</td>
 
                           <td className="p-3 border">
                             <table className="w-full border text-sm">
@@ -522,26 +635,37 @@ export default function AdminView() {
                                   <th className="p-2 border">Answer</th>
                                   <th className="p-2 border">Date</th>
                                   <th className="p-2 border">Time</th>
-                                  <th className="p-2 border text-center">Result</th>
+                                  <th className="p-2 border text-center">
+                                    Result
+                                  </th>
                                 </tr>
                               </thead>
                               <tbody>
                                 {user.answers.map((ans, idx) => {
-                                  const { date, time } = formatDateTime(ans.created_at);
+                                  const { date, time } = formatDateTime(
+                                    ans.created_at,
+                                  );
                                   return (
                                     <tr key={idx}>
-                                      <td className="p-2 border">{ans.question_text}</td>
-                                      <td className="p-2 border font-medium">{ans.answer}</td>
+                                      <td className="p-2 border">
+                                        {ans.question_text}
+                                      </td>
+                                      <td className="p-2 border font-medium">
+                                        {ans.answer}
+                                      </td>
                                       <td className="p-2 border">{date}</td>
                                       <td className="p-2 border">{time}</td>
                                       <td className="p-2 border text-center">
                                         <span
-                                          className={`px-2 py-1 rounded-full text-xs font-semibold ${ans.is_correct
-                                            ? "bg-green-100 text-green-700"
-                                            : "bg-red-100 text-red-700"
-                                            }`}
+                                          className={`px-2 py-1 rounded-full text-xs font-semibold ${
+                                            ans.is_correct
+                                              ? "bg-green-100 text-green-700"
+                                              : "bg-red-100 text-red-700"
+                                          }`}
                                         >
-                                          {ans.is_correct ? "✔ Correct" : "✖ Wrong"}
+                                          {ans.is_correct
+                                            ? "✔ Correct"
+                                            : "✖ Wrong"}
                                         </span>
                                       </td>
                                     </tr>
@@ -563,13 +687,16 @@ export default function AdminView() {
                 )}
               </div>
             )}
-
           </div>
         </>
       )}
     </>
   );
 }
+
+
+
+
 
 /* ================= SIMPLE TABLE ================= */
 

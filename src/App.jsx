@@ -722,14 +722,14 @@ function App() {
             </PrivateRoute>
           }
         />
-        <Route
+        {/* <Route
           path="/admin-superchennai"
           element={
             <PublicRoute>
               <AdminView />
             </PublicRoute>
           }
-        />
+        /> */}
         {/* PUBLICK ROTES  */}
         {/* LoginUser */}
         <Route path="LoginUser" element={<LoginUser />} />
@@ -745,6 +745,12 @@ function App() {
         <Route
           path="/contest/hotshots-photography-contest"
           element={<HotshotChennaiContest />}
+        />
+           <Route
+          path="/admin-superchennai"
+          element={
+              <AdminView />
+          }
         />
         <Route path="/neighbourhood" element={<Neighbourhoods />} />
         <Route path="/neighbourhood/:slug" element={<NeighbourhoodDetail />} />

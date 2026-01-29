@@ -182,13 +182,14 @@ export default function MargazhiMomentsContest() {
     });
 
     try {
-      const res = await axios.post(
-        `${API_BASE_URL_API}/margazhi/submit`,
-        payload,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-        },
-      );
+
+      // const res = await axios.post(
+      //   `${API_BASE_URL_API}/margazhi/submit`,
+      //   payload,
+      //   {
+      //     headers: { "Content-Type": "multipart/form-data" },
+      //   },
+      // );
 
       if (res.status === 200 || res.status === 201) {
         toast.success("Your entry has been submitted successfully!", {
@@ -213,7 +214,7 @@ export default function MargazhiMomentsContest() {
     } catch (error) {
       console.error(error);
       toast.error(
-        error?.response?.data?.message || "Something went wrong. Try again.",
+        error?.response?.data?.message || "The event period has ended.",
       );
     } finally {
       setLoading(false);

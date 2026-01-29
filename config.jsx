@@ -1,11 +1,11 @@
-const isLocal = window.location.hostname === "localhost";
-export const API_BASE_URL = isLocal  ? "http://localhost:3000" : "https://demo.superchennai.com";
-export const PRIMARY_COLOR = "#a34493";
-export const SECONDARY_COLOR = "#8b3c82";
-export const HOVER_BG_COLOR = "#f9ebf7";
+// const isLocal = window.location.hostname === "localhost";
+// export const API_BASE_URL = isLocal  ? "http://localhost:3000" : "https://demo.superchennai.com";
+// export const PRIMARY_COLOR = "#a34493";
+// export const SECONDARY_COLOR = "#8b3c82";
+// export const HOVER_BG_COLOR = "#f9ebf7";
 
-// // export const API_BASE_URL_API = "http://localhost:3000/api"
-// export const API_BASE_URL_API = "https://api.superchennai.com/api"
-// export const API_BASE_URL = "https://demo.superchennai.com"; 
-// // export const API_BASE_URL = "http://localhost:3000";  
+// export const API_BASE_URL_API = "http://localhost:3000/api"
+export const API_BASE_URL_API = "https://api.superchennai.com/api"
+export const API_BASE_URL = "https://demo.superchennai.com"; 
+// export const API_BASE_URL = "http://localhost:3000";  
 

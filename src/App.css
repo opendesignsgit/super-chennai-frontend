@@ -214,11 +214,38 @@
 
 @media (max-width:1600px) {
   .manifesto {
-    bottom: 278px;
+    bottom: 310px !important;
 }
 
 .stickyIconsContainer {
-    top: 20%;
+    top: 20% !important;
+}
+
+.pointcastSticky img {
+    width: 80px;
+}
+
+.nammaStorieslink {
+    bottom: 210px;
+}
+}
+
+
+@media (max-width:1300px) {
+  .manifesto {
+    bottom: 310px !important;
+}
+
+.stickyIconsContainer {
+    top: 20% !important;
+}
+
+.pointcastSticky img {
+    width: 80px;
+}
+
+.nammaStorieslink {
+    bottom: 210px;
 }
 }
 

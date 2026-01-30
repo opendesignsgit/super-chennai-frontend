@@ -355,9 +355,17 @@
 }
 
 @media (max-width: 700px) {
+
+
   .nammaStorieslink {
-    bottom: 269px !important;
+      bottom: 202px !important;
   }
+
+  .manifesto {
+  bottom: 290px !important;
+  }
+
+    
 
   .stickyIconsContainer {
     right: 18px;

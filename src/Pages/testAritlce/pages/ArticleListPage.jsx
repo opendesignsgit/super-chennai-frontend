@@ -1,213 +1,225 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-
-/* ==============================
-   API CONFIG
-============================== */
-const API_URL = "http://localhost:3000/api";
-
-/* ==============================
-   API FUNCTIONS
-============================== */
-const fetchFeaturedArticle = async () => {
-  const res = await fetch(`${API_URL}/articles?featured=true&limit=1`);
-  const data = await res.json();
-  return data.docs?.[0];
-};
-
-const fetchArticles = async (page = 1, limit = 9) => {
-  const res = await fetch(`${API_URL}/articles?page=${page}&limit=${limit}`);
-
-  setArticles(data?.docs || []);
-  console.log("resArt",res.json);
-  return res.json();
-};
+import { useArticles } from "../hooks/useArticles";
+import { API_BASE_URL } from "../../../../config";
 
 /* ==============================
    AD COMPONENTS
 ============================== */
-const AdBox = ({ image }) => (
-  <div className="sticky top-6">
-    <img src={image} className="rounded-md mb-3 w-full object-cover" />
-    <button className="bg-pink-600 text-white w-full py-2 rounded">
-      Learn More
-    </button>
-  </div>
-);
+const withBaseUrl = (url) =>
+  url ? `${API_BASE_URL}${url}` : "/images/placeholder.jpg";
 
-const BottomAdBox = () => {
+const AdBox = ({ ads }) => {
+  if (!ads?.length) return null;
+
+  return (
+    <div className="sticky top-6 space-y-4">
+      {ads.map((ad) => (
+        <div key={ad.id} className="border rounded p-3">
+          {/* IMAGE */}
+          <img
+            src={withBaseUrl(ad.media?.url)}
+            alt={ad.altText || ad.title}
+            className="w-full object-cover rounded mb-2"
+          />
+
+          <p className="font-semibold text-sm">{ad.title}</p>
+
+          <Link
+            to={`/ads/${ad.slug}`}
+            className="text-pink-600 text-xs"
+          >
+            Learn More
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
+const BottomAdBox = ({ ads }) => {
   const [show, setShow] = useState(true);
-  if (!show) return null;
+
+  if (!show || !ads?.length) return null;
+
+  const ad = ads[0];
 
   return (
     <div className="fixed bottom-0 inset-x-0 bg-white border-t shadow-lg z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="flex gap-4 items-center">
-          <img
-            src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
-            className="w-20 h-14 rounded object-cover"
-          />
-          <div>
-            <p className="font-semibold text-sm">Boost Your Career</p>
-            <p className="text-xs text-gray-500">Enroll now</p>
-          </div>
-        </div>
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4 justify-between">
+        {/* IMAGE */}
+        <img
+          src={withBaseUrl(ad.media?.url)}
+          alt={ad.altText || ad.title}
+          className="h-12 object-cover rounded"
+        />
+
+        <p className="font-semibold text-sm">{ad.title}</p>
 
         <div className="flex gap-3">
-          <button className="bg-pink-600 text-white px-4 py-2 rounded text-sm">
-            Get Started
-          </button>
-          <button
-            onClick={() => setShow(false)}
-            className="text-gray-400 text-lg"
+          <Link
+            to={`/ads/${ad.slug}`}
+            className="bg-pink-600 text-white px-4 py-2 rounded text-sm"
           >
-            ✕
-          </button>
+            Learn More
+          </Link>
+
+          <button onClick={() => setShow(false)}>✕</button>
         </div>
       </div>
     </div>
   );
 };
 
+
 /* ==============================
-   MAIN PAGE
+   PAGE
 ============================== */
+
 export default function ArticleListPage() {
-  const [featured, setFeatured] = useState(null);
-  const [articles, setArticles] = useState([]);
   const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  const [loading, setLoading] = useState(true);
+  const articleData = useArticles(page);
 
-  // Toggle ads (API / config driven in real prod)
-  const showLeftAd = true;
-  const showRightAd = true;
+  console.log("useArticles →", articleData);
 
-  useEffect(() => {
-    const load = async () => {
-      setLoading(true);
-      const [feat, list] = await Promise.all([
-        fetchFeaturedArticle(),
-        fetchArticles(page),
-      ]);
-      setFeatured(feat);
-      setArticles(list.docs || []);
-      setTotalPages(list.totalPages || 1);
-      setLoading(false);
-    };
-    load();
-  }, [page]);
+  const { featured, articles, totalPages, loading, ads } = useArticles(page);
+
+  console.log("ADS 👉", ads);
+
+  const leftAds = ads?.find((a) => a.position === "left");
+  const rightAds = ads?.find((a) => a.position === "right");
+  const bottomAds = ads?.find((a) => a.position === "bottom");
 
   const mainCol =
-    showLeftAd && showRightAd
+    leftAds && rightAds
       ? "lg:col-span-8"
-      : showLeftAd || showRightAd
-      ? "lg:col-span-10"
-      : "lg:col-span-12";
+      : leftAds || rightAds
+        ? "lg:col-span-10"
+        : "lg:col-span-12";
 
   return (
     <>
-      {/* ================= Banner ================= */}
-      <div className="relative h-[280px] w-full overflow-hidden">
-        <img
-          src="/images/banner-blog.jpg"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40 flex items-center">
-          <div className="max-w-7xl mx-auto px-4 text-white">
-            <h3 className="text-3xl font-bold">Blog</h3>
-            <div className="text-sm mt-2">
-              <Link to="/">Home</Link> / Blog
+      {/* Banner */}
+      <div className="accaodomationBannerSection relative w-full h-[280px] overflow-hidden">
+        <img src="/images/banner-blog.jpg" alt="Blog Banner" />
+        <div className="accodoamationBannerContainer">
+          <div className="accodoamationBannerText">
+            <h3>Blog</h3>
+            <div className="breadCrum">
+              <Link to="/">Home</Link> - <Link to="/blog">Blog</Link>
             </div>
           </div>
         </div>
       </div>
 
-      {/* ================= Layout ================= */}
+      {/* Layout */}
       <div className="max-w-7xl mx-auto px-4 mt-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-
-          {showLeftAd && (
+          {leftAds && (
             <div className="hidden lg:block lg:col-span-2">
-              <AdBox image="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" />
+              <AdBox ads={leftAds.ads} />
             </div>
           )}
 
-          {/* ================= CONTENT ================= */}
           <div className={mainCol}>
             {/* Featured */}
             {featured && (
-              <div className="grid lg:grid-cols-2 gap-6 mb-10">
+              <div className="grid lg:grid-cols-2 gap-6 mb-10 items-center">
                 <div>
+                  {/* Category */}
                   <p className="text-pink-600 text-sm font-semibold">
-                    {featured.category}
+                    {featured.Articlecategory?.label}
                   </p>
-                  <h1 className="text-3xl font-bold mt-2">
-                    {featured.title}
-                  </h1>
-                  <p className="text-gray-600 mt-3">
-                    {featured.description}
-                  </p>
-                  <p className="text-sm text-gray-500 mt-3">
-                    {featured.author} · {featured.views} · {featured.time}
+
+                  {/* Title */}
+                  <h1 className="text-3xl font-bold mt-2">{featured.title}</h1>
+
+                  {/* Description */}
+                  <p className="text-gray-600 mt-3">{featured.excerpt}</p>
+
+                  {/* Meta */}
+                  <p className="text-xs text-gray-500 mt-2">
+                    {featured.populatedAuthors?.[0]?.name} ·{" "}
+                    {featured.readingTime} min read
                   </p>
                 </div>
 
+                {/* Image */}
                 <img
-                  src={featured.image}
+                  src={`${API_BASE_URL}${featured.heroImage?.url || featured.thumbnailImage?.url}`}
+                  alt={featured.title}
                   className="rounded-lg w-full h-[320px] object-cover"
                 />
               </div>
             )}
 
-            {/* Article Grid */}
+            {/* Articles */}
             {loading ? (
               <p className="text-center py-10">Loading articles...</p>
             ) : (
               <>
                 <div className="grid md:grid-cols-3 gap-6">
-                  {articles.map((a, i) => (
-                    <div key={a.id}>
-                      <img
-                        src={a.image}
-                        className="rounded-md h-40 w-full object-cover"
-                      />
-                      <p className="text-pink-600 text-sm mt-2 font-semibold">
-                        {a.category}
-                      </p>
-                      <h3 className="font-semibold mt-1">{a.title}</h3>
-                      <p className="text-xs text-gray-500">
-                        {a.author} · {a.views}
-                      </p>
+                  {articles.map((a, i) => {
+                    const image =
+                      a.thumbnailImage?.url ||
+                      a.heroImage?.url ||
+                      "/images/placeholder.jpg";
 
-                      {/* Inline Ad */}
-                      {i === 4 && (
-                        <div className="my-6 bg-gray-100 text-center py-6 rounded">
-                          ADVERTISEMENT
-                        </div>
-                      )}
-                    </div>
-                  ))}
+                    return (
+                      <div
+                        key={a.id}
+                        className="bg-white rounded-md overflow-hidden"
+                      >
+                        <img
+                          src={`${API_BASE_URL}${image}`}
+                          alt={image}
+                          className="rounded-lg w-full h-[320px] object-cover"
+                        />
+
+                        {/* Category */}
+                        <p className="text-pink-600 text-sm mt-2 font-semibold">
+                          {a.Articlecategory?.label}
+                        </p>
+
+                        {/* Title */}
+                        <h3 className="font-semibold mt-1">{a.title}</h3>
+
+                        {/* Author & Reading Time */}
+                        <p className="text-xs text-gray-500 mt-1">
+                          {a.populatedAuthors?.[0]?.name} · {a.readingTime} min
+                          read
+                        </p>
+
+                        {/* Inline Ad */}
+                        {i === 4 && (
+                          <div className="my-6 bg-gray-100 text-center py-6 rounded">
+                            ADVERTISEMENT
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
 
                 {/* Pagination */}
-                <div className="flex justify-center items-center gap-4 mt-10">
+                <div className="flex justify-center gap-4 mt-10">
                   <button
                     disabled={page === 1}
                     onClick={() => setPage(page - 1)}
-                    className="px-4 py-2 border rounded disabled:opacity-40"
+                    className="px-4 py-2 border rounded"
                   >
                     Prev
                   </button>
 
-                  <span className="text-sm">
+                  <span>
                     Page {page} of {totalPages}
                   </span>
 
                   <button
                     disabled={page === totalPages}
                     onClick={() => setPage(page + 1)}
-                    className="px-4 py-2 border rounded disabled:opacity-40"
+                    className="px-4 py-2 border rounded"
                   >
                     Next
                   </button>
@@ -216,15 +228,15 @@ export default function ArticleListPage() {
             )}
           </div>
 
-          {showRightAd && (
+          {rightAds && (
             <div className="hidden lg:block lg:col-span-2">
-              <AdBox image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" />
+              <AdBox ads={rightAds.ads} />
             </div>
           )}
         </div>
       </div>
 
-      <BottomAdBox />
+      <BottomAdBox ads={bottomAds?.ads} />
     </>
   );
 }

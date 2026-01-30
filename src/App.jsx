@@ -237,6 +237,9 @@ import KoreanCuisineinChennai from "./Pages/SubPages/VisitPages/Korean-Cuisine-i
 
 import BlogDetails from "../src/Pages/Blogs/BlogDetails";
 import BlogList from "./../src/Pages/Blogs/BlogList";
+import AllArticleList from "./../src/Pages/Articles/articles"
+import ArticleListPageTest from "./Pages/testAritlce/pages/ArticleListPage"
+
 import ScrollToHashElement from "./Components/ScrollToHashElement";
 
 import Chidambaram from "./Pages/SubPages/LivePages/Chidambaram";
@@ -573,6 +576,24 @@ function App() {
           <img src="/images/threads.png" alt="Twitter" />
         </a>
       </div>
+
+      {!hideOnMargazhiPage && (
+        <div
+          id="menifeto-tab"
+          ref={stickyRef}
+          className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest manifesto${
+            footerReached ? "footerreached" : ""
+          }`}
+        >
+          <a href="https://manifesto.superchennai.com/welcome">
+            <img
+              src="/images/manifesto-tap.png"
+              alt="artificial intelligence challenge"
+            />
+          </a>
+        </div>
+      )}
+
       {!hideOnMargazhiPage && (
         <div
           id="hotshots-event-tab"
@@ -620,6 +641,10 @@ function App() {
         <Route path="/properties/:slug" element={<PropertyDetailPage />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogDetails />} />
+
+        <Route path="/ArticleList" element={<AllArticleList />} />
+        <Route path="/ArticleListPageTest" element={<ArticleListPageTest />} />
+
         <Route path="/chennai-contests" element={<SuperchennaiContests />} />
         <Route
           path="/chennai-contests/:slug"
@@ -704,7 +729,7 @@ function App() {
             </PrivateRoute>
           }
         />
-            <Route
+        <Route
           path="/UserDashboard"
           element={
             <PrivateRoute>
@@ -713,7 +738,6 @@ function App() {
           }
         />
 
-        
         <Route
           path="/your-results"
           element={
@@ -746,12 +770,7 @@ function App() {
           path="/contest/hotshots-photography-contest"
           element={<HotshotChennaiContest />}
         />
-           <Route
-          path="/admin-superchennai"
-          element={
-              <AdminView />
-          }
-        />
+        <Route path="/admin-superchennai" element={<AdminView />} />
         <Route path="/neighbourhood" element={<Neighbourhoods />} />
         <Route path="/neighbourhood/:slug" element={<NeighbourhoodDetail />} />
         {/* 404 Page */}
@@ -1290,6 +1309,14 @@ function App() {
           path="/super-chennai-contests-quiz"
           element={<Navigate to="/contests/chennai-quiz" replace />}
         />
+
+        <Route
+          path="/http://superchennai.com/manifesto"
+          element={
+            <Navigate to="https://manifesto.superchennai.com/welcome" replace />
+          }
+        />
+
         <Route path="/quizform" element={<QuizForm />} />
         <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
         {/* ChennaiQuiz */}

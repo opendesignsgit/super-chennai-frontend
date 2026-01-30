@@ -11,8 +11,10 @@ const ImagePopup = ({ onClose, imageUrl }) => {
 
   return (
     <div
-      className="fixed popupImageBackground inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[9999] transition-opacity duration-300 ease-in-out hotshots-popup"
-      id="hotshots-popup-click"
+      className="fixed popupImageBackground inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[9999] transition-opacity duration-300 ease-in-out hotshots-popup menifeto-popup"
+      // id="hotshots-popup-click"
+            id="menifesto-popup"
+
     >
       <div
         className={`popupStyleMainContainer bg-white p-4 rounded shadow-lg relative max-w-[90%] max-h-[90%] transform transition-all duration-500 ease-in-out ${

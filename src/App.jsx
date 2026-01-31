@@ -279,6 +279,7 @@ import NeighbourhoodDetail from "./Pages/Neighbourhoods/neighbourhoodsDetailPage
 import MargazhiMomentsContest from "./Pages/Activities/MargazhiMonth/MargazhiMomentsContest";
 import MargazhiPageCalendar from "./Pages/Activities/MargazhiMonth/MargazhiPage";
 import HotshotChennaiContest from "./Pages/Activities/HotshotChennai/HotshotChennaiContest";
+import Conclave from "./Pages/Activities/Conclave/conclave"
 
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
@@ -770,6 +771,16 @@ function App() {
           path="/contest/hotshots-photography-contest"
           element={<HotshotChennaiContest />}
         />
+
+            <Route
+          path="/contest/conclave"
+          element={<Conclave />}
+        />
+
+
+
+
+        {/* conclave */}
         <Route path="/admin-superchennai" element={<AdminView />} />
         <Route path="/neighbourhood" element={<Neighbourhoods />} />
         <Route path="/neighbourhood/:slug" element={<NeighbourhoodDetail />} />

@@ -14,6 +14,7 @@ export default function SalariesBenefits() {
 
   const lastScrollY = useRef(0);
   const bgTextRef = useRef(null);
+  
   const AccomodSections = [
     {
       title: "Salary Ranges by Industry",

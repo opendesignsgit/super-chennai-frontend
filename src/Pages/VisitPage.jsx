@@ -186,6 +186,7 @@ export default function Visit() {
       imgAlt: "best temple in chennai",
     },
   ];
+  
   const infoData1 = [
     {
       title: "Catch the Waves or Cruise the Track",

@@ -1,171 +1,334 @@
 import axios from "axios";
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { API_BASE_URL_API } from "../../../../config";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useRef } from "react";
 
-export default function conclave() {
+const infoData = [
+  {
+    title: "LIVE",
+    title1: "A City That Works for Everyone",
+    desc: "Chennai’s growth must be inclusive, resilient, and equitable. This pillar focuses on building a city that delivers quality of life for all residents.Key areas include sustainable mobility, affordable housing, flood resilience, clean public spaces, strong civic governance, and neighbourhoods designed for safety and accessibility",
+    icon: "/images/Visit-Images/icons/Scenic-Relaxing.svg",
+    imgAlt: "attractions chennai",
+  },
 
+  {
+    title: "VISIT",
+    title1: "Crafting a World-Class Visitor Experience",
+    desc: "With its rich heritage, vibrant culture, and natural coastline, Chennai has the potential to become a global cultural destination.This pillar explores how the city can integrate heritage, tourism, hospitality, and public spaces to offer a seamless, memorable visitor experience that reflects Chennai’s unique character.",
+    icon: "/images/Visit-Images/icons/Buzzing-City-Life.svg",
+    imgAlt: "VISIT",
+  },
+
+  {
+    title: "WORK",
+    title1: "Becoming India’s Talent Capital",
+    desc: "Chennai produces thousands of skilled graduates and hosts strong R&D capabilities across industries. However, perception gaps and lifestyle factors continue to drive talent away.This pillar focuses on reshaping Chennai’s image as an opportunity-rich metro by enhancing career pathways, work-life balance, cultural ecosystems, and industry-academia collaboration.",
+    icon: "/images/Visit-Images/icons/Where-Flavour-Meets-Culture.svg",
+    imgAlt: "WORK",
+  },
+
+  {
+    title: "INVEST",
+    title1: "Reimagining Chennai as a Launchpad for Future Business",
+
+    desc: "With deep manufacturing expertise, strategic location, and economic stability, Chennai is well-positioned to attract global investment.This pillar examines how the city can strengthen ease of doing business, boost investor confidence, and position itself as South Asia’s most compelling and future-ready investment destination.",
+    icon: "/images/Visit-Images/icons/Weekend-Getaways-Chennai-Style.svg",
+    imgAlt: "INVEST",
+  },
+  {
+    title: "INNOVATE",
+    title1: "Becoming India’s Deep-Tech Hub for the World",
+
+    desc: "Chennai has strong technical talent and premier research institutions, yet lacks the visibility and ecosystem density of leading global innovation hubs.This pillar explores how the city can nurture entrepreneurship, attract risk capital, strengthen innovation networks, and support deep-tech ventures to scale globally from Chennai",
+    icon: "/images/Visit-Images/icons/Timeless-Chennai-Where-Culture-Evolves-Gracefully.svg",
+    imgAlt: "best temple in chennai",
+  },
+];
+
+export const volunteerGallery = [
+  {
+    id: 1,
+    image: "/images/Volunteer-Images/volunteer-gallery1.jpg",
+    link: "/events",
+  },
+  {
+    id: 2,
+    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
+    link: "/events",
+  },
+  {
+    id: 3,
+    image: "/images/Volunteer-Images/volunteer-gallery3.jpg",
+    link: "/events",
+  },
+  {
+    id: 4,
+    image: "/images/Volunteer-Images/volunteer-gallery4.jpg",
+    link: "/events",
+  },
+  {
+    id: 5,
+    image: "/images/Volunteer-Images/volunteer-gallery5.jpg",
+    link: "/events",
+  },
+  {
+    id: 6,
+    image: "/images/Volunteer-Images/volunteer-gallery6.jpg",
+    link: "/events",
+  },
+  {
+    id: 7,
+    image: "/images/Volunteer-Images/volunteer-gallery7.jpg",
+    link: "/events",
+  },
+  {
+    id: 8,
+    image: "/images/Volunteer-Images/volunteer-gallery8.jpg",
+    link: "/events",
+  },
+  {
+    id: 9,
+    image: "/images/Volunteer-Images/volunteer-gallery9.jpg",
+    link: "/events",
+  },
+  {
+    id: 10,
+    image: "/images/Volunteer-Images/volunteer-gallery10.jpg",
+    link: "/events",
+  },
+  {
+    id: 11,
+    image: "/images/Volunteer-Images/volunteer-gallery11.jpg",
+    link: "/events",
+  },
+  {
+    id: 12,
+    image: "/images/Volunteer-Images/volunteer-gallery12.jpg",
+    link: "/events",
+  },
+  {
+    id: 13,
+    image: "/images/Volunteer-Images/volunteer-gallery13.jpg",
+    link: "/events",
+  },
+  {
+    id: 14,
+    image: "/images/Volunteer-Images/volunteer-gallery14.jpg",
+    link: "/events",
+  },
+  {
+    id: 15,
+    image: "/images/Volunteer-Images/volunteer-gallery15.jpg",
+    link: "/events",
+  },
+  {
+    id: 16,
+    image: "/images/Volunteer-Images/volunteer-gallery16.jpg",
+    link: "/events",
+  },
+  {
+    id: 17,
+    image: "/images/Volunteer-Images/volunteer-gallery17.jpg",
+    link: "/events",
+  },
+  {
+    id: 18,
+    image: "/images/Volunteer-Images/volunteer-gallery18.jpg",
+    link: "/events",
+  },
+  {
+    id: 19,
+    image: "/images/Volunteer-Images/volunteer-gallery19.jpg",
+    link: "/events",
+  },
+  {
+    id: 19,
+    image: "/images/Volunteer-Images/gal1.jpg",
+    link: "/events",
+  },
+  {
+    id: 19,
+    image: "/images/Volunteer-Images/gal2.jpg",
+    link: "/events",
+  },
+  {
+    id: 19,
+    image: "/images/Volunteer-Images/gal3.jpg",
+    link: "/events",
+  },
+  {
+    id: 19,
+    image: "/images/Volunteer-Images/gal4.jpg",
+    link: "/events",
+  },
+  {
+    id: 19,
+    image: "/images/Volunteer-Images/gal5.jpg",
+    link: "/events",
+  },
+  {
+    id: 19,
+    image: "/images/Volunteer-Images/gal6.jpg",
+    link: "/events",
+  },
+];
+
+export default function Conclave() {
   const navigate = useNavigate();
-
   const countryCodes = [
     { code: "+91", name: "India" },
     { code: "+1", name: "USA" },
     { code: "+44", name: "UK" },
     { code: "+971", name: "UAE" },
-    { code: "+65", name: "Singapore" },
   ];
-
   const [loading, setLoading] = useState(false);
+  const [otpSent, setOtpSent] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
+    designation: "",
+    linkedinUrl: "",
     phone: "",
     countryCode: "+91",
-    message: "",
-    consent: false,
+    otp: "",
   });
-
-  const MAX_IMAGES = 5;
-
-  const [images, setImages] = useState(Array(MAX_IMAGES).fill(null));
-  const sanitizeInput = (str) => str.replace(/[<>]/g, "");
-  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setForm({ ...form, [name]: type === "checkbox" ? checked : value });
+  const [selectedCard, setSelectedCard] = useState(null);
+  const sanitize = (v = "") => v.replace(/[<>]/g, "");
+  const PrevArrow = ({ onClick }) => (
+    <div onClick={onClick} className="ExplorePageLeftButton"></div>
+  );
+  const NextArrow = ({ onClick }) => (
+    <div className="ExplorePageRightButton" onClick={onClick}></div>
+  );
+  const settings = {
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    responsive: [
+      { breakpoint: 1100, settings: { slidesToShow: 3 } },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      { breakpoint: 480, settings: { slidesToShow: 1 } },
+    ],
   };
+  const [scrollDir, setScrollDir] = useState("left");
 
-  const handleImageChange = (index, file) => {
-    if (!file) return;
-    if (!["image/png", "image/jpeg", "image/jpg"].includes(file.type)) {
-      toast.error("Only PNG / JPG / JPEG files allowed");
-      return;
-    }
+  const lastScrollY = useRef(0);
+  const bgTextRef = useRef(null);
 
-    if (file.size > 2 * 1024 * 1024) {
-      toast.error("Each image must be less than 2 MB");
-      return;
-    }
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
-    const updated = [...images];
-    updated[index] = {
-      file,
-      preview: URL.createObjectURL(file),
+      if (currentScrollY > lastScrollY.current) {
+        setScrollDir("left");
+      } else {
+        setScrollDir("right");
+      }
+
+      lastScrollY.current = currentScrollY;
     };
-    setImages(updated);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  /* ================= HELPER  ================= */
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((p) => ({ ...p, [name]: value }));
   };
 
-  /* ================= SUBMIT ================= */
-  const submitHotshotChennaiForm = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  /* ================= SEND OTP ================= */
 
-    if (!form.name || !form.email || !form.phone) {
-      toast.error("Please fill all required fields");
-      setLoading(false);
+  const sendOtp = async () => {
+    if (!form.phone) {
+      toast.error("Enter phone number");
       return;
     }
-
-    if (!validateEmail(form.email)) {
-      toast.error("Invalid email address");
-      setLoading(false);
-      return;
-    }
-
-    if (!form.consent) {
-      toast.error("Please accept the declaration");
-      setLoading(false);
-      return;
-    }
-
-    const uploadedImages = images.filter(Boolean);
-    if (uploadedImages.length === 0) {
-      toast.error("Please upload at least one image");
-      setLoading(false);
-      return;
-    }
-
-    const payload = new FormData();
-    payload.append("name", sanitizeInput(form.name));
-    payload.append("email", form.email);
-    payload.append("phone", form.phone);
-    payload.append("countryCode", form.countryCode);
-    payload.append("message", sanitizeInput(form.message || ""));
-
-    uploadedImages.forEach((img) => {
-      payload.append("images", img.file);
-    });
 
     try {
-      const res = await axios.post(
-        `${API_BASE_URL_API}/all/hotshot-chennai/submit`,
-        payload,
-      );
+      setLoading(true);
 
-      if (res.status === 200 || res.status === 201) {
-        toast.success("Your Hotshot Chennai entry has been submitted!", {
-          position: "top-center",
-        });
+      await axios.post(`${API_BASE_URL_API}/conclave/send-otp`, {
+        phone: `${form.countryCode}${form.phone}`,
+      });
 
-        setForm({
-          name: "",
-          email: "",
-          phone: "",
-          countryCode: "+91",
-          message: "",
-          consent: false,
-        });
-
-        setImages([null, null, null]);
-        navigate("/thank-you", {
-          state: {
-            from: "hotshot-chennai",
-          },
-        });
-      }
+      setOtpSent(true);
+      toast.success("OTP sent successfully");
     } catch (err) {
-      toast.error(
-        err?.response?.data?.message || "Something went wrong. Try again.",
-      );
+      toast.error("Failed to send OTP");
     } finally {
       setLoading(false);
     }
   };
 
+  /* ================= SUBMIT ================= */
+
+  const submitConclaveForm = async (e) => {
+    e.preventDefault();
+
+    if (!otpSent || !form.otp) {
+      toast.error("Please verify mobile number");
+      return;
+    }
+
+    const payload = {
+      name: sanitize(form.name),
+      email: form.email,
+      designation: sanitize(form.designation),
+      linkedinUrl: form.linkedinUrl,
+      phone: `${form.countryCode}${form.phone}`,
+      otp: form.otp,
+    };
+
+    try {
+      setLoading(true);
+
+      await axios.post(`${API_BASE_URL_API}/conclave/verify-otp`, payload);
+
+      toast.success("Registration successful!");
+
+      setForm({
+        name: "",
+        email: "",
+        designation: "",
+        linkedinUrl: "",
+        phone: "",
+        countryCode: "+91",
+        otp: "",
+      });
+
+      navigate("/thank-you", { state: { from: "conclave" } });
+    } catch (err) {
+      toast.error(err?.response?.data?.message || "OTP verification failed");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  /* ================= UI ================= */
+
   return (
     <>
-      {/* ================= SEO ================= */}
-
-      <Helmet>
-        <title>Hotshot Chennai | Photography Contest</title>
-        <meta
-          name="description"
-          content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
-        />
-        <meta
-          property="og:title"
-          content="Hotshot Chennai | Photography Contest"
-        />
-        <meta
-          property="og:description"
-          content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
-        />
-        <meta
-          property="og:image"
-          content="https://www.superchennai.com/images/og-image/hotshot-og-image.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://www.superchennai.com/contest/hotshots-photography-contest"
-        />
-      </Helmet>
-
       <ToastContainer position="top-center" />
 
-      {/* ================= Banner Section ================= */}
+      {/* ============== Banner ============ */}
 
       <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
         {/* Images */}
@@ -208,226 +371,342 @@ export default function conclave() {
         </div>
       </section>
 
-      {/* ================= Intro Content ================= */}
-      <div
-        className="visitIntroParaSection detailIntro"
-        style={{ paddingBottom: "0" }}
-      >
-        <div className="container max-w-7xl mx-auto ">
-          <div className="workIntro">
-            <h1>Super Chennai Hotshots</h1>
-
+      <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
+        <div className="volunteerParaSection container max-w-7xl mx-auto px-4">
+          <div
+            className={`VolunteeerTextBackground ${
+              scrollDir === "right" ? "scroll-right" : "scroll-left"
+            }`}
+            ref={bgTextRef}
+          >
             <p>
-              Super Chennai Hotshots is an open photography call inviting
-              passionate photographers, photo bloggers, and hobbyists across the
-              city to capture Chennai as it lives and evolves every day.
+              CONCLAVE - &nbsp; CONCLAVE - &nbsp; CONCLAVE - &nbsp; CONCLAVE
             </p>
-            <p>
-              From everyday moments and people to changing streets, modern
-              skylines, creative spaces, and new-age city life,Hotshots
-              celebrates a Chennai that balances tradition with progress.
-            </p>
-
-            <p>
-              Selected photographs will be featured on Super Chennai’s digital
-              platforms in collaboration with the contributor. The best works of
-              the year will be curated into a physical exhibition, showcasing
-              the city through the eyes of its people.
-            </p>
-            <p>
-              If you have a lens and a love for Chennai—this is your frame .
-            </p>
-
-            <hr />
-
-            <h2 className=" themelink-color formheadingtheme hotshotstext">
-              Hotshots
-            </h2>
-            <div>
-              <p className="everydaytext">Everyday stories. Evolving city.</p>
-            </div>
           </div>
-        </div>
-      </div>
+          <div className="volunteerRow">
+            <img
+              src="/images/events/superchennai-left.png"
+              alt="volunteer work in chennai"
+              className="w-[150px] h-[500px] object-cover rounded-lg"
+            />
+            <div className="volunteeerMainContent">
+              <h3>ABOUT</h3>
 
-      {/* ================= FORM ================= */}
-
-      <section className="relative py-16 bg-gradient-to-br from-[#f6f0f7] via-[#faf7fb] to-[#f1e6f3]">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="relative h-full">
-              <img
-                src="/images/events/superchennai-hotshots-left.jpg"
-                alt="Margazhi Moments Chennai"
-                className="w-full h-full object-cover min-h-[100px]"
-              />
-              <div className="absolute inset-0 bg-purple-900/20" />
-            </div>
-
-            {/* RIGHT FORM */}
-            <div className="relative p-4 md:p-10 overflow-hidden">
-              <h2 className=" themelink-color formheadingtheme">
-                SHARE YOUR HOTSHOTS
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Upload your best Chennai moment and share the story behind your
-                captivating photo.
+              <p className="paraZeroVolunteerSection">
+                The Super Chennai Conclave is a one-day strategic gathering
+                designed to shape the future of Chennai through collaboration,
+                insight, and action.
               </p>
+              <p className="paraoneVolunteerSection">
+                It brings together policymakers, industry leaders, urban
+                planners, academics, and subject-matter experts to collectively
+                address the city’s most urgent urban challenges and unlock new
+                opportunities for sustainable growth.
+              </p>
+              <p className="paraTwoVolunteerSection">
+                This conclave goes beyond discussion — it is focused on outcomes
+                that can influence policy, investment, and long-term city
+                transformation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <form
-                onSubmit={submitHotshotChennaiForm}
-                className="space-y-5 mt-6"
-              >
-                <div className="flex gap-2">
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-1">
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={form.name}
-                      onChange={handleChange}
-                      placeholder="Your Name *"
-                      className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-purple-500 outline-none"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-1">
-                      Email ID *
-                    </label>
+      <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
+        <div className="volunteerParaSection container max-w-7xl mx-auto px-4">
+          <div
+            className={`VolunteeerTextBackground ${
+              scrollDir === "right" ? "scroll-right" : "scroll-left"
+            }`}
+            ref={bgTextRef}
+          >
+            <p>
+              CONCLAVE - &nbsp; CONCLAVE - &nbsp; CONCLAVE - &nbsp; CONCLAVE
+            </p>
+          </div>
+          <div className="volunteerRow">
+            <div className="volunteeerMainContent">
+              <h3>WHY SUPER CHENNAI</h3>
+              <p>
+                Chennai has always been a city of substance — resilient,
+                industrious, and culturally rich. It has strong infrastructure,
+                improving public transit, and deep economic foundations.
+              </p>
+              <p>
+                Yet challenges such as flooding, housing inequity, congestion,
+                cleanliness, talent migration, and limited global visibility
+                continue to impact its growth potential.
+              </p>
+              <p>
+                The Super Chennai Conclave creates a shared platform to ask an
+                important question:
+              </p>
+              <p>
+                How can Chennai evolve into a world-class, future-ready city
+                that works for everyone?
+              </p>
+            </div>
 
-                    <input
-                      type="email"
-                      name="email"
-                      value={form.email}
-                      onChange={handleChange}
-                      placeholder="Email ID *"
-                      className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-purple-500 outline-none"
-                      required
-                    />
-                  </div>
-                </div>
+            <img
+              src="/images/events/superchennai-left.png"
+              alt="volunteer work in chennai"
+              className="w-[150px] h-[500px] object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
 
-                <div className="relative w-full">
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">
-                    Phone Number *
-                  </label>
-                  <div className="flex items-center border rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-purple-500">
-                    <select
-                      name="countryCode"
-                      value={form.countryCode}
-                      onChange={handleChange}
-                      className="bg-gray-100 px-3 py-2 border-r outline-none text-sm"
-                    >
-                      {countryCodes.map((c) => (
-                        <option key={c.code} value={c.code}>
-                          {c.code}
-                        </option>
-                      ))}
-                    </select>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={form.phone}
-                      onChange={handleChange}
-                      placeholder="Phone Number *"
-                      className="flex-1 px-3 py-2 outline-none text-sm"
-                      required
-                    />
-                  </div>
-                </div>
+      {/*============= PILLERS ============= */}
 
-                {/* Upload */}
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Upload Images (Up to 5)
-                  </label>
-                  <div className="grid grid-cols-3 gap-4">
-                    {[0, 1, 2, 3, 4].map((i) => (
-                      <label
-                        key={i}
-                        className="border-2 border-dashed rounded-lg h-24 flex items-center justify-center cursor-pointer"
-                      >
-                        {images[i]?.preview ? (
-                          <img
-                            src={images[i].preview}
-                            className="w-full h-full object-cover rounded-lg"
-                          />
-                        ) : (
-                          <span className="text-sm text-gray-400">
-                            Image {i + 1}
-                          </span>
-                        )}
-                        <input
-                          type="file"
-                          className="hidden"
-                          accept=".jpg,.jpeg,.png"
-                          onChange={(e) =>
-                            handleImageChange(i, e.target.files[0])
-                          }
-                        />
-                      </label>
-                    ))}
-                  </div>
-                  <p className="text-xs text-gray-500 mt-2">
-                    PNG / JPG / JPEG • Max 2 MB per image
-                  </p>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">
-                    Message / Description (Optional)
-                  </label>
+      <section className="visitIntroParaSection detailIntro ">
+        <div className="workIntro">
+          <h3 className="newupdatewhychennai">
+            FIVE PILLARS OF SUPER CHENNAI{" "}
+          </h3>
+          <p>
+            The conclave is anchored around five interconnected pillars that
+            define a truly world-class city.
+          </p>
 
-                  <textarea
-                    name="message"
-                    value={form.message}
-                    onChange={handleChange}
-                    placeholder="Message (Optional)"
-                    className="border p-3 rounded-lg w-full"
+          <div className="section-container container max-w-7xl mx-auto px-4">
+            <div className="section-left-image">
+              <img
+                src="/images/Visit-Images/standup-show.jpg"
+                alt="Main Side Visual"
+                // className="w-[150px] h-[150px] object-cover rounded-lg"
+              />
+            </div>
+
+            <div className="section-right-content">
+              {infoData.map((item, index) => (
+                <div className="info-item-block" key={index}>
+                  <img
+                    src={item.icon}
+                    alt={item.imgAlt}
+                    className="info-icon"
                   />
+                  <div className="info-text-block">
+                    <h3>{item.title}</h3>
+                    <p>{item.desc}</p>
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div className="flex items-start gap-2">
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    checked={form.consent}
-                    onChange={handleChange}
-                  />
+      {/*============= FORM ================ */}
 
-                  <p className="text-sm text-gray-600">
-                    I confirm that the uploaded photographs are my original work
-                    and can be displayed on this website and related platforms.
-                  </p>
-                </div>
+      <section className="relative py-16 bg-gradient-to-br from-[#ffffff] to-[#ffffff] m-10">
+        <div className="container max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 bg-white rounded-2xl shadow-xl overflow-hidden">
+            {/* LEFT IMAGE */}
+            <img
+              src="/images/events/superchennai-pillers.png"
+              className="w-120 h-180 "
+              alt="Conclave"
+            />
 
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button-full "
+            {/* FORM */}
+            <form
+              onSubmit={submitConclaveForm}
+              className="p-6 md:p-10 space-y-4"
+            >
+              <h2 className="themelink-color formheadingtheme">Conclave</h2>
+              <p className="text-gray-600 mb-6">SHARE YOUR INFOS</p>
+              <label className="block text-sm font-semibold text-gray-700 mb-1">
+                Name *
+              </label>
+
+              <input
+                name="name"
+                placeholder="Name *"
+                className="w-full border p-3 rounded-lg"
+                value={form.name}
+                onChange={handleChange}
+                required
+              />
+              <label className="block text-sm font-semibold text-gray-700 mb-1">
+                Email ID *
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email *"
+                className="w-full border p-3 rounded-lg"
+                value={form.email}
+                onChange={handleChange}
+                required
+              />
+
+              <div className="flex gap-2">
+                <select
+                  name="countryCode"
+                  value={form.countryCode}
+                  onChange={handleChange}
+                  className="border px-3 rounded-lg"
                 >
-                  {loading ? "Submitting..." : "Submit"}
-                </button>
-              </form>
+                  {countryCodes.map((c) => (
+                    <option key={c.code} value={c.code}>
+                      {c.code}
+                    </option>
+                  ))}
+                </select>
+
+                <input
+                  name="phone"
+                  placeholder="Phone *"
+                  className="flex-1 border p-3 rounded-lg"
+                  value={form.phone}
+                  onChange={handleChange}
+                  disabled={otpSent}
+                  required
+                />
+
+                {!otpSent && (
+                  <button
+                    type="button"
+                    onClick={sendOtp}
+                    className="bg-purple-700 text-white px-4 rounded-lg "
+                  >
+                    Send OTP
+                  </button>
+                )}
+              </div>
+
+              {otpSent && (
+                <input
+                  name="otp"
+                  placeholder="Enter OTP *"
+                  className="w-full border p-3 rounded-lg"
+                  value={form.otp}
+                  onChange={handleChange}
+                  required
+                />
+              )}
+
+              <label className="block text-sm font-semibold text-gray-700 mb-1">
+                Desiginations
+              </label>
+
+              <input
+                name="designation"
+                placeholder="Designation *"
+                className="w-full border p-3 rounded-lg"
+                value={form.designation}
+                onChange={handleChange}
+                required
+              />
+
+              <label className="block text-sm font-semibold text-gray-700 mb-1">
+                LinkedIn Profile URL *
+              </label>
+              <input
+                name="linkedinUrl"
+                placeholder="LinkedIn URL *"
+                className="w-full border p-3 rounded-lg"
+                value={form.linkedinUrl}
+                onChange={handleChange}
+                required
+              />
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button-full "
+              >
+                {loading ? "Processing..." : "Submit"}
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/*============= GALLERY ================ */}
+
+      <div className="NewsLetterPage">
+        <div className="exploreSldierBg">
+          <div className="container max-w-7xl mx-auto px-4">
+            <div className="exploreMoreSectionContent">
+              <h4>Volunteer Gallery</h4>
+            </div>
+
+            <div className="exploreSldierSection">
+              <Slider {...settings}>
+                {volunteerGallery.map((card, index) => (
+                  <div
+                    key={index}
+                    className="ExplorePageSliderImage cursor-pointer"
+                    onClick={() => setSelectedCard(card)}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        borderRadius: "8px",
+                        overflow: "hidden",
+                      }}
+                    >
+                      <img
+                        src={card.image}
+                        alt={`Volunteer ${index + 1}`}
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          display: "block",
+                        }}
+                      />
+                      <div
+                        style={{
+                          position: "absolute",
+                          bottom: 0,
+                          left: 0,
+                          right: 0,
+                          height: "160px",
+                          background:
+                            "linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent)",
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </Slider>
             </div>
           </div>
         </div>
 
-        <img
-          src="/images/events/dev-bg.jpg"
-          alt=""
-          className="
-    pointer-events-none
-    select-none
-    absolute
-    bottom-0 right-0 w-100 md:w-100
-    opacity-20
-    
-  "
-        />
-      </section>
+        <AnimatePresence>
+          {selectedCard && (
+            <motion.div
+              className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <motion.div
+                className="bg-white p-6 rounded-xl w-auto relative popupSection"
+                initial={{ scale: 0.8, opacity: 0, y: 50 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                exit={{ scale: 0.8, opacity: 0, y: 50 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
+                <button
+                  className="absolute top-2 right-2 text-black text-xl font-bold cursor-pointer"
+                  onClick={() => setSelectedCard(null)}
+                >
+                  ×
+                </button>
+                <img
+                  src={selectedCard.image}
+                  alt="Volunteer"
+                  className="w-full mb-4 rounded popupSection paddingSection"
+                />
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </>
   );
 }

@@ -1,16 +1,34 @@
+import axios from "axios";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
 import { API_BASE_URL_API } from "../../../../config";
-import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
-export default function HotshotChennaiContest() {
-  const navigate = useNavigate();
+import { useEffect, useRef } from "react";
 
-  const validateURL = (url) =>
-  /^(https?:\/\/)?([\w\d-]+\.)+[\w-]+(\/.*)?$/.test(url);
+const AccomodSections = [
+  {
+    title: "THE VISION",
+    description:
+      "Super Chennai is a citizen-led initiative, supported by CREDAI, with a clear vision — to bring diverse stakeholders together to reimagine Chennai’s urban future. By fostering informed dialogue and collaborative thinking, the initiative aims to develop practical, inclusive, and forward-looking solutions rooted in the city’s unique strengths.",
+    image: "/images/Work-Images/SubPages/Salary-Ranges-by-Industry.jpg",
+    //   linkText: "Explore More",
+    linkUrl: "/digital",
+  },
+  {
+    title: "THE GOAL",
+    description:
+      " The primary goal of the conclave is to develop a comprehensive Super Chennai Manifesto — a clear and actionable roadmap for the city’s future.This manifesto will be presented to all political parties contesting the upcoming Assembly elections, ensuring that Chennai’s long-term priorities remain central to public and policy conversations",
+    image: "/images/Work-Images/SubPages/Salary-Ranges-by-Industry.jpg",
+    //   linkText: "Explore More",
+    linkUrl: "/education",
+  },
+];
+
+export default function conclave() {
+  const navigate = useNavigate();
+  const [scrollDir, setScrollDir] = useState("left");
 
   const countryCodes = [
     { code: "+91", name: "India" },
@@ -27,18 +45,14 @@ export default function HotshotChennaiContest() {
     phone: "",
     countryCode: "+91",
     message: "",
-    linkedinUrl: "",
-    locationUrl: "",
     consent: false,
   });
 
   const MAX_IMAGES = 5;
 
   const [images, setImages] = useState(Array(MAX_IMAGES).fill(null));
-
   const sanitizeInput = (str) => str.replace(/[<>]/g, "");
   const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setForm({ ...form, [name]: type === "checkbox" ? checked : value });
@@ -46,7 +60,6 @@ export default function HotshotChennaiContest() {
 
   const handleImageChange = (index, file) => {
     if (!file) return;
-
     if (!["image/png", "image/jpeg", "image/jpg"].includes(file.type)) {
       toast.error("Only PNG / JPG / JPEG files allowed");
       return;
@@ -57,8 +70,6 @@ export default function HotshotChennaiContest() {
       return;
     }
 
-
-
     const updated = [...images];
     updated[index] = {
       file,
@@ -68,7 +79,6 @@ export default function HotshotChennaiContest() {
   };
 
   /* ================= SUBMIT ================= */
-
   const submitHotshotChennaiForm = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -98,29 +108,12 @@ export default function HotshotChennaiContest() {
       return;
     }
 
-
-    
-    if (form.linkedinUrl && !validateURL(form.linkedinUrl)) {
-      toast.error("Please enter a valid LinkedIn URL");
-      setLoading(false);
-      return;
-    }
-
-    if (form.locationUrl && !validateURL(form.locationUrl)) {
-      toast.error("Please enter a valid Location URL");
-      setLoading(false);
-      return;
-    }
-
     const payload = new FormData();
     payload.append("name", sanitizeInput(form.name));
     payload.append("email", form.email);
     payload.append("phone", form.phone);
     payload.append("countryCode", form.countryCode);
     payload.append("message", sanitizeInput(form.message || ""));
-    payload.append("linkedinUrl", form.linkedinUrl);
-    payload.append("locationUrl", form.locationUrl);
-
 
     uploadedImages.forEach((img) => {
       payload.append("images", img.file);
@@ -161,6 +154,73 @@ export default function HotshotChennaiContest() {
       setLoading(false);
     }
   };
+
+  const infoData = [
+    {
+      title: "LIVE",
+      title1: "A City That Works for Everyone",
+      desc: "Chennai’s growth must be inclusive, resilient, and equitable. This pillar focuses on building a city that delivers quality of life for all residents.Key areas include sustainable mobility, affordable housing, flood resilience, clean public spaces, strong civic governance, and neighbourhoods designed for safety and accessibility",
+      icon: "/images/Visit-Images/icons/Scenic-Relaxing.svg",
+      imgAlt: "attractions chennai",
+    },
+
+    {
+      title: "VISIT",
+      title1: "Crafting a World-Class Visitor Experience",
+      desc: "With its rich heritage, vibrant culture, and natural coastline, Chennai has the potential to become a global cultural destination.This pillar explores how the city can integrate heritage, tourism, hospitality, and public spaces to offer a seamless, memorable visitor experience that reflects Chennai’s unique character.",
+      icon: "/images/Visit-Images/icons/Buzzing-City-Life.svg",
+      imgAlt: "VISIT",
+    },
+
+    {
+      title: "WORK",
+      title1: "Becoming India’s Talent Capital",
+      desc: "Chennai produces thousands of skilled graduates and hosts strong R&D capabilities across industries. However, perception gaps and lifestyle factors continue to drive talent away.This pillar focuses on reshaping Chennai’s image as an opportunity-rich metro by enhancing career pathways, work-life balance, cultural ecosystems, and industry-academia collaboration.",
+      icon: "/images/Visit-Images/icons/Where-Flavour-Meets-Culture.svg",
+      imgAlt: "WORK",
+    },
+
+    {
+      title: "INVEST",
+      title1: "Reimagining Chennai as a Launchpad for Future Business",
+
+      desc: "With deep manufacturing expertise, strategic location, and economic stability, Chennai is well-positioned to attract global investment.This pillar examines how the city can strengthen ease of doing business, boost investor confidence, and position itself as South Asia’s most compelling and future-ready investment destination.",
+      icon: "/images/Visit-Images/icons/Weekend-Getaways-Chennai-Style.svg",
+      imgAlt: "INVEST",
+    },
+    {
+      title: "INNOVATE",
+      title1: "Becoming India’s Deep-Tech Hub for the World",
+
+      desc: "Chennai has strong technical talent and premier research institutions, yet lacks the visibility and ecosystem density of leading global innovation hubs.This pillar explores how the city can nurture entrepreneurship, attract risk capital, strengthen innovation networks, and support deep-tech ventures to scale globally from Chennai",
+      icon: "/images/Visit-Images/icons/Timeless-Chennai-Where-Culture-Evolves-Gracefully.svg",
+      imgAlt: "best temple in chennai",
+    },
+  ];
+
+  const lastScrollY = useRef(0);
+  const bgTextRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY.current) {
+        setScrollDir("left");
+      } else {
+        setScrollDir("right");
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
+
+
 
   return (
     <>
@@ -242,40 +302,228 @@ export default function HotshotChennaiContest() {
       >
         <div className="container max-w-7xl mx-auto ">
           <div className="workIntro">
-            <h1>Super Chennai Hotshots</h1>
+            <h1>ABOUT THE CONCLAVE</h1>
 
             <p>
-              Super Chennai Hotshots is an open photography call inviting
-              passionate photographers, photo bloggers, and hobbyists across the
-              city to capture Chennai as it lives and evolves every day.
+              The Super Chennai Conclave is a one-day strategic gathering
+              designed to shape the future of Chennai through collaboration,
+              insight, and action.
             </p>
             <p>
-              From everyday moments and people to changing streets, modern
-              skylines, creative spaces, and new-age city life,Hotshots
-              celebrates a Chennai that balances tradition with progress.
+              It brings together policymakers, industry leaders, urban planners,
+              academics, and subject-matter experts to collectively address the
+              city’s most urgent urban challenges and unlock new opportunities
+              for sustainable growth.
             </p>
 
             <p>
-              Selected photographs will be featured on Super Chennai’s digital
-              platforms in collaboration with the contributor. The best works of
-              the year will be curated into a physical exhibition, showcasing
-              the city through the eyes of its people.
-            </p>
-            <p>
-              If you have a lens and a love for Chennai—this is your frame .
+              This conclave goes beyond discussion — it is focused on outcomes
+              that can influence policy, investment, and long-term city
+              transformation.
             </p>
 
             <hr />
 
-            <h2 className=" themelink-color formheadingtheme hotshotstext">
-              Hotshots
+            <h2 className=" themelink-color formheadingtheme hotshotstext p-5">
+              WHY SUPER CHENNAI
             </h2>
-            <div>
-              <p className="everydaytext">Everyday stories. Evolving city.</p>
+            <div className="max-w-4xl mx-auto space-y-4 text-justify">
+              <p className="everydaytext text-center">
+                Chennai has always been a city of substance — resilient,
+                industrious, and culturally rich. It has strong infrastructure,
+                improving public transit, and deep economic foundations.
+              </p>
+
+              <p className="everydaytext text-center">
+                Yet challenges such as flooding, housing inequity, congestion,
+                cleanliness, talent migration, and limited global visibility
+                continue to impact its growth potential.
+              </p>
+
+              <p
+                className="everydaytext text-center "
+                style={{ width: "100%" }}
+              >
+                The Super Chennai Conclave creates a shared platform to ask an
+                important question:
+              </p>
+
+              <p
+                className="font-semibold text-center "
+                style={{ width: "100%" }}
+              >
+                How can Chennai evolve into a world-class, future-ready city
+                that works for everyone?
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+      {/*--------------- PILLERS SUPERCHENNAI----------------- */}
+
+      <div className="AccodomationPageBecameVolunteerBg">
+        <div className="container max-w-7xl mx-auto px-4">
+          {AccomodSections.map((section, index) => (
+            <div className="AccodoSectionFLex" key={index}>
+              {index % 2 === 0 ? (
+                <>
+                  <img src={section.image} alt={section.title} />
+                  <div className="AccodContentsSection">
+                    <h3>{section.title}</h3>
+                    <p>{section.description}</p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="AccodContentsSection1">
+                    <h3>{section.title}</h3>
+                    <p>{section.description}</p>
+                  </div>
+                  <img src={section.image} alt={section.title} />
+                </>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <section className="visitIntroParaSection detailIntro ">
+        <div className="workIntro">
+          <h3 className="newupdatewhychennai">
+            FIVE PILLARS OF SUPER CHENNAI{" "}
+          </h3>
+          <p>
+            The conclave is anchored around five interconnected pillars that
+            define a truly world-class city.
+          </p>
+
+          <div className="section-container container max-w-7xl mx-auto px-4">
+            <div className="section-left-image">
+              <img
+                src="/images/Visit-Images/standup-show.jpg"
+                alt="Main Side Visual"
+              />
+            </div>
+
+            <div className="section-right-content">
+              {infoData.map((item, index) => (
+                <div className="info-item-block" key={index}>
+                  <img
+                    src={item.icon}
+                    alt={item.imgAlt}
+                    className="info-icon"
+                  />
+                  <div className="info-text-block">
+                    <h3>{item.title}</h3>
+                    <p>{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= Who Can Benefit ================= */}
+
+
+      {/* ================= Who Can Benefit ================= */}
+{/* ================= Who Can Benefit ================= */}
+
+<section className="py-16 bg-white">
+  <div className="container max-w-7xl mx-auto px-4">
+    <div className="max-w-6xl mx-auto text-center">
+
+      <h2 className="themelink-color formheadingtheme mb-12">
+        Who Can Benefit
+      </h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+        <div className="flex flex-col items-center text-center">
+          <img
+            src="/images/Innovate-Images/SubPages/Icons/Why%20Chennai%20is%20Becoming%20a%20Robotics%20Powerhouse.svg"
+            alt="Policymakers"
+            className="w-14 h-14 mb-4"
+          />
+          <p>Policymakers and governance leaders</p>
+        </div>
+
+        <div className="flex flex-col items-center text-center">
+          <img
+            src="/images/Innovate-Images/SubPages/Icons/Why%20Chennai%20is%20Becoming%20a%20Robotics%20Powerhouse.svg"
+            alt="Business Leaders"
+            className="w-14 h-14 mb-4"
+          />
+          <p>Industry and business leaders</p>
+        </div>
+
+        <div className="flex flex-col items-center text-center">
+          <img
+            src="/images/Innovate-Images/SubPages/Icons/Why%20Chennai%20is%20Becoming%20a%20Robotics%20Powerhouse.svg"
+            alt="Urban Planners"
+            className="w-14 h-14 mb-4"
+          />
+          <p>Urban planners and architects</p>
+        </div>
+
+        <div className="flex flex-col items-center text-center">
+          <img
+            src="/images/Innovate-Images/SubPages/Icons/Why%20Chennai%20is%20Becoming%20a%20Robotics%20Powerhouse.svg"
+            alt="Academics"
+            className="w-14 h-14 mb-4"
+          />
+          <p>Academics and researchers</p>
+        </div>
+
+        <div className="flex flex-col items-center text-center">
+          <img
+            src="/images/Innovate-Images/SubPages/Icons/Why%20Chennai%20is%20Becoming%20a%20Robotics%20Powerhouse.svg"
+            alt="Entrepreneurs"
+            className="w-14 h-14 mb-4"
+          />
+          <p>Entrepreneurs and innovators</p>
+        </div>
+
+        <div className="flex flex-col items-center text-center">
+          <img
+            src="/images/Innovate-Images/SubPages/Icons/Why%20Chennai%20is%20Becoming%20a%20Robotics%20Powerhouse.svg"
+            alt="Community Leaders"
+            className="w-14 h-14 mb-4"
+          />
+          <p>Civic and community leaders</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+      <section className="py-16 bg-white">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+
+            <h2 className="themelink-color formheadingtheme">
+              JOIN THE CONVERSATION
+            </h2>
+
+            <p className="font-semibold">
+              150 Invitees | One Day | One Shared Goal
+            </p>
+
+            <p className="  text-center ">
+              The Super Chennai Conclave is a collaborative platform where ideas
+              translate into action. Participants will engage in expert panels,
+              strategic discussions, and collective manifesto development aimed
+              at making Chennai future-ready.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* ================= FORM ================= */}
 
@@ -414,36 +662,6 @@ export default function HotshotChennaiContest() {
                     placeholder="Message (Optional)"
                     className="border p-3 rounded-lg w-full"
                   />
-                </div>
-
-                <div className="flex gap-2">
-                  <div className="w-full">
-                    <label className="block text-sm font-semibold text-gray-700 mb-1">
-                      LinkedIn Profile URL
-                    </label>
-                    <input
-                      type="url"
-                      name="linkedinUrl"
-                      value={form.linkedinUrl}
-                      onChange={handleChange}
-                      placeholder="https://www.linkedin.com/in/yourprofile"
-                      className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-purple-500 outline-none"
-                    />
-                  </div>
-
-                  <div className="w-full">
-                    <label className="block text-sm font-semibold text-gray-700 mb-1">
-                      Location URL (Google Maps)
-                    </label>
-                    <input
-                      type="url"
-                      name="locationUrl"
-                      value={form.locationUrl}
-                      onChange={handleChange}
-                      placeholder="https://maps.google.com/..."
-                      className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-purple-500 outline-none"
-                    />
-                  </div>
                 </div>
 
                 <div className="flex items-start gap-2">

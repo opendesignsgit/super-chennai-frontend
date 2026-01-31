@@ -137,6 +137,7 @@ export const volunteerGallery = [
 
 
 export default function VolunteerGallery() {
+  
   const [selectedCard, setSelectedCard] = useState(null);
 
   const PrevArrow = ({ onClick }) => (

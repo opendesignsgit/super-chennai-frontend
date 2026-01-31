@@ -133,7 +133,7 @@ export default function AdminView() {
         Phone: d.mobile || d.phone || "",
         Message: d.message || "",
         "LinkedIn URL": d.linkedin_url || "",
-        "Location URL": d.location_url || "",
+       Location: d.location_url || "",
         Date: formatDateTime(d.created_at).date,
         Time: formatDateTime(d.created_at).time,
       };
@@ -442,7 +442,7 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
                     </td>
                   )}
 
-                  {title === "Hotshot Chennai" && (
+                  {/* {title === "Hotshot Chennai" && (
                     <td>
                       {d.location_url ? (
                         <a
@@ -457,7 +457,11 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
                         "—"
                       )}
                     </td>
+                  )} */}
+                  {title === "Hotshot Chennai" && (
+                    <td>{d.location_url?.trim() ? d.location_url : "—"}</td>
                   )}
+
                   {showMessage && (
                     <td className="admin-message">
                       {d.message ? d.message : "—"}

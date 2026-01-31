@@ -64,121 +64,8 @@ export const volunteerGallery = [
     image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
     link: "/events",
   },
-  {
-    id: 3,
-    image: "/images/Volunteer-Images/volunteer-gallery3.jpg",
-    link: "/events",
-  },
-  {
-    id: 4,
-    image: "/images/Volunteer-Images/volunteer-gallery4.jpg",
-    link: "/events",
-  },
-  {
-    id: 5,
-    image: "/images/Volunteer-Images/volunteer-gallery5.jpg",
-    link: "/events",
-  },
-  {
-    id: 6,
-    image: "/images/Volunteer-Images/volunteer-gallery6.jpg",
-    link: "/events",
-  },
-  {
-    id: 7,
-    image: "/images/Volunteer-Images/volunteer-gallery7.jpg",
-    link: "/events",
-  },
-  {
-    id: 8,
-    image: "/images/Volunteer-Images/volunteer-gallery8.jpg",
-    link: "/events",
-  },
-  {
-    id: 9,
-    image: "/images/Volunteer-Images/volunteer-gallery9.jpg",
-    link: "/events",
-  },
-  {
-    id: 10,
-    image: "/images/Volunteer-Images/volunteer-gallery10.jpg",
-    link: "/events",
-  },
-  {
-    id: 11,
-    image: "/images/Volunteer-Images/volunteer-gallery11.jpg",
-    link: "/events",
-  },
-  {
-    id: 12,
-    image: "/images/Volunteer-Images/volunteer-gallery12.jpg",
-    link: "/events",
-  },
-  {
-    id: 13,
-    image: "/images/Volunteer-Images/volunteer-gallery13.jpg",
-    link: "/events",
-  },
-  {
-    id: 14,
-    image: "/images/Volunteer-Images/volunteer-gallery14.jpg",
-    link: "/events",
-  },
-  {
-    id: 15,
-    image: "/images/Volunteer-Images/volunteer-gallery15.jpg",
-    link: "/events",
-  },
-  {
-    id: 16,
-    image: "/images/Volunteer-Images/volunteer-gallery16.jpg",
-    link: "/events",
-  },
-  {
-    id: 17,
-    image: "/images/Volunteer-Images/volunteer-gallery17.jpg",
-    link: "/events",
-  },
-  {
-    id: 18,
-    image: "/images/Volunteer-Images/volunteer-gallery18.jpg",
-    link: "/events",
-  },
-  {
-    id: 19,
-    image: "/images/Volunteer-Images/volunteer-gallery19.jpg",
-    link: "/events",
-  },
-  {
-    id: 19,
-    image: "/images/Volunteer-Images/gal1.jpg",
-    link: "/events",
-  },
-  {
-    id: 19,
-    image: "/images/Volunteer-Images/gal2.jpg",
-    link: "/events",
-  },
-  {
-    id: 19,
-    image: "/images/Volunteer-Images/gal3.jpg",
-    link: "/events",
-  },
-  {
-    id: 19,
-    image: "/images/Volunteer-Images/gal4.jpg",
-    link: "/events",
-  },
-  {
-    id: 19,
-    image: "/images/Volunteer-Images/gal5.jpg",
-    link: "/events",
-  },
-  {
-    id: 19,
-    image: "/images/Volunteer-Images/gal6.jpg",
-    link: "/events",
-  },
+  
+  
 ];
 
 export default function Conclave() {
@@ -474,7 +361,6 @@ export default function Conclave() {
               <img
                 src="/images/Visit-Images/standup-show.jpg"
                 alt="Main Side Visual"
-                // className="w-[150px] h-[150px] object-cover rounded-lg"
               />
             </div>
 
@@ -497,49 +383,101 @@ export default function Conclave() {
         </div>
       </section>
 
+
+  
+    <section className="relative w-full bg-white overflow-hidden min-h-[400px] flex items-center">
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          background: `linear-gradient(to right, #ffffff 30%, rgba(255, 255, 255, 0) 70%), url('https://content.jdmagicbox.com/v2/comp/chennai/68/044p3006268/catalogue/welcomhotel-by-itc-hotels-gopalapuram-chennai-hotels-0psayu28bf.jpg?imwidth=393')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'right center',
+        }}
+      />
+
+      <div className="container mx-auto px-6 lg:px-20 z-10">
+        <div className="max-w-2xl flex flex-col items-center lg:items-start text-center lg:text-left">
+          
+          {/* Top Label */}
+          <span className="text-rose-600 font-bold tracking-widest text-sm mb-1 uppercase">
+            Super Chennai
+          </span>
+
+          {/* Conclave Logo/Box Section */}
+          <div className="relative mb-6">
+            <div className="border-[3px] border-slate-800 rounded-[20px] px-8 py-2 relative">
+              <h1 className="text-6xl md:text-7xl font-bold text-slate-800 tracking-tighter">
+                CONCLAVE
+              </h1>
+              
+              {/* The Speech Bubble Point (Tail) */}
+              <div className="absolute -bottom-4 right-8 w-8 h-8">
+                <svg viewBox="0 0 32 32" className="fill-white stroke-slate-800 stroke-[3px]">
+                  <path d="M0 0 L32 0 L16 32 Z" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Custom Border Gradient Emulation (Optional tweak) */}
+            <div className="absolute -top-[3px] -right-[3px] w-1/2 h-full border-t-[3px] border-r-[3px] border-rose-500 rounded-tr-[20px] pointer-events-none" />
+            <div className="absolute -bottom-[3px] -right-[3px] w-1/4 h-1/2 border-b-[3px] border-r-[3px] border-rose-500 rounded-br-[20px] pointer-events-none" />
+          </div>
+
+          {/* Date and Venue */}
+          <p className="text-slate-600 text-lg md:text-xl font-medium mb-8">
+            Feb 14, 2026 <span className="mx-2 text-slate-300">|</span> ITC WelcomHotel, Chennai
+          </p>
+
+          {/* Register Button */}
+          <button className="border-2 border-rose-400 text-rose-500 font-semibold px-10 py-2.5 rounded-full hover:bg-rose-50 transition-colors duration-300">
+            Register Now
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+
+
       {/*============= FORM ================ */}
 
       <section className="relative py-16 bg-gradient-to-br from-[#ffffff] to-[#ffffff] m-10">
-        <div className="container max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 bg-white rounded-2xl shadow-xl overflow-hidden">
-            {/* LEFT IMAGE */}
-            <img
-              src="/images/events/superchennai-pillers.png"
-              className="w-120 h-180 "
-              alt="Conclave"
-            />
-
+        <div className="container mx-auto flex justify-center">
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden w-full max-w-2xl">
             {/* FORM */}
             <form
               onSubmit={submitConclaveForm}
               className="p-6 md:p-10 space-y-4"
             >
-              <h2 className="themelink-color formheadingtheme">Conclave</h2>
-              <p className="text-gray-600 mb-6">SHARE YOUR INFOS</p>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">
-                Name *
-              </label>
+              <h2 className="themelink-color formheadingtheme text-center">REGISTER TO ATTEND</h2>
+              <p className="text-gray-600 mb-6 text-center">Be part of a curated group shaping Chennai’s future.</p>
 
-              <input
-                name="name"
-                placeholder="Name *"
-                className="w-full border p-3 rounded-lg"
-                value={form.name}
-                onChange={handleChange}
-                required
-              />
-              <label className="block text-sm font-semibold text-gray-700 mb-1">
-                Email ID *
-              </label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email *"
-                className="w-full border p-3 rounded-lg"
-                value={form.email}
-                onChange={handleChange}
-                required
-              />
+              {/* <div className="flex gap-2">
+                <label className="block text-sm font-semibold text-gray-700 mb-1">
+                  Name *
+                </label>
+
+                <input
+                  name="name"
+                  placeholder="Name *"
+                  className="w-full border p-3 rounded-lg"
+                  value={form.name}
+                  onChange={handleChange}
+                  required
+                />
+                <label className="block text-sm font-semibold text-gray-700 mb-1">
+                  Email ID *
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email *"
+                  className="w-full border p-3 rounded-lg"
+                  value={form.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
               <div className="flex gap-2">
                 <select
@@ -569,7 +507,7 @@ export default function Conclave() {
                   <button
                     type="button"
                     onClick={sendOtp}
-                    className="bg-purple-700 text-white px-4 rounded-lg "
+                    className="bg-[#8b3c82] hover:bg-[#732f6d] text-white px-4 py-2 rounded-lg transition"
                   >
                     Send OTP
                   </button>
@@ -591,26 +529,123 @@ export default function Conclave() {
                 Desiginations
               </label>
 
-              <input
-                name="designation"
-                placeholder="Designation *"
-                className="w-full border p-3 rounded-lg"
-                value={form.designation}
-                onChange={handleChange}
-                required
-              />
+              <div className="flex gap-2">
+                <input
+                  name="designation"
+                  placeholder="Designation *"
+                  className="w-full border p-3 rounded-lg"
+                  value={form.designation}
+                  onChange={handleChange}
+                  required
+                />
 
-              <label className="block text-sm font-semibold text-gray-700 mb-1">
-                LinkedIn Profile URL *
-              </label>
-              <input
-                name="linkedinUrl"
-                placeholder="LinkedIn URL *"
-                className="w-full border p-3 rounded-lg"
-                value={form.linkedinUrl}
-                onChange={handleChange}
-                required
-              />
+                <label className="block text-sm font-semibold text-gray-700 mb-1">
+                  LinkedIn Profile URL *
+                </label>
+                <input
+                  name="linkedinUrl"
+                  placeholder="LinkedIn URL *"
+                  className="w-full border p-3 rounded-lg"
+                  value={form.linkedinUrl}
+                  onChange={handleChange}
+                  required
+                />
+              </div> */}
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Name *
+                  </label>
+                  <input
+                    name="name"
+                    placeholder="Name *"
+                    className="w-full border p-3 rounded-lg"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Email ID *
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email *"
+                    className="w-full border p-3 rounded-lg"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* <select
+                  name="countryCode"
+                  value={form.countryCode}
+                  onChange={handleChange}
+                  className="border px-3 rounded-lg"
+                >
+                  {countryCodes.map((c) => (
+                    <option key={c.code} value={c.code}>
+                      {c.code}
+                    </option>
+                  ))}
+                </select> */}
+
+                <input
+                  name="phone"
+                  placeholder="Phone *"
+                  className="border p-3 rounded-lg"
+                  value={form.phone}
+                  onChange={handleChange}
+                  disabled={otpSent}
+                  required
+                />
+
+                {!otpSent && (
+                  <button
+                    type="button"
+                    onClick={sendOtp}
+                    className="bg-[#8b3c82] hover:bg-[#732f6d] text-white px-4 py-2 rounded-lg whitespace-nowrap"
+                  >
+                    Send OTP
+                  </button>
+                )}
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Designation *
+                  </label>
+                  <input
+                    name="designation"
+                    placeholder="Designation *"
+                    className="w-full border p-3 rounded-lg"
+                    value={form.designation}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    LinkedIn Profile URL *
+                  </label>
+                  <input
+                    name="linkedinUrl"
+                    placeholder="LinkedIn URL *"
+                    className="w-full border p-3 rounded-lg"
+                    value={form.linkedinUrl}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+              </div>
 
               <button
                 type="submit"
@@ -630,7 +665,7 @@ export default function Conclave() {
         <div className="exploreSldierBg">
           <div className="container max-w-7xl mx-auto px-4">
             <div className="exploreMoreSectionContent">
-              <h4>Volunteer Gallery</h4>
+              <h4>Speakers</h4>
             </div>
 
             <div className="exploreSldierSection">

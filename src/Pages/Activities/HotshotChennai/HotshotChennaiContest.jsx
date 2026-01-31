@@ -12,6 +12,14 @@ export default function HotshotChennaiContest() {
   const validateURL = (url) =>
   /^(https?:\/\/)?([\w\d-]+\.)+[\w-]+(\/.*)?$/.test(url);
 
+  const validateProfileInput = (value) => {
+  const usernameRegex = /^[a-zA-Z0-9._-]{3,}$/; // profile id
+  const urlRegex = /^https?:\/\/(www\.)?(linkedin\.com\/in|instagram\.com)\/[a-zA-Z0-9._-]+\/?$/;
+
+  return usernameRegex.test(value) || urlRegex.test(value);
+};
+
+
   const countryCodes = [
     { code: "+91", name: "India" },
     { code: "+1", name: "USA" },
@@ -100,7 +108,7 @@ export default function HotshotChennaiContest() {
 
 
     
-    if (form.linkedinUrl && !validateURL(form.linkedinUrl)) {
+    if (form.linkedinUrl && !validateProfileInput(form.linkedinUrl)) {
       toast.error("Please enter a valid LinkedIn URL");
       setLoading(false);
       return;
@@ -419,21 +427,21 @@ export default function HotshotChennaiContest() {
                 <div className="flex gap-2">
                   <div className="w-full">
                     <label className="block text-sm font-semibold text-gray-700 mb-1">
-                      LinkedIn Profile URL
+                      Instagram ID / URL
                     </label>
                     <input
-                      type="url"
+                      type="text"
                       name="linkedinUrl"
                       value={form.linkedinUrl}
                       onChange={handleChange}
-                      placeholder="https://www.linkedin.com/in/yourprofile"
+                      placeholder="Instagram ID / URL"
                       className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-purple-500 outline-none"
                     />
                   </div>
 
                   <div className="w-full">
                     <label className="block text-sm font-semibold text-gray-700 mb-1">
-                      Location
+                      Enter Photo Location
                     </label>
                     <input
                       type="text"

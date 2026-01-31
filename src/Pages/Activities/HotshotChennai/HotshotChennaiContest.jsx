@@ -106,11 +106,11 @@ export default function HotshotChennaiContest() {
       return;
     }
 
-    if (form.locationUrl && !validateURL(form.locationUrl)) {
-      toast.error("Please enter a valid Location URL");
-      setLoading(false);
-      return;
-    }
+    // if (form.locationUrl && !validateURL(form.locationUrl)) {
+    //   toast.error("Please enter a valid Location URL");
+    //   setLoading(false);
+    //   return;
+    // }
 
     const payload = new FormData();
     payload.append("name", sanitizeInput(form.name));
@@ -433,14 +433,14 @@ export default function HotshotChennaiContest() {
 
                   <div className="w-full">
                     <label className="block text-sm font-semibold text-gray-700 mb-1">
-                      Location URL (Google Maps)
+                      Location
                     </label>
                     <input
-                      type="url"
+                      type="text"
                       name="locationUrl"
                       value={form.locationUrl}
                       onChange={handleChange}
-                      placeholder="https://maps.google.com/..."
+                      placeholder="Location"
                       className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-purple-500 outline-none"
                     />
                   </div>

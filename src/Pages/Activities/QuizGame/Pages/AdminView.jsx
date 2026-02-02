@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -132,8 +130,8 @@ export default function AdminView() {
         Email: d.email || "",
         Phone: d.mobile || d.phone || "",
         Message: d.message || "",
-        "LinkedIn URL": d.linkedin_url || "",
-       Location: d.location_url || "",
+        "Instagram": d.linkedin_url || "",
+        Location: d.location_url || "",
         Date: formatDateTime(d.created_at).date,
         Time: formatDateTime(d.created_at).time,
       };
@@ -403,7 +401,7 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
               <th>Name</th>
               <th>Email</th>
               <th>Phone</th>
-              {title === "Hotshot Chennai" && <th>LinkedIn</th>}
+              {title === "Hotshot Chennai" && <th>Instagram</th>}
               {title === "Hotshot Chennai" && <th>Location</th>}
               {showMessage && <th>Message</th>}
               {description && <th>Description</th>}
@@ -426,19 +424,23 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
                   <td>{d.email}</td>
                   <td>{d.mobile || d.phone}</td>
                   {title === "Hotshot Chennai" && (
-                    <td>
-                      {d.linkedin_url ? (
-                        <a
-                          href={d.linkedin_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-indigo-600 underline"
-                        >
-                          View
-                        </a>
-                      ) : (
-                        "—"
-                      )}
+                    // <td>
+                    //   {d.linkedin_url ? (
+                    //     <a
+                    //       href={d.linkedin_url}
+                    //       target="_blank"
+                    //       rel="noopener noreferrer"
+                    //       className="text-indigo-600 underline"
+                    //     >
+                    //       View Profile
+                    //     </a>
+                    //   ) : (
+                    //     "—"
+                    //   )}
+                    // </td>
+
+                    <td className="break-all text-sm text-gray-700">
+                      {d.linkedin_url?.trim() || "—"}
                     </td>
                   )}
 

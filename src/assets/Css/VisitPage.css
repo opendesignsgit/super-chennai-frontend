@@ -493,6 +493,15 @@
   justify-content: center;
 }
 
+.section-right-content-pillers {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  gap: 0px;
+  justify-content: center;
+}
 .info-item-block {
   display: flex;
   align-items: flex-start;

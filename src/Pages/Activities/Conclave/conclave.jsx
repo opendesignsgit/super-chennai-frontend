@@ -335,7 +335,7 @@ export default function Conclave() {
           </div>
           <div className="volunteerRow">
             <img
-              src="/images/events/conclaves.png"
+              src="/images/conclave- about-left.jpeg"
               alt="volunteer work in chennai"
               className="w-[150px] h-[500px] object-cover rounded-lg"
             />
@@ -633,7 +633,7 @@ export default function Conclave() {
       <section
   className="relative w-full overflow-hidden min-h-[450px] flex items-center justify-center
              bg-[url('/images/conclave-CTA-bg.jpeg')] bg-cover bg-center bg-no-repeat
-             pb-16 md:pb-37"
+             pb-16 md:pb-37 "
 >
 
 
@@ -657,7 +657,7 @@ export default function Conclave() {
 
             <button
               onClick={() => setShowRegisterPopup(true)}
-              className="border-2 border-rose-400 text-rose-500 font-semibold px-10 py-2.5 rounded-full hover:bg-rose-50 transition-colors duration-300"
+              className="border-2 border-rose-400 text-rose-500 font-semibold px-10 py-2.5 rounded-full hover:bg-rose-50 transition-colors duration-300 cursor-pointer"
             >
               Register Now
             </button>

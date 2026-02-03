@@ -19,9 +19,9 @@ export const speakersGallery = [
     mobile: "9381013498",
     mail: "rajcherubal@gmail.com",
     designation: "CEO, Chennai Metropolitan Development Authority",
-    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
-    description:
-      "Raj Cherubal is a visionary urban planner and administrator, playing a key role in shaping Chennai’s sustainable urban growth and infrastructure policies.",
+    image: "/images/images-speakers/raja-2.jpg",
+    // description:
+      // "Raj Cherubal is a visionary urban planner and administrator, playing a key role in shaping Chennai’s sustainable urban growth and infrastructure policies.",
   },
   {
     id: 2,
@@ -29,9 +29,9 @@ export const speakersGallery = [
     mobile: "9840741379",
     mail: "vikramcotah@grthotels.com",
     designation: "CEO, GRT Hotels & Resorts",
-    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
-    description:
-      "Vikram Cotah leads GRT Hotels with a strong focus on luxury hospitality, innovation, and sustainability, elevating South India’s tourism ecosystem.",
+    image: "/images/images-speakers/vikram cotah-image1.jpg",
+    // description:
+      // "Vikram Cotah leads GRT Hotels with a strong focus on luxury hospitality, innovation, and sustainability, elevating South India’s tourism ecosystem.",
   },
   {
     id: 3,
@@ -39,9 +39,9 @@ export const speakersGallery = [
     mobile: "9840904077",
     mail: "arunvasu@ttgroupglobal.com",
     designation: "Chairman, TT Group",
-    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
-    description:
-      "Arun Vasu is a respected industrial leader with diverse business interests, contributing significantly to Chennai’s manufacturing and trade landscape.",
+    image: "/images/images-speakers/arunvarusu-image1.jpg",
+    // description:
+      // "Arun Vasu is a respected industrial leader with diverse business interests, contributing significantly to Chennai’s manufacturing and trade landscape.",
   },
   {
     id: 4,
@@ -49,9 +49,9 @@ export const speakersGallery = [
     mobile: "9840879559",
     mail: "kpr@cielhr.com",
     designation: "Founder, CIEL HR",
-    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
-    description:
-      "Pandiarajan is a thought leader in HR and talent solutions, helping organizations scale through innovative workforce strategies.",
+    image: "/images/images-speakers/pandiraj-1.jpg",
+    // description:
+      // "Pandiarajan is a thought leader in HR and talent solutions, helping organizations scale through innovative workforce strategies.",
   },
   {
     id: 5,
@@ -59,9 +59,9 @@ export const speakersGallery = [
     mobile: "",
     mail: "md@avtarcc.com",
     designation: "Founder & President, Avtar Group",
-    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
-    description:
-      "A pioneer in diversity and inclusion, Saundarya Rajesh champions women’s workforce participation and inclusive leadership across India.",
+    image: "/images/images-speakers/soundaryrajesh-image-1.jpg",
+    // description:
+      // "A pioneer in diversity and inclusion, Saundarya Rajesh champions women’s workforce participation and inclusive leadership across India.",
   },
   {
     id: 6,
@@ -69,9 +69,9 @@ export const speakersGallery = [
     mobile: "",
     mail: "ramkumar@catalincs.com",
     designation: "Founder & CEO, Catalycs",
-    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
-    description:
-      "Ramkumar is an innovation evangelist driving enterprise transformation through data, AI, and emerging technologies.",
+    image: "/images/images-speakers/ramkuamr-image-1.jpg",
+    // description:
+      // "Ramkumar is an innovation evangelist driving enterprise transformation through data, AI, and emerging technologies.",
   },
   {
     id: 7,
@@ -79,9 +79,9 @@ export const speakersGallery = [
     mobile: "",
     mail: "vishesh.rajaram@specialeinvest.com",
     designation: "Managing Partner, Speciale Invest",
-    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
-    description:
-      "Vishesh Rajaram is an active investor backing deep-tech and SaaS startups, strengthening India’s startup investment ecosystem.",
+    image: "/images/images-speakers/Vishesh Rajaram.jpg",
+    // description:
+      // "Vishesh Rajaram is an active investor backing deep-tech and SaaS startups, strengthening India’s startup investment ecosystem.",
   },
   {
     id: 8,
@@ -89,9 +89,9 @@ export const speakersGallery = [
     mobile: "9790733699",
     mail: "hari@pickyourtrail.com",
     designation: "Co-Founder, PickYourTrail",
-    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
-    description:
-      "Hari Ganapathy co-founded PickYourTrail to reinvent travel experiences using technology, personalization, and customer-first design.",
+    image: "/images/images-speakers/Hari Ganapathy.jpg",
+    // description:
+      // "Hari Ganapathy co-founded PickYourTrail to reinvent travel experiences using technology, personalization, and customer-first design.",
   },
   {
     id: 9,
@@ -99,9 +99,9 @@ export const speakersGallery = [
     mobile: "9840944410",
     mail: "ceo@startuptn.in",
     designation: "CEO, StartupTN",
-    image: "/images/Volunteer-Images/volunteer-gallery2.jpg",
-    description:
-      "Sivarajah Ramanathan leads StartupTN, nurturing Tamil Nadu’s startup ecosystem through policy support, funding, and innovation programs.",
+    image: "/images/images-speakers/Sivarajah Ramanathan.jpg",
+    // description:
+      // "Sivarajah Ramanathan leads StartupTN, nurturing Tamil Nadu’s startup ecosystem through policy support, funding, and innovation programs.",
   },
 ];
 
@@ -311,7 +311,7 @@ export default function Conclave() {
 
           <img
             className="block sm:hidden w-full"
-            src="/images/events/hotshots-square-banner1.jpeg"
+            src="/images/events/conclave-banner.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
@@ -595,8 +595,8 @@ export default function Conclave() {
 
       {/*============= PARTNERS ================ */}
 
-      <div className="NewsLetterPage">
-        <div className="volunteerParaSection">
+      <div className="NewsLetterPage mt-30">
+        <div className="">
           <div className="container max-w-7xl mx-auto px-4">
             <div className="exploreMoreSectionContent">
               <h4>Partners</h4>
@@ -625,7 +625,18 @@ export default function Conclave() {
         </div>
       </div>
 
-      <section className="relative w-full bg-white overflow-hidden min-h-[450px] flex items-center justify-center">
+      {/* <section
+        className="relative w-full overflow-hidden min-h-[450px] flex items-center justify-center 
+             bg-[url('/images/conclave-CTA-bg.jpeg')] bg-cover bg-center bg-no-repeat "
+      > */}
+
+      <section
+  className="relative w-full overflow-hidden min-h-[450px] flex items-center justify-center
+             bg-[url('/images/conclave-CTA-bg.jpeg')] bg-cover bg-center bg-no-repeat
+             pb-16 md:pb-37"
+>
+
+
         <div className="absolute inset-0 z-0" />
 
         <div className="container mx-auto px-6 lg:px-20 z-10">

@@ -337,6 +337,10 @@ const BlogDetail = () => {
             if (author?.name === "Superchennai Team")
               return "https://www.superchennai.com/images/HomePage-Images/Superchennai.png";
 
+            if (author?.name === "Tirupurasundari Sevvel - Architect and Historian")
+              return "https://www.superchennai.com/images/HomePage-Images/Tirupurasundari.jpeg";
+
+
             return null;
           })(),
 
@@ -408,6 +412,7 @@ const BlogDetail = () => {
       return [];
     }
   };
+
 
   const hasLiked = (postId) => getLikedPosts().includes(postId);
 

@@ -305,7 +305,7 @@ export default function Conclave() {
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/events/inner-banner-Hotshots-1.jpeg"
+            src="/images/events/conclave-banner.jpeg"
             alt="Super Chennai Quiz"
           />
 

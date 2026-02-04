@@ -372,7 +372,7 @@ function App() {
     const filtered = suggestionsData.filter(
       (item) =>
         item.title.toLowerCase().includes(value.toLowerCase()) ||
-        item.searchText.toLowerCase().includes(value.toLowerCase())
+        item.searchText.toLowerCase().includes(value.toLowerCase()),
     );
     setSuggestions(value ? filtered : []);
   };
@@ -523,12 +523,18 @@ function App() {
     location.pathname === "/contest/hotshots-photography-contest";
   // const hideOnBlog = location.pathname === "/contest/blog/:slug";
 
+  const hideOncovlaves = location.pathname === "/contest/Conclave";
+
+
+ const hideNewsletter =
+    location.pathname === "/contest/Conclave";
+
   return (
     <>
       <ScrollToHashElement />
       <HeaderWithMegaMenu setMenuBar={setMenuBar} setMenuBar1={setMenuBar1} />
 
-      {showPopup && !hideOnMargazhiPage && !hideOnBlog && (
+      {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && (
         <ImagePopup
           imageUrl="/images/events/mouth-your-manifest.jpeg"
           onClose={() => setShowPopup(false)}
@@ -772,13 +778,7 @@ function App() {
           element={<HotshotChennaiContest />}
         />
 
-            <Route
-          path="/contest/conclave"
-          element={<Conclave />}
-        />
-
-
-
+        <Route path="/contest/conclave" element={<Conclave />} />
 
         {/* conclave */}
         <Route path="/admin-superchennai" element={<AdminView />} />
@@ -1453,16 +1453,17 @@ function App() {
 
       {/*################################# NEWS LETTER ######################################## */}
 
-      <section className="signup FormIframeSection" id="newsletterId">
-        <div className="socialChennaiContent NewsletterContent">
-          <h4>Newsletter</h4>
-          <p>
-            Weekly updates on what’s new, now, and next in Chennai, from food to
-            startups!
-          </p>
-        </div>
-        <NewsletterForm />
-        {/* <iframe
+      {!hideNewsletter && (
+        <section className="signup FormIframeSection" id="newsletterId">
+          <div className="socialChennaiContent NewsletterContent">
+            <h4>Newsletter</h4>
+            <p>
+              Weekly updates on what’s new, now, and next in Chennai, from food
+              to startups!
+            </p>
+          </div>
+          <NewsletterForm />
+          {/* <iframe
             src="https://superchennai.substack.com/embed"
             width="480"
             height="320"
@@ -1470,7 +1471,8 @@ function App() {
             frameBorder="0"
             scrolling="no"
           ></iframe> */}
-      </section>
+        </section>
+      )}
 
       <Footer />
       {/* </Router> */}

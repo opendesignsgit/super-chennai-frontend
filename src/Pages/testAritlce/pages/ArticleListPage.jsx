@@ -9,34 +9,47 @@ import { API_BASE_URL } from "../../../../config";
 const withBaseUrl = (url) =>
   url ? `${API_BASE_URL}${url}` : "/images/placeholder.jpg";
 
+
 const AdBox = ({ ads }) => {
   if (!ads?.length) return null;
 
   return (
     <div className="sticky top-6 space-y-4">
       {ads.map((ad) => (
-        <div key={ad.id} className="border rounded p-3">
-          {/* IMAGE */}
-          <img
-            src={withBaseUrl(ad.media?.url)}
-            alt={ad.altText || ad.title}
-            className="w-full object-cover rounded mb-2"
-          />
-
-          <p className="font-semibold text-sm">{ad.title}</p>
-
-          <Link
-            to={`/ads/${ad.slug}`}
-            className="text-pink-600 text-xs"
-          >
-            Learn More
-          </Link>
-        </div>
+        <SingleAdCard key={ad.id} ad={ad} />
       ))}
     </div>
   );
 };
 
+const SingleAdCard = ({ ad }) => {
+  const [show, setShow] = useState(true);
+  if (!show) return null;
+
+  return (
+    <div className="border rounded p-3 relative">
+      {/* CLOSE */}
+      <button
+        onClick={() => setShow(false)}
+        className="absolute top-2 right-2 text-sm text-gray-500 hover:text-black"
+      >
+        ✕
+      </button>
+
+      <img
+        src={withBaseUrl(ad.media?.url)}
+        alt={ad.altText || ad.title}
+        className="w-full object-cover rounded mb-2"
+      />
+
+      <p className="font-semibold text-sm">{ad.title}</p>
+
+      <Link to={`/ads/${ad.slug}`} className="text-pink-600 text-xs">
+        Learn More
+      </Link>
+    </div>
+  );
+};
 
 const BottomAdBox = ({ ads }) => {
   const [show, setShow] = useState(true);
@@ -72,6 +85,62 @@ const BottomAdBox = ({ ads }) => {
   );
 };
 
+const InlineAd = ({ ad }) => {
+  const [show, setShow] = useState(true);
+  if (!show || !ad) return null;
+
+  return (
+    <div className="col-span-full my-6 bg-gray-100 rounded p-4 flex items-center gap-4 relative">
+      {/* CLOSE */}
+      <button
+        onClick={() => setShow(false)}
+        className="absolute top-2 right-2 text-sm text-gray-600"
+      >
+        ✕
+      </button>
+
+      <img
+        src={withBaseUrl(ad.media?.url)}
+        alt={ad.altText || ad.title}
+        className="h-20 object-cover rounded"
+      />
+
+      <div className="flex-1">
+        <p className="font-semibold">{ad.title}</p>
+
+        <Link to={`/ads/${ad.slug}`} className="text-pink-600 text-sm">
+          Learn More
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+
+const TopAdCard = ({ ad }) => {
+  const [show, setShow] = useState(true);
+  if (!show) return null;
+
+  return (
+    <div className="relative">
+      {/* CLOSE BUTTON */}
+      <button
+        onClick={() => setShow(false)}
+        className="absolute top-2 right-2 bg-white/80 rounded-full px-2 text-sm shadow hover:bg-white"
+      >
+        ✕
+      </button>
+
+      <img
+        src={withBaseUrl(ad.media?.url)}
+        alt={ad.altText || ad.title}
+        className="w-full h-[160px] object-cover rounded-lg"
+      />
+    </div>
+  );
+};
+
+
 
 /* ==============================
    PAGE
@@ -87,9 +156,25 @@ export default function ArticleListPage() {
 
   console.log("ADS 👉", ads);
 
-  const leftAds = ads?.find((a) => a.position === "left");
-  const rightAds = ads?.find((a) => a.position === "right");
-  const bottomAds = ads?.find((a) => a.position === "bottom");
+  const sortByPriority = (ads) =>
+    ads?.sort((a, b) => (a.priority ?? 0) - (b.priority ?? 0));
+
+  const leftAds = sortByPriority(
+    ads?.filter((a) => a.position === "left").flatMap((a) => a.ads),
+  );
+
+  const rightAds = ads
+    ?.filter((a) => a.position === "right")
+    .flatMap((a) => a.ads);
+
+  const inlineAds = ads
+    ?.filter((a) => a.position === "inline")
+    .flatMap((a) => a.ads);
+
+  const topAds = ads?.filter((a) => a.position === "top").flatMap((a) => a.ads);
+
+  // OPTIONAL: reuse top ads as bottom ads
+  const bottomAds = topAds;
 
   const mainCol =
     leftAds && rightAds
@@ -113,12 +198,22 @@ export default function ArticleListPage() {
         </div>
       </div>
 
+      {topAds?.length > 0 && (
+        <div className="max-w-7xl mx-auto px-4 mt-6">
+          <div className="grid md:grid-cols-2 gap-6">
+            {topAds.map((ad) => (
+              <TopAdCard key={ad.id} ad={ad} />
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Layout */}
       <div className="max-w-7xl mx-auto px-4 mt-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {leftAds && (
+          {leftAds?.length > 0 && (
             <div className="hidden lg:block lg:col-span-2">
-              <AdBox ads={leftAds.ads} />
+              <AdBox ads={leftAds} />
             </div>
           )}
 
@@ -192,10 +287,9 @@ export default function ArticleListPage() {
                         </p>
 
                         {/* Inline Ad */}
-                        {i === 4 && (
-                          <div className="my-6 bg-gray-100 text-center py-6 rounded">
-                            ADVERTISEMENT
-                          </div>
+
+                        {i === 3 && inlineAds?.[0] && (
+                          <InlineAd ad={inlineAds[0]} />
                         )}
                       </div>
                     );
@@ -228,15 +322,15 @@ export default function ArticleListPage() {
             )}
           </div>
 
-          {rightAds && (
+          {rightAds?.length > 0 && (
             <div className="hidden lg:block lg:col-span-2">
-              <AdBox ads={rightAds.ads} />
+              <AdBox ads={rightAds} />
             </div>
           )}
         </div>
       </div>
 
-      <BottomAdBox ads={bottomAds?.ads} />
+      <BottomAdBox ads={bottomAds} />
     </>
   );
 }

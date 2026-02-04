@@ -12,10 +12,20 @@ export default function Thankyou() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 800) {
-        if (from === "trivia-game")
-          setImageSrc("/images/events/trivia-game-m.jpg");
-        else setImageSrc("/images/events/mobile-banner-thankyou.jpg");
+      const isMobile = window.innerWidth <= 800;
+      if (from === "conclave") {
+        setImageSrc(
+          isMobile
+            ? "/images/events/mobile-thankyou-banner1.jpeg"
+            : "/images/events/thanku-banner-conclave.jpeg",
+        );
+        return;
+      } else if (from === "conclave") {
+        setImageSrc(
+          isMobile
+            ? "/images/events/thanku-banner-conclave.jpeg"
+            : "/images/events/thanku-banner-conclave.jpeg",
+        );
       } else {
         if (from === "trivia-game")
           setImageSrc("/images/events/trivia-game.jpg");
@@ -53,7 +63,6 @@ export default function Thankyou() {
             alt="Super Chennai Quiz Mobile"
           /> */}
 
-
           <img
             className="eventsCalenderIamge hidden sm:block"
             src={imageSrc}
@@ -70,7 +79,8 @@ export default function Thankyou() {
           <div className="accodoamationBannerText">
             <h1></h1>
             <AutoShrinkText
-              text="Thank You for Your Entry!"
+              // text="Thank You for Your Entry!"
+              text={from === "conclave" ? "" : "Thank You for Your Entry!"}
               baseSize={60}
               minSize={40}
               maxChars={40}
@@ -78,10 +88,10 @@ export default function Thankyou() {
               width="80%"
               maxLines={2}
             />
-            <div className="breadCrum">
+            {/* <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
               <Link to="">Thank You for Your Entry!</Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -91,6 +101,32 @@ export default function Thankyou() {
         style={{ paddingBottom: "0" }}
       >
         <div className="container max-w-7xl mx-auto px-4">
+          {from === "conclave" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+
+              <p>
+                Thank you for registering for the{" "}
+                <strong>Super Chennai Conclave</strong>.
+              </p>
+
+              <p>
+               We appreciate your interest. Your registration is under review, and your participation is confirmed only upon receiving an email from our team.
+              </p>
+
+              {/* <p>
+                📅 <strong>Date:</strong> Feb 19, 2026
+                <br />
+                📍 <strong>Venue:</strong> ITC WelcomHotel, Chennai
+              </p> */}
+
+              {/* <p>
+                You’ll receive further updates and confirmations via email. Stay
+                tuned!
+              </p> */}
+            </div>
+          )}
+
           {from === "hotshot-chennai" && (
             <div className="workIntro">
               <h1>Your Moment Is In! </h1>

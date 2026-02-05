@@ -403,6 +403,194 @@ const detailsections = [
     id: 5,
     title: "Cafés & Casual Bites",
     points: [
+      
+      // NEW ADDED 
+
+      
+  {
+    name: "Dabara Coffee",
+    description:
+      "A no-frills spot that focuses purely on a well-brewed cup of filter coffee. Known for keeping the experience simple, warm, and authentic.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Mylapore",
+        link: "https://www.google.com/maps/search/Dabara+Coffee",
+      },
+    ],
+  },
+  {
+    name: "Coffee Since 1999",
+    description:
+      "A café that blends comfort, conversation, and carefully brewed coffee. Often chosen for slow mornings and easy catch-ups.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Thousand Lights",
+        link: "https://www.google.com/maps/search/Coffee+Since+1999",
+      },
+    ],
+  },
+  {
+    name: "Vivekananda Coffee",
+    description:
+      "A long-standing name associated with tradition and consistency. Favoured by those who appreciate time-tested flavours.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Mylapore",
+        link: "https://www.google.com/maps/search/Vivekananda+Coffee",
+      },
+    ],
+  },
+  {
+    name: "Vijayarams Coffee",
+    description:
+      "A place where coffee is treated with seriousness and care. Known for its strong character and loyal following.",
+    subDescription: "",
+    locations: [
+      {
+        label: "T. Nagar",
+        link: "https://www.google.com/maps/search/Vijayarams+Coffee",
+      },
+    ],
+  },
+  {
+    name: "Geetha Cafe",
+    description:
+      "A bustling café that balances food and coffee with equal importance. Often remembered for its comforting, familiar atmosphere.",
+    subDescription: "",
+    locations: [
+      {
+        label: "T. Nagar",
+        link: "https://www.google.com/maps/search/Geetha+Cafe",
+      },
+    ],
+  },
+  {
+    name: "Mylai Karpagambal Mess",
+    description:
+      "An institution that reflects traditional dining culture. The coffee experience here feels deeply rooted and nostalgic.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Mylapore",
+        link: "https://www.google.com/maps/search/Mylai+Karpagambal+Mess",
+      },
+    ],
+  },
+  {
+    name: "The South Indian Coffee House",
+    description:
+      "A space that celebrates heritage through simple rituals. Ideal for those who enjoy an old-world café experience.",
+    subDescription: "",
+    locations: [
+      {
+        label: "West Mambalam",
+        link: "https://www.google.com/maps/search/The+South+Indian+Coffee+House",
+      },
+    ],
+  },
+  {
+    name: "Ramani Coffee",
+    description:
+      "A quiet coffee stop focused on everyday routines. Known for being reliable and unpretentious.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Saidapet",
+        link: "https://www.google.com/maps/search/Ramani+Coffee",
+      },
+    ],
+  },
+  {
+    name: "Sri Krishna Coffee House",
+    description:
+      "A café that values balance in flavour and experience. Often visited by regulars who enjoy familiarity.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Mylapore",
+        link: "https://www.google.com/maps/search/Sri+Krishna+Coffee+House",
+      },
+    ],
+  },
+  {
+    name: "Dakshin Coffee Bar",
+    description:
+      "A traditional bar built around quick service and quality brews. Popular for efficient, flavour-forward coffee breaks.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Alwarpet",
+        link: "https://www.google.com/maps/search/Dakshin+Coffee+Bar",
+      },
+    ],
+  },
+  {
+    name: "Janatha Cafe",
+    description:
+      "A place that feels woven into daily life. Known for its steady pace and homely appeal.",
+    subDescription: "",
+    locations: [
+      {
+        label: "West Mambalam",
+        link: "https://www.google.com/maps/search/Janatha+Cafe",
+      },
+    ],
+  },
+  {
+    name: "Sri Sairam Cafe",
+    description:
+      "A small café centred around comfort and routine. Often chosen for a peaceful pause in the day.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Royapettah",
+        link: "https://www.google.com/maps/search/Sri+Sairam+Cafe",
+      },
+    ],
+  },
+  {
+    name: "Sundaram Coffee",
+    description:
+      "A coffee spot that keeps things traditional and focused. Known for its calm, understated presence.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Mylapore",
+        link: "https://www.google.com/maps/search/Sundaram+Coffee",
+      },
+    ],
+  },
+  {
+    name: "Krishna Cafe",
+    description:
+      "A heritage café that has stood the test of time. The experience here is rooted in simplicity.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Mylapore",
+        link: "https://www.google.com/maps/search/Krishna+Cafe",
+      },
+    ],
+  },
+  {
+    name: "Sangeetha Coffee Bar",
+    description:
+      "A familiar name for quick coffee stops. Often visited for its straightforward approach.",
+    subDescription: "",
+    locations: [
+      {
+        label: "Triplicane",
+        link: "https://www.google.com/maps/search/Sangeetha+Coffee+Bar",
+      },
+    ],
+  },
+
+// ENDED NEW 
+     
+     
       {
         name: "Duet Cafe",
         description:

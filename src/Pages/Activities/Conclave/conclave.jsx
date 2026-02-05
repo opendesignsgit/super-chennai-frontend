@@ -443,8 +443,8 @@ export default function Conclave() {
         </div>
       </section>
 
-      <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
-        <div className="volunteerParaSection container max-w-7xl mx-auto px-4">
+      <section className="accaodomationBannerSection carquizbanner relative overflow-hidden mb-20">
+        <div className=" container max-w-7xl mx-auto px-4">
           <div
             className={`VolunteeerTextBackground ${
               scrollDir === "right" ? "scroll-right" : "scroll-left"
@@ -797,13 +797,12 @@ export default function Conclave() {
         </div>
       </section> */}
 
-      <section
+      {/* <section
         className="relative w-full overflow-hidden min-h-[550px] flex items-center bg-cover bg-center"
         style={{
           backgroundImage: "url('/images/cta-banner (3).jpeg')",
         }}
       >
-        {/* <div className="absolute inset-0 z-0" /> */}
         <div className="container mx-auto px-6 lg:px-0 z-10">
           <div className="max-w-2xl flex flex-col items-start text-left">
             <div className="relative mb-6 flex justify-start">
@@ -829,7 +828,50 @@ export default function Conclave() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+      <section
+  className="relative w-full overflow-hidden min-h-[550px] flex items-center bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/images/cta-banner (3).jpeg')",
+  }}
+>
+  <div className="container mx-auto px-6 lg:px-0 z-10">
+    <div
+      className="
+        max-w-2xl
+        flex flex-col
+        items-center text-center
+        lg:items-start lg:text-left
+      "
+    >
+      <div className="relative mb-6 flex justify-center lg:justify-start">
+        <img
+          src="/images/Picture1.png"
+          alt="Conclave"
+          className="h-32 md:h-48 lg:h-64 w-auto object-contain"
+        />
+      </div>
+
+      <p className="text-slate-800 text-base md:text-lg lg:text-xl font-medium mb-8">
+        Feb 19, 2026 <span className="mx-2 text-slate-300">|</span>
+        Time: 09:30 AM Onwards
+        <br />
+        <span className="mx-2 text-slate-300">|</span>
+        ITC WelcomHotel, Chennai
+      </p>
+
+      <button
+        onClick={() => setShowRegisterPopup(true)}
+        className="border-2 border-rose-400 text-rose-500 font-semibold px-10 py-2.5 rounded-full hover:bg-rose-50 transition-colors duration-300"
+      >
+        Register Now
+      </button>
+    </div>
+  </div>
+</section>
+
 
       {/*============= PARTNERS ================ */}
 

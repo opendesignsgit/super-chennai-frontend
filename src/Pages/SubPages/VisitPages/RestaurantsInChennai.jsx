@@ -408,187 +408,184 @@ const detailsections = [
 
       
   {
-    name: "Dabara Coffee",
-    description:
-      "A no-frills spot that focuses purely on a well-brewed cup of filter coffee. Known for keeping the experience simple, warm, and authentic.",
-    subDescription: "",
-    locations: [
+    "name": "Dabara Coffee",
+    "description": "A no-frills spot that focuses purely on a well-brewed cup of filter coffee. Known for keeping the experience simple, warm, and authentic.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Mylapore",
-        link: "https://www.google.com/maps/search/Dabara+Coffee",
-      },
-    ],
+        "label": "Ambattur",
+        "link": "https://www.google.com/maps/search/Dabara+Coffee"
+      }
+    ]
   },
   {
-    name: "Coffee Since 1999",
-    description:
-      "A café that blends comfort, conversation, and carefully brewed coffee. Often chosen for slow mornings and easy catch-ups.",
-    subDescription: "",
-    locations: [
+    "name": "Coffee Since 1999",
+    "description": "A café that blends comfort, conversation, and carefully brewed coffee. Often chosen for slow mornings and easy catch-ups.",
+    "subDescription": "Since 1999",
+    "locations": [
       {
-        label: "Thousand Lights",
-        link: "https://www.google.com/maps/search/Coffee+Since+1999",
-      },
-    ],
+        "label": "Thousand Lights",
+        "link": "https://www.google.com/maps/search/Coffee+Since+1999"
+      }
+    ]
   },
   {
-    name: "Vivekananda Coffee",
-    description:
-      "A long-standing name associated with tradition and consistency. Favoured by those who appreciate time-tested flavours.",
-    subDescription: "",
-    locations: [
+    "name": "Vivekananda Coffee",
+    "description": "A long-standing name associated with tradition and consistency. Favoured by those who appreciate time-tested flavours.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Mylapore",
-        link: "https://www.google.com/maps/search/Vivekananda+Coffee",
+        "label": "T Nagar",
+        "link": "https://maps.app.goo.gl/a6XghhnYVnyg5BsD7"
       },
-    ],
+      {
+        "label": "Gopalapuram",
+        "link": "https://maps.app.goo.gl/RQU9JoHHpgTAcFEE9"
+      }
+    ]
   },
   {
-    name: "Vijayarams Coffee",
-    description:
-      "A place where coffee is treated with seriousness and care. Known for its strong character and loyal following.",
-    subDescription: "",
-    locations: [
+    "name": "Vijayarams Coffee",
+    "description": "A place where coffee is treated with seriousness and care. Known for its strong character and loyal following.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "T. Nagar",
-        link: "https://www.google.com/maps/search/Vijayarams+Coffee",
+        "label": "T Nagar",
+        "link": "https://maps.app.goo.gl/yMUDuaRmPnUbniPb8"
       },
-    ],
+      {
+        "label": "Mylapore",
+        "link": "https://maps.app.goo.gl/1YcHzZ2rWb8NFBDVA"
+      }
+    ]
   },
   {
-    name: "Geetha Cafe",
-    description:
-      "A bustling café that balances food and coffee with equal importance. Often remembered for its comforting, familiar atmosphere.",
-    subDescription: "",
-    locations: [
+    "name": "Geetha Cafe",
+    "description": "A bustling café that balances food and coffee with equal importance. Often remembered for its comforting, familiar atmosphere.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "T. Nagar",
-        link: "https://www.google.com/maps/search/Geetha+Cafe",
+        "label": "Mylapore",
+        "link": "https://maps.app.goo.gl/oTDVK9We9UdjPn8W6"
       },
-    ],
+      {
+        "label": "T Nagar",
+        "link": "https://maps.app.goo.gl/tGnwtE8ctCTbLBZy7"
+      }
+    ]
   },
   {
-    name: "Mylai Karpagambal Mess",
-    description:
-      "An institution that reflects traditional dining culture. The coffee experience here feels deeply rooted and nostalgic.",
-    subDescription: "",
-    locations: [
+    "name": "Mylai Karpagambal Mess",
+    "description": "An institution that reflects traditional dining culture. The coffee experience here feels deeply rooted and nostalgic.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Mylapore",
-        link: "https://www.google.com/maps/search/Mylai+Karpagambal+Mess",
-      },
-    ],
+        "label": "Mylapore",
+        "link": "https://www.google.com/maps/search/Mylai+Karpagambal+Mess"
+      }
+    ]
   },
   {
-    name: "The South Indian Coffee House",
-    description:
-      "A space that celebrates heritage through simple rituals. Ideal for those who enjoy an old-world café experience.",
-    subDescription: "",
-    locations: [
+    "name": "The South Indian Coffee House",
+    "description": "A space that celebrates heritage through simple rituals. Ideal for those who enjoy an old-world café experience.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "West Mambalam",
-        link: "https://www.google.com/maps/search/The+South+Indian+Coffee+House",
-      },
-    ],
+        "label": "Mylapore",
+        "link": "https://maps.app.goo.gl/w9cXVfvfB3BFCDbG8"
+      }
+    ]
   },
   {
-    name: "Ramani Coffee",
-    description:
-      "A quiet coffee stop focused on everyday routines. Known for being reliable and unpretentious.",
-    subDescription: "",
-    locations: [
+    "name": "Ramani Coffee",
+    "description": "A quiet coffee stop focused on everyday routines. Known for being reliable and unpretentious.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Saidapet",
-        link: "https://www.google.com/maps/search/Ramani+Coffee",
-      },
-    ],
+        "label": "Saidapet",
+        "link": "https://maps.app.goo.gl/rCH7v3n6AkRBuXru6"
+      }
+    ]
   },
   {
-    name: "Sri Krishna Coffee House",
-    description:
-      "A café that values balance in flavour and experience. Often visited by regulars who enjoy familiarity.",
-    subDescription: "",
-    locations: [
+    "name": "Sri Krishna Coffee House",
+    "description": "A café that values balance in flavour and experience. Often visited by regulars who enjoy familiarity.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Mylapore",
-        link: "https://www.google.com/maps/search/Sri+Krishna+Coffee+House",
-      },
-    ],
+        "label": "Pallikaranai",
+        "link": "https://maps.app.goo.gl/9Ssqzk6mVoy5yqNGA"
+      }
+    ]
   },
   {
-    name: "Dakshin Coffee Bar",
-    description:
-      "A traditional bar built around quick service and quality brews. Popular for efficient, flavour-forward coffee breaks.",
-    subDescription: "",
-    locations: [
+    "name": "Dakshin Coffee Bar",
+    "description": "A traditional bar built around quick service and quality brews. Popular for efficient, flavour-forward coffee breaks.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Alwarpet",
-        link: "https://www.google.com/maps/search/Dakshin+Coffee+Bar",
-      },
-    ],
+        "label": "Alwarpet",
+        "link": ""
+      }
+    ]
   },
   {
-    name: "Janatha Cafe",
-    description:
-      "A place that feels woven into daily life. Known for its steady pace and homely appeal.",
-    subDescription: "",
-    locations: [
+    "name": "Janatha Cafe",
+    "description": "A place that feels woven into daily life. Known for its steady pace and homely appeal.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "West Mambalam",
-        link: "https://www.google.com/maps/search/Janatha+Cafe",
-      },
-    ],
+        "label": "West Mambalam",
+        "link": ""
+      }
+    ]
   },
   {
-    name: "Sri Sairam Cafe",
-    description:
-      "A small café centred around comfort and routine. Often chosen for a peaceful pause in the day.",
-    subDescription: "",
-    locations: [
+    "name": "Sri Sairam Cafe",
+    "description": "A small café centred around comfort and routine. Often chosen for a peaceful pause in the day.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Royapettah",
-        link: "https://www.google.com/maps/search/Sri+Sairam+Cafe",
-      },
-    ],
+        "label": "Tambaram",
+        "link": "https://maps.app.goo.gl/nGycA1CTq1UqeVmR7"
+      }
+    ]
   },
   {
-    name: "Sundaram Coffee",
-    description:
-      "A coffee spot that keeps things traditional and focused. Known for its calm, understated presence.",
-    subDescription: "",
-    locations: [
+    "name": "Sundaram Coffee",
+    "description": "A coffee spot that keeps things traditional and focused. Known for its calm, understated presence.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Mylapore",
-        link: "https://www.google.com/maps/search/Sundaram+Coffee",
-      },
-    ],
+        "label": "Mylapore",
+        "link": "https://maps.app.goo.gl/kBsxuJf6QV5JxRs3A"
+      }
+    ]
   },
   {
-    name: "Krishna Cafe",
-    description:
-      "A heritage café that has stood the test of time. The experience here is rooted in simplicity.",
-    subDescription: "",
-    locations: [
+    "name": "Krishna Cafe",
+    "description": "A heritage café that has stood the test of time. The experience here is rooted in simplicity.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Mylapore",
-        link: "https://www.google.com/maps/search/Krishna+Cafe",
-      },
-    ],
+        "label": "Madipakkam",
+        "link": "https://maps.app.goo.gl/7GA5GtC4WnoxU6q88"
+      }
+    ]
   },
   {
-    name: "Sangeetha Coffee Bar",
-    description:
-      "A familiar name for quick coffee stops. Often visited for its straightforward approach.",
-    subDescription: "",
-    locations: [
+    "name": "Sangeetha Coffee Bar",
+    "description": "A familiar name for quick coffee stops. Often visited for its straightforward approach.",
+    "subDescription": "",
+    "locations": [
       {
-        label: "Triplicane",
-        link: "https://www.google.com/maps/search/Sangeetha+Coffee+Bar",
-      },
-    ],
+        "label": "Triplicane",
+        "link": "https://maps.app.goo.gl/uXNyV6V6voRnbxje9"
+      }
+    ]
   },
 
-// ENDED NEW 
+
      
      
       {

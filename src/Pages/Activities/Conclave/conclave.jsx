@@ -19,8 +19,8 @@ export const speakersGallery = [
     mail: "rajcherubal@gmail.com",
     designation: "CEO, Chennai Metropolitan Development Authority",
     image: "/images/images-speakers/raja-2.jpg",
-    // description:
-    // "Raj Cherubal is a visionary urban planner and administrator, playing a key role in shaping Chennai’s sustainable urban growth and infrastructure policies.",
+    description:
+      "Raj Cherubal is the Executive Director of Chennai Smart City Limited, previously serving as Director–Projects at Chennai City Connect, where he worked on improving urban infrastructure and quality of life. He has led and contributed to initiatives in sustainable transportation, urban planning, public transit, waste management, water-body restoration, and urban financing. Trained in physics and nuclear engineering, and having worked in software across telecom and finance, he now focuses on better urban governance and economic freedom for informal entrepreneurs like street vendors.",
   },
   {
     id: 2,
@@ -28,9 +28,9 @@ export const speakersGallery = [
     mobile: "9840741379",
     mail: "vikramcotah@grthotels.com",
     designation: "CEO, GRT Hotels & Resorts",
-    image: "/images/images-speakers/vikram cotah-image1.jpg",
-    // description:
-    // "Vikram Cotah leads GRT Hotels with a strong focus on luxury hospitality, innovation, and sustainability, elevating South India’s tourism ecosystem.",
+    image: "/images/images-speakers/Vikram Cotah-image.jpg",
+    description:
+      "Vikram Cotah is the CEO of GRT Hotels, where he has led the group’s growth to 22 properties across South India while embedding sustainability, inclusivity and responsible luxury into its operations. Under his leadership, GRT Hotels introduced initiatives such as no-smoking policies, pet-friendly stays and the removal of single-use plastics, while actively supporting local communities during crises like the Chennai floods and COVID-19. He also serves on bodies such as TTDC, CII’s Southern Tourism Panel and the Hotel Association of India, and is a widely followed LinkedIn thought leader and author on leadership and sustainable hospitality.",
   },
   {
     id: 3,
@@ -38,9 +38,9 @@ export const speakersGallery = [
     mobile: "9840904077",
     mail: "arunvasu@ttgroupglobal.com",
     designation: "Chairman, TT Group",
-    image: "/images/images-speakers/arunvarusu-image1.jpg",
-    // description:
-    // "Arun Vasu is a respected industrial leader with diverse business interests, contributing significantly to Chennai’s manufacturing and trade landscape.",
+    image: "/images/images-speakers/Arun Vasu-image.jpg",
+    description:
+      "Arun Vasu is the Chairman and Managing Director of the TT Group, which operates across air cargo, logistics, supply chain, insurance, hospitality, and water-sports training. A third-generation leader of the TTK family, he is a serial entrepreneur who launched India’s first foreign exchange business and later built the world’s first visa outsourcing company. Alongside his businesses, he promotes water sports in Kovalam to create local socio-economic opportunities, while also being an avid adventure motorcyclist",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ export const speakersGallery = [
     designation: "Founder, CIEL HR",
     image: "/images/images-speakers/pandiraj-1.jpg",
     // description:
-    // "Pandiarajan is a thought leader in HR and talent solutions, helping organizations scale through innovative workforce strategies.",
+      // "Pandiarajan is a thought leader in HR and talent solutions, helping organizations scale through innovative workforce strategies.",
   },
   {
     id: 5,
@@ -58,29 +58,29 @@ export const speakersGallery = [
     mobile: "",
     mail: "md@avtarcc.com",
     designation: "Founder & President, Avtar Group",
-    image: "/images/images-speakers/soundaryrajesh-image-1.jpg",
-    // description:
-    // "A pioneer in diversity and inclusion, Saundarya Rajesh champions women’s workforce participation and inclusive leadership across India.",
+    image: "/images/images-speakers/Dr Saundarya Rajesh-image.jpg",
+    description:
+      "Dr. Saundarya Rajesh is the Managing Director of Avtar Group and a globally recognized expert in inclusive workplaces, workforce transitions, and ESG. She has spent nearly 25 years reshaping workplace culture, helping over 800 organizations become more equitable and enabling career pathways for more than 1,00,000 second-career women through initiatives like Project Puthri and Nipuni. A noted trainer, speaker, and author of two books, she has advised institutions from UN Women to the Tata Group while consistently pushing organizations toward ethical, human-centered leadership.",
   },
-  {
-    id: 6,
-    name: "Ramkumar",
-    mobile: "",
-    mail: "ramkumar@catalincs.com",
-    designation: "Founder & CEO, Catalycs",
-    image: "/images/images-speakers/ramkuamr-image-1.jpg",
-    // description:
-    // "Ramkumar is an innovation evangelist driving enterprise transformation through data, AI, and emerging technologies.",
-  },
+  // {
+  //   id: 6,
+  //   name: "Ramkumar",
+  //   mobile: "",
+  //   mail: "ramkumar@catalincs.com",
+  //   designation: "Founder & CEO, Catalycs",
+  //   image: "/images/images-speakers/ramkuamr-image-1.jpg",
+  //   // description:
+  //     // "Ramkumar is an innovation evangelist driving enterprise transformation through data, AI, and emerging technologies.",
+  // },
   {
     id: 7,
     name: "Vishesh Rajaram",
     mobile: "",
     mail: "vishesh.rajaram@specialeinvest.com",
     designation: "Managing Partner, Speciale Invest",
-    image: "/images/images-speakers/Vishesh Rajaram.jpg",
-    // description:
-    // "Vishesh Rajaram is an active investor backing deep-tech and SaaS startups, strengthening India’s startup investment ecosystem.",
+    image: "/images/images-speakers/Vishesh Rajaram-image.jpg",
+    description:
+      "Vishesh Rajaram is the Co-founder and Managing Partner of Speciale Invest, focusing on investments in spacetech, semiconductors, robotics, climate, advanced manufacturing, health and energy. Before Speciale, he spent nearly a decade at Ventureast leading early and growth-stage investments, after starting his career in corporate banking at ICICI and later running his family’s pharmaceutical business through a successful sale. A Chartered Accountant and ISB MBA (Dean’s List), he is hands-on across the full investment lifecycle at Speciale.",
   },
   {
     id: 8,
@@ -89,8 +89,8 @@ export const speakersGallery = [
     mail: "hari@pickyourtrail.com",
     designation: "Co-Founder, PickYourTrail",
     image: "/images/images-speakers/Hari Ganapathy.jpg",
-    // description:
-    // "Hari Ganapathy co-founded PickYourTrail to reinvent travel experiences using technology, personalization, and customer-first design.",
+    description:
+      "Hari Ganapathy is the co-founder of Pickyourtrail, a tech-enabled travel platform that has helped over 1,50,000 travellers from 80+ destinations plan personalized holidays since 2014. A Physics gold medallist from Madras University and an IIM Bangalore graduate, he previously worked with consumer brands like Britannia, Reckitt Benckiser and InMobi before building Pickyourtrail around his interests in brand-building and travel. An avid traveller with over 40 countries visited, he continues to shape how people experience and plan their trips through his company.",
   },
   {
     id: 9,
@@ -98,9 +98,41 @@ export const speakersGallery = [
     mobile: "9840944410",
     mail: "ceo@startuptn.in",
     designation: "CEO, StartupTN",
-    image: "/images/images-speakers/Sivarajah Ramanathan.jpg",
-    // description:
-    // "Sivarajah Ramanathan leads StartupTN, nurturing Tamil Nadu’s startup ecosystem through policy support, funding, and innovation programs.",
+    image: "/images/images-speakers/Sivarajah Ramanathan-image.jpg",
+    description:
+      "Sivarajah Ramanathan is the Mission Director and CEO of StartupTN, where he has driven Tamil Nadu to be recognized as a top-performing startup state while significantly increasing DPIIT registrations and fostering inclusive entrepreneurship. He also serves on multiple government and academic bodies, including FameTN, iTNT Hub, TN RISE, TN WE SAFE, and Anna University. Earlier, he founded Nativelead to build startup ecosystems in tier II and tier III cities across Tamil Nadu, and began his entrepreneurial journey in Madurai with tech ventures including an ERP for temples.",
+  },
+  {
+    id: 10,
+    name: "Mr. T.R.B. Rajaa",
+    // mobile: "9840944410",
+    mail: "ceo@startuptn.in",
+    designation:
+      "Minister for Industries, Investment Promotion and Commerce Government of Tamil Nadu",
+    image: "/images/images-speakers/Dr. T.R.B. RAJAA-image.jpg",
+    description:
+      "Dr. T.R.B. Rajaa is a politician and people’s representative with a career spanning three decades      across several institutions and elected offices. He is a record three-time Member of Legislative Assembly from the Mannargudi constituency in Tamil Nadu, India and is an office-bearer in the Dravida Munnetra Kazhagam (DMK).Before starting his political career, he was an educationist and social entrepreneur, with experience in several sectors like chemicals, fisheries, media and communications. He has also served on the boards of educational institutions.He has a deep interest in sports and emerging technologies.",
+  },
+  {
+    id: 10,
+    name: "Mr. Mohamed Ali",
+    // mobile: "9840944410",
+    mail: "ceo@startuptn.in",
+    designation: "President CREDAI Chennai",
+    image: "/images/images-speakers/Mr. Mohamed-image.jpg",
+    description:
+      "Mohamed Ali is the Managing Director of South India Shelters (S.I.S), which he founded in 2002 and grew across residential, commercial, and industrial real estate. A BITS Pilani alumnus, he is known for ethical business practices and socially responsible projects that have earned multiple national and international awards. He has held several leadership roles in CREDAI and is serving as its President from 2024 to 2026.",
+  },
+
+  {
+    id: 10,
+    name: "Mr. Ramkumar Ramamoorthy ",
+    // mobile: "9840944410",
+    mail: "ceo@startuptn.in",
+    designation: "Co-Founder & Partner Catalincs Partners",
+    image: "/images/images-speakers/Ramkumar Ramamoorthy-image.jpg",
+    description:
+      "Ramkumar Ramamoorthy is co-founder and partner at Catalincs Partners, where he advises niche technology firms on growth and value creation. Earlier, he served as Chairman and Managing Director of Cognizant India, after a prior stint at Tata Consultancy Services, overseeing one of the country’s largest private workforces. With deep ties to academia and industry bodies like CII, NASSCOM, MCCI and AMCHAM, he also serves as an Independent Director on the boards of Cholamandalam Investment and Finance and Five Star Business Finance.",
   },
 ];
 
@@ -508,10 +540,8 @@ export default function Conclave() {
                         className="w-full h-[320px] object-cover"
                       />
 
-                      {/* Gradient Overlay */}
                       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/80 to-transparent" />
 
-                      {/* Speaker Info */}
                       <div className="absolute bottom-4 left-4 right-4 text-white">
                         <h5 className="text-lg font-semibold leading-tight">
                           {card.name}
@@ -531,7 +561,7 @@ export default function Conclave() {
         <AnimatePresence>
           {selectedCard && (
             <motion.div
-              className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 px-4"
+              className="fixed inset-0 bg-black/60 flex items-center justify-center z-[9999] px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -546,11 +576,13 @@ export default function Conclave() {
                 onClick={(e) => e.stopPropagation()}
               >
                 {/* Close */}
+
                 <button
-                  className="absolute top-3 right-3 text-2xl font-bold text-gray-600 hover:text-black"
                   onClick={() => setSelectedCard(null)}
+                  className="absolute top-2 right-2 h-8 w-8 flex items-center justify-center
+                   rounded-full bg-white/90 shadow text-gray-500 hover:text-gray-900"
                 >
-                  ×
+                  ✕
                 </button>
 
                 <img
@@ -560,7 +592,7 @@ export default function Conclave() {
                 />
 
                 <h3 className="text-xl font-semibold">{selectedCard.name}</h3>
-                <p className="text-sm text-gray-600 mb-2">
+                <p className="text-sm font-semibold text-gray-600 mb-2">
                   {selectedCard.designation}
                 </p>
 
@@ -830,48 +862,46 @@ export default function Conclave() {
         </div>
       </section> */}
 
-
       <section
-  className="relative w-full overflow-hidden min-h-[550px] flex items-center bg-cover bg-center"
-  style={{
-    backgroundImage: "url('/images/cta-banner (3).jpeg')",
-  }}
->
-  <div className="container mx-auto px-6 lg:px-0 z-10">
-    <div
-      className="
+        className="relative w-full overflow-hidden min-h-[550px] flex items-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/images/cta-banner (3).jpeg')",
+        }}
+      >
+        <div className="container mx-auto px-6 lg:px-0 z-10">
+          <div
+            className="
         max-w-2xl
         flex flex-col
         items-center text-center
         lg:items-start lg:text-left
       "
-    >
-      <div className="relative mb-6 flex justify-center lg:justify-start">
-        <img
-          src="/images/Picture1.png"
-          alt="Conclave"
-          className="h-32 md:h-48 lg:h-64 w-auto object-contain"
-        />
-      </div>
+          >
+            <div className="relative mb-6 flex justify-center lg:justify-start">
+              <img
+                src="/images/Picture1.png"
+                alt="Conclave"
+                className="h-32 md:h-48 lg:h-64 w-auto object-contain"
+              />
+            </div>
 
-      <p className="text-slate-800 text-base md:text-lg lg:text-xl font-medium mb-8">
-        Feb 19, 2026 <span className="mx-2 text-slate-300">|</span>
-        Time: 09:30 AM Onwards
-        <br />
-        <span className="mx-2 text-slate-300">|</span>
-        ITC WelcomHotel, Chennai
-      </p>
+            <p className="text-slate-800 text-base md:text-lg lg:text-xl font-medium mb-8">
+              Feb 19, 2026 <span className="mx-2 text-slate-300">|</span>
+              Time: 09:30 AM Onwards
+              <br />
+              <span className="mx-2 text-slate-300">|</span>
+              ITC WelcomHotel, Chennai
+            </p>
 
-      <button
-        onClick={() => setShowRegisterPopup(true)}
-        className="border-2 border-rose-400 text-rose-500 font-semibold px-10 py-2.5 rounded-full hover:bg-rose-50 transition-colors duration-300"
-      >
-        Register Now
-      </button>
-    </div>
-  </div>
-</section>
-
+            <button
+              onClick={() => setShowRegisterPopup(true)}
+              className="border-2 border-rose-400 text-rose-500 font-semibold px-10 py-2.5 rounded-full hover:bg-rose-50 transition-colors duration-300"
+            >
+              Register Now
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/*============= PARTNERS ================ */}
 

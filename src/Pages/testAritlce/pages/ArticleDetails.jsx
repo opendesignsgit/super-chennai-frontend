@@ -6,16 +6,12 @@ import Pagination from "../components/Pagination";
 import "../styles.css";
 import { useEffect } from "react";
 
-import { useArticlePageAds } from "../hooks/useArticles";
-
-
 /* ==============================
    AD COMPONENTS
 ============================== */
 
 const withBaseUrl = (url) =>
   url ? `${API_BASE_URL}${url}` : "/images/placeholder.jpg";
-
 
 const AdBox = ({ ads, onAllClosed }) => {
   const [visibleAds, setVisibleAds] = useState(ads);
@@ -175,11 +171,6 @@ const INLINE_AD_INTERVAL = 3;
 ============================== */
 
 export default function ArticleListPage() {
-
-
-    const { ListPageAds } = useArticlePageAds();
-    console.log("listpageads --=-=-",ListPageAds)
-
   const [showLeftAds, setShowLeftAds] = useState(true);
   const [showRightAds, setShowRightAds] = useState(true);
 

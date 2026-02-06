@@ -6,7 +6,7 @@ import Pagination from "../components/Pagination";
 import "../styles.css";
 import { useEffect } from "react";
 
-import { useArticlePageAds } from "../hooks/useArticles";
+import { useArticlePageAds } from "../hooks/useArticlePageAds";
 
 
 /* ==============================
@@ -177,15 +177,45 @@ const INLINE_AD_INTERVAL = 3;
 export default function ArticleListPage() {
 
 
-    const { ListPageAds } = useArticlePageAds();
-    console.log("listpageads --=-=-",ListPageAds)
+
+const { ads: articleAds, loading: adsLoading } = useArticlePageAds();
+
+
+
+const structuredArticleAds = articleAds?.reduce((acc, ad) => {
+  const pos = ad.position || "right";
+
+  const existing = acc.find((a) => a.position === pos);
+
+  if (existing) {
+    existing.ads.push(ad);
+  } else {
+    acc.push({
+      position: pos,
+      ads: [ad],
+    });
+  }
+
+  return acc;
+}, []);
+
 
   const [showLeftAds, setShowLeftAds] = useState(true);
   const [showRightAds, setShowRightAds] = useState(true);
 
   const [page, setPage] = useState(1);
-  const { featured, articles, totalPages, loading, ads, articleData } =
-    useArticles(page);
+
+
+
+  // const { featured, articles, totalPages, loading, ads, articleData } =
+  //   useArticles(page);
+
+const { featured, articles, totalPages, loading, ads: embeddedAds } =
+  useArticles(page);
+
+const ads = structuredArticleAds;
+
+
   const sortByPriority = (ads) =>
     ads?.sort((a, b) => (a.priority ?? 0) - (b.priority ?? 0));
   const leftAds = sortByPriority(

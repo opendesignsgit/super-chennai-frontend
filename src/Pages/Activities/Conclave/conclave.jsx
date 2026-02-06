@@ -42,16 +42,16 @@ export const speakersGallery = [
     description:
       "Arun Vasu is the Chairman and Managing Director of the TT Group, which operates across air cargo, logistics, supply chain, insurance, hospitality, and water-sports training. A third-generation leader of the TTK family, he is a serial entrepreneur who launched India’s first foreign exchange business and later built the world’s first visa outsourcing company. Alongside his businesses, he promotes water sports in Kovalam to create local socio-economic opportunities, while also being an avid adventure motorcyclist",
   },
-  {
-    id: 4,
-    name: "Pandiarajan",
-    mobile: "9840879559",
-    mail: "kpr@cielhr.com",
-    designation: "Founder, CIEL HR",
-    image: "/images/images-speakers/pandiraj-1.jpg",
-    // description:
-      // "Pandiarajan is a thought leader in HR and talent solutions, helping organizations scale through innovative workforce strategies.",
-  },
+  // {
+  //   id: 4,
+  //   name: "Pandiarajan",
+  //   mobile: "9840879559",
+  //   mail: "kpr@cielhr.com",
+  //   designation: "Founder, CIEL HR",
+  //   image: "/images/images-speakers/pandiraj-1.jpg",
+  //   // description:
+  //     // "Pandiarajan is a thought leader in HR and talent solutions, helping organizations scale through innovative workforce strategies.",
+  // },
   {
     id: 5,
     name: "Saundarya Rajesh",
@@ -596,22 +596,10 @@ export default function Conclave() {
                   {selectedCard.designation}
                 </p>
 
-                {/* Phone */}
-                {/* {selectedCard.mobile && (
-                  <p className="text-sm text-gray-700">
-                    📞
-                    <span className="font-medium">{selectedCard.mobile}</span>
-                  </p>
-                )} */}
-
-                {/* Email */}
-                {/* {selectedCard.mail && (
-                  <p className="text-sm text-gray-700 mb-3 break-all">
-                    ✉️ <span className="font-medium">{selectedCard.mail}</span>
-                  </p>
-                )} */}
-
-                <p className="text-sm text-gray-700 leading-relaxed">
+                <p
+                  className="text-sm text-gray-700 leading-relaxed
+             max-h-[40vh] overflow-y-auto pr-2"
+                >
                   {selectedCard.description}
                 </p>
               </motion.div>

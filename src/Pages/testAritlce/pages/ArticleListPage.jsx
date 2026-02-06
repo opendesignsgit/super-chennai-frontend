@@ -5,9 +5,7 @@ import { API_BASE_URL } from "../../../../config";
 import Pagination from "../components/Pagination";
 import "../styles.css";
 import { useEffect } from "react";
-
 import { useArticlePageAds } from "../hooks/useArticlePageAds";
-
 
 /* ==============================
    AD COMPONENTS
@@ -17,13 +15,41 @@ const withBaseUrl = (url) =>
   url ? `${API_BASE_URL}${url}` : "/images/placeholder.jpg";
 
 
-const AdBox = ({ ads, onAllClosed }) => {
-  const [visibleAds, setVisibleAds] = useState(ads);
+// const AdBox = ({ ads, onAllClosed }) => {
+//   const [visibleAds, setVisibleAds] = useState([]);
+//   useEffect(() => {
+//     setVisibleAds(ads || []);
+//   }, [ads]);
 
-  if (!visibleAds?.length) {
-    onAllClosed?.();
-    return null;
-  }
+//   if (!visibleAds.length) {
+//     onAllClosed?.();
+//     return null;
+//   }
+
+//   return (
+//     <div className="sticky top-6 space-y-4">
+//       {visibleAds.map((ad) => (
+//         <SingleAdCard
+//           key={ad.id}
+//           ad={ad}
+//           onClose={() =>
+//             setVisibleAds((prev) => prev.filter((a) => a.id !== ad.id))
+//           }
+//         />
+//       ))}
+//     </div>
+//   );
+// };
+
+
+const AdBox = ({ ads }) => {
+  const [visibleAds, setVisibleAds] = useState([]);
+
+  useEffect(() => {
+    setVisibleAds(ads || []);
+  }, [ads]);
+
+  if (!ads || ads.length === 0) return null;
 
   return (
     <div className="sticky top-6 space-y-4">
@@ -39,6 +65,7 @@ const AdBox = ({ ads, onAllClosed }) => {
     </div>
   );
 };
+
 
 const SingleAdCard = ({ ad, onClose }) => {
   return (
@@ -70,21 +97,20 @@ const BottomAdBox = ({ ads }) => {
 
   if (!show || !ads?.length) return null;
 
-  const ad = ads[0];
+  const ad = ads[0]; // rotate later if needed
 
   return (
     <div className="fixed bottom-0 inset-x-0 bg-white border-t shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4 justify-between">
-        {/* IMAGE */}
         <img
           src={withBaseUrl(ad.media?.url)}
           alt={ad.altText || ad.title}
-          className="h-12 object-cover rounded"
+          className="h-12 object-contain rounded"
         />
 
-        <p className="font-semibold text-sm">{ad.title}</p>
+        <p className="font-semibold text-sm truncate">{ad.title}</p>
 
-        <div className="flex gap-3">
+        <div className="flex gap-3 items-center">
           <Link
             to={`/ads/${ad.slug}`}
             className="bg-pink-600 text-white px-4 py-2 rounded text-sm"
@@ -92,39 +118,14 @@ const BottomAdBox = ({ ads }) => {
             Learn More
           </Link>
 
-          <button onClick={() => setShow(false)}>✕</button>
+          <button
+            onClick={() => setShow(false)}
+            className="h-8 w-8 flex items-center justify-center rounded-full
+                       text-gray-500 hover:text-gray-900"
+          >
+            ✕
+          </button>
         </div>
-      </div>
-    </div>
-  );
-};
-
-const InlineAd = ({ ad }) => {
-  const [show, setShow] = useState(true);
-  if (!show || !ad) return null;
-
-  return (
-    <div className="col-span-full my-6 bg-gray-100 rounded p-4 flex items-center gap-4 relative">
-      {/* CLOSE */}
-      <button
-        onClick={() => setShow(false)}
-        className="absolute top-2 right-2 text-sm text-gray-600"
-      >
-        ✕
-      </button>
-
-      <img
-        src={withBaseUrl(ad.media?.url)}
-        alt={ad.altText || ad.title}
-        className="h-20 object-cover rounded"
-      />
-
-      <div className="flex-1">
-        <p className="font-semibold">{ad.title}</p>
-
-        <Link to={`/ads/${ad.slug}`} className="text-pink-600 text-sm">
-          Learn More
-        </Link>
       </div>
     </div>
   );
@@ -168,96 +169,86 @@ const TopAdCard = ({ ad }) => {
     </div>
   );
 };
-const INLINE_AD_INTERVAL = 3;
+
 
 /* ==============================
    PAGE
 ============================== */
 
 export default function ArticleListPage() {
+  const { ads: articleAds, loading: adsLoading } = useArticlePageAds();
+  
+  const structuredArticleAds = articleAds?.reduce((acc, ad) => {
+    const pos = ad.position || "right";
+    const existing = acc.find((a) => a.position === pos);
+    if (existing) {
+      existing.ads.push(ad);
+    } else {
+      acc.push({
+        position: pos,
+        ads: [ad],
+      });
+    }
+    return acc;
+  }, []);
 
 
 
-const { ads: articleAds, loading: adsLoading } = useArticlePageAds();
-
-
-
-const structuredArticleAds = articleAds?.reduce((acc, ad) => {
-  const pos = ad.position || "right";
-
-  const existing = acc.find((a) => a.position === pos);
-
-  if (existing) {
-    existing.ads.push(ad);
-  } else {
-    acc.push({
-      position: pos,
-      ads: [ad],
-    });
-  }
-
-  return acc;
-}, []);
-
+  //################## POSTION ASIGN ###############
 
   const [showLeftAds, setShowLeftAds] = useState(true);
   const [showRightAds, setShowRightAds] = useState(true);
-
   const [page, setPage] = useState(1);
+  const { featured,articles,totalPages, loading, ads: embeddedAds,} = useArticles(page);
+console.log("RAW articleAds", articleAds);
+  const ads = structuredArticleAds;
+  console.log("structuredArticleAds",structuredArticleAds)
+
+
+  let leftAds = ads
+  ?.filter(a => a.position === "left")
+  .flatMap(a => a.ads) || [];
+
+let rightAds = ads
+  ?.filter(a => a.position === "right")
+  .flatMap(a => a.ads) || [];
+
+if (rightAds.length === 0 && leftAds.length > 1) {
+  rightAds = leftAds.splice(1);
+}
+
+
+const topAds = ads
+  ?.filter((a) => a.position === "top")
+  .flatMap((a) => a.ads);
+
+const bottomAds = ads
+  ?.filter((a) => a.position === "bottom")
+  .flatMap((a) => a.ads);
+
+  const mainCol = showLeftAds && showRightAds  ? "lg:col-span-8": showLeftAds || showRightAds  ? "lg:col-span-10" : "lg:col-span-12";
 
 
 
-  // const { featured, articles, totalPages, loading, ads, articleData } =
-  //   useArticles(page);
-
-const { featured, articles, totalPages, loading, ads: embeddedAds } =
-  useArticles(page);
-
-const ads = structuredArticleAds;
-
-
-  const sortByPriority = (ads) =>
-    ads?.sort((a, b) => (a.priority ?? 0) - (b.priority ?? 0));
-  const leftAds = sortByPriority(
-    ads?.filter((a) => a.position === "left").flatMap((a) => a.ads),
-  );
-  const rightAds = ads
-    ?.filter((a) => a.position === "right")
-    .flatMap((a) => a.ads);
-  const inlineAds = ads
-    ?.filter((a) => a.position === "inline")
-    .flatMap((a) => a.ads);
-  const topAds = ads?.filter((a) => a.position === "top").flatMap((a) => a.ads);
-  const bottomAds = topAds;
-
-
-useEffect(() => {
-  if (!leftAds || leftAds.length === 0) {
-    setShowLeftAds(false);
-  }
-
-  if (!rightAds || rightAds.length === 0) {
-    setShowRightAds(false);
-  }
-}, [leftAds, rightAds]);
+   
+    
+      
+      
+       
 
 
 
-  const mainCol =
-    showLeftAds && showRightAds
-      ? "lg:col-span-8"
-      : showLeftAds || showRightAds
-        ? "lg:col-span-10"
-        : "lg:col-span-12";
 
-  console.log("useArticles → ads", ads);
 
-  // 🔥 MOST VIEWED (top 5)
+
+
+
+
+//##################### MORE SECTION DTATA STRING ##########################################
   const mostViewedArticles = [...articles]
     .sort((a, b) => (b.views ?? 0) - (a.views ?? 0))
     .slice(0, 5);
 
-  // ⭐ POPULAR (views + recent mix)
   const popularArticles = [...articles]
     .sort((a, b) => {
       const scoreA = (a.views ?? 0) + (a.readingTime ?? 0) * 5;
@@ -292,11 +283,16 @@ useEffect(() => {
 
       <div className="max-w-7xl mx-auto px-4 mt-6 mt-10 mb-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+
           {showLeftAds && leftAds?.length > 0 && (
             <div className="hidden lg:block lg:col-span-2">
               <AdBox ads={leftAds} onAllClosed={() => setShowLeftAds(false)} />
             </div>
           )}
+
+
+          
 
           <div className={mainCol}>
             {featured && (
@@ -325,7 +321,8 @@ useEffect(() => {
               </div>
             )}
 
-            {/* Articles */}
+
+
             {loading ? (
               <p className="text-center py-10">Loading articles...</p>
             ) : (
@@ -337,14 +334,7 @@ useEffect(() => {
                       a.heroImage?.url ||
                       "/images/placeholder.jpg";
 
-                    const inlineAd =
-                      inlineAds && inlineAds.length > 0
-                        ? inlineAds[
-                            Math.floor(i / INLINE_AD_INTERVAL) %
-                              inlineAds.length
-                          ]
-                        : null;
-
+                   
                     return (
                       <div key={a.id} className="contents">
                         <div className="bg-white rounded-md overflow-hidden">
@@ -368,10 +358,7 @@ useEffect(() => {
                             min read
                           </p>
                         </div>
-
-                        {(i + 1) % INLINE_AD_INTERVAL === 0 && (
-                          <InlineAd ad={inlineAd} />
-                        )}
+                     
                       </div>
                     );
                   })}

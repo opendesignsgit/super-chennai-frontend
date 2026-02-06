@@ -377,7 +377,7 @@ export default function Conclave() {
 
   return (
     <>
-      <ToastContainer position="top-center" />
+      <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
       {/* ============== Banner ============ */}
 
@@ -598,7 +598,7 @@ export default function Conclave() {
 
                 <p
                   className="text-sm text-gray-700 leading-relaxed
-             max-h-[40vh] overflow-y-auto pr-2"
+                  max-h-[40vh] overflow-y-auto pr-2"
                 >
                   {selectedCard.description}
                 </p>
@@ -705,65 +705,62 @@ export default function Conclave() {
                   />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-                  <input
-                    name="phone"
-                    placeholder="Phone *"
-                    className="border p-3 rounded-lg"
-                    value={form.phone}
-                    onChange={handleChange}
-                    disabled={otpSent}
-                    required
-                  />
-
-                  {!otpSent && (
-                    <button
-                      type="button"
-                      onClick={sendOtp}
-                      className="bg-[#8b3c82] text-white px-4 py-3 rounded-lg"
-                    >
-                      Send OTP
-                    </button>
-                  )}
-                </div>
-
-                {otpSent && (
-                  <input
-                    name="otp"
-                    placeholder="Enter OTP *"
-                    className="border p-3 rounded-lg w-full"
-                    value={form.otp}
-                    onChange={handleChange}
-                    required
-                  />
-                )}
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="relative">
+                    <input
+                      name="phone"
+                      placeholder="Phone *"
+                      className="border p-3 pr-28 rounded-lg w-full"
+                      value={form.phone}
+                      onChange={handleChange}
+                      disabled={otpSent}
+                      required
+                    />
+
+                    {!otpSent && (
+                      <button
+                        type="button"
+                        onClick={sendOtp}
+                        className="absolute right-2 top-1/2 -translate-y-1/2 
+                         bg-[#8b3c82] text-white text-sm px-4 py-2 rounded-md"
+                      >
+                        Send OTP
+                      </button>
+                    )}
+                  </div>
+
+                  {otpSent && (
+                    <input
+                      name="otp"
+                      placeholder="Enter OTP *"
+                      className="border p-3 rounded-lg w-full"
+                      value={form.otp}
+                      onChange={handleChange}
+                      required
+                    />
+                  )}
                   <input
                     name="companyName"
-                    placeholder="Company Name *"
+                    placeholder="Company Name / Institutions"
                     className="border p-3 rounded-lg"
                     value={form.companyName}
                     onChange={handleChange}
-                    required
                   />
 
                   <input
                     name="designation"
-                    placeholder="Designation *"
+                    placeholder="Designation "
                     className="border p-3 rounded-lg"
                     value={form.designation}
                     onChange={handleChange}
-                    required
                   />
 
                   <input
                     name="linkedinUrl"
-                    placeholder="LinkedIn URL *"
+                    placeholder="LinkedIn URL "
                     className="border p-3 rounded-lg"
                     value={form.linkedinUrl}
                     onChange={handleChange}
-                    required
                   />
                 </div>
 
@@ -779,76 +776,6 @@ export default function Conclave() {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* <section
-        className="relative w-full overflow-hidden min-h-[450px] flex items-center justify-center 
-             bg-[url('/images/conclave-CTA-bg.jpeg')] bg-cover bg-center bg-no-repeat "
-      > */}
-
-      {/* <section
-        className="relative w-full overflow-hidden min-h-[450px] flex items-center justify-center
-             "
-      >
-        <div className="absolute inset-0 z-0" />
-
-        <div className="container mx-auto px-6 lg:px-20 z-10">
-          <div className="max-w-2xl mx-auto flex flex-col items-center text-center">
-            <div className="relative mb-6 flex justify-center">
-              <img
-                src="/images/Picture1.png"
-                alt="Conclave"
-                className="h-40 md:h-64 w-auto mx-auto object-contain"
-              />
-            </div>
-
-            <p className="text-slate-600 text-lg md:text-xl font-medium mb-8">
-              Feb 19, 2026 Time: 09:30 AM Onwards
-              <span className="mx-2 text-slate-300">|</span>
-              ITC WelcomHotel, Chennai
-            </p>
-
-            <button
-              onClick={() => setShowRegisterPopup(true)}
-              className="border-2 border-rose-400 text-rose-500 font-semibold px-10 py-2.5 rounded-full hover:bg-rose-50 transition-colors duration-300 cursor-pointer"
-            >
-              Register Now
-            </button>
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section
-        className="relative w-full overflow-hidden min-h-[550px] flex items-center bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/cta-banner (3).jpeg')",
-        }}
-      >
-        <div className="container mx-auto px-6 lg:px-0 z-10">
-          <div className="max-w-2xl flex flex-col items-start text-left">
-            <div className="relative mb-6 flex justify-start">
-              <img
-                src="/images/Picture1.png"
-                alt="Conclave"
-                className="h-40 md:h-64 w-auto object-contain"
-              />
-            </div>
-
-            <p className="text-slate-800 text-lg md:text-xl font-medium mb-8">
-              Feb 19, 2026 <span className="mx-2 text-slate-300">|</span>
-              Time: 09:30 AM Onwards<br></br>{" "}
-              <span className="mx-2 text-slate-300">|</span>
-              ITC WelcomHotel, Chennai
-            </p>
-
-            <button
-              onClick={() => setShowRegisterPopup(true)}
-              className="border-2 border-rose-400 text-rose-500 font-semibold px-10 py-2.5 rounded-full hover:bg-rose-50 transition-colors duration-300 cursor-pointer"
-            >
-              Register Now
-            </button>
-          </div>
-        </div>
-      </section> */}
 
       <section
         className="relative w-full overflow-hidden min-h-[550px] flex items-center bg-cover bg-center"

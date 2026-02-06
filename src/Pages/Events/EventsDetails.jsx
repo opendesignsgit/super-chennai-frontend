@@ -118,6 +118,35 @@ export default function EventsDetails() {
     );
   }
 
+   const ARahumanWEBSchema = {
+     "@context": "https://schema.org",
+     "@type": "Event",
+     name: "The Wonderment Tour AR Rahman Live in Chennai",
+     description: "AR Rahman Concert",
+     image:
+       "https://demo.superchennai.com/api/media/file/The%20Wonderment%20Tour%20A.R.Rahman%20Live%20in%20Chennai.jpg",
+     startDate: "2026-02-14T18:30",
+     endDate: "2026-02-14T21:45",
+     eventStatus: "https://schema.org/EventScheduled",
+     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+     location: {
+       "@type": "Place",
+       name: "Jawaharlal Nehru Stadium",
+       address: {
+         "@type": "PostalAddress",
+         streetAddress: "",
+         addressLocality: "Chennai",
+         postalCode: "600003",
+         addressCountry: "IN",
+       },
+     },
+     performer: {
+       "@type": "MusicGroup",
+       name: "AR Rahman",
+     },
+   };
+
+
   return (
     <>
       <Helmet>
@@ -128,6 +157,13 @@ export default function EventsDetails() {
         />
         <link rel="canonical" href={window.location.href} />
         {imageUrl && <meta property="og:image" content={imageUrl} />}
+
+        {slug === "music-concert-ar-rahman-wonderment" && (
+          <script type="application/ld+json">
+            {JSON.stringify(ARahumanWEBSchema)}
+          </script>
+        )}
+        
       </Helmet>
 
       <section className="accaodomationBannerSection">
@@ -150,7 +186,8 @@ export default function EventsDetails() {
               maxLines={2}
             />
             <div className="breadCrum z-10">
-              <Link to="/">Home</Link> - <Link to="/chennai-events">Events</Link>
+              <Link to="/">Home</Link> -{" "}
+              <Link to="/chennai-events">Events</Link>
             </div>
           </div>
         </div>
@@ -221,7 +258,7 @@ export default function EventsDetails() {
                           day: "numeric",
                           month: "short",
                           year: "numeric",
-                        }
+                        },
                       )}
                     />
 

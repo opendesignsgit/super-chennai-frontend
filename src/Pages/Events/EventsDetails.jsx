@@ -146,6 +146,45 @@ export default function EventsDetails() {
      },
    };
 
+   const CREDAISCHEMA = {
+     "@context": "https://schema.org",
+     "@type": "Event",
+     name: "Credai Chennai Fairpro 2026",
+     description:
+       "Visit CREDAI Chennai Fairpro 2026 to explore 500+ properties from 80+ developers. Find homes, plots & villas with exclusive offers. Get your FREE VIP Pass now.",
+     image:
+       "https://demo.superchennai.com/api/media/file/CREDAI%20FAIRPRO%202026.jpeg",
+     startDate: "2026-02-20T10:00",
+     endDate: "2026-02-22T21:00",
+     eventStatus: "https://schema.org/EventScheduled",
+     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+     location: {
+       "@type": "Place",
+       name: "Chennai Trade Centre",
+       address: {
+         "@type": "PostalAddress",
+         streetAddress: "",
+         addressLocality: "Chennai",
+         postalCode: "600089",
+         addressCountry: "IN",
+       },
+     },
+     performer: {
+       "@type": "PerformingGroup",
+       name: "Credai Chennai",
+     },
+     offers: {
+       "@type": "Offer",
+       name: "Credai Chennai Fairpro 2026",
+       price: "0",
+       priceCurrency: "INR",
+       validFrom: "2026-02-07",
+       url: "https://credai.eventink.in/register.html",
+       availability: "https://schema.org/InStock",
+     },
+   };
+
+
 
   return (
     <>
@@ -163,7 +202,12 @@ export default function EventsDetails() {
             {JSON.stringify(ARahumanWEBSchema)}
           </script>
         )}
-        
+
+        {slug === "credai-chennai-fairpro-2026" && (
+          <script type="application/ld+json">
+            {JSON.stringify(CREDAISCHEMA)}
+          </script>
+        )}
       </Helmet>
 
       <section className="accaodomationBannerSection">

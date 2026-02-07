@@ -134,29 +134,43 @@ export const speakersGallery = [
     description:
       "Ramkumar Ramamoorthy is co-founder and partner at Catalincs Partners, where he advises niche technology firms on growth and value creation. Earlier, he served as Chairman and Managing Director of Cognizant India, after a prior stint at Tata Consultancy Services, overseeing one of the country’s largest private workforces. With deep ties to academia and industry bodies like CII, NASSCOM, MCCI and AMCHAM, he also serves as an Independent Director on the boards of Cholamandalam Investment and Finance and Five Star Business Finance.",
   },
+
+  // ADDITIONALLY ADDED
+
+  {
+    id: 11,
+    name: "Ms. Aswathy Dilip",
+    designation: "Managing Director ITDP India ",
+    image: "/images/images-speakers/Aswathy-Photo (1).jpeg",
+    description:
+      "Aswathy Dilip is the Managing Director of ITDP India and a sought-after expert in mobilizing support for sustainable mobility among key decision-makers, governments, and stakeholders. With the support of her smart and enthusiastic team, she works closely with national, state, and city governments, providing technical assistance on sustainable and equitable urban mobility. Her work has contributed to creating streets that are safe for walking and cycling, implementing progressive parking reforms, and building support for high-quality, sustainable mass transit. Aswathy holds a degree in Urban Design from Cardiff University, UK, and a bachelor’s degree in Architecture. She believes in the simple joys of life, finding happiness in ordinary yet uncommon sights such as children playing freely, elderly people chatting joyfully, and women travelling with confidence in the public spaces of our cities. Through her professional endeavours, she strives to create more such environments and enable many more of these heartening experiences.",
+  },
+
+  {
+    id: 12,
+    name: "Ms. Ashwini Asokan",
+    designation: "Founder, CEO Mad Street Den",
+    image: "/images/images-speakers/Ashwini Asokan Picture.jpeg",
+    description:
+      "Ashwini is the CEO and Founder of Mad Street Den, one of India’s first AI startups. The company’s AI platform was a full-stack enterprise AI solution that powered Fortune 2000 enterprises across verticals including retail, finance, insurance, government, and healthcare. The platform and the team that Ashwini and her co-founders built garnered industry-wide recognition for its generalizable AI engine, competing with companies such as Palantir, Databricks, and UiPath. Members of the Mad Street Den team have since gone on to become early employees at organizations such as OpenAI, Apple AI, Microsoft, and other leading global institutions. The company was recently acquired by Chennai-based startup M2P. Ashwini has received numerous accolades, including Fortune 40 Under 40 and Forbes 50 Power Women, and has over 25 years of experience in the technology industry with dozens of publications and patents to her name. She also devotes a significant portion of her time to investing in and mentoring startups and actively engaging with the broader technology and investment ecosystem.",
+  },
+
+  {
+    id: 12,
+    name: "Mr. Ramakrishnan K",
+    designation: "Senior Managing Director Spark Capital",
+    image: "/images/images-speakers/Ramakrishnan K Picture.png",
+    description:
+      "K. Ramakrishnan (Ramki) is a veteran Indian investment banker with nearly three and a half decades of experience across the full spectrum of corporate finance and investment banking. He has advised leading business groups, entrepreneurs, and corporates on raising capital from Indian and overseas capital markets, as well as from private equity investors. Ramki has led, advised on, and consummated a significant number of domestic and cross-border M&A transactions, representing both buy-side and sell-side interests. With his long investment banking career and deep-rooted relationships with leading industrial groups, business families, and entrepreneurs, his financial and strategic advice is widely sought on capital planning, corporate growth strategy, and family wealth and succession matters. He is extensively networked across the corporate finance and capital markets ecosystem in India. Ramki is the Senior Managing Director – Strategic Relationships at Spark Capital Advisors (India) Pvt. Ltd. As part of the founding leadership at Spark Capital, he has actively contributed to the firm’s growth and transformation from an advisory boutique into a leading mid-market full-service investment bank. Prior to Spark Capital, Ramki headed ICICI Securities’ investment banking business for Southern India and previously held roles at Arthur Andersen, Ind Global Financial Trust, and Deloitte. Among his other commitments, Ramki currently serves on the Governing Council of The Madras Chamber, the Governing Committee of TiE Chennai, and the Executive Committee of The Chennai Angels. He is a founding fellow of the Chennai International Centre, a charter member of TiE Chennai, and has served on the Managing Committee of the Madras Management Association. He also regularly participates in committees and working groups of CII Southern Region. Ramki holds a degree in Mechanical Engineering and a postgraduate degree in Management.",
+  },
 ];
 
 export const partners = [
   {
     id: 1,
-    image: "/images/events/logos.jpg",
+    image: "/images/partnersLogo/RADIOCITY-LOGO-PNG.png",
   },
-  {
-    id: 1,
-    image: "/images/events/logos.jpg",
-  },
-  {
-    id: 1,
-    image: "/images/events/logos.jpg",
-  },
-  {
-    id: 1,
-    image: "/images/events/logos.jpg",
-  },
-  {
-    id: 1,
-    image: "/images/events/logos.jpg",
-  },
+ 
 ];
 
 const infoData = [
@@ -648,8 +662,7 @@ export default function Conclave() {
                         <h3 className="info-title text-lg">{item.title}</h3>
                       </div>
                       <p>{item.desc}</p>
-                       <p>{item.desc2}</p>
-
+                      <p>{item.desc2}</p>
                     </div>
                   </div>
                 ))}
@@ -839,10 +852,10 @@ export default function Conclave() {
         <div className="exploreSldierBg">
           <div className="container max-w-7xl mx-auto px-4">
             <div className="exploreMoreSectionContent">
-              <h4>Partners</h4>
+              <h4>Partner</h4>
             </div>
 
-            <div className="exploreSldierSection">
+            {/* <div className="exploreSldierSection">
               <Slider {...settings}>
                 {partners.map((card) => (
                   <div
@@ -860,6 +873,40 @@ export default function Conclave() {
                   </div>
                 ))}
               </Slider>
+            </div> */}
+
+            <div className="exploreSldierSection">
+              {partners.length > 1 ? (
+                <Slider {...settings}>
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer px-2"
+                      onClick={() => setSelectedCard(card)}
+                    >
+                      <div className="relative rounded-lg overflow-hidden">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="w-full h-[200px] object-cover"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              ) : (
+                <div className="flex justify-center">
+                  <div className="ExplorePageSliderImage cursor-pointer px-2">
+                    <div className="relative rounded-lg overflow-hidden">
+                      <img
+                        src={partners[0].image}
+                        alt={partners[0].name}
+                        className="w-full h-[200px] object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

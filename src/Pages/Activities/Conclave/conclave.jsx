@@ -163,15 +163,19 @@ const infoData = [
   {
     title: "LIVE",
     title1: "A City That Works for Everyone",
-    desc: "Chennai’s growth must be inclusive, resilient, and equitable. This pillar focuses on building a city that delivers quality of life for all residents.Key areas include sustainable mobility, affordable housing, flood resilience, clean public spaces, strong civic governance, and neighbourhoods designed for safety and accessibility",
+    desc: "Chennai has made significant strides in public transit, physical and social infrastructure. It is better equipped than many Indian metros to manage urban shocks and adapt to climate change. Yet, recurring floods, housing inequity, a lack of cleanliness, and growing congestion prevent it from achieving the liveability standards of cities like Singapore or Hong Kong.",
+    desc2:
+      "How can Chennai build a city that is both liveable, resilient, and equitable for all?",
     icon: "/images/Visit-Images/icons/Scenic-Relaxing.svg",
     imgAlt: "attractions chennai",
   },
 
   {
     title: "VISIT",
-    title1: "Crafting a World-Class Visitor Experience",
-    desc: "With its rich heritage, vibrant culture, and natural coastline, Chennai has the potential to become a global cultural destination.This pillar explores how the city can integrate heritage, tourism, hospitality, and public spaces to offer a seamless, memorable visitor experience that reflects Chennai’s unique character.",
+    title1: "Crafting a world-class visitor experience",
+    desc: "Chennai’s coastline, performing arts, temples, and culinary depth make it one of the richest cultural cities in India. Its classical and colonial legacies attract a steady stream of domestic and diaspora tourists. Yet, the city’s heritage, hospitality, and public spaces often work in silos, holding it back from joining the ranks of cultural destinations like Kyoto or Istanbul.",
+    desc2:
+      "How can Chennai elevate its tourism economy and take its place on the global cultural map?",
     icon: "/images/Visit-Images/icons/Buzzing-City-Life.svg",
     imgAlt: "VISIT",
   },
@@ -180,6 +184,9 @@ const infoData = [
     title: "WORK",
     title1: "Becoming India’s Talent Capital",
     desc: "Chennai produces thousands of skilled graduates and hosts strong R&D capabilities across industries. However, perception gaps and lifestyle factors continue to drive talent away.This pillar focuses on reshaping Chennai’s image as an opportunity-rich metro by enhancing career pathways, work-life balance, cultural ecosystems, and industry-academia collaboration.",
+    desc2:
+      "How can Chennai become the metro of choice for the next generation of creators and professionals?",
+
     icon: "/images/Visit-Images/icons/Where-Flavour-Meets-Culture.svg",
     imgAlt: "WORK",
   },
@@ -188,7 +195,10 @@ const infoData = [
     title: "INVEST",
     title1: "Reimagining Chennai as a Launchpad for Future Business",
 
-    desc: "With deep manufacturing expertise, strategic location, and economic stability, Chennai is well-positioned to attract global investment.This pillar examines how the city can strengthen ease of doing business, boost investor confidence, and position itself as South Asia’s most compelling and future-ready investment destination.",
+    desc: "Chennai is a national leader in manufacturing, exports, and logistics, with globally competitive hubs in automotive and electronics. It benefits from deep industrial roots, a strategic coastal location, and consistent FDI inflows—making it one of India’s most stable metro economies. Yet, while it has the scale and substance, Chennai projects efficiency but not energy by being agile, tech-centric and investor-focussed, unlike some of the East Asian ones like Seoul or Ho Chi Minh city.",
+    desc2:
+      "How can Chennai recast itself as South Asia’s most compelling and future-ready investment destination?",
+
     icon: "/images/Visit-Images/icons/Weekend-Getaways-Chennai-Style.svg",
     imgAlt: "INVEST",
   },
@@ -196,7 +206,10 @@ const infoData = [
     title: "INNOVATE",
     title1: "Becoming India’s Deep-Tech Hub for the World",
 
-    desc: "Chennai has strong technical talent and premier research institutions, yet lacks the visibility and ecosystem density of leading global innovation hubs.This pillar explores how the city can nurture entrepreneurship, attract risk capital, strengthen innovation networks, and support deep-tech ventures to scale globally from Chennai",
+    desc: "Chennai is home to pioneering efforts in SaaS, advanced manufacturing, and service innovation, and is backed by deep research institutions like IIT Madras and a growing pool of technical talent. It has built a strong reputation for substance over hype. Still, it hasn’t built the entrepreneurial buzz or cross-disciplinary density seen in innovation cities like Tel Aviv or Bengaluru, where startups are nurtured through active networks, risk capital, and civic visibility.",
+    desc2:
+      "How can Chennai become the city where ambitious ideas grow fast, stay grounded, and reach the world?",
+
     icon: "/images/Visit-Images/icons/Timeless-Chennai-Where-Culture-Evolves-Gracefully.svg",
     imgAlt: "best temple in chennai",
   },
@@ -635,6 +648,8 @@ export default function Conclave() {
                         <h3 className="info-title text-lg">{item.title}</h3>
                       </div>
                       <p>{item.desc}</p>
+                       <p>{item.desc2}</p>
+
                     </div>
                   </div>
                 ))}

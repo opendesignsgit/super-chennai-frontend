@@ -888,7 +888,7 @@ export default function Conclave() {
                         <img
                           src={card.image}
                           alt={card.name}
-                          className="w-full h-[200px] object-cover"
+                          className="w-full h-[200px] object-cover partnercardimage"
                         />
                       </div>
                     </div>
@@ -901,7 +901,7 @@ export default function Conclave() {
                       <img
                         src={partners[0].image}
                         alt={partners[0].name}
-                        className="w-full h-[200px] object-cover"
+                        className="w-full h-[200px] object-cover partnercardimage"
                       />
                     </div>
                   </div>

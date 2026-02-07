@@ -331,7 +331,7 @@ export default function EventsDetails() {
               {link && (
                 <div className="flex justify-center mt-6">
                   <a href={link}>
-                    <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg font-medium transition capitalize">
+                    <button className="bg-pink-600 hover:bg-pink-700 text-white cursor-pointer px-4 py-2 rounded-lg font-medium transition capitalize">
                       {" "}
                       {main.linkbutton?.trim() || "View More"}
                     </button>

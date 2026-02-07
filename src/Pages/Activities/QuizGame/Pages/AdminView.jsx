@@ -18,6 +18,7 @@ export default function AdminView() {
 
   const backendURL = `${API_BASE_URL_API}/admin/all-users`;
   const [margazhiData, setMargazhiData] = useState([]);
+   const [conclaveData, setConclaveData] = useState([]);
 
   /* ================= AUTH CHECK ================= */
   useEffect(() => {
@@ -34,9 +35,24 @@ export default function AdminView() {
     fetchHotshot();
     fetchPosts();
     fetchMargazhi();
+    fetchConclave();
   };
 
+
+  
+
   /* ================= API CALLS ================= */
+
+  const fetchConclave = async () => {
+    const res = await axios.get(
+      "https://api.superchennai.com/api/conclaves/conclave/",
+    );
+
+    if (res.data?.success) {
+      setConclaveData(res.data.data || []);
+    }
+  };
+
   const fetchQuiz = async (key) => {
     const res = await axios.post(backendURL, { admin_key: key });
     setQuizData(res.data.data || []);
@@ -153,6 +169,33 @@ export default function AdminView() {
     XLSX.writeFile(workbook, "Hotshot_Chennai_All_Entries.xlsx");
   };
 
+  const downloadConclaveXLS = () => {
+  if (!conclaveData || conclaveData.length === 0) return;
+
+  const formattedData = conclaveData.map((d, i) => {
+    const { date, time } = formatDateTime(d.created_at);
+
+    return {
+      "S.No": i + 1,
+      Name: d.name || "",
+      Email: d.email || "",
+      Phone: d.phone || "",
+      Company: d.company_name || "",
+      Designation: d.designation || "",
+      LinkedIn: d.linkedin_url || "",
+      Date: date,
+      Time: time,
+    };
+  });
+
+  const worksheet = XLSX.utils.json_to_sheet(formattedData);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Conclave");
+
+  XLSX.writeFile(workbook, "Conclave_Registrations.xlsx");
+};
+
+
   return (
     <>
       {/* Banner */}
@@ -209,6 +252,7 @@ export default function AdminView() {
               ["reimagine", "Reimagine Chennai"],
               ["hotshot", "Hotshot Chennai"],
               ["margazhi", "Margazhi Month"],
+              ["conclave", "Conclave"],
               ["trivia", "Trivia"],
             ].map(([key, label]) => (
               <button
@@ -235,28 +279,6 @@ export default function AdminView() {
               </button>
             </div>
           )}
-
-          {/* <div className="flex justify-end px-6">
-            <button
-              onClick={() => {
-                if (activeTab === "newsletter")
-                  downloadXLS(newsletter, "Newsletter");
-                if (activeTab === "volunteer")
-                  downloadXLS(volunteers, "Volunteers");
-                if (activeTab === "stories")
-                  downloadXLS(stories, "Namma_Stories");
-                if (activeTab === "reimagine")
-                  downloadXLS(reimagine, "Reimagine_Chennai");
-                if (activeTab === "hotshot")
-                  downloadXLS(hotshotData, "Hotshot_Chennai");
-                if (activeTab === "margazhi")
-                  downloadXLS(margazhiData, "Margazhi");
-              }}
-              className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700"
-            >
-              ⬇ Download XLS
-            </button>
-          </div> */}
 
           {/* CONTENT */}
           <div className="p-6">
@@ -288,6 +310,24 @@ export default function AdminView() {
                 images
                 showMessage={true}
               />
+            )}
+            {activeTab === "conclave" && (
+              <SimpleTable
+                title="Conclave Registrations"
+                data={conclaveData}
+                description
+              />
+            )}
+
+            {activeTab === "conclave" && (
+              <div className="flex justify-end px-6 mb-4">
+                <button
+                  onClick={downloadConclaveXLS}
+                  className="bg-green-700 text-white px-4 py-2 rounded font-semibold hover:bg-green-800"
+                >
+                  ⬇ Download Conclave Entries
+                </button>
+              </div>
             )}
 
             {!showPopup && activeTab === "trivia" && (
@@ -403,6 +443,10 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
               <th>Phone</th>
               {title === "Hotshot Chennai" && <th>Instagram</th>}
               {title === "Hotshot Chennai" && <th>Location</th>}
+
+              {title === "Conclave Registrations" && <th>Company</th>}
+              {title === "Conclave Registrations" && <th>Designation</th>}
+
               {showMessage && <th>Message</th>}
               {description && <th>Description</th>}
               <th>Date</th>
@@ -462,6 +506,13 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
                   )} */}
                   {title === "Hotshot Chennai" && (
                     <td>{d.location_url?.trim() ? d.location_url : "—"}</td>
+                  )}
+
+                  {title === "Conclave Registrations" && (
+                    <td>{d.company_name || "—"}</td>
+                  )}
+                  {title === "Conclave Registrations" && (
+                    <td>{d.designation || "—"}</td>
                   )}
 
                   {showMessage && (

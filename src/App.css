@@ -776,3 +776,14 @@
   font-size: 14px;
   color: #374151;
 }
+
+
+
+
+/* conclaves css  */
+
+.partnercardimage { 
+background: #fff;
+    padding: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

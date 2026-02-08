@@ -228,8 +228,8 @@ const Footer = () => {
       title: "Refund Policy",
       link: "/refund-policy",
     },
-        { title: "Chennai-app", link: "/chennai-apps" },
-
+    { title: "Chennai-app", link: "/chennai-apps" },
+    { title: "Conclave", link: "/chennai-conclave" },
   ];
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);

@@ -29,6 +29,15 @@ const slides = [
   //   title: "Superchennai-Quiz",
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
+
+  //     {
+  //   type: "image",
+  //   link: "/contest/hotshots-photography-contest",
+  //   image: "/images/fairpro-homepagenbanner.jpeg",
+  //   image1: "/images/mobile-banner-fairpro.jpeg",
+  //   title: "Credai evant",
+  //   description: "Credai.",
+  // },
   
   {
     type: "image",
@@ -38,6 +47,10 @@ const slides = [
     title: "Icon of the month in chennai",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
+
+
+
+  
   
   //  {
   //   image: "/images/margazhi-contest-home.jpg",

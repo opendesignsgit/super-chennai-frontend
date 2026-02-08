@@ -401,6 +401,11 @@ const menuItems = [
       },
     ],
   },
+  {
+    label: "Conclave",
+    labellink: "/chennai-conclave",
+    content: [],
+  },
 ];
 const sectionImageMap = {
   Live: "/images/HomePage-Images/live-MegaMenu.jpg",
@@ -577,6 +582,34 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
               <div className="MegamenumenuitemsMain">
                 <ul className="Megamenumenudesktop">
                   {menuItems.map((item, i) => (
+                    // <li
+                    //   key={i}
+                    //   className={`Megamenumenuitem ${
+                    //     activeMenu?.label === item.label
+                    //       ? "activeMegamenuSection"
+                    //       : ""
+                    //   }`}
+                    //   onClick={() => {
+                    //     setActiveMenu(item);
+                    //     setMenuVisible(false);
+                    //     navigate(item.labellink);
+                    //     window.scrollTo({ top: 0 });
+                    //   }}
+                    //   onMouseEnter={() => {
+                    //     setActiveMenu(item);
+                    //     setMenuVisible(true);
+                    //     setHoveredImage(
+                    //       sectionImageMap[item.label] ||
+                    //         "/images/FirstSliderImage.png",
+                    //     );
+                    //   }}
+                    // >
+                    //   <span>
+                    //     {item.label}
+                    //     <p className="navitemsArrowpart"></p>
+                    //   </span>
+                    // </li>
+
                     <li
                       key={i}
                       className={`Megamenumenuitem ${
@@ -591,12 +624,15 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                         window.scrollTo({ top: 0 });
                       }}
                       onMouseEnter={() => {
-                        setActiveMenu(item);
-                        setMenuVisible(true);
-                        setHoveredImage(
-                          sectionImageMap[item.label] ||
-                            "/images/FirstSliderImage.png",
-                        );
+                        // Only show mega menu if the item has content
+                        if (item.content && item.content.length > 0) {
+                          setActiveMenu(item);
+                          setMenuVisible(true);
+                          setHoveredImage(
+                            sectionImageMap[item.label] ||
+                              "/images/FirstSliderImage.png",
+                          );
+                        }
                       }}
                     >
                       <span>

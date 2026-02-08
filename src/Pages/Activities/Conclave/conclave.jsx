@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef } from "react";
 import "./style.css";
+import { Helmet } from "react-helmet-async";
 
 export const speakersGallery = [
   {
@@ -402,6 +403,30 @@ export default function Conclave() {
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
+
+            <Helmet>
+              <title>Hey Chennaiites! It’s your time to talk about Chennai!</title>
+              <meta
+                name="description"
+                content="Be part of the Super Chennai Conclave, a citizen-driven space to discuss Chennai’s identity, innovation, culture, and future development.."
+              />
+              <meta
+                property="og:title"
+                content="Hey Chennaiites! It’s your time to talk about Chennai!"
+              />
+              <meta
+                property="og:description"
+                content="Be part of the Super Chennai Conclave, a citizen-driven space to discuss Chennai’s identity, innovation, culture, and future development.."
+              />
+              <meta
+                property="og:image"
+                content="https://www.superchennai.com/images/Picture1.png"
+              />
+              <meta
+                property="og:url"
+                content="https://www.superchennai.com/images/Picture1.png"
+              />
+            </Helmet>
 
       {/* ============== Banner ============ */}
 

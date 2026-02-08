@@ -14,6 +14,7 @@ export default function MenuBar({ setMenuBar }) {
     // { label: "Career", href: "/career" },
     { label: "Events", href: "/chennai-events" },
     { label: "Superchennai Contests", href: "/superchennai-contest" },
+    
     // { label: "Pride of Chennai", href: "/pride-of-chennai" },
     // { label: "AI REIMAGINE", href: "/reimagine-chennai-AI-art-challenge" },
     // { label: "Social Chennai", href: "/social-chennai" },
@@ -31,7 +32,7 @@ export default function MenuBar({ setMenuBar }) {
     { label: "Blog", href: "/blog" },
     { label: "Contact Us", href: "/contact" },
     { label: "Apps Used In Chennai", href: "/chennai-apps" },
-
+    { label: "Conclave", href: "/chennai-conclave" },
 
     // { label: "Sustainability", href: "/sustainability" },
   ];

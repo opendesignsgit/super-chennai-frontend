@@ -523,11 +523,11 @@ function App() {
     location.pathname === "/contest/hotshots-photography-contest";
   // const hideOnBlog = location.pathname === "/contest/blog/:slug";
 
-  const hideOncovlaves = location.pathname === "/contest/Conclave";
+  const hideOncovlaves = location.pathname === "/chennai-conclave";
 
 
  const hideNewsletter =
-    location.pathname === "/contest/Conclave";
+    location.pathname === "/chennai-conclave";
 
 
 
@@ -800,7 +800,7 @@ function App() {
               element={<HotshotChennaiContest />}
             />
 
-            <Route path="/contest/conclave" element={<Conclave />} />
+            <Route path="/chennai-conclave" element={<Conclave />} />
 
             {/* conclave */}
             <Route path="/admin-superchennai" element={<AdminView />} />

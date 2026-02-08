@@ -7591,7 +7591,7 @@ export const panesContent = [
     genre: "",
     venue: "@barrocco22.adyar (Adyar branch)",
     trendingDetails: `
-  Meet Chennai’s cutest pudding! The Jiggly Cat Pudding wiggles and jiggles when you shake it, making it a fun treat for both kids and adults. With a mild coconut flavor, it’s as delicious as it is adorable — almost too cute to eat!
+      Meet Chennai’s cutest pudding! The Jiggly Cat Pudding wiggles and jiggles when you shake it, making it a fun treat for both kids and adults. With a mild coconut flavor, it’s as delicious as it is adorable — almost too cute to eat!
     `,
     TrendingLink: "https://www.instagram.com/reel/C3heSbhrhMt/?hl=en ",
   },
@@ -7875,6 +7875,9 @@ Focus on quality, flavor, and presentation
      Featuring: DJ • Dhol • Photobooth • Glitters • Decor • Live Singer
      Offline tickets launching soon!  Tickets: Live on ClubInn`,
   },
+
+
+
 ];
 
 export const prideofchennaidata = [

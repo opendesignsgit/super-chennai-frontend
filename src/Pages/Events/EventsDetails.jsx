@@ -34,7 +34,8 @@ export const partners = [
   { id: 17, image: "/images/credai/Sreerosh-Properties-Logo.webp" },
   { id: 18, image: "/images/credai/Sri Lakshmi Homes Logo.webp" },
 
-  { id: 19, image: "/images/credai/STEPSTONE LOGO.webp" },
+
+  { id: 19, image: "/images/credai/STEPSSTONE LOGO.webp" },
   { id: 20, image: "/images/credai/TRAVENTURE LOGO TM FINAL.webp" },
   { id: 21, image: "/images/credai/True Value Homes - TVH Logo.webp" },
   { id: 22, image: "/images/credai/Tulive Logo.webp" },
@@ -50,7 +51,7 @@ export const partners = [
   { id: 32, image: "/images/credai/Voora Logo.webp" },
   { id: 33, image: "/images/credai/wisdom logo.webp" },
   { id: 34, image: "/images/credai/Adityaram-group.webp" },
-  { id: 35, image: "/images/credai/AKB Logo - Final.webp" },
+  { id: 35, image: "/images/credai/AKB Logo - FInal.webp" },
   { id: 36, image: "/images/credai/ALAMO XS REAL.webp" },
 
   { id: 37, image: "/images/credai/alliance-group-logo.webp" },
@@ -59,7 +60,7 @@ export const partners = [
   { id: 40, image: "/images/credai/Ashok Nandavanam Logo.webp" },
   { id: 41, image: "/images/credai/Asset Tree.webp" },
   { id: 42, image: "/images/credai/BBCL LOGO.webp" },
-  { id: 43, image: "/images/credai/Bhaggiyam Logo New.webp" },
+  { id: 43, image: "/images/credai/Bhaggyam Logo New.webp" },
   { id: 44, image: "/images/credai/Brigade new logo 2025.webp" },
   { id: 45, image: "/images/credai/BSCPL.webp" },
   { id: 46, image: "/images/credai/CasaGrand Logo.webp" },
@@ -74,15 +75,15 @@ export const partners = [
 
   { id: 55, image: "/images/credai/Harmony Logo.webp" },
   { id: 56, image: "/images/credai/Isha Homes Logo.webp" },
-  { id: 57, image: "/images/credai/lyra_LOGO.webp" },
+  { id: 57, image: "/images/credai/Iyra_LOGO.webp" },
   { id: 58, image: "/images/credai/Jain Logo.webp" },
   { id: 59, image: "/images/credai/JONES LOGO.webp" },
   { id: 60, image: "/images/credai/Kerry Estate - Altis logo.webp" },
-  { id: 61, image: "/images/credai/KG Logo.webp" },
-  { id: 62, image: "/images/credai/KGEYES logo - Jan 24.webp" },
+  { id: 61, image: "/images/credai/KG  Logo.webp" },
+  { id: 62, image: "/images/credai/KGEYES logo - Jan '24.webp" },
   { id: 63, image: "/images/credai/Kochar Homes new logo.webp" },
   { id: 64, image: "/images/credai/lancor logo.webp" },
-  { id: 65, image: "/images/credai/Lifestyle Logo Full Black.webp" },
+  { id: 65, image: "/images/credai/Lifestyle Logo Full Black Vertical.webp" },
   { id: 66, image: "/images/credai/LML Homes LLP.webp" },
   { id: 67, image: "/images/credai/Mahindra_CMYK Logo.webp" },
   { id: 68, image: "/images/credai/Malles Logo.webp" },
@@ -91,17 +92,17 @@ export const partners = [
   { id: 71, image: "/images/credai/MP_developers logo.webp" },
   { id: 72, image: "/images/credai/Navin's Logo.webp" },
 
-  { id: 73, image: "/images/partnersLogo/NCC Urban.webp" },
-  { id: 74, image: "/images/partnersLogo/Nest Logo.webp" },
-  { id: 75, image: "/images/partnersLogo/Newry Properties Logo.webp" },
-  { id: 76, image: "/images/partnersLogo/Nova Logo.webp" },
-  { id: 77, image: "/images/partnersLogo/Nu-Tech logo.webp" },
-  { id: 78, image: "/images/partnersLogo/ocean logo.webp" },
-  { id: 79, image: "/images/partnersLogo/Omshakthy logo.webp" },
-  { id: 80, image: "/images/partnersLogo/Pacifica Logo.webp" },
-  { id: 81, image: "/images/partnersLogo/Pragnya_EP_Logo.webp" },
-  { id: 82, image: "/images/partnersLogo/Prestige Group_Master Logo_Light.webp" },
-  { id: 83, image: "/images/partnersLogo/Puravankara Logo.webp" }
+  { id: 73, image: "/images/credai/NCC Urban.webp" },
+  { id: 74, image: "/images/credai/Nest Logo.webp" },
+  { id: 75, image: "/images/credai/Newry Properties Logo.webp" },
+  { id: 76, image: "/images/credai/Nova Logo.webp" },
+  { id: 77, image: "/images/credai/Nu-Tech logo.webp" },
+  { id: 78, image: "/images/credai/ocean logo.webp" },
+  { id: 79, image: "/images/credai/Omshakthy logo.webp" },
+  { id: 80, image: "/images/credai/Pacifica Logo.webp" },
+  { id: 81, image: "/images/credai/Pragnya_EP_Logo.webp" },
+  { id: 82, image: "/images/credai/Prestige Group_Master Logo_Light.webp" },
+  { id: 83, image: "/images/credai/Puravankara Logo.webp" }
 
 ];
 
@@ -293,7 +294,7 @@ export default function EventsDetails() {
   const settings = {
     dots: false,
     autoplay: true,
-    autoplaySpeed: 1000000,
+    autoplaySpeed: 1000,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -510,7 +511,7 @@ export default function EventsDetails() {
       </section>
 
       {/*============= PARTNERS ================ */}
-      {/* {slug === "credai-chennai-fairpro-2026" && (
+      {slug === "credai-chennai-fairpro-2026" && (
         <div className="NewsLetterPage ">
           <div className="exploreSldierBg">
             <div className="container max-w-7xl mx-auto px-4">
@@ -540,7 +541,7 @@ export default function EventsDetails() {
             </div>
           </div>
         </div>
-      )} */}
+      )}
     </>
   );
 }

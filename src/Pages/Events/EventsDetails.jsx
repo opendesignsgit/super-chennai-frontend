@@ -539,7 +539,7 @@ export default function EventsDetails() {
                 </Slider>
 
 
-                 {partners.map((card) => (
+                 {/* {partners.map((card) => (
                     <div
                       key={card.id}
                       className="ExplorePageSliderImage cursor-pointer px-2 flex justify-center items-center"
@@ -553,7 +553,7 @@ export default function EventsDetails() {
                         />
                       </div>
                     </div>
-                  ))}
+                  ))} */}
               </div>
             </div>
           </div>

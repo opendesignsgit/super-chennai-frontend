@@ -15,7 +15,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const partners = [
-  { id: 1, image: "/images/credai/Radiance Logo.webp" },
+  { id: 1, name:"radiance", image: "/images/credai/Radiance Logo.webp" },
   { id: 2, image: "/images/credai/Rajaratnam Logo - RCPL.webp" },
   { id: 3, image: "/images/credai/Rajkam_Logo.webp" },
   { id: 4, image: "/images/credai/Rajparis Logo.webp" },
@@ -537,6 +537,23 @@ export default function EventsDetails() {
                     </div>
                   ))}
                 </Slider>
+
+
+                 {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer px-2 flex justify-center items-center"
+                      onClick={() => setSelectedCard(card)}
+                    >
+                      <div className="relative rounded-lg overflow-hidden w-full h-[200px] flex justify-center items-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="max-h-full max-w-full object-contain"
+                        />
+                      </div>
+                    </div>
+                  ))}
               </div>
             </div>
           </div>

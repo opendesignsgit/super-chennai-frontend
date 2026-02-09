@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useEventBySlug } from "./Hooks/UseEvents";
@@ -9,12 +10,108 @@ import { formatEventTime } from "./Utils/formatTime";
 import FormattedEventDates from "./Utils/dateFormatter";
 import EventDetailpageSkeleton from "./Components/Loader/DetailpageSkelton";
 import NotFound from "../GlobalComponents/NotFound";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+export const partners = [
+  { id: 1, image: "/images/credai/Radiance Logo.webp" },
+  { id: 2, image: "/images/credai/Rajaratnam Logo - RCPL.webp" },
+  { id: 3, image: "/images/credai/Rajkam_Logo.webp" },
+  { id: 4, image: "/images/credai/Rajparis Logo.webp" },
+  { id: 5, image: "/images/credai/Ramy Wavoo Developer - RWD Logo.webp" },
+  { id: 6, image: "/images/credai/Raunaq Logo - file.webp" },
+  { id: 7, image: "/images/credai/RedBrick Logo.webp" },
+  { id: 8, image: "/images/credai/Ruby Logo.webp" },
+  { id: 9, image: "/images/credai/S&P logo Final with colour code.webp" },
+  { id: 10, image: "/images/credai/Sameera_Logo.webp" },
+  { id: 11, image: "/images/credai/Shriram LOGO NEW colored version.webp" },
+  { id: 12, image: "/images/credai/Sidharth NEW LOGO.webp" },
+  { id: 13, image: "/images/credai/silversky final logo.webp" },
+  { id: 14, image: "/images/credai/South India Shelters - SIS NEW LOGO.webp" },
+  { id: 15, image: "/images/credai/SPR INDIA BUILDING WITH PURPOSE_Horizontal1.webp" },
+  { id: 16, image: "/images/credai/Sree Venkateswara Homes Logo.webp" },
+  { id: 17, image: "/images/credai/Sreerosh-Properties-Logo.webp" },
+  { id: 18, image: "/images/credai/Sri Lakshmi Homes Logo.webp" },
+
+  { id: 19, image: "/images/credai/STEPSTONE LOGO.webp" },
+  { id: 20, image: "/images/credai/TRAVENTURE LOGO TM FINAL.webp" },
+  { id: 21, image: "/images/credai/True Value Homes - TVH Logo.webp" },
+  { id: 22, image: "/images/credai/Tulive Logo.webp" },
+  { id: 23, image: "/images/credai/TVS Emerald logo.webp" },
+  { id: 24, image: "/images/credai/Urban Tree_Logo.webp" },
+  { id: 25, image: "/images/credai/urbando-new.webp" },
+  { id: 26, image: "/images/credai/Urbanrise_WaterLeaves_Final_Full_sized.webp" },
+  { id: 27, image: "/images/credai/VGK_Logo.webp" },
+  { id: 28, image: "/images/credai/VGN LOGO.webp" },
+  { id: 29, image: "/images/credai/vijayraja logo hi - res.webp" },
+  { id: 30, image: "/images/credai/viva logo high res.webp" },
+  { id: 31, image: "/images/credai/VNR_LOGO.webp" },
+  { id: 32, image: "/images/credai/Voora Logo.webp" },
+  { id: 33, image: "/images/credai/wisdom logo.webp" },
+  { id: 34, image: "/images/credai/Adityaram-group.webp" },
+  { id: 35, image: "/images/credai/AKB Logo - Final.webp" },
+  { id: 36, image: "/images/credai/ALAMO XS REAL.webp" },
+
+  { id: 37, image: "/images/credai/alliance-group-logo.webp" },
+  { id: 38, image: "/images/credai/Arihant-Logo-Main.webp" },
+  { id: 39, image: "/images/credai/Arun Excello LOGO.webp" },
+  { id: 40, image: "/images/credai/Ashok Nandavanam Logo.webp" },
+  { id: 41, image: "/images/credai/Asset Tree.webp" },
+  { id: 42, image: "/images/credai/BBCL LOGO.webp" },
+  { id: 43, image: "/images/credai/Bhaggiyam Logo New.webp" },
+  { id: 44, image: "/images/credai/Brigade new logo 2025.webp" },
+  { id: 45, image: "/images/credai/BSCPL.webp" },
+  { id: 46, image: "/images/credai/CasaGrand Logo.webp" },
+  { id: 47, image: "/images/credai/DAC Developers Pvt Ltd Logo.webp" },
+  { id: 48, image: "/images/credai/Doshi housing only Logo.webp" },
+  { id: 49, image: "/images/credai/DRA Logo - NEW.webp" },
+  { id: 50, image: "/images/credai/EK HOMES LOGO.webp" },
+  { id: 51, image: "/images/credai/Er Deva logo.webp" },
+  { id: 52, image: "/images/credai/G square new logo.webp" },
+  { id: 53, image: "/images/credai/gp logo.webp" },
+  { id: 54, image: "/images/credai/GTK logo.webp" },
+
+  { id: 55, image: "/images/credai/Harmony Logo.webp" },
+  { id: 56, image: "/images/credai/Isha Homes Logo.webp" },
+  { id: 57, image: "/images/credai/lyra_LOGO.webp" },
+  { id: 58, image: "/images/credai/Jain Logo.webp" },
+  { id: 59, image: "/images/credai/JONES LOGO.webp" },
+  { id: 60, image: "/images/credai/Kerry Estate - Altis logo.webp" },
+  { id: 61, image: "/images/credai/KG Logo.webp" },
+  { id: 62, image: "/images/credai/KGEYES logo - Jan 24.webp" },
+  { id: 63, image: "/images/credai/Kochar Homes new logo.webp" },
+  { id: 64, image: "/images/credai/lancor logo.webp" },
+  { id: 65, image: "/images/credai/Lifestyle Logo Full Black.webp" },
+  { id: 66, image: "/images/credai/LML Homes LLP.webp" },
+  { id: 67, image: "/images/credai/Mahindra_CMYK Logo.webp" },
+  { id: 68, image: "/images/credai/Malles Logo.webp" },
+  { id: 69, image: "/images/credai/Manju Groups Logo.webp" },
+  { id: 70, image: "/images/credai/Marutham Group.webp" },
+  { id: 71, image: "/images/credai/MP_developers logo.webp" },
+  { id: 72, image: "/images/credai/Navin's Logo.webp" },
+
+  { id: 73, image: "/images/partnersLogo/NCC Urban.webp" },
+  { id: 74, image: "/images/partnersLogo/Nest Logo.webp" },
+  { id: 75, image: "/images/partnersLogo/Newry Properties Logo.webp" },
+  { id: 76, image: "/images/partnersLogo/Nova Logo.webp" },
+  { id: 77, image: "/images/partnersLogo/Nu-Tech logo.webp" },
+  { id: 78, image: "/images/partnersLogo/ocean logo.webp" },
+  { id: 79, image: "/images/partnersLogo/Omshakthy logo.webp" },
+  { id: 80, image: "/images/partnersLogo/Pacifica Logo.webp" },
+  { id: 81, image: "/images/partnersLogo/Pragnya_EP_Logo.webp" },
+  { id: 82, image: "/images/partnersLogo/Prestige Group_Master Logo_Light.webp" },
+  { id: 83, image: "/images/partnersLogo/Puravankara Logo.webp" }
+
+];
+
+
+
 export default function EventsDetails() {
   const { slug } = useParams();
   const { event, loading } = useEventBySlug(slug);
   const API_URL = `${API_BASE_URL}`;
   const [showDatesModal, setShowDatesModal] = React.useState(false);
-
 
   if (loading) {
     return <EventDetailpageSkeleton />;
@@ -77,8 +174,8 @@ export default function EventsDetails() {
                 day: "numeric",
                 month: "short",
                 year: "numeric",
-              })
-            )
+              }),
+            ),
         ),
       ].join(" | ")
     : null;
@@ -118,73 +215,98 @@ export default function EventsDetails() {
     );
   }
 
-   const ARahumanWEBSchema = {
-     "@context": "https://schema.org",
-     "@type": "Event",
-     name: "The Wonderment Tour AR Rahman Live in Chennai",
-     description: "AR Rahman Concert",
-     image:
-       "https://demo.superchennai.com/api/media/file/The%20Wonderment%20Tour%20A.R.Rahman%20Live%20in%20Chennai.jpg",
-     startDate: "2026-02-14T18:30",
-     endDate: "2026-02-14T21:45",
-     eventStatus: "https://schema.org/EventScheduled",
-     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-     location: {
-       "@type": "Place",
-       name: "Jawaharlal Nehru Stadium",
-       address: {
-         "@type": "PostalAddress",
-         streetAddress: "",
-         addressLocality: "Chennai",
-         postalCode: "600003",
-         addressCountry: "IN",
-       },
-     },
-     performer: {
-       "@type": "MusicGroup",
-       name: "AR Rahman",
-     },
-   };
+  const ARahumanWEBSchema = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "The Wonderment Tour AR Rahman Live in Chennai",
+    description: "AR Rahman Concert",
+    image:
+      "https://demo.superchennai.com/api/media/file/The%20Wonderment%20Tour%20A.R.Rahman%20Live%20in%20Chennai.jpg",
+    startDate: "2026-02-14T18:30",
+    endDate: "2026-02-14T21:45",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: {
+      "@type": "Place",
+      name: "Jawaharlal Nehru Stadium",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "",
+        addressLocality: "Chennai",
+        postalCode: "600003",
+        addressCountry: "IN",
+      },
+    },
+    performer: {
+      "@type": "MusicGroup",
+      name: "AR Rahman",
+    },
+  };
 
-   const CREDAISCHEMA = {
-     "@context": "https://schema.org",
-     "@type": "Event",
-     name: "Credai Chennai Fairpro 2026",
-     description:
-       "Visit CREDAI Chennai Fairpro 2026 to explore 500+ properties from 80+ developers. Find homes, plots & villas with exclusive offers. Get your FREE VIP Pass now.",
-     image:
-       "https://demo.superchennai.com/api/media/file/CREDAI%20FAIRPRO%202026.jpeg",
-     startDate: "2026-02-20T10:00",
-     endDate: "2026-02-22T21:00",
-     eventStatus: "https://schema.org/EventScheduled",
-     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-     location: {
-       "@type": "Place",
-       name: "Chennai Trade Centre",
-       address: {
-         "@type": "PostalAddress",
-         streetAddress: "",
-         addressLocality: "Chennai",
-         postalCode: "600089",
-         addressCountry: "IN",
-       },
-     },
-     performer: {
-       "@type": "PerformingGroup",
-       name: "Credai Chennai",
-     },
-     offers: {
-       "@type": "Offer",
-       name: "Credai Chennai Fairpro 2026",
-       price: "0",
-       priceCurrency: "INR",
-       validFrom: "2026-02-07",
-       url: "https://credai.eventink.in/register.html",
-       availability: "https://schema.org/InStock",
-     },
-   };
+  const CREDAISCHEMA = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "Credai Chennai Fairpro 2026",
+    description:
+      "Visit CREDAI Chennai Fairpro 2026 to explore 500+ properties from 80+ developers. Find homes, plots & villas with exclusive offers. Get your FREE VIP Pass now.",
+    image:
+      "https://demo.superchennai.com/api/media/file/CREDAI%20FAIRPRO%202026.jpeg",
+    startDate: "2026-02-20T10:00",
+    endDate: "2026-02-22T21:00",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: {
+      "@type": "Place",
+      name: "Chennai Trade Centre",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "",
+        addressLocality: "Chennai",
+        postalCode: "600089",
+        addressCountry: "IN",
+      },
+    },
+    performer: {
+      "@type": "PerformingGroup",
+      name: "Credai Chennai",
+    },
+    offers: {
+      "@type": "Offer",
+      name: "Credai Chennai Fairpro 2026",
+      price: "0",
+      priceCurrency: "INR",
+      validFrom: "2026-02-07",
+      url: "https://credai.eventink.in/register.html",
+      availability: "https://schema.org/InStock",
+    },
+  };
 
 
+  // ######## SCROLLER FOR PARTNER SETTINGS############  TEMPORRY SCROLL 
+
+  const PrevArrow = ({ onClick }) => (
+    <div onClick={onClick} className="ExplorePageLeftButton"></div>
+  );
+  const NextArrow = ({ onClick }) => (
+    <div className="ExplorePageRightButton" onClick={onClick}></div>
+  );
+  const settings = {
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 1000000,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    responsive: [
+      { breakpoint: 1100, settings: { slidesToShow: 3 } },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      { breakpoint: 480, settings: { slidesToShow: 1 } },
+    ],
+  };
 
   return (
     <>
@@ -386,6 +508,39 @@ export default function EventsDetails() {
           </div>
         </div>
       </section>
+
+      {/*============= PARTNERS ================ */}
+      {/* {slug === "credai-chennai-fairpro-2026" && (
+        <div className="NewsLetterPage ">
+          <div className="exploreSldierBg">
+            <div className="container max-w-7xl mx-auto px-4">
+              <div className="exploreMoreSectionContent">
+                <h4>Our Participants</h4>
+              </div>
+
+              <div className="exploreSldierSection">
+                <Slider {...settings}>
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer px-2 flex justify-center items-center"
+                      onClick={() => setSelectedCard(card)}
+                    >
+                      <div className="relative rounded-lg overflow-hidden w-full h-[200px] flex justify-center items-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="max-h-full max-w-full object-contain"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+            </div>
+          </div>
+        </div>
+      )} */}
     </>
   );
 }

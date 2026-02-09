@@ -6,6 +6,7 @@ import Pagination from "../components/Pagination";
 import "../styles.css";
 import { useEffect } from "react";
 import { useArticlePageAds } from "../hooks/useArticlePageAds";
+import ArticleSkeleton from "../components/ArticleSkeleton";
 
 /* ==============================
    AD COMPONENTS
@@ -13,34 +14,6 @@ import { useArticlePageAds } from "../hooks/useArticlePageAds";
 
 const withBaseUrl = (url) =>
   url ? `${API_BASE_URL}${url}` : "/images/placeholder.jpg";
-
-
-// const AdBox = ({ ads, onAllClosed }) => {
-//   const [visibleAds, setVisibleAds] = useState([]);
-//   useEffect(() => {
-//     setVisibleAds(ads || []);
-//   }, [ads]);
-
-//   if (!visibleAds.length) {
-//     onAllClosed?.();
-//     return null;
-//   }
-
-//   return (
-//     <div className="sticky top-6 space-y-4">
-//       {visibleAds.map((ad) => (
-//         <SingleAdCard
-//           key={ad.id}
-//           ad={ad}
-//           onClose={() =>
-//             setVisibleAds((prev) => prev.filter((a) => a.id !== ad.id))
-//           }
-//         />
-//       ))}
-//     </div>
-//   );
-// };
-
 
 const AdBox = ({ ads }) => {
   const [visibleAds, setVisibleAds] = useState([]);
@@ -65,7 +38,6 @@ const AdBox = ({ ads }) => {
     </div>
   );
 };
-
 
 const SingleAdCard = ({ ad, onClose }) => {
   return (
@@ -170,14 +142,15 @@ const TopAdCard = ({ ad }) => {
   );
 };
 
-
 /* ==============================
    PAGE
 ============================== */
 
 export default function ArticleListPage() {
-  const { ads: articleAds, loading: adsLoading } = useArticlePageAds();
+
   
+  const { ads: articleAds, loading: adsLoading } = useArticlePageAds();
+
   const structuredArticleAds = articleAds?.reduce((acc, ad) => {
     const pos = ad.position || "right";
     const existing = acc.find((a) => a.position === pos);
@@ -198,53 +171,48 @@ export default function ArticleListPage() {
 
   const [showLeftAds, setShowLeftAds] = useState(true);
   const [showRightAds, setShowRightAds] = useState(true);
+  const ARTICLES_PER_PAGE = 1;
+
+
   const [page, setPage] = useState(1);
-  const { featured,articles,totalPages, loading, ads: embeddedAds,} = useArticles(page);
-console.log("RAW articleAds", articleAds);
-  const ads = structuredArticleAds;
-  console.log("structuredArticleAds",structuredArticleAds)
-
-
-  let leftAds = ads
-  ?.filter(a => a.position === "left")
-  .flatMap(a => a.ads) || [];
-
-let rightAds = ads
-  ?.filter(a => a.position === "right")
-  .flatMap(a => a.ads) || [];
-
-if (rightAds.length === 0 && leftAds.length > 1) {
-  rightAds = leftAds.splice(1);
-}
-
-
-const topAds = ads
-  ?.filter((a) => a.position === "top")
-  .flatMap((a) => a.ads);
-
-const bottomAds = ads
-  ?.filter((a) => a.position === "bottom")
-  .flatMap((a) => a.ads);
-
-  const mainCol = showLeftAds && showRightAds  ? "lg:col-span-8": showLeftAds || showRightAds  ? "lg:col-span-10" : "lg:col-span-12";
-
-
+    const { featured, articles, loading, ads: embeddedAds, } = useArticles();
 
    
-    
-      
-      
-       
+   const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+
+   const paginatedArticles = articles.slice(
+     (page - 1) * ARTICLES_PER_PAGE,
+     page * ARTICLES_PER_PAGE,
+   );
+
+   
+
+  const ads = structuredArticleAds;
+  let leftAds =
+    ads?.filter((a) => a.position === "left").flatMap((a) => a.ads) || [];
+
+  let rightAds =
+    ads?.filter((a) => a.position === "right").flatMap((a) => a.ads) || [];
+
+  if (rightAds.length === 0 && leftAds.length > 1) {
+    rightAds = leftAds.splice(1);
+  }
+  const topAds = ads?.filter((a) => a.position === "top").flatMap((a) => a.ads);
+
+  const bottomAds = ads
+    ?.filter((a) => a.position === "bottom")
+    .flatMap((a) => a.ads);
+  const mainCol =
+    showLeftAds && showRightAds
+      ? "lg:col-span-8"
+      : showLeftAds || showRightAds
+        ? "lg:col-span-10"
+        : "lg:col-span-12";
 
 
 
 
-
-
-
-
-
-//##################### MORE SECTION DTATA STRING ##########################################
+  //##################### MORE SECTION DTATA STRING ##########################################
   const mostViewedArticles = [...articles]
     .sort((a, b) => (b.views ?? 0) - (a.views ?? 0))
     .slice(0, 5);
@@ -256,6 +224,8 @@ const bottomAds = ads
       return scoreB - scoreA;
     })
     .slice(0, 6);
+  const inlineAdIndex =  embeddedAds?.length > 0 ? (page - 1) % embeddedAds.length : 0;
+
 
   return (
     <>
@@ -281,18 +251,23 @@ const bottomAds = ads
         </div>
       )}
 
-      <div className="max-w-7xl mx-auto px-4 mt-6 mt-10 mb-10">
+      <div className="max-w-8xl mx-auto px-4 mt-6 mt-10 mb-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          {leftAds?.length > 0 && (
+            <>
+              {/* Mobile & Tablet */}
+              <div className="block lg:hidden mb-6">
+                <AdBox ads={leftAds.slice(0, 1)} />
+              </div>
 
-
-          {showLeftAds && leftAds?.length > 0 && (
-            <div className="hidden lg:block lg:col-span-2">
-              <AdBox ads={leftAds} onAllClosed={() => setShowLeftAds(false)} />
-            </div>
+              {/* Desktop */}
+              {showLeftAds && (
+                <div className="hidden lg:block lg:col-span-2">
+                  <AdBox ads={leftAds} />
+                </div>
+              )}
+            </>
           )}
-
-
-          
 
           <div className={mainCol}>
             {featured && (
@@ -321,20 +296,17 @@ const bottomAds = ads
               </div>
             )}
 
-
-
             {loading ? (
-              <p className="text-center py-10">Loading articles...</p>
+               <ArticleSkeleton count={ARTICLES_PER_PAGE} />
             ) : (
               <>
                 <div className="grid md:grid-cols-3 gap-6">
-                  {articles.map((a, i) => {
+                  {paginatedArticles.map((a, i) => {
                     const image =
                       a.thumbnailImage?.url ||
                       a.heroImage?.url ||
                       "/images/placeholder.jpg";
 
-                   
                     return (
                       <div key={a.id} className="contents">
                         <div className="bg-white rounded-md overflow-hidden">
@@ -358,13 +330,17 @@ const bottomAds = ads
                             min read
                           </p>
                         </div>
-                     
+
+                        {i === 2 && embeddedAds?.length > 0 && (
+                          <div className="md:hidden my-6">
+                            <SingleAdCard ad={embeddedAds[inlineAdIndex]} />
+                          </div>
+                        )}
                       </div>
                     );
                   })}
                 </div>
 
-                {/* Pagination */}
                 <Pagination
                   page={page}
                   totalPages={totalPages}
@@ -408,10 +384,14 @@ const bottomAds = ads
                           {a.excerpt}
                         </p>
 
-                        <div className="flex gap-6 text-xs text-gray-500 mt-4">
-                          <span>👁 {a.views} views</span>
-                          <span>{a.readingTime} min read</span>
-                        </div>
+                        {(a.views > 0 || a.readingTime > 0) && (
+                          <div className="flex gap-6 text-xs text-gray-500 mt-4">
+                            {a.views > 0 && <span>👁 {a.views} views</span>}
+                            {a.readingTime > 0 && (
+                              <span>{a.readingTime} min read</span>
+                            )}
+                          </div>
+                        )}
                       </div>
                     </Link>
                   ))}
@@ -447,10 +427,16 @@ const bottomAds = ads
                           {a.excerpt}
                         </p>
 
-                        <div className="flex justify-between text-xs text-gray-500 mt-2">
-                          <span>👁 {a.views}</span>
-                          <span>{a.readingTime} min read</span>
-                        </div>
+                        {(a.views > 0 || a.readingTime > 0) && (
+                          <div className="flex justify-between text-xs text-gray-500 mt-2">
+                            {a.views > 0 ? <span>👁 {a.views}</span> : <span />}
+                            {a.readingTime > 0 ? (
+                              <span>{a.readingTime} min read</span>
+                            ) : (
+                              <span />
+                            )}
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}
@@ -459,13 +445,20 @@ const bottomAds = ads
             )}
           </div>
 
-          {showRightAds && rightAds?.length > 0 && (
-            <div className="hidden lg:block lg:col-span-2">
-              <AdBox
-                ads={rightAds}
-                onAllClosed={() => setShowRightAds(false)}
-              />
-            </div>
+          {rightAds?.length > 0 && (
+            <>
+              {/* Mobile inline ad after articles */}
+              <div className="block lg:hidden mt-10">
+                <AdBox ads={rightAds.slice(0, 1)} />
+              </div>
+
+              {/* Desktop sidebar */}
+              {showRightAds && (
+                <div className="hidden lg:block lg:col-span-2">
+                  <AdBox ads={rightAds} />
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>

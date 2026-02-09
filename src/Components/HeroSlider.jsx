@@ -30,14 +30,14 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  //     {
-  //   type: "image",
-  //   link: "/contest/hotshots-photography-contest",
-  //   image: "/images/fairpro-homepagenbanner.jpeg",
-  //   image1: "/images/mobile-banner-fairpro.jpeg",
-  //   title: "Credai evant",
-  //   description: "Credai.",
-  // },
+      {
+    type: "image",
+    link: "/contest/hotshots-photography-contest",
+    image: "/images/fairpro-homepagenbanner.jpeg",
+    image1: "/images/mobile-banner-fairpro.jpeg",
+    title: "Credai evant",
+    description: "Credai.",
+  },
   
   {
     type: "image",

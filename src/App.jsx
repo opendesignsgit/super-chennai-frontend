@@ -593,7 +593,7 @@ function App() {
               <img src="/images/threads.png" alt="Twitter" />
             </a>
           </div>
-
+{/* 
           {!hideOnMargazhiPage && (
             <div
               id="menifeto-tab"
@@ -609,7 +609,7 @@ function App() {
                 />
               </a>
             </div>
-          )}
+          )} */}
 
           {!hideOnMargazhiPage && (
             <div

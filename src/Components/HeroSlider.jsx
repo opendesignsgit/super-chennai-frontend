@@ -30,7 +30,16 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-      {
+  {
+    type: "image",
+    link: "/chennai-conclave",
+    image: "/images/conclave-banner.jpeg",
+    image1: "/images/conclave-banner-mobile-banner.jpg.jpeg",
+    title: "conclave evant",
+    description: "conclave.",
+  },
+
+  {
     type: "image",
     link: "/events-in-chennai/credai-chennai-fairpro-2026",
     image: "/images/fairpro-homepagenbanner.jpeg",
@@ -38,7 +47,7 @@ const slides = [
     title: "Credai evant",
     description: "Credai.",
   },
-  
+
   {
     type: "image",
     link: "/contest/hotshots-photography-contest",
@@ -48,10 +57,6 @@ const slides = [
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
 
-
-
-  
-  
   //  {
   //   image: "/images/margazhi-contest-home.jpg",
   //   link: "contest/margazhi-month-photography-contest",

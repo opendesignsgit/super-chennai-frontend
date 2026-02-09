@@ -238,7 +238,14 @@ import KoreanCuisineinChennai from "./Pages/SubPages/VisitPages/Korean-Cuisine-i
 import BlogDetails from "../src/Pages/Blogs/BlogDetails";
 import BlogList from "./../src/Pages/Blogs/BlogList";
 import AllArticleList from "./../src/Pages/Articles/articles"
+
+
 import ArticleListPageTest from "./Pages/testAritlce/pages/ArticleListPage"
+
+import ArticleDetailPage from "./Pages/testAritlce/pages/ArticleDetails"
+
+
+
 
 import ScrollToHashElement from "./Components/ScrollToHashElement";
 
@@ -543,12 +550,12 @@ function App() {
 
           {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-          {/* {isHomePage && showPopup && (
+          {isHomePage && showPopup && (
             <ImagePopup
-              imageUrl="/images/events/mouth-your-manifest.jpeg"
+              imageUrl="/images/conclave-banner-popup.jpeg"
               onClose={() => setShowPopup(false)}
             />
-          )} */}
+          )}
           {/* )} */}
 
           <div
@@ -593,7 +600,7 @@ function App() {
               <img src="/images/threads.png" alt="Twitter" />
             </a>
           </div>
-{/* 
+          {/* 
           {!hideOnMargazhiPage && (
             <div
               id="menifeto-tab"
@@ -670,6 +677,13 @@ function App() {
               path="/ArticleListPageTest"
               element={<ArticleListPageTest />}
             />
+            {/* <Route
+              path="/ArticleDetailPage"
+              element={<ArticleDetailPage />}
+            /> */}
+
+            <Route path="/ArticleDetailPage/:slug" element={<ArticleDetailPage />} />
+
 
             <Route
               path="/chennai-contests"

@@ -1,12 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useArticles } from "../hooks/useArticles";
 import { API_BASE_URL } from "../../../../config";
-import Pagination from "../components/Pagination";
-import "../styles.css";
-import { useEffect } from "react";
-import { useArticlePageAds } from "../hooks/useArticlePageAds";
 import ArticleSkeleton from "../components/ArticleSkeleton";
+import Pagination from "../components/Pagination";
+import { useArticlePageAds } from "../hooks/useArticlePageAds";
+import { useArticles } from "../hooks/useArticles";
+import "../styles.css";
 
 /* ==============================
    AD COMPONENTS
@@ -147,10 +146,7 @@ const TopAdCard = ({ ad }) => {
 ============================== */
 
 export default function ArticleListPage() {
-
-  
   const { ads: articleAds, loading: adsLoading } = useArticlePageAds();
-
   const structuredArticleAds = articleAds?.reduce((acc, ad) => {
     const pos = ad.position || "right";
     const existing = acc.find((a) => a.position === pos);
@@ -165,27 +161,32 @@ export default function ArticleListPage() {
     return acc;
   }, []);
 
-
-
   //################## POSTION ASIGN ###############
 
   const [showLeftAds, setShowLeftAds] = useState(true);
   const [showRightAds, setShowRightAds] = useState(true);
-  const ARTICLES_PER_PAGE = 1;
+  const ARTICLES_PER_PAGE = 3;
+
 
 
   const [page, setPage] = useState(1);
-    const { featured, articles, loading, ads: embeddedAds, } = useArticles();
+  const { articles = [], loading, ads: embeddedAds } = useArticles();
 
-   
-   const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
 
-   const paginatedArticles = articles.slice(
-     (page - 1) * ARTICLES_PER_PAGE,
-     page * ARTICLES_PER_PAGE,
-   );
+  console.log("article data", articles);
 
-   
+  const featuredEventArticle = articles.find((a) => a.isFeatured === true);
+
+
+  const normalArticles = articles.filter(
+    (a) => a.id !== featuredEventArticle?.id,
+  );
+  const totalPages = Math.ceil(normalArticles.length / ARTICLES_PER_PAGE);
+
+  const paginatedArticles = normalArticles.slice(
+    (page - 1) * ARTICLES_PER_PAGE,
+    page * ARTICLES_PER_PAGE,
+  );
 
   const ads = structuredArticleAds;
   let leftAds =
@@ -210,9 +211,8 @@ export default function ArticleListPage() {
         : "lg:col-span-12";
 
 
-
-
   //##################### MORE SECTION DTATA STRING ##########################################
+
   const mostViewedArticles = [...articles]
     .sort((a, b) => (b.views ?? 0) - (a.views ?? 0))
     .slice(0, 5);
@@ -224,18 +224,20 @@ export default function ArticleListPage() {
       return scoreB - scoreA;
     })
     .slice(0, 6);
-  const inlineAdIndex =  embeddedAds?.length > 0 ? (page - 1) % embeddedAds.length : 0;
-
+  const inlineAdIndex =
+    embeddedAds?.length > 0 ? (page - 1) % embeddedAds.length : 0;
 
   return (
     <>
+   
+
       <div className="accaodomationBannerSection relative w-full h-[280px] overflow-hidden">
         <img src="/images/banner-blog.jpg" alt="Blog Banner" />
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Blog</h3>
+            <h3>Articles</h3>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="/blog">Blog</Link>
+              <Link to="/">Home</Link> - <Link to="/blog">Articles</Link>
             </div>
           </div>
         </div>
@@ -270,34 +272,36 @@ export default function ArticleListPage() {
           )}
 
           <div className={mainCol}>
-            {featured && (
+            {featuredEventArticle && (
               <div className="grid lg:grid-cols-2 gap-6 mb-10 items-center ">
                 <div>
                   <p className="text-pink-600 text-sm font-semibold">
-                    {featured.Articlecategory?.label}
+                    {featuredEventArticle.Articlecategory?.label}
                   </p>
                   <h1 className=" themelink-color formheadingtheme-article mt-2">
-                    {featured.title}
+                    {featuredEventArticle.title}
                   </h1>
 
-                  <p className="text-gray-600 mt-3">{featured.excerpt}</p>
+                  <p className="text-gray-600 mt-3">
+                    {featuredEventArticle.excerpt}
+                  </p>
 
                   <p className="text-xs text-gray-500 mt-1">
-                    {featured.populatedAuthors?.[0]?.name} ·{" "}
-                    {featured.readingTime} min read
+                    {featuredEventArticle.populatedAuthors?.[0]?.name} ·{" "}
+                    {featuredEventArticle.readingTime} min read
                   </p>
                 </div>
 
                 <img
-                  src={`${API_BASE_URL}${featured.heroImage?.url || featured.thumbnailImage?.url}`}
-                  alt={featured.title}
+                  src={`${API_BASE_URL}${featuredEventArticle.heroImage?.url || featuredEventArticle.thumbnailImage?.url}`}
+                  alt={featuredEventArticle.title}
                   className="rounded-lg w-full h-[320px] object-cover"
                 />
               </div>
             )}
 
             {loading ? (
-               <ArticleSkeleton count={ARTICLES_PER_PAGE} />
+              <ArticleSkeleton count={ARTICLES_PER_PAGE} />
             ) : (
               <>
                 <div className="grid md:grid-cols-3 gap-6">

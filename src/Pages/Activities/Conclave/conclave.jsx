@@ -227,6 +227,37 @@ const infoData = [
   },
 ];
 
+const ConclaveSchmea = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: "superchennai conclave",
+  description:
+    "An exclusive gathering of visionary leaders, forward-thinking innovators, and influential changemakers, coming together to exchange transformative ideas, engage in powerful conversations, and collectively shape the future of Chennai.",
+  image: "https://www.superchennai.com/images/events/conclave-banner.jpeg",
+  startDate: "2026-02-19T09:30",
+  endDate: "2026-02-19",
+  eventStatus: "https://schema.org/EventScheduled",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  location: {
+    "@type": "Place",
+    name: "ITC Welcome Hotel",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Cathedral Road",
+      addressLocality: "Chennai",
+      postalCode: "600086",
+      addressCountry: "IN",
+    },
+  },
+  performer: {
+    "@type": "PerformingGroup",
+    name: "CEO",
+  },
+};
+
+
+
+
 export default function Conclave() {
   const navigate = useNavigate();
   const countryCodes = [
@@ -430,6 +461,12 @@ export default function Conclave() {
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/chennai-conclave`}
         />
+
+         <script type="application/ld+json">
+            {JSON.stringify(ConclaveSchmea)}
+          </script>
+
+
       </Helmet>
 
       {/* ============== Banner ============ */}

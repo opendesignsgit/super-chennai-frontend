@@ -1,30 +1,65 @@
-export default function ArticleSkeleton({ count = 3 }) {
+export default function ArticlePageSkeleton() {
   return (
-    <div className="grid md:grid-cols-3 gap-6">
-      {Array.from({ length: count }).map((_, i) => (
-        <div
-          key={i}
-          className="bg-white rounded-md overflow-hidden animate-pulse"
-        >
-          {/* Image */}
-          <div className="w-full h-[320px] bg-gray-200 rounded-lg" />
+    <div className="container mx-auto px-4 py-6 animate-pulse">
+      
+      {/* Page Title */}
+      <div className="h-8 w-64 bg-gray-200 rounded mb-6" />
 
-          {/* Category */}
-          <div className="h-4 w-24 bg-gray-200 rounded mt-4 mx-2" />
+      <div className="grid lg:grid-cols-4 gap-6">
+        
+        {/* LEFT: Articles */}
+        <div className="lg:col-span-3 space-y-6">
+          
+          {/* Articles Grid */}
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-md overflow-hidden"
+              >
+                {/* Image */}
+                <div className="w-full h-[280px] bg-gray-200" />
 
-          {/* Title */}
-          <div className="h-5 w-3/4 bg-gray-200 rounded mt-3 mx-2" />
+                <div className="p-3 space-y-3">
+                  {/* Category */}
+                  <div className="h-4 w-20 bg-gray-200 rounded" />
 
-          {/* Excerpt */}
-          <div className="space-y-2 mt-3 mx-2">
-            <div className="h-4 bg-gray-200 rounded w-full" />
-            <div className="h-4 bg-gray-200 rounded w-5/6" />
+                  {/* Title */}
+                  <div className="h-5 w-full bg-gray-200 rounded" />
+                  <div className="h-5 w-3/4 bg-gray-200 rounded" />
+
+                  {/* Excerpt */}
+                  <div className="space-y-2">
+                    <div className="h-4 w-full bg-gray-200 rounded" />
+                    <div className="h-4 w-5/6 bg-gray-200 rounded" />
+                  </div>
+
+                  {/* Meta */}
+                  <div className="h-3 w-24 bg-gray-200 rounded" />
+                </div>
+              </div>
+            ))}
           </div>
 
-          {/* Meta */}
-          <div className="h-3 w-32 bg-gray-200 rounded mt-3 mb-4 mx-2" />
+          {/* Pagination Skeleton */}
+          <div className="flex justify-center gap-3 pt-6">
+            <div className="h-9 w-9 bg-gray-200 rounded" />
+            <div className="h-9 w-9 bg-gray-200 rounded" />
+            <div className="h-9 w-9 bg-gray-200 rounded" />
+          </div>
         </div>
-      ))}
+
+        {/* RIGHT: Sidebar / Ads */}
+        <div className="space-y-6 hidden lg:block">
+          <div className="h-[250px] bg-gray-200 rounded" />
+          <div className="h-[250px] bg-gray-200 rounded" />
+          <div className="h-[250px] bg-gray-200 rounded" />
+        </div>
+
+      </div>
     </div>
   );
 }
+
+
+

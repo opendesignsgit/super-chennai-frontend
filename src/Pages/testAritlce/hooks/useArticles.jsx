@@ -18,7 +18,7 @@ export const useArticles = (page) => {
   const [ads, setAds] = useState([]);
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(true);
-
+ 
   useEffect(() => {
     const loadData = async () => {
       setLoading(true);

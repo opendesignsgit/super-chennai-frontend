@@ -511,7 +511,7 @@ export default function Conclave() {
                   <span>Venue</span>
                 </div>
                 <span className="font-semibold block mt-1">
-                  ITC WelcomHotel, Chennai
+                  ITC Welcome Hotel, Chennai
                 </span>
               </div>
             </div>
@@ -860,7 +860,7 @@ export default function Conclave() {
               Time: 09:30 AM Onwards
               <br />
               <span className="mx-2 text-slate-300">|</span>
-              ITC WelcomHotel, Chennai
+              ITC Welcome Hotel, Chennai
             </p>
 
             <button

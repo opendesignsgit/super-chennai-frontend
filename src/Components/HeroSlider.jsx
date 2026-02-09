@@ -32,7 +32,7 @@ const slides = [
 
       {
     type: "image",
-    link: "/contest/hotshots-photography-contest",
+    link: "/events-in-chennai/credai-chennai-fairpro-2026",
     image: "/images/fairpro-homepagenbanner.jpeg",
     image1: "/images/mobile-banner-fairpro.jpeg",
     title: "Credai evant",

@@ -543,12 +543,12 @@ function App() {
 
           {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-          {isHomePage && showPopup && (
+          {/* {isHomePage && showPopup && (
             <ImagePopup
               imageUrl="/images/events/mouth-your-manifest.jpeg"
               onClose={() => setShowPopup(false)}
             />
-          )}
+          )} */}
           {/* )} */}
 
           <div

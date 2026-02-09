@@ -404,29 +404,33 @@ export default function Conclave() {
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
-            <Helmet>
-              <title>Hey Chennaiites! It’s your time to talk about Chennai!</title>
-              <meta
-                name="description"
-                content="Be part of the Super Chennai Conclave, a citizen-driven space to discuss Chennai’s identity, innovation, culture, and future development.."
-              />
-              <meta
-                property="og:title"
-                content="Hey Chennaiites! It’s your time to talk about Chennai!"
-              />
-              <meta
-                property="og:description"
-                content="Be part of the Super Chennai Conclave, a citizen-driven space to discuss Chennai’s identity, innovation, culture, and future development.."
-              />
-              <meta
-                property="og:image"
-                content="https://www.superchennai.com/images/Picture1.png"
-              />
-              <meta
-                property="og:url"
-                content="https://www.superchennai.com/images/Picture1.png"
-              />
-            </Helmet>
+      <Helmet>
+        <title>Hey Chennaiites! It’s your time to talk about Chennai!</title>
+        <meta
+          name="description"
+          content="Be part of the Super Chennai Conclave, a citizen-driven space to discuss Chennai’s identity, innovation, culture, and future development.."
+        />
+        <meta
+          property="og:title"
+          content="Hey Chennaiites! It’s your time to talk about Chennai!"
+        />
+        <meta
+          property="og:description"
+          content="Be part of the Super Chennai Conclave, a citizen-driven space to discuss Chennai’s identity, innovation, culture, and future development.."
+        />
+        <meta
+          property="og:image"
+          content="https://www.superchennai.com/images/Picture1.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.superchennai.com/images/Picture1.png"
+        />
+        <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/chennai-conclave`}
+        />
+      </Helmet>
 
       {/* ============== Banner ============ */}
 
@@ -454,7 +458,8 @@ export default function Conclave() {
         <div className=" mx-auto px-6 lg:px-20">
           <div className="max-w-5xl mx-auto text-center ">
             <div className="InvestChennaiContent-conclaves">
-              <h3>An Exclusive Chennai Conclave</h3>
+              <h1 class="hidden">Super Chennai Conclave</h1>
+              <h3>Super Chennai Conclave</h3>
               <p className="text-gray-700 text-lg leading-relaxed">
                 An exclusive gathering of visionary leaders, forward-thinking
                 innovators, and influential changemakers, coming together to
@@ -543,8 +548,8 @@ export default function Conclave() {
               className="w-[150px] h-[500px] object-cover rounded-lg"
             />
             <div className="volunteeerMainContent">
-              <h3>ABOUT CONCLAVE</h3>
-
+              <h2 class="hidden">Chennai CONCLAVE</h2>
+              <h3>Chennai CONCLAVE</h3>
               <p className="paraZeroVolunteerSection">
                 The Super Chennai Conclave is a one-day strategic gathering
                 designed to shape the future of Chennai through collaboration,
@@ -725,7 +730,7 @@ export default function Conclave() {
                 className="p-6 md:p-10 space-y-4 max-h-[90vh] overflow-y-auto"
               >
                 <h2 className="themelink-color formheadingtheme text-center">
-                  REGISTER TO ATTEND
+                  Register to express interest
                 </h2>
 
                 <p className="text-gray-600 text-center">

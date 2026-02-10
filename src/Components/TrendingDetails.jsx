@@ -72,7 +72,10 @@ export default function TrendingDetails() {
               </div>
               <div className="EventContBox mb-[5vh]">
                 <h3>About The Trending</h3>
-                <p>{event.trendingDetails}</p>
+                <div
+                  className="event-description"
+                  dangerouslySetInnerHTML={{ __html: event.trendingDetails }}
+                />
               </div>
             </div>
 
@@ -139,7 +142,7 @@ export default function TrendingDetails() {
                           fontFamily: "Poppins",
                           fontWeight: 500,
                           width: "auto",
-                          marginTop:"0"
+                          marginTop: "0",
                         }}
                       >
                         Click to View

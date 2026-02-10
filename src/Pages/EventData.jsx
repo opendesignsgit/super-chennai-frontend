@@ -7576,6 +7576,77 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
+    id: 1,
+    name: "Chennai Heritage Electric Double-Decker Bus Service",
+    slug: "chennai-heritage-electric-double-decker-bus-service",
+    para: "Every Day",
+    TrendingCalendarMonth: "Every Day",
+    TrendingCalendarTime:
+      "07:00 AM – 10:00 AM | 03:00 PM – 05:00 PM | 08:00 PM – 10:00 PM",
+    TrendingCalendarCategory: "Heritage & City Tour",
+    image: "/images/trendingChennai/doubledeckerbus-image.jpg",
+    Homeimage: "/images/trendingChennai/.jpg",
+    link: "/chennai-heritage-electric-double-decker-bus-service",
+    duration: "Approx. 2 Hours",
+    ageRestriction: "Open for all ages",
+    language: "English & Tamil",
+    genre: "Heritage, Culture, City Tour",
+    venue: "Chennai City (Multiple Landmarks)",
+   trendingDetails: `
+<p>
+<b>Experience Chennai like never before!</b> 🌆  
+The Heritage Electric Double-Decker Bus is an eco-friendly panoramic city tour showcasing Chennai’s rich history and iconic landmarks.
+</p>
+
+<p>
+This premium AC electric double-decker service was officially inaugurated by <b>Chief Minister M.K. Stalin</b> during the <b>World Tamil Diaspora Day 2026</b>.  
+The service is introduced by the <b>Tamil Nadu Tourism Development Corporation (TTDC)</b> and operated by <b>Switch Mobility (Ashok Leyland)</b>.
+</p>
+
+<h4>🚌 Major Attractions Covered</h4>
+<p>
+Marina Beach, Madras High Court, Secretariat, LIC, Spencer Plaza, Napier Bridge,  
+Anna & Kalaignar Memorial, MGR & Jayalalithaa Memorial, Santhome Church, Lighthouse,  
+Chennai Port, University of Madras, Vivekananda House, Rajaji Hall, Queen Mary’s College, and many more.
+</p>
+
+<h4>✅ Inclusions</h4>
+<ul>
+  <li>Professional tour guide from boarding to drop-off</li>
+  <li>Refreshment & relaxation stop at Hotel Tamil Nadu</li>
+  <li>Friendly assistance from drivers, tour helpers, and staff</li>
+</ul>
+
+<h4>⚠️ Important Notes</h4>
+<ul>
+  <li>Alcohol consumption is strictly prohibited</li>
+  <li>Travel insurance & medical expenses are not included</li>
+  <li>Coach follows only tour manager-approved routes</li>
+</ul>
+
+<h4>🎟 Ticket Prices</h4>
+<ul>
+  <li>Adults: ₹200</li>
+  <li>Children (4–10 years): ₹150</li>
+</ul>
+
+<p>
+✨ Perfect for tourists, families, history lovers, and locals who want to rediscover Chennai from a fresh perspective with comfort, sustainability, and stunning city views.
+</p>
+`,
+
+    TrendingLink:
+      "https://ttdconline.com/tour/details/CHENNAI%20DOUBLE%20DECKER%20PANORAMA%20RIDE/Package",
+    YoutubeLink: "https://www.youtube.com/watch?v=Lmae30kTD8s",
+    meta: {
+      title:
+        "Chennai Heritage Electric Double-Decker Bus Service | TTDC Panorama Ride",
+      desc: "Explore Chennai’s iconic landmarks aboard the eco-friendly Heritage Electric Double-Decker Bus. Enjoy panoramic city views, cultural heritage, and a guided tour operated by TTDC.",
+      url: "/chennai-heritage-electric-double-decker-bus-service",
+    },
+  },
+
+  {
     id: 0,
     name: "JIGGLY CAT PUDDING – Viral Cute Dessert in Chennai!",
     slug: "jiggly-cat-pudding-viral-cute-dessert-in-chennai",
@@ -7600,7 +7671,7 @@ export const panesContent = [
   {
     id: -1,
     name: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
-        slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
 
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",
@@ -7630,7 +7701,7 @@ Exclusively available at @barrocco22.adyar (Adyar branch)
   {
     id: -2,
     name: "Dark Chocolate Napping Teddy Dessert – Viral Dessert in Chennai!",
-            slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
 
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",
@@ -7663,7 +7734,7 @@ Combines visual appeal with delightful textures and flavors
   {
     id: -3,
     name: "Eventide Coffee – Minimalist Café in Chennai",
-     slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
 
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",
@@ -7714,7 +7785,7 @@ Focus on quality, flavor, and presentation
   {
     id: 2,
     name: "LABUBU DOLL",
-         slug: "LABUBU DOLL",
+    slug: "LABUBU DOLL",
 
     para: "ABOUT LABUBU",
     TrendingCalendarMonth: "selling for nearly $170,000 at auction.",
@@ -7741,7 +7812,7 @@ Focus on quality, flavor, and presentation
   {
     id: 3,
     name: "Cake on a Cone ",
-    slug:"cake on murder",
+    slug: "cake on murder",
     para: "Everyday",
     TrendingCalendarMonth: "Available Daily",
     TrendingCalendarTime: "",
@@ -7765,7 +7836,7 @@ Focus on quality, flavor, and presentation
   {
     id: 4,
     name: "Jiggly Capybara Panna Cotta",
-            slug:"Jiggly Capybara Panna Cotta",
+    slug: "Jiggly Capybara Panna Cotta",
 
     para: "Everyday",
     TrendingCalendarMonth: "Available Daily",
@@ -7830,7 +7901,7 @@ Focus on quality, flavor, and presentation
   {
     id: 7,
     name: "Fake Sangeet 2.0",
-        slug:"Fake_sangeet_event",
+    slug: "Fake_sangeet_event",
 
     para: "18th July Onwards | 8PM Onwards",
     TrendingCalendarMonth: "18th July 2025",
@@ -7889,9 +7960,6 @@ Focus on quality, flavor, and presentation
      Featuring: DJ • Dhol • Photobooth • Glitters • Decor • Live Singer
      Offline tickets launching soon!  Tickets: Live on ClubInn`,
   },
-
-
-
 ];
 
 export const prideofchennaidata = [

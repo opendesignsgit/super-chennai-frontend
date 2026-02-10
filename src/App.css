@@ -787,3 +787,18 @@ background: #fff;
     padding: 0 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.event-description p {
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.event-description ul {
+  padding-left: 18px;
+  margin-bottom: 16px;
+}
+
+.event-description h4 {
+  margin: 18px 0 8px;
+  font-weight: 600;
+}

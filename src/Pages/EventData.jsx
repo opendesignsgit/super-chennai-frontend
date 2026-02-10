@@ -7585,7 +7585,7 @@ export const panesContent = [
       "07:00 AM – 10:00 AM | 03:00 PM – 05:00 PM | 08:00 PM – 10:00 PM",
     TrendingCalendarCategory: "Heritage & City Tour",
     image: "/images/trendingChennai/doubledeckerbus-image.jpg",
-    Homeimage: "/images/trendingChennai/.jpg",
+    Homeimage: "/images/trendingChennai/doubledeckerbus-image2-source.jpg",
     link: "/chennai-heritage-electric-double-decker-bus-service",
     duration: "Approx. 2 Hours",
     ageRestriction: "Open for all ages",

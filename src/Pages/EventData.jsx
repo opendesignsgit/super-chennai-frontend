@@ -7575,6 +7575,272 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+
+  {
+  id: 6322,
+  name: "Chennai Metro Rail Phase II Update 2026: Poonamallee–Vadapalani",
+  slug: "chennai-metro-phase-2-update-2026-poonamallee-vadapalani",
+  para: "Trending Chennai Update",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "Expected Soon",
+  TrendingCalendarCategory: "Infrastructure & Transport",
+  image: "/images/trendingChennai/source-metro-trending-banner.jpeg",
+  Homeimage: "/images/trendingChennai/metro-trending smsall.jpeg",
+  link: "/trending-chennai/chennai-metro-phase-2-update-2026-poonamallee-vadapalani",
+  duration: "Operational Update",
+  ageRestriction: "Not Applicable",
+  language: "English & Tamil",
+  genre: "Metro Rail, Infrastructure, Urban Development",
+  venue: "Poonamallee – Vadapalani Corridor, Chennai",
+
+  trendingDetails: `
+<p>
+<b>Major progress on Chennai Metro Rail Phase II!</b> 🚇  
+As of early February 2026, Chennai Metro Rail Limited (CMRL) is preparing to open the <b>Poonamallee–Vadapalani corridor</b> following approvals from the <b>Railway Board</b>.
+</p>
+
+<p>
+Trial runs on this stretch have been successfully completed, and <b>Vadapalani</b> is set to play a crucial role as a key interchange station connecting <b>Phase I and Phase II</b>.
+</p>
+
+<h4>📌 Key Updates for 2026</h4>
+<ul>
+  <li>Trial operations between <b>Porur and Vadapalani</b> completed</li>
+  <li>Features a <b>5.5 km-long double-decker viaduct</b>, a major engineering highlight</li>
+  <li>Railway Board clearance granted in late January 2026</li>
+  <li>Final approval from <b>Commissioner of Metro Rail Safety (CMRS)</b> awaited</li>
+</ul>
+
+<h4>🏗 Construction & Expansion Progress</h4>
+<ul>
+  <li>TBM <b>Pelican</b> completed a twin tunnel drive</li>
+  <li>TBM <b>Bhavani</b> achieved breakthrough at RK Salai</li>
+  <li>Proposed seven-storey commercial complex with four-level mechanical parking near <b>Arumbakkam Metro</b></li>
+</ul>
+
+<h4>👥 Passenger Growth & Offers</h4>
+<ul>
+  <li>Over <b>93 lakh commuters</b> recorded in January 2026</li>
+  <li>Daily ridership crossed <b>3.8 lakh passengers</b></li>
+  <li><b>20% discount</b> available on QR-based tickets and NCMC cards</li>
+</ul>
+
+<p>
+⚠️ <b>Note:</b> Certain station-related works along the Poonamallee–Vadapalani stretch are still in progress and are expected to be completed by <b>mid-2026</b>.
+</p>
+`,
+
+  TrendingLink: "",
+  YoutubeLink: "",
+  meta: {
+    title: "Chennai Metro Rail Phase II Update 2026: Poonamallee–Vadapalani",
+    desc: "Latest Chennai Metro Rail Phase II update: Poonamallee–Vadapalani trial runs completed; CMRS approval awaited. Opening expected soon.",
+     url: "https://www.superchennai.com/trending-chennai/chennai-metro-phase-2-update-2026-poonamallee-vadapalani",
+  },
+},
+
+  {
+  id: 7223,
+  name: "CREDAI Chennai Fairpro 2026",
+  slug: "credai-chennai-fairpro-2026-real-estate-expo",
+  para: "Trending Chennai Expo",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "10:00 AM – 9:00 PM",
+  TrendingCalendarCategory: "Real Estate & Property Expo",
+  image: "/images/trendingChennai/credai-trending.jpeg",
+  Homeimage: "/images/trendingChennai/credai-trending.jpeg",
+  link: "/trending-chennai/credai-chennai-fairpro-2026-real-estate-expo",
+  duration: "3 Days",
+  ageRestriction: "Open for all",
+  language: "English & Tamil",
+  genre: "Real Estate, Property, Investment Expo",
+  venue: "Chennai Trade Centre, Nandambakkam",
+
+  trendingDetails: `
+<p>
+<b>Your future home could be waiting for you at CREDAI Chennai Fairpro 2026.</b> 🏡  
+Be part of Chennai’s most anticipated real estate expo, bringing together trusted <b>CREDAI developers</b>, premium residential projects, and exclusive offers under one roof.
+</p>
+
+<p>
+This Chennai expo is the perfect destination to explore <b>apartments, villas, plots</b>, and smart <b>investment opportunities</b>, helping homebuyers and investors compare options and make confident decisions.
+</p>
+
+<p>
+Taking place from <b>20th to 22nd February 2026</b> at the <b>Chennai Trade Centre, Nandambakkam</b>, this upcoming Chennai expo stands out as a major event for property seekers.
+</p>
+
+<h4>🏢 Expo Highlights</h4>
+<ul>
+  <li>80+ leading CREDAI developers</li>
+  <li>500+ residential & investment property options</li>
+  <li>Instant bookings and expert consultations</li>
+  <li>Flexible payment plans and bank tie-ups</li>
+  <li>Special expo-only deals and offers</li>
+</ul>
+
+<p>
+✨ Walk in, explore endless possibilities, and secure your dream home with confidence.<br/>
+Register now for your <b>FREE VIP Pass</b> and take the next step toward making your dream a reality.
+</p>
+
+<h4>📅 Event Details</h4>
+<ul>
+  <li>Dates: 20, 21 & 22 February 2026</li>
+  <li>Time: 10:00 AM – 9:00 PM</li>
+  <li>Venue: Chennai Trade Centre, Nandambakkam</li>
+</ul>
+`,
+
+  TrendingLink: "https://credai.eventink.in/register.html ",
+  YouTubeLink: "",
+  meta: {
+    title: "Chennai Expo Alert: CREDAI Fairpro 2026 at Chennai Trade Centre",
+    desc: "Don’t miss Chennai’s top real estate expo at the Chennai Trade Centre. CREDAI Fairpro 2026 brings premium homes, offers, and on-spot bookings..",    url: "https://www.superchennai.com/trending-chennai/credai-chennai-fairpro-2026-real-estate-expo",
+  },
+},
+
+  {
+  id: 41212,
+  name: "A.R. Rahman Live – Wonderment Tour 2026",
+  slug: "ar-rahman-wonderment-tour-2026",
+  para: "What’s Chennai Trending",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "06:30 PM",
+  TrendingCalendarCategory: "Live Music Concert",
+  image: "/images/trendingChennai/banner-bookmyshow-6-Recovered.jpg.jpeg",
+  Homeimage: "/images/trendingChennai/ar-small.jpg.jpeg",
+  link: "/trending-chennai/ar-rahman-wonderment-tour-2026",
+  duration: "3 Hours 15 Minutes",
+  ageRestriction: "5 Years & Above",
+  language: "Tamil",
+  genre: "Live Music, Concert, Entertainment",
+  venue: "Jawaharlal Nehru Stadium, Chennai",
+
+  trendingDetails: `
+<p>
+<b>Step into the magic of A.R. Rahman Live with the spectacular Wonderment Tour.</b> 🎶  
+Experience an unforgettable live music concert in Chennai as the legendary composer takes audiences on an extraordinary musical expedition.
+</p>
+
+<p>
+More than just a performance, <b>Wonderment</b> is a deeply immersive artistic experience—celebrating love, life, and the limitless power of music. Every melody, stunning visual, and rhythmic beat draws you into a world of awe and inspiration.
+</p>
+
+<p>
+With state-of-the-art sound, captivating visual storytelling, and A.R. Rahman’s unparalleled musical brilliance, <b>Wonderment – The Tour</b> redefines what a live concert can be.
+</p>
+
+<h4>📅 Event Details</h4>
+<ul>
+  <li>Date: Saturday, 14 February 2026</li>
+  <li>Time: 6:30 PM</li>
+  <li>Duration: 3 Hours 15 Minutes</li>
+  <li>Age Limit: 5 Years & Above</li>
+  <li>Language: Tamil</li>
+  <li>Venue: Jawaharlal Nehru Stadium, Chennai</li>
+</ul>
+
+<p>
+✨ This Tamil music concert in Chennai promises a spellbinding evening where music meets magic, creating memories that stay long after the final note fades.
+</p>
+
+<p>
+🎟 <b>Book Now:</b><br/>
+<a href="https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets" target="_blank">
+https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets
+</a>
+</p>
+`,
+
+  TrendingLink:
+    "https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets",
+  YoutubeLink: "",
+  meta: {
+    title: "What’s Chennai Trending - A.R. Rahman’s Wonderment Tour 2026",
+    desc: "A.R. Rahman’s Wonderment Tour is a top pick in Trending Chennai, offering great music, stunning visuals, and a live show people are enjoying.",
+     url: "https://www.superchennai.com/trending-chennai/ar-rahman-wonderment-tour-2026",
+  }
+},
+
+  {
+  id: 28754,
+  name: "Glow Garden Mahabalipuram",
+  slug: "glow-garden-mahabalipuram-chennai",
+  para: "New in Chennai",
+  TrendingCalendarMonth: "Every Day",
+  TrendingCalendarTime:
+    "01:00 PM – 05:30 PM | 06:00 PM – 11:00 PM",
+  TrendingCalendarCategory: "Family Attraction & Night Tourism",
+  image: "/images/trendingChennai/banner-big-1-source.jpg.jpeg",
+  Homeimage: "/images/trendingChennai/banner-big-1-source (1).jpg.jpeg",
+  link: "/glow-garden-mahabalipuram",
+  duration: "2–3 Hours",
+  ageRestriction: "Open for all ages",
+  language: "Tamil & English",
+  genre: "Family, Kids, Light Park, Tourism",
+  venue: "Mamallapuram (Mahabalipuram), Tamil Nadu",
+
+  trendingDetails: `
+<p>
+<b>New in Chennai‼️ 🌟</b><br/>
+Glow Garden Mahabalipuram is a spectacular night-time attraction, newly revamped from <b>Maragatha Punga</b> and inaugurated by the <b>Hon’ble Chief Minister of Tamil Nadu</b>.
+</p>
+
+<p>
+This magical glow park features mesmerizing LED installations of animals, birds, insects, and flowers, creating an international-level experience similar to attractions seen in Singapore ✨
+</p>
+
+<h4>🌈 Highlights</h4>
+<p>
+3D glowing animal figures, LED flower installations, themed zones like <b>Rose Garden</b> and <b>Animal Kingdom</b>, toy train rides, food courts, and multiple interactive zones.
+</p>
+
+<h4>🎟 Ticket Details</h4>
+<ul>
+  <li>Children below 3.3 ft: Free entry</li>
+  <li>Day Time (1:00 PM – 5:30 PM): ₹100 – Indoor Glow Garden</li>
+  <li>Evening (6:00 PM – 11:00 PM): ₹200 – Indoor & Outdoor Glow Garden + rides</li>
+</ul>
+
+<h4>🎢 Rides Included (Evening)</h4>
+<ul>
+  <li>Toy Train</li>
+  <li>Joker Swing</li>
+  <li>Bee Carousel</li>
+  <li>Carousel</li>
+  <li>Crazy Roller</li>
+</ul>
+
+<h4>➕ Additional Paid Activities</h4>
+<ul>
+  <li>Human Gyro</li>
+  <li>360° Cycle</li>
+  <li>Bungee Trampoline</li>
+  <li>Boating</li>
+</ul>
+
+<h4>📌 Key Information</h4>
+<ul>
+  <li>Location: Mamallapuram (Mahabalipuram), Tamil Nadu</li>
+  <li>Inauguration Date: February 6, 2026</li>
+  <li>Purpose: Developed as a night-time tourist attraction after monuments close</li>
+</ul>
+
+<p>
+✨ <b>Highly recommended for evening visits</b> — the glowing lights and ambience look absolutely stunning after sunset.<br/>
+An ideal spot for a fun, memorable family outing.
+</p>
+`,
+
+  TrendingLink: "https://www.instagram.com/reel/DUfA6bMEvLA/?igsh=MzJqb2g5NTNyMGI1",
+  YoutubeLink: "",
+  meta: {
+      title: "Trending Chennai Spotlight: Glow Garden Opens in Mahabalipuram",
+    desc: "Glow Garden Mahabalipuram showcases colourful glow setups, themed gardens, kids’ activities, and charming night views that make it a great place to explore.",
+    url: "https://www.superchennai.com/trending-chennai/glow-garden-mahabalipuram",
+  },
+},
   {
     id: 5555,
     name: "Karthik Live Music Concert 2026",

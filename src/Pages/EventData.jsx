@@ -7578,7 +7578,7 @@ export const panesContent = [
 
   {
   id: 6322,
-  name: "Chennai Metro Rail Phase II Update 2026: Poonamallee–Vadapalani",
+  name: "Chennai Metro Phase II",
   slug: "chennai-metro-phase-2-update-2026-poonamallee-vadapalani",
   para: "Trending Chennai Update",
   TrendingCalendarMonth: "February 2026",
@@ -7702,7 +7702,7 @@ Register now for your <b>FREE VIP Pass</b> and take the next step toward making 
 
   {
   id: 41212,
-  name: "A.R. Rahman Live – Wonderment Tour 2026",
+  name: "ARR Live – Wonderment 2026",
   slug: "ar-rahman-wonderment-tour-2026",
   para: "What’s Chennai Trending",
   TrendingCalendarMonth: "February 2026",
@@ -7905,7 +7905,7 @@ https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125
 
   {
     id: 3333,
-    name: "Tata Jaguar Land Rover Manufacturing Facility Inauguration",
+    name: "Tata JLR Manufacturing Facility Inauguration",
     slug: "tata-jlr-manufacturing-facility-panapakkam-tamil-nadu",
     para: "Industrial Milestone",
     TrendingCalendarMonth: "February 2026",
@@ -7964,7 +7964,7 @@ The facility is designed to manufacture both <b>internal combustion engine (ICE)
   },
   {
     id: 1,
-    name: "Chennai Heritage Electric Double-Decker Bus Service",
+    name: "Chennai  Electric Double-Decker Bus Service",
     slug: "double-decker-bus-chennai-city-bus-ride",
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",

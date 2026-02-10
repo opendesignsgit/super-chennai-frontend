@@ -600,11 +600,11 @@ function App() {
               <img src="/images/threads.png" alt="Twitter" />
             </a>
           </div>
-          {/* 
-          {!hideOnMargazhiPage && (
+          
+           {!hideOnMargazhiPage && (
             <div
-              id="menifeto-tab"
-              ref={stickyRef}
+            id="menifeto-tab"
+            ref={stickyRef}
               className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest manifesto${
                 footerReached ? "footerreached" : ""
               }`}
@@ -616,7 +616,7 @@ function App() {
                 />
               </a>
             </div>
-          )} */}
+          )}
 
           {!hideOnMargazhiPage && (
             <div

@@ -147,7 +147,10 @@ export default function TrendingChennai1() {
                               </div>
                             </div>
                           </Link> */}
-                          <a href={`/TrendingDetails/${pane.id}`}>
+                          <a 
+                          href={`/TrendingDetails/${pane.slug}`}
+                          >
+                            
                             <div className="hbintimg relative h-full">
                               <img
                                 src={pane.Homeimage}

@@ -4,22 +4,35 @@ import { panesContent } from "../../src/Pages/EventData";
 export default function TrendingDetails() {
   const location = useLocation();
   const navigate = useNavigate();
-  const { id } = useParams();
+  const { slug } = useParams();
 
   const [event, setEvent] = useState(null);
 
+  // useEffect(() => {
+  //   if (location.state) {
+  //     setEvent(location.state);
+  //   } else {
+  //     const found = panesContent.find((e) => e.slug === Number(slug));
+  //     if (found) {
+  //       setEvent(found);
+  //     } else {
+  //       navigate("/events", { replace: true });
+  //     }
+  //   }
+  // }, [slug, location.state, navigate]);
+
   useEffect(() => {
-    if (location.state) {
-      setEvent(location.state);
-    } else {
-      const found = panesContent.find((e) => e.id === Number(id));
-      if (found) {
-        setEvent(found);
-      } else {
-        navigate("/events", { replace: true });
-      }
-    }
-  }, [id, location.state, navigate]);
+  const found = panesContent.find(
+    (e) => e.slug === slug
+  );
+
+  if (found) {
+    setEvent(found);
+  } else {
+    navigate("/events", { replace: true });
+  }
+}, [slug, navigate]);
+
 
   if (!event) return null;
 

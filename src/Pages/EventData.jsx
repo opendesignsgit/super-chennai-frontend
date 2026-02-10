@@ -7578,6 +7578,7 @@ export const panesContent = [
   {
     id: 0,
     name: "JIGGLY CAT PUDDING – Viral Cute Dessert in Chennai!",
+    slug: "jiggly-cat-pudding-viral-cute-dessert-in-chennai",
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",
     TrendingCalendarTime: "",
@@ -7599,6 +7600,8 @@ export const panesContent = [
   {
     id: -1,
     name: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+        slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",
     TrendingCalendarTime: "",
@@ -7627,6 +7630,8 @@ Exclusively available at @barrocco22.adyar (Adyar branch)
   {
     id: -2,
     name: "Dark Chocolate Napping Teddy Dessert – Viral Dessert in Chennai!",
+            slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",
     TrendingCalendarTime: "",
@@ -7658,6 +7663,8 @@ Combines visual appeal with delightful textures and flavors
   {
     id: -3,
     name: "Eventide Coffee – Minimalist Café in Chennai",
+     slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",
     TrendingCalendarTime: "",
@@ -7707,6 +7714,8 @@ Focus on quality, flavor, and presentation
   {
     id: 2,
     name: "LABUBU DOLL",
+         slug: "LABUBU DOLL",
+
     para: "ABOUT LABUBU",
     TrendingCalendarMonth: "selling for nearly $170,000 at auction.",
     TrendingCalendarTime: "",
@@ -7732,6 +7741,7 @@ Focus on quality, flavor, and presentation
   {
     id: 3,
     name: "Cake on a Cone ",
+    slug:"cake on murder",
     para: "Everyday",
     TrendingCalendarMonth: "Available Daily",
     TrendingCalendarTime: "",
@@ -7755,6 +7765,8 @@ Focus on quality, flavor, and presentation
   {
     id: 4,
     name: "Jiggly Capybara Panna Cotta",
+            slug:"Jiggly Capybara Panna Cotta",
+
     para: "Everyday",
     TrendingCalendarMonth: "Available Daily",
     TrendingCalendarTime: "12.00 PM - 10. 30 PM",
@@ -7818,6 +7830,8 @@ Focus on quality, flavor, and presentation
   {
     id: 7,
     name: "Fake Sangeet 2.0",
+        slug:"Fake_sangeet_event",
+
     para: "18th July Onwards | 8PM Onwards",
     TrendingCalendarMonth: "18th July 2025",
     TrendingCalendarTime: "08:00 PM",

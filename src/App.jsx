@@ -1430,7 +1430,7 @@ function App() {
             <Route path="/quizform" element={<QuizForm />} />
             <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
             {/* ChennaiQuiz */}
-            <Route path="/TrendingDetails/:id" element={<TrendingDetails />} />
+            <Route path="/TrendingDetails/:slug" element={<TrendingDetails />} />
             <Route path="/eventsimman" element={<EventsImman />} />
             <Route path="/eventsvishal" element={<EventsVishal />} />
             <Route path="/eventsspeed" element={<EventsSpeed />} />

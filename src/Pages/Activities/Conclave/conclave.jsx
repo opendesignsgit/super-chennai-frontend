@@ -58,7 +58,7 @@ export const speakersGallery = [
     name: "Saundarya Rajesh",
     mobile: "",
     mail: "md@avtarcc.com",
-    designation: "Founder & President, Avtar Group",
+    designation: " Managing Director -Avtar Group",
     image: "/images/images-speakers/Dr Saundarya Rajesh-image.jpg",
     description:
       "Dr. Saundarya Rajesh is the Managing Director of Avtar Group and a globally recognized expert in inclusive workplaces, workforce transitions, and ESG. She has spent nearly 25 years reshaping workplace culture, helping over 800 organizations become more equitable and enabling career pathways for more than 1,00,000 second-career women through initiatives like Project Puthri and Nipuni. A noted trainer, speaker, and author of two books, she has advised institutions from UN Women to the Tata Group while consistently pushing organizations toward ethical, human-centered leadership.",
@@ -481,7 +481,7 @@ export default function Conclave() {
 
           <img
             className="block sm:hidden w-full"
-            src="/images/events/mobile-banner-conclave.jpeg"
+            src="/images/events/conclave-banner-mobile-banner.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>

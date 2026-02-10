@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLocation, useParams, useNavigate, Link } from "react-router-dom";
 import { panesContent } from "../../src/Pages/EventData";
+import { Helmet } from "react-helmet-async";
+
 export default function TrendingDetails() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -29,7 +31,7 @@ export default function TrendingDetails() {
   if (found) {
     setEvent(found);
   } else {
-    navigate("/events", { replace: true });
+    navigate("/chennai-events", { replace: true });
   }
 }, [slug, navigate]);
 
@@ -38,7 +40,32 @@ export default function TrendingDetails() {
 
   return (
     <>
+      <Helmet>
+        <title>{event.meta?.title || event.name}</title>
+
+        <meta
+          name="description"
+          content={event.meta?.desc || event.trendingDetails?.slice(0, 150)}
+        />
+
+        {/* Open Graph */}
+        <meta property="og:title" content={event.meta?.title || event.name} />
+        <meta property="og:description" content={event.meta?.desc || ""} />
+        <meta
+          property="og:image"
+          content={`${typeof window !== "undefined" ? window.location.origin : ""}${event.image}`}
+        />
+        <meta property="og:type" content="article" />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
+        />
+      </Helmet>
+
       {/* Banner Section */}
+
       <section className="accaodomationBannerSection">
         <div>
           <img
@@ -48,7 +75,7 @@ export default function TrendingDetails() {
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Trending Chennai</h3>
+            <h1>Trending Chennai</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
               <Link to="/events">Trending Chennai</Link>

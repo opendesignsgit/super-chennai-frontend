@@ -148,7 +148,7 @@ export default function TrendingChennai1() {
                             </div>
                           </Link> */}
                           <a 
-                          href={`/TrendingDetails/${pane.slug}`}
+                          href={`/trending-chennai/${pane.slug}`}
                           >
                             
                             <div className="hbintimg relative h-full">

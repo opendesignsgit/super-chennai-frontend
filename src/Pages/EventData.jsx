@@ -7576,23 +7576,144 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
+    id: 5555,
+    name: "Karthik Live Music Concert 2026",
+    slug: "karthik-live-concert-chennai-2026",
+    para: "Trending Chennai Event 2026",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "07:30 PM",
+    TrendingCalendarCategory: "Live Music Concert",
+    image: "/images/trendingChennai/source-karthick-banner.jpeg",
+    Homeimage: "/images/trendingChennai/karthick-image.jpeg",
+    link: "/trending-chennai/karthik-live-concert-chennai-2026",
+    duration: "As per show flow",
+    ageRestriction: "5 Years & Above",
+    language: "Tamil",
+    genre: "Indian Pop | Regional Music",
+    venue: "YMCA, Chennai",
+
+    trendingDetails: `
+<p>
+<b>Karthik</b> is widely regarded as one of India’s most loved and respected playback singers, a voice that has resonated with audiences across generations.
+</p>
+
+<p>
+Born and raised in Chennai, and classically trained in both <b>Carnatic</b> and <b>Hindustani</b> music, his illustrious journey includes thousands of songs in multiple Indian languages. Celebrated for his emotionally rich vocals, remarkable versatility, and powerful stage presence, Karthik continues to redefine the live music experience.
+</p>
+
+<p>
+As part of his much-awaited India tour, Karthik brings his music closer to fans across the country. Every performance promises a fully immersive live concert experience, blending nostalgia, heartfelt emotion, and high-energy moments.
+</p>
+
+<h4>📅 Event Details</h4>
+<ul>
+  <li>Date: Saturday, 28 February 2026</li>
+  <li>Time: 7:30 PM</li>
+  <li>Duration: As per show flow</li>
+  <li>Age Limit: 5 Years & Above</li>
+  <li>Genre: Indian Pop | Regional Music</li>
+  <li>Venue: YMCA, Chennai</li>
+</ul>
+
+<p>
+✨ This Indian pop and regional music concert in Chennai invites audiences to be part of a musical journey that connects deeply and leaves a lasting impact.
+</p>
+
+<p>
+🎟 <b>Book Now:</b><br/>
+<a href="https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125" target="_blank">
+https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125
+</a>
+</p>
+`,
+
+    TrendingLink:
+      "https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125",
+    YoutubeLink: "",
+    meta: {
+      title: "Trending Chennai Event 2026 : Karthik Live Music Concert",
+      desc: "Don’t miss Chennai’s trending event—Karthik Live 2026 at YMCA. Enjoy his unforgettable voice, chart-topping songs, and an immersive music concert.",
+      url: "https://www.superchennai.com/trending-chennai/karthik-live-concert-chennai-2026",
+    },
+  },
+
+  {
+    id: 3333,
+    name: "Tata Jaguar Land Rover Manufacturing Facility Inauguration",
+    slug: "tata-jlr-manufacturing-facility-panapakkam-tamil-nadu",
+    para: "Industrial Milestone",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Inaugurated",
+    TrendingCalendarCategory: "Industry & Development",
+    image: "/images/trendingChennai/tata-jlr-panapakkam-banner.jpeg",
+    Homeimage: "/images/trendingChennai/tata-jlr-panapakkam-main.jpeg",
+    link: "/tata-jlr-manufacturing-facility-panapakkam",
+    duration: "Long-term Industrial Project",
+    ageRestriction: "Not Applicable",
+    language: "English & Tamil",
+    genre: "Industry, Manufacturing, Employment",
+    venue: "Panapakkam, Tamil Nadu",
+
+    trendingDetails: `
+<p>
+<b>A major milestone in Tamil Nadu’s industrial growth!</b> 🏭  
+Tamil Nadu Chief Minister <b>M. K. Stalin</b> formally inaugurated the new <b>Tata Jaguar Land Rover (JLR) manufacturing facility</b> at <b>Panapakkam</b>.
+</p>
+
+<p>
+This greenfield automotive plant is being developed through a phased investment of <b>₹9,000 crore</b>, showcasing a strong commitment to advanced manufacturing and sustainable mobility.
+</p>
+
+<p>
+The facility is designed to manufacture both <b>internal combustion engine (ICE)</b> vehicles and <b>electric vehicles (EVs)</b>, aligning with the future direction of the global automobile industry.
+</p>
+
+<h4>🏭 Key Highlights</h4>
+<ul>
+  <li>Annual production capacity of up to <b>250,000 vehicles</b></li>
+  <li>Manufacturing of ICE and EV models</li>
+  <li>Strengthens Tamil Nadu’s position as a leading automotive hub</li>
+</ul>
+
+<h4>👷 Employment & Economic Impact</h4>
+<ul>
+  <li>More than <b>5,000 direct and indirect job opportunities</b></li>
+  <li>Boosts local workforce and skill development</li>
+  <li>Enhances the regional supplier and ancillary ecosystem</li>
+</ul>
+
+<p>
+✨ The new Tata JLR plant highlights Tamil Nadu’s continued focus on <b>industrial expansion, innovation, sustainability, and job creation</b>, driving long-term economic growth in and around Panapakkam.
+</p>
+`,
+
+    TrendingLink:
+      "https://www.instagram.com/reel/DUiVIfekvCI/?igsh=NXhsOXMzdW44M2c0",
+    YoutubeLink: "",
+    meta: {
+      title: "Tata JLR Opens New Manufacturing Plant in Panapakkam",
+      desc: "A ₹9,000 crore Tata JLR plant opens in Panapakkam, inaugurated by M.K. Stalin, bringing advanced auto production, EV capability and thousands of new local jobs.",
+      url: "https://www.superchennai.com/trending-chennai/tata-jlr-manufacturing-plant-panapakkam ",
+    },
+  },
+  {
     id: 1,
     name: "Chennai Heritage Electric Double-Decker Bus Service",
-    slug: "chennai-heritage-electric-double-decker-bus-service",
+    slug: "double-decker-bus-chennai-city-bus-ride",
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",
     TrendingCalendarTime:
       "07:00 AM – 10:00 AM | 03:00 PM – 05:00 PM | 08:00 PM – 10:00 PM",
     TrendingCalendarCategory: "Heritage & City Tour",
-    image: "/images/trendingChennai/doubledeckerbus-image.jpg",
-    Homeimage: "/images/trendingChennai/doubledeckerbus-image2-source.jpg",
+    Homeimage: "/images/trendingChennai/doubledeckerbus-image.jpg",
+    image: "/images/trendingChennai/doubledeckerbus-image2-source.jpg",
     link: "/chennai-heritage-electric-double-decker-bus-service",
     duration: "Approx. 2 Hours",
     ageRestriction: "Open for all ages",
     language: "English & Tamil",
     genre: "Heritage, Culture, City Tour",
     venue: "Chennai City (Multiple Landmarks)",
-   trendingDetails: `
+    trendingDetails: `
 <p>
 <b>Experience Chennai like never before!</b> 🌆  
 The Heritage Electric Double-Decker Bus is an eco-friendly panoramic city tour showcasing Chennai’s rich history and iconic landmarks.
@@ -7639,9 +7760,8 @@ Chennai Port, University of Madras, Vivekananda House, Rajaji Hall, Queen Mary�
       "https://ttdconline.com/tour/details/CHENNAI%20DOUBLE%20DECKER%20PANORAMA%20RIDE/Package",
     YoutubeLink: "https://www.youtube.com/watch?v=Lmae30kTD8s",
     meta: {
-      title:
-        "Chennai Heritage Electric Double-Decker Bus Service | TTDC Panorama Ride",
-      desc: "Explore Chennai’s iconic landmarks aboard the eco-friendly Heritage Electric Double-Decker Bus. Enjoy panoramic city views, cultural heritage, and a guided tour operated by TTDC.",
+      title: "Trending Chennai City Ride on Double Decker Bus, Super Chennai",
+      desc: "Enjoy a panoramic Chennai city ride on an electric double-decker bus, showcasing heritage landmarks, cultural icons and scenic coastline.",
       url: "/chennai-heritage-electric-double-decker-bus-service",
     },
   },

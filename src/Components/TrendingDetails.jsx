@@ -76,9 +76,7 @@ export default function TrendingDetails() {
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
             <h1>Trending Chennai</h1>
-            <div className="breadCrum">
-              <Link to="/">Home</Link> -{" "}
-              <Link to="/events">Trending Chennai</Link>
+            <div className="breadCrum">     
             </div>
           </div>
         </div>

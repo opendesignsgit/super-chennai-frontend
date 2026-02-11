@@ -646,7 +646,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
 
               <div>
                 <div
-                  className="Megamenulogo1 hidden md:block"
+                  className="Megamenulogo1 hidden cursor-pointer md:block"
                   onClick={() => setMenuBar(true)}
                 >
                   MENU

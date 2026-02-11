@@ -340,6 +340,8 @@ export default function Conclave() {
       return;
     }
 
+
+
     try {
       setLoading(true);
 
@@ -363,6 +365,16 @@ export default function Conclave() {
 
     if (!otpSent || !form.otp) {
       toast.error("Please verify mobile number");
+      return;
+    }
+
+    if (!form.companyName.trim()) {
+      toast.error("Company Name is required");
+      return;
+    }
+
+    if (!form.designation.trim()) {
+      toast.error("Designation is required");
       return;
     }
 
@@ -833,18 +845,20 @@ export default function Conclave() {
                   )}
                   <input
                     name="companyName"
-                    placeholder="Company Name / Institutions"
+                    placeholder="Company Name / Institutions *"
                     className="border p-3 rounded-lg"
                     value={form.companyName}
                     onChange={handleChange}
+                    required
                   />
 
                   <input
                     name="designation"
-                    placeholder="Designation "
+                    placeholder="Designation *"
                     className="border p-3 rounded-lg"
                     value={form.designation}
                     onChange={handleChange}
+                    required
                   />
 
                   <input

@@ -15,7 +15,7 @@ import { Helmet } from "react-helmet-async";
 export const speakersGallery = [
   {
     id: 1,
-    name: "Raj Cherubal",
+    name: "Mr. Raj Cherubal",
     mobile: "9381013498",
     mail: "rajcherubal@gmail.com",
     designation: "CEO, Chennai Metropolitan Development Authority",
@@ -25,7 +25,7 @@ export const speakersGallery = [
   },
   {
     id: 2,
-    name: "Vikram Cotah",
+    name: "Mr. Vikram Cotah",
     mobile: "9840741379",
     mail: "vikramcotah@grthotels.com",
     designation: "CEO, GRT Hotels & Resorts",
@@ -35,7 +35,7 @@ export const speakersGallery = [
   },
   {
     id: 3,
-    name: "Arun Vasu",
+    name: "Mr. Arun Vasu",
     mobile: "9840904077",
     mail: "arunvasu@ttgroupglobal.com",
     designation: "Chairman, TT Group",
@@ -55,7 +55,7 @@ export const speakersGallery = [
   // },
   {
     id: 5,
-    name: "Saundarya Rajesh",
+    name: "Dr. Saundarya Rajesh",
     mobile: "",
     mail: "md@avtarcc.com",
     designation: " Managing Director -Avtar Group",
@@ -75,7 +75,7 @@ export const speakersGallery = [
   // },
   {
     id: 7,
-    name: "Vishesh Rajaram",
+    name: "Mr. Vishesh Rajaram",
     mobile: "",
     mail: "vishesh.rajaram@specialeinvest.com",
     designation: "Managing Partner, Speciale Invest",
@@ -85,7 +85,7 @@ export const speakersGallery = [
   },
   {
     id: 8,
-    name: "Hari Ganapathy",
+    name: "Mr. Hari Ganapathy",
     mobile: "9790733699",
     mail: "hari@pickyourtrail.com",
     designation: "Co-Founder, PickYourTrail",
@@ -95,7 +95,7 @@ export const speakersGallery = [
   },
   {
     id: 9,
-    name: "Sivarajah Ramanathan",
+    name: "Mr. Sivarajah Ramanathan",
     mobile: "9840944410",
     mail: "ceo@startuptn.in",
     designation: "CEO, StartupTN",
@@ -157,12 +157,78 @@ export const speakersGallery = [
   },
 
   {
-    id: 12,
+    id: 13,
     name: "Mr. Ramakrishnan K",
     designation: "Senior Managing Director Spark Capital",
     image: "/images/images-speakers/Ramakrishnan K Picture.jpeg",
     description:
       "K. Ramakrishnan (Ramki) is a veteran investment banker with over three decades of experience advising leading business groups and entrepreneurs on capital raising, M&A, and corporate strategy. He is Senior Managing Director – Strategic Relationships at Spark Capital Advisors and part of its founding leadership team that built the firm into a leading mid-market investment bank. Previously, he headed ICICI Securities’ investment banking business for southern India and worked with Arthur Andersen and Deloitte. Widely respected for his deep industry relationships, Ramki is actively involved with bodies such as The Madras Chamber, TiE Chennai, and The Chennai Angels, and holds an engineering degree with a postgraduate qualification in management.",
+  },
+  // NEW #############
+  {
+    id: 14,
+    name: "K. Pandiarajan",
+    mobile: "",
+    mail: "",
+    designation: "Executive Chairman, CIEL HR Group",
+    image: "/images/images-speakers/pandiraj.jpg",
+    description:
+      "K. Pandiarajan (KPR) is a veteran HR leader and entrepreneur, best known as the founder of Ma Foi Management Consultants and Executive Chairman of CIEL HR, which operates a large nationwide staffing and skilling network. He pioneered HR outsourcing in India and has helped generate employment for hundreds of thousands through his ventures. In addition to his business leadership, he has served as a Tamil Nadu state minister, was a founding member of the GST Council, and continues to contribute to education, healthcare, and livelihood-focused philanthropy through his trusts.",
+  },
+
+  {
+    id: 15,
+    name: "Mr. Gaurav Kumar",
+    mobile: "",
+    mail: "",
+    designation: "Founder & CEO, Yubi Group",
+    image: "/images/images-speakers/Gaurav.jpg",
+    description:
+      "Gaurav Kumar is the Founder and CEO of Yubi Group, a fintech platform that powers the end-to-end institutional debt lifecycle and facilitates over ₹1,40,000 crore in debt transactions. With nearly two decades of experience in structured finance and fintech, he previously co-founded Vivriti Capital and held senior leadership roles at Northern Arc Capital. Recognized as a leading fintech entrepreneur, he continues to shape India’s debt markets through technology-driven financial inclusion.",
+  },
+
+  {
+    id: 16,
+    name: "Mr. Arun Ram",
+    mobile: "",
+    mail: "",
+    designation: "Resident Editor, The Times of India",
+    image: "/images/images-speakers/arunram.jpg",
+    description:
+      "Arun Ram is a post-graduate in Mass Communication and Journalism with experience across six newspapers and a magazine in three states before joining The Times of India as part of the Chennai launch team. A British Chevening Scholar in Print Journalism and recipient of the Sarojini Naidu Prize for Best Reporting, he is also the co-author of former ISRO scientist Nambi Narayanan’s autobiography, 'Ready to Fire: How India and I Survived the ISRO Spy Case.' His areas of interest include investigative journalism, politics, science and technology, human interest stories, and teaching.",
+  },
+
+  {
+    id: 17,
+    name: "Mr. Anil Srinivasan",
+    mobile: "",
+    mail: "",
+    designation: "Founder, Kruu and Rhapsody | Musician",
+    image: "/images/images-speakers/anisrinivas.jpg",
+    description:
+      "Anil Srinivasan is a classical pianist, educator, and social innovator, serving as CEO and Co-founder of Kruu, Founder of Rhapsody, and Professor of Practice at Krea University. An alumnus of Columbia University and the University of Southern California (USC), he pioneered arts-based STEM learning through Rhapsody across hundreds of schools and later launched Kruu to bring project-based learning to over 4.5 lakh students. A recipient of the Sangeet Natak Akademi Youth Award and the Kalaimamani Award, he is widely recognized for his philanthropy, disaster-relief initiatives, and contributions to arts education and community development.",
+  },
+
+  {
+    id: 18,
+    name: "Mr. Prem Shanker",
+    mobile: "",
+    mail: "",
+    designation: "Senior Executive Editor, Puthiya Thalaimurai TV",
+    image: "/images/images-speakers/prem.jpg",
+    description:
+      "Prem Shanker is a senior journalist with over 25 years of experience across print, television, and digital media, currently serving as Senior Executive Editor at Puthiya Thalaimurai. He has held leadership roles at organisations such as Press Trust of India, Network18, TV9, The Economic Times, and India Today, and is also the co-founder of The Lede, a South India-focused digital platform. A Chevening Fellow from the University of Westminster, he is recognized for building newsrooms, mentoring journalists, and driving strong, ethical political and economic reporting.",
+  },
+
+  {
+    id: 19,
+    name: "Mr. Srinath Ravichandran",
+    mobile: "",
+    mail: "",
+    designation: "Co-Founder & CEO, Agnikul Cosmos",
+    image: "/images/images-speakers/srinath.jpg",
+    description:
+      "Srinath Ravichandran is an aerospace engineer and former Wall Street trader who co-founded Agnikul Cosmos, where he led the launch of the world’s first rocket powered by a single-piece 3D-printed engine from India’s only private launchpad. He studied electrical engineering at the College of Engineering, Guindy, financial engineering at Columbia University, and later pursued aerospace engineering at the University of Illinois. Driven by a passion to simplify access to space, he started Agnikul to make space technology more accessible. Beyond aerospace, he also explores filmmaking through hands-on work with film crews.",
   },
 ];
 
@@ -440,50 +506,48 @@ export default function Conclave() {
     }
   };
 
+  const scrollRef = useRef(null);
 
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
 
-const scrollRef = useRef(null);
+    let speed = 0.5; // 👈 smooth control (0.3 ultra slow)
+    let animationFrame;
+    let isPaused = false;
 
-useEffect(() => {
-  const el = scrollRef.current;
-  if (!el) return;
+    const smoothScroll = () => {
+      if (!isPaused) {
+        el.scrollTop += speed;
 
-  let speed = 0.5; // 👈 smooth control (0.3 ultra slow)
-  let animationFrame;
-  let isPaused = false;
-
-  const smoothScroll = () => {
-    if (!isPaused) {
-      el.scrollTop += speed;
-
-      // Reset without jump feeling
-      if (el.scrollTop >= el.scrollHeight - el.clientHeight) {
-        el.scrollTop = 0;
+        // Reset without jump feeling
+        if (el.scrollTop >= el.scrollHeight - el.clientHeight) {
+          el.scrollTop = 0;
+        }
       }
-    }
+
+      animationFrame = requestAnimationFrame(smoothScroll);
+    };
+
+    const handleMouseEnter = () => {
+      isPaused = true;
+    };
+
+    const handleMouseLeave = () => {
+      isPaused = false;
+    };
+
+    el.addEventListener("mouseenter", handleMouseEnter);
+    el.addEventListener("mouseleave", handleMouseLeave);
 
     animationFrame = requestAnimationFrame(smoothScroll);
-  };
 
-  const handleMouseEnter = () => {
-    isPaused = true;
-  };
-
-  const handleMouseLeave = () => {
-    isPaused = false;
-  };
-
-  el.addEventListener("mouseenter", handleMouseEnter);
-  el.addEventListener("mouseleave", handleMouseLeave);
-
-  animationFrame = requestAnimationFrame(smoothScroll);
-
-  return () => {
-    cancelAnimationFrame(animationFrame);
-    el.removeEventListener("mouseenter", handleMouseEnter);
-    el.removeEventListener("mouseleave", handleMouseLeave);
-  };
-}, []);
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      el.removeEventListener("mouseenter", handleMouseEnter);
+      el.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
 
   return (
     <>
@@ -794,6 +858,105 @@ useEffect(() => {
           </div>
         </div>
       </section>
+
+      {/* <section className="py-20 bg-gray-50 overflow-hidden">
+        <div className="container max-w-4xl mx-auto px-4 flex justify-center">
+          <div className="w-full h-[500px] overflow-hidden rounded-xl bg-white shadow-lg">
+            <div
+              ref={scrollRef}
+              className="h-full overflow-y-auto agenda-scroll p-10 space-y-6 text-sm text-gray-700 leading-relaxed text-center"
+            >
+              <div className="autoinfonew">
+                <h3>9.30 am – 10.00 am Keynote Address</h3>
+
+                <h3>10.05 am – 10.55 am Becoming India’s talent capital</h3>
+                <p>Dr. Saundarya Rajesh, Managing Director, Avtar Group</p>
+                <p>
+                  Mr. K. Pandiarajan, Chairperson & Executive Director, CIEL HR
+                  Group
+                </p>
+                <p>Anil Srinivasan – Founder, Kruu and Rhapsody, Musician</p>
+
+                <h3>
+                  11.00 am – 11.50 am Reimagining the city as a launchpad for
+                  future businesses
+                </h3>
+                <p>Mr. Ramkumar Ramamoorthy, Co-Founder & Partner, Catalincs</p>
+                <p>Mr. Sandeep Nanduri, I.A.S., Managing Director, TIDCO</p>
+                <p>
+                  Mr. Ramakrishnan K, Senior Managing Director, Spark Capital
+                </p>
+                <p>Mr. Gaurav Kumar, Founder & CEO, Yubi Group</p>
+
+                <h3>
+                  11.55 am – 12.45 pm Becoming India’s deep-tech hub for the
+                  world
+                </h3>
+                <p>
+                  Mr. Vishesh Rajaram, Co-Founder & Managing Partner, Speciale
+                  Invest
+                </p>
+                <p>Ms. Ashwini Asokan, Founder & CEO, Mad Street Den</p>
+                <p>
+                  Mr. Srinath Ravichandran, Co-Founder & CEO, Agnikul Cosmos
+                </p>
+
+                <h3>12.45 pm – 1.20 pm Fireside Chat</h3>
+                <p>
+                  Mr. Sivarajah Ramanathan, Mission Director & CEO, Startup TN
+                </p>
+
+                <h3>1.20 pm – 2.00 pm BREAK</h3>
+
+                <h3>
+                  2.00 pm – 2.50 pm Crafting a world-class visitor experience
+                </h3>
+                <p>Mr. Vikram Cotah, CEO, GRT Hotels</p>
+                <p>Mr. Hari Ganapathy, Co-Founder, Pickyourtrail</p>
+                <p>Mr. Arun Vasu, Managing Director, TT Group</p>
+                <p>
+                  Ms. Gayathri Thyagarajan, CEO & Founder, Kynhood Technologies
+                </p>
+
+                <h3>2.55 pm – 3.45 pm A city that works for everyone</h3>
+                <p>
+                  Mr. Raj Cherubal, Executive Director, Chennai Smart City
+                  Limited
+                </p>
+                <p>Mr. Mohamed Ali, President, CREDAI Chennai</p>
+                <p>
+                  Mr. Sivakrishnamurthy, I.A.S., Deputy Commissioner (Works)
+                </p>
+                <p>Ms. Aswathy Dilip, Managing Director, ITDP India</p>
+
+                <h3>
+                  3.50 pm – 4.40 pm The stories we don't tell about Chennai, and
+                  why they matter
+                </h3>
+                <p>Mr. Arun Ram – Resident Editor, The Times of India</p>
+                <p>
+                  Mr. Prem Shanker, Senior Executive Editor, Puthiya Thalaimurai
+                  TV
+                </p>
+                <p>Mr. T.M. Veeraraghav, Executive Editor, NDTV</p>
+
+                <h3>4.40 pm – 4.55 pm BREAK</h3>
+
+                <h3>5:00 pm – 5:30 pm Fireside Chat – TBA</h3>
+
+                <h3>
+                  5.35 pm – 6.05 pm Fireside Chat – Enabling the industries that
+                  will build tomorrow's Chennai
+                </h3>
+                <p>
+                  Mr. T.R.B. Rajaa, Minister for Industries, Investment
+                  Promotion and Commerce, Government of Tamil Nadu
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
 
       {/*============= SPEAKERS ================ */}
       <div className="NewsLetterPage">

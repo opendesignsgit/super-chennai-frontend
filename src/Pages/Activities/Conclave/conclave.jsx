@@ -167,13 +167,12 @@ export const speakersGallery = [
   // NEW #############
   {
     id: 14,
-    name: "K. Pandiarajan",
+    name: "Mr. Pandiarajan K",
     mobile: "",
     mail: "",
     designation: "Executive Chairman, CIEL HR Group",
     image: "/images/images-speakers/pandiraj.jpg",
-    description:
-      "K. Pandiarajan (KPR) is a veteran HR leader and entrepreneur, best known as the founder of Ma Foi Management Consultants and Executive Chairman of CIEL HR, which operates a large nationwide staffing and skilling network. He pioneered HR outsourcing in India and has helped generate employment for hundreds of thousands through his ventures. In addition to his business leadership, he has served as a Tamil Nadu state minister, was a founding member of the GST Council, and continues to contribute to education, healthcare, and livelihood-focused philanthropy through his trusts.",
+    description:"K Pandiarajan (KPR) is a veteran HR leader and entrepreneur, best known as the founder of Ma Foi Management Consultants and Executive Chairman of CIEL HR, which operates a large nationwide staffing and skilling network. He pioneered HR outsourcing in India and helped create employment for hundreds of thousands through his ventures. Alongside business, he has served as a Tamil Nadu state minister, was a founding member of the GST Council, and remains active in education, healthcare, and livelihood-focused philanthropy through his trusts.",
   },
 
   {
@@ -183,8 +182,7 @@ export const speakersGallery = [
     mail: "",
     designation: "Founder & CEO, Yubi Group",
     image: "/images/images-speakers/Gaurav.jpg",
-    description:
-      "Gaurav Kumar is the Founder and CEO of Yubi Group, a fintech platform that powers the end-to-end institutional debt lifecycle and facilitates over ₹1,40,000 crore in debt transactions. With nearly two decades of experience in structured finance and fintech, he previously co-founded Vivriti Capital and held senior leadership roles at Northern Arc Capital. Recognized as a leading fintech entrepreneur, he continues to shape India’s debt markets through technology-driven financial inclusion.",
+    description:"Gaurav Kumar is the Founder and CEO of Yubi Group, a fintech platform that powers the end-to-end institutional debt lifecycle and facilitates over ₹1,40,000 crore in debt transactions. With nearly two decades in structured finance and fintech, he previously co-founded Vivriti Capital and held senior roles at Northern Arc Capital. Recognized widely as a leading fintech entrepreneur, he continues to shape India’s debt markets through technology-driven financial inclusion.",
   },
 
   {
@@ -194,8 +192,7 @@ export const speakersGallery = [
     mail: "",
     designation: "Resident Editor, The Times of India",
     image: "/images/images-speakers/arunram.jpg",
-    description:
-      "Arun Ram is a post-graduate in Mass Communication and Journalism with experience across six newspapers and a magazine in three states before joining The Times of India as part of the Chennai launch team. A British Chevening Scholar in Print Journalism and recipient of the Sarojini Naidu Prize for Best Reporting, he is also the co-author of former ISRO scientist Nambi Narayanan’s autobiography, 'Ready to Fire: How India and I Survived the ISRO Spy Case.' His areas of interest include investigative journalism, politics, science and technology, human interest stories, and teaching.",
+    description:"A post-graduate in Mass Communication and Journalism, Arun Ram worked with six newspapers and a magazine in three states before joining The Times of India as part of the Chennai launch team. He is a British Chevening Scholar in Print Journalism and the winner of Sarojini Naidu prize for best reporting. He is the Co-author of former ISRO scientist Nambinarayanan's autobiography 'Ready to Fire: How India and I Survived the ISRO Spy Case. His interests include investigative journalism, politics, science & technology, human interest stories and teaching",
   },
 
   {
@@ -205,8 +202,7 @@ export const speakersGallery = [
     mail: "",
     designation: "Founder, Kruu and Rhapsody | Musician",
     image: "/images/images-speakers/anisrinivas.jpg",
-    description:
-      "Anil Srinivasan is a classical pianist, educator, and social innovator, serving as CEO and Co-founder of Kruu, Founder of Rhapsody, and Professor of Practice at Krea University. An alumnus of Columbia University and the University of Southern California (USC), he pioneered arts-based STEM learning through Rhapsody across hundreds of schools and later launched Kruu to bring project-based learning to over 4.5 lakh students. A recipient of the Sangeet Natak Akademi Youth Award and the Kalaimamani Award, he is widely recognized for his philanthropy, disaster-relief initiatives, and contributions to arts education and community development.",
+    description:"Anil Srinivasan is a classical pianist, educator, and social innovator, serving as CEO and Co-founder of Kruu, Founder of Rhapsody, and Professor of Practice at Krea University. A Columbia and USC alumnus, he pioneered arts-based STEM learning through Rhapsody across hundreds of schools and later launched Kruu to bring project-based learning to over 4.5 lakh students. A recipient of the Sangeet Natak Akademi Youth Award and Kalaimamani, he is also known for his philanthropy, disaster-relief work, and contributions to arts education and community development.",
   },
 
   {
@@ -216,8 +212,7 @@ export const speakersGallery = [
     mail: "",
     designation: "Senior Executive Editor, Puthiya Thalaimurai TV",
     image: "/images/images-speakers/prem.jpg",
-    description:
-      "Prem Shanker is a senior journalist with over 25 years of experience across print, television, and digital media, currently serving as Senior Executive Editor at Puthiya Thalaimurai. He has held leadership roles at organisations such as Press Trust of India, Network18, TV9, The Economic Times, and India Today, and is also the co-founder of The Lede, a South India-focused digital platform. A Chevening Fellow from the University of Westminster, he is recognized for building newsrooms, mentoring journalists, and driving strong, ethical political and economic reporting.",
+    description:"Prem Shanker is a senior journalist with over 25 years across print, television, and digital media, currently serving as Senior Executive Editor at Puthiya Thalaimurai. He has held leadership roles at organisations like Press Trust of India, Network18, TV9, The Economic Times, and India Today, and co-founded the South India–focused digital platform The Lede. A Chevening Fellow from the University of Westminster, he is known for building newsrooms, mentoring journalists, and driving strong, ethical political and economic reporting.",
   },
 
   {
@@ -227,8 +222,7 @@ export const speakersGallery = [
     mail: "",
     designation: "Co-Founder & CEO, Agnikul Cosmos",
     image: "/images/images-speakers/srinath.jpg",
-    description:
-      "Srinath Ravichandran is an aerospace engineer and former Wall Street trader who co-founded Agnikul Cosmos, where he led the launch of the world’s first rocket powered by a single-piece 3D-printed engine from India’s only private launchpad. He studied electrical engineering at the College of Engineering, Guindy, financial engineering at Columbia University, and later pursued aerospace engineering at the University of Illinois. Driven by a passion to simplify access to space, he started Agnikul to make space technology more accessible. Beyond aerospace, he also explores filmmaking through hands-on work with film crews.",
+    description:"Srinath is an aerospace engineer and former Wall Street trader who co-founded Agnikul, where he led the launch of the world’s first single-piece 3D-printed engine–driven rocket from India’s only private launchpad. Trained in electrical engineering at Guindy and financial engineering at Columbia, he later pursued aerospace at the University of Illinois before starting Agnikul out of his passion for making access to space simpler. Outside of aerospace, he also dabbles in filmmaking through hands-on work with film crews.",
   },
 ];
 

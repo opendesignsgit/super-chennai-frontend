@@ -7964,7 +7964,7 @@ The facility is designed to manufacture both <b>internal combustion engine (ICE)
   },
   {
     id: 1,
-    name: "Chennai  Electric Double-Decker Bus Service",
+    name: "Chennai  Electric Double-Decker PANORAMA RIDE",
     slug: "double-decker-bus-chennai-city-bus-ride",
     para: "Every Day",
     TrendingCalendarMonth: "Every Day",

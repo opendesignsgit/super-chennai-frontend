@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchArticles, fetchFeaturedArticle } from "../services/articleApi";
+import {  fetchArticleBySlug } from "../services/articleApi";
+
 
 const extractAds = (article) => {
   const blocks = article?.content?.root?.children || [];
@@ -50,6 +52,41 @@ export const useArticles = (page) => {
   };
 };
 
+export const useArticleBySlug = (slug) => {
+  const [article, setArticle] = useState(null);
+  const [ads, setAds] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (!slug) return;
+
+    const loadArticle = async () => {
+      setLoading(true);
+
+      try {
+        const data = await fetchArticleBySlug(slug);
+
+        setArticle(data);
+
+        // extract ads from content blocks
+        const extractedAds = data ? extractAds(data) : [];
+        setAds(extractedAds);
+      } catch (error) {
+        console.error("Error fetching article by slug:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadArticle();
+  }, [slug]);
+
+  return {
+    article,
+    ads,
+    loading,
+  };
+};
 
 
 

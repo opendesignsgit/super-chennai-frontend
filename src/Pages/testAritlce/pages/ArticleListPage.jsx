@@ -364,7 +364,7 @@ export default function ArticleListPage() {
                   {mostViewedArticles.map((a) => (
                     <Link
                       key={a.id}
-                      to={`/blog/${a.slug}`}
+                      to={`/ArticleDetailPage/${a.slug}`}
                       className="flex flex-col md:flex-row gap-6 bg-white
                        rounded-xl overflow-hidden hover:shadow-lg transition"
                     >

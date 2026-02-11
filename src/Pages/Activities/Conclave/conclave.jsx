@@ -158,7 +158,7 @@ export const speakersGallery = [
     id: 12,
     name: "Mr. Ramakrishnan K",
     designation: "Senior Managing Director Spark Capital",
-    image: "/images/images-speakers/Ramakrishnan K Picture.png",
+    image: "/images/images-speakers/Ramakrishnan K Picture.jpeg",
     description:"K. Ramakrishnan (Ramki) is a veteran investment banker with over three decades of experience advising leading business groups and entrepreneurs on capital raising, M&A, and corporate strategy. He is Senior Managing Director – Strategic Relationships at Spark Capital Advisors and part of its founding leadership team that built the firm into a leading mid-market investment bank. Previously, he headed ICICI Securities’ investment banking business for southern India and worked with Arthur Andersen and Deloitte. Widely respected for his deep industry relationships, Ramki is actively involved with bodies such as The Madras Chamber, TiE Chennai, and The Chennai Angels, and holds an engineering degree with a postgraduate qualification in management."
   },
 ];

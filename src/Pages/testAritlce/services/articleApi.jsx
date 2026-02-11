@@ -15,12 +15,14 @@ export const fetchArticles = async (page = 1, limit = 9) => {
 export const fetchArticleBySlug = async (slug) => {
   try {
     const res = await fetch(
-      `${API_BASE_URL}/api/articles?filters[slug][$eq]=${slug}&populate=*`
+      `${API_BASE_URL}/api/articles?where[slug][equals]=${slug}&depth=3`,
     );
 
     const data = await res.json();
+    return data?.docs?.[0] || null;
 
-    return data?.data?.[0] || null;
+    
+
   } catch (error) {
     console.error("Error fetching article by slug:", error);
     return null;

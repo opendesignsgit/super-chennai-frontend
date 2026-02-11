@@ -53,10 +53,11 @@ export const useArticles = (page) => {
 };
 
 export const useArticleBySlug = (slug) => {
+
   const [article, setArticle] = useState(null);
   const [ads, setAds] = useState([]);
   const [loading, setLoading] = useState(true);
-
+    console.log("api use rece",article)
   useEffect(() => {
     if (!slug) return;
 

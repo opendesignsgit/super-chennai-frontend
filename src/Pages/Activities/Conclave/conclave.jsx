@@ -143,7 +143,8 @@ export const speakersGallery = [
     name: "Ms. Aswathy Dilip",
     designation: "Managing Director ITDP India ",
     image: "/images/images-speakers/Aswathy-Photo (1).jpeg",
-    description:"Aswathy Dilip is the Managing Director of ITDP India. She is a sought-after expert in raising support for sustainable mobility from key decision-makers, governments and stakeholders. With support from her smart and enthusiastic team, she works with the National, State and City governments; providing them technical assistance on sustainable and equitable urban mobility. Her work has contributed to creating streets safe for walking and cycling, implementing parking reforms, and building support for high-quality, sustainable mass transit. She has a degree as an urban designer from Cardiff University, UK, with a bachelor’s in Architecture."
+    description:
+      "Aswathy Dilip is the Managing Director of ITDP India. She is a sought-after expert in raising support for sustainable mobility from key decision-makers, governments and stakeholders. With support from her smart and enthusiastic team, she works with the National, State and City governments; providing them technical assistance on sustainable and equitable urban mobility. Her work has contributed to creating streets safe for walking and cycling, implementing parking reforms, and building support for high-quality, sustainable mass transit. She has a degree as an urban designer from Cardiff University, UK, with a bachelor’s in Architecture.",
   },
 
   {
@@ -151,7 +152,8 @@ export const speakersGallery = [
     name: "Ms. Ashwini Asokan",
     designation: "Founder, CEO Mad Street Den",
     image: "/images/images-speakers/Ashwini Asokan Picture.jpeg",
-    description:"Ashwini is the CEO and Founder of Mad Street Den, one of India's 1st AI startups. The company's AI platform was a full stack Enterprise AI platform that has powered Fortune 2000 enterprises across verticals like retail, finance, insurance, govt sectors & healthcare. The platform and the team that she and her cofounders built have garnered industry wide recognition for its generalizable AI engine, competing with the likes of Palantir, Databricks, UiPath. MSD's team has gone on to become early employees at companies Open AI, Apple AI, Microsoft and reputed organizations around the world. The company was recently acquired by another Chennai startup M2P."
+    description:
+      "Ashwini is the CEO and Founder of Mad Street Den, one of India's 1st AI startups. The company's AI platform was a full stack Enterprise AI platform that has powered Fortune 2000 enterprises across verticals like retail, finance, insurance, govt sectors & healthcare. The platform and the team that she and her cofounders built have garnered industry wide recognition for its generalizable AI engine, competing with the likes of Palantir, Databricks, UiPath. MSD's team has gone on to become early employees at companies Open AI, Apple AI, Microsoft and reputed organizations around the world. The company was recently acquired by another Chennai startup M2P.",
   },
 
   {
@@ -159,7 +161,8 @@ export const speakersGallery = [
     name: "Mr. Ramakrishnan K",
     designation: "Senior Managing Director Spark Capital",
     image: "/images/images-speakers/Ramakrishnan K Picture.jpeg",
-    description:"K. Ramakrishnan (Ramki) is a veteran investment banker with over three decades of experience advising leading business groups and entrepreneurs on capital raising, M&A, and corporate strategy. He is Senior Managing Director – Strategic Relationships at Spark Capital Advisors and part of its founding leadership team that built the firm into a leading mid-market investment bank. Previously, he headed ICICI Securities’ investment banking business for southern India and worked with Arthur Andersen and Deloitte. Widely respected for his deep industry relationships, Ramki is actively involved with bodies such as The Madras Chamber, TiE Chennai, and The Chennai Angels, and holds an engineering degree with a postgraduate qualification in management."
+    description:
+      "K. Ramakrishnan (Ramki) is a veteran investment banker with over three decades of experience advising leading business groups and entrepreneurs on capital raising, M&A, and corporate strategy. He is Senior Managing Director – Strategic Relationships at Spark Capital Advisors and part of its founding leadership team that built the firm into a leading mid-market investment bank. Previously, he headed ICICI Securities’ investment banking business for southern India and worked with Arthur Andersen and Deloitte. Widely respected for his deep industry relationships, Ramki is actively involved with bodies such as The Madras Chamber, TiE Chennai, and The Chennai Angels, and holds an engineering degree with a postgraduate qualification in management.",
   },
 ];
 
@@ -168,7 +171,6 @@ export const partners = [
     id: 1,
     image: "/images/partnersLogo/RADIOCITY-LOGO-PNG.png",
   },
- 
 ];
 
 const infoData = [
@@ -255,9 +257,6 @@ const ConclaveSchmea = {
   },
 };
 
-
-
-
 export default function Conclave() {
   const navigate = useNavigate();
   const countryCodes = [
@@ -339,8 +338,6 @@ export default function Conclave() {
       toast.error("Enter phone number");
       return;
     }
-
-
 
     try {
       setLoading(true);
@@ -443,6 +440,43 @@ export default function Conclave() {
     }
   };
 
+
+
+const scrollRef = useRef(null);
+
+useEffect(() => {
+  const el = scrollRef.current;
+  if (!el) return;
+
+  let scrollSpeed = 2; // pixel per interval
+  let scrollInterval;
+
+  const startScroll = () => {
+    scrollInterval = setInterval(() => {
+      if (el.scrollTop >= el.scrollHeight - el.clientHeight) {
+        el.scrollTop = 0; // restart when bottom reached
+      } else {
+        el.scrollTop += scrollSpeed;
+      }
+    }, 20); // lower = smoother (20ms perfect)
+  };
+
+  const stopScroll = () => {
+    clearInterval(scrollInterval);
+  };
+
+  startScroll();
+
+  el.addEventListener("mouseenter", stopScroll);
+  el.addEventListener("mouseleave", startScroll);
+
+  return () => {
+    clearInterval(scrollInterval);
+    el.removeEventListener("mouseenter", stopScroll);
+    el.removeEventListener("mouseleave", startScroll);
+  };
+}, []);
+
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
@@ -474,11 +508,9 @@ export default function Conclave() {
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/chennai-conclave`}
         />
 
-         <script type="application/ld+json">
-            {JSON.stringify(ConclaveSchmea)}
-          </script>
-
-
+        <script type="application/ld+json">
+          {JSON.stringify(ConclaveSchmea)}
+        </script>
       </Helmet>
 
       {/* ============== Banner ============ */}
@@ -615,6 +647,135 @@ export default function Conclave() {
                 that can influence policy, investment, and long-term city
                 transformation.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================== AGENDA SECTION ================== */}
+
+      <section className="py-20 bg-gray-50 overflow-hidden">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* ===== left CONTENT ===== */}
+
+            <div className="volunteeerMainContent">
+              <h3>OUR AGENDA</h3>
+
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+       The Conclave Agenda provides a clear and structured overview of the day’s sessions, including exact timings and session topics. Each time slot is carefully planned to ensure focused discussions and meaningful engagement.
+              </p>
+
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+Each session lists the speaker names and their designations for better clarity and context.
+              </p>
+
+              <p className="text-gray-700 text-lg leading-relaxed">
+The simple timeline format helps attendees follow the event smoothly and plan their participation effectively.              </p>
+            </div>
+
+            {/* ===== right AUTO SCROLL ===== */}
+
+            {/* <div className="relative h-[500px] overflow-hidden  rounded-xl bg-white shadow-lg">
+              <div className="absolute inset-0 agenda-scroll p-10 space-y-6 text-sm text-gray-700 leading-relaxed "ref={scrollRef}>
+               */}
+
+            <div className="relative h-[500px] overflow-hidden rounded-xl bg-white shadow-lg">
+              <div
+                ref={scrollRef}
+                className="h-full h-full overflow-y-auto agenda-scroll  p-10 space-y-6 text-sm text-gray-700 leading-relaxed"
+              >
+                <div className="autoinfonew">
+                  <h3>9.30 am – 10.00 am Keynote Address</h3>
+
+                  <h3>10.05 am – 10.55 am Becoming India’s talent capital</h3>
+                  <p>Dr. Saundarya Rajesh, Managing Director, Avtar Group</p>
+                  <p>
+                    Mr. K. Pandiarajan, Chairperson & Executive Director, CIEL
+                    HR Group
+                  </p>
+                  <p>Anil Srinivasan – Founder, Kruu and Rhapsody, Musician</p>
+
+                  <h3>
+                    11.00 am – 11.50 am Reimagining the city as a launchpad for
+                    future businesses
+                  </h3>
+                  <p>
+                    Mr. Ramkumar Ramamoorthy, Co-Founder & Partner, Catalincs
+                  </p>
+                  <p>Mr. Sandeep Nanduri, I.A.S., Managing Director, TIDCO</p>
+                  <p>
+                    Mr. Ramakrishnan K, Senior Managing Director, Spark Capital
+                  </p>
+                  <p>Mr. Gaurav Kumar, Founder & CEO, Yubi Group</p>
+
+                  <h3>
+                    11.55 am – 12.45 pm Becoming India’s deep-tech hub for the
+                    world
+                  </h3>
+                  <p>
+                    Mr. Vishesh Rajaram, Co-Founder & Managing Partner, Speciale
+                    Invest
+                  </p>
+                  <p>Ms. Ashwini Asokan, Founder & CEO, Mad Street Den</p>
+                  <p>
+                    Mr. Srinath Ravichandran, Co-Founder & CEO, Agnikul Cosmos
+                  </p>
+
+                  <h3>12.45 pm – 1.20 pm Fireside Chat</h3>
+                  <p>
+                    Mr. Sivarajah Ramanathan, Mission Director & CEO, Startup TN
+                  </p>
+
+                  <h3>1.20 pm – 2.00 pm BREAK</h3>
+
+                  <h3>
+                    2.00 pm – 2.50 pm Crafting a world-class visitor experience
+                  </h3>
+                  <p>Mr. Vikram Cotah, CEO, GRT Hotels</p>
+                  <p>Mr. Hari Ganapathy, Co-Founder, Pickyourtrail</p>
+                  <p>Mr. Arun Vasu, Managing Director, TT Group</p>
+                  <p>
+                    Ms. Gayathri Thyagarajan, CEO & Founder, Kynhood
+                    Technologies
+                  </p>
+
+                  <h3>2.55 pm – 3.45 pm A city that works for everyone</h3>
+                  <p>
+                    Mr. Raj Cherubal, Executive Director, Chennai Smart City
+                    Limited
+                  </p>
+                  <p>Mr. Mohamed Ali, President, CREDAI Chennai</p>
+                  <p>
+                    Mr. Sivakrishnamurthy, I.A.S., Deputy Commissioner (Works)
+                  </p>
+                  <p>Ms. Aswathy Dilip, Managing Director, ITDP India</p>
+
+                  <h3>
+                    3.50 pm – 4.40 pm The stories we don't tell about Chennai,
+                    and why they matter
+                  </h3>
+                  <p>Mr. Arun Ram – Resident Editor, The Times of India</p>
+                  <p>
+                    Mr. Prem Shanker, Senior Executive Editor, Puthiya
+                    Thalaimurai TV
+                  </p>
+                  <p>Mr. T.M. Veeraraghav, Executive Editor, NDTV</p>
+
+                  <h3>4.40 pm – 4.55 pm BREAK</h3>
+
+                  <h3>5:00 pm – 5:30 pm Fireside Chat – TBA</h3>
+
+                  <h3>
+                    5.35 pm – 6.05 pm Fireside Chat – Enabling the industries
+                    that will build tomorrow's Chennai
+                  </h3>
+                  <p>
+                    Mr. T.R.B. Rajaa, Minister for Industries, Investment
+                    Promotion and Commerce, Government of Tamil Nadu
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -448,32 +448,40 @@ useEffect(() => {
   const el = scrollRef.current;
   if (!el) return;
 
-  let scrollSpeed = 2; // pixel per interval
-  let scrollInterval;
+  let speed = 0.5; // 👈 smooth control (0.3 ultra slow)
+  let animationFrame;
+  let isPaused = false;
 
-  const startScroll = () => {
-    scrollInterval = setInterval(() => {
+  const smoothScroll = () => {
+    if (!isPaused) {
+      el.scrollTop += speed;
+
+      // Reset without jump feeling
       if (el.scrollTop >= el.scrollHeight - el.clientHeight) {
-        el.scrollTop = 0; // restart when bottom reached
-      } else {
-        el.scrollTop += scrollSpeed;
+        el.scrollTop = 0;
       }
-    }, 20); // lower = smoother (20ms perfect)
+    }
+
+    animationFrame = requestAnimationFrame(smoothScroll);
   };
 
-  const stopScroll = () => {
-    clearInterval(scrollInterval);
+  const handleMouseEnter = () => {
+    isPaused = true;
   };
 
-  startScroll();
+  const handleMouseLeave = () => {
+    isPaused = false;
+  };
 
-  el.addEventListener("mouseenter", stopScroll);
-  el.addEventListener("mouseleave", startScroll);
+  el.addEventListener("mouseenter", handleMouseEnter);
+  el.addEventListener("mouseleave", handleMouseLeave);
+
+  animationFrame = requestAnimationFrame(smoothScroll);
 
   return () => {
-    clearInterval(scrollInterval);
-    el.removeEventListener("mouseenter", stopScroll);
-    el.removeEventListener("mouseleave", startScroll);
+    cancelAnimationFrame(animationFrame);
+    el.removeEventListener("mouseenter", handleMouseEnter);
+    el.removeEventListener("mouseleave", handleMouseLeave);
   };
 }, []);
 

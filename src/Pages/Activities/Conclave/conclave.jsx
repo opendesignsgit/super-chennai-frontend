@@ -663,15 +663,21 @@ useEffect(() => {
               <h3>OUR AGENDA</h3>
 
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-       The Conclave Agenda provides a clear and structured overview of the day’s sessions, including exact timings and session topics. Each time slot is carefully planned to ensure focused discussions and meaningful engagement.
+                The Conclave Agenda provides a clear and structured overview of
+                the day’s sessions, including exact timings and session topics.
+                Each time slot is carefully planned to ensure focused
+                discussions and meaningful engagement.
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-Each session lists the speaker names and their designations for better clarity and context.
+                Each session lists the speaker names and their designations for
+                better clarity and context.
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed">
-The simple timeline format helps attendees follow the event smoothly and plan their participation effectively.              </p>
+                The simple timeline format helps attendees follow the event
+                smoothly and plan their participation effectively.{" "}
+              </p>
             </div>
 
             {/* ===== right AUTO SCROLL ===== */}

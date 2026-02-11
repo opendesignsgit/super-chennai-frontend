@@ -176,11 +176,13 @@
 
 
 .autoinfonew h3 {
-  font-family: NewAmsterdam;
+  /* font-family: NewAmsterdam; */
   font-size: 22px;
-  color: #995098;
+  color: #100f9a;
   line-height: 30px;
   margin: 25px 0;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 

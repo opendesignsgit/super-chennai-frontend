@@ -98,7 +98,7 @@ const agendaData = [
     "id": "09",
     "startTime": "3:50 PM",
     "endTime": "4:40 PM",
-    "title": "The Stories We Don't Tell About Chennai, and Why They Matter",
+    "title": "Who Shapes Chennai’s Stories and Do They Travel Far Enough  to Reflect Its True Potential?",
     "speakers": [
       "Mr. Arun Ram – Resident Editor, The Times of India",
       "Mr. Prem Shanker – Senior Executive Editor, Puthiya Thalaimurai TV",
@@ -894,69 +894,155 @@ export default function Conclave() {
         </div>
       </section> */}
 
-   <section className="Becameavolunteerbg-conclves relative">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6">
-    <div className="BecameavolunteerContent text-center">
-      <h2>OUR AGENDA</h2>
-    </div>
+      {/* <section className="Becameavolunteerbg-conclves relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="BecameavolunteerContent text-center">
+            <h2>OUR AGENDA</h2>
+          </div>
 
-    <div className="space-y-0 divide-y divide-gray-400/40 text-white relative">
-      {visibleData.map((item) => (
-        <div
-          key={item.id}
-          className="
-            grid 
-            grid-cols-1 
+          <div className="space-y-0 divide-y divide-gray-400/40 text-white relative">
+            {visibleData.map((item) => (
+              <div
+                key={item.id}
+                className="
+            // grid 
+            // grid-cols-1 
+            // md:grid-cols-12 
+            // py-8 
+            // items-center 
+            // text-center 
+            // md:text-left 
+            // font-bold
+          
+
+
+
+               flex 
+            flex-col 
+            md:grid 
             md:grid-cols-12 
             py-8 
             items-center 
             text-center 
             md:text-left 
             font-bold
+            p-6
+            md:p-0
+            bg-gray-800/20
+            md:bg-transparent
+            rounded-lg
+            md:rounded-none
+            shadow-lg
+            md:shadow-none
+            mx-4
+            md:mx-0
+            space-y-4
+            md:space-y-0
           "
-        >
-          {/* Number */}
-          <div className="autoinfonew flex justify-center md:justify-start mb-4 md:mb-0">
-            <h3>{item.id}</h3>
-          </div>
+              >
+                <div className="autoinfonew flex justify-center md:justify-start mb-4 md:mb-0">
+                  <h3>{item.id}</h3>
+                </div>
 
-          {/* Time */}
-          <div className="md:col-span-2 text-sm mb-4 md:mb-0">
-            <p>{item.startTime} –</p>
-            <p>{item.endTime}</p>
-          </div>
+                <div className="md:col-span-2 text-sm mb-4 md:mb-0">
+                  <p>{item.startTime} –</p>
+                  <p>{item.endTime}</p>
+                </div>
 
-          {/* Title */}
-          <p className="md:col-span-5 mb-4 md:mb-0">
-            {item.title}
-          </p>
+                <p className="md:col-span-5 mb-4 md:mb-0">{item.title}</p>
 
-          {/* Speakers */}
-          <div className="md:col-span-4 text-sm">
-            {item.speakers.map((speaker, index) => (
-              <p key={index} className="mb-1">
-                {speaker}
-              </p>
+                <div className="md:col-span-4 text-sm">
+                  {item.speakers.map((speaker, index) => (
+                    <p key={index} className="mb-1">
+                      {speaker}
+                    </p>
+                  ))}
+                </div>
+              </div>
             ))}
+
+            {!showAll && (
+              <div className="flex justify-center mt-10">
+                <button
+                  onClick={() => setShowAll(true)}
+                  className="conclave-button"
+                >
+                  Read More
+                </button>
+              </div>
+            )}
           </div>
         </div>
-      ))}
+      </section> */}
 
-      {!showAll && (
-        <div className="flex justify-center mt-10">
-          <button
-            onClick={() => setShowAll(true)}
-            className="conclave-button"
-          >
-            Read More
-          </button>
+      <section className="Becameavolunteerbg-conclves relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="BecameavolunteerContent text-center">
+            <h2>OUR AGENDA</h2>
+          </div>
+
+          <div className="space-y-5 divide-y divide-gray-400/40 text-white relative">
+            {visibleData.map((item) => (
+              <div
+                key={item.id}
+                className="
+            flex 
+            flex-col 
+            md:grid 
+            md:grid-cols-12 
+            py-8 
+            items-center 
+            text-center 
+            md:text-left 
+            font-bold
+            p-6
+            md:p-0
+            bg-gray-800/20
+            md:bg-transparent
+            rounded-lg
+            md:rounded-none
+            shadow-lg
+            md:shadow-none
+            mx-4
+            md:mx-0
+            space-y-4
+            md:space-y-0
+          "
+              >
+                <div className="autoinfonew flex justify-center md:justify-start mb-4 md:mb-0">
+                  <h3>{item.id}</h3>
+                </div>
+
+                <div className="md:col-span-2 text-sm mb-4 md:mb-0">
+                  <p>{item.startTime} –</p>
+                  <p>{item.endTime}</p>
+                </div>
+
+                <p className="md:col-span-5 mb-4 md:mb-0">{item.title}</p>
+
+                <div className="md:col-span-4 text-sm">
+                  {item.speakers.map((speaker, index) => (
+                    <p key={index} className="mb-1">
+                      {speaker}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            {!showAll && (
+              <div className="flex justify-center mt-10">
+                <button
+                  onClick={() => setShowAll(true)}
+                  className="conclave-button"
+                >
+                  Read More
+                </button>
+              </div>
+            )}
+          </div>
         </div>
-      )}
-    </div>
-  </div>
-</section>
-
-
+      </section>
 
       {/*============= SPEAKERS ================ */}
       <div className="NewsLetterPage">

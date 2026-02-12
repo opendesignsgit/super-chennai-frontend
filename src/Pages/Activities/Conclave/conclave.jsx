@@ -1416,45 +1416,44 @@ export default function Conclave() {
             </div> */}
 
             <div className="exploreSldierSection">
-  {partners.length > 2 ? (
-    <Slider {...settings}>
-      {partners.map((card) => (
-        <div
-          key={card.id}
-          className="ExplorePageSliderImage cursor-pointer px-2"
-          onClick={() => setSelectedCard(card)}
-        >
-          <div className="relative rounded-lg overflow-hidden flex justify-center">
-            <img
-              src={card.image}
-              alt={card.name}
-              className="h-[200px] object-contain partnercardimage"
-            />
-          </div>
-        </div>
-      ))}
-    </Slider>
-  ) : (
-    <div className="flex justify-center gap-8 flex-wrap">
-      {partners.map((card) => (
-        <div
-          key={card.id}
-          className="ExplorePageSliderImage cursor-pointer"
-          onClick={() => setSelectedCard(card)}
-        >
-          <div className="relative rounded-lg overflow-hidden flex justify-center">
-            <img
-              src={card.image}
-              alt={card.name}
-              className="h-[200px] object-contain partnercardimage"
-            />
-          </div>
-        </div>
-      ))}
-    </div>
-  )}
-</div>
-
+              {partners.length > 2 ? (
+                <Slider {...settings}>
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer px-2"
+                      onClick={() => setSelectedCard(card)}
+                    >
+                      <div className="relative rounded-lg overflow-hidden flex justify-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="h-[200px] object-contain partnercardimage"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              ) : (
+                <div className="flex justify-center gap-8 flex-wrap">
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer"
+                      onClick={() => setSelectedCard(card)}
+                    >
+                      <div className="relative rounded-lg overflow-hidden flex justify-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="h-[200px] object-contain partnercardimage"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

@@ -170,6 +170,36 @@ export default function HotshotChennaiContest() {
     }
   };
 
+
+  const HotshotsSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id":
+        "https://www.superchennai.com/contest/hotshots-photography-contest",
+    },
+    headline: "Super Chennai HotShots Photography Contest",
+    description:
+      "Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life.",
+    image:
+      "https://www.superchennai.com/images/events/inner-banner-Hotshots-1.jpeg",
+    author: {
+      "@type": "Person",
+      name: "Super Chennai",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "",
+      logo: {
+        "@type": "ImageObject",
+        url: "",
+      },
+    },
+    datePublished: "2025-11-01",
+  };
+
+
   return (
     <>
       {/* ================= SEO ================= */}
@@ -197,10 +227,15 @@ export default function HotshotChennaiContest() {
           content="https://www.superchennai.com/contest/hotshots-photography-contest"
         />
 
-         <link
+        <link
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/contest/hotshots-photography-contest`}
         />
+
+        <script type="application/ld+json">
+          {JSON.stringify(HotshotsSchema)}
+        </script>
+
       </Helmet>
 
       <ToastContainer position="top-center" />

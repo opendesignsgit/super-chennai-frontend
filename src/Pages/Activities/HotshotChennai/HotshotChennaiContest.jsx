@@ -196,6 +196,11 @@ export default function HotshotChennaiContest() {
           property="og:url"
           content="https://www.superchennai.com/contest/hotshots-photography-contest"
         />
+
+         <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/contest/hotshots-photography-contest`}
+        />
       </Helmet>
 
       <ToastContainer position="top-center" />

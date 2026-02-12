@@ -287,6 +287,8 @@ import MargazhiMomentsContest from "./Pages/Activities/MargazhiMonth/MargazhiMom
 import MargazhiPageCalendar from "./Pages/Activities/MargazhiMonth/MargazhiPage";
 import HotshotChennaiContest from "./Pages/Activities/HotshotChennai/HotshotChennaiContest";
 import Conclave from "./Pages/Activities/Conclave/conclave"
+import DevConclave from "./Pages/Activities/Conclave/devCon"
+
 
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
@@ -815,6 +817,9 @@ function App() {
             />
 
             <Route path="/chennai-conclave" element={<Conclave />} />
+            <Route path="/devConclave" element={<DevConclave />} />
+
+            
 
             {/* conclave */}
             <Route path="/admin-superchennai" element={<AdminView />} />

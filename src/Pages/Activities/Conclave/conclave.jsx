@@ -352,6 +352,10 @@ export const partners = [
     id: 1,
     image: "/images/partnersLogo/RADIOCITY-LOGO-PNG.png",
   },
+   {
+    id: 1,
+    image: "/images/partnersLogo/IE-partner.jpeg",
+  },
 ];
 
 const infoData = [
@@ -470,7 +474,7 @@ export default function Conclave() {
   const settings = {
     dots: false,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 1502220,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -1377,8 +1381,8 @@ export default function Conclave() {
               </Slider>
             </div> */}
 
-            <div className="exploreSldierSection">
-              {partners.length > 1 ? (
+            {/* <div className="exploreSldierSection">
+              {partners.length > 0 ? (
                 <Slider {...settings}>
                   {partners.map((card) => (
                     <div
@@ -1409,7 +1413,48 @@ export default function Conclave() {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
+
+            <div className="exploreSldierSection">
+  {partners.length > 2 ? (
+    <Slider {...settings}>
+      {partners.map((card) => (
+        <div
+          key={card.id}
+          className="ExplorePageSliderImage cursor-pointer px-2"
+          onClick={() => setSelectedCard(card)}
+        >
+          <div className="relative rounded-lg overflow-hidden flex justify-center">
+            <img
+              src={card.image}
+              alt={card.name}
+              className="h-[200px] object-contain partnercardimage"
+            />
+          </div>
+        </div>
+      ))}
+    </Slider>
+  ) : (
+    <div className="flex justify-center gap-8 flex-wrap">
+      {partners.map((card) => (
+        <div
+          key={card.id}
+          className="ExplorePageSliderImage cursor-pointer"
+          onClick={() => setSelectedCard(card)}
+        >
+          <div className="relative rounded-lg overflow-hidden flex justify-center">
+            <img
+              src={card.image}
+              alt={card.name}
+              className="h-[200px] object-contain partnercardimage"
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  )}
+</div>
+
           </div>
         </div>
       </div>

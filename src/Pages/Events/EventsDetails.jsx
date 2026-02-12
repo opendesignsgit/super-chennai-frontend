@@ -282,6 +282,62 @@ export default function EventsDetails() {
     },
   };
 
+   const KarthicSinkerEvent = [
+     {
+       "@context": "https://schema.org",
+       "@type": "Event",
+       name: "Karthik Live",
+       description:
+         "This music concert in Chennai features Karthik’s multi-language hits, soulful melodies, and vibrant stage energy, creating a memorable live experience for every listener.",
+       image:
+         "https://demo.superchennai.com/api/media/file/Karthik%20Live%20-%20Chennai.jpg",
+       startDate: "2026-02-28T19:30",
+       endDate: "2026-02-28T21:30",
+       eventStatus: "https://schema.org/EventScheduled",
+       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+       location: {
+         "@type": "Place",
+         name: "YMCA Ground",
+         address: {
+           "@type": "PostalAddress",
+           streetAddress: "Nandanam",
+           addressLocality: "Chennai",
+           postalCode: "600035",
+           addressCountry: "IN",
+         },
+       },
+       performer: {
+         "@type": "MusicGroup",
+         name: "Karthik",
+       },
+     },
+     {
+       "@context": "https://schema.org/",
+       "@type": "BreadcrumbList",
+       itemListElement: [
+         {
+           "@type": "ListItem",
+           position: 1,
+           name: "Home",
+           item: "https://www.superchennai.com/",
+         },
+         {
+           "@type": "ListItem",
+           position: 2,
+           name: "Events in Chennai",
+           item: "https://www.superchennai.com/chennai-events",
+         },
+         {
+           "@type": "ListItem",
+           position: 3,
+           name: "Karthik Live",
+           item: "https://www.superchennai.com/events-in-chennai/music-concert-karthik-live",
+         },
+       ],
+     },
+   ];
+
+
 
   // ######## SCROLLER FOR PARTNER SETTINGS############  TEMPORRY SCROLL 
 
@@ -329,6 +385,12 @@ export default function EventsDetails() {
         {slug === "credai-chennai-fairpro-2026" && (
           <script type="application/ld+json">
             {JSON.stringify(CREDAISCHEMA)}
+          </script>
+        )}
+
+         {slug === "music-concert-karthik-live" && (
+          <script type="application/ld+json">
+            {JSON.stringify(KarthicSinkerEvent)}
           </script>
         )}
       </Helmet>

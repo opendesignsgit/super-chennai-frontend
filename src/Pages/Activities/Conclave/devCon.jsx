@@ -888,7 +888,7 @@ export default function devConclave() {
               <div className="flex justify-end mt-10">
                 <button
                   onClick={() => setShowAll(true)}
-                  className="lavada-krishna"
+                  className="conclave-button"
                 >
                   Read
                   <br />

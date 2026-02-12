@@ -12,127 +12,6 @@ import { useEffect, useRef } from "react";
 import "./style.css";
 import { Helmet } from "react-helmet-async";
 
-const agendaData = [
-  {
-    "id": "01",
-    "startTime": "9:30 AM",
-    "endTime": "10:00 AM",
-    "title": "Keynote Address",
-    "speakers": []
-  },
-  {
-    "id": "02",
-    "startTime": "10:05 AM",
-    "endTime": "10:55 AM",
-    "title": "Becoming India’s Talent Capital",
-    "speakers": [
-      "Dr. Saundarya Rajesh – Managing Director, Avtar Group",
-      "Mr. K. Pandiarajan – Chairperson & Executive Director, CIEL HR Group",
-      "Anil Srinivasan – Founder, Kruu and Rhapsody, Musician"
-    ]
-  },
-  {
-    "id": "03",
-    "startTime": "11:00 AM",
-    "endTime": "11:50 AM",
-    "title": "Reimagining the City as a Launchpad for Future Businesses",
-    "speakers": [
-      "Mr. Ramkumar Ramamoorthy – Co-Founder & Partner, Catalincs",
-      "Mr. Sandeep Nanduri, I.A.S. – Managing Director, TIDCO",
-      "Mr. Ramakrishnan K – Senior Managing Director, Spark Capital",
-      "Mr. Gaurav Kumar – Founder & CEO, Yubi Group"
-    ]
-  },
-  {
-    "id": "04",
-    "startTime": "11:55 AM",
-    "endTime": "12:45 PM",
-    "title": "Becoming India’s Deep-Tech Hub for the World",
-    "speakers": [
-      "Mr. Vishesh Rajaram – Co-Founder & Managing Partner, Speciale Invest",
-      "Ms. Ashwini Asokan – Founder & CEO, Mad Street Den",
-      "Mr. Srinath Ravichandran – Co-Founder & CEO, Agnikul Cosmos"
-    ]
-  },
-  {
-    "id": "05",
-    "startTime": "12:45 PM",
-    "endTime": "1:20 PM",
-    "title": "Fireside Chat",
-    "speakers": [
-      "Mr. Sivarajah Ramanathan – Mission Director & CEO, Startup TN"
-    ]
-  },
-  {
-    "id": "06",
-    "startTime": "1:20 PM",
-    "endTime": "2:00 PM",
-    "title": "BREAK",
-    "speakers": []
-  },
-  {
-    "id": "07",
-    "startTime": "2:00 PM",
-    "endTime": "2:50 PM",
-    "title": "Crafting a World-Class Visitor Experience",
-    "speakers": [
-      "Mr. Vikram Cotah – CEO, GRT Hotels",
-      "Mr. Hari Ganapathy – Co-Founder, Pickyourtrail",
-      "Mr. Arun Vasu – Managing Director, TT Group",
-      "Ms. Gayathri Thyagarajan – CEO & Founder, Kynhood Technologies"
-    ]
-  },
-  {
-    "id": "08",
-    "startTime": "2:55 PM",
-    "endTime": "3:45 PM",
-    "title": "A City That Works for Everyone",
-    "speakers": [
-      "Mr. Raj Cherubal – Executive Director, Chennai Smart City Limited",
-      "Mr. Mohamed Ali – President, CREDAI Chennai",
-      "Mr. Sivakrishnamurthy, I.A.S. – Deputy Commissioner (Works)",
-      "Ms. Aswathy Dilip – Managing Director, ITDP India"
-    ]
-  },
-  {
-    "id": "09",
-    "startTime": "3:50 PM",
-    "endTime": "4:40 PM",
-    "title": "The Stories We Don't Tell About Chennai, and Why They Matter",
-    "speakers": [
-      "Mr. Arun Ram – Resident Editor, The Times of India",
-      "Mr. Prem Shanker – Senior Executive Editor, Puthiya Thalaimurai TV",
-      "Mr. T.M. Veeraraghav – Executive Editor, NDTV"
-    ]
-  },
-  {
-    "id": "10",
-    "startTime": "4:40 PM",
-    "endTime": "4:55 PM",
-    "title": "BREAK",
-    "speakers": []
-  },
-  {
-    "id": "11",
-    "startTime": "5:00 PM",
-    "endTime": "5:30 PM",
-    "title": "Fireside Chat – TBA",
-    "speakers": []
-  },
-  {
-    "id": "12",
-    "startTime": "5:35 PM",
-    "endTime": "6:05 PM",
-    "title": "Fireside Chat – Enabling the Industries That Will Build Tomorrow's Chennai",
-    "speakers": [
-      "Mr. T.R.B. Rajaa – Minister for Industries, Investment Promotion and Commerce, Government of Tamil Nadu"
-    ]
-  }
-
-];
-
-
-
 export const speakersGallery = [
   {
     id: 1,
@@ -664,11 +543,6 @@ export default function Conclave() {
     };
   }, []);
 
-
-    const [showAll, setShowAll] = useState(false);
-    const visibleData = showAll ? agendaData : agendaData.slice(0, 4);
-
-
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
@@ -846,117 +720,188 @@ export default function Conclave() {
 
       {/* ================== AGENDA SECTION ================== */}
 
-      {/* <section className=" Becameavolunteerbg-conclves relative">
+      {/* <section className="py-20 bg-gray-50 overflow-hidden">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+            <div className="volunteeerMainContent">
+              <h3>OUR AGENDA</h3>
+
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                The Conclave Agenda provides a clear and structured overview of
+                the day’s sessions, including exact timings and session topics.
+                Each time slot is carefully planned to ensure focused
+                discussions and meaningful engagement.
+              </p>
+
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                Each session lists the speaker names and their designations for
+                better clarity and context.
+              </p>
+
+              <p className="text-gray-700 text-lg leading-relaxed">
+                The simple timeline format helps attendees follow the event
+                smoothly and plan their participation effectively.{" "}
+              </p>
+            </div>
+
+
+        
+
+            <div className="relative h-[500px] overflow-hidden rounded-xl bg-white shadow-lg">
+              <div
+                ref={scrollRef}
+                className="h-full h-full overflow-y-auto agenda-scroll  p-10 space-y-6 text-sm text-gray-700 leading-relaxed"
+              >
+                <div className="autoinfonew">
+                  <h3>9.30 am – 10.00 am Keynote Address</h3>
+
+                  <h3>10.05 am – 10.55 am Becoming India’s talent capital</h3>
+                  <p>Dr. Saundarya Rajesh, Managing Director, Avtar Group</p>
+                  <p>
+                    Mr. K. Pandiarajan, Chairperson & Executive Director, CIEL
+                    HR Group
+                  </p>
+                  <p>Anil Srinivasan – Founder, Kruu and Rhapsody, Musician</p>
+
+                  <h3>
+                    11.00 am – 11.50 am Reimagining the city as a launchpad for
+                    future businesses
+                  </h3>
+                  <p>
+                    Mr. Ramkumar Ramamoorthy, Co-Founder & Partner, Catalincs
+                  </p>
+                  <p>Mr. Sandeep Nanduri, I.A.S., Managing Director, TIDCO</p>
+                  <p>
+                    Mr. Ramakrishnan K, Senior Managing Director, Spark Capital
+                  </p>
+                  <p>Mr. Gaurav Kumar, Founder & CEO, Yubi Group</p>
+
+                  <h3>
+                    11.55 am – 12.45 pm Becoming India’s deep-tech hub for the
+                    world
+                  </h3>
+                  <p>
+                    Mr. Vishesh Rajaram, Co-Founder & Managing Partner, Speciale
+                    Invest
+                  </p>
+                  <p>Ms. Ashwini Asokan, Founder & CEO, Mad Street Den</p>
+                  <p>
+                    Mr. Srinath Ravichandran, Co-Founder & CEO, Agnikul Cosmos
+                  </p>
+
+                  <h3>12.45 pm – 1.20 pm Fireside Chat</h3>
+                  <p>
+                    Mr. Sivarajah Ramanathan, Mission Director & CEO, Startup TN
+                  </p>
+
+                  <h3>1.20 pm – 2.00 pm BREAK</h3>
+
+                  <h3>
+                    2.00 pm – 2.50 pm Crafting a world-class visitor experience
+                  </h3>
+                  <p>Mr. Vikram Cotah, CEO, GRT Hotels</p>
+                  <p>Mr. Hari Ganapathy, Co-Founder, Pickyourtrail</p>
+                  <p>Mr. Arun Vasu, Managing Director, TT Group</p>
+                  <p>
+                    Ms. Gayathri Thyagarajan, CEO & Founder, Kynhood
+                    Technologies
+                  </p>
+
+                  <h3>2.55 pm – 3.45 pm A city that works for everyone</h3>
+                  <p>
+                    Mr. Raj Cherubal, Executive Director, Chennai Smart City
+                    Limited
+                  </p>
+                  <p>Mr. Mohamed Ali, President, CREDAI Chennai</p>
+                  <p>
+                    Mr. Sivakrishnamurthy, I.A.S., Deputy Commissioner (Works)
+                  </p>
+                  <p>Ms. Aswathy Dilip, Managing Director, ITDP India</p>
+
+                  <h3>
+                    3.50 pm – 4.40 pm The stories we don't tell about Chennai,
+                    and why they matter
+                  </h3>
+                  <p>Mr. Arun Ram – Resident Editor, The Times of India</p>
+                  <p>
+                    Mr. Prem Shanker, Senior Executive Editor, Puthiya
+                    Thalaimurai TV
+                  </p>
+                  <p>Mr. T.M. Veeraraghav, Executive Editor, NDTV</p>
+
+                  <h3>4.40 pm – 4.55 pm BREAK</h3>
+
+                  <h3>5:00 pm – 5:30 pm Fireside Chat – TBA</h3>
+
+                  <h3>
+                    5.35 pm – 6.05 pm Fireside Chat – Enabling the industries
+                    that will build tomorrow's Chennai
+                  </h3>
+                  <p>
+                    Mr. T.R.B. Rajaa, Minister for Industries, Investment
+                    Promotion and Commerce, Government of Tamil Nadu
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="bg-[#e9efea] py-20 Becameavolunteerbg">
         <div className="max-w-6xl mx-auto px-6">
           <div className="BecameavolunteerContent text-center">
             <h2>OUR AGENDA</h2>
           </div>
 
-          <div className="space-y-0 divide-y divide-gray-400/40 text-white relative">
-            {visibleData.map((item) => (
-              <div
-                key={item.id}
-                className="grid grid-cols-12 py-8 items-center"
-              >
-                <div className="autoinfonew">
-                  <h3>{item.id}</h3>
-                </div>
-
-                <div className="col-span-2 text-sm font-bold">
-                  <p>{item.startTime} –</p>
-                  <p>{item.endTime}</p>
-                </div>
-
-                <p className="col-span-5 font-bold text-white">{item.title}</p>
-
-                <div className="col-span-4 text-sm font-bold text-white">
-                  {item.speakers.map((speaker, index) => (
-                    <p key={index} className="text-justify max-w-2xl mx-auto">
-                      {speaker}
-                    </p>
-                  ))}
-                </div>
+          <div className="space-y-0 divide-y divide-gray-400/40 text-white">
+            {/* Row 01 */}
+            <div className="grid grid-cols-12 py-8 items-center">
+              <div className="autoinfonew">
+                <h3>01</h3>
               </div>
-            ))}
-
-            {!showAll && (
-              <div className="flex justify-center mt-10">
-                <button
-                  onClick={() => setShowAll(true)}
-                  className="conclave-button"
-                >
-                  Read
-                  More
-                </button>
+              <div className="col-span-2 text-sm font-bold">
+                <p>9:30 AM –</p>
+                <p>10:00 AM</p>
               </div>
-            )}
-          </div>
-        </div>
-      </section> */}
+              
+              <p className="col-span-5 font-bold text-white">Keynote Address</p>
 
-   <section className="Becameavolunteerbg-conclves relative">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6">
-    <div className="BecameavolunteerContent text-center">
-      <h2>OUR AGENDA</h2>
-    </div>
+              <div className="col-span-4 text-sm text-gray-700"> </div>
+            </div>
 
-    <div className="space-y-0 divide-y divide-gray-400/40 text-white relative">
-      {visibleData.map((item) => (
-        <div
-          key={item.id}
-          className="
-            grid 
-            grid-cols-1 
-            md:grid-cols-12 
-            py-8 
-            items-center 
-            text-center 
-            md:text-left 
-            font-bold
-          "
-        >
-          {/* Number */}
-          <div className="autoinfonew flex justify-center md:justify-start mb-4 md:mb-0">
-            <h3>{item.id}</h3>
-          </div>
+            {/* Row 02 */}
+            <div className="grid grid-cols-12 py-8 items-center">
+              <div className="autoinfonew ">
+                <h3>02</h3>
+              </div>
 
-          {/* Time */}
-          <div className="md:col-span-2 text-sm mb-4 md:mb-0">
-            <p>{item.startTime} –</p>
-            <p>{item.endTime}</p>
-          </div>
+              <div className="col-span-2 text-sm font-bold">
+                <p>10:05 AM –</p>
+                <p>10:55 AM</p>
+              </div>
 
-          {/* Title */}
-          <p className="md:col-span-5 mb-4 md:mb-0">
-            {item.title}
-          </p>
-
-          {/* Speakers */}
-          <div className="md:col-span-4 text-sm">
-            {item.speakers.map((speaker, index) => (
-              <p key={index} className="mb-1">
-                {speaker}
+              <p className="col-span-5 font-bold ">
+                Becoming India’s Talent Capital
               </p>
-            ))}
+
+              <div className="col-span-4 text-sm text-gray-700 text-center mx-auto font-bold text-white">
+                <p className="text-justify max-w-2xl mx-auto">
+                  Dr. Saundarya Rajesh – Managing Director, Avtar Group
+                </p>
+                <p className="text-justify max-w-2xl mx-auto">
+                  Mr. K. Pandiarajan – Chairperson & Executive Director, CIEL HR
+                  Group
+                </p>
+                <p className="text-justify max-w-2xl mx-auto">
+                  Anil Srinivasan – Founder, Kruu and Rhapsody, Musician
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      ))}
-
-      {!showAll && (
-        <div className="flex justify-center mt-10">
-          <button
-            onClick={() => setShowAll(true)}
-            className="conclave-button"
-          >
-            Read More
-          </button>
-        </div>
-      )}
-    </div>
-  </div>
-</section>
-
-
+      </section>
 
       {/*============= SPEAKERS ================ */}
       <div className="NewsLetterPage">

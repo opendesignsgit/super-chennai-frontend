@@ -4,6 +4,7 @@ import Search from "./Search";
 import { Link } from "react-router-dom";
 
 const slides = [
+  
   // {
   //   type: "image",
   //   link: "https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/viewform",

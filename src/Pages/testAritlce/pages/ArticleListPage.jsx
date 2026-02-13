@@ -229,8 +229,6 @@ export default function ArticleListPage() {
 
   return (
     <>
-   
-
       <div className="accaodomationBannerSection relative w-full h-[280px] overflow-hidden">
         <img src="/images/banner-blog.jpg" alt="Blog Banner" />
         <div className="accodoamationBannerContainer">
@@ -273,7 +271,11 @@ export default function ArticleListPage() {
 
           <div className={mainCol}>
             {featuredEventArticle && (
-              <div className="grid lg:grid-cols-2 gap-6 mb-10 items-center ">
+              <Link
+                key={featuredEventArticle.id}
+                to={`/ArticleDetailPage/${featuredEventArticle.slug}`}
+                className="grid lg:grid-cols-2 gap-6 mb-10 items-center "
+              >
                 <div>
                   <p className="text-pink-600 text-sm font-semibold">
                     {featuredEventArticle.Articlecategory?.label}
@@ -297,7 +299,7 @@ export default function ArticleListPage() {
                   alt={featuredEventArticle.title}
                   className="rounded-lg w-full h-[320px] object-cover"
                 />
-              </div>
+              </Link>
             )}
 
             {loading ? (
@@ -312,7 +314,11 @@ export default function ArticleListPage() {
                       "/images/placeholder.jpg";
 
                     return (
-                      <div key={a.id} className="contents">
+                      <Link
+                        key={a.id}
+                        to={`/ArticleDetailPage/${a.slug}`}
+                        className="contents"
+                      >
                         <div className="bg-white rounded-md overflow-hidden">
                           <img
                             src={`${API_BASE_URL}${image}`}
@@ -340,7 +346,7 @@ export default function ArticleListPage() {
                             <SingleAdCard ad={embeddedAds[inlineAdIndex]} />
                           </div>
                         )}
-                      </div>
+                      </Link>
                     );
                   })}
                 </div>
@@ -405,13 +411,14 @@ export default function ArticleListPage() {
 
             {popularArticles.length > 0 && (
               <div className="mt-20 conclevesSectionHeading">
-                <h3 className=" mb-8"> Popular Articles</h3>
+                <h3 className="mb-8">Popular Articles</h3>
 
                 <div className="grid md:grid-cols-3 gap-6">
                   {popularArticles.map((a) => (
-                    <div
+                    <Link
                       key={a.id}
-                      className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition"
+                      to={`/ArticleDetailPage/${a.slug}`}
+                      className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition block"
                     >
                       <img
                         src={`${API_BASE_URL}${a.thumbnailImage?.url || a.heroImage?.url}`}
@@ -427,22 +434,21 @@ export default function ArticleListPage() {
                         <div className="formheadingtheme-article-cards">
                           <h4>{a.title}</h4>
                         </div>
+
                         <p className="text-gray-600 text-sm mt-2 line-clamp-3">
                           {a.excerpt}
                         </p>
 
                         {(a.views > 0 || a.readingTime > 0) && (
                           <div className="flex justify-between text-xs text-gray-500 mt-2">
-                            {a.views > 0 ? <span>👁 {a.views}</span> : <span />}
-                            {a.readingTime > 0 ? (
+                            {a.views > 0 && <span>👁 {a.views}</span>}
+                            {a.readingTime > 0 && (
                               <span>{a.readingTime} min read</span>
-                            ) : (
-                              <span />
                             )}
                           </div>
                         )}
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>

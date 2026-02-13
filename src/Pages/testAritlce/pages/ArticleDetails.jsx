@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { API_BASE_URL } from "../../../../config";
 import { useArticleBySlug } from "../hooks/useArticles";
 import "../style.css";
+import { useLocation } from "react-router-dom";
 
 /* ==============================
    HELPERS
@@ -214,11 +215,63 @@ const BottomAdBox = ({ ads }) => {
   );
 };
 
+
+const TopAdCard = ({ ad }) => {
+  const [show, setShow] = useState(true);
+  if (!show) return null;
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setShow(false)}
+        className="absolute top-2 right-2 h-8 w-8 flex items-center justify-center rounded-full
+             bg-white/90 backdrop-blur shadow-sm
+             text-gray-500 hover:text-gray-900
+             hover:bg-white transition"
+        aria-label="Close"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="h-4 w-4"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+
+      <img
+        src={withBaseUrl(ad.media?.url)}
+        alt={ad.altText || ad.title}
+        className="w-full h-[160px] object-cover rounded-lg"
+      />
+    </div>
+  );
+};
+
 /* ==============================
    PAGE
 ============================== */
 
 export default function ArticleDetailPage() {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant", 
+    });
+  }, [pathname]);
+
+
   const { slug } = useParams();
   const { article, ads, loading } = useArticleBySlug(slug);
 
@@ -259,25 +312,28 @@ export default function ArticleDetailPage() {
           />
         )}
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white">
-          <h1>{loading ? "Loading..." : article?.title}</h1>
-          <div>
-            <Link to="/">Home</Link> - <Link to="/blog">Articles</Link>
+      
+
+         <div className="accodoamationBannerContainer">
+          <div className="accodoamationBannerText">
+              <h3>{loading ? "Loading..." : article?.title}</h3>
+            <div className="breadCrum">
+              {/* <Link to="/">Home</Link> - <Link to="/blog">Articles</Link> */}
+            </div>
           </div>
         </div>
       </div>
 
+    
+
       {/* TOP ADS */}
-      {topAds?.length > 0 && (
-        <div className="max-w-7xl mx-auto px-4 mt-6 grid md:grid-cols-2 gap-6">
-          {topAds.map((ad) => (
-            <img
-              key={ad.id}
-              src={withBaseUrl(ad.media?.url)}
-              alt={ad.title}
-              className="rounded-lg"
-            />
-          ))}
+         {topAds?.length > 0 && (
+        <div className="max-w-7xl mx-auto px-4 mt-6">
+          <div className="grid md:grid-cols-2 gap-6">
+            {topAds.map((ad) => (
+              <TopAdCard key={ad.id} ad={ad} />
+            ))}
+          </div>
         </div>
       )}
 
@@ -286,10 +342,7 @@ export default function ArticleDetailPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {showLeftAds && leftAds?.length > 0 && (
             <div className="hidden lg:block lg:col-span-2">
-              <AdBox
-                ads={leftAds}
-                onAllClosed={() => setShowLeftAds(false)}
-              />
+              <AdBox ads={leftAds} onAllClosed={() => setShowLeftAds(false)} />
             </div>
           )}
 
@@ -298,20 +351,14 @@ export default function ArticleDetailPage() {
 
             {!loading && article && (
               <>
-                <h1 className="mt-2">{article.title}</h1>
-
-                {article.heroImage?.url && (
-                  <img
-                    src={withBaseUrl(article.heroImage.url)}
-                    alt={article.title}
-                    className="w-full rounded-lg mb-6"
-                  />
-                )}
-
+               
                 <div className="space-y-6">
                   {blocks.map((block, index) => {
                     /* RICH TEXT */
-                    if (block.type === "paragraph" || block.type === "heading") {
+                    if (
+                      block.type === "paragraph" ||
+                      block.type === "heading"
+                    ) {
                       return parseLexical([block]);
                     }
 
@@ -330,19 +377,6 @@ export default function ArticleDetailPage() {
                       );
                     }
 
-                    /* INLINE AD BLOCK */
-
-                    // if (
-                    //   block.type === "block" &&
-                    //   block.fields?.blockType === "adBlock"
-                    // ) {
-                    //   const inlineAds = block.fields?.ads || [];
-                    //   return (
-                    //     <div key={index} className="my-6">
-                    //       <AdBox ads={inlineAds} />
-                    //     </div>
-                    //   );
-                    // }
 
                     return null;
                   })}

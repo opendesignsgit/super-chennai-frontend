@@ -131,8 +131,6 @@ const agendaData = [
 
 ];
 
-
-
 export const speakersGallery = [
   {
     id: 1,
@@ -353,8 +351,12 @@ export const partners = [
     image: "/images/partnersLogo/RADIOCITY-LOGO-PNG.png",
   },
    {
-    id: 1,
+    id: 2,
     image: "/images/partnersLogo/IE-partner.jpeg",
+  },
+     {
+    id: 3,
+    image: "/images/partnersLogo/DRA-logo.png",
   },
 ];
 
@@ -507,6 +509,19 @@ export default function Conclave() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < 768); // Tailwind md breakpoint
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
   /* ================= HELPER  ================= */
@@ -721,7 +736,7 @@ export default function Conclave() {
 
           <img
             className="block sm:hidden w-full"
-            src="/images/events/conclave-banner-mobile-banner.jpeg"
+            src="/images/events/conclave-banner-mobile-banner-1.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
@@ -1415,8 +1430,8 @@ export default function Conclave() {
               )}
             </div> */}
 
-            <div className="exploreSldierSection">
-              {partners.length > 2 ? (
+            {/* <div className="exploreSldierSection">
+              {partners.length > 3 ? (
                 <Slider {...settings}>
                   {partners.map((card) => (
                     <div
@@ -1441,6 +1456,47 @@ export default function Conclave() {
                       key={card.id}
                       className="ExplorePageSliderImage cursor-pointer"
                       onClick={() => setSelectedCard(card)}
+                    >
+                      <div className="relative rounded-lg overflow-hidden flex justify-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="h-[200px] object-contain partnercardimage"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div> */}
+
+            <div className="exploreSldierSection">
+              {(isMobile && partners.length >= 3) ||
+              (!isMobile && partners.length > 3) ? (
+                <Slider {...settings}>
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer px-2"
+                      onClick={() => setSelectedCard(card)}
+                    >
+                      <div className="relative rounded-lg overflow-hidden flex justify-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="h-[200px] object-contain partnercardimage"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              ) : (
+                <div className="flex justify-center gap-8 flex-wrap">
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer"
+                      // onClick={() => setSelectedCard(card)}
                     >
                       <div className="relative rounded-lg overflow-hidden flex justify-center">
                         <img

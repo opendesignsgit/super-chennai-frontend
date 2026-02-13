@@ -337,7 +337,34 @@ export default function EventsDetails() {
      },
    ];
 
-
+   const HipPOmAdhi = {
+     "@context": "https://schema.org",
+     "@type": "Event",
+     name: "Hip Hop Tamizha Aadhi's ROTDM - The Home Coming Finale | Chennai",
+     description:
+       "Witness the hip hop tamizha concert in Chennai as Aadhi Live Finale closes the ROTDM world tour with electrifying hits, hometown energy, and a grand stage spectacle.",
+     image:
+       "https://demo.superchennai.com/api/media/file/Hiphop%20Thamzhia.jpg",
+     startDate: "2026-03-07T18:30",
+     endDate: "2026-03-07T21:30",
+     eventStatus: "https://schema.org/EventScheduled",
+     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+     location: {
+       "@type": "Place",
+       name: "YMCA Ground",
+       address: {
+         "@type": "PostalAddress",
+         streetAddress: "Nandanam",
+         addressLocality: "Chennai",
+         postalCode: "600035",
+         addressCountry: "IN",
+       },
+     },
+     performer: {
+       "@type": "MusicGroup",
+       name: "Hip Hop Tamizha Aadhi",
+     },
+   };
 
   // ######## SCROLLER FOR PARTNER SETTINGS############  TEMPORRY SCROLL 
 
@@ -388,11 +415,18 @@ export default function EventsDetails() {
           </script>
         )}
 
-         {slug === "music-concert-karthik-live" && (
+        {slug === "music-concert-karthik-live" && (
           <script type="application/ld+json">
             {JSON.stringify(KarthicSinkerEvent)}
           </script>
         )}
+
+        {slug === "hip-hop-tamizha-concert-chennai-aadhi-finale-live" && (
+          <script type="application/ld+json">
+            {JSON.stringify(HipPOmAdhi)}
+          </script>
+        )}
+
       </Helmet>
 
       <section className="accaodomationBannerSection">
@@ -600,8 +634,7 @@ export default function EventsDetails() {
                   ))}
                 </Slider>
 
-
-                 {/* {partners.map((card) => (
+                {/* {partners.map((card) => (
                     <div
                       key={card.id}
                       className="ExplorePageSliderImage cursor-pointer px-2 flex justify-center items-center"

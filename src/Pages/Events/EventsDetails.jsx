@@ -15,7 +15,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const partners = [
-  { id: 1, name:"radiance", image: "/images/credai/Radiance Logo.webp" },
+  { id: 1, name: "radiance", image: "/images/credai/Radiance Logo.webp" },
   { id: 2, image: "/images/credai/Rajaratnam Logo - RCPL.webp" },
   { id: 3, image: "/images/credai/Rajkam_Logo.webp" },
   { id: 4, image: "/images/credai/Rajparis Logo.webp" },
@@ -29,11 +29,13 @@ export const partners = [
   { id: 12, image: "/images/credai/Sidharth NEW LOGO.webp" },
   { id: 13, image: "/images/credai/silversky final logo.webp" },
   { id: 14, image: "/images/credai/South India Shelters - SIS NEW LOGO.webp" },
-  { id: 15, image: "/images/credai/SPR INDIA BUILDING WITH PURPOSE_Horizontal1.webp" },
+  {
+    id: 15,
+    image: "/images/credai/SPR INDIA BUILDING WITH PURPOSE_Horizontal1.webp",
+  },
   { id: 16, image: "/images/credai/Sree Venkateswara Homes Logo.webp" },
   { id: 17, image: "/images/credai/Sreerosh-Properties-Logo.webp" },
   { id: 18, image: "/images/credai/Sri Lakshmi Homes Logo.webp" },
-
 
   { id: 19, image: "/images/credai/STEPSSTONE LOGO.webp" },
   { id: 20, image: "/images/credai/TRAVENTURE LOGO TM FINAL.webp" },
@@ -42,7 +44,10 @@ export const partners = [
   { id: 23, image: "/images/credai/TVS Emerald logo.webp" },
   { id: 24, image: "/images/credai/Urban Tree_Logo.webp" },
   { id: 25, image: "/images/credai/urbando-new.webp" },
-  { id: 26, image: "/images/credai/Urbanrise_WaterLeaves_Final_Full_sized.webp" },
+  {
+    id: 26,
+    image: "/images/credai/Urbanrise_WaterLeaves_Final_Full_sized.webp",
+  },
   { id: 27, image: "/images/credai/VGK_Logo.webp" },
   { id: 28, image: "/images/credai/VGN LOGO.webp" },
   { id: 29, image: "/images/credai/vijayraja logo hi - res.webp" },
@@ -102,11 +107,8 @@ export const partners = [
   { id: 80, image: "/images/credai/Pacifica Logo.webp" },
   { id: 81, image: "/images/credai/Pragnya_EP_Logo.webp" },
   { id: 82, image: "/images/credai/Prestige Group_Master Logo_Light.webp" },
-  { id: 83, image: "/images/credai/Puravankara Logo.webp" }
-
+  { id: 83, image: "/images/credai/Puravankara Logo.webp" },
 ];
-
-
 
 export default function EventsDetails() {
   const { slug } = useParams();
@@ -282,91 +284,119 @@ export default function EventsDetails() {
     },
   };
 
-   const KarthicSinkerEvent = [
-     {
-       "@context": "https://schema.org",
-       "@type": "Event",
-       name: "Karthik Live",
-       description:
-         "This music concert in Chennai features Karthik’s multi-language hits, soulful melodies, and vibrant stage energy, creating a memorable live experience for every listener.",
-       image:
-         "https://demo.superchennai.com/api/media/file/Karthik%20Live%20-%20Chennai.jpg",
-       startDate: "2026-02-28T19:30",
-       endDate: "2026-02-28T21:30",
-       eventStatus: "https://schema.org/EventScheduled",
-       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-       location: {
-         "@type": "Place",
-         name: "YMCA Ground",
-         address: {
-           "@type": "PostalAddress",
-           streetAddress: "Nandanam",
-           addressLocality: "Chennai",
-           postalCode: "600035",
-           addressCountry: "IN",
-         },
-       },
-       performer: {
-         "@type": "MusicGroup",
-         name: "Karthik",
-       },
-     },
-     {
-       "@context": "https://schema.org/",
-       "@type": "BreadcrumbList",
-       itemListElement: [
-         {
-           "@type": "ListItem",
-           position: 1,
-           name: "Home",
-           item: "https://www.superchennai.com/",
-         },
-         {
-           "@type": "ListItem",
-           position: 2,
-           name: "Events in Chennai",
-           item: "https://www.superchennai.com/chennai-events",
-         },
-         {
-           "@type": "ListItem",
-           position: 3,
-           name: "Karthik Live",
-           item: "https://www.superchennai.com/events-in-chennai/music-concert-karthik-live",
-         },
-       ],
-     },
-   ];
+  const KarthicSinkerEvent = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "Karthik Live",
+      description:
+        "This music concert in Chennai features Karthik’s multi-language hits, soulful melodies, and vibrant stage energy, creating a memorable live experience for every listener.",
+      image:
+        "https://demo.superchennai.com/api/media/file/Karthik%20Live%20-%20Chennai.jpg",
+      startDate: "2026-02-28T19:30",
+      endDate: "2026-02-28T21:30",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: "YMCA Ground",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Nandanam",
+          addressLocality: "Chennai",
+          postalCode: "600035",
+          addressCountry: "IN",
+        },
+      },
+      performer: {
+        "@type": "MusicGroup",
+        name: "Karthik",
+      },
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Events in Chennai",
+          item: "https://www.superchennai.com/chennai-events",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Karthik Live",
+          item: "https://www.superchennai.com/events-in-chennai/music-concert-karthik-live",
+        },
+      ],
+    },
+  ];
 
-   const HipPOmAdhi = {
-     "@context": "https://schema.org",
-     "@type": "Event",
-     name: "Hip Hop Tamizha Aadhi's ROTDM - The Home Coming Finale | Chennai",
-     description:
-       "Witness the hip hop tamizha concert in Chennai as Aadhi Live Finale closes the ROTDM world tour with electrifying hits, hometown energy, and a grand stage spectacle.",
-     image:
-       "https://demo.superchennai.com/api/media/file/Hiphop%20Thamzhia.jpg",
-     startDate: "2026-03-07T18:30",
-     endDate: "2026-03-07T21:30",
-     eventStatus: "https://schema.org/EventScheduled",
-     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-     location: {
-       "@type": "Place",
-       name: "YMCA Ground",
-       address: {
-         "@type": "PostalAddress",
-         streetAddress: "Nandanam",
-         addressLocality: "Chennai",
-         postalCode: "600035",
-         addressCountry: "IN",
-       },
-     },
-     performer: {
-       "@type": "MusicGroup",
-       name: "Hip Hop Tamizha Aadhi",
-     },
-   };
+  const HipPOmAdhi = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "Hip Hop Tamizha Aadhi's ROTDM - The Home Coming Finale | Chennai",
+    description:
+      "Witness the hip hop tamizha concert in Chennai as Aadhi Live Finale closes the ROTDM world tour with electrifying hits, hometown energy, and a grand stage spectacle.",
+    image: "https://demo.superchennai.com/api/media/file/Hiphop%20Thamzhia.jpg",
+    startDate: "2026-03-07T18:30",
+    endDate: "2026-03-07T21:30",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: {
+      "@type": "Place",
+      name: "YMCA Ground",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Nandanam",
+        addressLocality: "Chennai",
+        postalCode: "600035",
+        addressCountry: "IN",
+      },
+    },
+    performer: {
+      "@type": "MusicGroup",
+      name: "Hip Hop Tamizha Aadhi",
+    },
+  };
 
-  // ######## SCROLLER FOR PARTNER SETTINGS############  TEMPORRY SCROLL 
+  const GVMSCHEMA = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "Oru Oorile Oru GVM – Live at Victoria Public Hall",
+    description:
+      "An exclusive live evening inspired by Gautham Vasudev Menon at Victoria Public Hall, blending music, storytelling, and cinematic moments in Chennai.",
+    image:
+      "https://demo.superchennai.com/api/media/file/Oru%20Oorille%20our%20GVM.%20jpg",
+    startDate: "2026-02-15T18:00",
+    endDate: "2026-02-15T19:00",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: {
+      "@type": "Place",
+      name: "Victoria Public Hall",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Evr Salai, Park Town",
+        addressLocality: "chennai",
+        postalCode: "600003",
+        addressCountry: "IN",
+      },
+    },
+    performer: {
+      "@type": "PerformingGroup",
+      name: "Gautham Vasudev Menon",
+    },
+  };
+
+  // ######## SCROLLER FOR PARTNER SETTINGS############  TEMPORRY SCROLL
 
   const PrevArrow = ({ onClick }) => (
     <div onClick={onClick} className="ExplorePageLeftButton"></div>
@@ -427,6 +457,11 @@ export default function EventsDetails() {
           </script>
         )}
 
+        {slug === "autham-vasudev-menon-live-chennai-event" && (
+          <script type="application/ld+json">
+            {JSON.stringify(GVMSCHEMA)}
+          </script>
+        )}
       </Helmet>
 
       <section className="accaodomationBannerSection">

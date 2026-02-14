@@ -793,7 +793,7 @@ export default function Conclave() {
                 </span>
               </div>
 
-              <div className="text-center">
+              {/* <div className="text-center">
                 <div className="flex items-center justify-center gap-2 text-sm uppercase text-gray-500">
                   <img
                     src="/images/icons/location-icon.svg"
@@ -805,7 +805,7 @@ export default function Conclave() {
                 <span className="font-semibold block mt-1">
                   ITC Welcome Hotel, Chennai
                 </span>
-              </div>
+              </div> */}
             </div>
 
             {/* CTA */}
@@ -1353,8 +1353,8 @@ export default function Conclave() {
               Feb 19, 2026 <span className="mx-2 text-slate-300">|</span>
               Time: 09:30 AM Onwards
               <br />
-              <span className="mx-2 text-slate-300">|</span>
-              ITC Welcome Hotel, Chennai
+              {/* <span className="mx-2 text-slate-300">|</span>
+              ITC Welcome Hotel, Chennai */}
             </p>
 
             <button

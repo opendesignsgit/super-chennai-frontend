@@ -4,6 +4,7 @@ import { API_BASE_URL } from "../../../../config";
 import { useArticleBySlug } from "../hooks/useArticles";
 import "../style.css";
 import { useLocation } from "react-router-dom";
+import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
 
 /* ==============================
    HELPERS
@@ -153,11 +154,9 @@ const SingleAdCard = ({ ad, onClose }) => (
       ✕
     </button>
 
-    <img
-      src={withBaseUrl(ad.media?.url)}
-      alt={ad.altText || ad.title}
-      className="w-full rounded mb-2"
-    />
+   
+
+    <AdMedia ad={ad} />
 
     <p className="font-semibold text-sm">{ad.title}</p>
 
@@ -166,6 +165,34 @@ const SingleAdCard = ({ ad, onClose }) => (
     </Link>
   </div>
 );
+
+const AdMedia = ({ ad, className = "" }) => {
+  if (ad.mediaType === "video" && ad.mediaUrl) {
+    return (
+      <div className={`aspect-video w-full ${className}`}>
+        <iframe
+          className="w-full h-full rounded-lg"
+          src={convertToEmbedUrl(ad.mediaUrl)}
+          title={ad.title}
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+      </div>
+    );
+  }
+
+  if (ad.media?.url) {
+    return (
+      <img
+        src={withBaseUrl(ad.media?.url)}
+        alt={ad.altText || ad.title}
+        className={`w-full rounded-lg ${className}`}
+      />
+    );
+  }
+
+  return null;
+};
 
 const AdBox = ({ ads, onAllClosed }) => {
   const [visibleAds, setVisibleAds] = useState(ads);
@@ -203,18 +230,19 @@ const BottomAdBox = ({ ads }) => {
   return (
     <div className="fixed bottom-0 inset-x-0 bg-white border-t shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <img
+        {/* <img
           src={withBaseUrl(ad.media?.url)}
           alt={ad.altText || ad.title}
           className="h-12 rounded"
-        />
+        /> */}
+        <AdMedia ad={ad} className="mb-2" />
+
         <p className="font-semibold text-sm">{ad.title}</p>
         <button onClick={() => setShow(false)}>✕</button>
       </div>
     </div>
   );
 };
-
 
 const TopAdCard = ({ ad }) => {
   const [show, setShow] = useState(true);
@@ -245,15 +273,81 @@ const TopAdCard = ({ ad }) => {
           />
         </svg>
       </button>
-
+{/* 
       <img
         src={withBaseUrl(ad.media?.url)}
         alt={ad.altText || ad.title}
         className="w-full h-[160px] object-cover rounded-lg"
-      />
+      /> */}
+
+      <AdMedia ad={ad} />
+
     </div>
   );
 };
+
+const convertToEmbedUrl = (url) => {
+  if (!url) return "";
+
+  let videoId = "";
+
+  if (url.includes("youtube.com/watch")) {
+    videoId = new URL(url).searchParams.get("v");
+  } else if (url.includes("youtu.be/")) {
+    videoId = url.split("youtu.be/")[1];
+  }
+
+  if (!videoId) return "";
+
+  return `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&rel=0`;
+};
+
+
+const InlineAdBox = ({ ads }) => {
+  if (!ads?.length) return null;
+
+  return (
+    <div className="my-8">
+      {ads.map((ad) => (
+        <div key={ad.id} className="mb-6">
+          {/* VIDEO AD */}
+          {ad.mediaType === "video" && ad.mediaUrl ? (
+            <div className="aspect-video w-full">
+              <iframe
+                className="w-full h-full rounded-lg"
+                src={convertToEmbedUrl(ad.mediaUrl)}
+                title={ad.title}
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              />
+            </div>
+          ) : (
+            /* IMAGE AD */
+            ad.media?.url && (
+              <a
+                href={ad.targetUrl || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={withBaseUrl(ad.media?.url)}
+                  alt={ad.altText || ad.title}
+                  className="w-full rounded-lg"
+                />
+              </a>
+            )
+          )}
+
+          {ad.caption && (
+            <p className="text-sm text-gray-500 mt-2">{ad.caption}</p>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
 
 /* ==============================
    PAGE
@@ -274,6 +368,9 @@ export default function ArticleDetailPage() {
 
   const { slug } = useParams();
   const { article, ads, loading } = useArticleBySlug(slug);
+  
+  console.log("artcle data",article)
+    console.log("ads-detail",ads)
 
   const [showLeftAds, setShowLeftAds] = useState(true);
   const [showRightAds, setShowRightAds] = useState(true);
@@ -293,16 +390,27 @@ export default function ArticleDetailPage() {
   const topAds = filterAds("top");
   const bottomAds = filterAds("bottom");
 
-  const mainCol =
-    showLeftAds && showRightAds
-      ? "lg:col-span-8"
-      : showLeftAds || showRightAds
-      ? "lg:col-span-10"
-      : "lg:col-span-12";
+
+  const hasLeft = showLeftAds && leftAds?.length > 0;
+  const hasRight = showRightAds && rightAds?.length > 0;
+
+  // const mainCol =
+  //   hasLeft && hasRight
+  //     ? "lg:col-span-8"
+  //     : hasLeft || hasRight
+  //       ? "lg:col-span-10"
+  //       : "lg:col-span-12";
+  //        hasSideAds ? "lg:col-span-8" : "lg:col-span-12";
+
+  const hasSideAds = hasLeft || hasRight;
+
+const mainCol = hasSideAds
+  ? "lg:col-span-8"
+  : "lg:col-span-12";
+
 
   return (
     <>
-      {/* HERO */}
       <div className="relative w-full h-[380px] overflow-hidden">
         {article?.heroImage?.url && (
           <img
@@ -312,22 +420,25 @@ export default function ArticleDetailPage() {
           />
         )}
         <div className="absolute inset-0 bg-black/50" />
-      
 
-         <div className="accodoamationBannerContainer">
+        <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-              <h3>{loading ? "Loading..." : article?.title}</h3>
-            <div className="breadCrum">
-              {/* <Link to="/">Home</Link> - <Link to="/blog">Articles</Link> */}
-            </div>
+
+             <AutoShrinkText
+              text={ article?.title || "Super Chennai Article"}
+              baseSize={60}
+              minSize={40}
+              maxChars={40}
+              className="accodoamationBannerText"
+              width="80%"
+              maxLines={2}
+            />
+            <div className="breadCrum"></div>
           </div>
         </div>
       </div>
 
-    
-
-      {/* TOP ADS */}
-         {topAds?.length > 0 && (
+      {topAds?.length > 0 && (
         <div className="max-w-7xl mx-auto px-4 mt-6">
           <div className="grid md:grid-cols-2 gap-6">
             {topAds.map((ad) => (
@@ -337,21 +448,31 @@ export default function ArticleDetailPage() {
         </div>
       )}
 
-      {/* CONTENT + SIDE ADS */}
-      <div className="max-w-7xl mx-auto px-4 mt-10 mb-10">
+      <div
+        className={`mx-auto px-4 mt-10 mb-10 ${
+          hasSideAds ? "max-w-8xl" : "max-w-6xl"
+        }`}
+      >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {showLeftAds && leftAds?.length > 0 && (
+          {/* {showLeftAds && leftAds?.length > 0 && (
             <div className="hidden lg:block lg:col-span-2">
               <AdBox ads={leftAds} onAllClosed={() => setShowLeftAds(false)} />
             </div>
-          )}
+          )} */}
+
+          {hasLeft ? (
+            <div className="hidden lg:block lg:col-span-2">
+              <AdBox ads={leftAds} onAllClosed={() => setShowLeftAds(false)} />
+            </div>
+          ) : hasSideAds ? (
+            <div className="hidden lg:block lg:col-span-2" />
+          ) : null}
 
           <div className={mainCol}>
             {loading && <p>Loading...</p>}
 
             {!loading && article && (
               <>
-               
                 <div className="space-y-6">
                   {blocks.map((block, index) => {
                     /* RICH TEXT */
@@ -377,6 +498,15 @@ export default function ArticleDetailPage() {
                       );
                     }
 
+                    if (
+                      block.type === "block" &&
+                      block.fields?.blockType === "adBlock" &&
+                      block.fields?.position === "inline"
+                    ) {
+                      return (
+                        <InlineAdBox key={index} ads={block.fields?.ads} />
+                      );
+                    }
 
                     return null;
                   })}
@@ -385,14 +515,25 @@ export default function ArticleDetailPage() {
             )}
           </div>
 
-          {showRightAds && rightAds?.length > 0 && (
+          {/* {showRightAds && rightAds?.length > 0 && (
             <div className="hidden lg:block lg:col-span-2">
               <AdBox
                 ads={rightAds}
                 onAllClosed={() => setShowRightAds(false)}
               />
             </div>
-          )}
+          )} */}
+
+          {hasRight ? (
+            <div className="hidden lg:block lg:col-span-2">
+              <AdBox
+                ads={rightAds}
+                onAllClosed={() => setShowRightAds(false)}
+              />
+            </div>
+          ) : hasSideAds ? (
+            <div className="hidden lg:block lg:col-span-2" />
+          ) : null}
         </div>
       </div>
 

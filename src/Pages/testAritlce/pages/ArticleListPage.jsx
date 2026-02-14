@@ -14,6 +14,35 @@ import "../styles.css";
 const withBaseUrl = (url) =>
   url ? `${API_BASE_URL}${url}` : "/images/placeholder.jpg";
 
+
+const AdMedia = ({ ad, className = "" }) => {
+  if (ad.mediaType === "video" && ad.mediaUrl) {
+    return (
+      <div className={`aspect-video w-full ${className}`}>
+        <iframe
+          className="w-full h-full rounded-lg"
+          src={convertToEmbedUrl(ad.mediaUrl)}
+          title={ad.title}
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+      </div>
+    );
+  }
+
+  if (ad.media?.url) {
+    return (
+      <img
+        src={withBaseUrl(ad.media?.url)}
+        alt={ad.altText || ad.title}
+        className={`w-full rounded-lg ${className}`}
+      />
+    );
+  }
+
+  return null;
+};
+
 const AdBox = ({ ads }) => {
   const [visibleAds, setVisibleAds] = useState([]);
 
@@ -48,12 +77,14 @@ const SingleAdCard = ({ ad, onClose }) => {
       >
         ✕
       </button>
-
+{/* 
       <img
         src={withBaseUrl(ad.media?.url)}
         alt={ad.altText || ad.title}
         className="w-full rounded mb-2"
-      />
+      /> */}
+
+      <AdMedia ad={ad} className="mb-2" />
 
       <p className="font-semibold text-sm">{ad.title}</p>
       <Link to={`/ads/${ad.slug}`} className="text-pink-600 text-xs">
@@ -73,11 +104,13 @@ const BottomAdBox = ({ ads }) => {
   return (
     <div className="fixed bottom-0 inset-x-0 bg-white border-t shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4 justify-between">
-        <img
+        {/* <img
           src={withBaseUrl(ad.media?.url)}
           alt={ad.altText || ad.title}
           className="h-12 object-contain rounded"
-        />
+        /> */}
+
+        <AdMedia ad={ad} className="mb-2" />
 
         <p className="font-semibold text-sm truncate">{ad.title}</p>
 
@@ -132,15 +165,32 @@ const TopAdCard = ({ ad }) => {
         </svg>
       </button>
 
-      <img
+      {/* <img
         src={withBaseUrl(ad.media?.url)}
         alt={ad.altText || ad.title}
         className="w-full h-[160px] object-cover rounded-lg"
-      />
+      /> */}
+
+      <AdMedia ad={ad} className="mb-2" />
     </div>
   );
 };
 
+const convertToEmbedUrl = (url) => {
+  if (!url) return "";
+
+  let videoId = "";
+
+  if (url.includes("youtube.com/watch")) {
+    videoId = new URL(url).searchParams.get("v");
+  } else if (url.includes("youtu.be/")) {
+    videoId = url.split("youtu.be/")[1];
+  }
+
+  if (!videoId) return "";
+
+  return `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&rel=0`;
+};
 /* ==============================
    PAGE
 ============================== */
@@ -203,12 +253,23 @@ export default function ArticleListPage() {
   const bottomAds = ads
     ?.filter((a) => a.position === "bottom")
     .flatMap((a) => a.ads);
-  const mainCol =
-    showLeftAds && showRightAds
-      ? "lg:col-span-8"
-      : showLeftAds || showRightAds
-        ? "lg:col-span-10"
-        : "lg:col-span-12";
+
+
+const hasLeft = showLeftAds && leftAds?.length > 0;
+const hasRight = showRightAds && rightAds?.length > 0;
+const hasSideAds = hasLeft || hasRight;
+
+
+  // const mainCol =
+  //   showLeftAds && showRightAds
+  //     ? "lg:col-span-8"
+  //     : showLeftAds || showRightAds
+  //       ? "lg:col-span-10"
+  //       : "lg:col-span-12";
+
+const mainCol = hasSideAds
+  ? "lg:col-span-8"
+  : "lg:col-span-12";
 
 
   //##################### MORE SECTION DTATA STRING ##########################################
@@ -251,7 +312,11 @@ export default function ArticleListPage() {
         </div>
       )}
 
-      <div className="max-w-8xl mx-auto px-4 mt-6 mt-10 mb-10">
+      <div
+        className={`mx-auto px-4 mt-10 mb-10 ${
+          hasSideAds ? "max-w-8xl" : "max-w-6xl"
+        }`}
+      >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {leftAds?.length > 0 && (
             <>
@@ -260,12 +325,14 @@ export default function ArticleListPage() {
                 <AdBox ads={leftAds.slice(0, 1)} />
               </div>
 
-              {/* Desktop */}
-              {showLeftAds && (
+
+              {hasLeft ? (
                 <div className="hidden lg:block lg:col-span-2">
                   <AdBox ads={leftAds} />
                 </div>
-              )}
+              ) : hasSideAds ? (
+                <div className="hidden lg:block lg:col-span-2" />
+              ) : null}
             </>
           )}
 
@@ -462,12 +529,14 @@ export default function ArticleListPage() {
                 <AdBox ads={rightAds.slice(0, 1)} />
               </div>
 
-              {/* Desktop sidebar */}
-              {showRightAds && (
+           
+              {hasRight ? (
                 <div className="hidden lg:block lg:col-span-2">
                   <AdBox ads={rightAds} />
                 </div>
-              )}
+              ) : hasSideAds ? (
+                <div className="hidden lg:block lg:col-span-2" />
+              ) : null}
             </>
           )}
         </div>

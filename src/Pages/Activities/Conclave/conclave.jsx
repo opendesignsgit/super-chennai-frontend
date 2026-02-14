@@ -429,7 +429,7 @@ const ConclaveSchmea = {
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: {
     "@type": "Place",
-    name: "ITC Welcome Hotel",
+    name: " ",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Cathedral Road",

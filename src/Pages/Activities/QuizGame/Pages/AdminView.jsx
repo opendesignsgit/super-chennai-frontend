@@ -169,10 +169,57 @@ export default function AdminView() {
     XLSX.writeFile(workbook, "Hotshot_Chennai_All_Entries.xlsx");
   };
 
-  const downloadConclaveXLS = () => {
+//   const downloadConclaveXLS = () => {
+
+
+//   if (!conclaveData || conclaveData.length === 0) return;
+
+
+//   const verifiedOnly = conclaveData.filter(
+//     (d) => d.is_mobile_verified === true,
+//   );
+
+//   if (verifiedOnly.length === 0) {
+//     alert("No verified registrations found.");
+//     return;
+//   }
+
+//   const formattedData = conclaveData.map((d, i) => {
+//     const { date, time } = formatDateTime(d.created_at);
+
+//     return {
+//       "S.No": i + 1,
+//       Name: d.name || "",
+//       Email: d.email || "",
+//       Phone: d.phone || "",
+//       Company: d.company_name || "",
+//       Designation: d.designation || "",
+//       LinkedIn: d.linkedin_url || "",
+//       Date: date,
+//       Time: time,
+//     };
+//   });
+
+//   const worksheet = XLSX.utils.json_to_sheet(formattedData);
+//   const workbook = XLSX.utils.book_new();
+//   XLSX.utils.book_append_sheet(workbook, worksheet, "Conclave");
+
+//   XLSX.writeFile(workbook, "Conclave_Registrations.xlsx");
+// };
+const downloadConclaveXLS = () => {
   if (!conclaveData || conclaveData.length === 0) return;
 
-  const formattedData = conclaveData.map((d, i) => {
+  // ✅ Only verified users
+  const verifiedOnly = conclaveData.filter(
+    (d) => d.is_mobile_verified === true
+  );
+
+  if (verifiedOnly.length === 0) {
+    alert("No verified registrations found.");
+    return;
+  }
+
+  const formattedData = verifiedOnly.map((d, i) => {
     const { date, time } = formatDateTime(d.created_at);
 
     return {
@@ -192,7 +239,7 @@ export default function AdminView() {
   const workbook = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(workbook, worksheet, "Conclave");
 
-  XLSX.writeFile(workbook, "Conclave_Registrations.xlsx");
+  XLSX.writeFile(workbook, "Conclave_Verified_Registrations.xlsx");
 };
 
 

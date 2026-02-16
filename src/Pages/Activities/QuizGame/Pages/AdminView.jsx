@@ -311,10 +311,18 @@ export default function AdminView() {
                 showMessage={true}
               />
             )}
-            {activeTab === "conclave" && (
+            {/* {activeTab === "conclave" && (
               <SimpleTable
                 title="Conclave Registrations"
                 data={conclaveData}
+                description
+              />
+            )} */}
+
+            {activeTab === "conclave" && (
+              <SimpleTable
+                title="Conclave Registrations"
+                data={conclaveData.filter((d) => d.is_mobile_verified === true)}
                 description
               />
             )}

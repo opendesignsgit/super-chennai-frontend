@@ -534,6 +534,12 @@ export default function Conclave() {
   /* ================= SEND OTP ================= */
 
   const sendOtp = async () => {
+
+    if (!/^[6-9]\d{9}$/.test(form.phone)) {
+      toast.error("Enter valid 10 digit mobile number");
+      return;
+    }
+    
     if (!form.phone) {
       toast.error("Enter phone number");
       return;
@@ -1256,10 +1262,12 @@ export default function Conclave() {
                   <div className="relative">
                     <input
                       name="phone"
-                      placeholder="Phone *"
+                      placeholder="Enter 10 digit mobile number * "
                       className="border p-3 pr-28 rounded-lg w-full"
                       value={form.phone}
-                      onChange={handleChange}
+                       onChange={handleChange}
+                       maxLength={10}
+                      pattern="[6-9]{1}[0-9]{9}"
                       disabled={otpSent}
                       required
                     />

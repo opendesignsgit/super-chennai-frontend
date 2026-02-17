@@ -7575,16 +7575,148 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+
   {
-    id: 5,
+  "id": 62323,
+  "name": "Broadway Bus Stand Chennai Redevelopment",
+  "slug": "broadway-bus-stand-chennai-redevelopment",
+  "para": "Trending Chennai",
+  "TrendingCalendarMonth": "February 2026",
+  "TrendingCalendarTime": "—",
+  "TrendingCalendarCategory": "Infrastructure & Urban Development",
+  "image": "/images/trendingChennai/brodway-banner.jpeg",
+  "Homeimage": "/images/trendingChennai/brodway-main.jpeg",
+  "link": "/broadway-bus-stand-redevelopment",
+  "duration": "30 Months (Estimated Completion)",
+  "ageRestriction": "Not applicable",
+  "language": "Tamil & English",
+  "genre": "Infrastructure, Transport, Urban Development",
+  "venue": "Broadway Bus Stand (Parry’s Corner), Chennai",
+
+  "trendingDetails": `
+<p>
+<b>Chennai’s iconic Broadway Bus Stand begins a massive transformation! 🏗️✨</b><br/>
+The historic terminus is undergoing a ₹822.70 crore redevelopment to become a modern multi-modal transport hub integrating transit, retail, office spaces, and structured parking.
+</p>
+
+<p>
+To facilitate construction, bus operations were temporarily shifted from <b>January 24, 2026</b>. North-bound buses now operate from Ibrahim Salai (Royapuram), while south-bound services function from Island Grounds.
+</p>
+
+<h4>🏗️ Project Overview</h4>
+<ul>
+  <li>Total Project Cost: ₹822.70 crore</li>
+  <li>9-level multi-storey parking structure</li>
+  <li>8-storey modern bus terminal</li>
+  <li>Commercial, retail & office spaces integrated within the complex</li>
+</ul>
+
+<h4>🚌 Capacity & Infrastructure</h4>
+<ul>
+  <li>97 bus bays across two floors</li>
+  <li>Parking for 3,700+ vehicles</li>
+  <li>30 lifts & 27 escalators</li>
+  <li>Electric vehicle charging stations</li>
+  <li>Seamless metro connectivity</li>
+</ul>
+
+<h4>⏳ Timeline & Objective</h4>
+<p>
+Scheduled for completion in approximately 30 months, the project will replace the 1960s-era terminus with a commuter-friendly, world-class facility.
+</p>
+
+<ul>
+  <li>Reduces congestion in Parry’s Corner</li>
+  <li>Enhances urban mobility</li>
+  <li>Creates a seamless multi-modal transport experience</li>
+</ul>
+
+<p>
+🏙 <b>A landmark infrastructure upgrade set to redefine public transport in central Chennai.</b>
+</p>
+`,
+
+  "TrendingLink": "",
+  "YoutubeLink": "",
+  "meta": {
+    "title": "Trending Chennai : Broadway Bus Stand ₹822 Crore Redevelopment Update",
+    "desc": "Broadway Bus Stand Chennai undergoes ₹822 crore redevelopment into a modern multi-modal hub with parking, retail, and metro connectivity. Now trending in Chennai.",
+    "url": "https://www.superchennai.com/trending-chennai/broadway-bus-stand-redevelopment"
+  }
+},
+
+
+  {
+  "id": 62322,
+  "name": "Korukkupet Rail Overbridge",
+  "slug": "korukkupet-rail-overbridge-chennai",
+  "para": "Trending Chennai",
+  "TrendingCalendarMonth": "February 2026",
+  "TrendingCalendarTime": "—",
+  "TrendingCalendarCategory": "Infrastructure & Urban Development",
+  "image": "/images/trendingChennai/madhya-kailash-flyover-iiner.jpeg",
+  "Homeimage": "/images/trendingChennai/madhya-kailash-flyover-iiner.jpeg",
+  "link": "/korukkupet-rail-overbridge",
+  "duration": "—",
+  "ageRestriction": "Not applicable",
+  "language": "Tamil & English",
+  "genre": "Infrastructure, Transport, Urban Development",
+  "venue": "Korukkupet–Manali Road (Level Crossing 2B), North Chennai",
+
+  "trendingDetails": `
+<p>
+<b>North Chennai gets a major traffic upgrade! 🚧✨</b><br/>
+The Korukkupet Rail Overbridge at Korukkupet–Manali Road (Level Crossing 2B) was inaugurated on <b>February 12, 2026</b> by Hon’ble Chief Minister M. K. Stalin.
+</p>
+
+<p>
+Built to replace the busy railway level crossing, the new flyover ensures seamless vehicle movement and improved road safety for thousands of daily commuters.
+</p>
+
+<h4>📍 Project Highlights</h4>
+<ul>
+  <li>Location: Korukkupet–Manali Road, North Chennai</li>
+  <li>Length: 840 metres</li>
+  <li>Railway Span: 72 metres</li>
+  <li>Carriageway Width: 8.40 metres</li>
+  <li>Project Cost: ₹96.04 crore</li>
+</ul>
+
+<h4>🚦 Traffic & Connectivity Benefits</h4>
+<p>
+The overbridge eliminates long waiting times at Level Crossing 2B, significantly reducing congestion and enhancing safety.
+</p>
+
+<ul>
+  <li>Faster travel between Korukkupet, Tondiarpet, and Kodungaiyur</li>
+  <li>Reduced vehicle idling and traffic buildup</li>
+  <li>Smoother daily commute for residents and transport vehicles</li>
+</ul>
+
+<p>
+🏙 <b>A crucial infrastructure milestone strengthening North Chennai’s transport network and supporting uninterrupted urban mobility.</b>
+</p>
+`,
+
+  "TrendingLink": "",
+  "YoutubeLink": "",
+  "meta": {
+    "title": "Trending Chennai : Korukkupet Bridge Opens Infrastructure Update",
+    "desc": "The new Korukkupet bridge in North Chennai replaces Level Crossing 2B to ease traffic congestion. A ₹96 crore infrastructure project now trending in Chennai.",
+    "url": "https://www.superchennai.com/trending-chennai/korukkupet-bridge"
+  }
+},
+
+  {
+    id: 2325,
     name: "Madhya Kailash L-Shaped Flyover",
     slug: "madhya-kailash-l-shaped-flyover-chennai",
     para: "New in Chennai",
     TrendingCalendarMonth: "February 2026",
     TrendingCalendarTime: "—",
     TrendingCalendarCategory: "Infrastructure & Urban Development",
-    image: "/images/trendingChennai/madhya-kailash-flyover-iiner.jpeg",
-    Homeimage: "/images/trendingChennai/madhya-kailash-flyover.jpeg",
+    image: "/images/trendingChennai/L SHAPE-banner.jpeg",
+    Homeimage: "/images/trendingChennai/L SHAPE - SMALL SZE.jpeg",
     link: "/madhya-kailash-l-shaped-flyover",
     duration: "—",
     ageRestriction: "Not applicable",

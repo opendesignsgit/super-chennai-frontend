@@ -217,6 +217,9 @@ import Faq from "./Pages/Faq";
 import NewsletterForm from "./Components/NewsletterNew";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import RefundPolicy from "./Pages/RefundPolicy";
+import TermsAndConditions from "./Pages/termsAndConditions";
+
+
 
 import CarRally from "./Pages/CarRally";
 import CarRallyForm from "./Pages/CarRallyForm";
@@ -1375,6 +1378,9 @@ function App() {
             <Route path="/about-us" element={<About />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
+            <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
+
+            
             <Route
               path="/icon-of-the-july-month"
               element={<Iconofthemonth />}

@@ -23,7 +23,7 @@ export default function TermsAndConditions() {
   return (
     <>
       <Helmet>
-        <title>Refund Policy | Super Chennai</title>
+        <title>Terms and conditions | Super Chennai</title>
         <meta
           name="description"
           content="Refund & Return Policy for SuperChennai contest events."
@@ -34,13 +34,13 @@ export default function TermsAndConditions() {
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
-          <img src="/images/superchennai-refund-policy.jpg" alt="" />
+          <img src="/images/terms&condition-banner-superchennai.jpeg" alt="" />
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText">
-              <h3>Refund Policy</h3>
+              <h3>Terms and conditions </h3>
               <div className="breadCrum">
-                <Link to="/refund-policy"> Refund Policy </Link> -{" "}
-                <a href=""> Refund Policy</a>
+                <Link to="/refund-policy"> Terms and conditions  </Link> -{" "}
+                <a href="">Terms and conditions </a>
               </div>
             </div>
           </div>
@@ -62,33 +62,28 @@ export default function TermsAndConditions() {
             </div>
 
             <div className="workIntro">
-              <h3>Refund Policy </h3>
+              <h3>Terms And Conditions </h3>
 
               <p>
-                At SuperChennai Contest Events, we aim to provide a smooth and
-                transparent registration experience. Participants may request a
-                refund within <strong>7 days</strong> of registration,<br></br>{" "}
-                provided the contest or event date is still more than{" "}
-                <strong>48 hours</strong> away. All approved refunds will be
-                processed and credited to your original payment method within{" "}
-                <strong>7 days</strong>.
+                Terms & Conditions Welcome to www.superchennai.com. By accessing
+                this website, you agree to be bound by the following terms and
+                conditions. The content on this website is provided for general
+                information about Chennai. While we strive to keep the
+                information accurate and up to date, we make no warranties
+                regarding its completeness, reliability, or accuracy. All text,
+                images, logos, and website content are the property of Super
+                Chennai and may not be copied, reproduced, or used without prior
+                written permission.
               </p>
 
               <p>
-                If a contest or event is postponed, cancelled, or changed by our
-                team or venue partners, participants will automatically become
-                eligible for a <strong>full refund</strong>. You will be
-                notified through the mobile number or email provided during
-                registration, and the refund will be processed within the
-                standard timeframe.
-              </p>
-
-              <p>
-                Please note that once the contest/event has started, or if the
-                participant has already checked in or registered at the venue,
-                refunds cannot be processed. For any assistance regarding your
-                booking or refund status, our support team is here to help
-                anytime at{" "}
+                Users agree to use this website only for lawful purposes and not
+                to attempt any unauthorized access, misuse, or disruption of the
+                website or its services. This website may contain links to
+                third-party websites. We are not responsible for the content or
+                privacy practices of those websites. We reserve the right to
+                update or modify these Terms & Conditions at any time without
+                prior notice.
                 <a
                   className="text-blue-600 hover:underline"
                   href="mailto:hello@superchennai.com"

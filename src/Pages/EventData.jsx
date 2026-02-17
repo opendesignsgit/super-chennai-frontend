@@ -7575,25 +7575,24 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
-
   {
-  "id": 62323,
-  "name": "Broadway Bus Stand Chennai Redevelopment",
-  "slug": "broadway-bus-stand-chennai-redevelopment",
-  "para": "Trending Chennai",
-  "TrendingCalendarMonth": "February 2026",
-  "TrendingCalendarTime": "—",
-  "TrendingCalendarCategory": "Infrastructure & Urban Development",
-  "image": "/images/trendingChennai/brodway-banner.jpeg",
-  "Homeimage": "/images/trendingChennai/brodway-main.jpeg",
-  "link": "/broadway-bus-stand-redevelopment",
-  "duration": "30 Months (Estimated Completion)",
-  "ageRestriction": "Not applicable",
-  "language": "Tamil & English",
-  "genre": "Infrastructure, Transport, Urban Development",
-  "venue": "Broadway Bus Stand (Parry’s Corner), Chennai",
+    id: 62323,
+    name: "Broadway Bus Stand Chennai Redevelopment",
+    slug: "broadway-bus-stand-redevelopment",
+    para: "Trending Chennai",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "—",
+    TrendingCalendarCategory: "Infrastructure & Urban Development",
+    image: "/images/trendingChennai/brodway-banner.jpeg",
+    Homeimage: "/images/trendingChennai/brodway-main.jpeg",
+    link: "/broadway-bus-stand-redevelopment",
+    duration: "30 Months (Estimated Completion)",
+    ageRestriction: "Not applicable",
+    language: "Tamil & English",
+    genre: "Infrastructure, Transport, Urban Development",
+    venue: "Broadway Bus Stand (Parry’s Corner), Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 <b>Chennai’s iconic Broadway Bus Stand begins a massive transformation! 🏗️✨</b><br/>
 The historic terminus is undergoing a ₹822.70 crore redevelopment to become a modern multi-modal transport hub integrating transit, retail, office spaces, and structured parking.
@@ -7636,34 +7635,34 @@ Scheduled for completion in approximately 30 months, the project will replace th
 </p>
 `,
 
-  "TrendingLink": "",
-  "YoutubeLink": "",
-  "meta": {
-    "title": "Trending Chennai : Broadway Bus Stand ₹822 Crore Redevelopment Update",
-    "desc": "Broadway Bus Stand Chennai undergoes ₹822 crore redevelopment into a modern multi-modal hub with parking, retail, and metro connectivity. Now trending in Chennai.",
-    "url": "https://www.superchennai.com/trending-chennai/broadway-bus-stand-redevelopment"
-  }
-},
-
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "Broadway Bus Stand Chennai Redevelopment – Trending Chennai Update",
+      desc: "Broadway Bus Stand Chennai undergoes ₹822 crore redevelopment into a modern multi-modal hub with parking, retail, and metro connectivity. Now trending Chennai",
+      url: "https://www.superchennai.com/trending-chennai/broadway-bus-stand-redevelopment",
+    },
+  },
 
   {
-  "id": 62322,
-  "name": "Korukkupet Rail Overbridge",
-  "slug": "korukkupet-rail-overbridge-chennai",
-  "para": "Trending Chennai",
-  "TrendingCalendarMonth": "February 2026",
-  "TrendingCalendarTime": "—",
-  "TrendingCalendarCategory": "Infrastructure & Urban Development",
-  "image": "/images/trendingChennai/madhya-kailash-flyover-iiner.jpeg",
-  "Homeimage": "/images/trendingChennai/madhya-kailash-flyover-iiner.jpeg",
-  "link": "/korukkupet-rail-overbridge",
-  "duration": "—",
-  "ageRestriction": "Not applicable",
-  "language": "Tamil & English",
-  "genre": "Infrastructure, Transport, Urban Development",
-  "venue": "Korukkupet–Manali Road (Level Crossing 2B), North Chennai",
+    id: 62322,
+    name: "Korukkupet Rail Overbridge",
+    slug: "korukkupet-rail-overbridge-chennai",
+    para: "Trending Chennai",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "—",
+    TrendingCalendarCategory: "Infrastructure & Urban Development",
+    image: "/images/trendingChennai/madhya-kailash-flyover-iiner.jpeg",
+    Homeimage: "/images/trendingChennai/madhya-kailash-flyover-iiner.jpeg",
+    link: "/korukkupet-rail-overbridge",
+    duration: "—",
+    ageRestriction: "Not applicable",
+    language: "Tamil & English",
+    genre: "Infrastructure, Transport, Urban Development",
+    venue: "Korukkupet–Manali Road (Level Crossing 2B), North Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 <b>North Chennai gets a major traffic upgrade! 🚧✨</b><br/>
 The Korukkupet Rail Overbridge at Korukkupet–Manali Road (Level Crossing 2B) was inaugurated on <b>February 12, 2026</b> by Hon’ble Chief Minister M. K. Stalin.
@@ -7698,14 +7697,14 @@ The overbridge eliminates long waiting times at Level Crossing 2B, significantly
 </p>
 `,
 
-  "TrendingLink": "",
-  "YoutubeLink": "",
-  "meta": {
-    "title": "Trending Chennai : Korukkupet Bridge Opens Infrastructure Update",
-    "desc": "The new Korukkupet bridge in North Chennai replaces Level Crossing 2B to ease traffic congestion. A ₹96 crore infrastructure project now trending in Chennai.",
-    "url": "https://www.superchennai.com/trending-chennai/korukkupet-bridge"
-  }
-},
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "Trending Chennai : Korukkupet Bridge Opens Infrastructure Update",
+      desc: "The new Korukkupet bridge in North Chennai replaces Level Crossing 2B to ease traffic congestion. A ₹96 crore infrastructure project now trending in Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/korukkupet-bridge",
+    },
+  },
 
   {
     id: 2325,
@@ -7716,7 +7715,7 @@ The overbridge eliminates long waiting times at Level Crossing 2B, significantly
     TrendingCalendarTime: "—",
     TrendingCalendarCategory: "Infrastructure & Urban Development",
     image: "/images/trendingChennai/L SHAPE-banner.jpeg",
-    Homeimage: "/images/trendingChennai/L SHAPE - SMALL SZE.jpeg",
+    Homeimage: "/images/trendingChennai/L SHAPE-banner.jpeg",
     link: "/madhya-kailash-l-shaped-flyover",
     duration: "—",
     ageRestriction: "Not applicable",
@@ -7894,68 +7893,68 @@ Register now for your <b>FREE VIP Pass</b> and take the next step toward making 
     },
   },
 
-  {
-    id: 41212,
-    name: "ARR Live – Wonderment 2026",
-    slug: "ar-rahman-wonderment-tour-2026",
-    para: "What’s Chennai Trending",
-    TrendingCalendarMonth: "February 2026",
-    TrendingCalendarTime: "06:30 PM",
-    TrendingCalendarCategory: "Live Music Concert",
-    image: "/images/trendingChennai/banner-bookmyshow-6-Recovered.jpg.jpeg",
-    Homeimage: "/images/trendingChennai/ar-small.jpg.jpeg",
-    link: "/trending-chennai/ar-rahman-wonderment-tour-2026",
-    duration: "3 Hours 15 Minutes",
-    ageRestriction: "5 Years & Above",
-    language: "Tamil",
-    genre: "Live Music, Concert, Entertainment",
-    venue: "Jawaharlal Nehru Stadium, Chennai",
+//   {
+//     id: 41212,
+//     name: "ARR Live – Wonderment 2026",
+//     slug: "ar-rahman-wonderment-tour-2026",
+//     para: "What’s Chennai Trending",
+//     TrendingCalendarMonth: "February 2026",
+//     TrendingCalendarTime: "06:30 PM",
+//     TrendingCalendarCategory: "Live Music Concert",
+//     image: "/images/trendingChennai/banner-bookmyshow-6-Recovered.jpg.jpeg",
+//     Homeimage: "/images/trendingChennai/ar-small.jpg.jpeg",
+//     link: "/trending-chennai/ar-rahman-wonderment-tour-2026",
+//     duration: "3 Hours 15 Minutes",
+//     ageRestriction: "5 Years & Above",
+//     language: "Tamil",
+//     genre: "Live Music, Concert, Entertainment",
+//     venue: "Jawaharlal Nehru Stadium, Chennai",
 
-    trendingDetails: `
-<p>
-<b>Step into the magic of A.R. Rahman Live with the spectacular Wonderment Tour.</b> 🎶  
-Experience an unforgettable live music concert in Chennai as the legendary composer takes audiences on an extraordinary musical expedition.
-</p>
+//     trendingDetails: `
+// <p>
+// <b>Step into the magic of A.R. Rahman Live with the spectacular Wonderment Tour.</b> 🎶  
+// Experience an unforgettable live music concert in Chennai as the legendary composer takes audiences on an extraordinary musical expedition.
+// </p>
 
-<p>
-More than just a performance, <b>Wonderment</b> is a deeply immersive artistic experience—celebrating love, life, and the limitless power of music. Every melody, stunning visual, and rhythmic beat draws you into a world of awe and inspiration.
-</p>
+// <p>
+// More than just a performance, <b>Wonderment</b> is a deeply immersive artistic experience—celebrating love, life, and the limitless power of music. Every melody, stunning visual, and rhythmic beat draws you into a world of awe and inspiration.
+// </p>
 
-<p>
-With state-of-the-art sound, captivating visual storytelling, and A.R. Rahman’s unparalleled musical brilliance, <b>Wonderment – The Tour</b> redefines what a live concert can be.
-</p>
+// <p>
+// With state-of-the-art sound, captivating visual storytelling, and A.R. Rahman’s unparalleled musical brilliance, <b>Wonderment – The Tour</b> redefines what a live concert can be.
+// </p>
 
-<h4>📅 Event Details</h4>
-<ul>
-  <li>Date: Saturday, 14 February 2026</li>
-  <li>Time: 6:30 PM</li>
-  <li>Duration: 3 Hours 15 Minutes</li>
-  <li>Age Limit: 5 Years & Above</li>
-  <li>Language: Tamil</li>
-  <li>Venue: Jawaharlal Nehru Stadium, Chennai</li>
-</ul>
+// <h4>📅 Event Details</h4>
+// <ul>
+//   <li>Date: Saturday, 14 February 2026</li>
+//   <li>Time: 6:30 PM</li>
+//   <li>Duration: 3 Hours 15 Minutes</li>
+//   <li>Age Limit: 5 Years & Above</li>
+//   <li>Language: Tamil</li>
+//   <li>Venue: Jawaharlal Nehru Stadium, Chennai</li>
+// </ul>
 
-<p>
-✨ This Tamil music concert in Chennai promises a spellbinding evening where music meets magic, creating memories that stay long after the final note fades.
-</p>
+// <p>
+// ✨ This Tamil music concert in Chennai promises a spellbinding evening where music meets magic, creating memories that stay long after the final note fades.
+// </p>
 
-<p>
-🎟 <b>Book Now:</b><br/>
-<a href="https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets" target="_blank">
-https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets
-</a>
-</p>
-`,
+// <p>
+// 🎟 <b>Book Now:</b><br/>
+// <a href="https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets" target="_blank">
+// https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets
+// </a>
+// </p>
+// `,
 
-    TrendingLink:
-      "https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets",
-    YoutubeLink: "",
-    meta: {
-      title: "What’s Chennai Trending - A.R. Rahman’s Wonderment Tour 2026",
-      desc: "A.R. Rahman’s Wonderment Tour is a top pick in Trending Chennai, offering great music, stunning visuals, and a live show people are enjoying.",
-      url: "https://www.superchennai.com/trending-chennai/ar-rahman-wonderment-tour-2026",
-    },
-  },
+//     TrendingLink:
+//       "https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets",
+//     YoutubeLink: "",
+//     meta: {
+//       title: "What’s Chennai Trending - A.R. Rahman’s Wonderment Tour 2026",
+//       desc: "A.R. Rahman’s Wonderment Tour is a top pick in Trending Chennai, offering great music, stunning visuals, and a live show people are enjoying.",
+//       url: "https://www.superchennai.com/trending-chennai/ar-rahman-wonderment-tour-2026",
+//     },
+//   },
 
   {
     id: 28754,

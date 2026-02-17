@@ -235,10 +235,10 @@ const BottomAdBox = ({ ads }) => {
           alt={ad.altText || ad.title}
           className="h-12 rounded"
         /> */}
-        <AdMedia ad={ad} className="mb-2" />
+        <AdMedia ad={ad} className="mb-2 h-19 rounded" />
 
-        <p className="font-semibold text-sm">{ad.title}</p>
-        <button onClick={() => setShow(false)}>✕</button>
+        <p className="font-semibold text-sm p-5">{ad.title}</p>
+        <button onClick={() => setShow(false)} >✕</button>
       </div>
     </div>
   );
@@ -301,7 +301,6 @@ const convertToEmbedUrl = (url) => {
 
   return `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&rel=0`;
 };
-
 
 const InlineAdBox = ({ ads }) => {
   if (!ads?.length) return null;
@@ -374,8 +373,16 @@ export default function ArticleDetailPage() {
 
   const [showLeftAds, setShowLeftAds] = useState(true);
   const [showRightAds, setShowRightAds] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   const blocks = article?.content?.root?.children || [];
+
+  const paragraphBlocks = blocks.filter(
+  (block) =>
+    block.type === "paragraph" ||
+    block.type === "heading"
+);
+
 
   const sortByPriority = (items = []) =>
     [...items].sort((a, b) => (a.priority ?? 0) - (b.priority ?? 0));
@@ -423,9 +430,8 @@ const mainCol = hasSideAds
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-
-             <AutoShrinkText
-              text={ article?.title || "Super Chennai Article"}
+            <AutoShrinkText
+              text={article?.title || "Super Chennai Article"}
               baseSize={60}
               minSize={40}
               maxChars={40}
@@ -474,42 +480,56 @@ const mainCol = hasSideAds
             {!loading && article && (
               <>
                 <div className="space-y-6">
-                  {blocks.map((block, index) => {
-                    /* RICH TEXT */
-                    if (
-                      block.type === "paragraph" ||
-                      block.type === "heading"
-                    ) {
-                      return parseLexical([block]);
-                    }
+                  {/* {blocks.map((block, index) => { */}
+                  {(expanded ? blocks : paragraphBlocks.slice(0, 12)).map(
+                    (block, index) => {
+                      /* RICH TEXT */
+                      if (
+                        block.type === "paragraph" ||
+                        block.type === "heading"
+                      ) {
+                        return parseLexical([block]);
+                      }
 
-                    /* MEDIA BLOCK */
-                    if (
-                      block.type === "block" &&
-                      block.fields?.blockType === "mediaBlock"
-                    ) {
-                      return (
-                        <img
-                          key={index}
-                          src={withBaseUrl(block.fields.media?.url)}
-                          alt=""
-                          className="w-full rounded-lg"
-                        />
-                      );
-                    }
+                      /* MEDIA BLOCK */
+                      if (
+                        block.type === "block" &&
+                        block.fields?.blockType === "mediaBlock"
+                      ) {
+                        return (
+                          <img
+                            key={index}
+                            src={withBaseUrl(block.fields.media?.url)}
+                            alt=""
+                            className="w-full rounded-lg"
+                          />
+                        );
+                      }
 
-                    if (
-                      block.type === "block" &&
-                      block.fields?.blockType === "adBlock" &&
-                      block.fields?.position === "inline"
-                    ) {
-                      return (
-                        <InlineAdBox key={index} ads={block.fields?.ads} />
-                      );
-                    }
+                      if (
+                        block.type === "block" &&
+                        block.fields?.blockType === "adBlock" &&
+                        block.fields?.position === "inline"
+                      ) {
+                        return (
+                          <InlineAdBox key={index} ads={block.fields?.ads} />
+                        );
+                      }
 
-                    return null;
-                  })}
+                      return null;
+                    },
+                  )}
+
+                  {paragraphBlocks.length > 1 && (
+                    <div className="mt-6 text-center">
+                      <button
+                        onClick={() => setExpanded(!expanded)}
+                        className="px-6 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-700 transition"
+                      >
+                        {expanded ? "Read Less" : "Read More"}
+                      </button>
+                    </div>
+                  )}
                 </div>
               </>
             )}

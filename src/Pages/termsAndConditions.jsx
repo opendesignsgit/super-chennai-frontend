@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "../assets/Css/CostOfLiving.css";
 
-export default function RefundPolicy() {
+export default function TermsAndConditions() {
   const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
   const bgTextRef = useRef(null);
@@ -67,8 +67,8 @@ export default function RefundPolicy() {
               <p>
                 At SuperChennai Contest Events, we aim to provide a smooth and
                 transparent registration experience. Participants may request a
-                refund within <strong>7 days</strong> of registration,<br></br> provided
-                the contest or event date is still more than{" "}
+                refund within <strong>7 days</strong> of registration,<br></br>{" "}
+                provided the contest or event date is still more than{" "}
                 <strong>48 hours</strong> away. All approved refunds will be
                 processed and credited to your original payment method within{" "}
                 <strong>7 days</strong>.

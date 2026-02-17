@@ -401,11 +401,11 @@ const menuItems = [
       },
     ],
   },
-  {
-    label: "Conclave",
-    labellink: "/chennai-conclave",
-    content: [],
-  },
+  // {
+  //   label: "Conclave",
+  //   labellink: "/chennai-conclave",
+  //   content: [],
+  // },
 ];
 const sectionImageMap = {
   Live: "/images/HomePage-Images/live-MegaMenu.jpg",

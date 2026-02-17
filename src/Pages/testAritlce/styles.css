@@ -3,26 +3,33 @@
   font-family: "NewAmsterdam";
   color: #a44294;
   font-size: clamp(12px, 3vw, 50px);
-  line-height: clamp(48px, 6vw, 77px);
+  line-height: clamp(48px, 1vw, 77px);
+   line-height: 100%; 
 }
 .formheadingtheme-article h4  {
   font-family: "NewAmsterdam";
   color: #a44294;
-  font-size: clamp(12px, 3vw, 50px);
+  font-size: clamp(12px, 1vw, 50px);
+  
+}
+.sticky.top-6 {
+  top: 130px;
+
 }
 
 @media (min-width: 300px) and (max-width: 700px) {
   .formheadingtheme-article {
     font-size: 28px;
-    line-height: 34px;
+    line-height: 14px;
   }
 }
 
 .formheadingtheme-article-cards {
   font-family: "NewAmsterdam";
   color: #a44294;
-  font-size: clamp(12px, 2vw, 50px);
-  /* line-height: clamp(48px, 6vw, 77px); */
+  font-size: clamp(25px, 14px, 20px);
+  /* line-height: clamp(8px, 6vw, 77px); */
+  line-height: 100%;
 }
 
 

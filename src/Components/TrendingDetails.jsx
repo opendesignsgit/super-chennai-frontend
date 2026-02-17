@@ -38,6 +38,57 @@ export default function TrendingDetails() {
 
   if (!event) return null;
 
+
+
+  const glowgaradern = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Trending chennai Glow Gareden",
+          item: "https://www.superchennai.com/trending-chennai/glow-garden-mahabalipuram-chennai",
+        },
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/glow-garden-mahabalipuram-chennai",
+      },
+      headline: "Glow Garden",
+      description:
+        "Glow Garden Mahabalipuram showcases colourful glow setups, themed gardens, kids’ activities, and charming night views that make it a great place to explore.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/banner-big-1-source.jpg.jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-02-06",
+    },
+  ];
+
   return (
     <>
       <Helmet>
@@ -62,6 +113,12 @@ export default function TrendingDetails() {
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
         />
+
+        {slug === "glow-garden-mahabalipuram-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(glowgaradern)}
+          </script>
+        )}
       </Helmet>
 
       {/* Banner Section */}
@@ -76,8 +133,7 @@ export default function TrendingDetails() {
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
             <h1>Trending Chennai</h1>
-            <div className="breadCrum">     
-            </div>
+            <div className="breadCrum"></div>
           </div>
         </div>
       </section>

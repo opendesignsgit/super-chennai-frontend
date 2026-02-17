@@ -815,14 +815,14 @@ export default function Conclave() {
             </div>
 
             {/* CTA */}
-            <button
+            {/* <button
               onClick={() => setShowRegisterPopup(true)}
               className="inline-flex items-center justify-center px-12 py-3 rounded-full
               bg-rose-500 text-white font-semibold text-lg
               hover:bg-rose-600 transition-all duration-300 shadow-lg"
             >
               Register Now
-            </button>
+            </button> */}
           </div>
         </div>
       </section>
@@ -1365,12 +1365,12 @@ export default function Conclave() {
               ITC Welcome Hotel, Chennai */}
             </p>
 
-            <button
+            {/* <button
               onClick={() => setShowRegisterPopup(true)}
               className="border-2 border-rose-400 text-rose-500 font-semibold px-10 py-2.5 rounded-full hover:bg-rose-50 transition-colors duration-300"
             >
               Register Now
-            </button>
+            </button> */}
           </div>
         </div>
       </section>

@@ -110,7 +110,7 @@ const BottomAdBox = ({ ads }) => {
           className="h-12 object-contain rounded"
         /> */}
 
-        <AdMedia ad={ad} className="mb-2" />
+        <AdMedia ad={ad}  className="mb-2 h-19 rounded"/>
 
         <p className="font-semibold text-sm truncate">{ad.title}</p>
 
@@ -260,12 +260,6 @@ const hasRight = showRightAds && rightAds?.length > 0;
 const hasSideAds = hasLeft || hasRight;
 
 
-  // const mainCol =
-  //   showLeftAds && showRightAds
-  //     ? "lg:col-span-8"
-  //     : showLeftAds || showRightAds
-  //       ? "lg:col-span-10"
-  //       : "lg:col-span-12";
 
 const mainCol = hasSideAds
   ? "lg:col-span-8"
@@ -347,7 +341,7 @@ const mainCol = hasSideAds
                   <p className="text-pink-600 text-sm font-semibold">
                     {featuredEventArticle.Articlecategory?.label}
                   </p>
-                  <h1 className=" themelink-color formheadingtheme-article mt-2">
+                  <h1 className=" themelink-color formheadingtheme-article ">
                     {featuredEventArticle.title}
                   </h1>
 

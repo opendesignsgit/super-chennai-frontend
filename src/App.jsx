@@ -314,6 +314,9 @@ import UserDashboard from "./Pages/Dashboard/UserDashboard"
 import LoginUser from "./Pages/login/login"
 import VerifyOTPPms from "./Pages/login/VerifyOTP"
 
+// Explore Page
+import ExplorePage from "./Pages/ExplorePage";
+
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   const [animate, setAnimate] = useState(false);
@@ -837,6 +840,10 @@ function App() {
             {/*----Main-Pages---------*/}
             <Route path="/" element={<HomePage />} />
             <Route path="/results" element={<SearchResults />} />
+            
+            {/* Explore Discovery Routes */}
+            <Route path="/explore" element={<ExplorePage />} />
+            <Route path="/explore/:querySlug" element={<ExplorePage />} />
             <Route
               path="/volunteer-in-chennai"
               element={<Volunteer popupFunction={popupFunction} />}

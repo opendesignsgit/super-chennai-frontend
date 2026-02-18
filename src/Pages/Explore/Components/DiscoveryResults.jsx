@@ -99,10 +99,18 @@ export default function DiscoveryResults({ filters, mode, onPlaceClick }) {
     return true;
   });
 
+  // Helper to check if any filters are active
+  const hasActiveFilters = (filters) => {
+    return Object.values(filters).some((v) => {
+      if (Array.isArray(v)) {
+        return v.length > 0;
+      }
+      return v !== null && v !== undefined;
+    });
+  };
+
   // Show all places if no filters applied
-  const displayPlaces = Object.values(filters).every((v) => !v || (Array.isArray(v) && v.length === 0))
-    ? []
-    : filteredPlaces;
+  const displayPlaces = hasActiveFilters(filters) ? filteredPlaces : [];
 
   return (
     <div className="discovery-results">

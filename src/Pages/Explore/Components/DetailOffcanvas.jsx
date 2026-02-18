@@ -84,7 +84,11 @@ export default function DetailOffcanvas({ place, isOpen, onClose }) {
                 <div className="vibe-bar">
                   <div
                     className="vibe-indicator"
-                    style={{ left: `${(place.vibe.quiet / 5) * 50}%` }}
+                    style={{
+                      left: `${
+                        (place.vibe.modern / (place.vibe.quiet + place.vibe.modern)) * 100
+                      }%`,
+                    }}
                   ></div>
                 </div>
               </div>

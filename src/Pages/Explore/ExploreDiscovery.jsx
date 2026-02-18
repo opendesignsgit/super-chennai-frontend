@@ -39,8 +39,11 @@ export default function ExploreDiscovery() {
         setFilters(parsedFilters);
         // Add AI message based on slug
         const aiMessage = generateAIResponse(parsedFilters);
-        setMessages((prev) => [
-          ...prev,
+        setMessages([
+          {
+            role: "ai",
+            text: "Hi, I'm your Chennai guide. What would you like to explore today?",
+          },
           {
             role: "ai",
             text: aiMessage,
@@ -118,10 +121,24 @@ export default function ExploreDiscovery() {
   const generateAIResponse = (filters) => {
     const parts = [];
     
+    // Pluralize categories correctly
+    const pluralizeCategory = (category) => {
+      const pluralMap = {
+        cafe: "cafes",
+        restaurant: "restaurants",
+        temple: "temples",
+        beach: "beaches",
+        mall: "malls",
+        park: "parks",
+        museum: "museums",
+      };
+      return pluralMap[category] || `${category}s`;
+    };
+    
     if (filters.category && filters.location) {
-      parts.push(`Showing ${filters.category}s near ${filters.location}`);
+      parts.push(`Showing ${pluralizeCategory(filters.category)} near ${filters.location}`);
     } else if (filters.category) {
-      parts.push(`Showing ${filters.category}s`);
+      parts.push(`Showing ${pluralizeCategory(filters.category)}`);
     } else if (filters.location) {
       parts.push(`Showing places near ${filters.location}`);
     }

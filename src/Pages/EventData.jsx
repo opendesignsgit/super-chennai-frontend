@@ -7575,6 +7575,69 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+
+  {
+  "id": 62324,
+  "name": "MKB Nagar Bus Depot Upgrade",
+  "slug": "mkb-nagar-bus-depot-upgrade-chennai",
+  "para": "Trending Chennai",
+  "TrendingCalendarMonth": "February 2026",
+  "TrendingCalendarTime": "—",
+  "TrendingCalendarCategory": "Infrastructure & Urban Development",
+  "image": "/images/trendingChennai/bustop-k.jpeg",
+  "Homeimage": "/images/trendingChennai/bustop-k-main.jpeg",
+  "link": "/mkb-nagar-bus-depot",
+  "duration": "Operational from Early 2026",
+  "ageRestriction": "Not applicable",
+  "language": "Tamil & English",
+  "genre": "Infrastructure, Transport, Public Mobility",
+  "venue": "MKB Nagar Bus Terminal, North Chennai",
+
+  "trendingDetails": `
+<p>
+<b>MKB Nagar Bus Terminal gets a stunning modern makeover! 🌿✨</b><br/>
+The newly upgraded terminal, opened in early 2026, features a striking tree-inspired steel roof design under the North Chennai Development initiative, giving the depot a contemporary and sustainable look.
+</p>
+
+<h4>🌿 Sustainable & Modern Design</h4>
+<ul>
+  <li>Signature tree-style steel roofing structure</li>
+  <li>Improved ventilation and passenger comfort</li>
+  <li>Upgraded waiting and circulation areas</li>
+</ul>
+
+<h4>⚡ Electric Bus Infrastructure</h4>
+<p>
+The terminal serves as a major hub for MTC’s rollout of 625 low-floor electric buses, supporting Chennai’s shift towards eco-friendly public transportation.
+</p>
+
+<ul>
+  <li>Dedicated facilities for electric bus operations</li>
+  <li>Supports green mobility initiatives</li>
+  <li>Enhanced connectivity across North Chennai</li>
+</ul>
+
+<h4>♿ Passenger-Friendly Facilities</h4>
+<ul>
+  <li>Improved accessibility for senior citizens</li>
+  <li>Facilities designed for the differently-abled</li>
+  <li>Smoother entry, exit, and boarding experience</li>
+</ul>
+
+<p>
+🏙 <b>A key milestone in North Chennai’s transport infrastructure upgrade, strengthening sustainable and efficient urban mobility.</b>
+</p>
+`,
+
+  "TrendingLink": "",
+  "YoutubeLink": "",
+  "meta": {
+    "title": "Trending Chennai : MKB Nagar Bus Depot Modern Upgrade 2026",
+    "desc": "MKB Nagar bus depot gets a modern upgrade with tree-style roofing and electric bus facilities under North Chennai development. Now trending Chennai transport news.",
+    "url": "https://www.superchennai.com/trending-chennai/mkb-nagar-bus-depot"
+  }
+},
+
   {
     id: 62323,
     name: "Broadway Bus Stand Chennai Redevelopment",

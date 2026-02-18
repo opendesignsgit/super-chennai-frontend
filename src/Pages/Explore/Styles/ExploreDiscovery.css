@@ -5,30 +5,46 @@
   padding-bottom: 120px; /* Space for fixed chat input */
 }
 
-/* Back Button */
-.back-button {
+/* Header with Logo and Back Button */
+.explore-header {
   position: fixed;
   top: 20px;
   left: 20px;
   z-index: 100;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.25rem;
+  gap: 1rem;
   background: white;
   border: 1px solid #e0e0e0;
   border-radius: 24px;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.explore-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Back Button */
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
   font-size: 1rem;
   font-weight: 500;
   color: #333;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.2s;
 }
 
 .back-button:hover {
   background: #f5f5f5;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .back-button svg {

@@ -1,88 +1,21 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Slider from "react-slick";
 import PlaceCard from "./PlaceCard";
+import mockPlaces from "../data/mockPlaces";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function ChatInterface({ messages, filters, mode, onPlaceClick }) {
   const messagesEndRef = useRef(null);
 
-  // Mock data for demonstration
-  const mockPlaces = [
-    {
-      id: 1,
-      title: "The Writer's Cafe",
-      category: "cafe",
-      location: "Nungambakkam",
-      rating: 4.8,
-      image: "/images/Visit-Images/places-to-visit.jpg",
-      status: "Open Now",
-      tags: ["quiet", "wifi", "peaceful"],
-      description: "A quiet place to read near Adyar, maybe with good coffee",
-      vibe: { quiet: 5, modern: 4 },
-    },
-    {
-      id: 2,
-      title: "Backyard Cafe",
-      category: "cafe",
-      location: "Adyar",
-      rating: 4.6,
-      image: "/images/Visit-Images/food.jpg",
-      status: "Open Now",
-      tags: ["outdoor", "modern"],
-      description: "Modern cafe with outdoor seating",
-      vibe: { quiet: 3, modern: 5 },
-    },
-    {
-      id: 3,
-      title: "Marina Beach",
-      category: "beach",
-      location: "Marina",
-      rating: 4.5,
-      image: "/images/Visit-Images/marina-beach.jpg",
-      status: "Open Now",
-      tags: ["outdoor", "peaceful"],
-      description: "Beautiful beach for evening walks",
-      vibe: { quiet: 4, modern: 2 },
-    },
-    {
-      id: 4,
-      title: "Kapaleeshwarar Temple",
-      category: "temple",
-      location: "Mylapore",
-      rating: 4.9,
-      image: "/images/Visit-Images/places-to-visit.jpg",
-      status: "Open Now",
-      tags: ["traditional", "peaceful"],
-      description: "Historic temple with beautiful architecture",
-      vibe: { quiet: 4, modern: 1 },
-    },
-    {
-      id: 5,
-      title: "Express Avenue Mall",
-      category: "mall",
-      location: "Royapettah",
-      rating: 4.7,
-      image: "/images/Visit-Images/shopping.jpg",
-      status: "Open Now",
-      tags: ["modern", "shopping"],
-      description: "Large shopping mall with many stores",
-      vibe: { quiet: 2, modern: 5 },
-    },
-    {
-      id: 6,
-      title: "Guindy National Park",
-      category: "park",
-      location: "Guindy",
-      rating: 4.4,
-      image: "/images/Visit-Images/things-to-do.jpg",
-      status: "Open Now",
-      tags: ["outdoor", "peaceful", "quiet"],
-      description: "Natural park in the city",
-      vibe: { quiet: 5, modern: 2 },
-    },
-  ];
+  // Scroll to bottom when messages change
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
 
+  // Use the imported mock data instead of inline data
   // Filter places based on active filters
   const filteredPlaces = mockPlaces.filter((place) => {
     if (filters.category && place.category !== filters.category) {

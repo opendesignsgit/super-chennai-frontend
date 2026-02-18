@@ -753,3 +753,7 @@
   }
 }
 
+
+.pointcastSticky, .stickyIconsContainer, .FooterBackground, #newsletterId, #hotshots-event-tab, #menifeto-tab{
+  display: none;
+}

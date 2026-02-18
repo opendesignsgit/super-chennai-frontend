@@ -1,16 +1,7 @@
 import React from 'react';
+import { renderStars } from '../../utils/helpers';
 
 const PlaceCard = ({ place, onClick }) => {
-  const renderStars = (rating) => {
-    const fullStars = Math.floor(rating);
-    const stars = [];
-    
-    for (let i = 0; i < fullStars; i++) {
-      stars.push('⭐');
-    }
-    
-    return stars.join('');
-  };
 
   return (
     <div className="place-card" onClick={() => onClick(place)}>

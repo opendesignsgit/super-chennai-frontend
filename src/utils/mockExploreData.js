@@ -194,6 +194,7 @@ export const getPlacesByFilter = (category, location) => {
 // Get nearby places (Phase 1 - just return mixed results)
 export const getNearbyPlaces = () => {
   const allPlaces = Object.values(mockPlaces).flat();
-  // Shuffle and return first 6
+  // Simple shuffle for Phase 1 mock data
+  // Note: Using Math.random() - 0.5 has bias; Phase 2 should use Fisher-Yates shuffle
   return allPlaces.sort(() => Math.random() - 0.5).slice(0, 6);
 };

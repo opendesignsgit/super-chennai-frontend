@@ -1,20 +1,10 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import { renderStars } from '../../utils/helpers';
 
 const PlaceDetailPanel = ({ place, isOpen, onClose }) => {
   if (!place) return null;
-
-  const renderStars = (rating) => {
-    const fullStars = Math.floor(rating);
-    const stars = [];
-    
-    for (let i = 0; i < fullStars; i++) {
-      stars.push('⭐');
-    }
-    
-    return stars.join('');
-  };
 
   return (
     <AnimatePresence>

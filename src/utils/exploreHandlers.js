@@ -9,6 +9,8 @@ export const mockAIHandler = (query, category = null, location = null) => {
       word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ');
     
+    // If no places found for specific location, fallback to category-only results
+    // This ensures users always see relevant results even if location filter is too specific
     return {
       message: `Here are some ${category} places near ${locationDisplay}.`,
       places: places.length > 0 ? places : getPlacesByFilter(category),

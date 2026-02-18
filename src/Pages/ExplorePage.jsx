@@ -6,6 +6,7 @@ import PlaceDetailPanel from '../Components/Explore/PlaceDetailPanel';
 import ChatInput from '../Components/Explore/ChatInput';
 import { mockAIHandler, mockNearbyHandler } from '../utils/exploreHandlers';
 import { allowedCategories, allowedLocations, slugPattern } from '../config/exploreConfig';
+import { PANEL_ANIMATION_DURATION } from '../utils/helpers';
 import '../assets/Css/ExplorePage.css';
 
 const ExplorePage = () => {
@@ -113,7 +114,7 @@ const ExplorePage = () => {
   const handlePanelClose = () => {
     setIsPanelOpen(false);
     // Keep selectedPlace for animation exit
-    setTimeout(() => setSelectedPlace(null), 300);
+    setTimeout(() => setSelectedPlace(null), PANEL_ANIMATION_DURATION);
   };
 
   return (

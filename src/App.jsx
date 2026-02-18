@@ -313,6 +313,7 @@ import UserDashboard from "./Pages/Dashboard/UserDashboard"
 
 import LoginUser from "./Pages/login/login"
 import VerifyOTPPms from "./Pages/login/VerifyOTP"
+import ExploreDiscovery from "./Pages/Explore/ExploreDiscovery";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -846,6 +847,11 @@ function App() {
             <Route path="/live-in-chennai" element={<Live />} />
             <Route path="/visit-chennai" element={<Visit />} />
             <Route path="/work-in-chennai" element={<Work />} />
+            
+            {/* Explore Discovery Routes */}
+            <Route path="/explore" element={<ExploreDiscovery />} />
+            <Route path="/explore/:slug" element={<ExploreDiscovery />} />
+            
             <Route path="/oldevenslist" element={<EventsHome />} />
             <Route path="/eventsold/:slug" element={<EventsDetailsOld />} />
             <Route path="/media-coverage" element={<NewsLetter />} />

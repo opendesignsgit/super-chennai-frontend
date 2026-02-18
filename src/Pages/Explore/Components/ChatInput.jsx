@@ -1,13 +1,59 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
   const [inputValue, setInputValue] = useState("");
+  const [isListening, setIsListening] = useState(false);
+  const [recognition, setRecognition] = useState(null);
+
+  // Initialize speech recognition
+  useEffect(() => {
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognitionInstance = new SpeechRecognition();
+      
+      recognitionInstance.continuous = false;
+      recognitionInstance.interimResults = false;
+      recognitionInstance.lang = 'en-US';
+
+      recognitionInstance.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        setInputValue(transcript);
+        setIsListening(false);
+      };
+
+      recognitionInstance.onerror = (event) => {
+        console.error('Speech recognition error:', event.error);
+        setIsListening(false);
+      };
+
+      recognitionInstance.onend = () => {
+        setIsListening(false);
+      };
+
+      setRecognition(recognitionInstance);
+    }
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputValue.trim()) {
       onSendMessage(inputValue);
       setInputValue("");
+    }
+  };
+
+  const handleVoiceClick = () => {
+    if (!recognition) {
+      alert('Speech recognition is not supported in your browser. Please try Chrome or Edge.');
+      return;
+    }
+
+    if (isListening) {
+      recognition.stop();
+      setIsListening(false);
+    } else {
+      recognition.start();
+      setIsListening(true);
     }
   };
 
@@ -57,7 +103,12 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
             </button>
           </div>
 
-          <button type="button" className="input-icon-btn" title="Voice">
+          <button 
+            type="button" 
+            className={`input-icon-btn ${isListening ? "listening" : ""}`}
+            onClick={handleVoiceClick}
+            title="Voice"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

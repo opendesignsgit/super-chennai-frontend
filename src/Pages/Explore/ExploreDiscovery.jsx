@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import ChatInterface from "./Components/ChatInterface";
 import ChatInput from "./Components/ChatInput";
 import DiscoveryResults from "./Components/DiscoveryResults";
@@ -9,6 +9,7 @@ import "./Styles/ExploreDiscovery.css";
 export default function ExploreDiscovery() {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
 
   // Message state (visual only)
   const [messages, setMessages] = useState([
@@ -30,6 +31,8 @@ export default function ExploreDiscovery() {
   const [mode, setMode] = useState("ai"); // "ai" or "nearby"
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [showOffcanvas, setShowOffcanvas] = useState(false);
+  const [isThinking, setIsThinking] = useState(false); // Loading state for message processing
+  const [lastFilterChange, setLastFilterChange] = useState(null); // Track last filter change for fallback
 
   // Parse slug on mount if present
   useEffect(() => {
@@ -69,6 +72,100 @@ export default function ExploreDiscovery() {
       };
     }
     return null;
+  };
+
+  // Build slug from filters
+  const buildSlug = (filters) => {
+    if (filters.category && filters.location) {
+      const category = filters.category.replace(/\s+/g, "-");
+      const location = filters.location.replace(/\s+/g, "-");
+      return `${category}-places-near-${location}`;
+    }
+    return null;
+  };
+
+  // Update URL without reload using History API
+  const updateURLSlug = (filters) => {
+    const slug = buildSlug(filters);
+    if (slug) {
+      const newPath = `/explore/${slug}`;
+      if (location.pathname !== newPath) {
+        window.history.pushState({ filters }, "", newPath);
+      }
+    }
+  };
+
+  // Handle browser back/forward navigation
+  useEffect(() => {
+    const handlePopState = (event) => {
+      if (event.state?.filters) {
+        setFilters(event.state.filters);
+        const aiResponse = generateAIResponse(event.state.filters);
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "ai",
+            text: aiResponse,
+          },
+        ]);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  // Detect if message is a greeting
+  const isGreeting = (message) => {
+    const lowerMessage = message.toLowerCase().trim();
+    const greetings = ["hi", "hello", "hey", "good morning", "good afternoon", "good evening", "namaste"];
+    return greetings.some((greeting) => lowerMessage === greeting || lowerMessage.startsWith(greeting + " "));
+  };
+
+  // Generate greeting response
+  const generateGreetingResponse = () => {
+    return "Hi! What would you like to explore in Chennai today?";
+  };
+
+  // Check if any filters were detected
+  const hasDetectedFilters = (oldFilters, newFilters) => {
+    return (
+      oldFilters.category !== newFilters.category ||
+      oldFilters.location !== newFilters.location ||
+      oldFilters.ratingMin !== newFilters.ratingMin ||
+      oldFilters.tags.length !== newFilters.tags.length
+    );
+  };
+
+  // Generate smart suggestions for recovery
+  const generateSmartSuggestions = () => {
+    const categoryExamples = ["cafe", "restaurant", "beach", "temple", "mall"];
+    const locationExamples = ["nungambakkam", "adyar", "ecr", "mylapore", "vadapalani"];
+    
+    const suggestions = [
+      `${categoryExamples[Math.floor(Math.random() * categoryExamples.length)]} near ${locationExamples[Math.floor(Math.random() * locationExamples.length)]}`,
+      `quiet ${categoryExamples[Math.floor(Math.random() * categoryExamples.length)]} in ${locationExamples[Math.floor(Math.random() * locationExamples.length)]}`,
+      `${categoryExamples[Math.floor(Math.random() * categoryExamples.length)]} rating above 4`,
+    ];
+    
+    return suggestions.slice(0, 3);
+  };
+
+  // Generate unmatched input response
+  const generateUnmatchedResponse = () => {
+    return "I couldn't understand that yet. Try something like:";
+  };
+
+  // Log for future AI training
+  const logInteraction = (userMessage, detectedFilters, finalFilters, matched) => {
+    if (process.env.NODE_ENV === "development") {
+      console.log("=== Interaction Log ===");
+      console.log("User Message:", userMessage);
+      console.log("Detected Filters:", detectedFilters);
+      console.log("Final Filters:", finalFilters);
+      console.log("Matched:", matched);
+      console.log("======================");
+    }
   };
 
   // Parse user message and update filters with REPLACEMENT logic
@@ -172,6 +269,9 @@ export default function ExploreDiscovery() {
 
   // Handle user message submission
   const handleSendMessage = (userMessage) => {
+    // Show thinking loader
+    setIsThinking(true);
+
     // Add user message to conversation
     setMessages((prev) => [
       ...prev,
@@ -181,19 +281,68 @@ export default function ExploreDiscovery() {
       },
     ]);
 
-    // Parse message and update filters (accumulate, don't replace)
-    const updatedFilters = parseUserMessage(userMessage);
-    setFilters(updatedFilters);
+    // Small delay to show thinking loader
+    setTimeout(() => {
+      // Check if message is a greeting
+      if (isGreeting(userMessage)) {
+        const greetingResponse = generateGreetingResponse();
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "ai",
+            text: greetingResponse,
+          },
+        ]);
+        setIsThinking(false);
+        logInteraction(userMessage, {}, filters, true);
+        return;
+      }
 
-    // Generate and add AI response
-    const aiResponse = generateAIResponse(updatedFilters);
-    setMessages((prev) => [
-      ...prev,
-      {
-        role: "ai",
-        text: aiResponse,
-      },
-    ]);
+      // Parse message and detect filters
+      const oldFilters = { ...filters };
+      const updatedFilters = parseUserMessage(userMessage);
+      
+      // Check if any filters were detected
+      const matched = hasDetectedFilters(oldFilters, updatedFilters);
+
+      if (!matched) {
+        // No filters detected - show recovery message with suggestions
+        const unmatchedResponse = generateUnmatchedResponse();
+        const suggestions = generateSmartSuggestions();
+        
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "ai",
+            text: unmatchedResponse,
+            suggestions: suggestions,
+          },
+        ]);
+        setIsThinking(false);
+        logInteraction(userMessage, updatedFilters, filters, false);
+        return;
+      }
+
+      // Filters detected - update state
+      setFilters(updatedFilters);
+      setLastFilterChange({ filters: updatedFilters, previousFilters: oldFilters });
+
+      // Update URL slug dynamically
+      updateURLSlug(updatedFilters);
+
+      // Generate and add AI response
+      const aiResponse = generateAIResponse(updatedFilters);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "ai",
+          text: aiResponse,
+        },
+      ]);
+
+      setIsThinking(false);
+      logInteraction(userMessage, updatedFilters, updatedFilters, true);
+    }, 300); // Small delay to show thinking animation
   };
 
   // Handle mode switch
@@ -272,6 +421,8 @@ export default function ExploreDiscovery() {
             filters={filters}
             mode={mode}
             onPlaceClick={handlePlaceClick}
+            isThinking={isThinking}
+            onSuggestionClick={handleSendMessage}
           />
         </main>
       </div>

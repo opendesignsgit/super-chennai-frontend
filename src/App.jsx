@@ -540,8 +540,13 @@ function App() {
 
 
  const hideNewsletter =
-    location.pathname === "/chennai-conclave";
+    location.pathname === "/chennai-conclave" || 
+    location.pathname === "/explore" || 
+    location.pathname.startsWith("/explore/");
 
+  const hideHeaderFooter = 
+    location.pathname === "/explore" || 
+    location.pathname.startsWith("/explore/");
 
 
       const isHomePage = location.pathname === "/";
@@ -549,10 +554,12 @@ function App() {
       return (
         <>
           <ScrollToHashElement />
-          <HeaderWithMegaMenu
-            setMenuBar={setMenuBar}
-            setMenuBar1={setMenuBar1}
-          />
+          {!hideHeaderFooter && (
+            <HeaderWithMegaMenu
+              setMenuBar={setMenuBar}
+              setMenuBar1={setMenuBar1}
+            />
+          )}
 
           {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
@@ -564,17 +571,18 @@ function App() {
           )}
           {/* )} */}
 
-          <div
-            ref={stickyRef}
-            className={`stickyIconsContainer ${
-              footerReached ? "footerreached" : ""
-            }`}
-          >
-            <a
-              className="linkedin-sc"
-              target="_blank"
-              href="https://www.linkedin.com/company/super-chennai"
+          {!hideHeaderFooter && (
+            <div
+              ref={stickyRef}
+              className={`stickyIconsContainer ${
+                footerReached ? "footerreached" : ""
+              }`}
             >
+              <a
+                className="linkedin-sc"
+                target="_blank"
+                href="https://www.linkedin.com/company/super-chennai"
+              >
               <img src="/images/Indeed.png" alt="Linkedin" />
             </a>
             <a
@@ -606,8 +614,9 @@ function App() {
               <img src="/images/threads.png" alt="Twitter" />
             </a>
           </div>
-          
-           {!hideOnMargazhiPage && (
+          )}
+
+          {!hideOnMargazhiPage && !hideHeaderFooter && (
             <div
             id="menifeto-tab"
             ref={stickyRef}
@@ -624,7 +633,7 @@ function App() {
             </div>
           )}
 
-          {!hideOnMargazhiPage && (
+          {!hideOnMargazhiPage && !hideHeaderFooter && (
             <div
               id="hotshots-event-tab"
               ref={stickyRef}
@@ -652,6 +661,7 @@ function App() {
           </a>
         </div> */}
 
+          {!hideHeaderFooter && (
           <div
             ref={stickyRef}
             className={`pointcastSticky ${footerReached ? "footerreached" : ""}`}
@@ -660,6 +670,7 @@ function App() {
               <img src="/images/pointcast-icon.svg" alt="explore chennai" />
             </a>
           </div>
+          )}
 
           <Routes>
             {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
@@ -1596,7 +1607,7 @@ function App() {
             </section>
           )}
 
-          <Footer />
+          {!hideHeaderFooter && <Footer />}
           {/* </Router> */}
           {/* MenuBar */}
 

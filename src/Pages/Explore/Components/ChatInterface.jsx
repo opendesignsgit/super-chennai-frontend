@@ -1,11 +1,13 @@
 import { useRef, useEffect, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import PlaceCard from "./PlaceCard";
 import mockPlaces from "../data/mockPlaces";
 
 export default function ChatInterface({ messages, filters, mode, onPlaceClick, isThinking, onSuggestionClick }) {
   const messagesEndRef = useRef(null);
   const sliderRef = useRef(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
 
   // Scroll to bottom when messages change
   useEffect(() => {
@@ -50,19 +52,31 @@ export default function ChatInterface({ messages, filters, mode, onPlaceClick, i
   // Show places if filters are active
   const displayPlaces = hasActiveFilters(filters) ? filteredPlaces : [];
 
-  // Save scroll position before filter changes
-  useEffect(() => {
-    if (sliderRef.current) {
-      setScrollPosition(sliderRef.current.scrollLeft);
-    }
-  }, [filters]);
-
-  // Restore scroll position after re-render
-  useEffect(() => {
-    if (sliderRef.current && scrollPosition > 0) {
-      sliderRef.current.scrollLeft = scrollPosition;
-    }
-  }, [displayPlaces, scrollPosition]);
+  // Slider settings for react-slick
+  const sliderSettings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  };
 
   return (
     <div className="chat-interface">
@@ -103,14 +117,13 @@ export default function ChatInterface({ messages, filters, mode, onPlaceClick, i
              !isThinking &&
              displayPlaces.length > 0 && (
               <div className="results-slider-container">
-                {/* Single Row Horizontal Slider */}
-                <div className="places-slider" ref={sliderRef}>
+                <Slider {...sliderSettings} ref={sliderRef}>
                   {displayPlaces.map((place) => (
                     <div key={place.id} className="place-card-wrapper">
                       <PlaceCard place={place} onClick={() => onPlaceClick(place)} />
                     </div>
                   ))}
-                </div>
+                </Slider>
               </div>
             )}
 

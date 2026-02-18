@@ -19,6 +19,13 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
         const transcript = event.results[0][0].transcript;
         setInputValue(transcript);
         setIsListening(false);
+        // Auto-submit after voice input
+        setTimeout(() => {
+          if (transcript.trim()) {
+            onSendMessage(transcript);
+            setInputValue("");
+          }
+        }, 100);
       };
 
       recognitionInstance.onerror = (event) => {

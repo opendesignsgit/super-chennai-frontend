@@ -540,13 +540,9 @@ function App() {
 
 
  const hideNewsletter =
-    location.pathname === "/chennai-conclave" || 
-    location.pathname === "/explore" || 
-    location.pathname.startsWith("/explore/");
+    location.pathname === "/chennai-conclave";
 
-  const hideHeaderFooter = 
-    location.pathname === "/explore" || 
-    location.pathname.startsWith("/explore/");
+  const hideHeaderFooter = false; // Removed /explore hiding
 
 
       const isHomePage = location.pathname === "/";

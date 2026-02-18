@@ -5,53 +5,6 @@
   padding-bottom: 120px; /* Space for fixed chat input */
 }
 
-/* Header with Logo and Back Button */
-.explore-header {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 24px;
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.explore-logo {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* Back Button */
-.back-button {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: transparent;
-  border: none;
-  border-radius: 20px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #333;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.back-button:hover {
-  background: #f5f5f5;
-}
-
-.back-button svg {
-  width: 20px;
-  height: 20px;
-}
-
 /* Hero Banner */
 .hero-banner {
   position: relative;
@@ -185,42 +138,74 @@
   width: 100%;
 }
 
-/* Single Row Horizontal Slider */
-.places-slider {
+/* React-Slick Custom Styles */
+.results-slider-container .slick-slider {
+  position: relative;
+}
+
+.results-slider-container .slick-list {
+  margin: 0 -0.5rem;
+  padding: 1rem 0;
+}
+
+.results-slider-container .slick-track {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
   gap: 1rem;
-  padding: 0.5rem;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 
-/* Custom scrollbar for better UX */
-.places-slider::-webkit-scrollbar {
-  height: 8px;
+/* Slider Arrows */
+.results-slider-container .slick-prev,
+.results-slider-container .slick-next {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  transition: all 0.2s;
 }
 
-.places-slider::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
-.places-slider::-webkit-scrollbar-thumb {
+.results-slider-container .slick-prev:hover,
+.results-slider-container .slick-next:hover {
   background: #6f42c1;
-  border-radius: 4px;
 }
 
-.places-slider::-webkit-scrollbar-thumb:hover {
-  background: #5a32a3;
+.results-slider-container .slick-prev:hover::before,
+.results-slider-container .slick-next:hover::before {
+  color: white;
 }
 
-/* Place Card Wrapper - Prevents shrinking */
+.results-slider-container .slick-prev {
+  left: -20px;
+}
+
+.results-slider-container .slick-next {
+  right: -20px;
+}
+
+.results-slider-container .slick-prev::before,
+.results-slider-container .slick-next::before {
+  font-size: 24px;
+  color: #6f42c1;
+  opacity: 1;
+}
+
+.results-slider-container .slick-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.results-slider-container .slick-disabled:hover {
+  background: white;
+}
+
+.results-slider-container .slick-disabled:hover::before {
+  color: #6f42c1;
+}
+
+/* Place Card Wrapper - Updated for react-slick */
 .place-card-wrapper {
-  flex: 0 0 auto;
-  width: 280px;
-  max-width: 280px;
+  padding: 0 0.5rem;
 }
 
 /* Ensure place cards don't wrap or shrink */

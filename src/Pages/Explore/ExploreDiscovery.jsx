@@ -4,6 +4,7 @@ import ChatInterface from "./Components/ChatInterface";
 import ChatInput from "./Components/ChatInput";
 import DiscoveryResults from "./Components/DiscoveryResults";
 import DetailOffcanvas from "./Components/DetailOffcanvas";
+import mockPlaces from "./data/mockPlaces";
 import "./Styles/ExploreDiscovery.css";
 
 export default function ExploreDiscovery() {
@@ -34,6 +35,46 @@ export default function ExploreDiscovery() {
   const [isThinking, setIsThinking] = useState(false); // Loading state for message processing
   const [lastFilterChange, setLastFilterChange] = useState(null); // Track last filter change for fallback
 
+  // Session storage key
+  const SESSION_KEY = "explore_chat_session";
+  const SESSION_EXPIRY = 60 * 60 * 1000; // 1 hour in milliseconds
+
+  // Load messages and filters from session storage on mount
+  useEffect(() => {
+    const savedSession = sessionStorage.getItem(SESSION_KEY);
+    if (savedSession) {
+      try {
+        const { messages: savedMessages, filters: savedFilters, timestamp } = JSON.parse(savedSession);
+        const now = Date.now();
+        
+        // Check if session is still valid (within 1 hour)
+        if (now - timestamp < SESSION_EXPIRY) {
+          setMessages(savedMessages);
+          setFilters(savedFilters);
+        } else {
+          // Session expired, clear it
+          sessionStorage.removeItem(SESSION_KEY);
+        }
+      } catch (error) {
+        console.error("Error loading session:", error);
+        sessionStorage.removeItem(SESSION_KEY);
+      }
+    }
+  }, []);
+
+  // Save messages and filters to session storage whenever they change
+  useEffect(() => {
+    // Don't save if we're on initial welcome message only
+    if (messages.length > 1 || filters.category || filters.location || filters.ratingMin || filters.tags.length > 0) {
+      const sessionData = {
+        messages,
+        filters,
+        timestamp: Date.now()
+      };
+      sessionStorage.setItem(SESSION_KEY, JSON.stringify(sessionData));
+    }
+  }, [messages, filters]);
+
   // Parse slug on mount if present
   useEffect(() => {
     if (slug) {
@@ -59,14 +100,47 @@ export default function ExploreDiscovery() {
     }
   }, [slug, navigate]);
 
-  // Parse slug format: {category}-places-near-{location}
+  // Parse slug format: {category}-places-near-{location} OR {categories}-in-{location}
   const parseSlug = (slug) => {
-    const pattern = /^(.+)-places-near-(.+)$/;
-    const match = slug.match(pattern);
-    if (match) {
+    // Try new pattern first: {categories}-in-{location}
+    const newPattern = /^(.+)-in-(.+)$/;
+    const newMatch = slug.match(newPattern);
+    if (newMatch) {
+      // De-pluralize category if needed
+      let category = newMatch[1].replace(/-/g, " ");
+      // Remove trailing 's' for common plurals
+      if (category.endsWith("s") && category !== "s") {
+        // Handle special cases
+        const singularMap = {
+          "cafes": "cafe",
+          "restaurants": "restaurant",
+          "temples": "temple",
+          "beaches": "beach",
+          "malls": "mall",
+          "parks": "park",
+          "museums": "museum",
+          "hotels": "hotel",
+          "gyms": "gym",
+          "hospitals": "hospital",
+          "schools": "school",
+        };
+        category = singularMap[category] || category.slice(0, -1);
+      }
       return {
-        category: match[1].replace(/-/g, " "),
-        location: match[2].replace(/-/g, " "),
+        category: category,
+        location: newMatch[2].replace(/-/g, " "),
+        ratingMin: null,
+        tags: [],
+      };
+    }
+    
+    // Fall back to old pattern: {category}-places-near-{location}
+    const oldPattern = /^(.+)-places-near-(.+)$/;
+    const oldMatch = slug.match(oldPattern);
+    if (oldMatch) {
+      return {
+        category: oldMatch[1].replace(/-/g, " "),
+        location: oldMatch[2].replace(/-/g, " "),
         ratingMin: null,
         tags: [],
       };
@@ -74,18 +148,41 @@ export default function ExploreDiscovery() {
     return null;
   };
 
-  // Build slug from filters
+  // Build slug from filters - NEW FORMAT: {categories}-in-{location}
   const buildSlug = (filters) => {
     if (filters.category && filters.location) {
-      const category = filters.category.replace(/\s+/g, "-");
-      const location = filters.location.replace(/\s+/g, "-");
-      return `${category}-places-near-${location}`;
+      // Pluralize category correctly
+      const pluralMap = {
+        "cafe": "cafes",
+        "restaurant": "restaurants",
+        "temple": "temples",
+        "beach": "beaches",
+        "mall": "malls",
+        "park": "parks",
+        "museum": "museums",
+        "hotel": "hotels",
+        "coworking": "coworking-spaces",
+        "gym": "gyms",
+        "hospital": "hospitals",
+        "school": "schools",
+      };
+      const pluralCategory = pluralMap[filters.category] || `${filters.category}s`;
+      const categorySlug = pluralCategory.replace(/\s+/g, "-");
+      const locationSlug = filters.location.replace(/\s+/g, "-");
+      return `${categorySlug}-in-${locationSlug}`;
     }
     return null;
   };
 
   // Update URL without reload using History API
+  // Only update if we're on a sub-route (not /explore parent)
   const updateURLSlug = (filters) => {
+    // Only update URL if we're already on a sub-route (not parent /explore)
+    if (location.pathname === "/explore") {
+      // Don't change URL on parent route
+      return;
+    }
+    
     const slug = buildSlug(filters);
     if (slug) {
       const newPath = `/explore/${slug}`;
@@ -137,18 +234,49 @@ export default function ExploreDiscovery() {
     );
   };
 
-  // Generate smart suggestions for recovery
+  // Generate smart suggestions for recovery - only include suggestions with results
   const generateSmartSuggestions = () => {
     const categoryExamples = ["cafe", "restaurant", "beach", "temple", "mall"];
     const locationExamples = ["nungambakkam", "adyar", "ecr", "mylapore", "vadapalani"];
     
-    const suggestions = [
-      `${categoryExamples[Math.floor(Math.random() * categoryExamples.length)]} near ${locationExamples[Math.floor(Math.random() * locationExamples.length)]}`,
-      `quiet ${categoryExamples[Math.floor(Math.random() * categoryExamples.length)]} in ${locationExamples[Math.floor(Math.random() * locationExamples.length)]}`,
-      `${categoryExamples[Math.floor(Math.random() * categoryExamples.length)]} rating above 4`,
+    const allSuggestions = [
+      `${categoryExamples[0]} near ${locationExamples[0]}`,
+      `${categoryExamples[1]} near ${locationExamples[1]}`,
+      `${categoryExamples[2]} near ${locationExamples[2]}`,
+      `quiet ${categoryExamples[0]} in ${locationExamples[1]}`,
+      `${categoryExamples[3]} near ${locationExamples[3]}`,
+      `${categoryExamples[1]} rating above 4`,
     ];
     
-    return suggestions.slice(0, 3);
+    // Filter suggestions to only include those that would return results
+    const validSuggestions = [];
+    for (const suggestion of allSuggestions) {
+      // Parse the suggestion to extract filters
+      const testFilters = parseUserMessage(suggestion);
+      
+      // Check if this combination has results
+      const hasResults = mockPlaces.some(place => {
+        if (testFilters.category && place.category !== testFilters.category) return false;
+        if (testFilters.location && place.location.toLowerCase() !== testFilters.location.toLowerCase()) return false;
+        if (testFilters.ratingMin && place.rating < testFilters.ratingMin) return false;
+        if (testFilters.tags && testFilters.tags.length > 0) {
+          const hasAllTags = testFilters.tags.every(tag =>
+            place.tags.some(placeTag => placeTag.toLowerCase() === tag.toLowerCase())
+          );
+          if (!hasAllTags) return false;
+        }
+        return true;
+      });
+      
+      if (hasResults) {
+        validSuggestions.push(suggestion);
+      }
+      
+      // Stop when we have 3 valid suggestions
+      if (validSuggestions.length >= 3) break;
+    }
+    
+    return validSuggestions;
   };
 
   // Generate unmatched input response
@@ -307,17 +435,30 @@ export default function ExploreDiscovery() {
 
       if (!matched) {
         // No filters detected - show recovery message with suggestions
-        const unmatchedResponse = generateUnmatchedResponse();
         const suggestions = generateSmartSuggestions();
         
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: "ai",
-            text: unmatchedResponse,
-            suggestions: suggestions,
-          },
-        ]);
+        // Only show suggestions if we have valid ones
+        if (suggestions.length > 0) {
+          const unmatchedResponse = generateUnmatchedResponse();
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "ai",
+              text: unmatchedResponse,
+              suggestions: suggestions,
+            },
+          ]);
+        } else {
+          // No valid suggestions, show generic message
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "ai",
+              text: "I couldn't understand that. Please try describing what you're looking for, like 'cafe near adyar' or 'temple in mylapore'.",
+            },
+          ]);
+        }
+        
         setIsThinking(false);
         logInteraction(userMessage, updatedFilters, filters, false);
         return;
@@ -373,32 +514,6 @@ export default function ExploreDiscovery() {
 
   return (
     <div className="explore-discovery-page">
-      {/* Logo and Back Button */}
-      <div className="explore-header">
-        <img 
-          src="/images/super-chennai-logo-final.png" 
-          alt="SuperChennai" 
-          className="explore-logo"
-        />
-        <button className="back-button" onClick={handleBack}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="19" y1="12" x2="5" y2="12"></line>
-            <polyline points="12 19 5 12 12 5"></polyline>
-          </svg>
-          Back
-        </button>
-      </div>
-
       {/* Hero Banner */}
       <div className="hero-banner">
         <img

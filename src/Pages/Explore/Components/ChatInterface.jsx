@@ -1,12 +1,11 @@
-import { useRef, useEffect } from "react";
-import Slider from "react-slick";
+import { useRef, useEffect, useState } from "react";
 import PlaceCard from "./PlaceCard";
 import mockPlaces from "../data/mockPlaces";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function ChatInterface({ messages, filters, mode, onPlaceClick }) {
   const messagesEndRef = useRef(null);
+  const sliderRef = useRef(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   // Scroll to bottom when messages change
   useEffect(() => {
@@ -51,36 +50,19 @@ export default function ChatInterface({ messages, filters, mode, onPlaceClick })
   // Show places if filters are active
   const displayPlaces = hasActiveFilters(filters) ? filteredPlaces : [];
 
-  // Split places into two rows for slider
-  const midPoint = Math.ceil(displayPlaces.length / 2);
-  const firstRow = displayPlaces.slice(0, midPoint);
-  const secondRow = displayPlaces.slice(midPoint);
+  // Save scroll position before filter changes
+  useEffect(() => {
+    if (sliderRef.current) {
+      setScrollPosition(sliderRef.current.scrollLeft);
+    }
+  }, [filters]);
 
-  // Slider settings
-  const sliderSettings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // Restore scroll position after re-render
+  useEffect(() => {
+    if (sliderRef.current && scrollPosition > 0) {
+      sliderRef.current.scrollLeft = scrollPosition;
+    }
+  }, [displayPlaces, scrollPosition]);
 
   return (
     <div className="chat-interface">
@@ -105,31 +87,14 @@ export default function ChatInterface({ messages, filters, mode, onPlaceClick })
              index === messages.length - 1 && 
              displayPlaces.length > 0 && (
               <div className="results-slider-container">
-                {/* First Row */}
-                {firstRow.length > 0 && (
-                  <div className="slider-row">
-                    <Slider {...sliderSettings}>
-                      {firstRow.map((place) => (
-                        <div key={place.id} className="slider-item">
-                          <PlaceCard place={place} onClick={() => onPlaceClick(place)} />
-                        </div>
-                      ))}
-                    </Slider>
-                  </div>
-                )}
-
-                {/* Second Row */}
-                {secondRow.length > 0 && (
-                  <div className="slider-row">
-                    <Slider {...sliderSettings}>
-                      {secondRow.map((place) => (
-                        <div key={place.id} className="slider-item">
-                          <PlaceCard place={place} onClick={() => onPlaceClick(place)} />
-                        </div>
-                      ))}
-                    </Slider>
-                  </div>
-                )}
+                {/* Single Row Horizontal Slider */}
+                <div className="places-slider" ref={sliderRef}>
+                  {displayPlaces.map((place) => (
+                    <div key={place.id} className="place-card-wrapper">
+                      <PlaceCard place={place} onClick={() => onPlaceClick(place)} />
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>

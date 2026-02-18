@@ -71,46 +71,61 @@ export default function ExploreDiscovery() {
     return null;
   };
 
-  // Parse user message and update filters
+  // Parse user message and update filters with REPLACEMENT logic
   const parseUserMessage = (message) => {
+    // Start with current filters
     const newFilters = { ...filters };
     const lowerMessage = message.toLowerCase();
 
-    // Category detection
-    const categories = ["cafe", "restaurant", "temple", "beach", "mall", "park", "museum"];
+    // REPLACEMENT FILTER: Category detection
+    // If a category is detected, it REPLACES the previous category
+    const categories = ["cafe", "restaurant", "temple", "beach", "mall", "park", "museum", 
+                        "hotel", "coworking", "gym", "hospital", "school"];
+    let categoryDetected = false;
     categories.forEach((cat) => {
       if (lowerMessage.includes(cat)) {
         newFilters.category = cat;
+        categoryDetected = true;
       }
     });
 
-    // Location detection (common Chennai areas)
+    // REPLACEMENT FILTER: Location detection (common Chennai areas)
+    // If a location is detected, it REPLACES the previous location
     const locations = [
-      "nungambakkam",
-      "adyar",
-      "t nagar",
-      "mylapore",
-      "anna nagar",
-      "velachery",
-      "tambaram",
+      "nungambakkam", "adyar", "t nagar", "mylapore", "anna nagar", 
+      "velachery", "tambaram", "guindy", "porur", "egmore",
+      "triplicane", "besant nagar", "alwarpet", "kodambakkam", "saidapet",
+      "vadapalani", "ashok nagar", "kk nagar", "perungudi", "sholinganallur",
+      "omr", "ecr", "royapettah", "teynampet", "mandaveli",
+      "west mambalam", "chrompet", "st thomas mount", "pallavaram", "marina",
+      "thiruvanmiyur", "palavakkam", "injambakkam", "thoraipakkam", "madipakkam",
     ];
+    let locationDetected = false;
     locations.forEach((loc) => {
       if (lowerMessage.includes(loc)) {
         newFilters.location = loc;
+        locationDetected = true;
       }
     });
 
-    // Rating detection
-    const ratingMatch = lowerMessage.match(/rating.*?(\d+\.?\d*)/);
+    // REPLACEMENT FILTER: Rating detection
+    // If a rating is detected, it REPLACES the previous rating
+    const ratingMatch = lowerMessage.match(/rating.*?(\d+\.?\d*)|over\s+(\d+\.?\d*)|above\s+(\d+\.?\d*)/);
     if (ratingMatch) {
-      newFilters.ratingMin = parseFloat(ratingMatch[1]);
+      const rating = ratingMatch[1] || ratingMatch[2] || ratingMatch[3];
+      newFilters.ratingMin = parseFloat(rating);
     }
 
-    // Tag detection
-    const tags = ["quiet", "peaceful", "modern", "traditional", "open now", "wifi"];
+    // ACCUMULATING FILTER: Tag detection
+    // Tags are ADDED to the list, not replaced (avoiding duplicates)
+    const tags = ["quiet", "peaceful", "modern", "traditional", "open now", "wifi", 
+                  "outdoor", "family-friendly", "romantic", "cozy"];
     tags.forEach((tag) => {
-      if (lowerMessage.includes(tag) && !newFilters.tags.includes(tag)) {
-        newFilters.tags.push(tag);
+      if (lowerMessage.includes(tag)) {
+        // Only add if not already present (avoid duplicates)
+        if (!newFilters.tags.includes(tag)) {
+          newFilters.tags = [...newFilters.tags, tag];
+        }
       }
     });
 

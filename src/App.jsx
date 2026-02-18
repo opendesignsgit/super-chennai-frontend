@@ -542,7 +542,6 @@ function App() {
  const hideNewsletter =
     location.pathname === "/chennai-conclave";
 
-  const hideHeaderFooter = false; // Removed /explore hiding
 
 
       const isHomePage = location.pathname === "/";
@@ -550,12 +549,10 @@ function App() {
       return (
         <>
           <ScrollToHashElement />
-          {!hideHeaderFooter && (
-            <HeaderWithMegaMenu
-              setMenuBar={setMenuBar}
-              setMenuBar1={setMenuBar1}
-            />
-          )}
+          <HeaderWithMegaMenu
+            setMenuBar={setMenuBar}
+            setMenuBar1={setMenuBar1}
+          />
 
           {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
@@ -567,18 +564,17 @@ function App() {
           )}
           {/* )} */}
 
-          {!hideHeaderFooter && (
-            <div
-              ref={stickyRef}
-              className={`stickyIconsContainer ${
-                footerReached ? "footerreached" : ""
-              }`}
+          <div
+            ref={stickyRef}
+            className={`stickyIconsContainer ${
+              footerReached ? "footerreached" : ""
+            }`}
+          >
+            <a
+              className="linkedin-sc"
+              target="_blank"
+              href="https://www.linkedin.com/company/super-chennai"
             >
-              <a
-                className="linkedin-sc"
-                target="_blank"
-                href="https://www.linkedin.com/company/super-chennai"
-              >
               <img src="/images/Indeed.png" alt="Linkedin" />
             </a>
             <a
@@ -610,9 +606,8 @@ function App() {
               <img src="/images/threads.png" alt="Twitter" />
             </a>
           </div>
-          )}
-
-          {!hideOnMargazhiPage && !hideHeaderFooter && (
+          
+           {!hideOnMargazhiPage && (
             <div
             id="menifeto-tab"
             ref={stickyRef}
@@ -629,7 +624,7 @@ function App() {
             </div>
           )}
 
-          {!hideOnMargazhiPage && !hideHeaderFooter && (
+          {!hideOnMargazhiPage && (
             <div
               id="hotshots-event-tab"
               ref={stickyRef}
@@ -657,7 +652,6 @@ function App() {
           </a>
         </div> */}
 
-          {!hideHeaderFooter && (
           <div
             ref={stickyRef}
             className={`pointcastSticky ${footerReached ? "footerreached" : ""}`}
@@ -666,7 +660,6 @@ function App() {
               <img src="/images/pointcast-icon.svg" alt="explore chennai" />
             </a>
           </div>
-          )}
 
           <Routes>
             {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
@@ -854,11 +847,6 @@ function App() {
             <Route path="/live-in-chennai" element={<Live />} />
             <Route path="/visit-chennai" element={<Visit />} />
             <Route path="/work-in-chennai" element={<Work />} />
-            
-            {/* Explore Discovery Routes */}
-            <Route path="/explore" element={<ExploreDiscovery />} />
-            <Route path="/explore/:slug" element={<ExploreDiscovery />} />
-            
             <Route path="/oldevenslist" element={<EventsHome />} />
             <Route path="/eventsold/:slug" element={<EventsDetailsOld />} />
             <Route path="/media-coverage" element={<NewsLetter />} />
@@ -1578,6 +1566,10 @@ function App() {
             {/* Pride-of-Chennai */}
             <Route path="/hall-of-fame" element={<PrideofChennai />} />
             <Route path="/chennai-apps" element={<ChennaiApp />} />
+
+            {/* Explore Discovery Routes */}
+            <Route path="/explore" element={<ExploreDiscovery />} />
+            <Route path="/explore/:slug" element={<ExploreDiscovery />} />
           </Routes>
 
           {/*################################# NEWS LETTER ######################################## */}
@@ -1603,7 +1595,7 @@ function App() {
             </section>
           )}
 
-          {!hideHeaderFooter && <Footer />}
+          <Footer />
           {/* </Router> */}
           {/* MenuBar */}
 

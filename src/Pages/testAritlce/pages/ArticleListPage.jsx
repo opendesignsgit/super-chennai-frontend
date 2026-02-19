@@ -104,16 +104,8 @@ const BottomAdBox = ({ ads }) => {
   return (
     <div className="fixed bottom-0 inset-x-0 bg-white border-t shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4 justify-between">
-        {/* <img
-          src={withBaseUrl(ad.media?.url)}
-          alt={ad.altText || ad.title}
-          className="h-12 object-contain rounded"
-        /> */}
-
         <AdMedia ad={ad}  className="mb-2 h-19 rounded"/>
-
         <p className="font-semibold text-sm truncate">{ad.title}</p>
-
         <div className="flex gap-3 items-center">
           <Link
             to={`/ads/${ad.slug}`}
@@ -121,7 +113,6 @@ const BottomAdBox = ({ ads }) => {
           >
             Learn More
           </Link>
-
           <button
             onClick={() => setShow(false)}
             className="h-8 w-8 flex items-center justify-center rounded-full
@@ -217,6 +208,11 @@ export default function ArticleListPage() {
   const [showRightAds, setShowRightAds] = useState(true);
   const ARTICLES_PER_PAGE = 3;
 
+   const POPULAR_PER_PAGE = 2;
+  const MOST_VIEWED_PER_PAGE = 2;
+
+   const [popularPage, setPopularPage] = useState(1);
+   const [mostViewedPage, setMostViewedPage] = useState(1);
 
 
   const [page, setPage] = useState(1);
@@ -268,19 +264,54 @@ const mainCol = hasSideAds
 
   //##################### MORE SECTION DTATA STRING ##########################################
 
-  const mostViewedArticles = [...articles]
-    .sort((a, b) => (b.views ?? 0) - (a.views ?? 0))
-    .slice(0, 5);
+  // const mostViewedArticles = [...articles]
+  //   .sort((a, b) => (b.views ?? 0) - (a.views ?? 0))
+  //   .slice(0, 5);
 
-  const popularArticles = [...articles]
-    .sort((a, b) => {
-      const scoreA = (a.views ?? 0) + (a.readingTime ?? 0) * 5;
-      const scoreB = (b.views ?? 0) + (b.readingTime ?? 0) * 5;
-      return scoreB - scoreA;
-    })
-    .slice(0, 6);
+  // const popularArticles = [...articles]
+  //   .sort((a, b) => {
+  //     const scoreA = (a.views ?? 0) + (a.readingTime ?? 0) * 5;
+  //     const scoreB = (b.views ?? 0) + (b.readingTime ?? 0) * 5;
+  //     return scoreB - scoreA;
+  //   })
+  //   .slice(0, 6);
+
+  
   const inlineAdIndex =
     embeddedAds?.length > 0 ? (page - 1) % embeddedAds.length : 0;
+
+const mostViewedSorted = [...articles].sort(
+  (a, b) => (b.views ?? 0) - (a.views ?? 0)
+);
+const popularSorted = [...articles].sort((a, b) => {
+  const scoreA = (a.views ?? 0) + (a.readingTime ?? 0) * 5;
+  const scoreB = (b.views ?? 0) + (b.readingTime ?? 0) * 5;
+  return scoreB - scoreA;
+});
+
+const totalMostViewedPages = Math.ceil(
+  mostViewedSorted.length / MOST_VIEWED_PER_PAGE
+);
+
+const totalPopularPages = Math.ceil(
+  popularSorted.length / POPULAR_PER_PAGE
+);
+
+const mostViewedArticles = mostViewedSorted.slice(
+  (mostViewedPage - 1) * MOST_VIEWED_PER_PAGE,
+  mostViewedPage * MOST_VIEWED_PER_PAGE
+);
+
+
+
+const popularArticles = popularSorted.slice(
+  (popularPage - 1) * POPULAR_PER_PAGE,
+  popularPage * POPULAR_PER_PAGE
+);
+
+
+
+
 
   return (
     <>
@@ -318,7 +349,6 @@ const mainCol = hasSideAds
               <div className="block lg:hidden mb-6">
                 <AdBox ads={leftAds.slice(0, 1)} />
               </div>
-
 
               {hasLeft ? (
                 <div className="hidden lg:block lg:col-span-2">
@@ -470,6 +500,15 @@ const mainCol = hasSideAds
               </div>
             )}
 
+            <Pagination
+              page={mostViewedPage}
+              totalPages={totalMostViewedPages}
+              onPageChange={(p) => {
+                setMostViewedPage(p);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            />
+
             {popularArticles.length > 0 && (
               <div className="mt-20 conclevesSectionHeading">
                 <h3 className="mb-8">Popular Articles</h3>
@@ -514,6 +553,15 @@ const mainCol = hasSideAds
                 </div>
               </div>
             )}
+
+            <Pagination
+              page={popularPage}
+              totalPages={totalPopularPages}
+              onPageChange={(p) => {
+                setPopularPage(p);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            />
           </div>
 
           {rightAds?.length > 0 && (
@@ -523,7 +571,6 @@ const mainCol = hasSideAds
                 <AdBox ads={rightAds.slice(0, 1)} />
               </div>
 
-           
               {hasRight ? (
                 <div className="hidden lg:block lg:col-span-2">
                   <AdBox ads={rightAds} />

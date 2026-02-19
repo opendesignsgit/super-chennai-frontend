@@ -33,12 +33,13 @@ const slides = [
 
   {
     type: "image",
-    link: "/chennai-conclave",
+    link: "https://youtube.com/live/D8hBf-lK57c?feature=share",
     image: "/images/conclave-banner.jpeg",
     image1: "/images/conclave-banner-mobile-banner.jpeg",
     title: "conclave evant",
     description: "conclave.",
   },
+          // <a href="https://youtube.com/live/D8hBf-lK57c?feature=share">
 
   {
     type: "image",

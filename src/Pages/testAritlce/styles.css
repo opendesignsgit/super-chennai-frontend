@@ -39,3 +39,130 @@
   color: #100f9a;
   line-height: 30px;
 }
+
+/* ===============================
+   Default (Desktop Large)
+================================= */
+.formheadingtheme-article {
+  font-family: "NewAmsterdam";
+  color: #a44294;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.formheadingtheme-article h4 {
+  font-size: 28px;
+}
+
+
+/* ===============================
+   Laptop (max-width: 1200px)
+================================= */
+@media (max-width: 1200px) {
+  .formheadingtheme-article {
+    font-size: 42px;
+  }
+
+  .formheadingtheme-article h4 {
+    font-size: 24px;
+  }
+}
+
+
+/* ===============================
+   Tablet (max-width: 992px)
+================================= */
+@media (max-width: 992px) {
+  .formheadingtheme-article {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .formheadingtheme-article h4 {
+    font-size: 20px;
+  }
+}
+
+
+/* ===============================
+   Mobile (max-width: 768px)
+================================= */
+@media (max-width: 768px) {
+  .formheadingtheme-article {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .formheadingtheme-article h4 {
+    font-size: 18px;
+  }
+}
+
+
+/* ===============================
+   Small Mobile (max-width: 480px)
+================================= */
+@media (max-width: 480px) {
+  .formheadingtheme-article {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .formheadingtheme-article h4 {
+    font-size: 16px;
+  }
+}
+
+
+/* ===============================
+   Desktop Large
+================================= */
+.conclevesSectionHeading h3 {
+  font-family: "NewAmsterdam";
+  font-size: 50px;
+  color: #100f9a;
+  line-height: 1.1;
+}
+
+
+/* ===============================
+   Laptop (max-width: 1200px)
+================================= */
+@media (max-width: 1200px) {
+  .conclevesSectionHeading h3 {
+    font-size: 42px;
+  }
+}
+
+
+/* ===============================
+   Tablet (max-width: 992px)
+================================= */
+@media (max-width: 992px) {
+  .conclevesSectionHeading h3 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+}
+
+
+/* ===============================
+   Mobile (max-width: 768px)
+================================= */
+@media (max-width: 768px) {
+  .conclevesSectionHeading h3 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+}
+
+
+/* ===============================
+   Small Mobile (max-width: 480px)
+================================= */
+@media (max-width: 480px) {
+  .conclevesSectionHeading h3 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+}

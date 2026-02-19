@@ -13,8 +13,7 @@ const ImagePopup = ({ onClose, imageUrl }) => {
     <div
       className="fixed popupImageBackground inset-0 bg-black bg-opacity-60 flex justify-center items-center z-[9999] transition-opacity duration-300 ease-in-out hotshots-popup menifeto-popup"
       // id="hotshots-popup-click"
-            id="menifesto-popup"
-
+      id="menifesto-popup"
     >
       <div
         className={`popupStyleMainContainer bg-white p-4 rounded shadow-lg relative max-w-[90%] max-h-[90%] transform transition-all duration-500 ease-in-out ${
@@ -37,13 +36,15 @@ const ImagePopup = ({ onClose, imageUrl }) => {
           // onClick={onClose}
         >
           {/* <Link to="/namma-stories#NammaStoriesVideoId" onClick={onClose}> */}
-          <Link to="/chennai-conclave" onClick={onClose}>
+          {/* <Link to="/chennai-conclave" onClick={onClose}> */}
+          <a href="https://youtube.com/live/D8hBf-lK57c?feature=share">
             <img
               src={imageUrl}
               alt="Popup"
               className="LeftSideImagePopup max-w-full max-h-[80vh]"
             />
-          </Link>
+          </a>
+          {/* </Link> */}
           {/* <Link  className="RightSideImagePopup" to="/car-treasure-hunt" onClick={onClose}>
             <img
               src="/images/treasure-hunt.png"

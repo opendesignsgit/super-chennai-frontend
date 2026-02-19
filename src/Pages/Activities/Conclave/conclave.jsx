@@ -867,7 +867,7 @@ export default function Conclave() {
 
       {/* ============== Banner ============ */}
 
-      <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
+      {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
@@ -880,6 +880,28 @@ export default function Conclave() {
             src="/images/events/conclave-banner-mobile-banner-1.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
+        </div>
+
+        <div className="accodoamationBannerContainer relative z-20">
+          <div className="accodoamationBannerText"></div>
+        </div>
+      </section> */}
+
+      <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
+        <div className="relative z-0">
+          <a href="https://youtube.com/live/D8hBf-lK57c?feature=share">
+            <img
+              className="eventsCalenderIamge hidden sm:block w-full"
+              src="/images/events/conclave-banner.jpeg"
+              alt="Super Chennai Quiz"
+            />
+
+            <img
+              className="block sm:hidden w-full"
+              src="/images/events/conclave-banner-mobile-banner-1.jpeg"
+              alt="Super Chennai Quiz Mobile"
+            />
+          </a>
         </div>
 
         <div className="accodoamationBannerContainer relative z-20">
@@ -1400,8 +1422,8 @@ export default function Conclave() {
                       placeholder="Enter 10 digit mobile number * "
                       className="border p-3 pr-28 rounded-lg w-full"
                       value={form.phone}
-                       onChange={handleChange}
-                       maxLength={10}
+                      onChange={handleChange}
+                      maxLength={10}
                       pattern="[6-9]{1}[0-9]{9}"
                       disabled={otpSent}
                       required

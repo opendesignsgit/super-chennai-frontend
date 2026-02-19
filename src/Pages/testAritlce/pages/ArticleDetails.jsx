@@ -34,7 +34,7 @@ const parseStyleString = (styleString) => {
       .map((rule) => {
         const [key, value] = rule.split(":");
         return [key.trim(), value.trim()];
-      })
+      }),
   );
 };
 
@@ -46,23 +46,17 @@ const renderTextChildren = (children) => {
     if (child.type === "text") {
       let element = <>{child.text}</>;
 
-      if (child.format & FORMAT.BOLD)
-        element = <strong>{element}</strong>;
+      if (child.format & FORMAT.BOLD) element = <strong>{element}</strong>;
 
-      if (child.format & FORMAT.ITALIC)
-        element = <em>{element}</em>;
+      if (child.format & FORMAT.ITALIC) element = <em>{element}</em>;
 
-      if (child.format & FORMAT.UNDERLINE)
-        element = <u>{element}</u>;
+      if (child.format & FORMAT.UNDERLINE) element = <u>{element}</u>;
 
-      if (child.format & FORMAT.STRIKETHROUGH)
-        element = <s>{element}</s>;
+      if (child.format & FORMAT.STRIKETHROUGH) element = <s>{element}</s>;
 
       if (child.format & FORMAT.CODE)
         element = (
-          <code className="bg-gray-100 px-1 rounded text-sm">
-            {element}
-          </code>
+          <code className="bg-gray-100 px-1 rounded text-sm">{element}</code>
         );
 
       return (
@@ -90,11 +84,7 @@ const renderTextChildren = (children) => {
     if (child.type === "linebreak") return <br key={i} />;
 
     if (child.children) {
-      return (
-        <span key={i}>
-          {renderTextChildren(child.children)}
-        </span>
-      );
+      return <span key={i}>{renderTextChildren(child.children)}</span>;
     }
 
     return null;
@@ -114,7 +104,6 @@ const parseLexical = (blocks) => {
   if (!Array.isArray(blocks)) return null;
 
   return blocks.map((block, index) => {
-
     /* PARAGRAPH */
     if (block.type === "paragraph") {
       return (
@@ -153,8 +142,6 @@ const SingleAdCard = ({ ad, onClose }) => (
     >
       ✕
     </button>
-
-   
 
     <AdMedia ad={ad} />
 
@@ -221,28 +208,55 @@ const AdBox = ({ ads, onAllClosed }) => {
   );
 };
 
+// const BottomAdBox = ({ ads }) => {
+//   const [show, setShow] = useState(true);
+//   if (!show || !ads?.length) return null;
+
+//   const ad = ads[0];
+
+//   return (
+//     <div className="fixed bottom-0 inset-x-0 bg-white border-t shadow-lg z-50">
+//       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+//         <AdMedia ad={ad} className="mb-2 h-19 rounded" />
+
+//         <p className="font-semibold text-sm p-5">{ad.title}</p>
+//         <button onClick={() => setShow(false)}>✕</button>
+//       </div>
+//     </div>
+//   );
+// };
+
+
 const BottomAdBox = ({ ads }) => {
   const [show, setShow] = useState(true);
+
   if (!show || !ads?.length) return null;
 
   const ad = ads[0];
 
   return (
-    <div className="fixed bottom-0 inset-x-0 bg-white border-t shadow-lg z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        {/* <img
-          src={withBaseUrl(ad.media?.url)}
-          alt={ad.altText || ad.title}
-          className="h-12 rounded"
-        /> */}
-        <AdMedia ad={ad} className="mb-2 h-19 rounded" />
+    <div className="lg:hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t shadow-lg">
+      <div className="relative flex items-center justify-between px-4 py-2">
+        
+        <div className="w-24">
+          <AdMedia ad={ad} />
+        </div>
 
-        <p className="font-semibold text-sm p-5">{ad.title}</p>
-        <button onClick={() => setShow(false)} >✕</button>
+        <p className="text-sm font-semibold ml-3 truncate">
+          {ad.title}
+        </p>
+
+        <button
+          onClick={() => setShow(false)}
+          className="ml-3 text-gray-500 text-lg"
+        >
+          ✕
+        </button>
       </div>
     </div>
   );
 };
+
 
 const TopAdCard = ({ ad }) => {
   const [show, setShow] = useState(true);
@@ -273,7 +287,7 @@ const TopAdCard = ({ ad }) => {
           />
         </svg>
       </button>
-{/* 
+      {/* 
       <img
         src={withBaseUrl(ad.media?.url)}
         alt={ad.altText || ad.title}
@@ -281,7 +295,6 @@ const TopAdCard = ({ ad }) => {
       /> */}
 
       <AdMedia ad={ad} />
-
     </div>
   );
 };
@@ -346,30 +359,26 @@ const InlineAdBox = ({ ads }) => {
   );
 };
 
-
-
 /* ==============================
    PAGE
 ============================== */
 
 export default function ArticleDetailPage() {
-
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "instant", 
+      behavior: "instant",
     });
   }, [pathname]);
 
-
   const { slug } = useParams();
   const { article, ads, loading } = useArticleBySlug(slug);
-  
-  console.log("artcle data",article)
-    console.log("ads-detail",ads)
+
+  console.log("artcle data", article);
+  console.log("ads-detail", ads);
 
   const [showLeftAds, setShowLeftAds] = useState(true);
   const [showRightAds, setShowRightAds] = useState(true);
@@ -378,18 +387,15 @@ export default function ArticleDetailPage() {
   const blocks = article?.content?.root?.children || [];
 
   const paragraphBlocks = blocks.filter(
-  (block) =>
-    block.type === "paragraph" ||
-    block.type === "heading"
-);
-
+    (block) => block.type === "paragraph" || block.type === "heading",
+  );
 
   const sortByPriority = (items = []) =>
     [...items].sort((a, b) => (a.priority ?? 0) - (b.priority ?? 0));
 
   const filterAds = (position) =>
     sortByPriority(
-      ads?.filter((a) => a.position === position)?.flatMap((a) => a.ads) || []
+      ads?.filter((a) => a.position === position)?.flatMap((a) => a.ads) || [],
     );
 
   const leftAds = filterAds("left");
@@ -397,24 +403,15 @@ export default function ArticleDetailPage() {
   const topAds = filterAds("top");
   const bottomAds = filterAds("bottom");
 
-
   const hasLeft = showLeftAds && leftAds?.length > 0;
   const hasRight = showRightAds && rightAds?.length > 0;
 
-  // const mainCol =
-  //   hasLeft && hasRight
-  //     ? "lg:col-span-8"
-  //     : hasLeft || hasRight
-  //       ? "lg:col-span-10"
-  //       : "lg:col-span-12";
-  //        hasSideAds ? "lg:col-span-8" : "lg:col-span-12";
 
   const hasSideAds = hasLeft || hasRight;
 
-const mainCol = hasSideAds
-  ? "lg:col-span-8"
-  : "lg:col-span-12";
+  const mainCol = hasSideAds ? "lg:col-span-8" : "lg:col-span-12";
 
+  const visibleBlocks = expanded ? blocks : blocks.slice(0, 12);
 
   return (
     <>
@@ -460,12 +457,6 @@ const mainCol = hasSideAds
         }`}
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {/* {showLeftAds && leftAds?.length > 0 && (
-            <div className="hidden lg:block lg:col-span-2">
-              <AdBox ads={leftAds} onAllClosed={() => setShowLeftAds(false)} />
-            </div>
-          )} */}
-
           {hasLeft ? (
             <div className="hidden lg:block lg:col-span-2">
               <AdBox ads={leftAds} onAllClosed={() => setShowLeftAds(false)} />
@@ -474,51 +465,62 @@ const mainCol = hasSideAds
             <div className="hidden lg:block lg:col-span-2" />
           ) : null}
 
+          {/* Mobile Left Floating Small Ad */}
+          {hasLeft && (
+            <div className="lg:hidden fixed bottom-44 left-3 z-50 w-44">
+              <div className="relative bg-white rounded-lg shadow-md p-2">
+                <button
+                  onClick={() => setShowLeftAds(false)}
+                  className="absolute -top-2 -right-2 bg-white rounded-full w-5 h-5 text-xs shadow"
+                >
+                  ✕
+                </button>
+
+                <AdMedia ad={leftAds[0]} />
+              </div>
+            </div>
+          )}
+
           <div className={mainCol}>
             {loading && <p>Loading...</p>}
 
             {!loading && article && (
               <>
                 <div className="space-y-6">
-                  {/* {blocks.map((block, index) => { */}
-                  {(expanded ? blocks : paragraphBlocks.slice(0, 12)).map(
-                    (block, index) => {
-                      /* RICH TEXT */
-                      if (
-                        block.type === "paragraph" ||
-                        block.type === "heading"
-                      ) {
-                        return parseLexical([block]);
-                      }
+                  {visibleBlocks.map((block, index) => {
+                    if (
+                      block.type === "paragraph" ||
+                      block.type === "heading"
+                    ) {
+                      return parseLexical([block]);
+                    }
 
-                      /* MEDIA BLOCK */
-                      if (
-                        block.type === "block" &&
-                        block.fields?.blockType === "mediaBlock"
-                      ) {
-                        return (
-                          <img
-                            key={index}
-                            src={withBaseUrl(block.fields.media?.url)}
-                            alt=""
-                            className="w-full rounded-lg"
-                          />
-                        );
-                      }
+                    if (
+                      block.type === "block" &&
+                      block.fields?.blockType === "mediaBlock"
+                    ) {
+                      return (
+                        <img
+                          key={index}
+                          src={withBaseUrl(block.fields.media?.url)}
+                          alt=""
+                          className="w-full rounded-lg"
+                        />
+                      );
+                    }
 
-                      if (
-                        block.type === "block" &&
-                        block.fields?.blockType === "adBlock" &&
-                        block.fields?.position === "inline"
-                      ) {
-                        return (
-                          <InlineAdBox key={index} ads={block.fields?.ads} />
-                        );
-                      }
+                    if (
+                      block.type === "block" &&
+                      block.fields?.blockType === "adBlock" &&
+                      block.fields?.position === "inline"
+                    ) {
+                      return (
+                        <InlineAdBox key={index} ads={block.fields?.ads} />
+                      );
+                    }
 
-                      return null;
-                    },
-                  )}
+                    return null;
+                  })}
 
                   {paragraphBlocks.length > 1 && (
                     <div className="mt-6 text-center">
@@ -535,15 +537,6 @@ const mainCol = hasSideAds
             )}
           </div>
 
-          {/* {showRightAds && rightAds?.length > 0 && (
-            <div className="hidden lg:block lg:col-span-2">
-              <AdBox
-                ads={rightAds}
-                onAllClosed={() => setShowRightAds(false)}
-              />
-            </div>
-          )} */}
-
           {hasRight ? (
             <div className="hidden lg:block lg:col-span-2">
               <AdBox
@@ -554,6 +547,22 @@ const mainCol = hasSideAds
           ) : hasSideAds ? (
             <div className="hidden lg:block lg:col-span-2" />
           ) : null}
+
+          {/* Mobile Right Floating Small Ad */}
+          {hasRight && (
+            <div className="lg:hidden fixed bottom-44 right-3 z-50 w-44 ">
+              <div className="relative bg-white rounded-lg shadow-md p-2">
+                <button
+                  onClick={() => setShowRightAds(false)}
+                  className="absolute -top-2 -right-2 bg-white rounded-full w-5 h-5 text-xs shadow"
+                >
+                  ✕
+                </button>
+
+                <AdMedia ad={rightAds[0]} />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 

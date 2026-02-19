@@ -2,6 +2,16 @@
 import { calculateDistance, calculateBearing, isWithinCone } from "./geolocation";
 
 /**
+ * Check if place matches category filter
+ * @param {Object} place - Place object
+ * @param {string|null} category - Category to filter by
+ * @returns {boolean} True if matches or no filter
+ */
+const matchesCategory = (place, category) => {
+  return !category || place.category === category;
+};
+
+/**
  * Filter places by radius (desktop mode)
  * @param {Array} places - Array of places with coordinates
  * @param {Object} userLocation - User's lat/lng
@@ -14,7 +24,7 @@ export const filterByRadius = (places, userLocation, radius = 2, category = null
   
   return places.filter(place => {
     // Category filter
-    if (category && place.category !== category) {
+    if (!matchesCategory(place, category)) {
       return false;
     }
     
@@ -54,7 +64,7 @@ export const filterByDirectionalCone = (
   
   return places.filter(place => {
     // Category filter
-    if (category && place.category !== category) {
+    if (!matchesCategory(place, category)) {
       return false;
     }
     

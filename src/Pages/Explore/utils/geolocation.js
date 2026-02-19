@@ -128,12 +128,12 @@ export const watchUserLocation = (callback) => {
 };
 
 /**
- * Check if device supports orientation
- * @returns {boolean} True if supported
+ * Check if device supports orientation without requiring permission
+ * @returns {boolean} True if supported without permission (Android/desktop), false if requires permission (iOS)
  */
 export const supportsOrientation = () => {
   return typeof DeviceOrientationEvent !== "undefined" &&
-    typeof DeviceOrientationEvent.requestPermission !== "function"; // iOS needs permission
+    typeof DeviceOrientationEvent.requestPermission !== "function";
 };
 
 /**

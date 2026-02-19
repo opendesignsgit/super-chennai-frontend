@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 /**
  * Custom hook to manage Nearby Mode state (separate from Explore state)
@@ -52,42 +52,42 @@ export const useNearbyMode = () => {
     }
   }, [nearbyState.isNearbyActive, nearbyState.userLocation]);
 
-  const toggleNearbyMode = () => {
+  const toggleNearbyMode = useCallback(() => {
     setNearbyState((prev) => ({
       ...prev,
       isNearbyActive: !prev.isNearbyActive,
     }));
-  };
+  }, []);
 
-  const setUserLocation = (location) => {
+  const setUserLocation = useCallback((location) => {
     setNearbyState((prev) => ({
       ...prev,
       userLocation: location,
     }));
-  };
+  }, []);
 
-  const setDeviceHeading = (heading) => {
+  const setDeviceHeading = useCallback((heading) => {
     setNearbyState((prev) => ({
       ...prev,
       deviceHeading: heading,
     }));
-  };
+  }, []);
 
-  const setNearbyCategory = (category) => {
+  const setNearbyCategory = useCallback((category) => {
     setNearbyState((prev) => ({
       ...prev,
       nearbyCategory: category,
     }));
-  };
+  }, []);
 
-  const setNearbyModeType = (modeType) => {
+  const setNearbyModeType = useCallback((modeType) => {
     setNearbyState((prev) => ({
       ...prev,
       nearbyModeType: modeType,
     }));
-  };
+  }, []);
 
-  const resetNearbyMode = () => {
+  const resetNearbyMode = useCallback(() => {
     setNearbyState({
       isNearbyActive: false,
       userLocation: null,
@@ -95,7 +95,7 @@ export const useNearbyMode = () => {
       nearbyCategory: null,
       nearbyModeType: "radius",
     });
-  };
+  }, []);
 
   return {
     nearbyState,

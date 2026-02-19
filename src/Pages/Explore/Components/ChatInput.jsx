@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { capitalizeFirstLetter } from "../utils/helpers";
 
 export default function ChatInput({ mode, onSendMessage, onModeSwitch, categories = [], selectedCategory, onCategoryClick }) {
   const [inputValue, setInputValue] = useState("");
@@ -78,7 +79,7 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch, categorie
                 className={`category-chip ${selectedCategory === category ? "active" : ""}`}
                 onClick={() => onCategoryClick(category)}
               >
-                {category.charAt(0).toUpperCase() + category.slice(1)}
+                {capitalizeFirstLetter(category)}
               </button>
             ))}
           </div>

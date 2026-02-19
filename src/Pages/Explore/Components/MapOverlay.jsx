@@ -120,16 +120,23 @@ export default function MapOverlay({
             {places.map((place) => {
               if (!place.coordinates) return null;
               
+              // Build icon configuration
+              const iconConfig = {
+                url: getCategoryIcon(place.category),
+              };
+              
+              // Add scaledSize only if Google Maps API is loaded
+              if (window.google?.maps) {
+                iconConfig.scaledSize = new window.google.maps.Size(30, 30);
+              }
+              
               return (
                 <Marker
                   key={place.id}
                   position={place.coordinates}
                   title={place.title}
                   onClick={() => onPlaceClick(place)}
-                  icon={{
-                    url: getCategoryIcon(place.category),
-                    scaledSize: new window.google.maps.Size(30, 30),
-                  }}
+                  icon={iconConfig}
                 />
               );
             })}

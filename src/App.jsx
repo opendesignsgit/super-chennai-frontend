@@ -9,6 +9,7 @@ import Live from "../src/Pages/Live";
 import Visit from "../src/Pages/VisitPage";
 import Volunteer from "../src/Pages/Volunteer";
 import Work from "../src/Pages/Work";
+import ExplorePage from "../src/Pages/ExplorePage/ExplorePage";
 import "./App.css";
 import axios from "axios";
 
@@ -836,6 +837,7 @@ function App() {
             {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
             {/*----Main-Pages---------*/}
             <Route path="/" element={<HomePage />} />
+            <Route path="/explore" element={<ExplorePage />} />
             <Route path="/results" element={<SearchResults />} />
             <Route
               path="/volunteer-in-chennai"

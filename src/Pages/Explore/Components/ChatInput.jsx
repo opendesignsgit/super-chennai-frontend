@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
+export default function ChatInput({ mode, onSendMessage, onModeSwitch, disabled = false }) {
   const [inputValue, setInputValue] = useState("");
   const [isListening, setIsListening] = useState(false);
   const [recognition, setRecognition] = useState(null);
@@ -65,7 +65,7 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
   };
 
   return (
-    <div className="chat-input-container">
+    <div className={`chat-input-container ${disabled ? 'disabled' : ''}`}>
       <form className="chat-input-form" onSubmit={handleSubmit}>
         <div className="input-wrapper">
           <button type="button" className="input-icon-btn" title="Add">

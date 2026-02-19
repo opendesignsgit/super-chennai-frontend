@@ -377,7 +377,7 @@ export const partners = [
   },
       {
     id: 3,
-    image: "/images/partnersLogo/credai.png",
+    image: "/images/partnersLogo/credai-logo.png",
   },
 ];
 

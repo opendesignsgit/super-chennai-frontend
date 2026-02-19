@@ -4,7 +4,15 @@ import ChatInterface from "./Components/ChatInterface";
 import ChatInput from "./Components/ChatInput";
 import DiscoveryResults from "./Components/DiscoveryResults";
 import DetailOffcanvas from "./Components/DetailOffcanvas";
+import MapOverlay from "./Components/MapOverlay";
+import NearbyCategoryChips from "./Components/NearbyCategoryChips";
 import mockPlaces from "./data/mockPlaces";
+import {
+  getUserLocation,
+  isDeviceOrientationSupported,
+  requestDeviceOrientationPermission,
+  applyNearbySpatialFilter,
+} from "./utils/spatialUtils";
 import "./Styles/ExploreDiscovery.css";
 
 export default function ExploreDiscovery() {
@@ -20,12 +28,21 @@ export default function ExploreDiscovery() {
     },
   ]);
 
-  // Active filters (functional state)
+  // Active filters (functional state - for AI mode)
   const [filters, setFilters] = useState({
     category: null,
     location: null,
     ratingMin: null,
     tags: [],
+  });
+
+  // NEARBY STATE (Non-Invasive Extension Layer)
+  const [nearbyState, setNearbyState] = useState({
+    isNearbyActive: false,
+    userLocation: null,
+    deviceHeading: null,
+    nearbyCategory: null,
+    nearbyModeType: "radius", // "radius" or "directional"
   });
 
   // UI state
@@ -486,18 +503,84 @@ export default function ExploreDiscovery() {
     }, 300); // Small delay to show thinking animation
   };
 
+  // Device orientation handler
+  useEffect(() => {
+    if (nearbyState.isNearbyActive && nearbyState.nearbyModeType === "directional") {
+      const handleOrientation = (event) => {
+        // Use webkitCompassHeading for iOS, alpha for Android
+        const heading = event.webkitCompassHeading || event.alpha || 0;
+        setNearbyState((prev) => ({
+          ...prev,
+          deviceHeading: heading,
+        }));
+      };
+
+      window.addEventListener("deviceorientation", handleOrientation);
+      return () => window.removeEventListener("deviceorientation", handleOrientation);
+    }
+  }, [nearbyState.isNearbyActive, nearbyState.nearbyModeType]);
+
   // Handle mode switch
-  const handleModeSwitch = (newMode) => {
+  const handleModeSwitch = async (newMode) => {
     setMode(newMode);
+    
     if (newMode === "nearby") {
-      // Phase 1: Mock nearby results
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "ai",
-          text: "Showing places near you (mock data)",
-        },
-      ]);
+      // Activate Nearby Mode
+      try {
+        // Request user location
+        const userLoc = await getUserLocation();
+        
+        // Detect device orientation support
+        const orientationSupported = isDeviceOrientationSupported();
+        let modeType = "radius";
+        
+        if (orientationSupported) {
+          const granted = await requestDeviceOrientationPermission();
+          if (granted) {
+            modeType = "directional";
+          }
+        }
+        
+        // Update nearby state
+        setNearbyState({
+          isNearbyActive: true,
+          userLocation: userLoc,
+          deviceHeading: null,
+          nearbyCategory: null,
+          nearbyModeType: modeType,
+        });
+        
+        // Add system message
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "system",
+            text: `📍 Nearby mode activated. Showing places within 5km${
+              modeType === "directional" ? " in your direction" : ""
+            }.`,
+          },
+        ]);
+      } catch (error) {
+        console.error("Failed to activate nearby mode:", error);
+        // Fallback to AI mode
+        setMode("ai");
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "system",
+            text: "Could not access your location. Please enable location permissions and try again.",
+          },
+        ]);
+      }
+    } else {
+      // Deactivate Nearby Mode - restore AI mode
+      setNearbyState({
+        isNearbyActive: false,
+        userLocation: null,
+        deviceHeading: null,
+        nearbyCategory: null,
+        nearbyModeType: "radius",
+      });
     }
   };
 
@@ -507,10 +590,36 @@ export default function ExploreDiscovery() {
     setShowOffcanvas(true);
   };
 
+  // Handle nearby category selection
+  const handleNearbyCategorySelect = (categoryId) => {
+    setNearbyState((prev) => ({
+      ...prev,
+      nearbyCategory: categoryId,
+    }));
+  };
+
+  // Handle map overlay close
+  const handleMapClose = () => {
+    setMode("ai");
+    setNearbyState({
+      isNearbyActive: false,
+      userLocation: null,
+      deviceHeading: null,
+      nearbyCategory: null,
+      nearbyModeType: "radius",
+    });
+  };
+
   // Handle back navigation
   const handleBack = () => {
     navigate(-1);
   };
+
+  // Calculate visible places based on mode
+  const visiblePlaces =
+    nearbyState.isNearbyActive
+      ? applyNearbySpatialFilter(mockPlaces, nearbyState, 5) // 5km radius
+      : mockPlaces; // Use all places for AI mode filtering
 
   return (
     <div className="explore-discovery-page">
@@ -542,11 +651,32 @@ export default function ExploreDiscovery() {
         </main>
       </div>
 
+      {/* Map Overlay (Nearby Mode) */}
+      <MapOverlay
+        isActive={nearbyState.isNearbyActive}
+        userLocation={nearbyState.userLocation}
+        deviceHeading={nearbyState.deviceHeading}
+        nearbyModeType={nearbyState.nearbyModeType}
+        places={visiblePlaces}
+        radiusKm={5}
+        onPlaceClick={handlePlaceClick}
+        onClose={handleMapClose}
+      />
+
+      {/* Nearby Category Chips (Nearby Mode) */}
+      {nearbyState.isNearbyActive && (
+        <NearbyCategoryChips
+          selectedCategory={nearbyState.nearbyCategory}
+          onCategorySelect={handleNearbyCategorySelect}
+        />
+      )}
+
       {/* Chat Input - Sticky at bottom */}
       <ChatInput
         mode={mode}
         onSendMessage={handleSendMessage}
         onModeSwitch={handleModeSwitch}
+        disabled={nearbyState.isNearbyActive}
       />
 
       {/* Detail Offcanvas */}

@@ -1,11 +1,27 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import ChatInterface from "./Components/ChatInterface";
 import ChatInput from "./Components/ChatInput";
 import DiscoveryResults from "./Components/DiscoveryResults";
 import DetailOffcanvas from "./Components/DetailOffcanvas";
+import NearbyMap from "./Components/NearbyMap";
+import NearbyCategoryChips from "./Components/NearbyCategoryChips";
 import mockPlaces from "./data/mockPlaces";
+import { 
+  getUserLocation, 
+  supportsOrientation, 
+  requestOrientationPermission,
+  getHeadingFromOrientation,
+  assignMockCoordinates 
+} from "./utils/geolocation";
+import { 
+  filterByRadius, 
+  filterByDirectionalCone, 
+  getUniqueCategories,
+  sortByDistance 
+} from "./utils/nearbyFiltering";
 import "./Styles/ExploreDiscovery.css";
+import "leaflet/dist/leaflet.css";
 
 export default function ExploreDiscovery() {
   const { slug } = useParams();
@@ -34,6 +50,19 @@ export default function ExploreDiscovery() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [isThinking, setIsThinking] = useState(false); // Loading state for message processing
   const [lastFilterChange, setLastFilterChange] = useState(null); // Track last filter change for fallback
+
+  // Nearby Mode State
+  const [nearbyState, setNearbyState] = useState({
+    isNearbyActive: false,
+    userLocation: null,
+    deviceHeading: null,
+    nearbyCategory: null,
+    nearbyModeType: "radius", // "radius" or "directional"
+    nearbyRadius: 2, // Default 2km
+  });
+  
+  const [placesWithCoords, setPlacesWithCoords] = useState([]);
+  const orientationListenerRef = useRef(null);
 
   // Session storage key
   const SESSION_KEY = "explore_chat_session";
@@ -487,17 +516,90 @@ export default function ExploreDiscovery() {
   };
 
   // Handle mode switch
-  const handleModeSwitch = (newMode) => {
+  const handleModeSwitch = async (newMode) => {
     setMode(newMode);
+    
     if (newMode === "nearby") {
-      // Phase 1: Mock nearby results
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "ai",
-          text: "Showing places near you (mock data)",
-        },
-      ]);
+      // Initialize Nearby Mode
+      try {
+        // Request GPS permission and get user location
+        const location = await getUserLocation();
+        
+        // Detect device orientation support
+        const hasOrientation = supportsOrientation();
+        let modeType = "radius"; // Default to radius mode
+        
+        if (hasOrientation) {
+          // Request orientation permission (iOS)
+          const permissionGranted = await requestOrientationPermission();
+          if (permissionGranted) {
+            modeType = "directional";
+            
+            // Add orientation listener
+            const handleOrientation = (event) => {
+              const heading = getHeadingFromOrientation(event);
+              setNearbyState(prev => ({
+                ...prev,
+                deviceHeading: heading,
+              }));
+            };
+            
+            window.addEventListener('deviceorientation', handleOrientation);
+            orientationListenerRef.current = handleOrientation;
+          }
+        }
+        
+        // Initialize places with coordinates (mock for now)
+        const coordPlaces = assignMockCoordinates(mockPlaces);
+        setPlacesWithCoords(coordPlaces);
+        
+        // Update nearby state
+        setNearbyState({
+          isNearbyActive: true,
+          userLocation: location,
+          deviceHeading: null,
+          nearbyCategory: null,
+          nearbyModeType: modeType,
+          nearbyRadius: 2,
+        });
+        
+        // Add message
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "ai",
+            text: `Nearby Mode activated! ${modeType === "directional" ? "Point your device to discover places" : "Showing places within 2km"}`,
+          },
+        ]);
+      } catch (error) {
+        console.error("Error initializing Nearby Mode:", error);
+        setMessages((prev) => [
+          ...prev,
+          {
+            role: "ai",
+            text: "Could not access your location. Please enable location permissions and try again.",
+          },
+        ]);
+        // Revert to AI mode
+        setMode("ai");
+      }
+    } else {
+      // Switching back to AI mode
+      // Clean up orientation listener
+      if (orientationListenerRef.current) {
+        window.removeEventListener('deviceorientation', orientationListenerRef.current);
+        orientationListenerRef.current = null;
+      }
+      
+      // Reset nearby state
+      setNearbyState({
+        isNearbyActive: false,
+        userLocation: null,
+        deviceHeading: null,
+        nearbyCategory: null,
+        nearbyModeType: "radius",
+        nearbyRadius: 2,
+      });
     }
   };
 
@@ -507,6 +609,70 @@ export default function ExploreDiscovery() {
     setShowOffcanvas(true);
   };
 
+  // Handle nearby category selection
+  const handleNearbyCategorySelect = (category) => {
+    setNearbyState(prev => ({
+      ...prev,
+      nearbyCategory: category,
+    }));
+  };
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (orientationListenerRef.current) {
+        window.removeEventListener('deviceorientation', orientationListenerRef.current);
+      }
+    };
+  }, []);
+
+  // Calculate nearby places based on mode
+  const getNearbyPlaces = () => {
+    if (!nearbyState.isNearbyActive || !nearbyState.userLocation) {
+      return [];
+    }
+
+    let filtered = [];
+    
+    if (nearbyState.nearbyModeType === "directional" && nearbyState.deviceHeading !== null) {
+      // Directional mode
+      filtered = filterByDirectionalCone(
+        placesWithCoords,
+        nearbyState.userLocation,
+        nearbyState.deviceHeading,
+        nearbyState.nearbyRadius,
+        nearbyState.nearbyCategory
+      );
+    } else {
+      // Radius mode
+      filtered = filterByRadius(
+        placesWithCoords,
+        nearbyState.userLocation,
+        nearbyState.nearbyRadius,
+        nearbyState.nearbyCategory
+      );
+    }
+
+    // Sort by distance
+    return sortByDistance(filtered, nearbyState.userLocation);
+  };
+
+  // Get available categories from nearby places
+  const getAvailableCategories = () => {
+    if (!nearbyState.isNearbyActive || !nearbyState.userLocation) {
+      return [];
+    }
+
+    // Get all places within radius (ignoring category filter)
+    const allNearby = filterByRadius(
+      placesWithCoords,
+      nearbyState.userLocation,
+      nearbyState.nearbyRadius
+    );
+
+    return getUniqueCategories(allNearby);
+  };
+
   // Handle back navigation
   const handleBack = () => {
     navigate(-1);
@@ -514,33 +680,58 @@ export default function ExploreDiscovery() {
 
   return (
     <div className="explore-discovery-page">
-      {/* Hero Banner */}
-      <div className="hero-banner">
-        <img
-          src="/images/Visit-Images/visitBanner.jpg"
-          alt="Explore Chennai"
-          className="hero-banner-image"
-        />
-        <div className="hero-banner-overlay">
-          <h1>Explore Chennai</h1>
-          <p>Discover the best places with AI-assisted discovery</p>
-        </div>
-      </div>
-
-      <div className="explore-container">
-        {/* Main Content Area - Full Width */}
-        <main className="explore-main">
-          {/* Chat Interface with integrated results */}
-          <ChatInterface 
-            messages={messages} 
-            filters={filters}
-            mode={mode}
-            onPlaceClick={handlePlaceClick}
-            isThinking={isThinking}
-            onSuggestionClick={handleSendMessage}
+      {/* Hero Banner - Hide in Nearby Mode */}
+      {!nearbyState.isNearbyActive && (
+        <div className="hero-banner">
+          <img
+            src="/images/Visit-Images/visitBanner.jpg"
+            alt="Explore Chennai"
+            className="hero-banner-image"
           />
-        </main>
-      </div>
+          <div className="hero-banner-overlay">
+            <h1>Explore Chennai</h1>
+            <p>Discover the best places with AI-assisted discovery</p>
+          </div>
+        </div>
+      )}
+
+      {/* Nearby Mode - Map and Category Chips */}
+      {nearbyState.isNearbyActive && (
+        <>
+          <NearbyMap
+            userLocation={nearbyState.userLocation}
+            nearbyPlaces={getNearbyPlaces()}
+            deviceHeading={nearbyState.deviceHeading}
+            radius={nearbyState.nearbyRadius}
+            modeType={nearbyState.nearbyModeType}
+            onPlaceClick={handlePlaceClick}
+          />
+          
+          <NearbyCategoryChips
+            availableCategories={getAvailableCategories()}
+            selectedCategory={nearbyState.nearbyCategory}
+            onCategorySelect={handleNearbyCategorySelect}
+          />
+        </>
+      )}
+
+      {/* AI Mode - Chat Interface */}
+      {!nearbyState.isNearbyActive && (
+        <div className="explore-container">
+          {/* Main Content Area - Full Width */}
+          <main className="explore-main">
+            {/* Chat Interface with integrated results */}
+            <ChatInterface 
+              messages={messages} 
+              filters={filters}
+              mode={mode}
+              onPlaceClick={handlePlaceClick}
+              isThinking={isThinking}
+              onSuggestionClick={handleSendMessage}
+            />
+          </main>
+        </div>
+      )}
 
       {/* Chat Input - Sticky at bottom */}
       <ChatInput

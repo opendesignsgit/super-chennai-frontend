@@ -95,6 +95,19 @@ const ExploreAIDiscovery = () => {
       },
       (error) => {
         console.error("GPS error:", error);
+        
+        // For testing: Use Chennai coordinates as fallback
+        if (import.meta.env.DEV) {
+          const chennaiCoords = {
+            lat: 13.0827,
+            lng: 80.2707,
+          };
+          setUserLocation(chennaiCoords);
+          fetchNearbyPlaces(chennaiCoords);
+          setIsThinking(false);
+          return;
+        }
+        
         alert("Please enable location permissions to use Nearby mode");
         setIsThinking(false);
         setMode("ai");
@@ -403,7 +416,8 @@ const ExploreAIDiscovery = () => {
           {mode === "nearby" && userLocation && (
             <div className="map-places-grid">
               <div className="map-container">
-                <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY || ""}>
+                {import.meta.env.VITE_GOOGLE_MAPS_API_KEY ? (
+                <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
                   <GoogleMap
                     mapContainerStyle={mapContainerStyle}
                     center={userLocation}
@@ -411,6 +425,7 @@ const ExploreAIDiscovery = () => {
                     onLoad={(map) => (mapRef.current = map)}
                   >
                     {/* User location marker */}
+                    {window.google && window.google.maps && (
                     <Marker
                       position={userLocation}
                       icon={{
@@ -422,6 +437,7 @@ const ExploreAIDiscovery = () => {
                         strokeWeight: 2,
                       }}
                     />
+                    )}
 
                     {/* Radius circle */}
                     <Circle
@@ -451,7 +467,7 @@ const ExploreAIDiscovery = () => {
                     )}
 
                     {/* Place markers */}
-                    {filteredPlaces.map((place) => (
+                    {window.google && window.google.maps && filteredPlaces.map((place) => (
                       <Marker
                         key={place.id}
                         position={{ lat: place.lat, lng: place.lng }}
@@ -468,6 +484,11 @@ const ExploreAIDiscovery = () => {
                     ))}
                   </GoogleMap>
                 </LoadScript>
+                ) : (
+                  <div className="map-placeholder">
+                    <p>Google Maps API key not configured. Add VITE_GOOGLE_MAPS_API_KEY to .env file.</p>
+                  </div>
+                )}
 
                 {/* Compass indicator for directional mode */}
                 {nearbyModeType === "directional" && deviceHeading !== null && (

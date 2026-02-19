@@ -612,7 +612,7 @@ function App() {
           </div>
           )}
           
-           {!hideOnMargazhiPage && (
+           {!hideOnMargazhiPage && !isExplorePage && (
             <div
             id="menifeto-tab"
             ref={stickyRef}
@@ -629,7 +629,7 @@ function App() {
             </div>
           )}
 
-          {!hideOnMargazhiPage && (
+          {!hideOnMargazhiPage && !isExplorePage && (
             <div
               id="hotshots-event-tab"
               ref={stickyRef}
@@ -657,6 +657,7 @@ function App() {
           </a>
         </div> */}
 
+          {!isExplorePage && (
           <div
             ref={stickyRef}
             className={`pointcastSticky ${footerReached ? "footerreached" : ""}`}
@@ -665,6 +666,7 @@ function App() {
               <img src="/images/pointcast-icon.svg" alt="explore chennai" />
             </a>
           </div>
+          )}
 
           <Routes>
             {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}

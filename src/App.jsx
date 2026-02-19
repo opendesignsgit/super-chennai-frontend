@@ -540,9 +540,13 @@ function App() {
 
 
  const hideNewsletter =
-    location.pathname === "/chennai-conclave";
+    location.pathname === "/chennai-conclave" ||
+    location.pathname === "/explore" ||
+    location.pathname.startsWith("/explore/");
 
-
+  const hideExploreElements =
+    location.pathname === "/explore" ||
+    location.pathname.startsWith("/explore/");
 
       const isHomePage = location.pathname === "/";
 
@@ -564,12 +568,13 @@ function App() {
           )}
           {/* )} */}
 
-          <div
-            ref={stickyRef}
-            className={`stickyIconsContainer ${
-              footerReached ? "footerreached" : ""
-            }`}
-          >
+          {!hideExploreElements && (
+            <div
+              ref={stickyRef}
+              className={`stickyIconsContainer ${
+                footerReached ? "footerreached" : ""
+              }`}
+            >
             <a
               className="linkedin-sc"
               target="_blank"
@@ -606,8 +611,9 @@ function App() {
               <img src="/images/threads.png" alt="Twitter" />
             </a>
           </div>
+          )}
           
-           {!hideOnMargazhiPage && (
+           {!hideOnMargazhiPage && !hideExploreElements && (
             <div
             id="menifeto-tab"
             ref={stickyRef}
@@ -624,7 +630,7 @@ function App() {
             </div>
           )}
 
-          {!hideOnMargazhiPage && (
+          {!hideOnMargazhiPage && !hideExploreElements && (
             <div
               id="hotshots-event-tab"
               ref={stickyRef}
@@ -1595,7 +1601,7 @@ function App() {
             </section>
           )}
 
-          <Footer />
+          {!hideExploreElements && <Footer />}
           {/* </Router> */}
           {/* MenuBar */}
 

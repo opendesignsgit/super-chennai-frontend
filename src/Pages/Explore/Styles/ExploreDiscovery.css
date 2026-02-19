@@ -757,3 +757,97 @@
 .pointcastSticky, .stickyIconsContainer, .FooterBackground, #newsletterId, #hotshots-event-tab, #menifeto-tab{
   display: none;
 }
+
+/* Nearby Map Container */
+.nearby-map-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.map-error,
+.map-loading {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  color: #666;
+  font-size: 1.125rem;
+}
+
+/* Category Chips Container */
+.category-chips-container {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-chips {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+  min-width: min-content;
+}
+
+.category-chip {
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  background: white;
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.category-chip:hover {
+  border-color: #6f42c1;
+  color: #6f42c1;
+  background: #f8f4ff;
+}
+
+.category-chip.active {
+  background: #6f42c1;
+  color: white;
+  border-color: #6f42c1;
+}
+
+/* Disabled input styles for Nearby mode */
+.chat-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  color: #999;
+}
+
+.input-icon-btn:disabled,
+.send-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.input-icon-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .nearby-map-container {
+    height: 300px;
+  }
+
+  .category-chips-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .category-chip {
+    padding: 0.4rem 1rem;
+    font-size: 0.8125rem;
+  }
+}

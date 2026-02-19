@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import PlaceCard from "./PlaceCard";
 import mockPlaces from "../data/mockPlaces";
 
-export default function ChatInterface({ messages, filters, mode, onPlaceClick, isThinking, onSuggestionClick }) {
+export default function ChatInterface({ messages, filters, mode, onPlaceClick, isThinking, onSuggestionClick, nearbyPlaces = [] }) {
   const messagesEndRef = useRef(null);
   const sliderRef = useRef(null);
 
@@ -49,8 +49,8 @@ export default function ChatInterface({ messages, filters, mode, onPlaceClick, i
     });
   };
 
-  // Show places if filters are active
-  const displayPlaces = hasActiveFilters(filters) ? filteredPlaces : [];
+  // Show places based on mode
+  const displayPlaces = mode === "nearby" ? nearbyPlaces : (hasActiveFilters(filters) ? filteredPlaces : []);
 
   // Slider settings for react-slick
   const sliderSettings = {
@@ -111,7 +111,7 @@ export default function ChatInterface({ messages, filters, mode, onPlaceClick, i
               </div>
             )}
 
-            {/* Show results slider after AI response if filters are active */}
+            {/* Show results slider after AI response if filters are active or in nearby mode */}
             {message.role === "ai" && 
              index === messages.length - 1 && 
              !isThinking &&
@@ -131,8 +131,8 @@ export default function ChatInterface({ messages, filters, mode, onPlaceClick, i
             {message.role === "ai" && 
              index === messages.length - 1 && 
              !isThinking &&
-             hasActiveFilters(filters) &&
-             displayPlaces.length === 0 && (
+             ((mode === "ai" && hasActiveFilters(filters) && displayPlaces.length === 0) ||
+              (mode === "nearby" && displayPlaces.length === 0)) && (
               <div className="no-results-message">
                 <p>No exact matches found. Try adjusting your filters.</p>
               </div>

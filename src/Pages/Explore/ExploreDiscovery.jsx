@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import ChatInterface from "./Components/ChatInterface";
 import ChatInput from "./Components/ChatInput";
 import DiscoveryResults from "./Components/DiscoveryResults";
 import DetailOffcanvas from "./Components/DetailOffcanvas";
+import NearbyMap from "./Components/NearbyMap";
 import mockPlaces from "./data/mockPlaces";
 import "./Styles/ExploreDiscovery.css";
 
@@ -34,6 +35,18 @@ export default function ExploreDiscovery() {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [isThinking, setIsThinking] = useState(false); // Loading state for message processing
   const [lastFilterChange, setLastFilterChange] = useState(null); // Track last filter change for fallback
+
+  // Nearby Mode state
+  const [nearbyState, setNearbyState] = useState({
+    userLocation: null,
+    radius: 2000, // 2km default in meters
+    deviceHeading: null,
+    nearbyModeType: null, // "directional" or "radius"
+    gpsWatchId: null,
+    selectedCategory: null,
+  });
+
+  const orientationListenerRef = useRef(null);
 
   // Session storage key
   const SESSION_KEY = "explore_chat_session";
@@ -486,20 +499,291 @@ export default function ExploreDiscovery() {
     }, 300); // Small delay to show thinking animation
   };
 
-  // Handle mode switch
-  const handleModeSwitch = (newMode) => {
-    setMode(newMode);
-    if (newMode === "nearby") {
-      // Phase 1: Mock nearby results
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "ai",
-          text: "Showing places near you (mock data)",
-        },
-      ]);
+  // Calculate distance between two coordinates (Haversine formula)
+  const calculateDistance = (lat1, lon1, lat2, lon2) => {
+    const R = 6371e3; // Earth's radius in meters
+    const φ1 = (lat1 * Math.PI) / 180;
+    const φ2 = (lat2 * Math.PI) / 180;
+    const Δφ = ((lat2 - lat1) * Math.PI) / 180;
+    const Δλ = ((lon2 - lon1) * Math.PI) / 180;
+
+    const a =
+      Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+      Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+    return R * c; // Distance in meters
+  };
+
+  // Calculate bearing from user to place
+  const calculateBearing = (lat1, lon1, lat2, lon2) => {
+    const φ1 = (lat1 * Math.PI) / 180;
+    const φ2 = (lat2 * Math.PI) / 180;
+    const Δλ = ((lon2 - lon1) * Math.PI) / 180;
+
+    const y = Math.sin(Δλ) * Math.cos(φ2);
+    const x = Math.cos(φ1) * Math.sin(φ2) - Math.sin(φ1) * Math.cos(φ2) * Math.cos(Δλ);
+    const θ = Math.atan2(y, x);
+
+    return ((θ * 180) / Math.PI + 360) % 360; // Bearing in degrees
+  };
+
+  // Check if place is within directional cone
+  const isInDirectionalCone = (placeBearing, deviceHeading, coneAngle = 45) => {
+    let angle = Math.abs(placeBearing - deviceHeading);
+    if (angle > 180) angle = 360 - angle;
+    return angle <= coneAngle;
+  };
+
+  // Filter nearby places based on mode
+  const filterNearbyPlaces = () => {
+    if (!nearbyState.userLocation) return [];
+
+    const { userLocation, radius, deviceHeading, nearbyModeType, selectedCategory } = nearbyState;
+
+    return mockPlaces.filter((place) => {
+      // Category filter
+      if (selectedCategory && place.category !== selectedCategory) {
+        return false;
+      }
+
+      // Mock coordinates for Chennai places (using location names as proxy)
+      // In a real implementation, places would have lat/lng coordinates
+      const placeCoords = getMockCoordinates(place.location);
+      if (!placeCoords) return false;
+
+      const distance = calculateDistance(
+        userLocation.lat,
+        userLocation.lng,
+        placeCoords.lat,
+        placeCoords.lng
+      );
+
+      // Radius filter
+      if (distance > radius) return false;
+
+      // Directional filter for mobile
+      if (nearbyModeType === "directional" && deviceHeading !== null) {
+        const bearing = calculateBearing(
+          userLocation.lat,
+          userLocation.lng,
+          placeCoords.lat,
+          placeCoords.lng
+        );
+        return isInDirectionalCone(bearing, deviceHeading, 45);
+      }
+
+      return true;
+    });
+  };
+
+  // Mock coordinates for Chennai locations (for demonstration)
+  const getMockCoordinates = (locationName) => {
+    const locationCoords = {
+      nungambakkam: { lat: 13.0569, lng: 80.2426 },
+      adyar: { lat: 13.0067, lng: 80.2572 },
+      "t nagar": { lat: 13.0418, lng: 80.2341 },
+      mylapore: { lat: 13.0339, lng: 80.2669 },
+      "anna nagar": { lat: 13.0850, lng: 80.2101 },
+      velachery: { lat: 12.9750, lng: 80.2210 },
+      tambaram: { lat: 12.9226, lng: 80.1196 },
+      guindy: { lat: 13.0067, lng: 80.2206 },
+      porur: { lat: 13.0381, lng: 80.1570 },
+      egmore: { lat: 13.0732, lng: 80.2609 },
+      triplicane: { lat: 13.0545, lng: 80.2780 },
+      "besant nagar": { lat: 13.0010, lng: 80.2669 },
+      alwarpet: { lat: 13.0339, lng: 80.2530 },
+      kodambakkam: { lat: 13.0515, lng: 80.2254 },
+      saidapet: { lat: 13.0213, lng: 80.2231 },
+      vadapalani: { lat: 13.0504, lng: 80.2121 },
+      "ashok nagar": { lat: 13.0354, lng: 80.2093 },
+      "kk nagar": { lat: 13.0285, lng: 80.2028 },
+      perungudi: { lat: 12.9611, lng: 80.2425 },
+      sholinganallur: { lat: 12.9008, lng: 80.2272 },
+      omr: { lat: 12.9516, lng: 80.2201 },
+      ecr: { lat: 12.8497, lng: 80.2445 },
+      royapettah: { lat: 13.0569, lng: 80.2662 },
+      teynampet: { lat: 13.0389, lng: 80.2480 },
+      mandaveli: { lat: 13.0223, lng: 80.2596 },
+      "west mambalam": { lat: 13.0313, lng: 80.2283 },
+      chrompet: { lat: 12.9519, lng: 80.1420 },
+      "st thomas mount": { lat: 13.0006, lng: 80.2020 },
+      pallavaram: { lat: 12.9675, lng: 80.1491 },
+      marina: { lat: 13.0499, lng: 80.2824 },
+      thiruvanmiyur: { lat: 12.9830, lng: 80.2595 },
+      palavakkam: { lat: 12.9716, lng: 80.2550 },
+      injambakkam: { lat: 12.9119, lng: 80.2478 },
+      thoraipakkam: { lat: 12.9380, lng: 80.2340 },
+      madipakkam: { lat: 12.9625, lng: 80.1986 },
+    };
+
+    return locationCoords[locationName?.toLowerCase()] || null;
+  };
+
+  // Start GPS tracking
+  const startGPSTracking = () => {
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser");
+      return;
+    }
+
+    setIsThinking(true);
+    setMessages((prev) => [
+      ...prev,
+      {
+        role: "ai",
+        text: "Finding places near you...",
+      },
+    ]);
+
+    // Request GPS permission and start watching position
+    const watchId = navigator.geolocation.watchPosition(
+      (position) => {
+        const userLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+
+        setNearbyState((prev) => ({
+          ...prev,
+          userLocation,
+          gpsWatchId: watchId,
+        }));
+
+        setIsThinking(false);
+
+        // Only show message on first GPS lock
+        if (!nearbyState.userLocation) {
+          setMessages((prev) => [
+            ...prev.slice(0, -1), // Remove "Finding places" message
+            {
+              role: "ai",
+              text: "📍 Location found! Select a category to discover nearby places.",
+            },
+          ]);
+        }
+      },
+      (error) => {
+        console.error("GPS Error:", error);
+        setIsThinking(false);
+        setMessages((prev) => [
+          ...prev.slice(0, -1),
+          {
+            role: "ai",
+            text: "Unable to get your location. Please enable location services and try again.",
+          },
+        ]);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0,
+      }
+    );
+  };
+
+  // Stop GPS tracking
+  const stopGPSTracking = () => {
+    if (nearbyState.gpsWatchId) {
+      navigator.geolocation.clearWatch(nearbyState.gpsWatchId);
+    }
+    if (orientationListenerRef.current) {
+      window.removeEventListener("deviceorientation", orientationListenerRef.current);
+      orientationListenerRef.current = null;
     }
   };
+
+  // Detect device orientation support
+  const detectOrientationSupport = () => {
+    if (typeof DeviceOrientationEvent !== "undefined" && typeof DeviceOrientationEvent.requestPermission === "function") {
+      // iOS 13+ requires permission
+      DeviceOrientationEvent.requestPermission()
+        .then((permissionState) => {
+          if (permissionState === "granted") {
+            setupOrientationListener();
+            setNearbyState((prev) => ({ ...prev, nearbyModeType: "directional" }));
+          } else {
+            setNearbyState((prev) => ({ ...prev, nearbyModeType: "radius" }));
+          }
+        })
+        .catch(() => {
+          setNearbyState((prev) => ({ ...prev, nearbyModeType: "radius" }));
+        });
+    } else if (window.DeviceOrientationEvent) {
+      // Other devices with orientation support
+      setupOrientationListener();
+      setNearbyState((prev) => ({ ...prev, nearbyModeType: "directional" }));
+    } else {
+      // No orientation support - use radius mode
+      setNearbyState((prev) => ({ ...prev, nearbyModeType: "radius" }));
+    }
+  };
+
+  // Setup device orientation listener
+  const setupOrientationListener = () => {
+    orientationListenerRef.current = (event) => {
+      let heading = null;
+      
+      if (event.webkitCompassHeading) {
+        // iOS
+        heading = event.webkitCompassHeading;
+      } else if (event.alpha) {
+        // Android
+        heading = 360 - event.alpha;
+      }
+
+      if (heading !== null) {
+        setNearbyState((prev) => ({
+          ...prev,
+          deviceHeading: heading,
+        }));
+      }
+    };
+
+    window.addEventListener("deviceorientation", orientationListenerRef.current);
+  };
+
+  // Handle mode switch
+  const handleModeSwitch = (newMode) => {
+    if (newMode === "nearby") {
+      setMode(newMode);
+      startGPSTracking();
+      detectOrientationSupport();
+    } else {
+      // Switching back to AI mode
+      setMode(newMode);
+      stopGPSTracking();
+      setNearbyState({
+        userLocation: null,
+        radius: 2000,
+        deviceHeading: null,
+        nearbyModeType: null,
+        gpsWatchId: null,
+        selectedCategory: null,
+      });
+    }
+  };
+
+  // Handle category chip click in Nearby mode
+  const handleCategoryChipClick = (category) => {
+    setNearbyState((prev) => ({
+      ...prev,
+      selectedCategory: category,
+    }));
+  };
+
+  // Get unique categories from mockPlaces
+  const getUniqueCategories = () => {
+    const categories = [...new Set(mockPlaces.map((place) => place.category))];
+    return categories.sort();
+  };
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      stopGPSTracking();
+    };
+  }, []);
 
   // Handle place card click
   const handlePlaceClick = (place) => {
@@ -514,18 +798,31 @@ export default function ExploreDiscovery() {
 
   return (
     <div className="explore-discovery-page">
-      {/* Hero Banner */}
-      <div className="hero-banner">
-        <img
-          src="/images/Visit-Images/visitBanner.jpg"
-          alt="Explore Chennai"
-          className="hero-banner-image"
-        />
-        <div className="hero-banner-overlay">
-          <h1>Explore Chennai</h1>
-          <p>Discover the best places with AI-assisted discovery</p>
+      {/* Hero Banner or Map */}
+      {mode === "ai" ? (
+        <div className="hero-banner">
+          <img
+            src="/images/Visit-Images/visitBanner.jpg"
+            alt="Explore Chennai"
+            className="hero-banner-image"
+          />
+          <div className="hero-banner-overlay">
+            <h1>Explore Chennai</h1>
+            <p>Discover the best places with AI-assisted discovery</p>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="nearby-map-container">
+          <NearbyMap
+            userLocation={nearbyState.userLocation}
+            places={filterNearbyPlaces()}
+            onPlaceClick={handlePlaceClick}
+            deviceHeading={nearbyState.deviceHeading}
+            radius={nearbyState.radius}
+            nearbyModeType={nearbyState.nearbyModeType}
+          />
+        </div>
+      )}
 
       <div className="explore-container">
         {/* Main Content Area - Full Width */}
@@ -538,6 +835,7 @@ export default function ExploreDiscovery() {
             onPlaceClick={handlePlaceClick}
             isThinking={isThinking}
             onSuggestionClick={handleSendMessage}
+            nearbyPlaces={mode === "nearby" ? filterNearbyPlaces() : []}
           />
         </main>
       </div>
@@ -547,6 +845,9 @@ export default function ExploreDiscovery() {
         mode={mode}
         onSendMessage={handleSendMessage}
         onModeSwitch={handleModeSwitch}
+        categories={getUniqueCategories()}
+        selectedCategory={nearbyState.selectedCategory}
+        onCategoryClick={handleCategoryChipClick}
       />
 
       {/* Detail Offcanvas */}

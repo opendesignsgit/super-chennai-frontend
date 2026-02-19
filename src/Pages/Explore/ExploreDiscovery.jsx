@@ -781,9 +781,14 @@ export default function ExploreDiscovery() {
   // Cleanup on unmount
   useEffect(() => {
     return () => {
-      stopGPSTracking();
+      if (nearbyState.gpsWatchId) {
+        navigator.geolocation.clearWatch(nearbyState.gpsWatchId);
+      }
+      if (orientationListenerRef.current) {
+        window.removeEventListener("deviceorientation", orientationListenerRef.current);
+      }
     };
-  }, []);
+  }, [nearbyState.gpsWatchId]);
 
   // Handle place card click
   const handlePlaceClick = (place) => {

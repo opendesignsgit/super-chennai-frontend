@@ -4,6 +4,26 @@ import axios from "axios";
 import "../assets/Css/ExploreAIDiscovery.css";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Constants
+const DEFAULT_RADIUS = 2000; // 2km in meters
+const DIRECTIONAL_CONE_ANGLE = 45; // ±45° cone for directional mode
+const METERS_PER_DEGREE = 111320; // Approximate meters per degree of latitude
+const PLACEHOLDER_IMAGE = "/images/placeholder.jpg";
+const CHENNAI_COORDS = { lat: 13.0827, lng: 80.2707 }; // Fallback coordinates for testing
+
+// Fallback categories if API is not available
+const FALLBACK_CATEGORIES = [
+  { id: 1, name: "Gym", slug: "gym" },
+  { id: 2, name: "ATM", slug: "atm" },
+  { id: 3, name: "Hospital", slug: "hospital" },
+  { id: 4, name: "Mall", slug: "mall" },
+  { id: 5, name: "Cafe", slug: "cafe" },
+  { id: 6, name: "Restaurant", slug: "restaurant" },
+  { id: 7, name: "Beach", slug: "beach" },
+  { id: 8, name: "Park", slug: "park" },
+  { id: 9, name: "Temple", slug: "temple" },
+];
+
 const ExploreAIDiscovery = () => {
   // Mode state: 'ai' or 'nearby'
   const [mode, setMode] = useState("ai");
@@ -17,7 +37,7 @@ const ExploreAIDiscovery = () => {
   const [userLocation, setUserLocation] = useState(null);
   const [deviceHeading, setDeviceHeading] = useState(null);
   const [supportsOrientation, setSupportsOrientation] = useState(false);
-  const [radius, setRadius] = useState(2000); // 2km default
+  const [radius, setRadius] = useState(DEFAULT_RADIUS);
   const [nearbyModeType, setNearbyModeType] = useState("radius"); // 'radius' or 'directional'
   
   // Places & categories state
@@ -96,14 +116,10 @@ const ExploreAIDiscovery = () => {
       (error) => {
         console.error("GPS error:", error);
         
-        // For testing: Use Chennai coordinates as fallback
-        if (import.meta.env.DEV) {
-          const chennaiCoords = {
-            lat: 13.0827,
-            lng: 80.2707,
-          };
-          setUserLocation(chennaiCoords);
-          fetchNearbyPlaces(chennaiCoords);
+        // For testing: Use Chennai coordinates as fallback in development
+        if (import.meta.env.MODE === 'development') {
+          setUserLocation(CHENNAI_COORDS);
+          fetchNearbyPlaces(CHENNAI_COORDS);
           setIsThinking(false);
           return;
         }
@@ -166,17 +182,7 @@ const ExploreAIDiscovery = () => {
       } catch (error) {
         console.error("Error fetching categories:", error);
         // Fallback categories
-        setCategories([
-          { id: 1, name: "Gym", slug: "gym" },
-          { id: 2, name: "ATM", slug: "atm" },
-          { id: 3, name: "Hospital", slug: "hospital" },
-          { id: 4, name: "Mall", slug: "mall" },
-          { id: 5, name: "Cafe", slug: "cafe" },
-          { id: 6, name: "Restaurant", slug: "restaurant" },
-          { id: 7, name: "Beach", slug: "beach" },
-          { id: 8, name: "Park", slug: "park" },
-          { id: 9, name: "Temple", slug: "temple" },
-        ]);
+        setCategories(FALLBACK_CATEGORIES);
       }
     };
 
@@ -265,7 +271,7 @@ const ExploreAIDiscovery = () => {
           place.lng
         );
         const diff = Math.abs(normalizeAngle(bearing - deviceHeading));
-        return diff <= 45; // ±45° cone
+        return diff <= DIRECTIONAL_CONE_ANGLE; // ±45° cone
       });
     }
 
@@ -356,20 +362,20 @@ const ExploreAIDiscovery = () => {
     if (!userLocation || !deviceHeading || nearbyModeType !== "directional") return [];
 
     const points = [];
-    const radiusInDegrees = radius / 111320; // Convert meters to degrees (approximate)
+    const radiusInDegrees = radius / METERS_PER_DEGREE; // Convert meters to degrees (approximate)
     
     // Center point
     points.push(userLocation);
 
     // Left edge of cone (heading - 45°)
-    const leftAngle = (deviceHeading - 45) * Math.PI / 180;
+    const leftAngle = (deviceHeading - DIRECTIONAL_CONE_ANGLE) * Math.PI / 180;
     points.push({
       lat: userLocation.lat + radiusInDegrees * Math.cos(leftAngle),
       lng: userLocation.lng + radiusInDegrees * Math.sin(leftAngle),
     });
 
     // Arc points (from -45° to +45°)
-    for (let angle = deviceHeading - 45; angle <= deviceHeading + 45; angle += 5) {
+    for (let angle = deviceHeading - DIRECTIONAL_CONE_ANGLE; angle <= deviceHeading + DIRECTIONAL_CONE_ANGLE; angle += 5) {
       const rad = angle * Math.PI / 180;
       points.push({
         lat: userLocation.lat + radiusInDegrees * Math.cos(rad),
@@ -378,7 +384,7 @@ const ExploreAIDiscovery = () => {
     }
 
     // Right edge of cone (heading + 45°)
-    const rightAngle = (deviceHeading + 45) * Math.PI / 180;
+    const rightAngle = (deviceHeading + DIRECTIONAL_CONE_ANGLE) * Math.PI / 180;
     points.push({
       lat: userLocation.lat + radiusInDegrees * Math.cos(rightAngle),
       lng: userLocation.lng + radiusInDegrees * Math.sin(rightAngle),
@@ -522,7 +528,7 @@ const ExploreAIDiscovery = () => {
                   <div key={place.id} className="place-card" onClick={() => handlePlaceClick(place)}>
                     <div className="place-image">
                       <img src={place.image} alt={place.name} onError={(e) => {
-                        e.target.src = "/images/placeholder.jpg";
+                        e.target.src = PLACEHOLDER_IMAGE;
                       }} />
                     </div>
                     <div className="place-info">
@@ -653,7 +659,7 @@ const ExploreAIDiscovery = () => {
               </button>
               <div className="detail-panel-content">
                 <img src={selectedPlace.image} alt={selectedPlace.name} onError={(e) => {
-                  e.target.src = "/images/placeholder.jpg";
+                  e.target.src = PLACEHOLDER_IMAGE;
                 }} />
                 <h2>{selectedPlace.name}</h2>
                 <div className="detail-rating">

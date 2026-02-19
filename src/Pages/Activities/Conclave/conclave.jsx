@@ -12,125 +12,6 @@ import { useEffect, useRef } from "react";
 import "./style.css";
 import { Helmet } from "react-helmet-async";
 
-// const agendaData = [
-//   {
-//     "id": "01",
-//     "startTime": "9:30 AM",
-//     "endTime": "10:00 AM",
-//     "title": "Keynote Address",
-//     "speakers": []
-//   },
-//   {
-//     "id": "02",
-//     "startTime": "10:05 AM",
-//     "endTime": "10:55 AM",
-//     "title": "Becoming India’s Talent Capital",
-//     "speakers": [
-//       "Dr. Saundarya Rajesh – Managing Director, Avtar Group",
-//       "Mr. K. Pandiarajan – Chairperson & Executive Director, CIEL HR Group",
-//       "Anil Srinivasan – Founder, Kruu and Rhapsody, Musician"
-//     ]
-//   },
-//   {
-//     "id": "03",
-//     "startTime": "11:00 AM",
-//     "endTime": "11:50 AM",
-//     "title": "Reimagining the City as a Launchpad for Future Businesses",
-//     "speakers": [
-//       "Mr. Ramkumar Ramamoorthy – Co-Founder & Partner, Catalincs",
-//       "Mr. Sandeep Nanduri, I.A.S. – Managing Director, TIDCO",
-//       "Mr. Ramakrishnan K – Senior Managing Director, Spark Capital",
-//       "Mr. Gaurav Kumar – Founder & CEO, Yubi Group"
-//     ]
-//   },
-//   {
-//     "id": "04",
-//     "startTime": "11:55 AM",
-//     "endTime": "12:45 PM",
-//     "title": "Becoming India’s Deep-Tech Hub for the World",
-//     "speakers": [
-//       "Mr. Vishesh Rajaram – Co-Founder & Managing Partner, Speciale Invest",
-//       "Ms. Ashwini Asokan – Founder & CEO, Mad Street Den",
-//       "Mr. Srinath Ravichandran – Co-Founder & CEO, Agnikul Cosmos"
-//     ]
-//   },
-//   {
-//     "id": "05",
-//     "startTime": "12:45 PM",
-//     "endTime": "1:20 PM",
-//     "title": "Fireside Chat",
-//     "speakers": [
-//       "Mr. Sivarajah Ramanathan – Mission Director & CEO, Startup TN"
-//     ]
-//   },
-//   {
-//     "id": "06",
-//     "startTime": "1:20 PM",
-//     "endTime": "2:00 PM",
-//     "title": "BREAK",
-//     "speakers": []
-//   },
-//   {
-//     "id": "07",
-//     "startTime": "2:00 PM",
-//     "endTime": "2:50 PM",
-//     "title": "Crafting a World-Class Visitor Experience",
-//     "speakers": [
-//       "Mr. Vikram Cotah – CEO, GRT Hotels",
-//       "Mr. Hari Ganapathy – Co-Founder, Pickyourtrail",
-//       "Mr. Arun Vasu – Managing Director, TT Group",
-//       "Ms. Gayathri Thyagarajan – CEO & Founder, Kynhood Technologies"
-//     ]
-//   },
-//   {
-//     "id": "08",
-//     "startTime": "2:55 PM",
-//     "endTime": "3:45 PM",
-//     "title": "A City That Works for Everyone",
-//     "speakers": [
-//       "Mr. Raj Cherubal – Executive Director, Chennai Smart City Limited",
-//       "Mr. Mohamed Ali – President, CREDAI Chennai",
-//       "Mr. Sivakrishnamurthy, I.A.S. – Deputy Commissioner (Works)",
-//       "Ms. Aswathy Dilip – Managing Director, ITDP India"
-//     ]
-//   },
-//   {
-//     "id": "09",
-//     "startTime": "3:50 PM",
-//     "endTime": "4:40 PM",
-//     "title": "Who Shapes Chennai’s Stories and Do They Travel Far Enough  to Reflect Its True Potential?",
-//     "speakers": [
-//       "Mr. Arun Ram – Resident Editor, The Times of India",
-//       "Mr. Prem Shanker – Senior Executive Editor, Puthiya Thalaimurai TV",
-//       "Mr. T.M. Veeraraghav – Executive Editor, NDTV"
-//     ]
-//   },
-//   {
-//     "id": "10",
-//     "startTime": "4:40 PM",
-//     "endTime": "4:55 PM",
-//     "title": "BREAK",
-//     "speakers": []
-//   },
-//   {
-//     "id": "11",
-//     "startTime": "5:00 PM",
-//     "endTime": "5:30 PM",
-//     "title": "Fireside Chat – TBA",
-//     "speakers": []
-//   },
-//   {
-//     "id": "12",
-//     "startTime": "5:35 PM",
-//     "endTime": "6:05 PM",
-//     "title": "Fireside Chat – Enabling the Industries That Will Build Tomorrow's Chennai",
-//     "speakers": [
-//       "Mr. T.R.B. Rajaa – Minister for Industries, Investment Promotion and Commerce, Government of Tamil Nadu"
-//     ]
-//   }
-
-// ];
-
 const agendaData = [
   {
     id: "01",
@@ -266,6 +147,7 @@ const agendaData = [
     ]
   }
 ];
+
 export const speakersGallery = [
   {
     id: 1,
@@ -492,6 +374,10 @@ export const partners = [
      {
     id: 3,
     image: "/images/partnersLogo/DRA-logo.png",
+  },
+      {
+    id: 3,
+    image: "/images/partnersLogo/credai.png",
   },
 ];
 

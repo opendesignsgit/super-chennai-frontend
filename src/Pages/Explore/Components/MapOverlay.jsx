@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { GoogleMap, LoadScript, Marker, Circle } from "@react-google-maps/api";
-import { calculateDistance } from "../utils/spatialUtils";
 
 const mapContainerStyle = {
   width: "100%",
@@ -163,19 +162,19 @@ export default function MapOverlay({
  */
 function getCategoryIcon(category) {
   const icons = {
-    cafe: "http://maps.google.com/mapfiles/ms/icons/coffee.png",
-    restaurant: "http://maps.google.com/mapfiles/ms/icons/restaurant.png",
-    temple: "http://maps.google.com/mapfiles/ms/icons/homegardenbusiness.png",
-    beach: "http://maps.google.com/mapfiles/ms/icons/beach.png",
-    mall: "http://maps.google.com/mapfiles/ms/icons/shopping.png",
-    park: "http://maps.google.com/mapfiles/ms/icons/tree.png",
-    museum: "http://maps.google.com/mapfiles/ms/icons/arts.png",
-    hotel: "http://maps.google.com/mapfiles/ms/icons/lodging.png",
-    coworking: "http://maps.google.com/mapfiles/ms/icons/office.png",
-    gym: "http://maps.google.com/mapfiles/ms/icons/sportvenue.png",
-    hospital: "http://maps.google.com/mapfiles/ms/icons/hospitals.png",
-    school: "http://maps.google.com/mapfiles/ms/icons/schools.png",
+    cafe: "https://maps.google.com/mapfiles/ms/icons/coffee.png",
+    restaurant: "https://maps.google.com/mapfiles/ms/icons/restaurant.png",
+    temple: "https://maps.google.com/mapfiles/ms/icons/homegardenbusiness.png",
+    beach: "https://maps.google.com/mapfiles/ms/icons/beach.png",
+    mall: "https://maps.google.com/mapfiles/ms/icons/shopping.png",
+    park: "https://maps.google.com/mapfiles/ms/icons/tree.png",
+    museum: "https://maps.google.com/mapfiles/ms/icons/arts.png",
+    hotel: "https://maps.google.com/mapfiles/ms/icons/lodging.png",
+    coworking: "https://maps.google.com/mapfiles/ms/icons/office.png",
+    gym: "https://maps.google.com/mapfiles/ms/icons/sportvenue.png",
+    hospital: "https://maps.google.com/mapfiles/ms/icons/hospitals.png",
+    school: "https://maps.google.com/mapfiles/ms/icons/schools.png",
   };
   
-  return icons[category] || "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+  return icons[category] || "https://maps.google.com/mapfiles/ms/icons/red-dot.png";
 }

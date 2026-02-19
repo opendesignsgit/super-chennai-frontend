@@ -79,7 +79,11 @@ const tags = {
   school: ["cbse", "icse", "state board", "international", "daycare", "transport"],
 };
 
-// Helper function to add slight randomization to coordinates (within ~500m radius)
+/**
+ * Add slight randomization to coordinates for realistic place distribution
+ * @param {Object} baseCoords - Base coordinates {lat, lng}
+ * @returns {Object} Randomized coordinates {lat, lng} within ~500m radius
+ */
 const randomizeCoords = (baseCoords) => {
   const offset = 0.005; // Approximately 500m
   return {

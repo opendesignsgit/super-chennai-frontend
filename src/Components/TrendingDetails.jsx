@@ -89,6 +89,189 @@ export default function TrendingDetails() {
     },
   ];
 
+  const MKBBus = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Trending chennai MKB Nagar",
+          item: "https://www.superchennai.com/trending-chennai/mkb-nagar-bus-depot-upgrade-chennai",
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/mkb-nagar-bus-depot-upgrade-chennai",
+      },
+      headline: "MKB Nagar Bus Depot",
+      description:
+        "MKB Nagar bus depot gets a modern upgrade with tree-style roofing and electric bus facilities under North Chennai development. Now trending Chennai transport news.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/bustop-k.jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super CHennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-02-01",
+    },
+  ];
+
+  const brodwaybust = [
+{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Super Chennai",
+    "item": "https://www.superchennai.com/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Boardway Bust stand",
+    "item": "https://www.superchennai.com/trending-chennai/broadway-bus-stand-redevelopment"  
+  }]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/broadway-bus-stand-redevelopment"
+  },
+  "headline": "Boardway Bust stand",
+  "description": "Broadway Bus Stand Chennai undergoes ₹822 crore redevelopment into a modern multi-modal hub with parking, retail, and metro connectivity. Now trending Chennai",
+  "image": "https://www.superchennai.com/images/trendingChennai/brodway-banner.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-02-02"
+}
+
+
+
+  ];
+
+  const korukupat = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Korukkupet Bridge",
+          item: "https://www.superchennai.com/trending-chennai/korukkupet-rail-overbridge-chennai",
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/korukkupet-rail-overbridge-chennai",
+      },
+      headline: "Korukkpet Bridge",
+      description:
+        "The new Korukkupet bridge in North Chennai replaces Level Crossing 2B to ease traffic congestion. A ₹96 crore infrastructure project now trending in Chennai.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/madhya-kailash-flyover-iiner.jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-02-12",
+    },
+  ];
+
+  const madhiyakailash = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Madhya Kailash",
+          item: "https://www.superchennai.com/trending-chennai/madhya-kailash-l-shaped-flyover-chennai",
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Madhya Kailash",
+          item: "https://www.superchennai.com/trending-chennai/madhya-kailash-l-shaped-flyover-chennai",
+        },
+      ],
+    },
+  ];
+
+
+
+
   return (
     <>
       <Helmet>
@@ -119,6 +302,34 @@ export default function TrendingDetails() {
             {JSON.stringify(glowgaradern)}
           </script>
         )}
+
+        {slug === "mkb-nagar-bus-depot-upgrade-chennai" && (
+          <script type="application/ld+json">{JSON.stringify(MKBBus)}</script>
+        )}
+
+
+        {slug === "broadway-bus-stand-redevelopment" && (
+          <script type="application/ld+json">{JSON.stringify(brodwaybust)}</script>
+        )}
+
+
+        
+        {slug === "korukkupet-rail-overbridge-chennai" && (
+          <script type="application/ld+json">{JSON.stringify(korukupat)}</script>
+        )}
+
+
+             {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
+          <script type="application/ld+json">{JSON.stringify(madhiyakailash)}</script>
+        )}
+
+
+        
+             {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
+          <script type="application/ld+json">{JSON.stringify(madhiyakailash)}</script>
+        )}
+
+
       </Helmet>
 
       {/* Banner Section */}

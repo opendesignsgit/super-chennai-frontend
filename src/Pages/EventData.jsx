@@ -7577,23 +7577,81 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 export const panesContent = [
 
   {
-  "id": 62324,
-  "name": "MKB Nagar Bus Depot Upgrade",
-  "slug": "mkb-nagar-bus-depot-upgrade-chennai",
-  "para": "Trending Chennai",
-  "TrendingCalendarMonth": "February 2026",
-  "TrendingCalendarTime": "—",
-  "TrendingCalendarCategory": "Infrastructure & Urban Development",
-  "image": "/images/trendingChennai/bustop-k.jpeg",
-  "Homeimage": "/images/trendingChennai/bustop-k-main.jpeg",
-  "link": "/mkb-nagar-bus-depot",
-  "duration": "Operational from Early 2026",
-  "ageRestriction": "Not applicable",
-  "language": "Tamil & English",
-  "genre": "Infrastructure, Transport, Public Mobility",
-  "venue": "MKB Nagar Bus Terminal, North Chennai",
+  id: 62325,
+  name: "Retteri Lake Park",
+  slug: "retteri-lake-park-chennai",
+  para: "Trending Chennai",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "Morning & Evening",
+  TrendingCalendarCategory: "Parks & Recreation",
+  image: "/images/trendingChennai/kolathur.jpeg",
+  Homeimage: "/images/trendingChennai/kolathur.jpeg",
+  link: "/retteri-lake-park",
+  duration: "Open daily from early morning to 10:00 AM and from 4:00 PM onwards",
+  ageRestriction: "Open to all age groups",
+  language: "Tamil & English",
+  genre: "Public Park, Recreation, Family Attraction",
+  venue: "Retteri Lake, Kolathur, Chennai",
 
-  "trendingDetails": `
+  trendingDetails: `
+  <p>
+<b>Kolathur welcomes a refreshing new waterfront retreat! 🌿✨</b><br/>
+The newly developed Retteri Lake Park, opened to the public in February 2026, offers a scenic lakeside escape with landscaped surroundings and thoughtfully designed recreational spaces for families and fitness enthusiasts.
+</p>
+
+<h4>🌊 Beautiful Waterfront Setting</h4>
+<ul>
+  <li>Lake-facing walking tracks with spacious pathways</li>
+  <li>Comfortable seating areas with relaxing views</li>
+  <li>Creative wall art enhancing the park’s ambiance</li>
+</ul>
+
+<h4>🎨 Science-Themed Kids Play Zone</h4>
+<ul>
+  <li>Innovative and interactive play structures</li>
+  <li>Safe and vibrant recreational space for children</li>
+  <li>Encourages fun learning through themed installations</li>
+</ul>
+
+<h4>🌅 Perfect Leisure Spot</h4>
+<ul>
+  <li>Ideal for morning walks and evening relaxation</li>
+  <li>Landscaped greenery offering a refreshing environment</li>
+  <li>Quickly becoming a favorite family destination in North Chennai</li>
+</ul>
+
+<p>
+🏙 <b>A vibrant addition to Chennai’s urban recreation spaces, blending nature, fitness, and family-friendly fun.</b>
+</p>
+`,
+
+  TrendingLink: "",
+  YoutubeLink: "",
+  meta: {
+    title: "Trending Chennai : Retteri Lake Park Opens Waterfront Update",
+    desc: "Kolathur welcomes Retteri Lake Park with landscaped spaces, walking tracks, and vibrant kids zones, quickly becoming a Trending Chennai family attraction.",
+    url: "https://www.superchennai.com/trending-chennai/retteri-lake-park"
+  }
+},
+
+  {
+    id: 62324,
+    name: "MKB Nagar Bus Depot Upgrade",
+    slug: "mkb-nagar-bus-depot-upgrade-chennai",
+    para: "Trending Chennai",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "—",
+    TrendingCalendarCategory: "Infrastructure & Urban Development",
+    image: "/images/trendingChennai/bustop-k.jpeg",
+    Homeimage: "/images/trendingChennai/bustop-k-main.jpeg",
+    link: "/mkb-nagar-bus-depot",
+    duration: "Operational from Early 2026",
+    ageRestriction: "Not applicable",
+    language: "Tamil & English",
+    genre: "Infrastructure, Transport, Public Mobility",
+    venue: "MKB Nagar Bus Terminal, North Chennai",
+
+    trendingDetails: `
 <p>
 <b>MKB Nagar Bus Terminal gets a stunning modern makeover! 🌿✨</b><br/>
 The newly upgraded terminal, opened in early 2026, features a striking tree-inspired steel roof design under the North Chennai Development initiative, giving the depot a contemporary and sustainable look.
@@ -7629,14 +7687,14 @@ The terminal serves as a major hub for MTC’s rollout of 625 low-floor electric
 </p>
 `,
 
-  "TrendingLink": "",
-  "YoutubeLink": "",
-  "meta": {
-    "title": "Trending Chennai : MKB Nagar Bus Depot Modern Upgrade 2026",
-    "desc": "MKB Nagar bus depot gets a modern upgrade with tree-style roofing and electric bus facilities under North Chennai development. Now trending Chennai transport news.",
-    "url": "https://www.superchennai.com/trending-chennai/mkb-nagar-bus-depot"
-  }
-},
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "Trending Chennai : MKB Nagar Bus Depot Modern Upgrade 2026",
+      desc: "MKB Nagar bus depot gets a modern upgrade with tree-style roofing and electric bus facilities under North Chennai development. Now trending Chennai transport news.",
+      url: "https://www.superchennai.com/trending-chennai/mkb-nagar-bus-depot",
+    },
+  },
 
   {
     id: 62323,
@@ -7956,68 +8014,68 @@ Register now for your <b>FREE VIP Pass</b> and take the next step toward making 
     },
   },
 
-//   {
-//     id: 41212,
-//     name: "ARR Live – Wonderment 2026",
-//     slug: "ar-rahman-wonderment-tour-2026",
-//     para: "What’s Chennai Trending",
-//     TrendingCalendarMonth: "February 2026",
-//     TrendingCalendarTime: "06:30 PM",
-//     TrendingCalendarCategory: "Live Music Concert",
-//     image: "/images/trendingChennai/banner-bookmyshow-6-Recovered.jpg.jpeg",
-//     Homeimage: "/images/trendingChennai/ar-small.jpg.jpeg",
-//     link: "/trending-chennai/ar-rahman-wonderment-tour-2026",
-//     duration: "3 Hours 15 Minutes",
-//     ageRestriction: "5 Years & Above",
-//     language: "Tamil",
-//     genre: "Live Music, Concert, Entertainment",
-//     venue: "Jawaharlal Nehru Stadium, Chennai",
+  //   {
+  //     id: 41212,
+  //     name: "ARR Live – Wonderment 2026",
+  //     slug: "ar-rahman-wonderment-tour-2026",
+  //     para: "What’s Chennai Trending",
+  //     TrendingCalendarMonth: "February 2026",
+  //     TrendingCalendarTime: "06:30 PM",
+  //     TrendingCalendarCategory: "Live Music Concert",
+  //     image: "/images/trendingChennai/banner-bookmyshow-6-Recovered.jpg.jpeg",
+  //     Homeimage: "/images/trendingChennai/ar-small.jpg.jpeg",
+  //     link: "/trending-chennai/ar-rahman-wonderment-tour-2026",
+  //     duration: "3 Hours 15 Minutes",
+  //     ageRestriction: "5 Years & Above",
+  //     language: "Tamil",
+  //     genre: "Live Music, Concert, Entertainment",
+  //     venue: "Jawaharlal Nehru Stadium, Chennai",
 
-//     trendingDetails: `
-// <p>
-// <b>Step into the magic of A.R. Rahman Live with the spectacular Wonderment Tour.</b> 🎶  
-// Experience an unforgettable live music concert in Chennai as the legendary composer takes audiences on an extraordinary musical expedition.
-// </p>
+  //     trendingDetails: `
+  // <p>
+  // <b>Step into the magic of A.R. Rahman Live with the spectacular Wonderment Tour.</b> 🎶
+  // Experience an unforgettable live music concert in Chennai as the legendary composer takes audiences on an extraordinary musical expedition.
+  // </p>
 
-// <p>
-// More than just a performance, <b>Wonderment</b> is a deeply immersive artistic experience—celebrating love, life, and the limitless power of music. Every melody, stunning visual, and rhythmic beat draws you into a world of awe and inspiration.
-// </p>
+  // <p>
+  // More than just a performance, <b>Wonderment</b> is a deeply immersive artistic experience—celebrating love, life, and the limitless power of music. Every melody, stunning visual, and rhythmic beat draws you into a world of awe and inspiration.
+  // </p>
 
-// <p>
-// With state-of-the-art sound, captivating visual storytelling, and A.R. Rahman’s unparalleled musical brilliance, <b>Wonderment – The Tour</b> redefines what a live concert can be.
-// </p>
+  // <p>
+  // With state-of-the-art sound, captivating visual storytelling, and A.R. Rahman’s unparalleled musical brilliance, <b>Wonderment – The Tour</b> redefines what a live concert can be.
+  // </p>
 
-// <h4>📅 Event Details</h4>
-// <ul>
-//   <li>Date: Saturday, 14 February 2026</li>
-//   <li>Time: 6:30 PM</li>
-//   <li>Duration: 3 Hours 15 Minutes</li>
-//   <li>Age Limit: 5 Years & Above</li>
-//   <li>Language: Tamil</li>
-//   <li>Venue: Jawaharlal Nehru Stadium, Chennai</li>
-// </ul>
+  // <h4>📅 Event Details</h4>
+  // <ul>
+  //   <li>Date: Saturday, 14 February 2026</li>
+  //   <li>Time: 6:30 PM</li>
+  //   <li>Duration: 3 Hours 15 Minutes</li>
+  //   <li>Age Limit: 5 Years & Above</li>
+  //   <li>Language: Tamil</li>
+  //   <li>Venue: Jawaharlal Nehru Stadium, Chennai</li>
+  // </ul>
 
-// <p>
-// ✨ This Tamil music concert in Chennai promises a spellbinding evening where music meets magic, creating memories that stay long after the final note fades.
-// </p>
+  // <p>
+  // ✨ This Tamil music concert in Chennai promises a spellbinding evening where music meets magic, creating memories that stay long after the final note fades.
+  // </p>
 
-// <p>
-// 🎟 <b>Book Now:</b><br/>
-// <a href="https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets" target="_blank">
-// https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets
-// </a>
-// </p>
-// `,
+  // <p>
+  // 🎟 <b>Book Now:</b><br/>
+  // <a href="https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets" target="_blank">
+  // https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets
+  // </a>
+  // </p>
+  // `,
 
-//     TrendingLink:
-//       "https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets",
-//     YoutubeLink: "",
-//     meta: {
-//       title: "What’s Chennai Trending - A.R. Rahman’s Wonderment Tour 2026",
-//       desc: "A.R. Rahman’s Wonderment Tour is a top pick in Trending Chennai, offering great music, stunning visuals, and a live show people are enjoying.",
-//       url: "https://www.superchennai.com/trending-chennai/ar-rahman-wonderment-tour-2026",
-//     },
-//   },
+  //     TrendingLink:
+  //       "https://www.district.in/events/the-wonderment-tour-ar-rahman-live-in-chennai-2026-buy-tickets",
+  //     YoutubeLink: "",
+  //     meta: {
+  //       title: "What’s Chennai Trending - A.R. Rahman’s Wonderment Tour 2026",
+  //       desc: "A.R. Rahman’s Wonderment Tour is a top pick in Trending Chennai, offering great music, stunning visuals, and a live show people are enjoying.",
+  //       url: "https://www.superchennai.com/trending-chennai/ar-rahman-wonderment-tour-2026",
+  //     },
+  //   },
 
   {
     id: 28754,

@@ -11,6 +11,7 @@ import Volunteer from "../src/Pages/Volunteer";
 import Work from "../src/Pages/Work";
 import "./App.css";
 import axios from "axios";
+import ExploreAIDiscovery from "../src/Pages/ExploreAIDiscovery";
 
 import EducationNew from "./Components/EducationNew";
 import HeaderWithMegaMenu from "./Components/ExampleMegamenu";
@@ -541,6 +542,9 @@ function App() {
  const hideNewsletter =
     location.pathname === "/chennai-conclave";
 
+  // Hide Footer, Newsletter, and Social Icons on Explore pages
+  const isExplorePage = location.pathname === "/explore" || location.pathname.startsWith("/explore/");
+
 
 
       const isHomePage = location.pathname === "/";
@@ -563,6 +567,7 @@ function App() {
           )}
           {/* )} */}
 
+          {!isExplorePage && (
           <div
             ref={stickyRef}
             className={`stickyIconsContainer ${
@@ -605,6 +610,7 @@ function App() {
               <img src="/images/threads.png" alt="Twitter" />
             </a>
           </div>
+          )}
           
            {!hideOnMargazhiPage && (
             <div
@@ -835,6 +841,9 @@ function App() {
             <Route path="*" element={<NotFound />} />
             {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
             {/*----Main-Pages---------*/}
+            {/* ######### EXPLORE AI DISCOVERY ROUTE ############################################ */}
+            <Route path="/explore" element={<ExploreAIDiscovery />} />
+            
             <Route path="/" element={<HomePage />} />
             <Route path="/results" element={<SearchResults />} />
             <Route
@@ -1569,7 +1578,7 @@ function App() {
 
           {/*################################# NEWS LETTER ######################################## */}
 
-          {!hideNewsletter && (
+          {!hideNewsletter && !isExplorePage && (
             <section className="signup FormIframeSection" id="newsletterId">
               <div className="socialChennaiContent NewsletterContent">
                 <h4>Newsletter</h4>
@@ -1590,7 +1599,7 @@ function App() {
             </section>
           )}
 
-          <Footer />
+          {!isExplorePage && <Footer />}
           {/* </Router> */}
           {/* MenuBar */}
 

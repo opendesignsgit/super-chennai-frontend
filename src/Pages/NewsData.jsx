@@ -370,6 +370,25 @@ export const two = [
 
 export const newsArticle = [
 
+    {
+    id: -7,
+    Company: "DtNext - Feb 19, 2016",
+    EventsCalendarTitle:
+      "The Super Chennai Conclave's focus is on enabling the industries that will build tomorrow's Chennai. The government is betting heavily on Research and Development and is looking to expand not merely vertically but also horizontally, driven by wider industrial growth, alongside improvements in metro connectivity and reduced travel time across industrial clusters, the minister said.",
+
+    image: "/images/NewsandArticles/Dtnext1.png",
+    link: "https://www.dtnext.in/news/tamilnadu/happy-to-say-no-to-water-guzzling-data-centres-rajaa-shares-alternate-vision",
+  },
+  {
+    id: -7,
+    Company: "DtNext - Feb 19, 2016",
+    EventsCalendarTitle:
+      "During a conversation with a journalist at the Super Chennai Conclave.",
+
+    image: "/images/NewsandArticles/Dtnext.png",
+    link: "https://www.dtnext.in/news/tamilnadu/strong-startup-ecosystem-to-propel-tamil-nadu-into-space-tech-top-tier",
+  },
+
   {
     id: -6,
     Company: "The Times of India - September 24, 2025",
@@ -3097,7 +3116,7 @@ export const youtubeChannel = [
     Company: "Published On: Feb 19, 2026 ",
     EventsCalendarTitle: "Puthiyathaimurai TV ",
     EventsCalendarContent: ".",
-    EventsCalendarMonth: "31 Oct",
+    EventsCalendarMonth: "19 Feb",
     EventsCalendarTime: "",
     EventsCalendarCategory: "Comedy Shows",
     image: "/images/Youtube-Videos/puthiyathalaimurai.png",

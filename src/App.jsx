@@ -555,12 +555,12 @@ function App() {
 
           {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-          {isHomePage && showPopup && (
+          {/* {isHomePage && showPopup && (
             <ImagePopup
               imageUrl="/images/conclave-banner-popup.jpeg"
               onClose={() => setShowPopup(false)}
             />
-          )}
+          )} */}
           {/* )} */}
 
           <div

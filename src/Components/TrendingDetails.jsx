@@ -270,6 +270,56 @@ export default function TrendingDetails() {
   ];
 
 
+  const retaeri = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Retteri Lake park",
+          item: "https://www.superchennai.com/trending-chennai/retteri-lake-park-chennai",
+        },
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/retteri-lake-park-chennai",
+      },
+      headline: "Retteri Lake park",
+      description:
+        "Kolathur welcomes Retteri Lake Park with landscaped spaces, walking tracks, and vibrant kids zones, quickly becoming a Trending Chennai family attraction.",
+      image:
+        "https://www.superchennai.com/trending-chennai/retteri-lake-park-chennai",
+      author: {
+        "@type": "Person",
+        name: "Super chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-02-03",
+    },
+  ];
+
+
 
 
   return (
@@ -307,29 +357,35 @@ export default function TrendingDetails() {
           <script type="application/ld+json">{JSON.stringify(MKBBus)}</script>
         )}
 
-
         {slug === "broadway-bus-stand-redevelopment" && (
-          <script type="application/ld+json">{JSON.stringify(brodwaybust)}</script>
+          <script type="application/ld+json">
+            {JSON.stringify(brodwaybust)}
+          </script>
         )}
 
-
-        
         {slug === "korukkupet-rail-overbridge-chennai" && (
-          <script type="application/ld+json">{JSON.stringify(korukupat)}</script>
+          <script type="application/ld+json">
+            {JSON.stringify(korukupat)}
+          </script>
         )}
 
-
-             {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
-          <script type="application/ld+json">{JSON.stringify(madhiyakailash)}</script>
+        {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(madhiyakailash)}
+          </script>
         )}
 
-
-        
-             {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
-          <script type="application/ld+json">{JSON.stringify(madhiyakailash)}</script>
+        {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(madhiyakailash)}
+          </script>
         )}
 
-
+        {slug === "retteri-lake-park-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(retaeri)}
+          </script>
+        )}
       </Helmet>
 
       {/* Banner Section */}

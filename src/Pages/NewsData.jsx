@@ -369,6 +369,7 @@ export const two = [
 // ];
 
 export const newsArticle = [
+
   {
     id: -6,
     Company: "The Times of India - September 24, 2025",
@@ -948,17 +949,72 @@ export const NammaStoreiesnewsArticle = [
 ];
 
 export const newsPhotos = [
+  {
+    id: 1,
+    Company: "February 19, 2026",
+    EventsCalendarTitle:
+      "சென்னையை மேம்படுத்துவதற்கான வழிமுறைகள்: கொள்கைவகுப்பாளர்கள், வல்லுநர்கள் விவாதம்",
+    image: "/images/NewsLetter/conclaves/conclave-1.jpeg",
+    image1: "/images/NewsLetter/conclaves/conclave-1.jpeg",
+  },
+  {
+    id: 2,
+    Company: "February 19, 2026",
+    EventsCalendarTitle:
+      "सुपर चेन्नई कॉन्क्लेव में नागरिक दृष्टि से विकास का खाका तय",
+    image: "/images/NewsLetter/conclaves/conclave-2.jpeg",
+    image1: "/images/NewsLetter/conclaves/conclave-2.jpeg",
+  },
+  {
+    id: 3,
+    Company: "February 19, 2026",
+    EventsCalendarTitle: "విజయవంతంగా సూపర్ చెన్నై కాంక్లేవ్",
+    image: "/images/NewsLetter/conclaves/conclave-3.jpeg",
+    image1: "/images/NewsLetter/conclaves/conclave-3.jpeg",
+  },
+  {
+    id: 4,
+    Company: "February 19, 2026",
+    EventsCalendarTitle: "మౌలిక అంశాలే లక్ష్యంగా చెన్నై కాంక్లేవ్",
+    image: "/images/NewsLetter/conclaves/conclave-4.jpeg",
+    image1: "/images/NewsLetter/conclaves/conclave-4.jpeg",
+  },
+  {
+    id: 5,
+    Company: "February 19, 2026",
+    EventsCalendarTitle:
+      "சென்னையின் வளர்ச்சி பல மடங்காக வேண்டும்: மின்வாரியத் தலைவர் வலியுறுத்தல்",
+    image: "/images/NewsLetter/conclaves/conclave-5.jpeg",
+    image1: "/images/NewsLetter/conclaves/conclave-5.jpeg",
+  },
+  {
+    id: 6,
+    Company: "February 19, 2026",
+    EventsCalendarTitle:
+      "சூப்பர் சென்னை மாநாடு 2026: சென்னையின் எதிர்காலத்தை வடிவமைப்பது குறித்த கருத்தரங்கம்",
+    image: "/images/NewsLetter/conclaves/conclave-6.jpeg",
+    image1: "/images/NewsLetter/conclaves/conclave-6.jpeg",
+  },
+  {
+    id: 7,
+    Company: "February 19, 2026",
+    EventsCalendarTitle:
+      "‘City will be deep-tech cluster, healthcare capital by 2040’",
+    image: "/images/NewsLetter/conclaves/conclave-7.jpeg",
+    image1: "/images/NewsLetter/conclaves/conclave-7.jpeg",
+  },
 
-  
   {
     id: -15,
     Company: "October 31",
     EventsCalendarTitle:
       "Playback singer Chinmayi recognised as Icon of the Month",
-    EventsCalendarContent: "Playback singer Chinmayi Sripada was honoured with the ‘Icon of the Month’ award by Super Chennai, a not-for-profit initiative. During the event, she reflected on her connection with Chennai, describing it as both nurturing and challenging. Chinmayi emphasized the need to celebrate local achievements in arts, sports, and culture, highlighting under-recognized individuals like folk artists and athletes such as Santhi Soundarajan. She also voiced her wish to end manual scavenging, starting with Chennai. Expressing gratitude to the city’s Gen Z for their support, she appreciated their authenticity and encouragement. Navin Kumar of Super Chennai noted that the initiative aims to showcase Chennaiites who have made a global impact.",
+    EventsCalendarContent:
+      "Playback singer Chinmayi Sripada was honoured with the ‘Icon of the Month’ award by Super Chennai, a not-for-profit initiative. During the event, she reflected on her connection with Chennai, describing it as both nurturing and challenging. Chinmayi emphasized the need to celebrate local achievements in arts, sports, and culture, highlighting under-recognized individuals like folk artists and athletes such as Santhi Soundarajan. She also voiced her wish to end manual scavenging, starting with Chennai. Expressing gratitude to the city’s Gen Z for their support, she appreciated their authenticity and encouragement. Navin Kumar of Super Chennai noted that the initiative aims to showcase Chennaiites who have made a global impact.",
     EventsCalendarMonth: "26 July",
     EventsCalendarTime: "07:00 PM",
-    EventsCalendarCategory: "Playback singer Chinmayi Sripada was honoured with the ‘Icon of the Month’ award by Super Chennai, a not-for-profit initiative. During the event, she reflected on her connection with Chennai, describing it as both nurturing and challenging. Chinmayi emphasized the need to celebrate local achievements in arts, sports, and culture, highlighting under-recognized individuals like folk artists and athletes such as Santhi Soundarajan. She also voiced her wish to end manual scavenging, starting with Chennai. Expressing gratitude to the city’s Gen Z for their support, she appreciated their authenticity and encouragement. Navin Kumar of Super Chennai noted that the initiative aims to showcase Chennaiites who have made a global impact.",
+    EventsCalendarCategory:
+      "Playback singer Chinmayi Sripada was honoured with the ‘Icon of the Month’ award by Super Chennai, a not-for-profit initiative. During the event, she reflected on her connection with Chennai, describing it as both nurturing and challenging. Chinmayi emphasized the need to celebrate local achievements in arts, sports, and culture, highlighting under-recognized individuals like folk artists and athletes such as Santhi Soundarajan. She also voiced her wish to end manual scavenging, starting with Chennai. Expressing gratitude to the city’s Gen Z for their support, she appreciated their authenticity and encouragement. Navin Kumar of Super Chennai noted that the initiative aims to showcase Chennaiites who have made a global impact.",
     image: "/images/NewsLetter/Chinmayi-srpaada.jpg",
     image1: "/images/NewsLetter/Chinmayi-srpaada.jpg",
     link: "/events",

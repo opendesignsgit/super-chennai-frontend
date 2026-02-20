@@ -31,15 +31,14 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    type: "image",
-    link: "https://youtube.com/live/D8hBf-lK57c?feature=share",
-    image: "/images/conclave-banner.jpeg",
-    image1: "/images/conclave-banner-mobile-banner.jpeg",
-    title: "conclave evant",
-    description: "conclave.",
-  },
-          // <a href="https://youtube.com/live/D8hBf-lK57c?feature=share">
+  // {
+  //   type: "image",
+  //   link: "https://youtube.com/live/D8hBf-lK57c?feature=share",
+  //   image: "/images/conclave-banner.jpeg",
+  //   image1: "/images/conclave-banner-mobile-banner.jpeg",
+  //   title: "conclave evant",
+  //   description: "conclave.",
+  // },
 
   {
     type: "image",

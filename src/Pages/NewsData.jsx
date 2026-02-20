@@ -3090,6 +3090,26 @@ export const nammaStoriesNewsEPaper = [
 ];
 
 export const youtubeChannel = [
+
+
+   {
+    id: -10,
+    Company: "Published On: Feb 19, 2026 ",
+    EventsCalendarTitle: "Puthiyathaimurai TV ",
+    EventsCalendarContent: ".",
+    EventsCalendarMonth: "31 Oct",
+    EventsCalendarTime: "",
+    EventsCalendarCategory: "Comedy Shows",
+    image: "/images/Youtube-Videos/puthiyathalaimurai.png",
+    image1: "/images/Youtube-Videos/puthiyathalaimurai.png",
+    link: "https://youtu.be/f_QQl0aUEgI?si=KFzbUAHZrg66WW5r",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "English",
+    hours: "1 hour 15 minutes",
+    ageLimit: "3 years +",
+    rleigion: "Comedy",
+    aboutFull: `A Brand-New Stand-Up Comedy Special ...`,
+  },
     {
     id: -10,
     Company: "Published On: October 31, 2025 ",

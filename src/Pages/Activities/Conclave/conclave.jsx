@@ -1472,39 +1472,45 @@ useEffect(() => {
           </p>
         </div>
         <div className="eventsCalendarMainSectionConatiner container max-w-7xl mx-auto px-4">
-          <div className="CalendarEventsFirst">
-            <img
-              className="eventsCalenderIamge cursor-pointer w-[800px] h-[350px] object-cover"
-              src="images/streaming.jpeg"
-              alt="Super Chennai Conclave 2026"
-            />
+          <a
+            href="https://youtube.com/live/D8hBf-lK57c?feature=share"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="CalendarEventsFirst">
+              <img
+                className="eventsCalenderIamge cursor-pointer w-[800px] h-[350px] object-cover"
+                src="images/streaming.jpeg"
+                alt="Super Chennai Conclave 2026"
+              />
 
-            <div className="MainCalendarSectionEvent">
-              <div className="secondSectionEventsCalendar">
-                <div className="EventsCalendarDateandTime">
-                  <p className="dateEvents">19</p>
-                  <p className="dayEvents">Wednesday</p>
+              <div className="MainCalendarSectionEvent">
+                <div className="secondSectionEventsCalendar">
+                  <div className="EventsCalendarDateandTime">
+                    <p className="dateEvents">19</p>
+                    <p className="dayEvents">Wednesday</p>
+                  </div>
+
+                  <div>
+                    <p className="eventsNAME">Super Chennai Conclave 2026</p>
+                  </div>
                 </div>
 
-                <div>
-                  <p className="eventsNAME">Super Chennai Conclave 2026</p>
+                <div className="thirdSectionCalendarContent">
+                  <p>
+                    Moments from the conclave where ideas met conversations, and
+                    leaders shared perspectives that inspired the room. A frame
+                    that reflects the spirit of collaboration, knowledge
+                    sharing, and meaningful connections.
+                  </p>
                 </div>
-              </div>
 
-              <div className="thirdSectionCalendarContent">
-                <p>
-                  Moments from the conclave where ideas met conversations, and
-                  leaders shared perspectives that inspired the room. A frame
-                  that reflects the spirit of collaboration, knowledge sharing,
-                  and meaningful connections.
-                </p>
-              </div>
-
-              <div className="eventsCalendarLinks">
-                <a>Conclave</a>
+                <div className="eventsCalendarLinks">
+                  <a>Conclave</a>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div className="overflow-hidden py-17 cardMobileSection">

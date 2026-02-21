@@ -64,7 +64,7 @@ const mockUpcomingEvents = [
   { id: 47, image: "images/conclaveGallery/conclave-47.jpg" },
   { id: 48, image: "images/conclaveGallery/conclave-48.jpg" },
   { id: 49, image: "images/conclaveGallery/conclave-49.jpg" },
-  { id: 50, image: "images/conclaveGallery/canclave-50.jpg" },
+  { id: 50, image: "images/conclaveGallery/conclave-50.jpg" },
   { id: 51, image: "images/conclaveGallery/conclave-51.jpg" },
   { id: 52, image: "images/conclaveGallery/conclave-52.jpg" },
   { id: 53, image: "images/conclaveGallery/conclave-53.jpg" },

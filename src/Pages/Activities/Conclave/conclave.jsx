@@ -1480,7 +1480,7 @@ useEffect(() => {
             <div className="CalendarEventsFirst">
               <img
                 className="eventsCalenderIamge cursor-pointer w-[800px] h-[350px] object-cover"
-                src="images/streaming.jpeg"
+                src="images/streaming.png"
                 alt="Super Chennai Conclave 2026"
               />
 

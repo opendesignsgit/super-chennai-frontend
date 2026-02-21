@@ -368,6 +368,7 @@ export const two = [
 //   },
 // ];
 
+
 export const newsArticle = [
 
     {

@@ -15,7 +15,7 @@ import { Helmet } from "react-helmet-async";
 import { useAnimationControls } from "framer-motion";
 
 const mockUpcomingEvents = [
-  { id: 1, image: "images/conclaveGallery/conclave-01.jpg" },
+  { id: 1, image: "images/conclaveGallery/canclave-01.jpg" },
   { id: 2, image: "images/conclaveGallery/canclave-02.jpg" },
   { id: 3, image: "images/conclaveGallery/canclave-03.jpg" },
   { id: 4, image: "images/conclaveGallery/canclave-04.jpg" },
@@ -40,41 +40,41 @@ const mockUpcomingEvents = [
   { id: 23, image: "images/conclaveGallery/canclave-23.jpg" },
   { id: 24, image: "images/conclaveGallery/canclave-24.jpg" },
   { id: 25, image: "images/conclaveGallery/canclave-25.jpg" },
-  { id: 26, image: "/images/conclaveGallery/conclave-26.jpg" },
-  { id: 27, image: "images/conclaveGallery/conclave-27.jpg" },
-  { id: 28, image: "images/conclaveGallery/conclave-28.jpg" },
-  { id: 29, image: "images/conclaveGallery/conclave-29.jpg" },
-  { id: 30, image: "images/conclaveGallery/conclave-30.jpg" },
-  { id: 31, image: "images/conclaveGallery/conclave-31.jpg" },
-  { id: 32, image: "images/conclaveGallery/conclave-32.jpg" },
-  { id: 33, image: "images/conclaveGallery/conclave-33.jpg" },
-  { id: 34, image: "images/conclaveGallery/conclave-34.jpg" },
-  { id: 35, image: "images/conclaveGallery/conclave-35.jpg" },
-  { id: 36, image: "images/conclaveGallery/conclave-36.jpg" },
-  { id: 37, image: "images/conclaveGallery/conclave-37.jpg" },
-  { id: 38, image: "images/conclaveGallery/conclave-38.jpg" },
-  { id: 39, image: "images/conclaveGallery/conclave-39.jpg" },
-  { id: 40, image: "images/conclaveGallery/conclave-40.jpg" },
-  { id: 41, image: "images/conclaveGallery/conclave-41.jpg" },
-  { id: 42, image: "images/conclaveGallery/conclave-42.jpg" },
-  { id: 43, image: "images/conclaveGallery/conclave-43.jpg" },
-  { id: 44, image: "images/conclaveGallery/conclave-44.jpg" },
-  { id: 45, image: "images/conclaveGallery/conclave-45.jpg" },
-  { id: 46, image: "images/conclaveGallery/conclave-46.jpg" },
-  { id: 47, image: "images/conclaveGallery/conclave-47.jpg" },
-  { id: 48, image: "images/conclaveGallery/conclave-48.jpg" },
-  { id: 49, image: "images/conclaveGallery/conclave-49.jpg" },
+  { id: 26, image: "images/conclaveGallery/canclave-26.jpg" },
+  { id: 27, image: "images/conclaveGallery/canclave-27.jpg" },
+  { id: 28, image: "images/conclaveGallery/canclave-28.jpg" },
+  { id: 29, image: "images/conclaveGallery/canclave-29.jpg" },
+  { id: 30, image: "images/conclaveGallery/canclave-30.jpg" },
+  { id: 31, image: "images/conclaveGallery/canclave-31.jpg" },
+  { id: 32, image: "images/conclaveGallery/canclave-32.jpg" },
+  { id: 33, image: "images/conclaveGallery/canclave-33.jpg" },
+  { id: 34, image: "images/conclaveGallery/canclave-34.jpg" },
+  { id: 35, image: "images/conclaveGallery/canclave-35.jpg" },
+  { id: 36, image: "images/conclaveGallery/canclave-36.jpg" },
+  { id: 37, image: "images/conclaveGallery/canclave-37.jpg" },
+  { id: 38, image: "images/conclaveGallery/canclave-38.jpg" },
+  { id: 39, image: "images/conclaveGallery/canclave-39.jpg" },
+  { id: 40, image: "images/conclaveGallery/canclave-40.jpg" },
+  { id: 41, image: "images/conclaveGallery/canclave-41.jpg" },
+  { id: 42, image: "images/conclaveGallery/canclave-42.jpg" },
+  { id: 43, image: "images/conclaveGallery/canclave-43.jpg" },
+  { id: 44, image: "images/conclaveGallery/canclave-44.jpg" },
+  { id: 45, image: "images/conclaveGallery/canclave-45.jpg" },
+  { id: 46, image: "images/conclaveGallery/canclave-46.jpg" },
+  { id: 47, image: "images/conclaveGallery/canclave-47.jpg" },
+  { id: 48, image: "images/conclaveGallery/canclave-48.jpg" },
+  { id: 49, image: "images/conclaveGallery/canclave-49.jpg" },
   { id: 50, image: "images/conclaveGallery/canclave-50.jpg" },
-  { id: 51, image: "images/conclaveGallery/conclave-51.jpg" },
-  { id: 52, image: "images/conclaveGallery/conclave-52.jpg" },
-  { id: 53, image: "images/conclaveGallery/conclave-53.jpg" },
-  { id: 54, image: "images/conclaveGallery/conclave-54.jpg" },
-  { id: 55, image: "images/conclaveGallery/conclave-55.jpg" },
-  { id: 56, image: "images/conclaveGallery/conclave-56.jpg" },
-  { id: 57, image: "images/conclaveGallery/conclave-57.jpg" },
-  { id: 58, image: "images/conclaveGallery/conclave-58.jpg" },
-  { id: 59, image: "images/conclaveGallery/conclave-59.jpg" },
-  { id: 60, image: "images/conclaveGallery/conclave-60.jpg" },
+  { id: 51, image: "images/conclaveGallery/canclave-51.jpg" },
+  { id: 52, image: "images/conclaveGallery/canclave-52.jpg" },
+  { id: 53, image: "images/conclaveGallery/canclave-53.jpg" },
+  { id: 54, image: "images/conclaveGallery/canclave-54.jpg" },
+  { id: 55, image: "images/conclaveGallery/canclave-55.jpg" },
+  { id: 56, image: "images/conclaveGallery/canclave-56.jpg" },
+  { id: 57, image: "images/conclaveGallery/canclave-57.jpg" },
+  { id: 58, image: "images/conclaveGallery/canclave-58.jpg" },
+  { id: 59, image: "images/conclaveGallery/canclave-59.jpg" },
+  { id: 60, image: "images/conclaveGallery/canclave-60.jpg" },
 ];
 
 const agendaData = [
@@ -639,6 +639,100 @@ export default function Conclave() {
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
+  /* ================= HELPER  ================= */
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((p) => ({ ...p, [name]: value }));
+  };
+
+  /* ================= SEND OTP ================= */
+
+  const sendOtp = async () => {
+    if (!/^[6-9]\d{9}$/.test(form.phone)) {
+      toast.error("Enter valid 10 digit mobile number");
+      return;
+    }
+
+    if (!form.phone) {
+      toast.error("Enter phone number");
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      await axios.post(`${API_BASE_URL_API}/conclaves/conclave/send-otp`, {
+        phone: `${form.countryCode}${form.phone}`,
+      });
+
+      setOtpSent(true);
+      toast.success("OTP sent successfully");
+    } catch (err) {
+      toast.error("Failed to send OTP");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  /* ================= SUBMIT ================= */
+
+  // const submitConclaveForm = async (e) => {
+  //   e.preventDefault();
+
+  //   if (!otpSent || !form.otp) {
+  //     toast.error("Please verify mobile number");
+  //     return;
+  //   }
+
+  //   if (!form.companyName.trim()) {
+  //     toast.error("Company Name is required");
+  //     return;
+  //   }
+
+  //   if (!form.designation.trim()) {
+  //     toast.error("Designation is required");
+  //     return;
+  //   }
+
+  //   const payload = {
+  //     name: sanitize(form.name),
+  //     email: form.email,
+  //     companyName: sanitize(form.companyName),
+  //     designation: sanitize(form.designation),
+  //     linkedinUrl: form.linkedinUrl,
+  //     phone: `${form.countryCode}${form.phone}`,
+  //     otp: form.otp,
+  //   };
+
+  //   try {
+  //     setLoading(true);
+
+  //     await axios.post(
+  //       `${API_BASE_URL_API}/conclaves/conclave/verify-otp`,
+  //       payload,
+  //     );
+
+  //     toast.success("Registration successful!");
+
+  //     setForm({
+  //       name: "",
+  //       email: "",
+  //       companyName: "",
+  //       designation: "",
+  //       linkedinUrl: "",
+  //       phone: "",
+  //       countryCode: "+91",
+  //       otp: "",
+  //     });
+
+  //     navigate("/thank-you", { state: { from: "conclave" } });
+  //   } catch (err) {
+  //     toast.error(err?.response?.data?.message || "OTP verification failed");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   /* ================= UI ================= */
 
@@ -716,38 +810,33 @@ export default function Conclave() {
   const animationRef = useRef(null);
   const isPausedRef = useRef(false);
 
+  useEffect(() => {
+    let lastTime = 0;
+    const speed = 1001;
 
-  
-useEffect(() => {
-  const container = carouselRef.current;
-  if (!container) return;
+    const animate = (time) => {
+      if (!lastTime) lastTime = time;
+      const delta = (time - lastTime) / 1000;
+      lastTime = time;
 
-  let animationFrame;
-  let lastTime = 0;
+      if (!isPausedRef.current && carouselRef.current) {
+        carouselRef.current.scrollLeft += speed * delta;
 
-  const speed = 0.1; 
-
-
-  const animate = (time) => {
-    if (!lastTime) lastTime = time;
-    const delta = (time - lastTime) / 1000;
-    lastTime = time;
-
-    if (!isPausedRef.current) {
-      container.scrollLeft += speed * delta;
-
-      if (container.scrollLeft >= container.scrollWidth / 2) {
-        container.scrollLeft = 0;
+        if (
+          carouselRef.current.scrollLeft >=
+          carouselRef.current.scrollWidth / 2
+        ) {
+          carouselRef.current.scrollLeft = 0;
+        }
       }
-    }
 
-    animationFrame = requestAnimationFrame(animate);
-  };
+      animationRef.current = requestAnimationFrame(animate);
+    };
 
-  animationFrame = requestAnimationFrame(animate);
+    animationRef.current = requestAnimationFrame(animate);
 
-  return () => cancelAnimationFrame(animationFrame);
-}, []);
+    return () => cancelAnimationFrame(animationRef.current);
+  }, []);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState(null);
@@ -762,18 +851,6 @@ useEffect(() => {
     setModalImage(null);
   };
 
-
-
-useEffect(() => {
-  controls.start({
-    x: ["0%", "-50%"],
-    transition: {
-      ease: "linear",
-      duration: 140,
-      repeat: Infinity,
-    },
-  });
-}, []);
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
@@ -811,6 +888,26 @@ useEffect(() => {
       </Helmet>
 
       {/* ============== Banner ============ */}
+
+      {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
+        <div className="relative z-0">
+          <img
+            className="eventsCalenderIamge hidden sm:block w-full"
+            src="/images/events/conclave-banner.jpeg"
+            alt="Super Chennai Quiz"
+          />
+
+          <img
+            className="block sm:hidden w-full"
+            src="/images/events/conclave-banner-mobile-banner-1.jpeg"
+            alt="Super Chennai Quiz Mobile"
+          />
+        </div>
+
+        <div className="accodoamationBannerContainer relative z-20">
+          <div className="accodoamationBannerText"></div>
+        </div>
+      </section> */}
 
       <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
         <div className="relative z-0">
@@ -880,7 +977,31 @@ useEffect(() => {
                   09:30 AM onwards
                 </span>
               </div>
+
+              {/* <div className="text-center">
+                <div className="flex items-center justify-center gap-2 text-sm uppercase text-gray-500">
+                  <img
+                    src="/images/icons/location-icon.svg"
+                    alt="Venue"
+                    className="w-10 h-10"
+                  />
+                  <span>Venue</span>
+                </div>
+                <span className="font-semibold block mt-1">
+                  ITC Welcome Hotel, Chennai
+                </span>
+              </div> */}
             </div>
+
+            {/* CTA */}
+            {/* <button
+              onClick={() => setShowRegisterPopup(true)}
+              className="inline-flex items-center justify-center px-12 py-3 rounded-full
+              bg-rose-500 text-white font-semibold text-lg
+              hover:bg-rose-600 transition-all duration-300 shadow-lg"
+            >
+              Register Now
+            </button> */}
           </div>
         </div>
       </section>
@@ -1467,19 +1588,24 @@ useEffect(() => {
         <div className="container max-w-7xl mx-auto px-4 EventsCalendarTitleMain">
           <h2>Chennai Conclave 2026</h2>
           <p>
-            A collection of stage highlights, speaker sessions, interactions,
-            and memento-giving moments from the conclave.
+            Discover inspiring keynote sessions, leadership panels, startup
+            showcases, and networking experiences from Chennai’s most
+            influential business summit.
           </p>
         </div>
         <div className="eventsCalendarMainSectionConatiner container max-w-7xl mx-auto px-4">
           <div className="CalendarEventsFirst">
             <img
-              className="eventsCalenderIamge cursor-pointer w-[800px] h-[350px] object-cover"
+              className="eventsCalenderIamge cursor-pointer w-full h-[400px] object-cover"
               src="images/streaming.jpeg"
               alt="Super Chennai Conclave 2026"
             />
 
             <div className="MainCalendarSectionEvent">
+              <h4>
+                <span>Mar</span>
+              </h4>
+
               <div className="secondSectionEventsCalendar">
                 <div className="EventsCalendarDateandTime">
                   <p className="dateEvents">19</p>
@@ -1493,15 +1619,15 @@ useEffect(() => {
 
               <div className="thirdSectionCalendarContent">
                 <p>
-                  Moments from the conclave where ideas met conversations, and
-                  leaders shared perspectives that inspired the room. A frame
-                  that reflects the spirit of collaboration, knowledge sharing,
-                  and meaningful connections.
+                  Join business leaders, innovators, policymakers, and
+                  entrepreneurs at Super Chennai Conclave 2026. A premier
+                  platform focused on innovation, technology, startups, and the
+                  future growth of Chennai.
                 </p>
               </div>
 
               <div className="eventsCalendarLinks">
-                <a>Conclave</a>
+                <a>Business Conclave</a>
               </div>
             </div>
           </div>
@@ -1534,7 +1660,7 @@ useEffect(() => {
                         x: ["50", "-50%"],
                         transition: {
                           ease: "linear",
-                          duration: 140,
+                          duration: 20,
                           repeat: Infinity,
                         },
                       })

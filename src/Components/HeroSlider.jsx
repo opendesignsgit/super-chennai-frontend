@@ -40,14 +40,23 @@ const slides = [
   //   description: "conclave.",
   // },
 
-  {
-    type: "image",
-    link: "/events-in-chennai/credai-chennai-fairpro-2026",
-    image: "/images/fairpro-homepagenbanner.jpeg",
-    image1: "/images/mobile-banner-fairpro.jpeg",
-    title: "Credai evant",
-    description: "Credai.",
-  },
+  //  {
+  //   type: "image",
+  //   link: "arattai-with-aruna-sairam",
+  //   image: "/images/aruna-with.jpeg",
+  //   image1: "/images/aruna-inner-mobile.jpeg",
+  //   title: "conclave evant",
+  //   description: "conclave.",
+  // },
+
+  // {
+  //   type: "image",
+  //   link: "/events-in-chennai/credai-chennai-fairpro-2026",
+  //   image: "/images/fairpro-homepagenbanner.jpeg",
+  //   image1: "/images/mobile-banner-fairpro.jpeg",
+  //   title: "Credai evant",
+  //   description: "Credai.",
+  // },
 
   {
     type: "image",

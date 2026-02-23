@@ -51,18 +51,6 @@ export default function Thankyou() {
     <>
       <section className="accaodomationBannerSection carquizbanner">
         <div>
-          {/* <img
-            className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/thankyou-banner-1.jpg"
-            alt="Super Chennai Quiz"
-          />
-
-          <img
-            className=" block sm:hidden"
-            src="/images/events/mobile-banner-thankyou.jpg"
-            alt="Super Chennai Quiz Mobile"
-          /> */}
-
           <img
             className="eventsCalenderIamge hidden sm:block"
             src={imageSrc}
@@ -111,7 +99,9 @@ export default function Thankyou() {
               </p>
 
               <p>
-               We appreciate your interest. Your registration is under review, and your participation is confirmed only upon receiving an email from our team.
+                We appreciate your interest. Your registration is under review,
+                and your participation is confirmed only upon receiving an email
+                from our team.
               </p>
 
               {/* <p>
@@ -124,6 +114,19 @@ export default function Thankyou() {
                 You’ll receive further updates and confirmations via email. Stay
                 tuned!
               </p> */}
+            </div>
+          )}
+
+          {from === "arattai" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+
+              <p>Thank you for registering for Arattai with Arangam. </p>
+
+              <p>
+                Your mobile number has been successfully verified and your
+                registration is now confirmed.{" "}
+              </p>
             </div>
           )}
 

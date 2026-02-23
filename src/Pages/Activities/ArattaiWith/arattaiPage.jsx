@@ -134,19 +134,17 @@ export default function ArrattaiWithArangam() {
       {/* ============== Banner ============ */}
       <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
         <div className="relative z-0">
-       
-            <img
-              className="eventsCalenderIamge hidden sm:block w-full"
-              src="/images/aruna-innerpage.jpeg"
-              alt="Super Chennai Quiz"
-            />
+          <img
+            className="eventsCalenderIamge hidden sm:block w-full"
+            src="/images/aruna-innerpage.jpeg"
+            alt="Super Chennai Quiz"
+          />
 
-            <img
-              className="block sm:hidden w-full"
-              src="/images/aruna-home-mobile.jpeg"
-              alt="Super Chennai Quiz Mobile"
-            />
-        
+          <img
+            className="block sm:hidden w-full"
+            src="/images/aruna-home-mobile.jpeg"
+            alt="Super Chennai Quiz Mobile"
+          />
         </div>
 
         <div className="accodoamationBannerContainer relative z-20">
@@ -172,16 +170,11 @@ export default function ArrattaiWithArangam() {
                 stages including the Royal Albert Hall. A recipient of honours
                 such as the Sangita Kalanidhi and the Padma Shri, she continues
                 to be a proud torchbearer of the Carnatic tradition that
-                flourishes in Chennai.
-
-
-                   In celebrating a voice that echoes the soul of our city, we will
-                honour her with the
-                <span className="font-semibold text-purple-700">
-                  {" "}
-                  Super Chennai Icon of the Month
-                </span>
-                .
+                flourishes in Chennai. In celebrating a voice that echoes the
+                soul of our city, we will honour her with the
+                {/* <span className="font-semibold text-purple-700"> */} Super
+                Chennai Icon of the Month
+                {/* </span> */}.
               </p>
               <p className="text-gray-600 leading-relaxed mb-10 ">
                 She will be in conversation with Akhila Krishnamurthy, Founder,
@@ -192,17 +185,12 @@ export default function ArrattaiWithArangam() {
 
             <div className="flex flex-col items-center text-center space-y-4 py-10">
               {/* Top Line Bar */}
-              <div className="w-24 h-1 bg-purple-700 rounded-full"></div>
 
               <p className="text-rose-600 font-semibold tracking-wide">
                 Limited Seats Only • Register Now
               </p>
 
-              {/* <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-                Join Us for a Conversation with the Legend
-              </h2> */}
-
-              <h2 class=" themelink-color formheadingtheme">
+              <h2 class=" themelink-color formheadingtheme-arattai">
                 Join Us for a Conversation with the Legend
               </h2>
 
@@ -218,7 +206,7 @@ export default function ArrattaiWithArangam() {
               </button> */}
 
               <button
-               onClick={() => setShowRegisterPopup(true)}
+                onClick={() => setShowRegisterPopup(true)}
                 class="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button "
               >
                 Register Now

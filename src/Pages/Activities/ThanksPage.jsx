@@ -121,7 +121,7 @@ export default function Thankyou() {
             <div className="workIntro">
               <h1>You're Registered!</h1>
 
-              <p>Thank you for registering for Arattai with Arangam. </p>
+              <p>Thank you for registering for Arattai with Aruna Sairam </p>
 
               <p>
                 Your mobile number has been successfully verified and your

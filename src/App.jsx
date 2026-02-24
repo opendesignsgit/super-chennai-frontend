@@ -317,6 +317,7 @@ import UserDashboard from "./Pages/Dashboard/UserDashboard"
 
 import LoginUser from "./Pages/login/login"
 import VerifyOTPPms from "./Pages/login/VerifyOTP"
+import ExploreDiscovery from "./Pages/Explore/ExploreDiscovery";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -1573,6 +1574,10 @@ function App() {
             {/* Pride-of-Chennai */}
             <Route path="/hall-of-fame" element={<PrideofChennai />} />
             <Route path="/chennai-apps" element={<ChennaiApp />} />
+
+            {/* Explore Discovery Routes */}
+            <Route path="/explore" element={<ExploreDiscovery />} />
+            <Route path="/explore/:slug" element={<ExploreDiscovery />} />
           </Routes>
 
           {/*################################# NEWS LETTER ######################################## */}

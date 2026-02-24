@@ -20,6 +20,7 @@ const blogOgRoute = require("./routes/og/blogOgRoute");
 
 const conclaves = require ("./routes/conclaveRoutes")
 const arattai = require ("./routes/arattaiRoutes")
+const aiRoutes = require("./routes/ai")
 
 //##################### MIDDLEWARE  AREA #######################################
 app.use(cors());
@@ -57,6 +58,8 @@ app.use("/api/conclaves", conclaves);
 
 app.use("/api/arattai",arattai);
 
+
+app.use("/ai", aiRoutes);
 
 app.use("/", blogOgRoute);
 

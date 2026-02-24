@@ -559,12 +559,12 @@ function App() {
 
           {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-          {/* {isHomePage && showPopup && (
+          {isHomePage && showPopup && (
             <ImagePopup
               imageUrl="/images/aruna-contest-popup.jpg"
               onClose={() => setShowPopup(false)}
             />
-          )} */}
+          )}
 
 
           {/* )} */}

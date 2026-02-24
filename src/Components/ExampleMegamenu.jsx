@@ -358,54 +358,54 @@ const menuItems = [
       },
     ],
   },
-  {
-    label: "Volunteer",
-    labellink: "/volunteer-in-chennai",
-
-    content: [
-      {
-        title: "Digital",
-        // desc: "Connect and collaborate online",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Events",
-        // desc: "Help run volunteer meets",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Content Creators",
-        // desc: "Share inspiring volunteer stories",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Design &  Art",
-        // desc: "Showcase causes through creativity",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Influencers",
-        // desc: "Promote action through your voice",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Mentors",
-        // desc: "Guide new volunteer minds",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-    ],
-  },
   // {
-  //   label: "Conclave",
-  //   labellink: "/chennai-conclave",
-  //   content: [],
+  //   label: "Volunteer",
+  //   labellink: "/volunteer-in-chennai",
+
+  //   content: [
+  //     {
+  //       title: "Digital",
+  //       // desc: "Connect and collaborate online",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Events",
+  //       // desc: "Help run volunteer meets",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Content Creators",
+  //       // desc: "Share inspiring volunteer stories",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Design &  Art",
+  //       // desc: "Showcase causes through creativity",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Influencers",
+  //       // desc: "Promote action through your voice",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Mentors",
+  //       // desc: "Guide new volunteer minds",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //   ],
   // },
+  {
+    label: "Arattai",
+    labellink: "/arattai-with-aruna-sairam/carnatic-vocalist",
+    content: [],
+  },
 ];
 const sectionImageMap = {
   Live: "/images/HomePage-Images/live-MegaMenu.jpg",
@@ -414,6 +414,8 @@ const sectionImageMap = {
   Invest: "/images/HomePage-Images/Invest-MegaMenu.jpg",
   Innovate: "/images/HomePage-Images/Innovate-MegaMenu.jpg",
   Volunteer: "/images/HomePage-Images/Volunteers-MegaMenu.jpg",
+   Arattai: "/images/aruna-contest-popup.jpg",
+
 };
 const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -623,17 +625,19 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                         navigate(item.labellink);
                         window.scrollTo({ top: 0 });
                       }}
-                      onMouseEnter={() => {
-                        // Only show mega menu if the item has content
-                        if (item.content && item.content.length > 0) {
-                          setActiveMenu(item);
-                          setMenuVisible(true);
-                          setHoveredImage(
-                            sectionImageMap[item.label] ||
-                              "/images/FirstSliderImage.png",
-                          );
-                        }
-                      }}
+                     onMouseEnter={() => {
+  if (item.content && item.content.length > 0) {
+    setActiveMenu(item);
+    setMenuVisible(true);
+    setHoveredImage(
+      sectionImageMap[item.label] ||
+      "/images/FirstSliderImage.png"
+    );
+  } else {
+    setActiveMenu(null);
+    setMenuVisible(false);
+  }
+}}
                     >
                       <span>
                         {item.label}

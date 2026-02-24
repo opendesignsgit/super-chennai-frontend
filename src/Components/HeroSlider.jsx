@@ -41,14 +41,14 @@ const slides = [
   // },
 
 
-  //  {
-  //   type: "image",
-  //   link: "arattai-with-aruna-sairam/carnatic-vocalist",
-  //   image: "/images/aruna-innerpage.jpg",
-  //   image1: "/images/mobile-aruna-main-insta.jpg",
-  //   title: "arattai-with-aruna-sairam",
-  //   description: "arattai-with-aruna-sairam",
-  // },
+   {
+    type: "image",
+    link: "arattai-with-aruna-sairam/carnatic-vocalist",
+    image: "/images/aruna-innerpage.jpg",
+    image1: "/images/mobile-aruna-main-insta.jpg",
+    title: "arattai-with-aruna-sairam",
+    description: "arattai-with-aruna-sairam",
+  },
 
 
   // {

@@ -5,6 +5,7 @@ DB_PASSWORD=root
 DB_NAME=email
 DB_PORT=5432
 JWT_SECRET=qSDE0cS+5PlGPn3Cu1F3dF7+O2ycMF0h8wsWWG6zmq8=
+OPENAI_API_KEY=your_api_key_here
 
 
 # MAILR CONFIG  ###############

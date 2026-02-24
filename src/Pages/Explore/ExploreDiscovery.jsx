@@ -506,7 +506,7 @@ export default function ExploreDiscovery() {
   };
 
   // Handle user message submission
-  const handleSendMessage = (userMessage) => {
+  const handleSendMessage = async (userMessage) => {
     // Show thinking loader
     setIsThinking(true);
 
@@ -519,47 +519,77 @@ export default function ExploreDiscovery() {
       },
     ]);
 
-    // Small delay to show thinking loader
-    setTimeout(() => {
-      // Check if message is a greeting
-      if (isGreeting(userMessage)) {
-        const greetingResponse = generateGreetingResponse();
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: "ai",
-            text: greetingResponse,
+    // Check if message is a greeting (no API call needed)
+    if (isGreeting(userMessage)) {
+      const greetingResponse = generateGreetingResponse();
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "ai",
+          text: greetingResponse,
+        },
+      ]);
+      setIsThinking(false);
+      logInteraction(userMessage, {}, filters, true);
+      return;
+    }
+
+    try {
+      // Call AI interpret endpoint
+      const response = await fetch(
+        "https://api.superchennai.com/ai/interpret",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
           },
-        ]);
-        setIsThinking(false);
-        logInteraction(userMessage, {}, filters, true);
-        return;
+          body: JSON.stringify({ message: userMessage }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("AI interpret request failed");
       }
 
-      // Parse message and detect filters
+      const aiFilters = await response.json();
+
+      // Map AI response fields to internal filter shape
+      const mappedFilters = {
+        category: aiFilters.category || null,
+        location: aiFilters.location || null,
+        ratingMin: aiFilters.rating != null ? aiFilters.rating : null,
+        tags: Array.isArray(aiFilters.tags) ? aiFilters.tags : [],
+      };
+
+      // Merge with active filters (progressive refinement)
       const oldFilters = { ...filters };
-      const updatedFilters = parseUserMessage(userMessage);
-      
+      const updatedFilters = {
+        ...oldFilters,
+        ...(mappedFilters.category !== null && { category: mappedFilters.category }),
+        ...(mappedFilters.location !== null && { location: mappedFilters.location }),
+        ...(mappedFilters.ratingMin !== null && { ratingMin: mappedFilters.ratingMin }),
+        tags: [
+          ...oldFilters.tags,
+          ...mappedFilters.tags.filter((t) => !oldFilters.tags.includes(t)),
+        ],
+      };
+
       // Check if any filters were detected
       const matched = hasDetectedFilters(oldFilters, updatedFilters);
 
       if (!matched) {
         // No filters detected - show recovery message with suggestions
         const suggestions = generateSmartSuggestions();
-        
-        // Only show suggestions if we have valid ones
         if (suggestions.length > 0) {
-          const unmatchedResponse = generateUnmatchedResponse();
           setMessages((prev) => [
             ...prev,
             {
               role: "ai",
-              text: unmatchedResponse,
-              suggestions: suggestions,
+              text: generateUnmatchedResponse(),
+              suggestions,
             },
           ]);
         } else {
-          // No valid suggestions, show generic message
           setMessages((prev) => [
             ...prev,
             {
@@ -568,7 +598,6 @@ export default function ExploreDiscovery() {
             },
           ]);
         }
-        
         setIsThinking(false);
         logInteraction(userMessage, updatedFilters, filters, false);
         return;
@@ -593,7 +622,54 @@ export default function ExploreDiscovery() {
 
       setIsThinking(false);
       logInteraction(userMessage, updatedFilters, updatedFilters, true);
-    }, 300); // Small delay to show thinking animation
+    } catch (e) {
+      // Fallback to rule-based parsing on API failure
+      console.error("AI interpret API failed, falling back to rule-based parsing:", e);
+      const oldFilters = { ...filters };
+      const updatedFilters = parseUserMessage(userMessage);
+      const matched = hasDetectedFilters(oldFilters, updatedFilters);
+
+      if (!matched) {
+        const suggestions = generateSmartSuggestions();
+        if (suggestions.length > 0) {
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "ai",
+              text: generateUnmatchedResponse(),
+              suggestions,
+            },
+          ]);
+        } else {
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "ai",
+              text: "I couldn't understand that. Please try describing what you're looking for, like 'cafe near adyar' or 'temple in mylapore'.",
+            },
+          ]);
+        }
+        setIsThinking(false);
+        logInteraction(userMessage, updatedFilters, filters, false);
+        return;
+      }
+
+      setFilters(updatedFilters);
+      setLastFilterChange({ filters: updatedFilters, previousFilters: oldFilters });
+      updateURLSlug(updatedFilters);
+
+      const aiResponse = generateAIResponse(updatedFilters);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "ai",
+          text: aiResponse,
+        },
+      ]);
+
+      setIsThinking(false);
+      logInteraction(userMessage, updatedFilters, updatedFilters, true);
+    }
   };
 
   // Handle mode switch

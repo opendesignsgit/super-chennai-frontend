@@ -53,11 +53,16 @@ export default function NearbyMap({
     const defaultCenter = [13.0827, 80.2707]; // Chennai center
     const center = userLocation ? [userLocation.lat, userLocation.lng] : defaultCenter;
 
-    // Create map
+    // Create map with zoom controls disabled
     const map = L.map(mapContainerRef.current, {
       center: center,
       zoom: 13,
-      zoomControl: true,
+      zoomControl: false,  // Disable zoom controls
+      scrollWheelZoom: false,  // Disable scroll wheel zoom
+      doubleClickZoom: false,  // Disable double click zoom
+      touchZoom: false,  // Disable touch zoom
+      boxZoom: false,  // Disable box zoom
+      dragging: true,  // Keep dragging enabled for panning
     });
 
     // Add tile layer
@@ -75,11 +80,24 @@ export default function NearbyMap({
     };
   }, []);
 
-  // Update map center when user location changes
+  // Update map center and fit bounds when user location changes
   useEffect(() => {
     if (!mapRef.current || !userLocation) return;
-    mapRef.current.setView([userLocation.lat, userLocation.lng], 13);
-  }, [userLocation]);
+    
+    // Calculate bounds to fit the radius circle
+    const radiusInMeters = radius * 1000;
+    const circle = L.circle([userLocation.lat, userLocation.lng], {
+      radius: radiusInMeters,
+    });
+    
+    const bounds = circle.getBounds();
+    
+    // Fit map to show the entire radius circle with some padding
+    mapRef.current.fitBounds(bounds, {
+      padding: [50, 50],  // Add 50px padding on all sides
+      maxZoom: 15,  // Don't zoom in too much
+    });
+  }, [userLocation, radius]);
 
   // Update user marker
   useEffect(() => {

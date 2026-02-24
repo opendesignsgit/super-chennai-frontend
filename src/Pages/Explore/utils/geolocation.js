@@ -161,11 +161,14 @@ export const requestOrientationPermission = async () => {
  */
 export const getHeadingFromOrientation = (event) => {
   if (event.webkitCompassHeading !== undefined) {
-    // iOS
+    // iOS - provides true compass heading directly
     return event.webkitCompassHeading;
   } else if (event.alpha !== null) {
     // Android and others
-    return 360 - event.alpha;
+    // alpha is rotation around Z-axis (0-360)
+    // For compass heading, we need to use alpha directly
+    // 0° = North, 90° = East, 180° = South, 270° = West
+    return event.alpha;
   }
   return null;
 };

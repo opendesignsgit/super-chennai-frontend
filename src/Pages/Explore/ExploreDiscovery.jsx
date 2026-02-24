@@ -68,18 +68,23 @@ export default function ExploreDiscovery() {
   const SESSION_KEY = "explore_chat_session";
   const SESSION_EXPIRY = 60 * 60 * 1000; // 1 hour in milliseconds
 
-  // Load messages and filters from session storage on mount
+  // Load messages, filters, and mode from session storage on mount
   useEffect(() => {
     const savedSession = sessionStorage.getItem(SESSION_KEY);
     if (savedSession) {
       try {
-        const { messages: savedMessages, filters: savedFilters, timestamp } = JSON.parse(savedSession);
+        const { messages: savedMessages, filters: savedFilters, mode: savedMode, timestamp } = JSON.parse(savedSession);
         const now = Date.now();
         
         // Check if session is still valid (within 1 hour)
         if (now - timestamp < SESSION_EXPIRY) {
           setMessages(savedMessages);
           setFilters(savedFilters);
+          
+          // Restore mode if it was nearby (will trigger initialization via separate effect)
+          if (savedMode === "nearby") {
+            setMode("nearby");
+          }
         } else {
           // Session expired, clear it
           sessionStorage.removeItem(SESSION_KEY);
@@ -91,18 +96,94 @@ export default function ExploreDiscovery() {
     }
   }, []);
 
-  // Save messages and filters to session storage whenever they change
+  // Initialize nearby mode when mode is set to nearby (for both manual switch and session restore)
+  useEffect(() => {
+    const initializeNearbyMode = async () => {
+      if (mode === "nearby" && !nearbyState.isNearbyActive) {
+        try {
+          // Request GPS permission and get user location
+          const location = await getUserLocation();
+          
+          // Detect device orientation support
+          const hasOrientation = supportsOrientation();
+          let modeType = "radius"; // Default to radius mode
+          
+          if (hasOrientation) {
+            // Request orientation permission (iOS)
+            const permissionGranted = await requestOrientationPermission();
+            if (permissionGranted) {
+              modeType = "directional";
+              
+              // Add orientation listener
+              const handleOrientation = (event) => {
+                const heading = getHeadingFromOrientation(event);
+                setNearbyState(prev => ({
+                  ...prev,
+                  deviceHeading: heading,
+                }));
+              };
+              
+              window.addEventListener('deviceorientation', handleOrientation);
+              orientationListenerRef.current = handleOrientation;
+            }
+          }
+          
+          // Initialize places with coordinates (mock for now)
+          const coordPlaces = assignMockCoordinates(mockPlaces);
+          setPlacesWithCoords(coordPlaces);
+          
+          // Update nearby state
+          setNearbyState({
+            isNearbyActive: true,
+            userLocation: location,
+            deviceHeading: null,
+            nearbyCategory: null,
+            nearbyModeType: modeType,
+            nearbyRadius: 2,
+          });
+          
+          // Add message only if not restoring from session
+          const savedSession = sessionStorage.getItem(SESSION_KEY);
+          if (!savedSession || !savedSession.includes('"mode":"nearby"')) {
+            setMessages((prev) => [
+              ...prev,
+              {
+                role: "ai",
+                text: `Nearby Mode activated! ${modeType === "directional" ? "Point your device to discover places" : "Showing places within 2km"}`,
+              },
+            ]);
+          }
+        } catch (error) {
+          console.error("Error initializing Nearby Mode:", error);
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "ai",
+              text: "Could not access your location. Please enable location permissions and try again.",
+            },
+          ]);
+          // Revert to AI mode if location access failed
+          setMode("ai");
+        }
+      }
+    };
+
+    initializeNearbyMode();
+  }, [mode, nearbyState.isNearbyActive]);
+
+  // Save messages, filters, and mode to session storage whenever they change
   useEffect(() => {
     // Don't save if we're on initial welcome message only
-    if (messages.length > 1 || filters.category || filters.location || filters.ratingMin || filters.tags.length > 0) {
+    if (messages.length > 1 || filters.category || filters.location || filters.ratingMin || filters.tags.length > 0 || mode === "nearby") {
       const sessionData = {
         messages,
         filters,
+        mode,
         timestamp: Date.now()
       };
       sessionStorage.setItem(SESSION_KEY, JSON.stringify(sessionData));
     }
-  }, [messages, filters]);
+  }, [messages, filters, mode]);
 
   // Parse slug on mount if present
   useEffect(() => {
@@ -516,75 +597,11 @@ export default function ExploreDiscovery() {
   };
 
   // Handle mode switch
-  const handleModeSwitch = async (newMode) => {
-    setMode(newMode);
-    
-    if (newMode === "nearby") {
-      // Initialize Nearby Mode
-      try {
-        // Request GPS permission and get user location
-        const location = await getUserLocation();
-        
-        // Detect device orientation support
-        const hasOrientation = supportsOrientation();
-        let modeType = "radius"; // Default to radius mode
-        
-        if (hasOrientation) {
-          // Request orientation permission (iOS)
-          const permissionGranted = await requestOrientationPermission();
-          if (permissionGranted) {
-            modeType = "directional";
-            
-            // Add orientation listener
-            const handleOrientation = (event) => {
-              const heading = getHeadingFromOrientation(event);
-              setNearbyState(prev => ({
-                ...prev,
-                deviceHeading: heading,
-              }));
-            };
-            
-            window.addEventListener('deviceorientation', handleOrientation);
-            orientationListenerRef.current = handleOrientation;
-          }
-        }
-        
-        // Initialize places with coordinates (mock for now)
-        const coordPlaces = assignMockCoordinates(mockPlaces);
-        setPlacesWithCoords(coordPlaces);
-        
-        // Update nearby state
-        setNearbyState({
-          isNearbyActive: true,
-          userLocation: location,
-          deviceHeading: null,
-          nearbyCategory: null,
-          nearbyModeType: modeType,
-          nearbyRadius: 2,
-        });
-        
-        // Add message
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: "ai",
-            text: `Nearby Mode activated! ${modeType === "directional" ? "Point your device to discover places" : "Showing places within 2km"}`,
-          },
-        ]);
-      } catch (error) {
-        console.error("Error initializing Nearby Mode:", error);
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: "ai",
-            text: "Could not access your location. Please enable location permissions and try again.",
-          },
-        ]);
-        // Revert to AI mode
-        setMode("ai");
-      }
-    } else {
+  const handleModeSwitch = (newMode) => {
+    if (newMode === "ai") {
       // Switching back to AI mode
+      setMode(newMode);
+      
       // Clean up orientation listener
       if (orientationListenerRef.current) {
         window.removeEventListener('deviceorientation', orientationListenerRef.current);
@@ -600,6 +617,9 @@ export default function ExploreDiscovery() {
         nearbyModeType: "radius",
         nearbyRadius: 2,
       });
+    } else {
+      // Switching to nearby mode - just set the mode, initialization happens in useEffect
+      setMode(newMode);
     }
   };
 

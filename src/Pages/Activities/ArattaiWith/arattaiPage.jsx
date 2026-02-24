@@ -199,7 +199,7 @@ export default function ArrattaiWithArangam() {
 
           <img
             className="block sm:hidden w-full"
-            src="/images/mobile-aruna-main-secon.jpg"
+            src="/images/inner-page-araattai-image.jpeg"
             alt="Aruna sairam"
           />
         </div>
@@ -213,7 +213,9 @@ export default function ArrattaiWithArangam() {
         <div className="container mx-auto px-6 lg:px-0">
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves ">
-              <h3 className=" text-center">Arattai with Aruna Sairam</h3>
+              <h1 className=" text-center hidden ">Arattai with Aruna Sairam</h1>
+                            <h3 className=" text-center">Arattai with Aruna Sairam</h3>
+
 
               <p className="text-lg text-gray-600 leading-relaxed mb-6 ">
                 Join us for a candid conversation with one of India’s most

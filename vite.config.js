@@ -48,10 +48,18 @@ import tailwindcss from "@tailwindcss/vite";
 import Renderer from "@prerenderer/renderer-puppeteer";
 import Prerenderer from "@prerenderer/rollup-plugin";
 import path from "path";
+import fs from "fs";
 
 export default defineConfig({
   plugins: [tailwindcss(), react()],
   css: {
     devSourcemap: true,
+  },
+  server: {
+    host: true,
+    https: {
+      key: fs.readFileSync("localhost-key.pem"),
+      cert: fs.readFileSync("localhost.pem"),
+    },
   },
 });

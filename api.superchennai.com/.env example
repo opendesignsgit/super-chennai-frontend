@@ -1,0 +1,15 @@
+PORT=3000
+DB_HOST=localhost
+DB_USER=postgres
+DB_PASSWORD=root
+DB_NAME=email
+DB_PORT=5432
+JWT_SECRET=qSDE0cS+5PlGPn3Cu1F3dF7+O2ycMF0h8wsWWG6zmq8=
+
+
+# MAILR CONFIG  ###############
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=wordpress.odi@gmail.com
+SMTP_PASS=  u need put password 
+FORM_RECEIVER_EMAIL=barathi0307@gmail.com

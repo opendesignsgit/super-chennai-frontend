@@ -105,30 +105,32 @@ export default function ArrattaiWithArangam() {
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
       <Helmet>
-        <title>Hey Chennaiites! It’s your time to talk about Chennai!</title>
+        <title>
+          Chennai’s Iconic Carnatic Vocalists - Arattai with Aruna Sairam
+        </title>
         <meta
           name="description"
-          content="Be part of the Super Chennai Conclave, a citizen-driven space to discuss Chennai’s identity, innovation, culture, and future development.."
+          content=" Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalists, their legacy, and the city’s enduring contribution to classical music culture."
         />
         <meta
           property="og:title"
-          content="Hey Chennaiites! It’s your time to talk about Chennai!"
+          content=" Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalists, their legacy, and the city’s enduring contribution to classical music culture."
         />
         <meta
           property="og:description"
-          content="Be part of the Super Chennai Conclave, a citizen-driven space to discuss Chennai’s identity, innovation, culture, and future development.."
+          content=" Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalists, their legacy, and the city’s enduring contribution to classical music culture."
         />
         <meta
           property="og:image"
-          content="https://www.superchennai.com/images/Picture1.png"
+          content="https://www.superchennai.com/images/aruna-innerpage.jpeg"
         />
         <meta
           property="og:url"
-          content="https://www.superchennai.com/images/Picture1.png"
+          content="https://www.superchennai.com/images/aruna-innerpage.jpeg"
         />
         <link
           rel="canonical"
-          href={`${typeof window !== "undefined" ? window.location.origin : ""}/chennai-conclave`}
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-aruna-sairam/carnatic-vocalist`}
         />
       </Helmet>
       {/* ============== Banner ============ */}
@@ -136,13 +138,13 @@ export default function ArrattaiWithArangam() {
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/aruna-innerpage.jpeg"
+            src="/images/aruna-inne-main-image.jpeg"
             alt="Super Chennai Quiz"
           />
 
           <img
             className="block sm:hidden w-full"
-            src="/images/aruna-home-mobile.jpeg"
+            src="/images/mobile-aruna-main-secon.jpg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
@@ -159,7 +161,7 @@ export default function ArrattaiWithArangam() {
               <h3 className=" text-center">Arattai with Aruna Sairam</h3>
 
               <p className="text-lg text-gray-600 leading-relaxed mb-6 ">
-                Join us for a special Arattai with one of India’s most
+                Join us for a candid conversation with one of India’s most
                 celebrated Carnatic vocalists — a voice that has transcended
                 tradition, geography and generations.
               </p>
@@ -170,16 +172,17 @@ export default function ArrattaiWithArangam() {
                 stages including the Royal Albert Hall. A recipient of honours
                 such as the Sangita Kalanidhi and the Padma Shri, she continues
                 to be a proud torchbearer of the Carnatic tradition that
-                flourishes in Chennai. In celebrating a voice that echoes the
-                soul of our city, we will honour her with the
-                {/* <span className="font-semibold text-purple-700"> */} Super
-                Chennai Icon of the Month
-                {/* </span> */}.
+                flourishes in Chennai.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed mb-6 ">
+                In celebrating a voice that echoes the soul of our city, we will
+                honour her with the Super Chennai Icon of the Month
               </p>
               <p className="text-gray-600 leading-relaxed mb-10 ">
-                She will be in conversation with Akhila Krishnamurthy, Founder,
-                Aalap, for an engaging and intimate exchange on music, memory
-                and the making of a legacy.
+                She will be in conversation with Akhila Krishnamurthy,
+                Independent journalist & Arts entrepreneur, for an engaging and
+                intimate exchange on music, memory and the making of a legacy.
               </p>
             </div>
 

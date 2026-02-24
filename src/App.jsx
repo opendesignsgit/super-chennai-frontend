@@ -561,7 +561,7 @@ function App() {
 
           {/* {isHomePage && showPopup && (
             <ImagePopup
-              imageUrl="/images/aruna-contest-popup.jpeg"
+              imageUrl="/images/aruna-contest-popup.jpg"
               onClose={() => setShowPopup(false)}
             />
           )} */}
@@ -827,7 +827,7 @@ function App() {
 
             <Route path="/chennai-conclave" element={<Conclave />} />
             <Route path="/devConclave" element={<DevConclave />} />
-             <Route path="/arattai-with-aruna-sairam" element={<ArrattaiWithArangam />} />
+             <Route path="/arattai-with-aruna-sairam/carnatic-vocalist" element={<ArrattaiWithArangam />} />
 
 
             

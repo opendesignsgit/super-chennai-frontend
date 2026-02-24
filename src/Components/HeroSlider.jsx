@@ -40,14 +40,16 @@ const slides = [
   //   description: "conclave.",
   // },
 
+
   //  {
   //   type: "image",
-  //   link: "arattai-with-aruna-sairam",
-  //   image: "/images/aruna-with.jpeg",
-  //   image1: "/images/aruna-inner-mobile.jpeg",
-  //   title: "conclave evant",
-  //   description: "conclave.",
+  //   link: "arattai-with-aruna-sairam/carnatic-vocalist",
+  //   image: "/images/aruna-innerpage.jpg",
+  //   image1: "/images/mobile-aruna-main-insta.jpg",
+  //   title: "arattai-with-aruna-sairam",
+  //   description: "arattai-with-aruna-sairam",
   // },
+
 
   // {
   //   type: "image",

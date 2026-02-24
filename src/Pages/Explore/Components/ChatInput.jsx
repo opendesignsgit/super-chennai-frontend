@@ -88,9 +88,10 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
           <input
             type="text"
             className="chat-input"
-            placeholder="Ask Chennai anything..."
+            placeholder={mode === "nearby" ? "Nearby mode - Use map to explore" : "Ask Chennai anything..."}
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
+            disabled={mode === "nearby"}
           />
 
           <div className="mode-switch">
@@ -115,6 +116,7 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
             className={`input-icon-btn ${isListening ? "listening" : ""}`}
             onClick={handleVoiceClick}
             title="Voice"
+            disabled={mode === "nearby"}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +136,7 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
             </svg>
           </button>
 
-          <button type="submit" className="send-btn" title="Send">
+          <button type="submit" className="send-btn" title="Send" disabled={mode === "nearby"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

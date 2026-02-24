@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local folders (your case)
+backup/
+src - Copy/
+localhost-key.pem
+localhost.pem
+vite.config.js

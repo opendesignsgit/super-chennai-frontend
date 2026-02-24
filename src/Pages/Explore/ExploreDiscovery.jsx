@@ -7,6 +7,7 @@ import DetailOffcanvas from "./Components/DetailOffcanvas";
 import NearbyMap from "./Components/NearbyMap";
 import NearbyCategoryChips from "./Components/NearbyCategoryChips";
 import mockPlaces from "./data/mockPlaces";
+import { AI_BASE_URL } from "../../../config";
 import { 
   getUserLocation, 
   supportsOrientation, 
@@ -505,8 +506,11 @@ export default function ExploreDiscovery() {
     return parts.length > 0 ? parts.join(" ") : "Showing all places";
   };
 
-  // Handle user message submission
+  // Handle user message submission (AI Mode only)
   const handleSendMessage = async (userMessage) => {
+    // AI interpretation runs ONLY in AI mode, not Nearby Mode
+    if (mode !== "ai") return;
+
     // Show thinking loader
     setIsThinking(true);
 
@@ -537,7 +541,7 @@ export default function ExploreDiscovery() {
     try {
       // Call AI interpret endpoint
       const response = await fetch(
-        "https://api.superchennai.com/ai/interpret",
+        `${AI_BASE_URL}/ai/interpret`,
         {
           method: "POST",
           headers: {
@@ -548,7 +552,7 @@ export default function ExploreDiscovery() {
       );
 
       if (!response.ok) {
-        throw new Error("AI interpret request failed");
+        throw new Error(`AI interpret request failed: ${response.status} ${response.statusText}`);
       }
 
       const aiFilters = await response.json();
@@ -569,8 +573,8 @@ export default function ExploreDiscovery() {
         ...(mappedFilters.location !== null && { location: mappedFilters.location }),
         ...(mappedFilters.ratingMin !== null && { ratingMin: mappedFilters.ratingMin }),
         tags: [
-          ...oldFilters.tags,
-          ...mappedFilters.tags.filter((t) => !oldFilters.tags.includes(t)),
+          ...(oldFilters.tags || []),
+          ...mappedFilters.tags.filter((t) => !(oldFilters.tags || []).includes(t)),
         ],
       };
 

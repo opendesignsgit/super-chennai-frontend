@@ -45,10 +45,18 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import Renderer from "@prerenderer/renderer-puppeteer";
-import Prerenderer from "@prerenderer/rollup-plugin";
-import path from "path";
 import fs from "fs";
+
+const httpsConfig = (() => {
+  try {
+    return {
+      key: fs.readFileSync("localhost-key.pem"),
+      cert: fs.readFileSync("localhost.pem"),
+    };
+  } catch {
+    return undefined;
+  }
+})();
 
 export default defineConfig({
   plugins: [tailwindcss(), react()],
@@ -57,9 +65,6 @@ export default defineConfig({
   },
   server: {
     host: true,
-    https: {
-      key: fs.readFileSync("localhost-key.pem"),
-      cert: fs.readFileSync("localhost.pem"),
-    },
+    ...(httpsConfig && { https: httpsConfig }),
   },
 });

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { capitalizeFirstLetter } from "../utils/helpers";
 
-export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
+export default function ChatInput({ mode, onSendMessage, onModeSwitch, categories = [], selectedCategory, onCategoryClick }) {
   const [inputValue, setInputValue] = useState("");
   const [isListening, setIsListening] = useState(false);
   const [recognition, setRecognition] = useState(null);
@@ -43,13 +44,15 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue.trim()) {
+    if (inputValue.trim() && mode === "ai") {
       onSendMessage(inputValue);
       setInputValue("");
     }
   };
 
   const handleVoiceClick = () => {
+    if (mode === "nearby") return; // Disable voice in Nearby mode
+    
     if (!recognition) {
       alert('Speech recognition is not supported in your browser. Please try Chrome or Edge.');
       return;
@@ -66,9 +69,31 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
 
   return (
     <div className="chat-input-container">
+      {/* Category chips for Nearby mode */}
+      {mode === "nearby" && categories.length > 0 && (
+        <div className="category-chips-container">
+          <div className="category-chips">
+            {categories.map((category) => (
+              <button
+                key={category}
+                className={`category-chip ${selectedCategory === category ? "active" : ""}`}
+                onClick={() => onCategoryClick(category)}
+              >
+                {capitalizeFirstLetter(category)}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       <form className="chat-input-form" onSubmit={handleSubmit}>
         <div className="input-wrapper">
-          <button type="button" className="input-icon-btn" title="Add">
+          <button 
+            type="button" 
+            className="input-icon-btn" 
+            title="Add"
+            disabled={mode === "nearby"}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -88,9 +113,10 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
           <input
             type="text"
             className="chat-input"
-            placeholder="Ask Chennai anything..."
+            placeholder={mode === "nearby" ? "Chat disabled in Nearby mode" : "Ask Chennai anything..."}
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
+            disabled={mode === "nearby"}
           />
 
           <div className="mode-switch">
@@ -112,9 +138,10 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
 
           <button 
             type="button" 
-            className={`input-icon-btn ${isListening ? "listening" : ""}`}
+            className={`input-icon-btn ${isListening ? "listening" : ""} ${mode === "nearby" ? "disabled" : ""}`}
             onClick={handleVoiceClick}
             title="Voice"
+            disabled={mode === "nearby"}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +161,12 @@ export default function ChatInput({ mode, onSendMessage, onModeSwitch }) {
             </svg>
           </button>
 
-          <button type="submit" className="send-btn" title="Send">
+          <button 
+            type="submit" 
+            className="send-btn" 
+            title="Send"
+            disabled={mode === "nearby"}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

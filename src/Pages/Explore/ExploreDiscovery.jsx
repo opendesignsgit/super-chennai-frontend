@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import ChatInterface from "./Components/ChatInterface";
 import ChatInput from "./Components/ChatInput";
 import DiscoveryResults from "./Components/DiscoveryResults";
 import DetailOffcanvas from "./Components/DetailOffcanvas";
+import NearbyMap from "./Components/NearbyMap";
 import mockPlaces from "./data/mockPlaces";
+import { getLocationCoordinates } from "./utils/helpers";
 import "./Styles/ExploreDiscovery.css";
 
 export default function ExploreDiscovery() {
@@ -35,13 +37,29 @@ export default function ExploreDiscovery() {
   const [isThinking, setIsThinking] = useState(false); // Loading state for message processing
   const [lastFilterChange, setLastFilterChange] = useState(null); // Track last filter change for fallback
 
+  // Nearby Mode state
+  const [nearbyState, setNearbyState] = useState({
+    userLocation: null,
+    radius: 2000, // 2km default in meters
+    deviceHeading: null,
+    nearbyModeType: null, // "directional" or "radius"
+    gpsWatchId: null,
+    selectedCategory: null,
+  });
+
+  const orientationListenerRef = useRef(null);
+  const isFirstGPSLockRef = useRef(true);
+
   // Session storage key
   const SESSION_KEY = "explore_chat_session";
+  const MODE_KEY = "explore_mode";
   const SESSION_EXPIRY = 60 * 60 * 1000; // 1 hour in milliseconds
 
-  // Load messages and filters from session storage on mount
+  // Load messages, filters, and mode from session storage on mount
   useEffect(() => {
     const savedSession = sessionStorage.getItem(SESSION_KEY);
+    const savedMode = sessionStorage.getItem(MODE_KEY);
+    
     if (savedSession) {
       try {
         const { messages: savedMessages, filters: savedFilters, timestamp } = JSON.parse(savedSession);
@@ -54,10 +72,35 @@ export default function ExploreDiscovery() {
         } else {
           // Session expired, clear it
           sessionStorage.removeItem(SESSION_KEY);
+          sessionStorage.removeItem(MODE_KEY);
         }
       } catch (error) {
         console.error("Error loading session:", error);
         sessionStorage.removeItem(SESSION_KEY);
+        sessionStorage.removeItem(MODE_KEY);
+      }
+    }
+    
+    // Restore mode if it was saved
+    if (savedMode) {
+      const parsedMode = JSON.parse(savedMode);
+      if (parsedMode.mode === "nearby" && parsedMode.timestamp) {
+        const now = Date.now();
+        // Check if mode was saved recently (within 1 hour)
+        if (now - parsedMode.timestamp < SESSION_EXPIRY) {
+          // Set mode immediately and start GPS tracking
+          setMode("nearby");
+          // Start GPS tracking after a brief delay to ensure component is mounted
+          // This prevents calling GPS functions before refs and state are initialized
+          const GPS_INIT_DELAY = 100; // milliseconds
+          setTimeout(() => {
+            isFirstGPSLockRef.current = true;
+            startGPSTracking();
+            detectOrientationSupport();
+          }, GPS_INIT_DELAY);
+        } else {
+          sessionStorage.removeItem(MODE_KEY);
+        }
       }
     }
   }, []);
@@ -74,6 +117,15 @@ export default function ExploreDiscovery() {
       sessionStorage.setItem(SESSION_KEY, JSON.stringify(sessionData));
     }
   }, [messages, filters]);
+
+  // Save mode to session storage whenever it changes
+  useEffect(() => {
+    const modeData = {
+      mode,
+      timestamp: Date.now()
+    };
+    sessionStorage.setItem(MODE_KEY, JSON.stringify(modeData));
+  }, [mode]);
 
   // Parse slug on mount if present
   useEffect(() => {
@@ -486,20 +538,287 @@ export default function ExploreDiscovery() {
     }, 300); // Small delay to show thinking animation
   };
 
-  // Handle mode switch
-  const handleModeSwitch = (newMode) => {
-    setMode(newMode);
-    if (newMode === "nearby") {
-      // Phase 1: Mock nearby results
+  // Calculate distance between two coordinates (Haversine formula)
+  const calculateDistance = (lat1, lon1, lat2, lon2) => {
+    const R = 6371e3; // Earth's radius in meters
+    const φ1 = (lat1 * Math.PI) / 180;
+    const φ2 = (lat2 * Math.PI) / 180;
+    const Δφ = ((lat2 - lat1) * Math.PI) / 180;
+    const Δλ = ((lon2 - lon1) * Math.PI) / 180;
+
+    const a =
+      Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+      Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+    return R * c; // Distance in meters
+  };
+
+  // Calculate bearing from user to place
+  const calculateBearing = (lat1, lon1, lat2, lon2) => {
+    const φ1 = (lat1 * Math.PI) / 180;
+    const φ2 = (lat2 * Math.PI) / 180;
+    const Δλ = ((lon2 - lon1) * Math.PI) / 180;
+
+    const y = Math.sin(Δλ) * Math.cos(φ2);
+    const x = Math.cos(φ1) * Math.sin(φ2) - Math.sin(φ1) * Math.cos(φ2) * Math.cos(Δλ);
+    const θ = Math.atan2(y, x);
+
+    return ((θ * 180) / Math.PI + 360) % 360; // Bearing in degrees
+  };
+
+  // Check if place is within directional cone
+  const isInDirectionalCone = (placeBearing, deviceHeading, coneAngle = 45) => {
+    let angle = Math.abs(placeBearing - deviceHeading);
+    if (angle > 180) angle = 360 - angle;
+    return angle <= coneAngle;
+  };
+
+  // Filter nearby places based on mode
+  const filterNearbyPlaces = () => {
+    if (!nearbyState.userLocation) return [];
+
+    const { userLocation, radius, deviceHeading, nearbyModeType, selectedCategory } = nearbyState;
+
+    return mockPlaces.filter((place) => {
+      // Category filter
+      if (selectedCategory && place.category !== selectedCategory) {
+        return false;
+      }
+
+      // Get coordinates for Chennai places (using location names as proxy)
+      // In a real implementation, places would have lat/lng coordinates
+      const placeCoords = getLocationCoordinates(place.location);
+      if (!placeCoords) return false;
+
+      const distance = calculateDistance(
+        userLocation.lat,
+        userLocation.lng,
+        placeCoords.lat,
+        placeCoords.lng
+      );
+
+      // Radius filter
+      if (distance > radius) return false;
+
+      // Directional filter for mobile
+      if (nearbyModeType === "directional" && deviceHeading !== null) {
+        const bearing = calculateBearing(
+          userLocation.lat,
+          userLocation.lng,
+          placeCoords.lat,
+          placeCoords.lng
+        );
+        return isInDirectionalCone(bearing, deviceHeading, 45);
+      }
+
+      return true;
+    });
+  };
+
+  // Start GPS tracking
+  const startGPSTracking = () => {
+    if (!navigator.geolocation) {
       setMessages((prev) => [
         ...prev,
         {
           role: "ai",
-          text: "Showing places near you (mock data)",
+          text: "❌ Geolocation is not supported by your browser. Please use a modern browser like Chrome, Firefox, or Safari.",
         },
       ]);
+      return;
+    }
+
+    setIsThinking(true);
+    setMessages((prev) => [
+      ...prev,
+      {
+        role: "ai",
+        text: "Finding places near you...",
+      },
+    ]);
+
+    // Request GPS permission and start watching position
+    const watchId = navigator.geolocation.watchPosition(
+      (position) => {
+        const userLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+
+        setNearbyState((prev) => ({
+          ...prev,
+          userLocation,
+          gpsWatchId: watchId,
+        }));
+
+        setIsThinking(false);
+
+        // Only show message on first GPS lock
+        if (isFirstGPSLockRef.current) {
+          isFirstGPSLockRef.current = false;
+          setMessages((prev) => [
+            ...prev.slice(0, -1), // Remove "Finding places" message
+            {
+              role: "ai",
+              text: "📍 Location found! Select a category to discover nearby places.",
+            },
+          ]);
+        }
+      },
+      (error) => {
+        console.error("GPS Error:", error);
+        setIsThinking(false);
+        setMessages((prev) => [
+          ...prev.slice(0, -1),
+          {
+            role: "ai",
+            text: "Unable to get your location. Please enable location services and try again.",
+          },
+        ]);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0,
+      }
+    );
+  };
+
+  // Stop GPS tracking
+  const stopGPSTracking = () => {
+    if (nearbyState.gpsWatchId) {
+      navigator.geolocation.clearWatch(nearbyState.gpsWatchId);
+    }
+    if (orientationListenerRef.current) {
+      window.removeEventListener("deviceorientationabsolute", orientationListenerRef.current, true);
+      window.removeEventListener("deviceorientation", orientationListenerRef.current, true);
+      orientationListenerRef.current = null;
     }
   };
+
+  // Detect device orientation support
+  const detectOrientationSupport = () => {
+    if (typeof DeviceOrientationEvent !== "undefined" && typeof DeviceOrientationEvent.requestPermission === "function") {
+      // iOS 13+ requires permission
+      DeviceOrientationEvent.requestPermission()
+        .then((permissionState) => {
+          if (permissionState === "granted") {
+            setupOrientationListener();
+            setNearbyState((prev) => ({ ...prev, nearbyModeType: "directional" }));
+          } else {
+            setNearbyState((prev) => ({ ...prev, nearbyModeType: "radius" }));
+          }
+        })
+        .catch(() => {
+          setNearbyState((prev) => ({ ...prev, nearbyModeType: "radius" }));
+        });
+    } else if (window.DeviceOrientationEvent) {
+      // Other devices with orientation support
+      setupOrientationListener();
+      setNearbyState((prev) => ({ ...prev, nearbyModeType: "directional" }));
+    } else {
+      // No orientation support - use radius mode
+      setNearbyState((prev) => ({ ...prev, nearbyModeType: "radius" }));
+    }
+  };
+
+  // Setup device orientation listener
+  const setupOrientationListener = () => {
+    orientationListenerRef.current = (event) => {
+      let heading = null;
+      
+      if (event.webkitCompassHeading !== undefined) {
+        // iOS - webkitCompassHeading gives true compass heading (0-360)
+        heading = event.webkitCompassHeading;
+        console.log('iOS compass heading:', heading);
+      } else if (event.alpha !== null) {
+        // Android and other devices
+        // event.alpha: rotation around z-axis (0-360)
+        // For compass heading, we need to account for device orientation
+        // If absolute is true, alpha is relative to true north
+        // If absolute is false or undefined, alpha is relative to device's initial position
+        
+        if (event.absolute) {
+          // Absolute orientation - alpha is relative to true north
+          // alpha = 0 means device is pointing north
+          // We want heading where 0 = north, 90 = east, 180 = south, 270 = west
+          heading = event.alpha;
+        } else {
+          // Relative orientation - need to use compass if available
+          // Fall back to alpha but it won't be accurate for compass direction
+          heading = event.alpha;
+        }
+        
+        // Normalize heading to 0-360 range
+        heading = (heading + 360) % 360;
+        console.log('Android/Other heading:', heading, 'absolute:', event.absolute);
+      }
+
+      if (heading !== null) {
+        setNearbyState((prev) => ({
+          ...prev,
+          deviceHeading: heading,
+        }));
+      }
+    };
+
+    // Request absolute orientation if available
+    if (typeof DeviceOrientationEvent !== "undefined") {
+      window.addEventListener("deviceorientationabsolute", orientationListenerRef.current, true);
+    }
+    window.addEventListener("deviceorientation", orientationListenerRef.current, true);
+  };
+
+  // Handle mode switch
+  const handleModeSwitch = (newMode) => {
+    if (newMode === "nearby") {
+      setMode(newMode);
+      isFirstGPSLockRef.current = true; // Reset for new session
+      startGPSTracking();
+      detectOrientationSupport();
+    } else {
+      // Switching back to AI mode
+      setMode(newMode);
+      stopGPSTracking();
+      isFirstGPSLockRef.current = true; // Reset for next session
+      setNearbyState({
+        userLocation: null,
+        radius: 2000,
+        deviceHeading: null,
+        nearbyModeType: null,
+        gpsWatchId: null,
+        selectedCategory: null,
+      });
+    }
+  };
+
+  // Handle category chip click in Nearby mode
+  const handleCategoryChipClick = (category) => {
+    setNearbyState((prev) => ({
+      ...prev,
+      selectedCategory: category,
+    }));
+  };
+
+  // Get unique categories from mockPlaces
+  const getUniqueCategories = () => {
+    const categories = [...new Set(mockPlaces.map((place) => place.category))];
+    return categories.sort();
+  };
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (nearbyState.gpsWatchId) {
+        navigator.geolocation.clearWatch(nearbyState.gpsWatchId);
+      }
+      if (orientationListenerRef.current) {
+        window.removeEventListener("deviceorientationabsolute", orientationListenerRef.current, true);
+        window.removeEventListener("deviceorientation", orientationListenerRef.current, true);
+      }
+    };
+  }, [nearbyState.gpsWatchId]);
 
   // Handle place card click
   const handlePlaceClick = (place) => {
@@ -514,18 +833,31 @@ export default function ExploreDiscovery() {
 
   return (
     <div className="explore-discovery-page">
-      {/* Hero Banner */}
-      <div className="hero-banner">
-        <img
-          src="/images/Visit-Images/visitBanner.jpg"
-          alt="Explore Chennai"
-          className="hero-banner-image"
-        />
-        <div className="hero-banner-overlay">
-          <h1>Explore Chennai</h1>
-          <p>Discover the best places with AI-assisted discovery</p>
+      {/* Hero Banner or Map */}
+      {mode === "ai" ? (
+        <div className="hero-banner">
+          <img
+            src="/images/Visit-Images/visitBanner.jpg"
+            alt="Explore Chennai"
+            className="hero-banner-image"
+          />
+          <div className="hero-banner-overlay">
+            <h1>Explore Chennai</h1>
+            <p>Discover the best places with AI-assisted discovery</p>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="nearby-map-container">
+          <NearbyMap
+            userLocation={nearbyState.userLocation}
+            places={filterNearbyPlaces()}
+            onPlaceClick={handlePlaceClick}
+            deviceHeading={nearbyState.deviceHeading}
+            radius={nearbyState.radius}
+            nearbyModeType={nearbyState.nearbyModeType}
+          />
+        </div>
+      )}
 
       <div className="explore-container">
         {/* Main Content Area - Full Width */}
@@ -538,6 +870,7 @@ export default function ExploreDiscovery() {
             onPlaceClick={handlePlaceClick}
             isThinking={isThinking}
             onSuggestionClick={handleSendMessage}
+            nearbyPlaces={mode === "nearby" ? filterNearbyPlaces() : []}
           />
         </main>
       </div>
@@ -547,6 +880,9 @@ export default function ExploreDiscovery() {
         mode={mode}
         onSendMessage={handleSendMessage}
         onModeSwitch={handleModeSwitch}
+        categories={getUniqueCategories()}
+        selectedCategory={nearbyState.selectedCategory}
+        onCategoryClick={handleCategoryChipClick}
       />
 
       {/* Detail Offcanvas */}

@@ -31,24 +31,34 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    type: "image",
-    link: "https://youtube.com/live/D8hBf-lK57c?feature=share",
-    image: "/images/conclave-banner.jpeg",
-    image1: "/images/conclave-banner-mobile-banner.jpeg",
-    title: "conclave evant",
-    description: "conclave.",
-  },
-          // <a href="https://youtube.com/live/D8hBf-lK57c?feature=share">
+  // {
+  //   type: "image",
+  //   link: "https://youtube.com/live/D8hBf-lK57c?feature=share",
+  //   image: "/images/conclave-banner.jpeg",
+  //   image1: "/images/conclave-banner-mobile-banner.jpeg",
+  //   title: "conclave evant",
+  //   description: "conclave.",
+  // },
 
-  {
+
+   {
     type: "image",
-    link: "/events-in-chennai/credai-chennai-fairpro-2026",
-    image: "/images/fairpro-homepagenbanner.jpeg",
-    image1: "/images/mobile-banner-fairpro.jpeg",
-    title: "Credai evant",
-    description: "Credai.",
+    link: "arattai-with-aruna-sairam/carnatic-vocalist",
+    image: "/images/aruna-innerpage.jpg",
+    image1: "/images/mobile-aruna-main-insta.jpg",
+    title: "arattai-with-aruna-sairam",
+    description: "arattai-with-aruna-sairam",
   },
+
+
+  // {
+  //   type: "image",
+  //   link: "/events-in-chennai/credai-chennai-fairpro-2026",
+  //   image: "/images/fairpro-homepagenbanner.jpeg",
+  //   image1: "/images/mobile-banner-fairpro.jpeg",
+  //   title: "Credai evant",
+  //   description: "Credai.",
+  // },
 
   {
     type: "image",

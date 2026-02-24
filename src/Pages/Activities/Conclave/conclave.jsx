@@ -12,124 +12,70 @@ import { useEffect, useRef } from "react";
 import "./style.css";
 import { Helmet } from "react-helmet-async";
 
-// const agendaData = [
-//   {
-//     "id": "01",
-//     "startTime": "9:30 AM",
-//     "endTime": "10:00 AM",
-//     "title": "Keynote Address",
-//     "speakers": []
-//   },
-//   {
-//     "id": "02",
-//     "startTime": "10:05 AM",
-//     "endTime": "10:55 AM",
-//     "title": "Becoming India’s Talent Capital",
-//     "speakers": [
-//       "Dr. Saundarya Rajesh – Managing Director, Avtar Group",
-//       "Mr. K. Pandiarajan – Chairperson & Executive Director, CIEL HR Group",
-//       "Anil Srinivasan – Founder, Kruu and Rhapsody, Musician"
-//     ]
-//   },
-//   {
-//     "id": "03",
-//     "startTime": "11:00 AM",
-//     "endTime": "11:50 AM",
-//     "title": "Reimagining the City as a Launchpad for Future Businesses",
-//     "speakers": [
-//       "Mr. Ramkumar Ramamoorthy – Co-Founder & Partner, Catalincs",
-//       "Mr. Sandeep Nanduri, I.A.S. – Managing Director, TIDCO",
-//       "Mr. Ramakrishnan K – Senior Managing Director, Spark Capital",
-//       "Mr. Gaurav Kumar – Founder & CEO, Yubi Group"
-//     ]
-//   },
-//   {
-//     "id": "04",
-//     "startTime": "11:55 AM",
-//     "endTime": "12:45 PM",
-//     "title": "Becoming India’s Deep-Tech Hub for the World",
-//     "speakers": [
-//       "Mr. Vishesh Rajaram – Co-Founder & Managing Partner, Speciale Invest",
-//       "Ms. Ashwini Asokan – Founder & CEO, Mad Street Den",
-//       "Mr. Srinath Ravichandran – Co-Founder & CEO, Agnikul Cosmos"
-//     ]
-//   },
-//   {
-//     "id": "05",
-//     "startTime": "12:45 PM",
-//     "endTime": "1:20 PM",
-//     "title": "Fireside Chat",
-//     "speakers": [
-//       "Mr. Sivarajah Ramanathan – Mission Director & CEO, Startup TN"
-//     ]
-//   },
-//   {
-//     "id": "06",
-//     "startTime": "1:20 PM",
-//     "endTime": "2:00 PM",
-//     "title": "BREAK",
-//     "speakers": []
-//   },
-//   {
-//     "id": "07",
-//     "startTime": "2:00 PM",
-//     "endTime": "2:50 PM",
-//     "title": "Crafting a World-Class Visitor Experience",
-//     "speakers": [
-//       "Mr. Vikram Cotah – CEO, GRT Hotels",
-//       "Mr. Hari Ganapathy – Co-Founder, Pickyourtrail",
-//       "Mr. Arun Vasu – Managing Director, TT Group",
-//       "Ms. Gayathri Thyagarajan – CEO & Founder, Kynhood Technologies"
-//     ]
-//   },
-//   {
-//     "id": "08",
-//     "startTime": "2:55 PM",
-//     "endTime": "3:45 PM",
-//     "title": "A City That Works for Everyone",
-//     "speakers": [
-//       "Mr. Raj Cherubal – Executive Director, Chennai Smart City Limited",
-//       "Mr. Mohamed Ali – President, CREDAI Chennai",
-//       "Mr. Sivakrishnamurthy, I.A.S. – Deputy Commissioner (Works)",
-//       "Ms. Aswathy Dilip – Managing Director, ITDP India"
-//     ]
-//   },
-//   {
-//     "id": "09",
-//     "startTime": "3:50 PM",
-//     "endTime": "4:40 PM",
-//     "title": "Who Shapes Chennai’s Stories and Do They Travel Far Enough  to Reflect Its True Potential?",
-//     "speakers": [
-//       "Mr. Arun Ram – Resident Editor, The Times of India",
-//       "Mr. Prem Shanker – Senior Executive Editor, Puthiya Thalaimurai TV",
-//       "Mr. T.M. Veeraraghav – Executive Editor, NDTV"
-//     ]
-//   },
-//   {
-//     "id": "10",
-//     "startTime": "4:40 PM",
-//     "endTime": "4:55 PM",
-//     "title": "BREAK",
-//     "speakers": []
-//   },
-//   {
-//     "id": "11",
-//     "startTime": "5:00 PM",
-//     "endTime": "5:30 PM",
-//     "title": "Fireside Chat – TBA",
-//     "speakers": []
-//   },
-//   {
-//     "id": "12",
-//     "startTime": "5:35 PM",
-//     "endTime": "6:05 PM",
-//     "title": "Fireside Chat – Enabling the Industries That Will Build Tomorrow's Chennai",
-//     "speakers": [
-//       "Mr. T.R.B. Rajaa – Minister for Industries, Investment Promotion and Commerce, Government of Tamil Nadu"
-//     ]
-//   }
+import { useAnimationControls } from "framer-motion";
 
-// ];
+const mockUpcomingEvents = [
+  { id: 1, image: "images/conclaveGallery/conclave-01.jpg" },
+  { id: 2, image: "images/conclaveGallery/canclave-02.jpg" },
+  { id: 3, image: "images/conclaveGallery/canclave-03.jpg" },
+  { id: 4, image: "images/conclaveGallery/canclave-04.jpg" },
+  { id: 5, image: "images/conclaveGallery/canclave-05.jpg" },
+  { id: 6, image: "images/conclaveGallery/canclave-06.jpg" },
+  { id: 7, image: "images/conclaveGallery/canclave-07.jpg" },
+  { id: 8, image: "images/conclaveGallery/canclave-08.jpg" },
+  { id: 9, image: "images/conclaveGallery/canclave-09.jpg" },
+  { id: 10, image: "images/conclaveGallery/canclave-10.jpg" },
+  { id: 11, image: "images/conclaveGallery/canclave-11.jpg" },
+  { id: 12, image: "images/conclaveGallery/canclave-12.jpg" },
+  { id: 13, image: "images/conclaveGallery/canclave-13.jpg" },
+  { id: 14, image: "images/conclaveGallery/canclave-14.jpg" },
+  { id: 15, image: "images/conclaveGallery/canclave-15.jpg" },
+  { id: 16, image: "images/conclaveGallery/canclave-16.jpg" },
+  { id: 17, image: "images/conclaveGallery/canclave-17.jpg" },
+  { id: 18, image: "images/conclaveGallery/canclave-18.jpg" },
+  { id: 19, image: "images/conclaveGallery/canclave-19.jpg" },
+  { id: 20, image: "images/conclaveGallery/canclave-20.jpg" },
+  { id: 21, image: "images/conclaveGallery/canclave-21.jpg" },
+  { id: 22, image: "images/conclaveGallery/canclave-22.jpg" },
+  { id: 23, image: "images/conclaveGallery/canclave-23.jpg" },
+  { id: 24, image: "images/conclaveGallery/canclave-24.jpg" },
+  { id: 25, image: "images/conclaveGallery/canclave-25.jpg" },
+  { id: 26, image: "/images/conclaveGallery/conclave-26.jpg" },
+  { id: 27, image: "images/conclaveGallery/conclave-27.jpg" },
+  { id: 28, image: "images/conclaveGallery/conclave-28.jpg" },
+  { id: 29, image: "images/conclaveGallery/conclave-29.jpg" },
+  { id: 30, image: "images/conclaveGallery/conclave-30.jpg" },
+  { id: 31, image: "images/conclaveGallery/conclave-31.jpg" },
+  { id: 32, image: "images/conclaveGallery/conclave-32.jpg" },
+  { id: 33, image: "images/conclaveGallery/conclave-33.jpg" },
+  { id: 34, image: "images/conclaveGallery/conclave-34.jpg" },
+  { id: 35, image: "images/conclaveGallery/conclave-35.jpg" },
+  { id: 36, image: "images/conclaveGallery/conclave-36.jpg" },
+  { id: 37, image: "images/conclaveGallery/conclave-37.jpg" },
+  { id: 38, image: "images/conclaveGallery/conclave-38.jpg" },
+  { id: 39, image: "images/conclaveGallery/conclave-39.jpg" },
+  { id: 40, image: "images/conclaveGallery/conclave-40.jpg" },
+  { id: 41, image: "images/conclaveGallery/conclave-41.jpg" },
+  { id: 42, image: "images/conclaveGallery/conclave-42.jpg" },
+  { id: 43, image: "images/conclaveGallery/conclave-43.jpg" },
+  { id: 44, image: "images/conclaveGallery/conclave-44.jpg" },
+  { id: 45, image: "images/conclaveGallery/conclave-45.jpg" },
+  { id: 46, image: "images/conclaveGallery/conclave-46.jpg" },
+  { id: 47, image: "images/conclaveGallery/conclave-47.jpg" },
+  { id: 48, image: "images/conclaveGallery/conclave-48.jpg" },
+  { id: 49, image: "images/conclaveGallery/conclave-49.jpg" },
+  { id: 50, image: "images/conclaveGallery/conclave-50.jpg" },
+  { id: 51, image: "images/conclaveGallery/conclave-51.jpg" },
+  { id: 52, image: "images/conclaveGallery/conclave-52.jpg" },
+  { id: 53, image: "images/conclaveGallery/conclave-53.jpg" },
+  { id: 54, image: "images/conclaveGallery/conclave-54.jpg" },
+  { id: 55, image: "images/conclaveGallery/conclave-55.jpg" },
+  { id: 56, image: "images/conclaveGallery/conclave-56.jpg" },
+  { id: 57, image: "images/conclaveGallery/conclave-57.jpg" },
+  { id: 58, image: "images/conclaveGallery/conclave-58.jpg" },
+  { id: 59, image: "images/conclaveGallery/conclave-59.jpg" },
+  { id: 60, image: "images/conclaveGallery/conclave-60.jpg" },
+];
 
 const agendaData = [
   {
@@ -140,8 +86,8 @@ const agendaData = [
     speakers: [
       "Dr. J. Radhakrishnan, I.A.S. – Additional Chief Secretary, Govt of Tamil Nadu",
       "Chairman & Managing Director, TANGEDCO",
-      "Chairman of TNPGCL"
-    ]
+      "Chairman of TNPGCL",
+    ],
   },
   {
     id: "02",
@@ -153,8 +99,8 @@ const agendaData = [
       "Mr. K. Pandiarajan – Chairperson & Executive Director, CIEL HR Group",
       "Anil Srinivasan – Founder, Kruu & Rhapsody, Musician",
       "Chandru Chakrapani – Founder, Peogic Solutions",
-      "Moderator: John Xavier – Technology Editor, The Hindu"
-    ]
+      "Moderator: John Xavier – Technology Editor, The Hindu",
+    ],
   },
   {
     id: "03",
@@ -166,8 +112,8 @@ const agendaData = [
       "Mr. Sandeep Nanduri, I.A.S. – Managing Director, TIDCO",
       "Mr. Ramakrishnan K – Senior Managing Director, Spark Capital",
       "Mr. Gaurav Kumar – Founder & CEO, Yubi Group",
-      "Moderator: Jayanthi Raghunathan – Consulting Editor, Industrial Economist"
-    ]
+      "Moderator: Jayanthi Raghunathan – Consulting Editor, Industrial Economist",
+    ],
   },
   {
     id: "04",
@@ -179,25 +125,26 @@ const agendaData = [
       "Ms. Ashwini Asokan – Founder & CEO, Mad Street Den",
       "Mr. Srinath Ravichandran – Co-Founder & CEO, Agnikul Cosmos",
       "A J Venkat – Senior Vice President, AI Partnerships | Nference",
-      "Moderator: Sriram Srinivasan – Former Group Digital Editor, The Hindu Group"
-    ]
+      "Moderator: Sriram Srinivasan – Former Group Digital Editor, The Hindu Group",
+    ],
   },
   {
     id: "05",
     startTime: "12:45 PM",
     endTime: "1:20 PM",
-    title: "Fireside Chat – The Journey to Making Chennai a Global Startup City",
+    title:
+      "Fireside Chat – The Journey to Making Chennai a Global Startup City",
     speakers: [
       "Mr. Sivarajah Ramanathan – Mission Director & CEO, Startup TN In conversation with",
-      " Sangeetha Kandavel – Senior Assistant Editor (Business), The Hindu"
-    ]
+      " Sangeetha Kandavel – Senior Assistant Editor (Business), The Hindu",
+    ],
   },
   {
     id: "06",
     startTime: "1:20 PM",
     endTime: "2:00 PM",
     title: "LUNCH BREAK",
-    speakers: []
+    speakers: [],
   },
   {
     id: "07",
@@ -209,8 +156,8 @@ const agendaData = [
       "Mr. Hari Ganapathy – Co-Founder, Pickyourtrail",
       "Mr. Arun Vasu – Chairman & Managing Director, TT Group",
       "Ms. Gayathri Thyagarajan – CEO & Founder, Kynhood Technologies",
-      "Moderator: Yogesh Kabirdas – Assistant Editor, The Times of India"
-    ]
+      "Moderator: Yogesh Kabirdas – Assistant Editor, The Times of India",
+    ],
   },
   {
     id: "08",
@@ -223,49 +170,53 @@ const agendaData = [
       "Mr. Sivakrishnamurthy, I.A.S. – Deputy Commissioner (Works)",
       "Ms. Aswathy Dilip – Managing Director, ITDP India",
       "Mr. Arun Krishnamurthy – Founder, Environmentalist Foundation of India",
-      "Moderator: Prince Frederick – Associate Editor, The Hindu"
-    ]
+      "Moderator: Prince Frederick – Associate Editor, The Hindu",
+    ],
   },
   {
     id: "09",
     startTime: "3:50 PM",
     endTime: "4:40 PM",
-    title: "Who Shapes Chennai’s Stories and Do They Travel Far Enough to Reflect Its True Potential?",
+    title:
+      "Who Shapes Chennai’s Stories and Do They Travel Far Enough to Reflect Its True Potential?",
     speakers: [
       "Mr. Arun Ram – Resident Editor, The Times of India",
       "Mr. Prem Shanker – Senior Executive Editor, Puthiya Thalaimurai TV",
       "Mr. T.M. Veeraraghav – Executive Editor, NDTV",
-      "Moderator: Akhila Krishnamurthy – Founder, Aalaap & Independent Journalist"
-    ]
+      "Moderator: Akhila Krishnamurthy – Founder, Aalaap & Independent Journalist",
+    ],
   },
   {
     id: "10",
     startTime: "4:40 PM",
     endTime: "4:55 PM",
     title: "BREAK",
-    speakers: []
+    speakers: [],
   },
   {
     id: "11",
     startTime: "5:00 PM",
     endTime: "5:30 PM",
-    title: "Fireside Chat – Chennai and the Movies: Why the City Loves Its Cinema",
+    title:
+      "Fireside Chat – Chennai and the Movies: Why the City Loves Its Cinema",
     speakers: [
       "Gautham Vasudev Menon – Filmmaker In conversation with",
-      "Srinivasa Ramanujam – Dy. Editor, The Hindu – Metro Plus"
-    ]
+      "Srinivasa Ramanujam – Dy. Editor, The Hindu – Metro Plus",
+    ],
   },
   {
     id: "12",
     startTime: "5:35 PM",
     endTime: "6:05 PM",
-    title: "Fireside Chat – Enabling the Industries That Will Build Tomorrow's Chennai",
+    title:
+      "Fireside Chat – Enabling the Industries That Will Build Tomorrow's Chennai",
     speakers: [
       "Mr. T.R.B. Rajaa – Minister for Industries, Investment Promotion & Commerce, Government of Tamil Nadu In conversation with ",
-      "Sangeetha Kandavel – Senior Assistant Editor (Business), The Hindu"
-    ]
-  }
+      "Sangeetha Kandavel – Senior Assistant Editor (Business), The Hindu",
+    ],
+  },
 ];
+
 export const speakersGallery = [
   {
     id: 1,
@@ -426,7 +377,8 @@ export const speakersGallery = [
     mail: "",
     designation: "Executive Chairman, CIEL HR Group",
     image: "/images/images-speakers/pandiraj.jpg",
-    description:"K Pandiarajan (KPR) is a veteran HR leader and entrepreneur, best known as the founder of Ma Foi Management Consultants and Executive Chairman of CIEL HR, which operates a large nationwide staffing and skilling network. He pioneered HR outsourcing in India and helped create employment for hundreds of thousands through his ventures. Alongside business, he has served as a Tamil Nadu state minister, was a founding member of the GST Council, and remains active in education, healthcare, and livelihood-focused philanthropy through his trusts.",
+    description:
+      "K Pandiarajan (KPR) is a veteran HR leader and entrepreneur, best known as the founder of Ma Foi Management Consultants and Executive Chairman of CIEL HR, which operates a large nationwide staffing and skilling network. He pioneered HR outsourcing in India and helped create employment for hundreds of thousands through his ventures. Alongside business, he has served as a Tamil Nadu state minister, was a founding member of the GST Council, and remains active in education, healthcare, and livelihood-focused philanthropy through his trusts.",
   },
 
   {
@@ -436,7 +388,8 @@ export const speakersGallery = [
     mail: "",
     designation: "Founder & CEO, Yubi Group",
     image: "/images/images-speakers/Gaurav.jpg",
-    description:"Gaurav Kumar is the Founder and CEO of Yubi Group, a fintech platform that powers the end-to-end institutional debt lifecycle and facilitates over ₹1,40,000 crore in debt transactions. With nearly two decades in structured finance and fintech, he previously co-founded Vivriti Capital and held senior roles at Northern Arc Capital. Recognized widely as a leading fintech entrepreneur, he continues to shape India’s debt markets through technology-driven financial inclusion.",
+    description:
+      "Gaurav Kumar is the Founder and CEO of Yubi Group, a fintech platform that powers the end-to-end institutional debt lifecycle and facilitates over ₹1,40,000 crore in debt transactions. With nearly two decades in structured finance and fintech, he previously co-founded Vivriti Capital and held senior roles at Northern Arc Capital. Recognized widely as a leading fintech entrepreneur, he continues to shape India’s debt markets through technology-driven financial inclusion.",
   },
 
   {
@@ -446,7 +399,8 @@ export const speakersGallery = [
     mail: "",
     designation: "Resident Editor, The Times of India",
     image: "/images/images-speakers/arunram.jpg",
-    description:"A post-graduate in Mass Communication and Journalism, Arun Ram worked with six newspapers and a magazine in three states before joining The Times of India as part of the Chennai launch team. He is a British Chevening Scholar in Print Journalism and the winner of Sarojini Naidu prize for best reporting. He is the Co-author of former ISRO scientist Nambinarayanan's autobiography 'Ready to Fire: How India and I Survived the ISRO Spy Case. His interests include investigative journalism, politics, science & technology, human interest stories and teaching",
+    description:
+      "A post-graduate in Mass Communication and Journalism, Arun Ram worked with six newspapers and a magazine in three states before joining The Times of India as part of the Chennai launch team. He is a British Chevening Scholar in Print Journalism and the winner of Sarojini Naidu prize for best reporting. He is the Co-author of former ISRO scientist Nambinarayanan's autobiography 'Ready to Fire: How India and I Survived the ISRO Spy Case. His interests include investigative journalism, politics, science & technology, human interest stories and teaching",
   },
 
   {
@@ -456,7 +410,8 @@ export const speakersGallery = [
     mail: "",
     designation: "Founder, Kruu and Rhapsody | Musician",
     image: "/images/images-speakers/anisrinivas.jpg",
-    description:"Anil Srinivasan is a classical pianist, educator, and social innovator, serving as CEO and Co-founder of Kruu, Founder of Rhapsody, and Professor of Practice at Krea University. A Columbia and USC alumnus, he pioneered arts-based STEM learning through Rhapsody across hundreds of schools and later launched Kruu to bring project-based learning to over 4.5 lakh students. A recipient of the Sangeet Natak Akademi Youth Award and Kalaimamani, he is also known for his philanthropy, disaster-relief work, and contributions to arts education and community development.",
+    description:
+      "Anil Srinivasan is a classical pianist, educator, and social innovator, serving as CEO and Co-founder of Kruu, Founder of Rhapsody, and Professor of Practice at Krea University. A Columbia and USC alumnus, he pioneered arts-based STEM learning through Rhapsody across hundreds of schools and later launched Kruu to bring project-based learning to over 4.5 lakh students. A recipient of the Sangeet Natak Akademi Youth Award and Kalaimamani, he is also known for his philanthropy, disaster-relief work, and contributions to arts education and community development.",
   },
 
   {
@@ -466,7 +421,8 @@ export const speakersGallery = [
     mail: "",
     designation: "Senior Executive Editor, Puthiya Thalaimurai TV",
     image: "/images/images-speakers/prem.jpg",
-    description:"Prem Shanker is a senior journalist with over 25 years across print, television, and digital media, currently serving as Senior Executive Editor at Puthiya Thalaimurai. He has held leadership roles at organisations like Press Trust of India, Network18, TV9, The Economic Times, and India Today, and co-founded the South India–focused digital platform The Lede. A Chevening Fellow from the University of Westminster, he is known for building newsrooms, mentoring journalists, and driving strong, ethical political and economic reporting.",
+    description:
+      "Prem Shanker is a senior journalist with over 25 years across print, television, and digital media, currently serving as Senior Executive Editor at Puthiya Thalaimurai. He has held leadership roles at organisations like Press Trust of India, Network18, TV9, The Economic Times, and India Today, and co-founded the South India–focused digital platform The Lede. A Chevening Fellow from the University of Westminster, he is known for building newsrooms, mentoring journalists, and driving strong, ethical political and economic reporting.",
   },
 
   {
@@ -476,7 +432,8 @@ export const speakersGallery = [
     mail: "",
     designation: "Co-Founder & CEO, Agnikul Cosmos",
     image: "/images/images-speakers/srinath.jpg",
-    description:"Srinath is an aerospace engineer and former Wall Street trader who co-founded Agnikul, where he led the launch of the world’s first single-piece 3D-printed engine–driven rocket from India’s only private launchpad. Trained in electrical engineering at Guindy and financial engineering at Columbia, he later pursued aerospace at the University of Illinois before starting Agnikul out of his passion for making access to space simpler. Outside of aerospace, he also dabbles in filmmaking through hands-on work with film crews.",
+    description:
+      "Srinath is an aerospace engineer and former Wall Street trader who co-founded Agnikul, where he led the launch of the world’s first single-piece 3D-printed engine–driven rocket from India’s only private launchpad. Trained in electrical engineering at Guindy and financial engineering at Columbia, he later pursued aerospace at the University of Illinois before starting Agnikul out of his passion for making access to space simpler. Outside of aerospace, he also dabbles in filmmaking through hands-on work with film crews.",
   },
 ];
 
@@ -485,13 +442,17 @@ export const partners = [
     id: 1,
     image: "/images/partnersLogo/RADIOCITY-LOGO-PNG.png",
   },
-   {
+  {
     id: 2,
     image: "/images/partnersLogo/IE-partner.jpeg",
   },
-     {
+  {
     id: 3,
     image: "/images/partnersLogo/DRA-logo.png",
+  },
+  {
+    id: 3,
+    image: "/images/partnersLogo/credai-logo.png",
   },
 ];
 
@@ -625,9 +586,28 @@ export default function Conclave() {
       { breakpoint: 480, settings: { slidesToShow: 1 } },
     ],
   };
+
   const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
   const bgTextRef = useRef(null);
+  const carouselRef = useRef();
+  const [x, setX] = useState(0);
+  const slide = (direction) => {
+    const cardWidth = 300;
+    const gap = 40;
+    const visibleWidth = window.innerWidth;
+    const totalCardsWidth = mockUpcomingEvents.length * (cardWidth + gap);
+    const maxX = -(totalCardsWidth - visibleWidth + gap);
+
+    setX((prevX) => {
+      if (direction === "left") {
+        return Math.min(prevX + (cardWidth + gap), 0);
+      } else if (direction === "right") {
+        return Math.max(prevX - (cardWidth + gap), maxX);
+      }
+      return prevX;
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -659,101 +639,6 @@ export default function Conclave() {
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
-  /* ================= HELPER  ================= */
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm((p) => ({ ...p, [name]: value }));
-  };
-
-  /* ================= SEND OTP ================= */
-
-  const sendOtp = async () => {
-
-    if (!/^[6-9]\d{9}$/.test(form.phone)) {
-      toast.error("Enter valid 10 digit mobile number");
-      return;
-    }
-    
-    if (!form.phone) {
-      toast.error("Enter phone number");
-      return;
-    }
-
-    try {
-      setLoading(true);
-
-      await axios.post(`${API_BASE_URL_API}/conclaves/conclave/send-otp`, {
-        phone: `${form.countryCode}${form.phone}`,
-      });
-
-      setOtpSent(true);
-      toast.success("OTP sent successfully");
-    } catch (err) {
-      toast.error("Failed to send OTP");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  /* ================= SUBMIT ================= */
-
-  const submitConclaveForm = async (e) => {
-    e.preventDefault();
-
-    if (!otpSent || !form.otp) {
-      toast.error("Please verify mobile number");
-      return;
-    }
-
-    if (!form.companyName.trim()) {
-      toast.error("Company Name is required");
-      return;
-    }
-
-    if (!form.designation.trim()) {
-      toast.error("Designation is required");
-      return;
-    }
-
-    const payload = {
-      name: sanitize(form.name),
-      email: form.email,
-      companyName: sanitize(form.companyName),
-      designation: sanitize(form.designation),
-      linkedinUrl: form.linkedinUrl,
-      phone: `${form.countryCode}${form.phone}`,
-      otp: form.otp,
-    };
-
-    try {
-      setLoading(true);
-
-      await axios.post(
-        `${API_BASE_URL_API}/conclaves/conclave/verify-otp`,
-        payload,
-      );
-
-      toast.success("Registration successful!");
-
-      setForm({
-        name: "",
-        email: "",
-        companyName: "",
-        designation: "",
-        linkedinUrl: "",
-        phone: "",
-        countryCode: "+91",
-        otp: "",
-      });
-
-      navigate("/thank-you", { state: { from: "conclave" } });
-    } catch (err) {
-      toast.error(err?.response?.data?.message || "OTP verification failed");
-    } finally {
-      setLoading(false);
-    }
-  };
 
   /* ================= UI ================= */
 
@@ -824,11 +709,71 @@ export default function Conclave() {
     };
   }, []);
 
+  const [showAll, setShowAll] = useState(false);
+  const visibleData = showAll ? agendaData : agendaData.slice(0, 4);
+  const controls = useAnimationControls();
 
-    const [showAll, setShowAll] = useState(false);
-    const visibleData = showAll ? agendaData : agendaData.slice(0, 4);
+  const animationRef = useRef(null);
+  const isPausedRef = useRef(false);
 
 
+  
+useEffect(() => {
+  const container = carouselRef.current;
+  if (!container) return;
+
+  let animationFrame;
+  let lastTime = 0;
+
+  const speed = 0.1; 
+
+
+  const animate = (time) => {
+    if (!lastTime) lastTime = time;
+    const delta = (time - lastTime) / 1000;
+    lastTime = time;
+
+    if (!isPausedRef.current) {
+      container.scrollLeft += speed * delta;
+
+      if (container.scrollLeft >= container.scrollWidth / 2) {
+        container.scrollLeft = 0;
+      }
+    }
+
+    animationFrame = requestAnimationFrame(animate);
+  };
+
+  animationFrame = requestAnimationFrame(animate);
+
+  return () => cancelAnimationFrame(animationFrame);
+}, []);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
+
+  const openModal = (image) => {
+    setModalImage(image);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalImage(null);
+  };
+
+
+
+useEffect(() => {
+  controls.start({
+    x: ["0%", "-50%"],
+    transition: {
+      ease: "linear",
+      duration: 140,
+      repeat: Infinity,
+    },
+  });
+}, []);
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
@@ -866,26 +811,6 @@ export default function Conclave() {
       </Helmet>
 
       {/* ============== Banner ============ */}
-
-      {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
-        <div className="relative z-0">
-          <img
-            className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/events/conclave-banner.jpeg"
-            alt="Super Chennai Quiz"
-          />
-
-          <img
-            className="block sm:hidden w-full"
-            src="/images/events/conclave-banner-mobile-banner-1.jpeg"
-            alt="Super Chennai Quiz Mobile"
-          />
-        </div>
-
-        <div className="accodoamationBannerContainer relative z-20">
-          <div className="accodoamationBannerText"></div>
-        </div>
-      </section> */}
 
       <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
         <div className="relative z-0">
@@ -955,31 +880,7 @@ export default function Conclave() {
                   09:30 AM onwards
                 </span>
               </div>
-
-              {/* <div className="text-center">
-                <div className="flex items-center justify-center gap-2 text-sm uppercase text-gray-500">
-                  <img
-                    src="/images/icons/location-icon.svg"
-                    alt="Venue"
-                    className="w-10 h-10"
-                  />
-                  <span>Venue</span>
-                </div>
-                <span className="font-semibold block mt-1">
-                  ITC Welcome Hotel, Chennai
-                </span>
-              </div> */}
             </div>
-
-            {/* CTA */}
-            {/* <button
-              onClick={() => setShowRegisterPopup(true)}
-              className="inline-flex items-center justify-center px-12 py-3 rounded-full
-              bg-rose-500 text-white font-semibold text-lg
-              hover:bg-rose-600 transition-all duration-300 shadow-lg"
-            >
-              Register Now
-            </button> */}
           </div>
         </div>
       </section>
@@ -1027,136 +928,6 @@ export default function Conclave() {
       </section>
 
       {/* ================== AGENDA SECTION ================== */}
-
-      {/* <section className=" Becameavolunteerbg-conclves relative">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="BecameavolunteerContent text-center">
-            <h2>OUR AGENDA</h2>
-          </div>
-
-          <div className="space-y-0 divide-y divide-gray-400/40 text-white relative">
-            {visibleData.map((item) => (
-              <div
-                key={item.id}
-                className="grid grid-cols-12 py-8 items-center"
-              >
-                <div className="autoinfonew">
-                  <h3>{item.id}</h3>
-                </div>
-
-                <div className="col-span-2 text-sm font-bold">
-                  <p>{item.startTime} –</p>
-                  <p>{item.endTime}</p>
-                </div>
-
-                <p className="col-span-5 font-bold text-white">{item.title}</p>
-
-                <div className="col-span-4 text-sm font-bold text-white">
-                  {item.speakers.map((speaker, index) => (
-                    <p key={index} className="text-justify max-w-2xl mx-auto">
-                      {speaker}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            ))}
-
-            {!showAll && (
-              <div className="flex justify-center mt-10">
-                <button
-                  onClick={() => setShowAll(true)}
-                  className="conclave-button"
-                >
-                  Read
-                  More
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section className="Becameavolunteerbg-conclves relative">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="BecameavolunteerContent text-center">
-            <h2>OUR AGENDA</h2>
-          </div>
-
-          <div className="space-y-0 divide-y divide-gray-400/40 text-white relative">
-            {visibleData.map((item) => (
-              <div
-                key={item.id}
-                className="
-            // grid 
-            // grid-cols-1 
-            // md:grid-cols-12 
-            // py-8 
-            // items-center 
-            // text-center 
-            // md:text-left 
-            // font-bold
-          
-
-
-
-               flex 
-            flex-col 
-            md:grid 
-            md:grid-cols-12 
-            py-8 
-            items-center 
-            text-center 
-            md:text-left 
-            font-bold
-            p-6
-            md:p-0
-            bg-gray-800/20
-            md:bg-transparent
-            rounded-lg
-            md:rounded-none
-            shadow-lg
-            md:shadow-none
-            mx-4
-            md:mx-0
-            space-y-4
-            md:space-y-0
-          "
-              >
-                <div className="autoinfonew flex justify-center md:justify-start mb-4 md:mb-0">
-                  <h3>{item.id}</h3>
-                </div>
-
-                <div className="md:col-span-2 text-sm mb-4 md:mb-0">
-                  <p>{item.startTime} –</p>
-                  <p>{item.endTime}</p>
-                </div>
-
-                <p className="md:col-span-5 mb-4 md:mb-0">{item.title}</p>
-
-                <div className="md:col-span-4 text-sm">
-                  {item.speakers.map((speaker, index) => (
-                    <p key={index} className="mb-1">
-                      {speaker}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            ))}
-
-            {!showAll && (
-              <div className="flex justify-center mt-10">
-                <button
-                  onClick={() => setShowAll(true)}
-                  className="conclave-button"
-                >
-                  Read More
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-      </section> */}
-
       <section className="Becameavolunteerbg-conclves relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="BecameavolunteerContent text-center">
@@ -1380,7 +1151,7 @@ export default function Conclave() {
               </button>
 
               {/* FORM CONTENT */}
-              <form
+              {/* <form
                 onSubmit={submitConclaveForm}
                 className="p-6 md:p-10 space-y-4 max-h-[90vh] overflow-y-auto"
               >
@@ -1392,7 +1163,6 @@ export default function Conclave() {
                   Be part of a curated group shaping Chennai’s future.
                 </p>
 
-                {/* ======= SAME FORM FIELDS (reuse existing) ======= */}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input
@@ -1485,7 +1255,7 @@ export default function Conclave() {
                 >
                   {loading ? "Processing..." : "Submit"}
                 </button>
-              </form>
+              </form> */}
             </motion.div>
           </motion.div>
         )}
@@ -1676,6 +1446,164 @@ export default function Conclave() {
               )}
             </div>
           </div>
+        </div>
+      </div>
+
+      {/*============= GALLERY ================== */}
+
+      <div className="EventsCalendarMainSection mb-10">
+        <div
+          className={`EventsCalenderBackground ${
+            scrollDir === "right"
+              ? "Utilitiesscroll-right"
+              : "Utilitiesscroll-left"
+          }`}
+        >
+          <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+          <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+        </div>
+
+        {/* Title */}
+        <div className="container max-w-7xl mx-auto px-4 EventsCalendarTitleMain">
+          <h2>Chennai Conclave 2026</h2>
+          <p>
+            A collection of stage highlights, speaker sessions, interactions,
+            and memento-giving moments from the conclave.
+          </p>
+        </div>
+        <div className="eventsCalendarMainSectionConatiner container max-w-7xl mx-auto px-4">
+          <a
+            href="https://youtube.com/live/D8hBf-lK57c?feature=share"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="CalendarEventsFirst">
+              <img
+                className="eventsCalenderIamge cursor-pointer w-[800px] h-[350px] object-cover"
+                src="images/streaming.png"
+                alt="Super Chennai Conclave 2026"
+              />
+
+              <div className="MainCalendarSectionEvent">
+                <div className="secondSectionEventsCalendar">
+                  <div className="EventsCalendarDateandTime">
+                    <p className="dateEvents">19</p>
+                    <p className="dayEvents">Wednesday</p>
+                  </div>
+
+                  <div>
+                    <p className="eventsNAME">Super Chennai Conclave 2026</p>
+                  </div>
+                </div>
+
+                <div className="thirdSectionCalendarContent">
+                  <p>
+                    Moments from the conclave where ideas met conversations, and
+                    leaders shared perspectives that inspired the room. A frame
+                    that reflects the spirit of collaboration, knowledge
+                    sharing, and meaningful connections.
+                  </p>
+                </div>
+
+                <div className="eventsCalendarLinks">
+                  <a>Conclave</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div className="overflow-hidden py-17 cardMobileSection">
+          <div className="relative">
+            <div className="absolute top-0 left-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
+            <div className="absolute top-0 right-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
+
+            <motion.div
+              ref={carouselRef}
+              className="flex gap-10 cursor-grab active:cursor-grabbing cardsMobileSection"
+              drag="x"
+              dragConstraints={{
+                right: 0,
+                left: -(mockUpcomingEvents.length * 340 - window.innerWidth),
+              }}
+              animate={{ x }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            >
+              {mockUpcomingEvents.map((card) => {
+                return (
+                  <motion.div
+                    className="flex gap-10 cardsMobileSection"
+                    animate={controls}
+                    onMouseEnter={() => controls.stop()}
+                    onMouseLeave={() =>
+                      controls.start({
+                        x: ["50", "-50%"],
+                        transition: {
+                          ease: "linear",
+                          duration: 140,
+                          repeat: Infinity,
+                        },
+                      })
+                    }
+                  >
+                    <div
+                      ref={carouselRef}
+                      className="flex gap-10 overflow-x-hidden cardsMobileSection"
+                      onMouseEnter={() => (isPausedRef.current = true)}
+                      onMouseLeave={() => (isPausedRef.current = false)}
+                    >
+                      {[...mockUpcomingEvents, ...mockUpcomingEvents].map(
+                        (card, index) => (
+                          <div
+                            key={index}
+                            className="EventsCalendarCardSection min-w-[300px] h-[350px] bg-white"
+                            onClick={() => openModal(card.image)}
+                          >
+                            <img
+                              src={card.image}
+                              alt={card.title}
+                              className="w-full h-[350px] object-cover rounded-t-md"
+                            />
+                          </div>
+                        ),
+                      )}
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </motion.div>
+
+            <div className="EventsCalenderButtons flex justify-center  ">
+              <button
+                onClick={() => slide("left")}
+                className="EventsCalenderLeftButton"
+              ></button>
+              <button
+                onClick={() => slide("right")}
+                className="EventsCalenderRightButton"
+              ></button>
+            </div>
+          </div>
+
+          {isModalOpen && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 z-[9999]"
+              onClick={closeModal}
+            >
+              <img
+                src={modalImage}
+                alt="Full view"
+                className="max-h-[90%] max-w-[90%] object-contain rounded-lg"
+                onClick={(e) => e.stopPropagation()}
+              />
+              <button
+                className="absolute top-5 right-5 text-white text-2xl font-bold"
+                onClick={closeModal}
+              >
+                ×
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </>

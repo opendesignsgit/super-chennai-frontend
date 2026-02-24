@@ -396,6 +396,62 @@ export default function EventsDetails() {
     },
   };
 
+  const jarnaEdition = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "Jharna Edition 5 - A Festival of Arts (In-Person & Online)",
+      description:
+        "Experience Jharna Edition 5, a classical dance festival in Chennai showcasing emerging Bharatanatyam talent, creative performances, and global virtual access.",
+      image:
+        "https://demo.superchennai.com/api/media/file/blog-img1.jpg%20(1).jpeg",
+      startDate: "2026-02-21T19:00",
+      endDate: "2026-03-14T21:00",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: "The TEACH Auditorium The Spastics Society of Tamilnadu",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "CSIR Road, Taramani",
+          addressLocality: "Chennai",
+          postalCode: "600113",
+          addressCountry: "IN",
+        },
+      },
+      performer: {
+        "@type": "PerformingGroup",
+        name: "",
+      },
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Events In chennai",
+          item: "https://www.superchennai.com/chennai-events",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Jharna Edition 5 - A Festival of Arts (In-Person & Online)",
+          item: "https://www.superchennai.com/events-in-chennai/jharna-5-bharatanatyam-classical-dance-festival",
+        },
+      ],
+    },
+  ];
+
+
   // ######## SCROLLER FOR PARTNER SETTINGS############  TEMPORRY SCROLL
 
   const PrevArrow = ({ onClick }) => (
@@ -460,6 +516,12 @@ export default function EventsDetails() {
         {slug === "autham-vasudev-menon-live-chennai-event" && (
           <script type="application/ld+json">
             {JSON.stringify(GVMSCHEMA)}
+          </script>
+        )}
+
+        {slug === "jharna-5-bharatanatyam-classical-dance-festival" && (
+          <script type="application/ld+json">
+            {JSON.stringify(jarnaEdition)}
           </script>
         )}
       </Helmet>

@@ -19,6 +19,7 @@ export default function AdminView() {
   const backendURL = `${API_BASE_URL_API}/admin/all-users`;
   const [margazhiData, setMargazhiData] = useState([]);
    const [conclaveData, setConclaveData] = useState([]);
+   const [arattaiData, setArattaiData] = useState([]);
 
   /* ================= AUTH CHECK ================= */
   useEffect(() => {
@@ -36,12 +37,23 @@ export default function AdminView() {
     fetchPosts();
     fetchMargazhi();
     fetchConclave();
+    fetchArattai();
   };
 
 
   
 
   /* ================= API CALLS ================= */
+
+  const fetchArattai = async () => {
+  const res = await axios.get(
+    "https://api.superchennai.com/api/arattai/arattai"
+  );
+
+  if (res.data?.success) {
+    setArattaiData(res.data.data || []);
+  }
+};
 
   const fetchConclave = async () => {
     const res = await axios.get(
@@ -243,6 +255,42 @@ const downloadConclaveXLS = () => {
 };
 
 
+const downloadArattaiXLS = () => {
+  if (!arattaiData || arattaiData.length === 0) return;
+
+  // ✅ Only verified users
+  const verifiedOnly = arattaiData.filter(
+    (d) => d.is_mobile_verified === true
+  );
+
+  if (verifiedOnly.length === 0) {
+    alert("No verified registrations found.");
+    return;
+  }
+
+  const formattedData = verifiedOnly.map((d, i) => {
+    const { date, time } = formatDateTime(d.created_at);
+
+    return {
+      "S.No": i + 1,
+      Name: d.name || "",
+      Email: d.email || "",
+      Phone: d.phone || "",
+      Age: d.age || "",
+      Gender: d.gender || "",
+      Date: date,
+      Time: time,
+    };
+  });
+
+  const worksheet = XLSX.utils.json_to_sheet(formattedData);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Arattai");
+
+  XLSX.writeFile(workbook, "Arattai_Verified_Registrations.xlsx");
+};
+
+
   return (
     <>
       {/* Banner */}
@@ -301,6 +349,7 @@ const downloadConclaveXLS = () => {
               ["margazhi", "Margazhi Month"],
               ["conclave", "Conclave"],
               ["trivia", "Trivia"],
+              ["arattai", "Arattai"],
             ].map(([key, label]) => (
               <button
                 key={key}
@@ -372,6 +421,23 @@ const downloadConclaveXLS = () => {
                 data={conclaveData.filter((d) => d.is_mobile_verified === true)}
                 description
               />
+            )}
+            {activeTab === "arattai" && (
+              <SimpleTable
+                title="Arattai Registrations"
+                data={arattaiData.filter((d) => d.is_mobile_verified === true)}
+              />
+            )}
+
+            {activeTab === "arattai" && (
+              <div className="flex justify-end px-6 mb-4">
+                <button
+                  onClick={downloadArattaiXLS}
+                  className="bg-green-700 text-white px-4 py-2 rounded font-semibold hover:bg-green-800"
+                >
+                  ⬇ Download Arattai Entries
+                </button>
+              </div>
             )}
 
             {activeTab === "conclave" && (
@@ -499,6 +565,9 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
               {title === "Hotshot Chennai" && <th>Instagram</th>}
               {title === "Hotshot Chennai" && <th>Location</th>}
 
+              {title === "Arattai Registrations" && <th>Age</th>}
+              {title === "Arattai Registrations" && <th>Gender</th>}
+
               {title === "Conclave Registrations" && <th>Company</th>}
               {title === "Conclave Registrations" && <th>Designation</th>}
 
@@ -561,6 +630,11 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
                   )} */}
                   {title === "Hotshot Chennai" && (
                     <td>{d.location_url?.trim() ? d.location_url : "—"}</td>
+                  )}
+
+                  {title === "Arattai Registrations" && <td>{d.age || "—"}</td>}
+                  {title === "Arattai Registrations" && (
+                    <td>{d.gender || "—"}</td>
                   )}
 
                   {title === "Conclave Registrations" && (

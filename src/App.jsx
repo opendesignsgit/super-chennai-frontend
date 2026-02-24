@@ -291,6 +291,10 @@ import MargazhiPageCalendar from "./Pages/Activities/MargazhiMonth/MargazhiPage"
 import HotshotChennaiContest from "./Pages/Activities/HotshotChennai/HotshotChennaiContest";
 import Conclave from "./Pages/Activities/Conclave/conclave"
 import DevConclave from "./Pages/Activities/Conclave/devCon"
+import ArrattaiWithArangam from "./Pages/Activities/ArattaiWith/arattaiPage"
+
+
+
 
 
 import NotFound from "../src/NotFound";
@@ -558,10 +562,12 @@ function App() {
 
           {isHomePage && showPopup && (
             <ImagePopup
-              imageUrl="/images/conclave-banner-popup.jpeg"
+              imageUrl="/images/aruna-contest-popup.jpg"
               onClose={() => setShowPopup(false)}
             />
           )}
+
+
           {/* )} */}
 
           <div
@@ -822,6 +828,8 @@ function App() {
 
             <Route path="/chennai-conclave" element={<Conclave />} />
             <Route path="/devConclave" element={<DevConclave />} />
+             <Route path="/arattai-with-aruna-sairam/carnatic-vocalist" element={<ArrattaiWithArangam />} />
+
 
             
 

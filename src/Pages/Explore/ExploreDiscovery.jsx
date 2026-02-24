@@ -1,11 +1,28 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import ChatInterface from "./Components/ChatInterface";
 import ChatInput from "./Components/ChatInput";
 import DiscoveryResults from "./Components/DiscoveryResults";
 import DetailOffcanvas from "./Components/DetailOffcanvas";
+import NearbyMap from "./Components/NearbyMap";
+import NearbyCategoryChips from "./Components/NearbyCategoryChips";
 import mockPlaces from "./data/mockPlaces";
+import { AI_BASE_URL } from "../../../config";
+import { 
+  getUserLocation, 
+  supportsOrientation, 
+  requestOrientationPermission,
+  getHeadingFromOrientation,
+  assignMockCoordinates 
+} from "./utils/geolocation";
+import { 
+  filterByRadius, 
+  filterByDirectionalCone, 
+  getUniqueCategories,
+  sortByDistance 
+} from "./utils/nearbyFiltering";
 import "./Styles/ExploreDiscovery.css";
+import "leaflet/dist/leaflet.css";
 
 export default function ExploreDiscovery() {
   const { slug } = useParams();
@@ -35,22 +52,40 @@ export default function ExploreDiscovery() {
   const [isThinking, setIsThinking] = useState(false); // Loading state for message processing
   const [lastFilterChange, setLastFilterChange] = useState(null); // Track last filter change for fallback
 
+  // Nearby Mode State
+  const [nearbyState, setNearbyState] = useState({
+    isNearbyActive: false,
+    userLocation: null,
+    deviceHeading: null,
+    nearbyCategory: null,
+    nearbyModeType: "radius", // "radius" or "directional"
+    nearbyRadius: 2, // Default 2km
+  });
+  
+  const [placesWithCoords, setPlacesWithCoords] = useState([]);
+  const orientationListenerRef = useRef(null);
+
   // Session storage key
   const SESSION_KEY = "explore_chat_session";
   const SESSION_EXPIRY = 60 * 60 * 1000; // 1 hour in milliseconds
 
-  // Load messages and filters from session storage on mount
+  // Load messages, filters, and mode from session storage on mount
   useEffect(() => {
     const savedSession = sessionStorage.getItem(SESSION_KEY);
     if (savedSession) {
       try {
-        const { messages: savedMessages, filters: savedFilters, timestamp } = JSON.parse(savedSession);
+        const { messages: savedMessages, filters: savedFilters, mode: savedMode, timestamp } = JSON.parse(savedSession);
         const now = Date.now();
         
         // Check if session is still valid (within 1 hour)
         if (now - timestamp < SESSION_EXPIRY) {
           setMessages(savedMessages);
           setFilters(savedFilters);
+          
+          // Restore mode if it was nearby (will trigger initialization via separate effect)
+          if (savedMode === "nearby") {
+            setMode("nearby");
+          }
         } else {
           // Session expired, clear it
           sessionStorage.removeItem(SESSION_KEY);
@@ -62,18 +97,94 @@ export default function ExploreDiscovery() {
     }
   }, []);
 
-  // Save messages and filters to session storage whenever they change
+  // Initialize nearby mode when mode is set to nearby (for both manual switch and session restore)
+  useEffect(() => {
+    const initializeNearbyMode = async () => {
+      if (mode === "nearby" && !nearbyState.isNearbyActive) {
+        try {
+          // Request GPS permission and get user location
+          const location = await getUserLocation();
+          
+          // Detect device orientation support
+          const hasOrientation = supportsOrientation();
+          let modeType = "radius"; // Default to radius mode
+          
+          if (hasOrientation) {
+            // Request orientation permission (iOS)
+            const permissionGranted = await requestOrientationPermission();
+            if (permissionGranted) {
+              modeType = "directional";
+              
+              // Add orientation listener
+              const handleOrientation = (event) => {
+                const heading = getHeadingFromOrientation(event);
+                setNearbyState(prev => ({
+                  ...prev,
+                  deviceHeading: heading,
+                }));
+              };
+              
+              window.addEventListener('deviceorientation', handleOrientation);
+              orientationListenerRef.current = handleOrientation;
+            }
+          }
+          
+          // Initialize places with coordinates (mock for now)
+          const coordPlaces = assignMockCoordinates(mockPlaces);
+          setPlacesWithCoords(coordPlaces);
+          
+          // Update nearby state
+          setNearbyState({
+            isNearbyActive: true,
+            userLocation: location,
+            deviceHeading: null,
+            nearbyCategory: null,
+            nearbyModeType: modeType,
+            nearbyRadius: 2,
+          });
+          
+          // Add message only if not restoring from session
+          const savedSession = sessionStorage.getItem(SESSION_KEY);
+          if (!savedSession || !savedSession.includes('"mode":"nearby"')) {
+            setMessages((prev) => [
+              ...prev,
+              {
+                role: "ai",
+                text: `Nearby Mode activated! ${modeType === "directional" ? "Point your device to discover places" : "Showing places within 2km"}`,
+              },
+            ]);
+          }
+        } catch (error) {
+          console.error("Error initializing Nearby Mode:", error);
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "ai",
+              text: "Could not access your location. Please enable location permissions and try again.",
+            },
+          ]);
+          // Revert to AI mode if location access failed
+          setMode("ai");
+        }
+      }
+    };
+
+    initializeNearbyMode();
+  }, [mode, nearbyState.isNearbyActive]);
+
+  // Save messages, filters, and mode to session storage whenever they change
   useEffect(() => {
     // Don't save if we're on initial welcome message only
-    if (messages.length > 1 || filters.category || filters.location || filters.ratingMin || filters.tags.length > 0) {
+    if (messages.length > 1 || filters.category || filters.location || filters.ratingMin || filters.tags.length > 0 || mode === "nearby") {
       const sessionData = {
         messages,
         filters,
+        mode,
         timestamp: Date.now()
       };
       sessionStorage.setItem(SESSION_KEY, JSON.stringify(sessionData));
     }
-  }, [messages, filters]);
+  }, [messages, filters, mode]);
 
   // Parse slug on mount if present
   useEffect(() => {
@@ -395,8 +506,11 @@ export default function ExploreDiscovery() {
     return parts.length > 0 ? parts.join(" ") : "Showing all places";
   };
 
-  // Handle user message submission
-  const handleSendMessage = (userMessage) => {
+  // Handle user message submission (AI Mode only)
+  const handleSendMessage = async (userMessage) => {
+    // AI interpretation runs ONLY in AI mode, not Nearby Mode
+    if (mode !== "ai") return;
+
     // Show thinking loader
     setIsThinking(true);
 
@@ -409,47 +523,77 @@ export default function ExploreDiscovery() {
       },
     ]);
 
-    // Small delay to show thinking loader
-    setTimeout(() => {
-      // Check if message is a greeting
-      if (isGreeting(userMessage)) {
-        const greetingResponse = generateGreetingResponse();
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: "ai",
-            text: greetingResponse,
+    // Check if message is a greeting (no API call needed)
+    if (isGreeting(userMessage)) {
+      const greetingResponse = generateGreetingResponse();
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "ai",
+          text: greetingResponse,
+        },
+      ]);
+      setIsThinking(false);
+      logInteraction(userMessage, {}, filters, true);
+      return;
+    }
+
+    try {
+      // Call AI interpret endpoint
+      const response = await fetch(
+        `${AI_BASE_URL}/ai/interpret`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
           },
-        ]);
-        setIsThinking(false);
-        logInteraction(userMessage, {}, filters, true);
-        return;
+          body: JSON.stringify({ message: userMessage }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`AI interpret request failed: ${response.status} ${response.statusText}`);
       }
 
-      // Parse message and detect filters
+      const aiFilters = await response.json();
+
+      // Map AI response fields to internal filter shape
+      const mappedFilters = {
+        category: aiFilters.category || null,
+        location: aiFilters.location || null,
+        ratingMin: aiFilters.rating != null ? aiFilters.rating : null,
+        tags: Array.isArray(aiFilters.tags) ? aiFilters.tags : [],
+      };
+
+      // Merge with active filters (progressive refinement)
       const oldFilters = { ...filters };
-      const updatedFilters = parseUserMessage(userMessage);
-      
+      const updatedFilters = {
+        ...oldFilters,
+        ...(mappedFilters.category !== null && { category: mappedFilters.category }),
+        ...(mappedFilters.location !== null && { location: mappedFilters.location }),
+        ...(mappedFilters.ratingMin !== null && { ratingMin: mappedFilters.ratingMin }),
+        tags: [
+          ...(oldFilters.tags || []),
+          ...mappedFilters.tags.filter((t) => !(oldFilters.tags || []).includes(t)),
+        ],
+      };
+
       // Check if any filters were detected
       const matched = hasDetectedFilters(oldFilters, updatedFilters);
 
       if (!matched) {
         // No filters detected - show recovery message with suggestions
         const suggestions = generateSmartSuggestions();
-        
-        // Only show suggestions if we have valid ones
         if (suggestions.length > 0) {
-          const unmatchedResponse = generateUnmatchedResponse();
           setMessages((prev) => [
             ...prev,
             {
               role: "ai",
-              text: unmatchedResponse,
-              suggestions: suggestions,
+              text: generateUnmatchedResponse(),
+              suggestions,
             },
           ]);
         } else {
-          // No valid suggestions, show generic message
           setMessages((prev) => [
             ...prev,
             {
@@ -458,7 +602,6 @@ export default function ExploreDiscovery() {
             },
           ]);
         }
-        
         setIsThinking(false);
         logInteraction(userMessage, updatedFilters, filters, false);
         return;
@@ -483,21 +626,80 @@ export default function ExploreDiscovery() {
 
       setIsThinking(false);
       logInteraction(userMessage, updatedFilters, updatedFilters, true);
-    }, 300); // Small delay to show thinking animation
-  };
+    } catch (e) {
+      // Fallback to rule-based parsing on API failure
+      console.error("AI interpret API failed, falling back to rule-based parsing:", e);
+      const oldFilters = { ...filters };
+      const updatedFilters = parseUserMessage(userMessage);
+      const matched = hasDetectedFilters(oldFilters, updatedFilters);
 
-  // Handle mode switch
-  const handleModeSwitch = (newMode) => {
-    setMode(newMode);
-    if (newMode === "nearby") {
-      // Phase 1: Mock nearby results
+      if (!matched) {
+        const suggestions = generateSmartSuggestions();
+        if (suggestions.length > 0) {
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "ai",
+              text: generateUnmatchedResponse(),
+              suggestions,
+            },
+          ]);
+        } else {
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "ai",
+              text: "I couldn't understand that. Please try describing what you're looking for, like 'cafe near adyar' or 'temple in mylapore'.",
+            },
+          ]);
+        }
+        setIsThinking(false);
+        logInteraction(userMessage, updatedFilters, filters, false);
+        return;
+      }
+
+      setFilters(updatedFilters);
+      setLastFilterChange({ filters: updatedFilters, previousFilters: oldFilters });
+      updateURLSlug(updatedFilters);
+
+      const aiResponse = generateAIResponse(updatedFilters);
       setMessages((prev) => [
         ...prev,
         {
           role: "ai",
-          text: "Showing places near you (mock data)",
+          text: aiResponse,
         },
       ]);
+
+      setIsThinking(false);
+      logInteraction(userMessage, updatedFilters, updatedFilters, true);
+    }
+  };
+
+  // Handle mode switch
+  const handleModeSwitch = (newMode) => {
+    if (newMode === "ai") {
+      // Switching back to AI mode
+      setMode(newMode);
+      
+      // Clean up orientation listener
+      if (orientationListenerRef.current) {
+        window.removeEventListener('deviceorientation', orientationListenerRef.current);
+        orientationListenerRef.current = null;
+      }
+      
+      // Reset nearby state
+      setNearbyState({
+        isNearbyActive: false,
+        userLocation: null,
+        deviceHeading: null,
+        nearbyCategory: null,
+        nearbyModeType: "radius",
+        nearbyRadius: 2,
+      });
+    } else {
+      // Switching to nearby mode - just set the mode, initialization happens in useEffect
+      setMode(newMode);
     }
   };
 
@@ -507,6 +709,70 @@ export default function ExploreDiscovery() {
     setShowOffcanvas(true);
   };
 
+  // Handle nearby category selection
+  const handleNearbyCategorySelect = (category) => {
+    setNearbyState(prev => ({
+      ...prev,
+      nearbyCategory: category,
+    }));
+  };
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (orientationListenerRef.current) {
+        window.removeEventListener('deviceorientation', orientationListenerRef.current);
+      }
+    };
+  }, []);
+
+  // Calculate nearby places based on mode
+  const getNearbyPlaces = () => {
+    if (!nearbyState.isNearbyActive || !nearbyState.userLocation) {
+      return [];
+    }
+
+    let filtered = [];
+    
+    if (nearbyState.nearbyModeType === "directional" && nearbyState.deviceHeading !== null) {
+      // Directional mode
+      filtered = filterByDirectionalCone(
+        placesWithCoords,
+        nearbyState.userLocation,
+        nearbyState.deviceHeading,
+        nearbyState.nearbyRadius,
+        nearbyState.nearbyCategory
+      );
+    } else {
+      // Radius mode
+      filtered = filterByRadius(
+        placesWithCoords,
+        nearbyState.userLocation,
+        nearbyState.nearbyRadius,
+        nearbyState.nearbyCategory
+      );
+    }
+
+    // Sort by distance
+    return sortByDistance(filtered, nearbyState.userLocation);
+  };
+
+  // Get available categories from nearby places
+  const getAvailableCategories = () => {
+    if (!nearbyState.isNearbyActive || !nearbyState.userLocation) {
+      return [];
+    }
+
+    // Get all places within radius (ignoring category filter)
+    const allNearby = filterByRadius(
+      placesWithCoords,
+      nearbyState.userLocation,
+      nearbyState.nearbyRadius
+    );
+
+    return getUniqueCategories(allNearby);
+  };
+
   // Handle back navigation
   const handleBack = () => {
     navigate(-1);
@@ -514,33 +780,58 @@ export default function ExploreDiscovery() {
 
   return (
     <div className="explore-discovery-page">
-      {/* Hero Banner */}
-      <div className="hero-banner">
-        <img
-          src="/images/Visit-Images/visitBanner.jpg"
-          alt="Explore Chennai"
-          className="hero-banner-image"
-        />
-        <div className="hero-banner-overlay">
-          <h1>Explore Chennai</h1>
-          <p>Discover the best places with AI-assisted discovery</p>
-        </div>
-      </div>
-
-      <div className="explore-container">
-        {/* Main Content Area - Full Width */}
-        <main className="explore-main">
-          {/* Chat Interface with integrated results */}
-          <ChatInterface 
-            messages={messages} 
-            filters={filters}
-            mode={mode}
-            onPlaceClick={handlePlaceClick}
-            isThinking={isThinking}
-            onSuggestionClick={handleSendMessage}
+      {/* Hero Banner - Hide in Nearby Mode */}
+      {!nearbyState.isNearbyActive && (
+        <div className="hero-banner">
+          <img
+            src="/images/Visit-Images/visitBanner.jpg"
+            alt="Explore Chennai"
+            className="hero-banner-image"
           />
-        </main>
-      </div>
+          <div className="hero-banner-overlay">
+            <h1>Explore Chennai</h1>
+            <p>Discover the best places with AI-assisted discovery</p>
+          </div>
+        </div>
+      )}
+
+      {/* Nearby Mode - Map and Category Chips */}
+      {nearbyState.isNearbyActive && (
+        <>
+          <NearbyMap
+            userLocation={nearbyState.userLocation}
+            nearbyPlaces={getNearbyPlaces()}
+            deviceHeading={nearbyState.deviceHeading}
+            radius={nearbyState.nearbyRadius}
+            modeType={nearbyState.nearbyModeType}
+            onPlaceClick={handlePlaceClick}
+          />
+          
+          <NearbyCategoryChips
+            availableCategories={getAvailableCategories()}
+            selectedCategory={nearbyState.nearbyCategory}
+            onCategorySelect={handleNearbyCategorySelect}
+          />
+        </>
+      )}
+
+      {/* AI Mode - Chat Interface */}
+      {!nearbyState.isNearbyActive && (
+        <div className="explore-container">
+          {/* Main Content Area - Full Width */}
+          <main className="explore-main">
+            {/* Chat Interface with integrated results */}
+            <ChatInterface 
+              messages={messages} 
+              filters={filters}
+              mode={mode}
+              onPlaceClick={handlePlaceClick}
+              isThinking={isThinking}
+              onSuggestionClick={handleSendMessage}
+            />
+          </main>
+        </div>
+      )}
 
       {/* Chat Input - Sticky at bottom */}
       <ChatInput

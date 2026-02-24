@@ -188,19 +188,51 @@ const convertToEmbedUrl = (url) => {
 
 export default function ArticleListPage() {
   const { ads: articleAds, loading: adsLoading } = useArticlePageAds();
-  const structuredArticleAds = articleAds?.reduce((acc, ad) => {
-    const pos = ad.position || "right";
-    const existing = acc.find((a) => a.position === pos);
-    if (existing) {
-      existing.ads.push(ad);
-    } else {
-      acc.push({
-        position: pos,
-        ads: [ad],
-      });
-    }
-    return acc;
-  }, []);
+  console.log("ads data", articleAds);
+
+  // const structuredArticleAds = articleAds?.reduce((acc, ad) => {
+  //   const pos = ad.position || "right";
+  //   const existing = acc.find((a) => a.position === pos);
+  //   if (existing) {
+  //     existing.ads.push(ad);
+  //   } else {
+  //     acc.push({
+  //       position: pos,
+  //       ads: [ad],
+  //     });
+  //   }
+  //   return acc;
+  // }, []);
+
+  const isAdActive = (ad) => {
+    const today = new Date().toISOString().split("T")[0];
+
+    const start = ad.startDate?.split("T")[0];
+    const end = ad.endDate?.split("T")[0];
+
+    if (start && today < start) return false;
+    if (end && today > end) return false;
+
+    return true;
+  };
+
+  const structuredArticleAds = articleAds
+    ?.filter(isAdActive)
+    ?.reduce((acc, ad) => {
+      const pos = ad.position || "right";
+      const existing = acc.find((a) => a.position === pos);
+
+      if (existing) {
+        existing.ads.push(ad);
+      } else {
+        acc.push({
+          position: pos,
+          ads: [ad],
+        });
+      }
+
+      return acc;
+    }, []);
 
   //################## POSTION ASIGN ###############
 
@@ -208,21 +240,18 @@ export default function ArticleListPage() {
   const [showRightAds, setShowRightAds] = useState(true);
   const ARTICLES_PER_PAGE = 3;
 
-   const POPULAR_PER_PAGE = 2;
-  const MOST_VIEWED_PER_PAGE = 2;
+  const POPULAR_PER_PAGE = 3;
+  const MOST_VIEWED_PER_PAGE = 3;
 
-   const [popularPage, setPopularPage] = useState(1);
-   const [mostViewedPage, setMostViewedPage] = useState(1);
-
+  const [popularPage, setPopularPage] = useState(1);
+  const [mostViewedPage, setMostViewedPage] = useState(1);
 
   const [page, setPage] = useState(1);
   const { articles = [], loading, ads: embeddedAds } = useArticles();
 
-
   console.log("article data", articles);
 
   const featuredEventArticle = articles.find((a) => a.isFeatured === true);
-
 
   const normalArticles = articles.filter(
     (a) => a.id !== featuredEventArticle?.id,
@@ -234,84 +263,61 @@ export default function ArticleListPage() {
     page * ARTICLES_PER_PAGE,
   );
 
+ 
+ 
+ 
   const ads = structuredArticleAds;
-  let leftAds =
-    ads?.filter((a) => a.position === "left").flatMap((a) => a.ads) || [];
 
-  let rightAds =
-    ads?.filter((a) => a.position === "right").flatMap((a) => a.ads) || [];
 
-  if (rightAds.length === 0 && leftAds.length > 1) {
-    rightAds = leftAds.splice(1);
-  }
+const leftAds =
+  ads.filter((a) => a.position === "left").flatMap((a) => a.ads);
+
+const rightAds =
+  ads.filter((a) => a.position === "right").flatMap((a) => a.ads);
+
+  
+
   const topAds = ads?.filter((a) => a.position === "top").flatMap((a) => a.ads);
 
   const bottomAds = ads
     ?.filter((a) => a.position === "bottom")
     .flatMap((a) => a.ads);
 
+  const hasLeft = showLeftAds && leftAds?.length > 0;
+  const hasRight = showRightAds && rightAds?.length > 0;
+  const hasSideAds = hasLeft || hasRight;
 
-const hasLeft = showLeftAds && leftAds?.length > 0;
-const hasRight = showRightAds && rightAds?.length > 0;
-const hasSideAds = hasLeft || hasRight;
-
-
-
-const mainCol = hasSideAds
-  ? "lg:col-span-8"
-  : "lg:col-span-12";
-
+  const mainCol = hasSideAds ? "lg:col-span-8" : "lg:col-span-12";
 
   //##################### MORE SECTION DTATA STRING ##########################################
 
-  // const mostViewedArticles = [...articles]
-  //   .sort((a, b) => (b.views ?? 0) - (a.views ?? 0))
-  //   .slice(0, 5);
-
-  // const popularArticles = [...articles]
-  //   .sort((a, b) => {
-  //     const scoreA = (a.views ?? 0) + (a.readingTime ?? 0) * 5;
-  //     const scoreB = (b.views ?? 0) + (b.readingTime ?? 0) * 5;
-  //     return scoreB - scoreA;
-  //   })
-  //   .slice(0, 6);
-
-  
   const inlineAdIndex =
     embeddedAds?.length > 0 ? (page - 1) % embeddedAds.length : 0;
 
-const mostViewedSorted = [...articles].sort(
-  (a, b) => (b.views ?? 0) - (a.views ?? 0)
-);
-const popularSorted = [...articles].sort((a, b) => {
-  const scoreA = (a.views ?? 0) + (a.readingTime ?? 0) * 5;
-  const scoreB = (b.views ?? 0) + (b.readingTime ?? 0) * 5;
-  return scoreB - scoreA;
-});
+  const mostViewedSorted = [...articles].sort(
+    (a, b) => (b.views ?? 0) - (a.views ?? 0),
+  );
+  const popularSorted = [...articles].sort((a, b) => {
+    const scoreA = (a.views ?? 0) + (a.readingTime ?? 0) * 5;
+    const scoreB = (b.views ?? 0) + (b.readingTime ?? 0) * 5;
+    return scoreB - scoreA;
+  });
 
-const totalMostViewedPages = Math.ceil(
-  mostViewedSorted.length / MOST_VIEWED_PER_PAGE
-);
+  const totalMostViewedPages = Math.ceil(
+    mostViewedSorted.length / MOST_VIEWED_PER_PAGE,
+  );
 
-const totalPopularPages = Math.ceil(
-  popularSorted.length / POPULAR_PER_PAGE
-);
+  const totalPopularPages = Math.ceil(popularSorted.length / POPULAR_PER_PAGE);
 
-const mostViewedArticles = mostViewedSorted.slice(
-  (mostViewedPage - 1) * MOST_VIEWED_PER_PAGE,
-  mostViewedPage * MOST_VIEWED_PER_PAGE
-);
+  const mostViewedArticles = mostViewedSorted.slice(
+    (mostViewedPage - 1) * MOST_VIEWED_PER_PAGE,
+    mostViewedPage * MOST_VIEWED_PER_PAGE,
+  );
 
-
-
-const popularArticles = popularSorted.slice(
-  (popularPage - 1) * POPULAR_PER_PAGE,
-  popularPage * POPULAR_PER_PAGE
-);
-
-
-
-
+  const popularArticles = popularSorted.slice(
+    (popularPage - 1) * POPULAR_PER_PAGE,
+    popularPage * POPULAR_PER_PAGE,
+  );
 
   return (
     <>

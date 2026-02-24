@@ -1,0 +1,23 @@
+PORT=3000
+DB_HOST=localhost
+DB_USER=postgres
+DB_PASSWORD=root
+DB_NAME=email
+DB_PORT=5432
+JWT_SECRET=qSDE0cS+5PlGPn3Cu1F3dF7+O2ycMF0h8wsWWG6zmq8=
+
+# AI PROVIDER CONFIG  ###############
+# Supported values: GROQ | OPENAI | GOOGLE_AI
+AI_PROVIDER=GROQ
+
+GROQ_API_KEY=
+OPENAI_API_KEY=
+GOOGLE_AI_API_KEY=
+
+
+# MAILR CONFIG  ###############
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=wordpress.odi@gmail.com
+SMTP_PASS=  u need put password 
+FORM_RECEIVER_EMAIL=barathi@gmail.com

@@ -82,21 +82,32 @@ export default function NearbyMap({
 
   // Update map center and fit bounds when user location changes
   useEffect(() => {
-    if (!mapRef.current || !userLocation) return;
+    if (!mapRef.current || !userLocation || !radius) return;
     
-    // Calculate bounds to fit the radius circle
-    const radiusInMeters = radius * 1000;
-    const circle = L.circle([userLocation.lat, userLocation.lng], {
-      radius: radiusInMeters,
-    });
-    
-    const bounds = circle.getBounds();
-    
-    // Fit map to show the entire radius circle with some padding
-    mapRef.current.fitBounds(bounds, {
-      padding: [50, 50],  // Add 50px padding on all sides
-      maxZoom: 15,  // Don't zoom in too much
-    });
+    // Use setTimeout to ensure map is fully initialized
+    setTimeout(() => {
+      if (!mapRef.current) return;
+      
+      try {
+        // Calculate bounds to fit the radius circle
+        const radiusInMeters = radius * 1000;
+        const circle = L.circle([userLocation.lat, userLocation.lng], {
+          radius: radiusInMeters,
+        });
+        
+        const bounds = circle.getBounds();
+        
+        // Fit map to show the entire radius circle with some padding
+        mapRef.current.fitBounds(bounds, {
+          padding: [50, 50],  // Add 50px padding on all sides
+          maxZoom: 15,  // Don't zoom in too much
+        });
+      } catch (error) {
+        console.error("Error fitting bounds:", error);
+        // Fallback to setView if fitBounds fails
+        mapRef.current.setView([userLocation.lat, userLocation.lng], 13);
+      }
+    }, 100);
   }, [userLocation, radius]);
 
   // Update user marker

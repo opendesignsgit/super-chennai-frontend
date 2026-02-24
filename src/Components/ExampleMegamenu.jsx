@@ -401,10 +401,16 @@ const menuItems = [
   //     },
   //   ],
   // },
-  {
+   {
     label: "Arattai",
     labellink: "/arattai-with-aruna-sairam/carnatic-vocalist",
-    content: [],
+    content: [
+      {
+        title: "",
+        desc: "",
+        link: "",
+      },
+    ],
   },
 ];
 const sectionImageMap = {
@@ -414,7 +420,7 @@ const sectionImageMap = {
   Invest: "/images/HomePage-Images/Invest-MegaMenu.jpg",
   Innovate: "/images/HomePage-Images/Innovate-MegaMenu.jpg",
   Volunteer: "/images/HomePage-Images/Volunteers-MegaMenu.jpg",
-   Arattai: "/images/aruna-contest-popup.jpg",
+   Arattai: "/images/aruna-inne-main-image-ham.jpeg",
 
 };
 const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
@@ -584,34 +590,6 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
               <div className="MegamenumenuitemsMain">
                 <ul className="Megamenumenudesktop">
                   {menuItems.map((item, i) => (
-                    // <li
-                    //   key={i}
-                    //   className={`Megamenumenuitem ${
-                    //     activeMenu?.label === item.label
-                    //       ? "activeMegamenuSection"
-                    //       : ""
-                    //   }`}
-                    //   onClick={() => {
-                    //     setActiveMenu(item);
-                    //     setMenuVisible(false);
-                    //     navigate(item.labellink);
-                    //     window.scrollTo({ top: 0 });
-                    //   }}
-                    //   onMouseEnter={() => {
-                    //     setActiveMenu(item);
-                    //     setMenuVisible(true);
-                    //     setHoveredImage(
-                    //       sectionImageMap[item.label] ||
-                    //         "/images/FirstSliderImage.png",
-                    //     );
-                    //   }}
-                    // >
-                    //   <span>
-                    //     {item.label}
-                    //     <p className="navitemsArrowpart"></p>
-                    //   </span>
-                    // </li>
-
                     <li
                       key={i}
                       className={`Megamenumenuitem ${
@@ -625,25 +603,68 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                         navigate(item.labellink);
                         window.scrollTo({ top: 0 });
                       }}
-                     onMouseEnter={() => {
-  if (item.content && item.content.length > 0) {
-    setActiveMenu(item);
-    setMenuVisible(true);
-    setHoveredImage(
-      sectionImageMap[item.label] ||
-      "/images/FirstSliderImage.png"
-    );
-  } else {
-    setActiveMenu(null);
-    setMenuVisible(false);
-  }
-}}
+                      // onMouseEnter={() => {
+                      //   setActiveMenu(item);
+                      //   setMenuVisible(true);
+                      //   setHoveredImage(
+                      //     sectionImageMap[item.label] ||
+                      //       "/images/FirstSliderImage.png",
+                      //   );
+                      // }}
+                         onMouseEnter={() => {
+                        // Only show mega menu if the item has content
+                        if (item.content && item.content.length > 0) {
+                          setActiveMenu(item);
+                          setMenuVisible(true);
+                          setHoveredImage(
+                            sectionImageMap[item.label] ||
+                              "/images/FirstSliderImage.png",
+                          );
+                        }
+                      }}
                     >
                       <span>
                         {item.label}
                         <p className="navitemsArrowpart"></p>
                       </span>
                     </li>
+
+
+
+
+
+
+                    // <li
+                    //   key={i}
+                    //   className={`Megamenumenuitem ${
+                    //     activeMenu?.label === item.label
+                    //       ? "activeMegamenuSection"
+                    //       : ""
+                    //   }`}
+                    //   onClick={() => {
+                    //     setActiveMenu(item);
+                    //     setMenuVisible(false);
+                    //     navigate(item.labellink);
+                    //     window.scrollTo({ top: 0 });
+                    //   }}
+                      // onMouseEnter={() => {
+                      //   // Only show mega menu if the item has content
+                      //   if (item.content && item.content.length > 0) {
+                      //     setActiveMenu(item);
+                      //     setMenuVisible(true);
+                      //     setHoveredImage(
+                      //       sectionImageMap[item.label] ||
+                      //         "/images/FirstSliderImage.png",
+                      //     );
+                      //   }
+                      // }}
+                     
+                    // >
+                    //   <span>
+                    //     {item.label}
+                    //     <p className="navitemsArrowpart"></p>
+                    //   </span>
+                    // </li>
                   ))}
                 </ul>
               </div>

@@ -101,16 +101,67 @@ export default function ArrattaiWithArangam() {
     }
   };
 
+
+  const arattaiSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "Arattai with Aruna Sairam",
+      description:
+        "Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalists, their legacy, and the city’s enduring contribution to classical music culture.",
+      image: "https://www.superchennai.com/images/aruna-inne-main-image.jpeg",
+      startDate: "2026-02-28T19:00",
+      endDate: "2026-02-28T22:00",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: "",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "",
+          addressLocality: "",
+          postalCode: "",
+          addressCountry: "",
+        },
+      },
+      performer: {
+        "@type": "MusicGroup",
+        name: "Aruna Sairam",
+      },
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Arattai with Aruna Sairam",
+          item: "https://www.superchennai.com/arattai-with-aruna-sairam/carnatic-vocalist",
+        },
+      ],
+    },
+  ];
+
+  
+
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
       <Helmet>
         <title>
-          Chennai’s Iconic Carnatic Vocalists - Arattai with Aruna Sairam
+          Chennai’s Iconic Carnatic Vocalist - Arattai with Aruna Sairam
         </title>
         <meta
           name="description"
-          content=" Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalists, their legacy, and the city’s enduring contribution to classical music culture."
+          content="Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalist, their legacy, and the city’s enduring contribution to classical music culture.."
         />
         <meta
           property="og:title"
@@ -132,6 +183,10 @@ export default function ArrattaiWithArangam() {
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-aruna-sairam/carnatic-vocalist`}
         />
+
+          <script type="application/ld+json">
+          {JSON.stringify(arattaiSchema)}
+        </script>
       </Helmet>
       {/* ============== Banner ============ */}
       <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
@@ -139,13 +194,13 @@ export default function ArrattaiWithArangam() {
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
             src="/images/aruna-inne-main-image.jpeg"
-            alt="Super Chennai Quiz"
+            alt=" Carnatic Vocalist"
           />
 
           <img
             className="block sm:hidden w-full"
             src="/images/mobile-aruna-main-secon.jpg"
-            alt="Super Chennai Quiz Mobile"
+            alt="Aruna sairam"
           />
         </div>
 

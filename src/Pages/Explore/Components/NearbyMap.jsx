@@ -130,7 +130,10 @@ export default function NearbyMap({
         streetViewControl: false,
         mapTypeControl: false,
         fullscreenControl: true,
-        gestureHandling: 'none', // Disable all gestures including zoom
+        // Disable all map gestures to keep focus on radius area
+        // This prevents zoom in/out as per requirements, but also disables panning
+        // The map automatically centers on user location and fits the radius circle
+        gestureHandling: 'none', // Disables pinch/drag gestures (no zoom, no pan)
         scrollwheel: false, // Disable zoom with scroll wheel
         disableDoubleClickZoom: true, // Disable zoom on double click
       }}

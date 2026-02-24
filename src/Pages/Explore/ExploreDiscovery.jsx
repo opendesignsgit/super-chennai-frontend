@@ -91,11 +91,13 @@ export default function ExploreDiscovery() {
           // Set mode immediately and start GPS tracking
           setMode("nearby");
           // Start GPS tracking after a brief delay to ensure component is mounted
+          // This prevents calling GPS functions before refs and state are initialized
+          const GPS_INIT_DELAY = 100; // milliseconds
           setTimeout(() => {
             isFirstGPSLockRef.current = true;
             startGPSTracking();
             detectOrientationSupport();
-          }, 100);
+          }, GPS_INIT_DELAY);
         } else {
           sessionStorage.removeItem(MODE_KEY);
         }

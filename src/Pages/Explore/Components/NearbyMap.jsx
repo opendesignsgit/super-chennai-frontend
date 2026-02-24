@@ -37,15 +37,58 @@ export default function NearbyMap({
 
   const center = userLocation || CHENNAI_CENTER;
 
-  // Update map center when user location changes
+  // Calculate zoom level based on radius to fit the circle in view
+  const getZoomForRadius = (radiusInMeters) => {
+    // Approximate zoom levels for different radii
+    // These values ensure the radius circle fits comfortably in the viewport
+    if (radiusInMeters <= 500) return 15;
+    if (radiusInMeters <= 1000) return 14;
+    if (radiusInMeters <= 2000) return 13;
+    if (radiusInMeters <= 5000) return 12;
+    return 11;
+  };
+
+  const zoomLevel = getZoomForRadius(radius);
+
+  // Update map center and zoom when user location or radius changes
   useEffect(() => {
     if (mapRef.current && userLocation) {
+      // Pan to user location
       mapRef.current.panTo(userLocation);
+      
+      // Set appropriate zoom level
+      mapRef.current.setZoom(zoomLevel);
+      
+      // Fit bounds to show the entire radius circle with some padding
+      const bounds = new window.google.maps.LatLngBounds();
+      const center = new window.google.maps.LatLng(userLocation.lat, userLocation.lng);
+      
+      // Calculate points on the circle boundary (north, south, east, west)
+      const latOffset = (radius / 111320); // 1 degree latitude ≈ 111.32 km
+      const lngOffset = (radius / (111320 * Math.cos(userLocation.lat * Math.PI / 180)));
+      
+      bounds.extend(new window.google.maps.LatLng(userLocation.lat + latOffset, userLocation.lng));
+      bounds.extend(new window.google.maps.LatLng(userLocation.lat - latOffset, userLocation.lng));
+      bounds.extend(new window.google.maps.LatLng(userLocation.lat, userLocation.lng + lngOffset));
+      bounds.extend(new window.google.maps.LatLng(userLocation.lat, userLocation.lng - lngOffset));
+      
+      // Fit bounds with padding
+      mapRef.current.fitBounds(bounds, {
+        top: 50,
+        right: 50,
+        bottom: 50,
+        left: 50,
+      });
     }
-  }, [userLocation]);
+  }, [userLocation, radius, zoomLevel]);
 
   const onMapLoad = (map) => {
     mapRef.current = map;
+    
+    // Set initial zoom level
+    if (userLocation) {
+      map.setZoom(zoomLevel);
+    }
   };
 
   if (loadError) {
@@ -78,15 +121,18 @@ export default function NearbyMap({
   return (
     <GoogleMap
       mapContainerStyle={mapContainerStyle}
-      zoom={14}
+      zoom={zoomLevel}
       center={center}
       onLoad={onMapLoad}
       options={{
         disableDefaultUI: false,
-        zoomControl: true,
+        zoomControl: false, // Disable zoom controls
         streetViewControl: false,
         mapTypeControl: false,
         fullscreenControl: true,
+        gestureHandling: 'none', // Disable all gestures including zoom
+        scrollwheel: false, // Disable zoom with scroll wheel
+        disableDoubleClickZoom: true, // Disable zoom on double click
       }}
     >
       {/* User location marker */}

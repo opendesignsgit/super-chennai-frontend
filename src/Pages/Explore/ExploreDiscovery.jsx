@@ -52,11 +52,14 @@ export default function ExploreDiscovery() {
 
   // Session storage key
   const SESSION_KEY = "explore_chat_session";
+  const MODE_KEY = "explore_mode";
   const SESSION_EXPIRY = 60 * 60 * 1000; // 1 hour in milliseconds
 
-  // Load messages and filters from session storage on mount
+  // Load messages, filters, and mode from session storage on mount
   useEffect(() => {
     const savedSession = sessionStorage.getItem(SESSION_KEY);
+    const savedMode = sessionStorage.getItem(MODE_KEY);
+    
     if (savedSession) {
       try {
         const { messages: savedMessages, filters: savedFilters, timestamp } = JSON.parse(savedSession);
@@ -69,10 +72,33 @@ export default function ExploreDiscovery() {
         } else {
           // Session expired, clear it
           sessionStorage.removeItem(SESSION_KEY);
+          sessionStorage.removeItem(MODE_KEY);
         }
       } catch (error) {
         console.error("Error loading session:", error);
         sessionStorage.removeItem(SESSION_KEY);
+        sessionStorage.removeItem(MODE_KEY);
+      }
+    }
+    
+    // Restore mode if it was saved
+    if (savedMode) {
+      const parsedMode = JSON.parse(savedMode);
+      if (parsedMode.mode === "nearby" && parsedMode.timestamp) {
+        const now = Date.now();
+        // Check if mode was saved recently (within 1 hour)
+        if (now - parsedMode.timestamp < SESSION_EXPIRY) {
+          // Set mode immediately and start GPS tracking
+          setMode("nearby");
+          // Start GPS tracking after a brief delay to ensure component is mounted
+          setTimeout(() => {
+            isFirstGPSLockRef.current = true;
+            startGPSTracking();
+            detectOrientationSupport();
+          }, 100);
+        } else {
+          sessionStorage.removeItem(MODE_KEY);
+        }
       }
     }
   }, []);
@@ -89,6 +115,15 @@ export default function ExploreDiscovery() {
       sessionStorage.setItem(SESSION_KEY, JSON.stringify(sessionData));
     }
   }, [messages, filters]);
+
+  // Save mode to session storage whenever it changes
+  useEffect(() => {
+    const modeData = {
+      mode,
+      timestamp: Date.now()
+    };
+    sessionStorage.setItem(MODE_KEY, JSON.stringify(modeData));
+  }, [mode]);
 
   // Parse slug on mount if present
   useEffect(() => {
@@ -654,7 +689,8 @@ export default function ExploreDiscovery() {
       navigator.geolocation.clearWatch(nearbyState.gpsWatchId);
     }
     if (orientationListenerRef.current) {
-      window.removeEventListener("deviceorientation", orientationListenerRef.current);
+      window.removeEventListener("deviceorientationabsolute", orientationListenerRef.current, true);
+      window.removeEventListener("deviceorientation", orientationListenerRef.current, true);
       orientationListenerRef.current = null;
     }
   };
@@ -690,12 +726,31 @@ export default function ExploreDiscovery() {
     orientationListenerRef.current = (event) => {
       let heading = null;
       
-      if (event.webkitCompassHeading) {
-        // iOS
+      if (event.webkitCompassHeading !== undefined) {
+        // iOS - webkitCompassHeading gives true compass heading (0-360)
         heading = event.webkitCompassHeading;
-      } else if (event.alpha) {
-        // Android
-        heading = 360 - event.alpha;
+        console.log('iOS compass heading:', heading);
+      } else if (event.alpha !== null) {
+        // Android and other devices
+        // event.alpha: rotation around z-axis (0-360)
+        // For compass heading, we need to account for device orientation
+        // If absolute is true, alpha is relative to true north
+        // If absolute is false or undefined, alpha is relative to device's initial position
+        
+        if (event.absolute) {
+          // Absolute orientation - alpha is relative to true north
+          // alpha = 0 means device is pointing north
+          // We want heading where 0 = north, 90 = east, 180 = south, 270 = west
+          heading = event.alpha;
+        } else {
+          // Relative orientation - need to use compass if available
+          // Fall back to alpha but it won't be accurate for compass direction
+          heading = event.alpha;
+        }
+        
+        // Normalize heading to 0-360 range
+        heading = (heading + 360) % 360;
+        console.log('Android/Other heading:', heading, 'absolute:', event.absolute);
       }
 
       if (heading !== null) {
@@ -706,7 +761,11 @@ export default function ExploreDiscovery() {
       }
     };
 
-    window.addEventListener("deviceorientation", orientationListenerRef.current);
+    // Request absolute orientation if available
+    if (typeof DeviceOrientationEvent !== "undefined") {
+      window.addEventListener("deviceorientationabsolute", orientationListenerRef.current, true);
+    }
+    window.addEventListener("deviceorientation", orientationListenerRef.current, true);
   };
 
   // Handle mode switch
@@ -753,7 +812,8 @@ export default function ExploreDiscovery() {
         navigator.geolocation.clearWatch(nearbyState.gpsWatchId);
       }
       if (orientationListenerRef.current) {
-        window.removeEventListener("deviceorientation", orientationListenerRef.current);
+        window.removeEventListener("deviceorientationabsolute", orientationListenerRef.current, true);
+        window.removeEventListener("deviceorientation", orientationListenerRef.current, true);
       }
     };
   }, [nearbyState.gpsWatchId]);

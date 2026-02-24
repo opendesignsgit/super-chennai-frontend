@@ -56,7 +56,7 @@ export default function NearbyMap({
     // Create map with zoom controls disabled
     const map = L.map(mapContainerRef.current, {
       center: center,
-      zoom: 13,
+      zoom:8,
       zoomControl: false,  // Disable zoom controls
       scrollWheelZoom: false,  // Disable scroll wheel zoom
       doubleClickZoom: false,  // Disable double click zoom

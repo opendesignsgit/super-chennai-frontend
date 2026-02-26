@@ -21,7 +21,7 @@ export default function ArattaiExcelView() {
   useEffect(() => {
     fetchData();
 
-    const interval = setInterval(fetchData, 10000); // live refresh 10 sec
+    const interval = setInterval(fetchData, 600000); // live refresh 10 sec
     return () => clearInterval(interval);
   }, []);
 
@@ -96,7 +96,7 @@ export default function ArattaiExcelView() {
       </div>
 
       <p style={{ marginTop: 10, color: "green" }}>
-        ● Live updating every 10 seconds
+        ● Live updating every 10 Min
       </p>
     </div>
     </>

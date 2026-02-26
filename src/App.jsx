@@ -292,6 +292,7 @@ import HotshotChennaiContest from "./Pages/Activities/HotshotChennai/HotshotChen
 import Conclave from "./Pages/Activities/Conclave/conclave"
 import DevConclave from "./Pages/Activities/Conclave/devCon"
 import ArrattaiWithArangam from "./Pages/Activities/ArattaiWith/arattaiPage"
+import ArattaiExcelView from "./Pages/Activities/ArattaiWith/ArattaiExcelView"
 
 
 
@@ -829,10 +830,10 @@ function App() {
             <Route path="/chennai-conclave" element={<Conclave />} />
             <Route path="/devConclave" element={<DevConclave />} />
              <Route path="/arattai-with-aruna-sairam/carnatic-vocalist" element={<ArrattaiWithArangam />} />
+               <Route path="/arattai-with-aruna-sairam/carnatic-vocalist-live-update" element={<ArattaiExcelView />} />
 
 
-            
-
+    
             {/* conclave */}
             <Route path="/admin-superchennai" element={<AdminView />} />
             <Route path="/neighbourhood" element={<Neighbourhoods />} />

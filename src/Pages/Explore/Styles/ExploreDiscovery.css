@@ -1,4 +1,4 @@
-/* Explore Discovery Page */
+Explore Discovery Page
 .explore-discovery-page {
   min-height: 100vh;
   background-color: #f5f5f5;
@@ -767,5 +767,5 @@
 
 
 .pointcastSticky, .stickyIconsContainer, .FooterBackground, #newsletterId, #hotshots-event-tab, #menifeto-tab{
-  display: none;
+  /* display: none; */
 }

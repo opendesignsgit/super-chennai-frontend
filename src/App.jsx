@@ -247,6 +247,8 @@ import ArticleListPageTest from "./Pages/testAritlce/pages/ArticleListPage"
 
 import ArticleDetailPage from "./Pages/testAritlce/pages/ArticleDetails"
 import MenifestoInfo from "./Pages/Manifesto/menifesto"
+import Download from "./Pages/Manifesto/download"
+
 
 
 
@@ -697,8 +699,9 @@ function App() {
 
             <Route path="/ArticleDetailPage/:slug" element={<ArticleDetailPage />} />
             <Route path="/menifestoInfo" element={<MenifestoInfo />} />
+                          <Route path="/download-manifesto-pdf" element={<Download />} />
 
-
+               
             <Route
               path="/chennai-contests"
               element={<SuperchennaiContests />}

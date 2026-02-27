@@ -243,8 +243,7 @@ export default function ArrattaiWithArangam() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center space-y-4 py-10">
-              {/* Top Line Bar */}
+            {/* <div className="flex flex-col items-center text-center space-y-4 py-10">
 
               <p className="text-rose-600 font-semibold tracking-wide">
                 Limited Seats Only • Register Now
@@ -258,12 +257,7 @@ export default function ArrattaiWithArangam() {
                 On 28<sup>th</sup> Feb, 7 PM
               </p>
 
-              {/* <button
-                onClick={() => setShowRegisterPopup(true)}
-                className="mt-4 bg-purple-700 hover:bg-purple-800 text-white px-10 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition duration-300"
-              >
-                Register Now
-              </button> */}
+             
 
               <button
                 onClick={() => setShowRegisterPopup(true)}
@@ -272,9 +266,7 @@ export default function ArrattaiWithArangam() {
                 Register Now
               </button>
 
-              {/* Bottom Line Bar */}
-              {/* <div className="w-24 h-1 bg-purple-700 rounded-full mt-6"></div> */}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

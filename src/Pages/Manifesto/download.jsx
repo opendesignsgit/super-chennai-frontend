@@ -13,9 +13,19 @@ export default function Download() {
 
   return (
     <>
-      <div className="flex items-center justify-center h-screen">
-        <p>Downloading Manifesto...</p>
-      </div>
+      {/*----------------- Banner ----------------*/}
+        <div className="accaodomationBannerSection">
+          <img src="/images/networks-banner.jpg" alt="chennai networks" />
+          <div className="accodoamationBannerContainer">
+            <div className="accodoamationBannerText">
+              <h3>manifesto</h3>
+              
+            </div>
+          </div>
+          <div className="notHomePageSearch">
+          
+          </div>
+        </div>
 
       <div style={{ padding: 20 }}>
         <iframe

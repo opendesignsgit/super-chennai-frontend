@@ -2,25 +2,21 @@
 export default function menifestoInfo() {
   return (
     <>
-      <section className="relative h-[50vh] overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            className="hidden sm:block w-full h-full object-cover"
-            src="https://www.superchennai.com/images/Work-Images/SubPages/career-growth.jpg"
-            alt="Carnatic Vocalist"
-          />
-
-          <img
-            className="block sm:hidden w-full h-full object-cover"
-            src="https://www.superchennai.com/images/Work-Images/SubPages/career-growth.jpg"
-            alt="Aruna sairam"
-          />
+          {/*----------------- Banner ----------------*/}
+        <div className="accaodomationBannerSection">
+          <img src="/images/networks-banner.jpg" alt="chennai networks" />
+          <div className="accodoamationBannerContainer">
+            <div className="accodoamationBannerText">
+              <h3>Networks</h3>
+              <div className="breadCrum">
+                <Link to="/."> Home </Link> - <a href="">Networks</a>
+              </div>
+            </div>
+          </div>
+          <div className="notHomePageSearch">
+            <Search />
+          </div>
         </div>
-
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="accodoamationBannerText"></div>
-        </div>
-      </section>
       <div style={{ padding: 20 }}>
         <iframe
           src="/pdfs/file-example_PDF_1MB.pdf"

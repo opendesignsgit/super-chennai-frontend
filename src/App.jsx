@@ -570,7 +570,6 @@ function App() {
             />
           )}
 
-
           {/* )} */}
 
           <div
@@ -615,11 +614,11 @@ function App() {
               <img src="/images/threads.png" alt="Twitter" />
             </a>
           </div>
-          
-           {!hideOnMargazhiPage && (
+
+          {!hideOnMargazhiPage && (
             <div
-            id="menifeto-tab"
-            ref={stickyRef}
+              id="menifeto-tab"
+              ref={stickyRef}
               className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest manifesto${
                 footerReached ? "footerreached" : ""
               }`}
@@ -697,11 +696,13 @@ function App() {
               element={<ArticleDetailPage />}
             /> */}
 
-            <Route path="/ArticleDetailPage/:slug" element={<ArticleDetailPage />} />
+            <Route
+              path="/ArticleDetailPage/:slug"
+              element={<ArticleDetailPage />}
+            />
             <Route path="/menifestoInfo" element={<MenifestoInfo />} />
-                          <Route path="/download-manifesto-pdf" element={<Download />} />
+            <Route path="/download-manifesto-pdf" element={<Download />} />
 
-               
             <Route
               path="/chennai-contests"
               element={<SuperchennaiContests />}
@@ -833,11 +834,15 @@ function App() {
 
             <Route path="/chennai-conclave" element={<Conclave />} />
             <Route path="/devConclave" element={<DevConclave />} />
-             <Route path="/arattai-with-aruna-sairam/carnatic-vocalist" element={<ArrattaiWithArangam />} />
-               <Route path="/arattai-with-aruna-sairam/carnatic-vocalist-live-update" element={<ArattaiExcelView />} />
+            <Route
+              path="/arattai-with-aruna-sairam/carnatic-vocalist"
+              element={<ArrattaiWithArangam />}
+            />
+            <Route
+              path="/arattai-with-aruna-sairam/carnatic-vocalist-live-update"
+              element={<ArattaiExcelView />}
+            />
 
-
-    
             {/* conclave */}
             <Route path="/admin-superchennai" element={<AdminView />} />
             <Route path="/neighbourhood" element={<Neighbourhoods />} />
@@ -1392,9 +1397,11 @@ function App() {
             <Route path="/about-us" element={<About />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
-            <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
+            <Route
+              path="/TermsAndConditions"
+              element={<TermsAndConditions />}
+            />
 
-            
             <Route
               path="/icon-of-the-july-month"
               element={<Iconofthemonth />}
@@ -1455,7 +1462,10 @@ function App() {
             <Route path="/quizform" element={<QuizForm />} />
             <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
             {/* ChennaiQuiz */}
-            <Route path="/trending-chennai/:slug" element={<TrendingDetails />} />
+            <Route
+              path="/trending-chennai/:slug"
+              element={<TrendingDetails />}
+            />
             <Route path="/eventsimman" element={<EventsImman />} />
             <Route path="/eventsvishal" element={<EventsVishal />} />
             <Route path="/eventsspeed" element={<EventsSpeed />} />

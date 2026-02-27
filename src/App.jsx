@@ -246,7 +246,7 @@ import AllArticleList from "./../src/Pages/Articles/articles"
 import ArticleListPageTest from "./Pages/testAritlce/pages/ArticleListPage"
 
 import ArticleDetailPage from "./Pages/testAritlce/pages/ArticleDetails"
-
+import MenifestoInfo from "./Pages/Manifesto/menifesto"
 
 
 
@@ -696,6 +696,7 @@ function App() {
             /> */}
 
             <Route path="/ArticleDetailPage/:slug" element={<ArticleDetailPage />} />
+            <Route path="/menifestoInfo" element={<MenifestoInfo />} />
 
 
             <Route

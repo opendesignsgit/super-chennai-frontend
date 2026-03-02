@@ -235,6 +235,8 @@ const Footer = () => {
     { title: "Chennai-app", link: "/chennai-apps" },
     { title: "Conclave", link: "/chennai-conclave" },
   ];
+
+
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -497,6 +499,9 @@ const Footer = () => {
             </AnimatePresence>
           </div> */}
 
+
+          
+
           <div className="SectionLeft1">
             <h3
               className="FooterHeading"
@@ -637,6 +642,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      
       <div className="SectionConatinerSecond max-w-7xl mx-auto px-4">
         <div className="containerSection">
           <div className="SectionLeft1">
@@ -673,6 +679,7 @@ const Footer = () => {
               )}
             </AnimatePresence>
           </div>
+          
           {/* <div className="SectionLeft1">
             <h3 className="FooterHeading" onClick={() => setIsOpen3(!isOpen3)}>
               Volunteer
@@ -767,6 +774,45 @@ const Footer = () => {
               )}
             </AnimatePresence>
           </div>
+
+          {/* <div className="footerQr">
+  <h4>Manifesto</h4>
+
+  <img
+    src="/images/manifesto-qr.png"
+    alt="Download Manifesto"
+    className="footerQrImage"
+  />
+
+  <p className="qrSmallText">Scan to Download PDF</p>
+
+  <a href="/download" className="qrDownloadBtn">
+    Download Now
+  </a>
+</div> */}
+{/* 
+<div className="flex flex-col items-center text-center">
+  <h4 className="text-lg font-semibold mb-3">
+    Manifesto
+  </h4>
+
+  <img
+    src="/images/manifesto-qr.png"
+    alt="Download Manifesto"
+    className="w-32 h-32 object-contain bg-white p-2 rounded-md mx-auto"
+  />
+
+  <p className="text-sm mt-2 opacity-80">
+    Scan to Download PDF
+  </p>
+
+  <a
+    href="/download"
+    className="mt-3 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-md text-sm transition"
+  >
+    Download Now
+  </a>
+</div> */}
         </div>
       </div>
       <div className="SectionConatinerSecond1 max-w-7xl mx-auto px-4">
@@ -829,6 +875,18 @@ const Footer = () => {
               </a>
             </div>
           </div>
+{/* 
+          <div className="qrSection">
+            <h4 className="qrTitle">Download Manifesto</h4>
+
+            <img
+              src="/images/manifesto-qr.png"
+              alt="Download Manifesto QR"
+              className="qrImage"
+            />
+
+            <p className="qrText">Scan to download PDF</p>
+          </div> */}
         </div>
       </div>
 

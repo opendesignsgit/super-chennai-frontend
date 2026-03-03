@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { API_BASE_URL_API } from "../../../config";
+import { useEffect, useRef } from "react";
 
 export default function Manifesto() {
   const navigate = useNavigate();
@@ -117,16 +118,21 @@ export default function Manifesto() {
     }
   };
 
+    const [scrollDir, setScrollDir] = useState("left");
+    const lastScrollY = useRef(0);
+    const bgTextRef = useRef(null);
+    const carouselRef = useRef();
+
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
-        {/* ============== Banner ============ */}
+      {/* ============== Banner ============ */}
       <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/aruna-inne-main-image.jpeg"
+            src="/images/manifesto-innerpage-banner.png"
             alt=" Carnatic Vocalist"
           />
 
@@ -142,7 +148,7 @@ export default function Manifesto() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-6 lg:px-0">
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves ">
@@ -200,9 +206,85 @@ export default function Manifesto() {
           </div>
         </div>
       
-      </section>
+      </section> */}
 
+   <section className="accaodomationBannerSection mt-10">
+  <div className="container max-w-7xl mx-auto px-4">
+    
+    <div className="InvestChennaiContent-conclaves mb-8">
+      <h3 className="text-center text-2xl md:text-3xl ">
+        Manifesto in Your Hands
+      </h3>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       
+      {/* LEFT IMAGE */}
+      <div className="flex justify-center lg:justify-start">
+        <img
+          src="/images/blub.svg"
+          alt="Manifesto"
+          className="w-72 h-72 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px]"
+        />
+      </div>
+
+      {/* RIGHT CONTENT */}
+      <div className="text-center lg:text-left">
+        <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+          The future of Chennai is shaped by the aspirations of its people.
+        </h2>
+
+        <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+          Reason why, Super Chennai organised a day-long Conclave that brought together industry leaders, urban planners, administrators, thought leaders and citizens. The Conclave discussed and curated ideas across five defining pillars: Live, Work, Visit, Innovate and Invest.
+        </p>
+
+        <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
+          Suffice to say, incredible insights were collated. And they have been put together as a Manifesto on what the people wish for, from Super Chennai.
+        </p>
+
+        <button
+          onClick={() => setShowRegisterPopup(true)}
+          className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
+        >
+          Register & Download
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden mb-20">
+        <div className=" container max-w-7xl mx-auto px-4">   
+          <div className="volunteerRow">
+            <img
+              src="/images/conclave- about-left.jpeg"
+              alt="volunteer work in chennai"
+              className="w-[150px] h-[500px] object-cover rounded-lg"
+            />
+            <div className="volunteeerMainContent">
+              <h2 class="hidden"></h2>
+              <h3>A City Shaped by Its People</h3>
+              <p className="paraZeroVolunteerSection">
+                The Super Chennai Conclave is a one-day strategic gathering
+                designed to shape the future of Chennai through collaboration,
+                insight, and action.
+              </p>
+              <p className="paraoneVolunteerSection">
+                It brings together policymakers, industry leaders, urban
+                planners, academics, and subject-matter experts to collectively
+                address the city’s most urgent urban challenges and unlock new
+                opportunities for sustainable growth.
+              </p>
+              <p className="paraTwoVolunteerSection">
+                This conclave goes beyond discussion — it is focused on outcomes
+                that can influence policy, investment, and long-term city
+                transformation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> */}
 
       {/* ================= POPUP ================= */}
 
@@ -243,7 +325,6 @@ export default function Manifesto() {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
                   <input
                     name="name"
                     placeholder="Name *"
@@ -312,7 +393,6 @@ export default function Manifesto() {
                     value={form.designation}
                     onChange={handleChange}
                   />
-
                 </div>
 
                 {/* FULL WIDTH TEXTAREA (same spacing system) */}
@@ -332,7 +412,6 @@ export default function Manifesto() {
                 >
                   {loading ? "Processing..." : "Submit & Download Manifesto"}
                 </button>
-
               </form>
             </motion.div>
           </motion.div>

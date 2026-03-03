@@ -91,13 +91,23 @@ export default function Manifesto() {
 
       toast.success("Manifesto submitted successfully!");
       /* ✅ DOWNLOAD PDF AFTER SUCCESS */
-      const link = document.createElement("a");
-      link.href = "/pdfs/manifesto.pdf"; // same domain
-      link.download = "SuperChennai-Manifesto.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+     // ✅ AUTO DOWNLOAD PDF (reliable method)
+const response = await axios.get("/pdfs/manifesto.pdf", {
+  responseType: "blob",
+});
 
+const url = window.URL.createObjectURL(new Blob([response.data]));
+const link = document.createElement("a");
+link.href = url;
+link.setAttribute("download", "SuperChennai-Manifesto.pdf");
+document.body.appendChild(link);
+link.click();
+link.remove();
+window.URL.revokeObjectURL(url);
+
+setTimeout(() => {
+  navigate("/thank-you", { state: { from: "manifesto" } });
+}, 1000);
       setForm({
         name: "",
         email: "",
@@ -186,7 +196,6 @@ Solve traditional urban planning issues using AI.
 
   return (
     <>
-      <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
       {/* ============== Banner ============ */}
       <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
@@ -598,6 +607,10 @@ Solve traditional urban planning issues using AI.
           </motion.div>
         )}
       </AnimatePresence>
+
+
+            <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
+
     </>
   );
 }

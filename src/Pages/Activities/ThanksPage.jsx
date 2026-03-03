@@ -122,15 +122,16 @@ export default function Thankyou() {
               <h1>You're Registered!</h1>
 
               <p>
-                Thank you for registering for the{" "}
-                <strong>Super Chennai Conclave</strong>.
+              Thank you for downloading the {" "}
+                <strong>Super Chennai Manifesto</strong>.
               </p>
 
               <p>
-                We appreciate your interest. Your registration is under review,
-                and your participation is confirmed only upon receiving an email
-                from our team.
+This document represents collective aspirations for Chennai’s future. We hope it informs, inspires, and encourages meaningful participation.
+
               </p>
+              <p>Stay engaged. Stay informed.</p>
+              <p>Chennai’s future is built by its citizens.</p>
 
            
             </div>

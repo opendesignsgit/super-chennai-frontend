@@ -119,12 +119,13 @@ export default function Thankyou() {
 
              {from === "manifesto" && (
             <div className="workIntro">
-              <h1>You're Registered!</h1>
+              <h1>Thank you for downloading the Super Chennai Manifesto.
+</h1>
 
-              <p>
+              {/* <p>
               Thank you for downloading the {" "}
                 <strong>Super Chennai Manifesto</strong>.
-              </p>
+              </p> */}
 
               <p>
 This document represents collective aspirations for Chennai’s future. We hope it informs, inspires, and encourages meaningful participation.

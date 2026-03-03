@@ -117,6 +117,25 @@ export default function Thankyou() {
             </div>
           )}
 
+             {from === "manifesto" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+
+              <p>
+                Thank you for registering for the{" "}
+                <strong>Super Chennai Conclave</strong>.
+              </p>
+
+              <p>
+                We appreciate your interest. Your registration is under review,
+                and your participation is confirmed only upon receiving an email
+                from our team.
+              </p>
+
+           
+            </div>
+          )}
+
           {from === "arattai" && (
             <div className="workIntro">
               <h1>You're Registered!</h1>

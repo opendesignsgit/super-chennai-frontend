@@ -590,6 +590,12 @@
     object-fit: cover;
     /* object-position: bottom; */
   }
+
+    .accaodomationBannerSection-manifesto img {
+    height: 400px;
+    object-fit: cover;
+    /* object-position: bottom; */
+  }
   /* Banner Section  */
   .AccodomationTextBackground {
     top: 1%;

@@ -23,7 +23,7 @@ export default function Manifesto() {
     otp: "",
     companyName: "",
     designation: "",
-    manifesto: "",
+    manifesto: "tesxt area formas",
   });
 
   const handleChange = (e) => {
@@ -34,6 +34,7 @@ export default function Manifesto() {
   /* ================= SEND OTP ================= */
 
   const sendOtp = async () => {
+
     if (!form.phone) {
       toast.error("Enter phone number");
       return;
@@ -65,10 +66,10 @@ export default function Manifesto() {
       return;
     }
 
-    if (!form.manifesto) {
-      toast.error("Manifesto is required");
-      return;
-    }
+    // if (!form.manifesto) {
+    //   toast.error("Manifesto is required");
+    //   return;
+    // }
 
     const payload = {
       name: sanitize(form.name),
@@ -85,7 +86,7 @@ export default function Manifesto() {
 
       await axios.post(
         `${API_BASE_URL_API}/manifesto/manifesto/verify-otp`,
-        payload
+        payload,
       );
 
       toast.success("Manifesto submitted successfully!");
@@ -93,10 +94,9 @@ export default function Manifesto() {
       const link = document.createElement("a");
       link.href = "/pdfs/manifesto.pdf"; // same domain
       link.download = "SuperChennai-Manifesto.pdf";
-      document.body.appendChild(link);  
+      document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-
 
       setForm({
         name: "",
@@ -106,11 +106,11 @@ export default function Manifesto() {
         otp: "",
         companyName: "",
         designation: "",
-        manifesto: "",
+         manifesto: `I envision a future where Chennai becomes a hub of innovation, sustainability, and inclusive growth...`,
+
       });
 
       navigate("/thank-you", { state: { from: "manifesto" } });
-
     } catch (err) {
       toast.error(err?.response?.data?.message || "Submission failed");
     } finally {
@@ -118,10 +118,71 @@ export default function Manifesto() {
     }
   };
 
-    const [scrollDir, setScrollDir] = useState("left");
-    const lastScrollY = useRef(0);
-    const bgTextRef = useRef(null);
-    const carouselRef = useRef();
+  const [scrollDir, setScrollDir] = useState("left");
+  const lastScrollY = useRef(0);
+  const bgTextRef = useRef(null);
+  const carouselRef = useRef();
+
+  const volunteerSections = [
+    {
+      title: "LIVE",
+      description: `
+Create a Digital Information Infrastructure for the public.
+Retain tag as 'India’s Safest Big City'.
+Implement accessibility in public infrastructure projects.
+    `,
+      image: "/images/LIVE (2).svg",
+    },
+    {
+      title: "VISIT",
+      description: `
+Fast-track Parandur Airport.
+Formally recognise & fund the East Coast Surf Corridor.
+Promote nightlife & year-round cultural programs.
+    `,
+      image: "/images/VISIT.svg",
+    },
+    {
+      title: "WORK",
+      description: `
+Popularise Chennai as India’s original IT Hub.
+Focus on advanced manufacturing & robotics.
+Guide corporates to achieve 50–50 gender balance.
+    `,
+      image: "/images/WORK.svg",
+    },
+    {
+      title: "INVEST",
+      description: `
+Establish state-backed ‘Fund-of-Funds’ to invest in VCs.
+Create a 10,000 Crore AI Park.
+Push an ‘Equity-Participation’ model in top colleges.
+    `,
+      image: "/images/INVEST (2).svg",
+    },
+    {
+      title: "INNOVATE",
+      description: `
+Create a strong testing framework to support GCCs.
+Celebrate homegrown innovations under 'Chennai Brands'.
+Solve traditional urban planning issues using AI.
+    `,
+      image: "/images/INNOVATE.svg",
+    },
+  ];
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [animate, setAnimate] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    description: "",
+  });
+
+  const popupFunction = () => {
+    setIsOpen(true);
+  };
 
   return (
     <>
@@ -138,7 +199,7 @@ export default function Manifesto() {
 
           <img
             className="block sm:hidden w-full"
-            src="/images/inner-page-araattai-image.jpeg"
+            src="/images/manifesto-mobile.jpeg"
             alt="Aruna sairam"
           />
         </div>
@@ -208,51 +269,156 @@ export default function Manifesto() {
       
       </section> */}
 
-   <section className="accaodomationBannerSection mt-10">
-  <div className="container max-w-7xl mx-auto px-4">
-    
-    <div className="InvestChennaiContent-conclaves mb-8">
-      <h3 className="text-center text-2xl md:text-3xl ">
-        Manifesto in Your Hands
-      </h3>
-    </div>
+      <section className=" mt-10 manifestoSection pb-20 relative">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="InvestChennaiContent-conclaves mb-8">
+            <h3 className="text-center text-2xl md:text-3xl ">
+              Manifesto in Your Hands
+            </h3>
+          </div>
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      
-      {/* LEFT IMAGE */}
-      <div className="flex justify-center lg:justify-start">
-        <img
-          src="/images/blub.svg"
-          alt="Manifesto"
-          className="w-72 h-72 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px]"
-        />
-      </div>
+          <div className="  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="bulb-wrapper accaodomationBannerSection">
+              <img
+                src="/images/blub.svg"
+                alt="Manifesto"
+                className="w-72 h-72 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px]"
+              />
+            </div>
 
-      {/* RIGHT CONTENT */}
-      <div className="text-center lg:text-left">
-        <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
-          The future of Chennai is shaped by the aspirations of its people.
-        </h2>
+            <div className="w-full mt-10 grid grid-cols-1 gap-4 justify-items-center sm:hidden">
+              <img
+                src="/images/VISIT-IMG-1.svg"
+                alt="circle1"
+                className="w-60 "
+              />
+              <img src="/images/WORK-IMG2.svg" alt="circle2" className="w-60" />
+              <img src="/images/INV-IMG-4.svg" alt="circle3" className="w-60" />
+              <img src="/images/LIVE-IMH3.svg" alt="circle4" className="w-60" />
+              <img
+                src="/images/INVEST-IMG5.svg"
+                alt="circle5"
+                className="w-60"
+              />
+            </div>
 
-        <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
-          Reason why, Super Chennai organised a day-long Conclave that brought together industry leaders, urban planners, administrators, thought leaders and citizens. The Conclave discussed and curated ideas across five defining pillars: Live, Work, Visit, Innovate and Invest.
-        </p>
+            <div className="text-center lg:text-left mb-8 lg:mb-0">
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                The future of Chennai is shaped by the aspirations of its
+                people.
+              </h2>
 
-        <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
-          Suffice to say, incredible insights were collated. And they have been put together as a Manifesto on what the people wish for, from Super Chennai.
-        </p>
+              <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+                Reason why, Super Chennai organised a day-long Conclave that
+                brought together industry leaders, urban planners,
+                administrators, thought leaders and citizens. The Conclave
+                discussed and curated ideas across five defining pillars:.
+              </p>
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                Live, Work, Visit, Innovate and Invest
+              </h2>
 
-        <button
-          onClick={() => setShowRegisterPopup(true)}
-          className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
-        >
-          Register & Download
-        </button>
-      </div>
+              <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
+                Suffice to say, incredible insights were collated. And they have
+                been put together as a Manifesto on what the people wish for,
+                from Super Chennai.
+              </p>
 
-    </div>
-  </div>
-</section>
+              <button
+                onClick={() => setShowRegisterPopup(true)}
+                className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
+              >
+                Register & Download
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full flex justify-center gap-10  flex-wrap hidden sm:flex">
+          <img
+            src="/images/VISIT-IMG-1.svg"
+            alt="circle1"
+            className="w-24 sm:w-32 lg:w-70"
+          />
+          <img
+            src="/images/WORK-IMG2.svg"
+            alt="circle2"
+            className="w-24 sm:w-32 lg:w-60"
+          />
+          <img
+            src="/images/INV-IMG-4.svg"
+            alt="circle3"
+            className="w-24 sm:w-32 lg:w-50"
+          />
+          <img
+            src="/images/LIVE-IMH3.svg"
+            alt="circle4"
+            className="w-24 sm:w-32 lg:w-40"
+          />
+          <img
+            src="/images/INVEST-IMG5.svg"
+            alt="circle5"
+            className="w-24 sm:w-32 lg:w-50"
+          />
+        </div>
+      </section>
+
+      {/* <div className="text-center text-black textOverrideBlackCenter mt-20 mb-10">
+        <div className="VolunteerBecameavolunteer">
+          <h3 className="text-black">Manifesto in Your Hands</h3>
+
+          <p className="text-black">
+            Reason why, Super Chennai organised a day-long Conclave that brought
+            together industry leaders, urban planners, administrators, thought
+            leaders and citizens. The Conclave discussed and curated ideas
+            across five defining pillars:
+          </p>
+        </div>
+
+        <div>
+          <div className="container max-w-7xl mx-auto px-4 ">
+            {volunteerSections.map((section, index) => (
+              <div className="DigitalSectionFLex text-center" key={index}>
+                {index % 2 === 0 ? (
+                  <>
+                    <img
+                      src={section.image}
+                      alt={section.imgAlt}
+                      className="mx-auto w-40 sm:w-80 md:w-40 lg:w-[10px] h-auto"
+                    />
+
+                    <div className="BecamaAVolunterContentsSection text-black">
+                      <h3>{section.title}</h3>
+                      <p>{section.description}</p>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="BecamaAVolunterContentsSection text-black">
+                      <h3>{section.title}</h3>
+                      <p>{section.description}</p>
+                    </div>
+
+                    <img
+                      src={section.image}
+                      alt={section.imgAlt}
+                      className="mx-auto w-40 sm:w-80 md:w-40 lg:w-[10px] h-auto"
+                    />
+                  </>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="mb-20 mt-10">
+            <button
+              onClick={() => setShowRegisterPopup(true)}
+              className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
+            >
+              Register & Download
+            </button>
+          </div>
+        </div>
+      </div> */}
 
       {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden mb-20">
         <div className=" container max-w-7xl mx-auto px-4">   
@@ -396,6 +562,7 @@ export default function Manifesto() {
                 </div>
 
                 {/* FULL WIDTH TEXTAREA (same spacing system) */}
+                <div className="hidden">
                 <textarea
                   name="manifesto"
                   placeholder="Write your Manifesto *"
@@ -404,6 +571,20 @@ export default function Manifesto() {
                   onChange={handleChange}
                   required
                 />
+                </div>
+
+
+                {/* HIDDEN TEXTAREA */}
+                {/* <div className="hidden">
+                  <textarea
+                    name="manifesto"
+                    value={
+                      form.manifesto ||
+                      `I envision a future where Chennai becomes a hub of innovation, sustainability, and inclusive growth...`
+                    }
+                    onChange={handleChange}
+                  />
+                </div> */}
 
                 <button
                   type="submit"

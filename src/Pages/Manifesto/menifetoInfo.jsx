@@ -313,15 +313,13 @@ Solve traditional urban planning issues using AI.
 
             <div className="text-center lg:text-left mb-8 lg:mb-0">
               <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
-                The future of Chennai is shaped by the aspirations of its
-                people.
+                DELIVERING THE MANIFESTO IS NOW IN YOUR HANDS
+
               </h2>
 
               <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
-                Reason why, Super Chennai organised a day-long Conclave that
-                brought together industry leaders, urban planners,
-                administrators, thought leaders and citizens. The Conclave
-                discussed and curated ideas across five defining pillars:.
+               The future of Chennai is shaped by the aspirations of its people.
+Reason why, Super Chennai organised a day-long Conclave that brought together industry leaders, urban planners, administrators, thought leaders and citizens. The Conclave discussed and curated ideas across five defining pillars: Live, Work, Visit, Innovate and Invest. 
               </p>
               <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
                 Live, Work, Visit, Innovate and Invest

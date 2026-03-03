@@ -249,7 +249,7 @@ import ArticleDetailPage from "./Pages/testAritlce/pages/ArticleDetails"
 import MenifestoInfo from "./Pages/Manifesto/menifesto"
 import Download from "./Pages/Manifesto/download"
 
-
+import ManifestoPageInfoPAge from "./Pages/Manifesto/menifetoInfo"
 
 
 import ScrollToHashElement from "./Components/ScrollToHashElement";
@@ -702,6 +702,9 @@ function App() {
             />
             <Route path="/menifestoInfo" element={<MenifestoInfo />} />
             <Route path="/download-manifesto-pdf" element={<Download />} />
+                        <Route path="/Manifesto-info" element={<ManifestoPageInfoPAge />} />
+
+            
 
             <Route
               path="/chennai-contests"

@@ -4,13 +4,15 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import { API_BASE_URL_API } from "../../../../config";
-import InstagramReelsMarquee from "./component/creative"
+import { API_BASE_URL_API } from "../../../config";
 
-export default function ArrattaiWithArangam() {
+export default function Manifesto() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [otpSent, setOtpSent] = useState(false);
+  const [showRegisterPopup, setShowRegisterPopup] = useState(false);
+
+  const sanitize = (v = "") => v.replace(/[<>]/g, "");
 
   const [form, setForm] = useState({
     name: "",
@@ -18,17 +20,16 @@ export default function ArrattaiWithArangam() {
     phone: "",
     countryCode: "+91",
     otp: "",
-    age: "",
-    gender: "",
+    companyName: "",
+    designation: "",
+    manifesto: "",
   });
 
-  const [showRegisterPopup, setShowRegisterPopup] = useState(false);
-  const sanitize = (v = "") => v.replace(/[<>]/g, "");
-  /* ================= HELPER  ================= */
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((p) => ({ ...p, [name]: value }));
   };
+
   /* ================= SEND OTP ================= */
 
   const sendOtp = async () => {
@@ -40,7 +41,7 @@ export default function ArrattaiWithArangam() {
     try {
       setLoading(true);
 
-      await axios.post(`${API_BASE_URL_API}/arattai/arattai/send-otp`, {
+      await axios.post(`${API_BASE_URL_API}/manifesto/manifesto/send-otp`, {
         phone: `${form.countryCode}${form.phone}`,
       });
 
@@ -55,7 +56,7 @@ export default function ArrattaiWithArangam() {
 
   /* ================= SUBMIT ================= */
 
-  const submitArattaiForm = async (e) => {
+  const submitManifesto = async (e) => {
     e.preventDefault();
 
     if (!otpSent || !form.otp) {
@@ -63,8 +64,8 @@ export default function ArrattaiWithArangam() {
       return;
     }
 
-    if (!form.age || !form.gender) {
-      toast.error("Age and Gender are required");
+    if (!form.manifesto) {
+      toast.error("Manifesto is required");
       return;
     }
 
@@ -73,16 +74,28 @@ export default function ArrattaiWithArangam() {
       email: form.email,
       phone: `${form.countryCode}${form.phone}`,
       otp: form.otp,
-      age: form.age,
-      gender: form.gender,
+      companyName: sanitize(form.companyName),
+      designation: sanitize(form.designation),
+      manifesto: sanitize(form.manifesto),
     };
 
     try {
       setLoading(true);
 
-      await axios.post(`${API_BASE_URL_API}/arattai/arattai/verify-otp`, payload);
+      await axios.post(
+        `${API_BASE_URL_API}/manifesto/manifesto/verify-otp`,
+        payload
+      );
 
-      toast.success("Registration successful!");
+      toast.success("Manifesto submitted successfully!");
+      /* ✅ DOWNLOAD PDF AFTER SUCCESS */
+      const link = document.createElement("a");
+      link.href = "/pdfs/manifesto.pdf"; // same domain
+      link.download = "SuperChennai-Manifesto.pdf";
+      document.body.appendChild(link);  
+      link.click();
+      document.body.removeChild(link);
+
 
       setForm({
         name: "",
@@ -90,106 +103,25 @@ export default function ArrattaiWithArangam() {
         phone: "",
         countryCode: "+91",
         otp: "",
-        age: "",
-        gender: "",
+        companyName: "",
+        designation: "",
+        manifesto: "",
       });
 
-      navigate("/thank-you", { state: { from: "arattai" } });
+      navigate("/thank-you", { state: { from: "manifesto" } });
+
     } catch (err) {
-      toast.error(err?.response?.data?.message || "OTP verification failed");
+      toast.error(err?.response?.data?.message || "Submission failed");
     } finally {
       setLoading(false);
     }
   };
 
-
-  const arattaiSchema = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      name: "Arattai with Aruna Sairam",
-      description:
-        "Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalists, their legacy, and the city’s enduring contribution to classical music culture.",
-      image: "https://www.superchennai.com/images/aruna-inne-main-image.jpeg",
-      startDate: "2026-02-28T19:00",
-      endDate: "2026-02-28T22:00",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      location: {
-        "@type": "Place",
-        name: "",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "",
-          addressLocality: "",
-          postalCode: "",
-          addressCountry: "",
-        },
-      },
-      performer: {
-        "@type": "MusicGroup",
-        name: "Aruna Sairam",
-      },
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Super Chennai",
-          item: "https://www.superchennai.com/",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Arattai with Aruna Sairam",
-          item: "https://www.superchennai.com/arattai-with-aruna-sairam/carnatic-vocalist",
-        },
-      ],
-    },
-  ];
-
-  
-
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
-      <Helmet>
-        <title>
-          Chennai’s Iconic Carnatic Vocalist - Arattai with Aruna Sairam
-        </title>
-        <meta
-          name="description"
-          content="Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalist, their legacy, and the city’s enduring contribution to classical music culture.."
-        />
-        <meta
-          property="og:title"
-          content=" Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalists, their legacy, and the city’s enduring contribution to classical music culture."
-        />
-        <meta
-          property="og:description"
-          content=" Join Arattai with Aruna Sairam to celebrate Chennai’s Carnatic vocalists, their legacy, and the city’s enduring contribution to classical music culture."
-        />
-        <meta
-          property="og:image"
-          content="https://www.superchennai.com/images/aruna-innerpage.jpeg"
-        />
-        <meta
-          property="og:url"
-          content="https://www.superchennai.com/images/aruna-innerpage.jpeg"
-        />
-        <link
-          rel="canonical"
-          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-aruna-sairam/carnatic-vocalist`}
-        />
 
-        <script type="application/ld+json">
-          {JSON.stringify(arattaiSchema)}
-        </script>
-      </Helmet>
-      {/* ============== Banner ============ */}
+        {/* ============== Banner ============ */}
       <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
         <div className="relative z-0">
           <img
@@ -245,34 +177,34 @@ export default function ArrattaiWithArangam() {
               </p>
             </div>
 
-            {/* <div className="flex flex-col items-center text-center space-y-4 py-10">
+              <div className="container mx-auto px-6 lg:px-0">
+          <div className="max-w-4xl mx-auto text-center">
 
-              <p className="text-rose-600 font-semibold tracking-wide">
-                Limited Seats Only • Register Now
-              </p>
+                        <h2 class=" themelink-color formheadingtheme-arattai">
+                Submit Your Manifesto</h2>
 
-              <h2 class=" themelink-color formheadingtheme-arattai">
-                Join Us for a Conversation with the Legend
-              </h2>
+            <p className="text-gray-600 leading-relaxed mb-10">
+              Share your vision and ideas for shaping the future.
+            </p>
 
-              <p className="text-gray-600 text-lg">
-                On 28<sup>th</sup> Feb, 7 PM
-              </p>
+            <button
+              onClick={() => setShowRegisterPopup(true)}
+              className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button"
+            >
+             Register & Download Manifesto
+            </button>
 
-             
+          </div>
+        </div>
 
-              <button
-                onClick={() => setShowRegisterPopup(true)}
-                class="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button "
-              >
-                Register Now
-              </button>
-
-            </div> */}
           </div>
         </div>
       
       </section>
+
+      
+
+      {/* ================= POPUP ================= */}
 
       <AnimatePresence>
         {showRegisterPopup && (
@@ -291,7 +223,6 @@ export default function ArrattaiWithArangam() {
               transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
             >
-              {/* CLOSE */}
               <button
                 onClick={() => setShowRegisterPopup(false)}
                 className="absolute top-4 right-4 text-2xl font-bold text-gray-600"
@@ -299,21 +230,20 @@ export default function ArrattaiWithArangam() {
                 ×
               </button>
 
-              {/* FORM CONTENT */}
               <form
-                onSubmit={submitArattaiForm}
+                onSubmit={submitManifesto}
                 className="p-6 md:p-10 space-y-4 max-h-[90vh] overflow-y-auto"
               >
                 <h2 className="themelink-color formheadingtheme text-center">
-                  Register to express interest
+                  Manifesto Submission
                 </h2>
 
                 <p className="text-gray-600 text-center">
-                  Be part of a curated group shaping Chennai’s future.
+                  Be part of shaping Chennai’s future.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {/* Name */}
+
                   <input
                     name="name"
                     placeholder="Name *"
@@ -323,7 +253,6 @@ export default function ArrattaiWithArangam() {
                     required
                   />
 
-                  {/* Email */}
                   <input
                     type="email"
                     name="email"
@@ -334,16 +263,13 @@ export default function ArrattaiWithArangam() {
                     required
                   />
 
-                  {/* Mobile + OTP */}
                   <div className="relative">
                     <input
                       name="phone"
-                      placeholder="Enter 10 digit mobile number *"
+                      placeholder="Enter mobile number *"
                       className="border p-3 pr-28 rounded-lg w-full"
                       value={form.phone}
                       onChange={handleChange}
-                      maxLength={10}
-                      pattern="[6-9]{1}[0-9]{9}"
                       disabled={otpSent}
                       required
                     />
@@ -353,7 +279,7 @@ export default function ArrattaiWithArangam() {
                         type="button"
                         onClick={sendOtp}
                         className="absolute right-2 top-1/2 -translate-y-1/2 
-                          bg-[#8b3c82] text-white text-sm px-4 py-2 rounded-md"
+                        bg-[#8b3c82] text-white text-sm px-4 py-2 rounded-md"
                       >
                         Send OTP
                       </button>
@@ -371,41 +297,42 @@ export default function ArrattaiWithArangam() {
                     />
                   )}
 
-                  {/* Age */}
                   <input
-                    type="number"
-                    name="age"
-                    placeholder="Age *"
+                    name="companyName"
+                    placeholder="Company Name"
                     className="border p-3 rounded-lg"
-                    value={form.age}
+                    value={form.companyName}
                     onChange={handleChange}
-                    min="10"
-                    max="100"
-                    required
                   />
 
-                  {/* Gender */}
-                  <select
-                    name="gender"
+                  <input
+                    name="designation"
+                    placeholder="Designation"
                     className="border p-3 rounded-lg"
-                    value={form.gender}
+                    value={form.designation}
                     onChange={handleChange}
-                    required
-                  >
-                    <option value="">Select Gender *</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                  </select>
+                  />
+
                 </div>
+
+                {/* FULL WIDTH TEXTAREA (same spacing system) */}
+                <textarea
+                  name="manifesto"
+                  placeholder="Write your Manifesto *"
+                  className="border p-3 rounded-lg w-full h-32"
+                  value={form.manifesto}
+                  onChange={handleChange}
+                  required
+                />
 
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button-full "
+                  className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button-full"
                 >
-                  {loading ? "Processing..." : "Submit"}
+                  {loading ? "Processing..." : "Submit & Download Manifesto"}
                 </button>
+
               </form>
             </motion.div>
           </motion.div>

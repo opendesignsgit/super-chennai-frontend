@@ -7575,25 +7575,456 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
-
-  {
-  id: 62325,
-  name: "Retteri Lake Park",
-  slug: "retteri-lake-park-chennai",
-  para: "Trending Chennai",
+  
+{
+  id: 10,
+  name: "Global Sports City Foundations Laid at Semmencherri",
+  slug: "global-sports-city-semmencherry-2026",
+  para: "Trending Chennai Sports Development 2026",
   TrendingCalendarMonth: "February 2026",
-  TrendingCalendarTime: "Morning & Evening",
-  TrendingCalendarCategory: "Parks & Recreation",
-  image: "/images/trendingChennai/kolathur.jpeg",
-  Homeimage: "/images/trendingChennai/kolathur.jpeg",
-  link: "/retteri-lake-park",
-  duration: "Open daily from early morning to 10:00 AM and from 4:00 PM onwards",
-  ageRestriction: "Open to all age groups",
-  language: "Tamil & English",
-  genre: "Public Park, Recreation, Family Attraction",
-  venue: "Retteri Lake, Kolathur, Chennai",
+  TrendingCalendarTime: "Foundation Stone Laid",
+  TrendingCalendarCategory: "Sports | Infrastructure | Development",
+  image: "/images/trendingChennai/inner-page-globalsports.jpg",
+  Homeimage: "/images/trendingChennai/inner-page-globalsports.jpg",
+  link: "/trending-chennai/global-sports-city-semmencherry-2026",
+  duration: "Project in Initial Phase",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "Sports Infrastructure | Urban Development",
+  venue: "Semmencherri, OMR, Chennai",
 
   trendingDetails: `
+<p>
+Chennai has taken a major leap in its sports development journey as the foundation stone for the <b>₹261-crore Global Sports City</b> was officially laid by Hon. Chief Minister <b>M. K. Stalin</b> in <b>Semmencherri</b>, located along the fast-growing OMR stretch.
+</p>
+
+<p>
+This ambitious world-class sports facility is designed to uplift training standards, create stronger pathways for athletes, and support the growing sports culture across Tamil Nadu. Once completed, the centre will play a key role in nurturing emerging talent and shaping the next generation of sporting champions.
+</p>
+
+<p>
+The Global Sports City aims to integrate modern infrastructure, advanced training zones, and multi-sport amenities, further positioning Chennai as a rising destination for national and international sports development.
+</p>
+
+<h4>📍 Project Highlights</h4>
+<ul>
+  <li>Location: Semmencherri, OMR, Chennai</li>
+  <li>Project Cost: ₹261 Crore</li>
+  <li>Purpose: World-class multi-sport training & development facility</li>
+  <li>Status: Foundation Stone Laid</li>
+  <li>Impact: Boost to athletes, training standards & sports opportunities</li>
+</ul>
+
+<p>
+🏅 This landmark project strengthens Tamil Nadu’s commitment to sports excellence, supporting athletes with upgraded infrastructure and future-ready facilities.
+</p>
+`,
+
+  TrendingLink: "https://www.superchennai.com/trending-chennai/global-sports-city-chennai",
+  YoutubeLink: "",
+  meta: {
+    title: "Global Sports City | Semmencherry Sports Hub Update",
+    desc: "The Global Sports City in Semmencherry is Trending Chennai news, building a modern sports hub with upgraded facilities for athletes across Tamil Nadu.",
+    url: "https://www.superchennai.com/trending-chennai/global-sports-city-chennai"
+  }
+},
+
+
+  {
+  id: 94654,
+  name: "Poonamallee Depot Completed and Officially Handed Over",
+  slug: "poonamallee-depot-chennai-metro-phase-2-2026",
+  para: "Trending Chennai Infrastructure Update 2026",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "Completed & Handed Over",
+  TrendingCalendarCategory: "Metro Rail | Infrastructure | Development",
+  image: "/images/trendingChennai/inner-page- Poonamallee Depo.jpg",
+  Homeimage: "/images/trendingChennai/inner-page- Poonamallee Depo.jpg",
+  link: "/trending-chennai/poonamallee-depot-chennai-metro-phase-2-2026",
+  duration: "Operational",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "Urban Transport | Metro Infrastructure",
+  venue: "Poonamallee, Chennai",
+
+  trendingDetails: `
+<p>
+The construction of the <b>Poonamallee Depot</b> under the <b>Chennai Metro Phase-2</b> network is now fully complete, and the facility has been officially handed over for operations. Spread across a massive <b>42 acres</b>, this advanced depot is equipped to support <b>26 three-car and six-car driverless trains</b> that will run along the upcoming <b>Poonamallee–Light House</b> corridor.
+</p>
+
+<p>
+This marks a major milestone in Chennai’s metro expansion, bringing the city one step closer to enhanced connectivity between <b>Poonamallee</b> and core areas of <b>Chennai</b>. With world-class infrastructure and automation-ready systems, the depot will ensure smoother, smarter, and more efficient metro operations in the years ahead.
+</p>
+
+<h4>📍 Depot Highlights</h4>
+<ul>
+  <li>Location: Poonamallee, Chennai</li>
+  <li>Area: 42 Acres</li>
+  <li>Supports: 26 three-car & six-car driverless trains</li>
+  <li>Corridor: Poonamallee – Light House (Phase 2)</li>
+  <li>Status: Construction Completed & Handed Over</li>
+</ul>
+
+<p>
+🚇 This is a key step forward in Chennai Metro’s Phase-2 development, boosting the city’s long-term mobility and public transport efficiency.
+</p>
+`,
+
+  TrendingLink: "https://www.superchennai.com/trending-chennai/chennai-metro-depot-phase-2-update",
+  YoutubeLink: "",
+  meta: {
+    title: "Chennai Metro Depot – Phase 2 Upgrade & Operations",
+    desc: "The Chennai metro depot under Phase 2 is nearing completion with new facilities for driverless trains and improved connectivity. Trending Chennai update included.",
+    url: "https://www.superchennai.com/trending-chennai/chennai-metro-depot-phase-2-update"
+  }
+},
+
+
+  {
+  id: 8345345,
+  name: "FinTech City at Nandambakkam Races Toward Completion",
+  slug: "fintech-city-nandambakkam-2026",
+  para: "Trending Chennai Tech Development 2026",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "Construction Nearing Completion",
+  TrendingCalendarCategory: "Technology | Infrastructure | Development",
+  image: "/images/trendingChennai/inner-page-fintech.jpg",
+  Homeimage: "/images/trendingChennai/inner-page-fintech.jpg",
+  link: "/trending-chennai/fintech-city-nandambakkam-2026",
+  duration: "Project in Final Phase",
+  ageRestriction: "Open for All",
+  language: "English | Tamil",
+  genre: "Tech Hub | Infrastructure Development",
+  venue: "Nandambakkam, Chennai",
+
+  trendingDetails: `
+<p>
+<b>FinTech City</b> in <b>Nandambakkam</b> is rapidly moving toward completion, with most of its major building structures now in the finishing stage. This ambitious project is set to become one of Chennai’s most significant innovation clusters, attracting global fintech firms, emerging startups, and digital service providers.
+</p>
+
+<p>
+Strategically located near key commercial corridors, the FinTech City campus features <b>modern office towers</b>, collaborative workspaces, advanced digital infrastructure, and a futuristic design aimed at supporting a fully technology-driven business ecosystem.
+</p>
+
+<p>
+With construction progressing at high speed, officials confirm that the launch is now close. Once operational, this tech hub will play a crucial role in strengthening Chennai’s position as a fast-growing technology powerhouse.
+</p>
+
+<h4>📍 Project Highlights</h4>
+<ul>
+  <li>Location: Nandambakkam, Chennai</li>
+  <li>Purpose: Global FinTech & Digital Innovation Hub</li>
+  <li>Features: Modern office towers, shared spaces & digital-ready infrastructure</li>
+  <li>Status: Construction in Final Phase</li>
+  <li>Impact: Boost to finance, analytics, digital services & emerging tech sectors</li>
+</ul>
+
+<p>
+🚀 FinTech City is set to create new opportunities, attract global investments, and redefine Chennai’s digital growth story.
+</p>
+`,
+
+  TrendingLink: "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam",
+  YoutubeLink: "",
+  meta: {
+    title: "FinTech City Nandambakkam | Chennai’s Emerging Tech Hub",
+    desc: "Trending Chennai update: FinTech City Nandambakkam is nearing completion, evolving into a modern digital hub for global fintech firms and startups.",
+    url: "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam"
+  }
+},
+
+
+  {
+  id: 1121234,
+  name: "A New Chapter Along the Cooum: Port–Maduravoyal Expressway Rising",
+  slug: "port-maduravoyal-expressway-chennai-2026",
+  para: "Trending Chennai Infrastructure Update 2026",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "Construction in Full Swing",
+  TrendingCalendarCategory: "Infrastructure | Expressway | Connectivity",
+  image: "/images/trendingChennai/inner-page-chennai;s-nxt.jpg",
+  Homeimage: "/images/trendingChennai/inner-page-chennai;s-nxt.jpg",
+  link: "/trending-chennai/port-maduravoyal-expressway-chennai-2026",
+  duration: "Under Construction",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "Urban Infrastructure | Transport Development",
+  venue: "Chennai Port – Maduravoyal Corridor",
+
+  trendingDetails: `
+<p>
+A massive transformation is unfolding along the <b>Cooum River</b> as the <b>Port–Maduravoyal Elevated Expressway</b> continues to rise steadily. Watching this future-defining project take shape in real time is nothing short of incredible.
+</p>
+
+<p>
+Stretching a total of <b>20.6 km</b>, this expressway is far more than just a new road — it is a crucial link that will <b>boost the efficiency of Chennai Port</b>, ease traffic congestion, and redefine connectivity across the city.
+</p>
+
+<p>
+Once completed, this elevated corridor will streamline <b>cargo movement</b>, reduce travel delays, and open up smoother traffic flow for thousands of daily users. Chennai is gearing up for a major upgrade — and it’s happening right here along the Cooum.
+</p>
+
+<h4>📍 Project Highlights</h4>
+<ul>
+  <li>Location: Chennai Port to Maduravoyal</li>
+  <li>Total Length: 20.6 km</li>
+  <li>Purpose: Improve port connectivity & reduce city congestion</li>
+  <li>Benefit: Faster cargo movement & smoother city travel</li>
+  <li>Status: Construction Progressing Rapidly</li>
+</ul>
+
+<p>
+🌊📈 This expressway is set to become one of Chennai’s most impactful infrastructure developments in recent years.
+</p>
+`,
+
+  TrendingLink: "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai",
+  YoutubeLink: "",
+  meta: {
+    title: "Port Maduravoyal Expressway | Chennai Port Connectivity Upgrade",
+    desc: "The Port Maduravoyal expressway from Chennai Port to Maduravoyal is moving ahead fast, easing traffic and aiding cargo flow in Trending Chennai updates.",
+    url: "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai"
+  }
+},
+
+
+  
+{
+  id: 12313,
+  name: "Chennai Unveils Its Own Iconic Super-Tree Tower",
+  slug: "musical-tower-kalaignar-centenary-park-2026",
+  para: "Trending Chennai Landmark Update 2026",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "New Landmark Revealed",
+  TrendingCalendarCategory: "Public Space | Landmark | Tourism",
+  image: "/images/trendingChennai/inner-page-super-tree-tower.jpg",
+  Homeimage: "/images/trendingChennai/inner-page-super-tree-tower.jpg",
+  link: "/trending-chennai/musical-tower-kalaignar-centenary-park-2026",
+  duration: "Open to Public",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "City Landmark | Tourism",
+  venue: "Kalaignar Centenary Park, Chennai",
+
+  trendingDetails: `
+<p>
+Chennai has unveiled its very own <b>super-tree style tower</b>, standing eight storeys tall inside the vibrant <b>Kalaignar Centenary Park</b>. This iconic structure is quickly becoming one of the city’s most eye-catching landmarks.
+</p>
+
+<p>
+Featuring a spectacular <b>360° glass viewing gallery</b> and an <b>open terrace deck</b>, the tower offers breathtaking skyline views — especially stunning during nighttime when the city lights come alive.
+</p>
+
+<p>
+This modern viewing tower promises to completely redefine how Chennai experiences public spaces, blending design, recreation, and tourism into a single unforgettable attraction.
+</p>
+
+<h4>📍 Tower Highlights</h4>
+<ul>
+  <li>Location: Kalaignar Centenary Park, Chennai</li>
+  <li>Height: Eight-storey super-tree inspired structure</li>
+  <li>Features: 360° glass viewing gallery & open terrace deck</li>
+  <li>Experience: Stunning day & night skyline views</li>
+  <li>Status: Newly Opened</li>
+</ul>
+
+<p>
+🌃 With its modern design and experiential viewpoint, this musical-style tower is set to become one of Chennai’s top must-visit spots.
+</p>
+`,
+
+  TrendingLink: "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park",
+  YoutubeLink: "",
+  meta: {
+    title: "Musical Tower | Chennai’s New Skyline Attraction",
+    desc: "The musical tower at Kalaignar Centenary Park is emerging as a standout landmark with its viewing deck and modern design, gaining attention across Trending Chennai.",
+    url: "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park"
+  }
+},
+
+
+  {
+  id: 122323,
+  name: "Kilambakkam Terminus Sets a New Standard",
+  slug: "kilambakkam-modern-bus-terminus-2026",
+  para: "Trending Chennai Travel Infrastructure 2026",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "Now Open",
+  TrendingCalendarCategory: "Travel | Infrastructure | Public Transport",
+  image: "/images/trendingChennai/inner-page-kilambakkam-terminus.jpg",
+  Homeimage: "/images/trendingChennai/inner-page-kilambakkam-terminus.jpg",
+  link: "/trending-chennai/kilambakkam-modern-bus-terminus-2026",
+  duration: "Operational",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "Travel Hub | Public Transport",
+  venue: "Kilambakkam, Chennai",
+
+  trendingDetails: `
+<p>
+The newly developed <b>Kilambakkam Bus Terminus</b> is setting a remarkable benchmark for travel infrastructure in Chennai. Stepping inside feels almost like entering an airport — thanks to its expansive interiors, polished design, and efficient passenger movement systems.
+</p>
+
+<p>
+The scale and cleanliness of the terminus, paired with modern amenities, offer a significantly upgraded travel experience for commuters heading across Tamil Nadu and beyond. From organized bays to waiting lounges, the entire space reflects a next-level approach to bus travel.
+</p>
+
+<p>
+This new hub not only decongests the city but also elevates comfort and convenience, making Kilambakkam one of Chennai’s proudest infrastructure additions.
+</p>
+
+<h4>📍 Terminus Highlights</h4>
+<ul>
+  <li>Location: Kilambakkam, Chennai</li>
+  <li>Design: Airport-style interiors with spacious walkways</li>
+  <li>Amenities: Clean, modern facilities & improved passenger comfort</li>
+  <li>Function: Major hub for statewide and intercity bus services</li>
+  <li>Status: Fully Operational</li>
+</ul>
+
+<p>
+🚌 The Kilambakkam terminus reflects Chennai’s commitment to modern, world-class public transport infrastructure.
+</p>
+`,
+
+  TrendingLink: "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus",
+  YoutubeLink: "",
+  meta: {
+    title: "Kilambakkam Bus Terminus | Chennai’s New Travel Hub",
+    desc: "The Kilambakkam bus terminus in Kilambakkam offers modern, airport-style interiors and stands out in Trending Chennai as a big upgrade to the city’s travel comfort.",
+    url: "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus"
+  }
+},
+
+
+
+  
+{
+  id: 112424234,
+  name: "Pedestrian Skywalk Progress at Vadapalani Metro Corridor",
+  slug: "vadapalani-skywalk-metro-corridor-2026",
+  para: "Trending Chennai Metro Connectivity Update 2026",
+  TrendingCalendarMonth: "February 2026",
+  TrendingCalendarTime: "Work in Progress",
+  TrendingCalendarCategory: "Metro | Connectivity | Infrastructure",
+  image: "/images/trendingChennai/inner-page-vadapalanimetro-img.jpg",
+  Homeimage: "/images/trendingChennai/inner-page-vadapalanimetro-img.jpg",
+  link: "/trending-chennai/vadapalani-skywalk-metro-corridor-2026",
+  duration: "Under Construction",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "Urban Transport | Metro Development",
+  venue: "Vadapalani, Chennai",
+
+  trendingDetails: `
+<p>
+Construction of the new <b>pedestrian skywalk</b> connecting the <b>Vadapalani Metro Station</b> with the upcoming <b>Phase-2 station</b> is progressing steadily. This elevated walkway is set to provide passengers with a seamless, safe, and weather-protected connection between the two major metro corridors.
+</p>
+
+<p>
+Located in one of Chennai’s busiest transit hubs, the skywalk will help <b>ease commuter movement</b>, reduce road-level congestion, and offer a smooth interchange experience for thousands of daily riders.
+</p>
+
+<p>
+Once completed, this upgraded connectivity link will play a key role in enhancing the overall efficiency of the expanding Chennai Metro network — delivering <b>faster accessibility</b> and improved passenger convenience.
+</p>
+
+<h4>📍 Project Highlights</h4>
+<ul>
+  <li>Location: Vadapalani, Chennai</li>
+  <li>Purpose: Seamless connection between Phase-1 & Phase-2 metro corridors</li>
+  <li>Type: Elevated pedestrian skywalk</li>
+  <li>Status: Construction in Progress</li>
+  <li>Benefit: Safer, faster, and hassle-free commuter movement</li>
+</ul>
+
+<p>
+🚇 This skywalk will become a major connectivity booster for the Vadapalani transit zone, supporting smoother metro interchange and daily travel.
+</p>
+`,
+
+  TrendingLink: "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-update",
+  YoutubeLink: "",
+  meta: {
+    title: "Vadapalani Skywalk | Metro Corridor Connectivity Update",
+    desc: "The Vadapalani skywalk near Vadapalani is progressing steadily, improving metro corridor access with safer movement. Trending Chennai update included.",
+    url: "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-update"
+  }
+},
+
+  {
+    id: 62326,
+    name: "Tamil Culture Museum Moves One Step Closer in Mamallapuram",
+    slug: "tamil-culture-museum-mamallapuram-2026",
+    para: "Trending Chennai Update 2026",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Project Tender Released",
+    TrendingCalendarCategory: "Culture | Development | Heritage",
+    image: "/images/trendingChennai/inner-page-img2.png",
+    Homeimage: "/images/trendingChennai/culture-museum-img1.jpg",
+    link: "/trending-chennai/tamil-culture-museum-mamallapuram-2026",
+    duration: "Development Phase",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Cultural Heritage | Museum Development",
+    venue: "Mamallapuram, Tamil Nadu",
+
+    trendingDetails: `
+<p>
+A <b>₹93.5 crore</b> cultural dream is taking shape in <b>Mamallapuram</b> — a landmark museum dedicated to celebrating the richness of Tamil history, art, architecture, literature, and the many influences that shaped this civilisation.
+</p>
+
+<p>
+The tender for the <b>Tamil Culture Museum</b> has now been officially released, moving the project from vision to action. This marks a major milestone in creating a contemporary cultural space that tells Tamil stories through <b>interactive experiences, modern design, and immersive installations</b> rather than traditional text-heavy displays.
+</p>
+
+<p>
+Mamallapuram already stands as a global heritage symbol with its ancient monuments and artistic legacy. Soon, it could also become home to a museum that captures the <b>entire journey of Tamil culture in one place</b>, becoming a major attraction for tourists, researchers, and culture lovers.
+</p>
+
+<h4>📍 Project Highlights</h4>
+<ul>
+  <li>Location: Mamallapuram, Tamil Nadu</li>
+  <li>Project Cost: ₹93.5 Crore</li>
+  <li>Concept: Interactive, technology-driven museum experience</li>
+  <li>Theme: Tamil history, literature, art, architecture & culture</li>
+  <li>Status: Tender Released (Development Begins)</li>
+</ul>
+
+<p>
+🌟 This museum aims to be a cultural milestone — preserving heritage while embracing contemporary storytelling for future generations.
+</p>
+`,
+
+    TrendingLink:
+      "https://www.superchennai.com/trending-chennai/museum-development-mamallapuram",
+    YoutubeLink: "",
+    meta: {
+      title: "Museum Development in Mamallapuram | Tamil Culture Museum",
+      desc: "Trending Chennai update: A new Tamil culture museum development begins in Mamallapuram, featuring interactive exhibits, modern design, and a ₹93.5 crore investment.",
+      url: "https://www.superchennai.com/trending-chennai/museum-development-mamallapuram",
+    },
+  },
+
+  {
+    id: 62325,
+    name: "Retteri Lake Park",
+    slug: "retteri-lake-park-chennai",
+    para: "Trending Chennai",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Morning & Evening",
+    TrendingCalendarCategory: "Parks & Recreation",
+    image: "/images/trendingChennai/kolathur.jpeg",
+    Homeimage: "/images/trendingChennai/kolathur.jpeg",
+    link: "/retteri-lake-park",
+    duration:
+      "Open daily from early morning to 10:00 AM and from 4:00 PM onwards",
+    ageRestriction: "Open to all age groups",
+    language: "Tamil & English",
+    genre: "Public Park, Recreation, Family Attraction",
+    venue: "Retteri Lake, Kolathur, Chennai",
+
+    trendingDetails: `
   <p>
 <b>Kolathur welcomes a refreshing new waterfront retreat! 🌿✨</b><br/>
 The newly developed Retteri Lake Park, opened to the public in February 2026, offers a scenic lakeside escape with landscaped surroundings and thoughtfully designed recreational spaces for families and fitness enthusiasts.
@@ -7625,14 +8056,14 @@ The newly developed Retteri Lake Park, opened to the public in February 2026, of
 </p>
 `,
 
-  TrendingLink: "",
-  YoutubeLink: "",
-  meta: {
-    title: "Trending Chennai : Retteri Lake Park Opens Waterfront Update",
-    desc: "Kolathur welcomes Retteri Lake Park with landscaped spaces, walking tracks, and vibrant kids zones, quickly becoming a Trending Chennai family attraction.",
-    url: "https://www.superchennai.com/trending-chennai/retteri-lake-park"
-  }
-},
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "Trending Chennai : Retteri Lake Park Opens Waterfront Update",
+      desc: "Kolathur welcomes Retteri Lake Park with landscaped spaces, walking tracks, and vibrant kids zones, quickly becoming a Trending Chennai family attraction.",
+      url: "https://www.superchennai.com/trending-chennai/retteri-lake-park",
+    },
+  },
 
   {
     id: 62324,

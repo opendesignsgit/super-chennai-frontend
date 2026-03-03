@@ -1,0 +1,133 @@
+import Marquee from "react-fast-marquee";
+import "../../../../assets/Css/SocialChennai.css";
+import { useEffect, useState, useRef } from "react";
+
+export default function InstagramReelsMarquee() {
+ 
+  const reels = [
+    {
+      thumbnail: "/images/HomePage-Images/reelimage1.png",
+    //   link: "https://www.instagram.com/reel/DHgFrfdyIBk/?igsh=MXJyc3lxeXk1cDZubg%3D%3D",
+      altText: "sports in chennai",
+    },
+    {
+      thumbnail: "/images/HomePage-Images/reelimage2.png",
+    //   link: "https://www.instagram.com/reel/DHX5aFqyd2V/?igsh=MTVuZ3o2NnVtazBzMQ%3D%3D",
+      altText: "beaches in chennai",
+    },
+    {
+      thumbnail: "/images/HomePage-Images/reelimage3.png",
+    //   link: "https://www.instagram.com/reel/DKZYm-ry1W3/?igsh=MWdqYnZ1aDhtNGU2bQ%3D%3D",
+      altText: "media in chennai",
+    },
+    {
+      thumbnail: "/images/HomePage-Images/reelimage4.png",
+    //   link: "https://www.instagram.com/reel/DH-erb8SvM1/?igsh=MXFjOXg5MXpzbm05bg%3D%3D",
+      altText: "chennai social media",
+    },
+    {
+      thumbnail: "/images/HomePage-Images/reelimage5.png",
+    //   link: "https://www.instagram.com/reel/DH8js6wS-S1/?igsh=MWFjM3ZvNTRqMWtmYg%3D%3D",
+      altText: "social media in chennai",
+    },
+    {
+      thumbnail: "/images/HomePage-Images/reelimage1.png",
+    //   link: "https://www.instagram.com/reel/DHgFrfdyIBk/?igsh=MXJyc3lxeXk1cDZubg%3D%3D",
+      altText: "sports in chennai",
+    },
+    {
+      thumbnail: "/images/HomePage-Images/reelimage2.png",
+      link: "https://www.instagram.com/reel/DHX5aFqyd2V/?igsh=MTVuZ3o2NnVtazBzMQ%3D%3D",
+      altText: "beaches in chennai",
+    },
+    {
+      thumbnail: "/images/HomePage-Images/reelimage3.png",
+      link: "https://www.instagram.com/reel/DKZYm-ry1W3/?igsh=MWdqYnZ1aDhtNGU2bQ%3D%3D",
+      altText: "media in chennai",
+    },
+    {
+      thumbnail: "/images/HomePage-Images/reelimage4.png",
+      link: "https://www.instagram.com/reel/DH-erb8SvM1/?igsh=MXFjOXg5MXpzbm05bg%3D%3D",
+      altText: "chennai social media",
+    },
+    {
+      thumbnail: "/images/HomePage-Images/reelimage5.png",
+      link: "https://www.instagram.com/reel/DH8js6wS-S1/?igsh=MWFjM3ZvNTRqMWtmYg%3D%3D",
+      altText: "social media in chennai",
+    },
+  ];
+  const [scrollDir, setScrollDir] = useState("left");
+
+  const lastScrollY = useRef(0);
+  const bgTextRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY.current) {
+        setScrollDir("left");
+      } else {
+        setScrollDir("right");
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <>
+      <div className="socialChnennaiMaincontainer">
+        <div
+          className={`SocialChennairunningTextBackground ${
+            scrollDir === "right" ? "scroll-right" : "scroll-left"
+          }`}
+          ref={bgTextRef}
+        >
+          <p>
+            Super Chennai &nbsp; Super Chennai &nbsp; Super Chennai &nbsp; Super
+            Chennai
+          </p>
+        </div>
+        <div className="socialChennaiContent">
+          <div className="socialChennaiContainer">
+            <h4>Social Chennai</h4>
+            <p>
+              Make connections, participate, and add to Chennai's lively social
+              events and community projects.
+            </p>
+          </div>
+        </div>
+        <div className="reelsMarqueeSection py-6 relative overflow-hidden">
+          <div className=""></div>
+          <div className=""></div>
+
+          <Marquee pauseOnHover={true} speed={50}>
+            {reels.map((reel, index) => (
+              <div
+                key={index}
+                className={`mx-4 ${index % 2 !== 0 ? "mt-18" : "mt-0"}`}
+              >
+                <a
+                  href={reel.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <img
+                    src={reel.thumbnail}
+                    alt={reel.altText}
+                    className="w-[265px] h-[auto] object-cover mobileSocialWidjet"
+                  />
+                </a>
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      </div>
+    </>
+  );
+}

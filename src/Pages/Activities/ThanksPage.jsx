@@ -68,7 +68,7 @@ export default function Thankyou() {
             <h1></h1>
             <AutoShrinkText
               // text="Thank You for Your Entry!"
-              text={from === "conclave" ? "" : "Thank You for Your Entry!"}
+              text={from === "conclave" ? "" : "Thank You!"}
               baseSize={60}
               minSize={40}
               maxChars={40}

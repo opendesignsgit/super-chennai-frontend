@@ -850,7 +850,6 @@ background: #fff;
 }
 
 
-
 @media (max-width:1600px) and (min-width:1300px){
 
   .manifestopage  .themelink-color {
@@ -963,4 +962,25 @@ background: #fff;
 
 .manifestopage *:focus-visible {
   outline: 0px;
+}
+
+
+@media (max-width:768px) {
+  .manifestowidth {
+    margin-bottom: 50px;
+  }
+
+  .manifestoSection  {
+    padding-bottom: 0px;
+  }
+
+  .manifestoslider .px-2 {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .manifestoslider .px-2 img {
+      width: 230px;
+      height: 350px;
+  }
 }

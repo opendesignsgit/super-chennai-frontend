@@ -320,7 +320,7 @@ export default function Manifesto() {
         </div>
       </section>
 
-      <div className="block md:hidden">
+      <div className="block md:hidden manifestoslider">
         {/* TOP IMAGE */}
 
         <Slider {...mainSettings} ref={slider1}>

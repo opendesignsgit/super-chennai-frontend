@@ -619,7 +619,7 @@ function App() {
             </a>
           </div>
 
-          {!hideOnMargazhiPage && (
+          {/* {!hideOnMargazhiPage && (
             <div
               id="menifeto-tab"
               ref={stickyRef}
@@ -634,7 +634,7 @@ function App() {
                 />
               </a>
             </div>
-          )}
+          )} */}
 
           {!hideOnMargazhiPage && (
             <div

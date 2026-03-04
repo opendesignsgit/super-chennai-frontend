@@ -318,7 +318,7 @@ export default function Manifesto() {
           </div>
         </div>
       </section> */}
-<section className=" mt-10 manifestoSection pb-20 relative">
+       <section className=" mt-10 manifestoSection pb-20 relative">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="InvestChennaiContent-conclaves mb-8">
             <h3 className="text-center text-2xl md:text-3xl ">
@@ -327,10 +327,10 @@ export default function Manifesto() {
           </div>
 
 
-          <div className="  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
-          
+          <div className="items-center relative">
 
-            <div className="text-center lg:text-left mb-8 lg:mb-0 relative md:absolute top-0 right-0 w-full md:w-[50%]">
+
+            <div className="text-center lg:text-left mb-8 lg:mb-0 relative md:absolute top-0 right-0 w-full md:w-[50%] z-[9999] mb-30">
               <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
                 DELIVERING THE MANIFESTO IS NOW IN YOUR HANDS
               </h2>

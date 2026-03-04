@@ -329,21 +329,19 @@ export default function Manifesto() {
             <div className="bulbRectContainer relative w-full hidden md:block">
               <Slider {...sliderSettings}>
                 <div className="bulbimg">
-                  <img src="/images/wireImages/live.jpg" alt="live" />
-                </div>
-
-                <div className="bulbimg">
-                  <img src="/images/wireImages/innovate.jpg" alt="innovate" />
-                </div>
-
-                <div className="bulbimg">
                   <img src="/images/wireImages/Visit.jpg" alt="visit" />
                 </div>
 
                 <div className="bulbimg">
                   <img src="/images/wireImages/work.jpg" alt="work" />
                 </div>
+                <div className="bulbimg">
+                  <img src="/images/wireImages/innovate.jpg" alt="innovate" />
+                </div>
 
+                <div className="bulbimg">
+                  <img src="/images/wireImages/live.jpg" alt="live" />
+                </div>
                 <div className="bulbimg">
                   <img src="/images/wireImages/Invest.jpg" alt="invest" />
                 </div>

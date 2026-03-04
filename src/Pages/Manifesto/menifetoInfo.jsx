@@ -119,9 +119,6 @@ export default function Manifesto() {
   };
 
 
-
-
-
    /* ================= SLIDER SETTINGS ================= */
 
   const sliderSettings = {
@@ -166,10 +163,21 @@ export default function Manifesto() {
       centerMode: true,
     };
 
+   const registerRef = useRef(null);
+
   return (
     <>
       {/* ============== Banner ============ */}
-      <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
+      {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden "> */}
+      <section
+        className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer"
+        onClick={() => {
+          registerRef.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }}
+      >
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
@@ -319,6 +327,7 @@ export default function Manifesto() {
               </p>
 
               <button
+                ref={registerRef}
                 onClick={() => setShowRegisterPopup(true)}
                 className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
               >

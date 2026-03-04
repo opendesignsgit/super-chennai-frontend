@@ -157,7 +157,7 @@ export default function Manifesto() {
         </div>
       </section>
 
-      <section className=" mt-10 manifestoSection pb-20 relative">
+      {/* <section className=" mt-10 manifestoSection pb-20 relative">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="InvestChennaiContent-conclaves mb-8">
             <h3 className="text-center text-2xl md:text-3xl ">
@@ -250,7 +250,7 @@ export default function Manifesto() {
             className="w-24 sm:w-32 lg:w-50"
           />
         </div>
-      </section>
+      </section> */}
 
       {/* NEW SCROLLER SECTIONS  */}
 
@@ -318,9 +318,79 @@ export default function Manifesto() {
           </div>
         </div>
       </section> */}
+<section className=" mt-10 manifestoSection pb-20 relative">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="InvestChennaiContent-conclaves mb-8">
+            <h3 className="text-center text-2xl md:text-3xl ">
+              Manifesto in Your Hands
+            </h3>
+          </div>
+
+
+          <div className="  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
+          
+
+            <div className="text-center lg:text-left mb-8 lg:mb-0 relative md:absolute top-0 right-0 w-full md:w-[50%]">
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                DELIVERING THE MANIFESTO IS NOW IN YOUR HANDS
+              </h2>
+
+              <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+                The future of Chennai is shaped by the aspirations of its
+                people. Reason why, Super Chennai organised a day-long Conclave
+                that brought together industry leaders, urban planners,
+                administrators, thought leaders and citizens. The Conclave
+                discussed and curated ideas across five defining pillars: Live,
+                Work, Visit, Innovate and Invest.
+              </p>
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                Live, Work, Visit, Innovate and Invest
+              </h2>
+
+              <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
+                Suffice to say, incredible insights were collated. And they have
+                been put together as a Manifesto on what the people wish for,
+                from Super Chennai.
+              </p>
+
+              <button
+                onClick={() => setShowRegisterPopup(true)}
+                className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
+              >
+                Register & Download
+              </button>
+            </div>
+            
+            <div className="bulbRectContainer relative w-full">
+              <Slider {...sliderSettings}>
+                <div className="bulbimg">
+                  <img src="/images/wireImages/live.jpg" alt="live" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/innovate.jpg" alt="innovate" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/Visit.jpg" alt="visit" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/work.jpg" alt="work" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/Invest.jpg" alt="invest" />
+                </div>
+              </Slider>
+            </div>
+
+          
+          </div>
+        </div>
 
       
-  
+      </section>
 
       {/* ================= POPUP ================= */}
 

@@ -250,6 +250,10 @@ import MenifestoInfo from "./Pages/Manifesto/menifesto"
 import Download from "./Pages/Manifesto/download"
 
 import ManifestoPageInfoPAge from "./Pages/Manifesto/menifetoInfo"
+import ManifestoTest from "./Pages/Manifesto/menifesto-test"
+
+
+
 
 
 import ScrollToHashElement from "./Components/ScrollToHashElement";
@@ -703,6 +707,8 @@ function App() {
             <Route path="/menifestoInfo" element={<MenifestoInfo />} />
             <Route path="/download-manifesto-pdf" element={<Download />} />
                         <Route path="/Manifesto-info" element={<ManifestoPageInfoPAge />} />
+                                                <Route path="/ManifestoTest" element={<ManifestoTest />} />
+
 
             
 

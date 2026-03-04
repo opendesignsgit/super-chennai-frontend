@@ -1,20 +1,21 @@
 import axios from "axios";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { API_BASE_URL_API } from "../../../config";
-import { useEffect, useRef } from "react";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "react-toastify/dist/ReactToastify.css";
+import Slider from "react-slick";
 
 export default function Manifesto() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [otpSent, setOtpSent] = useState(false);
   const [showRegisterPopup, setShowRegisterPopup] = useState(false);
-
   const sanitize = (v = "") => v.replace(/[<>]/g, "");
-
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -32,9 +33,7 @@ export default function Manifesto() {
   };
 
   /* ================= SEND OTP ================= */
-
   const sendOtp = async () => {
-
     if (!form.phone) {
       toast.error("Enter phone number");
       return;
@@ -55,9 +54,7 @@ export default function Manifesto() {
       setLoading(false);
     }
   };
-
   /* ================= SUBMIT ================= */
-
   const submitManifesto = async (e) => {
     e.preventDefault();
 
@@ -65,11 +62,6 @@ export default function Manifesto() {
       toast.error("Please verify mobile number");
       return;
     }
-
-    // if (!form.manifesto) {
-    //   toast.error("Manifesto is required");
-    //   return;
-    // }
 
     const payload = {
       name: sanitize(form.name),
@@ -90,24 +82,23 @@ export default function Manifesto() {
       );
 
       toast.success("Manifesto submitted successfully!");
-      /* ✅ DOWNLOAD PDF AFTER SUCCESS */
-     // ✅ AUTO DOWNLOAD PDF (reliable method)
-const response = await axios.get("/pdfs/manifesto.pdf", {
-  responseType: "blob",
-});
 
-const url = window.URL.createObjectURL(new Blob([response.data]));
-const link = document.createElement("a");
-link.href = url;
-link.setAttribute("download", "SuperChennai-Manifesto.pdf");
-document.body.appendChild(link);
-link.click();
-link.remove();
-window.URL.revokeObjectURL(url);
+      const response = await axios.get("/pdfs/manifesto.pdf", {
+        responseType: "blob",
+      });
 
-setTimeout(() => {
-  navigate("/thank-you", { state: { from: "manifesto" } });
-}, 1000);
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "SuperChennai-Manifesto.pdf");
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+
+      setTimeout(() => {
+        navigate("/thank-you", { state: { from: "manifesto" } });
+      }, 1000);
       setForm({
         name: "",
         email: "",
@@ -116,8 +107,7 @@ setTimeout(() => {
         otp: "",
         companyName: "",
         designation: "",
-         manifesto: `I envision a future where Chennai becomes a hub of innovation, sustainability, and inclusive growth...`,
-
+        manifesto: `I envision a future where Chennai becomes a hub of innovation, sustainability, and inclusive growth...`,
       });
 
       navigate("/thank-you", { state: { from: "manifesto" } });
@@ -128,75 +118,24 @@ setTimeout(() => {
     }
   };
 
-  const [scrollDir, setScrollDir] = useState("left");
-  const lastScrollY = useRef(0);
-  const bgTextRef = useRef(null);
-  const carouselRef = useRef();
 
-  const volunteerSections = [
-    {
-      title: "LIVE",
-      description: `
-Create a Digital Information Infrastructure for the public.
-Retain tag as 'India’s Safest Big City'.
-Implement accessibility in public infrastructure projects.
-    `,
-      image: "/images/LIVE (2).svg",
-    },
-    {
-      title: "VISIT",
-      description: `
-Fast-track Parandur Airport.
-Formally recognise & fund the East Coast Surf Corridor.
-Promote nightlife & year-round cultural programs.
-    `,
-      image: "/images/VISIT.svg",
-    },
-    {
-      title: "WORK",
-      description: `
-Popularise Chennai as India’s original IT Hub.
-Focus on advanced manufacturing & robotics.
-Guide corporates to achieve 50–50 gender balance.
-    `,
-      image: "/images/WORK.svg",
-    },
-    {
-      title: "INVEST",
-      description: `
-Establish state-backed ‘Fund-of-Funds’ to invest in VCs.
-Create a 10,000 Crore AI Park.
-Push an ‘Equity-Participation’ model in top colleges.
-    `,
-      image: "/images/INVEST (2).svg",
-    },
-    {
-      title: "INNOVATE",
-      description: `
-Create a strong testing framework to support GCCs.
-Celebrate homegrown innovations under 'Chennai Brands'.
-Solve traditional urban planning issues using AI.
-    `,
-      image: "/images/INNOVATE.svg",
-    },
-  ];
 
-  const [isOpen, setIsOpen] = useState(false);
-  const [animate, setAnimate] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    mobile: "",
-    description: "",
-  });
 
-  const popupFunction = () => {
-    setIsOpen(true);
+
+   /* ================= SLIDER SETTINGS ================= */
+
+  const sliderSettings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
 
   return (
     <>
-
       {/* ============== Banner ============ */}
       <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
         <div className="relative z-0">
@@ -218,67 +157,7 @@ Solve traditional urban planning issues using AI.
         </div>
       </section>
 
-      {/* <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 lg:px-0">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="InvestChennaiContent-conclaves ">
-              <h1 className=" text-center hidden ">
-                Arattai with Aruna Sairam
-              </h1>
-              <h3 className=" text-center">Arattai with Aruna Sairam</h3>
-
-              <p className="text-lg text-gray-600 leading-relaxed mb-6 ">
-                Join us for a candid conversation with one of India’s most
-                celebrated Carnatic vocalists — a voice that has transcended
-                tradition, geography and generations.
-              </p>
-
-              <p className="text-gray-600 leading-relaxed mb-6 ">
-                Deeply rooted in Chennai and shaped by its rich musical legacy,
-                she has carried the spirit of our city to prestigious global
-                stages including the Royal Albert Hall. A recipient of honours
-                such as the Sangita Kalanidhi and the Padma Shri, she continues
-                to be a proud torchbearer of the Carnatic tradition that
-                flourishes in Chennai.
-              </p>
-
-              <p className="text-gray-600 leading-relaxed mb-6 ">
-                In celebrating a voice that echoes the soul of our city, we will
-                honour her with the Super Chennai Icon of the Month
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-10 ">
-                She will be in conversation with Akhila Krishnamurthy,
-                Independent journalist & Arts entrepreneur, for an engaging and
-                intimate exchange on music, memory and the making of a legacy.
-              </p>
-            </div>
-
-              <div className="container mx-auto px-6 lg:px-0">
-          <div className="max-w-4xl mx-auto text-center">
-
-                        <h2 class=" themelink-color formheadingtheme-arattai">
-                Submit Your Manifesto</h2>
-
-            <p className="text-gray-600 leading-relaxed mb-10">
-              Share your vision and ideas for shaping the future.
-            </p>
-
-            <button
-              onClick={() => setShowRegisterPopup(true)}
-              className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button"
-            >
-             Register & Download Manifesto
-            </button>
-
-          </div>
-        </div>
-
-          </div>
-        </div>
-      
-      </section> */}
-
-      <section className=" mt-10 manifestoSection pb-20 relative">
+      {/* <section className=" mt-10 manifestoSection pb-20 relative">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="InvestChennaiContent-conclaves mb-8">
             <h3 className="text-center text-2xl md:text-3xl ">
@@ -314,12 +193,15 @@ Solve traditional urban planning issues using AI.
             <div className="text-center lg:text-left mb-8 lg:mb-0">
               <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
                 DELIVERING THE MANIFESTO IS NOW IN YOUR HANDS
-
               </h2>
 
               <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
-               The future of Chennai is shaped by the aspirations of its people.
-Reason why, Super Chennai organised a day-long Conclave that brought together industry leaders, urban planners, administrators, thought leaders and citizens. The Conclave discussed and curated ideas across five defining pillars: Live, Work, Visit, Innovate and Invest. 
+                The future of Chennai is shaped by the aspirations of its
+                people. Reason why, Super Chennai organised a day-long Conclave
+                that brought together industry leaders, urban planners,
+                administrators, thought leaders and citizens. The Conclave
+                discussed and curated ideas across five defining pillars: Live,
+                Work, Visit, Innovate and Invest.
               </p>
               <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
                 Live, Work, Visit, Innovate and Invest
@@ -368,96 +250,147 @@ Reason why, Super Chennai organised a day-long Conclave that brought together in
             className="w-24 sm:w-32 lg:w-50"
           />
         </div>
-      </section>
+      </section> */}
 
-      {/* <div className="text-center text-black textOverrideBlackCenter mt-20 mb-10">
-        <div className="VolunteerBecameavolunteer">
-          <h3 className="text-black">Manifesto in Your Hands</h3>
+      {/* NEW SCROLLER SECTIONS  */}
 
-          <p className="text-black">
-            Reason why, Super Chennai organised a day-long Conclave that brought
-            together industry leaders, urban planners, administrators, thought
-            leaders and citizens. The Conclave discussed and curated ideas
-            across five defining pillars:
-          </p>
-        </div>
-
-        <div>
-          <div className="container max-w-7xl mx-auto px-4 ">
-            {volunteerSections.map((section, index) => (
-              <div className="DigitalSectionFLex text-center" key={index}>
-                {index % 2 === 0 ? (
-                  <>
-                    <img
-                      src={section.image}
-                      alt={section.imgAlt}
-                      className="mx-auto w-40 sm:w-80 md:w-40 lg:w-[10px] h-auto"
-                    />
-
-                    <div className="BecamaAVolunterContentsSection text-black">
-                      <h3>{section.title}</h3>
-                      <p>{section.description}</p>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="BecamaAVolunterContentsSection text-black">
-                      <h3>{section.title}</h3>
-                      <p>{section.description}</p>
-                    </div>
-
-                    <img
-                      src={section.image}
-                      alt={section.imgAlt}
-                      className="mx-auto w-40 sm:w-80 md:w-40 lg:w-[10px] h-auto"
-                    />
-                  </>
-                )}
-              </div>
-            ))}
+      {/* <section className=" mt-10 manifestoSection pb-20 relative">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="InvestChennaiContent-conclaves mb-8">
+            <h3 className="text-center text-2xl md:text-3xl ">
+              Manifesto in Your Hands
+            </h3>
           </div>
-          <div className="mb-20 mt-10">
-            <button
-              onClick={() => setShowRegisterPopup(true)}
-              className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
-            >
-              Register & Download
-            </button>
-          </div>
-        </div>
-      </div> */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
+            <div className="bulbRectContainer">
+              <Slider {...sliderSettings}>
+                <div className="bulbimg">
+                  <img src="/images/wireImages/live.jpg" alt="live" />
+                </div>
 
-      {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden mb-20">
-        <div className=" container max-w-7xl mx-auto px-4">   
-          <div className="volunteerRow">
-            <img
-              src="/images/conclave- about-left.jpeg"
-              alt="volunteer work in chennai"
-              className="w-[150px] h-[500px] object-cover rounded-lg"
-            />
-            <div className="volunteeerMainContent">
-              <h2 class="hidden"></h2>
-              <h3>A City Shaped by Its People</h3>
-              <p className="paraZeroVolunteerSection">
-                The Super Chennai Conclave is a one-day strategic gathering
-                designed to shape the future of Chennai through collaboration,
-                insight, and action.
+                <div className="bulbimg">
+                  <img src="/images/wireImages/innovate.jpg" alt="innovate" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/Visit.jpg" alt="visit" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/work.jpg" alt="work" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/Invest.jpg" alt="invest" />
+                </div>
+              </Slider>
+            </div>
+
+            <div className="text-center lg:text-left mb-8 lg:mb-0">
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                DELIVERING THE MANIFESTO IS NOW IN YOUR HANDS
+              </h2>
+              <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+                The future of Chennai is shaped by the aspirations of its
+                people. Reason why, Super Chennai organised a day-long Conclave
+                that brought together industry leaders, urban planners,
+                administrators, thought leaders and citizens. The Conclave
+                discussed and curated ideas across five defining pillars: Live,
+                Work, Visit, Innovate and Invest.
               </p>
-              <p className="paraoneVolunteerSection">
-                It brings together policymakers, industry leaders, urban
-                planners, academics, and subject-matter experts to collectively
-                address the city’s most urgent urban challenges and unlock new
-                opportunities for sustainable growth.
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                Live, Work, Visit, Innovate and Invest
+              </h2>
+
+              <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
+                Suffice to say, incredible insights were collated. And they have
+                been put together as a Manifesto on what the people wish for,
+                from Super Chennai.
               </p>
-              <p className="paraTwoVolunteerSection">
-                This conclave goes beyond discussion — it is focused on outcomes
-                that can influence policy, investment, and long-term city
-                transformation.
-              </p>
+
+              <button
+                onClick={() => setShowRegisterPopup(true)}
+                className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
+              >
+                Register & Download
+              </button>
             </div>
           </div>
         </div>
       </section> */}
+<section className=" mt-10 manifestoSection pb-20 relative">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="InvestChennaiContent-conclaves mb-8">
+            <h3 className="text-center text-2xl md:text-3xl ">
+              Manifesto in Your Hands
+            </h3>
+          </div>
+
+
+          <div className="  grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
+		  
+
+            <div className="text-center lg:text-left mb-8 lg:mb-0 relative md:absolute top-0 right-0 w-full md:w-[50%]">
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                DELIVERING THE MANIFESTO IS NOW IN YOUR HANDS
+              </h2>
+
+              <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+                The future of Chennai is shaped by the aspirations of its
+                people. Reason why, Super Chennai organised a day-long Conclave
+                that brought together industry leaders, urban planners,
+                administrators, thought leaders and citizens. The Conclave
+                discussed and curated ideas across five defining pillars: Live,
+                Work, Visit, Innovate and Invest.
+              </p>
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                Live, Work, Visit, Innovate and Invest
+              </h2>
+
+              <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base">
+                Suffice to say, incredible insights were collated. And they have
+                been put together as a Manifesto on what the people wish for,
+                from Super Chennai.
+              </p>
+
+              <button
+                onClick={() => setShowRegisterPopup(true)}
+                className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
+              >
+                Register & Download
+              </button>
+            </div>
+			
+            <div className="bulbRectContainer relative w-full">
+              <Slider {...sliderSettings}>
+                <div className="bulbimg">
+                  <img src="/images/wireImages/live.jpg" alt="live" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/innovate.jpg" alt="innovate" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/Visit.jpg" alt="visit" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/work.jpg" alt="work" />
+                </div>
+
+                <div className="bulbimg">
+                  <img src="/images/wireImages/Invest.jpg" alt="invest" />
+                </div>
+              </Slider>
+            </div>
+
+          
+          </div>
+        </div>
+
+      
+      </section>
 
       {/* ================= POPUP ================= */}
 
@@ -570,16 +503,15 @@ Reason why, Super Chennai organised a day-long Conclave that brought together in
 
                 {/* FULL WIDTH TEXTAREA (same spacing system) */}
                 <div className="hidden">
-                <textarea
-                  name="manifesto"
-                  placeholder="Write your Manifesto *"
-                  className="border p-3 rounded-lg w-full h-32"
-                  value={form.manifesto}
-                  onChange={handleChange}
-                  required
-                />
+                  <textarea
+                    name="manifesto"
+                    placeholder="Write your Manifesto *"
+                    className="border p-3 rounded-lg w-full h-32"
+                    value={form.manifesto}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
-
 
                 {/* HIDDEN TEXTAREA */}
                 {/* <div className="hidden">
@@ -605,10 +537,7 @@ Reason why, Super Chennai organised a day-long Conclave that brought together in
           </motion.div>
         )}
       </AnimatePresence>
-
-
-            <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
-
+      <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
     </>
   );
 }

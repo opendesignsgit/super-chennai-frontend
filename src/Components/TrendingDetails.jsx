@@ -319,6 +319,365 @@ export default function TrendingDetails() {
     },
   ];
 
+  const fintechSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam-2026",
+      },
+      headline: "FinTech City at Nandambakkam Races Toward Completion",
+      description:
+        "Trending Chennai update: FinTech City Nandambakkam is nearing completion, evolving into a modern digital hub for global fintech firms and startups.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/inner-page-fintech.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-02",
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Fintech City",
+          item: "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam-2026",
+        },
+      ],
+    },
+  ];
+
+  const globalTech = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/global-sports-city-semmencherry-2026",
+      },
+      headline: "Global Sports City Foundations Laid at Semmencherri",
+      description:
+        "The Global Sports City in Semmencherry is Trending Chennai news, building a modern sports hub with upgraded facilities for athletes across Tamil Nadu.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/inner-page-globalsports.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-02",
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Global Sports City",
+          item: "https://www.superchennai.com/trending-chennai/global-sports-city-semmencherry-2026",
+        },
+      ],
+    },
+  ];
+
+  const terminusbusKilambakkam = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Kilambakkam bus treminus",
+          item: "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus-2026",
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus-2026",
+      },
+      headline: "Kilambakkam Terminus Sets a New Standard",
+      description:
+        "The Kilambakkam bus terminus in Kilambakkam offers modern, airport-style interiors and stands out in Trending Chennai as a big upgrade to the city’s travel comfort.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/inner-page-kilambakkam-terminus.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-02",
+    },
+  ];
+
+  const tamilcultremusium = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/tamil-culture-museum-mamallapuram-2026",
+      },
+      headline: "Tamil Culture Museum Moves One Step Closer in Mamallapuram",
+      description:
+        "Trending Chennai update: A new Tamil culture museum development begins in Mamallapuram, featuring interactive exhibits, modern design, and a ₹93.5 crore investment.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/inner-page-img2.png",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-02",
+    },
+  {
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Super Chennai",
+    "item": "https://www.superchennai.com/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Tamil Culture Museum",
+    "item": "https://www.superchennai.com/trending-chennai/tamil-culture-museum-mamallapuram-2026"  
+  }]
+}
+
+  ];
+
+
+  const vadapalainschemaMEtro =[
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-metro-corridor-2026"
+  },
+  "headline": "Pedestrian Skywalk Progress at Vadapalani Metro Corridor",
+  "description": "The Vadapalani skywalk near Vadapalani is progressing steadily, improving metro corridor access with safer movement. Trending Chennai update included.",
+  "image": "https://www.superchennai.com/images/trendingChennai/inner-page-vadapalanimetro-img.jpg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-03-02"
+},
+{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Super Chennai",
+    "item": "https://www.superchennai.com/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Vadapalani Skywalk",
+    "item": "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-metro-corridor-2026"  
+  }]
+}
+
+
+  ]
+
+  const poonamalaschema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/poonamallee-depot-chennai-metro-phase-2-2026",
+      },
+      headline: "Poonamallee Depot Completed and Officially Handed Over",
+      description:
+        "The Chennai metro depot under Phase 2 is nearing completion with new facilities for driverless trains and improved connectivity. Trending Chennai update included.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/inner-page-%20Poonamallee%20Depo.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-02",
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Poonamallee Depot",
+          item: "https://www.superchennai.com/trending-chennai/poonamallee-depot-chennai-metro-phase-2-2026",
+        },
+      ],
+    },
+  ];
+
+  const MUiscialTowerSchem =[
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park-2026"
+  },
+  "headline": "Chennai Unveils Its Own Iconic Super-Tree Tower",
+  "description": "The musical tower at Kalaignar Centenary Park is emerging as a standout landmark with its viewing deck and modern design, gaining attention across Trending Chennai.",
+  "image": "https://www.superchennai.com/images/trendingChennai/inner-page-super-tree-tower.jpg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-03-02"
+},
+{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Super Chennai",
+    "item": "https://www.superchennai.com/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Musical tower",
+    "item": "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park-2026"  
+  }]
+}
+
+
+
+  ]
+
+  const portmaduravayal=[
+   {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai-2026"
+  },
+  "headline": "A New Chapter Along the Cooum: Port–Maduravoyal Expressway Rising",
+  "description": "The Port Maduravoyal expressway from Chennai Port to Maduravoyal is moving ahead fast, easing traffic and aiding cargo flow in Trending Chennai updates.",
+  "image": "https://www.superchennai.com/images/trendingChennai/inner-page-chennai;s-nxt.jpg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-03-02"
+}
+
+
+
+
+  ]
+
 
 
 
@@ -386,6 +745,58 @@ export default function TrendingDetails() {
             {JSON.stringify(retaeri)}
           </script>
         )}
+
+
+         {slug === "fintech-city-nandambakkam-2026" && (
+          <script type="application/ld+json">
+            {JSON.stringify(fintechSchema)}
+          </script>
+        )}
+
+        {slug === "global-sports-city-semmencherry-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(globalTech)}
+          </script>
+        )}
+
+        {slug === "kilambakkam-modern-bus-terminus-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(terminusbusKilambakkam)}
+          </script>
+        )}
+
+        {slug === "tamil-culture-museum-mamallapuram-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(tamilcultremusium)}
+          </script>
+        )}
+
+
+        {slug ==="vadapalani-skywalk-metro-corridor-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(vadapalainschemaMEtro)}
+          </script>
+        )}
+      {slug === "poonamallee-depot-chennai-metro-phase-2-2026" && (
+        <script type="application/id+json">
+          {JSON.stringify(poonamalaschema)}
+
+        </script>
+      )}
+      {slug === "musical-tower-kalaignar-centenary-park-2026" && (
+        <script type="application/id+json">
+          {JSON.stringify(MUiscialTowerSchem)}
+        </script>
+      )}
+
+      {slug === "port-maduravoyal-expressway-chennai-2026"&& (
+        <script type="application/id+json">
+          {JSON.stringify(portmaduravayal)}
+        </script>
+      )}
+
+      
+
       </Helmet>
 
       {/* Banner Section */}

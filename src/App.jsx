@@ -252,7 +252,7 @@ import Download from "./Pages/Manifesto/download"
 import ManifestoPageInfoPAge from "./Pages/Manifesto/menifetoInfo"
 import ManifestoTest from "./Pages/Manifesto/menifesto-test"
 
-
+import ManifestoView from "./Pages/Manifesto/ManifestoViewExcel"
 
 
 
@@ -708,6 +708,9 @@ function App() {
             <Route path="/download-manifesto-pdf" element={<Download />} />
                         <Route path="/Manifesto-info" element={<ManifestoPageInfoPAge />} />
                                                 <Route path="/ManifestoTest" element={<ManifestoTest />} />
+
+                                                                                                <Route path="/manifesto-admin-all-doc-secure-datas" element={<ManifestoView />} />
+
 
 
             

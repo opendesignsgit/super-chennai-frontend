@@ -320,10 +320,14 @@ export default function Manifesto() {
                 Live, Work, Visit, Innovate and Invest
               </h2>
 
-              <p className="text-gray-600 leading-relaxed mb-6 text-sm sm:text-base manifestopara">
+              <p className="text-gray-600 leading-relaxed mb-2 text-sm sm:text-base manifestopara">
                 Suffice to say, incredible insights were collated. And they have
                 been put together as a Manifesto on what the people wish for,
                 from Super Chennai.
+              </p>
+
+                 <p className="themelink-color text-gray-600 leading-relaxed mb-6 text-sm sm:text-base manifestopara" style={{fontFamily:"NewAmsterdam", fontSize:"25px" , marginBottom:"12px"}}>
+                Register your details to access and download the full manifesto.
               </p>
 
               <button
@@ -331,7 +335,7 @@ export default function Manifesto() {
                 onClick={() => setShowRegisterPopup(true)}
                 className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
               >
-                Register & Download
+                 Download
               </button>
             </div>
 

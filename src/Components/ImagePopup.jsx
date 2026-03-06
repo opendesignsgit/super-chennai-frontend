@@ -37,7 +37,7 @@ const ImagePopup = ({ onClose, imageUrl }) => {
         >
           {/* <Link to="/namma-stories#NammaStoriesVideoId" onClick={onClose}> */}
           {/* <Link to="/chennai-conclave" onClick={onClose}> */}
-          <a href="arattai-with-aruna-sairam/carnatic-vocalist">
+          <a href="manifesto-info">
             <img
               src={imageUrl}
               alt="Popup"

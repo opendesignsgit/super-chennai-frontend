@@ -285,11 +285,15 @@ export default function Manifesto() {
                 from Super Chennai.
               </p>
 
+              <p>
+                Register your details to access and download the full manifesto.
+              </p>
+
               <button
                 onClick={() => setShowRegisterPopup(true)}
                 className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
               >
-                Register & Download
+                 Download
               </button>
             </div>
 

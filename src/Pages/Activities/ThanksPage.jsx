@@ -35,8 +35,8 @@ export default function Thankyou() {
         );
       } else {
         if (from === "trivia-game")
-          setImageSrc("/images/events/trivia-game.jpg");
-        else setImageSrc("/images/events/thankyou-banner-1.jpg");
+          setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
+        else setImageSrc("/images/thankyou-banner-manifesto.jpeg");
       }
     };
     handleResize();

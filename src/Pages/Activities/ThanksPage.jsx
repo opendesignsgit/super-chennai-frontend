@@ -26,6 +26,13 @@ export default function Thankyou() {
             ? "/images/events/thanku-banner-conclave.jpeg"
             : "/images/events/thanku-banner-conclave.jpeg",
         );
+      }
+      else if (from === "manifesto-info") {
+        setImageSrc(
+          isMobile
+            ? "/images/mobile-thanky-banner-manifesto.jpeg"
+            : "/images/thankyou-banner-manifesto.jpeg",
+        );
       } else {
         if (from === "trivia-game")
           setImageSrc("/images/events/trivia-game.jpg");

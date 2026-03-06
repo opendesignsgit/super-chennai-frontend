@@ -83,7 +83,7 @@ export default function Manifesto() {
 
       toast.success("Manifesto submitted successfully!");
 
-      const response = await axios.get("/pdfs/manifesto.pdf", {
+      const response = await axios.get("/pdfs/SC_Manifesto_Booklet.pdf", {
         responseType: "blob",
       });
 

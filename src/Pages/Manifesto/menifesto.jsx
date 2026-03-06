@@ -19,7 +19,7 @@ export default function menifestoInfo() {
         </div>
       <div style={{ padding: 20 }}>
         <iframe
-          src="/pdfs/file-example_PDF_1MB.pdf"
+          src="/pdfs/SC_Manifesto_Booklet.pdf"
           width="100%"
           height="1000px"
           style={{ border: "none" }}
@@ -40,7 +40,7 @@ export default function menifestoInfo() {
     />
 
     <a
-      href="https://manifesto.superchennai.com/pdfs/manifesto.pdf"
+      href="https://manifesto.superchennai.com/pdfs/SC_Manifesto_Booklet.pdf"
       download
       className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded"
     >

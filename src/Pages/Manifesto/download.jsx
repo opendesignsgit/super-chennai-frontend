@@ -4,7 +4,7 @@ import { useEffect } from "react";
 export default function Download() {
   useEffect(() => {
     const link = document.createElement("a");
-    link.href = "/pdfs/file-example_PDF_1MB.pdf"; // MUST be same domain
+    link.href = "/pdfs/SC_Manifesto_Booklet.pdf"; // MUST be same domain
     link.download = "manifesto.pdf";
     document.body.appendChild(link);
     link.click();
@@ -29,7 +29,7 @@ export default function Download() {
 
       <div style={{ padding: 20 }}>
         <iframe
-          src="/pdfs/file-example_PDF_1MB.pdf"
+          src="/pdfs/SC_Manifesto_Booklet.pdf"
           width="100%"
           height="1000px"
           style={{ border: "none" }}

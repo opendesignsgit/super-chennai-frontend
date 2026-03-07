@@ -548,6 +548,7 @@ function App() {
   // const hideOnBlog = location.pathname === "/contest/blog/:slug";
 
   const hideOncovlaves = location.pathname === "/chennai-conclave";
+  const pathname = window.location.pathname;
 
 
  const hideNewsletter =
@@ -575,49 +576,51 @@ function App() {
           )}
 
           {/* )} */}
-
-          <div
-            ref={stickyRef}
-            className={`stickyIconsContainer ${
-              footerReached ? "footerreached" : ""
-            }`}
-          >
-            <a
-              className="linkedin-sc"
-              target="_blank"
-              href="https://www.linkedin.com/company/super-chennai"
+          
+          {pathname !== "/manifesto-admin-all-doc-secure-datas" && (
+            <div
+              ref={stickyRef}
+              className={`stickyIconsContainer ${
+                footerReached ? "footerreached" : ""
+              }`}
             >
-              <img src="/images/Indeed.png" alt="Linkedin" />
-            </a>
-            <a
-              className="instargam-sc"
-              target="_blank"
-              href="https://www.instagram.com/super_chennai_/"
-            >
-              <img src="/images/insta.png" alt="Instagram" />
-            </a>
-            <a
-              className="facebook-sc"
-              target="_blank"
-              href="https://www.facebook.com/share/1Hsb1ypGGE/"
-            >
-              <img src="/images/fb.png" alt="Facebook" />
-            </a>
-            <a
-              className="youtube-sc"
-              target="_blank"
-              href="https://www.youtube.com/@Super_Chennai"
-            >
-              <img src="/images/youtube.png" alt="Youtube" />
-            </a>
-            <a
-              className="threads-sc"
-              target="_blank"
-              href="https://x.com/Super_Chennai_	"
-            >
-              <img src="/images/threads.png" alt="Twitter" />
-            </a>
-          </div>
+              <a
+                className="linkedin-sc"
+                target="_blank"
+                href="https://www.linkedin.com/company/super-chennai"
+              >
+                <img src="/images/Indeed.png" alt="Linkedin" />
+              </a>
+              <a
+                className="instargam-sc"
+                target="_blank"
+                href="https://www.instagram.com/super_chennai_/"
+              >
+                <img src="/images/insta.png" alt="Instagram" />
+              </a>
+              <a
+                className="facebook-sc"
+                target="_blank"
+                href="https://www.facebook.com/share/1Hsb1ypGGE/"
+              >
+                <img src="/images/fb.png" alt="Facebook" />
+              </a>
+              <a
+                className="youtube-sc"
+                target="_blank"
+                href="https://www.youtube.com/@Super_Chennai"
+              >
+                <img src="/images/youtube.png" alt="Youtube" />
+              </a>
+              <a
+                className="threads-sc"
+                target="_blank"
+                href="https://x.com/Super_Chennai_	"
+              >
+                <img src="/images/threads.png" alt="Twitter" />
+              </a>
+            </div>
+          )}
 
           {/* {!hideOnMargazhiPage && (
             <div
@@ -706,14 +709,13 @@ function App() {
             />
             <Route path="/menifestoInfo" element={<MenifestoInfo />} />
             <Route path="/download-manifesto-pdf" element={<Download />} />
-                        <Route path="/Manifesto-info" element={<ManifestoPageInfoPAge />} />
-                                                <Route path="/ManifestoTest" element={<ManifestoTest />} />
+            <Route path="/Manifesto-info" element={<ManifestoPageInfoPAge />} />
+            <Route path="/ManifestoTest" element={<ManifestoTest />} />
 
-                                                                                                <Route path="/manifesto-admin-all-doc-secure-datas" element={<ManifestoView />} />
-
-
-
-            
+            <Route
+              path="/manifesto-admin-all-doc-secure-datas"
+              element={<ManifestoView />}
+            />
 
             <Route
               path="/chennai-contests"

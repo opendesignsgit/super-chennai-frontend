@@ -371,6 +371,23 @@ export const two = [
 
 export const newsArticle = [
 
+      {
+    id: -72212,
+    Company: "passionateinmarketing March 7, 2026",
+    EventsCalendarTitle:
+      "Super Chennai Launches ‘Super Chennai Manifesto 2026",
+    image: "/images/superchennai-logo-news.jpeg",
+    link: "https://www.passionateinmarketing.com/super-chennai-launches-super-chennai-manifesto-2026/",
+  },
+      {
+    id: -7212,
+    Company: "medianews4u March 7, 2026",
+    EventsCalendarTitle:
+      "Super Chennai unveils ‘Super Chennai Manifesto 2026’ to build a global, resilient and future-ready city",
+    image: "/images/super-chennai-logo-news-no-border.jpeg",
+    link: "https://www.medianews4u.com/super-chennai-unveils-super-chennai-manifesto-2026-to-build-a-global-resilient-and-future-ready-city/",
+  },
+
     {
     id: -7,
     Company: "DtNext - Feb 19, 2016",

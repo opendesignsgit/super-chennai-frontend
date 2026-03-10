@@ -168,8 +168,6 @@ export default function Manifesto() {
 
 
    const manifestoschema = [
-
-    
      {
        "@context": "https://schema.org/",
        "@type": "BreadcrumbList",
@@ -187,6 +185,33 @@ export default function Manifesto() {
            item: "https://www.superchennai.com/manifesto-info",
          },
        ],
+     },
+
+     {
+       "@context": "https://schema.org",
+       "@type": "Article",
+       mainEntityOfPage: {
+         "@type": "WebPage",
+         "@id": "https://www.superchennai.com/manifesto-info",
+       },
+       headline: "Super CHennai Manifesto",
+       description:
+         "Learn about the Super Chennai Manifesto initiative where public voices, suggestions, and visions come together to shape Chennai’s future direction.",
+       image:
+         "https://www.superchennai.com/images/manifesto-innerpage-banner.png",
+       author: {
+         "@type": "Person",
+         name: "Super Chennai",
+       },
+       publisher: {
+         "@type": "Organization",
+         name: "",
+         logo: {
+           "@type": "ImageObject",
+           url: "",
+         },
+       },
+       datePublished: "2026-03-06",
      },
    ];
 

@@ -274,6 +274,9 @@ import Iconofthemonth from "./Pages/Icon-of-the-month-july";
 import IconofthemonthOct from "./Pages/Icon-of-the-month-oct";
 import IconofthemonthDec from "./Pages/Icon-of-the-month-dec";
 import IconofthemonthNov from "./Pages/Icon-of-the-month-nov";
+import IconofthemonthFebAruna from "./Pages/Icon-of-the-month-feb-26";
+
+
 
 import Neighbourhoods from "./Pages/Neighbourhoods/neighbourhoods";
 import PrideofChennai from "./Pages/PrideofChennai";
@@ -1424,6 +1427,11 @@ function App() {
               path="/icon-of-the-oct-month-2025"
               element={<IconofthemonthOct />}
             />
+                   <Route
+              path="/icon-of-the-feb-month-2026"
+              element={<IconofthemonthFebAruna />}
+            />
+            
             <Route
               path="/super-chennai-icon-of-aug-2025"
               element={<IconofthemonthAugust />}

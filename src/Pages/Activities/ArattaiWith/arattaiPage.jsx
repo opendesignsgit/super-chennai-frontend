@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { API_BASE_URL_API } from "../../../../config";
 import InstagramReelsMarquee from "./component/creative"
+import { useAnimationControls } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export default function ArrattaiWithArangam() {
   const navigate = useNavigate();
@@ -151,7 +153,117 @@ export default function ArrattaiWithArangam() {
     },
   ];
 
+
+
+    const [showAll, setShowAll] = useState(false);
+    const controls = useAnimationControls();
   
+    const animationRef = useRef(null);
+    const isPausedRef = useRef(false);
+
+
+ const [scrollDir, setScrollDir] = useState("left");
+  const lastScrollY = useRef(0);
+  const bgTextRef = useRef(null);
+  const carouselRef = useRef();
+  const [x, setX] = useState(0);
+  const slide = (direction) => {
+    const cardWidth = 300;
+    const gap = 40;
+    const visibleWidth = window.innerWidth;
+    const totalCardsWidth = mockUpcomingEvents.length * (cardWidth + gap);
+    const maxX = -(totalCardsWidth - visibleWidth + gap);
+
+    setX((prevX) => {
+      if (direction === "left") {
+        return Math.min(prevX + (cardWidth + gap), 0);
+      } else if (direction === "right") {
+        return Math.max(prevX - (cardWidth + gap), maxX);
+      }
+      return prevX;
+    });
+  };
+  
+  
+useEffect(() => {
+  const container = carouselRef.current;
+  if (!container) return;
+
+  let animationFrame;
+  let lastTime = 0;
+
+  const speed = 0.1; 
+
+
+  const animate = (time) => {
+    if (!lastTime) lastTime = time;
+    const delta = (time - lastTime) / 1000;
+    lastTime = time;
+
+    if (!isPausedRef.current) {
+      container.scrollLeft += speed * delta;
+
+      if (container.scrollLeft >= container.scrollWidth / 2) {
+        container.scrollLeft = 0;
+      }
+    }
+
+    animationFrame = requestAnimationFrame(animate);
+  };
+
+  animationFrame = requestAnimationFrame(animate);
+
+  return () => cancelAnimationFrame(animationFrame);
+}, []);
+
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
+
+  const openModal = (image) => {
+    setModalImage(image);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalImage(null);
+  };
+
+// const mockUpcomingEvents = [
+//   {
+//     id: 1,
+//     image: "/images/superchennai-logo-news.jpeg",
+//     title: "Gallery Image 1",
+//     link: "https://www.passionateinmarketing.com/super-chennai-launches-super-chennai-manifesto-2026/",
+//   },
+//   {
+//     id: 2,
+//     image: "/images/super-chennai-logo-news-no-border.jpeg",
+//     title: "Gallery Image 2",
+//     link: "https://www.medianews4u.com/super-chennai-unveils-super-chennai-manifesto-2026-to-build-a-global-resilient-and-future-ready-city/",
+//   },
+// ];
+
+
+const mockUpcomingEvents = [
+  {
+    id: 1,
+    image: "/images/superchennai-logo-news.jpeg",
+    description: "Super Chennai Launches ‘Super Chennai Manifesto 2026",
+    // description:
+    //   "Moments from the conclave where leaders shared ideas and meaningful conversations.",
+    link: "https://www.passionateinmarketing.com/super-chennai-launches-super-chennai-manifesto-2026/",
+  },
+  {
+    id: 2,
+    image: "/images/super-chennai-logo-news-no-border.jpeg",
+    description: "Super Chennai unveils ‘Super Chennai Manifesto 2026’ to build a global, resilient and future-ready city",
+    // description:
+    //   "A glimpse of the engaging discussions and networking moments during the event.",
+    link: "https://www.medianews4u.com/super-chennai-unveils-super-chennai-manifesto-2026-to-build-a-global-resilient-and-future-ready-city/",
+  },
+];
 
   return (
     <>
@@ -271,8 +383,191 @@ export default function ArrattaiWithArangam() {
             </div> */}
           </div>
         </div>
-      
       </section>
+
+      {/*============= GALLERY ================== */}
+
+      <div className="EventsCalendarMainSection mb-10">
+        <div
+          className={`EventsCalenderBackground ${
+            scrollDir === "right"
+              ? "Utilitiesscroll-right"
+              : "Utilitiesscroll-left"
+          }`}
+        >
+          <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+          <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+        </div>
+
+        {/* Title */}
+        <div className="container max-w-7xl mx-auto px-4 EventsCalendarTitleMain">
+          <h2>Media Highlights</h2>
+          <p>
+            A look at media coverage and featured moments from the Arattai with
+            Aruna Sairam event.
+          </p>
+        </div>
+        {/* <div className="eventsCalendarMainSectionConatiner container max-w-7xl mx-auto px-4">
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="CalendarEventsFirst">
+              <img
+                className="eventsCalenderIamge cursor-pointer w-[800px] h-[350px] object-cover"
+                src="images/streaming.png"
+                alt="Super Chennai Conclave 2026"
+              />
+
+              <div className="MainCalendarSectionEvent">
+                <div className="secondSectionEventsCalendar">
+                  <div className="EventsCalendarDateandTime">
+                    <p className="dateEvents">19</p>
+                    <p className="dayEvents">Wednesday</p>
+                  </div>
+
+                  <div>
+                    <p className="eventsNAME">Super Chennai Conclave 2026</p>
+                  </div>
+                </div>
+
+                <div className="thirdSectionCalendarContent">
+                  <p>
+                    Moments from the conclave where ideas met conversations, and
+                    leaders shared perspectives that inspired the room. A frame
+                    that reflects the spirit of collaboration, knowledge
+                    sharing, and meaningful connections.
+                  </p>
+                </div>
+
+                <div className="eventsCalendarLinks">
+                  <a>Conclave</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div> */}
+
+        <div className="overflow-hidden py-17 cardMobileSection">
+          <div className="relative">
+            <div className="absolute top-0 left-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
+            <div className="absolute top-0 right-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
+
+            {/* <motion.div
+              ref={carouselRef}
+              className="flex gap-10 cursor-grab active:cursor-grabbing cardsMobileSection"
+              drag="x"
+              dragConstraints={{
+                right: 0,
+                left: -(mockUpcomingEvents.length * 340 - window.innerWidth),
+              }}
+              animate={{ x }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            >
+              {mockUpcomingEvents.map((card) => {
+                return (
+                  <motion.div
+                    className="flex gap-10 cardsMobileSection"
+                    animate={controls}
+                    onMouseEnter={() => controls.stop()}
+                    onMouseLeave={() =>
+                      controls.start({
+                        x: ["50", "-50%"],
+                        transition: {
+                          ease: "linear",
+                          duration: 140,
+                          repeat: Infinity,
+                        },
+                      })
+                    }
+                  >
+                    <div
+                      ref={carouselRef}
+                      className="flex gap-10 overflow-x-hidden cardsMobileSection"
+                      onMouseEnter={() => (isPausedRef.current = true)}
+                      onMouseLeave={() => (isPausedRef.current = false)}
+                    >
+                      {[...mockUpcomingEvents, ...mockUpcomingEvents].map(
+                        (card, index) => (
+                          <div
+                            key={index}
+                            className="EventsCalendarCardSection min-w-[300px] h-[350px] bg-white"
+                            onClick={() => openModal(card.image)}
+                          >
+                            <img
+                              src={card.image}
+                              alt={card.title}
+                              className="w-full h-[350px] object-cover rounded-t-md"
+                            />
+                          </div>
+                        ),
+                      )}
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </motion.div> */}
+
+            <div className="flex justify-center items-start gap-10 flex-wrap py-10">
+              {mockUpcomingEvents.map((card) => (
+                <a
+                  key={card.id}
+                  href={card.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[320px] bg-white rounded-2xl  hover:shadow-2xl hover:-translate-y-2 transition duration-300 overflow-hidden"
+                >
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="w-full h-[200px] object-cover"
+                  />
+
+                  <div className="p-4">
+                    {/* <h3 className="text-lg font-semibold mb-2">{card.title}</h3> */}
+
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {card.description}
+                    </p>
+                  </div>
+                </a>
+              ))}
+            </div>
+
+            {/* <div className="EventsCalenderButtons flex justify-center  ">
+              <button
+                onClick={() => slide("left")}
+                className="EventsCalenderLeftButton"
+              ></button>
+              <button
+                onClick={() => slide("right")}
+                className="EventsCalenderRightButton"
+              ></button>
+            </div> */}
+          </div>
+
+          {isModalOpen && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 z-[9999]"
+              onClick={closeModal}
+            >
+              <img
+                src={modalImage}
+                alt="Full view"
+                className="max-h-[90%] max-w-[90%] object-contain rounded-lg"
+                onClick={(e) => e.stopPropagation()}
+              />
+              <button
+                className="absolute top-5 right-5 text-white text-2xl font-bold"
+                onClick={closeModal}
+              >
+                ×
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
 
       <AnimatePresence>
         {showRegisterPopup && (

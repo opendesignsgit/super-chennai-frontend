@@ -250,17 +250,16 @@ const mockUpcomingEvents = [
   {
     id: 1,
     image: "/images/superchennai-logo-news.jpeg",
-    description: "Super Chennai Launches ‘Super Chennai Manifesto 2026",
-    // description:
-    //   "Moments from the conclave where leaders shared ideas and meaningful conversations.",
+    description: "Super Chennai launches the Super Chennai Manifesto 2026 outlining a bold vision to build a stronger, smarter and future-ready city.",
+        title: "Super Chennai Manifesto 2026 Launch",
     link: "https://www.passionateinmarketing.com/super-chennai-launches-super-chennai-manifesto-2026/",
   },
   {
     id: 2,
-    image: "/images/super-chennai-logo-news-no-border.jpeg",
-    description: "Super Chennai unveils ‘Super Chennai Manifesto 2026’ to build a global, resilient and future-ready city",
-    // description:
-    //   "A glimpse of the engaging discussions and networking moments during the event.",
+    image: "/images/super-chennai-logo-news-no-border (2).jpeg",
+       title: "Super Chennai Manifesto 2026 Unveiled",
+
+    description: "Super Chennai unveils the Super Chennai Manifesto 2026 presenting a roadmap to create a resilient, global and future-ready Chennai.",
     link: "https://www.medianews4u.com/super-chennai-unveils-super-chennai-manifesto-2026-to-build-a-global-resilient-and-future-ready-city/",
   },
 ];
@@ -387,7 +386,7 @@ const mockUpcomingEvents = [
 
       {/*============= GALLERY ================== */}
 
-      <div className="EventsCalendarMainSection mb-10">
+      <div className="EventsCalendarMainSection">
         <div
           className={`EventsCalenderBackground ${
             scrollDir === "right"
@@ -400,8 +399,7 @@ const mockUpcomingEvents = [
         </div>
 
         {/* Title */}
-        <div className="container max-w-7xl mx-auto px-4 EventsCalendarTitleMain">
-          <h2>Media Highlights</h2>
+<div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">          <h2>Media Highlights</h2>
           <p>
             A look at media coverage and featured moments from the Arattai with
             Aruna Sairam event.
@@ -516,18 +514,18 @@ const mockUpcomingEvents = [
                   href={card.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-[320px] bg-white rounded-2xl  hover:shadow-2xl hover:-translate-y-2 transition duration-300 overflow-hidden"
+                  className="w-[320px] bg-white rounded-none border border-gray-300 overflow-hidden shadow-md flex flex-col hover:shadow-lg transition duration-300"
                 >
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="w-full h-[200px] object-cover"
+                    // className="w-full h-[200px] object-cover"
                   />
-
-                  <div className="p-4">
-                    {/* <h3 className="text-lg font-semibold mb-2">{card.title}</h3> */}
-
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                  <div className="p-4 flex flex-col flex-1">
+                    <h3 className="text-lg font-semibold mb-2 line-clamp-2">
+                      {card.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm line-clamp-3">
                       {card.description}
                     </p>
                   </div>

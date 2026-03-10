@@ -431,7 +431,7 @@ const infoData = [
             </div>
           </div>
         </section>
-        <IconoftheMonthOct />
+        {/* <IconoftheMonthOct /> */}
         <InstagramReelsMarquee />
         <Becameavolunteer />
       </div>

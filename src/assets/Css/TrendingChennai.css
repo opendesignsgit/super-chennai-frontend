@@ -328,6 +328,7 @@
   .hbintContin h3 {
     font-size: clamp(15px, 2.2vw, 20px);
     padding-left: 0px;
+    width: 68%;
   }
 
   .hbintContin p {

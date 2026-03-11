@@ -7575,9 +7575,223 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+
+  {
+  id: 102327,
+  name: "Chennai Electric Buses – New Low-Floor Fleet Launched",
+  slug: "chennai-electric-buses",
+  para: "Trending Chennai Transport Upgrade",
+  TrendingCalendarMonth: "March 2026",
+  TrendingCalendarTime: "Fleet Launched",
+  TrendingCalendarCategory: "Transport | Public Infrastructure | Sustainability",
+  image: "/images/trendingChennai/img-4-New Low-Floor AC and Electric Buses Launched in Chennai.jpg",
+  Homeimage: "/images/trendingChennai/img-4-New Low-Floor AC and Electric Buses Launched in Chennai.jpg",
+  link: "/trending-chennai/chennai-electric-buses",
+  duration: "Operational Across Chennai",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "Public Transport | Electric Mobility | Urban Development",
+  venue: "Chennai",
+
+  trendingDetails: `
+<p>
+Chennai’s public transport system has received a major boost as <b>Deputy Chief Minister Udhayanidhi Stalin</b> inaugurated the renovated workshop at <b>Chennai Central</b> and officially flagged off the operations of <b>100 new low-floor AC buses and 45 low-floor electric buses</b> for the city.
+</p>
+
+<p>
+The introduction of these buses aims to enhance commuter comfort and modernize the city’s public transport network while supporting environmentally friendly mobility solutions.
+</p>
+
+<p>
+Low-floor buses make boarding easier for passengers, including senior citizens and people with disabilities, while the electric buses contribute to reducing emissions and improving air quality across Chennai.
+</p>
+
+<h4>🚌 Fleet Highlights</h4>
+<ul>
+  <li>100 new low-floor air-conditioned buses introduced</li>
+  <li>45 low-floor electric buses added to the fleet</li>
+  <li>Renovated workshop inaugurated at Chennai Central</li>
+  <li>Focus on eco-friendly and comfortable transport</li>
+</ul>
+
+<p>
+This initiative marks an important step toward building a <b>modern, sustainable, and commuter-friendly public transport system</b> for the growing population of Chennai.
+</p>
+`,
+
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/chennai-electric-buses",
+  YoutubeLink: "",
+  meta: {
+    title: "Chennai Electric Buses – New Low-Floor Fleet Launched",
+    desc: "The chennai electric buses launched with new low-floor AC buses aim to improve eco-friendly transport and commuter comfort, featured in Trending Chennai updates.",
+    url: "https://www.superchennai.com/trending-chennai/chennai-electric-buses"
+  }
+},
+
+  {
+  id: 102326,
+  name: "AC Bus Stop Chennai – First Premium Shelter at Retteri",
+  slug: "ac-bus-stop-retteri-chennai",
+  para: "Trending Chennai Transport Upgrade",
+  TrendingCalendarMonth: "March 2026",
+  TrendingCalendarTime: "Opened to Public",
+  TrendingCalendarCategory: "Transport | Infrastructure | Public Facilities",
+  image: "/images/trendingChennai/ac-bus-trending-chennai.jpeg",
+  Homeimage: "/images/trendingChennai/ac-bus-trending-chennai.jpeg",
+  link: "/trending-chennai/ac-bus-stop-retteri-chennai",
+  duration: "Operational Daily",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "Public Transport | Urban Infrastructure | Commuter Facilities",
+  venue: "Retteri Junction, Kolathur, Chennai",
+
+  trendingDetails: `
+<p>
+A brand-new commuter upgrade has arrived at <b>Retteri Junction</b>. People travelling through <b>Kolathur</b> can now enjoy a much more comfortable wait with Chennai’s <b>first premium air-conditioned bus shelter</b>.
+</p>
+
+<p>
+This modern facility is the <b>first among four upgraded bus shelters</b> planned across the city, designed to improve daily commuting comfort for bus passengers.
+</p>
+
+<p>
+The shelter provides a cool and relaxing waiting area, helping commuters escape the intense Chennai heat while waiting for their buses.
+</p>
+
+<h4>🚌 Shelter Features</h4>
+<ul>
+  <li>Air-conditioned waiting space for commuters</li>
+  <li>Comfortable seating for up to 78 passengers</li>
+  <li>Mobile charging points for convenience</li>
+  <li>Neatly landscaped walkway around the shelter</li>
+</ul>
+
+<p>
+More upgraded shelters are expected to open soon in <b>Royapuram, Wall Tax Road, and Perambur</b>, bringing improved public transport infrastructure and a better commuting experience for Chennai’s bus users.
+</p>
+`,
+
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/ac-bus-stop-retteri-chennai",
+  YoutubeLink: "",
+  meta: {
+    title: "AC Bus Stop Chennai – First Premium Shelter at Retteri",
+    desc: "The ac bus stop at Retteri Junction offers air-conditioned seating, charging points and modern facilities, emerging as a commuter upgrade in Trending Chennai.",
+    url: "https://www.superchennai.com/trending-chennai/ac-bus-stop-retteri-chennai"
+  }
+},
+
+  {
+  id: 102325,
+  name: "PlayStation Store Chennai – New Gaming Hub in Anna Nagar",
+  slug: "playstation-store-chennai-anna-nagar",
+  para: "Trending Chennai Gaming & Entertainment",
+  TrendingCalendarMonth: "March 2026",
+  TrendingCalendarTime: "Opened to Public",
+  TrendingCalendarCategory: "Gaming | Retail | Entertainment",
+  image: "/images/trendingChennai/img-2-New PlayStation Gaming Store Opens in Anna Nagar.jpg",
+  Homeimage: "/images/trendingChennai/img-2-New PlayStation Gaming Store Opens in Anna Nagar.jpg",
+  link: "/trending-chennai/playstation-store-chennai-anna-nagar",
+  duration: "Open Daily",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "Gaming | Technology | Entertainment",
+  venue: "Anna Nagar, Chennai",
+
+  trendingDetails: `
+<p>
+Great news for gaming fans in Chennai! A brand-new store dedicated to <b>PlayStation gaming</b> and immersive setups has opened in <b>Anna Nagar</b>, creating an exciting hub for gamers in the city.
+</p>
+
+<p>
+The store features a wide range of <b>PlayStation consoles, gaming accessories, and advanced gaming setups</b>, offering enthusiasts a chance to explore the latest gaming technology and experiences under one roof.
+</p>
+
+<p>
+Visitors can discover the newest games, try out powerful gaming environments, and check out premium accessories designed to enhance the gaming experience for both casual and hardcore gamers.
+</p>
+
+<h4>🎮 Store Highlights</h4>
+<ul>
+  <li>Location: Anna Nagar, Chennai</li>
+  <li>Products: PlayStation consoles & gaming accessories</li>
+  <li>Experience: Immersive gaming setups</li>
+  <li>Community: A new hub for Chennai’s gaming enthusiasts</li>
+  <li>Ideal For: Gamers, tech lovers, and gaming communities</li>
+</ul>
+
+<p>
+For gamers in Chennai, this new destination in <b>Anna Nagar</b> is the perfect place to explore the world of PlayStation, discover new games, and connect with the city’s growing gaming community.
+</p>
+`,
+
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/playstation-store-chennai-anna-nagar",
+  YoutubeLink: "",
+  meta: {
+    title: "PlayStation Store Chennai – New Gaming Hub in Anna Nagar",
+    desc: "The playstation store chennai in Anna Nagar offers consoles, accessories and immersive gaming setups, emerging as a new hotspot in Trending Chennai.",
+    url: "https://www.superchennai.com/trending-chennai/playstation-store-chennai-anna-nagar"
+  }
+},
+
+  {
+  id: 102324,
+  name: "Lake Boating in Thiruvottiyur – Chennai’s New Weekend Spot",
+  slug: "lake-boating-thiruvottiyur",
+  para: "Trending Chennai Leisure Attraction",
+  TrendingCalendarMonth: "March 2026",
+  TrendingCalendarTime: "Opened to Public",
+  TrendingCalendarCategory: "Tourism | Recreation | Weekend Spots",
+  image: "/images/trendingChennai/img-1-New Boating Destination Opens in Thiruvottiyur.jpg",
+  Homeimage: "/images/trendingChennai/img-1-New Boating Destination Opens in Thiruvottiyur.jpg",
+  link: "/trending-chennai/lake-boating-thiruvottiyur",
+  duration: "Open Daily",
+  ageRestriction: "Open for All",
+  language: "N/A",
+  genre: "Boating | Outdoor Recreation | Family Leisure",
+  venue: "Thiruvottiyur, North Chennai",
+
+  trendingDetails: `
+<p>
+Chennai now has a fresh spot to spend the weekend! A new boating attraction introduced by the <b>Tamil Nadu Tourism Development Corporation</b> has opened in <b>Thiruvottiyur</b> on <b>March 1</b>, bringing a lively new recreational experience to the city.
+</p>
+
+<p>
+Visitors can enjoy a variety of boating options including <b>speed boats, relaxing pedal boats, and water scooters</b>, making it an exciting destination for both adventure seekers and families looking to unwind by the water.
+</p>
+
+<p>
+The boating area sits beside a large scenic waterbody located close to the railway tracks, where every passing train adds a unique charm to the surroundings and enhances the overall lakeside experience.
+</p>
+
+<p>
+The experience doesn’t stop with boating. The area also features <b>authentic Burma food stalls</b> serving delicious local dishes that perfectly complement an evening outing by the lake.
+</p>
+
+<h4>📍 Boating Spot Highlights</h4>
+<ul>
+  <li>Location: Thiruvottiyur, North Chennai</li>
+  <li>Activities: Speed Boats, Pedal Boats, Water Scooters</li>
+  <li>Atmosphere: Scenic waterbody with sunset views</li>
+  <li>Food: Local Burma food stalls nearby</li>
+  <li>Ideal For: Families, friends, and weekend visitors</li>
+</ul>
+
+<p>
+With <b>affordable prices, refreshing sea breeze, and beautiful sunset views</b>, this new boating destination is quickly becoming a popular weekend hangout spot in North Chennai.
+</p>
+`,
+
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/lake-boating-thiruvottiyur",
+  YoutubeLink: "",
+  meta: {
+    title: "Lake Boating in Thiruvottiyur – Chennai’s New Weekend Spot",
+    desc: "Lake boating in Thiruvottiyur offers speed boats, pedal boats and scenic sunset views, emerging as a fresh leisure attraction in Trending Chennai.",
+    url: "https://www.superchennai.com/trending-chennai/lake-boating-thiruvottiyur"
+  }
+},
   
 {
-  id: 10,
+  id: 102323,
   name: "Global Sports City Foundations Laid at Semmencherri",
   slug: "global-sports-city-semmencherry-2026",
   para: "Trending Chennai Sports Development 2026",
@@ -7620,7 +7834,7 @@ The Global Sports City aims to integrate modern infrastructure, advanced trainin
 </p>
 `,
 
-  TrendingLink: "https://www.superchennai.com/trending-chennai/global-sports-city-chennai",
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/global-sports-city-chennai",
   YoutubeLink: "",
   meta: {
     title: "Global Sports City | Semmencherry Sports Hub Update",
@@ -7670,7 +7884,7 @@ This marks a major milestone in Chennai’s metro expansion, bringing the city o
 </p>
 `,
 
-  TrendingLink: "https://www.superchennai.com/trending-chennai/chennai-metro-depot-phase-2-update",
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/chennai-metro-depot-phase-2-update",
   YoutubeLink: "",
   meta: {
     title: "Chennai Metro Depot – Phase 2 Upgrade & Operations",
@@ -7724,7 +7938,7 @@ With construction progressing at high speed, officials confirm that the launch i
 </p>
 `,
 
-  TrendingLink: "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam",
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam",
   YoutubeLink: "",
   meta: {
     title: "FinTech City Nandambakkam | Chennai’s Emerging Tech Hub",
@@ -7778,7 +7992,7 @@ Once completed, this elevated corridor will streamline <b>cargo movement</b>, re
 </p>
 `,
 
-  TrendingLink: "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai",
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai",
   YoutubeLink: "",
   meta: {
     title: "Port Maduravoyal Expressway | Chennai Port Connectivity Upgrade",
@@ -7833,7 +8047,7 @@ This modern viewing tower promises to completely redefine how Chennai experience
 </p>
 `,
 
-  TrendingLink: "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park",
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park",
   YoutubeLink: "",
   meta: {
     title: "Musical Tower | Chennai’s New Skyline Attraction",
@@ -7887,7 +8101,7 @@ This new hub not only decongests the city but also elevates comfort and convenie
 </p>
 `,
 
-  TrendingLink: "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus",
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus",
   YoutubeLink: "",
   meta: {
     title: "Kilambakkam Bus Terminus | Chennai’s New Travel Hub",
@@ -7943,7 +8157,7 @@ Once completed, this upgraded connectivity link will play a key role in enhancin
 </p>
 `,
 
-  TrendingLink: "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-update",
+  // TrendingLink: "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-update",
   YoutubeLink: "",
   meta: {
     title: "Vadapalani Skywalk | Metro Corridor Connectivity Update",
@@ -7996,8 +8210,8 @@ Mamallapuram already stands as a global heritage symbol with its ancient monumen
 </p>
 `,
 
-    TrendingLink:
-      "https://www.superchennai.com/trending-chennai/museum-development-mamallapuram",
+    // TrendingLink:
+    //   "https://www.superchennai.com/trending-chennai/museum-development-mamallapuram",
     YoutubeLink: "",
     meta: {
       title: "Museum Development in Mamallapuram | Tamil Culture Museum",
@@ -8056,7 +8270,7 @@ The newly developed Retteri Lake Park, opened to the public in February 2026, of
 </p>
 `,
 
-    TrendingLink: "",
+    // TrendingLink: "",
     YoutubeLink: "",
     meta: {
       title: "Trending Chennai : Retteri Lake Park Opens Waterfront Update",

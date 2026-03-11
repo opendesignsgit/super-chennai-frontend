@@ -105,12 +105,13 @@
 }
 
 .menuBarLinksContent {
-  /* margin-top: 50px;
-  margin-left: 10px; */
-  margin-top: 80px;
-  margin-left: 10px;
-  margin-right: 0;
-  max-width: 100%;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 0;
+    max-width: 100%;
+    overflow-y: auto;
+    height: 500px;
+    padding-bottom: 50px !important;
 }
 
 .SuperCehnnaiLogoImages {

@@ -358,60 +358,62 @@ const menuItems = [
       },
     ],
   },
-  {
-    label: "Volunteer",
-    labellink: "/volunteer-in-chennai",
 
-    content: [
-      {
-        title: "Digital",
-        // desc: "Connect and collaborate online",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Events",
-        // desc: "Help run volunteer meets",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Content Creators",
-        // desc: "Share inspiring volunteer stories",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Design &  Art",
-        // desc: "Showcase causes through creativity",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Influencers",
-        // desc: "Promote action through your voice",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-      {
-        title: "Mentors",
-        // desc: "Guide new volunteer minds",
-        desc: "In Chennai",
-        link: "/volunteer-in-chennai",
-      },
-    ],
-  },
-  //  {
-  //   label: "Arattai",
-  //   labellink: "/arattai-with-aruna-sairam/carnatic-vocalist",
+  // {
+  //   label: "Volunteer",
+  //   labellink: "/volunteer-in-chennai",
+
   //   content: [
   //     {
-  //       title: "",
-  //       desc: "",
-  //       link: "",
+  //       title: "Digital",
+  //       // desc: "Connect and collaborate online",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Events",
+  //       // desc: "Help run volunteer meets",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Content Creators",
+  //       // desc: "Share inspiring volunteer stories",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Design &  Art",
+  //       // desc: "Showcase causes through creativity",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Influencers",
+  //       // desc: "Promote action through your voice",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
+  //     },
+  //     {
+  //       title: "Mentors",
+  //       // desc: "Guide new volunteer minds",
+  //       desc: "In Chennai",
+  //       link: "/volunteer-in-chennai",
   //     },
   //   ],
   // },
+  
+   {
+    label: "Arattai",
+    labellink: "/arattai-with-aruna-sairam/carnatic-vocalist",
+    content: [
+      {
+        title: "",
+        desc: "",
+        link: "",
+      },
+    ],
+  },
 ];
 const sectionImageMap = {
   Live: "/images/HomePage-Images/live-MegaMenu.jpg",

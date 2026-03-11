@@ -7577,6 +7577,183 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 export const panesContent = [
 
   {
+  "id": 102330,
+  "name": "Chennai Ula 2.0 Hop-On Hop-Off A/C Tourist Bus Service Launched",
+  "slug": "chennai-ula-2-hop-on-hop-off-bus",
+  "para": "New Tourist Bus Experience in Chennai",
+  "TrendingCalendarMonth": "February 2026",
+  "TrendingCalendarTime": "Service Launched",
+  "TrendingCalendarCategory": "Tourism | Transport | City Experience",
+  "image": "/images/trendingChennai/ulaa-bus.jpeg",
+  "Homeimage": "/images/trendingChennai/ulaa-bus.jpeg",
+  "link": "/trending-chennai/chennai-ula-2-hop-on-hop-off-bus",
+  "duration": "Daily 6 AM – 10 PM",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Tourism | City Sightseeing | Public Transport",
+  "venue": "Chennai",
+
+  "trendingDetails": `
+<p>
+Chennai introduced its upgraded <b>hop-on hop-off tourist bus service, Chennai Ula 2.0</b>, on <b>February 27, 2026</b>. The service is designed to help tourists and residents explore the city’s iconic attractions through a convenient and affordable sightseeing experience.
+</p>
+
+<p>
+The air-conditioned buses travel along a <b>46-km route</b> connecting several popular landmarks across Chennai. With a single ticket, passengers can enjoy <b>unlimited rides throughout the day</b>, making it easier to hop on and off at different destinations.
+</p>
+
+<h4>🚌 Service Highlights</h4>
+<ul>
+  <li>Launch date: <b>February 27, 2026</b></li>
+  <li>Route length: <b>46 km</b> covering major tourist attractions</li>
+  <li>Buses operate every <b>30 minutes</b></li>
+  <li>Flat ticket price of <b>₹100</b> for unlimited rides in a day</li>
+</ul>
+
+<h4>📍 Key Stops</h4>
+<ul>
+  <li>Marina Beach</li>
+  <li>Guindy</li>
+  <li>Besant Nagar</li>
+  <li>Santhome</li>
+  <li>MGR Central Railway Station</li>
+  <li>High Court</li>
+  <li>Birla Planetarium</li>
+</ul>
+
+<h4>🎫 Booking</h4>
+<ul>
+  <li>Tickets available directly from the <b>bus conductor</b></li>
+  <li>Online booking through the <b>Chennai One App</b></li>
+</ul>
+
+<p>
+Chennai Ula 2.0 aims to provide a <b>comfortable, flexible, and budget-friendly sightseeing option</b>, helping visitors discover the city’s cultural landmarks, beaches, and historic attractions with ease.
+</p>
+`,
+  TrendingLink: "https://www.chennaione.in/",
+
+
+  "YoutubeLink": "",
+  "meta": {
+    "title": "Chennai Ula 2.0 Hop-On Hop-Off Tourist Bus Service Launched",
+    "desc": "Chennai Ula 2.0 launches a hop-on hop-off AC tourist bus service covering 46 km with 23 stops across major attractions like Marina Beach and Besant Nagar for ₹100.",
+    "url": "https://www.superchennai.com/trending-chennai/chennai-ula-2-hop-on-hop-off-bus"
+  }
+},
+
+  {
+  "id": 102329,
+  "name": "Marina Beach Blue Flag Phase 2 Upgrade Opens in Chennai",
+  "slug": "marina-beach-blue-flag-phase-2",
+  "para": "Marina Beach Infrastructure Upgrade",
+  "TrendingCalendarMonth": "February 2026",
+  "TrendingCalendarTime": "Phase 2 Opened",
+  "TrendingCalendarCategory": "Tourism | Public Infrastructure | Sustainability",
+  "image": "/images/trendingChennai/Marina Blue Flag.jpeg",
+  "Homeimage": "/images/trendingChennai/Marina Blue Flag.jpeg",
+  "link": "/trending-chennai/marina-beach-blue-flag-phase-2",
+  "duration": "Open for Visitors",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Tourism | Beach Development | City Infrastructure",
+  "venue": "Chennai",
+
+  "trendingDetails": `
+<p>
+The second phase of the <b>Blue Flag enhancement project</b> at <b>Marina Beach</b> in Chennai was opened to visitors around <b>February 22, 2026</b>. Located opposite <b>Vivekananda House</b>, the upgraded section introduces improved visitor facilities designed to meet international standards of cleanliness, safety, and sustainability.
+</p>
+
+<p>
+The project, developed with an investment of around <b>₹7 crore</b>, focuses on creating a safer and more comfortable beach environment for tourists and local visitors while maintaining eco-friendly infrastructure.
+</p>
+
+<h4>🏖️ Key Highlights</h4>
+<ul>
+  <li>Bamboo umbrellas and eco-friendly seating arrangements</li>
+  <li>Dedicated children’s play zones</li>
+  <li>Watchtowers and improved safety monitoring</li>
+  <li>Designated safe zones for tourists</li>
+</ul>
+
+<h4>📍 Project Timeline</h4>
+<ul>
+  <li>Phase 2 opened to visitors in <b>February 2026</b></li>
+  <li>The first phase was inaugurated by <b>Deputy Chief Minister Udhayanidhi Stalin</b> on <b>August 3, 2025</b></li>
+</ul>
+
+<p>
+The Blue Flag initiative is part of Chennai’s broader effort to transform <b>Marina Beach</b> into a <b>cleaner, safer, and internationally recognized beach destination</b> with sustainable infrastructure improvements for visitors.
+</p>
+`,
+
+  "YoutubeLink": "",
+  "meta": {
+    "title": "Marina Beach Blue Flag Phase 2 Upgrade Opens in Chennai",
+    "desc": "Phase 2 of the Marina Beach Blue Flag upgrade in Chennai opens with eco-friendly seating, safety watchtowers, and visitor amenities to improve tourism and beach safety.",
+    "url": "https://www.superchennai.com/trending-chennai/marina-beach-blue-flag-phase-2"
+  }
+},
+
+  {
+  "id": 102328,
+  "name": "Chennai MTC Premium Gold AC Electric Buses Launched",
+  "slug": "mtc-premium-gold-ac-electric-buses",
+  "para": "Premium Electric Bus Service in Chennai",
+  "TrendingCalendarMonth": "March 2026",
+  "TrendingCalendarTime": "Bus Service Launch",
+  "TrendingCalendarCategory": "Transport | Electric Mobility | Public Infrastructure",
+  "image": "/images/trendingChennai/MTC_bus.jpeg",
+  "Homeimage": "/images/trendingChennai/MTC_bus.jpeg",
+  "link": "/trending-chennai/mtc-premium-gold-ac-electric-buses",
+  "duration": "Operational on Select Routes",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Public Transport | Electric Mobility | City Infrastructure",
+  "venue": "Chennai",
+
+  "trendingDetails": `
+<p>
+Chennai’s <b>Metropolitan Transport Corporation (MTC)</b> has introduced a new fleet of <b>Premium Gold AC Electric Buses</b> to improve the comfort and efficiency of city travel. The buses were officially unveiled on <b>March 11, 2026</b> as part of the city’s initiative to modernize public transport.
+</p>
+
+<p>
+These new buses feature a <b>low-floor design</b> for easy boarding, fully <b>air-conditioned interiors</b>, and <b>plush cushioned seating</b> to offer a more comfortable commuting experience. With a striking <b>gold exterior livery</b>, the buses stand out as a premium addition to Chennai’s public transport system.
+</p>
+
+<p>
+Unlike regular services, the Premium Gold buses operate as <b>limited-stop routes</b>, ensuring faster travel across key parts of the city while maintaining high levels of passenger comfort.
+</p>
+
+<h4>🚌 Key Features</h4>
+<ul>
+  <li>Low-floor electric buses with full air-conditioning</li>
+  <li>Premium cushioned seating for enhanced comfort</li>
+  <li>Modern gold exterior design for a premium look</li>
+  <li>Limited-stop routes for faster city travel</li>
+</ul>
+
+<h4>📍 Example Routes</h4>
+<ul>
+  <li>Route <b>P570S</b> connects <b>Siruseri IT Park</b> to <b>MGR Koyambedu (CMBT)</b></li>
+  <li>Route <b>P91</b> links <b>Thiruvanmiyur</b> with the <b>Kilambakkam KCBT terminus</b></li>
+  <li>These routes improve connectivity between <b>key residential areas, IT hubs, and major transit points</b> across Chennai</li>
+</ul>
+
+<p>
+The launch of these electric buses highlights Chennai’s commitment to <b>eco-friendly transport, reduced emissions, and improved commuter experience</b>, making city travel more sustainable and comfortable.
+</p>
+`,
+
+  "YoutubeLink": "",
+  "meta": {
+    "title": "Premium Bus by MTC: Chennai Rolls Out Gold Electric AC Service",
+    "desc": "Trending Chennai update: MTC bus rolls out premium bus service with gold AC electric buses, WiFi, comfortable seating and limited stops for faster city travel.",
+    "url": "https://www.superchennai.com/trending-chennai/mtc-premium-gold-ac-electric-buses"
+  }
+},
+
+  {
   id: 102327,
   name: "Chennai Electric Buses – New Low-Floor Fleet Launched",
   slug: "chennai-electric-buses",

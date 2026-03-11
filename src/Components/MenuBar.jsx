@@ -10,31 +10,16 @@ export default function MenuBar({ setMenuBar }) {
   };
   const menuItems = [
     { label: "About Us", href: "/about-us" },
-
-    // { label: "Career", href: "/career" },
     { label: "Events", href: "/chennai-events" },
+    { label: "Manifesto ", href: "/manifesto-info" },
     { label: "Superchennai Contests", href: "/superchennai-contest" },
-    
-    // { label: "Pride of Chennai", href: "/pride-of-chennai" },
-    // { label: "AI REIMAGINE", href: "/reimagine-chennai-AI-art-challenge" },
-    // { label: "Social Chennai", href: "/social-chennai" },
-    {
-      label: (
-        <>
-          {" "}
-          Faq<small>s</small>{" "}
-        </>
-      ),
-      href: "/faqs",
-    },
     { label: <> Icon of the Month </>, href: "/icon-of-the-month-in-chennai" },
     { label: "MEDIA  COVERAGE ", href: "/media-coverage" },
-    { label: "Blog", href: "/blog" },
-    { label: "Contact Us", href: "/contact" },
     { label: "Apps Used In Chennai", href: "/chennai-apps" },
     { label: "Conclave", href: "/chennai-conclave" },
-
-    // { label: "Sustainability", href: "/sustainability" },
+    {label: (<>{" "} Faq<small>s</small>{" "}</> ), href: "/faqs", },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   const menuItemsMobile = [

@@ -277,8 +277,7 @@
   /* box-shadow:
     0 10px 16px 0 rgba(0, 0, 0, 0.2),
     0 22px 10px 0 rgba(0, 0, 0, 0.05); */
-      width: 26%;
-
+  width: 50%;
   border-radius: 20px;
 }
 
@@ -379,7 +378,7 @@
 
 @media (max-width: 1600px) {
   .VolunteerBannerImage img {
-    width: 85%;
+    /* width: 75%; */
   }
 
   .VolunteerBannerImage video {

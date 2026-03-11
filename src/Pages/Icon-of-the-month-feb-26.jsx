@@ -278,13 +278,13 @@ const infoData = [
     <>
       <Helmet>
         <title>
-          Chinmayi Sripaada’s Soulful Voice of India - Icon of the Month
+         Icon of the Month | Super Chennai – Aruna Sairam
         </title>
         <meta
           name="description"
-          content=" Chinmayi Sripaada’s journey showcases true excellence award winning singer, mentor, entrepreneur, and advocate for social justice and women’s rights."
+          content="Icon of the Month: Aruna Sairam, renowned Carnatic vocalist, brings Chennai’s classical music to global stages, inspiring audiences worldwide with her soulful voice.."
         />
-        <link rel="canonical" href="/icon-of-the-oct-month-2025" />
+        <link rel="canonical" href="/icon-of-the-feb-month-2026" />
       </Helmet>
 
       <div className="InvestPageId">
@@ -387,7 +387,7 @@ const infoData = [
           <div className="awards-container">
             <img
               alt="foundations "
-              src="/images/arunasairam-iconofthemonth.jpeg"
+              src="/images/arunasairam-awardimg.jpeg"
             ></img>
             <div
               ref={listRef}

@@ -84,7 +84,7 @@ export default function Iconsofthemonth() {
 
               {/*############## CHINNAMAYI ######## */}
 
-               <a
+               {/* <a
                 className="superchennaiEventsSection"id="icon-of-the-month-nov"
                 href="/icon-of-the-feb-month-2026"
               >
@@ -102,7 +102,7 @@ export default function Iconsofthemonth() {
                     Icon of the Month - Feb 2026
                   </p>
                 </div>
-              </a>
+              </a> */}
 
               <a
                 className="superchennaiEventsSection"id="icon-of-the-month-nov"

@@ -7636,7 +7636,7 @@ Chennai Ula 2.0 aims to provide a <b>comfortable, flexible, and budget-friendly 
 
   "YoutubeLink": "",
   "meta": {
-    "title": "Title - Chennai Tourist Bus: Chennai Ula 2.0 A/C Hop-On Hop-Off City Tour",
+    "title": " Chennai Tourist Bus: Chennai Ula 2.0 A/C Hop-On Hop-Off City Tour",
     "desc": "Chennai tourist bus Chennai Ula 2.0 is part of Trending Chennai, offering AC hop-on hop-off rides across Marina, Guindy and Besant Nagar with 23 stops.",
     "url": "https://www.superchennai.com/trending-chennai/chennai-ula-2-hop-on-hop-off-bus"
   }

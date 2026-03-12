@@ -38,8 +38,6 @@ export default function TrendingDetails() {
 
   if (!event) return null;
 
-
-
   const glowgaradern = [
     {
       "@context": "https://schema.org/",
@@ -268,7 +266,6 @@ export default function TrendingDetails() {
       ],
     },
   ];
-
 
   const retaeri = [
     {
@@ -678,8 +675,235 @@ export default function TrendingDetails() {
 
   ]
 
+  const mtcBusPeruimGold = [
+
+    {
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Super Chennai",
+    "item": "https://www.superchennai.com/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Chennai MTC Premium Gold AC Buses",
+    "item": "https://www.superchennai.com/trending-chennai/mtc-premium-gold-ac-electric-buses"  
+  }]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/mtc-premium-gold-ac-electric-buses"
+  },
+  "headline": "Chennai MTC Premium Gold AC Electric Buses Launched",
+  "description": "Trending Chennai update: MTC bus rolls out premium bus service with gold AC electric buses, WiFi, comfortable seating and limited stops for faster city travel.",
+  "image": "https://www.superchennai.com/images/trendingChennai/MTC_bus.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-03-11"
+}
 
 
+  ]
+
+  const electriBusNew = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Chennai Electric Buses",
+          item: "https://www.superchennai.com/trending-chennai/chennai-electric-buses",
+        },
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/chennai-electric-buses",
+      },
+      headline: "Chennai Electric Buses – New Low-Floor Fleet Launched",
+      description:
+        "The chennai electric buses launched with new low-floor AC buses aim to improve eco-friendly transport and commuter comfort, featured in Trending Chennai updates.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/ac-bus-trending-chennai.jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-03",
+    },
+  ];
+
+  const LackeBoatingThiruvtryue = [
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/lake-boating-thiruvottiyur"
+  },
+  "headline": "Lake Boating in Thiruvottiyur – Chennai’s New Weekend Spot",
+  "description": "Lake boating in Thiruvottiyur offers speed boats, pedal boats and scenic sunset views, emerging as a fresh leisure attraction in Trending Chennai.",
+  "image": "https://www.superchennai.com/images/trendingChennai/img-1-New%20Boating%20Destination%20Opens%20in%20Thiruvottiyur.jpg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-02-25"
+},
+{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Super Chennai",
+    "item": "https://www.superchennai.com/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Lake Boating in Thiruvottiyur",
+    "item": "https://www.superchennai.com/trending-chennai/lake-boating-thiruvottiyur"  
+  }]
+}
+
+
+  ]
+
+  const annaNagarPlayStation = [
+    {
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Super Chennai",
+    "item": "https://www.superchennai.com/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Anna nagar Play station",
+    "item": "https://www.superchennai.com/trending-chennai/playstation-store-chennai-anna-nagar"  
+  }]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/playstation-store-chennai-anna-nagar"
+  },
+  "headline": "PlayStation Store Chennai – New Gaming Hub in Anna Nagar",
+  "description": "The playstation store chennai in Anna Nagar offers consoles, accessories and immersive gaming setups, emerging as a new hotspot in Trending Chennai.",
+  "image": "https://www.superchennai.com/images/trendingChennai/img-2-New%20PlayStation%20Gaming%20Store%20Opens%20in%20Anna%20Nagar.jpg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-03-01"
+}
+
+
+  ]
+
+  const AcBusRetreii = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "AC Bus Stop Retteri",
+          item: "https://www.superchennai.com/trending-chennai/ac-bus-stop-retteri-chennai",
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/ac-bus-stop-retteri-chennai",
+      },
+      headline: "AC Bus Stop Chennai – First Premium Shelter at Retteri",
+      description:
+        "The ac bus stop at Retteri Junction offers air-conditioned seating, charging points and modern facilities, emerging as a commuter upgrade in Trending Chennai.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/img-3-Chennai%E2%80%99s%20First%20AC%20Bus%20Shelter%20Opens%20at%20Retteri%20Junction-3.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-11",
+    },
+  ];
 
   return (
     <>
@@ -705,6 +929,41 @@ export default function TrendingDetails() {
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
         />
+        
+
+
+       {slug === "ac-bus-stop-retteri-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(AcBusRetreii)}
+          </script>
+        )}
+        
+        
+         {slug === "playstation-store-chennai-anna-nagar" && (
+          <script type="application/ld+json">
+            {JSON.stringify(annaNagarPlayStation)}
+          </script>
+        )}
+        
+
+         {slug === "lake-boating-thiruvottiyur" && (
+          <script type="application/ld+json">
+            {JSON.stringify(LackeBoatingThiruvtryue)}
+          </script>
+        )}
+        
+
+        {slug === "chennai-electric-buses" && (
+          <script type="application/ld+json">
+            {JSON.stringify(electriBusNew)}
+          </script>
+        )}
+
+        {slug === "mtc-premium-gold-ac-electric-buses" && (
+          <script type="application/ld+json">
+            {JSON.stringify(mtcBusPeruimGold)}
+          </script>
+        )}
 
         {slug === "glow-garden-mahabalipuram-chennai" && (
           <script type="application/ld+json">
@@ -741,13 +1000,10 @@ export default function TrendingDetails() {
         )}
 
         {slug === "retteri-lake-park-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(retaeri)}
-          </script>
+          <script type="application/ld+json">{JSON.stringify(retaeri)}</script>
         )}
 
-
-         {slug === "fintech-city-nandambakkam-2026" && (
+        {slug === "fintech-city-nandambakkam-2026" && (
           <script type="application/ld+json">
             {JSON.stringify(fintechSchema)}
           </script>
@@ -771,32 +1027,27 @@ export default function TrendingDetails() {
           </script>
         )}
 
-
-        {slug ==="vadapalani-skywalk-metro-corridor-2026" && (
+        {slug === "vadapalani-skywalk-metro-corridor-2026" && (
           <script type="application/id+json">
             {JSON.stringify(vadapalainschemaMEtro)}
           </script>
         )}
-      {slug === "poonamallee-depot-chennai-metro-phase-2-2026" && (
-        <script type="application/id+json">
-          {JSON.stringify(poonamalaschema)}
+        {slug === "poonamallee-depot-chennai-metro-phase-2-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(poonamalaschema)}
+          </script>
+        )}
+        {slug === "musical-tower-kalaignar-centenary-park-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(MUiscialTowerSchem)}
+          </script>
+        )}
 
-        </script>
-      )}
-      {slug === "musical-tower-kalaignar-centenary-park-2026" && (
-        <script type="application/id+json">
-          {JSON.stringify(MUiscialTowerSchem)}
-        </script>
-      )}
-
-      {slug === "port-maduravoyal-expressway-chennai-2026"&& (
-        <script type="application/id+json">
-          {JSON.stringify(portmaduravayal)}
-        </script>
-      )}
-
-      
-
+        {slug === "port-maduravoyal-expressway-chennai-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(portmaduravayal)}
+          </script>
+        )}
       </Helmet>
 
       {/* Banner Section */}

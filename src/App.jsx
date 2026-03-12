@@ -303,7 +303,7 @@ import DevConclave from "./Pages/Activities/Conclave/devCon"
 import ArrattaiWithArangam from "./Pages/Activities/ArattaiWith/arattaiPage"
 import ArattaiExcelView from "./Pages/Activities/ArattaiWith/ArattaiExcelView"
 
-
+import ArattaiWithJahabar from "./Pages/Activities/ArrattaiWithjahabar/araatai-jahabar"
 
 
 
@@ -855,6 +855,12 @@ function App() {
               path="/arattai-with-aruna-sairam/carnatic-vocalist"
               element={<ArrattaiWithArangam />}
             />
+             <Route
+              path="/arattai-with-Jahabar"
+              element={<ArattaiWithJahabar />}
+            />
+
+            
             <Route
               path="/arattai-with-aruna-sairam/carnatic-vocalist-live-update"
               element={<ArattaiExcelView />}

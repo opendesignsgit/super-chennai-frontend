@@ -380,13 +380,14 @@ const mockUpcomingEvents = [
               </button>
 
             </div> */}
+            
           </div>
         </div>
       </section>
 
       {/*============= GALLERY ================== */}
 
-      <div className="EventsCalendarMainSection">
+      <div className="EventsCalendarMainSection hidden">
         <div
           className={`EventsCalenderBackground ${
             scrollDir === "right"

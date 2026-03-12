@@ -7636,8 +7636,8 @@ Chennai Ula 2.0 aims to provide a <b>comfortable, flexible, and budget-friendly 
 
   "YoutubeLink": "",
   "meta": {
-    "title": "Chennai Ula 2.0 Hop-On Hop-Off Tourist Bus Service Launched",
-    "desc": "Chennai Ula 2.0 launches a hop-on hop-off AC tourist bus service covering 46 km with 23 stops across major attractions like Marina Beach and Besant Nagar for ₹100.",
+    "title": "Title - Chennai Tourist Bus: Chennai Ula 2.0 A/C Hop-On Hop-Off City Tour",
+    "desc": "Chennai tourist bus Chennai Ula 2.0 is part of Trending Chennai, offering AC hop-on hop-off rides across Marina, Guindy and Besant Nagar with 23 stops.",
     "url": "https://www.superchennai.com/trending-chennai/chennai-ula-2-hop-on-hop-off-bus"
   }
 },
@@ -7689,8 +7689,8 @@ The Blue Flag initiative is part of Chennai’s broader effort to transform <b>M
 
   "YoutubeLink": "",
   "meta": {
-    "title": "Marina Beach Blue Flag Phase 2 Upgrade Opens in Chennai",
-    "desc": "Phase 2 of the Marina Beach Blue Flag upgrade in Chennai opens with eco-friendly seating, safety watchtowers, and visitor amenities to improve tourism and beach safety.",
+    "title": "Marina Beach Blue Flag: Phase 2 Opens with New Facilities",
+    "desc": " Marina Beach Blue Flag Phase 2 opens opposite Vivekananda House with bamboo seating, play zones and watchtowers, now highlighted in Trending Chennai.",
     "url": "https://www.superchennai.com/trending-chennai/marina-beach-blue-flag-phase-2"
   }
 },
@@ -8979,67 +8979,67 @@ An ideal spot for a fun, memorable family outing.
       url: "https://www.superchennai.com/trending-chennai/glow-garden-mahabalipuram",
     },
   },
-  {
-    id: 5555,
-    name: "Karthik Live Music Concert 2026",
-    slug: "karthik-live-concert-chennai-2026",
-    para: "Trending Chennai Event 2026",
-    TrendingCalendarMonth: "February 2026",
-    TrendingCalendarTime: "07:30 PM",
-    TrendingCalendarCategory: "Live Music Concert",
-    image: "/images/trendingChennai/source-karthick-banner.jpeg",
-    Homeimage: "/images/trendingChennai/karthick-image.jpeg",
-    link: "/trending-chennai/karthik-live-concert-chennai-2026",
-    duration: "As per show flow",
-    ageRestriction: "5 Years & Above",
-    language: "Tamil",
-    genre: "Indian Pop | Regional Music",
-    venue: "YMCA, Chennai",
+//   {
+//     id: 5555,
+//     name: "Karthik Live Music Concert 2026",
+//     slug: "karthik-live-concert-chennai-2026",
+//     para: "Trending Chennai Event 2026",
+//     TrendingCalendarMonth: "February 2026",
+//     TrendingCalendarTime: "07:30 PM",
+//     TrendingCalendarCategory: "Live Music Concert",
+//     image: "/images/trendingChennai/source-karthick-banner.jpeg",
+//     Homeimage: "/images/trendingChennai/karthick-image.jpeg",
+//     link: "/trending-chennai/karthik-live-concert-chennai-2026",
+//     duration: "As per show flow",
+//     ageRestriction: "5 Years & Above",
+//     language: "Tamil",
+//     genre: "Indian Pop | Regional Music",
+//     venue: "YMCA, Chennai",
 
-    trendingDetails: `
-<p>
-<b>Karthik</b> is widely regarded as one of India’s most loved and respected playback singers, a voice that has resonated with audiences across generations.
-</p>
+//     trendingDetails: `
+// <p>
+// <b>Karthik</b> is widely regarded as one of India’s most loved and respected playback singers, a voice that has resonated with audiences across generations.
+// </p>
 
-<p>
-Born and raised in Chennai, and classically trained in both <b>Carnatic</b> and <b>Hindustani</b> music, his illustrious journey includes thousands of songs in multiple Indian languages. Celebrated for his emotionally rich vocals, remarkable versatility, and powerful stage presence, Karthik continues to redefine the live music experience.
-</p>
+// <p>
+// Born and raised in Chennai, and classically trained in both <b>Carnatic</b> and <b>Hindustani</b> music, his illustrious journey includes thousands of songs in multiple Indian languages. Celebrated for his emotionally rich vocals, remarkable versatility, and powerful stage presence, Karthik continues to redefine the live music experience.
+// </p>
 
-<p>
-As part of his much-awaited India tour, Karthik brings his music closer to fans across the country. Every performance promises a fully immersive live concert experience, blending nostalgia, heartfelt emotion, and high-energy moments.
-</p>
+// <p>
+// As part of his much-awaited India tour, Karthik brings his music closer to fans across the country. Every performance promises a fully immersive live concert experience, blending nostalgia, heartfelt emotion, and high-energy moments.
+// </p>
 
-<h4>📅 Event Details</h4>
-<ul>
-  <li>Date: Saturday, 28 February 2026</li>
-  <li>Time: 7:30 PM</li>
-  <li>Duration: As per show flow</li>
-  <li>Age Limit: 5 Years & Above</li>
-  <li>Genre: Indian Pop | Regional Music</li>
-  <li>Venue: YMCA, Chennai</li>
-</ul>
+// <h4>📅 Event Details</h4>
+// <ul>
+//   <li>Date: Saturday, 28 February 2026</li>
+//   <li>Time: 7:30 PM</li>
+//   <li>Duration: As per show flow</li>
+//   <li>Age Limit: 5 Years & Above</li>
+//   <li>Genre: Indian Pop | Regional Music</li>
+//   <li>Venue: YMCA, Chennai</li>
+// </ul>
 
-<p>
-✨ This Indian pop and regional music concert in Chennai invites audiences to be part of a musical journey that connects deeply and leaves a lasting impact.
-</p>
+// <p>
+// ✨ This Indian pop and regional music concert in Chennai invites audiences to be part of a musical journey that connects deeply and leaves a lasting impact.
+// </p>
 
-<p>
-🎟 <b>Book Now:</b><br/>
-<a href="https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125" target="_blank">
-https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125
-</a>
-</p>
-`,
+// <p>
+// 🎟 <b>Book Now:</b><br/>
+// <a href="https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125" target="_blank">
+// https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125
+// </a>
+// </p>
+// `,
 
-    TrendingLink:
-      "https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125",
-    YoutubeLink: "",
-    meta: {
-      title: "Trending Chennai Event 2026 : Karthik Live Music Concert",
-      desc: "Don’t miss Chennai’s trending event—Karthik Live 2026 at YMCA. Enjoy his unforgettable voice, chart-topping songs, and an immersive music concert.",
-      url: "https://www.superchennai.com/trending-chennai/karthik-live-concert-chennai-2026",
-    },
-  },
+//     TrendingLink:
+//       "https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125",
+//     YoutubeLink: "",
+//     meta: {
+//       title: "Trending Chennai Event 2026 : Karthik Live Music Concert",
+//       desc: "Don’t miss Chennai’s trending event—Karthik Live 2026 at YMCA. Enjoy his unforgettable voice, chart-topping songs, and an immersive music concert.",
+//       url: "https://www.superchennai.com/trending-chennai/karthik-live-concert-chennai-2026",
+//     },
+//   },
 
   {
     id: 3333,

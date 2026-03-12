@@ -211,31 +211,24 @@ export default function ArattaiWithJahabar() {
               <h3 className=" text-center"> Arattai with Jahabar sadique </h3>
 
               <p className="text-lg text-gray-600 leading-relaxed mb-6 ">
-                Join us for a candid conversation with Jahabar Sadique, the
-                entrepreneur behind one of Chennai’s most loved homegrown tea
-                brands — a founder who transformed a simple everyday ritual into
-                a thriving business.
+               Join us for a candid conversation with Jahabar Sadique, the entrepreneur behind one of Chennai’s most loved homegrown tea brands — a founder who transformed a simple everyday ritual into a thriving business.
+
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6 ">
-                Deeply rooted in Chennai and shaped by the city’s vibrant
-                entrepreneurial spirit, he built Chai Kings from the ground up,
-                turning the humble cup of chai into a brand that resonates with
-                thousands across the city and beyond.
+             Deeply rooted in Chennai and shaped by the city’s vibrant entrepreneurial spirit, he built Chai Kings from the ground up, turning the humble cup of chai into a brand that resonates with thousands across the city and beyond.
+
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6 ">
-                In celebrating an entrepreneur whose journey reflects the energy
-                and ambition of Chennai, we continue our Super Chennai Arattai
-                series — conversations that spotlight the people shaping the
-                spirit of our city.
+             In celebrating an entrepreneur whose journey reflects the energy and ambition of Chennai, we continue our Super Chennai Arattai series — conversations that spotlight the people shaping the spirit of our city.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-10 ">
+              {/* <p className="text-gray-600 leading-relaxed mb-10 ">
                 He will be in conversation with Sangeetha Kandavel, Senior
                 Assistant Editor, Business – The Hindu, for an engaging exchange
                 on entrepreneurship, building a brand from Chennai, and the
                 journey of brewing a chai kingdom from the city. ☕
-              </p>
+              </p> */}
             </div>
 
             <div className="flex flex-col items-center text-center space-y-4 py-10">

@@ -7744,6 +7744,8 @@ Unlike regular services, the Premium Gold buses operate as <b>limited-stop route
 The launch of these electric buses highlights Chennai’s commitment to <b>eco-friendly transport, reduced emissions, and improved commuter experience</b>, making city travel more sustainable and comfortable.
 </p>
 `,
+  TrendingLink: "https://www.chennaione.in/",
+
 
   "YoutubeLink": "",
   "meta": {

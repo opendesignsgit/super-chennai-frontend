@@ -405,7 +405,7 @@ const menuItems = [
   
    {
     label: "Arattai",
-    labellink: "/arattai-with-aruna-sairam/carnatic-vocalist",
+    labellink: "/arattai-with-jahabar-sadique/chai-kings-founder",
     content: [
       {
         title: "",
@@ -422,7 +422,8 @@ const sectionImageMap = {
   Invest: "/images/HomePage-Images/Invest-MegaMenu.jpg",
   Innovate: "/images/HomePage-Images/Innovate-MegaMenu.jpg",
   Volunteer: "/images/HomePage-Images/Volunteers-MegaMenu.jpg",
-   Arattai: "/images/aruna-inne-main-image-ham.jpeg",
+   Arattai: "/images/chai-king-owner.jpeg",
+  //  Arattai: "/images/aruna-inne-main-image-ham.jpeg",
 
 };
 const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {

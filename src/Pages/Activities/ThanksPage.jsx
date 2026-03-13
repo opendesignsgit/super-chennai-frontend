@@ -4,55 +4,141 @@ import AutoShrinkText from "../../Components/Text/AutoShrinkText";
 import { useLocation } from "react-router-dom";
 
 export default function Thankyou() {
-
   const location = useLocation();
-  const from = location.state?.from; 
+  const from = location.state?.from;
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
-  useEffect(() => {
-    const handleResize = () => {
-      const isMobile = window.innerWidth <= 800;
-      if (from === "conclave") {
-        setImageSrc(
-          isMobile
-            ? "/images/events/mobile-thankyou-banner1.jpeg"
-            : "/images/events/thanku-banner-conclave.jpeg",
-        );
-        return;
-      } else if (from === "conclave") {
-        setImageSrc(
-          isMobile
-            ? "/images/events/thanku-banner-conclave.jpeg"
-            : "/images/events/thanku-banner-conclave.jpeg",
-        );
-      }
-      else if (from === "manifesto-info") {
-        setImageSrc(
-          isMobile
-            ? "/images/mobile-thanky-banner-manifesto.jpeg"
-            : "/images/thankyou-banner-manifesto.jpeg",
-        );
-      } else {
-        if (from === "trivia-game")
-          setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
-        else setImageSrc("/images/thankyou-banner-manifesto.jpeg");
-      }
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   useEffect(() => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "instant", 
-  });
+  const handleResize = () => {
+    const isMobile = window.innerWidth <= 800;
+
+    if (from === "conclave") {
+      setImageSrc(
+        isMobile
+          ? "/images/events/mobile-thankyou-banner1.jpeg"
+          : "/images/events/thanku-banner-conclave.jpeg"
+      );
+    } 
+    
+    else if (from === "manifesto-info") {
+      setImageSrc(
+        isMobile
+          ? "/images/mobile-thanky-banner-manifesto.jpeg"
+          : "/images/thankyou-banner-manifesto.jpeg"
+      );
+    } 
+    
+    else if (from === "jahabar") {
+      setImageSrc(
+        isMobile
+          ? "/images/mobile-chaikings-tq-banner-f-1.png"
+          : "/images/tq-chaikings-banner-f.jpeg"
+      );
+    } 
+    
+    else {
+      if (from === "trivia-game")
+        setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
+      else
+        setImageSrc("/images/thankyou-banner-manifesto.jpeg");
+    }
+  };
+
+  handleResize();
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
 }, []);
 
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     const isMobile = window.innerWidth <= 800;
+  //     if (from === "conclave") {
+  //       setImageSrc(
+  //         isMobile
+  //           ? "/images/events/mobile-thankyou-banner1.jpeg"
+  //           : "/images/events/thanku-banner-conclave.jpeg",
+  //       );
 
+  //       return;
+  //     } else if (from === "conclave") {
+  //       setImageSrc(
+  //         isMobile
+  //           ? "/images/events/thanku-banner-conclave.jpeg"
+  //           : "/images/events/thanku-banner-conclave.jpeg",
+  //       );
+  //     } 
+      
+  //     else if (from === "manifesto-info") {
+  //       setImageSrc(
+  //         isMobile
+  //           ? "/images/mobile-thanky-banner-manifesto.jpeg"
+  //           : "/images/thankyou-banner-manifesto.jpeg",
+  //       );
+
+        
+  //     } else {
+  //       if (from === "trivia-game")
+  //         setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
+  //       else setImageSrc("/images/thankyou-banner-manifesto.jpeg");
+  //     }
+      
+      
+  //   };
+  //   handleResize();
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+
+
+
+//   useEffect(() => {
+//   const handleResize = () => {
+//     const isMobile = window.innerWidth <= 800;
+
+//     if (from === "conclave") {
+//       setImageSrc(
+//         isMobile
+//           ? "/images/events/mobile-thankyou-banner1.jpeg"
+//           : "/images/events/thanku-banner-conclave.jpeg"
+//       );
+
+//     } else if (from === "jahabar") {
+//       setImageSrc(
+//         isMobile
+//           ? "/images/chaikings-tq-innerpage-bannerNew.jpeg"
+//           : "/images/mobile-chaikings-tq-banner.jpeg"
+//       );
+
+//     } else if (from === "manifesto-info") {
+//       setImageSrc(
+//         isMobile
+//           ? "/images/mobile-thanky-banner-manifesto.jpeg"
+//           : "/images/thankyou-banner-manifesto.jpeg"
+//       );
+
+//     } else {
+//       if (from === "trivia-game")
+//         setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
+//       else
+//         setImageSrc("/images/thankyou-banner-manifesto.jpeg");
+//     }
+//   };
+
+//   handleResize();
+//   window.addEventListener("resize", handleResize);
+//   return () => window.removeEventListener("resize", handleResize);
+// }, [from]);
+
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, []);
 
   return (
     <>
@@ -74,8 +160,9 @@ export default function Thankyou() {
           <div className="accodoamationBannerText">
             <h1></h1>
             <AutoShrinkText
-              // text="Thank You for Your Entry!"
-              text={from === "conclave" ? "" : "Thank You!"}
+              text={
+                from === "conclave" || from === "jahabar" ? "" : "Thank You!"
+              }
               baseSize={60}
               minSize={40}
               maxChars={40}
@@ -83,10 +170,6 @@ export default function Thankyou() {
               width="80%"
               maxLines={2}
             />
-            {/* <div className="breadCrum">
-              <Link to="/">Home</Link> -{" "}
-              <Link to="">Thank You for Your Entry!</Link>
-            </div> */}
           </div>
         </div>
       </section>
@@ -110,49 +193,36 @@ export default function Thankyou() {
                 and your participation is confirmed only upon receiving an email
                 from our team.
               </p>
-
-              {/* <p>
-                📅 <strong>Date:</strong> Feb 19, 2026
-                <br />
-                📍 <strong>Venue:</strong> ITC WelcomHotel, Chennai
-              </p> */}
-
-              {/* <p>
-                You’ll receive further updates and confirmations via email. Stay
-                tuned!
-              </p> */}
             </div>
           )}
 
-             {from === "manifesto" && (
+          {from === "manifesto" && (
             <div className="workIntro">
-              <h1>Thank you for downloading the Super Chennai Manifesto.
-</h1>
-
-              {/* <p>
-              Thank you for downloading the {" "}
-                <strong>Super Chennai Manifesto</strong>.
-              </p> */}
+              <h1>Thank you for downloading the Super Chennai Manifesto.</h1>
 
               <p>
-This document represents collective aspirations for Chennai’s future. We hope it informs, inspires, and encourages meaningful participation.
-
+                This document represents collective aspirations for Chennai’s
+                future. We hope it informs, inspires, and encourages meaningful
+                participation.
               </p>
               <p>Stay engaged. Stay informed.</p>
               <p>Chennai’s future is built by its citizens.</p>
-
-           
             </div>
           )}
 
-          {from === "arattai" && (
+          {from === "jahabar" && (
             <div className="workIntro">
               <h1>You're Registered!</h1>
 
-              <p>Thank you for registering for Arattai with Jahabar sadique </p>
               <p>
-                Your mobile number has been successfully verified and your
-                registration is now confirmed.{" "}
+                Thank you for registering for Arattai with Jahabar Sadique. Your
+                submission has been successfully received, and our team is
+                currently reviewing your registration. If your entry is
+                selected, you will receive an official confirmation email from
+                Team Super Chennai with further details about the event. Please
+                note that your participation will be considered confirmed only
+                after you receive the confirmation email. We appreciate your
+                interest and look forward to connecting with you soon.
               </p>
             </div>
           )}

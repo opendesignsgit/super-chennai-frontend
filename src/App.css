@@ -984,3 +984,27 @@ background: #fff;
       height: 350px;
   }
 }
+
+@media(min-width:710px) and (max-width:800px) {
+      .accaodomationBannerSection img {
+    height: 332px !important;
+    object-fit: contain !important;
+    object-position: bottom;
+    }
+}
+
+
+@media(min-width:640px) and (max-width:710px) {
+      .accaodomationBannerSection img {
+    height: 308px !important;
+    object-fit: contain !important;
+    object-position: bottom;
+    }
+}
+
+@media(min-width:401px) and (max-width:640px) {
+      .accaodomationBannerSection img {
+        height: auto !important;
+        object-fit: cover;
+    }
+}

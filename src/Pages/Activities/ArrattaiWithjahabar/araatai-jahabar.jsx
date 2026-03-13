@@ -103,7 +103,7 @@ export default function ArattaiWithJahabar() {
         gender: "",
       });
 
-      navigate("/thank-you", { state: { from: "arattai" } });
+      navigate("/thank-you", { state: { from: "jahabar" } });
 
     } catch (err) {
       toast.error(err?.response?.data?.message || "OTP verification failed");
@@ -221,7 +221,7 @@ export default function ArattaiWithJahabar() {
       {/* ================= BANNER ================= */}
 
       <section
-        className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer"
+        className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer akbaralipage"
         onClick={scrollToRegister}
       >
         {" "}
@@ -232,7 +232,7 @@ export default function ArattaiWithJahabar() {
         />
         <img
           className="block sm:hidden w-full"
-          src="/images/jahar-sadiq-mobile.jpeg"
+          src="/images/jahar-sadiq-mobile.jpg"
           alt="Arattai Event"
         />
       </section>
@@ -249,7 +249,7 @@ export default function ArattaiWithJahabar() {
               </h1>
               <h3 className=" text-center"> Arattai with Jahabar sadique </h3>
 
-              <p className="text-lg text-gray-600 leading-relaxed mb-6 ">
+              <p className="text-gray-600 leading-relaxed mb-6 ">
                 Join us for a candid conversation with Jahabar Sadique, the
                 entrepreneur behind one of Chennai’s most loved homegrown tea
                 brands — a founder who transformed a simple everyday ritual into
@@ -277,7 +277,7 @@ export default function ArattaiWithJahabar() {
               </p>
 
               <h2 class=" themelink-color formheadingtheme-arattai">
-                Join Us for a Conversation with the Legend
+               Join Us for a Conversation with Mr. Jahabar Sadique
               </h2>
 
               <p className="text-gray-600 text-lg">

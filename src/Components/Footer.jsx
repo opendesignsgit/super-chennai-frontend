@@ -235,7 +235,7 @@ const Footer = () => {
     { title: "Chennai-app", link: "/chennai-apps" },
     { title: "Conclave", link: "/chennai-conclave" },
     { title: "Manifesto", link: "/manifesto-info" },
-
+     { title: "Arattai with Aruna Sairam", link: "/arattai-with-aruna-sairam/carnatic-vocalist" },
 
   ];
 

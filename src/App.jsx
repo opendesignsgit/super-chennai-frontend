@@ -547,11 +547,18 @@ function App() {
     location.pathname === "/blog" || location.pathname.startsWith("/blog/");
 
   const hideOnMargazhiPage =
-    location.pathname === "/contest/hotshots-photography-contest";
-  // const hideOnBlog = location.pathname === "/contest/blog/:slug";
+    // location.pathname === "/arattai-with-jahabar-sadique/chai-kings-founder";
+    // const hideOnBlog = location.pathname === "/contest/blog/:slug";
+
+    location.pathname === "/arattai-with-jahabar-sadique/chai-kings-founder";
 
   const hideOncovlaves = location.pathname === "/chennai-conclave";
   const pathname = window.location.pathname;
+
+const hideOnJahabarPage = location.pathname === "/arattai-with-jahabar-sadique/chai-kings-founder/";
+
+
+  
 
 
  const hideNewsletter =
@@ -573,13 +580,13 @@ function App() {
 
           {isHomePage && showPopup && (
             <ImagePopup
-              imageUrl="/images/manifesto-popup.jpeg"
+              imageUrl="/images/popup-banner-chaikings.jpeg"
               onClose={() => setShowPopup(false)}
             />
           )}
 
           {/* )} */}
-          
+
           {pathname !== "/manifesto-admin-all-doc-secure-datas" && (
             <div
               ref={stickyRef}
@@ -625,7 +632,7 @@ function App() {
             </div>
           )}
 
-          {/* {!hideOnMargazhiPage && (
+          {!hideOnMargazhiPage && !hideOnJahabarPage && (
             <div
               id="menifeto-tab"
               ref={stickyRef}
@@ -633,14 +640,11 @@ function App() {
                 footerReached ? "footerreached" : ""
               }`}
             >
-              <a href="https://manifesto.superchennai.com/welcome">
-                <img
-                  src="/images/manifesto-tap.png"
-                  alt="artificial intelligence challenge"
-                />
+              <a href="/arattai-with-jahabar-sadique/chai-kings-founder/">
+                <img src="/images/tap-button-arattai.svg" alt="arattai" />
               </a>
             </div>
-          )} */}
+          )}
 
           {!hideOnMargazhiPage && (
             <div
@@ -855,10 +859,10 @@ function App() {
               path="/arattai-with-aruna-sairam/carnatic-vocalist"
               element={<ArrattaiWithArangam />}
             />
-             <Route
+            <Route
               path="/arattai-with-jahabar-sadique/chai-kings-founder"
               element={<ArattaiWithJahabar />}
-            />          
+            />
             <Route
               path="/arattai-with-aruna-sairam/carnatic-vocalist-live-update"
               element={<ArattaiExcelView />}
@@ -1433,11 +1437,11 @@ function App() {
               path="/icon-of-the-oct-month-2025"
               element={<IconofthemonthOct />}
             />
-                   <Route
+            <Route
               path="/icon-of-the-dec-month-2025"
               element={<IconofthemonthFebAruna />}
             />
-            
+
             <Route
               path="/super-chennai-icon-of-aug-2025"
               element={<IconofthemonthAugust />}

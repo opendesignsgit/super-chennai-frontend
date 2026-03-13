@@ -20,6 +20,7 @@ export default function AdminView() {
   const [margazhiData, setMargazhiData] = useState([]);
    const [conclaveData, setConclaveData] = useState([]);
    const [arattaiData, setArattaiData] = useState([]);
+   const [arattaiJahabarData, setArattaiJahabarData] = useState([]);
 
   /* ================= AUTH CHECK ================= */
   useEffect(() => {
@@ -38,12 +39,24 @@ export default function AdminView() {
     fetchMargazhi();
     fetchConclave();
     fetchArattai();
+    fetchArattaiJahabar(); 
   };
 
 
   
 
   /* ================= API CALLS ================= */
+
+  const fetchArattaiJahabar = async () => {
+  const res = await axios.get(
+    "https://api.superchennai.com/api/arattai-Jahabar/arattai-jahabar"
+  );
+
+  if (res.data?.success) {
+    setArattaiJahabarData(res.data.data || []);
+  }
+};
+
 
   const fetchArattai = async () => {
   const res = await axios.get(
@@ -290,6 +303,40 @@ const downloadArattaiXLS = () => {
   XLSX.writeFile(workbook, "Arattai_Verified_Registrations.xlsx");
 };
 
+const downloadArattaiJahabarXLS = () => {
+  if (!arattaiJahabarData || arattaiJahabarData.length === 0) return;
+
+  const verifiedOnly = arattaiJahabarData.filter(
+    (d) => d.is_mobile_verified === true
+  );
+
+  if (verifiedOnly.length === 0) {
+    alert("No verified registrations found.");
+    return;
+  }
+
+  const formattedData = verifiedOnly.map((d, i) => {
+    const { date, time } = formatDateTime(d.created_at);
+
+    return {
+      "S.No": i + 1,
+      Name: d.name || "",
+      Email: d.email || "",
+      Phone: d.phone || "",
+      Age: d.age || "",
+      Gender: d.gender || "",
+      Date: date,
+      Time: time,
+    };
+  });
+
+  const worksheet = XLSX.utils.json_to_sheet(formattedData);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Arattai Jahabar");
+
+  XLSX.writeFile(workbook, "Arattai_Jahabar_Registrations.xlsx");
+};
+
 
   return (
     <>
@@ -349,7 +396,8 @@ const downloadArattaiXLS = () => {
               ["margazhi", "Margazhi Month"],
               ["conclave", "Conclave"],
               ["trivia", "Trivia"],
-              ["arattai", "Arattai"],
+              ["arattai", "Arattai-with-aruna"],
+              ["arattai-jahabar", "Arattai - Jahabar Sadique"],
             ].map(([key, label]) => (
               <button
                 key={key}
@@ -429,6 +477,15 @@ const downloadArattaiXLS = () => {
               />
             )}
 
+            {activeTab === "arattai-jahabar" && (
+              <SimpleTable
+                title="Arattai Jahabar Registrations"
+                data={arattaiJahabarData.filter(
+                  (d) => d.is_mobile_verified === true,
+                )}
+              />
+            )}
+
             {activeTab === "arattai" && (
               <div className="flex justify-end px-6 mb-4">
                 <button
@@ -436,6 +493,17 @@ const downloadArattaiXLS = () => {
                   className="bg-green-700 text-white px-4 py-2 rounded font-semibold hover:bg-green-800"
                 >
                   ⬇ Download Arattai Entries
+                </button>
+              </div>
+            )}
+
+            {activeTab === "arattai-jahabar" && (
+              <div className="flex justify-end px-6 mb-4">
+                <button
+                  onClick={downloadArattaiJahabarXLS}
+                  className="bg-green-700 text-white px-4 py-2 rounded font-semibold hover:bg-green-800"
+                >
+                  ⬇ Download Arattai Jahabar Entries
                 </button>
               </div>
             )}

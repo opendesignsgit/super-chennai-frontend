@@ -103,7 +103,7 @@ export default function ArattaiWithJahabar() {
         gender: "",
       });
 
-      navigate("/thank-you", { state: { from: "jahabar" } });
+      navigate("/thank-you", { state: { from: "arattai" } });
 
     } catch (err) {
       toast.error(err?.response?.data?.message || "OTP verification failed");

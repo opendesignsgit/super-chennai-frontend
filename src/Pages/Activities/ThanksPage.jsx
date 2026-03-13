@@ -149,8 +149,7 @@ This document represents collective aspirations for Chennai’s future. We hope 
             <div className="workIntro">
               <h1>You're Registered!</h1>
 
-              <p>Thank you for registering for Arattai with Aruna Sairam </p>
-
+              <p>Thank you for registering for Arattai with Jahabar sadique </p>
               <p>
                 Your mobile number has been successfully verified and your
                 registration is now confirmed.{" "}

@@ -507,49 +507,53 @@ export default function TrendingDetails() {
   ];
 
 
-  const vadapalainschemaMEtro =[
+  const vadapalainschemaMEtro = [
     {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-metro-corridor-2026"
-  },
-  "headline": "Pedestrian Skywalk Progress at Vadapalani Metro Corridor",
-  "description": "The Vadapalani skywalk near Vadapalani is progressing steadily, improving metro corridor access with safer movement. Trending Chennai update included.",
-  "image": "https://www.superchennai.com/images/trendingChennai/inner-page-vadapalanimetro-img.jpg",  
-  "author": {
-    "@type": "Person",
-    "name": "Super Chennai"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": ""
-    }
-  },
-  "datePublished": "2026-03-02"
-},
-{
-  "@context": "https://schema.org/", 
-  "@type": "BreadcrumbList", 
-  "itemListElement": [{
-    "@type": "ListItem", 
-    "position": 1, 
-    "name": "Super Chennai",
-    "item": "https://www.superchennai.com/"  
-  },{
-    "@type": "ListItem", 
-    "position": 2, 
-    "name": "Vadapalani Skywalk",
-    "item": "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-metro-corridor-2026"  
-  }]
-}
-
-
-  ]
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-metro-corridor-2026",
+      },
+      headline: "Pedestrian Skywalk Progress at Vadapalani Metro Corridor",
+      description:
+        "The Vadapalani skywalk near Vadapalani is progressing steadily, improving metro corridor access with safer movement. Trending Chennai update included.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/inner-page-vadapalanimetro-img.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-02",
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Vadapalani Skywalk",
+          item: "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-metro-corridor-2026",
+        },
+      ],
+    },
+  ];
 
   const poonamalaschema = [
     {
@@ -599,126 +603,131 @@ export default function TrendingDetails() {
     },
   ];
 
-  const MUiscialTowerSchem =[
+  const MUiscialTowerSchem = [
     {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park-2026"
-  },
-  "headline": "Chennai Unveils Its Own Iconic Super-Tree Tower",
-  "description": "The musical tower at Kalaignar Centenary Park is emerging as a standout landmark with its viewing deck and modern design, gaining attention across Trending Chennai.",
-  "image": "https://www.superchennai.com/images/trendingChennai/inner-page-super-tree-tower.jpg",  
-  "author": {
-    "@type": "Person",
-    "name": "Super Chennai"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": ""
-    }
-  },
-  "datePublished": "2026-03-02"
-},
-{
-  "@context": "https://schema.org/", 
-  "@type": "BreadcrumbList", 
-  "itemListElement": [{
-    "@type": "ListItem", 
-    "position": 1, 
-    "name": "Super Chennai",
-    "item": "https://www.superchennai.com/"  
-  },{
-    "@type": "ListItem", 
-    "position": 2, 
-    "name": "Musical tower",
-    "item": "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park-2026"  
-  }]
-}
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park-2026",
+      },
+      headline: "Chennai Unveils Its Own Iconic Super-Tree Tower",
+      description:
+        "The musical tower at Kalaignar Centenary Park is emerging as a standout landmark with its viewing deck and modern design, gaining attention across Trending Chennai.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/inner-page-super-tree-tower.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-02",
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Musical tower",
+          item: "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park-2026",
+        },
+      ],
+    },
+  ];
 
-
-
-  ]
-
-  const portmaduravayal=[
-   {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai-2026"
-  },
-  "headline": "A New Chapter Along the Cooum: Port–Maduravoyal Expressway Rising",
-  "description": "The Port Maduravoyal expressway from Chennai Port to Maduravoyal is moving ahead fast, easing traffic and aiding cargo flow in Trending Chennai updates.",
-  "image": "https://www.superchennai.com/images/trendingChennai/inner-page-chennai;s-nxt.jpg",  
-  "author": {
-    "@type": "Person",
-    "name": "Super Chennai"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": ""
-    }
-  },
-  "datePublished": "2026-03-02"
-}
-
-
-
-
-  ]
+  const portmaduravayal = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai-2026",
+      },
+      headline:
+        "A New Chapter Along the Cooum: Port–Maduravoyal Expressway Rising",
+      description:
+        "The Port Maduravoyal expressway from Chennai Port to Maduravoyal is moving ahead fast, easing traffic and aiding cargo flow in Trending Chennai updates.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/inner-page-chennai;s-nxt.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-02",
+    },
+  ];
 
   const mtcBusPeruimGold = [
-
     {
-  "@context": "https://schema.org/", 
-  "@type": "BreadcrumbList", 
-  "itemListElement": [{
-    "@type": "ListItem", 
-    "position": 1, 
-    "name": "Super Chennai",
-    "item": "https://www.superchennai.com/"  
-  },{
-    "@type": "ListItem", 
-    "position": 2, 
-    "name": "Chennai MTC Premium Gold AC Buses",
-    "item": "https://www.superchennai.com/trending-chennai/mtc-premium-gold-ac-electric-buses"  
-  }]
-},
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/mtc-premium-gold-ac-electric-buses"
-  },
-  "headline": "Chennai MTC Premium Gold AC Electric Buses Launched",
-  "description": "Trending Chennai update: MTC bus rolls out premium bus service with gold AC electric buses, WiFi, comfortable seating and limited stops for faster city travel.",
-  "image": "https://www.superchennai.com/images/trendingChennai/MTC_bus.jpeg",  
-  "author": {
-    "@type": "Person",
-    "name": "Super Chennai"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": ""
-    }
-  },
-  "datePublished": "2026-03-11"
-}
-
-
-  ]
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Chennai MTC Premium Gold AC Buses",
+          item: "https://www.superchennai.com/trending-chennai/mtc-premium-gold-ac-electric-buses",
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/mtc-premium-gold-ac-electric-buses",
+      },
+      headline: "Chennai MTC Premium Gold AC Electric Buses Launched",
+      description:
+        "Trending Chennai update: MTC bus rolls out premium bus service with gold AC electric buses, WiFi, comfortable seating and limited stops for faster city travel.",
+      image: "https://www.superchennai.com/images/trendingChennai/MTC_bus.jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-11",
+    },
+  ];
 
   const electriBusNew = [
     {
@@ -905,6 +914,63 @@ export default function TrendingDetails() {
     },
   ];
 
+
+  const ulabusNew =[
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/chennai-ula-2-hop-on-hop-off-bus"
+  },
+  "headline": "Chennai Ula 2.0 Hop-On Hop-Off A/C Tourist Bus Service Launched",
+  "description": "Chennai tourist bus Chennai Ula 2.0 is part of Trending Chennai, offering AC hop-on hop-off rides across Marina, Guindy and Besant Nagar with 23 stops.",
+  "image": "https://www.superchennai.com/images/trendingChennai/ulaa-bus.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-02-18"
+}
+
+  ]
+
+  const marinaBeachBlueFLag =[
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/marina-beach-blue-flag-phase-2"
+  },
+  "headline": "Marina Beach Blue Flag Phase 2 Upgrade Opens in Chennai",
+  "description": "Marina Beach Blue Flag Phase 2 opens opposite Vivekananda House with bamboo seating, play zones and watchtowers, now highlighted in Trending Chennai.",
+  "image": "https://www.superchennai.com/images/trendingChennai/Marina%20Blue%20Flag.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-02-20"
+}
+
+  ]
+
   return (
     <>
       <Helmet>
@@ -930,7 +996,21 @@ export default function TrendingDetails() {
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
         />
         
+    
 
+        {slug === "marina-beach-blue-flag-phase-2" && (
+          <script type="application/ld+json">
+            {JSON.stringify(marinaBeachBlueFLag)}
+          </script>
+        )}
+        
+
+       {slug === "chennai-ula-2-hop-on-hop-off-bus" && (
+          <script type="application/ld+json">
+            {JSON.stringify(ulabusNew)}
+          </script>
+        )}
+        
 
        {slug === "ac-bus-stop-retteri-chennai" && (
           <script type="application/ld+json">

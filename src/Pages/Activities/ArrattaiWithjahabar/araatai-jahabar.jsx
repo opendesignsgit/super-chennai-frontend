@@ -174,12 +174,45 @@ export default function ArattaiWithJahabar() {
     },
   ];
 
+  const registerRef = useRef(null);
+
+  const scrollToRegister = () => {
+    registerRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
       <Helmet>
-        <title>Arattai with Jahabar</title>
+        <title>
+          Chai Kings Founder - Super Chennai Arattai with Jahabar Sadique
+        </title>
+        <meta
+          name="description"
+          content="Super Chennai Arattai With Jahabar Sadique, owner of Chai Kings, shares how a simple tea idea brewed into a thriving brand and a strong business story."
+        />
+        <meta
+          property="og:title"
+          content="Super Chennai Arattai With Jahabar Sadique, owner of Chai Kings, shares how a simple tea idea brewed into a thriving brand and a strong business story."
+        />
+        <meta
+          property="og:description"
+          content="Super Chennai Arattai With Jahabar Sadique, owner of Chai Kings, shares how a simple tea idea brewed into a thriving brand and a strong business story."
+        />
+        <meta
+          property="og:image"
+          content="https://www.superchennai.com/images/images/jahabar-banner-mobile%20(2).jpeg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.superchennai.com/images/images/jahabar-banner-mobile%20(2).jpeg"
+        />
+        <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-jahabar-sadique/chai-kings-founder`}
+        />
+
         <script type="application/ld+json">
           {JSON.stringify(arattaiSchema)}
         </script>
@@ -187,48 +220,55 @@ export default function ArattaiWithJahabar() {
 
       {/* ================= BANNER ================= */}
 
-      <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
+      <section
+        className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer"
+        onClick={scrollToRegister}
+      >
+        {" "}
         <img
           className="hidden sm:block w-full"
-          src="/images/aruna-inne-main-image.jpeg"
+          src="/images/jahabar-banner-mobile (2).jpeg"
           alt="Arattai Event"
         />
-
         <img
           className="block sm:hidden w-full"
-          src="/images/inner-page-araattai-image.jpeg"
+          src="/images/jahar-sadiq-mobile.jpeg"
           alt="Arattai Event"
         />
       </section>
 
       {/* ================= CONTENT ================= */}
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white" >
+        {/* style={{ backgroundImage: "url('/images/white-bg (1).jpeg')" }} */}
         <div className="container mx-auto px-6 lg:px-0">
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves ">
-              <h1 className=" text-center hidden ">Arattai with Jahabar sadique </h1>
+              <h1 className=" text-center hidden ">
+                Arattai with Jahabar sadique{" "}
+              </h1>
               <h3 className=" text-center"> Arattai with Jahabar sadique </h3>
 
               <p className="text-lg text-gray-600 leading-relaxed mb-6 ">
-               Join us for a candid conversation with Jahabar Sadique, the entrepreneur behind one of Chennai’s most loved homegrown tea brands — a founder who transformed a simple everyday ritual into a thriving business.
+                Join us for a candid conversation with Jahabar Sadique, the
+                entrepreneur behind one of Chennai’s most loved homegrown tea
+                brands — a founder who transformed a simple everyday ritual into
+                a thriving business.
+              </p>
 
+              <p className="text-gray-600 leading-relaxed mb-6 " ref={registerRef}>
+                Deeply rooted in Chennai and shaped by the city’s vibrant
+                entrepreneurial spirit, he built Chai Kings from the ground up,
+                turning the humble cup of chai into a brand that resonates with
+                thousands across the city and beyond.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6 ">
-             Deeply rooted in Chennai and shaped by the city’s vibrant entrepreneurial spirit, he built Chai Kings from the ground up, turning the humble cup of chai into a brand that resonates with thousands across the city and beyond.
-
+                In celebrating an entrepreneur whose journey reflects the energy
+                and ambition of Chennai, we continue our Super Chennai Arattai
+                series — conversations that spotlight the people shaping the
+                spirit of our city.
               </p>
-
-              <p className="text-gray-600 leading-relaxed mb-6 ">
-             In celebrating an entrepreneur whose journey reflects the energy and ambition of Chennai, we continue our Super Chennai Arattai series — conversations that spotlight the people shaping the spirit of our city.
-              </p>
-              {/* <p className="text-gray-600 leading-relaxed mb-10 ">
-                He will be in conversation with Sangeetha Kandavel, Senior
-                Assistant Editor, Business – The Hindu, for an engaging exchange
-                on entrepreneurship, building a brand from Chennai, and the
-                journey of brewing a chai kingdom from the city. ☕
-              </p> */}
             </div>
 
             <div className="flex flex-col items-center text-center space-y-4 py-10">
@@ -245,6 +285,7 @@ export default function ArattaiWithJahabar() {
               </p>
 
               <button
+              
                 onClick={() => setShowRegisterPopup(true)}
                 className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button"
               >
@@ -371,7 +412,7 @@ export default function ArattaiWithJahabar() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold"
+                  className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button-full"
                 >
                   {loading ? "Processing..." : "Submit"}
                 </button>

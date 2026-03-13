@@ -856,11 +856,9 @@ function App() {
               element={<ArrattaiWithArangam />}
             />
              <Route
-              path="/arattai-with-Jahabar"
+              path="/arattai-with-jahabar-sadique/chai-kings-founder"
               element={<ArattaiWithJahabar />}
-            />
-
-            
+            />          
             <Route
               path="/arattai-with-aruna-sairam/carnatic-vocalist-live-update"
               element={<ArattaiExcelView />}
@@ -875,7 +873,9 @@ function App() {
             />
             {/* 404 Page */}
             <Route path="*" element={<NotFound />} />
+
             {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
+
             {/*----Main-Pages---------*/}
             <Route path="/" element={<HomePage />} />
             <Route path="/results" element={<SearchResults />} />

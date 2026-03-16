@@ -62,7 +62,7 @@ const slides = [
 
     {
     type: "image",
-    link: "/contest/hotshots-photography-contest",
+    link: "/arattai-with-jahabar-sadique/chai-kings-founder",
     image: "/images/desktop-banner-chaikings.jpeg",
     image1: "/images/mobile-banner-chaikings.jpeg",
     title: "Icon of the month in chennai",

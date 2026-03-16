@@ -60,6 +60,15 @@ const slides = [
   //   description: "Credai.",
   // },
 
+    {
+    type: "image",
+    link: "/contest/hotshots-photography-contest",
+    image: "/images/desktop-banner-chaikings.jpeg",
+    image1: "/images/mobile-banner-chaikings.jpeg",
+    title: "Icon of the month in chennai",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
   {
     type: "image",
     link: "/contest/hotshots-photography-contest",

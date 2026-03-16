@@ -142,7 +142,8 @@ export default function Thankyou() {
 
   return (
     <>
-      <section className="accaodomationBannerSection carquizbanner">
+      <section  className=" carquizbanner relative overflow-hidden cursor-pointer akbaralipage"
+>
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
@@ -156,7 +157,8 @@ export default function Thankyou() {
           />
         </div>
 
-        <div className="accodoamationBannerContainer">
+        <div className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer akbaralipage"
+>
           <div className="accodoamationBannerText">
             <h1></h1>
             <AutoShrinkText

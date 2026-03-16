@@ -118,30 +118,48 @@ export default function ArattaiWithJahabar() {
   const arattaiSchema = [
     {
       "@context": "https://schema.org",
-      "@type": "Event",
-      name: "Arattai with Jahabar",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/arattai-with-jahabar-sadique/chai-kings-founder",
+      },
+      headline: "Arattai with Jahabar sadique",
       description:
-        "Join Arattai with Jahabar for a conversation celebrating Chennai’s culture and voices shaping the city.",
-      image: "https://www.superchennai.com/images/aruna-inne-main-image.jpeg",
-      startDate: "2026-02-28T19:00",
-      endDate: "2026-02-28T22:00",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      location: {
-        "@type": "Place",
+        "Super Chennai Arattai With Jahabar Sadique, owner of Chai Kings, shares how a simple tea idea brewed into a thriving brand and a strong business story.",
+      image:
+        "https://www.superchennai.com/images/jahabar-banner-mobile%20(2).jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
         name: "",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "",
-          addressLocality: "",
-          postalCode: "",
-          addressCountry: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
         },
       },
-      performer: {
-        "@type": "Person",
-        name: "Jahabar",
-      },
+      datePublished: "2026-03-13",
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Arattai with Jahabar sadique",
+          item: "https://www.superchennai.com/arattai-with-jahabar-sadique/chai-kings-founder",
+        },
+      ],
     },
   ];
 

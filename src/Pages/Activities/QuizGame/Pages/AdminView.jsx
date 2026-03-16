@@ -323,6 +323,7 @@ const downloadArattaiJahabarXLS = () => {
       Name: d.name || "",
       Email: d.email || "",
       Phone: d.phone || "",
+      Organisation: d.organisation || "",
       Age: d.age || "",
       Gender: d.gender || "",
       Date: date,
@@ -633,6 +634,10 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
               {title === "Hotshot Chennai" && <th>Instagram</th>}
               {title === "Hotshot Chennai" && <th>Location</th>}
 
+              {title === "Arattai Jahabar Registrations" && <th>Organisation</th>}
+              {title === "Arattai Jahabar Registrations" && <th>Age</th>}
+              {title === "Arattai Jahabar Registrations" && <th>Gender</th>}
+
               {title === "Arattai Registrations" && <th>Age</th>}
               {title === "Arattai Registrations" && <th>Gender</th>}
 
@@ -660,44 +665,25 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
                   <td>{d.email}</td>
                   <td>{d.mobile || d.phone}</td>
                   {title === "Hotshot Chennai" && (
-                    // <td>
-                    //   {d.linkedin_url ? (
-                    //     <a
-                    //       href={d.linkedin_url}
-                    //       target="_blank"
-                    //       rel="noopener noreferrer"
-                    //       className="text-indigo-600 underline"
-                    //     >
-                    //       View Profile
-                    //     </a>
-                    //   ) : (
-                    //     "—"
-                    //   )}
-                    // </td>
-
                     <td className="break-all text-sm text-gray-700">
                       {d.linkedin_url?.trim() || "—"}
                     </td>
                   )}
 
-                  {/* {title === "Hotshot Chennai" && (
-                    <td>
-                      {d.location_url ? (
-                        <a
-                          href={d.location_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-green-600 underline"
-                        >
-                          Map
-                        </a>
-                      ) : (
-                        "—"
-                      )}
-                    </td>
-                  )} */}
                   {title === "Hotshot Chennai" && (
                     <td>{d.location_url?.trim() ? d.location_url : "—"}</td>
+                  )}
+
+                  {title === "Arattai Jahabar Registrations" && (
+                    <td>{d.organisation || "—"}</td>
+                  )}
+
+                  {title === "Arattai Jahabar Registrations" && (
+                    <td>{d.age || "—"}</td>
+                  )}
+
+                  {title === "Arattai Jahabar Registrations" && (
+                    <td>{d.gender || "—"}</td>
                   )}
 
                   {title === "Arattai Registrations" && <td>{d.age || "—"}</td>}

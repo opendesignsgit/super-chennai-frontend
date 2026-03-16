@@ -21,6 +21,7 @@ export default function ArattaiWithJahabar() {
     otp: "",
     age: "",
     gender: "",
+     organisation: "", 
   });
 
   const [showRegisterPopup, setShowRegisterPopup] = useState(false);
@@ -80,6 +81,7 @@ export default function ArattaiWithJahabar() {
       otp: form.otp,
       age: form.age,
       gender: form.gender,
+       organisation: form.organisation || null,
     };
 
     try {
@@ -101,6 +103,7 @@ export default function ArattaiWithJahabar() {
         otp: "",
         age: "",
         gender: "",
+         organisation: "",
       });
 
       navigate("/thank-you", { state: { from: "jahabar" } });
@@ -239,7 +242,7 @@ export default function ArattaiWithJahabar() {
 
       {/* ================= CONTENT ================= */}
 
-      <section className="py-16 bg-white" >
+      <section className="py-16 bg-white">
         {/* style={{ backgroundImage: "url('/images/white-bg (1).jpeg')" }} */}
         <div className="container mx-auto px-6 lg:px-0">
           <div className="max-w-4xl mx-auto text-center">
@@ -256,7 +259,10 @@ export default function ArattaiWithJahabar() {
                 a thriving business.
               </p>
 
-              <p className="text-gray-600 leading-relaxed mb-6 " ref={registerRef}>
+              <p
+                className="text-gray-600 leading-relaxed mb-6 "
+                ref={registerRef}
+              >
                 Deeply rooted in Chennai and shaped by the city’s vibrant
                 entrepreneurial spirit, he built Chai Kings from the ground up,
                 turning the humble cup of chai into a brand that resonates with
@@ -277,7 +283,7 @@ export default function ArattaiWithJahabar() {
               </p>
 
               <h2 class=" themelink-color formheadingtheme-arattai">
-               Join Us for a Conversation with Mr. Jahabar Sadique
+                Join Us for a Conversation with Mr. Jahabar Sadique
               </h2>
 
               <p className="text-gray-600 text-lg">
@@ -285,7 +291,6 @@ export default function ArattaiWithJahabar() {
               </p>
 
               <button
-              
                 onClick={() => setShowRegisterPopup(true)}
                 className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button"
               >
@@ -350,6 +355,14 @@ export default function ArattaiWithJahabar() {
                     required
                   />
 
+                   <input
+                    name="organisation"
+                    placeholder="Organisation / Institution (optional)"
+                    className="border p-3 rounded-lg"
+                    value={form.organisation}
+                    onChange={handleChange}
+                  />
+
                   <div className="relative">
                     <input
                       name="phone"
@@ -384,6 +397,8 @@ export default function ArattaiWithJahabar() {
                       required
                     />
                   )}
+
+                 
 
                   <input
                     type="number"

@@ -61,7 +61,6 @@ export default function ArattaiWithJahabar() {
   /* ================= SUBMIT ================= */
 
   const submitArattaiForm = async (e) => {
-
     e.preventDefault();
 
     if (!otpSent || !form.otp) {

@@ -81,14 +81,33 @@ export default function Iconsofthemonth() {
             </div> */}
 
             <div className="flex superchennaiEventsMainContainer">
-
               {/*############## CHINNAMAYI ######## */}
 
-               <a
-                className="superchennaiEventsSection"id="icon-of-the-month-nov"
+              {/* <a
+                className="superchennaiEventsSection"
+                id="icon-of-the-month-nov"
                 href="/icon-of-the-dec-month-2025"
               >
+                <div
+                  className="flex flex-col items-center text-center"
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/chaikings-card-banner.jpeg"
+                    alt="Left Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">
+                    Icon of the Month - Jan 2026
+                  </p>
+                </div>
+              </a> */}
 
+              <a
+                className="superchennaiEventsSection"
+                id="icon-of-the-month-nov"
+                href="/icon-of-the-dec-month-2025"
+              >
                 <div
                   className="flex flex-col items-center text-center"
                   style={{ overflow: "hidden" }}
@@ -105,10 +124,10 @@ export default function Iconsofthemonth() {
               </a>
 
               <a
-                className="superchennaiEventsSection"id="icon-of-the-month-nov"
+                className="superchennaiEventsSection"
+                id="icon-of-the-month-nov"
                 href="/super-chennai-icon-of-nov-2025"
               >
-
                 <div
                   className="flex flex-col items-center text-center"
                   style={{ overflow: "hidden" }}
@@ -124,10 +143,10 @@ export default function Iconsofthemonth() {
                 </div>
               </a>
               <a
-                className="superchennaiEventsSection"id="chinmayi-indian-singer-icon-of-the-month"
+                className="superchennaiEventsSection"
+                id="chinmayi-indian-singer-icon-of-the-month"
                 href="/icon-of-the-oct-month-2025"
               >
-
                 <div
                   className="flex flex-col items-center text-center"
                   style={{ overflow: "hidden" }}
@@ -144,7 +163,8 @@ export default function Iconsofthemonth() {
               </a>
               <a
                 className="superchennaiEventsSection"
-                href="/super-chennai-icon-of-sep-2025" id="vishwanathan-anand Icon of the Month Sep 2025"
+                href="/super-chennai-icon-of-sep-2025"
+                id="vishwanathan-anand Icon of the Month Sep 2025"
               >
                 <div
                   className="flex flex-col items-center text-center"
@@ -162,7 +182,8 @@ export default function Iconsofthemonth() {
               </a>
 
               <a
-                className="superchennaiEventsSection" id="chandrakumarimage Icon of the Month Aug 2025"
+                className="superchennaiEventsSection"
+                id="chandrakumarimage Icon of the Month Aug 2025"
                 href="/super-chennai-icon-of-aug-2025"
               >
                 <div
@@ -181,7 +202,8 @@ export default function Iconsofthemonth() {
               </a>
 
               <a
-                className="superchennaiEventsSection" id="kumaravel icon-of-the-july-month"
+                className="superchennaiEventsSection"
+                id="kumaravel icon-of-the-july-month"
                 href="/icon-of-the-july-month"
               >
                 <div

@@ -275,7 +275,7 @@ import IconofthemonthOct from "./Pages/Icon-of-the-month-oct";
 import IconofthemonthDec from "./Pages/Icon-of-the-month-dec";
 import IconofthemonthNov from "./Pages/Icon-of-the-month-nov";
 import IconofthemonthFebAruna from "./Pages/Icon-of-the-month-feb-26";
-
+import Iconofthemontjahabar from "./Pages/Icon-of-the-month-jan-26"
 
 
 import Neighbourhoods from "./Pages/Neighbourhoods/neighbourhoods";
@@ -1465,6 +1465,11 @@ const hideOnJahabarPage = location.pathname === "/arattai-with-jahabar-sadique/c
               path="/super-chennai-icon-of-dec-2025"
               element={<IconofthemonthDec />}
             />
+             <Route
+              path="/super-chennai-icon-of-jan-2026"
+              element={<Iconofthemontjahabar />}
+            />
+
             <Route
               path="/super-chennai-icon-of-nov-2025"
               element={<IconofthemonthNov />}

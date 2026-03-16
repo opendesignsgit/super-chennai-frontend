@@ -304,6 +304,8 @@ import ArrattaiWithArangam from "./Pages/Activities/ArattaiWith/arattaiPage"
 import ArattaiExcelView from "./Pages/Activities/ArattaiWith/ArattaiExcelView"
 
 import ArattaiWithJahabar from "./Pages/Activities/ArrattaiWithjahabar/araatai-jahabar"
+import ArattaiJahabarExcelView from "./Pages/Activities/ArrattaiWithjahabar/araatai-jahabar-excel"
+
 
 
 
@@ -863,6 +865,11 @@ const hideOnJahabarPage = location.pathname === "/arattai-with-jahabar-sadique/c
               path="/arattai-with-jahabar-sadique/chai-kings-founder"
               element={<ArattaiWithJahabar />}
             />
+            <Route
+              path="/arattai-with-jahabar-sadique/chai-kings-founder-admin-all-entry"
+              element={<ArattaiJahabarExcelView />}
+            />
+
             <Route
               path="/arattai-with-aruna-sairam/carnatic-vocalist-live-update"
               element={<ArattaiExcelView />}

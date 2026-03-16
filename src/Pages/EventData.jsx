@@ -7576,6 +7576,99 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
 
+
+
+  {
+  "id": 102330,
+  "name": "Velachery–St. Thomas Mount MRTS Extension Now Open",
+  "slug": "velachery-to-st-thomas-mount-train-chennai-mrts-update",
+  "para": "New MRTS Connectivity in Chennai",
+  "TrendingCalendarMonth": "February 2026",
+  "TrendingCalendarTime": "Route Opened",
+  "TrendingCalendarCategory": "Transport | Infrastructure | City Connectivity",
+  "image": "/images/trendingChennai/valacheri-train-trending.png",
+  "Homeimage": "/images/trendingChennai/valacheri-train-trending.png",
+  "link": "/trending-chennai/velachery-to-st-thomas-mount-train-chennai-mrts-update",
+  "duration": "Daily Train Services",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Public Transport | City Infrastructure | Rail Connectivity",
+  "venue": "Chennai",
+
+  "trendingDetails": `
+<p>
+The newly operational stretch improves Chennai’s transport network by connecting the <b>Velachery MRTS terminal</b> with <b>St. Thomas Mount</b>, an important transit point. This connection allows passengers to easily switch between MRTS services, Chennai Metro, and suburban trains, making daily commuting smoother and more efficient.
+</p>
+
+<p>
+Before opening the route to the public, the line underwent safety inspections and high-speed trial runs conducted by the <b>Chief Commissioner of Railway Safety (CRS)</b> team from Delhi to confirm that the corridor met all safety and operational requirements.
+</p>
+
+<h4>🚆 Key Highlights</h4>
+<ul>
+  <li>Route: <b>Velachery – St. Thomas Mount MRTS corridor</b></li>
+  <li>Distance: <b>Around 5 km extension</b></li>
+  <li>Interchange Point: <b>Direct access to Chennai Metro and suburban rail services at St. Thomas Mount</b></li>
+  <li>Advantage: <b>Quicker travel and improved public transport connectivity for commuters in South Chennai</b></li>
+</ul>
+
+<p>
+The new extension strengthens Chennai’s urban mobility by integrating multiple rail networks and making public transport more convenient for residents across the southern parts of the city.
+</p>
+`,
+  "TrendingLink": "",
+
+  "YoutubeLink": "",
+  "meta": {
+    "title": "Chennai MRTS Update | Velachery to St Thomas Mount Train Opens",
+    "desc": "Velachery to St Thomas Mount train services begin on the Chennai MRTS extension, improving South Chennai travel with metro links, now in Trending Chennai.",
+    "url": "https://www.superchennai.com/trending-chennai/velachery-to-st-thomas-mount-train-chennai-mrts-update"
+  }
+},
+
+  {
+  "id": 102331,
+  "name": "Marina Beach Gets New Statue Celebrating Education",
+  "slug": "chennai-marina-beach-statue-education-monument",
+  "para": "New Landmark at Marina Beach",
+  "TrendingCalendarMonth": "2026",
+  "TrendingCalendarTime": "Monument Unveiled",
+  "TrendingCalendarCategory": "City Landmark | Culture | Public Space",
+  "image": "/images/trendingChennai/merina-beac-celebrate.jpeg",
+  "Homeimage": "/images/trendingChennai/merina-beac-celebrate.jpeg",
+  "link": "/trending-chennai/chennai-marina-beach-statue-education-monument",
+  "duration": "Open All Day",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "City Landmark | Culture | Tourism",
+  "venue": "Marina Beach, Chennai",
+
+  "trendingDetails": `
+<p>
+<b>Marina Beach</b> has a striking new addition. The newly unveiled <b>Statue of Education</b> now stands proudly along Chennai’s iconic shoreline.
+</p>
+
+<p>
+Unveiled by <b>M. K. Stalin</b>, the monument symbolises the power of knowledge and the transformative role education plays in shaping society.
+</p>
+
+<p>
+The statue celebrates how education can uplift people from all walks of life—encouraging students, professionals, and dreamers alike to move forward, pursue their ambitions, and reach new heights.
+</p>
+
+<p>
+Placed along one of the city’s most visited landmarks, the monument is expected to inspire visitors while adding another meaningful cultural symbol to Chennai’s historic Marina Beach promenade.
+</p>
+`,
+  "TrendingLink": "",
+  "YoutubeLink": "",
+  "meta": {
+    "title": "Chennai Marina Beach Statue | New Symbol of Education",
+    "desc": "A new Chennai Marina Beach statue unveiled by M. K. Stalin celebrates education and inspires students and visitors along the shoreline, now in Trending Chennai.",
+    "url": "https://www.superchennai.com/trending-chennai/chennai-marina-beach-statue-education-monument"
+  }
+},
+
   {
   "id": 102330,
   "name": "Chennai Ula 2.0 Hop-On Hop-Off A/C Tourist Bus Service Launched",

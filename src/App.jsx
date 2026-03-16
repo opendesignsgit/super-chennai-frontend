@@ -589,7 +589,7 @@ const hideOnJahabarPage = location.pathname === "/arattai-with-jahabar-sadique/c
 
           {/* )} */}
 
-          {pathname !== "/manifesto-admin-all-doc-secure-datas" && (
+          {pathname !== "/manifesto-admin-all-doc-secure-datas" && pathname !== "/arattai-with-jahabar-sadique/chai-kings-founder-admin-all-entry" && (
             <div
               ref={stickyRef}
               className={`stickyIconsContainer ${

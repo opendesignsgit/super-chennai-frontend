@@ -247,23 +247,22 @@ useEffect(() => {
 
 
 const mockUpcomingEvents = [
-  {
-    id: 1,
-    image: "/images/superchennai-logo-news.jpeg",
-    description: "Super Chennai launches the Super Chennai Manifesto 2026 outlining a bold vision to build a stronger, smarter and future-ready city.",
-        title: "Super Chennai Manifesto 2026 Launch",
-    link: "https://www.passionateinmarketing.com/super-chennai-launches-super-chennai-manifesto-2026/",
-  },
-  {
-    id: 2,
-    image: "/images/super-chennai-logo-news-no-border (2).jpeg",
-       title: "Super Chennai Manifesto 2026 Unveiled",
-
-    description: "Super Chennai unveils the Super Chennai Manifesto 2026 presenting a roadmap to create a resilient, global and future-ready Chennai.",
-    link: "https://www.medianews4u.com/super-chennai-unveils-super-chennai-manifesto-2026-to-build-a-global-resilient-and-future-ready-city/",
-  },
+  { id: 1, image: "/images/arunasairam-img1.jpg" },
+  { id: 2, image: "/images/arunasairam-img2.jpg" },
+  { id: 3, image: "/images/arunasairam-img3.jpg" },
+  { id: 4, image: "/images/arunasairam-img4.jpg" },
+  { id: 5, image: "/images/arunasairam-img5.jpg" },
+  { id: 6, image: "/images/arunasairam-img6.jpg" },
+  { id: 7, image: "/images/arunasairam-img7.jpg" },
+  { id: 8, image: "/images/arunasairam-img8.jpg" },
+  { id: 9, image: "/images/arunasairam-img9.jpg" },
+  { id: 10, image: "/images/arunasairam-img10.jpg" },
+  { id: 12, image: "/images/arunasairam-img12.jpg" },
+  { id: 13, image: "/images/arunasairam-img13.jpg" },
+  { id: 14, image: "/images/arunasairam-img14.jpg" },
+  { id: 15, image: "/images/arunasairam-img15.jpg" },
+  { id: 16, image: "/images/arunasairam-img16.jpg" },
 ];
-
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
@@ -321,7 +320,7 @@ const mockUpcomingEvents = [
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="mt-10 bg-white">
         <div className="container mx-auto px-6 lg:px-0">
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves ">
@@ -380,14 +379,13 @@ const mockUpcomingEvents = [
               </button>
 
             </div> */}
-            
           </div>
         </div>
       </section>
 
       {/*============= GALLERY ================== */}
 
-      <div className="EventsCalendarMainSection hidden">
+      <div className="EventsCalendarMainSection mb-10 ">
         <div
           className={`EventsCalenderBackground ${
             scrollDir === "right"
@@ -398,62 +396,21 @@ const mockUpcomingEvents = [
           <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
           <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
         </div>
-
-        {/* Title */}
-<div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">          <h2>Media Highlights</h2>
+        <div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">
+          {" "}
+          <h2>Media Highlights</h2>
           <p>
             A look at media coverage and featured moments from the Arattai with
             Aruna Sairam event.
           </p>
         </div>
-        {/* <div className="eventsCalendarMainSectionConatiner container max-w-7xl mx-auto px-4">
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="CalendarEventsFirst">
-              <img
-                className="eventsCalenderIamge cursor-pointer w-[800px] h-[350px] object-cover"
-                src="images/streaming.png"
-                alt="Super Chennai Conclave 2026"
-              />
-
-              <div className="MainCalendarSectionEvent">
-                <div className="secondSectionEventsCalendar">
-                  <div className="EventsCalendarDateandTime">
-                    <p className="dateEvents">19</p>
-                    <p className="dayEvents">Wednesday</p>
-                  </div>
-
-                  <div>
-                    <p className="eventsNAME">Super Chennai Conclave 2026</p>
-                  </div>
-                </div>
-
-                <div className="thirdSectionCalendarContent">
-                  <p>
-                    Moments from the conclave where ideas met conversations, and
-                    leaders shared perspectives that inspired the room. A frame
-                    that reflects the spirit of collaboration, knowledge
-                    sharing, and meaningful connections.
-                  </p>
-                </div>
-
-                <div className="eventsCalendarLinks">
-                  <a>Conclave</a>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div> */}
-
+        
         <div className="overflow-hidden py-17 cardMobileSection">
           <div className="relative">
             <div className="absolute top-0 left-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
             <div className="absolute top-0 right-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
 
-            {/* <motion.div
+            <motion.div
               ref={carouselRef}
               className="flex gap-10 cursor-grab active:cursor-grabbing cardsMobileSection"
               drag="x"
@@ -506,35 +463,9 @@ const mockUpcomingEvents = [
                   </motion.div>
                 );
               })}
-            </motion.div> */}
+            </motion.div>
 
-            <div className="flex justify-center items-start gap-10 flex-wrap py-10">
-              {mockUpcomingEvents.map((card) => (
-                <a
-                  key={card.id}
-                  href={card.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-[320px] bg-white rounded-none border border-gray-300 overflow-hidden shadow-md flex flex-col hover:shadow-lg transition duration-300"
-                >
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    // className="w-full h-[200px] object-cover"
-                  />
-                  <div className="p-4 flex flex-col flex-1">
-                    <h3 className="text-lg font-semibold mb-2 line-clamp-2">
-                      {card.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm line-clamp-3">
-                      {card.description}
-                    </p>
-                  </div>
-                </a>
-              ))}
-            </div>
-
-            {/* <div className="EventsCalenderButtons flex justify-center  ">
+            <div className="EventsCalenderButtons flex justify-center  ">
               <button
                 onClick={() => slide("left")}
                 className="EventsCalenderLeftButton"
@@ -543,8 +474,10 @@ const mockUpcomingEvents = [
                 onClick={() => slide("right")}
                 className="EventsCalenderRightButton"
               ></button>
-            </div> */}
-          </div>
+            </div>
+          </div>      
+        </div>
+
 
           {isModalOpen && (
             <div
@@ -565,9 +498,7 @@ const mockUpcomingEvents = [
               </button>
             </div>
           )}
-        </div>
       </div>
-
       <AnimatePresence>
         {showRegisterPopup && (
           <motion.div

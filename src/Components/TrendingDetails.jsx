@@ -971,6 +971,63 @@ export default function TrendingDetails() {
 
   ]
 
+
+  const marinaBeachStatuEducation =[
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/chennai-marina-beach-statue-education-monument"
+  },
+  "headline": "Marina Beach Gets New Statue Celebrating Education",
+  "description": "A new Chennai Marina Beach statue unveiled by M. K. Stalin celebrates education and inspires students and visitors along the shoreline, now in Trending Chennai.",
+  "image": "https://www.superchennai.com/images/trendingChennai/merina-beac-celebrate.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Superchennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-03-14"
+}
+
+  ]
+
+  const valacheristmountsmrts =[
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/velachery-to-st-thomas-mount-train-chennai-mrts-update"
+  },
+  "headline": "Velachery–St. Thomas Mount MRTS Extension Now Open",
+  "description": "Velachery to St Thomas Mount train services begin on the Chennai MRTS extension, improving South Chennai travel with metro links, now in Trending Chennai.",
+  "image": "https://www.superchennai.com/images/trendingChennai/valacheri-train-trending.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Superchennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-03-14"
+}
+
+  ]
+
   return (
     <>
       <Helmet>
@@ -995,7 +1052,24 @@ export default function TrendingDetails() {
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
         />
-        
+
+
+
+              
+        {slug === "velachery-to-st-thomas-mount-train-chennai-mrts-update" && (
+          <script type="application/ld+json">
+            {JSON.stringify(valacheristmountsmrts)}
+          </script>
+        )}
+    
+          
+
+          
+        {slug === "chennai-marina-beach-statue-education-monument" && (
+          <script type="application/ld+json">
+            {JSON.stringify(marinaBeachStatuEducation)}
+          </script>
+        )}
     
 
         {slug === "marina-beach-blue-flag-phase-2" && (

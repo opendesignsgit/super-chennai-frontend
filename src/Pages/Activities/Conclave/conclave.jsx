@@ -1450,7 +1450,6 @@ useEffect(() => {
       </div>
 
       {/*============= GALLERY ================== */}
-
       <div className="EventsCalendarMainSection mb-10">
         <div
           className={`EventsCalenderBackground ${

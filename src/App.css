@@ -1004,7 +1004,7 @@ background: #fff;
 
 @media(min-width:401px) and (max-width:640px) {
       .accaodomationBannerSection img {
-        height: auto !important;
+        /* height: auto !important; */
         object-fit: cover;
     }
 }

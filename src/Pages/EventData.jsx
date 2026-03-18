@@ -7576,7 +7576,59 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
 
+{
+  "id": 102332,
+  "name": "Perambur Park Chennai | New Play Areas & Sports Zones",
+  "slug": "perambur-park-chennai",
+  "para": "Upgraded Park in North Chennai",
+  "TrendingCalendarMonth": "February 2026",
+  "TrendingCalendarTime": "Now Open",
+  "TrendingCalendarCategory": "Parks | Recreation | Family Spots",
+  "image": "/images/trendingChennai/perambur-park-trending.jpeg",
+  "Homeimage": "/images/trendingChennai/perambur-park-trending.jpeg",
+  "link": "/trending-chennai/perambur-park-chennai",
+  "duration": "Open Daily",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Parks | Family Activities | Outdoor Recreation",
+  "venue": "Perambur, Chennai",
 
+  "trendingDetails": `
+<p>
+A popular park in North Chennai has undergone a major transformation! 😍
+</p>
+
+<p>
+The recently upgraded <b>Murasoli Maran Park</b> is now open, offering a vibrant space for visitors of all age groups.
+</p>
+
+<p>
+From a dedicated skating rink and badminton courts to the newly installed Centenary Coin Pillar, the park features a variety of attractions for recreation and relaxation.
+</p>
+
+<p>
+One of the standout additions is the <b>Inclusive Play Area</b>, thoughtfully designed to ensure children of all abilities can enjoy and play together. ♿❤️
+</p>
+
+<p>
+📍 <b>Location:</b> 340, Paper Mills Road, Perambur (under the flyover)<br/>
+⏰ <b>Timings:</b> 7:00 AM – 9:00 PM (Daily)
+</p>
+
+<p>
+Plan your visit this weekend and experience the upgraded space.
+</p>
+`,
+
+  "TrendingLink": "",
+  "YoutubeLink": "",
+
+  "meta": {
+    "title": "Perambur Park Chennai | New Play Areas & Sports Zones",
+    "desc": "Perambur park now features modern play zones, sports courts, and inclusive spaces, making it a great Chennai destination for families, kids, and weekend outings.",
+    "url": "https://www.superchennai.com/trending-chennai/perambur-park-chennai"
+  }
+},
 
   {
   "id": 102330,

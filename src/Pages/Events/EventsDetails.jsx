@@ -451,6 +451,55 @@ export default function EventsDetails() {
     },
   ];
 
+  const roar26UnitySuperkings =[
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/events-in-chennai/super-kings-roar-26-chennai-event"
+  },
+  "headline": "Roar ’26 – Super Kings Unite!",
+  "description": "Super Kings Roar ’26 Event Chennai brings fans together on March 22 with live practice, player meetups, exciting fan moments, and an electrifying A.R. Rahman show.",
+  "image": "https://demo.superchennai.com/api/media/file/ROAR.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-03-22"
+},
+{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Super Chennai",
+    "item": "https://www.superchennai.com/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Chennai Events",
+    "item": "https://www.superchennai.com/chennai-events"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "Roar ’26 – Super Kings Unite!",
+    "item": "https://www.superchennai.com/events-in-chennai/super-kings-roar-26-chennai-event"  
+  }]
+}
+
+
+  ]
+
 
   // ######## SCROLLER FOR PARTNER SETTINGS############  TEMPORRY SCROLL
 
@@ -489,6 +538,15 @@ export default function EventsDetails() {
         <link rel="canonical" href={window.location.href} />
         {imageUrl && <meta property="og:image" content={imageUrl} />}
 
+
+
+        
+
+        {slug === "events-in-chennai/super-kings-roar-26-chennai-event" && (
+          <script type="application/ld+json">
+            {JSON.stringify(roar26UnitySuperkings)}
+          </script>
+        )}
         {slug === "music-concert-ar-rahman-wonderment" && (
           <script type="application/ld+json">
             {JSON.stringify(ARahumanWEBSchema)}

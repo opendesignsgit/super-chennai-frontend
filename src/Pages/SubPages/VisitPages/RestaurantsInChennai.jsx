@@ -19,6 +19,18 @@ const detailsections = [
     title: "Global & Continental Cuisine",
     points: [
       {
+  name: "Thin Crust",
+  description:
+    "A newly launched, fully vegetarian restaurant known for its thin-crust pizzas, pasta, and classic Italian comfort dishes.",
+  subDescription: "",
+  locations: [
+    {
+      label: "Gopalapuram",
+      link: "https://maps.app.goo.gl/85YnDb4Ln3WCmF8x7",
+    },
+  ],
+},
+      {
         name: "The Flying Elephant (Park Hyatt)",
         description: "Multi-level, multi-cuisine luxury dining",
         subDescription: "",
@@ -281,6 +293,18 @@ const detailsections = [
     id: 4,
     title: "Asian Cuisine",
     points: [
+      {
+  name: "Jalpaan",
+  description:
+    "An upscale pure vegetarian restaurant offering a delightful mix of North Indian, Italian, and Pan-Asian cuisines, perfect for a refined multi-cuisine dining experience.",
+  subDescription: "",
+  locations: [
+    {
+      label: "T.Nagar",
+      link: "https://maps.app.goo.gl/avN2r4L9Qq22LvDbA",
+    },
+  ],
+},
       {
         name: "Zaafrin’s Mandi House",
         description:

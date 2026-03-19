@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Search from "./Search";
 import { useTranslation } from "react-i18next";
-
+import Slider from "react-slick";
 import LoginIcon from "../../public/images/icons/user.svg";
 import LoginIcon1 from "../../public/images/icons/user-mobile.svg";
 // import LoginOtpModal from "../Pages/Auth/Loginsdfsdfsdf";
@@ -402,16 +402,30 @@ const menuItems = [
   //     },
   //   ],
   // },
-  
-   {
+
+  {
     label: "Arattai",
     labellink: "/arattai-with-jahabar-sadique/chai-kings-founder",
     content: [
       {
-        title: "",
-        desc: "",
-        link: "",
+        title: "Hello",
+        desc: "ssdds",
+        link: "/arattai-with-aruna-sairam/carnatic-vocalist",
+        image: "/images/arunasairam-card-img.jpeg",
       },
+      {
+        title: "Hello",
+        desc: "ssdds",
+        link: "/arattai-with-jahabar-sadique/chai-kings-founder",
+        image: "/images/chai-king-owner.jpeg",
+      },
+
+      // {
+      //   title: "Hello",
+      //   desc: "ssdds",
+      //   link: "/arattai-with-jahabar-sadique/chai-kings-founder",
+      //   image: "/images/chai-king-owner.jpeg",
+      // },
     ],
   },
 ];
@@ -422,13 +436,15 @@ const sectionImageMap = {
   Invest: "/images/HomePage-Images/Invest-MegaMenu.jpg",
   Innovate: "/images/HomePage-Images/Innovate-MegaMenu.jpg",
   Volunteer: "/images/HomePage-Images/Volunteers-MegaMenu.jpg",
-   Arattai: "/images/chai-king-owner.jpeg",
-  //  Arattai: "/images/aruna-inne-main-image-ham.jpeg",
 
+  //  Arattai: "/images/chai-king-owner.jpeg",
+  Arattai: "",
 };
 const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
@@ -455,6 +471,26 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const sliderSettings = {
+    dots: false,
+    arrows: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 850, // tablets
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const slideInFromLeft = {
@@ -614,7 +650,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                       //       "/images/FirstSliderImage.png",
                       //   );
                       // }}
-                         onMouseEnter={() => {
+                      onMouseEnter={() => {
                         // Only show mega menu if the item has content
                         if (item.content && item.content.length > 0) {
                           setActiveMenu(item);
@@ -632,11 +668,6 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                       </span>
                     </li>
 
-
-
-
-
-
                     // <li
                     //   key={i}
                     //   className={`Megamenumenuitem ${
@@ -650,18 +681,18 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                     //     navigate(item.labellink);
                     //     window.scrollTo({ top: 0 });
                     //   }}
-                      // onMouseEnter={() => {
-                      //   // Only show mega menu if the item has content
-                      //   if (item.content && item.content.length > 0) {
-                      //     setActiveMenu(item);
-                      //     setMenuVisible(true);
-                      //     setHoveredImage(
-                      //       sectionImageMap[item.label] ||
-                      //         "/images/FirstSliderImage.png",
-                      //     );
-                      //   }
-                      // }}
-                     
+                    // onMouseEnter={() => {
+                    //   // Only show mega menu if the item has content
+                    //   if (item.content && item.content.length > 0) {
+                    //     setActiveMenu(item);
+                    //     setMenuVisible(true);
+                    //     setHoveredImage(
+                    //       sectionImageMap[item.label] ||
+                    //         "/images/FirstSliderImage.png",
+                    //     );
+                    //   }
+                    // }}
+
                     // >
                     //   <span>
                     //     {item.label}
@@ -746,46 +777,85 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
-                    <div className="Newmegamenuinner">
-                      {activeMenu.content.map((block, index) => (
-                        <div
-                          key={index}
-                          className="mega-link-wrapper"
-                          onClick={() => {
-                            navigate(block.link);
-                            setMenuVisible(false);
-                            window.scrollTo({ top: 0 });
-                          }}
-                          style={{ cursor: "pointer" }}
-                        >
-                          <h4 className="mega-block-title">
-                            {block.title.length > 15 &&
-                            block.title.includes(" ")
-                              ? (() => {
-                                  const words = block.title.split(" ");
-                                  const mid = Math.floor(words.length / 2);
-                                  const before = words.slice(0, mid).join(" ");
-                                  const after = words.slice(mid).join(" ");
-                                  return (
-                                    <>
-                                      {before}
-                                      <br />
-                                      {after}
-                                    </>
-                                  );
-                                })()
-                              : block.title}
-                          </h4>
-
-                          <p className="mega-block-desc">{block.desc}</p>
+                    <div
+                      className={`Newmegamenuinner ${activeMenu.label === "Arattai" ? "flexcontainer" : ""}`}
+                    >
+                      {activeMenu.label === "Arattai" ? (
+                        <div className="newarratai">
+                          <div className="arattai-slider-wrapper">
+                            <Slider {...sliderSettings}>
+                              {activeMenu.content.map((block, index) => (
+                                <div key={index}>
+                                  <div
+                                    className="arattai-slide"
+                                    onClick={() => {
+                                      navigate(block.link);
+                                      setMenuVisible(false);
+                                      window.scrollTo({
+                                        top: 0,
+                                        behavior: "smooth",
+                                      });
+                                    }}
+                                  >
+                                    <img
+                                      src={block.image}
+                                      alt=""
+                                      className="arattai-image"
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </Slider>
+                          </div>
                         </div>
-                      ))}
+                      ) : (
+                        // ✅ NORMAL MENU
+                        activeMenu.content.map((block, index) => (
+                          <div
+                            key={index}
+                            className="mega-link-wrapper"
+                            onClick={() => {
+                              navigate(block.link);
+                              setMenuVisible(false);
+                              window.scrollTo({
+                                top: 0,
+                                behavior: "smooth",
+                              });
+                            }}
+                            style={{ cursor: "pointer" }}
+                          >
+                            <h4 className="mega-block-title">
+                              {block.title.length > 15 &&
+                              block.title.includes(" ")
+                                ? (() => {
+                                    const words = block.title.split(" ");
+                                    const mid = Math.floor(words.length / 2);
+                                    return (
+                                      <>
+                                        {words.slice(0, mid).join(" ")}
+                                        <br />
+                                        {words.slice(mid).join(" ")}
+                                      </>
+                                    );
+                                  })()
+                                : block.title}
+                            </h4>
+
+                            <p className="mega-block-desc">{block.desc}</p>
+                          </div>
+                        ))
+                      )}
                     </div>
-                    <img
-                      className="megamenuMainImage"
-                      src={hoveredImage}
-                      alt=""
-                    />
+
+                    {/* Right Side Image */}
+
+                    {activeMenu.label !== "Arattai" && (
+                      <img
+                        className="megamenuMainImage"
+                        src={hoveredImage}
+                        alt=""
+                      />
+                    )}
                   </motion.div>
                 </AnimatePresence>
               </div>

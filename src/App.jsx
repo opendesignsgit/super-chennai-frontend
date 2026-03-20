@@ -704,7 +704,7 @@ const hideOnJahabarPage = location.pathname === "/arattai-with-jahabar-sadique/c
 
             <Route path="/ArticleList" element={<AllArticleList />} />
             <Route
-              path="/ArticleListPageTest"
+              path="/article"
               element={<ArticleListPageTest />}
             />
             {/* <Route
@@ -713,7 +713,7 @@ const hideOnJahabarPage = location.pathname === "/arattai-with-jahabar-sadique/c
             /> */}
 
             <Route
-              path="/ArticleDetailPage/:slug"
+              path="/article/:slug"
               element={<ArticleDetailPage />}
             />
             <Route path="/menifestoInfo" element={<MenifestoInfo />} />

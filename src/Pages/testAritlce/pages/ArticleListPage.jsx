@@ -343,6 +343,9 @@ const rightAds =
         </div>
       )}
 
+
+      
+
       <div
         className={`mx-auto px-4 mt-10 mb-10 ${
           hasSideAds ? "max-w-8xl" : "max-w-6xl"
@@ -370,7 +373,7 @@ const rightAds =
             {featuredEventArticle && (
               <Link
                 key={featuredEventArticle.id}
-                to={`/ArticleDetailPage/${featuredEventArticle.slug}`}
+                to={`/article/${featuredEventArticle.slug}`}
                 className="grid lg:grid-cols-2 gap-6 mb-10 items-center "
               >
                 <div>
@@ -413,7 +416,7 @@ const rightAds =
                     return (
                       <Link
                         key={a.id}
-                        to={`/ArticleDetailPage/${a.slug}`}
+                        to={`/article/${a.slug}`}
                         className="contents"
                       >
                         <div className="bg-white rounded-md overflow-hidden">
@@ -467,7 +470,7 @@ const rightAds =
                   {mostViewedArticles.map((a) => (
                     <Link
                       key={a.id}
-                      to={`/ArticleDetailPage/${a.slug}`}
+                      to={`/article/${a.slug}`}
                       className="flex flex-col md:flex-row gap-6 bg-white
                        rounded-xl overflow-hidden hover:shadow-lg transition"
                     >
@@ -523,7 +526,7 @@ const rightAds =
                   {popularArticles.map((a) => (
                     <Link
                       key={a.id}
-                      to={`/ArticleDetailPage/${a.slug}`}
+                      to={`/article/${a.slug}`}
                       className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition block"
                     >
                       <img

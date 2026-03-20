@@ -377,7 +377,7 @@ export default function ArticleDetailPage() {
   const { slug } = useParams();
   const { article, ads, loading } = useArticleBySlug(slug);
 
-  console.log("artcle data", article);
+  console.log("artcle data--------------------", article);
   console.log("ads-detail", ads);
 
   const [showLeftAds, setShowLeftAds] = useState(true);
@@ -412,6 +412,8 @@ export default function ArticleDetailPage() {
   const mainCol = hasSideAds ? "lg:col-span-8" : "lg:col-span-12";
 
   const visibleBlocks = expanded ? blocks : blocks.slice(0, 12);
+
+  const author = article?.populatedAuthors?.[0];
 
   return (
     <>
@@ -486,6 +488,63 @@ export default function ArticleDetailPage() {
 
             {!loading && article && (
               <>
+                <div className="flex items-center gap-4 mb-2">
+                  {author?.authorImage ? (
+                    <img
+                      src={withBaseUrl(author.authorImage.url)}
+                      alt={author.name}
+                      className="w-20 h-20 rounded-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center text-lg font-semibold">
+                      {author?.name?.charAt(0) || "A"}
+                    </div>
+                  )}
+
+                  <div>
+                    <p className="font-semibold text-gray-800">
+                      {author?.name || "Unknown Author"}
+                    </p>
+
+                    <p className="text-xs text-gray-500 mt-1">
+                      {new Date(article.publishedAt).toLocaleDateString(
+                        "en-GB",
+                        {
+                          day: "2-digit",
+                          month: "short",
+                          year: "numeric",
+                          hour: "2-digit",
+                          minute: "2-digit",
+                          hour12: true,
+                          timeZone: "Asia/Kolkata",
+                        },
+                      )}
+                    </p>
+                  </div>
+                  {/* <div className="ml-auto flex items-center gap-4 text-sm text-gray-600">
+                    <div className="flex items-center gap-1 text-gray-600 text-sm">
+                      <img src={ViewsIcon} alt="Views" className="w-4 h-4" />
+                      <span>{article.views}</span>
+                    </div>
+
+                    <button
+                      onClick={handleLike}
+                      disabled={hasLiked(article.id)}
+                      className={`flex items-center gap-1 transition ${hasLiked(article.id) ? "cursor-not-allowed" : "hover:scale-105"}`}
+                    >
+                      <img
+                        src={hasLiked(article.id) ? LikedIcon : NotLikedIcon}
+                        alt={hasLiked(article.id) ? "Liked" : "Not liked"}
+                        className="w-5 h-5"
+                      />
+                      <span
+                        className={`${hasLiked(article.id) ? "text-gray-400" : "text-red-600"}`}
+                      >
+                        {article.likes}
+                      </span>
+                    </button>
+                  </div> */}
+                </div>
                 <div className="space-y-6">
                   {visibleBlocks.map((block, index) => {
                     if (
@@ -563,6 +622,11 @@ export default function ArticleDetailPage() {
               </div>
             </div>
           )}
+        </div>
+        <div className="mt-12">
+          <Link to="/article" className="text-[#232b91ff] font-medium">
+            ← Back to Article List
+          </Link>
         </div>
       </div>
 

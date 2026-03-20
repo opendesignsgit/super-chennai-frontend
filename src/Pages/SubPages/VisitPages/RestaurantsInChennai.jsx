@@ -19,17 +19,30 @@ const detailsections = [
     title: "Global & Continental Cuisine",
     points: [
       {
-  name: "Thin Crust",
-  description:
-    "A newly launched, fully vegetarian restaurant known for its thin-crust pizzas, pasta, and classic Italian comfort dishes.",
-  subDescription: "",
-  locations: [
-    {
-      label: "Gopalapuram",
-      link: "https://maps.app.goo.gl/85YnDb4Ln3WCmF8x7",
-    },
-  ],
-},
+        name: "The Great Escape Restaurant",
+        description:
+          "A lively pure-veg spot in Kilpauk, perfect for casual hangouts and relaxed dining with friends.",
+        subDescription:
+          "Known for its global flavours, cozy vibe, and a fun, easygoing atmosphere.",
+        locations: [
+          {
+            label: "Kilpauk",
+            link: "https://share.google/c88wj1izm8FK0ECP8",
+          },
+        ],
+      },
+      {
+        name: "Thin Crust",
+        description:
+          "A newly launched, fully vegetarian restaurant known for its thin-crust pizzas, pasta, and classic Italian comfort dishes.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Gopalapuram",
+            link: "https://maps.app.goo.gl/85YnDb4Ln3WCmF8x7",
+          },
+        ],
+      },
       {
         name: "The Flying Elephant (Park Hyatt)",
         description: "Multi-level, multi-cuisine luxury dining",
@@ -294,17 +307,17 @@ const detailsections = [
     title: "Asian Cuisine",
     points: [
       {
-  name: "Jalpaan",
-  description:
-    "An upscale pure vegetarian restaurant offering a delightful mix of North Indian, Italian, and Pan-Asian cuisines, perfect for a refined multi-cuisine dining experience.",
-  subDescription: "",
-  locations: [
-    {
-      label: "T.Nagar",
-      link: "https://maps.app.goo.gl/avN2r4L9Qq22LvDbA",
-    },
-  ],
-},
+        name: "Jalpaan",
+        description:
+          "An upscale pure vegetarian restaurant offering a delightful mix of North Indian, Italian, and Pan-Asian cuisines, perfect for a refined multi-cuisine dining experience.",
+        subDescription: "",
+        locations: [
+          {
+            label: "T.Nagar",
+            link: "https://maps.app.goo.gl/avN2r4L9Qq22LvDbA",
+          },
+        ],
+      },
       {
         name: "Zaafrin’s Mandi House",
         description:
@@ -427,191 +440,313 @@ const detailsections = [
     id: 5,
     title: "Cafés & Casual Bites",
     points: [
-      
-      // NEW ADDED 
+      // NEW ADDED
 
-      
-  {
-    "name": "Dabara Coffee",
-    "description": "A no-frills spot that focuses purely on a well-brewed cup of filter coffee. Known for keeping the experience simple, warm, and authentic.",
-    "subDescription": "",
-    "locations": [
       {
-        "label": "Ambattur",
-        "link": "https://www.google.com/maps/search/Dabara+Coffee"
-      }
-    ]
-  },
-  {
-    "name": "Coffee Since 1999",
-    "description": "A café that blends comfort, conversation, and carefully brewed coffee. Often chosen for slow mornings and easy catch-ups.",
-    "subDescription": "Since 1999",
-    "locations": [
+        name: "Southwest Coffee Roasters",
+        description:
+          "A minimal and peaceful café in Nungambakkam, perfect for enjoying thoughtfully sourced, high-quality brews.",
+        subDescription:
+          "Known for its clean aesthetic, specialty coffee, and a calm, focused atmosphere.",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://share.google/fsxUIH69XHSTdosXI",
+          },
+        ],
+      },
+
       {
-        "label": "Thousand Lights",
-        "link": "https://www.google.com/maps/search/Coffee+Since+1999"
-      }
-    ]
-  },
-  {
-    "name": "Vivekananda Coffee",
-    "description": "A long-standing name associated with tradition and consistency. Favoured by those who appreciate time-tested flavours.",
-    "subDescription": "",
-    "locations": [
+        name: "Coffea Chennai",
+        description:
+          "A simple and welcoming café in Nungambakkam, perfect for everyday meetups over good coffee and light bites.",
+        subDescription:
+          "Known for its relaxed setting, easygoing vibe, and consistently good brews.",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://share.google/gswsrgFOeI9Bfhtz8",
+          },
+        ],
+      },
+
       {
-        "label": "T Nagar",
-        "link": "https://maps.app.goo.gl/a6XghhnYVnyg5BsD7"
+        name: "The Perch",
+        description:
+          "A cozy, pet-friendly café in T. Nagar, perfect for slow, relaxed moments over good food and coffee.",
+        subDescription:
+          "Known for its calm atmosphere, all-day breakfast, and thoughtfully crafted brews.",
+        locations: [
+          {
+            label: "T. Nagar",
+            link: "https://share.google/GlTZYz5kb6ZjZ60bN",
+          },
+        ],
+      },
+
+      {
+        name: "Moffee",
+        description:
+          "A calm and aesthetic café in Nungambakkam, perfect for a relaxed break with quality brews and desserts.",
+        subDescription:
+          "Known for its minimal interiors, peaceful vibe, and simple yet satisfying treats.",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://share.google/0wjJPrElxgGyPmZKa",
+          },
+        ],
+      },
+
+      {
+        name: "Glazed & Co",
+        description:
+          "A trendy dessert café in Chennai, perfect for satisfying sweet cravings and enjoying rich coffee in a relaxed setting.",
+        subDescription:
+          "Known for its indulgent bakes, aesthetic interiors, and a cozy hangout vibe.",
+        locations: [
+          {
+            label: "Raja Annamalaipuram",
+            link: "https://share.google/LaX8CaqiMhVkpSP2Y",
+          },
+        ],
+      },
+
+      {
+        name: "Aarzoo Cafe",
+        description:
+          "A laid-back café in the heart of Nungambakkam, offering a relaxed dining experience with a menu full of crowd-favourite vegetarian dishes.",
+        subDescription:
+          "Known for its comforting veg food, calm ambience, and easygoing vibe.",
+        locations: [
+          {
+            label: "KNK Road, Nungambakkam",
+            link: "https://share.google/YT8tf68AO6ZtFUJUL",
+          },
+        ],
+      },
+
+      {
+        name: "Cafe XO",
+        description:
+          "A cozy and stylish café in Nungambakkam, perfect for unwinding, catching up with friends, and enjoying quality coffee with tasty bites.",
+        subDescription:
+          "Known for its relaxed ambience, good food, and a comfortable space to hang out.",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://share.google/ZLNUXGyd038Bntv9E",
+          },
+        ],
+      },
+
+      {
+        name: "Cafe Noci",
+        description:
+          "A cozy and aesthetic café in Chennai, perfect for unwinding, catching up with friends, and enjoying a relaxed vibe over good coffee.",
+        subDescription:
+          "Known for its chill ambiance, great coffee, and picture-perfect moments.",
+        locations: [
+          {
+            label: "Royapettah",
+            link: "https://share.google/ugBWok4tw2ZrY04AU",
+          },
+        ],
+      },
+
+      {
+        name: "Dabara Coffee",
+        description:
+          "A no-frills spot that focuses purely on a well-brewed cup of filter coffee. Known for keeping the experience simple, warm, and authentic.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Ambattur",
+            link: "https://www.google.com/maps/search/Dabara+Coffee",
+          },
+        ],
       },
       {
-        "label": "Gopalapuram",
-        "link": "https://maps.app.goo.gl/RQU9JoHHpgTAcFEE9"
-      }
-    ]
-  },
-  {
-    "name": "Vijayarams Coffee",
-    "description": "A place where coffee is treated with seriousness and care. Known for its strong character and loyal following.",
-    "subDescription": "",
-    "locations": [
-      {
-        "label": "T Nagar",
-        "link": "https://maps.app.goo.gl/yMUDuaRmPnUbniPb8"
+        name: "Coffee Since 1999",
+        description:
+          "A café that blends comfort, conversation, and carefully brewed coffee. Often chosen for slow mornings and easy catch-ups.",
+        subDescription: "Since 1999",
+        locations: [
+          {
+            label: "Thousand Lights",
+            link: "https://www.google.com/maps/search/Coffee+Since+1999",
+          },
+        ],
       },
       {
-        "label": "Mylapore",
-        "link": "https://maps.app.goo.gl/1YcHzZ2rWb8NFBDVA"
-      }
-    ]
-  },
-  {
-    "name": "Geetha Cafe",
-    "description": "A bustling café that balances food and coffee with equal importance. Often remembered for its comforting, familiar atmosphere.",
-    "subDescription": "",
-    "locations": [
-      {
-        "label": "Mylapore",
-        "link": "https://maps.app.goo.gl/oTDVK9We9UdjPn8W6"
+        name: "Vivekananda Coffee",
+        description:
+          "A long-standing name associated with tradition and consistency. Favoured by those who appreciate time-tested flavours.",
+        subDescription: "",
+        locations: [
+          {
+            label: "T Nagar",
+            link: "https://maps.app.goo.gl/a6XghhnYVnyg5BsD7",
+          },
+          {
+            label: "Gopalapuram",
+            link: "https://maps.app.goo.gl/RQU9JoHHpgTAcFEE9",
+          },
+        ],
       },
       {
-        "label": "T Nagar",
-        "link": "https://maps.app.goo.gl/tGnwtE8ctCTbLBZy7"
-      }
-    ]
-  },
-  {
-    "name": "Mylai Karpagambal Mess",
-    "description": "An institution that reflects traditional dining culture. The coffee experience here feels deeply rooted and nostalgic.",
-    "subDescription": "",
-    "locations": [
+        name: "Vijayarams Coffee",
+        description:
+          "A place where coffee is treated with seriousness and care. Known for its strong character and loyal following.",
+        subDescription: "",
+        locations: [
+          {
+            label: "T Nagar",
+            link: "https://maps.app.goo.gl/yMUDuaRmPnUbniPb8",
+          },
+          {
+            label: "Mylapore",
+            link: "https://maps.app.goo.gl/1YcHzZ2rWb8NFBDVA",
+          },
+        ],
+      },
       {
-        "label": "Mylapore",
-        "link": "https://www.google.com/maps/search/Mylai+Karpagambal+Mess"
-      }
-    ]
-  },
-  {
-    "name": "The South Indian Coffee House",
-    "description": "A space that celebrates heritage through simple rituals. Ideal for those who enjoy an old-world café experience.",
-    "subDescription": "",
-    "locations": [
+        name: "Geetha Cafe",
+        description:
+          "A bustling café that balances food and coffee with equal importance. Often remembered for its comforting, familiar atmosphere.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Mylapore",
+            link: "https://maps.app.goo.gl/oTDVK9We9UdjPn8W6",
+          },
+          {
+            label: "T Nagar",
+            link: "https://maps.app.goo.gl/tGnwtE8ctCTbLBZy7",
+          },
+        ],
+      },
       {
-        "label": "Mylapore",
-        "link": "https://maps.app.goo.gl/w9cXVfvfB3BFCDbG8"
-      }
-    ]
-  },
-  {
-    "name": "Ramani Coffee",
-    "description": "A quiet coffee stop focused on everyday routines. Known for being reliable and unpretentious.",
-    "subDescription": "",
-    "locations": [
+        name: "Mylai Karpagambal Mess",
+        description:
+          "An institution that reflects traditional dining culture. The coffee experience here feels deeply rooted and nostalgic.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Mylapore",
+            link: "https://www.google.com/maps/search/Mylai+Karpagambal+Mess",
+          },
+        ],
+      },
       {
-        "label": "Saidapet",
-        "link": "https://maps.app.goo.gl/rCH7v3n6AkRBuXru6"
-      }
-    ]
-  },
-  {
-    "name": "Sri Krishna Coffee House",
-    "description": "A café that values balance in flavour and experience. Often visited by regulars who enjoy familiarity.",
-    "subDescription": "",
-    "locations": [
+        name: "The South Indian Coffee House",
+        description:
+          "A space that celebrates heritage through simple rituals. Ideal for those who enjoy an old-world café experience.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Mylapore",
+            link: "https://maps.app.goo.gl/w9cXVfvfB3BFCDbG8",
+          },
+        ],
+      },
       {
-        "label": "Pallikaranai",
-        "link": "https://maps.app.goo.gl/9Ssqzk6mVoy5yqNGA"
-      }
-    ]
-  },
-  {
-    "name": "Dakshin Coffee Bar",
-    "description": "A traditional bar built around quick service and quality brews. Popular for efficient, flavour-forward coffee breaks.",
-    "subDescription": "",
-    "locations": [
+        name: "Ramani Coffee",
+        description:
+          "A quiet coffee stop focused on everyday routines. Known for being reliable and unpretentious.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Saidapet",
+            link: "https://maps.app.goo.gl/rCH7v3n6AkRBuXru6",
+          },
+        ],
+      },
       {
-        "label": "Alwarpet",
-        "link": ""
-      }
-    ]
-  },
-  {
-    "name": "Janatha Cafe",
-    "description": "A place that feels woven into daily life. Known for its steady pace and homely appeal.",
-    "subDescription": "",
-    "locations": [
+        name: "Sri Krishna Coffee House",
+        description:
+          "A café that values balance in flavour and experience. Often visited by regulars who enjoy familiarity.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Pallikaranai",
+            link: "https://maps.app.goo.gl/9Ssqzk6mVoy5yqNGA",
+          },
+        ],
+      },
       {
-        "label": "West Mambalam",
-        "link": ""
-      }
-    ]
-  },
-  {
-    "name": "Sri Sairam Cafe",
-    "description": "A small café centred around comfort and routine. Often chosen for a peaceful pause in the day.",
-    "subDescription": "",
-    "locations": [
+        name: "Dakshin Coffee Bar",
+        description:
+          "A traditional bar built around quick service and quality brews. Popular for efficient, flavour-forward coffee breaks.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "",
+          },
+        ],
+      },
       {
-        "label": "Tambaram",
-        "link": "https://maps.app.goo.gl/nGycA1CTq1UqeVmR7"
-      }
-    ]
-  },
-  {
-    "name": "Sundaram Coffee",
-    "description": "A coffee spot that keeps things traditional and focused. Known for its calm, understated presence.",
-    "subDescription": "",
-    "locations": [
+        name: "Janatha Cafe",
+        description:
+          "A place that feels woven into daily life. Known for its steady pace and homely appeal.",
+        subDescription: "",
+        locations: [
+          {
+            label: "West Mambalam",
+            link: "",
+          },
+        ],
+      },
       {
-        "label": "Mylapore",
-        "link": "https://maps.app.goo.gl/kBsxuJf6QV5JxRs3A"
-      }
-    ]
-  },
-  {
-    "name": "Krishna Cafe",
-    "description": "A heritage café that has stood the test of time. The experience here is rooted in simplicity.",
-    "subDescription": "",
-    "locations": [
+        name: "Sri Sairam Cafe",
+        description:
+          "A small café centred around comfort and routine. Often chosen for a peaceful pause in the day.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Tambaram",
+            link: "https://maps.app.goo.gl/nGycA1CTq1UqeVmR7",
+          },
+        ],
+      },
       {
-        "label": "Madipakkam",
-        "link": "https://maps.app.goo.gl/7GA5GtC4WnoxU6q88"
-      }
-    ]
-  },
-  {
-    "name": "Sangeetha Coffee Bar",
-    "description": "A familiar name for quick coffee stops. Often visited for its straightforward approach.",
-    "subDescription": "",
-    "locations": [
+        name: "Sundaram Coffee",
+        description:
+          "A coffee spot that keeps things traditional and focused. Known for its calm, understated presence.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Mylapore",
+            link: "https://maps.app.goo.gl/kBsxuJf6QV5JxRs3A",
+          },
+        ],
+      },
       {
-        "label": "Triplicane",
-        "link": "https://maps.app.goo.gl/uXNyV6V6voRnbxje9"
-      }
-    ]
-  },
+        name: "Krishna Cafe",
+        description:
+          "A heritage café that has stood the test of time. The experience here is rooted in simplicity.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Madipakkam",
+            link: "https://maps.app.goo.gl/7GA5GtC4WnoxU6q88",
+          },
+        ],
+      },
+      {
+        name: "Sangeetha Coffee Bar",
+        description:
+          "A familiar name for quick coffee stops. Often visited for its straightforward approach.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Triplicane",
+            link: "https://maps.app.goo.gl/uXNyV6V6voRnbxje9",
+          },
+        ],
+      },
 
-
-     
-     
       {
         name: "Duet Cafe",
         description:
@@ -1372,7 +1507,7 @@ const detailsections = [
           },
         ],
       },
-       
+
       {
         name: "Agarwal’s Dessi Khanna",
         description:
@@ -1665,7 +1800,7 @@ export default function Restaurants() {
               <h3> Restaurants in Chennai</h3>
               <div className="breadCrum">
                 <Link to="/visit-chennai">Visit </Link> -{" "}
-                <a href=""> Restaurants in Chennai  </a>
+                <a href=""> Restaurants in Chennai </a>
               </div>
             </div>
           </div>
@@ -1722,8 +1857,8 @@ export default function Restaurants() {
                     className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
                   >
                     <h3 className="text-xl font-semibold mb-2">{point.name}</h3>
-                    
-                     <TruncatedText text={point.description} limit={120} />
+
+                    <TruncatedText text={point.description} limit={120} />
 
                     {point.subDescription && (
                       <TruncatedText text={point.subDescription} limit={120} />

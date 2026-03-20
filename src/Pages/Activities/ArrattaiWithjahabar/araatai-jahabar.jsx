@@ -294,7 +294,7 @@ export default function ArattaiWithJahabar() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center space-y-4 py-10">
+            {/* <div className="flex flex-col items-center text-center space-y-4 py-10">
               <p className="text-rose-600 font-semibold tracking-wide">
                 Limited Seats Only • Register Now
               </p>
@@ -313,7 +313,7 @@ export default function ArattaiWithJahabar() {
               >
                 Register Now
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -489,9 +489,9 @@ export default function ArticleDetailPage() {
             {!loading && article && (
               <>
                 <div className="flex items-center gap-4 mb-2">
-                  {author?.authorImage ? (
+                  {author?.profileImage?.url ? (
                     <img
-                      src={withBaseUrl(author.authorImage.url)}
+                      src={withBaseUrl(author.profileImage.url)}
                       alt={author.name}
                       className="w-20 h-20 rounded-full object-cover"
                     />
@@ -521,29 +521,6 @@ export default function ArticleDetailPage() {
                       )}
                     </p>
                   </div>
-                  {/* <div className="ml-auto flex items-center gap-4 text-sm text-gray-600">
-                    <div className="flex items-center gap-1 text-gray-600 text-sm">
-                      <img src={ViewsIcon} alt="Views" className="w-4 h-4" />
-                      <span>{article.views}</span>
-                    </div>
-
-                    <button
-                      onClick={handleLike}
-                      disabled={hasLiked(article.id)}
-                      className={`flex items-center gap-1 transition ${hasLiked(article.id) ? "cursor-not-allowed" : "hover:scale-105"}`}
-                    >
-                      <img
-                        src={hasLiked(article.id) ? LikedIcon : NotLikedIcon}
-                        alt={hasLiked(article.id) ? "Liked" : "Not liked"}
-                        className="w-5 h-5"
-                      />
-                      <span
-                        className={`${hasLiked(article.id) ? "text-gray-400" : "text-red-600"}`}
-                      >
-                        {article.likes}
-                      </span>
-                    </button>
-                  </div> */}
                 </div>
                 <div className="space-y-6">
                   {visibleBlocks.map((block, index) => {

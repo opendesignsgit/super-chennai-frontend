@@ -370,26 +370,33 @@ export const two = [
 
 
 export const newsArticle = [
+  {
+    id: -7221221327,
+    Company: "The Hindu Business line | 22 Mar 2026,",
+    EventsCalendarTitle:
+      "Chai Kings brews expansion plans; eyes fresh fundraise’",
+    image: "/images/media-coverage-jaiking.jpeg",
+    link: "https://www.thehindubusinessline.com/companies/chai-kings-brews-expansion-plans-eyes-fresh-fundraise/article70771967.ece/amp/",
+  },
 
-   {
+  {
     id: -72212217,
     Company: "new indian express  | 05 Mar 2026,",
-    EventsCalendarTitle:
-      "Super Chennai: Aruna Sairam in a candid coversation’",
+    EventsCalendarTitle: "Super Chennai: Aruna Sairam in a candid coversation’",
     image: "/images/newIndianExpress.png",
     link: "https://www.newindianexpress.com/cities/chennai/2026/Mar/05/super-chennai-aruna-sairam-in-a-candid-coversation",
   },
-   {
+  {
     id: -7221221,
     Company: "medianews4u  | March 2, 2026",
     EventsCalendarTitle:
       "Aruna Sairam headlines the inaugural Super Chennai Arattai and is honoured as ‘Icon of the Month’",
-        image: "/images/4u-news.png",
+    image: "/images/4u-news.png",
 
     link: "https://www.medianews4u.com/aruna-sairam-headlines-the-inaugural-super-chennai-arattai-and-is-honoured-as-icon-of-the-month/",
   },
 
-      {
+  {
     id: -722122,
     Company: "passionatein marketing | 2nd march, 2026",
     EventsCalendarTitle:
@@ -397,15 +404,14 @@ export const newsArticle = [
     image: "/images/passontae-marketting-aruna.png",
     link: "https://www.passionateinmarketing.com/music-memories-and-meaningful-conversations-padma-shri-aruna-sairam-interacts-with-admirers-at-the-inaugural-super-chennai-arattai/",
   },
-      {
+  {
     id: -72212,
     Company: "passionatein marketing March 7, 2026",
-    EventsCalendarTitle:
-      "Super Chennai Launches ‘Super Chennai Manifesto 2026",
+    EventsCalendarTitle: "Super Chennai Launches ‘Super Chennai Manifesto 2026",
     image: "/images/superchennai-logo-news.jpeg",
     link: "https://www.passionateinmarketing.com/super-chennai-launches-super-chennai-manifesto-2026/",
   },
-      {
+  {
     id: -7212,
     Company: "medianews4u March 7, 2026",
     EventsCalendarTitle:
@@ -414,7 +420,7 @@ export const newsArticle = [
     link: "https://www.medianews4u.com/super-chennai-unveils-super-chennai-manifesto-2026-to-build-a-global-resilient-and-future-ready-city/",
   },
 
-    {
+  {
     id: -7,
     Company: "DtNext - Feb 19, 2016",
     EventsCalendarTitle:

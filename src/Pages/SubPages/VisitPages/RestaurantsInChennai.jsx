@@ -18,6 +18,31 @@ const detailsections = [
     id: 3,
     title: "Global & Continental Cuisine",
     points: [
+
+        {
+        "name": "Pan Sauce Poetry",
+        "date": "23/03/2026",
+        "description": "A cozy European-style restaurant in R.A. Puram known for handmade pastas and artisanal sauces.",
+        "subDescription": "Features a bohemian-chic vibe and affordable fine dining experience.",
+        "locations": [
+          {
+            "label": "Raja Annamalaipuram",
+            "link": "https://maps.app.goo.gl/2wfy7TMueSdGCJ9x7"
+          }
+        ]
+      },
+      {
+        "name": "Vasco’s",
+        "date": "23/03/2026",
+        "description": "A premium all-day dining restaurant at Hilton Chennai serving global cuisine.",
+        "subDescription": "Known for live cooking stations, Sunday brunch, and modern interiors.",
+        "locations": [
+          {
+            "label": "Guindy",
+            "link": "https://maps.app.goo.gl/94CY9ukyC8rxHdT27"
+          }
+        ]
+      },
       {
         name: "The Great Escape Restaurant",
         description:
@@ -286,7 +311,6 @@ const detailsections = [
           },
         ],
       },
-
       {
         name: "Za Pizza Café",
         description:
@@ -306,6 +330,118 @@ const detailsections = [
     id: 4,
     title: "Asian Cuisine",
     points: [
+       {
+        "name": "Zhouyu - A Chinese Kitchen",
+        "date": "23/03/2026",
+        "description": "Upscale restaurant serving authentic Sichuan, Hunan, and Cantonese cuisine.",
+        "subDescription": "Popular for dim sums, claypot rice, and hand-pulled noodles.",
+        "locations": [
+          {
+            "label": "Alwarpet",
+            "link": "https://maps.app.goo.gl/NU3CtzUcDYxDYFKy6"
+          }
+        ]
+      },
+      {
+        "name": "China XO",
+        "date": "22/03/2026",
+        "description": "Premium dining at The Leela Palace with authentic Cantonese and Sichuan cuisine.",
+        "subDescription": "Known for sea views, dim sum kitchen, and signature Peking duck.",
+        "locations": [
+          {
+            "label": "Raja Annamalaipuram",
+            "link": "https://maps.app.goo.gl/52jMu3dETPfyDjft7"
+          }
+        ]
+      },
+      {
+        "name": "Chapy Chay",
+        "date": "23/03/2026",
+        "description": "Interactive Asian dining experience with build-your-own stir-fry.",
+        "subDescription": "Elegant red-themed ambiance with customizable meals.",
+        "locations": [
+          {
+            "label": "Alwarpet",
+            "link": "https://maps.app.goo.gl/YMCmQtmPru7drjuT6"
+          }
+        ]
+      },
+      {
+        "name": "Mainland China",
+        "date": "23/03/2026",
+        "description": "Popular chain offering Chinese, Thai, and Asian cuisine.",
+        "subDescription": "Known for buffets, Crackling Spinach, and premium dining experience.",
+        "locations": [
+          {
+            "label": "Teynampet",
+            "link": "https://maps.app.goo.gl/WcYTcdUPRogxLEdr8"
+          }
+        ]
+      },
+      {
+        "name": "Golden Dragon",
+        "date": "23/03/2026",
+        "description": "Award-winning fine dining Chinese restaurant.",
+        "subDescription": "Famous for Peking duck, dim sums, and premium tea selection.",
+        "locations": [
+          {
+            "label": "Nungambakkam",
+            "link": "https://maps.app.goo.gl/Vv5XRCsmYadQocmUA"
+          }
+        ]
+      },
+      {
+        "name": "Samchon Bunsik",
+        "date": "23/03/2026",
+        "description": "Authentic Korean street food restaurant.",
+        "subDescription": "Popular for tteokbokki, corndogs, and Korean fried chicken.",
+        "locations": [
+          {
+            "label": "Thiruvanmiyur",
+            "link": "https://maps.app.goo.gl/RSJSvbgSQX5kRG7d9"
+          }
+        ]
+      },
+      {
+        "name": "North East Kitchen",
+        "date": "23/03/2026",
+        "description": "Authentic Northeast Indian and Korean cuisine.",
+        "subDescription": "Known for pork dishes, momos, and thukpa.",
+        "locations": [
+          {
+            "label": "Egmore",
+            "link": "https://maps.app.goo.gl/VTy85VTvgzcGyBM47"
+          },
+          {
+            "label": "Adyar",
+            "link": "https://maps.app.goo.gl/7oMjwmKVzvC3SBbP8"
+          }
+        ]
+      },
+      {
+        "name": "Enoki Pan Asian Story",
+        "date": "23/03/2026",
+        "description": "Pan-Asian restaurant offering sushi, dim sums, and curries.",
+        "subDescription": "Great for casual dining and date nights.",
+        "locations": [
+          {
+            "label": "Egmore",
+            "link": "https://maps.app.goo.gl/5CVHiFmxgmQU9h286"
+          }
+        ]
+      },
+      {
+        "name": "Asian Hive",
+        "date": "23/03/2026",
+        "description": "Award-winning Pan-Asian restaurant.",
+        "subDescription": "Serves Thai, Chinese, Japanese dishes including ramen and dumplings.",
+        "locations": [
+          {
+            "label": "Anna Nagar",
+            "link": "https://maps.app.goo.gl/ckyZ7KxHrsDnJCYj6"
+          }
+        ]
+      },
       {
         name: "Jalpaan",
         description:
@@ -441,6 +577,91 @@ const detailsections = [
     title: "Cafés & Casual Bites",
     points: [
       // NEW ADDED
+
+         {
+        "name": "The Cozy Nook",
+        "date": "23/03/2026",
+        "description": "Vegetarian multi-cuisine café with a cozy ambiance.",
+        "subDescription": "Great for board games and relaxed meetups.",
+        "locations": [
+          {
+            "label": "Kilpauk",
+            "link": "https://maps.app.goo.gl/tKSud3grQJbcMRJ36"
+          }
+        ]
+      },
+      {
+        "name": "Amora",
+        "date": "23/03/2026",
+        "description": "Trendy café with pizzas, pasta, burgers, and beverages.",
+        "subDescription": "Known for aesthetic interiors and relaxed vibe.",
+        "locations": [
+          {
+            "label": "Anna Nagar",
+            "link": "https://maps.app.goo.gl/PHD2SSwdzpG5mK1aA"
+          }
+        ]
+      },
+      {
+        "name": "Bold Coffee",
+        "date": "23/03/2026",
+        "description": "Pet-friendly café with specialty brews.",
+        "subDescription": "Famous for edible cups and creative coffee options.",
+        "locations": [
+          {
+            "label": "T Nagar",
+            "link": "https://maps.app.goo.gl/5A7ZsfcFVjApgfj17"
+          }
+        ]
+      },
+      {
+        "name": "Amadora",
+        "date": "23/03/2026",
+        "description": "Premium dessert spot offering artisanal ice creams and sorbets.",
+        "subDescription": "Known for unique flavors and indulgent desserts.",
+        "locations": [
+          {
+            "label": "T Nagar",
+            "link": "https://maps.app.goo.gl/MZHytD3EreWfrhyx8"
+          }
+        ]
+      },
+      {
+        "name": "The Open Cup",
+        "date": "23/03/2026",
+        "description": "Garden-themed café with cozy glasshouse vibe.",
+        "subDescription": "Known for grills, desserts, and scenic seating.",
+        "locations": [
+          {
+            "label": "Chetpet",
+            "link": "https://maps.app.goo.gl/9bhrrDL63uuj53CM6"
+          }
+        ]
+      },
+      {
+        "name": "Aarzoo",
+        "date": "23/03/2026",
+        "description": "Late-night vegetarian café with aesthetic interiors.",
+        "subDescription": "Offers desserts, Wi-Fi workspace, and social impact initiative.",
+        "locations": [
+          {
+            "label": "Nungambakkam",
+            "link": "https://maps.app.goo.gl/haNgCTwPoqVuUnu58"
+          }
+        ]
+      },
+      {
+        "name": "Dinevo",
+        "date": "23/03/2026",
+        "description": "Hidden rooftop café with budget-friendly meals.",
+        "subDescription": "Offers DIY bowls, wraps, and desserts.",
+        "locations": [
+          {
+            "label": "Nungambakkam",
+            "link": "https://maps.app.goo.gl/7Upz4fyPN9LQzayq6"
+          }
+        ]
+      },
 
       {
         name: "Southwest Coffee Roasters",
@@ -1127,6 +1348,20 @@ const detailsections = [
     title: "Beachside & Rooftop Dining",
     points: [
       {
+        name: "China XO",
+        date: "22/03/2026",
+        description:
+          "A premium restaurant at The Leela Palace offering authentic Cantonese and Sichuan cuisine with stunning sea views.",
+        subDescription:
+          "Famous for its elegant interiors, interactive dim sum kitchen, and signature Peking duck.",
+        locations: [
+          {
+            label: "Raja Annamalaipuram",
+            link: "https://maps.app.goo.gl/52jMu3dETPfyDjft7",
+          },
+        ],
+      },
+      {
         name: "11 Reserve",
         description:
           "An upscale lounge with a classy vibe, known for its crafted drinks and gourmet menu. A perfect mix of sophistication and comfort.",
@@ -1138,7 +1373,6 @@ const detailsections = [
           },
         ],
       },
-
       {
         name: "Flamingo",
         description:
@@ -1244,6 +1478,18 @@ const detailsections = [
     id: 1,
     title: "South Indian Classics",
     points: [
+         {
+        "name": "Cookgramam",
+        "date": "23/03/2026",
+        "description": "Organic vegetarian restaurant serving traditional Tamil cuisine.",
+        "subDescription": "Farm-to-table concept with millet-based dishes.",
+        "locations": [
+          {
+            "label": "Anna Nagar",
+            "link": "https://maps.app.goo.gl/c2VeAnt6Xkayuj3a6"
+          }
+        ]
+      },
       {
         name: "Daily Innings Kafe",
         description:
@@ -1495,6 +1741,32 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
+      {
+        name: "The New Punjab Club",
+        date: "23/03/2026",
+        description: "Premium North West Frontier cuisine restaurant.",
+        subDescription:
+          "Known for Raan-e-Nishat and elegant colonial ambiance.",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/rCgTf8snRv3hk6gY6",
+          },
+        ],
+      },
+      {
+        name: "Olive Greenz Multicuisine Restaurant",
+        date: "23/03/2026",
+        description:
+          "New multi-cuisine restaurant with Indian, Asian, and Italian dishes.",
+        subDescription: "Modern dining experience in T Nagar.",
+        locations: [
+          {
+            label: "T Nagar",
+            link: "https://maps.app.goo.gl/N7ejcmzUuFFzGX2EA",
+          },
+        ],
+      },
       {
         name: " Luma Lounge",
         description:
@@ -1781,6 +2053,17 @@ export default function Restaurants() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isNewBatch = (dateStr) => {
+    if (!dateStr) return false;
+
+    const [day, month, year] = dateStr.split("/").map(Number);
+    const itemDate = new Date(year, month - 1, day);
+
+    const cutoffDate = new Date(2026, 2, 30); // 30 March 2026
+
+    return itemDate <= cutoffDate;
+  };
+
   return (
     <>
       <Helmet>
@@ -1854,8 +2137,15 @@ export default function Restaurants() {
                 {section.points.map((point, idx) => (
                   <div
                     key={idx}
-                    className="card p-5 border rounded-2xl shadow hover:shadow-lg transition bg-white"
+                    className={`card relative p-5 border rounded-2xl shadow transition bg-white
+  ${isNewBatch(point.date) ? "animate-fadeInUp" : ""}`}
                   >
+                    {isNewBatch(point.date) && (
+                      <span className="absolute top-3 right-3 bg-green-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
+                        NEW
+                      </span>
+                    )}
+
                     <h3 className="text-xl font-semibold mb-2">{point.name}</h3>
 
                     <TruncatedText text={point.description} limit={120} />

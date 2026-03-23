@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useRef } from "react";
+import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { API_BASE_URL } from "../../../../config";
 import { useArticleBySlug } from "../hooks/useArticles";
 import "../style.css";
 import { useLocation } from "react-router-dom";
 import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
+import ViewsIcon from "../../../../public/images/icons/blog-views.svg";
 
 /* ==============================
    HELPERS
@@ -208,23 +210,6 @@ const AdBox = ({ ads, onAllClosed }) => {
   );
 };
 
-// const BottomAdBox = ({ ads }) => {
-//   const [show, setShow] = useState(true);
-//   if (!show || !ads?.length) return null;
-
-//   const ad = ads[0];
-
-//   return (
-//     <div className="fixed bottom-0 inset-x-0 bg-white border-t shadow-lg z-50">
-//       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-//         <AdMedia ad={ad} className="mb-2 h-19 rounded" />
-
-//         <p className="font-semibold text-sm p-5">{ad.title}</p>
-//         <button onClick={() => setShow(false)}>✕</button>
-//       </div>
-//     </div>
-//   );
-// };
 
 
 const BottomAdBox = ({ ads }) => {
@@ -359,6 +344,7 @@ const InlineAdBox = ({ ads }) => {
   );
 };
 
+
 /* ==============================
    PAGE
 ============================== */
@@ -413,7 +399,42 @@ export default function ArticleDetailPage() {
 
   const visibleBlocks = expanded ? blocks : blocks.slice(0, 12);
 
-  const author = article?.populatedAuthors?.[0];
+  const author =
+  article?.populatedAuthors?.[0] ||
+  article?.authors?.[0] ||
+  null;
+  
+  const hasViewed = useRef(false);
+  
+
+
+    const [localArticle, setLocalArticle] = useState(null);
+
+    useEffect(() => {
+      setLocalArticle(article);
+    }, [article]);
+
+
+  /* ---------------------------------------------
+    INCREMENT VIEW (RUNS ONLY ONCE)
+ --------------------------------------------- */
+ useEffect(() => {
+  if (!localArticle?.id || hasViewed.current) return;
+
+  hasViewed.current = true;
+
+  axios
+    .patch(`${API_BASE_URL}/api/articles/${localArticle.id}`, {
+      views: (localArticle.views || 0) + 1,
+    })
+    .catch(() => {});
+
+  setLocalArticle((prev) => ({
+    ...prev,
+    views: (prev?.views || 0) + 1,
+  }));
+}, [localArticle?.id]);
+
 
   return (
     <>
@@ -520,6 +541,12 @@ export default function ArticleDetailPage() {
                         },
                       )}
                     </p>
+                  </div>
+                  <div className="ml-auto flex items-center gap-4 text-sm text-gray-600">
+                    <div className="flex items-center gap-1 text-gray-600 text-sm">
+                      <img src={ViewsIcon} alt="Views" className="w-4 h-4" />
+                      <span>{article.views}</span>
+                    </div>
                   </div>
                 </div>
                 <div className="space-y-6">

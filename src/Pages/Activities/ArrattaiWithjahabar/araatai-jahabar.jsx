@@ -195,8 +195,6 @@ const registerRef = useRef(null);
     registerRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-
-
  const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
   const bgTextRef = useRef(null);

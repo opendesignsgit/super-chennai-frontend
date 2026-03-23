@@ -580,12 +580,12 @@ const hideOnJahabarPage = location.pathname === "/arattai-with-jahabar-sadique/c
 
           {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-          {isHomePage && showPopup && (
+          {/* {isHomePage && showPopup && (
             <ImagePopup
               imageUrl="/images/popup-banner-chaikings.jpeg"
               onClose={() => setShowPopup(false)}
             />
-          )}
+          )} */}
 
           {/* )} */}
 

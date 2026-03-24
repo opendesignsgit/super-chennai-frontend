@@ -23,6 +23,9 @@ import EmploymentinChennai from "./Pages/SubPages/LivePages/EmploymentinChennai"
 import FutureGrowthDevelopment from "./Pages/SubPages/LivePages/FutureGrowthDevelopment";
 import Healthcare from "./Pages/SubPages/LivePages/Healthcare";
 import Neighbourhood from "./Pages/SubPages/LivePages/Neighbourhood";
+import ChennaiNeighbourhood from "./Pages/ChennaiNeighbourhoods/pages/Neighbourhood";
+
+
 import QualityofLife from "./Pages/SubPages/LivePages/QualityofLife";
 import Recreation from "./Pages/SubPages/LivePages/Recreation";
 import ResidencyPropertyRentBuyinChennai from "./Pages/SubPages/LivePages/ResidencyPropertyRentBuyinChennai";
@@ -882,6 +885,11 @@ const hideOnJahabarPage = location.pathname === "/arattai-with-jahabar-sadique/c
               path="/neighbourhood/:slug"
               element={<NeighbourhoodDetail />}
             />
+           
+               <Route path="/ChennaiNeighbourhood" element={<ChennaiNeighbourhood />} />
+
+
+            
             {/* 404 Page */}
             <Route path="*" element={<NotFound />} />
 

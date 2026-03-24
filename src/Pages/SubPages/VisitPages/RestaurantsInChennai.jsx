@@ -2141,7 +2141,7 @@ export default function Restaurants() {
   ${isNewBatch(point.date) ? "animate-fadeInUp" : ""}`}
                   >
                     {isNewBatch(point.date) && (
-                      <span className="absolute top-3 right-3 bg-green-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
+<span className="absolute top-3 right-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
                         NEW
                       </span>
                     )}

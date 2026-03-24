@@ -26,34 +26,30 @@ export default function ChennaiNeighbourhood() {
       .replace(/th/g, "t")
       .replace(/dh/g, "d");
   }
-   /* SEARCH + ALPHABET FILTER */
-const filteredLocations = useMemo(() => {
-  let result = locations || [];
+  
+  /* SEARCH + ALPHABET FILTER */
+  const filteredLocations = useMemo(() => {
+    let result = locations || [];
 
-  if (filters.alpha) {
-    result = result.filter(loc =>
-      loc.locality?.toUpperCase().startsWith(filters.alpha)
-    );
-  }
-
-  if (filters.q) {
-    const q = normalize(filters.q);
-
-    result = result.filter(loc => {
-      const name = normalize(loc.locality);
-      const pin = loc.pincode?.toString();
-
-      return (
-        name.includes(q) || 
-        q.includes(name) || 
-        pin?.includes(filters.q)
+    if (filters.alpha) {
+      result = result.filter((loc) =>
+        loc.locality?.toUpperCase().startsWith(filters.alpha),
       );
-    });
-  }
+    }
 
-  return result;
+    if (filters.q) {
+      const q = normalize(filters.q);
 
-}, [locations, filters]);
+      result = result.filter((loc) => {
+        const name = normalize(loc.locality);
+        const pin = loc.pincode?.toString();
+
+        return name.includes(q) || q.includes(name) || pin?.includes(filters.q);
+      });
+    }
+
+    return result;
+  }, [locations, filters]);
 
   return (
     <div>
@@ -114,11 +110,11 @@ const filteredLocations = useMemo(() => {
 
       <section className="mt-10 bg-white">
         <div className="container mx-auto px-6 lg:px-0">
-      <AreaFilter
-        data={filteredLocations}
-        onChange={(v) => updateFilter("location", v)}
-      />
-      </div>
+          <AreaFilter
+            data={filteredLocations}
+            onChange={(v) => updateFilter("location", v)}
+          />
+        </div>
       </section>
     </div>
   );

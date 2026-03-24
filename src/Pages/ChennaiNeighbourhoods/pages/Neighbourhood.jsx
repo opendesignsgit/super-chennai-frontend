@@ -16,25 +16,16 @@ export default function ChennaiNeighbourhood() {
     location: filters.location,
   });
 
-  /* alphabet filter only for locations */
-  // const filteredLocations = useMemo(() => {
-  //   if (!filters.alpha) return locations;
-
-  //   return locations?.filter((loc) =>
-  //     loc.locality?.toUpperCase().startsWith(filters.alpha),
-  //   );
-  // }, [locations, filters.alpha]);
-
-function normalize(str = "") {
-  return str
-    .toLowerCase()
-    .replace(/\s+/g, "")
-    .replace(/aa/g, "a")
-    .replace(/oo/g, "o")
-    .replace(/ee/g, "e")
-    .replace(/th/g, "t")
-    .replace(/dh/g, "d")
-}
+  function normalize(str = "") {
+    return str
+      .toLowerCase()
+      .replace(/\s+/g, "")
+      .replace(/aa/g, "a")
+      .replace(/oo/g, "o")
+      .replace(/ee/g, "e")
+      .replace(/th/g, "t")
+      .replace(/dh/g, "d");
+  }
    /* SEARCH + ALPHABET FILTER */
 const filteredLocations = useMemo(() => {
   let result = locations || [];
@@ -121,11 +112,6 @@ const filteredLocations = useMemo(() => {
         </div>
       </section>
 
-      {/* SEARCH */}
-      {/* <Search onSearch={(q) => updateFilter("location", q)} /> */}
-
-      {/* AREA */}
-      
       <section className="mt-10 bg-white">
         <div className="container mx-auto px-6 lg:px-0">
       <AreaFilter

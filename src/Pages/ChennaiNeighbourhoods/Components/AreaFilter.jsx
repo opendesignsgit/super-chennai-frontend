@@ -56,7 +56,7 @@ const FALLBACK =
 export default function AreaFilter({ data, onChange }) {
   return (
     <div className="mb-10">
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="neighbiurnewcards">
         {data?.map((loc) => {
 
           const imageUrl = loc?.image?.url
@@ -67,35 +67,36 @@ export default function AreaFilter({ data, onChange }) {
             <div
               key={loc.id}
               onClick={() => onChange(loc.locality)}
-              className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl cursor-pointer transition"
+              className="neighbourcardnew"
             >
               {/* image */}
-              <div className="h-52 overflow-hidden">
+          
                 <img
                   src={imageUrl}
-                  className="w-full h-full object-cover"
+                  className="neighimg"
                   alt={loc.locality}
                 />
-              </div>
+           
 
               {/* content */}
-              <div className="p-4">
-                <h3 className="text-purple-600 font-bold text-lg uppercase">
+              <div className="carcontentsnew">
+                <h4 className="text-purple-600 font-bold text-lg uppercase">
                   {loc.locality}
-                </h3>
+                </h4>
 
-                <p className="text-gray-600 text-sm mt-1">
+                <h5 className="text-gray-600 text-sm mt-1 pincodestyle">
                   {loc.label}
-                </p>
+                </h5>
+
+              <div className="readmorelink">
+                <a className="">
+                  READMORE
+                </a>
+              </div>
               </div>
 
-              <div className="border-t" />
 
-              <div className="p-4">
-                <span className="text-gray-500 text-sm tracking-widest font-semibold">
-                  READ MORE
-                </span>
-              </div>
+
             </div>
           );
         })}

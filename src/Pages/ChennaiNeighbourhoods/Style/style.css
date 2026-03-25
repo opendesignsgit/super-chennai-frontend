@@ -1,0 +1,187 @@
+
+
+.alpabutton  {
+    width: 50px;
+    height: 50px;
+    background: none;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    border-right: 1px solid #acacac;
+}
+
+.alpabutton:first-child
+{
+    padding-left: 10px;
+}
+
+
+.alpabutton:last-child
+{
+    padding-right: 10px;
+        border-right: none;
+}
+
+.alphapetfiltersection {
+        margin-top: 60px;
+}
+
+.alphapetfiltersection .girdcolumn {
+    border: 2px solid #d7b1d2;
+    border-radius: 50px;
+}
+
+
+.alpabutton.activebuttonalpha  {
+    background: #995099;
+    border-radius: 0;
+    color: #fff;
+}
+
+.alpabutton.activebuttonalpha:first-child {
+     border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.alpabutton.activebuttonalpha:last-child {
+     border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+
+
+.searchhoodfilter {
+    max-width: 800px;
+    border-radius: 50px;
+    border: 2px solid #d6b1d3;
+    height: 65px;
+     padding-left: 50px;
+    font-size: 18px ;
+    font-family: "29LT Bukra Regular";
+    color: #505050;
+     font-weight: 700;
+}
+
+.searchhoodfilter:focus-visible {
+    outline: none;
+}
+
+.searchhoodfilter::placeholder {
+    font-size: 18px;
+     font-family: "29LT Bukra Regular";
+     color: #505050;
+     font-weight: 700;
+   
+    letter-spacing: 1px;
+
+}
+
+.filtersearchnew {
+    justify-content: center;
+}
+
+.filtersearchnewmain {
+    position: relative;
+    margin-top: 50px;
+}
+
+.searchbuttonfilt {
+    font-family: "29LT Bukra Regular";
+    background-color: #995099;
+    width: 14%;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    height: 56px;
+    right: 17.5%;
+    top: 3.9px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.carcontentsnew {
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+.neighbiurnewcards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  padding-bottom: 40px;
+  row-gap: 40px;
+}
+
+.neighbourcardnew {
+  width: 32%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom: 3.5px solid #6e6e6e;
+   transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.neighbourcardnew:hover {
+     border-bottom: 3.5px solid #99509c;
+     cursor: pointer;
+    transform: translateY(-10px); /* 👈 moves up */
+}
+
+
+
+.neighimg {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 210px;
+}
+
+.carcontentsnew h4 {
+  font-family: "29LT Bukra SmBd";
+  color: #8f4f94;
+  font-size: 25px;
+  line-height: 1;
+  padding-left: 30px;
+}
+
+.carcontentsnew h5 {
+  font-family: "29LT Bukra Regular";
+  color: #000;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 500;
+  margin-top: 10px;
+  padding-left: 35px;
+}
+
+.readmorelink a {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #6b6b6b;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-left: 40px;
+  transition: 0.4s ease;
+}
+
+.readmorelink {
+    padding-top: 13px;
+    border-top: 1px solid #e1e1e4;
+    width: 100%;
+    margin-top: 17px;
+}
+
+.carcontentsnew .pincodestyle {
+  font-size: 17px;
+}
+
+.neighbourcardnew:hover .readmorelink a{
+    color: #9e4590;
+    font-size: 17px;
+    font-weight: 600;
+}

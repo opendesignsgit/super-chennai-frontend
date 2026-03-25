@@ -11,19 +11,18 @@ export default function AlphabetFilter({ onChange }) {
   };
 
   return (
-    <div className="mb-6">
-      <div className="bg-[#f3f3f6] rounded-full p-1 overflow-x-auto">
-        <div className="grid grid-cols-26 min-w-[900px]">
+    <div className="mb-6 alphapetfiltersection">
+        <div className="girdcolumn grid grid-cols-26">
           {letters.map((l) => (
             <button
               key={l}
               onClick={() => handleClick(l)}
-              className={`
+              className={`alpabutton
                 text-sm py-2
                 border-r last:border-r-0
                 border-gray-300
                 ${active === l
-                  ? "bg-purple-600 text-white rounded-md"
+                  ? "activebuttonalpha bg-purple-600 text-white rounded-md"
                   : "text-gray-700 hover:bg-gray-200"}
               `}
             >
@@ -32,6 +31,5 @@ export default function AlphabetFilter({ onChange }) {
           ))}
         </div>
       </div>
-    </div>
   );
 }

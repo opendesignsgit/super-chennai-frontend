@@ -326,6 +326,10 @@ import VerifyOTPPms from "./Pages/login/VerifyOTP";
 import ExploreDiscovery from "./Pages/Explore/ExploreDiscovery";
 import IconofthemonthMarchKamakotti from "./Pages/Icon-of-the-month-march-26";
 import ArattaiWithKamakotti from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakotti";
+import ArattaikamakotiExcelView from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakoti-excel";
+
+
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -850,6 +854,13 @@ function App() {
           path="/arattai-with-kamakoti/iit-madras-director"
           element={<ArattaiWithKamakotti />}
         />
+
+        
+         <Route
+          path="/arattai-with-kamakoti/iit-madras-director-admin-entry-oiuyterwqasvcxzdsw/refdewsdfettwfsvvdg/8728272/lmnjhscbnmdt"
+          element={<ArattaikamakotiExcelView />}
+        />
+
 
         <Route
           path="/arattai-with-jahabar-sadique/chai-kings-founder-admin-all-entry"

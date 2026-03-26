@@ -44,7 +44,7 @@ export default function ArattaiWithKamakotti() {
       setLoading(true);
 
       await axios.post(
-        `${API_BASE_URL_API}/arattai-Jahabar/arattai-jahabar/send-otp`,
+        `${API_BASE_URL_API}/arattai-kamakoti/arattai-kamakoti/send-otp`,
         {
           phone: `${form.countryCode}${form.phone}`,
         },
@@ -88,7 +88,7 @@ export default function ArattaiWithKamakotti() {
       setLoading(true);
 
       await axios.post(
-        `${API_BASE_URL_API}/arattai-Jahabar/arattai-jahabar/verify-otp`,
+        `${API_BASE_URL_API}/arattai-kamakoti/arattai-kamakoti/verify-otp`,
         payload,
       );
 
@@ -105,7 +105,7 @@ export default function ArattaiWithKamakotti() {
         organisation: "",
       });
 
-      navigate("/thank-you", { state: { from: "jahabar" } });
+      navigate("/thank-you", { state: { from: "kamakoti" } });
     } catch (err) {
       toast.error(err?.response?.data?.message || "OTP verification failed");
     } finally {
@@ -319,7 +319,7 @@ export default function ArattaiWithKamakotti() {
               </p>
             </div>
 
-            {/* <div className="flex flex-col items-center text-center space-y-4 py-10">
+            <div className="flex flex-col items-center text-center space-y-4 py-10">
               <p className="text-rose-600 font-semibold tracking-wide">
                 Limited Seats Only • Register Now
               </p>
@@ -338,7 +338,7 @@ export default function ArattaiWithKamakotti() {
               >
                 Register Now
               </button>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>

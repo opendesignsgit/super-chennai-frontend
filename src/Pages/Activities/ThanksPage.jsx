@@ -25,12 +25,20 @@ export default function Thankyou() {
     else if (from === "manifesto-info") {
       setImageSrc(
         isMobile
-          ? "/images/mobile-thanky-banner-manifesto.jpeg"
-          : "/images/thankyou-banner-manifesto.jpeg"
+          ? "/images/kamakoti-mobile-thanks.jpeg"
+          : "/images/kamakoti-desktop-thanks.jpeg"
       );
     } 
     
-    else if (from === "jahabar") {
+    else if (from === "kamakoti") {
+      setImageSrc(
+        isMobile
+          ? "/images/mobile-chaikings-tq-banner-f-1.png"
+          : "/images/tq-chaikings-banner-f.jpeg"
+      );
+    } 
+
+      else if (from === "jahabar") {
       setImageSrc(
         isMobile
           ? "/images/mobile-chaikings-tq-banner-f-1.png"
@@ -44,6 +52,8 @@ export default function Thankyou() {
       else
         setImageSrc("/images/thankyou-banner-manifesto.jpeg");
     }
+
+    
   };
 
   handleResize();
@@ -142,8 +152,7 @@ export default function Thankyou() {
 
   return (
     <>
-      <section  className=" carquizbanner relative overflow-hidden cursor-pointer akbaralipage"
->
+      <section className=" carquizbanner relative overflow-hidden cursor-pointer akbaralipage">
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
@@ -157,8 +166,7 @@ export default function Thankyou() {
           />
         </div>
 
-        <div className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer akbaralipage"
->
+        <div className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer akbaralipage">
           <div className="accodoamationBannerText">
             <h1></h1>
             <AutoShrinkText
@@ -218,6 +226,22 @@ export default function Thankyou() {
 
               <p>
                 Thank you for registering for Arattai with Jahabar Sadique. Your
+                submission has been successfully received, and our team is
+                currently reviewing your registration. If your entry is
+                selected, you will receive an official confirmation email from
+                Team Super Chennai with further details about the event. Please
+                note that your participation will be considered confirmed only
+                after you receive the confirmation email. We appreciate your
+                interest and look forward to connecting with you soon.
+              </p>
+            </div>
+          )}
+
+          {from === "kamakoti" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+              <p>
+                Thank you for registering for Arattai with kamakoti. Your
                 submission has been successfully received, and our team is
                 currently reviewing your registration. If your entry is
                 selected, you will receive an official confirmation email from

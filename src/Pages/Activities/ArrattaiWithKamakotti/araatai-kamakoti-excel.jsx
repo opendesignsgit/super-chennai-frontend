@@ -3,13 +3,13 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { formatDateTime } from "../QuizGame/utils/dateTime";
 
-export default function ArattaiJahabarExcelView() {
+export default function ArattaikamakotiExcelView() {
 
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
     const res = await axios.get(
-      "https://api.superchennai.com/api/arattai-Jahabar/arattai-jahabar"
+      "https://api.superchennai.com/arattai-kamakoti/arattai-kamakoti"
     );
 
     if (res.data?.success) {

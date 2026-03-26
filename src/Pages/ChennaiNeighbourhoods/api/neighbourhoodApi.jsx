@@ -7,6 +7,7 @@ const API = axios.create({
 export const getNeighbourhood = (params) =>
   API.get("/neighbourhood", { params })
 
+
 export const getCategories = () =>
   API.get("/neighbourhood-categories")
 

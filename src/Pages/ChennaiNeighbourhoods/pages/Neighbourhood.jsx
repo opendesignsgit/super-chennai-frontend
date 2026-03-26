@@ -1,16 +1,13 @@
 import React, { useState, useMemo } from "react";
-
 import AreaFilter from "../Components/AreaFilter";
 import AlphabetFilter from "../Components/AlphabetFilter";
 import Search from "../Components/Search";
-
 import { useNeighbourhood } from "../hooks/useNeighbourhood";
 import { useLocations } from "../hooks/useLocations";
 import { useSearch } from "../hooks/useSearch";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-
-import "../Style/style.css"
+import "../Style/style.css";
 
 export default function ChennaiNeighbourhood() {
   const { filters, updateFilter } = useSearch();
@@ -30,34 +27,29 @@ export default function ChennaiNeighbourhood() {
       .replace(/th/g, "t")
       .replace(/dh/g, "d");
   }
-   /* SEARCH + ALPHABET FILTER */
-const filteredLocations = useMemo(() => {
-  let result = locations || [];
+  /* SEARCH + ALPHABET FILTER */
+  const filteredLocations = useMemo(() => {
+    let result = locations || [];
 
-  if (filters.alpha) {
-    result = result.filter(loc =>
-      loc.locality?.toUpperCase().startsWith(filters.alpha)
-    );
-  }
-
-  if (filters.q) {
-    const q = normalize(filters.q);
-
-    result = result.filter(loc => {
-      const name = normalize(loc.locality);
-      const pin = loc.pincode?.toString();
-
-      return (
-        name.includes(q) || 
-        q.includes(name) || 
-        pin?.includes(filters.q)
+    if (filters.alpha) {
+      result = result.filter((loc) =>
+        loc.locality?.toUpperCase().startsWith(filters.alpha),
       );
-    });
-  }
+    }
 
-  return result;
+    if (filters.q) {
+      const q = normalize(filters.q);
 
-}, [locations, filters]);
+      result = result.filter((loc) => {
+        const name = normalize(loc.locality);
+        const pin = loc.pincode?.toString();
+
+        return name.includes(q) || q.includes(name) || pin?.includes(filters.q);
+      });
+    }
+
+    return result;
+  }, [locations, filters]);
 
   return (
     <>
@@ -69,88 +61,72 @@ const filteredLocations = useMemo(() => {
         />
         <link rel="canonical" href="/visit/restaurants-in-chennai" />
       </Helmet>
-          <div>
-      {/* ============== Banner ============ */}
+      <div>
+        {/* ============== Banner ============ */}
 
-
-       <div className="accaodomationBannerSection">
-            <img src="/images/restaurants-banner.jpg" alt="" />
-            <div className="accodoamationBannerContainer">
-              <div className="accodoamationBannerText">
-                <h3>Neighbourhood</h3>
-                <div className="breadCrum">
-                  <Link to="/visit-chennai">Live </Link> -{" "}
-                  <a href=""> Neighbourhood </a>
-                </div>
+        <div className="accaodomationBannerSection">
+          <img src="/images/restaurants-banner.jpg" alt="" />
+          <div className="accodoamationBannerContainer">
+            <div className="accodoamationBannerText">
+              <h3>Neighbourhood</h3>
+              <div className="breadCrum">
+                <Link to="/visit-chennai">Live </Link> -{" "}
+                <a href=""> Neighbourhood </a>
               </div>
             </div>
-            {/* <div className="notHomePageSearch">
-              <Search />
-            </div> */}
           </div>
-
-      {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
-        <div className="relative z-0">
-          <img
-            className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/aruna-inne-main-image.jpeg"
-            alt=" Carnatic Vocalist"
-          />
-
-          <img
-            className="block sm:hidden w-full"
-            src="/images/inner-page-araattai-image.jpeg"
-            alt="Aruna sairam"
-          />
         </div>
 
-        <div className="accodoamationBannerContainer relative z-20">
-          <div className="accodoamationBannerText"></div>
-        </div>
-      </section> */}
+        {/* ALPHA FILTER WITH SECTION  */}
 
-      {/* ALPHA FILTER WITH SECTION  */}
+        <div className="">
+          <section className="mt-10 bg-white visitIntroParaSection">
+            <div className="container max-w-7xl mx-auto px-4 !mb-0">
+              <div className="">
+                <div class="workIntro">
+                  <h1>Neighbourhood</h1>
+                  <p>
+                    Public transportation in Chennai is managed by various
+                    government bodies, offering an extensive network that
+                    connects all parts of the city. Key modes include the
+                    Industry.
+                  </p>
+                </div>
 
-      <div className="">
+                <Search
+                  onSearch={(q) => {
+                    updateFilter("q", q);
+                    updateFilter("alpha", "");
+                  }}
+                />
 
-   
-
-      <section className="mt-10 bg-white visitIntroParaSection">
-        <div className="container max-w-7xl mx-auto px-4 !mb-0">
-          <div className="">
-            <div class="workIntro">
-              <h1>Neighbourhood</h1>
-              <p>
-                Public transportation in Chennai is managed by various
-                government bodies, offering an extensive network that connects
-                all parts of the city. Key modes include the Industry.
-              </p>
+                <AlphabetFilter onChange={(v) => updateFilter("alpha", v)} />
+              </div>
             </div>
+          </section>
 
-            <Search
-              onSearch={(q) => {
-                updateFilter("q", q);
-                updateFilter("alpha", "");
-              }}
-            />
+          <section className="mt-10 bg-white">
+            <div className="container max-w-7xl mx-auto px-4 !mb-0">
+              <AreaFilter
+                data={filteredLocations}
+                onChange={(v) => updateFilter("location", v)}
+              />
+            </div>
+          </section>
 
-            <AlphabetFilter onChange={(v) => updateFilter("alpha", v)} />
+
+
+          {loading && <p>Loading...</p>}
+
+          <div className="row">
+            {data?.map((item) => (
+              <div key={item.id} className="col-md-4">
+                <h4>{item.name}</h4>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
-
-      <section className="mt-10 bg-white">
-        <div className="container max-w-7xl mx-auto px-4 !mb-0">
-      <AreaFilter
-        data={filteredLocations}
-        onChange={(v) => updateFilter("location", v)}
-      />
       </div>
-      </section>
-         </div>
-    </div>
-    
     </>
-
   );
 }

@@ -24,6 +24,7 @@ import FutureGrowthDevelopment from "./Pages/SubPages/LivePages/FutureGrowthDeve
 import Healthcare from "./Pages/SubPages/LivePages/Healthcare";
 import Neighbourhood from "./Pages/SubPages/LivePages/Neighbourhood";
 import ChennaiNeighbourhood from "./Pages/ChennaiNeighbourhoods/pages/Neighbourhood";
+import ChennaiNeighbourhoodDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodDetails"
 
 import QualityofLife from "./Pages/SubPages/LivePages/QualityofLife";
 import Recreation from "./Pages/SubPages/LivePages/Recreation";
@@ -555,9 +556,16 @@ function App() {
   const hideOnJahabarPage =
     location.pathname === "/arattai-with-jahabar-sadique/chai-kings-founder/";
 
-  const hideNewsletter = location.pathname === "/chennai-conclave";
 
-  const isHomePage = location.pathname === "/";
+  
+
+
+ const hideNewsletter =
+    location.pathname === "/chennai-conclave";
+
+
+
+      const isHomePage = location.pathname === "/";
 
   return (
     <>
@@ -861,6 +869,11 @@ function App() {
         <Route
           path="/ChennaiNeighbourhood"
           element={<ChennaiNeighbourhood />}
+        />
+
+        <Route
+          path="/ChennaiNeighbourhood/:locationId"
+          element={<ChennaiNeighbourhoodDetail />}
         />
 
         {/* 404 Page */}
@@ -1391,7 +1404,6 @@ function App() {
           path="/super-chennai-icon-of-dec-2025"
           element={<IconofthemonthDec />}
         />
-
         <Route
           path="/super-chennai-icon-of-jan-2026"
           element={<Iconofthemontjahabar />}

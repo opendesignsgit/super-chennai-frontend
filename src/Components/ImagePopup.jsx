@@ -37,7 +37,7 @@ const ImagePopup = ({ onClose, imageUrl }) => {
         >
           {/* <Link to="/namma-stories#NammaStoriesVideoId" onClick={onClose}> */}
           {/* <Link to="/chennai-conclave" onClick={onClose}> */}
-          <a href="arattai-with-jahabar-sadique/chai-kings-founder">
+          <a href="arattai-with-kamakoti/iit-madras-director">
             <img
               src={imageUrl}
               alt="Popup"

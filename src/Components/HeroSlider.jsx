@@ -69,6 +69,9 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
+
+  
+
   {
     type: "image",
     link: "/contest/hotshots-photography-contest",

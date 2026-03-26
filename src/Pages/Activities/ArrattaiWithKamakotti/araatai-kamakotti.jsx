@@ -222,7 +222,7 @@ export default function ArattaiWithKamakotti() {
 
       <Helmet>
         <title>
-         IIT Madras Director - Super Chennai Arattai with V. Kamakoti
+          IIT Madras Director - Super Chennai Arattai with V. Kamakoti
         </title>
         <meta
           name="description"
@@ -260,15 +260,14 @@ export default function ArattaiWithKamakotti() {
         className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer akbaralipage"
         onClick={scrollToRegister}
       >
-        {" "}
         <img
           className="hidden sm:block w-full"
           src="/images/kamakoti-banner.jpeg"
           alt="Arattai Event"
         />
         <img
-          className="block sm:hidden w-full"
-          src="/images/jahar-sadiq-mobile.jpg"
+          className="block sm:hidden w-full !h-auto"
+          src="/images/mobile-banner-kamakoti.jpeg"
           alt="Arattai Event"
         />
       </section>
@@ -280,10 +279,8 @@ export default function ArattaiWithKamakotti() {
         <div className="container mx-auto px-6 lg:px-0">
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves ">
-              <h1 className=" text-center hidden ">
-                Arattai with Jahabar sadique{" "}
-              </h1>
-              <h3 className=" text-center"> Arattai with Kamakotti </h3>
+              <h1 className=" text-center hidden ">Arattai with Kamakotti</h1>
+              <h3 className=" text-center"> Arattai with Kamakoti </h3>
 
               <p className="text-gray-600 leading-relaxed mb-6 ">
                 Join us for a candid conversation with Padma Shri V. Kamakoti,

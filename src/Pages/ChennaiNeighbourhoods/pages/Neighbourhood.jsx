@@ -61,7 +61,7 @@ export default function ChennaiNeighbourhood() {
         />
         <link rel="canonical" href="/visit/restaurants-in-chennai" />
       </Helmet>
-      <div>
+      <div className="neighbourhoodcontiner">
         {/* ============== Banner ============ */}
 
         <div className="accaodomationBannerSection">
@@ -113,18 +113,6 @@ export default function ChennaiNeighbourhood() {
               />
             </div>
           </section>
-
-
-
-          {loading && <p>Loading...</p>}
-
-          <div className="row">
-            {data?.map((item) => (
-              <div key={item.id} className="col-md-4">
-                <h4>{item.name}</h4>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </>

@@ -1,105 +1,94 @@
-
-
-.alpabutton  {
-    width: 50px;
-    height: 50px;
-    background: none;
-    font-size: 22px;
-    font-weight: 600;
-    cursor: pointer;
-    border-right: 1px solid #acacac;
+.alpabutton {
+  width: 50px;
+  height: 50px;
+  background: none;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  border-right: 1px solid #acacac;
 }
 
-.alpabutton:first-child
-{
-    padding-left: 10px;
+.alpabutton:first-child {
+  padding-left: 10px;
 }
 
-
-.alpabutton:last-child
-{
-    padding-right: 10px;
-        border-right: none;
+.alpabutton:last-child {
+  padding-right: 10px;
+  border-right: none;
 }
 
 .alphapetfiltersection {
-        margin-top: 60px;
+  margin-top: 60px;
 }
 
 .alphapetfiltersection .girdcolumn {
-    border: 2px solid #d7b1d2;
-    border-radius: 50px;
+  border: 2px solid #d7b1d2;
+  border-radius: 50px;
 }
 
-
-.alpabutton.activebuttonalpha  {
-    background: #995099;
-    border-radius: 0;
-    color: #fff;
+.alpabutton.activebuttonalpha {
+  background: #995099;
+  border-radius: 0;
+  color: #fff;
 }
 
 .alpabutton.activebuttonalpha:first-child {
-     border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 .alpabutton.activebuttonalpha:last-child {
-     border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
-
 .searchhoodfilter {
-    max-width: 800px;
-    border-radius: 50px;
-    border: 2px solid #d6b1d3;
-    height: 65px;
-     padding-left: 50px;
-    font-size: 18px ;
-    font-family: "29LT Bukra Regular";
-    color: #505050;
-     font-weight: 700;
+  max-width: 800px;
+  border-radius: 50px;
+  border: 2px solid #d6b1d3;
+  height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+  font-family: "29LT Bukra Regular";
+  color: #505050;
+  font-weight: 700;
 }
 
 .searchhoodfilter:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 .searchhoodfilter::placeholder {
-    font-size: 18px;
-     font-family: "29LT Bukra Regular";
-     color: #505050;
-     font-weight: 700;
-   
-    letter-spacing: 1px;
-
+  font-size: 18px;
+  font-family: "29LT Bukra Regular";
+  color: #505050;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .filtersearchnew {
-    justify-content: center;
+  justify-content: center;
 }
 
 .filtersearchnewmain {
-    position: relative;
-    margin-top: 50px;
+  position: relative;
+  margin-top: 50px;
 }
 
 .searchbuttonfilt {
-    font-family: "29LT Bukra Regular";
-    background-color: #995099;
-    width: 14%;
-    border-radius: 50px;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 800;
-    position: absolute;
-    height: 56px;
-    right: 17.5%;
-    top: 3.9px;
-    letter-spacing: 1px;
-    cursor: pointer;
+  font-family: "29LT Bukra Regular";
+  background-color: #995099;
+  width: 14%;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 800;
+  position: absolute;
+  height: 56px;
+  right: 17.5%;
+  top: 3.9px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
-
 
 .carcontentsnew {
   border-radius: 10px;
@@ -123,22 +112,22 @@
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-bottom: 3.5px solid #6e6e6e;
-   transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .neighbourcardnew:hover {
-     border-bottom: 3.5px solid #99509c;
-     cursor: pointer;
-    transform: translateY(-10px); /* 👈 moves up */
+  border-bottom: 3.5px solid #99509c;
+  cursor: pointer;
+  transform: translateY(-10px); /* 👈 moves up */
 }
 
-
-
 .neighimg {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 100%;
-    height: 210px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 210px;
 }
 
 .carcontentsnew h4 {
@@ -170,18 +159,476 @@
 }
 
 .readmorelink {
-    padding-top: 13px;
-    border-top: 1px solid #e1e1e4;
-    width: 100%;
-    margin-top: 17px;
+  padding-top: 13px;
+  border-top: 1px solid #e1e1e4;
+  width: 100%;
+  margin-top: 17px;
 }
 
 .carcontentsnew .pincodestyle {
   font-size: 17px;
 }
 
-.neighbourcardnew:hover .readmorelink a{
-    color: #9e4590;
+.neighbourcardnew:hover .readmorelink a {
+  color: #9e4590;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media (max-width: 1600px) and (min-width: 1301px) {
+  .searchhoodfilter {
+    max-width: 600px;
+    height: 55px;
+    padding-left: 40px;
+    font-size: 14px;
+  }
+
+  .searchbuttonfilt {
+    width: 14%;
+    font-size: 15px;
+    height: 45px;
+    right: 20%;
+    top: 4.9px;
+  }
+
+  .alpabutton {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .carcontentsnew h4 {
+    font-size: 23px;
+    padding-left: 25px;
+  }
+
+  .carcontentsnew .pincodestyle {
+    font-size: 16px;
+  }
+
+  .carcontentsnew h5 {
+    padding-left: 30px;
+  }
+
+  .neighimg {
+    height: 180px;
+  }
+
+  .visitIntroParaSection {
+    padding-bottom: 20px;
+  }
+
+  .searchhoodfilter::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1100px) {
+  .searchhoodfilter {
+    max-width: 550px;
+    height: 50px;
+    padding-left: 34px;
+    font-size: 14px;
+  }
+
+  .searchbuttonfilt {
+    width: 13%;
+    font-size: 14px;
+    height: 42px;
+    right: 21%;
+    top: 3.9px;
+  }
+
+  .alpabutton {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .carcontentsnew h4 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .carcontentsnew .pincodestyle {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+
+  .carcontentsnew h5 {
+    padding-left: 25px;
+  }
+
+  .neighimg {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .visitIntroParaSection {
+    padding-bottom: 20px;
+  }
+
+  .searchhoodfilter::placeholder {
+    font-size: 15px;
+  }
+
+  .carcontentsnew {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .readmorelink a {
+    padding-left: 30px;
+  }
+
+  .readmorelink {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+  .neighbourhoodcontiner .container {
+    max-width: 800px;
+  }
+  .searchhoodfilter {
+    max-width: 495px;
+    height: 47px;
+    padding-left: 31px;
+    font-size: 14px;
+  }
+
+  .searchbuttonfilt {
+    width: 13%;
+    font-size: 14px;
+    height: 39px;
+    right: 17%;
+    top: 3.9px;
+  }
+  .alphapetfiltersection {
+    margin-top: 48px;
+  }
+  .alpabutton {
+    width: 40px;
+    height: 35px;
+    font-size: 14px;
+    padding: 0 !important;
+  }
+
+  .carcontentsnew h4 {
     font-size: 17px;
-    font-weight: 600;
+    padding-left: 18px;
+    line-height: 113%;
+    width: 90%;
+  }
+
+  .carcontentsnew .pincodestyle {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .carcontentsnew h5 {
+    padding-left: 20px;
+  }
+
+  .neighimg {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .visitIntroParaSection {
+    padding-bottom: 0;
+  }
+
+  .searchhoodfilter::placeholder {
+    font-size: 13px;
+  }
+
+  .carcontentsnew {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .readmorelink a {
+    padding-left: 30px;
+  }
+
+  .readmorelink {
+    margin-top: 15px;
+  }
+  .alphapetfiltersection .girdcolumn {
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .neighbourhoodcontiner .container {
+    max-width: 600px;
+  }
+
+  .neighbiurnewcards {
+    flex-wrap: wrap;
+    column-gap: 5%;
+  }
+
+  .searchhoodfilter {
+    max-width: 400px;
+    height: 50px;
+    padding-left: 35px;
+    font-size: 12px;
+  }
+
+  .searchhoodfilter::placeholder {
+    font-size: 14px;
+  }
+
+  .searchbuttonfilt {
+    width: 17%;
+    font-size: 13px;
+    height: 40px;
+    right: 13.5%;
+    top: 4.9px;
+  }
+
+  .alphapetfiltersection .girdcolumn {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+
+  .alpabutton {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    padding: 0;
+    flex-shrink: 0;
+  }
+
+  .carcontentsnew h4 {
+    font-size: 16px;
+    padding-left: 25px;
+    line-height: 108%;
+    width: 86%;
+  }
+
+  .neighbourcardnew {
+    width: 45%;
+  }
+
+  .neighimg {
+    height: 142px;
+    object-fit: cover;
+  }
+
+  .carcontentsnew h5 {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 7px;
+    padding-left: 28px;
+  }
+
+  .carcontentsnew .pincodestyle {
+    font-size: 15px;
+  }
+
+  .readmorelink {
+    margin-top: 13px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+  .neighbourhoodcontiner .container {
+    max-width: 500px;
+  }
+
+  .neighbiurnewcards {
+    flex-wrap: wrap;
+    column-gap: 5%;
+  }
+
+  .searchhoodfilter {
+    max-width: 400px;
+    height: 45px;
+    padding-left: 31px;
+    font-size: 12px;
+  }
+
+  .searchhoodfilter::placeholder {
+    font-size: 14px;
+  }
+
+  .searchbuttonfilt {
+    width: 20%;
+    font-size: 12px;
+    height: 37px;
+    right: 5.3%;
+    top: 3.9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alphapetfiltersection .girdcolumn {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+
+  .alpabutton {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    padding: 0;
+    flex-shrink: 0;
+    border-right: 1px solid #acacac;
+  }
+
+  .alpabutton:last-child {
+    padding-right: 0;
+  }
+
+  .readmorelink a {
+    padding-left: 30px;
+  }
+  .carcontentsnew h4 {
+    font-size: 16px;
+    padding-left: 25px;
+    line-height: 108%;
+    width: 86%;
+  }
+
+  .neighbourcardnew {
+    width: 45%;
+  }
+
+  .neighimg {
+    height: 142px;
+    object-fit: cover;
+  }
+
+  .carcontentsnew h5 {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 7px;
+    padding-left: 28px;
+  }
+
+  .carcontentsnew .pincodestyle {
+    font-size: 13px;
+  }
+
+  .readmorelink {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .neighbourhoodcontiner .container {
+    max-width: 100%;
+  }
+
+  .neighbiurnewcards {
+    flex-wrap: wrap;
+    column-gap: 5%;
+  }
+
+  .searchhoodfilter {
+    max-width: 310px;
+    height: 40px;
+    padding-left: 23px;
+    font-size: 14px;
+    padding-top: 8px;
+  }
+
+  .searchhoodfilter::placeholder {
+    font-size: 11px;
+  }
+
+  .searchbuttonfilt {
+    width: 22%;
+    font-size: 10px;
+    height: 32px;
+    right: 1.3%;
+    top: 3.9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alphapetfiltersection .girdcolumn {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    max-width: 310px;
+  }
+
+  .alpabutton {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    padding: 0;
+    flex-shrink: 0;
+    border-right: 1px solid #acacac;
+  }
+
+  .alpabutton:last-child {
+    padding-right: 0;
+  }
+
+  .readmorelink a {
+    padding-left: 30px;
+  }
+  .carcontentsnew h4 {
+    font-size: 16px;
+    padding-left: 25px;
+    line-height: 108%;
+    width: 86%;
+  }
+
+  .neighbourcardnew {
+    width: 330px;
+  }
+
+  .neighimg {
+    height: 142px;
+    object-fit: cover;
+  }
+
+  .carcontentsnew h5 {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 7px;
+    padding-left: 28px;
+  }
+
+  .carcontentsnew .pincodestyle {
+    font-size: 13px;
+  }
+
+  .readmorelink {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .carcontentsnew {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  .alphapetfiltersection {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .neighbourhoodcontiner .seachconatiners {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 300px;
+  }
 }

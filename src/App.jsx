@@ -25,6 +25,10 @@ import Healthcare from "./Pages/SubPages/LivePages/Healthcare";
 import Neighbourhood from "./Pages/SubPages/LivePages/Neighbourhood";
 import ChennaiNeighbourhood from "./Pages/ChennaiNeighbourhoods/pages/Neighbourhood";
 import ChennaiNeighbourhoodDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodDetails"
+import NeighbourhoodCategory from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodCategory"
+import NeighbourhoodItemDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodItemDetail"
+
+
 
 import QualityofLife from "./Pages/SubPages/LivePages/QualityofLife";
 import Recreation from "./Pages/SubPages/LivePages/Recreation";
@@ -579,11 +583,11 @@ function App() {
       {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
       {isHomePage && showPopup && (
-            <ImagePopup
-              imageUrl="/images/popup-kamakoti.jpeg"
-              onClose={() => setShowPopup(false)}
-            />
-          )}
+        <ImagePopup
+          imageUrl="/images/popup-kamakoti.jpeg"
+          onClose={() => setShowPopup(false)}
+        />
+      )}
 
       {/* )} */}
 
@@ -855,12 +859,10 @@ function App() {
           element={<ArattaiWithKamakotti />}
         />
 
-        
-         <Route
+        <Route
           path="/arattai-with-kamakoti/iit-madras-director-admin-entry-oiuyterwqasvcxzdsw/refdewsdfettwfsvvdg/8728272/lmnjhscbnmdt"
           element={<ArattaikamakotiExcelView />}
         />
-
 
         <Route
           path="/arattai-with-jahabar-sadique/chai-kings-founder-admin-all-entry"
@@ -885,6 +887,16 @@ function App() {
         <Route
           path="/ChennaiNeighbourhood/:locationId"
           element={<ChennaiNeighbourhoodDetail />}
+        />
+
+        <Route
+          path="/neighbourhood/:locationId/:category"
+          element={<NeighbourhoodCategory />}
+        />
+
+        <Route
+          path="/neighbourhood/:locationId/:category/:slug"
+          element={<NeighbourhoodItemDetail />}
         />
 
         {/* 404 Page */}

@@ -60,7 +60,8 @@ export default function ArattaikamakotiExcelView() {
       <div style={{ padding: 20 }}>
 
         <h2 style={{ marginBottom: 20 }}>
-          Arattai With Jahabar Sadique
+        Arattai with Kamakoti
+
         </h2>
 
         <div style={{ overflowX: "auto" }}>

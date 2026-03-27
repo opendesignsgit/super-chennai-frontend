@@ -71,7 +71,7 @@ const slides = [
 
   {
     type: "image",
-    link: "/contest/hotshots-photography-contest",
+    link: "/arattai-with-kamakoti/iit-madras-director",
     image: "/images/kamakoti-main-home.jpeg",
     image1: "/images/kamakoti-main-home-mobile.jpeg",
     title: "Icon of the month in chennai",

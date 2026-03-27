@@ -69,7 +69,14 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-
+  {
+    type: "image",
+    link: "/contest/hotshots-photography-contest",
+    image: "/images/kamakoti-main-home.jpeg",
+    image1: "/images/kamakoti-main-home-mobile.jpeg",
+    title: "Icon of the month in chennai",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
   
 
   {

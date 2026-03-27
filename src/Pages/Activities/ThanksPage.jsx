@@ -25,16 +25,16 @@ export default function Thankyou() {
     else if (from === "manifesto-info") {
       setImageSrc(
         isMobile
-          ? "/images/kamakoti-mobile-thanks.jpeg"
-          : "/images/kamakoti-desktop-thanks.jpeg"
+          ? "/images/mobile-thanky-banner-manifesto.jpeg"
+          : "/images/thankyou-banner-manifesto.jpeg"
       );
     } 
     
     else if (from === "kamakoti") {
       setImageSrc(
         isMobile
-          ? "/images/mobile-chaikings-tq-banner-f-1.png"
-          : "/images/tq-chaikings-banner-f.jpeg"
+          ? "/images/kamakoti-mobile-thanks-new.jpeg"
+          : "/images/kamakoti-desktop-thanks-new.jpeg"
       );
     } 
 

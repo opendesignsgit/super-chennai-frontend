@@ -325,11 +325,11 @@ export default function ArattaiWithKamakotti() {
               </p>
 
               <h2 class=" themelink-color formheadingtheme-arattai">
-                Join Us for a Conversation with Mr. Jahabar Sadique
+                Join Us for a Conversation with Mr. V. Kamakoti 
               </h2>
 
               <p className="text-gray-600 text-lg">
-                On 21<sup>st</sup> March, 5:00 PM onwards
+                On 30<sup>th</sup> March
               </p>
 
               <button

@@ -9,8 +9,10 @@ export default function ArattaikamakotiExcelView() {
 
   const fetchData = async () => {
     const res = await axios.get(
-      "https://api.superchennai.com/arattai-kamakoti/arattai-kamakoti"
+      "https://api.superchennai.com/api/arattai-kamakoti/arattai-kamakoti"
     );
+
+    console.log("res data",res)
 
     if (res.data?.success) {
       const verified = res.data.data.filter(
@@ -36,13 +38,13 @@ export default function ArattaikamakotiExcelView() {
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/jahabar-banner-mobile (2).jpeg"
+            src="https://www.superchennai.com/images/kamakoti-banner.jpeg"
             alt="Arattai with Jahabar"
           />
 
           <img
             className="block sm:hidden w-full"
-            src="/images/jahar-sadiq-mobile.jpg"
+            src="https://www.superchennai.com/images/kamakoti-banner.jpeg"
             alt="Jahabar Sadique"
           />
         </div>

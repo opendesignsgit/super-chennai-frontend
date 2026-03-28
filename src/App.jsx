@@ -582,12 +582,12 @@ function App() {
 
       {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-      {isHomePage && showPopup && (
+      {/* {isHomePage && showPopup && (
         <ImagePopup
           imageUrl="/images/popup-kamakoti.jpeg"
           onClose={() => setShowPopup(false)}
         />
-      )}
+      )} */}
 
       {/* )} */}
 

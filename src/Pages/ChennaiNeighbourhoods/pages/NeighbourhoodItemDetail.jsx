@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useNeighbourhood } from "../hooks/useNeighbourhood";
-
+import { Link } from "react-router-dom";
+import LexicalContent from "../Components/LexicalContent";
 const BASE = "https://dev-cms.superchennai.com";
 
 export default function NeighbourhoodItemDetail() {
@@ -12,55 +13,151 @@ export default function NeighbourhoodItemDetail() {
 
   if (loading) return <div>Loading...</div>;
 
-  const item = data?.find(
-    (i) => i.slug === slug
-  );
+  const item = data?.find((i) => i.slug === slug);
 
   if (!item) return <div>Not found</div>;
 
+  console.log("data", item);
+
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10">
+    <>
+      {/* HERO */}
+      <div className="accaodomationBannerSection relative">
+        {/* IMAGE */}
+        <img
+          src={
+            item?.heroImage?.url
+              ? BASE + item.heroImage.url
+              : "/placeholder.jpg"
+          }
+          className="w-full h-[400px] object-cover"
+        />
 
-      {/* image */}
-      <img
-        src={
-          item?.heroImage?.url
-            ? BASE + item.heroImage.url
-            : "/placeholder.jpg"
-        }
-        className="w-full h-[400px] object-cover rounded-lg"
-      />
+        {/* SHADE */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#a34493]/70 to-[#8b3c82]/95 z-10"></div>
 
-      {/* title */}
-      <h1 className="text-3xl font-bold mt-6">
-        {item.name}
-      </h1>
+        {/* CONTENT */}
+        <div className="accodoamationBannerContainer relative z-20">
+          <div className="accodoamationBannerText">
+            <h3>{item.name}</h3>
 
-      {/* category */}
-      <p className="text-purple-600 mt-2">
-        {item.category?.title}
-      </p>
-
-      {/* description */}
-      <div className="mt-6 text-gray-600">
-        {item.description}
-      </div>
-
-      {/* branches */}
-      <div className="mt-10">
-        <h3 className="text-xl font-semibold mb-4">
-          Branches
-        </h3>
-
-        {item.branches?.map((b) => (
-          <div key={b.id} className="border p-4 rounded mb-3">
-            <h4>{b.branchName}</h4>
-            <p>{b.area}</p>
-            <p>{b.phone}</p>
+            <div className="breadCrum">
+              <Link to="/visit-chennai">Live</Link> -{" "}
+              <span>{item.category?.title}</span>
+            </div>
           </div>
-        ))}
+        </div>
       </div>
 
-    </div>
+      <div className="max-w-6xl mx-auto px-4 py-10">
+        {/* TITLE */}
+
+        <h1 className="text-3xl font-bold">{item.name}</h1>
+
+        <LexicalContent content={item.content} />
+
+        {/* CATEGORY + RATING */}
+        <div className="flex gap-4 mt-2">
+          <span className="text-purple-600">{item.category?.title}</span>
+
+          <span className="text-yellow-500">⭐ {item.rating}</span>
+        </div>
+
+        {/* DESCRIPTION */}
+        <div className="mt-6 text-gray-600">
+          {item.description || item.title}
+        </div>
+
+        {/* LOCATION MAP */}
+        {item?.locations?.value && (
+          <div className="mt-8">
+            <iframe
+              src={`https://www.google.com/maps?q=${encodeURIComponent(
+                item.locations.value,
+              )}&output=embed`}
+              className="w-full h-[300px] rounded"
+            />
+          </div>
+        )}
+
+        {/* CONTACT */}
+        <div className="mt-10">
+          <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div>Phone: {item.contactInfo?.primaryPhone}</div>
+            <div>Email: {item.contactInfo?.email}</div>
+            <div>Website: {item.contactInfo?.website}</div>
+          </div>
+        </div>
+
+        {/* BRANCHES */}
+        <div className="mt-10">
+          <h3 className="text-xl font-semibold mb-4">Branches</h3>
+
+          {item.branches?.map((b) => (
+            <div key={b.id} className="border p-4 rounded mb-3">
+              <h4 className="font-semibold">{b.branchName}</h4>
+              <p>{b.area}</p>
+              <p>{b.phone}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* SERVICES */}
+        {item.serviceOptions?.length > 0 && (
+          <div className="mt-10">
+            <h3 className="text-xl font-semibold mb-4">Services</h3>
+
+            <div className="flex flex-wrap gap-2">
+              {item.serviceOptions.map((s) => (
+                <span
+                  key={s.id}
+                  className="bg-purple-100 px-3 py-1 rounded-full"
+                >
+                  {s.label}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* AWARDS */}
+        {item.awards?.length > 0 && (
+          <div className="mt-10">
+            <h3 className="text-xl font-semibold mb-4">Awards</h3>
+
+            {item.awards.map((a) => (
+              <div key={a.id} className="mb-2">
+                🏆 {a.title}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* SOCIAL */}
+        <div className="mt-10">
+          <h3 className="text-xl font-semibold mb-4">Social Media</h3>
+
+          <div className="flex gap-4">
+            {item.socialMedia?.instagram && (
+              <a href={item.socialMedia.instagram}>Instagram</a>
+            )}
+
+            {item.socialMedia?.facebook && (
+              <a href={item.socialMedia.facebook}>Facebook</a>
+            )}
+          </div>
+        </div>
+
+        {/* COMPANY */}
+        <div className="mt-10">
+          <h3 className="text-xl font-semibold mb-4">Company Info</h3>
+
+          <p>Owner: {item.companyInfo?.ownerName}</p>
+          <p>Founded: {item.companyInfo?.foundedYear}</p>
+        </div>
+      </div>
+    </>
   );
 }

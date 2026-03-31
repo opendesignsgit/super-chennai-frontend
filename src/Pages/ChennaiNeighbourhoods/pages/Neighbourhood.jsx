@@ -1,33 +1,56 @@
-import React, { useState, useMemo } from "react";
-import AreaFilter from "../Components/AreaFilter";
-import AlphabetFilter from "../Components/AlphabetFilter";
-import Search from "../Components/Search";
-import { useNeighbourhood } from "../hooks/useNeighbourhood";
-import { useLocations } from "../hooks/useLocations";
-import { useSearch } from "../hooks/useSearch";
+import { useMemo } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import AlphabetFilter from "../Components/AlphabetFilter";
+import AreaFilter from "../Components/AreaFilter";
+import EmptyState from "../Components/locations/EmptyState";
+import SkeletonLocations from "../Components/locations/SkeletonLocations";
+import Search from "../Components/Search";
+import { useLocations } from "../hooks/useLocations";
+import { useSearch } from "../hooks/useSearch";
 import "../Style/style.css";
 
 export default function ChennaiNeighbourhood() {
+  
   const { filters, updateFilter } = useSearch();
-  const locations = useLocations();
+  const { locations, loading, error } = useLocations();
 
-  const { data, loading } = useNeighbourhood({
-    location: filters.location,
-  });
+
+  /* SEARCH + ALPHABET FILTER  ADVANCE SEARCH ALGRITHEMS */
 
   function normalize(str = "") {
     return str
       .toLowerCase()
-      .replace(/\s+/g, "")
-      .replace(/aa/g, "a")
-      .replace(/oo/g, "o")
-      .replace(/ee/g, "e")
+      .normalize("NFD") // remove accents
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]/g, "") // remove symbols
+      .replace(/aa|ah/g, "a")
+      .replace(/ee|eh/g, "e")
+      .replace(/oo|oh/g, "o")
       .replace(/th/g, "t")
       .replace(/dh/g, "d");
   }
-  /* SEARCH + ALPHABET FILTER */
+  function getDistance(a = "", b = "") {
+    const matrix = [];
+
+    for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+    for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+
+    for (let i = 1; i <= b.length; i++) {
+      for (let j = 1; j <= a.length; j++) {
+        matrix[i][j] =
+          b[i - 1] === a[j - 1]
+            ? matrix[i - 1][j - 1]
+            : Math.min(
+                matrix[i - 1][j - 1] + 1,
+                matrix[i][j - 1] + 1,
+                matrix[i - 1][j] + 1,
+              );
+      }
+    }
+
+    return matrix[b.length][a.length];
+  }
   const filteredLocations = useMemo(() => {
     let result = locations || [];
 
@@ -40,16 +63,41 @@ export default function ChennaiNeighbourhood() {
     if (filters.q) {
       const q = normalize(filters.q);
 
-      result = result.filter((loc) => {
-        const name = normalize(loc.locality);
-        const pin = loc.pincode?.toString();
+      result = result
+        .map((loc) => {
+          const name = normalize(loc.locality);
+          const pin = loc.pincode?.toString() || "";
 
-        return name.includes(q) || q.includes(name) || pin?.includes(filters.q);
-      });
+          let score = 0;
+
+          // exact match
+          if (name === q) score += 100;
+
+          // startsWith
+          if (name.startsWith(q)) score += 80;
+
+          // includes
+          if (name.includes(q)) score += 60;
+
+          // fuzzy match (typo)
+          const dist = getDistance(name, q);
+          if (dist <= 2) score += 50;
+
+          // pincode match
+          if (pin.includes(filters.q)) score += 70;
+
+          return { loc, score };
+        })
+        .filter((item) => item.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .map((item) => item.loc);
     }
 
     return result;
   }, [locations, filters]);
+
+
+
 
   return (
     <>
@@ -107,10 +155,45 @@ export default function ChennaiNeighbourhood() {
 
           <section className="mt-10 bg-white">
             <div className="container max-w-7xl mx-auto px-4 !mb-0">
-              <AreaFilter
-                data={filteredLocations}
-                onChange={(v) => updateFilter("location", v)}
-              />
+              {loading ? (
+                <SkeletonLocations />
+              ) : error ? (
+                <EmptyState
+                  title="No Locations Found"
+                  message="No neighbourhoods match your search or filters."
+                  onReset={() => {
+                    updateFilter("q", "");
+                    updateFilter("alpha", "");
+                    updateFilter("location", "");
+                  }}
+                />
+              ) : filteredLocations?.length === 0 ? (
+                <EmptyState
+                  title="No Locations Found"
+                  message="No neighbourhoods match your search or filters."
+                  onReset={() => {
+                    updateFilter("q", "");
+                    updateFilter("alpha", "");
+                    updateFilter("location", "");
+                  }}
+                />
+              ) : (
+                <>
+                  <p className="mb-4">
+                    <span
+                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-semibold"
+                      style={{ background: "#F3ECFB", color: "#6A3FA0" }}
+                    >
+                      Showing {filteredLocations.length} locations
+                    </span>
+                  </p>
+
+                  <AreaFilter
+                    data={filteredLocations}
+                    onChange={(v) => updateFilter("location", v)}
+                  />
+                </>
+              )}
             </div>
           </section>
         </div>

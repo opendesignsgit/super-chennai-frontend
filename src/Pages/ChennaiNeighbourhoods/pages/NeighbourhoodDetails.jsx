@@ -6,13 +6,21 @@ import { useNavigate } from "react-router-dom";
 const BASE = "https://dev-cms.superchennai.com";
 
 export default function NeighbourhoodDetail() {
+  // const { locationId } = useParams();
+
+  // const navigate = useNavigate();
+
+  // const { data, loading } = useNeighbourhood({
+  //   location: locationId,
+  // });
+
+
   const { locationId } = useParams();
 
-  const navigate = useNavigate();
-
-  const { data, loading } = useNeighbourhood({
-    location: locationId,
+  const { data } = useNeighbourhood({
+    location: decodeURIComponent(locationId),
   });
+
   console.log("data page", data);
   const [activeCategory, setActiveCategory] = useState(null);
   const [open, setOpen] = useState(false);
@@ -37,7 +45,7 @@ export default function NeighbourhoodDetail() {
   return (
     <>
     
-      <div className="accaodomationBannerSection">
+      {/* <div className="accaodomationBannerSection">
         <img src="/images/restaurants-banner.jpg" alt="" />
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
@@ -48,7 +56,7 @@ export default function NeighbourhoodDetail() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="">
         <section className="mt-10 bg-white visitIntroParaSection">

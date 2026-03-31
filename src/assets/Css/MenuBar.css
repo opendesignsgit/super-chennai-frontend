@@ -474,4 +474,10 @@
   font-family: "29LT Bukra Regular";
 }
 
-/* Popup Css */
+
+@media (min-width: 1100px) {
+  .menuBarLinksContent {
+    height: 710px;
+    margin-top: 45px;
+  }
+}

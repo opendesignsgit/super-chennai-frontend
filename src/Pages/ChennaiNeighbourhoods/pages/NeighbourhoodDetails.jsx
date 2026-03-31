@@ -4,31 +4,21 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 const BASE = "https://dev-cms.superchennai.com";
+import EmptyState from "../Components/locations/EmptyState";
 
 export default function NeighbourhoodDetail() {
-  // const { locationId } = useParams();
 
-  // const navigate = useNavigate();
-
-  // const { data, loading } = useNeighbourhood({
-  //   location: locationId,
-  // });
-
-
+  const navigate = useNavigate();
   const { locationId } = useParams();
-
-  const { data } = useNeighbourhood({
+  const { data, loading } = useNeighbourhood({
     location: decodeURIComponent(locationId),
   });
 
   console.log("data page", data);
   const [activeCategory, setActiveCategory] = useState(null);
   const [open, setOpen] = useState(false);
-
   if (loading) return <div className="p-10">Loading...</div>;
-
   const location = data?.[0]?.locations;
-
   const grouped =
     data?.reduce((acc, item) => {
       const cat = item?.category?.title || "Others";
@@ -42,10 +32,43 @@ export default function NeighbourhoodDetail() {
 
   const filteredItems = grouped?.[activeCat] || [];
 
+
+  if (loading) {
+    return <div className="p-10">Loading...</div>;
+  }
+
+  if (!data || data.length === 0) {
+    return (
+      <EmptyState
+        title="No Locations Found"
+        message="This area currently has no neighbourhood data."
+        onReset={() => navigate("/ChennaiNeighbourhood")}
+      />
+    );
+  }
+
+  if (!location) {
+    return (
+      <EmptyState
+        title="Invalid Location"
+        message="We couldn't find details for this location."
+        onReset={() => navigate("/ChennaiNeighbourhood")}
+      />
+    );
+  }
+
+  if (!categories.length) {
+    return (
+      <EmptyState
+        title="No Categories Available"
+        message={`No places found in ${location?.locality}`}
+      />
+    );
+  }
+
   return (
     <>
-    
-      {/* <div className="accaodomationBannerSection">
+      <div className="accaodomationBannerSection">
         <img src="/images/restaurants-banner.jpg" alt="" />
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
@@ -56,7 +79,7 @@ export default function NeighbourhoodDetail() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="">
         <section className="mt-10 bg-white visitIntroParaSection">

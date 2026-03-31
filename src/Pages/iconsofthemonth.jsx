@@ -83,6 +83,26 @@ export default function Iconsofthemonth() {
             <div className="flex superchennaiEventsMainContainer">
               {/*############## CHINNAMAYI ######## */}
 
+              <a
+                className="superchennaiEventsSection"
+                id="icon-of-the-month-nov"
+                href="/icon-of-the-jan-month-2026"
+              >
+                <div
+                  className="flex flex-col items-center text-center"
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/inner-page-banner-kamakot.jpeg"
+                    alt="Left Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">
+                    Icon of the Month - Jan 2026
+                  </p>
+                </div>
+              </a>
+
               {/* <a
                 className="superchennaiEventsSection"
                 id="icon-of-the-month-nov"

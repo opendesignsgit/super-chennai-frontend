@@ -314,7 +314,7 @@ import { useLocation } from "react-router-dom";
 
 import Register from "./Pages/Activities/QuizGame/Pages/Register";
 import AuthRegister from "./Pages/Auth/Register";
-import Login from "./Pages/Activities/QuizGame/Pages/Login";
+import TriviaMainPage from "./Pages/Activities/QuizGame/Pages/TriviaMainPage";
 import AuthLogin from "./Pages/Auth/LoginWithOtp";
 import Questions from "./Pages/Activities/QuizGame/Pages/Questions";
 import UsersResultsPage from "./Pages/Activities/QuizGame/Pages/UsersResultsPage";
@@ -769,6 +769,15 @@ function App() {
         />
 
         <Route
+          path="/TriviaMainPage"
+          element={
+            <PublicRoute>
+              <TriviaMainPage setIsLoggedIn={setIsLoggedIn} />
+            </PublicRoute>
+          }
+        />
+
+        <Route
           path="/auth-register"
           element={
             <PublicRoute>
@@ -876,16 +885,13 @@ function App() {
 
         {/* conclave */}
         <Route path="/admin-superchennai" element={<AdminView />} />
-        <Route path="/neighbourhood" element={<Neighbourhoods />} />
-        <Route path="/neighbourhood/:slug" element={<NeighbourhoodDetail />} />
+        {/* <Route path="/neighbourhood" element={<Neighbourhoods />} />
+        <Route path="/neighbourhood/:slug" element={<NeighbourhoodDetail />} /> */}
+
+        <Route path="/neighbourhood" element={<ChennaiNeighbourhood />} />
 
         <Route
-          path="/ChennaiNeighbourhood"
-          element={<ChennaiNeighbourhood />}
-        />
-
-        <Route
-          path="/ChennaiNeighbourhood/:locationId"
+          path="/neighbourhood/:locationId"
           element={<ChennaiNeighbourhoodDetail />}
         />
 

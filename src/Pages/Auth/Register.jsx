@@ -43,11 +43,11 @@ export default function AuthRegister() {
   // };
 
   const validateForm = () => {
-    for (const [key, value] of Object.entries(form)) {
-      if (value === "" || value === null || value === undefined) {
-        return "All fields are required";
-      }
-    }
+    // for (const [key, value] of Object.entries(form)) {
+    //   if (value === "" || value === null || value === undefined) {
+    //     return "All fields are required";
+    //   }
+    // }
 
     // Name
     if (!form.name.trim()) return "Name is required";
@@ -99,7 +99,7 @@ export default function AuthRegister() {
       toast.success("User registered successfully!", {
         position: "top-center",
       });
-      setTimeout(() => navigate("/login"), 1500);
+      setTimeout(() => navigate("/login-otp"), 1500);
     } catch (err) {
       console.error(err);
       const message =

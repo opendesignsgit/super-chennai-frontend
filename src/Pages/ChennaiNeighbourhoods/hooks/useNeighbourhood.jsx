@@ -11,12 +11,7 @@ export function useNeighbourhood({ location }) {
 
     setLoading(true);
 
-    // getNeighbourhood({
-    //   "where[locations][equals]": location,
-    //   depth: 2,
-    //   limit: 100,
-    //   sort: "-priorityRank",
-    // })
+ 
     getNeighbourhood({
       "where[locations.locality][equals]": location,
       depth: 2,

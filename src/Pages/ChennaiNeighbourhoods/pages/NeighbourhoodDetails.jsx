@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 const BASE = "https://dev-cms.superchennai.com";
 import EmptyState from "../Components/locations/EmptyState";
+import { useLocations } from "../hooks/useLocations";
+
 
 export default function NeighbourhoodDetail() {
 
@@ -14,9 +16,23 @@ export default function NeighbourhoodDetail() {
     location: decodeURIComponent(locationId),
   });
 
+
+
+const firstLetter = decodeURIComponent(locationId)
+  ?.charAt(0)
+  ?.toUpperCase();
+
+
+  const { locations } = useLocations();
+
+const sameLetterLocations = locations?.filter((loc) =>
+  loc.locality?.toUpperCase().startsWith(firstLetter)
+);
+
   console.log("data page", data);
   const [activeCategory, setActiveCategory] = useState(null);
   const [open, setOpen] = useState(false);
+  
   if (loading) return <div className="p-10">Loading...</div>;
   const location = data?.[0]?.locations;
   const grouped =
@@ -66,6 +82,9 @@ export default function NeighbourhoodDetail() {
     );
   }
 
+
+
+
   return (
     <>
       <div className="accaodomationBannerSection">
@@ -114,6 +133,27 @@ export default function NeighbourhoodDetail() {
       >
         Click to View
       </button>
+
+      <button
+        onClick={() => setOpen(!open)}
+        className="bg-purple-600 text-white px-6 py-3 rounded-full"
+      >
+        Browse {firstLetter} Locations
+      </button>
+
+      {open && (
+        <div className="bg-white shadow rounded-lg mt-4 p-4">
+          {sameLetterLocations?.map((loc) => (
+            <div
+              key={loc.id}
+              onClick={() => navigate(`/ChennaiNeighbourhood/${loc.locality}`)}
+              className="cursor-pointer py-2 border-b hover:text-purple-600"
+            >
+              {loc.locality}
+            </div>
+          ))}
+        </div>
+      )}
 
       {open && (
         <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center">

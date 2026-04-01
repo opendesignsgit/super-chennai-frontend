@@ -18,11 +18,8 @@ export default function AreaFilter({ data, onChange }) {
           return (
             <div
               key={loc.id}
-              // onClick={() => navigate(`/ChennaiNeighbourhood/${loc.id}`)}
               onClick={() =>
-                navigate(
-                  `/ChennaiNeighbourhood/${encodeURIComponent(loc.locality)}`,
-                )
+                navigate(`/neighbourhood/${encodeURIComponent(loc.locality)}`)
               }
               className="neighbourcardnew"
             >

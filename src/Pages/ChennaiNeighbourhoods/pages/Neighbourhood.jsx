@@ -11,7 +11,7 @@ import { useSearch } from "../hooks/useSearch";
 import "../Style/style.css";
 
 export default function ChennaiNeighbourhood() {
-  
+
   const { filters, updateFilter } = useSearch();
   const { locations, loading, error } = useLocations();
 
@@ -51,53 +51,59 @@ export default function ChennaiNeighbourhood() {
 
     return matrix[b.length][a.length];
   }
+
   const filteredLocations = useMemo(() => {
-    let result = locations || [];
+  let result = locations || [];
 
-    if (filters.alpha) {
-      result = result.filter((loc) =>
-        loc.locality?.toUpperCase().startsWith(filters.alpha),
-      );
-    }
+  // alphabet filter
+  if (filters.alpha) {
+    result = result.filter((loc) =>
+      loc.locality?.toUpperCase().startsWith(filters.alpha),
+    );
+  }
 
-    if (filters.q) {
-      const q = normalize(filters.q);
+  // search filter
+  if (filters.q) {
+    const q = normalize(filters.q);
 
-      result = result
-        .map((loc) => {
-          const name = normalize(loc.locality);
-          const pin = loc.pincode?.toString() || "";
+    result = result
+      .map((loc) => {
+        const name = normalize(loc.locality);
+        const pin = (loc.pincode || "").toString();
 
-          let score = 0;
+        let score = 0;
 
-          // exact match
-          if (name === q) score += 100;
+        // locality exact
+        if (name === q) score += 100;
 
-          // startsWith
-          if (name.startsWith(q)) score += 80;
+        // locality starts
+        if (name.startsWith(q)) score += 80;
 
-          // includes
-          if (name.includes(q)) score += 60;
+        // locality contains
+        if (name.includes(q)) score += 60;
 
-          // fuzzy match (typo)
-          const dist = getDistance(name, q);
-          if (dist <= 2) score += 50;
+        // fuzzy locality
+        const dist = getDistance(name, q);
+        if (dist <= 2) score += 50;
 
-          // pincode match
-          if (pin.includes(filters.q)) score += 70;
+        // ✅ PINCODE EXACT
+        if (pin === filters.q) score += 120;
 
-          return { loc, score };
-        })
-        .filter((item) => item.score > 0)
-        .sort((a, b) => b.score - a.score)
-        .map((item) => item.loc);
-    }
+        // ✅ PINCODE STARTS
+        if (pin.startsWith(filters.q)) score += 90;
 
-    return result;
-  }, [locations, filters]);
+        // ✅ PINCODE CONTAINS
+        if (pin.includes(filters.q)) score += 70;
 
+        return { loc, score };
+      })
+      .filter((item) => item.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .map((item) => item.loc);
+  }
 
-
+  return result;
+}, [locations, filters]);
 
   return (
     <>

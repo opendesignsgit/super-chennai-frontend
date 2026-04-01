@@ -199,7 +199,8 @@ export default function Login({ setIsLoggedIn }) {
           </p>
 
           <button
-            onClick={scrollToForm}
+          // onClick={scrollToForm} 
+             onClick={() => navigate("/login-otp")}
             className="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-semibold mb-6 theme-button-small cursor-pointer"
           >
             Start Quiz
@@ -211,110 +212,6 @@ export default function Login({ setIsLoggedIn }) {
         />
       </section>
 
-      {/* ---------- Auth Box ---------- */}
-
-      <div
-        ref={carryFormRef}
-        className="flex items-center carryformPageSection"
-      >
-        <div className="carryFormPage !max-w-[500px] max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-lg bg-white  um-form-section">
-          {/* ---------------- LOGIN ---------------- */}
-          {page === "login" && (
-            <>
-              <h2 className="text-center">Welcome Back</h2>
-            
-
-              <form onSubmit={handleLogin} className="space-y-4">
-
-                {/* <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  onChange={handleInput}
-                  className="w-full px-3 py-2 border rounded-lg"
-                />
-
-                <PasswordInput
-                  value={form.password}
-                  onChange={(e) =>
-                    setForm({ ...form, password: e.target.value })
-                  }
-                  placeholder="Password"
-                /> */}
-
-                {/* <div className="text-right">
-                  <button
-                    type="button"
-                    onClick={() => setPage("forgot")}
-                    className="text-indigo-600 text-sm hover:underline themelink-color cursor-pointer"
-                  >
-                    Forgot password?
-                  </button>
-                </div>
-                <div className="flex justify-center">
-                  <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button-full">
-                    Login
-                  </button>
-                </div> */}
-              </form>
-            </>
-          )}
-
-          {/* ---------------- FORGOT PASSWORD ---------------- */}
-          {page === "forgot" && (
-            <>
-              <h2 className=" text-center">Forgot Password</h2>
-
-              <form onSubmit={handleForgot} className="space-y-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={handleEmailInput}
-                  className="w-full px-3 py-2 border rounded-lg"
-                />
-                <div className="flex justify-center mt-4">
-                  <button className="w-full bg-indigo-600 text-white py-2 rounded-lg theme-button-full cursor-pointer">
-                    Send Reset Link
-                  </button>
-                </div>
-              </form>
-
-              <p
-                className="mt-4 text-gray-600 cursor-pointer hover:underline"
-                onClick={() => setPage("login")}
-              >
-                ← Back to Login
-              </p>
-            </>
-          )}
-
-          {/* ----------  Added OTP button ---------- */}
-          {/* <div className="flex items-center ">
-            <div className="flex-grow h-px bg-gray-300"></div>
-            <span className="px-3 text-gray-600 font-medium">OR</span>
-            <div className="flex-grow h-px bg-gray-300"></div>
-          </div> */}
-
-          <button
-            type="button"
-            onClick={() => navigate("/login-otp")}
-            className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 theme-button-secondary-full cursor-pointer"
-          >
-            Login with OTP
-          </button>
-
-          <p className="text-center mt-4 text-gray-700">
-            Don’t have an account?{" "}
-            <Link
-              to="/register"
-              className="text-indigo-600 font-semibold hover:underline themelink-color"
-            >
-              Register
-            </Link>
-          </p>
-        </div>
-      </div>
     </>
   );
 }

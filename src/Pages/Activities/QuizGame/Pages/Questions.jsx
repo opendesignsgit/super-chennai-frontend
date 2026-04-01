@@ -13,6 +13,8 @@ export default function Questions() {
   const isAnswered = (qId) => answeredQuestions.includes(qId);
   const topRef = useRef(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const currentQuestion = questions[currentIndex];
   const [errorModal, setErrorModal] = useState({
     visible: false,
     message: "",
@@ -244,11 +246,11 @@ export default function Questions() {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-[100%] gap-6">
             {/* ----------------------- LEFT COLUMN (Questions) ----------------------- */}
 
             <div className="space-y-6 p-2">
-              {questions.map((q) => (
+              {/* {questions.map((q) => (
                 <div
                   key={q.id}
                   className="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 "
@@ -279,15 +281,84 @@ export default function Questions() {
                     ))}
                   </div>
                 </div>
-              ))}
-              <div className="flex justify-center mt-8">
+              ))} */}
+              {currentQuestion && (
+                <div className="p-6 bg-white rounded-2xl shadow-lg">
+                  <p className="font-semibold text-lg text-gray-800 mb-4">
+                    {currentQuestion.question_text}
+                  </p>
+
+                  <div className="space-y-3">
+                    {currentQuestion.options.map((opt, index) => (
+                      <label
+                        key={index}
+                        className="flex items-center p-3 rounded-xl cursor-pointer hover:bg-indigo-50"
+                      >
+                        <input
+                          type="radio"
+                          name={`question_${currentQuestion.id}`}
+                          value={opt}
+                          checked={answers[currentQuestion.id] === opt}
+                          onClick={() => handleChange(currentQuestion.id, opt)}
+                        />
+                        <span className="ml-3">{opt}</span>
+                      </label>
+                    ))}
+                  </div>
+                  <div className="flex justify-center mt-6">
+                    <div className="flex w-full md:w-[60%] gap-4">
+                      {/* Previous */}
+                      <button
+                        disabled={currentIndex === 0}
+                        onClick={() => setCurrentIndex((prev) => prev - 1)}
+                        className={`flex-1 py-3 rounded-full shadow-md text-white transition-colors 
+        ${
+          currentIndex === 0
+            ? "bg-gray-300 cursor-not-allowed"
+            : "bg-[#995098] hover:bg-[#8a467f]"
+        }`}
+                      >
+                        Previous
+                      </button>
+
+                      {/* Next or Submit */}
+                      {currentIndex < questions.length - 1 ? (
+                        <button
+                          onClick={() => {
+                            if (!answers[currentQuestion.id]) {
+                              toast.error("Please answer before going next!");
+                              return;
+                            }
+                            setCurrentIndex((prev) => prev + 1);
+                          }}
+                          className="flex-1 py-3 rounded-full shadow-md text-white bg-[#995098] hover:bg-[#8a467f] transition-colors"
+                        >
+                          Next
+                        </button>
+                      ) : (
+                        <button
+                          onClick={submitAnswers}
+                          className="flex-1 py-3 rounded-full shadow-md text-white bg-[#995098] hover:bg-[#8a467f] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              <p className="text-center text-sm text-gray-500 mb-4">
+                Question {currentIndex + 1} of {questions.length}
+              </p>
+              {/* <div className="flex justify-center mt-8">
                 <button
                   onClick={submitAnswers}
                   className="w-full mt-8 bg-indigo-600 text-white py-3 rounded-2xl font-semibold hover:bg-indigo-700 transition-colors duration-200 shadow-lg theme-button"
                 >
                   Submit Answers
                 </button>
-              </div>
+              </div> */}
 
               {isSubmitting && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
@@ -302,33 +373,6 @@ export default function Questions() {
                   </div>
                 </div>
               )}
-            </div>
-
-            {/* ----------------------- RIGHT COLUMN (Status Panel) ----------------------- */}
-            <div className="hidden md:block p-4 bg-gray-50 rounded-xl shadow-sm h-fit sticky top-10 um-form-section">
-              <h3 className="">Quiz Questions List</h3>
-
-              <ul className="space-y-3">
-                {questions.map((q) => {
-                  const answered = answers[q.id] ? true : false;
-                  return (
-                    <li
-                      key={q.id}
-                      className="flex items-center justify-between p-2 bg-white rounded-lg border shadow-sm"
-                    >
-                      <span className="text-gray-700 font-medium line-clamp-1">
-                        {q.question_text}
-                      </span>
-
-                      {answered ? (
-                        <span className="text-green-600 text-xl">✔️</span>
-                      ) : (
-                        <span className="text-gray-400 text-xl">⭕</span>
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
             </div>
           </div>
         </div>

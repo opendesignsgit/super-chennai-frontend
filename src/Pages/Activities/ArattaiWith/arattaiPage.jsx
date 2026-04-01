@@ -584,7 +584,7 @@ const mockUpcomingEvents = [
 
         {/* Title */}
         <div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">
-          <h2>Chennai Conclave 2026</h2>
+          <h2>Media Highlights</h2>
           <p>
             A collection of stage highlights, speaker sessions, interactions,
             and memento-giving moments from the conclave.

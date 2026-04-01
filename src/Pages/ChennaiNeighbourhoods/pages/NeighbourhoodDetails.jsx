@@ -32,7 +32,11 @@ const sameLetterLocations = locations?.filter((loc) =>
   console.log("data page", data);
   const [activeCategory, setActiveCategory] = useState(null);
   const [open, setOpen] = useState(false);
-  
+
+  const [openModal, setOpenModal] = useState(false);
+  const [openLocations, setOpenLocations] = useState(false);
+  const [openLocationsModal, setOpenLocationsModal] = useState(false);
+
   if (loading) return <div className="p-10">Loading...</div>;
   const location = data?.[0]?.locations;
   const grouped =
@@ -58,7 +62,7 @@ const sameLetterLocations = locations?.filter((loc) =>
       <EmptyState
         title="No Locations Found"
         message="This area currently has no neighbourhood data."
-        onReset={() => navigate("/ChennaiNeighbourhood")}
+        onReset={() => navigate("/neighbourhood")}
       />
     );
   }
@@ -68,7 +72,7 @@ const sameLetterLocations = locations?.filter((loc) =>
       <EmptyState
         title="Invalid Location"
         message="We couldn't find details for this location."
-        onReset={() => navigate("/ChennaiNeighbourhood")}
+        onReset={() => navigate("/neighbourhood")}
       />
     );
   }
@@ -100,6 +104,52 @@ const sameLetterLocations = locations?.filter((loc) =>
         </div>
       </div>
 
+      <div className="flex items-center bg-white rounded-full shadow border overflow-hidden w-full max-w-4xl">
+        <div className="flex items-center gap-2 px-4 py-3 border-r">
+          <span>📍</span>
+
+          <select
+            className="outline-none bg-transparent"
+            value={locationId}
+            onChange={(e) => navigate(`/neighbourhood/${e.target.value}`)}
+          >
+            {sameLetterLocations?.map((loc) => (
+              <option key={loc.id} value={loc.locality}>
+                {loc.locality}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* search input */}
+        <input
+          type="text"
+          placeholder=""
+          className="flex-1 px-4 py-3 outline-none"
+        />
+
+        {/* search button */}
+        <button className="bg-purple-600 text-white px-6 py-3">Search</button>
+
+        {/* explore button */}
+        <button
+          onClick={() => {
+            setOpen(true);
+            setActiveCategory(null);
+          }}
+          className="bg-purple-500 text-white px-6 py-3 rounded-r-full"
+        >
+          Click Here to Explore
+        </button>
+      </div>
+
+      <button
+        onClick={() => setOpenLocationsModal(true)}
+        className="bg-purple-600 text-white px-6 py-3 rounded-full"
+      >
+        Locations
+      </button>
+
       <div className="">
         <section className="mt-10 bg-white visitIntroParaSection">
           <div className="container max-w-7xl mx-auto px-4 !mb-0">
@@ -124,29 +174,15 @@ const sameLetterLocations = locations?.filter((loc) =>
         </section>
       </div>
 
-      <button
-        onClick={() => {
-          setOpen(true);
-          setActiveCategory(null);
-        }}
-        className="bg-purple-600 text-white px-6 py-3 rounded-full"
-      >
-        Click to View
-      </button>
-
-      <button
-        onClick={() => setOpen(!open)}
-        className="bg-purple-600 text-white px-6 py-3 rounded-full"
-      >
-        Browse {firstLetter} Locations
-      </button>
-
-      {open && (
+      {openLocations && (
         <div className="bg-white shadow rounded-lg mt-4 p-4">
           {sameLetterLocations?.map((loc) => (
             <div
               key={loc.id}
-              onClick={() => navigate(`/ChennaiNeighbourhood/${loc.locality}`)}
+              onClick={() => {
+                navigate(`/neighbourhood/${loc.locality}`);
+                setOpenLocations(false);
+              }}
               className="cursor-pointer py-2 border-b hover:text-purple-600"
             >
               {loc.locality}
@@ -155,8 +191,39 @@ const sameLetterLocations = locations?.filter((loc) =>
         </div>
       )}
 
+      {openLocationsModal && (
+        <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
+          <div className="bg-white w-[95%] max-w-3xl rounded-lg p-6 relative">
+            {/* close */}
+            <button
+              onClick={() => setOpenLocationsModal(false)}
+              className="absolute top-4 right-4 text-xl"
+            >
+              ✕
+            </button>
+
+            <h2 className="text-2xl font-bold mb-4">Choose Location</h2>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-h-[400px] overflow-auto">
+              {locations?.map((loc) => (
+                <div
+                  key={loc.id}
+                  onClick={() => {
+                    navigate(`/neighbourhood/${loc.locality}`);
+                    setOpenLocationsModal(false);
+                  }}
+                  className="border rounded-full px-4 py-2 cursor-pointer hover:bg-purple-600 hover:text-white text-center"
+                >
+                  {loc.locality}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       {open && (
-        <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center">
+        <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
           <div className="bg-white w-[95%] max-w-6xl rounded-lg overflow-hidden">
             <div className="grid grid-cols-12">
               {/* LEFT CATEGORY */}

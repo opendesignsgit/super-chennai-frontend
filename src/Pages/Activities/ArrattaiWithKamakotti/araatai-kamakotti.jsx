@@ -174,25 +174,81 @@ export default function ArattaiWithKamakotti() {
     setModalImage(null);
   };
 
-  const mockUpcomingEvents = [
-    { id: 1, image: "/images/jahabar-gallery/jahabar-gallery-img-3.jpg" },
-    { id: 2, image: "/images/jahabar-gallery/jahabar-gallery-img-4.jpg" },
-    { id: 3, image: "/images/jahabar-gallery/jahabar-gallery-img-5.jpg" },
-    { id: 4, image: "/images/jahabar-gallery/jahabar-gallery-img-6.jpg" },
-    { id: 5, image: "/images/jahabar-gallery/jahabar-gallery-img7.jpg" },
-    { id: 6, image: "/images/jahabar-gallery/jahabar-gallery-img-8.jpg" },
-    { id: 7, image: "/images/jahabar-gallery/jahabar-gallery-img-9.jpg" },
-    { id: 8, image: "/images/jahabar-gallery/jahabar-gallery-img-10.jpg" },
-    { id: 9, image: "/images/jahabar-gallery/jahabar-gallery-imgs1.jpg" },
-    { id: 10, image: "/images/jahabar-gallery/jahabar-gallery-imh2.jpg" },
-    { id: 10, image: "/images/jahabar-gallery/jahabar-gallery-imh2.jpg" },
-  ];
+const mockUpcomingEvents = [
+{ id:1, image:"/images/kamakoti-gallery/DSC06256.JPG" },
+{ id:2, image:"/images/kamakoti-gallery/kamakkoti-img16.jpg" },
+{ id:3, image:"/images/kamakoti-gallery/kamakoti-7.jpg" },
+{ id:4, image:"/images/kamakoti-gallery/kamakoti-img1.jpg" },
+{ id:5, image:"/images/kamakoti-gallery/kamakoti-img2.jpg" },
+{ id:6, image:"/images/kamakoti-gallery/kamakoti-img3.jpg" },
+{ id:7, image:"/images/kamakoti-gallery/kamakoti-img4.jpg" },
+{ id:8, image:"/images/kamakoti-gallery/kamakoti-img5.jpg" },
+{ id:9, image:"/images/kamakoti-gallery/kamakoti-img6.jpg" },
+{ id:10, image:"/images/kamakoti-gallery/kamakoti-img7.jpg" },
+{ id:11, image:"/images/kamakoti-gallery/kamakoti-img8.jpg" },
+{ id:12, image:"/images/kamakoti-gallery/kamakoti-img10.jpg" },
+{ id:13, image:"/images/kamakoti-gallery/kamakoti-img13.jpg" },
+{ id:14, image:"/images/kamakoti-gallery/kamakoti-img15.jpg" },
+{ id:15, image:"/images/kamakoti-gallery/kamakoti-img17.jpg" },
+{ id:16, image:"/images/kamakoti-gallery/kamakoti-img20.jpg" },
+{ id:17, image:"/images/kamakoti-gallery/kamakoti-img22.jpg" },
+{ id:18, image:"/images/kamakoti-gallery/kamakoti-img23.jpg" },
 
-  const registerRef = useRef(null);
+{ id:19, image:"/images/kamakoti-gallery/kamakoti-img27.jpg" },
+{ id:20, image:"/images/kamakoti-gallery/kamakoti-img28.jpg" },
+{ id:21, image:"/images/kamakoti-gallery/kamakoti-img29.jpg" },
+{ id:22, image:"/images/kamakoti-gallery/kamakoti-img30.jpg" },
+{ id:23, image:"/images/kamakoti-gallery/kamakoti-img31.jpg" },
+{ id:24, image:"/images/kamakoti-gallery/kamakoti-img32.jpg" },
+{ id:25, image:"/images/kamakoti-gallery/kamakoti-img41.jpg" },
+{ id:26, image:"/images/kamakoti-gallery/kamakoti-img-42.jpg" },
+{ id:27, image:"/images/kamakoti-gallery/kamakoti-img-44.jpg" },
+{ id:28, image:"/images/kamakoti-gallery/kamakoti-img46.jpg" },
+{ id:29, image:"/images/kamakoti-gallery/kamakoti-img47.jpg" },
+{ id:30, image:"/images/kamakoti-gallery/kamakoti-img48.jpg" },
+{ id:31, image:"/images/kamakoti-gallery/kamakoti-img50.jpg" },
+{ id:32, image:"/images/kamakoti-gallery/kamakoti-img52.jpg" },
+{ id:33, image:"/images/kamakoti-gallery/kamakoti-img53.jpg" },
+{ id:34, image:"/images/kamakoti-gallery/kamakoti-img-54.jpg" },
+{ id:35, image:"/images/kamakoti-gallery/kamakoti-img55.jpg" },
+{ id:36, image:"/images/kamakoti-gallery/kamakoti-img56.jpg" },
 
-  const scrollToRegister = () => {
-    registerRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+// { id:37, image:"/images/kamakoti-gallery/kamakoti-img57.JPG" },
+{ id:38, image:"/images/kamakoti-gallery/kamakoti-img58.jpg" },
+{ id:39, image:"/images/kamakoti-gallery/kamakoti-img59.jpg" },
+{ id:40, image:"/images/kamakoti-gallery/kamakoti-img60.jpg" },
+{ id:41, image:"/images/kamakoti-gallery/kamakoti-img61.jpg" },
+{ id:42, image:"/images/kamakoti-gallery/kamakoti-img62.jpg" },
+{ id:43, image:"/images/kamakoti-gallery/kamakoti-img-63.jpg" },
+{ id:44, image:"/images/kamakoti-gallery/kamakoti-img9.jpg" },
+{ id:45, image:"/images/kamakoti-gallery/kamakoti-img11.jpg" },
+{ id:46, image:"/images/kamakoti-gallery/kamakoti-img12.jpg" },
+{ id:47, image:"/images/kamakoti-gallery/kamakoti-img-14.jpg" },
+{ id:48, image:"/images/kamakoti-gallery/kamakoti-img18.jpg" },
+{ id:49, image:"/images/kamakoti-gallery/kamakoti-img19.jpg" },
+{ id:50, image:"/images/kamakoti-gallery/kamakoti-img21.jpg" },
+{ id:51, image:"/images/kamakoti-gallery/kamakoti-img24.jpg" },
+{ id:52, image:"/images/kamakoti-gallery/kamakoti-img25.jpg" },
+{ id:53, image:"/images/kamakoti-gallery/kamakoti-img-26.jpg" },
+{ id:54, image:"/images/kamakoti-gallery/kamakoti-img33.jpg" },
+
+{ id:55, image:"/images/kamakoti-gallery/kamakoti-img34.jpg" },
+{ id:56, image:"/images/kamakoti-gallery/kamakoti-img36.jpg" },
+{ id:57, image:"/images/kamakoti-gallery/kamakoti-img40.jpg" },
+{ id:58, image:"/images/kamakoti-gallery/kamakoti-img43.jpg" },
+{ id:59, image:"/images/kamakoti-gallery/kamakoti-img-45.jpg" },
+{ id:60, image:"/images/kamakoti-gallery/kamakoti-img49.jpg" },
+{ id:61, image:"/images/kamakoti-gallery/kamakoti-img-51.jpg" },
+{ id:62, image:"/images/kamakoti-gallery/kamakoti-img-64.jpg" },
+{ id:63, image:"/images/kamakoti-gallery/kamakoti-img65.jpg" },
+{ id:64, image:"/images/kamakoti-gallery/kamakoti-img66.jpg" }
+];
+
+const registerRef = useRef(null);
+
+const scrollToRegister = () => {
+  registerRef.current?.scrollIntoView({ behavior: "smooth" });
+};
 
   const [scrollDir, setScrollDir] = useState("left");
   const lastScrollY = useRef(0);
@@ -215,6 +271,11 @@ export default function ArattaiWithKamakotti() {
       return prevX;
     });
   };
+
+
+
+
+
 
   return (
     <>
@@ -344,10 +405,7 @@ export default function ArattaiWithKamakotti() {
       </section>
 
       {/*============= GALLERY ================== */}
-      <div
-        className="EventsCalendarMainSection mb-10"
-        style={{ display: "none" }}
-      >
+      <div className="EventsCalendarMainSection mb-10">
         <div
           className={`EventsCalenderBackground ${
             scrollDir === "right"
@@ -361,7 +419,7 @@ export default function ArattaiWithKamakotti() {
 
         {/* Title */}
         <div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">
-          <h2>Chennai Conclave 2026</h2>
+          <h2>Media Highlights</h2>
           <p>
             A collection of stage highlights, speaker sessions, interactions,
             and memento-giving moments from the conclave.

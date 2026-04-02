@@ -40,7 +40,7 @@ export default function NeighbourhoodCategory() {
           {category} in {locationId}
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+           <div className="locationmapin">
           {filtered.map((item) => (
             <div
               key={item.id}
@@ -49,7 +49,7 @@ export default function NeighbourhoodCategory() {
                   `/neighbourhood/${locationId}/${category}/${item.slug}`,
                 )
               }
-              className="cursor-pointer"
+              className="cursor-pointer detailacrdsss"
             >
               <img
                 src={
@@ -60,8 +60,17 @@ export default function NeighbourhoodCategory() {
                 className="w-full h-48 object-cover"
               />
 
-              <div className="p-4">
-                <h3 className="font-semibold">{item.name}</h3>
+              <div className="p-4 detailsmap">
+                <h3 className="titlenamecontent">{item.name}</h3>
+
+                <p className="mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  ad temporibus
+                </p>
+
+                <div className="readmorelink">
+                  <Link className="">READMORE</Link>
+                </div>
               </div>
             </div>
           ))}

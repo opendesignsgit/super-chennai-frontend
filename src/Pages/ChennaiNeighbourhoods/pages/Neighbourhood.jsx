@@ -159,7 +159,7 @@ export default function ChennaiNeighbourhood() {
             </div>
           </section>
 
-          <section className="mt-10 bg-white">
+          <section className="mt-0 bg-white">
             <div className="container max-w-7xl mx-auto px-4 !mb-0">
               {loading ? (
                 <SkeletonLocations />
@@ -185,9 +185,9 @@ export default function ChennaiNeighbourhood() {
                 />
               ) : (
                 <>
-                  <p className="mb-4">
+                  <p className="mb-8">
                     <span
-                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-semibold"
+                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-semibold"
                       style={{ background: "#F3ECFB", color: "#6A3FA0" }}
                     >
                       Showing {filteredLocations.length} locations

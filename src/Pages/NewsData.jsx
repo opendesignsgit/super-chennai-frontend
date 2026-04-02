@@ -371,6 +371,22 @@ export const two = [
 
 export const newsArticle = [
   {
+    id: -7221221328,
+    Company: "The Hindu BusinessLine | 31 Mar 2026",
+    EventsCalendarTitle:
+      "Swadeshi technologies and a long-term approach to innovation important for India: IIT-M’s Kamakoti",
+    image: "/images/news-img-kamakoti-1.jpeg",
+    link: "https://www.thehindubusinessline.com/news/swadeshi-technologies-and-a-long-term-approach-to-innovation-important-for-india-iit-ms-kamakoti/article70803873.ece",
+  },
+  {
+    id: -7221221329,
+    Company: "Times of India | 31 Mar 2026",
+    EventsCalendarTitle: "Kamakoti: We must grow our own tech",
+    image: "/images/kamakoti-news-img2.jpeg",
+    link: "https://timesofindia.indiatimes.com/city/chennai/kamakoti-we-must-grow-our-own-tech/amp_articleshow/129910108.cms",
+  },
+
+  {
     id: -7221221327,
     Company: "The Hindu Business line | 22 Mar 2026,",
     EventsCalendarTitle:
@@ -1018,6 +1034,40 @@ export const NammaStoreiesnewsArticle = [
 ];
 
 export const newsPhotos = [
+  
+  {
+    id: -11,
+    Company: "March 30, 2026",
+    EventsCalendarTitle:
+      "Super Chennai honours IIT-M director as ‘Icon of the Month’",
+    image: "/images/NewsLetter/kamakoti-news-img-3.jpeg",
+    image1: "/images/NewsLetter/kamakoti-news-img-3.jpeg",
+  },
+  {
+    id: -12,
+    Company: "March 30, 2026",
+    EventsCalendarTitle:
+      "சென்னை ஐஐடி இயக்குநருக்கு சிறந்த ஆளுமை விருது",
+    image: "/images/NewsLetter/news-kamakoti-img4.jpeg",
+    image1: "/images/NewsLetter/news-kamakoti-img4.jpeg",
+  },
+  {
+    id: -3,
+    Company: "March 31, 2026",
+    EventsCalendarTitle:
+      "Kamakoti: We must grow our own technology ",
+    image: "/images/NewsLetter/news-5.jpeg",
+    image1: "/images/NewsLetter/news-5.jpeg",
+  },
+  {
+    id: -4,
+    Company: "March 31, 2026",
+    EventsCalendarTitle:
+      "இந்திய பொருளாதாரத்தை மேம்படுத்த உள்நாட்டு தயாரிப்புக்கு முன்னுரிமை: ஐஐடி இயக்குநர்",
+    image: "/images/NewsLetter/news-6.jpeg",
+    image1: "/images/NewsLetter/news-6.jpeg",
+  },
+
   {
     id: 1,
     Company: "February 19, 2026",

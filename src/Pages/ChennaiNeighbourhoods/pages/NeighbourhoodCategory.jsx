@@ -142,8 +142,11 @@ if (loading) return <NeighbourhoodListSkeleton />;
             <div
               key={item.id}
               onClick={() =>
+                // navigate(
+                //   `/neighbourhood/${locationId}/${category}/${item.slug}`,
+                // )
                 navigate(
-                  `/neighbourhood/${locationId}/${category}/${item.slug}`,
+                  `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
                 )
               }
               className="cursor-pointer detailacrdsss"
@@ -173,8 +176,6 @@ if (loading) return <NeighbourhoodListSkeleton />;
           ))}
         </div>
       </div>
-
-
     </>
   );
 }

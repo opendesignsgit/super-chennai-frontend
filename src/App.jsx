@@ -905,8 +905,13 @@ function App() {
           element={<NeighbourhoodCategory />}
         />
 
-        <Route
+        {/* <Route
           path="/neighbourhood/:locationId/:category/:slug"
+          element={<NeighbourhoodItemDetail />}
+        /> */}
+
+        <Route
+          path="/neighbourhood/:locationId/:category/:subcategory/:slug"
           element={<NeighbourhoodItemDetail />}
         />
 

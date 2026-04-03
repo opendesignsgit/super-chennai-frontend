@@ -54,8 +54,8 @@
   position: relative;
 }
 
-.searchhoodfilter::before{
-    /* content: "";
+.searchhoodfilter::before {
+  /* content: "";
     position: absolute;
     left: 0;
     top: 50%;
@@ -68,11 +68,11 @@
 }
 
 .filtersearchnew .searchhoodfilter {
-    background-image: url("https://dev.opendesignsin.com/neighlocation.svg");
-    background-repeat: no-repeat;
-    background-position: 15px center;
-    background-size: 25px;
-    padding-left: 46px;
+  background-image: url("https://dev.opendesignsin.com/neighlocation.svg");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 25px;
+  padding-left: 46px;
 }
 
 .searchhoodfilter:focus-visible {
@@ -91,15 +91,12 @@
   justify-content: center;
 }
 
-
-
 .filtersearchnewmain {
   position: relative;
   margin-top: 50px;
 }
 
 .filtersearchnew::before {
-  
 }
 
 .searchbuttonfilt {
@@ -127,7 +124,7 @@
 
 .neighbiurnewcards {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 2%;
   padding-bottom: 40px;
@@ -156,6 +153,7 @@
   border-top-right-radius: 10px;
   width: 100%;
   height: 210px;
+  object-fit: cover;
 }
 
 .carcontentsnew h4 {
@@ -242,6 +240,8 @@
   background-color: #e6e6e6;
   padding-top: 50px;
   padding-bottom: 55px;
+  background: url("/public/images/locationpopupimage.jpg");
+  background-position: bottom;
 }
 
 .pointerdiv.buttonnonactivated {
@@ -460,11 +460,12 @@
   justify-content: flex-start;
   column-gap: 3.5%;
   row-gap: 50px;
+  margin-top: 100px;
+  padding-bottom: 100px;
 }
 
 .detailacrdsss {
   width: 31%;
-
 }
 .detailacrdsss img {
   height: 255px;
@@ -472,14 +473,13 @@
   border-top-left-radius: 20px;
 }
 
-
-
 .detailsmap {
   border: 1px solid #a8a8a8;
   padding: 40px;
   padding-bottom: 30px;
+  padding-top: 30px;
   border-top: 0;
-    box-shadow:
+  box-shadow:
     rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -517,96 +517,131 @@
 }
 
 .changethelocation {
-    display: flex;
-    justify-content: center;
-    margin-top: 53px;
-
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .changethelocation button {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    font-family: 'Poppins';
-  }
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: "Poppins";
+}
 .changethelocation button:hover {
   color: #892c7a;
   text-decoration: #892c7a underline;
 }
-  .mainlocationdd {
-    display: flex;
-    justify-content:center ;
-    position: relative;
-  }
 
-  .submainlocationdd {
-    position: absolute;
-    top: -26px;
-    z-index: 100;
-    height: 65px;
-    border: 2px solid #c8a5c4;
-    display: flex;
-    align-items: center;
-    padding-right: 3px;
-  }
+.popupseacrhinpout {
+  padding-top: 85px;
+  padding-bottom: 50px;
+  background: url("/public/images/locationdetailpage.jpg");
+  background-position: center 41%;
+  height: 540px;
+  border-radius: 10px;
+}
+.mainlocationdd {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
-  .locationsvginput {
-       width: 22px;
-    height: 22px;
-  }
+.submainlocationdd {
+  position: absolute;
+  top: -32px;
+  z-index: 100;
+  height: 65px;
+  border: 2px solid #c8a5c4;
+  display: flex;
+  align-items: center;
+  padding-right: 3px;
+}
 
-  .mainselectinputss {
-      padding-right: 5px;
-  }
+.locationsvginput {
+  width: 22px;
+  height: 22px;
+}
 
-
+.mainselectinputss {
+  padding-right: 5px;
+}
 
 .slectmapoption {
-    font-size: 20px;
-    line-height: 100%;
-    font-family: '29LT Bukra';
-    color: #4f4f4f;
-    font-weight: 600;
-    cursor: pointer;
+  font-size: 20px;
+  line-height: 100%;
+  font-family: "29LT Bukra";
+  color: #4f4f4f;
+  font-weight: 600;
+  cursor: pointer;
 }
-.slectmapoption option{
-    font-size: 16px;
-    line-height: 100%;
-    font-family: 'Poppins';
-    color: #4f4f4f;
-    font-weight: 500;
+.slectmapoption option {
+  font-size: 18px;
+  line-height: 100%;
+  font-family: "Poppins";
+  color: #4f4f4f;
+  font-weight: 400;
+  background: #892c7a;
+  color: #fff;
 }
+
+.slectmapoption option:hover {
+  background-color: #fff !important;
+}
+
+/* .slectmapoption option:first-child {
+    margin-top: 10px;
+  } */
 
 .inputmapsearchss {
-    background: #892c7a;
-    height: 57px;
-    width: 160px;
-    color: #fff;
-    font-family: '29LT Bukra SmBd';
-    font-size: 18px;
-    border-radius: 50px;
-    padding-right: 30px;
-    cursor: pointer;
-
+  background: #892c7a;
+  height: 57px;
+  width: 160px;
+  color: #fff;
+  font-family: "29LT Bukra SmBd";
+  font-size: 18px;
+  border-radius: 50px;
+  padding-right: 30px;
+  cursor: pointer;
 }
 
 .clickheretoexplorelocation {
-    background-color: #995098;
-    color: #Fff;
-    font-family: '29LT Bukra';
-    font-weight: 600;
-    height: 57px;
-    border-radius: 60px;
-    width: 260px;
-    margin-left: -49px;
-    font-size: 17px;
-    letter-spacing: 0.5px;
-    cursor: pointer;
+  background-color: #995098;
+  color: #fff;
+  font-family: "29LT Bukra";
+  font-weight: 600;
+  height: 57px;
+  border-radius: 60px;
+  width: 260px;
+  margin-left: -49px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 }
+
+.popupseacrhinpout .searchhoodfilter {
+  max-width: 703px;
+  background-color: #fff;
+}
+
+.popupseacrhinpout .searchbuttonfilt {
+  right: 14%;
+}
+
+.popupseacrhinpout .workIntro p {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 30px;
+}
+.popupseacrhinpout .workIntro h1 {
+  font-size: 78px;
+  line-height: 70px;
+}
+
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;

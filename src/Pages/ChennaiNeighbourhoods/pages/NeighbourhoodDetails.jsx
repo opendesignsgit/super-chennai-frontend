@@ -6,28 +6,22 @@ import { useNavigate } from "react-router-dom";
 const BASE = "https://dev-cms.superchennai.com";
 import EmptyState from "../Components/locations/EmptyState";
 import { useLocations } from "../hooks/useLocations";
-
+import Search from "../Components/Search";
 
 export default function NeighbourhoodDetail() {
-
   const navigate = useNavigate();
   const { locationId } = useParams();
   const { data, loading } = useNeighbourhood({
     location: decodeURIComponent(locationId),
   });
 
-
-
-const firstLetter = decodeURIComponent(locationId)
-  ?.charAt(0)
-  ?.toUpperCase();
-
+  const firstLetter = decodeURIComponent(locationId)?.charAt(0)?.toUpperCase();
 
   const { locations } = useLocations();
 
-const sameLetterLocations = locations?.filter((loc) =>
-  loc.locality?.toUpperCase().startsWith(firstLetter)
-);
+  const sameLetterLocations = locations?.filter((loc) =>
+    loc.locality?.toUpperCase().startsWith(firstLetter),
+  );
 
   console.log("data page", data);
   const [activeCategory, setActiveCategory] = useState(null);
@@ -51,7 +45,6 @@ const sameLetterLocations = locations?.filter((loc) =>
   const activeCat = activeCategory || categories?.[0];
 
   const filteredItems = grouped?.[activeCat] || [];
-
 
   if (loading) {
     return <div className="p-10">Loading...</div>;
@@ -86,9 +79,6 @@ const sameLetterLocations = locations?.filter((loc) =>
     );
   }
 
-
-
-
   return (
     <>
       <div className="accaodomationBannerSection">
@@ -104,55 +94,53 @@ const sameLetterLocations = locations?.filter((loc) =>
         </div>
       </div>
 
+      <div className="mainlocationdd">
+        <div className="flex items-center bg-white rounded-full shadow border overflow-hidden submainlocationdd">
+          <div className="flex items-center gap-1 px-4 py-3 mainselectinputss">
+            <img
+              className="locationsvginput"
+              src="https://dev.opendesignsin.com/neighlocation.svg"
+              alt=""
+            />
 
-<div className="mainlocationdd">
-      <div className="flex items-center bg-white rounded-full shadow border overflow-hidden submainlocationdd">
-        <div className="flex items-center gap-1 px-4 py-3 mainselectinputss">
-         <img className="locationsvginput" src="https://dev.opendesignsin.com/neighlocation.svg" alt="" />
+            <select
+              className="outline-none bg-transparent slectmapoption"
+              value={locationId}
+              onChange={(e) => navigate(`/neighbourhood/${e.target.value}`)}
+            >
+              {sameLetterLocations?.map((loc) => (
+                <option key={loc.id} value={loc.locality}>
+                  {loc.locality}
+                </option>
+              ))}
+            </select>
+          </div>
 
-          <select
-            className="outline-none bg-transparent slectmapoption"
-            value={locationId}
-            onChange={(e) => navigate(`/neighbourhood/${e.target.value}`)}
+          {/* search input */}
+          <input
+            type="text"
+            placeholder=""
+            className="flex-1 px-1 py-3 outline-none "
+          />
+
+          {/* search button */}
+          <button className="inputmapsearchss">Search</button>
+
+          {/* explore button */}
+          <button
+            onClick={() => {
+              setOpen(true);
+              setActiveCategory(null);
+            }}
+            className="clickheretoexplorelocation"
           >
-            {sameLetterLocations?.map((loc) => (
-              <option key={loc.id} value={loc.locality}>
-                {loc.locality}
-              </option>
-            ))}
-          </select>
+            Click Here to Explore
+          </button>
         </div>
-
-        {/* search input */}
-        <input
-          type="text"
-          placeholder=""
-          className="flex-1 px-1 py-3 outline-none "
-        />
-
-        {/* search button */}
-        <button className="inputmapsearchss">Search</button>
-
-        {/* explore button */}
-        <button
-          onClick={() => {
-            setOpen(true);
-            setActiveCategory(null);
-          }}
-          className="clickheretoexplorelocation"
-        >
-          Click Here to Explore
-        </button>
       </div>
-
-      </div>
-
 
       <div className="changethelocation">
-        <button
-          onClick={() => setOpenLocationsModal(true)}
-          className=""
-        >
+        <button onClick={() => setOpenLocationsModal(true)} className="">
           Change the Location
         </button>
       </div>
@@ -200,38 +188,37 @@ const sameLetterLocations = locations?.filter((loc) =>
 
       {openLocationsModal && (
         <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
-          <div className="bg-white w-[95%] max-w-3xl rounded-lg p-6 relative">
+          <div className="bg-white container max-w-5xl mx-auto px-4 !mb-0 relative popupseacrhinpout" >
             {/* close */}
             <button
               onClick={() => setOpenLocationsModal(false)}
-              className="absolute top-4 right-4 text-xl"
+              className="absolute top-4 right-4 text-xl popupcloselocation"
             >
               ✕
             </button>
 
-            <h2 className="text-2xl font-bold mb-4">Choose Location</h2>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-h-[400px] overflow-auto">
-              {locations?.map((loc) => (
-                <div
-                  key={loc.id}
-                  onClick={() => {
-                    navigate(`/neighbourhood/${loc.locality}`);
-                    setOpenLocationsModal(false);
-                  }}
-                  className="border rounded-full px-4 py-2 cursor-pointer hover:bg-purple-600 hover:text-white text-center"
-                >
-                  {loc.locality}
-                </div>
-              ))}
+            <div class="workIntro">
+              <h1>Neighbourhood</h1>
+              <p>
+                Public transportation in Chennai is managed by various
+                government bodies, offering an extensive network that connects
+                all parts of the city. Key modes include the Industry.
+              </p>
             </div>
+
+            <Search
+              onSearch={(q) => {
+                updateFilter("q", q);
+                updateFilter("alpha", "");
+              }}
+            />
           </div>
         </div>
       )}
 
       {open && (
         <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
-                <div className="bg-white w-[95%] max-w-6xl overflow-hidden locationpopupmain">
+          <div className="bg-white w-[95%] max-w-6xl overflow-hidden locationpopupmain">
             <div className="grid grid-cols-12 popupneigbhbourh">
               {/* LEFT CATEGORY */}
               <div className="col-span-4 bg-purple-600 text-white p-6 leftsidepopup">
@@ -291,9 +278,9 @@ const sameLetterLocations = locations?.filter((loc) =>
                 </div>
 
                 {/* SEARCH BUTTON */}
-                <div className="mt-8 text-right locationseacrgpopuo">
+                {/* <div className="mt-8 text-right locationseacrgpopuo">
                   <button className="text-white">Search</button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

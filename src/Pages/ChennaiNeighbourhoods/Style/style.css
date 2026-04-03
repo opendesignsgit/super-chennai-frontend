@@ -51,6 +51,28 @@
   font-family: "29LT Bukra Regular";
   color: #505050;
   font-weight: 700;
+  position: relative;
+}
+
+.searchhoodfilter::before{
+    /* content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    background-image: url("https://dev.opendesignsin.com/neighlocation.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 100; */
+}
+
+.filtersearchnew .searchhoodfilter {
+    background-image: url("https://dev.opendesignsin.com/neighlocation.svg");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 25px;
+    padding-left: 46px;
 }
 
 .searchhoodfilter:focus-visible {
@@ -69,9 +91,15 @@
   justify-content: center;
 }
 
+
+
 .filtersearchnewmain {
   position: relative;
   margin-top: 50px;
+}
+
+.filtersearchnew::before {
+  
 }
 
 .searchbuttonfilt {
@@ -175,6 +203,410 @@
   font-weight: 600;
 }
 
+/* other-pages */
+
+.popupneigbhbourh {
+  display: flex;
+}
+
+.leftsidepopup {
+  background-color: #995099;
+  padding-right: 0;
+  width: 28%;
+  padding-left: 5%;
+  padding-top: 50px;
+}
+
+.pointerdiv {
+  font-family: "29LT Bukra SmBd";
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  border-left: 0;
+  color: #9a4d93;
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 100%;
+  padding-right: 18px;
+  padding-top: 16px;
+}
+.pointerdiv.buttonactivated {
+  color: #9a4d93;
+  border-radius: 25px 0 0 25px;
+  border-radius: 30px 0 0 30px;
+}
+
+.rightsidepopup {
+  width: 72%;
+  background-color: #e6e6e6;
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+
+.pointerdiv.buttonnonactivated {
+  font-family: "29LT Bukra";
+  color: #fff;
+  font-weight: 400;
+  border-bottom: 1px solid #b16caf;
+}
+
+.locationname {
+  font-size: 48px;
+  font-family: "NewAmsterdam";
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: end;
+  padding-right: 15px;
+  margin-bottom: 35px;
+  color: #feffff;
+  line-height: 38px;
+}
+
+.popuprightsidecontent {
+  display: flex;
+}
+
+.popuprightsidecontent {
+  display: block;
+  column-count: 2;
+  column-gap: 40px;
+  width: 83%;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.butoonsearchbutton {
+  width: 95%;
+  background: #efefef;
+  border: 1px solid #cbcbcb;
+  border-radius: 50px;
+  padding: 7px 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+  break-inside: avoid;
+  cursor: pointer;
+  text-align: left;
+  font-family: "29LT Bukra Regular";
+  color: #6b6b6b;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.popupcloselocation {
+  border: 1.8px solid #050505;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 0;
+  top: 6%;
+  right: 6%;
+  cursor: pointer;
+}
+
+.locationseacrgpopuo {
+  margin-right: 30px;
+  margin-top: 0;
+}
+.locationseacrgpopuo button {
+  width: 145px;
+  height: 53px;
+  background-color: #995099;
+  border-radius: 50px;
+  font-family: "29LT Bukra Regular";
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.butoonsearchbutton:hover {
+  background-color: #995099;
+  color: #fff;
+}
+
+.locationsectionhover {
+  display: flex;
+}
+
+.locationiframe {
+  height: 700px;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.imagelocationsec {
+  width: 465px;
+  height: 522px;
+  left: 60%;
+}
+
+.hoverlocationsection {
+  padding-bottom: 100px;
+}
+.notlocationactived {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.locationsectionhover {
+  margin-top: 50px;
+  column-gap: 0;
+}
+
+.rightsidehoverlocation {
+  width: 40%;
+  z-index: 10;
+}
+
+.leftsidehoverlocation {
+  width: 60%;
+}
+
+.locationlilst {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  z-index: 2;
+}
+
+.locationactived::before {
+  position: absolute;
+  content: "Click Here";
+  top: -3px;
+  font-size: 12px;
+  left: 4px;
+  color: #535353;
+  letter-spacing: 2px;
+  font-family: "29LT Bukra";
+  font-weight: 600;
+}
+
+.locationactived {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: 2px solid #995199 underline;
+  text-underline-offset: 8px;
+  font-weight: 700;
+  color: #975199;
+}
+
+.hoverlocationimagesection {
+  height: 500px;
+  border-left: 10px solid #995099;
+  border-bottom: 10px solid #995099;
+}
+
+.textwordonly {
+  position: relative;
+  width: max-content;
+}
+
+.locationactived {
+  position: relative;
+}
+
+.locationmainsection {
+  margin-top: 80px;
+}
+.locationactived::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 50%;
+  height: 1px;
+  left: auto;
+  background-color: #995199;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.leftsidehoverlocation {
+  position: relative;
+}
+
+.iconsimagelocation {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 5px;
+}
+.iconsimagelocation img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0.7);
+  margin-top: 2px;
+}
+
+.butoonsearchbutton:hover .iconsimagelocation img {
+  filter: none;
+}
+
+/* other-pages */
+
+.locationdetailcardss {
+  /* display: none; */
+}
+
+.locationmapin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 3.5%;
+  row-gap: 50px;
+}
+
+.detailacrdsss {
+  width: 31%;
+
+}
+.detailacrdsss img {
+  height: 255px;
+  width: 100%;
+  border-top-left-radius: 20px;
+}
+
+
+
+.detailsmap {
+  border: 1px solid #a8a8a8;
+  padding: 40px;
+  padding-bottom: 30px;
+  border-top: 0;
+    box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.locationmapin .readmorelink {
+  padding-top: 0;
+  border-top: 0;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.locationmapin .readmorelink a {
+  padding-left: 0;
+  font-size: 16px;
+  color: #a24392;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.titlenamecontent {
+  font-family: "29LT Bukra SmBd";
+  color: #a63e96;
+  font-size: 21px;
+  line-height: 120%;
+  padding-left: 0px;
+  /* min-height: 50px; */
+}
+
+.detailsmap p {
+  font-family: "Poppins";
+  color: #383838;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 13px;
+}
+
+.changethelocation {
+    display: flex;
+    justify-content: center;
+    margin-top: 53px;
+
+}
+
+.changethelocation button {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Poppins';
+  }
+.changethelocation button:hover {
+  color: #892c7a;
+  text-decoration: #892c7a underline;
+}
+  .mainlocationdd {
+    display: flex;
+    justify-content:center ;
+    position: relative;
+  }
+
+  .submainlocationdd {
+    position: absolute;
+    top: -26px;
+    z-index: 100;
+    height: 65px;
+    border: 2px solid #c8a5c4;
+    display: flex;
+    align-items: center;
+    padding-right: 3px;
+  }
+
+  .locationsvginput {
+       width: 22px;
+    height: 22px;
+  }
+
+  .mainselectinputss {
+      padding-right: 5px;
+  }
+
+
+
+.slectmapoption {
+    font-size: 20px;
+    line-height: 100%;
+    font-family: '29LT Bukra';
+    color: #4f4f4f;
+    font-weight: 600;
+    cursor: pointer;
+}
+.slectmapoption option{
+    font-size: 16px;
+    line-height: 100%;
+    font-family: 'Poppins';
+    color: #4f4f4f;
+    font-weight: 500;
+}
+
+.inputmapsearchss {
+    background: #892c7a;
+    height: 57px;
+    width: 160px;
+    color: #fff;
+    font-family: '29LT Bukra SmBd';
+    font-size: 18px;
+    border-radius: 50px;
+    padding-right: 30px;
+    cursor: pointer;
+
+}
+
+.clickheretoexplorelocation {
+    background-color: #995098;
+    color: #Fff;
+    font-family: '29LT Bukra';
+    font-weight: 600;
+    height: 57px;
+    border-radius: 60px;
+    width: 260px;
+    margin-left: -49px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;

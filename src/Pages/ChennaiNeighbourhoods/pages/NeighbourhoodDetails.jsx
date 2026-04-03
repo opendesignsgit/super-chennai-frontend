@@ -104,12 +104,14 @@ const sameLetterLocations = locations?.filter((loc) =>
         </div>
       </div>
 
-      <div className="flex items-center bg-white rounded-full shadow border overflow-hidden w-full max-w-4xl">
-        <div className="flex items-center gap-2 px-4 py-3 border-r">
-          <span>📍</span>
+
+<div className="mainlocationdd">
+      <div className="flex items-center bg-white rounded-full shadow border overflow-hidden submainlocationdd">
+        <div className="flex items-center gap-1 px-4 py-3 mainselectinputss">
+         <img className="locationsvginput" src="https://dev.opendesignsin.com/neighlocation.svg" alt="" />
 
           <select
-            className="outline-none bg-transparent"
+            className="outline-none bg-transparent slectmapoption"
             value={locationId}
             onChange={(e) => navigate(`/neighbourhood/${e.target.value}`)}
           >
@@ -125,11 +127,11 @@ const sameLetterLocations = locations?.filter((loc) =>
         <input
           type="text"
           placeholder=""
-          className="flex-1 px-4 py-3 outline-none"
+          className="flex-1 px-1 py-3 outline-none "
         />
 
         {/* search button */}
-        <button className="bg-purple-600 text-white px-6 py-3">Search</button>
+        <button className="inputmapsearchss">Search</button>
 
         {/* explore button */}
         <button
@@ -137,18 +139,23 @@ const sameLetterLocations = locations?.filter((loc) =>
             setOpen(true);
             setActiveCategory(null);
           }}
-          className="bg-purple-500 text-white px-6 py-3 rounded-r-full"
+          className="clickheretoexplorelocation"
         >
           Click Here to Explore
         </button>
       </div>
 
-      <button
-        onClick={() => setOpenLocationsModal(true)}
-        className="bg-purple-600 text-white px-6 py-3 rounded-full"
-      >
-        Locations
-      </button>
+      </div>
+
+
+      <div className="changethelocation">
+        <button
+          onClick={() => setOpenLocationsModal(true)}
+          className=""
+        >
+          Change the Location
+        </button>
+      </div>
 
       <div className="">
         <section className="mt-10 bg-white visitIntroParaSection">
@@ -158,7 +165,7 @@ const sameLetterLocations = locations?.filter((loc) =>
                 <h1>{location.label}</h1>
                 <p>{location.about}</p>
               </div>
-              <div className="w-full h-[350px] rounded-lg overflow-hidden shadow">
+              <div className="w-full overflow-hidden shadow locationiframe">
                 <iframe
                   src={`https://www.google.com/maps?q=${encodeURIComponent(
                     location?.value,
@@ -224,11 +231,11 @@ const sameLetterLocations = locations?.filter((loc) =>
 
       {open && (
         <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
-          <div className="bg-white w-[95%] max-w-6xl rounded-lg overflow-hidden">
-            <div className="grid grid-cols-12">
+                <div className="bg-white w-[95%] max-w-6xl overflow-hidden locationpopupmain">
+            <div className="grid grid-cols-12 popupneigbhbourh">
               {/* LEFT CATEGORY */}
-              <div className="col-span-4 bg-purple-600 text-white p-6">
-                <h2 className="text-2xl font-bold mb-6">
+              <div className="col-span-4 bg-purple-600 text-white p-6 leftsidepopup">
+                <h2 className="text-2xl font-bold mb-6 locationname">
                   IN {location?.locality}
                 </h2>
 
@@ -237,11 +244,11 @@ const sameLetterLocations = locations?.filter((loc) =>
                     <div
                       key={cat}
                       onClick={() => setActiveCategory(cat)}
-                      className={`cursor-pointer px-4 py-2 rounded-full transition
+                      className={`pointerdiv cursor-pointer transition
                 ${
                   activeCat === cat
-                    ? "bg-white text-purple-600"
-                    : "hover:bg-purple-500"
+                    ? "buttonactivated bg-white text-purple-600"
+                    : "buttonnonactivated "
                 }`}
                     >
                       {cat}
@@ -251,16 +258,17 @@ const sameLetterLocations = locations?.filter((loc) =>
               </div>
 
               {/* RIGHT SUBCATEGORY */}
-              <div className="col-span-8 p-6 relative">
+              <div className="col-span-8 p-6 relative rightsidepopup">
                 {/* CLOSE */}
+
                 <button
                   onClick={() => setOpen(false)}
-                  className="absolute top-4 right-4 text-xl"
+                  className="absolute top-4 right-4 text-xl popupcloselocation"
                 >
                   ✕
                 </button>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="popuprightsidecontent">
                   {grouped?.[activeCat]?.map((item) => (
                     <div
                       key={item.id}
@@ -268,18 +276,23 @@ const sameLetterLocations = locations?.filter((loc) =>
                         navigate(`/neighbourhood/${locationId}/${activeCat}`);
                         setOpen(false);
                       }}
-                      className="border rounded-full px-4 py-2 cursor-pointer hover:bg-purple-600 hover:text-white"
+                      className="border butoonsearchbutton"
                     >
-                      {item.name}
+                      <div className="iconsimagelocation">
+                        <img
+                          className=""
+                          src="https://dev.opendesignsin.com/svg-icon.svg"
+                          alt=""
+                        />
+                        {item.name}
+                      </div>
                     </div>
                   ))}
                 </div>
 
                 {/* SEARCH BUTTON */}
-                <div className="mt-8 text-right">
-                  <button className="bg-purple-600 text-white px-8 py-3 rounded-full">
-                    Search
-                  </button>
+                <div className="mt-8 text-right locationseacrgpopuo">
+                  <button className="text-white">Search</button>
                 </div>
               </div>
             </div>
@@ -313,55 +326,76 @@ const sameLetterLocations = locations?.filter((loc) =>
         ))}
       </div> */}
 
-      <div className="max-w-7xl mx-auto px-4 py-10">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold uppercase text-purple-600">
-            Purpose to Visit {location?.locality}
-          </h2>
+      <div className="container max-w-7xl mx-auto px-4 py-10 hoverlocationsection">
+        <div className="workIntro">
+          <div className="text-center mb-10">
+            <h3 className="">Purpose to Visit {location?.locality}</h3>
 
-          <p className="text-gray-500 mt-4 max-w-3xl mx-auto">
-            Explore the best places available in {location?.locality}
-          </p>
+            <p className="mt-3">
+              Explore the best places available in {location?.locality}
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              quia. Vero eligendi dolore recusandae non sapiente, laudantium
+              corporis provident maxime, molestias magnam, asperiores quasi
+              deleniti repudiandae? Commodi ipsum quisquam a eaque ab, odio in
+              odit molestias totam qui aut aspernatur eum et quas culpa
+              perferendis sequi, nemo fugiat. Aliquid, repellat?
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* LEFT CATEGORY */}
-          <div className="space-y-6">
-            {categories.map((cat) => (
+        <div className="relative space-y-6 locationmainsection">
+          {categories.map((cat, idx) => {
+            // 1. Dynamic threshold: Half of the total length
+            const totalItems = categories.length;
+            const threshold = Math.floor(totalItems / 2);
+
+            let topValue = "0px";
+
+            // 2. Logic: If current index is more than half
+            if (idx >= threshold) {
+              // Index mela poga poga, 100px gap-la image-ah mela thallum
+              // Eg: threshold 5 na, 6th item (idx 5) ku calculation start aagum
+              const offset = (idx - threshold + 1) * 89;
+              topValue = `-${offset}px`;
+            }
+
+            return (
               <div
                 key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`cursor-pointer text-2xl md:text-3xl font-medium 
-              transition-all duration-200
-              ${
-                activeCat === cat
-                  ? "text-purple-600 border-b-2 border-purple-600 pb-2"
-                  : "text-gray-800 hover:text-purple-500"
-              }`}
+                className="relative group cursor-pointer locationlilst"
+                onMouseEnter={() => setActiveCategory(cat)}
+                onClick={() =>
+                  navigate(
+                    `/services/${cat.toLowerCase().replace(/\s+/g, "-")}`,
+                  )
+                }
               >
-                {cat}
-              </div>
-            ))}
-          </div>
+                {/* Left category name */}
+                <div
+                  className={`${
+                    activeCat === cat ? "locationactived" : "notlocationactived"
+                  }`}
+                >
+                  {cat}
+                </div>
 
-          {/* RIGHT IMAGE / CARD */}
-          <div>
-            {grouped?.[activeCat]?.[0] && (
-              <div className="relative">
-                <img
-                  src={
-                    grouped[activeCat][0]?.FeaturedImage?.url
-                      ? BASE + grouped[activeCat][0].FeaturedImage.url
-                      : "/placeholder.jpg"
-                  }
-                  className="w-full h-[420px] object-cover rounded-lg shadow-lg"
-                />
-
-                {/* overlay */}
-                <div className="absolute inset-0 bg-purple-600/10 rounded-lg"></div>
+                {/* Right image for hovered category */}
+                {activeCat === cat && grouped[cat]?.[0]?.FeaturedImage?.url && (
+                  <div
+                    className="absolute left-full ml-4 z-10 imagelocationsec transition-all duration-300"
+                    style={{ top: topValue }}
+                  >
+                    <img
+                      src={BASE + grouped[cat][0].FeaturedImage.url}
+                      alt={grouped[cat][0].name}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                    <div className="absolute inset-0 bg-purple-600/10 rounded-lg"></div>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
+            );
+          })}
         </div>
       </div>
     </>

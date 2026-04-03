@@ -34,7 +34,7 @@ export default function NeighbourhoodItemDetail() {
         />
 
         {/* SHADE */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#a34493]/70 to-[#8b3c82]/95 z-10"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,#2b3284_0%,#b10f92_50%,#2b3284_100%)] opacity-80"></div>
 
         {/* CONTENT */}
         <div className="accodoamationBannerContainer relative z-20">

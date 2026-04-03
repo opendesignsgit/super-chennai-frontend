@@ -4,30 +4,58 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useLocations } from "../hooks/useLocations";
 import { useState } from "react";
+import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
 
 const BASE = "https://dev-cms.superchennai.com";
 
 export default function NeighbourhoodCategory() {
   const { locations } = useLocations();
-  const { locationId, category } = useParams();
+  // const { locationId, category } = useParams();
+
+
+  const { locationId, category, subcategory } = useParams();
+
+
+
+
   const navigate = useNavigate();
+
   const { data, loading } = useNeighbourhood({
     location: locationId,
   });
-
+ 
+  console.log("hsopital list",data)
   const [openLocationsModal, setOpenLocationsModal] = useState(false);
 
-  if (loading) return <div>Loading...</div>;
-  const firstLetter = decodeURIComponent(locationId)?.charAt(0)?.toUpperCase();
-  const filtered =
-    data?.filter(
-      (item) =>
-        item?.category?.title?.toLowerCase() === category?.toLowerCase(),
-    ) || [];
+if (loading) return <NeighbourhoodListSkeleton />;
 
-  const sameLetterLocations = locations?.filter((loc) =>
-    loc.locality?.toUpperCase().startsWith(firstLetter),
-  );
+  
+  const firstLetter = decodeURIComponent(locationId)?.charAt(0)?.toUpperCase();
+
+
+  // const filtered =
+  //   data?.filter(
+  //     (item) =>
+  //       item?.category?.title?.toLowerCase() === category?.toLowerCase(),
+  //   ) || [];
+
+
+    const filtered =
+      data?.filter((item) => {
+        const matchCategory =
+          item?.category?.title?.toLowerCase().replace(/\s+/g, "-") ===
+          category?.toLowerCase();
+
+        const matchSubCategory = item?.subCategories?.some(
+          (sub) => sub?.slug === subcategory,
+        );
+
+        return matchCategory && matchSubCategory;
+      }) || [];
+
+    const sameLetterLocations = locations?.filter((loc) =>
+      loc.locality?.toUpperCase().startsWith(firstLetter),
+    );
   return (
     <>
       <div className="accaodomationBannerSection">

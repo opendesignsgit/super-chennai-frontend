@@ -7,6 +7,7 @@ const BASE = "https://dev-cms.superchennai.com";
 import EmptyState from "../Components/locations/EmptyState";
 import { useLocations } from "../hooks/useLocations";
 import Search from "../Components/Search";
+import NeighbourhoodSkeleton from "../Components/DetailPage/NeighbourhoodSkeleton";
 
 export default function NeighbourhoodDetail() {
   const navigate = useNavigate();
@@ -31,8 +32,31 @@ export default function NeighbourhoodDetail() {
   const [openLocations, setOpenLocations] = useState(false);
   const [openLocationsModal, setOpenLocationsModal] = useState(false);
 
-  if (loading) return <div className="p-10">Loading...</div>;
+  if (loading) return <NeighbourhoodSkeleton />;
   const location = data?.[0]?.locations;
+
+
+
+ // 🔥 Build SubCategory Map
+const subCategoriesByCategory = {};
+
+data?.forEach((item) => {
+  const cat = item?.category?.title || "Others";
+
+  if (!subCategoriesByCategory[cat]) {
+    subCategoriesByCategory[cat] = {};
+  }
+
+  item?.subCategories?.forEach((sub) => {
+    if (sub && sub.id && !subCategoriesByCategory[cat][sub.id]) {
+      subCategoriesByCategory[cat][sub.id] = sub;
+    }
+  });
+});
+
+
+
+
   const grouped =
     data?.reduce((acc, item) => {
       const cat = item?.category?.title || "Others";
@@ -188,7 +212,7 @@ export default function NeighbourhoodDetail() {
 
       {openLocationsModal && (
         <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
-          <div className="bg-white container max-w-5xl mx-auto px-4 !mb-0 relative popupseacrhinpout" >
+          <div className="bg-white container max-w-5xl mx-auto px-4 !mb-0 relative popupseacrhinpout">
             {/* close */}
             <button
               onClick={() => setOpenLocationsModal(false)}
@@ -244,9 +268,53 @@ export default function NeighbourhoodDetail() {
                 </div>
               </div>
 
-              {/* RIGHT SUBCATEGORY */}
               <div className="col-span-8 p-6 relative rightsidepopup">
                 {/* CLOSE */}
+                <button
+                  onClick={() => setOpen(false)}
+                  className="absolute top-4 right-4 text-xl popupcloselocation"
+                >
+                  ✕
+                </button>
+
+                <div className="popuprightsidecontent">
+                  {Object.values(subCategoriesByCategory?.[activeCat] || {})
+                    .length === 0 ? (
+                    <div className="text-gray-500 text-center mt-10">
+                      No Subcategories Found
+                    </div>
+                  ) : (
+                    Object.values(subCategoriesByCategory?.[activeCat] || {})
+                      .sort((a, b) => a.title.localeCompare(b.title))
+                      .map((sub) => (
+                        <div
+                          key={sub.id}
+                          onClick={() => {
+                            navigate(
+                              `/neighbourhood/${locationId}/${activeCat
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")}/${sub.slug}`,
+                            );
+                            setOpen(false);
+                          }}
+                          className="border butoonsearchbutton cursor-pointer hover:bg-gray-100 transition"
+                        >
+                          <div className="iconsimagelocation">
+                            <img
+                              src="https://dev.opendesignsin.com/svg-icon.svg"
+                              alt=""
+                            />
+                            {sub.title}
+                          </div>
+                        </div>
+                      ))
+                  )}
+                </div>
+              </div>
+
+              {/* RIGHT SUBCATEGORY */}
+              {/* <div className="col-span-8 p-6 relative rightsidepopup">
+               
 
                 <button
                   onClick={() => setOpen(false)}
@@ -256,7 +324,10 @@ export default function NeighbourhoodDetail() {
                 </button>
 
                 <div className="popuprightsidecontent">
+                 
+
                   {grouped?.[activeCat]?.map((item) => (
+                    
                     <div
                       key={item.id}
                       onClick={() => {
@@ -265,6 +336,7 @@ export default function NeighbourhoodDetail() {
                       }}
                       className="border butoonsearchbutton"
                     >
+                     
                       <div className="iconsimagelocation">
                         <img
                           className=""
@@ -275,13 +347,19 @@ export default function NeighbourhoodDetail() {
                       </div>
                     </div>
                   ))}
+
+
+
+
+
+                  
                 </div>
 
-                {/* SEARCH BUTTON */}
-                {/* <div className="mt-8 text-right locationseacrgpopuo">
+               
+                 <div className="mt-8 text-right locationseacrgpopuo">
                   <button className="text-white">Search</button>
-                </div> */}
-              </div>
+                </div> 
+              </div> */}
             </div>
           </div>
         </div>

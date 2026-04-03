@@ -9,6 +9,7 @@ import Search from "../Components/Search";
 import { useLocations } from "../hooks/useLocations";
 import { useSearch } from "../hooks/useSearch";
 import "../Style/style.css";
+import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
 
 export default function ChennaiNeighbourhood() {
 
@@ -104,6 +105,8 @@ export default function ChennaiNeighbourhood() {
 
   return result;
 }, [locations, filters]);
+
+if (loading) return <NeighbourhoodListSkeleton />;
 
   return (
     <>

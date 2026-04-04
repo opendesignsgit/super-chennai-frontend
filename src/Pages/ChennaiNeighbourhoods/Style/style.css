@@ -348,6 +348,7 @@
 
 .hoverlocationsection {
   padding-bottom: 100px;
+  min-height: 900px;
 }
 .notlocationactived {
   font-size: 45px;
@@ -688,6 +689,66 @@
   .searchhoodfilter::placeholder {
     font-size: 16px;
   }
+
+  .notlocationactived {
+    font-size: 39px;
+  }
+
+  .locationactived {
+    font-size: 39px;
+  }
+
+  .imagelocationsec {
+    width: 392px;
+    height: 474px;
+  }
+
+  .locationiframe {
+    height: 550px;
+    margin-top: 80px;
+  }
+
+  .clickheretoexplorelocation {
+    height: 50px;
+    border-radius: 60px;
+    width: 229px;
+    margin-left: -49px;
+    font-size: 15px;
+  }
+
+  .inputmapsearchss {
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 50px;
+    padding-right: 30px;
+  }
+
+  .submainlocationdd {
+    top: -30px;
+    height: 60px;
+  }
+
+  .slectmapoption {
+    font-size: 17px;
+  }
+
+  .locationsvginput {
+    width: 20px;
+    height: 20px;
+  }
+
+  .changethelocation {
+    margin-top: 46px;
+  }
+
+  .slectmapoption option {
+    font-size: 16px;
+  }
+
+  .mainselectinputss {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 1300px) and (min-width: 1100px) {
@@ -1000,6 +1061,7 @@
   .neighbiurnewcards {
     flex-wrap: wrap;
     column-gap: 5%;
+    justify-content: center;
   }
 
   .searchhoodfilter {

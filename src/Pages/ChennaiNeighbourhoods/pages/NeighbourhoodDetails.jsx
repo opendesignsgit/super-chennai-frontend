@@ -5,7 +5,7 @@ import { useLocations } from "../hooks/useLocations";
 import { useNeighbourhood } from "../hooks/useNeighbourhood";
 import NeighbourhoodSkeleton from "../Components/DetailPage/NeighbourhoodSkeleton";
 import EmptyState from "../Components/locations/EmptyState";
-import { API_BASE_URL } from "../../../../config";
+import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 
 export default function NeighbourhoodDetail() {
   const navigate = useNavigate();
@@ -164,7 +164,7 @@ export default function NeighbourhoodDetail() {
                     style={{ top: topValue }}
                   >
                     <img
-                      src={API_BASE_URL + grouped[cat][0].FeaturedImage.url}
+                      src={API_BASE_URL_API_TEST_DEV + grouped[cat][0].FeaturedImage.url}
                       alt={grouped[cat][0].name}
                       className="w-full h-full object-cover rounded-lg"
                     />

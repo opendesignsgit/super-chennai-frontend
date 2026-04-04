@@ -4,7 +4,8 @@ import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodList
 import NeighbourhoodSearchBar from "../Components/NeighbourhoodSearchBar";
 import { useLocations } from "../hooks/useLocations";
 import { useNeighbourhood } from "../hooks/useNeighbourhood";
-import { API_BASE_URL } from "../../../../config";
+import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
+
 
 export default function NeighbourhoodCategory() {
   const { locations } = useLocations();
@@ -108,7 +109,7 @@ export default function NeighbourhoodCategory() {
               <img
                 src={
                   item?.FeaturedImage?.url
-                    ? API_BASE_URL + item.FeaturedImage.url
+                    ? API_BASE_URL_API_TEST_DEV + item.FeaturedImage.url
                     : "/placeholder.jpg"
                 }
                 className="w-full h-48 object-cover"

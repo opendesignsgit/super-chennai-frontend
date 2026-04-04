@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import LexicalContent from "../Components/LexicalContent";
 import { useNeighbourhood } from "../hooks/useNeighbourhood";
-import { API_BASE_URL } from "../../../../config";
+import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 
 import { useState } from "react";
 import NeighbourhoodSearchBar from "../Components/NeighbourhoodSearchBar";
@@ -37,7 +37,7 @@ export default function NeighbourhoodItemDetail() {
         <img
           src={
             item?.heroImage?.url
-              ? API_BASE_URL + item.heroImage.url
+              ? API_BASE_URL_API_TEST_DEV + item.heroImage.url
               : "/placeholder.jpg"
           }
           className="w-full h-[400px] object-cover"

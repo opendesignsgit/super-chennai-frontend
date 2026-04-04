@@ -1,8 +1,8 @@
 import axios from "axios"
-import { API_BASE_URL } from "../../../../config";
+import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 
 const API = axios.create({
-  baseURL: `${API_BASE_URL}/api`,
+  baseURL: `${API_BASE_URL_API_TEST_DEV}/api`,
 });
 
 

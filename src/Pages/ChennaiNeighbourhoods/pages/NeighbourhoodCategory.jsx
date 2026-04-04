@@ -1,61 +1,66 @@
-import { useParams } from "react-router-dom";
-import { useNeighbourhood } from "../hooks/useNeighbourhood";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { useLocations } from "../hooks/useLocations";
 import { useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
-
-const BASE = "https://dev-cms.superchennai.com";
+import NeighbourhoodSearchBar from "../Components/NeighbourhoodSearchBar";
+import { useLocations } from "../hooks/useLocations";
+import { useNeighbourhood } from "../hooks/useNeighbourhood";
+import { API_BASE_URL } from "../../../../config";
 
 export default function NeighbourhoodCategory() {
   const { locations } = useLocations();
-  // const { locationId, category } = useParams();
-
-
+  const [activeCategory, setActiveCategory] = useState(null);
   const { locationId, category, subcategory } = useParams();
-
-
-
-
   const navigate = useNavigate();
-
   const { data, loading } = useNeighbourhood({
     location: locationId,
   });
- 
-  console.log("hsopital list",data)
-  const [openLocationsModal, setOpenLocationsModal] = useState(false);
 
-if (loading) return <NeighbourhoodListSkeleton />;
-
-  
+  if (loading) return <NeighbourhoodListSkeleton />;
   const firstLetter = decodeURIComponent(locationId)?.charAt(0)?.toUpperCase();
+  const slugify = (text) => text?.toLowerCase().replace(/\s+/g, "-");
 
+  const filtered =
+    data?.filter((item) => {
+      const matchCategory =
+        slugify(item?.category?.title) === category?.toLowerCase();
 
-  // const filtered =
-  //   data?.filter(
-  //     (item) =>
-  //       item?.category?.title?.toLowerCase() === category?.toLowerCase(),
-  //   ) || [];
+      if (!subcategory) return matchCategory;
 
+      const matchSubCategory = item?.subCategories?.some(
+        (sub) => sub?.slug === subcategory,
+      );
 
-    const filtered =
-      data?.filter((item) => {
-        const matchCategory =
-          item?.category?.title?.toLowerCase().replace(/\s+/g, "-") ===
-          category?.toLowerCase();
+      return matchCategory && matchSubCategory;
+    }) || [];
 
-        const matchSubCategory = item?.subCategories?.some(
-          (sub) => sub?.slug === subcategory,
-        );
+  const sameLetterLocations = locations?.filter((loc) =>
+    loc.locality?.toUpperCase().startsWith(firstLetter),
+  );
 
-        return matchCategory && matchSubCategory;
-      }) || [];
+  const subCategoriesByCategory = {};
+  data?.forEach((item) => {
+    const cat = item?.category?.title || "Others";
+    if (!subCategoriesByCategory[cat]) {
+      subCategoriesByCategory[cat] = {};
+    }
+    item?.subCategories?.forEach((sub) => {
+      if (sub && sub.id && !subCategoriesByCategory[cat][sub.id]) {
+        subCategoriesByCategory[cat][sub.id] = sub;
+      }
+    });
+  });
 
-    const sameLetterLocations = locations?.filter((loc) =>
-      loc.locality?.toUpperCase().startsWith(firstLetter),
-    );
+  const grouped =
+    data?.reduce((acc, item) => {
+      const cat = item?.category?.title || "Others";
+      if (!acc[cat]) acc[cat] = [];
+      acc[cat].push(item);
+      return acc;
+    }, {}) || {};
+
+  const categories = Object.keys(grouped);
+  const activeCat = activeCategory || categories?.[0];
+
   return (
     <>
       <div className="accaodomationBannerSection">
@@ -70,62 +75,14 @@ if (loading) return <NeighbourhoodListSkeleton />;
           </div>
         </div>
       </div>
-      <div className="mainlocationdd">
-        <div className="flex items-center bg-white rounded-full shadow border overflow-hidden submainlocationdd">
-          <div className="flex items-center gap-1 px-4 py-3 mainselectinputss">
-            <img
-              className="locationsvginput"
-              src="https://dev.opendesignsin.com/neighlocation.svg"
-              alt=""
-            />
 
-            <select
-              className="outline-none bg-transparent slectmapoption"
-              value={locationId}
-              onChange={(e) => navigate(`/neighbourhood/${e.target.value}`)}
-            >
-              {sameLetterLocations?.map((loc) => (
-                <option key={loc.id} value={loc.locality}>
-                  {loc.locality}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* search input */}
-          <input
-            type="text"
-            placeholder=""
-            className="flex-1 px-1 py-3 outline-none "
-          />
-
-          {/* search button */}
-          <button className="inputmapsearchss">Search</button>
-
-          {/* explore button */}
-          <button
-            onClick={() => {
-              setOpen(true);
-              setActiveCategory(null);
-            }}
-            className="clickheretoexplorelocation"
-          >
-            Click Here to Explore
-          </button>
-        </div>
-      </div>
-
-      <div className="changethelocation">
-        <button onClick={() => setOpenLocationsModal(true)} className="">
-          Change the Location
-        </button>
-      </div>
+      <NeighbourhoodSearchBar
+        data={data}
+        locations={locations}
+        locationId={locationId}
+      />
 
       <div className="container max-w-7xl mx-auto px-4 mt-15">
-        {/* <h1 className="text-3xl font-bold mb-10">
-          {category} in {locationId}
-        </h1> */}
-
         <div className="">
           <div class="workIntro">
             <h1>Neighbourhood</h1>
@@ -142,9 +99,6 @@ if (loading) return <NeighbourhoodListSkeleton />;
             <div
               key={item.id}
               onClick={() =>
-                // navigate(
-                //   `/neighbourhood/${locationId}/${category}/${item.slug}`,
-                // )
                 navigate(
                   `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
                 )
@@ -154,7 +108,7 @@ if (loading) return <NeighbourhoodListSkeleton />;
               <img
                 src={
                   item?.FeaturedImage?.url
-                    ? BASE + item.FeaturedImage.url
+                    ? API_BASE_URL + item.FeaturedImage.url
                     : "/placeholder.jpg"
                 }
                 className="w-full h-48 object-cover"

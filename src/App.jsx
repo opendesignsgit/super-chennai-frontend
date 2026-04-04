@@ -895,10 +895,10 @@ function App() {
           element={<ChennaiNeighbourhoodDetail />}
         />
 
-        {/* <Route
+        <Route
           path="/neighbourhood/:locationId/:category"
           element={<NeighbourhoodCategory />}
-        /> */}
+        />
 
         <Route
           path="/neighbourhood/:locationId/:category/:subcategory"

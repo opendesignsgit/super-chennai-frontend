@@ -1,8 +1,11 @@
 import axios from "axios"
+import { API_BASE_URL } from "../../../../config";
 
 const API = axios.create({
-  baseURL: "https://dev-cms.superchennai.com/api",
-})
+  baseURL: `${API_BASE_URL}/api`,
+});
+
+
 
 export const getNeighbourhood = (params) =>
   API.get("/neighbourhood", { params })

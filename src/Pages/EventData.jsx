@@ -7575,6 +7575,103 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+  {
+  "id": 102334,
+  "name": "Ayapakkam Park: Chennai’s Calm Escape",
+  "slug": "ayapakkam-park",
+  "para": "Peaceful Park in West Chennai",
+  "TrendingCalendarMonth": "April 2026",
+  "TrendingCalendarTime": "Now Open",
+  "TrendingCalendarCategory": "Parks | Recreation | Family Spots",
+    "image": "/images/trendingChennai/BIG-IMG-2-PARK.jpg",
+  "Homeimage": "/images/trendingChennai/BIG-IMG-2-PARK.jpg",
+  "link": "/trending-chennai/ayapakkam-park",
+  "duration": "Open Daily",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Parks | Walking | Outdoor Recreation",
+  "venue": "Ayapakkam, Chennai",
+
+  "trendingDetails": `
+<p>
+Many people in Chennai are still unaware of this beautiful park 🌳✨
+</p>
+
+<p>
+<b>Ayapakkam Park</b> is a spacious and peaceful place, perfect for relaxation or daily exercise.
+</p>
+
+<p>
+The park features long walking tracks, jogging paths, kids’ play areas, and courts for volleyball and shuttlecock.
+</p>
+
+<p>
+You can also find calm spots for yoga and meditation, along with attractive statues like Buddha and Thiruvalluvar, making it a great place for photos.
+</p>
+
+<p>
+With senior-friendly seating and a quiet atmosphere, it offers the perfect escape from the city’s busy life.
+</p>
+`,
+
+  "TrendingLink": "",
+  "YoutubeLink": "",
+
+  "meta": {
+    "title": "Ayapakkam Park | Best Walking Park in West Chennai",
+    "desc": "Ayapakkam Park in Chennai offers walking tracks, play areas, sports courts, and quiet spots for yoga and relaxation, making it a refreshing escape from city life.",
+    "url": "https://www.superchennai.com/trending-chennai/ayapakkam-park"
+  }
+},
+
+  {
+  "id": 102333,
+  "name": "Chennai Metro Introduces Conductor-Free Mini Buses",
+  "slug": "chennai-metro-mini-buses",
+  "para": "New Last-Mile Connectivity in Chennai",
+  "TrendingCalendarMonth": "April 2026",
+  "TrendingCalendarTime": "Announced",
+  "TrendingCalendarCategory": "Transport | City Updates",
+    "image": "/images/trendingChennai/aayapakkamMINI.jpg",
+  "Homeimage": "/images/trendingChennai/aayapakkamMINI.jpg",
+  "link": "/trending-chennai/chennai-metro-mini-buses",
+  "duration": "N/A",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Public Transport | City Infrastructure",
+  "venue": "Chennai",
+
+  "trendingDetails": `
+<p>
+Chennai is set to improve its last-mile connectivity with a new initiative! 🚌
+</p>
+
+<p>
+<b>Chennai Metro Rail Limited</b> is introducing 220 mini buses that will operate without conductors and support fully cashless travel.
+</p>
+
+<p>
+These mini buses will run on short routes of about 6–8 km, connecting key areas like Koyambedu, Thirumangalam, Meenambakkam, Nanganallur, Ashok Nagar, Saidapet, and Little Mount.
+</p>
+
+<p>
+The initiative aims to provide faster and more convenient travel within neighbourhoods, making daily commutes smoother for passengers.
+</p>
+
+<p>
+Plan your travel and look forward to improved connectivity across the city.
+</p>
+`,
+
+  "TrendingLink": "",
+  "YoutubeLink": "",
+
+  "meta": {
+    "title": "Chennai Metro Mini Buses | New Last-Mile Connectivity Plan",
+    "desc": "Mini buses introduced by Chennai Metro Rail Limited will connect nearby areas with short 6–8 km routes, offering conductor-free and cashless travel for commuters.",
+    "url": "https://www.superchennai.com/trending-chennai/chennai-metro-mini-buses"
+  }
+},
 
 {
   "id": 102332,

@@ -1,23 +1,33 @@
-import { useParams } from "react-router-dom";
-import { useNeighbourhood } from "../hooks/useNeighbourhood";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import LexicalContent from "../Components/LexicalContent";
-const BASE = "https://dev-cms.superchennai.com";
+import { useNeighbourhood } from "../hooks/useNeighbourhood";
+import { API_BASE_URL } from "../../../../config";
+
+import { useState } from "react";
+import NeighbourhoodSearchBar from "../Components/NeighbourhoodSearchBar";
+import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
+import { useLocations } from "../hooks/useLocations";
+import EmptyState from "../Components/locations/EmptyState";
 
 export default function NeighbourhoodItemDetail() {
-  const { locationId, category, slug } = useParams();
-
+  const { locationId,  slug } = useParams();
   const { data, loading } = useNeighbourhood({
     location: locationId,
   });
-
-  if (loading) return <div>Loading...</div>;
-
+  const { locations } = useLocations();
   const item = data?.find((i) => i.slug === slug);
 
-  if (!item) return <div>Not found</div>;
+  console.log("data EDUTHUKO ", item);
 
-  console.log("data", item);
+  if (loading) return <NeighbourhoodListSkeleton />;
+  if (!item)
+    return (
+      <EmptyState
+        title="Invalid Location"
+        message="We couldn't find details for this location."
+        onReset={() => navigate("/neighbourhood")}
+      />
+    );
 
   return (
     <>
@@ -27,7 +37,7 @@ export default function NeighbourhoodItemDetail() {
         <img
           src={
             item?.heroImage?.url
-              ? BASE + item.heroImage.url
+              ? API_BASE_URL + item.heroImage.url
               : "/placeholder.jpg"
           }
           className="w-full h-[400px] object-cover"
@@ -49,6 +59,11 @@ export default function NeighbourhoodItemDetail() {
         </div>
       </div>
 
+      <NeighbourhoodSearchBar
+        data={data}
+        locations={locations}
+        locationId={locationId}
+      />
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* TITLE */}
 

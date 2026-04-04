@@ -84,7 +84,7 @@
 // }
 
 import { useParams } from "react-router-dom";
-import { useNeighbourhood } from "../hooks/useNeighbourhood";
+import { useNeighbourhood } from "../../hooks/useNeighbourhood";
 
 const BASE = "https://dev-cms.superchennai.com";
 const FALLBACK = "https://via.placeholder.com/600x400?text=No+Image";

@@ -10,12 +10,22 @@ import { useLocations } from "../hooks/useLocations";
 import { useSearch } from "../hooks/useSearch";
 import "../Style/style.css";
 import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function ChennaiNeighbourhood() {
 
   const { filters, updateFilter } = useSearch();
   const { locations, loading, error } = useLocations();
-
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const searchQuery = params.get("search");
+  useEffect(() => {
+  if (searchQuery) {
+    updateFilter("q", searchQuery);
+    updateFilter("alpha", "");
+  }
+}, [searchQuery]);
 
   /* SEARCH + ALPHABET FILTER  ADVANCE SEARCH ALGRITHEMS */
 

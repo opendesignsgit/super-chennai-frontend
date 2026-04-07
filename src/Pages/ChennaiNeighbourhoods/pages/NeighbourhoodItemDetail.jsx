@@ -639,51 +639,76 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
           </div>
         </div>
 
+      
+      </div>
+
+
+      <div className="max-w-5xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-6 m-15">
+
         {relatedItems.length > 0 && (
-          <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-            <h3 className="text-2xl font-bold mb-6 text-gray-800">
+          <div className=" mt-10">
+            <h3 className="text-2xl font-bold mb-6 text-gray-800 capitalize">
               {subcategory} Nearby
             </h3>
 
-            <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
-              {relatedItems.map((h) => (
-                <Link
-                  key={h.id}
-                  to={`/neighbourhood/${locationId}/${h.slug}`}
-                  className="min-w-[250px] bg-white rounded-lg shadow hover:shadow-lg transition-transform transform hover:-translate-y-1 cursor-pointer"
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {relatedItems.map((item) => (
+                <div
+                  key={item.id}
+                  onClick={() =>
+                    navigate(
+                      `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
+                    )
+                  }
+                  className="cursor-pointer bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                 >
                   {/* Image */}
                   <div className="relative">
                     <img
                       src={
-                        h?.heroImage?.url
-                          ? API_BASE_URL_API_TEST_DEV + h.heroImage.url
-                          : "/placeholder.jpg"
+                        item?.heroImage?.url
+                          ? API_BASE_URL_API_TEST_DEV + item.heroImage.url
+                          : "https://www.superchennai.com/images/restaurants-banner.jpg"
                       }
-                      alt={h.name}
-                      className="w-full h-[150px] object-cover rounded-t-lg"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src =
+                          "https://www.superchennai.com/images/restaurants-banner.jpg";
+                      }}
+                      className="w-full h-48 object-cover"
+                      alt={item.name}
                     />
-                    {/* Optional Rating Badge */}
-                    <span className="absolute top-2 right-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
-                      ⭐ {h.rating || "4.0"}
+
+                    {/* Rating Badge */}
+                    <span className="absolute top-3 right-3 bg-yellow-500 text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
+                      ⭐ {item.rating || "4.0"}
                     </span>
                   </div>
 
-                  {/* Card Body */}
-                  <div className="p-3">
-                    <h4 className="font-semibold text-sm text-gray-900">
-                      {h.name}
-                    </h4>
-                    <p className="text-xs text-gray-400 mt-1 line-clamp-2">
-                      {h.description || "No description available."}
+                  {/* Content */}
+                  <div className="p-4">
+                    <h3 className="titlenamecontent">
+                      {item.name}
+                    </h3>
+
+                    <p className="mt-2 text-sm text-gray-600 line-clamp-2">
+                      {item.description || "No description available"}
                     </p>
+
+                    {/* Read More */}
+                    <div className="mt-3">
+                      <span className="readmorelink">
+                        Read More →
+                      </span>
+                    </div>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
         )}
-      </div>
+
+        </div>
     </>
   );
 }

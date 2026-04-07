@@ -6,7 +6,6 @@ import { useLocations } from "../hooks/useLocations";
 import { useNeighbourhood } from "../hooks/useNeighbourhood";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 
-
 export default function NeighbourhoodCategory() {
   const { locations } = useLocations();
   const [activeCategory, setActiveCategory] = useState(null);
@@ -61,6 +60,23 @@ export default function NeighbourhoodCategory() {
 
   const categories = Object.keys(grouped);
   const activeCat = activeCategory || categories?.[0];
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 900);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   return (
     <>

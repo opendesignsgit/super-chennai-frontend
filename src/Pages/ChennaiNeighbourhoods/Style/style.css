@@ -250,7 +250,9 @@
   font-weight: 400;
   border-bottom: 1px solid #b16caf;
 }
-
+/* .pointerdiv.buttonactivated {
+  
+} */
 .locationname {
   font-size: 48px;
   font-family: "NewAmsterdam";
@@ -466,11 +468,19 @@
 
 .detailacrdsss {
   width: 31%;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .detailacrdsss img {
   height: 255px;
   width: 100%;
   border-top-left-radius: 20px;
+}
+
+.detailacrdsss:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .detailsmap {
@@ -505,7 +515,7 @@
   font-size: 21px;
   line-height: 120%;
   padding-left: 0px;
-  /* min-height: 50px; */
+  min-height: 52px;
 }
 
 .detailsmap p {
@@ -535,6 +545,11 @@
 .changethelocation button:hover {
   color: #892c7a;
   text-decoration: #892c7a underline;
+}
+
+.locationmapin .detailacrdsss:hover .readmorelink a {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .popupseacrhinpout {
@@ -641,7 +656,9 @@
   font-size: 78px;
   line-height: 70px;
 }
-
+.submainlocationdd input::placeholder {
+  font-family: "29LT Bukra";
+}
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;
@@ -687,6 +704,107 @@
 
   .searchhoodfilter::placeholder {
     font-size: 16px;
+  }
+
+  .titlenamecontent {
+    font-size: 18px;
+    min-height: 43px;
+  }
+
+  .detailacrdsss img {
+    height: 217px;
+  }
+
+  .detailsmap {
+    padding: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .detailsmap p {
+    margin-top: 10px;
+  }
+
+  .slectmapoption {
+    font-size: 18px;
+  }
+
+  .clickheretoexplorelocation {
+    height: 54px;
+    width: 205px;
+    margin-left: -48px;
+    font-size: 15px;
+  }
+
+  .inputmapsearchss {
+    height: 54px;
+    width: 139px;
+    font-size: 15px;
+    padding-right: 29px;
+  }
+
+  .submainlocationdd input {
+    padding: 0px 10px;
+    width: 156px;
+  }
+
+  .locationsvginput {
+    width: 20px;
+    height: 20px;
+  }
+  .margincontrl {
+    padding-top: 10px;
+  }
+
+  .locationiframe {
+    height: 550px;
+    margin-top: 60px;
+  }
+
+  .notlocationactived {
+    font-size: 40px;
+  }
+
+  .locationactived {
+    font-size: 40px;
+  }
+
+  .imagelocationsec {
+    width: 350px;
+    height: 480px;
+  }
+
+  .hoverlocationsection {
+    min-height: 775px;
+  }
+  .locationmainsection {
+    margin-top: 50px;
+  }
+  .popupseacrhinpout .searchhoodfilter {
+    max-width: 600px;
+  }
+
+  .popupseacrhinpout .searchbuttonfilt {
+    right: 14.7%;
+  }
+
+  .popupseacrhinpout {
+    padding-top: 75px;
+    padding-bottom: 30px;
+    background-position: center 66%;
+    height: 464px;
+    max-width: 900px;
+  }
+
+  .locationpopupmain {
+    max-width: 1050px;
+  }
+
+  .locationname {
+    margin-bottom: 10px;
+  }
+
+  .locationactived::after {
+    width: 42%;
   }
 }
 
@@ -750,6 +868,165 @@
 
   .readmorelink {
     margin-top: 15px;
+  }
+
+  .titlenamecontent {
+    font-size: 17px;
+    min-height: 38px;
+  }
+
+  .detailacrdsss img {
+    height: 200px;
+  }
+
+  .detailsmap {
+    padding: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .detailsmap p {
+    margin-top: 10px;
+  }
+
+  .slectmapoption {
+    font-size: 17px;
+    width: 125px;
+  }
+
+  .clickheretoexplorelocation {
+    height: 50px;
+    width: 205px;
+    margin-left: -47px;
+    font-size: 14px;
+  }
+
+  .inputmapsearchss {
+    height: 50px;
+    width: 138px;
+    font-size: 14px;
+    padding-right: 27px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+
+  .submainlocationdd input {
+    padding: 0px 10px;
+    width: 156px;
+  }
+
+  .locationsvginput {
+    width: 20px;
+    height: 20px;
+  }
+  .margincontrl {
+    padding-top: 10px;
+  }
+
+  .locationiframe {
+    height: 500px;
+    margin-top: 56px;
+  }
+
+  .notlocationactived {
+    font-size: 35px;
+  }
+
+  .locationactived {
+    font-size: 35px;
+  }
+
+  .imagelocationsec {
+    width: 315px;
+    height: 410px;
+    left: 53%;
+  }
+
+  .hoverlocationsection {
+    min-height: 775px;
+  }
+  .locationmainsection {
+    margin-top: 50px;
+  }
+
+  .locationactived::before {
+    font-size: 9px;
+  }
+
+  .locationactived::after {
+    width: 40%;
+  }
+
+  .submainlocationdd {
+    height: 60px;
+  }
+
+  .popupseacrhinpout {
+    padding-top: 60px;
+    padding-bottom: 36px;
+    background-position: center 75%;
+    height: 450px;
+    max-width: 700px;
+  }
+
+  .popupseacrhinpout .searchhoodfilter {
+    max-width: 500px;
+  }
+
+  .popupseacrhinpout .searchbuttonfilt {
+    width: 15%;
+    right: 11.5%;
+  }
+
+  .locationname {
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+
+  .pointerdiv {
+    font-size: 16px;
+  }
+
+  .butoonsearchbutton {
+    padding-left: 13px;
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .popuprightsidecontent {
+    column-gap: 25px;
+    width: 86%;
+  }
+
+  .locationpopupmain {
+    max-height: 600px;
+  }
+
+  .rightsidepopup {
+    overflow-y: scroll;
+    height: 600px;
+  }
+  .leftsidescrolll {
+    overflow-y: scroll;
+    height: 470px;
+    padding-bottom: 8px;
+  }
+
+  .submainlocationdd input::placeholder {
+    /* font-weight: 500; */
+    color: #000;
+  }
+}
+
+@media (min-width: 901px) {
+  .mobilesection {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hoverlocationsection {
+    display: none;
   }
 }
 
@@ -824,6 +1101,265 @@
   }
   .alphapetfiltersection .girdcolumn {
     display: flex;
+  }
+
+  .titlenamecontent {
+    font-size: 17px;
+    min-height: 38px;
+  }
+
+  .detailacrdsss img {
+    height: 180px;
+  }
+
+  .detailsmap {
+    padding: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .detailsmap p {
+    margin-top: 10px;
+  }
+
+  .detailacrdsss {
+    width: 35%;
+  }
+
+  .locationmapin {
+    justify-content: center;
+    column-gap: 5.5%;
+  }
+
+  .slectmapoption {
+    font-size: 17px;
+  }
+
+  .clickheretoexplorelocation {
+    height: 50px;
+    width: 205px;
+    margin-left: -47px;
+    font-size: 14px;
+  }
+
+  .inputmapsearchss {
+    height: 50px;
+    width: 138px;
+    font-size: 14px;
+    padding-right: 27px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+
+  .submainlocationdd input {
+    padding: 0px 10px;
+    width: 156px;
+  }
+
+  .locationsvginput {
+    width: 20px;
+    height: 20px;
+  }
+  .margincontrl {
+    padding-top: 10px;
+  }
+
+  .locationiframe {
+    height: 378px;
+    margin-top: 45px;
+  }
+
+  .notlocationactived {
+    font-size: 28px;
+  }
+
+  .locationactived {
+    font-size: 28px;
+  }
+
+  .imagelocationsec {
+    width: 285px;
+    height: 375px;
+    left: 52%;
+  }
+
+  .hoverlocationsection {
+    min-height: 775px;
+  }
+  .locationmainsection {
+    margin-top: 50px;
+  }
+
+  .locationactived::before {
+    font-size: 9px;
+  }
+
+  .locationactived::after {
+    width: 40%;
+  }
+
+  .submainlocationdd {
+    height: 60px;
+  }
+
+  .locationlilst {
+    margin-left: 4%;
+  }
+
+  .popupseacrhinpout {
+    padding-top: 59px;
+    padding-bottom: 36px;
+    background-position: center 72%;
+    height: 370px;
+    max-width: 650px;
+  }
+
+  .popupseacrhinpout .searchhoodfilter {
+    max-width: 450px;
+  }
+
+  .popupseacrhinpout .searchbuttonfilt {
+    width: 17%;
+    right: 12.3%;
+    top: 4px;
+  }
+
+  .popupseacrhinpout .workIntro h1 {
+    font-size: 65px;
+    line-height: 64px;
+  }
+
+  .popupseacrhinpout .workIntro p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+  }
+
+  .filtersearchnewmain {
+    margin-top: 37px;
+  }
+
+  .locationname {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    line-height: 93%;
+  }
+
+  .leftsidepopup {
+    width: 30%;
+    padding-left: 4%;
+    padding-top: 40px;
+  }
+  .pointerdiv {
+    font-size: 14px;
+  }
+
+  .iconsimagelocation img {
+    width: 17px;
+    height: 17px;
+    margin-top: 1px;
+  }
+
+  .butoonsearchbutton {
+    padding-left: 14px;
+    font-size: 13px;
+    width: 95%;
+  }
+
+  .popuprightsidecontent {
+    column-gap: 25px;
+    width: 95%;
+    margin-left: 20px;
+  }
+
+  .locationpopupmain {
+    max-height: 600px;
+    max-width: 88%;
+  }
+
+  .rightsidepopup {
+    overflow-y: scroll;
+    height: 600px;
+    width: 70%;
+  }
+  .leftsidescrolll {
+    overflow-y: scroll;
+    height: 470px;
+    padding-bottom: 8px;
+  }
+
+  .popupcloselocation {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    top: 4%;
+    right: 4%;
+  }
+
+  .fontsizeaccordion {
+    font-family: "29LT Bukra";
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .fontxonatjdjsdd {
+    padding: 14px 22px;
+    background: #f5f5f5;
+    padding-right: 22px;
+  }
+
+  .arrowfontsup {
+    font-family: "29LT Bukra";
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  .boderrrrr {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    width: 520px;
+    margin-bottom: 19px;
+  }
+
+  .boderrrrraddedcolor .fontxonatjdjsdd {
+    background: #995098;
+    color: #fff;
+  }
+
+  .cardssss {
+    background: #ededed;
+  }
+
+  .boderrrrraddedcolor .cardssss {
+    padding-bottom: 30px;
+  }
+
+  .cardssss img {
+    margin-top: 10px;
+    height: 250px;
+  }
+
+  .buttonsecc {
+    margin-top: 23px;
+  }
+  .buttonsecc button {
+    font-size: 17px;
+    line-height: 17px;
+    width: 128px;
+    height: 37px;
+  }
+
+  .accorddionmobileview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hoverlocationsection {
+    padding-bottom: 70px;
   }
 }
 
@@ -901,6 +1437,226 @@
 
   .readmorelink {
     margin-top: 13px;
+  }
+
+  .titlenamecontent {
+    font-size: 17px;
+    min-height: 38px;
+  }
+
+  .detailacrdsss img {
+    height: 180px;
+  }
+
+  .detailsmap {
+    padding: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .detailsmap p {
+    margin-top: 10px;
+  }
+
+  .detailacrdsss {
+    width: 42%;
+  }
+
+  .locationmapin {
+    justify-content: center;
+    column-gap: 5.5%;
+  }
+
+  .popupseacrhinpout {
+    padding-top: 59px;
+    padding-bottom: 36px;
+    background-position: center 72%;
+    height: 370px;
+    max-width: 600px;
+  }
+
+  .popupseacrhinpout .searchhoodfilter {
+    max-width: 450px;
+  }
+
+  .popupseacrhinpout .searchbuttonfilt {
+    width: 17%;
+    right: 9%;
+    top: 5px;
+  }
+
+  .popupseacrhinpout .workIntro h1 {
+    font-size: 65px;
+    line-height: 64px;
+  }
+
+  .popupseacrhinpout .workIntro p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+  }
+
+  .filtersearchnewmain {
+    margin-top: 37px;
+  }
+
+  .locationname {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    line-height: 90%;
+    padding-right: 10px;
+  }
+
+  .leftsidepopup {
+    width: 30%;
+    padding-left: 3%;
+    padding-top: 40px;
+  }
+  .pointerdiv {
+    font-size: 13px;
+  }
+
+  .iconsimagelocation img {
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+  }
+
+  .butoonsearchbutton {
+    padding-left: 14px;
+    font-size: 12px;
+    width: 95%;
+  }
+
+  .popuprightsidecontent {
+    column-gap: 15px;
+    width: 100%;
+    margin-left: 5px;
+  }
+
+  .locationpopupmain {
+    max-height: 560px;
+    max-width: 94%;
+  }
+
+  .rightsidepopup {
+    overflow-y: scroll;
+    height: 600px;
+    width: 70%;
+  }
+  .leftsidescrolll {
+    overflow-y: scroll;
+    height: 470px;
+    padding-bottom: 8px;
+  }
+
+  .popupcloselocation {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    top: 4%;
+    right: 4%;
+  }
+  .submainlocationdd {
+    top: -32px;
+    height: 59px;
+  }
+
+  .inputmapsearchss {
+    height: 50px;
+    width: 125px;
+    font-size: 13px;
+    padding-right: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "29LT Bukra";
+  }
+
+  .clickheretoexplorelocation {
+    height: 50px;
+    width: 197px;
+    margin-left: -45px;
+    font-size: 13px;
+  }
+
+  .slectmapoption {
+    font-size: 15px;
+  }
+  .mainselectinputss {
+    padding-right: 0;
+    padding-left: 11px;
+    column-gap: 0;
+  }
+
+  .submainlocationdd input {
+    width: 108px;
+  }
+
+  .locationiframe {
+    height: 450px;
+    margin-top: 50px;
+  }
+
+  .fontsizeaccordion {
+    font-family: "29LT Bukra";
+    font-weight: 600;
+    font-size: 19px;
+  }
+
+  .fontxonatjdjsdd {
+    padding: 14px 18px;
+    background: #f5f5f5;
+    padding-right: 15px;
+  }
+
+  .arrowfontsup {
+    font-family: "29LT Bukra";
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  .boderrrrr {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    width: 480px;
+    margin-bottom: 19px;
+  }
+
+  .boderrrrraddedcolor .fontxonatjdjsdd {
+    background: #995098;
+    color: #fff;
+  }
+
+  .cardssss {
+    background: #ededed;
+  }
+
+  .boderrrrraddedcolor .cardssss {
+    padding-bottom: 30px;
+  }
+
+  .cardssss img {
+    margin-top: 10px;
+    height: 250px;
+  }
+
+  .buttonsecc {
+    margin-top: 23px;
+  }
+  .buttonsecc button {
+    font-size: 17px;
+    line-height: 17px;
+    width: 128px;
+    height: 37px;
+  }
+
+  .accorddionmobileview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -991,6 +1747,306 @@
     margin-top: 10px;
     padding-top: 10px;
   }
+
+  .titlenamecontent {
+    font-size: 20px;
+    min-height: fit-content;
+  }
+
+  .detailacrdsss img {
+    height: 180px;
+  }
+
+  .detailsmap {
+    padding: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .detailsmap p {
+    margin-top: 13px;
+  }
+
+  .detailacrdsss {
+    width: 62%;
+  }
+
+  .locationmapin {
+    justify-content: center;
+    column-gap: 5.5%;
+  }
+
+  .popupseacrhinpout {
+    padding-top: 50px;
+    padding-bottom: 36px;
+    background-position: center 70%;
+    height: 360px;
+    max-width: 505px;
+  }
+
+  .popupseacrhinpout .searchhoodfilter {
+    max-width: 375px;
+  }
+
+  .popupseacrhinpout .searchbuttonfilt {
+    width: 20%;
+    right: 8.3%;
+    top: 4px;
+  }
+
+  .popupseacrhinpout .workIntro h1 {
+    font-size: 60px;
+    line-height: 64px;
+  }
+
+  .popupseacrhinpout .workIntro p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+  }
+
+  .filtersearchnewmain {
+    margin-top: 37px;
+  }
+
+  /* mobile-css */
+
+  .clickheretoexplorelocation {
+    height: 47px;
+    width: 145px;
+    margin-left: -49px;
+    font-size: 10px;
+  }
+
+  .inputmapsearchss {
+    height: 47px;
+    width: 121px;
+    font-size: 11px;
+    padding-right: 29px;
+    letter-spacing: 0.5px;
+  }
+
+  .slectmapoption {
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  .submainlocationdd input {
+    width: 87px;
+    padding: 5px;
+  }
+
+  .submainlocationdd {
+    height: 60px;
+  }
+
+  .locationsvginput {
+    width: 19px;
+    height: 17px;
+  }
+
+  .mainselectinputss {
+    padding-right: 5px;
+    column-gap: 0;
+    padding-left: 10px;
+  }
+
+  .slectmapoption option {
+    font-size: 14px;
+  }
+
+  /* mobile-css */
+  .popupneigbhbourh {
+    flex-direction: column;
+  }
+
+  .leftsidepopup {
+    padding-left: 0;
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .leftsidescrolll {
+    padding-left: 5%;
+    display: flex;
+    column-gap: 15px;
+    overflow-x: scroll;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .pointerdiv {
+    font-size: 15px;
+    padding-top: 0px;
+    width: max-content;
+    flex-shrink: 0;
+    padding: 10px;
+  }
+  .pointerdiv.buttonactivated {
+    border-radius: 0;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .pointerdiv.buttonactivated::before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #b16caf;
+    position: absolute;
+    left: -10px;
+  }
+
+  .pointerdiv.buttonnonactivated {
+    border-bottom: none;
+    border-left: 1px solid #b16caf;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    height: max-content;
+  }
+
+  .locationname br {
+    display: none;
+  }
+
+  .locationname {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .locationpopupmain {
+    max-width: 533px;
+  }
+
+  .rightsidepopup {
+    width: 100%;
+    background-position: bottom;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .popuprightsidecontent {
+    column-gap: 20px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    height: 500px;
+    overflow-y: scroll;
+  }
+
+  .butoonsearchbutton {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .popuprightsidecontent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  .popuprightsidecontent .butoonsearchbutton {
+    max-width: 100%;
+    box-sizing: border-box;
+    height: max-content;
+  }
+
+  .popupcloselocation {
+    border: 1.8px solid #fff;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
+    top: -26%;
+    right: 4%;
+  }
+
+  .popupseacrhinpout .popupcloselocation {
+    border: 1.8px solid #050505;
+    color: #000;
+    top: 5%;
+  }
+
+  .locationiframe {
+    height: 500px;
+    margin-top: 50px;
+  }
+
+  .fontsizeaccordion {
+    font-family: "29LT Bukra";
+    font-weight: 600;
+    font-size: 19px;
+  }
+
+  .fontxonatjdjsdd {
+    padding: 14px 18px;
+    background: #f5f5f5;
+    padding-right: 15px;
+  }
+
+  .arrowfontsup {
+    font-family: "29LT Bukra";
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  .boderrrrr {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    width: 480px;
+    margin-bottom: 19px;
+  }
+
+  .boderrrrraddedcolor .fontxonatjdjsdd {
+    background: #995098;
+    color: #fff;
+  }
+
+  .cardssss {
+    background: #ededed;
+  }
+
+  .boderrrrraddedcolor .cardssss {
+    padding-bottom: 30px;
+  }
+
+  .cardssss img {
+    margin-top: 10px;
+    height: 250px;
+  }
+
+  .buttonsecc {
+    margin-top: 23px;
+  }
+  .buttonsecc button {
+    font-size: 17px;
+    line-height: 17px;
+    width: 128px;
+    height: 37px;
+  }
+
+  .accorddionmobileview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media (max-width: 600px) {
   .neighbourhoodcontiner .container {
@@ -1000,6 +2056,7 @@
   .neighbiurnewcards {
     flex-wrap: wrap;
     column-gap: 5%;
+    justify-content: center;
   }
 
   .searchhoodfilter {
@@ -1098,4 +2155,378 @@
     padding-right: 0;
     max-width: 300px;
   }
+
+  .titlenamecontent {
+    font-size: 20px;
+    min-height: fit-content;
+  }
+
+  .detailacrdsss img {
+    height: 200px;
+  }
+
+  .detailsmap {
+    padding: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .detailsmap p {
+    margin-top: 13px;
+  }
+
+  .detailacrdsss {
+    width: 330px;
+  }
+
+  .locationmapin {
+    justify-content: center;
+    column-gap: 5.5%;
+  }
+
+  .showingloactionsss {
+    margin-top: 30px;
+    margin-left: 18%;
+  }
+
+  .filtersearchnew .searchhoodfilter {
+    background-position: 8px center;
+    background-size: 20px;
+    padding-left: 30px;
+  }
+
+  .popupseacrhinpout {
+    padding-top: 70px;
+    padding-bottom: 36px;
+    background-position: center 72%;
+    height: 350px;
+    max-width: 340px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .popupseacrhinpout .searchhoodfilter {
+    max-width: 320px;
+    height: 46px;
+    padding-right: 0;
+  }
+
+  .popupseacrhinpout .searchbuttonfilt {
+    width: 26%;
+    right: 1.3%;
+    top: 4.4px;
+    height: 37px;
+    font-size: 12px;
+  }
+
+  .popupseacrhinpout .workIntro h1 {
+    font-size: 49px;
+    line-height: 55px;
+  }
+
+  .popupseacrhinpout .workIntro p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 13px;
+  }
+
+  .filtersearchnewmain {
+    margin-top: 28px;
+  }
+
+  .popupcloselocation {
+    border: 1px solid #050505;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    top: 5%;
+    right: 5%;
+  }
+
+  .popupseacrhinpout .searchhoodfilter::placeholder {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+
+  .popupneigbhbourh {
+    flex-direction: column;
+  }
+
+  .leftsidepopup {
+    padding-left: 0;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  .leftsidescrolll {
+    padding-left: 5%;
+    display: flex;
+    column-gap: 15px;
+    overflow-x: scroll;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-right: 15px;
+  }
+
+  .pointerdiv {
+    font-size: 14px;
+    padding-top: 0px;
+    width: max-content;
+    flex-shrink: 0;
+    padding: 10px;
+  }
+  .pointerdiv.buttonactivated {
+    border-radius: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+
+  .pointerdiv.buttonactivated::before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #b16caf;
+    position: absolute;
+    left: -10px;
+  }
+
+  .pointerdiv.buttonnonactivated {
+    border-bottom: none;
+    border-left: 1px solid #b16caf;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    height: max-content;
+  }
+  .pointerdiv.buttonnonactivated:first-child {
+    border-left: 0;
+  }
+  .locationname br {
+    display: none;
+  }
+
+  .locationname {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .locationpopupmain {
+    max-width: 533px;
+  }
+
+  .rightsidepopup {
+    width: 100%;
+    background-position: bottom;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .popuprightsidecontent {
+    column-gap: 20px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    height: 500px;
+    overflow-y: scroll;
+  }
+
+  .butoonsearchbutton {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .popuprightsidecontent {
+    display: flex;
+    flex-direction: column;
+    column-gap: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow-x: hidden;
+    margin: 0;
+    padding-right: 10px;
+  }
+
+  .popuprightsidecontent .butoonsearchbutton {
+    max-width: 100%;
+    box-sizing: border-box;
+    height: max-content;
+    font-size: 14px;
+  }
+
+  .popupcloselocation {
+    border: 1.8px solid #fff;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
+    top: -31%;
+    right: 7%;
+  }
+
+  .iconsimagelocation img {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+  }
+
+  .inputmapsearchss {
+    height: 38px;
+    width: 86px;
+    font-size: 12px;
+    padding-right: 0px;
+    margin-left: 18px;
+    font-family: "29LT Bukra";
+    font-weight: 600;
+  }
+
+  .slectmapoption {
+    font-size: 14px;
+    max-width: 108px;
+  }
+
+  .submainlocationdd {
+    top: -28px;
+    height: 50px;
+    padding-right: 3px;
+    width: 350px;
+    overflow: visible;
+  }
+
+  .submainlocationdd input {
+    max-width: 110px;
+    padding: 10px 0 10px 13px;
+  }
+
+  .locationsvginput {
+    width: 18px;
+    height: 18px;
+  }
+
+  .slectmapoption option {
+    font-size: 14px;
+    max-width: 108px;
+  }
+
+  .mainselectinputss {
+    padding-right: 0px;
+    padding-left: 10px;
+    column-gap: 0;
+  }
+
+  .locationiframe {
+    height: 400px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .submainlocationdd input::placeholder {
+    font-size: 14px;
+  }
+
+  .hoverlocationsection {
+    padding-bottom: 30px;
+  }
+
+  .popupseacrhinpout .popupcloselocation {
+    border: 1.8px solid #050505;
+    color: #000;
+    top: 5%;
+  }
+
+  .changethelocation {
+    margin-top: 110px;
+  }
+
+  .clickheretoexplorelocation {
+    font-weight: 500;
+    height: 39px;
+    border-radius: 20px;
+    width: max-content;
+    /* margin-left: -49px; */
+    padding: 3px 20px 3px 20px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    position: absolute;
+    top: 72px;
+    overflow: visible;
+    left: 38%;
+  }
+  .pointerdiv.buttonactivated:nth-of-type(1)::before {
+    width: 0;
+  }
+
+  /* accordion */
+
+  .fontsizeaccordion {
+    font-family: "29LT Bukra";
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .fontxonatjdjsdd {
+    padding: 14px 18px;
+    background: #f5f5f5;
+    padding-right: 15px;
+  }
+
+  .arrowfontsup {
+    font-family: "29LT Bukra";
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .boderrrrr {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    width: 330px;
+  }
+
+  .boderrrrraddedcolor .fontxonatjdjsdd {
+    background: #995098;
+    color: #fff;
+  }
+
+  .cardssss {
+    background: #ededed;
+  }
+
+  .boderrrrraddedcolor .cardssss {
+    padding-bottom: 30px;
+  }
+
+  .cardssss img {
+    margin-top: 10px;
+  }
+
+  .buttonsecc {
+    margin-top: 20px;
+  }
+
+  .accorddionmobileview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
 }
+
+/* .mainlocationdd {
+  display: none;
+} */
+
+/* .clickheretoexplorelocation {
+  display: none;
+} */

@@ -10,7 +10,7 @@ import { useLocations } from "../hooks/useLocations";
 import EmptyState from "../Components/locations/EmptyState";
 
 export default function NeighbourhoodItemDetail() {
-  const { locationId,  slug } = useParams();
+  const { locationId, slug } = useParams();
   const { data, loading } = useNeighbourhood({
     location: locationId,
   });
@@ -28,6 +28,16 @@ export default function NeighbourhoodItemDetail() {
         onReset={() => navigate("/neighbourhood")}
       />
     );
+
+  const { subcategory } = useParams();
+  const relatedItems =
+    data?.filter(
+      (i) =>
+        i.slug !== slug &&
+        (subcategory
+          ? i.subCategories?.some((sub) => sub.slug === subcategory)
+          : i.category?.slug === category),
+    ) || [];
 
   return (
     <>
@@ -180,7 +190,11 @@ export default function NeighbourhoodItemDetail() {
           </a>
         )}
 
-        <a href={item.socialMedia.instagram} target="_blank" rel="noreferrer"></a>
+        <a
+          href={item.socialMedia.instagram}
+          target="_blank"
+          rel="noreferrer"
+        ></a>
 
         {/* CONTACT */}
         <div className="mt-10">
@@ -267,6 +281,45 @@ export default function NeighbourhoodItemDetail() {
           <p>Founded: {item.companyInfo?.foundedYear}</p>
         </div>
       </div>
+
+      {/* CANCER HOSPITALS */}
+      {relatedItems.length > 0 && (
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold mb-6">{subcategory} NEWAR BY </h3>
+
+          <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+            {relatedItems.map((h) => (
+              <Link
+                key={h.id}
+                to={`/neighbourhood/${locationId}/${h.slug}`}
+                className="min-w-[250px] bg-white rounded-lg shadow hover:shadow-lg transition"
+              >
+                <img
+                  src={
+                    h?.heroImage?.url
+                      ? API_BASE_URL_API_TEST_DEV + h.heroImage.url
+                      : "/placeholder.jpg"
+                  }
+                  alt={h.name}
+                  className="w-full h-[150px] object-cover rounded-t-lg"
+                />
+
+                <div className="p-3">
+                  <h4 className="font-semibold text-sm">{h.name}</h4>
+
+                  <p className="text-xs text-gray-500 mt-1">
+                    ⭐ {h.rating || "4.0"}
+                  </p>
+
+                  <p className="text-xs text-gray-400 mt-1 line-clamp-2">
+                    {h.description}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </>
   );
 }

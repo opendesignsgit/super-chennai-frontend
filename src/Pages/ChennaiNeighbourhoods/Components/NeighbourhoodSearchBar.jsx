@@ -176,8 +176,7 @@ export default function NeighbourhoodSearchBar({
     return result;
   }, [data]);
 
-
-  console.log("subcategories",subCategoriesByCategory)
+  console.log("subcategories", subCategoriesByCategory);
 
   const categories = Object.keys(grouped);
   const activeCat = activeCategory || categories?.[0];
@@ -281,10 +280,10 @@ export default function NeighbourhoodSearchBar({
               {/* LEFT */}
               <div className="col-span-4 bg-purple-600 text-white p-6 leftsidepopup">
                 <h2 className="text-2xl font-bold mb-6 locationname">
-                  IN {location?.locality}
+                  IN <br /> {location?.locality}
                 </h2>
 
-                <div className="space-y-3">
+                <div className="space-y-3 leftsidescrolll">
                   {categories.map((cat) => (
                     <div
                       key={cat}

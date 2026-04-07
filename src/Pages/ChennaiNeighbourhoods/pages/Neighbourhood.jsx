@@ -200,7 +200,7 @@ if (loading) return <NeighbourhoodListSkeleton />;
                 <>
                   <p className="mb-10">
                     <span
-                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-semibold"
+                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-semibold showingloactionsss"
                       style={{ background: "#F3ECFB", color: "#6A3FA0" }}
                     >
                       Showing {filteredLocations.length} locations

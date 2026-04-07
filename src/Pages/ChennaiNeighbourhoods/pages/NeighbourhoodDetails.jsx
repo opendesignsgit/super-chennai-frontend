@@ -10,6 +10,10 @@ import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 export default function NeighbourhoodDetail() {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null);
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   const { locationId } = useParams();
   const { data, loading } = useNeighbourhood({
     location: decodeURIComponent(locationId),
@@ -40,7 +44,7 @@ export default function NeighbourhoodDetail() {
 
   const categories = Object.keys(grouped);
   const activeCat = activeCategory || categories?.[0];
-  
+
   if (!data || data.length === 0) {
     return (
       <EmptyState
@@ -92,7 +96,7 @@ export default function NeighbourhoodDetail() {
       />
 
       <div className="">
-        <section className="mt-10 bg-white visitIntroParaSection">
+        <section className="mt-10 bg-white visitIntroParaSection margincontrl">
           <div className="container max-w-7xl mx-auto px-4 !mb-0">
             <div className="">
               <div class="workIntro">
@@ -129,7 +133,7 @@ export default function NeighbourhoodDetail() {
           </div>
         </div>
 
-        <div className="relative space-y-6 locationmainsection">
+        <div className="relative space-y-6 locationmainsection desktopsection">
           {categories.map((cat, idx) => {
             const totalItems = categories.length;
             const threshold = Math.floor(totalItems / 2);
@@ -164,7 +168,10 @@ export default function NeighbourhoodDetail() {
                     style={{ top: topValue }}
                   >
                     <img
-                      src={API_BASE_URL_API_TEST_DEV + grouped[cat][0].FeaturedImage.url}
+                      src={
+                        API_BASE_URL_API_TEST_DEV +
+                        grouped[cat][0].FeaturedImage.url
+                      }
                       alt={grouped[cat][0].name}
                       className="w-full h-full object-cover rounded-lg"
                     />
@@ -175,6 +182,69 @@ export default function NeighbourhoodDetail() {
             );
           })}
         </div>
+      </div>
+
+      <div className="space-y-4 mobilesection accorddionmobileview">
+        {categories.map((cat, idx) => (
+          <div
+            key={cat}
+            //  className="rounded-lg overflow-hidden boderrrrr"
+            className={`rounded-lg overflow-hidden boderrrrr ${
+              openIndex === idx ? "boderrrrraddedcolor" : ""
+            }`}
+          >
+            {/* Heading */}
+            <div
+              className="flex justify-between items-center cursor-pointer fontxonatjdjsdd "
+              onClick={() => toggleAccordion(idx)}
+            >
+              <span className="font-medium fontsizeaccordion">{cat}</span>
+
+              {/* icon rotate animation */}
+              <span
+                className={`transition-transform duration-300 arrowfontsup ${
+                  openIndex === idx ? "rotate-45" : "rotate-0"
+                }`}
+              >
+                +
+              </span>
+            </div>
+
+            {/* Animated Content */}
+            <div
+              className={`transition-all duration-500 ease-in-out overflow-hidden cardssss ${
+                openIndex === idx ? "max-h-[500px] p-4" : "max-h-0 p-0"
+              }`}
+            >
+              {grouped[cat]?.[0]?.FeaturedImage?.url && (
+                <div className="space-y-3">
+                  {/* Image */}
+                  <img
+                    src={
+                      API_BASE_URL_API_TEST_DEV +
+                      grouped[cat][0].FeaturedImage.url
+                    }
+                    alt={grouped[cat][0].name}
+                    className="w-full h-40 object-cover rounded-md"
+                  />
+
+                  {/* Button */}
+
+                  <div className="flex justify-center buttonsecc">
+                    <button
+                      onClick={() =>
+                        navigate(`/neighbourhood/${locationId}/${cat}`)
+                      }
+                      className="w-[100px] bg-[#995098] text-white py-1 rounded-[50px]"
+                    >
+                      Click Here
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );

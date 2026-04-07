@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
 import NeighbourhoodSearchBar from "../Components/NeighbourhoodSearchBar";
@@ -15,7 +15,6 @@ export default function NeighbourhoodCategory() {
     location: locationId,
   });
 
-  if (loading) return <NeighbourhoodListSkeleton />;
   const firstLetter = decodeURIComponent(locationId)?.charAt(0)?.toUpperCase();
   const slugify = (text) => text?.toLowerCase().replace(/\s+/g, "-");
 
@@ -37,6 +36,8 @@ export default function NeighbourhoodCategory() {
     loc.locality?.toUpperCase().startsWith(firstLetter),
   );
 
+   
+  console.log("filtered ",filtered)
   const subCategoriesByCategory = {};
   data?.forEach((item) => {
     const cat = item?.category?.title || "Others";
@@ -77,6 +78,9 @@ export default function NeighbourhoodCategory() {
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
+  if (loading) return <NeighbourhoodListSkeleton />;
+
 
   return (
     <>
@@ -126,18 +130,19 @@ export default function NeighbourhoodCategory() {
                 src={
                   item?.FeaturedImage?.url
                     ? API_BASE_URL_API_TEST_DEV + item.FeaturedImage.url
-                    : "/placeholder.jpg"
+                    : "https://www.superchennai.com/images/restaurants-banner.jpg" 
                 }
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = "https://www.superchennai.com/images/restaurants-banner.jpg";
+                }}
                 className="w-full h-48 object-cover"
               />
 
               <div className="p-4 detailsmap">
                 <h3 className="titlenamecontent">{item.name}</h3>
 
-                <p className="mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  ad temporibus
-                </p>
+                <p className="mt-2">{item.description}</p>
 
                 <div className="readmorelink">
                   <Link className="">READMORE</Link>

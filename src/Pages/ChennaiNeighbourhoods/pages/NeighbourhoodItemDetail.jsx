@@ -64,6 +64,35 @@ export default function NeighbourhoodItemDetail() {
         locations={locations}
         locationId={locationId}
       />
+
+      {/* FEATURED IMAGE */}
+      {item?.FeaturedImage?.url && (
+        <div className="mt-6">
+          <img
+            src={API_BASE_URL_API_TEST_DEV + item.FeaturedImage.url}
+            alt={item.FeaturedImage.alt || item.name}
+            className="w-full h-[400px] object-cover rounded-lg"
+          />
+        </div>
+      )}
+
+      {/* GALLERY */}
+      {item?.gallery?.length > 0 && (
+        <div className="mt-10">
+          <h3 className="text-xl font-semibold mb-4">Gallery</h3>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {item.gallery.map((g) => (
+              <img
+                key={g.id}
+                src={API_BASE_URL_API_TEST_DEV + g.image.url}
+                alt={g.alt || item.name}
+                className="w-full h-[200px] object-cover rounded-lg"
+              />
+            ))}
+          </div>
+        </div>
+      )}
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* TITLE */}
 
@@ -95,6 +124,64 @@ export default function NeighbourhoodItemDetail() {
           </div>
         )}
 
+        {item.amenities?.length > 0 && (
+          <div className="mt-10">
+            <h3 className="text-xl font-semibold mb-4">Amenities</h3>
+
+            <ul className="list-disc pl-5 space-y-2">
+              {item.amenities.map((a) => (
+                <li key={a.id}>{a.label}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {item.businessHours?.length > 0 && (
+          <div className="mt-10">
+            <h3 className="text-xl font-semibold mb-4">Timings</h3>
+
+            {item.businessHours.map((b) => (
+              <div key={b.id}>
+                {b.openTime} - {b.closeTime}
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="mt-6">
+          <h3 className="text-xl font-semibold">Address</h3>
+          <p>{item.branches?.[0]?.address}</p>
+        </div>
+
+        {item.subCategories?.length > 0 && (
+          <div className="mt-6 flex gap-2 flex-wrap">
+            {item.subCategories.map((s) => (
+              <span key={s.id} className="bg-gray-200 px-3 py-1 rounded">
+                {s.title}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {item.contactInfo?.website && (
+          <a
+            href={item.contactInfo.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline block"
+          >
+            Visit Website
+          </a>
+        )}
+
+        {item.contactInfo?.primaryPhone && (
+          <a href={`tel:${item.contactInfo.primaryPhone}`} className="block">
+            Call Now
+          </a>
+        )}
+
+        <a href={item.socialMedia.instagram} target="_blank" rel="noreferrer"></a>
+
         {/* CONTACT */}
         <div className="mt-10">
           <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
@@ -106,7 +193,14 @@ export default function NeighbourhoodItemDetail() {
           </div>
         </div>
 
+        <div className="mt-2 text-yellow-500 text-lg">
+          ⭐ {item.googleData?.googleRating || item.rating}
+        </div>
+
+        <p>Established: {item.establishedYear}</p>
+
         {/* BRANCHES */}
+
         <div className="mt-10">
           <h3 className="text-xl font-semibold mb-4">Branches</h3>
 

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 
-const FALLBACK = "https://via.placeholder.com/600x400?text=No+Image";
+const FALLBACK = "/images/locationdefult.png";
 
 export default function AreaFilter({ data, onChange }) {
   const navigate = useNavigate();

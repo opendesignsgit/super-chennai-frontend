@@ -3,7 +3,7 @@ import { useState } from "react";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 export default function AlphabetFilter({ onChange }) {
-  const [active, setActive] = useState("T");
+  const [active, setActive] = useState("");
 
   const handleClick = (l) => {
     setActive(l);

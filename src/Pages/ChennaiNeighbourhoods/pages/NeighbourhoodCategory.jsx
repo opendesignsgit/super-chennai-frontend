@@ -139,22 +139,34 @@ export default function NeighbourhoodCategory() {
           {filtered.map((item) => (
             <div
               key={item.id}
-              onClick={() =>
+              // onClick={() =>
+              //   navigate(
+              //     `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
+              //   )
+              // }
+              onClick={() => {
+                const safeCategory = category?.toLowerCase();
+                const safeSubcategory =
+                  subcategory && subcategory !== "undefined"
+                    ? subcategory
+                    : safeCategory;
+
                 navigate(
-                  `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
-                )
-              }
+                  `/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`,
+                );
+              }}
               className="cursor-pointer detailacrdsss"
             >
               <img
                 src={
                   item?.FeaturedImage?.url
                     ? API_BASE_URL_API_TEST_DEV + item.FeaturedImage.url
-                    : "https://www.superchennai.com/images/restaurants-banner.jpg" 
+                    : "https://www.superchennai.com/images/restaurants-banner.jpg"
                 }
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = "https://www.superchennai.com/images/restaurants-banner.jpg";
+                  e.target.src =
+                    "https://www.superchennai.com/images/restaurants-banner.jpg";
                 }}
                 className="w-full h-48 object-cover"
               />

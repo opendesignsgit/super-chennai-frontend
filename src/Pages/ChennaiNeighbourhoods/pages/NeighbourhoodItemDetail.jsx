@@ -1,9 +1,9 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams,useNavigate } from "react-router-dom";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 import LexicalContent from "../Components/LexicalContent";
 import { useNeighbourhood } from "../hooks/useNeighbourhood";
 import { useState } from "react";
-
+import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
 import NeighbourhoodSearchBar from "../Components/NeighbourhoodSearchBar";
 import EmptyState from "../Components/locations/EmptyState";
 import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
@@ -18,6 +18,7 @@ export default function NeighbourhoodItemDetail() {
   const item = data?.find((i) => i.slug === slug);
 
 
+  const navigate = useNavigate();
 
 const [isModalOpen, setIsModalOpen] = useState(false);
 const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -67,15 +68,23 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
         />
 
         {/* SHADE */}
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,#2b3284_0%,#b10f92_50%,#2b3284_100%)] opacity-80"></div>
-
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,#2b3284_0%,#b10f92_50%,#2b3284_100%)]"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
         {/* CONTENT */}
         <div className="accodoamationBannerContainer relative z-20">
           <div className="accodoamationBannerText">
-            <h3>{item.name}</h3>
+            <AutoShrinkText
+              text={item.name}
+              baseSize={60}
+              minSize={40}
+              maxChars={40}
+              className="accodoamationBannerText"
+              width="80%"
+              maxLines={2}
+            />
 
             <div className="breadCrum">
-              <Link to="/visit-chennai">Live</Link> -{" "}
+              <Link to="/visit-chennai">Neighbourhoods</Link> -{" "}
               <span>{item.category?.title}</span>
             </div>
           </div>
@@ -286,22 +295,28 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
               ))}
             </div>
           )}
-
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
-            <h3 className="text-xl font-semibold">Address</h3>
-            <p>{item.branches?.[0]?.address}</p>
-          </div>
+          {item.branches?.[0]?.address && (
+            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
+              <h3 className="text-xl font-semibold">Address</h3>
+              <p>{item.branches?.[0]?.address}</p>
+            </div>
+          )}
 
           {item.subCategories?.length > 0 && (
             <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
               <h4 className="text-lg font-semibold mb-3 text-gray-700">
-                Subcategories
+                Releated categories
               </h4>
 
               <div className="flex flex-wrap gap-2">
                 {item.subCategories.map((s) => (
                   <span
                     key={s.id}
+                    onClick={() =>
+                      navigate(
+                        `/neighbourhood/${locationId}/${item.category?.title?.toLowerCase()}/${s.slug}`,
+                      )
+                    }
                     className="bg-purple-100 text-purple-800 px-4 py-1 rounded-full text-sm font-medium hover:bg-purple-200 transition-colors cursor-pointer"
                   >
                     {s.title}
@@ -311,191 +326,200 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
             </div>
           )}
 
-          <div className="flex justify-end gap-4 mt-5 flex-wrap">
-            {/* Website */}
-            {item.contactInfo?.website && (
-              <a
-                href={item.contactInfo.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
-              >
-                Visit Website
-              </a>
-            )}
-
-            {/* Phone */}
-            {item.contactInfo?.primaryPhone && (
-              <a
-                href={`tel:${item.contactInfo.primaryPhone}`}
-                className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium"
-              >
-                Call Now
-              </a>
-            )}
-
-            {/* Instagram */}
-            {item.socialMedia?.instagram && (
-              <a
-                href={item.socialMedia.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors text-sm font-medium flex items-center gap-1"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.5.4.6.2 1 .5 1.4 1 .4.4.8.9 1 1.5.2.5.3 1.3.4 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.5-.2.6-.5 1-1 1.4-.4.4-.9.8-1.5 1-.5.2-1.3.3-2.5.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1-.5-1.4-1-.4-.4-.8-.9-1-1.5-.2-.5-.3-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.5.2-.6.5-1 1-1.4.4-.4.9-.8 1.5-1 .5-.2 1.3-.3 2.5-.4C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7 .1 5.7.2 4.8.3 4 .5 3.2.7 2.5 1 1.9 1.6.5 3 0 4.5 0 12s.5 9 1.9 10.4c.6.6 1.3.9 2.1 1.1.8.2 1.7.3 3 .4 1.3.1 1.7.1 5 .1s3.6 0 5-.1c1.3-.1 2.2-.2 3-.4.8-.2 1.5-.5 2.1-1.1C23.5 21 24 19.5 24 12s-.5-9-1.9-10.4c-.6-.6-1.3-.9-2.1-1.1-.8-.2-1.7-.3-3-.4C15.6 0 15.2 0 12 0z" />
-                  <path d="M12 5.8a6.2 6.2 0 1 0 6.2 6.2A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 4-4 4 4 0 0 1-4 4zM18.4 4.6a1.4 1.4 0 1 1-1.4-1.4 1.4 1.4 0 0 1 1.4 1.4z" />
-                </svg>
-                Instagram
-              </a>
-            )}
-          </div>
-
-          {/* CONTACT */}
-          <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-            <h3 className="text-xl font-semibold mb-5 text-gray-800">
-              Contact Info
-            </h3>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* Phone */}
-              {item.contactInfo?.primaryPhone && (
-                <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-green-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 5h2l3.6 7.59-1.35 2.45A1 1 0 008 16h9a1 1 0 001-1v-3.5l2-2V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
-                    />
-                  </svg>
-                  <span>{item.contactInfo.primaryPhone}</span>
-                </div>
-              )}
-
-              {/* Email */}
-              {item.contactInfo?.email && (
-                <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-blue-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M16 12H8m0 0l-4-4m4 4l4-4M8 12v8m0 0l-4-4m4 4l4-4"
-                    />
-                  </svg>
-                  <span>{item.contactInfo.email}</span>
-                </div>
-              )}
-
+          {(item.contactInfo?.website ||
+            item.contactInfo?.primaryPhone ||
+            item.socialMedia?.instagram) && (
+            <div className="flex justify-end gap-4 mt-5 flex-wrap">
               {/* Website */}
               {item.contactInfo?.website && (
                 <a
                   href={item.contactInfo.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+                >
+                  Visit Website
+                </a>
+              )}
+
+              {/* Phone */}
+              {item.contactInfo?.primaryPhone && (
+                <a
+                  href={`tel:${item.contactInfo.primaryPhone}`}
+                  className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium"
+                >
+                  Call Now
+                </a>
+              )}
+
+              {/* Instagram */}
+              {item.socialMedia?.instagram && (
+                <a
+                  href={item.socialMedia.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors text-sm font-medium flex items-center gap-1"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-purple-500"
-                    fill="none"
+                    className="h-4 w-4"
+                    fill="currentColor"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 4.354a8 8 0 100 15.292 8 8 0 000-15.292zM12 4v16"
-                    />
+                    <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.5.4.6.2 1 .5 1.4 1 .4.4.8.9 1 1.5.2.5.3 1.3.4 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.5-.2.6-.5 1-1 1.4-.4.4-.9.8-1.5 1-.5.2-1.3.3-2.5.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1-.5-1.4-1-.4-.4-.8-.9-1-1.5-.2-.5-.3-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.5.2-.6.5-1 1-1.4.4-.4.9-.8 1.5-1 .5-.2 1.3-.3 2.5-.4C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7 .1 5.7.2 4.8.3 4 .5 3.2.7 2.5 1 1.9 1.6.5 3 0 4.5 0 12s.5 9 1.9 10.4c.6.6 1.3.9 2.1 1.1.8.2 1.7.3 3 .4 1.3.1 1.7.1 5 .1s3.6 0 5-.1c1.3-.1 2.2-.2 3-.4.8-.2 1.5-.5 2.1-1.1C23.5 21 24 19.5 24 12s-.5-9-1.9-10.4c-.6-.6-1.3-.9-2.1-1.1-.8-.2-1.7-.3-3-.4C15.6 0 15.2 0 12 0z" />
+                    <path d="M12 5.8a6.2 6.2 0 1 0 6.2 6.2A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 4-4 4 4 0 0 1-4 4zM18.4 4.6a1.4 1.4 0 1 1-1.4-1.4 1.4 1.4 0 0 1 1.4 1.4z" />
                   </svg>
-                  <span>{item.contactInfo.website}</span>
+                  Instagram
                 </a>
               )}
             </div>
-          </div>
+          )}
+
+          {/* CONTACT */}
+          {(item.contactInfo?.primaryPhone ||
+            item.contactInfo?.email ||
+            item.contactInfo?.website) && (
+            <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
+              <h3 className="text-xl font-semibold mb-5 text-gray-800">
+                Contact Info
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* Phone */}
+                {item.contactInfo?.primaryPhone && (
+                  <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 text-green-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3 5h2l3.6 7.59-1.35 2.45A1 1 0 008 16h9a1 1 0 001-1v-3.5l2-2V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
+                      />
+                    </svg>
+                    <span>{item.contactInfo.primaryPhone}</span>
+                  </div>
+                )}
+
+                {/* Email */}
+                {item.contactInfo?.email && (
+                  <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 text-blue-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M16 12H8m0 0l-4-4m4 4l4-4M8 12v8m0 0l-4-4m4 4l4-4"
+                      />
+                    </svg>
+                    <span>{item.contactInfo.email}</span>
+                  </div>
+                )}
+
+                {/* Website */}
+                {item.contactInfo?.website && (
+                  <a
+                    href={item.contactInfo.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 text-purple-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 4.354a8 8 0 100 15.292 8 8 0 000-15.292zM12 4v16"
+                      />
+                    </svg>
+                    <span>{item.contactInfo.website}</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
 
           {/* BRANCHES */}
+          {item.branches?.length > 0 && (
+            <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
+              <h3 className="text-xl font-semibold mb-5 text-gray-800">
+                Branches
+              </h3>
 
-          <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-            <h3 className="text-xl font-semibold mb-5 text-gray-800">
-              Branches
-            </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {item.branches?.map((b) => (
+                  <div
+                    key={b.id}
+                    className="p-4 rounded-lg shadow hover:shadow-md transition-shadow bg-gray-50"
+                  >
+                    {/* Branch Name */}
+                    <h4 className="font-semibold text-gray-900 mb-2">
+                      {b.branchName}
+                    </h4>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {item.branches?.map((b) => (
-                <div
-                  key={b.id}
-                  className="p-4 rounded-lg shadow hover:shadow-md transition-shadow bg-gray-50"
-                >
-                  {/* Branch Name */}
-                  <h4 className="font-semibold text-gray-900 mb-2">
-                    {b.branchName}
-                  </h4>
+                    {/* Area */}
+                    {b.area && (
+                      <div className="flex items-center gap-2 text-gray-600 mb-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5 text-gray-400"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                          />
+                        </svg>
+                        <span>{b.area}</span>
+                      </div>
+                    )}
 
-                  {/* Area */}
-                  {b.area && (
-                    <div className="flex items-center gap-2 text-gray-600 mb-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-gray-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
-                        />
-                      </svg>
-                      <span>{b.area}</span>
-                    </div>
-                  )}
-
-                  {/* Phone */}
-                  {b.phone && (
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-green-500"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M3 5h2l3.6 7.59-1.35 2.45A1 1 0 008 16h9a1 1 0 001-1v-3.5l2-2V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
-                        />
-                      </svg>
-                      <span>{b.phone}</span>
-                    </div>
-                  )}
-                </div>
-              ))}
+                    {/* Phone */}
+                    {b.phone && (
+                      <div className="flex items-center gap-2 text-gray-600">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5 text-green-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M3 5h2l3.6 7.59-1.35 2.45A1 1 0 008 16h9a1 1 0 001-1v-3.5l2-2V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
+                          />
+                        </svg>
+                        <span>{b.phone}</span>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {item.serviceOptions?.length > 0 && (
             <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
@@ -588,127 +612,121 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
             </div>
           )}
 
-          <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-            <h3 className="text-xl font-semibold mb-5 text-gray-800">
-              Company Info
-            </h3>
+          {(item.companyInfo?.ownerName || item.companyInfo?.foundedYear) && (
+            <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
+              <h3 className="text-xl font-semibold mb-5 text-gray-800">
+                Company Info
+              </h3>
 
-            <div className="flex flex-col gap-3">
-              {/* Owner */}
-              {item.companyInfo?.ownerName && (
-                <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition-colors">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-purple-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5.121 17.804A7.968 7.968 0 0112 15c2.21 0 4.21.896 5.879 2.345M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <span>Owner: {item.companyInfo.ownerName}</span>
-                </div>
-              )}
-
-              {/* Founded Year */}
-              {item.companyInfo?.foundedYear && (
-                <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition-colors">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-green-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 8v4l3 3M12 12a9 9 0 100-18 9 9 0 000 18z"
-                    />
-                  </svg>
-                  <span>Founded: {item.companyInfo.foundedYear}</span>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-
-      
-      </div>
-
-
-      <div className="max-w-5xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-6 m-15">
-
-        {relatedItems.length > 0 && (
-          <div className=" mt-10">
-            <h3 className="text-2xl font-bold mb-6 text-gray-800 capitalize">
-              {subcategory} Nearby
-            </h3>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {relatedItems.map((item) => (
-                <div
-                  key={item.id}
-                  onClick={() =>
-                    navigate(
-                      `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
-                    )
-                  }
-                  className="cursor-pointer bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                >
-                  {/* Image */}
-                  <div className="relative">
-                    <img
-                      src={
-                        item?.heroImage?.url
-                          ? API_BASE_URL_API_TEST_DEV + item.heroImage.url
-                          : "https://www.superchennai.com/images/restaurants-banner.jpg"
-                      }
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src =
-                          "https://www.superchennai.com/images/restaurants-banner.jpg";
-                      }}
-                      className="w-full h-48 object-cover"
-                      alt={item.name}
-                    />
-
-                    {/* Rating Badge */}
-                    <span className="absolute top-3 right-3 bg-yellow-500 text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
-                      ⭐ {item.rating || "4.0"}
-                    </span>
+              <div className="flex flex-col gap-3">
+                {/* Owner */}
+                {item.companyInfo?.ownerName && (
+                  <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 text-purple-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5.121 17.804A7.968 7.968 0 0112 15c2.21 0 4.21.896 5.879 2.345M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <span>Owner: {item.companyInfo.ownerName}</span>
                   </div>
+                )}
 
-                  {/* Content */}
-                  <div className="p-4">
-                    <h3 className="titlenamecontent">
-                      {item.name}
-                    </h3>
+                {/* Founded Year */}
+                {item.companyInfo?.foundedYear && (
+                  <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 text-green-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 8v4l3 3M12 12a9 9 0 100-18 9 9 0 000 18z"
+                      />
+                    </svg>
+                    <span>Founded: {item.companyInfo.foundedYear}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+      {relatedItems?.length > 0 && (
+        <div className="max-w-5xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-6 m-15">
+          {relatedItems.length > 0 && (
+            <div className=" mt-10">
+              <h3 className="text-2xl font-bold mb-6 text-gray-800 capitalize">
+                {subcategory} Nearby
+              </h3>
 
-                    <p className="mt-2 text-sm text-gray-600 line-clamp-2">
-                      {item.description || "No description available"}
-                    </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {relatedItems.map((item) => (
+                  <div
+                    key={item.id}
+                    onClick={() =>
+                      navigate(
+                        `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
+                      )
+                    }
+                    className="cursor-pointer bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                  >
+                    {/* Image */}
+                    <div className="relative">
+                      <img
+                        src={
+                          item?.heroImage?.url
+                            ? API_BASE_URL_API_TEST_DEV + item.heroImage.url
+                            : "https://www.superchennai.com/images/restaurants-banner.jpg"
+                        }
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src =
+                            "https://www.superchennai.com/images/restaurants-banner.jpg";
+                        }}
+                        className="w-full h-48 object-cover"
+                        alt={item.name}
+                      />
 
-                    {/* Read More */}
-                    <div className="mt-3">
-                      <span className="readmorelink">
-                        Read More →
+                      {/* Rating Badge */}
+                      <span className="absolute top-3 right-3 bg-yellow-500 text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
+                        ⭐ {item.rating || "4.0"}
                       </span>
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
 
+                    {/* Content */}
+                    <div className="p-4">
+                      <h3 className="titlenamecontent">{item.name}</h3>
+
+                      <p className="mt-2 text-sm text-gray-600 line-clamp-2">
+                        {item.description || "No description available"}
+                      </p>
+
+                      {/* Read More */}
+                      <div className="mt-3">
+                        <span className="readmorelink">Read More →</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
+      )}
     </>
   );
 }

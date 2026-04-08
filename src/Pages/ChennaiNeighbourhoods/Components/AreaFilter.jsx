@@ -30,12 +30,16 @@ export default function AreaFilter({ data, onChange }) {
 
               {/* content */}
               <div className="carcontentsnew">
-                <h4 className="text-purple-600 font-bold text-lg uppercase">
-                  {loc.locality}
-                </h4>
+                <div className="flex justify-between items-center">
+                  <h4 className="text-purple-600 font-bold text-lg uppercase">
+                    {loc.locality}
+                  </h4>
+
+                 
+                </div>
 
                 <h5 className="text-gray-600 text-sm mt-1 pincodestyle">
-                  {loc.label}
+                  {loc.label},{"  "}{loc.pincode}
                 </h5>
 
                 <div className="readmorelink">

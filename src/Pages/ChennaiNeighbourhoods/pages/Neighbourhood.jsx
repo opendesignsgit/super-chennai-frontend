@@ -14,18 +14,20 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 export default function ChennaiNeighbourhood() {
-
   const { filters, updateFilter } = useSearch();
   const { locations, loading, error } = useLocations();
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const searchQuery = params.get("search");
+
   useEffect(() => {
-  if (searchQuery) {
-    updateFilter("q", searchQuery);
-    updateFilter("alpha", "");
-  }
-}, [searchQuery]);
+    if (searchQuery) {
+      updateFilter("q", searchQuery);
+      updateFilter("alpha", "");
+    }
+  }, [searchQuery]);
+
+  console.log("locations", locations);
 
   /* SEARCH + ALPHABET FILTER  ADVANCE SEARCH ALGRITHEMS */
 
@@ -64,59 +66,59 @@ export default function ChennaiNeighbourhood() {
   }
 
   const filteredLocations = useMemo(() => {
-  let result = locations || [];
+    let result = locations || [];
 
-  // alphabet filter
-  if (filters.alpha) {
-    result = result.filter((loc) =>
-      loc.locality?.toUpperCase().startsWith(filters.alpha),
-    );
-  }
+    // alphabet filter
+    if (filters.alpha) {
+      result = result.filter((loc) =>
+        loc.locality?.toUpperCase().startsWith(filters.alpha),
+      );
+    }
 
-  // search filter
-  if (filters.q) {
-    const q = normalize(filters.q);
+    // search filter
+    if (filters.q) {
+      const q = normalize(filters.q);
 
-    result = result
-      .map((loc) => {
-        const name = normalize(loc.locality);
-        const pin = (loc.pincode || "").toString();
+      result = result
+        .map((loc) => {
+          const name = normalize(loc.locality);
+          const pin = (loc.pincode || "").toString();
 
-        let score = 0;
+          let score = 0;
 
-        // locality exact
-        if (name === q) score += 100;
+          // locality exact
+          if (name === q) score += 100;
 
-        // locality starts
-        if (name.startsWith(q)) score += 80;
+          // locality starts
+          if (name.startsWith(q)) score += 80;
 
-        // locality contains
-        if (name.includes(q)) score += 60;
+          // locality contains
+          if (name.includes(q)) score += 60;
 
-        // fuzzy locality
-        const dist = getDistance(name, q);
-        if (dist <= 2) score += 50;
+          // fuzzy locality
+          const dist = getDistance(name, q);
+          if (dist <= 2) score += 50;
 
-        // ✅ PINCODE EXACT
-        if (pin === filters.q) score += 120;
+          // ✅ PINCODE EXACT
+          if (pin === filters.q) score += 120;
 
-        // ✅ PINCODE STARTS
-        if (pin.startsWith(filters.q)) score += 90;
+          // ✅ PINCODE STARTS
+          if (pin.startsWith(filters.q)) score += 90;
 
-        // ✅ PINCODE CONTAINS
-        if (pin.includes(filters.q)) score += 70;
+          // ✅ PINCODE CONTAINS
+          if (pin.includes(filters.q)) score += 70;
 
-        return { loc, score };
-      })
-      .filter((item) => item.score > 0)
-      .sort((a, b) => b.score - a.score)
-      .map((item) => item.loc);
-  }
+          return { loc, score };
+        })
+        .filter((item) => item.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .map((item) => item.loc);
+    }
 
-  return result;
-}, [locations, filters]);
+    return result;
+  }, [locations, filters]);
 
-if (loading) return <NeighbourhoodListSkeleton />;
+  if (loading) return <NeighbourhoodListSkeleton />;
 
   return (
     <>

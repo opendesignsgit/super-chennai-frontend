@@ -350,10 +350,10 @@ export default function NeighbourhoodSearchBar({
       )}
 
       {openSearchModal && (
-        <div className="fixed inset-0 z-[9999] bg-black/60 backdrop-blur-sm flex items-center justify-center">
+        <div className="fixed inset-0 z-[9999] bg-black/60 backdrop-blur-sm flex items-center justify-center searchpopupdivmain">
           <div className="bg-white w-[95%] max-w-4xl rounded-2xl shadow-2xl relative overflow-hidden">
             {/* HEADER */}
-            <div className="flex items-center justify-between px-6 py-4 border-b bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+            <div className="flex items-center justify-between px-6 py-4 headingtop">
               <h2 className="text-lg font-semibold">
                 Search Results ({searchResults.length})
               </h2>
@@ -367,7 +367,7 @@ export default function NeighbourhoodSearchBar({
             </div>
 
             {/* BODY */}
-            <div className="p-5 max-h-[500px] overflow-y-auto space-y-4">
+            <div className="p-5 max-h-[500px] overflow-y-auto space-y-4 bodycardsection">
               {/* EMPTY */}
               {searchResults.length === 0 ? (
                 <div className="text-center py-16">
@@ -390,10 +390,10 @@ export default function NeighbourhoodSearchBar({
                       );
                       setOpenSearchModal(false);
                     }}
-                    className="flex items-center gap-4 p-3 rounded-xl border hover:shadow-lg hover:bg-gray-50 cursor-pointer transition-all duration-200 group"
+                    className="flex items-center gap-4 p-3 rounded-xl hover:shadow-lg hover:bg-gray-50 cursor-pointer transition-all duration-200 cardlocation"
                   >
                     {/* IMAGE */}
-                    <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100">
+                    <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100 imagesecriorrss">
                       <img
                         src={
                           item?.FeaturedImage?.url
@@ -401,7 +401,7 @@ export default function NeighbourhoodSearchBar({
                             : "/images/placeholder.jpg"
                         }
                         alt={item.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition"
+                        className="w-full h-full object-cover group-hover:scale-105 transition "
                       />
                     </div>
 
@@ -411,21 +411,24 @@ export default function NeighbourhoodSearchBar({
                         {item.name}
                       </h3>
 
-                      <p className="text-sm text-gray-500 mt-1">
-                        {item.category?.title}
-                      </p>
+                      <p className="text-sm  mt-1 locationdescription">{item.category?.title}</p>
 
                       {/* OPTIONAL SHORT DESC */}
                       {item?.locations?.locality && (
-                        <p className="text-xs text-gray-400 mt-1">
-                          📍 {item.locations.locality}
-                        </p>
+                        <div className="flex gap-0.5 items-center itemslocatioss">
+                          <img
+                            className="locationimagess"
+                            src="/images/location-map-1.svg"
+                          />
+
+                          <span className="locationamee"> {item.locations.locality}</span>
+                        </div>
                       )}
                     </div>
 
                     {/* RIGHT ICON */}
                     <div className="text-gray-400 group-hover:text-purple-600 transition">
-                      →
+                      <img className="imagepopupnws" src="/images/location-arrow.svg" alt="" />
                     </div>
                   </div>
                 ))

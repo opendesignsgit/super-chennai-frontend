@@ -659,6 +659,62 @@
 .submainlocationdd input::placeholder {
   font-family: "29LT Bukra";
 }
+
+.searchpopupdivmain {
+}
+
+.headingtop {
+  background-color: #995099;
+  color: #fff;
+  font-family: "29LT-Bukra-Light";
+}
+
+.cardlocation {
+  border: 1px solid #cbcbcb;
+  width: 37%;
+  border-radius: 5px;
+  padding-right: 20px;
+}
+
+.bodycardsection {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  justify-content: center;
+}
+.bodycardsection h3 {
+  font-family: "29LT Bukra Regular";
+  font-size: 14px;
+  width: 92%;
+  line-height: 18px;
+  color: #995099;
+  margin-bottom: 5px;
+  /* color: #2e2e2e; */
+}
+
+.locationdescription {
+  color: #000;
+  font-weight: 500;
+}
+
+.locationimagess {
+  width: 15px;
+}
+
+.itemslocatioss {
+  margin-left: -3px;
+  margin-top: 2px;
+}
+
+.imagepopupnws {
+  width: 28px;
+  height: 28px;
+}
+
+.locationamee {
+  color: #995098;
+}
+
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;
@@ -1658,6 +1714,15 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  .cardlocation {
+    width: 43%;
+  }
+
+  .imagepopupnws {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 600px) {
@@ -2047,6 +2112,39 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  .cardlocation {
+    width: 48%;
+  }
+
+  .imagesecriorrss {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bodycardsection h3 {
+    font-size: 12px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .locationdescription {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  .locationamee {
+    font-size: 12px;
+  }
+
+  .locationimagess {
+    width: 12px;
+  }
+
+  .imagepopupnws {
+    width: 22px;
+    height: 22px;
+  }
 }
 @media (max-width: 600px) {
   .neighbourhoodcontiner .container {
@@ -2338,7 +2436,7 @@
     width: 100%;
     margin-top: 0;
     margin-left: 0;
-    height: 500px;
+    height: 300px;
     overflow-y: scroll;
   }
 
@@ -2371,7 +2469,7 @@
     width: 35px;
     height: 35px;
     font-size: 17px;
-    top: -31%;
+    top: -45%;
     right: 7%;
   }
 
@@ -2520,6 +2618,15 @@
     align-items: center;
     margin-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .cardlocation {
+    width: 100%;
+  }
+
+  .bodycardsection h3 {
+    font-size: 13px;
+    line-height: 18px;
   }
 }
 

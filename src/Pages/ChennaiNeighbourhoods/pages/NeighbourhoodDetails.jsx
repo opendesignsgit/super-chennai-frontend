@@ -18,6 +18,8 @@ export default function NeighbourhoodDetail() {
   const { data, loading } = useNeighbourhood({
     location: decodeURIComponent(locationId),
   });
+
+  console.log("page data last",data)
   const { locations } = useLocations();
   if (loading) return <NeighbourhoodSkeleton />;
   const location = data?.[0]?.locations;
@@ -188,7 +190,6 @@ export default function NeighbourhoodDetail() {
         {categories.map((cat, idx) => (
           <div
             key={cat}
-            //  className="rounded-lg overflow-hidden boderrrrr"
             className={`rounded-lg overflow-hidden boderrrrr ${
               openIndex === idx ? "boderrrrraddedcolor" : ""
             }`}

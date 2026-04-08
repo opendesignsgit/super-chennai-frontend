@@ -7,6 +7,8 @@ import { useNeighbourhood } from "../hooks/useNeighbourhood";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 
 export default function NeighbourhoodCategory() {
+
+
   const { locations } = useLocations();
   const [activeCategory, setActiveCategory] = useState(null);
   const { locationId, category, subcategory } = useParams();
@@ -15,18 +17,36 @@ export default function NeighbourhoodCategory() {
     location: locationId,
   });
 
+  console.log("page data",data)
+
   const firstLetter = decodeURIComponent(locationId)?.charAt(0)?.toUpperCase();
   const slugify = (text) => text?.toLowerCase().replace(/\s+/g, "-");
+
+  // const filtered =
+  //   data?.filter((item) => {
+  //     const matchCategory =
+  //       slugify(item?.category?.title) === category?.toLowerCase();
+
+  //     if (!subcategory) return matchCategory;
+
+  //     const matchSubCategory = item?.subCategories?.some(
+  //       (sub) => sub?.slug === subcategory,
+  //     );
+
+  //     return matchCategory && matchSubCategory;
+  //   }) || [];
+
+  const normalize = (text) => text?.toLowerCase().trim().replace(/\s+/g, "-");
 
   const filtered =
     data?.filter((item) => {
       const matchCategory =
-        slugify(item?.category?.title) === category?.toLowerCase();
+        normalize(item?.category?.title) === normalize(category);
 
       if (!subcategory) return matchCategory;
 
       const matchSubCategory = item?.subCategories?.some(
-        (sub) => sub?.slug === subcategory,
+        (sub) => normalize(sub?.slug) === normalize(subcategory),
       );
 
       return matchCategory && matchSubCategory;
@@ -75,9 +95,9 @@ export default function NeighbourhoodCategory() {
 
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+  // const toggleAccordion = (index) => {
+  //   setActiveIndex(activeIndex === index ? null : index);
+  // };
 
   if (loading) return <NeighbourhoodListSkeleton />;
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 
 const FALLBACK = "https://via.placeholder.com/600x400?text=No+Image";
 
@@ -12,7 +13,7 @@ export default function AreaFilter({ data, onChange }) {
       <div className="neighbiurnewcards">
         {data?.map((loc) => {
           const imageUrl = loc?.image?.url
-            ? `https://dev-cms.superchennai.com${loc.image.url}`
+            ? `${API_BASE_URL_API_TEST_DEV}${loc.image.url}`
             : FALLBACK;
 
           return (

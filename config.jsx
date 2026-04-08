@@ -26,6 +26,6 @@
 
 export const API_BASE_URL_API = "https://api.superchennai.com/api";
 export const API_BASE_URL = "https://demo.superchennai.com";
-export const API_BASE_URL_API_TEST_DEV = "https://demo.superchennai.com";
+export const API_BASE_URL_API_TEST_DEV = "https://dev-cms.superchennai.com";
 export const AI_BASE_URL = "https://api.superchennai.com";
 

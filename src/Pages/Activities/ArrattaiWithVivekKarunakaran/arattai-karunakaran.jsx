@@ -157,7 +157,7 @@ export default function ArattaiWithVivekKarunakaran() {
         <img
           className="hidden sm:block w-full"
           // src="/images/vivek-banner.jpeg"
-          src="/images/kamakoti-banner.jpeg"
+          src="/images/vivek-innerpage-banner.jpeg"
           alt="Arattai Event"
         />
         <img

@@ -24,11 +24,9 @@ import FutureGrowthDevelopment from "./Pages/SubPages/LivePages/FutureGrowthDeve
 import Healthcare from "./Pages/SubPages/LivePages/Healthcare";
 import Neighbourhood from "./Pages/SubPages/LivePages/Neighbourhood";
 import ChennaiNeighbourhood from "./Pages/ChennaiNeighbourhoods/pages/Neighbourhood";
-import ChennaiNeighbourhoodDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodDetails"
-import NeighbourhoodCategory from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodCategory"
-import NeighbourhoodItemDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodItemDetail"
-
-
+import ChennaiNeighbourhoodDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodDetails";
+import NeighbourhoodCategory from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodCategory";
+import NeighbourhoodItemDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodItemDetail";
 
 import QualityofLife from "./Pages/SubPages/LivePages/QualityofLife";
 import Recreation from "./Pages/SubPages/LivePages/Recreation";
@@ -309,7 +307,6 @@ import ArattaiJahabarExcelView from "./Pages/Activities/ArrattaiWithjahabar/araa
 
 import ArattaiWithVivekKarunakaran from "./Pages/Activities/ArrattaiWithVivekKarunakaran/arattai-karunakaran";
 
-
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
 import LanguageSwitcher from "./Components/LanguageDropdown/LanguageSwitcher";
@@ -318,7 +315,9 @@ import { useLocation } from "react-router-dom";
 import Register from "./Pages/Activities/QuizGame/Pages/Register";
 import AuthRegister from "./Pages/Auth/Register";
 import TriviaMainPage from "./Pages/Activities/QuizGame/Pages/TriviaMainPage";
+import TriviaMainPage2026 from "./Pages/Activities/QuizGame/Pages/TriviaMainPage2026";
 import AuthLogin from "./Pages/Auth/LoginWithOtp";
+import AuthLogin2026 from "./Pages/Auth/LoginWithOtp2026";
 import Questions from "./Pages/Activities/QuizGame/Pages/Questions";
 import UsersResultsPage from "./Pages/Activities/QuizGame/Pages/UsersResultsPage";
 // import ForgotPassword from "./Pages/Activities/QuizGame/Pages/ForgotPassword";
@@ -334,9 +333,6 @@ import ExploreDiscovery from "./Pages/Explore/ExploreDiscovery";
 import IconofthemonthMarchKamakotti from "./Pages/Icon-of-the-month-march-26";
 import ArattaiWithKamakotti from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakotti";
 import ArattaikamakotiExcelView from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakoti-excel";
-
-
-
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -567,16 +563,9 @@ function App() {
   const hideOnJahabarPage =
     location.pathname === "/arattai-with-jahabar-sadique/chai-kings-founder/";
 
+  const hideNewsletter = location.pathname === "/chennai-conclave";
 
-  
-
-
- const hideNewsletter =
-    location.pathname === "/chennai-conclave";
-
-
-
-      const isHomePage = location.pathname === "/";
+  const isHomePage = location.pathname === "/";
 
   return (
     <>
@@ -772,10 +761,28 @@ function App() {
         />
 
         <Route
+          path="/login-otp2026"
+          element={
+            <PublicRoute>
+              <AuthLogin2026 setIsLoggedIn={setIsLoggedIn} />
+            </PublicRoute>
+          }
+        />
+
+        <Route
           path="/TriviaMainPage"
           element={
             <PublicRoute>
               <TriviaMainPage setIsLoggedIn={setIsLoggedIn} />
+            </PublicRoute>
+          }
+        />
+
+        <Route
+          path="/TriviaMainPage2026"
+          element={
+            <PublicRoute>
+              <TriviaMainPage2026 setIsLoggedIn={setIsLoggedIn} />
             </PublicRoute>
           }
         />
@@ -808,6 +815,15 @@ function App() {
         {/* Protected Routes */}
         <Route
           path="/questions"
+          element={
+            <PrivateRoute>
+              <Questions />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/questions2026"
           element={
             <PrivateRoute>
               <Questions />
@@ -871,12 +887,10 @@ function App() {
           element={<ArattaiWithKamakotti />}
         />
 
-            <Route
+        <Route
           path="/arattai-with-karunakaran/indias-leading-fashion-designers"
           element={<ArattaiWithVivekKarunakaran />}
         />
-
-        
 
         <Route
           path="/arattai-with-kamakoti/iit-madras-director-admin-entry-oiuyterwqasvcxzdsw/refdewsdfettwfsvvdg/8728272/lmnjhscbnmdt"

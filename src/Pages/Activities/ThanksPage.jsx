@@ -48,8 +48,8 @@ export default function Thankyou() {
       );
     } else {
       if (from === "trivia-game")
-        setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
-      else setImageSrc("/images/thankyou-banner-manifesto.jpeg");
+        setImageSrc("/images/events/triva-contest.jpg");
+      else setImageSrc("/images/events/triva-contest.jpg");
     }
 
     
@@ -315,7 +315,7 @@ export default function Thankyou() {
               <h1>Trivia Completed!</h1>
               <p>
                 Congratulations! You have successfully completed the Super
-                Chennai Trivia 2025.
+                Chennai Trivia 2026.
               </p>
               <p>
                 We hope you enjoyed testing your knowledge about Chennai. Stay

@@ -307,6 +307,9 @@ import ArattaiExcelView from "./Pages/Activities/ArattaiWith/ArattaiExcelView";
 import ArattaiWithJahabar from "./Pages/Activities/ArrattaiWithjahabar/araatai-jahabar";
 import ArattaiJahabarExcelView from "./Pages/Activities/ArrattaiWithjahabar/araatai-jahabar-excel";
 
+import ArattaiWithVivekKarunakaran from "./Pages/Activities/ArrattaiWithVivekKarunakaran/arattai-karunakaran";
+
+
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
 import LanguageSwitcher from "./Components/LanguageDropdown/LanguageSwitcher";
@@ -867,6 +870,13 @@ function App() {
           path="/arattai-with-kamakoti/iit-madras-director"
           element={<ArattaiWithKamakotti />}
         />
+
+            <Route
+          path="/arattai-with-karunakaran/indias-leading-fashion-designers"
+          element={<ArattaiWithVivekKarunakaran />}
+        />
+
+        
 
         <Route
           path="/arattai-with-kamakoti/iit-madras-director-admin-entry-oiuyterwqasvcxzdsw/refdewsdfettwfsvvdg/8728272/lmnjhscbnmdt"

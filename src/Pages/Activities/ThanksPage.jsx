@@ -18,39 +18,38 @@ export default function Thankyou() {
       setImageSrc(
         isMobile
           ? "/images/events/mobile-thankyou-banner1.jpeg"
-          : "/images/events/thanku-banner-conclave.jpeg"
+          : "/images/events/thanku-banner-conclave.jpeg",
       );
-    } 
-    
-    else if (from === "manifesto-info") {
+    } else if (from === "manifesto-info") {
       setImageSrc(
         isMobile
           ? "/images/mobile-thanky-banner-manifesto.jpeg"
-          : "/images/thankyou-banner-manifesto.jpeg"
+          : "/images/thankyou-banner-manifesto.jpeg",
       );
-    } 
-    
-    else if (from === "kamakoti") {
+    } else if (from === "kamakoti") {
       setImageSrc(
         isMobile
           ? "/images/kamakoti-mobile-thanks-new.jpeg"
-          : "/images/kamakoti-desktop-thanks-new.jpeg"
+          : "/images/kamakoti-desktop-thanks-new.jpeg",
       );
-    } 
 
-      else if (from === "jahabar") {
+    } else if (from === "vivek") {
+      setImageSrc(
+        isMobile
+          ? "/images/kamakoti-mobile-thanks-new.jpeg"
+          : "/images/kamakoti-desktop-thanks-new.jpeg",
+      );
+      
+    } else if (from === "jahabar") {
       setImageSrc(
         isMobile
           ? "/images/mobile-chaikings-tq-banner-f-1.png"
-          : "/images/tq-chaikings-banner-f.jpeg"
+          : "/images/tq-chaikings-banner-f.jpeg",
       );
-    } 
-    
-    else {
+    } else {
       if (from === "trivia-game")
         setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
-      else
-        setImageSrc("/images/thankyou-banner-manifesto.jpeg");
+      else setImageSrc("/images/thankyou-banner-manifesto.jpeg");
     }
 
     
@@ -217,6 +216,23 @@ export default function Thankyou() {
               </p>
               <p>Stay engaged. Stay informed.</p>
               <p>Chennai’s future is built by its citizens.</p>
+            </div>
+          )}
+
+          {from === "vivek" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+
+              <p>
+                Thank you for registering for Arattai with Vivek Karunakaran.
+                Your submission has been successfully received, and our team is
+                currently reviewing your registration. If your entry is
+                selected, you will receive an official confirmation email from
+                Team Super Chennai with further details about the event. Please
+                note that your participation will be considered confirmed only
+                after you receive the confirmation email. We appreciate your
+                interest and look forward to connecting with you soon.
+              </p>
             </div>
           )}
 

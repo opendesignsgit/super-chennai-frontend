@@ -6,7 +6,7 @@ export default function EmptyState({
   onReset,
 }) {
   return (
-    <div className="w-full bg-white rounded-xl shadow-sm border border-gray-200 py-16 px-6 text-center mb-10">
+    <div className="w-full bg-white rounded-xl shadow-sm border border-gray-200 py-16 px-6 text-center mb-10 mt-40">
       <div className="text-5xl mb-4">📭</div>
 
       <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>

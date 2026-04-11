@@ -69,7 +69,7 @@ export default function VerifyOtp() {
 
       <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-          <h2 className="text-2xl font-bold text-center mb-4">Verify OTP</h2>
+          <h2 className="text-2xl font-bold text-center mb-4">Verify OTP1</h2>
 
           <form onSubmit={handleVerify} className="space-y-4">
             <input
@@ -84,7 +84,7 @@ export default function VerifyOtp() {
 
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
+              className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 gradient-primarySuperchennai"
             >
               Verify OTP
             </button>

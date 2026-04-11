@@ -163,6 +163,7 @@ export default function Thankyou() {
             src={imageSrc}
             alt="Thank You Banner Mobile"
           />
+          
         </div>
 
         <div className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer akbaralipage">
@@ -170,7 +171,11 @@ export default function Thankyou() {
             <h1></h1>
             <AutoShrinkText
               text={
-                from === "conclave" || from === "jahabar" ? "" : "Thank You!"
+                from === "conclave" ||
+                from === "jahabar" ||
+                from === "trivia-game"
+                  ? ""
+                  : "Thank You!"
               }
               baseSize={60}
               minSize={40}

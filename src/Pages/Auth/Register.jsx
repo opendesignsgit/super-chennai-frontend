@@ -146,7 +146,7 @@ export default function AuthRegister() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Trivia 2025</h1>
+            <h1>Super Chennai Trivia 2026</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
               <Link to="">Super Chennai Trivia 2025</Link>
@@ -254,7 +254,7 @@ export default function AuthRegister() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`w-full ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-600 hover:bg-indigo-700"} text-white py-2 rounded-lg font-semibold transition duration-200 theme-button`}
+                  className={`w-full ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-600 hover:bg-indigo-700"} text-white py-2 rounded-lg font-semibold transition duration-200 theme-button gradient-primarySuperchennai`}
                 >
                   {loading ? "Registering..." : "Register"}
                 </button>
@@ -265,7 +265,7 @@ export default function AuthRegister() {
               Already registered?{" "}
               <button
                 onClick={() => navigate("/login-otp")}
-                className="text-indigo-600 font-semibold hover:underline themelink-color"
+                className="text-indigo-600 font-semibold hover:underline themelink-color "
               >
                Login
               </button>

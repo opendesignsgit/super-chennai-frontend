@@ -1181,3 +1181,20 @@
     right: -35px;
   }
 }
+
+
+.gradient-primarySuperchennai {
+  background: linear-gradient(90deg, #5A67D8, #9F4DB8);
+  color: #ffffff;
+}
+
+.gradient-primary:hover {
+  opacity: 0.9;
+}
+
+.heading-gradient {
+  background: linear-gradient(90deg, #5A67D8, #9F4DB8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}

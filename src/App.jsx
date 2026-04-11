@@ -315,9 +315,9 @@ import { useLocation } from "react-router-dom";
 import Register from "./Pages/Activities/QuizGame/Pages/Register";
 import AuthRegister from "./Pages/Auth/Register";
 import TriviaMainPage from "./Pages/Activities/QuizGame/Pages/TriviaMainPage";
-import TriviaMainPage2026 from "./Pages/Activities/QuizGame/Pages/TriviaMainPage2026";
+// import TriviaMainPage2026 from "./Pages/Activities/QuizGame/Pages/TriviaMainPage2026";
 import AuthLogin from "./Pages/Auth/LoginWithOtp";
-import AuthLogin2026 from "./Pages/Auth/LoginWithOtp2026";
+// import AuthLogin2026 from "./Pages/Auth/LoginWithOtp2026";
 import Questions from "./Pages/Activities/QuizGame/Pages/Questions";
 import UsersResultsPage from "./Pages/Activities/QuizGame/Pages/UsersResultsPage";
 // import ForgotPassword from "./Pages/Activities/QuizGame/Pages/ForgotPassword";
@@ -760,14 +760,14 @@ function App() {
           }
         />
 
-        <Route
+        {/* <Route
           path="/login-otp2026"
           element={
             <PublicRoute>
               <AuthLogin2026 setIsLoggedIn={setIsLoggedIn} />
             </PublicRoute>
           }
-        />
+        /> */}
 
         <Route
           path="/TriviaMainPage"
@@ -778,14 +778,14 @@ function App() {
           }
         />
 
-        <Route
+        {/* <Route
           path="/TriviaMainPage2026"
           element={
             <PublicRoute>
               <TriviaMainPage2026 setIsLoggedIn={setIsLoggedIn} />
             </PublicRoute>
           }
-        />
+        /> */}
 
         <Route
           path="/auth-register"
@@ -822,14 +822,14 @@ function App() {
           }
         />
 
-        <Route
+        {/* <Route
           path="/questions2026"
           element={
             <PrivateRoute>
               <Questions />
             </PrivateRoute>
           }
-        />
+        /> */}
         <Route
           path="/UserDashboard"
           element={

@@ -7575,6 +7575,219 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+
+  {
+  "id": 102338,
+  "name": "Chennai Unveils Its First 3D-Printed Bus Shelter at Marina Beach",
+  "slug": "3d-printed-bus-shelter-chennai",
+  "para": "Chennai’s First 3D-Printed Bus Stop",
+  "TrendingCalendarMonth": "April 2026",
+  "TrendingCalendarTime": "Recently Introduced",
+  "TrendingCalendarCategory": "Infrastructure | Innovation | Smart City",
+  "image": "/images/trendingChennai/chennai-unveils.jpeg",
+  "Homeimage": "/images/trendingChennai/chennai-unveils.jpeg",
+  "link": "/trending-chennai/3d-printed-bus-shelter-chennai-marina",
+  "duration": "Ongoing Deployment",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Smart Infrastructure | Urban Innovation | Public Transport",
+  "venue": "Marina Beach, Chennai",
+
+  "trendingDetails": `
+<p>
+Chennai is stepping into the future of urban design! 🏗️🤖 The <b>Greater Chennai Corporation</b> has introduced the state’s first 3D-printed bus shelter near Marina Beach.
+</p>
+
+<p>
+<b>Why this innovation stands out:</b>
+</p>
+
+<p>
+• 🤖 <b>Built with 3D Printing:</b> Large robotic printers created the shelter by layering concrete quickly and precisely.
+</p>
+
+<p>
+• 🧼 <b>Poster-Resistant Design:</b> The curved and textured surface prevents posters and unwanted advertisements.
+</p>
+
+<p>
+• 🛡️ <b>Safety Features:</b> Equipped with CCTV cameras and bright LED lighting for better visibility and commuter safety.
+</p>
+
+<p>
+• 🌱 <b>Sustainable Construction:</b> Reduces material waste while delivering a durable and modern structure.
+</p>
+
+<p>
+The corporation plans to install around 90 more of these innovative shelters across Chennai, marking a big leap toward smart city infrastructure 🌆
+</p>
+`,
+
+  "TrendingLink": "",
+  "YoutubeLink": "",
+
+  "meta": {
+    "title": "3D Printed Bus Shelter | Chennai’s New Smart Stop at Marina",
+    "desc": "Chennai unveils a 3D printed bus shelter near Marina Beach with modern design, CCTV, and LED lighting, showcasing innovative and sustainable city infrastructure.",
+    "url": "https://www.superchennai.com/trending-chennai/3d-printed-bus-shelter-chennai-marina"
+  }
+},
+  {
+  "id": 102337,
+  "name": "Marina Beach Introduces Smart Plastic Waste Solution",
+  "slug": "marina-beach-plastic-recycling",
+  "para": "Eco-Friendly Initiative at Marina Beach",
+  "TrendingCalendarMonth": "April 2026",
+  "TrendingCalendarTime": "Ongoing",
+  "TrendingCalendarCategory": "Environment | Sustainability | Public Initiative",
+  "image": "/images/trendingChennai/merina-beac-celebrate.jpeg",
+  "Homeimage": "/images/trendingChennai/merina-beac-celebrate.jpeg",
+  "link": "/trending-chennai/plastic-bottle-recycling-chennai-marina-beach",
+  "duration": "Ongoing Initiative",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Recycling | Sustainability | Public Awareness",
+  "venue": "Marina Beach, Chennai",
+
+  "trendingDetails": `
+<p>
+At <b>Marina Beach</b>, a new plastic waste management initiative is transforming how pollution is handled along the coastline ♻️🌊
+</p>
+
+<p>
+The <b>“Waste to Valuable”</b> program introduces smart reverse vending machines, allowing visitors to drop used plastic bottles and instantly receive eco-friendly reusable bags 🛍️
+</p>
+
+<p>
+This initiative focuses on prevention rather than just clean-up, encouraging people to take responsibility for waste disposal.
+</p>
+
+<p>
+Families, children, and local vendors are actively participating, making it a strong example of community-driven environmental conservation 🌱
+</p>
+
+<p>
+Beyond keeping the beach clean, it promotes long-term habits like reducing single-use plastics and adopting greener alternatives.
+</p>
+
+<p>
+A simple yet powerful step toward sustainable living in Chennai, proving that small actions can create a big environmental impact.
+</p>
+`,
+
+  "TrendingLink": "",
+  "YoutubeLink": "",
+
+  "meta": {
+    "title": "Plastic Bottle Recycling in Chennai | Marina Beach Eco Drive",
+    "desc": "Marina Beach introduces plastic bottle recycling with reverse vending machines, encouraging eco-friendly habits while helping keep the coastline cleaner.",
+    "url": "https://www.superchennai.com/trending-chennai/plastic-bottle-recycling-chennai-marina-beach"
+  }
+},
+{
+  "id": 102336,
+  "name": "New Electric Bus Hub Opens at Tondiarpet-1 Electric Bus Depot",
+  "slug": "tondiarpet-electric-bus-depot",
+  "para": "Chennai’s New Electric Bus Hub",
+  "TrendingCalendarMonth": "April 2026",
+  "TrendingCalendarTime": "Now Open",
+  "TrendingCalendarCategory": "Infrastructure | Transport | City Development",
+  "image": "https://media.assettype.com/dt-next%2Fimport%2Fh-upload%2F2025%2F06%2F27%2F867944-p15r-1.jpg?rect=0%2C28%2C1500%2C844",
+  "Homeimage": "https://media.assettype.com/dt-next%2Fimport%2Fh-upload%2F2025%2F06%2F27%2F867944-p15r-1.jpg?rect=0%2C28%2C1500%2C844",
+  "link": "/trending-chennai/tondiarpet-bus-depot-electric-bus-hub",
+  "duration": "Operational",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Transport | Electric Vehicles | Public Infrastructure",
+  "venue": "Tondiarpet, Chennai",
+
+  "trendingDetails": `
+<p>
+Welcome to the future of MTC transport! ⚡🚌 The newly upgraded <b>Tondiarpet-1 Electric Bus Depot</b> now stands as a world-class public transport hub in Chennai.
+</p>
+
+<p>
+<b>What’s new at Tondiarpet?</b>
+</p>
+
+<p>
+• ⚡ <b>Electric Hub:</b> The depot houses around 100 low-floor electric buses, including AC and Deluxe services.
+</p>
+
+<p>
+• 🚿 <b>Smart Technology:</b> A modern high-speed automatic bus washing system keeps the fleet clean and efficient.
+</p>
+
+<p>
+• 🔋 <b>EV Charging Facility:</b> Large-scale electric charging infrastructure ensures smooth daily operations.
+</p>
+
+<p>
+• 🏗️ <b>Upgraded Infrastructure:</b> A ₹33-crore redevelopment with air-conditioned staff rest areas and well-designed passenger bays.
+</p>
+
+<p>
+This upgrade marks a major step toward sustainable and modern public transport in Chennai, especially benefiting North Chennai residents.
+</p>
+`,
+
+  "TrendingLink": "https://www.google.com/maps/place/MTC+DEPOT+TONDIARPET+1/data=!4m2!3m1!1s0x0:0xcc784af39669dc93",
+  "YoutubeLink": "",
+
+  "meta": {
+    "title": "Tondiarpet Bus Depot | Chennai’s New Electric Bus Hub",
+    "desc": "Tondiarpet bus depot transforms into an electric bus hub with EV charging infrastructure, modern amenities, and improved public transport services in Chennai.",
+    "url": "https://www.superchennai.com/trending-chennai/tondiarpet-bus-depot-electric-bus-hub"
+  }
+},
+  {
+  "id": 102335,
+  "name": "Thangal Eri Park Reopens as a Refreshed Recreational Spot in Chennai",
+  "slug": "thangal-eri-park-ambattur",
+  "para": "Refurbished Park in Ambattur",
+  "TrendingCalendarMonth": "April 2026",
+  "TrendingCalendarTime": "Now Open",
+  "TrendingCalendarCategory": "Parks | Recreation | Family Spots",
+  "image": "https://pbs.twimg.com/media/HEjtQlMbQAEQTic.jpg",
+  "Homeimage": "https://pbs.twimg.com/media/HEjtQlMbQAEQTic.jpg",
+  "link": "/trending-chennai/thangal-eri-park-repones-ambattur-chennai-",
+  "duration": "Open Daily",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Parks | Walking | Boating | Outdoor Recreation",
+  "venue": "Ambattur, Chennai",
+
+  "trendingDetails": `
+<p>
+<b>Thangal Eri Park</b> in Ambattur has been recently refurbished and transformed into a refreshing recreational destination 🌿✨
+</p>
+
+<p>
+The park now features upgraded landscapes, improved walking paths, and a newly introduced boating facility.
+</p>
+
+<p>
+With its serene lake views and enhanced amenities, it has become an ideal spot for families, fitness enthusiasts, and nature lovers.
+</p>
+
+<p>
+Visitors can enjoy peaceful surroundings, outdoor activities, and relaxing moments close to nature.
+</p>
+
+<p>
+This redevelopment adds to Chennai’s growing list of eco-friendly parks and attractive leisure destinations.
+</p>
+`,
+
+  "TrendingLink": "https://www.google.com/maps/place/Thangal+Park/@13.1245958,80.1594998,17z",
+  "YoutubeLink": "",
+
+  "meta": {
+    "title": "Thangal Eri Park Reopens | Refurbished Park in Ambattur Chennai",
+    "desc": "Thangal Eri Park in Ambattur now features improved pathways, scenic lake views, and boating, making it a peaceful recreational destination in Chennai.",
+    "url": "https://www.superchennai.com/trending-chennai/thangal-eri-park-repones-ambattur-chennai-"
+  }
+},
   {
   "id": 102334,
   "name": "Ayapakkam Park: Chennai’s Calm Escape",

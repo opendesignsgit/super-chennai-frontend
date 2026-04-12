@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState, useMemo } from "react";
 import API from "../services/api";
 import { Helmet } from "react-helmet-async";
@@ -145,6 +143,19 @@ export default function Questions2026() {
     }
   };
 
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+
+    if (isMobile) {
+      const menifeto = document.querySelector("#menifeto-tab");
+      const hotshots = document.querySelector("#hotshots-event-tab");
+      const sticky = document.querySelector("#mainfirst");
+
+      if (menifeto) menifeto.style.display = "none";
+      if (hotshots) hotshots.style.display = "none";
+      if (sticky) sticky.style.setProperty("display", "none", "important");
+    }
+  }, []);
   return (
     <>
       <div ref={topRef}></div>
@@ -214,10 +225,10 @@ export default function Questions2026() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Trivia 2025</h1>
+            <h1>Super Chennai Trivia 2026</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Trivia 2025</Link>
+              <Link to="">Super Chennai Trivia 2026</Link>
             </div>
           </div>
         </div>
@@ -226,11 +237,13 @@ export default function Questions2026() {
       <div className="carryformPageSection ">
         <div className="max-w-[1100px] mx-auto mt-10  bg-white rounded-lg  ">
           <div className="um-form-section">
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-center heading-gradient">Daytodeliver quiz</h2>
+            <div className="flex justify-between items-center mb-4 mobilessss">
+              <h2 className="text-center heading-gradient">
+                Daytodeliver quiz
+              </h2>
               <button
                 onClick={handleLogout}
-                className="flex items-center gap-2 bg-[#995098] hover:bg-[#8a467f] text-white px-3 py-1 rounded-full shadow-md transition-colors gradient-primarySuperchennai"
+                className="flex items-center gap-2 bg-[#995098] hover:bg-[#8a467f] text-white px-3 py-1 rounded-full shadow-md transition-colors gradient-primarySuperchennai cursor-pointer"
                 title="Logout"
               >
                 {/* SVG icon */}
@@ -315,11 +328,11 @@ export default function Questions2026() {
                       <button
                         disabled={currentIndex === 0}
                         onClick={() => setCurrentIndex((prev) => prev - 1)}
-                        className={`flex-1 py-3 rounded-full shadow-md text-white transition-colors 
+                        className={`flex-1 py-3 rounded-full shadow-md text-white transition-colors  cursor-pointer
         ${
           currentIndex === 0
-            ? "bg-gray-300 cursor-not-allowed"
-            : "bg-[#995098] hover:bg-[#8a467f] gradient-primarySuperchennai"
+            ? "bg-gray-300 cursor-not-allowed curosor-pointer "
+            : "bg-[#995098] hover:bg-[#8a467f] gradient-primarySuperchennai "
         }`}
                       >
                         Previous
@@ -335,14 +348,14 @@ export default function Questions2026() {
                             }
                             setCurrentIndex((prev) => prev + 1);
                           }}
-                          className="flex-1 py-3 rounded-full shadow-md text-white bg-[#995098] hover:bg-[#8a467f] transition-colors gradient-primarySuperchennai"
+                          className="flex-1 py-3 rounded-full shadow-md text-white bg-[#995098] hover:bg-[#8a467f] transition-colors gradient-primarySuperchennai cursor-pointer"
                         >
                           Next
                         </button>
                       ) : (
                         <button
                           onClick={submitAnswers}
-                          className="flex-1 py-3 rounded-full shadow-md text-white bg-[#995098] hover:bg-[#8a467f] transition-colors gradient-primarySuperchennai"
+                          className="flex-1 py-3 rounded-full shadow-md text-white bg-[#995098] hover:bg-[#8a467f] transition-colors gradient-primarySuperchennai cursor-pointer"
                         >
                           Submit
                         </button>
@@ -472,7 +485,7 @@ export default function Questions2026() {
 //     const unanswered = questions.filter((q) => !answers[q.id]);
 //     if (unanswered.length > 0) {
 //      toast.error("Hey! Make sure you answer every question before hitting Submit.");
-//       return; 
+//       return;
 //     }
 //     try {
 //       setIsSubmitting(true);
@@ -698,7 +711,7 @@ export default function Questions2026() {
 //                       <button
 //                         disabled={currentIndex === 0}
 //                         onClick={() => setCurrentIndex((prev) => prev - 1)}
-//                         className={`flex-1 py-3 rounded-full shadow-md text-white transition-colors 
+//                         className={`flex-1 py-3 rounded-full shadow-md text-white transition-colors
 //         ${
 //           currentIndex === 0
 //             ? "bg-gray-300 cursor-not-allowed"

@@ -9,56 +9,51 @@ export default function Thankyou() {
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
-
   useEffect(() => {
-  const handleResize = () => {
-    const isMobile = window.innerWidth <= 800;
+    const handleResize = () => {
+      const isMobile = window.innerWidth <= 800;
 
-    if (from === "conclave") {
-      setImageSrc(
-        isMobile
-          ? "/images/events/mobile-thankyou-banner1.jpeg"
-          : "/images/events/thanku-banner-conclave.jpeg",
-      );
-    } else if (from === "manifesto-info") {
-      setImageSrc(
-        isMobile
-          ? "/images/mobile-thanky-banner-manifesto.jpeg"
-          : "/images/thankyou-banner-manifesto.jpeg",
-      );
-    } else if (from === "kamakoti") {
-      setImageSrc(
-        isMobile
-          ? "/images/kamakoti-mobile-thanks-new.jpeg"
-          : "/images/kamakoti-desktop-thanks-new.jpeg",
-      );
+      if (from === "conclave") {
+        setImageSrc(
+          isMobile
+            ? "/images/events/mobile-thankyou-banner1.jpeg"
+            : "/images/events/thanku-banner-conclave.jpeg",
+        );
+      } else if (from === "manifesto-info") {
+        setImageSrc(
+          isMobile
+            ? "/images/mobile-thanky-banner-manifesto.jpeg"
+            : "/images/thankyou-banner-manifesto.jpeg",
+        );
+      } else if (from === "kamakoti") {
+        setImageSrc(
+          isMobile
+            ? "/images/kamakoti-mobile-thanks-new.jpeg"
+            : "/images/kamakoti-desktop-thanks-new.jpeg",
+        );
+      } else if (from === "vivek") {
+        setImageSrc(
+          isMobile
+            ? "/images/kamakoti-mobile-thanks-new.jpeg"
+            : "/images/kamakoti-desktop-thanks-new.jpeg",
+        );
+      } else if (from === "jahabar") {
+        setImageSrc(
+          isMobile
+            ? "/images/mobile-chaikings-tq-banner-f-1.png"
+            : "/images/tq-chaikings-banner-f.jpeg",
+        );
+      } else {
+        if (from === "trivia-game")
+          setImageSrc("/images/events/triva-contest.jpg");
+        else setImageSrc("/images/events/triva-contest.jpg");
+      }
+    };
 
-    } else if (from === "vivek") {
-      setImageSrc(
-        isMobile
-          ? "/images/kamakoti-mobile-thanks-new.jpeg"
-          : "/images/kamakoti-desktop-thanks-new.jpeg",
-      );
-      
-    } else if (from === "jahabar") {
-      setImageSrc(
-        isMobile
-          ? "/images/mobile-chaikings-tq-banner-f-1.png"
-          : "/images/tq-chaikings-banner-f.jpeg",
-      );
-    } else {
-      if (from === "trivia-game")
-        setImageSrc("/images/events/triva-contest.jpg");
-      else setImageSrc("/images/events/triva-contest.jpg");
-    }
-
-    
-  };
-
-  handleResize();
-  window.addEventListener("resize", handleResize);
-  return () => window.removeEventListener("resize", handleResize);
-}, []);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // useEffect(() => {
   //   const handleResize = () => {
@@ -77,8 +72,8 @@ export default function Thankyou() {
   //           ? "/images/events/thanku-banner-conclave.jpeg"
   //           : "/images/events/thanku-banner-conclave.jpeg",
   //       );
-  //     } 
-      
+  //     }
+
   //     else if (from === "manifesto-info") {
   //       setImageSrc(
   //         isMobile
@@ -86,60 +81,55 @@ export default function Thankyou() {
   //           : "/images/thankyou-banner-manifesto.jpeg",
   //       );
 
-        
   //     } else {
   //       if (from === "trivia-game")
   //         setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
   //       else setImageSrc("/images/thankyou-banner-manifesto.jpeg");
   //     }
-      
-      
+
   //   };
   //   handleResize();
   //   window.addEventListener("resize", handleResize);
   //   return () => window.removeEventListener("resize", handleResize);
   // }, []);
 
+  //   useEffect(() => {
+  //   const handleResize = () => {
+  //     const isMobile = window.innerWidth <= 800;
 
+  //     if (from === "conclave") {
+  //       setImageSrc(
+  //         isMobile
+  //           ? "/images/events/mobile-thankyou-banner1.jpeg"
+  //           : "/images/events/thanku-banner-conclave.jpeg"
+  //       );
 
-//   useEffect(() => {
-//   const handleResize = () => {
-//     const isMobile = window.innerWidth <= 800;
+  //     } else if (from === "jahabar") {
+  //       setImageSrc(
+  //         isMobile
+  //           ? "/images/chaikings-tq-innerpage-bannerNew.jpeg"
+  //           : "/images/mobile-chaikings-tq-banner.jpeg"
+  //       );
 
-//     if (from === "conclave") {
-//       setImageSrc(
-//         isMobile
-//           ? "/images/events/mobile-thankyou-banner1.jpeg"
-//           : "/images/events/thanku-banner-conclave.jpeg"
-//       );
+  //     } else if (from === "manifesto-info") {
+  //       setImageSrc(
+  //         isMobile
+  //           ? "/images/mobile-thanky-banner-manifesto.jpeg"
+  //           : "/images/thankyou-banner-manifesto.jpeg"
+  //       );
 
-//     } else if (from === "jahabar") {
-//       setImageSrc(
-//         isMobile
-//           ? "/images/chaikings-tq-innerpage-bannerNew.jpeg"
-//           : "/images/mobile-chaikings-tq-banner.jpeg"
-//       );
+  //     } else {
+  //       if (from === "trivia-game")
+  //         setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
+  //       else
+  //         setImageSrc("/images/thankyou-banner-manifesto.jpeg");
+  //     }
+  //   };
 
-//     } else if (from === "manifesto-info") {
-//       setImageSrc(
-//         isMobile
-//           ? "/images/mobile-thanky-banner-manifesto.jpeg"
-//           : "/images/thankyou-banner-manifesto.jpeg"
-//       );
-
-//     } else {
-//       if (from === "trivia-game")
-//         setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
-//       else
-//         setImageSrc("/images/thankyou-banner-manifesto.jpeg");
-//     }
-//   };
-
-//   handleResize();
-//   window.addEventListener("resize", handleResize);
-//   return () => window.removeEventListener("resize", handleResize);
-// }, [from]);
-
+  //   handleResize();
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, [from]);
 
   useEffect(() => {
     window.scrollTo({
@@ -147,6 +137,20 @@ export default function Thankyou() {
       left: 0,
       behavior: "instant",
     });
+  }, []);
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+
+    if (isMobile) {
+      const menifeto = document.querySelector("#menifeto-tab");
+      const hotshots = document.querySelector("#hotshots-event-tab");
+      const sticky = document.querySelector("#mainfirst");
+
+      if (menifeto) menifeto.style.display = "none";
+      if (hotshots) hotshots.style.display = "none";
+      if (sticky) sticky.style.setProperty("display", "none", "important");
+    }
   }, []);
 
   return (
@@ -163,7 +167,6 @@ export default function Thankyou() {
             src={imageSrc}
             alt="Thank You Banner Mobile"
           />
-          
         </div>
 
         <div className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer akbaralipage">
@@ -319,16 +322,8 @@ export default function Thankyou() {
             <div className="workIntro">
               <h1>Trivia Completed!</h1>
               <p>
-                Congratulations! You have successfully completed the Super
-                Chennai Trivia 2026.
-              </p>
-              <p>
-                We hope you enjoyed testing your knowledge about Chennai. Stay
-                tuned for results and more fun events coming your way!
-              </p>
-              <p>
-                Meanwhile, explore other Super Chennai contests and events to
-                keep the excitement going.
+                Thanks for participating. April 23, 2026 is your #DaytoDeliver —
+                Please step out and vote.
               </p>
             </div>
           )}

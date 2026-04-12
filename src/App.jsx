@@ -674,6 +674,7 @@ function App() {
 
       <div
         ref={stickyRef}
+        id="mainfirst"
         className={`pointcastSticky ${footerReached ? "footerreached" : ""}`}
       >
         <a target="_blank" href="https://pointcast.com/demo/SuperChennai">

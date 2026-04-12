@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import axios from "axios";
@@ -163,13 +162,29 @@ export default function Login2026({ setIsLoggedIn }) {
     }
   };
 
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+
+    if (isMobile) {
+      const menifeto = document.querySelector("#menifeto-tab");
+      const hotshots = document.querySelector("#hotshots-event-tab");
+      const sticky = document.querySelector("#mainfirst");
+
+      if (menifeto) menifeto.style.display = "none";
+      if (hotshots) hotshots.style.display = "none";
+      if (sticky) sticky.style.setProperty("display", "none", "important");
+    }
+  }, []);
+
   return (
     <>
       <Helmet>
-        <title>Super Chennai Quiz — Login</title>
+        <title>
+          Superchennai DaytoDeliver Quiz | Superchennai Daily Trivia
+        </title>
         <meta
           name="description"
-          content="Login to participate in the Super Chennai Quiz."
+          content="Super Chennai Trivia brings a fun quiz on Chennai, culture, current affairs, civic awareness, and TN Elections. Test your knowledge of the city and its facts."
         />
       </Helmet>
       <ToastContainer position="top-center" />
@@ -201,6 +216,10 @@ export default function Login2026({ setIsLoggedIn }) {
         </div>
       </section>
       {/* ---------- Game Section ---------- */}
+
+      <div className="drasection">
+        <img src="/images/dra-logo.png" alt="" />
+      </div>
       <section
         className="w-full flex flex-col  text-center   py-10"
         style={{ paddingBottom: 0 }}
@@ -222,20 +241,22 @@ export default function Login2026({ setIsLoggedIn }) {
 
               <div className="workIntro">
                 <p>
-                  Chennai’s restaurant scene is a rich tapestry of tradition and
-                  innovation — offering everything from age-old South Indian
-                  staples to experimental global cuisine. Whether you're in the
-                  mood for a beachside breakfast, rooftop fine dining, or
-                  comfort food at midnight, the city delivers a wide spectrum of
-                  culinary experiences. With strong vegetarian roots, a growing
-                  café culture, and an appetite for international trends,
-                  Chennai is where every meal tells a story
+                  Step into Trivia 2026 and explore an engaging quiz experience
+                  based on Tamil Nadu politics and general knowledge topics.
+                  Participate, answer the questions, and discover how well you
+                  understand important aspects such as governance, history, and
+                  public awareness. Stay attentive and accurate as you progress,
+                  and stand a chance to win exciting rewards. It’s a simple and
+                  interactive way to learn, stay informed, and be part of this
+                  election season. Join in, enjoy the experience, and make the
+                  most of this opportunity.
                 </p>
               </div>
 
               <div className="mt-6">
-                <div className="flex justify-center items-center gap-1">
+                <div className="flex justify-center items-center gap-1  items-center sksksksks ">
                   <input
+                    className="inputcheckoososs"
                     type="checkbox"
                     checked={isChecked}
                     onChange={(e) => setIsChecked(e.target.checked)}
@@ -288,8 +309,8 @@ export default function Login2026({ setIsLoggedIn }) {
       {/* popup */}
 
       {popupopen && (
-        <div className="fixed inset-0 z-9999 flex items-center justify-center bg-[rgba(0,0,0,0.7)] backdrop-blur-sm">
-          <div className="relative w-full max-w-xl  rounded-2xl bg-white shadow-2xl p-10 animate-fadeIn">
+        <div className="fixed inset-0 z-9999 flex items-center justify-center bg-[rgba(0,0,0,0.7)] backdrop-blur-sm ">
+          <div className="relative w-full max-w-xl  rounded-2xl bg-white shadow-2xl p-10 animate-fadeIn termsandconditionpopup">
             {/* <ul>
               <li>
                 Be quick and smart! The first 3 participants who submit the
@@ -309,7 +330,7 @@ export default function Login2026({ setIsLoggedIn }) {
               Terms and Conditions
             </h2>
 
-            <ul className=" text-white p-6  space-y-4 max-w-xl">
+            <ul className=" text-white p-6  space-y-4 max-w-xl popupwidthdd">
               <li
                 className="flex items-start gap-3"
                 style={{ fontWeight: "600" }}
@@ -366,13 +387,13 @@ export default function Login2026({ setIsLoggedIn }) {
                 </p>
               </li>
 
-              <li className="flex items-center gap-3 border-t border-[rgba(0,0,0,0.2)] pt-3">
-                {/* <span className="text-red-400 text-lg">📌</span> */}
+              <li
+                className="flex items-start gap-3"
+                style={{ fontWeight: "500" }}
+              >
+                {/* <span className="text-green-400 text-lg">🏆</span> */}
                 <img className="w-5" src="/images/tick-2.svg" alt="" />
-                <p
-                  className="text-xs text-[#000]"
-                  style={{ fontWeight: "500" }}
-                >
+                <p className="text-sm text-[#000] leading-relaxed">
                   The organizer’s decision will be final in all cases.
                 </p>
               </li>
@@ -394,7 +415,6 @@ export default function Login2026({ setIsLoggedIn }) {
     </>
   );
 }
-
 
 // import { useState, useEffect } from "react";
 // import { useNavigate, useParams, Link } from "react-router-dom";
@@ -467,7 +487,7 @@ export default function Login2026({ setIsLoggedIn }) {
 //   // =========================================
 //   //       LOGIN SUBMIT
 //   // =========================================
-  
+
 //   const handleLogin = async (e) => {
 //     e.preventDefault();
 //     const error = validateLogin();
@@ -556,7 +576,7 @@ export default function Login2026({ setIsLoggedIn }) {
 //       {/* ---------- Banner ---------- */}
 //       <section className="accaodomationBannerSection carquizbanner">
 //         <div>
-  
+
 //           <img
 //             className="eventsCalenderIamge hidden sm:block"
 //             src="/images/events/triva-contest.jpg"
@@ -597,7 +617,7 @@ export default function Login2026({ setIsLoggedIn }) {
 //           </p>
 
 //           <button
-//           // onClick={scrollToForm} 
+//           // onClick={scrollToForm}
 //              onClick={() => navigate("/login-otp")}
 //             className="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-semibold mb-6 theme-button-small cursor-pointer"
 //           >

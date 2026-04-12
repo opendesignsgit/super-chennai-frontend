@@ -207,10 +207,10 @@ export default function Login2026({ setIsLoggedIn }) {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Trivia 2026</h1>
+            <h1>Day to deliver quiz</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Trivia 2026</Link>
+              <Link to="">Day to deliver quiz</Link>
             </div>
           </div>
         </div>
@@ -241,15 +241,11 @@ export default function Login2026({ setIsLoggedIn }) {
 
               <div className="workIntro">
                 <p>
-                  Step into Trivia 2026 and explore an engaging quiz experience
-                  based on Tamil Nadu politics and general knowledge topics.
-                  Participate, answer the questions, and discover how well you
-                  understand important aspects such as governance, history, and
-                  public awareness. Stay attentive and accurate as you progress,
-                  and stand a chance to win exciting rewards. It’s a simple and
-                  interactive way to learn, stay informed, and be part of this
-                  election season. Join in, enjoy the experience, and make the
-                  most of this opportunity.
+                  Know your constituencies across Chennai and its neighbouring
+                  districts. Understand the stakes that shape your region.
+                  Participate in the Day-to-Deliver Quiz, stay informed, and
+                  stand a chance to win exciting vouchers. Step in prepared, and
+                  deliver your vote with confidence this April 23.
                 </p>
               </div>
 

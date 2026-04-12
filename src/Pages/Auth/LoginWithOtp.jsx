@@ -101,10 +101,10 @@ export default function LoginOtp2026() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Trivia 2026</h1>
+            <h1>Day to deliver quiz</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Trivia 2026</Link>
+              <Link to="">Day to deliver quiz</Link>
             </div>
           </div>
         </div>

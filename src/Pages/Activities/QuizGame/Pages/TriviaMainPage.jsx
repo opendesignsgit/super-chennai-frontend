@@ -227,17 +227,17 @@ export default function Login2026({ setIsLoggedIn }) {
         <div className="container max-w-7xl mx-auto px-4 !mb-0">
           <div>
             <div>
-              <p className="uppercase themelink-color leading-6 text-sm">
+              {/* <p className="uppercase themelink-color leading-6 text-sm">
                 Let’s Start the Game
-              </p>
+              </p> */}
 
               <h2 className="chennaiInvestmentsHeading leading-tight">
-                TRIVIA 2026
+               Day to deliver Quiz
               </h2>
-
+{/* 
               <p className="text-gray-700 mb-6 text-base sm:text-sm leading-relaxed font-bold themelink-color">
                 PLAY, LEARN AND WIN!
-              </p>
+              </p> */}
 
               <div className="workIntro">
                 <p>

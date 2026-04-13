@@ -248,7 +248,7 @@ export default function ArattaiWithVivekKarunakaran() {
               </h2>
 
               <p className="text-gray-600 text-lg">
-                On 15<sup>th</sup> April
+                On 25<sup>th</sup> April
               </p>
 
               <button

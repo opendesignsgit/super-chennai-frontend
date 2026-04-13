@@ -132,23 +132,23 @@ export default function AuthRegister() {
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/triva-contest.jpg"
+            src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz"
           />
 
           {/* Mobile Image */}
           <img
             className=" block sm:hidden"
-            src="/images/events/triva-contest-small.jpg"
+            src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Day to deliver quiz</h1>
+            <h1>Day to deliver-quiz</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Day to deliver quiz</Link>
+              <Link to="/">Home</Link> - <Link to="">Day to deliver-quiz</Link>
             </div>
           </div>
         </div>

@@ -346,7 +346,7 @@ const downloadArattaiJahabarXLS = () => {
         <div>
           <img
             className="w-full h-[300px] object-cover"
-            src="/images/events/triva-contest.jpg"
+            src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz"
           />
         </div>

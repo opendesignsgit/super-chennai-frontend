@@ -45,8 +45,8 @@ export default function Thankyou() {
         );
       } else {
         if (from === "trivia-game")
-          setImageSrc("/images/events/triva-contest.jpg");
-        else setImageSrc("/images/events/triva-contest.jpg");
+          setImageSrc("/images/events/quiz-banner.jpeg");
+        else setImageSrc("/images/events/quiz-banner.jpeg");
       }
     };
 
@@ -155,7 +155,7 @@ export default function Thankyou() {
 
   return (
     <>
-      <section className=" carquizbanner relative overflow-hidden cursor-pointer akbaralipage">
+      {/* <section className=" carquizbanner relative overflow-hidden cursor-pointer akbaralipage">
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
@@ -187,6 +187,31 @@ export default function Thankyou() {
               width="80%"
               maxLines={2}
             />
+          </div>
+        </div>
+      </section> */}
+      <section className="accaodomationBannerSection carquizbanner">
+        <div>
+          <img
+            className="eventsCalenderIamge hidden sm:block"
+            src="/images/events/quiz-banner.jpeg"
+            alt="Super Chennai Quiz"
+          />
+
+          {/* Mobile Image */}
+          <img
+            className=" block sm:hidden"
+            src="/images/events/quiz-banner.jpeg"
+            alt="Super Chennai Quiz Mobile"
+          />
+        </div>
+
+        <div className="accodoamationBannerContainer">
+          <div className="accodoamationBannerText">
+            <h1>Day to deliver-quiz</h1>
+            <div className="breadCrum">
+              <Link to="/">Home</Link> - <Link to="">Day to deliver-quiz</Link>
+            </div>
           </div>
         </div>
       </section>
@@ -319,13 +344,32 @@ export default function Thankyou() {
           )}
 
           {from === "trivia-game" && (
-            <div className="workIntro">
-              <h1>Trivia Completed!</h1>
-              <p>
-                Thanks for participating. April 23, 2026 is your #DaytoDeliver —
-                Please step out and vote.
-              </p>
-            </div>
+            <>
+              <div className="workIntro">
+                <h1>Thankyou for participating!</h1>
+                <p>
+                  April 23, 2026 is your #DaytoDeliver — Please step out and
+                  vote.
+                </p>
+              </div>
+              <>
+                <div className="workIntro max-w-xl mx-auto text-center  backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-lg instagramlink">
+                  <p className="text-base md:text-lg text-gray-200 mb-4 leading-relaxed">
+                    Don’t miss the winners! 👀 <br />
+                    Follow us on Instagram for live updates and results.
+                  </p>
+
+                  <a
+                    href="https://www.instagram.com/super_chennai_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:scale-105 transition-all duration-300 shadow-md"
+                  >
+                    📸 Follow on Instagram
+                  </a>
+                </div>
+              </>
+            </>
           )}
 
           {!from && (
@@ -336,7 +380,10 @@ export default function Thankyou() {
         </div>
 
         {/* ===== Bottom CTA Button ===== */}
-        <div className="py-12 bg-gradient-to-b from-white to-[#faf7fb]">
+        <div
+          className="py-0 bg-gradient-to-b from-white to-[#faf7fb]"
+          style={{ paddingBottom: "50px" }}
+        >
           <div className="flex justify-center">
             <Link
               to="/superchennai-contest"

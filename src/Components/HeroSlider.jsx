@@ -4,7 +4,6 @@ import Search from "./Search";
 import { Link } from "react-router-dom";
 
 const slides = [
-
   // {
   //   type: "image",
   //   link: "https://docs.google.com/forms/d/e/1FAIpQLSdE7mzehrkb7M0dSSXg177_WhRPkWu3fdSMX7pmqqldlENQNg/viewform",
@@ -40,7 +39,6 @@ const slides = [
   //   description: "conclave.",
   // },
 
-
   //  {
   //   type: "image",
   //   link: "arattai-with-aruna-sairam/carnatic-vocalist",
@@ -49,7 +47,6 @@ const slides = [
   //   title: "arattai-with-aruna-sairam",
   //   description: "arattai-with-aruna-sairam",
   // },
-
 
   // {
   //   type: "image",
@@ -77,16 +74,33 @@ const slides = [
   //   title: "Icon of the month in chennai",
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
-  
 
   {
     type: "image",
-    link: "/contest/hotshots-photography-contest",
-    image: "/images/hompage-hotshots.jpeg",
-    image1: "/images/mobile-size-banner-hotshots1.jpeg",
+    link: "/day-to-deliver-quiz",
+    image: "/images/herobanner-quiz.jpeg",
+    image1: "/images/mobile-homepagebanner-quiz.jpeg",
     title: "Icon of the month in chennai",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
+
+  {
+    type: "image",
+    link: "/arattai-with-vivek-karunakaran/chennai-fashion-designer",
+    image: "/images/vivek-homepage-banner.jpeg",
+    image1: "/images/mobile-banner-vivek-mobile.jpeg",
+    title: "Icon of the month in chennai",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
+  // {
+  //   type: "image",
+  //   link: "/contest/hotshots-photography-contest",
+  //   image: "/images/hompage-hotshots.jpeg",
+  //   image1: "/images/mobile-size-banner-hotshots1.jpeg",
+  //   title: "Icon of the month in chennai",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   //  {
   //   image: "/images/margazhi-contest-home.jpg",

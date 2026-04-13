@@ -235,6 +235,15 @@
   height: 180px;
 }
 
+.instagramlink {
+  padding: 0;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 1600px) {
   .manifesto {
     bottom: 310px !important;
@@ -464,6 +473,11 @@
 
   .quizsuperchennai {
     top: 100px;
+  }
+
+  .instagramlink {
+    padding-bottom: 26px !important;
+    margin-top: 20px;
   }
 }
 

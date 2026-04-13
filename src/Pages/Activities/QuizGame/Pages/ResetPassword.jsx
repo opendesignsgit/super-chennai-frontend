@@ -154,14 +154,14 @@ export default function ResetPassword() {
   
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/triva-contest.jpg"
+            src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz"
           />
 
           {/* Mobile Image */}
           <img
             className=" block sm:hidden"
-            src="/images/events/triva-contest-small.jpg"
+            src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>

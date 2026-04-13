@@ -574,12 +574,12 @@ function App() {
 
       {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-      {/* {isHomePage && showPopup && (
+      {isHomePage && showPopup && (
         <ImagePopup
-          imageUrl="/images/popup-kamakoti.jpeg"
+          imageUrl="/images/popupquizimage.jpeg"
           onClose={() => setShowPopup(false)}
         />
-      )} */}
+      )}
 
       {/* )} */}
 
@@ -652,9 +652,9 @@ function App() {
             footerReached ? "footerreached" : ""
           }`}
         >
-          <a href="/contest/hotshots-photography-contest">
+          <a href="/day-to-deliver-quiz">
             <img
-              src="/images/tap-button-hotshots1.png"
+              src="/images/quiz-button.svg"
               alt="artificial intelligence challenge"
             />
           </a>

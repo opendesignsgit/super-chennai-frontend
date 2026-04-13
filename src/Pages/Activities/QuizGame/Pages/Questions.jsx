@@ -211,24 +211,23 @@ export default function Questions2026() {
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/triva-contest.jpg"
+            src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz"
           />
 
           {/* Mobile Image */}
           <img
             className=" block sm:hidden"
-            src="/images/events/triva-contest-small.jpg"
+            src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Day to deliver quiz</h1>
+            <h1>Day to deliver-quiz</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> -{" "}
-              <Link to="">Day to deliver quiz</Link>
+              <Link to="/">Home</Link> - <Link to="">Day to deliver-quiz</Link>
             </div>
           </div>
         </div>
@@ -238,8 +237,11 @@ export default function Questions2026() {
         <div className="max-w-[1100px] mx-auto mt-10  bg-white rounded-lg  ">
           <div className="um-form-section">
             <div className="flex justify-between items-center mb-4 mobilessss">
-              <h2 className="text-center heading-gradient">
-               DAY TO DELIVER QUIZ
+              <h2
+                className="text-center lowercase  heading-gradient"
+                style={{ textTransform: "lowercase" }}
+              >
+                #daytodeliver-quiz
               </h2>
               <button
                 onClick={handleLogout}
@@ -596,14 +598,14 @@ export default function Questions2026() {
 //         <div>
 //           <img
 //             className="eventsCalenderIamge hidden sm:block"
-//             src="/images/events/triva-contest.jpg"
+//             src="/images/events/quiz-banner.jpeg"
 //             alt="Super Chennai Quiz"
 //           />
 
 //           {/* Mobile Image */}
 //           <img
 //             className=" block sm:hidden"
-//             src="/images/events/triva-contest-small.jpg"
+//             src="/images/events/quiz-banner.jpeg"
 //             alt="Super Chennai Quiz Mobile"
 //           />
 //         </div>

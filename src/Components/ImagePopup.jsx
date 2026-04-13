@@ -37,7 +37,7 @@ const ImagePopup = ({ onClose, imageUrl }) => {
         >
           {/* <Link to="/namma-stories#NammaStoriesVideoId" onClick={onClose}> */}
           {/* <Link to="/chennai-conclave" onClick={onClose}> */}
-          <a href="arattai-with-kamakoti/iit-madras-director">
+          <a href="day-to-deliver-quiz">
             <img
               src={imageUrl}
               alt="Popup"

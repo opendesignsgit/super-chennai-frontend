@@ -407,7 +407,13 @@ const menuItems = [
     label: "Arattai",
     labellink: "/arattai-with-jahabar-sadique/chai-kings-founder",
     content: [
-      
+      {
+        title: "Hello",
+        desc: "ssdds",
+        link: "/arattai-with-vivek-karunakaran/chennai-fashion-designer",
+        image: "/images/vivek-header-banner-header.jpeg",
+      },
+
       {
         title: "Hello",
         desc: "ssdds",
@@ -420,14 +426,12 @@ const menuItems = [
         link: "/arattai-with-jahabar-sadique/chai-kings-founder",
         image: "/images/chai-king-owner.jpeg",
       },
-         {
+      {
         title: "Hello",
         desc: "ssdds",
         link: "/arattai-with-aruna-sairam/carnatic-vocalist",
         image: "/images/arunasairam-card-img.jpeg",
       },
-
-
     ],
   },
 ];

@@ -228,7 +228,7 @@ const Footer = () => {
       title: "Refund Policy",
       link: "/refund-policy",
     },
-       {
+    {
       title: "Terms and Conditions",
       link: "/termsAndConditions",
     },
@@ -236,8 +236,24 @@ const Footer = () => {
     { title: "Conclave", link: "/chennai-conclave" },
     { title: "Manifesto", link: "/manifesto-info" },
     { title: "Blogs", link: "/blog" },
-    //  { title: "Arattai with Aruna Sairam", link: "/arattai-with-aruna-sairam/carnatic-vocalist" },
+    {
+      title: "Arattai with Aruna Sairam",
+      link: "/arattai-with-aruna-sairam/carnatic-vocalist",
+    },
+    {
+      title: "Arattai with Jahabar sadique",
+      link: "/arattai-with-jahabar-sadique/chai-kings-founder",
+    },
 
+    {
+      title: "Arattai with Kamakoti",
+      link: "/arattai-with-kamakoti/iit-madras-director",
+    },
+
+    {
+      title: "Arattai with Vivek Karunakaran",
+      link: "/arattai-with-vivek-karunakaran/chennai-fashion-designer",
+    },
   ];
 
 

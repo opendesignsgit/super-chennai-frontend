@@ -7577,6 +7577,70 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 export const panesContent = [
 
   {
+  "id": 102339,
+  "name": "Chennai’s Cherry Blossom Season with Tabebuia Rosea",
+  "slug": "cherry-blossom-season-tabebuia-rosea-chennai",
+  "para": "Chennai’s Hidden Sakura Season",
+  "TrendingCalendarMonth": "April 2026",
+  "TrendingCalendarTime": "Seasonal Bloom",
+  "TrendingCalendarCategory": "Nature | Seasonal | Trending",
+  "image": "/images/trending-april-flower.jpeg",
+  "Homeimage": "/images/trending-april-flower.jpeg",
+  "link": "/trending-chennai/cherry-blossom-season-tabebuia-rosea",
+  "duration": "Short Seasonal Bloom",
+  "ageRestriction": "Open for All",
+  "language": "N/A",
+  "genre": "Nature | Floral | Seasonal Experience",
+  "venue": "Across Chennai",
+
+  "trendingDetails": `
+<p>
+Chennai is blooming in shades of pink! 🌸✨ The city’s very own “cherry blossom season” is here, thanks to the stunning <b>Tabebuia rosea</b> trees.
+</p>
+
+<p>
+<b>About this seasonal spectacle:</b>
+</p>
+
+<p>
+• 🌸 <b>Not Sakura, but Just as Beautiful:</b> These aren’t Japanese cherry blossoms, but Tabebuia rosea creates the same dreamy pink canopy across the city.
+</p>
+
+<p>
+• 📸 <b>Instagram-Worthy Views:</b> Streets turn into pastel pink corridors, attracting photographers and nature lovers.
+</p>
+
+<p>
+• ⏳ <b>Short-Lived Bloom:</b> The flowers last only for a brief period, making it a rare and special sight.
+</p>
+
+<p>
+<b>🌸 Popular spots to witness the bloom:</b>
+</p>
+
+<p>
+• Maduravoyal Bypass – A vibrant stretch filled with pink blooms<br>
+• Royapettah – Near the police station<br>
+• West Mambalam – Especially Veeraswamy Street<br>
+• Chennai Bypass (Ambattur stretch) – Rows of flowering trees
+</p>
+
+<p>
+Step out and enjoy Chennai’s own version of spring magic before the petals fade away 🌆
+</p>
+`,
+
+  "TrendingLink": "",
+  "YoutubeLink": "",
+
+  "meta": {
+    "title": "Cherry Blossom Season | Tabebuia Rosea | Super Chennai",
+    "desc": "Tabebuia rosea marks Chennai’s cherry blossom season each April, covering streets in soft pink blooms and transforming the city into a stunning floral landscape.",
+    "url": "https://www.superchennai.com/trending-chennai/cherry-blossom-season-tabebuia-rosea"
+  }
+},
+
+  {
   "id": 102338,
   "name": "Chennai Unveils Its First 3D-Printed Bus Shelter at Marina Beach",
   "slug": "3d-printed-bus-shelter-chennai",
@@ -7640,8 +7704,8 @@ The corporation plans to install around 90 more of these innovative shelters acr
   "TrendingCalendarMonth": "April 2026",
   "TrendingCalendarTime": "Ongoing",
   "TrendingCalendarCategory": "Environment | Sustainability | Public Initiative",
-  "image": "/images/trendingChennai/merina-beac-celebrate.jpeg",
-  "Homeimage": "/images/trendingChennai/merina-beac-celebrate.jpeg",
+  "image": "/images/merina-beac-celebrate-new.jpeg",
+  "Homeimage": "/images/merina-beac-celebrate-new.jpeg",
   "link": "/trending-chennai/plastic-bottle-recycling-chennai-marina-beach",
   "duration": "Ongoing Initiative",
   "ageRestriction": "Open for All",

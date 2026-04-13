@@ -139,10 +139,10 @@ export default function ArattaiWithVivekKarunakaran() {
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
       <Helmet>
-        <title>Vivek Karunakaran - Super Chennai Arattai</title>
+        <title>Super Chennai Arattai with Fashion Designer Vivek Karunakaran</title>
         <meta
           name="description"
-          content="Super Chennai Arattai with Vivek Karunakaran, one of India’s leading contemporary fashion designers."
+          content="Vivek Karunakaran, Chennai fashion designer known for blending traditional textiles with modern aesthetics and shaping contemporary Indian fashion."
         />
         <script type="application/ld+json">
           {JSON.stringify(arattaiSchema)}
@@ -162,7 +162,7 @@ export default function ArattaiWithVivekKarunakaran() {
         />
         <img
           className="block sm:hidden w-full"
-          src="/images/vivek-mobile-banner.jpeg"
+          src="/images/mobile-banner-vivek-mobile.jpeg"
           alt="Arattai Event"
         />
       </section>

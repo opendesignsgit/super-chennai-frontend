@@ -5,7 +5,8 @@ import { useLocation } from "react-router-dom";
 
 export default function Thankyou() {
   const location = useLocation();
-  const from = location.state?.from;
+  // const from = location.state?.from;
+  const from = "vivek";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -34,8 +35,8 @@ export default function Thankyou() {
       } else if (from === "vivek") {
         setImageSrc(
           isMobile
-            ? "/images/kamakoti-mobile-thanks-new.jpeg"
-            : "/images/kamakoti-desktop-thanks-new.jpeg",
+            ? "/images/VIVEK-TQ-BANNER-mobile.jpeg"
+            : "/images/thankyou-vivek-banner.jpeg",
         );
       } else if (from === "jahabar") {
         setImageSrc(
@@ -192,26 +193,63 @@ export default function Thankyou() {
       </section> */}
       <section className="accaodomationBannerSection carquizbanner">
         <div>
-          <img
+          {/* <img
             className="eventsCalenderIamge hidden sm:block"
             src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz"
+          /> */}
+
+          <img
+            className="eventsCalenderIamge hidden sm:block"
+            src={imageSrc}
+            alt="Thank You Banner"
           />
 
           {/* Mobile Image */}
-          <img
+          {/* <img
             className=" block sm:hidden"
             src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz Mobile"
+          /> */}
+
+          <img
+            className="block sm:hidden"
+            src={imageSrc}
+            alt="Thank You Banner Mobile"
           />
         </div>
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Day to deliver-quiz</h1>
-            <div className="breadCrum">
+            <AutoShrinkText
+              // text={
+              //   from === "conclave" ||
+              //   from === "jahabar" ||
+              //   from === "trivia-game" ||
+              //   from === "vivek"
+              //     ? "Day to deliver-quiz"
+              //     : "Thank You!"
+              // }
+              text={
+                from === "vivek"
+                  ? ""
+                  : from === "trivia-game" ||
+                      from === "conclave" ||
+                      from === "jahabar"
+                    ? "Day to deliver-quiz"
+                    : "Thank You!"
+              }
+              baseSize={60}
+              minSize={40}
+              maxChars={40}
+              className="accodoamationBannerText"
+              width="80%"
+              maxLines={2}
+            />
+            {/* <h1>Day to deliver-quiz</h1> */}
+            {/* <div className="breadCrum">
               <Link to="/">Home</Link> - <Link to="">Day to deliver-quiz</Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

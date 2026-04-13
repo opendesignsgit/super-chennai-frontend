@@ -333,6 +333,7 @@ import ExploreDiscovery from "./Pages/Explore/ExploreDiscovery";
 import IconofthemonthMarchKamakotti from "./Pages/Icon-of-the-month-march-26";
 import ArattaiWithKamakotti from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakotti";
 import ArattaikamakotiExcelView from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakoti-excel";
+import ArattaiKarunakaranExcelView from "./Pages/Activities/ArrattaiWithVivekKarunakaran/ArattaiKarunakaranExcelView"
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -638,7 +639,7 @@ function App() {
             footerReached ? "footerreached" : ""
           }`}
         >
-          <a href="/arattai-with-jahabar-sadique/chai-kings-founder/">
+          <a href="/arattai-with-vivek-karunakaran/chennai-fashion-designer/">
             <img src="/images/tap-button-arattai.svg" alt="arattai" />
           </a>
         </div>
@@ -891,13 +892,18 @@ function App() {
         />
 
         <Route
-          path="/arattai-with-karunakaran/indias-leading-fashion-designers"
+          path="/arattai-with-vivek-karunakaran/chennai-fashion-designer"
           element={<ArattaiWithVivekKarunakaran />}
         />
 
         <Route
           path="/arattai-with-kamakoti/iit-madras-director-admin-entry-oiuyterwqasvcxzdsw/refdewsdfettwfsvvdg/8728272/lmnjhscbnmdt"
           element={<ArattaikamakotiExcelView />}
+        />
+
+        <Route
+          path="/arattai-with-Karunakaran/fettwfsvvdg/8728272/lmnjhscbnmdt"
+          element={<ArattaiKarunakaranExcelView />}
         />
 
         <Route

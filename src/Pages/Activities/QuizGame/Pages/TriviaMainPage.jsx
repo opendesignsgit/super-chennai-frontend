@@ -138,7 +138,7 @@ export default function Login2026({ setIsLoggedIn }) {
       });
 
       toast.success(res.data.message);
-      setTimeout(() => navigate("/login-otp"), 1500);
+      setTimeout(() => navigate("/day-to-deliver-quiz/login"), 1500);
     } catch (err) {
       toast.error(err.response?.data?.message || "Something went wrong");
     }
@@ -156,7 +156,7 @@ export default function Login2026({ setIsLoggedIn }) {
 
   const routefunction = () => {
     if (isChecked) {
-      navigate("/login-otp");
+      navigate("/day-to-deliver-quiz/login");
     } else {
       toast.error("Please agree to the Terms & Conditions");
     }

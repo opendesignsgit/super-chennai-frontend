@@ -229,7 +229,7 @@ export default function LoginOtp2026() {
           )}
 
           <button
-            onClick={() => navigate("/TriviaMainPage")}
+            onClick={() => navigate("/day-to-deliver-quiz")}
               className="absolute top-4 right-4 w-8 h-8 rounded-full 
              bg-[#a44294] text-white 
               hover:bg-gray-800 

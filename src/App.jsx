@@ -753,13 +753,15 @@ function App() {
         /> */}
 
         <Route
-          path="/login-otp"
+          path="/day-to-deliver-quiz/login"
           element={
             <PublicRoute>
               <AuthLogin setIsLoggedIn={setIsLoggedIn} />
             </PublicRoute>
           }
         />
+
+        
 
         {/* <Route
           path="/login-otp2026"
@@ -771,7 +773,7 @@ function App() {
         /> */}
 
         <Route
-          path="/TriviaMainPage"
+          path="/day-to-deliver-quiz"
           element={
             <PublicRoute>
               <TriviaMainPage setIsLoggedIn={setIsLoggedIn} />

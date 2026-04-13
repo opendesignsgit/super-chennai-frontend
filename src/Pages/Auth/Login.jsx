@@ -264,7 +264,7 @@ export default function AuthLogin({ setIsLoggedIn }) {
 
           <button
             type="button"
-            onClick={() => navigate("/login-otp")}
+            onClick={() => navigate("/day-to-deliver-quiz/login")}
             className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 theme-button-secondary-full cursor-pointer"
           >
             Login with OTP

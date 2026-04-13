@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 
 export function PrivateRoute({ children }) {
   const token = localStorage.getItem("token");
-  return token ? children : <Navigate to="/login-otp" replace />;
+  return token ? children : <Navigate to="/day-to-deliver-quiz/login" replace />;
 }
 
 export function PublicRoute({ children }) {

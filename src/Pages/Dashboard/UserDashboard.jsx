@@ -39,7 +39,7 @@ export default function UserDashboard() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    if (!token) navigate("/login-otp", { replace: true });
+    if (!token) navigate("/day-to-deliver-quiz/login", { replace: true });
   }, [navigate]);
 
   return (

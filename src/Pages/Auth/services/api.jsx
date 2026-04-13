@@ -28,7 +28,7 @@ API.interceptors.response.use(
       toast.error("Session expired! Please login again.");
       localStorage.removeItem("token");
       setTimeout(() => {
-        window.location.href = "/login-otp"; 
+        window.location.href = "/day-to-deliver-quiz/login"; 
       }, 1000);
     }
     return Promise.reject(error);

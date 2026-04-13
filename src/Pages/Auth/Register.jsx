@@ -99,7 +99,7 @@ export default function AuthRegister() {
       toast.success("User registered successfully!", {
         position: "top-center",
       });
-      setTimeout(() => navigate("/login-otp"), 1500);
+      setTimeout(() => navigate("/day-to-deliver-quiz/login"), 1500);
     } catch (err) {
       console.error(err);
       const message =
@@ -263,7 +263,7 @@ export default function AuthRegister() {
             <p className="text-center mt-4 text-gray-700">
               Already registered?{" "}
               <button
-                onClick={() => navigate("/login-otp")}
+                onClick={() => navigate("/day-to-deliver-quiz/login")}
                 className="text-indigo-600 font-semibold hover:underline themelink-color "
               >
                 Login

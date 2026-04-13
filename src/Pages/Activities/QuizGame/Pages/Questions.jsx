@@ -23,14 +23,14 @@ export default function Questions2026() {
   const handleLogout = () => {
     localStorage.removeItem("token");
     toast.info("You have been logged out.");
-    navigate("/login-otp");
+    navigate("/day-to-deliver-quiz/login");
   };
 
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) {
       toast.info("You need to login to access the quiz.");
-      navigate("/login-otp");
+      navigate("/day-to-deliver-quiz/login");
       return;
     }
 

@@ -225,10 +225,10 @@ export default function Questions2026() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Trivia 2026</h1>
+            <h1>Day to deliver quiz</h1>
             <div className="breadCrum">
               <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Trivia 2026</Link>
+              <Link to="">Day to deliver quiz</Link>
             </div>
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function Questions2026() {
           <div className="um-form-section">
             <div className="flex justify-between items-center mb-4 mobilessss">
               <h2 className="text-center heading-gradient">
-                Daytodeliver quiz
+               DAY TO DELIVER QUIZ
               </h2>
               <button
                 onClick={handleLogout}

@@ -146,10 +146,9 @@ export default function AuthRegister() {
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Super Chennai Trivia 2026</h1>
+            <h1>Day to deliver quiz</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> -{" "}
-              <Link to="">Super Chennai Trivia 2025</Link>
+              <Link to="/">Home</Link> - <Link to="">Day to deliver quiz</Link>
             </div>
           </div>
         </div>
@@ -267,7 +266,7 @@ export default function AuthRegister() {
                 onClick={() => navigate("/login-otp")}
                 className="text-indigo-600 font-semibold hover:underline themelink-color "
               >
-               Login
+                Login
               </button>
             </p>
           </div>

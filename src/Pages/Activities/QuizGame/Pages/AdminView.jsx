@@ -530,9 +530,9 @@ const downloadArattaiJahabarXLS = () => {
                   <table className="w-full border text-left">
                     <thead className="bg-gray-200 sticky top-0 z-10">
                       <tr>
-                        <th className="p-3 border">User ID</th>
+                        {/* <th className="p-3 border">User ID</th> */}
                         <th className="p-3 border">Name</th>
-                        <th className="p-3 border">Email</th>
+                        {/* <th className="p-3 border">Email</th> */}
                         <th className="p-3 border">Phone</th>
                         <th className="p-3 border">Answers</th>
                       </tr>
@@ -541,13 +541,13 @@ const downloadArattaiJahabarXLS = () => {
                     <tbody>
                       {Object.values(groupedQuiz).map((user, index) => (
                         <tr key={index} className="align-top hover:bg-gray-50">
-                          <td className="p-3 border font-mono text-sm">
+                          {/* <td className="p-3 border font-mono text-sm">
                             {user.user_id}
-                          </td>
+                          </td> */}
                           <td className="p-3 border font-semibold">
                             {user.name}
                           </td>
-                          <td className="p-3 border text-sm">{user.email}</td>
+                          {/* <td className="p-3 border text-sm">{user.email}</td> */}
                           <td className="p-3 border text-sm">{user.phone}</td>
 
                           <td className="p-3 border">
@@ -587,8 +587,8 @@ const downloadArattaiJahabarXLS = () => {
                                           }`}
                                         >
                                           {ans.is_correct
-                                            ? "✔ Correct"
-                                            : "✖ Wrong"}
+                                            ? " Correct"
+                                            : " Wrong"}
                                         </span>
                                       </td>
                                     </tr>
@@ -662,7 +662,8 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
                   <td>
                     <strong>{d.name}</strong>
                   </td>
-                  <td>{d.email}</td>
+                  {/* <td>{d.email}</td> */}
+                  {title !== "Trivia" && <td>{d.email}</td>}
                   <td>{d.mobile || d.phone}</td>
                   {title === "Hotshot Chennai" && (
                     <td className="break-all text-sm text-gray-700">

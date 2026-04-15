@@ -20,7 +20,6 @@ export default function AuthRegister() {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    // Prevent script injection in text inputs
     const safeValue =
       type === "text" || type === "email"
         ? value.replace(/<[^>]*>?/gm, "")
@@ -28,84 +27,72 @@ export default function AuthRegister() {
     setForm({ ...form, [name]: type === "checkbox" ? checked : safeValue });
   };
 
-  //######### Strong client-side validation ###########
-  // const validateForm = () => {
-  //   if (!form.name.trim()) return "Name is required";
-  //   if (!form.email.trim()) return "Email is required";
-  //   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
-  //     return "Invalid email format";
-  //   if (!form.phone.trim()) return "Phone number is required";
-  //   if (!/^\d{10,15}$/.test(form.phone)) return "Phone must be 10-15 digits";
-  //   if (!form.password) return "Password is required";
-  //   if (form.password.length < 6)
-  //     return "Password must be at least 6 characters";
-  //   return null;
-  // };
+  const [otp, setOtp] = useState("");
+  const [otpSent, setOtpSent] = useState(false);
+
+  const handleSendOtp = async () => {
+    const error = validateForm();
+    if (error) {
+      toast.error(error);
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      await API.post("/auth/send-otp-mobile", {
+        phone: form.phone,
+        name: form.name,
+      });
+
+      toast.success("OTP sent");
+      setOtpSent(true);
+    } catch (err) {
+      toast.error(err?.response?.data?.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const validateForm = () => {
-    // for (const [key, value] of Object.entries(form)) {
-    //   if (value === "" || value === null || value === undefined) {
-    //     return "All fields are required";
-    //   }
-    // }
-
-    // Name
-    if (!form.name.trim()) return "Name is required";
-
-    // Email
-    if (!form.email.trim()) return "Email is required";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
-      return "Invalid email format";
-
-    // Phone
-    if (!form.phone.trim()) return "Phone number is required";
-    if (!/^\d{10,15}$/.test(form.phone)) return "Phone must be 10-15 digits";
-
-    // Location
-    if (!form.location.trim()) return "Location is required";
-
-    // Subscribed (radio mandatory)
-    if (typeof form.subscribed !== "boolean")
-      return "Please select newsletter subscription option";
-
-    // Password
-    // if (!form.password) return "Password is required";
-    // if (form.password.length < 6)
-    //   return "Password must be at least 6 characters";
+    if (!form.name?.trim()) return "Name is required";
+    if (!form.phone?.trim()) return "Phone is required";
+    if (!/^\d{10}$/.test(form.phone)) return "Enter valid 10-digit phone";
 
     return null;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+ 
+
     const error = validateForm();
     if (error) {
-      toast.error(error, { position: "top-center" });
+      toast.error(error);
       return;
     }
 
-    setLoading(true);
-    try {
-      const payload = {
-        name: form.name.trim(),
-        email: form.email.trim().toLowerCase(),
-        phone: form.phone.trim(),
-        location: form.location.trim(),
-        subscribed: form.subscribed,
-        password: form.password,
-      };
+    if (!otp || otp.length !== 6) {
+      toast.error("Enter valid OTP");
+      return;
+    }
 
-      await API.post("/auth/register", payload);
-      toast.success("User registered successfully!", {
-        position: "top-center",
+    try {
+      setLoading(true);
+
+      const res = await API.post("/auth/register-with-otp", {
+        name: form.name,
+        phone: form.phone,
+        otp,
       });
-      setTimeout(() => navigate("/day-to-deliver-quiz/login"), 1500);
+
+      localStorage.setItem("token", res.data.token);
+
+      toast.success("Registered successfully");
+      navigate("/questions");
     } catch (err) {
-      console.error(err);
-      const message =
-        err?.response?.data?.message ||
-        "Registration failed due to server error";
-      toast.error(message, { position: "top-center" });
+      toast.error(err?.response?.data?.message);
     } finally {
       setLoading(false);
     }
@@ -183,80 +170,47 @@ export default function AuthRegister() {
                 />
 
                 <input
-                  name="email"
-                  placeholder="Email Address *"
-                  type="email"
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-                />
-
-                <input
                   name="phone"
                   placeholder="Phone Number *"
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+                  className="w-full px-4 py-2 border rounded-lg"
                 />
+              </div>
 
+              <button
+                type="button"
+                onClick={handleSendOtp}
+                className="bg-blue-600 text-white px-3 py-2 rounded-lg min-h-[44px] w-[100%] mb-2 gradient-primarySuperchennai"
+                disabled={loading}
+              >
+                {loading ? "Sending..." : "Send OTP"}
+              </button>
+
+              {otpSent && (
                 <input
-                  name="location"
-                  placeholder="Location *"
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
+                  type="text"
+                  placeholder="Enter OTP"
+                  maxLength={6}
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                  className="w-full px-4 py-2 border rounded-lg text-center tracking-widest mt-4"
                 />
-
-                {/* <input
-                  name="password"
-                  placeholder="Password *"
-                  type="password"
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-                /> */}
-              </div>
-
-              <div className="col-span-2 flex flex-col items-center mt-2">
-                <p className="text-gray-700 mb-2 text-center">
-                  Do you Subscribe to our Newsletter?
-                </p>
-
-                <div className="flex items-center gap-8">
-                  <label className="flex items-center gap-2">
-                    <input
-                      type="radio"
-                      name="subscribed"
-                      value="yes"
-                      checked={form.subscribed === true}
-                      onChange={() => setForm({ ...form, subscribed: true })}
-                      className="w-4 h-4 accent-green-600"
-                    />
-                    Yes
-                  </label>
-
-                  <label className="flex items-center gap-2">
-                    <input
-                      type="radio"
-                      name="subscribed"
-                      value="no"
-                      checked={form.subscribed === false}
-                      onChange={() => setForm({ ...form, subscribed: false })}
-                      className="w-4 h-4 accent-green-600"
-                    />
-                    No
-                  </label>
-                </div>
-              </div>
+              )}
 
               <div className="flex justify-center mt-4">
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className={`w-full ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-600 hover:bg-indigo-700"} text-white py-2 rounded-lg font-semibold transition duration-200 theme-button gradient-primarySuperchennai`}
-                >
-                  {loading ? "Registering..." : "Register"}
-                </button>
+            
+                {otpSent && (
+                  <div className="flex justify-center  min-h-[44px] w-[100%]">
+                    <button
+                      type="submit"
+                      disabled={loading}
+                      className="w-full bg-green-600 text-white py-2 rounded-lg gradient-primarySuperchennai"
+                    >
+                      {loading ? "Processing..." : "Verify & Register"}
+                    </button>
+                  </div>
+                )}
               </div>
             </form>
 

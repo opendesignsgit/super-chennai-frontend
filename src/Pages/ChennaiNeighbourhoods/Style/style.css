@@ -8,6 +8,11 @@
   border-right: 1px solid #acacac;
 }
 
+.alpabutton:hover {
+  background-color: #995099;
+  color: #fff;
+}
+
 .alpabutton:first-child {
   padding-left: 10px;
 }

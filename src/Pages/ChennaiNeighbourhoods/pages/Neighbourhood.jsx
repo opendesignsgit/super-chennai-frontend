@@ -155,10 +155,21 @@ export default function ChennaiNeighbourhood() {
                 <div class="workIntro">
                   <h1>Neighbourhood</h1>
                   <p>
-                    Public transportation in Chennai is managed by various
-                    government bodies, offering an extensive network that
-                    connects all parts of the city. Key modes include the
-                    Industry.
+                    Explore Neighbourd – Chennai, your ultimate guide to every
+                    neighbourhood and area in Chennai across the city. Dive into
+                    vibrant communities, uncover hidden gems, and discover
+                    everything from essential services to lifestyle
+                    experiences—all in one place. Whether it’s finding the best
+                    eateries, schools, healthcare, shopping, or leisure spots,
+                    Neighbourd makes exploring Chennai exciting and effortless.
+                  </p>
+                  <p>
+                    Stay connected, stay informed, and make the most of city
+                    life across all areas in Chennai. From daily conveniences to
+                    unique experiences, Neighbourd ensures you experience
+                    Chennai fully—one neighbourhood at a time, from A to Z.
+                    Every corner of the city has something special, and with
+                    Neighbourd, you’ll never miss it.
                   </p>
                 </div>
 

@@ -17,36 +17,42 @@ export default function AreaFilter({ data, onChange }) {
             : FALLBACK;
 
           return (
-            <div
-              key={loc.id}
-              onClick={() =>
-                navigate(`/neighbourhood/${encodeURIComponent(loc.locality)}`)
-              }
-              className="neighbourcardnew"
-            >
-              {/* image */}
+            <>
+              <a
+                className="neighbourhoodatag"
+                href={`/neighbourhood/${encodeURIComponent(loc.locality)}`}
+              >
+                <div
+                  key={loc.id}
+                  // onClick={() =>
+                  //   navigate(`/neighbourhood/${encodeURIComponent(loc.locality)}`)
+                  // }
+                  className="neighbourcardnew"
+                >
+                  {/* image */}
 
-              <img src={imageUrl} className="neighimg" alt={loc.locality} />
+                  <img src={imageUrl} className="neighimg" alt={loc.locality} />
 
-              {/* content */}
-              <div className="carcontentsnew">
-                <div className="flex justify-between items-center">
-                  <h4 className="text-purple-600 font-bold text-lg uppercase">
-                    {loc.locality}
-                  </h4>
+                  {/* content */}
+                  <div className="carcontentsnew">
+                    <div className="flex justify-between items-center">
+                      <h4 className="text-purple-600 font-bold text-lg uppercase">
+                        {loc.locality}
+                      </h4>
+                    </div>
 
-                 
+                    <h5 className="text-gray-600 text-sm mt-1 pincodestyle">
+                      {loc.label},{"  "}
+                      {loc.pincode}
+                    </h5>
+
+                    <div className="readmorelink">
+                      <a className="">READMORE</a>
+                    </div>
+                  </div>
                 </div>
-
-                <h5 className="text-gray-600 text-sm mt-1 pincodestyle">
-                  {loc.label},{"  "}{loc.pincode}
-                </h5>
-
-                <div className="readmorelink">
-                  <a className="">READMORE</a>
-                </div>
-              </div>
-            </div>
+              </a>
+            </>
           );
         })}
       </div>

@@ -7,8 +7,6 @@ import { useNeighbourhood } from "../hooks/useNeighbourhood";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 
 export default function NeighbourhoodCategory() {
-
-
   const { locations } = useLocations();
   const [activeCategory, setActiveCategory] = useState(null);
   const { locationId, category, subcategory } = useParams();
@@ -17,7 +15,7 @@ export default function NeighbourhoodCategory() {
     location: locationId,
   });
 
-  console.log("page data",data)
+  console.log("page data", data);
 
   const firstLetter = decodeURIComponent(locationId)?.charAt(0)?.toUpperCase();
   const slugify = (text) => text?.toLowerCase().replace(/\s+/g, "-");
@@ -56,8 +54,7 @@ export default function NeighbourhoodCategory() {
     loc.locality?.toUpperCase().startsWith(firstLetter),
   );
 
-   
-  console.log("filtered ",filtered)
+  console.log("filtered ", filtered);
   const subCategoriesByCategory = {};
   data?.forEach((item) => {
     const cat = item?.category?.title || "Others";
@@ -101,6 +98,9 @@ export default function NeighbourhoodCategory() {
 
   if (loading) return <NeighbourhoodListSkeleton />;
 
+  const safeCategory = category?.toLowerCase();
+  const safeSubcategory =
+    subcategory && subcategory !== "undefined" ? subcategory : safeCategory;
 
   return (
     <>
@@ -137,7 +137,11 @@ export default function NeighbourhoodCategory() {
 
         <div className="locationmapin">
           {filtered.map((item) => (
-            <div
+            // <a
+            //   href={`/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`}
+            // >
+            <a
+              href={`/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`}
               key={item.id}
               // onClick={() =>
               //   navigate(
@@ -145,12 +149,6 @@ export default function NeighbourhoodCategory() {
               //   )
               // }
               onClick={() => {
-                const safeCategory = category?.toLowerCase();
-                const safeSubcategory =
-                  subcategory && subcategory !== "undefined"
-                    ? subcategory
-                    : safeCategory;
-
                 navigate(
                   `/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`,
                 );
@@ -174,13 +172,19 @@ export default function NeighbourhoodCategory() {
               <div className="p-4 detailsmap">
                 <h3 className="titlenamecontent">{item.name}</h3>
 
-                <p className="mt-2">{item.description}</p>
+                <p className="mt-2">
+                  {" "}
+                  {item.description?.slice(0, 140) ||
+                    "No description available"}
+                  ...
+                </p>
 
                 <div className="readmorelink">
                   <Link className="">READMORE</Link>
                 </div>
               </div>
-            </div>
+            </a>
+            // </a>
           ))}
         </div>
       </div>

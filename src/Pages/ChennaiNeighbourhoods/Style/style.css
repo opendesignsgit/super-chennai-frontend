@@ -132,7 +132,7 @@
 }
 
 .neighbourcardnew {
-  width: 32%;
+  width: 100%;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -344,12 +344,35 @@
 
 .imagelocationsec {
   width: 465px;
-  height: 522px;
+  height: 450px;
   left: 60%;
 }
 
+.imageeeeeee {
+  position: relative;
+}
+.imageeeeeee::before {
+  width: 10px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: #995099;
+  left: -10px;
+  top: 9px;
+}
+
+.imageeeeeee::after {
+  width: 96%;
+  height: 12px;
+  content: "";
+  position: absolute;
+  background: #995099;
+  left: -10px;
+  bottom: -12px;
+}
+
 .hoverlocationsection {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 .notlocationactived {
   font-size: 45px;
@@ -398,6 +421,7 @@
   text-underline-offset: 8px;
   font-weight: 700;
   color: #975199;
+  transition: all 0.09s ease;
 }
 
 .hoverlocationimagesection {
@@ -489,6 +513,7 @@
   padding-bottom: 30px;
   padding-top: 30px;
   border-top: 0;
+  min-height: 285px;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -515,13 +540,13 @@
   font-size: 21px;
   line-height: 120%;
   padding-left: 0px;
-  min-height: 52px;
+  /* min-height: 52px; */
 }
 
 .detailsmap p {
   font-family: "Poppins";
   color: #383838;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   margin-top: 13px;
 }
@@ -533,14 +558,14 @@
 }
 
 .changethelocation button {
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 4px;
   letter-spacing: 1px;
   cursor: pointer;
-  font-family: "Poppins";
+  font-family: "29LT Bukra SmBd";
 }
 .changethelocation button:hover {
   color: #892c7a;
@@ -713,6 +738,10 @@
 
 .locationamee {
   color: #995098;
+}
+
+.neighbourhoodatag {
+  width: 30%;
 }
 
 @media (max-width: 1600px) and (min-width: 1301px) {

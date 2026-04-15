@@ -19,7 +19,7 @@ export default function NeighbourhoodDetail() {
     location: decodeURIComponent(locationId),
   });
 
-  console.log("page data last",data)
+  console.log("page data last", data);
   const { locations } = useLocations();
   if (loading) return <NeighbourhoodSkeleton />;
   const location = data?.[0]?.locations;
@@ -148,39 +148,45 @@ export default function NeighbourhoodDetail() {
             }
 
             return (
-              <div
-                key={cat}
-                className="relative group cursor-pointer locationlilst"
-                onMouseEnter={() => setActiveCategory(cat)}
-                onClick={() =>
-                  navigate(`/neighbourhood/${locationId}/${activeCat}`)
-                }
-              >
+              <>
                 <div
-                  className={`${
-                    activeCat === cat ? "locationactived" : "notlocationactived"
-                  }`}
+                  key={cat}
+                  className="relative group  locationlilst"
+                  onMouseEnter={() => setActiveCategory(cat)}
                 >
-                  {cat}
-                </div>
-
-                {activeCat === cat && grouped[cat]?.[0]?.FeaturedImage?.url && (
                   <div
-                    className="absolute left-full ml-4 z-10 imagelocationsec transition-all duration-300"
-                    style={{ top: topValue }}
+                    className={`${
+                      activeCat === cat
+                        ? "locationactived "
+                        : "notlocationactived "
+                    }`}
                   >
-                    <img
-                      src={
-                        API_BASE_URL_API_TEST_DEV +
-                        grouped[cat][0].FeaturedImage.url
-                      }
-                      alt={grouped[cat][0].name}
-                      className="w-full h-full object-cover rounded-lg"
-                    />
-                    <div className="absolute inset-0 bg-purple-600/10 rounded-lg"></div>
+                    <a href={`/neighbourhood/${locationId}/${activeCat}`}>
+                      {cat}
+                    </a>
                   </div>
-                )}
-              </div>
+
+                  {activeCat === cat &&
+                    grouped[cat]?.[0]?.FeaturedImage?.url && (
+                      <div
+                        className="absolute left-full ml-4 z-10 imagelocationsec transition-all duration-300"
+                        style={{ top: topValue }}
+                      >
+                        <div class="imageeeeeee">
+                          <img
+                            src={
+                              API_BASE_URL_API_TEST_DEV +
+                              grouped[cat][0].FeaturedImage.url
+                            }
+                            alt={grouped[cat][0].name}
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute inset-0 bg-purple-600/10 rounded-lg"></div>
+                        </div>
+                      </div>
+                    )}
+                </div>
+              </>
             );
           })}
         </div>

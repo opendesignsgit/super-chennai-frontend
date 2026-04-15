@@ -64,7 +64,7 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
               ? API_BASE_URL_API_TEST_DEV + item.heroImage.url
               : "/placeholder.jpg"
           }
-          className="w-full h-[400px] object-cover"
+          className="w-full h-[540px] object-cover"
         />
 
         {/* SHADE */}
@@ -76,14 +76,14 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
             <AutoShrinkText
               text={item.name}
               baseSize={60}
-              minSize={40}
+              minSize={20}
               maxChars={40}
               className="accodoamationBannerText"
-              width="80%"
+              width="95%"
               maxLines={2}
             />
 
-            <div className="breadCrum">
+            <div className="breadCrum newew">
               <Link to="/visit-chennai">Neighbourhoods</Link> -{" "}
               <span>{item.category?.title}</span>
             </div>
@@ -247,12 +247,12 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
           )}
 
           {/* DESCRIPTION */}
-          <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
+          {/* <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">
               About this {item.category?.title}
             </h2>
             {item.description || item.title}
-          </div>
+          </div> */}
 
           {/* LOCATION MAP */}
 

@@ -3,6 +3,8 @@ import { useState, useMemo } from "react";
 import Search from "../Components/Search";
 import Fuse from "fuse.js";
 import { useParams } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
+import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 
 export default function NeighbourhoodSearchBar({
   data = [],
@@ -273,81 +275,88 @@ export default function NeighbourhoodSearchBar({
       )}
 
       {/* EXPLORE MODAL */}
-      {open && (
-        <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
-          <div className="bg-white w-[95%] max-w-6xl overflow-hidden locationpopupmain">
-            <div className="grid grid-cols-12 popupneigbhbourh">
-              {/* LEFT */}
-              <div className="col-span-4 bg-purple-600 text-white p-6 leftsidepopup">
-                <h2 className="text-2xl font-bold mb-6 locationname">
-                  IN <br /> {location?.locality}
-                </h2>
 
-                <div className="space-y-3 leftsidescrolll">
-                  {categories.map((cat) => (
-                    <div
-                      key={cat}
-                      onClick={() => setActiveCategory(cat)}
-                      className={`pointerdiv cursor-pointer transition ${
-                        activeCat === cat
-                          ? "buttonactivated bg-white text-purple-600"
-                          : "buttonnonactivated"
-                      }`}
-                    >
-                      {cat}
-                    </div>
-                  ))}
+      <AnimatePresence>
+        {open && (
+          <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
+            <motion.div
+              className="bg-white w-[95%] max-w-6xl overflow-hidden locationpopupmain"
+              layout
+              transition={{ layout: { duration: 0.3, ease: "easeInOut" } }}
+            >
+              <div className="grid grid-cols-12 popupneigbhbourh">
+                {/* LEFT */}
+                <div className="col-span-4 bg-purple-600 text-white p-6 leftsidepopup">
+                  <h2 className="text-2xl font-bold mb-6 locationname">
+                    IN <br /> {location?.locality}
+                  </h2>
+
+                  <div className="space-y-3 leftsidescrolll">
+                    {categories.map((cat) => (
+                      <div
+                        key={cat}
+                        onClick={() => setActiveCategory(cat)}
+                        className={`pointerdiv cursor-pointer transition ${
+                          activeCat === cat
+                            ? "buttonactivated bg-white text-purple-600"
+                            : "buttonnonactivated"
+                        }`}
+                      >
+                        {cat}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
 
-              {/* RIGHT */}
-              <div className="col-span-8 p-6 relative rightsidepopup">
-                <button
-                  onClick={() => setOpen(false)}
-                  className="absolute top-4 right-4 text-xl popupcloselocation"
-                >
-                  ✕
-                </button>
+                {/* RIGHT */}
+                <div className="col-span-8 p-6 relative rightsidepopup">
+                  <button
+                    onClick={() => setOpen(false)}
+                    className="absolute top-4 right-4 text-xl popupcloselocation"
+                  >
+                    ✕
+                  </button>
 
-                <div className="popuprightsidecontent">
-                  {Object.values(subCategoriesByCategory?.[activeCat] || {})
-                    .length === 0 ? (
-                    <div className="text-gray-500 text-center mt-10">
-                      We couldn’t find anything here. Try exploring other
-                      categories.
-                    </div>
-                  ) : (
-                    Object.values(subCategoriesByCategory?.[activeCat])
-                      .sort((a, b) => a.title.localeCompare(b.title))
-                      .map((sub) => (
-                        <div
-                          key={sub.id}
-                          onClick={() => {
-                            navigate(
-                              `/neighbourhood/${locationId}/${activeCat
-                                .toLowerCase()
-                                .replace(/\s+/g, "-")}/${sub.slug}`,
-                            );
-                            setOpen(false);
-                          }}
-                          className="border butoonsearchbutton cursor-pointer hover:bg-gray-100 transition"
-                        >
-                          <div className="iconsimagelocation">
-                            <img
-                              src="https://dev.opendesignsin.com/svg-icon.svg"
-                              alt=""
-                            />
-                            {sub.title}
+                  <div className="popuprightsidecontent">
+                    {Object.values(subCategoriesByCategory?.[activeCat] || {})
+                      .length === 0 ? (
+                      <div className="text-gray-500 text-center mt-10">
+                        We couldn’t find anything here. Try exploring other
+                        categories.
+                      </div>
+                    ) : (
+                      Object.values(subCategoriesByCategory?.[activeCat])
+                        .sort((a, b) => a.title.localeCompare(b.title))
+                        .map((sub) => (
+                          <div
+                            key={sub.id}
+                            onClick={() => {
+                              navigate(
+                                `/neighbourhood/${locationId}/${activeCat
+                                  .toLowerCase()
+                                  .replace(/\s+/g, "-")}/${sub.slug}`,
+                              );
+                              setOpen(false);
+                            }}
+                            className="border butoonsearchbutton cursor-pointer hover:bg-gray-100 transition"
+                          >
+                            <div className="iconsimagelocation">
+                              <img
+                                src="https://dev.opendesignsin.com/svg-icon.svg"
+                                alt=""
+                              />
+                              {sub.title}
+                            </div>
                           </div>
-                        </div>
-                      ))
-                  )}
+                        ))
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
-      )}
+        )}
+      </AnimatePresence>
 
       {openSearchModal && (
         <div className="fixed inset-0 z-[9999] bg-black/60 backdrop-blur-sm flex items-center justify-center searchpopupdivmain">
@@ -397,8 +406,8 @@ export default function NeighbourhoodSearchBar({
                       <img
                         src={
                           item?.FeaturedImage?.url
-                            ? `https://dev-cms.superchennai.com${item.FeaturedImage.url}`
-                            : "/images/placeholder.jpg"
+                            ? `${API_BASE_URL_API_TEST_DEV}/${item.FeaturedImage.url}`
+                            : "/images/locationdefult.png"
                         }
                         alt={item.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition "
@@ -411,7 +420,9 @@ export default function NeighbourhoodSearchBar({
                         {item.name}
                       </h3>
 
-                      <p className="text-sm  mt-1 locationdescription">{item.category?.title}</p>
+                      <p className="text-sm  mt-1 locationdescription">
+                        {item.category?.title}
+                      </p>
 
                       {/* OPTIONAL SHORT DESC */}
                       {item?.locations?.locality && (
@@ -421,14 +432,21 @@ export default function NeighbourhoodSearchBar({
                             src="/images/location-map-1.svg"
                           />
 
-                          <span className="locationamee"> {item.locations.locality}</span>
+                          <span className="locationamee">
+                            {" "}
+                            {item.locations.locality}
+                          </span>
                         </div>
                       )}
                     </div>
 
                     {/* RIGHT ICON */}
                     <div className="text-gray-400 group-hover:text-purple-600 transition">
-                      <img className="imagepopupnws" src="/images/location-arrow.svg" alt="" />
+                      <img
+                        className="imagepopupnws"
+                        src="/images/location-arrow.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
                 ))

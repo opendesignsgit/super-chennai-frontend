@@ -1087,6 +1087,148 @@ export default function TrendingDetails() {
       },
     ];
 
+    const bloomPoo = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai/cherry-blossom-season-tabebuia-rosea-chennai",
+        },
+        headline: "Chennai’s Cherry Blossom Season with Tabebuia Rosea",
+        description:
+          "Tabebuia rosea marks Chennai’s cherry blossom season each April, covering streets in soft pink blooms and transforming the city into a stunning floral landscape.",
+        image: "https://www.superchennai.com/images/trending-april-flower.jpeg",
+        author: {
+          "@type": "Person",
+          name: "Super Chennai",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "2026-04-01",
+      },
+    ];
+
+    const threedeeBus =[
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/3d-printed-bus-shelter-chennai"
+  },
+  "headline": "Chennai Unveils Its First 3D-Printed Bus Shelter at Marina Beach",
+  "description": "Chennai unveils a 3D printed bus shelter near Marina Beach with modern design, CCTV, and LED lighting, showcasing innovative and sustainable city infrastructure.",
+  "image": "https://www.superchennai.com/images/trendingChennai/chennai-unveils.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-04-01"
+}
+
+    ]
+
+    const merinaplasticrecycle =[
+
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/marina-beach-plastic-recycling"
+  },
+  "headline": "Marina Beach Introduces Smart Plastic Waste Solution",
+  "description": "Marina Beach introduces plastic bottle recycling with reverse vending machines, encouraging eco-friendly habits while helping keep the coastline cleaner.",
+  "image": "https://www.superchennai.com/images/merina-beac-celebrate-new.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-04-01"
+}
+
+    ]
+
+    const deportdandiaport =[
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/tondiarpet-electric-bus-depot"
+  },
+  "headline": "New Electric Bus Hub Opens at Tondiarpet-1 Electric Bus Depot",
+  "description": "Tondiarpet bus depot transforms into an electric bus hub with EV charging infrastructure, modern amenities, and improved public transport services in Chennai.",
+  "image": "https://media.assettype.com/dt-next%2Fimport%2Fh-upload%2F2025%2F06%2F27%2F867944-p15r-1.jpg?rect=0%2C28%2C1500%2C844",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-04-01"
+}
+
+    ]
+
+    const ambathoreEri =[
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/thangal-eri-park-ambattur"
+  },
+  "headline": "Thangal Eri Park Reopens as a Refreshed Recreational Spot in Chennai",
+  "description": "Thangal Eri Park in Ambattur now features improved pathways, scenic lake views, and boating, making it a peaceful recreational destination in Chennai.",
+  "image": "https://pbs.twimg.com/media/HEjtQlMbQAEQTic.jpg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-04-01"
+}
+
+    ]
+
     return (
       <>
         <Helmet>
@@ -1111,6 +1253,36 @@ export default function TrendingDetails() {
             rel="canonical"
             href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
           />
+
+          {slug === "thangal-eri-park-ambattur" && (
+            <script type="application/ld+json">
+              {JSON.stringify(ambathoreEri)}
+            </script>
+          )}
+
+          {slug === "tondiarpet-electric-bus-depot" && (
+            <script type="application/ld+json">
+              {JSON.stringify(deportdandiaport)}
+            </script>
+          )}
+
+          {slug === "marina-beach-plastic-recycling" && (
+            <script type="application/ld+json">
+              {JSON.stringify(merinaplasticrecycle)}
+            </script>
+          )}
+
+          {slug === "3d-printed-bus-shelter-chennai" && (
+            <script type="application/ld+json">
+              {JSON.stringify(threedeeBus)}
+            </script>
+          )}
+
+          {slug === "cherry-blossom-season-tabebuia-rosea-chennai" && (
+            <script type="application/ld+json">
+              {JSON.stringify(bloomPoo)}
+            </script>
+          )}
 
           {slug === "chennai-metro-mini-buses" && (
             <script type="application/ld+json">

@@ -176,6 +176,30 @@ export default function Login2026({ setIsLoggedIn }) {
     }
   }, []);
 
+  const jarnaEdition = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "Day to deliver-quiz",
+      description:
+        "Super Chennai Trivia brings a fun quiz on Chennai, culture, current affairs, civic awareness, and TN Elections. Test your knowledge of the city and its facts.",
+      image:
+        "https://www.superchennai.com/images/events/superchennai-triva-2025.png",
+      startDate: "2026-04-13T11:00+05:30",
+      endDate: "2026-04-23T24:00+05:30",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+      location: {
+        "@type": "VirtualLocation",
+        url: "https://www.superchennai.com/day-to-deliver-quiz",
+      },
+      performer: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+    },
+  ];
+
   return (
     <>
       <Helmet>
@@ -186,6 +210,10 @@ export default function Login2026({ setIsLoggedIn }) {
           name="description"
           content="Super Chennai Trivia brings a fun quiz on Chennai, culture, current affairs, civic awareness, and TN Elections. Test your knowledge of the city and its facts."
         />
+
+        <script type="application/ld+json">
+          {JSON.stringify(jarnaEdition)}
+        </script>
       </Helmet>
       <ToastContainer position="top-center" />
       {/* ---------- Banner ---------- */}
@@ -209,8 +237,7 @@ export default function Login2026({ setIsLoggedIn }) {
           <div className="accodoamationBannerText">
             <h1>Day to deliver-quiz</h1>
             <div className="breadCrum">
-              <Link to="/">Home</Link> -{" "}
-              <Link to="">Day to deliver-quiz</Link>
+              <Link to="/">Home</Link> - <Link to="">Day to deliver-quiz</Link>
             </div>
           </div>
         </div>
@@ -232,9 +259,9 @@ export default function Login2026({ setIsLoggedIn }) {
               </p> */}
 
               <h2 className="chennaiInvestmentsHeading leading-tight">
-               Day to deliver-Quiz
+                Day to deliver-Quiz
               </h2>
-{/* 
+              {/* 
               <p className="text-gray-700 mb-6 text-base sm:text-sm leading-relaxed font-bold themelink-color">
                 PLAY, LEARN AND WIN!
               </p> */}

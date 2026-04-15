@@ -7575,25 +7575,24 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
-
   {
-  "id": 102339,
-  "name": "Chennai’s Cherry Blossom Season with Tabebuia Rosea",
-  "slug": "cherry-blossom-season-tabebuia-rosea-chennai",
-  "para": "Chennai’s Hidden Sakura Season",
-  "TrendingCalendarMonth": "April 2026",
-  "TrendingCalendarTime": "Seasonal Bloom",
-  "TrendingCalendarCategory": "Nature | Seasonal | Trending",
-  "image": "/images/trending-april-flower.jpeg",
-  "Homeimage": "/images/trending-april-flower.jpeg",
-  "link": "/trending-chennai/cherry-blossom-season-tabebuia-rosea",
-  "duration": "Short Seasonal Bloom",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Nature | Floral | Seasonal Experience",
-  "venue": "Across Chennai",
+    id: 102339,
+    name: "Chennai’s Cherry Blossom Season with Tabebuia Rosea",
+    slug: "cherry-blossom-season-tabebuia-rosea-chennai",
+    para: "Chennai’s Hidden Sakura Season",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Seasonal Bloom",
+    TrendingCalendarCategory: "Nature | Seasonal | Trending",
+    image: "/images/trending-april-flower.jpeg",
+    Homeimage: "/images/trending-april-flower.jpeg",
+    link: "/trending-chennai/cherry-blossom-season-tabebuia-rosea",
+    duration: "Short Seasonal Bloom",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Nature | Floral | Seasonal Experience",
+    venue: "Across Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 Chennai is blooming in shades of pink! 🌸✨ The city’s very own “cherry blossom season” is here, thanks to the stunning <b>Tabebuia rosea</b> trees.
 </p>
@@ -7630,34 +7629,34 @@ Step out and enjoy Chennai’s own version of spring magic before the petals fad
 </p>
 `,
 
-  "TrendingLink": "",
-  "YoutubeLink": "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  "meta": {
-    "title": "Cherry Blossom Season | Tabebuia Rosea | Super Chennai",
-    "desc": "Tabebuia rosea marks Chennai’s cherry blossom season each April, covering streets in soft pink blooms and transforming the city into a stunning floral landscape.",
-    "url": "https://www.superchennai.com/trending-chennai/cherry-blossom-season-tabebuia-rosea"
-  }
-},
+    meta: {
+      title: "Cherry Blossom Season | Tabebuia Rosea | Super Chennai",
+      desc: "Tabebuia rosea marks Chennai’s cherry blossom season each April, covering streets in soft pink blooms and transforming the city into a stunning floral landscape.",
+      url: "https://www.superchennai.com/trending-chennai/cherry-blossom-season-tabebuia-rosea",
+    },
+  },
 
   {
-  "id": 102338,
-  "name": "Chennai Unveils Its First 3D-Printed Bus Shelter at Marina Beach",
-  "slug": "3d-printed-bus-shelter-chennai",
-  "para": "Chennai’s First 3D-Printed Bus Stop",
-  "TrendingCalendarMonth": "April 2026",
-  "TrendingCalendarTime": "Recently Introduced",
-  "TrendingCalendarCategory": "Infrastructure | Innovation | Smart City",
-  "image": "/images/trendingChennai/chennai-unveils.jpeg",
-  "Homeimage": "/images/trendingChennai/chennai-unveils.jpeg",
-  "link": "/trending-chennai/3d-printed-bus-shelter-chennai-marina",
-  "duration": "Ongoing Deployment",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Smart Infrastructure | Urban Innovation | Public Transport",
-  "venue": "Marina Beach, Chennai",
+    id: 102338,
+    name: "Chennai Unveils Its First 3D-Printed Bus Shelter at Marina Beach",
+    slug: "3d-printed-bus-shelter-chennai",
+    para: "Chennai’s First 3D-Printed Bus Stop",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Recently Introduced",
+    TrendingCalendarCategory: "Infrastructure | Innovation | Smart City",
+    image: "/images/trendingChennai/chennai-unveils.jpeg",
+    Homeimage: "/images/trendingChennai/chennai-unveils.jpeg",
+    link: "/trending-chennai/3d-printed-bus-shelter-chennai-marina",
+    duration: "Ongoing Deployment",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Smart Infrastructure | Urban Innovation | Public Transport",
+    venue: "Marina Beach, Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 Chennai is stepping into the future of urban design! 🏗️🤖 The <b>Greater Chennai Corporation</b> has introduced the state’s first 3D-printed bus shelter near Marina Beach.
 </p>
@@ -7687,33 +7686,34 @@ The corporation plans to install around 90 more of these innovative shelters acr
 </p>
 `,
 
-  "TrendingLink": "",
-  "YoutubeLink": "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  "meta": {
-    "title": "3D Printed Bus Shelter | Chennai’s New Smart Stop at Marina",
-    "desc": "Chennai unveils a 3D printed bus shelter near Marina Beach with modern design, CCTV, and LED lighting, showcasing innovative and sustainable city infrastructure.",
-    "url": "https://www.superchennai.com/trending-chennai/3d-printed-bus-shelter-chennai-marina"
-  }
-},
+    meta: {
+      title: "3D Printed Bus Shelter | Chennai’s New Smart Stop at Marina",
+      desc: "Chennai unveils a 3D printed bus shelter near Marina Beach with modern design, CCTV, and LED lighting, showcasing innovative and sustainable city infrastructure.",
+      url: "https://www.superchennai.com/trending-chennai/3d-printed-bus-shelter-chennai-marina",
+    },
+  },
   {
-  "id": 102337,
-  "name": "Marina Beach Introduces Smart Plastic Waste Solution",
-  "slug": "marina-beach-plastic-recycling",
-  "para": "Eco-Friendly Initiative at Marina Beach",
-  "TrendingCalendarMonth": "April 2026",
-  "TrendingCalendarTime": "Ongoing",
-  "TrendingCalendarCategory": "Environment | Sustainability | Public Initiative",
-  "image": "/images/merina-beac-celebrate-new.jpeg",
-  "Homeimage": "/images/merina-beac-celebrate-new.jpeg",
-  "link": "/trending-chennai/plastic-bottle-recycling-chennai-marina-beach",
-  "duration": "Ongoing Initiative",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Recycling | Sustainability | Public Awareness",
-  "venue": "Marina Beach, Chennai",
+    id: 102337,
+    name: "Marina Beach Introduces Smart Plastic Waste Solution",
+    slug: "marina-beach-plastic-recycling",
+    para: "Eco-Friendly Initiative at Marina Beach",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Ongoing",
+    TrendingCalendarCategory:
+      "Environment | Sustainability | Public Initiative",
+    image: "/images/merina-beac-celebrate-new.jpeg",
+    Homeimage: "/images/merina-beac-celebrate-new.jpeg",
+    link: "/trending-chennai/plastic-bottle-recycling-chennai-marina-beach",
+    duration: "Ongoing Initiative",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Recycling | Sustainability | Public Awareness",
+    venue: "Marina Beach, Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 At <b>Marina Beach</b>, a new plastic waste management initiative is transforming how pollution is handled along the coastline ♻️🌊
 </p>
@@ -7739,33 +7739,35 @@ A simple yet powerful step toward sustainable living in Chennai, proving that sm
 </p>
 `,
 
-  "TrendingLink": "",
-  "YoutubeLink": "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  "meta": {
-    "title": "Plastic Bottle Recycling in Chennai | Marina Beach Eco Drive",
-    "desc": "Marina Beach introduces plastic bottle recycling with reverse vending machines, encouraging eco-friendly habits while helping keep the coastline cleaner.",
-    "url": "https://www.superchennai.com/trending-chennai/plastic-bottle-recycling-chennai-marina-beach"
-  }
-},
-{
-  "id": 102336,
-  "name": "New Electric Bus Hub Opens at Tondiarpet-1 Electric Bus Depot",
-  "slug": "tondiarpet-electric-bus-depot",
-  "para": "Chennai’s New Electric Bus Hub",
-  "TrendingCalendarMonth": "April 2026",
-  "TrendingCalendarTime": "Now Open",
-  "TrendingCalendarCategory": "Infrastructure | Transport | City Development",
-  "image": "https://media.assettype.com/dt-next%2Fimport%2Fh-upload%2F2025%2F06%2F27%2F867944-p15r-1.jpg?rect=0%2C28%2C1500%2C844",
-  "Homeimage": "https://media.assettype.com/dt-next%2Fimport%2Fh-upload%2F2025%2F06%2F27%2F867944-p15r-1.jpg?rect=0%2C28%2C1500%2C844",
-  "link": "/trending-chennai/tondiarpet-bus-depot-electric-bus-hub",
-  "duration": "Operational",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Transport | Electric Vehicles | Public Infrastructure",
-  "venue": "Tondiarpet, Chennai",
+    meta: {
+      title: "Plastic Bottle Recycling in Chennai | Marina Beach Eco Drive",
+      desc: "Marina Beach introduces plastic bottle recycling with reverse vending machines, encouraging eco-friendly habits while helping keep the coastline cleaner.",
+      url: "https://www.superchennai.com/trending-chennai/plastic-bottle-recycling-chennai-marina-beach",
+    },
+  },
+  {
+    id: 102336,
+    name: "New Electric Bus Hub Opens at Tondiarpet-1 Electric Bus Depot",
+    slug: "tondiarpet-electric-bus-depot",
+    para: "Chennai’s New Electric Bus Hub",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Now Open",
+    TrendingCalendarCategory: "Infrastructure | Transport | City Development",
+    image:
+      "https://media.assettype.com/dt-next%2Fimport%2Fh-upload%2F2025%2F06%2F27%2F867944-p15r-1.jpg?rect=0%2C28%2C1500%2C844",
+    Homeimage:
+      "https://media.assettype.com/dt-next%2Fimport%2Fh-upload%2F2025%2F06%2F27%2F867944-p15r-1.jpg?rect=0%2C28%2C1500%2C844",
+    link: "/trending-chennai/tondiarpet-bus-depot-electric-bus-hub",
+    duration: "Operational",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Transport | Electric Vehicles | Public Infrastructure",
+    venue: "Tondiarpet, Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 Welcome to the future of MTC transport! ⚡🚌 The newly upgraded <b>Tondiarpet-1 Electric Bus Depot</b> now stands as a world-class public transport hub in Chennai.
 </p>
@@ -7795,33 +7797,34 @@ This upgrade marks a major step toward sustainable and modern public transport i
 </p>
 `,
 
-  "TrendingLink": "https://www.google.com/maps/place/MTC+DEPOT+TONDIARPET+1/data=!4m2!3m1!1s0x0:0xcc784af39669dc93",
-  "YoutubeLink": "",
+    TrendingLink:
+      "https://www.google.com/maps/place/MTC+DEPOT+TONDIARPET+1/data=!4m2!3m1!1s0x0:0xcc784af39669dc93",
+    YoutubeLink: "",
 
-  "meta": {
-    "title": "Tondiarpet Bus Depot | Chennai’s New Electric Bus Hub",
-    "desc": "Tondiarpet bus depot transforms into an electric bus hub with EV charging infrastructure, modern amenities, and improved public transport services in Chennai.",
-    "url": "https://www.superchennai.com/trending-chennai/tondiarpet-bus-depot-electric-bus-hub"
-  }
-},
+    meta: {
+      title: "Tondiarpet Bus Depot | Chennai’s New Electric Bus Hub",
+      desc: "Tondiarpet bus depot transforms into an electric bus hub with EV charging infrastructure, modern amenities, and improved public transport services in Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/tondiarpet-bus-depot-electric-bus-hub",
+    },
+  },
   {
-  "id": 102335,
-  "name": "Thangal Eri Park Reopens as a Refreshed Recreational Spot in Chennai",
-  "slug": "thangal-eri-park-ambattur",
-  "para": "Refurbished Park in Ambattur",
-  "TrendingCalendarMonth": "April 2026",
-  "TrendingCalendarTime": "Now Open",
-  "TrendingCalendarCategory": "Parks | Recreation | Family Spots",
-  "image": "https://pbs.twimg.com/media/HEjtQlMbQAEQTic.jpg",
-  "Homeimage": "https://pbs.twimg.com/media/HEjtQlMbQAEQTic.jpg",
-  "link": "/trending-chennai/thangal-eri-park-repones-ambattur-chennai-",
-  "duration": "Open Daily",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Parks | Walking | Boating | Outdoor Recreation",
-  "venue": "Ambattur, Chennai",
+    id: 102335,
+    name: "Thangal Eri Park Reopens as a Refreshed Recreational Spot in Chennai",
+    slug: "thangal-eri-park-ambattur",
+    para: "Refurbished Park in Ambattur",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Now Open",
+    TrendingCalendarCategory: "Parks | Recreation | Family Spots",
+    image: "https://pbs.twimg.com/media/HEjtQlMbQAEQTic.jpg",
+    Homeimage: "https://pbs.twimg.com/media/HEjtQlMbQAEQTic.jpg",
+    link: "/trending-chennai/thangal-eri-park-repones-ambattur-chennai-",
+    duration: "Open Daily",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Parks | Walking | Boating | Outdoor Recreation",
+    venue: "Ambattur, Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 <b>Thangal Eri Park</b> in Ambattur has been recently refurbished and transformed into a refreshing recreational destination 🌿✨
 </p>
@@ -7843,33 +7846,34 @@ This redevelopment adds to Chennai’s growing list of eco-friendly parks and at
 </p>
 `,
 
-  "TrendingLink": "https://www.google.com/maps/place/Thangal+Park/@13.1245958,80.1594998,17z",
-  "YoutubeLink": "",
+    TrendingLink:
+      "https://www.google.com/maps/place/Thangal+Park/@13.1245958,80.1594998,17z",
+    YoutubeLink: "",
 
-  "meta": {
-    "title": "Thangal Eri Park Reopens | Refurbished Park in Ambattur Chennai",
-    "desc": "Thangal Eri Park in Ambattur now features improved pathways, scenic lake views, and boating, making it a peaceful recreational destination in Chennai.",
-    "url": "https://www.superchennai.com/trending-chennai/thangal-eri-park-repones-ambattur-chennai-"
-  }
-},
+    meta: {
+      title: "Thangal Eri Park Reopens | Refurbished Park in Ambattur Chennai",
+      desc: "Thangal Eri Park in Ambattur now features improved pathways, scenic lake views, and boating, making it a peaceful recreational destination in Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/thangal-eri-park-repones-ambattur-chennai-",
+    },
+  },
   {
-  "id": 102334,
-  "name": "Ayapakkam Park: Chennai’s Calm Escape",
-  "slug": "ayapakkam-park",
-  "para": "Peaceful Park in West Chennai",
-  "TrendingCalendarMonth": "April 2026",
-  "TrendingCalendarTime": "Now Open",
-  "TrendingCalendarCategory": "Parks | Recreation | Family Spots",
-    "image": "/images/trendingChennai/BIG-IMG-2-PARK.jpg",
-  "Homeimage": "/images/trendingChennai/BIG-IMG-2-PARK.jpg",
-  "link": "/trending-chennai/ayapakkam-park",
-  "duration": "Open Daily",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Parks | Walking | Outdoor Recreation",
-  "venue": "Ayapakkam, Chennai",
+    id: 102334,
+    name: "Ayapakkam Park: Chennai’s Calm Escape",
+    slug: "ayapakkam-park",
+    para: "Peaceful Park in West Chennai",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Now Open",
+    TrendingCalendarCategory: "Parks | Recreation | Family Spots",
+    image: "/images/trendingChennai/BIG-IMG-2-PARK.jpg",
+    Homeimage: "/images/trendingChennai/BIG-IMG-2-PARK.jpg",
+    link: "/trending-chennai/ayapakkam-park",
+    duration: "Open Daily",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Parks | Walking | Outdoor Recreation",
+    venue: "Ayapakkam, Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 Many people in Chennai are still unaware of this beautiful park 🌳✨
 </p>
@@ -7891,34 +7895,34 @@ With senior-friendly seating and a quiet atmosphere, it offers the perfect escap
 </p>
 `,
 
-  "TrendingLink": "",
-  "YoutubeLink": "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  "meta": {
-    "title": "Ayapakkam Park | Best Walking Park in West Chennai",
-    "desc": "Ayapakkam Park in Chennai offers walking tracks, play areas, sports courts, and quiet spots for yoga and relaxation, making it a refreshing escape from city life.",
-    "url": "https://www.superchennai.com/trending-chennai/ayapakkam-park"
-  }
-},
+    meta: {
+      title: "Ayapakkam Park | Best Walking Park in West Chennai",
+      desc: "Ayapakkam Park in Chennai offers walking tracks, play areas, sports courts, and quiet spots for yoga and relaxation, making it a refreshing escape from city life.",
+      url: "https://www.superchennai.com/trending-chennai/ayapakkam-park",
+    },
+  },
 
   {
-  "id": 102333,
-  "name": "Chennai Metro Introduces Conductor-Free Mini Buses",
-  "slug": "chennai-metro-mini-buses",
-  "para": "New Last-Mile Connectivity in Chennai",
-  "TrendingCalendarMonth": "April 2026",
-  "TrendingCalendarTime": "Announced",
-  "TrendingCalendarCategory": "Transport | City Updates",
-    "image": "/images/trendingChennai/aayapakkamMINI.jpg",
-  "Homeimage": "/images/trendingChennai/aayapakkamMINI.jpg",
-  "link": "/trending-chennai/chennai-metro-mini-buses",
-  "duration": "N/A",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Public Transport | City Infrastructure",
-  "venue": "Chennai",
+    id: 102333,
+    name: "Chennai Metro Introduces Conductor-Free Mini Buses",
+    slug: "chennai-metro-mini-buses",
+    para: "New Last-Mile Connectivity in Chennai",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Announced",
+    TrendingCalendarCategory: "Transport | City Updates",
+    image: "/images/trendingChennai/aayapakkamMINI.jpg",
+    Homeimage: "/images/trendingChennai/aayapakkamMINI.jpg",
+    link: "/trending-chennai/chennai-metro-mini-buses",
+    duration: "N/A",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Public Transport | City Infrastructure",
+    venue: "Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 Chennai is set to improve its last-mile connectivity with a new initiative! 🚌
 </p>
@@ -7940,34 +7944,34 @@ Plan your travel and look forward to improved connectivity across the city.
 </p>
 `,
 
-  "TrendingLink": "",
-  "YoutubeLink": "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  "meta": {
-    "title": "Chennai Metro Mini Buses | New Last-Mile Connectivity Plan",
-    "desc": "Mini buses introduced by Chennai Metro Rail Limited will connect nearby areas with short 6–8 km routes, offering conductor-free and cashless travel for commuters.",
-    "url": "https://www.superchennai.com/trending-chennai/chennai-metro-mini-buses"
-  }
-},
+    meta: {
+      title: "Chennai Metro Mini Buses | New Last-Mile Connectivity Plan",
+      desc: "Mini buses introduced by Chennai Metro Rail Limited will connect nearby areas with short 6–8 km routes, offering conductor-free and cashless travel for commuters.",
+      url: "https://www.superchennai.com/trending-chennai/chennai-metro-mini-buses",
+    },
+  },
 
-{
-  "id": 102332,
-  "name": "Perambur Park Chennai | New Play Areas & Sports Zones",
-  "slug": "perambur-park-chennai",
-  "para": "Upgraded Park in North Chennai",
-  "TrendingCalendarMonth": "February 2026",
-  "TrendingCalendarTime": "Now Open",
-  "TrendingCalendarCategory": "Parks | Recreation | Family Spots",
-  "image": "/images/trendingChennai/perambur-park-trending.jpeg",
-  "Homeimage": "/images/trendingChennai/perambur-park-trending.jpeg",
-  "link": "/trending-chennai/perambur-park-chennai",
-  "duration": "Open Daily",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Parks | Family Activities | Outdoor Recreation",
-  "venue": "Perambur, Chennai",
+  {
+    id: 102332,
+    name: "Perambur Park Chennai | New Play Areas & Sports Zones",
+    slug: "perambur-park-chennai",
+    para: "Upgraded Park in North Chennai",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Now Open",
+    TrendingCalendarCategory: "Parks | Recreation | Family Spots",
+    image: "/images/trendingChennai/perambur-park-trending.jpeg",
+    Homeimage: "/images/trendingChennai/perambur-park-trending.jpeg",
+    link: "/trending-chennai/perambur-park-chennai",
+    duration: "Open Daily",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Parks | Family Activities | Outdoor Recreation",
+    venue: "Perambur, Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 A popular park in North Chennai has undergone a major transformation! 😍
 </p>
@@ -7994,34 +7998,34 @@ Plan your visit this weekend and experience the upgraded space.
 </p>
 `,
 
-  "TrendingLink": "",
-  "YoutubeLink": "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  "meta": {
-    "title": "Perambur Park Chennai | New Play Areas & Sports Zones",
-    "desc": "Perambur park now features modern play zones, sports courts, and inclusive spaces, making it a great Chennai destination for families, kids, and weekend outings.",
-    "url": "https://www.superchennai.com/trending-chennai/perambur-park-chennai"
-  }
-},
+    meta: {
+      title: "Perambur Park Chennai | New Play Areas & Sports Zones",
+      desc: "Perambur park now features modern play zones, sports courts, and inclusive spaces, making it a great Chennai destination for families, kids, and weekend outings.",
+      url: "https://www.superchennai.com/trending-chennai/perambur-park-chennai",
+    },
+  },
 
   {
-  "id": 102330,
-  "name": "Velachery–St. Thomas Mount MRTS Extension Now Open",
-  "slug": "velachery-to-st-thomas-mount-train-chennai-mrts-update",
-  "para": "New MRTS Connectivity in Chennai",
-  "TrendingCalendarMonth": "February 2026",
-  "TrendingCalendarTime": "Route Opened",
-  "TrendingCalendarCategory": "Transport | Infrastructure | City Connectivity",
-  "image": "/images/trendingChennai/valacheri-train-trending.png",
-  "Homeimage": "/images/trendingChennai/valacheri-train-trending.png",
-  "link": "/trending-chennai/velachery-to-st-thomas-mount-train-chennai-mrts-update",
-  "duration": "Daily Train Services",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Public Transport | City Infrastructure | Rail Connectivity",
-  "venue": "Chennai",
+    id: 102330,
+    name: "Velachery–St. Thomas Mount MRTS Extension Now Open",
+    slug: "velachery-to-st-thomas-mount-train-chennai-mrts-update",
+    para: "New MRTS Connectivity in Chennai",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Route Opened",
+    TrendingCalendarCategory: "Transport | Infrastructure | City Connectivity",
+    image: "/images/trendingChennai/valacheri-train-trending.png",
+    Homeimage: "/images/trendingChennai/valacheri-train-trending.png",
+    link: "/trending-chennai/velachery-to-st-thomas-mount-train-chennai-mrts-update",
+    duration: "Daily Train Services",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Public Transport | City Infrastructure | Rail Connectivity",
+    venue: "Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 The newly operational stretch improves Chennai’s transport network by connecting the <b>Velachery MRTS terminal</b> with <b>St. Thomas Mount</b>, an important transit point. This connection allows passengers to easily switch between MRTS services, Chennai Metro, and suburban trains, making daily commuting smoother and more efficient.
 </p>
@@ -8042,34 +8046,34 @@ Before opening the route to the public, the line underwent safety inspections an
 The new extension strengthens Chennai’s urban mobility by integrating multiple rail networks and making public transport more convenient for residents across the southern parts of the city.
 </p>
 `,
-  "TrendingLink": "",
+    TrendingLink: "",
 
-  "YoutubeLink": "",
-  "meta": {
-    "title": "Chennai MRTS Update | Velachery to St Thomas Mount Train Opens",
-    "desc": "Velachery to St Thomas Mount train services begin on the Chennai MRTS extension, improving South Chennai travel with metro links, now in Trending Chennai.",
-    "url": "https://www.superchennai.com/trending-chennai/velachery-to-st-thomas-mount-train-chennai-mrts-update"
-  }
-},
+    YoutubeLink: "",
+    meta: {
+      title: "Chennai MRTS Update | Velachery to St Thomas Mount Train Opens",
+      desc: "Velachery to St Thomas Mount train services begin on the Chennai MRTS extension, improving South Chennai travel with metro links, now in Trending Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/velachery-to-st-thomas-mount-train-chennai-mrts-update",
+    },
+  },
 
   {
-  "id": 102331,
-  "name": "Marina Beach Gets New Statue Celebrating Education",
-  "slug": "chennai-marina-beach-statue-education-monument",
-  "para": "New Landmark at Marina Beach",
-  "TrendingCalendarMonth": "2026",
-  "TrendingCalendarTime": "Monument Unveiled",
-  "TrendingCalendarCategory": "City Landmark | Culture | Public Space",
-  "image": "/images/trendingChennai/merina-beac-celebrate.jpeg",
-  "Homeimage": "/images/trendingChennai/merina-beac-celebrate.jpeg",
-  "link": "/trending-chennai/chennai-marina-beach-statue-education-monument",
-  "duration": "Open All Day",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "City Landmark | Culture | Tourism",
-  "venue": "Marina Beach, Chennai",
+    id: 102331,
+    name: "Marina Beach Gets New Statue Celebrating Education",
+    slug: "chennai-marina-beach-statue-education-monument",
+    para: "New Landmark at Marina Beach",
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "Monument Unveiled",
+    TrendingCalendarCategory: "City Landmark | Culture | Public Space",
+    image: "/images/trendingChennai/merina-beac-celebrate.jpeg",
+    Homeimage: "/images/trendingChennai/merina-beac-celebrate.jpeg",
+    link: "/trending-chennai/chennai-marina-beach-statue-education-monument",
+    duration: "Open All Day",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "City Landmark | Culture | Tourism",
+    venue: "Marina Beach, Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 <b>Marina Beach</b> has a striking new addition. The newly unveiled <b>Statue of Education</b> now stands proudly along Chennai’s iconic shoreline.
 </p>
@@ -8086,33 +8090,33 @@ The statue celebrates how education can uplift people from all walks of life—e
 Placed along one of the city’s most visited landmarks, the monument is expected to inspire visitors while adding another meaningful cultural symbol to Chennai’s historic Marina Beach promenade.
 </p>
 `,
-  "TrendingLink": "",
-  "YoutubeLink": "",
-  "meta": {
-    "title": "Chennai Marina Beach Statue | New Symbol of Education",
-    "desc": "A new Chennai Marina Beach statue unveiled by M. K. Stalin celebrates education and inspires students and visitors along the shoreline, now in Trending Chennai.",
-    "url": "https://www.superchennai.com/trending-chennai/chennai-marina-beach-statue-education-monument"
-  }
-},
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "Chennai Marina Beach Statue | New Symbol of Education",
+      desc: "A new Chennai Marina Beach statue unveiled by M. K. Stalin celebrates education and inspires students and visitors along the shoreline, now in Trending Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/chennai-marina-beach-statue-education-monument",
+    },
+  },
 
   {
-  "id": 102330,
-  "name": "Chennai Ula 2.0 Hop-On Hop-Off A/C Tourist Bus Service Launched",
-  "slug": "chennai-ula-2-hop-on-hop-off-bus",
-  "para": "New Tourist Bus Experience in Chennai",
-  "TrendingCalendarMonth": "February 2026",
-  "TrendingCalendarTime": "Service Launched",
-  "TrendingCalendarCategory": "Tourism | Transport | City Experience",
-  "image": "/images/trendingChennai/ulaa-bus.jpeg",
-  "Homeimage": "/images/trendingChennai/ulaa-bus.jpeg",
-  "link": "/trending-chennai/chennai-ula-2-hop-on-hop-off-bus",
-  "duration": "Daily 6 AM – 10 PM",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Tourism | City Sightseeing | Public Transport",
-  "venue": "Chennai",
+    id: 102330,
+    name: "Chennai Ula 2.0 Hop-On Hop-Off A/C Tourist Bus Service Launched",
+    slug: "chennai-ula-2-hop-on-hop-off-bus",
+    para: "New Tourist Bus Experience in Chennai",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Service Launched",
+    TrendingCalendarCategory: "Tourism | Transport | City Experience",
+    image: "/images/trendingChennai/ulaa-bus.jpeg",
+    Homeimage: "/images/trendingChennai/ulaa-bus.jpeg",
+    link: "/trending-chennai/chennai-ula-2-hop-on-hop-off-bus",
+    duration: "Daily 6 AM – 10 PM",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Tourism | City Sightseeing | Public Transport",
+    venue: "Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 Chennai introduced its upgraded <b>hop-on hop-off tourist bus service, Chennai Ula 2.0</b>, on <b>February 27, 2026</b>. The service is designed to help tourists and residents explore the city’s iconic attractions through a convenient and affordable sightseeing experience.
 </p>
@@ -8150,35 +8154,36 @@ The air-conditioned buses travel along a <b>46-km route</b> connecting several p
 Chennai Ula 2.0 aims to provide a <b>comfortable, flexible, and budget-friendly sightseeing option</b>, helping visitors discover the city’s cultural landmarks, beaches, and historic attractions with ease.
 </p>
 `,
-  TrendingLink: "https://www.chennaione.in/",
+    TrendingLink: "https://www.chennaione.in/",
 
-
-  "YoutubeLink": "",
-  "meta": {
-    "title": " Chennai Tourist Bus: Chennai Ula 2.0 A/C Hop-On Hop-Off City Tour",
-    "desc": "Chennai tourist bus Chennai Ula 2.0 is part of Trending Chennai, offering AC hop-on hop-off rides across Marina, Guindy and Besant Nagar with 23 stops.",
-    "url": "https://www.superchennai.com/trending-chennai/chennai-ula-2-hop-on-hop-off-bus"
-  }
-},
+    YoutubeLink: "",
+    meta: {
+      title:
+        " Chennai Tourist Bus: Chennai Ula 2.0 A/C Hop-On Hop-Off City Tour",
+      desc: "Chennai tourist bus Chennai Ula 2.0 is part of Trending Chennai, offering AC hop-on hop-off rides across Marina, Guindy and Besant Nagar with 23 stops.",
+      url: "https://www.superchennai.com/trending-chennai/chennai-ula-2-hop-on-hop-off-bus",
+    },
+  },
 
   {
-  "id": 102329,
-  "name": "Marina Beach Blue Flag Phase 2 Upgrade Opens in Chennai",
-  "slug": "marina-beach-blue-flag-phase-2",
-  "para": "Marina Beach Infrastructure Upgrade",
-  "TrendingCalendarMonth": "February 2026",
-  "TrendingCalendarTime": "Phase 2 Opened",
-  "TrendingCalendarCategory": "Tourism | Public Infrastructure | Sustainability",
-  "image": "/images/trendingChennai/Marina Blue Flag.jpeg",
-  "Homeimage": "/images/trendingChennai/Marina Blue Flag.jpeg",
-  "link": "/trending-chennai/marina-beach-blue-flag-phase-2",
-  "duration": "Open for Visitors",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Tourism | Beach Development | City Infrastructure",
-  "venue": "Chennai",
+    id: 102329,
+    name: "Marina Beach Blue Flag Phase 2 Upgrade Opens in Chennai",
+    slug: "marina-beach-blue-flag-phase-2",
+    para: "Marina Beach Infrastructure Upgrade",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Phase 2 Opened",
+    TrendingCalendarCategory:
+      "Tourism | Public Infrastructure | Sustainability",
+    image: "/images/trendingChennai/Marina Blue Flag.jpeg",
+    Homeimage: "/images/trendingChennai/Marina Blue Flag.jpeg",
+    link: "/trending-chennai/marina-beach-blue-flag-phase-2",
+    duration: "Open for Visitors",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Tourism | Beach Development | City Infrastructure",
+    venue: "Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 The second phase of the <b>Blue Flag enhancement project</b> at <b>Marina Beach</b> in Chennai was opened to visitors around <b>February 22, 2026</b>. Located opposite <b>Vivekananda House</b>, the upgraded section introduces improved visitor facilities designed to meet international standards of cleanliness, safety, and sustainability.
 </p>
@@ -8206,32 +8211,33 @@ The Blue Flag initiative is part of Chennai’s broader effort to transform <b>M
 </p>
 `,
 
-  "YoutubeLink": "",
-  "meta": {
-    "title": "Marina Beach Blue Flag: Phase 2 Opens with New Facilities",
-    "desc": " Marina Beach Blue Flag Phase 2 opens opposite Vivekananda House with bamboo seating, play zones and watchtowers, now highlighted in Trending Chennai.",
-    "url": "https://www.superchennai.com/trending-chennai/marina-beach-blue-flag-phase-2"
-  }
-},
+    YoutubeLink: "",
+    meta: {
+      title: "Marina Beach Blue Flag: Phase 2 Opens with New Facilities",
+      desc: " Marina Beach Blue Flag Phase 2 opens opposite Vivekananda House with bamboo seating, play zones and watchtowers, now highlighted in Trending Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/marina-beach-blue-flag-phase-2",
+    },
+  },
 
   {
-  "id": 102328,
-  "name": "Chennai MTC Premium Gold AC Electric Buses Launched",
-  "slug": "mtc-premium-gold-ac-electric-buses",
-  "para": "Premium Electric Bus Service in Chennai",
-  "TrendingCalendarMonth": "March 2026",
-  "TrendingCalendarTime": "Bus Service Launch",
-  "TrendingCalendarCategory": "Transport | Electric Mobility | Public Infrastructure",
-  "image": "/images/trendingChennai/MTC_bus.jpeg",
-  "Homeimage": "/images/trendingChennai/MTC_bus.jpeg",
-  "link": "/trending-chennai/mtc-premium-gold-ac-electric-buses",
-  "duration": "Operational on Select Routes",
-  "ageRestriction": "Open for All",
-  "language": "N/A",
-  "genre": "Public Transport | Electric Mobility | City Infrastructure",
-  "venue": "Chennai",
+    id: 102328,
+    name: "Chennai MTC Premium Gold AC Electric Buses Launched",
+    slug: "mtc-premium-gold-ac-electric-buses",
+    para: "Premium Electric Bus Service in Chennai",
+    TrendingCalendarMonth: "March 2026",
+    TrendingCalendarTime: "Bus Service Launch",
+    TrendingCalendarCategory:
+      "Transport | Electric Mobility | Public Infrastructure",
+    image: "/images/trendingChennai/MTC_bus.jpeg",
+    Homeimage: "/images/trendingChennai/MTC_bus.jpeg",
+    link: "/trending-chennai/mtc-premium-gold-ac-electric-buses",
+    duration: "Operational on Select Routes",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Public Transport | Electric Mobility | City Infrastructure",
+    venue: "Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 Chennai’s <b>Metropolitan Transport Corporation (MTC)</b> has introduced a new fleet of <b>Premium Gold AC Electric Buses</b> to improve the comfort and efficiency of city travel. The buses were officially unveiled on <b>March 11, 2026</b> as part of the city’s initiative to modernize public transport.
 </p>
@@ -8263,35 +8269,35 @@ Unlike regular services, the Premium Gold buses operate as <b>limited-stop route
 The launch of these electric buses highlights Chennai’s commitment to <b>eco-friendly transport, reduced emissions, and improved commuter experience</b>, making city travel more sustainable and comfortable.
 </p>
 `,
-  TrendingLink: "https://www.chennaione.in/",
+    TrendingLink: "https://www.chennaione.in/",
 
-
-  "YoutubeLink": "",
-  "meta": {
-    "title": "Premium Bus by MTC: Chennai Rolls Out Gold Electric AC Service",
-    "desc": "Trending Chennai update: MTC bus rolls out premium bus service with gold AC electric buses, WiFi, comfortable seating and limited stops for faster city travel.",
-    "url": "https://www.superchennai.com/trending-chennai/mtc-premium-gold-ac-electric-buses"
-  }
-},
+    YoutubeLink: "",
+    meta: {
+      title: "Premium Bus by MTC: Chennai Rolls Out Gold Electric AC Service",
+      desc: "Trending Chennai update: MTC bus rolls out premium bus service with gold AC electric buses, WiFi, comfortable seating and limited stops for faster city travel.",
+      url: "https://www.superchennai.com/trending-chennai/mtc-premium-gold-ac-electric-buses",
+    },
+  },
 
   {
-  id: 102327,
-  name: "Chennai Electric Buses – New Low-Floor Fleet Launched",
-  slug: "chennai-electric-buses",
-  para: "Trending Chennai Transport Upgrade",
-  TrendingCalendarMonth: "March 2026",
-  TrendingCalendarTime: "Fleet Launched",
-  TrendingCalendarCategory: "Transport | Public Infrastructure | Sustainability",
-  image: "/images/trendingChennai/ac-bus-trending-chennai.jpeg",
-  Homeimage: "/images/trendingChennai/ac-bus-trending-chennai.jpeg",
-  link: "/trending-chennai/chennai-electric-buses",
-  duration: "Operational Across Chennai",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "Public Transport | Electric Mobility | Urban Development",
-  venue: "Chennai",
+    id: 102327,
+    name: "Chennai Electric Buses – New Low-Floor Fleet Launched",
+    slug: "chennai-electric-buses",
+    para: "Trending Chennai Transport Upgrade",
+    TrendingCalendarMonth: "March 2026",
+    TrendingCalendarTime: "Fleet Launched",
+    TrendingCalendarCategory:
+      "Transport | Public Infrastructure | Sustainability",
+    image: "/images/trendingChennai/ac-bus-trending-chennai.jpeg",
+    Homeimage: "/images/trendingChennai/ac-bus-trending-chennai.jpeg",
+    link: "/trending-chennai/chennai-electric-buses",
+    duration: "Operational Across Chennai",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Public Transport | Electric Mobility | Urban Development",
+    venue: "Chennai",
 
-  trendingDetails: `
+    trendingDetails: `
 <p>
 Chennai’s public transport system has received a major boost as <b>Deputy Chief Minister Udhayanidhi Stalin</b> inaugurated the renovated workshop at <b>Chennai Central</b> and officially flagged off the operations of <b>100 new low-floor AC buses and 45 low-floor electric buses</b> for the city.
 </p>
@@ -8317,33 +8323,35 @@ This initiative marks an important step toward building a <b>modern, sustainable
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/chennai-electric-buses",
-  YoutubeLink: "",
-  meta: {
-    title: "Chennai Electric Buses – New Low-Floor Fleet Launched",
-    desc: "The chennai electric buses launched with new low-floor AC buses aim to improve eco-friendly transport and commuter comfort, featured in Trending Chennai updates.",
-    url: "https://www.superchennai.com/trending-chennai/chennai-electric-buses"
-  }
-},
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/chennai-electric-buses",
+    YoutubeLink: "",
+    meta: {
+      title: "Chennai Electric Buses – New Low-Floor Fleet Launched",
+      desc: "The chennai electric buses launched with new low-floor AC buses aim to improve eco-friendly transport and commuter comfort, featured in Trending Chennai updates.",
+      url: "https://www.superchennai.com/trending-chennai/chennai-electric-buses",
+    },
+  },
 
   {
-  id: 102326,
-  name: "AC Bus Stop Chennai – First Premium Shelter at Retteri",
-  slug: "ac-bus-stop-retteri-chennai",
-  para: "Trending Chennai Transport Upgrade",
-  TrendingCalendarMonth: "March 2026",
-  TrendingCalendarTime: "Opened to Public",
-  TrendingCalendarCategory: "Transport | Infrastructure | Public Facilities",
-  image: "/images/trendingChennai/img-3-Chennai’s First AC Bus Shelter Opens at Retteri Junction-3.jpg",
-  Homeimage: "/images/trendingChennai/img-3-Chennai’s First AC Bus Shelter Opens at Retteri Junction-3.jpg",
-  link: "/trending-chennai/ac-bus-stop-retteri-chennai",
-  duration: "Operational Daily",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "Public Transport | Urban Infrastructure | Commuter Facilities",
-  venue: "Retteri Junction, Kolathur, Chennai",
+    id: 102326,
+    name: "AC Bus Stop Chennai – First Premium Shelter at Retteri",
+    slug: "ac-bus-stop-retteri-chennai",
+    para: "Trending Chennai Transport Upgrade",
+    TrendingCalendarMonth: "March 2026",
+    TrendingCalendarTime: "Opened to Public",
+    TrendingCalendarCategory: "Transport | Infrastructure | Public Facilities",
+    image:
+      "/images/trendingChennai/img-3-Chennai’s First AC Bus Shelter Opens at Retteri Junction-3.jpg",
+    Homeimage:
+      "/images/trendingChennai/img-3-Chennai’s First AC Bus Shelter Opens at Retteri Junction-3.jpg",
+    link: "/trending-chennai/ac-bus-stop-retteri-chennai",
+    duration: "Operational Daily",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Public Transport | Urban Infrastructure | Commuter Facilities",
+    venue: "Retteri Junction, Kolathur, Chennai",
 
-  trendingDetails: `
+    trendingDetails: `
 <p>
 A brand-new commuter upgrade has arrived at <b>Retteri Junction</b>. People travelling through <b>Kolathur</b> can now enjoy a much more comfortable wait with Chennai’s <b>first premium air-conditioned bus shelter</b>.
 </p>
@@ -8369,33 +8377,35 @@ More upgraded shelters are expected to open soon in <b>Royapuram, Wall Tax Road,
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/ac-bus-stop-retteri-chennai",
-  YoutubeLink: "",
-  meta: {
-    title: "AC Bus Stop Chennai – First Premium Shelter at Retteri",
-    desc: "The ac bus stop at Retteri Junction offers air-conditioned seating, charging points and modern facilities, emerging as a commuter upgrade in Trending Chennai.",
-    url: "https://www.superchennai.com/trending-chennai/ac-bus-stop-retteri-chennai"
-  }
-},
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/ac-bus-stop-retteri-chennai",
+    YoutubeLink: "",
+    meta: {
+      title: "AC Bus Stop Chennai – First Premium Shelter at Retteri",
+      desc: "The ac bus stop at Retteri Junction offers air-conditioned seating, charging points and modern facilities, emerging as a commuter upgrade in Trending Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/ac-bus-stop-retteri-chennai",
+    },
+  },
 
   {
-  id: 102325,
-  name: "PlayStation Store Chennai – New Gaming Hub in Anna Nagar",
-  slug: "playstation-store-chennai-anna-nagar",
-  para: "Trending Chennai Gaming & Entertainment",
-  TrendingCalendarMonth: "March 2026",
-  TrendingCalendarTime: "Opened to Public",
-  TrendingCalendarCategory: "Gaming | Retail | Entertainment",
-  image: "/images/trendingChennai/img-2-New PlayStation Gaming Store Opens in Anna Nagar.jpg",
-  Homeimage: "/images/trendingChennai/img-2-New PlayStation Gaming Store Opens in Anna Nagar.jpg",
-  link: "/trending-chennai/playstation-store-chennai-anna-nagar",
-  duration: "Open Daily",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "Gaming | Technology | Entertainment",
-  venue: "Anna Nagar, Chennai",
+    id: 102325,
+    name: "PlayStation Store Chennai – New Gaming Hub in Anna Nagar",
+    slug: "playstation-store-chennai-anna-nagar",
+    para: "Trending Chennai Gaming & Entertainment",
+    TrendingCalendarMonth: "March 2026",
+    TrendingCalendarTime: "Opened to Public",
+    TrendingCalendarCategory: "Gaming | Retail | Entertainment",
+    image:
+      "/images/trendingChennai/img-2-New PlayStation Gaming Store Opens in Anna Nagar.jpg",
+    Homeimage:
+      "/images/trendingChennai/img-2-New PlayStation Gaming Store Opens in Anna Nagar.jpg",
+    link: "/trending-chennai/playstation-store-chennai-anna-nagar",
+    duration: "Open Daily",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Gaming | Technology | Entertainment",
+    venue: "Anna Nagar, Chennai",
 
-  trendingDetails: `
+    trendingDetails: `
 <p>
 Great news for gaming fans in Chennai! A brand-new store dedicated to <b>PlayStation gaming</b> and immersive setups has opened in <b>Anna Nagar</b>, creating an exciting hub for gamers in the city.
 </p>
@@ -8422,33 +8432,35 @@ For gamers in Chennai, this new destination in <b>Anna Nagar</b> is the perfect 
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/playstation-store-chennai-anna-nagar",
-  YoutubeLink: "",
-  meta: {
-    title: "PlayStation Store Chennai – New Gaming Hub in Anna Nagar",
-    desc: "The playstation store chennai in Anna Nagar offers consoles, accessories and immersive gaming setups, emerging as a new hotspot in Trending Chennai.",
-    url: "https://www.superchennai.com/trending-chennai/playstation-store-chennai-anna-nagar"
-  }
-},
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/playstation-store-chennai-anna-nagar",
+    YoutubeLink: "",
+    meta: {
+      title: "PlayStation Store Chennai – New Gaming Hub in Anna Nagar",
+      desc: "The playstation store chennai in Anna Nagar offers consoles, accessories and immersive gaming setups, emerging as a new hotspot in Trending Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/playstation-store-chennai-anna-nagar",
+    },
+  },
 
   {
-  id: 102324,
-  name: "Lake Boating in Thiruvottiyur – Chennai’s New Weekend Spot",
-  slug: "lake-boating-thiruvottiyur",
-  para: "Trending Chennai Leisure Attraction",
-  TrendingCalendarMonth: "March 2026",
-  TrendingCalendarTime: "Opened to Public",
-  TrendingCalendarCategory: "Tourism | Recreation | Weekend Spots",
-  image: "/images/trendingChennai/img-1-New Boating Destination Opens in Thiruvottiyur.jpg",
-  Homeimage: "/images/trendingChennai/img-1-New Boating Destination Opens in Thiruvottiyur.jpg",
-  link: "/trending-chennai/lake-boating-thiruvottiyur",
-  duration: "Open Daily",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "Boating | Outdoor Recreation | Family Leisure",
-  venue: "Thiruvottiyur, North Chennai",
+    id: 102324,
+    name: "Lake Boating in Thiruvottiyur – Chennai’s New Weekend Spot",
+    slug: "lake-boating-thiruvottiyur",
+    para: "Trending Chennai Leisure Attraction",
+    TrendingCalendarMonth: "March 2026",
+    TrendingCalendarTime: "Opened to Public",
+    TrendingCalendarCategory: "Tourism | Recreation | Weekend Spots",
+    image:
+      "/images/trendingChennai/img-1-New Boating Destination Opens in Thiruvottiyur.jpg",
+    Homeimage:
+      "/images/trendingChennai/img-1-New Boating Destination Opens in Thiruvottiyur.jpg",
+    link: "/trending-chennai/lake-boating-thiruvottiyur",
+    duration: "Open Daily",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Boating | Outdoor Recreation | Family Leisure",
+    venue: "Thiruvottiyur, North Chennai",
 
-  trendingDetails: `
+    trendingDetails: `
 <p>
 Chennai now has a fresh spot to spend the weekend! A new boating attraction introduced by the <b>Tamil Nadu Tourism Development Corporation</b> has opened in <b>Thiruvottiyur</b> on <b>March 1</b>, bringing a lively new recreational experience to the city.
 </p>
@@ -8479,33 +8491,33 @@ With <b>affordable prices, refreshing sea breeze, and beautiful sunset views</b>
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/lake-boating-thiruvottiyur",
-  YoutubeLink: "",
-  meta: {
-    title: "Lake Boating in Thiruvottiyur – Chennai’s New Weekend Spot",
-    desc: "Lake boating in Thiruvottiyur offers speed boats, pedal boats and scenic sunset views, emerging as a fresh leisure attraction in Trending Chennai.",
-    url: "https://www.superchennai.com/trending-chennai/lake-boating-thiruvottiyur"
-  }
-},
-  
-{
-  id: 102323,
-  name: "Global Sports City Foundations Laid at Semmencherri",
-  slug: "global-sports-city-semmencherry-2026",
-  para: "Trending Chennai Sports Development 2026",
-  TrendingCalendarMonth: "February 2026",
-  TrendingCalendarTime: "Foundation Stone Laid",
-  TrendingCalendarCategory: "Sports | Infrastructure | Development",
-  image: "/images/trendingChennai/inner-page-globalsports.jpg",
-  Homeimage: "/images/trendingChennai/inner-page-globalsports.jpg",
-  link: "/trending-chennai/global-sports-city-semmencherry-2026",
-  duration: "Project in Initial Phase",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "Sports Infrastructure | Urban Development",
-  venue: "Semmencherri, OMR, Chennai",
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/lake-boating-thiruvottiyur",
+    YoutubeLink: "",
+    meta: {
+      title: "Lake Boating in Thiruvottiyur – Chennai’s New Weekend Spot",
+      desc: "Lake boating in Thiruvottiyur offers speed boats, pedal boats and scenic sunset views, emerging as a fresh leisure attraction in Trending Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/lake-boating-thiruvottiyur",
+    },
+  },
 
-  trendingDetails: `
+  {
+    id: 102323,
+    name: "Global Sports City Foundations Laid at Semmencherri",
+    slug: "global-sports-city-semmencherry-2026",
+    para: "Trending Chennai Sports Development 2026",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Foundation Stone Laid",
+    TrendingCalendarCategory: "Sports | Infrastructure | Development",
+    image: "/images/trendingChennai/inner-page-globalsports.jpg",
+    Homeimage: "/images/trendingChennai/inner-page-globalsports.jpg",
+    link: "/trending-chennai/global-sports-city-semmencherry-2026",
+    duration: "Project in Initial Phase",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Sports Infrastructure | Urban Development",
+    venue: "Semmencherri, OMR, Chennai",
+
+    trendingDetails: `
 <p>
 Chennai has taken a major leap in its sports development journey as the foundation stone for the <b>₹261-crore Global Sports City</b> was officially laid by Hon. Chief Minister <b>M. K. Stalin</b> in <b>Semmencherri</b>, located along the fast-growing OMR stretch.
 </p>
@@ -8532,34 +8544,33 @@ The Global Sports City aims to integrate modern infrastructure, advanced trainin
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/global-sports-city-chennai",
-  YoutubeLink: "",
-  meta: {
-    title: "Global Sports City | Semmencherry Sports Hub Update",
-    desc: "The Global Sports City in Semmencherry is Trending Chennai news, building a modern sports hub with upgraded facilities for athletes across Tamil Nadu.",
-    url: "https://www.superchennai.com/trending-chennai/global-sports-city-chennai"
-  }
-},
-
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/global-sports-city-chennai",
+    YoutubeLink: "",
+    meta: {
+      title: "Global Sports City | Semmencherry Sports Hub Update",
+      desc: "The Global Sports City in Semmencherry is Trending Chennai news, building a modern sports hub with upgraded facilities for athletes across Tamil Nadu.",
+      url: "https://www.superchennai.com/trending-chennai/global-sports-city-chennai",
+    },
+  },
 
   {
-  id: 94654,
-  name: "Poonamallee Depot Completed and Officially Handed Over",
-  slug: "poonamallee-depot-chennai-metro-phase-2-2026",
-  para: "Trending Chennai Infrastructure Update 2026",
-  TrendingCalendarMonth: "February 2026",
-  TrendingCalendarTime: "Completed & Handed Over",
-  TrendingCalendarCategory: "Metro Rail | Infrastructure | Development",
-  image: "/images/trendingChennai/inner-page- Poonamallee Depo.jpg",
-  Homeimage: "/images/trendingChennai/inner-page- Poonamallee Depo.jpg",
-  link: "/trending-chennai/poonamallee-depot-chennai-metro-phase-2-2026",
-  duration: "Operational",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "Urban Transport | Metro Infrastructure",
-  venue: "Poonamallee, Chennai",
+    id: 94654,
+    name: "Poonamallee Depot Completed and Officially Handed Over",
+    slug: "poonamallee-depot-chennai-metro-phase-2-2026",
+    para: "Trending Chennai Infrastructure Update 2026",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Completed & Handed Over",
+    TrendingCalendarCategory: "Metro Rail | Infrastructure | Development",
+    image: "/images/trendingChennai/inner-page- Poonamallee Depo.jpg",
+    Homeimage: "/images/trendingChennai/inner-page- Poonamallee Depo.jpg",
+    link: "/trending-chennai/poonamallee-depot-chennai-metro-phase-2-2026",
+    duration: "Operational",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Urban Transport | Metro Infrastructure",
+    venue: "Poonamallee, Chennai",
 
-  trendingDetails: `
+    trendingDetails: `
 <p>
 The construction of the <b>Poonamallee Depot</b> under the <b>Chennai Metro Phase-2</b> network is now fully complete, and the facility has been officially handed over for operations. Spread across a massive <b>42 acres</b>, this advanced depot is equipped to support <b>26 three-car and six-car driverless trains</b> that will run along the upcoming <b>Poonamallee–Light House</b> corridor.
 </p>
@@ -8582,34 +8593,33 @@ This marks a major milestone in Chennai’s metro expansion, bringing the city o
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/chennai-metro-depot-phase-2-update",
-  YoutubeLink: "",
-  meta: {
-    title: "Chennai Metro Depot – Phase 2 Upgrade & Operations",
-    desc: "The Chennai metro depot under Phase 2 is nearing completion with new facilities for driverless trains and improved connectivity. Trending Chennai update included.",
-    url: "https://www.superchennai.com/trending-chennai/chennai-metro-depot-phase-2-update"
-  }
-},
-
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/chennai-metro-depot-phase-2-update",
+    YoutubeLink: "",
+    meta: {
+      title: "Chennai Metro Depot – Phase 2 Upgrade & Operations",
+      desc: "The Chennai metro depot under Phase 2 is nearing completion with new facilities for driverless trains and improved connectivity. Trending Chennai update included.",
+      url: "https://www.superchennai.com/trending-chennai/chennai-metro-depot-phase-2-update",
+    },
+  },
 
   {
-  id: 8345345,
-  name: "FinTech City at Nandambakkam Races Toward Completion",
-  slug: "fintech-city-nandambakkam-2026",
-  para: "Trending Chennai Tech Development 2026",
-  TrendingCalendarMonth: "February 2026",
-  TrendingCalendarTime: "Construction Nearing Completion",
-  TrendingCalendarCategory: "Technology | Infrastructure | Development",
-  image: "/images/trendingChennai/inner-page-fintech.jpg",
-  Homeimage: "/images/trendingChennai/inner-page-fintech.jpg",
-  link: "/trending-chennai/fintech-city-nandambakkam-2026",
-  duration: "Project in Final Phase",
-  ageRestriction: "Open for All",
-  language: "English | Tamil",
-  genre: "Tech Hub | Infrastructure Development",
-  venue: "Nandambakkam, Chennai",
+    id: 8345345,
+    name: "FinTech City at Nandambakkam Races Toward Completion",
+    slug: "fintech-city-nandambakkam-2026",
+    para: "Trending Chennai Tech Development 2026",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Construction Nearing Completion",
+    TrendingCalendarCategory: "Technology | Infrastructure | Development",
+    image: "/images/trendingChennai/inner-page-fintech.jpg",
+    Homeimage: "/images/trendingChennai/inner-page-fintech.jpg",
+    link: "/trending-chennai/fintech-city-nandambakkam-2026",
+    duration: "Project in Final Phase",
+    ageRestriction: "Open for All",
+    language: "English | Tamil",
+    genre: "Tech Hub | Infrastructure Development",
+    venue: "Nandambakkam, Chennai",
 
-  trendingDetails: `
+    trendingDetails: `
 <p>
 <b>FinTech City</b> in <b>Nandambakkam</b> is rapidly moving toward completion, with most of its major building structures now in the finishing stage. This ambitious project is set to become one of Chennai’s most significant innovation clusters, attracting global fintech firms, emerging startups, and digital service providers.
 </p>
@@ -8636,34 +8646,33 @@ With construction progressing at high speed, officials confirm that the launch i
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam",
-  YoutubeLink: "",
-  meta: {
-    title: "FinTech City Nandambakkam | Chennai’s Emerging Tech Hub",
-    desc: "Trending Chennai update: FinTech City Nandambakkam is nearing completion, evolving into a modern digital hub for global fintech firms and startups.",
-    url: "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam"
-  }
-},
-
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam",
+    YoutubeLink: "",
+    meta: {
+      title: "FinTech City Nandambakkam | Chennai’s Emerging Tech Hub",
+      desc: "Trending Chennai update: FinTech City Nandambakkam is nearing completion, evolving into a modern digital hub for global fintech firms and startups.",
+      url: "https://www.superchennai.com/trending-chennai/fintech-city-nandambakkam",
+    },
+  },
 
   {
-  id: 1121234,
-  name: "A New Chapter Along the Cooum: Port–Maduravoyal Expressway Rising",
-  slug: "port-maduravoyal-expressway-chennai-2026",
-  para: "Trending Chennai Infrastructure Update 2026",
-  TrendingCalendarMonth: "February 2026",
-  TrendingCalendarTime: "Construction in Full Swing",
-  TrendingCalendarCategory: "Infrastructure | Expressway | Connectivity",
-  image: "/images/trendingChennai/inner-page-chennai;s-nxt.jpg",
-  Homeimage: "/images/trendingChennai/inner-page-chennai;s-nxt.jpg",
-  link: "/trending-chennai/port-maduravoyal-expressway-chennai-2026",
-  duration: "Under Construction",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "Urban Infrastructure | Transport Development",
-  venue: "Chennai Port – Maduravoyal Corridor",
+    id: 1121234,
+    name: "A New Chapter Along the Cooum: Port–Maduravoyal Expressway Rising",
+    slug: "port-maduravoyal-expressway-chennai-2026",
+    para: "Trending Chennai Infrastructure Update 2026",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Construction in Full Swing",
+    TrendingCalendarCategory: "Infrastructure | Expressway | Connectivity",
+    image: "/images/trendingChennai/inner-page-chennai;s-nxt.jpg",
+    Homeimage: "/images/trendingChennai/inner-page-chennai;s-nxt.jpg",
+    link: "/trending-chennai/port-maduravoyal-expressway-chennai-2026",
+    duration: "Under Construction",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Urban Infrastructure | Transport Development",
+    venue: "Chennai Port – Maduravoyal Corridor",
 
-  trendingDetails: `
+    trendingDetails: `
 <p>
 A massive transformation is unfolding along the <b>Cooum River</b> as the <b>Port–Maduravoyal Elevated Expressway</b> continues to rise steadily. Watching this future-defining project take shape in real time is nothing short of incredible.
 </p>
@@ -8690,35 +8699,33 @@ Once completed, this elevated corridor will streamline <b>cargo movement</b>, re
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai",
-  YoutubeLink: "",
-  meta: {
-    title: "Port Maduravoyal Expressway | Chennai Port Connectivity Upgrade",
-    desc: "The Port Maduravoyal expressway from Chennai Port to Maduravoyal is moving ahead fast, easing traffic and aiding cargo flow in Trending Chennai updates.",
-    url: "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai"
-  }
-},
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai",
+    YoutubeLink: "",
+    meta: {
+      title: "Port Maduravoyal Expressway | Chennai Port Connectivity Upgrade",
+      desc: "The Port Maduravoyal expressway from Chennai Port to Maduravoyal is moving ahead fast, easing traffic and aiding cargo flow in Trending Chennai updates.",
+      url: "https://www.superchennai.com/trending-chennai/port-maduravoyal-expressway-chennai",
+    },
+  },
 
+  {
+    id: 12313,
+    name: "Chennai Unveils Its Own Iconic Super-Tree Tower",
+    slug: "musical-tower-kalaignar-centenary-park-2026",
+    para: "Trending Chennai Landmark Update 2026",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "New Landmark Revealed",
+    TrendingCalendarCategory: "Public Space | Landmark | Tourism",
+    image: "/images/trendingChennai/inner-page-super-tree-tower.jpg",
+    Homeimage: "/images/trendingChennai/inner-page-super-tree-tower.jpg",
+    link: "/trending-chennai/musical-tower-kalaignar-centenary-park-2026",
+    duration: "Open to Public",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "City Landmark | Tourism",
+    venue: "Kalaignar Centenary Park, Chennai",
 
-  
-{
-  id: 12313,
-  name: "Chennai Unveils Its Own Iconic Super-Tree Tower",
-  slug: "musical-tower-kalaignar-centenary-park-2026",
-  para: "Trending Chennai Landmark Update 2026",
-  TrendingCalendarMonth: "February 2026",
-  TrendingCalendarTime: "New Landmark Revealed",
-  TrendingCalendarCategory: "Public Space | Landmark | Tourism",
-  image: "/images/trendingChennai/inner-page-super-tree-tower.jpg",
-  Homeimage: "/images/trendingChennai/inner-page-super-tree-tower.jpg",
-  link: "/trending-chennai/musical-tower-kalaignar-centenary-park-2026",
-  duration: "Open to Public",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "City Landmark | Tourism",
-  venue: "Kalaignar Centenary Park, Chennai",
-
-  trendingDetails: `
+    trendingDetails: `
 <p>
 Chennai has unveiled its very own <b>super-tree style tower</b>, standing eight storeys tall inside the vibrant <b>Kalaignar Centenary Park</b>. This iconic structure is quickly becoming one of the city’s most eye-catching landmarks.
 </p>
@@ -8745,34 +8752,33 @@ This modern viewing tower promises to completely redefine how Chennai experience
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park",
-  YoutubeLink: "",
-  meta: {
-    title: "Musical Tower | Chennai’s New Skyline Attraction",
-    desc: "The musical tower at Kalaignar Centenary Park is emerging as a standout landmark with its viewing deck and modern design, gaining attention across Trending Chennai.",
-    url: "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park"
-  }
-},
-
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park",
+    YoutubeLink: "",
+    meta: {
+      title: "Musical Tower | Chennai’s New Skyline Attraction",
+      desc: "The musical tower at Kalaignar Centenary Park is emerging as a standout landmark with its viewing deck and modern design, gaining attention across Trending Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/musical-tower-kalaignar-centenary-park",
+    },
+  },
 
   {
-  id: 122323,
-  name: "Kilambakkam Terminus Sets a New Standard",
-  slug: "kilambakkam-modern-bus-terminus-2026",
-  para: "Trending Chennai Travel Infrastructure 2026",
-  TrendingCalendarMonth: "February 2026",
-  TrendingCalendarTime: "Now Open",
-  TrendingCalendarCategory: "Travel | Infrastructure | Public Transport",
-  image: "/images/trendingChennai/inner-page-kilambakkam-terminus.jpg",
-  Homeimage: "/images/trendingChennai/inner-page-kilambakkam-terminus.jpg",
-  link: "/trending-chennai/kilambakkam-modern-bus-terminus-2026",
-  duration: "Operational",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "Travel Hub | Public Transport",
-  venue: "Kilambakkam, Chennai",
+    id: 122323,
+    name: "Kilambakkam Terminus Sets a New Standard",
+    slug: "kilambakkam-modern-bus-terminus-2026",
+    para: "Trending Chennai Travel Infrastructure 2026",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Now Open",
+    TrendingCalendarCategory: "Travel | Infrastructure | Public Transport",
+    image: "/images/trendingChennai/inner-page-kilambakkam-terminus.jpg",
+    Homeimage: "/images/trendingChennai/inner-page-kilambakkam-terminus.jpg",
+    link: "/trending-chennai/kilambakkam-modern-bus-terminus-2026",
+    duration: "Operational",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Travel Hub | Public Transport",
+    venue: "Kilambakkam, Chennai",
 
-  trendingDetails: `
+    trendingDetails: `
 <p>
 The newly developed <b>Kilambakkam Bus Terminus</b> is setting a remarkable benchmark for travel infrastructure in Chennai. Stepping inside feels almost like entering an airport — thanks to its expansive interiors, polished design, and efficient passenger movement systems.
 </p>
@@ -8799,36 +8805,33 @@ This new hub not only decongests the city but also elevates comfort and convenie
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus",
-  YoutubeLink: "",
-  meta: {
-    title: "Kilambakkam Bus Terminus | Chennai’s New Travel Hub",
-    desc: "The Kilambakkam bus terminus in Kilambakkam offers modern, airport-style interiors and stands out in Trending Chennai as a big upgrade to the city’s travel comfort.",
-    url: "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus"
-  }
-},
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus",
+    YoutubeLink: "",
+    meta: {
+      title: "Kilambakkam Bus Terminus | Chennai’s New Travel Hub",
+      desc: "The Kilambakkam bus terminus in Kilambakkam offers modern, airport-style interiors and stands out in Trending Chennai as a big upgrade to the city’s travel comfort.",
+      url: "https://www.superchennai.com/trending-chennai/kilambakkam-modern-bus-terminus",
+    },
+  },
 
+  {
+    id: 112424234,
+    name: "Pedestrian Skywalk Progress at Vadapalani Metro Corridor",
+    slug: "vadapalani-skywalk-metro-corridor-2026",
+    para: "Trending Chennai Metro Connectivity Update 2026",
+    TrendingCalendarMonth: "February 2026",
+    TrendingCalendarTime: "Work in Progress",
+    TrendingCalendarCategory: "Metro | Connectivity | Infrastructure",
+    image: "/images/trendingChennai/inner-page-vadapalanimetro-img.jpg",
+    Homeimage: "/images/trendingChennai/inner-page-vadapalanimetro-img.jpg",
+    link: "/trending-chennai/vadapalani-skywalk-metro-corridor-2026",
+    duration: "Under Construction",
+    ageRestriction: "Open for All",
+    language: "N/A",
+    genre: "Urban Transport | Metro Development",
+    venue: "Vadapalani, Chennai",
 
-
-  
-{
-  id: 112424234,
-  name: "Pedestrian Skywalk Progress at Vadapalani Metro Corridor",
-  slug: "vadapalani-skywalk-metro-corridor-2026",
-  para: "Trending Chennai Metro Connectivity Update 2026",
-  TrendingCalendarMonth: "February 2026",
-  TrendingCalendarTime: "Work in Progress",
-  TrendingCalendarCategory: "Metro | Connectivity | Infrastructure",
-  image: "/images/trendingChennai/inner-page-vadapalanimetro-img.jpg",
-  Homeimage: "/images/trendingChennai/inner-page-vadapalanimetro-img.jpg",
-  link: "/trending-chennai/vadapalani-skywalk-metro-corridor-2026",
-  duration: "Under Construction",
-  ageRestriction: "Open for All",
-  language: "N/A",
-  genre: "Urban Transport | Metro Development",
-  venue: "Vadapalani, Chennai",
-
-  trendingDetails: `
+    trendingDetails: `
 <p>
 Construction of the new <b>pedestrian skywalk</b> connecting the <b>Vadapalani Metro Station</b> with the upcoming <b>Phase-2 station</b> is progressing steadily. This elevated walkway is set to provide passengers with a seamless, safe, and weather-protected connection between the two major metro corridors.
 </p>
@@ -8855,14 +8858,14 @@ Once completed, this upgraded connectivity link will play a key role in enhancin
 </p>
 `,
 
-  // TrendingLink: "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-update",
-  YoutubeLink: "",
-  meta: {
-    title: "Vadapalani Skywalk | Metro Corridor Connectivity Update",
-    desc: "The Vadapalani skywalk near Vadapalani is progressing steadily, improving metro corridor access with safer movement. Trending Chennai update included.",
-    url: "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-update"
-  }
-},
+    // TrendingLink: "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-update",
+    YoutubeLink: "",
+    meta: {
+      title: "Vadapalani Skywalk | Metro Corridor Connectivity Update",
+      desc: "The Vadapalani skywalk near Vadapalani is progressing steadily, improving metro corridor access with safer movement. Trending Chennai update included.",
+      url: "https://www.superchennai.com/trending-chennai/vadapalani-skywalk-update",
+    },
+  },
 
   {
     id: 62326,
@@ -9498,67 +9501,67 @@ An ideal spot for a fun, memorable family outing.
       url: "https://www.superchennai.com/trending-chennai/glow-garden-mahabalipuram",
     },
   },
-//   {
-//     id: 5555,
-//     name: "Karthik Live Music Concert 2026",
-//     slug: "karthik-live-concert-chennai-2026",
-//     para: "Trending Chennai Event 2026",
-//     TrendingCalendarMonth: "February 2026",
-//     TrendingCalendarTime: "07:30 PM",
-//     TrendingCalendarCategory: "Live Music Concert",
-//     image: "/images/trendingChennai/source-karthick-banner.jpeg",
-//     Homeimage: "/images/trendingChennai/karthick-image.jpeg",
-//     link: "/trending-chennai/karthik-live-concert-chennai-2026",
-//     duration: "As per show flow",
-//     ageRestriction: "5 Years & Above",
-//     language: "Tamil",
-//     genre: "Indian Pop | Regional Music",
-//     venue: "YMCA, Chennai",
+  //   {
+  //     id: 5555,
+  //     name: "Karthik Live Music Concert 2026",
+  //     slug: "karthik-live-concert-chennai-2026",
+  //     para: "Trending Chennai Event 2026",
+  //     TrendingCalendarMonth: "February 2026",
+  //     TrendingCalendarTime: "07:30 PM",
+  //     TrendingCalendarCategory: "Live Music Concert",
+  //     image: "/images/trendingChennai/source-karthick-banner.jpeg",
+  //     Homeimage: "/images/trendingChennai/karthick-image.jpeg",
+  //     link: "/trending-chennai/karthik-live-concert-chennai-2026",
+  //     duration: "As per show flow",
+  //     ageRestriction: "5 Years & Above",
+  //     language: "Tamil",
+  //     genre: "Indian Pop | Regional Music",
+  //     venue: "YMCA, Chennai",
 
-//     trendingDetails: `
-// <p>
-// <b>Karthik</b> is widely regarded as one of India’s most loved and respected playback singers, a voice that has resonated with audiences across generations.
-// </p>
+  //     trendingDetails: `
+  // <p>
+  // <b>Karthik</b> is widely regarded as one of India’s most loved and respected playback singers, a voice that has resonated with audiences across generations.
+  // </p>
 
-// <p>
-// Born and raised in Chennai, and classically trained in both <b>Carnatic</b> and <b>Hindustani</b> music, his illustrious journey includes thousands of songs in multiple Indian languages. Celebrated for his emotionally rich vocals, remarkable versatility, and powerful stage presence, Karthik continues to redefine the live music experience.
-// </p>
+  // <p>
+  // Born and raised in Chennai, and classically trained in both <b>Carnatic</b> and <b>Hindustani</b> music, his illustrious journey includes thousands of songs in multiple Indian languages. Celebrated for his emotionally rich vocals, remarkable versatility, and powerful stage presence, Karthik continues to redefine the live music experience.
+  // </p>
 
-// <p>
-// As part of his much-awaited India tour, Karthik brings his music closer to fans across the country. Every performance promises a fully immersive live concert experience, blending nostalgia, heartfelt emotion, and high-energy moments.
-// </p>
+  // <p>
+  // As part of his much-awaited India tour, Karthik brings his music closer to fans across the country. Every performance promises a fully immersive live concert experience, blending nostalgia, heartfelt emotion, and high-energy moments.
+  // </p>
 
-// <h4>📅 Event Details</h4>
-// <ul>
-//   <li>Date: Saturday, 28 February 2026</li>
-//   <li>Time: 7:30 PM</li>
-//   <li>Duration: As per show flow</li>
-//   <li>Age Limit: 5 Years & Above</li>
-//   <li>Genre: Indian Pop | Regional Music</li>
-//   <li>Venue: YMCA, Chennai</li>
-// </ul>
+  // <h4>📅 Event Details</h4>
+  // <ul>
+  //   <li>Date: Saturday, 28 February 2026</li>
+  //   <li>Time: 7:30 PM</li>
+  //   <li>Duration: As per show flow</li>
+  //   <li>Age Limit: 5 Years & Above</li>
+  //   <li>Genre: Indian Pop | Regional Music</li>
+  //   <li>Venue: YMCA, Chennai</li>
+  // </ul>
 
-// <p>
-// ✨ This Indian pop and regional music concert in Chennai invites audiences to be part of a musical journey that connects deeply and leaves a lasting impact.
-// </p>
+  // <p>
+  // ✨ This Indian pop and regional music concert in Chennai invites audiences to be part of a musical journey that connects deeply and leaves a lasting impact.
+  // </p>
 
-// <p>
-// 🎟 <b>Book Now:</b><br/>
-// <a href="https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125" target="_blank">
-// https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125
-// </a>
-// </p>
-// `,
+  // <p>
+  // 🎟 <b>Book Now:</b><br/>
+  // <a href="https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125" target="_blank">
+  // https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125
+  // </a>
+  // </p>
+  // `,
 
-//     TrendingLink:
-//       "https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125",
-//     YoutubeLink: "",
-//     meta: {
-//       title: "Trending Chennai Event 2026 : Karthik Live Music Concert",
-//       desc: "Don’t miss Chennai’s trending event—Karthik Live 2026 at YMCA. Enjoy his unforgettable voice, chart-topping songs, and an immersive music concert.",
-//       url: "https://www.superchennai.com/trending-chennai/karthik-live-concert-chennai-2026",
-//     },
-//   },
+  //     TrendingLink:
+  //       "https://in.bookmyshow.com/events/karthik-live-chennai/ET00466125",
+  //     YoutubeLink: "",
+  //     meta: {
+  //       title: "Trending Chennai Event 2026 : Karthik Live Music Concert",
+  //       desc: "Don’t miss Chennai’s trending event—Karthik Live 2026 at YMCA. Enjoy his unforgettable voice, chart-topping songs, and an immersive music concert.",
+  //       url: "https://www.superchennai.com/trending-chennai/karthik-live-concert-chennai-2026",
+  //     },
+  //   },
 
   {
     id: 3333,

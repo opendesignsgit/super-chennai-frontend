@@ -142,7 +142,7 @@ export default function LoginOtp2026() {
 
             <p className="text-sm text-gray-500 mt-1">
               {step === "input"
-                ? "Enter your email or mobile number"
+                ? "Enter  mobile number"
                 : "Enter the 6-digit OTP sent to you"}
             </p>
           </div>
@@ -153,7 +153,7 @@ export default function LoginOtp2026() {
               <form onSubmit={handleSendOtp} className="space-y-4">
                 <input
                   type="text"
-                  placeholder="Email or Mobile"
+                  placeholder="Enter mobile number"
                   value={identifier}
                   onChange={(e) => setIdentifier(e.target.value)}
                   className="w-full rounded-xl border px-4 py-3 text-sm 

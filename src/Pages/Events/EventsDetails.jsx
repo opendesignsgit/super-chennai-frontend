@@ -451,54 +451,120 @@ export default function EventsDetails() {
     },
   ];
 
-  const roar26UnitySuperkings =[
+  const roar26UnitySuperkings = [
     {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/events-in-chennai/super-kings-roar-26-chennai-event"
-  },
-  "headline": "Roar ’26 – Super Kings Unite!",
-  "description": "Super Kings Roar ’26 Event Chennai brings fans together on March 22 with live practice, player meetups, exciting fan moments, and an electrifying A.R. Rahman show.",
-  "image": "https://demo.superchennai.com/api/media/file/ROAR.jpeg",  
-  "author": {
-    "@type": "Person",
-    "name": "Super Chennai"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": ""
-    }
-  },
-  "datePublished": "2026-03-22"
-},
-{
-  "@context": "https://schema.org/", 
-  "@type": "BreadcrumbList", 
-  "itemListElement": [{
-    "@type": "ListItem", 
-    "position": 1, 
-    "name": "Super Chennai",
-    "item": "https://www.superchennai.com/"  
-  },{
-    "@type": "ListItem", 
-    "position": 2, 
-    "name": "Chennai Events",
-    "item": "https://www.superchennai.com/chennai-events"  
-  },{
-    "@type": "ListItem", 
-    "position": 3, 
-    "name": "Roar ’26 – Super Kings Unite!",
-    "item": "https://www.superchennai.com/events-in-chennai/super-kings-roar-26-chennai-event"  
-  }]
-}
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/events-in-chennai/super-kings-roar-26-chennai-event",
+      },
+      headline: "Roar ’26 – Super Kings Unite!",
+      description:
+        "Super Kings Roar ’26 Event Chennai brings fans together on March 22 with live practice, player meetups, exciting fan moments, and an electrifying A.R. Rahman show.",
+      image: "https://demo.superchennai.com/api/media/file/ROAR.jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-22",
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Chennai Events",
+          item: "https://www.superchennai.com/chennai-events",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Roar ’26 – Super Kings Unite!",
+          item: "https://www.superchennai.com/events-in-chennai/super-kings-roar-26-chennai-event",
+        },
+      ],
+    },
+  ];
 
+  const ilayarajaisaiArasan = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "ilaiyaraaja 50 – Live in Concert | Chennai",
+      description:
+        "Ilaiyaraaja concert celebrates 50 years of musical brilliance with a grand live performance featuring timeless melodies and orchestral compositions.",
+      image:
+        "https://demo.superchennai.com/api/media/file/Ilaiyaraaja%20Concert.jpg",
+      startDate: "2026-04-01T09:00",
+      endDate: "2026-05-31T23:00",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: "Jawaharlal Nehru Stadium",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Jawaharlal Nehru Stadium, chennai",
+          addressLocality: "Chennai",
+          postalCode: "600003",
+          addressCountry: "IN",
+        },
+      },
+      performer: {
+        "@type": "Person",
+        name: "Ilaiyaraaja",
+      },
+    },
+  ];
 
-  ]
+  const isaiPuyalVijayAntony = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "Vijay Antony Live in Concert",
+      description:
+        "Vijay Antony live concert music show in Chennai featuring popular Tamil hits, powerful melodies, vibrant visuals, and energetic live band performances.",
+      image:
+        "https://demo.superchennai.com/api/media/file/bms-event-april-4.jpg",
+      startDate: "2026-04-05T09:00",
+      endDate: "2026-06-13T23:00",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: "YMCA Ground",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "YMCA Ground, Nandanam, Chennai",
+          addressLocality: "Chennai",
+          postalCode: "600035",
+          addressCountry: "IN",
+        },
+      },
+      performer: {
+        "@type": "Person",
+        name: "Vijay Antony",
+      },
+    },
+  ];
 
 
   // ######## SCROLLER FOR PARTNER SETTINGS############  TEMPORRY SCROLL
@@ -539,10 +605,19 @@ export default function EventsDetails() {
         {imageUrl && <meta property="og:image" content={imageUrl} />}
 
 
-
+        {slug === "vijay-antony-live-concert-music-show-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(isaiPuyalVijayAntony)}
+          </script>
+        )}
         
+        {slug === "ilaiyaraaja-concert" && (
+          <script type="application/ld+json">
+            {JSON.stringify(ilayarajaisaiArasan)}
+          </script>
+        )}
 
-        {slug === "events-in-chennai/super-kings-roar-26-chennai-event" && (
+        {slug === "super-kings-roar-26-chennai-event" && (
           <script type="application/ld+json">
             {JSON.stringify(roar26UnitySuperkings)}
           </script>

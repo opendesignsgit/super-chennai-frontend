@@ -7576,6 +7576,67 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
+    id: 102340,
+    name: "Chennai’s Latest Movie Experience Awaits",
+    slug: "moviemax-pr-mall-theatre-chennai",
+    para: "A New Cinema Experience in Chennai",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Now Showing",
+    TrendingCalendarCategory: "Entertainment | Movies | Trending",
+    image: "/images/trendingchennai-mxmovie.jpeg",
+    Homeimage: "/images/trendingchennai-mxmovie.jpeg",
+    link: "/trending-chennai/moviemax-pr-mall-theatre",
+    duration: "Flexible Show Timings",
+    ageRestriction: "Open for All",
+    language: "Multiple Languages",
+    genre: "Cinema | Entertainment | Experience",
+    venue: "MovieMax, PR Mall, Kondithope (near Sowcarpet)",
+
+    trendingDetails: `
+<p>
+Chennai has a fresh destination for movie lovers! 🎬✨ Say hello to a brand-new theatre experience at <b>MovieMax in PR Mall, Kondithope</b>, near Sowcarpet.
+</p>
+
+<p>
+<b>🎟️ Ticket Pricing:</b><br>
+Executive – ₹183<br>
+Budget – ₹55
+</p>
+
+<p>
+Looking to level up your movie outing? From the moment you walk into its lounge-style interiors, you’ll notice this is far from a regular cinema. Whether it's a hangout with friends, a family outing, or a date plan, this spot checks all the boxes.
+</p>
+
+<p>
+<b>✨ What makes it special:</b>
+</p>
+
+<p>
+• 🛋️ <b>Stylish & Cozy:</b> Two creatively designed screens with over 450 premium, comfortable seats.<br>
+• 🎥 <b>Next-Level Visuals & Sound:</b> Experience movies with 4K Laser Christie projection and Dolby 7.1 surround sound.<br>
+• 🍿 <b>Food & Snacks:</b> A fully vegetarian food zone with a live kitchen serving pasta, fries, chaat, and more. Don’t miss their unlimited popcorn & Pepsi combo (around ₹499)!<br>
+• 🧼 <b>Well-Maintained Spaces:</b> Clean and thoughtfully designed restrooms that enhance the overall experience.
+</p>
+
+<p>
+Call your movie gang and plan a visit to MovieMax Sowcarpet this weekend! 🎉
+</p>
+
+<p>
+<a href="https://www.instagram.com/reels/DXGorOFzrTC/" target="_blank">▶️ Click here to watch</a>
+</p>
+`,
+
+    TrendingLink: "https://www.instagram.com/reels/DXGorOFzrTC/",
+    YoutubeLink: "",
+
+    meta: {
+      title: "MovieMax PR Mall Theatre: Premium Screens & Affordable Tickets",
+      desc: "MovieMax PR Mall features modern screens, 4K laser projection, Dolby 7.1 surround sound, comfortable seating, and affordable ticket prices for a great movie outing.",
+      url: "https://www.superchennai.com/trending-chennai/moviemax-pr-mall-theatre",
+    },
+  },
+  {
     id: 102339,
     name: "Chennai’s Cherry Blossom Season with Tabebuia Rosea",
     slug: "cherry-blossom-season-tabebuia-rosea-chennai",

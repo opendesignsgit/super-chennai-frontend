@@ -31,7 +31,7 @@ export default function LoginOtp2026() {
           email: identifier,
         });
       } else if (isPhone(identifier)) {
-        res = await axios.post(`${API_BASE_URL_API}/auth/send-otp-mobile`, {
+        res = await axios.post(`${API_BASE_URL_API}/auth/login-sendotp`, {
           phone: identifier,
         });
       } else {

@@ -41,6 +41,7 @@
 // };
 
 // export default NotFound;
+
 const NotFound = () => {
   const items = [
     {
@@ -60,7 +61,6 @@ const NotFound = () => {
     },
   ];
 
-
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-center px-5 relative overflow-hidden">
       <div className="absolute inset-0">
@@ -72,9 +72,6 @@ const NotFound = () => {
         <div className="absolute bottom-20 right-1/3 w-4 h-4 bg-pink-400/30 rounded-full animate-float4"></div>
       </div>
 
-      {/* <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-cyan-500/20 rounded-full blur-3xl animate-pulse-slow"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-cyan-500/15 via-blue-500/15 to-purple-500/15 rounded-full blur-3xl animate-pulse-slow delay-1000"></div> */}
-
       <div className="relative z-10 animate-heroSlideIn mt-10">
         <div className="  max-w-4xl mx-auto animate-glassFloat">
           <div className="relative">
@@ -82,7 +79,6 @@ const NotFound = () => {
               className="flex items-end justify-center gap-0 mb-12 relative"
               style={{ fontKerning: "none" }}
             >
-              {/* First 4 - Perfect positioning */}
               <div className="relative group pr-0">
                 <h1 className="text-[8rem] sm:text-[10rem] md:text-[14rem] lg:text-[16rem] xl:text-[18rem] font-black bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent drop-shadow-3xl leading-none tracking-[-0.15em] animate-slideInLeft pb-2">
                   4
@@ -90,16 +86,26 @@ const NotFound = () => {
                 <div className="absolute -top-8 -right-4 w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-xl opacity-50 group-hover:scale-110 transition-all duration-300"></div>
               </div>
 
-              {/* ZERO - Perfect center alignment */}
               <div className="relative group px-4">
-                <div className="absolute inset-0 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 xl:w-60 xl:h-60 border-4 border-white/20 rounded-full animate-ringPulse mx-auto"></div>
-                <h1 className="text-[81rem] sm:text-[10rem] md:text-[14rem] lg:text-[16rem] xl:text-[18rem] font-black bg-gradient-to-b from-white via-gray-100 to-white/80 bg-clip-text text-transparent drop-shadow-3xl leading-none tracking-[-0.15em] relative z-10 animate-bounceIn pt-1 -mx-2">
+                {/* Multi-ring pulse */}
+                <div className="absolute inset-0 w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 xl:w-60 xl:h-60 mx-auto animate-multiRingPulse">
+                  <div className="absolute inset-0 border-4 border-[#8b3c82]/30 rounded-full animate-ringPulse1"></div>
+                  <div className="absolute inset-0 border-4 border-[#a34493]/40 rounded-full animate-ringPulse2 delay-300"></div>
+                  <div className="absolute inset-0 border-3 border-[#8b3c82]/50 rounded-full animate-ringPulse3 delay-600"></div>
+                </div>
+
+                {/* Premium 0 with glow */}
+                <h1 className="text-[8rem] sm:text-[10rem] md:text-[14rem] lg:text-[16rem] xl:text-[18rem] font-black bg-gradient-to-b from-white via-slate-100/90 to-white/80 bg-clip-text text-transparent drop-shadow-4xl leading-none tracking-[-0.15em] relative z-20 animate-bounceInUltra pt-1 -mx-2 group-hover:scale-[1.05] transition-transform duration-500">
                   0
                 </h1>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/30 to-blue-500/30 rounded-full blur-xl opacity-60 group-hover:opacity-80 transition-all duration-300 mx-auto"></div>
-              </div>
 
-              {/* Last 4 - Perfect positioning */}
+                {/* Inner glow */}
+                <div className="absolute inset-0 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 mx-auto bg-gradient-to-r from-[#8b3c82]/40 via-[#a34493]/30 to-[#8b3c82]/40 rounded-full blur-2xl opacity-70 group-hover:opacity-90 group-hover:scale-110 transition-all duration-600 animate-glowPulse"></div>
+
+                {/* Floating particles */}
+                <div className="absolute -top-4 -right-4 w-4 h-4 bg-[#8b3c82] rounded-full opacity-60 animate-floatParticle1"></div>
+                <div className="absolute -bottom-4 -left-4 w-3 h-3 bg-[#a34493] rounded-full opacity-50 animate-floatParticle2"></div>
+              </div>
               <div className="relative group pl-0">
                 <h1 className="text-[8rem] sm:text-[10rem] md:text-[14rem] lg:text-[16rem] xl:text-[18rem] font-black bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent drop-shadow-3xl leading-none tracking-[-0.15em] animate-slideInRight pb-2">
                   4
@@ -330,11 +336,16 @@ const NotFound = () => {
         .delay-1000 {
           animation-delay: 1s;
         }
+
+        @media (max-width: 650px) {
+          .text-\[81rem\] {
+            font-size: 9rem;
+          }
+        }
       `}</style>
     </div>
   );
 
-  
   // return (
   //   <div className="min-h-screen w-full flex flex-col items-center justify-center bg-gray-50 text-center px-5 relative overflow-hidden">
 

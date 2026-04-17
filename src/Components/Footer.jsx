@@ -910,9 +910,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="weatherPageSection">
+      {/* <div className="weatherPageSection">
         <SimpleWeather />
-      </div>
+      </div> */}
     </footer>
   );
 };

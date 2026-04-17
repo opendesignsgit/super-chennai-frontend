@@ -587,9 +587,9 @@ const BlogDetail = () => {
           <div className="flex items-center gap-4 mb-2">
             {blog.authorImage ? (
               <img
-                src={`${blog.authorImage}`}
+                src={`${API_BASE_URL}/${blog.authorImage}`}
                 alt={blog.author}
-                className="w-20 h-20 rounded-full object-cover "
+                className="w-20 h-20 rounded-full object-cover"
               />
             ) : (
               <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center text-lg font-semibold">
@@ -627,7 +627,9 @@ const BlogDetail = () => {
                   alt={hasLiked(blog.id) ? "Liked" : "Not liked"}
                   className="w-5 h-5"
                 />
-                <span className={`${hasLiked(blog.id) ? "text-gray-400" : "text-red-600"}`}>
+                <span
+                  className={`${hasLiked(blog.id) ? "text-gray-400" : "text-red-600"}`}
+                >
                   {blog.likes}
                 </span>
               </button>

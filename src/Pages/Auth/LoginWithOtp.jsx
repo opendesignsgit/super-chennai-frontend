@@ -35,7 +35,7 @@ export default function LoginOtp2026() {
           phone: identifier,
         });
       } else {
-        return setError("Enter a valid email or 10-digit phone number");
+        return setError("Enter a valid  10-digit phone number");
         setLoading(false);
       }
 

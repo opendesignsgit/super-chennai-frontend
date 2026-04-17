@@ -20,7 +20,7 @@ export default function AlphabetFilter({ value, onChange }) {
               border-gray-300
               ${
                 value === l
-                  ? "activebuttonalpha bg-purple-600 text-white rounded-md"
+                  ? "activebuttonalpha bg-purple-600 text-white rounded-md "
                   : "text-gray-700 hover:bg-gray-200"
               }
             `}

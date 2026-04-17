@@ -228,11 +228,27 @@ export default function NeighbourhoodSearchBar({
           </button>
 
           {showExplore && (
+            // <button
+            //   onClick={() => setOpen(true)}
+            //   className="clickheretoexplorelocation"
+            // >
+            //   Click Here to Explore
+            // </button>
             <button
               onClick={() => setOpen(true)}
-              className="clickheretoexplorelocation"
+              className="clickheretoexplorelocation group relative overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(139,60,130,0.5)] hover:shadow-xl active:shadow-[0_0_20px_rgba(163,68,147,0.7)] active:scale-[0.97] hover:scale-[1.02]"
             >
-              Click Here to Explore
+              {/* Background shimmer layers */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#8b3c82]/30 via-[#a34493]/20 to-[#8b3c82]/30 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-sm -skew-x-12 animate-shimmer"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 -skew-x-12 animate-shimmer-delayed"></div>
+
+              <span className="relative z-10 font-semibold tracking-wide">
+                Click Here to Explore
+              </span>
+
+              {/* Floating particles on hover */}
+              <div className="absolute -top-2 -right-2 w-3 h-3 bg-[#8b3c82] rounded-full opacity-0 group-hover:opacity-60 animate-float"></div>
+              <div className="absolute -bottom-2 -left-2 w-2 h-2 bg-[#a34493] rounded-full opacity-0 group-hover:opacity-50 animate-float-delayed"></div>
             </button>
           )}
         </div>
@@ -246,7 +262,7 @@ export default function NeighbourhoodSearchBar({
       </div>
 
       {/* LOCATION MODAL */}
-      {openLocationsModal && (
+      {/* {openLocationsModal && (
         <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
           <div className="bg-white container max-w-5xl mx-auto px-4 relative popupseacrhinpout">
             <button
@@ -272,7 +288,138 @@ export default function NeighbourhoodSearchBar({
             />
           </div>
         </div>
+      )} */}
+      {openLocationsModal && (
+        <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center animate-backdrop-fade">
+          <div className="bg-white container max-w-5xl mx-auto px-4 relative popupseacrhinpout animate-modal-pop">
+            {/* Animated Close Button */}
+            <button
+              onClick={() => setOpenLocationsModal(false)}
+              className="absolute top-4 right-4 text-xl popupcloselocation group hover:scale-110 active:scale-95 transition-all duration-300 hover:rotate-90 hover:shadow-lg hover:shadow-[#8b3c82]/50"
+            >
+              <span className="relative z-10">✕</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#8b3c82]/30 to-[#a34493]/30 rounded-full opacity-0 group-hover:opacity-100 -skew-x-12 -translate-x-full group-hover:translate-x-0 transition-all duration-600 blur-sm"></div>
+            </button>
+
+            {/* Animated Header */}
+            <div className="workIntro animate-slide-down">
+              <h1 className="animate-title-glow">Neighbourhood</h1>
+              <p className="animate-fade-in-up">
+                Public transportation in Chennai is managed by various
+                government bodies...
+              </p>
+            </div>
+
+            {/* Animated Search */}
+            <div className="animate-slide-up">
+              <Search
+                onSearch={(q) => {
+                  navigate(`/neighbourhood?search=${encodeURIComponent(q)}`);
+                  setOpenLocationsModal(false);
+                }}
+              />
+            </div>
+          </div>
+        </div>
       )}
+
+      <style jsx>{`
+        /* Backdrop Animation */
+        @keyframes backdrop-fade {
+          0% {
+            opacity: 0;
+            backdrop-filter: blur(0px);
+          }
+          100% {
+            opacity: 1;
+            backdrop-filter: blur(12px);
+          }
+        }
+
+        /* Modal Pop Animation */
+        @keyframes modal-pop {
+          0% {
+            opacity: 0;
+            transform: scale(0.8) translateY(20px);
+          }
+          60% {
+            transform: scale(1.02);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
+        }
+
+        /* Content Animations */
+        @keyframes slide-down {
+          0% {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes slide-up {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes fade-in-up {
+          0% {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes title-glow {
+          0%,
+          100% {
+            text-shadow: 0 0 10px rgba(139, 60, 130, 0.3);
+            transform: scale(1);
+          }
+          50% {
+            text-shadow:
+              0 0 20px rgba(163, 68, 147, 0.6),
+              0 0 30px rgba(139, 60, 130, 0.4);
+            transform: scale(1.02);
+          }
+        }
+
+        .animate-backdrop-fade {
+          animation: backdrop-fade 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            forwards;
+        }
+        .animate-modal-pop {
+          animation: modal-pop 0.5s 0.1s cubic-bezier(0.34, 1.56, 0.64, 1)
+            forwards;
+        }
+        .animate-slide-down {
+          animation: slide-down 0.4s 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            both;
+        }
+        .animate-slide-up {
+          animation: slide-up 0.4s 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            both;
+        }
+        .animate-fade-in-up {
+          animation: fade-in-up 0.3s 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            both;
+        }
+        .animate-title-glow {
+          animation: title-glow 2s ease-in-out infinite;
+        }
+      `}</style>
 
       {/* EXPLORE MODAL */}
 
@@ -455,6 +602,48 @@ export default function NeighbourhoodSearchBar({
           </div>
         </div>
       )}
+
+      <style jsx>{`
+        @keyframes shimmer {
+          0% {
+            transform: translateX(-100%) skewX(-12deg);
+          }
+          100% {
+            transform: translateX(100%) skewX(-12deg);
+          }
+        }
+        @keyframes shimmer-delayed {
+          0% {
+            transform: translateX(-100%) skewX(-12deg);
+          }
+          100% {
+            transform: translateX(100%) skewX(-12deg);
+          }
+        }
+        .animate-shimmer {
+          animation: shimmer 2s infinite linear;
+        }
+        .animate-shimmer-delayed {
+          animation: shimmer-delayed 2.5s infinite linear 0.5s;
+        }
+        @keyframes float {
+          0%,
+          100% {
+            transform: translateY(0px) scale(1);
+            opacity: 0;
+          }
+          50% {
+            transform: translateY(-8px) scale(1.2);
+            opacity: 0.8;
+          }
+        }
+        .animate-float {
+          animation: float 1.5s ease-in-out infinite;
+        }
+        .animate-float-delayed {
+          animation: float 1.5s ease-in-out infinite 0.75s;
+        }
+      `}</style>
     </>
   );
 }

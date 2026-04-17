@@ -174,11 +174,7 @@ export default function NeighbourhoodDetail() {
                       >
                         <div class="imageeeeeee">
                           <img
-                            // src={
-                            //   API_BASE_URL_API_TEST_DEV +
-                            //     grouped[cat][0].FeaturedImage.url ||
-                            //   "/images/locationdefult.png"
-                            // }
+           
                             src={
                               grouped?.[cat]?.[0]?.FeaturedImage?.url
                                 ? API_BASE_URL_API_TEST_DEV +

@@ -15,11 +15,15 @@
 
 .alpabutton:first-child {
   padding-left: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .alpabutton:last-child {
   padding-right: 10px;
   border-right: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .alphapetfiltersection {
@@ -41,6 +45,7 @@
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
+
 .alpabutton.activebuttonalpha:last-child {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -101,8 +106,7 @@
   margin-top: 50px;
 }
 
-.filtersearchnew::before {
-}
+.filtersearchnew::before {}
 
 .searchbuttonfilt {
   font-family: "29LT Bukra Regular";
@@ -150,7 +154,8 @@
 .neighbourcardnew:hover {
   border-bottom: 3.5px solid #99509c;
   cursor: pointer;
-  transform: translateY(-10px); /* 👈 moves up */
+  transform: translateY(-10px);
+  /* 👈 moves up */
 }
 
 .neighimg {
@@ -234,6 +239,7 @@
   padding-right: 18px;
   padding-top: 16px;
 }
+
 .pointerdiv.buttonactivated {
   color: #9a4d93;
   border-radius: 25px 0 0 25px;
@@ -255,6 +261,7 @@
   font-weight: 400;
   border-bottom: 1px solid #b16caf;
 }
+
 /* .pointerdiv.buttonactivated {
   
 } */
@@ -321,6 +328,7 @@
   margin-right: 30px;
   margin-top: 0;
 }
+
 .locationseacrgpopuo button {
   width: 145px;
   height: 53px;
@@ -356,6 +364,7 @@
 .imageeeeeee {
   position: relative;
 }
+
 .imageeeeeee::before {
   width: 10px;
   height: 100%;
@@ -379,6 +388,7 @@
 .hoverlocationsection {
   padding-bottom: 200px;
 }
+
 .notlocationactived {
   font-size: 45px;
   text-transform: uppercase;
@@ -447,6 +457,7 @@
 .locationmainsection {
   margin-top: 80px;
 }
+
 .locationactived::after {
   position: absolute;
   content: "";
@@ -468,6 +479,7 @@
   align-items: flex-start;
   column-gap: 5px;
 }
+
 .iconsimagelocation img {
   width: 20px;
   height: 20px;
@@ -501,6 +513,7 @@
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
+
 .detailacrdsss img {
   height: 255px;
   width: 100%;
@@ -572,6 +585,7 @@
   cursor: pointer;
   font-family: "29LT Bukra SmBd";
 }
+
 .changethelocation button:hover {
   color: #892c7a;
   text-decoration: #892c7a underline;
@@ -590,6 +604,7 @@
   height: 540px;
   border-radius: 10px;
 }
+
 .mainlocationdd {
   display: flex;
   justify-content: center;
@@ -624,6 +639,7 @@
   font-weight: 600;
   cursor: pointer;
 }
+
 .slectmapoption option {
   font-size: 18px;
   line-height: 100%;
@@ -682,16 +698,17 @@
   line-height: 28px;
   margin-top: 30px;
 }
+
 .popupseacrhinpout .workIntro h1 {
   font-size: 78px;
   line-height: 70px;
 }
+
 .submainlocationdd input::placeholder {
   font-family: "29LT Bukra";
 }
 
-.searchpopupdivmain {
-}
+.searchpopupdivmain {}
 
 .headingtop {
   background-color: #995099;
@@ -712,6 +729,7 @@
   column-gap: 20px;
   justify-content: center;
 }
+
 .bodycardsection h3 {
   font-family: "29LT Bukra Regular";
   font-size: 14px;
@@ -850,6 +868,7 @@
     padding-bottom: 25px;
     padding-top: 25px;
   }
+
   .detailsmap p {
     margin-top: 10px;
   }
@@ -881,6 +900,7 @@
     width: 20px;
     height: 20px;
   }
+
   .margincontrl {
     padding-top: 10px;
   }
@@ -906,9 +926,11 @@
   .hoverlocationsection {
     min-height: 775px;
   }
+
   .locationmainsection {
     margin-top: 50px;
   }
+
   .popupseacrhinpout .searchhoodfilter {
     max-width: 600px;
   }
@@ -1014,6 +1036,7 @@
     padding-bottom: 25px;
     padding-top: 25px;
   }
+
   .detailsmap p {
     margin-top: 10px;
   }
@@ -1048,6 +1071,7 @@
     width: 20px;
     height: 20px;
   }
+
   .margincontrl {
     padding-top: 10px;
   }
@@ -1074,6 +1098,7 @@
   .hoverlocationsection {
     min-height: 775px;
   }
+
   .locationmainsection {
     margin-top: 50px;
   }
@@ -1136,6 +1161,7 @@
     overflow-y: scroll;
     height: 600px;
   }
+
   .leftsidescrolll {
     overflow-y: scroll;
     height: 470px;
@@ -1164,6 +1190,7 @@
   .neighbourhoodcontiner .container {
     max-width: 800px;
   }
+
   .searchhoodfilter {
     max-width: 495px;
     height: 47px;
@@ -1178,9 +1205,11 @@
     right: 17%;
     top: 3.9px;
   }
+
   .alphapetfiltersection {
     margin-top: 48px;
   }
+
   .alpabutton {
     width: 40px;
     height: 35px;
@@ -1229,6 +1258,7 @@
   .readmorelink {
     margin-top: 15px;
   }
+
   .alphapetfiltersection .girdcolumn {
     display: flex;
   }
@@ -1247,6 +1277,7 @@
     padding-bottom: 25px;
     padding-top: 25px;
   }
+
   .detailsmap p {
     margin-top: 10px;
   }
@@ -1289,6 +1320,7 @@
     width: 20px;
     height: 20px;
   }
+
   .margincontrl {
     padding-top: 10px;
   }
@@ -1315,6 +1347,7 @@
   .hoverlocationsection {
     min-height: 775px;
   }
+
   .locationmainsection {
     margin-top: 50px;
   }
@@ -1382,6 +1415,7 @@
     padding-left: 4%;
     padding-top: 40px;
   }
+
   .pointerdiv {
     font-size: 14px;
   }
@@ -1414,6 +1448,7 @@
     height: 600px;
     width: 70%;
   }
+
   .leftsidescrolll {
     overflow-y: scroll;
     height: 470px;
@@ -1473,6 +1508,7 @@
   .buttonsecc {
     margin-top: 23px;
   }
+
   .buttonsecc button {
     font-size: 17px;
     line-height: 17px;
@@ -1583,6 +1619,7 @@
     padding-bottom: 25px;
     padding-top: 25px;
   }
+
   .detailsmap p {
     margin-top: 10px;
   }
@@ -1644,6 +1681,7 @@
     padding-left: 3%;
     padding-top: 40px;
   }
+
   .pointerdiv {
     font-size: 13px;
   }
@@ -1676,6 +1714,7 @@
     height: 600px;
     width: 70%;
   }
+
   .leftsidescrolll {
     overflow-y: scroll;
     height: 470px;
@@ -1689,6 +1728,7 @@
     top: 4%;
     right: 4%;
   }
+
   .submainlocationdd {
     top: -32px;
     height: 59px;
@@ -1714,6 +1754,7 @@
   .slectmapoption {
     font-size: 15px;
   }
+
   .mainselectinputss {
     padding-right: 0;
     padding-left: 11px;
@@ -1774,6 +1815,7 @@
   .buttonsecc {
     margin-top: 23px;
   }
+
   .buttonsecc button {
     font-size: 17px;
     line-height: 17px;
@@ -1855,6 +1897,7 @@
   .readmorelink a {
     padding-left: 30px;
   }
+
   .carcontentsnew h4 {
     font-size: 16px;
     padding-left: 25px;
@@ -1901,6 +1944,7 @@
     padding-bottom: 25px;
     padding-top: 25px;
   }
+
   .detailsmap p {
     margin-top: 13px;
   }
@@ -2022,6 +2066,7 @@
     flex-shrink: 0;
     padding: 10px;
   }
+
   .pointerdiv.buttonactivated {
     border-radius: 0;
     padding-bottom: 7px;
@@ -2172,6 +2217,7 @@
   .buttonsecc {
     margin-top: 23px;
   }
+
   .buttonsecc button {
     font-size: 17px;
     line-height: 17px;
@@ -2220,6 +2266,7 @@
     height: 22px;
   }
 }
+
 @media (max-width: 600px) {
   .neighbourhoodcontiner .container {
     max-width: 100%;
@@ -2279,6 +2326,7 @@
   .readmorelink a {
     padding-left: 30px;
   }
+
   .carcontentsnew h4 {
     font-size: 16px;
     padding-left: 25px;
@@ -2322,6 +2370,7 @@
     justify-content: center;
     margin-bottom: 0;
   }
+
   .neighbourhoodcontiner .seachconatiners {
     padding-left: 0;
     padding-right: 0;
@@ -2342,6 +2391,7 @@
     padding-bottom: 25px;
     padding-top: 25px;
   }
+
   .detailsmap p {
     margin-top: 13px;
   }
@@ -2449,6 +2499,7 @@
     flex-shrink: 0;
     padding: 10px;
   }
+
   .pointerdiv.buttonactivated {
     border-radius: 0;
     padding-bottom: 10px;
@@ -2480,9 +2531,11 @@
     align-items: center;
     height: max-content;
   }
+
   .pointerdiv.buttonnonactivated:first-child {
     border-left: 0;
   }
+
   .locationname br {
     display: none;
   }
@@ -2636,6 +2689,7 @@
     overflow: visible;
     left: 38%;
   }
+
   .pointerdiv.buttonactivated:nth-of-type(1)::before {
     width: 0;
   }
@@ -2707,10 +2761,12 @@
     font-size: 45px;
     line-height: 96%;
   }
+
   .relatedsliderdivmain .slick-slide {
     padding-right: 0;
     padding-left: 0;
   }
+
   .arrorwwwwidth {
     width: 47px;
     height: 47px;

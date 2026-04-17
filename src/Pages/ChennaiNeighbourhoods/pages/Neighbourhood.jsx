@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import AlphabetFilter from "../Components/AlphabetFilter";
 import AreaFilter from "../Components/AreaFilter";
-import EmptyState from "../Components/locations/EmptyState";
+import CardEmptyState from "../Components/locations/CardEmptyState";
 import SkeletonLocations from "../Components/locations/SkeletonLocations";
 import Search from "../Components/Search";
 import { useLocations } from "../hooks/useLocations";
@@ -193,9 +193,9 @@ export default function ChennaiNeighbourhood() {
               {loading ? (
                 <SkeletonLocations />
               ) : error ? (
-                <EmptyState
+                <CardEmptyState
                   title="No Locations Found"
-                  message="No neighbourhoods match your search or filters."
+                  message="No results available for your search. We’re continuously adding new neighbourhoods—please check back soon."
                   onReset={() => {
                     updateFilter("q", "");
                     updateFilter("alpha", "");
@@ -203,9 +203,9 @@ export default function ChennaiNeighbourhood() {
                   }}
                 />
               ) : filteredLocations?.length === 0 ? (
-                <EmptyState
+                <CardEmptyState
                   title="No Locations Found"
-                  message="No neighbourhoods match your search or filters."
+                  message="No results available for your search. We’re continuously adding new neighbourhoods—please check back soon.."
                   onReset={() => {
                     updateFilter("q", "");
                     updateFilter("alpha", "");

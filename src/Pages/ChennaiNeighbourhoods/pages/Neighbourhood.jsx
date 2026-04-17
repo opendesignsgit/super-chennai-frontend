@@ -180,7 +180,10 @@ export default function ChennaiNeighbourhood() {
                   }}
                 />
 
-                <AlphabetFilter onChange={(v) => updateFilter("alpha", v)} />
+                <AlphabetFilter
+                  value={filters.alpha}
+                  onChange={(v) => updateFilter("alpha", v)}
+                />
               </div>
             </div>
           </section>

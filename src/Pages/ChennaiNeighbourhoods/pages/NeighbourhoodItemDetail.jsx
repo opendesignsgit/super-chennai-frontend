@@ -1,4 +1,4 @@
-import { Link, useParams,useNavigate } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 import LexicalContent from "../Components/LexicalContent";
 import { useNeighbourhood } from "../hooks/useNeighbourhood";
@@ -8,24 +8,23 @@ import NeighbourhoodSearchBar from "../Components/NeighbourhoodSearchBar";
 import EmptyState from "../Components/locations/EmptyState";
 import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
 import { useLocations } from "../hooks/useLocations";
+import Slider from "react-slick";
 
 export default function NeighbourhoodItemDetail() {
-  const { locationId, slug } = useParams();
+  const { locationId, slug, category, subcategory } = useParams();
+
   const { data, loading } = useNeighbourhood({
     location: locationId,
   });
   const { locations } = useLocations();
   const item = data?.find((i) => i.slug === slug);
 
-
   const navigate = useNavigate();
 
-const [isModalOpen, setIsModalOpen] = useState(false);
-const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const galleryImages = item?.gallery?.map(
-  (g) => API_BASE_URL_API_TEST_DEV + g.image.url
-) || [];
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const galleryImages =
+    item?.gallery?.map((g) => API_BASE_URL_API_TEST_DEV + g.image.url) || [];
 
   console.log("data EDUTHUKO ", item);
 
@@ -39,7 +38,6 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
       />
     );
 
-  const { subcategory } = useParams();
   const relatedItems =
     data?.filter(
       (i) =>
@@ -49,9 +47,63 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
           : i.category?.slug === category),
     ) || [];
 
+  const NextArrow = ({ onClick }) => {
+    return (
+      <div
+        className="absolute right-[-20px] top-1/2 -translate-y-1/2 z-10 cursor-pointer  text-white p-2  arrorwwwwidth"
+        onClick={onClick}
+      >
+        <img src="/images/icons/rightArrowsvg.svg" alt="" />
+      </div>
+    );
+  };
 
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <div
+        className="absolute left-[-20px] top-1/2 -translate-y-1/2 z-10 cursor-pointer  text-white p-2 arrorwwwwidth "
+        onClick={onClick}
+      >
+        <img src="/images/icons/LeftArrow-Bg.svg" alt="" />
+      </div>
+    );
+  };
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2500,
+    arrows: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
-
+  const safeCategory = category?.toLowerCase();
+  const safeSubcategory =
+    subcategory && subcategory !== "undefined" ? subcategory : safeCategory;
 
   return (
     <>
@@ -96,7 +148,7 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
         locations={locations}
         locationId={locationId}
       />
-      <div className="max-w-5xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-6 m-15">
+      <div className="max-w-7xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-6 m-15">
         <div className="flex items-start justify-between">
           {/* LEFT SIDE */}
           <div>
@@ -666,14 +718,14 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
         </div>
       </div>
       {relatedItems?.length > 0 && (
-        <div className="max-w-5xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-6 m-15">
+        <div className="max-w-7xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-6 m-15">
           {relatedItems.length > 0 && (
             <div className=" mt-10">
-              <h3 className="text-2xl font-bold mb-6 text-gray-800 capitalize">
-                {subcategory} Nearby
+              <h3 className="text-4xl font-bold mb-8 uppercase text-center text-[#a24390] fontfamilyyy">
+                Explore More {subcategory}
               </h3>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {relatedItems.map((item) => (
                   <div
                     key={item.id}
@@ -684,7 +736,6 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
                     }
                     className="cursor-pointer bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                   >
-                    {/* Image */}
                     <div className="relative">
                       <img
                         src={
@@ -701,13 +752,11 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
                         alt={item.name}
                       />
 
-                      {/* Rating Badge */}
                       <span className="absolute top-3 right-3 bg-yellow-500 text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
                         ⭐ {item.rating || "4.0"}
                       </span>
                     </div>
 
-                    {/* Content */}
                     <div className="p-4">
                       <h3 className="titlenamecontent">{item.name}</h3>
 
@@ -715,13 +764,75 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
                         {item.description || "No description available"}
                       </p>
 
-                      {/* Read More */}
                       <div className="mt-3">
                         <span className="readmorelink">Read More →</span>
                       </div>
                     </div>
                   </div>
                 ))}
+              </div> */}
+
+              <div className="relatedsliderdivmain">
+                <Slider {...settings}>
+                  {relatedItems.map((item) => (
+                    <a
+                      href={`/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`}
+                    >
+                      <div
+                        key={item.id}
+                        // onClick={() =>
+                        //   navigate(
+                        //     `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
+                        //   )
+                        // }
+                        className="cursor-pointer bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relatedcardssection"
+                      >
+                        {/* Image */}
+                        <div className="relative">
+                          <img
+                            src={
+                              item?.heroImage?.url
+                                ? API_BASE_URL_API_TEST_DEV + item.heroImage.url
+                                : "https://www.superchennai.com/images/restaurants-banner.jpg"
+                            }
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.src =
+                                "https://www.superchennai.com/images/restaurants-banner.jpg";
+                            }}
+                            className="w-full h-48 object-cover"
+                            alt={item.name}
+                          />
+
+                          {/* Rating Badge */}
+                          <span className="absolute top-3 right-3 bg-[#892c7a] text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
+                            ⭐ {item.rating || "4.0"}
+                          </span>
+                        </div>
+
+                        {/* Content */}
+                        <div className="p-4 slidercontentttss">
+                          <h3 className="titlenamecontent">{item.name}</h3>
+
+                          <p className="mt-2 text-sm text-black line-clamp-2">
+                            {item?.description?.slice(0, 80) ||
+                              "No description available"}
+                            ...
+                          </p>
+
+                          {/* Read More */}
+                          <div className="mt-2">
+                            <a
+                              href={`/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`}
+                            >
+                              <span className="readmorelink">Read More →</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  ))}
+                </Slider>
               </div>
             </div>
           )}

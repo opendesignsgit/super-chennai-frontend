@@ -749,6 +749,46 @@
   width: 30%;
 }
 
+/* .relatedcardssection {
+  width: 30%;
+} */
+
+.relatedsliderdivmain .slick-slide {
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.relatedsliderdivmain .slick-list {
+  padding-top: 15px;
+  margin-left: 30px;
+  margin-right: 35px;
+}
+
+.arrorwwwwidth {
+  width: 55px;
+  height: 55px;
+}
+
+.slidercontentttss {
+  min-height: 180px;
+  padding: 20px;
+}
+
+.slidercontentttss .readmorelink {
+  border-top: none;
+}
+
+.fontfamilyyy {
+  font-family: "NewAmsterdam";
+  letter-spacing: 1px;
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.relatedcardssection {
+  border: 1px solid #f3f3f3;
+}
+
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;
@@ -2661,6 +2701,19 @@
   .bodycardsection h3 {
     font-size: 13px;
     line-height: 18px;
+  }
+
+  .fontfamilyyy {
+    font-size: 45px;
+    line-height: 96%;
+  }
+  .relatedsliderdivmain .slick-slide {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .arrorwwwwidth {
+    width: 47px;
+    height: 47px;
   }
 }
 

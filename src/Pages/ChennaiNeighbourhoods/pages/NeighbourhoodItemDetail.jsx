@@ -340,9 +340,18 @@ export default function NeighbourhoodItemDetail() {
             <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
               <h3 className="text-xl font-semibold mb-4">Timings</h3>
 
+              {console.log("item.businessHours", item.businessHours)}
               {item.businessHours.map((b) => (
                 <div key={b.id}>
-                  {b.openTime} - {b.closeTime}
+                  <span style={{ fontWeight: "600" }}>{b.day} </span>:{" "}
+                  {b.isClosed ? (
+                    "Closed"
+                  ) : (
+                    <>
+                      {" "}
+                      {b.openTime} - {b.closeTime}{" "}
+                    </>
+                  )}
                 </div>
               ))}
             </div>
@@ -362,17 +371,16 @@ export default function NeighbourhoodItemDetail() {
 
               <div className="flex flex-wrap gap-2">
                 {item.subCategories.map((s) => (
-                  <span
+                  <a
+                    href={`/neighbourhood/${locationId}/${item.category?.title?.toLowerCase()}/${s.slug}`}
                     key={s.id}
-                    onClick={() =>
-                      navigate(
-                        `/neighbourhood/${locationId}/${item.category?.title?.toLowerCase()}/${s.slug}`,
-                      )
-                    }
+                    // onClick={() =>
+
+                    // }
                     className="bg-purple-100 text-purple-800 px-4 py-1 rounded-full text-sm font-medium hover:bg-purple-200 transition-colors cursor-pointer"
                   >
                     {s.title}
-                  </span>
+                  </a>
                 ))}
               </div>
             </div>

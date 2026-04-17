@@ -6,7 +6,7 @@ import { API_BASE_URL } from "../../../config";
 import BlogListSkeleton from "./components/BlogListSkeleton";
 import LikedIcon from "../../../public/images/icons/non-like.svg";
 import ViewsIcon from "../../../public/images/icons/blog-views.svg";
-import { useLocation, Link } from "react-router-dom"; 
+import { useLocation, Link } from "react-router-dom";
 
 const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
@@ -21,7 +21,9 @@ const BlogList = () => {
     }
 
     try {
-      const res = await axios.get(`${API_BASE_URL}/api/posts?limit=0&t=${new Date().getTime()}`);
+      const res = await axios.get(
+        `${API_BASE_URL}/api/posts?limit=0&t=${new Date().getTime()}`,
+      );
       if (!res.data?.docs?.length) {
         setBlogs([]);
         setFilteredBlogs([]);
@@ -70,7 +72,6 @@ const BlogList = () => {
     fetchBlogs();
   }, [location, fetchBlogs]);
 
-
   // This effect handles filtering whenever the search term OR the main blog list changes.
   useEffect(() => {
     const filtered = blogs.filter((blog) =>
@@ -78,7 +79,6 @@ const BlogList = () => {
     );
     setFilteredBlogs(filtered);
   }, [searchTerm, blogs]);
-
 
   if (loading) {
     return <BlogListSkeleton />;
@@ -153,6 +153,52 @@ const BlogList = () => {
         {/*----------------Blog Grid----------- */}
         <div className="container max-w-7xl mx-auto blogSectionNew">
           <div className="blog-grid-container blogSectionContiner">
+            {/* Static-Blog */}
+            {/* <div className="blog-card relative">
+              <a href="" className="blog-link block relative">
+                <img
+                  src="https://demo.superchennai.com/api/media/file/pincode-banner.jpg-1.jpeg"
+                  alt="How Chennai’s Pin Codes Still Shape Identity"
+                  className="blog-image"
+                />
+
+                <div
+                  className="absolute top-2 right-2 flex items-center gap-3
+                      bg-[#a34493]/90 text-white px-3 py-1 rounded-full text-xs backdrop-blur-sm"
+                >
+                  <div className="flex items-center gap-1">
+                    <img
+                      src="/images/icons/views-icon.svg"
+                      alt="Views"
+                      className="w-3.5 h-3.5 filter invert brightness-0"
+                    />
+                    <span>11</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img
+                        src="/images/icons/like-icon.svg"
+                      alt="Likes"
+                      className="w-3.5 h-3.5 filter invert brightness-0"
+                    />
+                    <span>21</span>
+                  </div>
+                </div>
+
+                <h3 className="blog-title">
+                  How Chennai’s Pin Codes Still Shape Identity
+                </h3>
+              </a>
+              <div className="blog-content">
+                <p className="blog-description">
+                  “In Chennai, a pin code is not just an address. It’s a
+                  personality.”
+                </p>
+                <Link to="" className="read-more">
+                  Read More →
+                </Link>
+              </div>
+            </div> */}
+            {/* Static-Blog */}
             {filteredBlogs.length > 0 ? (
               filteredBlogs.map((blog) => (
                 <div className="blog-card relative" key={blog.id}>
@@ -382,8 +428,6 @@ export default BlogList;
 //     return <BlogListSkeleton />;
 //   }
 
-
-  
 //   return (
 //     <>
 //       <Helmet>
@@ -469,7 +513,7 @@ export default BlogList;
 //                     )}
 
 //                     <div
-//                       className="absolute top-2 right-2 flex items-center gap-3 
+//                       className="absolute top-2 right-2 flex items-center gap-3
 //                        bg-[#a34493]/90 text-white px-3 py-1 rounded-full text-xs backdrop-blur-sm"
 //                     >
 //                       <div className="flex items-center gap-1">
@@ -550,4 +594,3 @@ export default BlogList;
 // };
 
 // export default BlogList;
-

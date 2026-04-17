@@ -553,7 +553,7 @@
   color: #383838;
   font-size: 16px;
   font-weight: 500;
-  margin-top: 13px;
+  margin-top: 5px;
 }
 
 .changethelocation {
@@ -935,6 +935,18 @@
 
   .locationactived::after {
     width: 42%;
+  }
+
+  .rightsidepopup {
+    overflow-y: scroll;
+    height: 600px;
+  }
+  .iconsimagelocation img {
+    width: 17px;
+    height: 17px;
+  }
+  .butoonsearchbutton {
+    font-size: 14px;
   }
 }
 
@@ -1546,9 +1558,11 @@
   }
 
   .neighbourcardnew {
+    width: 100%;
+  }
+  .neighbourhoodatag {
     width: 45%;
   }
-
   .neighimg {
     height: 142px;
     object-fit: cover;
@@ -1853,22 +1867,28 @@
   }
 
   .readmorelink a {
-    padding-left: 30px;
+    padding-left: 18px;
   }
   .carcontentsnew h4 {
     font-size: 16px;
-    padding-left: 25px;
+    padding-left: 15px;
     line-height: 108%;
     width: 86%;
   }
 
   .neighbourcardnew {
-    width: 45%;
+    width: 100%;
   }
-
+  .neighbourhoodatag {
+    width: 47%;
+  }
   .neighimg {
     height: 142px;
     object-fit: cover;
+  }
+
+  .carcontentsnew {
+    min-height: 150px;
   }
 
   .carcontentsnew h5 {
@@ -1880,6 +1900,9 @@
 
   .carcontentsnew .pincodestyle {
     font-size: 13px;
+    padding-left: 15px;
+    width: 90%;
+    line-height: 120%;
   }
 
   .readmorelink {
@@ -2287,6 +2310,10 @@
   }
 
   .neighbourcardnew {
+    width: 330px;
+  }
+
+  .neighbourhoodatag {
     width: 330px;
   }
 

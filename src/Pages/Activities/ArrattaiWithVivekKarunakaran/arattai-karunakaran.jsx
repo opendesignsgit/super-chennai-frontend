@@ -139,7 +139,9 @@ export default function ArattaiWithVivekKarunakaran() {
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
       <Helmet>
-        <title>Super Chennai Arattai with Fashion Designer Vivek Karunakaran</title>
+        <title>
+          Super Chennai Arattai with Fashion Designer Vivek Karunakaran
+        </title>
         <meta
           name="description"
           content="Vivek Karunakaran, Chennai fashion designer known for blending traditional textiles with modern aesthetics and shaping contemporary Indian fashion."
@@ -147,6 +149,10 @@ export default function ArattaiWithVivekKarunakaran() {
         <script type="application/ld+json">
           {JSON.stringify(arattaiSchema)}
         </script>
+        <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-vivek-karunakaran/chennai-fashion-designer`}
+        />
       </Helmet>
 
       {/* ================= BANNER ================= */}
@@ -213,7 +219,10 @@ export default function ArattaiWithVivekKarunakaran() {
                 across cultures.
               </p>
 
-              <p className="text-gray-600 leading-relaxed mb-6 "ref={registerRef}>
+              <p
+                className="text-gray-600 leading-relaxed mb-6 "
+                ref={registerRef}
+              >
                 Beyond the runway, his influence extends into collaborations,
                 styling, and cultural initiatives such as Adayalam, a platform
                 celebrating the intersection of art, craft, and design. His work

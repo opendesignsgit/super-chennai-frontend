@@ -114,17 +114,30 @@ export default function ArattaiWithVivekKarunakaran() {
   const arattaiSchema = [
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      headline: "Arattai with Vivek Karunakaran",
+      "@type": "Event",
+      name: "Arattai with Vivek Karunakaran",
       description:
-        "Super Chennai Arattai with Vivek Karunakaran, a leading contemporary fashion designer, sharing insights on fashion, identity, and innovation.",
-      image:
-        "https://www.superchennai.com/images/vivek-banner.jpeg",
-      author: {
-        "@type": "Person",
-        name: "Super Chennai",
+        "Vivek Karunakaran, Chennai fashion designer known for blending traditional textiles with modern aesthetics and shaping contemporary Indian fashion.",
+      image: "https://www.superchennai.com/images/vivek-innerpage-banner.jpeg",
+      startDate: "2026-04-16T09:00",
+      endDate: "2026-04-25T23:00",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: "",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "",
+          addressLocality: "",
+          postalCode: "",
+          addressCountry: "IN",
+        },
       },
-      datePublished: "2026-04-01",
+      performer: {
+        "@type": "Person",
+        name: "Vivek Karunakaran",
+      },
     },
   ];
 

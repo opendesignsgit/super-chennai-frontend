@@ -265,6 +265,8 @@ export default function ArattaiWithVivekKarunakaran() {
                 Limited Seats Only • Register Now
               </p>
 
+              
+
               <h2 className="themelink-color formheadingtheme-arattai">
                 Join Us for a Conversation with Vivek Karunakaran
               </h2>
@@ -275,10 +277,18 @@ export default function ArattaiWithVivekKarunakaran() {
 
               <button
                 onClick={() => setShowRegisterPopup(true)}
-                className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button"
+                className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button "
               >
                 Register Now
               </button>
+
+              {/* <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
+                <span className="relative z-10 flex items-center gap-2"onClick={() => setShowRegisterPopup(true)}>
+                  <div className="w-3 h-3 bg-white/20 rounded-full animate-ping "></div>
+                   Register Now
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
+              </div> */}
             </div>
           </div>
         </div>

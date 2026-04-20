@@ -1229,6 +1229,35 @@ export default function TrendingDetails() {
 
     ]
 
+
+        const PRmallSchema =[
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/moviemax-pr-mall-theatre-chennai"
+  },
+  "headline": "Chennai’s Latest Movie Experience Awaits",
+  "description": "MovieMax PR Mall features modern screens, 4K laser projection, Dolby 7.1 surround sound, comfortable seating, and affordable ticket prices for a great movie outing.",
+  "image": "https://www.superchennai.com/images/trendingchennai-mxmovie.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-04-11"
+}
+
+    ]
+
     return (
       <>
         <Helmet>
@@ -1253,6 +1282,12 @@ export default function TrendingDetails() {
             rel="canonical"
             href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
           />
+
+          {slug === "moviemax-pr-mall-theatre-chennai" && (
+            <script type="application/ld+json">
+              {JSON.stringify(PRmallSchema)}
+            </script>
+          )}
 
           {slug === "thangal-eri-park-ambattur" && (
             <script type="application/ld+json">

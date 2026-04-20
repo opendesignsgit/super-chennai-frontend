@@ -645,7 +645,7 @@ function App() {
         </div>
       )}
 
-      {!hideOnMargazhiPage && (
+      {/* {!hideOnMargazhiPage && (
         <div
           id="hotshots-event-tab"
           ref={stickyRef}
@@ -660,7 +660,25 @@ function App() {
             />
           </a>
         </div>
-      )}
+      )} */}
+
+      {!hideOnMargazhiPage && (
+  <div
+    id="hotshots-event-tab"
+    ref={stickyRef}
+    className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest${
+      footerReached ? "footerreached" : ""
+    } bubble-master`} // 🔥 UPGRADED CLASS
+  >
+    <a href="/day-to-deliver-quiz">
+      <img
+        src="/images/quiz-button.svg"
+        alt="artificial intelligence challenge"
+        className="bubble-glow" // 🔥 UPGRADED CLASS
+      />
+    </a>
+  </div>
+)}
 
       {/* <div
           ref={stickyRef}

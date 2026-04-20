@@ -383,7 +383,7 @@ export default function Manifesto() {
              <h3 className="text-center text-2xl md:text-3xl ">
                Manifesto in Your Hands
              </h3>
-              <h1 className="text-center text-2xl md:text-3xl hidden ">
+             <h1 className="text-center text-2xl md:text-3xl hidden ">
                Manifesto in Your Hands
              </h1>
            </div>
@@ -548,6 +548,39 @@ export default function Manifesto() {
            </Slider>
          </div>
        </div>
+
+       {/* explore chennai  */}
+
+       <section className=" bg-white">
+         <div className="container mx-auto px-6 lg:px-0">
+           <div className="max-w-4xl mx-auto text-center">
+             <div className="InvestChennaiContent-conclaves ">
+               <h1 className=" text-center hidden "></h1>
+               <h3>Chennai Infrastructure Boom 2026</h3>
+
+               <p className="text-gray-600 leading-relaxed mb-6 ">
+                 Chennai is undergoing a massive transformation with ₹90,000+
+                 crore infrastructure projects across metro, roads, and smart
+                 city developments. From mobility to water security, the city is
+                 rapidly evolving into a future-ready urban hub. Button: 
+                
+               </p>
+             </div>
+             <div className="flex flex-col items-center text-center space-y-4 py-10">
+               <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
+                 <span
+                   className="relative z-10 flex items-center gap-2"
+                   onClick={() => window.open("/pdfs/explore_more_chennai.pdf", "_blank")}
+                 >
+                   <div className="w-3 h-3 bg-white/20 rounded-full animate-ping "></div>
+                   Explore full report
+                 </span>
+                 <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
 
        {/* ================= POPUP ================= */}
 

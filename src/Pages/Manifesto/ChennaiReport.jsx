@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import AutoShrinkText from "../../Components/Text/AutoShrinkText";
+import { Link } from "react-router-dom";
 
 export default function ChennaiReport() {
   return (
@@ -15,7 +17,7 @@ export default function ChennaiReport() {
         />
       </Helmet>
 
-      <div className="relative overflow-hidden bg-gradient-to-b from-[#8b3c82] via-[#a34493]/90 to-[#8b3c82] pt-20 pb-20 px-6">
+      {/* <div className="relative overflow-hidden bg-gradient-to-b from-[#8b3c82] via-[#a34493]/90 to-[#8b3c82] pt-20 pb-20 px-6">
         <div className="absolute inset-0 bg-[linear-gradient(90deg,#2b3284_0%,#b10f92_50%,#2b3284_100%)]"></div>
 
         <div className="relative bg-gradient-to-b  p-10 max-w-4xl mx-auto ">
@@ -24,6 +26,37 @@ export default function ChennaiReport() {
               <div className="accodoamationBannerText">
                 <h3> Chennai Infrastructure</h3>
               </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="accaodomationBannerSection relative">
+        {/* IMAGE */}
+        <img
+          src="https://demo.superchennai.com/api/media/file/avakara-img.jpg.jpeg"
+          className="w-full h-[400px] object-cover"
+        />
+
+        {/* SHADE */}
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,#2b3284_0%,#b10f92_50%,#2b3284_100%)]"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
+        {/* CONTENT */}
+        <div className="accodoamationBannerContainer relative z-20">
+          <div className="accodoamationBannerText">
+            <AutoShrinkText
+              text="Chennai Infrastructure"
+              baseSize={60}
+              minSize={20}
+              maxChars={40}
+              className="accodoamationBannerText"
+              width="95%"
+              maxLines={2}
+            />
+
+            <div className="breadCrum newew">
+              <Link to="/visit-chennai">Home</Link> -{" "}
+              <span>Chennai Infrastructure</span>
             </div>
           </div>
         </div>

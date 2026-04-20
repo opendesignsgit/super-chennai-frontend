@@ -257,8 +257,6 @@ import ManifestoTest from "./Pages/Manifesto/menifesto-test";
 import ManifestoView from "./Pages/Manifesto/ManifestoViewExcel";
 import ChennaiReport from "./Pages/Manifesto/ChennaiReport";
 
- 
-
 import ScrollToHashElement from "./Components/ScrollToHashElement";
 
 import Chidambaram from "./Pages/SubPages/LivePages/Chidambaram";
@@ -336,7 +334,7 @@ import ExploreDiscovery from "./Pages/Explore/ExploreDiscovery";
 import IconofthemonthMarchKamakotti from "./Pages/Icon-of-the-month-march-26";
 import ArattaiWithKamakotti from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakotti";
 import ArattaikamakotiExcelView from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakoti-excel";
-import ArattaiKarunakaranExcelView from "./Pages/Activities/ArrattaiWithVivekKarunakaran/ArattaiKarunakaranExcelView"
+import ArattaiKarunakaranExcelView from "./Pages/Activities/ArrattaiWithVivekKarunakaran/ArattaiKarunakaranExcelView";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -666,22 +664,22 @@ function App() {
       )} */}
 
       {!hideOnMargazhiPage && (
-  <div
-    id="hotshots-event-tab"
-    ref={stickyRef}
-    className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest${
-      footerReached ? "footerreached" : ""
-    } bubble-master`} // 🔥 UPGRADED CLASS
-  >
-    <a href="/day-to-deliver-quiz">
-      <img
-        src="/images/quiz-button.svg"
-        alt="artificial intelligence challenge"
-        className="bubble-glow" // 🔥 UPGRADED CLASS
-      />
-    </a>
-  </div>
-)}
+        <div
+          id="hotshots-event-tab"
+          ref={stickyRef}
+          className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest${
+            footerReached ? "footerreached" : ""
+          } bubble-master`} // 🔥 UPGRADED CLASS
+        >
+          <a href="/day-to-deliver-quiz">
+            <img
+              src="/images/quiz-button.svg"
+              alt="artificial intelligence challenge"
+              className="bubble-glow" // 🔥 UPGRADED CLASS
+            />
+          </a>
+        </div>
+      )}
 
       {/* <div
           ref={stickyRef}
@@ -733,9 +731,9 @@ function App() {
           element={<ManifestoView />}
         />
         <Route
-  path="/chennai-infrastructure-intelligence-report"
-  element={<ChennaiReport />}
-/>
+          path="/chennai-infrastructure-intelligence-report"
+          element={<ChennaiReport />}
+        />
         <Route path="/chennai-contests" element={<SuperchennaiContests />} />
         <Route
           path="/chennai-contests/:slug"
@@ -785,8 +783,6 @@ function App() {
             </PublicRoute>
           }
         />
-
-        
 
         {/* <Route
           path="/login-otp2026"

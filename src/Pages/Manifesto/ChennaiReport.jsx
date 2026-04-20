@@ -40,7 +40,7 @@ export default function ChennaiReport() {
           />
         </div>
       </div> */}
-      
+
       <div className="min-h-[calc(100vh-20rem)] bg-gradient-to-br from-slate-50 via-white to-slate-50 -mt-8 pt-12 pb-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="group relative bg-white/80 backdrop-blur-sm border border-gray-100/50 rounded-3xl shadow-2xl shadow-gray-200/60 hover:shadow-3xl transition-all duration-700 overflow-hidden">
@@ -53,15 +53,30 @@ export default function ChennaiReport() {
               </div>
             </div>
 
-            <div className="pt-20 pb-8 px-6">
-              <embed
+            {/* <embed
+                src="/pdfs/explore_more_chennai.pdf#toolbar=0&navpanes=0&scrollbar=1"
+                type="application/pdf"
+                className="w-full h-[75vh] md:h-[82vh] border-0 bg-white rounded-2xl shadow-inner"
+                webkitallowfullscreen="true"
+                allowfullscreen="true"
+              /> */}
+
+            {/* <div className="pt-20 pb-8 px-6">
+              <iframe
                 src="/pdfs/explore_more_chennai.pdf#toolbar=0&navpanes=0&scrollbar=1"
                 type="application/pdf"
                 className="w-full h-[75vh] md:h-[82vh] border-0 bg-white rounded-2xl shadow-inner"
                 webkitallowfullscreen="true"
                 allowfullscreen="true"
               />
-            </div>
+            </div> */}
+
+            <iframe
+              src={`https://docs.google.com/gview?url=${encodeURIComponent(
+                "https://superchennai.com/pdfs/explore_more_chennai.pdf",
+              )}&embedded=true`}
+              className="w-full h-[75vh]"
+            />
 
             <div className="absolute bottom-6 left-6 bg-gradient-to-br from-[#8b3c82]/90 to-[#a34493]/90 text-white text-xs font-bold px-4 py-2 rounded-xl shadow-2xl hover:scale-105 transition-all duration-300 animate-float-slow">
               📊 Full Intelligence Report
@@ -99,4 +114,3 @@ export default function ChennaiReport() {
     </>
   );
 }
-

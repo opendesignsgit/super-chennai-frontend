@@ -30,7 +30,7 @@ export default function ChennaiReport() {
       </div>
 
       {/* Main Content */}
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white -mt-8 pt-12 pb-12 px-4 md:px-8">
+      {/* <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white -mt-8 pt-12 pb-12 px-4 md:px-8">
         <div className="max-w-8xl mx-auto">
           <iframe
             src="/pdfs/explore_more_chennai.pdf"
@@ -39,8 +39,8 @@ export default function ChennaiReport() {
             frameBorder="0"
           />
         </div>
-      </div>
-      {/* 
+      </div> */}
+      
       <div className="min-h-[calc(100vh-20rem)] bg-gradient-to-br from-slate-50 via-white to-slate-50 -mt-8 pt-12 pb-12 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="group relative bg-white/80 backdrop-blur-sm border border-gray-100/50 rounded-3xl shadow-2xl shadow-gray-200/60 hover:shadow-3xl transition-all duration-700 overflow-hidden">
@@ -95,7 +95,7 @@ export default function ChennaiReport() {
             animation: float-slow 4s ease-in-out infinite;
           }
         `}</style>
-      </div> */}
+      </div>
     </>
   );
 }

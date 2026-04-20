@@ -23,7 +23,6 @@ export default function ChennaiReport() {
             <div className="accodoamationBannerContainer">
               <div className="accodoamationBannerText">
                 <h3> Chennai Infrastructure</h3>
-                
               </div>
             </div>
           </div>
@@ -42,46 +41,74 @@ export default function ChennaiReport() {
         </div> */}
 
       {/* </div> */}
-      <div className="min-h-[calc(100vh-20rem)] bg-gradient-to-br from-slate-50 via-white to-slate-50 -mt-8 pt-12 pb-12 px-4 md:px-8">
-  <div className="max-w-7xl mx-auto">
-    <div className="group relative bg-white/80 backdrop-blur-sm border border-gray-100/50 rounded-3xl shadow-2xl shadow-gray-200/60 hover:shadow-3xl transition-all duration-700 overflow-hidden">
+  <div className="min-h-[calc(100vh-12rem)] bg-gradient-to-br from-slate-50 via-white to-slate-50 -mt-6 pt-8 pb-12 px-2 md:px-8">
+  <div className="max-w-6xl mx-auto">
+    <div className="group relative bg-white/90 backdrop-blur-sm border border-gray-100/60 rounded-3xl shadow-2xl shadow-gray-200/70 hover:shadow-3xl md:hover:shadow-gray-300/80 transition-all duration-500 overflow-hidden">
       
-      {/* PDF Header */}
-      <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-[#8b3c82]/10 to-[#a34493]/10 backdrop-blur-md border-b border-white/50 p-4 flex items-center justify-between z-10 group-hover:bg-[#8b3c82]/20 transition-all duration-500">
-        <div className="flex items-center space-x-3">
-          <div className="w-3 h-3 bg-gradient-to-r from-[#8b3c82] to-[#a34493] rounded-full animate-pulse"></div>
-          <span className="text-sm font-medium text-gray-700 tracking-wide">CHENNAI REPORT 2026</span>
+      {/* Mobile-Friendly Header */}
+      <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-[#8b3c82]/15 to-[#a34493]/15 backdrop-blur-lg border-b border-white/60 p-3 md:p-4 flex items-center justify-between z-10 group-hover:bg-[#8b3c82]/25 md:group-hover:bg-[#8b3c82]/20 transition-all duration-400">
+        <div className="flex items-center space-x-2 md:space-x-3">
+          <div className="w-2.5 h-2.5 md:w-3 md:h-3 bg-gradient-to-r from-[#8b3c82] to-[#a34493] rounded-full animate-pulse-slow"></div>
+          <span className="text-xs md:text-sm font-semibold text-gray-800 tracking-wide">
+            CHENNAI INFRASTRUCTURE 2026
+          </span>
+        </div>
+        <div className="hidden md:flex items-center space-x-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span className="text-xs text-gray-600 font-mono">PDF Preview</span>
+          <div className="w-5 h-5 bg-white/90 rounded-lg flex items-center justify-center shadow-sm text-xs">📄</div>
         </div>
       </div>
 
-      {/* 🔥 EMBED PDF - NO IFRAME BLOCKING */}
-      <div className="pt-20 pb-8 px-6">
-        <embed 
-          src="/pdfs/explore_more_chennai.pdf#toolbar=0&navpanes=0&scrollbar=1"
-          type="application/pdf"
-          className="w-full h-[75vh] md:h-[82vh] border-0 bg-white rounded-2xl shadow-inner"
-          webkitallowfullscreen="true"
-          allowfullscreen="true"
-        />
+      {/* 🔥 MOBILE-FIXED PDF VIEWER */}
+      <div className="pt-14 md:pt-20 pb-6 md:pb-8 px-3 md:px-6 relative">
+        {/* Primary: object (best mobile support) */}
+        <object 
+          data="/pdfs/explore_more_chennai.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH" 
+          type="application/pdf" 
+          className="w-full h-[70vh] md:h-[78vh] lg:h-[82vh] border-0 bg-white rounded-2xl shadow-inner block"
+          width="100%"
+          height="100%"
+        >
+          {/* Fallback 1: embed */}
+          <embed 
+            src="/pdfs/explore_more_chennai.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH" 
+            type="application/pdf" 
+            className="w-full h-[70vh] md:h-[78vh] lg:h-[82vh] border-0 bg-white rounded-2xl shadow-inner"
+            webkitallowfullscreen mozallowfullscreen allowfullscreen
+          />
+          {/* Fallback 2: Direct link */}
+          <a 
+            href="/pdfs/explore_more_chennai.pdf" 
+            className="block w-full h-[70vh] md:h-[78vh] lg:h-[82vh] bg-gradient-to-br from-[#8b3c82]/10 to-[#a34493]/10 rounded-2xl flex items-center justify-center text-xl font-bold text-gray-700 hover:text-[#a34493] transition-colors"
+          >
+            👆 Tap to Download Full Report
+          </a>
+        </object>
       </div>
 
-      {/* Bottom Badge */}
-      <div className="absolute bottom-6 left-6 bg-gradient-to-br from-[#8b3c82]/90 to-[#a34493]/90 text-white text-xs font-bold px-4 py-2 rounded-xl shadow-2xl hover:scale-105 transition-all duration-300 animate-float-slow">
-        📊 Full Intelligence Report
+      {/* Mobile-Optimized Badge */}
+      <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 bg-gradient-to-br from-[#8b3c82]/95 to-[#a34493]/95 text-white text-xs md:text-sm font-bold px-3 md:px-4 py-1.5 md:py-2 rounded-xl shadow-2xl shadow-black/40 hover:scale-105 active:scale-95 transition-all duration-200 md:animate-float-slow z-20">
+        📊 Intelligence Report 2026
       </div>
     </div>
   </div>
 
   <style jsx>{`
+    @media (max-width: 768px) {
+      .pdf-container * {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+    }
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 0.7; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
     @keyframes float-slow {
       0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-4px); }
+      50% { transform: translateY(-3px); }
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
-    }
-    .animate-pulse { animation: pulse 2s infinite; }
+    .animate-pulse-slow { animation: pulse-slow 2.5s infinite; }
     .animate-float-slow { animation: float-slow 4s ease-in-out infinite; }
   `}</style>
 </div>

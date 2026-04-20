@@ -152,71 +152,85 @@ export default function NeighbourhoodItemDetail() {
         <div className="flex items-start justify-between">
           {/* LEFT SIDE */}
           <div>
-            <h2 className="text-2xl font-semibold text-[#a34493]">
-              {item.name}
-            </h2>
-            <span className="text-purple-600 text-sm font-semibold">
+            <h2 className="text-2xl font-semibold titleeeeeeee">{item.name}</h2>
+            {/* <span className="text-[#000] text-sm font-semibold">
               {item.category?.title}
-            </span>
+            </span> */}
           </div>
 
           {/* RIGHT SIDE */}
           <div className="flex flex-col items-end gap-2 text-sm">
-            <div className="flex items-center gap-1 bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full font-medium">
+            <div className="flex items-center gap-1 bg-[#892c7a] text-[#fff] px-3 py-1 rounded-full font-medium">
               ⭐ <span>{item.rating}</span>
             </div>
 
             <div className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
-              Est. {item.establishedYear}
+              Established Year : {item.establishedYear}
             </div>
+            {console.log("establishedYear", item.establishedYear)}
           </div>
         </div>
 
         {/* GALLERY */}
-        {galleryImages.length > 0 && (
-          <div className="mt-10">
-            <div className="grid grid-cols-3 gap-2">
-              {/* Hero Image */}
-              <div className="col-span-2">
-                <img
-                  src={galleryImages[0]}
-                  alt="Gallery"
-                  className="w-full h-60 object-cover rounded-lg cursor-pointer"
-                  onClick={() => {
-                    setCurrentImageIndex(0);
-                    setIsModalOpen(true);
-                  }}
-                />
-              </div>
+        {galleryImages.length > 1 ? (
+          <>
+            <div className="mt-10">
+              <div className="grid grid-cols-3 gap-2">
+                <div className="col-span-2">
+                  <img
+                    src={galleryImages[0]}
+                    alt="Gallery"
+                    className="w-full h-60 object-cover rounded-lg cursor-pointer"
+                    onClick={() => {
+                      setCurrentImageIndex(0);
+                      setIsModalOpen(true);
+                    }}
+                  />
+                </div>
 
-              {/* Side Images */}
-              <div className="flex flex-col gap-2">
-                {galleryImages.slice(1, 4).map((img, i) => {
-                  const isLastVisible = i === 2 && galleryImages.length > 4;
+                {/* Side Images */}
+                <div className="flex flex-col gap-2">
+                  {galleryImages.slice(1, 4).map((img, i) => {
+                    const isLastVisible = i === 2 && galleryImages.length > 4;
 
-                  return (
-                    <div key={i} className="relative w-full h-[73px]">
-                      <img
-                        src={img}
-                        alt=""
-                        className="w-full h-full object-cover rounded-lg cursor-pointer"
-                        onClick={() => {
-                          setCurrentImageIndex(i + 1);
-                          setIsModalOpen(true);
-                        }}
-                      />
+                    return (
+                      <div key={i} className="relative w-full h-[73px]">
+                        <img
+                          src={img}
+                          alt=""
+                          className="w-full h-full object-cover rounded-lg cursor-pointer"
+                          onClick={() => {
+                            setCurrentImageIndex(i + 1);
+                            setIsModalOpen(true);
+                          }}
+                        />
 
-                      {isLastVisible && (
-                        <div className="absolute inset-0 bg-black/50 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                          +{galleryImages.length - 4}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
+                        {isLastVisible && (
+                          <div className="absolute inset-0 bg-black/50 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                            +{galleryImages.length - 4}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-          </div>
+          </>
+        ) : (
+          <>
+            <div className="col-span-2">
+              <img
+                src={galleryImages[0]}
+                alt="Gallery"
+                className="w-full h-[400px] object-cover rounded-lg cursor-pointer"
+                onClick={() => {
+                  setCurrentImageIndex(0);
+                  setIsModalOpen(true);
+                }}
+              />
+            </div>
+          </>
         )}
 
         {isModalOpen && (
@@ -284,11 +298,11 @@ export default function NeighbourhoodItemDetail() {
           </div>
         )}
 
-        <div className="max-w-6xl mx-auto px-4 py-10">
+        <div className="max-w-7xl mx-auto px-4 py-10">
           {/* TITLE */}
 
           {item.content && (
-            <div className="border border-gray-200 rounded-xl p-5">
+            <div className="border border-gray-200 rounded-xl p-5 detailpagestyleee">
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 About this {item.category?.title}
               </h2>
@@ -313,11 +327,10 @@ export default function NeighbourhoodItemDetail() {
               <h2 className="text-xl font-semibold text-gray-800 mb-4">
                 Location
               </h2>
+
               <iframe
-                src={`https://www.google.com/maps?q=${encodeURIComponent(
-                  item.locations.value,
-                )}&output=embed`}
-                className="w-full h-[300px] rounded"
+                src={`https://www.google.com/maps?q=${item.location.latitude},${item.location.longitude}&z=15&output=embed`}
+                className="w-full h-[400px] rounded"
               />
             </div>
           )}

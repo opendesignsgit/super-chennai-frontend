@@ -1,6 +1,6 @@
 import axios from "axios";
 import { AnimatePresence, motion } from "framer-motion";
-import { useRef, useState,useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import { API_BASE_URL_API } from "../../../config";
@@ -119,8 +119,7 @@ export default function Manifesto() {
     }
   };
 
-
-   /* ================= SLIDER SETTINGS ================= */
+  /* ================= SLIDER SETTINGS ================= */
 
   const sliderSettings = {
     dots: false,
@@ -132,155 +131,153 @@ export default function Manifesto() {
     autoplaySpeed: 2000,
   };
 
+  /* ================= MOBILE SYNC SLIDER ================= */
 
-   /* ================= MOBILE SYNC SLIDER ================= */
-  
-    const [nav1, setNav1] = useState(null);
-    const [nav2, setNav2] = useState(null);
-  
-    const slider1 = useRef(null);
-    const slider2 = useRef(null);
-  
-    useEffect(() => {
-      setNav1(slider1.current);
-      setNav2(slider2.current);
-    }, []);
-  
-    const mainSettings = {
-      arrows: false,
-      fade: true,
-      asNavFor: nav2,
-    };
-  
-    const thumbSettings = {
-      slidesToShow: 1,
-      swipeToSlide: true,
-      focusOnSelect: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      infinite: true,
-      asNavFor: nav1,
-      arrows: false,
-      centerMode: true,
-    };
+  const [nav1, setNav1] = useState(null);
+  const [nav2, setNav2] = useState(null);
 
-   const registerRef = useRef(null);
+  const slider1 = useRef(null);
+  const slider2 = useRef(null);
 
+  useEffect(() => {
+    setNav1(slider1.current);
+    setNav2(slider2.current);
+  }, []);
 
-   const manifestoschema = [
-     {
-       "@context": "https://schema.org/",
-       "@type": "BreadcrumbList",
-       itemListElement: [
-         {
-           "@type": "ListItem",
-           position: 1,
-           name: "Super Chennai",
-           item: "https://www.superchennai.com/",
-         },
-         {
-           "@type": "ListItem",
-           position: 2,
-           name: "Manifesto",
-           item: "https://www.superchennai.com/manifesto-info",
-         },
-       ],
-     },
+  const mainSettings = {
+    arrows: false,
+    fade: true,
+    asNavFor: nav2,
+  };
 
-     {
-       "@context": "https://schema.org",
-       "@type": "Article",
-       mainEntityOfPage: {
-         "@type": "WebPage",
-         "@id": "https://www.superchennai.com/manifesto-info",
-       },
-       headline: "Super CHennai Manifesto",
-       description:
-         "Learn about the Super Chennai Manifesto initiative where public voices, suggestions, and visions come together to shape Chennai’s future direction.",
-       image:
-         "https://www.superchennai.com/images/manifesto-innerpage-banner.png",
-       author: {
-         "@type": "Person",
-         name: "Super Chennai",
-       },
-       publisher: {
-         "@type": "Organization",
-         name: "",
-         logo: {
-           "@type": "ImageObject",
-           url: "",
-         },
-       },
-       datePublished: "2026-03-06",
-     },
-   ];
+  const thumbSettings = {
+    slidesToShow: 1,
+    swipeToSlide: true,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    asNavFor: nav1,
+    arrows: false,
+    centerMode: true,
+  };
 
-   return (
-     <>
-       <Helmet>
-         <title>
-           Super Chennai Manifesto – A Citizen Voice for City Progress
-         </title>
-         <meta
-           name="description"
-           content="Learn about the Super Chennai Manifesto initiative where public voices, suggestions, and visions come together to shape Chennai’s future direction."
-         />
-         <meta
-           property="og:title"
-           content="Learn about the Super Chennai Manifesto initiative where public voices, suggestions, and visions come together to shape Chennai’s future direction."
-         />
-         <meta
-           property="og:description"
-           content="Learn about the Super Chennai Manifesto initiative where public voices, suggestions, and visions come together to shape Chennai’s future direction."
-         />
-         <meta
-           property="og:image"
-           content="https://www.superchennai.com/images/manifesto-innerpage-banner.png"
-         />
-         <meta
-           property="og:url"
-           content="https://www.superchennai.com/images/manifesto-innerpage-banner.png"
-         />
-         <link
-           rel="canonical"
-           href={`${typeof window !== "undefined" ? window.location.origin : ""}/Manifesto-info`}
-         />
+  const registerRef = useRef(null);
 
-         <script type="application/ld+json">
-           {JSON.stringify(manifestoschema)}
-         </script>
-       </Helmet>
-       {/* ============== Banner ============ */}
-       {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden "> */}
-       <section
-         className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer"
-         onClick={() => {
-           registerRef.current?.scrollIntoView({
-             behavior: "smooth",
-             block: "center",
-           });
-         }}
-       >
-         <div className="relative z-0">
-           <img
-             className="eventsCalenderIamge hidden sm:block w-full"
-             src="/images/manifesto-innerpage-banner.png"
-             alt=" Carnatic Vocalist"
-           />
+  const manifestoschema = [
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Super Chennai",
+          item: "https://www.superchennai.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Manifesto",
+          item: "https://www.superchennai.com/manifesto-info",
+        },
+      ],
+    },
 
-           <img
-             className="block sm:hidden w-full"
-             src="/images/manifesto-mobile.jpeg"
-             alt="Aruna sairam"
-           />
-         </div>
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://www.superchennai.com/manifesto-info",
+      },
+      headline: "Super CHennai Manifesto",
+      description:
+        "Learn about the Super Chennai Manifesto initiative where public voices, suggestions, and visions come together to shape Chennai’s future direction.",
+      image:
+        "https://www.superchennai.com/images/manifesto-innerpage-banner.png",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-03-06",
+    },
+  ];
 
-         <div className="accodoamationBannerContainer relative z-20">
-           <div className="accodoamationBannerText"></div>
-         </div>
-       </section>
+  return (
+    <>
+      <Helmet>
+        <title>
+          Super Chennai Manifesto – A Citizen Voice for City Progress
+        </title>
+        <meta
+          name="description"
+          content="Learn about the Super Chennai Manifesto initiative where public voices, suggestions, and visions come together to shape Chennai’s future direction."
+        />
+        <meta
+          property="og:title"
+          content="Learn about the Super Chennai Manifesto initiative where public voices, suggestions, and visions come together to shape Chennai’s future direction."
+        />
+        <meta
+          property="og:description"
+          content="Learn about the Super Chennai Manifesto initiative where public voices, suggestions, and visions come together to shape Chennai’s future direction."
+        />
+        <meta
+          property="og:image"
+          content="https://www.superchennai.com/images/manifesto-innerpage-banner.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.superchennai.com/images/manifesto-innerpage-banner.png"
+        />
+        <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/Manifesto-info`}
+        />
 
-       {/* <section className=" mt-10 manifestoSection pb-20 relative">
+        <script type="application/ld+json">
+          {JSON.stringify(manifestoschema)}
+        </script>
+      </Helmet>
+      {/* ============== Banner ============ */}
+      {/* <section className="accaodomationBannerSection carquizbanner relative overflow-hidden "> */}
+      <section
+        className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer"
+        onClick={() => {
+          registerRef.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }}
+      >
+        <div className="relative z-0">
+          <img
+            className="eventsCalenderIamge hidden sm:block w-full"
+            src="/images/manifesto-innerpage-banner.png"
+            alt=" Carnatic Vocalist"
+          />
+
+          <img
+            className="block sm:hidden w-full"
+            src="/images/manifesto-mobile.jpeg"
+            alt="Aruna sairam"
+          />
+        </div>
+
+        <div className="accodoamationBannerContainer relative z-20">
+          <div className="accodoamationBannerText"></div>
+        </div>
+      </section>
+
+      {/* <section className=" mt-10 manifestoSection pb-20 relative">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="InvestChennaiContent-conclaves mb-8">
             <h3 className="text-center text-2xl md:text-3xl ">
@@ -375,336 +372,339 @@ export default function Manifesto() {
         </div>
       </section> */}
 
-       {/* NEW SCROLLER SECTIONS  */}
+      {/* NEW SCROLLER SECTIONS  */}
 
-       <section className=" mt-10 manifestoSection pb-20 relative manifestopage">
-         <div className="container max-w-7xl mx-auto px-4">
-           <div className="InvestChennaiContent-conclaves mb-8">
-             <h3 className="text-center text-2xl md:text-3xl ">
-               Manifesto in Your Hands
-             </h3>
-             <h1 className="text-center text-2xl md:text-3xl hidden ">
-               Manifesto in Your Hands
-             </h1>
-           </div>
+      <section className=" mt-10 manifestoSection pb-20 relative manifestopage">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="InvestChennaiContent-conclaves mb-8">
+            <h3 className="text-center text-2xl md:text-3xl ">
+              Manifesto in Your Hands
+            </h3>
+            <h1 className="text-center text-2xl md:text-3xl hidden ">
+              Manifesto in Your Hands
+            </h1>
+          </div>
 
-           <div className="items-center relative ">
-             <div className="text-center lg:text-left mb-8 lg:mb-0 relative md:absolute top-0 right-0 w-full md:w-[50%] z-[40] mb-30 manifestowidth">
-               <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
-                 DELIVERING THE MANIFESTO IS NOW IN YOUR HANDS
-               </h2>
+          <div className="items-center relative ">
+            <div className="text-center lg:text-left mb-8 lg:mb-0 relative md:absolute top-0 right-0 w-full md:w-[50%] z-[40] mb-30 manifestowidth">
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                DELIVERING THE MANIFESTO IS NOW IN YOUR HANDS
+              </h2>
 
-               <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base manifestopara">
-                 The future of Chennai is shaped by the aspirations of its
-                 people. Reason why, Super Chennai organised a day-long Conclave
-                 that brought together industry leaders, urban planners,
-                 administrators, thought leaders and citizens. The Conclave
-                 discussed and curated ideas across five defining pillars: Live,
-                 Work, Visit, Innovate and Invest.
-               </p>
-               <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
-                 Live, Work, Visit, Innovate and Invest
-               </h2>
+              <p className="paraZeroVolunteerSection mb-4 text-gray-700 leading-relaxed text-sm sm:text-base manifestopara">
+                The future of Chennai is shaped by the aspirations of its
+                people. Reason why, Super Chennai organised a day-long Conclave
+                that brought together industry leaders, urban planners,
+                administrators, thought leaders and citizens. The Conclave
+                discussed and curated ideas across five defining pillars: Live,
+                Work, Visit, Innovate and Invest.
+              </p>
+              <h2 className="themelink-color formheadingtheme-menifesto mb-6 text-xl sm:text-2xl md:text-3xl">
+                Live, Work, Visit, Innovate and Invest
+              </h2>
 
-               <p className="text-gray-600 leading-relaxed mb-2 text-sm sm:text-base manifestopara">
-                 Suffice to say, incredible insights were collated. And they
-                 have been put together as a Manifesto on what the people wish
-                 for, from Super Chennai.
-               </p>
+              <p className="text-gray-600 leading-relaxed mb-2 text-sm sm:text-base manifestopara">
+                Suffice to say, incredible insights were collated. And they have
+                been put together as a Manifesto on what the people wish for,
+                from Super Chennai.
+              </p>
 
-               <p
-                 className="themelink-color text-gray-600 leading-relaxed mb-6 text-sm sm:text-base manifestopara"
-                 style={{
-                   fontFamily: "NewAmsterdam",
-                   fontSize: "25px",
-                   marginBottom: "12px",
-                 }}
-               >
-                 Register your details to access and download the full
-                 manifesto.
-               </p>
+              <p
+                className="themelink-color text-gray-600 leading-relaxed mb-6 text-sm sm:text-base manifestopara"
+                style={{
+                  fontFamily: "NewAmsterdam",
+                  fontSize: "25px",
+                  marginBottom: "12px",
+                }}
+              >
+                Register your details to access and download the full manifesto.
+              </p>
 
-               <button
-                 ref={registerRef}
-                 onClick={() => setShowRegisterPopup(true)}
-                 className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
-               >
-                 Download
-               </button>
-             </div>
+              <button
+                ref={registerRef}
+                onClick={() => setShowRegisterPopup(true)}
+                className="bg-purple-700 hover:bg-purple-800 text-white py-3 px-8 rounded-lg font-semibold theme-button"
+              >
+                Download
+              </button>
+            </div>
 
-             <div className="bulbRectContainer relative w-full hidden md:block">
-               <Slider {...sliderSettings}>
-                 <div className="bulbimg">
-                   <img src="/images/wireImages/Visit.jpg" alt="visit" />
-                 </div>
+            <div className="bulbRectContainer relative w-full hidden md:block">
+              <Slider {...sliderSettings}>
+                <div className="bulbimg">
+                  <img src="/images/wireImages/Visit.jpg" alt="visit" />
+                </div>
 
-                 <div className="bulbimg">
-                   <img src="/images/wireImages/work.jpg" alt="work" />
-                 </div>
-                 <div className="bulbimg">
-                   <img src="/images/wireImages/innovate.jpg" alt="innovate" />
-                 </div>
+                <div className="bulbimg">
+                  <img src="/images/wireImages/work.jpg" alt="work" />
+                </div>
+                <div className="bulbimg">
+                  <img src="/images/wireImages/innovate.jpg" alt="innovate" />
+                </div>
 
-                 <div className="bulbimg">
-                   <img src="/images/wireImages/live.jpg" alt="live" />
-                 </div>
-                 <div className="bulbimg">
-                   <img src="/images/wireImages/Invest.jpg" alt="invest" />
-                 </div>
-               </Slider>
-             </div>
-           </div>
-         </div>
-       </section>
+                <div className="bulbimg">
+                  <img src="/images/wireImages/live.jpg" alt="live" />
+                </div>
+                <div className="bulbimg">
+                  <img src="/images/wireImages/Invest.jpg" alt="invest" />
+                </div>
+              </Slider>
+            </div>
+          </div>
+        </div>
+      </section>
 
-       <div className="block md:hidden manifestoslider">
-         {/* TOP IMAGE */}
+      <div className="block md:hidden manifestoslider">
+        {/* TOP IMAGE */}
 
-         <Slider {...mainSettings} ref={slider1}>
-           <div className="px-2">
-             <img
-               src="/images/menifestoSvg/bulb/Live.jpg"
-               alt=""
-               className="w-[300px] h-[500px]  rounded-xl"
-             />
-           </div>
+        <Slider {...mainSettings} ref={slider1}>
+          <div className="px-2">
+            <img
+              src="/images/menifestoSvg/bulb/Live.jpg"
+              alt=""
+              className="w-[300px] h-[500px]  rounded-xl"
+            />
+          </div>
 
-           <div className="px-2">
-             <img
-               src="/images/menifestoSvg/bulb/Innovate.jpg"
-               alt=""
-               className="w-[300px] h-[500px]  rounded-xl"
-             />
-           </div>
+          <div className="px-2">
+            <img
+              src="/images/menifestoSvg/bulb/Innovate.jpg"
+              alt=""
+              className="w-[300px] h-[500px]  rounded-xl"
+            />
+          </div>
 
-           <div className="px-2">
-             <img
-               src="/images/menifestoSvg/bulb/Invest.jpg"
-               alt=""
-               className="w-[300px] h-[500px]  rounded-xl"
-             />
-           </div>
+          <div className="px-2">
+            <img
+              src="/images/menifestoSvg/bulb/Invest.jpg"
+              alt=""
+              className="w-[300px] h-[500px]  rounded-xl"
+            />
+          </div>
 
-           <div className="px-2">
-             <img
-               src="/images/menifestoSvg/bulb/Visit.jpg"
-               alt=""
-               className="w-[300px] h-[500px]  rounded-xl"
-             />
-           </div>
+          <div className="px-2">
+            <img
+              src="/images/menifestoSvg/bulb/Visit.jpg"
+              alt=""
+              className="w-[300px] h-[500px]  rounded-xl"
+            />
+          </div>
 
-           <div className="px-2">
-             <img
-               src="/images/menifestoSvg/bulb/work.jpg"
-               alt=""
-               className="w-[300px] h-[500px]  rounded-xl"
-             />
-           </div>
-         </Slider>
+          <div className="px-2">
+            <img
+              src="/images/menifestoSvg/bulb/work.jpg"
+              alt=""
+              className="w-[300px] h-[500px]  rounded-xl"
+            />
+          </div>
+        </Slider>
 
-         {/* BOTTOM AUTO SCROLL */}
-         <div className="mt-6">
-           <Slider {...thumbSettings} ref={slider2}>
-             <div className="px-2 p-5">
-               <img
-                 src="/images/menifestoSvg/live.svg"
-                 alt=""
-                 className="w-[300px] h-[400px]  rounded-xl"
-               />
-             </div>
+        {/* BOTTOM AUTO SCROLL */}
+        <div className="mt-6">
+          <Slider {...thumbSettings} ref={slider2}>
+            <div className="px-2 p-5">
+              <img
+                src="/images/menifestoSvg/live.svg"
+                alt=""
+                className="w-[300px] h-[400px]  rounded-xl"
+              />
+            </div>
 
-             <div className="px-2 p-5">
-               <img
-                 src="/images/menifestoSvg/inovate.svg"
-                 alt=""
-                 className="w-[300px] h-[400px]  rounded-xl"
-               />
-             </div>
+            <div className="px-2 p-5">
+              <img
+                src="/images/menifestoSvg/inovate.svg"
+                alt=""
+                className="w-[300px] h-[400px]  rounded-xl"
+              />
+            </div>
 
-             <div className="px-2 p-5">
-               <img
-                 src="/images/menifestoSvg/invest.svg"
-                 alt=""
-                 className="w-[300px] h-[400px]  rounded-xl"
-               />
-             </div>
+            <div className="px-2 p-5">
+              <img
+                src="/images/menifestoSvg/invest.svg"
+                alt=""
+                className="w-[300px] h-[400px]  rounded-xl"
+              />
+            </div>
 
-             <div className="px-2">
-               <img
-                 src="/images/menifestoSvg/visit.svg"
-                 alt=""
-                 className="w-[300px] h-[400px]  rounded-xl"
-               />
-             </div>
+            <div className="px-2">
+              <img
+                src="/images/menifestoSvg/visit.svg"
+                alt=""
+                className="w-[300px] h-[400px]  rounded-xl"
+              />
+            </div>
 
-             <div className="px-2">
-               <img
-                 src="/images/menifestoSvg/work.svg"
-                 alt=""
-                 className="w-[300px] h-[400px]  rounded-xl"
-               />
-             </div>
-           </Slider>
-         </div>
-       </div>
+            <div className="px-2">
+              <img
+                src="/images/menifestoSvg/work.svg"
+                alt=""
+                className="w-[300px] h-[400px]  rounded-xl"
+              />
+            </div>
+          </Slider>
+        </div>
+      </div>
 
-       {/* explore chennai  */}
+      {/* explore chennai  */}
 
-       <section className=" bg-white">
-         <div className="container mx-auto px-6 lg:px-0">
-           <div className="max-w-4xl mx-auto text-center">
-             <div className="InvestChennaiContent-conclaves ">
-               <h1 className=" text-center hidden "></h1>
-               <h3>Chennai Infrastructure Boom 2026</h3>
+      <section className=" bg-white">
+        <div className="container mx-auto px-6 lg:px-0">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="InvestChennaiContent-conclaves ">
+              <h1 className=" text-center hidden "></h1>
+              <h3>Chennai Infrastructure Boom 2026</h3>
 
-               <p className="text-gray-600 leading-relaxed mb-6 ">
-                 Chennai is undergoing a massive transformation with ₹90,000+
-                 crore infrastructure projects across metro, roads, and smart
-                 city developments. From mobility to water security, the city is
-                 rapidly evolving into a future-ready urban hub.
-                
-               </p>
-             </div>
-             <div className="flex flex-col items-center text-center space-y-4 py-10">
-               <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
-                 <span
-                   className="relative z-10 flex items-center gap-2"
-                   onClick={() => window.open("/pdfs/explore_more_chennai.pdf", "_blank")}
-                 >
-                   <div className="w-3 h-3 bg-white/20 rounded-full animate-ping "></div>
-                  What Chennai Needs 
-                 </span>
-                 <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </section>
+              <p className="text-gray-600 leading-relaxed mb-6 ">
+                Chennai is undergoing a massive transformation with ₹90,000+
+                crore infrastructure projects across metro, roads, and smart
+                city developments. From mobility to water security, the city is
+                rapidly evolving into a future-ready urban hub.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center space-y-4 py-10">
+              <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
+                <a href="/chennai-infrastructure-intelligence-report">
+                  <span
+                    className="relative z-10 flex items-center gap-2"
+                    //  onClick={() => window.open("/pdfs/explore_more_chennai.pdf", "_blank")}
+                    // onClick={() =>
+                    //   navigate("/chennai-infrastructure-intelligence-report")
+                    // }
+                  >
+                    <div className="w-3 h-3 bg-white/20 rounded-full animate-ping "></div>
+                    What Chennai Needs
+                  </span>
+                </a>
+                <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-       {/* ================= POPUP ================= */}
+      {/* ================= POPUP ================= */}
 
-       <AnimatePresence>
-         {showRegisterPopup && (
-           <motion.div
-             className="fixed inset-0 bg-black/60 z-[99999] flex items-center justify-center px-4"
-             initial={{ opacity: 0 }}
-             animate={{ opacity: 1 }}
-             exit={{ opacity: 0 }}
-             onClick={() => setShowRegisterPopup(false)}
-           >
-             <motion.div
-               className="bg-white rounded-2xl shadow-xl w-full max-w-2xl relative"
-               initial={{ scale: 0.85, y: 40, opacity: 0 }}
-               animate={{ scale: 1, y: 0, opacity: 1 }}
-               exit={{ scale: 0.85, y: 40, opacity: 0 }}
-               transition={{ duration: 0.3 }}
-               onClick={(e) => e.stopPropagation()}
-             >
-               <button
-                 onClick={() => setShowRegisterPopup(false)}
-                 className="absolute top-4 right-4 text-2xl font-bold text-gray-600"
-               >
-                 ×
-               </button>
+      <AnimatePresence>
+        {showRegisterPopup && (
+          <motion.div
+            className="fixed inset-0 bg-black/60 z-[99999] flex items-center justify-center px-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setShowRegisterPopup(false)}
+          >
+            <motion.div
+              className="bg-white rounded-2xl shadow-xl w-full max-w-2xl relative"
+              initial={{ scale: 0.85, y: 40, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.85, y: 40, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setShowRegisterPopup(false)}
+                className="absolute top-4 right-4 text-2xl font-bold text-gray-600"
+              >
+                ×
+              </button>
 
-               <form
-                 onSubmit={submitManifesto}
-                 className="p-6 md:p-10 space-y-4 max-h-[90vh] overflow-y-auto"
-               >
-                 <h2 className="themelink-color formheadingtheme text-center">
-                   Manifesto Submission
-                 </h2>
+              <form
+                onSubmit={submitManifesto}
+                className="p-6 md:p-10 space-y-4 max-h-[90vh] overflow-y-auto"
+              >
+                <h2 className="themelink-color formheadingtheme text-center">
+                  Manifesto Submission
+                </h2>
 
-                 <p className="text-gray-600 text-center">
-                   Be part of shaping Chennai’s future.
-                 </p>
+                <p className="text-gray-600 text-center">
+                  Be part of shaping Chennai’s future.
+                </p>
 
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                   <input
-                     name="name"
-                     placeholder="Name *"
-                     className="border p-3 rounded-lg"
-                     value={form.name}
-                     onChange={handleChange}
-                     required
-                   />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    name="name"
+                    placeholder="Name *"
+                    className="border p-3 rounded-lg"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
+                  />
 
-                   <input
-                     type="email"
-                     name="email"
-                     placeholder="Email *"
-                     className="border p-3 rounded-lg"
-                     value={form.email}
-                     onChange={handleChange}
-                     required
-                   />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email *"
+                    className="border p-3 rounded-lg"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
+                  />
 
-                   <div className="relative">
-                     <input
-                       name="phone"
-                       placeholder="Enter mobile number *"
-                       className="border p-3 pr-28 rounded-lg w-full"
-                       value={form.phone}
-                       onChange={handleChange}
-                       disabled={otpSent}
-                       required
-                     />
+                  <div className="relative">
+                    <input
+                      name="phone"
+                      placeholder="Enter mobile number *"
+                      className="border p-3 pr-28 rounded-lg w-full"
+                      value={form.phone}
+                      onChange={handleChange}
+                      disabled={otpSent}
+                      required
+                    />
 
-                     {!otpSent && (
-                       <button
-                         type="button"
-                         onClick={sendOtp}
-                         className="absolute right-2 top-1/2 -translate-y-1/2 
+                    {!otpSent && (
+                      <button
+                        type="button"
+                        onClick={sendOtp}
+                        className="absolute right-2 top-1/2 -translate-y-1/2 
                         bg-[#8b3c82] text-white text-sm px-4 py-2 rounded-md"
-                       >
-                         Send OTP
-                       </button>
-                     )}
-                   </div>
+                      >
+                        Send OTP
+                      </button>
+                    )}
+                  </div>
 
-                   {otpSent && (
-                     <input
-                       name="otp"
-                       placeholder="Enter OTP *"
-                       className="border p-3 rounded-lg"
-                       value={form.otp}
-                       onChange={handleChange}
-                       required
-                     />
-                   )}
+                  {otpSent && (
+                    <input
+                      name="otp"
+                      placeholder="Enter OTP *"
+                      className="border p-3 rounded-lg"
+                      value={form.otp}
+                      onChange={handleChange}
+                      required
+                    />
+                  )}
 
-                   <input
-                     name="companyName"
-                     placeholder="Company Name"
-                     className="border p-3 rounded-lg"
-                     value={form.companyName}
-                     onChange={handleChange}
-                   />
+                  <input
+                    name="companyName"
+                    placeholder="Company Name"
+                    className="border p-3 rounded-lg"
+                    value={form.companyName}
+                    onChange={handleChange}
+                  />
 
-                   <input
-                     name="designation"
-                     placeholder="Designation"
-                     className="border p-3 rounded-lg"
-                     value={form.designation}
-                     onChange={handleChange}
-                   />
-                 </div>
+                  <input
+                    name="designation"
+                    placeholder="Designation"
+                    className="border p-3 rounded-lg"
+                    value={form.designation}
+                    onChange={handleChange}
+                  />
+                </div>
 
-                 {/* FULL WIDTH TEXTAREA (same spacing system) */}
-                 <div className="hidden">
-                   <textarea
-                     name="manifesto"
-                     placeholder="Write your Manifesto *"
-                     className="border p-3 rounded-lg w-full h-32"
-                     value={form.manifesto}
-                     onChange={handleChange}
-                     required
-                   />
-                 </div>
+                {/* FULL WIDTH TEXTAREA (same spacing system) */}
+                <div className="hidden">
+                  <textarea
+                    name="manifesto"
+                    placeholder="Write your Manifesto *"
+                    className="border p-3 rounded-lg w-full h-32"
+                    value={form.manifesto}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
 
-                 {/* HIDDEN TEXTAREA */}
-                 {/* <div className="hidden">
+                {/* HIDDEN TEXTAREA */}
+                {/* <div className="hidden">
                   <textarea
                     name="manifesto"
                     value={
@@ -715,19 +715,19 @@ export default function Manifesto() {
                   />
                 </div> */}
 
-                 <button
-                   type="submit"
-                   disabled={loading}
-                   className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button-full"
-                 >
-                   {loading ? "Processing..." : "Submit & Download Manifesto"}
-                 </button>
-               </form>
-             </motion.div>
-           </motion.div>
-         )}
-       </AnimatePresence>
-       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
-     </>
-   );
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button-full"
+                >
+                  {loading ? "Processing..." : "Submit & Download Manifesto"}
+                </button>
+              </form>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
+    </>
+  );
 }

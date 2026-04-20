@@ -255,6 +255,9 @@ import ManifestoPageInfoPAge from "./Pages/Manifesto/menifetoInfo";
 import ManifestoTest from "./Pages/Manifesto/menifesto-test";
 
 import ManifestoView from "./Pages/Manifesto/ManifestoViewExcel";
+import ChennaiReport from "./Pages/Manifesto/ChennaiReport";
+
+ 
 
 import ScrollToHashElement from "./Components/ScrollToHashElement";
 
@@ -729,7 +732,10 @@ function App() {
           path="/manifesto-admin-all-doc-secure-datas"
           element={<ManifestoView />}
         />
-
+        <Route
+  path="/chennai-infrastructure-intelligence-report"
+  element={<ChennaiReport />}
+/>
         <Route path="/chennai-contests" element={<SuperchennaiContests />} />
         <Route
           path="/chennai-contests/:slug"

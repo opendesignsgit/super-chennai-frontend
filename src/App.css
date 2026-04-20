@@ -1376,13 +1376,15 @@
 
 
 
-/* 🔥 MASTER BUBBLE ANIMATION */
+/* 🔥 MASTER BUBBLE ANIMATION TAB SIDE  */
 .bubble-master {
   animation: 
     bubbleFloatXL 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite,
     bubbleWobble 6s ease-in-out infinite,
     bubbleGlowShift 8s ease-in-out infinite alternate;
   filter: drop-shadow(0 8px 25px rgba(59, 130, 246, 0.3));
+    /* filter: drop-shadow(0 8px 25px rgba(134, 226, 12, 0.3)); */
+
 }
 
 .bubble-glow {
@@ -1466,3 +1468,7 @@
             drop-shadow(0 0 0px rgba(255,255,255,0.8));
   }
 }
+
+
+
+

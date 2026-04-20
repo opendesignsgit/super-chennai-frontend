@@ -562,7 +562,7 @@ export default function Manifesto() {
                  Chennai is undergoing a massive transformation with ₹90,000+
                  crore infrastructure projects across metro, roads, and smart
                  city developments. From mobility to water security, the city is
-                 rapidly evolving into a future-ready urban hub. Button: 
+                 rapidly evolving into a future-ready urban hub.
                 
                </p>
              </div>
@@ -573,7 +573,7 @@ export default function Manifesto() {
                    onClick={() => window.open("/pdfs/explore_more_chennai.pdf", "_blank")}
                  >
                    <div className="w-3 h-3 bg-white/20 rounded-full animate-ping "></div>
-                   Explore full report
+                  What Chennai Needs 
                  </span>
                  <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
                </div>

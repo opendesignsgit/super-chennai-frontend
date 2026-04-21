@@ -573,7 +573,7 @@ export default function Manifesto() {
                     // }
                   >
                     <div className="w-3 h-3 bg-white/20 rounded-full animate-ping "></div>
-                    What Chennai Needs
+                     Chennai Infrastructure Intelligence Report
                   </span>
                 </a>
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>

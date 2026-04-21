@@ -95,7 +95,7 @@ export default function ChennaiReport() {
                   VIEW FULL REPORT
                 </a> */}
                 <a
-                  href="/pdfs/explore_more_chennai.pdf"
+                  href="/pdfs/infrastructure-intelligence-report.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

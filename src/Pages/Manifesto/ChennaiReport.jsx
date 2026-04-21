@@ -84,7 +84,7 @@ export default function ChennaiReport() {
             </div>
             <div className="flex flex-col items-center text-center space-y-4 py-10">
               <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
-                <a
+                {/* <a
                   href="/pdfs/explore_more_chennai.pdf"
                   download="Chennai-Infrastructure-Report-2026.pdf"
                   target="_blank"
@@ -93,6 +93,16 @@ export default function ChennaiReport() {
                 >
                   <div className="w-3 h-3 bg-white/20 rounded-full animate-ping"></div>
                   VIEW FULL REPORT
+                </a> */}
+                <a
+                  href="/pdfs/explore_more_chennai.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="relative z-10 flex items-center gap-2">
+                    <div className="w-3 h-3 bg-white/20 rounded-full animate-ping"></div>
+                    VIEW FULL REPORT
+                  </span>
                 </a>
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
               </div>

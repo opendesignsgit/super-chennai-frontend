@@ -563,7 +563,8 @@ export default function Manifesto() {
             </div>
             <div className="flex flex-col items-center text-center space-y-4 py-10">
               <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
-                <a href="/chennai-infrastructure-intelligence-report">
+                {/* <a href="/chennai-infrastructure-intelligence-report"> */}
+                <a href="/pdfs/infrastructure-intelligence-report.pdf">
                   <span
                     className="relative z-10 flex items-center gap-2"
                     //  onClick={() => window.open("/pdfs/explore_more_chennai.pdf", "_blank")}

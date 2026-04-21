@@ -7575,6 +7575,121 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+
+  {
+    id: 102342,
+    name: "New Park Opens in Villivakkam for Fitness & Family Fun",
+    slug: "villivakkam-new-park-agathiyar-nagar",
+    para: "A New Green Space for Fitness & Relaxation in Chennai",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Recently Opened",
+    TrendingCalendarCategory: "Lifestyle | Parks | Trending",
+    image: "/images/trendingChennai/trending-chennai-park.jpeg",
+    Homeimage: "/images/trendingChennai/trending-chennai-park.jpeg",
+    link: "/trending-chennai/villivakkam-new-park-agathiyar-nagar",
+    duration: "Open Daily",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Park | Fitness | Family",
+    venue: "Agathiyar Nagar Park, Villivakkam, Chennai",
+
+    trendingDetails: `
+<p>
+Chennai just got a fresh new hangout spot! 🌿🔥 A beautiful <b>new park</b> has opened in <b>Agathiyar Nagar, Villivakkam</b>, offering the perfect space for fitness, relaxation, and family time.
+</p>
+
+<p>
+Whether you're heading out for a morning workout, an evening stroll, or a fun weekend outing, this park has something for everyone 💚
+</p>
+
+<p>
+<b>✨ What’s inside:</b>
+</p>
+
+<p>
+• 🏸 <b>Shuttle Court:</b> Open from 6 AM – 10 AM & 4 PM – 8 PM for badminton lovers.<br>
+• 🚶 <b>Walking Space:</b> Ideal for daily walks and light workouts.<br>
+• 👨‍👩‍👧‍👦 <b>Kids Play Area:</b> Safe and fun zone for children.<br>
+• ⚽ <b>Playground:</b> Great for sports and outdoor activities.
+</p>
+
+<p>
+This new park is a great addition to the Villivakkam neighborhood, creating a lively and healthy environment for all age groups 🙌
+</p>
+
+<p>
+<a href="https://www.instagram.com/reel/DXMUH8_lNRk/?igsh=MTI1b2tscnJxeGs5dQ==" target="_blank">▶️ Click here to watch</a>
+</p>
+`,
+
+    TrendingLink:
+      "https://www.instagram.com/reel/DXMUH8_lNRk/?igsh=MTI1b2tscnJxeGs5dQ==",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Villivakkam New Park: New Family-Friendly Park in Chennai",
+      desc: "Villivakkam new park at Agathiyar Nagar features a shuttle court, walking area, kids play zone, and playground—ideal for fitness, relaxation, and family outings.",
+      url: "https://www.superchennai.com/trending-chennai/villivakkam-new-park-agathiyar-nagar",
+    },
+  },
+
+  {
+    id: 102341,
+    name: "Mudhalvar Thirumana Maaligai Opens in Chennai for Weddings",
+    slug: "mudhalvar-thirumana-maaligai-chennai",
+    para: "A New Affordable Wedding Hall in Chennai",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Recently Opened",
+    TrendingCalendarCategory: "Lifestyle | Weddings | Trending",
+    image: "/images/trendingChennai/TRENDING-CHENNAI-hall.jpeg",
+    Homeimage: "/images/trendingChennai/TRENDING-CHENNAI-hall.jpeg",
+    link: "/trending-chennai/mudhalvar-thirumana-maaligai-chennai",
+    duration: "Flexible Booking",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Marriage Hall | Government Facility | Lifestyle",
+    venue: "Mudhalvar Thirumana Maaligai, Wall Tax Road, Chennai",
+
+    trendingDetails: `
+<p>
+Chennai welcomes a new budget-friendly wedding destination! 💍✨ The <b>Mudhalvar Thirumana Maaligai</b> has been officially inaugurated at Wall Tax Road by Tamil Nadu Chief Minister <b>M. K. Stalin</b>.
+</p>
+
+<p>
+Built with an investment of over ₹18 crore, this modern government marriage hall is designed to make weddings more affordable and accessible for the public.
+</p>
+
+<p>
+<b>✨ Key Highlights:</b>
+</p>
+
+<p>
+• 🏛️ <b>Spacious Venue:</b> Seating capacity for 600+ guests, ideal for large gatherings.<br>
+• 💸 <b>Budget-Friendly:</b> Designed especially for middle-income families looking for affordable wedding options.<br>
+• 🏗️ <b>Modern Infrastructure:</b> Equipped to host multiple wedding functions smoothly with well-planned facilities.<br>
+• 📍 <b>Prime Location:</b> Situated at Wall Tax Road, offering easy accessibility in North Chennai.<br>
+• 🧼 <b>Clean & Well-Maintained:</b> Ensures a comfortable and hygienic environment for events.
+</p>
+
+<p>
+If you're planning a wedding in Chennai and looking for a cost-effective yet spacious venue, this new government hall is worth considering! 🎉
+</p>
+
+<p>
+<a href="https://www.instagram.com/reels/DXOB-aQzSjD/" target="_blank">▶️ Click here to watch</a>
+</p>
+`,
+
+    TrendingLink: "https://www.instagram.com/reels/DXOB-aQzSjD/",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Mudhalvar Thirumana Maaligai: Low-Cost Wedding Hall in Chennai",
+      desc: "Mudhalvar Thirumana Maaligai at Wall Tax Road is a government marriage hall in Chennai offering 600+ seating capacity, modern amenities, and affordable wedding options.",
+      url: "https://www.superchennai.com/trending-chennai/mudhalvar-thirumana-maaligai-chennai",
+    },
+  },
+
   {
     id: 102340,
     name: "Chennai’s Latest Movie Experience Awaits",

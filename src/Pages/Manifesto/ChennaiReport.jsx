@@ -138,9 +138,9 @@ export default function ChennaiReport() {
               className="w-full h-[75vh]"
             />
 
-            <div className="absolute bottom-6 left-6 bg-gradient-to-br from-[#8b3c82]/90 to-[#a34493]/90 text-white text-xs font-bold px-4 py-2 rounded-xl shadow-2xl hover:scale-105 transition-all duration-300 animate-float-slow">
+            {/* <div className="absolute bottom-6 left-6 bg-gradient-to-br from-[#8b3c82]/90 to-[#a34493]/90 text-white text-xs font-bold px-4 py-2 rounded-xl shadow-2xl hover:scale-105 transition-all duration-300 animate-float-slow">
               📊 Full Intelligence Report
-            </div>
+            </div> */}
           </div>
         </div>
 

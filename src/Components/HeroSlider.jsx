@@ -75,14 +75,14 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    type: "image",
-    link: "/day-to-deliver-quiz",
-    image: "/images/herobanner-quiz.jpeg",
-    image1: "/images/mobile-homepagebanner-quiz.jpeg",
-    title: "Icon of the month in chennai",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   type: "image",
+  //   link: "/day-to-deliver-quiz",
+  //   image: "/images/herobanner-quiz.jpeg",
+  //   image1: "/images/mobile-homepagebanner-quiz.jpeg",
+  //   title: "Icon of the month in chennai",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   {
     type: "image",

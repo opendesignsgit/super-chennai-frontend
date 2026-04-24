@@ -220,12 +220,18 @@ const AdMedia = ({ ad, className = "" }) => {
   // 🖼 IMAGE
   if (media?.url) {
     return (
-      <a href={ad.targetUrl || "#"} target="_blank" rel="noopener noreferrer">
-        <img
-          src={withBaseUrl(media.url)}
-          alt={ad.altText || ad.title}
-          className={`w-full rounded-lg ${className}`}
-        />
+
+      <a
+                href={ad.targetUrl || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+      <img
+        src={withBaseUrl(ad.media?.url)}
+        alt={ad.altText || ad.title}
+        className={`w-full rounded-lg ${className}`}
+      />
+
       </a>
     );
   }
@@ -316,12 +322,7 @@ const TopAdCard = ({ ad }) => {
           />
         </svg>
       </button>
-      {/* 
-      <img
-        src={withBaseUrl(ad.media?.url)}
-        alt={ad.altText || ad.title}
-        className="w-full h-[160px] object-cover rounded-lg"
-      /> */}
+      
 
       <AdMedia ad={ad} />
     </div>

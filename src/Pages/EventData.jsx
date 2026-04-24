@@ -7576,23 +7576,23 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
-  "id": 102345,
-  "name": "New Sports Ground in Sowcarpet",
-  "slug": "sports-ground-sowcarpet",
-  "para": "A Fresh Recreational Space for Chennai Locals",
-  "TrendingCalendarMonth": "April 2026",
-  "TrendingCalendarTime": "Recently Opened",
-  "TrendingCalendarCategory": "Lifestyle | Sports | Community | Trending",
-  "image": "/images/trendingChennai/new-sports-ground.jpeg",
-  "Homeimage": "/images/trendingChennai/new-sports-ground.jpeg",
-  "link": "/trending-chennai/sports-ground-sowcarpet",
-  "duration": "Open Daily",
-  "ageRestriction": "Open for All",
-  "language": "Tamil | English",
-  "genre": "Sports | Fitness | Community",
-  "venue": "Anna Pillai Street, Sowcarpet, Chennai",
+    id: 102345,
+    name: "New Sports Ground in Sowcarpet",
+    slug: "sports-ground-sowcarpet",
+    para: "A Fresh Recreational Space for Chennai Locals",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Recently Opened",
+    TrendingCalendarCategory: "Lifestyle | Sports | Community | Trending",
+    image: "/images/trendingChennai/new-sports-ground.jpeg",
+    Homeimage: "/images/trendingChennai/new-sports-ground.jpeg",
+    link: "/trending-chennai/sports-ground-sowcarpet",
+    duration: "Open Daily",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Sports | Fitness | Community",
+    venue: "Anna Pillai Street, Sowcarpet, Chennai",
 
-  "trendingDetails": `
+    trendingDetails: `
 <p>
 Chennai gets a new spot to play and unwind! 🏟️✨ A <b>newly developed sports ground</b> has been inaugurated at <b>Anna Pillai Street, Sowcarpet</b>.
 </p>
@@ -7621,15 +7621,15 @@ Whether you're looking to play, relax, or socialize, this new sports ground is s
 </p>
 `,
 
-  "TrendingLink": "https://www.instagram.com/reel/DXYiFV8TUFH/?igsh=bWJsNHYyZmZ5MDRp",
-  "YoutubeLink": "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  "meta": {
-    "title": "New Sports Ground Chennai | Sowcarpet Anna Pillai Street",
-    "desc": "Discover the new sports ground in Sowcarpet, built for fitness, play, and community gatherings at Anna Pillai Street, offering a lively space in Chennai.",
-    "url": "https://www.superchennai.com/trending-chennai/sports-ground-sowcarpet"
-  }
-},
+    meta: {
+      title: "New Sports Ground Chennai | Sowcarpet Anna Pillai Street",
+      desc: "Discover the new sports ground in Sowcarpet, built for fitness, play, and community gatherings at Anna Pillai Street, offering a lively space in Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/sports-ground-sowcarpet",
+    },
+  },
   {
     id: 102344,
     name: "700 New Homes at Walltax Road",
@@ -7676,8 +7676,8 @@ This project marks another step toward strengthening Chennai’s infrastructure 
 </p>
 `,
 
-    TrendingLink:
-      "https://www.instagram.com/reel/DXWAPCWT8_D/?igsh=aTB4a3R5cW1zZzBq",
+    TrendingLink: "",
+
     YoutubeLink: "",
 
     meta: {
@@ -7792,8 +7792,7 @@ This new park is a great addition to the Villivakkam neighborhood, creating a li
 </p>
 `,
 
-    TrendingLink:
-      "https://www.instagram.com/reel/DXMUH8_lNRk/?igsh=MTI1b2tscnJxeGs5dQ==",
+    TrendingLink: "",
     YoutubeLink: "",
 
     meta: {
@@ -7850,7 +7849,7 @@ If you're planning a wedding in Chennai and looking for a cost-effective yet spa
 </p>
 `,
 
-    TrendingLink: "https://www.instagram.com/reels/DXOB-aQzSjD/",
+    TrendingLink: "https://share.google/8Weo47rVe1otGXy6W",
     YoutubeLink: "",
 
     meta: {
@@ -7912,7 +7911,7 @@ Call your movie gang and plan a visit to MovieMax Sowcarpet this weekend! 🎉
 </p>
 `,
 
-    TrendingLink: "https://www.instagram.com/reels/DXGorOFzrTC/",
+    TrendingLink: "https://maps.app.goo.gl/o7VQouaFjsArG69Q6",
     YoutubeLink: "",
 
     meta: {

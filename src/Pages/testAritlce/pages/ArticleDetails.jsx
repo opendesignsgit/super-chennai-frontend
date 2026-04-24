@@ -142,7 +142,7 @@ const SingleAdCard = ({ ad, onClose }) => (
     <button
       onClick={onClose}
       className="absolute top-2 right-2 h-8 w-8 flex items-center justify-center
-      rounded-full bg-white shadow text-gray-500 hover:text-gray-900"
+      rounded-full bg-white shadow text-gray-500 hover:text-gray-900 buttonstyleadd"
     >
       ✕
     </button>
@@ -391,7 +391,7 @@ const BottomAdBox = ({ ads }) => {
 
           <button
             onClick={() => setShow(false)}
-            className="ml-3 text-[#000] text-lg closebutttotttn"
+            className="ml-3 text-[#000] text-lg closebutttotttn "
           >
             ✕
           </button>
@@ -506,11 +506,26 @@ const InlineAdBox = ({ ads }) => {
 
 // MOBILE AD SETTINGS
 
+// {isMobile &&}
+
 const MobileTopAd = ({ ads }) => {
   if (!ads?.length) return null;
 
   return (
-    <div className="lg:hidden px-4 mt-4 space-y-3">
+    // <div className="lg:hidden px-4 mt-4 space-y-3">
+    //   {ads.map((ad) => (
+    //     <MobileAdMedia key={ad.id} ad={ad} />
+    //   ))}
+    // </div>
+
+    <div className="relative bg-white p-2 rounded-lg shadow mobileeaddd">
+      <button
+        onClick={() => setShow(false)}
+        className="absolute -top-2 -right-2 bg-white text-xs rounded-full w-5 h-5 buttonstyleadd"
+      >
+        ✕
+      </button>
+
       {ads.map((ad) => (
         <MobileAdMedia key={ad.id} ad={ad} />
       ))}
@@ -525,11 +540,11 @@ const MobileBottomAd = ({ ads }) => {
   const ad = ads[0];
 
   return (
-    <div className="lg:hidden fixed bottom-2 left-2 right-2 z-50">
+    <div className="lg:hidden fixed bottom-2 left-2 right-2 z-50 mobileeaddd">
       <div className="relative bg-white rounded-xl shadow border p-2">
         <button
           onClick={() => setShow(false)}
-          className="absolute top-1 right-1 text-sm"
+          className="absolute top-1 right-1 text-sm buttonstyleadd"
         >
           ✕
         </button>
@@ -545,22 +560,22 @@ const MobileFloatingAd = ({ ad, position = "left" }) => {
   if (!ad || !show) return null;
 
   return (
-    <div
-      className={`lg:hidden fixed bottom-100 z-50 w-28 ${
-        position === "left" ? "left-2" : "right-2"
-      }`}
-    >
-      <div className="relative bg-white p-2 rounded-lg shadow">
-        <button
-          onClick={() => setShow(false)}
-          className="absolute -top-2 -right-2 bg-white text-xs rounded-full w-5 h-5"
-        >
-          ✕
-        </button>
+    // <div
+    //   className={`lg:hidden fixed bottom-100 z-50 w-28 ${
+    //     position === "left" ? "left-2" : "right-2"
+    //   }`}
+    // >
+    <div className="relative bg-white p-2 rounded-lg shadow mt-5 mobileeaddd">
+      <button
+        onClick={() => setShow(false)}
+        className="absolute -top-2 -right-2 bg-white text-xs rounded-full w-5 h-5 buttonstyleadd"
+      >
+        ✕
+      </button>
 
-        <MobileAdMedia ad={ad} />
-      </div>
+      <MobileAdMedia ad={ad} />
     </div>
+    // </div>
   );
 };
 
@@ -698,6 +713,8 @@ export default function ArticleDetailPage() {
 
           {/* Mobile */}
           <MobileTopAd ads={topAds} />
+
+          {hasLeft && <MobileFloatingAd ad={leftAds[0]} position="left" />}
         </div>
       )}
 
@@ -715,7 +732,7 @@ export default function ArticleDetailPage() {
             <div className="hidden lg:block lg:col-span-2" />
           ) : null}
 
-          {hasLeft && <MobileFloatingAd ad={leftAds[0]} position="left" />}
+          {/* {hasLeft && <MobileFloatingAd ad={leftAds[0]} position="left" />} */}
 
           <div className={mainCol}>
             {loading && <p>Loading...</p>}

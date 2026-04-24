@@ -477,6 +477,7 @@ export default function ArticleDetailPage() {
   const { slug } = useParams();
   const { article, ads, loading } = useArticleBySlug(slug);
 
+  console.log("artcle data--------------------", article);
   console.log("ads-detail", ads);
 
   const [showLeftAds, setShowLeftAds] = useState(true);
@@ -581,15 +582,14 @@ export default function ArticleDetailPage() {
 
       {topAds?.length > 0 && (
         <div className="max-w-7xl mx-auto px-4 mt-6">
-          {/* Desktop */}
-          <div className="hidden lg:grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {topAds.map((ad) => (
-              <TopAdCard key={ad.id} ad={ad} />
+              <>
+                <TopAdCard key={ad.id} ad={ad} />
+                <MobileTopAd ads={topAds} />
+              </>
             ))}
           </div>
-
-          {/* Mobile */}
-          <MobileTopAd ads={topAds} />
         </div>
       )}
 
@@ -700,15 +700,8 @@ export default function ArticleDetailPage() {
                     ) {
                       return (
                         <>
-                          {/* Desktop */}
-                          <div className="hidden lg:block">
-                            <InlineAdBox ads={block.fields?.ads} />
-                          </div>
-
-                          {/* Mobile */}
-                          <div className="lg:hidden">
-                            <MobileInlineAd ads={block.fields?.ads} />
-                          </div>
+                          <InlineAdBox key={index} ads={block.fields?.ads} />
+                          <MobileInlineAd ads={block.fields?.ads} />
                         </>
                       );
                     }
@@ -767,12 +760,8 @@ export default function ArticleDetailPage() {
         </div>
       </div>
 
-      {/* Desktop */}
-      <div className="hidden lg:block">
-        <BottomAdBox ads={bottomAds} />
-      </div>
+      <BottomAdBox ads={bottomAds} />
 
-      {/* Mobile */}
       <MobileBottomAd ads={bottomAds} />
     </>
   );

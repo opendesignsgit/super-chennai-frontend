@@ -7575,6 +7575,176 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+  {
+  "id": 102345,
+  "name": "New Sports Ground in Sowcarpet",
+  "slug": "sports-ground-sowcarpet",
+  "para": "A Fresh Recreational Space for Chennai Locals",
+  "TrendingCalendarMonth": "April 2026",
+  "TrendingCalendarTime": "Recently Opened",
+  "TrendingCalendarCategory": "Lifestyle | Sports | Community | Trending",
+  "image": "/images/trendingChennai/new-sports-ground.jpeg",
+  "Homeimage": "/images/trendingChennai/new-sports-ground.jpeg",
+  "link": "/trending-chennai/sports-ground-sowcarpet",
+  "duration": "Open Daily",
+  "ageRestriction": "Open for All",
+  "language": "Tamil | English",
+  "genre": "Sports | Fitness | Community",
+  "venue": "Anna Pillai Street, Sowcarpet, Chennai",
+
+  "trendingDetails": `
+<p>
+Chennai gets a new spot to play and unwind! 🏟️✨ A <b>newly developed sports ground</b> has been inaugurated at <b>Anna Pillai Street, Sowcarpet</b>.
+</p>
+
+<p>
+Opened by <b>M. K. Stalin</b>, this vibrant space is designed for both <b>recreation and community activities</b>, making it a great addition to the neighborhood 🙌
+</p>
+
+<p>
+<b>✨ What to expect:</b>
+</p>
+
+<p>
+• ⚽ <b>Sports Area:</b> Perfect for games and physical activities.<br>
+• 🚶 <b>Open Space:</b> Ideal for relaxation and casual hangouts.<br>
+• 👨‍👩‍👧‍👦 <b>Community Hub:</b> A place for locals to gather and connect.<br>
+• 💪 <b>Fitness-Friendly:</b> Encourages an active lifestyle.
+</p>
+
+<p>
+Whether you're looking to play, relax, or socialize, this new sports ground is set to become a go-to destination for Sowcarpet residents 🌆
+</p>
+
+<p>
+<a href="https://www.instagram.com/reel/DXYiFV8TUFH/?igsh=bWJsNHYyZmZ5MDRp" target="_blank">▶️ Click here to watch</a>
+</p>
+`,
+
+  "TrendingLink": "https://www.instagram.com/reel/DXYiFV8TUFH/?igsh=bWJsNHYyZmZ5MDRp",
+  "YoutubeLink": "",
+
+  "meta": {
+    "title": "New Sports Ground Chennai | Sowcarpet Anna Pillai Street",
+    "desc": "Discover the new sports ground in Sowcarpet, built for fitness, play, and community gatherings at Anna Pillai Street, offering a lively space in Chennai.",
+    "url": "https://www.superchennai.com/trending-chennai/sports-ground-sowcarpet"
+  }
+},
+  {
+    id: 102344,
+    name: "700 New Homes at Walltax Road",
+    slug: "walltax-road-new-homes-chennai",
+    para: "A Major Housing Boost for Chennai’s Urban Living",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Recently Announced",
+    TrendingCalendarCategory: "Infrastructure | Housing | Trending",
+    image: "/images/trendingChennai/700-New-Homes-at-Walltax-Road.jpeg",
+    Homeimage: "/images/trendingChennai/700-New-Homes-at-Walltax-Road.jpeg",
+    link: "/trending-chennai/walltax-road-new-homes-chennai",
+    duration: "Project Phase",
+    ageRestriction: "Not Applicable",
+    language: "Tamil | English",
+    genre: "Infrastructure | Housing | Development",
+    venue: "Walltax Road, Chennai",
+
+    trendingDetails: `
+<p>
+Chennai is set to witness a major urban development! 🏗️✨ A <b>₹133 crore housing project</b> is bringing <b>700 new homes</b> to <b>Walltax Road</b>.
+</p>
+
+<p>
+Led by <b>M. K. Stalin</b>, this initiative focuses on improving living standards by offering <b>modern, well-planned housing</b> for residents 🏠
+</p>
+
+<p>
+<b>✨ Project Highlights:</b>
+</p>
+
+<p>
+• 🏘️ <b>700 New Homes:</b> Designed for comfortable urban living.<br>
+• 🏗️ <b>₹133 Crore Investment:</b> A significant boost to city infrastructure.<br>
+• 🌆 <b>Urban Development:</b> Enhances Chennai’s residential landscape.<br>
+• 🚧 <b>Improved Infrastructure:</b> Better planning and living conditions.
+</p>
+
+<p>
+This project marks another step toward strengthening Chennai’s infrastructure and creating a better living environment for its residents 🙌
+</p>
+
+<p>
+<a href="https://www.instagram.com/reel/DXWAPCWT8_D/?igsh=aTB4a3R5cW1zZzBq" target="_blank">▶️ Click here to watch</a>
+</p>
+`,
+
+    TrendingLink:
+      "https://www.instagram.com/reel/DXWAPCWT8_D/?igsh=aTB4a3R5cW1zZzBq",
+    YoutubeLink: "",
+
+    meta: {
+      title: "700 New Homes at Walltax Road | Chennai Housing Project",
+      desc: "A ₹133 crore project brings 700 new homes to Walltax Road, Chennai, offering modern housing, better living standards, and improved urban infrastructure.",
+      url: "https://www.superchennai.com/trending-chennai/walltax-road-new-homes-chennai",
+    },
+  },
+  {
+    id: 102343,
+    name: "Candy-Themed Inflatable Park ‘Lalaland’ Opens in Chennai – A Sweet Escape for Families!",
+    slug: "chennai-theme-park-lalaland",
+    para: "A Candy-Colored Adventure Awaits in Chennai",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Recently Opened",
+    TrendingCalendarCategory: "Lifestyle | Theme Parks | Trending",
+    image: "/images/trendingChennai/candy-themeland.jpeg",
+    Homeimage: "/images/trendingChennai/candy-themeland.jpeg",
+    link: "/trending-chennai/chennai-new-theme-park-lalaland",
+    duration: "5:30 PM – 9:00 PM",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Theme Park | Kids | Family | Adventure",
+    venue: "Vandalur–Perungalathur Outer Ring Road, Chennai",
+
+    trendingDetails: `
+<p>
+Get ready, Chennai! 🍭✨ A magical, candy-colored adventure awaits with the grand opening of <b>Lalaland Inflatable Park</b> in the city.
+</p>
+
+<p>
+Spread across a massive <b>40,000 sq. ft.</b>, this vibrant theme park brings together fun, excitement, and a touch of nostalgia for both kids and adults 🎠
+</p>
+
+<p>
+<b>✨ What’s inside:</b>
+</p>
+
+<p>
+• 🍬 <b>Inflatable Castles:</b> Giant bouncy castles for endless fun.<br>
+• 🏃 <b>Obstacle Courses:</b> Challenge yourself with playful setups.<br>
+• 🎢 <b>Slides:</b> Thrilling inflatable slides for all ages.<br>
+• 🎈 <b>Fun Zones:</b> A fantasy candy-themed world full of colors and excitement.
+</p>
+
+<p>
+Located along the <b>Vandalur–Perungalathur Outer Ring Road</b>, Lalaland is perfect for evening outings with family and friends 🌆
+</p>
+
+<p>
+🎟️ <b>Tickets:</b> ₹300 (Kids) / ₹600 (Adults) – Available on BookMyShow
+</p>
+
+<p>
+Whether you're planning a weekend outing, a kids’ day out, or just want to relive your childhood, Lalaland offers a joyful escape filled with laughter and adventure 💖
+</p>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Chennai New Theme Park Lalaland | Candy-Themed Family Spot",
+      desc: "Chennai new theme park Lalaland offers a candy-themed inflatable world with slides, obstacle courses, and fun zones. Perfect for family outings and kids fun.",
+      url: "https://www.superchennai.com/trending-chennai/chennai-new-theme-park-lalaland",
+    },
+  },
 
   {
     id: 102342,

@@ -12,6 +12,81 @@ import { useArticleBySlug } from "../hooks/useArticles";
    AD COMPONENTS
 ============================== */
 
+
+// const AdMedia = ({ ad, className = "" }) => {
+//   if (ad.mediaType === "video" && ad.mediaUrl) {
+//     return (
+//       <div className={`aspect-video w-full ${className}`}>
+//         <iframe
+//           className="w-full h-full rounded-lg"
+//           src={convertToEmbedUrl(ad.mediaUrl)}
+//           title={ad.title}
+//           allow="autoplay; encrypted-media"
+//           allowFullScreen
+//         />
+//       </div>
+//     );
+//   }
+
+//   if (ad.media?.url) {
+//     return (
+//       <img
+//         src={withBaseUrl(ad.media?.url)}
+//         alt={ad.altText || ad.title}
+//         className={`w-full rounded-lg ${className}`}
+//       />
+//     );
+//   }
+
+//   return null;
+// };
+
+// const AdMedia = ({ ad, className = "", isMobile = false }) => {
+//   const mediaType = isMobile
+//     ? ad?.mobileSettings?.mobileMediaType || ad.mediaType
+//     : ad.mediaType;
+
+//   const mediaUrl = isMobile
+//     ? ad?.mobileSettings?.mobileMediaUrl || ad.mediaUrl
+//     : ad.mediaUrl;
+
+//   const media = isMobile
+//     ? ad?.mobileSettings?.mobileMedia || ad.media
+//     : ad.media;
+
+//   const altText = isMobile
+//     ? ad?.mobileSettings?.mobileAltText || ad.altText
+//     : ad.altText;
+
+//   /* VIDEO */
+//   if (mediaType === "video" && mediaUrl) {
+//     return (
+//       <div className={`aspect-video w-full ${className}`}>
+//         <iframe
+//           className="w-full h-full rounded-lg"
+//           src={convertToEmbedUrl(mediaUrl)}
+//           title={ad.title}
+//           allow="autoplay; encrypted-media"
+//           allowFullScreen
+//         />
+//       </div>
+//     );
+//   }
+
+//   /* IMAGE */
+//   if (media?.url) {
+//     return (
+//       <img
+//         src={withBaseUrl(media.url)}
+//         alt={altText || ad.title}
+//         className={`w-full rounded-lg ${className}`}
+//       />
+//     );
+//   }
+
+//   return null;
+// };
+
 const withBaseUrl = (url) =>
   url ? `${API_BASE_URL}${url}` : "/images/placeholder.jpg";
 

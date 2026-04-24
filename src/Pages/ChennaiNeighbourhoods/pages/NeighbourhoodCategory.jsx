@@ -148,11 +148,11 @@ export default function NeighbourhoodCategory() {
               //     `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
               //   )
               // }
-              onClick={() => {
-                navigate(
-                  `/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`,
-                );
-              }}
+              // onClick={() => {
+              //   navigate(
+              //     `/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`,
+              //   );
+              // }}
               className="cursor-pointer detailacrdsss"
             >
               <img
@@ -180,7 +180,12 @@ export default function NeighbourhoodCategory() {
                 </p>
 
                 <div className="readmorelink">
-                  <Link className="">READMORE</Link>
+                  <a
+                    href={`/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`}
+                    className=""
+                  >
+                    READMORE
+                  </a>
                 </div>
               </div>
             </a>

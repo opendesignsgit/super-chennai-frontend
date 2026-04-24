@@ -826,6 +826,17 @@
   font-weight: 600;
   color: #892c7a;
 }
+.stickedfilter {
+  position: fixed;
+  width: 100%;
+  top: 150px;
+  background: #fff;
+  height: 100px;
+}
+.nopeee {
+  position: relative; 
+  top: auto;
+}
 
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {

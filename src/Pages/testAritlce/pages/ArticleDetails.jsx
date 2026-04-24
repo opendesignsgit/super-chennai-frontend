@@ -1,4 +1,4 @@
-import { useEffect, useState,useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { API_BASE_URL } from "../../../../config";
@@ -147,21 +147,68 @@ const SingleAdCard = ({ ad, onClose }) => (
 
     <AdMedia ad={ad} />
 
-    <p className="font-semibold text-sm">{ad.title}</p>
+    {/* <p className="font-semibold text-sm">{ad.title}</p> */}
 
-    <Link to={`/ads/${ad.slug}`} className="text-pink-600 text-xs">
+    {/* <Link to={`/ads/${ad.slug}`} className="text-pink-600 text-xs">
       Learn More
-    </Link>
+    </Link> */}
   </div>
 );
 
+// const AdMedia = ({ ad, className = "" }) => {
+//   if (ad.mediaType === "video" && ad.mediaUrl) {
+//     return (
+//       <div className={`aspect-video w-full ${className}`}>
+//         <iframe
+//           className="w-full h-full rounded-lg"
+//           src={convertToEmbedUrl(ad.mediaUrl)}
+//           title={ad.title}
+//           allow="autoplay; encrypted-media"
+//           allowFullScreen
+//         />
+//       </div>
+//     );
+//   }
+
+//   if (ad.media?.url) {
+//     return (
+//       <img
+//         src={withBaseUrl(ad.media?.url)}
+//         alt={ad.altText || ad.title}
+//         className={`w-full rounded-lg ${className}`}
+//       />
+//     );
+//   }
+
+//   return null;
+// };
+
 const AdMedia = ({ ad, className = "" }) => {
-  if (ad.mediaType === "video" && ad.mediaUrl) {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
+  // ✅ Pick correct media (mobile first)
+  const mediaType =
+    isMobile && ad.mobileSettings?.mobileMediaType
+      ? ad.mobileSettings.mobileMediaType
+      : ad.mediaType;
+
+  const media =
+    isMobile && ad.mobileSettings?.mobileMedia
+      ? ad.mobileSettings.mobileMedia
+      : ad.media;
+
+  const mediaUrl =
+    isMobile && ad.mobileSettings?.mobileMediaUrl
+      ? ad.mobileSettings.mobileMediaUrl
+      : ad.mediaUrl;
+
+  // 🎥 VIDEO
+  if (mediaType === "video" && mediaUrl) {
     return (
       <div className={`aspect-video w-full ${className}`}>
         <iframe
           className="w-full h-full rounded-lg"
-          src={convertToEmbedUrl(ad.mediaUrl)}
+          src={convertToEmbedUrl(mediaUrl)}
           title={ad.title}
           allow="autoplay; encrypted-media"
           allowFullScreen
@@ -170,13 +217,16 @@ const AdMedia = ({ ad, className = "" }) => {
     );
   }
 
-  if (ad.media?.url) {
+  // 🖼 IMAGE
+  if (media?.url) {
     return (
-      <img
-        src={withBaseUrl(ad.media?.url)}
-        alt={ad.altText || ad.title}
-        className={`w-full rounded-lg ${className}`}
-      />
+      <a href={ad.targetUrl || "#"} target="_blank" rel="noopener noreferrer">
+        <img
+          src={withBaseUrl(media.url)}
+          alt={ad.altText || ad.title}
+          className={`w-full rounded-lg ${className}`}
+        />
+      </a>
     );
   }
 
@@ -210,8 +260,6 @@ const AdBox = ({ ads, onAllClosed }) => {
   );
 };
 
-
-
 const BottomAdBox = ({ ads }) => {
   const [show, setShow] = useState(true);
 
@@ -220,28 +268,24 @@ const BottomAdBox = ({ ads }) => {
   const ad = ads[0];
 
   return (
-    <div className="lg:hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t shadow-lg">
-      <div className="relative flex items-center justify-between px-4 py-2">
-        
-        <div className="w-24">
+    <div className="lg:hidden fixed bottom-0 inset-x-0 z-50 shadow-lg bottomadss">
+      <div className="relative flex items-center justify-between px-4 py-2 botttomflexxxx">
+        <div className="w-24 bottomimagewidths">
           <AdMedia ad={ad} />
+
+          <button
+            onClick={() => setShow(false)}
+            className="ml-3 text-[#000] text-lg closebutttotttn"
+          >
+            ✕
+          </button>
         </div>
 
-        <p className="text-sm font-semibold ml-3 truncate">
-          {ad.title}
-        </p>
-
-        <button
-          onClick={() => setShow(false)}
-          className="ml-3 text-gray-500 text-lg"
-        >
-          ✕
-        </button>
+        {/* <p className="text-sm font-semibold ml-3 truncate">{ad.title}</p> */}
       </div>
     </div>
   );
 };
-
 
 const TopAdCard = ({ ad }) => {
   const [show, setShow] = useState(true);
@@ -344,7 +388,6 @@ const InlineAdBox = ({ ads }) => {
   );
 };
 
-
 /* ==============================
    PAGE
 ============================== */
@@ -379,19 +422,35 @@ export default function ArticleDetailPage() {
   const sortByPriority = (items = []) =>
     [...items].sort((a, b) => (a.priority ?? 0) - (b.priority ?? 0));
 
+  // const filterAds = (position) =>
+  //   sortByPriority(
+  //     ads?.filter((a) => a.position === position)?.flatMap((a) => a.ads) || [],
+  //   );
+
+  const isMobile = window.innerWidth < 768;
+
   const filterAds = (position) =>
     sortByPriority(
-      ads?.filter((a) => a.position === position)?.flatMap((a) => a.ads) || [],
+      ads
+        ?.filter((a) => a.position === position)
+        ?.flatMap((a) => a.ads)
+        ?.filter((ad) => {
+          if (ad.deviceTarget === "all") return true;
+          if (ad.deviceTarget === "mobile" && isMobile) return true;
+          if (ad.deviceTarget === "desktop" && !isMobile) return true;
+          return false;
+        }) || [],
     );
-
   const leftAds = filterAds("left");
   const rightAds = filterAds("right");
   const topAds = filterAds("top");
   const bottomAds = filterAds("bottom");
+  const mobileAds = filterAds("mobile");
+
+  // console.log("mobileAds", mobileAds)
 
   const hasLeft = showLeftAds && leftAds?.length > 0;
   const hasRight = showRightAds && rightAds?.length > 0;
-
 
   const hasSideAds = hasLeft || hasRight;
 
@@ -400,41 +459,35 @@ export default function ArticleDetailPage() {
   const visibleBlocks = expanded ? blocks : blocks.slice(0, 12);
 
   const author =
-  article?.populatedAuthors?.[0] ||
-  article?.authors?.[0] ||
-  null;
-  
+    article?.populatedAuthors?.[0] || article?.authors?.[0] || null;
+
   const hasViewed = useRef(false);
-  
 
+  const [localArticle, setLocalArticle] = useState(null);
 
-    const [localArticle, setLocalArticle] = useState(null);
-
-    useEffect(() => {
-      setLocalArticle(article);
-    }, [article]);
-
+  useEffect(() => {
+    setLocalArticle(article);
+  }, [article]);
 
   /* ---------------------------------------------
     INCREMENT VIEW (RUNS ONLY ONCE)
  --------------------------------------------- */
- useEffect(() => {
-  if (!localArticle?.id || hasViewed.current) return;
+  useEffect(() => {
+    if (!localArticle?.id || hasViewed.current) return;
 
-  hasViewed.current = true;
+    hasViewed.current = true;
 
-  axios
-    .patch(`${API_BASE_URL}/api/articles/${localArticle.id}`, {
-      views: (localArticle.views || 0) + 1,
-    })
-    .catch(() => {});
+    axios
+      .patch(`${API_BASE_URL}/api/articles/${localArticle.id}`, {
+        views: (localArticle.views || 0) + 1,
+      })
+      .catch(() => {});
 
-  setLocalArticle((prev) => ({
-    ...prev,
-    views: (prev?.views || 0) + 1,
-  }));
-}, [localArticle?.id]);
-
+    setLocalArticle((prev) => ({
+      ...prev,
+      views: (prev?.views || 0) + 1,
+    }));
+  }, [localArticle?.id]);
 
   return (
     <>
@@ -490,8 +543,8 @@ export default function ArticleDetailPage() {
 
           {/* Mobile Left Floating Small Ad */}
           {hasLeft && (
-            <div className="lg:hidden fixed bottom-44 left-3 z-50 w-44">
-              <div className="relative bg-white rounded-lg shadow-md p-2">
+            <div className="lg:hidden fixed bottom-44 left-3 z-50 w-44 mobileleftadsss">
+              <div className="relative bg-white rounded-lg shadow-md p-2 ">
                 <button
                   onClick={() => setShowLeftAds(false)}
                   className="absolute -top-2 -right-2 bg-white rounded-full w-5 h-5 text-xs shadow"
@@ -613,7 +666,7 @@ export default function ArticleDetailPage() {
 
           {/* Mobile Right Floating Small Ad */}
           {hasRight && (
-            <div className="lg:hidden fixed bottom-44 right-3 z-50 w-44 ">
+            <div className="lg:hidden fixed bottom-44 right-3 z-50 w-44 mobilerightadsss">
               <div className="relative bg-white rounded-lg shadow-md p-2">
                 <button
                   onClick={() => setShowRightAds(false)}

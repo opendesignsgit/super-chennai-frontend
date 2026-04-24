@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import Search from "../Components/Search";
 import Fuse from "fuse.js";
 import { useParams } from "react-router-dom";
@@ -190,75 +190,112 @@ export default function NeighbourhoodSearchBar({
     return "all";
   };
 
+  const section4Ref = useRef(null);
+  const [isTop, setIsTop] = useState(false);
+
+  useEffect(() => {
+    const getHeaderHeight = () => {
+      const width = window.innerWidth;
+
+      if (width >= 1024) return 130;
+      if (width >= 768) return 120;
+      return 100;
+    };
+
+    const sectionOffsetTop = section4Ref.current.offsetTop;
+
+    const handleScroll = () => {
+      const headerHeight = getHeaderHeight();
+      const scrollY = window.scrollY;
+
+      if (scrollY + headerHeight >= sectionOffsetTop) {
+        setIsTop(true);
+      } else {
+        setIsTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       {/* SEARCH BAR */}
-      <div className="mainlocationdd">
-        <div className="flex items-center bg-white rounded-full shadow border overflow-hidden submainlocationdd">
-          <div className="flex items-center gap-1 px-4 py-3 mainselectinputss">
-            <img
-              className="locationsvginput"
-              src="https://dev.opendesignsin.com/neighlocation.svg"
-              alt=""
+
+      <div
+        ref={section4Ref}
+        className={`${isTop ? "stickedfilter" : "nopeee"}`}
+      >
+        <div className="mainlocationdd">
+          <div className="flex items-center bg-white rounded-full shadow border overflow-hidden submainlocationdd">
+            <div className="flex items-center gap-1 px-4 py-3 mainselectinputss">
+              <img
+                className="locationsvginput"
+                src="https://dev.opendesignsin.com/neighlocation.svg"
+                alt=""
+              />
+
+              <select
+                className="outline-none bg-transparent slectmapoption"
+                value={locationId}
+                onChange={(e) => navigate(`/neighbourhood/${e.target.value}`)}
+              >
+                {sameLetterLocations?.map((loc) => (
+                  <option key={loc.id} value={loc.locality}>
+                    {loc.locality}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <input
+              type="text"
+              placeholder="Search restaurants, hotels, or anything nearby..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="flex-1 px-3 py-3 outline-none"
             />
 
-            <select
-              className="outline-none bg-transparent slectmapoption"
-              value={locationId}
-              onChange={(e) => navigate(`/neighbourhood/${e.target.value}`)}
-            >
-              {sameLetterLocations?.map((loc) => (
-                <option key={loc.id} value={loc.locality}>
-                  {loc.locality}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <input
-            type="text"
-            placeholder="Search restaurants, hotels, or anything nearby..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 px-3 py-3 outline-none"
-          />
-
-          <button className="inputmapsearchss" onClick={handleSearch}>
-            Search
-          </button>
-
-          {showExplore && (
-            // <button
-            //   onClick={() => setOpen(true)}
-            //   className="clickheretoexplorelocation"
-            // >
-            //   Click Here to Explore
-            // </button>
-            <button
-              onClick={() => setOpen(true)}
-              className="clickheretoexplorelocation group relative overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(139,60,130,0.5)] hover:shadow-xl active:shadow-[0_0_20px_rgba(163,68,147,0.7)] active:scale-[0.97] hover:scale-[1.02]"
-            >
-              {/* Background shimmer layers */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#8b3c82]/30 via-[#a34493]/20 to-[#8b3c82]/30 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-sm -skew-x-12 animate-shimmer"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 -skew-x-12 animate-shimmer-delayed"></div>
-
-              <span className="relative z-10 font-semibold tracking-wide">
-                Click Here to Explore
-              </span>
-
-              {/* Floating particles on hover */}
-              <div className="absolute -top-2 -right-2 w-3 h-3 bg-[#8b3c82] rounded-full opacity-0 group-hover:opacity-60 animate-float"></div>
-              <div className="absolute -bottom-2 -left-2 w-2 h-2 bg-[#a34493] rounded-full opacity-0 group-hover:opacity-50 animate-float-delayed"></div>
+            <button className="inputmapsearchss" onClick={handleSearch}>
+              Search
             </button>
-          )}
-        </div>
-      </div>
 
-      {/* CHANGE LOCATION */}
-      <div className="changethelocation">
-        <button onClick={() => setOpenLocationsModal(true)}>
-          Change the Location
-        </button>
+            {showExplore && (
+              // <button
+              //   onClick={() => setOpen(true)}
+              //   className="clickheretoexplorelocation"
+              // >
+              //   Click Here to Explore
+              // </button>
+              <button
+                onClick={() => setOpen(true)}
+                className="clickheretoexplorelocation group relative overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(139,60,130,0.5)] hover:shadow-xl active:shadow-[0_0_20px_rgba(163,68,147,0.7)] active:scale-[0.97] hover:scale-[1.02]"
+              >
+                {/* Background shimmer layers */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#8b3c82]/30 via-[#a34493]/20 to-[#8b3c82]/30 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-sm -skew-x-12 animate-shimmer"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 -skew-x-12 animate-shimmer-delayed"></div>
+
+                <span className="relative z-10 font-semibold tracking-wide">
+                  Click Here to Explore
+                </span>
+
+                {/* Floating particles on hover */}
+                <div className="absolute -top-2 -right-2 w-3 h-3 bg-[#8b3c82] rounded-full opacity-0 group-hover:opacity-60 animate-float"></div>
+                <div className="absolute -bottom-2 -left-2 w-2 h-2 bg-[#a34493] rounded-full opacity-0 group-hover:opacity-50 animate-float-delayed"></div>
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* CHANGE LOCATION */}
+        <div className="changethelocation">
+          <button onClick={() => setOpenLocationsModal(true)}>
+            Change the Location
+          </button>
+        </div>
       </div>
 
       {/* LOCATION MODAL */}

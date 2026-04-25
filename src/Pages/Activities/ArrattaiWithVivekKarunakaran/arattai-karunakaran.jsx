@@ -261,7 +261,7 @@ export default function ArattaiWithVivekKarunakaran() {
               </p> */}
             </div>
             <div className="flex flex-col items-center text-center space-y-4 py-10">
-              <p className="text-rose-600 font-semibold tracking-wide">
+              {/* <p className="text-rose-600 font-semibold tracking-wide">
                 Limited Seats Only • Register Now
               </p>
 
@@ -280,7 +280,7 @@ export default function ArattaiWithVivekKarunakaran() {
                 className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button "
               >
                 Register Now
-              </button>
+              </button> */}
 
               {/* <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
                 <span className="relative z-10 flex items-center gap-2"onClick={() => setShowRegisterPopup(true)}>

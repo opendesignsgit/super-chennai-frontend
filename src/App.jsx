@@ -335,6 +335,9 @@ import IconofthemonthMarchKamakotti from "./Pages/Icon-of-the-month-march-26";
 import ArattaiWithKamakotti from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakotti";
 import ArattaikamakotiExcelView from "./Pages/Activities/ArrattaiWithKamakotti/araatai-kamakoti-excel";
 import ArattaiKarunakaranExcelView from "./Pages/Activities/ArrattaiWithVivekKarunakaran/ArattaiKarunakaranExcelView";
+import ArattaiSoumyaSwaminathanExcelView from "./Pages/Activities/ArrattaiWithSoumyaSwaminathan/ArattaiSoumyaSwaminathanExcelView";
+import ArattaiWithSoumyaSwaminathan from "./Pages/Activities/ArrattaiWithSoumyaSwaminathan/arattai-soumya-swaminathan";
+import IconofthemonthAprilSowmiyaSwaminathan from "./Pages/Icon-of-the-month-april-26";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -917,6 +920,11 @@ function App() {
         />
 
         <Route
+          path="/arattai-with-soumya-swaminathan/chief-scientist"
+          element={<ArattaiWithSoumyaSwaminathan />}
+        />
+
+        <Route
           path="/arattai-with-kamakoti/iit-madras-director-admin-entry-oiuyterwqasvcxzdsw/refdewsdfettwfsvvdg/8728272/lmnjhscbnmdt"
           element={<ArattaikamakotiExcelView />}
         />
@@ -1478,6 +1486,11 @@ function App() {
         <Route
           path="/icon-of-the-jan-month-2026"
           element={<IconofthemonthMarchKamakotti />}
+        />
+
+        <Route
+          path="/icon-of-the-feb-month-2026"
+          element={<IconofthemonthAprilSowmiyaSwaminathan />}
         />
 
         <Route

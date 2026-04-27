@@ -1114,34 +1114,50 @@
   }
 
   .slectmapoption {
-    font-size: 17px;
-    width: 125px;
+    font-size: 12px;
+    width: max-content;
   }
 
   .clickheretoexplorelocation {
-    height: 50px;
-    width: 205px;
-    margin-left: -47px;
+    height: 47px;
+    width: 179px;
+    margin-left: -43px;
+    font-size: 12px;
+  }
+
+  .slectmapoption option {
     font-size: 14px;
   }
 
   .inputmapsearchss {
-    height: 50px;
-    width: 138px;
-    font-size: 14px;
-    padding-right: 27px;
-    font-weight: 300;
+    height: 47px;
+    width: 127px;
+    font-size: 12px;
+    padding-right: 22px;
+    font-weight: 200;
     letter-spacing: 0.5px;
   }
 
   .submainlocationdd input {
     padding: 0px 10px;
-    width: 156px;
+    width: 113px;
+    font-size: 13px;
   }
 
+  .stickedfilter .changethelocation {
+    margin-top: 75px;
+  }
+
+  .changethelocation button {
+    font-size: 11px;
+  }
   .locationsvginput {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .mainselectinputss {
+    gap: 0;
   }
 
   .margincontrl {
@@ -1184,7 +1200,7 @@
   }
 
   .submainlocationdd {
-    height: 60px;
+    height: 55px;
   }
 
   .popupseacrhinpout {
@@ -1364,20 +1380,20 @@
   }
 
   .slectmapoption {
-    font-size: 17px;
+    font-size: 12px;
   }
 
   .clickheretoexplorelocation {
-    height: 50px;
-    width: 205px;
-    margin-left: -47px;
-    font-size: 14px;
+    height: 40px;
+    width: 169px;
+    margin-left: -43px;
+    font-size: 12px;
   }
 
   .inputmapsearchss {
-    height: 50px;
-    width: 138px;
-    font-size: 14px;
+    height: 40px;
+    width: 118px;
+    font-size: 13px;
     padding-right: 27px;
     font-weight: 300;
     letter-spacing: 0.5px;
@@ -1385,14 +1401,40 @@
 
   .submainlocationdd input {
     padding: 0px 10px;
-    width: 156px;
+    width: 110px;
+    font-size: 13px;
+    /* padding-left: 0; */
   }
 
   .locationsvginput {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
 
+  .stickedfilter .changethelocation {
+    margin-top: 63px;
+  }
+  .changethelocation button {
+    font-size: 11px;
+  }
+
+  .stickedfilter {
+    top: 82px;
+    height: 140px;
+    padding-top: 30px;
+  }
+
+  .changethelocation {
+    margin-top: 35px;
+  }
+
+  .slectmapoption option {
+    font-size: 13px;
+  }
+
+  .mainselectinputss {
+    gap: 0;
+  }
   .margincontrl {
     padding-top: 10px;
   }
@@ -1433,7 +1475,7 @@
   }
 
   .submainlocationdd {
-    height: 60px;
+    height: 48px;
   }
 
   .locationlilst {
@@ -1805,28 +1847,46 @@
 
   .submainlocationdd {
     top: -32px;
-    height: 59px;
+    height: 54px;
   }
 
   .inputmapsearchss {
-    height: 50px;
-    width: 125px;
-    font-size: 13px;
+    height: 46px;
+    width: 116px;
+    font-size: 11px;
     padding-right: 30px;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     font-weight: 600;
     font-family: "29LT Bukra";
   }
 
   .clickheretoexplorelocation {
-    height: 50px;
-    width: 197px;
-    margin-left: -45px;
-    font-size: 13px;
+    height: 46px;
+    width: 164px;
+    margin-left: -38px;
+    font-size: 11px;
   }
 
+  .stickedfilter .changethelocation {
+    margin-top: 75px;
+  }
+
+  .changethelocation button {
+    font-size: 11px;
+  }
+
+  .stickedfilter {
+    top: 64px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+
+  .mainMegamenuContainer.scrolled {
+    z-index: 10000 !important;
+  }
   .slectmapoption {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .mainselectinputss {
@@ -1837,11 +1897,21 @@
 
   .submainlocationdd input {
     width: 108px;
+    font-size: 14px;
   }
 
   .locationiframe {
     height: 450px;
     margin-top: 50px;
+  }
+
+  .slectmapoption option {
+    font-size: 14px;
+  }
+
+  .locationsvginput {
+    width: 18px;
+    height: 18px;
   }
 
   .fontsizeaccordion {
@@ -1915,11 +1985,10 @@
   }
 }
 
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .mobileeaddd {
-  display: block;
-}
+    display: block;
+  }
 }
 @media (max-width: 768px) and (min-width: 600px) {
   .neighbourhoodcontiner .container {
@@ -2104,13 +2173,32 @@
     line-height: 100%;
   }
 
+  .stickedfilter .changethelocation {
+    margin-top: 75px;
+  }
+
+  .stickedfilter {
+    top: 64px;
+    padding-top: 50px;
+    height: auto;
+    padding-bottom: 35px;
+  }
+
+  .changethelocation button {
+    font-size: 11px;
+  }
+
+  .mainMegamenuContainer.scrolled {
+    z-index: 10000;
+  }
   .submainlocationdd input {
     width: 87px;
     padding: 5px;
+    font-size: 14px;
   }
 
   .submainlocationdd {
-    height: 60px;
+    height: 55px;
   }
 
   .locationsvginput {
@@ -2701,17 +2789,22 @@
 
   .inputmapsearchss {
     height: 38px;
-    width: 86px;
-    font-size: 12px;
+    width: 101px;
+    font-size: 13px;
     padding-right: 0px;
     margin-left: 18px;
     font-family: "29LT Bukra";
     font-weight: 600;
+    margin-left: 0;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    letter-spacing: 0.5px;
   }
 
   .slectmapoption {
     font-size: 14px;
-    max-width: 108px;
+    max-width: 100%;
   }
 
   .submainlocationdd {
@@ -2720,11 +2813,17 @@
     padding-right: 3px;
     width: 350px;
     overflow: visible;
+    flex-wrap: wrap;
   }
 
   .submainlocationdd input {
     max-width: 110px;
     padding: 10px 0 10px 13px;
+    outline: 2px solid #c8a5c4;
+    width: 100%;
+    min-width: 100%;
+    border-radius: 50px;
+    border-right: 0;
   }
 
   .locationsvginput {
@@ -2741,6 +2840,12 @@
     padding-right: 0px;
     padding-left: 10px;
     column-gap: 0;
+    width: 59%;
+    order: 2;
+    margin-top: 20px;
+    border: 1px solid #b5b2b2;
+    border-radius: 7px;
+    padding: 8px 10px;
   }
 
   .locationiframe {
@@ -2773,14 +2878,14 @@
     border-radius: 20px;
     width: max-content;
     /* margin-left: -49px; */
-    padding: 3px 20px 3px 20px;
-    font-size: 12px;
+    padding: 2px 12px 2px 13px;
+    font-size: 10px;
     letter-spacing: 0.5px;
     cursor: pointer;
     position: absolute;
-    top: 72px;
+    top: 62px;
     overflow: visible;
-    left: 38%;
+    right: 5px;
   }
 
   .pointerdiv.buttonactivated:nth-of-type(1)::before {

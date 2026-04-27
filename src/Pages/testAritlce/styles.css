@@ -53,7 +53,7 @@
 }
 
 .bottomimagewidths {
-  width: 540px !important;
+  width: 760px !important;
   padding: 19px 33px 15px 12px;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -185,7 +185,37 @@
   }
 }
 
+   .heightofthwcomponenet img {
+    height: 345px;
+   }
+
 @media (max-width: 768px) {
+
+
+  .mobilebottomadddddsticky {
+    position: fixed;
+    bottom: 118px;
+    padding: 0 3%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    z-index: 1000;
+
+  }
+
+  .mobilebottomadddddsticky img {
+    /* padding: 0 7%; */
+  }
+
+  .z-indezzzzzzzzzz .mobileeaddd {
+    z-index: 1000;
+  }
+
+
+
+
   .mobileleftadsss {
     top: 20%;
     width: 45%;
@@ -223,6 +253,10 @@
   .bottomimagewidths {
     width: 65% !important;
     padding: 13px 5px 11px 5px;
+  }
+
+  .mobileeaddd {
+    z-index: 0;
   }
 
   .closebutttotttn {

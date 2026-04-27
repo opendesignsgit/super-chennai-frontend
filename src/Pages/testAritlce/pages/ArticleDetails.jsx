@@ -12,7 +12,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import NotLikedIcon from "../../../../public/images/icons/non-like.svg";
 import LikedIcon from "../../../../public/images/icons/liked.svg";
 
-
 /* ==============================
    HELPERS
 ============================== */
@@ -219,47 +218,53 @@ const AdMedia = ({ ad, className = "", isMobile = false }) => {
   /* VIDEO - Premium Animated Version */
   if (mediaType === "video" && mediaUrl) {
     return (
-      <motion.div
-        variants={containerVariants}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        className={`relative aspect-video w-full rounded-2xl overflow-hidden group shadow-xl ${className}`}
-      >
-        {/* Video Container */}
-        <motion.div
-          className="absolute inset-0"
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.3 }}
-        >
-          <iframe
-            className="w-full h-full rounded-2xl shadow-2xl"
-            src={convertToEmbedUrl(mediaUrl)}
-            title={ad.title}
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
-        </motion.div>
+      <>
+        {ad.targetUrl && (
+          <a href={ad.targetUrl} target="_blank">
+            <motion.div
+              variants={containerVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className={`relative aspect-video w-full rounded-2xl overflow-hidden group shadow-xl ${className}`}
+            >
+              {/* Video Container */}
+              <motion.div
+                className="absolute inset-0"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              >
+                <iframe
+                  className="w-full h-full rounded-2xl shadow-2xl"
+                  src={convertToEmbedUrl(mediaUrl)}
+                  title={ad.title}
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                />
+              </motion.div>
 
-        {/* Premium Video Overlay */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"
-          initial={{ opacity: 0 }}
-          whileHover={{ opacity: 1 }}
-        />
+              {/* Premium Video Overlay */}
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+              />
 
-        {/* Play Button Overlay */}
-        <motion.div
-          className="absolute inset-0 flex items-center justify-center"
-          initial={{ opacity: 1 }}
-          whileHover={{ opacity: 0 }}
-          transition={{ duration: 0.2 }}
-        >
-          <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-2xl border-4 border-white/50 group-hover:scale-110">
-            <span className="text-3xl font-bold text-white">▶️</span>
-          </div>
-        </motion.div>
-      </motion.div>
+              {/* Play Button Overlay */}
+              <motion.div
+                className="absolute inset-0 flex items-center justify-center"
+                initial={{ opacity: 1 }}
+                whileHover={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-2xl border-4 border-white/50 group-hover:scale-110">
+                  <span className="text-3xl font-bold text-white">▶️</span>
+                </div>
+              </motion.div>
+            </motion.div>
+          </a>
+        )}
+      </>
     );
   }
 
@@ -288,7 +293,7 @@ const AdMedia = ({ ad, className = "", isMobile = false }) => {
 
         {/* Dynamic Gradient Border */}
         <motion.div
-          className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500/20 via-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100"
+          className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500/20 via-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 "
           animate={isHovered ? { scale: 1.03 } : { scale: 1 }}
           transition={{ duration: 0.4 }}
         />
@@ -411,7 +416,7 @@ const TopAdCard = ({ ad }) => {
   if (!show) return null;
 
   return (
-    <div className="relative z-[999]">
+    <div className="relative z-[999] heightofthwcomponenet">
       <button
         onClick={() => setShow(false)}
         className="absolute top-2 right-2 z-50 h-8 w-8 flex items-center justify-center rounded-full
@@ -463,8 +468,7 @@ const InlineAdBox = ({ ads }) => {
     <div className="my-8">
       {ads.map((ad) => (
         <div key={ad.id} className="mb-6">
-
-           <div className="p-4">
+          <div className="p-4">
             {/* TITLE */}
             {ad.title && (
               <h3 className="text-lg font-semibold text-gray-800 mb-1">
@@ -474,9 +478,7 @@ const InlineAdBox = ({ ads }) => {
 
             {/* CAPTION */}
             {ad.caption && (
-              <p className="text-sm text-gray-500 mb-3">
-                {ad.caption}
-              </p>
+              <p className="text-sm text-gray-500 mb-3">{ad.caption}</p>
             )}
 
             {/* CTA BUTTON */}
@@ -528,11 +530,9 @@ const InlineAdBox = ({ ads }) => {
   );
 };
 
-
 // MOBILE AD SETTINGS
 
 // {isMobile &&}
-
 
 const MobileTopAd = ({ ads }) => {
   if (!ads?.length) return null;
@@ -552,7 +552,8 @@ const MobileTopAd = ({ ads }) => {
       </button>
 
       {ads.map((ad) => (
-        <MobileAdMedia key={ad.id} ad={ad} />
+        // <MobileAdMedia key={ad.id} ad={ad} />
+        <AdMedia key={ad.id} ad={ad} isMobile={true} />
       ))}
     </div>
   );
@@ -590,7 +591,7 @@ const MobileFloatingAd = ({ ad, position = "left" }) => {
     //     position === "left" ? "left-2" : "right-2"
     //   }`}
     // >
-    <div className="relative bg-white p-2 rounded-lg shadow mt-5 mobileeaddd ">
+    <div className="relative bg-white p-2 rounded-lg shadow mt-5 mobileeaddd  ">
       <button
         onClick={() => setShow(false)}
         className="absolute -top-2 -right-2 bg-white text-xs rounded-full w-5 h-5 buttonstyleadd"
@@ -610,7 +611,8 @@ const MobileInlineAd = ({ ads }) => {
   return (
     <div className="lg:hidden my-6 space-y-4">
       {ads.map((ad) => (
-        <MobileAdMedia key={ad.id} ad={ad} />
+        // <MobileAdMedia key={ad.id} ad={ad} />
+        <AdMedia key={ad.id} ad={ad} isMobile={true} />
       ))}
     </div>
   );
@@ -946,7 +948,9 @@ export default function ArticleDetailPage() {
 
           {/* #######MOBILE AD RIGHT  ######### */}
 
-          {hasRight && <MobileFloatingAd ad={rightAds[0]} position="right" />}
+          <div className="mobilebottomadddddsticky">
+            {hasRight && <MobileFloatingAd ad={rightAds[0]} position="right" />}
+          </div>
         </div>
         <div className="mt-12">
           <Link to="/article" className="text-[#232b91ff] font-medium">
@@ -961,7 +965,10 @@ export default function ArticleDetailPage() {
       </div>
 
       {/* Mobile */}
-      <MobileBottomAd ads={bottomAds} />
+
+      <div className="z-indezzzzzzzzzz">
+        <MobileBottomAd ads={bottomAds} />
+      </div>
     </>
   );
 }

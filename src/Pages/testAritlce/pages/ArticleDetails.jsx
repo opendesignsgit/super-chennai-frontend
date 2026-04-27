@@ -9,6 +9,9 @@ import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
 import ViewsIcon from "../../../../public/images/icons/blog-views.svg";
 import MobileAdMedia from "../components/MobileAdMedia";
 import { motion, AnimatePresence } from "framer-motion";
+import NotLikedIcon from "../../../../public/images/icons/non-like.svg";
+import LikedIcon from "../../../../public/images/icons/liked.svg";
+
 
 /* ==============================
    HELPERS
@@ -386,7 +389,7 @@ const BottomAdBox = ({ ads }) => {
   return (
     <div className="lg:hidden fixed bottom-0 inset-x-0 z-50 shadow-lg bottomadss">
       <div className="relative flex items-center justify-between px-4 py-2 botttomflexxxx">
-        <div className="w-24 bottomimagewidths">
+        <div className="w-200 bottomimagewidths">
           <AdMedia ad={ad} />
 
           <button
@@ -408,14 +411,13 @@ const TopAdCard = ({ ad }) => {
   if (!show) return null;
 
   return (
-    <div className="relative">
+    <div className="relative z-[999]">
       <button
         onClick={() => setShow(false)}
-        className="absolute top-2 right-2 h-8 w-8 flex items-center justify-center rounded-full
-             bg-white/90 backdrop-blur shadow-sm
-             text-gray-500 hover:text-gray-900
-             hover:bg-white transition"
-        aria-label="Close"
+        className="absolute top-2 right-2 z-50 h-8 w-8 flex items-center justify-center rounded-full
+       bg-white/90 backdrop-blur shadow-sm
+       text-gray-500 hover:text-gray-900
+       hover:bg-white transition"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -432,12 +434,6 @@ const TopAdCard = ({ ad }) => {
           />
         </svg>
       </button>
-      {/* 
-      <img
-        src={withBaseUrl(ad.media?.url)}
-        alt={ad.altText || ad.title}
-        className="w-full h-[160px] object-cover rounded-lg"
-      /> */}
 
       <AdMedia ad={ad} />
     </div>
@@ -467,6 +463,34 @@ const InlineAdBox = ({ ads }) => {
     <div className="my-8">
       {ads.map((ad) => (
         <div key={ad.id} className="mb-6">
+
+           <div className="p-4">
+            {/* TITLE */}
+            {ad.title && (
+              <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                {ad.title}
+              </h3>
+            )}
+
+            {/* CAPTION */}
+            {ad.caption && (
+              <p className="text-sm text-gray-500 mb-3">
+                {ad.caption}
+              </p>
+            )}
+
+            {/* CTA BUTTON */}
+            {/* {ad.targetUrl && (
+              <a
+                href={ad.targetUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 px-4 py-2 text-sm font-medium text-white bg-pink-600 rounded-md hover:bg-pink-700 transition"
+              >
+                Learn More →
+              </a>
+            )} */}
+          </div>
           {/* VIDEO AD */}
           {ad.mediaType === "video" && ad.mediaUrl ? (
             <div className="aspect-video w-full">
@@ -504,13 +528,14 @@ const InlineAdBox = ({ ads }) => {
   );
 };
 
+
 // MOBILE AD SETTINGS
 
 // {isMobile &&}
 
+
 const MobileTopAd = ({ ads }) => {
   if (!ads?.length) return null;
-
   return (
     // <div className="lg:hidden px-4 mt-4 space-y-3">
     //   {ads.map((ad) => (
@@ -565,7 +590,7 @@ const MobileFloatingAd = ({ ad, position = "left" }) => {
     //     position === "left" ? "left-2" : "right-2"
     //   }`}
     // >
-    <div className="relative bg-white p-2 rounded-lg shadow mt-5 mobileeaddd">
+    <div className="relative bg-white p-2 rounded-lg shadow mt-5 mobileeaddd ">
       <button
         onClick={() => setShow(false)}
         className="absolute -top-2 -right-2 bg-white text-xs rounded-full w-5 h-5 buttonstyleadd"
@@ -608,6 +633,13 @@ export default function ArticleDetailPage() {
 
   const { slug } = useParams();
   const { article, ads, loading } = useArticleBySlug(slug);
+  const [articleData, setArticle] = useState(null);
+
+  useEffect(() => {
+    if (article) {
+      setArticle(article);
+    }
+  }, [article]);
 
   console.log("ads-detail", ads);
 
@@ -673,6 +705,47 @@ export default function ArticleDetailPage() {
       views: (prev?.views || 0) + 1,
     }));
   }, [localArticle?.id]);
+
+  /* ---------------------------------------------
+     LIKE HANDLER
+  --------------------------------------------- */
+
+  const handleLike = async () => {
+    if (!article?.id || hasLiked(article.id)) return;
+
+    try {
+      await axios.patch(`${API_BASE_URL}/api/articles/${article.id}`, {
+        likes: article.likes + 1,
+      });
+      addLikedPost(article.id);
+      setArticle((prev) => ({ ...prev, likes: prev.likes + 1 }));
+    } catch (err) {
+      console.warn("Like failed", err);
+    }
+  };
+
+  /* ---------------------------------------------
+     LocalStorage helpers for likes
+  --------------------------------------------- */
+  const getLikedPosts = () => {
+    const stored = localStorage.getItem("likedPosts");
+    if (!stored) return [];
+    try {
+      return JSON.parse(stored);
+    } catch {
+      return [];
+    }
+  };
+
+  const hasLiked = (postId) => getLikedPosts().includes(postId);
+
+  const addLikedPost = (postId) => {
+    const liked = getLikedPosts();
+    if (!liked.includes(postId)) {
+      liked.push(postId);
+      localStorage.setItem("likedPosts", JSON.stringify(liked));
+    }
+  };
 
   return (
     <>
@@ -772,11 +845,31 @@ export default function ArticleDetailPage() {
                       )}
                     </p>
                   </div>
+
+                  {/* ########## LIKE AND VIEWS ######### */}
+
                   <div className="ml-auto flex items-center gap-4 text-sm text-gray-600">
                     <div className="flex items-center gap-1 text-gray-600 text-sm">
                       <img src={ViewsIcon} alt="Views" className="w-4 h-4" />
                       <span>{article.views}</span>
                     </div>
+
+                    <button
+                      onClick={handleLike}
+                      disabled={hasLiked(article.id)}
+                      className={`flex items-center gap-1 transition ${hasLiked(article.id) ? "cursor-not-allowed" : "hover:scale-105"}`}
+                    >
+                      <img
+                        src={hasLiked(article.id) ? LikedIcon : NotLikedIcon}
+                        alt={hasLiked(article.id) ? "Liked" : "Not liked"}
+                        className="w-5 h-5"
+                      />
+                      <span
+                        className={`${hasLiked(article.id) ? "text-gray-400" : "text-red-600"}`}
+                      >
+                        {articleData?.likes}
+                      </span>
+                    </button>
                   </div>
                 </div>
                 <div className="space-y-6">

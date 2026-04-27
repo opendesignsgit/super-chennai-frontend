@@ -5,11 +5,13 @@
   line-height: clamp(48px, 1vw, 77px);
   line-height: 100%;
 }
+
 .formheadingtheme-article h4 {
   font-family: "NewAmsterdam";
   color: #a44294;
   font-size: clamp(12px, 1vw, 50px);
 }
+
 .sticky.top-6 {
   top: 130px;
 }
@@ -51,13 +53,14 @@
 }
 
 .bottomimagewidths {
-  width: 475px !important;
-  padding: 13px 20px 11px 20px;
+  width: 540px !important;
+  padding: 19px 33px 15px 12px;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 7px;
   position: relative;
 }
+
 .botttomflexxxx {
   justify-content: center;
   width: 100%;
@@ -74,8 +77,10 @@
 @media (min-width: 768px) {
   .bottomadss {
     display: block;
+    z-index: 1000000;
   }
 }
+
 /* ===============================
    Laptop (max-width: 1200px)
 ================================= */
@@ -186,6 +191,7 @@
     width: 45%;
     display: none;
   }
+
   .mobilerightadsss {
     top: 20%;
     width: 45%;

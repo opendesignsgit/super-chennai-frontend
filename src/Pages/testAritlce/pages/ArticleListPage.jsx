@@ -6,6 +6,9 @@ import Pagination from "../components/Pagination";
 import { useArticlePageAds } from "../hooks/useArticlePageAds";
 import { useArticles } from "../hooks/useArticles";
 import "../styles.css";
+import LikedIcon from "../../../../public/images/icons/liked.svg";
+                        import { motion, AnimatePresence } from 'framer-motion'
+
 
 /* ==============================
    AD COMPONENTS
@@ -343,9 +346,6 @@ const rightAds =
         </div>
       )}
 
-
-      
-
       <div
         className={`mx-auto px-4 mt-10 mb-10 ${
           hasSideAds ? "max-w-8xl" : "max-w-6xl"
@@ -384,14 +384,12 @@ const rightAds =
                     {featuredEventArticle.title}
                   </h1>
 
-                  <p className="text-gray-600 mt-3">
-                    {featuredEventArticle.excerpt}
-                  </p>
+                  <p className=" mt-3">{featuredEventArticle.excerpt}</p>
 
-                  <p className="text-xs text-gray-500 mt-1">
+                  {/* <p className="text-xs text-gray-500 mt-1">
                     {featuredEventArticle.populatedAuthors?.[0]?.name} ·{" "}
                     {featuredEventArticle.readingTime} min read
-                  </p>
+                  </p> */}
                 </div>
 
                 <img
@@ -433,12 +431,12 @@ const rightAds =
                           <h1 className=" themelink-color formheadingtheme-article-cards mt-2">
                             {a.title}
                           </h1>
-                          <p className="text-gray-600 mt-3">{a.excerpt}</p>
+                          <p className=" mt-3">{a.excerpt}</p>
 
-                          <p className="text-xs text-gray-500 mt-1">
+                          {/* <p className="text-xs text-gray-500 mt-1">
                             {a.populatedAuthors?.[0]?.name} · {a.readingTime}{" "}
                             min read
-                          </p>
+                          </p> */}
                         </div>
 
                         {i === 2 && embeddedAds?.length > 0 && (
@@ -490,16 +488,16 @@ const rightAds =
                           <h4>{a.title}</h4>
                         </div>
 
-                        <p className="text-gray-600 text-sm mt-2 line-clamp-3">
+                        <p className=" text-sm mt-2 line-clamp-3">
                           {a.excerpt}
                         </p>
 
                         {(a.views > 0 || a.readingTime > 0) && (
                           <div className="flex gap-6 text-xs text-gray-500 mt-4">
                             {a.views > 0 && <span>👁 {a.views} views</span>}
-                            {a.readingTime > 0 && (
+                            {/* {a.readingTime > 0 && (
                               <span>{a.readingTime} min read</span>
-                            )}
+                            )} */}
                           </div>
                         )}
                       </div>
@@ -544,17 +542,82 @@ const rightAds =
                           <h4>{a.title}</h4>
                         </div>
 
-                        <p className="text-gray-600 text-sm mt-2 line-clamp-3">
+                        <p className=" text-sm mt-2 line-clamp-3">
                           {a.excerpt}
                         </p>
 
                         {(a.views > 0 || a.readingTime > 0) && (
-                          <div className="flex justify-between text-xs text-gray-500 mt-2">
-                            {a.views > 0 && <span>👁 {a.views}</span>}
-                            {a.readingTime > 0 && (
-                              <span>{a.readingTime} min read</span>
-                            )}
-                          </div>
+                          <motion.div
+                            className="flex justify-start text-xs text-gray-500 mt-2"
+                            initial={{ opacity: 0, y: 8 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -8 }}
+                            transition={{ duration: 0.3, ease: "easeOut" }}
+                          >
+                            <AnimatePresence>
+                              {a.likes > 0 && (
+                                <motion.div
+                                  className="flex items-center mr-4"
+                                  initial={{ scale: 0, opacity: 0 }}
+                                  animate={{ scale: 1, opacity: 1 }}
+                                  exit={{ scale: 0, opacity: 0 }}
+                                  transition={{
+                                    type: "spring",
+                                    stiffness: 400,
+                                    damping: 20,
+                                    delay: 0.1,
+                                  }}
+                                >
+                                  <motion.img
+                                    src={LikedIcon}
+                                    className="w-3 h-3 mr-1"
+                                    animate={{
+                                      rotate: [0, -5, 5, 0],
+                                      scale: [1, 1.1, 1],
+                                    }}
+                                    transition={{
+                                      duration: 0.6,
+                                      repeat: Infinity,
+                                      repeatType: "reverse",
+                                      repeatDelay: 2,
+                                    }}
+                                  />
+                                  <motion.span
+                                    animate={{
+                                      scale: [1, 1.05, 1],
+                                      color: ["#6B7280", "#EF4444", "#6B7280"],
+                                    }}
+                                    transition={{
+                                      duration: 0.4,
+                                      repeat: Infinity,
+                                      repeatType: "reverse",
+                                      repeatDelay: 2.5,
+                                    }}
+                                  >
+                                    {a.likes}
+                                  </motion.span>
+                                </motion.div>
+                              )}
+                            </AnimatePresence>
+
+                            {/* Uncomment and animate these too */}
+                            {/* <motion.span 
+      className="flex items-center"
+      initial={{ opacity: 0, x: -10 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ delay: 0.2 }}
+    >
+      👁 {a.views}
+    </motion.span> */}
+
+                            {/* <motion.span 
+      initial={{ opacity: 0, x: -10 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ delay: 0.3 }}
+    >
+      {a.readingTime} min read
+    </motion.span> */}
+                          </motion.div>
                         )}
                       </div>
                     </Link>

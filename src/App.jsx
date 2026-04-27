@@ -632,7 +632,7 @@ function App() {
           </div>
         )}
 
-      {!hideOnMargazhiPage && !hideOnJahabarPage && (
+      {/* {!hideOnMargazhiPage && !hideOnJahabarPage && (
         <div
           id="menifeto-tab"
           ref={stickyRef}
@@ -644,7 +644,7 @@ function App() {
             <img src="/images/tap-button-arattai.svg" alt="arattai" />
           </a>
         </div>
-      )}
+      )} */}
 
       {/* {!hideOnMargazhiPage && (
         <div
@@ -663,6 +663,7 @@ function App() {
         </div>
       )} */}
 
+      {/* ANIMATE VERSION  */}
       {!hideOnMargazhiPage && (
         <div
           id="hotshots-event-tab"
@@ -671,13 +672,17 @@ function App() {
             footerReached ? "footerreached" : ""
           } bubble-master`} // 🔥 UPGRADED CLASS
         >
-          <a href="/day-to-deliver-quiz">
+          <a href="/arattai-with-vivek-karunakaran/chennai-fashion-designer/">
             <img
-              src="/images/quiz-button.svg"
+              src="/images/tap-button-arattai.svg" 
               alt="artificial intelligence challenge"
-              className="bubble-glow" // 🔥 UPGRADED CLASS
+              // className="bubble-glow" // 🔥 UPGRADED CLASS
             />
           </a>
+
+             {/* <a href="/arattai-with-vivek-karunakaran/chennai-fashion-designer/">
+            <img src="/images/tap-button-arattai.svg" alt="arattai" />
+          </a> */}
         </div>
       )}
 

@@ -84,14 +84,14 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    type: "image",
-    link: "/arattai-with-vivek-karunakaran/chennai-fashion-designer",
-    image: "/images/vivek-homepage-banner.jpeg",
-    image1: "/images/mobile-banner-vivek-mobile.jpeg",
-    title: "Icon of the month in chennai",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   type: "image",
+  //   link: "/arattai-with-vivek-karunakaran/chennai-fashion-designer",
+  //   image: "/images/vivek-homepage-banner.jpeg",
+  //   image1: "/images/mobile-banner-vivek-mobile.jpeg",
+  //   title: "Icon of the month in chennai",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   // {
   //   type: "image",

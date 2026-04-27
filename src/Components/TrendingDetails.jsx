@@ -1258,6 +1258,158 @@ export default function TrendingDetails() {
 
     ]
 
+
+    const lalaland = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai/chennai-theme-park-lalaland",
+        },
+        headline:
+          "Candy-Themed Inflatable Park ‘Lalaland’ Opens in Chennai – A Sweet Escape for Families!",
+        description:
+          "Chennai new theme park Lalaland offers a candy-themed inflatable world with slides, obstacle courses, and fun zones. Perfect for family outings and kids fun.",
+        image:
+          "https://www.superchennai.com/images/trendingChennai/candy-themeland.jpeg",
+        author: {
+          "@type": "Person",
+          name: "Super Chennai",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "2026-04-19",
+      },
+    ];
+    
+    const villivakkam = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai/villivakkam-new-park-agathiyar-nagar",
+        },
+        headline: "New Park Opens in Villivakkam for Fitness & Family Fun",
+        description:
+          "Villivakkam new park at Agathiyar Nagar features a shuttle court, walking area, kids play zone, and playground—ideal for fitness, relaxation, and family outings.",
+        image:
+          "https://www.superchennai.com/images/trendingChennai/trending-chennai-park.jpeg",
+        author: {
+          "@type": "Person",
+          name: "Super Chennai",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "2026-04-08",
+      },
+    ];
+
+    const walltaxROAD =[
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/walltax-road-new-homes-chennai"
+  },
+  "headline": "700 New Homes at Walltax Road",
+  "description": "A ₹133 crore project brings 700 new homes to Walltax Road, Chennai, offering modern housing, better living standards, and improved urban infrastructure.",
+  "image": "https://www.superchennai.com/images/trendingChennai/700-New-Homes-at-Walltax-Road.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-03-11"
+}
+
+    ]
+
+
+    const mudhalvar = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai/mudhalvar-thirumana-maaligai-chennai",
+        },
+        headline: "Mudhalvar Thirumana Maaligai Opens in Chennai for Weddings",
+        description:
+          "Mudhalvar Thirumana Maaligai at Wall Tax Road is a government marriage hall in Chennai offering 600+ seating capacity, modern amenities, and affordable wedding options.",
+        image:
+          "https://www.superchennai.com/images/trendingChennai/TRENDING-CHENNAI-hall.jpeg",
+        author: {
+          "@type": "Person",
+          name: "Super Chennai",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "2026-02-08",
+      },
+    ];
+    
+    const sportsSowcarPet = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai/sports-ground-sowcarpet",
+        },
+        headline: "New Sports Ground in Sowcarpet",
+        description:
+          "Discover the new sports ground in Sowcarpet, built for fitness, play, and community gatherings at Anna Pillai Street, offering a lively space in Chennai.",
+        image:
+          "https://www.superchennai.com/images/trendingChennai/new-sports-ground.jpeg",
+        author: {
+          "@type": "Person",
+          name: "Super Chennai",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "2026-03-03",
+      },
+    ];
+    
+
     return (
       <>
         <Helmet>
@@ -1282,6 +1434,42 @@ export default function TrendingDetails() {
             rel="canonical"
             href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
           />
+
+          {slug === "sports-ground-sowcarpet" && (
+            <script type="application/ld+json">
+              {JSON.stringify(sportsSowcarPet)}
+            </script>
+          )}
+
+          {slug === "mudhalvar-thirumana-maaligai-chennai" && (
+            <script type="application/ld+json">
+              {JSON.stringify(mudhalvar)}
+            </script>
+          )}
+
+          {slug === "walltax-road-new-homes-chennai" && (
+            <script type="application/ld+json">
+              {JSON.stringify(walltaxROAD)}
+            </script>
+          )}
+
+          {slug === "walltax-road-new-homes-chennai" && (
+            <script type="application/ld+json">
+              {JSON.stringify(walltaxROAD)}
+            </script>
+          )}
+
+          {slug === "villivakkam-new-park-agathiyar-nagar" && (
+            <script type="application/ld+json">
+              {JSON.stringify(villivakkam)}
+            </script>
+          )}
+
+          {slug === "chennai-theme-park-lalaland" && (
+            <script type="application/ld+json">
+              {JSON.stringify(lalaland)}
+            </script>
+          )}
 
           {slug === "moviemax-pr-mall-theatre-chennai" && (
             <script type="application/ld+json">

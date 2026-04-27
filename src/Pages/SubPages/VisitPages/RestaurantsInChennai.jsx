@@ -19,19 +19,33 @@ const detailsections = [
     title: "Global & Continental Cuisine",
     points: [
       {
-      name: "Fusilli Reasons",
-      date: "24/04/2026",
-      description:
-        "A budget-friendly vegetarian Italian spot known for affordable pasta, garlic breads, and nachos.",
-      subDescription:
-        "Recently introduced Neapolitan-style pizzas and expanded to Anna Nagar with a cozy dining setup.",
-      locations: [
-        {
-          label: "Anna Nagar",
-          link: "https://maps.app.goo.gl/iwdKSoDrMbjhrGYs9",
-        },
-      ],
-    },
+        name: "Open Crave Bunker",
+        date: "05/05/2026",
+        description:
+          "Open Crave Bunker began operations in early 2026 as a modern American-style diner with an Indian fusion twist.",
+        subDescription:
+          "It focuses on affordable, quality, and seasonal food, offering a relaxed neighbourhood dining experience. Known for steaks and New York-style cheesecake, it also highlights nutrition details with a casual US-inspired vibe.",
+        locations: [
+          {
+            label: "Teynampet",
+            link: "https://maps.app.goo.gl/BZwfaQ1A7K1BMUCQA",
+          },
+        ],
+      },
+      {
+        name: "Fusilli Reasons",
+        date: "24/04/2026",
+        description:
+          "A budget-friendly vegetarian Italian spot known for affordable pasta, garlic breads, and nachos.",
+        subDescription:
+          "Recently introduced Neapolitan-style pizzas and expanded to Anna Nagar with a cozy dining setup.",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/iwdKSoDrMbjhrGYs9",
+          },
+        ],
+      },
       {
         name: "Pan Sauce Poetry",
         date: "23/03/2026",
@@ -46,7 +60,7 @@ const detailsections = [
           },
         ],
       },
-      
+
       {
         name: "Vasco’s",
         date: "23/03/2026",
@@ -349,19 +363,33 @@ const detailsections = [
     title: "Asian Cuisine",
     points: [
       {
-      name: "Penang by Crystal Woo",
-      date: "24/04/2026",
-      description:
-        "A Malaysian-Asian restaurant reimagined from Crystal Woo Dimsum House.",
-      subDescription:
-        "Serves authentic Malaysian, Chinese, and Thai dishes like dim sum, nasi lemak, and roti canai with lively interiors and open kitchen.",
-      locations: [
-        {
-          label: "Nungambakkam",
-          link: "https://maps.app.goo.gl/2TxCe4xg1tXWbnQ78",
-        },
-      ],
-    },
+        name: "Fu Fu",
+        date: "05/05/2026",
+        description:
+          "Fu Fu, a vibrant Asian fusion restaurant in Alwarpet, Chennai, opened in January 2026 on C. P. Ramaswamy Iyer Road.",
+        subDescription:
+          "It offers a bold mix of Japanese, Thai, Korean, and more cuisines in a fun, neon-lit, tiger-themed setting. Known for creative dishes and quirky drinks, it delivers a lively, high-energy dining experience.",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/c1DJurNThK7sv3KZ8",
+          },
+        ],
+      },
+      {
+        name: "Penang by Crystal Woo",
+        date: "24/04/2026",
+        description:
+          "A Malaysian-Asian restaurant reimagined from Crystal Woo Dimsum House.",
+        subDescription:
+          "Serves authentic Malaysian, Chinese, and Thai dishes like dim sum, nasi lemak, and roti canai with lively interiors and open kitchen.",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/2TxCe4xg1tXWbnQ78",
+          },
+        ],
+      },
       {
         name: "Zhouyu - A Chinese Kitchen",
         date: "23/03/2026",
@@ -620,82 +648,97 @@ const detailsections = [
     points: [
       // NEW ADDED
 
-       {
-      name: "Sando Society",
-      date: "24/04/2026",
-      description:
-        "A trendy café serving Japanese-style fluffy shokupan sandwiches.",
-      subDescription:
-        "Known for its vibrant vibe, live counter, and thick, flavor-packed sandwiches.",
-      locations: [
-        {
-          label: "Besant Nagar",
-          link: "https://maps.app.goo.gl/RX5hW4udq2r76xTU9",
-        },
-      ],
-    },
-    {
-      name: "Aarzoo Cafe",
-      date: "24/04/2026",
-      description:
-        "A stylish vegetarian café with pastel-themed, Instagram-worthy interiors.",
-      subDescription:
-        "Popular for fusion desserts like Lotus Biscoff cheesecake, falooda, and late-night workspace vibe (open till 2 AM).",
-      locations: [
-        {
-          label: "Nungambakkam",
-          link: "https://maps.app.goo.gl/WojdvPse9hrneFVh8",
-        },
-      ],
-    },
-    {
-      name: "Bold Roastery Coffee",
-      date: "24/04/2026",
-      description:
-        "A trendy café inside a pickleball arena built around a lifestyle experience.",
-      subDescription:
-        "Serves specialty coffee, chutney cheese sandwiches, and protein-rich dishes in a relaxed setting.",
-      locations: [
-        {
-          label: "T Nagar",
-          link: "https://maps.app.goo.gl/TCwRpvBmH1fDQb9s7",
-        },
-      ],
-    },
-    {
-      name: "Amadora Gourmet Ice Cream",
-      date: "24/04/2026",
-      description:
-        "A premium dessert brand known for artisanal, small-batch ice creams and sorbets.",
-      subDescription:
-        "Offers rich flavors and desserts across multiple Chennai locations.",
-      locations: [
-        {
-          label: "Thousand Lights",
-          link: "https://maps.app.goo.gl/G3KktR8mHsZ1CYnJ7",
-        },
-        {
-          label: "T Nagar",
-          link: "https://maps.app.goo.gl/5c2fmUbFzcR2vbo27",
-        },
-        {
-          label: "Kotturpuram",
-          link: "https://maps.app.goo.gl/bDLfonZ4ZXsdPr5WA",
-        },
-        {
-          label: "Anna Nagar East",
-          link: "https://maps.app.goo.gl/YDyUF3CwE4rjgPgY8",
-        },
-        {
-          label: "Velachery",
-          link: "https://maps.app.goo.gl/M5B5dSxN1mVbr87j8",
-        },
-        {
-          label: "Injambakkam",
-          link: "https://maps.app.goo.gl/LLT1aJGYzsrSS49t9",
-        },
-      ],
-    },
+      {
+        name: "Ravellé Bistro",
+        date: "05/05/2026",
+        description:
+          "Ravellé Bistro is a newly opened (2026) rooftop art café in Potheri, Chennai, located on Bajanai Kovil Street.",
+        subDescription:
+          "It offers gourmet food and artisanal coffee in a calm, creative setting with art, music, and occasional open-mic events. Featuring Italian, Asian, and American dishes, it’s a cozy hangout spot open daily from 12 PM to 11 PM.",
+        locations: [
+          {
+            label: "Kattankulathur",
+            link: "https://maps.app.goo.gl/Pr69TRHrofoX9xQZ8",
+          },
+        ],
+      },
+
+      {
+        name: "Sando Society",
+        date: "24/04/2026",
+        description:
+          "A trendy café serving Japanese-style fluffy shokupan sandwiches.",
+        subDescription:
+          "Known for its vibrant vibe, live counter, and thick, flavor-packed sandwiches.",
+        locations: [
+          {
+            label: "Besant Nagar",
+            link: "https://maps.app.goo.gl/RX5hW4udq2r76xTU9",
+          },
+        ],
+      },
+      {
+        name: "Aarzoo Cafe",
+        date: "24/04/2026",
+        description:
+          "A stylish vegetarian café with pastel-themed, Instagram-worthy interiors.",
+        subDescription:
+          "Popular for fusion desserts like Lotus Biscoff cheesecake, falooda, and late-night workspace vibe (open till 2 AM).",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/WojdvPse9hrneFVh8",
+          },
+        ],
+      },
+      {
+        name: "Bold Roastery Coffee",
+        date: "24/04/2026",
+        description:
+          "A trendy café inside a pickleball arena built around a lifestyle experience.",
+        subDescription:
+          "Serves specialty coffee, chutney cheese sandwiches, and protein-rich dishes in a relaxed setting.",
+        locations: [
+          {
+            label: "T Nagar",
+            link: "https://maps.app.goo.gl/TCwRpvBmH1fDQb9s7",
+          },
+        ],
+      },
+      {
+        name: "Amadora Gourmet Ice Cream",
+        date: "24/04/2026",
+        description:
+          "A premium dessert brand known for artisanal, small-batch ice creams and sorbets.",
+        subDescription:
+          "Offers rich flavors and desserts across multiple Chennai locations.",
+        locations: [
+          {
+            label: "Thousand Lights",
+            link: "https://maps.app.goo.gl/G3KktR8mHsZ1CYnJ7",
+          },
+          {
+            label: "T Nagar",
+            link: "https://maps.app.goo.gl/5c2fmUbFzcR2vbo27",
+          },
+          {
+            label: "Kotturpuram",
+            link: "https://maps.app.goo.gl/bDLfonZ4ZXsdPr5WA",
+          },
+          {
+            label: "Anna Nagar East",
+            link: "https://maps.app.goo.gl/YDyUF3CwE4rjgPgY8",
+          },
+          {
+            label: "Velachery",
+            link: "https://maps.app.goo.gl/M5B5dSxN1mVbr87j8",
+          },
+          {
+            label: "Injambakkam",
+            link: "https://maps.app.goo.gl/LLT1aJGYzsrSS49t9",
+          },
+        ],
+      },
 
       {
         name: "The Cozy Nook",
@@ -1863,20 +1906,34 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
-       {
-      name: "Poppadum",
-      date: "24/04/2026",
-      description:
-        "A pure-veg restaurant serving flavorful and creatively crafted dishes.",
-      subDescription:
-        "Offers a delicious twist on classic favorites, making every meal feel special.",
-      locations: [
-        {
-          label: "Kilpauk",
-          link: "https://maps.app.goo.gl/VPRgeuCoStWgTSZF9",
-        },
-      ],
-    },
+      {
+        name: "Punjab Grill",
+        date: "05/05/2026",
+        description:
+          "Punjab Grill reopened in 2026 at Phoenix Marketcity, Chennai, now on the first floor with a refreshed, modern ambiance.",
+        subDescription:
+          "It continues to serve its signature North Indian dishes like Rawalpindi Chole and Mutton Boti in a more refined setting with an elevated dining experience.",
+        locations: [
+          {
+            label: "Velachery",
+            link: "https://maps.app.goo.gl/paXTiFQBJkRXBbPa9",
+          },
+        ],
+      },
+      {
+        name: "Poppadum",
+        date: "24/04/2026",
+        description:
+          "A pure-veg restaurant serving flavorful and creatively crafted dishes.",
+        subDescription:
+          "Offers a delicious twist on classic favorites, making every meal feel special.",
+        locations: [
+          {
+            label: "Kilpauk",
+            link: "https://maps.app.goo.gl/VPRgeuCoStWgTSZF9",
+          },
+        ],
+      },
       {
         name: "The New Punjab Club",
         date: "23/03/2026",
@@ -2189,25 +2246,26 @@ export default function Restaurants() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const isNewBatch = (dateStr) => {
-  //   if (!dateStr) return false;
 
-  //   const [day, month, year] = dateStr.split("/").map(Number);
-  //   const itemDate = new Date(year, month - 1, day);
+// const isNewBatch = (dateStr) => {
+//   if (!dateStr) return false;
 
-  //   const cutoffDate = new Date(2026, 2, 30); 
+//   const [day, month, year] = dateStr.split("/").map(Number);
+//   const itemDate = new Date(year, month - 1, day);
 
-  //   return itemDate <= cutoffDate;
-  // };
+//   const startDate = new Date(2026, 2, 30); // March 30
+//   const endDate = new Date(2026, 3, 24);   // April 24
 
+//   return itemDate >= startDate && itemDate <= endDate;
+// };
 const isNewBatch = (dateStr) => {
   if (!dateStr) return false;
 
   const [day, month, year] = dateStr.split("/").map(Number);
   const itemDate = new Date(year, month - 1, day);
 
-  const startDate = new Date(2026, 2, 30); // March 30
-  const endDate = new Date(2026, 3, 24);   // April 24
+  const startDate = new Date(2026, 2, 30); // March 30, 2026
+  const endDate = new Date(2026, 4, 5);    // May 5, 2026
 
   return itemDate >= startDate && itemDate <= endDate;
 };

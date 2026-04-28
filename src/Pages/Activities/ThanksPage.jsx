@@ -5,8 +5,8 @@ import { useLocation } from "react-router-dom";
 
 export default function Thankyou() {
   const location = useLocation();
-  const from = location.state?.from;
-  // const from = "vivek";
+  // const from = location.state?.from;
+  const from = "soumya";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -38,6 +38,13 @@ export default function Thankyou() {
             ? "/images/VIVEK-TQ-BANNER-mobile.jpeg"
             : "/images/thankyou-vivek-banner.jpeg",
         );
+
+         } else if (from === "soumya") {
+        setImageSrc(
+          isMobile
+            ? "/images/VIVEK-TQ-BANNER-mobile.jpeg"
+            : "/images/thankyou-vivek-banner.jpeg",
+        );
       } else if (from === "jahabar") {
         setImageSrc(
           isMobile
@@ -55,82 +62,6 @@ export default function Thankyou() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     const isMobile = window.innerWidth <= 800;
-  //     if (from === "conclave") {
-  //       setImageSrc(
-  //         isMobile
-  //           ? "/images/events/mobile-thankyou-banner1.jpeg"
-  //           : "/images/events/thanku-banner-conclave.jpeg",
-  //       );
-
-  //       return;
-  //     } else if (from === "conclave") {
-  //       setImageSrc(
-  //         isMobile
-  //           ? "/images/events/thanku-banner-conclave.jpeg"
-  //           : "/images/events/thanku-banner-conclave.jpeg",
-  //       );
-  //     }
-
-  //     else if (from === "manifesto-info") {
-  //       setImageSrc(
-  //         isMobile
-  //           ? "/images/mobile-thanky-banner-manifesto.jpeg"
-  //           : "/images/thankyou-banner-manifesto.jpeg",
-  //       );
-
-  //     } else {
-  //       if (from === "trivia-game")
-  //         setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
-  //       else setImageSrc("/images/thankyou-banner-manifesto.jpeg");
-  //     }
-
-  //   };
-  //   handleResize();
-  //   window.addEventListener("resize", handleResize);
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
-
-  //   useEffect(() => {
-  //   const handleResize = () => {
-  //     const isMobile = window.innerWidth <= 800;
-
-  //     if (from === "conclave") {
-  //       setImageSrc(
-  //         isMobile
-  //           ? "/images/events/mobile-thankyou-banner1.jpeg"
-  //           : "/images/events/thanku-banner-conclave.jpeg"
-  //       );
-
-  //     } else if (from === "jahabar") {
-  //       setImageSrc(
-  //         isMobile
-  //           ? "/images/chaikings-tq-innerpage-bannerNew.jpeg"
-  //           : "/images/mobile-chaikings-tq-banner.jpeg"
-  //       );
-
-  //     } else if (from === "manifesto-info") {
-  //       setImageSrc(
-  //         isMobile
-  //           ? "/images/mobile-thanky-banner-manifesto.jpeg"
-  //           : "/images/thankyou-banner-manifesto.jpeg"
-  //       );
-
-  //     } else {
-  //       if (from === "trivia-game")
-  //         setImageSrc("/images/mobile-thanky-banner-manifesto.jpeg");
-  //       else
-  //         setImageSrc("/images/thankyou-banner-manifesto.jpeg");
-  //     }
-  //   };
-
-  //   handleResize();
-  //   window.addEventListener("resize", handleResize);
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, [from]);
 
   useEffect(() => {
     window.scrollTo({
@@ -156,61 +87,13 @@ export default function Thankyou() {
 
   return (
     <>
-      {/* <section className=" carquizbanner relative overflow-hidden cursor-pointer akbaralipage">
-        <div>
-          <img
-            className="eventsCalenderIamge hidden sm:block"
-            src={imageSrc}
-            alt="Thank You Banner"
-          />
-          <img
-            className="block sm:hidden"
-            src={imageSrc}
-            alt="Thank You Banner Mobile"
-          />
-        </div>
-
-        <div className="accaodomationBannerSection carquizbanner relative overflow-hidden cursor-pointer akbaralipage">
-          <div className="accodoamationBannerText">
-            <h1></h1>
-            <AutoShrinkText
-              text={
-                from === "conclave" ||
-                from === "jahabar" ||
-                from === "trivia-game"
-                  ? ""
-                  : "Thank You!"
-              }
-              baseSize={60}
-              minSize={40}
-              maxChars={40}
-              className="accodoamationBannerText"
-              width="80%"
-              maxLines={2}
-            />
-          </div>
-        </div>
-      </section> */}
       <section className="accaodomationBannerSection carquizbanner">
         <div>
-          {/* <img
-            className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/quiz-banner.jpeg"
-            alt="Super Chennai Quiz"
-          /> */}
-
           <img
             className="eventsCalenderIamge hidden sm:block"
             src={imageSrc}
             alt="Thank You Banner"
           />
-
-          {/* Mobile Image */}
-          {/* <img
-            className=" block sm:hidden"
-            src="/images/events/quiz-banner.jpeg"
-            alt="Super Chennai Quiz Mobile"
-          /> */}
 
           <img
             className="block sm:hidden"
@@ -222,14 +105,6 @@ export default function Thankyou() {
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
             <AutoShrinkText
-              // text={
-              //   from === "conclave" ||
-              //   from === "jahabar" ||
-              //   from === "trivia-game" ||
-              //   from === "vivek"
-              //     ? "Day to deliver-quiz"
-              //     : "Thank You!"
-              // }
               text={
                 from === "vivek"
                   ? ""
@@ -287,6 +162,23 @@ export default function Thankyou() {
               </p>
               <p>Stay engaged. Stay informed.</p>
               <p>Chennai’s future is built by its citizens.</p>
+            </div>
+          )}
+
+          {from === "soumya" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+
+              <p>
+                Thank you for registering for Arattai with Soumya Swaminathan.
+                Your submission has been successfully received, and our team is
+                currently reviewing your registration. If your entry is
+                selected, you will receive an official confirmation email from
+                Team Super Chennai with further details about the event. Please
+                note that your participation will be considered confirmed only
+                after you receive the confirmation email. We appreciate your
+                interest and look forward to connecting with you soon.
+              </p>
             </div>
           )}
 

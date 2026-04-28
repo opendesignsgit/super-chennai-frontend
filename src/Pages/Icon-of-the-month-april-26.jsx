@@ -371,7 +371,7 @@ export default function IconofthemonthAprilSowmiyaSwaminathan() {
             <img
               style={{ boxShadow: "none" }}
               alt="foundations "
-              src="/images/kamakotti-png.png"
+              src="/images/soumya-awards.jpeg"
             ></img>
             <div
               ref={listRef}

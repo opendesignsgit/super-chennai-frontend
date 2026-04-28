@@ -128,7 +128,7 @@ export default function IconofthemonthAprilSowmiyaSwaminathan() {
       title: "FABA Lifetime Achievement Award (2024)",
     },
     {
-      title: "DEVI Awards (202",
+      title: "DEVI Awards (2026)",
     },
     {
       title: "Honorary doctorates from leading global institutions",
@@ -415,7 +415,7 @@ export default function IconofthemonthAprilSowmiyaSwaminathan() {
             </div>
           </div>
         </section>
-        <IconoftheMonthKamakotiSlider />
+        {/* <IconoftheMonthKamakotiSlider /> */}
         <InstagramReelsMarquee />
         <Becameavolunteer />
       </div>

@@ -387,7 +387,7 @@ export default function ArattaiWithSoumyaSwaminathan() {
               </h2>
 
               <p className="text-gray-600 text-lg">
-                On 25<sup>th</sup> April
+                On 9<sup>th</sup> May  
               </p>
 
               {/* <button

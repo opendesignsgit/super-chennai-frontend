@@ -5,8 +5,8 @@ import { useLocation } from "react-router-dom";
 
 export default function Thankyou() {
   const location = useLocation();
-  // const from = location.state?.from;
-  const from = "soumya";
+  const from = location.state?.from;
+  // const from = "soumya";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 

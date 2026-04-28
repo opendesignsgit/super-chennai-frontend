@@ -86,6 +86,26 @@ export default function Iconsofthemonth() {
               <a
                 className="superchennaiEventsSection"
                 id="icon-of-the-month-nov"
+                href="/icon-of-the-feb-month-2026"
+              >
+                <div
+                  className="flex flex-col items-center text-center"
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/soumya-iconofthemonth-banner1.jpeg"
+                    alt="Left Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">
+                    Icon of the Month - Feb 2026
+                  </p>
+                </div>
+              </a>
+
+              <a
+                className="superchennaiEventsSection"
+                id="icon-of-the-month-nov"
                 href="/icon-of-the-jan-month-2026"
               >
                 <div

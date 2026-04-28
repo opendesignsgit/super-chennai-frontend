@@ -2814,6 +2814,7 @@
     width: 350px;
     overflow: visible;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .submainlocationdd input {
@@ -2840,12 +2841,13 @@
     padding-right: 0px;
     padding-left: 10px;
     column-gap: 0;
-    width: 59%;
+    width: 65%;
     order: 2;
     margin-top: 20px;
     border: 1px solid #b5b2b2;
-    border-radius: 7px;
+    border-radius: 50px;
     padding: 8px 10px;
+    height: 42px;
   }
 
   .locationiframe {
@@ -2868,8 +2870,30 @@
     top: 5%;
   }
 
+  .stickedfilter .mainselectinputss {
+    display: none;
+  }
+
+  .stickedfilter .clickheretoexplorelocation {
+    display: none;
+  }
+
+  .mainMegamenuContainer.scrolled {
+    z-index: 100000;
+  }
+
+  .stickedfilter .changethelocation {
+    margin-top: 60px;
+  }
   .changethelocation {
-    margin-top: 110px;
+    margin-top: 140px;
+  }
+
+  .stickedfilter {
+    height: auto;
+    top: 64px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 
   .clickheretoexplorelocation {
@@ -2878,14 +2902,16 @@
     border-radius: 20px;
     width: max-content;
     /* margin-left: -49px; */
-    padding: 2px 12px 2px 13px;
-    font-size: 10px;
+    padding: 2px 18px 2px 18px;
+    font-size: 12px;
     letter-spacing: 0.5px;
     cursor: pointer;
     position: absolute;
-    top: 62px;
+    top: 120px;
     overflow: visible;
     right: 5px;
+    left: 36%;
+    width: 56%;
   }
 
   .pointerdiv.buttonactivated:nth-of-type(1)::before {
@@ -2968,6 +2994,32 @@
   .arrorwwwwidth {
     width: 47px;
     height: 47px;
+  }
+
+  .slectmapoption {
+    width: auto;
+    min-width: min-content;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "29LT Bukra";
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  /* Parent container (div class="mainlocationdd") */
+  .mainlocationdd {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center la venum na */
+    width: fit-content;
+    margin: 0 auto; /* Horizontal center panna */
+    border: 1px solid #ccc; /* Unga design padi border */
+    border-radius: 8px;
+    padding: 5px 15px;
   }
 }
 

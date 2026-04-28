@@ -176,7 +176,7 @@ export default function ArattaiWithSoumyaSwaminathan() {
         <img
           className="hidden sm:block w-full"
           // src="/images/vivek-banner.jpeg"
-          src="/images/vivek-innerpage-banner.jpeg"
+          src="/images/soumya-iconofthemonth-banner1.jpeg"
           alt="Arattai Event"
         />
         <img

@@ -284,7 +284,7 @@ export default function IconofthemonthAprilSowmiyaSwaminathan() {
           <div className="VolunteerMainContainer">
             <div className="volunteerSectionBanner">
               <div className="VolunteerBannerImage">
-                <img src="/images/inner-page-banner-kamakot.jpeg" alt="" />
+                <img src="/images/soumya-iconofthemonth-banner1.jpeg" alt="" />
               </div>
             </div>
           </div>
@@ -335,7 +335,7 @@ export default function IconofthemonthAprilSowmiyaSwaminathan() {
             </h1>
             <div className="section-container container max-w-7xl mx-auto px-4">
               <div className="section-left-image">
-                <img src="/images/kamakoti-banner.jpg" alt="Main Side Visual" />
+                <img src="/images/iconofthemonth-sowmya-img1big.jpeg" alt="Main Side Visual" />
               </div>
 
               <div className="section-right-content">

@@ -338,6 +338,10 @@ import ArattaiKarunakaranExcelView from "./Pages/Activities/ArrattaiWithVivekKar
 import ArattaiSoumyaSwaminathanExcelView from "./Pages/Activities/ArrattaiWithSoumyaSwaminathan/ArattaiSoumyaSwaminathanExcelView";
 import ArattaiWithSoumyaSwaminathan from "./Pages/Activities/ArrattaiWithSoumyaSwaminathan/arattai-soumya-swaminathan";
 import IconofthemonthAprilSowmiyaSwaminathan from "./Pages/Icon-of-the-month-april-26";
+import CricketLivePage from "./Pages/Activities/cricketLive";
+
+
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -1297,6 +1301,13 @@ function App() {
           path="/visit-shopping-local-finds-savoredible-souvenirs"
           element={<ShoppingLocalFindsSavorEdibleSouvenirs />}
         />
+
+            <Route
+          path="/CricketLivePage"
+          element={<CricketLivePage />}
+        />
+
+        
         {/* Shopping Pages */}
         {/* Place to Visit */}
         <Route

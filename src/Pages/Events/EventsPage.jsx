@@ -122,7 +122,8 @@ useEffect(() => {
           onCategoryChange={handleCategoryChange}
           activeColor="#a44294"
         />
-        <div className="container max-w-7xl mx-auto flex flex-row gap-6 p-2">
+        {/* <div className="container max-w-9xl mx-auto flex flex-row gap-6 p-2"> */}
+        <div className="mx-auto w-full max-w-[1300px] flex flex-row gap-6 p-2">
           {/* === LEFT SIDEBAR === */}
           <aside className="hidden md:block w-[280px] shrink-0">
             <div className="sticky top-24">
@@ -255,7 +256,7 @@ useEffect(() => {
                             <img
                               src={imageUrl}
                               alt={eventData.title || card.title}
-                              className="h-full w-full object-cover rounded-t-lg"
+                              className="h-full w-full  rounded-t-lg"
                             />
                           </a>
                           {eventData?.eventsCategory?.length > 0 && (

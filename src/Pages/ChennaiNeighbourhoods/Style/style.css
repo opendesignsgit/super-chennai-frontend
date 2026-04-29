@@ -867,6 +867,40 @@
   display: none;
 }
 
+.nopeee {
+  position: relative;
+  top: auto;
+  opacity: 1;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.stickedfilter {
+  position: fixed;
+  width: 100%;
+  top: 118px;
+  left: 0;
+  background: #fff;
+  height: 130px;
+  z-index: 1000;
+  box-shadow: 0px 6px 8px -2px rgba(0, 0, 0, 0.24);
+  transform: translateY(-20px);
+  opacity: 0;
+  animation: stickyslide 0.4s ease forwards;
+}
+
+@keyframes stickyslide {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;

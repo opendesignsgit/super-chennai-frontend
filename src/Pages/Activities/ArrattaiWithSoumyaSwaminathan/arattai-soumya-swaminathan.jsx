@@ -149,106 +149,171 @@ export default function ArattaiWithSoumyaSwaminathan() {
   };
 
 
-  const ScientistBackground = () => {
+
+const ScientistBackground = () => {
   return (
-    <div className="w-full h-full relative">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-black" />
+    <div className="w-full h-full relative overflow-hidden">
+      {/* Professional Medical Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900" />
       
-      {/* Animated Particles */}
-      <div className="absolute inset-0">
-        {[...Array(50)].map((_, i) => (
+      {/* Subtle Medical Blue Overlay */}
+      <div className="absolute inset-0 bg-blue-500/5" />
+      
+      {/* WHO-style Medical Cross Pattern */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI1IDEySDI1VjIzSDM2VjIzSDI1VjM4SDIzVjIzSDEyVjIxSDEyVjM2SDIzVjM2SDIzVjI1SDM0VjIzSDIzVjEySDI1WiIgZmlsbD0iI0JCMkZGMCIvPgo8L3N2Zz4K')] bg-repeat" />
+      </div>
+
+      {/* Floating Medical Icons - Professional Style */}
+      
+      {/* Stethoscope */}
+      <motion.div
+        className="absolute top-16 left-12 w-16 h-16"
+        animate={{
+          y: [0, -8, 0],
+          rotate: [0, 2, -2, 0]
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        <div className="w-12 h-12 border-2 border-blue-300/50 rounded-full bg-blue-400/20 relative">
+          <div className="absolute -top-1 left-1/2 w-8 h-8 bg-gradient-to-r from-red-400/60 to-pink-400/60 rounded-full -translate-x-1/2" />
+          <div className="absolute bottom-1 left-2 w-3 h-3 bg-white/80 rounded-full" />
+          <div className="absolute bottom-1 right-2 w-3 h-3 bg-white/80 rounded-full" />
+        </div>
+      </motion.div>
+
+      {/* Medical Chart */}
+      <motion.div
+        className="absolute bottom-24 right-16 w-20 h-20"
+        animate={{
+          y: [0, 8, 0],
+          scale: [1, 1.02, 1]
+        }}
+        transition={{
+          duration: 15,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        <div className="w-full h-full bg-white/10 backdrop-blur-sm rounded-lg border border-blue-200/30 shadow-2xl">
+          <div className="absolute top-2 left-3 w-12 h-1 bg-gradient-to-r from-green-400 to-blue-400 rounded-full" />
+          <div className="absolute top-6 left-3 w-8 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full" />
+          <div className="absolute top-10 left-3 w-10 h-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full" />
+          <div className="absolute right-2 bottom-2 w-3 h-3 bg-green-400/60 rounded-full" />
+        </div>
+      </motion.div>
+
+      {/* Test Tube */}
+      <motion.div
+        className="absolute left-1/4 top-1/3 w-10 h-24"
+        animate={{
+          y: [0, -12, 0],
+          rotate: [0, 3, -3, 0]
+        }}
+        transition={{
+          duration: 18,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        <div className="w-full h-4/5 bg-gradient-to-b from-blue-300/40 to-blue-500/40 rounded-t-3xl border border-blue-300/50 shadow-lg" />
+        <div className="absolute bottom-0 left-1 w-8 h-4 bg-white/90 rounded-b-xl border-x border-blue-200/50" />
+        <div className="absolute top-4 left-2 w-2 h-8 bg-gradient-to-b from-emerald-400/70 to-teal-400/70 rounded" />
+      </motion.div>
+
+      {/* ECG Waveform */}
+      <motion.div
+        className="absolute right-1/4 top-1/4 w-32 h-16 bg-white/5 backdrop-blur-sm rounded-xl border border-blue-200/30 overflow-hidden"
+        animate={{
+          scale: [1, 1.03, 1],
+          x: [0, 4, 0]
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-green-400/40 via-blue-400/30 to-green-400/40">
           <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-white/30 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 10}s`,
-              animationDuration: `${5 + Math.random() * 10}s`
-            }}
+            className="absolute top-1/2 w-full h-2 bg-green-400"
             animate={{
-              y: [0, -100, 0],
-              opacity: [0.3, 0.8, 0.3],
-              scale: [1, 1.5, 1]
+              pathLength: [0, 1]
             }}
             transition={{
-              duration: 15,
+              duration: 4,
               repeat: Infinity,
               ease: "easeInOut"
             }}
+            style={{
+              clipPath: "polygon(0% 0%, 10% 100%, 25% 0%, 40% 100%, 55% 0%, 70% 100%, 85% 0%, 100% 100%)"
+            }}
           />
-        ))}
-      </div>
-
-      {/* Floating Lab Elements */}
-      <motion.div
-        className="absolute top-20 left-10 w-20 h-20 bg-blue-400/20 rounded-full border border-blue-300/30"
-        animate={{
-          y: [0, -20, 0],
-          rotate: [0, 180, 360]
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        <div className="w-4 h-4 bg-blue-300 rounded-full absolute top-2 right-2" />
-        <div className="w-3 h-3 bg-blue-200 rounded-full absolute bottom-2 left-2" />
+        </div>
       </motion.div>
 
-      <motion.div
-        className="absolute bottom-32 right-20 w-16 h-16 bg-green-400/20 rounded-full border border-green-300/30"
-        animate={{
-          y: [0, 20, 0],
-          rotate: [0, -180, -360]
-        }}
-        transition={{
-          duration: 25,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        <div className="w-3 h-3 bg-green-300 rounded-full absolute top-3 left-3" />
-        <div className="w-2 h-2 bg-green-200 rounded-full absolute bottom-3 right-3" />
-      </motion.div>
-
-      {/* DNA Helix Animation */}
-      <div className="absolute right-32 top-1/2 w-4 h-48 bg-gradient-to-b from-purple-400 to-pink-400 opacity-30 rounded-full">
+      {/* Subtle Pulse Rings (Heartbeat Monitor) */}
+      {[...Array(3)].map((_, i) => (
         <motion.div
-          className="absolute w-1 h-1 bg-white rounded-full left-1/2 -translate-x-1/2"
+          key={i}
+          className="absolute right-32 bottom-32 w-20 h-20 border-2 border-blue-400/40 rounded-full"
           animate={{
-            y: [0, -48, 0],
-            opacity: [0.5, 1, 0.5]
+            scale: [1, 1.8, 1],
+            opacity: [0.6, 0.2, 0]
           }}
           transition={{
-            duration: 3,
+            duration: 2.5,
             repeat: Infinity,
-            ease: "linear"
+            delay: i * 0.8,
+            ease: "easeOut"
+          }}
+        />
+      ))}
+
+      {/* Professional Grid Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="w-full h-full bg-grid-slate-100/[0.1] bg-center bg-repeat" />
+      </div>
+
+      {/* Medical Data Overlay Lines */}
+      <div className="absolute inset-0 pointer-events-none">
+        <motion.div
+          className="absolute top-1/4 left-10 w-0.5 h-32 bg-gradient-to-b from-blue-400/50 to-transparent"
+          animate={{
+            height: [32, 48, 32],
+            opacity: [0.7, 1, 0.7]
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut"
           }}
         />
         <motion.div
-          className="absolute w-1 h-1 bg-white rounded-full left-1/2 -translate-x-1/2"
+          className="absolute bottom-1/4 right-10 w-0.5 h-24 bg-gradient-to-t from-green-400/50 to-transparent"
           animate={{
-            y: [0, -48, 0],
-            opacity: [0.5, 1, 0.5]
+            height: [24, 36, 24],
+            opacity: [0.7, 1, 0.7]
           }}
           transition={{
-            duration: 3,
+            duration: 5,
             repeat: Infinity,
-            ease: "linear",
-            delay: 1.5
+            ease: "easeInOut",
+            delay: 1
           }}
         />
       </div>
 
-      {/* Microscope Lens Effect */}
+      {/* Corner Medical Badge */}
       <motion.div
-        className="absolute left-1/4 top-1/4 w-24 h-24 border-4 border-yellow-400/30 rounded-full"
+        className="absolute top-4 right-4 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl border-2 border-white/20 shadow-2xl"
         animate={{
-          scale: [1, 1.1, 1],
-          rotate: [0, 5, -5, 0]
+          rotate: [0, 1, -1, 0],
+          scale: [1, 1.02, 1]
         }}
         transition={{
           duration: 8,
@@ -256,16 +321,129 @@ export default function ArattaiWithSoumyaSwaminathan() {
           ease: "easeInOut"
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-yellow-300/50 to-orange-300/50 rounded-full animate-pulse" />
+        <div className="w-6 h-6 border-2 border-white/50 rounded-full absolute inset-3 m-auto bg-gradient-to-r from-blue-400 to-indigo-400" />
       </motion.div>
-
-      {/* Subtle Grid Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="w-full h-full bg-grid-slate-700/[0.3] bg-center bg-repeat" />
-      </div>
     </div>
   );
 };
+
+//   const ScientistBackground = () => {
+//   return (
+//     <div className="w-full h-full relative">
+//       {/* Gradient Background */}
+//       <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-black" />
+      
+//       {/* Animated Particles */}
+//       <div className="absolute inset-0">
+//         {[...Array(50)].map((_, i) => (
+//           <motion.div
+//             key={i}
+//             className="absolute w-1 h-1 bg-white/30 rounded-full"
+//             style={{
+//               left: `${Math.random() * 100}%`,
+//               top: `${Math.random() * 100}%`,
+//               animationDelay: `${Math.random() * 10}s`,
+//               animationDuration: `${5 + Math.random() * 10}s`
+//             }}
+//             animate={{
+//               y: [0, -100, 0],
+//               opacity: [0.3, 0.8, 0.3],
+//               scale: [1, 1.5, 1]
+//             }}
+//             transition={{
+//               duration: 15,
+//               repeat: Infinity,
+//               ease: "easeInOut"
+//             }}
+//           />
+//         ))}
+//       </div>
+
+//       {/* Floating Lab Elements */}
+//       <motion.div
+//         className="absolute top-20 left-10 w-20 h-20 bg-blue-400/20 rounded-full border border-blue-300/30"
+//         animate={{
+//           y: [0, -20, 0],
+//           rotate: [0, 180, 360]
+//         }}
+//         transition={{
+//           duration: 20,
+//           repeat: Infinity,
+//           ease: "easeInOut"
+//         }}
+//       >
+//         <div className="w-4 h-4 bg-blue-300 rounded-full absolute top-2 right-2" />
+//         <div className="w-3 h-3 bg-blue-200 rounded-full absolute bottom-2 left-2" />
+//       </motion.div>
+
+//       <motion.div
+//         className="absolute bottom-32 right-20 w-16 h-16 bg-green-400/20 rounded-full border border-green-300/30"
+//         animate={{
+//           y: [0, 20, 0],
+//           rotate: [0, -180, -360]
+//         }}
+//         transition={{
+//           duration: 25,
+//           repeat: Infinity,
+//           ease: "easeInOut"
+//         }}
+//       >
+//         <div className="w-3 h-3 bg-green-300 rounded-full absolute top-3 left-3" />
+//         <div className="w-2 h-2 bg-green-200 rounded-full absolute bottom-3 right-3" />
+//       </motion.div>
+
+//       {/* DNA Helix Animation */}
+//       <div className="absolute right-32 top-1/2 w-4 h-48 bg-gradient-to-b from-purple-400 to-pink-400 opacity-30 rounded-full">
+//         <motion.div
+//           className="absolute w-1 h-1 bg-white rounded-full left-1/2 -translate-x-1/2"
+//           animate={{
+//             y: [0, -48, 0],
+//             opacity: [0.5, 1, 0.5]
+//           }}
+//           transition={{
+//             duration: 3,
+//             repeat: Infinity,
+//             ease: "linear"
+//           }}
+//         />
+//         <motion.div
+//           className="absolute w-1 h-1 bg-white rounded-full left-1/2 -translate-x-1/2"
+//           animate={{
+//             y: [0, -48, 0],
+//             opacity: [0.5, 1, 0.5]
+//           }}
+//           transition={{
+//             duration: 3,
+//             repeat: Infinity,
+//             ease: "linear",
+//             delay: 1.5
+//           }}
+//         />
+//       </div>
+
+//       {/* Microscope Lens Effect */}
+//       <motion.div
+//         className="absolute left-1/4 top-1/4 w-24 h-24 border-4 border-yellow-400/30 rounded-full"
+//         animate={{
+//           scale: [1, 1.1, 1],
+//           rotate: [0, 5, -5, 0]
+//         }}
+//         transition={{
+//           duration: 8,
+//           repeat: Infinity,
+//           ease: "easeInOut"
+//         }}
+//       >
+//         <div className="absolute inset-0 bg-gradient-to-r from-yellow-300/50 to-orange-300/50 rounded-full animate-pulse" />
+//       </motion.div>
+
+//       {/* Subtle Grid Pattern */}
+//       <div className="absolute inset-0 opacity-10">
+//         <div className="w-full h-full bg-grid-slate-700/[0.3] bg-center bg-repeat" />
+//       </div>
+//     </div>
+//   );
+// };
 
   return (
     <>
@@ -277,18 +455,19 @@ export default function ArattaiWithSoumyaSwaminathan() {
 
       <Helmet>
         <title>
-          Super Chennai Arattai with Fashion Designer Vivek Karunakaran
+       Title - Super Chennai Arattai with Soumya Swaminathan WHO Chief Scientist
+
         </title>
         <meta
           name="description"
-          content="Vivek Karunakaran, Chennai fashion designer known for blending traditional textiles with modern aesthetics and shaping contemporary Indian fashion."
+          content="Soumya Swaminathan, former WHO Chief Scientist, is a global public health leader from Chennai known for TB, HIV research and advancing healthcare equity worldwide."
         />
         <script type="application/ld+json">
           {JSON.stringify(arattaiSchema)}
         </script>
         <link
           rel="canonical"
-          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-vivek-karunakaran/chennai-fashion-designer`}
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-soumya-swaminathan/chief-scientist`}
         />
       </Helmet>
 

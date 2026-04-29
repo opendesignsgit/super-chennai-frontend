@@ -267,12 +267,12 @@ export default function IconofthemonthAprilSowmiyaSwaminathan() {
   return (
     <>
       <Helmet>
-        <title>Icon of the Month | Super Chennai – V. Kamakoti</title>
+        <title>Dr. Soumya Swaminathan is one of India’s most respected</title>
         <meta
           name="description"
-          content="Icon of the Month: V. Kamakoti, Padma Shri awardee and IIT Madras Director, driving India’s technological innovation, digital growth, and inspiring future leaders."
+          content="Icon of the Month: Soumya Swaminathan’s journey from Chennai to WHO showcases her leadership in global health, COVID-19 response, and equitable healthcare impact."
         />
-        <link rel="canonical" href="/icon-of-the-jan-month-2026" />
+        <link rel="canonical" href="/icon-of-the-feb-month-2026" />
       </Helmet>
 
       <div className="InvestPageId">

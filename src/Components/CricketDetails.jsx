@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLocation, useParams, useNavigate, Link } from "react-router-dom";
-import { panesContent } from "../../src/Pages/EventData";
+import { iplcontents } from "../../src/Pages/EventData";
 import { Helmet } from "react-helmet-async";
 
-export default function TrendingDetails() {
+export default function CricketDetails() {
   const location = useLocation();
   const navigate = useNavigate();
   const { slug } = useParams();
@@ -24,7 +24,7 @@ export default function TrendingDetails() {
   // }, [slug, location.state, navigate]);
 
   useEffect(() => {
-    const found = panesContent.find((e) => e.slug === slug);
+    const found = iplcontents.find((e) => e.slug === slug);
 
     if (found) {
       setEvent(found);
@@ -1682,13 +1682,13 @@ export default function TrendingDetails() {
       <section className="accaodomationBannerSection">
         <div>
           <img
-            src="/images/trendingChennai/trending-chennai.jpg"
+            src="/images/ipl/superchennai-bg.jpeg"
             alt="Banner"
           />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>Trending Chennai</h1>
+            <h1>CSK Matches</h1>
             <div className="breadCrum"></div>
           </div>
         </div>
@@ -1782,7 +1782,7 @@ export default function TrendingDetails() {
                           marginTop: "0",
                         }}
                       >
-                        Click to View
+                        Click to Buy Tickets
                       </button>
                     </a>
                   </div>

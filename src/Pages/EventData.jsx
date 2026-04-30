@@ -9,7 +9,7 @@ export const cards1 = () => {
     const fetchCards = async () => {
       try {
         const response = await axios.get(
-          "https://demo.superchennai.com/api/events"
+          "https://demo.superchennai.com/api/events",
         );
         setCards1(response.data.docs);
       } catch (error) {
@@ -6335,9 +6335,9 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
     url: "dhandho-ft-munawar-faruqui-comedy-show",
     id: 216,
     RegisterLink: "",
-    metaTitleEvent:
-      "Gen - Z / Munawar Faruqui Live / Stand-Up Comedy Show",
-    metaDescriptionEvent:"Get ready for Gen-Z energy and roaring laughter with Munawar Faruqui Live – a stand-up comedy show full of truth, humour, and unstoppable entertainment.",
+    metaTitleEvent: "Gen - Z / Munawar Faruqui Live / Stand-Up Comedy Show",
+    metaDescriptionEvent:
+      "Get ready for Gen-Z energy and roaring laughter with Munawar Faruqui Live – a stand-up comedy show full of truth, humour, and unstoppable entertainment.",
     conicallinkEvent: "/eventsdetails/216",
     siteLink:
       "https://in.bookmyshow.com/events/dhando-ft-munawar-faruqui/ET00425264",
@@ -6385,44 +6385,43 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
       "The music of The F16s creates vivid soundscapes, featuring melodic guitar riffs, introspective indie rock songs, and the soulful vocals of Josh Fernandez. Their tracks explore modern life, identity, love, and relationships, connecting deeply with fans of Indian independent music, indie rock bands in India, and original indie music.\n\nRepresenting a fresh wave in Indian indie rock, The F16s blend reflective songwriting with contemporary alternative rock. Their commitment to artistic growth and their ability to evoke emotions through music have earned them a loyal following and critical acclaim. For those exploring top indie bands in Chennai or best independent music artists in India, The F16s are a rising force in the global alternative music scene.",
   },
 
-//   {
-//     url: "do-you-know-who-i-am-daniel-fernandes",
-//     id: 218,
-//     RegisterLink: "",
-//     metaTitleEvent:
-//       "Do You Know Who I Am? / Daniel Fernandes Comedy Show / Chennai 2025",
-//     metaDescriptionEvent:
-//       "Watch Daniel Fernandes live in Chennai with his comedy special ‘Do You Know Who I Am?’ — a hilarious and heartfelt performance filled with sharp wit and storytelling.",
-//     conicallinkEvent: "/eventsdetails/218",
-//     siteLink:
-//       "https://in.bookmyshow.com/events/do-you-know-who-i-am-by-daniel-fernandes/ET00456561",
-//     EventsCalendarTitle: "Do You Know Who I Am? by Daniel Fernandes",
-//     EventsCalendarContent:
-//       "Catch Daniel Fernandes live in Chennai for his third comedy special — ‘Do You Know Who I Am?’ — a witty, thought-provoking stand-up show full of laughter and insight.",
-//     EventsCalendarMonth: "8 Oct 2025",
-//     EventsCalendarTime: "6:00 PM",
-//     EventsCalendarCategory: "Comedy / Stand-up Show",
-//     image: "/images/HomePage-Images/Events/Newevents/389.jpg",
-//     link: "/events",
-//     location: "Medai – The Stage, Alwarpet, Chennai",
-//     language: "English",
-//     hours: "1 hour 30 minutes",
-//     ageLimit: "16+ years",
-//     rleigion: "",
-//     aboutFull: `
-//   Get ready for an unforgettable evening in Chennai with Daniel Fernandes, one of India’s leading stand-up comedians, as he brings his third comedy special to the city. Do You Know Who I Am? is a unique celebration of life, laughter, and personal stories told in Daniel’s signature style. After a major life event, he transformed his thoughts and hilarious insights into a performance that connects with fans of Indian stand-up comedy, popular comedy shows, and famous Indian comedians.
+  //   {
+  //     url: "do-you-know-who-i-am-daniel-fernandes",
+  //     id: 218,
+  //     RegisterLink: "",
+  //     metaTitleEvent:
+  //       "Do You Know Who I Am? / Daniel Fernandes Comedy Show / Chennai 2025",
+  //     metaDescriptionEvent:
+  //       "Watch Daniel Fernandes live in Chennai with his comedy special ‘Do You Know Who I Am?’ — a hilarious and heartfelt performance filled with sharp wit and storytelling.",
+  //     conicallinkEvent: "/eventsdetails/218",
+  //     siteLink:
+  //       "https://in.bookmyshow.com/events/do-you-know-who-i-am-by-daniel-fernandes/ET00456561",
+  //     EventsCalendarTitle: "Do You Know Who I Am? by Daniel Fernandes",
+  //     EventsCalendarContent:
+  //       "Catch Daniel Fernandes live in Chennai for his third comedy special — ‘Do You Know Who I Am?’ — a witty, thought-provoking stand-up show full of laughter and insight.",
+  //     EventsCalendarMonth: "8 Oct 2025",
+  //     EventsCalendarTime: "6:00 PM",
+  //     EventsCalendarCategory: "Comedy / Stand-up Show",
+  //     image: "/images/HomePage-Images/Events/Newevents/389.jpg",
+  //     link: "/events",
+  //     location: "Medai – The Stage, Alwarpet, Chennai",
+  //     language: "English",
+  //     hours: "1 hour 30 minutes",
+  //     ageLimit: "16+ years",
+  //     rleigion: "",
+  //     aboutFull: `
+  //   Get ready for an unforgettable evening in Chennai with Daniel Fernandes, one of India’s leading stand-up comedians, as he brings his third comedy special to the city. Do You Know Who I Am? is a unique celebration of life, laughter, and personal stories told in Daniel’s signature style. After a major life event, he transformed his thoughts and hilarious insights into a performance that connects with fans of Indian stand-up comedy, popular comedy shows, and famous Indian comedians.
 
-// This comedy show delivers witty storytelling, sharp observations, and side-splitting humor — offering a fresh and entertaining experience. Don’t miss the chance to see Daniel Fernandes in Chennai and enjoy one of the most talked-about comedy events.
+  // This comedy show delivers witty storytelling, sharp observations, and side-splitting humor — offering a fresh and entertaining experience. Don’t miss the chance to see Daniel Fernandes in Chennai and enjoy one of the most talked-about comedy events.
 
-//   `,
-//   },
+  //   `,
+  //   },
 
   {
     url: "dhak-dhak-storytelling-special-amandeep-singh",
     id: 219,
     RegisterLink: "",
-    metaTitleEvent:
-      "Chennai Entertainment / Dhak Dhak / Storytelling Show ",
+    metaTitleEvent: "Chennai Entertainment / Dhak Dhak / Storytelling Show ",
     metaDescriptionEvent:
       "Dhak Dhak brings a soulful storytelling show to Chennai. Enjoy live entertainment filled with poetry, emotions, and unforgettable narratives.",
     conicallinkEvent: "/eventsdetails/219",
@@ -6838,9 +6837,9 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
     id: 235,
     RegisterLink:
       "https://in.bookmyshow.com/events/vijay-prakash-live-in-chennai/ET00463505",
-    metaTitleEvent:
-      "Vijay Prakash Concert / Musical Evening / Live in Chennai",
-    metaDescriptionEvent:"Enjoy a Vijay Prakash concert, a musical evening in Chennai, featuring soulful hits, electrifying performances, and an unforgettable live experience",
+    metaTitleEvent: "Vijay Prakash Concert / Musical Evening / Live in Chennai",
+    metaDescriptionEvent:
+      "Enjoy a Vijay Prakash concert, a musical evening in Chennai, featuring soulful hits, electrifying performances, and an unforgettable live experience",
     conicallinkEvent: "/eventsdetails/235",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/vijay-prakash-live-concert",
@@ -6861,15 +6860,14 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
       "Vijayotsavam 2025–26, a grand musical celebration featuring the legendary Vijay Prakash, is set to dazzle Chennai on 22nd November 2025 at Express Avenue Mall. Renowned for his soulful voice and dynamic stage presence, Vijay Prakash has delivered timeless hits across Tamil cinema, collaborating with icons like A.R. Rahman, Harris Jayaraj, Yuvan Shankar Raja, and Ilaiyaraaja.\n\nHis popular tracks such as Hosanna, Kadhal Anukkal, Aathichudi, Pookkal Pookkum, Manamaganin Sathiyam, and Aararo Aariraro have become synonymous with emotion and energy, resonating deeply with audiences.\n\nPresented by Noizz Entertainment, a leader in delivering world-class live events, this concert promises top-notch production, flawless execution, and an unforgettable atmosphere. With a reputation for organizing spectacular shows that attract massive crowds, Noizz ensures fans get nothing but the best.\n\nThe Chennai edition of Vijayotsavam will be an evening filled with iconic Tamil melodies, beloved summer anthems, and a powerful live performance from Vijay Prakash. Stay tuned for announcements about special guest performers who will be joining him on stage.",
   },
 
-
   {
     url: "faiyaaz-hussain-tamil-comedy-live",
     id: 236,
     RegisterLink:
       "https://in.bookmyshow.com/events/survivor-s-suilt/ET00441260",
-    metaTitleEvent:
-      "Tamil Comedy / Survivor’s Guilt / Faiyaaz Hussain Live",
-    metaDescriptionEvent:"Enjoy an evening of Tamil comedy with Faiyaaz Hussain in Survivor’s Guilt, featuring sharp humour, storytelling, and interactive performances.",
+    metaTitleEvent: "Tamil Comedy / Survivor’s Guilt / Faiyaaz Hussain Live",
+    metaDescriptionEvent:
+      "Enjoy an evening of Tamil comedy with Faiyaaz Hussain in Survivor’s Guilt, featuring sharp humour, storytelling, and interactive performances.",
     conicallinkEvent: "/eventsdetails/236",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/faiyaaz-hussain-tamil-comedy-live",
@@ -6897,7 +6895,8 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
       "https://in.bookmyshow.com/events/sutej-singh-irl-its-really-live/ET00463876",
     metaTitleEvent:
       "Sutej Singh Concert / Live Music Tour 2025 / Super Chennai",
-    metaDescriptionEvent:"Experience the electrifying Sutej Singh concert live on his IRL tour 2025, featuring progressive rock, stunning guitar solos and a night of pure musical brilliance.",
+    metaDescriptionEvent:
+      "Experience the electrifying Sutej Singh concert live on his IRL tour 2025, featuring progressive rock, stunning guitar solos and a night of pure musical brilliance.",
     conicallinkEvent: "/eventsdetails/238",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/sutej-singh-concert-live-music-tour",
@@ -6925,7 +6924,8 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
       "https://in.bookmyshow.com/events/do-you-know-who-i-am-by-daniel-fernandes/ET00456561",
     metaTitleEvent:
       "Daniel Fernandes Live / English Standup Comedy / Laugh Riot",
-    metaDescriptionEvent:"Enjoy a hilarious ride with Daniel Fernandes performing English standup comedy live on stage—sharp humor, bold topics, and non-stop laughter guaranteed!",
+    metaDescriptionEvent:
+      "Enjoy a hilarious ride with Daniel Fernandes performing English standup comedy live on stage—sharp humor, bold topics, and non-stop laughter guaranteed!",
     conicallinkEvent: "/eventsdetails/239",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/daniel-fernandes-live-english-standup-comedy-show",
@@ -6951,7 +6951,8 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
     id: 241,
     RegisterLink:
       "https://in.bookmyshow.com/events/ashwyn-singh-wrong-singh-to-say-tour-goa/ET00453922",
-    metaTitleEvent: "Wrong Singh to Say Tour | Standup Comedy Special | Super chennai",
+    metaTitleEvent:
+      "Wrong Singh to Say Tour | Standup Comedy Special | Super chennai",
     metaDescriptionEvent:
       "Laugh your heart out with Ashwyn Singh live on stage in the Wrong Singh to Say standup comedy Special. An evening of sharp humor and relatable comedy awaits.",
     conicallinkEvent: "/eventsdetails/241",
@@ -7007,8 +7008,10 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
     id: 245,
     RegisterLink:
       "https://in.bookmyshow.com/events/green-kidathon-stadium-run-oct-2025/ET00459666",
-    metaTitleEvent: "Green Kidathon 2025 / Kids Marathon Challenge / Super Chennai",
-    metaDescriptionEvent:"Young athletes take center stage at Green Kidathon 2025, a kids marathon celebrating fun, fitness, teamwork, and healthy competition for all participants.",
+    metaTitleEvent:
+      "Green Kidathon 2025 / Kids Marathon Challenge / Super Chennai",
+    metaDescriptionEvent:
+      "Young athletes take center stage at Green Kidathon 2025, a kids marathon celebrating fun, fitness, teamwork, and healthy competition for all participants.",
     conicallinkEvent: "/eventsdetails/245",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/green-kidathon-2025-kids-marathon",
@@ -7256,8 +7259,10 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
     id: 257,
     RegisterLink:
       "https://in.bookmyshow.com/events/akshay-srivastava-live-standup-comedy/ET00430844",
-    metaTitleEvent: "Akshay Srivastava Live / A Stand-Up Comedy Show / Super Chennai",
-    metaDescriptionEvent:"Akshay Srivastava Live brings witty storytelling, fresh jokes, and relatable humour in Hindi and English for a laughter-filled stand-up comedy evening.",
+    metaTitleEvent:
+      "Akshay Srivastava Live / A Stand-Up Comedy Show / Super Chennai",
+    metaDescriptionEvent:
+      "Akshay Srivastava Live brings witty storytelling, fresh jokes, and relatable humour in Hindi and English for a laughter-filled stand-up comedy evening.",
     conicallinkEvent: "/eventsdetails/257",
     siteLink:
       "https://www.superchennai.com/events-in-chennai/akshay-srivastava-live-standup-comedy-show-chennai",
@@ -7278,260 +7283,291 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
       "Akshay Srivastava - Live\n\nAfter the release of his 64-minute YouTube special *Quiggy The Delivery App*, Akshay Srivastava returns with an all-new stand-up comedy show!\n\nWhether you’re feeling low, heartbroken, stressed, or simply love a clever punchline — this show is made for you. Expect sharp wit, high-energy humor, and plenty of laughs (just don’t bring the negativity along!).\n\nCome for the comedy, stay for the madness.\nGrab your tickets now and watch Akshay live on stage!",
   },
 
- 
+  // {
+  //   url: "djembe-drums-live-circle-interactive-show",
+  //   id: 260,
+  //   RegisterLink:
+  //     "https://in.bookmyshow.com/events/the-drum-circle-experience-djembe-drums/ET00453218",
+  //   metaTitleEvent:
+  //     "Djembe Drums | Live Circle Interactive Show | Super Chennai",
+  //   metaDescriptionEvent:"Feel the pulse of live music with Djembe Drums in an interactive circle experience designed for all ages and skill levels. No prior experience needed.",
+  //   conicallinkEvent: "/eventsdetails/260",
+  //   siteLink:
+  //     "https://www.superchennai.com/events-in-chennai/djembe-drums-live-circle-interactive-show",
+  //   EventsCalendarTitle: "The Drum Circle Experience - Djembe Drums",
+  //   EventsCalendarContent:
+  //     "Join this high-energy Djembe drumming session to learn the art of African drumming. All ages welcome to connect, create, and celebrate through rhythm. Drums provided.",
+  //   EventsCalendarMonth: "1 Nov 2025",
+  //   EventsCalendarTime: "6:00 PM",
+  //   EventsCalendarCategory: "Instrumental / Fusion / Live Session",
+  //   image: "/images/HomePage-Images/Events/Newevents/441.jpg",
+  //   link: "/events",
+  //   location: "Trinity Studio: Kodambakkam",
+  //   language: "English",
+  //   hours: "1 Hour",
+  //   ageLimit: "All age groups",
+  //   religion: "",
+  //   aboutFull:
+  //     "The Drum Circle Experience - Djembe Drums\n\nBy popular demand, we’re returning to your city!\nFeel the rhythm! Feel your pulse! Join us for an exciting Drum Circle experience right in your city. All drums will be available at the venue.\n\nFor the first time, you can fully immerse yourself in the jamming session and the entire experience. Whether you’re an experienced drummer or have never played a drum before, this one-hour session welcomes everyone of all ages who wants to connect, create, and celebrate through rhythm.\n\nCome and learn the art of African drumming in this high-energy djembe session. Let the beats unite us. Let’s drum, dance, and vibe together!\n\nNote: Please remove all accessories (rings or other wearables) from your fingers to avoid injury during the session. Djembe Drums Live Circle Interactive Show is a live music experience where movement meets music, stillness meets sound, tradition meets performance."
+  // },
 
- 
-// {
-//   url: "djembe-drums-live-circle-interactive-show",
-//   id: 260,
-//   RegisterLink:
-//     "https://in.bookmyshow.com/events/the-drum-circle-experience-djembe-drums/ET00453218",
-//   metaTitleEvent:
-//     "Djembe Drums | Live Circle Interactive Show | Super Chennai",
-//   metaDescriptionEvent:"Feel the pulse of live music with Djembe Drums in an interactive circle experience designed for all ages and skill levels. No prior experience needed.",
-//   conicallinkEvent: "/eventsdetails/260",
-//   siteLink:
-//     "https://www.superchennai.com/events-in-chennai/djembe-drums-live-circle-interactive-show",
-//   EventsCalendarTitle: "The Drum Circle Experience - Djembe Drums",
-//   EventsCalendarContent:
-//     "Join this high-energy Djembe drumming session to learn the art of African drumming. All ages welcome to connect, create, and celebrate through rhythm. Drums provided.",
-//   EventsCalendarMonth: "1 Nov 2025",
-//   EventsCalendarTime: "6:00 PM",
-//   EventsCalendarCategory: "Instrumental / Fusion / Live Session",
-//   image: "/images/HomePage-Images/Events/Newevents/441.jpg",
-//   link: "/events",
-//   location: "Trinity Studio: Kodambakkam",
-//   language: "English",
-//   hours: "1 Hour",
-//   ageLimit: "All age groups",
-//   religion: "",
-//   aboutFull:
-//     "The Drum Circle Experience - Djembe Drums\n\nBy popular demand, we’re returning to your city!\nFeel the rhythm! Feel your pulse! Join us for an exciting Drum Circle experience right in your city. All drums will be available at the venue.\n\nFor the first time, you can fully immerse yourself in the jamming session and the entire experience. Whether you’re an experienced drummer or have never played a drum before, this one-hour session welcomes everyone of all ages who wants to connect, create, and celebrate through rhythm.\n\nCome and learn the art of African drumming in this high-energy djembe session. Let the beats unite us. Let’s drum, dance, and vibe together!\n\nNote: Please remove all accessories (rings or other wearables) from your fingers to avoid injury during the session. Djembe Drums Live Circle Interactive Show is a live music experience where movement meets music, stillness meets sound, tradition meets performance."
-// },
+  {
+    url: "gopi-funchurian-tamil-stand-up-comedy-badava-gopi",
+    id: 261,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/gopi-funchurian-by-badava-gopi/ET00389499",
+    metaTitleEvent: "Badava Gopi / Tamil Stand-Up Comedy / Mimicry Show",
+    metaDescriptionEvent:
+      "Badava Gopi brings Gopi Funchurian live—a Tamil stand-up comedy show packed with satire, mimicry and laughter that keeps you entertained from start to finish.",
+    conicallinkEvent: "/eventsdetails/261",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/gopi-funchurian-tamil-stand-up-comedy-badava-gopi",
+    EventsCalendarTitle: "Gopi Funchurian Tamil Stand-Up Comedy by Badava Gopi",
+    EventsCalendarContent:
+      "A rib-tickling Tamil stand-up extravaganza featuring Badava Gopi's spectacular mimicry and hilarious, WOW-certified jokes. Don't miss this fun-packed show!",
+    EventsCalendarMonth: "2 Nov 2025",
+    EventsCalendarTime: "3:30 PM",
+    EventsCalendarCategory: "Comedy / Stand-Up / Mimicry",
+    image: "/images/HomePage-Images/Events/Newevents/442.jpg",
+    link: "/events",
+    location: "Medai - The Stage, Alwarpet: Chennai",
+    language: "Tamil",
+    hours: "1 hour 30 minutes",
+    ageLimit: "12yrs +",
+    religion: "",
+    aboutFull:
+      "Gopi Funchurian By Badava Gopi\n\nCome witness Badavagopi’s spectacular mimicry performance LIVE and be mesmerized by the sounds and effects filling the hall. Enjoy hilarious jokes and impressions that were WOW-certified by former President APJ Gopi Funchurian. This rib-tickling extravaganza, packed with fun and entertainment, is a must-see you definitely shouldn’t miss!\n\nBadava Gopi brings Gopi Funchurian live—a Tamil stand-up comedy show packed with satire, mimicry and laughter that keeps you entertained from start to finish.",
+  },
 
-{
-  url: "gopi-funchurian-tamil-stand-up-comedy-badava-gopi",
-  id: 261,
-  RegisterLink:
-    "https://in.bookmyshow.com/events/gopi-funchurian-by-badava-gopi/ET00389499",
-  metaTitleEvent:
-    "Badava Gopi / Tamil Stand-Up Comedy / Mimicry Show",
-  metaDescriptionEvent:"Badava Gopi brings Gopi Funchurian live—a Tamil stand-up comedy show packed with satire, mimicry and laughter that keeps you entertained from start to finish.",
-  conicallinkEvent: "/eventsdetails/261",
-  siteLink:
-    "https://www.superchennai.com/events-in-chennai/gopi-funchurian-tamil-stand-up-comedy-badava-gopi",
-  EventsCalendarTitle: "Gopi Funchurian Tamil Stand-Up Comedy by Badava Gopi",
-  EventsCalendarContent:
-    "A rib-tickling Tamil stand-up extravaganza featuring Badava Gopi's spectacular mimicry and hilarious, WOW-certified jokes. Don't miss this fun-packed show!",
-  EventsCalendarMonth: "2 Nov 2025",
-  EventsCalendarTime: "3:30 PM",
-  EventsCalendarCategory: "Comedy / Stand-Up / Mimicry",
-  image: "/images/HomePage-Images/Events/Newevents/442.jpg",
-  link: "/events",
-  location: "Medai - The Stage, Alwarpet: Chennai",
-  language: "Tamil",
-  hours: "1 hour 30 minutes",
-  ageLimit: "12yrs +",
-  religion: "",
-  aboutFull:
-    "Gopi Funchurian By Badava Gopi\n\nCome witness Badavagopi’s spectacular mimicry performance LIVE and be mesmerized by the sounds and effects filling the hall. Enjoy hilarious jokes and impressions that were WOW-certified by former President APJ Gopi Funchurian. This rib-tickling extravaganza, packed with fun and entertainment, is a must-see you definitely shouldn’t miss!\n\nBadava Gopi brings Gopi Funchurian live—a Tamil stand-up comedy show packed with satire, mimicry and laughter that keeps you entertained from start to finish."
-},
+  {
+    url: "aqua-sound-bath-immersion-water-sound-healing",
+    id: 262,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/aqua-sound-bath-immersion/ET00466420",
+    metaTitleEvent:
+      "Aqua Sound Bath Immersion / Water Sound Healing / Super Chennai",
+    metaDescriptionEvent:
+      "Dive into Aqua Sound Bath Immersion, where water sound healing harmonizes your energy through floating vibrations, singing bowls, and restorative sound therapy.",
+    conicallinkEvent: "/eventsdetails/262",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/aqua-sound-bath-immersion-water-sound-healing",
+    EventsCalendarTitle: "Aqua Sound Bath Immersion and Water Sound Healing",
+    EventsCalendarContent:
+      "Experience a one-of-a-kind floating sound bath where water and the resonance of singing bowls and gongs combine for profound relaxation and energy rebalancing.",
+    EventsCalendarMonth: "2 Nov 2025",
+    EventsCalendarTime: "2:00 PM",
+    EventsCalendarCategory: "Wellness / Sound Healing / Meditation",
+    image: "/images/HomePage-Images/Events/Newevents/443.jpg",
+    link: "/events",
+    location: "Blues by Tiki Taka: Chennai",
+    language: "English",
+    hours: "1 Hour",
+    ageLimit: "8yrs +",
+    religion: "",
+    aboutFull:
+      "Aqua Sound Bath Immersion – A Floating Path to Wellness\n\nImmerse yourself in a one-of-a-kind floating sound bath, where the restorative qualities of water blend with the calming resonance of singing bowls and gongs.\n\nDrift effortlessly as soothing vibrations flow through your body, quieting the mind, releasing emotional tensions, and rebalancing your energy. The water naturally enhances each sound, allowing vibrations to reach deeper layers, fostering profound relaxation, emotional release, and a reset for your nervous system.\n\nAqua Sound Bath Immersion is a water sound healing experience that harmonizes your energy through floating vibrations, singing bowls, and restorative sound therapy.",
+  },
 
-{
-  "url": "aqua-sound-bath-immersion-water-sound-healing",
-  "id": 262,
-  "RegisterLink": "https://in.bookmyshow.com/events/aqua-sound-bath-immersion/ET00466420",
-  "metaTitleEvent": "Aqua Sound Bath Immersion / Water Sound Healing / Super Chennai",
-  "metaDescriptionEvent": "Dive into Aqua Sound Bath Immersion, where water sound healing harmonizes your energy through floating vibrations, singing bowls, and restorative sound therapy.",
-  "conicallinkEvent": "/eventsdetails/262",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/aqua-sound-bath-immersion-water-sound-healing",
-  "EventsCalendarTitle": "Aqua Sound Bath Immersion and Water Sound Healing",
-  "EventsCalendarContent": "Experience a one-of-a-kind floating sound bath where water and the resonance of singing bowls and gongs combine for profound relaxation and energy rebalancing.",
-  "EventsCalendarMonth": "2 Nov 2025",
-  "EventsCalendarTime": "2:00 PM",
-  "EventsCalendarCategory": "Wellness / Sound Healing / Meditation",
-  "image": "/images/HomePage-Images/Events/Newevents/443.jpg",
-  "link": "/events",
-  "location": "Blues by Tiki Taka: Chennai",
-  "language": "English",
-  "hours": "1 Hour",
-  "ageLimit": "8yrs +",
-  "religion": "",
-  "aboutFull": "Aqua Sound Bath Immersion – A Floating Path to Wellness\n\nImmerse yourself in a one-of-a-kind floating sound bath, where the restorative qualities of water blend with the calming resonance of singing bowls and gongs.\n\nDrift effortlessly as soothing vibrations flow through your body, quieting the mind, releasing emotional tensions, and rebalancing your energy. The water naturally enhances each sound, allowing vibrations to reach deeper layers, fostering profound relaxation, emotional release, and a reset for your nervous system.\n\nAqua Sound Bath Immersion is a water sound healing experience that harmonizes your energy through floating vibrations, singing bowls, and restorative sound therapy."
-},
+  {
+    url: "gokul-kumar-live-stand-up-comedy",
+    id: 263,
+    RegisterLink: "http://in.bookmyshow.com/events/gokul-kumar-live/ET00447027",
+    metaTitleEvent:
+      "Gokul Kumar Live / Stand Up Comedy Chennai / Super Chennai",
+    metaDescriptionEvent:
+      " Enjoy a laughter-packed evening with Gokul Kumar Live, the ultimate stand up comedy Chennai event. Fresh jokes, sharp humor, and live entertainment await!",
+    conicallinkEvent: "/eventsdetails/263",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/gokul-kumar-live-stand-up-comedy",
+    EventsCalendarTitle: "Gokul Kumar Live – Stand Up Comedy in Chennai",
+    EventsCalendarContent:
+      "Following his successful standup videos, Gokul Kumar takes his fresh, witty, and laugh-out-loud observations on a nationwide tour. Catch him live!",
+    EventsCalendarMonth: "15 Nov 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Comedy / Stand-Up",
+    image: "/images/HomePage-Images/Events/Newevents/446.jpg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "English",
+    hours: "1 Hour",
+    ageLimit: "16yrs +",
+    religion: "",
+    aboutFull:
+      "Gokul Kumar - Live\n\nFollowing the success of his standup videos, Gokul Kumar is now taking his comedy on a nationwide tour. His performance is packed with witty, fresh, and laugh-out-loud observations about everyday life. Don’t miss the chance to see him live—he promises that his humor is even more hilarious in person.\n\nEnjoy a laughter-packed evening with Gokul Kumar Live, the ultimate stand up comedy Chennai event. Fresh jokes, sharp humor, and live entertainment await!",
+  },
 
+  {
+    url: "thanga-magan-50-music-show-celebrating-superstar",
+    id: 264,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/thanga-magan-50-celebrating-superstar/ET00466446",
+    metaTitleEvent:
+      "Thanga Magan 50 / Music Show in Chennai / Celebrating Superstar",
+    metaDescriptionEvent:
+      " Thanga Magan 50 brings a live music show in Chennai honoring the Superstar’s legacy with legendary songs, star performers and a grand musical tribute. ",
+    conicallinkEvent: "/eventsdetails/264",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/thanga-magan-50-music-show-celebrating-superstar",
+    EventsCalendarTitle:
+      "Thanga Magan 50 – Music Show Celebrating the Superstar",
+    EventsCalendarContent:
+      "An unforgettable musical tribute to Superstar Rajinikanth's 50 years in cinema, featuring iconic songs revived by SPB Charan and Yugendran Vasudevan, and led by Udhaya Ragam U.K. Murali.",
+    EventsCalendarMonth: "16 Nov 2025",
+    EventsCalendarTime: "5:00 PM",
+    EventsCalendarCategory: "Music Show / Tribute / Film Music",
+    image: "/images/HomePage-Images/Events/Newevents/447.jpg",
+    link: "/events",
+    location: "Kamarajar Arangam: Chennai",
+    language: "Tamil",
+    hours: "5 Hours",
+    ageLimit: "5yrs +",
+    religion: "",
+    aboutFull:
+      " Thanga Magan 50: Celebrating Superstar\n\nSUPERSTAR RAJINIKANTH’S 50 YEARS OF CINEMATIC GLORY – Celebrate a journey of unmatched style, charisma, timeless hits, and unstoppable magic!\n\nBe part of an unforgettable musical tribute as SPB Charan and Yugendran Vasudevan revive the iconic songs of Thalaivar, bringing alive the energy, nostalgia, and spirit that have defined generations. Relive the evergreen melodies of SPB and Malaysia Vasudevan, legends who shared a deep bond with Rajinikanth and sang his most celebrated hits.\n\nThe spectacular orchestra is led by Udhaya Ragam U.K. Murali and his extraordinary team, promising an immersive live experience.\n\nGet ready to cheer, whistle, and revel in the magic LIVE ON STAGE!\nONE STAGE. COUNTLESS MEMORIES. PURE RAJINI POWER!\n\nBOOK YOUR TICKETS NOW – DON’T MISS OUT! Thanga Magan 50 brings a live music show in Chennai honoring the Superstar’s legacy with legendary songs, star performers and a grand musical tribute.",
+  },
 
-{
-  "url": "gokul-kumar-live-stand-up-comedy",
-  "id": 263,
-  "RegisterLink": "http://in.bookmyshow.com/events/gokul-kumar-live/ET00447027",
-  "metaTitleEvent": "Gokul Kumar Live / Stand Up Comedy Chennai / Super Chennai",
-  "metaDescriptionEvent": " Enjoy a laughter-packed evening with Gokul Kumar Live, the ultimate stand up comedy Chennai event. Fresh jokes, sharp humor, and live entertainment await!",
-  "conicallinkEvent": "/eventsdetails/263",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/gokul-kumar-live-stand-up-comedy",
-  "EventsCalendarTitle": "Gokul Kumar Live – Stand Up Comedy in Chennai",
-  "EventsCalendarContent": "Following his successful standup videos, Gokul Kumar takes his fresh, witty, and laugh-out-loud observations on a nationwide tour. Catch him live!",
-  "EventsCalendarMonth": "15 Nov 2025",
-  "EventsCalendarTime": "6:00 PM",
-  "EventsCalendarCategory": "Comedy / Stand-Up",
-  "image": "/images/HomePage-Images/Events/Newevents/446.jpg",
-  "link": "/events",
-  "location": "Punch - Unpaid Therapist: Chennai",
-  "language": "English",
-  "hours": "1 Hour",
-  "ageLimit": "16yrs +",
-  "religion": "",
-  "aboutFull": "Gokul Kumar - Live\n\nFollowing the success of his standup videos, Gokul Kumar is now taking his comedy on a nationwide tour. His performance is packed with witty, fresh, and laugh-out-loud observations about everyday life. Don’t miss the chance to see him live—he promises that his humor is even more hilarious in person.\n\nEnjoy a laughter-packed evening with Gokul Kumar Live, the ultimate stand up comedy Chennai event. Fresh jokes, sharp humor, and live entertainment await!"
-},
+  {
+    url: "hindi-music-concert-nightingale-sisters",
+    id: 265,
+    RegisterLink:
+      "https://in.bookmyshow.com/events/nightingale-sisters/ET00466402",
+    metaTitleEvent: "Hindi Music Concert / Nightingale Sisters / Super Chennai",
+    metaDescriptionEvent:
+      "Nightingale Sisters bring a live Hindi music concert to Chennai, celebrating evergreen hits with a stunning orchestra and powerful vocals. Book your seats now!",
+    conicallinkEvent: "/eventsdetails/265",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/hindi-music-concert-nightingale-sisters",
+    EventsCalendarTitle:
+      "Nightingale Sisters – Live Hindi Music Concert in Chennai",
+    EventsCalendarContent:
+      "A soulful tribute celebrating the legendary voices of Lata Mangeshkar & Asha Bhonsle, featuring popular and talented singers, accompanied by Udhaya Ragam U.K. Murali's grand orchestra.",
+    EventsCalendarMonth: "9 Nov 2025",
+    EventsCalendarTime: "6:00 PM",
+    EventsCalendarCategory: "Music Concert / Bollywood / Tribute",
+    image: "/images/HomePage-Images/Events/Newevents/448.jpg",
+    link: "/events",
+    location: "Vani Mahal: Chennai",
+    language: "Hindi",
+    hours: "3 Hours",
+    ageLimit: "5yrs +",
+    religion: "",
+    aboutFull:
+      "NIGHTINGALE SISTERS\n\nABBAS CULTURAL PROUDLY PRESENTS NIGHTINGALE SISTERS: A soulful tribute celebrating the legendary voices of LATA MANGESHKAR & ASHA BHONSLE - Two Icons who defined generations of Indian Music. The event will take audiences on a melodious journey through their timeless classics, blending golden era nostalgia with heartfelt performances by Popular and Talented singers SHRUTI BHIDE, SHIFA ANSARI, SAMANVITHA SHARMA, ANUSHA KARTHICK and SMRITI BANERJEE.\n\nThrough songs, stories and stunning renditions, Nightingale Sisters honors their unmatched contribution to Indian Cinema and the emotions they have stirred in millions of hearts!!! The Grand orchestration for the event is by UDHAYA RAGAM U.K.MURALI's band of wonderful musicians.\n\nDON'T MISS THIS EVERGREEN EVENING!! GRAB YOUR TICKETS NOW!!! Nightingale Sisters bring a live Hindi music concert to Chennai, celebrating evergreen hits with a stunning orchestra and powerful vocals.",
+  },
 
-{
-  "url": "thanga-magan-50-music-show-celebrating-superstar",
-  "id": 264,
-  "RegisterLink": "https://in.bookmyshow.com/events/thanga-magan-50-celebrating-superstar/ET00466446",
-  "metaTitleEvent": "Thanga Magan 50 / Music Show in Chennai / Celebrating Superstar",
-  "metaDescriptionEvent": " Thanga Magan 50 brings a live music show in Chennai honoring the Superstar’s legacy with legendary songs, star performers and a grand musical tribute. ",
-  "conicallinkEvent": "/eventsdetails/264",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/thanga-magan-50-music-show-celebrating-superstar",
-  "EventsCalendarTitle": "Thanga Magan 50 – Music Show Celebrating the Superstar",
-  "EventsCalendarContent": "An unforgettable musical tribute to Superstar Rajinikanth's 50 years in cinema, featuring iconic songs revived by SPB Charan and Yugendran Vasudevan, and led by Udhaya Ragam U.K. Murali.",
-  "EventsCalendarMonth": "16 Nov 2025",
-  "EventsCalendarTime": "5:00 PM",
-  "EventsCalendarCategory": "Music Show / Tribute / Film Music",
-  "image": "/images/HomePage-Images/Events/Newevents/447.jpg",
-  "link": "/events",
-  "location": "Kamarajar Arangam: Chennai",
-  "language": "Tamil",
-  "hours": "5 Hours",
-  "ageLimit": "5yrs +",
-  "religion": "",
-  "aboutFull": " Thanga Magan 50: Celebrating Superstar\n\nSUPERSTAR RAJINIKANTH’S 50 YEARS OF CINEMATIC GLORY – Celebrate a journey of unmatched style, charisma, timeless hits, and unstoppable magic!\n\nBe part of an unforgettable musical tribute as SPB Charan and Yugendran Vasudevan revive the iconic songs of Thalaivar, bringing alive the energy, nostalgia, and spirit that have defined generations. Relive the evergreen melodies of SPB and Malaysia Vasudevan, legends who shared a deep bond with Rajinikanth and sang his most celebrated hits.\n\nThe spectacular orchestra is led by Udhaya Ragam U.K. Murali and his extraordinary team, promising an immersive live experience.\n\nGet ready to cheer, whistle, and revel in the magic LIVE ON STAGE!\nONE STAGE. COUNTLESS MEMORIES. PURE RAJINI POWER!\n\nBOOK YOUR TICKETS NOW – DON’T MISS OUT! Thanga Magan 50 brings a live music show in Chennai honoring the Superstar’s legacy with legendary songs, star performers and a grand musical tribute."
-},
+  {
+    url: "arvind-sunder-live-best-comedy-show",
+    id: 265,
+    RegisterLink: "https://in.bookmyshow.com/events/arvind-sundar/ET00426453",
+    metaTitleEvent: "Arvind Sunder Live | Best Comedy Show | Super Chennai",
+    metaDescriptionEvent:
+      "Arvind Sunder brings the best comedy show experience to Chennai with a power-packed live show full of fun, wit, and laughter. Get your tickets now!",
+    conicallinkEvent: "/eventsdetails/265",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/arvind-sunder-live-best-comedy-show",
+    EventsCalendarTitle: "Arvind Sunder Live – Best Comedy Show in Chennai",
+    EventsCalendarContent:
+      "Arvind Sunder returns with a solo show blending storytelling and sharp observations, crafted from 8+ years of experience. Guaranteed laughter awaits!",
+    EventsCalendarMonth: "8 Nov 2025",
+    EventsCalendarTime: "8:00 PM",
+    EventsCalendarCategory: "Comedy / Stand-Up",
+    image: "/images/HomePage-Images/Events/Newevents/449.jpg",
+    link: "/events",
+    location: "Punch - Unpaid Therapist: Chennai",
+    language: "Hindi, English",
+    hours: "1 Hour",
+    ageLimit: "16yrs +",
+    religion: "",
+    aboutFull:
+      "Arvind Sunder - Live\n\nArvind Sunder returns with his solo performance following his hit “Delhi Vs Bangalore,” which has amassed over 600,000 views on YouTube and more than 5 million on Instagram.\n\nThis show blends storytelling, sharp observations, and personal experiences into a full hour of laughter. Crafted from over 8 years of experience, it promises a truly unique and entertaining experience.\n\nThree Reasons to Attend:\n\n1. Carefully Curated Jokes – Every joke has been tested in three different cities and perfected for maximum laughs.\n\n2. Guaranteed Laughter – Who doesn’t want a hearty dose of fun?\n\n3. A Unique Experience – An hour of comedy you won’t find anywhere else.\n\nArvind Sunder brings the best comedy show experience to Chennai with a power-packed live show full of fun, wit, and laughter. Get your tickets now!",
+  },
 
-{
-  "url": "hindi-music-concert-nightingale-sisters",
-  "id": 265,
-  "RegisterLink": "https://in.bookmyshow.com/events/nightingale-sisters/ET00466402",
-  "metaTitleEvent": "Hindi Music Concert / Nightingale Sisters / Super Chennai",
-  "metaDescriptionEvent": "Nightingale Sisters bring a live Hindi music concert to Chennai, celebrating evergreen hits with a stunning orchestra and powerful vocals. Book your seats now!",
-  "conicallinkEvent": "/eventsdetails/265",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/hindi-music-concert-nightingale-sisters",
-  "EventsCalendarTitle": "Nightingale Sisters – Live Hindi Music Concert in Chennai",
-  "EventsCalendarContent": "A soulful tribute celebrating the legendary voices of Lata Mangeshkar & Asha Bhonsle, featuring popular and talented singers, accompanied by Udhaya Ragam U.K. Murali's grand orchestra.",
-  "EventsCalendarMonth": "9 Nov 2025",
-  "EventsCalendarTime": "6:00 PM",
-  "EventsCalendarCategory": "Music Concert / Bollywood / Tribute",
-  "image": "/images/HomePage-Images/Events/Newevents/448.jpg",
-  "link": "/events",
-  "location": "Vani Mahal: Chennai",
-  "language": "Hindi",
-  "hours": "3 Hours",
-  "ageLimit": "5yrs +",
-  "religion": "",
-  "aboutFull": "NIGHTINGALE SISTERS\n\nABBAS CULTURAL PROUDLY PRESENTS NIGHTINGALE SISTERS: A soulful tribute celebrating the legendary voices of LATA MANGESHKAR & ASHA BHONSLE - Two Icons who defined generations of Indian Music. The event will take audiences on a melodious journey through their timeless classics, blending golden era nostalgia with heartfelt performances by Popular and Talented singers SHRUTI BHIDE, SHIFA ANSARI, SAMANVITHA SHARMA, ANUSHA KARTHICK and SMRITI BANERJEE.\n\nThrough songs, stories and stunning renditions, Nightingale Sisters honors their unmatched contribution to Indian Cinema and the emotions they have stirred in millions of hearts!!! The Grand orchestration for the event is by UDHAYA RAGAM U.K.MURALI's band of wonderful musicians.\n\nDON'T MISS THIS EVERGREEN EVENING!! GRAB YOUR TICKETS NOW!!! Nightingale Sisters bring a live Hindi music concert to Chennai, celebrating evergreen hits with a stunning orchestra and powerful vocals."
-},
+  {
+    url: "flamenco-music-hands-of-time-workshop",
+    id: 266,
+    RegisterLink: "https://tickets.kynhood.com/event/690b1cbd01381741f130cd9e",
+    metaTitleEvent: "Flamenco Music | Hands of Time Workshop | Super Chennai",
+    metaDescriptionEvent:
+      "Join the Hands of Time Workshop and explore Flamenco music through rhythm, passion, and artistry in a captivating, soulful, and immersive learning experience.",
+    conicallinkEvent: "/eventsdetails/266",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/flamenco-music-hands-of-time-workshop",
+    EventsCalendarTitle:
+      "Hands of Time Workshop – Flamenco Music Experience in Chennai",
+    EventsCalendarContent:
+      "Social Spirit, in collaboration with Musée Musical, presents Hands of Time — an engaging Flamenco rhythm workshop led by Martín Zlotnicki. Dive into Alegría, Bulería, and Tangos through rhythm, clapping, and expression.",
+    EventsCalendarMonth: "15 Nov 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Music / Workshop",
+    image: "/images/HomePage-Images/Events/Newevents/hands-of-time.jpg",
+    link: "/events",
+    location: "Musée Musical, Triplicane",
+    language: "English",
+    hours: "2 Hours",
+    ageLimit: "All Ages",
+    religion: "",
+    aboutFull:
+      "Hands of Time Workshop – Flamenco Music Experience\n\nSocial Spirit, in collaboration with Musée Musical, proudly presents Hands of Time, an engaging workshop on Flamenco rhythms conducted by Martín Zlotnicki.\n\nStep into the pulse of Flamenco in this interactive rhythm session guided by the talented guitarist Martín Zlotnicki.\n\nDesigned for guitarists, instrumentalists, and anyone captivated by Flamenco’s energy, this workshop explores three iconic styles — Alegría, Bulería, and Tangos.\n\nThrough palmas (hand clapping) and hands-on rhythm practices, participants will uncover the compás (rhythmic framework) of each form, gaining a deeper sense of how to feel, blend, and express these beats through both movement and music.\n\nNo prior experience or age restriction — all you need is enthusiasm, concentration, and your instrument.\n\nJoin the Hands of Time Workshop and explore Flamenco music through rhythm, passion, and artistry in a captivating, soulful, and immersive learning experience.",
+  },
 
-{
-  "url": "arvind-sunder-live-best-comedy-show",
-  "id": 265,
-  "RegisterLink": "https://in.bookmyshow.com/events/arvind-sundar/ET00426453",
-  "metaTitleEvent": "Arvind Sunder Live | Best Comedy Show | Super Chennai",
-  "metaDescriptionEvent": "Arvind Sunder brings the best comedy show experience to Chennai with a power-packed live show full of fun, wit, and laughter. Get your tickets now!",
-  "conicallinkEvent": "/eventsdetails/265",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/arvind-sunder-live-best-comedy-show",
-  "EventsCalendarTitle": "Arvind Sunder Live – Best Comedy Show in Chennai",
-  "EventsCalendarContent": "Arvind Sunder returns with a solo show blending storytelling and sharp observations, crafted from 8+ years of experience. Guaranteed laughter awaits!",
-  "EventsCalendarMonth": "8 Nov 2025",
-  "EventsCalendarTime": "8:00 PM",
-  "EventsCalendarCategory": "Comedy / Stand-Up",
-  "image": "/images/HomePage-Images/Events/Newevents/449.jpg",
-  "link": "/events",
-  "location": "Punch - Unpaid Therapist: Chennai",
-  "language": "Hindi, English",
-  "hours": "1 Hour",
-  "ageLimit": "16yrs +",
-  "religion": "",
-  "aboutFull": "Arvind Sunder - Live\n\nArvind Sunder returns with his solo performance following his hit “Delhi Vs Bangalore,” which has amassed over 600,000 views on YouTube and more than 5 million on Instagram.\n\nThis show blends storytelling, sharp observations, and personal experiences into a full hour of laughter. Crafted from over 8 years of experience, it promises a truly unique and entertaining experience.\n\nThree Reasons to Attend:\n\n1. Carefully Curated Jokes – Every joke has been tested in three different cities and perfected for maximum laughs.\n\n2. Guaranteed Laughter – Who doesn’t want a hearty dose of fun?\n\n3. A Unique Experience – An hour of comedy you won’t find anywhere else.\n\nArvind Sunder brings the best comedy show experience to Chennai with a power-packed live show full of fun, wit, and laughter. Get your tickets now!"
-},
+  {
+    url: "floating-yoga-fitness-on-water-workshop",
+    id: 267,
+    RegisterLink: "https://tickets.kynhood.com/event/690c88a408b6eb9349f090b8",
+    metaTitleEvent:
+      "Floating Yoga | Fitness on Water Workshop | FLAABH FIT | Super Chennai",
+    metaDescriptionEvent:
+      "Join the floating yoga workshop by FLAABH FIT — experience fitness on water with balance, core strength, and tranquility. A water-wellness event like no other.",
+    conicallinkEvent: "/eventsdetails/267",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/floating-yoga-fitness-on-water-workshop",
+    EventsCalendarTitle:
+      "Flaabh Fit – India’s First Floating Fitness Experience",
+    EventsCalendarContent:
+      "Experience India’s first on-water fitness program blending yoga, pilates, and core training on floating boards. Balance, strength, and mindfulness await!",
+    EventsCalendarMonth: "16 Nov 2025",
+    EventsCalendarTime: "7:30 PM",
+    EventsCalendarCategory: "Fitness / Yoga",
+    image: "/images/HomePage-Images/Events/Newevents/flaabh-fit.jpg",
+    link: "/events",
+    location: "Flaabh Fit Studio, Teynampet",
+    language: "English",
+    hours: "1 Hour",
+    ageLimit: "All Ages",
+    religion: "",
+    aboutFull:
+      "Flaabh Fit – India’s First Floating Fitness Experience\n\nDive into a new wave of workouts with Flaabh Fit, India’s first on-water fitness program that blends balance, strength, and mindfulness on floating boards in a tranquil pool setting.\n\nCombining yoga, pilates, and core training, each session helps you:\n Boost balance and posture\n Build strength and flexibility\n Sharpen focus and coordination\n  Relieve stress and refresh your mind\n\nIt’s more than a workout — it’s a mind-body flow on water, perfect for both beginners and fitness lovers.\n\nJoin the floating yoga workshop by FLAABH FIT and experience fitness on water with balance, core strength, and tranquility. A water-wellness event like no other.",
+  },
 
+  {
+    url: "kendo-training-martial-arts-workshop-start-today",
+    id: 268,
+    RegisterLink: "https://tickets.kynhood.com/event/6901e1a7f557630ef1f86490",
+    metaTitleEvent:
+      "Kendo Training | Martial Arts Workshop | Start Today | Super Chennai",
+    metaDescriptionEvent:
+      "Start your journey with Kendo Training, a martial arts workshop blending fitness, mindfulness, and traditional sword techniques crafted for modern learners.",
+    conicallinkEvent: "/eventsdetails/268",
+    siteLink:
+      "https://www.superchennai.com/events-in-chennai/kendo-training-martial-arts-workshop-start-today",
+    EventsCalendarTitle: "Start Kendo Today – Martial Arts Workshop in Chennai",
+    EventsCalendarContent:
+      "Learn the art of Kendo — explore its history, techniques, and discipline in this introductory martial arts workshop for beginners.",
+    EventsCalendarMonth: "12 Nov 2025",
+    EventsCalendarTime: "11:00 AM",
+    EventsCalendarCategory: "Martial Arts / Workshop",
+    image: "/images/HomePage-Images/Events/Newevents/start-kendo.jpg",
+    link: "/events",
+    location: "Thousand Lights, Chennai",
+    language: "English",
+    hours: "2 Hours",
+    ageLimit: "All Ages",
+    religion: "",
+    aboutFull:
+      " Sun, 2 Nov  to  Sun, 30 Nov  Start Kendo Today – Martial Arts Workshop\n\nThis session offers an introductory experience to Kendo, where participants will first explore the history and origins of this disciplined Japanese martial art.\n\nThey’ll then learn the fundamentals of handling a Shinai (bamboo sword), the basic striking techniques, and the core rules of the sport.\n\nTo wrap up, participants will engage in a series of standard Kendo drills practiced by players to enhance skill, precision, and discipline.\n\nStart your journey with Kendo Training, a martial arts workshop blending fitness, mindfulness, and traditional sword techniques crafted for modern learners.",
+  },
 
-{
-  "url": "flamenco-music-hands-of-time-workshop",
-  "id": 266,
-  "RegisterLink": "https://tickets.kynhood.com/event/690b1cbd01381741f130cd9e",
-  "metaTitleEvent": "Flamenco Music | Hands of Time Workshop | Super Chennai",
-  "metaDescriptionEvent": "Join the Hands of Time Workshop and explore Flamenco music through rhythm, passion, and artistry in a captivating, soulful, and immersive learning experience.",
-  "conicallinkEvent": "/eventsdetails/266",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/flamenco-music-hands-of-time-workshop",
-  "EventsCalendarTitle": "Hands of Time Workshop – Flamenco Music Experience in Chennai",
-  "EventsCalendarContent": "Social Spirit, in collaboration with Musée Musical, presents Hands of Time — an engaging Flamenco rhythm workshop led by Martín Zlotnicki. Dive into Alegría, Bulería, and Tangos through rhythm, clapping, and expression.",
-  "EventsCalendarMonth": "15 Nov 2025",
-  "EventsCalendarTime": "11:00 AM",
-  "EventsCalendarCategory": "Music / Workshop",
-  "image": "/images/HomePage-Images/Events/Newevents/hands-of-time.jpg",
-  "link": "/events",
-  "location": "Musée Musical, Triplicane",
-  "language": "English",
-  "hours": "2 Hours",
-  "ageLimit": "All Ages",
-  "religion": "",
-  "aboutFull": "Hands of Time Workshop – Flamenco Music Experience\n\nSocial Spirit, in collaboration with Musée Musical, proudly presents Hands of Time, an engaging workshop on Flamenco rhythms conducted by Martín Zlotnicki.\n\nStep into the pulse of Flamenco in this interactive rhythm session guided by the talented guitarist Martín Zlotnicki.\n\nDesigned for guitarists, instrumentalists, and anyone captivated by Flamenco’s energy, this workshop explores three iconic styles — Alegría, Bulería, and Tangos.\n\nThrough palmas (hand clapping) and hands-on rhythm practices, participants will uncover the compás (rhythmic framework) of each form, gaining a deeper sense of how to feel, blend, and express these beats through both movement and music.\n\nNo prior experience or age restriction — all you need is enthusiasm, concentration, and your instrument.\n\nJoin the Hands of Time Workshop and explore Flamenco music through rhythm, passion, and artistry in a captivating, soulful, and immersive learning experience."
-},
-
-{
-  "url": "floating-yoga-fitness-on-water-workshop",
-  "id": 267,
-  "RegisterLink": "https://tickets.kynhood.com/event/690c88a408b6eb9349f090b8",
-  "metaTitleEvent": "Floating Yoga | Fitness on Water Workshop | FLAABH FIT | Super Chennai",
-  "metaDescriptionEvent": "Join the floating yoga workshop by FLAABH FIT — experience fitness on water with balance, core strength, and tranquility. A water-wellness event like no other.",
-  "conicallinkEvent": "/eventsdetails/267",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/floating-yoga-fitness-on-water-workshop",
-  "EventsCalendarTitle": "Flaabh Fit – India’s First Floating Fitness Experience",
-  "EventsCalendarContent": "Experience India’s first on-water fitness program blending yoga, pilates, and core training on floating boards. Balance, strength, and mindfulness await!",
-  "EventsCalendarMonth": "16 Nov 2025",
-  "EventsCalendarTime": "7:30 PM",
-  "EventsCalendarCategory": "Fitness / Yoga",
-  "image": "/images/HomePage-Images/Events/Newevents/flaabh-fit.jpg",
-  "link": "/events",
-  "location": "Flaabh Fit Studio, Teynampet",
-  "language": "English",
-  "hours": "1 Hour",
-  "ageLimit": "All Ages",
-  "religion": "",
-  "aboutFull": "Flaabh Fit – India’s First Floating Fitness Experience\n\nDive into a new wave of workouts with Flaabh Fit, India’s first on-water fitness program that blends balance, strength, and mindfulness on floating boards in a tranquil pool setting.\n\nCombining yoga, pilates, and core training, each session helps you:\n Boost balance and posture\n Build strength and flexibility\n Sharpen focus and coordination\n  Relieve stress and refresh your mind\n\nIt’s more than a workout — it’s a mind-body flow on water, perfect for both beginners and fitness lovers.\n\nJoin the floating yoga workshop by FLAABH FIT and experience fitness on water with balance, core strength, and tranquility. A water-wellness event like no other."
-},
-
-{
-  "url": "kendo-training-martial-arts-workshop-start-today",
-  "id": 268,
-  "RegisterLink": "https://tickets.kynhood.com/event/6901e1a7f557630ef1f86490",
-  "metaTitleEvent": "Kendo Training | Martial Arts Workshop | Start Today | Super Chennai",
-  "metaDescriptionEvent": "Start your journey with Kendo Training, a martial arts workshop blending fitness, mindfulness, and traditional sword techniques crafted for modern learners.",
-  "conicallinkEvent": "/eventsdetails/268",
-  "siteLink": "https://www.superchennai.com/events-in-chennai/kendo-training-martial-arts-workshop-start-today",
-  "EventsCalendarTitle": "Start Kendo Today – Martial Arts Workshop in Chennai",
-  "EventsCalendarContent": "Learn the art of Kendo — explore its history, techniques, and discipline in this introductory martial arts workshop for beginners.",
-  "EventsCalendarMonth": "12 Nov 2025",
-  "EventsCalendarTime": "11:00 AM",
-  "EventsCalendarCategory": "Martial Arts / Workshop",
-  "image": "/images/HomePage-Images/Events/Newevents/start-kendo.jpg",
-  "link": "/events",
-  "location": "Thousand Lights, Chennai",
-  "language": "English",
-  "hours": "2 Hours",
-  "ageLimit": "All Ages",
-  "religion": "",
-  "aboutFull": " Sun, 2 Nov  to  Sun, 30 Nov  Start Kendo Today – Martial Arts Workshop\n\nThis session offers an introductory experience to Kendo, where participants will first explore the history and origins of this disciplined Japanese martial art.\n\nThey’ll then learn the fundamentals of handling a Shinai (bamboo sword), the basic striking techniques, and the core rules of the sport.\n\nTo wrap up, participants will engage in a series of standard Kendo drills practiced by players to enhance skill, precision, and discipline.\n\nStart your journey with Kendo Training, a martial arts workshop blending fitness, mindfulness, and traditional sword techniques crafted for modern learners."
-},
-
-
-
-
-
-
-// PUT HERE NEW EVENTS -----------------------------------------------------------
-
-
-
+  // PUT HERE NEW EVENTS -----------------------------------------------------------
 
   //##############################################################
   // ##################   OLD EVENTS  ############################
@@ -10353,6 +10389,185 @@ Focus on quality, flavor, and presentation
   },
 ];
 
+export const iplcontents = [
+  {
+    id: 102345,
+    name: "CSK VS MI",
+    slug: "csk-vs-mi-match",
+    para: "The biggest IPL rivalry returns with electrifying action",
+    TrendingCalendarMonth: "April 2026",
+    TrendingCalendarTime: "Match Day",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/csksport1.jpg",
+    Homeimage: "/images/ipl/iplmatch1.jpg",
+    link: "/link1",
+    duration: "3 Hours",
+    ageRestriction: "Open for All",
+    language: "English | Tamil | Hindi",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "M. A. Chidambaram Stadium, Chennai",
+
+    trendingDetails: `
+<p>
+The legendary IPL rivalry between <b>Chennai Super Kings (CSK)</b> and <b>Mumbai Indians (MI)</b> is back, bringing unmatched excitement for cricket fans 🏏🔥
+</p>
+
+<p>
+Hosted at the iconic <b>M. A. Chidambaram Stadium, Chennai</b>, this clash promises thrilling performances, star players, and unforgettable moments under the lights ✨
+</p>
+
+<p>
+<b>✨ Match Highlights:</b>
+</p>
+
+<p>
+• 💛 <b>CSK Power:</b> Backed by the roaring Chennai crowd.<br>
+• 🔵 <b>MI Strength:</b> A team known for big-match dominance.<br>
+• 🎯 <b>Star Players:</b> Top international and Indian cricket icons.<br>
+• 🎉 <b>Fan Energy:</b> A stadium atmosphere like no other.
+</p>
+
+<p>
+Whether you support CSK or MI, this is more than just a game — it’s one of IPL’s most celebrated rivalries and a must-watch sporting spectacle 🚀
+</p>
+`,
+
+    TrendingLink: "https://www.superchennai.com/trending-chennai/csk-vs-mi-match",
+    YoutubeLink: "",
+
+    meta: {
+      title: "CSK vs MI IPL Match 2026 | Chennai Super Kings Rivalry",
+      desc: "Experience the thrilling CSK vs MI IPL clash at Chepauk, Chennai. Witness one of cricket’s greatest rivalries live in action.",
+      url: "https://www.superchennai.com/trending-chennai/csk-vs-mi-match",
+    },
+  },
+
+  {
+    id: -3,
+    name: "Eventide Coffee – Minimalist Café in Chennai",
+    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+
+    para: "Every Day",
+    TrendingCalendarMonth: "Every Day",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "Desserts",
+    image: "/images/ipl/csksport1.jpg",
+    Homeimage: "/images/ipl/iplmatch2.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "Injambakkam, Chennai ",
+    trendingDetails: `
+          Eventide Coffee is Chennai’s newest minimalist café, designed for those who love calm, cozy spaces paired with curated coffee experiences. Whether you’re a coffee aficionado or just looking for a peaceful spot to unwind, this café offers carefully selected brews, from rich espresso shots to smooth filter coffees, all served with attention to detail.
+
+The interior reflects a modern, minimalist aesthetic, creating the perfect backdrop for catching up with friends, working remotely, or simply enjoying a quiet moment with a cup of coffee. Each drink is crafted to highlight the unique flavors of the beans, making it a treat for both the eyes and the palate.
+
+✨ Highlights:
+
+Curated coffee selections and specialty brews
+Minimalist, cozy, and Instagrammable interior
+Perfect for relaxing, working, or casual meetups
+Focus on quality, flavor, and presentation
+    `,
+    TrendingLink: "https://maps.app.goo.gl/WJhhy5LzkiW94FNw8 ",
+  },
+  {
+    id: -3,
+    name: "Eventide Coffee – Minimalist Café in Chennai",
+    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+
+    para: "Every Day",
+    TrendingCalendarMonth: "Every Day",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "Desserts",
+    image: "/images/ipl/csksport1.jpg",
+    Homeimage: "/images/ipl/iplmatch3.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "Injambakkam, Chennai ",
+    trendingDetails: `
+          Eventide Coffee is Chennai’s newest minimalist café, designed for those who love calm, cozy spaces paired with curated coffee experiences. Whether you’re a coffee aficionado or just looking for a peaceful spot to unwind, this café offers carefully selected brews, from rich espresso shots to smooth filter coffees, all served with attention to detail.
+
+The interior reflects a modern, minimalist aesthetic, creating the perfect backdrop for catching up with friends, working remotely, or simply enjoying a quiet moment with a cup of coffee. Each drink is crafted to highlight the unique flavors of the beans, making it a treat for both the eyes and the palate.
+
+✨ Highlights:
+
+Curated coffee selections and specialty brews
+Minimalist, cozy, and Instagrammable interior
+Perfect for relaxing, working, or casual meetups
+Focus on quality, flavor, and presentation
+    `,
+    TrendingLink: "https://maps.app.goo.gl/WJhhy5LzkiW94FNw8 ",
+  },
+  {
+    id: -3,
+    name: "Eventide Coffee – Minimalist Café in Chennai",
+    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+
+    para: "Every Day",
+    TrendingCalendarMonth: "Every Day",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "Desserts",
+    image: "/images/trendingChennai/366.jpg",
+    Homeimage: "/images/trendingChennai/003.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "Injambakkam, Chennai ",
+    trendingDetails: `
+          Eventide Coffee is Chennai’s newest minimalist café, designed for those who love calm, cozy spaces paired with curated coffee experiences. Whether you’re a coffee aficionado or just looking for a peaceful spot to unwind, this café offers carefully selected brews, from rich espresso shots to smooth filter coffees, all served with attention to detail.
+
+The interior reflects a modern, minimalist aesthetic, creating the perfect backdrop for catching up with friends, working remotely, or simply enjoying a quiet moment with a cup of coffee. Each drink is crafted to highlight the unique flavors of the beans, making it a treat for both the eyes and the palate.
+
+✨ Highlights:
+
+Curated coffee selections and specialty brews
+Minimalist, cozy, and Instagrammable interior
+Perfect for relaxing, working, or casual meetups
+Focus on quality, flavor, and presentation
+    `,
+    TrendingLink: "https://maps.app.goo.gl/WJhhy5LzkiW94FNw8 ",
+  },
+  {
+    id: -3,
+    name: "Eventide Coffee – Minimalist Café in Chennai",
+    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
+
+    para: "Every Day",
+    TrendingCalendarMonth: "Every Day",
+    TrendingCalendarTime: "",
+    TrendingCalendarCategory: "Desserts",
+    image: "/images/trendingChennai/366.jpg",
+    Homeimage: "/images/trendingChennai/003.jpg",
+    link: "/fake-sangeet-2.0",
+    duration: "",
+    ageRestriction: "",
+    language: "",
+    genre: "",
+    venue: "Injambakkam, Chennai ",
+    trendingDetails: `
+          Eventide Coffee is Chennai’s newest minimalist café, designed for those who love calm, cozy spaces paired with curated coffee experiences. Whether you’re a coffee aficionado or just looking for a peaceful spot to unwind, this café offers carefully selected brews, from rich espresso shots to smooth filter coffees, all served with attention to detail.
+
+The interior reflects a modern, minimalist aesthetic, creating the perfect backdrop for catching up with friends, working remotely, or simply enjoying a quiet moment with a cup of coffee. Each drink is crafted to highlight the unique flavors of the beans, making it a treat for both the eyes and the palate.
+
+✨ Highlights:
+
+Curated coffee selections and specialty brews
+Minimalist, cozy, and Instagrammable interior
+Perfect for relaxing, working, or casual meetups
+Focus on quality, flavor, and presentation
+    `,
+    TrendingLink: "https://maps.app.goo.gl/WJhhy5LzkiW94FNw8 ",
+  },
+];
+
 export const prideofchennaidata = [
   {
     id: 1,
@@ -12637,8 +12852,7 @@ export const prideofchennaidata = [
     name: "Dr. S. S. Badrinath",
     profession: "Founder, Sankara Nethralaya",
     bornPlace: "Chennai, Tamil Nadu",
-    natureofWork:
-      "Founder & Chairman Emeritus of Sankara Nethralaya.",
+    natureofWork: "Founder & Chairman Emeritus of Sankara Nethralaya.",
     about: "",
     knowmoreLink: "",
     popupContent: [
@@ -12693,8 +12907,8 @@ export const prideofchennaidata = [
         patients.
       </>,
       <>
-    Awarded prestigious honors such as Padma Shri and Dr. B.C. Roy National Award for excellence in medicine.
-
+        Awarded prestigious honors such as Padma Shri and Dr. B.C. Roy National
+        Award for excellence in medicine.
       </>,
     ],
     category: "Medicine / Oncology",
@@ -12722,10 +12936,12 @@ export const prideofchennaidata = [
         India.
       </>,
       <>
-       Held national and international leadership roles, contributing to global gastroenterology standards and research
+        Held national and international leadership roles, contributing to global
+        gastroenterology standards and research
       </>,
       <>
-       Recognized with honors such as Padma Shri and Tamil Nadu Best Doctor Award for outstanding medical service.
+        Recognized with honors such as Padma Shri and Tamil Nadu Best Doctor
+        Award for outstanding medical service.
       </>,
     ],
     category: "Medicine / Oncology",

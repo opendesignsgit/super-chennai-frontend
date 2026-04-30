@@ -245,6 +245,42 @@
   margin-bottom: 50px;
 }
 
+#iplsectionmain {
+  background-color: #a44294;
+  background-color: rgba(164, 66, 148, 0.15);
+  background-color: rgba(244, 179, 0, 0.3);
+  padding-bottom: 100px;
+}
+
+.iplimageee {
+  width: 290px;
+}
+
+#iplsectionmain .TrendCheniSec {
+  padding-top: 35px;
+}
+
+#iplsectionmain .trendingChennaiPrev {
+  background-image: url("/public/images/ipl/left-ipl-icon.svg");
+}
+#iplsectionmain .trendingChennaiNext {
+  background-image: url("/public/images/ipl/right-ipl-icon.svg");
+}
+
+#iplsectionmain .hbintCont::before {
+  border-radius: 20px;
+}
+#iplsectionmain img {
+  border-radius: 15px;
+}
+
+#iplsectionmain .hbintContin h3 {
+  background: linear-gradient(to bottom, #ffe8b9 0%, #dbd385 50%, #c9a963 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
 
 @media (max-width: 1600px) {
   .manifesto {
@@ -285,6 +321,31 @@
 @media (max-width: 768px) {
   .carryformPageSection {
     padding: 0 !important;
+  }
+
+  #iplsectionmain {
+    margin-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .iplimageee {
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+    justify-self: center;
+  }
+
+  #iplsectionmain .trendcRight {
+    padding-bottom: 50px;
+    padding-bottom: 25px;
+  }
+
+  #iplsectionmain .buttonsTredingSections {
+    top: 83%;
+  }
+
+  #iplsectionmain .TrendingChennaiSliderContainer {
+    border-radius: 10px;
   }
 }
 
@@ -840,7 +901,8 @@
 }
 
 .bulb-wrapper:hover .bulb-image {
-  filter: drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 40px #ffeb3b) drop-shadow(0 0 60px #fff176);
+  filter: drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 40px #ffeb3b)
+    drop-shadow(0 0 60px #fff176);
   transform: scale(1.05);
 }
 
@@ -1056,7 +1118,8 @@
   padding: 0px 25px;
 }
 
-.arattai-slider-wrapper .arattai-slide {}
+.arattai-slider-wrapper .arattai-slide {
+}
 
 .arattai-slider-wrapper .arattai-image {
   width: 100%;
@@ -1272,12 +1335,8 @@
   }
 }
 
-
-
-
 /* Add to your global CSS or Tailwind config */
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -1289,7 +1348,6 @@
 }
 
 @keyframes float-slow {
-
   0%,
   100% {
     transform: translateY(0px);
@@ -1301,7 +1359,6 @@
 }
 
 @keyframes pulse-slow {
-
   0%,
   100% {
     opacity: 0.6;
@@ -1313,7 +1370,6 @@
 }
 
 @keyframes bounce-slow {
-
   0%,
   100% {
     transform: translateY(0);
@@ -1325,7 +1381,6 @@
 }
 
 @keyframes bounce-med {
-
   0%,
   100% {
     transform: translateY(0);
@@ -1371,7 +1426,6 @@
 }
 
 @keyframes shimmer-card {
-
   0%,
   100% {
     transform: translateX(-100%) scaleX(1);
@@ -1393,7 +1447,6 @@
 }
 
 @keyframes float-text {
-
   0%,
   100% {
     transform: translateY(0px);
@@ -1405,7 +1458,6 @@
 }
 
 @keyframes bounce-gentle {
-
   0%,
   100% {
     transform: translateY(0);
@@ -1459,7 +1511,12 @@
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
@@ -1496,12 +1553,6 @@
   animation-delay: 0.5s;
 }
 
-
-
-
-
-
-
 /* 🔥 MASTER BUBBLE ANIMATION TAB SIDE  */
 .bubble-master {
   animation:
@@ -1510,7 +1561,6 @@
     bubbleGlowShift 8s ease-in-out infinite alternate;
   filter: drop-shadow(0 8px 25px rgba(59, 130, 246, 0.3));
   /* filter: drop-shadow(0 8px 25px rgba(134, 226, 12, 0.3)); */
-
 }
 
 .bubble-glow {
@@ -1523,7 +1573,6 @@
 
 /* 🌊 Ultra Smooth Float */
 @keyframes bubbleFloatXL {
-
   0%,
   100% {
     transform: translateY(0px) translateX(0px) rotate(0deg);
@@ -1560,7 +1609,6 @@
 
 /* 🎪 Wobble Magic */
 @keyframes bubbleWobble {
-
   0%,
   100% {
     transform: rotate(0deg) skew(0deg);
@@ -1585,21 +1633,23 @@
 /* ✨ Glow Shift */
 @keyframes bubbleGlowShift {
   0% {
-    filter: drop-shadow(0 8px 25px rgba(59, 130, 246, 0.3)) drop-shadow(0 0 20px rgba(59, 130, 246, 0.2));
+    filter: drop-shadow(0 8px 25px rgba(59, 130, 246, 0.3))
+      drop-shadow(0 0 20px rgba(59, 130, 246, 0.2));
   }
 
   50% {
-    filter: drop-shadow(0 12px 35px rgba(34, 197, 94, 0.4)) drop-shadow(0 0 30px rgba(34, 197, 94, 0.3));
+    filter: drop-shadow(0 12px 35px rgba(34, 197, 94, 0.4))
+      drop-shadow(0 0 30px rgba(34, 197, 94, 0.3));
   }
 
   100% {
-    filter: drop-shadow(0 8px 25px rgba(236, 72, 153, 0.35)) drop-shadow(0 0 25px rgba(236, 72, 153, 0.25));
+    filter: drop-shadow(0 8px 25px rgba(236, 72, 153, 0.35))
+      drop-shadow(0 0 25px rgba(236, 72, 153, 0.25));
   }
 }
 
 /* 💓 Heartbeat Pulse */
 @keyframes bubblePulse {
-
   0%,
   100% {
     transform: scale(1);
@@ -1636,36 +1686,36 @@
 /* 🌈 Shimmer Sweep */
 @keyframes bubbleShimmer {
   0% {
-    filter: brightness(1.1) contrast(1.15) drop-shadow(0 0 0px rgba(255, 255, 255, 0.8));
+    filter: brightness(1.1) contrast(1.15)
+      drop-shadow(0 0 0px rgba(255, 255, 255, 0.8));
   }
 
   25% {
-    filter: brightness(1.25) contrast(1.2) drop-shadow(3px 0 10px rgba(255, 255, 255, 0.6));
+    filter: brightness(1.25) contrast(1.2)
+      drop-shadow(3px 0 10px rgba(255, 255, 255, 0.6));
   }
 
   50% {
-    filter: brightness(1.35) contrast(1.25) drop-shadow(-2px 0 15px rgba(255, 255, 255, 0.7));
+    filter: brightness(1.35) contrast(1.25)
+      drop-shadow(-2px 0 15px rgba(255, 255, 255, 0.7));
   }
 
   75% {
-    filter: brightness(1.2) contrast(1.18) drop-shadow(1px 0 8px rgba(255, 255, 255, 0.5));
+    filter: brightness(1.2) contrast(1.18)
+      drop-shadow(1px 0 8px rgba(255, 255, 255, 0.5));
   }
 
   100% {
-    filter: brightness(1.1) contrast(1.15) drop-shadow(0 0 0px rgba(255, 255, 255, 0.8));
+    filter: brightness(1.1) contrast(1.15)
+      drop-shadow(0 0 0px rgba(255, 255, 255, 0.8));
   }
 }
-
-
-
-
 
 /* CRICKET STYLE WRK  */
 .CricketTrendCheniSec {
   background: linear-gradient(135deg, #0c0c1a 0%, #1a1a2e 100%);
   padding: 2rem 0;
-  background: url('images/cskimage.png') no-repeat center center;
-
+  background: url("images/cskimage.png") no-repeat center center;
 }
 
 .CrickettredingMainContainer {

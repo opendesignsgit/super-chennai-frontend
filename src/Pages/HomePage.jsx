@@ -18,7 +18,6 @@ import TechEdu from "../Components/TechEdu";
 import TrendingChennai1 from "../Components/TrendingChenna1i";
 import CricketScrore from "../Components/CricketScrore";
 
-
 import { Helmet } from "react-helmet-async";
 
 import Utilitiesinchennai from "../Components/Utilities";
@@ -79,40 +78,39 @@ export default function HomePage() {
   //   ],
   // };
 
-
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://www.superchennai.com/",
-    "potentialAction": {
+    url: "https://www.superchennai.com/",
+    potentialAction: {
       "@type": "SearchAction",
-      "target": "https://www.superchennai.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+      target: "https://www.superchennai.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
     },
-    "mainEntity": [
+    mainEntity: [
       {
         "@type": "SiteNavigationElement",
-        "name": "Chennai Events",
-        "url": "https://www.superchennai.com/chennai-events"
+        name: "Chennai Events",
+        url: "https://www.superchennai.com/chennai-events",
       },
       {
         "@type": "SiteNavigationElement",
-        "name": "Superchennai Contest",
-        "url": "https://www.superchennai.com/superchennai-contest"
+        name: "Superchennai Contest",
+        url: "https://www.superchennai.com/superchennai-contest",
       },
       {
         "@type": "SiteNavigationElement",
-        "name": "Restaurants in Chennai",
-        "url": "https://www.superchennai.com/visit/restaurants-in-chennai"
+        name: "Restaurants in Chennai",
+        url: "https://www.superchennai.com/visit/restaurants-in-chennai",
       },
       {
         "@type": "SiteNavigationElement",
-        "name": "Beaches in Chennai",
-        "url": "https://www.superchennai.com/visit/place-to-visit/beaches-in-chennai"
-      }
-    ]
-  }
-  
+        name: "Beaches in Chennai",
+        url: "https://www.superchennai.com/visit/place-to-visit/beaches-in-chennai",
+      },
+    ],
+  };
+
   useEffect(() => {
     const scrollPos = sessionStorage.getItem("scrollPos");
 
@@ -183,15 +181,15 @@ export default function HomePage() {
         <SecondSection />
       </div>
 
+      <div data-aos="fade-up" data-aos-delay="100" id="iplsectionmain">
+        <CricketScrore />
+      </div>
+
       <div data-aos="fade-up" data-aos-delay="100">
         <Explore />
       </div>
       <div data-aos="fade-up" data-aos-delay="100">
         <TrendingChennai1 />
-      </div>
-
-      <div data-aos="fade-up" data-aos-delay="100">
-        <CricketScrore />
       </div>
 
       <div data-aos="fade-up" data-aos-delay="100">
@@ -203,7 +201,7 @@ export default function HomePage() {
       <div data-aos="fade-up" data-aos-delay="100">
         <HoverImageSectionHorizontal />
       </div>
-      
+
       <div data-aos="fade-up" data-aos-delay="100">
         <ChennaiInvestments />
       </div>

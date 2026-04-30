@@ -339,9 +339,8 @@ import ArattaiSoumyaSwaminathanExcelView from "./Pages/Activities/ArrattaiWithSo
 import ArattaiWithSoumyaSwaminathan from "./Pages/Activities/ArrattaiWithSoumyaSwaminathan/arattai-soumya-swaminathan";
 import IconofthemonthAprilSowmiyaSwaminathan from "./Pages/Icon-of-the-month-april-26";
 import CricketLivePage from "./Pages/Activities/cricketLive";
-
-
-
+import CricketScrore from "./Components/CricketScrore";
+import CricketDetails from "./Components/CricketDetails";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -681,13 +680,13 @@ function App() {
         >
           <a href="/arattai-with-vivek-karunakaran/chennai-fashion-designer/">
             <img
-              src="/images/tap-button-arattai.svg" 
+              src="/images/tap-button-arattai.svg"
               alt="artificial intelligence challenge"
               // className="bubble-glow" // 🔥 UPGRADED CLASS
             />
           </a>
 
-             {/* <a href="/arattai-with-vivek-karunakaran/chennai-fashion-designer/">
+          {/* <a href="/arattai-with-vivek-karunakaran/chennai-fashion-designer/">
             <img src="/images/tap-button-arattai.svg" alt="arattai" />
           </a> */}
         </div>
@@ -1302,12 +1301,8 @@ function App() {
           element={<ShoppingLocalFindsSavorEdibleSouvenirs />}
         />
 
-            <Route
-          path="/CricketLivePage"
-          element={<CricketLivePage />}
-        />
+        <Route path="/CricketLivePage" element={<CricketLivePage />} />
 
-        
         {/* Shopping Pages */}
         {/* Place to Visit */}
         <Route
@@ -1565,6 +1560,7 @@ function App() {
         <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
         {/* ChennaiQuiz */}
         <Route path="/trending-chennai/:slug" element={<TrendingDetails />} />
+        <Route path="/ipl/:slug" element={<CricketDetails />} />
         <Route path="/eventsimman" element={<EventsImman />} />
         <Route path="/eventsvishal" element={<EventsVishal />} />
         <Route path="/eventsspeed" element={<EventsSpeed />} />

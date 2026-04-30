@@ -16,6 +16,9 @@ import InstagramReelsMarquee from "../Components/SocialChennai";
 import StartupChennai from "../Components/StartupChennai";
 import TechEdu from "../Components/TechEdu";
 import TrendingChennai1 from "../Components/TrendingChenna1i";
+import CricketScrore from "../Components/CricketScrore";
+
+
 import { Helmet } from "react-helmet-async";
 
 import Utilitiesinchennai from "../Components/Utilities";
@@ -186,6 +189,11 @@ export default function HomePage() {
       <div data-aos="fade-up" data-aos-delay="100">
         <TrendingChennai1 />
       </div>
+
+      <div data-aos="fade-up" data-aos-delay="100">
+        <CricketScrore />
+      </div>
+
       <div data-aos="fade-up" data-aos-delay="100">
         <Funchennai />
       </div>
@@ -195,6 +203,7 @@ export default function HomePage() {
       <div data-aos="fade-up" data-aos-delay="100">
         <HoverImageSectionHorizontal />
       </div>
+      
       <div data-aos="fade-up" data-aos-delay="100">
         <ChennaiInvestments />
       </div>

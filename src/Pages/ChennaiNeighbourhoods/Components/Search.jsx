@@ -44,7 +44,7 @@ export default function SearchChennai({ onSearch }) {
       className={`container max-w-7xl mx-auto px-4 seachconatiners ${isTop ? "neighstickkkk" : "noneighstickkkk"}`}
     >
       <div className="mb-6 filtersearchnewmain" ref={sectionRef}>
-        <div className="flex gap-2 filtersearchnew" >
+        <div className="flex gap-2 filtersearchnew">
           <input
             className="border p-3 w-full rounded-lg searchhoodfilter"
             placeholder="Find your Location / PIN code"

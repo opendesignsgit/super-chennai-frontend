@@ -10422,8 +10422,8 @@ A thrilling face-off is on the cards as the Mumbai Indians go head-to-head with 
     YoutubeLink: "",
     meta: {
       title:
-        "MI vs LSG IPL Match 2026 | Mumbai Indians vs Lucknow Super Giants",
-      desc: "Witness the gripping MI vs LSG IPL clash at Wankhede Stadium, Mumbai. Catch the explosive action and high-pressure moments live.",
+        "MI vs LSG IPL 2026 – Battle Under Mumbai Lights | Match 47",
+      desc: "Mumbai Indians face Lucknow Super Giants in IPL 2026 Match 47 at Wankhede Stadium on May 4 at 7:30 PM. Explore Squad, Head-to-Head, Key Players & Match Prediction.",
       url: "",
     },
   },
@@ -10458,8 +10458,8 @@ Cricket fans can look forward to a high-stakes encounter as Delhi Capitals take 
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
-      title: "DC vs CSK IPL Match 2026 | Delhi Capitals vs Chennai Super Kings",
-      desc: "Catch the intense DC vs CSK IPL 2026 battle live from Arun Jaitley Stadium, Delhi. Stay tuned for tactical gameplay and standout performances.",
+      title: "Yellow Army Invades Delhi – DC vs CSK IPL 2026 Match 48",
+      desc: "Delhi Capitals vs Chennai Super Kings, IPL 2026 Match 48 at Arun Jaitley Stadium, Delhi on May 5 at 7:30 PM. Who dominates — DC's home grit or CSK's champion DNA?",
       url: "",
     },
   },
@@ -10493,8 +10493,8 @@ An exciting mid-season clash awaits as Sunrisers Hyderabad lock horns with Punja
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
-      title: "SRH vs PBKS IPL Match 2026 | Sunrisers Hyderabad vs Punjab Kings",
-      desc: "Watch the SRH vs PBKS IPL 2026 showdown live from Hyderabad. Experience a high-scoring encounter filled with power-packed performances.",
+      title: "SRH vs PBKS IPL 2026 – Hyderabad's Finest vs Punjab's Fury",
+      desc: "Sunrisers Hyderabad face Punjab Kings in IPL 2026 Match 49 at Rajiv Gandhi Stadium on May 6 at 7:30 PM. Will SRH's home dominance hold or PBKS storm Hyderabad?",
       url: "",
     },
   },
@@ -10530,8 +10530,8 @@ A high-voltage contest is set to unfold as Lucknow Super Giants take on Royal Ch
     YoutubeLink: "",
     meta: {
       title:
-        "LSG vs RCB IPL Match 2026 | Lucknow Super Giants vs Royal Challengers Bengaluru",
-      desc: "Catch the LSG vs RCB IPL 2026 showdown live from Lucknow. Experience a competitive clash filled with big hits and game-changing spells.",
+        "LSG vs RCB IPL 2026 – Lucknow's Pride vs Bengaluru's Roar",
+      desc: "Lucknow Super Giants vs Royal Challengers Bengaluru, IPL 2026 Match 50 at Ekana Stadium on May 7 at 7:30 PM. Will LSG hold home fort or RCB's firepower take over?",
       url: "",
     },
   },
@@ -10566,8 +10566,8 @@ An exciting contest is lined up as Delhi Capitals take on Kolkata Knight Riders 
     YoutubeLink: "",
     meta: {
       title:
-        "DC vs KKR IPL Match 2026 | Delhi Capitals vs Kolkata Knight Riders",
-      desc: "Watch the DC vs KKR IPL 2026 clash live from Arun Jaitley Stadium. Expect a fast-paced game with attacking intent and high-scoring action.",
+        "DC vs KKR IPL 2026 – Purple Brigade Storms the Capital!",
+      desc: "Delhi Capitals vs Kolkata Knight Riders, IPL 2026 Match 51 at Arun Jaitley Stadium on May 8 at 7:30 PM. Two title chasers collide — who grabs the crucial points?",
       url: "",
     },
   },
@@ -10601,8 +10601,8 @@ A thrilling evening clash is set as Rajasthan Royals go up against Gujarat Titan
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
-      title: "RR vs GT IPL Match 2026 | Rajasthan Royals vs Gujarat Titans",
-      desc: "Experience the RR vs GT IPL 2026 showdown live from Sawai Mansingh Stadium, Jaipur. A competitive fixture filled with big hits and momentum shifts.",
+      title: "RR vs GT IPL 2026 – Pink City Rises for the Royals!",
+      desc: "Rajasthan Royals vs Gujarat Titans, IPL 2026 Match 52 at Sawai Mansingh Stadium, Jaipur on May 9 at 7:30 PM. Pink City gears up — will Royals reign or Titans triumph?",
       url: "",
     },
   },
@@ -10637,8 +10637,8 @@ A gripping afternoon encounter awaits as Chennai Super Kings face off against Lu
     YoutubeLink: "",
     meta: {
       title:
-        "CSK vs LSG IPL Match 2026 | Chennai Super Kings vs Lucknow Super Giants",
-      desc: "Watch the CSK vs LSG IPL 2026 clash live from MA Chidambaram Stadium, Chennai. Experience a strategic battle filled with pressure moments and impactful performances.",
+        "CSK vs LSG IPL 2026 – Chepauk Roars for Thala's Army!",
+      desc: "CSK vs LSG, IPL 2026 Match 53 at Chepauk on May 10 at 3:30 PM. Spin webs, big hits & pressure cricket — Thala's den vs LSG's firepower. Who walks away with the points?",
       url: "",
     },
   },
@@ -10673,8 +10673,8 @@ A blockbuster clash is set to take center stage as Royal Challengers Bengaluru g
     YoutubeLink: "",
     meta: {
       title:
-        "RCB vs MI IPL Match 2026 | Royal Challengers Bengaluru vs Mumbai Indians",
-      desc: "Witness the RCB vs MI IPL 2026 blockbuster live from Raipur. Catch the explosive batting and game-changing performances in this intense rivalry.",
+        "RCB vs MI IPL 2026 – Virat vs Rohit Lights Up Raipur!",
+      desc: "RCB vs MI, IPL 2026 Match 54 at Shaheed Veer Narayan Singh Stadium, Raipur on May 10 at 7:30 PM. Two IPL giants, one epic battle — Bengaluru's fire meets Mumbai's might!",
       url: "",
     },
   },
@@ -10708,8 +10708,8 @@ An exciting evening clash is on the cards as Punjab Kings take on Delhi Capitals
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
-      title: "PBKS vs DC IPL Match 2026 | Punjab Kings vs Delhi Capitals",
-      desc: "Catch the PBKS vs DC IPL 2026 action live from Dharamsala. Witness a fast-paced game with attacking stroke play and key breakthroughs in pace-friendly conditions.",
+      title: "PBKS vs DC IPL 2026 – Mountain Magic Awaits at Dharamsala!",
+      desc: "PBKS vs DC, IPL 2026 Match 55 at HPCA Stadium, Dharamsala on May 11 at 7:30 PM. Pacers rule the hills as Punjab's Kings clash with Delhi Capitals under mountain skies!",
       url: "",
     },
   },
@@ -10743,8 +10743,8 @@ A high-energy contest is set as Gujarat Titans take on Sunrisers Hyderabad in th
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
-      title: "GT vs SRH IPL Match 2026 | Gujarat Titans vs Sunrisers Hyderabad",
-      desc: "Watch the GT vs SRH IPL 2026 match live from Narendra Modi Stadium, Ahmedabad. Expect a thrilling contest filled with momentum shifts and big hits.",
+      title: "GT vs SRH IPL 2026 – Narendra Modi Stadium Braces for Fire!",
+      desc: "GT vs SRH, IPL 2026 Match 56 at Narendra Modi Stadium, Ahmedabad on May 12 at 7:30 PM. Titans defend their den as Orange Army storms in with fire & fury!",
       url: "",
     },
   },
@@ -10779,8 +10779,8 @@ A thrilling contest is set to unfold as Royal Challengers Bengaluru take on Kolk
     YoutubeLink: "",
     meta: {
       title:
-        "RCB vs KKR IPL Match 2026 | Royal Challengers Bengaluru vs Kolkata Knight Riders",
-      desc: "Watch the RCB vs KKR IPL 2026 clash live from Raipur. Experience a high-intensity game filled with aggressive stroke play and crucial breakthroughs.",
+        "RCB vs KKR IPL 2026 – Raipur Witnesses a Colour War!",
+      desc: "RCB vs KKR, IPL 2026 Match 57 at Shaheed Veer Narayan Singh Stadium, Raipur on May 13 at 7:30 PM. Red meets Purple — Bengaluru's fire takes on Kolkata's knight charge!",
       url: "",
     },
   },
@@ -10814,8 +10814,8 @@ An action-packed evening clash is set as Punjab Kings take on Mumbai Indians in 
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
-      title: "PBKS vs MI IPL Match 2026 | Punjab Kings vs Mumbai Indians",
-      desc: "Catch the PBKS vs MI IPL 2026 thriller live from Dharamsala. Watch explosive batting and wicket-taking spells in the scenic HPCA stadium.",
+      title: "PBKS vs MI IPL 2026 – Mumbai Climbs the Hills of Dharamsala",
+      desc: " PBKS vs MI, IPL 2026 Match 58 at HPCA Stadium, Dharamsala on May 14 at 7:30 PM. Kings vs Paltan — pace flies, big hits soar as Punjab's hills test Mumbai's might!",
       url: "",
     },
   },
@@ -10851,8 +10851,8 @@ A high-intensity battle is set to unfold as Lucknow Super Giants face Chennai Su
     YoutubeLink: "",
     meta: {
       title:
-        "LSG vs CSK IPL Match 2026 | Lucknow Super Giants vs Chennai Super Kings",
-      desc: "Watch the LSG vs CSK IPL 2026 showdown live from Ekana Stadium, Lucknow. Expect aggressive batting and smart bowling strategies in this gripping contest.",
+        "LSG vs CSK IPL 2026 – Yellow Army Marches into Lucknow!",
+      desc: "LSG vs CSK, IPL 2026 Match 59 at Ekana Stadium, Lucknow on May 15 at 7:30 PM. Super Giants defend their turf as Chennai's Yellow Army arrives with title ambitions!",
       url: "",
     },
   },
@@ -10887,8 +10887,8 @@ An exciting night game is set as Kolkata Knight Riders take on Gujarat Titans in
     YoutubeLink: "",
     meta: {
       title:
-        "KKR vs GT IPL Match 2026 | Kolkata Knight Riders vs Gujarat Titans",
-      desc: "Watch the KKR vs GT IPL 2026 clash live from Eden Gardens, Kolkata. Expect an entertaining contest with aggressive stroke play and game-changing performances.",
+        "KKR vs GT IPL 2026 – Kolkata's Temple of Cricket Ignites!",
+      desc: "KKR vs GT, IPL 2026 Match 60 at Eden Gardens, Kolkata on May 16 at 7:30 PM. Purple Army under the lights — Knights defend their fortress as Titans dare to invade!",
       url: "",
     },
   },
@@ -10923,8 +10923,8 @@ An exciting afternoon clash is set to unfold as Punjab Kings take on Royal Chall
     YoutubeLink: "",
     meta: {
       title:
-        "PBKS vs RCB IPL Match 2026 | Punjab Kings vs Royal Challengers Bengaluru",
-      desc: "Catch the PBKS vs RCB IPL 2026 afternoon thriller live from Dharamsala. Watch explosive batting and pace-friendly bowling action at the HPCA stadium.",
+        "PBKS vs RCB IPL 2026 – Kings vs Challengers in the Clouds! ",
+      desc: " PBKS vs RCB, IPL 2026 Match 61 at HPCA Stadium, Dharamsala on May 17 at 3:30 PM. Punjab's Kings take on Virat's Red Army — pace, power & altitude on the line! ",
       url: "",
     },
   },
@@ -10958,8 +10958,8 @@ An exciting evening encounter is set as Delhi Capitals take on Rajasthan Royals 
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
-      title: "DC vs RR IPL Match 2026 | Delhi Capitals vs Rajasthan Royals",
-      desc: "Watch the DC vs RR IPL 2026 clash live from Delhi. Experience an engaging game filled with momentum shifts and high-scoring action at Arun Jaitley Stadium.",
+      title: "DC vs RR IPL 2026 – Capital Showdown Under Delhi Lights!",
+      desc: "DC vs RR, IPL 2026 Match 62 at Arun Jaitley Stadium, Delhi on May 17 at 7:30 PM. Pink Army storms the Capital as Delhi's Blues fight to guard their home turf!",
       url: "",
     },
   },
@@ -10994,8 +10994,8 @@ An exciting night clash is set to unfold as Chennai Super Kings take on Sunriser
     YoutubeLink: "",
     meta: {
       title:
-        "CSK vs SRH IPL Match 2026 | Chennai Super Kings vs Sunrisers Hyderabad",
-      desc: "Watch the CSK vs SRH IPL 2026 night clash live from Chepauk. Experience a strategic battle filled with spin-bowling masterclasses and tactical brilliance.",
+        "CSK vs SRH IPL 2026 – Yellow vs Orange Under Chennai Lights!",
+      desc: "CSK vs SRH, IPL 2026 Match 63 at MA Chidambaram Stadium, Chennai on May 18 at 7:30 PM. Yellow meets Orange at Chepauk — spin, strategy & Thala's roaring crowd await!",
       url: "",
     },
   },
@@ -11030,8 +11030,8 @@ A thrilling contest is set to take place as Rajasthan Royals go up against Luckn
     YoutubeLink: "",
     meta: {
       title:
-        "RR vs LSG IPL Match 2026 | Rajasthan Royals vs Lucknow Super Giants",
-      desc: "Experience the RR vs LSG IPL 2026 showdown live from Sawai Mansingh Stadium, Jaipur. A high-energy clash filled with momentum swings and match-defining moments.",
+        "Royals Meet Giants – RR vs LSG IPL 2026 at Jaipur",
+      desc: "RR vs LSG, IPL 2026 Match 64 at Sawai Mansingh Stadium, Jaipur on May 19 at 7:30 PM. Royals defend Pink City's crown as Lucknow's Giants arrive hungry for points!",
       url: "",
     },
   },
@@ -11066,8 +11066,8 @@ A high-voltage encounter is set to take place as Kolkata Knight Riders clash wit
     YoutubeLink: "",
     meta: {
       title:
-        "KKR vs MI IPL Match 2026 | Kolkata Knight Riders vs Mumbai Indians",
-      desc: "Watch the KKR vs MI IPL 2026 showdown live from Eden Gardens, Kolkata. Expect an action-packed contest with aggressive stroke play and match-defining performances.",
+        "KKR vs MI IPL 2026 – Two Titans Meet at Eden Gardens!",
+      desc: "KKR vs MI, IPL 2026 Match 65 at Eden Gardens, Kolkata on May 20 at 7:30 PM. Two IPL champions share the field — a contest of skill, strategy & pure cricket class!",
       url: "",
     },
   },
@@ -11101,8 +11101,8 @@ A thrilling contest is set to unfold as Gujarat Titans take on Chennai Super Kin
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
-      title: "GT vs CSK IPL Match 2026 | Gujarat Titans vs Chennai Super Kings",
-      desc: "Watch the GT vs CSK IPL 2026 match live from Narendra Modi Stadium, Ahmedabad. Witness a high-scoring encounter with explosive batting and strategic masterclasses.",
+      title: "GT vs CSK IPL 2026 – Titans & Super Kings at Ahmedabad!",
+      desc: "GT vs CSK, IPL 2026 Match 66 at Narendra Modi Stadium, Ahmedabad on May 21 at 7:30 PM. Gujarat Titans & Chennai Super Kings deliver a high-scoring battle of skill & strategy!",
       url: "",
     },
   },
@@ -11137,8 +11137,8 @@ An electrifying contest is lined up as Sunrisers Hyderabad take on Royal Challen
     YoutubeLink: "",
     meta: {
       title:
-        "SRH vs RCB IPL Match 2026 | Sunrisers Hyderabad vs Royal Challengers Bengaluru",
-      desc: "Watch the SRH vs RCB IPL 2026 clash live from Hyderabad. Experience an electrifying battle with explosive batting and game-changing bowling spells.",
+        "SRH vs RCB IPL 2026 – Battle of the Big Hitters in Hyderabad ",
+      desc: "SRH vs RCB, IPL 2026 Match 67 at Rajiv Gandhi Stadium, Hyderabad on May 22 at 7:30 PM. Two explosive batting sides meet — expect big scores, key spells & pure cricket entertainment!",
       url: "",
     },
   },
@@ -11174,8 +11174,8 @@ An exciting contest is set to unfold as Lucknow Super Giants take on Punjab King
     YoutubeLink: "",
     meta: {
       title:
-        "LSG vs PBKS IPL Match 2026 | Lucknow Super Giants vs Punjab Kings",
-      desc: "Watch the LSG vs PBKS IPL 2026 showdown live from Ekana Stadium, Lucknow. Expect a thrilling clash with momentum shifts and impactful performances.",
+        "LSG vs PBKS IPL 2026 – Giants & Kings Clash at Ekana!",
+      desc: "LSG vs PBKS, IPL 2026 Match 68 at Ekana Stadium, Lucknow on May 23 at 7:30 PM. Super Giants & Punjab Kings deliver a well-contested battle of skills, power & strategy!",
       url: "",
     },
   },
@@ -11209,8 +11209,8 @@ An exciting afternoon clash is set to take place as Mumbai Indians face Rajastha
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
-      title: "MI vs RR IPL Match 2026 | Mumbai Indians vs Rajasthan Royals",
-      desc: "Catch the MI vs RR IPL 2026 afternoon thriller live from Wankhede Stadium. Experience a high-scoring contest with explosive batting and match-winning performances.",
+      title: "MI vs RR IPL 2026 – Mumbai & Jaipur's Best at Wankhede",
+      desc: "MI vs RR, IPL 2026 Match 69 at Wankhede Stadium, Mumbai on May 24 at 3:30 PM. Mumbai Indians & Rajasthan Royals serve up an afternoon of power hitting & sharp bowling!",
       url: "",
     },
   },
@@ -11245,8 +11245,8 @@ A thrilling evening clash is set to unfold as Kolkata Knight Riders take on Delh
     YoutubeLink: "",
     meta: {
       title:
-        "KKR vs DC IPL Match 2026 | Kolkata Knight Riders vs Delhi Capitals",
-      desc: "Watch the KKR vs DC IPL 2026 showdown live from Eden Gardens. Experience an action-packed contest with aggressive stroke play and crucial breakthroughs.",
+        "KKR vs DC IPL 2026 – Eden Gardens Lights Up for Match 70!",
+      desc: "KKR vs DC, IPL 2026 Match 70 at Eden Gardens, Kolkata on May 24 at 7:30 PM. Kolkata Knight Riders & Delhi Capitals bring an evening of quality cricket to the iconic Eden arena!",
       url: "",
     },
   },

@@ -327,6 +327,35 @@
     padding: 0 !important;
   }
 
+  /* #iplsectionmain .hbintCont::before {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    opacity: 0.8;
+    content: none;
+  }
+
+  #iplsectionmain img {
+    border-radius: 15px;
+    width: 320px !important;
+    width: 100% !important;
+  } */
+  /* #iplsectionmain .accordion-track {
+    justify-content: center;
+  }
+
+  #iplsectionmain .trendingChennaiCard {
+    width: 350px !important;
+  } */
+
+  /* #iplsectionmain img {
+    border-radius: 15px;
+    width: 320px !important;
+    height: 100% !important;
+  } */
+
   #iplsectionmain {
     margin-top: 50px;
     padding-bottom: 0;
@@ -350,6 +379,25 @@
 
   #iplsectionmain .TrendingChennaiSliderContainer {
     border-radius: 10px;
+    width: 360px !important;
+  }
+
+  #iplsectionmain img {
+    border-radius: 15px;
+    /* width: 360px !important; */
+  }
+
+  #iplsectionmain .hbintCont::before {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    opacity: 1;
+  }
+
+  #iplsectionmain .hbintimg  img {
+    width: 360px !important;
   }
 }
 

@@ -1681,11 +1681,11 @@ export default function CricketDetails() {
 
       <section className="accaodomationBannerSection">
         <div>
-          <img src="/images/ipl/superchennai-bg.jpeg" alt="Banner" />
+          <img src="/images/ipl/ipl-banner.jpeg" alt="Banner" />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h1>CSK Matches</h1>
+            <h1>IPL T20 2026</h1>
             <div className="breadCrum"></div>
           </div>
         </div>
@@ -1780,12 +1780,12 @@ export default function CricketDetails() {
                       />
                     )}
 
-                    {event.streamingmobile && (
+                    {/* {event.streamingmobile && (
                       <InfoRow
                         icon="/images/ipl/straming.svg"
                         label={event.streamingmobile}
                       />
-                    )}
+                    )} */}
 
                     {event.streamingtv && (
                       <InfoRow

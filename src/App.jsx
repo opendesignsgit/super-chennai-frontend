@@ -341,6 +341,7 @@ import IconofthemonthAprilSowmiyaSwaminathan from "./Pages/Icon-of-the-month-apr
 import CricketLivePage from "./Pages/Activities/cricketLive";
 import CricketScrore from "./Components/CricketScrore";
 import CricketDetails from "./Components/CricketDetails";
+import TestHomePage from "./Pages/TestHomePage";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -991,6 +992,7 @@ function App() {
 
         {/*----Main-Pages---------*/}
         <Route path="/" element={<HomePage />} />
+        <Route path="/testhome" element={<TestHomePage />} />
         <Route path="/results" element={<SearchResults />} />
         <Route
           path="/volunteer-in-chennai"

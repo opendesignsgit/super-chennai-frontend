@@ -23,10 +23,10 @@ import { Helmet } from "react-helmet-async";
 import Utilitiesinchennai from "../Components/Utilities";
 import HomepageCarousel from "../Components/HeroSliderNew";
 import SecondSection from "../Components/SecondSection";
-import { useEvents } from "../Pages/Events/Hooks/UseEvents";
-import EventCalender from "../Pages/Events/Components/EventCalender/EventCalender";
+import { useEvents } from "./Events/Hooks/UseEvents";
+import EventCalender from "./Events/Components/EventCalender/EventCalender";
 import AerialMap from "../Components/AerialMap";
-export default function HomePage() {
+export default function TestHomePage() {
   const location = useLocation();
 
   const { events } = useEvents();
@@ -181,9 +181,9 @@ export default function HomePage() {
         <SecondSection />
       </div>
 
-      {/* <div data-aos="fade-up" data-aos-delay="100" id="iplsectionmain">
+      <div data-aos="fade-up" data-aos-delay="100" id="iplsectionmain">
         <CricketScrore />
-      </div> */}
+      </div>
 
       <div data-aos="fade-up" data-aos-delay="100">
         <Explore />

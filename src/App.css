@@ -1002,6 +1002,14 @@
   .manifestowidth {
     width: 60%;
   }
+  #iplsectionmain .iplimageee {
+    width: 125px;
+  }
+
+  #iplsectionmain .trendingChennaiText {
+    height: 400px;
+    overflow-y: scroll;
+  }
 }
 
 @media (max-width: 1300px) and (min-width: 1100px) {
@@ -1017,6 +1025,15 @@
 
   .manifestowidth {
     width: 60%;
+  }
+
+  #iplsectionmain .iplimageee {
+    width: 125px;
+  }
+
+  #iplsectionmain .trendingChennaiText {
+    height: 400px;
+    overflow-y: scroll;
   }
 }
 

@@ -396,11 +396,13 @@
     opacity: 1;
   }
 
-  #iplsectionmain .hbintimg  img {
+  #iplsectionmain .hbintimg img {
     width: 330px !important;
   }
 
-
+  #iplsectionmain .trendingChennaiText {
+    width: 100%;
+  }
 }
 
 @media (min-width: 200px) and (max-width: 500px) {

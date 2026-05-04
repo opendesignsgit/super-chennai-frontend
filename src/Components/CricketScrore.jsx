@@ -297,12 +297,17 @@ export default function CricketScrore() {
             {/* <h2>Chennai Superkings</h2> */}
             <img className="iplimageee" src="/images/ipl/ipl-logo.png" alt="" />
             <p className="trendingChennaiText">
-              Chennai is one of the most passionate cricket cities in India, and
-              its love for the Indian Premier League is unmatched. Home to the
-              iconic Chennai Super Kings (CSK), the city proudly supports one of
-              the most successful franchises in IPL history. Known for their
-              consistency, strong leadership, and loyal fan base, CSK has
-              created unforgettable moments over the years.
+              The Indian Premier League (IPL) is a spectacular cricket league
+              that combines sport, passion, and entertainment like no other.
+              Featuring the best cricketers from around the world, IPL is known
+              for intense rivalries, powerful performances, and edge-of-the-seat
+              matches. It has created a global platform where young players
+              showcase their talent and become stars overnight. With legendary
+              teams, loyal fan bases, and electrifying stadium atmosphere, every
+              IPL season creates unforgettable memories. The IPL T20 tournament
+              is not just cricket—it is an emotion shared by millions. IPL
+              remains one of the biggest and most popular sports leagues in the
+              world.
             </p>
           </div>
 

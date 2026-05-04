@@ -10394,7 +10394,7 @@ export const iplcontents = [
   {
     id: 102347,
     name: "MI vs LSG – IPL 2026 Showdown",
-    slug: "mi-vs-lsg-match-2026",
+    slug: "mi-vs-lsg-47th-match-indian-premier-league-2026",
     para: "The iconic Wankhede showdown: Mumbai Indians take on Lucknow Super Giants",
     matchday: " Date : Monday, May 04",
     matchcount: "Match : 47th Match",
@@ -10431,7 +10431,7 @@ A thrilling face-off is on the cards as the Mumbai Indians go head-to-head with 
   {
     id: 102348,
     name: "DC vs CSK – IPL 2026 Showdown",
-    slug: "dc-vs-csk-match-2026",
+    slug: "dc-vs-csk-48th-match-indian-premier-league-2026",
     para: "A high-stakes encounter as Delhi Capitals take on the legendary Chennai Super Kings",
     matchday: " Date : Tuesday, May 05",
     matchcount: "Match : 48th Match",
@@ -10466,7 +10466,7 @@ Cricket fans can look forward to a high-stakes encounter as Delhi Capitals take 
   {
     id: 102349,
     name: "SRH vs PBKS – IPL 2026 Showdown",
-    slug: "srh-vs-pbks-match-2026",
+    slug: "srh-vs-pbks-49th-match-indian-premier-league-2026",
     para: "An exciting mid-season clash as Sunrisers Hyderabad lock horns with Punjab Kings",
     matchday: " Date : Wednesday, May 06",
     matchcount: "Match : 49th Match",
@@ -10501,7 +10501,7 @@ An exciting mid-season clash awaits as Sunrisers Hyderabad lock horns with Punja
   {
     id: 102350,
     name: "LSG vs RCB – IPL 2026 Showdown",
-    slug: "lsg-vs-rcb-match-2026",
+    slug: "lsg-vs-rcb-50th-match-indian-premier-league-2026",
     para: "A high-voltage contest as Lucknow Super Giants take on Royal Challengers Bengaluru",
     matchday: " Date : Thursday, May 07",
     matchcount: "Match : 50th Match",
@@ -10538,7 +10538,7 @@ A high-voltage contest is set to unfold as Lucknow Super Giants take on Royal Ch
   {
     id: 102351,
     name: "DC vs KKR – IPL 2026 Showdown",
-    slug: "dc-vs-kkr-match-2026",
+    slug: "dc-vs-kkr-51st-match-indian-premier-league-2026",
     para: "An exciting contest as Delhi Capitals take on the all-round strength of Kolkata Knight Riders",
     matchday: " Date : Friday, May 08",
     matchcount: "Match : 51st Match",
@@ -10574,7 +10574,7 @@ An exciting contest is lined up as Delhi Capitals take on Kolkata Knight Riders 
   {
     id: 102352,
     name: "RR vs GT – IPL 2026 Showdown",
-    slug: "rr-vs-gt-match-2026",
+    slug: "rr-vs-gt-52nd-match-indian-premier-league-2026",
     para: "A thrilling evening clash as Rajasthan Royals go up against Gujarat Titans in Jaipur",
     matchday: " Date : Saturday, May 09",
     matchcount: "Match : 52nd Match",
@@ -10609,7 +10609,7 @@ A thrilling evening clash is set as Rajasthan Royals go up against Gujarat Titan
   {
     id: 102353,
     name: "CSK vs LSG – IPL 2026 Showdown",
-    slug: "csk-vs-lsg-match-2026",
+    slug: "csk-vs-lsg-53rd-match-indian-premier-league-2026",
     para: "A gripping afternoon encounter as Chennai Super Kings face off against Lucknow Super Giants at Chepauk",
     matchday: " Date : Sunday, May 10",
     matchcount: "Match : 53rd Match",
@@ -10645,7 +10645,7 @@ A gripping afternoon encounter awaits as Chennai Super Kings face off against Lu
   {
     id: 102354,
     name: "RCB vs MI – IPL 2026 Showdown",
-    slug: "rcb-vs-mi-match-2026",
+    slug: "rcb-vs-mi-54th-match-indian-premier-league-2026",
     para: "A blockbuster clash as Royal Challengers Bengaluru go head-to-head with Mumbai Indians in Raipur",
     matchday: " Date : Sunday, May 10",
     matchcount: "Match : 54th Match",
@@ -10681,7 +10681,7 @@ A blockbuster clash is set to take center stage as Royal Challengers Bengaluru g
   {
     id: 102355,
     name: "PBKS vs DC – IPL 2026 Showdown",
-    slug: "pbks-vs-dc-match-2026",
+    slug: "pbks-vs-dc-55th-match-indian-premier-league-2026",
     para: "An exciting evening clash as Punjab Kings take on Delhi Capitals in the scenic heights of Dharamsala",
     matchday: " Date : Monday, May 11",
     matchcount: "Match : 55th Match",
@@ -10716,7 +10716,7 @@ An exciting evening clash is on the cards as Punjab Kings take on Delhi Capitals
   {
     id: 102356,
     name: "GT vs SRH – IPL 2026 Showdown",
-    slug: "gt-vs-srh-match-2026",
+    slug: "gt-vs-srk-56th-match-indian-premier-league-2026",
     para: "A high-energy contest as Gujarat Titans take on Sunrisers Hyderabad in Ahmedabad",
     matchday: " Date : Tuesday, May 12",
     matchcount: "Match : 56th Match",
@@ -10751,7 +10751,7 @@ A high-energy contest is set as Gujarat Titans take on Sunrisers Hyderabad in th
   {
     id: 102357,
     name: "RCB vs KKR – IPL 2026 Showdown",
-    slug: "rcb-vs-kkr-match-2026",
+    slug: "rcb-vs-kkr-57th-match-indian-premier-league-2026",
     para: "A thrilling contest as Royal Challengers Bengaluru take on the all-round strength of Kolkata Knight Riders",
     matchday: " Date : Wednesday, May 13",
     matchcount: "Match : 57th Match",
@@ -10787,7 +10787,7 @@ A thrilling contest is set to unfold as Royal Challengers Bengaluru take on Kolk
   {
     id: 102358,
     name: "PBKS vs MI – IPL 2026 Showdown",
-    slug: "pbks-vs-mi-match-2026",
+    slug: "pbks-vs-mi-58th-match-indian-premier-league-2026",
     para: "An action-packed evening clash as Punjab Kings take on the powerhouse Mumbai Indians in Dharamsala",
     matchday: " Date : Thursday, May 14",
     matchcount: "Match : 58th Match",
@@ -10822,7 +10822,7 @@ An action-packed evening clash is set as Punjab Kings take on Mumbai Indians in 
   {
     id: 102359,
     name: "LSG vs CSK – IPL 2026 Showdown",
-    slug: "lsg-vs-csk-match-2026",
+    slug: "lsg-vs-csk-59th-match-indian-premier-league-2026",
     para: "A high-intensity battle as Lucknow Super Giants face the legendary Chennai Super Kings at Ekana",
     matchday: " Date : Friday, May 15",
     matchcount: "Match : 59th Match",
@@ -10859,7 +10859,7 @@ A high-intensity battle is set to unfold as Lucknow Super Giants face Chennai Su
   {
     id: 102360,
     name: "KKR vs GT – IPL 2026 Showdown",
-    slug: "kkr-vs-gt-match-2026",
+    slug: "kkr-vs-gt-60th-match-indian-premier-league-2026",
     para: "An exciting night game as Kolkata Knight Riders take on Gujarat Titans at the historic Eden Gardens",
     matchday: " Date : Saturday, May 16",
     matchcount: "Match : 60th Match",
@@ -10895,7 +10895,7 @@ An exciting night game is set as Kolkata Knight Riders take on Gujarat Titans in
   {
     id: 102361,
     name: "PBKS vs RCB – IPL 2026 Showdown",
-    slug: "pbks-vs-rcb-match-2026",
+    slug: "pbks-vs-rcb-61st-match-indian-premier-league-2026",
     para: "An exciting afternoon clash as Punjab Kings take on Royal Challengers Bengaluru in the scenic heights of Dharamsala",
     matchday: " Date : Sunday, May 17",
     matchcount: "Match : 61st Match",
@@ -10931,7 +10931,7 @@ An exciting afternoon clash is set to unfold as Punjab Kings take on Royal Chall
   {
     id: 102362,
     name: "DC vs RR – IPL 2026 Showdown",
-    slug: "dc-vs-rr-match-2026",
+    slug: "dc-vs-rr-62nd-match-indian-premier-league-2026",
     para: "An exciting evening encounter as Delhi Capitals take on Rajasthan Royals at the Arun Jaitley Stadium",
     matchday: " Date : Sunday, May 17",
     matchcount: "Match : 62nd Match",
@@ -10966,7 +10966,7 @@ An exciting evening encounter is set as Delhi Capitals take on Rajasthan Royals 
   {
     id: 102363,
     name: "CSK vs SRH – IPL 2026 Showdown",
-    slug: "csk-vs-srh-match-2026",
+    slug: "csk-vs-srh-63rd-match-indian-premier-league-2026",
     para: "An exciting night clash as Chennai Super Kings take on Sunrisers Hyderabad at the fortress Chepauk",
     matchday: " Date : Monday, May 18",
     matchcount: "Match : 63rd Match",
@@ -11002,7 +11002,7 @@ An exciting night clash is set to unfold as Chennai Super Kings take on Sunriser
   {
     id: 102364,
     name: "RR vs LSG – IPL 2026 Showdown",
-    slug: "rr-vs-lsg-match-2026",
+    slug: "rr-vs-lsg-64th-match-indian-premier-league-2026",
     para: "A thrilling contest as Rajasthan Royals go up against Lucknow Super Giants in Jaipur",
     matchday: " Date : Tuesday, May 19",
     matchcount: "Match : 64th Match",
@@ -11038,7 +11038,7 @@ A thrilling contest is set to take place as Rajasthan Royals go up against Luckn
   {
     id: 102365,
     name: "KKR vs MI – IPL 2026 Showdown",
-    slug: "kkr-vs-mi-match-2026",
+    slug: "kkr-vs-mi-65th-match-indian-premier-league-2026",
     para: "A high-voltage encounter as Kolkata Knight Riders clash with Mumbai Indians at the iconic Eden Gardens",
     matchday: " Date : Wednesday, May 20",
     matchcount: "Match : 65th Match",
@@ -11074,7 +11074,7 @@ A high-voltage encounter is set to take place as Kolkata Knight Riders clash wit
   {
     id: 102366,
     name: "GT vs CSK – IPL 2026 Showdown",
-    slug: "gt-vs-csk-match-2026",
+    slug: "gt-vs-csk-66th-match-indian-premier-league-2026",
     para: "A thrilling contest as Gujarat Titans take on the defending champions Chennai Super Kings in Ahmedabad",
     matchday: " Date : Thursday, May 21",
     matchcount: "Match : 66th Match",
@@ -11109,7 +11109,7 @@ A thrilling contest is set to unfold as Gujarat Titans take on Chennai Super Kin
   {
     id: 102367,
     name: "SRH vs RCB – IPL 2026 Showdown",
-    slug: "srh-vs-rcb-match-2026",
+    slug: "srh-vs-rcb-67th-match-indian-premier-league-2026",
     para: "An electrifying contest as Sunrisers Hyderabad take on Royal Challengers Bengaluru at the Rajiv Gandhi International Stadium",
     matchday: " Date : Friday, May 22",
     matchcount: "Match : 67th Match",
@@ -11145,7 +11145,7 @@ An electrifying contest is lined up as Sunrisers Hyderabad take on Royal Challen
   {
     id: 102368,
     name: "LSG vs PBKS – IPL 2026 Showdown",
-    slug: "lsg-vs-pbks-match-2026",
+    slug: "lsg-vs-pbks-68th-match-indian-premier-league-2026",
     para: "An exciting contest as Lucknow Super Giants take on Punjab Kings in a crucial late-season battle at the Ekana Stadium",
     matchday: " Date : Saturday, May 23",
     matchcount: "Match : 68th Match",
@@ -11182,7 +11182,7 @@ An exciting contest is set to unfold as Lucknow Super Giants take on Punjab King
   {
     id: 102369,
     name: "MI vs RR – IPL 2026 Showdown",
-    slug: "mi-vs-rr-match-2026",
+    slug: "mi-vs-rr-69th-match-indian-premier-league-2026",
     para: "An exciting afternoon clash as Mumbai Indians face Rajasthan Royals at the legendary Wankhede Stadium",
     matchday: " Date : Sunday, May 24",
     matchcount: "Match : 69th Match",
@@ -11217,7 +11217,7 @@ An exciting afternoon clash is set to take place as Mumbai Indians face Rajastha
   {
     id: 102370,
     name: "KKR vs DC – IPL 2026 Showdown",
-    slug: "kkr-vs-dc-match-2026",
+    slug: "kkr-vs-dc-70th-match-indian-premier-league-2026",
     para: "A thrilling evening clash as Kolkata Knight Riders take on Delhi Capitals at the iconic Eden Gardens",
     matchday: " Date : Sunday, May 24",
     matchcount: "Match : 70th Match",

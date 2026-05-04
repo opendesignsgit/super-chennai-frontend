@@ -379,7 +379,7 @@
 
   #iplsectionmain .TrendingChennaiSliderContainer {
     border-radius: 10px;
-    width: 360px !important;
+    width: 330px !important;
   }
 
   #iplsectionmain img {
@@ -397,8 +397,10 @@
   }
 
   #iplsectionmain .hbintimg  img {
-    width: 360px !important;
+    width: 330px !important;
   }
+
+
 }
 
 @media (min-width: 200px) and (max-width: 500px) {

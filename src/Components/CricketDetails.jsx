@@ -1773,19 +1773,19 @@ export default function CricketDetails() {
                       />
                     )}
 
-                    {event.hometeam && (
+                    {/* {event.hometeam && (
                       <InfoRow
                         icon="/images/ipl/hometeam.svg"
                         label={event.hometeam}
                       />
-                    )}
+                    )} */}
 
-                    {/* {event.streamingmobile && (
+                    {event.streamingmobile && (
                       <InfoRow
                         icon="/images/ipl/straming.svg"
                         label={event.streamingmobile}
                       />
-                    )} */}
+                    )}
 
                     {event.streamingtv && (
                       <InfoRow

@@ -282,6 +282,10 @@
   font-weight: 700;
 }
 
+#iplpageee .iconsssec img {
+  width: 30px;
+  height: 30px;
+}
 @media (max-width: 1600px) {
   .manifesto {
     bottom: 310px !important;

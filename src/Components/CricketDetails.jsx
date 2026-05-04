@@ -1681,10 +1681,7 @@ export default function CricketDetails() {
 
       <section className="accaodomationBannerSection">
         <div>
-          <img
-            src="/images/ipl/superchennai-bg.jpeg"
-            alt="Banner"
-          />
+          <img src="/images/ipl/superchennai-bg.jpeg" alt="Banner" />
         </div>
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
@@ -1694,7 +1691,7 @@ export default function CricketDetails() {
         </div>
       </section>
 
-      <section className="EventsBanSec SecPadblock12">
+      <section className="EventsBanSec SecPadblock12" id="iplpageee">
         <div className="container max-w-7xl mx-auto">
           <div className="EventContBox flex flex-wrap">
             <div className="EventLeft">
@@ -1720,46 +1717,80 @@ export default function CricketDetails() {
               <div className="evderibox">
                 <div className="evderListbox">
                   <div className="evderViewbox">
-                    {event.TrendingCalendarMonth && (
+                    {event.matchcount && (
                       <InfoRow
-                        icon="/images/events/calendar.png"
-                        label={event.TrendingCalendarMonth}
+                        icon="/images/ipl/date.png"
+                        label={event.matchcount}
                       />
                     )}
-                    {event.TrendingCalendarTime && (
+                    {event.league && (
                       <InfoRow
-                        icon="/images/events/time.png"
-                        label={event.TrendingCalendarTime}
+                        icon="/images/ipl/series.png"
+                        label={event.league}
+                      />
+                    )}
+                    {event.matchday && (
+                      <InfoRow
+                        icon="/images/ipl/date.png"
+                        label={event.matchday}
                       />
                     )}
                     {event.duration && (
                       <InfoRow
-                        icon="/images/events/duration.png"
+                        icon="/images/events/time.png"
                         label={event.duration}
-                      />
-                    )}
-                    {event.ageRestriction && (
-                      <InfoRow
-                        icon="/images/events/age_limit.png"
-                        label={event.ageRestriction}
-                      />
-                    )}
-                    {event.language && (
-                      <InfoRow
-                        icon="/images/events/language.png"
-                        label={event.language}
-                      />
-                    )}
-                    {event.genre && (
-                      <InfoRow
-                        icon="/images/events/genre.png"
-                        label={event.genre}
                       />
                     )}
                     {event.venue && (
                       <InfoRow
-                        icon="/images/events/location.png"
+                        icon="/images/ipl/city.svg"
                         label={event.venue}
+                      />
+                    )}
+                    {/* {event.staidum && (
+                      <InfoRow
+                        icon="/images/ipl/staidum.svg"
+                        label={event.staidum}
+                      />
+                    )} */}
+                    {event.city && (
+                      <InfoRow
+                        icon="/images/ipl/city.svg"
+                        label={event.city}
+                      />
+                    )}
+                    {event.capacity && (
+                      <InfoRow
+                        icon="/images/ipl/crowd.svg"
+                        label={event.capacity}
+                      />
+                    )}
+
+                    {event.ends && (
+                      <InfoRow
+                        icon="/images/ipl/pavilion.svg"
+                        label={event.ends}
+                      />
+                    )}
+
+                    {event.hometeam && (
+                      <InfoRow
+                        icon="/images/ipl/hometeam.svg"
+                        label={event.hometeam}
+                      />
+                    )}
+
+                    {event.streamingmobile && (
+                      <InfoRow
+                        icon="/images/ipl/straming.svg"
+                        label={event.streamingmobile}
+                      />
+                    )}
+
+                    {event.streamingtv && (
+                      <InfoRow
+                        icon="/images/ipl/tv.svg"
+                        label={event.streamingtv}
                       />
                     )}
                   </div>

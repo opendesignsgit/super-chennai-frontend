@@ -901,6 +901,28 @@
   }
 }
 
+.neighstickkkk .searchhoodfilter {
+  position: fixed;
+  top: 195px;
+  width: 100%;
+  z-index: 100000;
+  max-width: 738px;
+}
+
+.neighstickkkk .searchbuttonfilt {
+  position: fixed;
+  top: 199px;
+  width: 150px;
+  z-index: 100000;
+  max-width: 738px;
+  left: 61.25%;
+}
+
+.neighstickkkk .filtersearchnew {
+  max-width: 1216px;
+  display: flex;
+  justify-content: center;
+}
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;

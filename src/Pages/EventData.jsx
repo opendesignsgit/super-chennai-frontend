@@ -10390,181 +10390,865 @@ Focus on quality, flavor, and presentation
 ];
 
 export const iplcontents = [
-  {
-    id: 102345,
-    name: "CSK VS MI",
-    slug: "csk-vs-mi-match",
-    para: "The biggest IPL rivalry returns with electrifying action",
-    TrendingCalendarMonth: "April 2026",
-    TrendingCalendarTime: "Match Day",
-    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
-    image: "/images/ipl/csksport1.jpg",
-    Homeimage: "/images/ipl/iplmatch1.jpg",
-    link: "/link1",
-    duration: "3 Hours",
-    ageRestriction: "Open for All",
-    language: "English | Tamil | Hindi",
-    genre: "Cricket | Sports | Entertainment",
-    venue: "M. A. Chidambaram Stadium, Chennai",
 
+  {
+    id: 102347,
+    name: "MI vs LSG – IPL 2026 Showdown",
+    slug: "mi-vs-lsg-match-2026",
+    para: "The iconic Wankhede showdown: Mumbai Indians take on Lucknow Super Giants",
+    matchday: " Date : Monday, May 04",
+    matchcount: "Match : 47th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk3.jpg",
+    Homeimage: "/images/ipl/imagemob3.jpg",
+    link: "/link3",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Wankhede Stadium, Mumbai",
+    staidum: "Stadium : Wankhede Stadium",
+    city: "City : Mumbai",
+    capacity: "Capacity : 33,000",
+    ends: "Ends : Garware Pavilion End, Tata End",
+    hometeam: "Team: Mumbai Indians",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
     trendingDetails: `
 <p>
-The legendary IPL rivalry between <b>Chennai Super Kings (CSK)</b> and <b>Mumbai Indians (MI)</b> is back, bringing unmatched excitement for cricket fans 🏏🔥
-</p>
-
-<p>
-Hosted at the iconic <b>M. A. Chidambaram Stadium, Chennai</b>, this clash promises thrilling performances, star players, and unforgettable moments under the lights ✨
-</p>
-
-<p>
-<b>✨ Match Highlights:</b>
-</p>
-
-<p>
-• 💛 <b>CSK Power:</b> Backed by the roaring Chennai crowd.<br>
-• 🔵 <b>MI Strength:</b> A team known for big-match dominance.<br>
-• 🎯 <b>Star Players:</b> Top international and Indian cricket icons.<br>
-• 🎉 <b>Fan Energy:</b> A stadium atmosphere like no other.
-</p>
-
-<p>
-Whether you support CSK or MI, this is more than just a game — it’s one of IPL’s most celebrated rivalries and a must-watch sporting spectacle 🚀
+A thrilling face-off is on the cards as the Mumbai Indians go head-to-head with the Lucknow Super Giants in the 47th match of the Indian Premier League 2026. Both sides bring a strong mix of experienced stars and young talent, making this encounter highly competitive. Mumbai will look to capitalize on their home conditions, while Lucknow aims to counter with their dynamic lineup and all-around depth.
 </p>
 `,
-
-    TrendingLink: "https://www.superchennai.com/trending-chennai/csk-vs-mi-match",
+    TrendingLink: "",
     YoutubeLink: "",
-
     meta: {
-      title: "CSK vs MI IPL Match 2026 | Chennai Super Kings Rivalry",
-      desc: "Experience the thrilling CSK vs MI IPL clash at Chepauk, Chennai. Witness one of cricket’s greatest rivalries live in action.",
-      url: "https://www.superchennai.com/trending-chennai/csk-vs-mi-match",
+      title:
+        "MI vs LSG IPL Match 2026 | Mumbai Indians vs Lucknow Super Giants",
+      desc: "Witness the gripping MI vs LSG IPL clash at Wankhede Stadium, Mumbai. Catch the explosive action and high-pressure moments live.",
+      url: "",
     },
   },
 
   {
-    id: -3,
-    name: "Eventide Coffee – Minimalist Café in Chennai",
-    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
-
-    para: "Every Day",
-    TrendingCalendarMonth: "Every Day",
-    TrendingCalendarTime: "",
-    TrendingCalendarCategory: "Desserts",
-    image: "/images/ipl/csksport1.jpg",
-    Homeimage: "/images/ipl/iplmatch2.jpg",
-    link: "/fake-sangeet-2.0",
-    duration: "",
-    ageRestriction: "",
-    language: "",
-    genre: "",
-    venue: "Injambakkam, Chennai ",
+    id: 102348,
+    name: "DC vs CSK – IPL 2026 Showdown",
+    slug: "dc-vs-csk-match-2026",
+    para: "A high-stakes encounter as Delhi Capitals take on the legendary Chennai Super Kings",
+    matchday: " Date : Tuesday, May 05",
+    matchcount: "Match : 48th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk4.jpg",
+    Homeimage: "/images/ipl/imagemob4.jpg",
+    link: "/link4",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Arun Jaitley Stadium, Delhi",
+    staidum: "Stadium : Arun Jaitley Stadium",
+    city: "City : Delhi",
+    capacity: "Capacity : 48,000",
+    ends: "Ends : Stadium End, Pavilion End",
+    hometeam: "Team: Delhi Capitals",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
     trendingDetails: `
-          Eventide Coffee is Chennai’s newest minimalist café, designed for those who love calm, cozy spaces paired with curated coffee experiences. Whether you’re a coffee aficionado or just looking for a peaceful spot to unwind, this café offers carefully selected brews, from rich espresso shots to smooth filter coffees, all served with attention to detail.
-
-The interior reflects a modern, minimalist aesthetic, creating the perfect backdrop for catching up with friends, working remotely, or simply enjoying a quiet moment with a cup of coffee. Each drink is crafted to highlight the unique flavors of the beans, making it a treat for both the eyes and the palate.
-
-✨ Highlights:
-
-Curated coffee selections and specialty brews
-Minimalist, cozy, and Instagrammable interior
-Perfect for relaxing, working, or casual meetups
-Focus on quality, flavor, and presentation
-    `,
-    TrendingLink: "https://maps.app.goo.gl/WJhhy5LzkiW94FNw8 ",
+<p>
+Cricket fans can look forward to a high-stakes encounter as Delhi Capitals take on Chennai Super Kings in the 48th match of the Indian Premier League 2026. Delhi will aim to make the most of their home advantage at the Arun Jaitley Stadium, while Chennai’s experienced core will look to control the game with composure and smart execution. The Delhi pitch often supports high-scoring games, adding to the anticipation of a run-filled clash.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "DC vs CSK IPL Match 2026 | Delhi Capitals vs Chennai Super Kings",
+      desc: "Catch the intense DC vs CSK IPL 2026 battle live from Arun Jaitley Stadium, Delhi. Stay tuned for tactical gameplay and standout performances.",
+      url: "",
+    },
   },
   {
-    id: -3,
-    name: "Eventide Coffee – Minimalist Café in Chennai",
-    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
-
-    para: "Every Day",
-    TrendingCalendarMonth: "Every Day",
-    TrendingCalendarTime: "",
-    TrendingCalendarCategory: "Desserts",
-    image: "/images/ipl/csksport1.jpg",
-    Homeimage: "/images/ipl/iplmatch3.jpg",
-    link: "/fake-sangeet-2.0",
-    duration: "",
-    ageRestriction: "",
-    language: "",
-    genre: "",
-    venue: "Injambakkam, Chennai ",
+    id: 102349,
+    name: "SRH vs PBKS – IPL 2026 Showdown",
+    slug: "srh-vs-pbks-match-2026",
+    para: "An exciting mid-season clash as Sunrisers Hyderabad lock horns with Punjab Kings",
+    matchday: " Date : Wednesday, May 06",
+    matchcount: "Match : 49th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk5.jpg",
+    Homeimage: "/images/ipl/imagemob5.jpg",
+    link: "/link5",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Rajiv Gandhi International Stadium, Hyderabad",
+    staidum: "Stadium : Rajiv Gandhi International Stadium",
+    city: "City : Hyderabad",
+    capacity: "Capacity : 38,000",
+    ends: "Ends : Pavilion End, North End",
+    hometeam: "Team: Sunrisers Hyderabad",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
     trendingDetails: `
-          Eventide Coffee is Chennai’s newest minimalist café, designed for those who love calm, cozy spaces paired with curated coffee experiences. Whether you’re a coffee aficionado or just looking for a peaceful spot to unwind, this café offers carefully selected brews, from rich espresso shots to smooth filter coffees, all served with attention to detail.
-
-The interior reflects a modern, minimalist aesthetic, creating the perfect backdrop for catching up with friends, working remotely, or simply enjoying a quiet moment with a cup of coffee. Each drink is crafted to highlight the unique flavors of the beans, making it a treat for both the eyes and the palate.
-
-✨ Highlights:
-
-Curated coffee selections and specialty brews
-Minimalist, cozy, and Instagrammable interior
-Perfect for relaxing, working, or casual meetups
-Focus on quality, flavor, and presentation
-    `,
-    TrendingLink: "https://maps.app.goo.gl/WJhhy5LzkiW94FNw8 ",
+<p>
+An exciting mid-season clash awaits as Sunrisers Hyderabad lock horns with Punjab Kings in the 49th match of the Indian Premier League 2026. Hyderabad will look to take advantage of familiar home conditions, while Punjab aims to counter with their aggressive approach and depth in both batting and bowling. This fixture promises engaging cricket from the first ball to the last.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "SRH vs PBKS IPL Match 2026 | Sunrisers Hyderabad vs Punjab Kings",
+      desc: "Watch the SRH vs PBKS IPL 2026 showdown live from Hyderabad. Experience a high-scoring encounter filled with power-packed performances.",
+      url: "",
+    },
   },
   {
-    id: -3,
-    name: "Eventide Coffee – Minimalist Café in Chennai",
-    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
-
-    para: "Every Day",
-    TrendingCalendarMonth: "Every Day",
-    TrendingCalendarTime: "",
-    TrendingCalendarCategory: "Desserts",
-    image: "/images/trendingChennai/366.jpg",
-    Homeimage: "/images/trendingChennai/003.jpg",
-    link: "/fake-sangeet-2.0",
-    duration: "",
-    ageRestriction: "",
-    language: "",
-    genre: "",
-    venue: "Injambakkam, Chennai ",
+    id: 102350,
+    name: "LSG vs RCB – IPL 2026 Showdown",
+    slug: "lsg-vs-rcb-match-2026",
+    para: "A high-voltage contest as Lucknow Super Giants take on Royal Challengers Bengaluru",
+    matchday: " Date : Thursday, May 07",
+    matchcount: "Match : 50th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk6.jpg",
+    Homeimage: "/images/ipl/imagemob6.jpg",
+    link: "/link6",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Ekana Cricket Stadium, Lucknow",
+    staidum:
+      "Stadium : Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+    city: "City : Lucknow",
+    capacity: "Capacity : 50,000",
+    ends: "Ends : North End, South End",
+    hometeam: "Team: Lucknow Super Giants",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
     trendingDetails: `
-          Eventide Coffee is Chennai’s newest minimalist café, designed for those who love calm, cozy spaces paired with curated coffee experiences. Whether you’re a coffee aficionado or just looking for a peaceful spot to unwind, this café offers carefully selected brews, from rich espresso shots to smooth filter coffees, all served with attention to detail.
-
-The interior reflects a modern, minimalist aesthetic, creating the perfect backdrop for catching up with friends, working remotely, or simply enjoying a quiet moment with a cup of coffee. Each drink is crafted to highlight the unique flavors of the beans, making it a treat for both the eyes and the palate.
-
-✨ Highlights:
-
-Curated coffee selections and specialty brews
-Minimalist, cozy, and Instagrammable interior
-Perfect for relaxing, working, or casual meetups
-Focus on quality, flavor, and presentation
-    `,
-    TrendingLink: "https://maps.app.goo.gl/WJhhy5LzkiW94FNw8 ",
+<p>
+A high-voltage contest is set to unfold as Lucknow Super Giants take on Royal Challengers Bengaluru in the 50th match of the Indian Premier League 2026. Lucknow will aim to make full use of their home conditions, while Bengaluru will look to dominate with their experienced core and power-packed lineup. The Ekana Stadium surface can test both batters and bowlers, adding an extra layer of strategy to this encounter.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "LSG vs RCB IPL Match 2026 | Lucknow Super Giants vs Royal Challengers Bengaluru",
+      desc: "Catch the LSG vs RCB IPL 2026 showdown live from Lucknow. Experience a competitive clash filled with big hits and game-changing spells.",
+      url: "",
+    },
   },
   {
-    id: -3,
-    name: "Eventide Coffee – Minimalist Café in Chennai",
-    slug: "RAINDROP PUDDING – Unique & Minimalist Dessert!",
-
-    para: "Every Day",
-    TrendingCalendarMonth: "Every Day",
-    TrendingCalendarTime: "",
-    TrendingCalendarCategory: "Desserts",
-    image: "/images/trendingChennai/366.jpg",
-    Homeimage: "/images/trendingChennai/003.jpg",
-    link: "/fake-sangeet-2.0",
-    duration: "",
-    ageRestriction: "",
-    language: "",
-    genre: "",
-    venue: "Injambakkam, Chennai ",
+    id: 102351,
+    name: "DC vs KKR – IPL 2026 Showdown",
+    slug: "dc-vs-kkr-match-2026",
+    para: "An exciting contest as Delhi Capitals take on the all-round strength of Kolkata Knight Riders",
+    matchday: " Date : Friday, May 08",
+    matchcount: "Match : 51st Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk7.jpg",
+    Homeimage: "/images/ipl/imagemob7.jpg",
+    link: "/link7",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Arun Jaitley Stadium, Delhi",
+    staidum: "Stadium : Arun Jaitley Stadium",
+    city: "City : Delhi",
+    capacity: "Capacity : 48,000",
+    ends: "Ends : Stadium End, Pavilion End",
+    hometeam: "Team: Delhi Capitals",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
     trendingDetails: `
-          Eventide Coffee is Chennai’s newest minimalist café, designed for those who love calm, cozy spaces paired with curated coffee experiences. Whether you’re a coffee aficionado or just looking for a peaceful spot to unwind, this café offers carefully selected brews, from rich espresso shots to smooth filter coffees, all served with attention to detail.
-
-The interior reflects a modern, minimalist aesthetic, creating the perfect backdrop for catching up with friends, working remotely, or simply enjoying a quiet moment with a cup of coffee. Each drink is crafted to highlight the unique flavors of the beans, making it a treat for both the eyes and the palate.
-
-✨ Highlights:
-
-Curated coffee selections and specialty brews
-Minimalist, cozy, and Instagrammable interior
-Perfect for relaxing, working, or casual meetups
-Focus on quality, flavor, and presentation
-    `,
-    TrendingLink: "https://maps.app.goo.gl/WJhhy5LzkiW94FNw8 ",
+<p>
+An exciting contest is lined up as Delhi Capitals take on Kolkata Knight Riders in the 51st match of the Indian Premier League 2026. Delhi will aim to make the most of their home conditions, while Kolkata will look to counter with their all-round strength and match-winning performers. The Delhi pitch often favors high-scoring encounters, making it ideal for big hitters and aggressive gameplay.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "DC vs KKR IPL Match 2026 | Delhi Capitals vs Kolkata Knight Riders",
+      desc: "Watch the DC vs KKR IPL 2026 clash live from Arun Jaitley Stadium. Expect a fast-paced game with attacking intent and high-scoring action.",
+      url: "",
+    },
+  },
+  {
+    id: 102352,
+    name: "RR vs GT – IPL 2026 Showdown",
+    slug: "rr-vs-gt-match-2026",
+    para: "A thrilling evening clash as Rajasthan Royals go up against Gujarat Titans in Jaipur",
+    matchday: " Date : Saturday, May 09",
+    matchcount: "Match : 52nd Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk8.jpg",
+    Homeimage: "/images/ipl/imagemob8.jpg",
+    link: "/link8",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Sawai Mansingh Stadium, Jaipur",
+    staidum: "Stadium : Sawai Mansingh Stadium",
+    city: "City : Jaipur",
+    capacity: "Capacity : 30,000",
+    ends: "Ends : City End, Pavilion End",
+    hometeam: "Team: Rajasthan Royals",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A thrilling evening clash is set as Rajasthan Royals go up against Gujarat Titans in the 52nd match of the Indian Premier League 2026. Rajasthan will look to make the most of their home advantage in Jaipur, while Gujarat aims to dominate with their depth and consistency across departments. The Jaipur surface often provides a balanced contest between bat and ball, adding to the excitement of this encounter.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "RR vs GT IPL Match 2026 | Rajasthan Royals vs Gujarat Titans",
+      desc: "Experience the RR vs GT IPL 2026 showdown live from Sawai Mansingh Stadium, Jaipur. A competitive fixture filled with big hits and momentum shifts.",
+      url: "",
+    },
+  },
+  {
+    id: 102353,
+    name: "CSK vs LSG – IPL 2026 Showdown",
+    slug: "csk-vs-lsg-match-2026",
+    para: "A gripping afternoon encounter as Chennai Super Kings face off against Lucknow Super Giants at Chepauk",
+    matchday: " Date : Sunday, May 10",
+    matchcount: "Match : 53rd Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk9.jpg",
+    Homeimage: "/images/ipl/imagemob9.jpg",
+    link: "/link9",
+    duration: "Time : 3:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : MA Chidambaram Stadium, Chennai",
+    staidum: "Stadium : MA Chidambaram Stadium",
+    city: "City : Chennai",
+    capacity: "Capacity : 50,000",
+    ends: "Ends : Anna Pavilion End, V Pattabhiraman Gate End",
+    hometeam: "Team: Chennai Super Kings",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A gripping afternoon encounter awaits as Chennai Super Kings face off against Lucknow Super Giants in the 53rd match of the Indian Premier League 2026. Chennai will aim to take advantage of their home conditions at Chepauk, while Lucknow will look to counter with their balanced squad and all-round capabilities. This fixture promises competitive and entertaining cricket, especially on a surface that often supports spin.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "CSK vs LSG IPL Match 2026 | Chennai Super Kings vs Lucknow Super Giants",
+      desc: "Watch the CSK vs LSG IPL 2026 clash live from MA Chidambaram Stadium, Chennai. Experience a strategic battle filled with pressure moments and impactful performances.",
+      url: "",
+    },
+  },
+  {
+    id: 102354,
+    name: "RCB vs MI – IPL 2026 Showdown",
+    slug: "rcb-vs-mi-match-2026",
+    para: "A blockbuster clash as Royal Challengers Bengaluru go head-to-head with Mumbai Indians in Raipur",
+    matchday: " Date : Sunday, May 10",
+    matchcount: "Match : 54th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk10.jpg",
+    Homeimage: "/images/ipl/imagemob10.jpg",
+    link: "/link10",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Shaheed Veer Narayan Singh International Stadium, Raipur",
+    staidum: "Stadium : Shaheed Veer Narayan Singh International Stadium",
+    city: "City : Raipur",
+    capacity: "Capacity : 65,000",
+    ends: "Ends : North End, South End",
+    hometeam: "Team: Royal Challengers Bengaluru",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A blockbuster clash is set to take center stage as Royal Challengers Bengaluru go head-to-head with Mumbai Indians in the 54th match of the Indian Premier League 2026. This encounter promises a high-scoring contest with aggressive stroke play and quick momentum shifts. The Raipur venue is known to support entertaining games, adding to the excitement of this high-profile fixture between two of the league's most popular franchises.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "RCB vs MI IPL Match 2026 | Royal Challengers Bengaluru vs Mumbai Indians",
+      desc: "Witness the RCB vs MI IPL 2026 blockbuster live from Raipur. Catch the explosive batting and game-changing performances in this intense rivalry.",
+      url: "",
+    },
+  },
+  {
+    id: 102355,
+    name: "PBKS vs DC – IPL 2026 Showdown",
+    slug: "pbks-vs-dc-match-2026",
+    para: "An exciting evening clash as Punjab Kings take on Delhi Capitals in the scenic heights of Dharamsala",
+    matchday: " Date : Monday, May 11",
+    matchcount: "Match : 55th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk11.jpg",
+    Homeimage: "/images/ipl/imagemob11.jpg",
+    link: "/link11",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : HPCA Stadium, Dharamsala",
+    staidum: "Stadium : Himachal Pradesh Cricket Association Stadium",
+    city: "City : Dharamsala",
+    capacity: "Capacity : 23,000",
+    ends: "Ends : River End, College End",
+    hometeam: "Team: Punjab Kings",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+An exciting evening clash is on the cards as Punjab Kings take on Delhi Capitals in the 55th match of the Indian Premier League 2026. Punjab will aim to capitalize on their home conditions in Dharamsala, while Delhi will look to challenge with their balanced squad and tactical approach. The Dharamsala pitch, known for its pace-friendly conditions, could assist bowlers early while still allowing batters to play their shots freely.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "PBKS vs DC IPL Match 2026 | Punjab Kings vs Delhi Capitals",
+      desc: "Catch the PBKS vs DC IPL 2026 action live from Dharamsala. Witness a fast-paced game with attacking stroke play and key breakthroughs in pace-friendly conditions.",
+      url: "",
+    },
+  },
+  {
+    id: 102356,
+    name: "GT vs SRH – IPL 2026 Showdown",
+    slug: "gt-vs-srh-match-2026",
+    para: "A high-energy contest as Gujarat Titans take on Sunrisers Hyderabad in Ahmedabad",
+    matchday: " Date : Tuesday, May 12",
+    matchcount: "Match : 56th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk12.jpg",
+    Homeimage: "/images/ipl/imagemob12.jpg",
+    link: "/link12",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Narendra Modi Stadium, Ahmedabad",
+    staidum: "Stadium : Narendra Modi Stadium",
+    city: "City : Ahmedabad",
+    capacity: "Capacity : 1,32,000",
+    ends: "Ends : Adani Pavilion End, Jio End",
+    hometeam: "Team: Gujarat Titans",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A high-energy contest is set as Gujarat Titans take on Sunrisers Hyderabad in the 56th match of the Indian Premier League 2026. Gujarat will aim to make full use of their home advantage in Ahmedabad, while Hyderabad will look to counter with their aggressive approach and balanced lineup. The Ahmedabad surface is known for producing high-scoring games, making it ideal for power hitters and big totals.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "GT vs SRH IPL Match 2026 | Gujarat Titans vs Sunrisers Hyderabad",
+      desc: "Watch the GT vs SRH IPL 2026 match live from Narendra Modi Stadium, Ahmedabad. Expect a thrilling contest filled with momentum shifts and big hits.",
+      url: "",
+    },
+  },
+  {
+    id: 102357,
+    name: "RCB vs KKR – IPL 2026 Showdown",
+    slug: "rcb-vs-kkr-match-2026",
+    para: "A thrilling contest as Royal Challengers Bengaluru take on the all-round strength of Kolkata Knight Riders",
+    matchday: " Date : Wednesday, May 13",
+    matchcount: "Match : 57th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk13.jpg",
+    Homeimage: "/images/ipl/imagemob13.jpg",
+    link: "/link13",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Shaheed Veer Narayan Singh International Stadium, Raipur",
+    staidum: "Stadium : Shaheed Veer Narayan Singh International Stadium",
+    city: "City : Raipur",
+    capacity: "Capacity : 65,000",
+    ends: "Ends : North End, South End",
+    hometeam: "Team: Royal Challengers Bengaluru",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A thrilling contest is set to unfold as Royal Challengers Bengaluru take on Kolkata Knight Riders in the 57th match of the Indian Premier League 2026. Bengaluru will look to dominate with their strong top order, while Kolkata will aim to respond with their all-round strength and tactical gameplay. The Raipur venue often supports entertaining contests, adding to the anticipation of a closely fought battle.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "RCB vs KKR IPL Match 2026 | Royal Challengers Bengaluru vs Kolkata Knight Riders",
+      desc: "Watch the RCB vs KKR IPL 2026 clash live from Raipur. Experience a high-intensity game filled with aggressive stroke play and crucial breakthroughs.",
+      url: "",
+    },
+  },
+  {
+    id: 102358,
+    name: "PBKS vs MI – IPL 2026 Showdown",
+    slug: "pbks-vs-mi-match-2026",
+    para: "An action-packed evening clash as Punjab Kings take on the powerhouse Mumbai Indians in Dharamsala",
+    matchday: " Date : Thursday, May 14",
+    matchcount: "Match : 58th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk14.jpg",
+    Homeimage: "/images/ipl/imagemob14.jpg",
+    link: "/link14",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : HPCA Stadium, Dharamsala",
+    staidum: "Stadium : Himachal Pradesh Cricket Association Stadium",
+    city: "City : Dharamsala",
+    capacity: "Capacity : 23,000",
+    ends: "Ends : River End, College End",
+    hometeam: "Team: Punjab Kings",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+An action-packed evening clash is set as Punjab Kings take on Mumbai Indians in the 58th match of the Indian Premier League 2026. Punjab will aim to make the most of their home advantage in Dharamsala, while Mumbai will look to dominate with their depth and proven match-winners. The Dharamsala pitch often offers assistance to pace bowlers early on, while still allowing batters to score freely once settled.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "PBKS vs MI IPL Match 2026 | Punjab Kings vs Mumbai Indians",
+      desc: "Catch the PBKS vs MI IPL 2026 thriller live from Dharamsala. Watch explosive batting and wicket-taking spells in the scenic HPCA stadium.",
+      url: "",
+    },
+  },
+  {
+    id: 102359,
+    name: "LSG vs CSK – IPL 2026 Showdown",
+    slug: "lsg-vs-csk-match-2026",
+    para: "A high-intensity battle as Lucknow Super Giants face the legendary Chennai Super Kings at Ekana",
+    matchday: " Date : Friday, May 15",
+    matchcount: "Match : 59th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk15.jpg",
+    Homeimage: "/images/ipl/imagemob15.jpg",
+    link: "/link15",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Ekana Cricket Stadium, Lucknow",
+    staidum:
+      "Stadium : Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+    city: "City : Lucknow",
+    capacity: "Capacity : 50,000",
+    ends: "Ends : North End, South End",
+    hometeam: "Team: Lucknow Super Giants",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A high-intensity battle is set to unfold as Lucknow Super Giants face Chennai Super Kings in the 59th match of the Indian Premier League 2026. Lucknow will look to make the most of their home conditions, while Chennai will aim to counter with their calm approach and well-balanced squad. The Lucknow surface often offers a balanced contest, making both batters and bowlers equally important in shaping the outcome.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "LSG vs CSK IPL Match 2026 | Lucknow Super Giants vs Chennai Super Kings",
+      desc: "Watch the LSG vs CSK IPL 2026 showdown live from Ekana Stadium, Lucknow. Expect aggressive batting and smart bowling strategies in this gripping contest.",
+      url: "",
+    },
+  },
+  {
+    id: 102360,
+    name: "KKR vs GT – IPL 2026 Showdown",
+    slug: "kkr-vs-gt-match-2026",
+    para: "An exciting night game as Kolkata Knight Riders take on Gujarat Titans at the historic Eden Gardens",
+    matchday: " Date : Saturday, May 16",
+    matchcount: "Match : 60th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk16.jpg",
+    Homeimage: "/images/ipl/imagemob16.jpg",
+    link: "/link16",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Eden Gardens, Kolkata",
+    staidum: "Stadium : Eden Gardens",
+    city: "City : Kolkata",
+    capacity: "Capacity : 63,000",
+    ends: "Ends : High Court End, Pavilion End",
+    hometeam: "Team: Kolkata Knight Riders",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+An exciting night game is set as Kolkata Knight Riders take on Gujarat Titans in the 60th match of the Indian Premier League 2026. Kolkata will aim to capitalize on their home conditions at Eden Gardens, while Gujarat will look to dominate with their balanced lineup and match-winning players. Eden Gardens is known for producing high-scoring encounters, making it a perfect stage for big hitters to shine.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "KKR vs GT IPL Match 2026 | Kolkata Knight Riders vs Gujarat Titans",
+      desc: "Watch the KKR vs GT IPL 2026 clash live from Eden Gardens, Kolkata. Expect an entertaining contest with aggressive stroke play and game-changing performances.",
+      url: "",
+    },
+  },
+  {
+    id: 102361,
+    name: "PBKS vs RCB – IPL 2026 Showdown",
+    slug: "pbks-vs-rcb-match-2026",
+    para: "An exciting afternoon clash as Punjab Kings take on Royal Challengers Bengaluru in the scenic heights of Dharamsala",
+    matchday: " Date : Sunday, May 17",
+    matchcount: "Match : 61st Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk17.jpg",
+    Homeimage: "/images/ipl/imagemob17.jpg",
+    link: "/link17",
+    duration: "Time : 3:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : HPCA Stadium, Dharamsala",
+    staidum: "Stadium : Himachal Pradesh Cricket Association Stadium",
+    city: "City : Dharamsala",
+    capacity: "Capacity : 23,000",
+    ends: "Ends : River End, College End",
+    hometeam: "Team: Punjab Kings",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+An exciting afternoon clash is set to unfold as Punjab Kings take on Royal Challengers Bengaluru in the 61st match of the Indian Premier League 2026. Punjab will look to take advantage of their home conditions in Dharamsala, while Bengaluru will aim to counter with their experienced players and strong squad depth. The Dharamsala pitch, often assisting pace bowlers early, can still provide good value for batters as the game progresses.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "PBKS vs RCB IPL Match 2026 | Punjab Kings vs Royal Challengers Bengaluru",
+      desc: "Catch the PBKS vs RCB IPL 2026 afternoon thriller live from Dharamsala. Watch explosive batting and pace-friendly bowling action at the HPCA stadium.",
+      url: "",
+    },
+  },
+  {
+    id: 102362,
+    name: "DC vs RR – IPL 2026 Showdown",
+    slug: "dc-vs-rr-match-2026",
+    para: "An exciting evening encounter as Delhi Capitals take on Rajasthan Royals at the Arun Jaitley Stadium",
+    matchday: " Date : Sunday, May 17",
+    matchcount: "Match : 62nd Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk18.jpg",
+    Homeimage: "/images/ipl/imagemob18.jpg",
+    link: "/link18",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Arun Jaitley Stadium, Delhi",
+    staidum: "Stadium : Arun Jaitley Stadium",
+    city: "City : Delhi",
+    capacity: "Capacity : 48,000",
+    ends: "Ends : Stadium End, Pavilion End",
+    hometeam: "Team: Delhi Capitals",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+An exciting evening encounter is set as Delhi Capitals take on Rajasthan Royals in the 62nd match of the Indian Premier League 2026. Delhi will aim to make the most of their home conditions, while Rajasthan will look to challenge with their balanced squad and aggressive approach. The Delhi surface often supports high-scoring matches, making it a great stage for big hitters and competitive totals.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "DC vs RR IPL Match 2026 | Delhi Capitals vs Rajasthan Royals",
+      desc: "Watch the DC vs RR IPL 2026 clash live from Delhi. Experience an engaging game filled with momentum shifts and high-scoring action at Arun Jaitley Stadium.",
+      url: "",
+    },
+  },
+  {
+    id: 102363,
+    name: "CSK vs SRH – IPL 2026 Showdown",
+    slug: "csk-vs-srh-match-2026",
+    para: "An exciting night clash as Chennai Super Kings take on Sunrisers Hyderabad at the fortress Chepauk",
+    matchday: " Date : Monday, May 18",
+    matchcount: "Match : 63rd Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk19.jpg",
+    Homeimage: "/images/ipl/imagemob19.jpg",
+    link: "/link19",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : MA Chidambaram Stadium, Chennai",
+    staidum: "Stadium : MA Chidambaram Stadium",
+    city: "City : Chennai",
+    capacity: "Capacity : 50,000",
+    ends: "Ends : Anna Pavilion End, V Pattabhiraman Gate End",
+    hometeam: "Team: Chennai Super Kings",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+An exciting night clash is set to unfold as Chennai Super Kings take on Sunrisers Hyderabad in the 63rd match of the Indian Premier League 2026. Chennai will look to make full use of their home advantage at Chepauk, while Hyderabad will aim to counter with their aggressive batting and versatile bowling attack. This match is expected to offer a strategic contest, especially on a surface that often supports spin and controlled gameplay.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "CSK vs SRH IPL Match 2026 | Chennai Super Kings vs Sunrisers Hyderabad",
+      desc: "Watch the CSK vs SRH IPL 2026 night clash live from Chepauk. Experience a strategic battle filled with spin-bowling masterclasses and tactical brilliance.",
+      url: "",
+    },
+  },
+  {
+    id: 102364,
+    name: "RR vs LSG – IPL 2026 Showdown",
+    slug: "rr-vs-lsg-match-2026",
+    para: "A thrilling contest as Rajasthan Royals go up against Lucknow Super Giants in Jaipur",
+    matchday: " Date : Tuesday, May 19",
+    matchcount: "Match : 64th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk20.jpg",
+    Homeimage: "/images/ipl/imagemob20.jpg",
+    link: "/link20",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Sawai Mansingh Stadium, Jaipur",
+    staidum: "Stadium : Sawai Mansingh Stadium",
+    city: "City : Jaipur",
+    capacity: "Capacity : 30,000",
+    ends: "Ends : City End, Pavilion End",
+    hometeam: "Team: Rajasthan Royals",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A thrilling contest is set to take place as Rajasthan Royals go up against Lucknow Super Giants in the 64th match of the Indian Premier League 2026. Rajasthan will aim to make the most of their home advantage in Jaipur, while Lucknow will look to challenge with their depth and versatile lineup. The Jaipur pitch generally offers a balanced surface, making it a competitive contest between bat and ball.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "RR vs LSG IPL Match 2026 | Rajasthan Royals vs Lucknow Super Giants",
+      desc: "Experience the RR vs LSG IPL 2026 showdown live from Sawai Mansingh Stadium, Jaipur. A high-energy clash filled with momentum swings and match-defining moments.",
+      url: "",
+    },
+  },
+  {
+    id: 102365,
+    name: "KKR vs MI – IPL 2026 Showdown",
+    slug: "kkr-vs-mi-match-2026",
+    para: "A high-voltage encounter as Kolkata Knight Riders clash with Mumbai Indians at the iconic Eden Gardens",
+    matchday: " Date : Wednesday, May 20",
+    matchcount: "Match : 65th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk21.jpg",
+    Homeimage: "/images/ipl/imagemob21.jpg",
+    link: "/link21",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Eden Gardens, Kolkata",
+    staidum: "Stadium : Eden Gardens",
+    city: "City : Kolkata",
+    capacity: "Capacity : 63,000",
+    ends: "Ends : High Court End, Pavilion End",
+    hometeam: "Team: Kolkata Knight Riders",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A high-voltage encounter is set to take place as Kolkata Knight Riders clash with Mumbai Indians in the 65th match of the Indian Premier League 2026. Kolkata will aim to dominate on their home ground, while Mumbai will look to counter with their strong lineup and match-winning players. Eden Gardens is known for producing high-scoring games, making it a perfect stage for big hitters to shine.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "KKR vs MI IPL Match 2026 | Kolkata Knight Riders vs Mumbai Indians",
+      desc: "Watch the KKR vs MI IPL 2026 showdown live from Eden Gardens, Kolkata. Expect an action-packed contest with aggressive stroke play and match-defining performances.",
+      url: "",
+    },
+  },
+  {
+    id: 102366,
+    name: "GT vs CSK – IPL 2026 Showdown",
+    slug: "gt-vs-csk-match-2026",
+    para: "A thrilling contest as Gujarat Titans take on the defending champions Chennai Super Kings in Ahmedabad",
+    matchday: " Date : Thursday, May 21",
+    matchcount: "Match : 66th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk22.jpg",
+    Homeimage: "/images/ipl/imagemob22.jpg",
+    link: "/link22",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Narendra Modi Stadium, Ahmedabad",
+    staidum: "Stadium : Narendra Modi Stadium",
+    city: "City : Ahmedabad",
+    capacity: "Capacity : 1,32,000",
+    ends: "Ends : Adani Pavilion End, GMDC End",
+    hometeam: "Team: Gujarat Titans",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A thrilling contest is set to unfold as Gujarat Titans take on Chennai Super Kings in the 66th match of the Indian Premier League 2026. Gujarat will look to capitalize on their home conditions in Ahmedabad, while Chennai will aim to counter with their experience and strategic gameplay. The Ahmedabad pitch is known for favoring batters, making it ideal for big totals and aggressive stroke play.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "GT vs CSK IPL Match 2026 | Gujarat Titans vs Chennai Super Kings",
+      desc: "Watch the GT vs CSK IPL 2026 match live from Narendra Modi Stadium, Ahmedabad. Witness a high-scoring encounter with explosive batting and strategic masterclasses.",
+      url: "",
+    },
+  },
+  {
+    id: 102367,
+    name: "SRH vs RCB – IPL 2026 Showdown",
+    slug: "srh-vs-rcb-match-2026",
+    para: "An electrifying contest as Sunrisers Hyderabad take on Royal Challengers Bengaluru at the Rajiv Gandhi International Stadium",
+    matchday: " Date : Friday, May 22",
+    matchcount: "Match : 67th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk23.jpg",
+    Homeimage: "/images/ipl/imagemob23.jpg",
+    link: "/link23",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Rajiv Gandhi International Stadium, Hyderabad",
+    staidum: "Stadium : Rajiv Gandhi International Stadium",
+    city: "City : Hyderabad",
+    capacity: "Capacity : 38,000",
+    ends: "Ends : Pavilion End, North End",
+    hometeam: "Team: Sunrisers Hyderabad",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+An electrifying contest is lined up as Sunrisers Hyderabad take on Royal Challengers Bengaluru in the 67th match of the Indian Premier League 2026. Hyderabad will look to make the most of their home conditions, while Bengaluru will aim to dominate with their experienced lineup and match-winning players. The Hyderabad pitch often supports stroke play, making it ideal for batters to play freely and set up a high-scoring encounter.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "SRH vs RCB IPL Match 2026 | Sunrisers Hyderabad vs Royal Challengers Bengaluru",
+      desc: "Watch the SRH vs RCB IPL 2026 clash live from Hyderabad. Experience an electrifying battle with explosive batting and game-changing bowling spells.",
+      url: "",
+    },
+  },
+  {
+    id: 102368,
+    name: "LSG vs PBKS – IPL 2026 Showdown",
+    slug: "lsg-vs-pbks-match-2026",
+    para: "An exciting contest as Lucknow Super Giants take on Punjab Kings in a crucial late-season battle at the Ekana Stadium",
+    matchday: " Date : Saturday, May 23",
+    matchcount: "Match : 68th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk24.jpg",
+    Homeimage: "/images/ipl/imagemob24.jpg",
+    link: "/link24",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Ekana Cricket Stadium, Lucknow",
+    staidum:
+      "Stadium : Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+    city: "City : Lucknow",
+    capacity: "Capacity : 50,000",
+    ends: "Ends : North End, South End",
+    hometeam: "Team: Lucknow Super Giants",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+An exciting contest is set to unfold as Lucknow Super Giants take on Punjab Kings in the 68th match of the Indian Premier League 2026. Lucknow will aim to make full use of their home conditions, while Punjab will look to counter with their aggressive style and balanced squad. The Ekana Stadium surface often offers a balanced contest, making both batters and bowlers equally important in shaping the outcome of this high-stakes fixture.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "LSG vs PBKS IPL Match 2026 | Lucknow Super Giants vs Punjab Kings",
+      desc: "Watch the LSG vs PBKS IPL 2026 showdown live from Ekana Stadium, Lucknow. Expect a thrilling clash with momentum shifts and impactful performances.",
+      url: "",
+    },
+  },
+  {
+    id: 102369,
+    name: "MI vs RR – IPL 2026 Showdown",
+    slug: "mi-vs-rr-match-2026",
+    para: "An exciting afternoon clash as Mumbai Indians face Rajasthan Royals at the legendary Wankhede Stadium",
+    matchday: " Date : Sunday, May 24",
+    matchcount: "Match : 69th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk25.jpg",
+    Homeimage: "/images/ipl/imagemob25.jpg",
+    link: "/link25",
+    duration: "Time : 3:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Wankhede Stadium, Mumbai",
+    staidum: "Stadium : Wankhede Stadium",
+    city: "City : Mumbai",
+    capacity: "Capacity : 33,000",
+    ends: "Ends : Garware Pavilion End, Tata End",
+    hometeam: "Team: Mumbai Indians",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+An exciting afternoon clash is set to take place as Mumbai Indians face Rajasthan Royals in the 69th match of the Indian Premier League 2026. Mumbai will look to take full advantage of their home conditions, while Rajasthan will aim to challenge with their aggressive gameplay and well-balanced squad. The Wankhede surface is known to favor batters, making it ideal for big scores and entertaining cricket.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title: "MI vs RR IPL Match 2026 | Mumbai Indians vs Rajasthan Royals",
+      desc: "Catch the MI vs RR IPL 2026 afternoon thriller live from Wankhede Stadium. Experience a high-scoring contest with explosive batting and match-winning performances.",
+      url: "",
+    },
+  },
+  {
+    id: 102370,
+    name: "KKR vs DC – IPL 2026 Showdown",
+    slug: "kkr-vs-dc-match-2026",
+    para: "A thrilling evening clash as Kolkata Knight Riders take on Delhi Capitals at the iconic Eden Gardens",
+    matchday: " Date : Sunday, May 24",
+    matchcount: "Match : 70th Match",
+    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+    image: "/images/ipl/imagedesk26.jpg",
+    Homeimage: "/images/ipl/imagemob26.jpg",
+    link: "/link26",
+    duration: "Time : 7:30 PM",
+    league: "Series: Indian Premier League 2026",
+    genre: "Cricket | Sports | Entertainment",
+    venue: "Venue : Eden Gardens, Kolkata",
+    staidum: "Stadium : Eden Gardens",
+    city: "City : Kolkata",
+    capacity: "Capacity : 63,000",
+    ends: "Ends : High Court End, Pavilion End",
+    hometeam: "Team: Kolkata Knight Riders",
+    streamingmobile: " Streaming: JioHotstar",
+    streamingtv: "TV: Star Sports Network",
+    trendingDetails: `
+<p>
+A thrilling evening clash is set to unfold as Kolkata Knight Riders take on Delhi Capitals in the 70th match of the Indian Premier League 2026. Kolkata will look to maximize their home advantage at Eden Gardens, while Delhi will aim to counter with their balanced lineup and tactical approach. Eden Gardens is well known for high-scoring encounters, making it an ideal venue for big hitters and fast-paced cricket.
+</p>
+`,
+    TrendingLink: "",
+    YoutubeLink: "",
+    meta: {
+      title:
+        "KKR vs DC IPL Match 2026 | Kolkata Knight Riders vs Delhi Capitals",
+      desc: "Watch the KKR vs DC IPL 2026 showdown live from Eden Gardens. Experience an action-packed contest with aggressive stroke play and crucial breakthroughs.",
+      url: "",
+    },
   },
 ];
 

@@ -1705,7 +1705,7 @@ export default function CricketDetails() {
                 </div>
               </div>
               <div className="EventContBox mb-[5vh]">
-                <h3>About The Trending</h3>
+                <h1 className="mb-10">Team Highlights </h1>
                 <div
                   className="event-description"
                   dangerouslySetInnerHTML={{ __html: event.trendingDetails }}

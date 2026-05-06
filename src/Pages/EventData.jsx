@@ -10395,7 +10395,7 @@ export const iplcontents = [
     id: 102347,
     name: "MI vs LSG – IPL 2026 Showdown",
     slug: "mi-vs-lsg-47th-match-indian-premier-league-2026",
-    para: "The iconic Wankhede showdown: Mumbai Indians take on Lucknow Super Giants",
+    para: "Mumbai Indians have entertained fans throughout IPL 2026 with explosive batting starts, fearless attacking cricket and thrilling high-scoring victories.",
     matchday: " Date : Monday, May 04",
     matchcount: "Match : 47th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10413,9 +10413,21 @@ export const iplcontents = [
     hometeam: "Team: Mumbai Indians",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
+    trendingDetailsSpecial:"",
     trendingDetails: `
+    <h3>Lucknow Super Giants</h3>
+    <p>
+LSG have focused on tactical and disciplined cricket throughout IPL 2026 with balanced performances in both batting and bowling departments. Lucknow controlled middle overs effectively while building partnerships patiently before accelerating during death overs in pressure situations. Captain Rishabh Pant has handled the team aggressively through bold bowling changes, fearless batting intent and smart tactical awareness during close matches. LSG’s calm gameplay and disciplined execution helped them stay competitive throughout the season.
+
+</p>
+
+ <h3>Mumbai Indians</h3>
+
+
+
 <p>
-A thrilling face-off is on the cards as the Mumbai Indians go head-to-head with the Lucknow Super Giants in the 47th match of the Indian Premier League 2026. Both sides bring a strong mix of experienced stars and young talent, making this encounter highly competitive. Mumbai will look to capitalize on their home conditions, while Lucknow aims to counter with their dynamic lineup and all-around depth.
+Mumbai Indians have entertained fans throughout IPL 2026 with explosive batting starts, fearless attacking cricket and thrilling high-scoring victories. MI constantly dominated powerplays through aggressive intent while their finishers delivered powerful performances in pressure situations. Captain Hardik Pandya has led aggressively by maintaining attacking momentum, trusting young players and handling bowlers smartly during crucial overs. Mumbai’s explosive gameplay and fearless approach continue to make them one of the most exciting teams this season.
+
 </p>
 `,
     TrendingLink: "",
@@ -10428,11 +10440,13 @@ A thrilling face-off is on the cards as the Mumbai Indians go head-to-head with 
     },
   },
 
+
+
   {
     id: 102348,
     name: "DC vs CSK – IPL 2026 Showdown",
     slug: "dc-vs-csk-48th-match-indian-premier-league-2026",
-    para: "A high-stakes encounter as Delhi Capitals take on the legendary Chennai Super Kings",
+    para: "Delhi Capitals have shown aggressive and energetic cricket throughout IPL 2026 with fearless batting starts and improved bowling combinations",
     matchday: " Date : Tuesday, May 05",
     matchcount: "Match : 48th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10451,8 +10465,16 @@ A thrilling face-off is on the cards as the Mumbai Indians go head-to-head with 
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3>Delhi Capitals</h3>
 <p>
-Cricket fans can look forward to a high-stakes encounter as Delhi Capitals take on Chennai Super Kings in the 48th match of the Indian Premier League 2026. Delhi will aim to make the most of their home advantage at the Arun Jaitley Stadium, while Chennai’s experienced core will look to control the game with composure and smart execution. The Delhi pitch often supports high-scoring games, adding to the anticipation of a run-filled clash.
+Delhi Capitals have shown aggressive and energetic cricket throughout IPL 2026 with fearless batting starts and improved bowling combinations. DC focused on taking early momentum during powerplays while maintaining pressure through sharp fielding and positive gameplay in crucial moments. Captain Axar Patel has handled the side confidently by adapting strategies smartly, making attacking field placements and encouraging fearless cricket under pressure. Delhi’s fighting spirit and energetic performances kept them competitive throughout the tournament.
+
+</p>
+ <h3>Chennai Super Kings</h3>
+
+<p>
+CSK played smart and composed cricket throughout IPL 2026 by focusing on experience, spin control and pressure handling in crucial moments. Their biggest positive was controlling middle overs with disciplined bowling while finishers calmly completed difficult chases. The team relied heavily on tactical captaincy, slower bowling variations and rotating strike instead of reckless power hitting. Chennai performed best on slow pitches where their spinners and experienced batters completely controlled the tempo of the game.
+
 </p>
 `,
     TrendingLink: "",
@@ -10463,11 +10485,15 @@ Cricket fans can look forward to a high-stakes encounter as Delhi Capitals take 
       url: "",
     },
   },
+
+
+
+
   {
     id: 102349,
     name: "SRH vs PBKS – IPL 2026 Showdown",
     slug: "srh-vs-pbks-49th-match-indian-premier-league-2026",
-    para: "An exciting mid-season clash as Sunrisers Hyderabad lock horns with Punjab Kings",
+    para: "SRH have thrilled fans throughout IPL 2026 with explosive batting, fearless stroke play and nonstop attacking intent from the very first over",
     matchday: " Date : Wednesday, May 06",
     matchcount: "Match : 49th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10485,9 +10511,17 @@ Cricket fans can look forward to a high-stakes encounter as Delhi Capitals take 
     hometeam: "Team: Sunrisers Hyderabad",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+   trendingDetails: `
+    <h3>Sunrisers Hyderabad</h3>
 <p>
-An exciting mid-season clash awaits as Sunrisers Hyderabad lock horns with Punjab Kings in the 49th match of the Indian Premier League 2026. Hyderabad will look to take advantage of familiar home conditions, while Punjab aims to counter with their aggressive approach and depth in both batting and bowling. This fixture promises engaging cricket from the first ball to the last.
+SRH have thrilled fans throughout IPL 2026 with explosive batting, fearless stroke play and nonstop attacking intent from the very first over. Hyderabad consistently created massive scoring momentum during powerplays and continued attacking through middle overs without slowing down. Captain Pat Cummins has led the side fearlessly by giving batters attacking freedom and maintaining aggressive field settings during pressure situations. SRH’s entertainment-filled cricket makes them one of the most exciting teams this season.
+
+</p>
+ <h3>Punjab Kings</h3>
+
+<p>
+Punjab Kings have impressed fans in IPL 2026 with fearless batting, energetic fielding and improved consistency during crucial matches. PBKS attacked strongly during powerplays while bowlers controlled pressure moments effectively using slower deliveries and yorkers in death overs. Captain Shreyas Iyer has managed the side smartly through tactical bowling rotations, aggressive field placements and positive decision-making under pressure. Punjab’s balanced gameplay and fearless mindset continue to make them a strong competitor this season.
+
 </p>
 `,
     TrendingLink: "",
@@ -10498,11 +10532,15 @@ An exciting mid-season clash awaits as Sunrisers Hyderabad lock horns with Punja
       url: "",
     },
   },
+
+
+
+
   {
     id: 102350,
     name: "LSG vs RCB – IPL 2026 Showdown",
     slug: "lsg-vs-rcb-50th-match-indian-premier-league-2026",
-    para: "A high-voltage contest as Lucknow Super Giants take on Royal Challengers Bengaluru",
+    para: "LSG have maintained disciplined and tactical cricket throughout IPL 2026 with balanced performances in batting and bowling departments.",
     matchday: " Date : Thursday, May 07",
     matchcount: "Match : 50th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10521,9 +10559,16 @@ An exciting mid-season clash awaits as Sunrisers Hyderabad lock horns with Punja
     hometeam: "Team: Lucknow Super Giants",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+   trendingDetails: `
+    <h3>Lucknow Super Giants</h3>
 <p>
-A high-voltage contest is set to unfold as Lucknow Super Giants take on Royal Challengers Bengaluru in the 50th match of the Indian Premier League 2026. Lucknow will aim to make full use of their home conditions, while Bengaluru will look to dominate with their experienced core and power-packed lineup. The Ekana Stadium surface can test both batters and bowlers, adding an extra layer of strategy to this encounter.
+LSG have maintained disciplined and tactical cricket throughout IPL 2026 with balanced performances in batting and bowling departments. Lucknow focused heavily on controlling middle overs, building partnerships patiently and accelerating strongly during death overs in pressure situations. Captain Rishabh Pant has handled the side aggressively through smart bowling changes, fearless batting intent and confident decision-making during crucial moments. LSG’s tactical awareness and composed gameplay continue to make them a competitive side this season.
+
+</p>
+ <h3>Royal Challengers Bangalore</h3>
+
+<p>
+RCB have played fearless and aggressive cricket throughout IPL 2026 with explosive batting, energetic fielding and improved death-over bowling performances. Bengaluru 
 </p>
 `,
     TrendingLink: "",
@@ -10535,11 +10580,18 @@ A high-voltage contest is set to unfold as Lucknow Super Giants take on Royal Ch
       url: "",
     },
   },
+
+
+
+
+
+
+
   {
     id: 102351,
     name: "DC vs KKR – IPL 2026 Showdown",
     slug: "dc-vs-kkr-51st-match-indian-premier-league-2026",
-    para: "An exciting contest as Delhi Capitals take on the all-round strength of Kolkata Knight Riders",
+    para: "Delhi Capitals have shown attacking intent and energetic performances throughout IPL 2026 with aggressive batting starts and fearless young players",
     matchday: " Date : Friday, May 08",
     matchcount: "Match : 51st Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10558,8 +10610,15 @@ A high-voltage contest is set to unfold as Lucknow Super Giants take on Royal Ch
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3>Delhi Capitals</h3>
 <p>
-An exciting contest is lined up as Delhi Capitals take on Kolkata Knight Riders in the 51st match of the Indian Premier League 2026. Delhi will aim to make the most of their home conditions, while Kolkata will look to counter with their all-round strength and match-winning performers. The Delhi pitch often favors high-scoring encounters, making it ideal for big hitters and aggressive gameplay.
+Delhi Capitals have shown attacking intent and energetic performances throughout IPL 2026 with aggressive batting starts and fearless young players. DC focused on taking early momentum through quick scoring during powerplays and maintaining pressure through energetic fielding efforts. Captain Axar Patel has managed the team confidently by making smart tactical decisions and encouraging players to play fearless cricket under pressure. Delhi’s fighting spirit and aggressive gameplay helped them remain competitive this season.
+
+</p>
+ <h3> Kolkata Knight Riders</h3>
+
+<p>
+KKR have continued to deliver tactical and disciplined cricket throughout IPL 2026 with smart bowling execution and excellent middle-over control. Kolkata consistently slowed down opposition momentum through spin domination, pressure-building tactics and intelligent match awareness during crucial phases. Captain Ajinkya Rahane has managed the team calmly through effective bowling rotations, tactical field placements and composed leadership under pressure. KKR’s disciplined gameplay and smart tactical approach continue to make them one of the toughest teams this season.
 </p>
 `,
     TrendingLink: "",
@@ -10571,11 +10630,18 @@ An exciting contest is lined up as Delhi Capitals take on Kolkata Knight Riders 
       url: "",
     },
   },
+
+
+
+
+
+
+
   {
     id: 102352,
     name: "RR vs GT – IPL 2026 Showdown",
     slug: "rr-vs-gt-52nd-match-indian-premier-league-2026",
-    para: "A thrilling evening clash as Rajasthan Royals go up against Gujarat Titans in Jaipur",
+    para: "Rajasthan Royals have continued their fearless and entertaining style in IPL 2026 with explosive batting and energetic performances from young talents. ",
     matchday: " Date : Saturday, May 09",
     matchcount: "Match : 52nd Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10594,8 +10660,15 @@ An exciting contest is lined up as Delhi Capitals take on Kolkata Knight Riders 
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3>Rajasthan Royals</h3>
 <p>
-A thrilling evening clash is set as Rajasthan Royals go up against Gujarat Titans in the 52nd match of the Indian Premier League 2026. Rajasthan will look to make the most of their home advantage in Jaipur, while Gujarat aims to dominate with their depth and consistency across departments. The Jaipur surface often provides a balanced contest between bat and ball, adding to the excitement of this encounter.
+Rajasthan Royals have continued their fearless and entertaining style in IPL 2026 with explosive batting and energetic performances from young talents. RR maintained attacking intent during powerplays while their aggressive approach created momentum quickly in important matches. Captain Riyan Parag has encouraged positive cricket by backing young players confidently and maintaining aggressive match strategies throughout the season. Rajasthan’s fearless mindset and exciting gameplay make them one of the most dangerous teams in pressure situations.
+</p>
+ <h3> Gujarat Titans(</h3>
+
+<p>
+Gujarat Titans have once again displayed calm, balanced and disciplined cricket throughout IPL 2026 with composed batting and tactical bowling execution. GT focused heavily on building partnerships patiently while controlling pressure situations through intelligent match awareness and smart field placements. Captain Shubman Gill has led the team maturely by rotating bowlers effectively, controlling match tempo and making composed decisions during difficult situations. Gujarat’s consistency and tactical discipline continue to make them one of the most dependable teams this season.
+
 </p>
 `,
     TrendingLink: "",
@@ -10606,11 +10679,16 @@ A thrilling evening clash is set as Rajasthan Royals go up against Gujarat Titan
       url: "",
     },
   },
+
+
+
+
+
   {
     id: 102353,
     name: "CSK vs LSG – IPL 2026 Showdown",
     slug: "csk-vs-lsg-53rd-match-indian-premier-league-2026",
-    para: "A gripping afternoon encounter as Chennai Super Kings face off against Lucknow Super Giants at Chepauk",
+    para: "CSK once again proved why experience and composure remain their biggest strengths in IPL 2026 with disciplined tactical cricket and calm finishing under pressure. ",
     matchday: " Date : Sunday, May 10",
     matchcount: "Match : 53rd Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10628,9 +10706,18 @@ A thrilling evening clash is set as Rajasthan Royals go up against Gujarat Titan
     hometeam: "Team: Chennai Super Kings",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+   trendingDetails: `
+    <h3>Chennai Super Kings</h3>
 <p>
-A gripping afternoon encounter awaits as Chennai Super Kings face off against Lucknow Super Giants in the 53rd match of the Indian Premier League 2026. Chennai will aim to take advantage of their home conditions at Chepauk, while Lucknow will look to counter with their balanced squad and all-round capabilities. This fixture promises competitive and entertaining cricket, especially on a surface that often supports spin.
+CSK once again proved why experience and composure remain their biggest strengths in IPL 2026 with disciplined tactical cricket and calm finishing under pressure. Chennai focused heavily on controlling middle overs through spin domination, patient batting and smart game awareness during difficult situations. Captain Ruturaj Gaikwad has led the team calmly by trusting experienced players, making smart field placements and handling pressure moments brilliantly. CSK’s composed gameplay and tactical discipline continue to make them one of the smartest teams this season.
+
+
+</p>
+ <h3>Lucknow Super Giants(</h3>
+
+<p>
+LSG focused on tactical and disciplined cricket throughout IPL 2026 with balanced performances in both batting and bowling departments. Lucknow controlled middle overs effectively, built partnerships patiently and accelerated strongly during death overs in pressure situations. Their calm gameplay and smart tactical execution helped them remain competitive consistently this season. Captain Rishabh Pant managed the team aggressively by making bold bowling changes, encouraging fearless batting and handling pressure moments with tactical awareness.
+
 </p>
 `,
     TrendingLink: "",
@@ -10642,11 +10729,17 @@ A gripping afternoon encounter awaits as Chennai Super Kings face off against Lu
       url: "",
     },
   },
+
+
+
+
+
+
   {
     id: 102354,
     name: "RCB vs MI – IPL 2026 Showdown",
     slug: "rcb-vs-mi-54th-match-indian-premier-league-2026",
-    para: "A blockbuster clash as Royal Challengers Bengaluru go head-to-head with Mumbai Indians in Raipur",
+    para: "RCB played high-intensity cricket throughout IPL 2026 with aggressive batting, energetic fielding and improved bowling execution during crucial phases.",
     matchday: " Date : Sunday, May 10",
     matchcount: "Match : 54th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10664,9 +10757,18 @@ A gripping afternoon encounter awaits as Chennai Super Kings face off against Lu
     hometeam: "Team: Royal Challengers Bengaluru",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+   trendingDetails: `
+    <h3> Royal Challengers Bangalore</h3>
 <p>
-A blockbuster clash is set to take center stage as Royal Challengers Bengaluru go head-to-head with Mumbai Indians in the 54th match of the Indian Premier League 2026. This encounter promises a high-scoring contest with aggressive stroke play and quick momentum shifts. The Raipur venue is known to support entertaining games, adding to the excitement of this high-profile fixture between two of the league's most popular franchises.
+RCB played high-intensity cricket throughout IPL 2026 with aggressive batting, energetic fielding and improved bowling execution during crucial phases. Bengaluru focused heavily on dominating powerplays and maintaining attacking intent throughout matches with fearless gameplay. Their bowlers also improved significantly in death-over execution which helped them defend difficult totals under pressure. Captain Rajat Patidar led RCB confidently by encouraging aggressive batting, making smart tactical bowling changes and maintaining positive energy throughout the tournament.
+
+
+</p>
+ <h3>Mumbai Indians(</h3>
+
+<p>
+Mumbai Indians have once again dominated IPL 2026 with explosive batting starts, fearless power-hitting and aggressive chasing performances throughout the tournament. MI constantly created scoring pressure during powerplays while their finishers delivered impactful performances during important death overs. Captain Hardik Pandya has managed the team aggressively through attacking field placements, fearless strategies and smart bowling changes during pressure situations. Mumbai’s high-intensity cricket and explosive batting lineup continue to make them one of the strongest contenders this season. 
+
 </p>
 `,
     TrendingLink: "",
@@ -10678,11 +10780,21 @@ A blockbuster clash is set to take center stage as Royal Challengers Bengaluru g
       url: "",
     },
   },
+
+
+
+
+
+
+
+
+
+
   {
     id: 102355,
     name: "PBKS vs DC – IPL 2026 Showdown",
     slug: "pbks-vs-dc-55th-match-indian-premier-league-2026",
-    para: "An exciting evening clash as Punjab Kings take on Delhi Capitals in the scenic heights of Dharamsala",
+    para: "Punjab Kings have continued to impress throughout IPL 2026 with fearless batting, energetic fielding and aggressive gameplay during crucial moments",
     matchday: " Date : Monday, May 11",
     matchcount: "Match : 55th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10701,8 +10813,17 @@ A blockbuster clash is set to take center stage as Royal Challengers Bengaluru g
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3>Punjab Kings</h3>
 <p>
-An exciting evening clash is on the cards as Punjab Kings take on Delhi Capitals in the 55th match of the Indian Premier League 2026. Punjab will aim to capitalize on their home conditions in Dharamsala, while Delhi will look to challenge with their balanced squad and tactical approach. The Dharamsala pitch, known for its pace-friendly conditions, could assist bowlers early while still allowing batters to play their shots freely.
+Punjab Kings have continued to impress throughout IPL 2026 with fearless batting, energetic fielding and aggressive gameplay during crucial moments. PBKS consistently attacked bowlers during powerplays while their bowlers executed yorkers and slower deliveries effectively during death overs under pressure. Captain Shreyas Iyer has handled the side smartly through tactical bowling rotations, aggressive field placements and calm decision-making during important phases of matches. Punjab’s fearless mindset, attacking intent and improved consistency continue to make them one of the most exciting and unpredictable teams this season. 
+
+
+</p>
+ <h3>Delhi Capitals</h3>
+
+<p>
+Delhi Capitals have continued to play aggressive and energetic cricket throughout IPL 2026 with fearless batting starts and improved bowling combinations during important phases. DC regularly focused on taking early momentum through attacking powerplays while maintaining pressure through sharp fielding and positive gameplay. Captain Axar Patel has handled the side confidently through smart tactical decisions, aggressive field placements and fearless leadership during pressure situations. Delhi’s fighting spirit and attacking gameplay continue to make them a dangerous team this season. 
+
 </p>
 `,
     TrendingLink: "",
@@ -10713,11 +10834,16 @@ An exciting evening clash is on the cards as Punjab Kings take on Delhi Capitals
       url: "",
     },
   },
+
+
+
+
+
   {
     id: 102356,
     name: "GT vs SRH – IPL 2026 Showdown",
     slug: "gt-vs-srk-56th-match-indian-premier-league-2026",
-    para: "A high-energy contest as Gujarat Titans take on Sunrisers Hyderabad in Ahmedabad",
+    para: "Gujarat Titans have once again showcased calm, balanced and disciplined cricket throughout IPL 2026 with composed batting and intelligent bowling performances. ",
     matchday: " Date : Tuesday, May 12",
     matchcount: "Match : 56th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10736,8 +10862,16 @@ An exciting evening clash is on the cards as Punjab Kings take on Delhi Capitals
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3>Gujarat Titans</h3>
 <p>
-A high-energy contest is set as Gujarat Titans take on Sunrisers Hyderabad in the 56th match of the Indian Premier League 2026. Gujarat will aim to make full use of their home advantage in Ahmedabad, while Hyderabad will look to counter with their aggressive approach and balanced lineup. The Ahmedabad surface is known for producing high-scoring games, making it ideal for power hitters and big totals.
+throughout IPL 2026 with composed batting and intelligent bowling performances. GT focused heavily on partnership-building, tactical field placements and controlling match tempo during difficult situations. Captain Shubman Gill has handled the side maturely through smart bowling rotations, composed leadership and confident tactical decisions under pressure. Gujarat’s disciplined execution and tactical consistency continue to make them one of the strongest teams this season. 
+
+
+</p>
+ <h3>Sunrisers Hyderabad</h3>
+
+<p>
+SRH have thrilled fans throughout IPL 2026 with explosive batting, fearless attacking intent and nonstop aggressive cricket from the very first over. Hyderabad consistently created massive scoring momentum through powerful powerplay performances and fearless stroke play during middle overs. Captain Pat Cummins has handled the side confidently through attacking captaincy, aggressive bowling strategies and positive field placements under pressure. SRH’s entertainment-filled gameplay and fearless approach continue to make them one of the most exciting teams this season. 
 </p>
 `,
     TrendingLink: "",
@@ -10748,11 +10882,16 @@ A high-energy contest is set as Gujarat Titans take on Sunrisers Hyderabad in th
       url: "",
     },
   },
+
+
+
+
+
   {
     id: 102357,
     name: "RCB vs KKR – IPL 2026 Showdown",
     slug: "rcb-vs-kkr-57th-match-indian-premier-league-2026",
-    para: "A thrilling contest as Royal Challengers Bengaluru take on the all-round strength of Kolkata Knight Riders",
+    para: "RCB have continued to entertain fans throughout IPL 2026 with fearless batting, explosive partnerships and aggressive gameplay across all departments",
     matchday: " Date : Wednesday, May 13",
     matchcount: "Match : 57th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10769,10 +10908,17 @@ A high-energy contest is set as Gujarat Titans take on Sunrisers Hyderabad in th
     ends: "Ends : North End, South End",
     hometeam: "Team: Royal Challengers Bengaluru",
     streamingmobile: " Streaming: JioHotstar",
-    streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+   trendingDetails: `
+    <h3> Royal Challengers Bangalore</h3>
 <p>
-A thrilling contest is set to unfold as Royal Challengers Bengaluru take on Kolkata Knight Riders in the 57th match of the Indian Premier League 2026. Bengaluru will look to dominate with their strong top order, while Kolkata will aim to respond with their all-round strength and tactical gameplay. The Raipur venue often supports entertaining contests, adding to the anticipation of a closely fought battle.
+RCB have continued to entertain fans throughout IPL 2026 with fearless batting, explosive partnerships and aggressive gameplay across all departments. Bengaluru consistently created strong scoring momentum through attacking powerplays, quick run acceleration and positive intent during crucial match situations. Captain Rajat Patidar has led the side confidently through smart bowling adjustments, attacking captaincy and composed decision-making under pressure. RCB’s fearless cricket, energetic fielding and high-intensity performances continue to make them one of the strongest contenders this season. 
+
+
+</p>
+ <h3> Kolkata Knight Riders</h3>
+
+<p>
+KKR have continued to showcase tactical and disciplined cricket throughout IPL 2026 with smart bowling execution and excellent control during crucial middle overs. Kolkata consistently created pressure on opponents through spin domination, intelligent bowling variations and sharp tactical awareness in important match situations. Captain Ajinkya Rahane has handled the side calmly through composed leadership, effective bowling rotations and smart field placements under pressure. KKR’s disciplined gameplay, tactical planning and balanced performances continue to make them one of the toughest teams to beat this season.
 </p>
 `,
     TrendingLink: "",
@@ -10784,11 +10930,16 @@ A thrilling contest is set to unfold as Royal Challengers Bengaluru take on Kolk
       url: "",
     },
   },
+
+
+
+
+
   {
     id: 102358,
     name: "PBKS vs MI – IPL 2026 Showdown",
     slug: "pbks-vs-mi-58th-match-indian-premier-league-2026",
-    para: "An action-packed evening clash as Punjab Kings take on the powerhouse Mumbai Indians in Dharamsala",
+    para: "Punjab Kings have delivered fearless and energetic cricket throughout IPL 2026 with aggressive batting intent and improved performances during pressure situations.",
     matchday: " Date : Thursday, May 14",
     matchcount: "Match : 58th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10806,9 +10957,18 @@ A thrilling contest is set to unfold as Royal Challengers Bengaluru take on Kolk
     hometeam: "Team: Punjab Kings",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+    streamingmobile: " Streaming: JioHotstar",
+   trendingDetails: `
+    <h3>Punjab Kings</h3>
 <p>
-An action-packed evening clash is set as Punjab Kings take on Mumbai Indians in the 58th match of the Indian Premier League 2026. Punjab will aim to make the most of their home advantage in Dharamsala, while Mumbai will look to dominate with their depth and proven match-winners. The Dharamsala pitch often offers assistance to pace bowlers early on, while still allowing batters to score freely once settled.
+Punjab Kings have delivered fearless and energetic cricket throughout IPL 2026 with aggressive batting intent and improved performances during pressure situations. PBKS consistently attacked during powerplays while bowlers controlled crucial death overs using smart pace variations, yorkers and tactical execution. Captain Shreyas Iyer has managed the side confidently through intelligent bowling rotations, positive field placements and calm tactical leadership during important phases of matches. Punjab’s attacking mindset, fighting spirit and balanced gameplay continue to make them one of the most exciting teams this season. 
+
+
+</p>
+ <h3>Mumbai Indians</h3>
+
+<p>
+Mumbai Indians have once again dominated IPL 2026 with explosive batting starts, fearless power-hitting and thrilling performances during crucial run chases. MI consistently created pressure on bowlers through aggressive powerplay batting while their finishers delivered impactful performances during important death overs. Captain Hardik Pandya has led the side aggressively through smart bowling changes, attacking field placements and fearless tactical decisions under pressure situations. Mumbai’s explosive batting lineup, aggressive intent and high-intensity gameplay continue to make them one of the strongest teams this season. 
 </p>
 `,
     TrendingLink: "",
@@ -10819,11 +10979,17 @@ An action-packed evening clash is set as Punjab Kings take on Mumbai Indians in 
       url: "",
     },
   },
+
+
+
+
+
+
   {
     id: 102359,
     name: "LSG vs CSK – IPL 2026 Showdown",
     slug: "lsg-vs-csk-59th-match-indian-premier-league-2026",
-    para: "A high-intensity battle as Lucknow Super Giants face the legendary Chennai Super Kings at Ekana",
+    para: "LSG have continued to play disciplined and tactical cricket throughout IPL 2026 with balanced performances in both batting and bowling departments. ",
     matchday: " Date : Friday, May 15",
     matchcount: "Match : 59th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10843,9 +11009,15 @@ An action-packed evening clash is set as Punjab Kings take on Mumbai Indians in 
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3> Lucknow Super Giants</h3>
 <p>
-A high-intensity battle is set to unfold as Lucknow Super Giants face Chennai Super Kings in the 59th match of the Indian Premier League 2026. Lucknow will look to make the most of their home conditions, while Chennai will aim to counter with their calm approach and well-balanced squad. The Lucknow surface often offers a balanced contest, making both batters and bowlers equally important in shaping the outcome.
+LSG have continued to play disciplined and tactical cricket throughout IPL 2026 with balanced performances in both batting and bowling departments. Lucknow consistently focused on controlling middle overs, building strong partnerships patiently and accelerating effectively during crucial death-over situations. Captain Rishabh Pant has handled the side aggressively through fearless decision-making, smart bowling rotations and confident leadership during pressure moments. LSG’s tactical awareness, composed gameplay and balanced execution continue to make them one of the most competitive teams this season. 
+
 </p>
+ <h3>Chennai Super Kings</h3>
+
+<p>
+CSK have once again showcased calm tactical cricket and pressure-handling brilliance throughout IPL 2026 with disciplined bowling and composed batting performances. Chennai consistently controlled difficult situations through spin domination, smart partnerships and excellent match awareness during crucial phases. Captain Ruturaj Gaikwad has led the side confidently through composed leadership, tactical bowling rotations and smart field placements under pressure. CSK’s experience-driven gameplay, disciplined execution and calm decision-making continue to make them one of the smartest teams this season. </p>
 `,
     TrendingLink: "",
     YoutubeLink: "",
@@ -10856,11 +11028,20 @@ A high-intensity battle is set to unfold as Lucknow Super Giants face Chennai Su
       url: "",
     },
   },
+
+
+
+
+
+
+
+
+
   {
     id: 102360,
     name: "KKR vs GT – IPL 2026 Showdown",
     slug: "kkr-vs-gt-60th-match-indian-premier-league-2026",
-    para: "An exciting night game as Kolkata Knight Riders take on Gujarat Titans at the historic Eden Gardens",
+    para: "KKR have continued to deliver smart and disciplined cricket throughout IPL 2026 with excellent middle-over control and tactical bowling execution.",
     matchday: " Date : Saturday, May 16",
     matchcount: "Match : 60th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10878,10 +11059,16 @@ A high-intensity battle is set to unfold as Lucknow Super Giants face Chennai Su
     hometeam: "Team: Kolkata Knight Riders",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+     trendingDetails: `
+    <h3>Kolkata Knight Riders</h3>
 <p>
-An exciting night game is set as Kolkata Knight Riders take on Gujarat Titans in the 60th match of the Indian Premier League 2026. Kolkata will aim to capitalize on their home conditions at Eden Gardens, while Gujarat will look to dominate with their balanced lineup and match-winning players. Eden Gardens is known for producing high-scoring encounters, making it a perfect stage for big hitters to shine.
+KKR have continued to deliver smart and disciplined cricket throughout IPL 2026 with excellent middle-over control and tactical bowling execution. Kolkata repeatedly created pressure through spin domination, intelligent bowling variations and strong game awareness during crucial situations. Captain Ajinkya Rahane has handled the side calmly through composed captaincy, tactical field placements and effective bowling rotations under pressure. KKR’s balanced gameplay, tactical discipline and match awareness continue to make them one of the toughest teams this season. 
+
 </p>
+ <h3>Gujarat Titans</h3>
+
+<p>
+Gujarat Titans have maintained calm, composed and balanced cricket throughout IPL 2026 with disciplined bowling and calculated batting performances. GT consistently focused on partnership-building, tactical execution and controlling match tempo during difficult pressure situations. Captain Shubman Gill has managed the side maturely through smart bowling changes, composed leadership and intelligent decision-making during crucial moments. Gujarat’s consistency, tactical awareness and disciplined gameplay continue to make them one of the most dependable teams this season. 
 `,
     TrendingLink: "",
     YoutubeLink: "",
@@ -10892,11 +11079,20 @@ An exciting night game is set as Kolkata Knight Riders take on Gujarat Titans in
       url: "",
     },
   },
+
+
+
+
+
+
+
+
+
   {
     id: 102361,
     name: "PBKS vs RCB – IPL 2026 Showdown",
     slug: "pbks-vs-rcb-61st-match-indian-premier-league-2026",
-    para: "An exciting afternoon clash as Punjab Kings take on Royal Challengers Bengaluru in the scenic heights of Dharamsala",
+    para: "Punjab Kings have continued to impress throughout IPL 2026 with fearless batting, energetic fielding and aggressive performances during pressure situations",
     matchday: " Date : Sunday, May 17",
     matchcount: "Match : 61st Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10914,10 +11110,16 @@ An exciting night game is set as Kolkata Knight Riders take on Gujarat Titans in
     hometeam: "Team: Punjab Kings",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+     trendingDetails: `
+    <h3>Punjab Kings</h3>
 <p>
-An exciting afternoon clash is set to unfold as Punjab Kings take on Royal Challengers Bengaluru in the 61st match of the Indian Premier League 2026. Punjab will look to take advantage of their home conditions in Dharamsala, while Bengaluru will aim to counter with their experienced players and strong squad depth. The Dharamsala pitch, often assisting pace bowlers early, can still provide good value for batters as the game progresses.
+Punjab Kings have continued to impress throughout IPL 2026 with fearless batting, energetic fielding and aggressive performances during pressure situations. PBKS consistently attacked bowlers during powerplays while their bowling unit handled crucial death overs effectively through yorkers, slower deliveries and tactical execution. Captain Shreyas Iyer has led the side smartly through positive captaincy, aggressive field placements and confident decision-making during important phases. Punjab’s attacking mindset, fearless approach and improved consistency continue to make them one of the most exciting teams this season.
+
 </p>
+ <h3> Royal Challengers Bangalore(</h3>
+
+<p>
+RCB have entertained fans throughout IPL 2026 with fearless batting, explosive partnerships and aggressive gameplay across all departments. Bengaluru consistently created strong momentum through attacking powerplays, quick run acceleration and positive intent during crucial match situations. Captain Rajat Patidar has handled the side confidently through smart bowling adjustments, attacking captaincy and composed decision-making under pressure. RCB’s fearless cricket, energetic fielding and high-intensity performances continue to make them one of the strongest contenders this season.
 `,
     TrendingLink: "",
     YoutubeLink: "",
@@ -10928,11 +11130,15 @@ An exciting afternoon clash is set to unfold as Punjab Kings take on Royal Chall
       url: "",
     },
   },
+
+
+
+
   {
     id: 102362,
     name: "DC vs RR – IPL 2026 Showdown",
     slug: "dc-vs-rr-62nd-match-indian-premier-league-2026",
-    para: "An exciting evening encounter as Delhi Capitals take on Rajasthan Royals at the Arun Jaitley Stadium",
+    para: "Delhi Capitals have continued to showcase aggressive and energetic cricket throughout IPL 2026 with fearless batting starts and improved bowling combinations during crucial phases. ",
     matchday: " Date : Sunday, May 17",
     matchcount: "Match : 62nd Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10950,10 +11156,16 @@ An exciting afternoon clash is set to unfold as Punjab Kings take on Royal Chall
     hometeam: "Team: Delhi Capitals",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+     trendingDetails: `
+    <h3>Delhi Capitals(</h3>
 <p>
-An exciting evening encounter is set as Delhi Capitals take on Rajasthan Royals in the 62nd match of the Indian Premier League 2026. Delhi will aim to make the most of their home conditions, while Rajasthan will look to challenge with their balanced squad and aggressive approach. The Delhi surface often supports high-scoring matches, making it a great stage for big hitters and competitive totals.
+Delhi Capitals have continued to showcase aggressive and energetic cricket throughout IPL 2026 with fearless batting starts and improved bowling combinations during crucial phases. DC consistently focused on creating early momentum through attacking powerplays while maintaining pressure through sharp fielding and positive gameplay. Captain Axar Patel has handled the side confidently through smart tactical decisions, aggressive field placements and fearless leadership during pressure situations. Delhi’s fighting spirit, attacking mindset and energetic performances continue to make them a dangerous team this season.
+
 </p>
+ <h3>Rajasthan Royals</h3>
+
+<p>
+Rajasthan Royals have entertained fans throughout IPL 2026 with fearless young talent, explosive batting and energetic performances across all departments. RR consistently maintained attacking intent during powerplays while their aggressive fielding and positive gameplay created momentum during important match situations. Captain Riyan Parag has led the side positively through fearless captaincy, backing young players confidently and encouraging aggressive cricket under pressure. Rajasthan’s exciting gameplay, fearless mindset and attacking approach continue to make them one of the most entertaining teams this season.
 `,
     TrendingLink: "",
     YoutubeLink: "",
@@ -10963,11 +11175,21 @@ An exciting evening encounter is set as Delhi Capitals take on Rajasthan Royals 
       url: "",
     },
   },
+
+
+
+
+
+
+
+
+
+
   {
     id: 102363,
     name: "CSK vs SRH – IPL 2026 Showdown",
     slug: "csk-vs-srh-63rd-match-indian-premier-league-2026",
-    para: "An exciting night clash as Chennai Super Kings take on Sunrisers Hyderabad at the fortress Chepauk",
+    para: "Chennai Super Kings have continued to prove their strength in handling high-pressure situations during IPL 2026 with composed performances and excellent tactical awareness. ",
     matchday: " Date : Monday, May 18",
     matchcount: "Match : 63rd Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -10986,10 +11208,16 @@ An exciting evening encounter is set as Delhi Capitals take on Rajasthan Royals 
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3>Chennai Super Kings</h3>
 <p>
-An exciting night clash is set to unfold as Chennai Super Kings take on Sunrisers Hyderabad in the 63rd match of the Indian Premier League 2026. Chennai will look to make full use of their home advantage at Chepauk, while Hyderabad will aim to counter with their aggressive batting and versatile bowling attack. This match is expected to offer a strategic contest, especially on a surface that often supports spin and controlled gameplay.
+Chennai Super Kings have continued to prove their strength in handling high-pressure situations during IPL 2026 with composed performances and excellent tactical awareness. The team relied heavily on experienced players, controlled bowling spells and calculated batting partnerships to maintain stability during crucial moments. Their ability to slow down matches through spin pressure and smart fielding helped them dominate difficult situations consistently this season. Captain Ruturaj Gaikwad has guided the side calmly through intelligent bowling management, patient decision-making and strong leadership during tense phases of the tournament. 
+
 </p>
-`,
+ <h3>Sunrisers Hyderabad</h3>
+
+<p>
+Sunrisers Hyderabad have emerged as one of the most dangerous attacking teams in IPL 2026 with explosive starts and fearless batting throughout the tournament. SRH consistently looked to overpower opponents early by maintaining aggressive scoring rates and applying pressure during every phase of the innings. Their bold batting intent and aggressive match approach created several entertaining high-scoring contests this season. Captain Pat Cummins has handled the team aggressively by encouraging positive cricket, using attacking field setups and making brave tactical decisions under pressure. `
+,
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
@@ -10999,11 +11227,19 @@ An exciting night clash is set to unfold as Chennai Super Kings take on Sunriser
       url: "",
     },
   },
+
+
+
+
+
+
+
+
   {
     id: 102364,
     name: "RR vs LSG – IPL 2026 Showdown",
     slug: "rr-vs-lsg-64th-match-indian-premier-league-2026",
-    para: "A thrilling contest as Rajasthan Royals go up against Lucknow Super Giants in Jaipur",
+    para: "Rajasthan Royals have played exciting and fearless cricket throughout IPL 2026 by trusting young talents and maintaining aggressive intent in important matches. ",
     matchday: " Date : Tuesday, May 19",
     matchcount: "Match : 64th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -11021,11 +11257,20 @@ An exciting night clash is set to unfold as Chennai Super Kings take on Sunriser
     hometeam: "Team: Rajasthan Royals",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+      trendingDetails: `
+    <h3>Rajasthan Royals</h3>
 <p>
-A thrilling contest is set to take place as Rajasthan Royals go up against Lucknow Super Giants in the 64th match of the Indian Premier League 2026. Rajasthan will aim to make the most of their home advantage in Jaipur, while Lucknow will look to challenge with their depth and versatile lineup. The Jaipur pitch generally offers a balanced surface, making it a competitive contest between bat and ball.
+Rajasthan Royals have played exciting and fearless cricket throughout IPL 2026 by trusting young talents and maintaining aggressive intent in important matches. RR consistently looked to dominate bowlers during powerplays while their energetic fielding created pressure during crucial phases of games. Their positive approach and attacking mindset helped the team produce several momentum-shifting performances this season. Captain Riyan Parag has guided the side confidently by backing players during pressure situations, encouraging attacking cricket and maintaining strong energy on the field. 
+
 </p>
-`,
+ <h3>Lucknow Super Giants</h3>
+
+<p>
+Lucknow Super Giants have maintained a balanced and tactical style of cricket throughout IPL 2026 with disciplined bowling and composed batting performances. LSG focused on controlling the pace of matches through smart middle-over execution and partnership-building during difficult situations. Their ability to remain calm under pressure helped them stay competitive in several closely contested games this season. Captain Rishabh Pant has led the side aggressively through bold tactical calls, fearless batting intent and confident bowling changes during crucial moments. 
+</p> `
+,
+
+
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
@@ -11035,11 +11280,17 @@ A thrilling contest is set to take place as Rajasthan Royals go up against Luckn
       url: "",
     },
   },
+
+
+
+
+
+
   {
     id: 102365,
     name: "KKR vs MI – IPL 2026 Showdown",
     slug: "kkr-vs-mi-65th-match-indian-premier-league-2026",
-    para: "A high-voltage encounter as Kolkata Knight Riders clash with Mumbai Indians at the iconic Eden Gardens",
+    para: "Kolkata Knight Riders have built their IPL 2026 campaign around tactical discipline, smart bowling plans and excellent control during pressure situations.",
     matchday: " Date : Wednesday, May 20",
     matchcount: "Match : 65th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -11058,10 +11309,19 @@ A thrilling contest is set to take place as Rajasthan Royals go up against Luckn
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3> Kolkata Knight Riders</h3>
 <p>
-A high-voltage encounter is set to take place as Kolkata Knight Riders clash with Mumbai Indians in the 65th match of the Indian Premier League 2026. Kolkata will aim to dominate on their home ground, while Mumbai will look to counter with their strong lineup and match-winning players. Eden Gardens is known for producing high-scoring games, making it a perfect stage for big hitters to shine.
+Kolkata Knight Riders have built their IPL 2026 campaign around tactical discipline, smart bowling plans and excellent control during pressure situations. KKR consistently used spin variations and intelligent match awareness to break partnerships and slow opposition momentum during crucial overs. Their flexible batting order and ability to adapt quickly to pitch conditions helped them remain competitive throughout the season. Captain Ajinkya Rahane has guided the side calmly through composed leadership, effective bowling management and sharp tactical decisions during important match phases. 
+
+
+
 </p>
-`,
+ <h3>Mumbai Indians</h3>
+
+<p>
+Mumbai Indians have once again showcased aggressive and entertaining cricket in IPL 2026 with explosive batting performances and fearless run chases. MI consistently attacked bowlers from the start of the innings while their power-hitters maintained scoring momentum during crucial death overs. Their aggressive style and ability to turn games quickly made them one of the most dangerous batting sides this season. Captain Hardik Pandya has handled the side boldly through attacking strategies, smart bowling decisions and positive leadership during high-pressure moments. 
+</p> `
+,
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
@@ -11071,11 +11331,14 @@ A high-voltage encounter is set to take place as Kolkata Knight Riders clash wit
       url: "",
     },
   },
+
+
+
   {
     id: 102366,
     name: "GT vs CSK – IPL 2026 Showdown",
     slug: "gt-vs-csk-66th-match-indian-premier-league-2026",
-    para: "A thrilling contest as Gujarat Titans take on the defending champions Chennai Super Kings in Ahmedabad",
+    para: "Gujarat Titans have continued to impress in IPL 2026 with calm execution, disciplined bowling and composed batting performances during crucial situations",
     matchday: " Date : Thursday, May 21",
     matchcount: "Match : 66th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -11094,10 +11357,18 @@ A high-voltage encounter is set to take place as Kolkata Knight Riders clash wit
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3>Gujarat Titans</h3>
 <p>
-A thrilling contest is set to unfold as Gujarat Titans take on Chennai Super Kings in the 66th match of the Indian Premier League 2026. Gujarat will look to capitalize on their home conditions in Ahmedabad, while Chennai will aim to counter with their experience and strategic gameplay. The Ahmedabad pitch is known for favoring batters, making it ideal for big totals and aggressive stroke play.
+Gujarat Titans have continued to impress in IPL 2026 with calm execution, disciplined bowling and composed batting performances during crucial situations. GT focused on controlling matches patiently through smart partnerships, calculated risk-taking and tactical field placements across important phases. Their consistency and ability to stay composed under pressure helped them remain one of the most balanced teams this season. Captain Shubman Gill has managed the side maturely through intelligent bowling rotations, steady leadership and smart tactical planning during difficult moments. 
+
+
+
 </p>
-`,
+ <h3>Chennai Super Kings</h3>
+
+<p>
+Chennai Super Kings have once again demonstrated their experience and tactical brilliance throughout IPL 2026 with composed performances under pressure. CSK consistently relied on spin control, disciplined bowling and calculated batting partnerships to manage difficult match situations effectively. Their ability to remain calm during tense chases and crucial overs helped them convert challenging moments into important victories this season. Captain Ruturaj Gaikwad has guided the side confidently through patient captaincy, sharp field placements and excellent game awareness during pressure situations. </p> `
+,
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
@@ -11106,11 +11377,14 @@ A thrilling contest is set to unfold as Gujarat Titans take on Chennai Super Kin
       url: "",
     },
   },
+
+
+
   {
     id: 102367,
     name: "SRH vs RCB – IPL 2026 Showdown",
     slug: "srh-vs-rcb-67th-match-indian-premier-league-2026",
-    para: "An electrifying contest as Sunrisers Hyderabad take on Royal Challengers Bengaluru at the Rajiv Gandhi International Stadium",
+    para: "Sunrisers Hyderabad have turned IPL 2026 into an attacking showcase with explosive batting displays and fearless intent throughout the tournament",
     matchday: " Date : Friday, May 22",
     matchcount: "Match : 67th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -11129,10 +11403,20 @@ A thrilling contest is set to unfold as Gujarat Titans take on Chennai Super Kin
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3>Sunrisers Hyderabad</h3>
 <p>
-An electrifying contest is lined up as Sunrisers Hyderabad take on Royal Challengers Bengaluru in the 67th match of the Indian Premier League 2026. Hyderabad will look to make the most of their home conditions, while Bengaluru will aim to dominate with their experienced lineup and match-winning players. The Hyderabad pitch often supports stroke play, making it ideal for batters to play freely and set up a high-scoring encounter.
+Sunrisers Hyderabad have turned IPL 2026 into an attacking showcase with explosive batting displays and fearless intent throughout the tournament. SRH consistently looked to dominate matches early through aggressive powerplay scoring and relentless pressure on opposition bowlers. Their fearless batting mindset and ability to maintain high scoring rates made them one of the most entertaining teams this season. Captain Pat Cummins has led the side boldly through attacking tactics, aggressive field settings and confident decision-making during high-pressure moments. 
+
+
+
 </p>
-`,
+ <h3> Royal Challengers Bangalore</h3>
+
+<p>
+Royal Challengers Bengaluru have produced thrilling performances throughout IPL 2026 with aggressive batting, explosive partnerships and high-energy gameplay. RCB consistently created momentum through attacking cricket and fearless stroke play during important phases of matches. Their improved bowling discipline and ability to perform under pressure helped them stay competitive against top teams this season. Captain Rajat Patidar has handled the side confidently through positive captaincy, tactical bowling changes and calm leadership during crucial match situations.
+
+</p> `
+,
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
@@ -11142,6 +11426,10 @@ An electrifying contest is lined up as Sunrisers Hyderabad take on Royal Challen
       url: "",
     },
   },
+
+
+
+
   {
     id: 102368,
     name: "LSG vs PBKS – IPL 2026 Showdown",
@@ -11166,10 +11454,18 @@ An electrifying contest is lined up as Sunrisers Hyderabad take on Royal Challen
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
     trendingDetails: `
+    <h3>Lucknow Super Giants</h3>
 <p>
-An exciting contest is set to unfold as Lucknow Super Giants take on Punjab Kings in the 68th match of the Indian Premier League 2026. Lucknow will aim to make full use of their home conditions, while Punjab will look to counter with their aggressive style and balanced squad. The Ekana Stadium surface often offers a balanced contest, making both batters and bowlers equally important in shaping the outcome of this high-stakes fixture.
+Lucknow Super Giants have built their IPL 2026 campaign on tactical awareness, disciplined bowling and balanced performances across departments. LSG consistently managed crucial situations through smart partnerships, controlled middle-over execution and composed gameplay under pressure. Their calm approach and ability to adapt to different match conditions helped them remain competitive throughout the season. Captain Rishabh Pant has guided the side aggressively through fearless decisions, smart bowling management and positive intent during key phases of matches. 
+
+
 </p>
-`,
+ <h3>Punjab Kings</h3>
+
+<p>
+Punjab Kings have continued to impress fans in IPL 2026 with attacking batting, energetic performances and fearless gameplay during important moments. PBKS regularly looked to put bowlers under pressure through aggressive stroke play while their bowling attack improved significantly in handling death-over situations. Their positive approach and fighting spirit helped them produce several competitive performances this season. Captain Shreyas Iyer has handled the side smartly through tactical captaincy, attacking field placements and confident leadership under pressure situations. 
+</p> `
+,
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
@@ -11179,11 +11475,14 @@ An exciting contest is set to unfold as Lucknow Super Giants take on Punjab King
       url: "",
     },
   },
+
+
+
   {
     id: 102369,
     name: "MI vs RR – IPL 2026 Showdown",
     slug: "mi-vs-rr-69th-match-indian-premier-league-2026",
-    para: "An exciting afternoon clash as Mumbai Indians face Rajasthan Royals at the legendary Wankhede Stadium",
+    para: "Mumbai Indians have continued to dominate IPL 2026 with explosive batting performances, fearless power-hitting and aggressive match-winning intent",
     matchday: " Date : Sunday, May 24",
     matchcount: "Match : 69th Match",
     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
@@ -11201,11 +11500,19 @@ An exciting contest is set to unfold as Lucknow Super Giants take on Punjab King
     hometeam: "Team: Mumbai Indians",
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
+  trendingDetails: `
+    <h3>Mumbai Indians</h3>
 <p>
-An exciting afternoon clash is set to take place as Mumbai Indians face Rajasthan Royals in the 69th match of the Indian Premier League 2026. Mumbai will look to take full advantage of their home conditions, while Rajasthan will aim to challenge with their aggressive gameplay and well-balanced squad. The Wankhede surface is known to favor batters, making it ideal for big scores and entertaining cricket.
+Mumbai Indians have continued to dominate IPL 2026 with explosive batting performances, fearless power-hitting and aggressive match-winning intent. MI consistently created pressure through attacking starts, quick momentum shifts and powerful finishing during crucial overs. Their ability to chase difficult targets and maintain high scoring rates made them one of the most dangerous teams this season. Captain Hardik Pandya has guided the side boldly through attacking strategies, smart bowling decisions and confident leadership during high-pressure situations.
+
+
 </p>
-`,
+ <h3>Rajasthan Royals</h3>
+
+<p>
+Rajasthan Royals have entertained fans throughout IPL 2026 with fearless cricket, explosive batting and energetic performances from young talents. RR consistently maintained aggressive intent during important phases while their positive gameplay created momentum in pressure situations. Their confidence in young players and attacking style helped them produce several exciting performances this season. Captain Riyan Parag has managed the side confidently through fearless captaincy, positive tactics and strong support for young players during crucial moments.
+</p> `
+,
     TrendingLink: "",
     YoutubeLink: "",
     meta: {
@@ -11214,6 +11521,9 @@ An exciting afternoon clash is set to take place as Mumbai Indians face Rajastha
       url: "",
     },
   },
+
+
+  
 //   {
 //     id: 102370,
 //     name: "KKR vs DC – IPL 2026 Showdown",

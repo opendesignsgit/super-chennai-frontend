@@ -276,6 +276,287 @@ export default function CricketScrore() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+  // const [pointsTable, setPointsTable] = useState([]);
+  // const [loadingTable, setLoadingTable] = useState(true);
+
+//   const staticPointsTable = [
+//   {
+//     Name: "Chennai Super Kings",
+//     Played: 10,
+//     Won: 7,
+//     Loss: 3,
+//     "No Result": 0,
+//     "Net Run Rate": "+0.650",
+//     Points: 14,
+//   },
+//   {
+//     Name: "Mumbai Indians",
+//     Played: 10,
+//     Won: 6,
+//     Loss: 4,
+//     "No Result": 0,
+//     "Net Run Rate": "+0.320",
+//     Points: 12,
+//   },
+//   {
+//     Name: "Royal Challengers Bangalore",
+//     Played: 10,
+//     Won: 6,
+//     Loss: 4,
+//     "No Result": 0,
+//     "Net Run Rate": "+0.210",
+//     Points: 12,
+//   },
+//   {
+//     Name: "Kolkata Knight Riders",
+//     Played: 10,
+//     Won: 5,
+//     Loss: 5,
+//     "No Result": 0,
+//     "Net Run Rate": "-0.050",
+//     Points: 10,
+//   },
+//   {
+//     Name: "Delhi Capitals",
+//     Played: 10,
+//     Won: 4,
+//     Loss: 6,
+//     "No Result": 0,
+//     "Net Run Rate": "-0.200",
+//     Points: 8,
+//   },
+// ];
+
+// const staticPointsTable = [
+//   {
+//     Name: "Punjab Kings",
+//     Played: 9,
+//     Won: 6,
+//     Loss: 2,
+//     "No Result": 1,
+//     "Net Run Rate": "+0.855",
+//     Points: 13,
+//   },
+//   {
+//     Name: "Royal Challengers Bengaluru",
+//     Played: 9,
+//     Won: 6,
+//     Loss: 3,
+//     "No Result": 0,
+//     "Net Run Rate": "+1.420",
+//     Points: 12,
+//   },
+//   {
+//     Name: "Sunrisers Hyderabad",
+//     Played: 10,
+//     Won: 6,
+//     Loss: 4,
+//     "No Result": 0,
+//     "Net Run Rate": "+0.644",
+//     Points: 12,
+//   },
+//   {
+//     Name: "Rajasthan Royals",
+//     Played: 10,
+//     Won: 6,
+//     Loss: 4,
+//     "No Result": 0,
+//     "Net Run Rate": "+0.510",
+//     Points: 12,
+//   },
+//   {
+//     Name: "Gujarat Titans",
+//     Played: 10,
+//     Won: 6,
+//     Loss: 4,
+//     "No Result": 0,
+//     "Net Run Rate": "-0.147",
+//     Points: 12,
+//   },
+//   {
+//     Name: "Chennai Super Kings",
+//     Played: 10,
+//     Won: 5,
+//     Loss: 5,
+//     "No Result": 0,
+//     "Net Run Rate": "+0.151",
+//     Points: 10,
+//   },
+//   {
+//     Name: "Delhi Capitals",
+//     Played: 10,
+//     Won: 4,
+//     Loss: 6,
+//     "No Result": 0,
+//     "Net Run Rate": "-0.949",
+//     Points: 8,
+//   },
+//   {
+//     Name: "Kolkata Knight Riders",
+//     Played: 9,
+//     Won: 3,
+//     Loss: 5,
+//     "No Result": 1,
+//     "Net Run Rate": "-0.539",
+//     Points: 7,
+//   },
+//   {
+//     Name: "Mumbai Indians",
+//     Played: 10,
+//     Won: 3,
+//     Loss: 7,
+//     "No Result": 0,
+//     "Net Run Rate": "-0.649",
+//     Points: 6,
+//   },
+//   {
+//     Name: "Lucknow Super Giants",
+//     Played: 9,
+//     Won: 2,
+//     Loss: 7,
+//     "No Result": 0,
+//     "Net Run Rate": "-1.076",
+//     Points: 4,
+//   },
+// ];
+const staticPointsTable = [
+  {
+    Name: "Punjab Kings",
+    logo: "https://upload.wikimedia.org/wikipedia/en/d/d4/Punjab_Kings_Logo.svg",
+    Played: 9,
+    Won: 6,
+    Loss: 2,
+    "No Result": 1,
+    "Net Run Rate": "+0.855",
+    Points: 13,
+  },
+  {
+    Name: "Royal Challengers Bengaluru",
+    logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/xUS54-BA0dFZPMtbCiHkzQ_48x48.png",
+    Played: 9,
+    Won: 6,
+    Loss: 3,
+    "No Result": 0,
+    "Net Run Rate": "+1.420",
+    Points: 12,
+  },
+  {
+    Name: "Sunrisers Hyderabad",
+    logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/W0OCBYc05c5MFMrctF62kg_48x48.png",
+    Played: 10,
+    Won: 6,
+    Loss: 4,
+    "No Result": 0,
+    "Net Run Rate": "+0.644",
+    Points: 12,
+  },
+  {
+    Name: "Rajasthan Royals",
+    logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/GqIU6xhQAnCpy_Cbr2LZRA_48x48.png",
+    Played: 10,
+    Won: 6,
+    Loss: 4,
+    "No Result": 0,
+    "Net Run Rate": "+0.510",
+    Points: 12,
+  },
+  {
+    Name: "Gujarat Titans",
+    logo: "https://upload.wikimedia.org/wikipedia/en/0/09/Gujarat_Titans_Logo.svg",
+    Played: 10,
+    Won: 6,
+    Loss: 4,
+    "No Result": 0,
+    "Net Run Rate": "-0.147",
+    Points: 12,
+  },
+  {
+    Name: "Chennai Super Kings",
+    logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/5G8eFjkPKNalIgL2FOtovg_48x48.png",
+    Played: 10,
+    Won: 5,
+    Loss: 5,
+    "No Result": 0,
+    "Net Run Rate": "+0.151",
+    Points: 10,
+  },
+  {
+    Name: "Delhi Capitals",
+    logo: "https://upload.wikimedia.org/wikipedia/en/2/2f/Delhi_Capitals.svg",
+    Played: 10,
+    Won: 4,
+    Loss: 6,
+    "No Result": 0,
+    "Net Run Rate": "-0.949",
+    Points: 8,
+  },
+  {
+    Name: "Kolkata Knight Riders",
+    logo: "https://upload.wikimedia.org/wikipedia/en/4/4c/Kolkata_Knight_Riders_Logo.svg",
+    Played: 9,
+    Won: 3,
+    Loss: 5,
+    "No Result": 1,
+    "Net Run Rate": "-0.539",
+    Points: 7,
+  },
+  {
+    Name: "Mumbai Indians",
+    logo: "https://upload.wikimedia.org/wikipedia/en/c/cd/Mumbai_Indians_Logo.svg",
+    Played: 10,
+    Won: 3,
+    Loss: 7,
+    "No Result": 0,
+    "Net Run Rate": "-0.649",
+    Points: 6,
+  },
+  {
+    Name: "Lucknow Super Giants",
+    logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/OqrL0ztLy13FBpvuF6GCBQ_48x48.png",
+    Played: 9,
+    Won: 2,
+    Loss: 7,
+    "No Result": 0,
+    "Net Run Rate": "-1.076",
+    Points: 4,
+  },
+];
+
+const [pointsTable, setPointsTable] = useState(staticPointsTable);
+const [loadingTable, setLoadingTable] = useState(false);
+
+  // useEffect(() => {
+  //   const fetchPointsTable = async () => {
+  //     try {
+  //       const res = await fetch(
+  //         "https://ipl-okn0.onrender.com/ipl-2026-points-table",
+  //       );
+
+  //       if (!res.ok) throw new Error("API failed");
+
+  //       const data = await res.json();
+
+  //       const tableArray = Array.isArray(data)
+  //         ? data
+  //         : data.points_table
+  //           ? Object.values(data.points_table)
+  //           : [];
+
+  //       setPointsTable(tableArray);
+  //     } catch (err) {
+  //       console.error("Error fetching points table:", err);
+
+  //       // fallback data (important!)
+  //       setPointsTable([]);
+  //     } finally {
+  //       setLoadingTable(false);
+  //     }
+  //   };
+
+  //   fetchPointsTable();
+  // }, []);
+
   return (
     <div className="tredingMainContainer">
       <div className="tredingChennaiRow">
@@ -309,6 +590,14 @@ export default function CricketScrore() {
               remains one of the biggest and most popular sports leagues in the
               world.
             </p>
+            <div className="mt-4">
+              <a
+                href="/crickets_List"
+                className="inline-block px-5 py-2 bg-black text-white text-sm font-semibold rounded hover:bg-gray-800 transition"
+              >
+                View More →
+              </a>
+            </div>
           </div>
 
           <div className="trendccol trendcRight">
@@ -406,215 +695,176 @@ export default function CricketScrore() {
           </div>
         </div>
       </section>
+
+      <section className="container max-w-5xl mx-auto pointsTableSection mt-10 p-6">
+        {/* <section className="mx-auto w-full max-w-[768px] pointsTableSection mt-10 p-6"> */}
+        <div className="bg-slate-900/30 backdrop-blur-xl   rounded-1xl overflow-hidden shadow-xl">
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="bg-gradient-to-r from-[#19398a] via-[#1f45a8] to-[#19398a] text-white">
+                <tr>
+                  <th className="px-4 py-3 text-left font-bold">
+                    <div className="flex items-center gap-2">
+                      <div className="w-6 h-6 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center shadow-md">
+                        <svg
+                          className="w-3 h-3 text-white"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      <span className="text-slate-200 tracking-tight">
+                        Team
+                      </span>
+                    </div>
+                  </th>
+                  <th className="px-3 py-3 text-center">
+                    <span className="text-slate-300 uppercase tracking-wider text-xs font-bold">
+                      P
+                    </span>
+                  </th>
+                  <th className="px-3 py-3 text-center">
+                    <span className="text-slate-300 uppercase tracking-wider text-xs font-bold">
+                      W
+                    </span>
+                  </th>
+                  <th className="px-3 py-3 text-center">
+                    <span className="text-slate-300 uppercase tracking-wider text-xs font-bold">
+                      L
+                    </span>
+                  </th>
+                  <th className="px-3 py-3 text-center">
+                    <span className="text-slate-300 uppercase tracking-wider text-xs font-bold">
+                      NR
+                    </span>
+                  </th>
+                  <th className="px-3 py-3 text-center">
+                    <span className="text-slate-300 uppercase tracking-wider text-xs font-bold">
+                      NRR
+                    </span>
+                  </th>
+                  <th className="px-4 py-3 text-right">
+                    <span className="text-slate-200 font-black tracking-tight">
+                      Pts
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody className="bg-white">
+                {pointsTable.map((team, index) => {
+                  const position = index + 1;
+                  const isTop3 = position <= 3;
+                  const isPlayoff = position <= 4;
+                  const nrr = parseFloat(team["Net Run Rate"] || "0") || 0;
+                  const nrrColor = nrr >= 0 ? "text-green-600" : "text-red-500";
+
+                  return (
+                    <tr
+                      key={index}
+                      className={`
+          border border-[#f5f5f5f5]
+          ${isTop3 ? "bg-green-50" : ""}
+          ${position === 1 ? "border-t-2 border-green-400" : ""}
+        `}
+                    >
+                      {/* Team + Position */}
+                      <td className="px-4 py-3">
+                        <div className="flex items-center gap-2">
+                          {/* Position */}
+                          <div className="w-7 h-7 rounded-lg bg-gray-200 flex items-center justify-center">
+                            <span className="text-xs font-bold text-black">
+                              {position}
+                            </span>
+                          </div>
+
+                          {/* Top 3 Indicator */}
+                          {isTop3 && (
+                            <div
+                              className={`w-3 h-3 rounded-full ${
+                                position === 1
+                                  ? "bg-green-500"
+                                  : position === 2
+                                    ? "bg-yellow-500"
+                                    : "bg-red-400"
+                              }`}
+                            ></div>
+                          )}
+
+                          {/* ✅ Team Logo */}
+                          <img
+                            src={team.logo}
+                            alt={team.Name}
+                            className="w-6 h-6 object-contain"
+                          />
+
+                          {/* Team Name */}
+                          <div className="min-w-0 flex-1">
+                            <span className="text-sm font-semibold text-gray-900">
+                              {team.Name}
+                            </span>
+
+                            {isPlayoff && (
+                              <span className="ml-2 px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">
+                                PO
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      </td>
+                      {/* Stats */}
+                      <td className="px-3 py-3 text-center text-gray-800 font-medium">
+                        {team.Played || 0}
+                      </td>
+
+                      <td className="px-3 py-3 text-center text-green-600 font-semibold">
+                        {team.Won || 0}
+                      </td>
+
+                      <td className="px-3 py-3 text-center text-red-500 font-semibold">
+                        {team.Loss || 0}
+                      </td>
+
+                      <td className="px-3 py-3 text-center text-gray-600">
+                        {team["No Result"] || 0}
+                      </td>
+
+                      <td className="px-3 py-3 text-center">
+                        <span className={`font-semibold ${nrrColor}`}>
+                          {team["Net Run Rate"] || "0.00"}
+                        </span>
+                      </td>
+
+                      <td className="px-4 py-3 text-right">
+                        <div className="inline-flex items-center px-2 py-1 rounded bg-gray-100">
+                          <span className="text-xs font-bold text-black">
+                            {team.Points || 0}
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Compact Footer */}
+          {/* <div className="px-4 py-2.5 bg-gradient-to-r from-slate-800/50 to-transparent border-t border-slate-700/50">
+            <div className="flex items-center gap-2 text-sm font-semibold text-white">
+              <span>Total Played</span>
+              <span>•</span>
+              <span className="text-emerald-400 font-bold">47</span>
+              <span className="text-rose-400 font-bold">🔴 -58</span>
+            </div>
+          </div> */}
+        </div>
+      </section>
     </div>
-    // <div className="CrickettredingMainContainer mt-30">
-    //   <div className="tredingChennaiRow">
-    //     <div
-    //       className={`TrendingTextBackground ${
-    //         scrollDir === "right"
-    //           ? "Trendingscroll-right"
-    //           : "Trendingscroll-left"
-    //       }`}
-    //       ref={bgTextRef}
-    //     >
-    //       <p>CSK &nbsp; YELLOW ARMY &nbsp; CSK &nbsp; WHISTLE PODU</p>
-    //     </div>
-    //   </div>
-
-    //   <section className="CricketTrendCheniSec">
-    //     <div className="container max-w-7xl mx-auto">
-    //       {/* Cricket stadium background overlay */}
-    //       <div
-    //         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 z-0"
-    //         style={{
-    //           backgroundImage:
-    //             "url('https://images.unsplash.com/photo-1559818868-6b763af7f47f?w=1920')",
-    //           position: "fixed",
-    //           top: 0,
-    //           left: 0,
-    //           width: "100vw",
-    //           height: "100vh",
-    //         }}
-    //       />
-
-    //       <div className="relative z-10">
-    //         {/* Full-width slider container */}
-    //         <div
-    //           className="sliders-container h-[70vh] TrendingChennaiSliderContainer mx-auto"
-    //           style={{
-    //             width: "100%",
-    //             maxWidth: "1200px",
-    //             overflow: "hidden",
-    //             margin: "0 auto",
-    //             boxSizing: "border-box",
-    //             background:
-    //               "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
-    //             borderRadius: "25px",
-    //             boxShadow:
-    //               "0 30px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.1)",
-    //             position: "relative",
-    //           }}
-    //         >
-    //           {/* CSK Header */}
-    //           <div className="absolute top-6 left-6 z-20 bg-gradient-to-r from-yellow-400/95 to-orange-500/95 text-black px-8 py-4 rounded-2xl shadow-2xl backdrop-blur-md border-4 border-white/20">
-    //             <h2 className="text-3xl font-black tracking-widest flex items-center">
-    //               🦁 CSK YELLOW ARMY 🦁
-    //             </h2>
-    //             <p className="text-sm font-semibold mt-1 opacity-90">
-    //               WHISTLE PODU! 💛
-    //             </p>
-    //           </div>
-
-    //           {/* Slider Track */}
-    //           <div
-    //             className="accordion-track"
-    //             style={{
-    //               display: "flex",
-    //               transition:
-    //                 "transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-    //               transform: `translateX(-${offset}px)`,
-    //               height: "100%",
-    //             }}
-    //           >
-    //             {iplcontents.map((pane, index) => {
-    //               const isActive = index === currentIndex;
-    //               const isHidden = index >= iplcontents.length - 2;
-
-    //               return (
-    //                 <div
-    //                   key={pane.id}
-    //                   className={`trendingChennaiCard panes relative ${
-    //                     isActive ? "active" : ""
-    //                   } ${isHidden ? "hide" : ""}`}
-    //                   style={{
-    //                     flex: "0 0 auto",
-    //                     width: isActive ? activeWidth : defaultWidth,
-    //                     height: "100%",
-    //                     margin: "0 12px",
-    //                     fontWeight: isActive ? "bold" : "normal",
-    //                     boxSizing: "border-box",
-    //                     opacity: isHidden ? 0 : 1,
-    //                     visibility: isHidden ? "hidden" : "visible",
-    //                     transition:
-    //                       "all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-    //                     borderRadius: "20px",
-    //                     overflow: "hidden",
-    //                     background: isActive
-    //                       ? "linear-gradient(145deg, #f4a261 0%, #e76f51 50%, #f4a261 100%)"
-    //                       : "linear-gradient(145deg, #2a2a4a 0%, #1e1e3a 100%)",
-    //                     boxShadow: isActive
-    //                       ? "0 25px 50px rgba(244, 162, 97, 0.5), 0 0 0 2px rgba(255,255,255,0.3)"
-    //                       : "0 15px 35px rgba(0,0,0,0.5)",
-    //                   }}
-    //                 >
-    //                   <a
-    //                     href={`/trending-chennai/${pane.slug}`}
-    //                     className="block h-full relative"
-    //                   >
-    //                     <div className="hbintimg relative h-full overflow-hidden group">
-    //                       <img
-    //                         src={pane.Homeimage}
-    //                         alt={pane.name}
-    //                         className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
-    //                         style={{
-    //                           filter: isActive
-    //                             ? "brightness(1.1) contrast(1.15)"
-    //                             : "brightness(0.85)",
-    //                         }}
-    //                       />
-    //                       {/* Cricket LIVE badge */}
-    //                       <div className="absolute top-6 right-6 z-10 bg-yellow-400/95 text-black px-4 py-2 rounded-full text-sm font-bold shadow-2xl backdrop-blur-md border-2 border-white/30 animate-pulse">
-    //                         🏏 LIVE MATCH
-    //                       </div>
-    //                     </div>
-
-    //                     {/* Content overlay */}
-    //                     <div
-    //                       className="hbintCont absolute bottom-0 left-0 w-full h-full flex items-end p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10"
-    //                       style={{
-    //                         opacity: isActive ? 1 : 0,
-    //                         transition: "opacity 0.6s ease",
-    //                         backdropFilter: isActive ? "blur(15px)" : "none",
-    //                       }}
-    //                     >
-    //                       <div className="hbintContin text-white w-full max-w-md">
-    //                         <h3
-    //                           className="text-3xl font-black mb-3 drop-shadow-2xl"
-    //                           style={{ color: "#f4a261" }}
-    //                         >
-    //                           {pane.name}
-    //                         </h3>
-    //                         <p
-    //                           className="text-lg leading-relaxed drop-shadow-lg mb-4"
-    //                           style={{ color: "#e8e8e8" }}
-    //                         >
-    //                           {pane.para}
-    //                         </p>
-    //                         <div className="flex items-center space-x-3">
-    //                           <div className="w-4 h-4 bg-yellow-400 rounded-full animate-ping"></div>
-    //                           <span className="text-lg font-semibold opacity-90">
-    //                             Whistle Podu! 💛🦁
-    //                           </span>
-    //                         </div>
-    //                       </div>
-    //                     </div>
-    //                   </a>
-    //                 </div>
-    //               );
-    //             })}
-    //           </div>
-    //         </div>
-
-    //         {/* FIXED Arrow Navigation - Cricket themed */}
-    //         <div className="flex justify-center mt-8 space-x-4">
-    //           <button
-    //             onClick={handlePrev}
-    //             disabled={currentIndex === 0}
-    //             className={`cricket-prev-arrow w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-yellow-400/50 ${
-    //               currentIndex === 0
-    //                 ? "opacity-30 cursor-not-allowed bg-gray-600"
-    //                 : "bg-gradient-to-r from-yellow-500 to-orange-500 text-white hover:from-yellow-600 hover:to-orange-600 cursor-pointer"
-    //             }`}
-    //             style={{
-    //               boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
-    //             }}
-    //           >
-    //             ←
-    //           </button>
-
-    //           <button
-    //             onClick={handleNext}
-    //             disabled={currentIndex === maxIndex}
-    //             className={`cricket-next-arrow w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-yellow-400/50 ${
-    //               currentIndex === maxIndex
-    //                 ? "opacity-30 cursor-not-allowed bg-gray-600"
-    //                 : "bg-gradient-to-r from-yellow-500 to-orange-500 text-white hover:from-yellow-600 hover:to-orange-600 cursor-pointer"
-    //             }`}
-    //             style={{
-    //               boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
-    //             }}
-    //           >
-    //             →
-    //           </button>
-    //         </div>
-
-    //         {/* Dots indicator */}
-    //         <div className="flex justify-center mt-6 space-x-2">
-    //           {Array.from({ length: iplcontents.length }, (_, i) => (
-    //             <button
-    //               key={i}
-    //               onClick={() => setCurrentIndex(i)}
-    //               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-    //                 i === currentIndex
-    //                   ? "w-8 bg-gradient-to-r from-yellow-400 to-orange-500 scale-110 shadow-lg"
-    //                   : "bg-white/30 hover:bg-white/50"
-    //               }`}
-    //             />
-    //           ))}
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </section>
-    // </div>
   );
 }

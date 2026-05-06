@@ -329,18 +329,26 @@ const AdMedia = ({ ad, className = "", isMobile = false }) => {
         </motion.div>
 
         {/* Interactive CTA */}
-        <motion.div
-          initial={{ scale: 0, opacity: 0 }}
-          animate={
-            isHovered ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }
-          }
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 backdrop-blur-md px-6 py-3 rounded-2xl text-sm font-bold text-gray-800 shadow-2xl border-2 border-white/50 flex items-center space-x-2"
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+
+        <a
+          href={ad.targetUrl || "#"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block relative"
         >
-          <span>👆</span>
-          <span>{isMobile ? "Tap" : "Click"} to Explore</span>
-          <span>→</span>
-        </motion.div>
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            animate={
+              isHovered ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }
+            }
+            className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 backdrop-blur-md px-6 py-3 rounded-2xl text-sm font-bold text-gray-800 shadow-2xl border-2 border-white/50 flex items-center space-x-2"
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <span>👆</span>
+            <span>{isMobile ? "Tap" : "Click"} to Explore</span>
+            <span>→</span>
+          </motion.div>
+        </a>
 
         {/* Mobile-specific optimizations */}
         {isMobile && (
@@ -422,7 +430,7 @@ const TopAdCard = ({ ad }) => {
         className="absolute top-2 right-2 z-50 h-8 w-8 flex items-center justify-center rounded-full
        bg-white/90 backdrop-blur shadow-sm
        text-gray-500 hover:text-gray-900
-       hover:bg-white transition"
+       hover:bg-white transition absolute -top-2 -right-2 bg-white text-xs rounded-full w-5 h-5 buttonstyleadd z-50 "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -530,30 +538,56 @@ const InlineAdBox = ({ ads }) => {
   );
 };
 
-// MOBILE AD SETTINGS
 
-// {isMobile &&}
+//  const MobileTopAd = ({ ads }) => {
+//    const [show, setShow] = useState(true);
+
+//    if (!ads?.length || !show) return null;
+
+//    return (
+//      <div className="relative bg-white p-2 rounded-lg shadow mobileeaddd">
+//        <button
+//          onClick={() => setShow(false)}
+//          className="absolute -top-2 -right-2 bg-white text-xs rounded-full w-5 h-5 buttonstyleadd"
+//        >
+//          ✕
+//        </button>
+
+//        {ads.map((ad) => (
+//          <AdMedia key={ad.id} ad={ad} isMobile={true} />
+//        ))}
+//      </div>
+//    );
+//  };
 
 const MobileTopAd = ({ ads }) => {
-  if (!ads?.length) return null;
+  const [visibleAds, setVisibleAds] = useState(ads);
+
+  useEffect(() => {
+    setVisibleAds(ads);
+  }, [ads]);
+
+  if (!visibleAds?.length) return null;
+
   return (
-    // <div className="lg:hidden px-4 mt-4 space-y-3">
-    //   {ads.map((ad) => (
-    //     <MobileAdMedia key={ad.id} ad={ad} />
-    //   ))}
-    // </div>
+    <div className="space-y-3">
+      {visibleAds.map((ad) => (
+        <div
+          key={ad.id}
+          className="relative bg-white p-2 rounded-lg shadow mobileeaddd"
+        >
+          {/* ✅ Individual Close Button */}
+          <button
+            onClick={() =>
+              setVisibleAds((prev) => prev.filter((a) => a.id !== ad.id))
+            }
+            className="absolute -top-2 -right-2 bg-white text-xs rounded-full w-5 h-5 buttonstyleadd z-50"
+          >
+            ✕
+          </button>
 
-    <div className="relative bg-white p-2 rounded-lg shadow mobileeaddd">
-      <button
-        onClick={() => setShow(false)}
-        className="absolute -top-2 -right-2 bg-white text-xs rounded-full w-5 h-5 buttonstyleadd"
-      >
-        ✕
-      </button>
-
-      {ads.map((ad) => (
-        // <MobileAdMedia key={ad.id} ad={ad} />
-        <AdMedia key={ad.id} ad={ad} isMobile={true} />
+          <AdMedia ad={ad} isMobile={true} />
+        </div>
       ))}
     </div>
   );

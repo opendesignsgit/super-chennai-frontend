@@ -11214,42 +11214,42 @@ An exciting afternoon clash is set to take place as Mumbai Indians face Rajastha
       url: "",
     },
   },
-  {
-    id: 102370,
-    name: "KKR vs DC – IPL 2026 Showdown",
-    slug: "kkr-vs-dc-70th-match-indian-premier-league-2026",
-    para: "A thrilling evening clash as Kolkata Knight Riders take on Delhi Capitals at the iconic Eden Gardens",
-    matchday: " Date : Sunday, May 24",
-    matchcount: "Match : 70th Match",
-    TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
-    image: "/images/ipl/imagedesk26.jpg",
-    Homeimage: "/images/ipl/imagemob26.jpg",
-    link: "/link26",
-    duration: "Time : 7:30 PM",
-    league: "Series: Indian Premier League 2026",
-    genre: "Cricket | Sports | Entertainment",
-    venue: "Venue : Eden Gardens, Kolkata",
-    staidum: "Stadium : Eden Gardens",
-    city: "City : Kolkata",
-    capacity: "Capacity : 63,000",
-    ends: "Ends : High Court End, Pavilion End",
-    hometeam: "Team: Kolkata Knight Riders",
-    streamingmobile: " Streaming: JioHotstar",
-    streamingtv: "TV: Star Sports Network",
-    trendingDetails: `
-<p>
-A thrilling evening clash is set to unfold as Kolkata Knight Riders take on Delhi Capitals in the 70th match of the Indian Premier League 2026. Kolkata will look to maximize their home advantage at Eden Gardens, while Delhi will aim to counter with their balanced lineup and tactical approach. Eden Gardens is well known for high-scoring encounters, making it an ideal venue for big hitters and fast-paced cricket.
-</p>
-`,
-    TrendingLink: "",
-    YoutubeLink: "",
-    meta: {
-      title:
-        "KKR vs DC IPL 2026 – Eden Gardens Lights Up for Match 70!",
-      desc: "KKR vs DC, IPL 2026 Match 70 at Eden Gardens, Kolkata on May 24 at 7:30 PM. Kolkata Knight Riders & Delhi Capitals bring an evening of quality cricket to the iconic Eden arena!",
-      url: "",
-    },
-  },
+//   {
+//     id: 102370,
+//     name: "KKR vs DC – IPL 2026 Showdown",
+//     slug: "kkr-vs-dc-70th-match-indian-premier-league-2026",
+//     para: "A thrilling evening clash as Kolkata Knight Riders take on Delhi Capitals at the iconic Eden Gardens",
+//     matchday: " Date : Sunday, May 24",
+//     matchcount: "Match : 70th Match",
+//     TrendingCalendarCategory: "Sports | Cricket | IPL | Trending",
+//     image: "/images/ipl/imagedesk26.jpg",
+//     Homeimage: "/images/ipl/imagemob26.jpg",
+//     link: "/link26",
+//     duration: "Time : 7:30 PM",
+//     league: "Series: Indian Premier League 2026",
+//     genre: "Cricket | Sports | Entertainment",
+//     venue: "Venue : Eden Gardens, Kolkata",
+//     staidum: "Stadium : Eden Gardens",
+//     city: "City : Kolkata",
+//     capacity: "Capacity : 63,000",
+//     ends: "Ends : High Court End, Pavilion End",
+//     hometeam: "Team: Kolkata Knight Riders",
+//     streamingmobile: " Streaming: JioHotstar",
+//     streamingtv: "TV: Star Sports Network",
+//     trendingDetails: `
+// <p>
+// A thrilling evening clash is set to unfold as Kolkata Knight Riders take on Delhi Capitals in the 70th match of the Indian Premier League 2026. Kolkata will look to maximize their home advantage at Eden Gardens, while Delhi will aim to counter with their balanced lineup and tactical approach. Eden Gardens is well known for high-scoring encounters, making it an ideal venue for big hitters and fast-paced cricket.
+// </p>
+// `,
+//     TrendingLink: "",
+//     YoutubeLink: "",
+//     meta: {
+//       title:
+//         "KKR vs DC IPL 2026 – Eden Gardens Lights Up for Match 70!",
+//       desc: "KKR vs DC, IPL 2026 Match 70 at Eden Gardens, Kolkata on May 24 at 7:30 PM. Kolkata Knight Riders & Delhi Capitals bring an evening of quality cricket to the iconic Eden arena!",
+//       url: "",
+//     },
+//   },
 ];
 
 export const prideofchennaidata = [

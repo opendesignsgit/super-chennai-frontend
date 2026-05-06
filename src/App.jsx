@@ -342,6 +342,9 @@ import CricketLivePage from "./Pages/Activities/cricketLive";
 import CricketScrore from "./Components/CricketScrore";
 import CricketDetails from "./Components/CricketDetails";
 import TestHomePage from "./Pages/TestHomePage";
+import CricketsList from "./Pages/Crickets/CricketsList";
+
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -716,6 +719,11 @@ function App() {
 
       <Routes>
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
+
+
+        
+                <Route path="crickets_list" element={<CricketsList />} />
+
         <Route path="superchennai-restaurants" element={<RestaurantsPage />} />
         <Route path="test" element={<TestPage />} />
         <Route path="/chennai-events" element={<EventsPage />} />

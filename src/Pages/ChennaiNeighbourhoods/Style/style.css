@@ -901,7 +901,7 @@
   }
 }
 
-.neighstickkkk .searchhoodfilter {
+/* .neighstickkkk .searchhoodfilter {
   position: fixed;
   top: 195px;
   width: 100%;
@@ -922,7 +922,7 @@
   max-width: 1216px;
   display: flex;
   justify-content: center;
-}
+} */
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;

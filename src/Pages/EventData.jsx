@@ -10569,6 +10569,8 @@ LSG have maintained disciplined and tactical cricket throughout IPL 2026 with ba
 
 <p>
 RCB have played fearless and aggressive cricket throughout IPL 2026 with explosive batting, energetic fielding and improved death-over bowling performances. Bengaluru 
+smart bowling adjustments, attacking captaincy and composed decision-making under pressure. RCB’s fearless cricket, energetic fielding and high-intensity performances continue to make them one of the strongest contenders this season.
+
 </p>
 `,
     TrendingLink: "",
@@ -10664,7 +10666,7 @@ KKR have continued to deliver tactical and disciplined cricket throughout IPL 20
 <p>
 Rajasthan Royals have continued their fearless and entertaining style in IPL 2026 with explosive batting and energetic performances from young talents. RR maintained attacking intent during powerplays while their aggressive approach created momentum quickly in important matches. Captain Riyan Parag has encouraged positive cricket by backing young players confidently and maintaining aggressive match strategies throughout the season. Rajasthan’s fearless mindset and exciting gameplay make them one of the most dangerous teams in pressure situations.
 </p>
- <h3> Gujarat Titans(</h3>
+ <h3> Gujarat Titans</h3>
 
 <p>
 Gujarat Titans have once again displayed calm, balanced and disciplined cricket throughout IPL 2026 with composed batting and tactical bowling execution. GT focused heavily on building partnerships patiently while controlling pressure situations through intelligent match awareness and smart field placements. Captain Shubman Gill has led the team maturely by rotating bowlers effectively, controlling match tempo and making composed decisions during difficult situations. Gujarat’s consistency and tactical discipline continue to make them one of the most dependable teams this season.
@@ -10713,7 +10715,7 @@ CSK once again proved why experience and composure remain their biggest strength
 
 
 </p>
- <h3>Lucknow Super Giants(</h3>
+ <h3>Lucknow Super Giants</h3>
 
 <p>
 LSG focused on tactical and disciplined cricket throughout IPL 2026 with balanced performances in both batting and bowling departments. Lucknow controlled middle overs effectively, built partnerships patiently and accelerated strongly during death overs in pressure situations. Their calm gameplay and smart tactical execution helped them remain competitive consistently this season. Captain Rishabh Pant managed the team aggressively by making bold bowling changes, encouraging fearless batting and handling pressure moments with tactical awareness.
@@ -10764,7 +10766,7 @@ RCB played high-intensity cricket throughout IPL 2026 with aggressive batting, e
 
 
 </p>
- <h3>Mumbai Indians(</h3>
+ <h3>Mumbai Indians</h3>
 
 <p>
 Mumbai Indians have once again dominated IPL 2026 with explosive batting starts, fearless power-hitting and aggressive chasing performances throughout the tournament. MI constantly created scoring pressure during powerplays while their finishers delivered impactful performances during important death overs. Captain Hardik Pandya has managed the team aggressively through attacking field placements, fearless strategies and smart bowling changes during pressure situations. Mumbai’s high-intensity cricket and explosive batting lineup continue to make them one of the strongest contenders this season. 
@@ -11116,7 +11118,7 @@ Gujarat Titans have maintained calm, composed and balanced cricket throughout IP
 Punjab Kings have continued to impress throughout IPL 2026 with fearless batting, energetic fielding and aggressive performances during pressure situations. PBKS consistently attacked bowlers during powerplays while their bowling unit handled crucial death overs effectively through yorkers, slower deliveries and tactical execution. Captain Shreyas Iyer has led the side smartly through positive captaincy, aggressive field placements and confident decision-making during important phases. Punjab’s attacking mindset, fearless approach and improved consistency continue to make them one of the most exciting teams this season.
 
 </p>
- <h3> Royal Challengers Bangalore(</h3>
+ <h3> Royal Challengers Bangalore</h3>
 
 <p>
 RCB have entertained fans throughout IPL 2026 with fearless batting, explosive partnerships and aggressive gameplay across all departments. Bengaluru consistently created strong momentum through attacking powerplays, quick run acceleration and positive intent during crucial match situations. Captain Rajat Patidar has handled the side confidently through smart bowling adjustments, attacking captaincy and composed decision-making under pressure. RCB’s fearless cricket, energetic fielding and high-intensity performances continue to make them one of the strongest contenders this season.
@@ -11157,7 +11159,7 @@ RCB have entertained fans throughout IPL 2026 with fearless batting, explosive p
     streamingmobile: " Streaming: JioHotstar",
     streamingtv: "TV: Star Sports Network",
      trendingDetails: `
-    <h3>Delhi Capitals(</h3>
+    <h3>Delhi Capitals</h3>
 <p>
 Delhi Capitals have continued to showcase aggressive and energetic cricket throughout IPL 2026 with fearless batting starts and improved bowling combinations during crucial phases. DC consistently focused on creating early momentum through attacking powerplays while maintaining pressure through sharp fielding and positive gameplay. Captain Axar Patel has handled the side confidently through smart tactical decisions, aggressive field placements and fearless leadership during pressure situations. Delhi’s fighting spirit, attacking mindset and energetic performances continue to make them a dangerous team this season.
 
@@ -11523,7 +11525,7 @@ Rajasthan Royals have entertained fans throughout IPL 2026 with fearless cricket
   },
 
 
-  
+
 //   {
 //     id: 102370,
 //     name: "KKR vs DC – IPL 2026 Showdown",

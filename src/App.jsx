@@ -722,7 +722,7 @@ function App() {
 
 
         
-                <Route path="crickets_list" element={<CricketsList />} />
+                <Route path="ipl-2026-match-updates" element={<CricketsList />} />
 
         <Route path="superchennai-restaurants" element={<RestaurantsPage />} />
         <Route path="test" element={<TestPage />} />

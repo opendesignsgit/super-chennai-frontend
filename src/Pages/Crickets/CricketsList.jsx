@@ -9,6 +9,22 @@ const allEvents = iplcontents;
 
   return (
     <>
+      <Helmet>
+        <title>
+           IPL 2026 T20 Matches | Match Previews, Highlights & Updates
+        </title>
+        <meta
+          name="description"
+          content="Stay updated with IPL 2026 match previews, points table, T20 cricket highlights, fierce rivalries, team performances, and unforgettable moments from the season."
+        />
+        {/* <script type="application/ld+json">
+          {JSON.stringify(arattaiSchema)}
+        </script> */}
+        <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/ipl-2026-match-updates`}
+        />
+      </Helmet>
       <section className="accaodomationBannerSection">
         <div>
           <img

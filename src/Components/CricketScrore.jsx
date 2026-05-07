@@ -277,60 +277,12 @@ export default function CricketScrore() {
   }, []);
 
 
-  // const [pointsTable, setPointsTable] = useState([]);
-  // const [loadingTable, setLoadingTable] = useState(true);
 
-//   const staticPointsTable = [
-//   {
-//     Name: "Chennai Super Kings",
-//     Played: 10,
-//     Won: 7,
-//     Loss: 3,
-//     "No Result": 0,
-//     "Net Run Rate": "+0.650",
-//     Points: 14,
-//   },
-//   {
-//     Name: "Mumbai Indians",
-//     Played: 10,
-//     Won: 6,
-//     Loss: 4,
-//     "No Result": 0,
-//     "Net Run Rate": "+0.320",
-//     Points: 12,
-//   },
-//   {
-//     Name: "Royal Challengers Bangalore",
-//     Played: 10,
-//     Won: 6,
-//     Loss: 4,
-//     "No Result": 0,
-//     "Net Run Rate": "+0.210",
-//     Points: 12,
-//   },
-//   {
-//     Name: "Kolkata Knight Riders",
-//     Played: 10,
-//     Won: 5,
-//     Loss: 5,
-//     "No Result": 0,
-//     "Net Run Rate": "-0.050",
-//     Points: 10,
-//   },
-//   {
-//     Name: "Delhi Capitals",
-//     Played: 10,
-//     Won: 4,
-//     Loss: 6,
-//     "No Result": 0,
-//     "Net Run Rate": "-0.200",
-//     Points: 8,
-//   },
-// ];
 
 // const staticPointsTable = [
 //   {
 //     Name: "Punjab Kings",
+//     logo: "https://upload.wikimedia.org/wikipedia/en/d/d4/Punjab_Kings_Logo.svg",
 //     Played: 9,
 //     Won: 6,
 //     Loss: 2,
@@ -340,6 +292,7 @@ export default function CricketScrore() {
 //   },
 //   {
 //     Name: "Royal Challengers Bengaluru",
+//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/xUS54-BA0dFZPMtbCiHkzQ_48x48.png",
 //     Played: 9,
 //     Won: 6,
 //     Loss: 3,
@@ -349,6 +302,7 @@ export default function CricketScrore() {
 //   },
 //   {
 //     Name: "Sunrisers Hyderabad",
+//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/W0OCBYc05c5MFMrctF62kg_48x48.png",
 //     Played: 10,
 //     Won: 6,
 //     Loss: 4,
@@ -358,6 +312,7 @@ export default function CricketScrore() {
 //   },
 //   {
 //     Name: "Rajasthan Royals",
+//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/GqIU6xhQAnCpy_Cbr2LZRA_48x48.png",
 //     Played: 10,
 //     Won: 6,
 //     Loss: 4,
@@ -367,6 +322,7 @@ export default function CricketScrore() {
 //   },
 //   {
 //     Name: "Gujarat Titans",
+//     logo: "https://upload.wikimedia.org/wikipedia/en/0/09/Gujarat_Titans_Logo.svg",
 //     Played: 10,
 //     Won: 6,
 //     Loss: 4,
@@ -376,6 +332,7 @@ export default function CricketScrore() {
 //   },
 //   {
 //     Name: "Chennai Super Kings",
+//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/5G8eFjkPKNalIgL2FOtovg_48x48.png",
 //     Played: 10,
 //     Won: 5,
 //     Loss: 5,
@@ -385,6 +342,7 @@ export default function CricketScrore() {
 //   },
 //   {
 //     Name: "Delhi Capitals",
+//     logo: "https://upload.wikimedia.org/wikipedia/en/2/2f/Delhi_Capitals.svg",
 //     Played: 10,
 //     Won: 4,
 //     Loss: 6,
@@ -394,6 +352,7 @@ export default function CricketScrore() {
 //   },
 //   {
 //     Name: "Kolkata Knight Riders",
+//     logo: "https://upload.wikimedia.org/wikipedia/en/4/4c/Kolkata_Knight_Riders_Logo.svg",
 //     Played: 9,
 //     Won: 3,
 //     Loss: 5,
@@ -403,6 +362,7 @@ export default function CricketScrore() {
 //   },
 //   {
 //     Name: "Mumbai Indians",
+//     logo: "https://upload.wikimedia.org/wikipedia/en/c/cd/Mumbai_Indians_Logo.svg",
 //     Played: 10,
 //     Won: 3,
 //     Loss: 7,
@@ -412,6 +372,7 @@ export default function CricketScrore() {
 //   },
 //   {
 //     Name: "Lucknow Super Giants",
+//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/OqrL0ztLy13FBpvuF6GCBQ_48x48.png",
 //     Played: 9,
 //     Won: 2,
 //     Loss: 7,
@@ -420,15 +381,26 @@ export default function CricketScrore() {
 //     Points: 4,
 //   },
 // ];
+
 const staticPointsTable = [
+  {
+    Name: "Sunrisers Hyderabad",
+    logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/W0OCBYc05c5MFMrctF62kg_48x48.png",
+    Played: 11,
+    Won: 7,
+    Loss: 4,
+    "No Result": 0,
+    "Net Run Rate": "+0.737",
+    Points: 14,
+  },
   {
     Name: "Punjab Kings",
     logo: "https://upload.wikimedia.org/wikipedia/en/d/d4/Punjab_Kings_Logo.svg",
-    Played: 9,
+    Played: 10,
     Won: 6,
-    Loss: 2,
+    Loss: 3,
     "No Result": 1,
-    "Net Run Rate": "+0.855",
+    "Net Run Rate": "+0.571",
     Points: 13,
   },
   {
@@ -439,16 +411,6 @@ const staticPointsTable = [
     Loss: 3,
     "No Result": 0,
     "Net Run Rate": "+1.420",
-    Points: 12,
-  },
-  {
-    Name: "Sunrisers Hyderabad",
-    logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/W0OCBYc05c5MFMrctF62kg_48x48.png",
-    Played: 10,
-    Won: 6,
-    Loss: 4,
-    "No Result": 0,
-    "Net Run Rate": "+0.644",
     Points: 12,
   },
   {
@@ -526,37 +488,7 @@ const staticPointsTable = [
 const [pointsTable, setPointsTable] = useState(staticPointsTable);
 const [loadingTable, setLoadingTable] = useState(false);
 
-  // useEffect(() => {
-  //   const fetchPointsTable = async () => {
-  //     try {
-  //       const res = await fetch(
-  //         "https://ipl-okn0.onrender.com/ipl-2026-points-table",
-  //       );
-
-  //       if (!res.ok) throw new Error("API failed");
-
-  //       const data = await res.json();
-
-  //       const tableArray = Array.isArray(data)
-  //         ? data
-  //         : data.points_table
-  //           ? Object.values(data.points_table)
-  //           : [];
-
-  //       setPointsTable(tableArray);
-  //     } catch (err) {
-  //       console.error("Error fetching points table:", err);
-
-  //       // fallback data (important!)
-  //       setPointsTable([]);
-  //     } finally {
-  //       setLoadingTable(false);
-  //     }
-  //   };
-
-  //   fetchPointsTable();
-  // }, []);
-
+  
   return (
     <div className="tredingMainContainer">
       <div className="tredingChennaiRow">
@@ -592,7 +524,7 @@ const [loadingTable, setLoadingTable] = useState(false);
             </p>
             <div className="mt-4">
               <a
-                href="/crickets_List"
+                href="/ipl-2026-match-updates"
                 className="inline-block px-5 py-2 bg-black text-white text-sm font-semibold rounded hover:bg-gray-800 transition"
               >
                 View More →

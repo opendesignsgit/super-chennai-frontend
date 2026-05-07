@@ -1,6 +1,7 @@
 import "../../assets/Css/Eventstyle.css";
 import { iplcontents } from "../../Pages/EventData";
 
+import { Helmet } from "react-helmet-async";
 
 export default function CricketList() {
 

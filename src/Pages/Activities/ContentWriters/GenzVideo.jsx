@@ -64,7 +64,7 @@ export default function GenzVideoContent() {
             <div class="sc-cards-grid">
               <div class="sc-card sc-border-blue">
                 <div class="sc-icon-wrapper sc-bg-blue">
-                  <img src="/images/genz/Group18.svg" alt="" />
+                  <img src="/public/images/genz/Group18.svg" alt="" />
                 </div>
                 <h3 class="sc-card-title sc-text-blue">CREATE REAL CONTENT</h3>
                 <p class="sc-card-text">
@@ -75,7 +75,7 @@ export default function GenzVideoContent() {
 
               <div class="sc-card sc-border-pink">
                 <div class="sc-icon-wrapper sc-bg-pink">
-                  <img src="/images/genz/svg-img1.svg" alt="" />
+                  <img src="/public/images/genz/svg-img1.svg" alt="" />
                 </div>
                 <h3 class="sc-card-title sc-text-pink">BUILD YOUR IDENTITY</h3>
                 <p class="sc-card-text">
@@ -86,7 +86,7 @@ export default function GenzVideoContent() {
 
               <div class="sc-card sc-border-blue">
                 <div class="sc-icon-wrapper sc-bg-blue">
-                  <img src="/images/genz/Group16.svg" alt="" />
+                  <img src="/public/images/genz/Group16.svg" alt="" />
                 </div>
                 <h3 class="sc-card-title sc-text-blue">CREATIVE FREEDOM</h3>
                 <p class="sc-card-text">
@@ -97,7 +97,7 @@ export default function GenzVideoContent() {
 
               <div class="sc-card sc-border-pink">
                 <div class="sc-icon-wrapper sc-bg-pink">
-                  <img src="/images/genz/location-icon.svg" alt="" />
+                  <img src="/public/images/genz/location-icon.svg" alt="" />
                 </div>
                 <h3 class="sc-card-title sc-text-pink">REPRESENT CHENNAI</h3>
                 <p class="sc-card-text">
@@ -120,7 +120,7 @@ export default function GenzVideoContent() {
 
               <div class="sc-join-step">
                 <div class="sc-join-circle sc-join-bg-blue">
-                  <img src="/images/genz/Group12-new.svg" alt="" />
+                  <img src="/public/images/genz/Group12-new.svg" alt="" />
                 </div>
                 <h4 class="sc-join-step-num sc-join-text-blue">STEP 01</h4>
                 <p class="sc-join-step-desc">
@@ -132,7 +132,7 @@ export default function GenzVideoContent() {
 
               <div class="sc-join-step">
                 <div class="sc-join-circle sc-join-bg-pink">
-                  <img src="/images/genz/Group14.svg" alt="" />
+                  <img src="/public/images/genz/Group14.svg" alt="" />
                 </div>
                 <h4 class="sc-join-step-num sc-join-text-pink">STEP 02</h4>
                 <p class="sc-join-step-desc">
@@ -144,7 +144,7 @@ export default function GenzVideoContent() {
 
               <div class="sc-join-step">
                 <div class="sc-join-circle sc-join-bg-blue">
-                  <img src="/images/genz/Group15.svg" alt="" />
+                  <img src="/public/images/genz/Group15.svg" alt="" />
                 </div>
                 <h4 class="sc-join-step-num sc-join-text-blue">STEP 03</h4>
                 <p class="sc-join-step-desc">

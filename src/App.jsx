@@ -236,7 +236,6 @@ import KiteFestivalDay4 from "./Pages/KiteFestivalDay4";
 import NammaStories from "./Pages/NammaStories";
 import ContentWriters from "./Pages/Activities/ContentWriters/ContentWriters";
 
-
 import NewsLetter from "./Pages/NewsLetter";
 import PulicatLake from "./Pages/SubPages/LivePages/PulicatLake";
 import Yealgiri from "./Pages/SubPages/LivePages/Yelagiri";
@@ -346,8 +345,7 @@ import CricketScrore from "./Components/CricketScrore";
 import CricketDetails from "./Components/CricketDetails";
 import TestHomePage from "./Pages/TestHomePage";
 import CricketsList from "./Pages/Crickets/CricketsList";
-
-
+import GenzVideo from "./Pages/GenzVideo";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -723,12 +721,8 @@ function App() {
       <Routes>
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
 
-
-        
-                <Route path="ipl-2026-match-updates" element={<CricketsList />} />
-                                <Route path="content-writers" element={<ContentWriters />} />
-
-                
+        <Route path="ipl-2026-match-updates" element={<CricketsList />} />
+        <Route path="content-writers" element={<ContentWriters />} />
 
         <Route path="superchennai-restaurants" element={<RestaurantsPage />} />
         <Route path="test" element={<TestPage />} />
@@ -1022,6 +1016,8 @@ function App() {
         <Route path="/media-coverage" element={<NewsLetter />} />
         <Route path="/event-function" element={<EventFunction />} />
         <Route path="/namma-stories" element={<NammaStories />} />
+        <Route path="/genzvideo" element={<GenzVideo />} />
+
         <Route
           path="/reimagine-chennai-AI-art-challenge"
           element={<ReimagineChennai />}

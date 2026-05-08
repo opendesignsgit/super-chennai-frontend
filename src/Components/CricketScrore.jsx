@@ -279,212 +279,6 @@ export default function CricketScrore() {
 
 
 
-// const staticPointsTable = [
-//   {
-//     Name: "Punjab Kings",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/d/d4/Punjab_Kings_Logo.svg",
-//     Played: 9,
-//     Won: 6,
-//     Loss: 2,
-//     "No Result": 1,
-//     "Net Run Rate": "+0.855",
-//     Points: 13,
-//   },
-//   {
-//     Name: "Royal Challengers Bengaluru",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/xUS54-BA0dFZPMtbCiHkzQ_48x48.png",
-//     Played: 9,
-//     Won: 6,
-//     Loss: 3,
-//     "No Result": 0,
-//     "Net Run Rate": "+1.420",
-//     Points: 12,
-//   },
-//   {
-//     Name: "Sunrisers Hyderabad",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/W0OCBYc05c5MFMrctF62kg_48x48.png",
-//     Played: 10,
-//     Won: 6,
-//     Loss: 4,
-//     "No Result": 0,
-//     "Net Run Rate": "+0.644",
-//     Points: 12,
-//   },
-//   {
-//     Name: "Rajasthan Royals",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/GqIU6xhQAnCpy_Cbr2LZRA_48x48.png",
-//     Played: 10,
-//     Won: 6,
-//     Loss: 4,
-//     "No Result": 0,
-//     "Net Run Rate": "+0.510",
-//     Points: 12,
-//   },
-//   {
-//     Name: "Gujarat Titans",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/0/09/Gujarat_Titans_Logo.svg",
-//     Played: 10,
-//     Won: 6,
-//     Loss: 4,
-//     "No Result": 0,
-//     "Net Run Rate": "-0.147",
-//     Points: 12,
-//   },
-//   {
-//     Name: "Chennai Super Kings",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/5G8eFjkPKNalIgL2FOtovg_48x48.png",
-//     Played: 10,
-//     Won: 5,
-//     Loss: 5,
-//     "No Result": 0,
-//     "Net Run Rate": "+0.151",
-//     Points: 10,
-//   },
-//   {
-//     Name: "Delhi Capitals",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/2/2f/Delhi_Capitals.svg",
-//     Played: 10,
-//     Won: 4,
-//     Loss: 6,
-//     "No Result": 0,
-//     "Net Run Rate": "-0.949",
-//     Points: 8,
-//   },
-//   {
-//     Name: "Kolkata Knight Riders",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/4/4c/Kolkata_Knight_Riders_Logo.svg",
-//     Played: 9,
-//     Won: 3,
-//     Loss: 5,
-//     "No Result": 1,
-//     "Net Run Rate": "-0.539",
-//     Points: 7,
-//   },
-//   {
-//     Name: "Mumbai Indians",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/c/cd/Mumbai_Indians_Logo.svg",
-//     Played: 10,
-//     Won: 3,
-//     Loss: 7,
-//     "No Result": 0,
-//     "Net Run Rate": "-0.649",
-//     Points: 6,
-//   },
-//   {
-//     Name: "Lucknow Super Giants",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/OqrL0ztLy13FBpvuF6GCBQ_48x48.png",
-//     Played: 9,
-//     Won: 2,
-//     Loss: 7,
-//     "No Result": 0,
-//     "Net Run Rate": "-1.076",
-//     Points: 4,
-//   },
-// ];
-
-// const staticPointsTable = [
-//   {
-//     Name: "Sunrisers Hyderabad",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/W0OCBYc05c5MFMrctF62kg_48x48.png",
-//     Played: 11,
-//     Won: 7,
-//     Loss: 4,
-//     "No Result": 0,
-//     "Net Run Rate": "+0.737",
-//     Points: 14,
-//   },
-//   {
-//     Name: "Punjab Kings",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/d/d4/Punjab_Kings_Logo.svg",
-//     Played: 10,
-//     Won: 6,
-//     Loss: 3,
-//     "No Result": 1,
-//     "Net Run Rate": "+0.571",
-//     Points: 13,
-//   },
-//   {
-//     Name: "Royal Challengers Bengaluru",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/xUS54-BA0dFZPMtbCiHkzQ_48x48.png",
-//     Played: 9,
-//     Won: 6,
-//     Loss: 3,
-//     "No Result": 0,
-//     "Net Run Rate": "+1.420",
-//     Points: 12,
-//   },
-//   {
-//     Name: "Rajasthan Royals",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/GqIU6xhQAnCpy_Cbr2LZRA_48x48.png",
-//     Played: 10,
-//     Won: 6,
-//     Loss: 4,
-//     "No Result": 0,
-//     "Net Run Rate": "+0.510",
-//     Points: 12,
-//   },
-//   {
-//     Name: "Gujarat Titans",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/0/09/Gujarat_Titans_Logo.svg",
-//     Played: 10,
-//     Won: 6,
-//     Loss: 4,
-//     "No Result": 0,
-//     "Net Run Rate": "-0.147",
-//     Points: 12,
-//   },
-//   {
-//     Name: "Chennai Super Kings",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/5G8eFjkPKNalIgL2FOtovg_48x48.png",
-//     Played: 10,
-//     Won: 5,
-//     Loss: 5,
-//     "No Result": 0,
-//     "Net Run Rate": "+0.151",
-//     Points: 10,
-//   },
-//   {
-//     Name: "Delhi Capitals",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/2/2f/Delhi_Capitals.svg",
-//     Played: 10,
-//     Won: 4,
-//     Loss: 6,
-//     "No Result": 0,
-//     "Net Run Rate": "-0.949",
-//     Points: 8,
-//   },
-//   {
-//     Name: "Kolkata Knight Riders",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/4/4c/Kolkata_Knight_Riders_Logo.svg",
-//     Played: 9,
-//     Won: 3,
-//     Loss: 5,
-//     "No Result": 1,
-//     "Net Run Rate": "-0.539",
-//     Points: 7,
-//   },
-//   {
-//     Name: "Mumbai Indians",
-//     logo: "https://upload.wikimedia.org/wikipedia/en/c/cd/Mumbai_Indians_Logo.svg",
-//     Played: 10,
-//     Won: 3,
-//     Loss: 7,
-//     "No Result": 0,
-//     "Net Run Rate": "-0.649",
-//     Points: 6,
-//   },
-//   {
-//     Name: "Lucknow Super Giants",
-//     logo: "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/OqrL0ztLy13FBpvuF6GCBQ_48x48.png",
-//     Played: 9,
-//     Won: 2,
-//     Loss: 7,
-//     "No Result": 0,
-//     "Net Run Rate": "-1.076",
-//     Points: 4,
-//   },
-// ];
-
 const staticPointsTable = [
   {
     Name: "Sunrisers Hyderabad",
@@ -590,6 +384,82 @@ const staticPointsTable = [
 
 const [pointsTable, setPointsTable] = useState(staticPointsTable);
 const [loadingTable, setLoadingTable] = useState(false);
+
+
+//  const [pointsTable, setPointsTable] = useState([]);
+//   const [loadingTable, setLoadingTable] = useState(true);
+
+//   const getTeamLogo = (teamName) => {
+//     const logos = {
+//       "Sunrisers Hyderabad":
+//         "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/W0OCBYc05c5MFMrctF62kg_48x48.png",
+
+//       "Punjab Kings":
+//         "https://upload.wikimedia.org/wikipedia/en/d/d4/Punjab_Kings_Logo.svg",
+
+//       "Royal Challengers Bengaluru":
+//         "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/xUS54-BA0dFZPMtbCiHkzQ_48x48.png",
+
+//       "Rajasthan Royals":
+//         "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/GqIU6xhQAnCpy_Cbr2LZRA_48x48.png",
+
+//       "Gujarat Titans":
+//         "https://upload.wikimedia.org/wikipedia/en/0/09/Gujarat_Titans_Logo.svg",
+
+//       "Chennai Super Kings":
+//         "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/5G8eFjkPKNalIgL2FOtovg_48x48.png",
+
+//       "Delhi Capitals":
+//         "https://upload.wikimedia.org/wikipedia/en/2/2f/Delhi_Capitals.svg",
+
+//       "Kolkata Knight Riders":
+//         "https://upload.wikimedia.org/wikipedia/en/4/4c/Kolkata_Knight_Riders_Logo.svg",
+
+//       "Mumbai Indians":
+//         "https://upload.wikimedia.org/wikipedia/en/c/cd/Mumbai_Indians_Logo.svg",
+
+//       "Lucknow Super Giants":
+//         "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/OqrL0ztLy13FBpvuF6GCBQ_48x48.png",
+//     };
+
+//     return logos[teamName] || "";
+//   };
+
+//   useEffect(() => {
+//     fetch(
+//       "https://api.cricapi.com/v1/series?apikey=5a56adc7-d735-4a11-8cc7-8ec1581112d0"
+//     )
+//       .then((res) => res.json())
+//       .then((data) => {
+//         console.log("API DATA", data);
+
+//         if (data.status !== "success") {
+//           console.log("Failed");
+//           return;
+//         }
+
+//         const formattedData = data.data.map((team) => ({
+//           Name: team.teamName,
+//           logo: getTeamLogo(team.teamName),
+//           Played: team.matches,
+//           Won: team.wins,
+//           Loss: team.loss,
+//           "No Result": team.noResult,
+//           "Net Run Rate":
+//             team.netRunRate > 0
+//               ? `+${team.netRunRate}`
+//               : `${team.netRunRate}`,
+//           Points: team.points,
+//         }));
+
+//         setPointsTable(formattedData);
+//         setLoadingTable(false);
+//       })
+//       .catch((err) => {
+//         console.log(err);
+//         setLoadingTable(false);
+//       });
+//   }, []);
 
   
   return (
@@ -900,6 +770,8 @@ const [loadingTable, setLoadingTable] = useState(false);
           </div> */}
         </div>
       </section>
+
+      
     </div>
   );
 }

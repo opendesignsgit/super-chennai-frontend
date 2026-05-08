@@ -234,6 +234,9 @@ import EventFunction from "./Pages/EventFunction";
 import KiteFestivalDay3 from "./Pages/KiteFestivalDay3";
 import KiteFestivalDay4 from "./Pages/KiteFestivalDay4";
 import NammaStories from "./Pages/NammaStories";
+import ContentWriters from "./Pages/Activities/ContentWriters/ContentWriters";
+
+
 import NewsLetter from "./Pages/NewsLetter";
 import PulicatLake from "./Pages/SubPages/LivePages/PulicatLake";
 import Yealgiri from "./Pages/SubPages/LivePages/Yelagiri";
@@ -723,6 +726,9 @@ function App() {
 
         
                 <Route path="ipl-2026-match-updates" element={<CricketsList />} />
+                                <Route path="content-writers" element={<ContentWriters />} />
+
+                
 
         <Route path="superchennai-restaurants" element={<RestaurantsPage />} />
         <Route path="test" element={<TestPage />} />

@@ -346,6 +346,9 @@ import CricketDetails from "./Components/CricketDetails";
 import TestHomePage from "./Pages/TestHomePage";
 import CricketsList from "./Pages/Crickets/CricketsList";
 import GenzVideo from "./Pages/GenzVideo";
+import GenzVideoContent from "./Pages/Activities/ContentWriters/GenzVideo";
+
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -1017,6 +1020,9 @@ function App() {
         <Route path="/event-function" element={<EventFunction />} />
         <Route path="/namma-stories" element={<NammaStories />} />
         <Route path="/genzvideo" element={<GenzVideo />} />
+                <Route path="/genzvideocontent" element={<GenzVideoContent />} />
+
+        
 
         <Route
           path="/reimagine-chennai-AI-art-challenge"

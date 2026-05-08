@@ -1794,3 +1794,27 @@
 .CrickettredingMainContainer {
   background: radial-gradient(ellipse at center, #1a1a2e 0%, #0f0f23 100%);
 }
+
+.sc-phone-wrapper {
+  position: relative;
+  width: 40%;
+}
+
+.sc-phone-input {
+  padding-right: 145px !important;
+}
+
+.sc-phone-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: auto;
+  min-width: 130px;
+  height: 44px;
+  padding: 0 14px;
+  font-size: 13px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

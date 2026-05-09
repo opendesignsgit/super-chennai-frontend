@@ -37,7 +37,7 @@ const ImagePopup = ({ onClose, imageUrl }) => {
         >
           {/* <Link to="/namma-stories#NammaStoriesVideoId" onClick={onClose}> */}
           {/* <Link to="/chennai-conclave" onClick={onClose}> */}
-          <a href="day-to-deliver-quiz">
+          <a href="contest/gen-z-content-creators">
             <img
               src={imageUrl}
               alt="Popup"

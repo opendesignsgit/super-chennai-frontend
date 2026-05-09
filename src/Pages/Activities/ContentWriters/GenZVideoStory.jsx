@@ -711,12 +711,17 @@ const ContactSalesForm = () => {
         setOtp("");
         setOtpSent(false);
 
+
         setVideoFile(null);
         setVideoFileName("");
 
-        setTimeout(() => {
-          navigate("/thankyou");
-        }, 1200);
+        // setTimeout(() => {
+        //   navigate("/thankyou");
+        //  }, 1200);
+       
+
+        navigate("/thank-you", { state: { from: "content-writers" } });
+
       } else {
         toast.error("Submission failed");
       }

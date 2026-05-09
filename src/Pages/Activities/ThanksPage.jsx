@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 export default function Thankyou() {
   const location = useLocation();
   const from = location.state?.from;
-  // const from = "soumya";
+  // const from = "content-writers";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -45,6 +45,15 @@ export default function Thankyou() {
             ? "/images/VIVEK-TQ-BANNER-mobile.jpeg"
             : "/images/thankyou-vivek-banner.jpeg",
         );
+           } else if (from === "content-writers") {
+        setImageSrc(
+          isMobile
+            ? "/images/Banner - thankyou-content.png"
+            : "/images/Banner - thankyou-content.png",
+        );
+
+
+       
       } else if (from === "jahabar") {
         setImageSrc(
           isMobile
@@ -147,6 +156,26 @@ export default function Thankyou() {
                 We appreciate your interest. Your registration is under review,
                 and your participation is confirmed only upon receiving an email
                 from our team.
+              </p>
+            </div>
+          )}
+
+            {from === "content-writers" && (
+            <div className="workIntro">
+              <h1>You Made It 🎉</h1>
+
+              <p>
+               Thanks for locking your spot with us ✨{" "}
+                {/* <strong>Super Chennai Conclave</strong>. */}
+              </p>
+
+              <p>
+                We’ve received your details and our team will review everything soon
+                Our team will get in touch with you soon regarding the next steps 🚀
+
+              </p>
+              <p>
+                Stay tuned — good things are coming 💫
               </p>
             </div>
           )}

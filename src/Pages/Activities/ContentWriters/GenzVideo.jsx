@@ -25,28 +25,27 @@ export default function GenzVideoContent() {
           name="description"
           content="From local slang to street culture, Super Chennai celebrates Gen Z content creators sharing authentic Chennai stories through creativity, reels, and real vibes."
         />
-        <link
-          rel="canonical"
-          href="/contest/gen-z-content-creators"
-        />
+        <link rel="canonical" href="/contest/gen-z-content-creators" />
       </Helmet>
 
       <div className="kslkskskskss">
         <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
           {/* Images */}
           <div className="relative z-0">
-            <img
-              className="eventsCalenderIamge hidden sm:block w-full"
-              src="/images/genz/herobannergenz.jpeg"
-              alt="Super Chennai Quiz"
-            />
+            <a href="#contactform">
+              <img
+                className="eventsCalenderIamge hidden sm:block w-full"
+                src="/images/genz/herobannergenz.jpeg"
+                alt="Super Chennai Quiz"
+              />
 
-            {/* Mobile Image */}
-            <img
-              className="block sm:hidden w-full"
-              src="/images/genz/mobilebannerrr.jpeg"
-              alt="Super Chennai Quiz Mobile"
-            />
+              {/* Mobile Image */}
+              <img
+                className="block sm:hidden w-full"
+                src="/images/genz/mobilebannerrr.jpeg"
+                alt="Super Chennai Quiz Mobile"
+              />
+            </a>
           </div>
 
           {/* Gradient Overlay */}

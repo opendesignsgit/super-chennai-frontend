@@ -730,7 +730,7 @@ const ContactSalesForm = () => {
   };
 
   return (
-    <section className="sc-form-section geznzzzz">
+    <section className="sc-form-section geznzzzz" id="contactform">
       <div className="sc-form-container container">
         {/* LEFT SIDE */}
 
@@ -815,6 +815,17 @@ const ContactSalesForm = () => {
 
             {/* EMAIL + OTP */}
             <div className="sc-form-row">
+
+                 {otpSent && (
+                <input
+                  type="text"
+                  placeholder="Enter OTP"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                  className="sc-form-input"
+                  required
+                />
+              )}
               <input
                 type="email"
                 name="email"
@@ -827,16 +838,7 @@ const ContactSalesForm = () => {
 
               {/* SHOW OTP FIELD ONLY AFTER SEND OTP */}
 
-              {otpSent && (
-                <input
-                  type="text"
-                  placeholder="Enter OTP"
-                  value={otp}
-                  onChange={(e) => setOtp(e.target.value)}
-                  className="sc-form-input"
-                  required
-                />
-              )}
+           
             </div>
 
             {/* <div className="sc-form-row">

@@ -21,6 +21,7 @@ export default function AdminView() {
    const [conclaveData, setConclaveData] = useState([]);
    const [arattaiData, setArattaiData] = useState([]);
    const [arattaiJahabarData, setArattaiJahabarData] = useState([]);
+   const [contentCreatorsData, setContentCreatorsData] = useState([]);
 
   /* ================= AUTH CHECK ================= */
   useEffect(() => {
@@ -40,12 +41,22 @@ export default function AdminView() {
     fetchConclave();
     fetchArattai();
     fetchArattaiJahabar(); 
+    fetchContentCreators();
   };
 
 
   
 
   /* ================= API CALLS ================= */
+  const fetchContentCreators = async () => {
+  const res = await axios.get(
+    "https://api.superchennai.com/api/content/content-creators"
+  );
+
+  if (res.data?.success) {
+    setContentCreatorsData(res.data.data || []);
+  }
+};
 
   const fetchArattaiJahabar = async () => {
   const res = await axios.get(
@@ -338,6 +349,52 @@ const downloadArattaiJahabarXLS = () => {
   XLSX.writeFile(workbook, "Arattai_Jahabar_Registrations.xlsx");
 };
 
+const downloadContentCreatorsXLS = () => {
+  if (!contentCreatorsData || contentCreatorsData.length === 0) return;
+
+  const verifiedOnly = contentCreatorsData.filter(
+    (d) => d.is_mobile_verified === true
+  );
+
+  if (verifiedOnly.length === 0) {
+    alert("No verified registrations found.");
+    return;
+  }
+
+  const formattedData = verifiedOnly.map((d, i) => {
+    const { date, time } = formatDateTime(d.created_at);
+
+    return {
+      "S.No": i + 1,
+      Name: d.name || "",
+      Email: d.email || "",
+      Phone: d.mobile || "",
+      "Video URL": d.video_url || "",
+      "Uploaded Video": d.video_file
+        ? `https://api.superchennai.com/uploads/videos/${d.video_file}`
+        : "",
+      Description: d.description || "",
+      Date: date,
+      Time: time,
+    };
+  });
+
+  const worksheet = XLSX.utils.json_to_sheet(formattedData);
+
+  const workbook = XLSX.utils.book_new();
+
+  XLSX.utils.book_append_sheet(
+    workbook,
+    worksheet,
+    "Content Creators"
+  );
+
+  XLSX.writeFile(
+    workbook,
+    "Content_Creators_Registrations.xlsx"
+  );
+};
+
 
   return (
     <>
@@ -399,6 +456,7 @@ const downloadArattaiJahabarXLS = () => {
               ["trivia", "Trivia"],
               ["arattai", "Arattai-with-aruna"],
               ["arattai-jahabar", "Arattai - Jahabar Sadique"],
+              ["content-creators", "Content Creators"],
             ].map(([key, label]) => (
               <button
                 key={key}
@@ -424,6 +482,17 @@ const downloadArattaiJahabarXLS = () => {
               </button>
             </div>
           )}
+          {activeTab === "content-creators" && (
+  <div className="flex justify-end px-6 mb-4">
+    <button
+      onClick={downloadContentCreatorsXLS}
+      className="bg-green-700 text-white px-4 py-2 rounded font-semibold hover:bg-green-800"
+    >
+      ⬇ Download Content Creator Entries
+    </button>
+  </div>
+)}
+          
 
           {/* CONTENT */}
           <div className="p-6">
@@ -610,6 +679,17 @@ const downloadArattaiJahabarXLS = () => {
                 )}
               </div>
             )}
+
+            {activeTab === "content-creators" && (
+  <SimpleTable
+    title="Content Creators"
+    data={contentCreatorsData.filter(
+      (d) => d.is_mobile_verified === true
+    )}
+    description
+    contentCreatorVideo
+  />
+)}
           </div>
         </>
       )}
@@ -619,7 +699,7 @@ const downloadArattaiJahabarXLS = () => {
 
 /* ================= SIMPLE TABLE ================= */
 
-function SimpleTable({ title, data, images, video, showMessage, description }) {
+function SimpleTable({ title, data, images, video, showMessage, description,contentCreatorVideo, }) {
   return (
     <div className="admin-table-wrapper">
       <h2 className="admin-table-title">{title}</h2>
@@ -650,6 +730,8 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
               <th>Time</th>
               {images && <th>Images</th>}
               {video && <th>Video</th>}
+              {contentCreatorVideo && <th>Video Link</th>}
+{contentCreatorVideo && <th>Uploaded Video</th>}
             </tr>
           </thead>
 
@@ -750,6 +832,39 @@ function SimpleTable({ title, data, images, video, showMessage, description }) {
                       )}
                     </td>
                   )}
+                  {contentCreatorVideo && (
+  <td className="text-center">
+    {d.video_url ? (
+      <a
+        href={d.video_url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-3 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+      >
+        Open Link
+      </a>
+    ) : (
+      "—"
+    )}
+  </td>
+)}
+
+{contentCreatorVideo && (
+  <td className="text-center">
+    {d.video_file ? (
+      <a
+        href={`https://api.superchennai.com/uploads/videos/${d.video_file}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
+      >
+        View Video
+      </a>
+    ) : (
+      "—"
+    )}
+  </td>
+)}
                 </tr>
               );
             })}

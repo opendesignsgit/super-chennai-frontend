@@ -20,7 +20,7 @@
 }
 
 .sc-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -31,6 +31,7 @@
 .sc-main-title {
   font-size: 80px;
   font-weight: 500;
+  line-height: 78px;
   color: var(--sc-dark);
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -148,11 +149,14 @@
   text-align: center;
   font-family: "Inter", sans-serif;
   overflow: hidden;
-  /* border-bottom: 2px solid #ddd; */
-  background-image: url("/public/images/genz/bg-second.jpeg");
+  /* border-bottom: 2px solid rgb(221 221 221 / 20%);
+  border-top: 2px solid rgb(221 221 221 / 20%);
+  background-image: url("/public/images/genz/middle-frame.jpeg"); */
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  padding-top: 40px;
+  background-color: #f8f8f8;
 }
 
 .sc-join-container {
@@ -273,6 +277,7 @@
   background-image: url("/public/images/genz/bg-one.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 0;
 }
 
 .sc-form-container {
@@ -422,6 +427,16 @@
   font-weight: 500;
 }
 
+.sc-form-submit-btn.forminsidebutton {
+  width: 64px;
+  font-size: 14px;
+  padding: 18px 10px;
+}
+
+.geznzzzz .sc-phone-wrapper {
+  width: auto;
+}
+
 .sc-form-submit-btn:hover {
   opacity: 0.9;
 }
@@ -445,5 +460,775 @@
 
   .sc-form-main-title {
     font-size: 2.8rem;
+  }
+}
+
+.newsectionnambaaagenx .sc-main-title {
+  text-transform: lowercase !important;
+  text-align: center;
+}
+.newsectionnambaaagenx h2 {
+  text-transform: lowercase !important;
+}
+
+.newsectionnambaaagenx .sc-description {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.newflexconatinerrrr {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 50px;
+}
+
+.newsectionnambaaagenx {
+  padding: 50px 0;
+  padding-top: 100px;
+  background-image: url("/public/images/genz/footeframe.jpeg");
+  border-bottom: 2px solid rgb(221 221 221 / 20%);
+  border-top: 2px solid rgb(221 221 221 / 20%);
+}
+
+.newsectionnambaaagenx .sc-description .sc-text-pink,
+.newsectionnambaaagenx .sc-description .sc-text-blue {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 1600px) and (min-width: 1301px) {
+  .sc-main-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .newflexconatinerrrr {
+    column-gap: 40px;
+  }
+
+  .newsectionnambaaagenx {
+    padding-top: 50px;
+    background-size: cover;
+  }
+
+  .newsectionnambaaagenx .sc-description {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .newsectionnambaaagenx .sc-description .sc-text-pink,
+  .newsectionnambaaagenx .sc-description .sc-text-blue {
+    font-size: 15px;
+  }
+
+  .sc-benefits-sections {
+    padding-top: 40px;
+  }
+
+  .sc-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sc-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding-bottom: 0;
+  }
+
+  .sc-card-title {
+    font-size: 24px;
+  }
+
+  .sc-benefits-section {
+    padding-top: 30px;
+  }
+
+  .sc-join-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .sc-join-section {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .sc-join-circle {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 12px;
+  }
+
+  .sc-join-step-desc {
+    font-size: 14px;
+  }
+
+  .sc-form-main-title {
+    font-size: 60px;
+    line-height: 56px;
+    margin-bottom: 10px;
+  }
+
+  .sc-form-subtext {
+    font-size: 15px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1101px) {
+  .sc-main-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .newflexconatinerrrr {
+    column-gap: 40px;
+  }
+
+  .newsectionnambaaagenx {
+    padding-top: 50px;
+    background-size: cover;
+  }
+
+  .newsectionnambaaagenx .sc-description {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .newsectionnambaaagenx .sc-description .sc-text-pink,
+  .newsectionnambaaagenx .sc-description .sc-text-blue {
+    font-size: 15px;
+  }
+
+  .sc-benefits-sections {
+    padding-top: 40px;
+  }
+
+  .sc-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sc-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+    padding-bottom: 0;
+  }
+
+  .sc-card-title {
+    font-size: 24px;
+  }
+
+  .sc-benefits-section {
+    padding-top: 30px;
+  }
+
+  .sc-join-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .sc-join-section {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .sc-join-circle {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 12px;
+  }
+
+  .sc-join-step-desc {
+    font-size: 14px;
+  }
+
+  .sc-form-main-title {
+    font-size: 60px;
+    line-height: 56px;
+    margin-bottom: 10px;
+  }
+
+  .sc-form-subtext {
+    font-size: 15px;
+    max-width: 300px;
+  }
+
+  .sc-form-container {
+    max-width: 900px;
+    display: flex;
+    column-gap: 40px;
+  }
+
+  .sc-form-section {
+    padding-top: 60px;
+  }
+
+  .kslkskskskss .sc-form-card {
+    width: 48%;
+  }
+
+  .kslkskskskss .sc-form-branding {
+    width: 37%;
+  }
+
+  .sc-form-image-wrapper {
+    margin-top: 20px;
+  }
+
+  .sc-form-row {
+    flex-direction: column;
+  }
+
+  .sc-form-submit-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 901px) {
+  .sc-main-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .newflexconatinerrrr {
+    column-gap: 40px;
+    flex-direction: column;
+  }
+
+  .newsectionnambaaagenx {
+    padding-top: 50px;
+    background-size: auto;
+    background-position: right;
+  }
+
+  .newsectionnambaaagenx .sc-description {
+    font-size: 14px;
+    margin-top: 15px;
+    width: 70%;
+    margin-left: auto;
+  }
+
+  .newsectionnambaaagenx .sc-description .sc-text-pink,
+  .newsectionnambaaagenx .sc-description .sc-text-blue {
+    font-size: 15px;
+  }
+
+  .sc-benefits-sections {
+    padding-top: 40px;
+  }
+
+  .sc-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sc-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .sc-card {
+    width: 33%;
+  }
+
+  .sc-card-title {
+    font-size: 24px;
+  }
+
+  .sc-benefits-section {
+    padding-top: 30px;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .sc-join-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .sc-join-section {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .sc-join-circle {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 12px;
+  }
+
+  .sc-join-step-desc {
+    font-size: 14px;
+  }
+
+  .sc-form-main-title {
+    font-size: 60px;
+    line-height: 56px;
+    margin-bottom: 10px;
+  }
+
+  .sc-form-subtext {
+    font-size: 15px;
+    max-width: 300px;
+    padding-left: 20px;
+  }
+
+  .sc-form-container {
+    max-width: 900px;
+    display: flex;
+    column-gap: 26px;
+  }
+
+  .sc-form-section {
+    padding-top: 60px;
+  }
+
+  .kslkskskskss .sc-form-card {
+    width: 50%;
+  }
+
+  .kslkskskskss .sc-form-branding {
+    width: 37%;
+  }
+
+  .sc-form-image-wrapper {
+    margin-top: 35px;
+  }
+
+  .sc-form-row {
+    flex-direction: column;
+  }
+
+  .sc-form-submit-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .sc-main-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .kslkskskskss .accaodomationBannerSection img {
+    height: 284px !important;
+  }
+
+  .kslkskskskss .sc-phone-input {
+    width: 100%;
+  }
+
+  .newflexconatinerrrr {
+    column-gap: 40px;
+    flex-direction: column;
+  }
+
+  .newsectionnambaaagenx {
+    padding-top: 50px;
+    background-size: auto;
+    background-position: right;
+  }
+
+  .newsectionnambaaagenx .sc-description {
+    font-size: 14px;
+    margin-top: 15px;
+    width: 70%;
+    margin-left: auto;
+  }
+
+  .newsectionnambaaagenx .sc-description .sc-text-pink,
+  .newsectionnambaaagenx .sc-description .sc-text-blue {
+    font-size: 15px;
+  }
+
+  .sc-benefits-sections {
+    padding-top: 40px;
+  }
+
+  .sc-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sc-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .sc-card {
+    width: 33%;
+  }
+
+  .sc-card-title {
+    font-size: 24px;
+  }
+
+  .sc-benefits-section {
+    padding-top: 30px;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .sc-join-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .sc-join-section {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .sc-join-circle {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 12px;
+  }
+
+  .sc-join-step-desc {
+    font-size: 14px;
+  }
+
+  .sc-form-main-title {
+    font-size: 60px;
+    line-height: 56px;
+    margin-bottom: 10px;
+  }
+
+  .sc-form-subtext {
+    font-size: 15px;
+    max-width: 300px;
+    padding-left: 20px;
+  }
+
+  .sc-form-container {
+    max-width: 900px;
+    display: flex;
+    column-gap: 26px;
+    flex-direction: column;
+  }
+
+  .sc-form-section {
+    padding-top: 60px;
+  }
+
+  .kslkskskskss .sc-form-card {
+    width: 59%;
+    margin-top: 50px;
+  }
+
+  .kslkskskskss .sc-form-branding {
+    width: 60%;
+  }
+
+  .sc-form-image-wrapper {
+    margin-top: 35px;
+  }
+
+  .sc-form-row {
+    flex-direction: column;
+  }
+
+  .sc-form-submit-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 601px) {
+  .sc-main-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .newflexconatinerrrr {
+    column-gap: 40px;
+    flex-direction: column;
+  }
+
+  .newsectionnambaaagenx {
+    padding-top: 50px;
+    background-size: auto;
+    background-position: right;
+  }
+
+  .newsectionnambaaagenx .sc-description {
+    font-size: 14px;
+    margin-top: 15px;
+    width: 70%;
+    margin-left: auto;
+  }
+
+  .newsectionnambaaagenx .sc-description .sc-text-pink,
+  .newsectionnambaaagenx .sc-description .sc-text-blue {
+    font-size: 15px;
+  }
+
+  .sc-benefits-sections {
+    padding-top: 40px;
+  }
+
+  .sc-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sc-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .sc-card {
+    width: 50%;
+  }
+
+  .sc-card-title {
+    font-size: 24px;
+  }
+
+  .sc-benefits-section {
+    padding-top: 30px;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .sc-join-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .sc-join-section {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .sc-join-circle {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 12px;
+  }
+
+  .sc-join-step-desc {
+    font-size: 14px;
+  }
+
+  .sc-form-main-title {
+    font-size: 60px;
+    line-height: 56px;
+    margin-bottom: 10px;
+  }
+
+  .sc-form-subtext {
+    font-size: 15px;
+    max-width: 300px;
+    padding-left: 20px;
+  }
+
+  .sc-form-container {
+    max-width: 900px;
+    display: flex;
+    column-gap: 26px;
+    flex-direction: column;
+  }
+
+  .sc-form-section {
+    padding-top: 60px;
+  }
+
+  .kslkskskskss .sc-form-card {
+    width: 77%;
+    margin-top: 50px;
+  }
+
+  .kslkskskskss .sc-form-branding {
+    width: 60%;
+  }
+
+  .sc-form-image-wrapper {
+    margin-top: 35px;
+  }
+
+  .sc-form-row {
+    flex-direction: column;
+  }
+
+  .sc-form-submit-btn {
+    font-size: 16px;
+  }
+
+  .kslkskskskss .accaodomationBannerSection img {
+    height: max-content;
+  }
+}
+
+@media (max-width: 600px) {
+  .sc-main-title {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  .newflexconatinerrrr {
+    column-gap: 40px;
+    flex-direction: column;
+  }
+
+  .newsectionnambaaagenx {
+    padding-top: 0px;
+    background-size: auto;
+    background-position: left;
+    background-image: url("/public/images/genz/bg-mobile-1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: none;
+  }
+
+  .newsectionnambaaagenx .sc-description {
+    font-size: 15px;
+    margin-top: 15px;
+    width: 90%;
+    margin-left: auto;
+  }
+
+  .newsectionnambaaagenx .sc-description .sc-text-pink,
+  .newsectionnambaaagenx .sc-description .sc-text-blue {
+    font-size: 15px;
+  }
+
+  .sc-benefits-sections {
+    padding-top: 40px;
+  }
+
+  .sc-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sc-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .sc-card {
+    width: 85%;
+  }
+
+  .sc-card-title {
+    font-size: 24px;
+  }
+
+  .sc-benefits-section {
+    padding-top: 30px;
+    background-position: left;
+    background-size: cover;
+    background-image: none;
+  }
+
+  .sc-join-title {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  .sc-join-section {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .sc-join-circle {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 12px;
+  }
+
+  .sc-join-step-desc {
+    font-size: 14px;
+  }
+
+  .sc-form-main-title {
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .sc-form-textarea {
+    height: 140px;
+    resize: vertical;
+  }
+
+  .sc-form-subtext {
+    font-size: 15px;
+    max-width: 300px;
+    padding-left: 20px;
+    padding-left: 0;
+  }
+
+  .sc-form-container {
+    max-width: 100%;
+    display: flex;
+    column-gap: 26px;
+    flex-direction: column;
+  }
+
+  .sc-join-timeline {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .sc-form-section {
+    padding-top: 60px;
+    background-position: right;
+  }
+
+  .kslkskskskss .sc-form-card {
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+
+  .kslkskskskss .sc-form-branding {
+    width: 100%;
+  }
+
+  .sc-form-image-wrapper {
+    margin-top: 10px;
+  }
+
+  .sc-form-row {
+    flex-direction: column;
+  }
+
+  .sc-form-submit-btn {
+    font-size: 14px;
+    padding: 14px 8px;
+  }
+  .geznzzzz .sc-phone-wrapper {
+    width: 100%;
+  }
+
+  .geznzzzz .sc-phone-input {
+    padding-right: 0 !important;
+    width: 100%;
+  }
+
+  .sc-form-submit-btn.forminsidebutton {
+    width: 100px;
+    font-size: 14px;
+    padding: 15px 9px;
+    min-width: 100px;
+    height: 36px;
+    margin-top: 4px;
+  }
+
+  .kslkskskskss .accaodomationBannerSection img {
+    height: max-content;
   }
 }

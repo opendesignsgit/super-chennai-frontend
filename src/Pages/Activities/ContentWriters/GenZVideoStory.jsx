@@ -730,8 +730,8 @@ const ContactSalesForm = () => {
   };
 
   return (
-    <section className="sc-form-section">
-      <div className="sc-form-container">
+    <section className="sc-form-section geznzzzz">
+      <div className="sc-form-container container">
         {/* LEFT SIDE */}
 
         <div className="sc-form-branding">
@@ -802,7 +802,7 @@ const ContactSalesForm = () => {
                   type="button"
                   onClick={handleSendOtp}
                   disabled={otpLoading}
-                  className="sc-form-submit-btn sc-phone-btn"
+                  className="sc-form-submit-btn sc-phone-btn forminsidebutton"
                 >
                   {otpLoading
                     ? "Sending..."

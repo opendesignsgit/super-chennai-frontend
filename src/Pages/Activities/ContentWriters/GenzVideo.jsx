@@ -18,36 +18,101 @@ export default function GenzVideoContent() {
   return (
     <>
       <Helmet>
-        <title>Media Coverage | News & TVC Features – Super Chennai</title>
+        <title>
+          Join the Next Wave of Gen Z Content Creators : Super Chennai
+        </title>
         <meta
           name="description"
-          content="Explore all the buzz around Super Chennai! From newspaper features and online articles to TV commercials and media mentions — see how the city’s story is being told."
+          content="From local slang to street culture, Super Chennai celebrates Gen Z content creators sharing authentic Chennai stories through creativity, reels, and real vibes."
+        />
+        <link
+          rel="canonical"
+          href="/contest/gen-z-content-creators"
         />
       </Helmet>
 
-      <div>
-        <section className="accaodomationBannerSection">
-          <div>
+      <div className="kslkskskskss">
+        <section className="accaodomationBannerSection carquizbanner relative overflow-hidden">
+          {/* Images */}
+          <div className="relative z-0">
             <img
-              className="eventsCalenderIamge"
-              src="/images/namma-stories-banner.jpg"
-              alt=""
-            />{" "}
+              className="eventsCalenderIamge hidden sm:block w-full"
+              src="/images/genz/herobannergenz.jpeg"
+              alt="Super Chennai Quiz"
+            />
+
+            {/* Mobile Image */}
+            <img
+              className="block sm:hidden w-full"
+              src="/images/genz/mobilebannerrr.jpeg"
+              alt="Super Chennai Quiz Mobile"
+            />
           </div>
-          <div className="accodoamationBannerContainer">
+
+          {/* Gradient Overlay */}
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-[#000000]/40 to-[#8b3c82]/90 z-10"></div> */}
+
+          {/* Text Content */}
+          <div className="accodoamationBannerContainer relative z-20">
             <div className="accodoamationBannerText">
-              <h3>Namma Stories </h3>
-              <div className="breadCrum">
-                <Link to="/">Home</Link> - <a href="">Namma Stories </a>{" "}
+              {/* <AutoShrinkText
+              text="Hotshots Chennai Moments"
+              baseSize={60}
+              minSize={40}
+              maxChars={40}
+              className="accodoamationBannerText"
+              width="80%"
+              maxLines={2}
+            />
+
+            <div className="breadCrum">
+              <Link to="/">Home</Link> -{" "}
+              <Link to="">Hotshots Chennai Moments</Link>
+            </div> */}
+            </div>
+          </div>
+        </section>
+
+        <section className="newsectionnambaaagenx">
+          <div className="container max-w-7xl mx-auto px-4 py-8">
+            <h2 className="sc-main-title">
+              Chennai, <span class="sc-text-blue">This is </span>
+              <span class="sc-text-pink">Your Stage.</span>
+            </h2>
+            <div className="newflexconatinerrrr">
+              <div>
+                <p className="sc-description">
+                  Super Chennai is building a new generation of storytellers who
+                  truly represent the city. We're not looking for perfect
+                  influencers or polished celebrities. We want real people with
+                  real energy, real voices, and real Chennai vibes
+                </p>
+                <p className="sc-description">
+                  If you love your streets, your food spots, your slang, your
+                  culture, your people, and the everyday magic of this city this
+                  is for you. Show us Chennai through your eyes with a short{" "}
+                  <span className="sc-text-pink"> 30 to 60 second reel </span>
+                </p>
+              </div>
+              <div>
+                <p className="sc-description">
+                  Whether you're funny, expressive, bold, emotional, stylish, or
+                  simply yourself-your story matters here. Join a Gen Z creator
+                  collective that celebrates the evolving spirit of Chennai
+                </p>
+                <p className="sc-description ">
+                  <span className="sc-text-blue">
+                    This is your chance to be seen,{" "}
+                    <span className="sc-text-pink"> heard, and featured</span>
+                  </span>
+                </p>
               </div>
             </div>
           </div>
-          {/* <div className="notHomePageSearch">
-            <Search />
-          </div> */}
         </section>
+
         <section class="sc-benefits-section">
-          <div class="sc-container">
+          <div class="container max-w-7xl mx-auto px-4 py-8">
             <header class="sc-header">
               <h2 class="sc-main-title">
                 WHY JOIN <span class="sc-text-blue">SUPER</span>
@@ -110,7 +175,7 @@ export default function GenzVideoContent() {
         </section>
 
         <section class="sc-join-section">
-          <div class="sc-join-container">
+          <div class="container max-w-7xl mx-auto px-4 py-8">
             <h2 class="sc-join-title">
               HOW TO <span class="sc-join-accent">JOIN?</span>
             </h2>
@@ -168,7 +233,7 @@ export default function GenzVideoContent() {
           </div>
         </section>
 
-        <GenZVideoStory/>
+        <GenZVideoStory />
 
         {/* <section class="sc-form-section">
           <div class="sc-form-container">
@@ -267,7 +332,6 @@ export default function GenzVideoContent() {
             </div>
           </div>
         </section> */}
-        
       </div>
     </>
   );

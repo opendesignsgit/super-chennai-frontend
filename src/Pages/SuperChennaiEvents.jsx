@@ -397,6 +397,24 @@ export default function SuperChennaiEvents() {
         <section className="EventsListSec SecPadblock12 nammaStoriesNewsLtter !pt-7">
           <div className="container max-w-7xl mx-auto ">
             <div className="flex superchennaiEventsMainContainer">
+
+               <a
+                className="superchennaiEventsSection"
+                href="contest/gen-z-content-creators"
+              >
+                <div
+                  className="flex flex-col items-center text-center "
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/event-genz-create.png"
+                    alt="Right Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">Gen Z Content Creator</p>
+                </div>
+              </a>
+
               <a
                 className="superchennaiEventsSection"
                 href="contest/hotshots-photography-contest"

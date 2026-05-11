@@ -254,6 +254,10 @@ const Footer = () => {
       title: "Arattai with Vivek Karunakaran",
       link: "/arattai-with-vivek-karunakaran/chennai-fashion-designer",
     },
+       {
+      title: "Gen Z Content Creator",
+      link: "/contest/gen-z-content-creators",
+    },
   ];
 
 

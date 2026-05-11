@@ -987,7 +987,7 @@ export default function ArticleDetailPage() {
           </div>
         </div>
         <div className="mt-12">
-          <Link to="/article" className="text-[#232b91ff] font-medium">
+          <Link to="/voice-of-chennai" className="text-[#232b91ff] font-medium">
             ← Back to Article List
           </Link>
         </div>

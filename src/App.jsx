@@ -735,13 +735,15 @@ function App() {
         <Route path="/blog/:slug" element={<BlogDetails />} />
 
         <Route path="/ArticleList" element={<AllArticleList />} />
-        <Route path="/article" element={<ArticleListPageTest />} />
+
+
+        <Route path="/voice-of-chennai" element={<ArticleListPageTest />} />
         {/* <Route
               path="/ArticleDetailPage"
               element={<ArticleDetailPage />}
             /> */}
 
-        <Route path="/article/:slug" element={<ArticleDetailPage />} />
+        <Route path="/voice-of-chennai/:slug" element={<ArticleDetailPage />} />
         <Route path="/menifestoInfo" element={<MenifestoInfo />} />
         <Route path="/download-manifesto-pdf" element={<Download />} />
         <Route path="/Manifesto-info" element={<ManifestoPageInfoPAge />} />

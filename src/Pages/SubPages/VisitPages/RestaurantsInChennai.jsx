@@ -2371,6 +2371,8 @@ export default function Restaurants() {
 
 //   return itemDate >= startDate && itemDate <= endDate;
 // };
+
+
 // const isNewBatch = (dateStr) => {
 //   if (!dateStr) return false;
 
@@ -2382,6 +2384,8 @@ export default function Restaurants() {
 
 //   return itemDate >= startDate && itemDate <= endDate;
 // };
+
+
 const isNewBatch = (dateStr) => {
   if (!dateStr) return false;
 

@@ -7,8 +7,8 @@ import { useArticlePageAds } from "../hooks/useArticlePageAds";
 import { useArticles } from "../hooks/useArticles";
 import "../styles.css";
 import LikedIcon from "../../../../public/images/icons/liked.svg";
-                        import { motion, AnimatePresence } from 'framer-motion'
-
+import { motion, AnimatePresence } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 /* ==============================
    AD COMPONENTS
@@ -324,8 +324,26 @@ const rightAds =
 
   return (
     <>
+      <Helmet>
+        <title>
+          Voice of Chennai: Stories, Insights & Articles That Define the
+          City{" "}
+        </title>
+        <meta
+          name="description"
+          content="From neighborhoods to innovation, explore Chennai’s journey through curated articles that capture its true voice, cultural depth & evolving urban transformation."
+        />
+        {/* <script type="application/ld+json">
+          {JSON.stringify(arattaiSchema)}
+        </script> */}
+        <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/voice-of-chennai`}
+        />
+      </Helmet>
+
       <div className="accaodomationBannerSection relative w-full h-[280px] overflow-hidden">
-        <img src="/images/banner-blog.jpg" alt="Blog Banner" />
+        <img src="/images/banner-blog.png" alt="Blog Banner" />
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
             <h3>Articles</h3>

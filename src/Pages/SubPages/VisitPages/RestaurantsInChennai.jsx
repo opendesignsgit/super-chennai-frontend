@@ -19,6 +19,34 @@ const detailsections = [
     title: "Global & Continental Cuisine",
     points: [
       {
+        name: "Pink Potato",
+        date: "20/05/2026",
+        description:
+          "Pink Potato is a vibrant vegetarian fusion restaurant in Kilpauk, Chennai, relaunched around April 10, 2026.",
+        subDescription:
+          "Known for its signature Pink Potato starter, fusion dishes, and desserts like Saffron Panna Cotta, it offers a colourful and Insta-worthy dining experience.",
+        locations: [
+          {
+            label: "Kilpauk",
+            link: "https://maps.app.goo.gl/HVRKZdf6Kpwnx5Vx6",
+          },
+        ],
+      },
+      {
+        name: "VGP Waghoba",
+        date: "20/05/2026",
+        description:
+          "VGP Waghoba is a premium restaurant and social gaming destination at Phoenix Palladium Mall, Velachery.",
+        subDescription:
+          "Known for global cuisine like Nashville Burger, Pad Thai, Nasi Goreng, Paneer Tikka, and Pasta, it also features bowling, karaoke, arcade games, and golf simulators.",
+        locations: [
+          {
+            label: "Velachery",
+            link: "https://maps.app.goo.gl/e6KEYsTLJMjSV48KA",
+          },
+        ],
+      },
+      {
         name: "Open Crave Bunker",
         date: "05/05/2026",
         description:
@@ -363,6 +391,34 @@ const detailsections = [
     title: "Asian Cuisine",
     points: [
       {
+        name: "Copper Elite",
+        date: "20/05/2026",
+        description:
+          "Copper Elite is a newly launched restaurant in Chromepet, Chennai, serving Arabian and South Indian fusion cuisine.",
+        subDescription:
+          "Popular for its unlimited buffet featuring 40+ dishes, including multiple varieties of biryani and authentic Yemeni Mandi.",
+        locations: [
+          {
+            label: "Chromepet",
+            link: "https://maps.app.goo.gl/FMDhNBTqfdt1ZNe76",
+          },
+        ],
+      },
+      {
+        name: "SS Hyderabad Biryani",
+        date: "20/05/2026",
+        description:
+          "SS Hyderabad Biryani opened its new branch in Porur, Chennai, featuring its famous Hyderabadi Dum Biryani.",
+        subDescription:
+          "Known for flavourful chicken biryani, generous meal portions, and quick casual dining service with exciting opening offers.",
+        locations: [
+          {
+            label: "Porur",
+            link: "https://maps.app.goo.gl/fvGvzsx2dnN4TdD69",
+          },
+        ],
+      },
+      {
         name: "Fu Fu",
         date: "05/05/2026",
         description:
@@ -647,6 +703,35 @@ const detailsections = [
     title: "Cafés & Casual Bites",
     points: [
       // NEW ADDED
+
+      {
+        name: "Moksha Morsel",
+        date: "20/05/2026",
+        description:
+          "Moksha Morsel is a newly launched gelato dessert spot in Anna Nagar, Chennai.",
+        subDescription:
+          "Known for premium gelato scoops and a peaceful dessert experience with rich and creamy frozen treats.",
+        locations: [
+          {
+            label: "Anna Nagar East",
+            link: "https://maps.app.goo.gl/hmvmmUMSA8h7KuRg9",
+          },
+        ],
+      },
+      {
+        name: "Arctic 7",
+        date: "20/05/2026",
+        description:
+          "Arctic 7 is a newly opened food spot in Medavakkam, Chennai, launched on April 19, 2026.",
+        subDescription:
+          "Known for stacked sandwiches, juicy burgers, crispy fries, and a vibrant casual dining vibe.",
+        locations: [
+          {
+            label: "Medavakkam",
+            link: "https://maps.app.goo.gl/p5jyJZvcSFozQsTr6",
+          },
+        ],
+      },
 
       {
         name: "Ravellé Bistro",
@@ -1643,6 +1728,20 @@ const detailsections = [
     title: "South Indian Classics",
     points: [
       {
+        name: "Malaikottai Military Mess",
+        date: "20/05/2026",
+        description:
+          "Malaikottai Military Mess is a newly opened restaurant in ECR, Chennai, serving authentic Tamil Nadu and Madurai-style non-vegetarian cuisine.",
+        subDescription:
+          "Known for traditional military-style recipes and flavour-packed dishes like Military Poricha Kozhi, Nagore Pottalam Sooru, Sora Puttu, and Nandu Masala.",
+        locations: [
+          {
+            label: "Egattur",
+            link: "https://maps.app.goo.gl/",
+          },
+        ],
+      },
+      {
         name: "Cookgramam",
         date: "23/03/2026",
         description:
@@ -1906,6 +2005,20 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
+      {
+        name: "Madras Military Kitchen",
+        date: "20/05/2026",
+        description:
+          "Madras Military Kitchen is a newly opened multi-cuisine restaurant in Nungambakkam, Chennai.",
+        subDescription:
+          "The menu features South Indian non-veg specials, North Indian dishes, Chinese favourites, burgers, pizzas, and café-style snacks.",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/jP9ysBzu2ayV6x51A",
+          },
+        ],
+      },
       {
         name: "Punjab Grill",
         date: "05/05/2026",
@@ -2258,14 +2371,25 @@ export default function Restaurants() {
 
 //   return itemDate >= startDate && itemDate <= endDate;
 // };
+// const isNewBatch = (dateStr) => {
+//   if (!dateStr) return false;
+
+//   const [day, month, year] = dateStr.split("/").map(Number);
+//   const itemDate = new Date(year, month - 1, day);
+
+//   const startDate = new Date(2026, 2, 30); // March 30, 2026
+//   const endDate = new Date(2026, 4, 5);    // May 5, 2026
+
+//   return itemDate >= startDate && itemDate <= endDate;
+// };
 const isNewBatch = (dateStr) => {
   if (!dateStr) return false;
 
   const [day, month, year] = dateStr.split("/").map(Number);
   const itemDate = new Date(year, month - 1, day);
 
-  const startDate = new Date(2026, 2, 30); // March 30, 2026
-  const endDate = new Date(2026, 4, 5);    // May 5, 2026
+  const startDate = new Date(2026, 4, 20); // May 20, 2026
+  const endDate = new Date(2026, 4, 20);   // May 20, 2026
 
   return itemDate >= startDate && itemDate <= endDate;
 };
@@ -2344,22 +2468,18 @@ const isNewBatch = (dateStr) => {
                   <div
                     key={idx}
                     className={`card relative p-5 border rounded-2xl shadow transition bg-white
-  ${isNewBatch(point.date) ? "animate-fadeInUp" : ""}`}
+                   ${isNewBatch(point.date) ? "animate-fadeInUp" : ""}`}
                   >
                     {isNewBatch(point.date) && (
-<span className="absolute top-3 right-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
+                      <span className="absolute top-3 right-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
                         NEW
                       </span>
                     )}
-
                     <h3 className="text-xl font-semibold mb-2">{point.name}</h3>
-
-                    <TruncatedText text={point.description} limit={120} /> {" "}
-
+                    <TruncatedText text={point.description} limit={120} />{" "}
                     {point.subDescription && (
                       <TruncatedText text={point.subDescription} limit={120} />
                     )}
-
                     {point.locations?.length > 0 && (
                       <ExpandableList items={point.locations} maxVisible={3} />
                     )}

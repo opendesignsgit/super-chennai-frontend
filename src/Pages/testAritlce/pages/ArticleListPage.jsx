@@ -342,7 +342,7 @@ const rightAds =
         />
       </Helmet>
 
-      <div className="accaodomationBannerSection relative w-full h-[280px] overflow-hidden">
+      <div className="accaodomationBannerSection relative w-full h-[380px] overflow-hidden">
         <img src="/images/banner-blog.png" alt="Blog Banner" />
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">

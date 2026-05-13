@@ -743,7 +743,7 @@ function App() {
               element={<ArticleDetailPage />}
             /> */}
 
-        <Route path="/voice-of-chennai/:slug" element={<ArticleDetailPage />} />
+        <Route path="/:slug" element={<ArticleDetailPage />} />
         <Route path="/menifestoInfo" element={<MenifestoInfo />} />
         <Route path="/download-manifesto-pdf" element={<Download />} />
         <Route path="/Manifesto-info" element={<ManifestoPageInfoPAge />} />

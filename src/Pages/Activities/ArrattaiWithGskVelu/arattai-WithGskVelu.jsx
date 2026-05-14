@@ -192,11 +192,11 @@ export default function ArattaiWithGskVelu() {
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
       <Helmet>
-        <title>Super Chennai Arattai with GSK Velu</title>
+        <title>Super Chennai Arattai with Healthcare Entrepreneur Dr. GSK Velu</title>
 
         <meta
           name="description"
-          content="Join us for an inspiring conversation with GSK Velu, entrepreneur and healthcare visionary known for transforming India's healthcare and diagnostics ecosystem."
+          content="Dr. GSK Velu, Chennai healthcare entrepreneur behind Trivitron Healthcare and Neuberg Diagnostics, pioneering Make in India medical technology and innovation."
         />
 
         <script type="application/ld+json">
@@ -207,7 +207,7 @@ export default function ArattaiWithGskVelu() {
           rel="canonical"
           href={`${
             typeof window !== "undefined" ? window.location.origin : ""
-          }/arattai-with-gsk-velu`}
+          }/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur`}
         />
       </Helmet>
 

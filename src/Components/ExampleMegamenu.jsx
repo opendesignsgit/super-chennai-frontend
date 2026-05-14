@@ -407,6 +407,14 @@ const menuItems = [
     label: "Arattai",
     labellink: "/arattai-with-jahabar-sadique/chai-kings-founder",
     content: [
+
+          {
+        title: "Hello",
+        desc: "ssdds",
+        link: "/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur",
+        image: "/images/header-banner-arattai-gskvelu.jpeg",
+      },
+
       {
         title: "Hello",
         desc: "ssdds",

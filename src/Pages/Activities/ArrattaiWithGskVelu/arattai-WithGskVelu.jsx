@@ -118,7 +118,7 @@ export default function ArattaiWithGskVelu() {
       });
 
       navigate("/thank-you", {
-        state: { from: "gsk-velu" },
+        state: { from: "gskvelu" },
       });
 
     } catch (err) {

@@ -297,7 +297,7 @@ const expendingData = [
             <div className="VolunteerMainContainer">
               <div className="volunteerSectionBanner">
                 <div className="VolunteerBannerImage">
-                  <img src="/images/gskvelu-banner.jpg" />
+                  <img src="/images/gskvelu-banner.jpeg" />
                 </div>
                 <h3 className="voluntterContent">
                 </h3>

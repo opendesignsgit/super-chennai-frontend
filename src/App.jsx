@@ -1551,7 +1551,7 @@ function App() {
           element={<IconofthemonthSeptember1 />}
         />
         <Route
-          path="/super-chennai-icon-of-dec-2025"
+          path="/super-chennai-icon-of-feb-2026"
           element={<IconofthemonthDec />}
         />
         <Route

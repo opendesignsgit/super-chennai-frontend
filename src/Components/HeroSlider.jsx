@@ -109,6 +109,15 @@ const slides = [
   //   title: "chennai's surfing",
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
+
+    {
+    image: "/images/homepage-banner-gskvelu-t.jpeg",
+    link: "/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur",
+    image1: "/images/gskvelu-mobile-banner.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+  
   {
     image: "/images/HomePage-Images/banner-0.jpg",
     link: "#",

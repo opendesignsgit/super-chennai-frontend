@@ -5,8 +5,8 @@ import { useLocation } from "react-router-dom";
 
 export default function Thankyou() {
   const location = useLocation();
-  const from = location.state?.from;
-  // const from = "gskvelu";
+  // const from = location.state?.from;
+  const from = "gskvelu";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -64,7 +64,7 @@ export default function Thankyou() {
              } else if (from === "gskvelu") {
         setImageSrc(
           isMobile
-            ? "/images/mobile-chaikings-tq-banner-f-1.png"
+            ? "/images/MOBILE-THANKYOU-BANNER-GSK-VELU.jpeg"
             : "/images/thankyou-banner-gskvelu.jpeg",
         );
       } else {

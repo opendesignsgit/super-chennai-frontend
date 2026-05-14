@@ -1818,3 +1818,36 @@
   align-items: center;
   justify-content: center;
 }
+
+
+ @keyframes textGradient {
+            0% { 
+                background-position: 0% 50%; 
+            }
+            50% { 
+                background-position: 100% 50%; 
+            }
+            100% { 
+                background-position: 0% 50%; 
+            }
+        }
+
+       .headingGredientclass {
+            margin: 20px 0;
+            padding: 20px 30px;
+            font-family: 'Arial', sans-serif;
+            font-size: 2.2rem;
+            font-weight: normal;
+            text-align: center;
+            background: linear-gradient(-45deg, 
+                #100f9a, 
+                /* #34493a,  */
+                #a34493, 
+                #100f9a);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: textGradient 2.5s ease infinite;
+            letter-spacing: 1px;
+        }

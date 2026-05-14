@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 export default function Thankyou() {
   const location = useLocation();
   const from = location.state?.from;
-  // const from = "content-writers";
+  // const from = "gskvelu";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -59,6 +59,13 @@ export default function Thankyou() {
           isMobile
             ? "/images/mobile-chaikings-tq-banner-f-1.png"
             : "/images/tq-chaikings-banner-f.jpeg",
+        );
+
+             } else if (from === "gskvelu") {
+        setImageSrc(
+          isMobile
+            ? "/images/mobile-chaikings-tq-banner-f-1.png"
+            : "/images/thankyou-banner-gskvelu.jpeg",
         );
       } else {
         if (from === "trivia-game")
@@ -115,13 +122,13 @@ export default function Thankyou() {
           <div className="accodoamationBannerText">
             <AutoShrinkText
               text={
-                from === "vivek"
+                  from === "vivek" || from === "gskvelu"
                   ? ""
                   : from === "trivia-game" ||
                       from === "conclave" ||
                       from === "jahabar"
                     ? "Day to deliver-quiz"
-                    : "Thank You!"
+                    : "Thank You!" 
               }
               baseSize={60}
               minSize={40}
@@ -159,6 +166,7 @@ export default function Thankyou() {
               </p>
             </div>
           )}
+          
 
             {from === "content-writers" && (
             <div className="workIntro">
@@ -191,6 +199,26 @@ export default function Thankyou() {
               </p>
               <p>Stay engaged. Stay informed.</p>
               <p>Chennai’s future is built by its citizens.</p>
+            </div>
+          )}
+
+          
+
+
+            {from === "gskvelu" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+
+              <p>
+                Thank you for registering for Arattai with GSK Velu.
+                Your submission has been successfully received, and our team is
+                currently reviewing your registration. If your entry is
+                selected, you will receive an official confirmation email from
+                Team Super Chennai with further details about the event. Please
+                note that your participation will be considered confirmed only
+                after you receive the confirmation email. We appreciate your
+                interest and look forward to connecting with you soon.
+              </p>
             </div>
           )}
 

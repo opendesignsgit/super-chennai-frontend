@@ -309,6 +309,11 @@ import ArattaiWithJahabar from "./Pages/Activities/ArrattaiWithjahabar/araatai-j
 import ArattaiJahabarExcelView from "./Pages/Activities/ArrattaiWithjahabar/araatai-jahabar-excel";
 
 import ArattaiWithVivekKarunakaran from "./Pages/Activities/ArrattaiWithVivekKarunakaran/arattai-karunakaran";
+import ArattaiWithGskVelu from "./Pages/Activities/ArrattaiWithGskVelu/arattai-WithGskVelu";
+import ArattaiGskVeluExcelView from "./Pages/Activities/ArrattaiWithGskVelu/ArattaiGSKExcelView";
+
+
+
 
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
@@ -943,6 +948,16 @@ function App() {
           path="/arattai-with-soumya-swaminathan/chief-scientist"
           element={<ArattaiWithSoumyaSwaminathan />}
         />
+
+             <Route
+          path="/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur"
+          element={<ArattaiWithGskVelu />}
+        />
+                 <Route
+          path="/chennai-healthcare-entrepreneur/live-views-&*lkjghsgshshgshsgsgh&screkey"
+          element={<ArattaiGskVeluExcelView />}
+        />
+
 
         <Route
           path="/arattai-with-kamakoti/iit-madras-director-admin-entry-oiuyterwqasvcxzdsw/refdewsdfettwfsvvdg/8728272/lmnjhscbnmdt"

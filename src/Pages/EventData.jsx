@@ -7611,6 +7611,120 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+
+  {
+  id: 102347,
+  name: "1.65 Lakh Olive Ridley Turtles Begin Their Journey to the Sea",
+  slug: "olive-ridley-turtles-conservation-tamil-nadu",
+  para: "A Major Marine Conservation Success Across Tamil Nadu",
+  TrendingCalendarMonth: "May 2026",
+  TrendingCalendarTime: "Recently Achieved",
+  TrendingCalendarCategory: "Environment | Wildlife | Conservation | Trending",
+  image: "/images/trendingChennai/trendingchennai-turtle.jpeg",
+  Homeimage: "/images/trendingChennai/trending-chennai-small-size-turtle.jpeg",
+  link: "/trending-chennai/olive-ridley-turtles-conservation-tamil-nadu",
+  duration: "Seasonal Conservation Initiative",
+  ageRestriction: "Open for All",
+  language: "Tamil | English",
+  genre: "Environment | Wildlife | Conservation",
+  venue: "Tamil Nadu Coastline",
+
+  trendingDetails: `
+<p>
+The <b>Tamil Nadu Forest Department</b> successfully released nearly <b>1.65 lakh Olive Ridley turtle hatchlings</b> into the ocean, marking a major achievement in marine conservation efforts 🌿🐢
+</p>
+
+<p>
+Special hatcheries set up along the coastline carefully protected and nurtured the eggs, helping improve the survival rate of these endangered sea turtles 🌊
+</p>
+
+<p>
+<b>✨ Highlights of the conservation effort:</b>
+</p>
+
+<p>
+• 🐢 <b>1.65 Lakh Hatchlings Released:</b> A massive step toward protecting Olive Ridley turtles.<br>
+• 🌊 <b>Protected Hatcheries:</b> Eggs were safely monitored and nurtured along the coast.<br>
+• 📍 <b>Multiple Coastal Regions:</b> Conservation activities took place across Chennai, Cuddalore, Nagapattinam, and Kanniyakumari.<br>
+• 🌿 <b>Wildlife Protection Success:</b> Recognised as one of Tamil Nadu’s most impactful conservation achievements.
+</p>
+
+<p>
+This inspiring initiative highlights the importance of protecting marine biodiversity and ensuring a safer future for endangered species across Tamil Nadu’s coastline 💙
+</p>
+
+<p>
+<a href="https://www.instagram.com/p/DYM9ZHMk7lh/?igsh=cXR5YzVmazlpMHlh" target="_blank">▶️ Click here to watch</a>
+</p>
+`,
+
+  TrendingLink: "",
+  YoutubeLink: "",
+
+  meta: {
+    title: "Olive Ridley Turtles in Tamil Nadu | Conservation Success",
+    desc: "Nearly 1.65 lakh Olive Ridley turtles were safely released into the ocean through a major marine conservation effort across Tamil Nadu coastal districts.",
+    url: "https://www.superchennai.com/trending-chennai/olive-ridley-turtles-conservation-tamil-nadu",
+  },
+},
+
+
+  {
+  id: 102346,
+  name: "Sunflowers Are Transforming Chennai’s Streets",
+  slug: "sunflower-streets-chennai",
+  para: "A Blooming Transformation Bringing Colour to the City",
+  TrendingCalendarMonth: "May 2026",
+  TrendingCalendarTime: "Trending Now",
+  TrendingCalendarCategory: "Lifestyle | Nature | Community | Trending",
+  image: "/images/trendingChennai/trending-chennai-sunflower.jpeg",
+  Homeimage: "/images/trendingChennai/trending-chennai-sunflower.jpeg",
+  link: "/trending-chennai/sunflower-streets-chennai",
+  duration: "All Day",
+  ageRestriction: "Open for All",
+  language: "Tamil | English",
+  genre: "Lifestyle | Nature | Community",
+  venue: "Across Chennai",
+
+  trendingDetails: `
+<p>
+Chennai is slowly turning into a more colourful and lively city with <b>beautiful sunflower gardens</b> blooming across its streets and public spaces 🌻✨
+</p>
+
+<p>
+From historic landmarks to busy neighbourhood roads, these vibrant floral additions are bringing <b>freshness, warmth, and cheerful energy</b> to everyday life around the city 💛
+</p>
+
+<p>
+<b>✨ What makes this special:</b>
+</p>
+
+<p>
+• 🌻 <b>Beautiful Sunflower Displays:</b> Brightening roads and public areas across Chennai.<br>
+• 🌆 <b>City Beautification:</b> Adding colour and charm to urban spaces.<br>
+• 👨‍👩‍👧‍👦 <b>Community Connection:</b> Helping residents reconnect with the city’s beauty and culture.<br>
+• 🌿 <b>Refreshing Atmosphere:</b> Creating greener, more welcoming surroundings for everyone.
+</p>
+
+<p>
+More than just decoration, this blooming movement is transforming Chennai into a brighter, more joyful, and vibrant place to experience every day ✨
+</p>
+
+<p>
+<a href="https://www.instagram.com/p/DYME-S1E3TW/?igsh=MWNvaDJsMzZlbzVqZA%3D%3D" target="_blank">▶️ Click here to watch</a>
+</p>
+`,
+
+  TrendingLink: "",
+  YoutubeLink: "",
+
+  meta: {
+    title: "Sunflower Streets in Chennai | A Blooming City Transformation",
+    desc: "Sunflower gardens are bringing colour, beauty, and freshness to Chennai streets, making public spaces feel brighter, greener, more vibrant, and welcoming.",
+    url: "https://www.superchennai.com/trending-chennai/sunflower-streets-chennai",
+  },
+},
+
   {
     id: 102345,
     name: "New Sports Ground in Sowcarpet",

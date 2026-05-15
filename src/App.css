@@ -1851,3 +1851,39 @@
             animation: textGradient 2.5s ease infinite;
             letter-spacing: 1px;
         }
+
+        /* Thin Pink Scrollbar */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffe4ef;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #ff4fa3,
+    #d63384
+  );
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #ff2f92,
+    #c21875
+  );
+}
+
+/* Firefox */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d63384 #ffe4ef;
+}

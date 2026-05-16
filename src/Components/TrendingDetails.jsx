@@ -1433,6 +1433,65 @@ export default function TrendingDetails() {
     },
   ];
 
+  const oliveRadly = [
+   {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/olive-ridley-turtles-conservation-tamil-nadu"
+  },
+  "headline": "1.65 Lakh Olive Ridley Turtles Begin Their Journey to the Sea",
+  "description": "Nearly 1.65 lakh Olive Ridley turtles were safely released into the ocean through a major marine conservation effort across Tamil Nadu coastal districts.",
+  "image": "https://www.superchennai.com/images/trendingChennai/trendingchennai-turtle.jpeg",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "2026-05-11"
+}
+
+
+  ]
+
+  const sunflowerstreet = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/sunflower-streets-chennai",
+      },
+      headline: "Sunflowers Are Transforming Chennai’s Streets",
+      description:
+        "Sunflower gardens are bringing colour, beauty, and freshness to Chennai streets, making public spaces feel brighter, greener, more vibrant, and welcoming.",
+      image:
+        "https://www.superchennai.com/images/trendingChennai/trending-chennai-sunflower.jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-05-11",
+    },
+  ];
+
   return (
     <>
       <Helmet>
@@ -1457,6 +1516,18 @@ export default function TrendingDetails() {
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
         />
+
+        {slug === "sunflower-streets-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(sunflowerstreet)}
+          </script>
+        )}
+
+        {slug === "olive-ridley-turtles-conservation-tamil-nadu" && (
+          <script type="application/ld+json">
+            {JSON.stringify(oliveRadly)}
+          </script>
+        )}
 
         {slug === "sports-ground-sowcarpet" && (
           <script type="application/ld+json">

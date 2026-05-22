@@ -1492,6 +1492,66 @@ export default function TrendingDetails() {
     },
   ];
 
+  const dubaiCarnival = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/dubai-summer-carnival-chennai",
+      },
+      headline: "DUBAI CAME TO CHENNAI",
+      description:
+        "Looking for things to do in Chennai this weekend? Dubai Summer Carnival 2026 brings the Surreal Waterfalls experience to NH Madhuravayol. Book now — ends June 7!.",
+      image: "https://www.superchennai.com/images/dubaiCame.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-05-19",
+      dateModified: "2026-06-07",
+    },
+  ];
+
+  const smartWeastTransportArticle = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/chennai-corporation-smart-waste-transport",
+      },
+      headline: "Cleaner Roads Ahead: Chennai’s Smart Waste Transport Upgrade",
+      description:
+        "Chennai Corporation introduces sealed garbage transport containers in North Chennai to reduce waste spillage, foul smell, and improve road cleanliness and hygiene.",
+      image: "https://www.superchennai.com/images/cleanerRoad.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-05-19",
+    },
+  ];
+
+
   return (
     <>
       <Helmet>
@@ -1516,6 +1576,18 @@ export default function TrendingDetails() {
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
         />
+
+        {slug === "chennai-corporation-smart-waste-transport" && (
+          <script type="application/ld+json">
+            {JSON.stringify(smartWeastTransportArticle)}
+          </script>
+        )}
+
+        {slug === "dubai-summer-carnival-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(dubaiCarnival)}
+          </script>
+        )}
 
         {slug === "sunflower-streets-chennai" && (
           <script type="application/ld+json">

@@ -593,12 +593,12 @@ function App() {
 
       {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-      {isHomePage && showPopup && (
+      {/* {isHomePage && showPopup && (
         <ImagePopup
           imageUrl="/images/POPUP-GENZ-pop.jpeg"
           onClose={() => setShowPopup(false)}
         />
-      )}
+      )} */}
 
       {/* )} */}
 

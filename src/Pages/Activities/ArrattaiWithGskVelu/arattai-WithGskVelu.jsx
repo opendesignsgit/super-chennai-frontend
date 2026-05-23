@@ -280,7 +280,7 @@ export default function ArattaiWithGskVelu() {
               </p>
             </div>
 
-            <div className="flex flex-col items-center text-center space-y-4 py-10">
+            {/* <div className="flex flex-col items-center text-center space-y-4 py-10">
               <div
                 className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow cursor-pointer"
                 onClick={() => setShowRegisterPopup(true)}
@@ -292,7 +292,8 @@ export default function ArattaiWithGskVelu() {
 
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
               </div>
-            </div>
+            </div> */}
+
           </div>
         </div>
       </section>

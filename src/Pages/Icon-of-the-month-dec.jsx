@@ -279,14 +279,13 @@ const expendingData = [
       <div className="septemberMonthStyle">
         <Helmet>
           <title>
-            Super Chennai Icon of September 2025 – Viswanathan Anand, Chess
-            Legend
+           Icon of the Month | Dr. GSK Velu - Healthcare Entrepreneur
           </title>
           <meta
             name="description"
-            content="Super Chennai honours Viswanathan Anand, India’s first Grandmaster and five-time World Chess Champion, for inspiring generations in Indian chess."
+            content="Icon of the Month: Dr. GSK Velu transforms India’s diagnostics with 30+ years of visionary leadership, affordable healthcare technology, and innovation nationwide."
           />
-          <link rel="canonical" href="/super-chennai-icon-of-sep-2025" />
+          <link rel="canonical" href="/super-chennai-icon-of-the-feb-month-2026" />
         </Helmet>
         <div className="InvestPageId">
           <div

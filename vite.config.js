@@ -42,16 +42,44 @@
 //   ],
 // });
 
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
-import Renderer from "@prerenderer/renderer-puppeteer";
-import Prerenderer from "@prerenderer/rollup-plugin";
-import path from "path";
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react";
+// import tailwindcss from "@tailwindcss/vite";
+// import Renderer from "@prerenderer/renderer-puppeteer";
+// import Prerenderer from "@prerenderer/rollup-plugin";
+// import path from "path";
+
+// export default defineConfig({
+//   plugins: [tailwindcss(), react()],
+//   css: {
+//     devSourcemap: true,
+//   },
+// });
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import prerender from '@prerenderer/rollup-plugin'
+import Renderer from '@prerenderer/renderer-puppeteer'
+import { join } from 'path'
+
+const myRoutes = ['/', '/arattai-with-jahabar-sadique/chai-kings-founder', '/visit-chennai']
 
 export default defineConfig({
-  plugins: [tailwindcss(), react()],
+  plugins: [
+    react(),
+    tailwindcss(),
+
+    prerender({
+      staticDir: join(__dirname, 'dist'),
+      routes: myRoutes,
+      renderer: new Renderer({
+        renderAfterDocumentEvent: 'render-event',
+      }),
+    }),
+  ],
+
   css: {
     devSourcemap: true,
   },
-});
+})

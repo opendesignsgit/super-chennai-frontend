@@ -26,6 +26,8 @@ import SecondSection from "../Components/SecondSection";
 import { useEvents } from "../Pages/Events/Hooks/UseEvents";
 import EventCalender from "../Pages/Events/Components/EventCalender/EventCalender";
 import AerialMap from "../Components/AerialMap";
+import SecondSectionSummerSection from "../Components/SecondSectionSummerSection";
+import CricketScrore from "../Components/CricketScrore";
 export default function HomePage() {
   const location = useLocation();
 
@@ -175,6 +177,10 @@ export default function HomePage() {
 
       <div>
         <HeroSlider />
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="100">
+        <SecondSectionSummerSection />
       </div>
 
       <div data-aos="fade-up" data-aos-delay="100">

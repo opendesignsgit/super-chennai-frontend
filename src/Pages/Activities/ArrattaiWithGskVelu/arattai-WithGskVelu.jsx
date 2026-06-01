@@ -187,6 +187,63 @@ export default function ArattaiWithGskVelu() {
     });
   };
 
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
+
+  const openModal = (image) => {
+    setModalImage(image);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalImage(null);
+  };
+
+  
+const mockUpcomingEvents = [
+  { id: 1, image: "/images/gsk/1.png" },
+  { id: 2, image: "/images/gsk/2.png" },
+  { id: 3, image: "/images/gsk/3.png" },
+  { id: 4, image: "/images/gsk/4.png" },
+  { id: 5, image: "/images/gsk/5.png" },
+  { id: 6, image: "/images/gsk/6.png" },
+  { id: 7, image: "/images/gsk/7.png" },
+  { id: 8, image: "/images/gsk/8.png" },
+  { id: 9, image: "/images/gsk/9.png" },
+  { id: 10, image: "/images/gsk/10.png" },
+  { id: 11, image: "/images/gsk/11.png" },
+  { id: 12, image: "/images/gsk/12.png" },
+  { id: 13, image: "/images/gsk/13.png" },
+  { id: 14, image: "/images/gsk/14.png" },
+];
+
+const [scrollDir, setScrollDir] = useState("left");
+const lastScrollY = useRef(0);
+const bgTextRef = useRef(null);
+const carouselRef = useRef();
+const [x, setX] = useState(0);
+const slide = (direction) => {
+  const cardWidth = 300;
+  const gap = 40;
+  const visibleWidth = window.innerWidth;
+  const totalCardsWidth = mockUpcomingEvents.length * (cardWidth + gap);
+  const maxX = -(totalCardsWidth - visibleWidth + gap);
+
+  setX((prevX) => {
+    if (direction === "left") {
+      return Math.min(prevX + (cardWidth + gap), 0);
+    } else if (direction === "right") {
+      return Math.max(prevX - (cardWidth + gap), maxX);
+    }
+    return prevX;
+  });
+};
+
+
+
+
   return (
     <>
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
@@ -297,6 +354,94 @@ export default function ArattaiWithGskVelu() {
           </div>
         </div>
       </section>
+
+
+           {/*============= GALLERY ================== */}
+      <div className="EventsCalendarMainSection mb-10">
+        <div
+          className={`EventsCalenderBackground ${
+            scrollDir === "right"
+              ? "Utilitiesscroll-right"
+              : "Utilitiesscroll-left"
+          }`}
+        >
+          <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+          <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+        </div>
+
+        {/* Title */}
+        <div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">
+          <h2>Media Highlights</h2>
+          <p>
+            A collection of stage highlights, speaker sessions, interactions,
+            and memento-giving moments from the conclave.
+          </p>
+        </div>
+
+        <div className="overflow-hidden py-17 cardMobileSection">
+          <div className="relative">
+            <div className="absolute top-0 left-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
+            <div className="absolute top-0 right-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
+
+            <motion.div
+              ref={carouselRef}
+              className="flex gap-10 cursor-grab active:cursor-grabbing cardsMobileSection"
+              drag="x"
+              dragConstraints={{
+                right: 0,
+                left: -(mockUpcomingEvents.length * 340 - window.innerWidth),
+              }}
+              animate={{ x }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            >
+              {mockUpcomingEvents.map((card) => (
+                <div
+                  key={card.id}
+                  className="EventsCalendarCardSection min-w-[300px] h-[350px] bg-white"
+                  onClick={() => openModal(card.image)}
+                >
+                  <img
+                    src={card.image}
+                    alt="Gallery"
+                    className="w-full h-[350px] object-cover rounded-t-md"
+                  />
+                </div>
+              ))}
+            </motion.div>
+            <div className="EventsCalenderButtons flex justify-center  ">
+              <button
+                onClick={() => slide("left")}
+                className="EventsCalenderLeftButton"
+              ></button>
+              <button
+                onClick={() => slide("right")}
+                className="EventsCalenderRightButton"
+              ></button>
+            </div>
+          </div>
+
+          {isModalOpen && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 z-[9999]"
+              onClick={closeModal}
+            >
+              <img
+                src={modalImage}
+                alt="Full view"
+                className="max-h-[90%] max-w-[90%] object-contain rounded-lg"
+                onClick={(e) => e.stopPropagation()}
+              />
+              <button
+                className="absolute top-5 right-5 text-white text-2xl font-bold"
+                onClick={closeModal}
+              >
+                ×
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+
 
       {/* ================= POPUP ================= */}
 

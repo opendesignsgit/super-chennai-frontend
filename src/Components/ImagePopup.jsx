@@ -37,7 +37,7 @@ const ImagePopup = ({ onClose, imageUrl }) => {
         >
           {/* <Link to="/namma-stories#NammaStoriesVideoId" onClick={onClose}> */}
           {/* <Link to="/chennai-conclave" onClick={onClose}> */}
-          <a href="contest/gen-z-content-creators">
+          <a href="https://summerfest.superchennai.com/">
             <img
               src={imageUrl}
               alt="Popup"

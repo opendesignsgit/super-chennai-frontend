@@ -16,7 +16,7 @@ import InstagramReelsMarquee from "../Components/SocialChennai";
 import StartupChennai from "../Components/StartupChennai";
 import TechEdu from "../Components/TechEdu";
 import TrendingChennai1 from "../Components/TrendingChenna1i";
-import CricketScrore from "../Components/CricketScrore";
+// import CricketScrore from "../Components/CricketScrore";
 
 import { Helmet } from "react-helmet-async";
 
@@ -181,9 +181,9 @@ export default function HomePage() {
         <SecondSection />
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="100" id="iplsectionmain">
+      {/* <div data-aos="fade-up" data-aos-delay="100" id="iplsectionmain">
         <CricketScrore />
-      </div>
+      </div> */}
 
       <div data-aos="fade-up" data-aos-delay="100">
         <Explore />

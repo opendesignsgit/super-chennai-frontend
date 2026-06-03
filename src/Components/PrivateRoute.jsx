@@ -3,10 +3,10 @@ import { Navigate } from "react-router-dom";
 
 export function PrivateRoute({ children }) {
   const token = localStorage.getItem("token");
-  return token ? children : <Navigate to="/day-to-deliver-quiz/login" replace />;
+  return token ? children : <Navigate to="/majaa-quiz/login" replace />;
 }
 
 export function PublicRoute({ children }) {
   const token = localStorage.getItem("token");
-  return token ? <Navigate to="/questions" replace /> : children;
+  return token ? <Navigate to="/contest/majaa-quiz" replace /> : children;
 }

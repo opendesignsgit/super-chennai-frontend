@@ -353,6 +353,15 @@ import CricketsList from "./Pages/Crickets/CricketsList";
 import GenzVideo from "./Pages/GenzVideo";
 import GenzVideoContent from "./Pages/Activities/ContentWriters/GenzVideo";
 
+
+import MazzaMainPage from "./Pages/Activities/MazzaQuiz/Pages/MazzaMainPage";
+import MazzaQuestions from "./Pages/Activities/MazzaQuiz/Pages/MazzaQuestions";
+import MazzaRegister from "./Pages/Activities/MazzaQuiz/Pages/MazzaRegister";
+import MazzaLogin from "./Pages/Activities/MazzaQuiz/Pages/MazzaLogin";
+import QuestionManagement from "./Pages/Activities/MazzaQuiz/Pages/AdminPage";
+
+
+
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   const [animate, setAnimate] = useState(false);
@@ -741,7 +750,6 @@ function App() {
 
         <Route path="/ArticleList" element={<AllArticleList />} />
 
-
         <Route path="/voice-of-chennai" element={<ArticleListPageTest />} />
         {/* <Route
               path="/ArticleDetailPage"
@@ -775,33 +783,13 @@ function App() {
           path="/chennai-icon-of-the-month"
           element={<IconOfMonthList />}
         />
-        {/* Public Routes */}
-        {/* <Route
-          path="/register"
-          element={
-            <PublicRoute>
-              <Register />
-            </PublicRoute>
-          }
-        /> */}
-        {/* 
-        <Route
-          path="/login"
-          element={
-            <PublicRoute>
-              <Login setIsLoggedIn={setIsLoggedIn} />
-            </PublicRoute>
-          }
-        /> */}
 
-        {/* <Route
-          path="/login-otp"
-          element={
-            <PublicRoute>
-              <LoginWithOtp />
-            </PublicRoute>
-          }
-        /> */}
+           <Route
+          path="/QuestionManagement"
+          element={<QuestionManagement />}
+        />
+
+      
 
         <Route
           path="/day-to-deliver-quiz/login"
@@ -812,15 +800,6 @@ function App() {
           }
         />
 
-        {/* <Route
-          path="/login-otp2026"
-          element={
-            <PublicRoute>
-              <AuthLogin2026 setIsLoggedIn={setIsLoggedIn} />
-            </PublicRoute>
-          }
-        /> */}
-
         <Route
           path="/day-to-deliver-quiz"
           element={
@@ -830,14 +809,45 @@ function App() {
           }
         />
 
-        {/* <Route
-          path="/TriviaMainPage2026"
+        {/* {######################/* MAZZA QUZ PAGE /  ############################## */}
+
+        <Route
+          path="/contest/majaa-quiz"
           element={
             <PublicRoute>
-              <TriviaMainPage2026 setIsLoggedIn={setIsLoggedIn} />
+              <MazzaMainPage setIsLoggedIn={setIsLoggedIn} />
             </PublicRoute>
           }
-        /> */}
+        />
+
+        <Route
+          path="/majaa-quiz/login"
+          element={
+            <PublicRoute>
+              <MazzaLogin setIsLoggedIn={setIsLoggedIn} />
+            </PublicRoute>
+          }
+        />
+
+     
+
+        <Route
+          path="majaa-quiz/register"
+          element={
+            <PublicRoute>
+              <MazzaRegister />
+            </PublicRoute>
+          }
+        />
+
+        <Route
+          path="/majaa-quiz/Questions"
+          element={
+            <PrivateRoute>
+              <MazzaQuestions />
+            </PrivateRoute>
+          }
+        />
 
         <Route
           path="/auth-register"
@@ -949,15 +959,14 @@ function App() {
           element={<ArattaiWithSoumyaSwaminathan />}
         />
 
-             <Route
+        <Route
           path="/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur"
           element={<ArattaiWithGskVelu />}
         />
-                 <Route
+        <Route
           path="/chennai-healthcare-entrepreneur/live-views-&*lkjghsgshshgshsgsgh&screkey"
           element={<ArattaiGskVeluExcelView />}
         />
-
 
         <Route
           path="/arattai-with-kamakoti/iit-madras-director-admin-entry-oiuyterwqasvcxzdsw/refdewsdfettwfsvvdg/8728272/lmnjhscbnmdt"

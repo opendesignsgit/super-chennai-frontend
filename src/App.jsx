@@ -359,6 +359,7 @@ import MazzaQuestions from "./Pages/Activities/MazzaQuiz/Pages/MazzaQuestions";
 import MazzaRegister from "./Pages/Activities/MazzaQuiz/Pages/MazzaRegister";
 import MazzaLogin from "./Pages/Activities/MazzaQuiz/Pages/MazzaLogin";
 import QuestionManagement from "./Pages/Activities/MazzaQuiz/Pages/AdminPage";
+import HotshotChennaiContestNew from "./Pages/Activities/HotshotChennai-New/HotshotChennaiContestNew";
 
 
 
@@ -932,6 +933,11 @@ function App() {
         <Route
           path="/contest/hotshots-photography-contest"
           element={<HotshotChennaiContest />}
+        />
+
+        <Route
+          path="/contest/hotshots-photography-contest-new"
+          element={<HotshotChennaiContestNew />}
         />
 
         <Route path="/chennai-conclave" element={<Conclave />} />

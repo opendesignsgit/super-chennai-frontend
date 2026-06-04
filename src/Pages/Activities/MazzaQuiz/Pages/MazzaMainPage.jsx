@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MajaMarquee from "./MajaaaMarquee";
 
 export default function MazzaMainPage() {
   const navigate = useNavigate();
@@ -66,13 +67,11 @@ export default function MazzaMainPage() {
   return (
     <>
       <Helmet>
-        <title>
-          Super Chennai Day to Deliver Quiz | Daily Trivia Challenge
-        </title>
+        <title>Majaa Quiz | Chennai Summer Festival Quiz Experience</title>
 
         <meta
           name="description"
-          content="Participate in the Day to Deliver Quiz. Test your knowledge, stay informed, and stand a chance to win exciting vouchers."
+          content="Think you know Chennai Summer? Take part in Majaa Quiz and discover fun facts, pop culture, iconic hangout spots, seasonal favourites, and city memories."
         />
 
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
@@ -86,59 +85,69 @@ export default function MazzaMainPage() {
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/quiz-banner.jpeg"
+            src="/images/events/maja-quiz-banner.jpeg"
             alt="Super Chennai Quiz"
             loading="lazy"
           />
 
           <img
             className="block sm:hidden"
-            src="/images/events/quiz-banner.jpeg"
+            src="/images/events/mobile-maja-quiz-banner.jpeg"
             alt="Super Chennai Quiz Mobile"
             loading="lazy"
           />
         </div>
-
-        <div className="accodoamationBannerContainer">
-          <div className="accodoamationBannerText">
-            <h1>Mazza Quiz Challenge</h1>
-
-            <div className="breadCrum">
-              <Link to="/">Home</Link> - <span>Mazza Quiz Challenge</span>
-            </div>
-          </div>
-        </div>
+       
       </section>
 
-      {/* Logo */}
+
+      <MajaMarquee />
 
       <div className="drasection">
         <img src="/images/dra-logo.png" alt="DRA Logo" loading="lazy" />
       </div>
 
-      {/* Content */}
 
       <section
         className="w-full flex flex-col text-center py-10"
         style={{ paddingBottom: 0 }}
       >
         <div className="container max-w-7xl mx-auto px-4 !mb-0">
-          <h2 className="chennaiInvestmentsHeading leading-tight">
-            Mazza Quiz Challenge
+          <h2 className="chennaiInvestmentsHeading leading-tight !text-[#4459A8]">
+            Majja quiz
           </h2>
 
           <div className="workIntro">
             <p>
-              Test your knowledge, challenge yourself, and participate in the
-              Mazza Quiz Challenge. Answer daily quiz questions, stay engaged,
-              and stand a chance to win exciting rewards. Participate, learn
-              something new, and see how well you score against other quiz
-              enthusiasts.
+              Think you know Chennai summers? From beach vibes and mango madness
+              to iconic hangout spots and seasonal favourites, Majaa Quiz is
+              bringing a fun dose of summer to the festival.
+            </p>
+            <p>
+              Packed with exciting trivia, local favourites, pop-culture
+              moments, and everything that screams "Chennai Summer," this quiz
+              is your chance to relive the season's best memories. Whether
+              you're a foodie hunting for the best summer treats, a beach lover
+              chasing sunsets, or someone who lives for city adventures, there's
+              something for everyone.
+            </p>
+
+            <p>
+              Discover fun facts, explore summer-themed questions, and celebrate
+              the sights, flavours, and experiences that make Chennai summers
+              unforgettable. So gather your friends, test your summer knowledge,
+              and dive into a world of sunshine, stories, and city vibes.
+            </p>
+
+            <p>
+              <strong>
+                Because Chennai summer isn't just a season—it's a whole vibe.
+              </strong>
             </p>
           </div>
 
-          <div className="mt-6">
-            <div className="flex justify-center items-center gap-1 sksksksks">
+          <div className="mt-6 workIntro">
+            <div className="flex justify-start items-center gap-1 sksksksks">
               <input
                 className="inputcheckoososs"
                 type="checkbox"
@@ -176,7 +185,7 @@ export default function MazzaMainPage() {
         </div>
 
         <img
-          src="/images/events/superchennai-triva-2025.png"
+          src="/images/events/majaaa-img.jpeg"
           alt="Trivia 2025"
           loading="lazy"
         />
@@ -199,8 +208,8 @@ export default function MazzaMainPage() {
                   className="text-sm text-[#000] leading-relaxed"
                   style={{ fontWeight: 500 }}
                 >
-                  Be quick and smart! The first 3 participants who submit the
-                  correct answer will win exciting vouchers.
+                  Get all <strong>*3 quiz answers right* </strong> to enter the
+                  winner's race.
                 </p>
               </li>
 
@@ -208,8 +217,8 @@ export default function MazzaMainPage() {
                 <img className="w-5" src="/images/tick-2.svg" alt="" />
 
                 <p className="text-sm text-[#000]">
-                  Timing matters: Voting is open from
-                  <strong> 8:00 AM to 8:00 PM</strong> only.
+                  The <strong>*first 3 participants* </strong> with all correct
+                  answers will win exciting vouchers.
                 </p>
               </li>
 
@@ -217,8 +226,9 @@ export default function MazzaMainPage() {
                 <img className="w-5" src="/images/tick-2.svg" alt="" />
 
                 <p className="text-sm text-[#000] leading-relaxed">
-                  Winners are selected based on speed and accuracy. Vouchers are
-                  non-transferable and cannot be exchanged for cash.
+                  The quiz is live only from{" "}
+                  <strong>*8:00 AM to 8:00 PM*. </strong>Late entries won't make
+                  the cut.
                 </p>
               </li>
 
@@ -226,7 +236,8 @@ export default function MazzaMainPage() {
                 <img className="w-5" src="/images/tick-2.svg" alt="" />
 
                 <p className="text-sm text-[#000] leading-relaxed">
-                  The organizer’s decision will be final in all cases.
+                  It's all about <strong>*speed and accuracy*.</strong> Prizes
+                  are non-transferable, and the organizer's decision is final.
                 </p>
               </li>
             </ul>
@@ -518,9 +529,9 @@ export default function MazzaMainPage() {
 //             </ul>
 //             <button
 //               onClick={popupFunction}
-//               className="absolute top-8 right-7 w-8 h-8 rounded-full 
-//   bg-[#a44294] text-white 
-//   hover:bg-gray-800 
+//               className="absolute top-8 right-7 w-8 h-8 rounded-full
+//   bg-[#a44294] text-white
+//   hover:bg-gray-800
 //   flex items-center justify-center cursor-pointer"
 //             >
 //               ✕

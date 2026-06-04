@@ -107,7 +107,7 @@ export default function MazzaLogin() {
               </svg>
             </div>
 
-            <h2 className="text-2xl themelink-color  text-gray-800   themelink-color formheadingtheme hotshotstext  !text-[#4459A8]">
+            <h2 className="text-2xl themelink-color  text-gray-800   themelink-color formheadingtheme hotshotstext">
               {step === "input" ? "Login with OTP" : "Verify OTP"}
             </h2>
 

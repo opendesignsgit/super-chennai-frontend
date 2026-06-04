@@ -6,19 +6,50 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { API_BASE_URL_API } from "../../../../config";
 import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
-export default function HotshotChennaiContestNew() {
-  const navigate = useNavigate();
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useRef } from "react";
 
+
+export const partners = [
+
+ 
+  {
+    id: 1,
+    image: "/images/credai-logo.jpg",
+  },
+  {
+    id: 1,
+    image: "/images/madras-photo-logo.jpg",
+  },
+
+  {
+    id: 1,
+    image: "/images/polar-bear-ice-cream-logo.jpg",
+  },
+  {
+    id: 1,
+    image: "/images/radio-logo.jpg",
+  },
+  {
+    id: 1,
+    image: "/images/wonderla-logo.jpg",
+  },
+];
+
+export default function SummerClipsPhtography() {
+  const navigate = useNavigate();
   const validateURL = (url) =>
-  /^(https?:\/\/)?([\w\d-]+\.)+[\w-]+(\/.*)?$/.test(url);
+    /^(https?:\/\/)?([\w\d-]+\.)+[\w-]+(\/.*)?$/.test(url);
 
   const validateProfileInput = (value) => {
-  const usernameRegex = /^[a-zA-Z0-9._-]{3,}$/; // profile id
-  const urlRegex = /^https?:\/\/(www\.)?(linkedin\.com\/in|instagram\.com)\/[a-zA-Z0-9._-]+\/?$/;
+    const usernameRegex = /^[a-zA-Z0-9._-]{3,}$/; // profile id
+    const urlRegex =
+      /^https?:\/\/(www\.)?(linkedin\.com\/in|instagram\.com)\/[a-zA-Z0-9._-]+\/?$/;
 
-  return usernameRegex.test(value) || urlRegex.test(value);
-};
-
+    return usernameRegex.test(value) || urlRegex.test(value);
+  };
 
   const countryCodes = [
     { code: "+91", name: "India" },
@@ -65,8 +96,6 @@ export default function HotshotChennaiContestNew() {
       return;
     }
 
-
-
     const updated = [...images];
     updated[index] = {
       file,
@@ -106,13 +135,11 @@ export default function HotshotChennaiContestNew() {
       return;
     }
 
-
-    
-    if (form.linkedinUrl && !validateProfileInput(form.linkedinUrl)) {
-      toast.error("Please enter a valid LinkedIn URL");
-      setLoading(false);
-      return;
-    }
+    // if (form.linkedinUrl && !validateProfileInput(form.linkedinUrl)) {
+    //   toast.error("Please enter a valid LinkedIn URL");
+    //   setLoading(false);
+    //   return;
+    // }
 
     // if (form.locationUrl && !validateURL(form.locationUrl)) {
     //   toast.error("Please enter a valid Location URL");
@@ -129,14 +156,13 @@ export default function HotshotChennaiContestNew() {
     payload.append("linkedinUrl", form.linkedinUrl);
     payload.append("locationUrl", form.locationUrl);
 
-
     uploadedImages.forEach((img) => {
       payload.append("images", img.file);
     });
 
     try {
       const res = await axios.post(
-        `${API_BASE_URL_API}/all/hotshot-chennai/submit`,
+        `${API_BASE_URL_API}/summer-photography/summer-photography/submit`,
         payload,
       );
 
@@ -157,7 +183,7 @@ export default function HotshotChennaiContestNew() {
         setImages([null, null, null]);
         navigate("/thank-you", {
           state: {
-            from: "hotshot-chennai",
+            from: "summer-photography-chennai",
           },
         });
       }
@@ -169,7 +195,6 @@ export default function HotshotChennaiContestNew() {
       setLoading(false);
     }
   };
-
 
   const HotshotsSchema = {
     "@context": "https://schema.org",
@@ -200,23 +225,72 @@ export default function HotshotChennaiContestNew() {
   };
 
 
+
+
+
+
+
+
+
+
+  const [isMobile, setIsMobile] = useState(false);
+    const PrevArrow = ({ onClick }) => (
+    <div onClick={onClick} className="ExplorePageLeftButton"></div>
+  );
+  const NextArrow = ({ onClick }) => (
+    <div className="ExplorePageRightButton" onClick={onClick}></div>
+  );
+  const settings = {
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 1502220,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    responsive: [
+      { breakpoint: 1100, settings: { slidesToShow: 3 } },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      { breakpoint: 480, settings: { slidesToShow: 1 } },
+    ],
+  };
+
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+
+
   return (
     <>
       {/* ================= SEO ================= */}
 
       <Helmet>
-        <title>Hotshot Chennai | Photography Contest</title>
+        <title>
+          It’s Hot, It’s Happening. Chennai Summer Photography Contest
+        </title>
         <meta
           name="description"
-          content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
+          content="Capture Super Chennai’s vibrant summer—beaches, streets, food and etc. Enter the Summer Photography Contest 2026 with your camera or phone. Submit today and win!"
         />
         <meta
           property="og:title"
-          content="Hotshot Chennai | Photography Contest"
+          content="Capture Super Chennai’s vibrant summer—beaches, streets, food and etc. Enter the Summer Photography Contest 2026 with your camera or phone. Submit today and win!"
         />
         <meta
           property="og:description"
-          content="Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life."
+          content="Capture Super Chennai’s vibrant summer—beaches, streets, food and etc. Enter the Summer Photography Contest 2026 with your camera or phone. Submit today and win!"
         />
         <meta
           property="og:image"
@@ -229,13 +303,12 @@ export default function HotshotChennaiContestNew() {
 
         <link
           rel="canonical"
-          href={`${typeof window !== "undefined" ? window.location.origin : ""}/contest/hotshots-photography-contest`}
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/contest/chennai-summer-photography-contest`}
         />
 
         <script type="application/ld+json">
           {JSON.stringify(HotshotsSchema)}
         </script>
-
       </Helmet>
 
       <ToastContainer position="top-center" />
@@ -247,7 +320,7 @@ export default function HotshotChennaiContestNew() {
         <div className="relative z-0">
           <img
             className="eventsCalenderIamge hidden sm:block w-full"
-            src="/images/events/inner-banner-Hotshots-1.jpeg"
+            src="/images/Photogrpahy-content-inner.jpeg"
             alt="Super Chennai Quiz"
           />
 
@@ -290,36 +363,101 @@ export default function HotshotChennaiContestNew() {
       >
         <div className="container max-w-7xl mx-auto ">
           <div className="workIntro">
-            <h1>Super Chennai Hotshots</h1>
+            <h1>Super Chennai Photogrpahy contest</h1>
 
             <p>
-              Super Chennai Hotshots is an open photography call inviting
-              passionate photographers, photo bloggers, and hobbyists across the
-              city to capture Chennai as it lives and evolves every day.
-            </p>
-            <p>
-              From everyday moments and people to changing streets, modern
-              skylines, creative spaces, and new-age city life,Hotshots
-              celebrates a Chennai that balances tradition with progress.
+              Summer in Chennai isn't just about the soaring temperatures—it's
+              about the moments that make the season unforgettable. It's the
+              glow of a beach sunset after a long day, the buzz of crowded
+              streets, the colours of local markets, the comfort of a chilled
+              drink, and the memories made under endless blue skies.
             </p>
 
             <p>
-              Selected photographs will be featured on Super Chennai’s digital
-              platforms in collaboration with the contributor. The best works of
-              the year will be curated into a physical exhibition, showcasing
-              the city through the eyes of its people.
+              Every corner of the city tells a different story. From iconic
+              landmarks and coastal views to neighbourhood hangouts and everyday
+              scenes, Chennai comes alive in its own unique way during summer.
+              The city's energy, people, culture, and colours create countless
+              moments worth capturing.
             </p>
             <p>
-              If you have a lens and a love for Chennai—this is your frame .
+              Whether you're exploring familiar streets, discovering hidden
+              gems, or simply noticing beauty in everyday life, this is your
+              chance to showcase your perspective. Through your lens, capture
+              the sights, emotions, and experiences that define summer in
+              Chennai.
+            </p>
+            <p>
+              No professional setup required. No perfect frame expected. Just
+              authentic moments, creative storytelling, and your unique view of
+              the city.
+            </p>
+            <p>
+              Show us the Chennai that lives in your camera roll—the vibrant,
+              the unexpected, the nostalgic, and the unforgettable. Let every
+              photograph tell a story and celebrate the spirit of summer in the
+              city.
             </p>
 
             <hr />
 
             <h2 className=" themelink-color formheadingtheme hotshotstext">
-              Hotshots
+              Photogrpahy contest
             </h2>
             <div>
               <p className="everydaytext">Everyday stories. Evolving city.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*============= PARTNERS ================ */}
+
+      <div className="NewsLetterPage ">
+        <div className="exploreSldierBg">
+          <div className="container max-w-7xl mx-auto px-4">
+            <div className="exploreMoreSectionContent">
+              <h4>Partner</h4>
+            </div>
+
+            <div className="exploreSldierSection">
+              {(isMobile && partners.length >= 3) ||
+              (!isMobile && partners.length > 3) ? (
+                <Slider {...settings}>
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer px-2"
+                      onClick={() => setSelectedCard(card)}
+                    >
+                      <div className="relative rounded-lg overflow-hidden flex justify-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="h-[200px] object-contain partnercardimage"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              ) : (
+                <div className="flex justify-center gap-8 flex-wrap">
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer"
+                    >
+                      <div className="relative rounded-lg overflow-hidden flex justify-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="h-[200px] object-contain partnercardimage"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -332,7 +470,7 @@ export default function HotshotChennaiContestNew() {
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="relative h-full">
               <img
-                src="/images/events/superchennai-hotshots-left.jpg"
+                src="/images/superchennai-photgraphy-left.jpeg"
                 alt="Margazhi Moments Chennai"
                 className="w-full h-full object-cover min-h-[100px]"
               />
@@ -342,7 +480,7 @@ export default function HotshotChennaiContestNew() {
             {/* RIGHT FORM */}
             <div className="relative p-4 md:p-10 overflow-hidden">
               <h2 className=" themelink-color formheadingtheme">
-                SHARE YOUR HOTSHOTS
+                SHARE YOUR Photogrpahy
               </h2>
               <p className="text-gray-600 mb-6">
                 Upload your best Chennai moment and share the story behind your

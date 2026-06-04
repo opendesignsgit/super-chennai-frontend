@@ -1980,3 +1980,21 @@
   scrollbar-width: thin;
   scrollbar-color: #d63384 #ffe4ef;
 }
+
+
+.majaaaquizzzs {
+  display: flex;
+  column-gap: 3%;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.divmajaaaquizzzs {
+  width: max-content;
+  margin-bottom: 0;
+  padding-right: 40px;
+}
+
+.radiomajaainput {
+  width: max-content !important;
+}

@@ -22,7 +22,7 @@ export default function AdminView() {
    const [arattaiData, setArattaiData] = useState([]);
    const [arattaiJahabarData, setArattaiJahabarData] = useState([]);
    const [contentCreatorsData, setContentCreatorsData] = useState([]);
-
+   const [majaData, setMajaData] = useState([]);
   /* ================= AUTH CHECK ================= */
   useEffect(() => {
     const savedKey = sessionStorage.getItem("adminKey");
@@ -42,12 +42,24 @@ export default function AdminView() {
     fetchArattai();
     fetchArattaiJahabar(); 
     fetchContentCreators();
+    fetchMajaAnswers();
   };
 
 
   
 
   /* ================= API CALLS ================= */
+
+  const fetchMajaAnswers = async () => {
+  const res = await axios.get(
+    "http://localhost:3000/api/maja-answers/all-users"
+  );
+
+  if (res.data?.success) {
+    setMajaData(res.data.data || []);
+  }
+};
+
   const fetchContentCreators = async () => {
   const res = await axios.get(
     "https://api.superchennai.com/api/content/content-creators"
@@ -128,6 +140,20 @@ export default function AdminView() {
   };
 
   /* ================= QUIZ GROUP ================= */
+
+  const groupedMaja = majaData.reduce((acc, q) => {
+    if (!acc[q.user_id]) {
+      acc[q.user_id] = {
+        ...q,
+        answers: [],
+      };
+    }
+
+    acc[q.user_id].answers.push(q);
+
+    return acc;
+  }, {});
+
   const groupedQuiz = quizData.reduce((acc, q) => {
     if (!acc[q.user_id]) acc[q.user_id] = { ...q, answers: [] };
     acc[q.user_id].answers.push(q);
@@ -457,6 +483,7 @@ const downloadContentCreatorsXLS = () => {
               ["arattai", "Arattai-with-aruna"],
               ["arattai-jahabar", "Arattai - Jahabar Sadique"],
               ["content-creators", "Content Creators"],
+              ["maja", "Maja Quiz"],
             ].map(([key, label]) => (
               <button
                 key={key}
@@ -679,6 +706,101 @@ const downloadContentCreatorsXLS = () => {
                 )}
               </div>
             )}
+
+            {!showPopup && activeTab === "maja" && (
+  <div className="bg-white p-6 shadow-xl rounded-xl">
+    <h2 className="text-2xl font-bold mb-6 text-gray-800">
+      🎯 Maja Quiz – User Answer Flow
+    </h2>
+
+    <div className="overflow-x-auto">
+      <table className="w-full border text-left">
+        <thead className="bg-gray-200 sticky top-0 z-10">
+          <tr>
+            <th className="p-3 border">Name</th>
+            <th className="p-3 border">Phone</th>
+            <th className="p-3 border">Answers</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {Object.values(groupedMaja).map((user, index) => (
+            <tr key={index} className="align-top hover:bg-gray-50">
+              <td className="p-3 border font-semibold">
+                {user.name}
+              </td>
+
+              <td className="p-3 border">
+                {user.phone}
+              </td>
+
+              <td className="p-3 border">
+                <table className="w-full border text-sm">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      <th className="p-2 border">Question</th>
+                      <th className="p-2 border">Answer</th>
+                      <th className="p-2 border">Date</th>
+                      <th className="p-2 border">Time</th>
+                      <th className="p-2 border">Result</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    {user.answers.map((ans, idx) => {
+                      const { date, time } =
+                        formatDateTime(ans.created_at);
+
+                      return (
+                        <tr key={idx}>
+                          <td className="p-2 border">
+                            {ans.question_text}
+                          </td>
+
+                          <td className="p-2 border">
+                            {ans.answer}
+                          </td>
+
+                          <td className="p-2 border">
+                            {date}
+                          </td>
+
+                          <td className="p-2 border">
+                            {time}
+                          </td>
+
+                          <td className="p-2 border text-center">
+                            <span
+                              className={`px-2 py-1 rounded-full text-xs font-semibold ${
+                                ans.is_correct
+                                  ? "bg-green-100 text-green-700"
+                                  : "bg-red-100 text-red-700"
+                              }`}
+                            >
+                              {ans.is_correct
+                                ? "Correct"
+                                : "Wrong"}
+                            </span>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    {Object.values(groupedMaja).length === 0 && (
+      <p className="text-center mt-4">
+        No answers found.
+      </p>
+    )}
+  </div>
+)}
 
             {activeTab === "content-creators" && (
   <SimpleTable

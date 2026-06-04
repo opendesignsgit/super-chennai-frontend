@@ -39,24 +39,16 @@ export default function MazzaQuestions() {
   }, []);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
-
-    if (token) {
-      navigate("/majaa-quiz/questions", { replace: true });
-    }
-  }, []);
-
-  useEffect(() => {
     topRef.current?.scrollIntoView({ behavior: "auto", block: "start" });
   }, []);
 
   const fetchQuestions = async () => {
     try {
-      const res = await API.get("/majaa/questions");
+      const res = await API.get("/majaa/questions"); 
 
       setQuestions(res.data.data || []);
 
-      // console.log("Questions:", res.data.data);
+      console.log("Questions:", res.data.data);
     } catch (err) {
       console.error(err);
       setQuestions([]);
@@ -65,7 +57,9 @@ export default function MazzaQuestions() {
   const fetchAnsweredQuestions = async () => {
     try {
       const res = await API.get("/majaa/questions/answers/results");
-      const answeredIds = (res.data.results || []).map((r) => r.quiz_id);
+     const answeredIds = (res.data.results || []).map(
+  (r) => r.quiz_id
+);
       setAnsweredQuestions(answeredIds);
     } catch (err) {
       console.error("Failed to fetch answered questions", err);
@@ -95,62 +89,64 @@ export default function MazzaQuestions() {
 
   const navigate = useNavigate();
 
-  const submitAnswers = async () => {
-    const unanswered = questions.filter((q) => !answers[q.id]);
+const submitAnswers = async () => {
+  const unanswered = questions.filter((q) => !answers[q.id]);
 
-    if (unanswered.length > 0) {
-      toast.error(
-        "Hey! Make sure you answer every question before hitting Submit.",
-      );
-      return;
-    }
+  if (unanswered.length > 0) {
+    toast.error(
+      "Hey! Make sure you answer every question before hitting Submit."
+    );
+    return;
+  }
 
-    try {
-      setIsSubmitting(true);
+  try {
+    setIsSubmitting(true);
 
-      const formattedAnswers = Object.entries(answers).map(([qid, ans]) => ({
+    const formattedAnswers = Object.entries(answers).map(
+      ([qid, ans]) => ({
         quiz_id: Number(qid),
         user_answer: ans,
-      }));
+      })
+    );
 
-      for (const ans of formattedAnswers) {
-        try {
-          await API.post("/majaa/answers/answers/submit", ans);
-        } catch (err) {
-          const msg = err.response?.data?.message;
+    for (const ans of formattedAnswers) {
+      try {
+        await API.post("/majaa/answers/answers/submit", ans);
+      } catch (err) {
+        const msg = err.response?.data?.message;
 
-          if (msg === "You have already answered this question") {
-            const qText = questionMap[ans.quiz_id];
+        if (msg === "You have already answered this question") {
+          const qText = questionMap[ans.quiz_id];
 
-            setErrorModal({
-              visible: true,
-              message: qText
-                ? `You already answered: "${qText}"`
-                : "You already answered this question",
-            });
+          setErrorModal({
+            visible: true,
+            message: qText
+              ? `You already answered: "${qText}"`
+              : "You already answered this question",
+          });
 
-            return;
-          }
-
-          toast.error(msg || "Something went wrong!");
           return;
         }
+
+        toast.error(msg || "Something went wrong!");
+        return;
       }
-
-      toast.success("Answers submitted successfully!");
-
-      navigate("/thank-you", {
-        state: {
-          from: "majaa-game",
-        },
-      });
-    } catch (err) {
-      console.error(err);
-      toast.error("Failed to submit answers");
-    } finally {
-      setIsSubmitting(false);
     }
-  };
+
+    toast.success("Answers submitted successfully!");
+
+    navigate("/thank-you", {
+      state: {
+        from: "mazza-game",
+      },
+    });
+  } catch (err) {
+    console.error(err);
+    toast.error("Failed to submit answers");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   useEffect(() => {
     const isMobile = window.innerWidth < 768;
@@ -165,8 +161,6 @@ export default function MazzaQuestions() {
       if (sticky) sticky.style.setProperty("display", "none", "important");
     }
   }, []);
-
-  // const question = questions?.[currentQuestion];
 
   return (
     <>
@@ -223,24 +217,24 @@ export default function MazzaQuestions() {
         <div>
           <img
             className="eventsCalenderIamge hidden sm:block"
-            src="/images/events/maja-quiz-banner.jpeg"
+            src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz"
           />
 
           {/* Mobile Image */}
           <img
             className=" block sm:hidden"
-            src="/images/events/mobile-maja-quiz-banner.jpeg"
+            src="/images/events/quiz-banner.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
 
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            {/* <h1>Dayasdasdaaaaaaaaaaaaaaaaaaaaz</h1> */}
-            {/* <div className="breadCrum">
+            <h1>Dayasdasdaaaaaaaaaaaaaaaaaaaaz</h1>
+            <div className="breadCrum">
               <Link to="/">Home</Link> - <Link to="">asdddddddddddd</Link>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
@@ -250,10 +244,10 @@ export default function MazzaQuestions() {
           <div className="um-form-section">
             <div className="flex justify-between items-center mb-4 mobilessss">
               <h2
-                className="text-center lowercase  !text-[#4459A8]"
+                className="text-center lowercase heading-gradient"
                 style={{ textTransform: "lowercase" }}
               >
-                #Majja-quiz
+                #mazza-quiz
               </h2>
 
               <button
@@ -279,7 +273,7 @@ export default function MazzaQuestions() {
             </div>
 
             {/* Questions */}
-            {/* <div className="mt-8">
+            <div className="mt-8">
               {questions?.length > 0 ? (
                 questions.map((question, index) => (
                   <div
@@ -290,11 +284,11 @@ export default function MazzaQuestions() {
                       Q{index + 1}. {question.question_text}
                     </h3>
 
-                    <div className="space-y-3 majaaaquizzzs">
+                    <div className="space-y-3">
                       {question.options?.map((option, i) => (
                         <label
                           key={i}
-                          className={`divmajaaaquizzzs  flex items-center gap-3 p-4 rounded-lg border cursor-pointer transition-all
+                          className={`flex items-center gap-3 p-4 rounded-lg border cursor-pointer transition-all
                     ${
                       answers[question.id] === option
                         ? "border-[#995098] bg-purple-50"
@@ -307,7 +301,7 @@ export default function MazzaQuestions() {
                             value={option}
                             checked={answers[question.id] === option}
                             onChange={() => handleChange(question.id, option)}
-                            className="accent-[#995098] radiomajaainput"
+                            className="accent-[#995098]"
                           />
 
                           <span className="text-gray-700">{option}</span>
@@ -341,88 +335,7 @@ export default function MazzaQuestions() {
                   </button>
                 </div>
               )}
-            </div> */}
-
-            <div>
-              {questions?.length > 0 && currentQuestion ? (
-                <div
-                  key={currentQuestion.id}
-                  className="mb-8 border border-gray-200 rounded-xl p-6 shadow-sm pt-[30px]"
-                >
-                  <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                    Q{currentIndex + 1}. {currentQuestion.question_text}
-                  </h3>
-
-                  <div className="space-y-3 majaaaquizzzs">
-                    {currentQuestion.options?.map((option, i) => (
-                      <label
-                        key={i}
-                        className={`divmajaaaquizzzs flex items-center gap-3 p-4 rounded-lg border cursor-pointer transition-all
-          ${
-            answers[currentQuestion.id] === option
-              ? "border-[#995098] bg-purple-50"
-              : "border-gray-200 hover:border-[#995098]"
-          }`}
-                      >
-                        <input
-                          type="radio"
-                          name={`question-${currentQuestion.id}`}
-                          value={option}
-                          checked={answers[currentQuestion.id] === option}
-                          onChange={() =>
-                            handleChange(currentQuestion.id, option)
-                          }
-                          className="accent-[#995098] radiomajaainput"
-                        />
-
-                        <span className="text-gray-700">{option}</span>
-                      </label>
-                    ))}
-                  </div>
-                  <div className="flex justify-center gap-3 mt-7">
-                    {currentIndex > 0 && (
-                      <button
-                        onClick={() => setCurrentIndex((prev) => prev - 1)}
-                        className="px-4 py-2 bg-gray-200 rounded cursor-pointer"
-                      >
-                        Previous Question
-                      </button>
-                    )}
-
-                    {currentIndex < questions.length - 1 && (
-                      <button
-                        onClick={() => setCurrentIndex((prev) => prev + 1)}
-                        className="px-4 py-2 bg-[#995098] text-white rounded cursor-pointer"
-                      >
-                        Next Question
-                      </button>
-                    )}
-                  </div>
-
-                  <div className="text-center mt-4">
-                    {currentIndex + 1} / {questions.length}
-                  </div>
-                </div>
-              ) : (
-                <div className="text-center py-10">
-                  <p className="text-gray-500 text-lg">
-                    No quiz questions available.
-                  </p>
-                </div>
-              )}
             </div>
-
-            {questions?.length > 0 && (
-              <div className="text-center mt-10">
-                <button
-                  onClick={submitAnswers}
-                  disabled={isSubmitting}
-                  className="gradient-primarySuperchennai text-white px-8 py-3 rounded-full font-semibold shadow-lg disabled:opacity-50"
-                >
-                  {isSubmitting ? "Submitting..." : "Submit Quiz"}
-                </button>
-              </div>
-            )}
           </div>
         </div>
       </div>

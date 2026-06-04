@@ -3,7 +3,9 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const QuestionManagement = () => {
-  const API_URL = " https://api.superchennai.com/api/majaa/questions";
+  // const API_URL = " https://api.superchennai.com/api/majaa/questions";
+    const API_URL = " http://localhost:3000/api/majaa/questions";
+
   const initialFormState = {
     question_text: "",
     correct_answer: "",
@@ -370,14 +372,14 @@ const QuestionManagement = () => {
 
                           <td className="px-6 py-4">
                             <div className="flex justify-center gap-2">
-                              {/* <button
+                              <button
                                 onClick={() =>
                                   handleEdit(question)
                                 }
                                 className="rounded-lg bg-yellow-500 px-4 py-2 text-white hover:bg-yellow-600"
                               >
                                 Edit
-                              </button> */}
+                              </button>
 
                               <button
                                 onClick={() =>

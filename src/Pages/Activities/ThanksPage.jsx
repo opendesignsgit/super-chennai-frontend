@@ -5,8 +5,9 @@ import { useLocation } from "react-router-dom";
 
 export default function Thankyou() {
   const location = useLocation();
-  // const from = location.state?.from;
-  const from = "gskvelu";
+  const from = location.state?.from;
+  // const from = "majaa-game";
+
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -38,30 +39,37 @@ export default function Thankyou() {
             ? "/images/VIVEK-TQ-BANNER-mobile.jpeg"
             : "/images/thankyou-vivek-banner.jpeg",
         );
-
-         } else if (from === "soumya") {
+      } else if (from === "soumya") {
         setImageSrc(
           isMobile
             ? "/images/VIVEK-TQ-BANNER-mobile.jpeg"
             : "/images/thankyou-vivek-banner.jpeg",
         );
-           } else if (from === "content-writers") {
+      } else if (from === "content-writers") {
         setImageSrc(
           isMobile
             ? "/images/Banner - thankyou-content.png"
             : "/images/Banner - thankyou-content.png",
         );
-
-
-       
+      } else if (from === "summer-photography-chennai") {
+        setImageSrc(
+          isMobile
+            ? "/images/Photogrpahy-content-mobile.jpeg"
+            : "/images/Photogrpahy-content.jpeg",
+        );
+      } else if (from === "majaa-game") {
+        setImageSrc(
+          isMobile
+            ? "/images/quiz-thnkyou-new-event-mobile.jpeg"
+            : "/images/quiz-thnkyou-new-event.jpeg",
+        );
       } else if (from === "jahabar") {
         setImageSrc(
           isMobile
             ? "/images/mobile-chaikings-tq-banner-f-1.png"
             : "/images/tq-chaikings-banner-f.jpeg",
         );
-
-             } else if (from === "gskvelu") {
+      } else if (from === "gskvelu") {
         setImageSrc(
           isMobile
             ? "/images/MOBILE-THANKYOU-BANNER-GSK-VELU.jpeg"
@@ -122,13 +130,16 @@ export default function Thankyou() {
           <div className="accodoamationBannerText">
             <AutoShrinkText
               text={
-                  from === "vivek" || from === "gskvelu"
+                from === "vivek" ||
+                from === "gskvelu" ||
+                from === "summer-photography-chennai" ||
+                from === "majaa-game"
                   ? ""
                   : from === "trivia-game" ||
                       from === "conclave" ||
                       from === "jahabar"
                     ? "Day to deliver-quiz"
-                    : "Thank You!" 
+                    : "Thank You!"
               }
               baseSize={60}
               minSize={40}
@@ -137,10 +148,6 @@ export default function Thankyou() {
               width="80%"
               maxLines={2}
             />
-            {/* <h1>Day to deliver-quiz</h1> */}
-            {/* <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="">Day to deliver-quiz</Link>
-            </div> */}
           </div>
         </div>
       </section>
@@ -166,25 +173,22 @@ export default function Thankyou() {
               </p>
             </div>
           )}
-          
 
-            {from === "content-writers" && (
+          {from === "content-writers" && (
             <div className="workIntro">
               <h1>You Made It 🎉</h1>
 
               <p>
-               Thanks for locking your spot with us ✨{" "}
+                Thanks for locking your spot with us ✨{" "}
                 {/* <strong>Super Chennai Conclave</strong>. */}
               </p>
 
               <p>
-                We’ve received your details and our team will review everything soon
-                Our team will get in touch with you soon regarding the next steps 🚀
-
+                We’ve received your details and our team will review everything
+                soon Our team will get in touch with you soon regarding the next
+                steps 🚀
               </p>
-              <p>
-                Stay tuned — good things are coming 💫
-              </p>
+              <p>Stay tuned — good things are coming 💫</p>
             </div>
           )}
 
@@ -202,16 +206,35 @@ export default function Thankyou() {
             </div>
           )}
 
-          
+          {from === "summer-photography-chennai" && (
+            <div className="workIntro">
+              <h1>Your Moment Is In! </h1>
 
+              <p>
+                Your Photogrpahy Moment has been successfully submitted. Now,
+                the exciting part begins!
+              </p>
+              <p>
+                You’ve shared your view of Chennai — its stories, vibes, and
+                hidden gems. Our team can’t wait to explore your capture and
+                discover the story behind your frame.
+              </p>
+              <p>But why stop here?</p>
+              <p>
+                Check out the other SuperChennai events too — we’ve hosted
+                countless exciting moments, and there’s plenty more waiting for
+                you to explore!
+              </p>
+            </div>
+          )}
 
-            {from === "gskvelu" && (
+          {from === "gskvelu" && (
             <div className="workIntro">
               <h1>You're Registered!</h1>
 
               <p>
-                Thank you for registering for Arattai with GSK Velu.
-                Your submission has been successfully received, and our team is
+                Thank you for registering for Arattai with GSK Velu. Your
+                submission has been successfully received, and our team is
                 currently reviewing your registration. If your entry is
                 selected, you will receive an official confirmation email from
                 Team Super Chennai with further details about the event. Please
@@ -328,6 +351,32 @@ export default function Thankyou() {
 
               <hr />
             </div>
+          )}
+
+          {from === "majaa-game" && (
+            <>
+              <div className="workIntro">
+                <h1>Thankyou for participating!</h1>
+               
+              </div>
+              <>
+                <div className="workIntro max-w-xl mx-auto text-center  backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-lg instagramlink">
+                  <p className="text-base md:text-lg text-gray-200 mb-4 leading-relaxed">
+                    Don’t miss the winners! 👀 <br />
+                    Follow us on Instagram for live updates and results.
+                  </p>
+
+                  <a
+                    href="https://www.instagram.com/super_chennai_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-medium text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:scale-105 transition-all duration-300 shadow-md"
+                  >
+                    📸 Follow on Instagram
+                  </a>
+                </div>
+              </>
+            </>
           )}
 
           {from === "trivia-game" && (

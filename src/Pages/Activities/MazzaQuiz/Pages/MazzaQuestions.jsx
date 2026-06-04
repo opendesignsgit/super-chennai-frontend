@@ -174,15 +174,16 @@ export default function MazzaQuestions() {
 
       <Helmet>
         <title>
-          Test Your Smarts - Take the Ultimate Fun Super Chennai Quiz
+        Majaa Quiz | Chennai Summer Festival Quiz Experience
+
         </title>
         <meta
           name="description"
-          content="The Super Chennai Quiz is here on Dec 7, 2025! Test your knowledge across sports, music, food, and Chennai. Exciting prizes await—team up and enjoy an epic evening."
+          content="Think you know Chennai Summer? Take part in Majaa Quiz and discover fun facts, pop culture, iconic hangout spots, seasonal favourites, and city memories"
         />
         <link
           rel="canonical"
-          href={`${typeof window !== "undefined" ? window.location.origin : ""}/contests/chennai-quiz`}
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/majaa-quiz/questions`}
         />
       </Helmet>
 

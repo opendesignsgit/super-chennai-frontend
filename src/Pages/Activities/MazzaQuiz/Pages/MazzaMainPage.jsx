@@ -73,6 +73,10 @@ export default function MazzaMainPage() {
           name="description"
           content="Think you know Chennai Summer? Take part in Majaa Quiz and discover fun facts, pop culture, iconic hangout spots, seasonal favourites, and city memories."
         />
+           <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/contest/majaa-quiz`}
+        />
 
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
@@ -104,7 +108,7 @@ export default function MazzaMainPage() {
       <MajaMarquee />
 
       <div className="drasection">
-        <img src="/images/dra-logo.png" alt="DRA Logo" loading="lazy" />
+        <img src="/images/wonderla-logo.jpg" alt="DRA Logo" loading="lazy" />
       </div>
 
 

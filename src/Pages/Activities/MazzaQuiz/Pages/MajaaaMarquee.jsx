@@ -12,10 +12,10 @@ export default function MajaMarquee() {
       id: 1,
       image: "/images/events/marquee/credai-logo.jpg",
     },
-    {
-      id: 1,
-      image: "/images/events/marquee/dra-logo.jpg",
-    },
+    // {
+    //   id: 1,
+    //   image: "/images/events/marquee/dra-logo.jpg",
+    // },
  
     {
       id: 1,
@@ -73,7 +73,7 @@ export default function MajaMarquee() {
         <div className="exploreSldierBg">
           <div className="container max-w-7xl mx-auto px-4">
             <div className="exploreMoreSectionContent">
-              <h4 className="!text-[#4459A8]">Title partners</h4>
+              <h4 className="!text-[#4459A8]">Our partners</h4>
             </div>
 
             <div className="exploreSldierSection">

@@ -11,10 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef } from "react";
 
-
 export const partners = [
-
- 
   {
     id: 1,
     image: "/images/credai-logo.jpg",
@@ -224,17 +221,8 @@ export default function SummerClipsPhtography() {
     datePublished: "2025-11-01",
   };
 
-
-
-
-
-
-
-
-
-
   const [isMobile, setIsMobile] = useState(false);
-    const PrevArrow = ({ onClick }) => (
+  const PrevArrow = ({ onClick }) => (
     <div onClick={onClick} className="ExplorePageLeftButton"></div>
   );
   const NextArrow = ({ onClick }) => (
@@ -258,7 +246,6 @@ export default function SummerClipsPhtography() {
     ],
   };
 
-
   useEffect(() => {
     const checkScreen = () => {
       setIsMobile(window.innerWidth < 768);
@@ -269,8 +256,6 @@ export default function SummerClipsPhtography() {
 
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
-
-
 
   return (
     <>
@@ -356,13 +341,13 @@ export default function SummerClipsPhtography() {
         </div>
       </section>
 
-            {/*============= PARTNERS ================ */}
+      {/*============= PARTNERS ================ */}
 
       <div className="NewsLetterPage ">
         <div className="exploreSldierBg">
           <div className="container max-w-7xl mx-auto px-4">
             <div className="exploreMoreSectionContent">
-              <h4>Partners</h4>
+              <h4>Our Partners</h4>
             </div>
 
             <div className="exploreSldierSection">
@@ -462,8 +447,6 @@ export default function SummerClipsPhtography() {
           </div>
         </div>
       </div>
-
-
 
       {/* ================= FORM ================= */}
 

@@ -327,7 +327,7 @@ export default function SummerClipsPhtography() {
           {/* Mobile Image */}
           <img
             className="block sm:hidden w-full"
-            src="/images/events/hotshots-square-banner1.jpeg"
+            src="/images/Photogrpahy-content-inner-mobile.jpeg"
             alt="Super Chennai Quiz Mobile"
           />
         </div>
@@ -356,6 +356,58 @@ export default function SummerClipsPhtography() {
         </div>
       </section>
 
+            {/*============= PARTNERS ================ */}
+
+      <div className="NewsLetterPage ">
+        <div className="exploreSldierBg">
+          <div className="container max-w-7xl mx-auto px-4">
+            <div className="exploreMoreSectionContent">
+              <h4>Partners</h4>
+            </div>
+
+            <div className="exploreSldierSection">
+              {(isMobile && partners.length >= 3) ||
+              (!isMobile && partners.length > 3) ? (
+                <Slider {...settings}>
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer px-2"
+                      onClick={() => setSelectedCard(card)}
+                    >
+                      <div className="relative rounded-lg overflow-hidden flex justify-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="h-[200px] object-contain partnercardimage"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </Slider>
+              ) : (
+                <div className="flex justify-center gap-8 flex-wrap">
+                  {partners.map((card) => (
+                    <div
+                      key={card.id}
+                      className="ExplorePageSliderImage cursor-pointer"
+                    >
+                      <div className="relative rounded-lg overflow-hidden flex justify-center">
+                        <img
+                          src={card.image}
+                          alt={card.name}
+                          className="h-[200px] object-contain partnercardimage"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* ================= Intro Content ================= */}
       <div
         className="visitIntroParaSection detailIntro"
@@ -363,7 +415,7 @@ export default function SummerClipsPhtography() {
       >
         <div className="container max-w-7xl mx-auto ">
           <div className="workIntro">
-            <h1>Super Chennai Photogrpahy contest</h1>
+            <h1>Photogrpahy contest</h1>
 
             <p>
               Summer in Chennai isn't just about the soaring temperatures—it's
@@ -411,57 +463,7 @@ export default function SummerClipsPhtography() {
         </div>
       </div>
 
-      {/*============= PARTNERS ================ */}
 
-      <div className="NewsLetterPage ">
-        <div className="exploreSldierBg">
-          <div className="container max-w-7xl mx-auto px-4">
-            <div className="exploreMoreSectionContent">
-              <h4>Partner</h4>
-            </div>
-
-            <div className="exploreSldierSection">
-              {(isMobile && partners.length >= 3) ||
-              (!isMobile && partners.length > 3) ? (
-                <Slider {...settings}>
-                  {partners.map((card) => (
-                    <div
-                      key={card.id}
-                      className="ExplorePageSliderImage cursor-pointer px-2"
-                      onClick={() => setSelectedCard(card)}
-                    >
-                      <div className="relative rounded-lg overflow-hidden flex justify-center">
-                        <img
-                          src={card.image}
-                          alt={card.name}
-                          className="h-[200px] object-contain partnercardimage"
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </Slider>
-              ) : (
-                <div className="flex justify-center gap-8 flex-wrap">
-                  {partners.map((card) => (
-                    <div
-                      key={card.id}
-                      className="ExplorePageSliderImage cursor-pointer"
-                    >
-                      <div className="relative rounded-lg overflow-hidden flex justify-center">
-                        <img
-                          src={card.image}
-                          alt={card.name}
-                          className="h-[200px] object-contain partnercardimage"
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* ================= FORM ================= */}
 

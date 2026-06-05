@@ -52,7 +52,7 @@ export default function AdminView() {
 
   const fetchMajaAnswers = async () => {
   const res = await axios.get(
-    "http://localhost:3000/api/maja-answers/all-users"
+    "https://api.superchennai.com/api/maja-answers/all-users"
   );
 
   if (res.data?.success) {

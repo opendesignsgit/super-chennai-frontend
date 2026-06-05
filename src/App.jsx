@@ -1599,7 +1599,7 @@ function App() {
         />
 
         <Route
-          path="/http://superchennai.com/manifesto"
+          path="/www.superchennai.com/manifesto"
           element={
             <Navigate to="https://manifesto.superchennai.com/welcome" replace />
           }

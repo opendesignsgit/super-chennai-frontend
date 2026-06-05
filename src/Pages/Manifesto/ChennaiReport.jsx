@@ -143,7 +143,7 @@ export default function ChennaiReport() {
 
             <iframe
               src={`https://docs.google.com/gview?url=${encodeURIComponent(
-                "https://superchennai.com/pdfs/explore_more_chennai.pdf",
+                "www.superchennai.com/pdfs/explore_more_chennai.pdf",
               )}&embedded=true`}
               className="w-full h-[75vh]"
             />

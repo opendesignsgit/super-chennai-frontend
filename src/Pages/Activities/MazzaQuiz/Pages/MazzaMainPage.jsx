@@ -42,27 +42,22 @@ export default function MazzaMainPage() {
     };
   }, []);
 
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    name: "Day to Deliver Quiz",
-    description:
-      "Super Chennai Trivia brings a fun quiz on Chennai, culture, current affairs, civic awareness, and TN Elections.",
-    image:
-      "https://www.superchennai.com/images/events/superchennai-triva-2025.png",
-    startDate: "2026-04-13T11:00+05:30",
-    endDate: "2026-04-23T24:00+05:30",
-    eventStatus: "https://schema.org/EventScheduled",
-    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
-    location: {
-      "@type": "VirtualLocation",
-      url: "https://www.superchennai.com/day-to-deliver-quiz",
-    },
-    performer: {
-      "@type": "Organization",
-      name: "Super Chennai",
-    },
-  };
+  const schemaData = 
+ {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Majja quiz",
+  "description": "Think you know Chennai Summer? Take part in Majaa Quiz and discover fun facts, pop culture, iconic hangout spots, seasonal favourites, and city memories.",
+  "image": "https://www.superchennai.com/images/events/maja-quiz-banner.jpeg",
+  "startDate": "2026-06-05T12:00+05:30",
+  "endDate": "2026-06-30T12:00+05:30",
+  "eventStatus": "https://schema.org/EventMovedOnline",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "location": {
+    "@type": "VirtualLocation",
+    "url": "https://www.superchennai.com/contest/majaa-quiz"
+  }
+}
 
   return (
     <>

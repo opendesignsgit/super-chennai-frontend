@@ -195,31 +195,21 @@ export default function SummerClipsPhtography() {
 
   const HotshotsSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id":
-        "https://www.superchennai.com/contest/hotshots-photography-contest",
-    },
-    headline: "Super Chennai HotShots Photography Contest",
+    "@type": "Event",
+    name: "Photogrpahy contest",
     description:
-      "Hotshots photography contest by SuperChennai invites photographers to capture Chennai’s everyday stories, evolving cityscapes, and contemporary urban life.",
-    image:
-      "https://www.superchennai.com/images/events/inner-banner-Hotshots-1.jpeg",
-    author: {
-      "@type": "Person",
-      name: "Super Chennai",
+      "Capture Super Chennai’s vibrant summer—beaches, streets, food and etc. Enter the Summer Photography Contest 2026 with your camera or phone. Submit today and win!",
+    image: "https://www.superchennai.com/images/Photogrpahy-content-inner.jpeg",
+    startDate: "2026-06-05T12:00+05:30",
+    endDate: "2026-06-30T12:00+05:30",
+    eventStatus: "https://schema.org/EventMovedOnline",
+    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+    location: {
+      "@type": "VirtualLocation",
+      url: "https://www.superchennai.com/contest/chennai-summer-photography-contest",
     },
-    publisher: {
-      "@type": "Organization",
-      name: "",
-      logo: {
-        "@type": "ImageObject",
-        url: "",
-      },
-    },
-    datePublished: "2025-11-01",
   };
+
 
   const [isMobile, setIsMobile] = useState(false);
   const PrevArrow = ({ onClick }) => (

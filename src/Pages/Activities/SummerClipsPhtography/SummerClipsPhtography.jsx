@@ -400,7 +400,7 @@ export default function SummerClipsPhtography() {
       >
         <div className="container max-w-7xl mx-auto ">
           <div className="workIntro">
-            <h1>Photogrpahy contest</h1>
+            <h1>Photography contest</h1>
 
             <p>
               Summer in Chennai isn't just about the soaring temperatures—it's
@@ -439,7 +439,7 @@ export default function SummerClipsPhtography() {
             <hr />
 
             <h2 className=" themelink-color formheadingtheme hotshotstext">
-              Photogrpahy contest
+              Photography contest
             </h2>
             <div>
               <p className="everydaytext">Everyday stories. Evolving city.</p>
@@ -464,8 +464,8 @@ export default function SummerClipsPhtography() {
 
             {/* RIGHT FORM */}
             <div className="relative p-4 md:p-10 overflow-hidden">
-              <h2 className=" themelink-color formheadingtheme">
-                SHARE YOUR Photogrpahy
+              <h2 className=" themelink-color formheadingtheme" style={{width:"100%"}}>
+                SHARE YOUR Photography
               </h2>
               <p className="text-gray-600 mb-6">
                 Upload your best Chennai moment and share the story behind your

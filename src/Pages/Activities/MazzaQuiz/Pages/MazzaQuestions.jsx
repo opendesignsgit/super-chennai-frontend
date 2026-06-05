@@ -254,7 +254,7 @@ export default function MazzaQuestions() {
                 className="text-center lowercase  !text-[#4459A8]"
                 style={{ textTransform: "lowercase" }}
               >
-                #Majja-quiz
+                #Majaa-quiz
               </h2>
 
               <button

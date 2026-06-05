@@ -118,7 +118,7 @@ export default function MazzaMainPage() {
       >
         <div className="container max-w-7xl mx-auto px-4 !mb-0">
           <h2 className="chennaiInvestmentsHeading leading-tight !text-[#4459A8]">
-            Majja quiz
+            Majaa quiz
           </h2>
 
           <div className="workIntro">

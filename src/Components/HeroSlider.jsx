@@ -110,6 +110,22 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
+   
+   {
+    image: "/images/homepage-desk-maja-quiz.jpeg",
+    link: "/contest/chennai-summer-photography-contest",
+    image1: "/images/maja-quiz-banner-mobile.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
+   {
+    image: "/images/desk-homepage-photography-contest.jpeg",
+    link: "/contest/chennai-summer-photography-contest",
+    image1: "/images/desk-homepage-photography-contest-mobile.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
     {
     image: "/images/homepage-banner-gskvelu-t.jpeg",
     link: "/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur",

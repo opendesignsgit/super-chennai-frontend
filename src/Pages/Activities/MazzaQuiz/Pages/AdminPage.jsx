@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { API_BASE_URL_API } from "../../../../../config";
 
 const QuestionManagement = () => {
-  const API_URL = "api.superchennai.com/api/majaa/questions";
+  const API_URL = `${API_BASE_URL_API}/majaa/questions`;
+  
   const initialFormState = {
     question_text: "",
     correct_answer: "",

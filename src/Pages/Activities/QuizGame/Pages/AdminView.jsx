@@ -23,6 +23,7 @@ export default function AdminView() {
    const [arattaiJahabarData, setArattaiJahabarData] = useState([]);
    const [contentCreatorsData, setContentCreatorsData] = useState([]);
    const [majaData, setMajaData] = useState([]);
+   const [summerPhotographyData, setSummerPhotographyData] = useState([]);
   /* ================= AUTH CHECK ================= */
   useEffect(() => {
     const savedKey = sessionStorage.getItem("adminKey");
@@ -43,12 +44,22 @@ export default function AdminView() {
     fetchArattaiJahabar(); 
     fetchContentCreators();
     fetchMajaAnswers();
+    fetchSummerPhotography();
   };
 
 
   
 
   /* ================= API CALLS ================= */
+  const fetchSummerPhotography = async () => {
+  const res = await axios.get(
+    `${API_BASE_URL_API}/summer-photography/summer-photography`
+  );
+
+  if (res.data?.success) {
+    setSummerPhotographyData(res.data.data || []);
+  }
+};
 
   const fetchMajaAnswers = async () => {
   const res = await axios.get(
@@ -421,6 +432,49 @@ const downloadContentCreatorsXLS = () => {
   );
 };
 
+const downloadSummerPhotographyXLS = () => {
+  if (!summerPhotographyData?.length) return;
+
+  const maxImages = Math.max(
+    ...summerPhotographyData.map((d) => d.images?.length || 0)
+  );
+
+  const formattedData = summerPhotographyData.map((d, i) => {
+    const row = {
+      "S.No": i + 1,
+      Name: d.name || "",
+      Email: d.email || "",
+      Phone: d.phone || "",
+      Location: d.location_url || "",
+      Message: d.message || "",
+      Date: formatDateTime(d.created_at).date,
+      Time: formatDateTime(d.created_at).time,
+    };
+
+    for (let j = 0; j < maxImages; j++) {
+      row[`Image ${j + 1}`] = d.images?.[j]
+        ? `https://api.superchennai.com${d.images[j].path}`
+        : "";
+    }
+
+    return row;
+  });
+
+  const worksheet = XLSX.utils.json_to_sheet(formattedData);
+  const workbook = XLSX.utils.book_new();
+
+  XLSX.utils.book_append_sheet(
+    workbook,
+    worksheet,
+    "Summer Photography"
+  );
+
+  XLSX.writeFile(
+    workbook,
+    "Summer_Photography_Entries.xlsx"
+  );
+};
+
 
   return (
     <>
@@ -477,6 +531,7 @@ const downloadContentCreatorsXLS = () => {
               ["stories", "Namma Stories"],
               ["reimagine", "Reimagine Chennai"],
               ["hotshot", "Hotshot Chennai"],
+              ["summer-photography", "Summer Photography"],
               ["margazhi", "Margazhi Month"],
               ["conclave", "Conclave"],
               ["trivia", "Trivia"],
@@ -510,16 +565,26 @@ const downloadContentCreatorsXLS = () => {
             </div>
           )}
           {activeTab === "content-creators" && (
-  <div className="flex justify-end px-6 mb-4">
-    <button
-      onClick={downloadContentCreatorsXLS}
-      className="bg-green-700 text-white px-4 py-2 rounded font-semibold hover:bg-green-800"
-    >
-      ⬇ Download Content Creator Entries
-    </button>
-  </div>
-)}
-          
+            <div className="flex justify-end px-6 mb-4">
+              <button
+                onClick={downloadContentCreatorsXLS}
+                className="bg-green-700 text-white px-4 py-2 rounded font-semibold hover:bg-green-800"
+              >
+                ⬇ Download Content Creator Entries
+              </button>
+            </div>
+          )}
+
+          {activeTab === "summer-photography" && (
+            <div className="flex justify-end px-6 mb-4">
+              <button
+                onClick={downloadSummerPhotographyXLS}
+                className="bg-green-700 text-white px-4 py-2 rounded font-semibold hover:bg-green-800"
+              >
+                ⬇ Download Summer Photography Entries
+              </button>
+            </div>
+          )}
 
           {/* CONTENT */}
           <div className="p-6">
@@ -550,6 +615,14 @@ const downloadContentCreatorsXLS = () => {
                 data={hotshotData}
                 images
                 showMessage={true}
+              />
+            )}
+            {activeTab === "summer-photography" && (
+              <SimpleTable
+                title="Summer Photography"
+                data={summerPhotographyData}
+                images
+                showMessage
               />
             )}
             {/* {activeTab === "conclave" && (
@@ -708,110 +781,101 @@ const downloadContentCreatorsXLS = () => {
             )}
 
             {!showPopup && activeTab === "maja" && (
-  <div className="bg-white p-6 shadow-xl rounded-xl">
-    <h2 className="text-2xl font-bold mb-6 text-gray-800">
-      🎯 Maja Quiz – User Answer Flow
-    </h2>
+              <div className="bg-white p-6 shadow-xl rounded-xl">
+                <h2 className="text-2xl font-bold mb-6 text-gray-800">
+                  🎯 Maja Quiz – User Answer Flow
+                </h2>
 
-    <div className="overflow-x-auto">
-      <table className="w-full border text-left">
-        <thead className="bg-gray-200 sticky top-0 z-10">
-          <tr>
-            <th className="p-3 border">Name</th>
-            <th className="p-3 border">Phone</th>
-            <th className="p-3 border">Answers</th>
-          </tr>
-        </thead>
+                <div className="overflow-x-auto">
+                  <table className="w-full border text-left">
+                    <thead className="bg-gray-200 sticky top-0 z-10">
+                      <tr>
+                        <th className="p-3 border">Name</th>
+                        <th className="p-3 border">Phone</th>
+                        <th className="p-3 border">Answers</th>
+                      </tr>
+                    </thead>
 
-        <tbody>
-          {Object.values(groupedMaja).map((user, index) => (
-            <tr key={index} className="align-top hover:bg-gray-50">
-              <td className="p-3 border font-semibold">
-                {user.name}
-              </td>
-
-              <td className="p-3 border">
-                {user.phone}
-              </td>
-
-              <td className="p-3 border">
-                <table className="w-full border text-sm">
-                  <thead className="bg-gray-100">
-                    <tr>
-                      <th className="p-2 border">Question</th>
-                      <th className="p-2 border">Answer</th>
-                      <th className="p-2 border">Date</th>
-                      <th className="p-2 border">Time</th>
-                      <th className="p-2 border">Result</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    {user.answers.map((ans, idx) => {
-                      const { date, time } =
-                        formatDateTime(ans.created_at);
-
-                      return (
-                        <tr key={idx}>
-                          <td className="p-2 border">
-                            {ans.question_text}
+                    <tbody>
+                      {Object.values(groupedMaja).map((user, index) => (
+                        <tr key={index} className="align-top hover:bg-gray-50">
+                          <td className="p-3 border font-semibold">
+                            {user.name}
                           </td>
 
-                          <td className="p-2 border">
-                            {ans.answer}
-                          </td>
+                          <td className="p-3 border">{user.phone}</td>
 
-                          <td className="p-2 border">
-                            {date}
-                          </td>
+                          <td className="p-3 border">
+                            <table className="w-full border text-sm">
+                              <thead className="bg-gray-100">
+                                <tr>
+                                  <th className="p-2 border">Question</th>
+                                  <th className="p-2 border">Answer</th>
+                                  <th className="p-2 border">Date</th>
+                                  <th className="p-2 border">Time</th>
+                                  <th className="p-2 border">Result</th>
+                                </tr>
+                              </thead>
 
-                          <td className="p-2 border">
-                            {time}
-                          </td>
+                              <tbody>
+                                {user.answers.map((ans, idx) => {
+                                  const { date, time } = formatDateTime(
+                                    ans.created_at,
+                                  );
 
-                          <td className="p-2 border text-center">
-                            <span
-                              className={`px-2 py-1 rounded-full text-xs font-semibold ${
-                                ans.is_correct
-                                  ? "bg-green-100 text-green-700"
-                                  : "bg-red-100 text-red-700"
-                              }`}
-                            >
-                              {ans.is_correct
-                                ? "Correct"
-                                : "Wrong"}
-                            </span>
+                                  return (
+                                    <tr key={idx}>
+                                      <td className="p-2 border">
+                                        {ans.question_text}
+                                      </td>
+
+                                      <td className="p-2 border">
+                                        {ans.answer}
+                                      </td>
+
+                                      <td className="p-2 border">{date}</td>
+
+                                      <td className="p-2 border">{time}</td>
+
+                                      <td className="p-2 border text-center">
+                                        <span
+                                          className={`px-2 py-1 rounded-full text-xs font-semibold ${
+                                            ans.is_correct
+                                              ? "bg-green-100 text-green-700"
+                                              : "bg-red-100 text-red-700"
+                                          }`}
+                                        >
+                                          {ans.is_correct ? "Correct" : "Wrong"}
+                                        </span>
+                                      </td>
+                                    </tr>
+                                  );
+                                })}
+                              </tbody>
+                            </table>
                           </td>
                         </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
 
-    {Object.values(groupedMaja).length === 0 && (
-      <p className="text-center mt-4">
-        No answers found.
-      </p>
-    )}
-  </div>
-)}
+                {Object.values(groupedMaja).length === 0 && (
+                  <p className="text-center mt-4">No answers found.</p>
+                )}
+              </div>
+            )}
 
             {activeTab === "content-creators" && (
-  <SimpleTable
-    title="Content Creators"
-    data={contentCreatorsData.filter(
-      (d) => d.is_mobile_verified === true
-    )}
-    description
-    contentCreatorVideo
-  />
-)}
+              <SimpleTable
+                title="Content Creators"
+                data={contentCreatorsData.filter(
+                  (d) => d.is_mobile_verified === true,
+                )}
+                description
+                contentCreatorVideo
+              />
+            )}
           </div>
         </>
       )}
@@ -835,6 +899,7 @@ function SimpleTable({ title, data, images, video, showMessage, description,cont
               <th>Phone</th>
               {title === "Hotshot Chennai" && <th>Instagram</th>}
               {title === "Hotshot Chennai" && <th>Location</th>}
+              {title === "Summer Photography" && <th>Location</th>}
 
               {title === "Arattai Jahabar Registrations" && <th>Organisation</th>}
               {title === "Arattai Jahabar Registrations" && <th>Age</th>}
@@ -876,6 +941,9 @@ function SimpleTable({ title, data, images, video, showMessage, description,cont
                   )}
 
                   {title === "Hotshot Chennai" && (
+                    <td>{d.location_url?.trim() ? d.location_url : "—"}</td>
+                  )}
+                  {title === "Summer Photography" && (
                     <td>{d.location_url?.trim() ? d.location_url : "—"}</td>
                   )}
 
@@ -955,38 +1023,38 @@ function SimpleTable({ title, data, images, video, showMessage, description,cont
                     </td>
                   )}
                   {contentCreatorVideo && (
-  <td className="text-center">
-    {d.video_url ? (
-      <a
-        href={d.video_url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-3 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700"
-      >
-        Open Link
-      </a>
-    ) : (
-      "—"
-    )}
-  </td>
-)}
+                    <td className="text-center">
+                      {d.video_url ? (
+                        <a
+                          href={d.video_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+                        >
+                          Open Link
+                        </a>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                  )}
 
-{contentCreatorVideo && (
-  <td className="text-center">
-    {d.video_file ? (
-      <a
-        href={`https://api.superchennai.com/uploads/videos/${d.video_file}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
-      >
-        View Video
-      </a>
-    ) : (
-      "—"
-    )}
-  </td>
-)}
+                  {contentCreatorVideo && (
+                    <td className="text-center">
+                      {d.video_file ? (
+                        <a
+                          href={`https://api.superchennai.com/uploads/videos/${d.video_file}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700"
+                        >
+                          View Video
+                        </a>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                  )}
                 </tr>
               );
             })}

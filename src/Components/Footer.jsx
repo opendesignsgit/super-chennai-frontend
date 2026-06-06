@@ -216,6 +216,10 @@ const Footer = () => {
       title: "MEDIA COVERAGE",
       link: "/media-coverage",
     },
+      {
+      title: "SUMMER FEST",
+      link: "https://summerfest.superchennai.com/",
+    },
     {
       title: "Contact Us",
       link: "/contact",

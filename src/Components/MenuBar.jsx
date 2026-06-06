@@ -11,11 +11,15 @@ export default function MenuBar({ setMenuBar }) {
   const menuItems = [
     { label: "About Us", href: "/about-us" },
     { label: "Events", href: "/chennai-events" },
+        { label: "SUMMER FEST", href: "https://summerfest.superchennai.com/" },
+
     // { label: "Day to deliver-quiz", href: "/day-to-deliver-quiz" },
         { label: "Voice Of Chennai", href: "/voice-of-chennai" },
 
     { label: "Manifesto ", href: "/manifesto-info" },
     { label: "Superchennai Contests", href: "/superchennai-contest" },
+
+
     { label: <> Icon of the Month </>, href: "/icon-of-the-month-in-chennai" },
     { label: "MEDIA  COVERAGE ", href: "/media-coverage" },
     { label: "Apps Used In Chennai", href: "/chennai-apps" },

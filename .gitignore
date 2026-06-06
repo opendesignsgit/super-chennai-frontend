@@ -31,3 +31,4 @@ localhost-key.pem
 localhost.pem
 vite.config.js
 dist/.htaccess
+config.jsx

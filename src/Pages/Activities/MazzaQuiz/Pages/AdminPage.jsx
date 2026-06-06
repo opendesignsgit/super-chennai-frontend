@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const QuestionManagement = () => {
-  const API_URL = " http://localhost:3000/api/majaa/questions";
+  const API_URL = "api.superchennai.com/api/majaa/questions";
   const initialFormState = {
     question_text: "",
     correct_answer: "",

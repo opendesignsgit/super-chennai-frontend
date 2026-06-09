@@ -399,6 +399,23 @@ export default function SuperChennaiEvents() {
             <div className="flex superchennaiEventsMainContainer">
               <a
                 className="superchennaiEventsSection"
+                href="contest/majaa-quiz"
+              >
+                <div
+                  className="flex flex-col items-center text-center "
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/maja-quiz-card-contest-card.jpeg"
+                    alt="Right Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">Majaa quiz</p>
+                </div>
+              </a>
+
+              <a
+                className="superchennaiEventsSection"
                 href="contest/chennai-summer-photography-contest"
               >
                 <div

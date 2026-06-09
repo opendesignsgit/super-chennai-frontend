@@ -11,6 +11,7 @@ import MobileAdMedia from "../components/MobileAdMedia";
 import { motion, AnimatePresence } from "framer-motion";
 import NotLikedIcon from "../../../../public/images/icons/non-like.svg";
 import LikedIcon from "../../../../public/images/icons/liked.svg";
+import { Helmet } from "react-helmet-async";
 
 /* ==============================
    HELPERS
@@ -783,8 +784,60 @@ export default function ArticleDetailPage() {
     }
   };
 
+  // METTA DATA 
+  const seoTitle =
+  article?.meta?.title || article?.title || "Super Chennai";
+
+const seoDescription =
+  article?.meta?.description ||
+  article?.excerpt ||
+  article?.title ||
+  "";
+
+const seoImage =
+  article?.meta?.image?.sizes?.og?.url
+    ? `${API_BASE_URL}${article.meta.image.sizes.og.url}`
+    : article?.heroImage?.url
+      ? `${API_BASE_URL}${article.heroImage.url}`
+      : null;
+
   return (
     <>
+      <Helmet>
+        <title>{seoTitle}</title>
+
+        <meta name="description" content={seoDescription} />
+
+        <link
+          rel="canonical"
+          href={`https://www.superchennai.com/${article?.slug}`}
+        />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={seoTitle} />
+        <meta property="og:description" content={seoDescription} />
+        <meta
+          property="og:url"
+          content={`https://www.superchennai.com/${article?.slug}`}
+        />
+
+        {seoImage && (
+          <>
+            <meta property="og:image" content={seoImage} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+          </>
+        )}
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={seoTitle} />
+        <meta name="twitter:description" content={seoDescription} />
+
+        {seoImage && <meta name="twitter:image" content={seoImage} />}
+      </Helmet>
+
       <div className="relative w-full h-[380px] overflow-hidden">
         {article?.heroImage?.url && (
           <img

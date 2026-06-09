@@ -52,7 +52,7 @@
   RewriteBase /
 
   # 1. Redirect old quiz URL (Unga pazhaya code)
-  RewriteRule ^superchennai-quiz/?$ https://www.superchennai.com/contests/chennai-quiz [R=301,L]
+  RewriteRule ^superchennai-quiz/?$ https://dev.superchennai.com/contests/chennai-quiz [R=301,L]
 
   # 2. Blog redirects (Unga pazhaya code)
   RewriteRule ^blog/chennai-2025-five-shifts-in-the-citys-food-landscape$ /blog/chennai-2025-five-shifts-in-the-citys-food-landscape.html [L]

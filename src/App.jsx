@@ -360,6 +360,8 @@ import MazzaRegister from "./Pages/Activities/MazzaQuiz/Pages/MazzaRegister";
 import MazzaLogin from "./Pages/Activities/MazzaQuiz/Pages/MazzaLogin";
 import QuestionManagement from "./Pages/Activities/MazzaQuiz/Pages/AdminPage";
 import SummerClipsPhtography from "./Pages/Activities/SummerClipsPhtography/SummerClipsPhtography";
+import SummerDashboardView from "./Pages/Activities/Summerfest/registerData";
+
 
 
 
@@ -940,6 +942,12 @@ function App() {
           element={<SummerClipsPhtography/>}
         />
 
+               <Route
+          path="/contest/12365425365277/admin/v1/data/sumerfest"
+          element={<SummerDashboardView/>}
+        />
+             
+             
         <Route path="/chennai-conclave" element={<Conclave />} />
         <Route path="/devConclave" element={<DevConclave />} />
         <Route

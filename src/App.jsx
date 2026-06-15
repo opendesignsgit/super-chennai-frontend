@@ -312,7 +312,7 @@ import ArattaiWithVivekKarunakaran from "./Pages/Activities/ArrattaiWithVivekKar
 import ArattaiWithGskVelu from "./Pages/Activities/ArrattaiWithGskVelu/arattai-WithGskVelu";
 import ArattaiGskVeluExcelView from "./Pages/Activities/ArrattaiWithGskVelu/ArattaiGSKExcelView";
 
-
+import ArattaiWithKishenDas from "./Pages/Activities/ArrataiWithKishen/arattai-kishandas";
 
 
 import NotFound from "../src/NotFound";
@@ -968,11 +968,8 @@ function App() {
           path="/arattai-with-soumya-swaminathan/chief-scientist/v1/adminlist"
           element={<ArattaiSoumyaSwaminathanExcelView />}
         />
-          <Route
-          path="/power/power_cut"
-          element={<PowerCutPage />}
-        />
-        
+        <Route path="/power/power_cut" element={<PowerCutPage />} />
+
         <Route
           path="/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur"
           element={<ArattaiWithGskVelu />}
@@ -1000,6 +997,11 @@ function App() {
         <Route
           path="/arattai-with-aruna-sairam/carnatic-vocalist-live-update"
           element={<ArattaiExcelView />}
+        />
+
+        <Route
+          path="/arattai-with-kishen-das/tamil-actor-podcaster"
+          element={<ArattaiWithKishenDas />}
         />
 
         {/* conclave */}

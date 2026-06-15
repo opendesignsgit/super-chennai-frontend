@@ -110,13 +110,22 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    image: "/images/sowmiya-swamynathan-home.jpeg",
-    link: "/arattai-with-soumya-swaminathan/chief-scientist",
-    image1: "/images/innerpage-sowmya-banner-mobile-home.jpeg",
-    title: "chennai's surfing",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+    // {
+  //   image: "/images/homepage-banner-gskvelu-t.jpeg",
+  //   link: "/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur",
+  //   image1: "/images/gskvelu-mobile-banner.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
+
+
+  // {
+  //   image: "/images/sowmiya-swamynathan-home.jpeg",
+  //   link: "/arattai-with-soumya-swaminathan/chief-scientist",
+  //   image1: "/images/innerpage-sowmya-banner-mobile-home.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   {
     image: "/images/homepage-desk-maja-quiz.jpeg",
@@ -130,13 +139,6 @@ const slides = [
     image: "/images/desk-homepage-photography-contest.jpeg",
     link: "/contest/chennai-summer-photography-contest",
     image1: "/images/desk-homepage-photography-contest-mobile.jpeg",
-    title: "chennai's surfing",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
-  {
-    image: "/images/homepage-banner-gskvelu-t.jpeg",
-    link: "/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur",
-    image1: "/images/gskvelu-mobile-banner.jpeg",
     title: "chennai's surfing",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },

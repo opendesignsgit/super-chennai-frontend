@@ -346,9 +346,9 @@ const rightAds =
         <img src="/images/banner-blog.png" alt="Blog Banner" />
         <div className="accodoamationBannerContainer">
           <div className="accodoamationBannerText">
-            <h3>Articles</h3>
+            <h3>Voice of Chennai</h3>
             <div className="breadCrum">
-              <Link to="/">Home</Link> - <Link to="/blog">Articles</Link>
+              <Link to="/">Home</Link> - <Link to="/blog">Voice of Chennai</Link>
             </div>
           </div>
         </div>

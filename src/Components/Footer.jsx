@@ -216,7 +216,7 @@ const Footer = () => {
       title: "MEDIA COVERAGE",
       link: "/media-coverage",
     },
-      {
+    {
       title: "SUMMER FEST",
       link: "https://summerfest.superchennai.com/",
     },
@@ -258,9 +258,13 @@ const Footer = () => {
       title: "Arattai with Vivek Karunakaran",
       link: "/arattai-with-vivek-karunakaran/chennai-fashion-designer",
     },
-       {
+    {
       title: "Gen Z Content Creator",
       link: "/contest/gen-z-content-creators",
+    },
+    {
+      title: "Arattai with Kishen Das",
+      link: "/arattai-with-kishen-das/tamil-actor-podcaster",
     },
   ];
 

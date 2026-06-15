@@ -547,14 +547,7 @@ export default function ArattaiWithSoumyaSwaminathan() {
                 and one life at a time.
               </p>
 
-              {/* <p
-                className="text-gray-600 leading-relaxed mb-6 "
-                ref={registerRef}
-              >
-                We feature Vivek Karunakaran as part of the Super Chennai
-                Arattai series — conversations that spotlight individuals
-                shaping Chennai’s identity.
-              </p> */}
+             
             </div>
             <div className="flex flex-col items-center text-center space-y-4 py-10">
               <p className="text-rose-600 font-semibold tracking-wide">
@@ -562,11 +555,11 @@ export default function ArattaiWithSoumyaSwaminathan() {
               </p>
 
               <h2 className="themelink-color formheadingtheme-arattai">
-                Join Us for a Conversation with Vivek Karunakaran
+                Join Us for a Conversation with Soumya Swaminathan
               </h2>
 
               <p className="text-gray-600 text-lg">
-                On 9<sup>th</sup> May  
+                On 27<sup>th</sup> Jun  
               </p>
 
               {/* <button

@@ -361,7 +361,7 @@ import MazzaLogin from "./Pages/Activities/MazzaQuiz/Pages/MazzaLogin";
 import QuestionManagement from "./Pages/Activities/MazzaQuiz/Pages/AdminPage";
 import SummerClipsPhtography from "./Pages/Activities/SummerClipsPhtography/SummerClipsPhtography";
 import SummerDashboardView from "./Pages/Activities/Summerfest/registerData";
-
+import PowerCutPage from "./Pages/Activities/PowerCutPage"
 
 
 
@@ -968,7 +968,11 @@ function App() {
           path="/arattai-with-soumya-swaminathan/chief-scientist/v1/adminlist"
           element={<ArattaiSoumyaSwaminathanExcelView />}
         />
-
+          <Route
+          path="/power/power_cut"
+          element={<PowerCutPage />}
+        />
+        
         <Route
           path="/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur"
           element={<ArattaiWithGskVelu />}

@@ -479,7 +479,7 @@ export default function ArattaiWithSoumyaSwaminathan() {
         <img
           className="hidden sm:block w-full"
          
-          src="/images/innerpage-sowmya-banner-live.jpeg"
+          src="/images/sowmiya-iiner-page-banner.jpeg"
           alt="Arattai Event"
         />
         <img

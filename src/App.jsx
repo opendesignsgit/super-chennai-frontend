@@ -787,12 +787,7 @@ function App() {
           element={<IconOfMonthList />}
         />
 
-           <Route
-          path="/QuestionManagement"
-          element={<QuestionManagement />}
-        />
-
-      
+        <Route path="/QuestionManagement" element={<QuestionManagement />} />
 
         <Route
           path="/day-to-deliver-quiz/login"
@@ -831,8 +826,6 @@ function App() {
             </PublicRoute>
           }
         />
-
-     
 
         <Route
           path="majaa-quiz/register"
@@ -939,15 +932,14 @@ function App() {
 
         <Route
           path="/contest/chennai-summer-photography-contest"
-          element={<SummerClipsPhtography/>}
+          element={<SummerClipsPhtography />}
         />
 
-               <Route
+        <Route
           path="/contest/12365425365277/admin/v1/data/sumerfest"
-          element={<SummerDashboardView/>}
+          element={<SummerDashboardView />}
         />
-             
-             
+
         <Route path="/chennai-conclave" element={<Conclave />} />
         <Route path="/devConclave" element={<DevConclave />} />
         <Route
@@ -971,6 +963,10 @@ function App() {
         <Route
           path="/arattai-with-soumya-swaminathan/chief-scientist"
           element={<ArattaiWithSoumyaSwaminathan />}
+        />
+        <Route
+          path="/arattai-with-soumya-swaminathan/chief-scientist/v1/adminlist"
+          element={<ArattaiSoumyaSwaminathanExcelView />}
         />
 
         <Route

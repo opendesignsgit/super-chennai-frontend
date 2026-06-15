@@ -1,118 +1,4 @@
-// import { useEffect, useState } from "react";
-// import axios from "axios";
-// import { formatDateTime } from "../QuizGame/utils/dateTime";
 
-// export default function ArattaiKarunakaranExcelView() {
-//   const [data, setData] = useState([]);
-
-//   const fetchData = async () => {
-//     try {
-//       const res = await axios.get(
-//         "https://api.superchennai.com/api/arattai-karunakaran/arattai-karunakaran"
-//       );
-
-//       console.log("karunakaran res", res);
-
-//       if (res.data?.success) {
-//         const verified = res.data.data.filter(
-//           (d) => d.is_mobile_verified === true
-//         );
-//         setData(verified);
-//       }
-//     } catch (err) {
-//       console.error("Error fetching Karunakaran data", err);
-//     }
-//   };
-
-//   useEffect(() => {
-//     fetchData();
-
-//     const interval = setInterval(fetchData, 600000); // 10 mins
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   return (
-//     <>
-//       {/* ================= BANNER ================= */}
-//       <section
-//         className="accaodomationBannerSection relative overflow-hidden cursor-pointer"
-
-//       >
-//         <img
-//           className="hidden sm:block w-full"
-//           // src="/images/vivek-banner.jpeg"
-//           src="/images/vivek-innerpage-banner.jpeg"
-//           alt="Arattai Event"
-//         />
-//         <img
-//           className="block sm:hidden w-full"
-//           src="/images/vivek-mobile-banner.jpeg"
-//           alt="Arattai Event"
-//         />
-//       </section>
-
-//       {/* Table */}
-//       <div style={{ padding: 20 }}>
-//         <h2 style={{ marginBottom: 20 }}>Arattai with Karunakaran</h2>
-
-//         <div style={{ overflowX: "auto" }}>
-//           <table
-//             style={{
-//               borderCollapse: "collapse",
-//               width: "100%",
-//               fontSize: 14,
-//             }}
-//           >
-//             <thead
-//               style={{ background: "#f3f4f6", position: "sticky", top: 0 }}
-//             >
-//               <tr>
-//                 <th style={cellStyle}>S.No</th>
-//                 <th style={cellStyle}>Name</th>
-//                 <th style={cellStyle}>Email</th>
-//                 <th style={cellStyle}>Phone</th>
-//                 <th style={cellStyle}>Organisation</th>
-//                 <th style={cellStyle}>Age</th>
-//                 <th style={cellStyle}>Gender</th>
-//                 <th style={cellStyle}>Date</th>
-//                 <th style={cellStyle}>Time</th>
-//               </tr>
-//             </thead>
-
-//             <tbody>
-//               {data.map((d, i) => {
-//                 const { date, time } = formatDateTime(d.created_at);
-
-//                 return (
-//                   <tr key={d.id}>
-//                     <td style={cellStyle}>{i + 1}</td>
-//                     <td style={cellStyle}>{d.name}</td>
-//                     <td style={cellStyle}>{d.email}</td>
-//                     <td style={cellStyle}>{d.phone}</td>
-//                     <td style={cellStyle}>{d.organisation || "—"}</td>
-//                     <td style={cellStyle}>{d.age}</td>
-//                     <td style={cellStyle}>{d.gender}</td>
-//                     <td style={cellStyle}>{date}</td>
-//                     <td style={cellStyle}>{time}</td>
-//                   </tr>
-//                 );
-//               })}
-//             </tbody>
-//           </table>
-//         </div>
-
-//         <p style={{ marginTop: 10, color: "green" }}>
-//           ● Live updating every 10 Minutes
-//         </p>
-//       </div>
-//     </>
-//   );
-// }
-
-// const cellStyle = {
-//   border: "1px solid #ddd",
-//   padding: "8px",
-// };
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -135,7 +21,7 @@ export default function ArattaiSoumyaSwaminathanExcelView() {
     try {
       setLoading(true);
       const res = await axios.get(
-        "https://api.superchennai.com/api/arattai-karunakaran/arattai-karunakaran",
+        "https://api.superchennai.com/api/soumya/swaminathan",
       );
 
       if (res.data?.success) {
@@ -184,7 +70,7 @@ export default function ArattaiSoumyaSwaminathanExcelView() {
         <div className="relative z-10 container mx-auto px-4 py-20 sm:py-32">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent drop-shadow-2xl">
-              Arattai with Karunakaran
+            Arattai with Soumya Swaminathan
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-8 max-w-2xl mx-auto leading-relaxed">
               Live registrations • Real-time updates • Verified participants

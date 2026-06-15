@@ -43,7 +43,7 @@ export default function Thankyou() {
         setImageSrc(
           isMobile
             ? "/images/VIVEK-TQ-BANNER-mobile.jpeg"
-            : "/images/thankyou-vivek-banner.jpeg",
+            : "/images/tankyoubanner-sowmiya.jpeg",
         );
       } else if (from === "content-writers") {
         setImageSrc(

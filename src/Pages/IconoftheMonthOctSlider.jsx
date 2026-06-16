@@ -168,13 +168,7 @@ export default function IconoftheMonthOct() {
   };
   return (
     <>
-      <Helmet>
-        <title>Media Coverage | News & TVC Features – Super Chennai</title>
-        <meta
-          name="description"
-          content="Explore all the buzz around Super Chennai! From newspaper features and online articles to TV commercials and media mentions — see how the city’s story is being told."
-        />
-      </Helmet>
+ 
 
       <div className="NewsLetterPage">
         

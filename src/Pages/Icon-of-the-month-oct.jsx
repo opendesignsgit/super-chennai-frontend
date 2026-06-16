@@ -296,6 +296,7 @@ export default function IconofthemonthOct() {
         />
         <link rel="canonical" href="/icon-of-the-oct-month-2025" />
       </Helmet>
+
       <div className="InvestPageId">
         <div
           className="VolunteerBgSection InvestBgSection notHome aboutBan"
@@ -318,7 +319,7 @@ export default function IconofthemonthOct() {
           <div className="InvestChennaiContainerFlex aboutIntro">
             <div className="InvestChennaiContent text-center">
               <h2>
-                {/* Icon of the Month – Chinmayi Sripaada */}
+                
                 <br /> <small>Where Soul Meets Melody</small>
               </h2>
               <p>
@@ -328,7 +329,7 @@ export default function IconofthemonthOct() {
                 renditions across multiple languages. From{" "}
                 <strong>award-winning songs</strong> to mentoring young artists,
                 she continues to inspire with her <strong>talent</strong>,{" "}
-                <strong>passion</strong>, and
+                <strong>passion</strong>, and {""}
                 <strong>dedication</strong>.
               </p>
             </div>
@@ -379,13 +380,7 @@ export default function IconofthemonthOct() {
         <div className="naturals-container">
           {data.map((section, index) => (
             <div className="naturals-section" key={index}>
-              {/* {section.image && (
-                <img
-                  src={section.image}
-                  alt={section.title}
-                  className="naturals-logo"
-                />
-              )} */}
+            
               <h2>{section.title}</h2>
               {section.content.map((item, idx) => (
                 <p key={idx}>{item}</p>

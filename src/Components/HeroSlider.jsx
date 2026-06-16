@@ -110,7 +110,7 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-    // {
+  // {
   //   image: "/images/homepage-banner-gskvelu-t.jpeg",
   //   link: "/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur",
   //   image1: "/images/gskvelu-mobile-banner.jpeg",
@@ -118,6 +118,21 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
+  // {
+  //   image: "/images/chasingcolors-texturewalk-homepage-banner.jpg",
+  //   link: "https://summerfest.superchennai.com/events/chasing-colours-texture-walk",
+  //   image1: "/images/CHASINGCOLORS-TEXTUREWALK-MOBILE-BANNER.jpg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
+
+  {
+    image: "/images/kombucha-homepage-banner.jpg",
+    link: "https://summerfest.superchennai.com/events/kombucha-chill",
+    image1: "/images/KOMBUCHA-MOBILE-BANNER-.jpg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
 
   {
     image: "/images/sowmiya-swamynathan-home.jpeg",

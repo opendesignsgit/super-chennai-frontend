@@ -1998,3 +1998,10 @@
 .radiomajaainput {
   width: max-content !important;
 }
+
+
+@media (max-width: 767px) {
+  .formheadingtheme-arattai {
+    line-height: 1.8;
+  }
+}

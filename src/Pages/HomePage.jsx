@@ -183,9 +183,9 @@ export default function HomePage() {
         <SecondSectionSummerSection />
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="100">
+      {/* <div data-aos="fade-up" data-aos-delay="100">
         <SecondSection />
-      </div>
+      </div> */}
 
       {/* <div data-aos="fade-up" data-aos-delay="100" id="iplsectionmain">
         <CricketScrore />

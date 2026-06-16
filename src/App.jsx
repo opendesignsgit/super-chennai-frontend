@@ -699,9 +699,9 @@ function App() {
           ref={stickyRef}
           className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest${
             footerReached ? "footerreached" : ""
-          } bubble-master`} // 🔥 UPGRADED CLASS
+          } bubble-master`} 
         >
-          <a href="/arattai-with-vivek-karunakaran/chennai-fashion-designer/">
+          <a href="/arattai-with-soumya-swaminathan/chief-scientist">
             <img
               src="/images/tap-button-arattai.svg"
               alt="artificial intelligence challenge"

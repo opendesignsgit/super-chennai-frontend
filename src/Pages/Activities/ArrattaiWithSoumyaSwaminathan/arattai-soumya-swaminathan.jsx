@@ -112,32 +112,35 @@ export default function ArattaiWithSoumyaSwaminathan() {
   };
 
   /* ================= SEO ================= */
+
   const arattaiSchema = [
     {
       "@context": "https://schema.org",
       "@type": "Event",
-      name: "Arattai with Vivek Karunakaran",
+      name: "Arattai with Soumya Swaminathan",
       description:
-        "Vivek Karunakaran, Chennai fashion designer known for blending traditional textiles with modern aesthetics and shaping contemporary Indian fashion.",
-      image: "https://www.superchennai.com/images/vivek-innerpage-banner.jpeg",
-      startDate: "2026-04-16T09:00",
-      endDate: "2026-04-25T23:00",
+        "Soumya Swaminathan, former WHO Chief Scientist, is a global public health leader from Chennai known for TB, HIV research and advancing healthcare equity worldwide.",
+      image:
+        "https://www.superchennai.com/images/sowmiya-iiner-page-banner.jpeg",
+      startDate: "2026-06-27T10:00",
+      endDate: "2026-06-27T20:00",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       location: {
         "@type": "Place",
-        name: "",
+        name: "M.S. Swaminathan Research Foundation",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "",
-          addressLocality: "",
-          postalCode: "",
+          streetAddress:
+            "3rd Cross Street, Taramani Institutional Area, Taramani, Chennai, Tamil Nadu 600113",
+          addressLocality: "Chennai",
+          postalCode: "600113",
           addressCountry: "IN",
         },
       },
       performer: {
         "@type": "Person",
-        name: "Vivek Karunakaran",
+        name: "Soumya Swaminathan",
       },
     },
   ];
@@ -455,8 +458,7 @@ export default function ArattaiWithSoumyaSwaminathan() {
 
       <Helmet>
         <title>
-       Title - Super Chennai Arattai with Soumya Swaminathan WHO Chief Scientist
-
+          Super Chennai Arattai with Soumya Swaminathan WHO Chief Scientist
         </title>
         <meta
           name="description"
@@ -478,7 +480,6 @@ export default function ArattaiWithSoumyaSwaminathan() {
       >
         <img
           className="hidden sm:block w-full"
-         
           src="/images/sowmiya-iiner-page-banner.jpeg"
           alt="Arattai Event"
         />
@@ -496,12 +497,12 @@ export default function ArattaiWithSoumyaSwaminathan() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves ">
               <h1 className=" text-center hidden ">
-                Arattai with Soumya Swaminathan
+                Arattai with Dr. M. Soumya Swaminathan
               </h1>
-              <h3>Arattai with Soumya Swaminathan</h3>
+              <h3 className=" mb-6">Arattai with Dr. M. Soumya Swaminathan</h3>
 
-              <p className="text-gray-600 leading-relaxed mb-6 ">
-                Soumya Swaminathan is not just a doctor—she’s one of the
+              <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
+               Dr. M. Soumya Swaminathan is not just a doctor—she’s one of the
                 strongest global voices shaping modern public health. Known for
                 her groundbreaking work in tuberculosis (TB) and HIV, she rose
                 to become the first Chief Scientist of the World Health
@@ -512,7 +513,7 @@ export default function ArattaiWithSoumyaSwaminathan() {
                 fair for everyone—especially in developing countries.
               </p>
 
-              <p className="text-gray-600 leading-relaxed mb-6 ">
+              <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
                 What makes her journey truly powerful is how she bridges lab
                 research with real-life solutions. Her early work at the
                 National Institute for Research in Tuberculosis (NIRT) in
@@ -525,7 +526,7 @@ export default function ArattaiWithSoumyaSwaminathan() {
                 equitable vaccine access through initiatives like COVAX.
               </p>
 
-              <p className="text-gray-600 leading-relaxed mb-6 ">
+              <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
                 In 2026, she was honored with the DEVI Award in Chennai,
                 celebrating not just her achievements but her impact. With over
                 40 years of experience, she represents resilience, purpose, and
@@ -536,7 +537,7 @@ export default function ArattaiWithSoumyaSwaminathan() {
                 combining knowledge with compassion.
               </p>
 
-              <p className="text-gray-600 leading-relaxed mb-6 ">
+              <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
                 Today, as Chairperson of the M. S. Swaminathan Research
                 Foundation, she continues to drive change—focusing on emerging
                 challenges like climate and health, while advocating the One
@@ -546,28 +547,21 @@ export default function ArattaiWithSoumyaSwaminathan() {
                 policy, research, and mentorship—one decision, one breakthrough,
                 and one life at a time.
               </p>
-
-             
             </div>
             <div className="flex flex-col items-center text-center space-y-4 py-10">
               <p className="text-rose-600 font-semibold tracking-wide">
                 Limited Seats Only • Register Now
               </p>
 
-              <h2 className="themelink-color formheadingtheme-arattai">
-                Join Us for a Conversation with Soumya Swaminathan
+              {/* <h2 className="themelink-color formheadingtheme-arattai">
+                Join Us for a Conversation with   Dr. M. Soumya Swaminathan
+              </h2> */}
+
+              <h2 className="themelink-color formheadingtheme-arattai leading-tight md:leading-normal">
+                Join Us for a Conversation with{" "}
+                <br className="block md:hidden" />
+                Dr. M. Soumya Swaminathan
               </h2>
-
-              <p className="text-gray-600 text-lg">
-                On 27<sup>th</sup> Jun  
-              </p>
-
-              {/* <button
-                onClick={() => setShowRegisterPopup(true)}
-                className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-lg font-semibold theme-button "
-              >
-                Register Now
-              </button> */}
 
               <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
                 <span

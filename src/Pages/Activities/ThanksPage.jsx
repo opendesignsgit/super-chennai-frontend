@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 export default function Thankyou() {
   const location = useLocation();
   const from = location.state?.from;
-  // const from = "majaa-game";
+  // const from = "soumya";
 
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
@@ -42,7 +42,7 @@ export default function Thankyou() {
       } else if (from === "soumya") {
         setImageSrc(
           isMobile
-            ? "/images/VIVEK-TQ-BANNER-mobile.jpeg"
+            ? "/images/tankyoubanner-sowmiya-mobile.jpeg"
             : "/images/tankyoubanner-sowmiya.jpeg",
         );
       } else if (from === "content-writers") {
@@ -132,6 +132,7 @@ export default function Thankyou() {
               text={
                 from === "vivek" ||
                 from === "gskvelu" ||
+                 from === "soumya" ||               
                 from === "summer-photography-chennai" ||
                 from === "majaa-game"
                   ? ""

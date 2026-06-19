@@ -126,6 +126,14 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
+   {
+    image: "/images/homepage-banner-arratai-samitha.jpeg",
+    link: "arattai-with-dr-samhitha-moturi/director-of-prashanth-hospitals",
+    image1: "/images/arattai-inner-mouthri.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
   {
     image: "/images/kombucha-homepage-banner.jpg",
     link: "https://summerfest.superchennai.com/events/kombucha-chill",

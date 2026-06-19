@@ -5,9 +5,8 @@ import { useLocation } from "react-router-dom";
 
 export default function Thankyou() {
   const location = useLocation();
-  const from = location.state?.from;
-  // const from = "soumya";
-
+  // const from = location.state?.from;
+  const from = "sahitha";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -40,6 +39,12 @@ export default function Thankyou() {
             : "/images/thankyou-vivek-banner.jpeg",
         );
       } else if (from === "soumya") {
+        setImageSrc(
+          isMobile
+            ? "/images/tankyoubanner-sowmiya-mobile.jpeg"
+            : "/images/tankyoubanner-sowmiya.jpeg",
+        );
+      } else if (from === "sahitha") {
         setImageSrc(
           isMobile
             ? "/images/tankyoubanner-sowmiya-mobile.jpeg"
@@ -132,7 +137,8 @@ export default function Thankyou() {
               text={
                 from === "vivek" ||
                 from === "gskvelu" ||
-                 from === "soumya" ||               
+                from === "soumya" ||
+                from === "sahitha" ||
                 from === "summer-photography-chennai" ||
                 from === "majaa-game"
                   ? ""
@@ -263,6 +269,23 @@ export default function Thankyou() {
             </div>
           )}
 
+          {from === "sahitha" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+
+              <p>
+                Thank you for registering for Arattai with Dr. Samhitha Moturi.
+                Your submission has been successfully received, and our team is
+                currently reviewing your registration. If your entry is
+                selected, you will receive an official confirmation email from
+                Team Super Chennai with further details about the event. Please
+                note that your participation will be considered confirmed only
+                after you receive the confirmation email. We appreciate your
+                interest and look forward to connecting with you soon.
+              </p>
+            </div>
+          )}
+
           {from === "vivek" && (
             <div className="workIntro">
               <h1>You're Registered!</h1>
@@ -358,7 +381,6 @@ export default function Thankyou() {
             <>
               <div className="workIntro">
                 <h1>Thankyou for participating!</h1>
-               
               </div>
               <>
                 <div className="workIntro max-w-xl mx-auto text-center  backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-lg instagramlink">

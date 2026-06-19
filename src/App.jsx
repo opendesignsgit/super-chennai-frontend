@@ -362,8 +362,9 @@ import QuestionManagement from "./Pages/Activities/MazzaQuiz/Pages/AdminPage";
 import SummerClipsPhtography from "./Pages/Activities/SummerClipsPhtography/SummerClipsPhtography";
 import SummerDashboardView from "./Pages/Activities/Summerfest/registerData";
 import PowerCutPage from "./Pages/Activities/PowerCutPage"
+import ArattaiWithSamhithaMoturi from "./Pages/Activities/ArrattaiWithVivekSamhithaMoturi/arattai-samhithamoturi"
 
-
+import ArattaiSahithaExcell from "./Pages/Activities/ArrattaiWithVivekSamhithaMoturi/exel-samihitha"
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -699,7 +700,7 @@ function App() {
           ref={stickyRef}
           className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest${
             footerReached ? "footerreached" : ""
-          } bubble-master`} 
+          } bubble-master`}
         >
           <a href="/arattai-with-soumya-swaminathan/chief-scientist">
             <img
@@ -1003,11 +1004,18 @@ function App() {
           path="/arattai-with-kishen-das/tamil-actor-podcaster"
           element={<ArattaiWithKishenDas />}
         />
+        <Route
+          path="/arattai-with-dr-samhitha-moturi/director-of-prashanth-hospitals"
+          element={<ArattaiWithSamhithaMoturi />}
+        />
+
+        <Route
+          path="/director-of-prashanth-hospitals/v1/details"
+          element={<ArattaiSahithaExcell />}
+        />
 
         {/* conclave */}
         <Route path="/admin-superchennai" element={<AdminView />} />
-        {/* <Route path="/neighbourhood" element={<Neighbourhoods />} />
-        <Route path="/neighbourhood/:slug" element={<NeighbourhoodDetail />} /> */}
 
         <Route path="/neighbourhood" element={<ChennaiNeighbourhood />} />
 

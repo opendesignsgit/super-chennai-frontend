@@ -416,9 +416,16 @@ const menuItems = [
       {
         title: "Hello",
         desc: "ssdds",
+        link: "/arattai-with-soumya-swaminathan/chief-scientist",
+        image: "/images/header-sowmya-banner.jpeg",
+      },
+      {
+        title: "Hello",
+        desc: "ssdds",
         link: "/arattai-with-kishen-das/tamil-actor-podcaster",
         image: "/images/header-banner-kishandas.jpeg",
       },
+
       {
         title: "Hello",
         desc: "ssdds",

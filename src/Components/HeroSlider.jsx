@@ -134,13 +134,13 @@ const slides = [
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
 
-  {
-    image: "/images/kombucha-homepage-banner.jpg",
-    link: "https://summerfest.superchennai.com/events/kombucha-chill",
-    image1: "/images/KOMBUCHA-MOBILE-BANNER-.jpg",
-    title: "chennai's surfing",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   image: "/images/kombucha-homepage-banner.jpg",
+  //   link: "https://summerfest.superchennai.com/events/kombucha-chill",
+  //   image1: "/images/KOMBUCHA-MOBILE-BANNER-.jpg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   {
     image: "/images/sowmiya-swamynathan-home.jpeg",

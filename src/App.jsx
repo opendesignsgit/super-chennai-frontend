@@ -1617,6 +1617,11 @@ function App() {
         />
 
         <Route
+          path="/events-in-chennai/deva-live-concert-90s-tamil-hits-"
+          element={<Navigate to="/events-in-chennai/deva-live-concert-90s-tamil-hits" replace />}
+        />
+
+        <Route
           path="/www.superchennai.com/manifesto"
           element={
             <Navigate to="https://manifesto.superchennai.com/welcome" replace />

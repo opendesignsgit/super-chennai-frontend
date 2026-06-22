@@ -7612,25 +7612,77 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
-  id: 102349,
-  name: "DUBAI CAME TO CHENNAI 😱🌊",
-  slug: "dubai-summer-carnival-chennai",
-  para: "Experience the Viral Dubai Surreal Waterfalls Right Here in Chennai",
-  TrendingCalendarMonth: "May 2026",
-  TrendingCalendarTime: "Happening Now",
+  id: 102350,
+  name: "PM MODI TO INAUGURATE NEW CHENNAI METRO STRETCH 🚇",
+  slug: "pm-modi-chennai-metro-phase-2-inauguration",
+  para: "New 14.6 km Metro Corridor Between Vadapalani and Poonamallee Expected to Open in July",
+  TrendingCalendarMonth: "July 2026",
+  TrendingCalendarTime: "Expected Soon",
   TrendingCalendarCategory:
-    "Entertainment | Chennai | Weekend Events | Trending",
-  image: "/images/dubaiCame.jpg",
-  Homeimage:
-    "/images/dubaiCame.jpg",
-  link: "/trending-chennai/dubai-summer-carnival-chennai",
-  duration: "Until June 7, 2026",
+    "Transport | Chennai | Infrastructure | Trending",
+  image: "/images/chennaiMetroJuly.jpeg",
+  Homeimage: "/images/chennaiMetroJulyPotrt.jpeg",
+  link: "/trending-chennai/pm-modi-chennai-metro-phase-2-inauguration",
+  duration: "Expected in Mid-July 2026",
   ageRestriction: "Open for All",
   language: "Tamil | English",
-  genre: "Entertainment | Carnival | Family Event",
-  venue: "NH Madhuravayol Bypass Road, Chennai",
+  genre: "Infrastructure | Metro | Public Transport",
+  venue: "Vadapalani – Poonamallee Bypass, Chennai",
 
   trendingDetails: `
+<p>
+🚇 Exciting updates for Chennai commuters!
+</p>
+
+<p>
+Prime Minister <b>Narendra Modi</b> is expected to visit Chennai in mid-July to inaugurate the new <b>14.6 km metro corridor</b> connecting <b>Vadapalani</b> and <b>Poonamallee Bypass</b>, developed as part of <b>Chennai Metro Phase 2 (Corridor 4)</b>.
+</p>
+
+<p>
+The biggest advantage? Travel time between Poonamallee and Vadapalani is expected to come down significantly—from nearly <b>90 minutes to just 30 minutes</b>.
+</p>
+
+<p>
+The new stretch will also seamlessly connect with the existing <b>Green Line</b> at Vadapalani, making travel across the city faster, smoother, and more convenient.
+</p>
+
+<p>
+A major boost for Chennai’s public transport network and daily commuters alike!
+</p>
+
+<p>
+<a href="https://www.instagram.com/p/DZ4RbCLvY9g/?igsh=MWVibHJ1ejFwN2lvaQ==" target="_blank">▶️ Click here to view post</a>
+</p>
+`,
+
+  TrendingLink: "",
+  YoutubeLink: "",
+
+  meta: {
+    title: "PM Modi Expected to Inaugurate New Chennai Metro Stretch in July | Super Chennai",
+    desc: "PM Narendra Modi is expected to inaugurate the new 14.6 km Chennai Metro Phase 2 corridor connecting Vadapalani and Poonamallee Bypass in July 2026, reducing travel time from 90 to 30 minutes.",
+    url: "https://www.superchennai.com/trending-chennai/pm-modi-chennai-metro-phase-2-inauguration",
+  },
+},
+  {
+    id: 102349,
+    name: "DUBAI CAME TO CHENNAI 😱🌊",
+    slug: "dubai-summer-carnival-chennai",
+    para: "Experience the Viral Dubai Surreal Waterfalls Right Here in Chennai",
+    TrendingCalendarMonth: "May 2026",
+    TrendingCalendarTime: "Happening Now",
+    TrendingCalendarCategory:
+      "Entertainment | Chennai | Weekend Events | Trending",
+    image: "/images/dubaiCame.jpg",
+    Homeimage: "/images/dubaiCame.jpg",
+    link: "/trending-chennai/dubai-summer-carnival-chennai",
+    duration: "Until June 7, 2026",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Entertainment | Carnival | Family Event",
+    venue: "NH Madhuravayol Bypass Road, Chennai",
+
+    trendingDetails: `
 <p>
 CHENNAI JUST GOT ITS OWN WATERFALL?! 😱🌊
 </p>
@@ -7669,15 +7721,15 @@ This exciting carnival is quickly becoming one of Chennai’s must-visit attract
 </p>
 `,
 
-  TrendingLink: "",
-  YoutubeLink: "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  meta: {
-    title: "Dubai Summer Carnival Chennai | Weekend Event - Super Chennai",
-    desc: "Looking for things to do in Chennai this weekend? Dubai Summer Carnival 2026 brings the Surreal Waterfalls experience to NH Madhuravayol. Book now — ends June 7!.",
-    url: "https://www.superchennai.com/trending-chennai/dubai-summer-carnival-chennai",
+    meta: {
+      title: "Dubai Summer Carnival Chennai | Weekend Event - Super Chennai",
+      desc: "Looking for things to do in Chennai this weekend? Dubai Summer Carnival 2026 brings the Surreal Waterfalls experience to NH Madhuravayol. Book now — ends June 7!.",
+      url: "https://www.superchennai.com/trending-chennai/dubai-summer-carnival-chennai",
+    },
   },
-},
   {
     id: 102348,
     name: "Cleaner Roads Ahead: Chennai’s Smart Waste Transport Upgrade",
@@ -7688,8 +7740,7 @@ This exciting carnival is quickly becoming one of Chennai’s must-visit attract
     TrendingCalendarCategory:
       "Civic | Chennai | Sanitation | Infrastructure | Trending",
     image: "/images/cleanerRoad.jpg",
-    Homeimage:
-      "/images/cleanerRoad.jpg",
+    Homeimage: "/images/cleanerRoad.jpg",
     link: "/trending-chennai/chennai-corporation-smart-waste-transport",
     duration: "Public Sanitation Initiative",
     ageRestriction: "Open for All",

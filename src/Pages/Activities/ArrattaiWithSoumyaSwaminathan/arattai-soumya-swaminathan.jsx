@@ -497,12 +497,12 @@ export default function ArattaiWithSoumyaSwaminathan() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves ">
               <h1 className=" text-center hidden ">
-                Arattai with Dr. M. Soumya Swaminathan
+                Arattai with Dr. Soumya Swaminathan
               </h1>
-              <h3 className=" mb-6">Arattai with Dr. M. Soumya Swaminathan</h3>
+              <h3 className=" mb-6">Arattai with Dr. Soumya Swaminathan</h3>
 
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-               Dr. M. Soumya Swaminathan is not just a doctor—she’s one of the
+                Dr. Soumya Swaminathan is not just a doctor—she’s one of the
                 strongest global voices shaping modern public health. Known for
                 her groundbreaking work in tuberculosis (TB) and HIV, she rose
                 to become the first Chief Scientist of the World Health
@@ -538,14 +538,14 @@ export default function ArattaiWithSoumyaSwaminathan() {
               </p>
 
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Today, as Chairperson of the M. S. Swaminathan Research
+                Today, as Chairperson of the Dr. Soumya Swaminathan Research
                 Foundation, she continues to drive change—focusing on emerging
                 challenges like climate and health, while advocating the One
                 Health approach that connects human, animal, and environmental
-                well-being. Carrying forward the legacy of her father, Dr. M. S.
-                Swaminathan, she remains a force shaping the future—through
-                policy, research, and mentorship—one decision, one breakthrough,
-                and one life at a time.
+                well-being. Carrying forward the legacy of her father, Dr.
+                Soumya Swaminathan, she remains a force shaping the
+                future—through policy, research, and mentorship—one decision,
+                one breakthrough, and one life at a time.
               </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-4 py-10">
@@ -560,7 +560,7 @@ export default function ArattaiWithSoumyaSwaminathan() {
               <h2 className="themelink-color formheadingtheme-arattai leading-tight md:leading-normal">
                 Join Us for a Conversation with{" "}
                 <br className="block md:hidden" />
-                Dr. M. Soumya Swaminathan
+                Dr. Soumya Swaminathan
               </h2>
 
               <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">

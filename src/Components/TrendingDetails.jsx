@@ -1551,6 +1551,35 @@ export default function TrendingDetails() {
     },
   ];
 
+   const poonamaleyStretch = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/chennai-corporation-smart-waste-transport",
+      },
+      headline: "Cleaner Roads Ahead: Chennai’s Smart Waste Transport Upgrade",
+      description:
+        "Chennai Corporation introduces sealed garbage transport containers in North Chennai to reduce waste spillage, foul smell, and improve road cleanliness and hygiene.",
+      image: "https://www.superchennai.com/images/cleanerRoad.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-05-19",
+    },
+  ];
+
 
   return (
     <>
@@ -1576,6 +1605,12 @@ export default function TrendingDetails() {
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
         />
+
+        {slug === "trending-chennai/pm-modi-chennai-metro-phase-2-inauguration" && (
+          <script type="application/ld+json">
+            {JSON.stringify(poonamaleyStretch)}
+          </script>
+        )}
 
         {slug === "chennai-corporation-smart-waste-transport" && (
           <script type="application/ld+json">

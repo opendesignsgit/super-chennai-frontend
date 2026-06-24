@@ -150,13 +150,13 @@ const slides = [
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
 
-  {
-    image: "/images/homepage-desk-maja-quiz.jpeg",
-    link: "/contest/majaa-quiz",
-    image1: "/images/maja-quiz-banner-mobile.jpeg",
-    title: "chennai's surfing",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   image: "/images/homepage-desk-maja-quiz.jpeg",
+  //   link: "/contest/majaa-quiz",
+  //   image1: "/images/maja-quiz-banner-mobile.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   {
     image: "/images/desk-homepage-photography-contest.jpeg",

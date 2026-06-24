@@ -233,8 +233,7 @@ export default function Questions2026() {
         </div>
       </section>
 
-
-        <div className="carryformPageSection ">
+      <div className="carryformPageSection ">
         <div className="max-w-[1100px] mx-auto mt-10  bg-white rounded-lg  ">
           <div className="um-form-section">
             <div className="flex justify-between items-center mb-4 mobilessss">
@@ -269,53 +268,72 @@ export default function Questions2026() {
           <div className="grid grid-cols-1 md:grid-cols-[100%] gap-6">
             {/* ----------------------- LEFT COLUMN (Questions) ----------------------- */}
 
-           <div className="space-y-6 p-2">
-  {/* 🔥 PREMIUM QUIZ CLOSED CARD */}
-  <div className="relative bg-gradient-to-br from-slate-50/80 via-white/90 to-slate-50/80 backdrop-blur-xl border border-gray-100/50 rounded-3xl p-8 md:p-10 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:shadow-gray-300/60 transition-all duration-700 group overflow-hidden max-w-md mx-auto">
-    
-    {/* Animated Background */}
-    <div className="absolute inset-0 opacity-20">
-      <div className="absolute -top-20 -right-20 w-32 h-32 bg-gradient-to-r from-[#8b3c82]/20 to-[#a34493]/10 rounded-3xl animate-blob-slow blur-xl"></div>
-      <div className="absolute -bottom-20 left-10 w-24 h-24 bg-white/20 rounded-2xl animate-pulse-gentle blur-lg"></div>
-    </div>
+            <div className="space-y-6 p-2">
+              {/* 🔥 PREMIUM QUIZ CLOSED CARD */}
+              <div className="relative bg-gradient-to-br from-slate-50/80 via-white/90 to-slate-50/80 backdrop-blur-xl border border-gray-100/50 rounded-3xl p-8 md:p-10 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:shadow-gray-300/60 transition-all duration-700 group overflow-hidden max-w-md mx-auto">
+                {/* Animated Background */}
+                <div className="absolute inset-0 opacity-20">
+                  <div className="absolute -top-20 -right-20 w-32 h-32 bg-gradient-to-r from-[#8b3c82]/20 to-[#a34493]/10 rounded-3xl animate-blob-slow blur-xl"></div>
+                  <div className="absolute -bottom-20 left-10 w-24 h-24 bg-white/20 rounded-2xl animate-pulse-gentle blur-lg"></div>
+                </div>
 
-    {/* Content */}
-    <div className="relative z-10 text-center">
-      {/* Icon */}
-      <div className="w-20 h-20 bg-gradient-to-br from-[#8b3c82]/10 to-[#a34493]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-gray-200/40 group-hover:scale-110 transition-transform duration-500 backdrop-blur-sm border border-white/30">
-        <svg className="w-12 h-12 text-[#8b3c82]/70 group-hover:text-[#a34493] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      </div>
+                {/* Content */}
+                <div className="relative z-10 text-center">
+                  {/* Icon */}
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#8b3c82]/10 to-[#a34493]/10 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-gray-200/40 group-hover:scale-110 transition-transform duration-500 backdrop-blur-sm border border-white/30">
+                    <svg
+                      className="w-12 h-12 text-[#8b3c82]/70 group-hover:text-[#a34493] transition-colors duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
 
-      {/* Title */}
-      <h3 className="text-2xl md:text-3xl font-black bg-gradient-to-r from-gray-900 via-gray-800 to-[#8b3c82] bg-clip-text text-transparent mb-4 tracking-tight drop-shadow-lg">
-        Quiz Closed
-      </h3>
+                  {/* Title */}
+                  <h3 className="text-2xl md:text-3xl font-black bg-gradient-to-r from-gray-900 via-gray-800 to-[#8b3c82] bg-clip-text text-transparent mb-4 tracking-tight drop-shadow-lg">
+                    Quiz Closed
+                  </h3>
 
-      {/* Description */}
-      <p className="text-lg md:text-xl font-light text-gray-700 leading-relaxed mb-8 px-4 max-w-md mx-auto opacity-90 drop-shadow-sm">
-        Stay tuned for upcoming contests!
-      </p>
+                  {/* Description */}
+                  <p className="text-lg md:text-xl font-light text-gray-700 leading-relaxed mb-8 px-4 max-w-md mx-auto opacity-90 drop-shadow-sm">
+                    Stay tuned for upcoming contests!
+                  </p>
 
-      {/* Premium Button */}
-       <a 
-        href="/superchennai-contest"
-        className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#8b3c82] to-[#a34493] hover:from-[#a34493] hover:to-[#8b3c82] text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-[#8b3c82]/30 hover:shadow-2xl hover:shadow-[#a34493]/40 hover:scale-105 active:scale-95 transition-all duration-300 transform mx-auto group-hover:animate-pulse-glow block text-center"
-      >
-        <span>🎯 Explore SuperChennai Contest</span>
-        <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
-      </a>
-    </div>
+                  {/* Premium Button */}
+                  <a
+                    href="/superchennai-contest"
+                    className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#8b3c82] to-[#a34493] hover:from-[#a34493] hover:to-[#8b3c82] text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-[#8b3c82]/30 hover:shadow-2xl hover:shadow-[#a34493]/40 hover:scale-105 active:scale-95 transition-all duration-300 transform mx-auto group-hover:animate-pulse-glow block text-center"
+                  >
+                    <span>🎯 Explore SuperChennai Contest</span>
+                    <svg
+                      className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
 
-    {/* Floating Elements */}
-    <div className="absolute top-4 right-4 w-4 h-4 bg-[#8b3c82]/20 rounded-full animate-float-tiny"></div>
-    <div className="absolute bottom-4 left-4 w-3 h-3 bg-[#a34493]/20 rounded-full animate-float-delayed-tiny"></div>
-  </div>
+                {/* Floating Elements */}
+                <div className="absolute top-4 right-4 w-4 h-4 bg-[#8b3c82]/20 rounded-full animate-float-tiny"></div>
+                <div className="absolute bottom-4 left-4 w-3 h-3 bg-[#a34493]/20 rounded-full animate-float-delayed-tiny"></div>
+              </div>
 
-  <style jsx>{`
+              <style jsx>{`
     @keyframes blob-slow {
       0% { transform: translate(0, 0) scale(1); }
       50% { transform: translate(10px, -8px) scale(1.1); }
@@ -343,7 +361,7 @@ export default function Questions2026() {
     .animate-float-delayed-tiny { animation: float-tiny 5s ease-in-out infinite 2.5s; }
     .animate-pulse-glow { animation: pulse-glow 2s infinite; }
   `}</style>
-</div>
+            </div>
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@ import "../Style/style.css";
 import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import "../Style/neighbourhood2_0.css";
 
 export default function ChennaiNeighbourhood() {
   const { filters, updateFilter } = useSearch();
@@ -27,22 +28,21 @@ export default function ChennaiNeighbourhood() {
     }
   }, [searchQuery]);
 
-  console.log("locations", locations);
-
-  /* SEARCH + ALPHABET FILTER  ADVANCE SEARCH ALGRITHEMS */
+  console.log("cardvaluess", locations);
 
   function normalize(str = "") {
     return str
       .toLowerCase()
-      .normalize("NFD") // remove accents
+      .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
-      .replace(/[^a-z0-9]/g, "") // remove symbols
+      .replace(/[^a-z0-9]/g, "")
       .replace(/aa|ah/g, "a")
       .replace(/ee|eh/g, "e")
       .replace(/oo|oh/g, "o")
       .replace(/th/g, "t")
       .replace(/dh/g, "d");
   }
+
   function getDistance(a = "", b = "") {
     const matrix = [];
 
@@ -68,14 +68,12 @@ export default function ChennaiNeighbourhood() {
   const filteredLocations = useMemo(() => {
     let result = locations || [];
 
-    // alphabet filter
     if (filters.alpha) {
       result = result.filter((loc) =>
         loc.locality?.toUpperCase().startsWith(filters.alpha),
       );
     }
 
-    // search filter
     if (filters.q) {
       const q = normalize(filters.q);
 
@@ -86,10 +84,10 @@ export default function ChennaiNeighbourhood() {
 
           let score = 0;
 
-          // locality exact
+          
           if (name === q) score += 100;
 
-          // locality starts
+        
           if (name.startsWith(q)) score += 80;
 
           // locality contains
@@ -118,10 +116,21 @@ export default function ChennaiNeighbourhood() {
     return result;
   }, [locations, filters]);
 
+  const [activeTab, setActiveTab] = useState("search");
+  const [query, setQuery] = useState("");
+  const [active, setActive] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = () => {
+    if (!email) return;
+    alert(`Subscribed with: ${email}`);
+    setEmail("");
+  };
+
   if (loading) return <NeighbourhoodListSkeleton />;
 
   return (
-    <>
+    <div id="poppinsssFamily">
       <Helmet>
         <title>Restaurants in Chennai | Food in Chennai</title>
         <meta
@@ -130,66 +139,72 @@ export default function ChennaiNeighbourhood() {
         />
         <link rel="canonical" href="/visit/restaurants-in-chennai" />
       </Helmet>
+
       <div className="neighbourhoodcontiner">
         {/* ============== Banner ============ */}
-
-        <div className="accaodomationBannerSection">
-          <img src="/images/restaurants-banner.jpg" alt="" />
-          <div className="accodoamationBannerContainer">
-            <div className="accodoamationBannerText">
-              <h3>Neighbourhood</h3>
-              <div className="breadCrum">
-                <Link to="/visit-chennai">Live </Link> -{" "}
-                <a href=""> Neighbourhood </a>
+        <section
+          className="relative min-h-[550px] sm:min-h-[550px] flex items-center overflow-hidden"
+          style={{
+            background:
+              "linear-gradient(135deg, #1a0a2e 0%, #2d1155 40%, #3b1a6b 60%, #1a1a4e 100%)",
+          }}
+        >
+          <div className="absolute inset-0 w-full h-full opacity-30 pointer-events-none">
+            <img
+              src="/images/restaurants-banner.jpg"
+              alt="Chennai Background"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full">
+            <div className="text-xs text-white/60 mb-4 neighbourtwoparagraph neighbourhoodbrudcrum">
+              <div className="flex gap-2">
+                <a href="/">
+                  <span className="cursor-pointer">Home</span>
+                </a>
+                <span>-</span>
+                <span className="cursor-pointer">Neighbourhood</span>
               </div>
+            </div>
+            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-12">
+              <div className="text-white lg:w-[40%]">
+                <h1 className="text-3xl sm:text-4xl font-semibold leading-tight mb-3">
+                  Explore Chennai
+                  <br />
+                  <span className="text-[#a44294] ">Neighbourhoods</span>
+                </h1>
+                <p className="text-white/70 text-sm leading-relaxed neighbourtwoheaidngssparagraph">
+                  Discover the best localities in Chennai. Find schools,
+                  hospitals, transport, lifestyle, food, real estate trends and
+                  everything you need to know about your neighbourhood.
+                </p>
+              </div>
+
+              <Search
+                onSearch={(q) => {
+                  updateFilter("q", q);
+                  updateFilter("alpha", "");
+                }}
+              />
             </div>
           </div>
-        </div>
-
-        {/* ALPHA FILTER WITH SECTION  */}
-
+        </section>
         <div className="">
-          <section className="mt-10 bg-white visitIntroParaSection">
+          <AlphabetFilter
+            value={filters.alpha}
+            onChange={(v) => updateFilter("alpha", v)}
+          />
+          <section className="py-10 cardssneightwosec">
             <div className="container max-w-7xl mx-auto px-4 !mb-0">
-              <div className="">
-                <div class="workIntro">
-                  <h1>Neighbourhood</h1>
-                  <p>
-                    Explore Neighbourd – Chennai, your ultimate guide to every
-                    neighbourhood and area in Chennai across the city. Dive into
-                    vibrant communities, uncover hidden gems, and discover
-                    everything from essential services to lifestyle
-                    experiences—all in one place. Whether it’s finding the best
-                    eateries, schools, healthcare, shopping, or leisure spots,
-                    Neighbourd makes exploring Chennai exciting and effortless.
-                  </p>
-                  <p>
-                    Stay connected, stay informed, and make the most of city
-                    life across all areas in Chennai. From daily conveniences to
-                    unique experiences, Neighbourd ensures you experience
-                    Chennai fully—one neighbourhood at a time, from A to Z.
-                    Every corner of the city has something special, and with
-                    Neighbourd, you’ll never miss it.
-                  </p>
-                </div>
-
-                <Search
-                  onSearch={(q) => {
-                    updateFilter("q", q);
-                    updateFilter("alpha", "");
-                  }}
-                />
-
-                <AlphabetFilter
-                  value={filters.alpha}
-                  onChange={(v) => updateFilter("alpha", v)}
-                />
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-xl font-bold text-gray-900 neighbourtwosecondheading">
+                  Popular Neighbourhoods
+                </h2>
+                <a
+                  href="#"
+                  className="text-[14px] font-semibold text-[#a44294] hover:text-purple-900 transition-colors"
+                ></a>
               </div>
-            </div>
-          </section>
-
-          <section className="mt-0 bg-white">
-            <div className="container max-w-7xl mx-auto px-4 !mb-0">
               {loading ? (
                 <SkeletonLocations />
               ) : error ? (
@@ -214,15 +229,6 @@ export default function ChennaiNeighbourhood() {
                 />
               ) : (
                 <>
-                  <p className="mb-10">
-                    <span
-                      className="inline-flex items-center gap-2 px-7 py-2.5 rounded-full text-sm font-semibold showingloactionsss"
-                      style={{ background: "#F3ECFB", color: "#6A3FA0" }}
-                    >
-                      Showing {filteredLocations.length} locations
-                    </span>
-                  </p>
-
                   <AreaFilter
                     data={filteredLocations}
                     onChange={(v) => updateFilter("location", v)}
@@ -233,6 +239,6 @@ export default function ChennaiNeighbourhood() {
           </section>
         </div>
       </div>
-    </>
+    </div>
   );
 }

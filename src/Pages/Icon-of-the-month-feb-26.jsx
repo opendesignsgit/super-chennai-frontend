@@ -381,7 +381,7 @@ const infoData = [
           ))}
         </div> */}
 
-        <section className="awards-section">
+        <section className="awards-section expandingBrand septemeberIconoftheMonth">
           <h2 className="awards-title">Awards & Achievements</h2>
           <p className="awards-subtitle"></p>
           <div className="awards-container">

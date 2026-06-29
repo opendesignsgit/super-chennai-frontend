@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 
-export default function SearchChennai({ onSearch }) {
+export default function SearchChennai({ onSearch, dataaa }) {
   const [value, setValue] = useState("");
   const [isTop, setIsTop] = useState(false);
-
+  const [query, setQuery] = useState("");
+  const [activeTab, setActiveTab] = useState("search");
   const sectionRef = useRef(null);
 
   useEffect(() => {
     const getHeaderHeight = () => {
       const width = window.innerWidth;
-
       if (width >= 1024) return 100;
       if (width >= 768) return 280;
       return 100;
@@ -17,54 +17,125 @@ export default function SearchChennai({ onSearch }) {
 
     const handleScroll = () => {
       if (!sectionRef.current) return;
-
       const rect = sectionRef.current.getBoundingClientRect();
       const triggerPoint = getHeaderHeight();
-
       if (rect.top <= triggerPoint) {
         setIsTop(true);
       } else {
         setIsTop(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   console.log("isTop", isTop);
 
   const handleSearch = () => {
-    onSearch(value);
+    if (onSearch) {
+      onSearch(value);
+    }
   };
 
+  const handleChange = (e) => {
+    setValue(e.target.value);
+  };
+
+  const handleTagClick = (tagName) => {
+    setValue(tagName);
+    if (onSearch) {
+      onSearch(tagName);
+    }
+  };
+
+  const getDynamicTags = () => {
+    const fallbackTags = ["T Nagar", "Anna Nagar", "OMR", "Velachery", "Adyar"];
+    if (!dataaa || !Array.isArray(dataaa)) return fallbackTags;
+    const uniqueTags = new Set();
+    dataaa.forEach((item) => {
+      const locationObj = item?.locations;
+      if (locationObj) {
+        const locationName =
+          typeof locationObj === "object"
+            ? locationObj.title || locationObj.name
+            : null;
+
+        if (locationName) {
+          uniqueTags.add(locationName);
+        }
+      }
+    });
+    return uniqueTags.size > 0
+      ? Array.from(uniqueTags).slice(0, 6)
+      : fallbackTags;
+  };
+
+  const displayTags = getDynamicTags();
+
   return (
-    <div
-      className={`container max-w-7xl mx-auto px-4 seachconatiners ${isTop ? "neighstickkkk" : "noneighstickkkk"}`}
-    >
-      <div className="mb-6 filtersearchnewmain">
-        <div className="neighbourhoodstickkkkk">
-          <div className="flex gap-2 filtersearchnew" ref={sectionRef}>
+    <>
+      <div
+        ref={sectionRef}
+        className="bg-white rounded-2xl shadow-2xl p-5 w-full lg:w-[60%] bannerseeachresulttt"
+      >
+        <div className="flex border-b border-gray-200 mb-4">
+          <button
+            onClick={() => setActiveTab("search")}
+            className={`px-5 py-2 text-sm font-bold transition-colors neighbourtwoheaidngssparagraph ${
+              activeTab === "search"
+                ? "text-[#a44294] border-b-2 border-[#a44294] -mb-px"
+                : "text-gray-500"
+            }`}
+          >
+            Search
+          </button>
+        </div>
+
+        <div className="flex gap-2">
+          <div className="flex-1 flex items-center border border-gray-300 rounded-lg px-3 py-3 gap-2">
+            <span className="text-gray-400 text-base neighebbbbbbbsss">
+              <img
+                src="/images/icons/location-output-neighbourhood.svg"
+                alt=""
+              />
+            </span>
             <input
-              className="border p-3 w-full rounded-lg searchhoodfilter"
-              placeholder="Find your Location / PIN code"
+              type="text"
+              placeholder="Search by Area, Locality, Landmark or Pincode"
+              className="flex-1 text-sm outline-none text-gray-700 placeholder-gray-400 bg-transparent neighbourtwoparagraph"
               value={value}
-              onChange={(e) => setValue(e.target.value)}
+              onChange={handleChange}
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   handleSearch();
                 }
               }}
             />
-
-            <button onClick={handleSearch} className="searchbuttonfilt">
-              Search
-            </button>
           </div>
+          <button
+            onClick={handleSearch}
+            className="bg-[#a44294] hover:bg-[#974189] text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors whitespace-nowrap neighbourtwoparagraph cursor-pointer"
+          >
+            Search
+          </button>
+        </div>
+
+        <div className="mt-5 flex flex-wrap items-center gap-2">
+          <span className="text-xs text-[#000] !font-semibold neighbourtwoparagraph">
+            Popular Searches:
+          </span>
+          {displayTags.map((tag) => (
+            <button
+              key={tag}
+              onClick={() => handleTagClick(tag)}
+              className="cursor-pointer text-[#000] font-bold border border-[#00000040] hover:bg-purple-100 hover:text-[#a44294] px-3 py-1 rounded-full transition-colors neighbourtwoparagraph"
+            >
+              {tag}
+            </button>
+          ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }

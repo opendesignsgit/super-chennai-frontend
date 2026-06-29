@@ -1,68 +1,59 @@
 import { useState } from "react";
+
+// import { ALPHABET } from "../../ChennaiNeighbourhoodNew/data";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 export default function AlphabetFilter({ value, onChange }) {
-
+  const [active, setActive] = useState("");
   const handleClick = (l) => {
     onChange?.(l);
   };
 
   return (
-    <div className="mb-6 alphapetfiltersection">
-      <div className="girdcolumn grid grid-cols-26">
-        {letters.map((l) => (
-          <button
-            key={l}
-            onClick={() => handleClick(l)}
-            className={`alpabutton
-              text-sm py-2
-              border-r last:border-r-0
-              border-gray-300
-              ${
-                value === l
-                  ? "activebuttonalpha bg-purple-600 text-white rounded-md "
-                  : "text-gray-700 hover:bg-gray-200"
-              }
-            `}
-          >
-            {l}
-          </button>
-        ))}
-      </div>
-    </div>
+    <>
+      <section className="bg-white border-gray-100 py-6 neightwonewwmain">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 alphabetnewwwww">
+          <div className="mb-4">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-5">
+              <div>
+                <h2 className="text-base font-bold text-gray-900 neighbourtwosecondheading">
+                  Search by Alphabet
+                </h2>
+                <p className="text-xs text-gray-500 mt-0.5 neighbourtwoparagraph">
+                  Find your neighbourhood by selecting the first letter
+                </p>
+              </div>
+
+              {/* Reset button alignment matrum cursor effect click handling */}
+              <button
+                onClick={() => handleClick("")}
+                className={`px-4 py-2 text-xs font-semibold rounded-lg transition-colors border cursor-pointer neighbourbuttonaa ${
+                  !value
+                    ? "bg-[#a44294] !text-white border-[#a44294]"
+                    : "bg-gray-50 text-gray-700 border-gray-200 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-300"
+                }`}
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {letters.map((l) => (
+              <button
+                key={l}
+                onClick={() => handleClick(l)}
+                className={`w-9 h-9 text-xs font-semibold rounded transition-colors border neighbourbuttonaa cursor-pointer ${
+                  value === l
+                    ? "bg-[#a44294] !text-white border-[#a44294]"
+                    : "bg-gray-50 text-gray-700 border-gray-100 hover:bg-purple-50 hover:border-purple-300 hover:text-purple-700"
+                }`}
+              >
+                {l}
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
-
-// const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-
-// export default function AlphabetFilter({ onChange }) {
-//   const [active, setActive] = useState("");
-
-//   const handleClick = (l) => {
-//     setActive(l);
-//     onChange?.(l);
-//   };
-
-//   return (
-//     <div className="mb-6 alphapetfiltersection">
-//         <div className="girdcolumn grid grid-cols-26">
-//           {letters.map((l) => (
-//             <button
-//               key={l}
-//               onClick={() => handleClick(l)}
-//               className={`alpabutton
-//                 text-sm py-2
-//                 border-r last:border-r-0
-//                 border-gray-300
-//                 ${active === l
-//                   ? "activebuttonalpha bg-purple-600 text-white rounded-md"
-//                   : "text-gray-700 hover:bg-gray-200"}
-//               `}
-//             >
-//               {l}
-//             </button>
-//           ))}
-//         </div>
-//       </div>
-//   );
-// }

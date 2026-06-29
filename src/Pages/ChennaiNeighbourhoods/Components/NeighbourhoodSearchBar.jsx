@@ -77,68 +77,12 @@ export default function NeighbourhoodSearchBar({
   }, [data, locationId]);
   const normalize = (str = "") => str.toLowerCase().replace(/\s+/g, "").trim();
 
-  // const fuse = useMemo(() => {
-  //   const preparedData = data.map((item) => ({
-  //     ...item,
-  //     searchableText: `
-  //       ${item.name || ""}
-  //       ${item.title || ""}
-  //       ${item.category?.title || ""}
-  //       ${extractTextFromLexical(item.content)}
-  //     `,
-  //   }));
-
-  //   return new Fuse(preparedData, {
-  //     keys: ["searchableText"],
-  //     threshold: 0.4, // 🔥 lower = strict, higher = loose (0.3–0.5 best)
-  //     ignoreLocation: true,
-  //     minMatchCharLength: 2,
-  //   });
-  // }, [data]);
-
-  // const handleSearch = () => {
-  //   const query = search.toLowerCase().trim();
-  //   if (!query) return;
-
-  //   const normalizedQuery = normalize(query);
-
-  //   const fuseResults = fuse.search(query);
-
-  //   // 🔥 fallback manual fuzzy (for extreme cases like "wtrfall")
-  //   const manualResults = data.filter((item) => {
-  //     const text = normalize(
-  //       `${item.name} ${item.title} ${item.category?.title} ${extractTextFromLexical(item.content)}`,
-  //     );
-
-  //     return text.includes(normalizedQuery);
-  //   });
-
-  //   // ✅ merge + remove duplicates
-  //   const finalResults = [
-  //     ...fuseResults.map((r) => r.item),
-  //     ...manualResults,
-  //   ].filter(
-  //     (item, index, self) => index === self.findIndex((i) => i.id === item.id),
-  //   );
-
-  //   setSearchResults(finalResults);
-  //   setOpenSearchModal(true);
-  // };
-
-  // ####################################################################################################################
-  //################## ADVANCE SEARCH ALGORITHMS DONT CHANGE ANYTHING DONT REWRITE WITH AI TOOL #########################
-  // ####################################################################################################################
-
   const handleSearch = () => {
     const query = search.toLowerCase().trim();
     if (!query) return;
-
     const fuseResults = fuse.search(query);
-
     const finalResults = fuseResults.map((r) => r.item);
-
     console.log("finalResults", finalResults);
-
     setSearchResults(finalResults);
     setOpenSearchModal(true);
   };
@@ -165,9 +109,7 @@ export default function NeighbourhoodSearchBar({
 
     data?.forEach((item) => {
       const cat = item?.category?.title || "Others";
-
       if (!result[cat]) result[cat] = {};
-
       item?.subCategories?.forEach((sub) => {
         if (sub && sub.id && !result[cat][sub.id]) {
           result[cat][sub.id] = sub;
@@ -179,10 +121,8 @@ export default function NeighbourhoodSearchBar({
   }, [data]);
 
   console.log("subcategories", subCategoriesByCategory);
-
   const categories = Object.keys(grouped);
   const activeCat = activeCategory || categories?.[0];
-
   const getSubCategorySlug = (item) => {
     if (item?.subCategories?.length > 0) {
       return item.subCategories[0]?.slug || "all";
@@ -193,143 +133,69 @@ export default function NeighbourhoodSearchBar({
   const section4Ref = useRef(null);
   const [isTop, setIsTop] = useState(false);
 
-  useEffect(() => {
-    const getHeaderHeight = () => {
-      const width = window.innerWidth;
-
-      if (width >= 1024) return 130;
-      if (width >= 768) return 120;
-      return 100;
-    };
-
-    const sectionOffsetTop = section4Ref.current.offsetTop;
-
-    const handleScroll = () => {
-      const headerHeight = getHeaderHeight();
-      const scrollY = window.scrollY;
-
-      if (scrollY + headerHeight >= sectionOffsetTop) {
-        setIsTop(true);
-      } else {
-        setIsTop(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
-      {/* SEARCH BAR */}
-
-      <div
-        ref={section4Ref}
-        className={`${isTop ? "stickedfilter" : "nopeee"}`}
-      >
-        <div className="mainlocationdd">
-          <div className="flex items-center bg-white rounded-full shadow border overflow-hidden submainlocationdd">
-            <div className="flex items-center gap-1 px-4 py-3 mainselectinputss">
-              <img
-                className="locationsvginput"
-                src="https://dev.opendesignsin.com/neighlocation.svg"
-                alt=""
-              />
-
-              <select
-                className="outline-none bg-transparent slectmapoption"
-                value={locationId}
-                onChange={(e) => navigate(`/neighbourhood/${e.target.value}`)}
+      <div className="flex items-center gap-3 max-w-xl w-full">
+        <div className="flex-1 bg-white rounded-full flex items-center px-6 py-2.5 shadow-sm border border-gray-100 neighbourtwoheaidngssparagraph !text-[16px] zindexxmoreee">
+          <div className="flex flex-1 items-center gap-1.5 min-w-[160px]">
+            <span className="shrink-0">
+              <svg
+                className="w-4 h-4 text-gray-500"
+                viewBox="0 0 24 24"
+                fill="currentColor"
               >
-                {sameLetterLocations?.map((loc) => (
-                  <option key={loc.id} value={loc.locality}>
-                    {loc.locality}
-                  </option>
-                ))}
-              </select>
-            </div>
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+              </svg>
+            </span>
 
-            <input
-              type="text"
-              placeholder="Search restaurants, hotels, or anything nearby..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="flex-1 px-3 py-3 outline-none"
-            />
+            <select
+              className="w-full bg-transparent border-none outline-none text-gray-600 font-medium cursor-pointer appearance-none pr-4 text-sm md:text-base capitalize"
+              value={locationId}
+              onChange={(e) => navigate(`/neighbourhood/${e.target.value}`)}
+            >
+              {sameLetterLocations?.map((loc) => (
+                <option key={loc.id} value={loc.locality}>
+                  {loc.locality}
+                </option>
+              ))}
+            </select>
 
-            <button className="inputmapsearchss" onClick={handleSearch}>
-              Search
-            </button>
-
-            {showExplore && (
-              // <button
-              //   onClick={() => setOpen(true)}
-              //   className="clickheretoexplorelocation"
-              // >
-              //   Click Here to Explore
-              // </button>
-              <button
-                onClick={() => setOpen(true)}
-                className="clickheretoexplorelocation group relative overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(139,60,130,0.5)] hover:shadow-xl active:shadow-[0_0_20px_rgba(163,68,147,0.7)] active:scale-[0.97] hover:scale-[1.02]"
-              >
-                {/* Background shimmer layers */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#8b3c82]/30 via-[#a34493]/20 to-[#8b3c82]/30 opacity-0 group-hover:opacity-100 transition-all duration-700 blur-sm -skew-x-12 animate-shimmer"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-1000 -skew-x-12 animate-shimmer-delayed"></div>
-
-                <span className="relative z-10 font-semibold tracking-wide">
-                  Click Here to Explore
-                </span>
-
-                {/* Floating particles on hover */}
-                <div className="absolute -top-2 -right-2 w-3 h-3 bg-[#8b3c82] rounded-full opacity-0 group-hover:opacity-60 animate-float"></div>
-                <div className="absolute -bottom-2 -left-2 w-2 h-2 bg-[#a34493] rounded-full opacity-0 group-hover:opacity-50 animate-float-delayed"></div>
-              </button>
-            )}
+            <span
+              className="text-gray-400 pointer-events-none text-xs ml-auto"
+              style={{ marginTop: "2px" }}
+            >
+              ▼
+            </span>
           </div>
+
+          <div className="h-6 w-[1px] bg-gray-300 mx-3 shrink-0" />
+
+          <input
+            type="text"
+            placeholder="What are you looking for?"
+            className="flex-1 bg-transparent border-none outline-none text-gray-700 placeholder-gray-400 text-sm md:text-base pr-2 text-[14px] inputseachhhssssss"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
         </div>
 
-        {/* CHANGE LOCATION */}
-        <div className="changethelocation">
-          <button onClick={() => setOpenLocationsModal(true)}>
-            Change the Location
-          </button>
-        </div>
+        <button
+          onClick={handleSearch}
+          className="bannerrrsearchccc cursor-pointer bg-[#a44294] hover:bg-[#b84ca6] text-white !font-[500] px-6 py-2.5 rounded-full text-sm transition-all duration-300 whitespace-nowrap shrink-0 shadow-sm"
+        >
+          Search
+        </button> 
+        <button
+          onClick={() => setOpen(true)}
+          className="clickheretoexplorebuttons cursor-pointer bg-[#a44294] hover:bg-[#b84ca6] text-white !font-[500] px-6 py-2.5 rounded-full text-sm transition-all duration-300 whitespace-nowrap shrink-0 shadow-sm"
+        >
+          Click Here to Explore
+        </button>
       </div>
 
-      {/* LOCATION MODAL */}
-      {/* {openLocationsModal && (
-        <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
-          <div className="bg-white container max-w-5xl mx-auto px-4 relative popupseacrhinpout">
-            <button
-              onClick={() => setOpenLocationsModal(false)}
-              className="absolute top-4 right-4 text-xl popupcloselocation"
-            >
-              ✕
-            </button>
-
-            <div className="workIntro">
-              <h1>Neighbourhood</h1>
-              <p>
-                Public transportation in Chennai is managed by various
-                government bodies...
-              </p>
-            </div>
-
-            <Search
-              onSearch={(q) => {
-                navigate(`/neighbourhood?search=${encodeURIComponent(q)}`);
-                setOpenLocationsModal(false);
-              }}
-            />
-          </div>
-        </div>
-      )} */}
       {openLocationsModal && (
         <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center animate-backdrop-fade">
-          <div className="bg-white container max-w-5xl mx-auto px-4 relative popupseacrhinpout animate-modal-pop">
-            {/* Animated Close Button */}
+          <div className="bg-white container max-w-5xl mx-auto px-4 relative popupseacrhinpout animate-modal-pop">           
             <button
               onClick={() => setOpenLocationsModal(false)}
               className="absolute top-4 right-4 text-xl popupcloselocation group hover:scale-110 active:scale-95 transition-all duration-300 hover:rotate-90 hover:shadow-lg hover:shadow-[#8b3c82]/50"
@@ -337,8 +203,6 @@ export default function NeighbourhoodSearchBar({
               <span className="relative z-10">✕</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#8b3c82]/30 to-[#a34493]/30 rounded-full opacity-0 group-hover:opacity-100 -skew-x-12 -translate-x-full group-hover:translate-x-0 transition-all duration-600 blur-sm"></div>
             </button>
-
-            {/* Animated Header */}
             <div className="workIntro animate-slide-down">
               <h1 className="animate-title-glow">Neighbourhood</h1>
               <p className="animate-fade-in-up">
@@ -346,8 +210,6 @@ export default function NeighbourhoodSearchBar({
                 government bodies...
               </p>
             </div>
-
-            {/* Animated Search */}
             <div className="animate-slide-up">
               <Search
                 onSearch={(q) => {
@@ -359,7 +221,6 @@ export default function NeighbourhoodSearchBar({
           </div>
         </div>
       )}
-
       <style jsx>{`
         /* Backdrop Animation */
         @keyframes backdrop-fade {
@@ -457,9 +318,6 @@ export default function NeighbourhoodSearchBar({
           animation: title-glow 2s ease-in-out infinite;
         }
       `}</style>
-
-      {/* EXPLORE MODAL */}
-
       <AnimatePresence>
         {open && (
           <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
@@ -469,10 +327,9 @@ export default function NeighbourhoodSearchBar({
               transition={{ layout: { duration: 0.3, ease: "easeInOut" } }}
             >
               <div className="grid grid-cols-12 popupneigbhbourh">
-                {/* LEFT */}
                 <div className="col-span-4 bg-purple-600 text-white p-6 leftsidepopup">
                   <h2 className="text-2xl font-bold mb-6 locationname">
-                    IN <br /> {location?.locality}
+                    {location?.locality}
                   </h2>
 
                   <div className="space-y-3 leftsidescrolll">
@@ -491,9 +348,7 @@ export default function NeighbourhoodSearchBar({
                     ))}
                   </div>
                 </div>
-
-                {/* RIGHT */}
-                <div className="col-span-8 p-6 relative rightsidepopup">
+                <div className="col-span-8 p-6 relative rightsidepopup sisss">
                   <button
                     onClick={() => setOpen(false)}
                     className="absolute top-4 right-4 text-xl popupcloselocation"
@@ -545,23 +400,23 @@ export default function NeighbourhoodSearchBar({
       {openSearchModal && (
         <div className="fixed inset-0 z-[9999] bg-black/60 backdrop-blur-sm flex items-center justify-center searchpopupdivmain">
           <div className="bg-white w-[95%] max-w-4xl rounded-2xl shadow-2xl relative overflow-hidden">
-            {/* HEADER */}
             <div className="flex items-center justify-between px-6 py-4 headingtop">
-              <h2 className="text-lg font-semibold">
+              <h2
+                className="text-lg font-semibold"
+                style={{ fontFamily: "Poppins", fontWeight: 500 }}
+              >
                 Search Results ({searchResults.length})
               </h2>
 
               <button
                 onClick={() => setOpenSearchModal(false)}
-                className="text-xl hover:scale-110 transition"
+                className="cursor-pointer text-xl hover:scale-110 transition"
               >
                 ✕
               </button>
             </div>
 
-            {/* BODY */}
             <div className="p-5 max-h-[500px] overflow-y-auto space-y-4 bodycardsection">
-              {/* EMPTY */}
               {searchResults.length === 0 ? (
                 <div className="text-center py-16">
                   <p className="text-gray-400 text-lg">😕 No results found</p>
@@ -585,7 +440,6 @@ export default function NeighbourhoodSearchBar({
                     }}
                     className="flex items-center gap-4 p-3 rounded-xl hover:shadow-lg hover:bg-gray-50 cursor-pointer transition-all duration-200 cardlocation"
                   >
-                    {/* IMAGE */}
                     <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100 imagesecriorrss">
                       <img
                         src={
@@ -598,39 +452,39 @@ export default function NeighbourhoodSearchBar({
                       />
                     </div>
 
-                    {/* CONTENT */}
-                    <div className="flex-1">
+                    <div className="flex-1 w-[100%]">
+                      {console.log("itemsssss", item)}
                       <h3 className="font-semibold text-gray-800 group-hover:text-purple-600 transition">
                         {item.name}
                       </h3>
 
-                      <p className="text-sm  mt-1 locationdescription">
-                        {item.category?.title}
-                      </p>
+                      <h3 className="text-xs !text-[#000] leading-relaxed mb-3 neighbourtwoparagraph mt-2">
+                        {item?.description &&
+                          `${item.description.slice(0, 50)} ....`}
+                      </h3>
 
-                      {/* OPTIONAL SHORT DESC */}
-                      {item?.locations?.locality && (
-                        <div className="flex gap-0.5 items-center itemslocatioss">
+                      <div className="flex gap-2 mt-2">
+                        {item?.locations?.locality && (
+                          <div className="flex gap-0.5 items-center itemslocatioss">
+                            <img
+                              className="locationimagess w-5 h-5"
+                              src="/images/location-map-1.svg"
+                            />
+
+                            <h3 className="font-semibold text-gray-800 group-hover:text-purple-600 transition !mb-0">
+                              {item.locations.locality}
+                            </h3>
+                          </div>
+                        )}
+
+                        <div className="text-gray-400 group-hover:text-purple-600 transition">
                           <img
-                            className="locationimagess"
-                            src="/images/location-map-1.svg"
+                            className="imagepopupnws"
+                            src="/images/location-arrow.svg"
+                            alt=""
                           />
-
-                          <span className="locationamee">
-                            {" "}
-                            {item.locations.locality}
-                          </span>
                         </div>
-                      )}
-                    </div>
-
-                    {/* RIGHT ICON */}
-                    <div className="text-gray-400 group-hover:text-purple-600 transition">
-                      <img
-                        className="imagepopupnws"
-                        src="/images/location-arrow.svg"
-                        alt=""
-                      />
+                      </div>
                     </div>
                   </div>
                 ))

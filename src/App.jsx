@@ -1017,7 +1017,7 @@ function App() {
         {/* conclave */}
         <Route path="/admin-superchennai" element={<AdminView />} />
 
-        <Route path="/neighbourhood" element={<ChennaiNeighbourhood />} />
+        {/* <Route path="/neighbourhood" element={<ChennaiNeighbourhood />} /> */}
 
         <Route
           path="/neighbourhood/:locationId"

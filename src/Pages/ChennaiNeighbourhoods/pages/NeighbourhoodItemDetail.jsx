@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 import LexicalContent from "../Components/LexicalContent";
@@ -9,6 +10,34 @@ import EmptyState from "../Components/locations/EmptyState";
 import NeighbourhoodListSkeleton from "../Components/locations/NeighbourhoodListSkeleton";
 import { useLocations } from "../hooks/useLocations";
 import Slider from "react-slick";
+import {
+  MapPin,
+  Tag,
+  Phone,
+  Globe,
+  IndianRupee,
+  Clock,
+  Map as MapIcon,
+  Layers,
+  DollarSign,
+  Sparkles,
+  Users,
+  RefreshCw,
+  UsersRound,
+  Wind,
+  DoorOpen,
+  CreditCard,
+  Banknote,
+  Accessibility,
+  ShoppingBag,
+  Receipt,
+  Train,
+  Bus,
+  Milestone,
+  ParkingSquare,
+  ArrowRight,
+} from "lucide-react";
+import ProperitiesNeighbourhood from "../Components/Properties";
 
 export default function NeighbourhoodItemDetail() {
   const { locationId, slug, category, subcategory } = useParams();
@@ -105,760 +134,704 @@ export default function NeighbourhoodItemDetail() {
   const safeSubcategory =
     subcategory && subcategory !== "undefined" ? subcategory : safeCategory;
 
+  const infoItems = [
+    {
+      id: 1,
+      icon: <MapPin className="w-5 h-5 text-[#5d32a8]" />,
+      label: "Location",
+      value: "T Nagar, Chennai 600017",
+    },
+    {
+      id: 2,
+      // CHANGED: Using MapIcon here
+      icon: <MapIcon className="w-5 h-5 text-[#5d32a8]" />,
+      label: "Distance",
+      value: "0.4 km from T Nagar Metro",
+    },
+    {
+      id: 3,
+      icon: <Tag className="w-5 h-5 text-[#5d32a8]" />,
+      label: "Category",
+      value: "Shopping • Clothing",
+    },
+    {
+      id: 4,
+      icon: <IndianRupee className="w-5 h-5 text-[#5d32a8]" />,
+      label: "Price Range",
+      value: "₹₹ Affordable",
+    },
+    {
+      id: 5,
+      icon: <Clock className="w-5 h-5 text-[#5d32a8]" />,
+      label: "Best Time to Visit",
+      value: "10:00 AM - 9:30 PM",
+    },
+  ];
+
+  const exploreStores = [
+    {
+      id: 1,
+      name: "Pothys",
+      description: "Iconic family shopping store",
+      rating: 4.6,
+      distance: "0.4 km",
+      // Indian Ethnic Wear / Saree theme
+      image:
+        "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=500&q=80",
+    },
+    {
+      id: 2,
+      name: "Chennai Silks",
+      description: "Premium ethnic wear collection",
+      rating: 4.5,
+      distance: "0.6 km",
+      // Traditional Kanchipuram Silk texture vibe
+      image:
+        "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=500&q=80",
+    },
+    {
+      id: 3,
+      name: "Saravana Stores",
+      description: "One stop shop for all needs",
+      rating: 4.4,
+      distance: "0.8 km",
+      // Mega store / Retail jewelry & clothing vibe
+      image:
+        "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=500&q=80",
+    },
+    {
+      id: 4,
+      name: "Nalli Silks",
+      description: "Finest silks, Timeless tradition.",
+      rating: 4.6,
+      distance: "0.5 km",
+      // Premium Boutique Heritage Silk drape
+      image:
+        "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=500&q=80",
+    },
+    {
+      id: 5,
+      name: "Vivek & Co.",
+      description: "Quality textiles since generations",
+      rating: 4.3,
+      distance: "0.3 km",
+      // Showroom setup / apparel layout
+      image:
+        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=500&q=80",
+    },
+  ];
+
+  function StarIcon() {
+    return (
+      <svg
+        className="w-4 h-4 fill-yellow-400 text-yellow-400"
+        viewBox="0 0 20 20"
+      >
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+      </svg>
+    );
+  }
+
+  function MapPinIcon({ className = "w-4 h-4" }) {
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+      </svg>
+    );
+  }
+
+  const galleryImagesneww = [
+    {
+      id: 1,
+      src: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=500&q=80",
+      alt: "Store interior 1 - Premium apparel racks",
+    },
+    {
+      id: 2,
+      src: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=500&q=80",
+      alt: "Store interior 2 - Ethnic wear display",
+    },
+    {
+      id: 3,
+      src: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=500&q=80",
+      alt: "Fancy World section - Modern clothing setup",
+    },
+    {
+      id: 4,
+      src: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=500&q=80",
+      alt: "Store interior 4 - Showroom mannequins",
+    },
+    {
+      id: 5,
+      src: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=500&q=80",
+      alt: "Store interior 5 - Designer collections",
+    },
+  ];
+
   return (
-    <>
-      {/* HERO */}
-      <div className="accaodomationBannerSection relative">
-        {/* IMAGE */}
+    <div id="poppinsssFamily">
+      <div className="relative h-[600px] flex flex-col justify-center pb-10 px-8 overflow-hidden">
+        {/* 1. Background Image Tag */}
         <img
-          src={
-            item?.heroImage?.url
-              ? API_BASE_URL_API_TEST_DEV + item.heroImage.url
-              : "/placeholder.jpg"
-          }
-          className="w-full h-[540px] object-cover"
+          src={`${API_BASE_URL_API_TEST_DEV}${item.FeaturedImage.url}`}
+          alt={item.title || "Neighbourhood Banner"}
+          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
         />
 
-        {/* SHADE */}
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,#2b3284_0%,#b10f92_50%,#2b3284_100%)]"></div>
-        <div className="absolute inset-0 bg-black/50"></div>
-        {/* CONTENT */}
-        <div className="accodoamationBannerContainer relative z-20">
-          <div className="accodoamationBannerText">
-            <AutoShrinkText
-              text={item.name}
-              baseSize={60}
-              minSize={20}
-              maxChars={40}
-              className="accodoamationBannerText"
-              width="95%"
-              maxLines={2}
-            />
+        {/* 2. Gradient Overlay (Text clear ah theriyarathukaga) */}
+        <div
+          className="absolute inset-0 mix-blend-multiply pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(10,5,30,0.5) 0%, rgba(10,5,30,0.75) 60%, rgba(10,5,30,0.92) 100%)",
+          }}
+        />
 
-            <div className="breadCrum newew">
-              <Link to="/visit-chennai">Neighbourhoods</Link> -{" "}
-              <span>{item.category?.title}</span>
+        {/* Content Container */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0">
+          <nav className="text-gray-400 neighbourtwoparagraph items-center gap-1 neighbourhoodbrudcrum">
+            <div className="flex gap-2 mb-5">
+              <span className="hover:text-white cursor-pointer">Home</span>
+              <span>›</span>
+              <span
+                className="hover:text-white cursor-pointer"
+                onClick={() => navigate("/neighbourhood")}
+              >
+                Neighbourhood
+              </span>
+              <span>›</span>
+              <span
+                onClick={() =>
+                  navigate(`/neighbourhood/${item.locations.locality}`)
+                }
+                className="hover:text-white cursor-pointer"
+              >
+                {item.locations.city}
+              </span>
+              <span>›</span>
+              <span className="text-white">{item.category.title}</span>
+            </div>
+          </nav>
+
+          <div className="relative z-10">
+            <div className="mb-3">
+              <a className="bg-[#a44294] hover:bg-[#a44294] text-white font-semibold px-5 py-2 rounded-[5px] text-sm transition-colors cursor-pointer">
+                Popular Store
+              </a>
+            </div>
+            <h1 className="text-3xl text-[#fff] sm:text-4xl font-semibold leading-tight mb-4">
+              {item.title}
+            </h1>
+            <p className="text-gray-300 text-sm max-w-3xl mb-7 neighbourtwoheaidngssparagraph">
+              {item.description}
+            </p>
+
+            <div className="flex flex-wrap items-center gap-3 mb-10">
+              {/* 1. Get Directions Button */}
+              <button className="flex items-center gap-2 bg-[#a44294] hover:bg-[#4c278a] text-white px-5 py-3 rounded-[10px] font-medium text-sm transition-colors shadow-sm">
+                <MapPin className="w-4 h-4 stroke-[2]" />
+                <a
+                  href={item.googlePlaceId}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Get Directions</span>
+                </a>
+              </button>
+
+              {/* 2. Call Store Button */}
+              {item.contactInfo.primaryPhone && (
+                <button className="flex items-center gap-2 bg-white hover:bg-gray-50 text-[#a44294] px-5 py-3 rounded-[10px] font-semibold text-sm transition-colors shadow-sm border border-transparent">
+                  <Phone className="w-4 h-4 stroke-[2.5] text-[#a44294]" />
+                  <a
+                    href={`tel:${item.contactInfo.primaryPhone}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Call Store</span>
+                  </a>
+                </button>
+              )}
+
+              {/* 3. Visit Website Button */}
+              {item.contactInfo.website && (
+                <button className="flex items-center gap-2 bg-white hover:bg-gray-50 text-[#a44294] px-5 py-3 rounded-[10px] font-semibold text-sm transition-colors shadow-sm border border-transparent">
+                  <Globe className="w-4 h-4 stroke-[2.5] text-[#a44294]" />
+                  <a
+                    href={
+                      item.contactInfo.website?.startsWith("http")
+                        ? item.contactInfo.website
+                        : `https://${item.contactInfo.website}`
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Visit Website</span>
+                  </a>
+                </button>
+              )}
+            </div>
+
+            <NeighbourhoodSearchBar
+              data={data}
+              locations={locations}
+              locationId={locationId}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 py-8 space-y-10 pt-0 mt-[-50px] relative z-[0] pb-0">
+        <div className="w-full bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between px-6 py-4 gap-y-4 md:gap-y-0">
+          {/* 1. Location */}
+          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+            <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
+              <MapPin className="w-5 h-5 text-[#5d32a8]" />
+            </div>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-gray-400 text-xs font-medium tracking-wide">
+                Location
+              </span>
+              <span className="text-[#1a2332] text-sm font-semibold leading-snug">
+                {item.locations.city}, <br /> {item.locations.pincode}
+              </span>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="hidden md:block h-10 w-[1px] bg-gray-200/80 mx-2" />
+
+          {/* 2. Distance */}
+          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+            <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
+              <MapIcon className="w-5 h-5 text-[#5d32a8]" />
+            </div>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-gray-400 text-xs font-medium tracking-wide">
+                Distance
+              </span>
+              <span className="text-[#1a2332] text-sm font-semibold leading-snug">
+                Static Data
+              </span>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="hidden md:block h-10 w-[1px] bg-gray-200/80 mx-2" />
+
+          {/* 3. Category */}
+          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+            <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
+              <Tag className="w-5 h-5 text-[#5d32a8]" />
+            </div>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-gray-400 text-xs font-medium tracking-wide">
+                Category
+              </span>
+              <span className="text-[#1a2332] text-sm font-semibold leading-snug">
+                {item.category.title}
+              </span>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="hidden md:block h-10 w-[1px] bg-gray-200/80 mx-2" />
+
+          {/* 4. Price Range */}
+          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+            <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
+              <IndianRupee className="w-5 h-5 text-[#5d32a8]" />
+            </div>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-gray-400 text-xs font-medium tracking-wide">
+                Price Range
+              </span>
+              <span className="text-[#1a2332] text-sm font-semibold leading-snug">
+                Static
+              </span>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="hidden md:block h-10 w-[1px] bg-gray-200/80 mx-2" />
+
+          {/* 5. Best Time to Visit */}
+          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+            <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
+              <Clock className="w-5 h-5 text-[#5d32a8]" />
+            </div>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-gray-400 text-xs font-medium tracking-wide">
+                Best Time to Visit
+              </span>
+              <span className="text-[#1a2332] text-sm font-semibold leading-snug">
+                10:00 AM - 9:30 PM
+              </span>
             </div>
           </div>
         </div>
       </div>
 
-      <NeighbourhoodSearchBar
-        data={data}
-        locations={locations}
-        locationId={locationId}
-      />
-      <div className="max-w-7xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-6 m-15">
-        <div className="flex items-start justify-between">
-          {/* LEFT SIDE */}
-          <div>
-            <h2 className="text-2xl font-semibold titleeeeeeee">{item.name}</h2>
-            {/* <span className="text-[#000] text-sm font-semibold">
-              {item.category?.title}
-            </span> */}
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="flex flex-col items-end gap-2 text-sm">
-            <div className="flex items-center gap-1 bg-[#892c7a] text-[#fff] px-3 py-1 rounded-full font-medium">
-              ⭐ <span>{item.rating}</span>
-            </div>
-
-            <div className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
-              Established Year : {item.establishedYear}
-            </div>
-            {console.log("establishedYear", item.establishedYear)}
-          </div>
-        </div>
-
-        {/* GALLERY */}
-        {galleryImages.length > 1 ? (
-          <>
-            <div className="mt-10">
-              <div className="grid grid-cols-3 gap-2">
-                <div className="col-span-2">
-                  <img
-                    src={galleryImages[0]}
-                    alt="Gallery"
-                    className="w-full h-60 object-cover rounded-lg cursor-pointer"
-                    onClick={() => {
-                      setCurrentImageIndex(0);
-                      setIsModalOpen(true);
-                    }}
-                  />
-                </div>
-
-                {/* Side Images */}
-                <div className="flex flex-col gap-2">
-                  {galleryImages.slice(1, 4).map((img, i) => {
-                    const isLastVisible = i === 2 && galleryImages.length > 4;
-
-                    return (
-                      <div key={i} className="relative w-full h-[73px]">
-                        <img
-                          src={img}
-                          alt=""
-                          className="w-full h-full object-cover rounded-lg cursor-pointer"
-                          onClick={() => {
-                            setCurrentImageIndex(i + 1);
-                            setIsModalOpen(true);
-                          }}
-                        />
-
-                        {isLastVisible && (
-                          <div className="absolute inset-0 bg-black/50 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                            +{galleryImages.length - 4}
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="col-span-2">
-              <img
-                src={galleryImages[0]}
-                alt="Gallery"
-                className="w-full h-[400px] object-cover rounded-lg cursor-pointer"
-                onClick={() => {
-                  setCurrentImageIndex(0);
-                  setIsModalOpen(true);
-                }}
-              />
-            </div>
-          </>
-        )}
-
-        {isModalOpen && (
-          <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
-            {/* Close Button */}
-            <button
-              className="absolute top-4 right-4 text-white text-3xl font-bold hover:text-gray-300"
-              onClick={() => setIsModalOpen(false)}
-            >
-              &times;
-            </button>
-
-            {/* Modal Container */}
-            <div className="relative w-full max-w-4xl max-h-[90vh] bg-gray-900 rounded-xl shadow-2xl overflow-hidden flex flex-col">
-              {/* Main Image */}
-              <div className="flex items-center justify-center bg-black max-h-[80vh] p-4">
-                <img
-                  src={galleryImages[currentImageIndex]}
-                  alt={`Gallery ${currentImageIndex + 1}`}
-                  className="max-w-full max-h-[75vh] object-contain rounded-lg transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-
-              {/* Left Button */}
-              <button
-                className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2"
-                onClick={() =>
-                  setCurrentImageIndex(
-                    (prev) =>
-                      (prev - 1 + galleryImages.length) % galleryImages.length,
-                  )
-                }
+      <div className="p-4 md:p-8 flex justify-center items-start font-sans">
+        {/* Main Grid Wrapper */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6  grid grid-cols-1 lg:grid-cols-12 gap-6">
+          {/* ================= LEFT COLUMN (Width: 7/12) ================= */}
+          <div className="lg:col-span-7 bg-white rounded-2xl border border-gray-100 shadow-sm p-6 space-y-8">
+            {/* About Section */}
+            <div>
+              <h2
+                className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]"
+                style={{ width: "90%" }}
               >
-                &#8592;
-              </button>
-
-              {/* Right Button */}
-              <button
-                className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2"
-                onClick={() =>
-                  setCurrentImageIndex(
-                    (prev) => (prev + 1) % galleryImages.length,
-                  )
-                }
-              >
-                &#8594;
-              </button>
-
-              {/* Thumbnails */}
-              <div className="mt-3 mb-4 flex gap-2 overflow-x-auto px-2">
-                {galleryImages.map((img, index) => (
-                  <img
-                    key={index}
-                    src={img}
-                    onClick={() => setCurrentImageIndex(index)}
-                    className={`w-14 h-14 rounded-md object-cover cursor-pointer border-2 ${
-                      currentImageIndex === index
-                        ? "border-white"
-                        : "border-transparent"
-                    }`}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-
-        <div className="max-w-7xl mx-auto px-4 py-10">
-          {/* TITLE */}
-
-          {item.content && (
-            <div className="border border-gray-200 rounded-xl p-5 detailpagestyleee">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                About this {item.category?.title}
+                About {item.title}
               </h2>
-              <div className="text-gray-500 text-sm">
-                <LexicalContent content={item.content} />
-              </div>
+              <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                {item.description}
+              </p>
             </div>
-          )}
 
-          {/* DESCRIPTION */}
-          {/* <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              About this {item.category?.title}
-            </h2>
-            {item.description || item.title}
-          </div> */}
+            <hr className="border-gray-100" />
 
-          {/* LOCATION MAP */}
-
-          {item?.locations?.value && (
-            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                Location
+            {/* Highlights Section */}
+            <div>
+              <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+                Highlights
               </h2>
-
-              <iframe
-                src={`https://www.google.com/maps?q=${item.location.latitude},${item.location.longitude}&z=15&output=embed`}
-                className="w-full h-[400px] rounded"
-              />
-            </div>
-          )}
-
-          {item.amenities?.length > 0 && (
-            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                Amenities
-              </h2>
-
-              <ul className="list-disc pl-5 space-y-2">
-                {item.amenities.map((a) => (
-                  <li key={a.id}>{a.label}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {item.businessHours?.length > 0 && (
-            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
-              <h3 className="text-xl font-semibold mb-4">Timings</h3>
-
-              {console.log("item.businessHours", item.businessHours)}
-              {item.businessHours.map((b) => (
-                <div key={b.id}>
-                  <span style={{ fontWeight: "600" }}>{b.day} </span>:{" "}
-                  {b.isClosed ? (
-                    "Closed"
-                  ) : (
-                    <>
-                      {" "}
-                      {b.openTime} - {b.closeTime}{" "}
-                    </>
-                  )}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5">
+                {/* Highlight Item 1 */}
+                <div className="flex items-center space-x-3">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl">
+                    <Layers size={18} />
+                  </div>
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Wide Variety
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      Static
+                    </p>
+                  </div>
                 </div>
-              ))}
+                {/* Highlight Item 2 */}
+                <div className="flex items-center space-x-3">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl">
+                    <DollarSign size={18} />
+                  </div>
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Affordable
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      Static
+                    </p>
+                  </div>
+                </div>
+                {/* Highlight Item 3 */}
+                <div className="flex items-center space-x-3">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl">
+                    <Sparkles size={18} />
+                  </div>
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Trendy & Latest
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      Static
+                    </p>
+                  </div>
+                </div>
+                {/* Highlight Item 4 */}
+                <div className="flex items-center space-x-3">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl">
+                    <Users size={18} />
+                  </div>
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Helpful
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      Static
+                    </p>
+                  </div>
+                </div>
+                {/* Highlight Item 5 */}
+                <div className="flex items-center space-x-3">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl">
+                    <RefreshCw size={18} />
+                  </div>
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Easy
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      Static
+                    </p>
+                  </div>
+                </div>
+                {/* Highlight Item 6 */}
+                <div className="flex items-center space-x-3">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl">
+                    <UsersRound size={18} />
+                  </div>
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Crowded on
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      Static
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          )}
-          {item.branches?.[0]?.address && (
-            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
-              <h3 className="text-xl font-semibold">Address</h3>
-              <p>{item.branches?.[0]?.address}</p>
-            </div>
-          )}
 
-          {item.subCategories?.length > 0 && (
-            <div className="border border-gray-200 rounded-xl p-5 transition-all duration-300 mt-10">
-              <h4 className="text-lg font-semibold mb-3 text-gray-700">
-                Releated categories
-              </h4>
+            <hr className="border-gray-100" />
 
-              <div className="flex flex-wrap gap-2">
+            {/* Amenities Section */}
+            <div>
+              <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+                Related Category
+              </h2>
+              <div className="flex flex-wrap gap-2.5">
                 {item.subCategories.map((s) => (
                   <a
                     href={`/neighbourhood/${locationId}/${item.category?.title?.toLowerCase()}/${s.slug}`}
                     key={s.id}
-                    // onClick={() =>
-
-                    // }
-                    className="bg-purple-100 text-purple-800 px-4 py-1 rounded-full text-sm font-medium hover:bg-purple-200 transition-colors cursor-pointer"
+                    className="inline-flex items-center space-x-4 bg-[#F5F3FF] text-[#a44294] px-4 py-2.5 rounded-full text-xs font-medium"
                   >
-                    {s.title}
+                    <span className="text-[#000] neighbourtwoparagraph">
+                      {s.title}
+                    </span>
                   </a>
                 ))}
               </div>
             </div>
-          )}
 
-          {(item.contactInfo?.website ||
-            item.contactInfo?.primaryPhone ||
-            item.socialMedia?.instagram) && (
-            <div className="flex justify-end gap-4 mt-5 flex-wrap">
-              {/* Website */}
-              {item.contactInfo?.website && (
-                <a
-                  href={item.contactInfo.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
-                >
-                  Visit Website
-                </a>
-              )}
+            <hr className="border-gray-100" />
 
-              {/* Phone */}
-              {item.contactInfo?.primaryPhone && (
-                <a
-                  href={`tel:${item.contactInfo.primaryPhone}`}
-                  className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium"
-                >
-                  Call Now
-                </a>
-              )}
-
-              {/* Instagram */}
-              {item.socialMedia?.instagram && (
-                <a
-                  href={item.socialMedia.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors text-sm font-medium flex items-center gap-1"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.5.4.6.2 1 .5 1.4 1 .4.4.8.9 1 1.5.2.5.3 1.3.4 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.5-.2.6-.5 1-1 1.4-.4.4-.9.8-1.5 1-.5.2-1.3.3-2.5.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1-.5-1.4-1-.4-.4-.8-.9-1-1.5-.2-.5-.3-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.5.2-.6.5-1 1-1.4.4-.4.9-.8 1.5-1 .5-.2 1.3-.3 2.5-.4C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7 .1 5.7.2 4.8.3 4 .5 3.2.7 2.5 1 1.9 1.6.5 3 0 4.5 0 12s.5 9 1.9 10.4c.6.6 1.3.9 2.1 1.1.8.2 1.7.3 3 .4 1.3.1 1.7.1 5 .1s3.6 0 5-.1c1.3-.1 2.2-.2 3-.4.8-.2 1.5-.5 2.1-1.1C23.5 21 24 19.5 24 12s-.5-9-1.9-10.4c-.6-.6-1.3-.9-2.1-1.1-.8-.2-1.7-.3-3-.4C15.6 0 15.2 0 12 0z" />
-                    <path d="M12 5.8a6.2 6.2 0 1 0 6.2 6.2A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 4-4 4 4 0 0 1-4 4zM18.4 4.6a1.4 1.4 0 1 1-1.4-1.4 1.4 1.4 0 0 1 1.4 1.4z" />
-                  </svg>
-                  Instagram
-                </a>
-              )}
-            </div>
-          )}
-
-          {/* CONTACT */}
-          {(item.contactInfo?.primaryPhone ||
-            item.contactInfo?.email ||
-            item.contactInfo?.website) && (
-            <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-              <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                Contact Info
-              </h3>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {/* Phone */}
-                {item.contactInfo?.primaryPhone && (
-                  <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-green-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3 5h2l3.6 7.59-1.35 2.45A1 1 0 008 16h9a1 1 0 001-1v-3.5l2-2V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
-                      />
-                    </svg>
-                    <span>{item.contactInfo.primaryPhone}</span>
-                  </div>
-                )}
-
-                {/* Email */}
-                {item.contactInfo?.email && (
-                  <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-blue-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M16 12H8m0 0l-4-4m4 4l4-4M8 12v8m0 0l-4-4m4 4l4-4"
-                      />
-                    </svg>
-                    <span>{item.contactInfo.email}</span>
-                  </div>
-                )}
-
-                {/* Website */}
-                {item.contactInfo?.website && (
-                  <a
-                    href={item.contactInfo.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-purple-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 4.354a8 8 0 100 15.292 8 8 0 000-15.292zM12 4v16"
-                      />
-                    </svg>
-                    <span>{item.contactInfo.website}</span>
-                  </a>
-                )}
-              </div>
-            </div>
-          )}
-
-          {/* BRANCHES */}
-          {item.branches?.length > 0 && (
-            <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-              <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                Branches
-              </h3>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {item.branches?.map((b) => (
-                  <div
-                    key={b.id}
-                    className="p-4 rounded-lg shadow hover:shadow-md transition-shadow bg-gray-50"
-                  >
-                    {/* Branch Name */}
-                    <h4 className="font-semibold text-gray-900 mb-2">
-                      {b.branchName}
-                    </h4>
-
-                    {/* Area */}
-                    {b.area && (
-                      <div className="flex items-center gap-2 text-gray-600 mb-1">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5 text-gray-400"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
-                          />
-                        </svg>
-                        <span>{b.area}</span>
-                      </div>
-                    )}
-
-                    {/* Phone */}
-                    {b.phone && (
-                      <div className="flex items-center gap-2 text-gray-600">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5 text-green-500"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M3 5h2l3.6 7.59-1.35 2.45A1 1 0 008 16h9a1 1 0 001-1v-3.5l2-2V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
-                          />
-                        </svg>
-                        <span>{b.phone}</span>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {item.serviceOptions?.length > 0 && (
-            <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-              <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                Services
-              </h3>
-
-              <div className="flex flex-wrap gap-3">
-                {item.serviceOptions.map((s) => (
-                  <span
-                    key={s.id}
-                    className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-200 cursor-pointer transition-colors"
-                  >
-                    {s.label}
+            {/* Timings Section */}
+            <div>
+              <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+                Timings
+              </h2>
+              <div className="inline-flex items-center space-x-4 bg-[#F5F3FF] text-[#a44294] px-4 py-2.5 rounded-full text-xs font-medium">
+                <div className="flex items-center space-x-1.5 neighbourtwoparagraph">
+                  <Clock size={15} />
+                  <span className="text-[#000] neighbourtwoparagraph">
+                    Monday - Sunday
                   </span>
-                ))}
+                </div>
+                <span className="text-gray-300">|</span>
+                <span className="font-bold neighbourtwoparagraph text-[#000]">
+                  10:00 AM - 9:30 PM
+                </span>
               </div>
             </div>
-          )}
+          </div>
 
-          {item.awards?.length > 0 && (
-            <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-              <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                Awards
-              </h3>
+          {/* ================= RIGHT COLUMN (Width: 5/12) ================= */}
+          <div className="lg:col-span-5 space-y-6">
+            {/* Location Block */}
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+              <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+                Location
+              </h2>
 
-              <div className="flex flex-wrap gap-3">
-                {item.awards.map((a) => (
-                  <div
-                    key={a.id}
-                    className="flex items-center gap-2 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium hover:bg-yellow-200 transition-colors cursor-pointer"
-                  >
-                    <span className="text-lg">🏆</span>
-                    <span>{a.title}</span>
+              {/* Simulated Map Container */}
+              <div className="relative w-full h-[240px] bg-[#E8ECEF] rounded-xl overflow-hidden border border-gray-200">
+                {/* Map Background Concept image */}
+
+                <iframe
+                  src={`https://www.google.com/maps?q=${item.location.latitude},${item.location.longitude}&z=15&output=embed`}
+                  width="100%" /* Card kulla correct-ah fit aaga 100% use pannunga */
+                  height="270" /* Unga UI design padi height-ah adjust panniruken */
+                  style={{
+                    border: "0",
+                    borderRadius: "8px",
+                  }} /* Responsive corners-kaga */
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* Getting There Block */}
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+              <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+                Getting There
+              </h2>
+
+              <div className="space-y-5">
+                {/* Route 1: Metro */}
+                <div className="flex items-start space-x-4 mb-1">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl mt-0.5">
+                    <Train size={18} />
                   </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* SOCIAL */}
-          {(item.socialMedia?.instagram || item.socialMedia?.facebook) && (
-            <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-              <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                Social Media
-              </h3>
-
-              <div className="flex gap-4 flex-wrap">
-                {/* Instagram */}
-                {item.socialMedia?.instagram && (
-                  <a
-                    href={item.socialMedia.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors font-medium text-sm"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.5.4.6.2 1 .5 1.4 1 .4.4.8.9 1 1.5.2.5.3 1.3.4 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.5-.2.6-.5 1-1 1.4-.4.4-.9.8-1.5 1-.5.2-1.3.3-2.5.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1-.5-1.4-1-.4-.4-.8-.9-1-1.5-.2-.5-.3-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.5.2-.6.5-1 1-1.4.4-.4.9-.8 1.5-1 .5-.2 1.3-.3 2.5-.4C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7 .1 5.7.2 4.8.3 4 .5 3.2.7 2.5 1 1.9 1.6.5 3 0 4.5 0 12s.5 9 1.9 10.4c.6.6 1.3.9 2.1 1.1.8.2 1.7.3 3 .4 1.3.1 1.7.1 5 .1s3.6 0 5-.1c1.3-.1 2.2-.2 3-.4.8-.2 1.5-.5 2.1-1.1C23.5 21 24 19.5 24 12s-.5-9-1.9-10.4c-.6-.6-1.3-.9-2.1-1.1-.8-.2-1.7-.3-3-.4C15.6 0 15.2 0 12 0z" />
-                      <path d="M12 5.8a6.2 6.2 0 1 0 6.2 6.2A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 4-4 4 4 0 0 1-4 4zM18.4 4.6a1.4 1.4 0 1 1-1.4-1.4 1.4 1.4 0 0 1 1.4 1.4z" />
-                    </svg>
-                    Instagram
-                  </a>
-                )}
-
-                {/* Facebook */}
-                {item.socialMedia?.facebook && (
-                  <a
-                    href={item.socialMedia.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.657-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.406 24 22.676V1.325C24 .593 23.407 0 22.675 0z" />
-                    </svg>
-                    Facebook
-                  </a>
-                )}
-              </div>
-            </div>
-          )}
-
-          {(item.companyInfo?.ownerName || item.companyInfo?.foundedYear) && (
-            <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white transition-all duration-300 mt-10">
-              <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                Company Info
-              </h3>
-
-              <div className="flex flex-col gap-3">
-                {/* Owner */}
-                {item.companyInfo?.ownerName && (
-                  <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition-colors">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-purple-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5.121 17.804A7.968 7.968 0 0112 15c2.21 0 4.21.896 5.879 2.345M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
-                    <span>Owner: {item.companyInfo.ownerName}</span>
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Metro
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      Static Data
+                    </p>
                   </div>
-                )}
+                </div>
 
-                {/* Founded Year */}
-                {item.companyInfo?.foundedYear && (
-                  <div className="flex items-center gap-2 bg-gray-50 p-3 rounded-lg hover:bg-gray-100 transition-colors">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-green-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 8v4l3 3M12 12a9 9 0 100-18 9 9 0 000 18z"
-                      />
-                    </svg>
-                    <span>Founded: {item.companyInfo.foundedYear}</span>
+                {/* Route 2: Bus Stop */}
+                <div className="flex items-start space-x-4 mb-1">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl mt-0.5">
+                    <Bus size={18} />
                   </div>
-                )}
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Bus Stop
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      {item.locations.city}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Route 3: Landmark */}
+                <div className="flex items-start space-x-4 mb-1">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl mt-0.5">
+                    <Milestone size={18} />
+                  </div>
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Landmark
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      Static Data
+                    </p>
+                  </div>
+                </div>
+
+                {/* Route 4: Parking */}
+                <div className="flex items-start space-x-4 mb-1">
+                  <div className="p-2.5 bg-[#F5F3FF] text-[#a44294] rounded-xl mt-0.5">
+                    <ParkingSquare size={18} />
+                  </div>
+                  <div>
+                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                      Parking
+                    </h4>
+                    <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+                      Static Data
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </div>
-      {relatedItems?.length > 0 && (
-        <div className="max-w-7xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm p-6 space-y-6 m-15">
-          {relatedItems.length > 0 && (
-            <div className=" mt-10">
-              <h3 className="text-4xl font-bold mb-8 uppercase text-center text-[#a24390] fontfamilyyy">
-                Explore More {subcategory}
-              </h3>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <section className="bg-white rounded-2xl border border-gray-100 p-6 mb-6 shadow-sm">
+          <div className="flex justify-between items-center mb-4">
+            <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+              Store Gallery This is Static Currently Using the Related Image
+              Gllaery
+            </h2>
+            <button className="flex items-center gap-1 text-[14px] font-semibold text-[#a44294] hover:text-purple-900 transition-colors">
+              View All Photos <ArrowRight size={16} />
+            </button>
+          </div>
 
-              {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {relatedItems.map((item) => (
-                  <div
-                    key={item.id}
-                    onClick={() =>
-                      navigate(
-                        `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
-                      )
-                    }
-                    className="cursor-pointer bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                  >
-                    <div className="relative">
-                      <img
-                        src={
-                          item?.heroImage?.url
-                            ? API_BASE_URL_API_TEST_DEV + item.heroImage.url
-                            : "https://www.superchennai.com/images/restaurants-banner.jpg"
-                        }
-                        onError={(e) => {
-                          e.target.onerror = null;
-                          e.target.src =
-                            "https://www.superchennai.com/images/restaurants-banner.jpg";
-                        }}
-                        className="w-full h-48 object-cover"
-                        alt={item.name}
-                      />
+          {/* Horizontal Scrollable Container */}
+          <div className="flex gap-4 pb-2 flex-wrap">
+            {relatedItems.map((img) => (
+              <div
+                key={img.id}
+                className="min-w-[200px] md:min-w-[200px] flex-1 snap-start group overflow-hidden rounded-xl cursor-pointer"
+              >
+                <img
+                  src={`${API_BASE_URL_API_TEST_DEV}${img.heroImage.thumbnailURL}`}
+                  alt={img.name}
+                  className="w-full h-40 object-cover rounded-xl border border-gray-100 transition-transform duration-300 ease-out group-hover:scale-110"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+      <div
+        className="max-w-7xl mx-auto px-4 sm:px-6"
+        style={{ paddingBottom: "50px" }}
+      >
+        <section className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+          <div className="flex justify-between items-center mb-4">
+            <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+              Explore More Shopping in T Nagar
+            </h2>
+            <button className="flex items-center gap-1 text-[14px] font-semibold text-[#a44294] hover:text-purple-900 transition-colors">
+              View All <ArrowRight size={16} />
+            </button>
+          </div>
 
-                      <span className="absolute top-3 right-3 bg-yellow-500 text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
-                        ⭐ {item.rating || "4.0"}
-                      </span>
+          {/* Horizontal Scrollable Container */}
+          <div className="flex gap-4 flex-wrap pb-2 neighhhcradsssssjddddd">
+            {console.log("relatedItemsnewwww", relatedItems)}
+            {relatedItems.map((store) => (
+              <a
+                className="cradsssssjddddd"
+                href={`/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${store.slug}`}
+              >
+                <div
+                  key={store.id}
+                  className=" flex-1 bg-white rounded-2xl border border-gray-200 overflow-hidden flex flex-col justify-between snap-start group cursor-pointer hover:shadow-md transition-shadow duration-200"
+                >
+                  {/* Store Image */}
+                  <div className="relative h-50 w-full overflow-hidden bg-gray-100">
+                    <img
+                      src={`${API_BASE_URL_API_TEST_DEV}${store.heroImage.thumbnailURL}`}
+                      alt={store.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+
+                  {/* Store Details */}
+                  <div className="p-4 flex flex-col flex-grow justify-between">
+                    <div>
+                      <h3 className="font-bold text-gray-900 text-base mb-1">
+                        {store.name}
+                      </h3>
+                      <p className="mb-2 text-[#000] neighbourtwoparagraph  ">
+                        {store.description.slice(0, 50)}....
+                      </p>
                     </div>
 
-                    <div className="p-4">
-                      <h3 className="titlenamecontent">{item.name}</h3>
-
-                      <p className="mt-2 text-sm text-gray-600 line-clamp-2">
-                        {item.description || "No description available"}
-                      </p>
-
-                      <div className="mt-3">
-                        <span className="readmorelink">Read More →</span>
+                    {/* Footer row with metrics and action button */}
+                    <div className="flex justify-between items-center mt-auto pt-2 border-t border-gray-50">
+                      <div className="flex items-center gap-2 text-xs font-medium text-gray-600">
+                        <span className="flex items-center gap-1 text-amber-500">
+                          <StarIcon />
+                          <span className="text-[#000] neighbourtwoparagraph">
+                            {store.googleData.totalGoogleReviews}
+                          </span>
+                        </span>
+                        <span className="flex items-center gap-1 text-amber-500">
+                          <MapPinIcon className="w-3 h-3" />
+                          <span className="text-[#000] neighbourtwoparagraph">
+                            {store.locations.city}
+                          </span>
+                        </span>
                       </div>
+
+                      <button className="p-2 bg-purple-100 text-purple-700 rounded-full group-hover:bg-[#a44294] group-hover:text-white transition-colors duration-200">
+                        <ArrowRight size={16} />
+                      </button>
                     </div>
                   </div>
-                ))}
-              </div> */}
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
 
-              <div className="relatedsliderdivmain">
-                <Slider {...settings}>
-                  {relatedItems.map((item) => (
-                    <a
-                      href={`/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`}
-                    >
-                      <div
-                        key={item.id}
-                        // onClick={() =>
-                        //   navigate(
-                        //     `/neighbourhood/${locationId}/${category}/${subcategory}/${item.slug}`,
-                        //   )
-                        // }
-                        className="cursor-pointer bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1 relatedcardssection"
-                      >
-                        {/* Image */}
-                        <div className="relative">
-                          <img
-                            src={
-                              item?.heroImage?.url
-                                ? API_BASE_URL_API_TEST_DEV + item.heroImage.url
-                                : "https://www.superchennai.com/images/restaurants-banner.jpg"
-                            }
-                            onError={(e) => {
-                              e.target.onerror = null;
-                              e.target.src =
-                                "https://www.superchennai.com/images/restaurants-banner.jpg";
-                            }}
-                            className="w-full h-48 object-cover"
-                            alt={item.name}
-                          />
-
-                          {/* Rating Badge */}
-                          <span className="absolute top-3 right-3 bg-[#892c7a] text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
-                            ⭐ {item.rating || "4.0"}
-                          </span>
-                        </div>
-
-                        {/* Content */}
-                        <div className="p-4 slidercontentttss">
-                          <h3 className="titlenamecontent">{item.name}</h3>
-
-                          <p className="mt-2 text-sm text-black line-clamp-2">
-                            {item?.description?.slice(0, 80) ||
-                              "No description available"}
-                            ...
-                          </p>
-
-                          {/* Read More */}
-                          <div className="mt-2">
-                            <a
-                              href={`/neighbourhood/${locationId}/${safeCategory}/${safeSubcategory}/${item.slug}`}
-                            >
-                              <span className="readmorelink">Read More →</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  ))}
-                </Slider>
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-    </>
+        <ProperitiesNeighbourhood />
+      </div>
+    </div>
   );
 }

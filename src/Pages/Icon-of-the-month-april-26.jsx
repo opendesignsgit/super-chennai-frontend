@@ -15,6 +15,8 @@ import Whychennaitab from "../Components/whychennaitab";
 import { Helmet } from "react-helmet-async";
 import EventFunction from "./EventFunction";
 import IconoftheMonthKamakotiSlider from "./IconoftheMonthKamakotiSlider";
+import { AnimatePresence, motion } from "framer-motion";
+
 
 export default function IconofthemonthAprilSowmiyaSwaminathan() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -264,6 +266,61 @@ export default function IconofthemonthAprilSowmiyaSwaminathan() {
     };
   }, [awardsData]);
 
+
+
+
+
+
+  
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalImage, setModalImage] = useState(null);
+
+    const openModal = (image) => {
+      setModalImage(image);
+      setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+      setIsModalOpen(false);
+      setModalImage(null);
+    };
+
+    const mockUpcomingEvents = [
+      { id: 1, image: "/images/DR. Soumya View 1.jpg" },
+      { id: 2, image: "/images/DR. soumya view 2.jpg" },
+      { id: 3, image: "/images/dr. soumya view 3.jpg" },
+      { id: 4, image: "/images/DR. Soumya View 4.jpg" },
+      { id: 5, image: "/images/Dr. Soumya View 5.jpg" },
+      { id: 6, image: "/images/Dr. Soumya View 7.jpg" },
+      { id: 7, image: "/images/Dr. Soumya View 8.jpg" },
+      { id: 8, image: "/images/dr.soumya view 6.jpg" },
+      { id: 9, image: "/images/Dr.soumya View 7.jpg" },
+  
+    ];
+
+// const [scrollDir, setScrollDir] = useState("left");
+// const lastScrollY = useRef(0);
+// const bgTextRef = useRef(null);
+const carouselRef = useRef();
+const [x, setX] = useState(0);
+const slide = (direction) => {
+  const cardWidth = 300;
+  const gap = 40;
+  const visibleWidth = window.innerWidth;
+  const totalCardsWidth = mockUpcomingEvents.length * (cardWidth + gap);
+  const maxX = -(totalCardsWidth - visibleWidth + gap);
+
+  setX((prevX) => {
+    if (direction === "left") {
+      return Math.min(prevX + (cardWidth + gap), 0);
+    } else if (direction === "right") {
+      return Math.max(prevX - (cardWidth + gap), maxX);
+    }
+    return prevX;
+  });
+};
+
+
   return (
     <>
       <Helmet>
@@ -335,7 +392,10 @@ export default function IconofthemonthAprilSowmiyaSwaminathan() {
             </h1>
             <div className="section-container container max-w-7xl mx-auto px-4">
               <div className="section-left-image">
-                <img src="/images/iconofthemonth-sowmya-img1big.jpeg" alt="Main Side Visual" />
+                <img
+                  src="/images/iconofthemonth-sowmya-img1big.jpeg"
+                  alt="Main Side Visual"
+                />
               </div>
 
               <div className="section-right-content">
@@ -415,6 +475,93 @@ export default function IconofthemonthAprilSowmiyaSwaminathan() {
             </div>
           </div>
         </section>
+
+        {/*============= GALLERY ================== */}
+        <div className="EventsCalendarMainSection mb-10">
+          <div
+            className={`EventsCalenderBackground ${
+              scrollDir === "right"
+                ? "Utilitiesscroll-right"
+                : "Utilitiesscroll-left"
+            }`}
+          >
+            <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+            <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+          </div>
+
+          {/* Title */}
+          <div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">
+            <h2>Media Highlights</h2>
+            <p>
+              A collection of stage highlights, speaker sessions, interactions,
+              and memento-giving moments from the Arattai.
+            </p>
+          </div>
+
+          <div className="overflow-hidden py-17 cardMobileSection">
+            <div className="relative">
+              <div className="absolute top-0 left-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
+              <div className="absolute top-0 right-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
+
+              <motion.div
+                ref={carouselRef}
+                className="flex gap-10 cursor-grab active:cursor-grabbing cardsMobileSection"
+                drag="x"
+                dragConstraints={{
+                  right: 0,
+                  left: -(mockUpcomingEvents.length * 340 - window.innerWidth),
+                }}
+                animate={{ x }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              >
+                {mockUpcomingEvents.map((card) => (
+                  <div
+                    key={card.id}
+                    className="EventsCalendarCardSection min-w-[300px] h-[350px] bg-white"
+                    onClick={() => openModal(card.image)}
+                  >
+                    <img
+                      src={card.image}
+                      alt="Gallery"
+                      className="w-full h-[350px] object-cover rounded-t-md"
+                    />
+                  </div>
+                ))}
+              </motion.div>
+              <div className="EventsCalenderButtons flex justify-center  ">
+                <button
+                  onClick={() => slide("left")}
+                  className="EventsCalenderLeftButton"
+                ></button>
+                <button
+                  onClick={() => slide("right")}
+                  className="EventsCalenderRightButton"
+                ></button>
+              </div>
+            </div>
+
+            {isModalOpen && (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 z-[9999]"
+                onClick={closeModal}
+              >
+                <img
+                  src={modalImage}
+                  alt="Full view"
+                  className="max-h-[90%] max-w-[90%] object-contain rounded-lg"
+                  onClick={(e) => e.stopPropagation()}
+                />
+                <button
+                  className="absolute top-5 right-5 text-white text-2xl font-bold"
+                  onClick={closeModal}
+                >
+                  ×
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+
         {/* <IconoftheMonthKamakotiSlider /> */}
         <InstagramReelsMarquee />
         <Becameavolunteer />

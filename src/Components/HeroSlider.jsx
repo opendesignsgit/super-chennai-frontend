@@ -126,13 +126,13 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-   {
-    image: "/images/homepage-banner-arratai-samitha.jpeg",
-    link: "arattai-with-dr-samhitha-moturi/director-of-prashanth-hospitals",
-    image1: "/images/arattai-inner-mouthri.jpeg",
-    title: "chennai's surfing",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  //  {
+  //   image: "/images/homepage-banner-arratai-samitha.jpeg",
+  //   link: "arattai-with-dr-samhitha-moturi/director-of-prashanth-hospitals",
+  //   image1: "/images/arattai-inner-mouthri.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   // {
   //   image: "/images/kombucha-homepage-banner.jpg",
@@ -142,13 +142,13 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    image: "/images/sowmiya-swamynathan-home.jpeg",
-    link: "/arattai-with-soumya-swaminathan/chief-scientist",
-    image1: "/images/innerpage-sowmya-banner-mobile-home.jpeg",
-    title: "chennai's surfing",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   image: "/images/sowmiya-swamynathan-home.jpeg",
+  //   link: "/arattai-with-soumya-swaminathan/chief-scientist",
+  //   image1: "/images/innerpage-sowmya-banner-mobile-home.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   // {
   //   image: "/images/homepage-desk-maja-quiz.jpeg",

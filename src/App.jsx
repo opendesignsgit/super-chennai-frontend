@@ -606,12 +606,12 @@ function App() {
 
       {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-      {isHomePage && showPopup && (
+      {/* {isHomePage && showPopup && (
         <ImagePopup
           imageUrl="/images/popup-summerfest.jpeg"
           onClose={() => setShowPopup(false)}
         />
-      )}
+      )} */}
 
       {/* )} */}
 
@@ -659,6 +659,19 @@ function App() {
             >
               <img src="/images/threads.png" alt="Twitter" />
             </a>
+            <a
+              className="threads-sc"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://whatsapp.com/channel/0029VbCOJEh7IUYLBQuIyE2O"
+            >
+              <img
+                src="/images/wp-channel.svg"
+                alt="wp"
+                className="w-10 h-10 object-contain"
+              />
+            </a>
+            
           </div>
         )}
 
@@ -1017,7 +1030,7 @@ function App() {
         {/* conclave */}
         <Route path="/admin-superchennai" element={<AdminView />} />
 
-        {/* <Route path="/neighbourhood" element={<ChennaiNeighbourhood />} /> */}
+        <Route path="/neighbourhood" element={<ChennaiNeighbourhood />} />
 
         <Route
           path="/neighbourhood/:locationId"
@@ -1618,7 +1631,12 @@ function App() {
 
         <Route
           path="/events-in-chennai/deva-live-concert-90s-tamil-hits-"
-          element={<Navigate to="/events-in-chennai/deva-live-concert-90s-tamil-hits" replace />}
+          element={
+            <Navigate
+              to="/events-in-chennai/deva-live-concert-90s-tamil-hits"
+              replace
+            />
+          }
         />
 
         <Route

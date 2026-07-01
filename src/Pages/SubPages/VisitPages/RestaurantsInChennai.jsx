@@ -19,6 +19,20 @@ const detailsections = [
     title: "Global & Continental Cuisine",
     points: [
       {
+        name: "The Lab",
+        date: "11/07/2026",
+        description:
+          "Lab X is a chemistry-themed café that opened in Royapettah, Chennai, on June 17, 2026.",
+        subDescription:
+          "Known for its experimental Italian and global comfort food, the café spans three floors with a premium gelato counter, a projector-equipped rooftop, and a vibrant late-night ambience.",
+        locations: [
+          {
+            label: "Royapettah",
+            link: "https://maps.app.goo.gl/QcsNTY7L3YNidgKo7",
+          },
+        ],
+      },
+      {
         name: "Pink Potato",
         date: "20/05/2026",
         description:
@@ -702,6 +716,34 @@ const detailsections = [
     id: 5,
     title: "Cafés & Casual Bites",
     points: [
+      {
+        name: "Suto Café",
+        date: "01/07/2026",
+        description:
+          "Suto Café is a newly opened pure-vegetarian café on Manickeswari Road in Kilpauk, Chennai, launched on June 8, 2026.",
+        subDescription:
+          "It offers a fully vegetarian and Jain-friendly menu in a modern setting, with extended service hours until 2:00 AM, making it a late-night dining spot in the area.",
+        locations: [
+          {
+            label: "Kilpauk",
+            link: "https://maps.app.goo.gl/aEJEARftCm4ySy876",
+          },
+        ],
+      },
+      {
+        name: "Café Whoop",
+        date: "01/07/2026",
+        description:
+          "Café Whoop is a stylish café located near the Shenoy Nagar West–Anna Nagar East border in Chennai.",
+        subDescription:
+          "Known for its cozy indoor and outdoor seating, relaxed atmosphere for work or meetups, and a pickleball court next door, it offers a comfortable space for both casual dining and social gatherings.",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/wztbhig3Jqf5cr1K9",
+          },
+        ],
+      },
       // NEW ADDED
 
       {
@@ -1597,6 +1639,35 @@ const detailsections = [
     title: "Beachside & Rooftop Dining",
     points: [
       {
+        name: "Samra Bar, Kitchen-Skydeck",
+        date: "01/07/2026",
+        description:
+          "Samra Bar, Kitchen-Skydeck launched on June 20, 2026, introducing a premium dining and nightlife experience in Anna Nagar, Chennai.",
+        subDescription:
+          "The venue features an elevated skydeck ambience and hosted exclusive soft-launch sessions before its official opening weekend, focusing on upscale dining and nightlife experiences.",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/Cqpyk62uEdLUKkAA6",
+          },
+        ],
+      },
+
+      {
+        name: "Darya Restaurant",
+        date: "01/07/2026",
+        description:
+          "Darya Restaurant opened on June 1, 2026, in Akkarai, Chennai, bringing a beachfront dining experience from the start of the month.",
+        subDescription:
+          "It offers a wide selection of Indian, seafood, and international dishes in a relaxed coastal setting, with table reservations available through EazyDiner.",
+        locations: [
+          {
+            label: "Akkarai",
+            link: "https://maps.app.goo.gl/FrPuENLZg1dkH1uU7",
+          },
+        ],
+      },
+      {
         name: "China XO",
         date: "22/03/2026",
         description:
@@ -1727,6 +1798,20 @@ const detailsections = [
     id: 1,
     title: "South Indian Classics",
     points: [
+      {
+        name: "Madurai & Chettinad Mess",
+        date: "01/07/2026",
+        description:
+          "The Thoraipakkam branch of Madurai & Chettinad Mess opened on June 25, 2026, serving authentic Madurai and Chettinad non-vegetarian cuisine.",
+        subDescription:
+          "It offers flavorful biryanis, traditional gravies, and a warm, family-friendly mess-style dining experience focused on regional South Indian flavors.",
+        locations: [
+          {
+            label: "Thoraipakkam",
+            link: "https://maps.app.goo.gl/anxmFvdnvoH7WTmi8",
+          },
+        ],
+      },
       {
         name: "Malaikottai Military Mess",
         date: "20/05/2026",
@@ -2005,6 +2090,34 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
+      {
+        name: "Al Moon Multicuisine Restaurant",
+        date: "01/07/2026",
+        description:
+          "Al Moon Multicuisine Restaurant opened in Pallavaram on June 4, 2026, introducing a mix of Indian, Chinese, and Arabian cuisines.",
+        subDescription:
+          "It featured a special Buy 1 Get 1 Free biryani offer during its first four days and focuses on family-friendly casual dining with a diverse menu.",
+        locations: [
+          {
+            label: "Pallavaram",
+            link: "https://maps.app.goo.gl/MDBaKYGs9kE1ML4L7",
+          },
+        ],
+      },
+      {
+        name: "Bhavyam Veg",
+        date: "01/07/2026",
+        description:
+          "Bhavyam Veg launched its Mount Road and Anna Nagar outlets on June 18, expanding its presence in Chennai as a pure vegetarian restaurant.",
+        subDescription:
+          "It serves a wide selection of South Indian, North Indian, and Oriental dishes, offering both dine-in and online ordering options.",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/tMcfkYtMZ2ygCmbx8",
+          },
+        ],
+      },
       {
         name: "Madras Military Kitchen",
         date: "20/05/2026",
@@ -2359,44 +2472,53 @@ export default function Restaurants() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // const isNewBatch = (dateStr) => {
+  //   if (!dateStr) return false;
 
-// const isNewBatch = (dateStr) => {
-//   if (!dateStr) return false;
+  //   const [day, month, year] = dateStr.split("/").map(Number);
+  //   const itemDate = new Date(year, month - 1, day);
 
-//   const [day, month, year] = dateStr.split("/").map(Number);
-//   const itemDate = new Date(year, month - 1, day);
+  //   const startDate = new Date(2026, 2, 30); // March 30
+  //   const endDate = new Date(2026, 3, 24);   // April 24
 
-//   const startDate = new Date(2026, 2, 30); // March 30
-//   const endDate = new Date(2026, 3, 24);   // April 24
+  //   return itemDate >= startDate && itemDate <= endDate;
+  // };
 
-//   return itemDate >= startDate && itemDate <= endDate;
-// };
+  // const isNewBatch = (dateStr) => {
+  //   if (!dateStr) return false;
 
+  //   const [day, month, year] = dateStr.split("/").map(Number);
+  //   const itemDate = new Date(year, month - 1, day);
 
-// const isNewBatch = (dateStr) => {
-//   if (!dateStr) return false;
+  //   const startDate = new Date(2026, 2, 30); // March 30, 2026
+  //   const endDate = new Date(2026, 4, 5);    // May 5, 2026
 
-//   const [day, month, year] = dateStr.split("/").map(Number);
-//   const itemDate = new Date(year, month - 1, day);
+  //   return itemDate >= startDate && itemDate <= endDate;
+  // };
 
-//   const startDate = new Date(2026, 2, 30); // March 30, 2026
-//   const endDate = new Date(2026, 4, 5);    // May 5, 2026
+  // const isNewBatch = (dateStr) => {
+  //   if (!dateStr) return false;
 
-//   return itemDate >= startDate && itemDate <= endDate;
-// };
+  //   const [day, month, year] = dateStr.split("/").map(Number);
+  //   const itemDate = new Date(year, month - 1, day);
 
+  //   const startDate = new Date(2026, 4, 20); // May 20, 2026
+  //   const endDate = new Date(2026, 4, 20); // May 20, 2026
 
-const isNewBatch = (dateStr) => {
-  if (!dateStr) return false;
+  //   return itemDate >= startDate && itemDate <= endDate;
+  // };
 
-  const [day, month, year] = dateStr.split("/").map(Number);
-  const itemDate = new Date(year, month - 1, day);
+  const isNewBatch = (dateStr) => {
+    if (!dateStr) return false;
 
-  const startDate = new Date(2026, 4, 20); // May 20, 2026
-  const endDate = new Date(2026, 4, 20);   // May 20, 2026
+    const [day, month, year] = dateStr.split("/").map(Number);
+    const itemDate = new Date(year, month - 1, day);
 
-  return itemDate >= startDate && itemDate <= endDate;
-};
+    const startDate = new Date(2026, 6, 1); // July 1, 2026
+    const endDate = new Date(2026, 6, 15); // July 15, 2026
+
+    return itemDate >= startDate && itemDate <= endDate;
+  };
 
   return (
     <>

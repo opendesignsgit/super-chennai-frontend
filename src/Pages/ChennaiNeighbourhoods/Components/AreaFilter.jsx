@@ -34,6 +34,12 @@ export default function AreaFilterCards({ data, onChange }) {
     };
   };
 
+  const stats = {
+  schools: loc?.schoolCount || "10+",
+  hospitals: loc?.hospitalCount || "5+",
+  metro: loc?.hasMetro ? "Available" : "Connecting",
+};
+
 
 
 

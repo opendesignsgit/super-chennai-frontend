@@ -9,7 +9,7 @@ const extractAds = (article) => {
   return blocks
     .filter((b) => b.type === "block" && b.fields?.blockType === "adBlock")
     .map((b) => ({
-      position: b.fields.position, // left | right | inline
+      position: b.fields.position, 
       ads: b.fields.ads || [],
     }));
 };

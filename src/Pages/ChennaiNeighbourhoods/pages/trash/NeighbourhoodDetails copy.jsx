@@ -64,7 +64,7 @@ export default function NeighbourhoodDetail() {
       />
     );
   }
-  console.log("locationcccccccccccccccccccccc", data?.[0]?.locations);
+  console.log("locationcccccccccccccccccccccc",data?.[0]?.locations)
 
   const grouped =
     data?.reduce((acc, item) => {
@@ -306,7 +306,7 @@ export default function NeighbourhoodDetail() {
 
       <div className="max-w-7xl mx-auto px-8 py-10">
         <div className="flex gap-10">
-          <div className="flex-1 h-[300px] rounded-xl overflow-hidden border border-gray-200 detailsecondneightbourhood">
+          <div className="flex-1 rounded-xl overflow-hidden border border-gray-200 detailsecondneightbourhood">
             <iframe
               title="Location Detail Map Side"
               width="100%"
@@ -378,53 +378,50 @@ export default function NeighbourhoodDetail() {
             </div>
           )} */}
 
-          {(location?.overviewDescription ||
-            location?.overviewPoints?.length > 0) && (
-            <div className="w-72 flex flex-col justify-center detailsecondneightbourhoodsecond">
-              <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
-                OVERVIEW
-              </h3>
+          <div className="w-72 flex flex-col justify-center detailsecondneightbourhoodsecond">
+            <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+              OVERVIEW
+            </h3>
 
-              <p className="text-[#000] leading-relaxed mb-4 neighbourtwoparagraph !text-[16px]">
-                {location?.overviewDescription ||
-                  "Discover everything this vibrant neighborhood has to offer, from its bustling streets to its peaceful residential zones."}
-              </p>
+            <p className="text-[#000] leading-relaxed mb-4 neighbourtwoparagraph !text-[16px]">
+              {location?.overviewDescription ||
+                "Discover everything this vibrant neighborhood has to offer, from its bustling streets to its peaceful residential zones."}
+            </p>
 
-              <ul className="space-y-2.5">
-                {location?.overviewPoints &&
-                location.overviewPoints.length > 0 ? (
-                  location.overviewPoints.map((item, i) => (
-                    <li
-                      key={item.id || i}
-                      className="flex items-start gap-2 text-[#000] !text-[15px]"
-                    >
-                      <span className="flex-shrink-0 mt-0.5 w-5 h-5 flex items-center justify-center">
-                        {item?.icon &&
-                        typeof item.icon === "object" &&
-                        item.icon.url ? (
-                          <img
-                            src={`${API_BASE_URL_API_TEST_DEV}${item.icon.url}`}
-                            alt={item.icon.alt || "icon"}
-                            className="w-full h-full object-contain"
-                          />
-                        ) : (
-                          <span className="text-[#000] neighbourtwoparagraph">
-                            🏙️
-                          </span>
-                        )}
-                      </span>
+            <ul className="space-y-2.5">
+              {location?.overviewPoints &&
+              location.overviewPoints.length > 0 ? (
+                location.overviewPoints.map((item, i) => (
+                  <li
+                    key={item.id || i}
+                    className="flex items-start gap-2 text-[#000] !text-[15px]"
+                  >
+                    <span className="flex-shrink-0 mt-0.5 w-5 h-5 flex items-center justify-center">
+                      {item?.icon &&
+                      typeof item.icon === "object" &&
+                      item.icon.url ? (
+                        <img
+                          src={`${API_BASE_URL_API_TEST_DEV}${item.icon.url}`}
+                          alt={item.icon.alt || "icon"}
+                          className="w-full h-full object-contain"
+                        />
+                      ) : (
+                        <span className="text-[#000] neighbourtwoparagraph">
+                          🏙️
+                        </span>
+                      )}
+                    </span>
 
-                      <span className="leading-tight">{item.point}</span>
-                    </li>
-                  ))
-                ) : (
-                  <li className="text-gray-400 text-sm italic">
-                    No overview highlights available.
+                    <span className="leading-tight">{item.point}</span>
                   </li>
-                )}
-              </ul>
-            </div>
-          )}
+                ))
+              ) : (
+                <li className="text-gray-400 text-sm italic">
+                  No overview highlights available.
+                </li>
+              )}
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -491,126 +488,122 @@ export default function NeighbourhoodDetail() {
             Everything you need, right around the corner.
           </p>
         </div>
-        <CategoriesSection locationId={locationId} data={data} location={location}/>
+        <CategoriesSection locationId={locationId} data={data} />
       </div>
 
-      {location?.quickAccess?.length > 0 && (
-        <div className="container max-w-7xl mx-auto px-4 py-10 pt-2">
-          <div className="flex gap-6 neeightshshshshshs pt-6">
-            {location?.quickAccess && location.quickAccess.length > 0 ? (
-              location.quickAccess.map((qa, i) => (
-                <div
-                  key={qa.id || i}
-                  className="flex items-center gap-3 flex-1 borderrrrrrighttt"
-                >
-                  <span className="text-2xl w-8 h-8 flex items-center justify-center flex-shrink-0">
-                    {qa?.icon && typeof qa.icon === "object" && qa.icon.url ? (
-                      <img
-                        src={`${API_BASE_URL_API_TEST_DEV}${qa.icon.url}`}
-                        alt={qa.icon.alt || qa.label}
-                        className="w-full h-full object-contain"
-                      />
-                    ) : (
-                      <span>{qa.fallbackEmoji || "📍"}</span>
-                    )}
-                  </span>
-                  <div>
-                    <div className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
-                      {qa.label}
-                    </div>
-                    <div className="!text-sm !font-semibold text-gray-400 mb-1 neighbourtwoparagraph ">
-                      {qa.name}
-                    </div>
-                    <div className="text-xs text-gray-500 !font-semibold ">
-                      {qa.detail}
-                    </div>
+      <div className="container max-w-7xl mx-auto px-4 py-10 pt-2">
+        <div className="flex gap-6 neeightshshshshshs pt-6">
+          {location?.quickAccess && location.quickAccess.length > 0 ? (
+            location.quickAccess.map((qa, i) => (
+              <div
+                key={qa.id || i}
+                className="flex items-center gap-3 flex-1 borderrrrrrighttt"
+              >
+                <span className="text-2xl w-8 h-8 flex items-center justify-center flex-shrink-0">
+                  {qa?.icon && typeof qa.icon === "object" && qa.icon.url ? (
+                    <img
+                      src={`${API_BASE_URL_API_TEST_DEV}${qa.icon.url}`}
+                      alt={qa.icon.alt || qa.label}
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    <span>{qa.fallbackEmoji || "📍"}</span>
+                  )}
+                </span>
+                <div>
+                  <div className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
+                    {qa.label}
+                  </div>
+                  <div className="!text-sm !font-semibold text-gray-400 mb-1 neighbourtwoparagraph ">
+                    {qa.name}
+                  </div>
+                  <div className="text-xs text-gray-500 !font-semibold ">
+                    {qa.detail}
                   </div>
                 </div>
-              ))
-            ) : (
-              <div className="text-gray-400 text-sm italic py-4">
-                No quick access elements defined.
               </div>
-            )}
-          </div>
+            ))
+          ) : (
+            <div className="text-gray-400 text-sm italic py-4">
+              No quick access elements defined.
+            </div>
+          )}
         </div>
-      )}
+      </div>
 
       {/* 2. DYNAMIC WHY CHOOSE & LIFESTYLE SCORES */}
-      {(location?.whyChoose?.length > 0 ||
-        location?.lifestyleScores?.length > 0) && (
-        <div className="container max-w-7xl mx-auto px-8 pb-10">
-          <div className="flex gap-8 items-start">
-            <div className="sneighflex113">
-              <div className="flex-1 neighflex111">
-                <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
-                  WHY CHOOSE {location?.label} ?
-                </h3>
-                <ul className="space-y-3">
-                  {location?.whyChoose && location.whyChoose.length > 0 ? (
-                    location.whyChoose.map((item, i) => (
-                      <li
-                        key={item.id || i}
-                        className="flex items-start gap-2 text-[#000] !text-[15px] "
-                      >
-                        <span className="text-purple-600 mt-0.5">✅</span>
-                        {item.reason}
-                      </li>
-                    ))
-                  ) : (
-                    <li className="text-gray-400 text-sm italic">
-                      Highlights coming soon.
+      <div className="container max-w-7xl mx-auto px-8 pb-10">
+        <div className="flex gap-8 items-start">
+          <div className="sneighflex113">
+            <div className="flex-1 neighflex111">
+              <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+                WHY CHOOSE {location?.label} ?
+              </h3>
+              <ul className="space-y-3">
+                {location?.whyChoose && location.whyChoose.length > 0 ? (
+                  location.whyChoose.map((item, i) => (
+                    <li
+                      key={item.id || i}
+                      className="flex items-start gap-2 text-[#000] !text-[15px] "
+                    >
+                      <span className="text-purple-600 mt-0.5">✅</span>
+                      {item.reason}
                     </li>
-                  )}
-                </ul>
-              </div>
-              <div className="neighflex112">
-                <img
-                  src={
-                    location?.image?.url
-                      ? `${API_BASE_URL_API_TEST_DEV}${location.image.url}`
-                      : "/images/no-image.png"
-                  }
-                  alt={
-                    location?.image?.alt || location?.label || "Location image"
-                  }
-                />
-              </div>
-            </div>
-
-            <div className="flex-1 neighflex113">
-              <div className="flex items-center justify-between mb-1">
-                <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
-                  LIFESTYLE SCORE
-                </h3>
-                {/* <button className="text-[#a44294] font-medium hover:underline">
-                View Details
-              </button> */}
-              </div>
-              <p className="mb-4  text-[#000]  neighbourtwoparagraph">
-                Rated based on neighborhood core living convenience factors
-              </p>
-              <div className="grid grid-cols-3 gap-x-6 gap-y-4">
-                {location?.lifestyleScores &&
-                location.lifestyleScores.length > 0 ? (
-                  location.lifestyleScores.map((ls, i) => (
-                    <div className="sectionsssss" key={ls.id || i}>
-                      <div className="flex items-center gap-1.5 mb-0.5">
-                        <span className="text-sm text-[#000]">{ls.label}</span>
-                      </div>
-                      <StarRating score={Number(ls.score) || 0} />
-                    </div>
                   ))
                 ) : (
-                  <div className="text-gray-400 text-sm italic col-span-3">
-                    No scores compiled yet.
-                  </div>
+                  <li className="text-gray-400 text-sm italic">
+                    Highlights coming soon.
+                  </li>
                 )}
-              </div>
+              </ul>
+            </div>
+            <div className="neighflex112">
+              <img
+                src={
+                  location?.image?.url
+                    ? `${API_BASE_URL_API_TEST_DEV}${location.image.url}`
+                    : "/images/no-image.png"
+                }
+                alt={
+                  location?.image?.alt || location?.label || "Location image"
+                }
+              />
+            </div>
+          </div>
+
+          <div className="flex-1 neighflex113">
+            <div className="flex items-center justify-between mb-1">
+              <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+                LIFESTYLE SCORE
+              </h3>
+              {/* <button className="text-[#a44294] font-medium hover:underline">
+                View Details
+              </button> */}
+            </div>
+            <p className="mb-4  text-[#000]  neighbourtwoparagraph">
+              Rated based on neighborhood core living convenience factors
+            </p>
+            <div className="grid grid-cols-3 gap-x-6 gap-y-4">
+              {location?.lifestyleScores &&
+              location.lifestyleScores.length > 0 ? (
+                location.lifestyleScores.map((ls, i) => (
+                  <div className="sectionsssss" key={ls.id || i}>
+                    <div className="flex items-center gap-1.5 mb-0.5">
+                      <span className="text-sm text-[#000]">{ls.label}</span>
+                    </div>
+                    <StarRating score={Number(ls.score) || 0} />
+                  </div>
+                ))
+              ) : (
+                <div className="text-gray-400 text-sm italic col-span-3">
+                  No scores compiled yet.
+                </div>
+              )}
             </div>
           </div>
         </div>
-      )}
+      </div>
+
       <ProperitiesNeighbourhood />
     </div>
   );

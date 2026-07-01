@@ -1,13 +1,42 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
+import { useAllNeighbourhood } from "../hooks/useAllNeighbourhood";
 
 const FALLBACK = "/images/locationdefult.png";
 
-export default function AreaFilter({ data, onChange }) {
+export default function AreaFilterCards({ data, onChange }) {
   const navigate = useNavigate();
 
-  console.log("data=locations", data);
+  const { data: neighbourhoodData, loading } = useAllNeighbourhood();
+
+  const getDynamicCounts = (localityName) => {
+    if (!neighbourhoodData || !Array.isArray(neighbourhoodData)) {
+      return { schools: "0+", hospitals: "0+", metro: "Not Available" };
+    }
+
+    const targetNeighbour = neighbourhoodData.find(
+      (n) =>
+        n?.locality?.toLowerCase() === localityName?.toLowerCase() ||
+        n?.value?.toLowerCase() === localityName?.toLowerCase(),
+    );
+
+    return {
+      schools:
+        targetNeighbour?.schoolCount ||
+        targetNeighbour?.schools?.length ||
+        "10+",
+      hospitals:
+        targetNeighbour?.hospitalCount ||
+        targetNeighbour?.hospitals?.length ||
+        "5+",
+      metro: targetNeighbour?.hasMetro ? "Available" : "Connecting",
+    };
+  };
+
+
+
+
   return (
     <div className="mb-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 neighbiurnewcards">
@@ -15,6 +44,8 @@ export default function AreaFilter({ data, onChange }) {
           const imageUrl = loc?.image?.url
             ? `${API_BASE_URL_API_TEST_DEV}${loc.image.url}`
             : FALLBACK;
+
+          const stats = getDynamicCounts(loc.locality);
 
           return (
             <>
@@ -26,7 +57,7 @@ export default function AreaFilter({ data, onChange }) {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
-                  {/* {n.badge && ( */}
+
                   <span
                     className={`absolute top-2 left-2 text-white !text-[10px] neighbourtwoparagraph font-bold px-2 py-0.5 rounded
                        red
@@ -64,39 +95,39 @@ export default function AreaFilter({ data, onChange }) {
 
                   <div className="flex items-center gap-3 mb-3 text-xs text-gray-500 flex-wrap">
                     <span className="flex items-center gap-1">
-                      🏫{" "}
+                      <span>🏫</span>
                       <div>
                         Schools
                         <strong className="text-[#000]">
                           <br />
-                          {/* {n.schools} */}
-                          Static +
+                          {stats.schools}
                         </strong>
                       </div>
                     </span>
+
                     <span className="flex items-center gap-1">
-                      🏥{" "}
+                      <span>🏥</span>
                       <div>
                         Hospitals
                         <strong className="text-[#000]">
                           <br />
-                          {/* {n.hospitals} */}
-                          Static +
+                          {stats.hospitals}
                         </strong>
                       </div>
                     </span>
+
                     <span className="flex items-center gap-1">
-                      🚇{" "}
+                      <span>🚇</span>
                       <div>
                         Metro
                         <strong className="text-[#000]">
                           <br />
-                          {/* {n.metro} */}
-                          Static +
+                          {stats.metro}
                         </strong>
                       </div>
                     </span>
                   </div>
+
                   <div className="flex justify-center mt-3 border-t border-[#d1d5dc] py-3">
                     <a
                       href={`/neighbourhood/${encodeURIComponent(loc.locality)}`}

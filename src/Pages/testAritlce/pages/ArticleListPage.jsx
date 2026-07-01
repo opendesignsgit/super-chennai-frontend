@@ -191,7 +191,7 @@ const convertToEmbedUrl = (url) => {
 
 export default function ArticleListPage() {
   const { ads: articleAds, loading: adsLoading } = useArticlePageAds();
-  console.log("ads data", articleAds);
+  // console.log("ads data", articleAds);
 
   // const structuredArticleAds = articleAds?.reduce((acc, ad) => {
   //   const pos = ad.position || "right";
@@ -252,7 +252,7 @@ export default function ArticleListPage() {
   const [page, setPage] = useState(1);
   const { articles = [], loading, ads: embeddedAds } = useArticles();
 
-  console.log("article data", articles);
+  // console.log("article data", articles);
 
   const featuredEventArticle = articles.find((a) => a.isFeatured === true);
 

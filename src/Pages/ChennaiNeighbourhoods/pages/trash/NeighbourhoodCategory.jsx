@@ -7,8 +7,7 @@ import { useNeighbourhood } from "../hooks/useNeighbourhood";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 import ProperitiesNeighbourhood from "../Components/Properties";
 
-
-//########################## DUMMY DATA #######################
+// dummy Data
 
 const categories = [
   "All",
@@ -139,7 +138,6 @@ function ShieldIcon() {
   );
 }
 
-
 export default function NeighbourhoodCategory() {
   const { locations } = useLocations();
   const [activeCategory, setActiveCategory] = useState(null);
@@ -154,6 +152,9 @@ export default function NeighbourhoodCategory() {
   const slugify = (text) => text?.toLowerCase().replace(/\s+/g, "-");
 
   const normalize = (text) => text?.toLowerCase().trim().replace(/\s+/g, "-");
+
+  console.log("DatabaseBackup", data);
+
   const filtered =
     data?.filter((item) => {
       const matchCategory =
@@ -172,8 +173,7 @@ export default function NeighbourhoodCategory() {
     loc.locality?.toUpperCase().startsWith(firstLetter),
   );
 
-  console.log("filtered-oor", JSON.stringify(filtered, null, 2));
-
+  console.log("filtered-oor ", filtered);
   const subCategoriesByCategory = {};
   data?.forEach((item) => {
     const cat = item?.category?.title || "Others";
@@ -211,6 +211,10 @@ export default function NeighbourhoodCategory() {
 
   const [activeIndex, setActiveIndex] = useState(null);
 
+  // const toggleAccordion = (index) => {
+  //   setActiveIndex(activeIndex === index ? null : index);
+  // };
+
   if (loading) return <NeighbourhoodListSkeleton />;
 
   const safeCategory = category?.toLowerCase();
@@ -244,22 +248,11 @@ export default function NeighbourhoodCategory() {
     }
   });
 
-  // GET LOCATION INFORMATION AMENITES
-  const location = data?.[0]?.locations;
-  if (!location) {
-    return (
-      <EmptyState
-        title="Invalid Location"
-        message="We couldn't find details for this location."
-        onReset={() => navigate("/neighbourhood")}
-      />
-    );
-  }
-
   return (
     <div id="poppinsssFamily">
       <section className="relative min-h-[600px] bg-gray-900 overflow-hidden flex flex-col justify-center">
         <div className="absolute inset-0 w-full h-full pointer-events-none">
+          {console.log("filterednewww", location)}
           <img
             alt="Category Background"
             className="w-full h-full object-cover object-center opacity-30"
@@ -310,8 +303,6 @@ export default function NeighbourhoodCategory() {
               locations={locations}
               locationId={locationId}
             />
-            {/* STATIC DATA  */}
-
             <div className="flex flex-wrap gap-4 mb-6 mt-10">
               {[
                 {
@@ -356,46 +347,6 @@ export default function NeighbourhoodCategory() {
                   </div>
                 </div>
               ))}
-            </div>
-            {/* DYNAMIC DATA  */}
-            <div className="flex flex-wrap gap-4 mb-6 mt-10">
-              {filtered[0]?.neighborhoodStats &&
-              filtered[0].neighborhoodStats.length > 0 ? (
-                filtered[0].neighborhoodStats.map((s, i) => (
-                  <div
-                    key={s.label || i}
-                    className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl px-4 py-2.5 border border-white/5 neighbourtwoparagraph"
-                  >
-                    <span className="neighhsecondicon flex-shrink-0 w-6 h-6 flex items-center justify-center">
-                      {s?.icon && typeof s.icon === "object" && s.icon.url ? (
-                        <img
-                          src={`${API_BASE_URL_API_TEST_DEV}${s.icon.url}`}
-                          alt={s.icon.alt || s.label}
-                          className="w-full h-full object-contain"
-                        />
-                      ) : (
-                        <img
-                          src="/images/neighbourhood-2.0/icons/icon-1-shopping.svg"
-                          alt={s.label}
-                          className="w-full h-full object-contain"
-                        />
-                      )}
-                    </span>
-                    <div>
-                      <div className="text-white text-base font-bold leading-tight neighbourtwoparagraph">
-                        {s.value}
-                      </div>
-                      <div className="text-gray-300 text-xs mt-0.5 neighbourtwoparagraph">
-                        {s.label}
-                      </div>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <div className="text-white/40 text-xs italic">
-                  No statistics defined for this area.
-                </div>
-              )}
             </div>
           </div>
         </div>
@@ -614,7 +565,6 @@ export default function NeighbourhoodCategory() {
             ))}
           </div>
         </section>
-
         <section className="mt-15">
           <div className="flex bg-[#f5f5f5] rounded-xl">
             <div className="w-[30%]" style={{ padding: "35px 40px" }}>
@@ -645,7 +595,7 @@ export default function NeighbourhoodCategory() {
           </div>
         </section>
 
-        {/* <section>
+        <section>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               {
@@ -694,91 +644,7 @@ export default function NeighbourhoodCategory() {
               </div>
             ))}
           </div>
-        </section> */}
-
-        {/* <section>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {filtered[0]?.quickAccessHighlights &&
-            filtered[0].quickAccessHighlights.length > 0 ? (
-              filtered[0].quickAccessHighlights.map((item, i) => (
-                <div
-                  key={item.title || i}
-                  className="flex items-start gap-4 p-5 bg-[#f5f5f5] rounded-xl"
-                >
-                  <div className="text-[#a44294] flex-shrink-0 mt-0.5 w-6 h-6 flex items-center justify-center">
-                    {item?.icon &&
-                    typeof item.icon === "object" &&
-                    item.icon.url ? (
-                      <img
-                        src={`${API_BASE_URL_API_TEST_DEV}${item.icon.url}`}
-                        alt={item.icon.alt || item.title}
-                        className="w-full h-full object-contain"
-                      />
-                    ) : (
-                      // Inline fallback icon standard text if media record is absent
-                      <span>📍</span>
-                    )}
-                  </div>
-                  <div>
-                    <h4 className="!font-semibold text-[#000] neighbourtwoparagraph mb-1 ">
-                      {item.title}
-                    </h4>
-                    <p className="text-xs text-gray-500 neighbourtwoparagraph ">
-                      {item.desc}
-                    </p>
-                    {item.sub && (
-                      <p className="text-xs text-gray-500 neighbourtwoparagraph ">
-                        {item.sub}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              ))
-            ) : (
-              <div className="text-gray-400 text-sm italic col-span-4 py-4 text-center">
-                No quick access highlights added yet.
-              </div>
-            )}
-          </div>
-        </section> */}
-        
-        {location?.quickAccess?.length > 0 && (
-          <div className="container max-w-7xl mx-auto px-4 py-10 pt-2">
-            <div className="flex gap-6 neeightshshshshshs pt-6">
-              {location.quickAccess.map((qa, i) => (
-                <div
-                  key={qa.id || i}
-                  className="flex items-center gap-3 flex-1 borderrrrrrighttt"
-                >
-                  <span className="text-2xl w-8 h-8 flex items-center justify-center flex-shrink-0">
-                    {qa?.icon && typeof qa.icon === "object" && qa.icon.url ? (
-                      <img
-                        src={`${API_BASE_URL_API_TEST_DEV}${qa.icon.url}`}
-                        alt={qa.icon.alt || qa.label}
-                        className="w-full h-full object-contain"
-                      />
-                    ) : (
-                      <span>{qa.fallbackEmoji || "📍"}</span>
-                    )}
-                  </span>
-
-                  <div>
-                    <div className="!font-semibold text-[#000] neighbourtwoparagraph mb-1">
-                      {qa.label}
-                    </div>
-                    <div className="!text-sm !font-semibold text-gray-400 mb-1 neighbourtwoparagraph">
-                      {qa.name}
-                    </div>
-                    <div className="text-xs text-gray-500 !font-semibold">
-                      {qa.detail}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
+        </section>
         <ProperitiesNeighbourhood />
       </div>
     </div>

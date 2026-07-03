@@ -370,6 +370,91 @@ export const two = [
 
 
 export const newsArticle = [
+
+    {
+    id: -98984343643263,
+    Company: "chennaipatrika |  June 28, 2026",
+    EventsCalendarTitle:
+      "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+    image: "/images/chennaipatrika.jpg",
+    link: "https://chennaiglitz.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
+  },
+  {
+    id: -9898434643263,
+    Company: "Chennaiupdates | June 28, 2026",
+    EventsCalendarTitle:
+      "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+    image: "/images/chennaiupdates.jpg",
+    link: "https://chennaiglitz.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
+  },
+  {
+    id: -989843464363,
+    Company: "Chennaiupdates | June 28, 2026",
+    EventsCalendarTitle:
+      "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+    image: "/images/chennaiupdates.jpg",
+    link: "https://chennaiglitz.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
+  },
+
+  {
+    id: -9898663,
+    Company: "expressnews.asia | June 30, 2026",
+    EventsCalendarTitle:
+      "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+    image: "/images/expressnews.asia.jpg",
+    link: "https://expressnews.asia/2026/06/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
+  },
+
+  {
+    id: -333323223433230,
+    Company: "pulseofindia | June 29, 2026",
+    EventsCalendarTitle:
+      "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+    image: "/images/pulseofindia.asia.jpg",
+    link: "https://timesofindia.indiatimes.com/city/chennai/huge-potential-to-use-ai-effectively-in-public-healthcare-need-to-create-digital-database-of-patients-soumya-swaminathan/articleshow/132057373.cms",
+  },
+
+  {
+    id: -333323223230,
+    Company: "B4U media | June 29, 2026",
+    EventsCalendarTitle:
+      "“Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+    image: "/images/chennaipatrika.jpg",
+    link: "https://timesofindia.indiatimes.com/city/chennai/huge-potential-to-use-ai-effectively-in-public-healthcare-need-to-create-digital-database-of-patients-soumya-swaminathan/articleshow/132057373.cms",
+  },
+
+  {
+    id: -33332322323,
+    Company: "Chennai Views | une 29, 2026",
+    EventsCalendarTitle:
+      "Nutrition is the Best Vaccine Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+    image: "/images/chennaiviews.com.jpg",
+    link: "https://timesofindia.indiatimes.com/city/chennai/huge-potential-to-use-ai-effectively-in-public-healthcare-need-to-create-digital-database-of-patients-soumya-swaminathan/articleshow/132057373.cms",
+  },
+  {
+    id: -333323223,
+    Company: "The Times of India | June 28, 2026",
+    EventsCalendarTitle:
+      "Huge potential to use AI effectively in public healthcare; need to create digital database of patients: Soumya Swaminathan",
+    image: "/images/thehindubusinessline.jpg",
+    link: "https://timesofindia.indiatimes.com/city/chennai/huge-potential-to-use-ai-effectively-in-public-healthcare-need-to-create-digital-database-of-patients-soumya-swaminathan/articleshow/132057373.cms",
+  },
+  {
+    id: -3333223,
+    Company: "The Times of India | June 28, 2026",
+    EventsCalendarTitle:
+      "Huge potential to use AI effectively in public healthcare; need to create digital database of patients: Soumya Swaminathan",
+    image: "/images/thehindubusinessline.jpg",
+    link: "https://timesofindia.indiatimes.com/city/chennai/huge-potential-to-use-ai-effectively-in-public-healthcare-need-to-create-digital-database-of-patients-soumya-swaminathan/articleshow/132057373.cms",
+  },
+  {
+    id: -3333223,
+    Company: "The Hindu BusinessLine | June 28, 2026",
+    EventsCalendarTitle: "Nutrition the best vaccine: Soumya Swaminathan",
+    image: "/images/thehindubusinessline.jpg",
+    link: "https://www.thehindubusinessline.com/news/science/nutrition-the-best-vaccine-soumya-swaminathan/article71158352.ece#google_vignette",
+  },
+
   {
     id: -7221221328,
     Company: "The Hindu BusinessLine | 31 Mar 2026",
@@ -1034,7 +1119,25 @@ export const NammaStoreiesnewsArticle = [
 ];
 
 export const newsPhotos = [
-  
+
+    {
+    id: -11,
+    Company: "March 30, 2026",
+    EventsCalendarTitle:
+      "వ్యాక్సిన్లాగే ఏవియన్ పరీక్షించాలి  ",
+    image: "/images/sowmiya-k-news.jpeg",
+    image1: "/images/sowmiya-k-news.jpeg",
+  },
+
+  {
+    id: -11,
+    Company: "March 30, 2026",
+    EventsCalendarTitle:
+      "  டாக்டர் செண்பா சுவாமிநாதனுக்கு  குப்பர் சென்னா' ஜகன் ஆப் தி மந்த் விருது  | Malai-tamilagam ",
+    image: "/images/malai-tamilagam-1.jpeg",
+    image1: "/images/malai-tamilagam.jpeg",
+  },
+
   {
     id: -11,
     Company: "March 30, 2026",
@@ -1046,16 +1149,14 @@ export const newsPhotos = [
   {
     id: -12,
     Company: "March 30, 2026",
-    EventsCalendarTitle:
-      "சென்னை ஐஐடி இயக்குநருக்கு சிறந்த ஆளுமை விருது",
+    EventsCalendarTitle: "சென்னை ஐஐடி இயக்குநருக்கு சிறந்த ஆளுமை விருது",
     image: "/images/NewsLetter/news-kamakoti-img4.jpeg",
     image1: "/images/NewsLetter/news-kamakoti-img4.jpeg",
   },
   {
     id: -3,
     Company: "March 31, 2026",
-    EventsCalendarTitle:
-      "Kamakoti: We must grow our own technology ",
+    EventsCalendarTitle: "Kamakoti: We must grow our own technology ",
     image: "/images/NewsLetter/news-5.jpeg",
     image1: "/images/NewsLetter/news-5.jpeg",
   },

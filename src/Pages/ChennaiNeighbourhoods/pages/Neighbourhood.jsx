@@ -158,7 +158,7 @@ export default function ChennaiNeighbourhood() {
         >
           <div className="absolute inset-0 w-full h-full opacity-30 pointer-events-none">
             <img
-              src="/images/restaurants-banner.jpg"
+              src="/images/neighbourhood-main-image.jpeg"
               alt="Chennai Background"
               className="w-full h-full object-cover object-center"
             />

@@ -373,32 +373,45 @@ export const newsArticle = [
 
     {
     id: -98984343643263,
-    Company: "chennaipatrika |  June 28, 2026",
+    Company: "chennaipatrika |  June 29, 2026",
+    EventsCalendarTitle:
+      "Nutrition is the Best Vaccine Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+    image: "/images/chennaipatrika.jpg",
+    link: "https://chennaipatrika.com/post/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr.-soumya-swaminathan",
+  },
+
+    {
+    id: -98984343643263,
+    Company: "HitechnewsTv |  June 28, 2026",
     EventsCalendarTitle:
       "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
     image: "/images/chennaipatrika.jpg",
-    link: "https://chennaiglitz.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
+    link: "https://hitechnewstv.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
   },
-  {
-    id: -9898434643263,
-    Company: "Chennaiupdates | June 28, 2026",
-    EventsCalendarTitle:
-      "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
-    image: "/images/chennaiupdates.jpg",
-    link: "https://chennaiglitz.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
-  },
+
   {
     id: -989843464363,
     Company: "Chennaiupdates | June 28, 2026",
     EventsCalendarTitle:
       "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
     image: "/images/chennaiupdates.jpg",
+    link: "http://chennaiupdates.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
+  },
+
+
+    {
+    id: -9898663,
+    Company: "Chennaiglitz | June 28, 2026",
+    EventsCalendarTitle:
+      "“Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+    image: "/images/expressnews.asia.jpg",
     link: "https://chennaiglitz.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
   },
 
+
   {
     id: -9898663,
-    Company: "expressnews.asia | June 30, 2026",
+    Company: "expressnews.asia | June 29, 2026",
     EventsCalendarTitle:
       "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
     image: "/images/expressnews.asia.jpg",
@@ -411,16 +424,16 @@ export const newsArticle = [
     EventsCalendarTitle:
       "Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
     image: "/images/pulseofindia.asia.jpg",
-    link: "https://timesofindia.indiatimes.com/city/chennai/huge-potential-to-use-ai-effectively-in-public-healthcare-need-to-create-digital-database-of-patients-soumya-swaminathan/articleshow/132057373.cms",
+    link: "https://pulseofindia.asia/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
   },
 
   {
     id: -333323223230,
     Company: "B4U media | June 29, 2026",
     EventsCalendarTitle:
-      "“Nutrition is the Best Vaccine” Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
+      "“Nutrition is the Best Vaccine” Super Chennai Honours",
     image: "/images/chennaipatrika.jpg",
-    link: "https://timesofindia.indiatimes.com/city/chennai/huge-potential-to-use-ai-effectively-in-public-healthcare-need-to-create-digital-database-of-patients-soumya-swaminathan/articleshow/132057373.cms",
+    link: "https://www.b4umedia.in/nutrition-is-the-best-vaccine-super-chennai-honours/",
   },
 
   {
@@ -429,16 +442,9 @@ export const newsArticle = [
     EventsCalendarTitle:
       "Nutrition is the Best Vaccine Super Chennai Honours Icon of the Month Dr. Soumya Swaminathan",
     image: "/images/chennaiviews.com.jpg",
-    link: "https://timesofindia.indiatimes.com/city/chennai/huge-potential-to-use-ai-effectively-in-public-healthcare-need-to-create-digital-database-of-patients-soumya-swaminathan/articleshow/132057373.cms",
+    link: "https://chennaiviews.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
   },
-  {
-    id: -333323223,
-    Company: "The Times of India | June 28, 2026",
-    EventsCalendarTitle:
-      "Huge potential to use AI effectively in public healthcare; need to create digital database of patients: Soumya Swaminathan",
-    image: "/images/thehindubusinessline.jpg",
-    link: "https://timesofindia.indiatimes.com/city/chennai/huge-potential-to-use-ai-effectively-in-public-healthcare-need-to-create-digital-database-of-patients-soumya-swaminathan/articleshow/132057373.cms",
-  },
+
   {
     id: -3333223,
     Company: "The Times of India | June 28, 2026",
@@ -455,6 +461,9 @@ export const newsArticle = [
     link: "https://www.thehindubusinessline.com/news/science/nutrition-the-best-vaccine-soumya-swaminathan/article71158352.ece#google_vignette",
   },
 
+
+
+// OLD ###############
   {
     id: -7221221328,
     Company: "The Hindu BusinessLine | 31 Mar 2026",
@@ -1120,8 +1129,20 @@ export const NammaStoreiesnewsArticle = [
 
 export const newsPhotos = [
 
+
+      {
+    id: -121,
+    Company: "March 29, 2026",
+    EventsCalendarTitle:
+      "ശത്രുതിനു നക്കിയ സംഭവങ്ങൾ ഉന്നിച്ച് എം.എസ്. സ്വാമിനാഥൻ റിസർച്ച് ഫൗണ്ടേഷൻ ചെയർപേഴ്സൺ ഡോ. സൗമ്യ സ്വാമിനാഥൻ",
+    image: "/images/sowmya-mathrubumi.jpg",
+    image1: "/images/sowmya-mathrubumi.jpg",
+  },
+
+
+
     {
-    id: -11,
+    id: -112,
     Company: "March 30, 2026",
     EventsCalendarTitle:
       "వ్యాక్సిన్లాగే ఏవియన్ పరీక్షించాలి  ",
@@ -1130,7 +1151,7 @@ export const newsPhotos = [
   },
 
   {
-    id: -11,
+    id: -112,
     Company: "March 30, 2026",
     EventsCalendarTitle:
       "  டாக்டர் செண்பா சுவாமிநாதனுக்கு  குப்பர் சென்னா' ஜகன் ஆப் தி மந்த் விருது  | Malai-tamilagam ",
@@ -1139,7 +1160,7 @@ export const newsPhotos = [
   },
 
   {
-    id: -11,
+    id: -121,
     Company: "March 30, 2026",
     EventsCalendarTitle:
       "Super Chennai honours IIT-M director as ‘Icon of the Month’",

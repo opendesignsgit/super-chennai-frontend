@@ -428,12 +428,12 @@ export default function SummerClipsPhtography() {
 
             <hr />
 
-            <h2 className=" themelink-color formheadingtheme hotshotstext">
+            {/* <h2 className=" themelink-color formheadingtheme hotshotstext">
               Photography contest
             </h2>
             <div>
               <p className="everydaytext">Everyday stories. Evolving city.</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -441,7 +441,34 @@ export default function SummerClipsPhtography() {
       {/* ================= FORM ================= */}
 
       <section className="relative py-16 bg-gradient-to-br from-[#f6f0f7] via-[#faf7fb] to-[#f1e6f3]">
-        <div className="container max-w-7xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className=" p-10 text-center">
+           
+            <span className="inline-block px-4 py-1 rounded-full bg-red-100 text-red-700 font-semibold text-sm mb-4">
+              Event Closed
+            </span>
+
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              This Event Has Ended
+            </h2>
+
+            <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
+              Thank you for your interest! Registration for this event has now
+              closed. Stay tuned for upcoming events and exciting opportunities
+              from SuperChennai.
+            </p>
+
+            <div className="mt-8">
+              <a
+                href="/superchennai-contest"
+                className="inline-flex items-center rounded-xl bg-[#a44294] px-6 py-3 text-white font-semibold hover:bg-[#8f3681] transition"
+              >
+                View Upcoming Events
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* <div className="container max-w-7xl mx-auto px-4">
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="relative h-full">
               <img
@@ -452,7 +479,6 @@ export default function SummerClipsPhtography() {
               <div className="absolute inset-0 bg-purple-900/20" />
             </div>
 
-            {/* RIGHT FORM */}
             <div className="relative p-4 md:p-10 overflow-hidden">
               <h2 className=" themelink-color formheadingtheme" style={{width:"100%"}}>
                 SHARE YOUR Photography
@@ -527,7 +553,6 @@ export default function SummerClipsPhtography() {
                   </div>
                 </div>
 
-                {/* Upload */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Upload Images (Up to 5)
@@ -631,7 +656,7 @@ export default function SummerClipsPhtography() {
               </form>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <img
           src="/images/events/dev-bg.jpg"

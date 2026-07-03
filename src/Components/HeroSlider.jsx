@@ -158,13 +158,13 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    image: "/images/desk-homepage-photography-contest.jpeg",
-    link: "/contest/chennai-summer-photography-contest",
-    image1: "/images/desk-homepage-photography-contest-mobile.jpeg",
-    title: "chennai's surfing",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   image: "/images/desk-homepage-photography-contest.jpeg",
+  //   link: "/contest/chennai-summer-photography-contest",
+  //   image1: "/images/desk-homepage-photography-contest-mobile.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   {
     image: "/images/HomePage-Images/banner-0.jpg",

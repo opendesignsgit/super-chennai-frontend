@@ -214,7 +214,7 @@ export default function ArattaiWithSamhithaMoturi() {
                 awareness more important than ever.
               </p>
             </div>
-            <div className="flex flex-col items-center text-center space-y-4 py-10">
+            {/* <div className="flex flex-col items-center text-center space-y-4 py-10">
               <p className="text-rose-600 font-semibold tracking-wide">
                 Limited Seats Only • Register Now
               </p>
@@ -236,7 +236,7 @@ export default function ArattaiWithSamhithaMoturi() {
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

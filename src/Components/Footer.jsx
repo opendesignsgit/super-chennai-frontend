@@ -531,9 +531,6 @@ const Footer = () => {
             </AnimatePresence>
           </div> */}
 
-
-          
-
           <div className="SectionLeft1">
             <h3
               className="FooterHeading"
@@ -674,7 +671,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="SectionConatinerSecond max-w-7xl mx-auto px-4">
         <div className="containerSection">
           <div className="SectionLeft1">
@@ -711,7 +708,7 @@ const Footer = () => {
               )}
             </AnimatePresence>
           </div>
-          
+
           {/* <div className="SectionLeft1">
             <h3 className="FooterHeading" onClick={() => setIsOpen3(!isOpen3)}>
               Volunteer
@@ -822,7 +819,7 @@ const Footer = () => {
     Download Now
   </a>
 </div> */}
-{/* 
+          {/* 
 <div className="flex flex-col items-center text-center">
   <h4 className="text-lg font-semibold mb-3">
     Manifesto
@@ -889,6 +886,17 @@ const Footer = () => {
                 <a href="https://x.com/Super_Chennai_	" target="_blank">
                   <img src="/images/threads.png" alt="Twitter" />
                 </a>
+
+                <a
+                  href="https://whatsapp.com/channel/0029VbCOJEh7IUYLBQuIyE2O"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/wp-channel.svg"
+                    alt="wp"
+                    className="w-10 h-10 object-contain"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -907,7 +915,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-{/* 
+          {/* 
           <div className="qrSection">
             <h4 className="qrTitle">Download Manifesto</h4>
 
@@ -922,9 +930,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="weatherPageSection">
-        {/* <SimpleWeather /> */}
-      </div>
+      <div className="weatherPageSection">{/* <SimpleWeather /> */}</div>
     </footer>
   );
 };

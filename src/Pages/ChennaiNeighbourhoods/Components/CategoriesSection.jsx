@@ -1,10 +1,9 @@
-
 import React, { useState } from "react";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 import Slider from "react-slick";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const NextArrow = ({ onClick }) => (
+const NextArrow1 = ({ onClick }) => (
   <button
     onClick={onClick}
     className="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 bg-white/100 rounded-full w-8 h-8 flex items-center justify-center text-gray-800 font-bold shadow hover:bg-white z-20 opacity-100 transition-opacity text-lg sliderrrleftssectionbutton"
@@ -13,7 +12,7 @@ const NextArrow = ({ onClick }) => (
   </button>
 );
 
-const PrevArrow = ({ onClick }) => (
+const PrevArrow1 = ({ onClick }) => (
   <button
     onClick={onClick}
     className="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 bg-white/100 rounded-full w-8 h-8 flex items-center justify-center text-gray-800 font-bold shadow hover:bg-white z-20 opacity-100 transition-opacity text-lg sliderrrrightssectionbutton"
@@ -22,7 +21,25 @@ const PrevArrow = ({ onClick }) => (
   </button>
 );
 
-export default function CategoriesSection({ locationId, data = [] ,location}) {
+const NextArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 bg-white/100 rounded-full w-8 h-8 flex items-center justify-center text-gray-800 font-bold shadow hover:bg-white z-20 opacity-100 transition-opacity text-lg sliderrrleftssectionbutton sliderrrleftssectionbuttonneww"
+  >
+    <ChevronRight className="w-5 h-5 text-[#fff]" strokeWidth={3} />
+  </button>
+);
+
+const PrevArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 bg-white/100 rounded-full w-8 h-8 flex items-center justify-center text-gray-800 font-bold shadow hover:bg-white z-20 opacity-100 transition-opacity text-lg sliderrrrightssectionbutton sliderrrrightssectionbuttonneww"
+  >
+    <ChevronLeft className="w-5 h-5 text-[#fff]" strokeWidth={3} />
+  </button>
+);
+
+export default function CategoriesSection({ locationId, data = [], location }) {
   const transformedSlides = Object.values(
     data.reduce((acc, item) => {
       const categoryName = item?.category?.title || "Others";
@@ -47,7 +64,7 @@ export default function CategoriesSection({ locationId, data = [] ,location}) {
 
       // 1. ADDED SLUG HERE SO CARD CAN BUILD ITS DETAIL LINK
       acc[categoryName].lists.push({
-        slug: item.slug || "", 
+        slug: item.slug || "",
         icon: categoryIcon,
         name: item.name || "Unknown",
         type: item.type || "",
@@ -95,8 +112,8 @@ export default function CategoriesSection({ locationId, data = [] ,location}) {
     speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow1 />,
+    prevArrow: <PrevArrow1 />,
     appendDots: (dots) => (
       <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20">
         <ul className="flex gap-1.5 justify-center items-center m-0 p-0">
@@ -229,7 +246,10 @@ export default function CategoriesSection({ locationId, data = [] ,location}) {
                       <span className="font-semibold text-gray-800">
                         Popular Nearby {slide.category}
                       </span>
-                      <a href={`/neighbourhood/${locationId}/${safeCat}`} className="text-[#a44294] font-medium hover:underline">
+                      <a
+                        href={`/neighbourhood/${locationId}/${safeCat}`}
+                        className="text-[#a44294] font-medium hover:underline"
+                      >
                         View All
                       </a>
                     </div>
@@ -283,7 +303,9 @@ export default function CategoriesSection({ locationId, data = [] ,location}) {
                                       </span>
                                       <span className="flex items-center gap-0.5 text-[15px]">
                                         <MapPinIcon className="w-4 h-4" />
-                                        {item?.locations?.city || location?.city || "Unknown"}
+                                        {item?.locations?.city ||
+                                          location?.city ||
+                                          "Unknown"}
                                       </span>
                                     </div>
                                   </div>
@@ -333,7 +355,8 @@ export default function CategoriesSection({ locationId, data = [] ,location}) {
                                     <span className="flex items-center gap-0.5">
                                       <StarIcon />
                                       <span className="font-medium text-gray-700 text-[14px]">
-                                        {item?.googleData?.googleRating || "N/A"}
+                                        {item?.googleData?.googleRating ||
+                                          "N/A"}
                                       </span>
                                     </span>
                                     <span className="flex items-center gap-0.5 text-[15px]">
@@ -363,7 +386,6 @@ export default function CategoriesSection({ locationId, data = [] ,location}) {
     </div>
   );
 }
-
 
 // import React, { useState } from "react";
 // import { API_BASE_URL_API_TEST_DEV } from "../../../../config";

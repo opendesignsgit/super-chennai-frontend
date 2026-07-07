@@ -185,17 +185,24 @@
 }
 
 .sliderrrleftssectionbutton {
-  right: -20px;
+  /* right: -20px; */
   background: #a44294;
   color: #fff;
 }
 
 .sliderrrrightssectionbutton {
-  left: -20px;
+  /* left: -20px; */
   background: #a44294;
   color: #fff;
 }
 
+.sliderrrleftssectionbuttonneww {
+  right: -20px;
+}
+
+.sliderrrrightssectionbuttonneww {
+  left: -20px;
+}
 .zindexxmoreee {
   z-index: 1000;
 }
@@ -230,10 +237,35 @@
   height: 150px;
 }
 
+.neighmainlocationscard .slick-slide {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-@media(max-width:1600px) and (min-width:1300px) {
+.neighmainlocationscardleft {
+  left: -50px;
+}
+
+.neighmainlocationscardright {
+  right: -50px;
+}
+
+.neighmainlocationnearbysection .slick-slide {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nerabyneighbourhood {
+  padding-bottom: 20px;
+  display: flex !important;
+}
+
+@media (max-width: 1600px) and (min-width: 1300px) {
   .neightwonewwmain {
-
     top: 65%;
   }
 }

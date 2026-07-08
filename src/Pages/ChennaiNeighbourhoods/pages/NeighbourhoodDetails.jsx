@@ -28,6 +28,8 @@ export default function NeighbourhoodDetail() {
     location: decodeURIComponent(locationId),
   });
 
+  console.log("locationbased 0-------------------------------------------- data",data)
+
   const { locations } = useLocations();
 
   useEffect(() => {
@@ -780,16 +782,10 @@ export default function NeighbourhoodDetail() {
           </Slider>
         </div>
       </section>
-      {/* Nearby-Locations */}
 
-      {/* Faq-Locations */}
+      <FaqNeighbourhoods faqDataProps={location?.faqSection} />
 
-      <FaqNeighbourhoods />
-
-      {/* Faq-Locations */}
-
-      <WhatsNearby />
-
+      <WhatsNearby data={data} />
       <div className="pt-6">
         <ProperitiesNeighbourhood />
       </div>

@@ -189,7 +189,7 @@ export default function NeighbourhoodItemDetail() {
   }
 
 
-
+console.log("item?.businessHours?",item.businessHours)
   const hoursConfig = item?.businessHours?.[0];
   const formattedHours =
     hoursConfig && (hoursConfig.openTime || hoursConfig.closeTime)
@@ -505,18 +505,46 @@ export default function NeighbourhoodItemDetail() {
               <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
                 Timings
               </h2>
-              <div className="inline-flex items-center space-x-4 bg-[#F5F3FF] text-[#a44294] px-4 py-2.5 rounded-full text-xs font-medium">
-                <div className="flex items-center space-x-1.5 neighbourtwoparagraph">
-                  <Clock size={15} />
-                  <span className="text-[#000] neighbourtwoparagraph">
-                    {hoursConfig?.day || "Operating Hours"}
-                  </span>
-                </div>
-                <span className="text-gray-300">|</span>
-                <span className="font-bold neighbourtwoparagraph text-[#000]">
-                  {formattedHours}{" "}
-                  {hoursConfig?.isClosed && "(Closed on Holidays)"}
-                </span>
+
+              <div className="flex flex-col gap-3 mt-3">
+                {item?.businessHours && item.businessHours.length > 0 ? (
+                  item.businessHours.map((hours, index) => {
+                    const formattedTime =
+                      hours && (hours.openTime || hours.closeTime)
+                        ? `${hours.openTime || ""} - ${hours.closeTime || ""}`
+                        : "10:00 AM - 9:30 PM";
+
+                    return (
+                      <div
+                        key={hours.id || index}
+                        className="inline-flex items-center space-x-4 bg-[#F5F3FF] text-[#a44294] px-4 py-2.5 rounded-full text-xs font-medium w-max"
+                      >
+                        <div className="flex items-center space-x-1.5 neighbourtwoparagraph">
+                          <Clock size={15} />
+                          <span className="text-[#000] neighbourtwoparagraph">
+                            {hours?.day || "Operating Hours"}
+                          </span>
+                        </div>
+                        <span className="text-gray-300">|</span>
+                        <span className="font-bold neighbourtwoparagraph text-[#000]">
+                          {formattedTime}{" "}
+                          {hours?.isClosed && (
+                            <span className="text-red-500 font-semibold ml-1">
+                              (Closed)
+                            </span>
+                          )}
+                        </span>
+                      </div>
+                    );
+                  })
+                ) : (
+                  <div className="inline-flex items-center space-x-4 bg-[#F5F3FF] text-[#a44294] px-4 py-2.5 rounded-full text-xs font-medium w-max">
+                    <Clock size={15} />
+                    <span className="text-[#000] font-bold">
+                      10:00 AM - 9:30 PM
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
           </div>

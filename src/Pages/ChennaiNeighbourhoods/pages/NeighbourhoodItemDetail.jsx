@@ -574,43 +574,32 @@ console.log("item?.businessHours?",item.businessHours)
             {/* 
 
             {/* Nearby & Transport Access Block */}
-            {item?.locations?.quickAccess &&
-              item.locations.quickAccess.length > 0 && (
-                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
-                  <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
-                    Nearby & Transport Access
-                  </h2>
-                  <div className="space-y-5">
-                    {item.locations.quickAccess.map((qa) => (
-                      <div
-                        key={qa.id}
-                        className="flex items-start space-x-4 bg-gray-50/50 p-3 rounded-xl"
-                      >
-                        <div className="p-2.5 bg-white text-[#a44294] rounded-xl shadow-sm mt-0.5 border border-gray-100">
-                          {qa?.icon?.url ? (
-                            <img
-                              src={`${API_BASE_URL_API_TEST_DEV}${qa.icon.url}`}
-                              alt=""
-                              className="w-[18px] h-[18px] object-contain"
-                            />
-                          ) : (
-                            <Milestone size={18} />
-                          )}
-                        </div>
-                        <div>
-                          <h4 className="font-semibold text-[#000] text-sm neighbourtwoparagraph mb-0.5">
-                            {qa.label}
-                          </h4>
-                          <p className="text-sm font-bold text-[#a44294]">
-                            {qa.name}
-                          </p>
-                          <p className="text-xs text-gray-500">{qa.detail}</p>
-                        </div>
+            {item?.amenities && item.amenities.length > 0 && (
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+                <h2 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
+                  Amenities
+                </h2>
+
+                <div className="space-y-5">
+                  {item.amenities.map((amenity) => (
+                    <div
+                      key={amenity.id}
+                      className="flex items-start space-x-4 bg-gray-50/50 p-3 rounded-xl"
+                    >
+                      <div className="p-2.5 bg-white text-[#a44294] rounded-xl shadow-sm mt-0.5 border border-gray-100">
+                        <Milestone size={18} />
                       </div>
-                    ))}
-                  </div>
+
+                      <div>
+                        <h4 className="font-semibold text-[#000] text-sm neighbourtwoparagraph mb-0.5">
+                          {amenity.label}
+                        </h4>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              )}
+              </div>
+            )}
           </div>
         </div>
       </div>

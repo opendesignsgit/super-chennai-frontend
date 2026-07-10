@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: 
-
+Disallow: /neighbourhood
 Sitemap: https://www.superchennai.com/sitemap.xml

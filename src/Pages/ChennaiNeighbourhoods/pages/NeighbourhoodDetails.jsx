@@ -734,8 +734,7 @@ export default function NeighbourhoodDetail() {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute top-3 left-3 bg-white/100 backdrop-blur-xs px-2.5 py-1 rounded-full flex items-center shadow-xs">
-                      {/* Location Icon Map Pin */}
-                      <svg
+                      {/* <svg
                         className="w-3.5 h-3.5 text-purple-700 mr-1"
                         fill="none"
                         stroke="currentColor"
@@ -755,7 +754,7 @@ export default function NeighbourhoodDetail() {
                       </svg>
                       <span className="text-[11px] font-medium text-[#000]">
                         2.3 km away
-                      </span>
+                      </span> */}
                     </div>
                   </div>
 

@@ -314,7 +314,6 @@ import ArattaiGskVeluExcelView from "./Pages/Activities/ArrattaiWithGskVelu/Arat
 
 import ArattaiWithKishenDas from "./Pages/Activities/ArrataiWithKishen/arattai-kishandas";
 
-
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
 import LanguageSwitcher from "./Components/LanguageDropdown/LanguageSwitcher";
@@ -353,7 +352,6 @@ import CricketsList from "./Pages/Crickets/CricketsList";
 import GenzVideo from "./Pages/GenzVideo";
 import GenzVideoContent from "./Pages/Activities/ContentWriters/GenzVideo";
 
-
 import MazzaMainPage from "./Pages/Activities/MazzaQuiz/Pages/MazzaMainPage";
 import MazzaQuestions from "./Pages/Activities/MazzaQuiz/Pages/MazzaQuestions";
 import MazzaRegister from "./Pages/Activities/MazzaQuiz/Pages/MazzaRegister";
@@ -361,10 +359,12 @@ import MazzaLogin from "./Pages/Activities/MazzaQuiz/Pages/MazzaLogin";
 import QuestionManagement from "./Pages/Activities/MazzaQuiz/Pages/AdminPage";
 import SummerClipsPhtography from "./Pages/Activities/SummerClipsPhtography/SummerClipsPhtography";
 import SummerDashboardView from "./Pages/Activities/Summerfest/registerData";
-import PowerCutPage from "./Pages/Activities/PowerCutPage"
-import ArattaiWithSamhithaMoturi from "./Pages/Activities/ArrattaiWithVivekSamhithaMoturi/arattai-samhithamoturi"
+import PowerCutPage from "./Pages/Activities/PowerCutPage";
+import ArattaiWithSamhithaMoturi from "./Pages/Activities/ArrattaiWithVivekSamhithaMoturi/arattai-samhithamoturi";
 
-import ArattaiSahithaExcell from "./Pages/Activities/ArrattaiWithVivekSamhithaMoturi/exel-samihitha"
+import ArattaiSahithaExcell from "./Pages/Activities/ArrattaiWithVivekSamhithaMoturi/exel-samihitha";
+import ArattaiWithBharathyBhaskar from "./Pages/Activities/ArattaiWithBharathiBaskar/arattaiwithBharathibaskar";
+import ArattaiBharathiExcelView from "./Pages/Activities/ArattaiWithBharathiBaskar/ArattaiBharathiExcelView";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -671,7 +671,6 @@ function App() {
                 className="w-10 h-10 object-contain"
               />
             </a>
-            
           </div>
         )}
 
@@ -1025,6 +1024,14 @@ function App() {
         <Route
           path="/director-of-prashanth-hospitals/v1/details"
           element={<ArattaiSahithaExcell />}
+        />
+        <Route
+          path="/arattai-with-bharathy-bhaskar/prominent-speaker"
+          element={<ArattaiWithBharathyBhaskar />}
+        />
+        <Route
+          path="/arattai-with-bharathy-bhaskar/prominent-speaker/v1/registers/entry"
+          element={<ArattaiBharathiExcelView />}
         />
 
         {/* conclave */}

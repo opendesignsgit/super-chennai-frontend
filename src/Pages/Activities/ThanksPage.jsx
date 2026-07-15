@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 export default function Thankyou() {
   const location = useLocation();
   const from = location.state?.from;
-  // const from = "sahitha";
+  // const from = "bharathi";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -50,6 +50,14 @@ export default function Thankyou() {
             ? "/images/tankyoubanner-sowmiya-mobile.jpeg"
             : "/images/tankyoubanner-sowmiya.jpeg",
         );
+
+             } else if (from === "bharathi") {
+        setImageSrc(
+          isMobile
+            ? "/images/tankyoubanner-sowmiya-mobile.jpeg"
+            : "/images/tankyoubanner-sowmiya.jpeg",
+        );
+
       } else if (from === "content-writers") {
         setImageSrc(
           isMobile
@@ -139,6 +147,7 @@ export default function Thankyou() {
                 from === "gskvelu" ||
                 from === "soumya" ||
                 from === "sahitha" ||
+                 from === "bharathi" ||
                 from === "summer-photography-chennai" ||
                 from === "majaa-game"
                   ? ""
@@ -275,6 +284,23 @@ export default function Thankyou() {
 
               <p>
                 Thank you for registering for Arattai with Dr. Samhitha Moturi.
+                Your submission has been successfully received, and our team is
+                currently reviewing your registration. If your entry is
+                selected, you will receive an official confirmation email from
+                Team Super Chennai with further details about the event. Please
+                note that your participation will be considered confirmed only
+                after you receive the confirmation email. We appreciate your
+                interest and look forward to connecting with you soon.
+              </p>
+            </div>
+          )}
+
+           {from === "bharathi" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+
+              <p>
+                Thank you for registering for Arattai with Bharathy Bhaskar
                 Your submission has been successfully received, and our team is
                 currently reviewing your registration. If your entry is
                 selected, you will receive an official confirmation email from

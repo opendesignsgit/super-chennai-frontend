@@ -52,7 +52,7 @@ export default function AreaFilterCards({ data, onChange }) {
                       />
                     </span>
                     <h3 className="!font-bold text-[#000]  neighbourtwoheaidngssparagraph">
-                      {loc.locality}
+                      {loc.label}
                     </h3>
                   </div>
 

@@ -167,6 +167,14 @@ const slides = [
   // },
 
   {
+    image: "/images/homepage-banner-arratai-home.jpeg",
+    link: "arattai-with-bharathy-bhaskar/prominent-speaker",
+    image1: "/images/mobile-home-bharathi.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
+  {
     image: "/images/HomePage-Images/banner-0.jpg",
     link: "#",
     image1: "/images/HomePage-Images/mobile-banner-1.jpg",

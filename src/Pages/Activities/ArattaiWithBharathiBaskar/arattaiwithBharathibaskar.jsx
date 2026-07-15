@@ -156,11 +156,11 @@ export default function ArattaiWithBharathyBhaskar() {
 
       <Helmet>
         <title>
-          Arattai with Bharathy Bhaskar - Motivational Speaker & Corporate Leader
+          Super Chennai Arattai with Bharathy Bhaskar Prominent Speaker
         </title>
         <meta
           name="description"
-          content="Experience inspiring conversations filled with practical wisdom and powerful life lessons at Arattai with Bharathy Bhaskar."
+          content="Bharathy Bhaskar joins Arattai with Super Chennai, a prominent speaker, author and corporate leader inspiring leadership, empowerment and personal growth."
         />
         <script type="application/ld+json">
           {JSON.stringify(arattaiSchema)}
@@ -204,7 +204,7 @@ export default function ArattaiWithBharathyBhaskar() {
                 What makes Bharathy Bhaskar truly exceptional is her engaging communication style. Through her widely appreciated television debates, motivational talks, and public interactions, she speaks on leadership, personal development, women's empowerment, workplace diversity, communication, and work-life balance. Blending humor, practical insights, and relatable storytelling, she encourages individuals to embrace challenges with confidence and pursue success with purpose.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Beyond the stage and television, Bharathy Bhaskar has made significant contributions as an independent director, diversity and inclusion advocate, and ACCOMPLISHED author. Her thought-provoking books and inspiring speeches have motivated students, professionals, entrepreneurs, and organizations to build stronger values, develop leadership skills, and create a positive impact in their communities. Her achievements have earned her several prestigious awards and widespread recognition for excellence in public speaking and literature.
+                Beyond the stage and television, Bharathy Bhaskar has made significant contributions as an independent director, diversity and inclusion advocate, and accomplished author. Her thought-provoking books and inspiring speeches have motivated students, professionals, entrepreneurs, and organizations to build stronger values, develop leadership skills, and create a positive impact in their communities. Her achievements have earned her several prestigious awards and widespread recognition for excellence in public speaking and literature.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
                 Through Arattai with Bharathy Bhaskar, audiences can experience inspiring conversations filled with practical wisdom, powerful life lessons, and fresh perspectives. Every session is designed to spark meaningful dialogue, encourage lifelong learning, and empower individuals to unlock their full potential in both their personal and professional journeys.

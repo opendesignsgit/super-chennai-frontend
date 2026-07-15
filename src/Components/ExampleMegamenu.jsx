@@ -407,14 +407,19 @@ const menuItems = [
     label: "Arattai",
     labellink: "/arattai-with-jahabar-sadique/chai-kings-founder",
     content: [
- 
+        {
+        title: "Hello",
+        desc: "ssdds",
+        link: "/arattai-with-bharathy-bhaskar/prominent-speaker",
+        image: "/images/header-banner-arattai-wf-card.jpeg",
+      },
       {
         title: "Hello",
         desc: "ssdds",
         link: "/arattai-with-soumya-swaminathan/chief-scientist",
         image: "/images/header-sowmya-banner.jpeg",
       },
-           {
+      {
         title: "Hello",
         desc: "ssdds",
         link: "/arattai-with-dr-samhitha-moturi/director-of-prashanth-hospitals",

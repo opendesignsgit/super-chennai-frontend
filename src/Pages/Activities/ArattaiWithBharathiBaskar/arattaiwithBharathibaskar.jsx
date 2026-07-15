@@ -167,7 +167,7 @@ export default function ArattaiWithBharathyBhaskar() {
         </script>
         <link
           rel="canonical"
-          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-bharathy-bhaskar`}
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-bharathy-bhaskar/prominent-speaker`}
         />
       </Helmet>
 

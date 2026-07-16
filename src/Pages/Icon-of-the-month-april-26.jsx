@@ -329,7 +329,7 @@ const slide = (direction) => {
           name="description"
           content="Icon of the Month: Soumya Swaminathan’s journey from Chennai to WHO showcases her leadership in global health, COVID-19 response, and equitable healthcare impact."
         />
-        <link rel="canonical" href="/icon-of-the-feb-month-2026" />
+        <link rel="canonical" href="/icon-of-the-march-month-2026" />
       </Helmet>
 
       <div className="InvestPageId">

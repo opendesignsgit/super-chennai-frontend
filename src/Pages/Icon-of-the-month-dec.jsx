@@ -279,13 +279,13 @@ const expendingData = [
       <div className="septemberMonthStyle">
         <Helmet>
           <title>
-           Icon of the Month | Dr. GSK Velu - Healthcare Entrepreneur
+            Icon of the Month | Dr. GSK Velu - Healthcare Entrepreneur
           </title>
           <meta
             name="description"
             content="Icon of the Month: Dr. GSK Velu transforms India’s diagnostics with 30+ years of visionary leadership, affordable healthcare technology, and innovation nationwide."
           />
-          <link rel="canonical" href="/super-chennai-icon-of-the-feb-month-2026" />
+          <link rel="canonical" href="/icon-of-the-feb-month-2026" />
         </Helmet>
         <div className="InvestPageId">
           <div
@@ -298,8 +298,7 @@ const expendingData = [
                 <div className="VolunteerBannerImage">
                   <img src="/images/gskvelu-banner.jpeg" />
                 </div>
-                <h3 className="voluntterContent">
-                </h3>
+                <h3 className="voluntterContent"></h3>
               </div>
             </div>
             <div className="notHomePageSearch">
@@ -370,7 +369,10 @@ const expendingData = [
               <h3 className="newupdatewhychennai">THE VISIONARY LEADER</h3>
               <div className="section-container container max-w-7xl mx-auto px-4">
                 <div className="section-left-image">
-                  <img src="/images/gskvelu-icon-of-the-month-dec.jpg" alt="Main Side Visual" />
+                  <img
+                    src="/images/gskvelu-icon-of-the-month-dec.jpg"
+                    alt="Main Side Visual"
+                  />
                 </div>
 
                 <div className="section-right-content">
@@ -394,10 +396,7 @@ const expendingData = [
             <h2 className="awards-title">Awards & Achievements</h2>
             <p className="awards-subtitle"></p>
             <div className="awards-container">
-              <img
-                alt="foundations "
-                src="/images/gskvelu-award.jpg"
-              ></img>
+              <img alt="foundations " src="/images/gskvelu-award.jpg"></img>
               <div
                 ref={listRef}
                 className="awards-list max-h-140 overflow-y-auto"
@@ -414,30 +413,9 @@ const expendingData = [
             </div>
           </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           {/* TWO WAY SECTIONS  */}
 
-
-
-
-
-             <div className="naturals-container">
+          <div className="naturals-container">
             {data.map((section, index) => (
               <div className="naturals-section" key={index}>
                 {section.image && (
@@ -472,8 +450,6 @@ const expendingData = [
           </section>
 
           {/* <IconofthemonthgallerySlider /> */}
-
-        
 
           <InstagramReelsMarquee />
           <Becameavolunteer />

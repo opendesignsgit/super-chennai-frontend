@@ -88,7 +88,7 @@ export default function Iconsofthemonth() {
               <a
                 className="superchennaiEventsSection"
                 id="icon-of-the-month-nov"
-                href="/icon-of-the-feb-month-2026"
+                href="/icon-of-the-march-month-2026"
               >
                 <div
                   className="flex flex-col items-center text-center"
@@ -100,7 +100,7 @@ export default function Iconsofthemonth() {
                     className="rounded-xl mb-3"
                   />
                   <p className="text-lg font-medium">
-                    Icon of the Month - Feb 2026
+                    Icon of the Month - March 2026
                   </p>
                 </div>
               </a>
@@ -108,7 +108,7 @@ export default function Iconsofthemonth() {
                 <a
                 className="superchennaiEventsSection"
                 id="icon-of-the-month-nov"
-                href="/super-chennai-icon-of-the-feb-month-2026"
+                href="/icon-of-the-feb-month-2026"
               >
                 <div
                   className="flex flex-col items-center text-center"

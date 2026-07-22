@@ -18,6 +18,38 @@ const detailsections = [
     id: 3,
     title: "Global & Continental Cuisine",
     points: [
+
+     {
+  name: "The Brunch Theory",
+  date: "22/07/2026",
+  description:
+    "The Brunch Theory is a stylish café on KNK Road, Nungambakkam, offering a unique blend of dining and retail experiences.",
+  subDescription:
+    "It serves creative Asian and Continental dishes, signature beverages, and indulgent desserts in a warm and inviting setting.",
+  locations: [
+    {
+      label: "Nungambakkam",
+      link: "https://maps.app.goo.gl/oDNkME814vszYtcE9",
+    },
+  ],
+},
+{
+  name: "The Lab",
+  date: "22/07/2026",
+  description:
+    "The Lab is a modern multi-level resto-café on TTK Road, Royapettah, offering a creative dining experience with Continental and Italian cuisine.",
+  subDescription:
+    "Known for its stylish interiors and DIY coffee bar, it's a favourite destination for evening meetups and late-night dining.",
+  locations: [
+    {
+      label: "TTK Road",
+      link: "https://maps.app.goo.gl/rCGnzBiKQBkVdpAL7",
+    },
+  ],
+},
+
+
+
       {
         name: "The Lab",
         date: "11/07/2026",
@@ -405,6 +437,35 @@ const detailsections = [
     title: "Asian Cuisine",
     points: [
       {
+  name: "Double Dashi",
+  date: "22/07/2026",
+  description:
+    "Double Dashi is a lively Japanese and Asian-fusion café in Anna Nagar East with a Tokyo-inspired ambience.",
+  subDescription:
+    "Featuring a nostalgic PS2 gaming zone, it serves ramen, Asian favourites, and signature dishes for casual dining and hangouts.",
+  locations: [
+    {
+      label: "Anna Nagar",
+      link: "https://maps.app.goo.gl/n28xBV9EfzaAAxsG6",
+    },
+  ],
+},
+{
+  name: "Koiro – The Asian Bar & Kitchen",
+  date: "22/07/2026",
+  description:
+    "Koiro – The Asian Bar & Kitchen is a vibrant underground dining destination in RA Puram serving authentic Japanese, Korean, and Thai cuisine.",
+  subDescription:
+    "Known for its Tokyo-inspired interiors, handcrafted cocktails, and flavourful Asian dishes, it's a popular evening dining spot.",
+  locations: [
+    {
+      label: "RA Puram",
+      link: "https://maps.app.goo.gl/sauFdevcCYqmVA5z9",
+    },
+  ],
+},
+
+      {
         name: "Copper Elite",
         date: "20/05/2026",
         description:
@@ -716,6 +777,52 @@ const detailsections = [
     id: 5,
     title: "Cafés & Casual Bites",
     points: [
+
+      {
+  name: "Backstory Coffee",
+  date: "22/07/2026",
+  description:
+    "Backstory Coffee is a peaceful garden-style café in Alwarpet with cozy indoor seating and a pet-friendly outdoor space.",
+  subDescription:
+    "Known for its relaxing ambience and specialty coffee, it's ideal for casual meetups and work sessions.",
+  locations: [
+    {
+      label: "Alwarpet",
+      link: "https://maps.app.goo.gl/YnebJNaPrDXoWhQG9",
+    },
+  ],
+},
+{
+  name: "Level 6 Cafe",
+  date: "22/07/2026",
+  description:
+    "Level 6 Cafe is a stylish pure vegetarian café and shisha lounge in Chetpet.",
+  subDescription:
+    "Offering quick bites, refreshing beverages, and a cozy ambience, it's a popular destination for late-night outings and casual meetups.",
+  locations: [
+    {
+      label: "Chetpet",
+      link: "",
+    },
+  ],
+},
+{
+  name: "High On Coffee (HOC)",
+  date: "22/07/2026",
+  description:
+    "High On Coffee (HOC) is a modern café in Egmore known for handcrafted coffee and signature beverages.",
+  subDescription:
+    "With cozy seating and a welcoming atmosphere, it's an ideal place for casual catch-ups, work sessions, or relaxing over coffee.",
+  locations: [
+    {
+      label: "Egmore",
+      link: "https://maps.app.goo.gl/ioWcCBr5AZiDvsax7",
+    },
+  ],
+},
+
+
+
       {
         name: "Suto Café",
         date: "01/07/2026",
@@ -1638,6 +1745,25 @@ const detailsections = [
     id: 6,
     title: "Beachside & Rooftop Dining",
     points: [
+
+     {
+  name: "Café La Mirajh",
+  date: "22/07/2026",
+  description:
+    "Café La Mirajh is a stylish rooftop café in Anna Nagar offering panoramic city views and a relaxed ambience.",
+  subDescription:
+    "Featuring gaming zones, free Wi-Fi, and comfortable seating, it's an ideal destination for casual meetups, work sessions, and evening outings.",
+  locations: [
+    {
+      label: "Anna Nagar",
+      link: "https://maps.app.goo.gl/74w32bFsscJBKMsy5",
+    },
+  ],
+},
+
+
+
+
       {
         name: "Samra Bar, Kitchen-Skydeck",
         date: "01/07/2026",
@@ -2090,6 +2216,23 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
+
+     {
+  name: "Rewind by Radio Room",
+  date: "22/07/2026",
+  description:
+    "Rewind by Radio Room is a retro-themed cocktail lounge on KNK Road, Nungambakkam.",
+  subDescription:
+    "Blending vintage charm with handcrafted cocktails, flavourful bar bites, and lively music, it's a popular destination for relaxed evenings and nightlife.",
+  locations: [
+    {
+      label: "KNK Road",
+      link: "https://maps.app.goo.gl/s2nJGfj3oDURJCV48",
+    },
+  ],
+},
+
+
       {
         name: "Al Moon Multicuisine Restaurant",
         date: "01/07/2026",
@@ -2472,53 +2615,34 @@ export default function Restaurants() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const isNewBatch = (dateStr) => {
-  //   if (!dateStr) return false;
-
-  //   const [day, month, year] = dateStr.split("/").map(Number);
-  //   const itemDate = new Date(year, month - 1, day);
-
-  //   const startDate = new Date(2026, 2, 30); // March 30
-  //   const endDate = new Date(2026, 3, 24);   // April 24
-
-  //   return itemDate >= startDate && itemDate <= endDate;
-  // };
-
-  // const isNewBatch = (dateStr) => {
-  //   if (!dateStr) return false;
-
-  //   const [day, month, year] = dateStr.split("/").map(Number);
-  //   const itemDate = new Date(year, month - 1, day);
-
-  //   const startDate = new Date(2026, 2, 30); // March 30, 2026
-  //   const endDate = new Date(2026, 4, 5);    // May 5, 2026
-
-  //   return itemDate >= startDate && itemDate <= endDate;
-  // };
-
-  // const isNewBatch = (dateStr) => {
-  //   if (!dateStr) return false;
-
-  //   const [day, month, year] = dateStr.split("/").map(Number);
-  //   const itemDate = new Date(year, month - 1, day);
-
-  //   const startDate = new Date(2026, 4, 20); // May 20, 2026
-  //   const endDate = new Date(2026, 4, 20); // May 20, 2026
-
-  //   return itemDate >= startDate && itemDate <= endDate;
-  // };
-
   const isNewBatch = (dateStr) => {
     if (!dateStr) return false;
 
     const [day, month, year] = dateStr.split("/").map(Number);
     const itemDate = new Date(year, month - 1, day);
 
-    const startDate = new Date(2026, 6, 1); // July 1, 2026
-    const endDate = new Date(2026, 6, 15); // July 15, 2026
+    const today = new Date();
 
-    return itemDate >= startDate && itemDate <= endDate;
+    // Remove time part
+    itemDate.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
+
+    const diffInDays = Math.floor((today - itemDate) / (1000 * 60 * 60 * 24));
+
+    return diffInDays >= 0 && diffInDays <= 10;
   };
+
+  // const isNewBatch = (dateStr) => {
+  //   if (!dateStr) return false;
+
+  //   const [day, month, year] = dateStr.split("/").map(Number);
+  //   const itemDate = new Date(year, month - 1, day);
+
+  //   const startDate = new Date(2026, 6, 1); // July 1, 2026
+  //   const endDate = new Date(2026, 6, 15); // July 15, 2026
+
+  //   return itemDate >= startDate && itemDate <= endDate;
+  // };
 
   return (
     <>

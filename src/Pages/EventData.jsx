@@ -7612,24 +7612,73 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
-  id: 102350,
-  name: "PM MODI TO INAUGURATE NEW CHENNAI METRO STRETCH 🚇",
-  slug: "pm-modi-chennai-metro-phase-2-inauguration",
-  para: "New 14.6 km Metro Corridor Between Vadapalani and Poonamallee Expected to Open in July",
-  TrendingCalendarMonth: "July 2026",
-  TrendingCalendarTime: "Expected Soon",
-  TrendingCalendarCategory:
-    "Transport | Chennai | Infrastructure | Trending",
-  image: "/images/chennaiMetroJuly.jpeg",
-  Homeimage: "/images/chennaiMetroJulyPotrt.jpeg",
-  link: "/trending-chennai/pm-modi-chennai-metro-phase-2-inauguration",
-  duration: "Expected in Mid-July 2026",
-  ageRestriction: "Open for All",
-  language: "Tamil | English",
-  genre: "Infrastructure | Metro | Public Transport",
-  venue: "Vadapalani – Poonamallee Bypass, Chennai",
+    id: 102351,
+    name: "KANCHIPURAM GETS A NEW 803-ACRE SIPCOT INDUSTRIAL PARK ",
+    slug: "kanchipuram-803-acre-sipcot-industrial-park",
+    para: "Tamil Nadu Approves 803-Acre SIPCOT Industrial Park to Boost Manufacturing and Jobs",
+    TrendingCalendarMonth: "July 2026",
+    TrendingCalendarTime: "Announced",
+    TrendingCalendarCategory:
+      "Infrastructure | Kanchipuram | Industry | Trending",
+    image: "/images/kanchipuramSIPCOT.png",
+    Homeimage: "/images/kanchipuramSIPCOT.png",
+    link: "/trending-chennai/kanchipuram-803-acre-sipcot-industrial-park",
+    duration: "Recently Announced",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Infrastructure | Industry | Manufacturing",
+    venue: "Kanchipuram, Tamil Nadu",
 
-  trendingDetails: `
+    trendingDetails: `
+<p>
+🏭 Big industrial development for Tamil Nadu!
+</p>
+
+<p>
+The Tamil Nadu government has approved a new <b>803-acre SIPCOT Industrial Park</b> in <b>Kanchipuram</b>, marking a major step towards expanding the state's industrial and manufacturing ecosystem.
+</p>
+
+<p>
+The upcoming industrial park is expected to attract <b>large-scale investments</b>, support new manufacturing units, and create <b>thousands of employment opportunities</b> across multiple sectors.
+</p>
+
+<p>
+The project will further strengthen <b>Kanchipuram's position as one of Tamil Nadu's leading industrial hubs</b>, while contributing to long-term economic growth and regional development.
+</p>
+
+<p>
+A significant milestone in Tamil Nadu's vision for stronger industrial infrastructure and investment-driven growth. 📈✨
+</p>
+`,
+
+    TrendingLink: "https://www.instagram.com/reels/DbAhGHrDGal/",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Kanchipuram 803-Acre SIPCOT Industrial Park | Super Chennai",
+      desc: "Tamil Nadu approves a new 803-acre SIPCOT Industrial Park in Kanchipuram to boost industrial investment, manufacturing, and create thousands of jobs.",
+      url: "https://www.superchennai.com/trending-chennai/kanchipuram-803-acre-sipcot-industrial-park",
+    },
+  },
+
+  {
+    id: 102350,
+    name: "PM MODI TO INAUGURATE NEW CHENNAI METRO STRETCH 🚇",
+    slug: "pm-modi-chennai-metro-phase-2-inauguration",
+    para: "New 14.6 km Metro Corridor Between Vadapalani and Poonamallee Expected to Open in July",
+    TrendingCalendarMonth: "July 2026",
+    TrendingCalendarTime: "Expected Soon",
+    TrendingCalendarCategory: "Transport | Chennai | Infrastructure | Trending",
+    image: "/images/chennaiMetroJuly.jpeg",
+    Homeimage: "/images/chennaiMetroJulyPotrt.jpeg",
+    link: "/trending-chennai/pm-modi-chennai-metro-phase-2-inauguration",
+    duration: "Expected in Mid-July 2026",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Infrastructure | Metro | Public Transport",
+    venue: "Vadapalani – Poonamallee Bypass, Chennai",
+
+    trendingDetails: `
 <p>
 🚇 Exciting updates for Chennai commuters!
 </p>
@@ -7655,15 +7704,16 @@ A major boost for Chennai’s public transport network and daily commuters alike
 </p>
 `,
 
-  TrendingLink: "",
-  YoutubeLink: "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  meta: {
-    title: "PM Modi Expected to Inaugurate New Chennai Metro Stretch in July | Super Chennai",
-    desc: "PM Narendra Modi is expected to inaugurate the new 14.6 km Chennai Metro Phase 2 corridor connecting Vadapalani and Poonamallee Bypass in July 2026, reducing travel time from 90 to 30 minutes.",
-    url: "https://www.superchennai.com/trending-chennai/pm-modi-chennai-metro-phase-2-inauguration",
+    meta: {
+      title:
+        "PM Modi Expected to Inaugurate New Chennai Metro Stretch in July | Super Chennai",
+      desc: "PM Narendra Modi is expected to inaugurate the new 14.6 km Chennai Metro Phase 2 corridor connecting Vadapalani and Poonamallee Bypass in July 2026, reducing travel time from 90 to 30 minutes.",
+      url: "https://www.superchennai.com/trending-chennai/pm-modi-chennai-metro-phase-2-inauguration",
+    },
   },
-},
   {
     id: 102349,
     name: "DUBAI CAME TO CHENNAI 😱🌊",

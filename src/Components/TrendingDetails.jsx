@@ -1552,33 +1552,62 @@ export default function TrendingDetails() {
   ];
 
    const poonamaleyStretch = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id":
-          "https://www.superchennai.com/trending-chennai/chennai-corporation-smart-waste-transport",
-      },
-      headline: "Cleaner Roads Ahead: Chennai’s Smart Waste Transport Upgrade",
-      description:
-        "Chennai Corporation introduces sealed garbage transport containers in North Chennai to reduce waste spillage, foul smell, and improve road cleanliness and hygiene.",
-      image: "https://www.superchennai.com/images/cleanerRoad.jpg",
-      author: {
-        "@type": "Person",
-        name: "Super Chennai",
-      },
-      publisher: {
-        "@type": "Organization",
-        name: "",
-        logo: {
-          "@type": "ImageObject",
-          url: "",
-        },
-      },
-      datePublished: "2026-05-19",
-    },
-  ];
+     {
+       "@context": "https://schema.org",
+       "@type": "Article",
+       mainEntityOfPage: {
+         "@type": "WebPage",
+         "@id":
+           "https://www.superchennai.com/trending-chennai/chennai-corporation-smart-waste-transport",
+       },
+       headline: "Cleaner Roads Ahead: Chennai’s Smart Waste Transport Upgrade",
+       description:
+         "Chennai Corporation introduces sealed garbage transport containers in North Chennai to reduce waste spillage, foul smell, and improve road cleanliness and hygiene.",
+       image: "https://www.superchennai.com/images/cleanerRoad.jpg",
+       author: {
+         "@type": "Person",
+         name: "Super Chennai",
+       },
+       publisher: {
+         "@type": "Organization",
+         name: "",
+         logo: {
+           "@type": "ImageObject",
+           url: "",
+         },
+       },
+       datePublished: "2026-05-19",
+     },
+   ];
+
+   const sipcotCmVijay = [
+     {
+       "@context": "https://schema.org",
+       "@type": "Article",
+       mainEntityOfPage: {
+         "@type": "WebPage",
+         "@id":
+           "https://www.superchennai.com/trending-chennai/kanchipuram-803-acre-sipcot-industrial-park",
+       },
+       headline: "Kanchipuram Gets a New 803-Acre SIPCOT Industrial Park",
+       description:
+         "Kanchipuram is set for a major industrial boost! 🏭🚀 The Tamil Nadu government has approved a new 803-acre SIPCOT Industrial Park to attract large-scale investments, expand manufacturing, and create thousands of job opportunities. The project is expected to strengthen Kanchipuram's position as a key industrial hub while supporting economic growth across the region. A significant step towards a stronger industrial future for Tamil Nadu. 📈✨",
+       image: "https://www.superchennai.com/images/kanchipuramSIPCOT.png",
+       author: {
+         "@type": "Person",
+         name: "",
+       },
+       publisher: {
+         "@type": "Organization",
+         name: "",
+         logo: {
+           "@type": "ImageObject",
+           url: "",
+         },
+       },
+       datePublished: "",
+     },
+   ];
 
 
   return (
@@ -1606,7 +1635,15 @@ export default function TrendingDetails() {
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
         />
 
-        {slug === "trending-chennai/pm-modi-chennai-metro-phase-2-inauguration" && (
+        {slug ===
+          "trending-chennai/kanchipuram-803-acre-sipcot-industrial-park" && (
+          <script type="application/ld+json">
+            {JSON.stringify(sipcotCmVijay)}
+          </script>
+        )}
+
+        {slug ===
+          "trending-chennai/pm-modi-chennai-metro-phase-2-inauguration" && (
           <script type="application/ld+json">
             {JSON.stringify(poonamaleyStretch)}
           </script>

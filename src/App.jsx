@@ -365,6 +365,10 @@ import ArattaiWithSamhithaMoturi from "./Pages/Activities/ArrattaiWithVivekSamhi
 import ArattaiSahithaExcell from "./Pages/Activities/ArrattaiWithVivekSamhithaMoturi/exel-samihitha";
 import ArattaiWithBharathyBhaskar from "./Pages/Activities/ArattaiWithBharathiBaskar/arattaiwithBharathibaskar";
 import ArattaiBharathiExcelView from "./Pages/Activities/ArattaiWithBharathiBaskar/ArattaiBharathiExcelView";
+import IconofthemonthBharathyBhaskar from "./Pages/icon-of-the-month-bharathy-baskar";
+
+
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -1616,6 +1620,12 @@ function App() {
           path="/super-chennai-icon-of-nov-2025"
           element={<IconofthemonthNov />}
         />
+                <Route
+          path="/icon-of-the-april-month-2026"
+          element={<IconofthemonthBharathyBhaskar />}
+        />
+
+        
 
         <Route
           path="/superchennai-events-details/:url"

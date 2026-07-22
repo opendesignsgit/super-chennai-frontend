@@ -7620,8 +7620,8 @@ export const panesContent = [
     TrendingCalendarTime: "Announced",
     TrendingCalendarCategory:
       "Infrastructure | Kanchipuram | Industry | Trending",
-    image: "/images/kanchipuramSIPCOT.png",
-    Homeimage: "/images/kanchipuramSIPCOT.png",
+    image: "/images/Sipcot -CM( TVK).jpeg",
+    Homeimage: "/images/Sipcot -CM( TVK).jpeg",
     link: "/trending-chennai/kanchipuram-803-acre-sipcot-industrial-park",
     duration: "Recently Announced",
     ageRestriction: "Open for All",

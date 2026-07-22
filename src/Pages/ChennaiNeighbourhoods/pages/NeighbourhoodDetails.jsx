@@ -262,6 +262,8 @@ export default function NeighbourhoodDetail() {
     nextArrow: <NextArrow />,
   };
 
+  const currentLocationName = location?.label || "this neighbourhood";
+
   return (
     <div id="poppinsssFamily">
       <div className="relative min-h-[600px] flex flex-col justify-center pb-10 px-8 overflow-hidden bg-[#0a051e]">
@@ -698,10 +700,10 @@ export default function NeighbourhoodDetail() {
                 Nearby Localities
               </span>
               <h2 className="text-2xl font-bold text-gray-900 mb-1 neighbourtwosecondheading">
-                Explore Neighbourhoods Around T. Nagar
+                Explore Neighbourhoods Around {currentLocationName}
               </h2>
               <p className="text-gray-500 mb-1 bodyneighfontsss text-[15px]">
-                Discover vibrant neighbourhoods close to T. Nagar. Each has its
+                Discover vibrant neighbourhoods close to {currentLocationName} Each has its
                 own charm, amenities and lifestyle.
               </p>
             </div>

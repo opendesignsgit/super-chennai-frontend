@@ -7612,6 +7612,56 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
+  id: 102352,
+  name: "PINKATHON RETURNS TO CHENNAI AFTER 7 YEARS AT ISLAND GROUNDS",
+  slug: "pinkathon-returns-to-chennai-after-7-years",
+  para: "Pinkathon returns to Chennai on August 1 & 2 at Island Grounds, celebrating women's fitness, health, and empowerment.",
+  TrendingCalendarMonth: "August 2026",
+  TrendingCalendarTime: "August 1 & 2",
+  TrendingCalendarCategory:
+    "Sports | Fitness | Women | Trending",
+  image: "/images/PINKATHON.png",
+  Homeimage: "/images/PINKATHON.png",
+  link: "/trending-chennai/pinkathon-returns-to-chennai-after-7-years",
+  duration: "2 Days",
+  ageRestriction: "Open for All",
+  language: "Tamil | English",
+  genre: "Marathon | Fitness | Women's Empowerment",
+  venue: "Island Grounds, Chennai",
+
+  trendingDetails: `
+<p>
+🏃‍♀️💗 Pinkathon is back in Chennai after a seven-year break!
+</p>
+
+<p>
+One of India's most celebrated women's running events will be held on <b>August 1 & 2</b> at <b>Island Grounds, Chennai</b>, bringing together thousands of participants for an inspiring celebration of fitness and wellness.
+</p>
+
+<p>
+The event features multiple race categories ranging from <b>3 km to 100 km</b>, making it accessible for women of all ages and fitness levels—from beginners taking their first steps to experienced marathon runners.
+</p>
+
+<p>
+More than just a marathon, <b>Pinkathon promotes health, resilience, confidence, and women's empowerment</b>, encouraging participants to embrace an active lifestyle while being part of a strong and supportive community.
+</p>
+
+<p>
+Get ready for an energetic weekend filled with determination, inspiration, and the spirit of togetherness at one of Chennai's most anticipated fitness events. 🌸✨
+</p>
+`,
+
+  TrendingLink: "",
+  YoutubeLink: "",
+
+  meta: {
+    title: "Pinkathon Returns to Chennai After 7 Years | Island Grounds",
+    desc: "Pinkathon returns to Chennai after seven years at Island Grounds on August 1 & 2 with 3 km to 100 km races celebrating fitness, health, and women's empowerment.",
+    url: "https://www.superchennai.com/trending-chennai/pinkathon-returns-to-chennai-after-7-years",
+  },
+},
+
+  {
     id: 102351,
     name: "KANCHIPURAM GETS A NEW 803-ACRE SIPCOT INDUSTRIAL PARK ",
     slug: "kanchipuram-803-acre-sipcot-industrial-park",

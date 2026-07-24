@@ -166,13 +166,21 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    image: "/images/homepage-banner-arratai-home.jpeg",
-    link: "arattai-with-bharathy-bhaskar/prominent-speaker",
-    image1: "/images/mobile-home-bharathi.jpeg",
-    title: "chennai's surfing",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   image: "/images/tvs-emerald.superchennai.jpeg",
+  //   link: "arattai-with-bharathy-bhaskar/prominent-speaker",
+  //   image1: "/images/TVS-Mobile-Superchennai.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
+
+  // {
+  //   image: "/images/homepage-banner-arratai-home.jpeg",
+  //   link: "arattai-with-bharathy-bhaskar/prominent-speaker",
+  //   image1: "/images/mobile-home-bharathi.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   {
     image: "/images/HomePage-Images/banner-0.jpg",

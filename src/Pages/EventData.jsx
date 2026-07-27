@@ -7612,24 +7612,69 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
-  id: 102352,
-  name: "PINKATHON RETURNS TO CHENNAI AFTER 7 YEARS AT ISLAND GROUNDS",
-  slug: "pinkathon-returns-to-chennai-after-7-years",
-  para: "Pinkathon returns to Chennai on August 1 & 2 at Island Grounds, celebrating women's fitness, health, and empowerment.",
-  TrendingCalendarMonth: "August 2026",
-  TrendingCalendarTime: "August 1 & 2",
-  TrendingCalendarCategory:
-    "Sports | Fitness | Women | Trending",
-  image: "/images/PINKATHON.png",
-  Homeimage: "/images/PINKATHON.png",
-  link: "/trending-chennai/pinkathon-returns-to-chennai-after-7-years",
-  duration: "2 Days",
-  ageRestriction: "Open for All",
-  language: "Tamil | English",
-  genre: "Marathon | Fitness | Women's Empowerment",
-  venue: "Island Grounds, Chennai",
+    id: 102353,
+    name: "CHENNAI'S VICTORY WAR MEMORIAL SET FOR A DEFENCE-THEMED TRANSFORMATION",
+    slug: "military-displays-chennai-victory-war-memorial",
+    para: "Chennai's Victory War Memorial will soon feature a T-55 battle tank, naval ship replicas, and defence exhibits, celebrating the legacy of India's armed forces.",
+    TrendingCalendarMonth: "August 2026",
+    TrendingCalendarTime: "Coming Soon",
+    TrendingCalendarCategory: "Heritage | Defence | Chennai | Trending",
+    Homeimage: "/images/VICTORY-WAR-MEMORIAL-main.jpeg",
+    image: "/images/VICTORY-WAR-MEMORIAL-inner.jpeg",
+    link: "/trending-chennai/military-displays-chennai-victory-war-memorial",
+    duration: "Permanent Installation",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Heritage | Military | Public Exhibition",
+    venue: "Victory War Memorial, Chennai",
 
-  trendingDetails: `
+    trendingDetails: `
+<p>
+🇮🇳 Chennai's iconic <b>Victory War Memorial</b> is set to receive a remarkable defence-themed transformation, offering visitors a deeper connection to India's military history and heritage.
+</p>
+
+<p>
+As part of the enhancement, the memorial will soon showcase a <b>T-55 battle tank</b>, <b>replicas of naval warships</b>, and several other defence exhibits that honour the courage, sacrifice, and service of the nation's armed forces.
+</p>
+
+<p>
+The initiative is being carried out with the support of the <b>Indian Army</b>, the <b>Government of Tamil Nadu</b>, and the <b>Greater Chennai Corporation</b>. The project aims not only to enrich the landmark visually but also to preserve and promote awareness of India's military legacy for future generations.
+</p>
+
+<p>
+Once completed, the upgraded memorial will serve as more than just a historic monument—it will become a meaningful public space where history, patriotism, and inspiration come together for visitors of all ages. 🇮🇳✨
+</p>
+`,
+
+    TrendingLink:
+      "https://www.instagram.com/p/DbQbJvCTEmq/?igsh=aTk2NTludnBqMnRz",
+    YoutubeLink: "",
+
+    meta: {
+      title: "New Military Displays at Chennai's Victory War Memorial",
+      desc: "Chennai's Victory War Memorial gets a T-55 battle tank, naval ship replicas, and defence exhibits with support from the Indian Army, Tamil Nadu Government, and Greater Chennai Corporation.",
+      url: "https://www.superchennai.com/trending-chennai/military-displays-chennai-victory-war-memorial",
+    },
+  },
+
+  {
+    id: 102352,
+    name: "PINKATHON RETURNS TO CHENNAI AFTER 7 YEARS AT ISLAND GROUNDS",
+    slug: "pinkathon-returns-to-chennai-after-7-years",
+    para: "Pinkathon returns to Chennai on August 1 & 2 at Island Grounds, celebrating women's fitness, health, and empowerment.",
+    TrendingCalendarMonth: "August 2026",
+    TrendingCalendarTime: "August 1 & 2",
+    TrendingCalendarCategory: "Sports | Fitness | Women | Trending",
+    image: "/images/PINKATHON.png",
+    Homeimage: "/images/PINKATHON.png",
+    link: "/trending-chennai/pinkathon-returns-to-chennai-after-7-years",
+    duration: "2 Days",
+    ageRestriction: "Open for All",
+    language: "Tamil | English",
+    genre: "Marathon | Fitness | Women's Empowerment",
+    venue: "Island Grounds, Chennai",
+
+    trendingDetails: `
 <p>
 🏃‍♀️💗 Pinkathon is back in Chennai after a seven-year break!
 </p>
@@ -7651,15 +7696,15 @@ Get ready for an energetic weekend filled with determination, inspiration, and t
 </p>
 `,
 
-  TrendingLink: "",
-  YoutubeLink: "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  meta: {
-    title: "Pinkathon Returns to Chennai After 7 Years | Island Grounds",
-    desc: "Pinkathon returns to Chennai after seven years at Island Grounds on August 1 & 2 with 3 km to 100 km races celebrating fitness, health, and women's empowerment.",
-    url: "https://www.superchennai.com/trending-chennai/pinkathon-returns-to-chennai-after-7-years",
+    meta: {
+      title: "Pinkathon Returns to Chennai After 7 Years | Island Grounds",
+      desc: "Pinkathon returns to Chennai after seven years at Island Grounds on August 1 & 2 with 3 km to 100 km races celebrating fitness, health, and women's empowerment.",
+      url: "https://www.superchennai.com/trending-chennai/pinkathon-returns-to-chennai-after-7-years",
+    },
   },
-},
 
   {
     id: 102351,

@@ -18,37 +18,34 @@ const detailsections = [
     id: 3,
     title: "Global & Continental Cuisine",
     points: [
-
-     {
-  name: "The Brunch Theory",
-  date: "22/07/2026",
-  description:
-    "The Brunch Theory is a stylish café on KNK Road, Nungambakkam, offering a unique blend of dining and retail experiences.",
-  subDescription:
-    "It serves creative Asian and Continental dishes, signature beverages, and indulgent desserts in a warm and inviting setting.",
-  locations: [
-    {
-      label: "Nungambakkam",
-      link: "https://maps.app.goo.gl/oDNkME814vszYtcE9",
-    },
-  ],
-},
-{
-  name: "The Lab",
-  date: "22/07/2026",
-  description:
-    "The Lab is a modern multi-level resto-café on TTK Road, Royapettah, offering a creative dining experience with Continental and Italian cuisine.",
-  subDescription:
-    "Known for its stylish interiors and DIY coffee bar, it's a favourite destination for evening meetups and late-night dining.",
-  locations: [
-    {
-      label: "TTK Road",
-      link: "https://maps.app.goo.gl/rCGnzBiKQBkVdpAL7",
-    },
-  ],
-},
-
-
+      {
+        name: "The Brunch Theory",
+        date: "22/07/2026",
+        description:
+          "The Brunch Theory is a stylish café on KNK Road, Nungambakkam, offering a unique blend of dining and retail experiences.",
+        subDescription:
+          "It serves creative Asian and Continental dishes, signature beverages, and indulgent desserts in a warm and inviting setting.",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/oDNkME814vszYtcE9",
+          },
+        ],
+      },
+      {
+        name: "The Lab",
+        date: "22/07/2026",
+        description:
+          "The Lab is a modern multi-level resto-café on TTK Road, Royapettah, offering a creative dining experience with Continental and Italian cuisine.",
+        subDescription:
+          "Known for its stylish interiors and DIY coffee bar, it's a favourite destination for evening meetups and late-night dining.",
+        locations: [
+          {
+            label: "TTK Road",
+            link: "https://maps.app.goo.gl/rCGnzBiKQBkVdpAL7",
+          },
+        ],
+      },
 
       {
         name: "The Lab",
@@ -437,33 +434,47 @@ const detailsections = [
     title: "Asian Cuisine",
     points: [
       {
-  name: "Double Dashi",
-  date: "22/07/2026",
-  description:
-    "Double Dashi is a lively Japanese and Asian-fusion café in Anna Nagar East with a Tokyo-inspired ambience.",
-  subDescription:
-    "Featuring a nostalgic PS2 gaming zone, it serves ramen, Asian favourites, and signature dishes for casual dining and hangouts.",
-  locations: [
-    {
-      label: "Anna Nagar",
-      link: "https://maps.app.goo.gl/n28xBV9EfzaAAxsG6",
-    },
-  ],
-},
-{
-  name: "Koiro – The Asian Bar & Kitchen",
-  date: "22/07/2026",
-  description:
-    "Koiro – The Asian Bar & Kitchen is a vibrant underground dining destination in RA Puram serving authentic Japanese, Korean, and Thai cuisine.",
-  subDescription:
-    "Known for its Tokyo-inspired interiors, handcrafted cocktails, and flavourful Asian dishes, it's a popular evening dining spot.",
-  locations: [
-    {
-      label: "RA Puram",
-      link: "https://maps.app.goo.gl/sauFdevcCYqmVA5z9",
-    },
-  ],
-},
+        name: "OPM 2.0",
+        date: "22/07/2026",
+        description:
+          "OPM 2.0 at The Accord Metropolitan, T. Nagar, Chennai, offers an upgraded rooftop dining experience with pan-Asian cuisine, premium seafood, and signature cocktails.",
+        subDescription:
+          "Located on G.N. Chetty Road, the open-air venue features modern décor, water elements, and panoramic sunset views.",
+        locations: [
+          {
+            label: "T. Nagar",
+            link: "https://maps.app.goo.gl/q4uKfDRVaxQBXGq1A",
+          },
+        ],
+      },
+      {
+        name: "Double Dashi",
+        date: "22/07/2026",
+        description:
+          "Double Dashi is a lively Japanese and Asian-fusion café in Anna Nagar East with a Tokyo-inspired ambience.",
+        subDescription:
+          "Featuring a nostalgic PS2 gaming zone, it serves ramen, Asian favourites, and signature dishes for casual dining and hangouts.",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/n28xBV9EfzaAAxsG6",
+          },
+        ],
+      },
+      {
+        name: "Koiro – The Asian Bar & Kitchen",
+        date: "22/07/2026",
+        description:
+          "Koiro – The Asian Bar & Kitchen is a vibrant underground dining destination in RA Puram serving authentic Japanese, Korean, and Thai cuisine.",
+        subDescription:
+          "Known for its Tokyo-inspired interiors, handcrafted cocktails, and flavourful Asian dishes, it's a popular evening dining spot.",
+        locations: [
+          {
+            label: "RA Puram",
+            link: "https://maps.app.goo.gl/sauFdevcCYqmVA5z9",
+          },
+        ],
+      },
 
       {
         name: "Copper Elite",
@@ -777,51 +788,90 @@ const detailsections = [
     id: 5,
     title: "Cafés & Casual Bites",
     points: [
-
       {
-  name: "Backstory Coffee",
-  date: "22/07/2026",
-  description:
-    "Backstory Coffee is a peaceful garden-style café in Alwarpet with cozy indoor seating and a pet-friendly outdoor space.",
-  subDescription:
-    "Known for its relaxing ambience and specialty coffee, it's ideal for casual meetups and work sessions.",
-  locations: [
-    {
-      label: "Alwarpet",
-      link: "https://maps.app.goo.gl/YnebJNaPrDXoWhQG9",
-    },
-  ],
-},
-{
-  name: "Level 6 Cafe",
-  date: "22/07/2026",
-  description:
-    "Level 6 Cafe is a stylish pure vegetarian café and shisha lounge in Chetpet.",
-  subDescription:
-    "Offering quick bites, refreshing beverages, and a cozy ambience, it's a popular destination for late-night outings and casual meetups.",
-  locations: [
-    {
-      label: "Chetpet",
-      link: "",
-    },
-  ],
-},
-{
-  name: "High On Coffee (HOC)",
-  date: "22/07/2026",
-  description:
-    "High On Coffee (HOC) is a modern café in Egmore known for handcrafted coffee and signature beverages.",
-  subDescription:
-    "With cozy seating and a welcoming atmosphere, it's an ideal place for casual catch-ups, work sessions, or relaxing over coffee.",
-  locations: [
-    {
-      label: "Egmore",
-      link: "https://maps.app.goo.gl/ioWcCBr5AZiDvsax7",
-    },
-  ],
-},
-
-
+        name: "EasyBites",
+        date: "22/07/2026",
+        description:
+          "EasyBites launched its first flagship dine-in outlet on KNK Road, Chennai, with store hours from 10 AM to Midnight.",
+        subDescription:
+          "Launch offers included Chilly Cheesy Fries ₹29, Fries + Popcorn ₹49, 2 Pc Crispy Chicken ₹79, and 4 Strips + 4 Wings ₹99. Special offers were available until July 26.",
+        locations: [
+          {
+            label: "KNK Road",
+            link: "https://maps.app.goo.gl/nqY9eKEnerGy7DN37",
+          },
+        ],
+      },
+      {
+        name: "Beachville Coffee Roasters",
+        date: "22/07/2026",
+        description:
+          "Beachville Coffee Roasters expanded with its second café in Thiruvanmiyur, Chennai, following the success of its flagship outlet in Alwarpet.",
+        subDescription:
+          "The new café is located on Second Seaward Road, Valmiki Nagar, offering its signature specialty coffee and café experience.",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/y43s7SpYsFyV1qk28",
+          },
+        ],
+      },
+      {
+        name: "Inizio Café",
+        date: "22/07/2026",
+        description:
+          "Inizio Café opened near Padi on Park Road, Chennai, serving speciality coffee alongside a diverse menu of comfort food.",
+        subDescription:
+          "Menu highlights include burgers, sandwiches, pizza momos, BBQ, waffles, loaded milkshakes, and speciality coffee.",
+        locations: [
+          {
+            label: "Anna Nagar West",
+            link: "https://maps.app.goo.gl/vyVP9rjwMbGpE5CF7",
+          },
+        ],
+      },
+      {
+        name: "Backstory Coffee",
+        date: "22/07/2026",
+        description:
+          "Backstory Coffee is a peaceful garden-style café in Alwarpet with cozy indoor seating and a pet-friendly outdoor space.",
+        subDescription:
+          "Known for its relaxing ambience and specialty coffee, it's ideal for casual meetups and work sessions.",
+        locations: [
+          {
+            label: "Alwarpet",
+            link: "https://maps.app.goo.gl/YnebJNaPrDXoWhQG9",
+          },
+        ],
+      },
+      {
+        name: "Level 6 Cafe",
+        date: "22/07/2026",
+        description:
+          "Level 6 Cafe is a stylish pure vegetarian café and shisha lounge in Chetpet.",
+        subDescription:
+          "Offering quick bites, refreshing beverages, and a cozy ambience, it's a popular destination for late-night outings and casual meetups.",
+        locations: [
+          {
+            label: "Chetpet",
+            link: "",
+          },
+        ],
+      },
+      {
+        name: "High On Coffee (HOC)",
+        date: "22/07/2026",
+        description:
+          "High On Coffee (HOC) is a modern café in Egmore known for handcrafted coffee and signature beverages.",
+        subDescription:
+          "With cozy seating and a welcoming atmosphere, it's an ideal place for casual catch-ups, work sessions, or relaxing over coffee.",
+        locations: [
+          {
+            label: "Egmore",
+            link: "https://maps.app.goo.gl/ioWcCBr5AZiDvsax7",
+          },
+        ],
+      },
 
       {
         name: "Suto Café",
@@ -1745,24 +1795,35 @@ const detailsections = [
     id: 6,
     title: "Beachside & Rooftop Dining",
     points: [
+      {
+        name: "IGNNA Cocktail Bar & Rooftop Restaurant",
+        date: "22/07/2026",
 
-     {
-  name: "Café La Mirajh",
-  date: "22/07/2026",
-  description:
-    "Café La Mirajh is a stylish rooftop café in Anna Nagar offering panoramic city views and a relaxed ambience.",
-  subDescription:
-    "Featuring gaming zones, free Wi-Fi, and comfortable seating, it's an ideal destination for casual meetups, work sessions, and evening outings.",
-  locations: [
-    {
-      label: "Anna Nagar",
-      link: "https://maps.app.goo.gl/74w32bFsscJBKMsy5",
-    },
-  ],
-},
-
-
-
+        description:
+          "IGNNA refreshed its concept in May 2026, evolving into an elevated cocktail-led rooftop destination in Chennai.",
+        subDescription:
+          "Located at 58 Sterling Road, Nungambakkam, the rooftop blends Moroccan and Mediterranean-inspired décor with open-air golden-hour views.",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/6k8vnNRJn2v4bKBs5",
+          },
+        ],
+      },
+      {
+        name: "Café La Mirajh",
+        date: "22/07/2026",
+        description:
+          "Café La Mirajh is a stylish rooftop café in Anna Nagar offering panoramic city views and a relaxed ambience.",
+        subDescription:
+          "Featuring gaming zones, free Wi-Fi, and comfortable seating, it's an ideal destination for casual meetups, work sessions, and evening outings.",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/74w32bFsscJBKMsy5",
+          },
+        ],
+      },
 
       {
         name: "Samra Bar, Kitchen-Skydeck",
@@ -2216,22 +2277,66 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
-
-     {
-  name: "Rewind by Radio Room",
-  date: "22/07/2026",
-  description:
-    "Rewind by Radio Room is a retro-themed cocktail lounge on KNK Road, Nungambakkam.",
-  subDescription:
-    "Blending vintage charm with handcrafted cocktails, flavourful bar bites, and lively music, it's a popular destination for relaxed evenings and nightlife.",
-  locations: [
-    {
-      label: "KNK Road",
-      link: "https://maps.app.goo.gl/s2nJGfj3oDURJCV48",
-    },
-  ],
-},
-
+      {
+        name: "Parva",
+        date: "22/07/2026",
+        description:
+          "Parva opened in Chennai in late May 2026 with the theme 'Celebrating India’s Kitchens,' bringing together culinary traditions from 23 Indian states.",
+        subDescription:
+          "Located on ECR, Panaiyur, the restaurant is led by Chef & Managing Partner Arupam Baidya and serves dishes like Bafauri, Fish Kabiraji, Chakhao Kheer, and Kanji Wada.",
+        locations: [
+          {
+            label: "Panaiyur",
+            link: "https://maps.app.goo.gl/DhfvqVG6Q5ZWG6Nr6",
+          },
+        ],
+      },
+      {
+        name: "Ritvah",
+        date: "22/07/2026",
+        description:
+          "Ritvah opened at ITC Grand Chola, Chennai, offering premium Indian mithai and savouries with a modern interpretation of traditional flavours.",
+        subDescription:
+          "Located beside Peshawri on the lobby level, it is open daily from 11 AM to midnight and features specialties like Boondi Kalakand Roll, Almond Jowar Laddoo, Paanch Beej Laddoo, saffron nuts, Peri Peri Cashews, and Togarashi Almonds.",
+        locations: [
+          {
+            label: "Guindy",
+            link: "https://maps.app.goo.gl/xtyvCJ8tYBCMh8fh8",
+          },
+        ],
+      },
+      {
+        name: "BB Lunch Club",
+        date: "22/07/2026",
+        description:
+          "BB Lunch Club at Bombay Brasserie launched a special weekday lunch experience across Chennai and other major Indian cities.",
+        subDescription:
+          "The experience includes the Bombay Plate, regional small plates, hearty mains, dessert, and optional Pauwa cocktails.",
+        locations: [
+          {
+            label: "Nungambakkam",
+            link: "https://maps.app.goo.gl/5JnVXefWPeddswy48",
+          },
+          {
+            label: "Adyar",
+            link: "https://maps.app.goo.gl/KVPxkpkvzcRGbfpDA",
+          },
+        ],
+      },
+      {
+        name: "Rewind by Radio Room",
+        date: "22/07/2026",
+        description:
+          "Rewind by Radio Room is a retro-themed cocktail lounge on KNK Road, Nungambakkam.",
+        subDescription:
+          "Blending vintage charm with handcrafted cocktails, flavourful bar bites, and lively music, it's a popular destination for relaxed evenings and nightlife.",
+        locations: [
+          {
+            label: "KNK Road",
+            link: "https://maps.app.goo.gl/s2nJGfj3oDURJCV48",
+          },
+        ],
+      },
 
       {
         name: "Al Moon Multicuisine Restaurant",

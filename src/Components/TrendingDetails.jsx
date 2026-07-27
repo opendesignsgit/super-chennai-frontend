@@ -1610,6 +1610,35 @@ export default function TrendingDetails() {
    ];
 
 
+      const pinkothan = [
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/pinkathon-returns-to-chennai-after-7-years"
+  },
+  "headline": "PINKATHON RETURNS TO CHENNAI AFTER 7 YEARS AT ISLAND GROUNDS",
+  "description": "Pinkathon returns to Chennai after seven years at Island Grounds on August 1 & 2 with 3 km to 100 km races celebrating fitness, health, and women's empowerment.",
+  "image": "https://www.superchennai.com/images/PINKATHON.png",  
+  "author": {
+    "@type": "Person",
+    "name": "Super Chennai"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": ""
+}
+
+   ];
+
+
   return (
     <>
       <Helmet>
@@ -1634,6 +1663,13 @@ export default function TrendingDetails() {
           rel="canonical"
           href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
         />
+
+        {slug ===
+          "trending-chennai/pinkathon-returns-to-chennai-after-7-years" && (
+          <script type="application/ld+json">
+            {JSON.stringify(pinkothan)}
+          </script>
+        )}
 
         {slug ===
           "trending-chennai/kanchipuram-803-acre-sipcot-industrial-park" && (

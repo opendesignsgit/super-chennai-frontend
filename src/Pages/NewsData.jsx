@@ -370,8 +370,77 @@ export const two = [
 
 
 export const newsArticle = [
+  {
+    id: -98984541323233263,
+    Company: "Chennaiglitz |  July 24, 2026",
+    EventsCalendarTitle:
+      "Super Chennai Honours Bharathy Bhaskar as Icon of the Month | “Words are More Powerful Than Any Weapon” Says Celebrated Orator;",
+    image: "/images/bharathi-baskaran-glirz.jpg",
+    link: "https://chennaiglitz.com/super-chennai-honours-bharathy-bhaskar-as-icon-of-the-month-words-are-more-powerful-than-any-weapon-says-celebrated-orator/",
+  },
+  {
+    id: -98984541323233263,
+    Company: "Chennai Updates |  July 27, 2026",
+    EventsCalendarTitle:
+      "Super Chennai Honours Bharathy Bhaskar as Icon of the Month;",
+    image: "/images/view7.jpeg",
+    link: "https://chennaiupdates.com/super-chennai-honours-bharathy-bhaskar-as-icon-of-the-month/",
+  },
 
-    {
+  {
+    id: -98984541323233263,
+    Company: "NxtPix Media |   July 26, 2026",
+    EventsCalendarTitle:
+      "Super Chennai Honours Bharathy Bhaskar as Icon of the Month;",
+    image: "/images/view7.jpeg",
+    link: "https://www.nxtpix.com/super-chennai-honours-bharathy-bhaskar-as-icon-of-the-month/",
+  },
+  {
+    id: -989845413631143263,
+    Company: "Chennaipatrika |   Jul 25, 2026",
+    EventsCalendarTitle:
+      "Super Chennai Honours Bharathy Bhaskar as Icon of the Month",
+
+    image: "/images/The Hindu.jpeg",
+    link: "https://chennaipatrika.com/post/super-chennai-honours-bharathy-bhaskar-as-icon-of-the-month",
+  },
+  {
+    id: -98984541363143263,
+    Company: "B4U Media |   July 18, 2026",
+    EventsCalendarTitle:
+      "Super Chennai Honours Bharathy Bhaskar as Icon of the Month;",
+    image: "/images/The Hindu.jpeg",
+    link: "https://www.b4umedia.in/super-chennai-honours-bharathy-bhaskar-as-icon-of-the-month/",
+  },
+
+  {
+    id: -9898454136343263,
+    Company: "View7media |   July 27, 2026",
+    EventsCalendarTitle:
+      "Super Chennai Honours Bharathy Bhaskar as Icon of the Month",
+    image: "/images/view7.jpeg",
+    link: "https://view7media.in/2026/07/27/super-chennai-honours-bharathy-bhaskar-as-icon-of-the-month/",
+  },
+
+  {
+    id: -989845436343263,
+    Company: "CNN O TV |   July 26, 2026",
+    EventsCalendarTitle:
+      "Super Chennai Honours Bharathy Bhaskar as Icon of the Month",
+    image: "/images/cnote.jpeg",
+    link: "https://cnnotv.com/49186-2/",
+  },
+
+  {
+    id: -989843436343263,
+    Company: "The Hindu |   July 25, 2026",
+    EventsCalendarTitle:
+      "Bharathy Bhaskar honoured as Super Chennai’s Icon of the Month",
+    image: "/images/The Hindu.jpeg",
+    link: "https://www.thehindu.com/news/cities/chennai/bharathy-bhaskar-honoured-as-super-chennais-icon-of-the-month/article71263179.ece",
+  },
+
+  {
     id: -98984343643263,
     Company: "chennaipatrika |  June 29, 2026",
     EventsCalendarTitle:
@@ -380,7 +449,7 @@ export const newsArticle = [
     link: "https://chennaipatrika.com/post/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr.-soumya-swaminathan",
   },
 
-    {
+  {
     id: -98984343643263,
     Company: "HitechnewsTv |  June 28, 2026",
     EventsCalendarTitle:
@@ -398,8 +467,7 @@ export const newsArticle = [
     link: "http://chennaiupdates.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
   },
 
-
-    {
+  {
     id: -9898663,
     Company: "Chennaiglitz | June 28, 2026",
     EventsCalendarTitle:
@@ -407,7 +475,6 @@ export const newsArticle = [
     image: "/images/expressnews.asia.jpg",
     link: "https://chennaiglitz.com/nutrition-is-the-best-vaccine-super-chennai-honours-icon-of-the-month-dr-soumya-swaminathan/",
   },
-
 
   {
     id: -9898663,
@@ -461,9 +528,7 @@ export const newsArticle = [
     link: "https://www.thehindubusinessline.com/news/science/nutrition-the-best-vaccine-soumya-swaminathan/article71158352.ece#google_vignette",
   },
 
-
-
-// OLD ###############
+  // OLD ###############
   {
     id: -7221221328,
     Company: "The Hindu BusinessLine | 31 Mar 2026",
@@ -1129,8 +1194,33 @@ export const NammaStoreiesnewsArticle = [
 
 export const newsPhotos = [
 
+    {
+    id: -121,
+    Company: "July 25",
+    EventsCalendarTitle:
+      "భారతీ భాస్కర్కు పురస్కారం ప్రదానం సాక్షి, చెన్నై: చెన్నైలోని ప్రముఖ సామాజిక వేదిక సూపర్ చెన్నై నిర్వహించిన సూపర్ చెన్నై",
+    image: "/images/Shakshi-pathirika.jpeg",
+    image1: "/images/Shakshi-pathirika.jpeg",
+  },
+  {
+    id: -121,
+    Company: "July 25",
+    EventsCalendarTitle:
+      "'आइकन ऑफ द मंथ' सम्मान प्राप्त करते हुए।",
+    image: "/images/Rajasthan-patrika.jpeg",
+    image1: "/images/Rajasthan-patrika.jpeg",
+  },
 
-      {
+  {
+    id: -121,
+    Company: "July 25",
+    EventsCalendarTitle:
+      "Bharathy Bhaskar is Super Chennai's Icon of the Month",
+    image: "/images/bharathy-baskar-icon.jpeg",
+    image1: "/images/bharathy-baskar-icon.jpeg",
+  },
+
+  {
     id: -121,
     Company: "March 29, 2026",
     EventsCalendarTitle:
@@ -1139,13 +1229,10 @@ export const newsPhotos = [
     image1: "/images/sowmya-mathrubumi.jpg",
   },
 
-
-
-    {
+  {
     id: -112,
     Company: "March 30, 2026",
-    EventsCalendarTitle:
-      "వ్యాక్సిన్లాగే ఏవియన్ పరీక్షించాలి  ",
+    EventsCalendarTitle: "వ్యాక్సిన్లాగే ఏవియన్ పరీక్షించాలి  ",
     image: "/images/sowmiya-k-news.jpeg",
     image1: "/images/sowmiya-k-news.jpeg",
   },

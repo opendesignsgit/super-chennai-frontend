@@ -7612,6 +7612,51 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
+  id: 102355,
+  name: "A DREAM BUILT ON DETERMINATION – ASWIN'S REMARKABLE FOOTBALL JOURNEY",
+  slug: "aswin-kathirvel-chennai-footballer-minerva-academy",
+  para: "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy win the prestigious Gothia Cup and Helsinki Cup 2026, inspiring young footballers across India.",
+  TrendingCalendarMonth: "2026",
+  TrendingCalendarTime: "Achievement",
+  TrendingCalendarCategory: "Sports | Football | Chennai | Trending",
+  Homeimage: "/images/Ashwin-foodball.jpeg",
+  image: "/images/Ashwin-foodball.jpeg",
+  link: "/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
+  duration: "Achievement",
+  ageRestriction: "Open for All",
+  language: "English",
+  genre: "Sports | Football | Youth Achievement",
+  venue: "Chennai / Europe",
+
+  trendingDetails: `
+<p>
+⚽ At just <b>11 years old</b>, <b>Aswin Kathirvel Narayanan</b> from Chennai has become an inspiration through his extraordinary journey of resilience, determination, and sporting excellence.
+</p>
+
+<p>
+Following the heartbreaking loss of his mother, Aswin made the courageous decision to return to <b>Minerva Academy</b> and continue pursuing the dream she always believed in. Despite the emotional challenges, he remained focused on football with the constant support of his father and his first coach.
+</p>
+
+<p>
+His dedication and years of hard work paid off as he played a key role in helping <b>Minerva Academy</b> secure victories in both the prestigious <b>Helsinki Cup</b> and the <b>Gothia Cup 2026</b> in Europe—two of the world's most celebrated youth football tournaments.
+</p>
+
+<p>
+Today, those championship trophies represent much more than sporting success. They stand as a heartfelt tribute to his mother's unwavering belief and the inspiring journey of a young footballer who never gave up on his dream. ❤️⚽🏆
+</p>
+`,
+
+  TrendingLink:
+    "https://www.instagram.com/p/DbYOqKDzL9w/?igsh=bm5ocG53aDZzb2g0",
+  YoutubeLink: "",
+
+  meta: {
+    title: "Chennai's Aswin Shines in Minerva's Gothia & Helsinki Cup Wins | Super Chennai",
+    desc: "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy lift the Gothia Cup and Helsinki Cup 2026, making the city proud.",
+    url: "https://www.superchennai.com/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
+  },
+},
+  {
   id: 1023524,
   name: "UNIVERSITY OF WESTERN AUSTRALIA TO OPEN FIRST INDIA CAMPUS IN VELACHERY",
   slug: "uwa-first-india-campus-velachery-chennai",

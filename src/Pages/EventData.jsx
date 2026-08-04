@@ -7612,6 +7612,50 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
+  id: 1023524,
+  name: "UNIVERSITY OF WESTERN AUSTRALIA TO OPEN FIRST INDIA CAMPUS IN VELACHERY",
+  slug: "uwa-first-india-campus-velachery-chennai",
+  para: "The University of Western Australia will establish its first India campus in Velachery, Chennai, creating over 200 jobs through a Rs 125 crore investment.",
+  TrendingCalendarMonth: "Late 2026",
+  TrendingCalendarTime: "Coming Soon",
+  TrendingCalendarCategory: "Education | International | Chennai | Trending",
+  Homeimage: "/images/UWA-VELACHERY-main.jpeg",
+  image: "/images/UWA-VELACHERY-inner.jpeg",
+  link: "/trending-chennai/uwa-first-india-campus-velachery-chennai",
+  duration: "Permanent Campus",
+  ageRestriction: "Open for All",
+  language: "English",
+  genre: "Education | International University | Higher Education",
+  venue: "One National Park, Velachery, Chennai",
+
+  trendingDetails: `
+<p>
+🎓 The <b>University of Western Australia (UWA)</b> is set to establish its <b>first campus in India</b> at <b>One National Park, Velachery, Chennai</b>, marking a major milestone in international higher education for Tamil Nadu.
+</p>
+
+<p>
+Spread across <b>50,000 sq. ft.</b>, the new campus represents an investment of <b>Rs 125 crore</b> and is expected to create <b>more than 200 employment opportunities</b>, further strengthening Chennai's position as a growing education and innovation hub.
+</p>
+
+<p>
+The project was formalized through the signing of a <b>Memorandum of Understanding (MoU)</b>, with the event taking place in the presence of <b>Chief Minister M.K. Stalin</b>. The campus is expected to begin academic operations in <b>late 2026</b>.
+</p>
+
+<p>
+With the arrival of UWA, students in India will gain access to internationally recognised education while reinforcing Chennai's reputation as a preferred destination for global institutions. 🌏📚
+</p>
+`,
+
+  TrendingLink: "",
+  YoutubeLink: "",
+
+  meta: {
+    title: "UWA to Open First India Campus in Velachery | Super Chennai",
+    desc: "University of Western Australia to open Tamil Nadu's first international university campus in Velachery, Chennai, creating 200+ jobs with a Rs 125 crore investment.",
+    url: "https://www.superchennai.com/trending-chennai/uwa-first-india-campus-velachery-chennai",
+  },
+},
+  {
     id: 102353,
     name: "CHENNAI'S VICTORY WAR MEMORIAL SET FOR A DEFENCE-THEMED TRANSFORMATION",
     slug: "military-displays-chennai-victory-war-memorial",

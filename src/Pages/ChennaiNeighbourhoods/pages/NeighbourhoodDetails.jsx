@@ -12,26 +12,19 @@ import FaqNeighbourhoods from "../Components/FaqNeighbourhoods";
 import WhatsNearby from "../Components/WhatsNearby";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Slider from "react-slick";
-
 export default function NeighbourhoodDetail() {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState(null);
   const [openIndex, setOpenIndex] = useState(null);
   const [categoryCounts, setCategoryCounts] = useState({});
   const { locationId } = useParams();
-
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
   const { data, loading } = useNeighbourhood({
     location: decodeURIComponent(locationId),
   });
-
-  console.log("locationbased 0-------------------------------------------- data",data)
-
   const { locations } = useLocations();
-
   useEffect(() => {
     if (data && typeof data === "object") {
       const counts = Object.entries(data).reduce(
@@ -47,9 +40,7 @@ export default function NeighbourhoodDetail() {
       setCategoryCounts(counts);
     }
   }, [data]);
-
   if (loading) return <NeighbourhoodSkeleton />;
-
   if (!data || data.length === 0) {
     return (
       <EmptyState
@@ -59,7 +50,6 @@ export default function NeighbourhoodDetail() {
       />
     );
   }
-
   const location = data?.[0]?.locations;
   if (!location) {
     return (
@@ -70,8 +60,6 @@ export default function NeighbourhoodDetail() {
       />
     );
   }
-  console.log("locationdataaa", locations);
-
   const grouped =
     data?.reduce((acc, item) => {
       const cat = item?.category?.title || "Others";
@@ -79,10 +67,8 @@ export default function NeighbourhoodDetail() {
       acc[cat].push(item);
       return acc;
     }, {}) || {};
-
   const categories = Object.keys(grouped);
   const activeCat = activeCategory || categories?.[0];
-
   if (!categories.length) {
     return (
       <EmptyState
@@ -91,14 +77,12 @@ export default function NeighbourhoodDetail() {
       />
     );
   }
-
   const OVERVIEW_POINTS = [
     "This is Static Data ",
     "This is Static Data ",
     "This is Static Data ",
     "This is Static Data ",
   ];
-
   const NEARBY_SCHOOLS = [
     { icon: "🏫", name: "DAV Girls", type: "Senior Secondary", dist: "1.2 km" },
     { icon: "🏫", name: "SBOA School", type: "& Jr. College", dist: "1.5 km" },
@@ -116,7 +100,6 @@ export default function NeighbourhoodDetail() {
       dist: "2.1 km",
     },
   ];
-
   const QUICK_ACCESS = [
     {
       icon: "🚇",
@@ -143,7 +126,6 @@ export default function NeighbourhoodDetail() {
       detail: "30 mins drive",
     },
   ];
-
   const WHY_CHOOSE = [
     "This is Static Data",
     "This is Static Data",
@@ -151,7 +133,6 @@ export default function NeighbourhoodDetail() {
     "This is Static Data",
     "This is Static Data",
   ];
-
   const LIFESTYLE_SCORES = [
     { label: "Connectivity", score: 5 },
     { label: "Education", score: 5 },
@@ -160,7 +141,6 @@ export default function NeighbourhoodDetail() {
     { label: "Shopping", score: 4.5 },
     { label: "Entertainment", score: 4 },
   ];
-
   function StarRating({ score }) {
     return (
       <div className="flex gap-0.5 mt-2">
@@ -188,9 +168,6 @@ export default function NeighbourhoodDetail() {
       </div>
     );
   }
-
-  console.log("THISI IS LOCATION DEATIL PAGE ", location);
-
   const localities = [
     {
       id: 1,
@@ -229,7 +206,6 @@ export default function NeighbourhoodDetail() {
         "Cultural and traditional hub with temples, boutiques and a laid-back vibe.",
     },
   ];
-
   function PrevArrow({ onClick }) {
     return (
       <button
@@ -240,7 +216,6 @@ export default function NeighbourhoodDetail() {
       </button>
     );
   }
-
   function NextArrow({ onClick }) {
     return (
       <button
@@ -251,7 +226,6 @@ export default function NeighbourhoodDetail() {
       </button>
     );
   }
-
   const settings = {
     dots: false,
     infinite: true,
@@ -261,9 +235,7 @@ export default function NeighbourhoodDetail() {
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
   };
-
   const currentLocationName = location?.label || "this neighbourhood";
-
   return (
     <div id="poppinsssFamily">
       <div className="relative min-h-[600px] flex flex-col justify-center pb-10 px-8 overflow-hidden bg-[#0a051e]">
@@ -285,7 +257,6 @@ export default function NeighbourhoodDetail() {
             }}
           />
         </div>
-
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0">
           <nav className="text-gray-400 neighbourtwoparagraph items-center gap-1 neighbourhoodbrudcrum">
             <div className="flex gap-2 mb-5">
@@ -306,7 +277,6 @@ export default function NeighbourhoodDetail() {
               <span className="text-white font-medium">{location?.label}</span>
             </div>
           </nav>
-
           <div>
             <h1 className="text-3xl text-[#fff] sm:text-4xl font-semibold leading-tight mb-4">
               {location?.label}
@@ -314,19 +284,16 @@ export default function NeighbourhoodDetail() {
             <p className="text-gray-300 text-sm max-w-2xl sm:max-w-3xl mb-7 leading-relaxed neighbourtwoheaidngssparagraph">
               {location?.about}
             </p>
-
             <NeighbourhoodSearchBar
               data={data}
               locations={locations}
               locationId={locationId}
             />
           </div>
-
           <div className="text-white mt-8 pt-4">
             <div className="max-w-7xl mx-auto flex items-center justify-start gap-y-4 gap-x-6 flex-wrap">
               {categories.slice(0, 5).map((s, i) => {
                 const totalCount = grouped[s]?.length || 0;
-
                 const getIcon = (name) => {
                   const icons = {
                     Schools: "🏫",
@@ -355,7 +322,6 @@ export default function NeighbourhoodDetail() {
 
                   return icons[name] || "📍";
                 };
-
                 return (
                   <div key={s || i} className="flex items-center gap-3">
                     {i > 0 && (
@@ -395,66 +361,6 @@ export default function NeighbourhoodDetail() {
               )}&output=embed`}
             />
           </div>
-
-          {/* MOCK DATA ########## */}
-
-          {/* <div className="w-72 flex flex-col justify-center detailsecondneightbourhoodsecond">
-            <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
-              OVERVIEW
-            </h3>
-
-            <p className="text-[#000] leading-relaxed mb-4 neighbourtwoparagraph !text-[16px]">
-              This is Static Paragarph Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim
-            </p>
-            <ul className="space-y-2.5">
-              {OVERVIEW_POINTS.map((pt, i) => (
-                <li
-                  key={i}
-                  className="flex items-start gap-2 text-[#000] !text-[15px]"
-                >
-                  <span className="mt-0.5 text-[#000] neighbourtwoparagraph">
-                    🏙️
-                  </span>
-                  {pt}
-                </li>
-              ))}
-            </ul>
-          </div> */}
-
-          {/* {(location?.overviewDescription ||
-            (location?.overviewPoints &&
-              location.overviewPoints.length > 0)) && (
-            <div className="w-72 flex flex-col justify-center detailsecondneightbourhoodsecond">
-              <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
-                OVERVIEW
-              </h3>
-
-              {location?.overviewDescription && (
-                <p className="text-[#000] leading-relaxed mb-4 neighbourtwoparagraph !text-[16px]">
-                  {location.overviewDescription}
-                </p>
-              )}
-
-              {location?.overviewPoints?.length > 0 && (
-                <ul className="space-y-2.5">
-                  {location?.overviewPoints?.map((item) => (
-                    <li
-                      key={item.id}
-                      className="flex items-start gap-2 text-[#000] !text-[15px]"
-                    >
-                      <span className="mt-0.5 text-[#000] neighbourtwoparagraph">
-                        🏙️
-                      </span>
-                      {item.point}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          )} */}
-
           {(location?.overviewDescription ||
             location?.overviewPoints?.length > 0) && (
             <div className="w-72 flex flex-col justify-center detailsecondneightbourhoodsecond">
@@ -612,8 +518,7 @@ export default function NeighbourhoodDetail() {
             )}
           </div>
         </div>
-      )}
-      {/* 2. DYNAMIC WHY CHOOSE & LIFESTYLE SCORES */}
+      )} 
       {(location?.whyChoose?.length > 0 ||
         location?.lifestyleScores?.length > 0) && (
         <div className="container max-w-7xl mx-auto px-8 pb-10">
@@ -654,15 +559,11 @@ export default function NeighbourhoodDetail() {
                 />
               </div>
             </div>
-
             <div className="flex-1 neighflex113">
               <div className="flex items-center justify-between mb-1">
                 <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
                   LIFESTYLE SCORE
-                </h3>
-                {/* <button className="text-[#a44294] font-medium hover:underline">
-                View Details
-              </button> */}
+                </h3>      
               </div>
               <p className="mb-4  text-[#000]  neighbourtwoparagraph">
                 Rated based on neighborhood core living convenience factors
@@ -688,12 +589,8 @@ export default function NeighbourhoodDetail() {
           </div>
         </div>
       )}
-
-      {/* Nearby-Locations */}
-
       <section className="bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
         <div className="container max-w-7xl mx-auto">
-          {/* Header Section */}
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8 gap-4">
             <div>
               <span className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
@@ -717,9 +614,6 @@ export default function NeighbourhoodDetail() {
               </button>
             </a>
           </div>
-
-          {/* Responsive Grid Section */}
-
           <Slider {...settings} className="neighmainlocationscard">
             {locations
               .filter((item) => item.locality !== locationId)
@@ -736,31 +630,9 @@ export default function NeighbourhoodDetail() {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute top-3 left-3 bg-white/100 backdrop-blur-xs px-2.5 py-1 rounded-full flex items-center shadow-xs">
-                      {/* <svg
-                        className="w-3.5 h-3.5 text-purple-700 mr-1"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                        />
-                      </svg>
-                      <span className="text-[11px] font-medium text-[#000]">
-                        2.3 km away
-                      </span> */}
+                     
                     </div>
                   </div>
-
-                  {/* Card Details */}
                   <div className="flex flex-col flex-grow">
                     <h3 className="!text-lg font-bold text-gray-900 mb-1 neighbourtwosecondheading">
                       {item.locality}
@@ -783,9 +655,7 @@ export default function NeighbourhoodDetail() {
           </Slider>
         </div>
       </section>
-
       <FaqNeighbourhoods faqDataProps={location?.faqSection} />
-
       <WhatsNearby data={data} />
       <div className="pt-6">
         <ProperitiesNeighbourhood />

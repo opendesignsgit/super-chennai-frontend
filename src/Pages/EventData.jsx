@@ -7651,7 +7651,7 @@ Today, those championship trophies represent much more than sporting success. Th
   YoutubeLink: "",
 
   meta: {
-    title: "Chennai's Aswin Shines in Minerva's Gothia & Helsinki Cup Wins | Super Chennai",
+    title: "Chennai's Aswin Shines in Minerva's Gothia & Helsinki Cup Wins",
     desc: "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy lift the Gothia Cup and Helsinki Cup 2026, making the city proud.",
     url: "https://www.superchennai.com/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
   },

@@ -228,6 +228,9 @@
   width: 28%;
   padding-left: 5%;
   padding-top: 50px;
+  height: 607px;
+  overflow-y: scroll;
+  scrollbar-color: #995099 #fff !important;
 }
 
 .pointerdiv {
@@ -259,6 +262,9 @@
   padding-bottom: 55px;
   background: url("/public/images/locationpopupimage.jpg");
   background-position: bottom;
+  height: 607px;
+  overflow-y: scroll;
+  scrollbar-color: #995099 #fff !important;
 }
 
 .pointerdiv.buttonnonactivated {
@@ -937,6 +943,41 @@
   display: flex;
   justify-content: center;
 } */
+
+.newsubmenucategofyoption {
+  background-color: #a44294;
+  background-color: #a44294e6;
+  margin-top: -2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.newsubmenucategofyoption .iconsimagelocation {
+  color: #fff !important;
+  font-size: 13px;
+  margin-top: 0;
+  border-bottom: 1px solid #ffffff3d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.newsubmenucategofyoption .iconsimagelocation a {
+  color: #fff !important;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.newsubmenucategofyoption .iconsimagelocation a:hover {
+  font-weight: 500;
+}
+.newsubmenucategofyoption .iconsimagelocation:last-child {
+  border-bottom: 0px solid #ffffff3d;
+}
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;

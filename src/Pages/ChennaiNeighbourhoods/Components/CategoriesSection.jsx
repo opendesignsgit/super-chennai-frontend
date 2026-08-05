@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { API_BASE_URL_API_TEST_DEV } from "../../../../config";
 import Slider from "react-slick";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -146,6 +146,37 @@ export default function CategoriesSection({ locationId, data = [], location }) {
     ),
   };
 
+  const grouped = useMemo(() => {
+    return (
+      data?.reduce((acc, item) => {
+        const cat = item?.category?.title || "Others";
+        if (!acc[cat]) acc[cat] = [];
+        acc[cat].push(item);
+        return acc;
+      }, {}) || {}
+    );
+  }, [data]);
+
+  const subCategoriesByCategory = useMemo(() => {
+    const result = {};
+
+    data?.forEach((item) => {
+      const cat = item?.category?.title || "Others";
+      if (!result[cat]) result[cat] = {};
+      item?.subCategories?.forEach((sub) => {
+        if (sub && sub.id && !result[cat][sub.id]) {
+          result[cat][sub.id] = sub;
+        }
+      });
+    });
+
+    return result;
+  }, [data]);
+  const categories = Object.keys(grouped);
+  const activeCat = activeCategory || categories?.[0];
+
+  console.log("Sliderrrsubcategories", subCategoriesByCategory);
+
   function StarIcon() {
     return (
       <svg
@@ -165,34 +196,177 @@ export default function CategoriesSection({ locationId, data = [], location }) {
     );
   }
 
+  const [open, setOpen] = useState(true);
+
   return (
     <div className="flex gap-8 p-6 max-w-7xl mx-auto items-start">
-      <div className="w-60 space-y-2 flex-shrink-0">
-        {categoriesList.map((cat) => (
-          <button
-            key={cat.category}
-            onClick={() => setActiveCategory(cat.category)}
-            className={`cursor-pointer w-full flex items-center justify-between px-4 py-3 rounded-lg text-[16px] transition-all ${
-              activeCategory === cat.category
-                ? "bg-[#a44294] text-white font-medium shadow-md"
-                : "bg-white border border-gray-200 text-[#000] hover:bg-purple-50"
-            }`}
-          >
-            <span className="flex items-center gap-2">
-              {cat.icon && typeof cat.icon === "object" && cat.icon.url ? (
-                <img
-                  src={`${API_BASE_URL_API_TEST_DEV}${cat.icon.url}`}
-                  alt={cat.icon.alt || cat.category}
-                  className="w-5 h-5 object-contain"
-                />
+      {/* <div className="w-60 space-y-2 flex-shrink-0">
+        {categoriesList.map((cat) => {
+          const isActive = activeCategory === cat.category;
+
+          return (
+            <React.Fragment key={cat.category}>
+              <button
+                onClick={() => setActiveCategory(cat.category)}
+                className={`cursor-pointer w-full flex items-center justify-between px-4 py-3 rounded-lg text-[16px] transition-all ${
+                  isActive
+                    ? "bg-[#a44294] text-white font-medium shadow-md"
+                    : "bg-white border border-gray-200 text-[#000] hover:bg-purple-50"
+                }`}
+              >
+                <span className="flex items-center gap-2">
+                  {cat.icon && typeof cat.icon === "object" && cat.icon.url ? (
+                    <img
+                      src={`${API_BASE_URL_API_TEST_DEV}${cat.icon.url}`}
+                      alt={cat.icon.alt || cat.category}
+                      className="w-5 h-5 object-contain"
+                    />
+                  ) : (
+                    <span>{cat.icon || "📍"}</span>
+                  )}
+                  {cat.category}
+                </span>
+                <span>›</span>
+              </button>
+
+              {Object.values(subCategoriesByCategory?.[activeCat] || {})
+                .length === 0 ? (
+                <div className="text-gray-500 text-center mt-10">
+                  We couldn’t find anything here. Try exploring other
+                  categories.
+                </div>
               ) : (
-                <span>{cat.icon || "📍"}</span>
+                Object.values(subCategoriesByCategory?.[activeCat])
+                  .sort((a, b) => a.title.localeCompare(b.title))
+                  .slice(0, 5)
+                  .map((sub) => (
+                    <div
+                      key={sub.id}
+                      onClick={() => {
+                        navigate(
+                          `/neighbourhood/${locationId}/${activeCat
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")}/${sub.slug}`,
+                        );
+                        setOpen(false);
+                      }}
+                      className="border butoonsearchbutton cursor-pointer hover:bg-gray-100 transition"
+                    >
+                      <div className="iconsimagelocation">
+                        <img src="" alt="" />
+                        {sub.title}
+                      </div>
+                    </div>
+                  ))
               )}
-              {cat.category}
-            </span>
-            <span>›</span>
-          </button>
-        ))}
+            </React.Fragment>
+          );
+        })}
+      </div> */}
+
+      <div className="w-60 space-y-2 flex-shrink-0">
+        {categoriesList.map((cat) => {
+          const isActive = activeCategory === cat.category;
+
+          const currentSubCategories = Object.values(
+            subCategoriesByCategory?.[cat.category] || {},
+          );
+
+          return (
+            <React.Fragment key={cat.category}>
+              <button
+                onClick={() => {
+                  if (activeCategory === cat.category) {
+                    setOpen((prev) => !prev);
+                  } else {
+                    setActiveCategory(cat.category);
+                    setOpen(true);
+                  }
+                }}
+                className={`cursor-pointer w-full flex items-center justify-between px-4 py-3 rounded-lg text-[16px] ${
+                  isActive
+                    ? "bg-[#a44294] text-white font-medium shadow-md"
+                    : "bg-white border border-gray-200 text-[#000] hover:bg-purple-50"
+                }`}
+              >
+                <span className="flex items-center gap-2 text-left">
+                  {cat.icon && typeof cat.icon === "object" && cat.icon.url ? (
+                    <img
+                      src={`${API_BASE_URL_API_TEST_DEV}${cat.icon.url}`}
+                      alt={cat.icon.alt || cat.category}
+                      className="w-5 h-5 object-contain"
+                    />
+                  ) : (
+                    <span>{cat.icon || "📍"}</span>
+                  )}
+
+                  <span> {cat.category}</span>
+                </span>
+
+                <span className="">
+                  {/* <img src="/images/icons/right-arrow-dropown.svg" alt="" /> */}
+
+                  <ChevronRight
+                    size={20}
+                    strokeWidth={2.5}
+                    className={`transition-transform duration-300 ease-in-out ${
+                      isActive && open ? "rotate-90" : ""
+                    }`}
+                  />
+                </span>
+              </button>
+
+              {open && (
+                <>
+                  {isActive && (
+                    <div className="pl-4 my-2 newsubmenucategofyoption relative">
+                      {currentSubCategories.length === 0 ? (
+                        <div className="text-gray-500 text-center py-2 text-sm pl-6">
+                          We couldn’t find anything here.
+                        </div>
+                      ) : (
+                        <ul className="space-y-1 relative">
+                          {currentSubCategories
+                            .sort((a, b) => a.title.localeCompare(b.title))
+                            .slice(0, 5)
+                            .map((sub) => {
+                              const subUrl = `/neighbourhood/${locationId}/${cat.category
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")}/${sub.slug}`;
+
+                              return (
+                                <li
+                                  key={sub.id}
+                                  className="relative flex items-center group pl-2 py-1 iconsimagelocation"
+                                >
+                                  <div className="flex items-center gap-2 w-full">
+                                    {sub.icon && (
+                                      <img
+                                        src={`${API_BASE_URL_API_TEST_DEV}${sub.icon}`}
+                                        alt={sub.title}
+                                        className="w-4 h-4 object-contain flex-shrink-0"
+                                      />
+                                    )}
+
+                                    <a
+                                      href={subUrl}
+                                      className=" hover:font-bold"
+                                    >
+                                      → {sub.title}
+                                    </a>
+                                  </div>
+                                </li>
+                              );
+                            })}
+                        </ul>
+                      )}
+                    </div>
+                  )}
+                </>
+              )}
+            </React.Fragment>
+          );
+        })}
       </div>
 
       <div className="flex-1 min-w-0">

@@ -725,7 +725,7 @@ function App() {
             footerReached ? "footerreached" : ""
           } bubble-master`}
         >
-          <a href="/arattai-with-soumya-swaminathan/chief-scientist">
+          <a href="/arattai-with-v-sriram/heritage-historian">
             <img
               src="/images/tap-button-arattai.svg"
               alt="artificial intelligence challenge"

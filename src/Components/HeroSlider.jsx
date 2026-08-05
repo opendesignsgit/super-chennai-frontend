@@ -183,6 +183,14 @@ const slides = [
   // },
 
   {
+    image: "/images/homepage-sairam.jpeg",
+    link: "arattai-with-v-sriram/heritage-historian",
+    image1: "/images/sairam-mobile.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
+  {
     image: "/images/HomePage-Images/banner-0.jpg",
     link: "#",
     image1: "/images/HomePage-Images/mobile-banner-1.jpg",

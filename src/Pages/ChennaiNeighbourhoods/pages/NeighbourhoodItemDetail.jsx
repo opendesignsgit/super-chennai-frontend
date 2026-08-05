@@ -228,8 +228,7 @@ console.log("item?.businessHours?",item.businessHours)
           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
         />
 
-        <div
-          className="absolute inset-0 mix-blend-multiply pointer-events-none"
+        <div  className="absolute inset-0 mix-blend-multiply pointer-events-none" 
           style={{
             background:
               "linear-gradient(to bottom, rgba(10,5,30,0.5) 0%, rgba(10,5,30,0.75) 60%, rgba(10,5,30,0.92) 100%)",

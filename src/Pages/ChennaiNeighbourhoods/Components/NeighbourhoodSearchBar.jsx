@@ -69,6 +69,8 @@ export default function NeighbourhoodSearchBar({
     `,
     }));
 
+    console.log("preparedData", preparedData);
+
     return new Fuse(preparedData, {
       keys: ["searchableText"],
       threshold: 0.4,
@@ -184,7 +186,7 @@ export default function NeighbourhoodSearchBar({
           className="bannerrrsearchccc cursor-pointer bg-[#a44294] hover:bg-[#b84ca6] text-white !font-[500] px-6 py-2.5 rounded-full text-sm transition-all duration-300 whitespace-nowrap shrink-0 shadow-sm"
         >
           Search
-        </button> 
+        </button>
         <button
           onClick={() => setOpen(true)}
           className="clickheretoexplorebuttons cursor-pointer bg-[#a44294] hover:bg-[#b84ca6] text-white !font-[500] px-6 py-2.5 rounded-full text-sm transition-all duration-300 whitespace-nowrap shrink-0 shadow-sm"
@@ -195,7 +197,7 @@ export default function NeighbourhoodSearchBar({
 
       {openLocationsModal && (
         <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center animate-backdrop-fade">
-          <div className="bg-white container max-w-5xl mx-auto px-4 relative popupseacrhinpout animate-modal-pop">           
+          <div className="bg-white container max-w-5xl mx-auto px-4 relative popupseacrhinpout animate-modal-pop">
             <button
               onClick={() => setOpenLocationsModal(false)}
               className="absolute top-4 right-4 text-xl popupcloselocation group hover:scale-110 active:scale-95 transition-all duration-300 hover:rotate-90 hover:shadow-lg hover:shadow-[#8b3c82]/50"
@@ -380,11 +382,10 @@ export default function NeighbourhoodSearchBar({
                             className="border butoonsearchbutton cursor-pointer hover:bg-gray-100 transition"
                           >
                             <div className="iconsimagelocation">
-                              <img
-                                src="https://dev.opendesignsin.com/svg-icon.svg"
-                                alt=""
-                              />
+                              <img src="" alt="" />
                               {sub.title}
+
+                              {console.log("sub", sub)}
                             </div>
                           </div>
                         ))

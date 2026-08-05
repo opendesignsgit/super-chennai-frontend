@@ -23,10 +23,13 @@ import EmploymentinChennai from "./Pages/SubPages/LivePages/EmploymentinChennai"
 import FutureGrowthDevelopment from "./Pages/SubPages/LivePages/FutureGrowthDevelopment";
 import Healthcare from "./Pages/SubPages/LivePages/Healthcare";
 import Neighbourhood from "./Pages/SubPages/LivePages/Neighbourhood";
+
+
 import ChennaiNeighbourhood from "./Pages/ChennaiNeighbourhoods/pages/Neighbourhood";
 import ChennaiNeighbourhoodDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodDetails";
 import NeighbourhoodCategory from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodCategory";
 import NeighbourhoodItemDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodItemDetail";
+
 
 import QualityofLife from "./Pages/SubPages/LivePages/QualityofLife";
 import Recreation from "./Pages/SubPages/LivePages/Recreation";
@@ -313,6 +316,10 @@ import ArattaiWithGskVelu from "./Pages/Activities/ArrattaiWithGskVelu/arattai-W
 import ArattaiGskVeluExcelView from "./Pages/Activities/ArrattaiWithGskVelu/ArattaiGSKExcelView";
 
 import ArattaiWithKishenDas from "./Pages/Activities/ArrataiWithKishen/arattai-kishandas";
+import ArattaiWithSriram from "./Pages/Activities/ArattaiWithSriram/ArattaiWithSriram";
+
+
+
 
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
@@ -1037,6 +1044,13 @@ function App() {
           path="/arattai-with-bharathy-bhaskar/prominent-speaker/v1/registers/entry"
           element={<ArattaiBharathiExcelView />}
         />
+          <Route
+          path="/arattai-with-v-sriram/heritage-historian"
+          element={<ArattaiWithSriram />}
+        />
+
+
+        
 
         {/* conclave */}
         <Route path="/admin-superchennai" element={<AdminView />} />

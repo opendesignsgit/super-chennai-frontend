@@ -1609,442 +1609,526 @@ export default function TrendingDetails() {
      },
    ];
 
-
-      const pinkothan = [
-    {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/pinkathon-returns-to-chennai-after-7-years"
-  },
-  "headline": "PINKATHON RETURNS TO CHENNAI AFTER 7 YEARS AT ISLAND GROUNDS",
-  "description": "Pinkathon returns to Chennai after seven years at Island Grounds on August 1 & 2 with 3 km to 100 km races celebrating fitness, health, and women's empowerment.",
-  "image": "https://www.superchennai.com/images/PINKATHON.png",  
-  "author": {
-    "@type": "Person",
-    "name": "Super Chennai"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": ""
-    }
-  },
-  "datePublished": ""
-}
-
+   const pinkothan = [
+     {
+       "@context": "https://schema.org",
+       "@type": "Article",
+       mainEntityOfPage: {
+         "@type": "WebPage",
+         "@id":
+           "https://www.superchennai.com/trending-chennai/pinkathon-returns-to-chennai-after-7-years",
+       },
+       headline: "PINKATHON RETURNS TO CHENNAI AFTER 7 YEARS AT ISLAND GROUNDS",
+       description:
+         "Pinkathon returns to Chennai after seven years at Island Grounds on August 1 & 2 with 3 km to 100 km races celebrating fitness, health, and women's empowerment.",
+       image: "https://www.superchennai.com/images/PINKATHON.png",
+       author: {
+         "@type": "Person",
+         name: "Super Chennai",
+       },
+       publisher: {
+         "@type": "Organization",
+         name: "",
+         logo: {
+           "@type": "ImageObject",
+           url: "",
+         },
+       },
+       datePublished: "",
+     },
    ];
 
+   const ashwinKathirvel = [
+     {
+       "@context": "https://schema.org",
+       "@type": "Article",
+       mainEntityOfPage: {
+         "@type": "WebPage",
+         "@id":
+           "https://www.superchennai.com/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
+       },
+       headline:
+         "Chennai's Aswin Shines in Minerva's Gothia & Helsinki Cup Wins",
+       description:
+         "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy lift the Gothia Cup and Helsinki Cup 2026, making the city proud.",
+       image: "https://www.superchennai.com/images/Ashwin-foodball.jpeg",
+       author: {
+         "@type": "Person",
+         name: "Super Chennai",
+       },
+       publisher: {
+         "@type": "Organization",
+         name: "",
+         logo: {
+           "@type": "ImageObject",
+           url: "",
+         },
+       },
+       datePublished: "",
+     },
+   ];
 
-  return (
-    <>
-      <Helmet>
-        <title>{event.meta?.title || event.name}</title>
+   const velacheriariticle = [
+     {
+       "@context": "https://schema.org",
+       "@type": "Article",
+       mainEntityOfPage: {
+         "@type": "WebPage",
+         "@id":
+           "https://www.superchennai.com/trending-chennai/uwa-first-india-campus-velachery-chennai",
+       },
+       headline: "UWA to Open First India Campus in Velachery | Super Chennai",
+       description:
+         "University of Western Australia to open Tamil Nadu's first international university campus in Velachery, Chennai, creating 200+ jobs with a Rs 125 crore investment.",
+       image: "https://www.superchennai.com/images/UWA-VELACHERY-inner.jpeg",
+       author: {
+         "@type": "Person",
+         name: "Super Chennai",
+       },
+       publisher: {
+         "@type": "Organization",
+         name: "",
+         logo: {
+           "@type": "ImageObject",
+           url: "",
+         },
+       },
+       datePublished: "",
+     },
+   ];
 
-        <meta
-          name="description"
-          content={event.meta?.desc || event.trendingDetails?.slice(0, 150)}
-        />
+      return (
+        <>
+          <Helmet>
+            <title>{event.meta?.title || event.name}</title>
 
-        {/* Open Graph */}
-        <meta property="og:title" content={event.meta?.title || event.name} />
-        <meta property="og:description" content={event.meta?.desc || ""} />
-        <meta
-          property="og:image"
-          content={`${typeof window !== "undefined" ? window.location.origin : ""}${event.image}`}
-        />
-        <meta property="og:type" content="article" />
+            <meta
+              name="description"
+              content={event.meta?.desc || event.trendingDetails?.slice(0, 150)}
+            />
 
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
-        />
+            {/* Open Graph */}
+            <meta
+              property="og:title"
+              content={event.meta?.title || event.name}
+            />
+            <meta property="og:description" content={event.meta?.desc || ""} />
+            <meta
+              property="og:image"
+              content={`${typeof window !== "undefined" ? window.location.origin : ""}${event.image}`}
+            />
+            <meta property="og:type" content="article" />
 
-        {slug ===
-          "trending-chennai/pinkathon-returns-to-chennai-after-7-years" && (
-          <script type="application/ld+json">
-            {JSON.stringify(pinkothan)}
-          </script>
-        )}
+            {/* Canonical */}
+            <link
+              rel="canonical"
+              href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
+            />
 
-        {slug ===
-          "trending-chennai/kanchipuram-803-acre-sipcot-industrial-park" && (
-          <script type="application/ld+json">
-            {JSON.stringify(sipcotCmVijay)}
-          </script>
-        )}
+            {slug === "uwa-first-india-campus-velachery-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(velacheriariticle)}
+              </script>
+            )}
 
-        {slug ===
-          "trending-chennai/pm-modi-chennai-metro-phase-2-inauguration" && (
-          <script type="application/ld+json">
-            {JSON.stringify(poonamaleyStretch)}
-          </script>
-        )}
+            {slug === "aswin-kathirvel-chennai-footballer-minerva-academy" && (
+              <script type="application/ld+json">
+                {JSON.stringify(ashwinKathirvel)}
+              </script>
+            )}
 
-        {slug === "chennai-corporation-smart-waste-transport" && (
-          <script type="application/ld+json">
-            {JSON.stringify(smartWeastTransportArticle)}
-          </script>
-        )}
+            {slug ===
+              "trending-chennai/pinkathon-returns-to-chennai-after-7-years" && (
+              <script type="application/ld+json">
+                {JSON.stringify(pinkothan)}
+              </script>
+            )}
 
-        {slug === "dubai-summer-carnival-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(dubaiCarnival)}
-          </script>
-        )}
+            {slug ===
+              "trending-chennai/kanchipuram-803-acre-sipcot-industrial-park" && (
+              <script type="application/ld+json">
+                {JSON.stringify(sipcotCmVijay)}
+              </script>
+            )}
 
-        {slug === "sunflower-streets-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(sunflowerstreet)}
-          </script>
-        )}
+            {slug ===
+              "trending-chennai/pm-modi-chennai-metro-phase-2-inauguration" && (
+              <script type="application/ld+json">
+                {JSON.stringify(poonamaleyStretch)}
+              </script>
+            )}
 
-        {slug === "olive-ridley-turtles-conservation-tamil-nadu" && (
-          <script type="application/ld+json">
-            {JSON.stringify(oliveRadly)}
-          </script>
-        )}
+            {slug === "chennai-corporation-smart-waste-transport" && (
+              <script type="application/ld+json">
+                {JSON.stringify(smartWeastTransportArticle)}
+              </script>
+            )}
 
-        {slug === "sports-ground-sowcarpet" && (
-          <script type="application/ld+json">
-            {JSON.stringify(sportsSowcarPet)}
-          </script>
-        )}
+            {slug === "dubai-summer-carnival-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(dubaiCarnival)}
+              </script>
+            )}
 
-        {slug === "mudhalvar-thirumana-maaligai-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(mudhalvar)}
-          </script>
-        )}
+            {slug === "sunflower-streets-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(sunflowerstreet)}
+              </script>
+            )}
 
-        {slug === "walltax-road-new-homes-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(walltaxROAD)}
-          </script>
-        )}
+            {slug === "olive-ridley-turtles-conservation-tamil-nadu" && (
+              <script type="application/ld+json">
+                {JSON.stringify(oliveRadly)}
+              </script>
+            )}
 
-        {slug === "walltax-road-new-homes-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(walltaxROAD)}
-          </script>
-        )}
+            {slug === "sports-ground-sowcarpet" && (
+              <script type="application/ld+json">
+                {JSON.stringify(sportsSowcarPet)}
+              </script>
+            )}
 
-        {slug === "villivakkam-new-park-agathiyar-nagar" && (
-          <script type="application/ld+json">
-            {JSON.stringify(villivakkam)}
-          </script>
-        )}
+            {slug === "mudhalvar-thirumana-maaligai-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(mudhalvar)}
+              </script>
+            )}
 
-        {slug === "chennai-theme-park-lalaland" && (
-          <script type="application/ld+json">{JSON.stringify(lalaland)}</script>
-        )}
+            {slug === "walltax-road-new-homes-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(walltaxROAD)}
+              </script>
+            )}
 
-        {slug === "moviemax-pr-mall-theatre-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(PRmallSchema)}
-          </script>
-        )}
+            {slug === "walltax-road-new-homes-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(walltaxROAD)}
+              </script>
+            )}
 
-        {slug === "thangal-eri-park-ambattur" && (
-          <script type="application/ld+json">
-            {JSON.stringify(ambathoreEri)}
-          </script>
-        )}
+            {slug === "villivakkam-new-park-agathiyar-nagar" && (
+              <script type="application/ld+json">
+                {JSON.stringify(villivakkam)}
+              </script>
+            )}
 
-        {slug === "tondiarpet-electric-bus-depot" && (
-          <script type="application/ld+json">
-            {JSON.stringify(deportdandiaport)}
-          </script>
-        )}
+            {slug === "chennai-theme-park-lalaland" && (
+              <script type="application/ld+json">
+                {JSON.stringify(lalaland)}
+              </script>
+            )}
 
-        {slug === "marina-beach-plastic-recycling" && (
-          <script type="application/ld+json">
-            {JSON.stringify(merinaplasticrecycle)}
-          </script>
-        )}
+            {slug === "moviemax-pr-mall-theatre-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(PRmallSchema)}
+              </script>
+            )}
 
-        {slug === "3d-printed-bus-shelter-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(threedeeBus)}
-          </script>
-        )}
+            {slug === "thangal-eri-park-ambattur" && (
+              <script type="application/ld+json">
+                {JSON.stringify(ambathoreEri)}
+              </script>
+            )}
 
-        {slug === "cherry-blossom-season-tabebuia-rosea-chennai" && (
-          <script type="application/ld+json">{JSON.stringify(bloomPoo)}</script>
-        )}
+            {slug === "tondiarpet-electric-bus-depot" && (
+              <script type="application/ld+json">
+                {JSON.stringify(deportdandiaport)}
+              </script>
+            )}
 
-        {slug === "chennai-metro-mini-buses" && (
-          <script type="application/ld+json">
-            {JSON.stringify(chennaiMetroMini)}
-          </script>
-        )}
+            {slug === "marina-beach-plastic-recycling" && (
+              <script type="application/ld+json">
+                {JSON.stringify(merinaplasticrecycle)}
+              </script>
+            )}
 
-        {slug === "ayapakkam-park" && (
-          <script type="application/ld+json">
-            {JSON.stringify(ayapakkamPark)}
-          </script>
-        )}
+            {slug === "3d-printed-bus-shelter-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(threedeeBus)}
+              </script>
+            )}
 
-        {slug === "velachery-to-st-thomas-mount-train-chennai-mrts-update" && (
-          <script type="application/ld+json">
-            {JSON.stringify(valacheristmountsmrts)}
-          </script>
-        )}
+            {slug === "cherry-blossom-season-tabebuia-rosea-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(bloomPoo)}
+              </script>
+            )}
 
-        {slug === "chennai-marina-beach-statue-education-monument" && (
-          <script type="application/ld+json">
-            {JSON.stringify(marinaBeachStatuEducation)}
-          </script>
-        )}
+            {slug === "chennai-metro-mini-buses" && (
+              <script type="application/ld+json">
+                {JSON.stringify(chennaiMetroMini)}
+              </script>
+            )}
 
-        {slug === "marina-beach-blue-flag-phase-2" && (
-          <script type="application/ld+json">
-            {JSON.stringify(marinaBeachBlueFLag)}
-          </script>
-        )}
+            {slug === "ayapakkam-park" && (
+              <script type="application/ld+json">
+                {JSON.stringify(ayapakkamPark)}
+              </script>
+            )}
 
-        {slug === "chennai-ula-2-hop-on-hop-off-bus" && (
-          <script type="application/ld+json">
-            {JSON.stringify(ulabusNew)}
-          </script>
-        )}
+            {slug ===
+              "velachery-to-st-thomas-mount-train-chennai-mrts-update" && (
+              <script type="application/ld+json">
+                {JSON.stringify(valacheristmountsmrts)}
+              </script>
+            )}
 
-        {slug === "ac-bus-stop-retteri-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(AcBusRetreii)}
-          </script>
-        )}
+            {slug === "chennai-marina-beach-statue-education-monument" && (
+              <script type="application/ld+json">
+                {JSON.stringify(marinaBeachStatuEducation)}
+              </script>
+            )}
 
-        {slug === "playstation-store-chennai-anna-nagar" && (
-          <script type="application/ld+json">
-            {JSON.stringify(annaNagarPlayStation)}
-          </script>
-        )}
+            {slug === "marina-beach-blue-flag-phase-2" && (
+              <script type="application/ld+json">
+                {JSON.stringify(marinaBeachBlueFLag)}
+              </script>
+            )}
 
-        {slug === "lake-boating-thiruvottiyur" && (
-          <script type="application/ld+json">
-            {JSON.stringify(LackeBoatingThiruvtryue)}
-          </script>
-        )}
+            {slug === "chennai-ula-2-hop-on-hop-off-bus" && (
+              <script type="application/ld+json">
+                {JSON.stringify(ulabusNew)}
+              </script>
+            )}
 
-        {slug === "chennai-electric-buses" && (
-          <script type="application/ld+json">
-            {JSON.stringify(electriBusNew)}
-          </script>
-        )}
+            {slug === "ac-bus-stop-retteri-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(AcBusRetreii)}
+              </script>
+            )}
 
-        {slug === "mtc-premium-gold-ac-electric-buses" && (
-          <script type="application/ld+json">
-            {JSON.stringify(mtcBusPeruimGold)}
-          </script>
-        )}
+            {slug === "playstation-store-chennai-anna-nagar" && (
+              <script type="application/ld+json">
+                {JSON.stringify(annaNagarPlayStation)}
+              </script>
+            )}
 
-        {slug === "glow-garden-mahabalipuram-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(glowgaradern)}
-          </script>
-        )}
+            {slug === "lake-boating-thiruvottiyur" && (
+              <script type="application/ld+json">
+                {JSON.stringify(LackeBoatingThiruvtryue)}
+              </script>
+            )}
 
-        {slug === "mkb-nagar-bus-depot-upgrade-chennai" && (
-          <script type="application/ld+json">{JSON.stringify(MKBBus)}</script>
-        )}
+            {slug === "chennai-electric-buses" && (
+              <script type="application/ld+json">
+                {JSON.stringify(electriBusNew)}
+              </script>
+            )}
 
-        {slug === "broadway-bus-stand-redevelopment" && (
-          <script type="application/ld+json">
-            {JSON.stringify(brodwaybust)}
-          </script>
-        )}
+            {slug === "mtc-premium-gold-ac-electric-buses" && (
+              <script type="application/ld+json">
+                {JSON.stringify(mtcBusPeruimGold)}
+              </script>
+            )}
 
-        {slug === "korukkupet-rail-overbridge-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(korukupat)}
-          </script>
-        )}
+            {slug === "glow-garden-mahabalipuram-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(glowgaradern)}
+              </script>
+            )}
 
-        {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(madhiyakailash)}
-          </script>
-        )}
+            {slug === "mkb-nagar-bus-depot-upgrade-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(MKBBus)}
+              </script>
+            )}
 
-        {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
-          <script type="application/ld+json">
-            {JSON.stringify(madhiyakailash)}
-          </script>
-        )}
+            {slug === "broadway-bus-stand-redevelopment" && (
+              <script type="application/ld+json">
+                {JSON.stringify(brodwaybust)}
+              </script>
+            )}
 
-        {slug === "retteri-lake-park-chennai" && (
-          <script type="application/ld+json">{JSON.stringify(retaeri)}</script>
-        )}
+            {slug === "korukkupet-rail-overbridge-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(korukupat)}
+              </script>
+            )}
 
-        {slug === "fintech-city-nandambakkam-2026" && (
-          <script type="application/ld+json">
-            {JSON.stringify(fintechSchema)}
-          </script>
-        )}
+            {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(madhiyakailash)}
+              </script>
+            )}
 
-        {slug === "global-sports-city-semmencherry-2026" && (
-          <script type="application/id+json">
-            {JSON.stringify(globalTech)}
-          </script>
-        )}
+            {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(madhiyakailash)}
+              </script>
+            )}
 
-        {slug === "kilambakkam-modern-bus-terminus-2026" && (
-          <script type="application/id+json">
-            {JSON.stringify(terminusbusKilambakkam)}
-          </script>
-        )}
+            {slug === "retteri-lake-park-chennai" && (
+              <script type="application/ld+json">
+                {JSON.stringify(retaeri)}
+              </script>
+            )}
 
-        {slug === "tamil-culture-museum-mamallapuram-2026" && (
-          <script type="application/id+json">
-            {JSON.stringify(tamilcultremusium)}
-          </script>
-        )}
+            {slug === "fintech-city-nandambakkam-2026" && (
+              <script type="application/ld+json">
+                {JSON.stringify(fintechSchema)}
+              </script>
+            )}
 
-        {slug === "vadapalani-skywalk-metro-corridor-2026" && (
-          <script type="application/id+json">
-            {JSON.stringify(vadapalainschemaMEtro)}
-          </script>
-        )}
-        {slug === "poonamallee-depot-chennai-metro-phase-2-2026" && (
-          <script type="application/id+json">
-            {JSON.stringify(poonamalaschema)}
-          </script>
-        )}
-        {slug === "musical-tower-kalaignar-centenary-park-2026" && (
-          <script type="application/id+json">
-            {JSON.stringify(MUiscialTowerSchem)}
-          </script>
-        )}
+            {slug === "global-sports-city-semmencherry-2026" && (
+              <script type="application/id+json">
+                {JSON.stringify(globalTech)}
+              </script>
+            )}
 
-        {slug === "port-maduravoyal-expressway-chennai-2026" && (
-          <script type="application/id+json">
-            {JSON.stringify(portmaduravayal)}
-          </script>
-        )}
-      </Helmet>
+            {slug === "kilambakkam-modern-bus-terminus-2026" && (
+              <script type="application/id+json">
+                {JSON.stringify(terminusbusKilambakkam)}
+              </script>
+            )}
 
-      {/* Banner Section */}
+            {slug === "tamil-culture-museum-mamallapuram-2026" && (
+              <script type="application/id+json">
+                {JSON.stringify(tamilcultremusium)}
+              </script>
+            )}
 
-      <section className="accaodomationBannerSection">
-        <div>
-          <img
-            src="/images/trendingChennai/trending-chennai.jpg"
-            alt="Banner"
-          />
-        </div>
-        <div className="accodoamationBannerContainer">
-          <div className="accodoamationBannerText">
-            <h1>Trending Chennai</h1>
-            <div className="breadCrum"></div>
-          </div>
-        </div>
-      </section>
+            {slug === "vadapalani-skywalk-metro-corridor-2026" && (
+              <script type="application/id+json">
+                {JSON.stringify(vadapalainschemaMEtro)}
+              </script>
+            )}
+            {slug === "poonamallee-depot-chennai-metro-phase-2-2026" && (
+              <script type="application/id+json">
+                {JSON.stringify(poonamalaschema)}
+              </script>
+            )}
+            {slug === "musical-tower-kalaignar-centenary-park-2026" && (
+              <script type="application/id+json">
+                {JSON.stringify(MUiscialTowerSchem)}
+              </script>
+            )}
 
-      <section className="EventsBanSec SecPadblock12">
-        <div className="container max-w-7xl mx-auto">
-          <div className="EventContBox flex flex-wrap">
-            <div className="EventLeft">
-              <h2>{event.name}</h2>
-              <div className="EventBanImg">
-                <img src={event.image} alt={event.name} />
-              </div>
-              <div className="ebanimgbtn flex justify-between items-center mb-[5vh]">
-                <div className="ebbmgiL flex gap-2">
-                  <h5>{event.TrendingCalendarCategory}</h5>
-                </div>
-              </div>
-              <div className="EventContBox mb-[5vh]">
-                <h3>About The Trending</h3>
-                <div
-                  className="event-description"
-                  dangerouslySetInnerHTML={{ __html: event.trendingDetails }}
-                />
+            {slug === "port-maduravoyal-expressway-chennai-2026" && (
+              <script type="application/id+json">
+                {JSON.stringify(portmaduravayal)}
+              </script>
+            )}
+          </Helmet>
+
+          {/* Banner Section */}
+
+          <section className="accaodomationBannerSection">
+            <div>
+              <img
+                src="/images/trendingChennai/trending-chennai.jpg"
+                alt="Banner"
+              />
+            </div>
+            <div className="accodoamationBannerContainer">
+              <div className="accodoamationBannerText">
+                <h1>Trending Chennai</h1>
+                <div className="breadCrum"></div>
               </div>
             </div>
+          </section>
 
-            <div className="EventRight">
-              <div className="evderibox">
-                <div className="evderListbox">
-                  <div className="evderViewbox">
-                    {event.TrendingCalendarMonth && (
-                      <InfoRow
-                        icon="/images/events/calendar.png"
-                        label={event.TrendingCalendarMonth}
-                      />
-                    )}
-                    {event.TrendingCalendarTime && (
-                      <InfoRow
-                        icon="/images/events/time.png"
-                        label={event.TrendingCalendarTime}
-                      />
-                    )}
-                    {event.duration && (
-                      <InfoRow
-                        icon="/images/events/duration.png"
-                        label={event.duration}
-                      />
-                    )}
-                    {event.ageRestriction && (
-                      <InfoRow
-                        icon="/images/events/age_limit.png"
-                        label={event.ageRestriction}
-                      />
-                    )}
-                    {event.language && (
-                      <InfoRow
-                        icon="/images/events/language.png"
-                        label={event.language}
-                      />
-                    )}
-                    {event.genre && (
-                      <InfoRow
-                        icon="/images/events/genre.png"
-                        label={event.genre}
-                      />
-                    )}
-                    {event.venue && (
-                      <InfoRow
-                        icon="/images/events/location.png"
-                        label={event.venue}
-                      />
-                    )}
+          <section className="EventsBanSec SecPadblock12">
+            <div className="container max-w-7xl mx-auto">
+              <div className="EventContBox flex flex-wrap">
+                <div className="EventLeft">
+                  <h2>{event.name}</h2>
+                  <div className="EventBanImg">
+                    <img src={event.image} alt={event.name} />
+                  </div>
+                  <div className="ebanimgbtn flex justify-between items-center mb-[5vh]">
+                    <div className="ebbmgiL flex gap-2">
+                      <h5>{event.TrendingCalendarCategory}</h5>
+                    </div>
+                  </div>
+                  <div className="EventContBox mb-[5vh]">
+                    <h3>About The Trending</h3>
+                    <div
+                      className="event-description"
+                      dangerouslySetInnerHTML={{
+                        __html: event.trendingDetails,
+                      }}
+                    />
                   </div>
                 </div>
 
-                {event.TrendingLink && (
-                  <div className="flex justify-center pb-[30px]">
-                    <a href={event.TrendingLink || "#"}>
-                      <button
-                        className="cursor-pointer"
-                        style={{
-                          background: "#a44294",
-                          marginTop: "15px",
-                          color: "white",
-                          padding: "5px 14px",
-                          borderRadius: "5px",
-                          fontFamily: "Poppins",
-                          fontWeight: 500,
-                          width: "auto",
-                          marginTop: "0",
-                        }}
-                      >
-                        Click to View
-                      </button>
-                    </a>
+                <div className="EventRight">
+                  <div className="evderibox">
+                    <div className="evderListbox">
+                      <div className="evderViewbox">
+                        {event.TrendingCalendarMonth && (
+                          <InfoRow
+                            icon="/images/events/calendar.png"
+                            label={event.TrendingCalendarMonth}
+                          />
+                        )}
+                        {event.TrendingCalendarTime && (
+                          <InfoRow
+                            icon="/images/events/time.png"
+                            label={event.TrendingCalendarTime}
+                          />
+                        )}
+                        {event.duration && (
+                          <InfoRow
+                            icon="/images/events/duration.png"
+                            label={event.duration}
+                          />
+                        )}
+                        {event.ageRestriction && (
+                          <InfoRow
+                            icon="/images/events/age_limit.png"
+                            label={event.ageRestriction}
+                          />
+                        )}
+                        {event.language && (
+                          <InfoRow
+                            icon="/images/events/language.png"
+                            label={event.language}
+                          />
+                        )}
+                        {event.genre && (
+                          <InfoRow
+                            icon="/images/events/genre.png"
+                            label={event.genre}
+                          />
+                        )}
+                        {event.venue && (
+                          <InfoRow
+                            icon="/images/events/location.png"
+                            label={event.venue}
+                          />
+                        )}
+                      </div>
+                    </div>
+
+                    {event.TrendingLink && (
+                      <div className="flex justify-center pb-[30px]">
+                        <a href={event.TrendingLink || "#"}>
+                          <button
+                            className="cursor-pointer"
+                            style={{
+                              background: "#a44294",
+                              marginTop: "15px",
+                              color: "white",
+                              padding: "5px 14px",
+                              borderRadius: "5px",
+                              fontFamily: "Poppins",
+                              fontWeight: 500,
+                              width: "auto",
+                              marginTop: "0",
+                            }}
+                          >
+                            Click to View
+                          </button>
+                        </a>
+                      </div>
+                    )}
                   </div>
-                )}
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+          </section>
+        </>
+      );
 }
 
 function InfoRow({ icon, label }) {

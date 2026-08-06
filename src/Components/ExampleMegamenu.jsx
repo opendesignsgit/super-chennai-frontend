@@ -407,6 +407,12 @@ const menuItems = [
     label: "Arattai",
     labellink: "/arattai-with-jahabar-sadique/chai-kings-founder",
     content: [
+       {
+        title: "Hello",
+        desc: "ssdds",
+        link: "/arattai-with-v-sriram/heritage-historian",
+        image: "/images/Sriram-Arattai_headerImage.jpeg",
+      },
         {
         title: "Hello",
         desc: "ssdds",

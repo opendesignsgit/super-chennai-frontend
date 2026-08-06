@@ -117,20 +117,21 @@ export default function ArattaiWithSriram() {
       "@type": "Event",
       name: "Arattai with V. Sriram",
       description:
-        "Join Arattai with V. Sriram, Chennai's heritage enthusiast, historian, and author, as he explores Chennai's rich history, architecture, and cultural traditions.",
-      image: "https://www.superchennai.com/images/sriram-innerpage-banner.jpeg",
-      startDate: "2026-06-25T09:00",
-      endDate: "2026-06-25T23:00",
-      eventStatus: "https://schema.org/EventScheduled",
+        "V. Sriram joins Arattai with Super Chennai, a heritage historian, author and cultural ambassador sharing the city's history, hidden gems and timeless legacy.",
+      image: "https://www.superchennai.com/images/inner-page-sairam.jpeg",
+      startDate: "2026-08-22T10:00",
+      endDate: "2026-08-22T19:00",
+      eventStatus: "https://schema.org/EventPostponed",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       location: {
         "@type": "Place",
-        name: "Chennai",
+        name: "M.S. Swaminathan Research Foundation",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "",
+          streetAddress:
+            "3rd Cross Street, Taramani Institutional Area, Taramani, Chennai, Tamil Nadu 600113",
           addressLocality: "Chennai",
-          postalCode: "",
+          postalCode: "600113",
           addressCountry: "IN",
         },
       },
@@ -191,27 +192,61 @@ export default function ArattaiWithSriram() {
         <div className="container mx-auto px-6 lg:px-0">
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves ">
-              <h1 className=" text-center hidden ">
-                Arattai with V. Sriram
-              </h1>
+              <h1 className=" text-center hidden ">Arattai with V. Sriram</h1>
               <h3>Arattai with V. Sriram</h3>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                V. Sriram is one of Chennai's most respected heritage enthusiasts, historians, authors, and cultural ambassadors. Widely recognized for pioneering the concept of heritage walks in Chennai in 1999, he has dedicated over two decades to preserving and promoting the city's rich history, architecture, and cultural traditions. His engaging storytelling and deep knowledge have inspired thousands to rediscover Chennai's heritage through immersive walking tours, books, and public talks.
+                V. Sriram is one of Chennai's most respected heritage
+                enthusiasts, historians, authors, and cultural ambassadors.
+                Widely recognized for pioneering the concept of heritage walks
+                in Chennai in 1999, he has dedicated over two decades to
+                preserving and promoting the city's rich history, architecture,
+                and cultural traditions. His engaging storytelling and deep
+                knowledge have inspired thousands to rediscover Chennai's
+                heritage through immersive walking tours, books, and public
+                talks.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                What makes Sriram truly exceptional is his ability to bring history to life through captivating narratives and real-life experiences. His heritage walks across Chennai and historical destinations throughout India have become highly sought-after experiences, encouraging people of all ages to appreciate the significance of cultural preservation. Alongside his passion for history, he has also made remarkable contributions to Carnatic music research, literature, and heritage documentation.
+                What makes Sriram truly exceptional is his ability to bring
+                history to life through captivating narratives and real-life
+                experiences. His heritage walks across Chennai and historical
+                destinations throughout India have become highly sought-after
+                experiences, encouraging people of all ages to appreciate the
+                significance of cultural preservation. Alongside his passion for
+                history, he has also made remarkable contributions to Carnatic
+                music research, literature, and heritage documentation.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Beyond his heritage initiatives, Sriram has authored numerous acclaimed books on Chennai's history, Carnatic music, and prominent cultural personalities. He has served as the Editor of Madras Musings, contributed to leading publications, and currently serves as the Secretary of The Music Academy, Chennai. His dedication to heritage conservation earned him the prestigious Vedavalli Memorial Heritage Award in recognition of his outstanding efforts to preserve and promote Chennai's historical legacy.
+                Beyond his heritage initiatives, Sriram has authored numerous
+                acclaimed books on Chennai's history, Carnatic music, and
+                prominent cultural personalities. He has served as the Editor of
+                Madras Musings, contributed to leading publications, and
+                currently serves as the Secretary of The Music Academy, Chennai.
+                His dedication to heritage conservation earned him the
+                prestigious Vedavalli Memorial Heritage Award in recognition of
+                his outstanding efforts to preserve and promote Chennai's
+                historical legacy.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Through Arattai with Sriram Venkatakrishnan, audiences can experience fascinating conversations that uncover Chennai's untold stories, architectural treasures, musical heritage, and cultural evolution. Every session offers unique insights, inspiring discussions, and a deeper appreciation for the city's timeless traditions, making history engaging, meaningful, and relevant for everyone.
+                Through Arattai with Sriram Venkatakrishnan, audiences can
+                experience fascinating conversations that uncover Chennai's
+                untold stories, architectural treasures, musical heritage, and
+                cultural evolution. Every session offers unique insights,
+                inspiring discussions, and a deeper appreciation for the city's
+                timeless traditions, making history engaging, meaningful, and
+                relevant for everyone.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Super Chennai proudly welcomes Sriram to Arattai, celebrating his remarkable contributions to heritage conservation, historical research, cultural storytelling, and his enduring commitment to preserving Chennai's rich legacy for future generations.
+                Super Chennai proudly welcomes Sriram to Arattai, celebrating
+                his remarkable contributions to heritage conservation,
+                historical research, cultural storytelling, and his enduring
+                commitment to preserving Chennai's rich legacy for future
+                generations.
               </p>
             </div>
-            <div className="flex flex-col items-center text-center space-y-4 py-10" ref={registerRef}>
+            <div
+              className="flex flex-col items-center text-center space-y-4 py-10"
+              ref={registerRef}
+            >
               <p className="text-rose-600 font-semibold tracking-wide">
                 Limited Seats Only • Register Now
               </p>

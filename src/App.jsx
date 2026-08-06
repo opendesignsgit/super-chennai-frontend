@@ -373,6 +373,8 @@ import ArattaiSahithaExcell from "./Pages/Activities/ArrattaiWithVivekSamhithaMo
 import ArattaiWithBharathyBhaskar from "./Pages/Activities/ArattaiWithBharathiBaskar/arattaiwithBharathibaskar";
 import ArattaiBharathiExcelView from "./Pages/Activities/ArattaiWithBharathiBaskar/ArattaiBharathiExcelView";
 import IconofthemonthBharathyBhaskar from "./Pages/icon-of-the-month-bharathy-baskar";
+import SriramExcelEntry from "./Pages/Activities/ArattaiWithSriram/ArattaiSriramExcell";
+
 
 
 
@@ -1047,6 +1049,11 @@ function App() {
           <Route
           path="/arattai-with-v-sriram/heritage-historian"
           element={<ArattaiWithSriram />}
+        />
+
+         <Route
+          path="/arattai-with-v-sriram/heritage-historian/admin/v2/entry/989454ewwew"
+          element={<SriramExcelEntry />}
         />
 
 

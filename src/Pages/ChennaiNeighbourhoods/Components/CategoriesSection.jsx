@@ -200,78 +200,12 @@ export default function CategoriesSection({ locationId, data = [], location }) {
 
   return (
     <div className="flex gap-8 p-6 max-w-7xl mx-auto items-start">
-      {/* <div className="w-60 space-y-2 flex-shrink-0">
-        {categoriesList.map((cat) => {
-          const isActive = activeCategory === cat.category;
-
-          return (
-            <React.Fragment key={cat.category}>
-              <button
-                onClick={() => setActiveCategory(cat.category)}
-                className={`cursor-pointer w-full flex items-center justify-between px-4 py-3 rounded-lg text-[16px] transition-all ${
-                  isActive
-                    ? "bg-[#a44294] text-white font-medium shadow-md"
-                    : "bg-white border border-gray-200 text-[#000] hover:bg-purple-50"
-                }`}
-              >
-                <span className="flex items-center gap-2">
-                  {cat.icon && typeof cat.icon === "object" && cat.icon.url ? (
-                    <img
-                      src={`${API_BASE_URL_API_TEST_DEV}${cat.icon.url}`}
-                      alt={cat.icon.alt || cat.category}
-                      className="w-5 h-5 object-contain"
-                    />
-                  ) : (
-                    <span>{cat.icon || "📍"}</span>
-                  )}
-                  {cat.category}
-                </span>
-                <span>›</span>
-              </button>
-
-              {Object.values(subCategoriesByCategory?.[activeCat] || {})
-                .length === 0 ? (
-                <div className="text-gray-500 text-center mt-10">
-                  We couldn’t find anything here. Try exploring other
-                  categories.
-                </div>
-              ) : (
-                Object.values(subCategoriesByCategory?.[activeCat])
-                  .sort((a, b) => a.title.localeCompare(b.title))
-                  .slice(0, 5)
-                  .map((sub) => (
-                    <div
-                      key={sub.id}
-                      onClick={() => {
-                        navigate(
-                          `/neighbourhood/${locationId}/${activeCat
-                            .toLowerCase()
-                            .replace(/\s+/g, "-")}/${sub.slug}`,
-                        );
-                        setOpen(false);
-                      }}
-                      className="border butoonsearchbutton cursor-pointer hover:bg-gray-100 transition"
-                    >
-                      <div className="iconsimagelocation">
-                        <img src="" alt="" />
-                        {sub.title}
-                      </div>
-                    </div>
-                  ))
-              )}
-            </React.Fragment>
-          );
-        })}
-      </div> */}
-
       <div className="w-60 space-y-2 flex-shrink-0">
         {categoriesList.map((cat) => {
           const isActive = activeCategory === cat.category;
-
           const currentSubCategories = Object.values(
             subCategoriesByCategory?.[cat.category] || {},
           );
-
           return (
             <React.Fragment key={cat.category}>
               <button
@@ -299,13 +233,9 @@ export default function CategoriesSection({ locationId, data = [], location }) {
                   ) : (
                     <span>{cat.icon || "📍"}</span>
                   )}
-
                   <span> {cat.category}</span>
                 </span>
-
                 <span className="">
-                  {/* <img src="/images/icons/right-arrow-dropown.svg" alt="" /> */}
-
                   <ChevronRight
                     size={20}
                     strokeWidth={2.5}
@@ -315,7 +245,6 @@ export default function CategoriesSection({ locationId, data = [], location }) {
                   />
                 </span>
               </button>
-
               {open && (
                 <>
                   {isActive && (
@@ -368,7 +297,6 @@ export default function CategoriesSection({ locationId, data = [], location }) {
           );
         })}
       </div>
-
       <div className="flex-1 min-w-0">
         <div className="w-full">
           {filteredSlides.length > 0 ? (
@@ -397,7 +325,6 @@ export default function CategoriesSection({ locationId, data = [], location }) {
                         </a>
                       ))}
                     </Slider>
-
                     <div className="absolute bottom-11 left-10 right-10 flex items-end justify-between pointer-events-none z-10">
                       <div>
                         <h3 className="text-white font-bold text-xl">
@@ -414,7 +341,6 @@ export default function CategoriesSection({ locationId, data = [], location }) {
                       </a>
                     </div>
                   </div>
-
                   <div className="populaarrrrsection">
                     <div className="flex items-center justify-between mb-5 mt-5">
                       <span className="font-semibold text-gray-800">
@@ -427,7 +353,6 @@ export default function CategoriesSection({ locationId, data = [], location }) {
                         View All
                       </a>
                     </div>
-
                     <div className="block border border-gray-200 shadow-sm rounded-lg p-4 bg-white sliderrrrsectiosss">
                       {slide.lists.length > 3 ? (
                         <Slider {...slickSettings2}>

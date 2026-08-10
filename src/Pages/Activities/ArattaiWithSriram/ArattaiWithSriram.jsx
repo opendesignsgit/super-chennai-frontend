@@ -154,18 +154,18 @@ export default function ArattaiWithSriram() {
 
       <Helmet>
         <title>
-          Arattai with V. Sriram - Heritage Enthusiast & Cultural Ambassador
+        Super Chennai Arattai with V. Sriram Heritage Historian
         </title>
         <meta
           name="description"
-          content="Be part of Super Chennai Arattai as V. Sriram uncovers Chennai's untold stories, architectural treasures, musical heritage, and cultural evolution."
+          content="V. Sriram joins Arattai with Super Chennai, a heritage historian, author and cultural ambassador sharing the city's history, hidden gems and timeless legacy.."
         />
         <script type="application/ld+json">
           {JSON.stringify(arattaiSchema)}
         </script>
         <link
           rel="canonical"
-          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-v-sriram`}
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-v-sriram/heritage-historian`}
         />
       </Helmet>
 

@@ -518,7 +518,7 @@ export default function NeighbourhoodDetail() {
             )}
           </div>
         </div>
-      )} 
+      )}
       {(location?.whyChoose?.length > 0 ||
         location?.lifestyleScores?.length > 0) && (
         <div className="container max-w-7xl mx-auto px-8 pb-10">
@@ -563,7 +563,7 @@ export default function NeighbourhoodDetail() {
               <div className="flex items-center justify-between mb-1">
                 <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
                   LIFESTYLE SCORE
-                </h3>      
+                </h3>
               </div>
               <p className="mb-4  text-[#000]  neighbourtwoparagraph">
                 Rated based on neighborhood core living convenience factors
@@ -600,8 +600,8 @@ export default function NeighbourhoodDetail() {
                 Explore Neighbourhoods Around {currentLocationName}
               </h2>
               <p className="text-gray-500 mb-1 bodyneighfontsss text-[15px]">
-                Discover vibrant neighbourhoods close to {currentLocationName} Each has its
-                own charm, amenities and lifestyle.
+                Discover vibrant neighbourhoods close to {currentLocationName}{" "}
+                Each has its own charm, amenities and lifestyle.
               </p>
             </div>
 
@@ -629,9 +629,7 @@ export default function NeighbourhoodDetail() {
                       alt={item.name}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute top-3 left-3 bg-white/100 backdrop-blur-xs px-2.5 py-1 rounded-full flex items-center shadow-xs">
-                     
-                    </div>
+                    <div className="absolute top-3 left-3 bg-white/100 backdrop-blur-xs px-2.5 py-1 rounded-full flex items-center shadow-xs"></div>
                   </div>
                   <div className="flex flex-col flex-grow">
                     <h3 className="!text-lg font-bold text-gray-900 mb-1 neighbourtwosecondheading">

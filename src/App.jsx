@@ -317,7 +317,9 @@ import ArattaiGskVeluExcelView from "./Pages/Activities/ArrattaiWithGskVelu/Arat
 
 import ArattaiWithKishenDas from "./Pages/Activities/ArrataiWithKishen/arattai-kishandas";
 import ArattaiWithSriram from "./Pages/Activities/ArattaiWithSriram/ArattaiWithSriram";
+import KiteFestivalPage from "./Pages/Activities/KiteFestivalPage";
 
+import ChennaiStory  from "./Pages/Activities/letsTalkSection/ChennaiStory";
 
 
 
@@ -1046,18 +1048,19 @@ function App() {
           path="/arattai-with-bharathy-bhaskar/prominent-speaker/v1/registers/entry"
           element={<ArattaiBharathiExcelView />}
         />
-          <Route
+        <Route
           path="/arattai-with-v-sriram/heritage-historian"
           element={<ArattaiWithSriram />}
         />
 
-         <Route
+        <Route
           path="/arattai-with-v-sriram/heritage-historian/admin/v2/entry/989454ewwew"
           element={<SriramExcelEntry />}
         />
 
+        <Route path="/KiteFestivalPage" element={<KiteFestivalPage />} />
 
-        
+        <Route path="/ChennaiStory" element={<ChennaiStory />} />
 
         {/* conclave */}
         <Route path="/admin-superchennai" element={<AdminView />} />
@@ -1641,12 +1644,10 @@ function App() {
           path="/super-chennai-icon-of-nov-2025"
           element={<IconofthemonthNov />}
         />
-                <Route
+        <Route
           path="/icon-of-the-april-month-2026"
           element={<IconofthemonthBharathyBhaskar />}
         />
-
-        
 
         <Route
           path="/superchennai-events-details/:url"

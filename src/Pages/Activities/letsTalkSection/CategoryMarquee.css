@@ -1,0 +1,291 @@
+.marquee-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.marquee-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.marquee-header h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+.marquee-header p {
+  font-size: 15px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Outer Container with Fade Gradients on Left/Right Edge */
+.marquee-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* Infinite Scrolling Track */
+.marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marqueeScroll 45s linear infinite;
+  will-change: transform;
+}
+
+/* Pause Animation on Hover */
+.marquee-wrapper:hover .marquee-track,
+.marquee-track.paused {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Individual Card Styling */
+.marquee-card {
+  width: 260px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
+  will-change: transform;
+}
+
+.marquee-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(139, 60, 130, 0.18);
+}
+
+.marquee-card-img {
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.marquee-icon-wrapper {
+  position: absolute;
+  bottom: -15px;
+  left: 15px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.marquee-card-body {
+  padding: 24px 16px 16px 16px;
+}
+
+.marquee-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.marquee-card-desc {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.marquee-card-link {
+  font-size: 12px;
+  font-weight: 700;
+  color: #8b3c82;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.3s ease;
+}
+
+.marquee-card-link:hover {
+  gap: 8px;
+}
+
+/* ===================================================
+   HERO POLAROIDS ULTRA-SMOOTH STACK CYCLING
+=================================================== */
+
+.hero-polaroids {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.polaroid {
+  position: absolute;
+  width: 240px;
+  background: #ffffff;
+  padding: 12px 12px 24px 12px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  /* GPU Acceleration & Smooth Transition */
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+/* Pause Cycle Animation Smoothly when Hovered */
+.hero-polaroids:hover .polaroid {
+  animation-play-state: paused;
+}
+
+/* Smooth Individual Polaroid Hover */
+.polaroid:hover {
+  transform: translate3d(0, -10px, 50px) rotate(0deg) scale(1.08) !important;
+  z-index: 20 !important;
+  box-shadow: 0 25px 50px rgba(139, 60, 130, 0.35);
+}
+
+/* Smooth Cycle Animation Speeds (10s cubic-bezier for liquid motion) */
+.polaroid.card-1 {
+  animation: stackCycle1 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.polaroid.card-2 {
+  animation: stackCycle2 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.polaroid.card-3 {
+  animation: stackCycle3 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Card 1 Animation Cycle */
+@keyframes stackCycle1 {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(-6deg) scale(1);
+    z-index: 3;
+    opacity: 1;
+  }
+  24% {
+    transform: translate3d(0, 0, 0) rotate(-6deg) scale(1);
+    z-index: 3;
+    opacity: 1;
+  }
+  30% {
+    transform: translate3d(130%, -10px, 0) rotate(12deg) scale(0.98);
+    z-index: 3;
+    opacity: 0.85;
+  }
+  33% {
+    transform: translate3d(0, 15px, 0) rotate(8deg) scale(0.9);
+    z-index: 1;
+    opacity: 0.9;
+  }
+  63% {
+    transform: translate3d(0, 8px, 0) rotate(2deg) scale(0.95);
+    z-index: 2;
+    opacity: 1;
+  }
+}
+
+/* Card 2 Animation Cycle */
+@keyframes stackCycle2 {
+  0%, 100% {
+    transform: translate3d(0, 8px, 0) rotate(2deg) scale(0.95);
+    z-index: 2;
+    opacity: 1;
+  }
+  30% {
+    transform: translate3d(0, 8px, 0) rotate(2deg) scale(0.95);
+    z-index: 2;
+  }
+  33% {
+    transform: translate3d(0, 0, 0) rotate(-6deg) scale(1);
+    z-index: 3;
+    opacity: 1;
+  }
+  57% {
+    transform: translate3d(0, 0, 0) rotate(-6deg) scale(1);
+    z-index: 3;
+  }
+  63% {
+    transform: translate3d(130%, -10px, 0) rotate(12deg) scale(0.98);
+    z-index: 3;
+    opacity: 0.85;
+  }
+  66% {
+    transform: translate3d(0, 15px, 0) rotate(8deg) scale(0.9);
+    z-index: 1;
+    opacity: 0.9;
+  }
+}
+
+/* Card 3 Animation Cycle */
+@keyframes stackCycle3 {
+  0%, 100% {
+    transform: translate3d(0, 15px, 0) rotate(8deg) scale(0.9);
+    z-index: 1;
+    opacity: 0.9;
+  }
+  63% {
+    transform: translate3d(0, 15px, 0) rotate(8deg) scale(0.9);
+    z-index: 1;
+  }
+  66% {
+    transform: translate3d(0, 8px, 0) rotate(2deg) scale(0.95);
+    z-index: 2;
+    opacity: 1;
+  }
+  90% {
+    transform: translate3d(0, 8px, 0) rotate(2deg) scale(0.95);
+    z-index: 2;
+  }
+  93% {
+    transform: translate3d(0, 0, 0) rotate(-6deg) scale(1);
+    z-index: 3;
+    opacity: 1;
+  }
+  97% {
+    transform: translate3d(130%, -10px, 0) rotate(12deg) scale(0.98);
+    z-index: 3;
+    opacity: 0.85;
+  }
+}

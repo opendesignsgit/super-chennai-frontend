@@ -1058,7 +1058,7 @@ function App() {
           element={<SriramExcelEntry />}
         />
 
-        <Route path="/KiteFestivalPage" element={<KiteFestivalPage />} />
+        <Route path="/tamil-nadu-international-kite-festival-2026-mamallapuram-chennai" element={<KiteFestivalPage />} />
 
         <Route path="/ChennaiStory" element={<ChennaiStory />} />
 

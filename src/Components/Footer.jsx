@@ -266,6 +266,11 @@ const Footer = () => {
       title: "Arattai with Kishen Das",
       link: "/arattai-with-kishen-das/tamil-actor-podcaster",
     },
+        {
+      title: "Kite Festival",
+      link: "/tamil-nadu-international-kite-festival-2026-mamallapuram-chennai",
+    },
+    
   ];
 
 

@@ -276,7 +276,7 @@ export default function Thankyou() {
               <h1>You're Registered!</h1>
 
               <p>
-                Thank you for registering for Arattai with V.Sairam. Your
+                Thank you for registering for Arattai with V.Sriram. Your
                 submission has been successfully received, and our team is
                 currently reviewing your registration. If your entry is
                 selected, you will receive an official confirmation email from

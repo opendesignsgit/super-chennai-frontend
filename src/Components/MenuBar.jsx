@@ -13,7 +13,7 @@ export default function MenuBar({ setMenuBar }) {
     { label: "Events", href: "/chennai-events" },
     { label: "SUMMER FEST", href: "https://summerfest.superchennai.com/" },
     {
-      label: "Metro-vil Madras Day",
+      label: "Sing Along Metro",
       href: "/contest/madras-day-2026-midnight-metro-ride",
     },
 

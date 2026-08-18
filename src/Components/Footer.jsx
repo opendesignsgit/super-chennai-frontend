@@ -221,6 +221,10 @@ const Footer = () => {
       link: "https://summerfest.superchennai.com/",
     },
     {
+      title: "Sing Along Metro",
+      link: "/contest/madras-day-2026-midnight-metro-ride",
+    },
+    {
       title: "Contact Us",
       link: "/contact",
     },
@@ -270,8 +274,8 @@ const Footer = () => {
       title: "Kite Festival",
       link: "/tamil-nadu-international-kite-festival-2026-mamallapuram-chennai",
     },
-     {
-      title: "Metro-vil Madras Day",
+    {
+      title: "Sing Along Metro",
       link: "/contest/madras-day-2026-midnight-metro-ride",
     },
   ];

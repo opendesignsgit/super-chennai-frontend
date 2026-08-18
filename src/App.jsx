@@ -376,10 +376,13 @@ import ArattaiWithBharathyBhaskar from "./Pages/Activities/ArattaiWithBharathiBa
 import ArattaiBharathiExcelView from "./Pages/Activities/ArattaiWithBharathiBaskar/ArattaiBharathiExcelView";
 import IconofthemonthBharathyBhaskar from "./Pages/icon-of-the-month-bharathy-baskar";
 import SriramExcelEntry from "./Pages/Activities/ArattaiWithSriram/ArattaiSriramExcell";
+import SingAloneMtero from "./Pages/Activities/SingAloneMetro/SingAloneMtero";
+import SingAlongMetroExcel from "./Pages/Activities/SingAloneMetro/SingAlongMetroExcel";
 
 
 
-
+import LetsTalkPage from "./Pages/Activities/LetsTalk/LetsTalk";
+import LetsTalkCardsDetail from "./Pages/Activities/LetsTalk/Components/LetsTalkCardsDetail";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -767,6 +770,10 @@ function App() {
       <Routes>
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
 
+        <Route path="/contest/madras-day-2026-midnight-metro-ride" element={<SingAloneMtero />} />
+                <Route path="/sing-longMetroExcel/v1/data/superchennai" element={<SingAlongMetroExcel />} />
+
+        
         <Route path="ipl-2026-match-updates" element={<CricketsList />} />
         <Route path="content-writers" element={<ContentWriters />} />
 
@@ -1058,7 +1065,10 @@ function App() {
           element={<SriramExcelEntry />}
         />
 
-        <Route path="/tamil-nadu-international-kite-festival-2026-mamallapuram-chennai" element={<KiteFestivalPage />} />
+        <Route
+          path="/tamil-nadu-international-kite-festival-2026-mamallapuram-chennai"
+          element={<KiteFestivalPage />}
+        />
 
         <Route path="/ChennaiStory" element={<ChennaiStory />} />
 
@@ -1081,6 +1091,10 @@ function App() {
           path="/neighbourhood/:locationId/:category/:subcategory"
           element={<NeighbourhoodCategory />}
         />
+
+
+        <Route path="/letstalk" element={<LetsTalkPage />} />
+        <Route path="/letstalkcardsdetail" element={<LetsTalkCardsDetail />} />
 
         {/* <Route
           path="/neighbourhood/:locationId/:category/:slug"

@@ -1,0 +1,23 @@
+body {
+  /* display: none; */
+}
+
+.bodydiv {
+  font-family: "poppins";
+}
+
+p {
+  font-family: "poppins";
+}
+
+.formsectionnnnsletstak input::placeholder {
+  font-size: 15px;
+  color: #858585;
+}
+.formsectionnnnsletstak textarea::placeholder {
+  font-size: 15px;
+  color: #858585;
+}
+.formsectionnnnsletstak input {
+  height: 50px;
+}

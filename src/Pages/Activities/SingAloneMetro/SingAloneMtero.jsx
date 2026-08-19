@@ -296,14 +296,14 @@ export default function SingAloneMtero() {
               </p>
             </div>
 
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <button
                 onClick={scrollToForm}
                 className="w-full bg-[#01236a] hover:bg-[#0A1B3D] text-white font-bold py-3 px-6 rounded-xl transition duration-300 shadow-md uppercase tracking-wider text-sm"
               >
                 Register Now
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

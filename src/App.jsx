@@ -378,6 +378,8 @@ import IconofthemonthBharathyBhaskar from "./Pages/icon-of-the-month-bharathy-ba
 import SriramExcelEntry from "./Pages/Activities/ArattaiWithSriram/ArattaiSriramExcell";
 import SingAloneMtero from "./Pages/Activities/SingAloneMetro/SingAloneMtero";
 import SingAlongMetroExcel from "./Pages/Activities/SingAloneMetro/SingAlongMetroExcel";
+import SingAlongMetroSuccess from "./Pages/Activities/SingAloneMetro/SingAloneMtero-thankyou";
+
 
 
 
@@ -770,10 +772,20 @@ function App() {
       <Routes>
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
 
-        <Route path="/contest/madras-day-2026-midnight-metro-ride" element={<SingAloneMtero />} />
-                <Route path="/sing-longMetroExcel/v1/data/superchennai" element={<SingAlongMetroExcel />} />
+        <Route
+          path="/contest/madras-day-2026-midnight-metro-ride"
+          element={<SingAloneMtero />}
+        />
+        <Route
+          path="/sing-longMetroExcel/v1/data/superchennai"
+          element={<SingAlongMetroExcel />}
+        />
 
-        
+        <Route
+          path="/contest/madras-day-2026-midnight-metro-ride/thank-you"
+          element={<SingAlongMetroSuccess />}
+        />
+
         <Route path="ipl-2026-match-updates" element={<CricketsList />} />
         <Route path="content-writers" element={<ContentWriters />} />
 
@@ -1091,7 +1103,6 @@ function App() {
           path="/neighbourhood/:locationId/:category/:subcategory"
           element={<NeighbourhoodCategory />}
         />
-
 
         <Route path="/letstalk" element={<LetsTalkPage />} />
         <Route path="/letstalkcardsdetail" element={<LetsTalkCardsDetail />} />

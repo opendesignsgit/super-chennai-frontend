@@ -626,12 +626,12 @@ function App() {
 
       {/* {showPopup && !hideOnMargazhiPage && !hideOnBlog && !hideOncovlaves && ( */}
 
-      {/* {isHomePage && showPopup && (
+      {isHomePage && showPopup && (
         <ImagePopup
-          imageUrl="/images/popup-summerfest.jpeg"
+          imageUrl="/images/letstalkpopup.png"
           onClose={() => setShowPopup(false)}
         />
-      )} */}
+      )}
 
       {/* )} */}
 
@@ -734,10 +734,10 @@ function App() {
             footerReached ? "footerreached" : ""
           } bubble-master`}
         >
-          <a href="/arattai-with-v-sriram/heritage-historian">
+          <a href="https://letstalkchennai.com/">
             <img
-              src="/images/tap-button-arattai.svg"
-              alt="artificial intelligence challenge"
+              src="/images/letstalkhomeicon.png"
+              alt=""
               // className="bubble-glow" // 🔥 UPGRADED CLASS
             />
           </a>

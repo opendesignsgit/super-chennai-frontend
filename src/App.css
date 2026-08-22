@@ -287,9 +287,10 @@
   height: 30px;
 }
 
-
 .summerfestbg {
   background-image: url("/public/images/summerfestbg.jpeg");
+  background-image: url("/public/images/letstalkbg.png");
+
   height: 724px;
   display: flex;
   align-items: center;
@@ -360,6 +361,7 @@
 @media (max-width: 768px) {
   .summerfestbg {
     background-image: url("/public/images/summerfestmobilebg.jpeg");
+    background-image: url("/public/images/letstalkmobilebg.png");
     height: 914px;
     display: flex;
     align-items: flex-start;
@@ -376,7 +378,7 @@
   }
 
   .summerfestwidthss .chennaiInvestmentsHeading br {
-    display: none;
+    /* display: none; */
   }
 }
 @media (max-width: 1600px) {
@@ -1912,40 +1914,40 @@
   justify-content: center;
 }
 
+@keyframes textGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
- @keyframes textGradient {
-            0% { 
-                background-position: 0% 50%; 
-            }
-            50% { 
-                background-position: 100% 50%; 
-            }
-            100% { 
-                background-position: 0% 50%; 
-            }
-        }
+.headingGredientclass {
+  margin: 20px 0;
+  padding: 20px 30px;
+  font-family: "Arial", sans-serif;
+  font-size: 2.2rem;
+  font-weight: normal;
+  text-align: center;
+  background: linear-gradient(
+    -45deg,
+    #100f9a,
+    /* #34493a,  */ #a34493,
+    #100f9a
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: textGradient 2.5s ease infinite;
+  letter-spacing: 1px;
+}
 
-       .headingGredientclass {
-            margin: 20px 0;
-            padding: 20px 30px;
-            font-family: 'Arial', sans-serif;
-            font-size: 2.2rem;
-            font-weight: normal;
-            text-align: center;
-            background: linear-gradient(-45deg, 
-                #100f9a, 
-                /* #34493a,  */
-                #a34493, 
-                #100f9a);
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: textGradient 2.5s ease infinite;
-            letter-spacing: 1px;
-        }
-
-        /* Thin Pink Scrollbar */
+/* Thin Pink Scrollbar */
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -1958,20 +1960,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    180deg,
-    #ff4fa3,
-    #d63384
-  );
+  background: linear-gradient(180deg, #ff4fa3, #d63384);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    180deg,
-    #ff2f92,
-    #c21875
-  );
+  background: linear-gradient(180deg, #ff2f92, #c21875);
 }
 
 /* Firefox */
@@ -1980,7 +1974,6 @@
   scrollbar-width: thin;
   scrollbar-color: #d63384 #ffe4ef;
 }
-
 
 .majaaaquizzzs {
   display: flex;
@@ -1998,7 +1991,6 @@
 .radiomajaainput {
   width: max-content !important;
 }
-
 
 @media (max-width: 767px) {
   .formheadingtheme-arattai {

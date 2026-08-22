@@ -37,7 +37,7 @@ const ImagePopup = ({ onClose, imageUrl }) => {
         >
           {/* <Link to="/namma-stories#NammaStoriesVideoId" onClick={onClose}> */}
           {/* <Link to="/chennai-conclave" onClick={onClose}> */}
-          <a href="https://summerfest.superchennai.com/">
+          <a href="https://letstalkchennai.com/">
             <img
               src={imageUrl}
               alt="Popup"

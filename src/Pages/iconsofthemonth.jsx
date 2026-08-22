@@ -99,7 +99,7 @@ export default function Iconsofthemonth() {
                     className="rounded-xl mb-3"
                   />
                   <p className="text-lg font-medium">
-                    Icon of the Month - April 2026
+                    Icon of the Month - May 2026
                   </p>
                 </div>
               </a>

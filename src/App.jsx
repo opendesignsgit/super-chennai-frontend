@@ -387,6 +387,9 @@ import IconofthemonthVSriram from "./Pages/icon-of-the-month-v-sairam";
 import LetsTalkPage from "./Pages/Activities/LetsTalk/LetsTalk";
 import LetsTalkCardsDetail from "./Pages/Activities/LetsTalk/Components/LetsTalkCardsDetail";
 
+import ChennailetsTalkDashboard from "./Pages/Dashboard/letsTalkDashboard";
+
+
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   const [animate, setAnimate] = useState(false);
@@ -772,9 +775,11 @@ function App() {
 
       <Routes>
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
-
-
-
+        
+        <Route
+          path="/letsTalkDashboard"
+          element={<ChennailetsTalkDashboard />}
+        />
         <Route
           path="/contest/madras-day-2026-midnight-metro-ride"
           element={<SingAloneMtero />}
@@ -783,15 +788,12 @@ function App() {
           path="/sing-longMetroExcel/v1/data/superchennai"
           element={<SingAlongMetroExcel />}
         />
-
         <Route
           path="/contest/madras-day-2026-midnight-metro-ride/thank-you"
           element={<SingAlongMetroSuccess />}
         />
-
         <Route path="ipl-2026-match-updates" element={<CricketsList />} />
         <Route path="content-writers" element={<ContentWriters />} />
-
         <Route path="superchennai-restaurants" element={<RestaurantsPage />} />
         <Route path="test" element={<TestPage />} />
         <Route path="/chennai-events" element={<EventsPage />} />
@@ -800,21 +802,17 @@ function App() {
         <Route path="/properties/:slug" element={<PropertyDetailPage />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogDetails />} />
-
         <Route path="/ArticleList" element={<AllArticleList />} />
-
         <Route path="/voice-of-chennai" element={<ArticleListPageTest />} />
         {/* <Route
               path="/ArticleDetailPage"
               element={<ArticleDetailPage />}
             /> */}
-
         <Route path="/:slug" element={<ArticleDetailPage />} />
         <Route path="/menifestoInfo" element={<MenifestoInfo />} />
         <Route path="/download-manifesto-pdf" element={<Download />} />
         <Route path="/Manifesto-info" element={<ManifestoPageInfoPAge />} />
         <Route path="/ManifestoTest" element={<ManifestoTest />} />
-
         <Route
           path="/manifesto-admin-all-doc-secure-datas"
           element={<ManifestoView />}
@@ -836,9 +834,7 @@ function App() {
           path="/chennai-icon-of-the-month"
           element={<IconOfMonthList />}
         />
-
         <Route path="/QuestionManagement" element={<QuestionManagement />} />
-
         <Route
           path="/day-to-deliver-quiz/login"
           element={
@@ -847,7 +843,6 @@ function App() {
             </PublicRoute>
           }
         />
-
         <Route
           path="/day-to-deliver-quiz"
           element={
@@ -856,9 +851,7 @@ function App() {
             </PublicRoute>
           }
         />
-
         {/* {######################/* MAZZA QUZ PAGE /  ############################## */}
-
         <Route
           path="/contest/majaa-quiz"
           element={
@@ -867,7 +860,6 @@ function App() {
             </PublicRoute>
           }
         />
-
         <Route
           path="/majaa-quiz/login"
           element={
@@ -876,7 +868,6 @@ function App() {
             </PublicRoute>
           }
         />
-
         <Route
           path="majaa-quiz/register"
           element={
@@ -885,7 +876,6 @@ function App() {
             </PublicRoute>
           }
         />
-
         <Route
           path="/majaa-quiz/Questions"
           element={
@@ -894,7 +884,6 @@ function App() {
             </PrivateRoute>
           }
         />
-
         <Route
           path="/auth-register"
           element={
@@ -903,7 +892,6 @@ function App() {
             </PublicRoute>
           }
         />
-
         <Route
           path="/verify-otp"
           element={
@@ -929,7 +917,6 @@ function App() {
             </PrivateRoute>
           }
         />
-
         {/* <Route
           path="/questions2026"
           element={
@@ -946,7 +933,6 @@ function App() {
             </PrivateRoute>
           }
         />
-
         <Route
           path="/your-results"
           element={
@@ -979,17 +965,14 @@ function App() {
           path="/contest/hotshots-photography-contest"
           element={<HotshotChennaiContest />}
         />
-
         <Route
           path="/contest/chennai-summer-photography-contest"
           element={<SummerClipsPhtography />}
         />
-
         <Route
           path="/contest/12365425365277/admin/v1/data/sumerfest"
           element={<SummerDashboardView />}
         />
-
         <Route path="/chennai-conclave" element={<Conclave />} />
         <Route path="/devConclave" element={<DevConclave />} />
         <Route
@@ -1004,12 +987,10 @@ function App() {
           path="/arattai-with-kamakoti/iit-madras-director"
           element={<ArattaiWithKamakotti />}
         />
-
         <Route
           path="/arattai-with-vivek-karunakaran/chennai-fashion-designer"
           element={<ArattaiWithVivekKarunakaran />}
         />
-
         <Route
           path="/arattai-with-soumya-swaminathan/chief-scientist"
           element={<ArattaiWithSoumyaSwaminathan />}
@@ -1019,7 +1000,6 @@ function App() {
           element={<ArattaiSoumyaSwaminathanExcelView />}
         />
         <Route path="/power/power_cut" element={<PowerCutPage />} />
-
         <Route
           path="/arattai-with-dr-gsk-velu/chennai-healthcare-entrepreneur"
           element={<ArattaiWithGskVelu />}
@@ -1028,27 +1008,22 @@ function App() {
           path="/chennai-healthcare-entrepreneur/live-views-&*lkjghsgshshgshsgsgh&screkey"
           element={<ArattaiGskVeluExcelView />}
         />
-
         <Route
           path="/arattai-with-kamakoti/iit-madras-director-admin-entry-oiuyterwqasvcxzdsw/refdewsdfettwfsvvdg/8728272/lmnjhscbnmdt"
           element={<ArattaikamakotiExcelView />}
         />
-
         <Route
           path="/arattai-with-Karunakaran/fettwfsvvdg/8728272/lmnjhscbnmdt"
           element={<ArattaiKarunakaranExcelView />}
         />
-
         <Route
           path="/arattai-with-jahabar-sadique/chai-kings-founder-admin-all-entry"
           element={<ArattaiJahabarExcelView />}
         />
-
         <Route
           path="/arattai-with-aruna-sairam/carnatic-vocalist-live-update"
           element={<ArattaiExcelView />}
         />
-
         <Route
           path="/arattai-with-kishen-das/tamil-actor-podcaster"
           element={<ArattaiWithKishenDas />}
@@ -1057,7 +1032,6 @@ function App() {
           path="/arattai-with-dr-samhitha-moturi/director-of-prashanth-hospitals"
           element={<ArattaiWithSamhithaMoturi />}
         />
-
         <Route
           path="/director-of-prashanth-hospitals/v1/details"
           element={<ArattaiSahithaExcell />}
@@ -1074,57 +1048,43 @@ function App() {
           path="/arattai-with-v-sriram/heritage-historian"
           element={<ArattaiWithSriram />}
         />
-
         <Route
           path="/arattai-with-v-sriram/heritage-historian/admin/v2/entry/989454ewwew"
           element={<SriramExcelEntry />}
         />
-
         <Route
           path="/tamil-nadu-international-kite-festival-2026-mamallapuram-chennai"
           element={<KiteFestivalPage />}
         />
-
         <Route path="/ChennaiStory" element={<ChennaiStory />} />
-
         {/* conclave */}
         <Route path="/admin-superchennai" element={<AdminView />} />
-
         <Route path="/neighbourhood" element={<ChennaiNeighbourhood />} />
-
         <Route
           path="/neighbourhood/:locationId"
           element={<ChennaiNeighbourhoodDetail />}
         />
-
         <Route
           path="/neighbourhood/:locationId/:category"
           element={<NeighbourhoodCategory />}
         />
-
         <Route
           path="/neighbourhood/:locationId/:category/:subcategory"
           element={<NeighbourhoodCategory />}
         />
-
         <Route path="/letstalk" element={<LetsTalkPage />} />
         <Route path="/letstalkcardsdetail" element={<LetsTalkCardsDetail />} />
-
         {/* <Route
           path="/neighbourhood/:locationId/:category/:slug"
           element={<NeighbourhoodItemDetail />}
         /> */}
-
         <Route
           path="/neighbourhood/:locationId/:category/:subcategory/:slug"
           element={<NeighbourhoodItemDetail />}
         />
-
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
-
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
-
         {/*----Main-Pages---------*/}
         <Route path="/" element={<HomePage />} />
         <Route path="/testhome" element={<TestHomePage />} />
@@ -1148,7 +1108,6 @@ function App() {
           path="/contest/gen-z-content-creators"
           element={<GenzVideoContent />}
         />
-
         <Route
           path="/reimagine-chennai-AI-art-challenge"
           element={<ReimagineChennai />}
@@ -1443,9 +1402,7 @@ function App() {
           path="/visit-shopping-local-finds-savoredible-souvenirs"
           element={<ShoppingLocalFindsSavorEdibleSouvenirs />}
         />
-
         <Route path="/CricketLivePage" element={<CricketLivePage />} />
-
         {/* Shopping Pages */}
         {/* Place to Visit */}
         <Route
@@ -1626,15 +1583,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
-
         <Route path="/icon-of-the-july-month" element={<Iconofthemonth />} />
-
-         
-                 
-
-
-
-
         <Route
           path="/icon-of-the-oct-month-2025"
           element={<IconofthemonthOct />}
@@ -1643,17 +1592,14 @@ function App() {
           path="/icon-of-the-dec-month-2025"
           element={<IconofthemonthFebAruna />}
         />
-
         <Route
           path="/icon-of-the-jan-month-2026"
           element={<IconofthemonthMarchKamakotti />}
         />
-
         <Route
           path="/icon-of-the-march-month-2026"
           element={<IconofthemonthAprilSowmiyaSwaminathan />}
         />
-
         <Route
           path="/super-chennai-icon-of-aug-2025"
           element={<IconofthemonthAugust />}
@@ -1674,7 +1620,6 @@ function App() {
           path="/super-chennai-icon-of-jan-2026"
           element={<Iconofthemontjahabar />}
         />
-
         <Route
           path="/super-chennai-icon-of-nov-2025"
           element={<IconofthemonthNov />}
@@ -1683,14 +1628,10 @@ function App() {
           path="/icon-of-the-april-month-2026"
           element={<IconofthemonthBharathyBhaskar />}
         />
-           <Route
+        <Route
           path="/icon-of-the-may-month-2026"
           element={<IconofthemonthVSriram />}
         />
-
-
-        
-
         <Route
           path="/superchennai-events-details/:url"
           element={<EventsDetails />}
@@ -1709,7 +1650,6 @@ function App() {
           path="/super-chennai-contests-quiz"
           element={<Navigate to="/contests/chennai-quiz" replace />}
         />
-
         <Route
           path="/events-in-chennai/deva-live-concert-90s-tamil-hits-"
           element={
@@ -1719,14 +1659,12 @@ function App() {
             />
           }
         />
-
         <Route
           path="/www.superchennai.com/manifesto"
           element={
             <Navigate to="https://manifesto.superchennai.com/welcome" replace />
           }
         />
-
         <Route path="/quizform" element={<QuizForm />} />
         <Route path="/quiz-checkout" element={<QuizFormCheckout />} />
         {/* ChennaiQuiz */}
@@ -1849,7 +1787,6 @@ function App() {
         {/* Pride-of-Chennai */}
         <Route path="/hall-of-fame" element={<PrideofChennai />} />
         <Route path="/chennai-apps" element={<ChennaiApp />} />
-
         {/* Explore Discovery Routes */}
         <Route path="/explore" element={<ExploreDiscovery />} />
         <Route path="/explore/:slug" element={<ExploreDiscovery />} />

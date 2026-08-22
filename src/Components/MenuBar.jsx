@@ -12,9 +12,13 @@ export default function MenuBar({ setMenuBar }) {
     { label: "About Us", href: "/about-us" },
     { label: "Events", href: "/chennai-events" },
     { label: "SUMMER FEST", href: "https://summerfest.superchennai.com/" },
+    // {
+    //   label: "Sing Along Metro",
+    //   href: "/contest/madras-day-2026-midnight-metro-ride",
+    // },
     {
-      label: "Sing Along Metro",
-      href: "/contest/madras-day-2026-midnight-metro-ride",
+      label: "Let's talk chennai",
+      href: "https://letstalkchennai.com/",
     },
 
     // { label: "Day to deliver-quiz", href: "/day-to-deliver-quiz" },

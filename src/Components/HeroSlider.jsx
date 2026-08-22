@@ -182,13 +182,22 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    image: "/images/homepage-sairam.jpeg",
-    link: "arattai-with-v-sriram/heritage-historian",
-    image1: "/images/sairam-mobile.jpeg",
+
+    {
+    image: "/images/lets-talk-chennai-desktop.jpg",
+    link: "https://letstalkchennai.com/",
+    image1: "/images/lets-talk-chennai-desktop-mobile.jpg",
     title: "chennai's surfing",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
+
+  // {
+  //   image: "/images/homepage-sairam.jpeg",
+  //   link: "arattai-with-v-sriram/heritage-historian",
+  //   image1: "/images/sairam-mobile.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   {
     image: "/images/HomePage-Images/banner-0.jpg",

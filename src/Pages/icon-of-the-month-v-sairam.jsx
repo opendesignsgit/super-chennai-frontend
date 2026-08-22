@@ -17,79 +17,54 @@ import EventFunction from "./EventFunction";
 import IconoftheMonthKamakotiSlider from "./IconoftheMonthKamakotiSlider";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function IconofthemonthBharathyBhaskar() {
+export default function IconofthemonthVSriram() {
   const [scrollDir, setScrollDir] = useState("left");
   const navigate = useNavigate();
 
   const infoData = [
     {
-      desc: "Bharathy Bhaskar is a celebrated corporate leader, inspirational speaker, television personality, and renowned Tamil author admired for her ability to connect knowledge with emotions. A graduate of Anna University with a B.Tech in Chemical Engineering and an MBA, she built a remarkable corporate journey as Senior Vice President at Citibank, while actively promoting diversity and inclusive leadership as part of Citi’s Diversity & Inclusion Committee. She continues to contribute to the corporate world as an Independent Director at Hatsun Agro Product Ltd. and as a committee member of the Madras Management Association.",
+      desc: "V. Sriram is a renowned heritage historian, author, entrepreneur, columnist, and cultural advocate whose work has transformed the way Chennai's history is experienced and appreciated. As the pioneer of Chennai's heritage walks, he has spent over two decades bringing the city's architectural marvels, cultural traditions, and forgotten stories to life through engaging tours, books, and public lectures.",
     },
     {
-      desc: "Beyond her professional achievements, Bharathy Bhaskar has touched millions of hearts through Sun TV’s Pattimandram, where her unique blend of humour, wisdom, and storytelling turns conversations into unforgettable experiences. Her speeches on leadership, personal growth, communication, women's empowerment, and workplace values inspire audiences to see life from fresh perspectives. Her literary works, published through leading Tamil platforms, have gained immense recognition, including an acclaimed book that carries a foreword by Superstar Rajinikanth.",
-    },
-    {
-      desc: "Today, Bharathy Bhaskar continues to inspire students, professionals, entrepreneurs, and organizations through impactful keynote sessions, leadership programs, public forums, and creative writing. Her journey represents the power of knowledge, meaningful dialogue, and authentic leadership—encouraging people to think differently, express confidently, and create a positive impact in the world around them.",
+      desc: "His passion for history extends beyond heritage walks. As the Secretary of The Music Academy, Chennai, and former Editor of Madras Musings, V. Sriram has made significant contributions to documenting Carnatic music, theatre, and Chennai's cultural legacy. Through his research and storytelling, he continues to inspire people of all generations to value and preserve the city's rich heritage.",
     },
   ];
 
   const awardsData = [
     {
       title:
-        "Humour Club Best Speaker Award – Celebrated for exceptional speaking skills and engaging expression.",
+        "Lifetime Achievement Award – Recognized by the Rotary Club of Madras Central (RCMC) for exceptional contributions to South Indian arts, culture, and heritage.",
     },
     {
       title:
-        "Sriram Group’s Literary Award – Recognized for outstanding contribution to Tamil literature.",
+        "Vedavalli Memorial Heritage Award (2010) – Honoured for outstanding efforts to preserve and promote Chennai's historical legacy.",
     },
     {
       title:
-        "Rajinikanth Foreword Recognition – Honoured with appreciation from Superstar Rajinikanth.",
+        "Pioneer of Chennai Heritage Walks – Introduced the city's first heritage walk in Mylapore in 1999 and inspired heritage tourism across India.",
     },
     {
       title:
-        "Senior Vice President – Demonstrated excellence in strategic corporate leadership.",
+        "Acclaimed Author & Cultural Historian – Recognized for insightful books, heritage research, and leadership in documenting Carnatic music and regional history.",
     },
     {
       title:
-        "Independent Director – Contributing towards strong governance practices.",
+        "Secretary of The Music Academy – Key contributor to promoting Carnatic music, theatre, and performing arts traditions.",
     },
     {
       title:
-        "Committee Member – Supporting growth in management and leadership initiatives.",
-    },
-    {
-      title:
-        "Diversity & Inclusion Advocate – Promoting equal opportunities and inclusive workplaces.",
-    },
-    {
-      title:
-        "Television Personality – Reaching millions through Pattimandram performances.",
-    },
-    {
-      title:
-        "Bestselling Tamil Author – Creating powerful stories and thought-provoking writings.",
-    },
-    {
-      title:
-        "Motivational Speaker – Inspiring individuals through meaningful ideas and experiences.",
+        "Former Editor of Madras Musings – Played a crucial role in documenting, celebrating, and chronicling Chennai's urban history.",
     },
   ];
 
   const expendingData = [
     {
       description: [
-        "Bharathy Bhaskar’s journey is built on the belief that every conversation has the power to create change.",
-        "Through her speeches, debates, and writings, she continues to inspire generations",
-        "to communicate with confidence, lead with compassion,",
-        "and embrace knowledge as a tool for transformation.",
-      ],
-    },
-    {
-      description: [
-        "Her legacy is defined by creating real impact where stories spark change.",
-        "From corporate boardrooms to television stages across the world,",
-        "she reminds us that true leadership lies in connecting knowledge with emotions and values.",
+        "For more than two decades, V. Sriram has dedicated his life to preserving Chennai's heritage through storytelling",
+        "research, publications, and immersive heritage experiences.",
+        "His work has inspired countless people to explore, appreciate, and protect the city's cultural identity.",
+        "Today, his legacy continues to shape the way future generations connect with Chennai's ",
+        "rich history, ensuring that its stories remain alive for years to come.",
       ],
     },
   ];
@@ -211,15 +186,15 @@ export default function IconofthemonthBharathyBhaskar() {
   };
 
   const mockUpcomingEvents = [
-    { id: 1, image: "/images/bharathy-bhaskar-view1.jpg" },
-    { id: 2, image: "/images/bharathy-bhaskar-view2.jpg" },
-    { id: 3, image: "/images/bharathy-bhaskar-view3.jpg" },
-    { id: 4, image: "/images/bharathy-bhaskar-view4.jpg" },
-    { id: 5, image: "/images/bharathy-bhaskar-view5.jpg" },
-    { id: 6, image: "/images/bharathy-bhaskar-view6.jpg" },
-    { id: 7, image: "/images/bharathy-bhaskar-view7.jpg" },
-    { id: 8, image: "/images/bharathy-bhaskar-view8.jpg" },
-    { id: 9, image: "/images/bharathy-bhaskar-view9.jpg" },
+    { id: 1, image: "/images/v-sriram-view1.jpg" },
+    { id: 2, image: "/images/v-sriram-view2.jpg" },
+    { id: 3, image: "/images/v-sriram-view3.jpg" },
+    { id: 4, image: "/images/v-sriram-view4.jpg" },
+    { id: 5, image: "/images/v-sriram-view5.jpg" },
+    { id: 6, image: "/images/v-sriram-view6.jpg" },
+    { id: 7, image: "/images/v-sriram-view7.jpg" },
+    { id: 8, image: "/images/v-sriram-view8.jpg" },
+    { id: 9, image: "/images/v-sriram-view9.jpg" },
   ];
 
   const carouselRef = useRef();
@@ -244,12 +219,12 @@ export default function IconofthemonthBharathyBhaskar() {
   return (
     <>
       <Helmet>
-        <title>Icon of the Month: Bharathy Bhaskar | Super Chennai</title>
+        <title>Icon of the Month in Chennai: V. Sriram, Heritage Historian</title>
         <meta
           name="description"
-          content="Icon of the Month: Bharathy Bhaskar’s journey as a corporate leader, motivational speaker, television personality, and bestselling Tamil author."
+          content="1. Super Chennai honors V. Sriram as Icon of the Month, a noted historian and author whose heritage walks, books and research keep Chennai's legacy alive for all."
         />
-        <link rel="canonical" href="/icon-of-the-month-bharathy-bhaskar" />
+        <link rel="canonical" href="/icon-of-the-may-month-2026" />
       </Helmet>
 
       <div className="InvestPageId">
@@ -261,7 +236,7 @@ export default function IconofthemonthBharathyBhaskar() {
           <div className="VolunteerMainContainer">
             <div className="volunteerSectionBanner">
               <div className="VolunteerBannerImage">
-                <img src="/images/bharathy-banner.jpg" alt="Bharathy Bhaskar Banner" />
+                <img src="/images/ICON SRIRAM.jpg.jpeg" alt="V. Sriram Banner" />
               </div>
             </div>
           </div>
@@ -275,14 +250,13 @@ export default function IconofthemonthBharathyBhaskar() {
             <div className="InvestChennaiContent text-center">
               <h2>
                 <small>
-                  WHERE EVERY WORD INSPIRES <br />
-                  A NEW PERSPECTIVE
+                  EVERY STEP THROUGH HISTORY REVEALS <br />
+                  A STORY WORTH SHARING
                 </small>
               </h2>
               <p>
-                Celebrating the art of meaningful conversation through wisdom,
-                wit, and real-life experiences. <br />
-                Where stories spark change and conversations transform lives.
+                Celebrating Chennai's heritage through timeless stories, remarkable landmarks, and unforgettable experiences. <br />
+                Discover the city's past through conversations that inspire curiosity and preserve culture.
               </p>
             </div>
 
@@ -308,13 +282,13 @@ export default function IconofthemonthBharathyBhaskar() {
         >
           <div className="workIntro">
             <h1 className="newupdatewhychennai">
-              A Voice That Inspires. A Legacy That Leads.
+              A GUARDIAN OF HERITAGE. A STORYTELLER OF CHENNAI.
             </h1>
             <div className="section-container container max-w-7xl mx-auto px-4">
               <div className="section-left-image">
                 <img
-                  src="/images/BHARATHI BASKAR IMG 2.png"
-                  alt="Bharathy Bhaskar Visual"
+                  src="/images/sriram-v-about-award.jpeg"
+                  alt="V. Sriram Visual"
                 />
               </div>
 
@@ -340,8 +314,8 @@ export default function IconofthemonthBharathyBhaskar() {
           <div className="awards-container">
             <img
               style={{ boxShadow: "none" }}
-              alt="Bharathy Bhaskar Achievements"
-              src="/images/bharathy-bhaskar-awards.png"
+              alt="V. Sriram Achievements"
+              src="/images/sriram-v-about.jpeg "
             ></img>
             <div
               ref={listRef}
@@ -359,14 +333,14 @@ export default function IconofthemonthBharathyBhaskar() {
           </div>
         </section>
 
-        {/* WHY SHE INSPIRES / LEGACY SECTION */}
+        {/* WHY HE INSPIRES / LEGACY SECTION */}
 
         <section className="awards-section expandingBrand">
           <div className="awards-container">
             <h2 className="section-title">
-              Her Legacy:
+              His Legacy:
               <br />
-              <span>Create Impact</span>
+              {/* <span>Preserving Culture</span> */}
             </h2>
 
             <div className="awards-list">
@@ -388,98 +362,9 @@ export default function IconofthemonthBharathyBhaskar() {
           </div>
         </section>
 
-   
-
         <InstagramReelsMarquee />
         <Becameavolunteer />
       </div>
     </>
   );
 }
-
-
-     {/* GALLERY */}
-
-        {/* <div className="EventsCalendarMainSection mb-10">
-          <div
-            className={`EventsCalenderBackground ${
-              scrollDir === "right"
-                ? "Utilitiesscroll-right"
-                : "Utilitiesscroll-left"
-            }`}
-          >
-            <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
-            <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
-          </div>
-
-          <div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">
-            <h2>Media Highlights</h2>
-            <p>
-              A collection of stage highlights, speaker sessions, interactions,
-              and memorable moments from Arattai with Bharathy Bhaskar.
-            </p>
-          </div>
-
-          <div className="overflow-hidden py-17 cardMobileSection">
-            <div className="relative">
-              <div className="absolute top-0 left-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
-              <div className="absolute top-0 right-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
-
-              <motion.div
-                ref={carouselRef}
-                className="flex gap-10 cursor-grab active:cursor-grabbing cardsMobileSection"
-                drag="x"
-                dragConstraints={{
-                  right: 0,
-                  left: -(mockUpcomingEvents.length * 340 - window.innerWidth),
-                }}
-                animate={{ x }}
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              >
-                {mockUpcomingEvents.map((card) => (
-                  <div
-                    key={card.id}
-                    className="EventsCalendarCardSection min-w-[300px] h-[350px] bg-white"
-                    onClick={() => openModal(card.image)}
-                  >
-                    <img
-                      src={card.image}
-                      alt="Gallery"
-                      className="w-full h-[350px] object-cover rounded-t-md"
-                    />
-                  </div>
-                ))}
-              </motion.div>
-              <div className="EventsCalenderButtons flex justify-center">
-                <button
-                  onClick={() => slide("left")}
-                  className="EventsCalenderLeftButton"
-                ></button>
-                <button
-                  onClick={() => slide("right")}
-                  className="EventsCalenderRightButton"
-                ></button>
-              </div>
-            </div>
-
-            {isModalOpen && (
-              <div
-                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 z-[9999]"
-                onClick={closeModal}
-              >
-                <img
-                  src={modalImage}
-                  alt="Full view"
-                  className="max-h-[90%] max-w-[90%] object-contain rounded-lg"
-                  onClick={(e) => e.stopPropagation()}
-                />
-                <button
-                  className="absolute top-5 right-5 text-white text-2xl font-bold"
-                  onClick={closeModal}
-                >
-                  ×
-                </button>
-              </div>
-            )}
-          </div>
-        </div> */}

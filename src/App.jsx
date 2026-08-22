@@ -380,6 +380,7 @@ import SingAloneMtero from "./Pages/Activities/SingAloneMetro/SingAloneMtero";
 import SingAlongMetroExcel from "./Pages/Activities/SingAloneMetro/SingAlongMetroExcel";
 import SingAlongMetroSuccess from "./Pages/Activities/SingAloneMetro/SingAloneMtero-thankyou";
 
+import IconofthemonthVSriram from "./Pages/icon-of-the-month-v-sairam";
 
 
 
@@ -771,6 +772,8 @@ function App() {
 
       <Routes>
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
+
+
 
         <Route
           path="/contest/madras-day-2026-midnight-metro-ride"
@@ -1625,6 +1628,13 @@ function App() {
         <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
 
         <Route path="/icon-of-the-july-month" element={<Iconofthemonth />} />
+
+         
+                 
+
+
+
+
         <Route
           path="/icon-of-the-oct-month-2025"
           element={<IconofthemonthOct />}
@@ -1673,6 +1683,13 @@ function App() {
           path="/icon-of-the-april-month-2026"
           element={<IconofthemonthBharathyBhaskar />}
         />
+           <Route
+          path="/icon-of-the-may-month-2026"
+          element={<IconofthemonthVSriram />}
+        />
+
+
+        
 
         <Route
           path="/superchennai-events-details/:url"

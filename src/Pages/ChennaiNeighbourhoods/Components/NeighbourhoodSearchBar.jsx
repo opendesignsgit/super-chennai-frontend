@@ -382,7 +382,7 @@ export default function NeighbourhoodSearchBar({
                             className="border butoonsearchbutton cursor-pointer hover:bg-gray-100 transition"
                           >
                             <div className="iconsimagelocation">
-                              <img src="" alt="" />
+                              {/* <img src="" alt="" /> */}
                               {sub.title}
 
                               {console.log("sub", sub)}

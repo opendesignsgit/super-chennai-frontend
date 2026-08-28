@@ -1194,7 +1194,50 @@ export const NammaStoreiesnewsArticle = [
 
 export const newsPhotos = [
 
+  
+
     {
+    id: -1281,
+    Company: "Aug 2026",
+    EventsCalendarTitle:
+      "సీఎంఆర్‌వీఎల్‌లో ‘మద్రాస్ డే’ వేడుకలు",
+    image: "/images/Andhrajyothy .jpeg",
+    image1: "/images/Andhrajyothy .jpeg",
+  },
+  {
+    id: -1128,
+    Company: "Aug 2026",
+    EventsCalendarTitle:
+      "மெட்ரோ ரயிலில் கேக் வெட்டி கொண்டாட்டம்",
+    image: "/images/metro-cake-celebration.jpeg",
+    image1: "/images/metro-cake-celebration.jpeg",
+  },
+  {
+    id: -128,
+    Company: "Aug 2026",
+    EventsCalendarTitle:
+      "Songs, Selfies and Celebration'",
+    image: "/images/songs-selfies-celebration.jpeg",
+    image1: "/images/songs-selfies-celebration.jpeg",
+  },
+  {
+    id: -127,
+    Company: "Aug 2026",
+    EventsCalendarTitle:
+      "Historian Sriram names Super Chennai 'Icon of the Month'",
+    image: "/images/histrian-sriram.jpeg",
+    image1: "/images/histrian-sriram.jpeg",
+  },
+
+  {
+    id: -122,
+    Company: "Aug 2026",
+    EventsCalendarTitle: "uperchennai brings a fresh vibe to Medavakkam",
+    image: "/images/fresh-vibe.jpeg",
+    image1: "/images/fresh-vibe.jpeg",
+  },
+
+  {
     id: -121,
     Company: "July 25",
     EventsCalendarTitle:
@@ -1205,8 +1248,7 @@ export const newsPhotos = [
   {
     id: -121,
     Company: "July 25",
-    EventsCalendarTitle:
-      "'आइकन ऑफ द मंथ' सम्मान प्राप्त करते हुए।",
+    EventsCalendarTitle: "'आइकन ऑफ द मंथ' सम्मान प्राप्त करते हुए।",
     image: "/images/Rajasthan-patrika.jpeg",
     image1: "/images/Rajasthan-patrika.jpeg",
   },

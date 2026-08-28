@@ -28,6 +28,9 @@ import EventCalender from "../Pages/Events/Components/EventCalender/EventCalende
 import AerialMap from "../Components/AerialMap";
 import SecondSectionSummerSection from "../Components/SecondSectionSummerSection";
 import CricketScrore from "../Components/CricketScrore";
+import WhatsHappening from "../Components/WhatsHappening";
+
+
 export default function HomePage() {
   const location = useLocation();
 
@@ -182,6 +185,10 @@ export default function HomePage() {
       <div data-aos="fade-up" data-aos-delay="100">
         <SecondSectionSummerSection />
       </div>
+
+       {/* <div data-aos="fade-up" data-aos-delay="100">
+         <WhatsHappening/>
+      </div> */}
 
       {/* <div data-aos="fade-up" data-aos-delay="100">
         <SecondSection />

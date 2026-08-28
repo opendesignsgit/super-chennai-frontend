@@ -1,6 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import * as XLSX from 'xlsx'
 
+
+import  WhatsHappening  from "../../Components/WhatsHappening";
+
 // import './styles.scss'
 
 /* ======================================================
@@ -189,6 +192,8 @@ export default function ChennailetsTalkDashboard() {
 
   return (
     <div className="eventDashboard">
+
+      <WhatsHappening/>
       {/* HERO SECTION */}
       <div className="eventDashboard__hero">
         <div>
@@ -379,5 +384,6 @@ export default function ChennailetsTalkDashboard() {
         </div>
       )}
     </div>
+    
   )
 }

@@ -388,6 +388,9 @@ import LetsTalkPage from "./Pages/Activities/LetsTalk/LetsTalk";
 import LetsTalkCardsDetail from "./Pages/Activities/LetsTalk/Components/LetsTalkCardsDetail";
 
 import ChennailetsTalkDashboard from "./Pages/Dashboard/letsTalkDashboard";
+import ArattaiWithArunJain from "./Pages/Activities/ArattaiJainRam/ArattaiWithArunJain";
+import ArattaiArunJainExcell from "./Pages/Activities/ArattaiJainRam/ArattaiArunJainExcell";
+
 
 
 function App() {
@@ -780,6 +783,21 @@ function App() {
           path="/letsTalkDashboard"
           element={<ChennailetsTalkDashboard />}
         />
+
+                <Route
+          path="/ArattaiWithArunJain"
+          element={<ArattaiWithArunJain />}
+        />
+
+                   <Route
+          path="/ArattaiArunJainExcell"
+          element={<ArattaiArunJainExcell />}
+        />
+
+        
+       
+
+
         <Route
           path="/contest/madras-day-2026-midnight-metro-ride"
           element={<SingAloneMtero />}

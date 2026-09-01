@@ -157,7 +157,7 @@ export default function Thankyou() {
                 from === "sahitha" ||
                 from === "bharathi" ||
                 from === "sairam" ||
-                  from === "  arun-jain" ||
+                  from === "arun-jain" ||
               
                 from === "summer-photography-chennai" ||
                 from === "majaa-game"

@@ -184,7 +184,7 @@ const slides = [
 
     {
     image: "/images/Home Page Banner (Desktop) 2250 × 1162 px.jpg",
-    link: "#",
+    link: "arattai-with-arun-jain/tech-visionary",
     image1: "/images/Arattai Inner Page (Mobile) 1080 x  1920 px.jpg",
     title: "chennai's surfing",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",

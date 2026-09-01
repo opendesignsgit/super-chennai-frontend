@@ -390,6 +390,7 @@ import LetsTalkCardsDetail from "./Pages/Activities/LetsTalk/Components/LetsTalk
 import ChennailetsTalkDashboard from "./Pages/Dashboard/letsTalkDashboard";
 import ArattaiWithArunJain from "./Pages/Activities/ArattaiJainRam/ArattaiWithArunJain";
 import ArattaiArunJainExcell from "./Pages/Activities/ArattaiJainRam/ArattaiArunJainExcell";
+import WhatsUpChennaiDetailPage from "./Pages/WhatupChennai/whatupChennaiDetail";
 
 
 
@@ -785,7 +786,7 @@ function App() {
         />
 
                 <Route
-          path="/ArattaiWithArunJain"
+          path="//arattai-with-arun-jain/tech-visionary"
           element={<ArattaiWithArunJain />}
         />
 
@@ -794,8 +795,17 @@ function App() {
           element={<ArattaiArunJainExcell />}
         />
 
+                         {/* <Route
+          path="/whats-up-chennai"
+          element={<WhatsUpChennaiDetailPage />}
+        /> */}
+
         
-       
+        <Route path="/whats-up-chennai/:slug" element={<WhatsUpChennaiDetailPage />} />
+
+
+        
+         
 
 
         <Route

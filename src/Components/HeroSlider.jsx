@@ -182,8 +182,15 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
+  {
+    image: "/images/jain-arun-home.jpeg",
+    link: "/arattai-with-arun-jain/tech-visionary",
+    image1: "/images/arun-jain-mobile.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
 
-    {
+  {
     image: "/images/lets-talk-chennai-desktop.jpg",
     link: "https://letstalkchennai.com/",
     image1: "/images/lets-talk-chennai-desktop-mobile.jpg",

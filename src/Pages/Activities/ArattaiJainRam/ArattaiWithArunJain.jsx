@@ -229,23 +229,58 @@ export default function ArattaiWithArunJain() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 lg:px-0">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="InvestChennaiContent-conclaves ">
-              <h1 className=" text-center hidden ">Arattai with Arun Jain</h1>
+            <div className="InvestChennaiContent-conclaves">
+              <h1 className="text-center hidden">
+                Arattai - Arun Jain: Managing director of Intellect Design Arena
+                Ltd
+              </h1>
               <h3>Arattai with Arun Jain</h3>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Arun Jain is a prominent corporate leader, entrepreneur, and design thinking evangelist who has contributed significantly to India's financial technology and software sectors. As the founder of Intellect Design Arena and Polaris Consulting & Services, he has been a pioneer in building global tech product capabilities out of Chennai.
+                Arun Jain, Chairman and Managing Director of Intellect Design
+                Arena, is a pioneering force in India’s technology and FinTech
+                landscape. With more than three decades of experience, he has
+                built institutions and technology platforms that have taken
+                Indian innovation to a global stage. His vision combines
+                technology, entrepreneurship, Design Thinking, and a strong
+                focus on creating measurable impact.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Through his initiatives in Design Thinking and social enterprise, he actively fosters leadership, innovation, and social development across institutions and communities. His work through the School of Design Thinking and FinTech Lab has empowered young innovators and enterprise leaders alike.
+                A passionate advocate of Design Thinking and First Principles
+                Thinking, Arun believes technology should move beyond
+                experimentation to create meaningful and accountable outcomes.
+                Through initiatives such as the School of Design Thinking,
+                Mission Samriddhi, and Ullas Trust, he has extended this
+                philosophy beyond business into education, social development,
+                and nation building.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Through Arattai with Arun Jain, audiences can look forward to inspiring conversations on leadership, enterprise building, design mindsets, and the future of innovation in Chennai and beyond.
+                As part of Arattai with Super Chennai, Arun Jain brings his
+                distinctive perspective on technology, innovation, leadership,
+                and the ideas shaping India's future. The conversation explores
+                his journey as an institution builder, his experiences in
+                creating globally relevant technology from India, and his
+                thoughts on how Design Thinking can influence individuals,
+                organisations, and society.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Super Chennai proudly welcomes Arun Jain to Arattai to celebrate his leadership, entrepreneurial vision, and lasting contributions to the city's growth.
+                His contributions have earned him recognition on both national
+                and international platforms, including being named among TIME
+                Magazine’s “Growth Architects – Leaders Fueling India’s Rise” in
+                2025. He has also received honours including the Dronacharya
+                Award by TiECON Chennai, the CII Lifetime Achievement Award, and
+                the Amity Excellence Award.
+              </p>
+              <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
+                Super Chennai is proud to feature Arun Jain as the Icon of the
+                Month, celebrating a Chennai-born technology vision that reaches
+                far beyond the city. Through Arattai, audiences get an
+                opportunity to discover the person, ideas, experiences, and
+                philosophy behind one of India's notable technology and
+                institution-building journeys.
               </p>
             </div>
-             <div
+
+            <div
               className="flex flex-col items-center text-center space-y-4 py-10"
               ref={registerRef}
             >
@@ -255,23 +290,22 @@ export default function ArattaiWithArunJain() {
               <h2 className="themelink-color formheadingtheme-arattai leading-tight md:leading-normal">
                 Join Us for a Conversation with{" "}
                 <br className="block md:hidden" />
-                V. Sriram
+                Arun Jain
               </h2>
               <p className="text-gray-600 text-lg">
-                On 18<sup>nd</sup> Sep
+                On 18<sup>th</sup> Sep
               </p>
               <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
                 <span
-                  className="relative z-10 flex items-center gap-2"
+                  className="relative z-10 flex items-center gap-2 cursor-pointer"
                   onClick={() => setShowRegisterPopup(true)}
                 >
-                  <div className="w-3 h-3 bg-white/20 rounded-full animate-ping "></div>
+                  <div className="w-3 h-3 bg-white/20 rounded-full animate-ping"></div>
                   Register Now
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
               </div>
             </div>
-           
           </div>
         </div>
       </section>

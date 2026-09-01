@@ -1,243 +1,74 @@
 
-import React, { useRef } from "react";
-import Slider from "react-slick";
+
+import axios from "axios";
 import {
-  Music2,
-  Utensils,
-  Landmark,
-  Palette,
-  Drama,
-  Trophy,
-  Sparkles,
-  ShoppingBag,
-  Film,
-  Compass,
+  ArrowRight,
   Baby,
+  Backpack,
   BookOpen,
   Briefcase,
-  PawPrint,
-  Headphones,
-  Shirt,
-  Heart,
   Camera,
-  Users,
-  Backpack,
-  Star,
-  ArrowRight,
   ChevronLeft,
   ChevronRight,
+  Compass,
+  Drama,
+  Film,
+  Headphones,
+  Heart,
+  Landmark,
+  Music2,
+  Palette,
+  PawPrint,
+  Shirt,
+  ShoppingBag,
+  Sparkles,
+  Trophy,
+  Users,
+  Utensils,
 } from "lucide-react";
+import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import { API_BASE_URL } from "../../config";
 
-// Added custom `rotate` and `offsetY` values to create the hand-arranged feel
-const EVENT_CATEGORIES = [
-  {
-    id: "music",
-    title: "LIVE MUSIC",
-    description: "From indie gigs to full-on concerts.",
-    image:
-      "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop",
-    icon: Music2,
-    rotate: "-1.8deg",
-    offsetY: "6px",
-  },
-  {
-    id: "food",
-    title: "FOOD & DRINKS",
-    description: "Great food, local flavors and new favourites.",
-    image:
-      "https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?q=80&w=1000&auto=format&fit=crop",
-    icon: Utensils,
-    rotate: "1.5deg",
-    offsetY: "-8px",
-  },
-  {
-    id: "featured",
-    isFeatured: true,
-    rotate: "0deg",
-    offsetY: "0px",
-  },
-  {
-    id: "culture",
-    title: "CULTURE & HERITAGE",
-    description: "Dive into Chennai's rich history and traditions.",
-    image:
-      "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=1000&auto=format&fit=crop",
-    icon: Landmark,
-    rotate: "-1.2deg",
-    offsetY: "-6px",
-  },
-  {
-    id: "art",
-    title: "ART & EXPERIENCES",
-    description: "Exhibitions, workshops and unique experiences.",
-    image:
-      "https://images.unsplash.com/photo-1561214115-f2f134cc4912?q=80&w=1000&auto=format&fit=crop",
-    icon: Palette,
-    rotate: "2deg",
-    offsetY: "8px",
-  },
-  {
-    id: "theatre",
-    title: "THEATRE & COMEDY",
-    description: "Stand-up shows, stage plays, and open mics.",
-    image:
-      "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?q=80&w=1000&auto=format&fit=crop",
-    icon: Drama,
-    rotate: "-1.5deg",
-    offsetY: "4px",
-  },
-  {
-    id: "sports",
-    title: "SPORTS & FITNESS",
-    description: "Marathons, turf matches, and fitness pop-ups.",
-    image:
-      "https://images.unsplash.com/photo-1517649763962-0c623266010b?q=80&w=1000&auto=format&fit=crop",
-    icon: Trophy,
-    rotate: "1.8deg",
-    offsetY: "-10px",
-  },
-  {
-    id: "nightlife",
-    title: "NIGHTLIFE & PARTIES",
-    description: "DJ nights, rooftop lounges, and clubbing.",
-    image:
-      "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1000&auto=format&fit=crop",
-    icon: Sparkles,
-    rotate: "-2deg",
-    offsetY: "5px",
-  },
-  {
-    id: "flea",
-    title: "FLEA & SHOPPING",
-    description: "Pop-up bazaars, artisan markets, and fashion shows.",
-    image:
-      "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?q=80&w=1000&auto=format&fit=crop",
-    icon: ShoppingBag,
-    rotate: "1.2deg",
-    offsetY: "-4px",
-  },
-  {
-    id: "screenings",
-    title: "FILM & SCREENINGS",
-    description: "Indie cinema, open-air movies, and film festivals.",
-    image:
-      "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1000&auto=format&fit=crop",
-    icon: Film,
-    rotate: "-1.4deg",
-    offsetY: "7px",
-  },
-  {
-    id: "workshops",
-    title: "OUTDOOR & TRAILS",
-    description: "ECR beach walks, heritage tours, and camping trips.",
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop",
-    icon: Compass,
-    rotate: "1.7deg",
-    offsetY: "-6px",
-  },
-  {
-    id: "kids",
-    title: "KIDS & FAMILY",
-    description: "Storytelling sessions, amusement parks, and fun fairs.",
-    image:
-      "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?q=80&w=1000&auto=format&fit=crop",
-    icon: Baby,
-    rotate: "-1.9deg",
-    offsetY: "9px",
-  },
-  {
-    id: "workshops-craft",
-    title: "DIY & WORKSHOPS",
-    description: "Pottery, resin art, painting, and baking classes.",
-    image:
-      "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1000&auto=format&fit=crop",
-    icon: BookOpen,
-    rotate: "1.1deg",
-    offsetY: "-5px",
-  },
-  {
-    id: "tech",
-    title: "TECH & STARTUPS",
-    description: "Hackathons, founder meetups, and AI expos.",
-    image:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1000&auto=format&fit=crop",
-    icon: Briefcase,
-    rotate: "-1.6deg",
-    offsetY: "4px",
-  },
-  {
-    id: "pets",
-    title: "PET EVENTS",
-    description: "Pet carnivals, adoption drives, and doggy socials.",
-    image:
-      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1000&auto=format&fit=crop",
-    icon: PawPrint,
-    rotate: "1.9deg",
-    offsetY: "-7px",
-  },
-  {
-    id: "gaming",
-    title: "GAMING & ESPORTS",
-    description: "Console tournaments, VR arcades, and LAN parties.",
-    image:
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop",
-    icon: Headphones,
-    rotate: "-1.3deg",
-    offsetY: "6px",
-  },
-  {
-    id: "fashion",
-    title: "FASHION & LIFESTYLE",
-    description: "Runway shows, saree expos, and designer pop-ups.",
-    image:
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000&auto=format&fit=crop",
-    icon: Shirt,
-    rotate: "1.6deg",
-    offsetY: "-9px",
-  },
-  {
-    id: "wellness",
-    title: "WELLNESS & RETREATS",
-    description: "Sunrise yoga at Besant Nagar, sound healing, and retreats.",
-    image:
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop",
-    icon: Heart,
-    rotate: "-1.7deg",
-    offsetY: "5px",
-  },
-  {
-    id: "photo",
-    title: "PHOTO WALKS",
-    description: "Mylapore street photo walks, sunset photomeets.",
-    image:
-      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop",
-    icon: Camera,
-    rotate: "1.4deg",
-    offsetY: "-4px",
-  },
-  {
-    id: "meetups",
-    title: "COMMUNITY & MEETUPS",
-    description: "Book clubs, board game nights, and expat socials.",
-    image:
-      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1000&auto=format&fit=crop",
-    icon: Users,
-    rotate: "-1.1deg",
-    offsetY: "8px",
-  },
-  {
-    id: "travel",
-    title: "WEEKEND GETAWAYS",
-    description:
-      "Pondicherry rides, Mahabalipuram trips, and Pulicat lake treks.",
-    image:
-      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1000&auto=format&fit=crop",
-    icon: Backpack,
-    rotate: "1.8deg",
-    offsetY: "-6px",
-  },
+const CARD_TRANSFORMS = [
+  { rotate: "-1.8deg", offsetY: "6px" },
+  { rotate: "1.5deg", offsetY: "-8px" },
+  { rotate: "-1.2deg", offsetY: "-6px" },
+  { rotate: "2deg", offsetY: "8px" },
+  { rotate: "-1.5deg", offsetY: "4px" },
+  { rotate: "1.8deg", offsetY: "-10px" },
+  { rotate: "-2deg", offsetY: "5px" },
+  { rotate: "1.2deg", offsetY: "-4px" },
+  { rotate: "-1.4deg", offsetY: "7px" },
+  { rotate: "1.7deg", offsetY: "-6px" },
+  { rotate: "-1.9deg", offsetY: "9px" },
+  { rotate: "1.1deg", offsetY: "-5px" },
 ];
+
+// Fallback category icons map
+const ICON_MAP = {
+  music: Music2,
+  food: Utensils,
+  culture: Landmark,
+  art: Palette,
+  theatre: Drama,
+  sports: Trophy,
+  nightlife: Sparkles,
+  flea: ShoppingBag,
+  screenings: Film,
+  outdoor: Compass,
+  kids: Baby,
+  workshops: BookOpen,
+  tech: Briefcase,
+  pets: PawPrint,
+  gaming: Headphones,
+  fashion: Shirt,
+  wellness: Heart,
+  photo: Camera,
+  meetups: Users,
+  travel: Backpack,
+};
 
 const SectionHeader = () => (
   <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto px-4 mb-6 md:mb-10">
@@ -250,7 +81,7 @@ const SectionHeader = () => (
     </div>
 
     <div className="relative mb-4">
-      <h3 className="text-4xl sm:text-6xl lg:text-7xl uppercase text-gray-900 tracking-tight leading-none">
+      <h3 className="text-4xl sm:text-6xl lg:text-7xl uppercase text-gray-900 tracking-tight leading-none font-['New_Amsterdam']">
         WHAT'S HAPPENING
       </h3>
       <span
@@ -270,83 +101,48 @@ const SectionHeader = () => (
   </div>
 );
 
-const EventCategoryCard = ({ title, description, image, icon: Icon }) => (
-  <div className="p-1 sm:p-2 h-full flex items-center">
-    <div className="group relative w-full h-[400px] xl:h-[420px] rounded-2xl overflow-hidden border border-[#A34493]/30 bg-white shadow-lg transition-all duration-500 cursor-pointer flex flex-col justify-end p-5 hover:border-[#A34493] hover:shadow-xl">
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-110"
-        style={{ backgroundImage: `url(${image})` }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent" />
+const EventCategoryCard = ({ title, description, image, icon: Icon, slug }) => {
+  const RenderIcon = Icon || Sparkles;
 
-      <div className="relative z-10 flex flex-col items-start gap-3">
-        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#A34493] to-[#8B3C82] shadow-md border border-white/40 transition-transform duration-300 group-hover:scale-110">
-          <Icon className="h-5 w-5 text-white" />
-        </div>
+  return (
+    <Link to={`/whats-up-chennai/${slug}`} className="block h-full">
+      <div className="p-1 sm:p-2 h-full flex items-center">
+        <div className="group relative w-full h-[400px] xl:h-[420px] rounded-2xl overflow-hidden border border-[#A34493]/30 bg-white shadow-lg transition-all duration-500 cursor-pointer flex flex-col justify-end p-5 hover:border-[#A34493] hover:shadow-xl">
+          <div
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-110"
+            style={{ backgroundImage: `url(${image})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent" />
 
-        <div>
-          <h3 className="text-base font-bold uppercase tracking-wider text-white group-hover:text-purple-200 transition-colors">
-            {title}
-          </h3>
-          <p className="text-xs text-gray-200 font-light mt-1 line-clamp-2">
-            {description}
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+          <div className="relative z-10 flex flex-col items-start gap-3">
+            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#A34493] to-[#8B3C82] shadow-md border border-white/40 transition-transform duration-300 group-hover:scale-110">
+              <RenderIcon className="h-5 w-5 text-white" />
+            </div>
 
-const FeaturedChennaiCard = () => (
-  <div className="p-1 sm:p-2 h-full flex items-center">
-    <div className="group relative w-full h-[460px] xl:h-[500px] rounded-3xl overflow-hidden border-2 border-[#A34493] bg-white shadow-2xl transition-all duration-500 cursor-pointer flex flex-col justify-between p-6 z-20">
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=1200&auto=format&fit=crop')`,
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-black/20" />
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 via-transparent to-gray-950" />
-
-      <div className="relative z-10 flex justify-center">
-        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#A34493] to-[#8B3C82] shadow-[0_4px_15px_rgba(163,68,147,0.4)] border border-white/40">
-          <Star className="h-6 w-6 text-white fill-white" />
+            <div>
+              <h3 className="text-base font-bold uppercase tracking-wider text-white group-hover:text-purple-200 transition-colors line-clamp-1">
+                {title}
+              </h3>
+              <p className="text-xs text-gray-200 font-light mt-1 line-clamp-2">
+                {description}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative z-10 text-center flex flex-col items-center">
-        <span className="text-xs font-bold tracking-[0.25em] text-[#A34493] uppercase mb-2 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-[#A34493]/30 shadow-sm">
-          CURATED PICKS
-        </span>
-
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-none uppercase">
-          THE BEST OF
-        </h2>
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-none uppercase mb-2">
-          CHENNAI
-        </h2>
-
-        <p className="text-xs sm:text-sm text-gray-200 font-light max-w-xs">
-          Handpicked experiences around the city
-        </p>
-
-        <div className="w-16 h-[2px] bg-[#A34493] my-3 opacity-90" />
-
-        <div className="mt-1 flex h-11 w-11 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white text-[#8B3C82] shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#A34493] group-hover:text-white">
-          <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-0.5" />
-        </div>
-      </div>
-    </div>
-  </div>
-);
+    </Link>
+  );
+};
 
 const ExploreButton = () => (
   <div className="relative z-10 flex justify-center mt-6">
-    <button className="group relative flex items-center gap-3 px-8 py-4 rounded-full border-2 border-[#A34493] bg-white text-gray-900 font-bold text-sm sm:text-base tracking-widest uppercase shadow-md transition-all duration-300 hover:bg-gradient-to-r hover:from-[#A34493] hover:to-[#8B3C82] hover:text-white hover:shadow-[0_8px_25px_rgba(163,68,147,0.35)] active:scale-95">
+    <Link
+      to="/whats-up-chennai"
+      className="group relative flex items-center gap-3 px-8 py-4 rounded-full border-2 border-[#A34493] bg-white text-gray-900 font-bold text-sm sm:text-base tracking-widest uppercase shadow-md transition-all duration-300 hover:bg-gradient-to-r hover:from-[#A34493] hover:to-[#8B3C82] hover:text-white hover:shadow-[0_8px_25px_rgba(163,68,147,0.35)] active:scale-95"
+    >
       <span>EXPLORE WHAT'S ON</span>
       <ArrowRight className="h-5 w-5 text-[#A34493] group-hover:text-white transition-all duration-300 group-hover:translate-x-1" />
-    </button>
+    </Link>
   </div>
 );
 
@@ -391,14 +187,62 @@ const ChennaiSkyline = () => (
 
 export default function WhatsHappening() {
   const sliderRef = useRef(null);
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchEventData = async () => {
+      try {
+        setLoading(true);
+        const res = await axios.get(
+          `${API_BASE_URL}/api/whats-ap-chennai?limit=0`
+        );
+        const docs = res.data?.docs || [];
+
+        // Dynamic categories generation purely from API docs
+        const apiCategories = docs.map((doc, idx) => {
+          const transform = CARD_TRANSFORMS[idx % CARD_TRANSFORMS.length];
+          const imgUrl =
+            doc.heroImage?.sizes?.large?.url ||
+            doc.heroImage?.url ||
+            doc.FeaturedImage?.url ||
+            "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop";
+
+          return {
+            id: doc.id || `event-${idx}`,
+            slug: doc.slug,
+            title: doc.title,
+            description:
+              doc.meta?.description ||
+              doc.details?.location?.label ||
+              "Explore handpicked experiences in Chennai.",
+            image: imgUrl.startsWith("http")
+              ? imgUrl
+              : `${API_BASE_URL}${imgUrl}`,
+            icon: ICON_MAP[doc.category] || Sparkles,
+            rotate: transform.rotate,
+            offsetY: transform.offsetY,
+          };
+        });
+
+        setCategories(apiCategories);
+      } catch (err) {
+        console.error("Error fetching event slider data:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchEventData();
+  }, []);
 
   const sliderSettings = {
     className: "center custom-slick-container",
     centerMode: true,
-    infinite: true,
+    infinite: categories.length > 3,
     centerPadding: "0px",
-    initialSlide: 2,
-    slidesToShow: 5,
+    initialSlide: 0,
+    slidesToShow: Math.min(categories.length, 5) || 1,
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3500,
@@ -409,7 +253,7 @@ export default function WhatsHappening() {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: Math.min(categories.length, 3),
           centerMode: true,
         },
       },
@@ -471,26 +315,24 @@ export default function WhatsHappening() {
       <div className="max-w-[1500px] mx-auto w-full relative z-10">
         <SectionHeader />
 
-        <div className="relative py-4 px-1">
-          <Slider ref={sliderRef} {...sliderSettings}>
-            {EVENT_CATEGORIES.map((item) => (
-              <div
-                key={item.id}
-                className="outline-none"
-                style={{
-                  "--card-rotate": item.rotate || "0deg",
-                  "--card-offset": item.offsetY || "0px",
-                }}
-              >
-                {item.isFeatured ? (
-                  <FeaturedChennaiCard />
-                ) : (
+        {!loading && categories.length > 0 && (
+          <div className="relative py-4 px-1">
+            <Slider ref={sliderRef} {...sliderSettings}>
+              {categories.map((item) => (
+                <div
+                  key={item.id}
+                  className="outline-none"
+                  style={{
+                    "--card-rotate": item.rotate || "0deg",
+                    "--card-offset": item.offsetY || "0px",
+                  }}
+                >
                   <EventCategoryCard {...item} />
-                )}
-              </div>
-            ))}
-          </Slider>
-        </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        )}
 
         <div className="flex justify-center items-center gap-4 mt-6 z-20 relative">
           <button

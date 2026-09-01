@@ -203,7 +203,7 @@ export default function ArattaiWithArunJain() {
         </script>
         <link
           rel="canonical"
-          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-arun-jain`}
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/arattai-with-arun-jain/tech-visionary`}
         />
       </Helmet>
 
@@ -214,12 +214,12 @@ export default function ArattaiWithArunJain() {
       >
         <img
           className="hidden sm:block w-full"
-          src="/images/inner-page-arun-jain.jpeg"
+          src="/images/inner-page-arun-jain..jpg"
           alt="Arattai Event"
         />
         <img
           className="block sm:hidden w-full"
-          src="/images/arun-jain-mobile.jpeg"
+          src="/images/Arattai Inner Page (Mobile) 1080 x  1920 px.jpg"
           alt="Arattai Event"
         />
       </section>

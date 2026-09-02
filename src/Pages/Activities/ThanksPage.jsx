@@ -5,8 +5,8 @@ import { useLocation } from "react-router-dom";
 
 export default function Thankyou() {
   const location = useLocation();
-  const from = location.state?.from;
-  // const from = "arun-jain";
+  // const from = location.state?.from;
+  const from = "arun-jain";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -157,7 +157,7 @@ export default function Thankyou() {
                 from === "sahitha" ||
                 from === "bharathi" ||
                 from === "sairam" ||
-                  from === "arun-jain" ||
+                  // from === "arun-jain" || 
               
                 from === "summer-photography-chennai" ||
                 from === "majaa-game"
@@ -168,11 +168,11 @@ export default function Thankyou() {
                     ? "Day to deliver-quiz"
                     : "Thank You!"
               }
-              baseSize={60}
+              baseSize={100}
               minSize={40}
               maxChars={40}
               className="accodoamationBannerText"
-              width="80%"
+              width="100%"
               maxLines={2}
             />
           </div>

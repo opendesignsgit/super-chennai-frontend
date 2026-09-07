@@ -391,6 +391,8 @@ import ChennailetsTalkDashboard from "./Pages/Dashboard/letsTalkDashboard";
 import ArattaiWithArunJain from "./Pages/Activities/ArattaiJainRam/ArattaiWithArunJain";
 import ArattaiArunJainExcell from "./Pages/Activities/ArattaiJainRam/ArattaiArunJainExcell";
 import WhatsUpChennaiDetailPage from "./Pages/WhatupChennai/whatupChennaiDetail";
+import GoluContestMain from "./Pages/Activities/GoluContest/GoluContestMainpage";
+
 
 
 
@@ -795,10 +797,12 @@ function App() {
           element={<ArattaiArunJainExcell />}
         />
 
-                         {/* <Route
-          path="/whats-up-chennai"
-          element={<WhatsUpChennaiDetailPage />}
-        /> */}
+                    <Route
+          path="/GoluContestMain"
+          element={<GoluContestMain />}
+        />
+
+               
 
         
         <Route path="/whats-up-chennai/:slug" element={<WhatsUpChennaiDetailPage />} />

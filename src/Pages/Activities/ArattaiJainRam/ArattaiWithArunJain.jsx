@@ -193,10 +193,10 @@ export default function ArattaiWithArunJain() {
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
       <Helmet>
-        <title>Super Chennai Arattai with Arun Jain</title>
+        <title>Arattai with Arun Jain | Tech Visionary | Super Chennai</title>
         <meta
           name="description"
-          content="Arun Jain joins Arattai with Super Chennai, sharing insights on leadership, innovation, design thinking, and business transformation."
+          content="Arun Jain, CMD of Intellect Design Arena, shares his journey in FinTech, Design Thinking, and building global technology institutions from India on Arattai."
         />
         <script type="application/ld+json">
           {JSON.stringify(arattaiSchema)}

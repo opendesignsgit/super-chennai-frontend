@@ -163,10 +163,9 @@ const TrendsSection = ({ trends }) => {
 // EVENT DETAILS QUICK INFO SECTION
 // ==========================================
 
-const EventQuickDetailsSection = ({ details }) => {
+const EventQuickDetailsSection = ({ details, blockFields = {} }) => {
   if (!details) return null;
 
-  // Destructure with fallbacks for key variations (language/languages, familyFriendly/isFamilyFriendly)
   const {
     duration,
     eventTime,
@@ -180,12 +179,10 @@ const EventQuickDetailsSection = ({ details }) => {
     eventDates,
   } = details;
 
-  // Resolve keys safely
   const resolvedLanguages = language || languages;
   const resolvedFamilyFriendly =
     familyFriendly !== undefined ? familyFriendly : isFamilyFriendly;
 
-  // Helper: Format Time (e.g., "1:00 PM")
   const formatTime = (timeStr) => {
     if (!timeStr) return null;
     const date = new Date(timeStr);
@@ -198,11 +195,9 @@ const EventQuickDetailsSection = ({ details }) => {
         });
   };
 
-  // Helper: Format Dates Array -> "Aug 12, Aug 19, Sep 03, 2026"
   const formatDateList = (dates) => {
     if (!dates) return null;
 
-    // Handle Array of Objects: [{ date: "..." }, ...]
     if (Array.isArray(dates) && dates.length > 0) {
       const formattedDates = dates
         .map((item) => {
@@ -217,14 +212,12 @@ const EventQuickDetailsSection = ({ details }) => {
 
       if (formattedDates.length === 0) return null;
 
-      // Extract Year from the first date entry
       const firstRawDate = typeof dates[0] === "string" ? dates[0] : dates[0]?.date;
       const year = firstRawDate ? new Date(firstRawDate).getFullYear() : "";
 
       return `${formattedDates.join(", ")}${year ? ` ${year}` : ""}`;
     }
 
-    // Single Date String Fallback
     if (typeof dates === "string") {
       const d = new Date(dates);
       return isNaN(d.getTime())
@@ -253,7 +246,6 @@ const EventQuickDetailsSection = ({ details }) => {
     location?.city ||
     (typeof location === "string" ? location : null);
 
-  // Safeguard: Check if at least one value exists
   const hasValidData =
     duration ||
     parsedTime ||
@@ -266,19 +258,29 @@ const EventQuickDetailsSection = ({ details }) => {
 
   if (!hasValidData) return null;
 
+  const badgeText = blockFields.badgeText || "At a Glance";
+  const headingText = blockFields.heading || "EVENT HIGHLIGHTS & DETAILS";
+  const descriptionText = blockFields.description;
+
   return (
     <section className="bg-stone-50 border border-stone-200/80 rounded-3xl p-6 sm:p-8 lg:p-10 my-8 shadow-sm">
       <div className="mb-6">
-        <span className="text-xs font-semibold tracking-widest text-[#8B3C82] uppercase block mb-1">
-          At a Glance
-        </span>
+        {badgeText && (
+          <span className="text-xs font-semibold tracking-widest text-[#8B3C82] uppercase block mb-1">
+            {badgeText}
+          </span>
+        )}
         <h3 className="text-2xl sm:text-3xl font-normal tracking-wide text-stone-900 font-['New_Amsterdam'] uppercase blog-h1">
-          EVENT HIGHLIGHTS & DETAILS
+          {headingText}
         </h3>
+        {descriptionText && (
+          <p className="mt-2 text-stone-600 text-sm sm:text-base leading-relaxed">
+            {descriptionText}
+          </p>
+        )}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {/* Dates */}
         {parsedDates && (
           <div className="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-stone-200/60 shadow-xs">
             <div className="p-2.5 rounded-xl bg-[#A34493]/10 text-[#A34493] flex-shrink-0">
@@ -293,7 +295,6 @@ const EventQuickDetailsSection = ({ details }) => {
           </div>
         )}
 
-        {/* Time */}
         {parsedTime && (
           <div className="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-stone-200/60 shadow-xs">
             <div className="p-2.5 rounded-xl bg-[#A34493]/10 text-[#A34493] flex-shrink-0">
@@ -308,7 +309,6 @@ const EventQuickDetailsSection = ({ details }) => {
           </div>
         )}
 
-        {/* Duration */}
         {duration && (
           <div className="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-stone-200/60 shadow-xs">
             <div className="p-2.5 rounded-xl bg-[#A34493]/10 text-[#A34493] flex-shrink-0">
@@ -323,7 +323,6 @@ const EventQuickDetailsSection = ({ details }) => {
           </div>
         )}
 
-        {/* Location */}
         {locationLabel && (
           <div className="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-stone-200/60 shadow-xs">
             <div className="p-2.5 rounded-xl bg-[#A34493]/10 text-[#A34493] flex-shrink-0">
@@ -339,7 +338,6 @@ const EventQuickDetailsSection = ({ details }) => {
           </div>
         )}
 
-        {/* Languages */}
         {parsedLanguages && (
           <div className="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-stone-200/60 shadow-xs">
             <div className="p-2.5 rounded-xl bg-[#A34493]/10 text-[#A34493] flex-shrink-0">
@@ -354,7 +352,6 @@ const EventQuickDetailsSection = ({ details }) => {
           </div>
         )}
 
-        {/* Age Limit */}
         {ageLimit && (
           <div className="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-stone-200/60 shadow-xs">
             <div className="p-2.5 rounded-xl bg-[#A34493]/10 text-[#A34493] flex-shrink-0">
@@ -368,34 +365,6 @@ const EventQuickDetailsSection = ({ details }) => {
             </div>
           </div>
         )}
-
-      
-        {/* {isFree !== undefined && isFree !== null && (
-          <div className="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-stone-200/60 shadow-xs">
-            <div className="p-2.5 rounded-xl bg-[#A34493]/10 text-[#A34493] flex-shrink-0">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
-              </svg>
-            </div>
-            <div>
-              <span className="block text-xs font-medium text-stone-400 uppercase tracking-wider">Entry Fee</span>
-              <span className="text-sm font-semibold text-stone-800">{isFree ? "Free Entry" : "Paid Entry"}</span>
-            </div>
-          </div>
-        )} 
-        {resolvedFamilyFriendly !== undefined && resolvedFamilyFriendly !== null && (
-          <div className="flex items-start gap-3.5 bg-white p-4 rounded-2xl border border-stone-200/60 shadow-xs">
-            <div className="p-2.5 rounded-xl bg-[#A34493]/10 text-[#A34493] flex-shrink-0">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-            </div>
-            <div>
-              <span className="block text-xs font-medium text-stone-400 uppercase tracking-wider">Audience</span>
-              <span className="text-sm font-semibold text-stone-800">{resolvedFamilyFriendly ? "Family Friendly" : "General Audience"}</span>
-            </div>
-          </div>
-        )} */}
       </div>
     </section>
   );
@@ -458,7 +427,7 @@ const renderTextChildren = (children, allowFormatting = true) => {
   });
 };
 
-const parseLexical = (content) => {
+const parseLexical = (content, pageDetails) => {
   if (!content?.root?.children) return null;
 
   const headingClasses = {
@@ -487,11 +456,13 @@ const parseLexical = (content) => {
           </Tag>
         );
       }
+
       case "block": {
         const blockType = node.fields?.blockType;
+        const fields = node.fields || {};
 
+        // 1. About Trending Block
         if (blockType === "aboutTrending") {
-          const fields = node.fields;
           const image = fields?.imageGroup?.image;
           const paragraphs = fields?.paragraphs || [];
           const cta = fields?.cta;
@@ -572,8 +543,20 @@ const parseLexical = (content) => {
           );
         }
 
+        // 2. Dynamic Event Quick Details Block Inside Lexical
+        if (blockType === "eventQuickDetails") {
+          return (
+            <EventQuickDetailsSection
+              key={idx}
+              details={pageDetails}
+              blockFields={fields}
+            />
+          );
+        }
+
         return null;
       }
+
       default:
         return null;
     }
@@ -622,39 +605,8 @@ export default function WhatsUpChennaiDetailPage() {
           setWhatsApp(null);
         }
 
-        // const formattedTrends = docs.map((doc) => {
-        //   const rawDate = doc.details?.eventTime || doc.publishedAt;
-        //   const dateObj = rawDate ? new Date(rawDate) : null;
-
-        //   const day = dateObj
-        //     ? String(dateObj.getDate()).padStart(2, "0")
-        //     : "15";
-        //   const month = dateObj
-        //     ? dateObj.toLocaleString("en-US", { month: "short" }).toUpperCase()
-        //     : "OCT";
-
-        //   const imgUrl =
-        //     doc.FeaturedImage?.url ||
-        //     doc.heroImage?.url ||
-        //     doc.FeaturedImage?.sizes?.small?.url ||
-        //     "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80";
-
-        //   return {
-        //     id: doc.id,
-        //     slug: doc.slug,
-        //     title: doc.title,
-        //     category: doc.details?.isFree ? "Free Event" : "Event",
-        //     date: { day, month },
-        //     location: doc.details?.location?.label || "Chennai",
-        //     image: imgUrl.startsWith("http")
-        //       ? imgUrl
-        //       : `${API_BASE_URL}${imgUrl}`,
-        //   };
-        // });
-
-        // useEffect உள்ளே:
         const formattedTrends = docs
-          .filter((doc) => String(doc.slug) !== currentSlug) // 👈 தற்போதைய பக்கத்தின் Card-ஐ நீக்குகிறது
+          .filter((doc) => String(doc.slug) !== currentSlug)
           .map((doc) => {
             const rawDate = doc.details?.eventTime || doc.publishedAt;
             const dateObj = rawDate ? new Date(rawDate) : null;
@@ -687,7 +639,6 @@ export default function WhatsUpChennaiDetailPage() {
             };
           });
 
-        setTrends(formattedTrends);
         setTrends(formattedTrends);
       } catch (err) {
         console.error("WhatsApp fetch error:", err);
@@ -757,7 +708,6 @@ export default function WhatsUpChennaiDetailPage() {
 
   return (
     <div className="min-h-screen bg-[#FDFBF7] text-stone-800 font-sans antialiased">
-    
       {WhatsApp && (
         <Helmet>
           <title>{WhatsApp.metatitle || WhatsApp.title}</title>
@@ -765,7 +715,6 @@ export default function WhatsUpChennaiDetailPage() {
             name="description"
             content={WhatsApp.metadescription || WhatsApp.title}
           />
-
           <meta property="og:title" content={WhatsApp.title} />
           <meta
             property="og:description"
@@ -796,7 +745,6 @@ export default function WhatsUpChennaiDetailPage() {
         </Helmet>
       )}
 
-
       {WhatsApp?.heroImage && (
         <div className="accaodomationBannerSection relative w-full overflow-hidden">
           <div className="bLogDetailBanner">
@@ -825,13 +773,8 @@ export default function WhatsUpChennaiDetailPage() {
       )}
 
       <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-        
-        {WhatsApp?.details && (
-          <EventQuickDetailsSection details={WhatsApp.details} />
-        )}
-
         <div className="blog">
-          {WhatsApp?.content && parseLexical(WhatsApp.content)}
+          {WhatsApp?.content && parseLexical(WhatsApp.content, WhatsApp.details)}
         </div>
 
         <TrendsSection

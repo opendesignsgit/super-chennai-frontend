@@ -117,19 +117,21 @@ export default function ArattaiWithArunJain() {
       "@type": "Event",
       name: "Arattai with Arun Jain",
       description:
-        "Arun Jain joins Arattai with Super Chennai, sharing insights on leadership, innovation, design thinking, and entrepreneurship.",
-      image: "https://www.superchennai.com/images/inner-page-arun-jain.jpeg",
-      startDate: "2026-08-22T10:00",
-      endDate: "2026-08-22T19:00",
+        "Arun Jain, CMD of Intellect Design Arena, shares his journey in FinTech, Design Thinking, and building global technology institutions from India on Arattai.",
+      image: "https://www.superchennai.com/images/inner-page-arun-jain..jpg",
+      startDate: "2026-09-18T09:00",
+      endDate: "2026-09-18T19:00",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       location: {
         "@type": "Place",
-        name: "Chennai",
+        name: "LADY ANDAL SCHOOL",
         address: {
           "@type": "PostalAddress",
+          streetAddress:
+            "Shenstone Park, 7, Harrington Rd, Chetpet, Chennai, Tamil Nadu 600031",
           addressLocality: "Chennai",
-          postalCode: "600001",
+          postalCode: "600031",
           addressCountry: "IN",
         },
       },

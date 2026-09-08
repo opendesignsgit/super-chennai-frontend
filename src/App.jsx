@@ -24,12 +24,10 @@ import FutureGrowthDevelopment from "./Pages/SubPages/LivePages/FutureGrowthDeve
 import Healthcare from "./Pages/SubPages/LivePages/Healthcare";
 import Neighbourhood from "./Pages/SubPages/LivePages/Neighbourhood";
 
-
 import ChennaiNeighbourhood from "./Pages/ChennaiNeighbourhoods/pages/Neighbourhood";
 import ChennaiNeighbourhoodDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodDetails";
 import NeighbourhoodCategory from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodCategory";
 import NeighbourhoodItemDetail from "./Pages/ChennaiNeighbourhoods/pages/NeighbourhoodItemDetail";
-
 
 import QualityofLife from "./Pages/SubPages/LivePages/QualityofLife";
 import Recreation from "./Pages/SubPages/LivePages/Recreation";
@@ -319,9 +317,7 @@ import ArattaiWithKishenDas from "./Pages/Activities/ArrataiWithKishen/arattai-k
 import ArattaiWithSriram from "./Pages/Activities/ArattaiWithSriram/ArattaiWithSriram";
 import KiteFestivalPage from "./Pages/Activities/KiteFestivalPage";
 
-import ChennaiStory  from "./Pages/Activities/letsTalkSection/ChennaiStory";
-
-
+import ChennaiStory from "./Pages/Activities/letsTalkSection/ChennaiStory";
 
 import NotFound from "../src/NotFound";
 import ImagePopup from "./Components/ImagePopup";
@@ -382,8 +378,6 @@ import SingAlongMetroSuccess from "./Pages/Activities/SingAloneMetro/SingAloneMt
 
 import IconofthemonthVSriram from "./Pages/icon-of-the-month-v-sairam";
 
-
-
 import LetsTalkPage from "./Pages/Activities/LetsTalk/LetsTalk";
 import LetsTalkCardsDetail from "./Pages/Activities/LetsTalk/Components/LetsTalkCardsDetail";
 
@@ -392,10 +386,7 @@ import ArattaiWithArunJain from "./Pages/Activities/ArattaiJainRam/ArattaiWithAr
 import ArattaiArunJainExcell from "./Pages/Activities/ArattaiJainRam/ArattaiArunJainExcell";
 import WhatsUpChennaiDetailPage from "./Pages/WhatupChennai/whatupChennaiDetail";
 import GoluContestMain from "./Pages/Activities/GoluContest/GoluContestMainpage";
-import GoluIndexPage  from "./Pages/Activities/GoluContest/GolupageIndex";
-
-
-
+import GoluIndexPage from "./Pages/Activities/GoluContest/GolupageIndex";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -782,36 +773,30 @@ function App() {
 
       <Routes>
         {/* ######### DYNAMIC PAGES ROUTES  ############################################ */}
-        
+
         <Route
           path="/letsTalkDashboard"
           element={<ChennailetsTalkDashboard />}
         />
 
-                <Route
+        <Route
           path="//arattai-with-arun-jain/tech-visionary"
           element={<ArattaiWithArunJain />}
         />
 
-                   <Route
+        <Route
           path="/ArattaiArunJainExcell"
           element={<ArattaiArunJainExcell />}
         />
 
-                    <Route
-          path="/GoluContestMain"
-          element={<GoluContestMain />}
+        <Route path="/GoluContestMain" element={<GoluContestMain />} />
+
+        <Route path="/golupage" element={<GoluIndexPage />} />
+
+        <Route
+          path="/whats-up-chennai/:slug"
+          element={<WhatsUpChennaiDetailPage />}
         />
-
-               <Route path="/golupage" element={<GoluIndexPage />} />
-
-        
-        <Route path="/whats-up-chennai/:slug" element={<WhatsUpChennaiDetailPage />} />
-
-
-        
-         
-
 
         <Route
           path="/contest/madras-day-2026-midnight-metro-ride"

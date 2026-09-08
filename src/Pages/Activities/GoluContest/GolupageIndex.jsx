@@ -222,7 +222,7 @@ export default function GoluIndexPage() {
       ],
     },
   ];
-  
+
   return (
     <>
       {/* Banner */}
@@ -244,7 +244,6 @@ export default function GoluIndexPage() {
               key={index}
               className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
             >
-             
               <div className="lg:col-span-4 space-y-4">
                 <div>
                   <h1 className="text-3xl md:text-4xl font-black text-indigo-950 tracking-tight leading-tight uppercase">
@@ -348,7 +347,6 @@ export default function GoluIndexPage() {
               {features.map((feature, index) => (
                 <div key={feature.id} className="group parafirstsectionn">
                   <div className="flex items-start space-x-4 gap-2 golumaincon">
-                  
                     <div
                       className={`w-14 h-14 rounded-full ${feature.bgColor} flex items-center justify-center shrink-0 shadow-sm`}
                     >
@@ -356,7 +354,6 @@ export default function GoluIndexPage() {
                     </div>
 
                     <div className="mr-0">
-                     
                       <span
                         className={`text-lg font-black ${feature.numColor} shrink-0 numberfontt`}
                       >
@@ -364,7 +361,6 @@ export default function GoluIndexPage() {
                       </span>
                     </div>
 
-                    
                     <div className="flex-1">
                       <h3 className="text-sm font-semibold text-[#000] tracking-tight">
                         {feature.title}
@@ -375,7 +371,6 @@ export default function GoluIndexPage() {
                     </div>
                   </div>
 
-                  
                   {index < features.length - 1 && (
                     <div className="border-b border-gray-100 mt-4 ml-14"></div>
                   )}
@@ -451,7 +446,6 @@ export default function GoluIndexPage() {
               </div>
 
               <div className="bg-purple-50/50 border border-purple-100 rounded-2xl p-6 md:p-8 flex flex-row items-center text-center h-full shadow-sm hover:shadow-md transition-shadow">
-
                 <div className="w-100 widthmax">
                   <div className="flex flex-col items-center">
                     <div className="w-25 h-25 rounded-full  border-purple-200 flex items-center justify-center mb-4  text-indigo-900">
@@ -469,8 +463,6 @@ export default function GoluIndexPage() {
                       </p>
                     </div>
                   </div>
-
-
 
                   <p className="text-xs md:text-sm text-gray-600 font-medium max-w-100 mt-auto widthmax paragaraphcolosection ">
                     Your Super Chennai Corner is your chance to showcase what
@@ -493,7 +485,6 @@ export default function GoluIndexPage() {
               </div>
 
               <div className="bg-pink-50/50 border border-pink-100 rounded-2xl p-6 md:p-8 flex flex-row items-center text-center h-full shadow-sm hover:shadow-md transition-shadow">
-               
                 <div className="w-100 widthmax">
                   <div className="flex flex-col items-center">
                     <div className="w-25 h-25 rounded-full  border-purple-200 flex items-center justify-center mb-4  text-indigo-900">
@@ -508,7 +499,6 @@ export default function GoluIndexPage() {
                       </p>
                     </div>
                   </div>
-
 
                   <p className="text-xs md:text-sm text-gray-600 font-medium max-w-100 mt-auto widthmax paragaraphcolosection">
                     Shortlisted Golus will be evaluated based on their overall
@@ -533,12 +523,10 @@ export default function GoluIndexPage() {
 
         <section className="max-w-7xl mx-auto my-8 p-6 md:p-8 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-[10%]  px-4 md:px-12">
-           
             <div className="text-pink-400 opacity-80">
               <img src="/images/golu/flower-image.png" alt="" />
             </div>
 
-           
             <div className="flex flex-col items-center text-center space-y-4">
               <h2 className="text-xl md:text-2xl font-black text-indigo-950 uppercase font-bold">
                 READY TO CREATE YOUR GOLU?
@@ -552,7 +540,6 @@ export default function GoluIndexPage() {
               </button>
             </div>
 
-           
             <div className="text-pink-400 opacity-80">
               <img src="/images/golu/flower-image.png" alt="" />
             </div>
@@ -560,9 +547,7 @@ export default function GoluIndexPage() {
         </section>
 
         <section className="max-w-7xl mx-auto my-8 relative overflow-hidden rounded-3xl shadow-xl font-sans backgoungoloimage text-white">
-   
           <div className="relative z-10 py-10 px-6 md:px-12 flex flex-col items-center text-center">
-            
             <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight leading-none uppercase">
               GLOBAL OUTLOOK.
             </h2>
@@ -570,12 +555,10 @@ export default function GoluIndexPage() {
               LOCAL UNIQUENESS.
             </h2>
 
-            
             <p className="text-xs md:text-sm font-bold text-gray-200  st uppercase mt-3 mb-6">
               A GOLU FOR THE CHENNAI OF TOMORROW.
             </p>
 
-            
             <button className="cursor-pointer flex items-center justify-center gap-3 bg-amber-400 hover:bg-amber-300 text-indigo-950 font-black text-sm   px-8 py-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               <span>REGISTER NOW</span>
               <span className="bg-indigo-950 text-amber-400 rounded-full p-1 flex items-center justify-center">

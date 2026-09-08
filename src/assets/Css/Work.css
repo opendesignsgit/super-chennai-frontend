@@ -473,4 +473,145 @@
   font-family: "Poppins" !important;
 }
 
+@media (max-width: 800px) {
+  .paragaraphcolosection {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0px;
+  }
+  .golupaggggeee p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .headigggggfont.uppercase.font-bold {
+    font-size: 20px;
+  }
+
+  .subheadinggfonrs.mb-3.font-bold {
+    font-size: 16px;
+    margin-bottom: -5px;
+  }
+
+  .golufirstsectionheight {
+    height: auto;
+  }
+
+  .golupaggggeee span {
+    font-size: 14px;
+  }
+
+  .highlightedtextsectionpara {
+    padding-top: 10px;
+  }
+
+  /* .withautomaxgolu {
+    max-width: 100%;
+  }
+
+  .textgolulefttt {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+  .textgolulefttt .leading-none,
+  .textgolulefttt h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 0;
+    line-height: 25px;
+  } */
+
+  .flowwsectiongloww {
+    display: flex;
+    column-gap: 35px;
+    overflow-x: scroll;
+    height: 135px;
+    padding-left: 5%;
+    margin-top: -10px;
+  }
+
+  .firstflowwsectiongloww {
+    flex-shrink: 0;
+    width: 85%;
+    align-items: flex-start;
+  }
+
+  .withautomaxgolu {
+    max-width: 100%;
+    line-height: 120%;
+    width: 100%;
+  }
+
+  .golupaggggeee {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .golupaggggeee h3 {
+    font-size: 16px;
+  }
+
+  .golumaincon {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .golumaincon .flex-1 {
+    margin-top: 12px;
+  }
+
+  .golumaincon .flex-1 .paragolorr {
+    margin-top: 7px;
+  }
+
+  .heighgolli .mt-4.ml-14 {
+    margin-left: 0;
+  }
+
+  .formflexgolou {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .backgoungoloimage {
+    background-position: left;
+    background-color: #611c95;
+    background-image: none;
+  }
+  .accaodomationBannerSection.golummainpagee img {
+    height: auto;
+  }
+
+  .aroooewwglow {
+    font-size: 35px;
+    line-height: 25px;
+  }
+  .tetxcentermobile {
+    text-align: center !important;
+  }
+
+  .paddinggglefttftt {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .paddingtwenty {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* .heighgolli {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .heighgolli .group.parafirstsectionn {
+    flex-shrink: 0;
+    width: 70%;
+  } */
+}
+
 /* golupage-css */

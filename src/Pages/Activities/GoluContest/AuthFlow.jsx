@@ -20,10 +20,10 @@ export default function AuthFlow({
   return (
     <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100 font-sans bg-purple-50/50 mt-[50px]">
       <div class="flex items-center justify-center gap-4 mb-8"><span class="h-[2px] w-12 md:w-20 bg-pink-500"></span><h2 class="text-xl md:text-3xl font-bold text-indigo-950 text-center uppercase">Super Chennai Golu Contest</h2><span class="h-[2px] w-12 md:w-20 bg-pink-500"></span></div>
-      <div className="max-w-md mx-auto mt-8 px-4">
+      <div className="max-w-md mx-auto mt-8 px-4 paddinggglefttftt">
         {/* 1. MOBILE NUMBER ENTRY */}
         {currentStep === "AUTH_MOBILE" && (
-          <div className="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm">
+          <div className="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm paddingtwenty">
             <h2 className="text-xl md:text-2xl font-black text-indigo-950 uppercase font-bold headigggggfont">
               {authMode === "register" ? "Register Account" : "Login via OTP"}
             </h2>
@@ -73,7 +73,7 @@ export default function AuthFlow({
 
         {/* 2. OTP VERIFICATION */}
         {currentStep === "OTP_VERIFY" && (
-          <div className="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm">
+          <div className="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm paddingtwenty">
             <h2 className="text-xl md:text-2xl font-black text-indigo-950 uppercase font-bold headigggggfont text-center">
               Verify OTP
             </h2>
@@ -114,7 +114,7 @@ export default function AuthFlow({
 
         {/* 3. FULL USER REGISTRATION FORM */}
         {currentStep === "REGISTRATION" && (
-          <div className="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm space-y-6">
+          <div className="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm space-y-6 paddingtwenty">
             <div>
               <h2 className="text-xl md:text-2xl font-black text-indigo-950 uppercase font-bold headigggggfont text-center">
                 Complete Your Profile

@@ -39,7 +39,6 @@ const GoluContestBlockSection = ({
   const goluMax = blockFields?.goluMaxImages ?? 5;
   const scMin = blockFields?.superChennaiMinImages ?? 1;
   const scMax = blockFields?.superChennaiMaxImages ?? 3;
- 
 
   return (
     <div className="w-full my-8">
@@ -100,7 +99,7 @@ const GoluContestBlockSection = ({
         />
       )}
       {showRegSuccessModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/70 backdrop-blur-md animate-fadeIn">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#fce7f3] animate-fadeIn">
           <div className="relative w-full max-w-lg bg-gradient-to-b from-white via-slate-50/50 to-purple-50/30 rounded-3xl p-8 md:p-10 text-center border border-white/60 shadow-[0_25px_60px_-15px_rgba(49,44,133,0.3)] transform transition-all overflow-hidden">
             {/* Background Decorative Gradient Blobs */}
             <div className="absolute -top-16 -right-16 w-32 h-32 bg-purple-300/40 rounded-full blur-2xl pointer-events-none" />
@@ -160,8 +159,6 @@ const GoluContestBlockSection = ({
               <span>Okay</span>
               <span className="text-lg">→</span>
             </button>
-
-        
           </div>
         </div>
       )}
@@ -687,14 +684,14 @@ const GoluCreateBlockSection = ({ blockFields }) => {
         <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 items-start relative">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 items-start relative flowwsectiongloww">
         {items.map((item, index) => {
           const iconUrl = getMediaUrl(item.icon);
 
           return (
             <div
               key={item.id || index}
-              className="flex flex-col items-center text-center relative group"
+              className="flex flex-col items-center text-center relative group firstflowwsectiongloww "
             >
               <div className="flex items-center gap-3 mb-2">
                 <div
@@ -711,7 +708,7 @@ const GoluCreateBlockSection = ({ blockFields }) => {
                   )}
                 </div>
 
-                <div className="text-left">
+                <div className="text-left textgolulefttt">
                   <span
                     className={`text-xl font-black ${item.color || "text-indigo-900"} block leading-none`}
                   >
@@ -725,12 +722,12 @@ const GoluCreateBlockSection = ({ blockFields }) => {
                 </div>
               </div>
 
-              <p className="text-xs text-[#000] leading-relaxed max-w-[150px] text-left">
+              <p className="text-xs text-[#000] leading-relaxed max-w-[150px] text-left withautomaxgolu">
                 {item.description}
               </p>
 
               {index < items.length - 1 && (
-                <div className="hidden md:block absolute -right-3 top-6 text-purple-900 opacity-60">
+                <div className="md:block absolute -right-3 top-6 text-purple-900 opacity-60 aroooewwglow">
                   →
                 </div>
               )}
@@ -1060,7 +1057,7 @@ const GoluHeroBannerBlockSection = ({ blockFields }) => {
           {titleHighlight}
         </h2>
 
-        <p className="text-xs md:text-sm font-bold text-gray-200 uppercase mt-3 mb-6">
+        <p className="text-xs md:text-sm font-bold text-gray-200 uppercase mt-3 mb-6 tetxcentermobile">
           {subtitle}
         </p>
 
@@ -1554,7 +1551,7 @@ export default function GoluContestMain() {
           id: registeredUser.id || registeredUser._id,
         }));
       }
-     
+
       setCurrentStep("SUBMIT");
       setShowRegSuccessModal(true);
     } catch (err) {
@@ -1779,7 +1776,7 @@ export default function GoluContestMain() {
       )}
 
       {desktopImgUrl && (
-        <section className="accaodomationBannerSection relative overflow-hidden cursor-pointer">
+        <section className="accaodomationBannerSection golummainpagee relative overflow-hidden cursor-pointer">
           <img
             className="hidden sm:block w-full"
             src={desktopImgUrl}
@@ -1793,7 +1790,7 @@ export default function GoluContestMain() {
 
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText ">
-              <h3>{pageData.title}</h3>
+              {/* <h3>{pageData.title}</h3> */}
               <div className="breadCrum mb-4">
                 <a href="#">{/* <Link to="/blog">Golu</Link> */}</a>{" "}
               </div>

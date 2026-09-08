@@ -392,6 +392,7 @@ import ArattaiWithArunJain from "./Pages/Activities/ArattaiJainRam/ArattaiWithAr
 import ArattaiArunJainExcell from "./Pages/Activities/ArattaiJainRam/ArattaiArunJainExcell";
 import WhatsUpChennaiDetailPage from "./Pages/WhatupChennai/whatupChennaiDetail";
 import GoluContestMain from "./Pages/Activities/GoluContest/GoluContestMainpage";
+import GoluIndexPage  from "./Pages/Activities/GoluContest/GolupageIndex";
 
 
 
@@ -802,7 +803,7 @@ function App() {
           element={<GoluContestMain />}
         />
 
-               
+               <Route path="/golupage" element={<GoluIndexPage />} />
 
         
         <Route path="/whats-up-chennai/:slug" element={<WhatsUpChennaiDetailPage />} />

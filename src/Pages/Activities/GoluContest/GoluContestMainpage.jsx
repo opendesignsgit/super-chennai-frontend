@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { API_BASE_URL } from "../../../../config";
 import AuthFlow from "./AuthFlow"; 
+import { Link, useParams } from "react-router-dom";
+import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
 
 // ==========================================
 // GOLU CONTEST BLOCK SECTION
@@ -258,6 +260,601 @@ const GoluContestBlockSection = ({
   );
 };
 
+// ==========================================
+// GOLU FIRST SECTION BLOCK COMPONENT
+// ==========================================
+const GoluFirstSectionBlockSection = ({ blockFields }) => {
+  const firstSection = blockFields?.firstSection || [];
+
+  return (
+    <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans goluufirstsectionmainn">
+      {firstSection.map((item, index) => {
+        const rawUrl =
+          typeof item?.media?.src === 'object' &&
+          item?.media?.src !== null &&
+          'url' in item.media.src
+            ? item.media.src.url
+            : typeof item?.media?.src === 'string'
+              ? item.media.src
+              : null;
+
+        // Fix absolute/relative URL for Payload media
+        const mediaUrl = rawUrl
+          ? rawUrl.startsWith('http')
+            ? rawUrl
+            : `${API_BASE_URL}${rawUrl}`
+          : null;
+
+        return (
+          <div
+            key={index}
+            className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
+          >
+            <div className="lg:col-span-4 space-y-4">
+              <div>
+                <h1 className="text-3xl md:text-4xl font-black text-indigo-950 tracking-tight leading-tight uppercase">
+                  {item?.title?.primary}
+                </h1>
+                <h1 className="text-3xl md:text-4xl font-black text-pink-600 tracking-tight leading-tight uppercase">
+                  {item?.title?.highlight}
+                </h1>
+                <h3 className="text-xs font-bold text-indigo-950 uppercase mt-2">
+                  {item?.title?.subtitle}
+                </h3>
+              </div>
+
+              <p className="text-xs text-gray-600 leading-relaxed max-w-xs">
+                {item?.description}
+              </p>
+
+              {item?.cta?.label && item?.cta?.url && (
+                <div className="pt-2">
+                  <a
+                    href={item.cta.url}
+                    className="inline-flex items-center justify-center gap-3 bg-indigo-900 hover:bg-indigo-950 text-white font-black text-xs px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                  >
+                    <span>{item.cta.label}</span>
+                    {item.cta.showIcon && (
+                      <span className="bg-white text-indigo-900 rounded-full p-1 flex items-center justify-center">
+                        →
+                      </span>
+                    )}
+                  </a>
+                </div>
+              )}
+            </div>
+
+            <div className="lg:col-span-4 w-full h-[280px] md:h-[340px] bg-gray-100 rounded-2xl border border-gray-200 flex flex-col items-center justify-center p-0 text-gray-400 relative overflow-hidden">
+              {mediaUrl ? (
+                <img
+                  src={mediaUrl}
+                  alt={item?.media?.altText || "Golu image"}
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              ) : (
+                <>
+                  <span className="text-2xl mb-2 opacity-50">🖼️</span>
+                  <span className="text-xs font-semibold uppercase text-gray-400">
+                    {item?.media?.placeholderText || "Add Image"}
+                  </span>
+                </>
+              )}
+            </div>
+
+            <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
+              {item?.features?.map((feature, featureIdx) => (
+                <div key={feature.id || featureIdx} className="flex items-start space-x-4 parafirstsectionn">
+                  <p className="text-xs text-gray-700 leading-relaxed pt-1">
+                    {feature.segments
+                      ? feature.segments.map((seg, segIdx) =>
+                          seg.highlight ? (
+                            <span
+                              key={segIdx}
+                              className="font-bold text-pink-600"
+                            >
+                              {seg.text}
+                            </span>
+                          ) : (
+                            seg.text
+                          ),
+                        )
+                      : feature.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </section>
+  );
+};
+
+// ==========================================
+// GOLU WHY CORNER BLOCK COMPONENT
+// ==========================================
+const GoluWhyCornerBlockSection = ({ blockFields }) => {
+  const headerTitle = blockFields?.headerTitle || "WHY A SUPER CHENNAI CORNER?";
+  const features = blockFields?.features || [];
+
+  const getMediaUrl = (imgField) => {
+    if (typeof imgField === 'object' && imgField !== null && 'url' in imgField) {
+      return imgField.url.startsWith('http') ? imgField.url : `${API_BASE_URL}${imgField.url}`;
+    }
+    if (typeof imgField === 'string') {
+      return imgField.startsWith('http') ? imgField : `${API_BASE_URL}${imgField}`;
+    }
+    return null;
+  };
+
+  const decorImageUrl = getMediaUrl(blockFields?.decorImage);
+  const mainMediaUrl = getMediaUrl(blockFields?.media?.src);
+
+  return (
+    <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans">
+      <div className="flex items-center justify-center space-x-3 mb-10">
+        <span className="text-pink-500 text-lg">
+          {decorImageUrl ? (
+            <img src={decorImageUrl} alt="decoration" className="w-14 object-contain" />
+          ) : (
+            <img className="w-14" src="/images/golu/golu-second.png" alt="" />
+          )}
+        </span>
+        <h2 className="text-xl md:text-2xl font-black text-indigo-950 font-bold uppercase text-center">
+          {headerTitle}
+        </h2>
+        <span className="text-pink-500 text-lg">
+          {decorImageUrl ? (
+            <img src={decorImageUrl} alt="decoration" className="w-14 object-contain" />
+          ) : (
+            <img className="w-14" src="/images/golu/golu-second.png" alt="" />
+          )}
+        </span>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="lg:col-span-5 w-full h-[320px] md:h-[460px] bg-gray-100 rounded-2xl border border-gray-200 flex flex-col items-center justify-center text-gray-400 relative overflow-hidden">
+          {mainMediaUrl ? (
+            <img
+              src={mainMediaUrl}
+              alt={blockFields?.media?.altText || "Why Super Chennai Corner"}
+              className="h-[100%] w-full object-cover"
+            />
+          ) : (
+            <>
+              <span className="text-2xl mb-2 opacity-50">🖼️</span>
+              <span className="text-xs font-semibold uppercase text-gray-400">
+                {blockFields?.media?.placeholderText || "Add Image"}
+              </span>
+            </>
+          )}
+        </div>
+
+        <div className="lg:col-span-7 space-y-5 heighgolli">
+          {features.map((feature, index) => {
+            const iconUrl = getMediaUrl(feature.icon);
+
+            return (
+              <div key={feature.id || index} className="group parafirstsectionn">
+                <div className="flex items-start space-x-4 gap-2 golumaincon">
+                  <div
+                    className={`w-14 h-14 rounded-full ${feature.bgColor || 'bg-pink-100 text-pink-600'} flex items-center justify-center shrink-0 shadow-sm overflow-hidden`}
+                  >
+                    {iconUrl ? (
+                      <img src={iconUrl} alt="icon" className="w-14 h-14 object-cover" />
+                    ) : (
+                      <span className="text-lg font-bold">{feature.iconText || '🌟'}</span>
+                    )}
+                  </div>
+
+                  <div className="mr-0">
+                    <span
+                      className={`text-lg font-black ${feature.numColor || 'text-pink-600'} shrink-0 numberfontt`}
+                    >
+                      {feature.id}
+                    </span>
+                  </div>
+
+                  <div className="flex-1">
+                    <h3 className="text-sm font-semibold text-[#000] tracking-tight">
+                      {feature.title}
+                    </h3>
+                    <p className="text-xs text-gray-600 leading-relaxed mt-0.5 paragolorr">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+
+                {index < features.length - 1 && (
+                  <div className="border-b border-gray-100 mt-4 ml-14"></div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+
+// ==========================================
+// GOLU CREATE BLOCK SECTION (React Component for Frontend)
+// ==========================================
+const GoluCreateBlockSection = ({ blockFields }) => {
+  const headerTitle = blockFields?.headerTitle || "WHAT TO CREATE";
+  const items = blockFields?.items || [];
+
+  const getMediaUrl = (imgField) => {
+    if (typeof imgField === 'object' && imgField !== null && 'url' in imgField) {
+      return imgField.url.startsWith('http') ? imgField.url : `${API_BASE_URL}${imgField.url}`;
+    }
+    if (typeof imgField === 'string') {
+      return imgField.startsWith('http') ? imgField : `${API_BASE_URL}${imgField}`;
+    }
+    return null;
+  };
+
+  return (
+    <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans">
+      <div className="flex items-center justify-center space-x-4 mb-10">
+        <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
+        <h2 className="text-xl md:text-2xl font-black text-indigo-950 font-bold uppercase text-center">
+          {headerTitle}
+        </h2>
+        <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 items-start relative">
+        {items.map((item, index) => {
+          const iconUrl = getMediaUrl(item.icon);
+
+          return (
+            <div
+              key={item.id || index}
+              className="flex flex-col items-center text-center relative group"
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <div
+                  className={`w-18 h-18 rounded-full ${item.circleBorder || 'border-indigo-300 bg-indigo-50/20'} flex items-center justify-center shadow-sm shrink-0 overflow-hidden`}
+                >
+                  {iconUrl ? (
+                    <img
+                      src={iconUrl}
+                      alt={item.title || 'Create icon'}
+                      className="w-18 h-18 object-cover"
+                    />
+                  ) : (
+                    <span className="text-xl">⭐</span>
+                  )}
+                </div>
+
+                <div className="text-left">
+                  <span
+                    className={`text-xl font-black ${item.color || 'text-indigo-900'} block leading-none`}
+                  >
+                    {item.id}
+                  </span>
+                  <h3
+                    className={`text-xs font-black ${item.color || 'text-indigo-900'} uppercase font-bold mt-0.5`}
+                  >
+                    {item.title}
+                  </h3>
+                </div>
+              </div>
+
+              <p className="text-xs text-[#000] leading-relaxed max-w-[150px] text-left">
+                {item.description}
+              </p>
+
+              {index < items.length - 1 && (
+                <div className="hidden md:block absolute -right-3 top-6 text-purple-900 opacity-60">
+                  →
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
+
+// ==========================================
+// GOLU JUDGING BLOCK SECTION
+// ==========================================
+const GoluJudgingBlockSection = ({ blockFields }) => {
+  const headerTitle = blockFields?.headerTitle || "How Will Your Golu Be Judged?";
+  const stages = blockFields?.stages || [];
+
+  const getMediaUrl = (imgField) => {
+    if (typeof imgField === 'object' && imgField !== null && 'url' in imgField) {
+      return imgField.url.startsWith('http') ? imgField.url : `${API_BASE_URL}${imgField.url}`;
+    }
+    if (typeof imgField === 'string') {
+      return imgField.startsWith('http') ? imgField : `${API_BASE_URL}${imgField}`;
+    }
+    return null;
+  };
+
+  return (
+    <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-white rounded-3xl shadow-lg border border-gray-100 font-sans">
+      <div className="flex items-center justify-center gap-4 mb-8">
+        <span className="h-[2px] w-12 md:w-20 bg-pink-500"></span>
+        <h2 className="text-xl md:text-3xl font-bold text-indigo-950 text-center uppercase">
+          {headerTitle}
+        </h2>
+        <span className="h-[2px] w-12 md:w-20 bg-pink-500"></span>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+        {stages.map((stage, index) => {
+          const iconUrl = getMediaUrl(stage.icon);
+
+          return (
+            <div key={index} className="relative pt-6">
+              <div
+                className={`absolute top-2 left-1/2 -translate-x-1/2 z-10 font-bold text-xs px-6 py-1.5 rounded-full uppercase shadow-sm text-[15px] ${
+                  stage.badgeColor || 'bg-indigo-900 text-white'
+                }`}
+              >
+                {stage.stageBadge}
+              </div>
+
+              <div
+                className={`border rounded-2xl p-6 md:p-8 flex flex-row items-center text-center h-full shadow-sm hover:shadow-md transition-shadow ${
+                  stage.cardBgColor || 'bg-purple-50/50 border-purple-100'
+                }`}
+              >
+                <div className="w-full">
+                  <div className="flex flex-col items-center">
+                    <div className="w-25 h-25 rounded-full border-purple-200 flex items-center justify-center mb-4 text-indigo-900 relative">
+                      {iconUrl ? (
+                        <img
+                          src={iconUrl}
+                          alt={stage.title || 'Judging stage icon'}
+                          className="w-25 h-25 object-contain"
+                        />
+                      ) : (
+                        <span className="text-2xl">🖼️</span>
+                      )}
+                    </div>
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-black text-indigo-950 uppercase font-bold headigggggfont">
+                        {stage.title}
+                      </h3>
+                      {stage.subtitle && (
+                        <p className="text-xs md:text-sm font-black text-black uppercase mt-1 mb-3 font-bold subheadinggfonrs">
+                          {stage.subtitle}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 mt-auto">
+                    {stage.descriptions?.map((desc, descIdx) => (
+                      <p
+                        key={descIdx}
+                        className={`text-xs md:text-sm text-gray-600 font-medium max-w-full widthmax paragaraphcolosection ${
+                          descIdx > 0 ? 'pt-[15px]' : ''
+                        }`}
+                      >
+                        {desc.text}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
+
+// ==========================================
+// GOLU CTA BANNER BLOCK COMPONENT
+// ==========================================
+const GoluCtaBannerBlockSection = ({ blockFields }) => {
+  const title = blockFields?.title || "READY TO CREATE YOUR GOLU?";
+  const buttonLabel = blockFields?.buttonLabel || "REGISTER NOW";
+  const buttonUrl = blockFields?.buttonUrl || "#register";
+
+  const getMediaUrl = (imgField) => {
+    if (typeof imgField === 'object' && imgField !== null && 'url' in imgField) {
+      return imgField.url.startsWith('http') ? imgField.url : `${API_BASE_URL}${imgField.url}`;
+    }
+    if (typeof imgField === 'string') {
+      return imgField.startsWith('http') ? imgField : `${API_BASE_URL}${imgField}`;
+    }
+    return null;
+  };
+
+  const flowerImgUrl = getMediaUrl(blockFields?.flowerImage);
+
+  return (
+    <section className="max-w-7xl mx-auto my-8 p-6 md:p-8 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-[10%] px-4 md:px-12">
+        
+        <div className="text-pink-400 opacity-80">
+          {flowerImgUrl ? (
+            <img src={flowerImgUrl} alt="flower decoration" className="w-14 object-contain" />
+          ) : (
+            <img src="/images/golu/flower-image.png" alt="flower decoration" />
+          )}
+        </div>
+
+        <div className="flex flex-col items-center text-center space-y-4">
+          <h2 className="text-xl md:text-2xl font-black text-indigo-950 uppercase font-bold">
+            {title}
+          </h2>
+
+          <a
+            href={buttonUrl}
+            className="cursor-pointer flex items-center justify-center gap-3 bg-pink-600 hover:bg-pink-700 text-white font-black text-sm px-8 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <span>{buttonLabel}</span>
+            <span className="bg-white text-pink-600 rounded-full p-1 flex items-center justify-center">
+              →
+            </span>
+          </a>
+        </div>
+
+        <div className="text-pink-400 opacity-80">
+          {flowerImgUrl ? (
+            <img src={flowerImgUrl} alt="flower decoration" className="w-14 object-contain" />
+          ) : (
+            <img src="/images/golu/flower-image.png" alt="flower decoration" />
+          )}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// ==========================================
+// GOLU HERO BANNER BLOCK COMPONENT
+// ==========================================
+const GoluHeroBannerBlockSection = ({ blockFields }) => {
+  const titlePrimary = blockFields?.titlePrimary || "GLOBAL OUTLOOK.";
+  const titleHighlight = blockFields?.titleHighlight || "LOCAL UNIQUENESS.";
+  const subtitle = blockFields?.subtitle || "A GOLU FOR THE CHENNAI OF TOMORROW.";
+  const buttonLabel = blockFields?.buttonLabel || "REGISTER NOW";
+  const buttonUrl = blockFields?.buttonUrl || "#register";
+
+  const getMediaUrl = (imgField) => {
+    if (typeof imgField === 'object' && imgField !== null && 'url' in imgField) {
+      return imgField.url.startsWith('http') ? imgField.url : `${API_BASE_URL}${imgField.url}`;
+    }
+    if (typeof imgField === 'string') {
+      return imgField.startsWith('http') ? imgField : `${API_BASE_URL}${imgField}`;
+    }
+    return null;
+  };
+
+  const bgImgUrl = getMediaUrl(blockFields?.backgroundImage);
+  const sectionStyle = bgImgUrl
+    ? { backgroundImage: `url(${bgImgUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }
+    : {};
+
+  return (
+    <section
+      style={sectionStyle}
+      className="max-w-7xl mx-auto my-8 relative overflow-hidden rounded-3xl shadow-xl font-sans backgoungoloimage text-white"
+    >
+      <div className="relative z-10 py-10 px-6 md:px-12 flex flex-col items-center text-center">
+        <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight leading-none uppercase">
+          {titlePrimary}
+        </h2>
+        <h2 className="text-2xl md:text-4xl font-black text-amber-400 tracking-tight leading-none uppercase mt-1">
+          {titleHighlight}
+        </h2>
+
+        <p className="text-xs md:text-sm font-bold text-gray-200 uppercase mt-3 mb-6">
+          {subtitle}
+        </p>
+
+        <a
+          href={buttonUrl}
+          className="cursor-pointer flex items-center justify-center gap-3 bg-amber-400 hover:bg-amber-300 text-indigo-950 font-black text-sm px-8 py-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+        >
+          <span>{buttonLabel}</span>
+          <span className="bg-indigo-950 text-amber-400 rounded-full p-1 flex items-center justify-center">
+            →
+          </span>
+        </a>
+      </div>
+    </section>
+  );
+};
+
+
+// ==========================================
+// GOLU HOW IT WORKS BLOCK COMPONENT
+// ==========================================
+const GoluHowItWorksBlockSection = ({ blockFields }) => {
+  const headerTitle = blockFields?.headerTitle || "HOW IT WORKS";
+  const steps = blockFields?.steps || [];
+
+  const getMediaUrl = (imgField) => {
+    if (typeof imgField === 'object' && imgField !== null && 'url' in imgField) {
+      return imgField.url.startsWith('http') ? imgField.url : `${API_BASE_URL}${imgField.url}`;
+    }
+    if (typeof imgField === 'string') {
+      return imgField.startsWith('http') ? imgField : `${API_BASE_URL}${imgField}`;
+    }
+    return null;
+  };
+
+  return (
+    <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans">
+      <div className="flex items-center justify-center space-x-4 mb-10">
+        <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
+        <h2 className="text-xl md:text-2xl font-black text-indigo-950 font-bold uppercase text-center">
+          {headerTitle}
+        </h2>
+        <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 items-start relative">
+        {steps.map((step, index) => {
+          const iconUrl = getMediaUrl(step.icon);
+
+          return (
+            <div
+              key={step.id || index}
+              className="flex flex-col items-center text-center relative group"
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <div
+                  className={`w-18 h-18 rounded-full ${step.circleBorder || 'border-indigo-300 bg-indigo-50/20'} flex items-center justify-center shadow-sm shrink-0 overflow-hidden`}
+                >
+                  {iconUrl ? (
+                    <img
+                      src={iconUrl}
+                      alt={step.title || 'Step icon'}
+                      className="w-18 h-18 object-cover text-white"
+                    />
+                  ) : (
+                    <span className="text-xl">⭐</span>
+                  )}
+                </div>
+
+                <div className="text-left">
+                  <span
+                    className={`text-xl font-black ${step.color || 'text-indigo-900'} block leading-none`}
+                  >
+                    {step.id}
+                  </span>
+                  <h3
+                    className={`text-xs font-black ${step.color || 'text-indigo-900'} uppercase font-bold mt-0.5`}
+                  >
+                    {step.title}
+                  </h3>
+                </div>
+              </div>
+
+              <p className="text-xs text-[#000] leading-relaxed max-w-[150px] text-left">
+                {step.description}
+              </p>
+
+              {index < steps.length - 1 && (
+                <div className="hidden md:block absolute -right-3 top-6 text-purple-900 opacity-60">
+                  →
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
+
 /* ---------------------------------------------
    Lexical Helpers
 --------------------------------------------- */
@@ -306,6 +903,30 @@ const parseLexical = (content, contestState) => {
         const fields = node.fields || {};
         if (blockType === "goluContestBlock") {
           return <GoluContestBlockSection key={idx} blockFields={fields} {...contestState} />;
+        }
+       if (blockType === "goluFirstSection") {
+          return <GoluFirstSectionBlockSection key={idx} blockFields={fields} {...contestState} />;
+        }
+        if (blockType === "goluWhyCorner") {
+          return <GoluWhyCornerBlockSection key={idx} blockFields={fields} {...contestState} />;
+        }
+
+        if (blockType === "goluCreate") {
+          return <GoluCreateBlockSection key={idx} blockFields={fields} {...contestState} />;
+        }
+        if (blockType === "goluJudging") {
+          return <GoluJudgingBlockSection key={idx} blockFields={fields} />;
+        }
+
+        if (blockType === "goluCtaBanner") {
+         return <GoluCtaBannerBlockSection key={idx} blockFields={fields} />;
+       }
+       if (blockType === "goluHeroBanner") {
+          return <GoluHeroBannerBlockSection key={idx} blockFields={fields} />;
+        }
+
+        if (blockType === "goluHowItWorks") {
+          return <GoluHowItWorksBlockSection key={idx} blockFields={fields} {...contestState} />;
         }
         return null;
       }
@@ -698,7 +1319,9 @@ export default function GoluContestMain() {
   if (loadingContent) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#FDFBF7]">
-        <span className="text-stone-500 font-medium">Loading contest page...</span>
+        <span className="text-stone-500 font-medium">
+          Loading contest page...
+        </span>
       </div>
     );
   }
@@ -706,6 +1329,11 @@ export default function GoluContestMain() {
   const desktopImgUrl = pageData?.desktopImage?.url
     ? `${API_BASE_URL}${pageData.desktopImage.url}`
     : null;
+
+  const mobileImgUrl = pageData?.mobileImage?.url
+    ? `${API_BASE_URL}${pageData.mobileImage.url}`
+    : null;
+
 
   const contestStateProps = {
     currentStep,
@@ -745,29 +1373,49 @@ export default function GoluContestMain() {
       )}
 
       {desktopImgUrl && (
-       
-        <div className="relative w-full overflow-hidden bg-stone-900">
-          <div className="w-full h-[280px] sm:h-[400px] md:h-[450px]">
-            <img
-              src={desktopImgUrl}
-              alt={pageData?.title || "Golu Contest"}
-              className="w-full h-full object-cover"
-            />
+        <section className="accaodomationBannerSection relative overflow-hidden cursor-pointer">
+          <img
+            className="hidden sm:block w-full"
+            src={desktopImgUrl}
+            alt={pageData?.title || "Golu Contest"}
+          />
+          <img
+            className="block sm:hidden w-full"
+            src={mobileImgUrl}
+            alt="Golu Event"
+          />
+
+          <div className="accodoamationBannerContainer">
+            <div className="accodoamationBannerText ">
+              <div className="breadCrum mb-4">
+                <a href="#">
+                  {/* <Link to="/blog">Golu</Link> */}
+                </a>{" "}
+              </div>
+              <AutoShrinkText
+                text={pageData.title}
+                baseSize={80}
+                minSize={40}
+                maxChars={40}
+                className="accodoamationBannerText"
+                width="100%"
+                maxLines={2}
+              />
+            </div>
           </div>
-          <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-wide drop-shadow-md">
-              {pageData?.title || "Super Chennai Golu Contest 2026"}
-            </h1>
-          </div>
-        </div>
+        </section>
       )}
 
       <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div className="blog">
-          {pageData?.content && parseLexical(pageData.content, contestStateProps)}
-          
+          {pageData?.content &&
+            parseLexical(pageData.content, contestStateProps)}
+
           {!pageData?.content && (
-            <GoluContestBlockSection blockFields={CONTEST_SETTINGS} {...contestStateProps} />
+            <GoluContestBlockSection
+              blockFields={CONTEST_SETTINGS}
+              {...contestStateProps}
+            />
           )}
         </div>
       </main>

@@ -19,14 +19,17 @@
 //########### LOCAL ENV #################
 
 // export const API_BASE_URL_API = "http://localhost:3000/api"
-// export const API_BASE_URL = "http://localhost:3000"; 
+export const API_BASE_URL = "http://localhost:3000"; 
 // export const API_BASE_URL = "https://dev-cms.superchennai.com/"; 
 
 //########### PRODUCTION ENV #################
 
 export const API_BASE_URL_API = "https://api.superchennai.com/api";
-export const API_BASE_URL = "https://demo.superchennai.com";
-export const API_BASE_URL_API_TEST_DEV = "https://demo.superchennai.com";
+// export const API_BASE_URL = "https://demo.superchennai.com";
+// export const API_BASE_URL_API_TEST_DEV = "https://demo.superchennai.com";
 // export const API_BASE_URL_API_TEST_DEV = "https://dev-cms.superchennai.com";
+export const API_BASE_URL_API_TEST_DEV = "http://localhost:3000";
+
 export const AI_BASE_URL = "https://api.superchennai.com";
+
 

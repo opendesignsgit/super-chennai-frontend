@@ -349,3 +349,110 @@
     /* display: block; */
   }
 }
+
+
+
+
+
+
+
+/* golupage-css */
+
+#poppinsfamilyybody p {
+  font-family: "Poppins" !important;
+}
+
+#poppinsfamilyybody h1,
+#poppinsfamilyybody h2,
+#poppinsfamilyybody h3,
+#poppinsfamilyybody h4,
+#poppinsfamilyybody h5,
+#poppinsfamilyybody h6 {
+  font-family: "Poppins" !important;
+  line-height: 105%;
+}
+
+#poppinsfamilyybody .bebasfamily {
+  font-family: "Bebas Neue", sans-serif !important;
+}
+
+.golupaggggeee h3 {
+  font-size: 18px;
+}
+
+.golupaggggeee p {
+  font-size: 16px;
+}
+
+.golupaggggeee span {
+  font-size: 16px;
+}
+
+.golupaggggeee .numberfontt {
+  font-size: 33px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0px;
+  margin-right: 10px;
+  text-decoration: 2px underline;
+  text-underline-offset: 10px;
+}
+
+.heighgolli {
+  /* height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #e600768c #ffe4ef;
+  padding-right: 30px; */
+}
+
+.golufirstsectionheight {
+  height: 350px;
+  overflow-y: scroll;
+  scrollbar-width: thin !important;
+  scrollbar-color: #e600768c #ffe4ef;
+  padding-right: 10px;
+}
+
+.goluufirstsectionmainn {
+  padding-right: 20px;
+}
+
+.heighgolli .parafirstsectionn:first-child {
+  padding-top: 20px;
+}
+
+.golufirstsectionheight .parafirstsectionn:last-child {
+  padding-bottom: 20px;
+}
+
+.backgoungoloimage {
+  background-image: url("/public/images/golu/global-look.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.paragolorr {
+  line-height: 135%;
+}
+
+.widthmax {
+  width: 100%;
+  max-width: 100%;
+}
+
+.paragaraphcolosection {
+  text-align: left;
+  padding-left: 35px;
+  padding-right: 0px;
+}
+.headigggggfont.uppercase.font-bold {
+  font-size: 26px;
+}
+
+.subheadinggfonrs.mb-3.font-bold {
+  font-size: 20px;
+}
+
+/* golupage-css */

@@ -24,8 +24,6 @@ const GoluContestBlockSection = ({
   setAboutGolu,
   loading,
   errorMessage,
-  showRegSuccessModal,
-  setShowRegSuccessModal,
   handleSendOtp,
   handleVerifyOtp,
   handleRegisterUser,
@@ -39,7 +37,6 @@ const GoluContestBlockSection = ({
   const goluMax = blockFields?.goluMaxImages ?? 5;
   const scMin = blockFields?.superChennaiMinImages ?? 1;
   const scMax = blockFields?.superChennaiMaxImages ?? 3;
- 
 
   return (
     <div className="w-full my-8">
@@ -69,12 +66,12 @@ const GoluContestBlockSection = ({
                 >
                   Register & Participate
                 </button>
-                {/* <button
+                <button
                   onClick={() => startAuthFlow("login")}
                   className="cursor-pointer w-full py-3.5 bg-stone-100 hover:bg-stone-200 text-stone-800 font-semibold rounded-xl transition-colors text-sm border border-stone-300"
                 >
                   Already Registered? Login via OTP
-                </button> */}
+                </button>
               </div>
             </div>
           </div>
@@ -99,120 +96,9 @@ const GoluContestBlockSection = ({
           errorMessage={errorMessage}
         />
       )}
-      {showRegSuccessModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/70 backdrop-blur-md animate-fadeIn">
-          <div className="relative w-full max-w-lg bg-gradient-to-b from-white via-slate-50/50 to-purple-50/30 rounded-3xl p-8 md:p-10 text-center border border-white/60 shadow-[0_25px_60px_-15px_rgba(49,44,133,0.3)] transform transition-all overflow-hidden">
-            {/* Background Decorative Gradient Blobs */}
-            <div className="absolute -top-16 -right-16 w-32 h-32 bg-purple-300/40 rounded-full blur-2xl pointer-events-none" />
-            <div className="absolute -bottom-16 -left-16 w-32 h-32 bg-pink-300/40 rounded-full blur-2xl pointer-events-none" />
 
-            {/* Top Close Button */}
-            <button
-              type="button"
-              onClick={() => setShowRegSuccessModal(false)}
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 hover:bg-slate-100/80 w-9 h-9 flex items-center justify-center rounded-full transition-all duration-200 cursor-pointer border border-transparent hover:border-slate-200"
-              aria-label="Close modal"
-            >
-              ✕
-            </button>
-
-            {/* Hero Icon with Soft Pulse & Badge */}
-            <div className="relative mx-auto mb-6 w-24 h-24 flex items-center justify-center">
-              <div className="absolute inset-0 bg-emerald-500/10 rounded-full animate-ping opacity-75" />
-              <div className="relative w-20 h-20 bg-gradient-to-tr from-emerald-500 to-teal-400 text-white rounded-full flex items-center justify-center text-4xl shadow-lg shadow-emerald-500/20 ring-4 ring-white">
-                🎉
-              </div>
-            </div>
-
-            {/* Title */}
-            <h3 className="text-2xl md:text-3xl font-black text-indigo-950 uppercase tracking-tight mb-3">
-              Registration Successful!
-            </h3>
-
-            {/* User Greeting & Content */}
-            <div className="space-y-3 mb-8">
-              <p className="text-slate-700 font-semibold text-base">
-                Welcome aboard,{" "}
-                <span className="text-pink-600 font-bold">
-                  {userData?.fullName || "Participant"}
-                </span>
-                !
-              </p>
-              <p className="text-slate-600 text-sm leading-relaxed max-w-md mx-auto">
-                Your Golu registration is complete. During the Golu period, log
-                back in to upload photos of your Golu &{" "}
-                <span className="font-semibold text-indigo-900">
-                  Super Chennai Corner
-                </span>
-                ! 📸✨
-              </p>
-            </div>
-
-            {/* CTA Button */}
-            <button
-              type="button"
-              onClick={() => {
-                setShowRegSuccessModal(false);
-                window.location.reload();
-              }}
-              className="w-full py-4 px-6 bg-gradient-to-r from-[#312c85] to-[#4338ca] hover:from-[#25216b] hover:to-[#3730a3] text-white font-bold rounded-2xl shadow-lg shadow-indigo-950/20 hover:shadow-xl hover:shadow-indigo-950/30 transform hover:-translate-y-0.5 transition-all duration-200 text-sm uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer"
-            >
-              <span>Okay</span>
-              <span className="text-lg">→</span>
-            </button>
-
-        
-          </div>
-        </div>
-      )}
-      {/* 2. REGISTRATION SUCCESS MODAL POPUP */}
-      {/* {showRegSuccessModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fadeIn">
-          <div className="bg-white rounded-3xl p-6 md:p-8 max-w-md w-full text-center border border-stone-100 shadow-2xl relative transform transition-all">
-            
-            <button
-              onClick={() => setShowRegSuccessModal(false)}
-              className="absolute top-4 right-4 text-stone-400 hover:text-stone-700 text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full bg-stone-100"
-            >
-              ✕
-            </button>
-
-           
-            <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-5 text-4xl shadow-inner">
-              🎉
-            </div>
-
-            
-            <h3 className="text-2xl font-black text-indigo-950 uppercase mb-2">
-              REGISTRATION SUCCESSFUL! 🎉
-            </h3>
-
-            
-            <p className="text-stone-600 text-sm mb-6 leading-relaxed">
-              Your Golu registration is complete!
-              <span className="font-bold text-indigo-950">
-                {userData?.fullName || "Participant"}
-              </span>
-              ! <br />
-              Now comes the exciting part! 🪆💜 During the Golu period, come
-              back here to upload photos of your Golu & Super Chennai Corner.
-              📸✨
-            </p>
-
-           
-            <button
-              onClick={() => setShowRegSuccessModal(false)}
-              className="w-full py-3.5 bg-[#312c85] hover:bg-[#221f58] text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all text-sm uppercase tracking-wider"
-            >
-              Upload Golu Photos Now
-            </button>
-          
-          </div>
-        </div>
-      )} */}
-
-      {/* 2. PHOTO SUBMISSION FORM DONT REMOVE  */}
-      {/* {currentStep === "SUBMIT" && (
+      {/* 2. PHOTO SUBMISSION FORM */}
+      {currentStep === "SUBMIT" && (
         <div className="max-w-2xl mx-auto px-4">
           <div className="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm">
             <h2 className="text-2xl font-bold text-stone-900 mb-1">
@@ -359,7 +245,7 @@ const GoluContestBlockSection = ({
             </form>
           </div>
         </div>
-      )} */}
+      )}
 
       {/* 3. SUCCESS / CONFIRMATION PAGE */}
       {currentStep === "SUCCESS" && (
@@ -1350,7 +1236,6 @@ export default function GoluContestMain() {
   const [aboutGolu, setAboutGolu] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const [showRegSuccessModal, setShowRegSuccessModal] = useState(true);
 
   const CONTEST_SETTINGS = {
     goluMinImages: 2,
@@ -1554,9 +1439,8 @@ export default function GoluContestMain() {
           id: registeredUser.id || registeredUser._id,
         }));
       }
-     
+
       setCurrentStep("SUBMIT");
-      setShowRegSuccessModal(true);
     } catch (err) {
       setErrorMessage(err.message);
     } finally {
@@ -1716,7 +1600,6 @@ export default function GoluContestMain() {
     setSuperChennaiImages([]);
     setAboutGolu("");
     setErrorMessage("");
-    setShowRegSuccessModal(false);
   };
 
   if (loadingContent) {
@@ -1752,8 +1635,6 @@ export default function GoluContestMain() {
     setAboutGolu,
     loading,
     errorMessage,
-    showRegSuccessModal,
-    setShowRegSuccessModal,
     handleSendOtp,
     handleVerifyOtp,
     handleRegisterUser,

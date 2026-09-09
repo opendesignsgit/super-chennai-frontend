@@ -353,6 +353,7 @@
 }
 
 /* golupage-css */
+/* golupage-css */
 
 #poppinsfamilyybody p {
   font-family: "Poppins" !important;
@@ -472,6 +473,113 @@
 #poppinsfamilyybody input {
   font-family: "Poppins" !important;
 }
+
+.goluufirstsectionmainn {
+  position: relative;
+}
+
+/* .goluufirstsectionmainn::before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/golu/golu-gif.gif");
+  width: 350px;
+  height: 420px;
+  top: 0;
+  left: -312px;
+  background-size: cover;
+} */
+
+/* marqueee-section */
+
+/* Container section styling */
+.golupaggggeee .marquee-section {
+  padding: 15px 0;
+  overflow: hidden;
+  background: #fff;
+  margin-top: 15px;
+  border-top: 1px solid #8f368654;
+  border-bottom: 1px solid #8f368654;
+}
+
+/* Flex wrapper for continuous animation */
+.golupaggggeee .marquee-container {
+  display: flex;
+  width: max-content;
+  animation: goluScrollMarquee 25s linear infinite;
+}
+
+/* Pause on hover */
+.golupaggggeee .marquee-container:hover {
+  animation-play-state: paused;
+}
+
+/* Individual content loop block */
+.golupaggggeee .marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-right: 24px;
+}
+
+/* Marquee Item Structure */
+.golupaggggeee .marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Gold Text Styling */
+.golupaggggeee .marquee-text {
+  color: #4b1f8a;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+/* Gold Icon Styling */
+.golupaggggeee .marquee-icon {
+  font-size: 1.4rem;
+  filter: sepia(1) saturate(5) hue-rotate(5deg) brightness(1.2);
+  display: flex;
+  align-items: center;
+}
+
+/* Separator Dot */
+.golupaggggeee .marquee-dot {
+  color: #8f3686;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.golupaggggeee .marquee-item img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Continuous Infinite Scroll Animation */
+@keyframes goluScrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.golugifiageee {
+  width: 240px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* marqueee-section */
 
 @media (max-width: 800px) {
   .paragaraphcolosection {
@@ -612,6 +720,12 @@
     flex-shrink: 0;
     width: 70%;
   } */
+
+  .readytocreatesection img {
+    height: auto;
+    width: 73px;
+    margin: 10px 0;
+  }
 }
 
 /* golupage-css */

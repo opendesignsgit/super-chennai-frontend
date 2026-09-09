@@ -387,6 +387,9 @@ import ArattaiArunJainExcell from "./Pages/Activities/ArattaiJainRam/ArattaiArun
 import WhatsUpChennaiDetailPage from "./Pages/WhatupChennai/whatupChennaiDetail";
 import GoluContestMain from "./Pages/Activities/GoluContest/GoluContestMainpage";
 import GoluIndexPage from "./Pages/Activities/GoluContest/GolupageIndex";
+import GoluUsersList from "./Pages/Activities/GoluContest/GoluParticipantsList";
+
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -792,6 +795,9 @@ function App() {
         <Route path="/GoluContestMain" element={<GoluContestMain />} />
 
         <Route path="/golupage" element={<GoluIndexPage />} />
+        <Route path="/api/v1/register/participants/dmxiTr6puQ4eRgDCOScPaJ/node-id=0-1&t=I6L1vNZGDHYERUIQHXY-0" element={<GoluUsersList />} />
+
+        
 
         <Route
           path="/whats-up-chennai/:slug"

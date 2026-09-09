@@ -1,12 +1,9 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { API_BASE_URL } from "../../../../config";
 import AuthFlow from "./AuthFlow";
 import { Link, useParams } from "react-router-dom";
 import AutoShrinkText from "../../../Components/Text/AutoShrinkText";
-import React from "react";
-import GoluBannerFestiveOverlay from "./BannerAnimation";
-import { motion } from "framer-motion";
 
 // ==========================================
 // GOLU CONTEST BLOCK SECTION
@@ -47,20 +44,17 @@ const GoluContestBlockSection = ({
     <div className="w-full my-8">
       {/* 0. LANDING START STATE */}
       {currentStep === "LANDING" && (
-        <section
-          className="max-w-7xl mx-auto my-8 p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100 font-sans bg-purple-50/50 mt-[50px]"
-          id="golucontest"
-        >
+        <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100 font-sans bg-purple-50/50 mt-[50px]">
           <div class="flex items-center justify-center gap-4 mb-8">
             <span class="h-[2px] w-12 md:w-20 bg-pink-500"></span>
-            <h2 class="text-xl md:text-3xl font-bold text-center uppercase bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+            <h2 class="text-xl md:text-3xl font-bold text-indigo-950 text-center uppercase">
               Super Chennai Golu Contest
             </h2>
             <span class="h-[2px] w-12 md:w-20 bg-pink-500"></span>
           </div>
           <div className="max-w-2xl mx-auto px-4 text-center formflexgolou dddd">
             <div className="rounded-3xl p-10 border border-stone-200 shadow-sm space-y-6 golunewform bg-white">
-              <h2 className="text-xl md:text-2xl font-black uppercase font-bold headigggggfont bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+              <h2 className="text-xl md:text-2xl font-black text-indigo-950 uppercase font-bold headigggggfont">
                 Super Chennai <br /> Golu Contest
               </h2>
               <p className="text-stone-600 text-sm">
@@ -162,7 +156,7 @@ const GoluContestBlockSection = ({
               }}
               className="w-full py-4 px-6 bg-gradient-to-r from-[#312c85] to-[#4338ca] hover:from-[#25216b] hover:to-[#3730a3] text-white font-bold rounded-2xl shadow-lg shadow-indigo-950/20 hover:shadow-xl hover:shadow-indigo-950/30 transform hover:-translate-y-0.5 transition-all duration-200 text-sm uppercase tracking-wider flex items-center justify-center gap-2 cursor-pointer"
             >
-              <span>Back to Home</span>
+              <span>Okay</span>
               <span className="text-lg">→</span>
             </button>
           </div>
@@ -426,7 +420,7 @@ const GoluFirstSectionBlockSection = ({ blockFields }) => {
           >
             <div className="lg:col-span-4 space-y-4">
               <div>
-                <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight uppercase bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+                <h1 className="text-3xl md:text-4xl font-black text-indigo-950 tracking-tight leading-tight uppercase">
                   {item?.title?.primary}
                 </h1>
                 <h1 className="text-3xl md:text-4xl font-black text-pink-600 tracking-tight leading-tight uppercase">
@@ -444,15 +438,8 @@ const GoluFirstSectionBlockSection = ({ blockFields }) => {
               {item?.cta?.label && item?.cta?.url && (
                 <div className="pt-2">
                   <a
-                    href="#golucontest"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document.getElementById("golucontest")?.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                      });
-                    }}
-                    className="inline-flex items-center justify-center gap-3 bg-[#312c85] hover:bg-indigo-950 text-white font-black text-xs px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                    href={item.cta.url}
+                    className="inline-flex items-center justify-center gap-3 bg-indigo-900 hover:bg-indigo-950 text-white font-black text-xs px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                   >
                     <span>{item.cta.label}</span>
                     {item.cta.showIcon && (
@@ -482,7 +469,7 @@ const GoluFirstSectionBlockSection = ({ blockFields }) => {
             </div>
 
             <div className="lg:col-span-4 w-full h-[280px] md:h-[340px] bg-gray-100 rounded-2xl border border-gray-200 flex flex-col items-center justify-center p-0 text-gray-400 relative overflow-hidden">
-              {/* {mediaUrl ? (
+              {mediaUrl ? (
                 <img
                   src={mediaUrl}
                   alt={item?.media?.altText || "Golu image"}
@@ -495,21 +482,7 @@ const GoluFirstSectionBlockSection = ({ blockFields }) => {
                     {item?.media?.placeholderText || "Add Image"}
                   </span>
                 </>
-              )} */}
-
-              {/* <img
-                className="golugifiageee"
-                src="/images/golu/golu-gif.gif"
-                alt=""
-              /> */}
-
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                src="/images/golu/golu-gif.mp4"
-              ></video>
+              )}
             </div>
 
             <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
@@ -586,7 +559,7 @@ const GoluWhyCornerBlockSection = ({ blockFields }) => {
             <img className="w-14" src="/images/golu/golu-second.png" alt="" />
           )}
         </span>
-        <h2 className="text-xl md:text-2xl font-black font-bold uppercase text-center bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+        <h2 className="text-xl md:text-2xl font-black text-indigo-950 font-bold uppercase text-center">
           {headerTitle}
         </h2>
         <span className="text-pink-500 text-lg">
@@ -621,7 +594,7 @@ const GoluWhyCornerBlockSection = ({ blockFields }) => {
         </div>
 
         <div className="lg:col-span-7 space-y-5 heighgolli">
-          {/* {features.map((feature, index) => {
+          {features.map((feature, index) => {
             const iconUrl = getMediaUrl(feature.icon);
 
             return (
@@ -669,68 +642,6 @@ const GoluWhyCornerBlockSection = ({ blockFields }) => {
                 )}
               </div>
             );
-          })} */}
-          {features.map((feature, index) => {
-            const iconUrl = getMediaUrl(feature.icon);
-
-            return (
-              <motion.div
-                key={feature.id || index}
-                className="group parafirstsectionn"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.15,
-                  ease: "easeOut",
-                }}
-              >
-                <div className="flex items-start space-x-4 gap-2 golumaincon">
-                  <div
-                    className={`w-14 h-14 rounded-full ${
-                      feature.bgColor || "bg-pink-100 text-pink-600"
-                    } flex items-center justify-center shrink-0 shadow-sm overflow-hidden`}
-                  >
-                    {iconUrl ? (
-                      <img
-                        src={iconUrl}
-                        alt="icon"
-                        className="w-14 h-14 object-cover"
-                      />
-                    ) : (
-                      <span className="text-lg font-bold">
-                        {feature.iconText || "🌟"}
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="mr-0">
-                    <span
-                      className={`text-lg font-black ${
-                        feature.numColor || "text-pink-600"
-                      } shrink-0 numberfontt`}
-                    >
-                      {feature.id}
-                    </span>
-                  </div>
-
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-[#000] tracking-tight">
-                      {feature.title}
-                    </h3>
-
-                    <p className="text-xs text-gray-600 leading-relaxed mt-0.5 paragolorr">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-
-                {index < features.length - 1 && (
-                  <div className="border-b border-gray-100 mt-4 ml-14"></div>
-                )}
-              </motion.div>
-            );
           })}
         </div>
       </div>
@@ -767,14 +678,14 @@ const GoluCreateBlockSection = ({ blockFields }) => {
     <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans">
       <div className="flex items-center justify-center space-x-4 mb-10">
         <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
-        <h2 className="text-xl md:text-2xl font-black font-bold uppercase text-center bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+        <h2 className="text-xl md:text-2xl font-black text-indigo-950 font-bold uppercase text-center">
           {headerTitle}
         </h2>
         <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 items-start relative flowwsectiongloww">
-        {/* {items.map((item, index) => {
+        {items.map((item, index) => {
           const iconUrl = getMediaUrl(item.icon);
 
           return (
@@ -821,71 +732,6 @@ const GoluCreateBlockSection = ({ blockFields }) => {
                 </div>
               )}
             </div>
-          );
-        })} */}
-
-        {items.map((item, index) => {
-          const iconUrl = getMediaUrl(item.icon);
-
-          return (
-            <motion.div
-              key={item.id || index}
-              className="flex flex-col items-center text-center relative group firstflowwsectiongloww"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.2,
-                ease: "easeOut",
-              }}
-            >
-              <div className="flex items-center gap-3 mb-2">
-                <div
-                  className={`w-18 h-18 rounded-full ${
-                    item.circleBorder || "border-indigo-300 bg-indigo-50/20"
-                  } flex items-center justify-center shadow-sm shrink-0 overflow-hidden`}
-                >
-                  {iconUrl ? (
-                    <img
-                      src={iconUrl}
-                      alt={item.title || "Create icon"}
-                      className="w-18 h-18 object-cover"
-                    />
-                  ) : (
-                    <span className="text-xl">⭐</span>
-                  )}
-                </div>
-
-                <div className="text-left textgolulefttt">
-                  <span
-                    className={`text-xl font-black ${
-                      item.color || "text-indigo-900"
-                    } block leading-none`}
-                  >
-                    {item.id}
-                  </span>
-
-                  <h3
-                    className={`text-xs font-black ${
-                      item.color || "text-indigo-900"
-                    } uppercase font-bold mt-0.5`}
-                  >
-                    {item.title}
-                  </h3>
-                </div>
-              </div>
-
-              <p className="text-xs text-[#000] leading-relaxed max-w-[150px] text-left withautomaxgolu">
-                {item.description}
-              </p>
-
-              {index < items.length - 1 && (
-                <div className="md:block absolute -right-3 top-6 text-purple-900 opacity-60 aroooewwglow">
-                  →
-                </div>
-              )}
-            </motion.div>
           );
         })}
       </div>
@@ -999,7 +845,7 @@ const GoluJudgingBlockSection = ({ blockFields }) => {
       {/* Header Section */}
       <div className="flex items-center justify-center gap-4 mb-8">
         <span className="h-[2px] w-12 md:w-20 bg-pink-500"></span>
-        <h2 className="text-xl md:text-3xl font-bold text-center uppercase bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+        <h2 className="text-xl md:text-3xl font-bold text-indigo-950 text-center uppercase">
           {headerTitle}
         </h2>
         <span className="h-[2px] w-12 md:w-20 bg-pink-500"></span>
@@ -1044,7 +890,7 @@ const GoluJudgingBlockSection = ({ blockFields }) => {
                       )}
                     </div>
                     <div>
-                      <h3 className="text-xl md:text-2xl font-black uppercase font-bold headigggggfont bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+                      <h3 className="text-xl md:text-2xl font-black text-indigo-950 uppercase font-bold headigggggfont">
                         {stage.title}
                       </h3>
                       {stage.subtitle && (
@@ -1107,8 +953,8 @@ const GoluCtaBannerBlockSection = ({ blockFields }) => {
   const flowerImgUrl = getMediaUrl(blockFields?.flowerImage);
 
   return (
-    <section className="max-w-7xl mx-auto my-8 p-6 md:p-8 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans readytocreatesection">
-      {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-[10%] px-4 md:px-12">
+    <section className="max-w-7xl mx-auto my-8 p-6 md:p-8 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-[10%] px-4 md:px-12">
         <div className="text-pink-400 opacity-80">
           {flowerImgUrl ? (
             <img src={flowerImgUrl} alt="flower decoration" className="" />
@@ -1118,7 +964,7 @@ const GoluCtaBannerBlockSection = ({ blockFields }) => {
         </div>
 
         <div className="flex flex-col items-center text-center space-y-4">
-          <h2 className="text-xl md:text-2xl font-black uppercase font-bold headigggggfont bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+          <h2 className="text-xl md:text-2xl font-black text-indigo-950 uppercase font-bold headigggggfont">
             {title}
           </h2>
 
@@ -1155,79 +1001,6 @@ const GoluCtaBannerBlockSection = ({ blockFields }) => {
             <img src="/images/golu/flower-image.png" alt="flower decoration" />
           )}
         </div>
-      </div> */}
-
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-[10%] px-4 md:px-12">
-        {/* LEFT IMAGE */}
-        <motion.div
-          className="text-pink-400 opacity-80"
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 0.8, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          {flowerImgUrl ? (
-            <img src={flowerImgUrl} alt="flower decoration" />
-          ) : (
-            <img src="/images/golu/flower-image.png" alt="flower decoration" />
-          )}
-        </motion.div>
-
-        {/* CENTER CONTENT */}
-        <div className="flex flex-col items-center text-center space-y-4">
-          <h2 className="text-xl md:text-2xl font-black uppercase font-bold headigggggfont bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
-            {title}
-          </h2>
-
-          <a
-            // href={buttonUrl}
-
-            href="#golucontest"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById("golucontest")?.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }}
-            className="cursor-pointer flex items-center justify-center gap-3 bg-pink-600 hover:bg-pink-700 text-white font-black text-sm px-8 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-          >
-            <span>{buttonLabel}</span>
-
-            <span className="bg-white text-pink-600 rounded-full p-1 flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={3}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </span>
-          </a>
-        </div>
-
-        {/* RIGHT IMAGE */}
-        <motion.div
-          className="text-pink-400 opacity-80"
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 0.8, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          {flowerImgUrl ? (
-            <img src={flowerImgUrl} alt="flower decoration" />
-          ) : (
-            <img src="/images/golu/flower-image.png" alt="flower decoration" />
-          )}
-        </motion.div>
       </div>
     </section>
   );
@@ -1289,15 +1062,7 @@ const GoluHeroBannerBlockSection = ({ blockFields }) => {
         </p>
 
         <a
-          // href={buttonUrl}
-          href="#golucontest"
-          onClick={(e) => {
-            e.preventDefault();
-            document.getElementById("golucontest")?.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }}
+          href={buttonUrl}
           className="cursor-pointer flex items-center justify-center gap-3 bg-amber-400 hover:bg-amber-300 text-indigo-950 font-black text-sm px-8 py-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
         >
           <span>{buttonLabel}</span>
@@ -1354,7 +1119,7 @@ const GoluHowItWorksBlockSection = ({ blockFields }) => {
     <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans">
       <div className="flex items-center justify-center space-x-4 mb-10">
         <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
-        <h2 className="text-xl md:text-2xl font-black font-bold uppercase text-center bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+        <h2 className="text-xl md:text-2xl font-black text-indigo-950 font-bold uppercase text-center">
           {headerTitle}
         </h2>
         <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
@@ -1582,7 +1347,7 @@ export default function GoluContestMain() {
   const [aboutGolu, setAboutGolu] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-  const [showRegSuccessModal, setShowRegSuccessModal] = useState(false);
+  const [showRegSuccessModal, setShowRegSuccessModal] = useState(true);
 
   const CONTEST_SETTINGS = {
     goluMinImages: 2,
@@ -1996,14 +1761,6 @@ export default function GoluContestMain() {
     startAuthFlow,
   };
 
-  const items = [
-    { text: "CREATIVITY", icon: "/images/golu/Diya-icons.png" },
-    { text: "INNOVATION ", icon: "/images/golu/veena-Icon.png" },
-    { text: "TRADITION", icon: "/images/golu/Lotus.png" },
-    { text: "MODERN FUTURE", icon: "/images/golu/Kolam.png" },
-    { text: "SUPERCHENNAI CORNER", icon: "/images/golu/elephant.png" },
-  ];
-
   return (
     // <div className="min-h-screen bg-[#FDFBF7] text-stone-800 font-sans antialiased">
 
@@ -2033,38 +1790,26 @@ export default function GoluContestMain() {
 
           <div className="accodoamationBannerContainer">
             <div className="accodoamationBannerText ">
+              {/* <h3>{pageData.title}</h3> */}
               <div className="breadCrum mb-4">
-                <a href="#"></a>{" "}
+                <a href="#">{/* <Link to="/blog">Golu</Link> */}</a>{" "}
               </div>
+              {/* <AutoShrinkText
+                text={pageData.title}
+                baseSize={80}
+                minSize={40}
+                maxChars={40}
+                className="accodoamationBannerText"
+                width="100%"
+                maxLines={2}
+              /> */}
             </div>
           </div>
-          <GoluBannerFestiveOverlay />
         </section>
       )}
 
       <main className="golupaggggeee" id="poppinsfamilyybody">
         <div className="">
-          <div className="marquee-section">
-            <div className="marquee-container">
-              {[...Array(2)].map((_, i) => (
-                <div key={i} className="marquee-content">
-                  {items.map((item, index) => (
-                    <React.Fragment key={index}>
-                      <div className="marquee-item">
-                        <img
-                          src={item.icon}
-                          alt={item.text}
-                          className="marquee-icon-img"
-                        />
-                        <span className="marquee-text">{item.text}</span>
-                      </div>
-                      <span className="marquee-dot">•</span>
-                    </React.Fragment>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
           {pageData?.content &&
             parseLexical(pageData.content, contestStateProps)}
 

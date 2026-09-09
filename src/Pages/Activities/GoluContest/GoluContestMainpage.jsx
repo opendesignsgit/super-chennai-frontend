@@ -137,7 +137,7 @@ const GoluContestBlockSection = ({
             {/* User Greeting & Content */}
             <div className="space-y-3 mb-8">
               <p className="text-slate-700 font-semibold text-base">
-                Welcome aboard,{" "}
+                Welcome ,{" "}
                 <span className="text-pink-600 font-bold">
                   {userData?.fullName || "Participant"}
                 </span>
@@ -401,7 +401,7 @@ const GoluFirstSectionBlockSection = ({ blockFields }) => {
   const firstSection = blockFields?.firstSection || [];
 
   return (
-    <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans goluufirstsectionmainn">
+    <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-purple-50/50 border-purple-100 rounded-3xl border  shadow-sm font-sans goluufirstsectionmainn">
       {firstSection.map((item, index) => {
         const rawUrl =
           typeof item?.media?.src === "object" &&
@@ -1360,14 +1360,14 @@ const GoluHowItWorksBlockSection = ({ blockFields }) => {
         <span className="h-[2px] w-12 bg-pink-500 rounded-full"></span>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 items-start relative">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 items-start relative flowwsectiongloww">
         {steps.map((step, index) => {
           const iconUrl = getMediaUrl(step.icon);
 
           return (
             <div
               key={step.id || index}
-              className="flex flex-col items-center text-center relative group"
+              className="flex flex-col items-center text-center relative group firstflowwsectiongloww"
             >
               <div className="flex items-center gap-3 mb-2">
                 <div
@@ -1398,12 +1398,12 @@ const GoluHowItWorksBlockSection = ({ blockFields }) => {
                 </div>
               </div>
 
-              <p className="text-xs text-[#000] leading-relaxed max-w-[150px] text-left">
+              <p className="text-xs text-[#000] leading-relaxed max-w-[150px] text-left withautomaxgolu">
                 {step.description}
               </p>
 
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute -right-3 top-6 text-purple-900 opacity-60">
+                <div className="hidden md:block absolute -right-3 top-6 text-purple-900 opacity-60 aroooewwglou">
                   →
                 </div>
               )}
@@ -2019,7 +2019,17 @@ export default function GoluContestMain() {
       )}
 
       {desktopImgUrl && (
-        <section className="accaodomationBannerSection golummainpagee relative overflow-hidden cursor-pointer">
+        <section
+          className="accaodomationBannerSection golummainpagee relative overflow-hidden cursor-pointer"
+          //  href="#golucontest"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("golucontest")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
           <img
             className="hidden sm:block w-full"
             src={desktopImgUrl}

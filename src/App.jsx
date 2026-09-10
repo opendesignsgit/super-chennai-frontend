@@ -792,7 +792,7 @@ function App() {
           element={<ArattaiArunJainExcell />}
         />
 
-        <Route path="/GoluContestMain" element={<GoluContestMain />} />
+        <Route path="/contest/navaratri-golu" element={<GoluContestMain />} />
 
         <Route path="/golupage" element={<GoluIndexPage />} />
         <Route path="/api/v1/register/participants/dmxiTr6puQ4eRgDCOScPaJ/node-id=0-1&t=I6L1vNZGDHYERUIQHXY-0" element={<GoluUsersList />} />

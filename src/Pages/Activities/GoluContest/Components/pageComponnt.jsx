@@ -496,12 +496,12 @@ export const GoluFirstSectionBlockSection = ({ blockFields }) => {
           >
             <div className="lg:col-span-4 space-y-4">
               <div>
-                <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight uppercase bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+                <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight uppercase bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
                   {item?.title?.primary}
-                </h1>
-                <h1 className="text-3xl md:text-4xl font-black text-pink-600 tracking-tight leading-tight uppercase">
+                </h2>
+                <h2 className="text-3xl md:text-4xl font-black text-pink-600 tracking-tight leading-tight uppercase">
                   {item?.title?.highlight}
-                </h1>
+                </h2>
                 <h3 className="text-xs font-bold text-indigo-950 uppercase mt-2">
                   {item?.title?.subtitle}
                 </h3>
@@ -582,7 +582,7 @@ export const GoluFirstSectionBlockSection = ({ blockFields }) => {
               ></video>
             </div>
 
-            <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
+            {/* <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
               {item?.features?.map((feature, featureIdx) => (
                 <div
                   key={feature.id || featureIdx}
@@ -604,6 +604,34 @@ export const GoluFirstSectionBlockSection = ({ blockFields }) => {
                         )
                       : feature.text}
                   </p>
+                </div>
+              ))}
+            </div> */}
+            <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
+              {item?.features?.map((feature, featureIdx) => (
+                <div
+                  key={feature.id || featureIdx}
+                  className="flex items-start space-x-4 parafirstsectionn"
+                >
+                  <div className="text-xs text-gray-700 leading-relaxed pt-1 w-full">
+                    {feature.segments && feature.segments.length > 0
+                      ? feature.segments.map((seg, segIdx) => (
+                          <div
+                            key={segIdx}
+                            className={`inline-block ${
+                              seg.highlight
+                                ? "highlightedtextsectionpara font-semibold text-pink-600"
+                                : ""
+                            }`}
+                          >
+                            {/* Rich Text Object-ஆக இருந்தால் parseLexical மூலம் Render செய்யவும் */}
+                            {typeof seg.text === "object" && seg.text !== null
+                              ? parseLexical(seg.text)
+                              : seg.text}
+                          </div>
+                        ))
+                      : feature.text}
+                  </div>
                 </div>
               ))}
             </div>

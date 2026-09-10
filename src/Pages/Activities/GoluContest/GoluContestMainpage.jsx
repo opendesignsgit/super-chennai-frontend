@@ -513,7 +513,6 @@ const handleSendOtp = async (e) => {
   ];
 
   return (
-
     <>
       {pageData && (
         <Helmet>
@@ -522,9 +521,12 @@ const handleSendOtp = async (e) => {
             name="description"
             content={pageData.meta?.description || pageData.title}
           />
+          <link
+            rel="canonical"
+            href={`${typeof window !== "undefined" ? window.location.origin : ""}/contest/navaratri-golu`}
+          />
         </Helmet>
       )}
-      
 
       {desktopImgUrl && (
         <section
@@ -563,6 +565,7 @@ const handleSendOtp = async (e) => {
       <main className="golupaggggeee" id="poppinsfamilyybody">
         <div className="">
           <div className="marquee-section">
+            <h1 className="hidden">navratri golu</h1>
             <div className="marquee-container">
               {[...Array(2)].map((_, i) => (
                 <div key={i} className="marquee-content">
@@ -595,6 +598,5 @@ const handleSendOtp = async (e) => {
         </div>
       </main>
     </>
-    
   );
 }

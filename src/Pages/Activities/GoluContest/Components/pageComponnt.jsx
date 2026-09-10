@@ -75,12 +75,12 @@ export const GoluContestBlockSection = ({
                 >
                   Register & Participate
                 </button>
-                <button
+                {/* <button
                   onClick={() => startAuthFlow("login")}
                   className="cursor-pointer w-full py-3.5 bg-stone-100 hover:bg-stone-200 text-stone-800 font-semibold rounded-xl transition-colors text-sm border border-stone-300"
                 >
                   Already Registered? Login via OTP
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

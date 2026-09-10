@@ -579,6 +579,19 @@
   object-fit: contain;
 }
 
+.golu-form {
+      background-image: url(/images/golu/form-golu-bg1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+}
+.golu-form1 {
+      background-image: url(/images/golu/form-golu-bg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+}
+
 /* marqueee-section */
 
 @media (max-width: 800px) {

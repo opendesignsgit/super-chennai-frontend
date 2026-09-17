@@ -226,6 +226,16 @@ export default function NeighbourhoodDetail() {
       </button>
     );
   }
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   prevArrow: <PrevArrow />,
+  //   nextArrow: <NextArrow />,
+  // };
+
   const settings = {
     dots: false,
     infinite: true,
@@ -234,11 +244,43 @@ export default function NeighbourhoodDetail() {
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
+
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+
   const currentLocationName = location?.label || "this neighbourhood";
   return (
     <div id="poppinsssFamily">
-      <div className="relative min-h-[600px] flex flex-col justify-center pb-10 px-8 overflow-hidden bg-[#0a051e]">
+      <div className="relative min-h-[600px] flex flex-col justify-center pb-10 px-8 overflow-hidden bg-[#0a051e] detailpageneighbourdetailsection">
         <div className="absolute inset-0 w-full h-full pointer-events-none">
           <img
             src={
@@ -252,14 +294,13 @@ export default function NeighbourhoodDetail() {
           <div
             className="absolute inset-0"
             style={{
-              background:
-                "linear-gradient(to bottom, rgba(10,5,30,0.5) 0%, rgba(10,5,30,0.75) 60%, rgba(10,5,30,0.92) 100%)",
+              background: "#000000ab",
             }}
           />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0">
+        <div className="relative z-10 container max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0 paddddzeroneigh">
           <nav className="text-gray-400 neighbourtwoparagraph items-center gap-1 neighbourhoodbrudcrum">
-            <div className="flex gap-2 mb-5">
+            <div className="flex gap-2 mb-5 sm:flex-wrap ">
               <span
                 className="hover:text-white cursor-pointer transition-colors"
                 onClick={() => navigate("/")}
@@ -347,8 +388,8 @@ export default function NeighbourhoodDetail() {
         </div>
       </div>
       <div></div>
-      <div className="max-w-7xl mx-auto px-8 py-10">
-        <div className="flex gap-10">
+      <div className="max-w-7xl container mx-auto px-8 py-10">
+        <div className="flex gap-10 flexdirectioncolumn">
           <div className="flex-1 h-[300px] rounded-xl overflow-hidden border border-gray-200 detailsecondneightbourhood">
             <iframe
               title="Location Detail Map Side"
@@ -410,59 +451,7 @@ export default function NeighbourhoodDetail() {
           )}
         </div>
       </div>
-      <div className="space-y-4 mobilesection accorddionmobileview">
-        {categories.map((cat, idx) => (
-          <div
-            key={cat}
-            className={`rounded-lg overflow-hidden boderrrrr ${
-              openIndex === idx ? "boderrrrraddedcolor" : ""
-            }`}
-          >
-            <div
-              className="flex justify-between items-center cursor-pointer fontxonatjdjsdd"
-              onClick={() => toggleAccordion(idx)}
-            >
-              <span className="font-medium fontsizeaccordion">{cat}</span>
-              <span
-                className={`transition-transform duration-300 arrowfontsup ${
-                  openIndex === idx ? "rotate-45" : "rotate-0"
-                }`}
-              >
-                +
-              </span>
-            </div>
 
-            <div
-              className={`transition-all duration-500 ease-in-out overflow-hidden cardssss ${
-                openIndex === idx ? "max-h-[500px] p-4" : "max-h-0 p-0"
-              }`}
-            >
-              {grouped[cat]?.[0]?.FeaturedImage?.url && (
-                <div className="space-y-3">
-                  <img
-                    src={
-                      API_BASE_URL_API_TEST_DEV +
-                      grouped[cat][0].FeaturedImage.url
-                    }
-                    alt={grouped[cat][0]?.name}
-                    className="w-full h-40 object-cover rounded-md"
-                  />
-                  <div className="flex justify-center buttonsecc">
-                    <button
-                      onClick={() =>
-                        navigate(`/neighbourhood/${locationId}/${cat}`)
-                      }
-                      className="w-[100px] bg-[#995098] text-white py-1 rounded-[50px]"
-                    >
-                      Click Here
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
       <div className="container max-w-7xl mx-auto px-4 py-10 pb-[0]">
         <div className="text-center mb-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-1 neighbourtwosecondheading">
@@ -472,11 +461,68 @@ export default function NeighbourhoodDetail() {
             Everything you need, right around the corner.
           </p>
         </div>
-        <CategoriesSection
-          locationId={locationId}
-          data={data}
-          location={location}
-        />
+
+        <div className="space-y-4 mobilesection accorddionmobileview">
+          {categories.map((cat, idx) => (
+            <div
+              key={cat}
+              className={`rounded-lg overflow-hidden boderrrrr ${
+                openIndex === idx ? "boderrrrraddedcolor" : ""
+              }`}
+            >
+              <div
+                className="flex justify-between items-center cursor-pointer fontxonatjdjsdd"
+                onClick={() => toggleAccordion(idx)}
+              >
+                <span className="font-medium fontsizeaccordion">{cat}</span>
+                <span
+                  className={`transition-transform duration-300 arrowfontsup ${
+                    openIndex === idx ? "rotate-45" : "rotate-0"
+                  }`}
+                >
+                  +
+                </span>
+              </div>
+
+              <div
+                className={`transition-all duration-500 ease-in-out overflow-hidden cardssss ${
+                  openIndex === idx ? "max-h-[500px] p-4" : "max-h-0 p-0"
+                }`}
+              >
+                {grouped[cat]?.[0]?.FeaturedImage?.url && (
+                  <div className="space-y-3">
+                    <img
+                      src={
+                        API_BASE_URL_API_TEST_DEV +
+                        grouped[cat][0].FeaturedImage.url
+                      }
+                      alt={grouped[cat][0]?.name}
+                      className="w-full h-40 object-cover rounded-md"
+                    />
+                    <div className="flex justify-center buttonsecc">
+                      <button
+                        onClick={() =>
+                          navigate(`/neighbourhood/${locationId}/${cat}`)
+                        }
+                        className="w-[100px] bg-[#995098] text-white py-1 rounded-[50px]"
+                      >
+                        Click Here
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="catgeoriesdesktop">
+          <CategoriesSection
+            locationId={locationId}
+            data={data}
+            location={location}
+          />
+        </div>
       </div>
       {location?.quickAccess?.length > 0 && (
         <div className="container max-w-7xl mx-auto px-4 py-10 pt-2">
@@ -522,7 +568,7 @@ export default function NeighbourhoodDetail() {
       {(location?.whyChoose?.length > 0 ||
         location?.lifestyleScores?.length > 0) && (
         <div className="container max-w-7xl mx-auto px-8 pb-10">
-          <div className="flex gap-8 items-start">
+          <div className="flex gap-8 items-start flexdirectioncolumn">
             <div className="sneighflex113">
               <div className="flex-1 neighflex111">
                 <h3 className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
@@ -568,7 +614,7 @@ export default function NeighbourhoodDetail() {
               <p className="mb-4  text-[#000]  neighbourtwoparagraph">
                 Rated based on neighborhood core living convenience factors
               </p>
-              <div className="grid grid-cols-3 gap-x-6 gap-y-4">
+              <div className="grid grid-cols-3 gap-x-6 gap-y-4 gridsectionsectoinss">
                 {location?.lifestyleScores &&
                 location.lifestyleScores.length > 0 ? (
                   location.lifestyleScores.map((ls, i) => (
@@ -591,7 +637,7 @@ export default function NeighbourhoodDetail() {
       )}
       <section className="bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
         <div className="container max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8 gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8 gap-4 flexdirectioncolumn flexstartsection">
             <div>
               <span className="text-[#a44294] !font-semibold mb-3 neighbourtwoparagraph !text-[18px]">
                 Nearby Localities

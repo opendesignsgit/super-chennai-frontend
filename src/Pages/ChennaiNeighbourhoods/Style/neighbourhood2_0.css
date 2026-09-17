@@ -57,7 +57,7 @@
   top: 50%;
   width: 100%;
   background: transparent;
-  z-index: 10000;
+  z-index: 100;
 }
 
 .bannerseeachresulttt {
@@ -266,6 +266,316 @@
 
 @media (max-width: 1600px) and (min-width: 1300px) {
   .neightwonewwmain {
-    top: 65%;
+    top: 54%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .neighbourtwoheaidngssparagraph {
+    font-size: 16px;
+  }
+
+  .neighebbbbbbbsss {
+    width: 25px;
+  }
+
+  .cardssneightwosec {
+    margin-top: 150px;
+  }
+
+  .inputsearchneighborhoodpage {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .bannerseeachresulttt {
+    width: 53%;
+  }
+
+  .heightoftheleftsidesection {
+    max-height: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-right: 15px;
+  }
+
+  .detailpageneighbourdetailsection {
+    min-height: 530px;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1301px) {
+}
+
+@media (max-width: 1300px) and (min-width: 1100px) {
+  .neighbourtwoheaidngssparagraph {
+    font-size: 14px;
+  }
+  .neighebbbbbbbsss {
+    width: 23px;
+  }
+  .neighbourhoodbrudcrum {
+    margin-top: 0px;
+  }
+
+  .alphabetnewwwww {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .detailpageneighbourdetailsection {
+    min-height: 500px;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+  }
+
+  .newneighbourhoodstyleeelodad {
+    padding-bottom: 0;
+  }
+
+  .heightoftheleftsidesection {
+    max-height: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+  .cardssneightwosec {
+    margin-top: 0;
+  }
+
+  .formorefiltersss {
+    position: absolute;
+    bottom: 245px;
+    z-index: 10;
+    left: 95px;
+  }
+
+  .bannerseeachresulttt {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .neighbiurnewcards {
+    display: flex;
+  }
+  .simglecardneighrbourchood {
+    width: 46%;
+  }
+
+  .neighbourhoodcontiner .container {
+    max-width: 700px;
+  }
+  .cardssneightwosec {
+    margin-top: 10px;
+  }
+  .formorefiltersss {
+    position: absolute;
+    bottom: 290px;
+    z-index: 10;
+    left: 45px;
+  }
+
+  .neighbourtwoheaidngssparagraph {
+    font-size: 15px;
+  }
+
+  .bannerseeachresulttt {
+    padding-bottom: 70px;
+  }
+
+  .flexxxnewwsectiondics {
+    flex-wrap: wrap;
+  }
+
+  .neighmainlocationscardleft {
+    left: -20px;
+  }
+  .neighmainlocationscardright {
+    right: -20px;
+  }
+  .flexdirectioncolumn {
+    flex-direction: column;
+  }
+  .flexstartsection {
+    align-items: flex-start;
+  }
+
+  .detailsecondneightbourhoodsecond {
+    width: 100%;
+  }
+  .detailsecondneightbourhood iframe {
+    height: 500px;
+  }
+  .detailsecondneightbourhood {
+    width: 100%;
+  }
+
+  .sneighflex113 {
+    width: 100%;
+  }
+  .neighflex113 {
+    width: 100%;
+  }
+
+  .neighflex113 .grid-cols-3 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* .accorddionmobileview {
+    display: none;
+  } */
+
+  .catgeoriesdesktop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+}
+
+@media (max-width: 600px) {
+  .flexdirectioncolumn {
+    flex-direction: column;
+  }
+  .flexstartsection {
+    align-items: flex-start;
+  }
+
+  .detailsecondneightbourhood {
+    width: 100%;
+  }
+  .detailsecondneightbourhood iframe {
+    height: 300px;
+  }
+  .detailsecondneightbourhoodsecond {
+    width: 100%;
+  }
+  .catgeoriesdesktop {
+    display: none;
+  }
+  .sneighflex113 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .neighflex111 {
+    width: 100%;
+  }
+  .neighflex113 {
+    width: 100%;
+  }
+  .neighflex112 {
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  .gridsectionsectoinss {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sectionsssss {
+    width: max-content;
+    min-width: max-content;
+    max-width: max-content;
+  }
+  .flexxxnewwsectiondics {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+  }
+
+  .bannerrrsearchccc {
+    margin-left: 0;
+    padding-left: 20px;
+    font-size: 15px;
+    padding-right: 30px;
+  }
+
+  .zindexxmoreee {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background: transparent;
+    border: 0;
+    padding-left: 0;
+  }
+
+  .zindexxmoreee .h-6 {
+    display: none;
+  }
+
+  .dropdwonpageeesneighbourhood {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 7px 11px;
+  }
+
+  .paddddzeroneigh {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .inputseachhhssssss {
+    position: absolute;
+    top: 60px;
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    left: 0;
+  }
+
+  .bannerrrsearchccc.cursor-pointer {
+    position: absolute;
+    top: 59.5px;
+    right: 0;
+    z-index: 1000;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .clickheretoexplorebuttons {
+    padding-right: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+
+  .neighmainlocationscardright {
+    right: 0px;
+    top: 40%;
+    width: 35px;
+    height: 35px;
+  }
+
+  .neighmainlocationscardleft {
+    left: 0;
+    top: 40%;
+    width: 35px;
+    height: 35px;
+  }
+
+  .padinnggmobiletop {
+    padding-top: 0;
+    margin-top: -30px;
+    padding-bottom: 20px;
+  }
+  .detailpagelastwebsitebutton {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  .detailpagelastwebsitebutton button {
+    flex-shrink: 0;
   }
 }

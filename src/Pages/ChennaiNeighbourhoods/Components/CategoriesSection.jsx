@@ -200,7 +200,7 @@ export default function CategoriesSection({ locationId, data = [], location }) {
 
   return (
     <div className="flex gap-8 p-6 max-w-7xl mx-auto items-start">
-      <div className="w-60 space-y-2 flex-shrink-0">
+      <div className="w-60 space-y-2 flex-shrink-0 heightoftheleftsidesection">
         {categoriesList.map((cat) => {
           const isActive = activeCategory === cat.category;
           const currentSubCategories = Object.values(

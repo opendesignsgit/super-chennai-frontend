@@ -64,7 +64,7 @@ export default function NeighbourhoodDetail() {
       />
     );
   }
-  console.log("locationcccccccccccccccccccccc",data?.[0]?.locations)
+  console.log("locationcccccccccccccccccccccc", data?.[0]?.locations);
 
   const grouped =
     data?.reduce((acc, item) => {
@@ -187,7 +187,7 @@ export default function NeighbourhoodDetail() {
 
   return (
     <div id="poppinsssFamily">
-      <div className="relative min-h-[600px] flex flex-col justify-center pb-10 px-8 overflow-hidden bg-[#0a051e]">
+      <div className="relative min-h-[600px] flex flex-col justify-center pb-10 px-8 overflow-hidden bg-[#0a051e] detailpageneighbourdetailsection">
         <div className="absolute inset-0 w-full h-full pointer-events-none">
           <img
             src={
@@ -201,15 +201,14 @@ export default function NeighbourhoodDetail() {
           <div
             className="absolute inset-0"
             style={{
-              background:
-                "linear-gradient(to bottom, rgba(10,5,30,0.5) 0%, rgba(10,5,30,0.75) 60%, rgba(10,5,30,0.92) 100%)",
+              background: "#000000ab",
             }}
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0 paddddzeroneigh">
           <nav className="text-gray-400 neighbourtwoparagraph items-center gap-1 neighbourhoodbrudcrum">
-            <div className="flex gap-2 mb-5">
+            <div className="flex gap-2 mb-5 sm:flex-wrap">
               <span
                 className="hover:text-white cursor-pointer transition-colors"
                 onClick={() => navigate("/")}

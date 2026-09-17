@@ -101,12 +101,9 @@ export default function SearchChennai({ onSearch, dataaa }) {
         </div>
 
         <div className="flex gap-2">
-          <div className="flex-1 flex items-center border border-gray-300 rounded-lg px-3 py-3 gap-2 relative">
+          <div className="flex-1 flex items-center border border-gray-300 rounded-lg px-3 py-3 gap-2 relative inputsearchneighborhoodpage">
             <span className="text-gray-400 text-base neighebbbbbbbsss">
-              <img
-                src="/images/icons/location-output-neighbourhood.svg"
-                alt=""
-              />
+              <img src="/images/location-icon.png" alt="" />
             </span>
             <input
               type="text"
@@ -136,13 +133,13 @@ export default function SearchChennai({ onSearch, dataaa }) {
 
           <button
             onClick={handleSearch}
-            className="bg-[#a44294] hover:bg-[#974189] text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors whitespace-nowrap neighbourtwoparagraph cursor-pointer"
+            className="bg-[#a44294] hover:bg-[#974189] text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors whitespace-nowrap neighbourtwoparagraph cursor-pointer mobilesearchbuttonfilter"
           >
             Search
           </button>
         </div>
 
-        <div className="mt-5 flex flex-wrap items-center gap-2">
+        <div className="mt-5 flex flex-wrap items-center gap-2 searchfilterslider">
           <span className="text-xs text-[#000] !font-semibold neighbourtwoparagraph">
             Popular Searches:
           </span>
@@ -156,6 +153,14 @@ export default function SearchChennai({ onSearch, dataaa }) {
             </button>
           ))}
         </div>
+
+        {/* <button
+          className="bg-[#a44294] hover:bg-[#974189] text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors whitespace-nowrap neighbourtwoparagraph cursor-pointer"
+          fdprocessedid="pv8d08"
+          onClick={NewhandleClick}
+        >
+          More Filters
+        </button> */}
       </div>
     </>
   );

@@ -163,7 +163,7 @@ export default function ChennaiNeighbourhood() {
               className="w-full h-full object-cover object-center"
             />
           </div>
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full">
+          <div className="relative z-10 container max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full">
             <div className="text-xs text-white/60 mb-4 neighbourtwoparagraph neighbourhoodbrudcrum">
               <div className="flex gap-2">
                 <a href="/">
@@ -180,7 +180,7 @@ export default function ChennaiNeighbourhood() {
                   <br />
                   <span className="text-[#a44294] ">Neighbourhoods</span>
                 </h1>
-                <p className="text-white/70 text-sm leading-relaxed neighbourtwoheaidngssparagraph">
+                <p className="text-white/70 text-sm leading-relaxed neighbourtwoheaidngssparagraph mainparaganeighfirstpage">
                   Discover the best localities in Chennai. Find schools,
                   hospitals, transport, lifestyle, food, real estate trends and
                   everything you need to know about your neighbourhood.

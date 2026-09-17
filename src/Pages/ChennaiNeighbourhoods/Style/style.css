@@ -978,6 +978,10 @@
 .newsubmenucategofyoption .iconsimagelocation:last-child {
   border-bottom: 0px solid #ffffff3d;
 }
+
+.neighebbbbbbbsss {
+  width: 23px;
+}
 @media (max-width: 1600px) and (min-width: 1301px) {
   .searchhoodfilter {
     max-width: 600px;
@@ -1140,6 +1144,15 @@
   }
   .butoonsearchbutton {
     font-size: 14px;
+  }
+  .neighbiurnewcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .simglecardneighrbourchood {
+    width: 31.5%;
   }
 }
 
@@ -1370,6 +1383,35 @@
   .submainlocationdd input::placeholder {
     /* font-weight: 500; */
     color: #000;
+  }
+
+  .neighbiurnewcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .simglecardneighrbourchood {
+    width: 30%;
+  }
+
+  .searchfilterslider {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    scrollbar-width: none;
+    scrollbar-color: #a44294 #ffe4ef;
+  }
+  .searchfilterslider .neighbourtwoparagraph {
+    flex-shrink: 0;
+  }
+
+  .neighbourhoodbrudcrum {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .neighebbbbbbbsss {
+    width: 25px;
   }
 }
 
@@ -2045,7 +2087,7 @@
 
   .boderrrrr {
     border: 1px solid rgba(0, 0, 0, 0.09);
-    width: 480px;
+    width: 250px;
     margin-bottom: 19px;
   }
 
@@ -2080,10 +2122,14 @@
 
   .accorddionmobileview {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 15px;
     padding-bottom: 60px;
+    column-gap: 30px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .cardlocation {
@@ -2553,11 +2599,57 @@
     width: 22px;
     height: 22px;
   }
+  .searchfilterslider {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    scrollbar-width: none;
+    scrollbar-color: #a44294 #ffe4ef;
+  }
+  .searchfilterslider .neighbourtwoparagraph {
+    flex-shrink: 0;
+  }
+
+  .formorefiltersss {
+    position: absolute;
+    bottom: 270px;
+    z-index: 10;
+    left: 38px;
+  }
 }
 
 @media (max-width: 600px) {
+  .searchfilterslider {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+    scrollbar-width: none;
+    scrollbar-color: #a44294 #ffe4ef;
+  }
+
+  .mainparaganeighfirstpage {
+    height: 100px;
+  }
+  .searchfilterslider .neighbourtwoparagraph {
+    flex-shrink: 0;
+  }
+
+  .inputsearchneighborhoodpage .neighbourtwoparagraph {
+    overflow: hidden !important;
+    font-size: 13px;
+    padding-right: 0;
+  }
+
+  .inputsearchneighborhoodpage {
+    width: 200px;
+    height: 40px;
+  }
   .neighbourhoodcontiner .container {
     max-width: 100%;
+  }
+
+  .cardssneightwosec {
+    margin-top: 0px !important;
   }
 
   .neighbiurnewcards {
@@ -2620,6 +2712,14 @@
     padding-left: 25px;
     line-height: 108%;
     width: 86%;
+  }
+
+  .alphalettermobileee {
+    /* flex-wrap: nowrap;
+    overflow-x: scroll; */
+  }
+  .alphalettermobileee button {
+    flex-shrink: 0;
   }
 
   .neighbourcardnew {
@@ -2770,8 +2870,9 @@
   .leftsidepopup {
     padding-left: 0;
     width: 100%;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 10px;
+    height: auto;
   }
 
   .leftsidescrolll {
@@ -2833,10 +2934,10 @@
   }
 
   .locationname {
-    font-size: 40px;
-    letter-spacing: 2px;
+    font-size: 27px;
+    letter-spacing: 1px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .locationpopupmain {
@@ -2846,8 +2947,13 @@
   .rightsidepopup {
     width: 100%;
     background-position: bottom;
-    padding-top: 40px;
+    padding-top: 25px;
     padding-bottom: 40px;
+    height: auto;
+  }
+
+  .neighsecondsssimageee {
+    height: auto !important;
   }
 
   .popuprightsidecontent {
@@ -2867,12 +2973,15 @@
   .popuprightsidecontent {
     display: flex;
     flex-direction: column;
-    column-gap: 15px;
+    column-gap: 5px;
     margin-left: 15px;
     margin-right: 15px;
     overflow-x: hidden;
     margin: 0;
     padding-right: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
   }
 
   .popuprightsidecontent .butoonsearchbutton {
@@ -2880,6 +2989,7 @@
     box-sizing: border-box;
     height: max-content;
     font-size: 14px;
+    width: max-content;
   }
 
   .popupcloselocation {
@@ -3132,6 +3242,88 @@
     border-radius: 8px;
     padding: 5px 15px;
   }
+
+  .mobilesearchclosebutton {
+    background: #a44294;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    font-family: "Poppins";
+    margin-left: 0;
+    font-size: 16px;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 16px;
+  }
+
+  .neightwonewwmain {
+    top: 30% !important;
+  }
+
+  .mobilesearchbuttonfilter {
+    font-size: 13px !important;
+    padding: 10px 11px;
+    height: max-content;
+    border-radius: 7px;
+  }
+
+  .formorefiltersss {
+    position: absolute;
+    bottom: 270px;
+    z-index: 10;
+    left: 38px;
+  }
+
+  .alphabetnewwwww {
+    margin: 0 30px !important;
+    padding: 25px 30px !important;
+    padding-right: 0 !important;
+  }
+
+  .neighbourtwoheaidngssparagraph {
+    font-size: 15px !important;
+  }
+
+  .neighbourhoodbrudcrum {
+    margin-top: 120px;
+  }
+
+  .cradsssssjddddd {
+    max-width: 100% !important;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .neighbounewchangesectkion {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .neighbounewchangesectkion .maxwidthsectiondivs {
+    width: max-content;
+    min-width: max-content;
+  }
+
+  .neighbourhoodfirstttt {
+    height: max-content !important;
+    margin-top: 25px;
+  }
+  .newigheeeimagez {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.locaalaitytyytysection {
+  background: #a44294;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px !important;
 }
 
 /* .mainlocationdd {

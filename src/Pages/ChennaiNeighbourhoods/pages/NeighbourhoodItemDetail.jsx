@@ -230,14 +230,13 @@ console.log("item?.businessHours?",item.businessHours)
 
         <div  className="absolute inset-0 mix-blend-multiply pointer-events-none" 
           style={{
-            background:
-              "linear-gradient(to bottom, rgba(10,5,30,0.5) 0%, rgba(10,5,30,0.75) 60%, rgba(10,5,30,0.92) 100%)",
+             background: "#000000ab",
           }}
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0">
+        <div className="relative z-10 container max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0 paddddzeroneigh">
           <nav className="text-gray-400 neighbourtwoparagraph items-center gap-1 neighbourhoodbrudcrum">
-            <div className="flex gap-2 mb-5">
+            <div className="flex gap-2 mb-5 sm:flex-wrap flex-wrap">
               <span className="hover:text-white cursor-pointer">Home</span>
               <span>›</span>
               <span
@@ -275,7 +274,7 @@ console.log("item?.businessHours?",item.businessHours)
               {/* {item.description} */}
             </p>
 
-            <div className="flex flex-wrap items-center gap-3 mb-10">
+            <div className="flex flex-wrap items-center gap-3 mb-10 detailpagelastwebsitebutton">
               <button className="flex items-center gap-2 bg-[#a44294] hover:bg-[#4c278a] text-white px-5 py-3 rounded-[10px] font-medium text-sm transition-colors shadow-sm">
                 <MapPin className="w-4 h-4 stroke-[2]" />
                 <a
@@ -327,9 +326,9 @@ console.log("item?.businessHours?",item.businessHours)
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-8 space-y-10 pt-0 mt-[-50px] relative z-[0] pb-0">
-        <div className="w-full bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between px-6 py-4 gap-y-4 md:gap-y-0">
-          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+      <div className="max-w-7xl container mx-auto px-4 py-8 space-y-10 pt-0 mt-[-50px] relative z-[0] pb-0">
+        <div className="w-full bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between px-6 py-4 gap-y-4 md:gap-y-0 neighbounewchangesectkion">
+          <div className="flex items-start gap-3 flex-1 min-w-[180px] maxwidthsectiondivs ">
             <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
               <MapPin className="w-5 h-5 text-[#5d32a8]" />
             </div>
@@ -346,7 +345,7 @@ console.log("item?.businessHours?",item.businessHours)
 
           <div className="hidden md:block h-10 w-[1px] bg-gray-200/80 mx-2" />
 
-          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+          <div className="flex items-start gap-3 flex-1 min-w-[180px] maxwidthsectiondivs">
             <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
               <MapIcon className="w-5 h-5 text-[#5d32a8]" />
             </div>
@@ -365,7 +364,7 @@ console.log("item?.businessHours?",item.businessHours)
 
           <div className="hidden md:block h-10 w-[1px] bg-gray-200/80 mx-2" />
 
-          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+          <div className="flex items-start gap-3 flex-1 min-w-[180px] maxwidthsectiondivs">
             <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
               <Tag className="w-5 h-5 text-[#5d32a8]" />
             </div>
@@ -381,7 +380,7 @@ console.log("item?.businessHours?",item.businessHours)
 
           <div className="hidden md:block h-10 w-[1px] bg-gray-200/80 mx-2" />
 
-          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+          <div className="flex items-start gap-3 flex-1 min-w-[180px] maxwidthsectiondivs">
             <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
               <IndianRupee className="w-5 h-5 text-[#5d32a8]" />
             </div>
@@ -398,7 +397,7 @@ console.log("item?.businessHours?",item.businessHours)
 
           <div className="hidden md:block h-10 w-[1px] bg-gray-200/80 mx-2" />
 
-          <div className="flex items-start gap-3 flex-1 min-w-[180px]">
+          <div className="flex items-start gap-3 flex-1 min-w-[180px] maxwidthsectiondivs">
             <div className="p-2.5 bg-[#f3e9ff] rounded-2xl flex items-center justify-center shrink-0">
               <Clock className="w-5 h-5 text-[#5d32a8]" />
             </div>
@@ -415,7 +414,7 @@ console.log("item?.businessHours?",item.businessHours)
       </div>
 
       <div className="p-4 md:p-8 flex justify-center items-start font-sans">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6  grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="max-w-7xl container mx-auto px-4 sm:px-6  grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* ================= LEFT COLUMN (Width: 7/12) ================= */}
           <div className="lg:col-span-7 bg-white rounded-2xl border border-gray-100 shadow-sm p-6 space-y-8">
             <div>
@@ -505,7 +504,7 @@ console.log("item?.businessHours?",item.businessHours)
                 Timings
               </h2>
 
-              <div className="flex flex-col gap-3 mt-3">
+              <div className="flex flex-row gap-3 mt-3 flex-wrap !sm:flex-col">
                 {item?.businessHours && item.businessHours.length > 0 ? (
                   item.businessHours.map((hours, index) => {
                     const formattedTime =
@@ -516,7 +515,7 @@ console.log("item?.businessHours?",item.businessHours)
                     return (
                       <div
                         key={hours.id || index}
-                        className="inline-flex items-center space-x-4 bg-[#F5F3FF] text-[#a44294] px-4 py-2.5 rounded-full text-xs font-medium w-max"
+                        className="inline-flex items-center space-x-4 bg-[#F5F3FF] text-[#a44294] px-4 py-2.5 rounded-full text-xs font-medium w-max shrink-0"
                       >
                         <div className="flex items-center space-x-1.5 neighbourtwoparagraph">
                           <Clock size={15} />

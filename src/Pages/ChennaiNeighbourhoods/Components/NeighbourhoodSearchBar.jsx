@@ -137,9 +137,9 @@ export default function NeighbourhoodSearchBar({
 
   return (
     <>
-      <div className="flex items-center gap-3 max-w-xl w-full">
+      <div className="flex items-center gap-3 max-w-xl w-full flexxxnewwsectiondics">
         <div className="flex-1 bg-white rounded-full flex items-center px-6 py-2.5 shadow-sm border border-gray-100 neighbourtwoheaidngssparagraph !text-[16px] zindexxmoreee">
-          <div className="flex flex-1 items-center gap-1.5 min-w-[160px]">
+          <div className="flex flex-1 items-center gap-1.5 min-w-[160px] dropdwonpageeesneighbourhood">
             <span className="shrink-0">
               <svg
                 className="w-4 h-4 text-gray-500"

@@ -27,7 +27,7 @@ export default function AreaFilterCards({ data, onChange }) {
 
           return (
             <React.Fragment key={loc.id || loc.value}>
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow group">
+              <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow group simglecardneighrbourchood">
                 <div className="relative h-40 overflow-hidden">
                   <img
                     src={imageUrl}
@@ -37,17 +37,17 @@ export default function AreaFilterCards({ data, onChange }) {
                   />
 
                   <span
-                    className={`absolute top-2 left-2 text-white !text-[10px] neighbourtwoparagraph font-bold px-2 py-0.5 rounded red`}
+                    className={`absolute top-2 left-2 text-white !text-[10px] neighbourtwoparagraph font-bold px-2 py-0.5 rounded red locaalaitytyytysection`}
                   >
                     {loc.locality}
                   </span>
                 </div>
 
                 <div className="p-4 cardssspadddingss">
-                  <div className="flex items-center gap-1 mb-1">
+                  <div className="flex items-center gap-1 mb-1 ">
                     <span className="text-purple-600 text-sm neighebbbbbbbsss">
                       <img
-                        src="/images/icons/rose-location-output-neighbourhood.svg"
+                        src="/images/location-icon.png"
                         alt=""
                       />
                     </span>

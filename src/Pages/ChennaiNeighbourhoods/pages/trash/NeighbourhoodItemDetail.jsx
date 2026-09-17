@@ -281,15 +281,14 @@ export default function NeighbourhoodItemDetail() {
         <div
           className="absolute inset-0 mix-blend-multiply pointer-events-none"
           style={{
-            background:
-              "linear-gradient(to bottom, rgba(10,5,30,0.5) 0%, rgba(10,5,30,0.75) 60%, rgba(10,5,30,0.92) 100%)",
+            background: "#000000ab",
           }}
         />
 
         {/* Content Container */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 w-full pb-0 paddddzeroneigh">
           <nav className="text-gray-400 neighbourtwoparagraph items-center gap-1 neighbourhoodbrudcrum">
-            <div className="flex gap-2 mb-5">
+            <div className="flex gap-2 mb-5 sm:flex-wrap">
               <span className="hover:text-white cursor-pointer">Home</span>
               <span>›</span>
               <span

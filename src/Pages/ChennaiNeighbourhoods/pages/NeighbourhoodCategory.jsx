@@ -102,7 +102,7 @@ export default function NeighbourhoodCategory() {
 
   return (
     <div id="poppinsssFamily">
-      <section className="relative min-h-[500px] bg-gray-900 overflow-hidden flex flex-col justify-center">
+      <section className="relative min-h-[500px] bg-gray-900 overflow-hidden flex flex-col justify-center detailpageneighbourdetailsection">
         <div className="absolute inset-0 w-full h-full pointer-events-none">
           <img
             src={filtered[0]?.category?.FeaturedImage?.url ? `${API_BASE_URL_API_TEST_DEV}${filtered[0].category.FeaturedImage.url}` : "https://www.superchennai.com/images/restaurants-banner.jpg"}
@@ -112,7 +112,7 @@ export default function NeighbourhoodCategory() {
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/70 to-gray-900/40" />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/60 to-transparent" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 pt-8 pb-10 h-full w-full flex flex-col justify-center">
+        <div className="relative z-10 container max-w-7xl mx-auto px-4 pt-8 pb-10 h-full w-full flex flex-col justify-center newneighbourhoodstyleeelodad">
           <nav className="text-gray-400 neighbourtwoparagraph items-center gap-1 neighbourhoodbrudcrum">
             <div className="flex flex-wrap gap-2 mb-5">
               <Link to="/" className="hover:text-white cursor-pointer transition-colors">Home</Link>
@@ -163,7 +163,7 @@ export default function NeighbourhoodCategory() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 py-8 space-y-10">
+      <div className="max-w-7xl container mx-auto px-4 py-8 space-y-10">
         {/* BROWSE BY CATEGORY */}
         <section>
           <h2 className="text-lg font-bold text-gray-900 mb-4 neighbourtwosecondheading">Browse by Category</h2>
@@ -247,7 +247,7 @@ export default function NeighbourhoodCategory() {
 
         {/* ALL PLACES CONTAINER */}
         <section>
-          <div className="flex flex-wrap items-end justify-between mb-6 mt-15 gap-4">
+          <div className="flex flex-wrap items-end justify-between mb-6 mt-15 gap-4 ">
             <div>
               <h2 className="text-lg font-bold text-gray-900 neighbourtwosecondheading">All {currentCategoryTitle} Places</h2>
               <p className="text-sm text-gray-500 neighbourtwoparagraph">Discover your options cleanly plotted</p>

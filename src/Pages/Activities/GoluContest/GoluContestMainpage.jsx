@@ -512,7 +512,7 @@ const GoluFirstSectionBlockSection = ({ blockFields }) => {
               ></video>
             </div>
 
-            <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
+            {/* <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
               {item?.features?.map((feature, featureIdx) => (
                 <div
                   key={feature.id || featureIdx}
@@ -536,7 +536,178 @@ const GoluFirstSectionBlockSection = ({ blockFields }) => {
                   </p>
                 </div>
               ))}
+            </div> */}
+
+            <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
+              {item?.features?.map((feature, featureIdx) => (
+                <div
+                  key={featureIdx}
+                  className="flex items-start space-x-4 parafirstsectionn"
+                >
+                  <p className="text-xs text-gray-700 leading-relaxed pt-1">
+                    {feature?.segments?.length > 0
+                      ? feature.segments.map((seg, segIdx) => {
+                          // 1. Segment-la LINK IRUNDHA (Multiple <a> tags varum)
+                          if (seg?.link) {
+                            return (
+                              <a
+                                key={segIdx}
+                                href={seg.link}
+                                target={seg.openInNewTab ? "_blank" : "_self"}
+                                rel={
+                                  seg.openInNewTab
+                                    ? "noopener noreferrer"
+                                    : undefined
+                                }
+                                className={`underline hover:opacity-80 transition-opacity ${
+                                  seg.highlight
+                                    ? "text-pink-600 font-bold highlightedtextsectionpara"
+                                    : "text-indigo-600 font-semibold"
+                                }`}
+                              >
+                                {seg.text}
+                              </a>
+                            );
+                          }
+
+                          // 2. Segment-la HIGHLIGHT MATTUM IRUNDHA <span> tag
+                          if (seg?.highlight) {
+                            return (
+                              <span
+                                key={segIdx}
+                                className="text-pink-600 font-bold highlightedtextsectionpara"
+                              >
+                                {seg.text}
+                              </span>
+                            );
+                          }
+
+                          // 3. NORMAL TEXT
+                          return (
+                            <React.Fragment key={segIdx}>
+                              {seg.text}
+                            </React.Fragment>
+                          );
+                        })
+                      : feature?.text}
+                  </p>
+                </div>
+              ))}
             </div>
+
+            {/* <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
+              {item?.features?.map((feature, featureIdx) => (
+                <div
+                  key={feature.id || featureIdx}
+                  className="flex items-start space-x-4 parafirstsectionn"
+                >
+                  <p className="text-xs text-gray-700 leading-relaxed pt-1">
+                    {feature.contentParts
+                      ? feature.contentParts.map((part, partIdx) => {
+                          // 1. Check if it's a LINK
+                          if (part.link) {
+                            return (
+                              <a
+                                key={partIdx}
+                                href={part.link}
+                                target={
+                                  part.openInNewTab ? "_blank" : undefined
+                                }
+                                rel={
+                                  part.openInNewTab
+                                    ? "noopener noreferrer"
+                                    : undefined
+                                }
+                                className="font-bold text-pink-600 underline hover:text-pink-700"
+                              >
+                                {part.text}
+                              </a>
+                            );
+                          }
+
+                          // 2. Check if it's HIGHLIGHTED
+                          if (part.highlight) {
+                            return (
+                              <span
+                                key={partIdx}
+                                className="text-xs font-bold text-pink-600 leading-relaxed highlightedtextsectionpara"
+                              >
+                                {part.text}
+                              </span>
+                            );
+                          }
+
+                          // 3. Normal Text
+                          return (
+                            <React.Fragment key={partIdx}>
+                              {part.text}
+                            </React.Fragment>
+                          );
+                        })
+                      : feature.text}
+                  </p>
+                </div>
+              ))}
+            </div> */}
+
+            {/* <div className="lg:col-span-4 space-y-6 golufirstsectionheight">
+              {item?.features?.map((feature, featureIdx) => (
+                <div
+                  key={feature.id || featureIdx}
+                  className="flex items-start space-x-4 parafirstsectionn"
+                >
+                  {console.log("ITEM DATA:", item)}
+                  {console.log("FEATURES:", item?.features)}
+                  {console.log(
+                    "CONTENT PARTS:",
+                    item?.features?.map((f) => f.contentParts),
+                  )}
+
+                  <p className="text-xs text-gray-700 leading-relaxed pt-1">
+                    {feature.contentParts?.length
+                      ? feature.contentParts.map((part, partIdx) => {
+                          if (part.link) {
+                            return (
+                              <a
+                                key={partIdx}
+                                href={part.link}
+                                target={
+                                  part.openInNewTab ? "_blank" : undefined
+                                }
+                                rel={
+                                  part.openInNewTab
+                                    ? "noopener noreferrer"
+                                    : undefined
+                                }
+                                className="font-bold text-pink-600 underline hover:text-pink-700"
+                              >
+                                {part.text}
+                              </a>
+                            );
+                          }
+
+                          if (part.highlight) {
+                            return (
+                              <span
+                                key={partIdx}
+                                className="text-xs font-bold text-pink-600 leading-relaxed highlightedtextsectionpara"
+                              >
+                                {part.text}
+                              </span>
+                            );
+                          }
+
+                          return (
+                            <React.Fragment key={partIdx}>
+                              {part.text}
+                            </React.Fragment>
+                          );
+                        })
+                      : feature.text}
+                  </p>
+                </div>
+              ))}
+            </div> */}
           </div>
         );
       })}

@@ -149,7 +149,7 @@ export default function WhatsNearby({ data }) {
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
-      { breakpoint: 1280, settings: { slidesToShow: 4 } },
+      { breakpoint: 1600, settings: { slidesToShow: 4 } },
       { breakpoint: 1024, settings: { slidesToShow: 3 } },
       { breakpoint: 768, settings: { slidesToShow: 2 } },
       { breakpoint: 480, settings: { slidesToShow: 1 } },
@@ -159,8 +159,8 @@ export default function WhatsNearby({ data }) {
   if (!sortedPlaces || sortedPlaces.length === 0) return null;
 
   return (
-    <section className="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 font-sans overflow-hidden">
-      <div className="max-w-7xl mx-auto relative">
+    <section className="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 font-sans overflow-hidden md:pt-0 padinnggmobiletop ">
+      <div className="max-w-7xl container mx-auto relative">
         {/* Header Section */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2">

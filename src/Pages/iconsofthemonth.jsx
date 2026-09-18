@@ -68,23 +68,30 @@ export default function Iconsofthemonth() {
 
         <section className="EventsListSec SecPadblock12 nammaStoriesNewsLtter !pt-7">
           <div className="container max-w-7xl mx-auto ">
-            {/* <div class="Eventitlesec mb-[50px] text-center">
-              <h2 className="text-[#a44294]">Namma Stories</h2>
-              <p>
-                Stay updated with the latest images, videos, and highlights from
-                SuperChennai’s events, announcements, and developments.
-              </p>
-            </div>
-            <div className="flex justify-center mb-8 newsLetterSection">
-              <button className="newsLetterButton">News - E Paper</button>
-              <button className="newsLetterButton">News Articles</button>
-            </div> */}
-
             <div className="flex superchennaiEventsMainContainer">
               {/*############## CHINNAMAYI ######## */}
 
+              <a
+                className="superchennaiEventsSection"
+                id="icon-of-the-month-nov"
+                href="/icon-of-the-june-month-2026"
+              >
+                <div
+                  className="flex flex-col items-center text-center"
+                  style={{ overflow: "hidden" }}
+                >
+                  <img
+                    src="/images/iconofthemonth/arunjainbanner.jpg"
+                    alt="Left Image"
+                    className="rounded-xl mb-3"
+                  />
+                  <p className="text-lg font-medium">
+                    Icon of the Month - Jun 2026
+                  </p>
+                </div>
+              </a>
 
-                 <a
+              <a
                 className="superchennaiEventsSection"
                 id="icon-of-the-month-nov"
                 href="/icon-of-the-may-month-2026"

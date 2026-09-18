@@ -121,7 +121,7 @@ export default function IconofthemonthArunJain() {
     {
       description: [
         "His  journey spans enterprise technology, innovation, entrepreneurship, education and social impact.",
-        "Hi Whether through Intellect, the School of Design Thinking, Mission Samriddhi or Ullas Trust, his ",
+        "Whether through Intellect, the School of Design Thinking, Mission Samriddhi or Ullas Trust, his ",
         "approach remains consistent: identify the real problem, think from first principles and create solutions ",
         "that can make a lasting difference. For Chennai, his story is also one of an entrepreneur who has helped ",
         "position the city as a serious centre for FinTech, innovation, design and technology-led enterprise.",
@@ -280,13 +280,13 @@ export default function IconofthemonthArunJain() {
     <>
       <Helmet>
         <title>
-          Icon of the Month in Chennai: V. Sriram, Heritage Historian
+          Arun Jain – Intellect Design Arena | Icon of the Month
         </title>
         <meta
           name="description"
-          content="1. Super Chennai honors V. Sriram as Icon of the Month, a noted historian and author whose heritage walks, books and research keep Chennai's legacy alive for all."
+          content="Super Chennai's Icon of the Month — Arun Jain, CMD of Intellect Design Arena, on building global FinTech institutions and championing Design Thinking from India"
         />
-        <link rel="canonical" href="/icon-of-the-may-month-2026" />
+        <link rel="canonical" href="/icon-of-the-june-month-2026" />
       </Helmet>
 
       <div className="InvestPageId">
@@ -403,8 +403,9 @@ export default function IconofthemonthArunJain() {
         <section className="awards-section expandingBrand">
           <div className="awards-container">
             <h2 className="section-title">
-              His Legacy:
+              His 
               <br />
+              Legacy
               {/* <span>Preserving Culture</span> */}
             </h2>
 

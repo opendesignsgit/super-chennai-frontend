@@ -791,7 +791,7 @@ function App() {
           element={<ArattaiArunJainExcell />}
         />
 
-        <Route path="/GoluContestMain" element={<GoluContestMain />} />
+        <Route path="/contest/navaratri-golu" element={<GoluContestMain />} />
 
         <Route path="/golupage" element={<GoluIndexPage />} />
         <Route

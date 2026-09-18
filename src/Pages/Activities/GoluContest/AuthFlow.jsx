@@ -1,5 +1,3 @@
-
-
 import React from "react";
 
 export default function AuthFlow({
@@ -18,9 +16,15 @@ export default function AuthFlow({
   errorMessage,
 }) {
   return (
-    <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100 font-sans bg-purple-50/50 mt-[50px]">
-      <div class="flex items-center justify-center gap-4 mb-8"><span class="h-[2px] w-12 md:w-20 bg-pink-500"></span><h2 class="text-xl md:text-3xl font-bold text-indigo-950 text-center uppercase">Super Chennai Golu Contest</h2><span class="h-[2px] w-12 md:w-20 bg-pink-500"></span></div>
-      <div className="max-w-md mx-auto mt-8 px-4 paddinggglefttftt">
+    <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100 font-sans bg-purple-50/50 mt-[50px] golu-form1">
+      <div class="flex items-center justify-center gap-4 mb-8">
+        <span class="h-[2px] w-12 md:w-20 bg-pink-500"></span>
+        <h2 class="text-xl md:text-3xl font-bold text-indigo-950 text-center uppercase">
+          Super Chennai Golu Contest
+        </h2>
+        <span class="h-[2px] w-12 md:w-20 bg-pink-500"></span>
+      </div>
+      <div className="max-w-md mx-auto mt-8 px-4 paddinggglefttftt ">
         {/* 1. MOBILE NUMBER ENTRY */}
         {currentStep === "AUTH_MOBILE" && (
           <div className="bg-white rounded-3xl p-8 border border-stone-200 shadow-sm paddingtwenty">
@@ -245,7 +249,6 @@ export default function AuthFlow({
     </section>
   );
 }
-
 
 // import React from 'react'
 

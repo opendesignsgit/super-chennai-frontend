@@ -388,8 +388,7 @@ import WhatsUpChennaiDetailPage from "./Pages/WhatupChennai/whatupChennaiDetail"
 import GoluContestMain from "./Pages/Activities/GoluContest/GoluContestMainpage";
 import GoluIndexPage from "./Pages/Activities/GoluContest/GolupageIndex";
 import GoluUsersList from "./Pages/Activities/GoluContest/GoluParticipantsList";
-
-
+import IconofthemonthArunJain from "./Pages/icon-of-the-month-arunjain";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -795,9 +794,10 @@ function App() {
         <Route path="/GoluContestMain" element={<GoluContestMain />} />
 
         <Route path="/golupage" element={<GoluIndexPage />} />
-        <Route path="/api/v1/register/participants/dmxiTr6puQ4eRgDCOScPaJ/node-id=0-1&t=I6L1vNZGDHYERUIQHXY-0" element={<GoluUsersList />} />
-
-        
+        <Route
+          path="/api/v1/register/participants/dmxiTr6puQ4eRgDCOScPaJ/node-id=0-1&t=I6L1vNZGDHYERUIQHXY-0"
+          element={<GoluUsersList />}
+        />
 
         <Route
           path="/whats-up-chennai/:slug"
@@ -1624,6 +1624,7 @@ function App() {
           path="/icon-of-the-march-month-2026"
           element={<IconofthemonthAprilSowmiyaSwaminathan />}
         />
+
         <Route
           path="/super-chennai-icon-of-aug-2025"
           element={<IconofthemonthAugust />}
@@ -1655,6 +1656,11 @@ function App() {
         <Route
           path="/icon-of-the-may-month-2026"
           element={<IconofthemonthVSriram />}
+        />
+
+        <Route
+          path="/icon-of-the-june-month-2026"
+          element={<IconofthemonthArunJain />}
         />
         <Route
           path="/superchennai-events-details/:url"

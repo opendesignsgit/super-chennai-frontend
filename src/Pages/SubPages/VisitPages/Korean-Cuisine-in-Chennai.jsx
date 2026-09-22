@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import "../../../assets/Css/CostOfLiving.css";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Search from "../../../Components/Search";
 import { Link } from "react-router-dom";
@@ -216,6 +217,16 @@ export default function KoreanCuisineinChennai() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Korean Restaurants in Chennai | Korean Food & Cuisine
+        </title>
+        <meta
+          name="description"
+          content="Korean restaurants in Chennai bring Korean food to the city with BBQ, kimchi, bibimbap, kimbap and other classic Korean dishes, flavours and favourites to try"
+        />
+        <link rel="canonical" href="/Korean-Cuisine-in-Chennai" />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -275,6 +286,7 @@ export default function KoreanCuisineinChennai() {
               <h2 className="text-2xl font-semibold mb-6">
                 {section.category}
               </h2>
+              <h1 className="hidden">{section.category}</h1>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {section.places.map((place, idx) => (

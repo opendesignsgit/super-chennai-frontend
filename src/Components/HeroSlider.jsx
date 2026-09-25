@@ -182,6 +182,15 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
+     {
+    image: "/images/golu-backup.jpeg",
+    link: "contest/navaratri-golu",
+    image1: "/images/golu-backup-mobile.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
+
     {
     image: "/images/Home Page Banner (Desktop) 2250 × 1162 px.jpg",
     link: "arattai-with-arun-jain/tech-visionary",

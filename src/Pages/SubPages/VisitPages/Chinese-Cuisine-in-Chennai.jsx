@@ -9,6 +9,8 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
+
 
 export default function ChineseCuisineinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -210,6 +212,23 @@ export default function ChineseCuisineinChennai() {
   return (
     <>
       <div>
+        <Helmet>
+          <title>
+            Chinese Cuisine in Chennai | Chinese Flavours & Classics
+          </title>
+
+          <meta
+            name="description"
+            content="Chinese cuisine in Chennai offers fragrant fried rice, wok-tossed noodles, dumplings, soups and savoury dishes layered with aromatic sauces and bold flavours."
+          />
+
+          <link
+            rel="canonical"
+            href={`${
+              typeof window !== "undefined" ? window.location.origin : ""
+            }/Chinese-Cuisine-in-Chennai`}
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img
@@ -270,6 +289,7 @@ export default function ChineseCuisineinChennai() {
               <h2 className="text-2xl font-semibold mb-6">
                 {section.category}
               </h2>
+              <h1 className="hidden">Chinese Cuisine in Chennai</h1>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {section.places.map((place, idx) => (

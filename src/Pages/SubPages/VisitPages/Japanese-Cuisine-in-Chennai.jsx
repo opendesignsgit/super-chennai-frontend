@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function JapaneseCuisineinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -217,6 +218,23 @@ export default function JapaneseCuisineinChennai() {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Japanese Cuisine in Chennai | The Art of Japanese Dining</title>
+
+          <meta
+            name="description"
+            content="Japanese cuisine in Chennai is a journey through sushi, sashimi, ramen and tempura, with teppanyaki grills and delicate Japanese flavours along the way."
+          />
+
+          <link
+            rel="canonical"
+            href={
+              typeof window !== "undefined"
+                ? `${window.location.origin}${window.location.pathname}`
+                : ""
+            }
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img
@@ -274,9 +292,9 @@ export default function JapaneseCuisineinChennai() {
         </div>
 
         <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
-          {/* <h1 className="text-3xl font-bold mb-10 text-center">
-            Top Continental Restaurants in Chennai
-          </h1> */}
+          <h1 className="text-3xl font-bold mb-10 text-center">
+           Japanese Cuisine in Chennai
+          </h1>
           {nightlifeData.map((section, sectionIdx) => (
             <div key={sectionIdx} className="nightlifesecIn">
               <h2 className="text-2xl font-semibold mb-6">

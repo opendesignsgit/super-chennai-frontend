@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function MexicanCuisineinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -180,6 +181,23 @@ export default function MexicanCuisineinChennai() {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Mexican Cuisine in Chennai | Best Restaurants & Tasty Favourites</title>
+
+          <meta
+            name="description"
+            content="Mexican cuisine in Chennai moves from crunchy tacos and stuffed burritos to cheesy quesadillas, loaded nachos and sizzling fajitas with bold flavours."
+          />
+
+          <link
+            rel="canonical"
+            href={
+              typeof window !== "undefined"
+                ? `${window.location.origin}${window.location.pathname}`
+                : ""
+            }
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img

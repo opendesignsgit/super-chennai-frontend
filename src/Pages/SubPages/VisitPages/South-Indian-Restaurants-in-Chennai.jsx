@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function SouthIndianRestaurantsinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -350,6 +351,23 @@ export default function SouthIndianRestaurantsinChennai() {
   return (
     <>
       <div>
+         <Helmet>
+          <title>South Indian Restaurants in Chennai | Food & Regional Flavours</title>
+
+          <meta
+            name="description"
+            content="South indian restaurants in Chennai feature south indian food Chennai favourites, including dosas, idlis, vadas, thalis and pongal with regional flavours."
+          />
+
+          <link
+            rel="canonical"
+            href={
+              typeof window !== "undefined"
+                ? `${window.location.origin}${window.location.pathname}`
+                : ""
+            }
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img

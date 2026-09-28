@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import "../../../assets/Css/CostOfLiving.css";
+import { Helmet } from "react-helmet-async";
 
 import Search from "../../../Components/Search";
 import { Link } from "react-router-dom";
@@ -213,6 +214,23 @@ export default function TasteofThailandinChennai() {
   return (
     <>
       <div>
+        <Helmet>
+          <title>Thai Cuisine in Chennai | Thai Food, Dishes & Flavours</title>
+
+          <meta
+            name="description"
+            content="Thai food in Chennai features Thai cuisine in Chennai with aromatic herbs, coconut-based curries, Pad Thai, Tom Yum and traditional dishes from Thailand."
+          />
+
+          <link
+            rel="canonical"
+            href={
+              typeof window !== "undefined"
+                ? `${window.location.origin}${window.location.pathname}`
+                : ""
+            }
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img
@@ -265,7 +283,7 @@ export default function TasteofThailandinChennai() {
             </div>
           </div>
         </div>
-
+        <h1 className="hidden">Thai Cuisine in Chennai</h1>
         <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
           {nightlifeData.map((section, sectionIdx) => (
             <div key={sectionIdx} className="nightlifesecIn">

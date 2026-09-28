@@ -1985,6 +1985,115 @@ const detailsections = [
     id: 1,
     title: "South Indian Classics",
     points: [
+      // {
+      //   name: "Upavihar",
+      //  date: "28/09/2026",
+      //   description:
+      //     "Upavihar is a popular vegetarian restaurant serving authentic Udupi and South Indian favourites, along with filter coffee, chaats, and select Chinese dishes. With multiple outlets across Chennai, it offers a comforting dining experience with traditional flavours.",
+      //   subDescription:
+      //     "The restaurant has multiple outlets across Chennai, including Anna Nagar, Egmore, Kovilambakkam, and Navalur, offering traditional vegetarian dishes and South Indian favourites.",
+      //   locations: [
+      //     {
+      //       label: "Anna Nagar",
+      //       link: "https://maps.app.goo.gl/jNBsyX3T2xFxdmLe6",
+      //     },
+      //     {
+      //       label: "Egmore",
+      //       link: "https://maps.app.goo.gl/YXw37294iTQ7sTt2A",
+      //     },
+      //     {
+      //       label: "Kovilambakkam",
+      //       link: "https://maps.app.goo.gl/oyxtnkw3z4w2b3Uq9",
+      //     },
+      //     {
+      //       label: "Navalur",
+      //       link: "https://maps.app.goo.gl/uokaHnn2V1eKNLRQ6",
+      //     },
+      //   ],
+      // },
+
+      // {
+      //   name: "Sangeetha Veg Restaurant",
+      //   date: "28/09/2026",
+      //   description:
+      //     "Sangeetha Veg Restaurant, established in 1985, is a popular vegetarian restaurant chain in Chennai, known for its South Indian dishes, sweets, and savouries.",
+      //   subDescription:
+      //     "The new Thoraipakkam OMR outlet launched on September 28, 2026, offering 50% off on all food items for dine-in from September 28 to 30, 2026. The restaurant also has multiple locations across Chennai, including Anna Nagar, Mylapore, T. Nagar, Adyar, and Velachery.",
+      //   locations: [
+      //     {
+      //       label: "Thoraipakkam, OMR",
+      //       link: "https://maps.app.goo.gl/WkRvNEr4Ho6kRWtbA",
+      //     },
+      //   ],
+      // },
+
+      // {
+      //   name: "Keerthana Restaurant",
+      //  date: "28/09/2026",
+      //   description:
+      //     "Keerthana Restaurant in Thoraipakkam, Chennai, officially opened its doors on August 30, 2026, serving authentic Andhra cuisine.",
+      //   subDescription:
+      //     "The restaurant offers unlimited non-vegetarian meals and Hyderabadi Dum Biryani, bringing traditional Andhra flavours to Thoraipakkam.",
+      //   locations: [
+      //     {
+      //       label: "Thoraipakkam",
+      //       link: "https://maps.app.goo.gl/hwNSxmvhw585efGn9",
+      //     },
+      //   ],
+      // },
+      {
+  name: "Upavihar",
+  date: "28/09/2026",
+  description:
+    "It is a popular vegetarian restaurant serving authentic Udupi and South Indian favourites, along with filter coffee, chaats, and select Chinese dishes. With multiple outlets across Chennai, it offers a comforting dining experience with traditional flavours.",
+  subDescription: "",
+  locations: [
+    {
+      label: "Anna Nagar",
+      link: "https://maps.app.goo.gl/jNBsyX3T2xFxdmLe6",
+    },
+    {
+      label: "Egmore",
+      link: "https://maps.app.goo.gl/YXw37294iTQ7sTt2A",
+    },
+    {
+      label: "Kovilambakkam",
+      link: "https://maps.app.goo.gl/oyxtnkw3z4w2b3Uq9",
+    },
+    {
+      label: "Navalur",
+      link: "https://maps.app.goo.gl/uokaHnn2V1eKNLRQ6",
+    },
+  ],
+},
+
+{
+  name: "Sangeetha Veg Restaurant",
+  date: "28/09/2026",
+  description:
+    "Sangeetha Veg Restaurant, established in 1985, is a popular vegetarian restaurant chain in Chennai, known for South Indian dishes, sweets, and savouries. Its new Thoraipakkam OMR outlet opened on September 28, 2026, with a special 50% off dine-in offer on all food items from September 28 to 30, 2026.",
+  subDescription: "",
+  locations: [
+    {
+      label: "Thoraipakkam, OMR",
+      link: "https://maps.app.goo.gl/WkRvNEr4Ho6kRWtbA",
+    },
+  ],
+},
+
+{
+  name: "Keerthana Restaurant",
+  date: "28/09/2026",
+  description:
+    "Keerthana Restaurant in Thoraipakkam, Chennai, officially opened its doors on August 30, 2026. The restaurant serves authentic Andhra cuisine, including unlimited non-vegetarian meals and Hyderabadi Dum Biryani.",
+  subDescription: "",
+  locations: [
+    {
+      label: "Thoraipakkam",
+      link: "https://maps.app.goo.gl/hwNSxmvhw585efGn9",
+    },
+  ],
+},
       {
         name: "Madurai & Chettinad Mess",
         date: "01/07/2026",

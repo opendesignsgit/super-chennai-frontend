@@ -162,13 +162,22 @@ export default function ArattaiWithArunJain() {
   };
 
   const mockUpcomingEvents = [
-    { id: 1, image: "/images/Arun-Jain-gallery/arun-jain (1).png" },
-    { id: 2, image: "/images/Arun-Jain-gallery/arun-jain (2).png" },
-    { id: 3, image: "/images/Arun-Jain-gallery/arun-jain (3).png" },
-    { id: 4, image: "/images/Arun-Jain-gallery/arun-jain (4).png" },
-    { id: 5, image: "/images/Arun-Jain-gallery/arun-jain (5).png" },
+    { id: 1, image: "/images/Arun-jaint/arun -(1).jpg" },
+    { id: 2, image: "/images/Arun-jaint/arun -(2).jpg" },
+    { id: 3, image: "/images/Arun-jaint/arun -(3).jpg" },
+    { id: 4, image: "/images/Arun-jaint/arun -(4).jpg" },
+    { id: 5, image: "/images/Arun-jaint/arun -(5).jpg" },
+    { id: 6, image: "/images/Arun-jaint/arun -(6).jpg" },
+    { id: 7, image: "/images/Arun-jaint/arun -(7).jpg" },
+    { id: 8, image: "/images/Arun-jaint/arun -(8).jpg" },
+    { id: 9, image: "/images/Arun-jaint/arun -(9).jpg" },
+    { id: 10, image: "/images/Arun-jaint/arun -(10).jpg" },
+    { id: 11, image: "/images/Arun-jaint/arun -(11).jpg" },
+    { id: 12, image: "/images/Arun-jaint/arun -(12).jpg" },
+    { id: 13, image: "/images/Arun-jaint/arun -(13).jpg" },
+    { id: 14, image: "/images/Arun-jaint/arun -(14).jpg" },
+    { id: 15, image: "/images/Arun-jaint/arun -(15).jpg" },
   ];
-
   const [scrollDir, setScrollDir] = useState("left");
   const carouselRef = useRef();
   const [x, setX] = useState(0);
@@ -313,7 +322,7 @@ export default function ArattaiWithArunJain() {
       </section>
 
       {/*============= GALLERY ================== */}
-      {/* <div className="EventsCalendarMainSection mb-10">
+      <div className="EventsCalendarMainSection mb-10">
         <div
           className={`EventsCalenderBackground ${
             scrollDir === "right"
@@ -325,7 +334,6 @@ export default function ArattaiWithArunJain() {
           <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
         </div>
 
-      
         <div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">
           <h2>Media Highlights</h2>
           <p>
@@ -396,7 +404,7 @@ export default function ArattaiWithArunJain() {
             </div>
           )}
         </div>
-      </div> */}
+      </div>
 
       {/* ================= POPUP ================= */}
       <AnimatePresence>

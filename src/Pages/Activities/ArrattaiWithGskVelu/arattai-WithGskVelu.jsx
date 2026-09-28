@@ -249,7 +249,9 @@ const slide = (direction) => {
       <ToastContainer position="top-center" style={{ zIndex: 100000 }} />
 
       <Helmet>
-        <title>Super Chennai Arattai with Healthcare Entrepreneur Dr. GSK Velu</title>
+        <title>
+          Super Chennai Arattai with Healthcare Entrepreneur Dr. GSK Velu
+        </title>
 
         <meta
           name="description"
@@ -350,13 +352,11 @@ const slide = (direction) => {
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
               </div>
             </div> */}
-
           </div>
         </div>
       </section>
 
-
-           {/*============= GALLERY ================== */}
+      {/*============= GALLERY ================== */}
       <div className="EventsCalendarMainSection mb-10">
         <div
           className={`EventsCalenderBackground ${
@@ -441,7 +441,6 @@ const slide = (direction) => {
           )}
         </div>
       </div>
-
 
       {/* ================= POPUP ================= */}
 

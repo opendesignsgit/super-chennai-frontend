@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function NorthIndianRestaurantsinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -286,6 +287,23 @@ export default function NorthIndianRestaurantsinChennai() {
   return (
     <>
       <div>
+        <Helmet>
+          <title>
+           North Indian Restaurants in Chennai | Curries, Kebabs & More
+          </title>
+
+          <meta
+            name="description"
+            content="North Indian food in Chennai has smoky kebabs, rich curries, buttery naan, creamy dal makhani and aromatic biryanis at the heart of its classic flavours."
+          />
+
+          <link
+            rel="canonical"
+            href={`${
+              typeof window !== "undefined" ? window.location.origin : ""
+            }/North-Indian-Restaurants-in-Chennai`}
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img
@@ -321,6 +339,7 @@ export default function NorthIndianRestaurantsinChennai() {
             </div>
             <div className="workIntro">
               <h3>Bold Spices, Rich Gravies & Timeless Tandoors</h3>
+              {/* <h1 className="hidden">North Indian Restaurants in Chennai</h1> */}
               <p>
                 {" "}
                 Chennai’s love for North Indian cuisine runs deep — rich
@@ -342,7 +361,7 @@ export default function NorthIndianRestaurantsinChennai() {
 
         <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
           <h1 className="text-3xl font-bold mb-10 text-center">
-            Top North Indian Restaurants in Chennai
+            North Indian Restaurants in Chennai
           </h1>
           {nightlifeData.map((section, sectionIdx) => (
             <div key={sectionIdx} className="nightlifesecIn">

@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function ItalianCuisineinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -213,6 +214,21 @@ export default function ItalianCuisineinChennai() {
 
   return (
     <>
+      <Helmet>
+        <title>Italian Cuisine in Chennai | Italian Food, Pasta & Pizzas </title>
+
+        <meta
+          name="description"
+          content="Italian cuisine in Chennai is all about Italian food in Chennai, with wood-fired pizzas, handmade pasta, rich risottos, baked dishes and classic desserts."
+        />
+
+        <link
+          rel="canonical"
+          href={`${
+            typeof window !== "undefined" ? window.location.origin : ""
+          }/Italian-Cuisine-in-Chennai`}
+        />
+      </Helmet>
       <div>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
@@ -275,6 +291,7 @@ export default function ItalianCuisineinChennai() {
               <h2 className="text-2xl font-semibold mb-6">
                 {section.category}
               </h2>
+              <h1 className="hidden">Italian Cuisine in Chennai </h1>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {section.places.map((place, idx) => (

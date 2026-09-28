@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function SriLankanCuisineinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -180,6 +181,23 @@ export default function SriLankanCuisineinChennai() {
   return (
     <>
       <div>
+         <Helmet>
+          <title>Sri Lankan Cuisine in Chennai | Authentic Lankan Favourites</title>
+
+          <meta
+            name="description"
+            content="Sri Lankan cuisine in Chennai has coconut-rich curries, string hoppers, kothu roti, crab dishes and fiery sambols rooted in authentic Sri Lankan food traditions."
+          />
+
+          <link
+            rel="canonical"
+            href={
+              typeof window !== "undefined"
+                ? `${window.location.origin}${window.location.pathname}`
+                : ""
+            }
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img
@@ -234,7 +252,7 @@ export default function SriLankanCuisineinChennai() {
             </div>
           </div>
         </div>
-
+<h1 className="hidden">Sri Lankan Cuisine in Chennai</h1>
         <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
           {nightlifeData.map((section, sectionIdx) => (
             <div key={sectionIdx} className="nightlifesecIn">

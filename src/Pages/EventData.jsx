@@ -10405,7 +10405,7 @@ An ideal spot for a fun, memorable family outing.
     YoutubeLink: "",
     meta: {
       title: "Trending Chennai Spotlight: Glow Garden Opens in Mahabalipuram",
-      desc: "Glow Garden Mahabalipuram showcases colourful glow setups, themed gardens, kids’ activities, and charming night views that make it a great place to explore.",
+      desc: "Discover Glow Garden Mahabalipuram with colourful glow displays, themed gardens, kids’ activities and enchanting night views perfect for a fun outing..",
       url: "https://www.superchennai.com/trending-chennai/glow-garden-mahabalipuram",
     },
   },

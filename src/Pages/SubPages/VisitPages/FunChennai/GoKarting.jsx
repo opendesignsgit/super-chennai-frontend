@@ -145,7 +145,7 @@ export default function GoKarting() {
         <title>Go Karting in Chennai : Thrill & Fun for Everyone</title>
         <meta
           name="description"
-          content="Looking for go karting in Chennai? Race, compete, and enjoy high-energy fun on well-designed tracks for all skill levels in the city."
+          content="Looking for go karting in Chennai? Race around exciting tracks, compete with friends and enjoy high-speed thrills whether you’re a beginner or pro."
         />
         <link rel="canonical" href="visit/things-to-do/go-karting-in-chennai" />
       </Helmet>
@@ -211,8 +211,8 @@ export default function GoKarting() {
                    index % 3 === 0
                      ? "pattern-a"
                      : index % 3 === 1
-                     ? "pattern-b"
-                     : "pattern-c"
+                       ? "pattern-b"
+                       : "pattern-c"
                  }`}
               key={index}
             >
@@ -261,8 +261,8 @@ export default function GoKarting() {
                    index % 3 === 0
                      ? "pattern-a"
                      : index % 3 === 1
-                     ? "pattern-b"
-                     : "pattern-c"
+                       ? "pattern-b"
+                       : "pattern-c"
                  }`}
               key={index}
             >

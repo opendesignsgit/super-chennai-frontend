@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function BurmeseCusine() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -177,6 +178,25 @@ export default function BurmeseCusine() {
   return (
     <>
       <div>
+        <Helmet>
+          <title>
+            Burmese Food Chennai | Atho, Mohinga & Burmese Flavours
+          </title>
+
+          <meta
+            name="description"
+            content="Burmese food Chennai takes you through tangy noodles, hearty soups and refreshing salads, layered with fresh herbs, subtle spices and distinctive flavours."
+          />
+
+          <link
+            rel="canonical"
+            href={
+              typeof window !== "undefined"
+                ? `${window.location.origin}${window.location.pathname}`
+                : ""
+            }
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img
@@ -237,7 +257,7 @@ export default function BurmeseCusine() {
 
         <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
           <h1 className="text-3xl font-bold mb-10 text-center">
-            Top Burmese Restaurants in Chennai
+            Burmese Food Chennai
           </h1>
           {nightlifeData.map((section, sectionIdx) => (
             <div key={sectionIdx} className="nightlifesecIn">

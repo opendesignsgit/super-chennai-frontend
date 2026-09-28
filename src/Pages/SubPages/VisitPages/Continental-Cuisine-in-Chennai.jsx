@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function ContinentalCuisineinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -247,6 +248,25 @@ export default function ContinentalCuisineinChennai() {
   return (
     <>
       <div>
+        <Helmet>
+          <title>
+            Continental Restaurants in Chennai | Pasta, Pizza & Grills
+          </title>
+
+          <meta
+            name="description"
+            content="Best continental food in Chennai celebrates creamy pastas, crisp pizzas, hearty soups, grilled meats and golden bakes with a comforting European touch."
+          />
+
+          <link
+            rel="canonical"
+            href={
+              typeof window !== "undefined"
+                ? `${window.location.origin}${window.location.pathname}`
+                : ""
+            }
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img
@@ -306,7 +326,7 @@ export default function ContinentalCuisineinChennai() {
 
         <div className="container max-w-7xl mx-auto px-4 py-8 nightlife">
           <h1 className="text-3xl font-bold mb-10 text-center">
-            Top Continental Restaurants in Chennai
+           Continental Restaurants in Chennai
           </h1>
           {nightlifeData.map((section, sectionIdx) => (
             <div key={sectionIdx} className="nightlifesecIn">

@@ -6,6 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 // import { cards } from "./EventsTesting";
+import { Helmet } from "react-helmet-async";
 
 export default function EventsHome() {
   const [tab, setTab] = useState("active");
@@ -59,6 +60,25 @@ export default function EventsHome() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Chennai Events: Live Shows, Workshops, Exhibition & Concerts
+        </title>
+
+        <meta
+          name="description"
+          content="Stay in the loop with Chennai events, from concerts and festivals to workshops, parties and exhibitions, and discover what’s happening in the city."
+        />
+
+        <link
+          rel="canonical"
+          href={
+            typeof window !== "undefined"
+              ? `${window.location.origin}${window.location.pathname}`
+              : ""
+          }
+        />
+      </Helmet>
       <section className="accaodomationBannerSection">
         <div>
           <img
@@ -183,42 +203,46 @@ export default function EventsHome() {
               </div>
             ))} */}
 
-              {oldEvents.sort((a, b) => b.id - a.id).map((card, index) => (
-              <div
-                key={index}
-                className="EventsItems bg-white"
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="relative w-full EventsItemImg">
-                  <a href={`/eventsold/${card.url}`} state={{ card }}>
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      className="w-full object-cover"
-                    />
-                  </a>
-
-                  <div className="absolute top-3 right-3 evntechnolg">
-                    {card.EventsCalendarCategory}
-                  </div>
-                </div>
-                <div className="EventsIteCont flex flex-col items-start">
-                  <div className="datimeContbox">
-                    <div className="dtDaymonth">{card.EventsCalendarMonth}</div>
-                    <div className="dtLines">|</div>
-                    <div className="dtTimess">{card.EventsCalendarTime}</div>
-                  </div>
-                  <h3 className="EveItemtitles">
+            {oldEvents
+              .sort((a, b) => b.id - a.id)
+              .map((card, index) => (
+                <div
+                  key={index}
+                  className="EventsItems bg-white"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <div className="relative w-full EventsItemImg">
                     <a href={`/eventsold/${card.url}`} state={{ card }}>
-                      {card.EventsCalendarTitle}
+                      <img
+                        src={card.image}
+                        alt={card.title}
+                        className="w-full object-cover"
+                      />
                     </a>
-                  </h3>
-                  <h4 className="EveItemDescrip">
-                    {card.EventsCalendarContent}
-                  </h4>
+
+                    <div className="absolute top-3 right-3 evntechnolg">
+                      {card.EventsCalendarCategory}
+                    </div>
+                  </div>
+                  <div className="EventsIteCont flex flex-col items-start">
+                    <div className="datimeContbox">
+                      <div className="dtDaymonth">
+                        {card.EventsCalendarMonth}
+                      </div>
+                      <div className="dtLines">|</div>
+                      <div className="dtTimess">{card.EventsCalendarTime}</div>
+                    </div>
+                    <h3 className="EveItemtitles">
+                      <a href={`/eventsold/${card.url}`} state={{ card }}>
+                        {card.EventsCalendarTitle}
+                      </a>
+                    </h3>
+                    <h4 className="EveItemDescrip">
+                      {card.EventsCalendarContent}
+                    </h4>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </section>

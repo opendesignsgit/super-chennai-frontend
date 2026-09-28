@@ -205,7 +205,7 @@ export default function TrampolineInChennai() {
     <>
       <Helmet>
         <title>Trampoline Parks In Chennai : FlyOut Trampoline Zones</title>
-        <meta name="description" content="Enjoy endless excitement at trampoline parks in Chennai with springless trampolines, basketball hoops, climbing walls, and perfect group fun spots" />
+        <meta name="description" content="Looking for trampoline parks in Chennai? Enjoy wall-to-wall jumping, basketball, climbing and group fun at exciting indoor trampoline parks." />
         <link rel="canonical" href="/visit/things-to-do/trampoline-parks-in-chennai" />
       </Helmet>
 

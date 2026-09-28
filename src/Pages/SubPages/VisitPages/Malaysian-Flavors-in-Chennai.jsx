@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import InstagramReelsMarquee from "../../../Components/SocialChennai";
 import Becameavolunteer from "../../../Components/BecameAVolunteer";
 import VisitSlider from "./VisitSlider";
+import { Helmet } from "react-helmet-async";
 
 export default function MalaysianFlavorsinChennai() {
   const [scrollDir, setScrollDir] = useState("left");
@@ -186,6 +187,25 @@ export default function MalaysianFlavorsinChennai() {
   return (
     <>
       <div>
+        <Helmet>
+          <title>
+            Malaysian Food in Chennai | From Laksa to Nasi Lemak & More 
+          </title>
+
+          <meta
+            name="description"
+            content="Malaysian food in Chennai takes the plate from spicy Laksa and fragrant Nasi Lemak to Mee Goreng, Nasi Kandar and other flavour-packed favourites worth trying."
+          />
+
+          <link
+            rel="canonical"
+            href={
+              typeof window !== "undefined"
+                ? `${window.location.origin}${window.location.pathname}`
+                : ""
+            }
+          />
+        </Helmet>
         {/*----------------- Banner ----------------*/}
         <div className="accaodomationBannerSection">
           <img

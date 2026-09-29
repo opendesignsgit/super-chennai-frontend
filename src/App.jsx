@@ -281,6 +281,9 @@ import IconofthemonthNov from "./Pages/Icon-of-the-month-nov";
 import IconofthemonthFebAruna from "./Pages/Icon-of-the-month-feb-26";
 import Iconofthemontjahabar from "./Pages/Icon-of-the-month-jan-26";
 
+import IconofthemonthBharathwajRanga from "./Pages/icon-of-the-month-bharathwajrangan";
+
+
 import Neighbourhoods from "./Pages/Neighbourhoods/neighbourhoods";
 import PrideofChennai from "./Pages/PrideofChennai";
 import PropertiesPage from "./Pages/Properties/PropertiesPage";
@@ -799,6 +802,11 @@ function App() {
           <Route
           path="/arattai-with-baradwaj-rangan-film-critic/entry/list"
           element={<ArattaiBaradwajRanganExcell />}
+        />
+
+        <Route
+          path="/icon-of-the-july-month-2026"
+          element={<IconofthemonthBharathwajRanga/>}
         />
 
         

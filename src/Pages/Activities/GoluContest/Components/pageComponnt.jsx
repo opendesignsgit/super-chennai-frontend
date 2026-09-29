@@ -81,6 +81,7 @@ export const GoluContestBlockSection = ({
                 >
                   Already Registered? Login via OTP
                 </button> */}
+                <h1 className="hidden">Navratri golu</h1>
               </div>
             </div>
           </div>

@@ -389,6 +389,11 @@ import GoluContestMain from "./Pages/Activities/GoluContest/GoluContestMainpage"
 import GoluIndexPage from "./Pages/Activities/GoluContest/GolupageIndex";
 import GoluUsersList from "./Pages/Activities/GoluContest/GoluParticipantsList";
 import IconofthemonthArunJain from "./Pages/icon-of-the-month-arunjain";
+import ArattaiWithBaradwajRangan from "./Pages/Activities/ArattaiWithBaradwajRangan/ArattaiWithBaradwajRangan";
+import ArattaiBaradwajRanganExcell from "./Pages/Activities/ArattaiWithBaradwajRangan/ArattaiBaradwajRanganExcell";
+
+
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -785,6 +790,18 @@ function App() {
           path="//arattai-with-arun-jain/tech-visionary"
           element={<ArattaiWithArunJain />}
         />
+
+         <Route
+          path="/arattai-with-baradwaj-rangan-film-critic"
+          element={<ArattaiWithBaradwajRangan />}
+        />
+
+          <Route
+          path="/arattai-with-baradwaj-rangan-film-critic/entry/list"
+          element={<ArattaiBaradwajRanganExcell />}
+        />
+
+        
 
         <Route
           path="/ArattaiArunJainExcell"

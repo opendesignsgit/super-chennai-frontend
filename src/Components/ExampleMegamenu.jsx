@@ -407,6 +407,12 @@ const menuItems = [
     label: "Arattai",
     labellink: "/arattai-with-jahabar-sadique/chai-kings-founder",
     content: [
+              {
+        title: "Hello",
+        desc: "ssdds",
+        link: "/arattai-with-baradwaj-rangan-film-critic",
+        image: "/images/Baradwaj-review.-mobile-header.jpeg",
+      },
            {
         title: "Hello",
         desc: "ssdds",

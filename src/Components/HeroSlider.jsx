@@ -182,14 +182,21 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-     {
+  {
+    image: "/images/Baradwaj-review-desktop.jpeg",
+    link: "arattai-with-baradwaj-rangan-film-critic",
+    image1: "/images/Baradwaj-review.-mobile.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
+  {
     image: "/images/golu-backup.jpeg",
     link: "contest/navaratri-golu",
     image1: "/images/golu-backup-mobile.jpeg",
     title: "chennai's surfing",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
-
 
   //   {
   //   image: "/images/Home Page Banner (Desktop) 2250 × 1162 px.jpg",
@@ -199,8 +206,7 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-
-    {
+  {
     image: "/images/lets-talk-chennai-desktop.jpg",
     link: "https://letstalkchennai.com/",
     image1: "/images/lets-talk-chennai-desktop-mobile.jpg",
@@ -215,8 +221,6 @@ const slides = [
   //   title: "chennai's surfing",
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
-  
-  
 
   {
     image: "/images/HomePage-Images/banner-0.jpg",

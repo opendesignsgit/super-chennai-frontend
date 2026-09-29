@@ -616,11 +616,11 @@ export const GoluFirstSectionBlockSection = ({ blockFields }) => {
                   <div className="text-xs text-gray-700 leading-relaxed pt-1 w-full">
                     {feature.segments && feature.segments.length > 0
                       ? feature.segments.map((seg, segIdx) => (
-                          <div
+                          <p
                             key={segIdx}
                             className={`inline-block ${
                               seg.highlight
-                                ? "highlightedtextsectionpara font-semibold text-pink-600"
+                                ? "highlightedtextsectionpara"
                                 : ""
                             }`}
                           >
@@ -628,7 +628,7 @@ export const GoluFirstSectionBlockSection = ({ blockFields }) => {
                             {typeof seg.text === "object" && seg.text !== null
                               ? parseLexical(seg.text)
                               : seg.text}
-                          </div>
+                          </p>
                         ))
                       : feature.text}
                   </div>

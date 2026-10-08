@@ -7611,24 +7611,187 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
-  {
-  id: 102355,
-  name: "A DREAM BUILT ON DETERMINATION – ASWIN'S REMARKABLE FOOTBALL JOURNEY",
-  slug: "aswin-kathirvel-chennai-footballer-minerva-academy",
-  para: "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy win the prestigious Gothia Cup and Helsinki Cup 2026, inspiring young footballers across India.",
-  TrendingCalendarMonth: "2026",
-  TrendingCalendarTime: "Achievement",
-  TrendingCalendarCategory: "Sports | Football | Chennai | Trending",
-  Homeimage: "/images/Ashwin-foodball.jpeg",
-  image: "/images/Ashwin-foodball.jpeg",
-  link: "/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
-  duration: "Achievement",
-  ageRestriction: "Open for All",
-  language: "English",
-  genre: "Sports | Football | Youth Achievement",
-  venue: "Chennai / Europe",
 
-  trendingDetails: `
+  {
+    id: 102356,
+    name: "LULU HYPERMARKET CHENNAI AT SHENOY NAGAR & CENTRAL METRO",
+    slug: "lulu-hypermarket-chennai-shenoy-nagar-central-metro",
+    para: "Chennai is getting new LuLu shopping outlets at key Metro stations, with a LuLu Hypermarket at Shenoy Nagar and a LuLu Daily store at Chennai Central opening from October 12, 2026.",
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Shopping | Retail | Metro",
+    Homeimage: "/images/Lulu Market Home.jpg",
+    image: "/images/Lulu Market Inner.jpg",
+    link: "/trending-chennai/lulu-hypermarket-chennai-shenoy-nagar-central-metro",
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Shopping | Retail | Metro",
+    venue: "Shenoy Nagar | Chennai Central",
+
+    trendingDetails: `
+<p>
+🛍️ Chennai is all set to get new <b>LuLu shopping outlets</b> at key Metro stations, making everyday shopping more convenient for commuters.
+</p>
+
+<p>
+From <b>October 12, 2026</b>, LuLu outlets will open at <b>Shenoy Nagar</b> and <b>Chennai Central Metro</b> stations. Shenoy Nagar will feature a massive <b>1.12 lakh sq. ft. LuLu Hypermarket</b>, along with LuLu Fashion Store, LuLu Connect for electronics, a food court and parking facilities.
+</p>
+
+<p>
+At <b>Chennai Central Metro</b>, a <b>40,000 sq. ft. LuLu Daily</b> store will operate at the concourse level, focusing on quick grocery purchases and everyday shopping needs.
+</p>
+
+<p>
+And there is more — a <b>LuLu Daily</b> outlet is also planned at <b>Wimco Nagar Metro station</b> in the coming months.
+</p>
+
+<p>
+With LuLu stores becoming part of Chennai's Metro network, daily commuting is getting a little more convenient — <b>shop, commute and get things done, all in one stop.</b> 🛍️🚇
+</p>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "LuLu Hypermarket Chennai at Shenoy Nagar & Central Metro",
+      desc: "LuLu Hypermarket Chennai opens Oct 12, 2026 at Shenoy Nagar and Chennai Central Metro with a hypermarket, LuLu Daily, fashion, electronics and a food court.",
+      url: "https://www.superchennai.com/trending-chennai/lulu-hypermarket-chennai-shenoy-nagar-central-metro",
+    },
+  },
+
+  {
+    id: 102357,
+    name: "FAKE SANGEET CHENNAI 2.0 AT PHOENIX MARKETCITY",
+    slug: "fake-sangeet-chennai-phoenix-marketcity",
+    para: "Fake Sangeet Chennai 2.0 brings Bollywood and Kollywood music, live dhol performances and wedding-style celebrations to Phoenix Marketcity on October 16, 2026.",
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "Events",
+    TrendingCalendarCategory: "Events | Music | Dance | Chennai",
+    Homeimage: "/images/Fake Sangeeth - Inner.jpg",
+    image: "/images/Fake Sangeeth - Home.jpg",
+    link: "/trending-chennai/fake-sangeet-chennai-phoenix-marketcity",
+    duration: "Events",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Music | Dance | Party",
+    venue: "Phoenix Marketcity, Chennai",
+
+    trendingDetails: `
+<p>
+💃🕺 <b>Fake Sangeet 2.0</b> is bringing all the fun and energy of a wedding celebration to Chennai — without the actual wedding!
+</p>
+
+<p>
+The event is set to take over <b>Phoenix Marketcity, Chennai</b>, on <b>October 16, 2026</b>, with a night packed with music, dance and full-on sangeet-style celebrations.
+</p>
+
+<p>
+The party runs from <b>7:00 PM to 2:00 AM</b> and features energetic <b>Bollywood and Kollywood beats</b>, DJ sets by <b>DJ AEIN, KJAY and CHIRAX</b>, live dhol performances and a packed dance floor.
+</p>
+
+<p>
+Guests are expected to come dressed in <b>traditional wear</b>, making it feel just like a real wedding sangeet — except there is no wedding involved! 😎
+</p>
+
+<p>
+🎟️ <b>Tickets start from ₹699.</b> Entry is invite-only, with passes available by commenting <b>"Sangeet"</b> on the organiser's social media posts.
+</p>
+
+<p>
+📅 <b>October 16, 2026</b><br>
+⏰ <b>7:00 PM – 2:00 AM</b><br>
+📍 <b>Phoenix Marketcity, Chennai</b>
+</p>
+`,
+
+    TrendingLink:
+      "https://www.instagram.com/reel/DeCJ8Ozv4V9/",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Fake Sangeet Chennai 2.0 at Phoenix Marketcity on Oct 16",
+      desc: "Fake Sangeet Chennai 2.0 hits Phoenix Marketcity on Oct 16, 2026, 7 PM–2 AM. Bollywood and Kollywood DJ sets, live dhol, ethnic wear only. Passes from ₹699.",
+      url: "https://www.superchennai.com/trending-chennai/fake-sangeet-chennai-phoenix-marketcity",
+    },
+  },
+
+  {
+    id: 102358,
+    name: "XB MALL VELACHERY – MULTIPLEX, BOWLING & MORE OPENING SOON",
+    slug: "xb-mall-velachery-madipakkam-road",
+    para: "XB Mall is coming up on Velachery–Madipakkam Road near Padmavathi Nagar, bringing shopping, dining, a multiplex, bowling, VR gaming and entertainment options to South Chennai.",
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Shopping | Entertainment | Velachery",
+    Homeimage: "/images/XB Mall.jpg",
+    image: "/images/XB Mall Inner.jpg",
+    link: "/trending-chennai/xb-mall-velachery-madipakkam-road",
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Shopping | Entertainment | Lifestyle",
+    venue: "Velachery–Madipakkam Road, Chennai",
+
+    trendingDetails: `
+<p>
+🏬 A new <b>shopping and entertainment destination</b> is taking shape along Velachery–Madipakkam Road in South Chennai.
+</p>
+
+<p>
+The upcoming <b>XB Mall</b>, located near <b>Padmavathi Nagar</b>, is nearing completion and is expected to welcome visitors in the coming months.
+</p>
+
+<p>
+The mall is expected to bring together a mix of <b>retail stores, a multiplex, restaurants, food court and entertainment zones</b>, adding more lifestyle options for people in Velachery, Madipakkam, Pallikaranai and surrounding neighbourhoods.
+</p>
+
+<p>
+Proposed entertainment options include a cinema with <b>4K laser projection and Dolby Atmos</b>, along with gaming activities such as <b>VR gaming and bowling</b>.
+</p>
+
+<p>
+Visitors can also expect <b>Indian and international brands</b>, multiple dining options and basement parking facilities designed to support the growing number of visitors.
+</p>
+
+<p>
+As the project moves towards completion, <b>XB Mall could add another major commercial destination to South Chennai</b> while also creating employment opportunities across retail, hospitality, security and other services. 🛍️🎬🎳
+</p>
+`,
+
+    TrendingLink:
+      "https://www.livechennai.com/detailnews.asp?catid=5&newsid=83456",
+    YoutubeLink: "",
+
+    meta: {
+      title: "XB Mall Velachery: Multiplex, Bowling & More Opening Soon",
+      desc: "XB Mall Velachery opens soon on Velachery–Madipakkam Road near Padmavathi Nagar with a multiplex, bowling, VR gaming, food court, brands and basement parking.",
+      url: "https://www.superchennai.com/trending-chennai/xb-mall-velachery-madipakkam-road",
+    },
+  },
+
+  
+
+
+  {
+    id: 102355,
+    name: "A DREAM BUILT ON DETERMINATION – ASWIN'S REMARKABLE FOOTBALL JOURNEY",
+    slug: "aswin-kathirvel-chennai-footballer-minerva-academy",
+    para: "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy win the prestigious Gothia Cup and Helsinki Cup 2026, inspiring young footballers across India.",
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "Achievement",
+    TrendingCalendarCategory: "Sports | Football | Chennai | Trending",
+    Homeimage: "/images/Ashwin-foodball.jpeg",
+    image: "/images/Ashwin-foodball.jpeg",
+    link: "/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
+    duration: "Achievement",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Sports | Football | Youth Achievement",
+    venue: "Chennai / Europe",
+
+    trendingDetails: `
 <p>
 ⚽ At just <b>11 years old</b>, <b>Aswin Kathirvel Narayanan</b> from Chennai has become an inspiration through his extraordinary journey of resilience, determination, and sporting excellence.
 </p>
@@ -7646,34 +7809,34 @@ Today, those championship trophies represent much more than sporting success. Th
 </p>
 `,
 
-  TrendingLink:
-    "https://www.instagram.com/p/DbYOqKDzL9w/?igsh=bm5ocG53aDZzb2g0",
-  YoutubeLink: "",
+    TrendingLink:
+      "https://www.instagram.com/p/DbYOqKDzL9w/?igsh=bm5ocG53aDZzb2g0",
+    YoutubeLink: "",
 
-  meta: {
-    title: "Chennai's Aswin Shines in Minerva's Gothia & Helsinki Cup Wins",
-    desc: "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy lift the Gothia Cup and Helsinki Cup 2026, making the city proud.",
-    url: "https://www.superchennai.com/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
+    meta: {
+      title: "Chennai's Aswin Shines in Minerva's Gothia & Helsinki Cup Wins",
+      desc: "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy lift the Gothia Cup and Helsinki Cup 2026, making the city proud.",
+      url: "https://www.superchennai.com/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
+    },
   },
-},
   {
-  id: 1023524,
-  name: "UNIVERSITY OF WESTERN AUSTRALIA TO OPEN FIRST INDIA CAMPUS IN VELACHERY",
-  slug: "uwa-first-india-campus-velachery-chennai",
-  para: "The University of Western Australia will establish its first India campus in Velachery, Chennai, creating over 200 jobs through a Rs 125 crore investment.",
-  TrendingCalendarMonth: "Late 2026",
-  TrendingCalendarTime: "Coming Soon",
-  TrendingCalendarCategory: "Education | International | Chennai | Trending",
-  Homeimage: "/images/UWA-VELACHERY-main.jpeg",
-  image: "/images/UWA-VELACHERY-inner.jpeg",
-  link: "/trending-chennai/uwa-first-india-campus-velachery-chennai",
-  duration: "Permanent Campus",
-  ageRestriction: "Open for All",
-  language: "English",
-  genre: "Education | International University | Higher Education",
-  venue: "One National Park, Velachery, Chennai",
+    id: 1023524,
+    name: "UNIVERSITY OF WESTERN AUSTRALIA TO OPEN FIRST INDIA CAMPUS IN VELACHERY",
+    slug: "uwa-first-india-campus-velachery-chennai",
+    para: "The University of Western Australia will establish its first India campus in Velachery, Chennai, creating over 200 jobs through a Rs 125 crore investment.",
+    TrendingCalendarMonth: "Late 2026",
+    TrendingCalendarTime: "Coming Soon",
+    TrendingCalendarCategory: "Education | International | Chennai | Trending",
+    Homeimage: "/images/UWA-VELACHERY-main.jpeg",
+    image: "/images/UWA-VELACHERY-inner.jpeg",
+    link: "/trending-chennai/uwa-first-india-campus-velachery-chennai",
+    duration: "Permanent Campus",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Education | International University | Higher Education",
+    venue: "One National Park, Velachery, Chennai",
 
-  trendingDetails: `
+    trendingDetails: `
 <p>
 🎓 The <b>University of Western Australia (UWA)</b> is set to establish its <b>first campus in India</b> at <b>One National Park, Velachery, Chennai</b>, marking a major milestone in international higher education for Tamil Nadu.
 </p>
@@ -7691,15 +7854,15 @@ With the arrival of UWA, students in India will gain access to internationally r
 </p>
 `,
 
-  TrendingLink: "",
-  YoutubeLink: "",
+    TrendingLink: "",
+    YoutubeLink: "",
 
-  meta: {
-    title: "UWA to Open First India Campus in Velachery | Super Chennai",
-    desc: "University of Western Australia to open Tamil Nadu's first international university campus in Velachery, Chennai, creating 200+ jobs with a Rs 125 crore investment.",
-    url: "https://www.superchennai.com/trending-chennai/uwa-first-india-campus-velachery-chennai",
+    meta: {
+      title: "UWA to Open First India Campus in Velachery | Super Chennai",
+      desc: "University of Western Australia to open Tamil Nadu's first international university campus in Velachery, Chennai, creating 200+ jobs with a Rs 125 crore investment.",
+      url: "https://www.superchennai.com/trending-chennai/uwa-first-india-campus-velachery-chennai",
+    },
   },
-},
   {
     id: 102353,
     name: "CHENNAI'S VICTORY WAR MEMORIAL SET FOR A DEFENCE-THEMED TRANSFORMATION",

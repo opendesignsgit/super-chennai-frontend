@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { API_BASE_URL } from "../../../../config";
 import GoluBannerFestiveOverlay from "./BannerAnimation";
 import { parseLexical } from "./Components/pageComponnt";
+import {BrandLogoSection} from "./Components/pageComponnt"
 
 // ==========================================
 // MAIN PAGE LAYOUT CONTAINER
@@ -539,6 +540,7 @@ export default function GoluContestMain() {
               ))}
             </div>
           </div>
+          <BrandLogoSection />
           {pageData?.content &&
             parseLexical(pageData.content, contestStateProps)}
 

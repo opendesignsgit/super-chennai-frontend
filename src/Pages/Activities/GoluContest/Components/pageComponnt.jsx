@@ -1511,6 +1511,119 @@ export const GoluHowItWorksBlockSection = ({ blockFields }) => {
   );
 };
 
+
+// ==========================================
+// BRAND LOGO SLIDER SECTION
+// ==========================================
+export const BrandLogoSection = () => {
+  const logos = [
+    { id: 1, name: "Partner Logo 1", src: "/images/golu-logo/akshayakalapa.png" },
+    { id: 2, name: "Partner Logo 2", src: "/images/golu-logo/credai.png" },
+    { id: 3, name: "Partner Logo 3", src: "/images/golu-logo/giri.png" },
+  ];
+
+  // Continuous infinite marquee loop
+  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos];
+
+  return (
+    <section className="max-w-7xl mx-auto my-10 p-8 md:p-10 bg-white border border-stone-100 rounded-3xl shadow-md font-sans overflow-hidden">
+      <div className="text-center mb-8">
+        <h3 className="text-sm font-black uppercase tracking-widest bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+          Our Valued Partners
+        </h3>
+      </div>
+
+      <div className="relative w-full overflow-hidden flex items-center py-4">
+        {/* Left Blur Overlay */}
+        <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+
+        {/* Moving Slider */}
+        <motion.div
+          className="flex items-center gap-10 md:gap-14 whitespace-nowrap"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            ease: "linear",
+            duration: 18,
+            repeat: Infinity,
+          }}
+        >
+          {duplicatedLogos.map((logo, idx) => (
+            <div
+              key={idx}
+              className="flex-shrink-0 flex items-center justify-center h-24 md:h-28 w-48 md:w-56 px-6 py-4 bg-white hover:bg-purple-50/40 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1.5 cursor-pointer"
+            >
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="max-h-16 md:max-h-20 w-auto max-w-full object-contain"
+              />
+            </div>
+          ))}
+        </motion.div>
+
+        {/* Right Blur Overlay */}
+        <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+      </div>
+    </section>
+  );
+};
+
+// // ==========================================
+// // BRAND LOGO SLIDER SECTION
+// // ==========================================
+// export const BrandLogoSection = () => {
+//   const logos = [
+//     { id: 1, name: "Partner Logo 1", src: "/images/golu-logo/akshayakalapa.png" },
+//     { id: 2, name: "Partner Logo 2", src: "/images/golu-logo/credai.png" },
+//     { id: 3, name: "Partner Logo 3", src: "/images/golu-logo/giri.png" },
+//   ];
+
+//   // Continuous infinite marquee loop
+//   const duplicatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos];
+
+//   return (
+//     <section className="max-w-7xl mx-auto my-8 p-6 md:p-8 bg-white border border-stone-100 rounded-3xl shadow-sm font-sans overflow-hidden">
+//       <div className="text-center mb-6">
+//         <h3 className="text-xs font-black uppercase tracking-widest text-indigo-900/60">
+//           Our Valued Partners
+//         </h3>
+//       </div>
+
+//       <div className="relative w-full overflow-hidden flex items-center">
+//         {/* Left Blur Overlay */}
+//         <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+
+//         {/* Moving Slider */}
+//         <motion.div
+//           className="flex items-center gap-12 md:gap-16 whitespace-nowrap"
+//           animate={{ x: ["0%", "-50%"] }}
+//           transition={{
+//             ease: "linear",
+//             duration: 15,
+//             repeat: Infinity,
+//           }}
+//         >
+//           {duplicatedLogos.map((logo, idx) => (
+//             <div
+//               key={idx}
+//               className="flex-shrink-0 flex items-center justify-center h-16 w-32 md:w-40 px-4 py-2 bg-stone-50/60 hover:bg-stone-100/80 rounded-2xl border border-stone-200/50 transition-all duration-300 transform hover:-translate-y-1 grayscale hover:grayscale-0 opacity-80 hover:opacity-100 cursor-pointer"
+//             >
+//               <img
+//                 src={logo.src}
+//                 alt={logo.name}
+//                 className="max-h-12 max-w-full object-contain"
+//               />
+//             </div>
+//           ))}
+//         </motion.div>
+
+//         {/* Right Blur Overlay */}
+//         <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+//       </div>
+//     </section>
+//   );
+// };
+
 /* ---------------------------------------------
    Lexical Helpers
 --------------------------------------------- */

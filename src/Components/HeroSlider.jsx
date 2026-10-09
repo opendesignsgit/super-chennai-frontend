@@ -182,13 +182,13 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    image: "/images/Baradwaj-review-desktop.jpeg",
-    link: "arattai-with-baradwaj-rangan-film-critic",
-    image1: "/images/Baradwaj-review.-mobile.jpeg",
-    title: "chennai's surfing",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   image: "/images/Baradwaj-review-desktop.jpeg",
+  //   link: "arattai-with-baradwaj-rangan-film-critic",
+  //   image1: "/images/Baradwaj-review.-mobile.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   {
     image: "/images/golu-backup.jpeg",

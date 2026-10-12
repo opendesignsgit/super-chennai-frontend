@@ -26,9 +26,13 @@ export const GoluContestBlockSection = ({
   errorMessage,
   showRegSuccessModal,
   setShowRegSuccessModal,
-  showAlreadyRegisteredModal,      
-  setShowAlreadyRegisteredModal,    
-  existingUserData,              
+  showAlreadyRegisteredModal,
+  setShowAlreadyRegisteredModal,
+photoDriveLink,
+setPhotoDriveLink,
+  showAlreadySubmittedModal,
+  setShowAlreadySubmittedModal,
+  existingUserData,
   handleSendOtp,
   handleVerifyOtp,
   handleRegisterUser,
@@ -42,7 +46,6 @@ export const GoluContestBlockSection = ({
   const goluMax = blockFields?.goluMaxImages ?? 5;
   const scMin = blockFields?.superChennaiMinImages ?? 1;
   const scMax = blockFields?.superChennaiMaxImages ?? 3;
-  
 
   return (
     <div className="w-full my-8">
@@ -239,11 +242,42 @@ export const GoluContestBlockSection = ({
         </div>
       )}
 
+      {showAlreadySubmittedModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+          <div className="w-full max-w-md rounded-3xl bg-white p-8 text-center shadow-2xl">
+            <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-amber-100 text-4xl">
+              🪔
+            </div>
+
+            <h3 className="mb-3 text-2xl font-black text-[#312c85]">
+              Already Submitted!
+            </h3>
+
+            <p className="mb-6 text-sm leading-6 text-gray-600">
+              You have already uploaded your Golu photographs using this mobile
+              number. Please use a different mobile number to participate in the
+              contest.
+            </p>
+
+            <button
+              type="button"
+              onClick={() => {
+                setShowAlreadySubmittedModal(false);
+                localStorage.removeItem("golu_auth_token");
+                window.location.reload();
+              }}
+              className="w-full rounded-xl bg-[#312c85] py-3.5 font-bold text-white hover:bg-[#221f58]"
+            >
+              Use Another Number
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* 2. REGISTRATION SUCCESS MODAL POPUP */}
       {showRegSuccessModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fadeIn">
           <div className="bg-white rounded-3xl p-6 md:p-8 max-w-md w-full text-center border border-stone-100 shadow-2xl relative transform transition-all">
-            
             <button
               onClick={() => setShowRegSuccessModal(false)}
               className="absolute top-4 right-4 text-stone-400 hover:text-stone-700 text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full bg-stone-100"
@@ -251,17 +285,14 @@ export const GoluContestBlockSection = ({
               ✕
             </button>
 
-           
             <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-5 text-4xl shadow-inner">
               🎉
             </div>
 
-            
             <h3 className="text-2xl font-black text-indigo-950 uppercase mb-2">
               REGISTRATION SUCCESSFUL! 🎉
             </h3>
 
-            
             <p className="text-stone-600 text-sm mb-6 leading-relaxed">
               Your Golu registration is complete!
               <span className="font-bold text-indigo-950">
@@ -273,14 +304,12 @@ export const GoluContestBlockSection = ({
               📸✨
             </p>
 
-           
             <button
               onClick={() => setShowRegSuccessModal(false)}
               className="w-full py-3.5 bg-[#312c85] hover:bg-[#221f58] text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all text-sm uppercase tracking-wider"
             >
               Upload Golu Photos Now
             </button>
-          
           </div>
         </div>
       )}
@@ -301,7 +330,6 @@ export const GoluContestBlockSection = ({
             </p>
 
             <form onSubmit={handleSubmitGolu} className="space-y-8">
-             
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <label className="text-sm font-semibold text-stone-800">
@@ -350,7 +378,6 @@ export const GoluContestBlockSection = ({
                 </div>
               </div>
 
-             
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <label className="text-sm font-semibold text-stone-800">
@@ -403,7 +430,6 @@ export const GoluContestBlockSection = ({
                 </div>
               </div>
 
-              
               <div>
                 <label className="block text-sm font-semibold text-stone-800 mb-2">
                   3. ABOUT YOUR GOLU (Optional)
@@ -413,6 +439,20 @@ export const GoluContestBlockSection = ({
                   value={aboutGolu}
                   onChange={(e) => setAboutGolu(e.target.value)}
                   placeholder="Tell us about your theme, dolls, or special decorations..."
+                  className="w-full p-4 rounded-xl border border-stone-300 outline-none focus:border-[#8B3C82] text-sm"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-stone-800 mb-2">
+                  4. GOOGLE DRIVE / ONEDRIVE LINK (Optional)
+                </label>
+
+                <input
+                  type="text"
+                  value={photoDriveLink}
+                  onChange={(e) => setPhotoDriveLink(e.target.value)}
+                  placeholder="Paste Google Drive, OneDrive, or any cloud storage link"
                   className="w-full p-4 rounded-xl border border-stone-300 outline-none focus:border-[#8B3C82] text-sm"
                 />
               </div>
@@ -1567,6 +1607,7 @@ export const BrandLogoSection = () => {
     </section>
   );
 };
+
 
 
 /* ---------------------------------------------

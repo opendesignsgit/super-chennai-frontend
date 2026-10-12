@@ -30,12 +30,15 @@ export default function GoluContestMain() {
   const [goluImages, setGoluImages] = useState([]);
   const [superChennaiImages, setSuperChennaiImages] = useState([]);
   const [aboutGolu, setAboutGolu] = useState("");
+  const [photoDriveLink, setPhotoDriveLink] = useState("");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [showRegSuccessModal, setShowRegSuccessModal] = useState(false);
   const [showAlreadyRegisteredModal, setShowAlreadyRegisteredModal] =
     useState(false);
   const [existingUserData, setExistingUserData] = useState(null);
+  const [showAlreadySubmittedModal, setShowAlreadySubmittedModal] =  useState(false);
+ 
 
   const CONTEST_SETTINGS = {
     goluMinImages: 2,
@@ -183,8 +186,47 @@ export default function GoluContestMain() {
         }));
       }
 
+      // if (authMode === "login") {
+      //   setCurrentStep("SUBMIT");
+      // } else {
+      //   setCurrentStep("REGISTRATION");
+      // }
+
       if (authMode === "login") {
-        setCurrentStep("SUBMIT");
+        const participantId = data.user?.id || data.user?._id || userData.id;
+
+        if (!participantId) {
+          throw new Error("Participant ID not found. Please login again.");
+        }
+
+        const checkRes = await fetch(
+          `${API_BASE_URL}/api/golu/check-submission`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              ...(data.token && {
+                Authorization: `Bearer ${data.token}`,
+              }),
+            },
+            body: JSON.stringify({ participantId }),
+          },
+        );
+
+        const checkData = await checkRes.json();
+
+        if (!checkRes.ok) {
+          throw new Error(
+            checkData.message || "Unable to check previous submission.",
+          );
+        }
+
+        if (checkData.alreadySubmitted) {
+          setShowAlreadySubmittedModal(true);
+          setCurrentStep("LANDING");
+        } else {
+          setCurrentStep("SUBMIT");
+        }
       } else {
         setCurrentStep("REGISTRATION");
       }
@@ -354,6 +396,7 @@ export default function GoluContestMain() {
           image: id,
         })),
         ...(formattedAboutGolu && { aboutYourGolu: formattedAboutGolu }),
+         photoDriveLink: photoDriveLink,
         status: "pendingReview",
       };
 
@@ -415,6 +458,7 @@ export default function GoluContestMain() {
     setShowRegSuccessModal(false);
     setShowAlreadyRegisteredModal(false);
     setExistingUserData(null);
+    setPhotoDriveLink("");
   };
 
   if (loadingContent) {
@@ -448,12 +492,17 @@ export default function GoluContestMain() {
     superChennaiImages,
     aboutGolu,
     setAboutGolu,
+    photoDriveLink,
+    setPhotoDriveLink,
     loading,
     errorMessage,
     showRegSuccessModal,
     setShowRegSuccessModal,
     showAlreadyRegisteredModal,
     setShowAlreadyRegisteredModal,
+     setShowAlreadySubmittedModal,
+     showAlreadySubmittedModal,
+
     existingUserData,
     handleSendOtp,
     handleVerifyOtp,

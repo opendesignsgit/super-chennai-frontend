@@ -278,9 +278,13 @@ const Footer = () => {
       title: "Sing Along Metro",
       link: "/contest/madras-day-2026-midnight-metro-ride",
     },
-     {
+    {
       title: "Let's talk chennai",
       link: "https://letstalkchennai.com/",
+    },
+    {
+      title: "Navaratri Golu",
+      link: "/contest/navaratri-golu",
     },
   ];
 

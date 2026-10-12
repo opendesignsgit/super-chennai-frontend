@@ -62,16 +62,25 @@ export default function IconofthemonthBharathwajRangan() {
           <strong>Super Chennai’s Arattai</strong>, that perspective comes alive
           through an open conversation with Baradwaj Rangan, where cinema,
           stories, filmmaking, and everything in between take centre stage.{" "}
-          <strong>
-            Join us in person on 9 October 2026 for the conversation.
-          </strong>
+          <strong>The Conversation Has Happened!</strong>
+          Baradwaj Rangan joined Super Chennai’s Arattai for an engaging
+          in-person conversation on 9 October 2026.
         </>
       ),
     },
     {
       desc: (
         <>
-          <strong>Want to be part of the conversation? Register here →</strong>
+          <strong>The Conversation Has Happened!</strong> Baradwaj Rangan joined
+          Super Chennai’s Arattai for an engaging in-person conversation on 9
+          October 2026.
+        </>
+      ),
+    },
+    {
+      desc: (
+        <>
+          {/* <strong>Want to be part of the conversation? Register here →</strong> */}
         </>
       ),
     },
@@ -284,12 +293,12 @@ export default function IconofthemonthBharathwajRangan() {
   return (
     <>
       <Helmet>
-        <title>Arun Jain – Intellect Design Arena | Icon of the Month</title>
+        <title>Baradwaj Rangan – Film Critic, Author | Icon of the Month</title>
         <meta
           name="description"
-          content="Super Chennai's Icon of the Month — Arun Jain, CMD of Intellect Design Arena, on building global FinTech institutions and championing Design Thinking from India"
+          content="Super Chennai's Icon of the Month — Baradwaj Rangan, National Award-winning film critic and Editor-in-Chief of Galatta Plus, on Indian cinema and film criticism"
         />
-        <link rel="canonical" href="/icon-of-the-june-month-2026" />
+        <link rel="canonical" href="/icon-of-the-july-month-2026" />
       </Helmet>
 
       <div className="InvestPageId">
@@ -324,8 +333,9 @@ export default function IconofthemonthBharathwajRangan() {
               </h2>
               <p>
                 Baradwaj Rangan has spent years making film conversations
-                smarter, sharper, and easier to  <br /> connect with. From reviews to
-                interviews, his take on cinema always goes beyond the obvious.
+                smarter, sharper, and easier to <br /> connect with. From
+                reviews to interviews, his take on cinema always goes beyond the
+                obvious.
               </p>
             </div>
 
@@ -370,6 +380,14 @@ export default function IconofthemonthBharathwajRangan() {
                     </div>
                   </div>
                 ))}
+
+                <Link
+                  to="/arattai-with-baradwaj-rangan-film-critic"
+                  className="mt-6 inline-flex items-center justify-center rounded-full bg-[#a34493] px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:bg-[#8b3c82] hover:shadow-lg hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[#a34493] focus:ring-offset-2"
+                >
+                  View Event Highlights
+                  <span className="ml-2">→</span>
+                </Link>
               </div>
             </div>
           </div>

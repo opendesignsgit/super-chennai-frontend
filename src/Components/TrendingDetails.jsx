@@ -10,18 +10,7 @@ export default function TrendingDetails() {
 
   const [event, setEvent] = useState(null);
 
-  // useEffect(() => {
-  //   if (location.state) {
-  //     setEvent(location.state);
-  //   } else {
-  //     const found = panesContent.find((e) => e.slug === Number(slug));
-  //     if (found) {
-  //       setEvent(found);
-  //     } else {
-  //       navigate("/events", { replace: true });
-  //     }
-  //   }
-  // }, [slug, location.state, navigate]);
+
 
   useEffect(() => {
     const found = panesContent.find((e) => e.slug === slug);
@@ -1697,6 +1686,125 @@ export default function TrendingDetails() {
      },
    ];
 
+    const lulumarget = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai/lulu-hypermarket-chennai-shenoy-nagar-central-metro",
+        },
+        headline: "LULU HYPERMARKET CHENNAI AT SHENOY NAGAR & CENTRAL METRO",
+        description:
+          "LuLu Hypermarket Chennai opens Oct 12, 2026 at Shenoy Nagar and Chennai Central Metro with a hypermarket, LuLu Daily, fashion, electronics and a food court.",
+        image: "https://www.superchennai.com/images/Lulu%20Market%20Inner.jpg",
+        author: {
+          "@type": "",
+          name: "",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "2026-10-12",
+      },
+    ];
+
+    const fackSangeeth2 = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai/fake-sangeet-chennai-phoenix-marketcity",
+        },
+        headline: "FAKE SANGEET CHENNAI 2.0 AT PHOENIX MARKETCITY",
+        description:
+          "Fake Sangeet Chennai 2.0 hits Phoenix Marketcity on Oct 16, 2026, 7 PM–2 AM. Bollywood and Kollywood DJ sets, live dhol, ethnic wear only. Passes from ₹699.",
+        image:
+          "https://www.superchennai.com/images/Fake%20Sangeeth%20-%20Home.jpg",
+        author: {
+          "@type": "",
+          name: "",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "2026-10-16",
+        dateModified: "2026-10-17",
+      },
+    ];
+
+    const velacherimall = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai/xb-mall-velachery-madipakkam-road",
+        },
+        headline: "XB MALL VELACHERY – MULTIPLEX, BOWLING & MORE OPENING SOON",
+        description:
+          "XB Mall Velachery opens soon on Velachery–Madipakkam Road near Padmavathi Nagar with a multiplex, bowling, VR gaming, food court, brands and basement parking.",
+        image: "https://www.superchennai.com/images/XB%20Mall%20Inner.jpg",
+        author: {
+          "@type": "",
+          name: "",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "",
+      },
+    ];
+
+    const porurmetro = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai/chennai-metro-phase-2-poonamallee-vadapalani-line-open",
+        },
+        headline:
+          "Chennai Metro Phase 2: Poonamallee–Vadapalani Line Opens to the Public",
+        description:
+          "Chennai Metro Phase 2 opens Poonamallee–Vadapalani, inaugurated by PM Modi and the TN CM, with 10-minute peak-hour trains for faster, smoother city commutes.",
+        image: "https://www.superchennai.com/images/innwer-porur-metro.jpeg",
+        author: {
+          "@type": "",
+          name: "",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "2026-10-11",
+      },
+    ];
+  
       return (
         <>
           <Helmet>
@@ -1724,6 +1832,32 @@ export default function TrendingDetails() {
               rel="canonical"
               href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
             />
+
+                        {slug === "trending-chennai/ chennai-metro-phase-2-poonamallee-vadapalani-line-open" && (
+              <script type="application/ld+json">
+                {JSON.stringify(porurmetro)}
+              </script>
+            )}
+
+            {slug === "trending-chennai/xb-mall-velachery-madipakkam-road" && (
+              <script type="application/ld+json">
+                {JSON.stringify(velacherimall)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/fake-sangeet-chennai-phoenix-marketcity" && (
+              <script type="application/ld+json">
+                {JSON.stringify(fackSangeeth2)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/lulu-hypermarket-chennai-shenoy-nagar-central-metro" && (
+              <script type="application/ld+json">
+                {JSON.stringify(lulumarget)}
+              </script>
+            )}
 
             {slug === "uwa-first-india-campus-velachery-chennai" && (
               <script type="application/ld+json">

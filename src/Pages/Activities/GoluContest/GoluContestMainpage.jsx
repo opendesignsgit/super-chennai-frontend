@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { API_BASE_URL } from "../../../../config";
 import GoluBannerFestiveOverlay from "./BannerAnimation";
 import { parseLexical } from "./Components/pageComponnt";
-import {BrandLogoSection} from "./Components/pageComponnt"
+import { BrandLogoSection } from "./Components/pageComponnt";
 
 // ==========================================
 // MAIN PAGE LAYOUT CONTAINER
@@ -33,7 +33,8 @@ export default function GoluContestMain() {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [showRegSuccessModal, setShowRegSuccessModal] = useState(false);
-  const [showAlreadyRegisteredModal, setShowAlreadyRegisteredModal] = useState(false);
+  const [showAlreadyRegisteredModal, setShowAlreadyRegisteredModal] =
+    useState(false);
   const [existingUserData, setExistingUserData] = useState(null);
 
   const CONTEST_SETTINGS = {
@@ -124,7 +125,9 @@ export default function GoluContestMain() {
       const data = await res.json();
 
       if (!res.ok) {
-        throw new Error(data.message || "Failed to send OTP. Please try again.");
+        throw new Error(
+          data.message || "Failed to send OTP. Please try again.",
+        );
       }
 
       // பயனர் ஏற்கனவே பதிவு செய்திருந்தால் Modal காட்டும் லோஜிக்
@@ -341,6 +344,8 @@ export default function GoluContestMain() {
             },
           }
         : null;
+
+        
 
       const payloadBody = {
         participant: userData.id,

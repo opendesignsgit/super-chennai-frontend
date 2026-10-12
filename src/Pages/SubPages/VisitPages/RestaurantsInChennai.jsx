@@ -18,6 +18,34 @@ const detailsections = [
     id: 3,
     title: "Global & Continental Cuisine",
     points: [
+       {
+        name: "Fazari Restaurant",
+        date: "22/10/2026",
+        description:
+          "Fazari Restaurant celebrated the grand opening of its fourth Chennai branch on September 30, 2026, with a ribbon-cutting ceremony led by Thiru. A. M. Shahjahan, Minister for Minorities Welfare and Waqf Board.",
+        subDescription:
+          "Established in Chrompet in 2016, Fazari offers a diverse menu featuring Arabic flavours, Malabar favourites, tandoori dishes, and South Indian specialities, providing guests with a variety of culinary choices.",
+        locations: [
+          {
+            label: "OMR",
+            link: "https://maps.app.goo.gl/YBPQhFZt5zJW73Yq7",
+          },
+        ],
+      },
+      {
+        name: "Livingroom Signature",
+        date: "22/10/2026",
+        description:
+          "Livingroom Signature is a bar in Adyar, Chennai, featuring a curated selection of food, drinks, and entertainment.",
+        subDescription:
+          "Throughout October 2026, the venue has announced a lineup of dining experiences, beverage offerings, and music events, giving guests opportunities to enjoy good food and live entertainment in a lively setting.",
+        locations: [
+          {
+            label: "Adyar",
+            link: "https://maps.app.goo.gl/CMpiEejwRpX13p8r8",
+          },
+        ],
+      },
       {
         name: "The Brunch Theory",
         date: "22/07/2026",
@@ -788,6 +816,34 @@ const detailsections = [
     id: 5,
     title: "Cafés & Casual Bites",
     points: [
+       {
+        name: "Aswin Sweets",
+        date: "22/10/2026",
+        description:
+          "Aswin Sweets is a snack bar offering a variety of sweets, savoury snacks, and quick bites. Its new branch opened on October 2, 2026, with special opening-day discounts on sweets and snacks.",
+        subDescription:
+          "The menu includes rasagulla, gulab jamun, baklava, pani puri, bhel puri, samosas, momos, burgers, shawarma, waffles, dosa, pav bhaji, tandoori chai, fresh juices, and milkshakes.",
+        locations: [
+          {
+            label: "T. Nagar",
+            link: "https://maps.app.goo.gl/L53CzrZgTnBQNFN6A",
+          },
+        ],
+      },
+      {
+        name: "Shree Anandhaas Sweets & Snacks",
+        date: "22/10/2026",
+        description:
+          "Shree Anandhaas Sweets & Snacks opened its new branch on October 5, 2026, from 7:15 AM onwards.",
+        subDescription:
+          "The shop offers a range of traditional Indian sweets, crunchy savouries, and chaat varieties. Customers can also order their favourite sweets and snacks online through Swiggy and Zomato, with surprise gifts offered as part of the branch launch.",
+        locations: [
+          {
+            label: "Kilpauk",
+            link: "https://maps.app.goo.gl/DvL84zrV8s2qTSga7",
+          },
+        ],
+      },
       {
         name: "EasyBites",
         date: "22/07/2026",
@@ -2041,59 +2097,74 @@ const detailsections = [
       //     },
       //   ],
       // },
+
+       {
+        name: "Dhe Puttu",
+        date: "22/10/2026",
+        description:
+          "Dhe Puttu is a popular Kerala cuisine restaurant chain that opened a new branch on October 1, 2026, officially inaugurated by actor Dileep.",
+        subDescription:
+          "Located at 42/36, Venkatesa Nagar 1st Street, near Rajarajeshwari Temple, Anna Nagar, the restaurant offers Kerala-style dishes in a welcoming dining setting, focusing on authentic Keralan flavours and traditional Kerala cuisine.",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/7C9JoLoBU2s7E5vD9",
+          },
+        ],
+      },
       {
-  name: "Upavihar",
-  date: "28/09/2026",
-  description:
-    "It is a popular vegetarian restaurant serving authentic Udupi and South Indian favourites, along with filter coffee, chaats, and select Chinese dishes. With multiple outlets across Chennai, it offers a comforting dining experience with traditional flavours.",
-  subDescription: "",
-  locations: [
-    {
-      label: "Anna Nagar",
-      link: "https://maps.app.goo.gl/jNBsyX3T2xFxdmLe6",
-    },
-    {
-      label: "Egmore",
-      link: "https://maps.app.goo.gl/YXw37294iTQ7sTt2A",
-    },
-    {
-      label: "Kovilambakkam",
-      link: "https://maps.app.goo.gl/oyxtnkw3z4w2b3Uq9",
-    },
-    {
-      label: "Navalur",
-      link: "https://maps.app.goo.gl/uokaHnn2V1eKNLRQ6",
-    },
-  ],
-},
+        name: "Upavihar",
+        date: "28/09/2026",
+        description:
+          "It is a popular vegetarian restaurant serving authentic Udupi and South Indian favourites, along with filter coffee, chaats, and select Chinese dishes. With multiple outlets across Chennai, it offers a comforting dining experience with traditional flavours.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "https://maps.app.goo.gl/jNBsyX3T2xFxdmLe6",
+          },
+          {
+            label: "Egmore",
+            link: "https://maps.app.goo.gl/YXw37294iTQ7sTt2A",
+          },
+          {
+            label: "Kovilambakkam",
+            link: "https://maps.app.goo.gl/oyxtnkw3z4w2b3Uq9",
+          },
+          {
+            label: "Navalur",
+            link: "https://maps.app.goo.gl/uokaHnn2V1eKNLRQ6",
+          },
+        ],
+      },
 
-{
-  name: "Sangeetha Veg Restaurant",
-  date: "28/09/2026",
-  description:
-    "Sangeetha Veg Restaurant, established in 1985, is a popular vegetarian restaurant chain in Chennai, known for South Indian dishes, sweets, and savouries. Its new Thoraipakkam OMR outlet opened on September 28, 2026, with a special 50% off dine-in offer on all food items from September 28 to 30, 2026.",
-  subDescription: "",
-  locations: [
-    {
-      label: "Thoraipakkam, OMR",
-      link: "https://maps.app.goo.gl/WkRvNEr4Ho6kRWtbA",
-    },
-  ],
-},
+      {
+        name: "Sangeetha Veg Restaurant",
+        date: "28/09/2026",
+        description:
+          "Sangeetha Veg Restaurant, established in 1985, is a popular vegetarian restaurant chain in Chennai, known for South Indian dishes, sweets, and savouries. Its new Thoraipakkam OMR outlet opened on September 28, 2026, with a special 50% off dine-in offer on all food items from September 28 to 30, 2026.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Thoraipakkam, OMR",
+            link: "https://maps.app.goo.gl/WkRvNEr4Ho6kRWtbA",
+          },
+        ],
+      },
 
-{
-  name: "Keerthana Restaurant",
-  date: "28/09/2026",
-  description:
-    "Keerthana Restaurant in Thoraipakkam, Chennai, officially opened its doors on August 30, 2026. The restaurant serves authentic Andhra cuisine, including unlimited non-vegetarian meals and Hyderabadi Dum Biryani.",
-  subDescription: "",
-  locations: [
-    {
-      label: "Thoraipakkam",
-      link: "https://maps.app.goo.gl/hwNSxmvhw585efGn9",
-    },
-  ],
-},
+      {
+        name: "Keerthana Restaurant",
+        date: "28/09/2026",
+        description:
+          "Keerthana Restaurant in Thoraipakkam, Chennai, officially opened its doors on August 30, 2026. The restaurant serves authentic Andhra cuisine, including unlimited non-vegetarian meals and Hyderabadi Dum Biryani.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Thoraipakkam",
+            link: "https://maps.app.goo.gl/hwNSxmvhw585efGn9",
+          },
+        ],
+      },
       {
         name: "Madurai & Chettinad Mess",
         date: "01/07/2026",
@@ -2386,6 +2457,22 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
+
+       {
+        name: "Firo",
+        date: "22/10/2026",
+        description:
+          "Firo is a contemporary Indian restaurant and cocktail bar in Chennai, launched in 2025.",
+        subDescription:
+          "The dining space occupies the former Velveteen Rabbit premises and offers a modern take on Indian cuisine.",
+        locations: [
+          {
+            label: "Raja Annamalaipuram",
+            link: "https://maps.app.goo.gl/j3iZtD8QdRswghHb6",
+          },
+        ],
+      },
+
       {
         name: "Parva",
         date: "22/07/2026",
@@ -2829,34 +2916,23 @@ export default function Restaurants() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isNewBatch = (dateStr) => {
-    if (!dateStr) return false;
 
-    const [day, month, year] = dateStr.split("/").map(Number);
-    const itemDate = new Date(year, month - 1, day);
+const isNewBatch = (dateStr) => {
+  if (!dateStr) return false;
 
-    const today = new Date();
+  const [day, month, year] = dateStr.split("/").map(Number);
 
-    // Remove time part
-    itemDate.setHours(0, 0, 0, 0);
-    today.setHours(0, 0, 0, 0);
+  const itemDate = new Date(year, month - 1, day);
+  const startDate = new Date(2026, 9, 1);  // October 1, 2026
+  const endDate = new Date(2026, 9, 22);   // October 22, 2026
 
-    const diffInDays = Math.floor((today - itemDate) / (1000 * 60 * 60 * 24));
+  itemDate.setHours(0, 0, 0, 0);
+  startDate.setHours(0, 0, 0, 0);
+  endDate.setHours(23, 59, 59, 999);
 
-    return diffInDays >= 0 && diffInDays <= 10;
-  };
-
-  // const isNewBatch = (dateStr) => {
-  //   if (!dateStr) return false;
-
-  //   const [day, month, year] = dateStr.split("/").map(Number);
-  //   const itemDate = new Date(year, month - 1, day);
-
-  //   const startDate = new Date(2026, 6, 1); // July 1, 2026
-  //   const endDate = new Date(2026, 6, 15); // July 15, 2026
-
-  //   return itemDate >= startDate && itemDate <= endDate;
-  // };
+  return itemDate >= startDate && itemDate <= endDate;
+};
+  
 
   return (
     <>

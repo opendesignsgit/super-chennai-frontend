@@ -21,6 +21,11 @@ export default function MenuBar({ setMenuBar }) {
       href: "https://letstalkchennai.com/",
     },
 
+      {
+      label: "Navaratri Golu",
+      href: "/contest/navaratri-golu",
+    },
+
     // { label: "Day to deliver-quiz", href: "/day-to-deliver-quiz" },
     { label: "Voice Of Chennai", href: "/voice-of-chennai" },
 

@@ -7611,6 +7611,54 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+  {
+    id: 102357,
+    name: "CHENNAI METRO PHASE 2: POONAMALLEE–VADAPALANI LINE OPENS TO THE PUBLIC",
+    slug: "chennai-metro-phase-2-poonamallee-vadapalani-line-opens",
+    para: "The Chennai Metro Poonamallee–Vadapalani line opened to the public on October 11, 2026, improving connectivity between Poonamallee, Porur and Vadapalani as part of Chennai Metro Phase 2.",
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Chennai Metro | Transport | Infrastructure",
+    Homeimage: "/images/porur-metro-home.jpeg",
+    image: "/images/innwer-porur-metro.jpeg",
+    link: "/trending-chennai/chennai-metro-phase-2-poonamallee-vadapalani-line-opens",
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Chennai Metro | Transport | Infrastructure",
+    venue: "Poonamallee | Porur | Vadapalani",
+
+    trendingDetails: `
+<p>
+🚇 The <b>Chennai Metro Poonamallee–Vadapalani line</b> officially opened for public service on <b>October 11, 2026</b>, following its launch by Prime Minister Narendra Modi and Tamil Nadu Chief Minister C. Joseph Vijay.
+</p>
+
+<p>
+The initial <b>15-km stretch</b> marks an important milestone in Chennai Metro Phase 2, improving connectivity between <b>Poonamallee, Porur and Vadapalani</b>. The inauguration journey covered the Poonamallee to Porur Bypass section.
+</p>
+
+<p>
+Initially, <b>15 trains</b> will operate between <b>7 AM and 9 PM</b>. Commuters can expect a train every <b>10 minutes during peak hours</b> and every <b>15 minutes during non-peak hours</b>.
+</p>
+
+<p>
+Service hours will be extended and train frequency improved after construction work at the six remaining stations between <b>Porur Junction and Vadapalani</b> is completed.
+</p>
+
+<p>
+With this new stretch opening to passengers, Chennai takes another step towards improving daily commutes and expanding public transport connectivity across the city. 🚇
+</p>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Chennai Metro Phase 2: Poonamallee–Vadapalani Line Opens Now",
+      desc: "Chennai Metro Phase 2 opens Poonamallee–Vadapalani, inaugurated by PM Modi and the TN CM, with 10-minute peak-hour trains for faster, smoother city commutes",
+      url: "https://www.superchennai.com/trending-chennai/c chennai-metro-phase-2-poonamallee-vadapalani-line-open",
+    },
+  },
 
   {
     id: 102356,
@@ -7706,8 +7754,7 @@ Guests are expected to come dressed in <b>traditional wear</b>, making it feel j
 </p>
 `,
 
-    TrendingLink:
-      "https://www.instagram.com/reel/DeCJ8Ozv4V9/",
+    TrendingLink: "https://www.instagram.com/reel/DeCJ8Ozv4V9/",
     YoutubeLink: "",
 
     meta: {
@@ -7770,9 +7817,6 @@ As the project moves towards completion, <b>XB Mall could add another major comm
       url: "https://www.superchennai.com/trending-chennai/xb-mall-velachery-madipakkam-road",
     },
   },
-
-  
-
 
   {
     id: 102355,

@@ -5,6 +5,7 @@ import { API_BASE_URL } from "../../../../config";
 import GoluBannerFestiveOverlay from "./BannerAnimation";
 import { parseLexical } from "./Components/pageComponnt";
 import { BrandLogoSection } from "./Components/pageComponnt";
+import { convertHeicToPng } from "./utils/mediaHelpers";
 
 // ==========================================
 // MAIN PAGE LAYOUT CONTAINER
@@ -37,23 +38,49 @@ export default function GoluContestMain() {
   const [showAlreadyRegisteredModal, setShowAlreadyRegisteredModal] =
     useState(false);
   const [existingUserData, setExistingUserData] = useState(null);
-  const [showAlreadySubmittedModal, setShowAlreadySubmittedModal] =  useState(false);
- 
+  const [showAlreadySubmittedModal, setShowAlreadySubmittedModal] =
+    useState(false);
+  const [goluVideo, setGoluVideo] = useState(null);
 
   const CONTEST_SETTINGS = {
     goluMinImages: 2,
     superChennaiMinImages: 1,
   };
 
+  // useEffect(() => {
+  //   const fetchGoluLanding = async () => {
+  //     try {
+  //       setLoadingContent(true);
+  //       const res = await fetch(`${API_BASE_URL}/api/globals/goluLandingPage`);
+  //       const data = await res.json();
+  //       if (res.ok && data) {
+  //         setPageData(data);
+  //       }
+  //     } catch (err) {
+  //       console.error("Golu landing fetch error:", err);
+  //     } finally {
+  //       setLoadingContent(false);
+  //     }
+  //   };
+
+  //   fetchGoluLanding();
+
+  //   const savedToken = localStorage.getItem("golu_auth_token");
+  //   if (savedToken) {
+  //     setAuthToken(savedToken);
+  //     fetchUserData(savedToken);
+  //   }
+  // }, []);
+
   useEffect(() => {
     const fetchGoluLanding = async () => {
       try {
         setLoadingContent(true);
+
         const res = await fetch(`${API_BASE_URL}/api/globals/goluLandingPage`);
         const data = await res.json();
-        if (res.ok && data) {
-          setPageData(data);
-        }
+
+        if (res.ok && data) setPageData(data);
       } catch (err) {
         console.error("Golu landing fetch error:", err);
       } finally {
@@ -64,35 +91,109 @@ export default function GoluContestMain() {
     fetchGoluLanding();
 
     const savedToken = localStorage.getItem("golu_auth_token");
+    const savedParticipantId = localStorage.getItem("golu_participant_id");
+
+    if (savedParticipantId) {
+      setUserData((prev) => ({
+        ...prev,
+        id: savedParticipantId,
+      }));
+    }
+
     if (savedToken) {
       setAuthToken(savedToken);
       fetchUserData(savedToken);
     }
   }, []);
 
+  //   const fetchUserData = async (token) => {
+  //     try {
+  //       setLoading(true);
+  //       const res = await fetch(`${API_BASE_URL}/api/golu-participants/me`, {
+  //         headers: { Authorization: `Bearer ${token}` },
+  //       });
+  //       const data = await res.json();
+
+  //       const participantId = data.user.id || data.user._id;
+
+  // if (participantId) {
+  //   localStorage.setItem("golu_participant_id", String(participantId));
+  // }
+
+  //       if (res.ok && data.user) {
+  //         setUserData({
+  //           id: data.user.id || data.user._id,
+  //           fullName: data.user.fullName || "",
+  //           email: data.user.email || "",
+  //           localityArea: data.user.localityArea || "",
+  //           instagramHandle: data.user.instagramHandle || "",
+  //           termsAccepted: true,
+  //         });
+  //         setMobileNumber(data.user.mobileNumber || "");
+  //       } else {
+  //         localStorage.removeItem("golu_auth_token");
+  //         setAuthToken("");
+  //       }
+  //     } catch (err) {
+  //       console.error("Failed to fetch user context", err);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
   const fetchUserData = async (token) => {
     try {
       setLoading(true);
+
       const res = await fetch(`${API_BASE_URL}/api/golu-participants/me`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       });
-      const data = await res.json();
-      if (res.ok && data.user) {
-        setUserData({
-          id: data.user.id || data.user._id,
-          fullName: data.user.fullName || "",
-          email: data.user.email || "",
-          localityArea: data.user.localityArea || "",
-          instagramHandle: data.user.instagramHandle || "",
-          termsAccepted: true,
-        });
-        setMobileNumber(data.user.mobileNumber || "");
-      } else {
+
+      const data = await res.json().catch(() => ({}));
+
+      // Expired or invalid session
+      if (res.status === 401 || res.status === 403 || (res.ok && !data?.user)) {
         localStorage.removeItem("golu_auth_token");
+        localStorage.removeItem("golu_participant_id");
+
         setAuthToken("");
+        setUserData((prev) => ({
+          ...prev,
+          id: "",
+        }));
+
+        setCurrentStep("LANDING");
+        return;
       }
+
+      if (!res.ok) {
+        throw new Error(data.message || "Unable to restore your session.");
+      }
+
+      const participantId = data.user.id || data.user._id;
+
+      if (!participantId) {
+        throw new Error("Participant ID not found.");
+      }
+
+      localStorage.setItem("golu_participant_id", String(participantId));
+
+      setAuthToken(token);
+
+      setUserData({
+        id: participantId,
+        fullName: data.user.fullName || "",
+        email: data.user.email || "",
+        localityArea: data.user.localityArea || "",
+        instagramHandle: data.user.instagramHandle || "",
+        termsAccepted: true,
+      });
+
+      setMobileNumber(data.user.mobileNumber || "");
     } catch (err) {
-      console.error("Failed to fetch user context", err);
+      console.error("Failed to fetch user context:", err);
     } finally {
       setLoading(false);
     }
@@ -175,6 +276,12 @@ export default function GoluContestMain() {
       }
 
       if (data.user) {
+        const participantId = data.user.id || data.user._id;
+
+        if (participantId) {
+          localStorage.setItem("golu_participant_id", String(participantId));
+        }
+
         setUserData((prev) => ({
           ...prev,
           id: data.user.id || data.user._id,
@@ -285,6 +392,17 @@ export default function GoluContestMain() {
       }
 
       const registeredUser = data.doc || data.user || data;
+
+      const participantId = registeredUser?.id || registeredUser?._id;
+
+      if (participantId) {
+        localStorage.setItem("golu_participant_id", String(participantId));
+
+        setUserData((prev) => ({
+          ...prev,
+          id: participantId,
+        }));
+      }
       if (registeredUser && (registeredUser.id || registeredUser._id)) {
         setUserData((prev) => ({
           ...prev,
@@ -301,31 +419,68 @@ export default function GoluContestMain() {
     }
   };
 
-  const uploadSingleMedia = async (file) => {
-    const formData = new FormData();
-    formData.append("file", file);
-    formData.append("alt", `Golu Contest Upload - ${file.name}`);
+const uploadSingleMedia = async (file) => {
+  const formData = new FormData();
 
-    const res = await fetch(`${API_BASE_URL}/api/media`, {
-      method: "POST",
-      headers: {
-        ...(authToken && { Authorization: `Bearer ${authToken}` }),
-      },
-      body: formData,
-    });
+  // Generate a unique filename for every upload
+  const extension = file.name.includes(".")
+    ? file.name.split(".").pop()
+    : "bin";
 
-    const data = await res.json();
+  const baseName = file.name.replace(/\.[^.]+$/, "");
 
-    if (!res.ok) {
-      throw new Error(
-        data.message || data.errors?.[0]?.message || "Image upload failed.",
-      );
-    }
-    return data.doc?.id || data.doc?._id;
-  };
+  const uniqueFileName = `${baseName}_${Date.now()}_${Math.random()
+    .toString(36)
+    .slice(2, 9)}.${extension}`;
+
+  const renamedFile = new File([file], uniqueFileName, {
+    type: file.type,
+    lastModified: Date.now(),
+  });
+
+  formData.append("file", renamedFile);
+  formData.append("alt", `Golu Contest Upload - ${uniqueFileName}`);
+
+  console.log("Uploading media:", uniqueFileName);
+
+  const res = await fetch(`${API_BASE_URL}/api/media`, {
+    method: "POST",
+    headers: {
+      ...(authToken && {
+        Authorization: `Bearer ${authToken}`,
+      }),
+    },
+    body: formData,
+  });
+
+  const data = await res.json().catch(() => ({}));
+
+  if (!res.ok) {
+    console.error("Media upload failed:", data);
+
+    throw new Error(
+      data.errors?.[0]?.message ||
+      data.message ||
+      "Media upload failed."
+    );
+  }
+
+  const mediaId = data.doc?.id || data.doc?._id || data.id;
+
+  if (!mediaId) {
+    console.error("Media ID missing from response:", data);
+    throw new Error("Media uploaded, but its ID was not returned.");
+  }
+
+  console.log("Media uploaded successfully:", mediaId);
+
+  return mediaId;
+};
+
 
   const handleSubmitGolu = async (e) => {
     e.preventDefault();
+
 
     if (!userData.id) {
       setErrorMessage(
@@ -356,6 +511,12 @@ export default function GoluContestMain() {
         superChennaiImages.map(uploadSingleMedia),
       );
 
+      const goluVideoMediaId = goluVideo
+        ? await uploadSingleMedia(goluVideo)
+        : null;
+
+      console.log("Selected Golu video:", goluVideo);
+      console.log("Uploaded video Media ID:", goluVideoMediaId);
       const formattedAboutGolu = aboutGolu.trim()
         ? {
             root: {
@@ -387,8 +548,6 @@ export default function GoluContestMain() {
           }
         : null;
 
-        
-
       const payloadBody = {
         participant: userData.id,
         goluPhotographs: goluMediaIds.map((id) => ({ image: id })),
@@ -396,9 +555,20 @@ export default function GoluContestMain() {
           image: id,
         })),
         ...(formattedAboutGolu && { aboutYourGolu: formattedAboutGolu }),
-         photoDriveLink: photoDriveLink,
+        photoDriveLink: photoDriveLink,
+
+        ...(goluVideoMediaId && {
+          goluVideo: goluVideoMediaId,
+        }),
         status: "pendingReview",
       };
+
+      console.log("Submission payload:", payloadBody);
+
+      console.log(
+        "Final submission payload:",
+        JSON.stringify(payloadBody, null, 2),
+      );
 
       const res = await fetch(`${API_BASE_URL}/api/golu-submissions`, {
         method: "POST",
@@ -427,25 +597,86 @@ export default function GoluContestMain() {
     }
   };
 
-  const handleImageChange = (e, targetState, maxLimit) => {
-    if (!e.target.files) return;
-    const selectedFiles = Array.from(e.target.files);
-    if (targetState === "golu") {
-      setGoluImages([...goluImages, ...selectedFiles].slice(0, maxLimit));
-    } else {
-      setSuperChennaiImages(
-        [...superChennaiImages, ...selectedFiles].slice(0, maxLimit),
+
+
+  const handleImageChange = async (e, targetState, maxLimit) => {
+    const input = e.target;
+    if (!input.files?.length) return;
+
+    const selectedFiles = Array.from(input.files);
+
+    try {
+      setErrorMessage("");
+
+      const currentImages =
+        targetState === "golu" ? goluImages : superChennaiImages;
+
+      const remaining = maxLimit - currentImages.length;
+
+      if (remaining <= 0) {
+        setErrorMessage(`Maximum ${maxLimit} images allowed.`);
+        return;
+      }
+
+      const filesToProcess = selectedFiles.slice(0, remaining);
+      const processedFiles = await Promise.all(
+        filesToProcess.map(convertHeicToPng),
       );
+
+      if (targetState === "golu") {
+        setGoluImages((prev) =>
+          [...prev, ...processedFiles].slice(0, maxLimit),
+        );
+      } else {
+        setSuperChennaiImages((prev) =>
+          [...prev, ...processedFiles].slice(0, maxLimit),
+        );
+      }
+    } catch (error) {
+      console.error("Image conversion error:", error);
+      setErrorMessage(
+        "Unable to process one or more images. Please try JPG, PNG, or HEIC files again.",
+      );
+    } finally {
+      input.value = "";
     }
   };
 
-  const handleRemoveImage = (index, targetState) => {
-    if (targetState === "golu") {
-      setGoluImages(goluImages.filter((_, i) => i !== index));
-    } else {
-      setSuperChennaiImages(superChennaiImages.filter((_, i) => i !== index));
-    }
-  };
+const handleVideoChange = (e) => {
+  const file = e.target.files?.[0];
+  e.target.value = "";
+
+  if (!file) return;
+
+  if (!file.type.startsWith("video/")) {
+    setErrorMessage("Please select a valid video.");
+    return;
+  }
+
+  const MAX_VIDEO_SIZE = 50 * 1024 * 1024;
+
+  if (file.size > MAX_VIDEO_SIZE) {
+    setErrorMessage("Video must be smaller than 250 MB.");
+    return;
+  }
+
+  console.log("Video selected for direct upload:", {
+    name: file.name,
+    type: file.type,
+    sizeMB: (file.size / (1024 * 1024)).toFixed(2),
+  });
+
+  setErrorMessage("");
+  setGoluVideo(file);
+};
+
+const handleRemoveImage = (index, targetState) => {
+  if (targetState === "golu") {
+    setGoluImages(goluImages.filter((_, i) => i !== index));
+  } else {
+    setSuperChennaiImages(superChennaiImages.filter((_, i) => i !== index));
+  }
+};
 
   const handleReset = () => {
     setCurrentStep("LANDING");
@@ -500,8 +731,11 @@ export default function GoluContestMain() {
     setShowRegSuccessModal,
     showAlreadyRegisteredModal,
     setShowAlreadyRegisteredModal,
-     setShowAlreadySubmittedModal,
-     showAlreadySubmittedModal,
+    setShowAlreadySubmittedModal,
+    showAlreadySubmittedModal,
+    goluVideo,
+    setGoluVideo,
+    handleVideoChange,
 
     existingUserData,
     handleSendOtp,

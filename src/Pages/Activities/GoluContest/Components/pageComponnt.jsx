@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
@@ -28,10 +27,15 @@ export const GoluContestBlockSection = ({
   setShowRegSuccessModal,
   showAlreadyRegisteredModal,
   setShowAlreadyRegisteredModal,
-photoDriveLink,
-setPhotoDriveLink,
+  photoDriveLink,
+  setPhotoDriveLink,
   showAlreadySubmittedModal,
   setShowAlreadySubmittedModal,
+
+  goluVideo,
+  setGoluVideo,
+  handleVideoChange,
+
   existingUserData,
   handleSendOtp,
   handleVerifyOtp,
@@ -430,9 +434,47 @@ setPhotoDriveLink,
                 </div>
               </div>
 
+              <div className="space-y-3">
+                <label className="block text-sm font-semibold text-stone-800">
+                  3. GOLO VIDEO
+                </label>
+
+                <input
+                  type="file"
+                  accept="video/mp4,video/webm,video/quicktime,.mov"
+                  onChange={handleVideoChange}
+                  disabled={loading}
+                  className="w-full rounded-xl border border-stone-300 p-3 text-sm"
+                />
+
+                {goluVideo && (
+                  <div className="space-y-2">
+                    <video
+                      src={URL.createObjectURL(goluVideo)}
+                      controls
+                      playsInline
+                      className="w-full max-h-72 rounded-xl bg-black"
+                    />
+
+                    <p className="text-xs text-stone-600">
+                      {goluVideo.name} ·{" "}
+                      {(goluVideo.size / (1024 * 1024)).toFixed(2)} MB
+                    </p>
+
+                    <button
+                      type="button"
+                      onClick={() => setGoluVideo(null)}
+                      className="text-sm font-semibold text-red-600"
+                    >
+                      Remove video
+                    </button>
+                  </div>
+                )}
+              </div>
+
               <div>
                 <label className="block text-sm font-semibold text-stone-800 mb-2">
-                  3. ABOUT YOUR GOLU (Optional)
+                  3. ABOUT YOUR GOLU
                 </label>
                 <textarea
                   rows={4}
@@ -445,7 +487,7 @@ setPhotoDriveLink,
 
               <div>
                 <label className="block text-sm font-semibold text-stone-800 mb-2">
-                  4. GOOGLE DRIVE / ONEDRIVE LINK (Optional)
+                  4. GOOGLE DRIVE / ONEDRIVE LINK
                 </label>
 
                 <input
@@ -660,9 +702,7 @@ export const GoluFirstSectionBlockSection = ({ blockFields }) => {
                           <p
                             key={segIdx}
                             className={`inline-block ${
-                              seg.highlight
-                                ? "highlightedtextsectionpara"
-                                : ""
+                              seg.highlight ? "highlightedtextsectionpara" : ""
                             }`}
                           >
                             {/* Rich Text Object-ஆக இருந்தால் parseLexical மூலம் Render செய்யவும் */}
@@ -1551,13 +1591,16 @@ export const GoluHowItWorksBlockSection = ({ blockFields }) => {
   );
 };
 
-
 // ==========================================
 // BRAND LOGO SLIDER SECTION
 // ==========================================
 export const BrandLogoSection = () => {
   const logos = [
-    { id: 1, name: "Partner Logo 1", src: "/images/golu-logo/akshayakalapa.png" },
+    {
+      id: 1,
+      name: "Partner Logo 1",
+      src: "/images/golu-logo/akshayakalapa.png",
+    },
     { id: 2, name: "Partner Logo 2", src: "/images/golu-logo/credai.png" },
     { id: 3, name: "Partner Logo 3", src: "/images/golu-logo/giri.png" },
   ];
@@ -1569,7 +1612,7 @@ export const BrandLogoSection = () => {
     <section className="max-w-7xl mx-auto my-10 p-8 md:p-10 bg-white border border-stone-100 rounded-3xl shadow-md font-sans overflow-hidden">
       <div className="text-center mb-8">
         <h3 className="text-sm font-black uppercase tracking-widest bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
-         Our Sponsors
+          Our Sponsors
         </h3>
       </div>
 
@@ -1607,8 +1650,6 @@ export const BrandLogoSection = () => {
     </section>
   );
 };
-
-
 
 /* ---------------------------------------------
    Lexical Helpers

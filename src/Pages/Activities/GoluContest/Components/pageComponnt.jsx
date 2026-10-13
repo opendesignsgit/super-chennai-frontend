@@ -438,6 +438,9 @@ export const GoluContestBlockSection = ({
                 <label className="block text-sm font-semibold text-stone-800">
                   3. GOLO VIDEO
                 </label>
+                <p className="text-xs text-stone-500">
+                  Maximum video size: 50 MB 
+                </p>
 
                 <input
                   type="file"

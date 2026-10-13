@@ -656,7 +656,7 @@ const handleVideoChange = (e) => {
   const MAX_VIDEO_SIZE = 50 * 1024 * 1024;
 
   if (file.size > MAX_VIDEO_SIZE) {
-    setErrorMessage("Video must be smaller than 250 MB.");
+    setErrorMessage("Video must be smaller than 50 MB.");
     return;
   }
 

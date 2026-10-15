@@ -1804,6 +1804,35 @@ export default function TrendingDetails() {
         datePublished: "2026-10-11",
       },
     ];
+
+    const permburnavarathiri = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id":
+            "https://www.superchennai.com/trending-chennai//spr-city-48-foot-golu-perambur-navaratri-2026",
+        },
+        headline: "SPR City 48-Foot Golu, Perambur | Navaratri 2026 Chennai",
+        description:
+          "Trending in Chennai: SPR City’s 48-foot Golu with 4,500+ dolls at Binny Mills Ground, Perambur. Oct 11–20, 10 AM–10 PM, free entry. World record attempt.",
+        image: "https://www.superchennai.com/images/spr-city-golu-inner.jpeg",
+        author: {
+          "@type": "",
+          name: "",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "",
+          logo: {
+            "@type": "ImageObject",
+            url: "",
+          },
+        },
+        datePublished: "2026-10-13",
+      },
+    ];
   
       return (
         <>
@@ -1833,7 +1862,15 @@ export default function TrendingDetails() {
               href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
             />
 
-                        {slug === "trending-chennai/ chennai-metro-phase-2-poonamallee-vadapalani-line-open" && (
+            {slug ===
+              "trending-chennai/spr-city-48-foot-golu-perambur-navaratri-2026" && (
+              <script type="application/ld+json">
+                {JSON.stringify(permburnavarathiri)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/ chennai-metro-phase-2-poonamallee-vadapalani-line-open" && (
               <script type="application/ld+json">
                 {JSON.stringify(porurmetro)}
               </script>

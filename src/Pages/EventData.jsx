@@ -7612,6 +7612,79 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 
 export const panesContent = [
   {
+    id: 102358,
+    name: "SPR CITY 48-FOOT GOLU, PERAMBUR | NAVARATRI 2026 CHENNAI",
+    slug: "spr-city-48-foot-golu-perambur-navaratri-2026",
+
+    para: "Trending in Chennai: SPR City’s 48-foot Golu with 4,500+ dolls at Binny Mills Ground, Perambur. October 11–20, 10 AM–10 PM, free entry. World record attempt.",
+
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Navaratri | Culture | Chennai Events",
+
+    Homeimage: "/images/spr-city-golu-home.jpeg",
+    image: "/images/spr-city-golu-inner.jpeg",
+
+    link: "/trending-chennai/spr-city-48-foot-golu-perambur-navaratri-2026",
+
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Navaratri | Culture | Chennai Events",
+    venue: "SPR City | Binny Mills Ground | Perambur | Chennai",
+
+    trendingDetails: `
+<p>
+  Chennai is witnessing a grand Navaratri celebration at <b>SPR City, Perambur</b>, where a towering Golu display featuring more than <b>4,500 traditional dolls</b> is drawing attention. Standing approximately <b>47.8 to 48.1 feet tall</b>, the installation is part of an attempt to set a record for the tallest Golu, making it a notable attraction
+  <a
+    href="/golu-in-chennai-every-doll-tells-a-story"
+    style="color: #ff009d; text-decoration: underline; font-weight: 600; cursor: pointer;"
+  >
+    during Navaratri 2026
+  </a>.
+</p>
+
+<p>
+Inspired by the height of SPR City's residential tower, the massive arrangement brings the traditional Golu display to an extraordinary scale. The installation combines the cultural significance of Navaratri with an elaborate presentation of Bommais, offering visitors a chance to experience this familiar festival tradition in a new way.
+</p>
+
+<p>
+The <b>SPR City Navaratri Utsavam 2026</b> is scheduled from <b>October 11 to October 20</b> at <b>Binny Mills Ground, Perambur, Chennai</b>. Visitors can view the display between <b>10 AM and 10 PM</b>, with <b>free entry</b>. The event also features daily poojas, cultural programmes and festive music, adding to the celebrations.
+</p>
+
+<p>
+The towering Golu is associated with a world record attempt involving the <b>World Book of Records, London</b>. With thousands of dolls arranged in one installation, the display showcases the effort involved in bringing a traditional Navaratri celebration to a large public space.
+</p>
+
+<p>
+For those looking for Navaratri events in Chennai, the SPR City Golu is an opportunity to experience the festival beyond individual homes. Whether visiting with family or friends, the display brings together traditional Bommais, festive activities and the spirit of Navaratri in Perambur.
+</p>
+
+<p>
+<b>Event Details</b>
+</p>
+
+<p>
+<b>Event:</b> SPR City Navaratri Utsavam 2026<br/>
+<b>Highlight:</b> Approximately 47.8–48.1-foot-tall Golu with 4,500+ dolls<br/>
+<b>Dates:</b> October 11–20, 2026<br/>
+<b>Timings:</b> 10 AM–10 PM<br/>
+<b>Venue:</b> SPR City, Binny Mills Ground, Perambur, Chennai<br/>
+<b>Entry:</b> Free
+</p>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "SPR City 48-Foot Golu, Perambur | Navaratri 2026 Chennai",
+      desc: "Trending in Chennai: SPR City’s 48-foot Golu with 4,500+ dolls at Binny Mills Ground, Perambur. October 11–20, 10 AM–10 PM, free entry. World record attempt.",
+      url: "https://www.superchennai.com/trending-chennai/spr-city-48-foot-golu-perambur-navaratri-2026",
+    },
+  },
+
+  {
     id: 102357,
     name: "CHENNAI METRO PHASE 2: POONAMALLEE–VADAPALANI LINE OPENS TO THE PUBLIC",
     slug: "chennai-metro-phase-2-poonamallee-vadapalani-line-opens",

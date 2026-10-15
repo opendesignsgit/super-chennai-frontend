@@ -162,20 +162,10 @@ export default function ArattaiWithBaradwajRangan() {
   };
 
   /* ================= GALLERY IMAGES ================= */
-  const mockUpcomingEvents = [
-    { id: 1, image: "/images/Baradwaj-Rangan/rangan-(1).jpg" },
-    { id: 2, image: "/images/Baradwaj-Rangan/rangan-(2).jpg" },
-    { id: 3, image: "/images/Baradwaj-Rangan/rangan-(3).jpg" },
-    { id: 4, image: "/images/Baradwaj-Rangan/rangan-(4).jpg" },
-    { id: 5, image: "/images/Baradwaj-Rangan/rangan-(5).jpg" },
-    { id: 6, image: "/images/Baradwaj-Rangan/rangan-(6).jpg" },
-    { id: 7, image: "/images/Baradwaj-Rangan/rangan-(7).jpg" },
-    { id: 8, image: "/images/Baradwaj-Rangan/rangan-(8).jpg" },
-    { id: 9, image: "/images/Baradwaj-Rangan/rangan-(9).jpg" },
-    { id: 10, image: "/images/Baradwaj-Rangan/rangan-(10).jpg" },
-    { id: 11, image: "/images/Baradwaj-Rangan/rangan-(11).jpg" },
-    { id: 12, image: "/images/Baradwaj-Rangan/rangan-(12).jpg" },
-  ];
+  const mockUpcomingEvents = Array.from({ length: 17 }, (_, index) => ({
+    id: index + 1,
+    image: `/images/Baradwaj-Rangan/Baradwaj-Rangan (${index + 1}).jpg`,
+  }));
 
   const [scrollDir, setScrollDir] = useState("left");
   const carouselRef = useRef();
@@ -338,7 +328,7 @@ export default function ArattaiWithBaradwajRangan() {
       </section>
 
       {/* ================= GALLERY ================= */}
-      {/* <div className="EventsCalendarMainSection mb-10">
+      <div className="EventsCalendarMainSection mb-10">
         <div
           className={`EventsCalenderBackground ${
             scrollDir === "right"
@@ -421,7 +411,7 @@ export default function ArattaiWithBaradwajRangan() {
             </div>
           )}
         </div>
-      </div> */}
+      </div>
 
       {/* ================= POPUP REGISTRATION FORM ================= */}
       <AnimatePresence>

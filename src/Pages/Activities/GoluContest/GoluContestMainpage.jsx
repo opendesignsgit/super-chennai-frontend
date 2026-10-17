@@ -838,6 +838,35 @@ const handleRemoveImage = (index, targetState) => {
               {...contestStateProps}
             />
           )}
+          <section className="max-w-7xl mx-auto my-8 p-6 md:p-10 bg-white rounded-3xl border border-gray-100 shadow-sm font-sans">
+            <div className="max-w-2xl mx-auto px-4 text-center">
+              <div className="rounded-3xl p-10  space-y-5 bg-white">
+                <div className="mx-auto w-20 h-20 flex items-center justify-center rounded-full bg-purple-100 text-4xl">
+                  🪔
+                </div>
+
+                <h2 className="text-xl md:text-2xl font-black uppercase bg-gradient-to-r from-[#4B1F8A] to-[#F82763] bg-clip-text text-transparent">
+                  Super Chennai Golu Contest
+                </h2>
+
+                <div className="inline-block px-5 py-2 rounded-full bg-red-50 border border-red-200">
+                  <span className="text-sm font-bold text-red-600 uppercase tracking-wider">
+                    Registration Closed
+                  </span>
+                </div>
+
+                <p className="text-stone-600 text-sm leading-relaxed">
+                  Registrations for the Super Chennai Golu Contest are now
+                  closed. Thank you for your wonderful interest and
+                  participation!
+                </p>
+
+                <p className="text-sm font-semibold text-[#312c85]">
+                  Stay tuned for more updates. 💜
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
     </>

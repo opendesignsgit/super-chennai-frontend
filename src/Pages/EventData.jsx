@@ -7611,6 +7611,458 @@ The Chennai edition of Vijayotsavam 2025–26 promises an evening of iconic Tami
 ];
 
 export const panesContent = [
+
+  {
+    id: 102359,
+    name: "Rolls-Royce Showroom Chennai Opens on GST Road, Meenambakkam",
+    slug: "rolls-royce-showroom-chennai-meenambakkam",
+
+    para: "Rolls-Royce Motor Cars inaugurated its newly redesigned luxury showroom in Meenambakkam, Chennai, on October 15, 2026. Situated along Grand Southern Trunk Road (GST Road), the showroom is managed by its authorised partner, KUN Exclusive. It is the first Rolls-Royce showroom in India to showcase the brand’s latest global retail design.",
+
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Automobiles | Business | Chennai Updates",
+
+    Homeimage: "/images/Roll.jpg",
+    image: "/images/rolles-one.jpg",
+
+    link: "/trending-chennai/rolls-royce-showroom-chennai-meenambakkam",
+
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Automobiles | Business | Chennai Updates",
+    venue: "No. 20, Grand Southern Trunk Road, Meenambakkam, Chennai, Tamil Nadu 600016",
+
+    trendingDetails: `
+<p>
+  Rolls-Royce Motor Cars inaugurated its newly redesigned luxury showroom in Meenambakkam, Chennai, on <b>October 15, 2026</b>. Situated along Grand Southern Trunk Road (GST Road), the showroom is managed by its authorised partner, KUN Exclusive. It is the first Rolls-Royce showroom in India to showcase the brand’s latest global retail design.
+</p>
+
+<p><b>Key Details</b></p>
+
+<ul>
+  <li><b>Address:</b> No. 20, Grand Southern Trunk Road, Meenambakkam, Chennai, Tamil Nadu 600016</li>
+  <li><b>Inauguration Date:</b> October 15, 2026</li>
+  <li><b>Operator:</b> KUN Exclusive</li>
+</ul>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Rolls-Royce Showroom Chennai Opens on GST Road, Meenambakkam",
+      desc: "Rolls-Royce showroom Chennai opens at No. 20, GST Road, Meenambakkam. Run by KUN Exclusive, it features a Bespoke Commissioning Atelier for personalised cars.",
+      url: "https://www.superchennai.com/trending-chennai/rolls-royce-showroom-chennai-meenambakkam",
+    },
+  },
+
+  {
+    id: 102360,
+    name: "Ferrari Chennai Showroom - Coming soon",
+    slug: "ferrari-showroom-chennai-coming-soon",
+
+    para: "Ferrari is set to strengthen its presence in India with a new luxury car dealership in Chennai, expected to open by the end of 2026. The upcoming Ferrari showroom will be operated by the Navnit Group, marking the Italian luxury sports car brand’s first dealership in South India. This expansion will increase Ferrari’s retail network in India to five cities, reflecting the growing interest in premium sports cars and luxury automotive brands across the country.",
+
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Automobiles | Business | Chennai Updates",
+
+    Homeimage: "/images/Ferrai2.jpg",
+    image: "/images/Ferrari.jpg",
+
+    link: "/trending-chennai/ferrari-showroom-chennai-coming-soon",
+
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Automobiles | Business | Chennai Updates",
+    venue: "Chennai, Tamil Nadu",
+
+    trendingDetails: `
+<p>
+  Ferrari is set to strengthen its presence in India with a new luxury car dealership in Chennai, expected to open by the end of 2026. The upcoming Ferrari showroom will be operated by the Navnit Group, marking the Italian luxury sports car brand’s first dealership in South India. This expansion will increase Ferrari’s retail network in India to five cities, reflecting the growing interest in premium sports cars and luxury automotive brands across the country.
+</p>
+
+<h3>Ferrari’s Expansion in the Indian Luxury Car Market</h3>
+
+<p>
+  Ferrari’s planned Chennai dealership is part of its broader strategy to expand its reach in India’s luxury automobile market. Alongside the upcoming Ahmedabad showroom, the Chennai facility is expected to extend the brand’s presence beyond its existing markets in New Delhi, Mumbai and Bengaluru.
+</p>
+
+<p>
+  Rising demand for luxury cars, interest in high-performance sports vehicles and potential benefits from the proposed India–European Union trade agreement are among the factors drawing attention to the premium automotive sector. Events such as Universo Ferrari have also helped showcase the brand’s heritage and appeal to Indian enthusiasts.
+</p>
+
+<p>
+  The upcoming Ferrari showroom in Chennai will offer a new point of contact for customers in Tamil Nadu and neighbouring South Indian markets interested in the iconic Italian sports car brand.
+</p>
+
+<p><b>Ferrari Chennai Dealership – Key Details</b></p>
+
+<ul>
+  <li><b>Dealership Partner:</b> Navnit Group</li>
+  <li><b>Expected Opening:</b> By the end of 2026</li>
+  <li><b>Location:</b> Chennai, Tamil Nadu</li>
+  <li><b>Brand:</b> Ferrari</li>
+  <li><b>Expansion Significance:</b> First Ferrari dealership in South India</li>
+  <li><b>India Network:</b> Five cities following the planned expansion</li>
+</ul>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Ferrari Showroom Chennai Coming Soon as India Demand Rises",
+      desc: "Ferrari showroom Chennai will join Delhi, Mumbai, Bengaluru and Ahmedabad. With sales up 28.6% and India-EU FTA duty cuts due in 2027, buyers are booking early.",
+      url: "https://www.superchennai.com/trending-chennai/ferrari-showroom-chennai-coming-soon",
+    },
+  },
+
+  {
+    id: 102361,
+    name: "Karpagam Cinemas to Enter Chennai with Five-Screen Multiplex in Medavakkam",
+    slug: "karpagam-theatre-chennai-medavakkam",
+
+    para: "Coimbatore-based Karpagam Cinemas is set to enter the Chennai market with a new five-screen multiplex planned in the Medavakkam–Santhoshapuram area. The upcoming cinema complex will be located next to Ruby Elite, marking the brand’s expansion into Chennai’s entertainment and movie exhibition sector.",
+
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Cinema | Entertainment | Chennai Updates",
+
+    Homeimage: "/images/Karpagam.jpg",
+    image: "/images/Karpgam2.jpg",
+
+    link: "/trending-chennai/karpagam-theatre-chennai-medavakkam",
+
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Cinema | Entertainment | Chennai Updates",
+    venue: "Medavakkam / Santhoshapuram, Chennai, near Ruby Elite",
+
+    trendingDetails: `
+<p>
+  Coimbatore-based Karpagam Cinemas is set to enter the Chennai market with a new five-screen multiplex planned in the Medavakkam–Santhoshapuram area. The upcoming cinema complex will be located next to Ruby Elite, marking the brand’s expansion into Chennai’s entertainment and movie exhibition sector.
+</p>
+
+<p><b>Key Details</b></p>
+
+<ul>
+  <li><b>Cinema Brand:</b> Karpagam Cinemas</li>
+  <li><b>Origin:</b> Coimbatore, Tamil Nadu</li>
+  <li><b>Location:</b> Medavakkam / Santhoshapuram, Chennai, near Ruby Elite</li>
+  <li><b>Format:</b> Five-screen multiplex</li>
+  <li><b>Expansion:</b> First planned entry into the Chennai market</li>
+</ul>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Karpagam Theatre Chennai Brings 5 Screens to Medavakkam Soon",
+      desc: "From Coimbatore to Chennai: the planned Karpagam theatre Chennai is a five-screen multiplex in Medavakkam-Santhoshapuram, near Ruby Elite. Opening date awaited.",
+      url: "https://www.superchennai.com/trending-chennai/karpagam-theatre-chennai-medavakkam",
+    },
+  },
+
+  {
+    id: 102362,
+    name: "Vettri Payanam Thittam 2026: Tamil Nadu Free Bus Travel Scheme",
+    slug: "vetri-payanam-thittam-free-bus-women",
+
+    para: "The Tamil Nadu Government launched the expanded Vettri Payanam Thittam on October 2, 2026, extending free bus travel for women and transgender persons to additional categories of government-operated buses. Chief Minister C. Joseph Vijay inaugurated the scheme at Chennai’s Koyambedu bus terminus. The programme covers 12,695 buses operated by seven state transport undertakings, aiming to reduce travel expenses and improve access to education, employment, healthcare and other essential services.",
+
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Tamil Nadu | Public Transport | Government Scheme",
+
+    Homeimage: "/images/Vetripayanam.jpg",
+    image: "/images/Vetripayanam 2.jpg",
+
+    link: "/trending-chennai/vetri-payanam-thittam-free-bus-women",
+
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Tamil Nadu | Public Transport | Government Scheme",
+    venue: "Koyambedu bus terminus, Chennai",
+
+    trendingDetails: `
+<p>
+  The Tamil Nadu Government launched the expanded <b>Vettri Payanam Thittam on October 2, 2026</b>, extending free bus travel for women and transgender persons to additional categories of government-operated buses. Chief Minister C. Joseph Vijay inaugurated the scheme at Chennai’s Koyambedu bus terminus. The programme covers <b>12,695 buses operated by seven state transport undertakings</b>, aiming to reduce travel expenses and improve access to education, employment, healthcare and other essential services.
+</p>
+
+<h3>Key Features of Vettri Payanam Thittam</h3>
+
+<ul>
+  <li><b>Launch Date:</b> October 2, 2026</li>
+  <li><b>Launched By:</b> Tamil Nadu Government</li>
+  <li><b>Beneficiaries:</b> Women and transgender persons</li>
+  <li><b>Buses Covered:</b> 12,695 government buses</li>
+  <li><b>Transport Services:</b> Express, Limited Stop Service (LSS), Deluxe, Mofussil Ordinary and eligible Ghat Ordinary buses</li>
+  <li><b>Main Objective:</b> To make public transportation more affordable and accessible across Tamil Nadu.</li>
+</ul>
+
+<h3>Bus Services Covered Under the Scheme</h3>
+
+<p>
+  The expanded Vettri Payanam scheme includes eligible Express, LSS and Deluxe buses operating in urban and city areas, Mofussil Ordinary buses, and Ghat Ordinary buses on hill routes exceeding 40 kilometres. Existing free travel benefits on Ordinary Town buses and eligible Ghat Ordinary services are also continued.
+</p>
+
+<h3>Benefits of the Scheme</h3>
+
+<p>
+  The scheme helps reduce commuting costs for women and transgender passengers, supporting travel for education, employment, healthcare and everyday needs. The government expects approximately 84.32 lakh women to benefit daily.
+</p>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Vetri Payanam Thittam: Which Buses Are Free for Women in TN?",
+      desc: "12,695 government buses are now free for women and transgender persons under Vetri Payanam Thittam, including Express, LSS, Deluxe, Mofussil and Ghat services.",
+      url: "https://www.superchennai.com/trending-chennai/vetri-payanam-thittam-free-bus-women",
+    },
+  },
+
+  {
+    id: 102363,
+    name: "Chennai–Arakkonam AC Local Train Service Begins October 23",
+    slug: "chennai-to-arakkonam-ac-local-train",
+
+    para: "Chennai's suburban railway network is set to introduce an air-conditioned local train service connecting Chennai MGR Central and Arakkonam Junction from October 23, 2026. The new 12-coach AC EMU train will operate on a trial basis until December 24, 2026, offering commuters an additional travel option along this route.",
+
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Railways | Public Transport | Chennai Updates",
+
+    Homeimage: "/images/Southern railway.jpg",
+    image: "/images/Southernrailway2.jpg",
+
+    link: "/trending-chennai/chennai-to-arakkonam-ac-local-train",
+
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Railways | Public Transport | Chennai Updates",
+    venue: "Chennai MGR Central to Arakkonam Junction",
+
+    trendingDetails: `
+<p>
+  Chennai's suburban railway network is set to introduce an air-conditioned local train service connecting Chennai MGR Central and Arakkonam Junction from October 23, 2026. The new 12-coach AC EMU train will operate on a trial basis until December 24, 2026, offering commuters an additional travel option along this route.
+</p>
+
+<h3>Chennai AC Local Train: Route, Schedule and Services</h3>
+
+<ul>
+  <li><b>Commencement Date:</b> October 23, 2026</li>
+  <li><b>Trial Period:</b> October 23 to December 24, 2026</li>
+  <li><b>Days of Operation:</b> Monday to Friday, excluding Saturdays and Sundays</li>
+  <li><b>Train Type:</b> 12-coach air-conditioned Electric Multiple Unit (EMU)</li>
+  <li><b>Route and Stations:</b> Chennai MGR Central to Arakkonam Junction, via Basin Bridge, Perambur, Villivakkam, Ambattur, Avadi, Thiruninravur, Tiruvallur, Kadambattur and Tiruvalangadu</li>
+  <li><b>Operating Hours:</b> Reported service hours across the relevant railway sections range from approximately 6:30 AM to 10:25 PM. Passengers should check the official timetable for the departure and arrival times of individual services.</li>
+</ul>
+
+<h3>What to Know Before Travelling on the Chennai–Arakkonam AC Local Train</h3>
+
+<p>
+  The Chennai to Arakkonam AC local train service will offer an air-conditioned travel option for commuters travelling through key suburban stations, including Perambur, Ambattur, Avadi and Tiruvallur. The weekday trial service is scheduled to begin on October 23, 2026, and continue until December 24, 2026.
+</p>
+
+<p>
+  Commuters are advised to refer to the latest Southern Railway announcements for confirmed schedules and updates about the new service.
+</p>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Chennai to Arakkonam Now Has AC Local Train: 12-Coach AC EMU",
+      desc: "The first suburban AC train on Chennai’s west side runs from MGR Central to Arakkonam as a 12-coach AC EMU. It is the second AC suburban train from Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/chennai-to-arakkonam-ac-local-train",
+    },
+  },
+
+  {
+    id: 102364,
+    name: "CapitaLand Data Centre Chennai 01 Inaugurated in Ambattur",
+    slug: "capitaland-data-centre-chennai-01-ambattur",
+
+    para: "Chennai has taken another step in strengthening its digital infrastructure with the inauguration of CapitaLand Data Centre Chennai 01 in Ambattur. Tamil Nadu Chief Minister C. Joseph Vijay and Singapore Deputy Prime Minister Gan Kim Yong jointly inaugurated the facility at the SIDCO Industrial Estate. The new Chennai data centre has an initial IT capacity of 34 MW and is designed to support cloud computing, artificial intelligence (AI) and other high-performance computing requirements.",
+
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Technology | Business | Chennai Updates",
+
+    Homeimage: "/images/Datacentre.jpg",
+    image: "/images/Datacentre2.jpg",
+
+    link: "/trending-chennai/capitaland-data-centre-chennai-01-ambattur",
+
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Technology | Business | Chennai Updates",
+    venue: "SIDCO Industrial Estate, Ambattur, Chennai",
+
+    trendingDetails: `
+<p>
+  Chennai has taken another step in strengthening its digital infrastructure with the inauguration of CapitaLand Data Centre Chennai 01 in Ambattur. Tamil Nadu Chief Minister C. Joseph Vijay and Singapore Deputy Prime Minister Gan Kim Yong jointly inaugurated the facility at the SIDCO Industrial Estate.
+</p>
+
+<p>
+  The new Chennai data centre has an initial IT capacity of 34 MW and is designed to support cloud computing, artificial intelligence (AI) and other high-performance computing requirements.
+</p>
+
+<h3>Why This Data Centre Matters for Chennai</h3>
+
+<p>
+  The new facility adds to Chennai's growing technology infrastructure and reflects the increasing demand for data storage, cloud services and AI computing. Its location in Ambattur also highlights the evolving role of Chennai's industrial areas in supporting modern digital businesses.
+</p>
+
+<p>
+  The project marks a new development in CapitaLand India Trust's presence in Tamil Nadu and highlights the growing business connections between Singapore and the state.
+</p>
+
+<p>
+  As demand for digital services continues to grow, the new data centre adds another important development to Chennai's expanding technology landscape.
+</p>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "CapitaLand Data Centre Chennai 01 Ambattur: ₹1,940 Cr, 34 MW",
+      desc: "Inaugurated on 15 Oct 2026 at SIDCO, Ambattur, CapitaLand Data Centre Chennai 01 brings 34 MW of IT capacity in 13 data halls, ready for tenants by end-2026.",
+      url: "https://www.superchennai.com/trending-chennai/capitaland-data-centre-chennai-01-ambattur",
+    },
+  },
+
+  {
+    id: 102365,
+    name: "India's First Dugout Net Play Arena Opens at Marina Mall, Chennai",
+    slug: "dugout-marina-mall-net-play-arena-omr",
+
+    para: "Chennai has a new destination for sports and entertainment! Dugout Net Play has opened at The Marina Mall on Old Mahabalipuram Road (OMR), Chennai, bringing a new net-based playing experience to the city.",
+
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Sports | Entertainment | Chennai Updates",
+
+    Homeimage: "/images/DUGOUT.jpg",
+    image: "/images/DUGOUT2.jpg",
+
+    link: "/trending-chennai/dugout-marina-mall-net-play-arena-omr",
+
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Sports | Entertainment | Chennai Updates",
+    venue: "Fifth Floor, The Marina Mall, Old Mahabalipuram Road (OMR), Chennai",
+
+    trendingDetails: `
+<p>
+  Chennai has a new destination for sports and entertainment! Dugout Net Play has opened at The Marina Mall on Old Mahabalipuram Road (OMR), Chennai, bringing a new net-based playing experience to the city.
+</p>
+
+<p>
+  It is being promoted as India's first Dugout Net Play arena, adding another recreational attraction for visitors to Marina Mall.
+</p>
+
+<p>
+  Visitors can try this new sporting activity while enjoying their time at Marina Mall.
+</p>
+
+<p>
+  <b>Location:</b> Fifth Floor, The Marina Mall, Old Mahabalipuram Road (OMR), Chennai<br/>
+  <b>Timings:</b> 9:30 AM to 11:00 PM daily.
+</p>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Dugout Marina Mall Adds New Net Play Arena on 5th Floor, OMR",
+      desc: "Heading to Marina Mall, OMR? Dugout Marina Mall now has a Net Play arena, billed as India’s first, on the 5th floor. Open every day from 9:30 AM to 11:00 PM.",
+      url: "https://www.superchennai.com/trending-chennai/dugout-marina-mall-net-play-arena-omr",
+    },
+  },
+
+  {
+    id: 102366,
+    name: "CM C. Joseph Vijay Launches Rainwater Harvesting Awareness Campaign",
+    slug: "rainwater-harvesting-thuli-campaign-tamil-nadu",
+
+    para: "On October 21, 2026, Tamil Nadu's Chief Minister, C. Joseph Vijay, launched a statewide campaign to promote rainwater harvesting in Chennai. The mascot named \"Thuli\" and the logo were introduced to spread awareness about conserving water and prepare for the state's Northeast monsoon.",
+
+    TrendingCalendarMonth: "2026",
+    TrendingCalendarTime: "City Update",
+    TrendingCalendarCategory: "Government | Environment | Chennai Updates",
+
+    Homeimage: "/images/Thuli.jpg",
+    image: "/images/Thuli2.jpg",
+
+    link: "/trending-chennai/rainwater-harvesting-thuli-campaign-tamil-nadu",
+
+    duration: "City Update",
+    ageRestriction: "Open for All",
+    language: "English",
+    genre: "Government | Environment | Chennai Updates",
+    venue: "TWAD Board headquarters, Chepauk and Marina Beach, Chennai",
+
+    trendingDetails: `
+<p>
+  On October 21, 2026, Tamil Nadu's Chief Minister, C. Joseph Vijay, launched a statewide campaign to promote rainwater harvesting in Chennai. The mascot named "Thuli" and the logo were introduced to spread awareness about conserving water and prepare for the state's Northeast monsoon.
+</p>
+
+<p><b>Key Details of the Campaign</b></p>
+
+<p><b>Date of the Event:</b> October 21, 2026.</p>
+
+<p><b>Location:</b> Tamil Nadu Water Supply and Drainage (TWAD) Board headquarters in Chepauk and Chennai's Marina Beach.</p>
+
+<p><b>Department that Organized the Event:</b> Municipal Administration and Water Supply (MAWS).</p>
+
+<p><b>About the Mascot:</b> 'Thuli' is a blue water character carrying a house to help people understand the significance of rainwater harvesting structures in their homes.</p>
+
+<p>
+  Source from:
+  <a href="https://www.thehindu.com/news/cities/chennai/cm-vijay-launches-rainwater-harvesting-campaign/article71607867.ece#google_vignette" style="color: #ff009d; text-decoration: underline; font-weight: 600; cursor: pointer;">
+    https://www.thehindu.com/news/cities/chennai/cm-vijay-launches-rainwater-harvesting-campaign/article71607867.ece#google_vignette
+  </a>
+</p>
+`,
+
+    TrendingLink: "",
+    YoutubeLink: "",
+
+    meta: {
+      title: "Rainwater Harvesting Drive in TN: Meet Thuli, the New Mascot",
+      desc: "Check your home rainwater harvesting setup before the monsoon. Metrowater audits start Oct 22, after CM Vijay launched the statewide Thuli campaign in Chennai.",
+      url: "https://www.superchennai.com/trending-chennai/rainwater-harvesting-thuli-campaign-tamil-nadu",
+    },
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     id: 102358,
     name: "SPR CITY 48-FOOT GOLU, PERAMBUR | NAVARATRI 2026 CHENNAI",
@@ -7683,6 +8135,9 @@ For those looking for Navaratri events in Chennai, the SPR City Golu is an oppor
       url: "https://www.superchennai.com/trending-chennai/spr-city-48-foot-golu-perambur-navaratri-2026",
     },
   },
+
+
+
 
   {
     id: 102357,

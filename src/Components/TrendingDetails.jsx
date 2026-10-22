@@ -1833,6 +1833,240 @@ export default function TrendingDetails() {
         datePublished: "2026-10-13",
       },
     ];
+
+    const capitalLAndDataCenter =
+    [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/capitaland-data-centre-chennai-01-ambattur"
+  },
+  "headline": "CapitaLand Data Centre Chennai 01 Inaugurated in Ambattur",
+  "description": "Inaugurated on 15 Oct 2026 at SIDCO, Ambattur, CapitaLand Data Centre Chennai 01 brings 34 MW of IT capacity in 13 data halls, ready for tenants by end-2026.",
+  "image": "https://www.superchennai.com/images/Datacentre2.jpg",  
+  "author": {
+    "@type": "",
+    "name": ""
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Super Chennai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+    }
+  },
+  "datePublished": ""
+}
+    ]
+
+    const chennaiArakonamMetro =
+    [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/chennai-to-arakkonam-ac-local-train"
+  },
+  "headline": "Chennai–Arakkonam AC Local Train Service Begins October 23",
+  "description": "The first suburban AC train on Chennai’s west side runs from MGR Central to Arakkonam as a 12-coach AC EMU. It is the second AC suburban train from Chennai.",
+  "image": "https://www.superchennai.com/images/Southernrailway2.jpg",  
+  "author": {
+    "@type": "",
+    "name": ""
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Super Chennai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+    }
+  },
+  "datePublished": ""
+}
+
+    ]
+
+    const ferariShowRoom =
+    [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/ferrari-showroom-chennai-coming-soon"
+  },
+  "headline": "Ferrari Chennai Showroom - Coming soon",
+  "description": "Ferrari showroom Chennai will join Delhi, Mumbai, Bengaluru and Ahmedabad. With sales up 28.6% and India-EU FTA duty cuts due in 2027, buyers are booking early.",
+  "image": "https://www.superchennai.com/images/Ferrari.jpg",  
+  "author": {
+    "@type": "",
+    "name": ""
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Super Chennai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+    }
+  },
+  "datePublished": ""
+}
+
+    ]
+  
+    const indianDoungutgame =
+    [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/dugout-marina-mall-net-play-arena-omr"
+  },
+  "headline": "India's First Dugout Net Play Arena Opens at Marina Mall, Chennai",
+  "description": "Heading to Marina Mall, OMR? Dugout Marina Mall now has a Net Play arena, billed as India’s first, on the 5th floor. Open every day from 9:30 AM to 11:00 PM.",
+  "image": "https://www.superchennai.com/images/DUGOUT2.jpg",  
+  "author": {
+    "@type": "",
+    "name": ""
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Super Chennai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+    }
+  },
+  "datePublished": ""
+}
+
+    ]
+
+
+    const karapakkamCinima =
+    [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/karpagam-theatre-chennai-medavakkam"
+  },
+  "headline": "Karpagam Cinemas to Enter Chennai with Five-Screen Multiplex in Medavakkam",
+  "description": "From Coimbatore to Chennai: the planned Karpagam theatre Chennai is a five-screen multiplex in Medavakkam-Santhoshapuram, near Ruby Elite. Opening date awaited.",
+  "image": "https://www.superchennai.com/images/Karpgam2.jpg",  
+  "author": {
+    "@type": "",
+    "name": ""
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Super Chennai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+    }
+  },
+  "datePublished": ""
+}
+
+    ]
+
+    const rainWater =
+    [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/rainwater-harvesting-thuli-campaign-tamil-nadu"
+  },
+  "headline": "CM C. Joseph Vijay Launches Rainwater Harvesting Awareness Campaign",
+  "description": "Check your home rainwater harvesting setup before the monsoon. Metrowater audits start Oct 22, after CM Vijay launched the statewide Thuli campaign in Chennai.",
+  "image": "https://www.superchennai.com/images/Thuli2.jpg",  
+  "author": {
+    "@type": "",
+    "name": ""
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Super Chennai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+    }
+  },
+  "datePublished": ""
+}
+
+    ]
+    
+
+    const rollsRoayls = 
+    [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/rolls-royce-showroom-chennai-meenambakkam"
+  },
+  "headline": "Rolls-Royce Showroom Chennai Opens on GST Road, Meenambakkam",
+  "description": "Rolls-Royce showroom Chennai opens at No. 20, GST Road, Meenambakkam. Run by KUN Exclusive, it features a Bespoke Commissioning Atelier for personalised cars.",
+  "image": "https://www.superchennai.com/images/rolles-one.jpg",  
+  "author": {
+    "@type": "",
+    "name": ""
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Super Chennai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+    }
+  },
+  "datePublished": ""
+}
+
+    ]
+
+
+    const vetripayanam =
+    [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.superchennai.com/trending-chennai/vetri-payanam-thittam-free-bus-women"
+  },
+  "headline": "Vettri Payanam Thittam 2026: Tamil Nadu Free Bus Travel Scheme",
+  "description": "12,695 government buses are now free for women and transgender persons under Vetri Payanam Thittam, including Express, LSS, Deluxe, Mofussil and Ghat services.",
+  "image": "https://www.superchennai.com/images/Vetripayanam%202.jpg",  
+  "author": {
+    "@type": "",
+    "name": ""
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Super Chennai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+    }
+  },
+  "datePublished": ""
+}
+
+    ]
   
       return (
         <>
@@ -1861,6 +2095,62 @@ export default function TrendingDetails() {
               rel="canonical"
               href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
             />
+
+            {slug ===
+              "trending-chennai/vetri-payanam-thittam-free-bus-women" && (
+              <script type="application/ld+json">
+                {JSON.stringify(vetripayanam)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/rolls-royce-showroom-chennai-meenambakkam" && (
+              <script type="application/ld+json">
+                {JSON.stringify(rollsRoayls)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/rainwater-harvesting-thuli-campaign-tamil-nadu" && (
+              <script type="application/ld+json">
+                {JSON.stringify(rainWater)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/karpagam-theatre-chennai-medavakkam" && (
+              <script type="application/ld+json">
+                {JSON.stringify(karapakkamCinima)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/dugout-marina-mall-net-play-arena-omr" && (
+              <script type="application/ld+json">
+                {JSON.stringify(indianDoungutgame)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/ferrari-showroom-chennai-coming-soon" && (
+              <script type="application/ld+json">
+                {JSON.stringify(ferariShowRoom)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/chennai-to-arakkonam-ac-local-train" && (
+              <script type="application/ld+json">
+                {JSON.stringify(chennaiArakonamMetro)}
+              </script>
+            )}
+
+            {slug ===
+              "trending-chennai/capitaland-data-centre-chennai-01-ambattur" && (
+              <script type="application/ld+json">
+                {JSON.stringify(capitalLAndDataCenter)}
+              </script>
+            )}
 
             {slug ===
               "trending-chennai/spr-city-48-foot-golu-perambur-navaratri-2026" && (

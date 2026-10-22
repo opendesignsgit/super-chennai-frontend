@@ -7617,7 +7617,7 @@ export const panesContent = [
     name: "Rolls-Royce Showroom Chennai Opens on GST Road, Meenambakkam",
     slug: "rolls-royce-showroom-chennai-meenambakkam",
 
-    para: "Rolls-Royce Motor Cars inaugurated its newly redesigned luxury showroom in Meenambakkam, Chennai, on October 15, 2026. Situated along Grand Southern Trunk Road (GST Road), the showroom is managed by its authorised partner, KUN Exclusive. It is the first Rolls-Royce showroom in India to showcase the brand’s latest global retail design.",
+    para: "Rolls-Royce Motor Cars inaugurated its newly redesigned  ",
 
     TrendingCalendarMonth: "2026",
     TrendingCalendarTime: "City Update",
@@ -7663,7 +7663,7 @@ export const panesContent = [
     name: "Ferrari Chennai Showroom - Coming soon",
     slug: "ferrari-showroom-chennai-coming-soon",
 
-    para: "Ferrari is set to strengthen its presence in India with a new luxury car dealership in Chennai, expected to open by the end of 2026. The upcoming Ferrari showroom will be operated by the Navnit Group, marking the Italian luxury sports car brand’s first dealership in South India. This expansion will increase Ferrari’s retail network in India to five cities, reflecting the growing interest in premium sports cars and luxury automotive brands across the country.",
+    para: "Ferrari is set to strengthen its presence in India with a new luxury car dealership in Chennai, expected to open by the end of 2026. ",
 
     TrendingCalendarMonth: "2026",
     TrendingCalendarTime: "City Update",
@@ -7726,7 +7726,7 @@ export const panesContent = [
     name: "Karpagam Cinemas to Enter Chennai with Five-Screen Multiplex in Medavakkam",
     slug: "karpagam-theatre-chennai-medavakkam",
 
-    para: "Coimbatore-based Karpagam Cinemas is set to enter the Chennai market with a new five-screen multiplex planned in the Medavakkam–Santhoshapuram area. The upcoming cinema complex will be located next to Ruby Elite, marking the brand’s expansion into Chennai’s entertainment and movie exhibition sector.",
+    para: "Coimbatore-based Karpagam Cinemas is set to enter the Chennai market with a new five-screen multiplex planned in the Medavakkam–Santhoshapuram area. ",
 
     TrendingCalendarMonth: "2026",
     TrendingCalendarTime: "City Update",
@@ -7774,7 +7774,7 @@ export const panesContent = [
     name: "Vettri Payanam Thittam 2026: Tamil Nadu Free Bus Travel Scheme",
     slug: "vetri-payanam-thittam-free-bus-women",
 
-    para: "The Tamil Nadu Government launched the expanded Vettri Payanam Thittam on October 2, 2026, extending free bus travel for women and transgender persons to additional categories of government-operated buses. Chief Minister C. Joseph Vijay inaugurated the scheme at Chennai’s Koyambedu bus terminus. The programme covers 12,695 buses operated by seven state transport undertakings, aiming to reduce travel expenses and improve access to education, employment, healthcare and other essential services.",
+    para: "The Tamil Nadu Government launched the expanded Vettri Payanam Thittam on October 2, 2026,",
 
     TrendingCalendarMonth: "2026",
     TrendingCalendarTime: "City Update",
@@ -7835,7 +7835,7 @@ export const panesContent = [
     name: "Chennai–Arakkonam AC Local Train Service Begins October 23",
     slug: "chennai-to-arakkonam-ac-local-train",
 
-    para: "Chennai's suburban railway network is set to introduce an air-conditioned local train service connecting Chennai MGR Central and Arakkonam Junction from October 23, 2026. The new 12-coach AC EMU train will operate on a trial basis until December 24, 2026, offering commuters an additional travel option along this route.",
+    para: "Chennai's suburban railway network is set to introduce an air-conditioned local train service ",
 
     TrendingCalendarMonth: "2026",
     TrendingCalendarTime: "City Update",
@@ -7894,7 +7894,7 @@ export const panesContent = [
     name: "CapitaLand Data Centre Chennai 01 Inaugurated in Ambattur",
     slug: "capitaland-data-centre-chennai-01-ambattur",
 
-    para: "Chennai has taken another step in strengthening its digital infrastructure with the inauguration of CapitaLand Data Centre Chennai 01 in Ambattur. Tamil Nadu Chief Minister C. Joseph Vijay and Singapore Deputy Prime Minister Gan Kim Yong jointly inaugurated the facility at the SIDCO Industrial Estate. The new Chennai data centre has an initial IT capacity of 34 MW and is designed to support cloud computing, artificial intelligence (AI) and other high-performance computing requirements.",
+    para: "Chennai has taken another step in strengthening its digital infrastructure with the inauguration of CapitaLand Data Centre Chennai 01 in Ambattur. ",
 
     TrendingCalendarMonth: "2026",
     TrendingCalendarTime: "City Update",
@@ -7950,8 +7950,7 @@ export const panesContent = [
     name: "India's First Dugout Net Play Arena Opens at Marina Mall, Chennai",
     slug: "dugout-marina-mall-net-play-arena-omr",
 
-    para: "Chennai has a new destination for sports and entertainment! Dugout Net Play has opened at The Marina Mall on Old Mahabalipuram Road (OMR), Chennai, bringing a new net-based playing experience to the city.",
-
+para: "Dugout Net Play has opened at The Marina Mall on OMR, Chennai, bringing a new sports and entertainment experience to the city.",
     TrendingCalendarMonth: "2026",
     TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Sports | Entertainment | Chennai Updates",
@@ -8001,8 +8000,7 @@ export const panesContent = [
     name: "CM C. Joseph Vijay Launches Rainwater Harvesting Awareness Campaign",
     slug: "rainwater-harvesting-thuli-campaign-tamil-nadu",
 
-    para: "On October 21, 2026, Tamil Nadu's Chief Minister, C. Joseph Vijay, launched a statewide campaign to promote rainwater harvesting in Chennai. The mascot named \"Thuli\" and the logo were introduced to spread awareness about conserving water and prepare for the state's Northeast monsoon.",
-
+para: "Tamil Nadu CM Vijay launched the \"Thuli\" rainwater harvesting campaign on October 21, 2026.",
     TrendingCalendarMonth: "2026",
     TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Government | Environment | Chennai Updates",
@@ -8050,14 +8048,6 @@ export const panesContent = [
       url: "https://www.superchennai.com/trending-chennai/rainwater-harvesting-thuli-campaign-tamil-nadu",
     },
   },
-
-
-
-
-
-
-
-
 
 
 
@@ -8135,10 +8125,6 @@ For those looking for Navaratri events in Chennai, the SPR City Golu is an oppor
       url: "https://www.superchennai.com/trending-chennai/spr-city-48-foot-golu-perambur-navaratri-2026",
     },
   },
-
-
-
-
   {
     id: 102357,
     name: "CHENNAI METRO PHASE 2: POONAMALLEE–VADAPALANI LINE OPENS TO THE PUBLIC",

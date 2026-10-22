@@ -18,7 +18,7 @@ const detailsections = [
     id: 3,
     title: "Global & Continental Cuisine",
     points: [
-       {
+      {
         name: "Fazari Restaurant",
         date: "22/10/2026",
         description:
@@ -816,7 +816,20 @@ const detailsections = [
     id: 5,
     title: "Cafés & Casual Bites",
     points: [
-       {
+      {
+        name: "Guhan Cafe",
+        date: "22/10/2026",
+        description:
+          "Guhan Cafe officially launched on October 21, 2026. The new culinary venture comes from the renowned House of Arusuvai Arasu (famous for their iconic catering legacy in Chennai).",
+        subDescription: "",
+        locations: [
+          {
+            label: "Mogappair, ECR",
+            link: "https://maps.app.goo.gl/Bjd8fitozm4D5wqU7",
+          },
+        ],
+      },
+      {
         name: "Aswin Sweets",
         date: "22/10/2026",
         description:
@@ -2041,6 +2054,19 @@ const detailsections = [
     id: 1,
     title: "South Indian Classics",
     points: [
+      {
+        name: "Old Madras Military Mess",
+        date: "22/10/2026",
+        description:
+          "Old Madras Military Mess in Anna Nagar brings traditional Madras-style military mess flavours to a modern dining space, serving favourites like mutton paya, chicken biryani and kothu parotta. Opened on October 1, 2026, it is backed by the team behind Cream Story.",
+        subDescription: "",
+        locations: [
+          {
+            label: "Anna Nagar",
+            link: "",
+          },
+        ],
+      },
       // {
       //   name: "Upavihar",
       //  date: "28/09/2026",
@@ -2098,7 +2124,7 @@ const detailsections = [
       //   ],
       // },
 
-       {
+      {
         name: "Dhe Puttu",
         date: "22/10/2026",
         description:
@@ -2457,8 +2483,7 @@ const detailsections = [
     id: 2,
     title: "North Indian & Multi-cuisine",
     points: [
-
-       {
+      {
         name: "Firo",
         date: "22/10/2026",
         description:

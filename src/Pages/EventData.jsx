@@ -7620,7 +7620,7 @@ export const panesContent = [
     para: "Rolls-Royce Motor Cars inaugurated its newly redesigned  ",
 
     TrendingCalendarMonth: "2026",
-    TrendingCalendarTime: "City Update",
+    TrendingCalendarTime: "",
     TrendingCalendarCategory: "Automobiles | Business | Chennai Updates",
 
     Homeimage: "/images/Roll.jpg",
@@ -7628,9 +7628,9 @@ export const panesContent = [
 
     link: "/trending-chennai/rolls-royce-showroom-chennai-meenambakkam",
 
-    duration: "City Update",
-    ageRestriction: "Open for All",
-    language: "English",
+    // duration: "City Update",
+    // ageRestriction: "Open for All",
+    // language: "English",
     genre: "Automobiles | Business | Chennai Updates",
     venue: "No. 20, Grand Southern Trunk Road, Meenambakkam, Chennai, Tamil Nadu 600016",
 
@@ -7666,7 +7666,7 @@ export const panesContent = [
     para: "Ferrari is set to strengthen its presence in India with a new luxury car dealership in Chennai, expected to open by the end of 2026. ",
 
     TrendingCalendarMonth: "2026",
-    TrendingCalendarTime: "City Update",
+    // TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Automobiles | Business | Chennai Updates",
 
     Homeimage: "/images/Ferrai2.jpg",
@@ -7674,9 +7674,9 @@ export const panesContent = [
 
     link: "/trending-chennai/ferrari-showroom-chennai-coming-soon",
 
-    duration: "City Update",
-    ageRestriction: "Open for All",
-    language: "English",
+    // duration: "City Update",
+    // ageRestriction: "Open for All",
+    // language: "English",
     genre: "Automobiles | Business | Chennai Updates",
     venue: "Chennai, Tamil Nadu",
 
@@ -7729,7 +7729,7 @@ export const panesContent = [
     para: "Coimbatore-based Karpagam Cinemas is set to enter the Chennai market with a new five-screen multiplex planned in the Medavakkam–Santhoshapuram area. ",
 
     TrendingCalendarMonth: "2026",
-    TrendingCalendarTime: "City Update",
+    // TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Cinema | Entertainment | Chennai Updates",
 
     Homeimage: "/images/Karpagam.jpg",
@@ -7737,9 +7737,9 @@ export const panesContent = [
 
     link: "/trending-chennai/karpagam-theatre-chennai-medavakkam",
 
-    duration: "City Update",
-    ageRestriction: "Open for All",
-    language: "English",
+    // duration: "City Update",
+    // ageRestriction: "Open for All",
+    // language: "English",
     genre: "Cinema | Entertainment | Chennai Updates",
     venue: "Medavakkam / Santhoshapuram, Chennai, near Ruby Elite",
 
@@ -7777,7 +7777,7 @@ export const panesContent = [
     para: "The Tamil Nadu Government launched the expanded Vettri Payanam Thittam on October 2, 2026,",
 
     TrendingCalendarMonth: "2026",
-    TrendingCalendarTime: "City Update",
+    // TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Tamil Nadu | Public Transport | Government Scheme",
 
     Homeimage: "/images/Vetripayanam.jpg",
@@ -7785,9 +7785,9 @@ export const panesContent = [
 
     link: "/trending-chennai/vetri-payanam-thittam-free-bus-women",
 
-    duration: "City Update",
-    ageRestriction: "Open for All",
-    language: "English",
+    // duration: "City Update",
+    // ageRestriction: "Open for All",
+    // language: "English",
     genre: "Tamil Nadu | Public Transport | Government Scheme",
     venue: "Koyambedu bus terminus, Chennai",
 
@@ -7838,7 +7838,7 @@ export const panesContent = [
     para: "Chennai's suburban railway network is set to introduce an air-conditioned local train service ",
 
     TrendingCalendarMonth: "2026",
-    TrendingCalendarTime: "City Update",
+    // TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Railways | Public Transport | Chennai Updates",
 
     Homeimage: "/images/Southern railway.jpg",
@@ -7846,9 +7846,9 @@ export const panesContent = [
 
     link: "/trending-chennai/chennai-to-arakkonam-ac-local-train",
 
-    duration: "City Update",
-    ageRestriction: "Open for All",
-    language: "English",
+    // duration: "City Update",
+    // ageRestriction: "Open for All",
+    // language: "English",
     genre: "Railways | Public Transport | Chennai Updates",
     venue: "Chennai MGR Central to Arakkonam Junction",
 
@@ -7897,7 +7897,7 @@ export const panesContent = [
     para: "Chennai has taken another step in strengthening its digital infrastructure with the inauguration of CapitaLand Data Centre Chennai 01 in Ambattur. ",
 
     TrendingCalendarMonth: "2026",
-    TrendingCalendarTime: "City Update",
+    // TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Technology | Business | Chennai Updates",
 
     Homeimage: "/images/Datacentre.jpg",
@@ -7905,9 +7905,9 @@ export const panesContent = [
 
     link: "/trending-chennai/capitaland-data-centre-chennai-01-ambattur",
 
-    duration: "City Update",
-    ageRestriction: "Open for All",
-    language: "English",
+    // duration: "City Update",
+    // ageRestriction: "Open for All",
+    // language: "English",
     genre: "Technology | Business | Chennai Updates",
     venue: "SIDCO Industrial Estate, Ambattur, Chennai",
 
@@ -7952,7 +7952,7 @@ export const panesContent = [
 
 para: "Dugout Net Play has opened at The Marina Mall on OMR, Chennai, bringing a new sports and entertainment experience to the city.",
     TrendingCalendarMonth: "2026",
-    TrendingCalendarTime: "City Update",
+    // TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Sports | Entertainment | Chennai Updates",
 
     Homeimage: "/images/DUGOUT.jpg",
@@ -7960,9 +7960,9 @@ para: "Dugout Net Play has opened at The Marina Mall on OMR, Chennai, bringing a
 
     link: "/trending-chennai/dugout-marina-mall-net-play-arena-omr",
 
-    duration: "City Update",
-    ageRestriction: "Open for All",
-    language: "English",
+    // duration: "City Update",
+    // ageRestriction: "Open for All",
+    // language: "English",
     genre: "Sports | Entertainment | Chennai Updates",
     venue: "Fifth Floor, The Marina Mall, Old Mahabalipuram Road (OMR), Chennai",
 
@@ -8002,7 +8002,7 @@ para: "Dugout Net Play has opened at The Marina Mall on OMR, Chennai, bringing a
 
 para: "Tamil Nadu CM Vijay launched the \"Thuli\" rainwater harvesting campaign on October 21, 2026.",
     TrendingCalendarMonth: "2026",
-    TrendingCalendarTime: "City Update",
+    // TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Government | Environment | Chennai Updates",
 
     Homeimage: "/images/Thuli.jpg",
@@ -8010,9 +8010,9 @@ para: "Tamil Nadu CM Vijay launched the \"Thuli\" rainwater harvesting campaign 
 
     link: "/trending-chennai/rainwater-harvesting-thuli-campaign-tamil-nadu",
 
-    duration: "City Update",
-    ageRestriction: "Open for All",
-    language: "English",
+    // duration: "City Update",
+    // ageRestriction: "Open for All",
+    // language: "English",
     genre: "Government | Environment | Chennai Updates",
     venue: "TWAD Board headquarters, Chepauk and Marina Beach, Chennai",
 
@@ -8031,12 +8031,7 @@ para: "Tamil Nadu CM Vijay launched the \"Thuli\" rainwater harvesting campaign 
 
 <p><b>About the Mascot:</b> 'Thuli' is a blue water character carrying a house to help people understand the significance of rainwater harvesting structures in their homes.</p>
 
-<p>
-  Source from:
-  <a href="https://www.thehindu.com/news/cities/chennai/cm-vijay-launches-rainwater-harvesting-campaign/article71607867.ece#google_vignette" style="color: #ff009d; text-decoration: underline; font-weight: 600; cursor: pointer;">
-    https://www.thehindu.com/news/cities/chennai/cm-vijay-launches-rainwater-harvesting-campaign/article71607867.ece#google_vignette
-  </a>
-</p>
+
 `,
 
     TrendingLink: "",
@@ -8061,7 +8056,7 @@ para: "Tamil Nadu CM Vijay launched the \"Thuli\" rainwater harvesting campaign 
     para: "Trending in Chennai: SPR City’s 48-foot Golu with 4,500+ dolls at Binny Mills Ground, Perambur. October 11–20, 10 AM–10 PM, free entry. World record attempt.",
 
     TrendingCalendarMonth: "2026",
-    TrendingCalendarTime: "City Update",
+    // TrendingCalendarTime: "City Update",
     TrendingCalendarCategory: "Navaratri | Culture | Chennai Events",
 
     Homeimage: "/images/spr-city-golu-home.jpeg",
@@ -8069,8 +8064,8 @@ para: "Tamil Nadu CM Vijay launched the \"Thuli\" rainwater harvesting campaign 
 
     link: "/trending-chennai/spr-city-48-foot-golu-perambur-navaratri-2026",
 
-    duration: "City Update",
-    ageRestriction: "Open for All",
+    // duration: "City Update",
+    // ageRestriction: "Open for All",
     language: "English",
     genre: "Navaratri | Culture | Chennai Events",
     venue: "SPR City | Binny Mills Ground | Perambur | Chennai",

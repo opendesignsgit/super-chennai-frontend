@@ -199,7 +199,7 @@ export default function ArattaiWithKarthikKumar() {
         </title>
         <meta
           name="description"
-          content="Super Chennai Arattai with Karthik Kumar, film critic and author of Conversations with Mani Ratnam, on his journey from chemical engineering to criticism"
+          content="Super Chennai Arattai with Karthik Kumar, actor, stand-up comedian and Evam co-founder, on his journey from Alaipayuthey to playing Dr. Vijay in Heart Beat."
         />
         <script type="application/ld+json">
           {JSON.stringify(arattaiSchema)}
@@ -233,7 +233,7 @@ export default function ArattaiWithKarthikKumar() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves">
               <h1 className="text-center hidden">
-                Arattai with Karthik Kumar: Actor, Stand-up Comedian & Evam Co-founder
+                Arattai with Karthik Kumar
               </h1>
               <h3>Arattai with Karthik Kumar</h3>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">

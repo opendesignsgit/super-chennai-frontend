@@ -396,6 +396,9 @@ import ArattaiWithBaradwajRangan from "./Pages/Activities/ArattaiWithBaradwajRan
 import ArattaiBaradwajRanganExcell from "./Pages/Activities/ArattaiWithBaradwajRangan/ArattaiBaradwajRanganExcell";
 
 
+import ArattaiKarthiKumar from "./Pages/Activities/ArattaiWithkrathikKumar/ArattaiKarthiKumar";
+import ArattaiKarthiKumarExcell from "./Pages/Activities/ArattaiWithkrathikKumar/ArattaiKarthiKumarExcell";
+
 
 
 function App() {
@@ -793,6 +796,22 @@ function App() {
           path="//arattai-with-arun-jain/tech-visionary"
           element={<ArattaiWithArunJain />}
         />
+         <Route
+          path="/arattai-with-karthik-kumar/actor-comedian"
+          element={<ArattaiKarthiKumar />}
+        />
+
+          <Route
+          path="/arattai-with-karthik-kumar/actor-comedian"
+          element={<ArattaiKarthiKumar />}
+        />
+
+             <Route
+          path="/arattai-with-karthik-kumar/actor-comedian/list/sheet/live"
+          element={<ArattaiKarthiKumarExcell />}
+        />
+
+        
 
          <Route
           path="/arattai-with-baradwaj-rangan-film-critic"

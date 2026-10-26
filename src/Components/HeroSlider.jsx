@@ -190,13 +190,22 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  {
-    image: "/images/golu-backup.jpeg",
-    link: "contest/navaratri-golu",
-    image1: "/images/golu-backup-mobile.jpeg",
+    {
+    image: "/images/Karthik-Kumar-review.jpeg",
+    link: "arattai-with-karthik-kumar/actor-comedian",
+    image1: "/images/Karthik-Kumar-review-mobile.jpeg",
     title: "chennai's surfing",
     description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   },
+
+
+  // {
+  //   image: "/images/golu-backup.jpeg",
+  //   link: "contest/navaratri-golu",
+  //   image1: "/images/golu-backup-mobile.jpeg",
+  //   title: "chennai's surfing",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 
   //   {
   //   image: "/images/Home Page Banner (Desktop) 2250 × 1162 px.jpg",

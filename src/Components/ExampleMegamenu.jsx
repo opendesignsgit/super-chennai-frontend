@@ -407,25 +407,33 @@ const menuItems = [
     label: "Arattai",
     labellink: "/arattai-with-jahabar-sadique/chai-kings-founder",
     content: [
-              {
+
+       {
+        title: "Hello",
+        desc: "ssdds",
+        link: "/arattai-with-karthik-kumar/actor-comedian",
+        image: "/images/Karthik-Kumar-review-Header.jpeg",
+      },
+
+      {
         title: "Hello",
         desc: "ssdds",
         link: "/arattai-with-baradwaj-rangan-film-critic",
         image: "/images/Baradwaj-review.-mobile-header.jpeg",
       },
-           {
+      {
         title: "Hello",
         desc: "ssdds",
         link: "/arattai-with-arun-jain/tech-visionary",
         image: "/images/sriram-header.jpg",
       },
-       {
+      {
         title: "Hello",
         desc: "ssdds",
         link: "/arattai-with-v-sriram/heritage-historian",
         image: "/images/Sriram-Arattai_headerImage.jpeg",
       },
-        {
+      {
         title: "Hello",
         desc: "ssdds",
         link: "/arattai-with-bharathy-bhaskar/prominent-speaker",

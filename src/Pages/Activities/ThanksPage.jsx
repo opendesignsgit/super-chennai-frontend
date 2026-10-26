@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 export default function Thankyou() {
   const location = useLocation();
   const from = location.state?.from;
-  // const from = "baradwaj";
+  // const from = "karthik-kumar";
 
   const [imageSrc, setImageSrc] = useState("/images/thank-you-banner.jpg");
 
@@ -295,6 +295,24 @@ export default function Thankyou() {
 
               <p>
                 Thank you for registering for Arattai with Baradwaj Rangan. Your
+                submission has been successfully received, and our team is
+                currently reviewing your registration. If your entry is
+                selected, you will receive an official confirmation email from
+                Team Super Chennai with further details about the event. Please
+                note that your participation will be considered confirmed only
+                after you receive the confirmation email. We appreciate your
+                interest and look forward to connecting with you soon.
+              </p>
+            </div>
+          )}
+         
+
+            {from === "karthik-kumar" && (
+            <div className="workIntro">
+              <h1>You're Registered!</h1>
+
+              <p>
+                Thank you for registering for Arattai with Karthik Kumar. Your
                 submission has been successfully received, and our team is
                 currently reviewing your registration. If your entry is
                 selected, you will receive an official confirmation email from

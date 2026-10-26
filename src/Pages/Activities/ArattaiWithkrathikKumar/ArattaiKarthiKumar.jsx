@@ -264,7 +264,7 @@ export default function ArattaiWithKarthikKumar() {
                 Karthik Kumar
               </h2>
               <p className="text-gray-600 text-lg">
-                On 9<sup>th</sup> Oct
+                On 14<sup>th</sup> Nov
               </p>
               <div className="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-rose-500/90 to-rose-600/90 text-white font-semibold tracking-wide rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border border-rose-400/50 backdrop-blur-sm animate-pulse-slow">
                 <span

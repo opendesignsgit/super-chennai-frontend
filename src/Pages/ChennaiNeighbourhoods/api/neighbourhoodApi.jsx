@@ -14,5 +14,13 @@ export const getNeighbourhood = (params) =>
 export const getCategories = () =>
   API.get("/neighbourhood-categories")
 
+// export const getLocations = () =>
+//   API.get("/chennaiNeighbourhoodlocations")
+
 export const getLocations = () =>
-  API.get("/chennaiNeighbourhoodlocations")
+  API.get("/chennaiNeighbourhoodlocations", {
+    params: {
+      limit: 100,
+      page: 1,
+    },
+  });

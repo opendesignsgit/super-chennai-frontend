@@ -163,10 +163,28 @@ export default function ArattaiWithKarthikKumar() {
   };
 
   /* ================= GALLERY IMAGES ================= */
-  const mockUpcomingEvents = Array.from({ length: 17 }, (_, index) => ({
-    id: index + 1,
-    image: `/images/Karthik-Kumar/Karthik-Kumar (${index + 1}).jpg`,
-  }));
+  // const mockUpcomingEvents = Array.from({ length: 17 }, (_, index) => ({
+  //   id: index + 1,
+  //   image: `/images/Karthik-Kumar/Karthik-Kumar (${index + 1}).jpg`,
+  // }));
+  const mockUpcomingEvents = [
+    { id: 1, image: "/images/arattaiwithkarthikumar/img1.jpg" },
+    { id: 2, image: "/images/arattaiwithkarthikumar/img2.jpg" },
+    { id: 3, image: "/images/arattaiwithkarthikumar/img3.jpg" },
+    { id: 4, image: "/images/arattaiwithkarthikumar/img4.jpg" },
+    { id: 5, image: "/images/arattaiwithkarthikumar/img5.jpg" },
+    { id: 6, image: "/images/arattaiwithkarthikumar/img6.jpg" },
+    { id: 7, image: "/images/arattaiwithkarthikumar/img7.jpg" },
+    { id: 8, image: "/images/arattaiwithkarthikumar/img8.jpg" },
+    { id: 9, image: "/images/arattaiwithkarthikumar/img9.jpg" },
+    { id: 10, image: "/images/arattaiwithkarthikumar/img10.jpg" },
+    { id: 11, image: "/images/arattaiwithkarthikumar/img11.jpg" },
+    { id: 12, image: "/images/arattaiwithkarthikumar/img12.jpg" },
+    { id: 13, image: "/images/arattaiwithkarthikumar/img13.jpg" },
+    { id: 14, image: "/images/arattaiwithkarthikumar/img14.jpg" },
+    { id: 15, image: "/images/arattaiwithkarthikumar/img15.jpg" },
+    { id: 16, image: "/images/arattaiwithkarthikumar/img16.jpg" },
+  ];
 
   const [scrollDir, setScrollDir] = useState("left");
   const carouselRef = useRef();
@@ -232,26 +250,47 @@ export default function ArattaiWithKarthikKumar() {
         <div className="container mx-auto px-6 lg:px-0">
           <div className="max-w-4xl mx-auto text-center">
             <div className="InvestChennaiContent-conclaves">
-              <h1 className="text-center hidden">
-                Arattai with Karthik Kumar
-              </h1>
+              <h1 className="text-center hidden">Arattai with Karthik Kumar</h1>
               <h3>Arattai with Karthik Kumar</h3>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Get ready for an exciting Arattai with Karthik Kumar! Super Chennai is bringing you a fun conversation with the actor, stand-up comedian, and storyteller who knows how to turn life's twists and turns into punchlines. From making audiences laugh to exploring different roles on screen, his journey has been full of interesting stories and memorable moments.
+                Get ready for an exciting Arattai with Karthik Kumar! Super
+                Chennai is bringing you a fun conversation with the actor,
+                stand-up comedian, and storyteller who knows how to turn life's
+                twists and turns into punchlines. From making audiences laugh to
+                exploring different roles on screen, his journey has been full
+                of interesting stories and memorable moments.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                Karthik Kumar has made his mark across Tamil cinema, theatre, and stand-up comedy. From films like <em>Alaipayuthey</em>, <em>Yaaradi Nee Mohini</em>, and <em>Rocketry: The Nambi Effect</em> to comedy specials like <em>Blood Chutney</em>, <em>Aansplaining</em>, and <em>Good Timing Ji</em>, he has explored different sides of entertainment. As the co-founder of Evam Entertainment, he has also contributed to theatre and live performances, drawing on his 25-year journey in the industry to turn everyday experiences into humour.
+                Karthik Kumar has made his mark across Tamil cinema, theatre,
+                and stand-up comedy. From films like <em>Alaipayuthey</em>,{" "}
+                <em>Yaaradi Nee Mohini</em>, and{" "}
+                <em>Rocketry: The Nambi Effect</em> to comedy specials like{" "}
+                <em>Blood Chutney</em>, <em>Aansplaining</em>, and{" "}
+                <em>Good Timing Ji</em>, he has explored different sides of
+                entertainment. As the co-founder of Evam Entertainment, he has
+                also contributed to theatre and live performances, drawing on
+                his 25-year journey in the industry to turn everyday experiences
+                into humour.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                And if you're watching <em>Heart Beat</em>, you'll definitely recognise Dr. Vijay! Karthik Kumar has been winning hearts with his role in this popular Tamil medical drama, bringing his talent to a new generation of viewers. From his acting journey to his stand-up comedy experiences, there's plenty to discover beyond the screen.
+                And if you're watching <em>Heart Beat</em>, you'll definitely
+                recognise Dr. Vijay! Karthik Kumar has been winning hearts with
+                his role in this popular Tamil medical drama, bringing his
+                talent to a new generation of viewers. From his acting journey
+                to his stand-up comedy experiences, there's plenty to discover
+                beyond the screen.
               </p>
               <p className="text-gray-600 text-justify md:text-left leading-6 mb-6">
-                What can you expect from this Arattai? Candid conversations, behind-the-scenes stories, interesting insights, and, of course, plenty of laughs! Join Super Chennai for Arattai with Karthik Kumar and get ready for an enjoyable evening filled with fun, humour, and good vibes. You won't want to miss it!
+                What can you expect from this Arattai? Candid conversations,
+                behind-the-scenes stories, interesting insights, and, of course,
+                plenty of laughs! Join Super Chennai for Arattai with Karthik
+                Kumar and get ready for an enjoyable evening filled with fun,
+                humour, and good vibes. You won't want to miss it!
               </p>
             </div>
 
             {/* REGISTER CALL TO ACTION */}
-            <div
+            {/* <div
               className="flex flex-col items-center text-center space-y-4 py-10"
               ref={registerRef}
             >
@@ -276,7 +315,7 @@ export default function ArattaiWithKarthikKumar() {
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-400/50 to-pink-400/50 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 animate-pulse"></div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -499,6 +538,147 @@ export default function ArattaiWithKarthikKumar() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <div className="EventsCalendarMainSection mb-10 lg:!pt-5">
+        <div
+          className={`EventsCalenderBackground ${
+            scrollDir === "right"
+              ? "Utilitiesscroll-right"
+              : "Utilitiesscroll-left"
+          }`}
+        >
+          <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+          <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
+        </div>
+
+        {/* Title */}
+        <div className="container max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center EventsCalendarTitleMain">
+          <h2>Media Highlights</h2>
+          <p>
+            A collection of stage highlights, speaker sessions, interactions,
+            and memento-giving moments from the conclave.
+          </p>
+        </div>
+
+        <div className="overflow-hidden py-17 cardMobileSection">
+          <div className="relative">
+            <div className="absolute top-0 left-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"></div>
+            <div className="absolute top-0 right-0 h-full w-16 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"></div>
+
+            {/* <motion.div
+                   ref={carouselRef}
+                   className="flex gap-10 cursor-grab active:cursor-grabbing cardsMobileSection"
+                   drag="x"
+                   dragConstraints={{
+                     right: 0,
+                     left: -(mockUpcomingEvents.length * 340 - window.innerWidth),
+                   }}
+                   animate={{ x }}
+                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                 >
+                   {mockUpcomingEvents.map((card) => {
+                     return (
+                       <motion.div
+                         className="flex gap-10 cardsMobileSection"
+                         animate={controls}
+                         onMouseEnter={() => controls.stop()}
+                         onMouseLeave={() =>
+                           controls.start({
+                             x: ["50", "-50%"],
+                             transition: {
+                               ease: "linear",
+                               duration: 140,
+                               repeat: Infinity,
+                             },
+                           })
+                         }
+                       >
+                         <div
+                          //  ref={carouselRef}
+                           className="flex gap-10 overflow-x-hidden cardsMobileSection"
+                           onMouseEnter={() => (isPausedRef.current = true)}
+                           onMouseLeave={() => (isPausedRef.current = false)}
+                         >
+                           {[...mockUpcomingEvents, ...mockUpcomingEvents].map(
+                             (card, index) => (
+                               <div
+                                 key={index}
+                                 className="EventsCalendarCardSection min-w-[300px] h-[350px] bg-white"
+                                 onClick={() => openModal(card.image)}
+                               >
+                                 <img
+                                   src={card.image}
+                                   alt={card.title}
+                                   className="w-full h-[350px] object-cover rounded-t-md"
+                                 />
+                               </div>
+                             ),
+                           )}
+                         </div>
+                       </motion.div>
+                     );
+                   })}
+                 </motion.div>
+      */}
+
+            <motion.div
+              ref={carouselRef}
+              className="flex gap-10 cursor-grab active:cursor-grabbing cardsMobileSection"
+              drag="x"
+              dragConstraints={{
+                right: 0,
+                left: -(mockUpcomingEvents.length * 340 - window.innerWidth),
+              }}
+              animate={{ x }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            >
+              {mockUpcomingEvents.map((card) => (
+                <div
+                  key={card.id}
+                  className="EventsCalendarCardSection min-w-[300px] h-[350px] bg-white"
+                  onClick={() => openModal(card.image)}
+                >
+                  <img
+                    src={card.image}
+                    alt="Gallery"
+                    className="w-full h-[350px] object-cover rounded-t-md"
+                  />
+                </div>
+              ))}
+            </motion.div>
+            <div className="EventsCalenderButtons flex justify-center  ">
+              <button
+                onClick={() => slide("left")}
+                className="EventsCalenderLeftButton"
+              ></button>
+              <button
+                onClick={() => slide("right")}
+                className="EventsCalenderRightButton"
+              ></button>
+            </div>
+          </div>
+
+          {isModalOpen && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 z-[9999]"
+              onClick={closeModal}
+            >
+              <img
+                src={modalImage}
+                alt="Full view"
+                className="max-h-[90%] max-w-[90%] object-contain rounded-lg"
+                onClick={(e) => e.stopPropagation()}
+              />
+              <button
+                className="absolute top-5 right-5 text-white text-2xl font-bold cursor-pointer"
+                onClick={closeModal}
+              >
+                ×
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
     </>
   );
 }

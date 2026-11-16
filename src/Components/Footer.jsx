@@ -151,7 +151,6 @@ const Footer = () => {
     { title: "Policy Boost", link: "/invest/government-projects-in-chennai" },
     { title: "Apps Used In Chennai", link: "/chennai-apps" },
 
-
     {
       title: "Legal Flow",
       link: "/invest/law-firms-in-chennai",
@@ -262,6 +261,11 @@ const Footer = () => {
       title: "Arattai with Vivek Karunakaran",
       link: "/arattai-with-vivek-karunakaran/chennai-fashion-designer",
     },
+
+    {
+      title: "Arattai with Karthik Kumar",
+      link: "/arattai-with-karthik-kumar/actor-comedian",
+    },
     {
       title: "Gen Z Content Creator",
       link: "/contest/gen-z-content-creators",
@@ -287,7 +291,6 @@ const Footer = () => {
       link: "/contest/navaratri-golu",
     },
   ];
-
 
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);

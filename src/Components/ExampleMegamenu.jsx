@@ -408,7 +408,14 @@ const menuItems = [
     labellink: "/arattai-with-jahabar-sadique/chai-kings-founder",
     content: [
 
-       {
+      {
+        title: "Hello",
+        desc: "ssdds",
+        link: "/arattai-with-dr-padma-subrahmanyam/bharatanatyam-dancer",
+        image: "/images/headerpadmapriya.jpg",
+      },
+
+      {
         title: "Hello",
         desc: "ssdds",
         link: "/arattai-with-karthik-kumar/actor-comedian",
@@ -671,9 +678,8 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
             }}
           >
             <div
-              className={`Megamenutop-bar ${
-                activeMenu ? "activeStateMegamenu" : ""
-              }`}
+              className={`Megamenutop-bar ${activeMenu ? "activeStateMegamenu" : ""
+                }`}
             >
               <div
                 style={{ cursor: "pointer" }}
@@ -695,11 +701,10 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                   {menuItems.map((item, i) => (
                     <li
                       key={i}
-                      className={`Megamenumenuitem ${
-                        activeMenu?.label === item.label
+                      className={`Megamenumenuitem ${activeMenu?.label === item.label
                           ? "activeMegamenuSection"
                           : ""
-                      }`}
+                        }`}
                       onClick={() => {
                         setActiveMenu(item);
                         setMenuVisible(false);
@@ -721,7 +726,7 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                           setMenuVisible(true);
                           setHoveredImage(
                             sectionImageMap[item.label] ||
-                              "/images/FirstSliderImage.png",
+                            "/images/FirstSliderImage.png",
                           );
                         }
                       }}
@@ -828,9 +833,8 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
 
             {activeMenu && (
               <div
-                className={`Newmegamenu hidden md:block ${
-                  menuVisible ? "show" : ""
-                }`}
+                className={`Newmegamenu hidden md:block ${menuVisible ? "show" : ""
+                  }`}
               >
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -890,18 +894,18 @@ const FullWidthHeaderMegaMenu = ({ setMenuBar, setMenuBar1 }) => {
                           >
                             <h4 className="mega-block-title">
                               {block.title.length > 15 &&
-                              block.title.includes(" ")
+                                block.title.includes(" ")
                                 ? (() => {
-                                    const words = block.title.split(" ");
-                                    const mid = Math.floor(words.length / 2);
-                                    return (
-                                      <>
-                                        {words.slice(0, mid).join(" ")}
-                                        <br />
-                                        {words.slice(mid).join(" ")}
-                                      </>
-                                    );
-                                  })()
+                                  const words = block.title.split(" ");
+                                  const mid = Math.floor(words.length / 2);
+                                  return (
+                                    <>
+                                      {words.slice(0, mid).join(" ")}
+                                      <br />
+                                      {words.slice(mid).join(" ")}
+                                    </>
+                                  );
+                                })()
                                 : block.title}
                             </h4>
 

@@ -263,6 +263,7 @@
 #iplsectionmain .trendingChennaiPrev {
   background-image: url("/public/images/ipl/left-ipl-icon.svg");
 }
+
 #iplsectionmain .trendingChennaiNext {
   background-image: url("/public/images/ipl/right-ipl-icon.svg");
 }
@@ -270,6 +271,7 @@
 #iplsectionmain .hbintCont::before {
   border-radius: 20px;
 }
+
 #iplsectionmain img {
   border-radius: 15px;
 }
@@ -310,6 +312,19 @@
   margin-top: 30px;
 }
 
+.chennaiquizzbgsection {
+  background-image: url("/public/images/chennaiquizbg.png");
+  height: 650px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.margginchennaiquizzzzz {
+  margin-right: 18%;
+}
+
 @media (max-width: 1600px) and (min-width: 1301px) {
   .summerfestbg {
     height: 504px;
@@ -322,6 +337,11 @@
 
   .paragaraphhhhhsummerfest {
     width: 93%;
+  }
+
+
+  .margginchennaiquizzzzz {
+    margin-right: 22%;
   }
 }
 
@@ -340,7 +360,14 @@
   .paragaraphhhhhsummerfest {
     width: 93%;
   }
+
+
+  .chennaiquizzbgsection {
+    height: 530px;
+
+  }
 }
+
 @media (max-width: 1100px) and (min-width: 768px) {
   .summerfestbg {
     height: 650px;
@@ -358,6 +385,52 @@
   }
 }
 
+@media (max-width:1100px) and (min-width:901px) {
+  .margginchennaiquizzzzz {
+    margin-right: 0;
+    padding-left: 10%;
+  }
+
+  .chennaiquizzbgsection {
+
+    height: 569px;
+    background-size: cover;
+    background-position: 70%;
+  }
+
+  .chennaiquizzbgsection p {
+    font-size: 15px;
+    width: 50%;
+  }
+
+  .letsgobuttonnnn p {
+    width: max-content;
+  }
+
+}
+
+
+
+@media (max-width:900px) and (min-width:768px) {
+  .chennaiquizzbgsection {
+    height: 900px;
+    background-size: cover;
+    background-image: url(/public/images/chennaiquizbgg.jpg);
+    align-items: flex-start;
+    padding-left: 10%;
+    padding-top: 65px;
+  }
+
+  .chennaiquizzbgsection p {
+    font-size: 17px;
+  }
+
+  .margginchennaiquizzzzz {
+    margin-right: 0;
+  }
+}
+
+
 @media (max-width: 768px) {
   .summerfestbg {
     background-image: url("/public/images/summerfestmobilebg.jpeg");
@@ -370,6 +443,7 @@
     background-repeat: no-repeat;
     background-color: #fcf4ef;
   }
+
   .summerfestwidthss {
     width: 100%;
     margin-left: 0;
@@ -380,7 +454,49 @@
   .summerfestwidthss .chennaiInvestmentsHeading br {
     /* display: none; */
   }
+
+
+  .margginchennaiquizzzzz {
+    margin-right: 0;
+  }
+
+  .chennaiquizzbgsection {
+    background-image: url(/public/images/chennaiquizbgg.jpg);
+    height: 785px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #feedff;
+    align-items: flex-start;
+  }
+
+  .chennaiquizwidth {
+    width: 100%;
+    padding: 0 25px;
+    padding-top: 50px;
+  }
+
+  .chennaiquizwidth p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .pinkdashhhhs {
+    height: 4px;
+    width: 38%;
+    margin-top: 5px;
+  }
+
 }
+
+
+@media (max-width:768px) and (min-width:700px) {
+  .chennaiquizzbgsection {
+    height: 918px;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 1600px) {
   .manifesto {
     bottom: 310px !important;
@@ -483,11 +599,9 @@
   }
 
   #iplsectionmain .hbintCont::before {
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.55) 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
+    background: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0) 100%);
     opacity: 1;
   }
 
@@ -1052,8 +1166,7 @@
 }
 
 .bulb-wrapper:hover .bulb-image {
-  filter: drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 40px #ffeb3b)
-    drop-shadow(0 0 60px #fff176);
+  filter: drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 40px #ffeb3b) drop-shadow(0 0 60px #fff176);
   transform: scale(1.05);
 }
 
@@ -1097,6 +1210,7 @@
   .manifestowidth {
     width: 60%;
   }
+
   #iplsectionmain .iplimageee {
     width: 125px;
   }
@@ -1286,8 +1400,7 @@
   padding: 0px 25px;
 }
 
-.arattai-slider-wrapper .arattai-slide {
-}
+.arattai-slider-wrapper .arattai-slide {}
 
 .arattai-slider-wrapper .arattai-image {
   width: 100%;
@@ -1505,6 +1618,7 @@
 
 /* Add to your global CSS or Tailwind config */
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -1516,6 +1630,7 @@
 }
 
 @keyframes float-slow {
+
   0%,
   100% {
     transform: translateY(0px);
@@ -1527,6 +1642,7 @@
 }
 
 @keyframes pulse-slow {
+
   0%,
   100% {
     opacity: 0.6;
@@ -1538,6 +1654,7 @@
 }
 
 @keyframes bounce-slow {
+
   0%,
   100% {
     transform: translateY(0);
@@ -1549,6 +1666,7 @@
 }
 
 @keyframes bounce-med {
+
   0%,
   100% {
     transform: translateY(0);
@@ -1594,6 +1712,7 @@
 }
 
 @keyframes shimmer-card {
+
   0%,
   100% {
     transform: translateX(-100%) scaleX(1);
@@ -1615,6 +1734,7 @@
 }
 
 @keyframes float-text {
+
   0%,
   100% {
     transform: translateY(0px);
@@ -1626,6 +1746,7 @@
 }
 
 @keyframes bounce-gentle {
+
   0%,
   100% {
     transform: translateY(0);
@@ -1679,12 +1800,10 @@
 }
 
 .animate-shimmer {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
@@ -1741,6 +1860,7 @@
 
 /* 🌊 Ultra Smooth Float */
 @keyframes bubbleFloatXL {
+
   0%,
   100% {
     transform: translateY(0px) translateX(0px) rotate(0deg);
@@ -1777,6 +1897,7 @@
 
 /* 🎪 Wobble Magic */
 @keyframes bubbleWobble {
+
   0%,
   100% {
     transform: rotate(0deg) skew(0deg);
@@ -1801,23 +1922,21 @@
 /* ✨ Glow Shift */
 @keyframes bubbleGlowShift {
   0% {
-    filter: drop-shadow(0 8px 25px rgba(59, 130, 246, 0.3))
-      drop-shadow(0 0 20px rgba(59, 130, 246, 0.2));
+    filter: drop-shadow(0 8px 25px rgba(59, 130, 246, 0.3)) drop-shadow(0 0 20px rgba(59, 130, 246, 0.2));
   }
 
   50% {
-    filter: drop-shadow(0 12px 35px rgba(34, 197, 94, 0.4))
-      drop-shadow(0 0 30px rgba(34, 197, 94, 0.3));
+    filter: drop-shadow(0 12px 35px rgba(34, 197, 94, 0.4)) drop-shadow(0 0 30px rgba(34, 197, 94, 0.3));
   }
 
   100% {
-    filter: drop-shadow(0 8px 25px rgba(236, 72, 153, 0.35))
-      drop-shadow(0 0 25px rgba(236, 72, 153, 0.25));
+    filter: drop-shadow(0 8px 25px rgba(236, 72, 153, 0.35)) drop-shadow(0 0 25px rgba(236, 72, 153, 0.25));
   }
 }
 
 /* 💓 Heartbeat Pulse */
 @keyframes bubblePulse {
+
   0%,
   100% {
     transform: scale(1);
@@ -1854,28 +1973,23 @@
 /* 🌈 Shimmer Sweep */
 @keyframes bubbleShimmer {
   0% {
-    filter: brightness(1.1) contrast(1.15)
-      drop-shadow(0 0 0px rgba(255, 255, 255, 0.8));
+    filter: brightness(1.1) contrast(1.15) drop-shadow(0 0 0px rgba(255, 255, 255, 0.8));
   }
 
   25% {
-    filter: brightness(1.25) contrast(1.2)
-      drop-shadow(3px 0 10px rgba(255, 255, 255, 0.6));
+    filter: brightness(1.25) contrast(1.2) drop-shadow(3px 0 10px rgba(255, 255, 255, 0.6));
   }
 
   50% {
-    filter: brightness(1.35) contrast(1.25)
-      drop-shadow(-2px 0 15px rgba(255, 255, 255, 0.7));
+    filter: brightness(1.35) contrast(1.25) drop-shadow(-2px 0 15px rgba(255, 255, 255, 0.7));
   }
 
   75% {
-    filter: brightness(1.2) contrast(1.18)
-      drop-shadow(1px 0 8px rgba(255, 255, 255, 0.5));
+    filter: brightness(1.2) contrast(1.18) drop-shadow(1px 0 8px rgba(255, 255, 255, 0.5));
   }
 
   100% {
-    filter: brightness(1.1) contrast(1.15)
-      drop-shadow(0 0 0px rgba(255, 255, 255, 0.8));
+    filter: brightness(1.1) contrast(1.15) drop-shadow(0 0 0px rgba(255, 255, 255, 0.8));
   }
 }
 
@@ -1918,9 +2032,11 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -1933,12 +2049,11 @@
   font-size: 2.2rem;
   font-weight: normal;
   text-align: center;
-  background: linear-gradient(
-    -45deg,
-    #100f9a,
-    /* #34493a,  */ #a34493,
-    #100f9a
-  );
+  background: linear-gradient(-45deg,
+      #100f9a,
+      /* #34493a,  */
+      #a34493,
+      #100f9a);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1997,5 +2112,3 @@
     line-height: 1.8;
   }
 }
-
-

@@ -541,11 +541,10 @@ export default function ArattaiWithKarthikKumar() {
 
       <div className="EventsCalendarMainSection mb-10 lg:!pt-5">
         <div
-          className={`EventsCalenderBackground ${
-            scrollDir === "right"
+          className={`EventsCalenderBackground ${scrollDir === "right"
               ? "Utilitiesscroll-right"
               : "Utilitiesscroll-left"
-          }`}
+            }`}
         >
           <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>
           <p>Gallery &nbsp; Gallery &nbsp; Gallery &nbsp;</p>

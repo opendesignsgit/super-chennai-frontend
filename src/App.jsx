@@ -398,6 +398,7 @@ import ArattaiBaradwajRanganExcell from "./Pages/Activities/ArattaiWithBaradwajR
 
 import ArattaiKarthiKumar from "./Pages/Activities/ArattaiWithkrathikKumar/ArattaiKarthiKumar";
 import ArattaiKarthiKumarExcell from "./Pages/Activities/ArattaiWithkrathikKumar/ArattaiKarthiKumarExcell";
+import ArattaiWithPadmaSubramanyam from "./Pages/Activities/ArattaiWithPadmaSubramanyam/ArattaiWithPadmaSubramanyam";
 
 
 
@@ -643,7 +644,8 @@ function App() {
 
       {isHomePage && showPopup && (
         <ImagePopup
-          imageUrl="/images/letstalkpopup.png"
+          // imageUrl="/images/letstalkpopup.png"
+          imageUrl="/images/chennaiquiz-popup.png"
           onClose={() => setShowPopup(false)}
         />
       )}
@@ -652,12 +654,11 @@ function App() {
 
       {pathname !== "/manifesto-admin-all-doc-secure-datas" &&
         pathname !==
-          "/arattai-with-jahabar-sadique/chai-kings-founder-admin-all-entry" && (
+        "/arattai-with-jahabar-sadique/chai-kings-founder-admin-all-entry" && (
           <div
             ref={stickyRef}
-            className={`stickyIconsContainer ${
-              footerReached ? "footerreached" : ""
-            }`}
+            className={`stickyIconsContainer ${footerReached ? "footerreached" : ""
+              }`}
           >
             <a
               className="linkedin-sc"
@@ -745,15 +746,14 @@ function App() {
         <div
           id="hotshots-event-tab"
           ref={stickyRef}
-          className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest${
-            footerReached ? "footerreached" : ""
-          } bubble-master`}
+          className={`super-chennai-contest pointcastSticky nammaStorieslink hotshots-event-contest${footerReached ? "footerreached" : ""
+            } bubble-master`}
         >
           <a href="https://letstalkchennai.com/">
             <img
               src="/images/letstalkhomeicon.png"
               alt=""
-              // className="bubble-glow" // 🔥 UPGRADED CLASS
+            // className="bubble-glow" // 🔥 UPGRADED CLASS
             />
           </a>
 
@@ -796,39 +796,44 @@ function App() {
           path="//arattai-with-arun-jain/tech-visionary"
           element={<ArattaiWithArunJain />}
         />
-         <Route
+        <Route
           path="/arattai-with-karthik-kumar/actor-comedian"
           element={<ArattaiKarthiKumar />}
         />
 
-          <Route
+        <Route
           path="/arattai-with-karthik-kumar/actor-comedian"
           element={<ArattaiKarthiKumar />}
         />
 
-             <Route
+        <Route
           path="/arattai-with-karthik-kumar/actor-comedian/list/sheet/live"
           element={<ArattaiKarthiKumarExcell />}
         />
 
-        
 
-         <Route
+        <Route
+          path="/arattai-with-dr-padma-subrahmanyam/bharatanatyam-dancer" 
+          element={<ArattaiWithPadmaSubramanyam />}
+        />
+
+
+        <Route
           path="/arattai-with-baradwaj-rangan-film-critic"
           element={<ArattaiWithBaradwajRangan />}
         />
 
-          <Route
+        <Route
           path="/arattai-with-baradwaj-rangan-film-critic/entry/list"
           element={<ArattaiBaradwajRanganExcell />}
         />
 
         <Route
           path="/icon-of-the-july-month-2026"
-          element={<IconofthemonthBharathwajRanga/>}
+          element={<IconofthemonthBharathwajRanga />}
         />
 
-        
+
 
         <Route
           path="/ArattaiArunJainExcell"

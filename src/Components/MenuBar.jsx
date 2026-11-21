@@ -11,6 +11,7 @@ export default function MenuBar({ setMenuBar }) {
   const menuItems = [
     { label: "About Us", href: "/about-us" },
     { label: "Events", href: "/chennai-events" },
+    { label: "Chenz Quiz", href: "https://chenzquiz.superchennai.com/" },
     { label: "SUMMER FEST", href: "https://summerfest.superchennai.com/" },
     // {
     //   label: "Sing Along Metro",

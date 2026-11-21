@@ -214,13 +214,25 @@ const slides = [
   //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
   // },
 
-  // {
-  //   image: "/images/desktop-chennaiquiz.jpeg",
-  //   link: "https://letstalkchennai.com/",
-  //   image1: "/images/mobile-chennaiquiz.jpg",
-  //   title: "chennai's surfing",
-  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  // },
+  {
+    image: "/images/desktop-chennaiquiz.jpeg",
+    link: "https://chenzquiz.superchennai.com/",
+    image1: "/images/mobile-chennaiquiz.jpg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
+    {
+    image: "/images/homepagearrataipadma.jpg",
+    link: "/arattai-with-dr-padma-subrahmanyam/bharatanatyam-dancer",
+    image1: "/images/mobilehomepagearrataipadma.jpeg",
+    title: "chennai's surfing",
+    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+
+
+
+  
 
   {
     image: "/images/lets-talk-chennai-desktop.jpg",
@@ -267,22 +279,22 @@ const slides = [
     title: "innovation in chennai",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
-  {
-    type: "image",
-    link: "#",
-    image: "/images/HomePage-Images/banner-4.jpg",
-    image1: "/images/HomePage-Images/mobile-banner-5.jpg",
-    title: "multi cuisine restaurant chennai",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
-  {
-    type: "image",
-    link: "#",
-    image: "/images/HomePage-Images/banner-5.jpg",
-    image1: "/images/HomePage-Images/mobile-banner-5.jpg",
-    title: "Chennai Work",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-  },
+  // {
+  //   type: "image",
+  //   link: "#",
+  //   image: "/images/HomePage-Images/banner-4.jpg",
+  //   image1: "/images/HomePage-Images/mobile-banner-5.jpg",
+  //   title: "multi cuisine restaurant chennai",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
+  // {
+  //   type: "image",
+  //   link: "#",
+  //   image: "/images/HomePage-Images/banner-5.jpg",
+  //   image1: "/images/HomePage-Images/mobile-banner-5.jpg",
+  //   title: "Chennai Work",
+  //   description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  // },
 ];
 
 export default function HeroSlider() {

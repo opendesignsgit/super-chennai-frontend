@@ -182,12 +182,14 @@ export default function HomePage() {
         <HeroSlider />
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="100">
-        <SecondSectionSummerSection />
-      </div>
+
 
       <div data-aos="fade-up" data-aos-delay="100">
         <ChenzQuizComponent />
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="100">
+        <SecondSectionSummerSection />
       </div>
 
       {/* <div data-aos="fade-up" data-aos-delay="100">

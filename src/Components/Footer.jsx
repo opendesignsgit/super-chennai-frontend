@@ -216,6 +216,10 @@ const Footer = () => {
       link: "/media-coverage",
     },
     {
+      title: "Chenz Quiz",
+      link: "https://chenzquiz.superchennai.com/",
+    },
+    {
       title: "SUMMER FEST",
       link: "https://summerfest.superchennai.com/",
     },

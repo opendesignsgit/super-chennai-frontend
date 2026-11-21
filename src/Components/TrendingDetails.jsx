@@ -1423,30 +1423,30 @@ export default function TrendingDetails() {
   ];
 
   const oliveRadly = [
-   {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/olive-ridley-turtles-conservation-tamil-nadu"
-  },
-  "headline": "1.65 Lakh Olive Ridley Turtles Begin Their Journey to the Sea",
-  "description": "Nearly 1.65 lakh Olive Ridley turtles were safely released into the ocean through a major marine conservation effort across Tamil Nadu coastal districts.",
-  "image": "https://www.superchennai.com/images/trendingChennai/trendingchennai-turtle.jpeg",  
-  "author": {
-    "@type": "Person",
-    "name": "Super Chennai"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "",
-    "logo": {
-      "@type": "ImageObject",
-      "url": ""
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.superchennai.com/trending-chennai/olive-ridley-turtles-conservation-tamil-nadu"
+      },
+      "headline": "1.65 Lakh Olive Ridley Turtles Begin Their Journey to the Sea",
+      "description": "Nearly 1.65 lakh Olive Ridley turtles were safely released into the ocean through a major marine conservation effort across Tamil Nadu coastal districts.",
+      "image": "https://www.superchennai.com/images/trendingChennai/trendingchennai-turtle.jpeg",
+      "author": {
+        "@type": "Person",
+        "name": "Super Chennai"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "",
+        "logo": {
+          "@type": "ImageObject",
+          "url": ""
+        }
+      },
+      "datePublished": "2026-05-11"
     }
-  },
-  "datePublished": "2026-05-11"
-}
 
 
   ]
@@ -1540,1056 +1540,1173 @@ export default function TrendingDetails() {
     },
   ];
 
-   const poonamaleyStretch = [
-     {
-       "@context": "https://schema.org",
-       "@type": "Article",
-       mainEntityOfPage: {
-         "@type": "WebPage",
-         "@id":
-           "https://www.superchennai.com/trending-chennai/chennai-corporation-smart-waste-transport",
-       },
-       headline: "Cleaner Roads Ahead: Chennai’s Smart Waste Transport Upgrade",
-       description:
-         "Chennai Corporation introduces sealed garbage transport containers in North Chennai to reduce waste spillage, foul smell, and improve road cleanliness and hygiene.",
-       image: "https://www.superchennai.com/images/cleanerRoad.jpg",
-       author: {
-         "@type": "Person",
-         name: "Super Chennai",
-       },
-       publisher: {
-         "@type": "Organization",
-         name: "",
-         logo: {
-           "@type": "ImageObject",
-           url: "",
-         },
-       },
-       datePublished: "2026-05-19",
-     },
-   ];
+  const poonamaleyStretch = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/chennai-corporation-smart-waste-transport",
+      },
+      headline: "Cleaner Roads Ahead: Chennai’s Smart Waste Transport Upgrade",
+      description:
+        "Chennai Corporation introduces sealed garbage transport containers in North Chennai to reduce waste spillage, foul smell, and improve road cleanliness and hygiene.",
+      image: "https://www.superchennai.com/images/cleanerRoad.jpg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-05-19",
+    },
+  ];
 
-   const sipcotCmVijay = [
-     {
-       "@context": "https://schema.org",
-       "@type": "Article",
-       mainEntityOfPage: {
-         "@type": "WebPage",
-         "@id":
-           "https://www.superchennai.com/trending-chennai/kanchipuram-803-acre-sipcot-industrial-park",
-       },
-       headline: "Kanchipuram Gets a New 803-Acre SIPCOT Industrial Park",
-       description:
-         "Kanchipuram is set for a major industrial boost! 🏭🚀 The Tamil Nadu government has approved a new 803-acre SIPCOT Industrial Park to attract large-scale investments, expand manufacturing, and create thousands of job opportunities. The project is expected to strengthen Kanchipuram's position as a key industrial hub while supporting economic growth across the region. A significant step towards a stronger industrial future for Tamil Nadu. 📈✨",
-       image: "https://www.superchennai.com/images/kanchipuramSIPCOT.png",
-       author: {
-         "@type": "Person",
-         name: "",
-       },
-       publisher: {
-         "@type": "Organization",
-         name: "",
-         logo: {
-           "@type": "ImageObject",
-           url: "",
-         },
-       },
-       datePublished: "",
-     },
-   ];
+  const sipcotCmVijay = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/kanchipuram-803-acre-sipcot-industrial-park",
+      },
+      headline: "Kanchipuram Gets a New 803-Acre SIPCOT Industrial Park",
+      description:
+        "Kanchipuram is set for a major industrial boost! 🏭🚀 The Tamil Nadu government has approved a new 803-acre SIPCOT Industrial Park to attract large-scale investments, expand manufacturing, and create thousands of job opportunities. The project is expected to strengthen Kanchipuram's position as a key industrial hub while supporting economic growth across the region. A significant step towards a stronger industrial future for Tamil Nadu. 📈✨",
+      image: "https://www.superchennai.com/images/kanchipuramSIPCOT.png",
+      author: {
+        "@type": "Person",
+        name: "",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "",
+    },
+  ];
 
-   const pinkothan = [
-     {
-       "@context": "https://schema.org",
-       "@type": "Article",
-       mainEntityOfPage: {
-         "@type": "WebPage",
-         "@id":
-           "https://www.superchennai.com/trending-chennai/pinkathon-returns-to-chennai-after-7-years",
-       },
-       headline: "PINKATHON RETURNS TO CHENNAI AFTER 7 YEARS AT ISLAND GROUNDS",
-       description:
-         "Pinkathon returns to Chennai after seven years at Island Grounds on August 1 & 2 with 3 km to 100 km races celebrating fitness, health, and women's empowerment.",
-       image: "https://www.superchennai.com/images/PINKATHON.png",
-       author: {
-         "@type": "Person",
-         name: "Super Chennai",
-       },
-       publisher: {
-         "@type": "Organization",
-         name: "",
-         logo: {
-           "@type": "ImageObject",
-           url: "",
-         },
-       },
-       datePublished: "",
-     },
-   ];
+  const pinkothan = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/pinkathon-returns-to-chennai-after-7-years",
+      },
+      headline: "PINKATHON RETURNS TO CHENNAI AFTER 7 YEARS AT ISLAND GROUNDS",
+      description:
+        "Pinkathon returns to Chennai after seven years at Island Grounds on August 1 & 2 with 3 km to 100 km races celebrating fitness, health, and women's empowerment.",
+      image: "https://www.superchennai.com/images/PINKATHON.png",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "",
+    },
+  ];
 
-   const ashwinKathirvel = [
-     {
-       "@context": "https://schema.org",
-       "@type": "Article",
-       mainEntityOfPage: {
-         "@type": "WebPage",
-         "@id":
-           "https://www.superchennai.com/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
-       },
-       headline:
-         "Chennai's Aswin Shines in Minerva's Gothia & Helsinki Cup Wins",
-       description:
-         "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy lift the Gothia Cup and Helsinki Cup 2026, making the city proud.",
-       image: "https://www.superchennai.com/images/Ashwin-foodball.jpeg",
-       author: {
-         "@type": "Person",
-         name: "Super Chennai",
-       },
-       publisher: {
-         "@type": "Organization",
-         name: "",
-         logo: {
-           "@type": "ImageObject",
-           url: "",
-         },
-       },
-       datePublished: "",
-     },
-   ];
+  const ashwinKathirvel = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/aswin-kathirvel-chennai-footballer-minerva-academy",
+      },
+      headline:
+        "Chennai's Aswin Shines in Minerva's Gothia & Helsinki Cup Wins",
+      description:
+        "Chennai's 11-year-old Aswin Kathirvel Narayanan overcame personal loss to help Minerva Academy lift the Gothia Cup and Helsinki Cup 2026, making the city proud.",
+      image: "https://www.superchennai.com/images/Ashwin-foodball.jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "",
+    },
+  ];
 
-   const velacheriariticle = [
-     {
-       "@context": "https://schema.org",
-       "@type": "Article",
-       mainEntityOfPage: {
-         "@type": "WebPage",
-         "@id":
-           "https://www.superchennai.com/trending-chennai/uwa-first-india-campus-velachery-chennai",
-       },
-       headline: "UWA to Open First India Campus in Velachery | Super Chennai",
-       description:
-         "University of Western Australia to open Tamil Nadu's first international university campus in Velachery, Chennai, creating 200+ jobs with a Rs 125 crore investment.",
-       image: "https://www.superchennai.com/images/UWA-VELACHERY-inner.jpeg",
-       author: {
-         "@type": "Person",
-         name: "Super Chennai",
-       },
-       publisher: {
-         "@type": "Organization",
-         name: "",
-         logo: {
-           "@type": "ImageObject",
-           url: "",
-         },
-       },
-       datePublished: "",
-     },
-   ];
+  const velacheriariticle = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/uwa-first-india-campus-velachery-chennai",
+      },
+      headline: "UWA to Open First India Campus in Velachery | Super Chennai",
+      description:
+        "University of Western Australia to open Tamil Nadu's first international university campus in Velachery, Chennai, creating 200+ jobs with a Rs 125 crore investment.",
+      image: "https://www.superchennai.com/images/UWA-VELACHERY-inner.jpeg",
+      author: {
+        "@type": "Person",
+        name: "Super Chennai",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "",
+    },
+  ];
 
-    const lulumarget = [
+  const lulumarget = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/lulu-hypermarket-chennai-shenoy-nagar-central-metro",
+      },
+      headline: "LULU HYPERMARKET CHENNAI AT SHENOY NAGAR & CENTRAL METRO",
+      description:
+        "LuLu Hypermarket Chennai opens Oct 12, 2026 at Shenoy Nagar and Chennai Central Metro with a hypermarket, LuLu Daily, fashion, electronics and a food court.",
+      image: "https://www.superchennai.com/images/Lulu%20Market%20Inner.jpg",
+      author: {
+        "@type": "",
+        name: "",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-10-12",
+    },
+  ];
+
+  const fackSangeeth2 = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/fake-sangeet-chennai-phoenix-marketcity",
+      },
+      headline: "FAKE SANGEET CHENNAI 2.0 AT PHOENIX MARKETCITY",
+      description:
+        "Fake Sangeet Chennai 2.0 hits Phoenix Marketcity on Oct 16, 2026, 7 PM–2 AM. Bollywood and Kollywood DJ sets, live dhol, ethnic wear only. Passes from ₹699.",
+      image:
+        "https://www.superchennai.com/images/Fake%20Sangeeth%20-%20Home.jpg",
+      author: {
+        "@type": "",
+        name: "",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-10-16",
+      dateModified: "2026-10-17",
+    },
+  ];
+
+  const velacherimall = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/xb-mall-velachery-madipakkam-road",
+      },
+      headline: "XB MALL VELACHERY – MULTIPLEX, BOWLING & MORE OPENING SOON",
+      description:
+        "XB Mall Velachery opens soon on Velachery–Madipakkam Road near Padmavathi Nagar with a multiplex, bowling, VR gaming, food court, brands and basement parking.",
+      image: "https://www.superchennai.com/images/XB%20Mall%20Inner.jpg",
+      author: {
+        "@type": "",
+        name: "",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "",
+    },
+  ];
+
+  const porurmetro = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai/chennai-metro-phase-2-poonamallee-vadapalani-line-open",
+      },
+      headline:
+        "Chennai Metro Phase 2: Poonamallee–Vadapalani Line Opens to the Public",
+      description:
+        "Chennai Metro Phase 2 opens Poonamallee–Vadapalani, inaugurated by PM Modi and the TN CM, with 10-minute peak-hour trains for faster, smoother city commutes.",
+      image: "https://www.superchennai.com/images/innwer-porur-metro.jpeg",
+      author: {
+        "@type": "",
+        name: "",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-10-11",
+    },
+  ];
+
+  const permburnavarathiri = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.superchennai.com/trending-chennai//spr-city-48-foot-golu-perambur-navaratri-2026",
+      },
+      headline: "SPR City 48-Foot Golu, Perambur | Navaratri 2026 Chennai",
+      description:
+        "Trending in Chennai: SPR City’s 48-foot Golu with 4,500+ dolls at Binny Mills Ground, Perambur. Oct 11–20, 10 AM–10 PM, free entry. World record attempt.",
+      image: "https://www.superchennai.com/images/spr-city-golu-inner.jpeg",
+      author: {
+        "@type": "",
+        name: "",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "",
+        logo: {
+          "@type": "ImageObject",
+          url: "",
+        },
+      },
+      datePublished: "2026-10-13",
+    },
+  ];
+
+  const capitalLAndDataCenter =
+    [
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        mainEntityOfPage: {
+        "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id":
-            "https://www.superchennai.com/trending-chennai/lulu-hypermarket-chennai-shenoy-nagar-central-metro",
+          "@id": "https://www.superchennai.com/trending-chennai/capitaland-data-centre-chennai-01-ambattur"
         },
-        headline: "LULU HYPERMARKET CHENNAI AT SHENOY NAGAR & CENTRAL METRO",
-        description:
-          "LuLu Hypermarket Chennai opens Oct 12, 2026 at Shenoy Nagar and Chennai Central Metro with a hypermarket, LuLu Daily, fashion, electronics and a food court.",
-        image: "https://www.superchennai.com/images/Lulu%20Market%20Inner.jpg",
-        author: {
+        "headline": "CapitaLand Data Centre Chennai 01 Inaugurated in Ambattur",
+        "description": "Inaugurated on 15 Oct 2026 at SIDCO, Ambattur, CapitaLand Data Centre Chennai 01 brings 34 MW of IT capacity in 13 data halls, ready for tenants by end-2026.",
+        "image": "https://www.superchennai.com/images/Datacentre2.jpg",
+        "author": {
           "@type": "",
-          name: "",
+          "name": ""
         },
-        publisher: {
+        "publisher": {
           "@type": "Organization",
-          name: "",
-          logo: {
+          "name": "Super Chennai",
+          "logo": {
             "@type": "ImageObject",
-            url: "",
-          },
+            "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+          }
         },
-        datePublished: "2026-10-12",
-      },
-    ];
+        "datePublished": ""
+      }
+    ]
 
-    const fackSangeeth2 = [
+  const chennaiArakonamMetro =
+    [
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        mainEntityOfPage: {
+        "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id":
-            "https://www.superchennai.com/trending-chennai/fake-sangeet-chennai-phoenix-marketcity",
+          "@id": "https://www.superchennai.com/trending-chennai/chennai-to-arakkonam-ac-local-train"
         },
-        headline: "FAKE SANGEET CHENNAI 2.0 AT PHOENIX MARKETCITY",
-        description:
-          "Fake Sangeet Chennai 2.0 hits Phoenix Marketcity on Oct 16, 2026, 7 PM–2 AM. Bollywood and Kollywood DJ sets, live dhol, ethnic wear only. Passes from ₹699.",
-        image:
-          "https://www.superchennai.com/images/Fake%20Sangeeth%20-%20Home.jpg",
-        author: {
+        "headline": "Chennai–Arakkonam AC Local Train Service Begins October 23",
+        "description": "The first suburban AC train on Chennai’s west side runs from MGR Central to Arakkonam as a 12-coach AC EMU. It is the second AC suburban train from Chennai.",
+        "image": "https://www.superchennai.com/images/Southernrailway2.jpg",
+        "author": {
           "@type": "",
-          name: "",
+          "name": ""
         },
-        publisher: {
+        "publisher": {
           "@type": "Organization",
-          name: "",
-          logo: {
+          "name": "Super Chennai",
+          "logo": {
             "@type": "ImageObject",
-            url: "",
-          },
+            "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+          }
         },
-        datePublished: "2026-10-16",
-        dateModified: "2026-10-17",
-      },
-    ];
+        "datePublished": ""
+      }
 
-    const velacherimall = [
+    ]
+
+  const ferariShowRoom =
+    [
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        mainEntityOfPage: {
+        "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id":
-            "https://www.superchennai.com/trending-chennai/xb-mall-velachery-madipakkam-road",
+          "@id": "https://www.superchennai.com/trending-chennai/ferrari-showroom-chennai-coming-soon"
         },
-        headline: "XB MALL VELACHERY – MULTIPLEX, BOWLING & MORE OPENING SOON",
-        description:
-          "XB Mall Velachery opens soon on Velachery–Madipakkam Road near Padmavathi Nagar with a multiplex, bowling, VR gaming, food court, brands and basement parking.",
-        image: "https://www.superchennai.com/images/XB%20Mall%20Inner.jpg",
-        author: {
+        "headline": "Ferrari Chennai Showroom - Coming soon",
+        "description": "Ferrari showroom Chennai will join Delhi, Mumbai, Bengaluru and Ahmedabad. With sales up 28.6% and India-EU FTA duty cuts due in 2027, buyers are booking early.",
+        "image": "https://www.superchennai.com/images/Ferrari.jpg",
+        "author": {
           "@type": "",
-          name: "",
+          "name": ""
         },
-        publisher: {
+        "publisher": {
           "@type": "Organization",
-          name: "",
-          logo: {
+          "name": "Super Chennai",
+          "logo": {
             "@type": "ImageObject",
-            url: "",
-          },
+            "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+          }
         },
-        datePublished: "",
-      },
-    ];
+        "datePublished": ""
+      }
 
-    const porurmetro = [
+    ]
+
+  const indianDoungutgame =
+    [
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        mainEntityOfPage: {
+        "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id":
-            "https://www.superchennai.com/trending-chennai/chennai-metro-phase-2-poonamallee-vadapalani-line-open",
+          "@id": "https://www.superchennai.com/trending-chennai/dugout-marina-mall-net-play-arena-omr"
         },
-        headline:
-          "Chennai Metro Phase 2: Poonamallee–Vadapalani Line Opens to the Public",
-        description:
-          "Chennai Metro Phase 2 opens Poonamallee–Vadapalani, inaugurated by PM Modi and the TN CM, with 10-minute peak-hour trains for faster, smoother city commutes.",
-        image: "https://www.superchennai.com/images/innwer-porur-metro.jpeg",
-        author: {
+        "headline": "India's First Dugout Net Play Arena Opens at Marina Mall, Chennai",
+        "description": "Heading to Marina Mall, OMR? Dugout Marina Mall now has a Net Play arena, billed as India’s first, on the 5th floor. Open every day from 9:30 AM to 11:00 PM.",
+        "image": "https://www.superchennai.com/images/DUGOUT2.jpg",
+        "author": {
           "@type": "",
-          name: "",
+          "name": ""
         },
-        publisher: {
+        "publisher": {
           "@type": "Organization",
-          name: "",
-          logo: {
+          "name": "Super Chennai",
+          "logo": {
             "@type": "ImageObject",
-            url: "",
-          },
+            "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+          }
         },
-        datePublished: "2026-10-11",
-      },
-    ];
+        "datePublished": ""
+      }
 
-    const permburnavarathiri = [
+    ]
+
+
+  const karapakkamCinima =
+    [
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        mainEntityOfPage: {
+        "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id":
-            "https://www.superchennai.com/trending-chennai//spr-city-48-foot-golu-perambur-navaratri-2026",
+          "@id": "https://www.superchennai.com/trending-chennai/karpagam-theatre-chennai-medavakkam"
         },
-        headline: "SPR City 48-Foot Golu, Perambur | Navaratri 2026 Chennai",
-        description:
-          "Trending in Chennai: SPR City’s 48-foot Golu with 4,500+ dolls at Binny Mills Ground, Perambur. Oct 11–20, 10 AM–10 PM, free entry. World record attempt.",
-        image: "https://www.superchennai.com/images/spr-city-golu-inner.jpeg",
-        author: {
+        "headline": "Karpagam Cinemas to Enter Chennai with Five-Screen Multiplex in Medavakkam",
+        "description": "From Coimbatore to Chennai: the planned Karpagam theatre Chennai is a five-screen multiplex in Medavakkam-Santhoshapuram, near Ruby Elite. Opening date awaited.",
+        "image": "https://www.superchennai.com/images/Karpgam2.jpg",
+        "author": {
           "@type": "",
-          name: "",
+          "name": ""
         },
-        publisher: {
+        "publisher": {
           "@type": "Organization",
-          name: "",
-          logo: {
+          "name": "Super Chennai",
+          "logo": {
             "@type": "ImageObject",
-            url: "",
-          },
+            "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+          }
         },
-        datePublished: "2026-10-13",
+        "datePublished": ""
+      }
+
+    ]
+
+  const rainWater =
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.superchennai.com/trending-chennai/rainwater-harvesting-thuli-campaign-tamil-nadu"
+        },
+        "headline": "CM C. Joseph Vijay Launches Rainwater Harvesting Awareness Campaign",
+        "description": "Check your home rainwater harvesting setup before the monsoon. Metrowater audits start Oct 22, after CM Vijay launched the statewide Thuli campaign in Chennai.",
+        "image": "https://www.superchennai.com/images/Thuli2.jpg",
+        "author": {
+          "@type": "",
+          "name": ""
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Super Chennai",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+          }
+        },
+        "datePublished": ""
+      }
+
+    ]
+
+
+  const rollsRoayls =
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.superchennai.com/trending-chennai/rolls-royce-showroom-chennai-meenambakkam"
+        },
+        "headline": "Rolls-Royce Showroom Chennai Opens on GST Road, Meenambakkam",
+        "description": "Rolls-Royce showroom Chennai opens at No. 20, GST Road, Meenambakkam. Run by KUN Exclusive, it features a Bespoke Commissioning Atelier for personalised cars.",
+        "image": "https://www.superchennai.com/images/rolles-one.jpg",
+        "author": {
+          "@type": "",
+          "name": ""
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Super Chennai",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+          }
+        },
+        "datePublished": ""
+      }
+
+    ]
+
+
+  const vetripayanam =
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.superchennai.com/trending-chennai/vetri-payanam-thittam-free-bus-women"
+        },
+        "headline": "Vettri Payanam Thittam 2026: Tamil Nadu Free Bus Travel Scheme",
+        "description": "12,695 government buses are now free for women and transgender persons under Vetri Payanam Thittam, including Express, LSS, Deluxe, Mofussil and Ghat services.",
+        "image": "https://www.superchennai.com/images/Vetripayanam%202.jpg",
+        "author": {
+          "@type": "",
+          "name": ""
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Super Chennai",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+          }
+        },
+        "datePublished": ""
+      }
+
+    ]
+
+
+
+  const RamapuramCentralPark = [
+
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.superchennai.com/trending-chennai/ramapuram-central-park-green-space-for-residents"
       },
-    ];
-
-    const capitalLAndDataCenter =
-    [
-      {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/capitaland-data-centre-chennai-01-ambattur"
-  },
-  "headline": "CapitaLand Data Centre Chennai 01 Inaugurated in Ambattur",
-  "description": "Inaugurated on 15 Oct 2026 at SIDCO, Ambattur, CapitaLand Data Centre Chennai 01 brings 34 MW of IT capacity in 13 data halls, ready for tenants by end-2026.",
-  "image": "https://www.superchennai.com/images/Datacentre2.jpg",  
-  "author": {
-    "@type": "",
-    "name": ""
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Super Chennai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+      "headline": "A LITTLE GREEN GETAWAY IN THE HEART OF CHENNAI! 🌿",
+      "description": "Ramapuram Central Park gives local residents one open space to walk, work out, skate and play, so families and seniors can stay active without leaving the area.",
+      "image": "https://www.superchennai.com/images/Golden-Hour-desktop.png",
+      "author": {
+        "@type": "",
+        "name": ""
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "",
+        "logo": {
+          "@type": "ImageObject",
+          "url": ""
+        }
+      },
+      "datePublished": "2026-11-05"
     }
-  },
-  "datePublished": ""
-}
-    ]
 
-    const chennaiArakonamMetro =
-    [
-      {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/chennai-to-arakkonam-ac-local-train"
-  },
-  "headline": "Chennai–Arakkonam AC Local Train Service Begins October 23",
-  "description": "The first suburban AC train on Chennai’s west side runs from MGR Central to Arakkonam as a 12-coach AC EMU. It is the second AC suburban train from Chennai.",
-  "image": "https://www.superchennai.com/images/Southernrailway2.jpg",  
-  "author": {
-    "@type": "",
-    "name": ""
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Super Chennai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+  ]
+
+
+  const NageshraoPark = [
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.superchennai.com/trending-chennai/nageswara-rao-park-mylapore-chennai-reopens"
+      },
+      "headline": "NAGESWARA RAO PARK REOPENS WITH A FRESH NEW LOOK!",
+      "description": "Nageswara Rao Park in Mylapore has reopened, offering residents greener spaces, improved amenities and a refreshing setting for daily walks and recreation.",
+      "image": "https://www.superchennai.com/images/nageswara-rao-park-detailpage.jpeg",
+      "author": {
+        "@type": "",
+        "name": ""
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "",
+        "logo": {
+          "@type": "ImageObject",
+          "url": ""
+        }
+      },
+      "datePublished": "2026-11-05"
     }
-  },
-  "datePublished": ""
-}
 
-    ]
+  ]
 
-    const ferariShowRoom =
-    [
-      {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/ferrari-showroom-chennai-coming-soon"
-  },
-  "headline": "Ferrari Chennai Showroom - Coming soon",
-  "description": "Ferrari showroom Chennai will join Delhi, Mumbai, Bengaluru and Ahmedabad. With sales up 28.6% and India-EU FTA duty cuts due in 2027, buyers are booking early.",
-  "image": "https://www.superchennai.com/images/Ferrari.jpg",  
-  "author": {
-    "@type": "",
-    "name": ""
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Super Chennai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
+
+  const SemmaTraffic = [
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.superchennai.com/trending-chennai/chennai-smart-traffic-signals"
+      },
+      "headline": "Smart traffic lights in Chennai by December 2026",
+      "description": "Chennai's traffic is getting smarter! Discover how AI-powered traffic signals and real-time monitoring are transforming 165 junctions across the city.",
+      "image": "https://www.superchennai.com/images/smart-traffic-detail.jpeg",
+      "author": {
+        "@type": "",
+        "name": ""
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "",
+        "logo": {
+          "@type": "ImageObject",
+          "url": ""
+        }
+      },
+      "datePublished": "2026-11-19"
     }
-  },
-  "datePublished": ""
-}
-
-    ]
-  
-    const indianDoungutgame =
-    [
-      {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/dugout-marina-mall-net-play-arena-omr"
-  },
-  "headline": "India's First Dugout Net Play Arena Opens at Marina Mall, Chennai",
-  "description": "Heading to Marina Mall, OMR? Dugout Marina Mall now has a Net Play arena, billed as India’s first, on the 5th floor. Open every day from 9:30 AM to 11:00 PM.",
-  "image": "https://www.superchennai.com/images/DUGOUT2.jpg",  
-  "author": {
-    "@type": "",
-    "name": ""
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Super Chennai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
-    }
-  },
-  "datePublished": ""
-}
-
-    ]
-
-
-    const karapakkamCinima =
-    [
-      {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/karpagam-theatre-chennai-medavakkam"
-  },
-  "headline": "Karpagam Cinemas to Enter Chennai with Five-Screen Multiplex in Medavakkam",
-  "description": "From Coimbatore to Chennai: the planned Karpagam theatre Chennai is a five-screen multiplex in Medavakkam-Santhoshapuram, near Ruby Elite. Opening date awaited.",
-  "image": "https://www.superchennai.com/images/Karpgam2.jpg",  
-  "author": {
-    "@type": "",
-    "name": ""
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Super Chennai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
-    }
-  },
-  "datePublished": ""
-}
-
-    ]
-
-    const rainWater =
-    [
-      {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/rainwater-harvesting-thuli-campaign-tamil-nadu"
-  },
-  "headline": "CM C. Joseph Vijay Launches Rainwater Harvesting Awareness Campaign",
-  "description": "Check your home rainwater harvesting setup before the monsoon. Metrowater audits start Oct 22, after CM Vijay launched the statewide Thuli campaign in Chennai.",
-  "image": "https://www.superchennai.com/images/Thuli2.jpg",  
-  "author": {
-    "@type": "",
-    "name": ""
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Super Chennai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
-    }
-  },
-  "datePublished": ""
-}
-
-    ]
-    
-
-    const rollsRoayls = 
-    [
-      {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/rolls-royce-showroom-chennai-meenambakkam"
-  },
-  "headline": "Rolls-Royce Showroom Chennai Opens on GST Road, Meenambakkam",
-  "description": "Rolls-Royce showroom Chennai opens at No. 20, GST Road, Meenambakkam. Run by KUN Exclusive, it features a Bespoke Commissioning Atelier for personalised cars.",
-  "image": "https://www.superchennai.com/images/rolles-one.jpg",  
-  "author": {
-    "@type": "",
-    "name": ""
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Super Chennai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
-    }
-  },
-  "datePublished": ""
-}
-
-    ]
-
-
-    const vetripayanam =
-    [
-      {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.superchennai.com/trending-chennai/vetri-payanam-thittam-free-bus-women"
-  },
-  "headline": "Vettri Payanam Thittam 2026: Tamil Nadu Free Bus Travel Scheme",
-  "description": "12,695 government buses are now free for women and transgender persons under Vetri Payanam Thittam, including Express, LSS, Deluxe, Mofussil and Ghat services.",
-  "image": "https://www.superchennai.com/images/Vetripayanam%202.jpg",  
-  "author": {
-    "@type": "",
-    "name": ""
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Super Chennai",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.superchennai.com/images/HomePage-Images/Superchennai.png"
-    }
-  },
-  "datePublished": ""
-}
-
-    ]
-  
-      return (
-        <>
-          <Helmet>
-            <title>{event.meta?.title || event.name}</title>
-
-            <meta
-              name="description"
-              content={event.meta?.desc || event.trendingDetails?.slice(0, 150)}
-            />
-
-            {/* Open Graph */}
-            <meta
-              property="og:title"
-              content={event.meta?.title || event.name}
-            />
-            <meta property="og:description" content={event.meta?.desc || ""} />
-            <meta
-              property="og:image"
-              content={`${typeof window !== "undefined" ? window.location.origin : ""}${event.image}`}
-            />
-            <meta property="og:type" content="article" />
-
-            {/* Canonical */}
-            <link
-              rel="canonical"
-              href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
-            />
-
-            {slug ===
-              "trending-chennai/vetri-payanam-thittam-free-bus-women" && (
-              <script type="application/ld+json">
-                {JSON.stringify(vetripayanam)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/rolls-royce-showroom-chennai-meenambakkam" && (
-              <script type="application/ld+json">
-                {JSON.stringify(rollsRoayls)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/rainwater-harvesting-thuli-campaign-tamil-nadu" && (
-              <script type="application/ld+json">
-                {JSON.stringify(rainWater)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/karpagam-theatre-chennai-medavakkam" && (
-              <script type="application/ld+json">
-                {JSON.stringify(karapakkamCinima)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/dugout-marina-mall-net-play-arena-omr" && (
-              <script type="application/ld+json">
-                {JSON.stringify(indianDoungutgame)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/ferrari-showroom-chennai-coming-soon" && (
-              <script type="application/ld+json">
-                {JSON.stringify(ferariShowRoom)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/chennai-to-arakkonam-ac-local-train" && (
-              <script type="application/ld+json">
-                {JSON.stringify(chennaiArakonamMetro)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/capitaland-data-centre-chennai-01-ambattur" && (
-              <script type="application/ld+json">
-                {JSON.stringify(capitalLAndDataCenter)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/spr-city-48-foot-golu-perambur-navaratri-2026" && (
-              <script type="application/ld+json">
-                {JSON.stringify(permburnavarathiri)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/ chennai-metro-phase-2-poonamallee-vadapalani-line-open" && (
-              <script type="application/ld+json">
-                {JSON.stringify(porurmetro)}
-              </script>
-            )}
-
-            {slug === "trending-chennai/xb-mall-velachery-madipakkam-road" && (
-              <script type="application/ld+json">
-                {JSON.stringify(velacherimall)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/fake-sangeet-chennai-phoenix-marketcity" && (
-              <script type="application/ld+json">
-                {JSON.stringify(fackSangeeth2)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/lulu-hypermarket-chennai-shenoy-nagar-central-metro" && (
-              <script type="application/ld+json">
-                {JSON.stringify(lulumarget)}
-              </script>
-            )}
-
-            {slug === "uwa-first-india-campus-velachery-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(velacheriariticle)}
-              </script>
-            )}
-
-            {slug === "aswin-kathirvel-chennai-footballer-minerva-academy" && (
-              <script type="application/ld+json">
-                {JSON.stringify(ashwinKathirvel)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/pinkathon-returns-to-chennai-after-7-years" && (
-              <script type="application/ld+json">
-                {JSON.stringify(pinkothan)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/kanchipuram-803-acre-sipcot-industrial-park" && (
-              <script type="application/ld+json">
-                {JSON.stringify(sipcotCmVijay)}
-              </script>
-            )}
-
-            {slug ===
-              "trending-chennai/pm-modi-chennai-metro-phase-2-inauguration" && (
-              <script type="application/ld+json">
-                {JSON.stringify(poonamaleyStretch)}
-              </script>
-            )}
-
-            {slug === "chennai-corporation-smart-waste-transport" && (
-              <script type="application/ld+json">
-                {JSON.stringify(smartWeastTransportArticle)}
-              </script>
-            )}
-
-            {slug === "dubai-summer-carnival-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(dubaiCarnival)}
-              </script>
-            )}
-
-            {slug === "sunflower-streets-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(sunflowerstreet)}
-              </script>
-            )}
-
-            {slug === "olive-ridley-turtles-conservation-tamil-nadu" && (
-              <script type="application/ld+json">
-                {JSON.stringify(oliveRadly)}
-              </script>
-            )}
-
-            {slug === "sports-ground-sowcarpet" && (
-              <script type="application/ld+json">
-                {JSON.stringify(sportsSowcarPet)}
-              </script>
-            )}
-
-            {slug === "mudhalvar-thirumana-maaligai-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(mudhalvar)}
-              </script>
-            )}
-
-            {slug === "walltax-road-new-homes-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(walltaxROAD)}
-              </script>
-            )}
-
-            {slug === "walltax-road-new-homes-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(walltaxROAD)}
-              </script>
-            )}
-
-            {slug === "villivakkam-new-park-agathiyar-nagar" && (
-              <script type="application/ld+json">
-                {JSON.stringify(villivakkam)}
-              </script>
-            )}
-
-            {slug === "chennai-theme-park-lalaland" && (
-              <script type="application/ld+json">
-                {JSON.stringify(lalaland)}
-              </script>
-            )}
-
-            {slug === "moviemax-pr-mall-theatre-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(PRmallSchema)}
-              </script>
-            )}
-
-            {slug === "thangal-eri-park-ambattur" && (
-              <script type="application/ld+json">
-                {JSON.stringify(ambathoreEri)}
-              </script>
-            )}
-
-            {slug === "tondiarpet-electric-bus-depot" && (
-              <script type="application/ld+json">
-                {JSON.stringify(deportdandiaport)}
-              </script>
-            )}
-
-            {slug === "marina-beach-plastic-recycling" && (
-              <script type="application/ld+json">
-                {JSON.stringify(merinaplasticrecycle)}
-              </script>
-            )}
-
-            {slug === "3d-printed-bus-shelter-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(threedeeBus)}
-              </script>
-            )}
-
-            {slug === "cherry-blossom-season-tabebuia-rosea-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(bloomPoo)}
-              </script>
-            )}
-
-            {slug === "chennai-metro-mini-buses" && (
-              <script type="application/ld+json">
-                {JSON.stringify(chennaiMetroMini)}
-              </script>
-            )}
-
-            {slug === "ayapakkam-park" && (
-              <script type="application/ld+json">
-                {JSON.stringify(ayapakkamPark)}
-              </script>
-            )}
-
-            {slug ===
-              "velachery-to-st-thomas-mount-train-chennai-mrts-update" && (
-              <script type="application/ld+json">
-                {JSON.stringify(valacheristmountsmrts)}
-              </script>
-            )}
-
-            {slug === "chennai-marina-beach-statue-education-monument" && (
-              <script type="application/ld+json">
-                {JSON.stringify(marinaBeachStatuEducation)}
-              </script>
-            )}
-
-            {slug === "marina-beach-blue-flag-phase-2" && (
-              <script type="application/ld+json">
-                {JSON.stringify(marinaBeachBlueFLag)}
-              </script>
-            )}
-
-            {slug === "chennai-ula-2-hop-on-hop-off-bus" && (
-              <script type="application/ld+json">
-                {JSON.stringify(ulabusNew)}
-              </script>
-            )}
-
-            {slug === "ac-bus-stop-retteri-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(AcBusRetreii)}
-              </script>
-            )}
-
-            {slug === "playstation-store-chennai-anna-nagar" && (
-              <script type="application/ld+json">
-                {JSON.stringify(annaNagarPlayStation)}
-              </script>
-            )}
-
-            {slug === "lake-boating-thiruvottiyur" && (
-              <script type="application/ld+json">
-                {JSON.stringify(LackeBoatingThiruvtryue)}
-              </script>
-            )}
-
-            {slug === "chennai-electric-buses" && (
-              <script type="application/ld+json">
-                {JSON.stringify(electriBusNew)}
-              </script>
-            )}
-
-            {slug === "mtc-premium-gold-ac-electric-buses" && (
-              <script type="application/ld+json">
-                {JSON.stringify(mtcBusPeruimGold)}
-              </script>
-            )}
-
-            {slug === "glow-garden-mahabalipuram-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(glowgaradern)}
-              </script>
-            )}
-
-            {slug === "mkb-nagar-bus-depot-upgrade-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(MKBBus)}
-              </script>
-            )}
-
-            {slug === "broadway-bus-stand-redevelopment" && (
-              <script type="application/ld+json">
-                {JSON.stringify(brodwaybust)}
-              </script>
-            )}
-
-            {slug === "korukkupet-rail-overbridge-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(korukupat)}
-              </script>
-            )}
-
-            {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(madhiyakailash)}
-              </script>
-            )}
-
-            {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(madhiyakailash)}
-              </script>
-            )}
-
-            {slug === "retteri-lake-park-chennai" && (
-              <script type="application/ld+json">
-                {JSON.stringify(retaeri)}
-              </script>
-            )}
-
-            {slug === "fintech-city-nandambakkam-2026" && (
-              <script type="application/ld+json">
-                {JSON.stringify(fintechSchema)}
-              </script>
-            )}
-
-            {slug === "global-sports-city-semmencherry-2026" && (
-              <script type="application/id+json">
-                {JSON.stringify(globalTech)}
-              </script>
-            )}
-
-            {slug === "kilambakkam-modern-bus-terminus-2026" && (
-              <script type="application/id+json">
-                {JSON.stringify(terminusbusKilambakkam)}
-              </script>
-            )}
-
-            {slug === "tamil-culture-museum-mamallapuram-2026" && (
-              <script type="application/id+json">
-                {JSON.stringify(tamilcultremusium)}
-              </script>
-            )}
-
-            {slug === "vadapalani-skywalk-metro-corridor-2026" && (
-              <script type="application/id+json">
-                {JSON.stringify(vadapalainschemaMEtro)}
-              </script>
-            )}
-            {slug === "poonamallee-depot-chennai-metro-phase-2-2026" && (
-              <script type="application/id+json">
-                {JSON.stringify(poonamalaschema)}
-              </script>
-            )}
-            {slug === "musical-tower-kalaignar-centenary-park-2026" && (
-              <script type="application/id+json">
-                {JSON.stringify(MUiscialTowerSchem)}
-              </script>
-            )}
-
-            {slug === "port-maduravoyal-expressway-chennai-2026" && (
-              <script type="application/id+json">
-                {JSON.stringify(portmaduravayal)}
-              </script>
-            )}
-          </Helmet>
-
-          {/* Banner Section */}
-
-          <section className="accaodomationBannerSection">
-            <div>
-              <img
-                src="/images/trendingChennai/trending-chennai.jpg"
-                alt="Banner"
-              />
-            </div>
-            <div className="accodoamationBannerContainer">
-              <div className="accodoamationBannerText">
-                <h1>Trending Chennai</h1>
-                <div className="breadCrum"></div>
+
+  ]
+
+  return (
+    <>
+      <Helmet>
+        <title>{event.meta?.title || event.name}</title>
+
+        <meta
+          name="description"
+          content={event.meta?.desc || event.trendingDetails?.slice(0, 150)}
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content={event.meta?.title || event.name}
+        />
+        <meta property="og:description" content={event.meta?.desc || ""} />
+        <meta
+          property="og:image"
+          content={`${typeof window !== "undefined" ? window.location.origin : ""}${event.image}`}
+        />
+        <meta property="og:type" content="article" />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href={`${typeof window !== "undefined" ? window.location.origin : ""}/trending-chennai/${event.slug || `/${event.slug}`}`}
+        />
+
+        {slug ===
+          "vetri-payanam-thittam-free-bus-women" && (
+            <script type="application/ld+json">
+              {JSON.stringify(vetripayanam)}
+            </script>
+          )}
+
+
+        {slug ===
+          "ramapuram-central-park-green-space-for-residents" && (
+            <script type="application/ld+json">
+              {JSON.stringify(RamapuramCentralPark)}
+            </script>
+          )}
+
+
+        {slug ===
+          "chennai-smart-traffic-signals" && (
+            <script type="application/ld+json">
+              {JSON.stringify(SemmaTraffic)}
+            </script>
+          )}
+
+
+        {slug ===
+          "nageswara-rao-park-mylapore-chennai-reopens" && (
+            <script type="application/ld+json">
+              {JSON.stringify(NageshraoPark)}
+            </script>
+          )}
+
+
+        {slug ===
+          "rolls-royce-showroom-chennai-meenambakkam" && (
+            <script type="application/ld+json">
+              {JSON.stringify(rollsRoayls)}
+            </script>
+          )}
+
+        {slug ===
+          "rainwater-harvesting-thuli-campaign-tamil-nadu" && (
+            <script type="application/ld+json">
+              {JSON.stringify(rainWater)}
+            </script>
+          )}
+
+        {slug ===
+          "karpagam-theatre-chennai-medavakkam" && (
+            <script type="application/ld+json">
+              {JSON.stringify(karapakkamCinima)}
+            </script>
+          )}
+
+        {slug ===
+          "dugout-marina-mall-net-play-arena-omr" && (
+            <script type="application/ld+json">
+              {JSON.stringify(indianDoungutgame)}
+            </script>
+          )}
+
+        {slug ===
+          "ferrari-showroom-chennai-coming-soon" && (
+            <script type="application/ld+json">
+              {JSON.stringify(ferariShowRoom)}
+            </script>
+          )}
+
+        {slug ===
+          "chennai-to-arakkonam-ac-local-train" && (
+            <script type="application/ld+json">
+              {JSON.stringify(chennaiArakonamMetro)}
+            </script>
+          )}
+
+        {slug ===
+          "capitaland-data-centre-chennai-01-ambattur" && (
+            <script type="application/ld+json">
+              {JSON.stringify(capitalLAndDataCenter)}
+            </script>
+          )}
+
+        {slug ===
+          "spr-city-48-foot-golu-perambur-navaratri-2026" && (
+            <script type="application/ld+json">
+              {JSON.stringify(permburnavarathiri)}
+            </script>
+          )}
+
+        {slug ===
+          "chennai-metro-phase-2-poonamallee-vadapalani-line-open" && (
+            <script type="application/ld+json">
+              {JSON.stringify(porurmetro)}
+            </script>
+          )}
+
+        {slug === "xb-mall-velachery-madipakkam-road" && (
+          <script type="application/ld+json">
+            {JSON.stringify(velacherimall)}
+          </script>
+        )}
+
+        {slug ===
+          "fake-sangeet-chennai-phoenix-marketcity" && (
+            <script type="application/ld+json">
+              {JSON.stringify(fackSangeeth2)}
+            </script>
+          )}
+
+        {slug ===
+          "lulu-hypermarket-chennai-shenoy-nagar-central-metro" && (
+            <script type="application/ld+json">
+              {JSON.stringify(lulumarget)}
+            </script>
+          )}
+
+        {slug === "uwa-first-india-campus-velachery-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(velacheriariticle)}
+          </script>
+        )}
+
+        {slug === "aswin-kathirvel-chennai-footballer-minerva-academy" && (
+          <script type="application/ld+json">
+            {JSON.stringify(ashwinKathirvel)}
+          </script>
+        )}
+
+        {slug ===
+          "pinkathon-returns-to-chennai-after-7-years" && (
+            <script type="application/ld+json">
+              {JSON.stringify(pinkothan)}
+            </script>
+          )}
+
+        {slug ===
+          "kanchipuram-803-acre-sipcot-industrial-park" && (
+            <script type="application/ld+json">
+              {JSON.stringify(sipcotCmVijay)}
+            </script>
+          )}
+
+        {slug ===
+          "pm-modi-chennai-metro-phase-2-inauguration" && (
+            <script type="application/ld+json">
+              {JSON.stringify(poonamaleyStretch)}
+            </script>
+          )}
+
+        {slug === "chennai-corporation-smart-waste-transport" && (
+          <script type="application/ld+json">
+            {JSON.stringify(smartWeastTransportArticle)}
+          </script>
+        )}
+
+        {slug === "dubai-summer-carnival-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(dubaiCarnival)}
+          </script>
+        )}
+
+        {slug === "sunflower-streets-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(sunflowerstreet)}
+          </script>
+        )}
+
+        {slug === "olive-ridley-turtles-conservation-tamil-nadu" && (
+          <script type="application/ld+json">
+            {JSON.stringify(oliveRadly)}
+          </script>
+        )}
+
+        {slug === "sports-ground-sowcarpet" && (
+          <script type="application/ld+json">
+            {JSON.stringify(sportsSowcarPet)}
+          </script>
+        )}
+
+        {slug === "mudhalvar-thirumana-maaligai-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(mudhalvar)}
+          </script>
+        )}
+
+        {slug === "walltax-road-new-homes-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(walltaxROAD)}
+          </script>
+        )}
+
+        {slug === "walltax-road-new-homes-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(walltaxROAD)}
+          </script>
+        )}
+
+        {slug === "villivakkam-new-park-agathiyar-nagar" && (
+          <script type="application/ld+json">
+            {JSON.stringify(villivakkam)}
+          </script>
+        )}
+
+        {slug === "chennai-theme-park-lalaland" && (
+          <script type="application/ld+json">
+            {JSON.stringify(lalaland)}
+          </script>
+        )}
+
+        {slug === "moviemax-pr-mall-theatre-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(PRmallSchema)}
+          </script>
+        )}
+
+        {slug === "thangal-eri-park-ambattur" && (
+          <script type="application/ld+json">
+            {JSON.stringify(ambathoreEri)}
+          </script>
+        )}
+
+        {slug === "tondiarpet-electric-bus-depot" && (
+          <script type="application/ld+json">
+            {JSON.stringify(deportdandiaport)}
+          </script>
+        )}
+
+        {slug === "marina-beach-plastic-recycling" && (
+          <script type="application/ld+json">
+            {JSON.stringify(merinaplasticrecycle)}
+          </script>
+        )}
+
+        {slug === "3d-printed-bus-shelter-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(threedeeBus)}
+          </script>
+        )}
+
+        {slug === "cherry-blossom-season-tabebuia-rosea-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(bloomPoo)}
+          </script>
+        )}
+
+        {slug === "chennai-metro-mini-buses" && (
+          <script type="application/ld+json">
+            {JSON.stringify(chennaiMetroMini)}
+          </script>
+        )}
+
+        {slug === "ayapakkam-park" && (
+          <script type="application/ld+json">
+            {JSON.stringify(ayapakkamPark)}
+          </script>
+        )}
+
+        {slug ===
+          "velachery-to-st-thomas-mount-train-chennai-mrts-update" && (
+            <script type="application/ld+json">
+              {JSON.stringify(valacheristmountsmrts)}
+            </script>
+          )}
+
+        {slug === "chennai-marina-beach-statue-education-monument" && (
+          <script type="application/ld+json">
+            {JSON.stringify(marinaBeachStatuEducation)}
+          </script>
+        )}
+
+        {slug === "marina-beach-blue-flag-phase-2" && (
+          <script type="application/ld+json">
+            {JSON.stringify(marinaBeachBlueFLag)}
+          </script>
+        )}
+
+        {slug === "chennai-ula-2-hop-on-hop-off-bus" && (
+          <script type="application/ld+json">
+            {JSON.stringify(ulabusNew)}
+          </script>
+        )}
+
+        {slug === "ac-bus-stop-retteri-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(AcBusRetreii)}
+          </script>
+        )}
+
+        {slug === "playstation-store-chennai-anna-nagar" && (
+          <script type="application/ld+json">
+            {JSON.stringify(annaNagarPlayStation)}
+          </script>
+        )}
+
+        {slug === "lake-boating-thiruvottiyur" && (
+          <script type="application/ld+json">
+            {JSON.stringify(LackeBoatingThiruvtryue)}
+          </script>
+        )}
+
+        {slug === "chennai-electric-buses" && (
+          <script type="application/ld+json">
+            {JSON.stringify(electriBusNew)}
+          </script>
+        )}
+
+        {slug === "mtc-premium-gold-ac-electric-buses" && (
+          <script type="application/ld+json">
+            {JSON.stringify(mtcBusPeruimGold)}
+          </script>
+        )}
+
+        {slug === "glow-garden-mahabalipuram-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(glowgaradern)}
+          </script>
+        )}
+
+        {slug === "mkb-nagar-bus-depot-upgrade-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(MKBBus)}
+          </script>
+        )}
+
+        {slug === "broadway-bus-stand-redevelopment" && (
+          <script type="application/ld+json">
+            {JSON.stringify(brodwaybust)}
+          </script>
+        )}
+
+        {slug === "korukkupet-rail-overbridge-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(korukupat)}
+          </script>
+        )}
+
+        {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(madhiyakailash)}
+          </script>
+        )}
+
+        {slug === "madhya-kailash-l-shaped-flyover-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(madhiyakailash)}
+          </script>
+        )}
+
+        {slug === "retteri-lake-park-chennai" && (
+          <script type="application/ld+json">
+            {JSON.stringify(retaeri)}
+          </script>
+        )}
+
+        {slug === "fintech-city-nandambakkam-2026" && (
+          <script type="application/ld+json">
+            {JSON.stringify(fintechSchema)}
+          </script>
+        )}
+
+        {slug === "global-sports-city-semmencherry-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(globalTech)}
+          </script>
+        )}
+
+        {slug === "kilambakkam-modern-bus-terminus-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(terminusbusKilambakkam)}
+          </script>
+        )}
+
+        {slug === "tamil-culture-museum-mamallapuram-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(tamilcultremusium)}
+          </script>
+        )}
+
+        {slug === "vadapalani-skywalk-metro-corridor-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(vadapalainschemaMEtro)}
+          </script>
+        )}
+        {slug === "poonamallee-depot-chennai-metro-phase-2-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(poonamalaschema)}
+          </script>
+        )}
+        {slug === "musical-tower-kalaignar-centenary-park-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(MUiscialTowerSchem)}
+          </script>
+        )}
+
+        {slug === "port-maduravoyal-expressway-chennai-2026" && (
+          <script type="application/id+json">
+            {JSON.stringify(portmaduravayal)}
+          </script>
+        )}
+      </Helmet>
+
+      {/* Banner Section */}
+
+      <section className="accaodomationBannerSection">
+        <div>
+          <img
+            src="/images/trendingChennai/trending-chennai.jpg"
+            alt="Banner"
+          />
+        </div>
+        <div className="accodoamationBannerContainer">
+          <div className="accodoamationBannerText">
+            <h1>Trending Chennai</h1>
+            <div className="breadCrum"></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="EventsBanSec SecPadblock12">
+        <div className="container max-w-7xl mx-auto">
+          <div className="EventContBox flex flex-wrap">
+            <div className="EventLeft">
+              <h2>{event.name}</h2>
+              <div className="EventBanImg">
+                <img src={event.image} alt={event.name} />
+              </div>
+              <div className="ebanimgbtn flex justify-between items-center mb-[5vh]">
+                <div className="ebbmgiL flex gap-2">
+                  <h5>{event.TrendingCalendarCategory}</h5>
+                </div>
+              </div>
+              <div className="EventContBox mb-[5vh]">
+                <h3>About The Trending</h3>
+                <div
+                  className="event-description"
+                  dangerouslySetInnerHTML={{
+                    __html: event.trendingDetails,
+                  }}
+                />
               </div>
             </div>
-          </section>
 
-          <section className="EventsBanSec SecPadblock12">
-            <div className="container max-w-7xl mx-auto">
-              <div className="EventContBox flex flex-wrap">
-                <div className="EventLeft">
-                  <h2>{event.name}</h2>
-                  <div className="EventBanImg">
-                    <img src={event.image} alt={event.name} />
-                  </div>
-                  <div className="ebanimgbtn flex justify-between items-center mb-[5vh]">
-                    <div className="ebbmgiL flex gap-2">
-                      <h5>{event.TrendingCalendarCategory}</h5>
-                    </div>
-                  </div>
-                  <div className="EventContBox mb-[5vh]">
-                    <h3>About The Trending</h3>
-                    <div
-                      className="event-description"
-                      dangerouslySetInnerHTML={{
-                        __html: event.trendingDetails,
-                      }}
-                    />
-                  </div>
-                </div>
-
-                <div className="EventRight">
-                  <div className="evderibox">
-                    <div className="evderListbox">
-                      <div className="evderViewbox">
-                        {event.TrendingCalendarMonth && (
-                          <InfoRow
-                            icon="/images/events/calendar.png"
-                            label={event.TrendingCalendarMonth}
-                          />
-                        )}
-                        {event.TrendingCalendarTime && (
-                          <InfoRow
-                            icon="/images/events/time.png"
-                            label={event.TrendingCalendarTime}
-                          />
-                        )}
-                        {event.duration && (
-                          <InfoRow
-                            icon="/images/events/duration.png"
-                            label={event.duration}
-                          />
-                        )}
-                        {event.ageRestriction && (
-                          <InfoRow
-                            icon="/images/events/age_limit.png"
-                            label={event.ageRestriction}
-                          />
-                        )}
-                        {event.language && (
-                          <InfoRow
-                            icon="/images/events/language.png"
-                            label={event.language}
-                          />
-                        )}
-                        {event.genre && (
-                          <InfoRow
-                            icon="/images/events/genre.png"
-                            label={event.genre}
-                          />
-                        )}
-                        {event.venue && (
-                          <InfoRow
-                            icon="/images/events/location.png"
-                            label={event.venue}
-                          />
-                        )}
-                      </div>
-                    </div>
-
-                    {event.TrendingLink && (
-                      <div className="flex justify-center pb-[30px]">
-                        <a href={event.TrendingLink || "#"}>
-                          <button
-                            className="cursor-pointer"
-                            style={{
-                              background: "#a44294",
-                              marginTop: "15px",
-                              color: "white",
-                              padding: "5px 14px",
-                              borderRadius: "5px",
-                              fontFamily: "Poppins",
-                              fontWeight: 500,
-                              width: "auto",
-                              marginTop: "0",
-                            }}
-                          >
-                            Click to View
-                          </button>
-                        </a>
-                      </div>
+            <div className="EventRight">
+              <div className="evderibox">
+                <div className="evderListbox">
+                  <div className="evderViewbox">
+                    {event.TrendingCalendarMonth && (
+                      <InfoRow
+                        icon="/images/events/calendar.png"
+                        label={event.TrendingCalendarMonth}
+                      />
+                    )}
+                    {event.TrendingCalendarTime && (
+                      <InfoRow
+                        icon="/images/events/time.png"
+                        label={event.TrendingCalendarTime}
+                      />
+                    )}
+                    {event.duration && (
+                      <InfoRow
+                        icon="/images/events/duration.png"
+                        label={event.duration}
+                      />
+                    )}
+                    {event.ageRestriction && (
+                      <InfoRow
+                        icon="/images/events/age_limit.png"
+                        label={event.ageRestriction}
+                      />
+                    )}
+                    {event.language && (
+                      <InfoRow
+                        icon="/images/events/language.png"
+                        label={event.language}
+                      />
+                    )}
+                    {event.genre && (
+                      <InfoRow
+                        icon="/images/events/genre.png"
+                        label={event.genre}
+                      />
+                    )}
+                    {event.venue && (
+                      <InfoRow
+                        icon="/images/events/location.png"
+                        label={event.venue}
+                      />
                     )}
                   </div>
                 </div>
+
+                {event.TrendingLink && (
+                  <div className="flex justify-center pb-[30px]">
+                    <a href={event.TrendingLink || "#"}>
+                      <button
+                        className="cursor-pointer"
+                        style={{
+                          background: "#a44294",
+                          marginTop: "15px",
+                          color: "white",
+                          padding: "5px 14px",
+                          borderRadius: "5px",
+                          fontFamily: "Poppins",
+                          fontWeight: 500,
+                          width: "auto",
+                          marginTop: "0",
+                        }}
+                      >
+                        Click to View
+                      </button>
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
-          </section>
-        </>
-      );
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 function InfoRow({ icon, label }) {
